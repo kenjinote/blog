@@ -1,0 +1,13 @@
+{
+  "path": "content/post/windows_registry/index.md",
+  "repair": {
+    "term": "ソート",
+    "old_url": "https://kenji.blog/p/sorting-algorithms/",
+    "new_url": "/p/sorting-algorithms-visualized-bubble-quick-merge/",
+    "target": "content/post/sorting-algorithms-visualized-bubble-quick-merge/index.md",
+    "reason": "Existing URL returns 404 in full Hugo output; target introduction reviewed and published canonical route confirmed."
+  },
+  "only_url_changed": true,
+  "before_sha256": "16bd6113d63ac2394578a374a4569e7f459a22afa6b4a8a9baa8d02945c0d184",
+  "after_sha256": "352e292955b521cd7fe040407cca63a118c08e07e457fdae0740e37dd562e689"
+}

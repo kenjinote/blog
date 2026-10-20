@@ -9,7 +9,7 @@ categories: ["windows", "administration", "programming"]
 tags: ["Registry", "PowerShell", "C#", "Windows 11"]
 ---
 
-# [Basic Knowledge of the Windows Registry and Safe Programmable Editing Methods](https://kenji.blog/en/p/windows_registry/)
+# Basic Knowledge of the Windows Registry and Safe Programmable Editing Methods {#basic-knowledge-of-the-windows-registry-and-safe-programmable-editing-methodshttpskenjiblogenpwindows_registry}
 
 In the Windows operating system, the "Registry" is a massive hierarchical database that stores various settings for the system and applications. This article provides a very detailed explanation, starting from the basic architecture of the Windows Registry to programmable and safe registry editing methods using PowerShell and C#.
 
@@ -17,7 +17,7 @@ In the Windows operating system, the "Registry" is a massive hierarchical databa
 
 In early versions of Windows (Windows 3.x era), system and application settings were mainly stored in `.ini` (initialization) files. However, countless INI files for each application scattered across the entire system, making management significantly complicated. Furthermore, since INI files are plain text-based, saving binary data was difficult, and there was no access control (security) mechanism. The file parsing speed was also slow, making it unsuitable for saving large-scale settings.
 
-To fundamentally resolve these issues, the "Registry" was fully adopted as a centralized configuration database starting from Windows NT and Windows 95. The registry is a hierarchical database that provides strong typing, support for binary data, and robust security features through Access Control Lists (ACLs). This allowed all components, from the OS kernel to user-space applications, to read and write settings using a unified interface (the `Reg*` functions of the Win32 API).
+To fundamentally resolve these issues, the "Registry" was fully adopted as a centralized configuration database starting from [Windows NT](/en/p/windows-os-history-architecture/) and Windows 95. The registry is a hierarchical database that provides strong typing, support for binary data, and robust security features through Access Control Lists (ACLs). This allowed all components, from the OS kernel to user-space applications, to read and write settings using a unified interface (the `Reg*` functions of the Win32 API).
 
 Up to the modern Windows 11, the registry continues to function as the heart of the OS. All metadata required for system operation, such as hardware configuration, device driver load order, user desktop environments, and lists of installed software, are consolidated in the registry.
 
@@ -408,12 +408,12 @@ Finally, we summarize the important design principles and best practices for han
 
 1. **Strictly Enforce the Principle of Least Privilege**: Application and script settings should be stored under the `Software` key within `HKCU` (Current User) whenever possible. Writing to `HKLM` requires an administrator privilege escalation via UAC, which expands the security attack surface and degrades user experience.
 2. **Enable Auditing**: For keys that are extremely critical to security (e.g., the `Run` key responsible for automatic startup, or service configuration keys), configure a SACL (System Access Control List) to record (audit) who modified or deleted values and when, in the Windows Event Viewer's "Security Log".
-3. **Address the Deprecation of [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) Features**: The registry transaction feature (TxR) utilizing the "Kernel Transaction Manager (KTM)", introduced back in Windows Vista, has been deprecated since Windows 10. The application side must implement its own backup and rollback mechanisms (such as reading the original value and keeping it in memory before making changes).
+3. **Address the Deprecation of Transaction Features**: The registry transaction feature (TxR) utilizing the "Kernel Transaction Manager (KTM)", introduced back in Windows Vista, has been deprecated since Windows 10. The application side must implement its own backup and rollback mechanisms (such as reading the original value and keeping it in memory before making changes).
 4. **Beware of Conflicts with Group Policy (GPO)**: The `HKLM\SOFTWARE\Policies` and `HKCU\Software\Policies` areas are to be centrally managed by Active Directory Group Policies. Even if you modify these keys directly from a script, they will be forcefully overwritten by the Domain Controller's settings during the next background Group Policy update cycle (typically every 90 to 120 minutes), causing your settings to not persist.
 
 ## Conclusion
 
-The Windows Registry is a powerful and complex foundational system that integrally manages every behavior of the OS and application settings. Disorderly manual editing carries a high, mathematically proven risk of system corruption. Therefore, using programmable means such as PowerShell and C# to manage configurations securely, testably, and reproducibly, in accordance with the principles of [Infrastructure as Code](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/), is essential in modern system administration and development. Utilize the deep architectural understanding and implementation patterns explained in this article to aim for building a more robust and secure Windows environment.
+The Windows Registry is a powerful and complex foundational system that integrally manages every behavior of the OS and application settings. Disorderly manual editing carries a high, mathematically proven risk of system corruption. Therefore, using programmable means such as PowerShell and C# to manage configurations securely, testably, and reproducibly, in accordance with the principles of Infrastructure as Code, is essential in modern system administration and development. Utilize the deep architectural understanding and implementation patterns explained in this article to aim for building a more robust and secure Windows environment.
 
 
 

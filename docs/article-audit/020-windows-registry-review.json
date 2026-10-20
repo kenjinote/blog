@@ -1,6 +1,6 @@
 {
   "batch": "020-windows-registry-review",
-  "status": "Japanese full body reviewed; other 12 languages unread; not edited",
+  "status": "ja/en/de edited, final build running; fr/es/pt/id and ko/zh-cn/zh-tw planned; ru fully reviewed; ar/hi unread",
   "articles": [
     {
       "path": "content/post/windows_registry/index.md",
@@ -11,6 +11,103 @@
         "Two links on ロック within ブロック incorrectly point to database locking: unwrap both. Adjacent B-Tree/B木 duplicate link and later repeated pointer, transaction and IaC links should be reviewed for reduction.",
         "Candidate Windows NT history link is directly relevant; target already fully reviewed in batch 019. Retain windows/programming; administration taxonomy requires existing-definition check before decision.",
         "Preserve all code and maths. Existing factual issues (DEFAULT profile explanation, automatic REG_EXPAND_SZ expansion, simplistic registry performance/failure model, HKCR drive assumptions) require separate editorial review, not source rewriting in this audit."
+      ]
+    },
+    {
+      "path": "content/post/windows_registry/index.en.md",
+      "source_sha256": "bfbd323071ff2a794a2593232cbc4e0f273fcc01a59f3fdcdaa62454cf684fa4",
+      "body_reviewed": true,
+      "findings": [
+        "Entire body reviewed, including code, math and three Mermaid diagrams. Retain existing translated windows/administration/programming categories.",
+        "Keep ACID, B-Tree and initial IaC references; unwrap KTM Transaction link to relational database theory and repeated concluding IaC link. Add NT history link.",
+        "Japanese/English legacy heading self-links need anchor-preserving cleanup. Existing technical/editorial claims left for separate factual review."
+      ]
+    },
+    {
+      "path": "content/post/windows_registry/index.de.md",
+      "source_sha256": "f7c57992f434611b857d40180e9ded38a52bfa9766b2f4b56f02c89f32592b33",
+      "body_reviewed": true,
+      "findings": [
+        "Entire body reviewed, including code, math and three Mermaid diagrams. Retain existing translated windows/administration/programming categories.",
+        "Keep ACID, B-Tree and initial IaC references; unwrap KTM Transaction link to relational database theory and repeated concluding IaC link. Add NT history link.",
+        "Japanese/English legacy heading self-links need anchor-preserving cleanup. Existing technical/editorial claims left for separate factual review."
+      ]
+    },
+    {
+      "path": "content/post/windows_registry/index.fr.md",
+      "source_sha256": "78f6a74e087e1baee0ede954327b2b2e1614add3dbbdee8f12af120c793664a4",
+      "body_reviewed": true,
+      "findings": [
+        "Full French body read including all code, math and three Mermaid diagrams. No heading self-link or KTM transaction link. Keep ACID, B-Tree and initial IaC references; remove repeated concluding IaC link.",
+        "Add first Windows NT mention to same-language Windows history (target fully reviewed in batch 019). Keep windows/administration/programming.",
+        "Retain existing technical assertions for separate editorial review; preserve all prose, equations, code and diagrams."
+      ]
+    },
+    {
+      "path": "content/post/windows_registry/index.es.md",
+      "source_sha256": "09ff3b021349341d22e0c3e971a7c14512fc76a24e762dfea20f3e1992bf7f0e",
+      "body_reviewed": true,
+      "findings": [
+        "Full Spanish body read including all code, math and three Mermaid diagrams. No heading self-link. Keep ACID/B-Tree/initial IaC, unwrap KTM Transaction link and concluding duplicate IaC.",
+        "Add first Windows NT reference to Spanish Windows history; target fully reviewed in batch 019. Retain windows/administration/programming.",
+        "Preserve technical assertions for separate editorial review; no code or equation changes."
+      ]
+    },
+    {
+      "path": "content/post/windows_registry/index.pt.md",
+      "source_sha256": "7ddccef06ab665fc1e14cf06cec8fae1cde611d8162ab9589c5a601671090c5f",
+      "body_reviewed": true,
+      "findings": [
+        "Full Portuguese body reviewed, including all code, equations and three Mermaid diagrams. Keep existing categories.",
+        "Add first Windows NT mention; remove KTM Transaction link and two concluding duplicate IaC links (Infrastructure as Code and IaC), retaining first body IaC link. No heading self-link.",
+        "Final sections contain awkward repetitive translation prose; separate editorial issue, preserve it during this link audit."
+      ]
+    },
+    {
+      "path": "content/post/windows_registry/index.id.md",
+      "source_sha256": "05eacf473b0b974fe52c366922998b2debf34512f005c4c8c97d82b024809114",
+      "body_reviewed": true,
+      "findings": [
+        "Full Indonesian body reviewed, including code, math and three Mermaid diagrams. Retain categories and ACID/B-Tree/initial IaC links.",
+        "Add first Windows NT mention; remove KTM Transaction link to RDBMS and duplicate concluding IaC. Preserve prose and technical claims for separate editorial review."
+      ]
+    },
+    {
+      "path": "content/post/windows_registry/index.ko.md",
+      "source_sha256": "23dcd0a6287634f4611e15018656068156efd1b09813cd1e7c8c02627d429300",
+      "body_reviewed": true,
+      "findings": [
+        "Full Korean body reviewed including all code, equations and three Mermaid diagrams. Retain existing categories and ACID/B-Tree/initial IaC links. No heading self-link or misleading KTM link.",
+        "Add first Windows NT mention; remove concluding duplicate Infrastructure as Code link. Preserve typography, particles, prose and all protected content."
+      ]
+    },
+    {
+      "path": "content/post/windows_registry/index.zh-cn.md",
+      "source_sha256": "8d3ef28df82fbbfdf9b65f326013740b08912f53035def6dc7512a8685491292",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed including all code, math and three Mermaid diagrams. Retain windows/administration/programming and ACID/B-Tree/initial IaC references.",
+        "Add first Windows NT mention to same-language Windows history reviewed in batch 019; remove concluding duplicate IaC. Preserve all prose and technical assertions for separate editorial review."
+      ]
+    },
+    {
+      "path": "content/post/windows_registry/index.zh-tw.md",
+      "source_sha256": "811a368d1b028bbe86df5c92811af47dfee4186d8c0621b07ebf7ebb5255cc47",
+      "body_reviewed": true,
+      "findings": [
+        "Full body reviewed including all code, math and three Mermaid diagrams. Retain windows/administration/programming and ACID/B-Tree/initial IaC references.",
+        "Add first Windows NT mention to same-language Windows history reviewed in batch 019; remove concluding duplicate IaC. Preserve all prose and technical assertions for separate editorial review.",
+        "Unwrap adjacent Transaction Logging link to the same RDBMS target as ACID; retain the more explicit ACID comparison link."
+      ]
+    },
+    {
+      "path": "content/post/windows_registry/index.ru.md",
+      "source_sha256": "2ccb627fac39fdc93c99a815cc7945a818f45d0c5c7c0697470fe8834089406e",
+      "body_reviewed": true,
+      "findings": [
+        "Full Russian body reviewed including code, equations and all three Mermaid diagrams. Retain windows/administration/programming. No heading self-link or KTM Transaction link.",
+        "Add first Windows NT mention; remove concluding duplicate IaC. B-дерево is currently unlinked; same-language B-tree article introduction and definition read and directly relevant.",
+        "Preserve all technical assertions for separate editorial review."
       ]
     }
   ]

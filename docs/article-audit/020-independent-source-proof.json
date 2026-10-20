@@ -1,0 +1,20 @@
+[
+  {
+    "path": "content/post/windows_registry/index.md",
+    "exact_reviewed_transform_match": true,
+    "protected_material_unchanged": true,
+    "sha256": "352e292955b521cd7fe040407cca63a118c08e07e457fdae0740e37dd562e689"
+  },
+  {
+    "path": "content/post/windows_registry/index.en.md",
+    "exact_reviewed_transform_match": true,
+    "protected_material_unchanged": true,
+    "sha256": "c96a0b4b3bd51ec7442dada7b09a7254044b865d6f5398ec070b22fde2f98546"
+  },
+  {
+    "path": "content/post/windows_registry/index.de.md",
+    "exact_reviewed_transform_match": true,
+    "protected_material_unchanged": true,
+    "sha256": "bb31f948ff660a8717429dac76e88bc039cb87b57cf83cb3d830aacc8e4662e0"
+  }
+]

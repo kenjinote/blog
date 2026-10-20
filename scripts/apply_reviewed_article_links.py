@@ -8,7 +8,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, quote
 from internal_links import ROOT, language, link_text, published_pages, protected_ranges
 
 SIMPLE_LINK = re.compile(r'(?<!!)\[([^\[\]\r\n]+)\]\((https?://[^\s()]+|/[^\s()]+)\)')
@@ -16,11 +16,17 @@ SIMPLE_LINK = re.compile(r'(?<!!)\[([^\[\]\r\n]+)\]\((https?://[^\s()]+|/[^\s()]
 
 def protected_material(text):
     # Reviewed inputs must use these conventional fences/math delimiters.
+    fence_pattern = r'(?ms)^(`{3,}|~{3,})[^\r\n]*\r?\n.*?^\1[ \t]*(?=\r?$)'
+    fences = [m[0] for m in re.finditer(fence_pattern, text)]
+    outside_fences = re.sub(fence_pattern, lambda m: re.sub(r'[^\r\n]', ' ', m[0]), text)
+    inline_code = r'(?s)(`+).*?\1'
+    codes = [m[0] for m in re.finditer(inline_code, outside_fences)]
+    outside_code = re.sub(inline_code, lambda m: re.sub(r'[^\r\n]', ' ', m[0]), outside_fences)
     return (re.match(r'\A---\r?\n.*?\r?\n---', text, re.S)[0],
-            re.findall(r'(?ms)^```[^\r\n]*\r?\n.*?^```[^\r\n]*', text),
-            re.findall(r'(?s)\$\$.*?\$\$|(?<![\\$])\$(?!\$).*?(?<!\\)\$', text),
-            [m[0] for m in re.finditer(r'(?s)(`+).*?\1', text)],
-            re.findall(r'(?s)\\\(.*?\\\)|\\\[.*?\\\]', text))
+            fences,
+            re.findall(r'(?s)\$\$.*?\$\$|(?<![\\$])\$(?!\$).*?(?<!\\)\$', outside_code),
+            codes,
+            re.findall(r'(?s)\\\(.*?\\\)|\\\[.*?\\\]', outside_code))
 
 
 
@@ -42,6 +48,14 @@ def link_reviewed_context(source, term, context, destination, math_literals=(), 
         middle = ''.join(lines[1:-1])
         return lines[0] + re.sub(r'[^\r\n]', ' ', middle) + lines[-1]
     probe_source = re.sub(fence_pattern, mask_fence, source)
+    # A single-backtick code span may show XML without introducing real HTML.
+    # Mask only its contents in the probe, retaining delimiters and offsets.
+    # Ambiguous/multiline or multiple-backtick spans remain conservative.
+    inline_code = r'(?<![\\`])`([^`\r\n]+)`(?!`)'
+    spans = list(re.finditer(inline_code, probe_source))
+    if any(m.start() < end and m.end() > start for m in spans):
+        raise ValueError('Reviewed term overlaps inline code')
+    probe_source = re.sub(inline_code, lambda m: '`' + ' ' * len(m[1]) + '`', probe_source)
     # Only mask known inline tags for the existing conservative scanner. Unknown
     # HTML and shortcodes still cause a refusal. Never edit tag text/attributes.
     tags = list(re.finditer(r'</?(?:strong|br)\b[^>]*>', source, re.I))
@@ -190,8 +204,13 @@ def main():
             added.append({'term': addition['term'], 'url': destination})
         comparison_source = source
         heading_repairs = []
+        # Explicit heading plans may remove a self-link using the bundle's old
+        # directory-based URL. Keep the baseline ID and reject other unknown URLs.
+        lang_prefix = '' if language(path) == 'ja' else '/' + language(path)
+        legacy_self = lang_prefix + '/p/' + quote(path.parent.name) + '/'
+        heading_paths = allowed_paths | {own, legacy_self}
         for heading_item in item.get('heading_unwraps', []):
-            updated, new_heading = unwrap_reviewed_heading(updated, heading_item, allowed_paths)
+            updated, new_heading = unwrap_reviewed_heading(updated, heading_item, heading_paths)
             comparison_source = comparison_source.replace(
                 heading_item['heading'], heading_item['heading'] + ' {#' + heading_item['old_id'] + '}', 1)
             heading_repairs.append({'before': heading_item['heading'], 'after': new_heading,

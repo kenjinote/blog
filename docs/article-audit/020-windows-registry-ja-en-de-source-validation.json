@@ -1,0 +1,146 @@
+[
+  {
+    "path": "content/post/windows_registry/index.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Windows NT",
+        "url": "/p/windows-os-history-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "context": "`using` ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "reason": "misleading"
+      },
+      {
+        "link": "[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "context": "`finally` ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "reason": "misleading"
+      },
+      {
+        "link": "[B木](https://kenji.blog/p/b-tree-database-index-theory/)",
+        "context": "レジストリはOSのパフォーマンス（特に起動時間とプロセスの初期化速度）に直結するため、内部的には「Cell Index」と呼ばれる[B-Tree](https://kenji.blog/p/b-tree-database-index-theory/)（[B木](https://kenji.blog/p/b-tree-database-index-theory/)）に似た高度なデータ構造を用いて最適化されています。",
+        "reason": "duplicate"
+      },
+      {
+        "link": "[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)",
+        "context": "$N_h$ はハイブ $h$ 内のキー数、$S_{\\text{key\\_metadata}}$ はキー1つあたりのメタデータ（最終書き込みタイムスタンプ、セキュリティ記述子への[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)、親キーへのポインタなど）のサイズ、$S_{\\text{value}}(v)$ は値 $v$ のペイロードサイズです。[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ログや不要になった空きセル（フラグメンテーション）によるオーバーヘッド $S_{\\text{overhead}}$ も含まれます。レジストリに不要なデータ（アンインストールしきれなかったソフトの残骸など）を長期間放置すると、このフットプリントが増大し、OSのページプールメモリを圧迫してパフォーマンス低下を招く可能性があります。",
+        "reason": "duplicate"
+      },
+      {
+        "link": "[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "context": "[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ロギング",
+        "reason": "duplicate"
+      },
+      {
+        "link": "[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "context": "[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ログや",
+        "reason": "duplicate"
+      },
+      {
+        "link": "[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "context": "[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)機能の非推奨化",
+        "reason": "duplicate"
+      },
+      {
+        "link": "[Infrastructure as Code](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)",
+        "context": "Windowsレジストリは、OSのあらゆる挙動とアプリケーションの設定を統合的に管理する強力で複雑な基盤システムです。手動による無秩序な編集には、数理的にも実証される高いシステム破損リスクが伴います。そのため、PowerShellやC#などのプログラマブルな手段を用いて、[Infrastructure as Code](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)の原則に則り、安全かつテスト可能・再現性のある形で構成管理を行うことが現代のシステム管理と開発において不可欠です。本記事で解説した深いアーキテクチャの理解と実装パターンを活用し、より堅牢でセキュアなWindows環境の構築を目指してください。",
+        "reason": "duplicate"
+      }
+    ],
+    "heading_link_repairs": [
+      {
+        "before": "# [Windowsレジストリの基礎知識と、プログラマブルな安全な編集方法](https://kenji.blog/p/windows_registry/)",
+        "after": "# Windowsレジストリの基礎知識と、プログラマブルな安全な編集方法 {#windowsレジストリの基礎知識とプログラマブルな安全な編集方法httpskenjiblogpwindows_registry}",
+        "preserved_id": "windowsレジストリの基礎知識とプログラマブルな安全な編集方法httpskenjiblogpwindows_registry"
+      }
+    ],
+    "category_change": null,
+    "categories": "Retain windows/administration/programming: Windows system configuration and programmatic maintenance; all have localized definitions.",
+    "updated_sha256": "352e292955b521cd7fe040407cca63a118c08e07e457fdae0740e37dd562e689",
+    "reviewed_url_repairs": [
+      {
+        "term": "ソート",
+        "old_url": "https://kenji.blog/p/sorting-algorithms/",
+        "new_url": "/p/sorting-algorithms-visualized-bubble-quick-merge/",
+        "target": "content/post/sorting-algorithms-visualized-bubble-quick-merge/index.md",
+        "reason": "Existing URL returns 404 in full Hugo output; target introduction reviewed and published canonical route confirmed."
+      }
+    ]
+  },
+  {
+    "path": "content/post/windows_registry/index.en.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Windows NT",
+        "url": "/en/p/windows-os-history-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "context": "3. **Address the Deprecation of [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) Features**: The registry transaction feature (TxR) utilizing the \"Kernel Transaction Manager (KTM)\", introduced back in Windows Vista, has been deprecated since Windows 10. The application side must implement its own backup and rollback mechanisms (such as reading the original value and keeping it in memory before making changes).",
+        "reason": "misleading"
+      },
+      {
+        "link": "[Infrastructure as Code](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)",
+        "context": "The Windows Registry is a powerful and complex foundational system that integrally manages every behavior of the OS and application settings. Disorderly manual editing carries a high, mathematically proven risk of system corruption. Therefore, using programmable means such as PowerShell and C# to manage configurations securely, testably, and reproducibly, in accordance with the principles of [Infrastructure as Code](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/), is essential in modern system administration and development. Utilize the deep architectural understanding and implementation patterns explained in this article to aim for building a more robust and secure Windows environment.",
+        "reason": "duplicate"
+      }
+    ],
+    "heading_link_repairs": [
+      {
+        "before": "# [Basic Knowledge of the Windows Registry and Safe Programmable Editing Methods](https://kenji.blog/en/p/windows_registry/)",
+        "after": "# Basic Knowledge of the Windows Registry and Safe Programmable Editing Methods {#basic-knowledge-of-the-windows-registry-and-safe-programmable-editing-methodshttpskenjiblogenpwindows_registry}",
+        "preserved_id": "basic-knowledge-of-the-windows-registry-and-safe-programmable-editing-methodshttpskenjiblogenpwindows_registry"
+      }
+    ],
+    "category_change": null,
+    "categories": "Retain windows/administration/programming: Windows system configuration and programmatic maintenance; all have localized definitions.",
+    "updated_sha256": "c96a0b4b3bd51ec7442dada7b09a7254044b865d6f5398ec070b22fde2f98546"
+  },
+  {
+    "path": "content/post/windows_registry/index.de.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Windows NT",
+        "url": "/de/p/windows-os-history-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "context": "3. **Umgang mit der Veraltung von Transaktionsfunktionen**: Die Transaktionsfunktion der Registrierung (TxR) unter Verwendung des in Windows Vista eingeführten „Kernel [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) Manager (KTM)“ gilt ab Windows 10 als veraltet (Deprecated). Es ist erforderlich, einen eigenen Backup- und Rollback-Mechanismus in der Anwendung zu implementieren (z. B. den ursprünglichen Wert vor Änderungen lesen und im Speicher behalten).",
+        "reason": "misleading"
+      },
+      {
+        "link": "[Infrastructure as Code](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)",
+        "context": "Die Windows-Registrierung ist ein leistungsstarkes und komplexes Basissystem, das alle Verhaltensweisen des Betriebssystems und der Anwendungseinstellungen integriert verwaltet. Chaotisches manuelles Bearbeiten birgt ein hohes mathematisch nachgewiesenes Risiko für Systembeschädigungen. Daher ist es im modernen Systemmanagement und in der Entwicklung unerlässlich, programmierbare Mittel wie PowerShell oder C# zu verwenden, um das Konfigurationsmanagement nach den Prinzipien von [Infrastructure as Code](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) auf sichere, testbare und reproduzierbare Weise durchzuführen. Bitte nutzen Sie das in diesem Artikel erläuterte tiefe Verständnis der Architektur und die Implementierungsmuster, um eine robustere und sicherere Windows-Umgebung aufzubauen.",
+        "reason": "duplicate"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain windows/administration/programming: Windows system configuration and programmatic maintenance; all have localized definitions.",
+    "updated_sha256": "bb31f948ff660a8717429dac76e88bc039cb87b57cf83cb3d830aacc8e4662e0"
+  }
+]

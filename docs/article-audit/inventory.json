@@ -243526,13 +243526,20 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "tests": 35,
+        "source": "3 exact reviewed transformations reproduce current bytes; protected material and SHA verified",
+        "isolated_render": "identical HTML except anchors; heading IDs preserved",
+        "hugo": "exit 0; 592246 ms",
+        "browser": "3 before/after pages passed including links, headings/TOC, prose, code, math, diagrams, images, translated categories, language switch, target HTTP200 and mobile; English screenshot visually inspected"
+      },
+      "batch": "020-windows-registry-ja-en-de",
+      "push_status": "ready to commit and push"
     },
     {
       "path": "content/post/windows_registry/index.en.md",
@@ -243548,13 +243555,20 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
-      "body_reviewed": false,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": null
+      "body_reviewed": true,
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "tests": 35,
+        "source": "3 exact reviewed transformations reproduce current bytes; protected material and SHA verified",
+        "isolated_render": "identical HTML except anchors; heading IDs preserved",
+        "hugo": "exit 0; 592246 ms",
+        "browser": "3 before/after pages passed including links, headings/TOC, prose, code, math, diagrams, images, translated categories, language switch, target HTTP200 and mobile; English screenshot visually inspected"
+      },
+      "batch": "020-windows-registry-ja-en-de",
+      "push_status": "ready to commit and push"
     },
     {
       "path": "content/post/windows_registry/index.es.md",
@@ -243572,11 +243586,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "021-windows-registry-remaining-review"
     },
     {
       "path": "content/post/windows_registry/index.fr.md",
@@ -243594,11 +243608,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "021-windows-registry-remaining-review"
     },
     {
       "path": "content/post/windows_registry/index.hi.md",
@@ -243638,11 +243652,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "021-windows-registry-remaining-review"
     },
     {
       "path": "content/post/windows_registry/index.ko.md",
@@ -243660,11 +243674,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "022-windows-registry-east-review"
     },
     {
       "path": "content/post/windows_registry/index.md",
@@ -243680,13 +243694,20 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "020-windows-registry-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "tests": 35,
+        "source": "3 exact reviewed transformations reproduce current bytes; protected material and SHA verified",
+        "isolated_render": "identical HTML except anchors; heading IDs preserved",
+        "hugo": "exit 0; 592246 ms",
+        "browser": "3 before/after pages passed including links, headings/TOC, prose, code, math, diagrams, images, translated categories, language switch, target HTTP200 and mobile; English screenshot visually inspected"
+      },
+      "batch": "020-windows-registry-ja-en-de",
+      "push_status": "ready to commit and push"
     },
     {
       "path": "content/post/windows_registry/index.pt.md",
@@ -243704,11 +243725,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "021-windows-registry-remaining-review"
     },
     {
       "path": "content/post/windows_registry/index.ru.md",
@@ -243726,11 +243747,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "023-windows-registry-remaining-review"
     },
     {
       "path": "content/post/windows_registry/index.zh-cn.md",
@@ -243748,11 +243769,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "022-windows-registry-east-review"
     },
     {
       "path": "content/post/windows_registry/index.zh-tw.md",
@@ -243770,11 +243791,11 @@
       "frontmatter_error": null,
       "status": "pending",
       "hold_reason": null,
-      "body_reviewed": false,
+      "body_reviewed": true,
       "categories_reviewed": false,
       "links_reviewed": false,
       "validation": null,
-      "batch": null
+      "batch": "022-windows-registry-east-review"
     },
     {
       "path": "content/post/windows_terminalカスタマイズ/index.ar.md",

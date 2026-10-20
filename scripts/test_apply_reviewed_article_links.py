@@ -12,6 +12,30 @@ import apply_reviewed_article_links as audit
 
 
 class ReviewedEditTests(unittest.TestCase):
+    def test_code_dollars_do_not_create_cross_fence_math(self):
+        for fence in ['```', '~~~']:
+            source = ('---\ntitle: Test\n---\n\n' + fence + 'csharp\nConsole.WriteLine($"value");\n'
+                      + fence + '\n\nAn ordinary [term](/en/p/term/). $x$ and `$literal`.\n\n'
+                      + fence + 'powershell\n$value = 1\n' + fence + '\n')
+            before = audit.protected_material(source)
+            self.assertEqual(before, audit.protected_material(source.replace('[term](/en/p/term/)', 'term')))
+            self.assertNotEqual(before, audit.protected_material(source.replace('$x$', '$y$')))
+            self.assertNotEqual(before, audit.protected_material(source.replace('$value = 1', '$value = 2')))
+            self.assertNotEqual(before, audit.protected_material(source.replace('`$literal`', '`$other`')))
+
+    def test_inline_xml_example_does_not_block_body_unwrap(self):
+        raw = '[Lock](/en/p/locking/)'
+        item = {'link': raw, 'context': raw, 'reason': 'misleading'}
+        for newline in ['\n', '\r\n']:
+            source = ('---\ntitle: Test\n---\n\nUse `<requestedExecutionLevel level="requireAdministrator" />`.\n\n'
+                      + raw + ' is misleading.\n').replace('\n', newline)
+            self.assertEqual(audit.unwrap_reviewed_link(source, item, {'/en/p/locking/'}),
+                             source.replace(raw, 'Lock'))
+            with self.assertRaises(ValueError):
+                audit.link_reviewed_context(source, 'requireAdministrator', 'requireAdministrator', '/en/p/locking/')
+            with self.assertRaises(ValueError):
+                audit.unwrap_reviewed_link(source + '<div>HTML</div>', item, {'/en/p/locking/'})
+
     def test_command_placeholders_do_not_block_reviewed_body_unwrap(self):
         raw = '[Paint](/en/p/rendering/)'
         item = {'link': raw, 'context': raw, 'reason': 'misleading'}
@@ -141,7 +165,7 @@ class ReviewedEditTests(unittest.TestCase):
     def run_plan(self):
         plan = self.root / 'plan.json'
         plan.write_text(json.dumps({'articles': [self.item]}), encoding='utf-8')
-        pages = {self.source.resolve(): {'permalink': 'https://kenji.blog/en/p/source/'},
+        pages = {self.source.resolve(): {'permalink': getattr(self, 'permalink', 'https://kenji.blog/en/p/source/')},
                  self.target.resolve(): {'permalink': 'https://kenji.blog/en/p/euler/'}}
         with patch.object(audit, 'ROOT', self.root), patch.object(audit, 'published_pages', return_value=pages), \
              patch.object(sys, 'argv', ['apply', str(plan), '--write']), contextlib.redirect_stdout(io.StringIO()):
@@ -155,6 +179,21 @@ class ReviewedEditTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Source changed'):
             self.run_plan()
         self.assertEqual(self.source.read_text(encoding='utf-8'), expected)
+
+    def test_legacy_self_heading_preserves_id_and_rejects_unknown_url(self):
+        self.permalink = 'https://kenji.blog/en/p/new-source-slug/'
+        for url,valid in [('/en/p/source/', True), ('/de/p/source/', False), ('/en/p/unrelated-missing/', False)]:
+            heading = '# [Legacy](' + url + ')'
+            source = '---\ntitle: Test\n---\n\n' + heading + '\n\nBody.\n'
+            self.source.write_text(source, encoding='utf-8')
+            self.item.update(source_sha256=hashlib.sha256(self.source.read_bytes()).hexdigest(), links=[],
+                             heading_unwraps=[{'heading': heading, 'link': heading[2:], 'old_id': 'old-anchor'}])
+            if valid:
+                self.run_plan()
+                self.assertIn('# Legacy {#old-anchor}', self.source.read_text(encoding='utf-8'))
+            else:
+                with self.assertRaises(ValueError): self.run_plan()
+                self.assertEqual(source, self.source.read_text(encoding='utf-8'))
 
     def test_category_change_requires_existing_localized_definitions(self):
         self.item['categories'] = {'before': ['business', 'web-marketing'], 'after': ['business', 'marketing']}

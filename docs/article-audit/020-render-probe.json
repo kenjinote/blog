@@ -1,0 +1,14 @@
+[
+  {
+    "page": "0-before",
+    "html_identical_except_links": true
+  },
+  {
+    "page": "1-before",
+    "html_identical_except_links": true
+  },
+  {
+    "page": "2-before",
+    "html_identical_except_links": true
+  }
+]

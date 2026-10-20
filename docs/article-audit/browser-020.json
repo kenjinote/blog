@@ -1,0 +1,1779 @@
+[
+  {
+    "batch": "020-windows-registry-ja-en-de",
+    "language": "ja",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "SYSTEM: オペレーティングシステムの起動に必要な重要な設定（ドライバ、サービス、ブート構成など）。",
+        "SOFTWARE: インストールされたソフトウェアのシステム全体の設定。サードパーティ製アプリの設定の多くがここに入ります。",
+        "SAM: Security Accounts Manager（ローカルユーザーアカウントとパスワードハッシュ）。",
+        "SECURITY: ローカルセキュリティポリシーと権限の割り当て。",
+        "DEFAULT: デフォルトユーザーのプロファイル（新規ユーザー作成時のテンプレート）。",
+        "NTUSER.DAT: そのユーザーの基本設定（HKCUの大部分）。",
+        "UsrClass.dat: そのユーザーのファイル拡張子関連付け設定（AppData\\Local\\Microsoft\\Windows 内に存在）。",
+        "HKEY_LOCAL_MACHINE (HKLM): コンピュータ全体（すべてのユーザー）に適用されるシステム設定やソフトウェア設定が格納されます。変更には管理者権限が必要です。",
+        "HKEY_CURRENT_USER (HKCU): 現在ログオンしているユーザー固有の設定が格納されます。実のところ、これは独立したデータベースではなく、HKEY_USERS の下にある該当ユーザーのSID（セキュリティ識別子）キーへのシンボリックリンク（エイリアス）に過ぎません。",
+        "HKEY_CLASSES_ROOT (HKCR): ファイルの拡張子の関連付けや、COM（Component Object Model）クラスの登録情報、シェル拡張が格納されます。このキーは特殊で、HKLM\\SOFTWARE\\Classes （システム全体）と HKCU\\Software\\Classes （現在のユーザー）をConfiguration Managerがマージ（統合）して表示する仮想的なビューです。競合がある場合は、ユーザー固有の設定（HKCU）が優先されます。",
+        "HKEY_USERS (HKU): システム上のすべてのユーザープロファイル（現在メモリにロードされているもの）の設定が格納されます。SIDベースで階層化されています。",
+        "HKEY_CURRENT_CONFIG (HKCC): 現在のハードウェアプロファイルに関する設定。実体は HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles\\Current へのリンクです。",
+        "REG_SZ (文字列値): 最も一般的なデータ型。NULL終端のUnicode文字列（UTF-16LE）を格納します。ファイルパス、URL、UIの表示名などに使用されます。",
+        "REG_DWORD (32ビット整数の値): 32ビット（4バイト）の符号なし整数値。ブール値（0=無効、1=有効）や、ミリ秒単位のタイムアウト値、エラーコードの設定などに頻繁に使用されます。Windowsはリトルエンディアンアーキテクチャであるため、ディスク上では下位バイトから順（例: 0x12345678 は 78 56 34 12）に保存されます。",
+        "REG_QWORD (64ビット整数の値): 64ビット（8バイト）の整数値。64ビットアーキテクチャの普及に伴い、巨大な数値（ディスククォータや大容量メモリのサイズ指定など）やポインタサイズの設定を保存するために使用されます。",
+        "REG_MULTI_SZ (複数行文字列値): 複数のNULL終端文字列を連続して格納し、最後にさらに空のNULL終端文字（ダブルNULL）を置いて終端とする形式です。IPアドレスのリスト、依存関係のあるサービスのリスト、バインディングの順序など、配列的なデータを保存するのに適しています。",
+        "REG_EXPAND_SZ (展開可能な文字列値): %USERPROFILE% や %SystemRoot% のような未展開の環境変数文字列を含む特殊な文字列型。アプリケーションが RegQueryValueEx API を通じて読み取る際、または ExpandEnvironmentStrings API を呼び出すことで、OSによって動的に実際の絶対パスに展開されます。",
+        "REG_BINARY (バイナリ値): 任意の生のバイナリデータストリーム。暗号化されたパスワード（LSA Secretsなど）、デジタル証明書、アプリケーション固有の複雑な構造体やシリアライズデータが格納されます。",
+        "REG_NONE: 型が未定義のデータ。非常に稀ですが、暗号化キーのリザーブ領域などに使われます。",
+        "REG_RESOURCE_LIST / REG_FULL_RESOURCE_DESCRIPTOR: デバイスドライバがハードウェアリソース（IRQ、I/Oポート、DMAチャネル）の割り当て情報を記録するために使用する、カーネル専用の高度な型です。",
+        "Process Name is powershell.exe",
+        "Operation begins with Reg",
+        "Result is ACCESS DENIED",
+        "最小特権の原則を徹底する: アプリケーションやスクリプトの設定は、可能な限り HKCU（現在のユーザー）内の Software キー以下に保存するべきです。HKLM への書き込みはUACによる管理者権限昇格を要求するため、セキュリティ上の攻撃対象領域（アタックサーフェス）を広げ、ユーザー体験を損ないます。",
+        "監査 (Auditing) の有効化: セキュリティ上極めて重要なキー（例：自動起動を司る Run キーや、サービスの設定キーなど）に対しては、SACL（System Access Control List）を構成し、誰がいつ値を変更・削除したかをWindowsイベントビューアーの「セキュリティログ」に記録（監査）するように設定します。",
+        "トランザクション機能の非推奨化への対応: かつてWindows Vistaで導入された「カーネルトランザクションマネージャー (KTM)」を利用したレジストリのトランザクション機能 (TxR) は、Windows 10以降非推奨（Deprecated）となっています。アプリケーション側で独自にバックアップとロールバックの仕組み（変更前に元の値を読み取ってメモリに保持しておくなど）を実装する必要があります。",
+        "グループポリシー (GPO) との競合に注意: HKLM\\SOFTWARE\\Policies や HKCU\\Software\\Policies の領域は、Active Directoryのグループポリシーによって一元管理されるべき領域です。スクリプトから直接これらのキーを書き換えても、次回のグループポリシーのバックグラウンド更新サイクル（通常90分〜120分間隔）でドメインコントローラーの設定によって強制的に上書きされてしまうため、設定が永続化しない原因となります。"
+      ],
+      "headings": [
+        {
+          "id": "windowsレジストリの基礎知識とプログラマブルな安全な編集方法httpskenjiblogpwindows_registry",
+          "text": "Windowsレジストリの基礎知識と、プログラマブルな安全な編集方法"
+        },
+        {
+          "id": "1-はじめにwindowsレジストリの歴史と進化",
+          "text": "1. はじめに：Windowsレジストリの歴史と進化"
+        },
+        {
+          "id": "2-アーキテクチャの深層レジストリハイブの実体とメモリマッピング",
+          "text": "2. アーキテクチャの深層：レジストリハイブの実体とメモリマッピング"
+        },
+        {
+          "id": "3-レジストリキーと値の階層構造",
+          "text": "3. レジストリキーと値の階層構造"
+        },
+        {
+          "id": "4-レジストリのデータ型詳細解説",
+          "text": "4. レジストリのデータ型（詳細解説）"
+        },
+        {
+          "id": "5-オペレーティングシステムにおけるレジストリの数理モデルとパフォーマンス",
+          "text": "5. オペレーティングシステムにおけるレジストリの数理モデルとパフォーマンス"
+        },
+        {
+          "id": "検索の計算量-time-complexity",
+          "text": "検索の計算量 (Time Complexity)"
+        },
+        {
+          "id": "ストレージフットプリント-space-complexity",
+          "text": "ストレージフットプリント (Space Complexity)"
+        },
+        {
+          "id": "6-システムの堅牢性を脅かす手動編集のリスクと破損確率",
+          "text": "6. システムの堅牢性を脅かす手動編集のリスクと破損確率"
+        },
+        {
+          "id": "破損確率の数理的モデル",
+          "text": "破損確率の数理的モデル"
+        },
+        {
+          "id": "7-レジストリの仮想化とwow64アーキテクチャ",
+          "text": "7. レジストリの仮想化とWOW64アーキテクチャ"
+        },
+        {
+          "id": "uac-レジストリ仮想化-registry-virtualization",
+          "text": "UAC レジストリ仮想化 (Registry Virtualization)"
+        },
+        {
+          "id": "wow64-windows-32-bit-on-windows-64-bit-のリダイレクト",
+          "text": "WOW64 (Windows 32-bit on Windows 64-bit) のリダイレクト"
+        },
+        {
+          "id": "8-powershellによるプログラマブルな安全な編集",
+          "text": "8. PowerShellによるプログラマブルな安全な編集"
+        },
+        {
+          "id": "基本的なcrud操作",
+          "text": "基本的なCRUD操作"
+        },
+        {
+          "id": "実践例1開発環境の自動設定環境変数のpath追加",
+          "text": "実践例1：開発環境の自動設定（環境変数のPATH追加）"
+        },
+        {
+          "id": "実践例2コンテキストメニューへのカスタムアクション追加",
+          "text": "実践例2：コンテキストメニューへのカスタムアクション追加"
+        },
+        {
+          "id": "powershellからのレジストリアクセス-内部シーケンス",
+          "text": "PowerShellからのレジストリアクセス 内部シーケンス"
+        },
+        {
+          "id": "9-c-net-による堅牢なレジストリアクセス",
+          "text": "9. C# (.NET) による堅牢なレジストリアクセス"
+        },
+        {
+          "id": "10-レジストリのバックアップとリストア手法",
+          "text": "10. レジストリのバックアップとリストア手法"
+        },
+        {
+          "id": "reg-ファイルによるバックアップとインポート",
+          "text": ".reg ファイルによるバックアップとインポート"
+        },
+        {
+          "id": "powershellを利用したより高度なバックアップ手法",
+          "text": "PowerShellを利用したより高度なバックアップ手法"
+        },
+        {
+          "id": "11-sysinternals-process-monitor-procmon-を用いたトラブルシューティング",
+          "text": "11. Sysinternals Process Monitor (Procmon) を用いたトラブルシューティング"
+        },
+        {
+          "id": "12-セキュリティとベストプラクティス",
+          "text": "12. セキュリティとベストプラクティス"
+        },
+        {
+          "id": "まとめ",
+          "text": "まとめ"
+        }
+      ],
+      "paragraphs": [
+        "Windowsオペレーティングシステムにおいて、「レジストリ（Registry）」はシステムおよびアプリケーションの各種設定を格納する巨大な階層型データベースです。本記事では、Windowsレジストリの基礎的なアーキテクチャから、PowerShellやC#を用いたプログラマブルかつ安全なレジストリの編集手法について、非常に詳細に解説します。",
+        "Windowsの初期バージョン（Windows 3.x時代）では、システムやアプリケーションの設定は主に .ini (初期化ファイル) に保存されていました。しかし、アプリケーションごとに無数のINIファイルがシステム全体に散在するようになり、管理が著しく煩雑化しました。また、INIファイルはプレーンテキストベースであるため、バイナリデータの保存が難しく、アクセス制御（セキュリティ）の仕組みも存在しませんでした。ファイルのパース速度も遅く、大規模な設定を保存するには不向きでした。",
+        "これらを根本的に解決するために、Windows NTおよびWindows 95以降、中央集権的な設定データベースとして「レジストリ」が本格的に採用されました。レジストリは階層化されたデータベースであり、強力な型付け、バイナリデータのサポート、そしてアクセス制御リスト（ACL）による堅牢なセキュリティ機能を提供します。これにより、OSのカーネルからユーザー空間のアプリケーションまで、あらゆるコンポーネントが統一されたインターフェース（Win32 APIの Reg* 関数群）で設定を読み書きできるようになりました。",
+        "現代のWindows 11に至るまで、レジストリはOSの心臓部として機能し続けています。ハードウェアの構成、デバイスドライバのロード順序、ユーザーのデスクトップ環境、インストールされたソフトウェアのリストなど、システムの動作に必要なあらゆるメタデータがレジストリに集約されています。",
+        "レジストリは論理的には一つの巨大なツリー構造として見えますが、物理的には「ハイブ（Hive）」と呼ばれる複数のファイルに分割されてディスク上に保存されています。これにより、システム全体の設定とユーザー固有の設定が分離され、効率的な読み込みが可能になっています。",
+        "主要なハイブファイルは、通常 %SystemRoot%\\System32\\config ディレクトリに存在します。",
+        "ユーザー個別のハイブファイルは、ユーザーのプロファイルディレクトリ（例：C:\\Users\\Username）に隠しファイルとして存在します。",
+        "これらのファイルは、OSの起動時にカーネルの「Configuration Manager (CM)」によってカーネルページプールメモリ上にマッピングされます。Configuration Managerは、レジストリの読み書き要求を処理するカーネルモードのコンポーネントです。",
+        "特筆すべきは、すべてのレジストリデータがディスク上に存在するわけではないという点です。例えば、HARDWARE ハイブは揮発性（Volatile）であり、ディスク上のファイルには一切保存されません。OSが起動し、プラグアンドプレイ（PnP）マネージャーがハードウェアを検出するたびに、メモリ上で動的に再構築されます。",
+        "また、最新のWindowsではレジストリの信頼性を高めるためにトランザクションロギングが実装されています。ハイブファイルに対する変更は直接データファイルに書き込まれるのではなく、まずトランザクションログ（.log1, .log2）に記録されます。これにより、書き込み中の不意の電源喪失やシステムクラッシュ時のデータ破損（コラプション）を防ぎ、データベースの整合性をACID特性に近い形で保証しています。",
+        "レジストリはファイルシステムに非常によく似た階層構造を持っています。ルートとなるノードは「ルートキー」または「ハイブ」と呼ばれ、その下に「キー」、「サブキー」、そしてデータの実体である「値（Value）」が格納されます。キーはディレクトリに、値はファイルに相当すると考えると理解しやすいでしょう。",
+        "主要なルートキーは以下の5つに分類されます。",
+        "この複雑な階層構造とリンクの関係を視覚化すると以下のようになります。",
+        "レジストリの「値」には、それぞれ厳密なデータ型が定義されています。プログラマブルにレジストリを操作する場合、これらの型を正しく理解し、適切な型でデータを書き込むことが不可欠です。誤った型で書き込むと、アプリケーションが例外をスローしたり、OSの機能が停止する原因となります。",
+        "レジストリはOSのパフォーマンス（特に起動時間とプロセスの初期化速度）に直結するため、内部的には「Cell Index」と呼ばれるB-Tree（B木）に似た高度なデータ構造を用いて最適化されています。",
+        "レジストリ内の特定のキー（パス）を検索する際の時間計算量 \n𝑇\nsearch\nT\nsearch\n\t​\n\n は、ツリーの深さと各階層におけるノードの数に依存します。深さ \n𝑑\nd のサブキー（例: A\\B\\C\\D なら \n𝑑\n=\n4\nd=4）を探索する場合の計算量は、理論上次のようにモデル化できます。",
+        "ここで、\n𝐶\n𝑖\nC\ni\n\t​\n\n は深さ \n𝑖\ni における子ノード（サブキーまたは値）の数、\n𝐿\n𝑖\nL\ni\n\t​\n\n は比較対象となる文字列の長さ（文字数）です。レジストリの実体であるハイブファイル内では、サブキーのリストは名前のハッシュ値またはアルファベット順でソートされたインデックスとして保持されています。そのため、単純な線形探索 \n𝑂\n(\n𝐶\n𝑖\n)\nO(C\ni\n\t​\n\n) ではなく、二分探索 \n𝑂\n(\nlog\n⁡\n(\n𝐶\n𝑖\n)\n)\nO(log(C\ni\n\t​\n\n)) が可能であり、1つのキーの下に数万のサブキーが存在しても極めて高速なアクセスを実現しています。",
+        "レジストリの全体のサイズ（物理ディスク上の占有量）は、各ハイブの合計として計算されます。",
+        "𝑁\nℎ\nN\nh\n\t​\n\n はハイブ \nℎ\nh 内のキー数、\n𝑆\nkey_metadata\nS\nkey_metadata\n\t​\n\n はキー1つあたりのメタデータ（最終書き込みタイムスタンプ、セキュリティ記述子へのポインタ、親キーへのポインタなど）のサイズ、\n𝑆\nvalue\n(\n𝑣\n)\nS\nvalue\n\t​\n\n(v) は値 \n𝑣\nv のペイロードサイズです。トランザクションログや不要になった空きセル（フラグメンテーション）によるオーバーヘッド \n𝑆\noverhead\nS\noverhead\n\t​\n\n も含まれます。レジストリに不要なデータ（アンインストールしきれなかったソフトの残骸など）を長期間放置すると、このフットプリントが増大し、OSのページプールメモリを圧迫してパフォーマンス低下を招く可能性があります。",
+        "レジストリエディター（regedit.exe）を利用した手作業による編集は、システム管理の最終手段と見なされるべきです。レジストリには一般的なドキュメントエディタのような「元に戻す（Undo）」機能が組み込まれておらず、値の変更やキーの削除は即座にConfiguration Managerを通じてシステムに反映されます。",
+        "特に、システム起動に不可欠なクリティカルキー（例：HKLM\\SYSTEM\\CurrentControlSet\\Services の下のディスクコントローラドライバ設定や、HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon の Userinit 値など）を1文字でも誤って編集・削除した場合、OSがブルースクリーン（BSoD）を起こして起動不能になったり、ログイン画面から先に進めなくなる（ブラックスクリーン）致命的なリスクがあります。",
+        "レジストリ内のキーを無作為に変更・削除してしまった場合のシステム障害発生確率を考えてみましょう。システムが正常に動作するために不可欠なクリティカルキーの集合を \n𝐶\nC、その総数を \n𝑁\n𝑐\n=\n∣\n𝐶\n∣\nN\nc\n\t​\n\n=∣C∣ とします。レジストリ全体のキーの総数を \n𝑁\ntotal\nN\ntotal\n\t​\n\n とします。 ランダムに \n𝑘\nk 個のキーを削除または破壊した場合、少なくとも1つのクリティカルキーが破損する確率 \n𝑃\nfailure\nP\nfailure\n\t​\n\n は、非復元抽出（Sampling without replacement）の確率計算により次のように表されます。",
+        "レジストリ全体のキー数 \n𝑁\ntotal\nN\ntotal\n\t​\n\n は数十万から数百万のオーダーですが、\n𝑁\n𝑐\nN\nc\n\t​\n\n も数万のオーダーで存在します。数学的には、無作為な操作でも \n𝑘\nk が増加すれば急激に障害確率は上昇します。さらに現実の手動操作では、ユーザーは「無作為」に編集するわけではなく、システムの設定やソフトウェアの動作に直接関わる箇所を意図的に（チュートリアルサイトなどを見ながら）操作するため、クリティカルキーに触れる確率は上記の理論値よりもはるかに高くなります。",
+        "Windowsはレガシーアプリケーションの互換性を維持するために、レジストリアクセスに対していくつかの高度な「仮想化（リダイレクト）」メカニズムを実装しています。これを理解せずにプログラミングを行うと、重大なバグを引き起こす原因となります。",
+        "Windows Vista以降、ユーザーアカウント制御（UAC）が導入されました。Windows XP時代に作られた古いアプリケーション（標準ユーザー権限で動作）が、本来管理者権限が必要な HKLM\\SOFTWARE などの保護されたキーに書き込みを行おうとした場合、アクセス拒否（Access Denied）エラーでクラッシュするのを防ぐため、Windowsはその書き込みをこっそりとユーザープロファイル内の仮想ストア HKCU\\Software\\Classes\\VirtualStore\\MACHINE\\SOFTWARE にリダイレクトします。読み取り時も、元の場所と仮想ストアの両方をマージして返します。これにより、アプリケーションはエラーを検知せずに正常に動作を継続できます。 ただし、プログラマブルにシステム全体の設定を変更するツールを開発する場合は、マニフェストファイルに <requestedExecutionLevel level=\"requireAdministrator\" /> を指定し、この仮想化を無効化しなければなりません。",
+        "64ビット版のWindows（現在の主流）上で、古い32ビットアプリケーションを実行する際、32ビットアプリが64ビットのネイティブシステム設定を誤って上書きしたり、互換性のない64ビットDLLをロードしたりしないよう、特定のレジストリキーは自動的に分離・リダイレクトされます。 例えば、32ビットアプリが HKLM\\SOFTWARE\\Vendor\\App にアクセスしようとすると、OSは透過的に HKLM\\SOFTWARE\\WOW6432Node\\Vendor\\App へとリダイレクトします。",
+        "PowerShellスクリプトやC#アプリケーションからレジストリを編集する際は、実行しているプロセス自体が32ビットか64ビットかを強く意識する必要があります。さもないと、「書き込んだはずの設定がエクスプローラーから見えない（別の場所に書き込まれている）」という厄介な問題を引き起こします。",
+        "レジストリを手動で編集するリスクを極小化するためには、PowerShellスクリプトを用いて操作をコード化（Infrastructure as Code）し、自動化・再現性・テスト可能性を確保することが現代のベストプラクティスです。PowerShellは「Registry Provider」を備えており、ファイルシステム（C:ドライブなど）を操作するのと全く同じコマンドレット（Get-ChildItem, Get-ItemProperty, New-Item など）でレジストリを透過的に操作できます。",
+        "PowerShellではデフォルトで HKLM: や HKCU: という専用のPSDrive（ドライブレターのようなもの）がマウントされています。",
+        "以下のスクリプトは、開発者が新しいWindowsマシンをセットアップする際に、ユーザー環境変数 PATH にカスタムツールのディレクトリを安全に追加する自動化例です。",
+        "特定のファイルやディレクトリを右クリックしたときのコンテキストメニューに、「My IDEで開く」という独自項目を追加するスクリプトです。",
+        "PowerShellスクリプトがレジストリを変更する際のOS内部での動作シーケンスを以下に示します。",
+        ".NETアプリケーション（C#など）からレジストリにアクセスする場合、Microsoft.Win32.Registry クラスおよび RegistryKey クラスを使用します。 C#を利用する最大の利点は、強力な例外処理（try-catch）による堅牢なエラーハンドリング、厳密な型チェック、そして RegistryView 列挙体を用いた明示的な32ビット/64ビットビューの指定が可能な点です。",
+        "以下は、64ビットOS環境において、確実に64ビット側のレジストリ（WOW6432Nodeのリダイレクトを回避）を読み書きするC#のコード例です。",
+        "レジストリのキーを開いた際にOSから返される「ハンドル」は、メモリとシステムリソースを消費するアンマネージドリソースです。そのため、using ブロックを使用するか、finally ブロック内で明示的に .Dispose() （または .Close()）を呼び出して、ハンドルリークを確実に防ぐことがC#プログラミングにおける鉄則です。",
+        "スクリプトやプログラムによる自動化であっても、クリティカルな変更を加える前にはバックアップを取得することが絶対に不可欠です。",
+        "最も古典的かつ汎用的な手法は .reg ファイルへのエクスポートです。このファイルは独自のフォーマットを持つテキストベースのファイルであり、構造は以下のようになっています。",
+        "注: バイナリデータは hex: に続くカンマ区切りの16進数で表現されます。",
+        "コマンドラインツール reg.exe を使用して、バッチスクリプト内で自動バックアップを実装できます。",
+        "単なるテキストとしてではなく、PowerShellのオブジェクト指向性を活かして、レジストリのオブジェクトをエクスポートしXML形式（CliXML）で保存することも可能です。これにより、復元時に文字列のパースに頼ることなく、型情報を維持したまま扱うことができます。",
+        "プログラムがレジストリのどこに書き込んでいるか不明な場合や、「Access Denied」の原因を探る場合、Microsoftが無償提供しているSysinternalsツールの Process Monitor (Procmon) が非常に強力です。 Procmonを使用すると、OS上で発生するすべてのレジストリAPI呼び出し（RegOpenKey, RegQueryValue, RegSetValue など）をリアルタイムでキャプチャし、以下のような高度なフィルタリングでトラブルシューティングが可能です。",
+        "これにより、どのキーのACL設定が不足しているか、あるいは WOW6432Node に誤ってリダイレクトされていないかを一瞬で特定できます。",
+        "最後に、レジストリを扱う上での重要な設計原則とベストプラクティスをまとめます。",
+        "Windowsレジストリは、OSのあらゆる挙動とアプリケーションの設定を統合的に管理する強力で複雑な基盤システムです。手動による無秩序な編集には、数理的にも実証される高いシステム破損リスクが伴います。そのため、PowerShellやC#などのプログラマブルな手段を用いて、Infrastructure as Codeの原則に則り、安全かつテスト可能・再現性のある形で構成管理を行うことが現代のシステム管理と開発において不可欠です。本記事で解説した深いアーキテクチャの理解と実装パターンを活用し、より堅牢でセキュアなWindows環境の構築を目指してください。"
+      ],
+      "code": [
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n",
+        "# 1. 存在確認 (Read)\n$keyPath = \"HKCU:\\Software\\MyCustomApp\"\nif (-Not (Test-Path -Path $keyPath)) {\n    # 2. 新しいキーの作成 (Create)\n    New-Item -Path \"HKCU:\\Software\" -Name \"MyCustomApp\" -Force | Out-Null\n    Write-Host \"キーを作成しました。\"\n}\n\n# 3. 値の書き込み・更新 (Update) - REG_DWORDとして1を書き込む\nSet-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Value 1 -Type DWord\n\n# 4. 値の読み取り (Read)\n$debugFlag = (Get-ItemProperty -Path $keyPath).EnableDebug\nWrite-Host \"現在のデバッグフラグ: $debugFlag\"\n\n# 5. 値の削除 (Delete)\nRemove-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Force\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n",
+        "$envKey = \"HKCU:\\Environment\"\n$newPath = \"C:\\tools\\bin\"\n\n# 現在のPATHを読み取る (エラーを抑制して安全に取得)\n$currentPathInfo = Get-ItemProperty -Path $envKey -Name \"Path\" -ErrorAction SilentlyContinue\n$currentPath = if ($currentPathInfo) { $currentPathInfo.Path } else { \"\" }\n\n# 既に含まれているか正規表現でチェック\nif ($currentPath -notmatch [regex]::Escape($newPath)) {\n    # 末尾にセミコロンがなければ付与して結合\n    if ($currentPath -and $currentPath -notmatch \";$\") {\n        $currentPath += \";\"\n    }\n    $updatedPath = $currentPath + $newPath\n    \n    # REG_EXPAND_SZ 型として書き込む（重要）\n    Set-ItemProperty -Path $envKey -Name \"Path\" -Value $updatedPath -Type ExpandString\n    Write-Host \"PATH環境変数を更新しました: $newPath\"\n    \n    # 実行中のプロセスに環境変数の変更を通知 (WM_SETTINGCHANGE)\n    # これにより、再起動せずに新しいエクスプローラー等に反映される\n    [Environment]::SetEnvironmentVariable(\"Path\", $updatedPath, [EnvironmentVariableTarget]::User)\n} else {\n    Write-Host \"PATHは既に追加されています。\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n",
+        "# ディレクトリの背景（余白部分）を右クリックしたときのメニュー\n$menuPath = \"HKCR:\\Directory\\Background\\shell\\OpenWithMyIDE\"\n$commandPath = \"$menuPath\\command\"\n\ntry {\n    # メニュー項目の親キーを作成\n    New-Item -Path $menuPath -Force -ErrorAction Stop | Out-Null\n    \n    # (default) 値に表示名を設定\n    Set-ItemProperty -Path $menuPath -Name \"(default)\" -Value \"My IDE で開く\" -Type String\n    \n    # アイコンを設定（オプショナル）\n    Set-ItemProperty -Path $menuPath -Name \"Icon\" -Value \"C:\\Program Files\\MyIDE\\ide.exe,0\" -Type String\n\n    # commandサブキーを作成し、実行されるコマンドラインを設定\n    # %V はカレントディレクトリのパスに展開される変数\n    New-Item -Path $commandPath -Force -ErrorAction Stop | Out-Null\n    Set-ItemProperty -Path $commandPath -Name \"(default)\" -Value \"`\"C:\\Program Files\\MyIDE\\ide.exe`\" `\"%V`\"\" -Type String\n\n    Write-Host \"コンテキストメニューを追加しました。\"\n} catch {\n    Write-Error \"レジストリの変更に失敗しました。管理者権限で実行しているか確認してください。エラー: $_\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n\n26\n\n27\n\n28\n\n29\n\n30\n\n31\n\n32\n\n33\n\n34\n\n35\n\n36\n\n37\n\n38\n\n39\n\n40\n\n41\n\n42\n\n43\n\n44\n\n45\n\n46\n\n47\n\n48\n\n49\n\n50\n\n51\n\n52\n\n53\n\n54\n",
+        "using System;\nusing System.Security;\nusing Microsoft.Win32;\n\nclass RegistryEditor\n{\n    static void Main()\n    {\n        // HKLM以下のパス (管理者権限が必要)\n        string keyPath = @\"SOFTWARE\\MyEnterpriseApp\\Settings\";\n\n        // RegistryView.Registry64 を指定して64ビットネイティブビューを開く\n        // usingステートメントを用いて、レジストリキーのハンドル(アンマネージドリソース)を確実にDisposeする\n        try\n        {\n            using (RegistryKey baseKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))\n            {\n                // 書き込み権限 (writable: true) でキーを開く。存在しない場合は作成。\n                using (RegistryKey subKey = baseKey.CreateSubKey(keyPath, writable: true))\n                {\n                    if (subKey != null)\n                    {\n                        // REG_DWORD として値を書き込む\n                        subKey.SetValue(\"MaxConnections\", 100, RegistryValueKind.DWord);\n                        \n                        // REG_SZ として値を書き込む\n                        subKey.SetValue(\"ApiEndpoint\", \"https://api.example.com\", RegistryValueKind.String);\n                        \n                        // REG_BINARY としてバイト配列を書き込む\n                        byte[] secretData = { 0x01, 0x02, 0x0A, 0xFF };\n                        subKey.SetValue(\"BinarySecret\", secretData, RegistryValueKind.Binary);\n                        \n                        Console.WriteLine(\"レジストリの書き込みに成功しました。\");\n                    }\n                }\n            }\n        }\n        catch (UnauthorizedAccessException ex)\n        {\n            // 管理者として実行していない場合によく発生する\n            Console.WriteLine($\"権限エラー: プログラムを「管理者として実行」してください。詳細: {ex.Message}\");\n        }\n        catch (SecurityException ex)\n        {\n            // .NETのコードアクセスセキュリティ(CAS)によってブロックされた場合\n            Console.WriteLine($\"セキュリティ例外: {ex.Message}\");\n        }\n        catch (Exception ex)\n        {\n            // その他の予期せぬIOエラーなど\n            Console.WriteLine($\"予期せぬエラー: {ex.Message}\");\n        }\n    }\n}\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n",
+        "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Software\\MyCustomApp]\n\"EnableDebug\"=dword:00000001\n\"ApiEndpoint\"=\"https://api.example.com\"\n\"BinaryData\"=hex:01,02,0a,ff\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n",
+        "REM 指定したキーをバックアップ (サブキーも再帰的にエクスポートされる)\nreg export HKLM\\SOFTWARE\\MyEnterpriseApp C:\\backup\\myapp_backup.reg /y\n\nREM バックアップの復元\nreg import C:\\backup\\myapp_backup.reg\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n",
+        "# バックアップの取得 (プロパティをXMLとして保存)\nGet-ItemProperty -Path \"HKCU:\\Software\\MyCustomApp\" | Export-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n\n# リストアの概念\n$backup = Import-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n# $backup には復元されたカスタムPSObjectが格納されているため、\n# そのプロパティをループして Set-ItemProperty で適用し直すロジックを組むことができます。\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-registry-safe-programmable-editing/img/eyecatch_hu2430515421054564890.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/categories/windows/"
+        },
+        {
+          "text": "運用管理",
+          "path": "/categories/administration/"
+        },
+        {
+          "text": "プログラミング",
+          "path": "/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Windowsレジストリの基礎知識と、プログラマブルな安全な編集方法",
+          "path": "/p/windows_registry/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "トランザクション",
+          "path": "/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "ACID",
+          "path": "/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "ポインタ",
+          "path": "/p/c-language-pointers-memory-management-stack-heap/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "暗号化",
+          "path": "/p/modern-cryptography-public-key-hash-signature/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "B-Tree",
+          "path": "/p/b-tree-database-index-theory/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "B木",
+          "path": "/p/b-tree-database-index-theory/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "時間計算量",
+          "path": "/p/time-space-complexity-big-o-notation-examples/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "ソート",
+          "path": "/p/sorting-algorithms/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "二分探索",
+          "path": "/p/search-algorithms-linear-binary-hash-table-principles/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "ポインタ",
+          "path": "/p/c-language-pointers-memory-management-stack-heap/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "トランザクション",
+          "path": "/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "ロック",
+          "path": "/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "ロック",
+          "path": "/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "オブジェクト指向",
+          "path": "/p/oop-vs-fp-vs-dop/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "トランザクション",
+          "path": "/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "SYSTEM: オペレーティングシステムの起動に必要な重要な設定（ドライバ、サービス、ブート構成など）。",
+        "SOFTWARE: インストールされたソフトウェアのシステム全体の設定。サードパーティ製アプリの設定の多くがここに入ります。",
+        "SAM: Security Accounts Manager（ローカルユーザーアカウントとパスワードハッシュ）。",
+        "SECURITY: ローカルセキュリティポリシーと権限の割り当て。",
+        "DEFAULT: デフォルトユーザーのプロファイル（新規ユーザー作成時のテンプレート）。",
+        "NTUSER.DAT: そのユーザーの基本設定（HKCUの大部分）。",
+        "UsrClass.dat: そのユーザーのファイル拡張子関連付け設定（AppData\\Local\\Microsoft\\Windows 内に存在）。",
+        "HKEY_LOCAL_MACHINE (HKLM): コンピュータ全体（すべてのユーザー）に適用されるシステム設定やソフトウェア設定が格納されます。変更には管理者権限が必要です。",
+        "HKEY_CURRENT_USER (HKCU): 現在ログオンしているユーザー固有の設定が格納されます。実のところ、これは独立したデータベースではなく、HKEY_USERS の下にある該当ユーザーのSID（セキュリティ識別子）キーへのシンボリックリンク（エイリアス）に過ぎません。",
+        "HKEY_CLASSES_ROOT (HKCR): ファイルの拡張子の関連付けや、COM（Component Object Model）クラスの登録情報、シェル拡張が格納されます。このキーは特殊で、HKLM\\SOFTWARE\\Classes （システム全体）と HKCU\\Software\\Classes （現在のユーザー）をConfiguration Managerがマージ（統合）して表示する仮想的なビューです。競合がある場合は、ユーザー固有の設定（HKCU）が優先されます。",
+        "HKEY_USERS (HKU): システム上のすべてのユーザープロファイル（現在メモリにロードされているもの）の設定が格納されます。SIDベースで階層化されています。",
+        "HKEY_CURRENT_CONFIG (HKCC): 現在のハードウェアプロファイルに関する設定。実体は HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles\\Current へのリンクです。",
+        "REG_SZ (文字列値): 最も一般的なデータ型。NULL終端のUnicode文字列（UTF-16LE）を格納します。ファイルパス、URL、UIの表示名などに使用されます。",
+        "REG_DWORD (32ビット整数の値): 32ビット（4バイト）の符号なし整数値。ブール値（0=無効、1=有効）や、ミリ秒単位のタイムアウト値、エラーコードの設定などに頻繁に使用されます。Windowsはリトルエンディアンアーキテクチャであるため、ディスク上では下位バイトから順（例: 0x12345678 は 78 56 34 12）に保存されます。",
+        "REG_QWORD (64ビット整数の値): 64ビット（8バイト）の整数値。64ビットアーキテクチャの普及に伴い、巨大な数値（ディスククォータや大容量メモリのサイズ指定など）やポインタサイズの設定を保存するために使用されます。",
+        "REG_MULTI_SZ (複数行文字列値): 複数のNULL終端文字列を連続して格納し、最後にさらに空のNULL終端文字（ダブルNULL）を置いて終端とする形式です。IPアドレスのリスト、依存関係のあるサービスのリスト、バインディングの順序など、配列的なデータを保存するのに適しています。",
+        "REG_EXPAND_SZ (展開可能な文字列値): %USERPROFILE% や %SystemRoot% のような未展開の環境変数文字列を含む特殊な文字列型。アプリケーションが RegQueryValueEx API を通じて読み取る際、または ExpandEnvironmentStrings API を呼び出すことで、OSによって動的に実際の絶対パスに展開されます。",
+        "REG_BINARY (バイナリ値): 任意の生のバイナリデータストリーム。暗号化されたパスワード（LSA Secretsなど）、デジタル証明書、アプリケーション固有の複雑な構造体やシリアライズデータが格納されます。",
+        "REG_NONE: 型が未定義のデータ。非常に稀ですが、暗号化キーのリザーブ領域などに使われます。",
+        "REG_RESOURCE_LIST / REG_FULL_RESOURCE_DESCRIPTOR: デバイスドライバがハードウェアリソース（IRQ、I/Oポート、DMAチャネル）の割り当て情報を記録するために使用する、カーネル専用の高度な型です。",
+        "Process Name is powershell.exe",
+        "Operation begins with Reg",
+        "Result is ACCESS DENIED",
+        "最小特権の原則を徹底する: アプリケーションやスクリプトの設定は、可能な限り HKCU（現在のユーザー）内の Software キー以下に保存するべきです。HKLM への書き込みはUACによる管理者権限昇格を要求するため、セキュリティ上の攻撃対象領域（アタックサーフェス）を広げ、ユーザー体験を損ないます。",
+        "監査 (Auditing) の有効化: セキュリティ上極めて重要なキー（例：自動起動を司る Run キーや、サービスの設定キーなど）に対しては、SACL（System Access Control List）を構成し、誰がいつ値を変更・削除したかをWindowsイベントビューアーの「セキュリティログ」に記録（監査）するように設定します。",
+        "トランザクション機能の非推奨化への対応: かつてWindows Vistaで導入された「カーネルトランザクションマネージャー (KTM)」を利用したレジストリのトランザクション機能 (TxR) は、Windows 10以降非推奨（Deprecated）となっています。アプリケーション側で独自にバックアップとロールバックの仕組み（変更前に元の値を読み取ってメモリに保持しておくなど）を実装する必要があります。",
+        "グループポリシー (GPO) との競合に注意: HKLM\\SOFTWARE\\Policies や HKCU\\Software\\Policies の領域は、Active Directoryのグループポリシーによって一元管理されるべき領域です。スクリプトから直接これらのキーを書き換えても、次回のグループポリシーのバックグラウンド更新サイクル（通常90分〜120分間隔）でドメインコントローラーの設定によって強制的に上書きされてしまうため、設定が永続化しない原因となります。"
+      ],
+      "headings": [
+        {
+          "id": "windowsレジストリの基礎知識とプログラマブルな安全な編集方法httpskenjiblogpwindows_registry",
+          "text": "Windowsレジストリの基礎知識と、プログラマブルな安全な編集方法"
+        },
+        {
+          "id": "1-はじめにwindowsレジストリの歴史と進化",
+          "text": "1. はじめに：Windowsレジストリの歴史と進化"
+        },
+        {
+          "id": "2-アーキテクチャの深層レジストリハイブの実体とメモリマッピング",
+          "text": "2. アーキテクチャの深層：レジストリハイブの実体とメモリマッピング"
+        },
+        {
+          "id": "3-レジストリキーと値の階層構造",
+          "text": "3. レジストリキーと値の階層構造"
+        },
+        {
+          "id": "4-レジストリのデータ型詳細解説",
+          "text": "4. レジストリのデータ型（詳細解説）"
+        },
+        {
+          "id": "5-オペレーティングシステムにおけるレジストリの数理モデルとパフォーマンス",
+          "text": "5. オペレーティングシステムにおけるレジストリの数理モデルとパフォーマンス"
+        },
+        {
+          "id": "検索の計算量-time-complexity",
+          "text": "検索の計算量 (Time Complexity)"
+        },
+        {
+          "id": "ストレージフットプリント-space-complexity",
+          "text": "ストレージフットプリント (Space Complexity)"
+        },
+        {
+          "id": "6-システムの堅牢性を脅かす手動編集のリスクと破損確率",
+          "text": "6. システムの堅牢性を脅かす手動編集のリスクと破損確率"
+        },
+        {
+          "id": "破損確率の数理的モデル",
+          "text": "破損確率の数理的モデル"
+        },
+        {
+          "id": "7-レジストリの仮想化とwow64アーキテクチャ",
+          "text": "7. レジストリの仮想化とWOW64アーキテクチャ"
+        },
+        {
+          "id": "uac-レジストリ仮想化-registry-virtualization",
+          "text": "UAC レジストリ仮想化 (Registry Virtualization)"
+        },
+        {
+          "id": "wow64-windows-32-bit-on-windows-64-bit-のリダイレクト",
+          "text": "WOW64 (Windows 32-bit on Windows 64-bit) のリダイレクト"
+        },
+        {
+          "id": "8-powershellによるプログラマブルな安全な編集",
+          "text": "8. PowerShellによるプログラマブルな安全な編集"
+        },
+        {
+          "id": "基本的なcrud操作",
+          "text": "基本的なCRUD操作"
+        },
+        {
+          "id": "実践例1開発環境の自動設定環境変数のpath追加",
+          "text": "実践例1：開発環境の自動設定（環境変数のPATH追加）"
+        },
+        {
+          "id": "実践例2コンテキストメニューへのカスタムアクション追加",
+          "text": "実践例2：コンテキストメニューへのカスタムアクション追加"
+        },
+        {
+          "id": "powershellからのレジストリアクセス-内部シーケンス",
+          "text": "PowerShellからのレジストリアクセス 内部シーケンス"
+        },
+        {
+          "id": "9-c-net-による堅牢なレジストリアクセス",
+          "text": "9. C# (.NET) による堅牢なレジストリアクセス"
+        },
+        {
+          "id": "10-レジストリのバックアップとリストア手法",
+          "text": "10. レジストリのバックアップとリストア手法"
+        },
+        {
+          "id": "reg-ファイルによるバックアップとインポート",
+          "text": ".reg ファイルによるバックアップとインポート"
+        },
+        {
+          "id": "powershellを利用したより高度なバックアップ手法",
+          "text": "PowerShellを利用したより高度なバックアップ手法"
+        },
+        {
+          "id": "11-sysinternals-process-monitor-procmon-を用いたトラブルシューティング",
+          "text": "11. Sysinternals Process Monitor (Procmon) を用いたトラブルシューティング"
+        },
+        {
+          "id": "12-セキュリティとベストプラクティス",
+          "text": "12. セキュリティとベストプラクティス"
+        },
+        {
+          "id": "まとめ",
+          "text": "まとめ"
+        }
+      ],
+      "paragraphs": [
+        "Windowsオペレーティングシステムにおいて、「レジストリ（Registry）」はシステムおよびアプリケーションの各種設定を格納する巨大な階層型データベースです。本記事では、Windowsレジストリの基礎的なアーキテクチャから、PowerShellやC#を用いたプログラマブルかつ安全なレジストリの編集手法について、非常に詳細に解説します。",
+        "Windowsの初期バージョン（Windows 3.x時代）では、システムやアプリケーションの設定は主に .ini (初期化ファイル) に保存されていました。しかし、アプリケーションごとに無数のINIファイルがシステム全体に散在するようになり、管理が著しく煩雑化しました。また、INIファイルはプレーンテキストベースであるため、バイナリデータの保存が難しく、アクセス制御（セキュリティ）の仕組みも存在しませんでした。ファイルのパース速度も遅く、大規模な設定を保存するには不向きでした。",
+        "これらを根本的に解決するために、Windows NTおよびWindows 95以降、中央集権的な設定データベースとして「レジストリ」が本格的に採用されました。レジストリは階層化されたデータベースであり、強力な型付け、バイナリデータのサポート、そしてアクセス制御リスト（ACL）による堅牢なセキュリティ機能を提供します。これにより、OSのカーネルからユーザー空間のアプリケーションまで、あらゆるコンポーネントが統一されたインターフェース（Win32 APIの Reg* 関数群）で設定を読み書きできるようになりました。",
+        "現代のWindows 11に至るまで、レジストリはOSの心臓部として機能し続けています。ハードウェアの構成、デバイスドライバのロード順序、ユーザーのデスクトップ環境、インストールされたソフトウェアのリストなど、システムの動作に必要なあらゆるメタデータがレジストリに集約されています。",
+        "レジストリは論理的には一つの巨大なツリー構造として見えますが、物理的には「ハイブ（Hive）」と呼ばれる複数のファイルに分割されてディスク上に保存されています。これにより、システム全体の設定とユーザー固有の設定が分離され、効率的な読み込みが可能になっています。",
+        "主要なハイブファイルは、通常 %SystemRoot%\\System32\\config ディレクトリに存在します。",
+        "ユーザー個別のハイブファイルは、ユーザーのプロファイルディレクトリ（例：C:\\Users\\Username）に隠しファイルとして存在します。",
+        "これらのファイルは、OSの起動時にカーネルの「Configuration Manager (CM)」によってカーネルページプールメモリ上にマッピングされます。Configuration Managerは、レジストリの読み書き要求を処理するカーネルモードのコンポーネントです。",
+        "特筆すべきは、すべてのレジストリデータがディスク上に存在するわけではないという点です。例えば、HARDWARE ハイブは揮発性（Volatile）であり、ディスク上のファイルには一切保存されません。OSが起動し、プラグアンドプレイ（PnP）マネージャーがハードウェアを検出するたびに、メモリ上で動的に再構築されます。",
+        "また、最新のWindowsではレジストリの信頼性を高めるためにトランザクションロギングが実装されています。ハイブファイルに対する変更は直接データファイルに書き込まれるのではなく、まずトランザクションログ（.log1, .log2）に記録されます。これにより、書き込み中の不意の電源喪失やシステムクラッシュ時のデータ破損（コラプション）を防ぎ、データベースの整合性をACID特性に近い形で保証しています。",
+        "レジストリはファイルシステムに非常によく似た階層構造を持っています。ルートとなるノードは「ルートキー」または「ハイブ」と呼ばれ、その下に「キー」、「サブキー」、そしてデータの実体である「値（Value）」が格納されます。キーはディレクトリに、値はファイルに相当すると考えると理解しやすいでしょう。",
+        "主要なルートキーは以下の5つに分類されます。",
+        "この複雑な階層構造とリンクの関係を視覚化すると以下のようになります。",
+        "レジストリの「値」には、それぞれ厳密なデータ型が定義されています。プログラマブルにレジストリを操作する場合、これらの型を正しく理解し、適切な型でデータを書き込むことが不可欠です。誤った型で書き込むと、アプリケーションが例外をスローしたり、OSの機能が停止する原因となります。",
+        "レジストリはOSのパフォーマンス（特に起動時間とプロセスの初期化速度）に直結するため、内部的には「Cell Index」と呼ばれるB-Tree（B木）に似た高度なデータ構造を用いて最適化されています。",
+        "レジストリ内の特定のキー（パス）を検索する際の時間計算量 \n𝑇\nsearch\nT\nsearch\n\t​\n\n は、ツリーの深さと各階層におけるノードの数に依存します。深さ \n𝑑\nd のサブキー（例: A\\B\\C\\D なら \n𝑑\n=\n4\nd=4）を探索する場合の計算量は、理論上次のようにモデル化できます。",
+        "ここで、\n𝐶\n𝑖\nC\ni\n\t​\n\n は深さ \n𝑖\ni における子ノード（サブキーまたは値）の数、\n𝐿\n𝑖\nL\ni\n\t​\n\n は比較対象となる文字列の長さ（文字数）です。レジストリの実体であるハイブファイル内では、サブキーのリストは名前のハッシュ値またはアルファベット順でソートされたインデックスとして保持されています。そのため、単純な線形探索 \n𝑂\n(\n𝐶\n𝑖\n)\nO(C\ni\n\t​\n\n) ではなく、二分探索 \n𝑂\n(\nlog\n⁡\n(\n𝐶\n𝑖\n)\n)\nO(log(C\ni\n\t​\n\n)) が可能であり、1つのキーの下に数万のサブキーが存在しても極めて高速なアクセスを実現しています。",
+        "レジストリの全体のサイズ（物理ディスク上の占有量）は、各ハイブの合計として計算されます。",
+        "𝑁\nℎ\nN\nh\n\t​\n\n はハイブ \nℎ\nh 内のキー数、\n𝑆\nkey_metadata\nS\nkey_metadata\n\t​\n\n はキー1つあたりのメタデータ（最終書き込みタイムスタンプ、セキュリティ記述子へのポインタ、親キーへのポインタなど）のサイズ、\n𝑆\nvalue\n(\n𝑣\n)\nS\nvalue\n\t​\n\n(v) は値 \n𝑣\nv のペイロードサイズです。トランザクションログや不要になった空きセル（フラグメンテーション）によるオーバーヘッド \n𝑆\noverhead\nS\noverhead\n\t​\n\n も含まれます。レジストリに不要なデータ（アンインストールしきれなかったソフトの残骸など）を長期間放置すると、このフットプリントが増大し、OSのページプールメモリを圧迫してパフォーマンス低下を招く可能性があります。",
+        "レジストリエディター（regedit.exe）を利用した手作業による編集は、システム管理の最終手段と見なされるべきです。レジストリには一般的なドキュメントエディタのような「元に戻す（Undo）」機能が組み込まれておらず、値の変更やキーの削除は即座にConfiguration Managerを通じてシステムに反映されます。",
+        "特に、システム起動に不可欠なクリティカルキー（例：HKLM\\SYSTEM\\CurrentControlSet\\Services の下のディスクコントローラドライバ設定や、HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon の Userinit 値など）を1文字でも誤って編集・削除した場合、OSがブルースクリーン（BSoD）を起こして起動不能になったり、ログイン画面から先に進めなくなる（ブラックスクリーン）致命的なリスクがあります。",
+        "レジストリ内のキーを無作為に変更・削除してしまった場合のシステム障害発生確率を考えてみましょう。システムが正常に動作するために不可欠なクリティカルキーの集合を \n𝐶\nC、その総数を \n𝑁\n𝑐\n=\n∣\n𝐶\n∣\nN\nc\n\t​\n\n=∣C∣ とします。レジストリ全体のキーの総数を \n𝑁\ntotal\nN\ntotal\n\t​\n\n とします。 ランダムに \n𝑘\nk 個のキーを削除または破壊した場合、少なくとも1つのクリティカルキーが破損する確率 \n𝑃\nfailure\nP\nfailure\n\t​\n\n は、非復元抽出（Sampling without replacement）の確率計算により次のように表されます。",
+        "レジストリ全体のキー数 \n𝑁\ntotal\nN\ntotal\n\t​\n\n は数十万から数百万のオーダーですが、\n𝑁\n𝑐\nN\nc\n\t​\n\n も数万のオーダーで存在します。数学的には、無作為な操作でも \n𝑘\nk が増加すれば急激に障害確率は上昇します。さらに現実の手動操作では、ユーザーは「無作為」に編集するわけではなく、システムの設定やソフトウェアの動作に直接関わる箇所を意図的に（チュートリアルサイトなどを見ながら）操作するため、クリティカルキーに触れる確率は上記の理論値よりもはるかに高くなります。",
+        "Windowsはレガシーアプリケーションの互換性を維持するために、レジストリアクセスに対していくつかの高度な「仮想化（リダイレクト）」メカニズムを実装しています。これを理解せずにプログラミングを行うと、重大なバグを引き起こす原因となります。",
+        "Windows Vista以降、ユーザーアカウント制御（UAC）が導入されました。Windows XP時代に作られた古いアプリケーション（標準ユーザー権限で動作）が、本来管理者権限が必要な HKLM\\SOFTWARE などの保護されたキーに書き込みを行おうとした場合、アクセス拒否（Access Denied）エラーでクラッシュするのを防ぐため、Windowsはその書き込みをこっそりとユーザープロファイル内の仮想ストア HKCU\\Software\\Classes\\VirtualStore\\MACHINE\\SOFTWARE にリダイレクトします。読み取り時も、元の場所と仮想ストアの両方をマージして返します。これにより、アプリケーションはエラーを検知せずに正常に動作を継続できます。 ただし、プログラマブルにシステム全体の設定を変更するツールを開発する場合は、マニフェストファイルに <requestedExecutionLevel level=\"requireAdministrator\" /> を指定し、この仮想化を無効化しなければなりません。",
+        "64ビット版のWindows（現在の主流）上で、古い32ビットアプリケーションを実行する際、32ビットアプリが64ビットのネイティブシステム設定を誤って上書きしたり、互換性のない64ビットDLLをロードしたりしないよう、特定のレジストリキーは自動的に分離・リダイレクトされます。 例えば、32ビットアプリが HKLM\\SOFTWARE\\Vendor\\App にアクセスしようとすると、OSは透過的に HKLM\\SOFTWARE\\WOW6432Node\\Vendor\\App へとリダイレクトします。",
+        "PowerShellスクリプトやC#アプリケーションからレジストリを編集する際は、実行しているプロセス自体が32ビットか64ビットかを強く意識する必要があります。さもないと、「書き込んだはずの設定がエクスプローラーから見えない（別の場所に書き込まれている）」という厄介な問題を引き起こします。",
+        "レジストリを手動で編集するリスクを極小化するためには、PowerShellスクリプトを用いて操作をコード化（Infrastructure as Code）し、自動化・再現性・テスト可能性を確保することが現代のベストプラクティスです。PowerShellは「Registry Provider」を備えており、ファイルシステム（C:ドライブなど）を操作するのと全く同じコマンドレット（Get-ChildItem, Get-ItemProperty, New-Item など）でレジストリを透過的に操作できます。",
+        "PowerShellではデフォルトで HKLM: や HKCU: という専用のPSDrive（ドライブレターのようなもの）がマウントされています。",
+        "以下のスクリプトは、開発者が新しいWindowsマシンをセットアップする際に、ユーザー環境変数 PATH にカスタムツールのディレクトリを安全に追加する自動化例です。",
+        "特定のファイルやディレクトリを右クリックしたときのコンテキストメニューに、「My IDEで開く」という独自項目を追加するスクリプトです。",
+        "PowerShellスクリプトがレジストリを変更する際のOS内部での動作シーケンスを以下に示します。",
+        ".NETアプリケーション（C#など）からレジストリにアクセスする場合、Microsoft.Win32.Registry クラスおよび RegistryKey クラスを使用します。 C#を利用する最大の利点は、強力な例外処理（try-catch）による堅牢なエラーハンドリング、厳密な型チェック、そして RegistryView 列挙体を用いた明示的な32ビット/64ビットビューの指定が可能な点です。",
+        "以下は、64ビットOS環境において、確実に64ビット側のレジストリ（WOW6432Nodeのリダイレクトを回避）を読み書きするC#のコード例です。",
+        "レジストリのキーを開いた際にOSから返される「ハンドル」は、メモリとシステムリソースを消費するアンマネージドリソースです。そのため、using ブロックを使用するか、finally ブロック内で明示的に .Dispose() （または .Close()）を呼び出して、ハンドルリークを確実に防ぐことがC#プログラミングにおける鉄則です。",
+        "スクリプトやプログラムによる自動化であっても、クリティカルな変更を加える前にはバックアップを取得することが絶対に不可欠です。",
+        "最も古典的かつ汎用的な手法は .reg ファイルへのエクスポートです。このファイルは独自のフォーマットを持つテキストベースのファイルであり、構造は以下のようになっています。",
+        "注: バイナリデータは hex: に続くカンマ区切りの16進数で表現されます。",
+        "コマンドラインツール reg.exe を使用して、バッチスクリプト内で自動バックアップを実装できます。",
+        "単なるテキストとしてではなく、PowerShellのオブジェクト指向性を活かして、レジストリのオブジェクトをエクスポートしXML形式（CliXML）で保存することも可能です。これにより、復元時に文字列のパースに頼ることなく、型情報を維持したまま扱うことができます。",
+        "プログラムがレジストリのどこに書き込んでいるか不明な場合や、「Access Denied」の原因を探る場合、Microsoftが無償提供しているSysinternalsツールの Process Monitor (Procmon) が非常に強力です。 Procmonを使用すると、OS上で発生するすべてのレジストリAPI呼び出し（RegOpenKey, RegQueryValue, RegSetValue など）をリアルタイムでキャプチャし、以下のような高度なフィルタリングでトラブルシューティングが可能です。",
+        "これにより、どのキーのACL設定が不足しているか、あるいは WOW6432Node に誤ってリダイレクトされていないかを一瞬で特定できます。",
+        "最後に、レジストリを扱う上での重要な設計原則とベストプラクティスをまとめます。",
+        "Windowsレジストリは、OSのあらゆる挙動とアプリケーションの設定を統合的に管理する強力で複雑な基盤システムです。手動による無秩序な編集には、数理的にも実証される高いシステム破損リスクが伴います。そのため、PowerShellやC#などのプログラマブルな手段を用いて、Infrastructure as Codeの原則に則り、安全かつテスト可能・再現性のある形で構成管理を行うことが現代のシステム管理と開発において不可欠です。本記事で解説した深いアーキテクチャの理解と実装パターンを活用し、より堅牢でセキュアなWindows環境の構築を目指してください。"
+      ],
+      "code": [
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n",
+        "# 1. 存在確認 (Read)\n$keyPath = \"HKCU:\\Software\\MyCustomApp\"\nif (-Not (Test-Path -Path $keyPath)) {\n    # 2. 新しいキーの作成 (Create)\n    New-Item -Path \"HKCU:\\Software\" -Name \"MyCustomApp\" -Force | Out-Null\n    Write-Host \"キーを作成しました。\"\n}\n\n# 3. 値の書き込み・更新 (Update) - REG_DWORDとして1を書き込む\nSet-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Value 1 -Type DWord\n\n# 4. 値の読み取り (Read)\n$debugFlag = (Get-ItemProperty -Path $keyPath).EnableDebug\nWrite-Host \"現在のデバッグフラグ: $debugFlag\"\n\n# 5. 値の削除 (Delete)\nRemove-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Force\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n",
+        "$envKey = \"HKCU:\\Environment\"\n$newPath = \"C:\\tools\\bin\"\n\n# 現在のPATHを読み取る (エラーを抑制して安全に取得)\n$currentPathInfo = Get-ItemProperty -Path $envKey -Name \"Path\" -ErrorAction SilentlyContinue\n$currentPath = if ($currentPathInfo) { $currentPathInfo.Path } else { \"\" }\n\n# 既に含まれているか正規表現でチェック\nif ($currentPath -notmatch [regex]::Escape($newPath)) {\n    # 末尾にセミコロンがなければ付与して結合\n    if ($currentPath -and $currentPath -notmatch \";$\") {\n        $currentPath += \";\"\n    }\n    $updatedPath = $currentPath + $newPath\n    \n    # REG_EXPAND_SZ 型として書き込む（重要）\n    Set-ItemProperty -Path $envKey -Name \"Path\" -Value $updatedPath -Type ExpandString\n    Write-Host \"PATH環境変数を更新しました: $newPath\"\n    \n    # 実行中のプロセスに環境変数の変更を通知 (WM_SETTINGCHANGE)\n    # これにより、再起動せずに新しいエクスプローラー等に反映される\n    [Environment]::SetEnvironmentVariable(\"Path\", $updatedPath, [EnvironmentVariableTarget]::User)\n} else {\n    Write-Host \"PATHは既に追加されています。\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n",
+        "# ディレクトリの背景（余白部分）を右クリックしたときのメニュー\n$menuPath = \"HKCR:\\Directory\\Background\\shell\\OpenWithMyIDE\"\n$commandPath = \"$menuPath\\command\"\n\ntry {\n    # メニュー項目の親キーを作成\n    New-Item -Path $menuPath -Force -ErrorAction Stop | Out-Null\n    \n    # (default) 値に表示名を設定\n    Set-ItemProperty -Path $menuPath -Name \"(default)\" -Value \"My IDE で開く\" -Type String\n    \n    # アイコンを設定（オプショナル）\n    Set-ItemProperty -Path $menuPath -Name \"Icon\" -Value \"C:\\Program Files\\MyIDE\\ide.exe,0\" -Type String\n\n    # commandサブキーを作成し、実行されるコマンドラインを設定\n    # %V はカレントディレクトリのパスに展開される変数\n    New-Item -Path $commandPath -Force -ErrorAction Stop | Out-Null\n    Set-ItemProperty -Path $commandPath -Name \"(default)\" -Value \"`\"C:\\Program Files\\MyIDE\\ide.exe`\" `\"%V`\"\" -Type String\n\n    Write-Host \"コンテキストメニューを追加しました。\"\n} catch {\n    Write-Error \"レジストリの変更に失敗しました。管理者権限で実行しているか確認してください。エラー: $_\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n\n26\n\n27\n\n28\n\n29\n\n30\n\n31\n\n32\n\n33\n\n34\n\n35\n\n36\n\n37\n\n38\n\n39\n\n40\n\n41\n\n42\n\n43\n\n44\n\n45\n\n46\n\n47\n\n48\n\n49\n\n50\n\n51\n\n52\n\n53\n\n54\n",
+        "using System;\nusing System.Security;\nusing Microsoft.Win32;\n\nclass RegistryEditor\n{\n    static void Main()\n    {\n        // HKLM以下のパス (管理者権限が必要)\n        string keyPath = @\"SOFTWARE\\MyEnterpriseApp\\Settings\";\n\n        // RegistryView.Registry64 を指定して64ビットネイティブビューを開く\n        // usingステートメントを用いて、レジストリキーのハンドル(アンマネージドリソース)を確実にDisposeする\n        try\n        {\n            using (RegistryKey baseKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))\n            {\n                // 書き込み権限 (writable: true) でキーを開く。存在しない場合は作成。\n                using (RegistryKey subKey = baseKey.CreateSubKey(keyPath, writable: true))\n                {\n                    if (subKey != null)\n                    {\n                        // REG_DWORD として値を書き込む\n                        subKey.SetValue(\"MaxConnections\", 100, RegistryValueKind.DWord);\n                        \n                        // REG_SZ として値を書き込む\n                        subKey.SetValue(\"ApiEndpoint\", \"https://api.example.com\", RegistryValueKind.String);\n                        \n                        // REG_BINARY としてバイト配列を書き込む\n                        byte[] secretData = { 0x01, 0x02, 0x0A, 0xFF };\n                        subKey.SetValue(\"BinarySecret\", secretData, RegistryValueKind.Binary);\n                        \n                        Console.WriteLine(\"レジストリの書き込みに成功しました。\");\n                    }\n                }\n            }\n        }\n        catch (UnauthorizedAccessException ex)\n        {\n            // 管理者として実行していない場合によく発生する\n            Console.WriteLine($\"権限エラー: プログラムを「管理者として実行」してください。詳細: {ex.Message}\");\n        }\n        catch (SecurityException ex)\n        {\n            // .NETのコードアクセスセキュリティ(CAS)によってブロックされた場合\n            Console.WriteLine($\"セキュリティ例外: {ex.Message}\");\n        }\n        catch (Exception ex)\n        {\n            // その他の予期せぬIOエラーなど\n            Console.WriteLine($\"予期せぬエラー: {ex.Message}\");\n        }\n    }\n}\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n",
+        "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Software\\MyCustomApp]\n\"EnableDebug\"=dword:00000001\n\"ApiEndpoint\"=\"https://api.example.com\"\n\"BinaryData\"=hex:01,02,0a,ff\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n",
+        "REM 指定したキーをバックアップ (サブキーも再帰的にエクスポートされる)\nreg export HKLM\\SOFTWARE\\MyEnterpriseApp C:\\backup\\myapp_backup.reg /y\n\nREM バックアップの復元\nreg import C:\\backup\\myapp_backup.reg\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n",
+        "# バックアップの取得 (プロパティをXMLとして保存)\nGet-ItemProperty -Path \"HKCU:\\Software\\MyCustomApp\" | Export-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n\n# リストアの概念\n$backup = Import-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n# $backup には復元されたカスタムPSObjectが格納されているため、\n# そのプロパティをループして Set-ItemProperty で適用し直すロジックを組むことができます。\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-registry-safe-programmable-editing/img/eyecatch_hu2430515421054564890.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/categories/windows/"
+        },
+        {
+          "text": "運用管理",
+          "path": "/categories/administration/"
+        },
+        {
+          "text": "プログラミング",
+          "path": "/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Windows NT",
+          "path": "/p/windows-os-history-architecture/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "ACID",
+          "path": "/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "ポインタ",
+          "path": "/p/c-language-pointers-memory-management-stack-heap/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "暗号化",
+          "path": "/p/modern-cryptography-public-key-hash-signature/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "B-Tree",
+          "path": "/p/b-tree-database-index-theory/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "時間計算量",
+          "path": "/p/time-space-complexity-big-o-notation-examples/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "ソート",
+          "path": "/p/sorting-algorithms-visualized-bubble-quick-merge/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "二分探索",
+          "path": "/p/search-algorithms-linear-binary-hash-table-principles/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "オブジェクト指向",
+          "path": "/p/oop-vs-fp-vs-dop/",
+          "host": "kenji.blog"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "020-windows-registry-ja-en-de",
+    "language": "en",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "SYSTEM: Critical settings required for operating system boot (drivers, services, boot configurations, etc.).",
+        "SOFTWARE: System-wide settings for installed software. Most third-party application settings go here.",
+        "SAM: Security Accounts Manager (local user accounts and password hashes).",
+        "SECURITY: Local security policies and privilege assignments.",
+        "DEFAULT: The default user profile (template when creating a new user).",
+        "NTUSER.DAT: Basic settings for that user (most of HKCU).",
+        "UsrClass.dat: File extension association settings for that user (located in AppData\\Local\\Microsoft\\Windows).",
+        "HKEY_LOCAL_MACHINE (HKLM): Stores system settings and software settings that apply to the entire computer (all users). Administrator privileges are required to make changes.",
+        "HKEY_CURRENT_USER (HKCU): Stores specific settings for the currently logged-on user. Actually, this is not an independent database, but merely a symbolic link (alias) to the specific user’s SID (Security Identifier) key under HKEY_USERS.",
+        "HKEY_CLASSES_ROOT (HKCR): Stores file extension associations, COM (Component Object Model) class registration information, and shell extensions. This key is special; it is a virtual view created by the Configuration Manager merging HKLM\\SOFTWARE\\Classes (system-wide) and HKCU\\Software\\Classes (current user). In case of conflicts, user-specific settings (HKCU) take precedence.",
+        "HKEY_USERS (HKU): Stores settings for all user profiles on the system (those currently loaded in memory). It is structured based on SIDs.",
+        "HKEY_CURRENT_CONFIG (HKCC): Settings related to the current hardware profile. It is actually a link to HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles\\Current.",
+        "REG_SZ (String Value): The most common data type. It stores a NULL-terminated Unicode string (UTF-16LE). Used for file paths, URLs, UI display names, etc.",
+        "REG_DWORD (32-bit Integer Value): A 32-bit (4-byte) unsigned integer value. Frequently used for boolean values (0=disabled, 1=enabled), timeout values in milliseconds, error code settings, etc. Because Windows uses a little-endian architecture, it is saved on disk starting from the least significant byte (e.g., 0x12345678 is saved as 78 56 34 12).",
+        "REG_QWORD (64-bit Integer Value): A 64-bit (8-byte) integer value. With the spread of 64-bit architecture, it is used to store huge numbers (such as disk quotas or large memory size specifications) and pointer-size settings.",
+        "REG_MULTI_SZ (Multi-String Value): A format that stores multiple NULL-terminated strings consecutively, terminated with an additional empty NULL-terminated character (double NULL) at the end. Suitable for storing array-like data, such as lists of IP addresses, lists of dependent services, and binding orders.",
+        "REG_EXPAND_SZ (Expandable String Value): A special string type that includes unexpanded environment variable strings like %USERPROFILE% or %SystemRoot%. When an application reads it through the RegQueryValueEx API, or by calling the ExpandEnvironmentStrings API, it is dynamically expanded to the actual absolute path by the OS.",
+        "REG_BINARY (Binary Value): Any raw binary data stream. It stores encrypted passwords (like LSA Secrets), digital certificates, and complex application-specific structures or serialized data.",
+        "REG_NONE: Data with an undefined type. Very rare, but used for reserved areas of encryption keys, etc.",
+        "REG_RESOURCE_LIST / REG_FULL_RESOURCE_DESCRIPTOR: Advanced types exclusively for the kernel, used by device drivers to record hardware resource allocation information (IRQs, I/O ports, DMA channels).",
+        "Process Name is powershell.exe",
+        "Operation begins with Reg",
+        "Result is ACCESS DENIED",
+        "Strictly Enforce the Principle of Least Privilege: Application and script settings should be stored under the Software key within HKCU (Current User) whenever possible. Writing to HKLM requires an administrator privilege escalation via UAC, which expands the security attack surface and degrades user experience.",
+        "Enable Auditing: For keys that are extremely critical to security (e.g., the Run key responsible for automatic startup, or service configuration keys), configure a SACL (System Access Control List) to record (audit) who modified or deleted values and when, in the Windows Event Viewer’s “Security Log”.",
+        "Address the Deprecation of Transaction Features: The registry transaction feature (TxR) utilizing the “Kernel Transaction Manager (KTM)”, introduced back in Windows Vista, has been deprecated since Windows 10. The application side must implement its own backup and rollback mechanisms (such as reading the original value and keeping it in memory before making changes).",
+        "Beware of Conflicts with Group Policy (GPO): The HKLM\\SOFTWARE\\Policies and HKCU\\Software\\Policies areas are to be centrally managed by Active Directory Group Policies. Even if you modify these keys directly from a script, they will be forcefully overwritten by the Domain Controller’s settings during the next background Group Policy update cycle (typically every 90 to 120 minutes), causing your settings to not persist."
+      ],
+      "headings": [
+        {
+          "id": "basic-knowledge-of-the-windows-registry-and-safe-programmable-editing-methodshttpskenjiblogenpwindows_registry",
+          "text": "Basic Knowledge of the Windows Registry and Safe Programmable Editing Methods"
+        },
+        {
+          "id": "1-introduction-history-and-evolution-of-the-windows-registry",
+          "text": "1. Introduction: History and Evolution of the Windows Registry"
+        },
+        {
+          "id": "2-deep-dive-into-the-architecture-the-reality-of-registry-hives-and-memory-mapping",
+          "text": "2. Deep Dive into the Architecture: The Reality of Registry Hives and Memory Mapping"
+        },
+        {
+          "id": "3-hierarchical-structure-of-registry-keys-and-values",
+          "text": "3. Hierarchical Structure of Registry Keys and Values"
+        },
+        {
+          "id": "4-registry-data-types-detailed-explanation",
+          "text": "4. Registry Data Types (Detailed Explanation)"
+        },
+        {
+          "id": "5-mathematical-models-and-performance-of-the-registry-in-the-operating-system",
+          "text": "5. Mathematical Models and Performance of the Registry in the Operating System"
+        },
+        {
+          "id": "search-time-complexity",
+          "text": "Search Time Complexity"
+        },
+        {
+          "id": "storage-footprint-space-complexity",
+          "text": "Storage Footprint (Space Complexity)"
+        },
+        {
+          "id": "6-risks-and-corruption-probabilities-of-manual-editing-threatening-system-robustness",
+          "text": "6. Risks and Corruption Probabilities of Manual Editing Threatening System Robustness"
+        },
+        {
+          "id": "mathematical-model-of-corruption-probability",
+          "text": "Mathematical Model of Corruption Probability"
+        },
+        {
+          "id": "7-registry-virtualization-and-the-wow64-architecture",
+          "text": "7. Registry Virtualization and the WOW64 Architecture"
+        },
+        {
+          "id": "uac-registry-virtualization",
+          "text": "UAC Registry Virtualization"
+        },
+        {
+          "id": "wow64-windows-32-bit-on-windows-64-bit-redirection",
+          "text": "WOW64 (Windows 32-bit on Windows 64-bit) Redirection"
+        },
+        {
+          "id": "8-programmable-and-safe-editing-with-powershell",
+          "text": "8. Programmable and Safe Editing with PowerShell"
+        },
+        {
+          "id": "basic-crud-operations",
+          "text": "Basic CRUD Operations"
+        },
+        {
+          "id": "practical-example-1-automatic-setup-of-development-environment-adding-path-to-environment-variables",
+          "text": "Practical Example 1: Automatic Setup of Development Environment (Adding PATH to Environment Variables)"
+        },
+        {
+          "id": "practical-example-2-adding-custom-actions-to-the-context-menu",
+          "text": "Practical Example 2: Adding Custom Actions to the Context Menu"
+        },
+        {
+          "id": "internal-sequence-of-registry-access-from-powershell",
+          "text": "Internal Sequence of Registry Access from PowerShell"
+        },
+        {
+          "id": "9-robust-registry-access-with-c-net",
+          "text": "9. Robust Registry Access with C# (.NET)"
+        },
+        {
+          "id": "10-registry-backup-and-restore-methods",
+          "text": "10. Registry Backup and Restore Methods"
+        },
+        {
+          "id": "backup-and-import-using-reg-files",
+          "text": "Backup and Import using .reg Files"
+        },
+        {
+          "id": "more-advanced-backup-methods-using-powershell",
+          "text": "More Advanced Backup Methods Using PowerShell"
+        },
+        {
+          "id": "11-troubleshooting-using-sysinternals-process-monitor-procmon",
+          "text": "11. Troubleshooting Using Sysinternals Process Monitor (Procmon)"
+        },
+        {
+          "id": "12-security-and-best-practices",
+          "text": "12. Security and Best Practices"
+        },
+        {
+          "id": "conclusion",
+          "text": "Conclusion"
+        }
+      ],
+      "paragraphs": [
+        "In the Windows operating system, the “Registry” is a massive hierarchical database that stores various settings for the system and applications. This article provides a very detailed explanation, starting from the basic architecture of the Windows Registry to programmable and safe registry editing methods using PowerShell and C#.",
+        "In early versions of Windows (Windows 3.x era), system and application settings were mainly stored in .ini (initialization) files. However, countless INI files for each application scattered across the entire system, making management significantly complicated. Furthermore, since INI files are plain text-based, saving binary data was difficult, and there was no access control (security) mechanism. The file parsing speed was also slow, making it unsuitable for saving large-scale settings.",
+        "To fundamentally resolve these issues, the “Registry” was fully adopted as a centralized configuration database starting from Windows NT and Windows 95. The registry is a hierarchical database that provides strong typing, support for binary data, and robust security features through Access Control Lists (ACLs). This allowed all components, from the OS kernel to user-space applications, to read and write settings using a unified interface (the Reg* functions of the Win32 API).",
+        "Up to the modern Windows 11, the registry continues to function as the heart of the OS. All metadata required for system operation, such as hardware configuration, device driver load order, user desktop environments, and lists of installed software, are consolidated in the registry.",
+        "Although the registry logically appears as a single giant tree structure, physically it is split into multiple files called “Hives” stored on the disk. This separates system-wide settings from user-specific settings, enabling efficient loading.",
+        "The main hive files are usually located in the %SystemRoot%\\System32\\config directory.",
+        "User-specific hive files exist as hidden files in the user’s profile directory (e.g., C:\\Users\\Username).",
+        "These files are mapped into the kernel paged pool memory by the kernel’s “Configuration Manager (CM)” during OS boot. The Configuration Manager is a kernel-mode component that processes registry read/write requests.",
+        "It is worth noting that not all registry data exists on the disk. For example, the HARDWARE hive is volatile and is never saved to a file on the disk. It is dynamically rebuilt in memory every time the OS boots and the Plug and Play (PnP) manager detects hardware.",
+        "Also, recent versions of Windows implement transaction logging to enhance registry reliability. Changes to hive files are not directly written to the data files, but are first recorded in transaction logs (.log1, .log2). This prevents data corruption during unexpected power losses or system crashes while writing, ensuring database integrity in a form close to ACID properties.",
+        "The registry has a hierarchical structure very similar to a file system. The root node is called a “Root Key” or “Hive”, and under it, “Keys”, “Subkeys”, and “Values” (the actual data entities) are stored. It is easy to understand if you consider keys as directories and values as files.",
+        "The main root keys are classified into the following five:",
+        "Visualizing this complex hierarchical structure and relationship of links looks like the following:",
+        "A strict data type is defined for each “value” in the registry. When manipulating the registry programmatically, it is essential to properly understand these types and write data in the appropriate type. Writing with an incorrect type can cause applications to throw exceptions or OS features to stop functioning.",
+        "Since the registry is directly linked to OS performance (especially boot time and process initialization speed), it is internally optimized using an advanced data structure similar to a B-Tree called “Cell Index”.",
+        "The time complexity \n𝑇\nsearch\nT\nsearch\n\t​\n\n when searching for a specific key (path) in the registry depends on the depth of the tree and the number of nodes at each level. The computational complexity of searching a subkey of depth \n𝑑\nd (e.g., \n𝑑\n=\n4\nd=4 for A\\B\\C\\D) can theoretically be modeled as follows:",
+        "Here, \n𝐶\n𝑖\nC\ni\n\t​\n\n is the number of child nodes (subkeys or values) at depth \n𝑖\ni, and \n𝐿\n𝑖\nL\ni\n\t​\n\n is the length of the string to be compared (number of characters). Within the hive files, which are the actual entities of the registry, the list of subkeys is maintained as an index sorted by name hashes or alphabetically. Therefore, instead of a simple linear search \n𝑂\n(\n𝐶\n𝑖\n)\nO(C\ni\n\t​\n\n), a binary search \n𝑂\n(\nlog\n⁡\n(\n𝐶\n𝑖\n)\n)\nO(log(C\ni\n\t​\n\n)) is possible, achieving extremely fast access even if there are tens of thousands of subkeys under a single key.",
+        "The total size of the registry (the footprint on the physical disk) is calculated as the sum of each hive.",
+        "𝑁\nℎ\nN\nh\n\t​\n\n is the number of keys in hive \nℎ\nh, \n𝑆\nkey_metadata\nS\nkey_metadata\n\t​\n\n is the size of the metadata per key (last write timestamp, pointer to the security descriptor, pointer to the parent key, etc.), and \n𝑆\nvalue\n(\n𝑣\n)\nS\nvalue\n\t​\n\n(v) is the payload size of value \n𝑣\nv. It also includes the overhead \n𝑆\noverhead\nS\noverhead\n\t​\n\n from transaction logs and unnecessary empty cells (fragmentation). Leaving unnecessary data in the registry for a long period (such as remnants of incompletely uninstalled software) increases this footprint, potentially putting pressure on the OS paged pool memory and leading to performance degradation.",
+        "Manual editing using the Registry Editor (regedit.exe) should be considered a last resort for system administration. The registry does not have an “Undo” feature like common document editors, and changes to values or deletions of keys are immediately reflected in the system through the Configuration Manager.",
+        "In particular, if critical keys essential for system boot (e.g., disk controller driver settings under HKLM\\SYSTEM\\CurrentControlSet\\Services, or the Userinit value in HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon) are incorrectly edited or deleted by even a single character, there is a fatal risk of the OS crashing with a Blue Screen of Death (BSoD) and becoming unbootable, or getting stuck after the login screen (Black Screen).",
+        "Let’s consider the probability of system failure if registry keys are randomly modified or deleted. Let \n𝐶\nC be the set of critical keys essential for the system to operate normally, and \n𝑁\n𝑐\n=\n∣\n𝐶\n∣\nN\nc\n\t​\n\n=∣C∣ be its total number. Let the total number of keys in the entire registry be \n𝑁\ntotal\nN\ntotal\n\t​\n\n.",
+        "If \n𝑘\nk keys are randomly deleted or corrupted, the probability \n𝑃\nfailure\nP\nfailure\n\t​\n\n that at least one critical key is corrupted is expressed by probability calculation of sampling without replacement as follows:",
+        "The total number of keys in the entire registry \n𝑁\ntotal\nN\ntotal\n\t​\n\n is on the order of hundreds of thousands to millions, but \n𝑁\n𝑐\nN\nc\n\t​\n\n is also on the order of tens of thousands. Mathematically, even with random operations, the failure probability rises sharply as \n𝑘\nk increases. Furthermore, in real-world manual operations, users do not edit “randomly”; they intentionally manipulate areas directly related to system settings or software operations (often following tutorial sites), making the probability of touching critical keys much higher than the theoretical value above.",
+        "To maintain compatibility for legacy applications, Windows implements several advanced “virtualization (redirection)” mechanisms for registry access. Programming without understanding this can cause critical bugs.",
+        "Starting with Windows Vista, User Account Control (UAC) was introduced. When old applications created in the Windows XP era (running with standard user privileges) try to write to protected keys like HKLM\\SOFTWARE that natively require administrator privileges, Windows silently redirects the write to a Virtual Store within the user profile: HKCU\\Software\\Classes\\VirtualStore\\MACHINE\\SOFTWARE to prevent them from crashing with an Access Denied error. When reading, it also merges and returns data from both the original location and the virtual store. This allows applications to continue operating normally without detecting errors.",
+        "However, when developing tools that programmatically change system-wide settings, you must specify <requestedExecutionLevel level=\"requireAdministrator\" /> in the manifest file to disable this virtualization.",
+        "When running old 32-bit applications on a 64-bit version of Windows (currently the mainstream), specific registry keys are automatically isolated and redirected so that 32-bit apps do not accidentally overwrite 64-bit native system settings or load incompatible 64-bit DLLs.",
+        "For example, if a 32-bit app tries to access HKLM\\SOFTWARE\\Vendor\\App, the OS transparently redirects it to HKLM\\SOFTWARE\\WOW6432Node\\Vendor\\App.",
+        "When editing the registry from PowerShell scripts or C# applications, you must be keenly aware of whether the executing process itself is 32-bit or 64-bit. Otherwise, it will cause the troublesome issue of “settings that should have been written are not visible from Explorer (written to a different location).”",
+        "To minimize the risk of manually editing the registry, the modern best practice is to codify operations (Infrastructure as Code) using PowerShell scripts to ensure automation, reproducibility, and testability. PowerShell features a “Registry Provider,” allowing transparent manipulation of the registry using exactly the same cmdlets (like Get-ChildItem, Get-ItemProperty, New-Item) used to manipulate the file system (e.g., the C: drive).",
+        "In PowerShell, dedicated PSDrives (similar to drive letters) like HKLM: and HKCU: are mounted by default.",
+        "The following script is an automation example that safely adds a custom tool directory to the user environment variable PATH when a developer sets up a new Windows machine.",
+        "This is a script that adds a custom item called “Open with My IDE” to the context menu when right-clicking a specific file or directory.",
+        "The operational sequence inside the OS when a PowerShell script modifies the registry is shown below.",
+        "When accessing the registry from a .NET application (such as C#), use the Microsoft.Win32.Registry and RegistryKey classes. The greatest advantage of using C# is the capability for robust error handling via powerful exception handling (try-catch), strict type checking, and explicit specification of 32-bit/64-bit views using the RegistryView enumeration.",
+        "Below is an example of C# code that reliably reads and writes to the 64-bit registry (bypassing WOW6432Node redirection) in a 64-bit OS environment.",
+        "The “handle” returned by the OS when opening a registry key is an unmanaged resource that consumes memory and system resources. Therefore, an ironclad rule in C# programming is to reliably prevent handle leaks by either using a using block or explicitly calling .Dispose() (or .Close()) within a finally block.",
+        "Even with automation via scripts or programs, it is absolutely essential to take a backup before making critical changes.",
+        "The most classical and versatile method is exporting to a .reg file. This is a text-based file with its own format, and its structure is as follows:",
+        "Note: Binary data is represented by comma-separated hexadecimal numbers following hex:.",
+        "You can implement automatic backups in batch scripts using the command-line tool reg.exe.",
+        "Instead of just text, you can leverage PowerShell’s object orientation to export registry objects and save them in XML format (CliXML). This allows you to handle them while maintaining type information during restoration, without relying on string parsing.",
+        "If it’s unclear where a program is writing in the registry, or if you want to find the cause of an “Access Denied” error, the Process Monitor (Procmon) —a free Sysinternals tool provided by Microsoft—is extremely powerful. By using Procmon, you can capture all registry API calls (RegOpenKey, RegQueryValue, RegSetValue, etc.) occurring on the OS in real-time and troubleshoot with advanced filtering such as the following:",
+        "With this, you can instantly pinpoint which key lacks ACL settings, or whether it’s being mistakenly redirected to the WOW6432Node.",
+        "Finally, we summarize the important design principles and best practices for handling the registry.",
+        "The Windows Registry is a powerful and complex foundational system that integrally manages every behavior of the OS and application settings. Disorderly manual editing carries a high, mathematically proven risk of system corruption. Therefore, using programmable means such as PowerShell and C# to manage configurations securely, testably, and reproducibly, in accordance with the principles of Infrastructure as Code, is essential in modern system administration and development. Utilize the deep architectural understanding and implementation patterns explained in this article to aim for building a more robust and secure Windows environment."
+      ],
+      "code": [
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n",
+        "# 1. Check existence (Read)\n$keyPath = \"HKCU:\\Software\\MyCustomApp\"\nif (-Not (Test-Path -Path $keyPath)) {\n    # 2. Create a new key (Create)\n    New-Item -Path \"HKCU:\\Software\" -Name \"MyCustomApp\" -Force | Out-Null\n    Write-Host \"Key created.\"\n}\n\n# 3. Write/Update value (Update) - Write 1 as REG_DWORD\nSet-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Value 1 -Type DWord\n\n# 4. Read value (Read)\n$debugFlag = (Get-ItemProperty -Path $keyPath).EnableDebug\nWrite-Host \"Current debug flag: $debugFlag\"\n\n# 5. Delete value (Delete)\nRemove-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Force\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n",
+        "$envKey = \"HKCU:\\Environment\"\n$newPath = \"C:\\tools\\bin\"\n\n# Read the current PATH (suppress errors for safe retrieval)\n$currentPathInfo = Get-ItemProperty -Path $envKey -Name \"Path\" -ErrorAction SilentlyContinue\n$currentPath = if ($currentPathInfo) { $currentPathInfo.Path } else { \"\" }\n\n# Use regular expressions to check if it is already included\nif ($currentPath -notmatch [regex]::Escape($newPath)) {\n    # Append a semicolon if not present at the end and concatenate\n    if ($currentPath -and $currentPath -notmatch \";$\") {\n        $currentPath += \";\"\n    }\n    $updatedPath = $currentPath + $newPath\n    \n    # Write as REG_EXPAND_SZ type (important)\n    Set-ItemProperty -Path $envKey -Name \"Path\" -Value $updatedPath -Type ExpandString\n    Write-Host \"Updated PATH environment variable: $newPath\"\n    \n    # Notify running processes of environment variable changes (WM_SETTINGCHANGE)\n    # This applies it to new Explorer windows, etc., without requiring a reboot\n    [Environment]::SetEnvironmentVariable(\"Path\", $updatedPath, [EnvironmentVariableTarget]::User)\n} else {\n    Write-Host \"PATH is already added.\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n",
+        "# Menu when right-clicking the directory background (blank space)\n$menuPath = \"HKCR:\\Directory\\Background\\shell\\OpenWithMyIDE\"\n$commandPath = \"$menuPath\\command\"\n\ntry {\n    # Create parent key for the menu item\n    New-Item -Path $menuPath -Force -ErrorAction Stop | Out-Null\n    \n    # Set the display name in the (default) value\n    Set-ItemProperty -Path $menuPath -Name \"(default)\" -Value \"Open with My IDE\" -Type String\n    \n    # Set icon (optional)\n    Set-ItemProperty -Path $menuPath -Name \"Icon\" -Value \"C:\\Program Files\\MyIDE\\ide.exe,0\" -Type String\n\n    # Create command subkey and set the command line to be executed\n    # %V is a variable expanded to the current directory path\n    New-Item -Path $commandPath -Force -ErrorAction Stop | Out-Null\n    Set-ItemProperty -Path $commandPath -Name \"(default)\" -Value \"`\"C:\\Program Files\\MyIDE\\ide.exe`\" `\"%V`\"\" -Type String\n\n    Write-Host \"Context menu added.\"\n} catch {\n    Write-Error \"Failed to modify the registry. Make sure you are running as administrator. Error: $_\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n\n26\n\n27\n\n28\n\n29\n\n30\n\n31\n\n32\n\n33\n\n34\n\n35\n\n36\n\n37\n\n38\n\n39\n\n40\n\n41\n\n42\n\n43\n\n44\n\n45\n\n46\n\n47\n\n48\n\n49\n\n50\n\n51\n\n52\n\n53\n\n54\n",
+        "using System;\nusing System.Security;\nusing Microsoft.Win32;\n\nclass RegistryEditor\n{\n    static void Main()\n    {\n        // Path under HKLM (Requires administrator privileges)\n        string keyPath = @\"SOFTWARE\\MyEnterpriseApp\\Settings\";\n\n        // Specify RegistryView.Registry64 to open a 64-bit native view\n        // Use a using statement to reliably Dispose of the registry key handle (unmanaged resource)\n        try\n        {\n            using (RegistryKey baseKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))\n            {\n                // Open key with write permission (writable: true). Create if it doesn't exist.\n                using (RegistryKey subKey = baseKey.CreateSubKey(keyPath, writable: true))\n                {\n                    if (subKey != null)\n                    {\n                        // Write value as REG_DWORD\n                        subKey.SetValue(\"MaxConnections\", 100, RegistryValueKind.DWord);\n                        \n                        // Write value as REG_SZ\n                        subKey.SetValue(\"ApiEndpoint\", \"https://api.example.com\", RegistryValueKind.String);\n                        \n                        // Write byte array as REG_BINARY\n                        byte[] secretData = { 0x01, 0x02, 0x0A, 0xFF };\n                        subKey.SetValue(\"BinarySecret\", secretData, RegistryValueKind.Binary);\n                        \n                        Console.WriteLine(\"Successfully wrote to the registry.\");\n                    }\n                }\n            }\n        }\n        catch (UnauthorizedAccessException ex)\n        {\n            // Commonly occurs when not running as administrator\n            Console.WriteLine($\"Permission error: Please \\\"Run as administrator\\\". Details: {ex.Message}\");\n        }\n        catch (SecurityException ex)\n        {\n            // If blocked by .NET Code Access Security (CAS)\n            Console.WriteLine($\"Security exception: {ex.Message}\");\n        }\n        catch (Exception ex)\n        {\n            // Other unexpected IO errors, etc.\n            Console.WriteLine($\"Unexpected error: {ex.Message}\");\n        }\n    }\n}\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n",
+        "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Software\\MyCustomApp]\n\"EnableDebug\"=dword:00000001\n\"ApiEndpoint\"=\"https://api.example.com\"\n\"BinaryData\"=hex:01,02,0a,ff\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n",
+        "REM Backup specified key (subkeys are also exported recursively)\nreg export HKLM\\SOFTWARE\\MyEnterpriseApp C:\\backup\\myapp_backup.reg /y\n\nREM Restore backup\nreg import C:\\backup\\myapp_backup.reg\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n",
+        "# Take backup (Save properties as XML)\nGet-ItemProperty -Path \"HKCU:\\Software\\MyCustomApp\" | Export-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n\n# Concept of restoring\n$backup = Import-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n# Because $backup contains restored custom PSObjects,\n# you can build logic to loop through its properties and reapply them with Set-ItemProperty.\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-registry-safe-programmable-editing/img/eyecatch_hu2430515421054564890.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/en/categories/windows/"
+        },
+        {
+          "text": "Administration",
+          "path": "/en/categories/administration/"
+        },
+        {
+          "text": "Programming",
+          "path": "/en/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Basic Knowledge of the Windows Registry and Safe Programmable Editing Methods",
+          "path": "/en/p/windows_registry/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "ACID",
+          "path": "/en/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "B-Tree",
+          "path": "/en/p/b-tree-database-index-theory/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/en/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Transaction",
+          "path": "/en/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/en/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "SYSTEM: Critical settings required for operating system boot (drivers, services, boot configurations, etc.).",
+        "SOFTWARE: System-wide settings for installed software. Most third-party application settings go here.",
+        "SAM: Security Accounts Manager (local user accounts and password hashes).",
+        "SECURITY: Local security policies and privilege assignments.",
+        "DEFAULT: The default user profile (template when creating a new user).",
+        "NTUSER.DAT: Basic settings for that user (most of HKCU).",
+        "UsrClass.dat: File extension association settings for that user (located in AppData\\Local\\Microsoft\\Windows).",
+        "HKEY_LOCAL_MACHINE (HKLM): Stores system settings and software settings that apply to the entire computer (all users). Administrator privileges are required to make changes.",
+        "HKEY_CURRENT_USER (HKCU): Stores specific settings for the currently logged-on user. Actually, this is not an independent database, but merely a symbolic link (alias) to the specific user’s SID (Security Identifier) key under HKEY_USERS.",
+        "HKEY_CLASSES_ROOT (HKCR): Stores file extension associations, COM (Component Object Model) class registration information, and shell extensions. This key is special; it is a virtual view created by the Configuration Manager merging HKLM\\SOFTWARE\\Classes (system-wide) and HKCU\\Software\\Classes (current user). In case of conflicts, user-specific settings (HKCU) take precedence.",
+        "HKEY_USERS (HKU): Stores settings for all user profiles on the system (those currently loaded in memory). It is structured based on SIDs.",
+        "HKEY_CURRENT_CONFIG (HKCC): Settings related to the current hardware profile. It is actually a link to HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles\\Current.",
+        "REG_SZ (String Value): The most common data type. It stores a NULL-terminated Unicode string (UTF-16LE). Used for file paths, URLs, UI display names, etc.",
+        "REG_DWORD (32-bit Integer Value): A 32-bit (4-byte) unsigned integer value. Frequently used for boolean values (0=disabled, 1=enabled), timeout values in milliseconds, error code settings, etc. Because Windows uses a little-endian architecture, it is saved on disk starting from the least significant byte (e.g., 0x12345678 is saved as 78 56 34 12).",
+        "REG_QWORD (64-bit Integer Value): A 64-bit (8-byte) integer value. With the spread of 64-bit architecture, it is used to store huge numbers (such as disk quotas or large memory size specifications) and pointer-size settings.",
+        "REG_MULTI_SZ (Multi-String Value): A format that stores multiple NULL-terminated strings consecutively, terminated with an additional empty NULL-terminated character (double NULL) at the end. Suitable for storing array-like data, such as lists of IP addresses, lists of dependent services, and binding orders.",
+        "REG_EXPAND_SZ (Expandable String Value): A special string type that includes unexpanded environment variable strings like %USERPROFILE% or %SystemRoot%. When an application reads it through the RegQueryValueEx API, or by calling the ExpandEnvironmentStrings API, it is dynamically expanded to the actual absolute path by the OS.",
+        "REG_BINARY (Binary Value): Any raw binary data stream. It stores encrypted passwords (like LSA Secrets), digital certificates, and complex application-specific structures or serialized data.",
+        "REG_NONE: Data with an undefined type. Very rare, but used for reserved areas of encryption keys, etc.",
+        "REG_RESOURCE_LIST / REG_FULL_RESOURCE_DESCRIPTOR: Advanced types exclusively for the kernel, used by device drivers to record hardware resource allocation information (IRQs, I/O ports, DMA channels).",
+        "Process Name is powershell.exe",
+        "Operation begins with Reg",
+        "Result is ACCESS DENIED",
+        "Strictly Enforce the Principle of Least Privilege: Application and script settings should be stored under the Software key within HKCU (Current User) whenever possible. Writing to HKLM requires an administrator privilege escalation via UAC, which expands the security attack surface and degrades user experience.",
+        "Enable Auditing: For keys that are extremely critical to security (e.g., the Run key responsible for automatic startup, or service configuration keys), configure a SACL (System Access Control List) to record (audit) who modified or deleted values and when, in the Windows Event Viewer’s “Security Log”.",
+        "Address the Deprecation of Transaction Features: The registry transaction feature (TxR) utilizing the “Kernel Transaction Manager (KTM)”, introduced back in Windows Vista, has been deprecated since Windows 10. The application side must implement its own backup and rollback mechanisms (such as reading the original value and keeping it in memory before making changes).",
+        "Beware of Conflicts with Group Policy (GPO): The HKLM\\SOFTWARE\\Policies and HKCU\\Software\\Policies areas are to be centrally managed by Active Directory Group Policies. Even if you modify these keys directly from a script, they will be forcefully overwritten by the Domain Controller’s settings during the next background Group Policy update cycle (typically every 90 to 120 minutes), causing your settings to not persist."
+      ],
+      "headings": [
+        {
+          "id": "basic-knowledge-of-the-windows-registry-and-safe-programmable-editing-methodshttpskenjiblogenpwindows_registry",
+          "text": "Basic Knowledge of the Windows Registry and Safe Programmable Editing Methods"
+        },
+        {
+          "id": "1-introduction-history-and-evolution-of-the-windows-registry",
+          "text": "1. Introduction: History and Evolution of the Windows Registry"
+        },
+        {
+          "id": "2-deep-dive-into-the-architecture-the-reality-of-registry-hives-and-memory-mapping",
+          "text": "2. Deep Dive into the Architecture: The Reality of Registry Hives and Memory Mapping"
+        },
+        {
+          "id": "3-hierarchical-structure-of-registry-keys-and-values",
+          "text": "3. Hierarchical Structure of Registry Keys and Values"
+        },
+        {
+          "id": "4-registry-data-types-detailed-explanation",
+          "text": "4. Registry Data Types (Detailed Explanation)"
+        },
+        {
+          "id": "5-mathematical-models-and-performance-of-the-registry-in-the-operating-system",
+          "text": "5. Mathematical Models and Performance of the Registry in the Operating System"
+        },
+        {
+          "id": "search-time-complexity",
+          "text": "Search Time Complexity"
+        },
+        {
+          "id": "storage-footprint-space-complexity",
+          "text": "Storage Footprint (Space Complexity)"
+        },
+        {
+          "id": "6-risks-and-corruption-probabilities-of-manual-editing-threatening-system-robustness",
+          "text": "6. Risks and Corruption Probabilities of Manual Editing Threatening System Robustness"
+        },
+        {
+          "id": "mathematical-model-of-corruption-probability",
+          "text": "Mathematical Model of Corruption Probability"
+        },
+        {
+          "id": "7-registry-virtualization-and-the-wow64-architecture",
+          "text": "7. Registry Virtualization and the WOW64 Architecture"
+        },
+        {
+          "id": "uac-registry-virtualization",
+          "text": "UAC Registry Virtualization"
+        },
+        {
+          "id": "wow64-windows-32-bit-on-windows-64-bit-redirection",
+          "text": "WOW64 (Windows 32-bit on Windows 64-bit) Redirection"
+        },
+        {
+          "id": "8-programmable-and-safe-editing-with-powershell",
+          "text": "8. Programmable and Safe Editing with PowerShell"
+        },
+        {
+          "id": "basic-crud-operations",
+          "text": "Basic CRUD Operations"
+        },
+        {
+          "id": "practical-example-1-automatic-setup-of-development-environment-adding-path-to-environment-variables",
+          "text": "Practical Example 1: Automatic Setup of Development Environment (Adding PATH to Environment Variables)"
+        },
+        {
+          "id": "practical-example-2-adding-custom-actions-to-the-context-menu",
+          "text": "Practical Example 2: Adding Custom Actions to the Context Menu"
+        },
+        {
+          "id": "internal-sequence-of-registry-access-from-powershell",
+          "text": "Internal Sequence of Registry Access from PowerShell"
+        },
+        {
+          "id": "9-robust-registry-access-with-c-net",
+          "text": "9. Robust Registry Access with C# (.NET)"
+        },
+        {
+          "id": "10-registry-backup-and-restore-methods",
+          "text": "10. Registry Backup and Restore Methods"
+        },
+        {
+          "id": "backup-and-import-using-reg-files",
+          "text": "Backup and Import using .reg Files"
+        },
+        {
+          "id": "more-advanced-backup-methods-using-powershell",
+          "text": "More Advanced Backup Methods Using PowerShell"
+        },
+        {
+          "id": "11-troubleshooting-using-sysinternals-process-monitor-procmon",
+          "text": "11. Troubleshooting Using Sysinternals Process Monitor (Procmon)"
+        },
+        {
+          "id": "12-security-and-best-practices",
+          "text": "12. Security and Best Practices"
+        },
+        {
+          "id": "conclusion",
+          "text": "Conclusion"
+        }
+      ],
+      "paragraphs": [
+        "In the Windows operating system, the “Registry” is a massive hierarchical database that stores various settings for the system and applications. This article provides a very detailed explanation, starting from the basic architecture of the Windows Registry to programmable and safe registry editing methods using PowerShell and C#.",
+        "In early versions of Windows (Windows 3.x era), system and application settings were mainly stored in .ini (initialization) files. However, countless INI files for each application scattered across the entire system, making management significantly complicated. Furthermore, since INI files are plain text-based, saving binary data was difficult, and there was no access control (security) mechanism. The file parsing speed was also slow, making it unsuitable for saving large-scale settings.",
+        "To fundamentally resolve these issues, the “Registry” was fully adopted as a centralized configuration database starting from Windows NT and Windows 95. The registry is a hierarchical database that provides strong typing, support for binary data, and robust security features through Access Control Lists (ACLs). This allowed all components, from the OS kernel to user-space applications, to read and write settings using a unified interface (the Reg* functions of the Win32 API).",
+        "Up to the modern Windows 11, the registry continues to function as the heart of the OS. All metadata required for system operation, such as hardware configuration, device driver load order, user desktop environments, and lists of installed software, are consolidated in the registry.",
+        "Although the registry logically appears as a single giant tree structure, physically it is split into multiple files called “Hives” stored on the disk. This separates system-wide settings from user-specific settings, enabling efficient loading.",
+        "The main hive files are usually located in the %SystemRoot%\\System32\\config directory.",
+        "User-specific hive files exist as hidden files in the user’s profile directory (e.g., C:\\Users\\Username).",
+        "These files are mapped into the kernel paged pool memory by the kernel’s “Configuration Manager (CM)” during OS boot. The Configuration Manager is a kernel-mode component that processes registry read/write requests.",
+        "It is worth noting that not all registry data exists on the disk. For example, the HARDWARE hive is volatile and is never saved to a file on the disk. It is dynamically rebuilt in memory every time the OS boots and the Plug and Play (PnP) manager detects hardware.",
+        "Also, recent versions of Windows implement transaction logging to enhance registry reliability. Changes to hive files are not directly written to the data files, but are first recorded in transaction logs (.log1, .log2). This prevents data corruption during unexpected power losses or system crashes while writing, ensuring database integrity in a form close to ACID properties.",
+        "The registry has a hierarchical structure very similar to a file system. The root node is called a “Root Key” or “Hive”, and under it, “Keys”, “Subkeys”, and “Values” (the actual data entities) are stored. It is easy to understand if you consider keys as directories and values as files.",
+        "The main root keys are classified into the following five:",
+        "Visualizing this complex hierarchical structure and relationship of links looks like the following:",
+        "A strict data type is defined for each “value” in the registry. When manipulating the registry programmatically, it is essential to properly understand these types and write data in the appropriate type. Writing with an incorrect type can cause applications to throw exceptions or OS features to stop functioning.",
+        "Since the registry is directly linked to OS performance (especially boot time and process initialization speed), it is internally optimized using an advanced data structure similar to a B-Tree called “Cell Index”.",
+        "The time complexity \n𝑇\nsearch\nT\nsearch\n\t​\n\n when searching for a specific key (path) in the registry depends on the depth of the tree and the number of nodes at each level. The computational complexity of searching a subkey of depth \n𝑑\nd (e.g., \n𝑑\n=\n4\nd=4 for A\\B\\C\\D) can theoretically be modeled as follows:",
+        "Here, \n𝐶\n𝑖\nC\ni\n\t​\n\n is the number of child nodes (subkeys or values) at depth \n𝑖\ni, and \n𝐿\n𝑖\nL\ni\n\t​\n\n is the length of the string to be compared (number of characters). Within the hive files, which are the actual entities of the registry, the list of subkeys is maintained as an index sorted by name hashes or alphabetically. Therefore, instead of a simple linear search \n𝑂\n(\n𝐶\n𝑖\n)\nO(C\ni\n\t​\n\n), a binary search \n𝑂\n(\nlog\n⁡\n(\n𝐶\n𝑖\n)\n)\nO(log(C\ni\n\t​\n\n)) is possible, achieving extremely fast access even if there are tens of thousands of subkeys under a single key.",
+        "The total size of the registry (the footprint on the physical disk) is calculated as the sum of each hive.",
+        "𝑁\nℎ\nN\nh\n\t​\n\n is the number of keys in hive \nℎ\nh, \n𝑆\nkey_metadata\nS\nkey_metadata\n\t​\n\n is the size of the metadata per key (last write timestamp, pointer to the security descriptor, pointer to the parent key, etc.), and \n𝑆\nvalue\n(\n𝑣\n)\nS\nvalue\n\t​\n\n(v) is the payload size of value \n𝑣\nv. It also includes the overhead \n𝑆\noverhead\nS\noverhead\n\t​\n\n from transaction logs and unnecessary empty cells (fragmentation). Leaving unnecessary data in the registry for a long period (such as remnants of incompletely uninstalled software) increases this footprint, potentially putting pressure on the OS paged pool memory and leading to performance degradation.",
+        "Manual editing using the Registry Editor (regedit.exe) should be considered a last resort for system administration. The registry does not have an “Undo” feature like common document editors, and changes to values or deletions of keys are immediately reflected in the system through the Configuration Manager.",
+        "In particular, if critical keys essential for system boot (e.g., disk controller driver settings under HKLM\\SYSTEM\\CurrentControlSet\\Services, or the Userinit value in HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon) are incorrectly edited or deleted by even a single character, there is a fatal risk of the OS crashing with a Blue Screen of Death (BSoD) and becoming unbootable, or getting stuck after the login screen (Black Screen).",
+        "Let’s consider the probability of system failure if registry keys are randomly modified or deleted. Let \n𝐶\nC be the set of critical keys essential for the system to operate normally, and \n𝑁\n𝑐\n=\n∣\n𝐶\n∣\nN\nc\n\t​\n\n=∣C∣ be its total number. Let the total number of keys in the entire registry be \n𝑁\ntotal\nN\ntotal\n\t​\n\n.",
+        "If \n𝑘\nk keys are randomly deleted or corrupted, the probability \n𝑃\nfailure\nP\nfailure\n\t​\n\n that at least one critical key is corrupted is expressed by probability calculation of sampling without replacement as follows:",
+        "The total number of keys in the entire registry \n𝑁\ntotal\nN\ntotal\n\t​\n\n is on the order of hundreds of thousands to millions, but \n𝑁\n𝑐\nN\nc\n\t​\n\n is also on the order of tens of thousands. Mathematically, even with random operations, the failure probability rises sharply as \n𝑘\nk increases. Furthermore, in real-world manual operations, users do not edit “randomly”; they intentionally manipulate areas directly related to system settings or software operations (often following tutorial sites), making the probability of touching critical keys much higher than the theoretical value above.",
+        "To maintain compatibility for legacy applications, Windows implements several advanced “virtualization (redirection)” mechanisms for registry access. Programming without understanding this can cause critical bugs.",
+        "Starting with Windows Vista, User Account Control (UAC) was introduced. When old applications created in the Windows XP era (running with standard user privileges) try to write to protected keys like HKLM\\SOFTWARE that natively require administrator privileges, Windows silently redirects the write to a Virtual Store within the user profile: HKCU\\Software\\Classes\\VirtualStore\\MACHINE\\SOFTWARE to prevent them from crashing with an Access Denied error. When reading, it also merges and returns data from both the original location and the virtual store. This allows applications to continue operating normally without detecting errors.",
+        "However, when developing tools that programmatically change system-wide settings, you must specify <requestedExecutionLevel level=\"requireAdministrator\" /> in the manifest file to disable this virtualization.",
+        "When running old 32-bit applications on a 64-bit version of Windows (currently the mainstream), specific registry keys are automatically isolated and redirected so that 32-bit apps do not accidentally overwrite 64-bit native system settings or load incompatible 64-bit DLLs.",
+        "For example, if a 32-bit app tries to access HKLM\\SOFTWARE\\Vendor\\App, the OS transparently redirects it to HKLM\\SOFTWARE\\WOW6432Node\\Vendor\\App.",
+        "When editing the registry from PowerShell scripts or C# applications, you must be keenly aware of whether the executing process itself is 32-bit or 64-bit. Otherwise, it will cause the troublesome issue of “settings that should have been written are not visible from Explorer (written to a different location).”",
+        "To minimize the risk of manually editing the registry, the modern best practice is to codify operations (Infrastructure as Code) using PowerShell scripts to ensure automation, reproducibility, and testability. PowerShell features a “Registry Provider,” allowing transparent manipulation of the registry using exactly the same cmdlets (like Get-ChildItem, Get-ItemProperty, New-Item) used to manipulate the file system (e.g., the C: drive).",
+        "In PowerShell, dedicated PSDrives (similar to drive letters) like HKLM: and HKCU: are mounted by default.",
+        "The following script is an automation example that safely adds a custom tool directory to the user environment variable PATH when a developer sets up a new Windows machine.",
+        "This is a script that adds a custom item called “Open with My IDE” to the context menu when right-clicking a specific file or directory.",
+        "The operational sequence inside the OS when a PowerShell script modifies the registry is shown below.",
+        "When accessing the registry from a .NET application (such as C#), use the Microsoft.Win32.Registry and RegistryKey classes. The greatest advantage of using C# is the capability for robust error handling via powerful exception handling (try-catch), strict type checking, and explicit specification of 32-bit/64-bit views using the RegistryView enumeration.",
+        "Below is an example of C# code that reliably reads and writes to the 64-bit registry (bypassing WOW6432Node redirection) in a 64-bit OS environment.",
+        "The “handle” returned by the OS when opening a registry key is an unmanaged resource that consumes memory and system resources. Therefore, an ironclad rule in C# programming is to reliably prevent handle leaks by either using a using block or explicitly calling .Dispose() (or .Close()) within a finally block.",
+        "Even with automation via scripts or programs, it is absolutely essential to take a backup before making critical changes.",
+        "The most classical and versatile method is exporting to a .reg file. This is a text-based file with its own format, and its structure is as follows:",
+        "Note: Binary data is represented by comma-separated hexadecimal numbers following hex:.",
+        "You can implement automatic backups in batch scripts using the command-line tool reg.exe.",
+        "Instead of just text, you can leverage PowerShell’s object orientation to export registry objects and save them in XML format (CliXML). This allows you to handle them while maintaining type information during restoration, without relying on string parsing.",
+        "If it’s unclear where a program is writing in the registry, or if you want to find the cause of an “Access Denied” error, the Process Monitor (Procmon) —a free Sysinternals tool provided by Microsoft—is extremely powerful. By using Procmon, you can capture all registry API calls (RegOpenKey, RegQueryValue, RegSetValue, etc.) occurring on the OS in real-time and troubleshoot with advanced filtering such as the following:",
+        "With this, you can instantly pinpoint which key lacks ACL settings, or whether it’s being mistakenly redirected to the WOW6432Node.",
+        "Finally, we summarize the important design principles and best practices for handling the registry.",
+        "The Windows Registry is a powerful and complex foundational system that integrally manages every behavior of the OS and application settings. Disorderly manual editing carries a high, mathematically proven risk of system corruption. Therefore, using programmable means such as PowerShell and C# to manage configurations securely, testably, and reproducibly, in accordance with the principles of Infrastructure as Code, is essential in modern system administration and development. Utilize the deep architectural understanding and implementation patterns explained in this article to aim for building a more robust and secure Windows environment."
+      ],
+      "code": [
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n",
+        "# 1. Check existence (Read)\n$keyPath = \"HKCU:\\Software\\MyCustomApp\"\nif (-Not (Test-Path -Path $keyPath)) {\n    # 2. Create a new key (Create)\n    New-Item -Path \"HKCU:\\Software\" -Name \"MyCustomApp\" -Force | Out-Null\n    Write-Host \"Key created.\"\n}\n\n# 3. Write/Update value (Update) - Write 1 as REG_DWORD\nSet-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Value 1 -Type DWord\n\n# 4. Read value (Read)\n$debugFlag = (Get-ItemProperty -Path $keyPath).EnableDebug\nWrite-Host \"Current debug flag: $debugFlag\"\n\n# 5. Delete value (Delete)\nRemove-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Force\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n",
+        "$envKey = \"HKCU:\\Environment\"\n$newPath = \"C:\\tools\\bin\"\n\n# Read the current PATH (suppress errors for safe retrieval)\n$currentPathInfo = Get-ItemProperty -Path $envKey -Name \"Path\" -ErrorAction SilentlyContinue\n$currentPath = if ($currentPathInfo) { $currentPathInfo.Path } else { \"\" }\n\n# Use regular expressions to check if it is already included\nif ($currentPath -notmatch [regex]::Escape($newPath)) {\n    # Append a semicolon if not present at the end and concatenate\n    if ($currentPath -and $currentPath -notmatch \";$\") {\n        $currentPath += \";\"\n    }\n    $updatedPath = $currentPath + $newPath\n    \n    # Write as REG_EXPAND_SZ type (important)\n    Set-ItemProperty -Path $envKey -Name \"Path\" -Value $updatedPath -Type ExpandString\n    Write-Host \"Updated PATH environment variable: $newPath\"\n    \n    # Notify running processes of environment variable changes (WM_SETTINGCHANGE)\n    # This applies it to new Explorer windows, etc., without requiring a reboot\n    [Environment]::SetEnvironmentVariable(\"Path\", $updatedPath, [EnvironmentVariableTarget]::User)\n} else {\n    Write-Host \"PATH is already added.\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n",
+        "# Menu when right-clicking the directory background (blank space)\n$menuPath = \"HKCR:\\Directory\\Background\\shell\\OpenWithMyIDE\"\n$commandPath = \"$menuPath\\command\"\n\ntry {\n    # Create parent key for the menu item\n    New-Item -Path $menuPath -Force -ErrorAction Stop | Out-Null\n    \n    # Set the display name in the (default) value\n    Set-ItemProperty -Path $menuPath -Name \"(default)\" -Value \"Open with My IDE\" -Type String\n    \n    # Set icon (optional)\n    Set-ItemProperty -Path $menuPath -Name \"Icon\" -Value \"C:\\Program Files\\MyIDE\\ide.exe,0\" -Type String\n\n    # Create command subkey and set the command line to be executed\n    # %V is a variable expanded to the current directory path\n    New-Item -Path $commandPath -Force -ErrorAction Stop | Out-Null\n    Set-ItemProperty -Path $commandPath -Name \"(default)\" -Value \"`\"C:\\Program Files\\MyIDE\\ide.exe`\" `\"%V`\"\" -Type String\n\n    Write-Host \"Context menu added.\"\n} catch {\n    Write-Error \"Failed to modify the registry. Make sure you are running as administrator. Error: $_\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n\n26\n\n27\n\n28\n\n29\n\n30\n\n31\n\n32\n\n33\n\n34\n\n35\n\n36\n\n37\n\n38\n\n39\n\n40\n\n41\n\n42\n\n43\n\n44\n\n45\n\n46\n\n47\n\n48\n\n49\n\n50\n\n51\n\n52\n\n53\n\n54\n",
+        "using System;\nusing System.Security;\nusing Microsoft.Win32;\n\nclass RegistryEditor\n{\n    static void Main()\n    {\n        // Path under HKLM (Requires administrator privileges)\n        string keyPath = @\"SOFTWARE\\MyEnterpriseApp\\Settings\";\n\n        // Specify RegistryView.Registry64 to open a 64-bit native view\n        // Use a using statement to reliably Dispose of the registry key handle (unmanaged resource)\n        try\n        {\n            using (RegistryKey baseKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))\n            {\n                // Open key with write permission (writable: true). Create if it doesn't exist.\n                using (RegistryKey subKey = baseKey.CreateSubKey(keyPath, writable: true))\n                {\n                    if (subKey != null)\n                    {\n                        // Write value as REG_DWORD\n                        subKey.SetValue(\"MaxConnections\", 100, RegistryValueKind.DWord);\n                        \n                        // Write value as REG_SZ\n                        subKey.SetValue(\"ApiEndpoint\", \"https://api.example.com\", RegistryValueKind.String);\n                        \n                        // Write byte array as REG_BINARY\n                        byte[] secretData = { 0x01, 0x02, 0x0A, 0xFF };\n                        subKey.SetValue(\"BinarySecret\", secretData, RegistryValueKind.Binary);\n                        \n                        Console.WriteLine(\"Successfully wrote to the registry.\");\n                    }\n                }\n            }\n        }\n        catch (UnauthorizedAccessException ex)\n        {\n            // Commonly occurs when not running as administrator\n            Console.WriteLine($\"Permission error: Please \\\"Run as administrator\\\". Details: {ex.Message}\");\n        }\n        catch (SecurityException ex)\n        {\n            // If blocked by .NET Code Access Security (CAS)\n            Console.WriteLine($\"Security exception: {ex.Message}\");\n        }\n        catch (Exception ex)\n        {\n            // Other unexpected IO errors, etc.\n            Console.WriteLine($\"Unexpected error: {ex.Message}\");\n        }\n    }\n}\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n",
+        "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Software\\MyCustomApp]\n\"EnableDebug\"=dword:00000001\n\"ApiEndpoint\"=\"https://api.example.com\"\n\"BinaryData\"=hex:01,02,0a,ff\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n",
+        "REM Backup specified key (subkeys are also exported recursively)\nreg export HKLM\\SOFTWARE\\MyEnterpriseApp C:\\backup\\myapp_backup.reg /y\n\nREM Restore backup\nreg import C:\\backup\\myapp_backup.reg\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n",
+        "# Take backup (Save properties as XML)\nGet-ItemProperty -Path \"HKCU:\\Software\\MyCustomApp\" | Export-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n\n# Concept of restoring\n$backup = Import-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n# Because $backup contains restored custom PSObjects,\n# you can build logic to loop through its properties and reapply them with Set-ItemProperty.\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-registry-safe-programmable-editing/img/eyecatch_hu2430515421054564890.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/en/categories/windows/"
+        },
+        {
+          "text": "Administration",
+          "path": "/en/categories/administration/"
+        },
+        {
+          "text": "Programming",
+          "path": "/en/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Windows NT",
+          "path": "/en/p/windows-os-history-architecture/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "ACID",
+          "path": "/en/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "B-Tree",
+          "path": "/en/p/b-tree-database-index-theory/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/en/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  },
+  {
+    "batch": "020-windows-registry-ja-en-de",
+    "language": "de",
+    "ok": true,
+    "knownTypographyChange": null,
+    "before": {
+      "lists": [
+        "SYSTEM: Wichtige Einstellungen, die für den Start des Betriebssystems erforderlich sind (Treiber, Dienste, Startkonfiguration usw.).",
+        "SOFTWARE: Systemweite Einstellungen für installierte Software. Hier befinden sich die meisten Einstellungen von Drittanbieter-Anwendungen.",
+        "SAM: Security Accounts Manager (lokale Benutzerkonten und Passwort-Hashes).",
+        "SECURITY: Lokale Sicherheitsrichtlinien und Rechtezuweisungen.",
+        "DEFAULT: Das Standardbenutzerprofil (Vorlage zum Erstellen neuer Benutzer).",
+        "NTUSER.DAT: Die Grundeinstellungen des jeweiligen Benutzers (der Großteil von HKCU).",
+        "UsrClass.dat: Die Dateierweiterungszuordnungen des jeweiligen Benutzers (befindet sich in AppData\\Local\\Microsoft\\Windows).",
+        "HKEY_LOCAL_MACHINE (HKLM): Speichert System- und Softwareeinstellungen, die für den gesamten Computer (alle Benutzer) gelten. Änderungen erfordern Administratorrechte.",
+        "HKEY_CURRENT_USER (HKCU): Speichert Einstellungen, die spezifisch für den aktuell angemeldeten Benutzer sind. In Wirklichkeit ist dies keine unabhängige Datenbank, sondern lediglich ein symbolischer Link (Alias) zum entsprechenden SID-Schlüssel (Security Identifier) des Benutzers unter HKEY_USERS.",
+        "HKEY_CLASSES_ROOT (HKCR): Speichert Dateierweiterungszuordnungen, Registrierungsinformationen für COM-Klassen (Component Object Model) und Shell-Erweiterungen. Dieser Schlüssel ist speziell; er ist eine virtuelle Ansicht, bei der der Configuration Manager HKLM\\SOFTWARE\\Classes (systemweit) und HKCU\\Software\\Classes (aktueller Benutzer) zusammenführt (mergt). Bei Konflikten haben die benutzerspezifischen Einstellungen (HKCU) Vorrang.",
+        "HKEY_USERS (HKU): Speichert die Einstellungen aller Benutzerprofile auf dem System (die aktuell in den Speicher geladen sind). Sie sind basierend auf SIDs hierarchisch angeordnet.",
+        "HKEY_CURRENT_CONFIG (HKCC): Einstellungen bezüglich des aktuellen Hardwareprofils. In Wirklichkeit ein Link zu HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles\\Current.",
+        "REG_SZ (Zeichenfolgenwert): Der häufigste Datentyp. Speichert eine NULL-terminierte Unicode-Zeichenfolge (UTF-16LE). Wird für Dateipfade, URLs, UI-Anzeigenamen usw. verwendet.",
+        "REG_DWORD (Wert eines 32-Bit-Wertes): Ein vorzeichenloser 32-Bit (4 Byte) Ganzzahlwert. Wird häufig für boolesche Werte (0=Deaktiviert, 1=Aktiviert), Timeout-Werte in Millisekunden und das Setzen von Fehlercodes verwendet. Da Windows eine Little-Endian-Architektur ist, werden die Bytes auf der Festplatte beginnend mit dem niederwertigsten Byte gespeichert (z. B. wird 0x12345678 als 78 56 34 12 gespeichert).",
+        "REG_QWORD (Wert eines 64-Bit-Wertes): Ein 64-Bit (8 Byte) Ganzzahlwert. Mit der Verbreitung von 64-Bit-Architekturen wird er verwendet, um riesige Zahlen (wie Datenträgerkontingente oder große Speichergrößenangaben) und zeigergroße Einstellungen zu speichern.",
+        "REG_MULTI_SZ (Wert der mehrteiligen Zeichenfolge): Ein Format, das mehrere NULL-terminierte Zeichenfolgen nacheinander speichert und am Ende ein weiteres leeres NULL-Terminierungszeichen (Double NULL) hinzufügt, um es abzuschließen. Eignet sich zum Speichern von Array-ähnlichen Daten wie Listen von IP-Adressen, Listen von abhängigen Diensten oder Bindungsreihenfolgen.",
+        "REG_EXPAND_SZ (Wert der erweiterbaren Zeichenfolge): Ein spezieller Zeichenfolgentyp, der nicht erweiterte Umgebungsvariablen wie %USERPROFILE% oder %SystemRoot% enthält. Wenn eine Anwendung ihn über die API RegQueryValueEx liest oder die API ExpandEnvironmentStrings aufruft, wird er vom Betriebssystem dynamisch in den tatsächlichen absoluten Pfad aufgelöst.",
+        "REG_BINARY (Binärwert): Ein beliebiger roher Binärdatenstrom. Speichert verschlüsselte Passwörter (wie LSA Secrets), digitale Zertifikate und anwendungsspezifische komplexe Strukturen oder serialisierte Daten.",
+        "REG_NONE: Daten mit undefiniertem Typ. Sehr selten, wird aber manchmal für reservierte Bereiche von Verschlüsselungsschlüsseln verwendet.",
+        "REG_RESOURCE_LIST / REG_FULL_RESOURCE_DESCRIPTOR: Fortgeschrittene, nur für den Kernel bestimmte Typen, die von Gerätetreibern verwendet werden, um Zuweisungsinformationen für Hardwareressourcen (IRQs, I/O-Ports, DMA-Kanäle) aufzuzeichnen.",
+        "Process Name is powershell.exe",
+        "Operation begins with Reg",
+        "Result is ACCESS DENIED",
+        "Das Prinzip der geringsten Privilegien durchsetzen: Einstellungen für Anwendungen und Skripte sollten nach Möglichkeit immer unter dem Software-Schlüssel in HKCU (dem aktuellen Benutzer) gespeichert werden. Das Schreiben nach HKLM erfordert eine UAC-Rechteausweitung auf Administratorrechte, was die Angriffsfläche (Attack Surface) für Sicherheitsbedrohungen vergrößert und die Benutzererfahrung beeinträchtigt.",
+        "Überwachung (Auditing) aktivieren: Für sicherheitskritische Schlüssel (z. B. der Run-Schlüssel, der das Autostartverhalten steuert, oder Dienstkonfigurationsschlüssel) sollten Sie eine SACL (System Access Control List) konfigurieren, um im „Sicherheitsprotokoll“ in der Windows-Ereignisanzeige aufzuzeichnen (zu überwachen), wer Werte wann geändert oder gelöscht hat.",
+        "Umgang mit der Veraltung von Transaktionsfunktionen: Die Transaktionsfunktion der Registrierung (TxR) unter Verwendung des in Windows Vista eingeführten „Kernel Transaction Manager (KTM)“ gilt ab Windows 10 als veraltet (Deprecated). Es ist erforderlich, einen eigenen Backup- und Rollback-Mechanismus in der Anwendung zu implementieren (z. B. den ursprünglichen Wert vor Änderungen lesen und im Speicher behalten).",
+        "Vorsicht vor Konflikten mit Gruppenrichtlinien (GPO): Bereiche wie HKLM\\SOFTWARE\\Policies und HKCU\\Software\\Policies sollten durch Active Directory-Gruppenrichtlinien zentral verwaltet werden. Wenn Sie diese Schlüssel direkt aus einem Skript umschreiben, werden sie im nächsten Aktualisierungszyklus für Gruppenrichtlinien im Hintergrund (in der Regel alle 90 bis 120 Minuten) durch die Einstellungen des Domänencontrollers zwangsüberschrieben, weshalb die Einstellungen nicht dauerhaft bleiben."
+      ],
+      "headings": [
+        {
+          "id": "grundlagen-der-windows-registrierung-und-methoden-zur-programmierbaren-sicheren-bearbeitung",
+          "text": "Grundlagen der Windows-Registrierung und Methoden zur programmierbaren, sicheren Bearbeitung"
+        },
+        {
+          "id": "1-einführung-geschichte-und-entwicklung-der-windows-registrierung",
+          "text": "1. Einführung: Geschichte und Entwicklung der Windows-Registrierung"
+        },
+        {
+          "id": "2-die-tiefe-der-architektur-die-realität-der-registrierungsstruktur-hives-und-speicherzuordnung",
+          "text": "2. Die Tiefe der Architektur: Die Realität der Registrierungsstruktur (Hives) und Speicherzuordnung"
+        },
+        {
+          "id": "3-die-hierarchische-struktur-von-registrierungsschlüsseln-und--werten",
+          "text": "3. Die hierarchische Struktur von Registrierungsschlüsseln und -werten"
+        },
+        {
+          "id": "4-datentypen-der-registrierung-detaillierte-erklärung",
+          "text": "4. Datentypen der Registrierung (Detaillierte Erklärung)"
+        },
+        {
+          "id": "5-das-mathematische-modell-und-die-leistung-der-registrierung-im-betriebssystem",
+          "text": "5. Das mathematische Modell und die Leistung der Registrierung im Betriebssystem"
+        },
+        {
+          "id": "zeitkomplexität-der-suche-time-complexity",
+          "text": "Zeitkomplexität der Suche (Time Complexity)"
+        },
+        {
+          "id": "speicherbedarf-space-complexity",
+          "text": "Speicherbedarf (Space Complexity)"
+        },
+        {
+          "id": "6-risiken-manueller-bearbeitung-und-wahrscheinlichkeit-von-beschädigungen-die-die-systemstabilität-bedrohen",
+          "text": "6. Risiken manueller Bearbeitung und Wahrscheinlichkeit von Beschädigungen, die die Systemstabilität bedrohen"
+        },
+        {
+          "id": "mathematisches-modell-der-beschädigungswahrscheinlichkeit",
+          "text": "Mathematisches Modell der Beschädigungswahrscheinlichkeit"
+        },
+        {
+          "id": "7-registrierungsvirtualisierung-und-wow64-architektur",
+          "text": "7. Registrierungsvirtualisierung und WOW64-Architektur"
+        },
+        {
+          "id": "uac-registrierungsvirtualisierung-registry-virtualization",
+          "text": "UAC-Registrierungsvirtualisierung (Registry Virtualization)"
+        },
+        {
+          "id": "wow64-windows-32-bit-on-windows-64-bit-umleitung",
+          "text": "WOW64 (Windows 32-bit on Windows 64-bit) Umleitung"
+        },
+        {
+          "id": "8-programmierbare-sichere-bearbeitung-mit-powershell",
+          "text": "8. Programmierbare sichere Bearbeitung mit PowerShell"
+        },
+        {
+          "id": "grundlegende-crud-operationen",
+          "text": "Grundlegende CRUD-Operationen"
+        },
+        {
+          "id": "praxisbeispiel-1-automatische-einrichtung-der-entwicklungsumgebung-hinzufügen-von-path-umgebungsvariablen",
+          "text": "Praxisbeispiel 1: Automatische Einrichtung der Entwicklungsumgebung (Hinzufügen von PATH-Umgebungsvariablen)"
+        },
+        {
+          "id": "praxisbeispiel-2-hinzufügen-einer-benutzerdefinierten-aktion-zum-kontextmenü",
+          "text": "Praxisbeispiel 2: Hinzufügen einer benutzerdefinierten Aktion zum Kontextmenü"
+        },
+        {
+          "id": "interne-sequenz-des-registrierungszugriffs-von-powershell",
+          "text": "Interne Sequenz des Registrierungszugriffs von PowerShell"
+        },
+        {
+          "id": "9-robuster-registrierungszugriff-mit-c-net",
+          "text": "9. Robuster Registrierungszugriff mit C# (.NET)"
+        },
+        {
+          "id": "10-sicherungs--und-wiederherstellungsmethoden-für-die-registrierung",
+          "text": "10. Sicherungs- und Wiederherstellungsmethoden für die Registrierung"
+        },
+        {
+          "id": "backup-und-import-mit-reg-dateien",
+          "text": "Backup und Import mit .reg-Dateien"
+        },
+        {
+          "id": "fortgeschrittenere-sicherungsmethoden-mit-powershell",
+          "text": "Fortgeschrittenere Sicherungsmethoden mit PowerShell"
+        },
+        {
+          "id": "11-fehlerbehebung-mit-sysinternals-process-monitor-procmon",
+          "text": "11. Fehlerbehebung mit Sysinternals Process Monitor (Procmon)"
+        },
+        {
+          "id": "12-sicherheit-und-best-practices",
+          "text": "12. Sicherheit und Best Practices"
+        },
+        {
+          "id": "fazit",
+          "text": "Fazit"
+        }
+      ],
+      "paragraphs": [
+        "Im Windows-Betriebssystem ist die „Registrierung“ (Registry) eine riesige hierarchische Datenbank, die verschiedene Einstellungen für das System und die Anwendungen speichert. In diesem Artikel erklären wir die grundlegende Architektur der Windows-Registrierung sowie Methoden zur programmierbaren und sicheren Bearbeitung der Registrierung mithilfe von PowerShell und C# sehr detailliert.",
+        "In den frühen Versionen von Windows (Windows 3.x-Ära) wurden System- und Anwendungseinstellungen hauptsächlich in .ini-Dateien (Initialisierungsdateien) gespeichert. Allerdings verteilten sich unzählige INI-Dateien für jede Anwendung über das gesamte System, was die Verwaltung extrem kompliziert machte. Da INI-Dateien zudem auf reinem Text basierten, war das Speichern von Binärdaten schwierig und es gab keinen Mechanismus zur Zugriffskontrolle (Sicherheit). Die Parsing-Geschwindigkeit von Dateien war ebenfalls langsam, weshalb sie ungeeignet waren, um umfangreiche Einstellungen zu speichern.",
+        "Um diese Probleme grundlegend zu lösen, wurde ab Windows NT und Windows 95 die „Registrierung“ als zentralisierte Einstellungsdatenbank ernsthaft eingeführt. Die Registrierung ist eine hierarchische Datenbank, die starke Typisierung, Unterstützung für Binärdaten und robuste Sicherheitsfunktionen durch Zugriffskontrolllisten (ACLs) bietet. Dadurch wurde es für alle Komponenten, vom Betriebssystem-Kernel bis hin zu Anwendungen im Benutzermodus, möglich, Einstellungen über eine einheitliche Schnittstelle (die Reg*-Funktionen der Win32-API) zu lesen und zu schreiben.",
+        "Bis hin zum modernen Windows 11 fungiert die Registrierung weiterhin als das Herzstück des Betriebssystems. Alle Metadaten, die für den Betrieb des Systems erforderlich sind – wie Hardwarekonfigurationen, Ladereihenfolge von Gerätetreibern, Desktop-Umgebung des Benutzers und die Liste der installierten Software –, werden in der Registrierung zentralisiert.",
+        "Obwohl die Registrierung logisch als eine riesige Baumstruktur erscheint, ist sie physisch in mehrere Dateien auf der Festplatte unterteilt, die als „Hives“ (Strukturen) bezeichnet werden. Dadurch werden systemweite Einstellungen von benutzerspezifischen Einstellungen getrennt, was ein effizientes Laden ermöglicht.",
+        "Die wichtigsten Hive-Dateien befinden sich normalerweise im Verzeichnis %SystemRoot%\\System32\\config.",
+        "Benutzerspezifische Hive-Dateien existieren als versteckte Dateien im Profilverzeichnis des Benutzers (z. B. C:\\Users\\Username).",
+        "Diese Dateien werden beim Systemstart vom „Configuration Manager (CM)“ des Kernels in den Paged-Pool-Speicher des Kernels gemappt. Der Configuration Manager ist eine Kernel-Modus-Komponente, die Lese- und Schreibanforderungen an die Registrierung verarbeitet.",
+        "Besonders bemerkenswert ist, dass nicht alle Registrierungsdaten auf der Festplatte existieren. Beispielsweise ist der Hive HARDWARE flüchtig (Volatile) und wird überhaupt nicht in Dateien auf der Festplatte gespeichert. Jedes Mal, wenn das Betriebssystem startet und der Plug-and-Play-Manager (PnP) Hardware erkennt, wird er dynamisch im Speicher neu aufgebaut.",
+        "Darüber hinaus implementieren moderne Windows-Versionen eine Transaktionsprotokollierung, um die Zuverlässigkeit der Registrierung zu erhöhen. Änderungen an den Hive-Dateien werden nicht direkt in die Datendateien geschrieben, sondern zuerst in Transaktionsprotokollen (.log1, .log2) aufgezeichnet. Dies verhindert Datenbeschädigungen (Corruption) im Falle eines unerwarteten Stromausfalls oder Systemabsturzes während des Schreibvorgangs und garantiert die Integrität der Datenbank in einer Form, die den ACID-Eigenschaften nahekommt.",
+        "Die Registrierung hat eine hierarchische Struktur, die einem Dateisystem sehr ähnlich ist. Der Wurzelknoten wird als „Stammschlüssel“ (Root Key) oder „Hive“ bezeichnet. Darunter befinden sich „Schlüssel“ (Keys), „Unterschlüssel“ (Subkeys) und schließlich die eigentlichen Daten, die „Werte“ (Values) genannt werden. Man kann es sich leicht so vorstellen, dass Schlüssel Verzeichnissen und Werte Dateien entsprechen.",
+        "Die wichtigsten Stammschlüssel werden in die folgenden fünf Kategorien unterteilt:",
+        "Die Visualisierung dieser komplexen hierarchischen Struktur und der Verknüpfungen sieht wie folgt aus:",
+        "Die „Werte“ in der Registrierung haben jeweils strikt definierte Datentypen. Wenn Sie die Registrierung programmierbar manipulieren, ist es unerlässlich, diese Typen richtig zu verstehen und Daten mit dem entsprechenden Typ zu schreiben. Das Schreiben mit einem falschen Typ führt dazu, dass Anwendungen Ausnahmen auslösen oder Funktionen des Betriebssystems nicht mehr funktionieren.",
+        "Da die Registrierung direkt an die Leistung des Betriebssystems (insbesondere Boot-Zeit und Initialisierungsgeschwindigkeit von Prozessen) gekoppelt ist, wird sie intern mithilfe einer fortschrittlichen Datenstruktur optimiert, die als „Cell Index“ bezeichnet wird und einem B-Baum (B-Tree) ähnelt.",
+        "Die Zeitkomplexität \n𝑇\nsearch\nT\nsearch\n\t​\n\n bei der Suche nach einem bestimmten Schlüssel (Pfad) innerhalb der Registrierung hängt von der Tiefe des Baums und der Anzahl der Knoten auf jeder Ebene ab. Die Komplexität beim Suchen eines Unterschlüssels der Tiefe \n𝑑\nd (z. B. für A\\B\\C\\D ist \n𝑑\n=\n4\nd=4) kann theoretisch wie folgt modelliert werden:",
+        "Hierbei ist \n𝐶\n𝑖\nC\ni\n\t​\n\n die Anzahl der untergeordneten Knoten (Unterschlüssel oder Werte) auf der Tiefe \n𝑖\ni, und \n𝐿\n𝑖\nL\ni\n\t​\n\n ist die Länge (Anzahl der Zeichen) der zu vergleichenden Zeichenfolge. Innerhalb der Hive-Datei, die das eigentliche Subjekt der Registrierung ist, wird die Liste der Unterschlüssel als Hash-Wert des Namens oder als alphabetisch sortierter Index beibehalten. Daher ist anstelle einer einfachen linearen Suche \n𝑂\n(\n𝐶\n𝑖\n)\nO(C\ni\n\t​\n\n) eine binäre Suche \n𝑂\n(\nlog\n⁡\n(\n𝐶\n𝑖\n)\n)\nO(log(C\ni\n\t​\n\n)) möglich, was selbst dann einen extrem schnellen Zugriff ermöglicht, wenn sich Zehntausende von Unterschlüsseln unter einem einzigen Schlüssel befinden.",
+        "Die Gesamtgröße der Registrierung (der belegte Platz auf der physischen Festplatte) wird als Summe jedes Hives berechnet.",
+        "𝑁\nℎ\nN\nh\n\t​\n\n ist die Anzahl der Schlüssel im Hive \nℎ\nh, \n𝑆\nkey_metadata\nS\nkey_metadata\n\t​\n\n ist die Größe der Metadaten pro Schlüssel (letzter Zeitstempel für Schreibvorgänge, Zeiger auf Sicherheitsbeschreibungen, Zeiger auf übergeordnete Schlüssel usw.), und \n𝑆\nvalue\n(\n𝑣\n)\nS\nvalue\n\t​\n\n(v) ist die Nutzlastgröße des Wertes \n𝑣\nv. Der Overhead \n𝑆\noverhead\nS\noverhead\n\t​\n\n durch Transaktionsprotokolle und nicht mehr benötigte leere Zellen (Fragmentierung) ist ebenfalls enthalten. Wenn unnötige Daten (wie Überreste von Software, die nicht vollständig deinstalliert wurde) über einen langen Zeitraum in der Registrierung belassen werden, erhöht sich dieser Speicherbedarf, was den Paged-Pool-Speicher des Betriebssystems belasten und zu Leistungseinbußen führen kann.",
+        "Die manuelle Bearbeitung mit dem Registrierungs-Editor (regedit.exe) sollte als letztes Mittel der Systemverwaltung betrachtet werden. Der Registrierung fehlt eine „Rückgängig“ (Undo)-Funktion, die man in gewöhnlichen Dokumenteneditoren findet, und Änderungen an Werten oder das Löschen von Schlüsseln werden über den Configuration Manager sofort im System widergespiegelt.",
+        "Insbesondere das irrtümliche Ändern oder Löschen von nur einem Zeichen in kritischen Schlüsseln, die für den Systemstart unerlässlich sind (z. B. Einstellungen für Festplattencontroller-Treiber unter HKLM\\SYSTEM\\CurrentControlSet\\Services oder der Wert Userinit in HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon), birgt das fatale Risiko, dass das Betriebssystem einen Blue Screen (BSoD) verursacht und nicht mehr booten kann oder nicht über den Anmeldebildschirm hinauskommt (Black Screen).",
+        "Betrachten wir die Wahrscheinlichkeit eines Systemausfalls, wenn Schlüssel in der Registrierung zufällig geändert oder gelöscht werden. Sei die Menge der kritischen Schlüssel, die für die ordnungsgemäße Funktion des Systems unerlässlich sind, \n𝐶\nC, und ihre Gesamtzahl \n𝑁\n𝑐\n=\n∣\n𝐶\n∣\nN\nc\n\t​\n\n=∣C∣. Sei die Gesamtzahl der Schlüssel in der gesamten Registrierung \n𝑁\ntotal\nN\ntotal\n\t​\n\n. Wenn zufällig \n𝑘\nk Schlüssel gelöscht oder zerstört werden, wird die Wahrscheinlichkeit \n𝑃\nfailure\nP\nfailure\n\t​\n\n, dass mindestens ein kritischer Schlüssel beschädigt wird, durch die Wahrscheinlichkeitsrechnung des Ziehens ohne Zurücklegen (Sampling without replacement) wie folgt ausgedrückt:",
+        "Die Gesamtzahl der Schlüssel in der Registrierung \n𝑁\ntotal\nN\ntotal\n\t​\n\n liegt in der Größenordnung von Hunderttausenden bis Millionen, aber auch \n𝑁\n𝑐\nN\nc\n\t​\n\n existiert in der Größenordnung von Zehntausenden. Mathematisch gesehen steigt die Ausfallwahrscheinlichkeit selbst bei zufälligen Operationen stark an, wenn \n𝑘\nk zunimmt. Darüber hinaus operieren Benutzer in der Praxis nicht „zufällig“, sondern manipulieren absichtlich Bereiche, die direkt mit Systemeinstellungen und dem Softwarebetrieb zusammenhängen (während sie auf Tutorial-Seiten usw. schauen), sodass die Wahrscheinlichkeit, einen kritischen Schlüssel zu berühren, weitaus höher ist als der oben genannte theoretische Wert.",
+        "Um die Kompatibilität mit Legacy-Anwendungen aufrechtzuerhalten, implementiert Windows einige fortschrittliche „Virtualisierungs“-Mechanismen (Umleitung) für den Registrierungszugriff. Die Programmierung ohne Verständnis dieser Mechanismen ist die Ursache für schwerwiegende Fehler.",
+        "Ab Windows Vista wurde die Benutzerkontensteuerung (UAC) eingeführt. Wenn eine alte Anwendung, die in der Windows XP-Ära erstellt wurde (und mit Standardbenutzerrechten läuft), versucht, in geschützte Schlüssel wie HKLM\\SOFTWARE zu schreiben, die eigentlich Administratorrechte erfordern, verhindert Windows Abstürze aufgrund von Zugriffsverweigerungsfehlern (Access Denied), indem es den Schreibvorgang heimlich in den virtuellen Speicher HKCU\\Software\\Classes\\VirtualStore\\MACHINE\\SOFTWARE im Benutzerprofil umleitet. Beim Lesen fügt es sowohl den ursprünglichen Speicherort als auch den virtuellen Speicher zusammen und gibt sie zurück. Dadurch kann die Anwendung ohne Erkennung eines Fehlers normal weiterlaufen. Wenn Sie jedoch ein Tool entwickeln, das systemweite Einstellungen programmierbar ändert, müssen Sie <requestedExecutionLevel level=\"requireAdministrator\" /> in der Manifestdatei angeben und diese Virtualisierung deaktivieren.",
+        "Wenn eine ältere 32-Bit-Anwendung auf einer 64-Bit-Version von Windows (dem aktuellen Mainstream) ausgeführt wird, werden bestimmte Registrierungsschlüssel automatisch isoliert und umgeleitet, um zu verhindern, dass die 32-Bit-App versehentlich native 64-Bit-Systemeinstellungen überschreibt oder inkompatible 64-Bit-DLLs lädt. Wenn beispielsweise eine 32-Bit-App versucht, auf HKLM\\SOFTWARE\\Vendor\\App zuzugreifen, leitet das Betriebssystem sie transparent an HKLM\\SOFTWARE\\WOW6432Node\\Vendor\\App um.",
+        "Beim Bearbeiten der Registrierung über ein PowerShell-Skript oder eine C#-Anwendung müssen Sie sich unbedingt bewusst sein, ob der ausführende Prozess selbst 32-Bit oder 64-Bit ist. Andernfalls wird das lästige Problem verursacht, dass „die geschriebenen Einstellungen im Explorer nicht sichtbar sind (an einer anderen Stelle geschrieben wurden)“.",
+        "Um das Risiko der manuellen Bearbeitung der Registrierung zu minimieren, besteht die moderne Best Practice darin, Vorgänge mit PowerShell-Skripten zu codieren (Infrastructure as Code) und Automatisierung, Reproduzierbarkeit und Testbarkeit sicherzustellen. PowerShell verfügt über einen „Registry Provider“, mit dem Sie die Registrierung transparent mit genau denselben Cmdlets (Get-ChildItem, Get-ItemProperty, New-Item usw.) bearbeiten können, mit denen Sie auch Dateisysteme (wie das Laufwerk C:) bearbeiten.",
+        "In PowerShell sind dedizierte PSDrives (ähnlich wie Laufwerksbuchstaben) wie HKLM: und HKCU: standardmäßig gemountet.",
+        "Das folgende Skript ist ein Automatisierungsbeispiel, das das Verzeichnis benutzerdefinierter Tools sicher zur Benutzerumgebungsvariablen PATH hinzufügt, wenn ein Entwickler einen neuen Windows-Computer einrichtet.",
+        "Dies ist ein Skript, das ein benutzerdefiniertes Element namens „In My IDE öffnen“ zum Kontextmenü hinzufügt, wenn Sie mit der rechten Maustaste auf eine bestimmte Datei oder ein bestimmtes Verzeichnis klicken.",
+        "Die interne Betriebssystemsequenz, wenn ein PowerShell-Skript die Registrierung ändert, wird unten gezeigt.",
+        "Wenn Sie von einer .NET-Anwendung (z. B. C#) auf die Registrierung zugreifen, verwenden Sie die Klassen Microsoft.Win32.Registry und RegistryKey. Der größte Vorteil bei der Verwendung von C# ist eine robuste Fehlerbehandlung durch starke Ausnahmebehandlung (try-catch), strikte Typprüfung und die Möglichkeit, explizit 32-Bit/64-Bit-Ansichten mit der RegistryView-Enumeration anzugeben.",
+        "Das folgende C#-Codebeispiel liest und schreibt die Registrierung auf der 64-Bit-Seite zuverlässig (wobei die WOW6432Node-Umleitung vermieden wird) in einer 64-Bit-Betriebssystemumgebung.",
+        "Das vom Betriebssystem zurückgegebene „Handle“, wenn ein Registrierungsschlüssel geöffnet wird, ist eine nicht verwaltete Ressource, die Arbeitsspeicher und Systemressourcen verbraucht. Daher ist es eine eiserne Regel bei der C#-Programmierung, using-Blöcke zu verwenden oder .Dispose() (oder .Close()) explizit im finally-Block aufzurufen, um Handle-Lecks sicher zu verhindern.",
+        "Selbst bei Automatisierung durch Skripte oder Programme ist es absolut unerlässlich, vor kritischen Änderungen ein Backup zu erstellen.",
+        "Die klassischste und universellste Methode ist der Export in eine .reg-Datei. Diese Datei ist eine textbasierte Datei mit einem eigenen Format, und ihre Struktur sieht wie folgt aus:",
+        "Hinweis: Binärdaten werden durch kommagetrennte Hexadezimalzahlen dargestellt, die auf hex: folgen.",
+        "Sie können das Befehlszeilentool reg.exe verwenden, um automatische Backups in Batch-Skripten zu implementieren.",
+        "Anstatt nur einfachen Text zu verwenden, ist es auch möglich, die Objektorientierung von PowerShell zu nutzen, um Registrierungsobjekte zu exportieren und im XML-Format (CliXML) zu speichern. Dadurch können Sie bei der Wiederherstellung Typinformationen beibehalten, anstatt sich auf das Parsen von Zeichenfolgen zu verlassen.",
+        "Wenn unklar ist, wo ein Programm in die Registrierung schreibt, oder wenn Sie nach der Ursache für „Access Denied“ suchen, ist der von Microsoft kostenlos bereitgestellte Process Monitor (Procmon) aus den Sysinternals-Tools extrem leistungsstark. Mit Procmon können Sie alle Registrierungs-API-Aufrufe (wie RegOpenKey, RegQueryValue, RegSetValue), die im Betriebssystem auftreten, in Echtzeit erfassen und Fehler mit erweiterten Filtern wie den folgenden beheben:",
+        "Dadurch können Sie in Sekundenbruchteilen identifizieren, welchem Schlüssel die ACL-Einstellungen fehlen oder ob er fälschlicherweise an WOW6432Node umgeleitet wird.",
+        "Abschließend fassen wir wichtige Designprinzipien und Best Practices im Umgang mit der Registrierung zusammen.",
+        "Die Windows-Registrierung ist ein leistungsstarkes und komplexes Basissystem, das alle Verhaltensweisen des Betriebssystems und der Anwendungseinstellungen integriert verwaltet. Chaotisches manuelles Bearbeiten birgt ein hohes mathematisch nachgewiesenes Risiko für Systembeschädigungen. Daher ist es im modernen Systemmanagement und in der Entwicklung unerlässlich, programmierbare Mittel wie PowerShell oder C# zu verwenden, um das Konfigurationsmanagement nach den Prinzipien von Infrastructure as Code auf sichere, testbare und reproduzierbare Weise durchzuführen. Bitte nutzen Sie das in diesem Artikel erläuterte tiefe Verständnis der Architektur und die Implementierungsmuster, um eine robustere und sicherere Windows-Umgebung aufzubauen."
+      ],
+      "code": [
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n",
+        "# 1. Existenzprüfung (Read)\n$keyPath = \"HKCU:\\Software\\MyCustomApp\"\nif (-Not (Test-Path -Path $keyPath)) {\n    # 2. Erstellen eines neuen Schlüssels (Create)\n    New-Item -Path \"HKCU:\\Software\" -Name \"MyCustomApp\" -Force | Out-Null\n    Write-Host \"Schlüssel erstellt.\"\n}\n\n# 3. Schreiben/Aktualisieren eines Wertes (Update) - Schreibt 1 als REG_DWORD\nSet-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Value 1 -Type DWord\n\n# 4. Lesen eines Wertes (Read)\n$debugFlag = (Get-ItemProperty -Path $keyPath).EnableDebug\nWrite-Host \"Aktuelles Debug-Flag: $debugFlag\"\n\n# 5. Löschen eines Wertes (Delete)\nRemove-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Force\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n",
+        "$envKey = \"HKCU:\\Environment\"\n$newPath = \"C:\\tools\\bin\"\n\n# Aktuellen PATH lesen (Fehler unterdrücken, um sicher zu erhalten)\n$currentPathInfo = Get-ItemProperty -Path $envKey -Name \"Path\" -ErrorAction SilentlyContinue\n$currentPath = if ($currentPathInfo) { $currentPathInfo.Path } else { \"\" }\n\n# Mit regulärem Ausdruck prüfen, ob es bereits enthalten ist\nif ($currentPath -notmatch [regex]::Escape($newPath)) {\n    # Wenn am Ende kein Semikolon steht, hinzufügen und verbinden\n    if ($currentPath -and $currentPath -notmatch \";$\") {\n        $currentPath += \";\"\n    }\n    $updatedPath = $currentPath + $newPath\n    \n    # Als REG_EXPAND_SZ-Typ schreiben (Wichtig)\n    Set-ItemProperty -Path $envKey -Name \"Path\" -Value $updatedPath -Type ExpandString\n    Write-Host \"PATH-Umgebungsvariable aktualisiert: $newPath\"\n    \n    # Ausführende Prozesse über Änderungen der Umgebungsvariablen benachrichtigen (WM_SETTINGCHANGE)\n    # Dadurch wird die Änderung in neuen Explorern usw. ohne Neustart wirksam\n    [Environment]::SetEnvironmentVariable(\"Path\", $updatedPath, [EnvironmentVariableTarget]::User)\n} else {\n    Write-Host \"PATH ist bereits hinzugefügt.\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n",
+        "# Das Menü, wenn Sie mit der rechten Maustaste auf den Hintergrund (den leeren Bereich) eines Verzeichnisses klicken\n$menuPath = \"HKCR:\\Directory\\Background\\shell\\OpenWithMyIDE\"\n$commandPath = \"$menuPath\\command\"\n\ntry {\n    # Übergeordneten Schlüssel für das Menüelement erstellen\n    New-Item -Path $menuPath -Force -ErrorAction Stop | Out-Null\n    \n    # Anzeigenamen im Wert (Standard) festlegen\n    Set-ItemProperty -Path $menuPath -Name \"(default)\" -Value \"In My IDE öffnen\" -Type String\n    \n    # Symbol festlegen (Optional)\n    Set-ItemProperty -Path $menuPath -Name \"Icon\" -Value \"C:\\Program Files\\MyIDE\\ide.exe,0\" -Type String\n\n    # command-Unterschlüssel erstellen und die auszuführende Befehlszeile festlegen\n    # %V ist eine Variable, die zum Pfad des aktuellen Verzeichnisses erweitert wird\n    New-Item -Path $commandPath -Force -ErrorAction Stop | Out-Null\n    Set-ItemProperty -Path $commandPath -Name \"(default)\" -Value \"`\"C:\\Program Files\\MyIDE\\ide.exe`\" `\"%V`\"\" -Type String\n\n    Write-Host \"Kontextmenü wurde hinzugefügt.\"\n} catch {\n    Write-Error \"Ändern der Registrierung fehlgeschlagen. Überprüfen Sie, ob Sie es mit Administratorrechten ausführen. Fehler: $_\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n\n26\n\n27\n\n28\n\n29\n\n30\n\n31\n\n32\n\n33\n\n34\n\n35\n\n36\n\n37\n\n38\n\n39\n\n40\n\n41\n\n42\n\n43\n\n44\n\n45\n\n46\n\n47\n\n48\n\n49\n\n50\n\n51\n\n52\n\n53\n\n54\n",
+        "using System;\nusing System.Security;\nusing Microsoft.Win32;\n\nclass RegistryEditor\n{\n    static void Main()\n    {\n        // Pfad unter HKLM (erfordert Administratorrechte)\n        string keyPath = @\"SOFTWARE\\MyEnterpriseApp\\Settings\";\n\n        // Native 64-Bit-Ansicht durch Angabe von RegistryView.Registry64 öffnen\n        // Verwenden der using-Anweisung, um sicherzustellen, dass das Handle des Registrierungsschlüssels (nicht verwaltete Ressource) zuverlässig freigegeben (Disposed) wird\n        try\n        {\n            using (RegistryKey baseKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))\n            {\n                // Schlüssel mit Schreibberechtigung (writable: true) öffnen. Erstellen, falls nicht vorhanden.\n                using (RegistryKey subKey = baseKey.CreateSubKey(keyPath, writable: true))\n                {\n                    if (subKey != null)\n                    {\n                        // Wert als REG_DWORD schreiben\n                        subKey.SetValue(\"MaxConnections\", 100, RegistryValueKind.DWord);\n                        \n                        // Wert als REG_SZ schreiben\n                        subKey.SetValue(\"ApiEndpoint\", \"https://api.example.com\", RegistryValueKind.String);\n                        \n                        // Byte-Array als REG_BINARY schreiben\n                        byte[] secretData = { 0x01, 0x02, 0x0A, 0xFF };\n                        subKey.SetValue(\"BinarySecret\", secretData, RegistryValueKind.Binary);\n                        \n                        Console.WriteLine(\"Schreiben in die Registrierung erfolgreich.\");\n                    }\n                }\n            }\n        }\n        catch (UnauthorizedAccessException ex)\n        {\n            // Tritt oft auf, wenn nicht als Administrator ausgeführt wird\n            Console.WriteLine($\"Berechtigungsfehler: Bitte führen Sie das Programm \\\"Als Administrator ausführen\\\" aus. Details: {ex.Message}\");\n        }\n        catch (SecurityException ex)\n        {\n            // Wenn durch die Codezugriffssicherheit (CAS) von .NET blockiert\n            Console.WriteLine($\"Sicherheitsausnahme: {ex.Message}\");\n        }\n        catch (Exception ex)\n        {\n            // Andere unerwartete E/A-Fehler usw.\n            Console.WriteLine($\"Unerwarteter Fehler: {ex.Message}\");\n        }\n    }\n}\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n",
+        "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Software\\MyCustomApp]\n\"EnableDebug\"=dword:00000001\n\"ApiEndpoint\"=\"https://api.example.com\"\n\"BinaryData\"=hex:01,02,0a,ff\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n",
+        "REM Den angegebenen Schlüssel sichern (Unterschlüssel werden auch rekursiv exportiert)\nreg export HKLM\\SOFTWARE\\MyEnterpriseApp C:\\backup\\myapp_backup.reg /y\n\nREM Sicherung wiederherstellen\nreg import C:\\backup\\myapp_backup.reg\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n",
+        "# Backup abrufen (Eigenschaften als XML speichern)\nGet-ItemProperty -Path \"HKCU:\\Software\\MyCustomApp\" | Export-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n\n# Wiederherstellungskonzept\n$backup = Import-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n# Da in $backup das wiederhergestellte benutzerdefinierte PSObject gespeichert ist,\n# können Sie eine Logik aufbauen, um über dessen Eigenschaften zu schleifen und sie mit Set-ItemProperty erneut anzuwenden.\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-registry-safe-programmable-editing/img/eyecatch_hu2430515421054564890.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/de/categories/windows/"
+        },
+        {
+          "text": "Betriebsverwaltung",
+          "path": "/de/categories/administration/"
+        },
+        {
+          "text": "Programmierung",
+          "path": "/de/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "ACID",
+          "path": "/de/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "B-Tree",
+          "path": "/de/p/b-tree-database-index-theory/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/de/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Transaction",
+          "path": "/de/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/de/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    },
+    "after": {
+      "lists": [
+        "SYSTEM: Wichtige Einstellungen, die für den Start des Betriebssystems erforderlich sind (Treiber, Dienste, Startkonfiguration usw.).",
+        "SOFTWARE: Systemweite Einstellungen für installierte Software. Hier befinden sich die meisten Einstellungen von Drittanbieter-Anwendungen.",
+        "SAM: Security Accounts Manager (lokale Benutzerkonten und Passwort-Hashes).",
+        "SECURITY: Lokale Sicherheitsrichtlinien und Rechtezuweisungen.",
+        "DEFAULT: Das Standardbenutzerprofil (Vorlage zum Erstellen neuer Benutzer).",
+        "NTUSER.DAT: Die Grundeinstellungen des jeweiligen Benutzers (der Großteil von HKCU).",
+        "UsrClass.dat: Die Dateierweiterungszuordnungen des jeweiligen Benutzers (befindet sich in AppData\\Local\\Microsoft\\Windows).",
+        "HKEY_LOCAL_MACHINE (HKLM): Speichert System- und Softwareeinstellungen, die für den gesamten Computer (alle Benutzer) gelten. Änderungen erfordern Administratorrechte.",
+        "HKEY_CURRENT_USER (HKCU): Speichert Einstellungen, die spezifisch für den aktuell angemeldeten Benutzer sind. In Wirklichkeit ist dies keine unabhängige Datenbank, sondern lediglich ein symbolischer Link (Alias) zum entsprechenden SID-Schlüssel (Security Identifier) des Benutzers unter HKEY_USERS.",
+        "HKEY_CLASSES_ROOT (HKCR): Speichert Dateierweiterungszuordnungen, Registrierungsinformationen für COM-Klassen (Component Object Model) und Shell-Erweiterungen. Dieser Schlüssel ist speziell; er ist eine virtuelle Ansicht, bei der der Configuration Manager HKLM\\SOFTWARE\\Classes (systemweit) und HKCU\\Software\\Classes (aktueller Benutzer) zusammenführt (mergt). Bei Konflikten haben die benutzerspezifischen Einstellungen (HKCU) Vorrang.",
+        "HKEY_USERS (HKU): Speichert die Einstellungen aller Benutzerprofile auf dem System (die aktuell in den Speicher geladen sind). Sie sind basierend auf SIDs hierarchisch angeordnet.",
+        "HKEY_CURRENT_CONFIG (HKCC): Einstellungen bezüglich des aktuellen Hardwareprofils. In Wirklichkeit ein Link zu HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles\\Current.",
+        "REG_SZ (Zeichenfolgenwert): Der häufigste Datentyp. Speichert eine NULL-terminierte Unicode-Zeichenfolge (UTF-16LE). Wird für Dateipfade, URLs, UI-Anzeigenamen usw. verwendet.",
+        "REG_DWORD (Wert eines 32-Bit-Wertes): Ein vorzeichenloser 32-Bit (4 Byte) Ganzzahlwert. Wird häufig für boolesche Werte (0=Deaktiviert, 1=Aktiviert), Timeout-Werte in Millisekunden und das Setzen von Fehlercodes verwendet. Da Windows eine Little-Endian-Architektur ist, werden die Bytes auf der Festplatte beginnend mit dem niederwertigsten Byte gespeichert (z. B. wird 0x12345678 als 78 56 34 12 gespeichert).",
+        "REG_QWORD (Wert eines 64-Bit-Wertes): Ein 64-Bit (8 Byte) Ganzzahlwert. Mit der Verbreitung von 64-Bit-Architekturen wird er verwendet, um riesige Zahlen (wie Datenträgerkontingente oder große Speichergrößenangaben) und zeigergroße Einstellungen zu speichern.",
+        "REG_MULTI_SZ (Wert der mehrteiligen Zeichenfolge): Ein Format, das mehrere NULL-terminierte Zeichenfolgen nacheinander speichert und am Ende ein weiteres leeres NULL-Terminierungszeichen (Double NULL) hinzufügt, um es abzuschließen. Eignet sich zum Speichern von Array-ähnlichen Daten wie Listen von IP-Adressen, Listen von abhängigen Diensten oder Bindungsreihenfolgen.",
+        "REG_EXPAND_SZ (Wert der erweiterbaren Zeichenfolge): Ein spezieller Zeichenfolgentyp, der nicht erweiterte Umgebungsvariablen wie %USERPROFILE% oder %SystemRoot% enthält. Wenn eine Anwendung ihn über die API RegQueryValueEx liest oder die API ExpandEnvironmentStrings aufruft, wird er vom Betriebssystem dynamisch in den tatsächlichen absoluten Pfad aufgelöst.",
+        "REG_BINARY (Binärwert): Ein beliebiger roher Binärdatenstrom. Speichert verschlüsselte Passwörter (wie LSA Secrets), digitale Zertifikate und anwendungsspezifische komplexe Strukturen oder serialisierte Daten.",
+        "REG_NONE: Daten mit undefiniertem Typ. Sehr selten, wird aber manchmal für reservierte Bereiche von Verschlüsselungsschlüsseln verwendet.",
+        "REG_RESOURCE_LIST / REG_FULL_RESOURCE_DESCRIPTOR: Fortgeschrittene, nur für den Kernel bestimmte Typen, die von Gerätetreibern verwendet werden, um Zuweisungsinformationen für Hardwareressourcen (IRQs, I/O-Ports, DMA-Kanäle) aufzuzeichnen.",
+        "Process Name is powershell.exe",
+        "Operation begins with Reg",
+        "Result is ACCESS DENIED",
+        "Das Prinzip der geringsten Privilegien durchsetzen: Einstellungen für Anwendungen und Skripte sollten nach Möglichkeit immer unter dem Software-Schlüssel in HKCU (dem aktuellen Benutzer) gespeichert werden. Das Schreiben nach HKLM erfordert eine UAC-Rechteausweitung auf Administratorrechte, was die Angriffsfläche (Attack Surface) für Sicherheitsbedrohungen vergrößert und die Benutzererfahrung beeinträchtigt.",
+        "Überwachung (Auditing) aktivieren: Für sicherheitskritische Schlüssel (z. B. der Run-Schlüssel, der das Autostartverhalten steuert, oder Dienstkonfigurationsschlüssel) sollten Sie eine SACL (System Access Control List) konfigurieren, um im „Sicherheitsprotokoll“ in der Windows-Ereignisanzeige aufzuzeichnen (zu überwachen), wer Werte wann geändert oder gelöscht hat.",
+        "Umgang mit der Veraltung von Transaktionsfunktionen: Die Transaktionsfunktion der Registrierung (TxR) unter Verwendung des in Windows Vista eingeführten „Kernel Transaction Manager (KTM)“ gilt ab Windows 10 als veraltet (Deprecated). Es ist erforderlich, einen eigenen Backup- und Rollback-Mechanismus in der Anwendung zu implementieren (z. B. den ursprünglichen Wert vor Änderungen lesen und im Speicher behalten).",
+        "Vorsicht vor Konflikten mit Gruppenrichtlinien (GPO): Bereiche wie HKLM\\SOFTWARE\\Policies und HKCU\\Software\\Policies sollten durch Active Directory-Gruppenrichtlinien zentral verwaltet werden. Wenn Sie diese Schlüssel direkt aus einem Skript umschreiben, werden sie im nächsten Aktualisierungszyklus für Gruppenrichtlinien im Hintergrund (in der Regel alle 90 bis 120 Minuten) durch die Einstellungen des Domänencontrollers zwangsüberschrieben, weshalb die Einstellungen nicht dauerhaft bleiben."
+      ],
+      "headings": [
+        {
+          "id": "grundlagen-der-windows-registrierung-und-methoden-zur-programmierbaren-sicheren-bearbeitung",
+          "text": "Grundlagen der Windows-Registrierung und Methoden zur programmierbaren, sicheren Bearbeitung"
+        },
+        {
+          "id": "1-einführung-geschichte-und-entwicklung-der-windows-registrierung",
+          "text": "1. Einführung: Geschichte und Entwicklung der Windows-Registrierung"
+        },
+        {
+          "id": "2-die-tiefe-der-architektur-die-realität-der-registrierungsstruktur-hives-und-speicherzuordnung",
+          "text": "2. Die Tiefe der Architektur: Die Realität der Registrierungsstruktur (Hives) und Speicherzuordnung"
+        },
+        {
+          "id": "3-die-hierarchische-struktur-von-registrierungsschlüsseln-und--werten",
+          "text": "3. Die hierarchische Struktur von Registrierungsschlüsseln und -werten"
+        },
+        {
+          "id": "4-datentypen-der-registrierung-detaillierte-erklärung",
+          "text": "4. Datentypen der Registrierung (Detaillierte Erklärung)"
+        },
+        {
+          "id": "5-das-mathematische-modell-und-die-leistung-der-registrierung-im-betriebssystem",
+          "text": "5. Das mathematische Modell und die Leistung der Registrierung im Betriebssystem"
+        },
+        {
+          "id": "zeitkomplexität-der-suche-time-complexity",
+          "text": "Zeitkomplexität der Suche (Time Complexity)"
+        },
+        {
+          "id": "speicherbedarf-space-complexity",
+          "text": "Speicherbedarf (Space Complexity)"
+        },
+        {
+          "id": "6-risiken-manueller-bearbeitung-und-wahrscheinlichkeit-von-beschädigungen-die-die-systemstabilität-bedrohen",
+          "text": "6. Risiken manueller Bearbeitung und Wahrscheinlichkeit von Beschädigungen, die die Systemstabilität bedrohen"
+        },
+        {
+          "id": "mathematisches-modell-der-beschädigungswahrscheinlichkeit",
+          "text": "Mathematisches Modell der Beschädigungswahrscheinlichkeit"
+        },
+        {
+          "id": "7-registrierungsvirtualisierung-und-wow64-architektur",
+          "text": "7. Registrierungsvirtualisierung und WOW64-Architektur"
+        },
+        {
+          "id": "uac-registrierungsvirtualisierung-registry-virtualization",
+          "text": "UAC-Registrierungsvirtualisierung (Registry Virtualization)"
+        },
+        {
+          "id": "wow64-windows-32-bit-on-windows-64-bit-umleitung",
+          "text": "WOW64 (Windows 32-bit on Windows 64-bit) Umleitung"
+        },
+        {
+          "id": "8-programmierbare-sichere-bearbeitung-mit-powershell",
+          "text": "8. Programmierbare sichere Bearbeitung mit PowerShell"
+        },
+        {
+          "id": "grundlegende-crud-operationen",
+          "text": "Grundlegende CRUD-Operationen"
+        },
+        {
+          "id": "praxisbeispiel-1-automatische-einrichtung-der-entwicklungsumgebung-hinzufügen-von-path-umgebungsvariablen",
+          "text": "Praxisbeispiel 1: Automatische Einrichtung der Entwicklungsumgebung (Hinzufügen von PATH-Umgebungsvariablen)"
+        },
+        {
+          "id": "praxisbeispiel-2-hinzufügen-einer-benutzerdefinierten-aktion-zum-kontextmenü",
+          "text": "Praxisbeispiel 2: Hinzufügen einer benutzerdefinierten Aktion zum Kontextmenü"
+        },
+        {
+          "id": "interne-sequenz-des-registrierungszugriffs-von-powershell",
+          "text": "Interne Sequenz des Registrierungszugriffs von PowerShell"
+        },
+        {
+          "id": "9-robuster-registrierungszugriff-mit-c-net",
+          "text": "9. Robuster Registrierungszugriff mit C# (.NET)"
+        },
+        {
+          "id": "10-sicherungs--und-wiederherstellungsmethoden-für-die-registrierung",
+          "text": "10. Sicherungs- und Wiederherstellungsmethoden für die Registrierung"
+        },
+        {
+          "id": "backup-und-import-mit-reg-dateien",
+          "text": "Backup und Import mit .reg-Dateien"
+        },
+        {
+          "id": "fortgeschrittenere-sicherungsmethoden-mit-powershell",
+          "text": "Fortgeschrittenere Sicherungsmethoden mit PowerShell"
+        },
+        {
+          "id": "11-fehlerbehebung-mit-sysinternals-process-monitor-procmon",
+          "text": "11. Fehlerbehebung mit Sysinternals Process Monitor (Procmon)"
+        },
+        {
+          "id": "12-sicherheit-und-best-practices",
+          "text": "12. Sicherheit und Best Practices"
+        },
+        {
+          "id": "fazit",
+          "text": "Fazit"
+        }
+      ],
+      "paragraphs": [
+        "Im Windows-Betriebssystem ist die „Registrierung“ (Registry) eine riesige hierarchische Datenbank, die verschiedene Einstellungen für das System und die Anwendungen speichert. In diesem Artikel erklären wir die grundlegende Architektur der Windows-Registrierung sowie Methoden zur programmierbaren und sicheren Bearbeitung der Registrierung mithilfe von PowerShell und C# sehr detailliert.",
+        "In den frühen Versionen von Windows (Windows 3.x-Ära) wurden System- und Anwendungseinstellungen hauptsächlich in .ini-Dateien (Initialisierungsdateien) gespeichert. Allerdings verteilten sich unzählige INI-Dateien für jede Anwendung über das gesamte System, was die Verwaltung extrem kompliziert machte. Da INI-Dateien zudem auf reinem Text basierten, war das Speichern von Binärdaten schwierig und es gab keinen Mechanismus zur Zugriffskontrolle (Sicherheit). Die Parsing-Geschwindigkeit von Dateien war ebenfalls langsam, weshalb sie ungeeignet waren, um umfangreiche Einstellungen zu speichern.",
+        "Um diese Probleme grundlegend zu lösen, wurde ab Windows NT und Windows 95 die „Registrierung“ als zentralisierte Einstellungsdatenbank ernsthaft eingeführt. Die Registrierung ist eine hierarchische Datenbank, die starke Typisierung, Unterstützung für Binärdaten und robuste Sicherheitsfunktionen durch Zugriffskontrolllisten (ACLs) bietet. Dadurch wurde es für alle Komponenten, vom Betriebssystem-Kernel bis hin zu Anwendungen im Benutzermodus, möglich, Einstellungen über eine einheitliche Schnittstelle (die Reg*-Funktionen der Win32-API) zu lesen und zu schreiben.",
+        "Bis hin zum modernen Windows 11 fungiert die Registrierung weiterhin als das Herzstück des Betriebssystems. Alle Metadaten, die für den Betrieb des Systems erforderlich sind – wie Hardwarekonfigurationen, Ladereihenfolge von Gerätetreibern, Desktop-Umgebung des Benutzers und die Liste der installierten Software –, werden in der Registrierung zentralisiert.",
+        "Obwohl die Registrierung logisch als eine riesige Baumstruktur erscheint, ist sie physisch in mehrere Dateien auf der Festplatte unterteilt, die als „Hives“ (Strukturen) bezeichnet werden. Dadurch werden systemweite Einstellungen von benutzerspezifischen Einstellungen getrennt, was ein effizientes Laden ermöglicht.",
+        "Die wichtigsten Hive-Dateien befinden sich normalerweise im Verzeichnis %SystemRoot%\\System32\\config.",
+        "Benutzerspezifische Hive-Dateien existieren als versteckte Dateien im Profilverzeichnis des Benutzers (z. B. C:\\Users\\Username).",
+        "Diese Dateien werden beim Systemstart vom „Configuration Manager (CM)“ des Kernels in den Paged-Pool-Speicher des Kernels gemappt. Der Configuration Manager ist eine Kernel-Modus-Komponente, die Lese- und Schreibanforderungen an die Registrierung verarbeitet.",
+        "Besonders bemerkenswert ist, dass nicht alle Registrierungsdaten auf der Festplatte existieren. Beispielsweise ist der Hive HARDWARE flüchtig (Volatile) und wird überhaupt nicht in Dateien auf der Festplatte gespeichert. Jedes Mal, wenn das Betriebssystem startet und der Plug-and-Play-Manager (PnP) Hardware erkennt, wird er dynamisch im Speicher neu aufgebaut.",
+        "Darüber hinaus implementieren moderne Windows-Versionen eine Transaktionsprotokollierung, um die Zuverlässigkeit der Registrierung zu erhöhen. Änderungen an den Hive-Dateien werden nicht direkt in die Datendateien geschrieben, sondern zuerst in Transaktionsprotokollen (.log1, .log2) aufgezeichnet. Dies verhindert Datenbeschädigungen (Corruption) im Falle eines unerwarteten Stromausfalls oder Systemabsturzes während des Schreibvorgangs und garantiert die Integrität der Datenbank in einer Form, die den ACID-Eigenschaften nahekommt.",
+        "Die Registrierung hat eine hierarchische Struktur, die einem Dateisystem sehr ähnlich ist. Der Wurzelknoten wird als „Stammschlüssel“ (Root Key) oder „Hive“ bezeichnet. Darunter befinden sich „Schlüssel“ (Keys), „Unterschlüssel“ (Subkeys) und schließlich die eigentlichen Daten, die „Werte“ (Values) genannt werden. Man kann es sich leicht so vorstellen, dass Schlüssel Verzeichnissen und Werte Dateien entsprechen.",
+        "Die wichtigsten Stammschlüssel werden in die folgenden fünf Kategorien unterteilt:",
+        "Die Visualisierung dieser komplexen hierarchischen Struktur und der Verknüpfungen sieht wie folgt aus:",
+        "Die „Werte“ in der Registrierung haben jeweils strikt definierte Datentypen. Wenn Sie die Registrierung programmierbar manipulieren, ist es unerlässlich, diese Typen richtig zu verstehen und Daten mit dem entsprechenden Typ zu schreiben. Das Schreiben mit einem falschen Typ führt dazu, dass Anwendungen Ausnahmen auslösen oder Funktionen des Betriebssystems nicht mehr funktionieren.",
+        "Da die Registrierung direkt an die Leistung des Betriebssystems (insbesondere Boot-Zeit und Initialisierungsgeschwindigkeit von Prozessen) gekoppelt ist, wird sie intern mithilfe einer fortschrittlichen Datenstruktur optimiert, die als „Cell Index“ bezeichnet wird und einem B-Baum (B-Tree) ähnelt.",
+        "Die Zeitkomplexität \n𝑇\nsearch\nT\nsearch\n\t​\n\n bei der Suche nach einem bestimmten Schlüssel (Pfad) innerhalb der Registrierung hängt von der Tiefe des Baums und der Anzahl der Knoten auf jeder Ebene ab. Die Komplexität beim Suchen eines Unterschlüssels der Tiefe \n𝑑\nd (z. B. für A\\B\\C\\D ist \n𝑑\n=\n4\nd=4) kann theoretisch wie folgt modelliert werden:",
+        "Hierbei ist \n𝐶\n𝑖\nC\ni\n\t​\n\n die Anzahl der untergeordneten Knoten (Unterschlüssel oder Werte) auf der Tiefe \n𝑖\ni, und \n𝐿\n𝑖\nL\ni\n\t​\n\n ist die Länge (Anzahl der Zeichen) der zu vergleichenden Zeichenfolge. Innerhalb der Hive-Datei, die das eigentliche Subjekt der Registrierung ist, wird die Liste der Unterschlüssel als Hash-Wert des Namens oder als alphabetisch sortierter Index beibehalten. Daher ist anstelle einer einfachen linearen Suche \n𝑂\n(\n𝐶\n𝑖\n)\nO(C\ni\n\t​\n\n) eine binäre Suche \n𝑂\n(\nlog\n⁡\n(\n𝐶\n𝑖\n)\n)\nO(log(C\ni\n\t​\n\n)) möglich, was selbst dann einen extrem schnellen Zugriff ermöglicht, wenn sich Zehntausende von Unterschlüsseln unter einem einzigen Schlüssel befinden.",
+        "Die Gesamtgröße der Registrierung (der belegte Platz auf der physischen Festplatte) wird als Summe jedes Hives berechnet.",
+        "𝑁\nℎ\nN\nh\n\t​\n\n ist die Anzahl der Schlüssel im Hive \nℎ\nh, \n𝑆\nkey_metadata\nS\nkey_metadata\n\t​\n\n ist die Größe der Metadaten pro Schlüssel (letzter Zeitstempel für Schreibvorgänge, Zeiger auf Sicherheitsbeschreibungen, Zeiger auf übergeordnete Schlüssel usw.), und \n𝑆\nvalue\n(\n𝑣\n)\nS\nvalue\n\t​\n\n(v) ist die Nutzlastgröße des Wertes \n𝑣\nv. Der Overhead \n𝑆\noverhead\nS\noverhead\n\t​\n\n durch Transaktionsprotokolle und nicht mehr benötigte leere Zellen (Fragmentierung) ist ebenfalls enthalten. Wenn unnötige Daten (wie Überreste von Software, die nicht vollständig deinstalliert wurde) über einen langen Zeitraum in der Registrierung belassen werden, erhöht sich dieser Speicherbedarf, was den Paged-Pool-Speicher des Betriebssystems belasten und zu Leistungseinbußen führen kann.",
+        "Die manuelle Bearbeitung mit dem Registrierungs-Editor (regedit.exe) sollte als letztes Mittel der Systemverwaltung betrachtet werden. Der Registrierung fehlt eine „Rückgängig“ (Undo)-Funktion, die man in gewöhnlichen Dokumenteneditoren findet, und Änderungen an Werten oder das Löschen von Schlüsseln werden über den Configuration Manager sofort im System widergespiegelt.",
+        "Insbesondere das irrtümliche Ändern oder Löschen von nur einem Zeichen in kritischen Schlüsseln, die für den Systemstart unerlässlich sind (z. B. Einstellungen für Festplattencontroller-Treiber unter HKLM\\SYSTEM\\CurrentControlSet\\Services oder der Wert Userinit in HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon), birgt das fatale Risiko, dass das Betriebssystem einen Blue Screen (BSoD) verursacht und nicht mehr booten kann oder nicht über den Anmeldebildschirm hinauskommt (Black Screen).",
+        "Betrachten wir die Wahrscheinlichkeit eines Systemausfalls, wenn Schlüssel in der Registrierung zufällig geändert oder gelöscht werden. Sei die Menge der kritischen Schlüssel, die für die ordnungsgemäße Funktion des Systems unerlässlich sind, \n𝐶\nC, und ihre Gesamtzahl \n𝑁\n𝑐\n=\n∣\n𝐶\n∣\nN\nc\n\t​\n\n=∣C∣. Sei die Gesamtzahl der Schlüssel in der gesamten Registrierung \n𝑁\ntotal\nN\ntotal\n\t​\n\n. Wenn zufällig \n𝑘\nk Schlüssel gelöscht oder zerstört werden, wird die Wahrscheinlichkeit \n𝑃\nfailure\nP\nfailure\n\t​\n\n, dass mindestens ein kritischer Schlüssel beschädigt wird, durch die Wahrscheinlichkeitsrechnung des Ziehens ohne Zurücklegen (Sampling without replacement) wie folgt ausgedrückt:",
+        "Die Gesamtzahl der Schlüssel in der Registrierung \n𝑁\ntotal\nN\ntotal\n\t​\n\n liegt in der Größenordnung von Hunderttausenden bis Millionen, aber auch \n𝑁\n𝑐\nN\nc\n\t​\n\n existiert in der Größenordnung von Zehntausenden. Mathematisch gesehen steigt die Ausfallwahrscheinlichkeit selbst bei zufälligen Operationen stark an, wenn \n𝑘\nk zunimmt. Darüber hinaus operieren Benutzer in der Praxis nicht „zufällig“, sondern manipulieren absichtlich Bereiche, die direkt mit Systemeinstellungen und dem Softwarebetrieb zusammenhängen (während sie auf Tutorial-Seiten usw. schauen), sodass die Wahrscheinlichkeit, einen kritischen Schlüssel zu berühren, weitaus höher ist als der oben genannte theoretische Wert.",
+        "Um die Kompatibilität mit Legacy-Anwendungen aufrechtzuerhalten, implementiert Windows einige fortschrittliche „Virtualisierungs“-Mechanismen (Umleitung) für den Registrierungszugriff. Die Programmierung ohne Verständnis dieser Mechanismen ist die Ursache für schwerwiegende Fehler.",
+        "Ab Windows Vista wurde die Benutzerkontensteuerung (UAC) eingeführt. Wenn eine alte Anwendung, die in der Windows XP-Ära erstellt wurde (und mit Standardbenutzerrechten läuft), versucht, in geschützte Schlüssel wie HKLM\\SOFTWARE zu schreiben, die eigentlich Administratorrechte erfordern, verhindert Windows Abstürze aufgrund von Zugriffsverweigerungsfehlern (Access Denied), indem es den Schreibvorgang heimlich in den virtuellen Speicher HKCU\\Software\\Classes\\VirtualStore\\MACHINE\\SOFTWARE im Benutzerprofil umleitet. Beim Lesen fügt es sowohl den ursprünglichen Speicherort als auch den virtuellen Speicher zusammen und gibt sie zurück. Dadurch kann die Anwendung ohne Erkennung eines Fehlers normal weiterlaufen. Wenn Sie jedoch ein Tool entwickeln, das systemweite Einstellungen programmierbar ändert, müssen Sie <requestedExecutionLevel level=\"requireAdministrator\" /> in der Manifestdatei angeben und diese Virtualisierung deaktivieren.",
+        "Wenn eine ältere 32-Bit-Anwendung auf einer 64-Bit-Version von Windows (dem aktuellen Mainstream) ausgeführt wird, werden bestimmte Registrierungsschlüssel automatisch isoliert und umgeleitet, um zu verhindern, dass die 32-Bit-App versehentlich native 64-Bit-Systemeinstellungen überschreibt oder inkompatible 64-Bit-DLLs lädt. Wenn beispielsweise eine 32-Bit-App versucht, auf HKLM\\SOFTWARE\\Vendor\\App zuzugreifen, leitet das Betriebssystem sie transparent an HKLM\\SOFTWARE\\WOW6432Node\\Vendor\\App um.",
+        "Beim Bearbeiten der Registrierung über ein PowerShell-Skript oder eine C#-Anwendung müssen Sie sich unbedingt bewusst sein, ob der ausführende Prozess selbst 32-Bit oder 64-Bit ist. Andernfalls wird das lästige Problem verursacht, dass „die geschriebenen Einstellungen im Explorer nicht sichtbar sind (an einer anderen Stelle geschrieben wurden)“.",
+        "Um das Risiko der manuellen Bearbeitung der Registrierung zu minimieren, besteht die moderne Best Practice darin, Vorgänge mit PowerShell-Skripten zu codieren (Infrastructure as Code) und Automatisierung, Reproduzierbarkeit und Testbarkeit sicherzustellen. PowerShell verfügt über einen „Registry Provider“, mit dem Sie die Registrierung transparent mit genau denselben Cmdlets (Get-ChildItem, Get-ItemProperty, New-Item usw.) bearbeiten können, mit denen Sie auch Dateisysteme (wie das Laufwerk C:) bearbeiten.",
+        "In PowerShell sind dedizierte PSDrives (ähnlich wie Laufwerksbuchstaben) wie HKLM: und HKCU: standardmäßig gemountet.",
+        "Das folgende Skript ist ein Automatisierungsbeispiel, das das Verzeichnis benutzerdefinierter Tools sicher zur Benutzerumgebungsvariablen PATH hinzufügt, wenn ein Entwickler einen neuen Windows-Computer einrichtet.",
+        "Dies ist ein Skript, das ein benutzerdefiniertes Element namens „In My IDE öffnen“ zum Kontextmenü hinzufügt, wenn Sie mit der rechten Maustaste auf eine bestimmte Datei oder ein bestimmtes Verzeichnis klicken.",
+        "Die interne Betriebssystemsequenz, wenn ein PowerShell-Skript die Registrierung ändert, wird unten gezeigt.",
+        "Wenn Sie von einer .NET-Anwendung (z. B. C#) auf die Registrierung zugreifen, verwenden Sie die Klassen Microsoft.Win32.Registry und RegistryKey. Der größte Vorteil bei der Verwendung von C# ist eine robuste Fehlerbehandlung durch starke Ausnahmebehandlung (try-catch), strikte Typprüfung und die Möglichkeit, explizit 32-Bit/64-Bit-Ansichten mit der RegistryView-Enumeration anzugeben.",
+        "Das folgende C#-Codebeispiel liest und schreibt die Registrierung auf der 64-Bit-Seite zuverlässig (wobei die WOW6432Node-Umleitung vermieden wird) in einer 64-Bit-Betriebssystemumgebung.",
+        "Das vom Betriebssystem zurückgegebene „Handle“, wenn ein Registrierungsschlüssel geöffnet wird, ist eine nicht verwaltete Ressource, die Arbeitsspeicher und Systemressourcen verbraucht. Daher ist es eine eiserne Regel bei der C#-Programmierung, using-Blöcke zu verwenden oder .Dispose() (oder .Close()) explizit im finally-Block aufzurufen, um Handle-Lecks sicher zu verhindern.",
+        "Selbst bei Automatisierung durch Skripte oder Programme ist es absolut unerlässlich, vor kritischen Änderungen ein Backup zu erstellen.",
+        "Die klassischste und universellste Methode ist der Export in eine .reg-Datei. Diese Datei ist eine textbasierte Datei mit einem eigenen Format, und ihre Struktur sieht wie folgt aus:",
+        "Hinweis: Binärdaten werden durch kommagetrennte Hexadezimalzahlen dargestellt, die auf hex: folgen.",
+        "Sie können das Befehlszeilentool reg.exe verwenden, um automatische Backups in Batch-Skripten zu implementieren.",
+        "Anstatt nur einfachen Text zu verwenden, ist es auch möglich, die Objektorientierung von PowerShell zu nutzen, um Registrierungsobjekte zu exportieren und im XML-Format (CliXML) zu speichern. Dadurch können Sie bei der Wiederherstellung Typinformationen beibehalten, anstatt sich auf das Parsen von Zeichenfolgen zu verlassen.",
+        "Wenn unklar ist, wo ein Programm in die Registrierung schreibt, oder wenn Sie nach der Ursache für „Access Denied“ suchen, ist der von Microsoft kostenlos bereitgestellte Process Monitor (Procmon) aus den Sysinternals-Tools extrem leistungsstark. Mit Procmon können Sie alle Registrierungs-API-Aufrufe (wie RegOpenKey, RegQueryValue, RegSetValue), die im Betriebssystem auftreten, in Echtzeit erfassen und Fehler mit erweiterten Filtern wie den folgenden beheben:",
+        "Dadurch können Sie in Sekundenbruchteilen identifizieren, welchem Schlüssel die ACL-Einstellungen fehlen oder ob er fälschlicherweise an WOW6432Node umgeleitet wird.",
+        "Abschließend fassen wir wichtige Designprinzipien und Best Practices im Umgang mit der Registrierung zusammen.",
+        "Die Windows-Registrierung ist ein leistungsstarkes und komplexes Basissystem, das alle Verhaltensweisen des Betriebssystems und der Anwendungseinstellungen integriert verwaltet. Chaotisches manuelles Bearbeiten birgt ein hohes mathematisch nachgewiesenes Risiko für Systembeschädigungen. Daher ist es im modernen Systemmanagement und in der Entwicklung unerlässlich, programmierbare Mittel wie PowerShell oder C# zu verwenden, um das Konfigurationsmanagement nach den Prinzipien von Infrastructure as Code auf sichere, testbare und reproduzierbare Weise durchzuführen. Bitte nutzen Sie das in diesem Artikel erläuterte tiefe Verständnis der Architektur und die Implementierungsmuster, um eine robustere und sicherere Windows-Umgebung aufzubauen."
+      ],
+      "code": [
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n",
+        "# 1. Existenzprüfung (Read)\n$keyPath = \"HKCU:\\Software\\MyCustomApp\"\nif (-Not (Test-Path -Path $keyPath)) {\n    # 2. Erstellen eines neuen Schlüssels (Create)\n    New-Item -Path \"HKCU:\\Software\" -Name \"MyCustomApp\" -Force | Out-Null\n    Write-Host \"Schlüssel erstellt.\"\n}\n\n# 3. Schreiben/Aktualisieren eines Wertes (Update) - Schreibt 1 als REG_DWORD\nSet-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Value 1 -Type DWord\n\n# 4. Lesen eines Wertes (Read)\n$debugFlag = (Get-ItemProperty -Path $keyPath).EnableDebug\nWrite-Host \"Aktuelles Debug-Flag: $debugFlag\"\n\n# 5. Löschen eines Wertes (Delete)\nRemove-ItemProperty -Path $keyPath -Name \"EnableDebug\" -Force\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n",
+        "$envKey = \"HKCU:\\Environment\"\n$newPath = \"C:\\tools\\bin\"\n\n# Aktuellen PATH lesen (Fehler unterdrücken, um sicher zu erhalten)\n$currentPathInfo = Get-ItemProperty -Path $envKey -Name \"Path\" -ErrorAction SilentlyContinue\n$currentPath = if ($currentPathInfo) { $currentPathInfo.Path } else { \"\" }\n\n# Mit regulärem Ausdruck prüfen, ob es bereits enthalten ist\nif ($currentPath -notmatch [regex]::Escape($newPath)) {\n    # Wenn am Ende kein Semikolon steht, hinzufügen und verbinden\n    if ($currentPath -and $currentPath -notmatch \";$\") {\n        $currentPath += \";\"\n    }\n    $updatedPath = $currentPath + $newPath\n    \n    # Als REG_EXPAND_SZ-Typ schreiben (Wichtig)\n    Set-ItemProperty -Path $envKey -Name \"Path\" -Value $updatedPath -Type ExpandString\n    Write-Host \"PATH-Umgebungsvariable aktualisiert: $newPath\"\n    \n    # Ausführende Prozesse über Änderungen der Umgebungsvariablen benachrichtigen (WM_SETTINGCHANGE)\n    # Dadurch wird die Änderung in neuen Explorern usw. ohne Neustart wirksam\n    [Environment]::SetEnvironmentVariable(\"Path\", $updatedPath, [EnvironmentVariableTarget]::User)\n} else {\n    Write-Host \"PATH ist bereits hinzugefügt.\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n",
+        "# Das Menü, wenn Sie mit der rechten Maustaste auf den Hintergrund (den leeren Bereich) eines Verzeichnisses klicken\n$menuPath = \"HKCR:\\Directory\\Background\\shell\\OpenWithMyIDE\"\n$commandPath = \"$menuPath\\command\"\n\ntry {\n    # Übergeordneten Schlüssel für das Menüelement erstellen\n    New-Item -Path $menuPath -Force -ErrorAction Stop | Out-Null\n    \n    # Anzeigenamen im Wert (Standard) festlegen\n    Set-ItemProperty -Path $menuPath -Name \"(default)\" -Value \"In My IDE öffnen\" -Type String\n    \n    # Symbol festlegen (Optional)\n    Set-ItemProperty -Path $menuPath -Name \"Icon\" -Value \"C:\\Program Files\\MyIDE\\ide.exe,0\" -Type String\n\n    # command-Unterschlüssel erstellen und die auszuführende Befehlszeile festlegen\n    # %V ist eine Variable, die zum Pfad des aktuellen Verzeichnisses erweitert wird\n    New-Item -Path $commandPath -Force -ErrorAction Stop | Out-Null\n    Set-ItemProperty -Path $commandPath -Name \"(default)\" -Value \"`\"C:\\Program Files\\MyIDE\\ide.exe`\" `\"%V`\"\" -Type String\n\n    Write-Host \"Kontextmenü wurde hinzugefügt.\"\n} catch {\n    Write-Error \"Ändern der Registrierung fehlgeschlagen. Überprüfen Sie, ob Sie es mit Administratorrechten ausführen. Fehler: $_\"\n}\n",
+        " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n\n26\n\n27\n\n28\n\n29\n\n30\n\n31\n\n32\n\n33\n\n34\n\n35\n\n36\n\n37\n\n38\n\n39\n\n40\n\n41\n\n42\n\n43\n\n44\n\n45\n\n46\n\n47\n\n48\n\n49\n\n50\n\n51\n\n52\n\n53\n\n54\n",
+        "using System;\nusing System.Security;\nusing Microsoft.Win32;\n\nclass RegistryEditor\n{\n    static void Main()\n    {\n        // Pfad unter HKLM (erfordert Administratorrechte)\n        string keyPath = @\"SOFTWARE\\MyEnterpriseApp\\Settings\";\n\n        // Native 64-Bit-Ansicht durch Angabe von RegistryView.Registry64 öffnen\n        // Verwenden der using-Anweisung, um sicherzustellen, dass das Handle des Registrierungsschlüssels (nicht verwaltete Ressource) zuverlässig freigegeben (Disposed) wird\n        try\n        {\n            using (RegistryKey baseKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))\n            {\n                // Schlüssel mit Schreibberechtigung (writable: true) öffnen. Erstellen, falls nicht vorhanden.\n                using (RegistryKey subKey = baseKey.CreateSubKey(keyPath, writable: true))\n                {\n                    if (subKey != null)\n                    {\n                        // Wert als REG_DWORD schreiben\n                        subKey.SetValue(\"MaxConnections\", 100, RegistryValueKind.DWord);\n                        \n                        // Wert als REG_SZ schreiben\n                        subKey.SetValue(\"ApiEndpoint\", \"https://api.example.com\", RegistryValueKind.String);\n                        \n                        // Byte-Array als REG_BINARY schreiben\n                        byte[] secretData = { 0x01, 0x02, 0x0A, 0xFF };\n                        subKey.SetValue(\"BinarySecret\", secretData, RegistryValueKind.Binary);\n                        \n                        Console.WriteLine(\"Schreiben in die Registrierung erfolgreich.\");\n                    }\n                }\n            }\n        }\n        catch (UnauthorizedAccessException ex)\n        {\n            // Tritt oft auf, wenn nicht als Administrator ausgeführt wird\n            Console.WriteLine($\"Berechtigungsfehler: Bitte führen Sie das Programm \\\"Als Administrator ausführen\\\" aus. Details: {ex.Message}\");\n        }\n        catch (SecurityException ex)\n        {\n            // Wenn durch die Codezugriffssicherheit (CAS) von .NET blockiert\n            Console.WriteLine($\"Sicherheitsausnahme: {ex.Message}\");\n        }\n        catch (Exception ex)\n        {\n            // Andere unerwartete E/A-Fehler usw.\n            Console.WriteLine($\"Unerwarteter Fehler: {ex.Message}\");\n        }\n    }\n}\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n",
+        "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Software\\MyCustomApp]\n\"EnableDebug\"=dword:00000001\n\"ApiEndpoint\"=\"https://api.example.com\"\n\"BinaryData\"=hex:01,02,0a,ff\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n",
+        "REM Den angegebenen Schlüssel sichern (Unterschlüssel werden auch rekursiv exportiert)\nreg export HKLM\\SOFTWARE\\MyEnterpriseApp C:\\backup\\myapp_backup.reg /y\n\nREM Sicherung wiederherstellen\nreg import C:\\backup\\myapp_backup.reg\n",
+        "1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n",
+        "# Backup abrufen (Eigenschaften als XML speichern)\nGet-ItemProperty -Path \"HKCU:\\Software\\MyCustomApp\" | Export-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n\n# Wiederherstellungskonzept\n$backup = Import-Clixml -Path \"C:\\backup\\reg_backup.xml\"\n# Da in $backup das wiederhergestellte benutzerdefinierte PSObject gespeichert ist,\n# können Sie eine Logik aufbauen, um über dessen Eigenschaften zu schleifen und sie mit Set-ItemProperty erneut anzuwenden.\n"
+      ],
+      "images": [
+        {
+          "src": "/p/windows-registry-safe-programmable-editing/img/eyecatch_hu2430515421054564890.jpg",
+          "loaded": true
+        }
+      ],
+      "math": 25,
+      "mathErrors": 0,
+      "diagrams": 3,
+      "diagramErrors": 0,
+      "categories": [
+        {
+          "text": "Windows",
+          "path": "/de/categories/windows/"
+        },
+        {
+          "text": "Betriebsverwaltung",
+          "path": "/de/categories/administration/"
+        },
+        {
+          "text": "Programmierung",
+          "path": "/de/categories/programming/"
+        }
+      ],
+      "languages": [
+        "ar",
+        "ar",
+        "de",
+        "de",
+        "en",
+        "en",
+        "es",
+        "es",
+        "fr",
+        "fr",
+        "hi",
+        "hi",
+        "id",
+        "id",
+        "ja",
+        "ja",
+        "ko",
+        "ko",
+        "pt",
+        "pt",
+        "ru",
+        "ru",
+        "x-default",
+        "x-default",
+        "zh-cn",
+        "zh-cn",
+        "zh-tw",
+        "zh-tw"
+      ],
+      "links": [
+        {
+          "text": "Windows NT",
+          "path": "/de/p/windows-os-history-architecture/",
+          "host": "127.0.0.1"
+        },
+        {
+          "text": "ACID",
+          "path": "/de/p/rdbms-transaction-acid-isolation-level-lock/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "B-Tree",
+          "path": "/de/p/b-tree-database-index-theory/",
+          "host": "kenji.blog"
+        },
+        {
+          "text": "Infrastructure as Code",
+          "path": "/de/p/iac-infrastructure-as-code-terraform/",
+          "host": "kenji.blog"
+        }
+      ],
+      "brokenToc": [],
+      "mobileOverflow": false
+    }
+  }
+]

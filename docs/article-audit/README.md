@@ -100,3 +100,21 @@ iOS・macOS・Windowsの39ページに91リンク追加。カテゴリーID・�
 上流971ec1806までfast-forwardで保持。差分はrequest_indexing.pyの8行のみでHugo入力に変更なし。索引登録スクリプトは実行しない。既存のpt翻訳等の警告は残る。記事への計画再適用は禁止。
 
 次は020 Windowsレジストリ記事。日本語だけ全文確認済み、残る12言語は未読。誤リンク・重複リンク・見出しの旧自己リンクについて記録済み。まだ編集していない。全文確認累計196ページ。今回39ページを fcb56a0e9e3bda72b93c3acbdc54013a6599a3cb でorigin/mainへ通常pushし、リモートSHA一致を確認。公開済み累計195ページ（変更不要33ページ含む）。全監査は未完了。
+
+## 現在の再開位置（020〜023、2026-10-20）
+
+公開済み195ページ、本文確認済み206ページ。Windowsレジストリはja/en/de/fr/es/pt/id/ko/zh-cn/zh-tw/ruを全文確認済み、ar/hiは未読。全監査は未完了。対象一覧はinventory.jsonを継続使用し、開始時点の範囲を拡大しない。
+
+020の日本語・英語・ドイツ語は適用済み、未push。Windows NTリンク3件追加、誤リンク・重複リンク12件と壊れた見出し自己リンク2件を解除し、見出しIDを保持。日本語の既存ソート404は、導入確認済みのsorting-algorithms-visualized-bubble-quick-mergeへURLのみ修復。カテゴリwindows/administration/programmingを維持。
+
+保護スクリプトはインラインXMLコード例とコード中のドル記号を実HTML・本文数式と区別し、コード自体は不変性比較で保護する。35テスト成功。実効markupの事前比較で3ページのHTMLはリンク以外一致。020-independent-source-proof.jsonで、変更前バイト列へのレビュー済み操作だけから現在の3ページを完全再現できること、Frontmatter・コード・数式・Mermaidの不変性、SHA一致を確認済み。
+
+初回Hugo成功634945 ms。表示比較で既存ソートURLの404を検出し、020-url-repair.jsonのとおり修復したため最終ビルドを実施中。reviewed_url_repairsは個別修復の記録であり適用機能ではない。020計画は再適用しない。
+
+最終Hugoは成功（終了コード0、592246 ms）。3ページのブラウザー比較成功、英語モバイル画像を目視確認済み。一時ディレクトリkenji-article-audit内のbuild-020-final.log/.exitを確認し、終了確認なしに再起動しない。表示検証はsession7963で成功待ち。check-020.cjs／browser-020.jsonで全3ページの比較成功を確認してからcommit/pushする。ローカルサーバーは8875=session92007、8878=session4517。変更前ソースsources-before-020とbaseline表示は保存済み。索引登録スクリプトは実行せず、scripts/__pycache__はステージしない。
+
+021-windows-registry-west-four.jsonはfr/es/pt/idの4リンク追加・8リンク解除、022-windows-registry-east-three.jsonはko/zh-cn/zh-twの3リンク追加・4重複リンク解除、023-windows-registry-russian.jsonはruのNT/B-деревоの2リンク追加・末尾IaC1リンク解除。すべてdry-run成功、記事には未適用。NTリンク先は019で全文確認済み。ロシア語B-treeリンク先は導入・定義確認済み（対象記事全体の監査完了を意味しない）。
+
+次は020最終ビルド・表示検証・pushを完了し、その後021以降の変更前表示を保存して順に適用する。レジストリ残りar/hiの全文確認も続ける。既存の技術的主張や翻訳品質の問題は別の編集課題として記録し、本リンク監査では本文を改変しない。
+
+020は全検証成功、commit/push準備完了。検証ログと表示比較結果を保存済み。

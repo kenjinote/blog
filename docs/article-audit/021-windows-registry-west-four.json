@@ -1,0 +1,103 @@
+{
+  "batch": "021-windows-registry-west-four",
+  "status": "reviewed; dry-run passed; not applied",
+  "review": "Full fr/es/pt/id bodies reviewed; NT history references are direct, targets reviewed in batch 019. Remove repeated concluding IaC and misleading KTM Transaction links. Preserve prose, categories, code, math and diagrams.",
+  "articles": [
+    {
+      "path": "content/post/windows_registry/index.fr.md",
+      "source_sha256": "78f6a74e087e1baee0ede954327b2b2e1614add3dbbdee8f12af120c793664a4",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)",
+          "context": "Le Registre Windows est un système fondamental puissant et complexe qui gère de manière intégrée tous les comportements du système d'exploitation et les paramètres des applications. Les modifications manuelles non structurées comportent un risque très élevé de corruption du système, prouvé mathématiquement. C'est pourquoi, dans la gestion système et le développement modernes, il est essentiel de configurer et de gérer l'infrastructure de manière sûre, testable et reproductible à l'aide de méthodes programmables telles que PowerShell et C#, en adhérant aux principes de l'[Infrastructure as Code](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/). Utilisez la compréhension approfondie de l'architecture et les modèles d'implémentation expliqués dans cet article pour vous orienter vers la construction d'environnements Windows plus robustes et sécurisés.",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "Windows NT",
+          "context": "Pour résoudre fondamentalement ces problèmes, à partir de Windows NT et Windows 95, le « Registre » a été adopté à grande échelle en tant que base de données de configuration centralisée. Le registre est une base de données hiérarchisée qui offre un typage fort, la prise en charge des données binaires et de solides fonctionnalités de sécurité via des listes de contrôle d'accès (ACL). Cela a permis à tous les composants, du noyau du système d'exploitation aux applications de l'espace utilisateur, de lire et d'écrire des paramètres via une interface unifiée (l'ensemble des fonctions `Reg*` de l'API Win32).",
+          "target": "content/post/windows-os-history-architecture/index.fr.md"
+        }
+      ],
+      "category_decision": "Retain translated windows/administration/programming: OS configuration and programmatic maintenance."
+    },
+    {
+      "path": "content/post/windows_registry/index.es.md",
+      "source_sha256": "09ff3b021349341d22e0c3e971a7c14512fc76a24e762dfea20f3e1992bf7f0e",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/)",
+          "context": "El Registro de Windows es un sistema base poderoso y complejo que gestiona de manera integrada todos los comportamientos del sistema operativo y las configuraciones de las aplicaciones. La edición manual desordenada conlleva un alto riesgo de corrupción del sistema que ha sido comprobado matemáticamente. Por lo tanto, en el desarrollo y la administración de sistemas modernos es esencial realizar una gestión de la configuración de forma segura, verificable y reproducible siguiendo el principio de [Infrastructure as Code](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/), empleando medios programables como PowerShell o C#. Utiliza la profunda comprensión de la arquitectura y los patrones de implementación explicados en este artículo para intentar construir entornos de Windows más sólidos y seguros.",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Transaction](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/)",
+          "context": "3. **Adaptarse a la desaprobación de funciones de transacciones**: La funcionalidad de transacciones en el registro (TxR) utilizando el Kernel [Transaction](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) Manager (KTM), introducida en Windows Vista, está obsoleta (Deprecated) a partir de Windows 10. Es necesario que el lado de la aplicación implemente sus propios mecanismos de copia de seguridad y retroceso (rollback) (por ejemplo, leyendo el valor original antes del cambio y manteniéndolo en memoria).",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "Windows NT",
+          "context": "Para resolver estos problemas de manera fundamental, a partir de Windows NT y Windows 95, se adoptó plenamente el \"Registro\" como una base de datos de configuración centralizada. El registro es una base de datos jerárquica que proporciona un tipado fuerte, soporte para datos binarios y características robustas de seguridad a través de listas de control de acceso (ACL). Esto permitió que todos los componentes, desde el kernel del sistema operativo hasta las aplicaciones en el espacio de usuario, pudieran leer y escribir configuraciones mediante una interfaz unificada (el conjunto de funciones `Reg*` de la API Win32).",
+          "target": "content/post/windows-os-history-architecture/index.es.md"
+        }
+      ],
+      "category_decision": "Retain translated windows/administration/programming: OS configuration and programmatic maintenance."
+    },
+    {
+      "path": "content/post/windows_registry/index.pt.md",
+      "source_sha256": "7ddccef06ab665fc1e14cf06cec8fae1cde611d8162ab9589c5a601671090c5f",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/)",
+          "context": "Nesse tutorial verificou-se o quão vasto as áreas nos registros do seu Windows possuem de um banco que compõe regras à integridade central do Software ao Ambiente Nativo que baseiam a área visual dos sistemas de rotina nos computadores base da plataforma e aplicações e processos de usuários em todo um sistema. Operar modificações via meios visuais locais pelo Editor das configurações ao ambiente é uma medida insegura às possibilidades severas do OS com a alta chance real constatada base em equações na corrupção de subpastas a certas chaves que prejudicam todo os processos naturais integrativos Windows e sua própria viabilização do ambiente sem travamentos (O famoso BSoD). Para evitar prejuízos graves que custem a quebra da máquina é muito mais que essencial os processos através dos recursos pautáveis nativamente pela automação no uso como do C# via scripts ou uso integral do moderno e viável interpretador local de base no próprio \"PowerShell\", obedecendo aos parâmetros puros essenciais (O Princípio local - [Infrastructure as Code](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) / [IaC](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/)) das organizações. De modos reprodutíveis nos códigos locais limpos ou testáveis via comandos isolados e ambientes propícios a manipulação robusta, viável para a execução assertiva. Se as noções das profundezas apresentadas pautadas aos conhecimentos das raízes em Arquitetura da base que apresentados nesta matéria ficarem fixadas as formas das seguras de execuções de registro ficará na marca integral ao gerenciamento da Base Dos Registros aos mais seguros cenários nas configurações base nativa das Máquinas.",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[IaC](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/)",
+          "context": "[IaC](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/)",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Transaction](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/)",
+          "context": "3. **Gerenciando Depreciações Voltadas a Base Dos Registros Nas Transações:** As inovações presentes originárias na implementação nos tempos passados sob os comandos das configurações em Kernels pela manipulação base sob TxR \"Kernel [Transaction](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/) Manager (KTM)\", agora encontram problemas de suportes, vindo a ser depreciadas integralmente (Deprecated) pelo OS atual depois do Windows 10 e seus remanescentes. Requer agora, para os programadores da corporação e em seus desenvolvimentos contínuos uma manipulação ou modelo em memória ou manual local de salvamento interno via lógicas nas rotinas (Como fazer leituras preventivas aos valores velhos guardando uma cópia viva em arrays locais contidos dentro do software, entre outros Rollbacks nativos a serem implementados via programação base pelo dev).",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "Windows NT",
+          "context": "Para resolver fundamentalmente esses problemas, o \"Registro\" foi adotado integralmente como um banco de dados centralizado de configurações a partir do Windows NT e Windows 95. O registro é um banco de dados hierárquico que oferece tipagem forte, suporte a dados binários e recursos robustos de segurança por meio de listas de controle de acesso (ACL). Com isso, todos os componentes, desde o kernel do sistema operacional até os aplicativos no espaço do usuário, passaram a poder ler e escrever configurações por meio de uma interface unificada (o grupo de funções `Reg*` da API Win32).",
+          "target": "content/post/windows-os-history-architecture/index.pt.md"
+        }
+      ],
+      "category_decision": "Retain windows/administration/programming for Windows configuration and programmatic maintenance."
+    },
+    {
+      "path": "content/post/windows_registry/index.id.md",
+      "source_sha256": "05eacf473b0b974fe52c366922998b2debf34512f005c4c8c97d82b024809114",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)",
+          "context": "Registry Windows adalah sistem berbasis yang tangguh namun kompleks untuk mengelola seluruh perilaku OS serta pengaturan aplikasi secara terpadu. Pengeditan manual yang tidak beraturan menyimpan risiko kerusakan sistem yang sangat tinggi yang dapat dibuktikan secara matematis. Karenanya, dalam pengembangan dan administrasi sistem modern, Anda harus melakukan pengelolaan konfigurasi dalam bentuk yang dapat direproduksi, dapat diuji, dan aman, yang berpegang pada prinsip [Infrastructure as Code](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/). Hal tersebut bisa dicapai dengan menggunakan metode yang dapat diprogram seperti PowerShell atau C#. Dengan memahami arsitektur mendalam dan memanfaatkan pola-pola implementasi yang telah dibahas dalam artikel ini, bangunlah lingkungan Windows yang lebih tangguh dan aman.",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Transaction](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/)",
+          "context": "3. **Merespons Dekapresiasi (Tidak Lagi Disarankan) Fungsi Transaksi**: Fungsi transaksi Registry (TxR) menggunakan \"Kernel [Transaction](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/) Manager (KTM)\", yang pernah diperkenalkan pada Windows Vista, telah dinyatakan tidak disarankan sejak Windows 10. Aplikasi harus menerapkan mekanisme pencadangan dan pemulihan ke kondisi semula milik mereka sendiri (seperti membaca nilai asli dan menyimpannya di memori sebelum melakukan perubahan, dsb.).",
+          "reason": "misleading"
+        }
+      ],
+      "links": [
+        {
+          "term": "Windows NT",
+          "context": "Untuk menyelesaikan masalah ini secara mendasar, sejak Windows NT dan Windows 95, \"Registry\" mulai diadopsi secara penuh sebagai basis data pengaturan terpusat. Registry adalah basis data hierarkis yang menyediakan pengetikan yang kuat, dukungan untuk data biner, serta fitur keamanan yang tangguh melalui Daftar Kontrol Akses (ACL). Dengan ini, setiap komponen mulai dari kernel OS hingga aplikasi di ruang pengguna dapat membaca dan menulis pengaturan menggunakan antarmuka terpadu (kumpulan fungsi `Reg*` dari Win32 API).",
+          "target": "content/post/windows-os-history-architecture/index.id.md"
+        }
+      ],
+      "category_decision": "Retain windows/administration/programming for Windows configuration and programmatic maintenance."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "batch": "022-windows-registry-east-three",
+  "status": "reviewed; dry-run passed; not applied",
+  "review": "All three bodies and NT targets fully reviewed. Preserve prose, categories, math, code and diagrams.",
+  "articles": [
+    {
+      "path": "content/post/windows_registry/index.ko.md",
+      "source_sha256": "23dcd0a6287634f4611e15018656068156efd1b09813cd1e7c8c02627d429300",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)",
+          "context": "Windows 레지스트리는 OS의 모든 동작과 애플리케이션 설정을 통합적으로 관리하는 강력하고 복잡한 기반 시스템입니다. 수동에 의한 무질서한 편집에는 수학적으로도 입증되는 높은 시스템 손상 위험이 따릅니다. 따라서 PowerShell이나 C# 등의 프로그래밍 가능한 수단을 사용하여 [Infrastructure as Code](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)의 원칙에 따라 안전하고 테스트 가능하며 재현성 있는 형태로 구성 관리를 수행하는 것이 현대의 시스템 관리와 개발에 있어 필수적입니다. 본 기사에서 해설한 깊은 아키텍처 이해와 구현 패턴을 활용하여 더욱 견고하고 안전한 Windows 환경 구축을 목표로 해 보세요.",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "Windows NT",
+          "context": "이러한 문제들을 근본적으로 해결하기 위해 Windows NT 및 Windows 95 이후 중앙 집중식 설정 데이터베이스로서 \"레지스트리\"가 본격적으로 채택되었습니다. 레지스트리는 계층화된 데이터베이스로, 강력한 타입 지정, 바이너리 데이터 지원 및 접근 제어 목록(ACL)에 의한 견고한 보안 기능을 제공합니다. 이를 통해 OS 커널에서 사용자 공간의 애플리케이션까지 모든 구성 요소가 통일된 인터페이스(Win32 API의 `Reg*` 함수군)로 설정을 읽고 쓸 수 있게 되었습니다.",
+          "target": "content/post/windows-os-history-architecture/index.ko.md"
+        }
+      ],
+      "category_decision": "Retain windows/administration/programming for Windows configuration and programmatic maintenance."
+    },
+    {
+      "path": "content/post/windows_registry/index.zh-cn.md",
+      "source_sha256": "8d3ef28df82fbbfdf9b65f326013740b08912f53035def6dc7512a8685491292",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)",
+          "context": "Windows注册表是一个强大且复杂的基础系统，它统一管理操作系统的各种行为以及应用程序的设置。缺乏秩序的手动修改伴随着极高的系统损坏风险，这一点在数学上也已得到证明。因此，利用 PowerShell 或 C# 等可编程手段，遵循 [Infrastructure as Code](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) 原则，以一种安全、可测试并具有重现性的方式进行配置管理，在现代的系统管理和开发中是不可或缺的。希望你能运用在本文中所讲解的深度架构理解和实现模式，去构建一个更加坚固且安全的 Windows 环境。",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "Windows NT",
+          "context": "为了从根本上解决这些问题，自Windows NT和Windows 95起，正式采用了“注册表”作为中央集权的设置数据库。注册表是一个分层数据库，提供强类型、对二进制数据的支持以及基于访问控制列表（ACL）的强大安全功能。由此，从操作系统的内核到用户空间的应用程序，所有组件都可以通过统一的接口（Win32 API中的`Reg*`函数族）来读写设置。",
+          "target": "content/post/windows-os-history-architecture/index.zh-cn.md"
+        }
+      ],
+      "category_decision": "Retain windows/administration/programming for Windows configuration and programmatic maintenance."
+    },
+    {
+      "path": "content/post/windows_registry/index.zh-tw.md",
+      "source_sha256": "811a368d1b028bbe86df5c92811af47dfee4186d8c0621b07ebf7ebb5255cc47",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)",
+          "context": "Windows 登錄檔是個強大且複雜的基礎系統，統整管理了作業系統的所有行為與應用程式設定。手動且無序的編輯將伴隨極高的系統損毀風險，這在數學上也是可以被證實的。因此，使用 PowerShell 和 C# 等可程式化的手段，遵循「基礎架構即程式碼 ([Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/))」的原則，以安全、可測試且可重現的方式進行組態管理，在現代的系統管理與開發中是不可或缺的。請活用本文所解說的深層架構理解與實作模式，目標是建構出更堅固且安全的 Windows 環境。",
+          "reason": "duplicate"
+        },
+        {
+          "link": "[Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)",
+          "context": "此外，為了提高登錄檔的可靠性，最新的 Windows 實作了交易記錄（[Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) Logging）。對 Hive 檔案的變更不會直接寫入資料檔，而是會先記錄在交易記錄檔（`.log1`, `.log2`）中。這可以防止在寫入過程中發生意外斷電或系統當機時的資料損毀（Corruption），並以接近 [ACID](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 特性的方式確保資料庫的完整性。",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "Windows NT",
+          "context": "為了根本解決這些問題，從 Windows NT 和 Windows 95 開始，正式採用了「登錄檔」作為集中式的設定資料庫。登錄檔是一個階層化的資料庫，提供強型別、二進位資料的支援，以及透過存取控制清單（ACL）達成的堅固安全性功能。這使得從作業系統核心到使用者空間的應用程式等所有元件，都能透過統一的介面（Win32 API 的 `Reg*` 函式群）來讀寫設定。",
+          "target": "content/post/windows-os-history-architecture/index.zh-tw.md"
+        }
+      ],
+      "category_decision": "Retain windows/administration/programming for Windows configuration and programmatic maintenance."
+    }
+  ]
+}

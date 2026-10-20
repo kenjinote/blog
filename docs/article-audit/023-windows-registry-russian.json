@@ -1,0 +1,31 @@
+{
+  "batch": "023-windows-registry-russian",
+  "status": "reviewed; dry-run passed; not applied",
+  "review": "Full Russian source body reviewed. NT target fully reviewed in batch 019; B-tree target introduction and definition checked. Preserve all prose and protected syntax.",
+  "articles": [
+    {
+      "path": "content/post/windows_registry/index.ru.md",
+      "source_sha256": "2ccb627fac39fdc93c99a815cc7945a818f45d0c5c7c0697470fe8834089406e",
+      "unwrap_links": [
+        {
+          "link": "[Infrastructure as Code](https://kenji.blog/ru/p/iac-infrastructure-as-code-terraform/)",
+          "context": "Реестр Windows — это мощная и сложная базовая система, которая интегрированно управляет всем поведением ОС и настройками приложений. Неупорядоченное ручное редактирование сопряжено с высоким риском повреждения системы, который также доказан математически. Поэтому в современном системном администрировании и разработке крайне важно использовать программные средства, такие как PowerShell или C#, для управления конфигурацией в соответствии с принципами [Infrastructure as Code](https://kenji.blog/ru/p/iac-infrastructure-as-code-terraform/) (инфраструктура как код) безопасным, тестируемым и воспроизводимым способом. Используйте глубокое понимание архитектуры и шаблоны реализации, описанные в этой статье, для создания более надежных и безопасных сред Windows.",
+          "reason": "duplicate"
+        }
+      ],
+      "links": [
+        {
+          "term": "Windows NT",
+          "context": "Чтобы в корне решить эти проблемы, начиная с Windows NT и Windows 95, была полномасштабно внедрена концепция «реестра» как централизованной базы данных конфигураций. Реестр — это иерархическая база данных, которая обеспечивает строгую типизацию, поддержку двоичных данных и надежные функции безопасности с помощью списков управления доступом (ACL). Это позволило всем компонентам, от ядра ОС до приложений пользовательского пространства, читать и записывать настройки с использованием унифицированного интерфейса (набор функций `Reg*` в Win32 API).",
+          "target": "content/post/windows-os-history-architecture/index.ru.md"
+        },
+        {
+          "term": "B-дерево",
+          "context": "Поскольку реестр напрямую влияет на производительность ОС (особенно на время загрузки и скорость инициализации процессов), внутренне он оптимизирован с использованием сложной структуры данных, похожей на B-дерево, называемой «Cell Index» (Индекс ячеек).",
+          "target": "content/post/b-tree-database-index-theory/index.ru.md"
+        }
+      ],
+      "category_decision": "Retain windows/administration/programming for Windows configuration and programmatic maintenance."
+    }
+  ]
+}
