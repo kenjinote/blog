@@ -243586,7 +243586,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -243597,7 +243597,8 @@
         "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
       },
       "batch": "021-windows-registry-west-four",
-      "push_status": "ready to commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90"
     },
     {
       "path": "content/post/windows_registry/index.fr.md",
@@ -243613,7 +243614,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -243624,7 +243625,8 @@
         "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
       },
       "batch": "021-windows-registry-west-four",
-      "push_status": "ready to commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90"
     },
     {
       "path": "content/post/windows_registry/index.hi.md",
@@ -243662,7 +243664,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -243673,7 +243675,8 @@
         "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
       },
       "batch": "021-windows-registry-west-four",
-      "push_status": "ready to commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90"
     },
     {
       "path": "content/post/windows_registry/index.ko.md",
@@ -243689,7 +243692,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -243700,7 +243703,8 @@
         "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
       },
       "batch": "022-windows-registry-east-three",
-      "push_status": "ready to commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90"
     },
     {
       "path": "content/post/windows_registry/index.md",
@@ -243746,7 +243750,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -243757,7 +243761,8 @@
         "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
       },
       "batch": "021-windows-registry-west-four",
-      "push_status": "ready to commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90"
     },
     {
       "path": "content/post/windows_registry/index.ru.md",
@@ -243773,7 +243778,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -243784,7 +243789,8 @@
         "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
       },
       "batch": "023-windows-registry-russian",
-      "push_status": "ready to commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90"
     },
     {
       "path": "content/post/windows_registry/index.zh-cn.md",
@@ -243800,7 +243806,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -243811,7 +243817,8 @@
         "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
       },
       "batch": "022-windows-registry-east-three",
-      "push_status": "ready to commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90"
     },
     {
       "path": "content/post/windows_registry/index.zh-tw.md",
@@ -243827,7 +243834,7 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "validated",
+      "status": "completed",
       "hold_reason": null,
       "body_reviewed": true,
       "categories_reviewed": true,
@@ -243838,7 +243845,8 @@
         "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
       },
       "batch": "022-windows-registry-east-three",
-      "push_status": "ready to commit and push"
+      "push_status": "confirmed origin/main SHA matches content commit",
+      "commit": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90"
     },
     {
       "path": "content/post/windows_terminalカスタマイズ/index.ar.md",

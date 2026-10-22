@@ -152,5 +152,20 @@
     "hugo": "passed, exit 0, 592246 ms",
     "browser": "3 before/after pages passed; English mobile screenshot visually inspected",
     "next": "021/022/023 plans validated but not applied; registry ar/hi unread"
+  },
+  {
+    "batch": "021-023 registry eight translations",
+    "commit": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90",
+    "remote": "origin/main",
+    "verified_remote_sha": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90",
+    "date_jst": "2026-10-22",
+    "articles": 8,
+    "modified_articles": 8,
+    "added_links": 9,
+    "unwrapped_links": 13,
+    "reclassified_articles": 0,
+    "hugo": "exit 0; 742800 ms",
+    "browser": "8 before/after pages passed; Korean mobile screenshot visually inspected",
+    "next": "Registry ar/hi bodies unread"
   }
 ]

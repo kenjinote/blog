@@ -1,6 +1,6 @@
 {
   "batch": "023-windows-registry-russian",
-  "status": "applied; source verification passed; Hugo/browser pending",
+  "status": "applied, verified and pushed",
   "review": "Full Russian source body reviewed. NT target fully reviewed in batch 019; B-tree target introduction and definition checked. Preserve all prose and protected syntax.",
   "articles": [
     {
@@ -27,5 +27,6 @@
       ],
       "category_decision": "Retain windows/administration/programming for Windows configuration and programmatic maintenance."
     }
-  ]
+  ],
+  "commit": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90"
 }

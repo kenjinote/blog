@@ -1,6 +1,6 @@
 {
   "batch": "022-windows-registry-east-three",
-  "status": "applied; source verification passed; Hugo/browser pending",
+  "status": "applied, verified and pushed",
   "review": "All three bodies and NT targets fully reviewed. Preserve prose, categories, math, code and diagrams.",
   "articles": [
     {
@@ -65,5 +65,6 @@
       ],
       "category_decision": "Retain windows/administration/programming for Windows configuration and programmatic maintenance."
     }
-  ]
+  ],
+  "commit": "5c9004ab2f5c05c8316524add7e3ac3374a6bf90"
 }
