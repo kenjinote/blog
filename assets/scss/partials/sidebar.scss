@@ -186,7 +186,28 @@
     align-content: center;
     gap: var(--menu-icon-separation);
 
+    .language-switch-content {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    label {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #language-status {
+        font-size: 1.3rem;
+        line-height: 1.6;
+        max-width: 24rem;
+
+        p { margin: 0.75rem 0; }
+        a { text-decoration: underline; }
+    }
+
     select {
+        max-width: 100%;
         border: 0;
         background-color: transparent;
         color: var(--body-text-color);

@@ -11,18 +11,7 @@
 <link rel='canonical' href='{{ .Permalink }}'>
 <link rel="describedby" type="text/plain" href="{{ "llms.txt" | absURL }}">
 
-{{- range .AllTranslations -}}
-    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
-{{- end -}}
-{{- if eq .Language.Lang "ja" -}}
-    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
-{{- else if .IsTranslated -}}
-    {{- range .Translations -}}
-        {{- if eq .Language.Lang "ja" -}}
-            <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
-        {{- end -}}
-    {{- end -}}
-{{- end -}}
+{{- partial "head/hreflang.html" . -}}
 
 {{- partial "head/style.html" . -}}
 {{- partial "head/script.html" . -}}

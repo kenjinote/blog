@@ -1,0 +1,7 @@
+{{/* Use the same Hugo translation group as the sidebar, including this page. */}}
+{{- range .AllTranslations -}}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+    {{- if eq .Language.Lang "ja" -}}
+        <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+    {{- end -}}
+{{- end -}}

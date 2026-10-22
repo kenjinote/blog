@@ -1,0 +1,78 @@
+ja:
+  label: 言語
+  unavailable: 未翻訳
+  missing: このページは選択した言語にまだ翻訳されていません。現在のページで読み続けられます。
+  home: 選択した言語のホームを見る
+  noScript: このページの言語版：
+en:
+  label: Language
+  unavailable: Not translated
+  missing: This page is not yet available in the selected language. You can continue reading here.
+  home: Visit the selected language’s home page
+  noScript: 'Available languages for this page:'
+zh-cn:
+  label: 语言
+  unavailable: 暂无翻译
+  missing: 此页面尚无所选语言的翻译。您可以留在当前页面继续阅读。
+  home: 前往所选语言的首页
+  noScript: 此页面的语言版本：
+zh-tw:
+  label: 語言
+  unavailable: 尚無翻譯
+  missing: 此頁面尚無所選語言的翻譯。您可以留在目前頁面繼續閱讀。
+  home: 前往所選語言的首頁
+  noScript: 此頁面的語言版本：
+es:
+  label: Idioma
+  unavailable: Sin traducción
+  missing: Esta página aún no está disponible en el idioma elegido. Puede seguir leyendo aquí.
+  home: Ir al inicio del idioma elegido
+  noScript: 'Idiomas disponibles para esta página:'
+ko:
+  label: 언어
+  unavailable: 번역 없음
+  missing: 이 페이지는 선택한 언어로 아직 번역되지 않았습니다. 현재 페이지에서 계속 읽을 수 있습니다.
+  home: 선택한 언어의 홈으로 이동
+  noScript: '이 페이지의 언어별 버전:'
+pt:
+  label: Idioma
+  unavailable: Sem tradução
+  missing: Esta página ainda não está disponível no idioma escolhido. Pode continuar a ler aqui.
+  home: Visitar a página inicial do idioma escolhido
+  noScript: 'Idiomas disponíveis para esta página:'
+hi:
+  label: भाषा
+  unavailable: अनुवाद उपलब्ध नहीं
+  missing: इस पृष्ठ का चुनी गई भाषा में अनुवाद अभी उपलब्ध नहीं है। आप यहीं पढ़ना जारी रख सकते हैं।
+  home: चुनी गई भाषा का मुखपृष्ठ देखें
+  noScript: 'इस पृष्ठ के लिए उपलब्ध भाषाएँ:'
+fr:
+  label: Langue
+  unavailable: Non traduit
+  missing: Cette page n’est pas encore disponible dans la langue choisie. Vous pouvez poursuivre votre lecture ici.
+  home: Consulter l’accueil dans la langue choisie
+  noScript: 'Langues disponibles pour cette page :'
+de:
+  label: Sprache
+  unavailable: Nicht übersetzt
+  missing: Diese Seite ist in der gewählten Sprache noch nicht verfügbar. Sie können hier weiterlesen.
+  home: Zur Startseite der gewählten Sprache
+  noScript: 'Verfügbare Sprachen für diese Seite:'
+ar:
+  label: اللغة
+  unavailable: غير مترجم
+  missing: هذه الصفحة غير متاحة بعد باللغة المختارة. يمكنك متابعة القراءة هنا.
+  home: زيارة الصفحة الرئيسية باللغة المختارة
+  noScript: 'اللغات المتاحة لهذه الصفحة:'
+ru:
+  label: Язык
+  unavailable: Нет перевода
+  missing: Эта страница пока не переведена на выбранный язык. Вы можете продолжить чтение здесь.
+  home: Перейти на главную страницу на выбранном языке
+  noScript: 'Доступные языки этой страницы:'
+id:
+  label: Bahasa
+  unavailable: Belum diterjemahkan
+  missing: Halaman ini belum tersedia dalam bahasa yang dipilih. Anda dapat melanjutkan membaca di sini.
+  home: Kunjungi beranda dalam bahasa yang dipilih
+  noScript: 'Bahasa yang tersedia untuk halaman ini:'

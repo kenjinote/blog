@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "priorities": {
+    "post/central-limit-theorem": 1,
+    "post/cross-site-scripting-xss-csrf-security": 1,
+    "post/history-of-unicode-encoding": 1
+  },
+  "reviews": {}
+}

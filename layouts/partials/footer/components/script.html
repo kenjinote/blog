@@ -5,6 +5,9 @@
 
 <script type="text/javascript" src="{{ $script.RelPermalink }}" defer></script>
 
+{{- $languageScript := resources.Get "ts/language.ts" | js.Build $opts | fingerprint -}}
+<script src="{{ $languageScript.RelPermalink }}" defer></script>
+
 {{- with resources.Get "ts/custom.ts" -}}
     {{/* Place your custom script in HUGO_SITE_FOLDER/assets/ts/custom.ts */}}
     {{- $customScript := . | js.Build $opts | fingerprint -}}

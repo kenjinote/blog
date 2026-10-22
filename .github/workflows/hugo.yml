@@ -48,6 +48,16 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: npm ci
+      - name: Validate translation review records and generate queue
+        run: |
+          python3 scripts/test_multilingual.py
+          python3 scripts/translation_reviews.py check
+          python3 scripts/translation_reviews.py report --output translation-review-queue.csv
+      - name: Save translation review queue
+        uses: actions/upload-artifact@v4
+        with:
+          name: translation-review-queue
+          path: translation-review-queue.csv
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -57,6 +67,8 @@ jobs:
             --minify \
             --buildFuture \
             --baseURL "https://kenji.blog/"
+      - name: Verify multilingual pages
+        run: python3 scripts/check_multilingual.py public
       - name: Build search index
         run: npm run search:index
       - name: Verify search index

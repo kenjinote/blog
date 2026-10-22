@@ -1,0 +1,28 @@
+{{- $page := . -}}
+{{- $labels := index .Site.Data.languages .Language.Lang -}}
+{{- $translations := dict -}}
+{{- range .AllTranslations -}}
+    {{- $translations = merge $translations (dict .Language.Lang .Permalink) -}}
+{{- end -}}
+<li id="i18n-switch">
+    {{ partial "helper/icon" "language" }}
+    <div class="language-switch-content">
+        <label for="language-select">{{ $labels.label }}</label>
+        <select id="language-select" name="language" aria-describedby="language-status" data-current-language="{{ .Language.Lang }}" disabled>
+            {{ range .Site.Home.AllTranslations }}
+                {{ $target := index $translations .Language.Lang }}
+                <option value="{{ default "" $target }}" lang="{{ .Language.Lang }}" data-language="{{ .Language.Lang }}" data-home="{{ .Permalink }}" {{ if eq .Language.Lang $page.Language.Lang }}selected{{ end }}>{{ .Language.LanguageName }}{{ if not $target }} — {{ $labels.unavailable }}{{ end }}</option>
+            {{ end }}
+        </select>
+        <div id="language-status" role="status" aria-live="polite" data-missing="{{ $labels.missing }}" hidden>
+            <p></p>
+            <a class="link" href="{{ .Site.Home.Permalink }}"><span data-language-name></span> — {{ $labels.home }}</a>
+        </div>
+        <noscript>
+            <p>{{ $labels.noScript }}</p>
+            {{ range .AllTranslations }}
+                <a href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ .Language.LanguageName }}</a>
+            {{ end }}
+        </noscript>
+    </div>
+</li>
