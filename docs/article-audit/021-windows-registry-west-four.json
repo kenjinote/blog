@@ -1,6 +1,6 @@
 {
   "batch": "021-windows-registry-west-four",
-  "status": "reviewed; dry-run passed; not applied",
+  "status": "applied; source verification passed; Hugo/browser pending",
   "review": "Full fr/es/pt/id bodies reviewed; NT history references are direct, targets reviewed in batch 019. Remove repeated concluding IaC and misleading KTM Transaction links. Preserve prose, categories, code, math and diagrams.",
   "articles": [
     {

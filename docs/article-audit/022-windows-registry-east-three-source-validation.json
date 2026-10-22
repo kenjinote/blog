@@ -1,0 +1,85 @@
+[
+  {
+    "path": "content/post/windows_registry/index.ko.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Windows NT",
+        "url": "/ko/p/windows-os-history-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Infrastructure as Code](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)",
+        "context": "Windows 레지스트리는 OS의 모든 동작과 애플리케이션 설정을 통합적으로 관리하는 강력하고 복잡한 기반 시스템입니다. 수동에 의한 무질서한 편집에는 수학적으로도 입증되는 높은 시스템 손상 위험이 따릅니다. 따라서 PowerShell이나 C# 등의 프로그래밍 가능한 수단을 사용하여 [Infrastructure as Code](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)의 원칙에 따라 안전하고 테스트 가능하며 재현성 있는 형태로 구성 관리를 수행하는 것이 현대의 시스템 관리와 개발에 있어 필수적입니다. 본 기사에서 해설한 깊은 아키텍처 이해와 구현 패턴을 활용하여 더욱 견고하고 안전한 Windows 환경 구축을 목표로 해 보세요.",
+        "reason": "duplicate"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain windows/administration/programming for Windows configuration and programmatic maintenance.",
+    "updated_sha256": "62ed9ec0b54151413d17a5c328ff18210eb9bc447d8938c34efc8b5c84cfe73a"
+  },
+  {
+    "path": "content/post/windows_registry/index.zh-cn.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Windows NT",
+        "url": "/zh-cn/p/windows-os-history-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Infrastructure as Code](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)",
+        "context": "Windows注册表是一个强大且复杂的基础系统，它统一管理操作系统的各种行为以及应用程序的设置。缺乏秩序的手动修改伴随着极高的系统损坏风险，这一点在数学上也已得到证明。因此，利用 PowerShell 或 C# 等可编程手段，遵循 [Infrastructure as Code](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) 原则，以一种安全、可测试并具有重现性的方式进行配置管理，在现代的系统管理和开发中是不可或缺的。希望你能运用在本文中所讲解的深度架构理解和实现模式，去构建一个更加坚固且安全的 Windows 环境。",
+        "reason": "duplicate"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain windows/administration/programming for Windows configuration and programmatic maintenance.",
+    "updated_sha256": "3a4fe6acf8b492b712e8bcb19623750c803b06c592791881a7e9c57145e1b019"
+  },
+  {
+    "path": "content/post/windows_registry/index.zh-tw.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Windows NT",
+        "url": "/zh-tw/p/windows-os-history-architecture/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)",
+        "context": "Windows 登錄檔是個強大且複雜的基礎系統，統整管理了作業系統的所有行為與應用程式設定。手動且無序的編輯將伴隨極高的系統損毀風險，這在數學上也是可以被證實的。因此，使用 PowerShell 和 C# 等可程式化的手段，遵循「基礎架構即程式碼 ([Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/))」的原則，以安全、可測試且可重現的方式進行組態管理，在現代的系統管理與開發中是不可或缺的。請活用本文所解說的深層架構理解與實作模式，目標是建構出更堅固且安全的 Windows 環境。",
+        "reason": "duplicate"
+      },
+      {
+        "link": "[Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)",
+        "context": "此外，為了提高登錄檔的可靠性，最新的 Windows 實作了交易記錄（[Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) Logging）。對 Hive 檔案的變更不會直接寫入資料檔，而是會先記錄在交易記錄檔（`.log1`, `.log2`）中。這可以防止在寫入過程中發生意外斷電或系統當機時的資料損毀（Corruption），並以接近 [ACID](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 特性的方式確保資料庫的完整性。",
+        "reason": "duplicate"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain windows/administration/programming for Windows configuration and programmatic maintenance.",
+    "updated_sha256": "1b488ed039bf4554b5c70a82b968b23f113401c60422fa1cd4411e99378b0ec3"
+  }
+]

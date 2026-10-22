@@ -17,7 +17,7 @@ tags: ["Registry", "PowerShell", "C#", "Windows 11"]
 
 在 Windows 的早期版本（Windows 3.x 時代）中，系統與應用程式的設定主要儲存在 `.ini`（初始化檔案）裡。然而，隨著每個應用程式的無數 INI 檔案散佈在整個系統中，管理變得極度繁雜。此外，由於 INI 檔案是基於純文字格式，難以儲存二進位資料，且不存在存取控制（安全性）的機制。檔案的解析速度也很慢，不適合用來儲存大規模的設定。
 
-為了根本解決這些問題，從 Windows NT 和 Windows 95 開始，正式採用了「登錄檔」作為集中式的設定資料庫。登錄檔是一個階層化的資料庫，提供強型別、二進位資料的支援，以及透過存取控制清單（ACL）達成的堅固安全性功能。這使得從作業系統核心到使用者空間的應用程式等所有元件，都能透過統一的介面（Win32 API 的 `Reg*` 函式群）來讀寫設定。
+為了根本解決這些問題，從 [Windows NT](/zh-tw/p/windows-os-history-architecture/) 和 Windows 95 開始，正式採用了「登錄檔」作為集中式的設定資料庫。登錄檔是一個階層化的資料庫，提供強型別、二進位資料的支援，以及透過存取控制清單（ACL）達成的堅固安全性功能。這使得從作業系統核心到使用者空間的應用程式等所有元件，都能透過統一的介面（Win32 API 的 `Reg*` 函式群）來讀寫設定。
 
 一直到現代的 Windows 11，登錄檔仍然持續作為作業系統的核心在運作。硬體配置、裝置驅動程式的載入順序、使用者的桌面環境、已安裝軟體的清單等，系統運作所需的所有中繼資料都集中在登錄檔中。
 
@@ -40,7 +40,7 @@ tags: ["Registry", "PowerShell", "C#", "Windows 11"]
 
 值得一提的是，並非所有登錄檔資料都存在於磁碟上。例如，`HARDWARE` Hive 是揮發性（Volatile）的，完全不會儲存在磁碟上的檔案中。每次作業系統啟動，隨插即用（PnP）管理員偵測到硬體時，就會在記憶體中動態重建。
 
-此外，為了提高登錄檔的可靠性，最新的 Windows 實作了交易記錄（[Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) Logging）。對 Hive 檔案的變更不會直接寫入資料檔，而是會先記錄在交易記錄檔（`.log1`, `.log2`）中。這可以防止在寫入過程中發生意外斷電或系統當機時的資料損毀（Corruption），並以接近 [ACID](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 特性的方式確保資料庫的完整性。
+此外，為了提高登錄檔的可靠性，最新的 Windows 實作了交易記錄（Transaction Logging）。對 Hive 檔案的變更不會直接寫入資料檔，而是會先記錄在交易記錄檔（`.log1`, `.log2`）中。這可以防止在寫入過程中發生意外斷電或系統當機時的資料損毀（Corruption），並以接近 [ACID](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 特性的方式確保資料庫的完整性。
 
 ## 3. 登錄檔機碼與值的階層結構
 
@@ -398,7 +398,7 @@ $backup = Import-Clixml -Path "C:\backup\reg_backup.xml"
 
 ## 總結
 
-Windows 登錄檔是個強大且複雜的基礎系統，統整管理了作業系統的所有行為與應用程式設定。手動且無序的編輯將伴隨極高的系統損毀風險，這在數學上也是可以被證實的。因此，使用 PowerShell 和 C# 等可程式化的手段，遵循「基礎架構即程式碼 ([Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/))」的原則，以安全、可測試且可重現的方式進行組態管理，在現代的系統管理與開發中是不可或缺的。請活用本文所解說的深層架構理解與實作模式，目標是建構出更堅固且安全的 Windows 環境。
+Windows 登錄檔是個強大且複雜的基礎系統，統整管理了作業系統的所有行為與應用程式設定。手動且無序的編輯將伴隨極高的系統損毀風險，這在數學上也是可以被證實的。因此，使用 PowerShell 和 C# 等可程式化的手段，遵循「基礎架構即程式碼 (Infrastructure as Code)」的原則，以安全、可測試且可重現的方式進行組態管理，在現代的系統管理與開發中是不可或缺的。請活用本文所解說的深層架構理解與實作模式，目標是建構出更堅固且安全的 Windows 環境。
 
 
 

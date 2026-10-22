@@ -1,6 +1,6 @@
 {
   "batch": "023-windows-registry-russian",
-  "status": "reviewed; dry-run passed; not applied",
+  "status": "applied; source verification passed; Hugo/browser pending",
   "review": "Full Russian source body reviewed. NT target fully reviewed in batch 019; B-tree target introduction and definition checked. Preserve all prose and protected syntax.",
   "articles": [
     {

@@ -243586,13 +243586,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "021-windows-registry-remaining-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "exact reviewed transformations and protected content passed",
+        "hugo": "exit 0; 742800 ms",
+        "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
+      },
+      "batch": "021-windows-registry-west-four",
+      "push_status": "ready to commit and push"
     },
     {
       "path": "content/post/windows_registry/index.fr.md",
@@ -243608,13 +243613,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "021-windows-registry-remaining-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "exact reviewed transformations and protected content passed",
+        "hugo": "exit 0; 742800 ms",
+        "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
+      },
+      "batch": "021-windows-registry-west-four",
+      "push_status": "ready to commit and push"
     },
     {
       "path": "content/post/windows_registry/index.hi.md",
@@ -243652,13 +243662,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "021-windows-registry-remaining-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "exact reviewed transformations and protected content passed",
+        "hugo": "exit 0; 742800 ms",
+        "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
+      },
+      "batch": "021-windows-registry-west-four",
+      "push_status": "ready to commit and push"
     },
     {
       "path": "content/post/windows_registry/index.ko.md",
@@ -243674,13 +243689,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "022-windows-registry-east-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "exact reviewed transformations and protected content passed",
+        "hugo": "exit 0; 742800 ms",
+        "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
+      },
+      "batch": "022-windows-registry-east-three",
+      "push_status": "ready to commit and push"
     },
     {
       "path": "content/post/windows_registry/index.md",
@@ -243726,13 +243746,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "021-windows-registry-remaining-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "exact reviewed transformations and protected content passed",
+        "hugo": "exit 0; 742800 ms",
+        "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
+      },
+      "batch": "021-windows-registry-west-four",
+      "push_status": "ready to commit and push"
     },
     {
       "path": "content/post/windows_registry/index.ru.md",
@@ -243748,13 +243773,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "023-windows-registry-remaining-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "exact reviewed transformations and protected content passed",
+        "hugo": "exit 0; 742800 ms",
+        "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
+      },
+      "batch": "023-windows-registry-russian",
+      "push_status": "ready to commit and push"
     },
     {
       "path": "content/post/windows_registry/index.zh-cn.md",
@@ -243770,13 +243800,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "022-windows-registry-east-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "exact reviewed transformations and protected content passed",
+        "hugo": "exit 0; 742800 ms",
+        "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
+      },
+      "batch": "022-windows-registry-east-three",
+      "push_status": "ready to commit and push"
     },
     {
       "path": "content/post/windows_registry/index.zh-tw.md",
@@ -243792,13 +243827,18 @@
       ],
       "undefined_categories": [],
       "frontmatter_error": null,
-      "status": "pending",
+      "status": "validated",
       "hold_reason": null,
       "body_reviewed": true,
-      "categories_reviewed": false,
-      "links_reviewed": false,
-      "validation": null,
-      "batch": "022-windows-registry-east-review"
+      "categories_reviewed": true,
+      "links_reviewed": true,
+      "validation": {
+        "source": "exact reviewed transformations and protected content passed",
+        "hugo": "exit 0; 742800 ms",
+        "browser": "8 before/after pages passed, exact links and protected rendered contents, localized categories, same-language HTTP200, mobile; Korean mobile screenshot visually inspected"
+      },
+      "batch": "022-windows-registry-east-three",
+      "push_status": "ready to commit and push"
     },
     {
       "path": "content/post/windows_terminalカスタマイズ/index.ar.md",

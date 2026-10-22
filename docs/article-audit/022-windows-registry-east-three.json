@@ -1,6 +1,6 @@
 {
   "batch": "022-windows-registry-east-three",
-  "status": "reviewed; dry-run passed; not applied",
+  "status": "applied; source verification passed; Hugo/browser pending",
   "review": "All three bodies and NT targets fully reviewed. Preserve prose, categories, math, code and diagrams.",
   "articles": [
     {

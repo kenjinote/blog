@@ -1,0 +1,32 @@
+[
+  {
+    "path": "content/post/windows_registry/index.ru.md",
+    "removed_self_links": 0,
+    "added_links": [
+      {
+        "term": "Windows NT",
+        "url": "/ru/p/windows-os-history-architecture/"
+      },
+      {
+        "term": "B-дерево",
+        "url": "/ru/p/b-tree-database-index-theory/"
+      }
+    ],
+    "protected_content_unchanged": true,
+    "visible_source_unchanged": true,
+    "prose_unchanged": true,
+    "protected_content_unchanged_except_reviewed_repairs": true,
+    "mermaid_label_repairs": [],
+    "reviewed_unwrapped_links": [
+      {
+        "link": "[Infrastructure as Code](https://kenji.blog/ru/p/iac-infrastructure-as-code-terraform/)",
+        "context": "Реестр Windows — это мощная и сложная базовая система, которая интегрированно управляет всем поведением ОС и настройками приложений. Неупорядоченное ручное редактирование сопряжено с высоким риском повреждения системы, который также доказан математически. Поэтому в современном системном администрировании и разработке крайне важно использовать программные средства, такие как PowerShell или C#, для управления конфигурацией в соответствии с принципами [Infrastructure as Code](https://kenji.blog/ru/p/iac-infrastructure-as-code-terraform/) (инфраструктура как код) безопасным, тестируемым и воспроизводимым способом. Используйте глубокое понимание архитектуры и шаблоны реализации, описанные в этой статье, для создания более надежных и безопасных сред Windows.",
+        "reason": "duplicate"
+      }
+    ],
+    "heading_link_repairs": [],
+    "category_change": null,
+    "categories": "Retain windows/administration/programming for Windows configuration and programmatic maintenance.",
+    "updated_sha256": "4933a34b06862dbe2b550a94a006adfd8abc66d7bb98fb5a8dc6b35e605dc500"
+  }
+]

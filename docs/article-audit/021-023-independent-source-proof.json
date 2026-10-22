@@ -1,0 +1,50 @@
+[
+  {
+    "path": "content/post/windows_registry/index.fr.md",
+    "exact_reviewed_transform_match": true,
+    "protected_material_unchanged": true,
+    "sha256": "11459f9cbdf8450ef054b654b88ce2ff20658d70a93e0df383c65638c38b0640"
+  },
+  {
+    "path": "content/post/windows_registry/index.es.md",
+    "exact_reviewed_transform_match": true,
+    "protected_material_unchanged": true,
+    "sha256": "36fff6048fe160c5cef2c51d3f6409faa74f6f449862e91b2fa754cffe191d75"
+  },
+  {
+    "path": "content/post/windows_registry/index.pt.md",
+    "exact_reviewed_transform_match": true,
+    "protected_material_unchanged": true,
+    "sha256": "1315e6347c31a7042edc011650c320b54954457eddbc056e3caf9f79e4bfdbbd"
+  },
+  {
+    "path": "content/post/windows_registry/index.id.md",
+    "exact_reviewed_transform_match": true,
+    "protected_material_unchanged": true,
+    "sha256": "be77bd53387a8dfa2f2854f6f7eef8cc57ffab543a1cf2dbdd8114e276d88212"
+  },
+  {
+    "path": "content/post/windows_registry/index.ko.md",
+    "exact_reviewed_transform_match": true,
+    "protected_material_unchanged": true,
+    "sha256": "62ed9ec0b54151413d17a5c328ff18210eb9bc447d8938c34efc8b5c84cfe73a"
+  },
+  {
+    "path": "content/post/windows_registry/index.zh-cn.md",
+    "exact_reviewed_transform_match": true,
+    "protected_material_unchanged": true,
+    "sha256": "3a4fe6acf8b492b712e8bcb19623750c803b06c592791881a7e9c57145e1b019"
+  },
+  {
+    "path": "content/post/windows_registry/index.zh-tw.md",
+    "exact_reviewed_transform_match": true,
+    "protected_material_unchanged": true,
+    "sha256": "1b488ed039bf4554b5c70a82b968b23f113401c60422fa1cd4411e99378b0ec3"
+  },
+  {
+    "path": "content/post/windows_registry/index.ru.md",
+    "exact_reviewed_transform_match": true,
+    "protected_material_unchanged": true,
+    "sha256": "4933a34b06862dbe2b550a94a006adfd8abc66d7bb98fb5a8dc6b35e605dc500"
+  }
+]
