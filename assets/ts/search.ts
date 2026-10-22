@@ -21,6 +21,7 @@ class Search {
     private engine: Promise<SearchEngine> | undefined;
     private results: SearchHit[] = [];
     private shown = 0;
+    private query = '';
     private version = 0;
     private timer: ReturnType<typeof setTimeout> | undefined;
     private composing = false;
@@ -62,6 +63,7 @@ class Search {
         clearTimeout(this.timer);
         const version = ++this.version;
         const query = this.input.value.trim().slice(0, 200);
+        this.query = query;
         const url = new URL(window.location.href);
         if (query) url.searchParams.set('keyword', query);
         else url.searchParams.delete('keyword');
@@ -101,7 +103,10 @@ class Search {
         try {
             const engine = await this.getEngine();
             if (version !== this.version) return;
-            const response = await engine.search(query);
+            // Keep unspaced CJK compounds together instead of matching their
+            // component words at unrelated positions in a long article.
+            const phrase = /[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]/.test(query) && !/[\s"]/.test(query);
+            const response = await engine.search(phrase ? `"${query}"` : query);
             if (version !== this.version) return;
             this.results = response.results;
             if (!this.results.length) {
@@ -119,6 +124,14 @@ class Search {
         return template.replace('#TOTAL', String(this.results.length)).replace('#SHOWN', String(this.shown));
     }
 
+    private titleRank(page: SearchPage): number {
+        const title = (page.meta.title || '').normalize('NFKC').toLocaleLowerCase();
+        const query = this.query.replace(/"/g, '').normalize('NFKC').toLocaleLowerCase();
+        if (title === query) return 3;
+        if (title.includes(query)) return 2;
+        return query.split(/\s+/).every(word => title.includes(word)) ? 1 : 0;
+    }
+
     private async showMore(version: number, focus = false) {
         if (this.more.disabled || this.shown >= this.results.length) return;
         this.more.disabled = true;
@@ -128,6 +141,9 @@ class Search {
                 this.results.slice(this.shown, this.shown + this.pageSize).map(hit => hit.data())
             );
             if (version !== this.version) return;
+            // Preserve Pagefind's order for equally relevant titles. Only load
+            // the visible batch; never fetch every result just to sort titles.
+            pages.sort((a, b) => this.titleRank(b) - this.titleRank(a));
             const articles = pages.map(page => this.render(page));
             this.list.append(...articles);
             this.shown += articles.length;
