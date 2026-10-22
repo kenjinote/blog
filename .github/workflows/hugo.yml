@@ -56,7 +56,9 @@ jobs:
           hugo \
             --minify \
             --buildFuture \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://kenji.blog/"
+      - name: Verify HTTPS publication URLs
+        run: python3 scripts/check_https_urls.py public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
