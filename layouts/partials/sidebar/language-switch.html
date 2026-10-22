@@ -1,7 +1,8 @@
 {{- $page := . -}}
 {{- $labels := index .Site.Data.languages .Language.Lang -}}
 {{- $translations := dict -}}
-{{- range .AllTranslations -}}
+{{- $available := partial "helper/translations.html" . -}}
+{{- range $available -}}
     {{- $translations = merge $translations (dict .Language.Lang .Permalink) -}}
 {{- end -}}
 <li id="i18n-switch">
@@ -20,7 +21,7 @@
         </div>
         <noscript>
             <p>{{ $labels.noScript }}</p>
-            {{ range .AllTranslations }}
+            {{ range $available }}
                 <a href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ .Language.LanguageName }}</a>
             {{ end }}
         </noscript>

@@ -1,0 +1,11 @@
+{{/* Distinct taxonomy terms can collapse to one published URL after URL normalization. */}}
+{{- $ambiguous := dict -}}
+{{- range .Sites -}}
+    {{- $terms := where .Pages "Kind" "term" -}}
+    {{- range $terms.GroupBy "Permalink" -}}
+        {{- if gt (len .Pages) 1 -}}
+            {{- $ambiguous = merge $ambiguous (dict .Key true) -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- return $ambiguous -}}

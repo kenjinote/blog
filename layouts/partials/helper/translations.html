@@ -1,0 +1,11 @@
+{{- $translations := .AllTranslations -}}
+{{- if eq .Kind "term" -}}
+    {{- $ambiguous := partialCached "helper/ambiguous-term-urls.html" . -}}
+    {{- range $translations -}}
+        {{- if index $ambiguous .Permalink -}}
+            {{/* Do not claim equivalence with a term whose output can be overwritten. */}}
+            {{- $translations = slice $ -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- return $translations -}}

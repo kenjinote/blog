@@ -31,8 +31,8 @@ class MultilingualTest(unittest.TestCase):
             "layouts/_default/single.html": '{{ define "main" }}{{ end }}',
             "layouts/_default/list.html": '{{ define "main" }}{{ end }}',
             "layouts/partials/helper/icon.html": "",
-            "content/post/shared/index.md": '---\ntitle: 日本語記事\nslug: japanese-slug\n---\n日本語本文',
-            "content/post/shared/index.en.md": '---\ntitle: English article\nslug: english-slug\n---\nEnglish body',
+            "content/post/shared/index.md": '---\ntitle: 日本語記事\nslug: japanese-slug\ntags: ["Maxwell\'s Demon", "Maxwells Demon"]\n---\n日本語本文',
+            "content/post/shared/index.en.md": '---\ntitle: English article\nslug: english-slug\ntags: ["Maxwell\'s Demon"]\n---\nEnglish body',
             "content/post/only-ja/index.md": '---\ntitle: 未翻訳記事\n---\n日本語のみ',
             "content/post/no-ja/index.en.md": '---\ntitle: Original English\n---\nEnglish',
             "content/post/no-ja/index.fr.md": '---\ntitle: Français\n---\nFrançais',
@@ -42,11 +42,14 @@ class MultilingualTest(unittest.TestCase):
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text(text, encoding="utf-8")
         for path in ("layouts/partials/head/hreflang.html", "layouts/partials/sidebar/language-switch.html",
+                     "layouts/partials/helper/translations.html", "layouts/partials/helper/ambiguous-term-urls.html",
                      "data/languages.yaml", "assets/ts/language.ts"):
             target = cls.fixture / path
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(ROOT / path, target)
-        subprocess.run(["hugo", "--source", str(cls.fixture), "--quiet"], check=True)
+        build = subprocess.run(["hugo", "--source", str(cls.fixture)], capture_output=True, encoding="utf-8")
+        if build.returncode:
+            raise AssertionError(build.stdout + build.stderr)
         cls.public = cls.fixture / "public"
 
     @classmethod
@@ -74,6 +77,11 @@ class MultilingualTest(unittest.TestCase):
 
     def test_no_japanese_counterpart_has_no_x_default(self):
         self.assertNotIn("x-default", self.page("en/post/no-ja").alternates)
+
+    def test_ambiguous_term_has_no_unreliable_counterparts(self):
+        page = self.page("tags/maxwells-demon")
+        self.assertEqual(page.alternates, {"ja": page.canonical, "x-default": page.canonical})
+        self.assertEqual(page.options["en"], "")
 
     def test_duplicate_rejected(self):
         parser = check_multilingual.PageParser()
