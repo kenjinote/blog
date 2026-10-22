@@ -47,7 +47,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: npm ci
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -57,6 +57,10 @@ jobs:
             --minify \
             --buildFuture \
             --baseURL "https://kenji.blog/"
+      - name: Build search index
+        run: npm run search:index
+      - name: Verify search index
+        run: python3 scripts/check_search_index.py public
       - name: Verify HTTPS publication URLs
         run: python3 scripts/check_https_urls.py public
       - name: Upload artifact

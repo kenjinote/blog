@@ -1,4 +1,4 @@
-<article class="{{ if .Params.image }}has-image {{ end }}main-article">
+<article class="{{ if .Params.image }}has-image {{ end }}main-article"{{ if and (in .Site.Params.mainSections .Section) (not .Params.hidden) }} data-pagefind-body{{ else }} data-pagefind-ignore="all"{{ end }}>
     {{ partial "article/components/header" . }}
 
     {{ partial "article/components/content" . }}

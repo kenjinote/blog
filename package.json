@@ -1,0 +1,10 @@
+{
+  "name": "kenji-blog",
+  "private": true,
+  "scripts": {
+    "search:index": "pagefind --site public"
+  },
+  "devDependencies": {
+    "pagefind": "1.5.2"
+  }
+}

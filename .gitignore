@@ -4,3 +4,4 @@ assets/jsconfig.json
 .hugo_build.lock
 service_account.json
 表.csv
+node_modules/

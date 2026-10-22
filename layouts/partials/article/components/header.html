@@ -1,6 +1,11 @@
 <header class="article-header">
     {{- $image := partialCached "helper/image" (dict "Context" . "Type" "article") .RelPermalink "article" -}}
     {{ if $image.exists }}
+        {{- $searchImage := $image.permalink -}}
+        {{- if $image.resource -}}
+            {{- $searchImage = ($image.resource.Fill "120x120").RelPermalink -}}
+        {{- end -}}
+        <span hidden data-pagefind-meta="image[data-src]" data-src="{{ $searchImage }}"></span>
         <div class="article-image">
             <a href="{{ .RelPermalink }}">
                 {{ if $image.resource }}

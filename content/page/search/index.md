@@ -4,7 +4,6 @@ slug: "search"
 layout: "search"
 outputs:
     - html
-    - json
 menu:
     main:
         name: 検索

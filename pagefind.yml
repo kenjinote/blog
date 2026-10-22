@@ -1,0 +1,9 @@
+# Index published articles, not navigation, archives, or translated aliases.
+glob: "**/p/**/index.html"
+include_characters: "+#"
+exclude_selectors:
+  - ".article-category"
+  - ".article-time"
+  - ".article-translations"
+  - ".article-footer"
+  - ".lnt"

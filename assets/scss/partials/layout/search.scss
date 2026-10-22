@@ -1,3 +1,30 @@
+.search-help,
+.search-result--progress {
+    color: var(--body-text-color);
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.search-result--more {
+    margin-block: 12px 24px;
+    padding: 14px 24px;
+    border: 0;
+    border-radius: var(--card-border-radius);
+    background: var(--card-background);
+    color: var(--card-text-color-main);
+    box-shadow: var(--shadow-l1);
+    font: inherit;
+    cursor: pointer;
+
+    &:disabled { opacity: 0.6; cursor: wait; }
+    &:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 4px; }
+    &[hidden] { display: none; }
+}
+
+.template-search .search-form input {
+    padding-inline-end: calc(var(--button-size) + 10px);
+}
+
 .search-form {
     position: relative;
     --button-size: 80px;

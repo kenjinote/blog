@@ -1,0 +1,143 @@
+ja:
+  label: 検索
+  placeholder: キーワードを入力
+  help: 記事のタイトルや本文から検索できます。複数の言葉はスペースで区切ってください。
+  loading: 検索しています…
+  error: 検索を読み込めませんでした。通信を確認して、もう一度検索してください。
+  noResults: 一致する記事がありません。別のキーワードをお試しください。
+  summary: "#TOTAL 件の記事が見つかりました"
+  showing: "#TOTAL 件中 #SHOWN 件を表示"
+  more: さらに表示
+  noScript: 検索するにはJavaScriptを有効にしてください。
+en:
+  label: Search
+  placeholder: Enter keywords
+  help: Search article titles and content. Separate multiple words with spaces.
+  loading: Searching…
+  error: Search could not be loaded. Check your connection and search again.
+  noResults: No matching articles. Try different keywords.
+  summary: "#TOTAL articles found"
+  showing: "Showing #SHOWN of #TOTAL articles"
+  more: Show more
+  noScript: Enable JavaScript to search.
+zh-cn:
+  label: 搜索
+  placeholder: 输入关键词
+  help: 搜索文章标题和正文。多个关键词请用空格分隔。
+  loading: 正在搜索…
+  error: 无法加载搜索。请检查网络连接后重试。
+  noResults: 没有找到匹配的文章。请尝试其他关键词。
+  summary: "找到 #TOTAL 篇文章"
+  showing: "已显示 #SHOWN 篇，共 #TOTAL 篇"
+  more: 显示更多
+  noScript: 请启用JavaScript以使用搜索。
+zh-tw:
+  label: 搜尋
+  placeholder: 輸入關鍵字
+  help: 搜尋文章標題和內文。多個關鍵字請用空格分隔。
+  loading: 正在搜尋…
+  error: 無法載入搜尋。請檢查網路連線後重試。
+  noResults: 找不到符合的文章。請嘗試其他關鍵字。
+  summary: "找到 #TOTAL 篇文章"
+  showing: "已顯示 #SHOWN 篇，共 #TOTAL 篇"
+  more: 顯示更多
+  noScript: 請啟用JavaScript以使用搜尋。
+es:
+  label: Buscar
+  placeholder: Escribe palabras clave
+  help: Busca en títulos y contenido. Separa varias palabras con espacios.
+  loading: Buscando…
+  error: No se pudo cargar la búsqueda. Comprueba tu conexión e inténtalo de nuevo.
+  noResults: No hay artículos coincidentes. Prueba otras palabras clave.
+  summary: "#TOTAL artículos encontrados"
+  showing: "Mostrando #SHOWN de #TOTAL artículos"
+  more: Mostrar más
+  noScript: Activa JavaScript para buscar.
+ko:
+  label: 검색
+  placeholder: 검색어 입력
+  help: 글 제목과 본문을 검색합니다. 여러 검색어는 공백으로 구분하세요.
+  loading: 검색 중…
+  error: 검색을 불러오지 못했습니다. 네트워크 연결을 확인하고 다시 검색하세요.
+  noResults: 일치하는 글이 없습니다. 다른 검색어를 사용해 보세요.
+  summary: "#TOTAL개의 글을 찾았습니다"
+  showing: "#TOTAL개 중 #SHOWN개 표시"
+  more: 더 보기
+  noScript: 검색하려면 JavaScript를 활성화하세요.
+pt:
+  label: Buscar
+  placeholder: Digite palavras-chave
+  help: Busque nos títulos e no conteúdo. Separe várias palavras com espaços.
+  loading: Buscando…
+  error: Não foi possível carregar a busca. Verifique a conexão e tente novamente.
+  noResults: Nenhum artigo encontrado. Tente outras palavras-chave.
+  summary: "#TOTAL artigos encontrados"
+  showing: "Mostrando #SHOWN de #TOTAL artigos"
+  more: Mostrar mais
+  noScript: Ative o JavaScript para buscar.
+hi:
+  label: खोजें
+  placeholder: खोज शब्द लिखें
+  help: लेखों के शीर्षक और सामग्री में खोजें। एक से अधिक शब्दों को स्पेस से अलग करें।
+  loading: खोज जारी है…
+  error: खोज लोड नहीं हो सकी। अपना कनेक्शन जाँचें और फिर से खोजें।
+  noResults: कोई लेख नहीं मिला। दूसरे शब्दों से खोजें।
+  summary: "#TOTAL लेख मिले"
+  showing: "#TOTAL में से #SHOWN लेख दिखाए जा रहे हैं"
+  more: और दिखाएँ
+  noScript: खोजने के लिए JavaScript चालू करें।
+fr:
+  label: Rechercher
+  placeholder: Saisissez des mots-clés
+  help: Recherchez dans les titres et le contenu. Séparez les mots par des espaces.
+  loading: Recherche en cours…
+  error: Impossible de charger la recherche. Vérifiez votre connexion et réessayez.
+  noResults: Aucun article trouvé. Essayez d’autres mots-clés.
+  summary: "#TOTAL articles trouvés"
+  showing: "#SHOWN articles affichés sur #TOTAL"
+  more: Afficher plus
+  noScript: Activez JavaScript pour effectuer une recherche.
+de:
+  label: Suchen
+  placeholder: Suchbegriffe eingeben
+  help: Titel und Inhalte durchsuchen. Mehrere Wörter durch Leerzeichen trennen.
+  loading: Suche läuft…
+  error: Die Suche konnte nicht geladen werden. Verbindung prüfen und erneut suchen.
+  noResults: Keine passenden Artikel. Versuche andere Suchbegriffe.
+  summary: "#TOTAL Artikel gefunden"
+  showing: "#SHOWN von #TOTAL Artikeln angezeigt"
+  more: Mehr anzeigen
+  noScript: Aktiviere JavaScript, um zu suchen.
+ar:
+  label: بحث
+  placeholder: أدخل كلمات البحث
+  help: ابحث في عناوين المقالات ومحتواها. افصل بين الكلمات بمسافات.
+  loading: جارٍ البحث…
+  error: تعذّر تحميل البحث. تحقق من اتصالك وحاول مرة أخرى.
+  noResults: لم يتم العثور على مقالات مطابقة. جرّب كلمات أخرى.
+  summary: "تم العثور على #TOTAL مقالة"
+  showing: "عرض #SHOWN من #TOTAL مقالة"
+  more: عرض المزيد
+  noScript: فعّل JavaScript لاستخدام البحث.
+ru:
+  label: Поиск
+  placeholder: Введите ключевые слова
+  help: Поиск по заголовкам и тексту статей. Разделяйте слова пробелами.
+  loading: Поиск…
+  error: Не удалось загрузить поиск. Проверьте подключение и повторите попытку.
+  noResults: Статьи не найдены. Попробуйте другие ключевые слова.
+  summary: "Найдено статей: #TOTAL"
+  showing: "Показано #SHOWN из #TOTAL статей"
+  more: Показать ещё
+  noScript: Включите JavaScript для поиска.
+id:
+  label: Cari
+  placeholder: Masukkan kata kunci
+  help: Cari judul dan isi artikel. Pisahkan beberapa kata dengan spasi.
+  loading: Mencari…
+  error: Pencarian tidak dapat dimuat. Periksa koneksi dan coba lagi.
+  noResults: Tidak ada artikel yang cocok. Coba kata kunci lain.
+  summary: "#TOTAL artikel ditemukan"
+  showing: "Menampilkan #SHOWN dari #TOTAL artikel"
+  more: Tampilkan lebih banyak
+  noScript: Aktifkan JavaScript untuk mencari.

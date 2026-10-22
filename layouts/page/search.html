@@ -1,33 +1,35 @@
 {{ define "body-class" }}template-search{{ end }}
-{{ define "head" }}
-    {{- with .OutputFormats.Get "json" -}} 
-        <link rel="preload" href="{{ .RelPermalink }}" as="fetch" crossorigin="anonymous">
-    {{- end -}}
-{{ end }}
 {{ define "main" }}
-<form action="{{ .RelPermalink }}" class="search-form"{{ with .OutputFormats.Get "json" -}} data-json="{{ .RelPermalink }}"{{- end }}>
+{{- $text := index .Site.Data.search .Language.Lang -}}
+<form action="{{ .RelPermalink }}" class="search-form" role="search"
+    data-module="{{ "pagefind/pagefind.js" | relURL }}"
+    data-loading="{{ $text.loading }}" data-error="{{ $text.error }}"
+    data-no-results="{{ $text.noResults }}" data-summary="{{ $text.summary }}"
+    data-showing="{{ $text.showing }}">
     <p>
-        <label>{{ T "search.title" }}</label>
-        <input name="keyword" placeholder="{{ T `search.placeholder` }}" />
+        <label for="site-search">{{ $text.label }}</label>
+        <input id="site-search" name="keyword" type="search" autocomplete="off"
+            maxlength="200" placeholder="{{ $text.placeholder }}"
+            aria-controls="search-results" aria-describedby="search-help" />
     </p>
 
-    <button title="{{ T `search.title` }}">
+    <button type="submit" title="{{ $text.label }}" aria-label="{{ $text.label }}">
         {{ partial "helper/icon" "search" }}
     </button>
 </form>
+<p id="search-help" class="search-help">{{ $text.help }}</p>
+<noscript><p>{{ $text.noScript }}</p></noscript>
 
 <div class="search-result">
-    <h3 class="search-result--title section-title"></h3>
-    <div class="search-result--list article-list--compact"></div>
+    <h2 class="search-result--title section-title" role="status" aria-live="polite" aria-atomic="true"></h2>
+    <div id="search-results" class="search-result--list article-list--compact" aria-busy="false"></div>
+    <p class="search-result--progress" aria-live="polite"></p>
+    <button class="search-result--more" type="button" hidden>{{ $text.more }}</button>
 </div>
 
-<script>
-    window.searchResultTitleTemplate = "{{ T `search.resultTitle` }}"
-</script>
-
-{{- $opts := dict "minify" hugo.IsProduction "JSXFactory" "createElement" -}}
-{{- $searchScript := resources.Get "ts/search.tsx" | js.Build $opts -}}
-<script type="text/javascript" src="{{ $searchScript.RelPermalink }}" defer></script>
+{{- $opts := dict "minify" hugo.IsProduction -}}
+{{- $searchScript := resources.Get "ts/search.ts" | js.Build $opts | fingerprint -}}
+<script type="module" src="{{ $searchScript.RelPermalink }}"></script>
 
 {{ partialCached "footer/footer" . }}
 {{ end }}
