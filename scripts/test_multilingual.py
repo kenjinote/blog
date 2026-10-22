@@ -80,6 +80,11 @@ class MultilingualTest(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "Duplicate hreflang"):
             parser.feed('<link rel="alternate" hreflang="en" href="https://example.org/">' * 2)
 
+    def test_minified_empty_option(self):
+        parser = check_multilingual.PageParser()
+        parser.feed('<select id=language-select><option value data-language=en>English</option></select>')
+        self.assertEqual(parser.options, {"en": ""})
+
     def test_wrong_sidebar_destination_rejected(self):
         target = self.public / "post/japanese-slug/index.html"
         original = target.read_text(encoding="utf-8")

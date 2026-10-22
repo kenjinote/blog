@@ -11,12 +11,17 @@ import json
 import re
 import sys
 from collections import Counter
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "data/translation_reviews.json"
 LANGUAGES = ("en", "zh-cn", "es", "ko", "pt", "zh-tw", "hi", "fr", "de", "ar", "ru", "id")
+
+
+def today():
+    # Editors use Asia/Tokyo; CI runs in UTC, where the calendar day may differ.
+    return datetime.now(timezone(timedelta(hours=9))).date()
 
 
 def digest(path):
@@ -41,7 +46,7 @@ def load_ledger():
         content_path(translation)
         content_path(review["source"])
         assert translation != review["source"], "A translation cannot review itself"
-        assert date.fromisoformat(review["reviewedAt"]) <= date.today(), "Review date is in the future"
+        assert date.fromisoformat(review["reviewedAt"]) <= today(), "Review date is in the future"
         assert review["reviewer"].strip(), "Missing reviewer"
         for field in ("sourceHash", "translationHash"):
             assert re.fullmatch(r"[0-9a-f]{64}", review[field]), f"Invalid {field}"
@@ -97,7 +102,7 @@ def main():
     record.add_argument("translation", help="Path relative to content/")
     record.add_argument("--source", required=True, help="Original path relative to content/")
     record.add_argument("--reviewer", required=True)
-    record.add_argument("--date", default=date.today().isoformat())
+    record.add_argument("--date", default=today().isoformat())
     args = parser.parse_args()
     ledger = load_ledger()
     if args.command == "record":
@@ -105,7 +110,7 @@ def main():
         source = content_path(args.source)
         assert translation != source, "A translation cannot review itself"
         assert args.reviewer.strip(), "Missing reviewer"
-        assert date.fromisoformat(args.date) <= date.today(), "Review date is in the future"
+        assert date.fromisoformat(args.date) <= today(), "Review date is in the future"
         translation_key = translation.relative_to(ROOT / "content").as_posix()
         ledger["reviews"][translation_key] = {
             "source": source.relative_to(ROOT / "content").as_posix(),

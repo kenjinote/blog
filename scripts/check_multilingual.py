@@ -36,7 +36,8 @@ class PageParser(HTMLParser):
         if tag == "option" and self.in_switch:
             language = attrs["data-language"]
             assert language not in self.options, f"Duplicate language option: {language}"
-            self.options[language] = attrs.get("value", "")
+            # Hugo minifies value="" to the valid HTML boolean-style value attribute.
+            self.options[language] = attrs.get("value") or ""
         if attrs.get("id") == "language-status":
             self.status = bool(attrs.get("data-missing")) and attrs.get("role") == "status"
 
