@@ -1,6 +1,5 @@
 ---
-title: "Augustin-Louis Cauchy: Bapak Analisis Ketat dan Kehidupannya yang Penuh Gejolak"
-date: "2026-09-24T19:44:38+09:00"
+title: "Augustin-Louis Cauchy: Analisis yang Ketat dan Kehidupan Penuh Gejolak"
 description: "Eksplorasi mendetail tentang kehidupan matematikawan besar Prancis Augustin-Louis Cauchy dan berbagai pencapaian matematikanya dalam analisis dan teori fungsi kompleks."
 slug: "cauchy"
 date: 2026-09-20T19:20:00+09:00
@@ -11,89 +10,96 @@ tags:
   - "Analisis"
   - "Bilangan Kompleks"
   - "Sejarah Matematika"
+lastmod: 2026-10-24
 ---
 
 ## Pengantar
 
-Dalam sejarah matematika, abad ke-19 dikenal sebagai "Era Ketelitian". Matematikawan Prancis **[Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/)** (1789-1857) adalah orang yang memberikan landasan logis yang kuat untuk kalkulus, yang sebelumnya telah diperlakukan secara intuitif. Namanya memahkotai begitu banyak teorema dan konsep sehingga siapa pun yang mempelajari matematika modern pasti akan menemukannya.
+Dalam sejarah matematika, abad ke-19 dikenal sebagai "Era Ketelitian". Matematikawan Prancis **Augustin-Louis Cauchy** (1789-1857) adalah orang yang memberikan landasan logis yang kuat untuk kalkulus, yang sebelumnya telah diperlakukan secara intuitif. Namanya memahkotai begitu banyak teorema dan konsep sehingga siapa pun yang mempelajari matematika modern pasti akan menemukannya.
 
-Artikel ini mengeksplorasi kehidupan [Cauchy](https://kenji.blog/id/p/cauchy/) yang penuh gejolak, seorang raksasa dalam dunia matematika, dan pencapaian matematika brilian yang ia tinggalkan.
+Artikel ini mengeksplorasi kehidupan Cauchy yang penuh gejolak, seorang raksasa dalam dunia matematika, dan pencapaian matematika brilian yang ia tinggalkan.
 
 ## Kehidupan yang Penuh Gejolak: Hidup di Prancis yang Penuh Gejolak
 
-[Cauchy](https://kenji.blog/id/p/cauchy/) lahir di Paris pada tahun 1789, tepat setelah pecahnya Revolusi Prancis. Kehidupannya selalu terkait dengan pergolakan politik di Prancis.
+Cauchy lahir di Paris pada tahun 1789, tepat setelah pecahnya Revolusi Prancis. Kehidupannya selalu terkait dengan pergolakan politik di Prancis.
 
 ### Masa Kecil dan Pendidikan
 
-Ayah [Cauchy](https://kenji.blog/id/p/cauchy/) memegang posisi tinggi di kepolisian, tetapi untuk menghindari kekacauan revolusi, keluarganya melarikan diri ke Arcueil, pinggiran kota Paris. Di sana, ia menerima instruksi dari ilmuwan-ilmuwan hebat pada masa itu, seperti Laplace dan Lagrange, yang merupakan teman ayahnya. Lagrange, khususnya, mengenali bakat matematika [Cauchy](https://kenji.blog/id/p/cauchy/) muda dan dengan terkenal meramalkan, "Anak laki-laki ini suatu hari nanti akan melampaui kita semua."
+Keluarga Cauchy pindah ke Arcueil di dekat Paris ketika ia masih kecil untuk menghindari pergolakan revolusi. Ayahnya aktif dalam pendidikannya, dan tamu seperti Laplace serta Lagrange juga menaruh perhatian pada Cauchy muda.
 
 ```mermaid
 flowchart TD
     A["1789: Lahir di Paris"] --> B["1805: Masuk École Polytechnique"]
     B --> C["1807: Melanjutkan ke Sekolah Jembatan dan Jalan"]
     C --> D["1810: Bekerja pada pembangunan pelabuhan di Cherbourg"]
-    D --> E["1815: Kembali ke Paris untuk fokus pada penelitian matematika"]
-    E --> F["1816: Terpilih menjadi anggota Akademi Ilmu Pengetahuan Prancis"]
+    D --> E["1812: Kembali ke Paris setelah jatuh sakit"]
+    E --> F["1816: Menjadi anggota Akademi Ilmu Pengetahuan Prancis"]
 ```
 
 ### Karir dan Keyakinan Politik
 
-Setelah lulus dari École Polytechnique, ia mulai bekerja sebagai insinyur sipil, tetapi kesehatannya yang hancur dan hasratnya pada matematika membawanya ke jalan seorang peneliti. Pada tahun 1816, selama reorganisasi Akademi Ilmu Pengetahuan setelah Restorasi Bourbon, ia terpilih menjadi anggota, menggantikan Monge dan Carnot yang dikeluarkan karena alasan politik.
+Cauchy lulus dari École Polytechnique pada 1807 lalu masuk École des Ponts et Chaussées. Ia bekerja pada fasilitas pelabuhan Cherbourg sejak 1810 dan kembali ke Paris pada 1812 setelah jatuh sakit. Ia mulai mengajar analisis di École Polytechnique pada 1815. Pada 1816 ia mendapat salah satu kursi Akademi Ilmu Pengetahuan yang kosong setelah Monge dan Carnot dikeluarkan karena alasan politik.
 
-[Cauchy](https://kenji.blog/id/p/cauchy/) adalah seorang Katolik yang taat dan seorang royalis yang bersemangat (pendukung Wangsa Bourbon). Ketika Charles X turun takhta setelah Revolusi Juli 1830, ia menolak untuk bersumpah setia kepada rezim baru dan memilih pengasingan. Ia mengembara melalui Swiss, Italia, dan Praha, meninggalkan tanah airnya selama sekitar delapan tahun sampai kembali ke Paris pada tahun 1838. Bahkan setelah kepulangannya, ia terus menolak sumpah tersebut, dan untuk waktu yang lama tidak dapat mengamankan posisi universitas formal.
+Cauchy beragama Katolik dan mendukung monarki. Ia meninggalkan Paris pada 1830 setelah Revolusi Juli, kemudian kehilangan jabatan di Prancis karena tidak mengucapkan sumpah setia yang diwajibkan rezim baru. Ia tinggal di Swiss, Turin, dan Praha sebelum kembali ke Paris pada 1838; penolakan sumpah itu juga memengaruhi kembalinya ia mengajar.
 
 Ideologi konservatifnya dan kepribadiannya yang tanpa kompromi terkadang menyebabkan gesekan dengan rekan-rekan dan matematikawan yang lebih muda (seperti [Abel](https://kenji.blog/id/p/abel/) dan [Galois](https://kenji.blog/id/p/galois/)), tetapi dedikasinya pada matematika dan produktivitasnya yang luar biasa tidak dapat disangkal oleh siapa pun.
 
 ## Revolusi dalam Matematika: Pengejaran Ketelitian
 
-Pencapaian terbesar [Cauchy](https://kenji.blog/id/p/cauchy/) adalah memberikan dasar yang kuat untuk analisis matematika. Ia merekonstruksi konsep-konsep seperti limit, kontinuitas, diferensiasi, dan integrasi menggunakan definisi ketat yang mengarah pada argumen [epsilon-delta](/id/p/epsilon-delta-definition/) (kemudian disempurnakan oleh Weierstrass) yang kita pelajari saat ini.
+Cauchy berkontribusi besar pada pembahasan yang ketat secara matematis tentang limit, kontinuitas, diferensiasi, integrasi, dan konvergensi deret. Cours d’analyse terbitan 1821 merupakan bagian penting dari pekerjaan itu. Definisinya tidak dapat begitu saja disamakan dengan formulasi epsilon–delta modern yang lengkap; matematikawan berikutnya menyempurnakan dasar-dasar tersebut.
 
 Berikut adalah beberapa pencapaian penting yang menyandang namanya.
 
-### 1. Barisan [Cauchy](https://kenji.blog/id/p/cauchy/)
+### 1. Barisan Cauchy
 
-Konsep **barisan [Cauchy](https://kenji.blog/id/p/cauchy/)** sangat penting ketika membahas kontinuitas bilangan real. Suatu barisan $ (a_n) $ adalah barisan [Cauchy](https://kenji.blog/id/p/cauchy/) jika selisih antara $ a_n $ dan $ a_m $ menjadi sangat kecil secara sembarang ketika indeks $ n $ dan $ m $ cukup besar.
+Konsep **barisan Cauchy** penting untuk membahas kelengkapan bilangan real. Suatu barisan $(a_n)$ disebut barisan Cauchy jika selisih mutlak antara $a_n$ dan $a_m$ dapat dibuat lebih kecil dari setiap batas positif, untuk semua indeks $n,m$ yang cukup besar.
 
 Dinyatakan secara matematis, untuk sembarang $ \epsilon > 0 $, terdapat bilangan asli $ N $ sehingga untuk semua $ n, m > N $,
 $$ |a_n - a_m| < \epsilon $$
 selalu berlaku.
 
-Dalam ruang bilangan real, sifat bahwa "barisan [Cauchy](https://kenji.blog/id/p/cauchy/) selalu konvergen" menunjukkan bahwa ruang tersebut "lengkap". Konsep kelengkapan ini adalah dasar topologi modern dan analisis fungsional.
+Dalam ruang bilangan real, sifat bahwa "barisan Cauchy selalu konvergen" menunjukkan bahwa ruang tersebut "lengkap". Konsep kelengkapan ini adalah dasar topologi modern dan analisis fungsional.
 
-### 2. Teorema Integral [Cauchy](https://kenji.blog/id/p/cauchy/)
+### 2. Teorema Integral Cauchy
 
-Tidak berlebihan untuk mengatakan bahwa teori fungsi kompleks (analisis kompleks) didirikan hampir seorang diri oleh [Cauchy](https://kenji.blog/id/p/cauchy/). Teorema utamanya adalah **Teorema Integral [Cauchy](https://kenji.blog/id/p/cauchy/)**.
+Cauchy berperan sentral dalam perkembangan analisis kompleks. Salah satu hasilnya yang penting adalah [teorema integral Cauchy](/id/p/cauchys-integral-theorem/). Banyak matematikawan lain turut mengembangkan bidang ini setelahnya.
 
-Teorema ini menyatakan bahwa untuk fungsi kompleks $ f(z) $ yang holomorfik (dapat didiferensiasi) di suatu wilayah $ D $, integral garis di sepanjang sembarang kurva tertutup sederhana $ C $ di dalam $ D $ adalah nol.
+Jika $f$ holomorfik pada domain terhubung sederhana (simply connected) $D$ dan $C$ merupakan kurva tertutup mulus sepotong-sepotong di dalam $D$, integral berikut bernilai nol. Pada domain berlubang, perlu pemeriksaan tambahan, misalnya apakah kurva mengelilingi lubang.
 
 $$ \oint_C f(z) \, dz = 0 $$
 
-Dari teorema yang tampaknya sederhana ini, hasil yang mencengangkan terus diturunkan. Misalnya, kita memperoleh **Rumus Integral [Cauchy](https://kenji.blog/id/p/cauchy/)**, yang menunjukkan bahwa nilai suatu fungsi ditentukan semata-mata oleh nilainya pada batas.
+Selanjutnya, jika $C$ merupakan kurva sederhana tertutup, mulus sepotong-sepotong, berorientasi positif (berlawanan arah jarum jam), $f$ holomorfik pada himpunan terbuka yang memuat kurva beserta bagian dalamnya, dan $a$ berada di dalam $C$, berlaku rumus integral Cauchy berikut.
 
 $$ f(a) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z - a} \, dz $$
 
-Rumus ini adalah alat yang sangat kuat yang menjamin bahwa fungsi holomorfik dapat didiferensiasi tanpa batas dan dapat diperluas menjadi [deret Taylor](/id/p/taylor-and-maclaurin-series/).
+Rumus ini menyiratkan bahwa fungsi holomorfik dapat diturunkan tak berhingga kali dan memiliki [pengembangan deret Taylor](/id/p/taylor-and-maclaurin-series/) lokal di sekitar setiap titik. Asumsinya penting: $f(z)=1/z$ holomorfik di luar titik asal, tetapi integralnya pada lingkaran satuan yang dilalui berlawanan arah jarum jam adalah $2\pi i$.
 
-### 3. Ketaksamaan [Cauchy](https://kenji.blog/id/p/cauchy/)-Schwarz
+### 3. Ketaksamaan Cauchy-Schwarz
 
 Ini adalah salah satu ketaksamaan yang paling sering digunakan dalam aljabar linear dan analisis. Untuk sembarang vektor $ \mathbf{u} $ dan $ \mathbf{v} $ dari bilangan real atau kompleks dalam ruang hasil kali dalam, hubungan berikut berlaku:
 
 $$ |\langle \mathbf{u}, \mathbf{v} \rangle|^2 \leq \langle \mathbf{u}, \mathbf{u} \rangle \cdot \langle \mathbf{v}, \mathbf{v} \rangle $$
 
-Dalam bentuk integralnya, untuk fungsi $ f(x) $ dan $ g(x) $, dinyatakan sebagai berikut:
+Untuk fungsi bernilai real $f,g$ yang kuadratnya terintegralkan pada interval berhingga $[a,b]$ dengan $a<b$, bentuk integralnya adalah sebagai berikut. Untuk fungsi kompleks, hasil kali dalam menggunakan konjugat kompleks dan diperlukan kuadrat modulus.
 
 $$ \left( \int_a^b f(x)g(x) \, dx \right)^2 \leq \left( \int_a^b f(x)^2 \, dx \right) \left( \int_a^b g(x)^2 \, dx \right) $$
 
 Ketaksamaan ini membentuk dasar untuk memperluas konsep sudut dan jarak antara vektor ke ruang abstrak.
 
-## Produktivitas dan Warisan [Cauchy](https://kenji.blog/id/p/cauchy/)
+## Produktivitas dan Warisan Cauchy
 
-[Cauchy](https://kenji.blog/id/p/cauchy/) menerbitkan sekitar 800 makalah selama hidupnya. Ini adalah angka yang mengejutkan, kedua setelah Euler. Bahkan ada anekdot bahwa ia mengirimkan begitu banyak makalah ke buletin Akademi Ilmu Pengetahuan satu demi satu sehingga Akademi harus memberlakukan batasan halaman pada makalah untuk menekan biaya pencetakan.
+Cauchy adalah peneliti produktif yang meninggalkan sekitar 800 makalah matematika. Biografi MacTutor menghitung 789 makalah, dan karya-karya lengkapnya mencakup 27 jilid.
 
 Subjek penelitiannya tidak terbatas pada analisis tetapi diperluas ke berbagai bidang dalam matematika dan fisika, termasuk aljabar (studi permutasi dalam teori grup) dan fisika matematika (teori elastisitas dan optik).
 
 ## Kesimpulan
 
-[Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/) menempa matematika, yang sebelumnya mengandalkan intuisi, menjadi disiplin akademis yang ketat melalui kekuatan logika. Konsep dan teorema yang ia ciptakan berakar dalam di mana-mana dalam matematika modern.
+Augustin-Louis Cauchy menempa matematika, yang sebelumnya mengandalkan intuisi, menjadi disiplin akademis yang ketat melalui kekuatan logika. Konsep dan teorema yang ia ciptakan berakar dalam di mana-mana dalam matematika modern.
 
-Meskipun hidupnya tidak mulus, karena ia memilih pengasingan sebagai martir atas keyakinan politiknya, hasratnya untuk mengejar kebenaran tidak pernah goyah. Warisan intelektual luar biasa yang ia tinggalkan terus membimbing ahli matematika dan ilmuwan di seluruh dunia saat ini.
+Meskipun menghadapi pergolakan politik dan bertahun-tahun tinggal di luar negeri, Cauchy menghasilkan banyak karya matematika. Tulisan dan teoremanya terus memengaruhi orang yang mempelajari bidang ini.
+
+## Referensi
+
+- [MacTutor: Augustin-Louis Cauchy](https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/)
+- [MIT 18.112: The General Cauchy Theorem](https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf)
+- [NIST DLMF: Calculus of a Complex Variable](https://dlmf.nist.gov/1.9)

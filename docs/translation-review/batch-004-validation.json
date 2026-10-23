@@ -7,7 +7,7 @@
   },
   "files": [
     {
-      "language": "ja",
+      "language": "ar",
       "displayMathMatches": true,
       "formulaCount": 5,
       "timelineYears": [
@@ -19,6 +19,26 @@
         "1816"
       ],
       "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "de",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
       "internalArticleLinksExist": true,
       "eyecatchExists": true,
       "hugoRendered": true,
@@ -37,6 +57,197 @@
         "1816"
       ],
       "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "es",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "fr",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "hi",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "id",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "ko",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "ja",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "pt",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "ru",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "zh-cn",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "zh-tw",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "counterexamplePresent": true,
       "internalArticleLinksExist": true,
       "eyecatchExists": true,
       "hugoRendered": true,
@@ -69,6 +280,6 @@
     "multilingualPagesChecked": 473,
     "httpsHtmlFilesChecked": 895,
     "httpsXmlFilesChecked": 41,
-    "scope": "Five article bundles rendered; in the Cauchy bundle only Japanese and English have been semantically reviewed so far."
+    "scope": "Five fully reviewed article bundles, 65 rendered source/translation article versions."
   }
 }

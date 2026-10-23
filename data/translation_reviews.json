@@ -495,6 +495,116 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-004.json",
       "evidenceHash": "068e6166be631e6f895a6e7255b62d4d98a56ed50e99aeb2979e19b6a96cbb36"
+    },
+    "post/cauchy/index.zh-cn.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "403721841247f5720ce67b1dd65e690e07e97d35d1828171885d1076a925d85c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "44db3b4e81beb79063a867b30e4a1ec49a40c431ad42bb0179b4c1a3f016bd8e"
+    },
+    "post/cauchy/index.zh-tw.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "6d259309e0646aa8cff00b8c91f1ed2fa89c68451fae846c873ea2602cbc2450",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "a0789f28f6eb6606259d979fbfea3eef4a81a4d4d54803c3bcc3ab9557d583ce"
+    },
+    "post/cauchy/index.es.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "dc9a97f407e8cbbac48e0b7f782d469533ccafe7606c71c0b15b72380f0247ef",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "4ba614a978ef52b69ce03a33b40e2961a1672d2464c1e37ae1c7d26af70050e2"
+    },
+    "post/cauchy/index.pt.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "0a085ee204084a3924da3b29fdca614ee92858d349bd89e88b58638775da1f02",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "18ac216eb5504f4b7d5832e8151c06e2962612a5454b0bc16c32fbe28ef80a04"
+    },
+    "post/cauchy/index.fr.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "745b1d45ffa441be477f69481ec8a9858adf589f426c41df81b36d106acd4dbd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "1945eceac06bcb39c38ed90be5ffc42e218131c29c4f8fb3e88a4760d7af4662"
+    },
+    "post/cauchy/index.de.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "5666378fa7b0adf41ebf283df0a4323df43e0889ee4fbf60b9af256d73a79fee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "659bbe0223091f58dedc24354636dadf92b4674327899d58e117114739e761c0"
+    },
+    "post/cauchy/index.ko.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "66e284e98cdcdb717fd7de42b87c6e2f1b5f2750b8125dfe0f5ccd7e27fc4568",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "6a093fe387e669361871f6585905306a1ba8b1247a8dca6b101c5f0735f1edbe"
+    },
+    "post/cauchy/index.id.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "93ae3e0d9e813461e0cf66c3bb9573260d45f73eee7f3314eda4bae963828528",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "ad0d994439c1f254d670d6994d87790a233e2d3586b9271d45570f77b8926d9c"
+    },
+    "post/cauchy/index.ru.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "14c1a399cd06f135b9599b55f98104d6fee71205366b70e1017e1f4130c78e88",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "c64db4abfa8ef5522d1e29d730326279ff0db8330400afae2dc66b428f596cc3"
+    },
+    "post/cauchy/index.ar.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "a394271747e402828c9c6d5bccc1608fa320c1d02d3fa6f6c3aea498ce98b43b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "b886d8210700319d253ecd1a153221239cf282a8f21f0ae7e82dfa5e647251f8"
+    },
+    "post/cauchy/index.hi.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "2eb82dedf7b3c8e6bc951550dc2dd3f24ef1fad4e2c25e6c3eae0abc8b3d0888",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "102975a5260e5ede8dcc89cebbdc8d145d2c6e6d8021a950c351ef4b825e3ce3"
     }
   }
 }
