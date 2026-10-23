@@ -13,7 +13,20 @@
   },
   "files": [
     {
-      "file": "content/post/law-of-large-numbers/index.md",
+      "file": "content/post/law-of-large-numbers/index.ar.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.de.md",
       "pythonAstMatches": true,
       "displayMathMatches": true,
       "codeExecuted": true,
@@ -27,6 +40,110 @@
     },
     {
       "file": "content/post/law-of-large-numbers/index.en.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.es.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.fr.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.hi.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.id.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.ko.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.pt.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.ru.md",
       "pythonAstMatches": true,
       "displayMathMatches": true,
       "codeExecuted": true,
@@ -63,71 +180,6 @@
       "remainingArticleLinksExist": true,
       "hugoRendered": true,
       "primaryReferencesRendered": true
-    },
-    {
-      "file": "content/post/law-of-large-numbers/index.es.md",
-      "pythonAstMatches": true,
-      "displayMathMatches": true,
-      "codeExecuted": true,
-      "rollCount": 10000,
-      "seed": 42,
-      "finalMean": 3.4999,
-      "subplotCount": 1,
-      "remainingArticleLinksExist": true,
-      "hugoRendered": true,
-      "primaryReferencesRendered": true
-    },
-    {
-      "file": "content/post/law-of-large-numbers/index.pt.md",
-      "pythonAstMatches": true,
-      "displayMathMatches": true,
-      "codeExecuted": true,
-      "rollCount": 10000,
-      "seed": 42,
-      "finalMean": 3.4999,
-      "subplotCount": 1,
-      "remainingArticleLinksExist": true,
-      "hugoRendered": true,
-      "primaryReferencesRendered": true
-    },
-    {
-      "file": "content/post/law-of-large-numbers/index.ko.md",
-      "pythonAstMatches": true,
-      "displayMathMatches": true,
-      "codeExecuted": true,
-      "rollCount": 10000,
-      "seed": 42,
-      "finalMean": 3.4999,
-      "subplotCount": 1,
-      "remainingArticleLinksExist": true,
-      "hugoRendered": true,
-      "primaryReferencesRendered": true
-    },
-    {
-      "file": "content/post/law-of-large-numbers/index.id.md",
-      "pythonAstMatches": true,
-      "displayMathMatches": true,
-      "codeExecuted": true,
-      "rollCount": 10000,
-      "seed": 42,
-      "finalMean": 3.4999,
-      "subplotCount": 1,
-      "remainingArticleLinksExist": true,
-      "hugoRendered": true,
-      "primaryReferencesRendered": true
-    },
-    {
-      "file": "content/post/law-of-large-numbers/index.fr.md",
-      "pythonAstMatches": true,
-      "displayMathMatches": true,
-      "codeExecuted": true,
-      "rollCount": 10000,
-      "seed": 42,
-      "finalMean": 3.4999,
-      "subplotCount": 1,
-      "remainingArticleLinksExist": true,
-      "hugoRendered": true,
-      "primaryReferencesRendered": true
     }
   ],
   "limitations": [
@@ -139,6 +191,6 @@
     "multilingualPagesChecked": 408,
     "httpsHtmlFilesChecked": 778,
     "httpsXmlFilesChecked": 41,
-    "scope": "Four article bundles including the three priority bundles; only the versions listed in files were semantically reviewed in this batch."
+    "scope": "Four fully reviewed article bundles; 52 rendered source/translation article versions."
   }
 }

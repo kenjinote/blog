@@ -445,6 +445,46 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-003.json",
       "evidenceHash": "8d6592b5324f81d8b6594504485c385242541832b4f013fa0dd003be36bcd7d1"
+    },
+    "post/law-of-large-numbers/index.de.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "7c6d0ce47cf5a7912557304aed9d7f486a097d17c181fa2e2f7dc73edf41ce97",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "e799b1e66cf050849310f467713c4c37f2ba547968a59c99911fe657fda6d907"
+    },
+    "post/law-of-large-numbers/index.ru.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "e58eea33a179e10dc8eb491c231befb424040ba2b9bcbbe2de3e09a72198df5a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "b044288964a34fc66916cdafe0cbdb01fb4db268caa7aed11deff9bcf924b299"
+    },
+    "post/law-of-large-numbers/index.hi.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "32df844b30d860a9e4fe2fff8863d9f62ba3c6800fed0e8a64a92659d19fa6cb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "5b6dfc73d84d2482f4b5aa3d312f7dadd525f786560288fb791caaddfc863987"
+    },
+    "post/law-of-large-numbers/index.ar.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "91a996b2399e5419422541a5292a81b3e75dd848c4b551be2de97c4a1778f2fb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "45a2223b2af234f3ede5c14b4f79e19775a3e1553e4726bda9db672f367be6bd"
     }
   }
 }
