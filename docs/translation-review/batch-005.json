@@ -352,6 +352,184 @@
         "https://dlmf.nist.gov/1.9"
       ],
       "validation": "docs/translation-review/batch-005-validation.json"
+    },
+    "post/cauchys-integral-theorem/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "e0e30199cf12b9f16a63f046183c34271eda717be4e64415a2cc536c497783bf",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used सरलसंबद्ध with an English alias for simply connected, खंडशः C1 for contour regularity, सतत for continuity, प्रतिअवकलज for primitive, and अपसरण with an English alias for divergence. Identified Goursat as गूर्सा (Édouard Goursat), removed unsupported dating and corrected one-time differentiability to the every-point condition. Replaced infinite-integral wording by अनुचित समाकल (improper integrals) and specified counterclockwise orientation as वामावर्त."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Used सरलसंबद्ध with an English alias for simply connected, खंडशः C1 for contour regularity, सतत for continuity, प्रतिअवकलज for primitive, and अपसरण with an English alias for divergence. Identified Goursat as गूर्सा (Édouard Goursat), removed unsupported dating and corrected one-time differentiability to the every-point condition. Replaced infinite-integral wording by अनुचित समाकल (improper integrals) and specified counterclockwise orientation as वामावर्त.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 has not yet been verified."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
+    },
+    "post/cauchys-integral-theorem/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "a286a080ebe19fbf5b7b60dfb21af8bd416bcf35b3d4e97fb65269aca376f2a2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Removed irrelevant Windows executable-path links from the mathematical word مسار. Standardized theorem as مبرهنة and residue as البواقي rather than sediment الرواسب; used دالة أصلية rather than an ambiguous inverse derivative. Kept analytical/holomorphic equivalence explicit; used English aliases and the scalar formulas to distinguish global circulation from local curl, and التباعد for divergence. The Arabic university course sources support terminology only, not the theorem proof."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Removed irrelevant Windows executable-path links from the mathematical word مسار. Standardized theorem as مبرهنة and residue as البواقي rather than sediment الرواسب; used دالة أصلية rather than an ambiguous inverse derivative. Kept analytical/holomorphic equivalence explicit; used English aliases and the scalar formulas to distinguish global circulation from local curl, and التباعد for divergence. The Arabic university course sources support terminology only, not the theorem proof.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 has not yet been verified."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9",
+        "https://www.psau.edu.sa/csh/ar/wsf-almqrrat-2",
+        "https://cloud.uobasrah.edu.iq/uploads/2025/04/09/4320%20%D8%A7%D9%84%D8%A3%D9%85%D8%AA%D8%AD%D8%A7%D9%86%20%D8%A7%D9%84%D8%AA%D9%86%D8%A7%D9%81%D8%B3%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%20-%20%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A7%D9%87.pdf"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
+    },
+    "post/cauchys-integral-theorem/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "6457498aa361ba145f4fa11893ab58d32e1e92c3d9be334dbfbab35de784f419",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used односвязная область, кусочно-гладкая кривая, первообразная and скалярный ротор/дивергенция. Corrected the grammar in the path-independence proof and explicitly allowed self-intersections there. Replaced хотя бы один раз by complex differentiability at every point of the open domain, and confined boundary determination to the contour interior."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Used односвязная область, кусочно-гладкая кривая, первообразная and скалярный ротор/дивергенция. Corrected the grammar in the path-independence proof and explicitly allowed self-intersections there. Replaced хотя бы один раз by complex differentiability at every point of the open domain, and confined boundary determination to the contour interior.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 has not yet been verified."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
+    },
+    "post/cauchys-integral-theorem/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "ee36a4793bf19997569a8131d55adc2936eb984145d52c33ac064dc0c399bb55",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Changed fungsi nyata/variabel nyata to fungsi real/variabel real and batas to limit in the derivative definition. Used mulus sepotong-sepotong and antiturunan; replaced terhubung ganda with domain berlubang to avoid implying exactly double connectivity. Changed integral tertentu/tak hingga to integral tentu/tak wajar; explicitly separated curl and divergensi and qualified path independence."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Changed fungsi nyata/variabel nyata to fungsi real/variabel real and batas to limit in the derivative definition. Used mulus sepotong-sepotong and antiturunan; replaced terhubung ganda with domain berlubang to avoid implying exactly double connectivity. Changed integral tertentu/tak hingga to integral tentu/tak wajar; explicitly separated curl and divergensi and qualified path independence.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 has not yet been verified."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
     }
   }
 }

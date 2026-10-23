@@ -5,7 +5,7 @@
     "python": "3.12.14",
     "numpy": "2.3.5"
   },
-  "scope": "Japanese source and eight full-body-reviewed translations only: en, zh-cn, zh-tw, es, ko, pt, fr, de.",
+  "scope": "Japanese source and all twelve full-body-reviewed translations: en, zh-cn, zh-tw, es, ko, pt, fr, de, hi, ar, ru, id.",
   "files": [
     {
       "language": "ja",
@@ -346,6 +346,153 @@
       "singlePublicationDate": true,
       "hugoRendered": true,
       "correctedDiagramRendered": true
+    },
+    {
+      "language": "hi",
+      "displayMathMatches": true,
+      "formulaCount": 14,
+      "mermaidEdges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "inlineCounterexamplesAndCurlDivergencePresent": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchy",
+        "residue-theorem"
+      ],
+      "eyecatchExists": true,
+      "singlePublicationDate": true,
+      "hugoRendered": true,
+      "correctedDiagramRendered": true
+    },
+    {
+      "language": "ar",
+      "displayMathMatches": true,
+      "formulaCount": 14,
+      "mermaidEdges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "inlineCounterexamplesAndCurlDivergencePresent": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "residue-theorem"
+      ],
+      "eyecatchExists": true,
+      "singlePublicationDate": true,
+      "hugoRendered": true,
+      "correctedDiagramRendered": true
+    },
+    {
+      "language": "ru",
+      "displayMathMatches": true,
+      "formulaCount": 14,
+      "mermaidEdges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "inlineCounterexamplesAndCurlDivergencePresent": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "residue-theorem"
+      ],
+      "eyecatchExists": true,
+      "singlePublicationDate": true,
+      "hugoRendered": true,
+      "correctedDiagramRendered": true
+    },
+    {
+      "language": "id",
+      "displayMathMatches": true,
+      "formulaCount": 14,
+      "mermaidEdges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "inlineCounterexamplesAndCurlDivergencePresent": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchy",
+        "residue-theorem",
+        "riemann"
+      ],
+      "eyecatchExists": true,
+      "singlePublicationDate": true,
+      "hugoRendered": true,
+      "correctedDiagramRendered": true
     }
   ],
   "supplementaryQuadrature": {
@@ -367,9 +514,9 @@
   "localPreview": {
     "hugo": "0.139.0 extended",
     "multilingualPagesChecked": 538,
-    "httpsHtmlFilesChecked": 1025,
+    "httpsHtmlFilesChecked": 1027,
     "httpsXmlFilesChecked": 41,
-    "scope": "Six bundles rendered; semantic review of integral-theorem translations is limited to en, zh-cn, zh-tw, es, ko, pt, fr, de. The remaining four translations are not reviewed.",
+    "scope": "Six fully reviewed article bundles rendered: 78 source/translation article versions. All twelve integral-theorem translations have now been read and compared in full.",
     "existingWarnings": "Post-only preview lacks search/archive pages and home JSON layout; existing Portuguese theme UI translations are incomplete."
   }
 }
