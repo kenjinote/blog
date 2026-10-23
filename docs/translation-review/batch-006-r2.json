@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/residue-theorem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/residue-theorem/index.md",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "0ae3fc03dbc24ae352c3d1cf61f72ddfcc3bdf1b84c304acaa2676adfe77efc3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, description, introduction, singularities and Laurent sections, theorem, rational/Fourier/keyhole examples and conclusion with the corrected Japanese source. Removed blanket claims that complexification solves arbitrary real integrals. Defined the conditions on the function, curve and limits at every application. Reconfirmed against the revised principal-part paragraph; no other source content changed."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Changed the ambiguous Complex Real Integrals title to Computing Real Integrals. Distinguished isolated/removable/essential singularities from poles, ordinary improper integrals from principal values, primitive/antiderivative from a definite integral, and a chosen logarithm branch from a multivalued expression. Used a dedicated English Cauchy-theorem link and matching Taylor/Euler links."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 17 display formulas after normalizing Res/留数 labels; read the Cauchy-theorem annotation separately. Verified positive piecewise C1 simple-contour hypotheses, finite interior isolated singularities, none on the curve, and winding-number qualification. Checked R>1/R>a bounds, absolute convergence, k>0 exponential decay, the Jordan estimate, and 0<a<1 keyhole endpoint convergence. On 0<arg z<2π, checked lower-side e^(-2πia), reverse orientation, residue e^(-πia), and the resulting phase equation and π/sin(πa). Source supplementary calculations check four semicircles, three small-circle pole integrals and five logarithmically transformed real integrals; numerical evidence is illustrative, not proof. Explicitly checked that the principal part is the sum of negative-power terms, not the coefficient collection."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all three Mermaid flowcharts, with 6, 3 and 4 edges. Corrected the initial real-integral wording, singularity/branch-cut step, and outer/inner circles to avoid crossing the cut. There is no standalone executable numerical program in the article."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed article self-links; checked all absolute and root-relative internal targets exist in English and the eyecatch exists. Linked Cauchy theorem, Taylor expansion and Euler formula to their matching-language articles. Read the NIST/MIT references used for the source correction. Verified the corrected keyhole labels/reference in local HTML and passed multilingual/HTTPS validators."
+        }
+      },
+      "summary": "Complete-body semantic comparison and correction against the revised Japanese source, including principal part, theorem hypotheses, all three examples, seventeen formulas, three diagrams and links.",
+      "languageSpecificFindings": "Reconfirmed the complete review after the source principal-part paragraph was corrected from a collection of coefficients to the sum of negative-power terms. Git diff confirms that this paragraph is the only source/English change since the full review in 6a0603e4d. Clarified the English sum explicitly; preserved all other reviewed text and all seventeen formulas.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement full-body reading and do not prove the theorem.",
+        "Seven residue-theorem translations remain unreviewed; publication of batch 006 is not yet verified."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.10",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/3c58ce71ec6f7573804221d76158a0bd_MIT18_04S18_topic8.pdf",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf"
+      ],
+      "validation": "docs/translation-review/batch-006-validation.json",
+      "supersedesEvidence": "docs/translation-review/batch-006.json:post/residue-theorem/index.en.md"
+    },
+    "post/residue-theorem/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/residue-theorem/index.md",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "86aae272ee7517f7c0966616a26a42132fe1d955b989e576fe151190fca63ad6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, introduction, singularities/Laurent/theorem sections, all rational/Fourier/keyhole examples and conclusion with the corrected Japanese source. Supplied contour/function/convergence hypotheses and removed blanket claims that complexification solves arbitrary real integrals."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected 负数次幂项的系数群 to the sum of negative-power terms as 主要部分. Removed the unsupported impossibility claim and the added 连续 in the higher-degree polynomial passage. Used 去心邻域, 可去/本性奇点, 正向/逆时针, 绝对收敛 and 柯西主值, with explicit branch phases and winding-number qualification."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 17 display formulas after normalizing Res/留数 labels; read the Cauchy-theorem annotation separately. Verified positive piecewise C1 simple-contour hypotheses, finite interior isolated singularities, none on the curve, and winding-number qualification. Checked R>1/R>a bounds, absolute convergence, k>0 exponential decay, the Jordan estimate, and 0<a<1 keyhole endpoint convergence. On 0<arg z<2π, checked lower-side e^(-2πia), reverse orientation, residue e^(-πia), and the resulting phase equation and π/sin(πa). Source supplementary calculations check four semicircles, three small-circle pole integrals and five logarithmically transformed real integrals; numerical evidence is illustrative, not proof. Explicitly checked that the principal part is the sum of negative-power terms, not the coefficient collection."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all three Mermaid flowcharts, with 6, 3 and 4 edges. Corrected the initial real-integral wording, singularity/branch-cut step, and outer/inner circles to avoid crossing the cut. There is no standalone executable numerical program in the article."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links; checked every retained absolute and root-relative article target exists in the matching language and the eyecatch exists. Added matching-language Taylor/Euler links and retained or corrected the dedicated Cauchy-theorem and Laplace links. Read the NIST/MIT references for the source correction. Verified the updated keyhole labels/reference in local HTML and passed multilingual/HTTPS validators."
+        }
+      },
+      "summary": "Complete-body semantic comparison and correction against the revised Japanese source, including principal part, theorem hypotheses, all three examples, seventeen formulas, three diagrams and links.",
+      "languageSpecificFindings": "Corrected 负数次幂项的系数群 to the sum of negative-power terms as 主要部分. Removed the unsupported impossibility claim and the added 连续 in the higher-degree polynomial passage. Used 去心邻域, 可去/本性奇点, 正向/逆时针, 绝对收敛 and 柯西主值, with explicit branch phases and winding-number qualification.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement full-body reading and do not prove the theorem.",
+        "Seven residue-theorem translations remain unreviewed; publication of batch 006 is not yet verified."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.10",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/3c58ce71ec6f7573804221d76158a0bd_MIT18_04S18_topic8.pdf",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf"
+      ],
+      "validation": "docs/translation-review/batch-006-validation.json"
+    },
+    "post/residue-theorem/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/residue-theorem/index.md",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "c5fc3636938fc9cff6ce6e7ef39e16afb46adc26681f30f7a18bcbcefb223e0a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, introduction, singularities/Laurent/theorem sections, all rational/Fourier/keyhole examples and conclusion with the corrected Japanese source. Supplied contour/function/convergence hypotheses and removed blanket claims that complexification solves arbitrary real integrals."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected 負數次冪項的係數群 to the sum of negative-power terms. Used 反導函數, 去心鄰域, 可去/本性奇點, 絕對收斂, 柯西主值 and 繞數; retained the article’s 洛朗 terminology. Supplied positive orientation, annulus conditions, the two branch-side factors and the inner/outer arc bounds."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 17 display formulas after normalizing Res/留数 labels; read the Cauchy-theorem annotation separately. Verified positive piecewise C1 simple-contour hypotheses, finite interior isolated singularities, none on the curve, and winding-number qualification. Checked R>1/R>a bounds, absolute convergence, k>0 exponential decay, the Jordan estimate, and 0<a<1 keyhole endpoint convergence. On 0<arg z<2π, checked lower-side e^(-2πia), reverse orientation, residue e^(-πia), and the resulting phase equation and π/sin(πa). Source supplementary calculations check four semicircles, three small-circle pole integrals and five logarithmically transformed real integrals; numerical evidence is illustrative, not proof. Explicitly checked that the principal part is the sum of negative-power terms, not the coefficient collection."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all three Mermaid flowcharts, with 6, 3 and 4 edges. Corrected the initial real-integral wording, singularity/branch-cut step, and outer/inner circles to avoid crossing the cut. There is no standalone executable numerical program in the article."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links; checked every retained absolute and root-relative article target exists in the matching language and the eyecatch exists. Added matching-language Taylor/Euler links and retained or corrected the dedicated Cauchy-theorem and Laplace links. Read the NIST/MIT references for the source correction. Verified the updated keyhole labels/reference in local HTML and passed multilingual/HTTPS validators."
+        }
+      },
+      "summary": "Complete-body semantic comparison and correction against the revised Japanese source, including principal part, theorem hypotheses, all three examples, seventeen formulas, three diagrams and links.",
+      "languageSpecificFindings": "Corrected 負數次冪項的係數群 to the sum of negative-power terms. Used 反導函數, 去心鄰域, 可去/本性奇點, 絕對收斂, 柯西主值 and 繞數; retained the article’s 洛朗 terminology. Supplied positive orientation, annulus conditions, the two branch-side factors and the inner/outer arc bounds.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement full-body reading and do not prove the theorem.",
+        "Seven residue-theorem translations remain unreviewed; publication of batch 006 is not yet verified."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.10",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/3c58ce71ec6f7573804221d76158a0bd_MIT18_04S18_topic8.pdf",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf"
+      ],
+      "validation": "docs/translation-review/batch-006-validation.json"
+    },
+    "post/residue-theorem/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/residue-theorem/index.md",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "3979dc08283b91f984149561343cbe1bf468490f621506d1a02f121317950e75",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, introduction, singularities/Laurent/theorem sections, all rational/Fourier/keyhole examples and conclusion with the corrected Japanese source. Supplied contour/function/convergence hypotheses and removed blanket claims that complexification solves arbitrary real integrals."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Replaced the ambiguous Integrales Reales Complejas title with integrales reales mediante singularidades complejas. Used primitiva, singularidad evitable/esencial, parte principal as a sum, circunferencia for the contour rather than disk interior, and índice de la curva alrededor de cada singularidad to distinguish winding from tangent turning. Corrected the Cauchy-theorem link and specified the branch and convergence conditions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 17 display formulas after normalizing Res/留数 labels; read the Cauchy-theorem annotation separately. Verified positive piecewise C1 simple-contour hypotheses, finite interior isolated singularities, none on the curve, and winding-number qualification. Checked R>1/R>a bounds, absolute convergence, k>0 exponential decay, the Jordan estimate, and 0<a<1 keyhole endpoint convergence. On 0<arg z<2π, checked lower-side e^(-2πia), reverse orientation, residue e^(-πia), and the resulting phase equation and π/sin(πa). Source supplementary calculations check four semicircles, three small-circle pole integrals and five logarithmically transformed real integrals; numerical evidence is illustrative, not proof. Explicitly checked that the principal part is the sum of negative-power terms, not the coefficient collection."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all three Mermaid flowcharts, with 6, 3 and 4 edges. Corrected the initial real-integral wording, singularity/branch-cut step, and outer/inner circles to avoid crossing the cut. There is no standalone executable numerical program in the article."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links; checked every retained absolute and root-relative article target exists in the matching language and the eyecatch exists. Added matching-language Taylor/Euler links and retained or corrected the dedicated Cauchy-theorem and Laplace links. Read the NIST/MIT references for the source correction. Verified the updated keyhole labels/reference in local HTML and passed multilingual/HTTPS validators."
+        }
+      },
+      "summary": "Complete-body semantic comparison and correction against the revised Japanese source, including principal part, theorem hypotheses, all three examples, seventeen formulas, three diagrams and links.",
+      "languageSpecificFindings": "Replaced the ambiguous Integrales Reales Complejas title with integrales reales mediante singularidades complejas. Used primitiva, singularidad evitable/esencial, parte principal as a sum, circunferencia for the contour rather than disk interior, and índice de la curva alrededor de cada singularidad to distinguish winding from tangent turning. Corrected the Cauchy-theorem link and specified the branch and convergence conditions.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement full-body reading and do not prove the theorem.",
+        "Seven residue-theorem translations remain unreviewed; publication of batch 006 is not yet verified."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.10",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/3c58ce71ec6f7573804221d76158a0bd_MIT18_04S18_topic8.pdf",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf"
+      ],
+      "validation": "docs/translation-review/batch-006-validation.json"
+    },
+    "post/residue-theorem/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/residue-theorem/index.md",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "a9fd4819748ca6a7fa70cbe85b01db962e42fa4a61de79377f545b370ac0fba7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, introduction, singularities/Laurent/theorem sections, all rational/Fourier/keyhole examples and conclusion with the corrected Japanese source. Supplied contour/function/convergence hypotheses and removed blanket claims that complexification solves arbitrary real integrals."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected 계수들은 주부 to the sum of negative-power terms. Used 고립/제거 가능/본질적 특이점, 단순극 (1차 극) rather than 1위의 극, 구간별 C1, 양의 방향, 절대수렴, 코시 주값 and 감김수. Specified the positive-real-axis branch, reversed lower side and inner/outer orientations."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 17 display formulas after normalizing Res/留数 labels; read the Cauchy-theorem annotation separately. Verified positive piecewise C1 simple-contour hypotheses, finite interior isolated singularities, none on the curve, and winding-number qualification. Checked R>1/R>a bounds, absolute convergence, k>0 exponential decay, the Jordan estimate, and 0<a<1 keyhole endpoint convergence. On 0<arg z<2π, checked lower-side e^(-2πia), reverse orientation, residue e^(-πia), and the resulting phase equation and π/sin(πa). Source supplementary calculations check four semicircles, three small-circle pole integrals and five logarithmically transformed real integrals; numerical evidence is illustrative, not proof. Explicitly checked that the principal part is the sum of negative-power terms, not the coefficient collection."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all three Mermaid flowcharts, with 6, 3 and 4 edges. Corrected the initial real-integral wording, singularity/branch-cut step, and outer/inner circles to avoid crossing the cut. There is no standalone executable numerical program in the article."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links; checked every retained absolute and root-relative article target exists in the matching language and the eyecatch exists. Added matching-language Taylor/Euler links and retained or corrected the dedicated Cauchy-theorem and Laplace links. Read the NIST/MIT references for the source correction. Verified the updated keyhole labels/reference in local HTML and passed multilingual/HTTPS validators."
+        }
+      },
+      "summary": "Complete-body semantic comparison and correction against the revised Japanese source, including principal part, theorem hypotheses, all three examples, seventeen formulas, three diagrams and links.",
+      "languageSpecificFindings": "Corrected 계수들은 주부 to the sum of negative-power terms. Used 고립/제거 가능/본질적 특이점, 단순극 (1차 극) rather than 1위의 극, 구간별 C1, 양의 방향, 절대수렴, 코시 주값 and 감김수. Specified the positive-real-axis branch, reversed lower side and inner/outer orientations.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement full-body reading and do not prove the theorem.",
+        "Seven residue-theorem translations remain unreviewed; publication of batch 006 is not yet verified."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.10",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/3c58ce71ec6f7573804221d76158a0bd_MIT18_04S18_topic8.pdf",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf"
+      ],
+      "validation": "docs/translation-review/batch-006-validation.json"
+    }
+  }
+}

@@ -730,11 +730,51 @@
       "source": "post/residue-theorem/index.md",
       "reviewedAt": "2026-10-24",
       "reviewer": "Codex (AI)",
-      "sourceHash": "8f5f99a8875cd38eb4b88e8de96932af57717bab9f5e40d317d6011124e589db",
-      "translationHash": "c2508ba40915573cf1817847b35e1a7e5370d54968bf2b4d1d48ac441bb9eabd",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "0ae3fc03dbc24ae352c3d1cf61f72ddfcc3bdf1b84c304acaa2676adfe77efc3",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-006.json",
-      "evidenceHash": "cf7a0256fc3dc76c7a9ae117b6b627fc9f99537cba58e116b63f3b6f5126240d"
+      "evidence": "docs/translation-review/batch-006-r2.json",
+      "evidenceHash": "d45b18dcc7cdebbf407dd7a30c7878304a5c5737ea62d1971f8de2539353ef07"
+    },
+    "post/residue-theorem/index.zh-cn.md": {
+      "source": "post/residue-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "86aae272ee7517f7c0966616a26a42132fe1d955b989e576fe151190fca63ad6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-006-r2.json",
+      "evidenceHash": "fbaffb016d38ff8042e41e8a874359dbdb147b2411155479a7e2ab19a1cc9a82"
+    },
+    "post/residue-theorem/index.zh-tw.md": {
+      "source": "post/residue-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "c5fc3636938fc9cff6ce6e7ef39e16afb46adc26681f30f7a18bcbcefb223e0a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-006-r2.json",
+      "evidenceHash": "08b74c09b094b865f2958aaa42362fa2681f8eea09656483c444ebfbcd15b1b9"
+    },
+    "post/residue-theorem/index.es.md": {
+      "source": "post/residue-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "3979dc08283b91f984149561343cbe1bf468490f621506d1a02f121317950e75",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-006-r2.json",
+      "evidenceHash": "7fd915f7b3f466ab255cc2e3ea254f7c7f634ed811c12e146ac6d9d144b280c6"
+    },
+    "post/residue-theorem/index.ko.md": {
+      "source": "post/residue-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "a9fd4819748ca6a7fa70cbe85b01db962e42fa4a61de79377f545b370ac0fba7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-006-r2.json",
+      "evidenceHash": "1ed56311e80f8d666e436ce6f6404240b070eefc4dd2428354cd2848a527f6b9"
     }
   }
 }

@@ -49,7 +49,7 @@ $$
 f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z - z_0)^n}
 $$
 
-Here, the terms with negative powers are called the **principal part** and determine the nature of the singularity. Among them, $b_1$, the coefficient of $(z - z_0)^{-1}$, has a special meaning. This $b_1$ is called the **residue** of the function $f(z)$ at $z_0$, written as:
+The sum of the negative-power terms (the second sum on the right) is the **principal part**. It determines the nature of the singularity. In particular, the coefficient $b_1$ of $(z-z_0)^{-1}$ is the **residue** of $f$ at $z_0$, written as:
 
 $$
 \text{Res}(f, z_0) = b_1

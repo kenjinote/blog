@@ -1,0 +1,1103 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-24T08:58:50.164588+09:00",
+  "ciRun": 40007920291,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40007920291",
+  "deployedCommit": "51cda3e615af21868e709a308d29e47584af2577",
+  "scope": "Batches 001 through 005: all 72 reviewed translations and their six Japanese source articles.",
+  "allPassed": true,
+  "pages": [
+    {
+      "url": "https://kenji.blog/p/central-limit-theorem/",
+      "language": "ja",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:32 GMT"
+    },
+    {
+      "url": "https://kenji.blog/en/p/central-limit-theorem/",
+      "language": "en",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:25 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-cn/p/central-limit-theorem/",
+      "language": "zh-cn",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:27 GMT"
+    },
+    {
+      "url": "https://kenji.blog/es/p/central-limit-theorem/",
+      "language": "es",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:24 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ko/p/central-limit-theorem/",
+      "language": "ko",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:28 GMT"
+    },
+    {
+      "url": "https://kenji.blog/pt/p/central-limit-theorem/",
+      "language": "pt",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:31 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-tw/p/central-limit-theorem/",
+      "language": "zh-tw",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:37 GMT"
+    },
+    {
+      "url": "https://kenji.blog/hi/p/central-limit-theorem/",
+      "language": "hi",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:22 GMT"
+    },
+    {
+      "url": "https://kenji.blog/fr/p/central-limit-theorem/",
+      "language": "fr",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:31 GMT"
+    },
+    {
+      "url": "https://kenji.blog/de/p/central-limit-theorem/",
+      "language": "de",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:29 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ar/p/central-limit-theorem/",
+      "language": "ar",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:22 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ru/p/central-limit-theorem/",
+      "language": "ru",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:25 GMT"
+    },
+    {
+      "url": "https://kenji.blog/id/p/central-limit-theorem/",
+      "language": "id",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:28 GMT"
+    },
+    {
+      "url": "https://kenji.blog/p/cross-site-scripting-xss-csrf-security/",
+      "language": "ja",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:31 GMT"
+    },
+    {
+      "url": "https://kenji.blog/en/p/cross-site-scripting-xss-csrf-security/",
+      "language": "en",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:26 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-cn/p/cross-site-scripting-xss-csrf-security/",
+      "language": "zh-cn",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:24 GMT"
+    },
+    {
+      "url": "https://kenji.blog/es/p/cross-site-scripting-xss-csrf-security/",
+      "language": "es",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:24 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ko/p/cross-site-scripting-xss-csrf-security/",
+      "language": "ko",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:28 GMT"
+    },
+    {
+      "url": "https://kenji.blog/pt/p/cross-site-scripting-xss-csrf-security/",
+      "language": "pt",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:33 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-tw/p/cross-site-scripting-xss-csrf-security/",
+      "language": "zh-tw",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:34 GMT"
+    },
+    {
+      "url": "https://kenji.blog/hi/p/cross-site-scripting-xss-csrf-security/",
+      "language": "hi",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:22 GMT"
+    },
+    {
+      "url": "https://kenji.blog/fr/p/cross-site-scripting-xss-csrf-security/",
+      "language": "fr",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:28 GMT"
+    },
+    {
+      "url": "https://kenji.blog/de/p/cross-site-scripting-xss-csrf-security/",
+      "language": "de",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:29 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ar/p/cross-site-scripting-xss-csrf-security/",
+      "language": "ar",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:22 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ru/p/cross-site-scripting-xss-csrf-security/",
+      "language": "ru",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:26 GMT"
+    },
+    {
+      "url": "https://kenji.blog/id/p/cross-site-scripting-xss-csrf-security/",
+      "language": "id",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:26 GMT"
+    },
+    {
+      "url": "https://kenji.blog/p/history-of-unicode-encoding/",
+      "language": "ja",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:30 GMT"
+    },
+    {
+      "url": "https://kenji.blog/en/p/history-of-unicode-encoding/",
+      "language": "en",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:27 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-cn/p/history-of-unicode-encoding/",
+      "language": "zh-cn",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:25 GMT"
+    },
+    {
+      "url": "https://kenji.blog/es/p/history-of-unicode-encoding/",
+      "language": "es",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:23 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ko/p/history-of-unicode-encoding/",
+      "language": "ko",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:27 GMT"
+    },
+    {
+      "url": "https://kenji.blog/pt/p/history-of-unicode-encoding/",
+      "language": "pt",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:31 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-tw/p/history-of-unicode-encoding/",
+      "language": "zh-tw",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:37 GMT"
+    },
+    {
+      "url": "https://kenji.blog/hi/p/history-of-unicode-encoding/",
+      "language": "hi",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:23 GMT"
+    },
+    {
+      "url": "https://kenji.blog/fr/p/history-of-unicode-encoding/",
+      "language": "fr",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:31 GMT"
+    },
+    {
+      "url": "https://kenji.blog/de/p/history-of-unicode-encoding/",
+      "language": "de",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:27 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ar/p/history-of-unicode-encoding/",
+      "language": "ar",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:22 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ru/p/history-of-unicode-encoding/",
+      "language": "ru",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:26 GMT"
+    },
+    {
+      "url": "https://kenji.blog/id/p/history-of-unicode-encoding/",
+      "language": "id",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:26 GMT"
+    },
+    {
+      "url": "https://kenji.blog/p/law-of-large-numbers/",
+      "language": "ja",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:29 GMT"
+    },
+    {
+      "url": "https://kenji.blog/en/p/law-of-large-numbers/",
+      "language": "en",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:26 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-cn/p/law-of-large-numbers/",
+      "language": "zh-cn",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:24 GMT"
+    },
+    {
+      "url": "https://kenji.blog/es/p/law-of-large-numbers/",
+      "language": "es",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:23 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ko/p/law-of-large-numbers/",
+      "language": "ko",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:30 GMT"
+    },
+    {
+      "url": "https://kenji.blog/pt/p/law-of-large-numbers/",
+      "language": "pt",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:33 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-tw/p/law-of-large-numbers/",
+      "language": "zh-tw",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:37 GMT"
+    },
+    {
+      "url": "https://kenji.blog/hi/p/law-of-large-numbers/",
+      "language": "hi",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:23 GMT"
+    },
+    {
+      "url": "https://kenji.blog/fr/p/law-of-large-numbers/",
+      "language": "fr",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:31 GMT"
+    },
+    {
+      "url": "https://kenji.blog/de/p/law-of-large-numbers/",
+      "language": "de",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:27 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ar/p/law-of-large-numbers/",
+      "language": "ar",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:22 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ru/p/law-of-large-numbers/",
+      "language": "ru",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:24 GMT"
+    },
+    {
+      "url": "https://kenji.blog/id/p/law-of-large-numbers/",
+      "language": "id",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:28 GMT"
+    },
+    {
+      "url": "https://kenji.blog/p/cauchy/",
+      "language": "ja",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:32 GMT"
+    },
+    {
+      "url": "https://kenji.blog/en/p/cauchy/",
+      "language": "en",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:28 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-cn/p/cauchy/",
+      "language": "zh-cn",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:27 GMT"
+    },
+    {
+      "url": "https://kenji.blog/es/p/cauchy/",
+      "language": "es",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:23 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ko/p/cauchy/",
+      "language": "ko",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:27 GMT"
+    },
+    {
+      "url": "https://kenji.blog/pt/p/cauchy/",
+      "language": "pt",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:31 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-tw/p/cauchy/",
+      "language": "zh-tw",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:32 GMT"
+    },
+    {
+      "url": "https://kenji.blog/hi/p/cauchy/",
+      "language": "hi",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:22 GMT"
+    },
+    {
+      "url": "https://kenji.blog/fr/p/cauchy/",
+      "language": "fr",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:31 GMT"
+    },
+    {
+      "url": "https://kenji.blog/de/p/cauchy/",
+      "language": "de",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:29 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ar/p/cauchy/",
+      "language": "ar",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:22 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ru/p/cauchy/",
+      "language": "ru",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:24 GMT"
+    },
+    {
+      "url": "https://kenji.blog/id/p/cauchy/",
+      "language": "id",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:26 GMT"
+    },
+    {
+      "url": "https://kenji.blog/p/cauchys-integral-theorem/",
+      "language": "ja",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:31 GMT"
+    },
+    {
+      "url": "https://kenji.blog/en/p/cauchys-integral-theorem/",
+      "language": "en",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:27 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-cn/p/cauchys-integral-theorem/",
+      "language": "zh-cn",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:25 GMT"
+    },
+    {
+      "url": "https://kenji.blog/es/p/cauchys-integral-theorem/",
+      "language": "es",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:23 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ko/p/cauchys-integral-theorem/",
+      "language": "ko",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:30 GMT"
+    },
+    {
+      "url": "https://kenji.blog/pt/p/cauchys-integral-theorem/",
+      "language": "pt",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:31 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-tw/p/cauchys-integral-theorem/",
+      "language": "zh-tw",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:37 GMT"
+    },
+    {
+      "url": "https://kenji.blog/hi/p/cauchys-integral-theorem/",
+      "language": "hi",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:23 GMT"
+    },
+    {
+      "url": "https://kenji.blog/fr/p/cauchys-integral-theorem/",
+      "language": "fr",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:31 GMT"
+    },
+    {
+      "url": "https://kenji.blog/de/p/cauchys-integral-theorem/",
+      "language": "de",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:27 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ar/p/cauchys-integral-theorem/",
+      "language": "ar",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:22 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ru/p/cauchys-integral-theorem/",
+      "language": "ru",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:26 GMT"
+    },
+    {
+      "url": "https://kenji.blog/id/p/cauchys-integral-theorem/",
+      "language": "id",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 19:34:28 GMT"
+    }
+  ]
+}
