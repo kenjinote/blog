@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "validatedAt": "2026-10-24",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "files": [
+    {
+      "language": "ja",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    },
+    {
+      "language": "en",
+      "displayMathMatches": true,
+      "formulaCount": 5,
+      "timelineYears": [
+        "1789",
+        "1805",
+        "1807",
+        "1810",
+        "1812",
+        "1816"
+      ],
+      "mermaidEdgeCount": 5,
+      "internalArticleLinksExist": true,
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedTimelineRendered": true
+    }
+  ],
+  "supplementaryQuadrature": {
+    "samples": 4097,
+    "counterclockwiseUnitCircleIntegralOfOneOverZ": {
+      "real": -1.8757400147595345e-18,
+      "imag": 6.283185307179586
+    },
+    "counterclockwiseUnitCircleIntegralOfZSquared": {
+      "real": 1.1102230246251565e-16,
+      "imag": -1.1102230246251565e-16
+    },
+    "cauchyFormulaForZSquaredAtPoint": {
+      "pointReal": 0.2,
+      "pointImag": 0.1,
+      "resultReal": 0.02999999999999997,
+      "resultImag": 0.03999999999999999
+    }
+  },
+  "limitations": [
+    "Numerical checks illustrate the need for the theorem hypotheses; they do not prove the theorems.",
+    "The article contains Mermaid timeline code only, with no standalone executable program."
+  ],
+  "localPreview": {
+    "hugo": "0.139.0 extended",
+    "multilingualPagesChecked": 473,
+    "httpsHtmlFilesChecked": 895,
+    "httpsXmlFilesChecked": 41,
+    "scope": "Five article bundles rendered; in the Cauchy bundle only Japanese and English have been semantically reviewed so far."
+  }
+}

@@ -485,6 +485,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-003.json",
       "evidenceHash": "45a2223b2af234f3ede5c14b4f79e19775a3e1553e4726bda9db672f367be6bd"
+    },
+    "post/cauchy/index.en.md": {
+      "source": "post/cauchy/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "87489db9840ef07f7bbdb21410056e161da1a25b5d23b1a3cbabcee98f5b9d82",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-004.json",
+      "evidenceHash": "068e6166be631e6f895a6e7255b62d4d98a56ed50e99aeb2979e19b6a96cbb36"
     }
   }
 }

@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-24T03:12:09.849787+09:00",
+  "ciRun": 39996620724,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/39996620724",
+  "deployedCommit": "19da7e4eabad11e03547534fa390aa471fb93d19",
+  "scope": "Batch 001: 18 AI-reviewed translations plus three corrected Japanese source articles.",
+  "allPassed": true,
+  "pages": [
+    {
+      "url": "https://kenji.blog/ar/p/central-limit-theorem/",
+      "language": "ar",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:49 GMT"
+    },
+    {
+      "url": "https://kenji.blog/de/p/central-limit-theorem/",
+      "language": "de",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:08:01 GMT"
+    },
+    {
+      "url": "https://kenji.blog/en/p/central-limit-theorem/",
+      "language": "en",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:56 GMT"
+    },
+    {
+      "url": "https://kenji.blog/en/p/cross-site-scripting-xss-csrf-security/",
+      "language": "en",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:57 GMT"
+    },
+    {
+      "url": "https://kenji.blog/en/p/history-of-unicode-encoding/",
+      "language": "en",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:56 GMT"
+    },
+    {
+      "url": "https://kenji.blog/es/p/central-limit-theorem/",
+      "language": "es",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:54 GMT"
+    },
+    {
+      "url": "https://kenji.blog/fr/p/central-limit-theorem/",
+      "language": "fr",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:59 GMT"
+    },
+    {
+      "url": "https://kenji.blog/hi/p/central-limit-theorem/",
+      "language": "hi",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:52 GMT"
+    },
+    {
+      "url": "https://kenji.blog/id/p/central-limit-theorem/",
+      "language": "id",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:57 GMT"
+    },
+    {
+      "url": "https://kenji.blog/p/central-limit-theorem/",
+      "language": "ja",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:56 GMT"
+    },
+    {
+      "url": "https://kenji.blog/p/cross-site-scripting-xss-csrf-security/",
+      "language": "ja",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:08:05 GMT"
+    },
+    {
+      "url": "https://kenji.blog/p/history-of-unicode-encoding/",
+      "language": "ja",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:57 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ko/p/central-limit-theorem/",
+      "language": "ko",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:55 GMT"
+    },
+    {
+      "url": "https://kenji.blog/pt/p/central-limit-theorem/",
+      "language": "pt",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:08:03 GMT"
+    },
+    {
+      "url": "https://kenji.blog/ru/p/central-limit-theorem/",
+      "language": "ru",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:52 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-cn/p/central-limit-theorem/",
+      "language": "zh-cn",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:55 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-cn/p/cross-site-scripting-xss-csrf-security/",
+      "language": "zh-cn",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:56 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-cn/p/history-of-unicode-encoding/",
+      "language": "zh-cn",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:07:52 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-tw/p/central-limit-theorem/",
+      "language": "zh-tw",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:08:09 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-tw/p/cross-site-scripting-xss-csrf-security/",
+      "language": "zh-tw",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:08:09 GMT"
+    },
+    {
+      "url": "https://kenji.blog/zh-tw/p/history-of-unicode-encoding/",
+      "language": "zh-tw",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true
+      },
+      "passed": true,
+      "lastModified": "Fri, 23 Oct 2026 18:08:09 GMT"
+    }
+  ]
+}

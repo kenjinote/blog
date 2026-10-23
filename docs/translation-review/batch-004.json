@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/cauchy/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchy/index.md",
+      "sourceHash": "20176eb569df0813bdd397c4adf5ef4862761d06b804dc9e92d3168f25093ce2",
+      "translationHash": "87489db9840ef07f7bbdb21410056e161da1a25b5d23b1a3cbabcee98f5b9d82",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, description, biographical narrative, timeline, all three mathematical sections, publication discussion and conclusion against Japanese. Corrected the 1812 return to Paris, 1815 teaching appointment, 1816 Academy membership chronology, 1830 departure/oath sequence, theorem hypotheses and 789-paper count. Removed an unverified Lagrange quotation, an unsupported universal publication ranking and an unsourced publication-limit anecdote."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished completeness of the real numbers from continuity; holomorphic from merely real differentiable; simply connected domain, positively oriented simple closed contour, square-integrable real-valued functions, local Taylor expansion and complex conjugation. Replaced the exaggerated English martyr wording with a neutral conclusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the Cauchy-sequence quantifiers; added a sufficient simply connected-domain hypothesis for the integral theorem, contour smoothness/orientation and interior-point hypotheses for the formula. Specified real L² functions for the displayed Schwarz integral inequality and described the conjugate/modulus requirement for complex functions. All five displayed formulas agree with Japanese. Supplementary quadrature reproduces ∮1/z dz=2πi and the polynomial integral/formula under their respective hypotheses."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The only fenced code is a Mermaid timeline, not an executable numerical program. Read all six labels and five edges and checked the years 1789, 1805, 1807, 1810, 1812, 1816 against the corrected narrative and biography. No standalone Python/JavaScript program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links, linked the integral-theorem section to its dedicated English article and the local Taylor expansion to the matching English article. Verified all retained internal article-language files and the image locally. Read the MIT/NIST mathematical references and the scholarly MacTutor biography, keeping biography evidence distinct from original mathematical sources."
+        }
+      },
+      "summary": "Full English body comparison completed; corrected mathematical applicability conditions and biographical chronology without marking the remaining eleven translations reviewed.",
+      "languageSpecificFindings": "English continuity of real numbers was changed to completeness; replacing both Monge and Carnot was clarified as obtaining one vacated seat; elected terminology in the timeline was made neutral.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "The biographical source is a scholarly university biography, not a newly inspected archive of original historical documents.",
+        "Numeric examples supplement primary theorem statements and do not prove them."
+      ],
+      "references": [
+        "https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-004-validation.json"
+    }
+  }
+}
