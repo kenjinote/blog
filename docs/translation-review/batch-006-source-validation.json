@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "validatedAt": "2026-10-24",
+  "scope": "Japanese source validation before individual translation reviews; see batch-006.json for subsequent review records.",
+  "displayedFormulaCount": 17,
+  "originalDisplayedFormulasPreserved": true,
+  "mermaidEdgeCounts": [
+    6,
+    3,
+    4
+  ],
+  "internalArticleLinksExist": true,
+  "eyecatchExists": true,
+  "supplementaryChecks": {
+    "semicircleContours": [
+      {
+        "radius": 2.0,
+        "realSegment": 2.214297435190817,
+        "arcReal": 0.9272952176339408,
+        "arcImag": 0.0,
+        "arcBound": 2.0943951023931953
+      },
+      {
+        "radius": 4.0,
+        "realSegment": 2.651635327061072,
+        "arcReal": 0.4899573259356734,
+        "arcImag": 5.551115123125783e-17,
+        "arcBound": 0.8377580409572781
+      },
+      {
+        "radius": 8.0,
+        "realSegment": 2.8928826643457892,
+        "arcReal": 0.24870998891077492,
+        "arcImag": 2.7755575615628914e-17,
+        "arcBound": 0.39893240045584677
+      },
+      {
+        "radius": 16.0,
+        "realSegment": 3.016755033520871,
+        "arcReal": 0.1248376198972817,
+        "arcImag": 0.0,
+        "arcBound": 0.19711953904877133
+      }
+    ],
+    "smallCircleAroundUpperPole": [
+      {
+        "k": 0.4,
+        "a": 0.8,
+        "circleIntegralReal": 2.851580600352512,
+        "circleIntegralImag": -2.7755575615628914e-17,
+        "residuePrediction": 2.8515806003525115
+      },
+      {
+        "k": 1.0,
+        "a": 1.0,
+        "circleIntegralReal": 1.1557273497909217,
+        "circleIntegralImag": -5.551115123125783e-17,
+        "residuePrediction": 1.1557273497909217
+      },
+      {
+        "k": 2.0,
+        "a": 1.5,
+        "circleIntegralReal": 0.10427379215216943,
+        "circleIntegralImag": -5.204170427930421e-18,
+        "residuePrediction": 0.10427379215216942
+      }
+    ],
+    "keyholeRealIntegralViaLogSubstitution": [
+      {
+        "a": 0.2,
+        "numericalIntegral": 5.3447966603892185,
+        "piOverSinPiA": 5.344796660577975,
+        "phaseIdentityError": 2.218970762907759e-10
+      },
+      {
+        "a": 0.4,
+        "numericalIntegral": 3.303265999194124,
+        "piOverSinPiA": 3.303265999194124,
+        "phaseIdentityError": 9.155133597044475e-16
+      },
+      {
+        "a": 0.5,
+        "numericalIntegral": 3.1415926535897936,
+        "piOverSinPiA": 3.141592653589793,
+        "phaseIdentityError": 8.881784197001252e-16
+      },
+      {
+        "a": 0.7,
+        "numericalIntegral": 3.883222077450932,
+        "piOverSinPiA": 3.8832220774509327,
+        "phaseIdentityError": 1.2560739669470201e-15
+      },
+      {
+        "a": 0.8,
+        "numericalIntegral": 5.344796660389219,
+        "piOverSinPiA": 5.344796660577974,
+        "phaseIdentityError": 2.2189511712967638e-10
+      }
+    ]
+  },
+  "limitations": [
+    "Numerical checks illustrate formulas and estimates; they do not replace proof or full-body translation review.",
+    "At this source-validation stage no translation had been recorded; see batch-006.json for subsequent individual reviews."
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "localPreview": {
+    "hugo": "0.139.0 extended",
+    "multilingualPagesChecked": 566,
+    "httpsHtmlFilesChecked": 1068,
+    "httpsXmlFilesChecked": 41,
+    "scope": "Seven article bundles rendered in a fresh output directory at the source-validation stage, before individual translation reviews.",
+    "existingWarnings": "Post-only preview lacks search/archive pages and a home JSON layout; existing Portuguese theme UI translations are incomplete."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/residue-theorem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/residue-theorem/index.md",
+      "sourceHash": "8f5f99a8875cd38eb4b88e8de96932af57717bab9f5e40d317d6011124e589db",
+      "translationHash": "c2508ba40915573cf1817847b35e1a7e5370d54968bf2b4d1d48ac441bb9eabd",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, description, introduction, singularities and Laurent sections, theorem, rational/Fourier/keyhole examples and conclusion with the corrected Japanese source. Removed blanket claims that complexification solves arbitrary real integrals. Defined the conditions on the function, curve and limits at every application."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Changed the ambiguous Complex Real Integrals title to Computing Real Integrals. Distinguished isolated/removable/essential singularities from poles, ordinary improper integrals from principal values, primitive/antiderivative from a definite integral, and a chosen logarithm branch from a multivalued expression. Used a dedicated English Cauchy-theorem link and matching Taylor/Euler links."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 17 display formulas after normalizing Res/留数 labels; read the Cauchy-theorem annotation separately. Verified positive piecewise C1 simple-contour hypotheses, finite interior isolated singularities, none on the curve, and winding-number qualification. Checked R>1/R>a bounds, absolute convergence, k>0 exponential decay, the Jordan estimate, and 0<a<1 keyhole endpoint convergence. On 0<arg z<2π, checked lower-side e^(-2πia), reverse orientation, residue e^(-πia), and the resulting phase equation and π/sin(πa). Source supplementary calculations check four semicircles, three small-circle pole integrals and five logarithmically transformed real integrals; numerical evidence is illustrative, not proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all three Mermaid flowcharts, with 6, 3 and 4 edges. Corrected the initial real-integral wording, singularity/branch-cut step, and outer/inner circles to avoid crossing the cut. There is no standalone executable numerical program in the article."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed article self-links; checked all absolute and root-relative internal targets exist in English and the eyecatch exists. Linked Cauchy theorem, Taylor expansion and Euler formula to their matching-language articles. Read the NIST/MIT references used for the source correction. Verified the corrected keyhole labels/reference in local HTML and passed multilingual/HTTPS validators."
+        }
+      },
+      "summary": "Complete English body comparison with corrected Japanese, including all three examples, mathematical hypotheses, 17 formulas, three diagrams and links.",
+      "languageSpecificFindings": "The English title used Complex for a difficult real integral, and a Cauchy-theorem link pointed to the biography. Clarified both and supplied the missing branch, contour, singularity and convergence conditions.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement full-body reading and do not prove the theorem.",
+        "The remaining eleven translations have not been read or marked reviewed. Publication of batch 006 is not yet verified."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.10",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/3c58ce71ec6f7573804221d76158a0bd_MIT18_04S18_topic8.pdf",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf"
+      ],
+      "validation": "docs/translation-review/batch-006-validation.json"
+    }
+  }
+}

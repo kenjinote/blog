@@ -725,6 +725,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-005.json",
       "evidenceHash": "8e7f1ac594d7bdb69083b91cdacae6374e4b7c625c6eb1a0164edcb4f29f4503"
+    },
+    "post/residue-theorem/index.en.md": {
+      "source": "post/residue-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8f5f99a8875cd38eb4b88e8de96932af57717bab9f5e40d317d6011124e589db",
+      "translationHash": "c2508ba40915573cf1817847b35e1a7e5370d54968bf2b4d1d48ac441bb9eabd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-006.json",
+      "evidenceHash": "cf7a0256fc3dc76c7a9ae117b6b627fc9f99537cba58e116b63f3b6f5126240d"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "validatedAt": "2026-10-24",
+  "scope": "Japanese source and English full-body review only. The remaining eleven translations are unreviewed.",
+  "files": [
+    {
+      "language": "ja",
+      "normalizedDisplayMathMatches": true,
+      "displayedFormulaCount": 17,
+      "normalization": "Res/留数 labels are normalized; the Cauchy-theorem prose annotation is checked semantically, separately from the equation.",
+      "mermaidEdgeCounts": [
+        6,
+        3,
+        4
+      ],
+      "branchPhaseAndArcBoundsPresent": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchy",
+        "euler",
+        "laplace-transform",
+        "taylor-and-maclaurin-series"
+      ],
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedKeyholeDiagramRendered": true
+    },
+    {
+      "language": "en",
+      "normalizedDisplayMathMatches": true,
+      "displayedFormulaCount": 17,
+      "normalization": "Res/留数 labels are normalized; the Cauchy-theorem prose annotation is checked semantically, separately from the equation.",
+      "mermaidEdgeCounts": [
+        6,
+        3,
+        4
+      ],
+      "branchPhaseAndArcBoundsPresent": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchy",
+        "cauchys-integral-theorem",
+        "euler",
+        "laplace-transform",
+        "taylor-and-maclaurin-series"
+      ],
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedKeyholeDiagramRendered": true
+    }
+  ],
+  "supplementaryNumericalEvidence": "docs/translation-review/batch-006-source-validation.json",
+  "limitations": [
+    "Structural matching supplements full-body semantic comparison and is not a review by itself.",
+    "Numerical examples do not replace a proof."
+  ],
+  "localPreview": {
+    "hugo": "0.139.0 extended",
+    "multilingualPagesChecked": 566,
+    "httpsHtmlFilesChecked": 1068,
+    "httpsXmlFilesChecked": 41,
+    "scope": "Seven bundles rendered; residue-theorem semantic review is limited to Japanese and English. Eleven translations remain unreviewed.",
+    "existingWarnings": "Post-only preview lacks search/archive pages and home JSON layout; existing Portuguese theme UI translations are incomplete."
+  }
+}
