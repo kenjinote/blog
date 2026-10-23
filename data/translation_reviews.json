@@ -605,6 +605,46 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-004.json",
       "evidenceHash": "102975a5260e5ede8dcc89cebbdc8d145d2c6e6d8021a950c351ef4b825e3ce3"
+    },
+    "post/cauchys-integral-theorem/index.en.md": {
+      "source": "post/cauchys-integral-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "54d3b1ba4068eae796c98b1638458b476a31a67fb6adde1dd2cd9dadc037d61b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-005.json",
+      "evidenceHash": "ee075a2e159d6985e2f7851038c55234dd92e06c8e1d2ed292f0bd72a9345836"
+    },
+    "post/cauchys-integral-theorem/index.zh-cn.md": {
+      "source": "post/cauchys-integral-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "a8cb2d68158f09272ba450970800040a461c091a672ff1b175c1a5b6fb247e5e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-005.json",
+      "evidenceHash": "c97c523cd95558a8b784d05f3e56343e27e6df110bac25f60f9ab4565c3d5297"
+    },
+    "post/cauchys-integral-theorem/index.zh-tw.md": {
+      "source": "post/cauchys-integral-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "8e8e6dc9b4aca1173c13f04d7aea8db262cba33bae06d65abf3a514d00621260",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-005.json",
+      "evidenceHash": "45422ca7136dd1a2c97a51b30f54cb0cc2e36f9c86900afff553d54c147337bc"
+    },
+    "post/cauchys-integral-theorem/index.es.md": {
+      "source": "post/cauchys-integral-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "0988c9dbfd14e7e9fb26cada0b41023f1c8dd7724ca9ecd5ad3218a3bbfa164b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-005.json",
+      "evidenceHash": "e90e8c454e5df632f560456b49e09c4e1a0d0b0e0c06eefbf485fde1046406b5"
     }
   }
 }

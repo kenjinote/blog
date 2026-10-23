@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "validatedAt": "2026-10-24",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "scope": "Japanese source and four full-body-reviewed translations only: en, zh-cn, zh-tw, es.",
+  "files": [
+    {
+      "language": "ja",
+      "displayMathMatches": true,
+      "formulaCount": 14,
+      "mermaidEdges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "inlineCounterexamplesAndCurlDivergencePresent": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchy",
+        "residue-theorem",
+        "riemann"
+      ],
+      "eyecatchExists": true,
+      "singlePublicationDate": true,
+      "hugoRendered": true,
+      "correctedDiagramRendered": true
+    },
+    {
+      "language": "en",
+      "displayMathMatches": true,
+      "formulaCount": 14,
+      "mermaidEdges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "inlineCounterexamplesAndCurlDivergencePresent": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchy",
+        "residue-theorem",
+        "riemann"
+      ],
+      "eyecatchExists": true,
+      "singlePublicationDate": true,
+      "hugoRendered": true,
+      "correctedDiagramRendered": true
+    },
+    {
+      "language": "zh-cn",
+      "displayMathMatches": true,
+      "formulaCount": 14,
+      "mermaidEdges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "inlineCounterexamplesAndCurlDivergencePresent": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchy",
+        "residue-theorem"
+      ],
+      "eyecatchExists": true,
+      "singlePublicationDate": true,
+      "hugoRendered": true,
+      "correctedDiagramRendered": true
+    },
+    {
+      "language": "zh-tw",
+      "displayMathMatches": true,
+      "formulaCount": 14,
+      "mermaidEdges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "inlineCounterexamplesAndCurlDivergencePresent": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchy",
+        "residue-theorem"
+      ],
+      "eyecatchExists": true,
+      "singlePublicationDate": true,
+      "hugoRendered": true,
+      "correctedDiagramRendered": true
+    },
+    {
+      "language": "es",
+      "displayMathMatches": true,
+      "formulaCount": 14,
+      "mermaidEdges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "inlineCounterexamplesAndCurlDivergencePresent": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchy",
+        "residue-theorem",
+        "riemann"
+      ],
+      "eyecatchExists": true,
+      "singlePublicationDate": true,
+      "hugoRendered": true,
+      "correctedDiagramRendered": true
+    }
+  ],
+  "supplementaryQuadrature": {
+    "samples": 4097,
+    "orientation": "counterclockwise unit circle",
+    "oneOverZ": {
+      "real": -4.865828980466398e-20,
+      "imag": 6.283185307179586
+    },
+    "oneOverZSquared": {
+      "real": 0.0,
+      "imag": -1.1102230246251565e-16
+    }
+  },
+  "limitations": [
+    "Formula string matching is a supplement to complete semantic reading, not a translation review by itself.",
+    "Numerical examples do not prove the theorem. The only fenced code in this article is Mermaid."
+  ],
+  "localPreview": {
+    "hugo": "0.139.0 extended",
+    "multilingualPagesChecked": 538,
+    "httpsHtmlFilesChecked": 1025,
+    "httpsXmlFilesChecked": 41,
+    "scope": "Six bundles rendered; semantic review of integral-theorem translations is limited to en, zh-cn, zh-tw, es. The remaining eight translations are not reviewed.",
+    "existingWarnings": "Post-only preview lacks search/archive pages and home JSON layout; existing Portuguese theme UI translations are incomplete."
+  }
+}

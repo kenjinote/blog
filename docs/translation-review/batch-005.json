@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/cauchys-integral-theorem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "54d3b1ba4068eae796c98b1638458b476a31a67fb6adde1dd2cd9dadc037d61b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Replaced the ambiguous phrase complex differentiable even once with differentiation at every point of an open domain, distinguished curl from divergence, and stated the interior of the contour rather than the whole domain in the integral formula. Defined piecewise smooth curves and explicitly allowed self-intersections in the simply connected theorem."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Replaced the ambiguous phrase complex differentiable even once with differentiation at every point of an open domain, distinguished curl from divergence, and stated the interior of the contour rather than the whole domain in the integral formula. Defined piecewise smooth curves and explicitly allowed self-intersections in the simply connected theorem.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 awaits the remaining nine language reviews."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
+    },
+    "post/cauchys-integral-theorem/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "a8cb2d68158f09272ba450970800040a461c091a672ff1b175c1a5b6fb247e5e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 复可微 for complex differentiability, 全纯 for holomorphy, 旋度/散度 for curl/divergence and 分段光滑 for contour regularity. Replaced 即使只有一次复可微 with the every-point hypothesis, corrected 无旋/无源 correspondence, and restricted boundary determination to the contour interior."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Used 复可微 for complex differentiability, 全纯 for holomorphy, 旋度/散度 for curl/divergence and 分段光滑 for contour regularity. Replaced 即使只有一次复可微 with the every-point hypothesis, corrected 无旋/无源 correspondence, and restricted boundary determination to the contour interior.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 awaits the remaining nine language reviews."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
+    },
+    "post/cauchys-integral-theorem/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "8e8e6dc9b4aca1173c13f04d7aea8db262cba33bae06d65abf3a514d00621260",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 複可微, 全純, 純量旋度/散度 and 分段光滑 consistently; retained local usage 反導函數 and 羅朗展開. Replaced 即使只有一次複可微 with the every-point hypothesis, separated 無旋 from 無源 and restricted boundary determination to the contour interior."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Used 複可微, 全純, 純量旋度/散度 and 分段光滑 consistently; retained local usage 反導函數 and 羅朗展開. Replaced 即使只有一次複可微 with the every-point hypothesis, separated 無旋 from 無源 and restricted boundary determination to the contour interior.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 awaits the remaining nine language reviews."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
+    },
+    "post/cauchys-integral-theorem/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "0988c9dbfd14e7e9fb26cada0b41023f1c8dd7724ca9ecd5ad3218a3bbfa164b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Changed Fundación (institution) in the title to base, límite (limit) to contorno for the boundary, and integrales infinitas to integrales impropias. Used rotacional/divergencia, primitiva, suave a trozos and teorema de los residuos consistently. Corrected the ambiguous one-time differentiability claim and supplied the theorem/formula domain and orientation hypotheses."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Changed Fundación (institution) in the title to base, límite (limit) to contorno for the boundary, and integrales infinitas to integrales impropias. Used rotacional/divergencia, primitiva, suave a trozos and teorema de los residuos consistently. Corrected the ambiguous one-time differentiability claim and supplied the theorem/formula domain and orientation hypotheses.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 awaits the remaining eight language reviews."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
+    }
+  }
+}

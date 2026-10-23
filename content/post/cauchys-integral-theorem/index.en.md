@@ -1,9 +1,9 @@
 ---
 title: 'Cauchy''s Integral Theorem: The Beautiful Foundation of Complex Analysis Where Integrals Vanish'
-date: "2026-09-24T19:44:38+09:00"
 description: 'A detailed explanation of Cauchy''s Integral Theorem, one of the most important theorems in complex analysis, from its intuitive meaning to a sketch of its proof using Green''s theorem and its application to the integral formula.'
 slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00
+lastmod: 2026-10-24
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'
@@ -18,7 +18,7 @@ tags:
 
 In the field of mathematics known as complex analysis, one of the most beautiful and powerful theorems is **[Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem**. This theorem asserts what at first glance seems to be a highly surprising fact: "Integrating a complex function that satisfies certain conditions along a closed contour will always yield exactly zero."
 
-From the experience of learning the integration of real functions, integration is naturally thought of as representing "area" or "accumulation along a path," so if you integrate over a long distance along a path, it seems natural that some value would remain. However, on the complex plane, when a function possesses the special property of being **holomorphic**, an astonishing symmetry emerges where the result of the integration becomes completely independent of the path taken, skipping over differences in paths.
+For real functions, integration can represent signed area or accumulation along a path. In complex analysis, holomorphic functions have a strong cancellation property. If the function is holomorphic on a simply connected domain, its integrals along piecewise smooth paths in that domain depend only on their endpoints. Holomorphy alone does not guarantee this global path independence on a domain with holes.
 
 In this article, we will explain [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem in great detail, starting from the foundational definitions of the complex plane and holomorphic functions, moving through the intuitive meaning of the theorem, its physical interpretation, and a sketch of its classical proof using Green's theorem. Furthermore, we will touch upon how this theorem connects to more advanced topics in complex analysis, such as Cauchy's integral formula and the [Residue Theorem](https://kenji.blog/en/p/residue-theorem/). Let us appreciate the profound depth of this theorem from both a mathematical rigor and intuitive imagery perspective.
 
@@ -44,21 +44,21 @@ $$
 f'(z_0) = \lim_{\Delta z \to 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z}
 $$
 
-What is extremely important here is that this limit must converge to exactly the same value regardless of "from which direction" $\Delta z$ approaches zero on the complex plane. In the world of real numbers, there were only two ways: approaching from the right or from the left, but in the complex plane, there are infinite ways to approach. Because of this strict condition, properties that are far stronger than the differentiation of real functions are derived.
+The crucial requirement is that the limit must have the same value for every way in which $\Delta z$ approaches zero in the complex plane, including curved paths, not just straight-line directions. This is more restrictive than real differentiability.
 
-When a function $f(z)$ is differentiable at all points within a certain domain, the function is said to be **holomorphic** in that domain. It is known that a necessary and sufficient condition for being holomorphic is that the real part $u$ and imaginary part $v$ satisfy the following partial differential equations. These are called the **[Cauchy](https://kenji.blog/en/p/cauchy/)-[Riemann](https://kenji.blog/en/p/riemann/) equations**.
+A function $f(z)$ is **holomorphic** on an open domain if it is complex differentiable at every point of that domain. Holomorphy implies that the real and imaginary parts satisfy the following necessary conditions, called the **Cauchy–Riemann equations**:
 
 $$
 \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
 $$
 
-Furthermore, if $u$ and $v$ have continuous partial derivatives, the holding of these equations is equivalent to $f(z)$ being holomorphic. These relational equations, which possess a beautiful symmetry, play a crucial role in the proof of [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem described later.
+Conversely, if $u$ and $v$ have continuous first partial derivatives on an open domain and satisfy these equations there, then $f=u+iv$ is holomorphic. Without a suitable regularity hypothesis, the equations alone are not an unconditional test for holomorphy.
 
 ## 3. Definition and Properties of Complex Integration
 
 Next, we define line integration on the complex plane. Since [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem is a theorem about integration along a "curve" on the complex plane, it is essential to clarify the definition of this integration.
 
-Suppose a smooth curve $C$ on the complex plane is parameterized using a real variable $t \in [a, b]$ as $z(t) = x(t) + i y(t)$. The line integral of the complex function $f(z)$ along this curve $C$ is defined as follows:
+Suppose a piecewise smooth curve $C$ in the complex plane is parameterized by $z(t)=x(t)+iy(t)$ for $t\in[a,b]$. For a continuous function $f$ along the curve, its line integral is defined by the following expression, evaluated piece by piece when needed:
 
 $$
 \int_C f(z) dz = \int_a^b f(z(t)) z'(t) dt
@@ -79,7 +79,7 @@ These properties, while seemingly obvious, become very powerful tools when we la
 Now that our preparations are complete, we finally state the exact formulation of the main subject, [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem.
 
 **Theorem ([Cauchy](https://kenji.blog/en/p/cauchy/)'s Integral Theorem)**
-For a complex function $f(z)$ that is holomorphic on a simply connected domain $D$, and for any simple closed contour $C$ within $D$, the following equality holds.
+Let $D$ be a simply connected open domain and let $f$ be holomorphic on $D$. For every piecewise smooth closed contour $C$ contained in $D$, including contours that intersect themselves, the following holds.
 
 $$
 \oint_C f(z) dz = 0
@@ -88,22 +88,22 @@ $$
 Let us supplement this with some important terminology that appears as prerequisite conditions of the theorem.
 
 - **Simply connected domain** : Intuitively speaking, this refers to a domain "without holes." Expressed with mathematical rigor, it refers to a domain where any closed curve within it can be continuously deformed and shrunk to a single point without ever leaving the domain.
-- **Simple closed contour** : This is a curve where the start point and end point coincide (closed curve) and it does not intersect itself along the way (simple). Also known as a "Jordan curve," it is known to divide the plane into two parts: an "inside" and an "outside" (Jordan curve theorem).
+- **Piecewise smooth closed contour**: A curve with the same start and end point, consisting of finitely many smooth pieces. The theorem above does not require it to be simple. A simple closed contour has no self-intersections and separates the plane into an interior and an exterior; we use such contours in the Green's theorem proof below.
 
 The diagram below visually shows the difference in the behavior of closed curves in simply connected domains versus multiply connected domains (domains with holes).
 
 ```mermaid
 flowchart TD
-    A["Domain D"] --> B{"Are there holes?"}
+    A["Domain D on which f is holomorphic"] --> B{"Are there holes?"}
     B -->|"No (Simply connected)"| C["Any closed contour can be shrunk to a point"]
     C --> D["Cauchy's integral theorem applies: integral is zero"]
     B -->|"Yes (Multiply connected)"| E["Contour enclosing a hole cannot be shrunk"]
-    E --> F["Integral is generally not zero (leads to Residue Theorem)"]
+    E --> F["Integral need not be zero: check the function and contour"]
 ```
 
 ## 5. Intuitive Understanding and Physical Interpretation of the Theorem
 
-Why does the integral of a holomorphic function over a closed contour always become zero? To intuitively understand this, rather than just as a sequence of mathematical formulas, let's break the complex integral down into its real and imaginary parts.
+Why does the integral vanish under the hypotheses of the theorem? To build intuition, let us separate the complex integral into real and imaginary parts.
 
 Let $f(z) = u + iv$ and $dz = dx + i dy$. The integral can then be expanded as follows:
 
@@ -113,17 +113,17 @@ $$
 
 Notice the right side of this equation. Two real integrals have appeared, and they have exactly the same form as the line integrals of vector fields on a 2D plane. Specifically, the real part can be interpreted as the line integral of a vector field $\vec{F}_1 = (u, -v)$, and the imaginary part as the line integral of a vector field $\vec{F}_2 = (v, u)$.
 
-Considered in the context of physics (especially fluid dynamics or electromagnetism), the line integral of a vector field along a closed contour represents the "circulation" of that field. If a vector field is both "irrotational" and "incompressible," then no matter what closed curve you compute the circulation along, the result will be zero.
+In physics, a vector field's line integral along a closed contour represents its circulation. For a continuously differentiable field on a simply connected domain, zero curl implies zero circulation around every piecewise smooth closed contour. A domain with holes requires further care: local zero curl alone does not imply global zero circulation.
 
-Recall the [Cauchy](https://kenji.blog/en/p/cauchy/)-[Riemann](https://kenji.blog/en/p/riemann/) equations we learned earlier: $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$. This is exactly the condition that guarantees the vector fields $\vec{F}_1$ and $\vec{F}_2$ are "irrotational." Similarly, the other equation $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ guarantees they are "incompressible."
+The scalar curls of $\vec{F}_1=(u,-v)$ and $\vec{F}_2=(v,u)$ are respectively $-v_x-u_y$ and $u_x-v_y$. The Cauchy–Riemann equation $u_y=-v_x$ makes the first zero, and $u_x=v_y$ makes the second zero. The same equations also give zero divergences: $\operatorname{div}\vec{F}_1=u_x-v_y=0$ and $\operatorname{div}\vec{F}_2=v_x+u_y=0$.
 
-In other words, the condition of being a holomorphic function means forming vector fields that are very "well-behaved" (no vortices, no sources or sinks) from a physical perspective, and as a result, the integral over a closed loop necessarily becomes zero. This is the physical and intuitive meaning behind [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem.
+Thus holomorphy yields both curl-free and divergence-free fields. For the circulation argument, zero curl together with the domain hypothesis is the relevant condition; zero divergence is a separate property. This interpretation helps explain the cancellation in Cauchy's integral theorem.
 
 ## 6. Sketch of a Rigorous Proof Using Green's Theorem
 
-Here, as a classical and intuitive proof of [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem, we introduce a method utilizing **Green's theorem** from calculus. (Note: This proof assumes that the partial derivatives are continuous, i.e., $f'(z)$ is continuous.)
+For this classical proof, assume in addition that $u$ and $v$ have continuous first partial derivatives on an open set containing a positively oriented (counterclockwise), piecewise smooth simple closed contour $C$ and its interior $D'$. The proof below establishes the result for such a contour; extension to general closed contours is a further step.
 
-Green's theorem is a powerful theorem that converts a line integral along a closed curve on a plane into a double integral over the domain $D'$ enclosed by that curve.
+Green's theorem converts the line integral around $C=\partial D'$ into a double integral over its interior $D'$. In the following statement, $P$ and $Q$ have continuous first partial derivatives on an open neighborhood of the closure of $D'$, and the boundary is positively oriented.
 
 **Green's Theorem**
 $$
@@ -162,17 +162,17 @@ This is the skeleton of the proof for [Cauchy](https://kenji.blog/en/p/cauchy/)'
 
 ## 7. Goursat's Theorem: Removing the Assumption of Continuous Differentiability
 
-The proof using Green's theorem above is very easy to understand and intuitive, but mathematically it has one weakness. That is, it implicitly uses the assumption that "$f'(z)$ is continuous" (i.e., the assumption that the partial derivatives of $u, v$ are continuous). [Cauchy](https://kenji.blog/en/p/cauchy/)'s initial proof also relied on this assumption.
+The proof above explicitly assumes continuous first partial derivatives of $u$ and $v$ so that Green's theorem applies. Goursat's theorem removes the need to assume this continuity separately.
 
-However, at the end of the 19th century, the French mathematician Édouard Goursat proved that this assumption of continuity is actually unnecessary. That is, he showed that [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem holds true simply by the function being "differentiable (holomorphic) at each point."
+The essential hypothesis is that $f$ is complex differentiable at every point of an open domain. No additional continuity assumption on $f'$ is needed. Together with the appropriate domain and contour conditions, this yields Cauchy's integral theorem, often called the Cauchy–Goursat theorem.
 
-Goursat's proof employs an ingenious method of dividing the domain into small triangles and using proof by contradiction to derive a contradiction (the method of triangulation). In modern complex analysis textbooks, this result is generally introduced as the "[Cauchy](https://kenji.blog/en/p/cauchy/)-Goursat theorem." This result highlighted once again that the condition of being "complex differentiable even once" is a far stronger constraint (resulting in being infinitely differentiable) than one could compare with the case of real functions.
+One modern proof proceeds by repeatedly subdividing triangles and estimating integrals on the resulting smaller triangles. Complex differentiability throughout an open domain is a strong condition: it implies holomorphy and subsequently derivatives of every order. Differentiability at just one point is insufficient. For example, $f(z)=|z|^2$ is complex differentiable at $0$ but is not holomorphic on any neighborhood of $0$.
 
 ## 8. Path Deformation and Path Independence
 
 One of the extremely important consequences of [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem is the **path independence of integrals**.
 
-Suppose there are two points $A$ and $B$ within a simply connected domain $D$, and there are two different paths $C_1$ and $C_2$ connecting them. At this time, if the function $f(z)$ is holomorphic within $D$, the following holds:
+Let $A$ and $B$ lie in a simply connected open domain $D$, and let $C_1$ and $C_2$ be piecewise smooth paths in $D$ from $A$ to $B$. If $f$ is holomorphic on $D$, then:
 
 $$
 \int_{C_1} f(z) dz = \int_{C_2} f(z) dz
@@ -186,7 +186,7 @@ $$
 
 By transposing this, we obtain $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
 
-Because of this property, the integration of a holomorphic function does not depend on "what route was taken," but is determined "only by the start and end points." This makes it possible to uniquely define an antiderivative (indefinite integral) $F(z)$ even on the complex plane (up to a constant of integration), guaranteeing that the "Fundamental Theorem of Calculus" for real functions also holds beautifully on the complex plane.
+Under these hypotheses, the integral depends only on the start and end points. Fixing a base point defines an antiderivative $F$ on $D$, unique up to an additive constant. Its derivative is $f$, giving the complex counterpart of the fundamental theorem of calculus.
 
 ## 9. Application: [Cauchy](https://kenji.blog/en/p/cauchy/)'s Integral Formula and Extension to Multiply Connected Domains
 
@@ -194,17 +194,17 @@ Because of this property, the integration of a holomorphic function does not dep
 
 ### [Cauchy](https://kenji.blog/en/p/cauchy/)'s Integral Formula
 
-The most direct and widely applicable consequence of the theorem is **[Cauchy](https://kenji.blog/en/p/cauchy/)'s integral formula**. When a function $f(z)$ is holomorphic in a domain $D$, for a simple closed curve $C$ within $D$ and any point $a$ inside it, the following holds:
+A major consequence is **Cauchy's integral formula**. Let $C$ be a positively oriented (counterclockwise), piecewise smooth simple closed contour, let $f$ be holomorphic on an open set containing $C$ and its interior, and let $a$ lie inside $C$. Then:
 
 $$
 f(a) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z - a} dz
 $$
 
-This formula shows the astonishing rigidity of holomorphic functions: "As long as the values of the function on the boundary of the closed curve are known, the value of the function at every point inside the domain is completely determined by integral calculation."
+The formula shows the rigidity of holomorphic functions: knowing the values on $C$ determines the value at every point inside $C$. It does not, by itself, determine values outside that contour.
 
 ### Multiply Connected Domains and the [Residue Theorem](https://kenji.blog/en/p/residue-theorem/)
 
-If the domain has "holes" and is not simply connected (multiply connected domain), [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem cannot be applied as is. For example, the function $f(z) = 1/z$ is not defined at the origin $z=0$ and is not holomorphic there. If we integrate along the unit circle enclosing the origin, the result is not zero, but the value $2\pi i$.
+For a domain with holes, the simply connected version of the theorem does not apply directly, and the integral depends on the function and contour. For example, $f(z)=1/z$ is holomorphic away from $0$, but its integral around the counterclockwise unit circle is $2\pi i$. In contrast, the integral of $1/z^2$ around the same circle is $0$. A hole does not force a nonzero integral.
 
 However, by ingeniously applying [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem and deforming the integration path, a systematic method for evaluating integrals around holes was established. This leads to the **Residue Theorem**, one of the most practical tools in modern complex analysis. By using the [Residue Theorem](https://kenji.blog/en/p/residue-theorem/), complex definite integrals and infinite integrals of real functions can be brilliantly replaced with algebraic calculations on the complex plane and solved.
 
@@ -212,7 +212,13 @@ However, by ingeniously applying [Cauchy](https://kenji.blog/en/p/cauchy/)'s int
 
 At first glance, [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem might look like a modest theorem that simply says "the integral becomes zero." However, hidden behind it is a profound and beautiful symmetry brought about by the seemingly simple condition of the "holomorphy" of complex functions.
 
-Starting from this theorem, glorious achievements of complex analysis such as [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral formula, the proof that a function is infinitely differentiable (guaranteeing Taylor expansions and Laurent expansions), and the Residue Theorem are successively derived. [Cauchy](https://kenji.blog/en/p/cauchy/)'s integral theorem can truly be said to be the most robust and beautiful foundation that supports the magnificent mathematical edifice of complex analysis from its roots.
+Cauchy's integral theorem supports the integral formula, derivatives of all orders, local Taylor expansions, Laurent expansions on suitable annuli, and the residue theorem. Together, these results form a foundation for complex analysis.
 
 We encourage readers to pick up a paper and pen and trace the proof using Green's theorem with your own hands. You should be able to surely feel the beautifully harmonious world of the complex plane spreading out behind the mathematical formulas.
 
+
+## References
+
+- [MIT 18.04: Complex integration, Cauchy's theorem and integral formula](https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf)
+- [MIT 18.112: Cauchy's theorem and integral formula](https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf)
+- [NIST DLMF §1.9: Calculus of a Complex Variable](https://dlmf.nist.gov/1.9)
