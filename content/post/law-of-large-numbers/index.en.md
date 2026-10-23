@@ -1,6 +1,5 @@
 ---
-title: "Law of Large Numbers - Why Casinos Always Win and How Probabilities Converge"
-date: "2026-09-24T19:44:38+09:00"
+title: "Law of Large Numbers — Conditions for Sample Means to Approach Expectations"
 description: "An explanation of the Law of Large Numbers, a crucial theorem in probability theory. We delve deep into casino profit structures, rigorous mathematical definitions (weak and strong laws), with diagrams and Python code."
 slug: "law-of-large-numbers"
 date: 2026-09-14
@@ -12,43 +11,44 @@ tags:
   - "Statistics"
   - "Python"
   - "Casino"
+lastmod: 2026-10-24
 ---
 
-## 1. Introduction: Why Casinos Don't "Gamble"
+## 1. Introduction: Expected Casino Returns and Fluctuations
 
-Luxurious casinos around the world. Some players make a fortune overnight, while others lose everything. However, casino operators never **gamble**. They conduct business based on a solid mathematical foundation, namely the **[Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/)**.
+Players can win large amounts in the short term. Under a fixed model, averaging many independent bets can make the average return approach its expectation. The law of large numbers supports this idea, but does not guarantee a casino’s profit over a finite period or the success of its business.
 
-In this article, we comprehensively explain the "[Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/)," the most fundamental and important theorem in probability theory, from intuitive understanding to rigorous mathematical definitions. Furthermore, we delve into common misconceptions and how it is applied in society.
+In this article, we comprehensively explain the "Law of Large Numbers," the most fundamental and important theorem in probability theory, from intuitive understanding to rigorous mathematical definitions. Furthermore, we delve into common misconceptions and how it is applied in society.
 
-## 2. What is the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/)?
+## 2. What is the Law of Large Numbers?
 
-The [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) (LLN) is, simply put, the law that **"as the number of trials increases sufficiently, the probability of an event occurring converges to the theoretical value (expected value)."**
+The law of large numbers (LLN) states that the sample mean of independent, identically distributed random variables converges to their expectation when $E[|X_1|]<\infty$. For zero–one indicators of an event, the observed relative frequency approaches its probability. The probability itself does not change as trials accumulate.
 
 Imagine tossing a coin. The probability of getting heads is $1/2$ ($50\%$). However, just tossing it 10 times doesn't guarantee 5 heads and 5 tails. You might get 7 heads, or only 2.
-However, if you repeat the trial 10,000 or 100,000 times, the proportion of heads will get infinitely closer to $50\%$.
+For independent tosses of a fair coin, the proportion of heads converges to 50% with probability one. This does not guarantee exactly 50% after finitely many tosses or an error that decreases at every step.
 
 ```mermaid
 graph TD
     A["Few trials"] -->|"Results are widely dispersed"| B["Deviation from theoretical value"]
-    C["Many trials"] -->|"Results converge"| D["Matches theoretical value"]
+    C["Many trials"] -->|"Results converge"| D["Approaches theoretical value"]
     B --> E["Short-term luck (Gambler's perspective)"]
-    D --> F["Long-term certainty (Casino/Insurance company's perspective)"]
+    D --> F["Long-term stability under assumptions"]
 ```
 
 This gap between "short-term volatility" and "long-term stability" is the very essence of probability, and it's a point where humans intuitively tend to misunderstand.
 
-## 3. House Edge and the Casino's Winning Strategy
+## 3. House Edge and Average Returns
 
-All casino games have a **house edge** set. For example, American roulette has 38 pockets in total: numbers from 1 to 36, plus 0 and 00.
+The house edge is the house’s expected profit as a fraction of the amount wagered. Consider an ideal American roulette wheel with 38 equally likely pockets: 1 through 36, plus 0 and 00.
 
 If you bet on "red or black," the probability of winning is $18/38$ (about $47.37\%$). The payout is 2x, but since the winning probability is under $50\%$, the expected value of a single bet is negative.
 
 $$
-\text{Expected Value} = \left( \frac{18}{38} \times 1 \right) + \left( \frac{20}{38} \times (-1) \right) = -0.0526
+\text{Expected Value} = \left( \frac{18}{38} \times 1 \right) + \left( \frac{20}{38} \times (-1) \right) = -\frac{1}{19} \approx -0.0526
 $$
 
-In other words, for every $1 bet, the player loses an average of about $5.26$ cents.
-In the short term, a player might win consecutively and make a lot of money. However, as tens of thousands or millions of trials (many games by many players) are repeated, the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) works, and the casino's profit margin reliably converges to $5.26\%$. For the casino, whether an individual player wins or loses is not important. They only need to focus on gaining the number of trials according to the **[Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/)**.
+For each dollar wagered, the player’s expected net loss is about 5.26 cents.
+With independent spins and an equal stake on red each time, the house’s average profit per bet converges almost surely to $1/19\approx5.26\%$ of the stake. This is not convergence of total profit or a guarantee of profit after finitely many bets. Expenses, varying stakes, and capital constraints require separate consideration.
 
 ```mermaid
 sequenceDiagram
@@ -58,19 +58,19 @@ sequenceDiagram
     C-->>P: "Fluctuation of wins and losses (short term)"
     loop "Tens of thousands of trials"
         P->>C: "Continuous betting"
-        C-->>C: "Profit converges to expected value due to Law of Large Numbers"
+        C-->>C: "Average profit per bet approaches expectation"
     end
-    C-->>C: "Securing stable revenue"
+    C-->>C: "Loss remains possible over a finite period"
 ```
 
-## 4. Mathematical Definition of the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/)
+## 4. Mathematical Definition of the Law of Large Numbers
 
-Depending on the strength of convergence, the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) has two types: the **Weak Law of Large Numbers** (WLLN) and the **Strong [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/)** (SLLN). Expressed rigorously in mathematics, it is as follows.
+Depending on the strength of convergence, the Law of Large Numbers has two types: the **Weak Law of Large Numbers** (WLLN) and the **Strong Law of Large Numbers** (SLLN). Expressed rigorously in mathematics, it is as follows.
 
-### 4.1. Weak [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) (WLLN)
+### 4.1. Weak Law of Large Numbers (WLLN)
 
 The weak law is based on the concept of "convergence in probability."
-Suppose there is a sequence of independent and identically distributed (i.i.d.) random variables $X_1, X_2, \dots, X_n$, and their expected value is $\mu$. If we define the sample mean as $\bar{X}_n = \frac{1}{n} \sum_{i=1}^n X_i$, then for any positive number $\epsilon > 0$, the following holds.
+Let $X_1,X_2,\dots$ be independent and identically distributed (i.i.d.) with $E[|X_1|]<\infty$ and $E[X_1]=\mu$. For the sample mean $\bar{X}_n=\frac{1}{n}\sum_{i=1}^n X_i$, the following holds for every $\epsilon>0$.
 
 $$
 \lim_{n \to \infty} P(|\bar{X}_n - \mu| > \epsilon) = 0
@@ -78,7 +78,7 @@ $$
 
 This means that "as the sample size $n$ becomes larger, the probability that the sample mean deviates from the true expected value by more than $\epsilon$ approaches $0$."
 
-### 4.2. Strong [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) (SLLN)
+### 4.2. Strong Law of Large Numbers (SLLN)
 
 The strong law is based on the stronger concept of "almost sure convergence (convergence with probability 1)."
 
@@ -86,11 +86,11 @@ $$
 P\left(\lim_{n \to \infty} \bar{X}_n = \mu \right) = 1
 $$
 
-While the weak law indicates that "at a certain point $n$, the probability of deviating from the mean is low," the strong law guarantees that "when considering infinite trials, the probability of drawing a trajectory where the sample mean converges to the expected value is $100\%$." In other words, if you play the game forever, the final result will always settle exactly as the theory dictates.
+The weak law says that, for each sufficiently large n, the probability of exceeding a fixed error tolerance becomes small. Under the same i.i.d. and integrability assumptions, the strong law says that the entire sequence of sample means converges to the expectation on an event of probability one. Probability-zero exceptions are possible. Neither law guarantees exact agreement after finitely many trials or permanently positive profits.
 
 ### 4.3. Proof of the Weak Law using Chebyshev's Inequality
 
-The Weak [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) can be proven relatively easily using **Chebyshev's inequality**.
+For this proof, assume additionally that the variance is finite, $\sigma^2<\infty$, and apply Chebyshev’s inequality. Finite variance is not required for the i.i.d. weak law itself.
 Let the expected value of a random variable $Y$ be $\mu_Y$ and its variance be $\sigma_Y^2$. Chebyshev's inequality is expressed as follows:
 
 $$
@@ -108,15 +108,15 @@ As $n \to \infty$, the right side approaches $0$. Therefore, the probability on 
 
 ## 5. Gambler's Fallacy
 
-A famous psychological bias born from misunderstanding the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) is the **Gambler's Fallacy**.
+A famous psychological bias born from misunderstanding the Law of Large Numbers is the **Gambler's Fallacy**.
 
-When people see "red" appear 10 times in a row in roulette, many think "black should be coming up soon." This is based on the erroneous reasoning that "since the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) states the ratio of red to black should converge to $50\%$, black becomes more likely to appear to offset the previous bias."
+When people see "red" appear 10 times in a row in roulette, many think "black should be coming up soon." This is based on the erroneous reasoning that "since the Law of Large Numbers states the ratio of red to black should converge to $50\%$, black becomes more likely to appear to offset the previous bias."
 
-However, the roulette ball has no memory. On the 11th spin, the probability of getting red and the probability of getting black are still independent and equal. The [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) guarantees that the ratio will converge in the "infinite future," and **does not mean that forces work to offset past biases**.
+For independent spins of an ideal 38-pocket roulette wheel, the next spin has probability $18/38$ of red and $18/38$ of black, regardless of past results. Because of 0 and 00, neither limiting proportion is 50%. The law does not introduce a force that cancels past imbalances or changes the next outcome’s probabilities.
 
 ## 6. Simulation with Python
 
-Let's actually visualize the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) using programming. We will simulate rolling a die and watching the average of the rolls converge to the expected value of 3.5.
+Let's actually visualize the Law of Large Numbers using programming. We will simulate rolling a die and watching the average of the rolls converge to the expected value of 3.5.
 
 ```python
 import numpy as np
@@ -135,40 +135,46 @@ cumulative_average = np.cumsum(rolls) / np.arange(1, n_trials + 1)
 
 # Plot the results
 plt.figure(figsize=(10, 6))
-plt.plot(cumulative_average, label="Cumulative average", color='blue', alpha=0.7)
-plt.axhline(y=expected_value, color='red', linestyle='--', label="Expected value (3.5)")
-plt.title("Law of Large Numbers Simulation (Dice)")
-plt.xlabel("Number of trials")
-plt.ylabel("Average of rolls")
+plt.plot(cumulative_average, label=r"$\bar{X}_n$", color="blue", alpha=0.7)
+plt.axhline(y=expected_value, color="red", linestyle="--", label=r"$E[X]=3.5$")
+plt.title(r"$\bar{X}_n$")
+plt.xlabel(r"n")
+plt.ylabel(r"$\bar{X}_n$")
 plt.legend()
 plt.grid(True)
 plt.show()
 ```
 
-When you run this code, the average fluctuates greatly in the first few rolls, but as the number of trials increases, you get a graph that perfectly follows the red dotted line (expected value 3.5). This is a visual proof of the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/).
+This example illustrates a cumulative mean fluctuating near 3.5. A finite simulation aids intuition; it is not a proof. The mean can move farther from the expectation along the way and need not ever equal 3.5 exactly.
 
-## 7. Cases Where the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) Doesn't Hold: [Cauchy](https://kenji.blog/en/p/cauchy/) Distribution
+## 7. Cases Where the Law of Large Numbers Doesn't Hold: [Cauchy](https://kenji.blog/en/p/cauchy/) Distribution
 
-The [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) is not universal. A prerequisite is that "the expected value (mean) must be finite."
-For example, a probability distribution called the **[Cauchy](https://kenji.blog/en/p/cauchy/) distribution** has very heavy tails (extreme values occur easily), and its expected value and variance cannot be defined (they diverge to infinity).
+The Law of Large Numbers is not universal. A prerequisite is that "the expected value (mean) must be finite."
+The Cauchy distribution has no finite absolute expectation, and its mean is undefined. This does not mean its mean equals positive infinity. Its second moment is infinite, and it has no ordinary finite variance.
 
-Even if you generate random numbers following a [Cauchy](https://kenji.blog/en/p/cauchy/) distribution and take the average, the value will never converge to a specific number and will continue to jump wildly. Even in the real world, it's important to understand that there are cases (such as financial markets where unpredictable and extreme events called "Black Swans" occur) where the simple [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) cannot be applied (or is dangerous to apply).
+The sample mean of independent standard Cauchy variables is standard Cauchy for every $n$, so it does not converge in probability to a constant. For real data, heavy tails alone do not establish that the law fails: check integrability, dependence, and the model’s other assumptions.
 
 ## 8. Application Examples in the Real World
 
-The [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) is utilized not only in casinos but in various systems that support the foundation of our society.
+The Law of Large Numbers is utilized not only in casinos but in various systems that support the foundation of our society.
 
 ### 8.1. Insurance Business
-Life insurance and car insurance are business models predicated exactly on the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/). It is impossible to accurately predict when an individual will get sick or have an accident. However, by collecting data on the scale of tens or hundreds of thousands of people, we can predict with very high accuracy what proportion of insurance payouts will occur within a certain period. This makes it possible to calculate appropriate premiums and establish a viable business.
+In insurance, averaging losses across many contracts can help predict aggregate risk. Contract count alone does not guarantee high accuracy. Models must consider shared catastrophes, correlated losses, differences between groups, and changes in loss distributions or policy conditions.
 
 ### 8.2. Statistical Quality Control
-In product manufacturing at factories, inspecting all products may be impossible from a cost and time perspective. Therefore, a portion of randomly selected products (sample) is inspected, and the overall defect rate is estimated from the results. Here too, the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) serves as a powerful basis for inferring the properties of a population from a sample.
+In product manufacturing at factories, inspecting all products may be impossible from a cost and time perspective. Therefore, a portion of randomly selected products (sample) is inspected, and the overall defect rate is estimated from the results. Here too, the Law of Large Numbers serves as a powerful basis for inferring the properties of a population from a sample.
 
 ### 8.3. Machine Learning and Big Data
-Modern AI and machine learning models achieve high accuracy by learning from massive amounts of data (big data). As the training data increases, the influence of noise decreases, and models closer to true patterns or probability distributions can be acquired, precisely because there is mathematical backing in the form of the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/). The process of converging to true laws through processing massive amounts of data is truly the core part of machine learning.
+In machine learning, the law can justify convergence of average observed loss to expected loss for a fixed model with i.i.d., integrable losses. Generalization after choosing a model from training data requires additional arguments. More data alone does not remove sampling bias, distribution shift, or model misspecification.
 
 ## 9. Conclusion
 
-The [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) is a powerful tool for us to understand a highly uncertain world and make rational decisions. From casino profit structures to insurance and AI technology, this law functions quietly but reliably everywhere in modern society.
+The Law of Large Numbers is a powerful tool for us to understand a highly uncertain world and make rational decisions. From casino profit structures to insurance and AI technology, this law functions quietly but reliably everywhere in modern society.
 
 The next time you toss a coin or roll a die, why not think about the grand and beautiful mathematical laws hidden behind each chance occurrence? Instead of going from joy to despair over short-term luck, having a long-term perspective might just change how the world looks to you a little bit.
+
+## References
+
+- [MIT 18.05: Central Limit Theorem and the Law of Large Numbers](https://math.mit.edu/~dav/05.dir/class6-prep.pdf)
+- [Mathlib: The strong law of large numbers](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/StrongLaw.html)
+- [MIT: Cauchy Distribution](https://web.mit.edu/urban_or_book/www/book/chapter3/3.3.3.html)

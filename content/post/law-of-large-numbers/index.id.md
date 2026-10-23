@@ -1,6 +1,5 @@
 ---
-title: "Hukum Bilangan Besar - Mengapa Kasino Selalu Menang dan Bagaimana Probabilitas Konvergen"
-date: "2026-09-24T19:44:38+09:00"
+title: "Hukum Bilangan Besar — Syarat Rata-Rata Sampel Mendekati Nilai Harapan"
 description: "Penjelasan tentang Hukum Bilangan Besar, teorema penting dalam teori probabilitas. Kami mendalami struktur keuntungan kasino dan definisi matematis yang ketat (hukum lemah dan kuat), dengan diagram dan kode Python."
 slug: "law-of-large-numbers"
 date: 2026-09-14
@@ -12,43 +11,44 @@ tags:
   - "Statistik"
   - "Python"
   - "Kasino"
+lastmod: 2026-10-24
 ---
 
-## 1. Pendahuluan: Mengapa Kasino Tidak Pernah "Berjudi"
+## 1. Pendahuluan: Nilai Harapan Keuntungan Kasino dan Fluktuasi
 
-Kasino-kasino mewah di seluruh dunia. Beberapa pemain menghasilkan kekayaan dalam semalam, sementara yang lain kehilangan segalanya. Namun, operator kasino tidak pernah **berjudi**. Mereka menjalankan bisnis berdasarkan fondasi matematis yang kuat, yaitu **[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/)** ([Law of Large Numbers](https://kenji.blog/id/p/law-of-large-numbers/)).
+Pemain dapat menang besar dalam jangka pendek. Pada model dengan aturan tetap, rata-rata dari banyak taruhan independen dapat mendekati nilai harapannya. Hukum bilangan besar mendukung gagasan ini, tetapi tidak menjamin laba selama periode terbatas ataupun keberhasilan bisnis kasino.
 
-Dalam artikel ini, kami menjelaskan secara komprehensif tentang "[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/)," teorema paling mendasar dan penting dalam teori probabilitas, dari pemahaman intuitif hingga definisi matematis yang ketat. Selain itu, kami menggali kesalahpahaman umum dan bagaimana hal ini diterapkan dalam masyarakat.
+Dalam artikel ini, kami menjelaskan secara komprehensif tentang "Hukum Bilangan Besar," teorema paling mendasar dan penting dalam teori probabilitas, dari pemahaman intuitif hingga definisi matematis yang ketat. Selain itu, kami menggali kesalahpahaman umum dan bagaimana hal ini diterapkan dalam masyarakat.
 
-## 2. Apa Itu [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/)?
+## 2. Apa Itu Hukum Bilangan Besar?
 
-[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) (LLN) secara sederhana adalah hukum bahwa **"seiring dengan peningkatan jumlah percobaan yang cukup, probabilitas terjadinya suatu peristiwa akan konvergen menuju nilai teoretisnya (nilai harapan)."**
+Hukum bilangan besar (LLN) menyatakan bahwa rata-rata sampel variabel acak independen dan berdistribusi identik konvergen ke nilai harapannya jika $E[|X_1|]<\infty$. Untuk indikator nol–satu suatu kejadian, frekuensi relatif yang diamati mendekati probabilitas kejadian itu. Probabilitasnya sendiri tidak berubah saat percobaan bertambah.
 
 Bayangkan melempar koin. Probabilitas mendapatkan sisi angka adalah $1/2$ ($50\%$). Namun, hanya melemparnya 10 kali tidak menjamin 5 angka dan 5 gambar. Anda mungkin mendapatkan 7 angka, atau hanya 2.
-Namun, jika Anda mengulang percobaan 10.000 atau 100.000 kali, proporsi angka akan mendekati $50\%$ tanpa batas.
+Untuk lemparan koin adil yang independen, proporsi sisi angka konvergen ke 50% dengan probabilitas satu. Ini tidak menjamin tepat 50% setelah jumlah lemparan terbatas atau galat yang mengecil pada setiap langkah.
 
 ```mermaid
 graph TD
     A["Sedikit percobaan"] -->|"Hasil sangat tersebar"| B["Penyimpangan dari nilai teoretis"]
-    C["Banyak percobaan"] -->|"Hasil konvergen"| D["Sesuai dengan nilai teoretis"]
+    C["Banyak percobaan"] -->|"Hasil konvergen"| D["Mendekati nilai teoretis"]
     B --> E["Keberuntungan jangka pendek (Perspektif penjudi)"]
-    D --> F["Kepastian jangka panjang (Perspektif kasino / perusahaan asuransi)"]
+    D --> F["Stabilitas jangka panjang dengan syarat"]
 ```
 
 Kesenjangan antara "fluktuasi jangka pendek" dan "stabilitas jangka panjang" ini adalah inti dari probabilitas, dan juga titik di mana manusia secara intuitif sering salah paham.
 
-## 3. Keuntungan Rumah (House Edge) dan Strategi Kemenangan Kasino
+## 3. Keunggulan Kasino dan Keuntungan Rata-Rata
 
-Semua permainan kasino memiliki **house edge** (keuntungan rumah) yang telah ditetapkan. Misalnya, rolet Amerika memiliki 38 kantong angka secara total: angka 1 hingga 36, ditambah 0 dan 00.
+House edge adalah nilai harapan keuntungan kasino sebagai proporsi dari nilai taruhan. Pertimbangkan rolet Amerika ideal dengan 38 kantong yang sama peluangnya: angka 1 hingga 36, serta 0 dan 00.
 
 Jika Anda bertaruh pada "merah atau hitam", probabilitas untuk menang adalah $18/38$ (sekitar $47,37\%$). Pembayarannya adalah 2 kali lipat, namun karena probabilitas menangnya di bawah $50\%$, nilai harapan dari taruhan tunggal adalah negatif.
 
 $$
-\text{Nilai Harapan} = \left( \frac{18}{38} \times 1 \right) + \left( \frac{20}{38} \times (-1) \right) = -0,0526
+\text{Nilai Harapan} = \left( \frac{18}{38} \times 1 \right) + \left( \frac{20}{38} \times (-1) \right) = -\frac{1}{19} \approx -0{,}0526
 $$
 
 Dengan kata lain, untuk setiap 1 dolar yang dipertaruhkan, pemain kehilangan rata-rata sekitar $5,26$ sen.
-Dalam jangka pendek, pemain mungkin menang berturut-turut dan mendapatkan banyak uang. Namun, ketika puluhan ribu atau jutaan percobaan (banyak permainan oleh banyak pemain) diulang, [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) mulai bekerja, dan margin keuntungan kasino secara pasti akan konvergen di angka $5,26\%$. Bagi kasino, apakah individu pemain menang atau kalah bukanlah hal yang penting. Mereka hanya perlu fokus pada mengumpulkan jumlah percobaan sesuai dengan **[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/)**.
+Dengan putaran independen dan nilai taruhan yang sama pada merah setiap kali, rata-rata keuntungan kasino per taruhan konvergen hampir pasti ke $1/19\approx5{,}26\%$ dari nilai taruhan. Ini bukan konvergensi laba total atau jaminan laba setelah jumlah taruhan terbatas. Biaya, taruhan yang bervariasi, dan keterbatasan modal perlu dipertimbangkan tersendiri.
 
 ```mermaid
 sequenceDiagram
@@ -58,19 +58,19 @@ sequenceDiagram
     C-->>P: "Fluktuasi menang kalah (jangka pendek)"
     loop "Puluhan ribu percobaan"
         P->>C: "Taruhan berkelanjutan"
-        C-->>C: "Keuntungan konvergen ke nilai harapan akibat Hukum Bilangan Besar"
+        C-->>C: "Keuntungan rata-rata per taruhan mendekati nilai harapan"
     end
-    C-->>C: "Menjamin pendapatan yang stabil"
+    C-->>C: "Kerugian mungkin terjadi dalam periode terbatas"
 ```
 
-## 4. Definisi Matematis dari [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/)
+## 4. Definisi Matematis dari Hukum Bilangan Besar
 
-Bergantung pada kekuatan konvergensinya, [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) memiliki dua jenis: **Hukum Lemah Bilangan Besar** (WLLN) dan **Hukum Kuat Bilangan Besar** (SLLN). Dinyatakan secara matematis dan ketat, bunyinya adalah sebagai berikut.
+Bergantung pada kekuatan konvergensinya, Hukum Bilangan Besar memiliki dua jenis: **Hukum Lemah Bilangan Besar** (WLLN) dan **Hukum Kuat Bilangan Besar** (SLLN). Dinyatakan secara matematis dan ketat, bunyinya adalah sebagai berikut.
 
 ### 4.1. Hukum Lemah Bilangan Besar (WLLN)
 
 Hukum lemah didasarkan pada konsep "konvergensi dalam probabilitas."
-Misalkan terdapat urutan variabel acak $X_1, X_2, \dots, X_n$ yang independen dan terdistribusi identik (i.i.d.), dan nilai harapannya adalah $\mu$. Jika kita mendefinisikan rata-rata sampel sebagai $\bar{X}_n = \frac{1}{n} \sum_{i=1}^n X_i$, maka untuk bilangan positif sembarang $\epsilon > 0$, berlaku kondisi berikut:
+Misalkan $X_1,X_2,\dots$ independen dan berdistribusi identik (i.i.d.), dengan $E[|X_1|]<\infty$ dan $E[X_1]=\mu$. Untuk rata-rata sampel $\bar{X}_n=\frac{1}{n}\sum_{i=1}^n X_i$, berlaku hal berikut untuk setiap $\epsilon>0$.
 
 $$
 \lim_{n \to \infty} P(|\bar{X}_n - \mu| > \epsilon) = 0
@@ -86,11 +86,11 @@ $$
 P\left(\lim_{n \to \infty} \bar{X}_n = \mu \right) = 1
 $$
 
-Sementara hukum lemah menunjukkan bahwa "pada titik tertentu $n$, probabilitas untuk menyimpang dari rata-rata adalah rendah," hukum kuat menjamin bahwa "ketika mempertimbangkan percobaan tak terbatas, probabilitas menggambar lintasan di mana rata-rata sampel konvergen menuju nilai harapan adalah $100\%$." Dengan kata lain, jika Anda bermain selamanya, hasil akhirnya akan selalu persis sesuai teori.
+Hukum lemah menyatakan bahwa untuk setiap n yang cukup besar, probabilitas galat melebihi toleransi tetap menjadi kecil. Dengan asumsi independensi, distribusi identik, dan keterintegralan yang sama, hukum kuat menyatakan bahwa seluruh barisan rata-rata sampel konvergen ke nilai harapan pada kejadian berprobabilitas satu. Pengecualian berprobabilitas nol mungkin ada. Keduanya tidak menjamin kesamaan tepat setelah percobaan terbatas ataupun laba yang selalu positif.
 
 ### 4.3. Pembuktian Hukum Lemah menggunakan Ketidaksamaan Chebyshev
 
-Hukum Lemah Bilangan Besar dapat dibuktikan dengan relatif mudah menggunakan **ketidaksamaan Chebyshev**.
+Untuk pembuktian ini, asumsikan juga varians berhingga, $\sigma^2<\infty$, lalu gunakan ketidaksamaan Chebyshev. Hukum lemah i.i.d. sendiri tidak memerlukan varians berhingga.
 Jika nilai harapan variabel acak $Y$ adalah $\mu_Y$ dan variansnya adalah $\sigma_Y^2$, maka ketidaksamaan Chebyshev dinyatakan sebagai berikut:
 
 $$
@@ -108,15 +108,15 @@ Saat $n \to \infty$, sisi kanan mendekati $0$. Oleh karena itu, probabilitas di 
 
 ## 5. Kekeliruan Penjudi (Gambler's Fallacy)
 
-Salah satu bias psikologis terkenal yang lahir dari kesalahpahaman terhadap [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) adalah **Kekeliruan Penjudi**.
+Salah satu bias psikologis terkenal yang lahir dari kesalahpahaman terhadap Hukum Bilangan Besar adalah **Kekeliruan Penjudi**.
 
-Ketika orang melihat "merah" muncul 10 kali berturut-turut pada rolet, banyak yang berpikir "seharusnya hitam segera keluar". Hal ini didasarkan pada penalaran yang salah bahwa "karena [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) menyatakan rasio merah dan hitam harus konvergen ke $50\%$, hitam menjadi lebih mungkin muncul untuk mengimbangi bias sebelumnya."
+Ketika orang melihat "merah" muncul 10 kali berturut-turut pada rolet, banyak yang berpikir "seharusnya hitam segera keluar". Hal ini didasarkan pada penalaran yang salah bahwa "karena Hukum Bilangan Besar menyatakan rasio merah dan hitam harus konvergen ke $50\%$, hitam menjadi lebih mungkin muncul untuk mengimbangi bias sebelumnya."
 
-Namun, bola rolet tidak memiliki ingatan. Pada putaran ke-11, probabilitas munculnya merah dan probabilitas munculnya hitam tetap mandiri dan sama. [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) hanya menjamin bahwa rasio akan konvergen di "masa depan yang tak terhingga," dan **bukan berarti ada kekuatan yang bekerja untuk mengimbangi penyimpangan masa lalu**.
+Pada rolet ideal 38 kantong dengan putaran independen, probabilitas merah pada putaran berikutnya adalah $18/38$ dan hitam juga $18/38$, terlepas dari hasil sebelumnya. Karena ada 0 dan 00, proporsi limit keduanya bukan 50%. Hukum ini tidak menciptakan gaya untuk meniadakan ketimpangan masa lalu atau mengubah probabilitas hasil berikutnya.
 
 ## 6. Simulasi dengan Python
 
-Mari kita visualisasikan [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) secara konkret menggunakan pemrograman. Kita akan menyimulasikan melempar dadu dan melihat bagaimana rata-rata hasilnya konvergen menuju nilai harapan 3.5.
+Mari kita visualisasikan Hukum Bilangan Besar secara konkret menggunakan pemrograman. Kita akan menyimulasikan melempar dadu dan melihat bagaimana rata-rata hasilnya konvergen menuju nilai harapan 3.5.
 
 ```python
 import numpy as np
@@ -135,40 +135,46 @@ cumulative_average = np.cumsum(rolls) / np.arange(1, n_trials + 1)
 
 # Plot hasilnya
 plt.figure(figsize=(10, 6))
-plt.plot(cumulative_average, label="Rata-rata kumulatif", color='blue', alpha=0.7)
-plt.axhline(y=expected_value, color='red', linestyle='--', label="Nilai harapan (3.5)")
-plt.title("Simulasi Hukum Bilangan Besar (Dadu)")
-plt.xlabel("Jumlah percobaan")
-plt.ylabel("Rata-rata hasil lemparan")
+plt.plot(cumulative_average, label=r"$\bar{X}_n$", color="blue", alpha=0.7)
+plt.axhline(y=expected_value, color="red", linestyle="--", label=r"$E[X]=3.5$")
+plt.title(r"$\bar{X}_n$")
+plt.xlabel(r"n")
+plt.ylabel(r"$\bar{X}_n$")
 plt.legend()
 plt.grid(True)
 plt.show()
 ```
 
-Saat Anda menjalankan kode ini, rata-rata berfluktuasi secara tajam pada beberapa lemparan awal, tetapi seiring bertambahnya jumlah percobaan, Anda mendapatkan grafik yang mengikuti garis putus-putus merah (nilai harapan 3.5) dengan sempurna. Ini adalah bukti visual dari [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/).
+Contoh ini memperlihatkan rata-rata kumulatif berfluktuasi di sekitar 3,5. Simulasi terbatas membantu intuisi, tetapi bukan bukti teorema. Rata-rata dapat menjauh dari nilai harapan selama proses dan tidak harus pernah tepat sama dengan 3,5.
 
-## 7. Kasus di Mana [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) Tidak Berlaku: Distribusi [Cauchy](https://kenji.blog/id/p/cauchy/)
+## 7. Kasus di Mana Hukum Bilangan Besar Tidak Berlaku: Distribusi [Cauchy](https://kenji.blog/id/p/cauchy/)
 
-[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) tidak bersifat universal. Salah satu prasyaratnya adalah "nilai harapan (rata-rata) harus berhingga."
-Misalnya, distribusi probabilitas yang disebut **Distribusi [Cauchy](https://kenji.blog/id/p/cauchy/)** memiliki ekor yang sangat tebal (nilai ekstrem mudah terjadi) dan nilai harapan serta variansnya tidak dapat ditentukan (mereka divergen tak terhingga).
+Hukum Bilangan Besar tidak bersifat universal. Salah satu prasyaratnya adalah "nilai harapan (rata-rata) harus berhingga."
+Distribusi Cauchy tidak memiliki nilai harapan absolut berhingga, dan rata-ratanya tidak terdefinisi. Ini tidak berarti rata-ratanya sama dengan tak hingga positif. Momen keduanya tak hingga, dan distribusi ini tidak memiliki varians berhingga biasa.
 
-Meskipun Anda menghasilkan angka acak yang mengikuti distribusi [Cauchy](https://kenji.blog/id/p/cauchy/) dan menghitung rata-ratanya, nilainya tidak akan pernah konvergen ke satu angka spesifik dan akan terus melonjak tak beraturan. Di dunia nyata juga, penting untuk memahami bahwa ada kasus-kasus (seperti pasar keuangan di mana peristiwa ekstrem yang tak terduga disebut "Angsa Hitam" terjadi) di mana [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) sederhana tidak dapat diterapkan (atau berbahaya untuk diterapkan).
+Rata-rata sampel variabel Cauchy standar independen tetap berdistribusi Cauchy standar untuk setiap $n$, sehingga tidak konvergen dalam probabilitas ke konstanta. Untuk data nyata, ekor berat saja tidak membuktikan bahwa hukum gagal; periksa keterintegralan, ketergantungan, dan syarat model lainnya.
 
 ## 8. Contoh Penerapan di Dunia Nyata
 
-[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) digunakan tidak hanya di kasino, tetapi dalam berbagai sistem yang mendukung fondasi masyarakat kita.
+Hukum Bilangan Besar digunakan tidak hanya di kasino, tetapi dalam berbagai sistem yang mendukung fondasi masyarakat kita.
 
 ### 8.1. Bisnis Asuransi
-Asuransi jiwa dan asuransi mobil adalah model bisnis yang persis didasarkan pada [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/). Sangat tidak mungkin untuk memprediksi secara akurat kapan seseorang akan jatuh sakit atau mengalami kecelakaan. Namun, dengan mengumpulkan data pada skala puluhan atau ratusan ribu orang, kita dapat memprediksi dengan tingkat akurasi yang sangat tinggi berapa proporsi pembayaran asuransi yang akan terjadi dalam suatu periode. Hal ini memungkinkan perhitungan premi yang sesuai dan membangun bisnis yang layak.
+Dalam asuransi, merata-ratakan kerugian banyak kontrak dapat membantu memperkirakan risiko agregat. Jumlah kontrak saja tidak menjamin akurasi tinggi. Model harus mempertimbangkan bencana bersama, kerugian yang berkorelasi, perbedaan kelompok, serta perubahan distribusi kerugian atau ketentuan polis.
 
 ### 8.2. Pengendalian Kualitas Statistik
-Dalam pembuatan produk di pabrik, memeriksa seluruh produk seringkali tidak mungkin dilakukan dari sudut pandang biaya dan waktu. Oleh karena itu, sebagian produk yang dipilih secara acak (sampel) diperiksa, dan tingkat cacat keseluruhan diestimasi dari hasilnya. Di sini juga, [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) berfungsi sebagai dasar yang kuat untuk menyimpulkan sifat-sifat suatu populasi dari sampel.
+Dalam pembuatan produk di pabrik, memeriksa seluruh produk seringkali tidak mungkin dilakukan dari sudut pandang biaya dan waktu. Oleh karena itu, sebagian produk yang dipilih secara acak (sampel) diperiksa, dan tingkat cacat keseluruhan diestimasi dari hasilnya. Di sini juga, Hukum Bilangan Besar berfungsi sebagai dasar yang kuat untuk menyimpulkan sifat-sifat suatu populasi dari sampel.
 
 ### 8.3. Pembelajaran Mesin (Machine Learning) dan Big Data
-Model kecerdasan buatan (AI) dan pembelajaran mesin modern mencapai akurasi tinggi dengan mempelajari dari kumpulan data yang sangat besar (big data). Saat data pelatihan meningkat, pengaruh noise (gangguan) berkurang, dan model yang lebih mendekati pola sebenarnya atau distribusi probabilitas dapat diperoleh. Ini dimungkinkan karena adanya dukungan matematis dari [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/). Proses konvergensi ke hukum sebenarnya melalui pengolahan data masif pada dasarnya adalah inti dari pembelajaran mesin.
+Dalam pembelajaran mesin, hukum ini dapat mendukung konvergensi rata-rata kerugian yang diamati ke nilai harapan kerugian pada model tetap dengan kerugian i.i.d. dan terintegralkan. Generalisasi setelah memilih model dari data pelatihan memerlukan argumen tambahan. Lebih banyak data saja tidak menghapus bias sampel, pergeseran distribusi, atau kesalahan spesifikasi model.
 
 ## 9. Kesimpulan
 
-[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) adalah alat yang ampuh bagi kita untuk memahami dunia yang sangat tidak pasti ini dan membuat keputusan yang rasional. Dari struktur keuntungan kasino hingga asuransi dan teknologi AI, hukum ini diam-diam tetapi pasti beroperasi di mana-mana dalam masyarakat modern.
+Hukum Bilangan Besar adalah alat yang ampuh bagi kita untuk memahami dunia yang sangat tidak pasti ini dan membuat keputusan yang rasional. Dari struktur keuntungan kasino hingga asuransi dan teknologi AI, hukum ini diam-diam tetapi pasti beroperasi di mana-mana dalam masyarakat modern.
 
 Lain kali saat Anda melempar koin atau melempar dadu, bagaimana jika Anda memikirkan tentang hukum matematika yang besar dan indah yang tersembunyi di balik setiap kebetulan? Daripada hanyut dalam suka atau duka akibat keberuntungan jangka pendek, memiliki perspektif jangka panjang mungkin akan sedikit mengubah cara Anda memandang dunia.
+
+## Referensi
+
+- [MIT 18.05: Central Limit Theorem and the Law of Large Numbers](https://math.mit.edu/~dav/05.dir/class6-prep.pdf)
+- [Mathlib: The strong law of large numbers](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/StrongLaw.html)
+- [MIT: Cauchy Distribution](https://web.mit.edu/urban_or_book/www/book/chapter3/3.3.3.html)

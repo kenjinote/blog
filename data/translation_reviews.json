@@ -365,6 +365,86 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-002.json",
       "evidenceHash": "efd8771eb99b4000dbcaf6b9f75350be172d6f72684782f9986366eb8e8381bf"
+    },
+    "post/law-of-large-numbers/index.en.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "d29a4661da0ffdc58e67a07172cdf64d33bfd51221198dff10104edc931a5e5e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "056f943245158cce3d126077d467d40024d3049c5666029c99d7c2a97b8dd495"
+    },
+    "post/law-of-large-numbers/index.zh-cn.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "c07fa7ddeac46537a54819103e7a8c1ceccff935f9c8d551c486f02e21e8c326",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "9731a338473aa19c7646f1576d233c537e4ddf3eca3e477354b0b5484bb23071"
+    },
+    "post/law-of-large-numbers/index.zh-tw.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "7f6c7bf19748825f8d7f8f2975691a23557a2d5d6df823c7f247aa4f16fef1ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "20492bf8a7dc2b3eabccbafb91d330b6d8fdcd4b89e170490456914cd105df64"
+    },
+    "post/law-of-large-numbers/index.es.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "d87ee27b80c18d89144fe087b04da53e7d8706b689746824f9448665aa265533",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "e5c9195ff5360508f03af226b0a7a373aa5ed2396e179305c4949e8b246c963c"
+    },
+    "post/law-of-large-numbers/index.pt.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "d083e7cad9d5a44f682053fb381c168aa8011cb9ba5c7f54efd2de418ae56d46",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "82d0d99a2d602e45ad2e9fe5a21cdebf3fd716e6dc1d29c28d3f33a9c310e990"
+    },
+    "post/law-of-large-numbers/index.ko.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "0541e64260494dc7b846c6c01c4519c160f9457b5f2ac210dae07cbfc4b6080d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "e9da4d21f49b9a7be65c6774c7d75a81c812eb15622ccb46e29ee3f3bf164607"
+    },
+    "post/law-of-large-numbers/index.id.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "2f7680db858145e3a9e4e830e9ae1f436467c5ee696803275e71a4e53b26c155",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "c657785f8ce37e2619592d1043eb7eb57e4dcb440cad4ca8ccd2bef88f2a3d33"
+    },
+    "post/law-of-large-numbers/index.fr.md": {
+      "source": "post/law-of-large-numbers/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "430bd97319572c88647690b4a84099963255ae9ac9557cf5199611b6ab43ecc3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-003.json",
+      "evidenceHash": "8d6592b5324f81d8b6594504485c385242541832b4f013fa0dd003be36bcd7d1"
     }
   }
 }

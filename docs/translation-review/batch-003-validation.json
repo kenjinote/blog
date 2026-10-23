@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "validatedAt": "2026-10-24",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.2",
+    "backend": "Agg"
+  },
+  "rouletteExpectedNetProfit": {
+    "exact": "-1/19",
+    "decimal": -0.05263157894736842
+  },
+  "files": [
+    {
+      "file": "content/post/law-of-large-numbers/index.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.en.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.zh-cn.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.zh-tw.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.es.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.pt.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.ko.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.id.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    },
+    {
+      "file": "content/post/law-of-large-numbers/index.fr.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "codeExecuted": true,
+      "rollCount": 10000,
+      "seed": 42,
+      "finalMean": 3.4999,
+      "subplotCount": 1,
+      "remainingArticleLinksExist": true,
+      "hugoRendered": true,
+      "primaryReferencesRendered": true
+    }
+  ],
+  "limitations": [
+    "A single finite simulation illustrates the law, rather than proving asymptotic convergence.",
+    "Formula/AST matching supplements full-body AI semantic review; it is not human confirmation."
+  ],
+  "localPreview": {
+    "hugo": "0.139.0 extended",
+    "multilingualPagesChecked": 408,
+    "httpsHtmlFilesChecked": 778,
+    "httpsXmlFilesChecked": 41,
+    "scope": "Four article bundles including the three priority bundles; only the versions listed in files were semantically reviewed in this batch."
+  }
+}

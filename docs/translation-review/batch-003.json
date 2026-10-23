@@ -1,0 +1,341 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/law-of-large-numbers/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/law-of-large-numbers/index.md",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "d29a4661da0ffdc58e67a07172cdf64d33bfd51221198dff10104edc931a5e5e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–9, both diagrams, theorem explanations, proof, code, counterexample, applications, and conclusion against the revised Japanese source. Distinguished relative frequency from a changing event probability, average profit from total profit, almost-sure limits from finite-time guarantees, and illustration from proof. Checked applicability to Cauchy variables, insurance dependence, and fixed versus data-selected machine-learning models."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked sample/empirical mean, expectation, relative frequency, i.i.d., integrability, convergence in probability versus almost sure convergence, house edge versus guaranteed profits, and second moment versus undefined Cauchy mean. Retained appropriate localized decimal notation without changing arithmetic."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the integrability hypothesis E[|X1|]<∞ for the i.i.d. laws, finite-variance assumption for the Chebyshev proof only, Var(mean)=σ²/n and the resulting bound. Corrected roulette expected net return from an asserted exact -0.0526 to -1/19≈-0.0526. Explained the red/black probability 18/38, not 1/2. All five display formulas match Japanese after removing localized text and normalizing decimal punctuation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the whole localized NumPy/Matplotlib example and comments; compared ASTs and executed each reviewed version with seed 42. Each generated 10,000 die rolls, one subplot and final cumulative mean 3.4999. Compared the cumulative-mean vector to cumsum(rolls)/arange(1,10001). Inspected the rendered plot. Mathematical labels avoid missing localized fonts. This finite run illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links. Replaced the source simulation paragraph containing a graph link to a graph-data-structures article. Added and checked primary MIT 18.05, Mathlib strong-law documentation and MIT Cauchy-distribution references. Verified remaining internal article targets and their language files locally."
+        }
+      },
+      "summary": "Corrected source-level overclaims about convergence, casino returns, Cauchy means, and applications throughout the complete translation; updated both diagrams and validated the mathematical/code examples.",
+      "languageSpecificFindings": "Repaired the currency sentence containing an unescaped dollar sign that could be parsed as an unmatched math delimiter.",
+      "limitations": [
+        "AI technical and semantic comparison; not a native-speaker human confirmation.",
+        "Finite code execution is supplementary evidence, not a proof of an asymptotic theorem."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf",
+        "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/StrongLaw.html",
+        "https://web.mit.edu/urban_or_book/www/book/chapter3/3.3.3.html"
+      ],
+      "validation": "docs/translation-review/batch-003-validation.json"
+    },
+    "post/law-of-large-numbers/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/law-of-large-numbers/index.md",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "c07fa7ddeac46537a54819103e7a8c1ceccff935f9c8d551c486f02e21e8c326",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–9, both diagrams, theorem explanations, proof, code, counterexample, applications, and conclusion against the revised Japanese source. Distinguished relative frequency from a changing event probability, average profit from total profit, almost-sure limits from finite-time guarantees, and illustration from proof. Checked applicability to Cauchy variables, insurance dependence, and fixed versus data-selected machine-learning models."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked sample/empirical mean, expectation, relative frequency, i.i.d., integrability, convergence in probability versus almost sure convergence, house edge versus guaranteed profits, and second moment versus undefined Cauchy mean. Retained appropriate localized decimal notation without changing arithmetic."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the integrability hypothesis E[|X1|]<∞ for the i.i.d. laws, finite-variance assumption for the Chebyshev proof only, Var(mean)=σ²/n and the resulting bound. Corrected roulette expected net return from an asserted exact -0.0526 to -1/19≈-0.0526. Explained the red/black probability 18/38, not 1/2. All five display formulas match Japanese after removing localized text and normalizing decimal punctuation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the whole localized NumPy/Matplotlib example and comments; compared ASTs and executed each reviewed version with seed 42. Each generated 10,000 die rolls, one subplot and final cumulative mean 3.4999. Compared the cumulative-mean vector to cumsum(rolls)/arange(1,10001). Inspected the rendered plot. Mathematical labels avoid missing localized fonts. This finite run illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links. Replaced the source simulation paragraph containing a graph link to a graph-data-structures article. Added and checked primary MIT 18.05, Mathlib strong-law documentation and MIT Cauchy-distribution references. Verified remaining internal article targets and their language files locally."
+        }
+      },
+      "summary": "Corrected source-level overclaims about convergence, casino returns, Cauchy means, and applications throughout the complete translation; updated both diagrams and validated the mathematical/code examples.",
+      "languageSpecificFindings": "The original introductory Chinese already used frequency; preserved that correct distinction and added the integrability condition. Replaced the rake-rate wording with house expected-profit terminology.",
+      "limitations": [
+        "AI technical and semantic comparison; not a native-speaker human confirmation.",
+        "Finite code execution is supplementary evidence, not a proof of an asymptotic theorem."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf",
+        "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/StrongLaw.html",
+        "https://web.mit.edu/urban_or_book/www/book/chapter3/3.3.3.html"
+      ],
+      "validation": "docs/translation-review/batch-003-validation.json"
+    },
+    "post/law-of-large-numbers/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/law-of-large-numbers/index.md",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "7f6c7bf19748825f8d7f8f2975691a23557a2d5d6df823c7f247aa4f16fef1ee",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–9, both diagrams, theorem explanations, proof, code, counterexample, applications, and conclusion against the revised Japanese source. Distinguished relative frequency from a changing event probability, average profit from total profit, almost-sure limits from finite-time guarantees, and illustration from proof. Checked applicability to Cauchy variables, insurance dependence, and fixed versus data-selected machine-learning models."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked sample/empirical mean, expectation, relative frequency, i.i.d., integrability, convergence in probability versus almost sure convergence, house edge versus guaranteed profits, and second moment versus undefined Cauchy mean. Retained appropriate localized decimal notation without changing arithmetic."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the integrability hypothesis E[|X1|]<∞ for the i.i.d. laws, finite-variance assumption for the Chebyshev proof only, Var(mean)=σ²/n and the resulting bound. Corrected roulette expected net return from an asserted exact -0.0526 to -1/19≈-0.0526. Explained the red/black probability 18/38, not 1/2. All five display formulas match Japanese after removing localized text and normalizing decimal punctuation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the whole localized NumPy/Matplotlib example and comments; compared ASTs and executed each reviewed version with seed 42. Each generated 10,000 die rolls, one subplot and final cumulative mean 3.4999. Compared the cumulative-mean vector to cumsum(rolls)/arange(1,10001). Inspected the rendered plot. Mathematical labels avoid missing localized fonts. This finite run illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links. Replaced the source simulation paragraph containing a graph link to a graph-data-structures article. Added and checked primary MIT 18.05, Mathlib strong-law documentation and MIT Cauchy-distribution references. Verified remaining internal article targets and their language files locally."
+        }
+      },
+      "summary": "Corrected source-level overclaims about convergence, casino returns, Cauchy means, and applications throughout the complete translation; updated both diagrams and validated the mathematical/code examples.",
+      "languageSpecificFindings": "The original introductory Chinese already used frequency; preserved that distinction. Used 莊家優勢 and clarified it is an expected-profit ratio, not a guaranteed return.",
+      "limitations": [
+        "AI technical and semantic comparison; not a native-speaker human confirmation.",
+        "Finite code execution is supplementary evidence, not a proof of an asymptotic theorem."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf",
+        "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/StrongLaw.html",
+        "https://web.mit.edu/urban_or_book/www/book/chapter3/3.3.3.html"
+      ],
+      "validation": "docs/translation-review/batch-003-validation.json"
+    },
+    "post/law-of-large-numbers/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/law-of-large-numbers/index.md",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "d87ee27b80c18d89144fe087b04da53e7d8706b689746824f9448665aa265533",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–9, both diagrams, theorem explanations, proof, code, counterexample, applications, and conclusion against the revised Japanese source. Distinguished relative frequency from a changing event probability, average profit from total profit, almost-sure limits from finite-time guarantees, and illustration from proof. Checked applicability to Cauchy variables, insurance dependence, and fixed versus data-selected machine-learning models."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked sample/empirical mean, expectation, relative frequency, i.i.d., integrability, convergence in probability versus almost sure convergence, house edge versus guaranteed profits, and second moment versus undefined Cauchy mean. Retained appropriate localized decimal notation without changing arithmetic."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the integrability hypothesis E[|X1|]<∞ for the i.i.d. laws, finite-variance assumption for the Chebyshev proof only, Var(mean)=σ²/n and the resulting bound. Corrected roulette expected net return from an asserted exact -0.0526 to -1/19≈-0.0526. Explained the red/black probability 18/38, not 1/2. All five display formulas match Japanese after removing localized text and normalizing decimal punctuation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the whole localized NumPy/Matplotlib example and comments; compared ASTs and executed each reviewed version with seed 42. Each generated 10,000 die rolls, one subplot and final cumulative mean 3.4999. Compared the cumulative-mean vector to cumsum(rolls)/arange(1,10001). Inspected the rendered plot. Mathematical labels avoid missing localized fonts. This finite run illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links. Replaced the source simulation paragraph containing a graph link to a graph-data-structures article. Added and checked primary MIT 18.05, Mathlib strong-law documentation and MIT Cauchy-distribution references. Verified remaining internal article targets and their language files locally."
+        }
+      },
+      "summary": "Corrected source-level overclaims about convergence, casino returns, Cauchy means, and applications throughout the complete translation; updated both diagrams and validated the mathematical/code examples.",
+      "languageSpecificFindings": "Removed infalible from the conclusion to avoid strengthening the original into an unconditional guarantee.",
+      "limitations": [
+        "AI technical and semantic comparison; not a native-speaker human confirmation.",
+        "Finite code execution is supplementary evidence, not a proof of an asymptotic theorem."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf",
+        "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/StrongLaw.html",
+        "https://web.mit.edu/urban_or_book/www/book/chapter3/3.3.3.html"
+      ],
+      "validation": "docs/translation-review/batch-003-validation.json"
+    },
+    "post/law-of-large-numbers/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/law-of-large-numbers/index.md",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "d083e7cad9d5a44f682053fb381c168aa8011cb9ba5c7f54efd2de418ae56d46",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–9, both diagrams, theorem explanations, proof, code, counterexample, applications, and conclusion against the revised Japanese source. Distinguished relative frequency from a changing event probability, average profit from total profit, almost-sure limits from finite-time guarantees, and illustration from proof. Checked applicability to Cauchy variables, insurance dependence, and fixed versus data-selected machine-learning models."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked sample/empirical mean, expectation, relative frequency, i.i.d., integrability, convergence in probability versus almost sure convergence, house edge versus guaranteed profits, and second moment versus undefined Cauchy mean. Retained appropriate localized decimal notation without changing arithmetic."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the integrability hypothesis E[|X1|]<∞ for the i.i.d. laws, finite-variance assumption for the Chebyshev proof only, Var(mean)=σ²/n and the resulting bound. Corrected roulette expected net return from an asserted exact -0.0526 to -1/19≈-0.0526. Explained the red/black probability 18/38, not 1/2. All five display formulas match Japanese after removing localized text and normalizing decimal punctuation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the whole localized NumPy/Matplotlib example and comments; compared ASTs and executed each reviewed version with seed 42. Each generated 10,000 die rolls, one subplot and final cumulative mean 3.4999. Compared the cumulative-mean vector to cumsum(rolls)/arange(1,10001). Inspected the rendered plot. Mathematical labels avoid missing localized fonts. This finite run illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links. Replaced the source simulation paragraph containing a graph link to a graph-data-structures article. Added and checked primary MIT 18.05, Mathlib strong-law documentation and MIT Cauchy-distribution references. Verified remaining internal article targets and their language files locally."
+        }
+      },
+      "summary": "Corrected source-level overclaims about convergence, casino returns, Cauchy means, and applications throughout the complete translation; updated both diagrams and validated the mathematical/code examples.",
+      "languageSpecificFindings": "Preserved decimal commas using {,} where the corrected display formula requires an unambiguous decimal separator.",
+      "limitations": [
+        "AI technical and semantic comparison; not a native-speaker human confirmation.",
+        "Finite code execution is supplementary evidence, not a proof of an asymptotic theorem."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf",
+        "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/StrongLaw.html",
+        "https://web.mit.edu/urban_or_book/www/book/chapter3/3.3.3.html"
+      ],
+      "validation": "docs/translation-review/batch-003-validation.json"
+    },
+    "post/law-of-large-numbers/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/law-of-large-numbers/index.md",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "0541e64260494dc7b846c6c01c4519c160f9457b5f2ac210dae07cbfc4b6080d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–9, both diagrams, theorem explanations, proof, code, counterexample, applications, and conclusion against the revised Japanese source. Distinguished relative frequency from a changing event probability, average profit from total profit, almost-sure limits from finite-time guarantees, and illustration from proof. Checked applicability to Cauchy variables, insurance dependence, and fixed versus data-selected machine-learning models."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked sample/empirical mean, expectation, relative frequency, i.i.d., integrability, convergence in probability versus almost sure convergence, house edge versus guaranteed profits, and second moment versus undefined Cauchy mean. Retained appropriate localized decimal notation without changing arithmetic."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the integrability hypothesis E[|X1|]<∞ for the i.i.d. laws, finite-variance assumption for the Chebyshev proof only, Var(mean)=σ²/n and the resulting bound. Corrected roulette expected net return from an asserted exact -0.0526 to -1/19≈-0.0526. Explained the red/black probability 18/38, not 1/2. All five display formulas match Japanese after removing localized text and normalizing decimal punctuation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the whole localized NumPy/Matplotlib example and comments; compared ASTs and executed each reviewed version with seed 42. Each generated 10,000 die rolls, one subplot and final cumulative mean 3.4999. Compared the cumulative-mean vector to cumsum(rolls)/arange(1,10001). Inspected the rendered plot. Mathematical labels avoid missing localized fonts. This finite run illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links. Replaced the source simulation paragraph containing a graph link to a graph-data-structures article. Added and checked primary MIT 18.05, Mathlib strong-law documentation and MIT Cauchy-distribution references. Verified remaining internal article targets and their language files locally."
+        }
+      },
+      "summary": "Corrected source-level overclaims about convergence, casino returns, Cauchy means, and applications throughout the complete translation; updated both diagrams and validated the mathematical/code examples.",
+      "languageSpecificFindings": "Corrected the weak-law prose from an at-least-ε deviation to a greater-than-ε deviation, matching its displayed event.",
+      "limitations": [
+        "AI technical and semantic comparison; not a native-speaker human confirmation.",
+        "Finite code execution is supplementary evidence, not a proof of an asymptotic theorem."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf",
+        "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/StrongLaw.html",
+        "https://web.mit.edu/urban_or_book/www/book/chapter3/3.3.3.html"
+      ],
+      "validation": "docs/translation-review/batch-003-validation.json"
+    },
+    "post/law-of-large-numbers/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/law-of-large-numbers/index.md",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "2f7680db858145e3a9e4e830e9ae1f436467c5ee696803275e71a4e53b26c155",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–9, both diagrams, theorem explanations, proof, code, counterexample, applications, and conclusion against the revised Japanese source. Distinguished relative frequency from a changing event probability, average profit from total profit, almost-sure limits from finite-time guarantees, and illustration from proof. Checked applicability to Cauchy variables, insurance dependence, and fixed versus data-selected machine-learning models."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked sample/empirical mean, expectation, relative frequency, i.i.d., integrability, convergence in probability versus almost sure convergence, house edge versus guaranteed profits, and second moment versus undefined Cauchy mean. Retained appropriate localized decimal notation without changing arithmetic."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the integrability hypothesis E[|X1|]<∞ for the i.i.d. laws, finite-variance assumption for the Chebyshev proof only, Var(mean)=σ²/n and the resulting bound. Corrected roulette expected net return from an asserted exact -0.0526 to -1/19≈-0.0526. Explained the red/black probability 18/38, not 1/2. All five display formulas match Japanese after removing localized text and normalizing decimal punctuation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the whole localized NumPy/Matplotlib example and comments; compared ASTs and executed each reviewed version with seed 42. Each generated 10,000 die rolls, one subplot and final cumulative mean 3.4999. Compared the cumulative-mean vector to cumsum(rolls)/arange(1,10001). Inspected the rendered plot. Mathematical labels avoid missing localized fonts. This finite run illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links. Replaced the source simulation paragraph containing a graph link to a graph-data-structures article. Added and checked primary MIT 18.05, Mathlib strong-law documentation and MIT Cauchy-distribution references. Verified remaining internal article targets and their language files locally."
+        }
+      },
+      "summary": "Corrected source-level overclaims about convergence, casino returns, Cauchy means, and applications throughout the complete translation; updated both diagrams and validated the mathematical/code examples.",
+      "languageSpecificFindings": "Retained the culturally natural angka/gambar coin example. Clarified identically distributed variables and independent spins; preserved decimal commas in display math.",
+      "limitations": [
+        "AI technical and semantic comparison; not a native-speaker human confirmation.",
+        "Finite code execution is supplementary evidence, not a proof of an asymptotic theorem."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf",
+        "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/StrongLaw.html",
+        "https://web.mit.edu/urban_or_book/www/book/chapter3/3.3.3.html"
+      ],
+      "validation": "docs/translation-review/batch-003-validation.json"
+    },
+    "post/law-of-large-numbers/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/law-of-large-numbers/index.md",
+      "sourceHash": "5d9b46d4295b3f36c8b486dc84d4e97ec99f8e62bdff5ffe1875dcd78d90af36",
+      "translationHash": "430bd97319572c88647690b4a84099963255ae9ac9557cf5199611b6ab43ecc3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–9, both diagrams, theorem explanations, proof, code, counterexample, applications, and conclusion against the revised Japanese source. Distinguished relative frequency from a changing event probability, average profit from total profit, almost-sure limits from finite-time guarantees, and illustration from proof. Checked applicability to Cauchy variables, insurance dependence, and fixed versus data-selected machine-learning models."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked sample/empirical mean, expectation, relative frequency, i.i.d., integrability, convergence in probability versus almost sure convergence, house edge versus guaranteed profits, and second moment versus undefined Cauchy mean. Retained appropriate localized decimal notation without changing arithmetic."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the integrability hypothesis E[|X1|]<∞ for the i.i.d. laws, finite-variance assumption for the Chebyshev proof only, Var(mean)=σ²/n and the resulting bound. Corrected roulette expected net return from an asserted exact -0.0526 to -1/19≈-0.0526. Explained the red/black probability 18/38, not 1/2. All five display formulas match Japanese after removing localized text and normalizing decimal punctuation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the whole localized NumPy/Matplotlib example and comments; compared ASTs and executed each reviewed version with seed 42. Each generated 10,000 die rolls, one subplot and final cumulative mean 3.4999. Compared the cumulative-mean vector to cumsum(rolls)/arange(1,10001). Inspected the rendered plot. Mathematical labels avoid missing localized fonts. This finite run illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links. Replaced the source simulation paragraph containing a graph link to a graph-data-structures article. Added and checked primary MIT 18.05, Mathlib strong-law documentation and MIT Cauchy-distribution references. Verified remaining internal article targets and their language files locally."
+        }
+      },
+      "summary": "Corrected source-level overclaims about convergence, casino returns, Cauchy means, and applications throughout the complete translation; updated both diagrams and validated the mathematical/code examples.",
+      "languageSpecificFindings": "Preserved moyenne empirique, convergence en probabilité and convergence presque sûre; localized the finite-variance distinction and decimal comma.",
+      "limitations": [
+        "AI technical and semantic comparison; not a native-speaker human confirmation.",
+        "Finite code execution is supplementary evidence, not a proof of an asymptotic theorem."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf",
+        "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/StrongLaw.html",
+        "https://web.mit.edu/urban_or_book/www/book/chapter3/3.3.3.html"
+      ],
+      "validation": "docs/translation-review/batch-003-validation.json"
+    }
+  }
+}
