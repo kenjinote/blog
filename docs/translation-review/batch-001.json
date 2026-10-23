@@ -1,0 +1,731 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/central-limit-theorem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "711852fc8d77fe3898e3e99a1ef8033076dc0f30e1e1213316e48da8d61c9c93",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/central-limit-theorem/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "25500fded7c46b6437d1ec3c1df9f6614b7fa70d916c41273f088020e366ea01",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/central-limit-theorem/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "85ebe9d102a66e5ee4256d9067cf9983f788624cd26f06bf03f3f8328ebbaac5",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/central-limit-theorem/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "ccf41fa8aa3214e6c9255f480731690700f3e8656a5ba091a0b42788cf665999",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/central-limit-theorem/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "0ecfe2b7a78e5773ee55d285414301f60f7875e4516777ba203a9852be134fe5",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/central-limit-theorem/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "e53b841885667228e94e6d2c74fa3d7db653319e368bc9d38095220e83df17a1",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/central-limit-theorem/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "4456a5a2e0c23f5f000faa2c3d0d5b60986d4fcd462652aa8e51a411c4f00499",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "Corrected observations mistranslated as comments, application conditions mistranslated as submission conditions, and function terminology (फलन).",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/central-limit-theorem/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "cae98cd1274e14f108701efe26d0ab57593607fc298e7c15f24187f845259347",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "Unified moyenne empirique and erreur-type; corrected quadrupling sample size rather than the number of independent samples.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/central-limit-theorem/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "9aa94f8c2b25e8d2e642dba0ec8048d6f6bcd92eb52255f61c82a25711b383a0",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "Repaired an incomplete historical sentence about Laplace/Lyapunov and the terminology for heavy distribution tails.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/central-limit-theorem/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "e5c06f543f97049dcbde0ed3cec328ae46b80b768323670ba64c9d489559d2d9",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/central-limit-theorem/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "75e7c8be0cc55d9feaf5affe8c796332c7c7633f660099e0afb9dfabd566c3d3",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "Corrected an additional translation error: standard error was called a variance; it is the standard deviation of the sample mean.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/central-limit-theorem/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "808476135df5237e4724e6652e8e08527f656d90057dd7b59aedb7ce3f9ab581",
+      "translationHash": "251353e8f71387718b2b2a8deee2749798585d3d6de85c3971a0ec1f3b2ff500",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read the complete NumPy/Matplotlib code and localized comments. ASTs match in all 13 versions; executed each with seed 20261024 using NumPy 2.3.5/Matplotlib 3.11.2 (Agg), producing four subplots and n=100 mean 0.5000331713, variance 0.0008267386. Math-only subplot labels avoid unavailable localized fonts."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links and misleading links from moment-generating functions to the combinatorial generating-functions article. Checked remaining article-link targets locally and added the primary MIT 18.05 reference."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked normalization, expectation μ, variance σ²/n, SE σ/√n, Taylor expansion and characteristic-function proof with the finite-variance hypotheses. All four display formulas match the Japanese structure after ignoring localized text labels; this mechanical check supplements the semantic comparison."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete title, introduction, sections 2–7, five appendices, and diagram against Japanese. Corrected missing applicability conditions in the introduction and main definition: i.i.d., finite mean, positive finite variance, standardized convergence. Checked the dice intuition, inference limitations, Gaussian naming, Cauchy counterexample, non-degenerate dependence example, and absence of a universal n≥30 rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished observations, sample size, sample mean, variance, standard deviation, standard error, convergence in distribution, characteristic function, and moment-generating function. Standard error now explicitly means the standard deviation of the sample mean."
+        }
+      },
+      "summary": "Corrected source-level overclaims and carried the conditions through the whole translation; clarified standard error, sample size, dependence, and the limits of normal approximation.",
+      "languageSpecificFindings": "Clarified identically distributed versus identical variables, sample means in the simulation, rigorous proof, and galat baku.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "92d9aaf709230fe26527eb244e5af1f0471fe4b89498d9b598e0bb96e4f6d719",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "a3fb307ddfcd06563b569a7ea7fbf039e8391c43ce0244f3bfc5b3c138951e48",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "Corrected CSP being described as an HTTP request header: it is a response header.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "7875edcb4175c3c49cf8d4c5c3f5dd138dab9d1c086393f84212fc812df7db55",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "Corrected an introductory typo and updated the diagram’s session-theft condition.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "8a6e12efc66c6a4c155c304781245aab74416289d3b43b26214e424695f9167c",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "03dc2aa526293b926b78d7845505ec25a6046b4da906e7976ee998ae4f0cd491",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "b214e704fb2e4f202feb9beb68c67e95f19237b03a007e89b5a3853558803317",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-001-validation.json"
+    }
+  }
+}

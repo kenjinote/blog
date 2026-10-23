@@ -6,11 +6,12 @@ categories: ["history", "biography"]
 tags: ["tech", "history", "unicode", "character-encoding"]
 image: "eyecatch.jpg"
 slug: "history-of-unicode-encoding"
+lastmod: 2026-10-24T02:00:00+09:00
 ---
 
 # History of Unicode: How the Battle Against Mojibake Unified the World's Characters
 
-Back when the digital world was in the dawn of text information, the characters that computers could handle were extremely limited. The reason we can now casually read and write Japanese, Chinese, and Arabic on our smartphones and PCs, and even send and receive emojis like "😂" globally, is because our predecessors fought a long battle against the formidable enemy known as "Mojibake" (character corruption) and achieved the monumental feat of unifying character encodings.
+Back when the digital world was in the dawn of text information, the characters that computers could handle were extremely limited. The reason we can now casually read and write Japanese, Chinese, and Arabic on our smartphones and PCs, and even send and receive emojis like "😂" globally, is because our predecessors fought a long battle against the formidable enemy known as "Mojibake" (character corruption) and established a common character standard.
 
 This article delves deep into the epic story of "character unification" in computer history, starting from the birth of ASCII, the massive confusion caused by local encodings of various countries, the ambitious birth of Unicode, the genius design of UTF-8 by Ken Thompson and Rob Pike, the surrogate pair problem, and up to the standardization of Emoji.
 
@@ -22,7 +23,7 @@ ASCII used 7 bits (0 to 127) to define uppercase and lowercase alphabets, number
 
 ## 2. The Tower of Babel: The Era of Local Encodings and "Mojibake"
 
-As computers spread around the world, countries successively developed their own encoding methods combining multiple bytes or utilizing the "remaining half" of ASCII's space (the 8th bit, from 128 to 255).
+As computers spread around the world, countries extended 7-bit ASCII to 8 bits, using the additional byte values 128 through 255, or developed their own multibyte encodings.
 
 - **ISO-8859 series**: A group of 8-bit encodings designed for European languages (like ISO-8859-1 and Latin-1).
 - **Shift_JIS (SJIS)**: A method widely popularized in Japanese personal computers (especially MS-DOS and Windows) that mixes 1-byte characters (like half-width Katakana) and 2-byte characters (Kanji and Hiragana).
@@ -33,12 +34,12 @@ This allowed each country's language to be represented on computers, but it crea
 
 ```mermaid
 graph TD
-    A["Sender (Shift_JIS)"] -- "'こんにちは' (82 51 82 F1 82 C9 82 BF 82 CD)" --> B["Internet"]
-    B -- "Receive" --> C["Receiver (ISO-8859-1)"]
+    A["Sender (Shift_JIS)"] -- "'こんにちは' (82 B1 82 F1 82 C9 82 BF 82 CD)" --> B["Internet"]
+    B -- "Receive" --> C["Receiver (Windows-1252)"]
     C -- "Misinterpretation" --> D["Displayed as '‚±‚ñ‚É‚¿‚Í' (Mojibake)"]
 ```
 
-For example, if an email sent from Japan in Shift_JIS was opened on a European PC (set to Latin-1), the byte sequence would be mapped to completely different characters, displaying a string of incomprehensible symbols. Mojibake on websites and emails was a daily occurrence, and for developers, creating software that supported multiple languages (multilingual support: i18n) was a nightmare.
+For example, decoding Shift_JIS bytes as Windows-1252 produces the different sequence of symbols shown in the diagram. Windows-1252 and ISO-8859-1 are not identical: the byte `0x82` represents `‚` in Windows-1252 but a control character in ISO-8859-1. Reproducing mojibake requires distinguishing the actual bytes from the decoder used. Such differences have complicated internationalization (i18n).
 
 ## 3. The Birth of Unicode: All Characters in a Single Code
 
@@ -46,28 +47,28 @@ To break through this chaotic situation, in the late 1980s, engineers from Apple
 
 Their vision was simple and ambitious: "To fit all characters, symbols, and even historical characters of the world into a single, unified Character Set."
 
-Early Unicode started with the optimistic assumption (UCS-2) that "all the world's characters could fit within 16 bits (65,536 characters)." However, as they began to include Chinese, Japanese, and Korean kanji (CJK Unified Ideographs), it quickly became apparent that 16 bits would not be enough. Unicode was eventually expanded to a 21-bit space (about 1.11 million characters), and new characters continue to be added today.
+Early Unicode used a 16-bit character space. Encoding historical scripts and additional characters, including further ideographs, required expansion. The current code-point range is `U+0000` through `U+10FFFF`, containing 1,114,112 positions. This is a code space, not the number of assigned characters: it includes unassigned positions and the surrogate range. New characters continue to be added.
 
 ## 4. The Genius Design of UTF-8: Ken Thompson and Rob Pike
 
 Even with the creation of the massive "dictionary of characters" that is Unicode, the problem remained of how to store and transmit them as byte sequences on computers (the encoding method).
 
-Early proposed methods like UCS-2 and UTF-16 tried to represent all characters with 2 bytes (or 4 bytes). However, this had a fatal flaw. When this data was fed into existing systems built entirely around ASCII (such as UNIX or C programming applications), "0x00 (NULL bytes)" would frequently appear in the middle of the data. Systems would misinterpret this as the end of a string and crash.
+UCS-2 represents its supported range using one 16-bit code unit, whereas UTF-16 uses one or two 16-bit code units. Representations of ASCII-range characters commonly contain `0x00` (NUL bytes). Passing those bytes directly to existing NUL-terminated C string functions can cause premature termination and related errors; it does not necessarily cause a crash.
 
-The people who elegantly solved this problem were the fathers of UNIX, **Ken Thompson** and **Rob Pike**. During dinner in 1992, they sketched out a groundbreaking encoding method on the back of a placemat. This was **UTF-8**.
+The developers who tackled this problem were UNIX co-creator **Ken Thompson** and Plan 9 developer **Rob Pike**. According to Pike's account, they sketched the design of UTF-8 on a diner placemat in 1992 and implemented it in Plan 9.
 
 The design of UTF-8 is hailed as one of the most beautiful hacks in the history of computer science.
-- **Complete backwards compatibility with ASCII**: ASCII characters (0-127) are represented in exactly 1 byte, meaning existing systems aimed at the West and C language functions work out of the box.
+- **Byte-level compatibility with ASCII**: ASCII characters (0-127) retain their one-byte representations. Existing C functions do not, however, automatically understand Unicode character counts or character boundaries.
 - **Variable-length encoding**: The length changes from 1 byte to 4 bytes depending on the character (Japanese and others are mainly 3 bytes).
-- **Self-synchronizing**: Just by looking at the bit pattern at the beginning of a byte (such as `0xxxxxxx`, `110xxxxx`, or `10xxxxxx`), you can instantly determine whether it is the leading byte of a character or a continuation byte. Because of this, you won't get Mojibake even if you start reading from the middle of a string.
+- **Self-synchronization**: Leading-byte patterns (`0xxxxxxx`, `110xxxxx`, `1110xxxx`, `11110xxx`) are distinguishable from the continuation-byte pattern `10xxxxxx`. In valid UTF-8, this helps a decoder locate the next character boundary after starting within a sequence. A continuation byte cannot simply be decoded as a new character, and invalid byte sequences still require validation.
 
-Thanks to this genius design, UTF-8 quickly became the de facto standard of the world, and today over 98% of web pages are encoded in UTF-8.
+These properties have helped UTF-8 become widely used on the modern web.
 
 ## 5. The Surrogate Pair Problem and the Dawn of Emoji
 
-When Unicode expanded beyond the 16-bit (about 60,000 characters) barrier, the UTF-16 encoding method had to introduce a complex mechanism called "surrogate pairs." This involves combining two 16-bit values to represent a single character in the expanded region. This mechanism remains a hotbed for bugs even today, such as "inaccurate character counts" in certain programming languages like JavaScript.
+UTF-16 represents a supplementary-plane code point using a pair of 16-bit code units, called a surrogate pair. JavaScript string `length` counts UTF-16 code units, so `"😂".length` is 2. That result follows the specification, but assuming that it counts visible characters can cause bugs. For ZWJ emoji sequences, the number of code points can also differ from the number of visible characters.
 
-Then, in the 2010s, a new revolution occurred in Unicode. The **Emoji** independently implemented by Japanese mobile carriers (Docomo, au, SoftBank) were officially adopted as a Unicode standard (Unicode 6.0).
+Unicode 6.0, released in 2010, added many **emoji** used by Japanese mobile carriers such as Docomo, au, and SoftBank. Some symbols used as emoji had already been encoded in earlier versions, so not every emoji first entered Unicode in version 6.0.
 
 With the introduction of Emoji, Unicode evolved beyond the bounds of mere "characters" into a universal visual language for conveying emotions and concepts. Furthermore, complex specifications are continuously being added to reflect modern diversity, such as the ability to change skin colors (Skin Tone Modifier) and the mechanism to combine multiple emojis into one (ZWJ: Zero Width Joiner).
 
@@ -79,8 +80,13 @@ graph TD
 
 ## Conclusion: A Foundation Connecting Human Knowledge to the Future
 
-Today, the Unicode Consortium includes everything from ancient Egyptian hieroglyphs to cuneiform, minority languages, and the latest emojis.
+Today's Unicode Standard encodes many characters and symbols, including Egyptian hieroglyphs, cuneiform, minority-language scripts, and emoji. The Unicode Consortium is the organization that maintains and develops the standard.
 
-The history of character encodings, which started with just 128 ASCII characters, has gone through countless confusing and frustrating experiences with "Mojibake," and through the passion and cooperation of countless engineers, it has achieved the integration of all human characters into a single massive system.
+Character encoding has developed from ASCII's 128 code positions toward a shared system for the world's diverse scripts. Not every character has already been encoded: the encoding of additional characters and improvements to implementations continue.
 
 Behind the "😂" we casually send, hides the drama of these engineers' decades-long "battle against Mojibake."
+
+## References
+
+- [Unicode FAQ: UTF-8, UTF-16, UTF-32 & BOM](https://www.unicode.org/faq/utf_bom.html)
+- [Rob Pike: UTF-8 history](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt)

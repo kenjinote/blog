@@ -13,6 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
+lastmod: 2026-10-24T02:00:00+09:00
 ---
 
 ## Introduction
@@ -29,10 +30,10 @@ XSS is an attack technique in which an attacker injects malicious scripts (mainl
 
 ### Three Major Types of XSS
 
-XSS is broadly classified into three types depending on how the malicious script is injected and executed in the application.
+XSS can be described by how untrusted data is stored or reflected and by where unsafe interpretation occurs. These categories are not mutually exclusive: stored or reflected data can also be processed unsafely on the client side.
 
 #### 1. Stored XSS (Persistent XSS)
-Stored XSS is the most dangerous type of XSS. A malicious script sent by an attacker is permanently stored (accumulated) on the server side, such as in a database or file system. Later, when a legitimate user views a page containing that data, the stored script is sent to the browser and executed.
+Stored XSS can affect multiple visitors. An attacker's malicious script is stored on the server side, for example in a database or file system. When a legitimate user views a page containing that data, the script is sent to the browser and executed. Its actual severity depends on the privileges and context in which it runs.
 *   **Typical occurrences:** Comment sections, bulletin boards, user profiles, review features, etc.
 *   **Threat:** The scope of impact is very wide, and all users who open the page can be victimized.
 
@@ -42,7 +43,7 @@ Reflected XSS occurs when a malicious script is not stored on the server, but is
 *   **Attack method:** The attacker completes the attack by tricking the user into clicking a URL containing malicious parameters (using phishing emails or SNS).
 
 #### 3. DOM-based XSS
-DOM-based XSS occurs when client-side (in-browser) JavaScript improperly manipulates the DOM (Document Object Model) without going through server-side processing.
+DOM-based XSS occurs when client-side JavaScript processes untrusted data through an unsafe sink. The data may also have passed through a server; the defining point is that the unsafe processing occurs on the client side.
 *   **Mechanism:** It occurs when application JavaScript reads data from attacker-controllable sources like `window.location` or `document.referrer`, and passes it directly to dangerous sinks (execution points) like `innerHTML` or `eval()`.
 *   **Threat:** It often does not leave a trace in server logs and can be difficult for WAFs (Web Application Firewalls) to detect.
 
@@ -50,7 +51,7 @@ DOM-based XSS occurs when client-side (in-browser) JavaScript improperly manipul
 
 When XSS succeeds, the attacker's script executes on the user's browser with the same origin (privileges) as the website. This results in severe damage such as the following:
 
-1.  **Session Hijacking:** Accessing `document.cookie` to steal the session ID and sending it to the attacker's server. This allows the attacker to impersonate the user and hijack their account.
+1.  **Session Hijacking:** If an authentication cookie lacks `HttpOnly`, an attacker may be able to steal its session ID through `document.cookie`. Even with `HttpOnly`, XSS can still issue authenticated requests as the user.
 2.  **Execution of Unauthorized Operations:** Having arbitrary operations within the application (password changes, money transfers, message sending, etc.) executed in the background with the user's privileges.
 3.  **Phishing:** Rendering a fake login form on the DOM to steal the user's credentials directly.
 4.  **Malware Distribution:** Redirecting the user's browser to an exploit kit and infecting the PC with malware.
@@ -82,20 +83,23 @@ While XSS is "executing unauthorized scripts within the browser," CSRF is fundam
 
 ### CSRF Mechanism: Exploiting "Automatic Transmission of Cookies"
 
-When a browser sends a request to a certain domain, it automatically attaches Cookies (such as session Cookies) associated with that domain to the header and sends them. This applies even to requests from image tags or forms placed on different domains (attacker's sites).
+Browsers automatically attach session cookies and other cookies to requests when the cookie's sending conditions are met. This can include requests triggered by images or forms on another site, but `SameSite`, `Secure`, Domain, Path, and browser cookie restrictions can also prevent the cookie from being sent.
 
 **Attack Scenario:**
-1.  The user logs in to a bank site (`bank.example.com`) and receives a session Cookie.
-2.  The user browses an attacker's trap site (`attacker.example.com`) in another tab.
+
+This illustrative example assumes a vulnerable application whose authentication cookie permits cross-site sending with `SameSite=None; Secure` and which has neither CSRF-token validation nor Origin checks. `bank.example` and `attacker.invalid` are reserved domains on different sites.
+
+1.  The user logs in to a bank site (`bank.example`) and receives a session Cookie.
+2.  The user browses an attacker's trap site (`attacker.invalid`) in another tab.
 3.  The trap site contains a hidden form and an auto-submit script like the following:
     ```html
-    <form action="https://bank.example.com/transfer" method="POST" id="csrf-form">
+    <form action="https://bank.example/transfer" method="POST" id="csrf-form">
         <input type="hidden" name="toAccount" value="ATTACKER_ACCOUNT">
         <input type="hidden" name="amount" value="1000000">
     </form>
     <script>document.getElementById('csrf-form').submit();</script>
     ```
-4.  The browser sends a POST request to `bank.example.com`. At this time, **the session Cookie for the bank site is automatically attached.**
+4.  The browser sends a POST request to `bank.example`. At this time, **the session Cookie for the bank site is automatically attached.**
 5.  Since the request contains a valid session Cookie, the bank server processes it as a request from a legitimate user, and an unauthorized money transfer is executed.
 
 ### Historical Evolution of Defenses Against CSRF and Latest Practices
@@ -114,16 +118,16 @@ This is a method often used in APIs that do not maintain state (sessions) on the
 *   The server generates a random token and sends it to the client as a Cookie.
 *   The client's JavaScript reads the value of that Cookie, sets it in the request header (e.g., `X-CSRF-Token`), and sends it.
 *   The server verifies whether the token value in the Cookie matches the token value in the header.
-Attackers can cause Cookies to be sent automatically, but they cannot read Cookies from other domains with JavaScript to set them in headers, so this can be prevented.
+The steps above describe a simple equality check. Relying on equality alone is not recommended when attackers may be able to inject cookies. Prefer a framework's built-in protection. If using Double Submit, use a Signed Double Submit token authenticated with a server-secret HMAC and bound to the current authenticated session. For APIs using custom headers, also avoid granting credentialed CORS access to untrusted origins.
 
 #### 3. SameSite Cookie Attribute: Powerful Defense by Modern Browsers
-In recent years, the most recommended powerful defense is the `SameSite` attribute of Cookies. This controls the transmission behavior of Cookies during cross-site requests.
+The `SameSite` cookie attribute is a defense layer that controls cookie sending on cross-site requests. In general-purpose applications, combine it with CSRF tokens or Origin validation rather than treating it as a replacement for them.
 
 *   `SameSite=Strict`: Cookies are not sent for any cross-site requests, including top-level navigations such as link clicks. It is the safest, but it may affect UX, such as not maintaining the login state when clicking links from other sites.
 *   `SameSite=Lax`: Cookies are not sent for cross-site requests like image loading or POST requests, but they are sent for top-level navigations via link clicks (GET requests). This is the default behavior in many current browsers. This prevents the majority of CSRF attacks via malicious POST form submissions.
-*   `SameSite=None`: Cookies are always sent even in cross-site requests. (Must always be specified together with the `Secure` attribute).
+*   `SameSite=None`: Removes the SameSite restriction on cross-site sending and requires `Secure`. It does not override other cookie-sending conditions or browser restrictions.
 
-By appropriately setting the SameSite attribute, you can block the root cause of CSRF (automatic transmission of Cookies) at the browser level.
+SameSite is scoped to sites, not origins: sibling subdomains of the same registrable domain may be considered same-site. Lax also cannot protect a state-changing GET endpoint. Use appropriate HTTP methods for state changes together with server-side CSRF validation. Because browser-default Lax behavior can have exceptions, explicitly set the cookie attributes the application requires.
 
 ---
 
@@ -136,7 +140,7 @@ graph TD
     subgraph XSS Attack
         A["Attacker"] -- "Malicious script injection" --> B["Web Server"]
         B -- "Page containing script" --> C["Victim's Browser"]
-        C -- "Session ID transmission (Theft)" --> A
+        C -- "Session ID theft (without HttpOnly)" --> A
     end
 
     subgraph CSRF Attack
@@ -151,3 +155,8 @@ XSS and CSRF are different vulnerabilities, but **if XSS is present, most CSRF c
 Therefore, to ensure the security of web applications, it is required to build a strong foundation by first thoroughly containing XSS (appropriate escaping and CSP), and then implementing CSRF countermeasures (SameSite Cookies and CSRF tokens).
 
 It is important for developers not to place overconfidence in the security features provided by frameworks, but to understand the essential mechanisms of these vulnerabilities and design defenses at appropriate layers.
+
+## References
+
+- [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+- [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)

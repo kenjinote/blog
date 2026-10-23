@@ -8,6 +8,10 @@
 
 `data/translation_reviews.json` で最終確認日、担当者、原文パス、確認した原文と翻訳の SHA-256 を記録する。改行コードだけの差は無視し、本文・タイトル・説明・日付などファイルの変更を検出する。台帳の初期状態は未確認であり、既存の自動翻訳や作成日を人による校閲日として扱わない。
 
+`reviewKind` は `ai`（AI校閲）または `human`（人による校閲）。CSV の `humanConfirmed` でも区別する。`current` は確認したファイルの版と一致するという意味であり、人による確認済みを意味しない。AI校閲の後に対象言語に堪能な人が確認した際は、新しい人の校閲記録として保存する。
+
+AI校閲では、本文を全体まで原文と照合したうえで、`docs/translation-review/` に翻訳ごとの根拠を保存する。意味、用語、数式、コード、リンクの全項目について、確認内容または該当なしの理由、修正点、残る制限を記述する。構文チェックや数式の文字列一致だけで意味照合を完了扱いにしない。記録時に根拠と台帳の原文・翻訳の版を照合し、不完全な根拠や古い版では記録を拒否する。
+
 ```powershell
 python scripts/translation_reviews.py check
 python scripts/translation_reviews.py report --language en --output translation-review-en.csv
@@ -34,12 +38,14 @@ CSV の `status` は次のいずれかになる。
 3. 必要な修正を保存した後にだけ、次のコマンドで最終確認を記録する。担当者名は実際の校閲者に置き換える。
 
 ```powershell
-python scripts/translation_reviews.py record post/central-limit-theorem/index.en.md --source post/central-limit-theorem/index.md --reviewer "校閲担当者名" --date 2026-10-23
+python scripts/translation_reviews.py record post/central-limit-theorem/index.en.md --source post/central-limit-theorem/index.md --kind human --reviewer "校閲担当者名"
 ```
 
 4. 翻訳と台帳を同じ変更としてコミットする。原文を変更した際は再度キューを生成し、`source_changed` の翻訳を言語別に確認する。
 
-CI は台帳の形式と参照ファイルを検査し、毎回 `translation-review-queue` の CSV 成果物を保存する。未確認や原文更新ありは校閲待ちとして可視化し、公開を一律に止めない。実際の人による校閲は今後このキューに従って実施する。
+AI校閲の記録では `--kind ai --reviewer "Codex (AI)" --evidence docs/translation-review/<根拠ファイル>.json` を指定する。全記事を対象とする目標と順序は [translation-review-goal.md](translation-review-goal.md) に記録する。
+
+CI は台帳の形式・参照ファイル・AI校閲の根拠を検査し、毎回 `translation-review-queue` の CSV 成果物を保存する。未確認や原文更新ありは校閲待ちとして可視化し、公開を一律に止めない。実際の人による校閲は今後このキューに従って実施する。
 
 ## 公開前の翻訳対応検査
 

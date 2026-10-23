@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "validatedAt": "2026-10-24",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.2",
+    "backend": "Agg",
+    "seed": 20261024
+  },
+  "clt": [
+    {
+      "file": "index.ar.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.de.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.en.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.es.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.fr.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.hi.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.id.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.ko.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.pt.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.ru.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.zh-cn.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    },
+    {
+      "file": "index.zh-tw.md",
+      "pythonAstMatches": true,
+      "displayMathMatches": true,
+      "subplotCount": 4,
+      "n100Mean": 0.5000331712745991,
+      "n100Variance": 0.0008267385794224854
+    }
+  ],
+  "encoding": {
+    "shiftJisHello": "82 B1 82 F1 82 C9 82 BF 82 CD",
+    "windows1252Mojibake": "‚±‚ñ‚É‚¿‚Í",
+    "utf16CodeUnitsForLaughingEmoji": 2
+  },
+  "internalLinks": [
+    {
+      "file": "content/post/central-limit-theorem/index.md",
+      "url": "https://kenji.blog/p/gauss/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.md",
+      "url": "https://kenji.blog/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.md",
+      "url": "https://kenji.blog/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.md",
+      "url": "https://kenji.blog/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.md",
+      "url": "https://kenji.blog/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.en.md",
+      "url": "https://kenji.blog/en/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.en.md",
+      "url": "https://kenji.blog/en/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.en.md",
+      "url": "https://kenji.blog/en/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.es.md",
+      "url": "https://kenji.blog/es/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.es.md",
+      "url": "https://kenji.blog/es/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.es.md",
+      "url": "https://kenji.blog/es/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.pt.md",
+      "url": "https://kenji.blog/pt/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.pt.md",
+      "url": "https://kenji.blog/pt/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.pt.md",
+      "url": "https://kenji.blog/pt/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.hi.md",
+      "url": "https://kenji.blog/hi/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.hi.md",
+      "url": "https://kenji.blog/hi/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.hi.md",
+      "url": "https://kenji.blog/hi/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.fr.md",
+      "url": "https://kenji.blog/fr/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.fr.md",
+      "url": "https://kenji.blog/fr/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.fr.md",
+      "url": "https://kenji.blog/fr/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.de.md",
+      "url": "https://kenji.blog/de/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.de.md",
+      "url": "https://kenji.blog/de/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.de.md",
+      "url": "https://kenji.blog/de/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.ar.md",
+      "url": "https://kenji.blog/ar/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.ar.md",
+      "url": "https://kenji.blog/ar/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.ru.md",
+      "url": "https://kenji.blog/ru/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.id.md",
+      "url": "https://kenji.blog/id/p/law-of-large-numbers/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.id.md",
+      "url": "https://kenji.blog/id/p/cauchy/",
+      "targetExists": true
+    },
+    {
+      "file": "content/post/central-limit-theorem/index.id.md",
+      "url": "https://kenji.blog/id/p/cauchy/",
+      "targetExists": true
+    }
+  ],
+  "limitations": [
+    "Code execution and symbolic matching supplement the full-body AI comparison; these checks alone do not establish translation quality.",
+    "Security examples were inspected as instructional snippets and were not executed against a live service."
+  ]
+}
