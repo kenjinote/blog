@@ -176,6 +176,182 @@
         "https://dlmf.nist.gov/1.9"
       ],
       "validation": "docs/translation-review/batch-005-validation.json"
+    },
+    "post/cauchys-integral-theorem/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "87e6e073efec5480f37e24ade5921c530c7524582850cd3c03182b3401f4f1dc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Replaced the colloquial 용솟음 없음 with the mathematical divergence condition 발산이 0 and separated it from 회전이 0. Used 구간별로 매끄러운 for contour regularity, 반시계 방향 for positive orientation, and 원시함수 for primitive. Removed the ambiguous 단 한 번이라도 complex-differentiability assertion; described determination of values inside C rather than rigidity as a physical stiffness."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Replaced the colloquial 용솟음 없음 with the mathematical divergence condition 발산이 0 and separated it from 회전이 0. Used 구간별로 매끄러운 for contour regularity, 반시계 방향 for positive orientation, and 원시함수 for primitive. Removed the ambiguous 단 한 번이라도 complex-differentiability assertion; described determination of values inside C rather than rigidity as a physical stiffness.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 awaits the remaining four language reviews."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
+    },
+    "post/cauchys-integral-theorem/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "00b79f9f32e7d7e6a69d3a7c902e409361551cc5e6d864125afc73d9a1ca2c51",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Changed Fundação/Fundações to base/Fundamentos; limite of the curve to contorno; circunferência circunscrita na origem to the unit circle centered at the origin with explicit anti-clockwise orientation; integrais infinitas to integrais impróprias and Teorema do Resíduo to teorema dos resíduos. Corrected the simply connected definition, rotacional/divergência correspondence and one-point differentiability assertion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Changed Fundação/Fundações to base/Fundamentos; limite of the curve to contorno; circunferência circunscrita na origem to the unit circle centered at the origin with explicit anti-clockwise orientation; integrais infinitas to integrais impróprias and Teorema do Resíduo to teorema dos resíduos. Corrected the simply connected definition, rotacional/divergência correspondence and one-point differentiability assertion.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 awaits the remaining four language reviews."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
+    },
+    "post/cauchys-integral-theorem/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "c24f64d49c7e33d91eac006eb935695668821bf6460aa37fba5d1b0da86ffc0f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used domaine ouvert, courbe de classe C1 par morceaux, rotationnel/divergence, adhérence and primitive. Changed Fondation to fondement, specified the open neighborhood of the closed interior in Green, and distinguished every-point complex differentiability from a single point. Checked the retained French root-relative residue-theorem links as well as absolute links."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Used domaine ouvert, courbe de classe C1 par morceaux, rotationnel/divergence, adhérence and primitive. Changed Fondation to fondement, specified the open neighborhood of the closed interior in Green, and distinguished every-point complex differentiability from a single point. Checked the retained French root-relative residue-theorem links as well as absolute links.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 awaits the remaining four language reviews."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
+    },
+    "post/cauchys-integral-theorem/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cauchys-integral-theorem/index.md",
+      "sourceHash": "ddb816d1b1b0c918f26ef1eb4820a936c1fcfe79a579754f1f35a336a0a9e701",
+      "translationHash": "72d47c93ed1667200fcc734f018153086685c77cabf2679d4d15f28d0ad22100",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, ten sections, all proofs, diagram and conclusion with the corrected Japanese source. Restored simply connected-domain hypotheses for path independence; distinguished every-point differentiability from differentiability at a single point. Removed unverified dating and attribution of a modern triangle-subdivision proof to the original historical paper."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Retained standard Funktionentheorie, Cauchy–Riemannsche Differentialgleichungen and Stammfunktion; specified stückweise stetig differenzierbare Kurven, scalar Rotation versus Divergenz and positive orientation against the clock. Corrected auch nur einmal to every-point differentiability and distinguished local Taylor expansions from Laurent expansions on annuli; clarified that the formula determines values inside C."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 14 displayed formulas against Japanese and read their roles in the Green proof. Cauchy–Riemann equations are necessary, with continuous first partials a sufficient regularity condition. Verified curls -v_x-u_y and u_x-v_y, divergences u_x-v_y and v_x+u_y, Green C1/positive simple-boundary hypotheses, general piecewise smooth closed contours, and counterclockwise orientation/interior hypotheses for the formula. Added |z|² at 0 as a counterexample to a one-point claim and 1/z² as a zero-integral example on a domain with a hole."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the only code fence, a Mermaid flowchart: five edges, holomorphic-domain root and a qualified non-simply-connected branch. No standalone executable program occurs in the article. Supplementary 4097-sample unit-circle quadrature reproduces 2πi for 1/z and 0 for 1/z²; this illustrates, rather than proves, the theorem."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked every retained internal article target exists in the matching language and the eyecatch exists; added the MIT and NIST references read for the source correction. No article self-link remains. Local Hugo output contains the corrected diagram and reference links, and multilingual/HTTPS validators pass."
+        }
+      },
+      "summary": "Complete-body semantic comparison with the corrected source, including theorem conditions, curl/divergence signs, all displayed formulas, Mermaid and internal links.",
+      "languageSpecificFindings": "Retained standard Funktionentheorie, Cauchy–Riemannsche Differentialgleichungen and Stammfunktion; specified stückweise stetig differenzierbare Kurven, scalar Rotation versus Divergenz and positive orientation against the clock. Corrected auch nur einmal to every-point differentiability and distinguished local Taylor expansions from Laurent expansions on annuli; clarified that the formula determines values inside C.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical and structural checks supplement full-body reading and do not prove the theorem.",
+        "The original Goursat historical paper was not read in full; the article avoids unsupported date/original-method claims.",
+        "This is a local review record; publication of batch 005 awaits the remaining four language reviews."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf",
+        "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf",
+        "https://dlmf.nist.gov/1.9"
+      ],
+      "validation": "docs/translation-review/batch-005-validation.json"
     }
   }
 }

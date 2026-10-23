@@ -1,9 +1,9 @@
 ---
-title: 'Théorème Intégral de Cauchy : La Magnifique Fondation de l''Analyse Complexe Où les Intégrales Disparaissent'
-date: "2026-09-24T19:44:38+09:00"
+title: 'Théorème intégral de Cauchy : un beau fondement de l''analyse complexe où les intégrales s''annulent'
 description: 'Une explication détaillée du théorème intégral de Cauchy, l''un des théorèmes les plus importants en analyse complexe, de sa signification intuitive à une esquisse de sa preuve à l''aide du théorème de Green et son application à la formule intégrale.'
 slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00
+lastmod: 2026-10-24
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'
@@ -18,7 +18,7 @@ tags:
 
 Dans le domaine des mathématiques connu sous le nom d'analyse complexe, l'un des théorèmes les plus beaux et les plus puissants est le **théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/)**. Ce théorème affirme ce qui, à première vue, semble être un fait très surprenant : "L'intégration d'une fonction complexe qui satisfait à certaines conditions le long d'un contour fermé donnera toujours exactement zéro."
 
-D'après l'expérience de l'apprentissage de l'intégration des fonctions réelles, l'intégration est naturellement considérée comme représentant une "aire" ou une "accumulation le long d'un chemin", de sorte que si l'on intègre sur une longue distance le long d'un chemin, il semble naturel qu'il reste une certaine valeur. Cependant, sur le plan complexe, lorsqu'une fonction possède la propriété spéciale d'être **holomorphe**, une symétrie étonnante émerge où le résultat de l'intégration devient complètement indépendant du chemin emprunté, sautant par-dessus les différences de chemins.
+L'intégration des fonctions réelles peut représenter une aire algébrique ou une accumulation le long d'un chemin. En analyse complexe, les fonctions holomorphes possèdent une forte propriété de compensation : si une fonction est holomorphe dans un domaine simplement connexe, ses intégrales le long de chemins de classe $C^1$ par morceaux dans ce domaine ne dépendent que des extrémités. L'holomorphie seule ne garantit pas cette indépendance globale dans un domaine troué.
 
 Dans cet article, nous expliquerons le théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/) de manière très détaillée, en partant des définitions fondamentales du plan complexe et des fonctions holomorphes, en passant par la signification intuitive du théorème, son interprétation physique et une esquisse de sa preuve classique à l'aide du théorème de Green. De plus, nous aborderons la façon dont ce théorème se connecte à des sujets plus avancés de l'analyse complexe, tels que la formule intégrale de [Cauchy](https://kenji.blog/fr/p/cauchy/) et le [théorème des résidus](/fr/p/residue-theorem/). Apprécions la profondeur insondable de ce théorème tant du point de vue de la rigueur mathématique que de l'imagerie intuitive.
 
@@ -44,21 +44,21 @@ $$
 f'(z_0) = \lim_{\Delta z \to 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z}
 $$
 
-Ce qui est extrêmement important ici, c'est que cette limite doit converger vers exactement la même valeur quelle que soit la "direction depuis laquelle" $\Delta z$ s'approche de zéro sur le plan complexe. Dans le monde des nombres réels, il n'y avait que deux façons : l'approche par la droite ou par la gauche, mais dans le plan complexe, il y a des façons infinies de s'approcher. En raison de cette condition stricte, des propriétés bien plus fortes que la dérivation des fonctions réelles en sont déduites.
+L'exigence essentielle est que la limite soit la même quelle que soit la façon dont $\Delta z$ tend vers zéro dans le plan complexe. Cela comprend les approches suivant des chemins courbes, et pas seulement les directions rectilignes. La dérivabilité complexe est donc plus contraignante que la dérivabilité réelle.
 
-Lorsqu'une fonction $f(z)$ est dérivable en tous les points d'un certain domaine, on dit que la fonction est **holomorphe** dans ce domaine. Il est connu qu'une condition nécessaire et suffisante pour être holomorphe est que la partie réelle $u$ et la partie imaginaire $v$ satisfassent aux équations aux dérivées partielles suivantes. Celles-ci sont appelées les **équations de [Cauchy](https://kenji.blog/fr/p/cauchy/)-[Riemann](https://kenji.blog/fr/p/riemann/)**.
+Une fonction $f(z)$ est **holomorphe** dans un domaine ouvert si elle est dérivable au sens complexe en chaque point de ce domaine. L'holomorphie implique que les parties réelle $u$ et imaginaire $v$ satisfont aux conditions nécessaires suivantes, appelées **équations de Cauchy–Riemann** :
 
 $$
 \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
 $$
 
-De plus, si $u$ et $v$ ont des dérivées partielles continues, le respect de ces équations équivaut à ce que $f(z)$ soit holomorphe. Ces équations relationnelles, qui possèdent une belle symétrie, jouent un rôle crucial dans la preuve du théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/) décrite plus tard.
+Réciproquement, si $u$ et $v$ ont des dérivées partielles premières continues dans un domaine ouvert et y vérifient ces équations, alors $f=u+iv$ est holomorphe. Sans hypothèse appropriée de régularité, les équations seules ne constituent pas un critère suffisant inconditionnel d'holomorphie.
 
 ## 3. Définition et Propriétés de l'Intégration Complexe
 
 Ensuite, nous définissons l'intégration curviligne sur le plan complexe. Le théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/) étant un théorème sur l'intégration le long d'une "courbe" sur le plan complexe, il est essentiel de clarifier la définition de cette intégration.
 
-Supposons qu'une courbe lisse $C$ sur le plan complexe soit paramétrée à l'aide d'une variable réelle $t \in [a, b]$ par $z(t) = x(t) + i y(t)$. L'intégrale curviligne de la fonction complexe $f(z)$ le long de cette courbe $C$ est définie comme suit :
+Soit $C$ une courbe de classe $C^1$ par morceaux du plan complexe, paramétrée par $z(t)=x(t)+iy(t)$ pour $t\in[a,b]$. Pour une fonction $f$ continue le long de la courbe, l'intégrale curviligne est définie par la formule suivante ; on additionne les intégrales sur les différents morceaux si nécessaire.
 
 $$
 \int_C f(z) dz = \int_a^b f(z(t)) z'(t) dt
@@ -79,7 +79,7 @@ Ces propriétés, bien qu'apparemment évidentes, deviennent des outils très pu
 Maintenant que nos préparatifs sont terminés, nous énonçons enfin la formulation exacte de notre sujet principal, le théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/).
 
 **Théorème (Théorème Intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/))**
-Pour une fonction complexe $f(z)$ qui est holomorphe sur un domaine simplement connexe $D$, et pour tout contour fermé simple $C$ dans $D$, l'égalité suivante est vérifiée.
+Soit $D$ un domaine ouvert simplement connexe et soit $f$ holomorphe dans $D$. Pour toute courbe fermée $C$ de classe $C^1$ par morceaux contenue dans $D$, même si elle se recoupe, on a :
 
 $$
 \oint_C f(z) dz = 0
@@ -88,22 +88,22 @@ $$
 Complétons ceci par quelques termes importants qui apparaissent comme conditions préalables au théorème.
 
 - **Domaine simplement connexe** : Intuitivement parlant, cela fait référence à un domaine "sans trous". Exprimé avec rigueur mathématique, il fait référence à un domaine où toute courbe fermée en son sein peut être déformée de façon continue et rétrécie en un seul point sans jamais quitter le domaine.
-- **Contour fermé simple** : Il s'agit d'une courbe où le point de départ et le point d'arrivée coïncident (courbe fermée) et qui ne se croise pas elle-même en cours de route (simple). Également connue sous le nom de "courbe de Jordan", elle est connue pour diviser le plan en deux parties : un "intérieur" et un "extérieur" (théorème de la courbe de Jordan).
+- **Courbe fermée de classe $C^1$ par morceaux** : Ses extrémités coïncident et elle est composée d'un nombre fini de morceaux de classe $C^1$. Le théorème ci-dessus ne suppose pas qu'elle soit simple. Une courbe fermée simple ne se recoupe pas et sépare le plan en un intérieur et un extérieur ; c'est ce type de courbe que nous utiliserons dans la preuve par le théorème de Green.
 
 Le diagramme ci-dessous montre visuellement la différence de comportement des courbes fermées dans les domaines simplement connexes par rapport aux domaines multiplement connexes (domaines avec des trous).
 
 ```mermaid
 flowchart TD
-    A["Domaine D"] --> B{"Y a-t-il des trous ?"}
+    A["Domaine D dans lequel f est holomorphe"] --> B{"Y a-t-il des trous ?"}
     B -->|"Non (Simplement connexe)"| C["Toute courbe fermée peut se réduire à un point"]
     C --> D["Le théorème de Cauchy s'applique : l'intégrale est nulle"]
     B -->|"Oui (Multiplement connexe)"| E["La courbe entourant un trou ne peut pas être réduite"]
-    E --> F["L'intégrale n'est généralement pas nulle (mène au Théorème des Résidus)"]
+    E --> F["L'intégrale n'est pas nécessairement nulle : vérifier fonction et courbe"]
 ```
 
 ## 5. Compréhension Intuitive et Interprétation Physique du Théorème
 
-Pourquoi l'intégrale d'une fonction holomorphe sur un contour fermé devient-elle toujours nulle ? Pour comprendre cela intuitivement, plutôt que seulement comme une séquence de formules mathématiques, décomposons l'intégrale complexe en ses parties réelle et imaginaire.
+Pourquoi l'intégrale s'annule-t-elle sous les hypothèses du théorème ? Pour en développer l'intuition, séparons-la en parties réelle et imaginaire. Dans cette interprétation, nous supposons $u,v$ de classe $C^1$ et considérons une courbe dans un domaine simplement connexe.
 
 Soit $f(z) = u + iv$ et $dz = dx + i dy$. L'intégrale peut alors être développée comme suit :
 
@@ -113,17 +113,17 @@ $$
 
 Remarquez le côté droit de cette équation. Deux intégrales réelles sont apparues, et elles ont exactement la même forme que les intégrales curvilignes de champs vectoriels sur un plan 2D. Plus précisément, la partie réelle peut être interprétée comme l'intégrale curviligne d'un champ vectoriel $\vec{F}_1 = (u, -v)$, et la partie imaginaire comme l'intégrale curviligne d'un champ vectoriel $\vec{F}_2 = (v, u)$.
 
-Considéré dans le contexte de la physique (en particulier de la dynamique des fluides ou de l'électromagnétisme), l'intégrale curviligne d'un champ vectoriel le long d'un contour fermé représente la "circulation" de ce champ. Si un champ vectoriel est à la fois "irrotationnel" et "incompressible", alors peu importe la courbe fermée le long de laquelle vous calculez la circulation, le résultat sera zéro.
+En physique, l'intégrale curviligne d'un champ de vecteurs le long d'une courbe fermée représente sa circulation. Pour un champ de classe $C^1$ dans un domaine simplement connexe, un rotationnel nul implique une circulation nulle sur toute courbe fermée de classe $C^1$ par morceaux. Dans un domaine troué, cette condition locale sur le rotationnel ne suffit pas à annuler toutes les circulations.
 
-Rappelez-vous les équations de [Cauchy](https://kenji.blog/fr/p/cauchy/)-[Riemann](https://kenji.blog/fr/p/riemann/) que nous avons apprises plus tôt : $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$. C'est exactement la condition qui garantit que les champs vectoriels $\vec{F}_1$ et $\vec{F}_2$ sont "irrotationnels". De même, l'autre équation $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ garantit qu'ils sont "incompressibles".
+Les rotationnels scalaires de $\vec{F}_1=(u,-v)$ et $\vec{F}_2=(v,u)$ sont respectivement $-v_x-u_y$ et $u_x-v_y$. L'équation de Cauchy–Riemann $u_y=-v_x$ annule le premier, tandis que $u_x=v_y$ annule le second. Les mêmes équations donnent aussi des divergences nulles : $\operatorname{div}\vec{F}_1=u_x-v_y=0$ et $\operatorname{div}\vec{F}_2=v_x+u_y=0$.
 
-En d'autres termes, la condition d'être une fonction holomorphe signifie former des champs vectoriels qui sont très "sages" (sans tourbillons, ni sources, ni puits) du point de vue de la physique, et en conséquence, l'intégrale sur une boucle fermée devient nécessairement nulle. C'est la signification physique et intuitive derrière le théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/).
+L'holomorphie produit ainsi deux champs irrotationnels et de divergence nulle. Pour expliquer la circulation nulle, ce sont le rotationnel nul et l'hypothèse sur le domaine qui comptent ; la divergence nulle est une propriété distincte. Cette distinction éclaire la compensation dans le théorème intégral de Cauchy.
 
 ## 6. Esquisse d'une Preuve Rigoureuse à l'aide du Théorème de Green
 
-Ici, comme preuve classique et intuitive du théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/), nous introduisons une méthode utilisant le **théorème de Green** du calcul. (Note : Cette preuve suppose que les dérivées partielles sont continues, c'est-à-dire que $f'(z)$ est continue.)
+Pour cette preuve classique, supposons en plus que $u,v$ ont des dérivées partielles premières continues dans un ouvert contenant une courbe fermée simple $C$ ainsi que son intérieur $D'$. La courbe est de classe $C^1$ par morceaux et orientée positivement, dans le sens inverse des aiguilles d'une montre. Le calcul suivant démontre ce cas ; le passage aux courbes fermées générales demande une étape supplémentaire.
 
-Le théorème de Green est un théorème puissant qui convertit une intégrale curviligne le long d'une courbe fermée dans un plan en une intégrale double sur le domaine $D'$ délimité par cette courbe.
+Le théorème de Green transforme l'intégrale curviligne sur $C=\partial D'$ en une intégrale double sur l'intérieur $D'$. Dans l'énoncé ci-dessous, $P,Q$ ont des dérivées partielles premières continues dans un voisinage ouvert de l'adhérence de $D'$, et le bord est orienté positivement.
 
 **Théorème de Green**
 $$
@@ -162,17 +162,17 @@ Ceci est le squelette de la preuve du théorème intégral de [Cauchy](https://k
 
 ## 7. Le Théorème de Goursat : Suppression de l'Hypothèse de Dérivabilité Continue
 
-La preuve utilisant le théorème de Green ci-dessus est très facile à comprendre et intuitive, mais mathématiquement elle présente une faiblesse. C'est-à-dire qu'elle utilise implicitement l'hypothèse selon laquelle "$f'(z)$ est continue" (c'est-à-dire l'hypothèse selon laquelle les dérivées partielles de $u, v$ sont continues). La preuve initiale de [Cauchy](https://kenji.blog/fr/p/cauchy/) reposait également sur cette hypothèse.
+La preuve précédente suppose explicitement la continuité des dérivées partielles premières de $u,v$ pour appliquer le théorème de Green. Le théorème de Goursat supprime la nécessité d'imposer cette continuité séparément.
 
-Cependant, à la fin du 19ème siècle, le mathématicien français Édouard Goursat a prouvé que cette hypothèse de continuité est en réalité inutile. C'est-à-dire qu'il a montré que le théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/) reste vrai du simple fait que la fonction est "dérivable (holomorphe) en chaque point".
+L'hypothèse essentielle est que $f$ soit dérivable au sens complexe en chaque point d'un domaine ouvert. Aucune hypothèse supplémentaire de continuité de $f'$ n'est nécessaire. Avec les conditions appropriées sur le domaine et la courbe, on obtient le résultat appelé théorème de Cauchy–Goursat.
 
-La preuve de Goursat emploie une méthode ingénieuse consistant à diviser le domaine en petits triangles et à utiliser la preuve par l'absurde pour déduire une contradiction (la méthode de triangulation). Dans les manuels modernes d'analyse complexe, ce résultat est généralement présenté sous le nom de "théorème de [Cauchy](https://kenji.blog/fr/p/cauchy/)-Goursat". Ce résultat a souligné une fois de plus que la condition d'être "complexe dérivable ne serait-ce qu'une fois" est une contrainte beaucoup plus forte (aboutissant à être infiniment dérivable) que ce que l'on pourrait comparer avec le cas des fonctions réelles.
+Une démonstration moderne consiste à subdiviser des triangles de façon répétée et à estimer les intégrales sur les triangles plus petits. La dérivabilité complexe en chaque point d'un domaine ouvert implique l'holomorphie, puis l'existence de dérivées de tous les ordres. La dérivabilité en un seul point ne suffit pas. Par exemple, $f(z)=|z|^2$ est dérivable au sens complexe en $0$, mais n'est holomorphe dans aucun voisinage de $0$.
 
 ## 8. Déformation du Chemin et Indépendance du Chemin
 
 L'une des conséquences extrêmement importantes du théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/) est l'**indépendance des intégrales par rapport au chemin**.
 
-Supposons qu'il y ait deux points $A$ et $B$ à l'intérieur d'un domaine simplement connexe $D$, et qu'il y ait deux chemins différents $C_1$ et $C_2$ les reliant. À ce moment-là, si la fonction $f(z)$ est holomorphe dans $D$, ce qui suit est vérifié :
+Soient $A,B$ deux points d'un domaine ouvert simplement connexe $D$ et soient $C_1,C_2$ deux chemins de classe $C^1$ par morceaux dans $D$, allant de $A$ à $B$. Si $f$ est holomorphe dans $D$, alors :
 
 $$
 \int_{C_1} f(z) dz = \int_{C_2} f(z) dz
@@ -186,7 +186,7 @@ $$
 
 En transposant ceci, nous obtenons $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
 
-En raison de cette propriété, l'intégration d'une fonction holomorphe ne dépend pas de "l'itinéraire emprunté", mais est déterminée "uniquement par les points de départ et d'arrivée". Cela rend possible la définition univoque d'une primitive (intégrale indéfinie) $F(z)$ même sur le plan complexe (à une constante d'intégration près), garantissant que le "Théorème Fondamental du Calcul" pour les fonctions réelles se vérifie aussi magnifiquement sur le plan complexe.
+Sous ces hypothèses, l'intégrale ne dépend que des extrémités. En fixant un point de base, on définit une primitive $F$ dans $D$, unique à une constante additive près, telle que $F'=f$. C'est la version complexe du théorème fondamental de l'analyse.
 
 ## 9. Application : Formule Intégrale de [Cauchy](https://kenji.blog/fr/p/cauchy/) et Extension aux Domaines Multiplement Connexes
 
@@ -194,25 +194,31 @@ Le théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/) est un thé
 
 ### Formule Intégrale de [Cauchy](https://kenji.blog/fr/p/cauchy/)
 
-La conséquence la plus directe et la plus largement applicable du théorème est la **formule intégrale de [Cauchy](https://kenji.blog/fr/p/cauchy/)**. Lorsqu'une fonction $f(z)$ est holomorphe dans un domaine $D$, pour une courbe fermée simple $C$ à l'intérieur de $D$ et tout point $a$ à l'intérieur de celle-ci, ce qui suit est vérifié :
+Une conséquence importante est la **formule intégrale de Cauchy**. Soit $C$ une courbe fermée simple, de classe $C^1$ par morceaux et orientée positivement (dans le sens inverse des aiguilles d'une montre). Si $f$ est holomorphe dans un ouvert contenant $C$ et son intérieur, et si $a$ est à l'intérieur de $C$, alors :
 
 $$
 f(a) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z - a} dz
 $$
 
-Cette formule montre la rigidité étonnante des fonctions holomorphes : "Tant que les valeurs de la fonction sur la frontière de la courbe fermée sont connues, la valeur de la fonction en chaque point à l'intérieur du domaine est complètement déterminée par le calcul intégral."
+La formule illustre la rigidité des fonctions holomorphes : connaître les valeurs de $f$ sur le contour $C$ détermine les valeurs en chaque point à l'intérieur de $C$. La formule seule ne détermine pas directement les valeurs à l'extérieur de cette courbe.
 
 ### Domaines Multiplement Connexes et [Théorème des Résidus](https://kenji.blog/fr/p/residue-theorem/)
 
-Si le domaine a des "trous" et n'est pas simplement connexe (domaine multiplement connexe), le théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/) ne peut pas être appliqué tel quel. Par exemple, la fonction $f(z) = 1/z$ n'est pas définie à l'origine $z=0$ et n'y est pas holomorphe. Si nous intégrons le long du cercle unité entourant l'origine, le résultat n'est pas nul, mais la valeur $2\pi i$.
+Dans un domaine troué, la version du théorème pour les domaines simplement connexes ne s'applique pas directement ; il faut examiner la fonction et la courbe. Par exemple, $f(z)=1/z$ est holomorphe hors de $0$, mais son intégrale sur le cercle unité parcouru dans le sens inverse des aiguilles d'une montre vaut $2\pi i$. En revanche, l'intégrale de $1/z^2$ sur ce même cercle est $0$. Un trou n'impose pas une intégrale non nulle.
 
-Cependant, en appliquant ingénieusement le théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/) et en déformant le chemin d'intégration, une méthode systématique d'évaluation des intégrales autour des trous a été établie. Cela conduit au **[théorème des résidus](/fr/p/residue-theorem/)**, l'un des outils les plus pratiques de l'analyse complexe moderne. En utilisant le [théorème des résidus](/fr/p/residue-theorem/), les intégrales définies complexes et les intégrales impropres de fonctions réelles peuvent être brillamment remplacées par des calculs algébriques sur le plan complexe et résolues.
+La déformation des chemins et le théorème intégral de Cauchy permettent de développer des méthodes d'évaluation des intégrales autour des trous. Cela conduit au **[théorème des résidus](/fr/p/residue-theorem/)**, un outil central de l'analyse complexe. Sous les hypothèses appropriées, il permet de calculer certaines intégrales définies et impropres de fonctions réelles à l'aide de résidus dans le plan complexe.
 
 ## 10. Conclusion
 
 À première vue, le théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/) pourrait ressembler à un modeste théorème qui dit simplement que "l'intégrale devient nulle". Cependant, caché derrière lui se trouve une symétrie profonde et magnifique apportée par la condition apparemment simple d'"holomorphie" des fonctions complexes.
 
-À partir de ce théorème, des réalisations glorieuses de l'analyse complexe telles que la formule intégrale de [Cauchy](https://kenji.blog/fr/p/cauchy/), la preuve qu'une fonction est infiniment dérivable (garantissant les développements de Taylor et les développements de Laurent), et le [théorème des résidus](/fr/p/residue-theorem/) sont successivement dérivées. On peut vraiment dire que le théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/) est la base la plus solide et la plus belle qui soutient le magnifique édifice mathématique de l'analyse complexe depuis ses racines.
+Le théorème intégral de Cauchy soutient la formule intégrale, l'existence de dérivées de tous les ordres, les développements locaux de Taylor, les développements de Laurent dans des couronnes appropriées et le théorème des résidus. Ensemble, ces résultats forment une base de l'analyse complexe.
 
 Nous encourageons les lecteurs à prendre une feuille et un stylo et à retracer de leurs propres mains la preuve utilisant le théorème de Green. Vous devriez alors pouvoir certainement ressentir le monde harmonieux du plan complexe qui se déploie derrière les formules mathématiques.
 
+
+## Références
+
+- [MIT 18.04: Complex integration and Cauchy theory](https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf)
+- [MIT 18.112: Cauchy theorem and integral formula](https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf)
+- [NIST DLMF §1.9: Calculus of a Complex Variable](https://dlmf.nist.gov/1.9)

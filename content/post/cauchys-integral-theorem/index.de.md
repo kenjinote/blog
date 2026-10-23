@@ -1,9 +1,9 @@
 ---
 title: 'Cauchyscher Integralsatz: Das schöne Fundament der Funktionentheorie, wo Integrale verschwinden'
-date: "2026-09-24T19:44:38+09:00"
 description: 'Eine ausführliche Erklärung des Cauchyschen Integralsatzes, eines der wichtigsten Sätze der Funktionentheorie, von seiner intuitiven Bedeutung über eine Skizze des Beweises mit dem Satz von Green bis hin zur Anwendung auf die Integralformel.'
 slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00
+lastmod: 2026-10-24
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'
@@ -18,7 +18,7 @@ tags:
 
 In dem Teilgebiet der Mathematik, das als Funktionentheorie (komplexe Analysis) bekannt ist, ist einer der schönsten und mächtigsten Sätze der **[Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralsatz**. Dieser Satz behauptet eine auf den ersten Blick höchst überraschende Tatsache: "Die Integration einer komplexen Funktion, die bestimmte Bedingungen erfüllt, entlang einer geschlossenen Kurve liefert immer genau null."
 
-Aus der Erfahrung mit der Integration reeller Funktionen denkt man bei der Integration natürlicherweise an "Fläche" oder "Akkumulation entlang eines Weges", so dass es natürlich erscheint, dass ein gewisser Wert übrig bleibt, wenn man über eine lange Strecke entlang eines Weges integriert. In der komplexen Ebene zeigt sich jedoch, wenn eine Funktion die besondere Eigenschaft besitzt, **holomorph** zu sein, eine erstaunliche Symmetrie, bei der das Ergebnis der Integration völlig unabhängig vom gewählten Weg wird und Unterschiede in den Wegen überspringt.
+Die Integration reeller Funktionen kann einen orientierten Flächeninhalt oder eine Akkumulation entlang eines Weges beschreiben. In der Funktionentheorie besitzen holomorphe Funktionen eine starke Auslöschungseigenschaft: Ist eine Funktion auf einem einfach zusammenhängenden Gebiet holomorph, so hängen ihre Integrale entlang stückweise stetig differenzierbarer Wege in diesem Gebiet nur von den Endpunkten ab. Auf einem Gebiet mit Löchern gewährleistet Holomorphie allein diese globale Wegunabhängigkeit nicht.
 
 In diesem Artikel werden wir den [Cauchy](https://kenji.blog/de/p/cauchy/)schen Integralsatz sehr detailliert erklären, angefangen bei den grundlegenden Definitionen der komplexen Ebene und holomorpher Funktionen über die intuitive Bedeutung des Satzes, seine physikalische Interpretation bis hin zu einer Skizze seines klassischen Beweises mit dem Satz von Green. Darüber hinaus werden wir ansprechen, wie dieser Satz mit fortgeschritteneren Themen der Funktionentheorie, wie der Cauchyschen Integralformel und dem [Residuensatz](https://kenji.blog/de/p/residue-theorem/), zusammenhängt. Lassen Sie uns die tiefe Bedeutung dieses Satzes sowohl aus der Perspektive mathematischer Strenge als auch intuitiver Vorstellungskraft würdigen.
 
@@ -44,21 +44,21 @@ $$
 f'(z_0) = \lim_{\Delta z \to 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z}
 $$
 
-Hierbei ist extrem wichtig, dass dieser Grenzwert gegen genau denselben Wert konvergieren muss, unabhängig davon, "aus welcher Richtung" sich $\Delta z$ in der komplexen Ebene der Null nähert. In der Welt der reellen Zahlen gab es nur zwei Möglichkeiten: Annäherung von rechts oder von links, aber in der komplexen Ebene gibt es unendlich viele Möglichkeiten der Annäherung. Aufgrund dieser strengen Bedingung ergeben sich Eigenschaften, die weitaus stärker sind als bei der Differentiation reeller Funktionen.
+Entscheidend ist, dass der Grenzwert für jede Art der Annäherung von $\Delta z$ an null in der komplexen Ebene derselbe ist. Dazu gehören auch gekrümmte Annäherungswege, nicht nur geradlinige Richtungen. Komplexe Differenzierbarkeit ist daher eine stärkere Bedingung als reelle Differenzierbarkeit.
 
-Wenn eine Funktion $f(z)$ in allen Punkten eines bestimmten Gebietes differenzierbar ist, sagt man, die Funktion sei in diesem Gebiet **holomorph**. Es ist bekannt, dass eine notwendige und hinreichende Bedingung dafür, dass eine Funktion holomorph ist, darin besteht, dass der Realteil $u$ und der Imaginärteil $v$ die folgenden partiellen Differentialgleichungen erfüllen. Diese werden die **[Cauchy](https://kenji.blog/de/p/cauchy/)-[Riemann](https://kenji.blog/de/p/riemann/)schen Differentialgleichungen** genannt.
+Eine Funktion $f(z)$ heißt auf einem Gebiet, also einer zusammenhängenden offenen Menge, **holomorph**, wenn sie dort in jedem Punkt komplex differenzierbar ist. Daraus folgen die folgenden notwendigen Bedingungen für Realteil $u$ und Imaginärteil $v$, die **Cauchy–Riemannschen Differentialgleichungen**:
 
 $$
 \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
 $$
 
-Wenn außerdem $u$ und $v$ stetige partielle Ableitungen haben, ist die Gültigkeit dieser Gleichungen äquivalent dazu, dass $f(z)$ holomorph ist. Diese Beziehungsgleichungen, die eine schöne Symmetrie besitzen, spielen eine entscheidende Rolle im später beschriebenen Beweis des [Cauchy](https://kenji.blog/de/p/cauchy/)schen Integralsatzes.
+Umgekehrt gilt: Besitzen $u,v$ auf einem Gebiet stetige partielle Ableitungen erster Ordnung und erfüllen sie dort diese Gleichungen, so ist $f=u+iv$ holomorph. Ohne eine geeignete Regularitätsannahme sind die Gleichungen allein kein uneingeschränkt hinreichendes Kriterium für Holomorphie.
 
 ## 3. Definition und Eigenschaften der komplexen Integration
 
 Als nächstes definieren wir das Wegintegral in der komplexen Ebene. Da der [Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralsatz ein Satz über die Integration entlang einer "Kurve" in der komplexen Ebene ist, ist es unerlässlich, die Definition dieser Integration zu klären.
 
-Angenommen, eine glatte Kurve $C$ in der komplexen Ebene wird mit einem reellen Parameter $t \in [a, b]$ als $z(t) = x(t) + i y(t)$ parametrisiert. Das Wegintegral der komplexen Funktion $f(z)$ entlang dieser Kurve $C$ ist wie folgt definiert:
+Sei $C$ eine stückweise stetig differenzierbare Kurve in der komplexen Ebene mit Parametrisierung $z(t)=x(t)+iy(t)$ für $t\in[a,b]$. Für eine entlang der Kurve stetige Funktion $f$ ist das Wegintegral durch die folgende Formel definiert; bei mehreren Teilstücken werden deren Integrale addiert.
 
 $$
 \int_C f(z) dz = \int_a^b f(z(t)) z'(t) dt
@@ -79,7 +79,7 @@ Diese Eigenschaften, die scheinbar offensichtlich sind, werden später zu sehr m
 Nachdem unsere Vorbereitungen abgeschlossen sind, formulieren wir schließlich die exakte Aussage des Hauptthemas, des [Cauchy](https://kenji.blog/de/p/cauchy/)schen Integralsatzes.
 
 **Satz ([Cauchy](https://kenji.blog/de/p/cauchy/)scher Integralsatz)**
-Für eine komplexe Funktion $f(z)$, die auf einem einfach zusammenhängenden Gebiet $D$ holomorph ist, und für jede einfache geschlossene Kurve $C$ innerhalb von $D$, gilt die folgende Gleichung.
+Sei $D$ ein einfach zusammenhängendes Gebiet und $f$ auf $D$ holomorph. Für jede geschlossene, stückweise stetig differenzierbare Kurve $C$ in $D$ gilt die folgende Gleichung. Die Kurve darf sich selbst schneiden.
 
 $$
 \oint_C f(z) dz = 0
@@ -88,22 +88,22 @@ $$
 Lassen Sie uns dies mit einigen wichtigen Begriffen ergänzen, die als Voraussetzung für den Satz erscheinen.
 
 - **Einfach zusammenhängendes Gebiet** : Intuitiv gesprochen bezieht sich dies auf ein Gebiet "ohne Löcher". Mathematisch streng ausgedrückt bezeichnet es ein Gebiet, in dem jede geschlossene Kurve innerhalb des Gebiets kontinuierlich verformt und auf einen einzigen Punkt zusammengezogen werden kann, ohne jemals das Gebiet zu verlassen.
-- **Einfache geschlossene Kurve** : Dies ist eine Kurve, bei der Anfangspunkt und Endpunkt übereinstimmen (geschlossene Kurve) und die sich auf ihrem Weg nicht selbst schneidet (einfach). Auch als "Jordankurve" bekannt, ist sie dafür bekannt, die Ebene in zwei Teile zu teilen: ein "Inneres" und ein "Äußeres" (Jordanscher Kurvensatz).
+- **Geschlossene, stückweise stetig differenzierbare Kurve**: Anfangs- und Endpunkt stimmen überein, und die Kurve besteht aus endlich vielen stetig differenzierbaren Teilstücken. Im obigen Satz muss sie nicht einfach sein. Eine einfache geschlossene Kurve hat keine Selbstschnitte und trennt die Ebene in ein Inneres und ein Äußeres; solche Kurven verwenden wir unten beim Beweis mit dem Satz von Green.
 
 Das folgende Diagramm zeigt visuell den Unterschied im Verhalten geschlossener Kurven in einfach zusammenhängenden Gebieten im Vergleich zu mehrfach zusammenhängenden Gebieten (Gebieten mit Löchern).
 
 ```mermaid
 flowchart TD
-    A["Gebiet D"] --> B{"Gibt es Löcher?"}
+    A["Gebiet D, auf dem f holomorph ist"] --> B{"Gibt es Löcher?"}
     B -->|"Nein (Einfach zusammenhängend)"| C["Jede geschlossene Kurve kann auf einen Punkt zusammengezogen werden"]
     C --> D["Cauchyscher Integralsatz gilt: Integral ist null"]
     B -->|"Ja (Mehrfach zusammenhängend)"| E["Kurve um ein Loch kann nicht zusammengezogen werden"]
-    E --> F["Integral ist im Allgemeinen nicht null (führt zum Residuensatz)"]
+    E --> F["Integral ist nicht zwingend null: Funktion und Kurve prüfen"]
 ```
 
 ## 5. Intuitives Verständnis und physikalische Interpretation des Satzes
 
-Warum wird das Integral einer holomorphen Funktion über eine geschlossene Kurve immer null? Um dies intuitiv und nicht nur als eine Folge mathematischer Formeln zu verstehen, zerlegen wir das komplexe Integral in seinen Real- und Imaginärteil.
+Warum verschwindet das Integral unter den Voraussetzungen des Satzes? Zur Anschauung zerlegen wir es in Real- und Imaginärteil. Dabei nehmen wir $u,v$ als $C^1$-Funktionen an und betrachten Kurven in einem einfach zusammenhängenden Gebiet.
 
 Sei $f(z) = u + iv$ und $dz = dx + i dy$. Das Integral kann dann wie folgt entwickelt werden:
 
@@ -113,17 +113,17 @@ $$
 
 Beachten Sie die rechte Seite dieser Gleichung. Es sind zwei reelle Integrale aufgetreten, und sie haben exakt die gleiche Form wie die Wegintegrale von Vektorfeldern auf einer 2D-Ebene. Speziell kann der Realteil als Wegintegral eines Vektorfeldes $\vec{F}_1 = (u, -v)$ und der Imaginärteil als Wegintegral eines Vektorfeldes $\vec{F}_2 = (v, u)$ interpretiert werden.
 
-Betrachtet man dies im Kontext der Physik (insbesondere der Strömungsmechanik oder des Elektromagnetismus), stellt das Wegintegral eines Vektorfeldes entlang einer geschlossenen Kurve die "Zirkulation" dieses Feldes dar. Wenn ein Vektorfeld sowohl "wirbelfrei" als auch "quellenfrei" ist, dann ist die Zirkulation null, egal entlang welcher geschlossenen Kurve man sie berechnet.
+In der Physik beschreibt das Wegintegral eines Vektorfeldes entlang einer geschlossenen Kurve dessen Zirkulation. Für ein stetig differenzierbares Feld auf einem einfach zusammenhängenden Gebiet folgt aus verschwindender Rotation, dass die Zirkulation entlang jeder geschlossenen, stückweise stetig differenzierbaren Kurve null ist. Bei einem Gebiet mit Löchern genügt die lokale Bedingung verschwindender Rotation dafür nicht.
 
-Erinnern Sie sich an die [Cauchy](https://kenji.blog/de/p/cauchy/)-[Riemann](https://kenji.blog/de/p/riemann/)schen Differentialgleichungen, die wir zuvor kennengelernt haben: $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$. Dies ist genau die Bedingung, die garantiert, dass die Vektorfelder $\vec{F}_1$ und $\vec{F}_2$ "wirbelfrei" sind. Analog garantiert die andere Gleichung $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$, dass sie "quellenfrei" sind.
+Die skalaren Rotationen der Felder $\vec{F}_1=(u,-v)$ und $\vec{F}_2=(v,u)$ sind $-v_x-u_y$ beziehungsweise $u_x-v_y$. Die Cauchy–Riemannsche Gleichung $u_y=-v_x$ lässt die erste verschwinden, die Gleichung $u_x=v_y$ die zweite. Dieselben Gleichungen liefern außerdem verschwindende Divergenzen: $\operatorname{div}\vec{F}_1=u_x-v_y=0$ und $\operatorname{div}\vec{F}_2=v_x+u_y=0$.
 
-Mit anderen Worten, die Bedingung, eine holomorphe Funktion zu sein, bedeutet, Vektorfelder zu bilden, die aus physikalischer Sicht sehr "gutartig" sind (keine Wirbel, keine Quellen oder Senken), und als Folge davon wird das Integral über eine geschlossene Schleife zwangsläufig null. Dies ist die physikalische und intuitive Bedeutung hinter dem [Cauchy](https://kenji.blog/de/p/cauchy/)schen Integralsatz.
+Holomorphie erzeugt somit zwei wirbelfreie und quellenfreie Felder. Für die Aussage über die Zirkulation sind die verschwindende Rotation und die Voraussetzung an das Gebiet entscheidend; die verschwindende Divergenz ist eine davon zu unterscheidende Eigenschaft. So lässt sich die Auslöschung im Cauchyschen Integralsatz anschaulich verstehen.
 
 ## 6. Skizze eines strengen Beweises mit dem Satz von Green
 
-Hier stellen wir als klassischen und intuitiven Beweis des [Cauchy](https://kenji.blog/de/p/cauchy/)schen Integralsatzes eine Methode vor, die den **Satz von Green** aus der Analysis verwendet. (Hinweis: Dieser Beweis setzt voraus, dass die partiellen Ableitungen stetig sind, d.h., $f'(z)$ ist stetig.)
+Für diesen klassischen Beweis nehmen wir zusätzlich an, dass $u,v$ auf einer offenen Menge, die die Kurve $C$ und ihr Inneres $D'$ enthält, stetige partielle Ableitungen erster Ordnung besitzen. Dabei sei $C$ einfach, geschlossen, stückweise stetig differenzierbar und positiv orientiert, also gegen den Uhrzeigersinn durchlaufen. Die folgende Rechnung beweist diesen Fall; die Erweiterung auf allgemeine geschlossene Kurven erfordert einen weiteren Schritt.
 
-Der Satz von Green ist ein mächtiger Satz, der ein Wegintegral entlang einer geschlossenen Kurve in einer Ebene in ein Doppelintegral über das von dieser Kurve umschlossene Gebiet $D'$ umwandelt.
+Der Satz von Green wandelt das Wegintegral über $C=\partial D'$ in ein Doppelintegral über das Innere $D'$ um. In der folgenden Aussage besitzen $P,Q$ auf einer offenen Umgebung des Abschlusses von $D'$ stetige partielle Ableitungen erster Ordnung, und der Rand ist positiv orientiert.
 
 **Satz von Green**
 $$
@@ -162,17 +162,17 @@ Dies ist das Gerüst des Beweises für den [Cauchy](https://kenji.blog/de/p/cauc
 
 ## 7. Der Satz von Goursat: Aufhebung der Annahme der stetigen Differenzierbarkeit
 
-Der Beweis mit dem obigen Satz von Green ist sehr leicht zu verstehen und intuitiv, hat aber mathematisch gesehen eine Schwäche. Nämlich, dass er implizit die Annahme verwendet, dass "$f'(z)$ stetig ist" (d.h. die Annahme, dass die partiellen Ableitungen von $u, v$ stetig sind). [Cauchy](https://kenji.blog/de/p/cauchy/)s anfänglicher Beweis stützte sich ebenfalls auf diese Annahme.
+Der obige Beweis setzt die Stetigkeit der partiellen Ableitungen erster Ordnung von $u,v$ ausdrücklich voraus, um den Satz von Green anzuwenden. Der Satz von Goursat zeigt, dass diese Stetigkeit nicht gesondert angenommen werden muss.
 
-Am Ende des 19. Jahrhunderts bewies der französische Mathematiker Édouard Goursat jedoch, dass diese Annahme der Stetigkeit tatsächlich unnötig ist. Das heißt, er zeigte, dass der [Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralsatz allein dadurch gilt, dass die Funktion "in jedem Punkt differenzierbar (holomorph) ist".
+Die wesentliche Voraussetzung ist, dass $f$ in jedem Punkt eines Gebiets komplex differenzierbar ist. Eine zusätzliche Stetigkeitsannahme für $f'$ ist nicht erforderlich. Zusammen mit den passenden Voraussetzungen an Gebiet und Kurve ergibt dies den Satz von Cauchy–Goursat.
 
-Goursats Beweis wendet eine raffinierte Methode an, das Gebiet in kleine Dreiecke zu unterteilen und durch einen Widerspruchsbeweis einen Widerspruch abzuleiten (die Methode der Triangulierung). In modernen Lehrbüchern zur Funktionentheorie wird dieses Ergebnis im Allgemeinen als "Satz von [Cauchy](https://kenji.blog/de/p/cauchy/)-Goursat" eingeführt. Dieses Ergebnis verdeutlichte einmal mehr, dass die Bedingung, "auch nur einmal komplex differenzierbar zu sein", eine weitaus stärkere Einschränkung ist (die dazu führt, dass man unendlich oft differenzierbar ist), als man es mit dem Fall reeller Funktionen vergleichen könnte.
+Eine moderne Beweismethode unterteilt Dreiecke wiederholt in kleinere Dreiecke und schätzt die Integrale über deren Ränder ab. Komplexe Differenzierbarkeit in jedem Punkt eines Gebiets bedeutet Holomorphie und führt zur Existenz von Ableitungen jeder Ordnung. Differenzierbarkeit an nur einem Punkt reicht nicht aus. So ist $f(z)=|z|^2$ bei $0$ komplex differenzierbar, aber auf keiner Umgebung von $0$ holomorph.
 
 ## 8. Wegverformung und Wegunabhängigkeit
 
 Eine der äußerst wichtigen Konsequenzen des [Cauchy](https://kenji.blog/de/p/cauchy/)schen Integralsatzes ist die **Wegunabhängigkeit von Integralen**.
 
-Angenommen, es gibt zwei Punkte $A$ und $B$ innerhalb eines einfach zusammenhängenden Gebiets $D$, und es gibt zwei verschiedene Wege $C_1$ und $C_2$, die sie verbinden. In diesem Fall gilt, wenn die Funktion $f(z)$ innerhalb von $D$ holomorph ist:
+Seien $A,B$ zwei Punkte eines einfach zusammenhängenden Gebiets $D$ und $C_1,C_2$ zwei stückweise stetig differenzierbare Wege in $D$ von $A$ nach $B$. Ist $f$ auf $D$ holomorph, so gilt:
 
 $$
 \int_{C_1} f(z) dz = \int_{C_2} f(z) dz
@@ -186,7 +186,7 @@ $$
 
 Durch Umstellen erhalten wir $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
 
-Aufgrund dieser Eigenschaft hängt die Integration einer holomorphen Funktion nicht davon ab, "welcher Weg genommen wurde", sondern wird "nur durch die Anfangs- und Endpunkte" bestimmt. Dies macht es möglich, eine Stammfunktion (unbestimmtes Integral) $F(z)$ auch in der komplexen Ebene eindeutig zu definieren (bis auf eine Integrationskonstante), was garantiert, dass der "Hauptsatz der Differential- und Integralrechnung" für reelle Funktionen auch in der komplexen Ebene auf wunderbare Weise gilt.
+Unter diesen Voraussetzungen hängt das Integral nur von den Endpunkten ab. Mit einem festen Ausgangspunkt lässt sich eine Stammfunktion $F$ auf $D$ definieren, die bis auf eine additive Konstante eindeutig ist und $F'=f$ erfüllt. Dies ist die komplexe Fassung des Hauptsatzes der Differential- und Integralrechnung.
 
 ## 9. Anwendung: [Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralformel und Erweiterung auf mehrfach zusammenhängende Gebiete
 
@@ -194,25 +194,31 @@ Der [Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralsatz ist für sich gen
 
 ### [Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralformel
 
-Die direkteste und am weitesten anwendbare Konsequenz des Satzes ist die **[Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralformel**. Wenn eine Funktion $f(z)$ in einem Gebiet $D$ holomorph ist, gilt für eine einfache geschlossene Kurve $C$ innerhalb von $D$ und jeden Punkt $a$ in ihrem Inneren Folgendes:
+Eine wichtige Folgerung ist die **Cauchysche Integralformel**. Sei $C$ eine einfache geschlossene, stückweise stetig differenzierbare Kurve mit positiver Orientierung (gegen den Uhrzeigersinn). Ist $f$ auf einer offenen Menge holomorph, die $C$ und ihr Inneres enthält, und liegt $a$ im Inneren von $C$, so gilt:
 
 $$
 f(a) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z - a} dz
 $$
 
-Diese Formel zeigt die erstaunliche Starrheit holomorpher Funktionen: "Solange die Werte der Funktion auf dem Rand der geschlossenen Kurve bekannt sind, ist der Wert der Funktion an jedem Punkt innerhalb des Gebietes durch Integralrechnung vollständig bestimmt."
+Die Formel zeigt die Starrheit holomorpher Funktionen: Die Werte von $f$ auf der Kurve $C$ bestimmen die Werte an jedem Punkt im Inneren von $C$. Allein aus dieser Formel ergeben sich nicht unmittelbar die Werte außerhalb der Kurve.
 
 ### Mehrfach zusammenhängende Gebiete und der [Residuensatz](https://kenji.blog/de/p/residue-theorem/)
 
-Wenn das Gebiet "Löcher" aufweist und nicht einfach zusammenhängend ist (mehrfach zusammenhängendes Gebiet), kann der [Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralsatz nicht unverändert angewendet werden. Zum Beispiel ist die Funktion $f(z) = 1/z$ im Ursprung $z=0$ nicht definiert und dort nicht holomorph. Integriert man entlang des Einheitskreises, der den Ursprung umschließt, so ist das Ergebnis nicht null, sondern der Wert $2\pi i$.
+Auf einem Gebiet mit Löchern lässt sich die Fassung des Satzes für einfach zusammenhängende Gebiete nicht direkt anwenden; Funktion und Kurve müssen untersucht werden. Zum Beispiel ist $f(z)=1/z$ außerhalb von $0$ holomorph, doch das Integral über den gegen den Uhrzeigersinn durchlaufenen Einheitskreis ist $2\pi i$. Dagegen ist das Integral von $1/z^2$ über dieselbe Kurve $0$. Ein Loch erzwingt also kein von null verschiedenes Integral.
 
-Indem man jedoch den [Cauchy](https://kenji.blog/de/p/cauchy/)schen Integralsatz raffiniert anwendet und den Integrationsweg verformt, wurde eine systematische Methode zur Bewertung von Integralen um Löcher herum etabliert. Dies führt zum **Residuensatz**, einem der praktischsten Werkzeuge in der modernen Funktionentheorie. Mithilfe des [Residuensatz](https://kenji.blog/de/p/residue-theorem/)es können komplexe bestimmte Integrale und uneigentliche Integrale reeller Funktionen auf brillante Weise durch algebraische Berechnungen in der komplexen Ebene ersetzt und gelöst werden.
+Wegverformungen und der Cauchysche Integralsatz ermöglichen systematische Verfahren zur Berechnung von Integralen um Löcher. Daraus ergibt sich der **[Residuensatz](https://kenji.blog/de/p/residue-theorem/)**, ein zentrales Werkzeug der Funktionentheorie. Unter geeigneten Voraussetzungen lassen sich damit manche bestimmten und uneigentlichen Integrale reeller Funktionen mithilfe von Residuen in der komplexen Ebene berechnen.
 
 ## 10. Fazit
 
 Auf den ersten Blick mag der [Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralsatz wie ein bescheidener Satz aussehen, der einfach besagt, dass "das Integral null wird". Dahinter verbirgt sich jedoch eine tiefe und schöne Symmetrie, die durch die scheinbar einfache Bedingung der "Holomorphie" komplexer Funktionen hervorgerufen wird.
 
-Ausgehend von diesem Satz werden sukzessive glorreiche Errungenschaften der Funktionentheorie abgeleitet, wie die [Cauchy](https://kenji.blog/de/p/cauchy/)sche Integralformel, der Beweis, dass eine Funktion unendlich oft differenzierbar ist (was Taylor-Reihen und Laurent-Reihen garantiert), und der Residuensatz. Vom [Cauchy](https://kenji.blog/de/p/cauchy/)schen Integralsatz kann man wahrlich sagen, dass er das robusteste und schönste Fundament ist, das das großartige mathematische Gebäude der Funktionentheorie von seinen Wurzeln an stützt.
+Der Cauchysche Integralsatz trägt die Integralformel, die Existenz von Ableitungen jeder Ordnung, lokale Taylor-Entwicklungen, Laurent-Entwicklungen auf geeigneten Kreisringen und den Residuensatz. Gemeinsam bilden diese Ergebnisse eine Grundlage der Funktionentheorie.
 
 Wir ermutigen die Leser, Papier und Stift zur Hand zu nehmen und den Beweis mit dem Satz von Green mit eigenen Händen nachzuvollziehen. Sie sollten dann sicherlich die wunderbar harmonische Welt der komplexen Ebene spüren können, die sich hinter den mathematischen Formeln ausbreitet.
 
+
+## Literatur
+
+- [MIT 18.04: Complex integration and Cauchy theory](https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/1968cab6de7c96ead1c83001459a007b_MIT18_04S18_topic3.pdf)
+- [MIT 18.112: Cauchy theorem and integral formula](https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/8793d412fa0da2a4183539f5d8f7e3fd_lecture13.pdf)
+- [NIST DLMF §1.9: Calculus of a Complex Variable](https://dlmf.nist.gov/1.9)
