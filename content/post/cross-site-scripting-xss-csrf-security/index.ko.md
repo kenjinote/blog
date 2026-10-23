@@ -13,6 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
+lastmod: 2026-10-24T02:00:00+09:00
 ---
 
 ## 시작하며
@@ -29,10 +30,10 @@ XSS는 공격자가 웹 페이지에 악의적인 스크립트(주로 JavaScript
 
 ### XSS의 3가지 주요 유형
 
-XSS는 악의적인 스크립트가 어떻게 애플리케이션에 주입되고 실행되는지에 따라 크게 3가지 유형으로 분류됩니다.
+XSS는 데이터가 저장되거나 반사되는 방식과 안전하지 않은 해석이 일어나는 위치에 따라 설명할 수 있습니다. 이 분류는 서로 배타적이지 않습니다. 저장되거나 반사된 데이터도 클라이언트에서 안전하지 않게 처리될 수 있습니다.
 
 #### 1. Stored XSS (저장형 XSS)
-Stored XSS는 가장 위험한 유형의 XSS입니다. 공격자가 전송한 악의적인 스크립트가 데이터베이스나 파일 시스템 등 서버 측에 영구적으로 저장(축적)됩니다. 그 후, 정상적인 사용자가 해당 데이터를 포함한 페이지를 열람할 때 저장되어 있던 스크립트가 브라우저로 전송되어 실행됩니다.
+저장형 XSS는 여러 방문자에게 영향을 줄 수 있습니다. 악성 스크립트가 데이터베이스나 파일 시스템 등 서버에 저장되고, 사용자가 해당 데이터를 포함한 페이지를 방문하면 브라우저로 전달되어 실행됩니다. 실제 심각도는 실행 권한과 맥락에 따라 달라집니다.
 *   **전형적인 발생 위치:** 댓글란, 게시판, 사용자 프로필, 리뷰 기능 등.
 *   **위협:** 영향 범위가 매우 넓으며, 페이지를 연 모든 사용자가 피해를 입을 가능성이 있습니다.
 
@@ -42,7 +43,7 @@ Reflected XSS는 악의적인 스크립트가 서버에 저장되지 않고 리�
 *   **공격 기법:** 공격자는 악의적인 파라미터가 포함된 URL을 사용자가 클릭하게 함(피싱 메일이나 SNS 이용)으로써 공격을 성립시킵니다.
 
 #### 3. DOM-based XSS
-DOM-based XSS는 서버 측의 처리를 거치지 않고, 클라이언트 사이드(브라우저 상)의 JavaScript가 DOM (Document Object Model)을 부적절하게 조작함으로써 발생합니다.
+DOM 기반 XSS는 클라이언트 JavaScript가 신뢰할 수 없는 데이터를 안전하지 않은 싱크로 처리할 때 발생합니다. 데이터가 서버를 거쳤을 수도 있으며, 핵심은 안전하지 않은 처리가 클라이언트에서 일어난다는 점입니다.
 *   **메커니즘:** 애플리케이션의 JavaScript가 `window.location`이나 `document.referrer` 등 공격자가 제어할 수 있는 소스에서 데이터를 읽어와, 그것을 `innerHTML`이나 `eval()` 등 위험한 싱크(실행 포인트)에 직접 전달해 버림으로써 발생합니다.
 *   **위협:** 서버의 로그에 남지 않는 경우가 많아, WAF (Web Application Firewall) 등에 의한 탐지가 어려울 수 있습니다.
 
@@ -50,7 +51,7 @@ DOM-based XSS는 서버 측의 처리를 거치지 않고, 클라이언트 사�
 
 XSS가 성공하면, 공격자의 스크립트는 사용자의 브라우저에서 해당 웹 사이트와 동일한 오리진(권한)으로 실행됩니다. 이로 인해 다음과 같은 심각한 피해가 발생합니다.
 
-1.  **세션 하이재킹:** `document.cookie`에 접근하여 세션 ID를 훔쳐 공격자의 서버로 전송합니다. 이로 인해 공격자는 사용자로 위장하여 계정을 탈취할 수 있습니다.
+1.  **세션 하이재킹:** 인증 Cookie에 `HttpOnly`가 없으면 공격자가 `document.cookie`로 세션 ID를 훔칠 수 있습니다. `HttpOnly`가 있어도 XSS가 사용자 권한으로 인증된 요청을 보내는 것까지 막지는 못합니다.
 2.  **부정 조작 실행:** 사용자의 권한으로 애플리케이션 내의 임의의 조작(비밀번호 변경, 송금, 메시지 전송 등)을 백그라운드에서 실행시킵니다.
 3.  **피싱:** 가짜 로그인 폼을 DOM 상에 그려 사용자의 인증 정보를 직접 훔칩니다.
 4.  **멀웨어 배포:** 사용자의 브라우저를 익스플로잇 킷으로 리다이렉트시켜 PC를 멀웨어에 감염시킵니다.
@@ -82,20 +83,22 @@ XSS가 "브라우저 내에서 부정 스크립트를 실행시키는 것"에 �
 
 ### CSRF의 메커니즘: "Cookie의 자동 전송" 악용
 
-브라우저는 어떤 도메인에 대한 요청을 전송할 때, 그 도메인에 연결된 Cookie(세션 Cookie 등)를 자동으로 헤더에 부여하여 전송합니다. 이는 다른 도메인(공격자의 사이트)에 위치한 이미지 태그나 폼으로부터의 요청이더라도 마찬가지입니다.
+브라우저는 Cookie 전송 조건이 충족되면 세션 Cookie 등을 자동으로 첨부합니다. 다른 사이트의 이미지나 폼이 유발한 요청도 포함될 수 있지만, `SameSite`, `Secure`, Domain, Path 및 브라우저의 Cookie 제한에 따라 전송되지 않을 수 있습니다.
 
 **공격 시나리오:**
-1.  사용자가 은행 사이트 (`bank.example.com`)에 로그인하고 세션 Cookie를 받습니다.
-2.  사용자가 다른 탭에서 공격자의 함정 사이트 (`attacker.example.com`)를 열람합니다.
+
+이 교육용 예시는 취약한 애플리케이션을 가정합니다. 인증 Cookie가 `SameSite=None; Secure`로 사이트 간 전송을 허용하고, CSRF 토큰 검증과 Origin 검사가 모두 없습니다. `bank.example`과 `attacker.invalid`는 서로 다른 사이트에 속하는 예약된 예시 도메인입니다.
+1.  사용자가 은행 사이트 (`bank.example`)에 로그인하고 세션 Cookie를 받습니다.
+2.  사용자가 다른 탭에서 공격자의 함정 사이트 (`attacker.invalid`)를 열람합니다.
 3.  함정 사이트에는 다음과 같은 숨김 폼과 자동 전송 스크립트가 장치되어 있습니다.
     ```html
-    <form action="https://bank.example.com/transfer" method="POST" id="csrf-form">
+    <form action="https://bank.example/transfer" method="POST" id="csrf-form">
         <input type="hidden" name="toAccount" value="ATTACKER_ACCOUNT">
         <input type="hidden" name="amount" value="1000000">
     </form>
     <script>document.getElementById('csrf-form').submit();</script>
     ```
-4.  브라우저는 `bank.example.com`으로 POST 요청을 전송합니다. 이때 **은행 사이트의 세션 Cookie가 자동으로 부여됩니다.**
+4.  브라우저는 `bank.example`으로 POST 요청을 전송합니다. 이때 **은행 사이트의 세션 Cookie가 자동으로 부여됩니다.**
 5.  은행 서버는 정상적인 세션 Cookie가 포함되어 있으므로 정당한 사용자로부터의 요청으로 처리하고, 부정 송금이 실행됩니다.
 
 ### CSRF에 대한 방어책의 역사적 변천과 최신 프랙티스
@@ -114,16 +117,16 @@ CSRF를 방지하기 위해서는 리퀘스트가 "의도한 정당한 페이지
 *   서버는 랜덤한 토큰을 생성하여 Cookie로 클라이언트에게 전송합니다.
 *   클라이언트의 JavaScript는 그 Cookie의 값을 읽어 리퀘스트 헤더(예: `X-CSRF-Token`)에 설정하여 전송합니다.
 *   서버는 Cookie 내의 토큰 값과 헤더 내의 토큰 값이 일치하는지를 검증합니다.
-공격자는 Cookie를 자동 전송시킬 수는 있지만, JavaScript로 다른 도메인의 Cookie를 읽어 헤더에 설정할 수는 없기 때문에 방지할 수 있습니다.
+위 단계는 단순한 일치 검사입니다. 공격자가 Cookie를 주입할 수 있다면 일치 검사에만 의존하는 방식은 권장되지 않습니다. 프레임워크의 내장 보호 기능을 우선 사용하세요. Double Submit을 사용한다면 서버 비밀키로 HMAC 인증하고 현재 인증 세션에 결합한 Signed Double Submit 토큰을 검증해야 합니다. 사용자 정의 헤더를 사용하는 API는 신뢰할 수 없는 오리진에 인증 정보를 포함하는 CORS 접근을 허용하지 않아야 합니다.
 
 #### 3. SameSite Cookie 속성: 모던 브라우저에 의한 강력한 방어
-최근 가장 권장되는 강력한 방어책이 Cookie의 `SameSite` 속성입니다. 이는 크로스 사이트 리퀘스트 시의 Cookie 전송 동작을 제어하는 것입니다.
+`SameSite` 속성은 사이트 간 요청에서 Cookie 전송을 제어하는 방어 계층입니다. 일반적인 애플리케이션에서는 CSRF 토큰이나 Origin 검증을 대체하는 것으로 취급하지 말고 함께 사용해야 합니다.
 
 *   `SameSite=Strict`: 링크 클릭 등의 톱 레벨 내비게이션을 포함해, 어떠한 크로스 사이트 리퀘스트에서도 Cookie는 전송되지 않습니다. 가장 안전하지만, 다른 사이트에서의 링크로 로그인 상태가 유지되지 않는 등 UX에 영향을 줄 가능성이 있습니다.
 *   `SameSite=Lax`: 이미지 로딩이나 POST 요청 등의 크로스 사이트 리퀘스트에서는 Cookie가 전송되지 않지만, 링크 클릭(GET 요청)에 의한 톱 레벨 내비게이션에서는 전송됩니다. 현재 많은 브라우저의 기본 동작입니다. 이를 통해 악의적인 POST 폼 전송에 의한 CSRF의 대부분을 방지할 수 있습니다.
-*   `SameSite=None`: 크로스 사이트 리퀘스트에서도 항상 Cookie가 전송됩니다. (반드시 `Secure` 속성과 세트로 지정해야 합니다).
+*   `SameSite=None`: 사이트 간 전송에 대한 SameSite 제한을 해제하며 `Secure`가 필요합니다. 다른 Cookie 전송 조건과 브라우저 제한은 계속 적용됩니다.
 
-SameSite 속성을 적절히 설정함으로써, 브라우저 레벨에서 CSRF의 근본적인 원인(Cookie의 자동 전송)을 차단할 수 있습니다.
+SameSite는 오리진이 아닌 사이트를 기준으로 구분합니다. 같은 등록 가능 도메인의 형제 서브도메인은 같은 사이트로 취급될 수 있습니다. Lax도 GET으로 상태를 변경하는 엔드포인트는 보호하지 못합니다. 상태 변경에는 적절한 HTTP 메서드와 서버 측 CSRF 검증을 사용하세요. 브라우저 기본 Lax 동작에는 예외가 있을 수 있으므로 필요한 Cookie 속성을 명시적으로 설정해야 합니다.
 
 ---
 
@@ -136,7 +139,7 @@ graph TD
     subgraph XSS Attack
         A["공격자"] -- "악의적인 스크립트 주입" --> B["웹 서버"]
         B -- "스크립트를 포함한 페이지" --> C["피해자의 브라우저"]
-        C -- "세션 ID 전송 (도난)" --> A
+        C -- "세션 ID 도난 (HttpOnly 없음)" --> A
     end
 
     subgraph CSRF Attack
@@ -151,3 +154,8 @@ XSS와 CSRF는 서로 다른 취약점이지만, **XSS가 존재하는 경우 �
 따라서 웹 애플리케이션의 보안을 담보하기 위해서는, 먼저 XSS를 철저히 봉쇄하고(적절한 이스케이프와 CSP), 그 위에 CSRF 대책(SameSite Cookie와 CSRF 토큰)을 구현하는 견고한 기반 구축이 요구됩니다.
 
 개발자는 프레임워크가 제공하는 보안 기능을 과신하지 말고, 이러한 취약점들의 본질적인 메커니즘을 이해하고 적절한 계층에서의 방어를 설계하는 것이 중요합니다.
+
+## 참고 자료
+
+- [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+- [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)

@@ -13,6 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
+lastmod: 2026-10-24T02:00:00+09:00
 ---
 
 ## Pendahuluan
@@ -29,10 +30,10 @@ XSS adalah metode serangan di mana penyerang menyuntikkan skrip berbahaya (biasa
 
 ### 3 Jenis Utama XSS
 
-XSS dapat dikategorikan ke dalam tiga jenis utama berdasarkan bagaimana skrip berbahaya disuntikkan ke dalam aplikasi dan dieksekusi.
+XSS dapat dijelaskan menurut cara data disimpan atau dipantulkan serta tempat terjadinya interpretasi yang tidak aman. Kategori ini tidak saling terpisah: data tersimpan atau terpantul juga dapat diproses secara tidak aman di sisi klien.
 
 #### 1. Stored XSS (XSS Tersimpan)
-Stored XSS merupakan tipe XSS yang paling berbahaya. Skrip berbahaya yang dikirim oleh penyerang disimpan secara permanen di sisi server, seperti di database atau sistem file. Selanjutnya, ketika pengguna yang sah melihat halaman yang memuat data tersebut, skrip yang tersimpan akan dikirim ke browser dan dieksekusi.
+XSS tersimpan dapat memengaruhi banyak pengunjung. Skrip berbahaya disimpan di server, misalnya dalam database atau sistem file. Ketika pengguna membuka halaman yang memuat data itu, skrip dikirim ke browser dan dijalankan. Tingkat keparahannya bergantung pada hak akses dan konteks eksekusi.
 *   **Lokasi umum terjadinya:** Kolom komentar, papan buletin, profil pengguna, fitur ulasan, dll.
 *   **Ancaman:** Area dampaknya sangat luas, dan semua pengguna yang membuka halaman dapat menjadi korban.
 
@@ -42,7 +43,7 @@ Reflected XSS terjadi ketika skrip berbahaya tidak disimpan di server, melainkan
 *   **Metode serangan:** Penyerang membuat korban mengeklik URL yang mengandung parameter berbahaya (menggunakan email phishing atau media sosial) agar serangan berhasil.
 
 #### 3. DOM-based XSS
-DOM-based XSS terjadi tanpa melalui pemrosesan sisi server, saat JavaScript di sisi klien (di browser) memanipulasi DOM (Document Object Model) secara tidak benar.
+XSS berbasis DOM terjadi saat JavaScript di sisi klien memproses data tidak tepercaya melalui sink yang tidak aman. Data juga mungkin melewati server; ciri penentunya adalah pemrosesan tidak aman berlangsung di sisi klien.
 *   **Mekanisme:** Ini terjadi ketika JavaScript dalam aplikasi membaca data dari sumber yang dapat dikontrol oleh penyerang, seperti `window.location` atau `document.referrer`, dan meneruskannya langsung ke sink (titik eksekusi) berbahaya seperti `innerHTML` atau `eval()`.
 *   **Ancaman:** Seringkali tidak tertinggal di log server, sehingga mungkin sulit dideteksi oleh WAF (Web Application Firewall).
 
@@ -50,7 +51,7 @@ DOM-based XSS terjadi tanpa melalui pemrosesan sisi server, saat JavaScript di s
 
 Jika XSS berhasil, skrip penyerang akan dijalankan di browser pengguna dengan origin (hak istimewa) yang sama dengan situs web tersebut. Hal ini menyebabkan kerusakan parah seperti berikut:
 
-1.  **Pembajakan Sesi (Session Hijacking):** Mengakses `document.cookie` untuk mencuri ID sesi dan mengirimkannya ke server penyerang. Hal ini memungkinkan penyerang menyamar sebagai pengguna dan mengambil alih akun.
+1.  **Pembajakan sesi (Session Hijacking):** Jika cookie autentikasi tidak memiliki `HttpOnly`, penyerang dapat mencuri ID sesinya melalui `document.cookie`. Bahkan dengan `HttpOnly`, XSS masih dapat mengirim permintaan terautentikasi atas nama pengguna.
 2.  **Mengeksekusi Operasi Tanpa Izin:** Menjalankan operasi sewenang-wenang dalam aplikasi (mengubah kata sandi, mentransfer uang, mengirim pesan, dll.) di latar belakang dengan hak istimewa pengguna.
 3.  **Phishing:** Menggambar formulir login palsu di DOM untuk mencuri informasi autentikasi pengguna secara langsung.
 4.  **Distribusi Malware:** Mengalihkan browser pengguna ke exploit kit untuk menginfeksi PC dengan malware.
@@ -82,20 +83,22 @@ Perbedaan utamanya adalah XSS "mengeksekusi skrip berbahaya di dalam browser", s
 
 ### Mekanisme CSRF: Penyalahgunaan "Pengiriman Otomatis Cookie"
 
-Ketika browser mengirim permintaan ke sebuah domain, browser secara otomatis melampirkan Cookie (seperti Cookie sesi) yang terkait dengan domain tersebut ke header dan mengirimkannya. Ini juga berlaku untuk permintaan yang berasal dari tag gambar atau formulir yang ditempatkan di domain lain (situs penyerang).
+Browser melampirkan cookie secara otomatis jika syarat pengirimannya terpenuhi, termasuk pada sebagian permintaan yang dipicu gambar atau formulir di situs lain. Namun, `SameSite`, `Secure`, Domain, Path, dan pembatasan browser dapat mencegah pengirimannya.
 
-**Skenario Serangan:**
-1.  Pengguna login ke situs bank (`bank.example.com`) dan menerima Cookie sesi.
-2.  Pengguna membuka situs jebakan penyerang (`attacker.example.com`) di tab lain.
+**Skenario serangan:**
+
+Contoh pembelajaran ini mengasumsikan aplikasi yang rentan: cookie autentikasinya mengizinkan pengiriman lintas situs dengan `SameSite=None; Secure`, tanpa validasi token CSRF maupun pemeriksaan Origin. `bank.example` dan `attacker.invalid` adalah domain cadangan untuk contoh yang berada di situs berbeda.
+1.  Pengguna login ke situs bank (`bank.example`) dan menerima Cookie sesi.
+2.  Pengguna membuka situs jebakan penyerang (`attacker.invalid`) di tab lain.
 3.  Situs jebakan dilengkapi dengan formulir tersembunyi dan skrip pengiriman otomatis seperti berikut:
     ```html
-    <form action="https://bank.example.com/transfer" method="POST" id="csrf-form">
+    <form action="https://bank.example/transfer" method="POST" id="csrf-form">
         <input type="hidden" name="toAccount" value="ATTACKER_ACCOUNT">
         <input type="hidden" name="amount" value="1000000">
     </form>
     <script>document.getElementById('csrf-form').submit();</script>
     ```
-4.  Browser mengirim permintaan POST ke `bank.example.com`. Pada saat ini, **Cookie sesi situs bank ditambahkan secara otomatis.**
+4.  Browser mengirim permintaan POST ke `bank.example`. Pada saat ini, **Cookie sesi situs bank ditambahkan secara otomatis.**
 5.  Karena permintaan tersebut berisi Cookie sesi yang sah, server bank memprosesnya sebagai permintaan dari pengguna yang sah, dan transfer uang ilegal dieksekusi.
 
 ### Perjalanan Sejarah Langkah Pertahanan CSRF dan Praktik Terbaru
@@ -114,16 +117,16 @@ Ini adalah teknik yang sering digunakan di API tanpa status (stateless) di sisi 
 *   Server membuat token acak dan mengirimkannya ke klien sebagai Cookie.
 *   JavaScript di klien membaca nilai Cookie tersebut dan meletakkannya di header permintaan (misalnya, `X-CSRF-Token`) sebelum dikirim.
 *   Server memverifikasi apakah nilai token di dalam Cookie dan nilai token di dalam header sama.
-Penyerang bisa saja mengirim Cookie secara otomatis, tetapi tidak dapat menggunakan JavaScript untuk membaca Cookie dari domain lain dan menyetelnya di header, sehingga hal ini dapat dicegah.
+Langkah di atas hanya menjelaskan pemeriksaan kesamaan sederhana. Mengandalkan kesamaan saja tidak disarankan jika penyerang dapat menyuntikkan cookie. Utamakan perlindungan bawaan framework. Jika memakai Double Submit, verifikasi token Signed Double Submit yang diautentikasi dengan HMAC menggunakan rahasia server dan diikat ke sesi terautentikasi saat ini. API dengan header khusus juga harus menghindari pemberian akses CORS berkredensial kepada origin yang tidak tepercaya.
 
 #### 3. Atribut SameSite Cookie: Pertahanan Kuat oleh Browser Modern
-Dalam beberapa tahun terakhir, langkah pertahanan paling direkomendasikan dan kuat adalah atribut `SameSite` untuk Cookie. Ini mengontrol perilaku pengiriman Cookie saat permintaan lintas situs.
+Atribut `SameSite` mengatur pengiriman cookie lintas situs dan merupakan salah satu lapisan pertahanan. Pada aplikasi umum, gabungkan dengan token CSRF atau validasi Origin, bukan sebagai penggantinya.
 
 *   `SameSite=Strict`: Cookie tidak dikirim dalam permintaan lintas situs apa pun, termasuk navigasi tingkat atas (top-level navigation) seperti klik tautan. Ini adalah yang paling aman, tetapi dapat memengaruhi UX karena status login tidak akan dipertahankan saat mengikuti tautan dari situs lain.
 *   `SameSite=Lax`: Cookie tidak dikirim pada permintaan lintas situs seperti memuat gambar atau permintaan POST, namun dikirim pada navigasi tingkat atas akibat klik tautan (permintaan GET). Ini adalah perilaku default dari banyak browser saat ini. Hal ini dapat mencegah sebagian besar CSRF akibat pengiriman formulir POST berbahaya.
-*   `SameSite=None`: Cookie selalu dikirim, bahkan pada permintaan lintas situs. (Harus selalu ditentukan bersama dengan atribut `Secure`).
+*   `SameSite=None`: Menghapus pembatasan SameSite untuk pengiriman lintas situs dan memerlukan `Secure`. Syarat pengiriman cookie serta pembatasan browser lainnya tetap berlaku.
 
-Dengan menyetel atribut SameSite secara tepat, Anda dapat memblokir akar penyebab CSRF (pengiriman otomatis Cookie) di tingkat browser.
+SameSite membedakan situs, bukan origin: subdomain saudara pada domain terdaftar yang sama dapat dianggap satu situs. Lax juga tidak melindungi endpoint yang mengubah status melalui GET. Gunakan metode HTTP yang tepat untuk perubahan status beserta validasi CSRF di server. Karena perilaku Lax bawaan browser dapat memiliki pengecualian, tetapkan atribut cookie yang diperlukan secara eksplisit.
 
 ---
 
@@ -136,7 +139,7 @@ graph TD
     subgraph XSS Attack
         A["Penyerang"] -- "Injeksi skrip berbahaya" --> B["Server Web"]
         B -- "Halaman dengan skrip" --> C["Browser korban"]
-        C -- "Kirim ID Sesi (Pencurian)" --> A
+        C -- "Pencurian ID sesi (tanpa HttpOnly)" --> A
     end
 
     subgraph CSRF Attack
@@ -151,3 +154,8 @@ XSS dan CSRF adalah kerentanan yang berbeda, tetapi **jika XSS ada, sebagian bes
 Oleh karena itu, untuk memastikan keamanan aplikasi web, diperlukan pembangunan fondasi yang kuat dengan pertama-tama membendung XSS secara menyeluruh (escaping yang tepat dan CSP), lalu menerapkan pertahanan CSRF (SameSite Cookie dan token CSRF).
 
 Penting bagi pengembang untuk tidak terlalu percaya pada fitur keamanan yang disediakan oleh framework, melainkan memahami mekanisme mendasar dari kerentanan ini dan merancang pertahanan pada lapisan yang tepat.
+
+## Referensi
+
+- [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+- [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)

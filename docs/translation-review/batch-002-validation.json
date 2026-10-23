@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "validatedAt": "2026-10-24",
+  "files": [
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.ar.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.de.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.en.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.es.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.fr.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.hi.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.id.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.ko.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.pt.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.ru.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.zh-cn.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/cross-site-scripting-xss-csrf-security/index.zh-tw.md",
+      "cspAndHtmlMatchSource": true,
+      "securityPrerequisitesPresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.ar.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.de.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.en.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.es.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.fr.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.hi.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.id.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.ko.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.pt.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.ru.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.zh-cn.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    },
+    {
+      "file": "content/post/history-of-unicode-encoding/index.zh-tw.md",
+      "byteSequenceMatchesActualEncoding": true,
+      "decoderAndCodeSpaceDistinguished": true,
+      "utf8PatternsAndUtf16ExamplePresent": true
+    }
+  ],
+  "encoding": {
+    "shiftJisHello": "82 B1 82 F1 82 C9 82 BF 82 CD",
+    "windows1252Mojibake": "‚±‚ñ‚É‚¿‚Í",
+    "utf16CodeUnitsForLaughingEmoji": 2
+  },
+  "limitations": [
+    "Security code snippets were inspected and compared as text, not executed against a live target.",
+    "These checks supplement full-body AI semantic comparison, not human or native-speaker confirmation."
+  ]
+}

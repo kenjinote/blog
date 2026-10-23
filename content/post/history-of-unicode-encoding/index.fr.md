@@ -6,11 +6,12 @@ categories: ["history", "biography"]
 tags: ["tech", "history", "unicode", "character-encoding"]
 image: "eyecatch.jpg"
 slug: "history-of-unicode-encoding"
+lastmod: 2026-10-24T02:00:00+09:00
 ---
 
 # Histoire d'Unicode : Comment la lutte contre le Mojibake a unifié les caractères du monde
 
-Lorsque le monde numérique n'en était qu'aux prémices de l'information textuelle, les caractères que les ordinateurs pouvaient manipuler étaient extrêmement limités. Si nous pouvons aujourd'hui lire et écrire naturellement en japonais, chinois ou arabe sur nos smartphones et PC, et même envoyer ou recevoir des emojis comme « 😂 » partout dans le monde, c'est parce que nos prédécesseurs ont combattu pendant de nombreuses années un formidable ennemi appelé « Mojibake » (caractères corrompus) et ont accompli l'exploit monumental d'unifier les encodages de caractères.
+Lorsque le monde numérique n'en était qu'aux prémices de l'information textuelle, les caractères que les ordinateurs pouvaient manipuler étaient extrêmement limités. Si nous pouvons aujourd'hui lire et écrire naturellement en japonais, chinois ou arabe sur nos smartphones et PC, et même envoyer ou recevoir des emojis comme « 😂 » partout dans le monde, c'est parce que nos prédécesseurs ont combattu pendant de nombreuses années un formidable ennemi appelé « Mojibake » (caractères corrompus) et ont établi un standard commun de caractères.
 
 Cet article plonge au cœur de l'histoire épique de « l'unification des caractères » dans l'histoire de l'informatique : de la naissance de l'ASCII et du chaos massif causé par les encodages locaux de chaque pays, à la naissance ambitieuse d'Unicode, la conception géniale de l'UTF-8 par Ken Thompson et Rob Pike, le problème des paires de substitution, jusqu'à la standardisation des emojis.
 
@@ -22,7 +23,7 @@ L'ASCII utilisait 7 bits (0 à 127) pour définir les lettres majuscules et minu
 
 ## 2. La Tour de Babel : L'ère des encodages locaux et du « Mojibake »
 
-À mesure que les ordinateurs se répandaient dans le monde, différents pays ont commencé à développer leurs propres systèmes d'encodage en utilisant la « moitié restante » de l'ASCII (le 8e bit, de 128 à 255) ou en combinant plusieurs octets.
+Avec la diffusion des ordinateurs, différents pays ont étendu l’ASCII de 7 à 8 bits, en utilisant les valeurs d’octet supplémentaires de 128 à 255, ou ont développé leurs propres encodages multioctets.
 
 - **Famille ISO-8859** : Groupes d'encodages 8 bits conçus pour les langues européennes (comme ISO-8859-1 et Latin-1).
 - **Shift_JIS (SJIS)** : Une méthode largement répandue sur les PC japonais (notamment MS-DOS et Windows) qui mélangeait des caractères sur un octet (comme les katakanas demi-chasse) et sur deux octets (kanjis et hiraganas).
@@ -33,12 +34,12 @@ Bien que cela ait permis de représenter les langues nationales sur des ordinate
 
 ```mermaid
 graph TD
-    A["Expéditeur (Shift_JIS)"] -- "'こんにちは' (82 51 82 F1 82 C9 82 BF 82 CD)" --> B["Internet"]
-    B -- "Réception" --> C["Destinataire (ISO-8859-1)"]
+    A["Expéditeur (Shift_JIS)"] -- "'こんにちは' (82 B1 82 F1 82 C9 82 BF 82 CD)" --> B["Internet"]
+    B -- "Réception" --> C["Destinataire (Windows-1252)"]
     C -- "Mauvaise interprétation" --> D["S'affiche comme '‚±‚ñ‚É‚¿‚Í' (Mojibake)"]
 ```
 
-Par exemple, lorsqu'un e-mail envoyé du Japon en Shift_JIS était ouvert sur un PC européen (configuré en Latin-1), la séquence d'octets était associée à des caractères totalement différents, s'affichant comme une série de symboles incompréhensibles. Le Mojibake sur les sites web et dans les e-mails était monnaie courante, et créer des logiciels supportant plusieurs langues (internationalisation : i18n) était une tâche cauchemardesque pour les développeurs.
+Par exemple, décoder des octets Shift_JIS en Windows-1252 produit les symboles du schéma. Windows-1252 et ISO-8859-1 ne sont pas identiques : `0x82` représente `‚` dans le premier, mais un caractère de contrôle dans le second. Reproduire le mojibake exige de distinguer les octets réels du décodeur utilisé. Ces différences ont compliqué l’internationalisation (i18n).
 
 ## 3. La naissance d'Unicode : Tous les caractères dans un seul code
 
@@ -46,28 +47,28 @@ Pour surmonter cette situation chaotique, des ingénieurs d'entreprises comme Ap
 
 Leur vision était à la fois simple et ambitieuse. Il s'agissait de « rassembler tous les caractères du monde, les symboles, et même les caractères historiques du passé dans un seul et unique jeu de caractères unifié (Character Set) ».
 
-Le premier Unicode a démarré avec l'hypothèse optimiste que « tous les caractères du monde pourraient tenir dans 16 bits (65 536 caractères) » (UCS-2). Cependant, en intégrant les caractères chinois, japonais et coréens (les kanjis unifiés CJK), il est vite devenu évident que 16 bits ne suffiraient pas. Unicode a finalement été étendu à un espace de 21 bits (environ 1,11 million de caractères), et de nouveaux caractères continuent d'y être ajoutés aujourd'hui.
+Unicode utilisait initialement un espace de caractères de 16 bits. L’ajout d’écritures historiques et d’autres caractères, dont des idéogrammes supplémentaires, a nécessité une extension. La plage actuelle va de `U+0000` à `U+10FFFF`, soit 1 114 112 positions. C’est un espace de codes, pas le nombre de caractères attribués : il inclut les positions non attribuées et la plage des substituts. De nouveaux caractères continuent d’être ajoutés.
 
 ## 4. La conception géniale de l'UTF-8 : Ken Thompson et Rob Pike
 
 Même avec la création de cet immense « dictionnaire de caractères » qu'est Unicode, il restait le problème de savoir comment l'enregistrer et le transmettre sous forme de séquence d'octets sur un ordinateur (méthode d'encodage).
 
-Les premiers systèmes conçus, UCS-2 et UTF-16, tentaient de représenter tous les caractères avec 2 octets (ou 4 octets). Cependant, cela présentait un défaut majeur. Lorsqu'on injectait ces données dans des systèmes existants basés uniquement sur l'ASCII (comme UNIX ou des programmes en langage C), l'octet « 0x00 (octet NULL) » apparaissait fréquemment, et le système plantait en croyant à tort qu'il s'agissait de la fin de la chaîne de caractères.
+UCS-2 représente sa plage prise en charge par une unité de code de 16 bits, tandis qu’UTF-16 utilise une ou deux unités. La représentation des caractères ASCII contient couramment `0x00` (octets NUL). Transmettre directement ces octets à des fonctions C de chaînes terminées par NUL peut tronquer la chaîne et provoquer des erreurs ; cela n’entraîne pas nécessairement un plantage.
 
-Ce problème a été résolu avec élégance par les pères d'UNIX, **Ken Thompson** et **Rob Pike**. En 1992, lors d'un dîner, ils ont dessiné au dos d'un set de table le croquis d'une méthode d'encodage révolutionnaire. Il s'agissait de l'**UTF-8**.
+Les développeurs qui ont travaillé à cette solution étaient le cocréateur d’UNIX **Ken Thompson** et le développeur de Plan 9 **Rob Pike**. Selon le récit de Pike, ils ont esquissé UTF-8 sur un set de table de restaurant en 1992, puis l’ont implémenté dans Plan 9.
 
 La conception de l'UTF-8 est considérée comme l'un des plus beaux hacks de l'histoire de l'informatique.
-- **Rétrocompatibilité totale avec l'ASCII** : Puisque les caractères ASCII (0-127) sont représentés tels quels sur 1 octet, les systèmes occidentaux existants et les fonctions du langage C fonctionnent sans aucune modification.
+- **Compatibilité avec ASCII au niveau des octets** : Les caractères ASCII (0–127) conservent leur représentation sur un octet. Les fonctions C existantes ne comprennent toutefois pas automatiquement le comptage ou les limites des caractères Unicode.
 - **Encodage à longueur variable** : La longueur varie de 1 à 4 octets selon le caractère (le japonais utilise principalement 3 octets).
-- **Auto-synchronisation** : Rien qu'en regardant le motif de bits de départ d'un octet (comme `0xxxxxxx`, `110xxxxx`, `10xxxxxx`, etc.), il est possible de déterminer immédiatement s'il s'agit du premier octet d'un caractère ou d'un octet suivant. Ainsi, même si l'on commence à lire au milieu d'une chaîne, il n'y a pas de Mojibake.
+- **Auto-synchronisation** : Les motifs des octets initiaux (`0xxxxxxx`, `110xxxxx`, `1110xxxx`, `11110xxx`) se distinguent du motif de continuation `10xxxxxx`. Dans un UTF-8 valide, cela aide à retrouver la prochaine limite de caractère lorsqu’on commence au milieu d’une séquence. Un octet de continuation ne peut pas être décodé comme un nouveau caractère ; les séquences invalides doivent toujours être validées.
 
-Grâce à cette conception géniale, l'UTF-8 est rapidement devenu le standard de fait mondial, et aujourd'hui, plus de 98 % des pages sur le web sont encodées en UTF-8.
+Ces propriétés ont contribué à la large utilisation d’UTF-8 sur le Web moderne.
 
 ## 5. Le problème des paires de substitution et l'aube des emojis
 
-Lorsqu'Unicode a franchi la barrière des 16 bits (environ 60 000 caractères), la méthode d'encodage UTF-16 a dû introduire un mécanisme complexe appelé « paire de substitution » (Surrogate Pair). Cela consistait à combiner deux valeurs de 16 bits pour représenter un seul caractère situé dans la zone étendue. Ce mécanisme reste aujourd'hui une source de bugs, comme le « décalage dans le comptage du nombre de caractères », dans certains langages de programmation comme JavaScript.
+UTF-16 représente un point de code d’un plan supplémentaire par deux unités de code de 16 bits, appelées paire de substitution. La propriété `length` des chaînes JavaScript compte les unités de code UTF-16 ; `"😂".length` vaut donc 2. Ce résultat respecte la spécification, mais supposer qu’il compte les caractères visibles peut entraîner des bugs. Pour les séquences emoji avec ZWJ, le nombre de points de code peut lui aussi différer du nombre de caractères visibles.
 
-Puis, dans les années 2010, une nouvelle révolution a eu lieu au sein d'Unicode. Les **emojis**, implémentés à l'origine de manière propriétaire par les opérateurs de téléphonie mobile japonais (Docomo, au, SoftBank), ont été officiellement adoptés comme standard Unicode (Unicode 6.0).
+Unicode 6.0, publié en 2010, a ajouté de nombreux emojis utilisés par les opérateurs japonais Docomo, au et SoftBank. Certains symboles utilisés comme emojis étaient déjà codés dans des versions antérieures : tous les emojis ne sont donc pas apparus pour la première fois en version 6.0.
 
 Avec l'introduction des emojis, Unicode a dépassé le simple cadre des « caractères » pour évoluer vers un langage visuel universel permettant de transmettre des émotions et des concepts. De plus, pour refléter la diversité du monde moderne, des spécifications complexes ont été ajoutées l'une après l'autre, comme la modification de la couleur de peau (Skin Tone Modifier) ou le mécanisme de combinaison de plusieurs emojis pour en créer un nouveau (ZWJ : Zero Width Joiner).
 
@@ -79,8 +80,13 @@ graph TD
 
 ## Conclusion : Une fondation pour relier le savoir de l'humanité à l'avenir
 
-Aujourd'hui, le consortium Unicode intègre aussi bien des hiéroglyphes de l'Égypte antique que l'écriture cunéiforme, les langues de minorités ethniques, et les tout derniers emojis.
+Le standard Unicode code de nombreux caractères et symboles, dont les hiéroglyphes égyptiens, le cunéiforme, des écritures de langues minoritaires et les emojis. Le consortium Unicode est l’organisation qui maintient et développe ce standard.
 
-L'histoire de l'encodage de caractères, qui a commencé avec les maigres 128 caractères de l'ASCII, a traversé une période de chaos et de frustration causée par d'innombrables « Mojibake », pour aboutir, grâce à la passion et à la coopération d'innombrables ingénieurs, à l'intégration de tous les caractères de l'humanité dans un seul et immense système.
+L’encodage des caractères a évolué des 128 positions d’ASCII vers un système commun aux diverses écritures du monde. Tous les caractères ne sont pas encore codés : l’ajout de caractères et l’amélioration des implémentations se poursuivent.
 
 Derrière ce simple « 😂 » que nous envoyons avec insouciance se cache tout le drame de cette « lutte contre le Mojibake » menée par les ingénieurs pendant plusieurs décennies.
+
+## Références
+
+- [Unicode FAQ: UTF-8, UTF-16, UTF-32 & BOM](https://www.unicode.org/faq/utf_bom.html)
+- [Rob Pike: UTF-8 history](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt)

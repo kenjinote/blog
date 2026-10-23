@@ -1,0 +1,743 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/cross-site-scripting-xss-csrf-security/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "d1776ce79c6c68d5eb11a9db8cb9510d851d03d59c85439e05049b3f7e88da28",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "Repaired the CSP sentence so the browser is clearly the component allowed to load resources.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "48dbb9ee45562c768df364b8ef849e34dd2fbc8b65cb13257a488d74801a5799",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "6cbc86ec20f6184fe22b1346ffeabd16e6fe474970285175244ba6a59f3bb684",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "Corrected cross-site requests mistranslated as cross-origin requests in the SameSite section.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "6749656d36e0664c0ecd0c0861615a41e513f9097f37bd2a04ec439f062af233",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "Removed Bengali text accidentally mixed into the Hindi stored-XSS paragraph and a duplicated server-validation sentence containing the stray word internal.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "53061f5202aedd45b3493f1d41aae25a532911b732e145e902b54709453cd395",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "9418711266acf6ad84c8876cdb8f1c10960af314f1e1896bfc61d9fb4b2a8fcd",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "042747278523e3d87b20f572c349175544729eee6ddd4030c36d4da8dcd82a37",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "Corrected output encoding mistranslated as encryption, with an explicit distinction and contextual escaping terminology.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "0c68bfe07bacaf50d2806e8a72963fe1f755d1ae63291bfa97f2e08991032b8f",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "Corrected literal sink wording to приёмник (sink), preserving its dataflow/security meaning.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "281503052d074ff125431fdf801da76119d1946a893216e6005d107b94650df1",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Read CSP header and HTML form/script as text; corrected the example to distinct reserved sites bank.example and attacker.invalid. Code matches Japanese. Explained SameSite=None; Secure, absent CSRF-token/Origin validation, HMAC session binding, and HttpOnly limits. Did not execute an attack against any service."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and read the primary OWASP XSS/CSRF prevention references. Example domains are documentation placeholders rather than live transfer destinations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas; technical token-equality and session-binding descriptions were checked in the meaning/code review."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section, attack scenario, defense description, and diagram against Japanese. Stored/reflected and DOM-based categories can overlap; severity is contextual. Added HttpOnly limits, conditional cookie sending, and explicit assumptions for the cross-site POST example. Corrected naive double-submit and SameSite overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked source versus site versus origin, stored/reflected/DOM-based XSS, output encoding, sink, session cookie, HttpOnly, Signed Double Submit, HMAC, SameSite, and credentialed CORS. These retain the security meaning of the revised source."
+        }
+      },
+      "summary": "Aligned the whole translation with corrected security assumptions and layered defenses, retaining the complete original structure.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "65020c6470e5db03715f0861128eb34ec8378998bbf178500d4dcce9ee119df5",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "01af555ad9bb4be79b4a44b1206e17a0d7239e70836aec7a24ef590790ccec02",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "657550bddd873d36f087c4835c37e01a4143f2b5b03114a66e0cdb11d775b3ff",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "01e7a23e10f687db1eb2ce521bb1e79ec9ba4fed77019b108a045c526b94da5e",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "Repaired introductory grammatical gender; distinguished character encoding and a shared character standard.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "9b377440358de729cb1ab2d481d7f4fcd11ffb92f98a187b10d241a1ba942467",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "535a87b5ab5e48a69348896b07bc242378639b005b1c113896ab483d5bf5c1db",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "a088f12989a8f7b1f3bb162b5c6badabecc2b8b24185d2b2517b2dd0aa524fe9",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "Restored Japanese こんにちは in the Shift_JIS byte example: it had been translated to Arabic مرحبا, which cannot correspond to those bytes. Corrected the misleading Arabic decade wording by stating 2010 explicitly.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "f0f51203de4bae4a25a59b3fbaf6cce8851643e4c68443cc76320734f9a664e4",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    },
+    "post/history-of-unicode-encoding/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "c1d3ce2cd71623c441a751cd9a1ad3be2ffbe4e3bfac0669f2da94a0a887a356",
+      "checks": {
+        "code": {
+          "status": "checked",
+          "note": "Checked both Mermaid diagrams, UTF-8 bit prefixes and the JavaScript length example. Actually reproduced Shift_JIS bytes 82 B1 82 F1 82 C9 82 BF 82 CD, decoded them as Windows-1252 to obtain ‚±‚ñ‚É‚¿‚Í, and verified 😂 occupies two UTF-16 code units. No standalone executable program is present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the primary Unicode UTF FAQ and Rob Pike’s firsthand UTF-8 history; checked their explanations against the revised technical claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked 7-bit range 0–127, extension bytes 128–255, 16-bit units, UTF-8 1–4 bytes, and U+0000..U+10FFFF = 1,114,112 code positions. These counts do not represent the number of assigned characters."
+        },
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the whole introduction, all five sections, both diagrams, and conclusion against Japanese. Corrected ASCII extensions, actual code-space size versus assigned characters, UCS-2 versus UTF-16, NUL termination versus crashing, Thompson/Pike attribution, UTF-8 compatibility and synchronization limits, surrogate/code-unit counting, and emoji chronology. Removed unsourced current adoption percentage and the claim that every character is already encoded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished character standard, encoding, byte, code point, code unit, surrogate pair, visible character, Windows-1252 versus ISO-8859-1, and Unicode Standard versus Unicode Consortium."
+        }
+      },
+      "summary": "Repaired reproducible byte/decoder errors and source-level Unicode overclaims throughout the complete translation.",
+      "languageSpecificFindings": "No additional language-specific defect beyond the source-level corrections described above.",
+      "limitations": [
+        "AI technical and semantic review; not a native-speaker human confirmation.",
+        "Naturalness, tone, and local professional usage should also be checked by a fluent human reviewer."
+      ],
+      "references": [
+        "https://www.unicode.org/faq/utf_bom.html",
+        "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt"
+      ],
+      "validation": "docs/translation-review/batch-002-validation.json"
+    }
+  }
+}

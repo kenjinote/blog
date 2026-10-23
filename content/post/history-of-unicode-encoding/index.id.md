@@ -6,11 +6,12 @@ categories: ["history", "biography"]
 tags: ["tech", "history", "unicode", "character-encoding"]
 image: "eyecatch.jpg"
 slug: "history-of-unicode-encoding"
+lastmod: 2026-10-24T02:00:00+09:00
 ---
 
 # Sejarah Unicode: Bagaimana Perjuangan Melawan Mojibake Menyatukan Karakter di Seluruh Dunia
 
-Ketika dunia digital masih berada pada awal masa informasi teks, karakter yang dapat diproses oleh komputer sangatlah terbatas. Alasan mengapa saat ini kita dapat dengan mudah membaca dan menulis bahasa Jepang, Mandarin, atau Arab di ponsel pintar dan PC kita, bahkan mengirim dan menerima emoji seperti "😂" ke seluruh dunia, adalah karena para pendahulu kita berjuang bertahun-tahun melawan musuh tangguh yang disebut "teks berantakan (Mojibake)", dan berhasil mencapai prestasi luar biasa dalam menyatukan kode karakter.
+Ketika dunia digital masih berada pada awal masa informasi teks, karakter yang dapat diproses oleh komputer sangatlah terbatas. Alasan mengapa saat ini kita dapat dengan mudah membaca dan menulis bahasa Jepang, Mandarin, atau Arab di ponsel pintar dan PC kita, bahkan mengirim dan menerima emoji seperti "😂" ke seluruh dunia, adalah karena para pendahulu kita berjuang bertahun-tahun melawan musuh tangguh yang disebut "teks berantakan (Mojibake)", dan membangun standar karakter bersama.
 
 Dalam artikel ini, kita akan menggali lebih dalam kisah epik "penyatuan karakter" dalam sejarah komputer, mulai dari kelahiran ASCII, kekacauan besar yang disebabkan oleh penyandian lokal di berbagai negara, kelahiran ambisius Unicode, desain jenius UTF-8 oleh Ken Thompson dan Rob Pike, masalah surrogate pair, hingga standardisasi Emoji.
 
@@ -22,7 +23,7 @@ ASCII menggunakan 7 bit (0 hingga 127) untuk mendefinisikan huruf besar dan keci
 
 ## 2. Menara Babel: Era Penyandian Lokal dan "Mojibake"
 
-Seiring dengan menyebarnya komputer ke seluruh dunia, berbagai negara mulai mengembangkan metode penyandian (encoding) mereka sendiri menggunakan "setengah ruang yang tersisa" dari ASCII (bit ke-8, yaitu 128 hingga 255) atau dengan menggabungkan beberapa byte.
+Seiring penyebaran komputer, berbagai negara memperluas ASCII 7-bit menjadi 8-bit dengan memakai nilai byte tambahan 128 hingga 255, atau mengembangkan penyandian multibyte masing-masing.
 
 - **Keluarga ISO-8859**: Kelompok penyandian 8-bit yang dirancang untuk bahasa-bahasa Eropa (seperti ISO-8859-1 dan Latin-1).
 - **Shift_JIS (SJIS)**: Metode yang mencampur karakter 1-byte (seperti katakana half-width) dan karakter 2-byte (kanji, hiragana) yang menyebar luas di PC Jepang (terutama MS-DOS dan Windows).
@@ -33,12 +34,12 @@ Hal ini memang memungkinkan setiap negara untuk merepresentasikan bahasanya send
 
 ```mermaid
 graph TD
-    A["Pengirim (Shift_JIS)"] -- "'こんにちは' (82 51 82 F1 82 C9 82 BF 82 CD)" --> B["Internet"]
-    B -- "Diterima" --> C["Penerima (ISO-8859-1)"]
+    A["Pengirim (Shift_JIS)"] -- "'こんにちは' (82 B1 82 F1 82 C9 82 BF 82 CD)" --> B["Internet"]
+    B -- "Diterima" --> C["Penerima (Windows-1252)"]
     C -- "Salah interpretasi" --> D["Ditampilkan sebagai '‚±‚ñ‚É‚¿‚Í' (Mojibake)"]
 ```
 
-Sebagai contoh, jika sebuah email yang dikirim dari Jepang dalam format Shift_JIS dibuka di PC Eropa (dengan pengaturan Latin-1), urutan byte-nya akan dipetakan ke karakter yang sama sekali berbeda, sehingga ditampilkan sebagai deretan simbol yang tidak bermakna. Mojibake di situs web dan email adalah kejadian sehari-hari, dan membuat perangkat lunak yang mendukung berbagai bahasa (dukungan multibahasa: i18n) merupakan pekerjaan yang terasa seperti mimpi buruk bagi para pengembang.
+Sebagai contoh, mendekode byte Shift_JIS sebagai Windows-1252 menghasilkan simbol pada diagram. Windows-1252 berbeda dari ISO-8859-1: `0x82` mewakili `‚` pada yang pertama, tetapi merupakan karakter kontrol pada yang kedua. Untuk mereproduksi mojibake, bedakan byte sebenarnya dari dekoder yang digunakan. Perbedaan seperti ini memperumit internasionalisasi (i18n).
 
 ## 3. Kelahiran Unicode: Semua Karakter dalam Satu Kode
 
@@ -46,28 +47,28 @@ Untuk mengatasi situasi yang kacau ini, para insinyur dari perusahaan seperti Ap
 
 Visi mereka sederhana namun ambisius: "Memasukkan semua karakter, simbol di seluruh dunia, bahkan hingga karakter historis dari masa lalu ke dalam satu Set Karakter (Character Set) yang terpadu."
 
-Pada awalnya, Unicode dimulai dengan asumsi optimis (UCS-2) bahwa "semua karakter di dunia akan muat dalam 16 bit (65.536 slot)". Namun, ketika mulai menyertakan kanji (karakter Tiongkok) dari Tiongkok, Jepang, dan Korea (Han CJK), segera disadari bahwa 16 bit tidaklah cukup. Unicode pada akhirnya diperluas menjadi ruang 21-bit (sekitar 1,11 juta karakter), dan karakter-karakter baru terus ditambahkan hingga saat ini.
+Unicode awal memakai ruang karakter 16-bit. Penambahan aksara historis dan karakter lain, termasuk ideograf tambahan, memerlukan perluasan. Rentang titik kode saat ini adalah `U+0000` hingga `U+10FFFF`, berisi 1.114.112 posisi. Ini adalah ruang kode, bukan jumlah karakter yang telah ditetapkan; termasuk posisi yang belum ditetapkan dan rentang surrogate. Karakter baru terus ditambahkan.
 
 ## 4. Desain Jenius UTF-8: Ken Thompson dan Rob Pike
 
 Meskipun "kamus karakter" raksasa bernama Unicode telah dibuat, masih ada masalah tentang bagaimana menyimpannya dan mengomunikasikannya sebagai urutan byte di komputer (metode penyandian).
 
-UCS-2 dan UTF-16 yang dirancang pada awalnya mencoba merepresentasikan semua karakter dengan 2 byte (atau 4 byte). Namun, ada kelemahan fatal dalam hal ini. Jika data ini dimasukkan ke dalam sistem yang sudah ada yang hanya berbasis ASCII (seperti UNIX atau program bahasa C), sistem sering menjumpai "0x00 (NULL byte)" di tengah data, dan salah mengiranya sebagai akhir string, sehingga menyebabkan sistem menjadi macet (crash).
+UCS-2 mewakili rentang yang didukungnya dengan satu unit kode 16-bit, sedangkan UTF-16 menggunakan satu atau dua unit kode 16-bit. Representasi karakter dalam rentang ASCII sering memuat `0x00` (byte NUL). Memasukkan byte itu langsung ke fungsi string C berterminasi NUL dapat memotong string terlalu awal dan menimbulkan kesalahan; tidak selalu menyebabkan crash.
 
-Masalah ini diselesaikan secara elegan oleh Bapak UNIX, **Ken Thompson** dan **Rob Pike**. Pada saat makan malam di tahun 1992, mereka membuat sketsa metode penyandian revolusioner di balik alas piring (placemat) mereka. Inilah **UTF-8**.
+Pengembang yang menangani masalah ini adalah salah satu pencipta UNIX, **Ken Thompson**, dan pengembang Plan 9, **Rob Pike**. Menurut penuturan Pike, mereka membuat sketsa UTF-8 di alas piring restoran pada 1992 dan mengimplementasikannya dalam Plan 9.
 
 Desain UTF-8 disebut-sebut sebagai salah satu peretasan (hack) terindah dalam sejarah ilmu komputer.
-- **Kompatibilitas mundur sepenuhnya dengan ASCII**: Karakter ASCII (0-127) tetap direpresentasikan dalam 1 byte, sehingga sistem Barat yang sudah ada maupun fungsi-fungsi dalam bahasa C dapat berjalan tanpa modifikasi.
+- **Kompatibilitas ASCII pada tingkat byte**: Karakter ASCII (0–127) mempertahankan representasi satu byte. Namun, fungsi C yang sudah ada tidak otomatis memahami hitungan karakter Unicode atau batas karakternya.
 - **Penyandian dengan panjang variabel**: Panjangnya bervariasi dari 1 hingga 4 byte tergantung pada karakternya (sebagai contoh, bahasa Jepang sebagian besar menggunakan 3 byte).
-- **Sinkronisasi mandiri**: Hanya dengan melihat pola bit awal dari suatu byte (seperti `0xxxxxxx`, `110xxxxx`, `10xxxxxx`), kita bisa segera mengetahui apakah itu byte pertama dari suatu karakter atau byte berikutnya. Hal ini mencegah terjadinya mojibake bahkan jika kita mulai membaca dari tengah string.
+- **Sinkronisasi mandiri**: Pola byte awal (`0xxxxxxx`, `110xxxxx`, `1110xxxx`, `11110xxx`) berbeda dari pola byte lanjutan `10xxxxxx`. Dalam UTF-8 yang valid, hal ini membantu menemukan batas karakter berikutnya ketika pembacaan dimulai di tengah urutan. Byte lanjutan tidak dapat langsung didekode sebagai karakter baru, dan urutan tidak valid tetap perlu diperiksa.
 
-Berkat desain jenius ini, UTF-8 dengan cepat menjadi standar de facto dunia, dan saat ini lebih dari 98% halaman di web menggunakan penyandian UTF-8.
+Sifat-sifat ini membantu UTF-8 digunakan secara luas di web modern.
 
 ## 5. Masalah Surrogate Pair dan Fajar Emoji
 
-Ketika Unicode diperluas melampaui batas 16 bit (sekitar 60.000 karakter), metode penyandian UTF-16 harus memperkenalkan mekanisme rumit yang disebut "surrogate pair (pasangan pengganti)". Untuk merepresentasikan karakter di area yang diperluas, mekanisme ini menggabungkan dua nilai 16-bit menjadi satu karakter. Bahkan hingga saat ini, mekanisme ini menjadi sumber masalah (bug) seperti "jumlah karakter yang tidak tepat" pada beberapa bahasa pemrograman, misalnya JavaScript.
+UTF-16 mewakili satu titik kode pada bidang tambahan menggunakan dua unit kode 16-bit, yang disebut surrogate pair. Properti `length` pada string JavaScript menghitung unit kode UTF-16, sehingga `"😂".length` bernilai 2. Hasil ini sesuai spesifikasi; menganggapnya sebagai jumlah karakter yang terlihat dapat menyebabkan bug. Pada urutan emoji ZWJ, jumlah titik kode juga dapat berbeda dari jumlah karakter yang terlihat.
 
-Kemudian, pada tahun 2010-an, sebuah revolusi baru terjadi di Unicode. **Emoji**, yang sebelumnya diimplementasikan secara independen oleh operator seluler Jepang (Docomo, au, SoftBank), secara resmi diadopsi sebagai standar Unicode (Unicode 6.0).
+Unicode 6.0, dirilis pada 2010, menambahkan banyak emoji yang digunakan operator seluler Jepang Docomo, au, dan SoftBank. Beberapa simbol yang dipakai sebagai emoji sudah dikodekan dalam versi sebelumnya, sehingga tidak semua emoji pertama kali masuk pada versi 6.0.
 
 Dengan hadirnya Emoji, Unicode berevolusi melampaui kerangka "karakter" menjadi bahasa visual universal untuk menyampaikan emosi dan konsep. Selain itu, spesifikasi yang kompleks juga terus ditambahkan untuk merepresentasikan keragaman (diversitas) modern, seperti pengubah warna kulit (Skin Tone Modifier) dan mekanisme untuk menggabungkan beberapa emoji menjadi satu emoji (ZWJ: Zero Width Joiner).
 
@@ -79,8 +80,13 @@ graph TD
 
 ## Penutup: Fondasi untuk Menghubungkan Pengetahuan Umat Manusia ke Masa Depan
 
-Saat ini, Konsorsium Unicode mencakup semuanya mulai dari hieroglif Mesir kuno, huruf paku (cuneiform), bahasa minoritas, hingga emoji-emoji terbaru.
+Standar Unicode mengodekan banyak karakter dan simbol, termasuk hieroglif Mesir, aksara paku, aksara bahasa minoritas, dan emoji. Konsorsium Unicode adalah organisasi yang memelihara dan mengembangkan standar itu.
 
-Sejarah kode karakter yang dimulai hanya dengan 128 karakter ASCII, melalui banyak kebingungan dan frustrasi yang disebabkan oleh "teks berantakan" yang tak terhitung jumlahnya, dan berkat semangat serta kolaborasi dari banyak insinyur yang tak terhitung jumlahnya, pada akhirnya telah berhasil menyatukan semua karakter umat manusia ke dalam satu sistem raksasa.
+Penyandian karakter berkembang dari 128 posisi kode ASCII menuju sistem bersama untuk beragam aksara dunia. Tidak semua karakter sudah dikodekan; penambahan karakter dan perbaikan implementasi terus berlangsung.
 
 Di balik emoji "😂" yang kita kirimkan dengan santai, tersembunyi drama "perjuangan melawan teks berantakan (mojibake)" oleh para teknisi selama beberapa dekade.
+
+## Referensi
+
+- [Unicode FAQ: UTF-8, UTF-16, UTF-32 & BOM](https://www.unicode.org/faq/utf_bom.html)
+- [Rob Pike: UTF-8 history](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt)

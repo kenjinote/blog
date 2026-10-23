@@ -185,6 +185,186 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-001.json",
       "evidenceHash": "6088238731c21603766d5914db72d8a7060623611459d3da651ca21d8905197a"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.es.md": {
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "d1776ce79c6c68d5eb11a9db8cb9510d851d03d59c85439e05049b3f7e88da28",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "4312ecd63c0785fecc2470d7785744bb9d87d5a99798a0ccd18fb226ef461cbe"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ko.md": {
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "48dbb9ee45562c768df364b8ef849e34dd2fbc8b65cb13257a488d74801a5799",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "a67266a9ddfa705794b3b436b7e09da783bbea094fe9e4ac8f5b0f2c1501b046"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.pt.md": {
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "6cbc86ec20f6184fe22b1346ffeabd16e6fe474970285175244ba6a59f3bb684",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "e5640a8b203c797007c03809dbe3712170511676455455a4864c9ac64d740334"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.hi.md": {
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "6749656d36e0664c0ecd0c0861615a41e513f9097f37bd2a04ec439f062af233",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "f4aae3a483aed691f87767c00da400b370be6ee10c6f94e93c264fe3af4e1830"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.fr.md": {
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "53061f5202aedd45b3493f1d41aae25a532911b732e145e902b54709453cd395",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "a2a026f48f98fa7f4699d982e1d0c84a79e2bb84c4e35a4c400bd01062c3c8a5"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.de.md": {
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "9418711266acf6ad84c8876cdb8f1c10960af314f1e1896bfc61d9fb4b2a8fcd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "f6534a3f6a59ceadd165caa4a0b05a86ffb316e58499bf003b1f2087825aca3d"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ar.md": {
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "042747278523e3d87b20f572c349175544729eee6ddd4030c36d4da8dcd82a37",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "2e06f9e4079ec43f31e2d14146099788491b808561c8c985b3f3d8be143deb87"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ru.md": {
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "0c68bfe07bacaf50d2806e8a72963fe1f755d1ae63291bfa97f2e08991032b8f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "996a0ffa1427780116e247fec74665f33cef7b0e00f617f6664af9fee4fc06af"
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.id.md": {
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "70fe2b9418621e4f8a6050a99af99e9590e18fda31d8630aa1e51667aa5904c6",
+      "translationHash": "281503052d074ff125431fdf801da76119d1946a893216e6005d107b94650df1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "8e34ec7fde2f8f61513f072e4387e4ebd1018c0862e1567abbe5caba33387a34"
+    },
+    "post/history-of-unicode-encoding/index.es.md": {
+      "source": "post/history-of-unicode-encoding/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "65020c6470e5db03715f0861128eb34ec8378998bbf178500d4dcce9ee119df5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "c1dde25dfab75adda0733bea7bcff5263b46eda784aafd5bb745eec49cf0e2fa"
+    },
+    "post/history-of-unicode-encoding/index.ko.md": {
+      "source": "post/history-of-unicode-encoding/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "01af555ad9bb4be79b4a44b1206e17a0d7239e70836aec7a24ef590790ccec02",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "b1185b760afee3c7778e52277dfd78ddbf92c09ff24404f103e8597aa1b5c9e4"
+    },
+    "post/history-of-unicode-encoding/index.pt.md": {
+      "source": "post/history-of-unicode-encoding/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "657550bddd873d36f087c4835c37e01a4143f2b5b03114a66e0cdb11d775b3ff",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "972170e40267e29260dacfa8caafbfd85f9dbf5b410c0ab0c7e75611a3c472fb"
+    },
+    "post/history-of-unicode-encoding/index.hi.md": {
+      "source": "post/history-of-unicode-encoding/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "01e7a23e10f687db1eb2ce521bb1e79ec9ba4fed77019b108a045c526b94da5e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "339c2354f59088c64e573ca2f7e9e9c0ce54b5271582250e51a1a9f55f789d87"
+    },
+    "post/history-of-unicode-encoding/index.fr.md": {
+      "source": "post/history-of-unicode-encoding/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "9b377440358de729cb1ab2d481d7f4fcd11ffb92f98a187b10d241a1ba942467",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "631430081e63fb79e3edab93d224d3f9f7ff999552f0ac85846fd2c358766227"
+    },
+    "post/history-of-unicode-encoding/index.de.md": {
+      "source": "post/history-of-unicode-encoding/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "535a87b5ab5e48a69348896b07bc242378639b005b1c113896ab483d5bf5c1db",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "dd8a423bac139fb92c1d4bc04d631774175d3ec7a60ba7f387e4cdb7b9912fb0"
+    },
+    "post/history-of-unicode-encoding/index.ar.md": {
+      "source": "post/history-of-unicode-encoding/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "a088f12989a8f7b1f3bb162b5c6badabecc2b8b24185d2b2517b2dd0aa524fe9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "c8d982bcc5ed89fd5fdba40e68f008f2dadd870ad7a0fcf2de13739304c60e52"
+    },
+    "post/history-of-unicode-encoding/index.ru.md": {
+      "source": "post/history-of-unicode-encoding/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "f0f51203de4bae4a25a59b3fbaf6cce8851643e4c68443cc76320734f9a664e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "e430f58428beb8b244d422217b49e695dd1632c27d33e576846c1149dd944a0d"
+    },
+    "post/history-of-unicode-encoding/index.id.md": {
+      "source": "post/history-of-unicode-encoding/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0a6ab70d5ecdc79b07cd37c783f2b6c2f720f25c623ca8f3adbdc27d8ab18ea4",
+      "translationHash": "c1d3ce2cd71623c441a751cd9a1ad3be2ffbe4e3bfac0669f2da94a0a887a356",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-002.json",
+      "evidenceHash": "efd8771eb99b4000dbcaf6b9f75350be172d6f72684782f9986366eb8e8381bf"
     }
   }
 }

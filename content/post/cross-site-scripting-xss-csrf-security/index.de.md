@@ -13,6 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
+lastmod: 2026-10-24T02:00:00+09:00
 ---
 
 ## Einführung
@@ -29,10 +30,10 @@ XSS ist eine Angriffsmethode, bei der ein Angreifer ein bösartiges Skript (haup
 
 ### 3 Haupttypen von XSS
 
-XSS wird grob in drei Typen unterteilt, je nachdem, wie das bösartige Skript in die Anwendung injiziert und ausgeführt wird.
+XSS lässt sich danach beschreiben, wie Daten gespeichert oder reflektiert werden und wo eine unsichere Interpretation stattfindet. Diese Kategorien schließen einander nicht aus: Gespeicherte oder reflektierte Daten können auch clientseitig unsicher verarbeitet werden.
 
 #### 1. Stored XSS (Gespeichertes XSS)
-Stored XSS ist die gefährlichste Art von XSS. Das vom Angreifer gesendete bösartige Skript wird dauerhaft auf der Serverseite, wie z.B. in einer Datenbank oder einem Dateisystem, gespeichert (akkumuliert). Wenn dann ein legitimer Benutzer eine Seite mit diesen Daten betrachtet, wird das gespeicherte Skript an den Browser gesendet und ausgeführt.
+Gespeichertes XSS kann mehrere Besucher betreffen. Das bösartige Skript wird serverseitig gespeichert, etwa in einer Datenbank oder einem Dateisystem. Besucht ein Benutzer eine Seite mit diesen Daten, wird das Skript an den Browser gesendet und ausgeführt. Der tatsächliche Schweregrad hängt von den Berechtigungen und dem Ausführungskontext ab.
 *   **Typische Orte des Auftretens:** Kommentarbereiche, Foren, Benutzerprofile, Bewertungsfunktionen usw.
 *   **Bedrohung:** Der Wirkungsbereich ist sehr groß und alle Benutzer, die die Seite öffnen, können Opfer werden.
 
@@ -42,7 +43,7 @@ Reflected XSS tritt auf, wenn ein bösartiges Skript als Teil einer Anfrage (wie
 *   **Angriffsmethode:** Der Angreifer bringt den Benutzer dazu, auf eine URL mit bösartigen Parametern zu klicken (über Phishing-E-Mails oder soziale Netzwerke), um den Angriff durchzuführen.
 
 #### 3. DOM-based XSS
-DOM-based XSS tritt auf, wenn clientseitiges (im Browser ausgeführtes) JavaScript das DOM (Document Object Model) unsachgemäß manipuliert, ohne über die serverseitige Verarbeitung zu gehen.
+DOM-basiertes XSS entsteht, wenn clientseitiges JavaScript nicht vertrauenswürdige Daten über eine unsichere Senke verarbeitet. Die Daten können auch einen Server durchlaufen haben; entscheidend ist die unsichere Verarbeitung auf der Clientseite.
 *   **Mechanismus:** Tritt auf, wenn das JavaScript der Anwendung Daten aus Quellen liest, die vom Angreifer kontrolliert werden können, wie `window.location` oder `document.referrer`, und diese direkt an gefährliche Senken (Ausführungspunkte) wie `innerHTML` oder `eval()` weitergibt.
 *   **Bedrohung:** Es bleibt oft nicht in Server-Protokollen und kann von einer WAF (Web Application Firewall) nur schwer erkannt werden.
 
@@ -50,7 +51,7 @@ DOM-based XSS tritt auf, wenn clientseitiges (im Browser ausgeführtes) JavaScri
 
 Wenn XSS erfolgreich ist, wird das Skript des Angreifers im Browser des Benutzers unter demselben Ursprung (Rechten) wie die Website ausgeführt. Dies führt zu schwerwiegenden Schäden wie:
 
-1.  **Session Hijacking:** Zugriff auf `document.cookie`, um die Session-ID zu stehlen und an den Server des Angreifers zu senden. Dadurch kann der Angreifer sich als der Benutzer ausgeben und das Konto übernehmen.
+1.  **Session Hijacking:** Fehlt einem Authentifizierungs-Cookie `HttpOnly`, kann ein Angreifer dessen Session-ID über `document.cookie` stehlen. Auch mit `HttpOnly` kann XSS weiterhin authentifizierte Anfragen im Namen des Benutzers senden.
 2.  **Ausführung unbefugter Aktionen:** Beliebige Aktionen innerhalb der Anwendung (Passwortänderung, Geldüberweisung, Nachrichtenversand usw.) im Hintergrund mit den Rechten des Benutzers ausführen lassen.
 3.  **Phishing:** Rendern eines gefälschten Anmeldeformulars im DOM, um direkt die Anmeldeinformationen des Benutzers zu stehlen.
 4.  **Verbreitung von Malware:** Den Browser des Benutzers zu einem Exploit-Kit umleiten und den PC mit Malware infizieren.
@@ -82,20 +83,22 @@ Während XSS "bösartige Skripte im Browser ausführt", unterscheidet sich CSRF 
 
 ### CSRF-Mechanismus: Die Ausnutzung des "automatischen Sendens von Cookies"
 
-Wenn ein Browser eine Anfrage an eine Domain sendet, hängt er automatisch die mit dieser Domain verbundenen Cookies (wie z.B. Session-Cookies) an den Header an. Dies gilt auch für Anfragen von Bild-Tags oder Formularen, die auf einer anderen Domain (der Website des Angreifers) platziert sind.
+Browser hängen Cookies automatisch an, wenn deren Sendebedingungen erfüllt sind. Das kann auch Anfragen umfassen, die Bilder oder Formulare auf einer anderen Website auslösen. `SameSite`, `Secure`, Domain, Path und Cookie-Beschränkungen des Browsers können das Senden jedoch verhindern.
 
 **Angriffsszenario:**
-1.  Der Benutzer loggt sich auf der Bank-Website (`bank.example.com`) ein und erhält ein Session-Cookie.
-2.  Der Benutzer besucht in einem anderen Tab die manipulierte Website des Angreifers (`attacker.example.com`).
+
+Dieses Lehrbeispiel setzt eine verwundbare Anwendung voraus: Das Authentifizierungs-Cookie erlaubt mit `SameSite=None; Secure` das Senden zwischen Websites, und weder CSRF-Token noch Origin werden geprüft. `bank.example` und `attacker.invalid` sind reservierte Domains verschiedener Sites.
+1.  Der Benutzer loggt sich auf der Bank-Website (`bank.example`) ein und erhält ein Session-Cookie.
+2.  Der Benutzer besucht in einem anderen Tab die manipulierte Website des Angreifers (`attacker.invalid`).
 3.  Die manipulierte Website enthält ein verstecktes Formular und ein Skript zur automatischen Übermittlung, wie im Folgenden dargestellt:
     ```html
-    <form action="https://bank.example.com/transfer" method="POST" id="csrf-form">
+    <form action="https://bank.example/transfer" method="POST" id="csrf-form">
         <input type="hidden" name="toAccount" value="ATTACKER_ACCOUNT">
         <input type="hidden" name="amount" value="1000000">
     </form>
     <script>document.getElementById('csrf-form').submit();</script>
     ```
-4.  Der Browser sendet eine POST-Anfrage an `bank.example.com`. Zu diesem Zeitpunkt **wird das Session-Cookie der Bank-Website automatisch angehängt.**
+4.  Der Browser sendet eine POST-Anfrage an `bank.example`. Zu diesem Zeitpunkt **wird das Session-Cookie der Bank-Website automatisch angehängt.**
 5.  Da ein gültiges Session-Cookie enthalten ist, verarbeitet der Bank-Server die Anfrage als von einem legitimen Benutzer kommend und führt die illegale Überweisung durch.
 
 ### Historische Entwicklung und neueste Praktiken der Verteidigungsmaßnahmen gegen CSRF
@@ -114,16 +117,16 @@ Eine Methode, die oft in zustandslosen APIs (ohne Session auf der Serverseite) v
 *   Der Server generiert ein zufälliges Token und sendet es als Cookie an den Client.
 *   Das JavaScript des Clients liest den Wert dieses Cookies und setzt ihn im Anfrage-Header (z.B. `X-CSRF-Token`), bevor es gesendet wird.
 *   Der Server überprüft, ob der Token-Wert im Cookie mit dem Token-Wert im Header übereinstimmt.
-Der Angreifer kann zwar das automatische Senden des Cookies erzwingen, aber er kann das Cookie einer anderen Domain nicht mit JavaScript lesen, um es im Header zu setzen, wodurch der Angriff verhindert wird.
+Die Schritte oben beschreiben einen einfachen Gleichheitsvergleich. Darauf allein sollte man sich nicht verlassen, wenn Angreifer Cookies einschleusen können. Bevorzugen Sie den integrierten Schutz des Frameworks. Bei Double Submit muss ein Signed-Double-Submit-Token geprüft werden, das mit einem Servergeheimnis per HMAC authentifiziert und an die aktuelle authentifizierte Session gebunden ist. APIs mit eigenen Headern sollten außerdem keinen CORS-Zugriff mit Anmeldedaten für nicht vertrauenswürdige Ursprünge erlauben.
 
 #### 3. SameSite Cookie-Attribut : Starke Verteidigung durch moderne Browser
-In den letzten Jahren ist die am meisten empfohlene starke Verteidigungsmaßnahme das `SameSite`-Attribut von Cookies. Dies steuert das Verhalten beim Senden von Cookies bei Cross-Site-Anfragen.
+Das Cookie-Attribut `SameSite` steuert das Senden bei Cross-Site-Anfragen und bildet eine Schutzschicht. In allgemeinen Anwendungen sollte es mit CSRF-Tokens oder einer Origin-Prüfung kombiniert werden, statt diese zu ersetzen.
 
 *   `SameSite=Strict`: Cookies werden bei keinen Cross-Site-Anfragen gesendet, einschließlich Top-Level-Navigationen wie dem Klicken auf Links. Es ist am sichersten, kann sich aber auf die UX auswirken, wie z.B. das Nicht-Aufrechterhalten des Login-Status über Links von anderen Websites.
 *   `SameSite=Lax`: Cookies werden bei Cross-Site-Anfragen wie dem Laden von Bildern oder POST-Anfragen nicht gesendet, aber bei Top-Level-Navigationen durch Klicks auf Links (GET-Anfragen). Dies ist das aktuelle Standardverhalten vieler Browser. Dadurch kann der Großteil von CSRF durch böswillige POST-Formular-Übermittlungen verhindert werden.
-*   `SameSite=None`: Cookies werden auch bei Cross-Site-Anfragen immer gesendet. (Muss immer in Kombination mit dem `Secure`-Attribut angegeben werden).
+*   `SameSite=None`: Hebt die SameSite-Beschränkung für Cross-Site-Anfragen auf und erfordert `Secure`. Andere Sendebedingungen und Browserbeschränkungen gelten weiterhin.
 
-Durch das richtige Setzen des SameSite-Attributs kann die grundlegende Ursache von CSRF (das automatische Senden von Cookies) auf Browser-Ebene blockiert werden.
+SameSite unterscheidet Sites, nicht Ursprünge: Geschwister-Subdomains derselben registrierbaren Domain können als gleichseitig gelten. Lax schützt auch keinen Endpunkt, der per GET den Zustand ändert. Verwenden Sie geeignete HTTP-Methoden für Zustandsänderungen und eine serverseitige CSRF-Prüfung. Da das standardmäßige Lax-Verhalten Ausnahmen haben kann, sollten notwendige Cookie-Attribute ausdrücklich gesetzt werden.
 
 ---
 
@@ -136,7 +139,7 @@ graph TD
     subgraph XSS Attack
         A["Angreifer"] -- "Injektion eines bösartigen Skripts" --> B["Webserver"]
         B -- "Seite mit Skript" --> C["Browser des Opfers"]
-        C -- "Übertragung der Session-ID (Diebstahl)" --> A
+        C -- "Diebstahl der Session-ID (ohne HttpOnly)" --> A
     end
 
     subgraph CSRF Attack
@@ -151,3 +154,8 @@ XSS und CSRF sind unterschiedliche Schwachstellen, aber **wenn XSS vorhanden ist
 Daher ist es zur Gewährleistung der Sicherheit einer Webanwendung erforderlich, eine starke Grundlage zu schaffen, indem zunächst XSS gründlich eingedämmt wird (durch angemessenes Escaping und CSP) und anschließend CSRF-Gegenmaßnahmen (SameSite-Cookies und CSRF-Tokens) implementiert werden.
 
 Es ist wichtig, dass Entwickler sich nicht blind auf die von Frameworks bereitgestellten Sicherheitsfunktionen verlassen, sondern die wesentlichen Mechanismen dieser Schwachstellen verstehen und auf der entsprechenden Ebene eine geeignete Verteidigung entwerfen.
+
+## Quellen
+
+- [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+- [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
