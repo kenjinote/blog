@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/fast-fourier-transform-algorithm/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fast-fourier-transform-algorithm/index.md",
+      "sourceHash": "501271291610af83c7d6e51102ada7580f6a50554f79b35524142df9d44ab4f6",
+      "translationHash": "2215576e46869583121133374f8d52b7b2271eb3041cf7a80521e806ee7493d7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full original English article and the complete corrected Japanese source, then reread all revised English metadata and sections. Preserved every derivation step, N=1 base case, explicit finite DFT versus conditional CFT distinction, frequency indexing and leakage/reconstruction caveats. Replaced unsupported universal decomposition, speed and ranking claims; restored conditional application explanations and all input restrictions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished Fourier transform/DFT from FFT algorithms, twiddle factor, radix-2 DIT/DIF, butterfly, bit-reversed input versus normal-order output, recursion/iteration, external NumPy library versus Python standard library, complex dtype, absolute integrability and normalization. Corrected modified discrete cosine transform (MDCT) as a different transform, not an improved FFT; distinguished psychoacoustic analysis FFT from MP3 main MDCT path and JPEG DCT/quantization."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared ten displayed formulas and all inline ranges/signs. Added inverse DFT factor 1/N and operation-count recurrence; checked Ts>0, N positive, negative-frequency bins k>N/2, power-of-two p>=0, N=1 separately, m=0..N/2-1, W_N squared and shifted signs, and both outputs for k=0..N/2-1. Checked bit reversal [0,4,2,6,1,5,3,7] and why the supplied recursive code needs no explicit permutation. Finite butterfly and direct DFT/inverse checks supplement the algebra rather than proving arbitrary inputs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed both article Python blocks in order in Japanese and English. ASTs match after removing docstrings; error messages and output strings are identical. Each version passes 48 valid-input cases against NumPy, direct DFT for lengths<=32, inverse round trips, input nonmutation and complex128 output; eight invalid cases raise ValueError. This directly covers the original complex-array/list, empty and 2D defects. Three sizes check all butterfly k pairs. The article reports True for real and complex examples and max absolute error 4.833620366037432e-13 in this environment. Not a benchmark or proof of universal floating-point accuracy."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched nine primary-reference URLs and translated labels to the documented section-level reading in batch-010-source-notes.md. Verified matching English Fourier-introduction and Gauss destination files and eyecatch. Confirmed revised conditions, code, MDCT meaning and PocketFFT text in local HTML. Hugo, multilingual 778 pages, HTTPS 1,440 HTML and 41 XML passed; Mermaid source topology and labels were read, not claimed as a browser-rendered visual check."
+        }
+      },
+      "summary": "Full-body English review against corrected Japanese FFT source, fixing complex input loss, input contract, DIT ranges and ordering, numerical comparison claims, and codec-transform distinctions.",
+      "languageSpecificFindings": "Removed standard-library terminology for NumPy and unconditional any-wave/always-impractical claims. Clarified first-half k versus shifted second-half index and optional iterative bit reversal. Used complex-valued input rather than complicated waveform where appropriate. Preserved complete derivation and both runnable code blocks; modified means the MDCT name, not an upgrade to FFT.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "The other eleven FFT translations remain unread and unreviewed. Local rendering does not prove their editorial correctness.",
+        "Finite numerical checks supplement algebraic reasoning; they do not certify arbitrary inputs or performance.",
+        "Only specified primary-source sections were read; inaccessible Cooley–Tukey original and Gauss original were not read. Publication pending."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://www.fftw.org/~fftw/fftw-paper-ieee.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/release/1.17.0-notes.html",
+        "https://raw.githubusercontent.com/numpy/numpy/v2.3.5/numpy/fft/_pocketfft.py",
+        "https://www.iis.fraunhofer.de/content/dam/iis/de/doc/ame/conference/AES-17-Conference_mp3-and-AAC-explained_AES17.pdf",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+        "https://www.mathworks.com/help/comm/gs/introduction-to-ofdm.html",
+        "https://larsonlab.github.io/MRI-education-resources/Image%20Reconstruction.html"
+      ],
+      "validation": "docs/translation-review/batch-010-validation.json"
+    }
+  }
+}

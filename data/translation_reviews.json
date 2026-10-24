@@ -1205,6 +1205,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-009.json",
       "evidenceHash": "00b3a6c3d80528813671181b68a50fab7b1cb29a118efc91ce2e7e6d8cf5441f"
+    },
+    "post/fast-fourier-transform-algorithm/index.en.md": {
+      "source": "post/fast-fourier-transform-algorithm/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "501271291610af83c7d6e51102ada7580f6a50554f79b35524142df9d44ab4f6",
+      "translationHash": "2215576e46869583121133374f8d52b7b2271eb3041cf7a80521e806ee7493d7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-010.json",
+      "evidenceHash": "d5b02f3372aa0d387f0a5f08f934783088e639e9e603b52b2839c4af8e983d4a"
     }
   }
 }
