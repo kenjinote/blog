@@ -1275,6 +1275,26 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-010.json",
       "evidenceHash": "2f6dc678a70eb035aec14fe77bb91125d8d30cbad64f0181ebd37b4796a9b42c"
+    },
+    "post/fast-fourier-transform-algorithm/index.de.md": {
+      "source": "post/fast-fourier-transform-algorithm/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "501271291610af83c7d6e51102ada7580f6a50554f79b35524142df9d44ab4f6",
+      "translationHash": "13bc332bbcf213d85c90fddfad3fb4b553788baba11b2ab0672430aa9acb9df7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-010.json",
+      "evidenceHash": "f0ee0a60fd56abf095bd7cfc89365c3160290360d8f8cd5fcd4f1c7ea6b8840b"
+    },
+    "post/fast-fourier-transform-algorithm/index.id.md": {
+      "source": "post/fast-fourier-transform-algorithm/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "501271291610af83c7d6e51102ada7580f6a50554f79b35524142df9d44ab4f6",
+      "translationHash": "436136802420fbfa7f46cc397710552434551e9057ce98409bebd97e495dbf98",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-010.json",
+      "evidenceHash": "b24a6992671f6f92464b0bc8f6554a41e9f3e47f59461c14865eb4ee7e26f659"
     }
   }
 }
