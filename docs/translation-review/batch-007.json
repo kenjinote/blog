@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/taylor-and-maclaurin-series/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/taylor-and-maclaurin-series/index.md",
+      "sourceHash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+      "translationHash": "39f6863e5533c7fe61a2a5f0312361fc6ddd4a8098a217b80b66c734a10b059a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete title, description and body against the corrected Japanese source, including polynomial construction, infinite expansions, physics and programming applications, remainder estimates, the smooth nonanalytic counterexample and conclusion. Distinguished finite approximation, convergence and equality to the function."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used finite Taylor polynomial, power series, derivative value, radius of convergence as a distance, conditional convergence, Lagrange remainder and floating-point comparison value. Removed the identification of a second derivative with geometric curvature and the claim that Chebyshev approximation is an improved Taylor series."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all eleven display formulas and the small-angle annotation. Corrected P to a finite P_n and P_n double-prime at zero rather than the entire second derivative. Stated analyticity where infinite equalities are used; all-real convergence for exp/sin/cos; radians and the small-amplitude pendulum limitation. Added C^(n+1) finite Taylor hypotheses, the xi remainder and derivative bound, log(1+x) radius/endpoints, the zero-series smooth counterexample and the 1/21! sine truncation bound separate from floating-point error."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the full Python example and the three-edge Mermaid diagram. Executed the English Python fence, verified its computational function AST equals the source, and reproduced all eighteen source validation cases. Preserved radians, positive integer term count, degree19/zero degree20 interpretation, and corrected the math.sin output label. Updated the diagram to an analytic function and power series."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The article has four HTTPS reference links, matching the source, and no internal article links. Confirmed eyecatch existence. Source references inspected for Taylor theorem, smooth versus analytic, logarithmic endpoint convergence, pendulum approximation and CPython math implementation. English rendered HTML and multilingual/HTTPS preview checks pass."
+        }
+      },
+      "summary": "Complete English semantic review against corrected Japanese, including eleven formulas, one diagram, executable Python and all new applicability/error conditions.",
+      "languageSpecificFindings": "Removed curvature (second derivative), which conflates distinct concepts; used the second-derivative matching condition. Corrected range-as-radius, unconditional reconstruction, universal library implementation and True value wording.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Numerical checks are supplementary and not a proof or certified rounding-error analysis.",
+        "The remaining eleven Taylor translations are unread/unreviewed; this batch has not been published."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.4#vi",
+        "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/mit18_100af20_basic_analysis.pdf",
+        "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/c0c881f96f4ff4e21f082c88e8b015d6_MIT16_07F09_Lec24.pdf",
+        "https://docs.python.org/3.12/library/math.html"
+      ],
+      "validation": "docs/translation-review/batch-007-validation.json"
+    },
+    "post/taylor-and-maclaurin-series/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/taylor-and-maclaurin-series/index.md",
+      "sourceHash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+      "translationHash": "0b0544b3e21c9a22ea4f3b9f6a3cdd53091c7a33081ecf5a9693c6ca5ec0a313",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original translation and compared the complete revised body with Japanese, including title/description, polynomial construction, infinite series, exponential/trigonometric examples, applications, convergence/remainder discussion, the new smooth nonanalytic example and conclusion. Separated finite approximation, series convergence and equality to the source function."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 幂级数、余项、收敛半径、条件收敛 and 舍入误差. Replaced 曲率（二阶导数） with derivative matching and 导数系数 with derivative values at zero. Kept mainland programming terminology; fixed fullwidth formula parentheses."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked eleven display formulas, including separately read localized small-angle annotation. Corrected finite P_n and the derivative evaluated at zero. Stated analyticity for infinite equalities and all-real exp/sin/cos convergence; radians and small-amplitude pendulum limits. Added C^(n+1) hypotheses, Lagrange remainder with xi and derivative bound; radius versus interval and logarithmic endpoints; the smooth zero-Taylor-series counterexample; degree19/zero degree20 and 1/21! truncation error separated from rounding."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the complete Python fence, comments and output labels, plus the three-edge Mermaid diagram. Ran Python, matched the computational function AST to Japanese and reproduced eighteen source numerical cases. Specified radians and positive integer term count, replaced true-value label with math.sin comparison wording and limited the diagram to analytic functions and power series."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked four HTTPS references match those inspected for the source and confirmed the eyecatch exists. There are no internal article links. Confirmed revised counterexample and reference rendered in local HTML. Eight-bundle build and multilingual/HTTPS preview validators pass."
+        }
+      },
+      "summary": "Complete-body comparison with corrected Japanese, including eleven formulas, a diagram, executable Python, approximation hypotheses and error estimates.",
+      "languageSpecificFindings": "Used 幂级数、余项、收敛半径、条件收敛 and 舍入误差. Replaced 曲率（二阶导数） with derivative matching and 导数系数 with derivative values at zero. Kept mainland programming terminology; fixed fullwidth formula parentheses.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement the mathematical reading, not proof or certified rounding analysis.",
+        "Nine Taylor translations remain unreviewed; publication of this batch is pending."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.4#vi",
+        "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/mit18_100af20_basic_analysis.pdf",
+        "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/c0c881f96f4ff4e21f082c88e8b015d6_MIT16_07F09_Lec24.pdf",
+        "https://docs.python.org/3.12/library/math.html"
+      ],
+      "validation": "docs/translation-review/batch-007-validation.json"
+    },
+    "post/taylor-and-maclaurin-series/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/taylor-and-maclaurin-series/index.md",
+      "sourceHash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+      "translationHash": "9009445ea10ccad80924cd1238c42c8f297accdefc00d84feeef651c427e570b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original translation and compared the complete revised body with Japanese, including title/description, polynomial construction, infinite series, exponential/trigonometric examples, applications, convergence/remainder discussion, the new smooth nonanalytic example and conclusion. Separated finite approximation, series convergence and equality to the source function."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 冪級數、餘項、收斂半徑、條件收斂 and 捨入誤差. Replaced 曲率（二階導數） with derivative matching and 導數係數 with values at zero. Used 程式設計、函式庫、演算法、實作 and consistent 微分 wording; fixed fullwidth formula parentheses."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked eleven display formulas, including separately read localized small-angle annotation. Corrected finite P_n and the derivative evaluated at zero. Stated analyticity for infinite equalities and all-real exp/sin/cos convergence; radians and small-amplitude pendulum limits. Added C^(n+1) hypotheses, Lagrange remainder with xi and derivative bound; radius versus interval and logarithmic endpoints; the smooth zero-Taylor-series counterexample; degree19/zero degree20 and 1/21! truncation error separated from rounding."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the complete Python fence, comments and output labels, plus the three-edge Mermaid diagram. Ran Python, matched the computational function AST to Japanese and reproduced eighteen source numerical cases. Specified radians and positive integer term count, replaced true-value label with math.sin comparison wording and limited the diagram to analytic functions and power series."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked four HTTPS references match those inspected for the source and confirmed the eyecatch exists. There are no internal article links. Confirmed revised counterexample and reference rendered in local HTML. Eight-bundle build and multilingual/HTTPS preview validators pass."
+        }
+      },
+      "summary": "Complete-body comparison with corrected Japanese, including eleven formulas, a diagram, executable Python, approximation hypotheses and error estimates.",
+      "languageSpecificFindings": "Used 冪級數、餘項、收斂半徑、條件收斂 and 捨入誤差. Replaced 曲率（二階導數） with derivative matching and 導數係數 with values at zero. Used 程式設計、函式庫、演算法、實作 and consistent 微分 wording; fixed fullwidth formula parentheses.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement the mathematical reading, not proof or certified rounding analysis.",
+        "Nine Taylor translations remain unreviewed; publication of this batch is pending."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.4#vi",
+        "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/mit18_100af20_basic_analysis.pdf",
+        "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/c0c881f96f4ff4e21f082c88e8b015d6_MIT16_07F09_Lec24.pdf",
+        "https://docs.python.org/3.12/library/math.html"
+      ],
+      "validation": "docs/translation-review/batch-007-validation.json"
+    },
+    "post/taylor-and-maclaurin-series/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/taylor-and-maclaurin-series/index.md",
+      "sourceHash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+      "translationHash": "c3b37c1b101dbd23edd3350d21a4f6c1fc873ad81305eefc3e9f224979c0938b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original translation and compared the complete revised body with Japanese, including title/description, polynomial construction, infinite series, exponential/trigonometric examples, applications, convergence/remainder discussion, the new smooth nonanalytic example and conclusion. Separated finite approximation, series convergence and equality to the source function."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used serie de potencias, radio de convergencia, resto, convergencia condicional and error de redondeo en coma flotante. Replaced curvatura (segunda derivada) with matching derivative values. Changed coeficientes derivados to derivative values at zero and Valor real to an explicitly labeled math.sin comparison."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked eleven display formulas, including separately read localized small-angle annotation. Corrected finite P_n and the derivative evaluated at zero. Stated analyticity for infinite equalities and all-real exp/sin/cos convergence; radians and small-amplitude pendulum limits. Added C^(n+1) hypotheses, Lagrange remainder with xi and derivative bound; radius versus interval and logarithmic endpoints; the smooth zero-Taylor-series counterexample; degree19/zero degree20 and 1/21! truncation error separated from rounding."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the complete Python fence, comments and output labels, plus the three-edge Mermaid diagram. Ran Python, matched the computational function AST to Japanese and reproduced eighteen source numerical cases. Specified radians and positive integer term count, replaced true-value label with math.sin comparison wording and limited the diagram to analytic functions and power series."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked four HTTPS references match those inspected for the source and confirmed the eyecatch exists. There are no internal article links. Confirmed revised counterexample and reference rendered in local HTML. Eight-bundle build and multilingual/HTTPS preview validators pass."
+        }
+      },
+      "summary": "Complete-body comparison with corrected Japanese, including eleven formulas, a diagram, executable Python, approximation hypotheses and error estimates.",
+      "languageSpecificFindings": "Used serie de potencias, radio de convergencia, resto, convergencia condicional and error de redondeo en coma flotante. Replaced curvatura (segunda derivada) with matching derivative values. Changed coeficientes derivados to derivative values at zero and Valor real to an explicitly labeled math.sin comparison.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement the mathematical reading, not proof or certified rounding analysis.",
+        "Seven Taylor translations remain unreviewed; publication of this batch is pending."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.4#vi",
+        "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/mit18_100af20_basic_analysis.pdf",
+        "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/c0c881f96f4ff4e21f082c88e8b015d6_MIT16_07F09_Lec24.pdf",
+        "https://docs.python.org/3.12/library/math.html"
+      ],
+      "validation": "docs/translation-review/batch-007-validation.json"
+    },
+    "post/taylor-and-maclaurin-series/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/taylor-and-maclaurin-series/index.md",
+      "sourceHash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+      "translationHash": "2360f8cc37be8528d6b1b34da0e3fe7d8a8ba9910051904b407d49c24f8bc360",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original translation and compared the complete revised body with Japanese, including title/description, polynomial construction, infinite series, exponential/trigonometric examples, applications, convergence/remainder discussion, the new smooth nonanalytic example and conclusion. Separated finite approximation, series convergence and equality to the source function."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 거듭제곱급수, 수렴 반지름, 나머지 항, 조건 수렴, 절단 오차 and 부동소수점 반올림 오차. Replaced 곡률(2차 도함수) with derivative matching and 스윙 각도 with 진자의 각도. Explained small-amplitude 등시성 as approximate and replaced 실제값 with 비교용."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked eleven display formulas, including separately read localized small-angle annotation. Corrected finite P_n and the derivative evaluated at zero. Stated analyticity for infinite equalities and all-real exp/sin/cos convergence; radians and small-amplitude pendulum limits. Added C^(n+1) hypotheses, Lagrange remainder with xi and derivative bound; radius versus interval and logarithmic endpoints; the smooth zero-Taylor-series counterexample; degree19/zero degree20 and 1/21! truncation error separated from rounding."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the complete Python fence, comments and output labels, plus the three-edge Mermaid diagram. Ran Python, matched the computational function AST to Japanese and reproduced eighteen source numerical cases. Specified radians and positive integer term count, replaced true-value label with math.sin comparison wording and limited the diagram to analytic functions and power series."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked four HTTPS references match those inspected for the source and confirmed the eyecatch exists. There are no internal article links. Confirmed revised counterexample and reference rendered in local HTML. Eight-bundle build and multilingual/HTTPS preview validators pass."
+        }
+      },
+      "summary": "Complete-body comparison with corrected Japanese, including eleven formulas, a diagram, executable Python, approximation hypotheses and error estimates.",
+      "languageSpecificFindings": "Used 거듭제곱급수, 수렴 반지름, 나머지 항, 조건 수렴, 절단 오차 and 부동소수점 반올림 오차. Replaced 곡률(2차 도함수) with derivative matching and 스윙 각도 with 진자의 각도. Explained small-amplitude 등시성 as approximate and replaced 실제값 with 비교용.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement the mathematical reading, not proof or certified rounding analysis.",
+        "Seven Taylor translations remain unreviewed; publication of this batch is pending."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.4#vi",
+        "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/mit18_100af20_basic_analysis.pdf",
+        "https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/c0c881f96f4ff4e21f082c88e8b015d6_MIT16_07F09_Lec24.pdf",
+        "https://docs.python.org/3.12/library/math.html"
+      ],
+      "validation": "docs/translation-review/batch-007-validation.json"
+    }
+  }
+}

@@ -845,6 +845,56 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-006-r2.json",
       "evidenceHash": "79cbe3910ddb5b59266228d0ed60e906ef88f2a7192c8295d555027ef088fc7f"
+    },
+    "post/taylor-and-maclaurin-series/index.en.md": {
+      "source": "post/taylor-and-maclaurin-series/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+      "translationHash": "39f6863e5533c7fe61a2a5f0312361fc6ddd4a8098a217b80b66c734a10b059a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-007.json",
+      "evidenceHash": "25617ed1b408b5d226afd4de2c78d33154c110a11619c71640e1c5dd265179ff"
+    },
+    "post/taylor-and-maclaurin-series/index.zh-cn.md": {
+      "source": "post/taylor-and-maclaurin-series/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+      "translationHash": "0b0544b3e21c9a22ea4f3b9f6a3cdd53091c7a33081ecf5a9693c6ca5ec0a313",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-007.json",
+      "evidenceHash": "1cf9fba6b3593908a6ad2d1fa8fd295c0fa3eb5b121edf45e36071c9d8d89866"
+    },
+    "post/taylor-and-maclaurin-series/index.zh-tw.md": {
+      "source": "post/taylor-and-maclaurin-series/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+      "translationHash": "9009445ea10ccad80924cd1238c42c8f297accdefc00d84feeef651c427e570b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-007.json",
+      "evidenceHash": "37211d01af2886fa9bbfb22e9a4b55ace0905a186a1e78d836146e5d14b8a7cb"
+    },
+    "post/taylor-and-maclaurin-series/index.es.md": {
+      "source": "post/taylor-and-maclaurin-series/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+      "translationHash": "c3b37c1b101dbd23edd3350d21a4f6c1fc873ad81305eefc3e9f224979c0938b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-007.json",
+      "evidenceHash": "54a0d99626c63ed641121b03becd165dc285fec3912eedaa212e820e8a315116"
+    },
+    "post/taylor-and-maclaurin-series/index.ko.md": {
+      "source": "post/taylor-and-maclaurin-series/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+      "translationHash": "2360f8cc37be8528d6b1b34da0e3fe7d8a8ba9910051904b407d49c24f8bc360",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-007.json",
+      "evidenceHash": "c2b1c6151ed8e47aae1da5c3f96084f03498220511432f121b2f694f60136571"
     }
   }
 }

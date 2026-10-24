@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "validatedAt": "2026-10-24",
+  "source": "content/post/taylor-and-maclaurin-series/index.md",
+  "sourceHash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+  "files": [
+    {
+      "language": "en",
+      "path": "content/post/taylor-and-maclaurin-series/index.en.md",
+      "translationHash": "39f6863e5533c7fe61a2a5f0312361fc6ddd4a8098a217b80b66c734a10b059a",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "Approximated value: 0.8414709848078965\nmath.sin value (for comparison): 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "content/post/taylor-and-maclaurin-series/index.zh-cn.md",
+      "translationHash": "0b0544b3e21c9a22ea4f3b9f6a3cdd53091c7a33081ecf5a9693c6ca5ec0a313",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "近似值: 0.8414709848078965\nmath.sin 的值（供比较）: 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "content/post/taylor-and-maclaurin-series/index.zh-tw.md",
+      "translationHash": "9009445ea10ccad80924cd1238c42c8f297accdefc00d84feeef651c427e570b",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "近似值: 0.8414709848078965\nmath.sin 的值（供比較）: 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "es",
+      "path": "content/post/taylor-and-maclaurin-series/index.es.md",
+      "translationHash": "c3b37c1b101dbd23edd3350d21a4f6c1fc873ad81305eefc3e9f224979c0938b",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "Valor aproximado: 0.8414709848078965\nValor de math.sin (para comparar): 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "ko",
+      "path": "content/post/taylor-and-maclaurin-series/index.ko.md",
+      "translationHash": "2360f8cc37be8528d6b1b34da0e3fe7d8a8ba9910051904b407d49c24f8bc360",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "근사값: 0.8414709848078965\nmath.sin 값 (비교용): 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
+    }
+  ],
+  "sourceNumericalEvidence": "docs/translation-review/batch-007-source-validation.json",
+  "limitations": [
+    "Structural and numerical checks supplement complete-body semantic reading; they are not substitutes for it.",
+    "English, Simplified/Traditional Chinese, Spanish and Korean have been reviewed; seven Taylor translations remain unreviewed.",
+    "Publication of this Taylor batch is not yet verified."
+  ],
+  "localPreview": {
+    "hugo": "0.139.0 extended",
+    "multilingualPagesChecked": 623,
+    "httpsHtmlFilesChecked": 1169,
+    "httpsXmlFilesChecked": 41,
+    "scope": "Eight bundles rendered; Taylor semantic review covers Japanese, English, Simplified/Traditional Chinese, Spanish and Korean only.",
+    "existingWarnings": "Post-only preview lacks search/archive pages and home JSON layout; existing Portuguese theme UI translations are incomplete."
+  }
+}
