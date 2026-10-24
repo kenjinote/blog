@@ -1,101 +1,108 @@
 ---
 title: "Transformada Rápida de Fourier (FFT): El algoritmo que aceleró el audio, la imagen y las comunicaciones"
-description: "Explicación exhaustiva de la Transformada Rápida de Fourier (FFT), desde su derivación matemática y su implementación en Python, hasta sus aplicaciones en la compresión de imágenes y audio (JPEG y MP3), desde los fundamentos hasta las aplicaciones."
+description: "Derivación de la FFT para calcular DFT finitas e implementación en Python con entradas complejas. Distinción entre algoritmos FFT y las transformadas DCT y MDCT de la codificación audiovisual."
 date: 2026-09-25T10:38:30+09:00
+lastmod: 2026-10-24
 slug: fast-fourier-transform-algorithm
 categories: ["mathematics", "computer-science"]
 tags: ["math", "fft", "algorithm", "signal-processing"]
 image: eyecatch.jpg
 ---
 
-## 1. Introducción: Invitación al mundo de la Transformada de Fourier
+## 1. Introducción: transformadas de Fourier y señales
 
-Nuestra vida cotidiana está rodeada de ondas (señales). El sonido que llega a nuestros oídos, la luz que entra por nuestros ojos, las ondas de radio que envían y reciben los teléfonos inteligentes: todas estas son "ondas" que fluctúan temporal o espacialmente. Sin embargo, es muy difícil analizar o procesar estas ondas en su forma original. Aquí es donde entra en juego la **Transformada de Fourier (Fourier Transform)**.
+El sonido, la luz y las señales de radio que intercambian los teléfonos varían en el tiempo o en el espacio. El análisis de Fourier permite estudiar y procesar esas señales mediante sus componentes de frecuencia.
 
-La Transformada de Fourier se basa en el sorprendente teorema de que "cualquier onda compleja puede representarse como la superposición de ondas senos y cosenos simples". Al convertir una señal representada en el dominio del tiempo (Time Domain) al dominio de la frecuencia (Frequency Domain), podemos saber qué tonos de sonido están presentes en esa señal y con qué intensidad.
+Representa señales con funciones trigonométricas o exponenciales complejas. La convergencia de una serie y la existencia de una transformada continua requieren condiciones; no existe un único teorema que permita descomponer cualquier onda sin restricciones. A partir de la [introducción a las series y la transformada de Fourier](/es/p/fourier-series-and-transform/), nos centramos en la DFT de datos finitos y su cálculo. Los valores en frecuencia describen magnitudes y fases, pero leer amplitudes exige atender también a la normalización y al intervalo de observación.
 
-Sin embargo, al implementar la transformada de Fourier en una computadora, si se utiliza una Transformada de Fourier Discreta (DFT: Discrete Fourier Transform) ingenua, se requiere una complejidad computacional de $O(N^2)$ para una cantidad de datos $N$, lo que impedía el procesamiento a velocidades prácticas. Lo que rompió esta barrera fue la **Transformada Rápida de Fourier (FFT: Fast Fourier Transform)**. La FFT redujo drásticamente la complejidad computacional a $O(N \log N)$ y se convirtió en la base del procesamiento de señales digitales moderno.
+Evaluar directamente una DFT de $N$ puntos requiere $O(N^2)$ operaciones. Puede bastar para datos pequeños, pero resultar costoso para $N$ grande. La **transformada rápida de Fourier (FFT)** es una familia de algoritmos que calculan la misma DFT eficientemente. El método de base 2 que derivamos necesita $O(N\log N)$ operaciones. FFT no significa por sí misma otra transformación ni una aproximación.
 
-En este artículo, profundizaremos en la totalidad de la FFT, desde la transición de lo continuo a lo discreto, la derivación matemática del algoritmo tipo Cooley-Tukey, una ilustración detallada de la operación de mariposa, hasta su implementación en Python y ejemplos de aplicaciones.
+Distinguimos la transformada continua de la DFT finita, derivamos la descomposición de Cooley–Tukey y la mariposa, implementamos y comprobamos una versión recursiva en Python y explicamos su función en las aplicaciones.
 
 ---
 
-## 2. Transición de la transformada continua a la discreta (DFT)
+## 2. De la transformada continua a la DFT finita
 
-Para comprender la FFT, primero debemos entender la Transformada de Fourier Discreta (DFT).
+Para comprender los algoritmos FFT, primero debemos entender la DFT.
 
-### Transformada de Fourier Continua (CFT)
+### Transformada continua de Fourier
 
-La ecuación de definición original de la transformada de Fourier continua es la siguiente:
+Con frecuencia $f$ en hercios y tiempo $t$ en segundos, una convención es la siguiente. Por ejemplo, si $\int_{-\infty}^{\infty}|x(t)|\,dt<\infty$, la integral converge absolutamente para todo $f$ real.
 
 $$ X(f) = \int_{-\infty}^{\infty} x(t) e^{-j 2\pi f t} dt $$
 
-Aquí, $x(t)$ es la señal en el tiempo $t$, $X(f)$ es un número complejo que representa la amplitud y la fase del componente en la frecuencia $f$, y $j$ es la unidad imaginaria. Sin embargo, las computadoras no pueden manejar datos continuos infinitos. En el procesamiento de señales en el mundo real, la señal se muestrea (se toman muestras) a intervalos regulares y se trata como un número finito de puntos de datos.
+Aquí $j^2=-1$; $j$ es la misma unidad imaginaria que suele escribirse $i$ en matemáticas. $X(f)$ es un peso complejo de un espectro continuo, no directamente la amplitud de una componente individual de una señal periódica. En la práctica se usan muestras equiespaciadas y un intervalo de observación finito. Muestrear y seleccionar ese intervalo son operaciones distintas de la propia transformada continua.
 
-### Derivación de la Transformada de Fourier Discreta (DFT)
+### DFT de una secuencia finita
 
-Sea $x[n]$ una secuencia obtenida al muestrear la señal $x(t)$ $N$ veces con un período de muestreo $T_s$ ($n = 0, 1, ..., N-1$). En este caso, el dominio de la frecuencia también se discretiza, y la DFT se define de la siguiente manera:
+Supongamos $x[n]=x(nT_s)$, con $n=0,\ldots,N-1$ e intervalo de muestreo $T_s>0$. La DFT de esa secuencia se define abajo, donde $N$ es un entero positivo. También se aplica a cualquier secuencia compleja, sin exigir que exista una transformada continua.
 
 $$ X[k] = \sum_{n=0}^{N-1} x[n] e^{-j \frac{2\pi}{N} k n} \quad (k = 0, 1, ..., N-1) $$
 
-Si establecemos $W_N = e^{-j \frac{2\pi}{N}}$ (a esto se le llama factor de rotación o factor de giro), la ecuación se vuelve más simple:
+La DFT inversa correspondiente es la siguiente. La directa no lleva factor de escala, y la inversa incluye $1/N$.
+
+$$ x[n]=\frac{1}{N}\sum_{k=0}^{N-1}X[k]e^{j\frac{2\pi}{N}kn}\quad(n=0,\ldots,N-1) $$
+
+La frecuencia de muestreo es $f_s=1/T_s$ y los bins están separados $f_s/N$ Hz. Los bins con $k>N/2$ se interpretan como frecuencias $(k-N)f_s/N$ Hz; para $N$ par, $k=N/2$ es la componente de Nyquist. El muestreo puede causar aliasing y el intervalo finito puede causar fuga espectral. Recuperar una señal continua exige hipótesis como la limitación de banda. Un número entero de ciclos de una sinusoide en el intervalo la alinea con un bin y evita la fuga, pero no garantiza por sí solo la reconstrucción perfecta de una señal continua.
+
+Definimos $W_N=e^{-j2\pi/N}$, el **factor de rotación (twiddle factor)**, para simplificar:
 
 $$ X[k] = \sum_{n=0}^{N-1} x[n] W_N^{kn} $$
 
-Si intentamos calcular esta DFT de forma ingenua, se necesitarán $N$ multiplicaciones y sumas para cada $k$, y como hay $N$ de $k$, se requerirá un total de $N \times N = N^2$ multiplicaciones complejas. Si la longitud de los datos $N$ es $1,000,000$, se necesitarán $N^2 = 1,000,000,000,000$ (1 billón) de operaciones, lo cual es totalmente inviable para el procesamiento en tiempo real.
+El cálculo directo suma $N$ términos para cada uno de $N$ resultados. Un recuento sencillo da $N^2$ multiplicaciones complejas y $N(N-1)$ sumas. Pueden omitirse multiplicaciones por factores triviales, como 1, pero el método sigue siendo $O(N^2)$. Para $N=1.000.000$, $N^2=10^{12}$, por lo que mejorar el cálculo importa con datos grandes. El tiempo real de ejecución depende también del hardware y de la implementación.
 
 ---
 
-## 3. Derivación matemática del algoritmo FFT: Tipo Cooley-Tukey
+## 3. Derivación de la FFT de Cooley–Tukey
 
-El algoritmo redescubierto en 1965 por James Cooley y John Tukey (se dice que [Carl Friedrich Gauss](/es/p/gauss/) ya había descubierto un método similar en 1805) es el algoritmo FFT más utilizado en la actualidad. Aquí derivaremos la FFT de decimación en el tiempo (Decimation-in-Time, DIT) de base 2 para el caso en que el número de datos $N$ sea una potencia de 2 ($N = 2^m$).
+Cooley y Tukey publicaron y popularizaron en 1965 la descomposición en DFT más pequeñas. El artículo sobre la implementación de FFTW explica que [Gauss](/es/p/gauss/) ya conocía ideas relacionadas en 1805. Derivamos una FFT moderna de base 2 con decimación en el tiempo (DIT), para $N=2^p$, donde $p$ es un entero no negativo. Los algoritmos FFT en general no se limitan a longitudes que sean potencias de dos.
 
-### División en pares e impares (Divide y vencerás)
+### Separación de índices pares e impares
 
-Dividimos la ecuación de la DFT en los casos donde $n$ es par y donde $n$ es impar.
+La separación siguiente vale para $N\ge2$. El caso base $N=1$ es simplemente $X[0]=x[0]$. Separamos la DFT según los índices $n$ pares e impares.
 
 $$ X[k] = \sum_{n=0}^{N-1} x[n] W_N^{kn} $$
 
-Dividimos en $n = 2m$ (índices pares) y $n = 2m + 1$ (índices impares). Donde $m = 0, 1, ..., N/2 - 1$.
+Escribimos $n=2m$ para los pares y $n=2m+1$ para los impares, con $m=0,1,\ldots,N/2-1$.
 
 $$ X[k] = \sum_{m=0}^{N/2-1} x[2m] W_N^{k(2m)} + \sum_{m=0}^{N/2-1} x[2m+1] W_N^{k(2m+1)} $$
 
-Aquí, utilizamos la propiedad del factor de rotación $W_N^{2} = e^{-j \frac{4\pi}{N}} = e^{-j \frac{2\pi}{N/2}} = W_{N/2}$. Además, factorizamos $W_N^k$ del segundo término del lado derecho.
+Usamos $W_N^2=e^{-j4\pi/N}=e^{-j2\pi/(N/2)}=W_{N/2}$ y extraemos $W_N^k$ de la suma de índices impares.
 
 $$ X[k] = \sum_{m=0}^{N/2-1} x[2m] W_{N/2}^{km} + W_N^k \sum_{m=0}^{N/2-1} x[2m+1] W_{N/2}^{km} $$
 
-Sorprendentemente, esta ecuación tiene el siguiente significado:
-- El primer término es una DFT de $N/2$ puntos del grupo de datos pares de los datos originales $x[0], x[2], x[4], ...$ (Llamaremos a esto $E[k]$).
-- La parte de sumatoria del segundo término es una DFT de $N/2$ puntos del grupo de datos impares $x[1], x[3], x[5], ...$ (Llamaremos a esto $O[k]$).
+Las sumas tienen estos significados:
 
-Es decir, se puede escribir de la siguiente manera:
+- La primera es la DFT de $N/2$ puntos de $x[0],x[2],x[4],\ldots$, denotada $E[k]$.
+- La suma del segundo término es la DFT de $N/2$ puntos de $x[1],x[3],x[5],\ldots$, denotada $O[k]$.
+
+Así:
 
 $$ X[k] = E[k] + W_N^k O[k] $$
 
-### Aprovechando la periodicidad
+### Uso de la periodicidad
 
-Aquí, dado que $E[k]$ y $O[k]$ son DFTs de $N/2$ puntos, tienen un período de $N/2$. Es decir, $E[k + N/2] = E[k]$ y $O[k + N/2] = O[k]$.
-Además, el factor de rotación tiene la propiedad de que $W_N^{k + N/2} = W_N^k \cdot e^{-j\pi} = -W_N^k$.
+Como DFT de $N/2$ puntos, $E$ y $O$ se repiten con período $N/2$: $E[k+N/2]=E[k]$ y $O[k+N/2]=O[k]$. Además, $W_N^{k+N/2}=W_N^k e^{-j\pi}=-W_N^k$.
 
-Combinando esto, la segunda mitad de $k \ge N/2$ se puede calcular de la siguiente manera:
+Ahora tomamos $k=0,\ldots,N/2-1$. Para el mismo $k$, el resultado de la primera mitad $X[k]$ y el de la segunda $X[k+N/2]$ se calculan como un par, mediante la ecuación anterior y:
 
 $$ X[k + N/2] = E[k] - W_N^k O[k] $$
 
-Esto reduce el trabajo de cálculo a la mitad. Para calcular una DFT de tamaño $N$, basta con calcular dos DFTs de tamaño $N/2$ y combinarlas. Repetir esta división recursivamente (hasta que el tamaño sea 1) es el algoritmo FFT de decimación en el tiempo. Esto reduce la complejidad computacional a $O(N \log_2 N)$.
+Calculamos dos DFT de longitud $N/2$ y compartimos el producto por el factor de rotación para formar la suma y la diferencia. Esto no significa simplemente reducir una vez a la mitad todo el cálculo. La combinación cuesta $O(N)$; al repetir la recursión hasta longitud 1 obtenemos la recurrencia para el número de operaciones:
+
+$$ T(N)=2T(N/2)+O(N)=O(N\log_2 N)\quad(N\ge2),\qquad T(1)=O(1) $$
 
 ---
 
-## 4. Ilustración de la operación de mariposa
+## 4. Operación de mariposa
 
-La unidad básica que calcula simultáneamente $X[k]$ y $X[k + N/2]$ de arriba se llama **operación de mariposa (Butterfly Operation)**. Se nombró así porque el flujo de cálculo se asemeja a las alas de una mariposa.
-
-A continuación, se muestra el flujo de datos de la operación de mariposa de base 2.
+La unidad que calcula conjuntamente $X[k]$ y $X[k+N/2]$ se llama **mariposa**, porque su flujo de datos se asemeja a unas alas. El esquema de base 2 explicita el producto compartido y la resta.
 
 ```mermaid
 graph LR
-    A["E[k]"] --> C["+"]
-    A --> D["-"]
-    B["O[k]"] -- "* W_N^k" --> X[" "]
+    A["E[k]"] --> C["E[k] + T[k]"]
+    A --> D["E[k] - T[k]"]
+    B["O[k]"] -- "* W_N^k" --> X["T[k] = W_N^k O[k]"]
     X --> C
     X --> D
     C --> E["X[k]"]
@@ -109,95 +116,110 @@ graph LR
     style F fill:#9467bd,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
-Los datos de entrada se reordenan mediante una división recursiva en un orden especial llamado "Inversión de bits (Bit-Reversal Permutation)". Por ejemplo, para $N=8$, el índice cambia de $(0, 1, 2, 3, 4, 5, 6, 7)$ a $(0, 4, 2, 6, 1, 5, 3, 7)$. Después de realizar esta reordenación, se obtienen los componentes de frecuencia finales ejecutando la operación de mariposa anterior durante $\log_2 N$ etapas.
+Algunas implementaciones iterativas DIT de base 2 ordenan primero la entrada mediante una permutación por inversión del orden de los bits (*bit-reversed order*), y después aplican mariposas de longitud 2, 4, 8, etc. Para $N=8$, el orden de índices es $(0,4,2,6,1,5,3,7)$. La implementación recursiva siguiente trata ese orden implícitamente al separar repetidamente índices pares e impares, y devuelve los resultados en orden normal. No aplique otra permutación de este tipo antes de llamarla. La posición de la reordenación depende de DIT, DIF y de la implementación.
 
 ---
 
-## 5. Implementación en Python de la FFT y comparación
+## 5. Implementación en Python y comparación
 
-Vamos a traducir la teoría a código. Aquí, crearemos nuestra propia FFT tipo Cooley-Tukey utilizando funciones recursivas y la compararemos con la biblioteca estándar de NumPy `numpy.fft.fft` para ver si funciona correctamente.
+NumPy es una biblioteca numérica externa, no parte de la biblioteca estándar de Python. Esta implementación didáctica acepta una secuencia unidimensional de valores numéricos finitos, cuya longitud sea $2^p$ con un entero $p\ge0$. Admite entradas reales y complejas y devuelve valores complejos. Para otras longitudes se puede utilizar una biblioteca FFT de uso general.
 
-### Implementación propia de FFT
+### Implementación recursiva
 
 ```python
 import numpy as np
 
 def custom_fft(x):
-    """
-    Algoritmo FFT DIT de base 2 recursivo unidimensional
-    * La longitud de la entrada debe ser una potencia de 2
-    """
-    x = np.asarray(x, dtype=float)
-    N = x.shape[0]
-    
-    # Condición de finalización: si los datos son 1 punto, devolverlos tal cual
-    if N <= 1:
-        return x
-    
-    # Comprobar si la longitud de los datos es una potencia de 2
-    if N % 2 != 0:
-        raise ValueError("El tamaño debe ser una potencia de 2")
-    
-    # Dividir en índices pares e impares
-    even = custom_fft(x[0::2])
-    odd = custom_fft(x[1::2])
-    
-    # Cálculo del factor de rotación (factor de giro)
-    T = [np.exp(-2j * np.pi * k / N) * odd[k] for k in range(N // 2)]
-    
-    # Síntesis de los resultados
-    return np.array([even[k] + T[k] for k in range(N // 2)] +
-                    [even[k] - T[k] for k in range(N // 2)])
+    """FFT DIT de base 2 para una secuencia 1D finita de longitud potencia de dos."""
+    x = np.asarray(x, dtype=np.complex128)
+    if x.ndim != 1:
+        raise ValueError("Input must be one-dimensional")
+    N = x.size
+    if N == 0 or (N & (N - 1)) != 0:
+        raise ValueError("Length must be a positive power of two")
+    if not np.all(np.isfinite(x)):
+        raise ValueError("Input must contain only finite values")
+
+    def recurse(values):
+        n = values.size
+        if n == 1:
+            return values.copy()
+        even = recurse(values[::2])
+        odd = recurse(values[1::2])
+        # Compartir el resultado impar multiplicado por el factor de rotación
+        twiddled = np.exp(-2j * np.pi * np.arange(n // 2) / n) * odd
+        return np.concatenate((even + twiddled, even - twiddled))
+
+    return recurse(x)
 ```
 
-### Prueba de comparación con numpy.fft
+### Comparación con NumPy
 
 ```python
-# Preparación de datos: tasa de muestreo y eje de tiempo
-fs = 1024 # Tasa de muestreo
-t = np.linspace(0, 1, fs, endpoint=False)
+# Ejecutar en la misma sesión que el bloque anterior
+fs = 1024
+t = np.arange(fs) / fs
+signal = 3 * np.sin(2 * np.pi * 50 * t) + np.sin(2 * np.pi * 120 * t)
 
-# Creación de una onda compuesta (síntesis de ondas senoidales de 50Hz y 120Hz)
-signal = 3 * np.sin(2 * np.pi * 50 * t) + 1 * np.sin(2 * np.pi * 120 * t)
-
-# Ejecución de la FFT propia
 fft_custom_result = custom_fft(signal)
-
-# Ejecución de la FFT de NumPy
 fft_numpy_result = np.fft.fft(signal)
+max_error = np.max(np.abs(fft_custom_result - fft_numpy_result))
+agrees = np.allclose(fft_custom_result, fft_numpy_result,
+                     rtol=1e-12, atol=1e-10)
+print("NumPy agreement:", agrees)
+print("Maximum absolute error:", max_error)
 
-# Comparación de resultados (verificación de errores)
-difference = np.allclose(fft_custom_result, fft_numpy_result)
-print(f"Coincidencia con la FFT de NumPy: {difference}")
+# Comprobar también que se conservan las partes imaginarias
+complex_signal = np.array([1 + 2j, 3 - 4j, -2 + 0.5j, 0.25j])
+print("Complex input agreement:", np.allclose(
+    custom_fft(complex_signal), np.fft.fft(complex_signal),
+    rtol=1e-12, atol=1e-10))
 ```
 
-Al ejecutar este código, se mostrará `Coincidencia con la FFT de NumPy: True`, lo que confirma que el algoritmo que derivamos de las matemáticas funciona con precisión. En la práctica, la implementación de NumPy (internamente utiliza FFTPACK o PocketFFT, etc.) está optimizada y sin recursión para evitar la sobrecarga de llamadas recursivas, además de vectorización y optimización de caché, por lo que funciona muy rápido.
+En el entorno de validación se imprimen `NumPy agreement: True` y `Complex input agreement: True`. El error absoluto máximo varía según el entorno y el redondeo. La comparación comprueba concordancia para las entradas elegidas; no es una demostración general de corrección ni una medición de velocidad. La corrección se debe a que cada paso recursivo conserva la descomposición de la DFT. La precisión finita sigue implicando redondeo y posible desbordamiento para valores demasiado grandes.
+
+El uso de `complex128` conserva las partes imaginarias, a diferencia del `dtype=float` original. Se rechazan explícitamente entradas vacías, matrices bidimensionales, longitudes que no sean potencias de dos, NaN e infinito. Un solo elemento devuelve su propia DFT de un punto.
+
+NumPy 2.3.5, usado en la validación, llama a PocketFFT mediante `numpy.fft`. NumPy sustituyó su implementación anterior basada en FFTPACK en la versión 1.17. Las bibliotecas rápidas no son necesariamente no recursivas. Su rendimiento depende también del orden de cálculo, el movimiento de datos, las cachés y SIMD; este breve código Python no tiene el mismo rendimiento que una biblioteca de producción.
 
 ---
 
-## 6. Aplicaciones de la FFT en el mundo real: Audio e Imagen
+## 6. Aplicaciones: audio, imágenes y comunicaciones
 
-La FFT no es un simple rompecabezas matemático. La sociedad digital moderna no podría existir sin la FFT. Aquí mencionamos dos de los ejemplos de aplicación más representativos.
+Distinga la representación en frecuencia de FFT como forma de calcular una transformada. DCT y MDCT son transformadas relacionadas, pero distintas de la DFT calculada mediante FFT.
 
-### Compresión de audio (MP3, AAC)
+### Compresión de audio: MP3 y AAC
 
-El oído humano tiene una característica llamada "efecto de enmascaramiento", que hace que no pueda percibir sonidos bajos que se producen inmediatamente después de un sonido fuerte, o que están cerca de una frecuencia específica.
-En los algoritmos de compresión de audio, la señal se divide en tramas cortas, a cada una de las cuales se le aplica la FFT (o una versión mejorada, la Transformada de Coseno Discreta = MDCT) para obtener sus componentes de frecuencia. Luego, se reduce la información de los componentes que son difíciles de escuchar para el oído humano, o se disminuye la cantidad de bits para representarlos, logrando así una drástica compresión de datos mientras se mantiene la calidad del sonido.
+La codificación perceptual de audio utiliza el enmascaramiento dependiente del tiempo y la frecuencia para hacer menos audible el ruido de cuantificación. La audibilidad depende de la señal y de las condiciones de codificación; no es una regla absoluta que un sonido débil próximo a uno fuerte siempre sea inaudible. La compresión es con pérdidas, por lo que los datos decodificados no tienen por qué ser idénticos bit a bit al original.
 
-### Compresión de imágenes (JPEG)
+El banco de filtros de análisis principal de MP3 es un híbrido de un banco polifásico y una MDCT. La codificación por transformada de AAC básico también utiliza MDCT. **MDCT** significa **transformada de coseno discreta modificada (modified discrete cosine transform)**, no una FFT mejorada. Un codificador puede usar FFT por separado para el análisis psicoacústico: el diagrama de Fraunhofer muestra una FFT de análisis distinta de la ruta principal MDCT. El tipo de transformada y el algoritmo rápido usado en una etapa de procesamiento son conceptos separados.
 
-Las imágenes pueden considerarse como "ondas espaciales". Las áreas donde el brillo de los píxeles cambia suavemente son "baja frecuencia", y las áreas donde el color cambia drásticamente, como los contornos o texturas, son "alta frecuencia".
-En la compresión de imágenes JPEG, la imagen se divide en bloques de $8 \times 8$ y se realiza una transformada de coseno discreta bidimensional (DCT: algo así como un pariente de la FFT). Dado que la energía de la imagen se concentra principalmente en los componentes de baja frecuencia, al descartar (cuantificar) los datos de los componentes de alta frecuencia (patrones finos), el tamaño del archivo se reduce al mismo tiempo que se minimiza la degradación visual.
+### Compresión de imágenes: JPEG
 
-Además, la FFT tiene una amplia gama de aplicaciones, como la modulación OFDM (Multiplexación por División de Frecuencias Ortogonales) utilizada en comunicaciones inalámbricas como Wi-Fi y LTE, la reconstrucción de imágenes de resonancia magnética (RM) en el campo médico, el análisis de ondas sísmicas y el procesamiento de datos en astronomía.
+Las imágenes pueden entenderse mediante frecuencias espaciales. Los cambios suaves de brillo corresponden a frecuencias bajas; los bordes y texturas con cambios rápidos aportan frecuencias más altas.
+
+El método básico del JPEG habitual con pérdidas divide las muestras de cada componente de imagen en bloques $8\times8$, aplica una DCT bidimensional y cuantifica los coeficientes. Las imágenes naturales suelen concentrar energía en las frecuencias espaciales bajas. Una cuantificación más gruesa de los coeficientes de alta frecuencia puede hacer que más de ellos sean cero. Cuantificar no consiste simplemente en descartar todas las frecuencias altas, y la degradación visual depende de la imagen y de los ajustes. DCT no debe equipararse directamente con FFT.
+
+En OFDM, la DFT inversa del transmisor combina subportadoras y puede calcularse mediante IFFT; la DFT del receptor puede calcularse mediante FFT. La reconstrucción básica de RM a partir de un espacio k cartesiano completamente muestreado también usa FFT inversas multidimensionales. El muestreo no cartesiano y efectos físicos adicionales requieren más procesamiento. El análisis de frecuencia se utiliza también con datos sísmicos y astronómicos, con métodos que dependen de los datos y del objetivo.
 
 ---
 
-## 7. Resumen
+## 7. Conclusión
 
-Se dice que la Transformada Rápida de Fourier (FFT) es uno de los "mayores descubrimientos algorítmicos del siglo XX" en las ciencias de la computación.
-Traducir el concepto de onda continua en una fórmula discreta (DFT) y luego reducir drásticamente la complejidad de los cálculos de $O(N^2)$ a $O(N \log N)$ aprovechando hábilmente la periodicidad y la simetría inherentes a esa fórmula matemática, es el ejemplo de éxito más hermoso del enfoque de divide y vencerás en el diseño de algoritmos.
+Los algoritmos FFT aprovechan la periodicidad y simetría de la DFT para obtener la misma transformada con menos operaciones. DIT de base 2 calcula recursivamente las DFT de índices pares e impares y las combina con mariposas, con complejidad $O(N\log N)$.
 
-Si hoy en día podemos escuchar música en streaming y enviar imágenes de alta resolución al instante, es porque este algoritmo está operando silenciosamente y a muy alta velocidad en lo profundo de nuestro hardware y software. Comprender la elegancia matemática detrás de la FFT profundizará sin duda su comprensión del mundo digital.
+Especifique restricciones de longitud, tratamiento de entradas complejas, orden de frecuencias, normalización y errores de coma flotante. Distinguir las transformadas DFT, DCT y MDCT de su cálculo mediante FFT aclara la relación entre matemáticas y tecnología.
 
-En futuros artículos de este blog continuaremos explicando en detalle más temas relacionados con el análisis de Fourier y el procesamiento de señales, así que no se los pierdan.
+Otros artículos del blog explican temas relacionados con el análisis de Fourier y el procesamiento de señales.
+
+## Referencias
+
+- [MIT 6.341 Lecture 19: DFT, DIT/DIF, operaciones e inversión del orden de bits](https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf)
+- [Frigo y Johnson, The Design and Implementation of FFTW3: descomposición, historia y orden de cálculo en §II](https://www.fftw.org/~fftw/fftw-paper-ieee.pdf)
+- [NumPy 2.3: fft y sus convenciones](https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html)
+- [Notas de NumPy 1.17: sustitución por PocketFFT](https://numpy.org/doc/2.3/release/1.17.0-notes.html)
+- [Código de NumPy 2.3.5: llamadas a PocketFFT](https://raw.githubusercontent.com/numpy/numpy/v2.3.5/numpy/fft/_pocketfft.py)
+- [Brandenburg, MP3 and AAC Explained: §1, §3.3, §4.2 y figura2](https://www.iis.fraunhofer.de/content/dam/iis/de/doc/ame/conference/AES-17-Conference_mp3-and-AAC-explained_AES17.pdf)
+- [ITU-T T.81: DCT y cuantificación JPEG en §4.2–4.3](https://www.w3.org/Graphics/JPEG/itu-t81.pdf)
+- [MathWorks: introducción a OFDM](https://www.mathworks.com/help/comm/gs/introduction-to-ofdm.html)
+- [Larson Lab, Principles of MRI: reconstrucción con muestreo cartesiano completo](https://larsonlab.github.io/MRI-education-resources/Image%20Reconstruction.html)
