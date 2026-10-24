@@ -1,8 +1,9 @@
 ---
-title: "Théorème des Résidus : Résoudre Brillamment les Intégrales Réelles Complexes à l'Aide des « Singularités » dans le Plan Complexe"
-description: "Une explication détaillée de la façon de simplifier étonnamment les intégrales définies difficiles de nombres réels en utilisant le théorème des résidus, un point culminant de l'analyse complexe. Couvre également les coupures de branche et les intégrales en trou de serrure."
+title: "Théorème des résidus : calculer des intégrales réelles à l'aide des singularités complexes"
+description: "Calcul d'intégrales réelles par le théorème des résidus, avec les conditions sur les singularités, l'orientation, les coupures et les contours en trou de serrure."
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
+lastmod: 2026-10-24
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["analyse complexe", "calcul", "mathématiques"]
@@ -10,31 +11,31 @@ tags: ["analyse complexe", "calcul", "mathématiques"]
 
 ## Introduction : Les Limites des Intégrales Réelles et le Saut vers le Plan Complexe
 
-Les intégrales définies apprises en mathématiques au lycée et en première année de calcul universitaire sont des outils puissants pour résoudre de nombreux problèmes de physique et d'ingénierie. Cependant, lorsque l'on travaille uniquement dans le domaine des nombres réels, on rencontre souvent des intégrales qui sont extrêmement difficiles, voire pratiquement impossibles à résoudre analytiquement. Par exemple, considérez l'intégrale impropre suivante :
+Les intégrales définies sont des outils importants en physique et en ingénierie. Trouver directement une primitive en variables réelles peut toutefois être difficile. Sous des hypothèses appropriées, le théorème des résidus fournit une autre méthode pour calculer certaines de ces intégrales. Commençons par l'intégrale impropre suivante :
 
 $$
 I = \int_{-\infty}^{\infty} \frac{1}{x^2 + 1} dx
 $$
 
-Bien que cette intégrale elle-même puisse être résolue en utilisant $\arctan(x)$, si le dénominateur devient un polynôme de degré supérieur, ou si des fonctions trigonométriques comme le sinus et le cosinus sont intimement impliquées, trouver une primitive (intégrale indéfinie) en tant que fonction réelle devient pratiquement impossible.
+Cette intégrale se calcule avec $\arctan(x)$. Pour des fonctions rationnelles ou trigonométriques plus compliquées, chercher directement une primitive peut être moins commode qu'utiliser une méthode d'intégration sur un contour.
 
-C'est là qu'intervient une arme puissante de l'**analyse complexe** (la théorie des fonctions complexes), largement considérée comme l'une des plus belles théories des mathématiques : le **[Théorème des Résidus](https://kenji.blog/fr/p/residue-theorem/) de [Cauchy](https://kenji.blog/fr/p/cauchy/)**. En étendant audacieusement une intégrale effectuée sur la droite numérique réelle (unidimensionnelle) au **plan complexe** (bidimensionnel), des intégrales réelles impossibles peuvent être résolues avec brio.
+Le **théorème des résidus** relie une intégrale sur la droite réelle à une intégrale sur un contour fermé du plan complexe. Il utilise des informations locales autour des singularités isolées. Le choix d'une extension complexe appropriée et l'estimation des morceaux supplémentaires du contour sont essentiels ; passer au plan complexe ne calcule pas automatiquement une intégrale réelle arbitraire.
 
 ## Intégration Complexe et Singularités
 
-L'intégrale d'une fonction complexe $f(z)$ est effectuée le long d'une courbe (contour) dans le plan complexe. Dans une région où la fonction est analytique (différentiable), l'intégrale le long d'une courbe fermée est nulle. Ceci est connu sous le nom de **Théorème Intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/)**.
+Une fonction complexe $f(z)$ s'intègre le long d'une courbe du plan complexe. Si $C$ est une courbe fermée simple de classe $C^1$ par morceaux et si $f$ est holomorphe dans un ouvert contenant $C$ et son intérieur, on a la conséquence suivante du **[théorème intégral de Cauchy](/fr/p/cauchys-integral-theorem/)**. L'holomorphie seule ne justifie pas cette conclusion pour toute courbe dans un domaine troué.
 
 $$
 \oint_C f(z) dz = 0 \quad (\text{si la fonction est holomorphe à l'intérieur et sur } C)
 $$
 
-Mais que se passe-t-il si la région à l'intérieur du contour inclut des points où $f(z)$ n'est pas définie, c'est-à-dire des points où elle diverge vers l'infini ? De tels points sont appelés des **singularités**. En particulier, les points où le dénominateur devient nul sont appelés des **pôles**.
+Que change la présence d'une singularité à l'intérieur du contour ? Une **singularité isolée** en $z_0$ signifie ici que $f$ est holomorphe dans un voisinage épointé $0<|z-z_0|<r$, mais pas en $z_0$. On distingue singularités éliminables, pôles et singularités essentielles. Un **pôle** possède une partie principale non nulle comportant un nombre fini de termes dans sa série de Laurent ; toute singularité n'est pas un pôle. Un dénominateur nul peut se simplifier : $(z^2-1)/(z-1)$ a une singularité éliminable en $1$, tandis que $e^{1/z}$ a une singularité essentielle en $0$.
 
 ```mermaid
 flowchart TD
-    A["Intégrale complexe sur la droite réelle"] -->|"Extension au plan complexe"| B["Définir la fonction complexe f(z)"]
+    A["Intégrale réelle difficile"] -->|"Extension au plan complexe"| B["Définir la fonction complexe f(z)"]
     B --> C["Définir un contour approprié C"]
-    C --> D["Identifier les singularités (pôles) à l'intérieur du contour"]
+    C --> D["Vérifier les singularités isolées et les coupures"]
     D --> E["Calculer le résidu à chaque singularité"]
     E --> F["Appliquer le Théorème des Résidus"]
     F -->|"Prendre la limite"| G["Solution à l'intégrale réelle"]
@@ -42,29 +43,29 @@ flowchart TD
 
 ## Séries de Laurent et Résidus
 
-Une fonction complexe peut être développée autour d'une singularité à l'aide d'une **série de Laurent**, qui est une généralisation de la série de Taylor. Le développement de Laurent de $f(z)$ autour d'une singularité $z_0$ est exprimé comme suit :
+Si $f$ est holomorphe dans un voisinage épointé $0<|z-z_0|<r$ d'une singularité isolée, elle admet une **série de Laurent** convergente dans ce voisinage. Celle-ci étend la [série de Taylor](/fr/p/taylor-and-maclaurin-series/) aux puissances négatives et s'écrit comme suit. Plus généralement, les développements de Laurent se considèrent dans des couronnes d'holomorphie.
 
 $$
 f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z - z_0)^n}
 $$
 
-Ici, les termes avec des puissances négatives sont appelés la **partie principale** et déterminent la nature de la singularité. Parmi eux, $b_1$, le coefficient de $(z - z_0)^{-1}$, a une signification particulière. Ce $b_1$ est appelé le **résidu** de la fonction $f(z)$ en $z_0$, et s'écrit :
+La somme des termes de puissances négatives — la deuxième somme du membre de droite — est la **partie principale**. Elle détermine la nature de la singularité. En particulier, le coefficient $b_1$ de $(z-z_0)^{-1}$ est le **résidu** de $f$ en $z_0$, noté :
 
 $$
 \text{Res}(f, z_0) = b_1
 $$
 
-Pourquoi seul le coefficient de $(z - z_0)^{-1}$ est-il spécial ? Parce que si vous intégrez $\frac{1}{(z - z_0)^n}$ le long d'un minuscule cercle $C$ enfermant la singularité, ce n'est que lorsque $n = 1$ que la valeur $2\pi i$ reste ; pour toutes les autres valeurs de $n$, l'intégrale s'évalue à $0$.
+Le coefficient de $(z-z_0)^{-1}$ est particulier parce que l'intégrale de $1/(z-z_0)^n$ sur un petit cercle parcouru une fois dans le sens inverse des aiguilles d'une montre, à l'intérieur du voisinage épointé, vaut $2\pi i$ pour l'entier $n=1$ et $0$ pour les autres entiers. Inverser l'orientation change le signe.
 
-## [Théorème des Résidus](https://kenji.blog/fr/p/residue-theorem/) de [Cauchy](https://kenji.blog/fr/p/cauchy/)
+## Théorème des Résidus de [Cauchy](https://kenji.blog/fr/p/cauchy/)
 
-L'intégration de ces concepts donne le **[Théorème des Résidus](https://kenji.blog/fr/p/residue-theorem/)**. Si une courbe fermée $C$ contient plusieurs singularités isolées $z_1, z_2, \dots, z_k$ à l'intérieur, l'intégrale complexe le long de $C$ peut être calculée comme suit :
+Soit $C$ une courbe fermée simple, de classe $C^1$ par morceaux et orientée positivement (dans le sens inverse des aiguilles d'une montre). Supposons $f$ holomorphe dans un ouvert contenant $C$ et son intérieur, sauf en un nombre fini de singularités isolées intérieures $z_1,\ldots,z_k$, sans singularité sur la courbe. Le **théorème des résidus** donne alors :
 
 $$
 \oint_C f(z) dz = 2\pi i \sum_{j=1}^{k} \text{Res}(f, z_j)
 $$
 
-En d'autres termes, peu importe la complexité de l'intégrale de contour, vous n'avez pas besoin d'effectuer des calculs fastidieux le long du chemin. Vous prenez simplement les singularités à l'intérieur, calculez leurs "résidus", les additionnez et multipliez par $2\pi i$ pour obtenir la réponse.
+Sous ces hypothèses, on additionne les résidus intérieurs et on multiplie par $2\pi i$. La formulation générale pour une courbe qui se recoupe ou effectue plusieurs tours utilise aussi son indice par rapport à chaque singularité. La formule affichée ne s'applique pas directement à un contour passant par une singularité ou traversant une coupure.
 
 ## Application : Résolution d'Intégrales Réelles
 
@@ -75,7 +76,7 @@ I = \int_{-\infty}^{\infty} \frac{1}{x^2 + 1} dx
 $$
 
 ### Étape 1 : Extension à une Fonction Complexe et Choix du Contour
-Considérez la fonction $f(z) = \frac{1}{z^2 + 1}$ en remplaçant la variable réelle $x$ par une variable complexe $z$. Comme contour $C$, nous considérons une courbe fermée combinant le segment $[-R, R]$ sur l'axe réel et un arc semi-circulaire $C_R$ de rayon $R$ dans le demi-plan supérieur.
+Posons $f(z)=1/(z^2+1)$. Pour $R>1$, parcourons le segment réel de $-R$ à $R$, puis l'arc du demi-cercle supérieur $C_R$ de $R$ à $-R$, dans le sens inverse des aiguilles d'une montre. Cela forme le contour fermé positivement orienté $C$.
 
 ```mermaid
 flowchart LR
@@ -90,7 +91,7 @@ $$
 \oint_C f(z) dz = \int_{-R}^{R} f(x) dx + \int_{C_R} f(z) dz
 $$
 
-En prenant la limite lorsque $R \to \infty$, puisque le degré du dénominateur est d'au moins 2 supérieur à celui du numérateur, on peut montrer que l'intégrale sur l'arc semi-circulaire $\int_{C_R} f(z) dz$ converge vers $0$. Par conséquent, ce qui suit est vrai :
+Sur l'arc, $|z^2+1|\ge R^2-1$, donc $\left|\int_{C_R}f(z)\,dz\right|\le\pi R/(R^2-1)\to0$. Sur la droite réelle, l'intégrande est $O(x^{-2})$ à l'infini, et l'intégrale impropre converge absolument. La limite suivante donne donc l'intégrale impropre ordinaire, et pas seulement une valeur principale de Cauchy obtenue par troncature symétrique :
 
 $$
 \lim_{R \to \infty} \oint_C f(z) dz = \int_{-\infty}^{\infty} \frac{1}{x^2 + 1} dx
@@ -106,7 +107,7 @@ $$
 \text{Res}(f, i) = \lim_{z \to i} (z - i) f(z) = \lim_{z \to i} \frac{1}{z + i} = \frac{1}{2i}
 $$
 
-### Étape 3 : Application du [Théorème des Résidus](https://kenji.blog/fr/p/residue-theorem/)
+### Étape 3 : Application du Théorème des Résidus
 Par le théorème des résidus, l'intégrale sur la courbe fermée $C$ devient :
 
 $$
@@ -129,9 +130,9 @@ $$
 J = \int_{-\infty}^{\infty} \frac{\cos(kx)}{x^2 + a^2} dx \quad (k > 0, a > 0)
 $$
 
-Cette intégrale est redoutable en utilisant des calculs réels, mais elle se résout en considérant la fonction complexe $f(z) = \frac{e^{ikz}}{z^2 + a^2}$. À partir de la formule d'Euler $e^{ikx} = \cos(kx) + i\sin(kx)$, la partie réelle de l'intégrale fournit la réponse que nous cherchons.
+Considérons $f(z)=e^{ikz}/(z^2+a^2)$. Par la [formule d'Euler](/fr/p/euler/), $e^{ikx}=\cos(kx)+i\sin(kx)$, et la partie réelle de l'intégrale complexe fournit le résultat voulu. Pour $k>0,a>0$, l'intégrale sur la droite réelle converge absolument, ce qui permet de prendre la partie réelle sous le signe intégral.
 
-Ici aussi, nous considérons un contour semi-circulaire dans le demi-plan supérieur. D'après le **Lemme de Jordan**, lorsque $R \to \infty$, l'intégrale sur l'arc semi-circulaire converge vers $0$.
+Choisissons encore $R>a$, parcourons l'axe réel de $-R$ à $R$, puis revenons par le demi-cercle supérieur de $R$ à $-R$. On y a $|e^{ikz}|=e^{-k\operatorname{Im}z}\le1$, donc le module de l'intégrale sur l'arc ne dépasse pas $\pi R/(R^2-a^2)$ et tend vers zéro. Le **lemme de Jordan** fournit une estimation plus générale pour $e^{ikz}g(z)$ : à $k>0$ fixé, si le supremum de $|g|$ sur le demi-cercle supérieur tend vers zéro, l'intégrale sur l'arc aussi. Dans cet exemple, la décroissance quadratique du dénominateur suffit déjà.
 
 La singularité est $z = ia$ (demi-plan supérieur). Nous calculons le résidu :
 
@@ -161,17 +162,17 @@ $$
 K = \int_{0}^{\infty} \frac{x^{-a}}{x + 1} dx
 $$
 
-Pour évaluer cette intégrale, nous établissons une coupure de branche le long de l'axe réel positif et mettons en place un contour en forme de trou de serrure pour l'éviter.
+Pour $0<a<1$, l'intégrande est $O(x^{-a})$ près de zéro et $O(x^{-a-1})$ à l'infini, donc l'intégrale converge. Plaçons une coupure sur l'axe réel positif et choisissons la branche $0<\arg z<2\pi$, avec $\operatorname{Log}z=\log|z|+i\arg z$ et $F(z)=z^{-a}/(z+1)=e^{-a\operatorname{Log}z}/(z+1)$. Pour $0<\varepsilon<1<R$, avançons vers l'extérieur juste au-dessus de la coupure, suivons le cercle extérieur dans le sens inverse des aiguilles d'une montre, revenons vers l'intérieur juste sous la coupure et fermons le contour par le cercle intérieur dans le sens horaire. Le contour utilisé évite la coupure ; on prend les limites de part et d'autre.
 
 ```mermaid
 flowchart TD
-    A["Intégrale voyageant vers la droite, juste au-dessus de l'axe réel positif"] --> B["Boucle dans le sens antihoraire autour d'un cercle géant à l'infini"]
+    A["Intégrale vers la droite au-dessus de l'axe réel positif"] --> B["Cercle extérieur presque complet en sens antihoraire, évitant la coupure"]
     B --> C["Intégrale voyageant vers la gauche, juste en dessous de l'axe réel positif"]
-    C --> D["Boucle dans le sens horaire autour d'un minuscule cercle à l'origine"]
+    C --> D["Cercle intérieur presque complet en sens horaire"]
     D -->|"Ceux-ci forment le contour en trou de serrure"| E["Calcul du résidu au pôle z = -1 à l'intérieur du contour"]
 ```
 
-Les intégrales sur le cercle géant et le minuscule cercle s'annulent à la limite. Parce que la phase de la fonction diffère juste au-dessus et en dessous de l'axe réel (entraînant un facteur dû à une rotation de $e^{2\pi i}$), leur différence reste un multiple constant de l'intégrale originale $K$. En calculant le résidu à la singularité $z = -1 = e^{i\pi}$, nous dérivons le résultat étonnant suivant :
+Le module de la contribution extérieure est au plus $2\pi R^{1-a}/(R-1)$, qui tend vers zéro quand $R\to\infty$. Celui de la contribution intérieure ne dépasse pas $2\pi\varepsilon^{1-a}/(1-\varepsilon)$ et tend vers zéro quand $\varepsilon\to0$. Au-dessus de la coupure, $z^{-a}\to x^{-a}$ ; en dessous, $z^{-a}\to e^{-2\pi ia}x^{-a}$. Le côté inférieur étant parcouru en sens inverse, la somme des segments tend vers $(1-e^{-2\pi ia})K$. Dans la branche choisie, $\arg(-1)=\pi$, donc le résidu en $-1$ vaut $e^{-\pi ia}$. Ainsi, $(1-e^{-2\pi ia})K=2\pi i\,e^{-\pi ia}$. Avec $1-e^{-2\pi ia}=2i\,e^{-\pi ia}\sin(\pi a)$, on obtient :
 
 $$
 \int_{0}^{\infty} \frac{x^{-a}}{x + 1} dx = \frac{\pi}{\sin(a\pi)}
@@ -181,4 +182,10 @@ $$
 
 Le théorème des résidus est la quintessence de l'élégance mathématique, reliant magistralement des "pôles complexes" et des "intégrales réelles" apparemment sans rapport. Pour résoudre un problème de fonction réelle, vous sautez temporairement dans le monde plus vaste du plan complexe, n'examinez que les propriétés (résidus) des "obstacles" (singularités), et lorsque vous revenez dans le monde d'origine, le problème est brillamment résolu.
 
-Ce concept va au-delà des simples techniques de calcul et est appliqué dans toutes les scènes de la science et de la technologie modernes, telles que la transformée inverse de Laplace, l'évaluation des diagrammes de Feynman dans la théorie quantique des champs et la théorie du filtrage dans le traitement du signal. Le monde de l'analyse complexe fournit le point de vue ultime pour observer le monde des nombres réels.
+Ces méthodes de contour interviennent aussi dans la transformée inverse de [Laplace](/fr/p/laplace-transform/) et dans des intégrales de Fourier. Leur emploi rigoureux exige de vérifier les types de singularités, l'orientation du contour et la convergence à l'infini et près des points de branchement.
+
+## Références
+
+- [MIT 18.04 Topic 8: Residues and the residue theorem](https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/3c58ce71ec6f7573804221d76158a0bd_MIT18_04S18_topic8.pdf)
+- [MIT 18.04 Topic 9: Definite integrals using the residue theorem](https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf)
+- [NIST DLMF §1.10: Functions of a Complex Variable](https://dlmf.nist.gov/1.10)

@@ -1,8 +1,9 @@
 ---
-title: "Teorema dos Resíduos: Resolvendo Brilhantemente Integrais Reais Complexas Usando 'Singularidades' no Plano Complexo"
-description: "Uma explicação detalhada de como simplificar incrivelmente integrais definidas difíceis de números reais usando o teorema dos resíduos, um destaque da análise complexa. Também abrange cortes de ramo e integrais de buraco de fechadura."
+title: "Teorema dos resíduos: cálculo de integrais reais por singularidades no plano complexo"
+description: "Como calcular integrais reais com o teorema dos resíduos, explicitando as condições sobre singularidades, orientação, cortes de ramo e contornos em buraco de fechadura."
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
+lastmod: 2026-10-24
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags: ["análise complexa", "cálculo", "matemática"]
@@ -10,31 +11,31 @@ tags: ["análise complexa", "cálculo", "matemática"]
 
 ## Introdução: Os Limites das Integrais Reais e o Salto para o Plano Complexo
 
-As integrais definidas aprendidas na matemática do ensino médio e no cálculo do primeiro ano da universidade são ferramentas poderosas para resolver muitos problemas em física e engenharia. No entanto, quando trabalhamos apenas no domínio dos números reais, muitas vezes encontramos integrais que são extremamente difíceis ou praticamente impossíveis de resolver analiticamente. Por exemplo, considere a seguinte integral imprópria:
+As integrais definidas são ferramentas importantes na física e na engenharia. Encontrar diretamente uma primitiva em variáveis reais pode, porém, ser difícil. Sob hipóteses adequadas, o teorema dos resíduos oferece outro método para calcular algumas dessas integrais. Comecemos pela seguinte integral imprópria:
 
 $$
 I = \int_{-\infty}^{\infty} \frac{1}{x^2 + 1} dx
 $$
 
-Embora essa integral em si possa ser resolvida usando $\arctan(x)$, se o denominador se tornar um polinômio de grau superior, ou se funções trigonométricas como seno e cosseno estiverem intricadamente envolvidas, encontrar uma antiderivada (integral indefinida) como uma função real torna-se virtualmente impossível.
+Esta integral pode ser calculada com $\arctan(x)$. Para funções racionais ou trigonométricas mais complicadas, procurar diretamente uma primitiva pode ser menos conveniente, e um método de integração de contorno pode ser útil.
 
-É aqui que entra em cena uma arma poderosa da **análise complexa** (a teoria das funções complexas), amplamente considerada uma das teorias mais belas da matemática: o **[Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/) de [Cauchy](https://kenji.blog/pt/p/cauchy/)**. Ao estender de forma audaciosa uma integral realizada na reta numérica real (unidimensional) para o **plano complexo** (bidimensional), integrais reais impossíveis podem ser resolvidas de forma brilhante.
+O **teorema dos resíduos** relaciona uma integral na reta real a uma integral sobre um contorno fechado no plano complexo, usando informação local em torno de singularidades isoladas. É essencial escolher uma extensão complexa adequada e estimar as contribuições dos trechos adicionais. Passar ao plano complexo não resolve automaticamente qualquer integral real.
 
 ## Integração Complexa e Singularidades
 
-A integral de uma função complexa $f(z)$ é realizada ao longo de uma curva (contorno) no plano complexo. Em uma região onde a função é analítica (diferenciável), a integral ao longo de uma curva fechada é zero. Isso é conhecido como o **Teorema Integral de [Cauchy](https://kenji.blog/pt/p/cauchy/)**.
+Uma função complexa $f(z)$ é integrada ao longo de uma curva no plano complexo. Se $C$ é uma curva fechada simples de classe $C^1$ por partes e $f$ é holomorfa em um aberto que contém $C$ e seu interior, vale a seguinte consequência do **[teorema integral de Cauchy](/pt/p/cauchys-integral-theorem/)**. A holomorfia, isoladamente, não justifica a mesma conclusão para qualquer curva em um domínio com buracos.
 
 $$
 \oint_C f(z) dz = 0 \quad (\text{se a função for holomorfa dentro e sobre } C)
 $$
 
-Mas o que acontece se a região dentro do contorno incluir pontos onde $f(z)$ não é definida — isto é, pontos onde ela diverge para o infinito? Tais pontos são chamados de **singularidades**. Em particular, os pontos onde o denominador se torna zero são chamados de **polos**.
+O que muda quando há uma singularidade dentro do contorno? Uma **singularidade isolada** em $z_0$ significa aqui que $f$ é holomorfa em alguma vizinhança perfurada $0<|z-z_0|<r$, mas não em $z_0$. Distinguimos singularidades removíveis, polos e singularidades essenciais. Um **polo** tem uma parte principal não nula com um número finito de termos na série de Laurent; nem toda singularidade é um polo. Um denominador nulo pode ser cancelado: $(z^2-1)/(z-1)$ tem uma singularidade removível em $1$, enquanto $e^{1/z}$ tem uma singularidade essencial em $0$.
 
 ```mermaid
 flowchart TD
-    A["Integral complexa na reta real"] -->|"Extensão para o plano complexo"| B["Definir a função complexa f(z)"]
+    A["Integral real difícil"] -->|"Extensão para o plano complexo"| B["Definir a função complexa f(z)"]
     B --> C["Estabelecer um contorno apropriado C"]
-    C --> D["Identificar singularidades (polos) dentro do contorno"]
+    C --> D["Verificar singularidades isoladas e cortes de ramo"]
     D --> E["Calcular o resíduo em cada singularidade"]
     E --> F["Aplicar o Teorema dos Resíduos"]
     F -->|"Tomar o limite"| G["Solução para a integral real"]
@@ -42,29 +43,29 @@ flowchart TD
 
 ## Séries de Laurent e Resíduos
 
-Uma função complexa pode ser expandida em torno de uma singularidade usando uma **série de Laurent**, que é uma generalização da série de Taylor. A expansão de Laurent de $f(z)$ em torno de uma singularidade $z_0$ é expressa da seguinte forma:
+Se $f$ é holomorfa em uma vizinhança perfurada $0<|z-z_0|<r$ de uma singularidade isolada, possui uma **série de Laurent** convergente ali. Ela amplia a [série de Taylor](/pt/p/taylor-and-maclaurin-series/) para potências negativas e pode ser escrita como segue. Mais geralmente, expansões de Laurent são consideradas em anéis de holomorfia.
 
 $$
 f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n + \sum_{n=1}^{\infty} \frac{b_n}{(z - z_0)^n}
 $$
 
-Aqui, os termos com potências negativas são chamados de **parte principal** e determinam a natureza da singularidade. Entre eles, $b_1$, o coeficiente de $(z - z_0)^{-1}$, tem um significado especial. Este $b_1$ é chamado de **resíduo** da função $f(z)$ em $z_0$, escrito como:
+A soma dos termos de potências negativas — a segunda soma do lado direito — é a **parte principal**. Ela determina a natureza da singularidade. Em particular, o coeficiente $b_1$ de $(z-z_0)^{-1}$ é o **resíduo** de $f$ em $z_0$, escrito como:
 
 $$
 \text{Res}(f, z_0) = b_1
 $$
 
-Por que apenas o coeficiente de $(z - z_0)^{-1}$ é especial? Porque se você integrar $\frac{1}{(z - z_0)^n}$ ao longo de um círculo minúsculo $C$ englobando a singularidade, apenas quando $n = 1$ o valor $2\pi i$ permanece; para todos os outros valores de $n$, a integral é avaliada em $0$.
+O coeficiente de $(z-z_0)^{-1}$ é especial porque a integral de $1/(z-z_0)^n$ sobre uma pequena circunferência percorrida uma vez no sentido anti-horário, dentro da vizinhança perfurada, vale $2\pi i$ para o inteiro $n=1$ e $0$ para os demais inteiros. Inverter a orientação muda o sinal.
 
-## [Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/) de [Cauchy](https://kenji.blog/pt/p/cauchy/)
+## Teorema dos Resíduos de [Cauchy](https://kenji.blog/pt/p/cauchy/)
 
-A integração desses conceitos produz o **[Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/)**. Se uma curva fechada $C$ contém múltiplas singularidades isoladas $z_1, z_2, \dots, z_k$ dentro dela, a integral complexa ao longo de $C$ pode ser calculada da seguinte forma:
+Seja $C$ uma curva fechada simples, de classe $C^1$ por partes e com orientação positiva (sentido anti-horário). Suponhamos que $f$ seja holomorfa em um aberto que contém $C$ e seu interior, exceto em um número finito de singularidades isoladas interiores $z_1,\ldots,z_k$, sem singularidades sobre a curva. O **teorema dos resíduos** afirma então:
 
 $$
 \oint_C f(z) dz = 2\pi i \sum_{j=1}^{k} \text{Res}(f, z_j)
 $$
 
-Em outras palavras, não importa quão complexa seja a integral de contorno, você não precisa realizar cálculos tediosos ao longo do caminho. Você simplesmente seleciona as singularidades no interior, calcula seus "resíduos", soma-os e multiplica por $2\pi i$ para obter a resposta.
+Sob essas hipóteses, somamos os resíduos interiores e multiplicamos por $2\pi i$. A formulação geral para curvas com autointerseções ou percursos repetidos também usa o índice da curva em torno de cada singularidade, isto é, o número de voltas. A fórmula exibida não se aplica diretamente a um contorno que passa por uma singularidade ou cruza um corte de ramo.
 
 ## Aplicação: Resolvendo Integrais Reais
 
@@ -75,7 +76,7 @@ I = \int_{-\infty}^{\infty} \frac{1}{x^2 + 1} dx
 $$
 
 ### Passo 1: Extensão para uma Função Complexa e Estabelecimento do Contorno
-Considere a função $f(z) = \frac{1}{z^2 + 1}$ substituindo a variável real $x$ por uma variável complexa $z$. Como o contorno $C$, consideramos uma curva fechada combinando o segmento $[-R, R]$ no eixo real e um arco semicircular $C_R$ de raio $R$ no semiplano superior.
+Tomemos $f(z)=1/(z^2+1)$. Para $R>1$, percorremos o segmento real de $-R$ a $R$ e retornamos pelo arco semicircular superior $C_R$, de $R$ a $-R$, no sentido anti-horário. Assim obtemos o contorno fechado positivamente orientado $C$.
 
 ```mermaid
 flowchart LR
@@ -90,7 +91,7 @@ $$
 \oint_C f(z) dz = \int_{-R}^{R} f(x) dx + \int_{C_R} f(z) dz
 $$
 
-Ao tomar o limite quando $R \to \infty$, como o grau do denominador é pelo menos 2 maior que o numerador, pode-se mostrar que a integral no arco semicircular $\int_{C_R} f(z) dz$ converge para $0$. Portanto, o seguinte é verdadeiro:
+No arco, $|z^2+1|\ge R^2-1$, de modo que $\left|\int_{C_R}f(z)\,dz\right|\le\pi R/(R^2-1)\to0$. Na reta real, o integrando é $O(x^{-2})$ no infinito, e a integral imprópria converge absolutamente. Portanto, o limite seguinte fornece a integral imprópria usual, e não apenas um valor principal de Cauchy obtido por truncamento simétrico:
 
 $$
 \lim_{R \to \infty} \oint_C f(z) dz = \int_{-\infty}^{\infty} \frac{1}{x^2 + 1} dx
@@ -106,7 +107,7 @@ $$
 \text{Res}(f, i) = \lim_{z \to i} (z - i) f(z) = \lim_{z \to i} \frac{1}{z + i} = \frac{1}{2i}
 $$
 
-### Passo 3: Aplicando o [Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/)
+### Passo 3: Aplicando o Teorema dos Resíduos
 Pelo teorema dos resíduos, a integral na curva fechada $C$ torna-se:
 
 $$
@@ -129,9 +130,9 @@ $$
 J = \int_{-\infty}^{\infty} \frac{\cos(kx)}{x^2 + a^2} dx \quad (k > 0, a > 0)
 $$
 
-Esta integral é formidável usando cálculos reais, mas é resolvida considerando a função complexa $f(z) = \frac{e^{ikz}}{z^2 + a^2}$. Da fórmula de Euler $e^{ikx} = \cos(kx) + i\sin(kx)$, a parte real da integral fornece a resposta que buscamos.
+Consideremos $f(z)=e^{ikz}/(z^2+a^2)$. Pela [fórmula de Euler](/pt/p/euler/), $e^{ikx}=\cos(kx)+i\sin(kx)$, de modo que a parte real da integral complexa fornece o resultado procurado. Para $k>0,a>0$, a integral na reta real converge absolutamente, permitindo tomar a parte real sob o sinal de integração.
 
-Aqui também consideramos um contorno semicircular no semiplano superior. Pelo **Lema de Jordan**, à medida que $R \to \infty$, a integral sobre o arco semicircular converge para $0$.
+Escolhemos novamente $R>a$, percorremos o eixo real de $-R$ a $R$ e voltamos pelo semicírculo superior de $R$ a $-R$. Ali $|e^{ikz}|=e^{-k\operatorname{Im}z}\le1$, logo o valor absoluto da integral do arco não supera $\pi R/(R^2-a^2)$ e tende a zero. O **lema de Jordan** oferece uma estimativa mais geral para $e^{ikz}g(z)$: para $k>0$ fixo, se o supremo de $|g|$ sobre o semicírculo superior tende a zero, a integral do arco também tende a zero. Neste exemplo, o decaimento quadrático do denominador já é suficiente.
 
 A singularidade é $z = ia$ (semiplano superior). Calculamos o resíduo:
 
@@ -161,17 +162,17 @@ $$
 K = \int_{0}^{\infty} \frac{x^{-a}}{x + 1} dx
 $$
 
-Para avaliar esta integral, estabelecemos um corte de ramo ao longo do eixo real positivo e configuramos um contorno em forma de buraco de fechadura para evitá-lo.
+Para $0<a<1$, o integrando é $O(x^{-a})$ perto de zero e $O(x^{-a-1})$ no infinito, portanto a integral converge. Fazemos um corte no eixo real positivo e escolhemos o ramo $0<\arg z<2\pi$, com $\operatorname{Log}z=\log|z|+i\arg z$ e $F(z)=z^{-a}/(z+1)=e^{-a\operatorname{Log}z}/(z+1)$. Para $0<\varepsilon<1<R$, seguimos para fora logo acima do corte, percorremos a circunferência exterior no sentido anti-horário, retornamos para dentro logo abaixo do corte e fechamos pela circunferência interior no sentido horário. O contorno utilizado evita o corte; tomamos limites pelos dois lados.
 
 ```mermaid
 flowchart TD
-    A["Integral viajando para a direita, logo acima do eixo real positivo"] --> B["Laço no sentido anti-horário em torno de um círculo gigante no infinito"]
+    A["Integral para a direita acima do eixo real positivo"] --> B["Circunferência exterior quase completa no sentido anti-horário, evitando o corte"]
     B --> C["Integral viajando para a esquerda, logo abaixo do eixo real positivo"]
-    C --> D["Laço no sentido horário em torno de um círculo minúsculo na origem"]
+    C --> D["Circunferência interior quase completa no sentido horário"]
     D -->|"Estes formam o contorno em buraco de fechadura"| E["Cálculo do resíduo no polo z = -1 dentro do contorno"]
 ```
 
-As integrais no círculo gigante e no círculo minúsculo desaparecem no limite. Porque a fase da função difere logo acima e abaixo do eixo real (incorrendo em um fator devido a uma rotação $e^{2\pi i}$), sua diferença permanece como um múltiplo constante da integral original $K$. Ao calcular o resíduo na singularidade $z = -1 = e^{i\pi}$, derivamos o seguinte resultado surpreendente:
+A contribuição exterior tem valor absoluto no máximo $2\pi R^{1-a}/(R-1)$, que tende a zero quando $R\to\infty$. A interior não supera $2\pi\varepsilon^{1-a}/(1-\varepsilon)$ e tende a zero quando $\varepsilon\to0$. Acima do corte, $z^{-a}\to x^{-a}$; abaixo, $z^{-a}\to e^{-2\pi ia}x^{-a}$. Como o trecho inferior é percorrido ao contrário, os trechos retos somam $(1-e^{-2\pi ia})K$ no limite. No ramo escolhido, $\arg(-1)=\pi$, e o resíduo em $-1$ é $e^{-\pi ia}$. Assim, $(1-e^{-2\pi ia})K=2\pi i\,e^{-\pi ia}$. Usando $1-e^{-2\pi ia}=2i\,e^{-\pi ia}\sin(\pi a)$, obtemos:
 
 $$
 \int_{0}^{\infty} \frac{x^{-a}}{x + 1} dx = \frac{\pi}{\sin(a\pi)}
@@ -181,4 +182,10 @@ $$
 
 O teorema dos resíduos é o epítome da elegância matemática, conectando magistralmente "polos complexos" e "integrais reais" aparentemente não relacionados. Para resolver um problema de função real, você salta temporariamente para o mundo mais amplo do plano complexo, examina apenas as propriedades (resíduos) dos "obstáculos" (singularidades) e, quando retorna ao mundo original, o problema está brilhantemente resolvido.
 
-Este conceito vai além de meras técnicas de cálculo e é aplicado em todos os cenários da ciência e tecnologia modernas, como a transformada inversa de Laplace, a avaliação de diagramas de Feynman na teoria quântica de campos e a teoria de filtragem em processamento de sinais. O mundo da análise complexa fornece o ponto de vista definitivo para observar o mundo dos números reais.
+Esses métodos de contorno também aparecem na transformada inversa de [Laplace](/pt/p/laplace-transform/) e em integrais de Fourier. Para usá-los com rigor, é preciso verificar os tipos de singularidade, a orientação do contorno e a convergência no infinito e perto dos pontos de ramificação.
+
+## Referências
+
+- [MIT 18.04 Topic 8: Residues and the residue theorem](https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/3c58ce71ec6f7573804221d76158a0bd_MIT18_04S18_topic8.pdf)
+- [MIT 18.04 Topic 9: Definite integrals using the residue theorem](https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf)
+- [NIST DLMF §1.10: Functions of a Complex Variable](https://dlmf.nist.gov/1.10)

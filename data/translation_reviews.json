@@ -775,6 +775,46 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-006-r2.json",
       "evidenceHash": "1ed56311e80f8d666e436ce6f6404240b070eefc4dd2428354cd2848a527f6b9"
+    },
+    "post/residue-theorem/index.pt.md": {
+      "source": "post/residue-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "7357f51a78d58dbb4e8ace9cc978c8c95214bab77eaccd6a7f77f4d2846aebdb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-006-r2.json",
+      "evidenceHash": "d151339568d24e1fa29a5bfda67b62e1afe68d200bc9db73f13a4bb4433a164c"
+    },
+    "post/residue-theorem/index.fr.md": {
+      "source": "post/residue-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "cabdf188af73f8e1a0004cdd0c233bfd81bb7720a0461a7ba50482e1f69d15ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-006-r2.json",
+      "evidenceHash": "b03cdb1728c98252903d594900976521219d0a26680a37bd0f1e14c8ad614d79"
+    },
+    "post/residue-theorem/index.de.md": {
+      "source": "post/residue-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "270c0257372d0fd46a1c10cb5c503589b5b407c19db65db6cecc3275e420b9ec",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-006-r2.json",
+      "evidenceHash": "1f5c77407e3f71f68af2fcf90d65d44be8e60cb5a6e503c478983f7a633ab7ba"
+    },
+    "post/residue-theorem/index.id.md": {
+      "source": "post/residue-theorem/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "5ebe6f39cc9f042b15e5698cadcdd631ee6ec6bdd16cd462de84e1456da704e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-006-r2.json",
+      "evidenceHash": "aace1df5217c00507dd3598184c89afaeaee15a0752c00a8b5eb1a1e063656c1"
     }
   }
 }
