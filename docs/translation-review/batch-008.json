@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/eulers-identity/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eulers-identity/index.md",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "5475842368f446cdfc25664c5358b7e68990b3e2d5dee1a575f525bd2115343c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original English article and the complete corrected Japanese source. The original English was abridged: it omitted much of the series proof, complex-plane geometry, historical qualification and all application sections. Restored these sections, then compared the full revised title, metadata and body, retaining the subjective aesthetic conclusion as an interpretation rather than a mathematical premise."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished Euler identity from the general Euler formula, finite polynomial from convergent power series, imaginary part from i times that real value, probability amplitude from probability/density, and DFT/FFT from JPEG DCT. Used additive/multiplicative identities, radian measure, absolute convergence, antiderivative, phasor, sinusoidal steady state and rounding-free mathematical equalities consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all thirteen displayed formulas against Japanese; original English had eight. Verified x real/radians, exp(z) single-valued series definition, z=0 separately from the ratio test, absolute convergence justifying even/odd grouping, signs of powers of i and x=pi substitution. Checked rotation direction for positive/negative angles, norm preservation and fixed origin. Explained nonzero-frequency antiderivative, termwise-calculus qualifications, linear/time-invariant single-frequency steady-state phasor assumptions, and normalized position-space probability density. Twenty-five exact coefficient checks, six exponential and nine rotation calculations are supplementary illustrations, not a proof for all x."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the one four-edge Mermaid diagram and restored the source meaning in all node labels. There is no executable numerical code in the article. Supplementary computations are stored separately in validation evidence and are not described as article code execution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links from heading and introduction. Checked Euler, Feynman, Taylor and FFT links resolve to existing English article files, and the eyecatch exists. Matched eleven external reference URLs to Japanese. Read the cited primary mathematical/physics/standards material and the catalog/institutional historical sources within the stated scope. Corrected quotation identifies Feynman general formula rather than special identity; original Latin book was not read. Updated text/reference verified in local HTML; multilingual and HTTPS validators passed."
+        }
+      },
+      "summary": "Full-body English comparison with corrected Japanese; restored omitted proof, geometry, history and applications, with thirteen formulas, one diagram and matching-language links.",
+      "languageSpecificFindings": "The original English was a short summary rather than a complete translation. Restored five omitted displayed formulas and the missing sections; removed Greatest Equation Ever as an unsupported universal ranking, fixed quotation context, dates and self-links, and specified convergence and application hypotheses.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Eleven Euler-identity translations remain unread/unreviewed. Publication of this batch is pending.",
+        "Numerical illustrations do not establish identities for all real inputs. Historical evidence is the archive catalog and institutional biography; the entire Latin original was not read."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/4.2#iii",
+        "https://ocw.mit.edu/courses/18-100c-real-analysis-fall-2012/1058808e5cb57c986118333f8b6fa0d7_MIT18_100CF12_l11sum.pdf",
+        "https://www.feynmanlectures.caltech.edu/I_22.html",
+        "https://www.feynmanlectures.caltech.edu/I_23.html",
+        "https://www.feynmanlectures.caltech.edu/I_25.html",
+        "https://circuits.mit.edu/_static/S23/handouts/lec10b/lecture10b-berggren.pdf",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/resources/lec19/",
+        "https://www.feynmanlectures.caltech.edu/III_03.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+        "https://scholarlycommons.pacific.edu/euler-works/101/",
+        "https://library.ethz.ch/sammlungen-und-archive/kurzportraets/leonhard-euler-1707-1783.html"
+      ],
+      "validation": "docs/translation-review/batch-008-validation.json"
+    }
+  }
+}

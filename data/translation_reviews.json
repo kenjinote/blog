@@ -965,6 +965,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-007.json",
       "evidenceHash": "01e2ab7d9624c60ade744ecbc808fdaff7c07e53bb353172bdf178cb2ee2ff30"
+    },
+    "post/eulers-identity/index.en.md": {
+      "source": "post/eulers-identity/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "5475842368f446cdfc25664c5358b7e68990b3e2d5dee1a575f525bd2115343c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-008.json",
+      "evidenceHash": "9a41df1379cc7325b57c95898dfc6c8ef4a01366c1cd865bcd4d2fafeece6876"
     }
   }
 }

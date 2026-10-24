@@ -1,0 +1,331 @@
+{
+  "version": 1,
+  "validatedAt": "2026-10-24",
+  "source": "post/eulers-identity/index.md",
+  "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+  "files": [
+    {
+      "language": "ja",
+      "hash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "displayMathCount": 13,
+      "allOriginalDisplayFormulasPreserved": true,
+      "singlePublicationDate": true,
+      "publicationDate": "2026-09-14T13:00:00+09:00",
+      "mermaidEdgeCount": 4,
+      "hugoRendered": true,
+      "correctedProbabilityAndConvergenceTextRendered": true
+    },
+    {
+      "language": "en",
+      "hash": "5475842368f446cdfc25664c5358b7e68990b3e2d5dee1a575f525bd2115343c",
+      "originalDisplayMathCount": 8,
+      "displayMathCount": 13,
+      "formulasMatchSource": true,
+      "singlePublicationDate": true,
+      "publicationDate": "2026-09-14T13:00:00+09:00",
+      "mermaidEdgeCount": 4,
+      "missingProofAndApplicationSectionsRestored": true,
+      "hugoRendered": true,
+      "correctedProbabilityAndConvergenceTextRendered": true
+    }
+  ],
+  "coefficientChecks": [
+    {
+      "degree": 0,
+      "realCoefficient": "1",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 1,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "1"
+    },
+    {
+      "degree": 2,
+      "realCoefficient": "-1/2",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 3,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "-1/6"
+    },
+    {
+      "degree": 4,
+      "realCoefficient": "1/24",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 5,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "1/120"
+    },
+    {
+      "degree": 6,
+      "realCoefficient": "-1/720",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 7,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "-1/5040"
+    },
+    {
+      "degree": 8,
+      "realCoefficient": "1/40320",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 9,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "1/362880"
+    },
+    {
+      "degree": 10,
+      "realCoefficient": "-1/3628800",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 11,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "-1/39916800"
+    },
+    {
+      "degree": 12,
+      "realCoefficient": "1/479001600",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 13,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "1/6227020800"
+    },
+    {
+      "degree": 14,
+      "realCoefficient": "-1/87178291200",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 15,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "-1/1307674368000"
+    },
+    {
+      "degree": 16,
+      "realCoefficient": "1/20922789888000",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 17,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "1/355687428096000"
+    },
+    {
+      "degree": 18,
+      "realCoefficient": "-1/6402373705728000",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 19,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "-1/121645100408832000"
+    },
+    {
+      "degree": 20,
+      "realCoefficient": "1/2432902008176640000",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 21,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "1/51090942171709440000"
+    },
+    {
+      "degree": 22,
+      "realCoefficient": "-1/1124000727777607680000",
+      "imaginaryCoefficient": "0"
+    },
+    {
+      "degree": 23,
+      "realCoefficient": "0",
+      "imaginaryCoefficient": "-1/25852016738884976640000"
+    },
+    {
+      "degree": 24,
+      "realCoefficient": "1/620448401733239439360000",
+      "imaginaryCoefficient": "0"
+    }
+  ],
+  "eulerNumericalIllustrations": [
+    {
+      "x": -3.141592653589793,
+      "eulerDifference": 0.0,
+      "finite100TermDifference": 2.1110639634246226e-16
+    },
+    {
+      "x": -1.0,
+      "eulerDifference": 0.0,
+      "finite100TermDifference": 1.1102230246251565e-16
+    },
+    {
+      "x": 0.0,
+      "eulerDifference": 0.0,
+      "finite100TermDifference": 0.0
+    },
+    {
+      "x": 1.0,
+      "eulerDifference": 0.0,
+      "finite100TermDifference": 1.1102230246251565e-16
+    },
+    {
+      "x": 3.141592653589793,
+      "eulerDifference": 0.0,
+      "finite100TermDifference": 2.1110639634246226e-16
+    },
+    {
+      "x": 6.283185307179586,
+      "eulerDifference": 0.0,
+      "finite100TermDifference": 8.849646725817832e-15
+    }
+  ],
+  "rotationIllustrations": [
+    {
+      "z": [
+        1.0,
+        0.0
+      ],
+      "theta": -1.5707963267948966,
+      "result": [
+        6.123233995736766e-17,
+        -1.0
+      ],
+      "lengthDifference": 0.0
+    },
+    {
+      "z": [
+        1.0,
+        0.0
+      ],
+      "theta": 1.5707963267948966,
+      "result": [
+        6.123233995736766e-17,
+        1.0
+      ],
+      "lengthDifference": 0.0
+    },
+    {
+      "z": [
+        1.0,
+        0.0
+      ],
+      "theta": 3.141592653589793,
+      "result": [
+        -1.0,
+        1.2246467991473532e-16
+      ],
+      "lengthDifference": 0.0
+    },
+    {
+      "z": [
+        2.0,
+        -3.0
+      ],
+      "theta": -1.5707963267948966,
+      "result": [
+        -3.0,
+        -2.0
+      ],
+      "lengthDifference": 0.0
+    },
+    {
+      "z": [
+        2.0,
+        -3.0
+      ],
+      "theta": 1.5707963267948966,
+      "result": [
+        3.0,
+        1.9999999999999998
+      ],
+      "lengthDifference": 0.0
+    },
+    {
+      "z": [
+        2.0,
+        -3.0
+      ],
+      "theta": 3.141592653589793,
+      "result": [
+        -1.9999999999999996,
+        3.0000000000000004
+      ],
+      "lengthDifference": 4.440892098500626e-16
+    },
+    {
+      "z": [
+        0.0,
+        0.0
+      ],
+      "theta": -1.5707963267948966,
+      "result": [
+        0.0,
+        0.0
+      ],
+      "lengthDifference": 0.0
+    },
+    {
+      "z": [
+        0.0,
+        0.0
+      ],
+      "theta": 1.5707963267948966,
+      "result": [
+        0.0,
+        0.0
+      ],
+      "lengthDifference": 0.0
+    },
+    {
+      "z": [
+        0.0,
+        0.0
+      ],
+      "theta": 3.141592653589793,
+      "result": [
+        -0.0,
+        0.0
+      ],
+      "lengthDifference": 0.0
+    }
+  ],
+  "referenceUrls": [
+    "https://dlmf.nist.gov/4.2#iii",
+    "https://ocw.mit.edu/courses/18-100c-real-analysis-fall-2012/1058808e5cb57c986118333f8b6fa0d7_MIT18_100CF12_l11sum.pdf",
+    "https://www.feynmanlectures.caltech.edu/I_22.html",
+    "https://www.feynmanlectures.caltech.edu/I_23.html",
+    "https://www.feynmanlectures.caltech.edu/I_25.html",
+    "https://circuits.mit.edu/_static/S23/handouts/lec10b/lecture10b-berggren.pdf",
+    "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/resources/lec19/",
+    "https://www.feynmanlectures.caltech.edu/III_03.html",
+    "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+    "https://scholarlycommons.pacific.edu/euler-works/101/",
+    "https://library.ethz.ch/sammlungen-und-archive/kurzportraets/leonhard-euler-1707-1783.html"
+  ],
+  "eyecatchExists": true,
+  "internalLinksExistInMatchingLanguage": true,
+  "selfLinksRemoved": true,
+  "limitations": [
+    "The article has no executable numerical program; the Mermaid graph is checked separately. The numerical calculations here are supplementary illustrations, not proofs of an identity for all real x.",
+    "Only Japanese source and English have been read in full; eleven translations are unreviewed.",
+    "Historical claims use the Euler Archive catalog and ETH institutional biography; the complete Latin original has not been read.",
+    "AI semantic/technical review is not native-speaker human confirmation. Publication of this Euler batch is pending."
+  ],
+  "localPreview": {
+    "hugo": "0.139.0 extended",
+    "scope": "Nine bundles rendered; Euler-identity semantic review covers Japanese source and English only.",
+    "multilingualPagesChecked": 663,
+    "httpsHtmlFilesChecked": 1236,
+    "httpsXmlFilesChecked": 41,
+    "existingWarnings": "Post-only preview lacks search/archive pages and home JSON layout; existing Portuguese theme UI translations are incomplete."
+  }
+}
