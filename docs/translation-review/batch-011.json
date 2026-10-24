@@ -51,6 +51,108 @@
         "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
       ],
       "validation": "docs/translation-review/batch-011-validation.json"
+    },
+    "post/jwt-json-web-token-security-risks/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/jwt-json-web-token-security-risks/index.md",
+      "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
+      "translationHash": "aab0bba81b4737cb95a38486dda2f86a9ca0e5fe6f04a5a216b53cbdb55db1e6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Simplified Chinese article and complete corrected Japanese source, revised the full metadata and body, and independently reread the complete revision. Compared all eight sections, cookie transport versus token format, session consistency, signature/MAC/encryption and key roles, claims/profile and permission validation, individual versus key revocation and cache propagation, XSS/CSRF limits, public-client refresh constraints, one-time URL semantics and OAuth/OIDC token roles. Checked the labels, server roles and direction of all three flow diagrams. Structural checks supplement this full semantic reading."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 声明, 认证 versus 授权, 令牌, 会话, 签名 versus 加密, 公钥/私钥 versus 共享密钥, 撤销, 内省, 发送方约束, 轮换 and 重复使用. Corrected the unrelated CVE copied from the old source, verification by own key alone, categorical impossibility of revocation, assumed mandatory refresh state and the implication that JWT makes a URL one-time. Explicitly says an ID token must not be used as an API access token; signing, key roles, expiration/profile rules and local versus central validation conditions are retained."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative derivations. The fifteen-minute lifetime is explicitly illustrative, not a normative requirement or measured security bound."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable authentication or token-verifier example is present. The three Mermaid flow descriptions were read semantically and their 8/6/6 directed edges matched with the source; local HTML contains them. No claims of penetration testing, library conformance, live authentication checks or benchmark results."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all nine primary-reference URLs and translated descriptions with the corrected source and documented reading scope. Verified /zh-cn/p/cross-site-scripting-xss-csrf-security/ and eyecatch. Updated local HTML contains the corrected Chinese terminology, JWS/JWE and public-client refresh discussion, and no unrelated CVE citation. Three graphs and 20 edges, inline code tokens, dates and hashes passed; twelve-bundle Hugo, multilingual 830 pages and HTTPS 1,532 HTML/41 XML passed. Publication pending."
+        }
+      },
+      "summary": "Full-body Simplified Chinese review of corrected JWT format, verification, revocation, browser and refresh-token explanations.",
+      "languageSpecificFindings": "Used 声明, 认证 versus 授权, 令牌, 会话, 签名 versus 加密, 公钥/私钥 versus 共享密钥, 撤销, 内省, 发送方约束, 轮换 and 重复使用. Corrected the unrelated CVE copied from the old source, verification by own key alone, categorical impossibility of revocation, assumed mandatory refresh state and the implication that JWT makes a URL one-time. Explicitly says an ID token must not be used as an API access token; signing, key roles, expiration/profile rules and local versus central validation conditions are retained.",
+      "limitations": [
+        "AI editorial and technical review, not a human native-speaker confirmation.",
+        "Mermaid source topology and labels plus HTML output checked; live browser diagram rendering was not inspected.",
+        "No JWT library, authentication service, security penetration test or performance benchmark was executed.",
+        "Publication verification pending.",
+        "Nine other JWT translations remain unread and unreviewed."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-011-validation.json"
+    },
+    "post/jwt-json-web-token-security-risks/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/jwt-json-web-token-security-risks/index.md",
+      "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
+      "translationHash": "c0e1c10c31a67a579762387053f4994879b5869e8b243c31cc758fee5083e297",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Traditional Chinese article and complete corrected Japanese source, revised the full metadata and body, and independently reread the complete revision. Compared all eight sections, cookie transport versus token format, session consistency, signature/MAC/encryption and key roles, claims/profile and permission validation, individual versus key revocation and cache propagation, XSS/CSRF limits, public-client refresh constraints, one-time URL semantics and OAuth/OIDC token roles. Checked the labels, server roles and direction of all three flow diagrams. Structural checks supplement this full semantic reading."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 權杖, 宣告, 身分驗證 versus 授權, 工作階段識別碼, 簽章 versus 加密, 私密金鑰/公開金鑰 versus 共用秘密金鑰, 本機驗證, 撤銷清單, 快取, 用戶端, 存取權杖, 更新權杖, 輪替 and 維運. Compared and independently reread the complete text rather than treating character conversion as proofreading. Corrected the private-key-only JWT definition, the unrelated CVE, immediate revocation and guaranteed performance assertions, and the access/ID/refresh token roles; all browser and public-client restrictions are present."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative derivations. The fifteen-minute lifetime is explicitly illustrative, not a normative requirement or measured security bound."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable authentication or token-verifier example is present. The three Mermaid flow descriptions were read semantically and their 8/6/6 directed edges matched with the source; local HTML contains them. No claims of penetration testing, library conformance, live authentication checks or benchmark results."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all nine primary-reference URLs and translated descriptions with the corrected source and documented reading scope. Verified /zh-tw/p/cross-site-scripting-xss-csrf-security/ and eyecatch. Updated local HTML contains the corrected Chinese terminology, JWS/JWE and public-client refresh discussion, and no unrelated CVE citation. Three graphs and 20 edges, inline code tokens, dates and hashes passed; twelve-bundle Hugo, multilingual 830 pages and HTTPS 1,532 HTML/41 XML passed. Publication pending."
+        }
+      },
+      "summary": "Full-body Traditional Chinese review of corrected JWT format, verification, revocation, browser and refresh-token explanations.",
+      "languageSpecificFindings": "Used 權杖, 宣告, 身分驗證 versus 授權, 工作階段識別碼, 簽章 versus 加密, 私密金鑰/公開金鑰 versus 共用秘密金鑰, 本機驗證, 撤銷清單, 快取, 用戶端, 存取權杖, 更新權杖, 輪替 and 維運. Compared and independently reread the complete text rather than treating character conversion as proofreading. Corrected the private-key-only JWT definition, the unrelated CVE, immediate revocation and guaranteed performance assertions, and the access/ID/refresh token roles; all browser and public-client restrictions are present.",
+      "limitations": [
+        "AI editorial and technical review, not a human native-speaker confirmation.",
+        "Mermaid source topology and labels plus HTML output checked; live browser diagram rendering was not inspected.",
+        "No JWT library, authentication service, security penetration test or performance benchmark was executed.",
+        "Publication verification pending.",
+        "Nine other JWT translations remain unread and unreviewed."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-011-validation.json"
     }
   }
 }
