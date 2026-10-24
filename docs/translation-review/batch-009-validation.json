@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "validatedAt": "2026-10-24",
+  "source": "post/fourier-series-and-transform/index.md",
+  "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+  "scope": "Japanese source and English translation only; other eleven translations not read or reviewed in this batch yet.",
+  "files": [
+    {
+      "language": "ja",
+      "hash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "displayMathCount": 11,
+      "pythonOutput": [
+        "50 Hz: 1.000",
+        "120 Hz: 0.500"
+      ],
+      "mermaidEdges": 3,
+      "referenceUrls": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "internalLinks": [
+        "/p/eulers-identity/",
+        "/p/fast-fourier-transform-algorithm/"
+      ],
+      "maxUnexpectedAmplitude": 6.714248503147612e-15,
+      "hugoRendered": true,
+      "pythonPlotVisuallyInspected": true
+    },
+    {
+      "language": "en",
+      "hash": "476d171ec5b0aa27285e5e9a36c34af4ec7a3dd48b9d9747d3af39ec1f45e809",
+      "displayMathCount": 11,
+      "pythonOutput": [
+        "50 Hz: 1.000",
+        "120 Hz: 0.500"
+      ],
+      "mermaidEdges": 3,
+      "referenceUrls": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "internalLinks": [
+        "/en/p/eulers-identity/",
+        "/en/p/fast-fourier-transform-algorithm/"
+      ],
+      "maxUnexpectedAmplitude": 6.714248503147612e-15,
+      "hugoRendered": true,
+      "pythonPlotVisuallyInspected": true
+    }
+  ],
+  "pythonAstMatch": true,
+  "numpyVersion": "2.3.5",
+  "articleNormalizationCases": [
+    {
+      "N": 1,
+      "kind": "dc",
+      "bin": 0,
+      "amplitude": 1.25
+    },
+    {
+      "N": 2,
+      "kind": "dc",
+      "bin": 0,
+      "amplitude": 1.25
+    },
+    {
+      "N": 2,
+      "kind": "nyquist",
+      "bin": 1,
+      "amplitude": 1.25
+    },
+    {
+      "N": 8,
+      "kind": "dc",
+      "bin": 0,
+      "amplitude": 1.25
+    },
+    {
+      "N": 8,
+      "kind": "nyquist",
+      "bin": 4,
+      "amplitude": 1.25
+    },
+    {
+      "N": 8,
+      "kind": "interior",
+      "bin": 2,
+      "amplitude": 1.25
+    },
+    {
+      "N": 9,
+      "kind": "interior",
+      "bin": 2,
+      "amplitude": 1.25
+    },
+    {
+      "N": 9,
+      "kind": "highest-odd",
+      "bin": 4,
+      "amplitude": 1.2500000000000002
+    }
+  ],
+  "directDftCases": [
+    {
+      "N": 3,
+      "maxDftError": 1.9860273225978185e-15,
+      "maxInverseError": 6.823833688694539e-16
+    },
+    {
+      "N": 4,
+      "maxDftError": 2.094764613337708e-15,
+      "maxInverseError": 4.965068306494546e-16
+    },
+    {
+      "N": 8,
+      "maxDftError": 3.067753347204868e-14,
+      "maxInverseError": 7.640399661428378e-15
+    }
+  ],
+  "coefficientQuadrature": {
+    "a": [
+      5.999999999999999,
+      0.0,
+      1.9999999999999998,
+      2.7755575615628914e-16,
+      -2.7755575615628914e-16
+    ],
+    "b": [
+      0.0,
+      0.0,
+      0.0,
+      -0.5,
+      3.3306690738754696e-16
+    ],
+    "cReal": [
+      -1.6653345369377348e-16,
+      1.942890293094024e-16,
+      0.9999999999999998,
+      2.220446049250313e-16,
+      3.0,
+      2.220446049250313e-16,
+      0.9999999999999998,
+      1.942890293094024e-16,
+      -1.6653345369377348e-16
+    ],
+    "cImag": [
+      -5.551115123125783e-17,
+      -0.25,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.25,
+      5.551115123125783e-17
+    ]
+  },
+  "gaussianTransformQuadrature": [
+    {
+      "argument": 0,
+      "forwardError": 0.0,
+      "inverseError": 0.0
+    },
+    {
+      "argument": 0.5,
+      "forwardError": 0.0,
+      "inverseError": 2.2483924609909516e-16
+    },
+    {
+      "argument": 2,
+      "forwardError": 5.551115123125783e-17,
+      "inverseError": 4.4936087812037307e-17
+    }
+  ],
+  "limitations": [
+    "AI technical review, not native-speaker human confirmation.",
+    "Finite numerical cases supplement algebra and source reading; they do not prove general convergence or inversion.",
+    "Local Hugo, multilingual and HTTPS checks passed; publication pending. Eleven other Fourier translations remain unreviewed."
+  ],
+  "localBuild": {
+    "hugoVersion": "0.139.0 extended",
+    "contentScope": "Ten article bundles in all thirteen languages, including eleven Fourier translations that are not yet semantically reviewed.",
+    "multilingualSitemapPages": 702,
+    "httpsHtmlFiles": 1301,
+    "httpsXmlFiles": 41,
+    "pythonPlotInspection": "Two peaks at 50 Hz with amplitude 1 and 120 Hz with amplitude 0.5, axes and limits checked in the generated Matplotlib image."
+  }
+}

@@ -1085,6 +1085,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-008.json",
       "evidenceHash": "3e01791d3252a04872b5e547fd561c7d8ea079b4b8e30623f13f7175ab2c24d3"
+    },
+    "post/fourier-series-and-transform/index.en.md": {
+      "source": "post/fourier-series-and-transform/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "476d171ec5b0aa27285e5e9a36c34af4ec7a3dd48b9d9747d3af39ec1f45e809",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-009.json",
+      "evidenceHash": "1856a5c38f703e516466374cd5d2b79ddcee99e60a09a457eef11f9a070f9c12"
     }
   }
 }
