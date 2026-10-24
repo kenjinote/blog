@@ -49,6 +49,104 @@
         "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
       ],
       "validation": "docs/translation-review/batch-009-validation.json"
+    },
+    "post/fourier-series-and-transform/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fourier-series-and-transform/index.md",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "b63949be50fb4be985d9ab71cb9411d8db4670dde526af68862e738d2854da17",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Simplified Chinese version, the complete revised Japanese source, and the complete revised Simplified Chinese metadata and body. Compared all paragraphs: piecewise-C1 sufficient conditions, endpoint limits of function and derivative, jump means, Gibbs/nonuniform error, symmetric sums, absolute-integrability inversion assumptions, transform convention, finite DFT, sampling/leakage, FFT/DCT distinction and example limitations. Both newly added displayed formulas and all explanatory paragraphs are present; no automated structural check substitutes for this full-body comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 傅里叶, 欧拉, 信号, 采样, 归一化, 基频, 谐波, 吉布斯现象, 辐角, 混叠 and 频谱泄漏. Clarified 频率格点 (bin) and 奈奎斯特成分. Replaced the unrestricted title and any-periodic-function claim, corrected 直流分量 to a0/2, and expanded the incomplete code into a working spectrum example. Removed repeated FFT links and retained the matching-language Euler and FFT destinations."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all eleven display formulas and inline coefficient relations. Checked real-series coefficient factors, c0=a0/2, cn=(an-i bn)/2 and c(-n)=(an+i bn)/2, symmetric summation, periodic one-sided limits, FT minus sign and inverse 1/(2 pi), continuity and absolute-integrability inversion example, and DFT/IDFT signs with inverse 1/N. Added fs/N spacing, band-limitation and finite-window qualifications. Independently evaluated real/complex coefficients for a trigonometric polynomial, three direct complex DFT/IDFT cases, and six finite Gaussian forward/inverse quadratures as supplementary illustrations rather than proofs of the general theorems."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed this entire translation Python example with NumPy 2.3.5 and Agg; its AST matches the reviewed Japanese example. Output is exactly 50 Hz: 1.000 and 120 Hz: 0.500. Checked the plotted data, then visually inspected this language saved figure. Exercised this translation actual amplitude-normalization statements on eight DC/Nyquist/even/odd/singleton cases. Read all node/edge labels of the three-edge Mermaid diagram. Plot-axis labels intentionally remain the identical runnable English strings in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all eight primary-reference URLs to the Japanese source and checked their labels against the source-review reading scope in batch-009-source-notes.md. Checked /zh-cn/p/eulers-identity/ and /zh-cn/p/fast-fourier-transform-algorithm/ resolve to this language files and eyecatch exists. Confirmed updated Chinese text and complete code in local rendered HTML; multilingual 702 sitemap pages and HTTPS 1,301 HTML/41 XML checks passed. Publication pending."
+        }
+      },
+      "summary": "Full-body Simplified Chinese semantic, terminology, formula, executable-code and link review against the corrected Japanese source, including convergence and normalization conditions.",
+      "languageSpecificFindings": "Used 傅里叶, 欧拉, 信号, 采样, 归一化, 基频, 谐波, 吉布斯现象, 辐角, 混叠 and 频谱泄漏. Clarified 频率格点 (bin) and 奈奎斯特成分. Replaced the unrestricted title and any-periodic-function claim, corrected 直流分量 to a0/2, and expanded the incomplete code into a working spectrum example. Removed repeated FFT links and retained the matching-language Euler and FFT destinations.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Nine other Fourier translations remain unreviewed; local rendering does not establish their editorial correctness.",
+        "Finite numerical cases are supplementary evidence, not a proof of general convergence or inversion.",
+        "Primary-source reading scope is documented in batch-009-source-notes.md; full longer documents were not read. Publication of this batch is pending."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "validation": "docs/translation-review/batch-009-validation.json"
+    },
+    "post/fourier-series-and-transform/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fourier-series-and-transform/index.md",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "7667f74a7d113361a83d6eadb0cb4a1047293b725bb1eab2e4ff36c03491cabc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Traditional Chinese version, the complete revised Japanese source, and the complete revised Traditional Chinese metadata and body. Compared all paragraphs: piecewise-C1 sufficient conditions, endpoint limits of function and derivative, jump means, Gibbs/nonuniform error, symmetric sums, absolute-integrability inversion assumptions, transform convention, finite DFT, sampling/leakage, FFT/DCT distinction and example limitations. Both newly added displayed formulas and all explanatory paragraphs are present; no automated structural check substitutes for this full-body comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 傅立葉, 尤拉, 訊號, 取樣, 正規化, 演算法, 導函數, 單側極限, 幅角, 瑕積分, 混疊 and 頻譜洩漏. Changed original 歐拉 to 尤拉 to match the reviewed destination article, and 信號 to the regional 訊號 throughout. Distinguished 正轉換/反轉換, real/complex values and 奈奎斯特成分. Replaced unconditional title and DC claim; completed all conditions and executable example rather than only changing character forms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all eleven display formulas and inline coefficient relations. Checked real-series coefficient factors, c0=a0/2, cn=(an-i bn)/2 and c(-n)=(an+i bn)/2, symmetric summation, periodic one-sided limits, FT minus sign and inverse 1/(2 pi), continuity and absolute-integrability inversion example, and DFT/IDFT signs with inverse 1/N. Added fs/N spacing, band-limitation and finite-window qualifications. Independently evaluated real/complex coefficients for a trigonometric polynomial, three direct complex DFT/IDFT cases, and six finite Gaussian forward/inverse quadratures as supplementary illustrations rather than proofs of the general theorems."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed this entire translation Python example with NumPy 2.3.5 and Agg; its AST matches the reviewed Japanese example. Output is exactly 50 Hz: 1.000 and 120 Hz: 0.500. Checked the plotted data, then visually inspected this language saved figure. Exercised this translation actual amplitude-normalization statements on eight DC/Nyquist/even/odd/singleton cases. Read all node/edge labels of the three-edge Mermaid diagram. Plot-axis labels intentionally remain the identical runnable English strings in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all eight primary-reference URLs to the Japanese source and checked their labels against the source-review reading scope in batch-009-source-notes.md. Checked /zh-tw/p/eulers-identity/ and /zh-tw/p/fast-fourier-transform-algorithm/ resolve to this language files and eyecatch exists. Confirmed updated Chinese text and complete code in local rendered HTML; multilingual 702 sitemap pages and HTTPS 1,301 HTML/41 XML checks passed. Publication pending."
+        }
+      },
+      "summary": "Full-body Traditional Chinese semantic, terminology, formula, executable-code and link review against the corrected Japanese source, including convergence and normalization conditions.",
+      "languageSpecificFindings": "Used 傅立葉, 尤拉, 訊號, 取樣, 正規化, 演算法, 導函數, 單側極限, 幅角, 瑕積分, 混疊 and 頻譜洩漏. Changed original 歐拉 to 尤拉 to match the reviewed destination article, and 信號 to the regional 訊號 throughout. Distinguished 正轉換/反轉換, real/complex values and 奈奎斯特成分. Replaced unconditional title and DC claim; completed all conditions and executable example rather than only changing character forms.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Nine other Fourier translations remain unreviewed; local rendering does not establish their editorial correctness.",
+        "Finite numerical cases are supplementary evidence, not a proof of general convergence or inversion.",
+        "Primary-source reading scope is documented in batch-009-source-notes.md; full longer documents were not read. Publication of this batch is pending."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "validation": "docs/translation-review/batch-009-validation.json"
     }
   }
 }

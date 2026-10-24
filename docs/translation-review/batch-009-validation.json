@@ -3,7 +3,7 @@
   "validatedAt": "2026-10-24",
   "source": "post/fourier-series-and-transform/index.md",
   "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
-  "scope": "Japanese source and English translation only; other eleven translations not read or reviewed in this batch yet.",
+  "scope": "Japanese source and fully read translations: en, zh-cn, zh-tw. Other translations remain unreviewed.",
   "files": [
     {
       "language": "ja",
@@ -56,6 +56,166 @@
         "/en/p/fast-fourier-transform-algorithm/"
       ],
       "maxUnexpectedAmplitude": 6.714248503147612e-15,
+      "hugoRendered": true,
+      "pythonPlotVisuallyInspected": true
+    },
+    {
+      "language": "zh-cn",
+      "hash": "b63949be50fb4be985d9ab71cb9411d8db4670dde526af68862e738d2854da17",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pythonAstMatch": true,
+      "pythonOutput": [
+        "50 Hz: 1.000",
+        "120 Hz: 0.500"
+      ],
+      "mermaidEdges": 3,
+      "referenceUrls": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "internalLinks": [
+        "/zh-cn/p/eulers-identity/",
+        "/zh-cn/p/fast-fourier-transform-algorithm/"
+      ],
+      "maxUnexpectedAmplitude": 6.714248503147612e-15,
+      "articleNormalizationCases": [
+        {
+          "N": 1,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "nyquist",
+          "bin": 1,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "nyquist",
+          "bin": 4,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "highest-odd",
+          "bin": 4,
+          "amplitude": 1.2500000000000002
+        }
+      ],
+      "plotDataMatch": true,
+      "hugoRendered": true,
+      "pythonPlotVisuallyInspected": true
+    },
+    {
+      "language": "zh-tw",
+      "hash": "7667f74a7d113361a83d6eadb0cb4a1047293b725bb1eab2e4ff36c03491cabc",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pythonAstMatch": true,
+      "pythonOutput": [
+        "50 Hz: 1.000",
+        "120 Hz: 0.500"
+      ],
+      "mermaidEdges": 3,
+      "referenceUrls": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "internalLinks": [
+        "/zh-tw/p/eulers-identity/",
+        "/zh-tw/p/fast-fourier-transform-algorithm/"
+      ],
+      "maxUnexpectedAmplitude": 6.714248503147612e-15,
+      "articleNormalizationCases": [
+        {
+          "N": 1,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "nyquist",
+          "bin": 1,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "nyquist",
+          "bin": 4,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "highest-odd",
+          "bin": 4,
+          "amplitude": 1.2500000000000002
+        }
+      ],
+      "plotDataMatch": true,
       "hugoRendered": true,
       "pythonPlotVisuallyInspected": true
     }
@@ -187,11 +347,11 @@
   "limitations": [
     "AI technical review, not native-speaker human confirmation.",
     "Finite numerical cases supplement algebra and source reading; they do not prove general convergence or inversion.",
-    "Local Hugo, multilingual and HTTPS checks passed; publication pending. Eleven other Fourier translations remain unreviewed."
+    "Local Hugo, multilingual and HTTPS checks passed; publication pending. Nine other Fourier translations remain unreviewed."
   ],
   "localBuild": {
     "hugoVersion": "0.139.0 extended",
-    "contentScope": "Ten article bundles in all thirteen languages, including eleven Fourier translations that are not yet semantically reviewed.",
+    "contentScope": "Ten article bundles in all thirteen languages; Fourier Japanese, English and both Chinese translations have been read in full; the other nine Fourier translations have not been semantically reviewed.",
     "multilingualSitemapPages": 702,
     "httpsHtmlFiles": 1301,
     "httpsXmlFiles": 41,
