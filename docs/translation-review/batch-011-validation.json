@@ -913,5 +913,14 @@
     "Mermaid source topology and labels plus HTML output checked; live browser diagram rendering was not inspected.",
     "No JWT library, authentication service, security penetration test or performance benchmark was executed.",
     "Publication verification pending."
-  ]
+  ],
+  "stageAssembly": {
+    "checkedAt": "2026-10-24T19:50:37.708510+09:00",
+    "reviewedVersions": 8,
+    "reviewedTranslations": 7,
+    "unreviewedTranslations": 5,
+    "allRecordedHashesCurrent": true,
+    "reviewedLocalHtmlCurrent": true,
+    "publicationPending": true
+  }
 }
