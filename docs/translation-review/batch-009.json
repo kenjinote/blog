@@ -147,6 +147,104 @@
         "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
       ],
       "validation": "docs/translation-review/batch-009-validation.json"
+    },
+    "post/fourier-series-and-transform/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fourier-series-and-transform/index.md",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "0dbd30678747698231f6f7660610362693ae701eb277562120c581a436e5562b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Spanish version and complete revised Japanese source, then reread the full revised Spanish title, metadata and article. Compared every section: finite piecewise-C1 partition, function/derivative endpoint limits, jump averages and Gibbs phenomenon, symmetric summation, DC and complex coefficients, conditional inverse, angular-frequency units, continuous spectrum versus periodic amplitude, DFT pair, sampling/leakage, FFT/DCT distinction and executable-example caveats. Added both new formulas and all explanatory paragraphs; structural equality alone was not treated as semantic review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used suaves a trozos with the explicit piecewise-C1 definition and finite lateral limits, suma parcial simétrica, componente continua, módulo/argumento, frecuencia angular in rad/s versus hercios, integral impropia, distribuciones, muestreo, fuga espectral and componente de Nyquist. Explained bins as discrete frequency positions and distinguished transformada discreta from FFT algorithms. Spanish prose uses 0,5 while executable Python and its reported output retain decimal points with an explicit explanation. Removed the unrestricted title and any-function claim; completed the conditional inverse and all code."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all eleven display formulas and inline coefficient relations. Checked real-series coefficient factors, c0=a0/2, cn=(an-i bn)/2 and c(-n)=(an+i bn)/2, symmetric summation, periodic one-sided limits, FT minus sign and inverse 1/(2 pi), continuity and absolute-integrability inversion example, and DFT/IDFT signs with inverse 1/N. Added fs/N spacing, band-limitation and finite-window qualifications. Independently evaluated real/complex coefficients for a trigonometric polynomial, three direct complex DFT/IDFT cases, and six finite Gaussian forward/inverse quadratures as supplementary illustrations rather than proofs of the general theorems."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed this full Python example with NumPy 2.3.5 and Agg and compared its AST against Japanese. Verified exact printed lines 50 Hz: 1.000 and 120 Hz: 0.500, plotted frequencies/amplitudes and the generated figure by visual inspection. Exercised its own amplitude-normalization statements on eight DC/Nyquist/even/odd/singleton cases. Read all labels of its three-edge Mermaid diagram. Plot labels deliberately remain identical runnable English strings; prose and code comments are translated."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all eight primary-reference URLs to Japanese and checked their translated labels against the documented reading scope in batch-009-source-notes.md. Confirmed /es/p/eulers-identity/ and /es/p/fast-fourier-transform-algorithm/ destination files and eyecatch exist. Read updated local rendered text and complete code; multilingual 702 sitemap pages and HTTPS 1,301 HTML/41 XML validators passed. This Fourier batch has not been published yet."
+        }
+      },
+      "summary": "Full-body Spanish review of meaning, terminology, mathematics, working Python example and links against corrected Japanese, with explicit convergence and normalization conditions.",
+      "languageSpecificFindings": "Used suaves a trozos with the explicit piecewise-C1 definition and finite lateral limits, suma parcial simétrica, componente continua, módulo/argumento, frecuencia angular in rad/s versus hercios, integral impropia, distribuciones, muestreo, fuga espectral and componente de Nyquist. Explained bins as discrete frequency positions and distinguished transformada discreta from FFT algorithms. Spanish prose uses 0,5 while executable Python and its reported output retain decimal points with an explicit explanation. Removed the unrestricted title and any-function claim; completed the conditional inverse and all code.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Seven other Fourier translations remain unreviewed; local rendering does not establish their editorial correctness.",
+        "Finite numerical cases are supplementary evidence, not a proof of general convergence or inversion.",
+        "Primary-source reading scope is documented in batch-009-source-notes.md; full longer documents were not read. Publication of this Fourier batch is pending."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "validation": "docs/translation-review/batch-009-validation.json"
+    },
+    "post/fourier-series-and-transform/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fourier-series-and-transform/index.md",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "72105917d17d2cc607158415c54e0061dba4d4bcc70c91b3125c7ced71093c41",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Korean version and complete revised Japanese source, then reread the full revised Korean title, metadata and article. Compared every section: finite piecewise-C1 partition, function/derivative endpoint limits, jump averages and Gibbs phenomenon, symmetric summation, DC and complex coefficients, conditional inverse, angular-frequency units, continuous spectrum versus periodic amplitude, DFT pair, sampling/leakage, FFT/DCT distinction and executable-example caveats. Added both new formulas and all explanatory paragraphs; structural equality alone was not treated as semantic review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 조각별로 매끄러운 with explicit conditions on the function and 도함수, 좌극한/우극한, 도약 불연속점, 대칭 부분합, 깁스 현상, 직류 성분, 절대수렴/절대적분 가능, 각주파수, 편각, 이상적분, 분포, 표본화, 스펙트럼 누설 and 나이퀴스트 성분. Distinguished real and complex values, one-sided frequency bins and convergence conditions. Replaced the universal 모든 title claim and removed the concluding self-link and repeated FFT links. Completed the Python example and all mathematical qualifications."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all eleven display formulas and inline coefficient relations. Checked real-series coefficient factors, c0=a0/2, cn=(an-i bn)/2 and c(-n)=(an+i bn)/2, symmetric summation, periodic one-sided limits, FT minus sign and inverse 1/(2 pi), continuity and absolute-integrability inversion example, and DFT/IDFT signs with inverse 1/N. Added fs/N spacing, band-limitation and finite-window qualifications. Independently evaluated real/complex coefficients for a trigonometric polynomial, three direct complex DFT/IDFT cases, and six finite Gaussian forward/inverse quadratures as supplementary illustrations rather than proofs of the general theorems."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed this full Python example with NumPy 2.3.5 and Agg and compared its AST against Japanese. Verified exact printed lines 50 Hz: 1.000 and 120 Hz: 0.500, plotted frequencies/amplitudes and the generated figure by visual inspection. Exercised its own amplitude-normalization statements on eight DC/Nyquist/even/odd/singleton cases. Read all labels of its three-edge Mermaid diagram. Plot labels deliberately remain identical runnable English strings; prose and code comments are translated."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all eight primary-reference URLs to Japanese and checked their translated labels against the documented reading scope in batch-009-source-notes.md. Confirmed /ko/p/eulers-identity/ and /ko/p/fast-fourier-transform-algorithm/ destination files and eyecatch exist. Read updated local rendered text and complete code; multilingual 702 sitemap pages and HTTPS 1,301 HTML/41 XML validators passed. This Fourier batch has not been published yet."
+        }
+      },
+      "summary": "Full-body Korean review of meaning, terminology, mathematics, working Python example and links against corrected Japanese, with explicit convergence and normalization conditions.",
+      "languageSpecificFindings": "Used 조각별로 매끄러운 with explicit conditions on the function and 도함수, 좌극한/우극한, 도약 불연속점, 대칭 부분합, 깁스 현상, 직류 성분, 절대수렴/절대적분 가능, 각주파수, 편각, 이상적분, 분포, 표본화, 스펙트럼 누설 and 나이퀴스트 성분. Distinguished real and complex values, one-sided frequency bins and convergence conditions. Replaced the universal 모든 title claim and removed the concluding self-link and repeated FFT links. Completed the Python example and all mathematical qualifications.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Seven other Fourier translations remain unreviewed; local rendering does not establish their editorial correctness.",
+        "Finite numerical cases are supplementary evidence, not a proof of general convergence or inversion.",
+        "Primary-source reading scope is documented in batch-009-source-notes.md; full longer documents were not read. Publication of this Fourier batch is pending."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "validation": "docs/translation-review/batch-009-validation.json"
     }
   }
 }
