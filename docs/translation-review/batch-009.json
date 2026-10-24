@@ -441,6 +441,153 @@
         "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
       ],
       "validation": "docs/translation-review/batch-009-validation.json"
+    },
+    "post/fourier-series-and-transform/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fourier-series-and-transform/index.md",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "fe93e8e489a768ec57d560237aa8585e02e100674083fc2cfa473c6ed03edafd",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Hindi version and full revised Japanese source, then reread the complete revised Hindi metadata and article. Compared each section: piecewise-C1 sufficient conditions and derivative endpoint limits, periodic joins, jump means, Gibbs/nonuniform error, symmetric sums, complex coefficients, conditional inversion and units, continuous spectral weights, finite DFT pair, sampling/leakage, FFT/DCT distinction, output and window/bin caveats. Included both added displayed formulas and every source qualification. Automated structural matches were only supplementary to the full-body comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Replaced function-as-task कार्य with फलन in body and metadata, and real-valued वास्तविक मूल्यवान with वास्तविक मान वाले. Used सम्मिश्र rather than जटिल for complex numbers/functions, अवकलज, एकपक्षीय सीमाएँ, पर्याप्त शर्त, सममित आंशिक योग, निरपेक्ष अभिसरण/समाकलनीयता, कोणीय आवृत्ति, मापांक/कोणांक and कला (phase), with English aliases for less familiar technical terms. Retained यूलर to match the reviewed target article. Removed universal title and self-link, corrected the DC factor, separated L2/distribution extension sentences, restored hypotheses, and completed all executable code. A university syllabus search excerpt supported the nirapeksh/uniform convergence vocabulary; the full syllabus was not read."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all eleven display formulas and inline coefficient relations. Checked real-series coefficient factors, c0=a0/2, cn=(an-i bn)/2 and c(-n)=(an+i bn)/2, symmetric summation, periodic one-sided limits, FT minus sign and inverse 1/(2 pi), continuity and absolute-integrability inversion example, and DFT/IDFT signs with inverse 1/N. Added fs/N spacing, band-limitation and finite-window qualifications. Independently evaluated real/complex coefficients for a trigonometric polynomial, three direct complex DFT/IDFT cases, and six finite Gaussian forward/inverse quadratures as supplementary illustrations rather than proofs of the general theorems."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed this entire Python example with NumPy 2.3.5 and Agg. Its AST matches Japanese; printed output is exactly 50 Hz: 1.000 and 120 Hz: 0.500. Checked plotted frequencies/amplitudes and visually inspected this language saved figure. Exercised its own normalization code on eight DC/Nyquist/even/odd/singleton cases. Read all labels of the three-edge Mermaid diagram. Runnable plot labels intentionally remain the same English strings; prose and comments are translated."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all eight primary reference URLs and translated labels to the source-review scope in batch-009-source-notes.md. Verified /hi/p/eulers-identity/ and /hi/p/fast-fourier-transform-algorithm/ destination files and eyecatch. Read updated local HTML; multilingual 702 sitemap pages and HTTPS 1,301 HTML/41 XML validators passed. All thirteen Fourier versions now pass the final formula, AST, file-hash and rendered-output audit. Publication has not yet been verified."
+        }
+      },
+      "summary": "Full-body Hindi semantic, terminology, mathematics, code and link review against corrected Japanese; all convergence, inversion, sampling and amplitude qualifications restored.",
+      "languageSpecificFindings": "Replaced function-as-task कार्य with फलन in body and metadata, and real-valued वास्तविक मूल्यवान with वास्तविक मान वाले. Used सम्मिश्र rather than जटिल for complex numbers/functions, अवकलज, एकपक्षीय सीमाएँ, पर्याप्त शर्त, सममित आंशिक योग, निरपेक्ष अभिसरण/समाकलनीयता, कोणीय आवृत्ति, मापांक/कोणांक and कला (phase), with English aliases for less familiar technical terms. Retained यूलर to match the reviewed target article. Removed universal title and self-link, corrected the DC factor, separated L2/distribution extension sentences, restored hypotheses, and completed all executable code. A university syllabus search excerpt supported the nirapeksh/uniform convergence vocabulary; the full syllabus was not read.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Finite numerical cases supplement primary-source mathematical checks and are not general convergence or inversion proofs.",
+        "The primary-source reading scope is recorded in batch-009-source-notes.md; longer documents were not read in full.",
+        "All twelve Fourier translations have now been read and reviewed separately, but publication of this batch is pending."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "validation": "docs/translation-review/batch-009-validation.json"
+    },
+    "post/fourier-series-and-transform/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fourier-series-and-transform/index.md",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "fe18ebbfb755c9543dd087b356572a2d2d91d9be7bcec5ba9f4732bdea41bbb7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Russian version and full revised Japanese source, then reread the complete revised Russian metadata and article. Compared each section: piecewise-C1 sufficient conditions and derivative endpoint limits, periodic joins, jump means, Gibbs/nonuniform error, symmetric sums, complex coefficients, conditional inversion and units, continuous spectral weights, finite DFT pair, sampling/leakage, FFT/DCT distinction, output and window/bin caveats. Included both added displayed formulas and every source qualification. Automated structural matches were only supplementary to the full-body comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used кусочно-гладкие with explicit function/derivative finite one-sided limits, достаточное условие, полусумма, симметричные частичные суммы, равномерная сходимость, постоянная составляющая, абсолютно интегрируемы, угловая частота, модуль/аргумент, несобственный интеграл, обобщённые функции, дискретизация, спектральная утечка and составляющая Найквиста. Explicitly made frequencies integer multiples, distinguished ДПФ/DFT, БПФ/FFT and ДКП/DCT, and explained Python decimal points against prose commas. Corrected amplitude sentence grammar, removed self-link and restored all conditions and the complete example."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all eleven display formulas and inline coefficient relations. Checked real-series coefficient factors, c0=a0/2, cn=(an-i bn)/2 and c(-n)=(an+i bn)/2, symmetric summation, periodic one-sided limits, FT minus sign and inverse 1/(2 pi), continuity and absolute-integrability inversion example, and DFT/IDFT signs with inverse 1/N. Added fs/N spacing, band-limitation and finite-window qualifications. Independently evaluated real/complex coefficients for a trigonometric polynomial, three direct complex DFT/IDFT cases, and six finite Gaussian forward/inverse quadratures as supplementary illustrations rather than proofs of the general theorems."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed this entire Python example with NumPy 2.3.5 and Agg. Its AST matches Japanese; printed output is exactly 50 Hz: 1.000 and 120 Hz: 0.500. Checked plotted frequencies/amplitudes and visually inspected this language saved figure. Exercised its own normalization code on eight DC/Nyquist/even/odd/singleton cases. Read all labels of the three-edge Mermaid diagram. Runnable plot labels intentionally remain the same English strings; prose and comments are translated."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all eight primary reference URLs and translated labels to the source-review scope in batch-009-source-notes.md. Verified /ru/p/eulers-identity/ and /ru/p/fast-fourier-transform-algorithm/ destination files and eyecatch. Read updated local HTML; multilingual 702 sitemap pages and HTTPS 1,301 HTML/41 XML validators passed. All thirteen Fourier versions now pass the final formula, AST, file-hash and rendered-output audit. Publication has not yet been verified."
+        }
+      },
+      "summary": "Full-body Russian semantic, terminology, mathematics, code and link review against corrected Japanese; all convergence, inversion, sampling and amplitude qualifications restored.",
+      "languageSpecificFindings": "Used кусочно-гладкие with explicit function/derivative finite one-sided limits, достаточное условие, полусумма, симметричные частичные суммы, равномерная сходимость, постоянная составляющая, абсолютно интегрируемы, угловая частота, модуль/аргумент, несобственный интеграл, обобщённые функции, дискретизация, спектральная утечка and составляющая Найквиста. Explicitly made frequencies integer multiples, distinguished ДПФ/DFT, БПФ/FFT and ДКП/DCT, and explained Python decimal points against prose commas. Corrected amplitude sentence grammar, removed self-link and restored all conditions and the complete example.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Finite numerical cases supplement primary-source mathematical checks and are not general convergence or inversion proofs.",
+        "The primary-source reading scope is recorded in batch-009-source-notes.md; longer documents were not read in full.",
+        "All twelve Fourier translations have now been read and reviewed separately, but publication of this batch is pending."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "validation": "docs/translation-review/batch-009-validation.json"
+    },
+    "post/fourier-series-and-transform/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fourier-series-and-transform/index.md",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "0ec06d6c3b102ac039e18b8865f4f571d5258176d1b6b2732c65b053e1fd4609",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Arabic version and full revised Japanese source, then reread the complete revised Arabic metadata and article. Compared each section: piecewise-C1 sufficient conditions and derivative endpoint limits, periodic joins, jump means, Gibbs/nonuniform error, symmetric sums, complex coefficients, conditional inversion and units, continuous spectral weights, finite DFT pair, sampling/leakage, FFT/DCT distinction, output and window/bin caveats. Included both added displayed formulas and every source qualification. Automated structural matches were only supplementary to the full-body comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used مركّبة for complex-valued functions instead of the original معقدة (complicated), معقدة only for ordinary complicated phenomena, and المركبة الثابتة (DC) for the constant component. Used شرط كافٍ, نهايات أحادية الجانب, مجاميع جزئية متناظرة, تقارب مطلق, تعامد, تردد زاوي, قيمة مطلقة/زاوية, تكامل غير صحيح, توزيعات رياضية, أخذ العينات, تسرب طيفي and نايكويست. Distinguished finite متتالية from infinite متسلسلة and direct/inverse signs and normalization. Removed self-link and universal claim; completed code and clarified that the default forward-transform result is not divided by N."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all eleven display formulas and inline coefficient relations. Checked real-series coefficient factors, c0=a0/2, cn=(an-i bn)/2 and c(-n)=(an+i bn)/2, symmetric summation, periodic one-sided limits, FT minus sign and inverse 1/(2 pi), continuity and absolute-integrability inversion example, and DFT/IDFT signs with inverse 1/N. Added fs/N spacing, band-limitation and finite-window qualifications. Independently evaluated real/complex coefficients for a trigonometric polynomial, three direct complex DFT/IDFT cases, and six finite Gaussian forward/inverse quadratures as supplementary illustrations rather than proofs of the general theorems."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed this entire Python example with NumPy 2.3.5 and Agg. Its AST matches Japanese; printed output is exactly 50 Hz: 1.000 and 120 Hz: 0.500. Checked plotted frequencies/amplitudes and visually inspected this language saved figure. Exercised its own normalization code on eight DC/Nyquist/even/odd/singleton cases. Read all labels of the three-edge Mermaid diagram. Runnable plot labels intentionally remain the same English strings; prose and comments are translated."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all eight primary reference URLs and translated labels to the source-review scope in batch-009-source-notes.md. Verified /ar/p/eulers-identity/ and /ar/p/fast-fourier-transform-algorithm/ destination files and eyecatch. Read updated local HTML; multilingual 702 sitemap pages and HTTPS 1,301 HTML/41 XML validators passed. All thirteen Fourier versions now pass the final formula, AST, file-hash and rendered-output audit. Publication has not yet been verified."
+        }
+      },
+      "summary": "Full-body Arabic semantic, terminology, mathematics, code and link review against corrected Japanese; all convergence, inversion, sampling and amplitude qualifications restored.",
+      "languageSpecificFindings": "Used مركّبة for complex-valued functions instead of the original معقدة (complicated), معقدة only for ordinary complicated phenomena, and المركبة الثابتة (DC) for the constant component. Used شرط كافٍ, نهايات أحادية الجانب, مجاميع جزئية متناظرة, تقارب مطلق, تعامد, تردد زاوي, قيمة مطلقة/زاوية, تكامل غير صحيح, توزيعات رياضية, أخذ العينات, تسرب طيفي and نايكويست. Distinguished finite متتالية from infinite متسلسلة and direct/inverse signs and normalization. Removed self-link and universal claim; completed code and clarified that the default forward-transform result is not divided by N.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Finite numerical cases supplement primary-source mathematical checks and are not general convergence or inversion proofs.",
+        "The primary-source reading scope is recorded in batch-009-source-notes.md; longer documents were not read in full.",
+        "All twelve Fourier translations have now been read and reviewed separately, but publication of this batch is pending."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "validation": "docs/translation-review/batch-009-validation.json"
     }
   }
 }

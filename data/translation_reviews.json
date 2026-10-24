@@ -1175,6 +1175,36 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-009.json",
       "evidenceHash": "3fd3e937078ab7c454fd3bf79d41ac6a243caa57b9330ff1bfa1a5234e758a29"
+    },
+    "post/fourier-series-and-transform/index.hi.md": {
+      "source": "post/fourier-series-and-transform/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "fe93e8e489a768ec57d560237aa8585e02e100674083fc2cfa473c6ed03edafd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-009.json",
+      "evidenceHash": "29e41a3023af2fddd6af5601e4ee85ba4cace5896b88de469c73b7c6348ed582"
+    },
+    "post/fourier-series-and-transform/index.ru.md": {
+      "source": "post/fourier-series-and-transform/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "fe18ebbfb755c9543dd087b356572a2d2d91d9be7bcec5ba9f4732bdea41bbb7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-009.json",
+      "evidenceHash": "ae7f76b502d0e4cdcb734b4ec99620c7dc112c3e9e06ac1eeafed872a3c913ac"
+    },
+    "post/fourier-series-and-transform/index.ar.md": {
+      "source": "post/fourier-series-and-transform/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "0ec06d6c3b102ac039e18b8865f4f571d5258176d1b6b2732c65b053e1fd4609",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-009.json",
+      "evidenceHash": "00b3a6c3d80528813671181b68a50fab7b1cb29a118efc91ce2e7e6d8cf5441f"
     }
   }
 }
