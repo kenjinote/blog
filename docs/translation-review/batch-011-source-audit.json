@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-24T19:31:30.270638+09:00",
+  "reviewer": "Codex (AI)",
+  "source": "post/jwt-json-web-token-security-risks/index.md",
+  "sourceHash": "4bfa9c1943f976c88949b48e7bf7cbb5ad82e3bcdfb4d4018d56e20d25e17e67",
+  "englishHash": "3123a3b63ad2aa02490f774367d0f6f9d2384670d03b70c890a80219a9525368",
+  "metadataAndFullBodyRead": [
+    "ja",
+    "en"
+  ],
+  "sourceReviewComplete": false,
+  "translationsReviewed": [],
+  "ledgerRecordsAdded": 0,
+  "displayMathCount": 0,
+  "pythonBlocks": 0,
+  "mermaidGraphs": 3,
+  "confirmedIssues": [
+    "Wrong CVE identifier copied into English; primary record is unrelated to JWT.",
+    "JWT format and cookie transport are compared as if mutually exclusive.",
+    "JWT defined only as private-key signed; signature validation alone presented as sufficient and self-issuer implied.",
+    "JWT expiry assumed mandatory, revocation impossibility and performance degradation asserted without design conditions or measurement.",
+    "HttpOnly treated too broadly as an XSS remedy; session IDs described as intrinsically safe and instant revocation ignores distributed caching.",
+    "Refresh-token storage and fixed example lifetime described as universal, and refresh state equated with every-request lookup.",
+    "Internal network trust, one-time reset URLs and OAuth access/ID token roles need explicit security boundaries."
+  ],
+  "primaryReferences": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7519.html",
+      "readScope": "Abstract; section 3 overview; section 4 and 4.1 claim optionality; 4.1.4 expiration excerpt. Not a whole-RFC review.",
+      "finding": "JWT is a claims representation using JWS/MAC and/or JWE, not necessarily private-key signed. The generic format does not require every registered claim."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8725.html",
+      "readScope": "Sections 1, 2.1, 2.8, 3.1-3.3, 3.8-3.12 excerpts; not all cryptographic guidance or referenced papers.",
+      "finding": "Algorithm selection and key binding must follow application rules; none and RSA/HMAC confusion are distinct implementation failures. Signature checking alone does not establish intended issuer, recipient or token use."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2015/9xxx/CVE-2015-9256.json",
+      "readScope": "Fetched and read CNA English description and cveMetadata from the primary CVE list using Invoke-RestMethod; browser fetch failed.",
+      "finding": "This record concerns Datto ALTO/SIRIS restore mount point ACLs, unrelated to JWT alg:none. Do not silently substitute CVE-2015-9235 for a none vulnerability: RFC 8725 cites that ID for RSA/HMAC confusion."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7009.html",
+      "readScope": "Abstract and section 3 implementation note, including self-contained versus reference tokens and back-end revocation coordination.",
+      "finding": "Self-contained token revocation is a system design tradeoff with state/coordination costs; not categorically impossible. A refresh-token revocation alone does not magically invalidate all locally validated access tokens."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+      "readScope": "Sections 2.2.2 and 4.14.1-4.14.2 including replay protection and expiration; not all OAuth attack sections.",
+      "finding": "Refresh issuance is risk-based. Public clients receiving refresh tokens require sender constraints or rotation; access-token validation may remain local even when refresh grant management has state."
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+      "readScope": "Cookie Secure, HttpOnly, SameSite and name-prefix sections.",
+      "finding": "HttpOnly prevents script reading of cookies but hostile same-origin scripts can still cause authenticated requests. SameSite is a CSRF defense layer; session IDs also need theft, fixation and lifecycle protections."
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+      "readScope": "Local Storage section and adjacent storage warnings; not all browser API guidance.",
+      "finding": "Web Storage is readable by origin scripts; sessionStorage lifetime does not prevent XSS exfiltration."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc6749.html",
+      "readScope": "Sections 1.4-1.5 and 7 validation excerpts only. Earlier implicit/password grant descriptions were not treated as current recommendations; RFC 9700 updates security advice.",
+      "finding": "OAuth access-token formats vary; JWT is not mandated for every access token. Refresh tokens are optional and distinct from resource-server access tokens."
+    },
+    {
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "readScope": "Section 2 ID Token definition, claims and signing/encryption excerpts.",
+      "finding": "An OIDC ID Token is a JWT about end-user authentication for a client. Do not conflate it with a resource API access token."
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html",
+      "readScope": "Reset-token requirements and URL token section.",
+      "finding": "A reset token needs expiry, user binding and one-use invalidation. Choosing JWT format alone does not make a URL one-time."
+    }
+  ],
+  "nextActions": [
+    "Complete and reread corrected source metadata, entire body and three graphs.",
+    "Revise and reread all twelve translations independently, preserving full meaning and conditions.",
+    "Check diagram topology, references, dates, source and translation hashes and local HTML; code and mathematics are not applicable here.",
+    "Record only full-body completed translations as AI reviews; publish and verify pages afterward."
+  ],
+  "limitations": [
+    "Preliminary source audit only; no translation counted as reviewed.",
+    "No live authentication service, token library or deployed JWT validation code was tested.",
+    "Read scopes above are partial primary-document inspection; not a claim of whole-standard conformance review."
+  ]
+}
