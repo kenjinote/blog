@@ -250,6 +250,106 @@
         "https://larsonlab.github.io/MRI-education-resources/Image%20Reconstruction.html"
       ],
       "validation": "docs/translation-review/batch-010-validation.json"
+    },
+    "post/fast-fourier-transform-algorithm/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fast-fourier-transform-algorithm/index.md",
+      "sourceHash": "501271291610af83c7d6e51102ada7580f6a50554f79b35524142df9d44ab4f6",
+      "translationHash": "d25d2d93a4fb9e521497119ef0a71e58d6922efe9b5852c1c4da97b8d4baf75c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Portuguese article and complete corrected Japanese source, then reread the complete revised Portuguese metadata and body. Compared each derivation step, N=1/N>=2 cases, forward/inverse DFT conventions, negative-frequency range, sampling and leakage caveats, recurrence, explicit versus implicit bit reversal, input contract, comparison limitations, PocketFFT version attribution, codecs, OFDM and Cartesian MRI. Both added display formulas and all source conditions are present. Structural matches were supplementary, not the basis for claiming full semantic review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Rewrote the original obscure conclusion and application passages in clear European Portuguese while restoring all corrected source qualifications. Used base 2, dizimação no tempo, fator de rotação, operação borboleta, recursiva/iterativa, módulos e fases, amostragem, fuga espectral, mascaramento, quantização and transformada discreta do cosseno modificada. Explained reversal of the order of index bits, not complementing bit values. Corrected NumPy biblioteca padrão, the k>=N/2 misuse, universal speed and masking claims, frequency-energy conflation, and FFT/MDCT/JPEG/OFDM/MRI distinctions. Preserved N=1, complex inputs and all finite-precision limitations."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared ten displayed formulas and all inline ranges/signs. Added inverse DFT factor 1/N and operation-count recurrence; checked Ts>0, N positive, negative-frequency bins k>N/2, power-of-two p>=0, N=1 separately, m=0..N/2-1, W_N squared and shifted signs, and both outputs for k=0..N/2-1. Checked bit reversal [0,4,2,6,1,5,3,7] and why the supplied recursive code needs no explicit permutation. Finite butterfly and direct DFT/inverse checks supplement the algebra rather than proving arbitrary inputs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed both Python blocks in their article order for this language. AST matches corrected Japanese after removing docstrings; error and output strings intentionally remain identical English while comments/docstrings are translated. Verified 48 valid inputs against NumPy, direct DFT for length<=32, inverse round trips, unchanged inputs and complex128 output. Eight invalid inputs raise ValueError. Three finite sizes check every butterfly pair. Article real and complex comparisons are True, maximum absolute error 4.833620366037432e-13 in this environment. These are finite checks, not a benchmark or universal proof."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all nine primary-reference URLs and translated labels to source-review reading scope in batch-010-source-notes.md. Verified /pt/p/fourier-series-and-transform/ and /pt/p/gauss/ files and eyecatch. Confirmed updated translated hypotheses, full code, MDCT and PocketFFT text in local HTML; Hugo, multilingual 778 pages and HTTPS 1,440 HTML/41 XML passed. Read identical seven-edge Mermaid topology and algebraic labels; did not claim a live browser-rendered diagram check. Publication pending."
+        }
+      },
+      "summary": "Full-body Portuguese review of corrected FFT derivation, complex-valued executable code and input contract, normalization/ordering and codec-transform distinctions.",
+      "languageSpecificFindings": "Rewrote the original obscure conclusion and application passages in clear European Portuguese while restoring all corrected source qualifications. Used base 2, dizimação no tempo, fator de rotação, operação borboleta, recursiva/iterativa, módulos e fases, amostragem, fuga espectral, mascaramento, quantização and transformada discreta do cosseno modificada. Explained reversal of the order of index bits, not complementing bit values. Corrected NumPy biblioteca padrão, the k>=N/2 misuse, universal speed and masking claims, frequency-energy conflation, and FFT/MDCT/JPEG/OFDM/MRI distinctions. Preserved N=1, complex inputs and all finite-precision limitations.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Five other FFT translations remain unread and unreviewed; local rendering does not establish their editorial correctness.",
+        "Finite numerical checks supplement the algebra and do not certify arbitrary inputs, precision or speed.",
+        "Primary-source scope is documented in batch-010-source-notes.md; inaccessible original historical papers were not read. Publication pending."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://www.fftw.org/~fftw/fftw-paper-ieee.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/release/1.17.0-notes.html",
+        "https://raw.githubusercontent.com/numpy/numpy/v2.3.5/numpy/fft/_pocketfft.py",
+        "https://www.iis.fraunhofer.de/content/dam/iis/de/doc/ame/conference/AES-17-Conference_mp3-and-AAC-explained_AES17.pdf",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+        "https://www.mathworks.com/help/comm/gs/introduction-to-ofdm.html",
+        "https://larsonlab.github.io/MRI-education-resources/Image%20Reconstruction.html"
+      ],
+      "validation": "docs/translation-review/batch-010-validation.json"
+    },
+    "post/fast-fourier-transform-algorithm/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/fast-fourier-transform-algorithm/index.md",
+      "sourceHash": "501271291610af83c7d6e51102ada7580f6a50554f79b35524142df9d44ab4f6",
+      "translationHash": "bfb289a6c6dbf136acb3a63b11875f48284df4b53bd1ec16ed167dc841369a72",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original French article and complete corrected Japanese source, then reread the complete revised French metadata and body. Compared each derivation step, N=1/N>=2 cases, forward/inverse DFT conventions, negative-frequency range, sampling and leakage caveats, recurrence, explicit versus implicit bit reversal, input contract, comparison limitations, PocketFFT version attribution, codecs, OFDM and Cartesian MRI. Both added display formulas and all source conditions are present. Structural matches were supplementary, not the basis for claiming full semantic review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Standardized the title from Transformation to Transformée de Fourier. Replaced pitch-specific hauteurs de son with general composantes fréquentielles. Used décimation temporelle, indices pairs/impairs, facteur de rotation, papillon, récursive/itérative, repliement spectral, fuites spectrales, quantification and transformée en cosinus discrète modifiée. Explicitly explained reversing the order of binary digits. Corrected the erroneous improved FFT characterization of MDCT, NumPy standard-library and guaranteed nonrecursive claims, k>=N/2 misuse, and the conflation of truncating all high frequencies with JPEG quantization. Matched sampling, inverse normalization, code contracts and application restrictions throughout."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared ten displayed formulas and all inline ranges/signs. Added inverse DFT factor 1/N and operation-count recurrence; checked Ts>0, N positive, negative-frequency bins k>N/2, power-of-two p>=0, N=1 separately, m=0..N/2-1, W_N squared and shifted signs, and both outputs for k=0..N/2-1. Checked bit reversal [0,4,2,6,1,5,3,7] and why the supplied recursive code needs no explicit permutation. Finite butterfly and direct DFT/inverse checks supplement the algebra rather than proving arbitrary inputs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed both Python blocks in their article order for this language. AST matches corrected Japanese after removing docstrings; error and output strings intentionally remain identical English while comments/docstrings are translated. Verified 48 valid inputs against NumPy, direct DFT for length<=32, inverse round trips, unchanged inputs and complex128 output. Eight invalid inputs raise ValueError. Three finite sizes check every butterfly pair. Article real and complex comparisons are True, maximum absolute error 4.833620366037432e-13 in this environment. These are finite checks, not a benchmark or universal proof."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all nine primary-reference URLs and translated labels to source-review reading scope in batch-010-source-notes.md. Verified /fr/p/fourier-series-and-transform/ and /fr/p/gauss/ files and eyecatch. Confirmed updated translated hypotheses, full code, MDCT and PocketFFT text in local HTML; Hugo, multilingual 778 pages and HTTPS 1,440 HTML/41 XML passed. Read identical seven-edge Mermaid topology and algebraic labels; did not claim a live browser-rendered diagram check. Publication pending."
+        }
+      },
+      "summary": "Full-body French review of corrected FFT derivation, complex-valued executable code and input contract, normalization/ordering and codec-transform distinctions.",
+      "languageSpecificFindings": "Standardized the title from Transformation to Transformée de Fourier. Replaced pitch-specific hauteurs de son with general composantes fréquentielles. Used décimation temporelle, indices pairs/impairs, facteur de rotation, papillon, récursive/itérative, repliement spectral, fuites spectrales, quantification and transformée en cosinus discrète modifiée. Explicitly explained reversing the order of binary digits. Corrected the erroneous improved FFT characterization of MDCT, NumPy standard-library and guaranteed nonrecursive claims, k>=N/2 misuse, and the conflation of truncating all high frequencies with JPEG quantization. Matched sampling, inverse normalization, code contracts and application restrictions throughout.",
+      "limitations": [
+        "AI technical and semantic review, not native-speaker human confirmation.",
+        "Five other FFT translations remain unread and unreviewed; local rendering does not establish their editorial correctness.",
+        "Finite numerical checks supplement the algebra and do not certify arbitrary inputs, precision or speed.",
+        "Primary-source scope is documented in batch-010-source-notes.md; inaccessible original historical papers were not read. Publication pending."
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://www.fftw.org/~fftw/fftw-paper-ieee.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/release/1.17.0-notes.html",
+        "https://raw.githubusercontent.com/numpy/numpy/v2.3.5/numpy/fft/_pocketfft.py",
+        "https://www.iis.fraunhofer.de/content/dam/iis/de/doc/ame/conference/AES-17-Conference_mp3-and-AAC-explained_AES17.pdf",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+        "https://www.mathworks.com/help/comm/gs/introduction-to-ofdm.html",
+        "https://larsonlab.github.io/MRI-education-resources/Image%20Reconstruction.html"
+      ],
+      "validation": "docs/translation-review/batch-010-validation.json"
     }
   }
 }
