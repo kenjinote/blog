@@ -83,12 +83,124 @@
       "referencesMatchSource": true,
       "eyecatchExists": true,
       "hugoRendered": true
+    },
+    {
+      "language": "pt",
+      "path": "content/post/taylor-and-maclaurin-series/index.pt.md",
+      "translationHash": "388259729c310340729b8f43aa2ff498f123a716c48025e75a3784b3cc07e1c0",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "Valor aproximado: 0.8414709848078965\nValor de math.sin (para comparação): 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "fr",
+      "path": "content/post/taylor-and-maclaurin-series/index.fr.md",
+      "translationHash": "3a5d9344688fc37e0e6bb75a13e48aec70fe35adcd6dbf4b9a025a1d6a2e2fc7",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "Valeur approximative : 0.8414709848078965\nValeur de math.sin (pour comparaison) : 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "de",
+      "path": "content/post/taylor-and-maclaurin-series/index.de.md",
+      "translationHash": "c81fdc0704ea4481d39fdb954fd74b08c0af5e7a2a65e020c5465aae660e20aa",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "Näherungswert: 0.8414709848078965\nWert von math.sin (zum Vergleich): 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "id",
+      "path": "content/post/taylor-and-maclaurin-series/index.id.md",
+      "translationHash": "6ad01e4b041a1d13b90ff4efb0d45caa343369ba43ca17289726dd0928f7ebea",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "Nilai perkiraan: 0.8414709848078965\nNilai math.sin (untuk perbandingan): 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "hi",
+      "path": "content/post/taylor-and-maclaurin-series/index.hi.md",
+      "translationHash": "2f9ff75bfd045500f6d0ce6c8d5d022e9b647ca098a1882a4e21a9790cffb389",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "सन्निकट मान: 0.8414709848078965\nmath.sin का मान (तुलना के लिए): 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "ru",
+      "path": "content/post/taylor-and-maclaurin-series/index.ru.md",
+      "translationHash": "9bd8e5cdc2ef73119a5e58bba3e3b1672bca28292dfd257950b4f4dba8c1b352",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "Приближенное значение: 0.8414709848078965\nЗначение math.sin (для сравнения): 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "ar",
+      "path": "content/post/taylor-and-maclaurin-series/index.ar.md",
+      "translationHash": "5ebcfd7b0e46f045567af486023375fd94c421a3d066162f87673f1d149787f5",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pendulumFormulaAnnotationReadSeparately": true,
+      "pythonExecuted": true,
+      "computationalFunctionAstMatchesSource": true,
+      "sourceNumericalCasesReproduced": 18,
+      "pythonOutput": "القيمة المقدرة: 0.8414709848078965\nقيمة math.sin (للمقارنة): 0.8414709848078965\n",
+      "mermaidEdgeCount": 3,
+      "referencesMatchSource": true,
+      "eyecatchExists": true,
+      "hugoRendered": true
     }
   ],
   "sourceNumericalEvidence": "docs/translation-review/batch-007-source-validation.json",
   "limitations": [
     "Structural and numerical checks supplement complete-body semantic reading; they are not substitutes for it.",
-    "English, Simplified/Traditional Chinese, Spanish and Korean have been reviewed; seven Taylor translations remain unreviewed.",
+    "All twelve Taylor translations have been read and reviewed; AI review is not human native-speaker confirmation.",
     "Publication of this Taylor batch is not yet verified."
   ],
   "localPreview": {
@@ -96,7 +208,146 @@
     "multilingualPagesChecked": 623,
     "httpsHtmlFilesChecked": 1169,
     "httpsXmlFilesChecked": 41,
-    "scope": "Eight bundles rendered; Taylor semantic review covers Japanese, English, Simplified/Traditional Chinese, Spanish and Korean only.",
+    "scope": "Eight article bundles; Taylor source and all twelve translations reviewed. Fresh final destination avoids stale tag aliases.",
     "existingWarnings": "Post-only preview lacks search/archive pages and home JSON layout; existing Portuguese theme UI translations are incomplete."
+  },
+  "completeBundleValidation": {
+    "versions": 13,
+    "totalDisplayMathBlocks": 143,
+    "pythonExecutions": 13,
+    "totalNumericalCases": 234,
+    "files": [
+      {
+        "language": "ja",
+        "hash": "73815385a99da82d461e3a867619ae702402cbb30b91892667db554d0abd8010",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "en",
+        "hash": "39f6863e5533c7fe61a2a5f0312361fc6ddd4a8098a217b80b66c734a10b059a",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "zh-cn",
+        "hash": "0b0544b3e21c9a22ea4f3b9f6a3cdd53091c7a33081ecf5a9693c6ca5ec0a313",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "es",
+        "hash": "c3b37c1b101dbd23edd3350d21a4f6c1fc873ad81305eefc3e9f224979c0938b",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "ko",
+        "hash": "2360f8cc37be8528d6b1b34da0e3fe7d8a8ba9910051904b407d49c24f8bc360",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "pt",
+        "hash": "388259729c310340729b8f43aa2ff498f123a716c48025e75a3784b3cc07e1c0",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "zh-tw",
+        "hash": "9009445ea10ccad80924cd1238c42c8f297accdefc00d84feeef651c427e570b",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "hi",
+        "hash": "2f9ff75bfd045500f6d0ce6c8d5d022e9b647ca098a1882a4e21a9790cffb389",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "fr",
+        "hash": "3a5d9344688fc37e0e6bb75a13e48aec70fe35adcd6dbf4b9a025a1d6a2e2fc7",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "de",
+        "hash": "c81fdc0704ea4481d39fdb954fd74b08c0af5e7a2a65e020c5465aae660e20aa",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "ar",
+        "hash": "5ebcfd7b0e46f045567af486023375fd94c421a3d066162f87673f1d149787f5",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "ru",
+        "hash": "9bd8e5cdc2ef73119a5e58bba3e3b1672bca28292dfd257950b4f4dba8c1b352",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      },
+      {
+        "language": "id",
+        "hash": "6ad01e4b041a1d13b90ff4efb0d45caa343369ba43ca17289726dd0928f7ebea",
+        "displayMathCount": 11,
+        "mermaidEdgeCount": 3,
+        "pythonExecuted": true,
+        "numericalCasesReproduced": 18,
+        "sourceAstMatches": true,
+        "finalHtmlChecked": true
+      }
+    ],
+    "method": "Display math compared after separately reading localized pendulum annotation; AST comparison excludes docstrings; each Python fence executed and compared with all eighteen high-precision-source reference cases."
   }
 }

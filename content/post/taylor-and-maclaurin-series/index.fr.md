@@ -3,6 +3,7 @@ title: "Séries de Taylor et de Maclaurin : La magie de l'approximation de fonct
 description: "Une explication détaillée des séries de Taylor et de Maclaurin, les secrets du calcul infinitésimal, des significations intuitives aux dérivations mathématiques et applications en programmation et physique."
 slug: "taylor-and-maclaurin-series"
 date: "2026-09-20T14:30:00+09:00"
+lastmod: 2026-10-24
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags:
@@ -14,9 +15,9 @@ tags:
 
 ## Introduction
 
-Dans les mondes des mathématiques, de la physique et même de l'informatique, les **séries de Taylor** et les **séries de Maclaurin** sont des outils incroyablement puissants. Ce sont des méthodes permettant d'exprimer des « fonctions complexes difficiles à calculer », telles que les fonctions exponentielles et trigonométriques, comme des sommes infinies de « polynômes simples pouvant être calculés en utilisant uniquement l'addition et la multiplication ».
+Un **polynôme de Taylor** approche une fonction au voisinage d'un point en y faisant coïncider sa valeur et un nombre fini de dérivées. La somme infinie construite à partir de ces coefficients est la **série de Taylor** ; lorsque le centre est zéro, on parle de **série de Maclaurin**. La convergence de la série et l'égalité de sa somme avec la fonction initiale doivent être vérifiées séparément.
 
-La raison pour laquelle les calculatrices et les ordinateurs peuvent calculer instantanément des valeurs comme $\sin(37^\circ)$ ou $e^{2.5}$ est qu'ils effectuent en interne des calculs d'approximation en appliquant ces développements. Dans cet article, nous expliquerons en détail cette technique mathématique magique, de sa signification intuitive à ses formules rigoureuses et à ses applications concrètes.
+À partir des fonctions exponentielle et trigonométriques, nous expliquerons comment déterminer les coefficients, sous quelles conditions les égalités sont valables et comment majorer l'erreur de troncature. Un exemple pédagogique en Python illustre ensuite l'approximation de $\sin x$ près de zéro.
 
 ## Pourquoi approximer des fonctions avec des polynômes ?
 
@@ -24,33 +25,30 @@ Pour commencer, pourquoi est-il nécessaire de représenter une fonction par un 
 
 ```mermaid
 flowchart LR
-    A["Fonction complexe"] -->|"Développement de Taylor"| B["Somme infinie de polynômes"]
+    A["Fonction analytique près du centre"] -->|"Développement de Taylor dans son intervalle de convergence"| B["Série entière"]
     B -->|"Troncature à des termes finis"| C["Approximation polynomiale"]
     C -->|"Arithmétique de base uniquement"| D["Calcul informatique à grande vitesse"]
 ```
 
-De nombreuses fonctions décrivant des phénomènes naturels sont non linéaires, ce qui les rend difficiles à calculer directement à la main ou uniquement avec les instructions du processeur d'un ordinateur. Cependant, parce que les polynômes ne sont constitués que d'**additions** et de **multiplications**, ils ont l'avantage d'être extrêmement faciles à manipuler pour les ordinateurs.
+Approcher une fonction non linéaire par un polynôme peut simplifier son évaluation, sa dérivation et son intégration. Une fois ses coefficients fixés, un polynôme s'évalue par additions et multiplications. Le reste et les erreurs numériques permettent de déterminer le domaine d'utilisation et la précision de l'approximation.
 
 ## Compréhension intuitive de la série de Maclaurin
 
-Tout d'abord, considérons la **série de Maclaurin**, qui approche une fonction autour d'un point spécifique $x = 0$.
-Supposons que nous ayons une fonction inconnue $f(x)$. Nous voulons approximer cette fonction près de $x = 0$ avec un polynôme $P(x)$ comme suit :
+Considérons d'abord le **développement de Maclaurin**, qui approche une fonction près de $x=0$.
+Supposons que $f$ possède les dérivées nécessaires au voisinage de zéro. Choisissons un degré fini $n$ et déterminons les coefficients du polynôme $P_n$ suivant :
 
-$$ P(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + \dots $$
+$$ P_n(x) = c_0 + c_1 x + c_2 x^2 + \dots + c_n x^n $$
 
-Les conditions pour améliorer la précision de l'approximation sont les suivantes :
+Les coefficients sont déterminés en égalant les valeurs et les dérivées en zéro. La condition sur la dérivée seconde ci-dessous s'applique pour $n\ge2$.
 
-1.  **Approximation d'ordre 0** : La valeur de la fonction à $x=0$ correspond ( $P(0) = f(0)$ ).
-    Il en résulte $c_0 = f(0)$.
-2.  **Approximation du 1er ordre** : La pente (dérivée première) à $x=0$ correspond ( $P'(0) = f'(0)$ ).
-    Il en résulte $c_1 = f'(0)$. Sur un graphique, il s'agit de la tangente de la fonction $f(x)$ à $x=0$.
-3.  **Approximation du 2ème ordre** : La courbure (dérivée seconde) à $x=0$ correspond ( $P''(0) = f''(0)$ ).
-    Puisque $P''(x) = 2 c_2$, nous avons $c_2 = \frac{f''(0)}{2}$.
-4.  **Approximation d'ordre $n$** : En général, en faisant correspondre jusqu'à la $n$-ième dérivée, on peut imiter plus précisément le comportement autour de $x=0$.
+1. **Condition sur la valeur** : $P_n(0)=f(0)$ donne $c_0=f(0)$. Le terme constant assure l'égalité des valeurs en zéro.
+2. **Condition sur la dérivée première** : $P_n'(0)=f'(0)$ donne $c_1=f'(0)$. Le polynôme $P_1(x)=f(0)+f'(0)x$ est l'approximation par la tangente en zéro.
+3. **Condition sur la dérivée seconde** : On impose $P_n''(0)=f''(0)$. Comme $P_n''(0)=2c_2$, on obtient $c_2=f''(0)/2!$. En présence de termes de degré supérieur, la dérivée complète $P_n''(x)$ n'est généralement pas la constante $2c_2$.
+4. **Condition générale** : Pour $k\le n$, imposer $P_n^{(k)}(0)=f^{(k)}(0)$ détermine $c_k=f^{(k)}(0)/k!$. Le reste présenté plus loin majore l'erreur au voisinage du centre.
 
 ## Formule et dérivation de la série de Maclaurin
 
-En répétant indéfiniment les conditions intuitives ci-dessus, nous obtenons une belle série utilisant les coefficients dérivés de chaque ordre de la fonction. C'est ce qu'on appelle la **série de Maclaurin**.
+Si $f$ est indéfiniment dérivable, ces coefficients définissent sa série de Maclaurin. Pour écrire une égalité avec $f(x)$ comme ci-dessous, la série doit cependant converger vers $f(x)$ au point considéré. C'est le cas dans un voisinage approprié de zéro lorsque $f$ y est analytique. Être indéfiniment dérivable ne suffit pas.
 
 $$ f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \frac{f^{(3)}(0)}{3!}x^3 + \dots $$
 
@@ -58,21 +56,21 @@ $$ f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \frac{f^{(3)}(0)}{3!}x^3 + \dot
 
 $$ f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!} x^n $$
 
-Ici, $f^{(n)}(0)$ est la valeur obtenue en différenciant la fonction $f(x)$ $n$ fois et en remplaçant $x=0$, et $n!$ représente la factorielle de $n$ ( $n \times (n-1) \times \dots \times 1$ ).
+Ici, $f^{(n)}(0)$ est la valeur obtenue en dérivant la fonction $f(x)$ $n$ fois puis en évaluant la dérivée en zéro, et $n!$ représente la factorielle de $n$ ( $n \times (n-1) \times \dots \times 1$ ).
 
 ## Séries de Maclaurin des fonctions typiques
 
-Ici, nous présentons les séries de Maclaurin de fonctions importantes qui apparaissent fréquemment.
+Les séries suivantes de l'exponentielle, du sinus et du cosinus convergent vers les fonctions correspondantes pour tout réel $x$. Les arguments trigonométriques sont exprimés en radians.
 
 ### 1. Fonction exponentielle $e^x$
 
-La fonction exponentielle $f(x) = e^x$ reste $e^x$ quel que soit le nombre de fois qu'elle est différenciée. Par conséquent, lorsque $x=0$ est substitué, les coefficients dérivés de tous les ordres deviennent $1$ ( $f^{(n)}(0) = 1$ ).
+La fonction exponentielle $f(x)=e^x$ reste $e^x$ après un nombre quelconque de dérivations. Toutes ses dérivées en zéro valent donc $1$ ($f^{(n)}(0)=1$).
 
 $$ e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots = \sum_{n=0}^{\infty} \frac{x^n}{n!} $$
 
 ### 2. Fonctions trigonométriques $\sin x$ et $\cos x$
 
-Lorsque $\sin x$ est différencié de manière répétée, il change de manière cyclique : $\cos x, -\sin x, -\cos x, \sin x, \dots$. En substituant $x=0$, seuls les coefficients dérivés des ordres impairs subsistent, et les ordres pairs deviennent $0$.
+Les dérivées successives de $\sin x$ suivent le cycle $\cos x, -\sin x, -\cos x, \sin x, \dots$. En $x=0$, seules les dérivées d'ordre impair sont non nulles ; celles d'ordre pair valent $0$.
 
 $$ \sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \dots = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1} $$
 
@@ -82,7 +80,7 @@ $$ \cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \dots = \sum_
 
 ## Extension à la série de Taylor
 
-Alors que la série de Maclaurin est une approximation autour de $x=0$, la généralisation de cela à une approximation autour d'un point arbitraire $x=a$ donne la **série de Taylor**.
+Déplacer le centre de zéro vers $a$ donne la série de Taylor. Si $f$ est analytique près de $a$, l'égalité suivante est valable là où la série représente la fonction initiale. Les approximations ne supposant qu'un nombre fini de dérivées relèvent du polynôme de Taylor fini et de son reste, présentés plus loin.
 
 $$ f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \dots = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!} (x-a)^n $$
 
@@ -92,24 +90,24 @@ Cette formule démontre sa puissance lorsque vous souhaitez prédire la valeur d
 
 ### Approximation linéaire en physique
 
-En physique, l'approximation à l'aide des séries de Taylor est fréquemment utilisée pour faciliter la résolution des équations du mouvement. Par exemple, dans le mouvement d'un pendule, si l'angle de balancement $\theta$ est suffisamment petit, nous n'extrayons que le terme du 1er ordre de la série de Maclaurin pour $\sin \theta$ et l'approximons comme suit :
+En physique, les approximations linéaires par des polynômes de Taylor sont fréquentes. Pour un pendule, exprimons l'angle $\theta$ en radians et supposons $|\theta|\ll1$. On utilise alors l'approximation du premier degré du sinus :
 
 $$ \sin \theta \approx \theta \quad (\text{lorsque } \theta \text{ est suffisamment petit}) $$
 
-Cela transforme une équation différentielle non linéaire complexe en une équation différentielle linéaire facilement soluble, dérivant l'isochronisme d'un pendule simple.
+Cette approximation linéarise l'équation du pendule et donne une période indépendante de l'amplitude dans le cadre de l'approximation des petites oscillations. La période réelle d'un pendule simple dépend de l'amplitude ; cette même approximation ne s'applique pas aux grandes oscillations.
 
 ### Programmation et calcul numérique
 
-À l'intérieur des bibliothèques standard des ordinateurs (telles que le module `math`), les séries de Taylor (ou leurs versions améliorées comme l'approximation de Tchebychev) sont utilisées pour calculer des fonctions. Vous trouverez ci-dessous un exemple simple d'approximation de $\sin x$ en Python.
+L'évaluation numérique des fonctions emploie diverses méthodes, dont les approximations polynomiales. Le module `math` de CPython fait principalement appel à la bibliothèque mathématique C de la plateforme ; les algorithmes dépendent de cette implémentation. L'exemple pédagogique suivant additionne quelques termes près de zéro, par exemple pour $|x|\le1$, et ne reproduit pas l'implémentation interne de la bibliothèque standard.
 
 ```python
 import math
 
 def approx_sin(x, terms=10):
     """
-    Fonction pour approximer sin(x) en utilisant la série de Maclaurin
+    Exemple pédagogique de somme finie de Maclaurin pour sin(x) près de zéro
     x : Angle en radians
-    terms : Nombre de termes à calculer
+    terms : Nombre de termes additionnés (entier positif ; 10 dans cet exemple)
     """
     result = 0.0
     for n in range(terms):
@@ -123,15 +121,42 @@ def approx_sin(x, terms=10):
 # Test : x = 1.0 radian (environ 57.3 degrés)
 x_val = 1.0
 print(f"Valeur approximative : {approx_sin(x_val)}")
-print(f"Valeur réelle : {math.sin(x_val)}")
+print(f"Valeur de math.sin (pour comparaison) : {math.sin(x_val)}")
 ```
 
 ## Rayon de convergence et Théorème de Taylor
 
-Toutes les fonctions ne peuvent pas être représentées avec précision par une série de Taylor à chaque $x$. La plage dans laquelle la série infinie converge vers une valeur finie est appelée le **rayon de convergence**. Par exemple, la série de Maclaurin pour $\ln(1+x)$ n'est valide que dans la plage $-1 < x \le 1$.
+Le **rayon de convergence** $R$ est un nombre indiquant la distance au centre $a$ à l'intérieur de laquelle une série entière converge, $|x-a|<R$ ; ce n'est pas le nom de l'intervalle. Les cas $R=0$ et $R=\infty$ sont possibles. Les points frontières $|x-a|=R$ doivent être étudiés séparément. Par exemple, la série de Maclaurin de $\ln(1+x)$ a pour rayon 1 et vaut la fonction pour les réels $-1<x\le1$. Elle converge conditionnellement en $x=1$ et diverge en $x=-1$.
 
-De plus, le **théorème de Taylor** (évaluation du terme de reste) est un théorème permettant d'estimer l'erreur qu'il y aura entre la vraie valeur et la valeur approximative lors de la troncature à des termes finis (jusqu'au $n$-ième ordre). Cela nous permet de garantir mathématiquement "jusqu'à quel ordre nous devrions développer en fonction de la précision requise".
+Pour une approximation finie, supposons que $f$ soit de classe $C^{n+1}$ sur l'intervalle reliant $a$ à $x$. Le théorème de Taylor donne :
+
+$$
+f(x)=P_{n,a}(x)+R_n(x),\qquad P_{n,a}(x)=\sum_{k=0}^{n}\frac{f^{(k)}(a)}{k!}(x-a)^k
+$$
+
+$$
+R_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-a)^{n+1}
+$$
+
+Ici, $\xi$ se situe entre $a$ et $x$. Si $|f^{(n+1)}|\le M$ sur l'intervalle, alors $|R_n(x)|\le M|x-a|^{n+1}/(n+1)!$. Pour établir l'égalité entre une fonction et sa série de Taylor infinie, on peut vérifier que ce reste tend vers zéro lorsque $n\to\infty$.
+
+Le code précédent additionne 10 termes, jusqu'à $x^{19}$. Le coefficient de degré 20 du sinus étant nul, le théorème de Taylor majore l'erreur de troncature en $x=1$ par $1/21!$, soit environ $1.96\times10^{-20}$. Cette borne concerne la somme finie calculée exactement dans les nombres réels ; les erreurs d'arrondi des calculs en virgule flottante de Python sont distinctes. La sortie de `math.sin` est elle aussi une valeur en virgule flottante servant de comparaison, et non la valeur mathématique exacte.
+
+### Une fonction lisse qui n'est pas représentée par sa série de Taylor
+
+$$
+g(x)=\begin{cases}e^{-1/x},&x>0,\\0,&x\le0.\end{cases}
+$$
+
+Cette fonction est indéfiniment dérivable et toutes ses dérivées en zéro sont nulles. Sa série de Taylor en zéro est donc identiquement nulle et converge pour tout $x$. Mais pour $x>0$, on a $g(x)>0$ : la somme de la série ne coïncide pas avec la fonction initiale. Cet exemple distingue la convergence de la série de l'égalité de sa somme avec la fonction.
 
 ## Conclusion
 
-Les séries de Taylor et les séries de Maclaurin sont, pour ainsi dire, des « traducteurs mathématiques » pour traduire le monde complexe sous une forme facilement gérable appelée polynômes. Le processus consistant à partir du concept de différenciation et à restaurer complètement la fonction d'origine par des additions infinies symbolise la beauté des mathématiques. Des approximations en physique aux algorithmes d'optimisation en IA, leur gamme d'applications est incommensurable. Par tous les moyens, utilisez cet outil puissant pour approfondir votre compréhension des mathématiques et de la programmation.
+Les polynômes de Taylor fournissent des approximations locales et les restes majorent leurs erreurs. Pour utiliser une série de Taylor comme une égalité, il faut vérifier son intervalle de convergence et l'égalité de sa somme avec la fonction initiale. Ces distinctions aident à déterminer la précision et le domaine d'application des approximations en physique et en calcul numérique.
+
+## Références
+
+- [NIST DLMF §1.4(vi) : Théorème de Taylor et restes pour une variable réelle](https://dlmf.nist.gov/1.4#vi)
+- [MIT 18.100A : Basic Analysis §§4.3 et 5.4 (analyticité, régularité, série logarithmique et exemple non analytique)](https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/mit18_100af20_basic_analysis.pdf)
+- [MIT 16.07 Lecture 24 : Approximation du pendule pour de petites amplitudes et dépendance en amplitude](https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/c0c881f96f4ff4e21f082c88e8b015d6_MIT16_07F09_Lec24.pdf)
+- [Python 3.12 math : Fonctions mathématiques et détails d'implémentation de CPython](https://docs.python.org/3.12/library/math.html)
