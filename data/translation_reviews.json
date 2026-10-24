@@ -1055,6 +1055,36 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-008.json",
       "evidenceHash": "b7b831fffd41e6456c2034f473407b28d7e3790fd97890b1b75bdd20150ebcf8"
+    },
+    "post/eulers-identity/index.hi.md": {
+      "source": "post/eulers-identity/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "e60622148a956e0de5e4ff1054248293f86b0cfb402f16d503c8f7b0b85955e2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-008.json",
+      "evidenceHash": "2c5aea24cb44127849d8b7c8c49e48b411e6c23e8eea965b1120b94bf16cc338"
+    },
+    "post/eulers-identity/index.ru.md": {
+      "source": "post/eulers-identity/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "2ff7605a93fd509f6a887a40189991122e05790e2b493830689fd230d4e7674e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-008.json",
+      "evidenceHash": "716108a5e5116f42a30cb542b8d7fae8d0d756c51e1229c50a6c86ba6493f30e"
+    },
+    "post/eulers-identity/index.ar.md": {
+      "source": "post/eulers-identity/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "ecc3403a1e93f66bf576ecd2be2704937bc682a9776a890dd9f30bebe1a5696b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-008.json",
+      "evidenceHash": "3e01791d3252a04872b5e547fd561c7d8ea079b4b8e30623f13f7175ab2c24d3"
     }
   }
 }
