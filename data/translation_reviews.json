@@ -1015,6 +1015,46 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-008.json",
       "evidenceHash": "34090c475e7a546fb61f4e4a8a18ecfb655d20aca1bf6bc09dcf17834d8f8b68"
+    },
+    "post/eulers-identity/index.pt.md": {
+      "source": "post/eulers-identity/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "9569ac0e48cf172d21bde6372502cc68246bba5ca537d9595208bf5a3fd5867e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-008.json",
+      "evidenceHash": "433fd7998b4ba45d7c526f8dc914511e5d3df25f94f5febad53cc94bae784d24"
+    },
+    "post/eulers-identity/index.fr.md": {
+      "source": "post/eulers-identity/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "90dafb03d26cb55e46a0c56c6e373d9202d945071d5947a1d73b6258ced02547",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-008.json",
+      "evidenceHash": "43a2a17491c5d75db748a385607bc43b0f30a8fb7092b91f41169f740ceae585"
+    },
+    "post/eulers-identity/index.de.md": {
+      "source": "post/eulers-identity/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "45b62ee9ef1ec1fc57ea4f8563e114e499b0d546334d9677b1c0cd1554f3c40f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-008.json",
+      "evidenceHash": "384bf7311c9033cb486073225f04ef8e2a6a76fabb73420b201aab07106bf89b"
+    },
+    "post/eulers-identity/index.id.md": {
+      "source": "post/eulers-identity/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "b1778e628706aabc1c384d4122e24e123d686d3f97b08872a29b20d7bc283d06",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-008.json",
+      "evidenceHash": "b7b831fffd41e6456c2034f473407b28d7e3790fd97890b1b75bdd20150ebcf8"
     }
   }
 }

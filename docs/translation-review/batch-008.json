@@ -255,6 +255,210 @@
         "https://library.ethz.ch/sammlungen-und-archive/kurzportraets/leonhard-euler-1707-1783.html"
       ],
       "validation": "docs/translation-review/batch-008-validation.json"
+    },
+    "post/eulers-identity/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eulers-identity/index.md",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "9569ac0e48cf172d21bde6372502cc68246bba5ca537d9595208bf5a3fd5867e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original translation and compared the entire revised article with corrected Japanese, including title/description, five constants, derivation, series proof, complex-plane geometry, history, all three application sections and conclusion. Restored omitted sections rather than treating a short summary as equivalent to the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Restored the missing proof, geometry and all application sections. Used elemento neutro, primitiva, parte imaginária, fasores, regime permanente senoidal, transitórios and amplitude/densidade de probabilidade. Removed the unsupported precious-formula ranking and self-link, replaced x=ix with z=ix, and clarified the general-formula quotation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared thirteen display formulas and all surrounding assumptions. x is real, angles in radians, exp(z) is single-valued and defined by a series; z=0 is separate from the nonzero ratio test. Absolute convergence justifies even/odd grouping; checked powers of i, x=pi, imaginary-part convention, rotation directions and fixed origin. Preserved nonzero-frequency antiderivative, termwise-calculus qualification, single-frequency linear/time-invariant steady-state phasors, FFT/DFT versus JPEG DCT and normalized-position probability density. The source coefficient/numerical illustrations remain bound to the unchanged source hash; they supplement, not replace, the proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the single four-edge Mermaid graph and all localized labels. No executable numerical program appears in the article; supplementary source calculations are separate evidence, not claimed as executing article code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links, checked Euler/Feynman/Taylor/FFT targets exist in this language and the eyecatch exists, and matched eleven HTTPS reference URLs to the source. The source primary references were inspected within the documented mathematical, physics, standards and historical-catalog scope; the original Latin book was not read. Checked revised content and quote in HTML; nine-bundle Hugo build and multilingual/HTTPS validators passed."
+        }
+      },
+      "summary": "Complete-body semantic comparison with corrected Japanese; restored missing proof, geometry and applications, with thirteen formulas, a diagram and matching-language links.",
+      "languageSpecificFindings": "Restored the missing proof, geometry and all application sections. Used elemento neutro, primitiva, parte imaginária, fasores, regime permanente senoidal, transitórios and amplitude/densidade de probabilidade. Removed the unsupported precious-formula ranking and self-link, replaced x=ix with z=ix, and clarified the general-formula quotation.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Three Euler-identity translations remain unreviewed. Publication of this batch is pending.",
+        "Numerical illustrations do not prove the identity for all real x. Historical evidence is catalog and institutional biography, not a complete reading of the Latin original."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/4.2#iii",
+        "https://ocw.mit.edu/courses/18-100c-real-analysis-fall-2012/1058808e5cb57c986118333f8b6fa0d7_MIT18_100CF12_l11sum.pdf",
+        "https://www.feynmanlectures.caltech.edu/I_22.html",
+        "https://www.feynmanlectures.caltech.edu/I_23.html",
+        "https://www.feynmanlectures.caltech.edu/I_25.html",
+        "https://circuits.mit.edu/_static/S23/handouts/lec10b/lecture10b-berggren.pdf",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/resources/lec19/",
+        "https://www.feynmanlectures.caltech.edu/III_03.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+        "https://scholarlycommons.pacific.edu/euler-works/101/",
+        "https://library.ethz.ch/sammlungen-und-archive/kurzportraets/leonhard-euler-1707-1783.html"
+      ],
+      "validation": "docs/translation-review/batch-008-validation.json"
+    },
+    "post/eulers-identity/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eulers-identity/index.md",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "90dafb03d26cb55e46a0c56c6e373d9202d945071d5947a1d73b6258ced02547",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original translation and compared the entire revised article with corrected Japanese, including title/description, five constants, derivation, series proof, complex-plane geometry, history, all three application sections and conclusion. Restored omitted sections rather than treating a short summary as equivalent to the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Restored the missing proof, geometry and applications. Used élément neutre, primitive, partie imaginaire, phaseurs with phasors alias, régime sinusoïdal permanent, transitoires and amplitude/densité de probabilité. Changed the deduction heading from Dérivation to Obtention to distinguish it from differentiation; localized decimal commas, removed duplicate biography and self-links, and corrected x=ix to z=ix."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared thirteen display formulas and all surrounding assumptions. x is real, angles in radians, exp(z) is single-valued and defined by a series; z=0 is separate from the nonzero ratio test. Absolute convergence justifies even/odd grouping; checked powers of i, x=pi, imaginary-part convention, rotation directions and fixed origin. Preserved nonzero-frequency antiderivative, termwise-calculus qualification, single-frequency linear/time-invariant steady-state phasors, FFT/DFT versus JPEG DCT and normalized-position probability density. The source coefficient/numerical illustrations remain bound to the unchanged source hash; they supplement, not replace, the proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the single four-edge Mermaid graph and all localized labels. No executable numerical program appears in the article; supplementary source calculations are separate evidence, not claimed as executing article code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links, checked Euler/Feynman/Taylor/FFT targets exist in this language and the eyecatch exists, and matched eleven HTTPS reference URLs to the source. The source primary references were inspected within the documented mathematical, physics, standards and historical-catalog scope; the original Latin book was not read. Checked revised content and quote in HTML; nine-bundle Hugo build and multilingual/HTTPS validators passed."
+        }
+      },
+      "summary": "Complete-body semantic comparison with corrected Japanese; restored missing proof, geometry and applications, with thirteen formulas, a diagram and matching-language links.",
+      "languageSpecificFindings": "Restored the missing proof, geometry and applications. Used élément neutre, primitive, partie imaginaire, phaseurs with phasors alias, régime sinusoïdal permanent, transitoires and amplitude/densité de probabilité. Changed the deduction heading from Dérivation to Obtention to distinguish it from differentiation; localized decimal commas, removed duplicate biography and self-links, and corrected x=ix to z=ix.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Three Euler-identity translations remain unreviewed. Publication of this batch is pending.",
+        "Numerical illustrations do not prove the identity for all real x. Historical evidence is catalog and institutional biography, not a complete reading of the Latin original."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/4.2#iii",
+        "https://ocw.mit.edu/courses/18-100c-real-analysis-fall-2012/1058808e5cb57c986118333f8b6fa0d7_MIT18_100CF12_l11sum.pdf",
+        "https://www.feynmanlectures.caltech.edu/I_22.html",
+        "https://www.feynmanlectures.caltech.edu/I_23.html",
+        "https://www.feynmanlectures.caltech.edu/I_25.html",
+        "https://circuits.mit.edu/_static/S23/handouts/lec10b/lecture10b-berggren.pdf",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/resources/lec19/",
+        "https://www.feynmanlectures.caltech.edu/III_03.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+        "https://scholarlycommons.pacific.edu/euler-works/101/",
+        "https://library.ethz.ch/sammlungen-und-archive/kurzportraets/leonhard-euler-1707-1783.html"
+      ],
+      "validation": "docs/translation-review/batch-008-validation.json"
+    },
+    "post/eulers-identity/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eulers-identity/index.md",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "45b62ee9ef1ec1fc57ea4f8563e114e499b0d546334d9677b1c0cd1554f3c40f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original translation and compared the entire revised article with corrected Japanese, including title/description, five constants, derivation, series proof, complex-plane geometry, history, all three application sections and conclusion. Restored omitted sections rather than treating a short summary as equivalent to the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Restored proof, geometry and applications omitted from the summary. Used neutrales Element, Stammfunktion, Realteil/Imaginärteil, komplexe Zeiger/Phasoren, sinusförmiger eingeschwungener Zustand, Einschwingvorgänge and Wahrscheinlichkeitsamplitude/Ortswahrscheinlichkeitsdichte. Localized decimal commas, removed duplicate biography and self-links, and corrected x=ix to z=ix."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared thirteen display formulas and all surrounding assumptions. x is real, angles in radians, exp(z) is single-valued and defined by a series; z=0 is separate from the nonzero ratio test. Absolute convergence justifies even/odd grouping; checked powers of i, x=pi, imaginary-part convention, rotation directions and fixed origin. Preserved nonzero-frequency antiderivative, termwise-calculus qualification, single-frequency linear/time-invariant steady-state phasors, FFT/DFT versus JPEG DCT and normalized-position probability density. The source coefficient/numerical illustrations remain bound to the unchanged source hash; they supplement, not replace, the proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the single four-edge Mermaid graph and all localized labels. No executable numerical program appears in the article; supplementary source calculations are separate evidence, not claimed as executing article code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links, checked Euler/Feynman/Taylor/FFT targets exist in this language and the eyecatch exists, and matched eleven HTTPS reference URLs to the source. The source primary references were inspected within the documented mathematical, physics, standards and historical-catalog scope; the original Latin book was not read. Checked revised content and quote in HTML; nine-bundle Hugo build and multilingual/HTTPS validators passed."
+        }
+      },
+      "summary": "Complete-body semantic comparison with corrected Japanese; restored missing proof, geometry and applications, with thirteen formulas, a diagram and matching-language links.",
+      "languageSpecificFindings": "Restored proof, geometry and applications omitted from the summary. Used neutrales Element, Stammfunktion, Realteil/Imaginärteil, komplexe Zeiger/Phasoren, sinusförmiger eingeschwungener Zustand, Einschwingvorgänge and Wahrscheinlichkeitsamplitude/Ortswahrscheinlichkeitsdichte. Localized decimal commas, removed duplicate biography and self-links, and corrected x=ix to z=ix.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Three Euler-identity translations remain unreviewed. Publication of this batch is pending.",
+        "Numerical illustrations do not prove the identity for all real x. Historical evidence is catalog and institutional biography, not a complete reading of the Latin original."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/4.2#iii",
+        "https://ocw.mit.edu/courses/18-100c-real-analysis-fall-2012/1058808e5cb57c986118333f8b6fa0d7_MIT18_100CF12_l11sum.pdf",
+        "https://www.feynmanlectures.caltech.edu/I_22.html",
+        "https://www.feynmanlectures.caltech.edu/I_23.html",
+        "https://www.feynmanlectures.caltech.edu/I_25.html",
+        "https://circuits.mit.edu/_static/S23/handouts/lec10b/lecture10b-berggren.pdf",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/resources/lec19/",
+        "https://www.feynmanlectures.caltech.edu/III_03.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+        "https://scholarlycommons.pacific.edu/euler-works/101/",
+        "https://library.ethz.ch/sammlungen-und-archive/kurzportraets/leonhard-euler-1707-1783.html"
+      ],
+      "validation": "docs/translation-review/batch-008-validation.json"
+    },
+    "post/eulers-identity/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/eulers-identity/index.md",
+      "sourceHash": "95ca310527d286a10de9b423464e7b13a5677542f2eeeca0366e82d1cc725cd4",
+      "translationHash": "b1778e628706aabc1c384d4122e24e123d686d3f97b08872a29b20d7bc283d06",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original translation and compared the entire revised article with corrected Japanese, including title/description, five constants, derivation, series proof, complex-plane geometry, history, all three application sections and conclusion. Restored omitted sections rather than treating a short summary as equivalent to the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Restored the missing proof, geometry and applications. Used elemen identitas, antiturunan, bagian imajiner, fasor with phasor alias, keadaan tunak sinusoidal, transien and amplitudo/kerapatan probabilitas. Replaced the derivative-like heading Turunan with Penurunan, localized decimal commas, removed duplicate biography and self-links, and corrected x=ix to z=ix."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared thirteen display formulas and all surrounding assumptions. x is real, angles in radians, exp(z) is single-valued and defined by a series; z=0 is separate from the nonzero ratio test. Absolute convergence justifies even/odd grouping; checked powers of i, x=pi, imaginary-part convention, rotation directions and fixed origin. Preserved nonzero-frequency antiderivative, termwise-calculus qualification, single-frequency linear/time-invariant steady-state phasors, FFT/DFT versus JPEG DCT and normalized-position probability density. The source coefficient/numerical illustrations remain bound to the unchanged source hash; they supplement, not replace, the proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the single four-edge Mermaid graph and all localized labels. No executable numerical program appears in the article; supplementary source calculations are separate evidence, not claimed as executing article code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links, checked Euler/Feynman/Taylor/FFT targets exist in this language and the eyecatch exists, and matched eleven HTTPS reference URLs to the source. The source primary references were inspected within the documented mathematical, physics, standards and historical-catalog scope; the original Latin book was not read. Checked revised content and quote in HTML; nine-bundle Hugo build and multilingual/HTTPS validators passed."
+        }
+      },
+      "summary": "Complete-body semantic comparison with corrected Japanese; restored missing proof, geometry and applications, with thirteen formulas, a diagram and matching-language links.",
+      "languageSpecificFindings": "Restored the missing proof, geometry and applications. Used elemen identitas, antiturunan, bagian imajiner, fasor with phasor alias, keadaan tunak sinusoidal, transien and amplitudo/kerapatan probabilitas. Replaced the derivative-like heading Turunan with Penurunan, localized decimal commas, removed duplicate biography and self-links, and corrected x=ix to z=ix.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Three Euler-identity translations remain unreviewed. Publication of this batch is pending.",
+        "Numerical illustrations do not prove the identity for all real x. Historical evidence is catalog and institutional biography, not a complete reading of the Latin original."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/4.2#iii",
+        "https://ocw.mit.edu/courses/18-100c-real-analysis-fall-2012/1058808e5cb57c986118333f8b6fa0d7_MIT18_100CF12_l11sum.pdf",
+        "https://www.feynmanlectures.caltech.edu/I_22.html",
+        "https://www.feynmanlectures.caltech.edu/I_23.html",
+        "https://www.feynmanlectures.caltech.edu/I_25.html",
+        "https://circuits.mit.edu/_static/S23/handouts/lec10b/lecture10b-berggren.pdf",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/resources/lec19/",
+        "https://www.feynmanlectures.caltech.edu/III_03.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+        "https://scholarlycommons.pacific.edu/euler-works/101/",
+        "https://library.ethz.ch/sammlungen-und-archive/kurzportraets/leonhard-euler-1707-1783.html"
+      ],
+      "validation": "docs/translation-review/batch-008-validation.json"
     }
   }
 }

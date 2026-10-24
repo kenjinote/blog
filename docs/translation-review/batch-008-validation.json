@@ -87,6 +87,66 @@
       "correctedProbabilityAndConvergenceTextRendered": true,
       "elevenReferenceUrlsMatch": true,
       "internalLinksExistInMatchingLanguage": true
+    },
+    {
+      "language": "pt",
+      "hash": "9569ac0e48cf172d21bde6372502cc68246bba5ca537d9595208bf5a3fd5867e",
+      "originalDisplayMathCount": 8,
+      "displayMathCount": 13,
+      "formulasMatchSource": true,
+      "singlePublicationDate": true,
+      "publicationDate": "2026-09-14T13:00:00+09:00",
+      "mermaidEdgeCount": 4,
+      "missingProofAndApplicationSectionsRestored": true,
+      "hugoRendered": true,
+      "correctedProbabilityAndConvergenceTextRendered": true,
+      "elevenReferenceUrlsMatch": true,
+      "internalLinksExistInMatchingLanguage": true
+    },
+    {
+      "language": "fr",
+      "hash": "90dafb03d26cb55e46a0c56c6e373d9202d945071d5947a1d73b6258ced02547",
+      "originalDisplayMathCount": 8,
+      "displayMathCount": 13,
+      "formulasMatchSource": true,
+      "singlePublicationDate": true,
+      "publicationDate": "2026-09-14T13:00:00+09:00",
+      "mermaidEdgeCount": 4,
+      "missingProofAndApplicationSectionsRestored": true,
+      "hugoRendered": true,
+      "correctedProbabilityAndConvergenceTextRendered": true,
+      "elevenReferenceUrlsMatch": true,
+      "internalLinksExistInMatchingLanguage": true
+    },
+    {
+      "language": "de",
+      "hash": "45b62ee9ef1ec1fc57ea4f8563e114e499b0d546334d9677b1c0cd1554f3c40f",
+      "originalDisplayMathCount": 8,
+      "displayMathCount": 13,
+      "formulasMatchSource": true,
+      "singlePublicationDate": true,
+      "publicationDate": "2026-09-14T13:00:00+09:00",
+      "mermaidEdgeCount": 4,
+      "missingProofAndApplicationSectionsRestored": true,
+      "hugoRendered": true,
+      "correctedProbabilityAndConvergenceTextRendered": true,
+      "elevenReferenceUrlsMatch": true,
+      "internalLinksExistInMatchingLanguage": true
+    },
+    {
+      "language": "id",
+      "hash": "b1778e628706aabc1c384d4122e24e123d686d3f97b08872a29b20d7bc283d06",
+      "originalDisplayMathCount": 8,
+      "displayMathCount": 13,
+      "formulasMatchSource": true,
+      "singlePublicationDate": true,
+      "publicationDate": "2026-09-14T13:00:00+09:00",
+      "mermaidEdgeCount": 4,
+      "missingProofAndApplicationSectionsRestored": true,
+      "hugoRendered": true,
+      "correctedProbabilityAndConvergenceTextRendered": true,
+      "elevenReferenceUrlsMatch": true,
+      "internalLinksExistInMatchingLanguage": true
     }
   ],
   "coefficientChecks": [
@@ -376,13 +436,13 @@
   "selfLinksRemoved": true,
   "limitations": [
     "The article has no executable numerical program; the Mermaid graph is checked separately. The numerical calculations here are supplementary illustrations, not proofs of an identity for all real x.",
-    "Japanese source and five translations have been read in full; seven Euler-identity translations remain unreviewed.",
+    "Japanese source and nine translations have been read in full; Hindi, Russian and Arabic remain unreviewed.",
     "Historical claims use the Euler Archive catalog and ETH institutional biography; the complete Latin original has not been read.",
     "AI semantic/technical review is not native-speaker human confirmation. Publication of this Euler batch is pending."
   ],
   "localPreview": {
     "hugo": "0.139.0 extended",
-    "scope": "Nine bundles rendered; Euler-identity semantic review covers Japanese source, English, Simplified/Traditional Chinese, Spanish and Korean only.",
+    "scope": "Nine bundles rendered; Euler-identity semantic review covers Japanese source and nine translations. Hindi, Russian and Arabic remain unreviewed.",
     "multilingualPagesChecked": 663,
     "httpsHtmlFilesChecked": 1236,
     "httpsXmlFilesChecked": 41,
