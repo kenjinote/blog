@@ -357,6 +357,108 @@
         "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
       ],
       "validation": "docs/translation-review/batch-011-validation.json"
+    },
+    "post/jwt-json-web-token-security-risks/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/jwt-json-web-token-security-risks/index.md",
+      "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
+      "translationHash": "d123cc2530c7640e50789ed12f84b8e9e965e0be393a7513c136ca29e58ba2fc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original German article and complete corrected Japanese source, revised the full metadata and body, and independently reread the complete revision. Compared all eight sections, cookie transport versus token format, session consistency, signature/MAC/encryption and key roles, claims/profile and permission validation, individual versus key revocation and cache propagation, XSS/CSRF limits, public-client refresh constraints, one-time URL semantics and OAuth/OIDC token roles. Checked the labels, server roles and direction of all three flow diagrams. Structural checks supplement this full semantic reading."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished Authentifizierung from Autorisierung, Signatur from Verschlüsselung, private/public keys from gemeinsames Geheimnis, Widerruf from Ablauf, and Zugriffstoken, ID-Token and Refresh-Token. Used Claims, Aussteller, Empfänger, Sitzungskennung, lokale Validierung, Token-Introspektion, Rotation and Wiederverwendung. Replaced the awkward grant compound with erteilte Autorisierung (authorization grant), and separated the authorizing server from the resource server in every flow. Corrected the unrelated CVE, private-key-only JWT definition and categorical revocation, performance, mandatory-refresh and internal-network-trust claims. All profile and browser conditions match the source."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative derivations. The fifteen-minute lifetime is explicitly illustrative, not a normative requirement or measured security bound."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable authentication or token-verifier example is present. The three Mermaid flow descriptions were read semantically and their 8/6/6 directed edges matched with the source; local HTML contains them. No claims of penetration testing, library conformance, live authentication checks or benchmark results."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all nine primary-reference URLs and translated descriptions with the corrected source and documented reading scope. Verified /de/p/cross-site-scripting-xss-csrf-security/ and eyecatch. Updated local HTML contains the corrected translated terminology, JWS/JWE and public-client refresh discussion, and no unrelated CVE citation. Three graphs and 20 edges, inline code tokens, dates and hashes passed; twelve-bundle Hugo, multilingual 830 pages and HTTPS 1,532 HTML/41 XML passed. Publication pending."
+        }
+      },
+      "summary": "Full-body German review of corrected JWT format, verification, revocation, browser and refresh-token explanations.",
+      "languageSpecificFindings": "Distinguished Authentifizierung from Autorisierung, Signatur from Verschlüsselung, private/public keys from gemeinsames Geheimnis, Widerruf from Ablauf, and Zugriffstoken, ID-Token and Refresh-Token. Used Claims, Aussteller, Empfänger, Sitzungskennung, lokale Validierung, Token-Introspektion, Rotation and Wiederverwendung. Replaced the awkward grant compound with erteilte Autorisierung (authorization grant), and separated the authorizing server from the resource server in every flow. Corrected the unrelated CVE, private-key-only JWT definition and categorical revocation, performance, mandatory-refresh and internal-network-trust claims. All profile and browser conditions match the source.",
+      "limitations": [
+        "AI editorial and technical review, not a human native-speaker confirmation.",
+        "Mermaid source topology and labels plus HTML output checked; live browser diagram rendering was not inspected.",
+        "No JWT library, authentication service, security penetration test or performance benchmark was executed.",
+        "Publication verification pending.",
+        "Three other JWT translations remain unread and unreviewed."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-011-validation.json"
+    },
+    "post/jwt-json-web-token-security-risks/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/jwt-json-web-token-security-risks/index.md",
+      "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
+      "translationHash": "0bf5c72426f3642400460815e8cc729e2e93c65ab06a6989a993706f8a11b0b1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Indonesian article and complete corrected Japanese source, revised the full metadata and body, and independently reread the complete revision. Compared all eight sections, cookie transport versus token format, session consistency, signature/MAC/encryption and key roles, claims/profile and permission validation, individual versus key revocation and cache propagation, XSS/CSRF limits, public-client refresh constraints, one-time URL semantics and OAuth/OIDC token roles. Checked the labels, server roles and direction of all three flow diagrams. Structural checks supplement this full semantic reading."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used klaim, autentikasi versus otorisasi, tanda tangan versus enkripsi, kunci privat/publik versus rahasia bersama, pencabutan versus kedaluwarsa, pemberian otorisasi, peramban, penyegaran, rotasi and penggunaan ulang. Kept access token, refresh token and ID token distinct and linked the XSS/CSRF explanation in the same language. Corrected the unrelated CVE and universal own-key-only validation, impossible-revocation, performance and required-DB-refresh assertions. Preserved sender constraints as cryptographic binding, generic/profile claim requirements, token expiry versus one-use URLs, and all source qualifiers throughout the full body and three graphs."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative derivations. The fifteen-minute lifetime is explicitly illustrative, not a normative requirement or measured security bound."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable authentication or token-verifier example is present. The three Mermaid flow descriptions were read semantically and their 8/6/6 directed edges matched with the source; local HTML contains them. No claims of penetration testing, library conformance, live authentication checks or benchmark results."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all nine primary-reference URLs and translated descriptions with the corrected source and documented reading scope. Verified /id/p/cross-site-scripting-xss-csrf-security/ and eyecatch. Updated local HTML contains the corrected translated terminology, JWS/JWE and public-client refresh discussion, and no unrelated CVE citation. Three graphs and 20 edges, inline code tokens, dates and hashes passed; twelve-bundle Hugo, multilingual 830 pages and HTTPS 1,532 HTML/41 XML passed. Publication pending."
+        }
+      },
+      "summary": "Full-body Indonesian review of corrected JWT format, verification, revocation, browser and refresh-token explanations.",
+      "languageSpecificFindings": "Used klaim, autentikasi versus otorisasi, tanda tangan versus enkripsi, kunci privat/publik versus rahasia bersama, pencabutan versus kedaluwarsa, pemberian otorisasi, peramban, penyegaran, rotasi and penggunaan ulang. Kept access token, refresh token and ID token distinct and linked the XSS/CSRF explanation in the same language. Corrected the unrelated CVE and universal own-key-only validation, impossible-revocation, performance and required-DB-refresh assertions. Preserved sender constraints as cryptographic binding, generic/profile claim requirements, token expiry versus one-use URLs, and all source qualifiers throughout the full body and three graphs.",
+      "limitations": [
+        "AI editorial and technical review, not a human native-speaker confirmation.",
+        "Mermaid source topology and labels plus HTML output checked; live browser diagram rendering was not inspected.",
+        "No JWT library, authentication service, security penetration test or performance benchmark was executed.",
+        "Publication verification pending.",
+        "Three other JWT translations remain unread and unreviewed."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-011-validation.json"
     }
   }
 }

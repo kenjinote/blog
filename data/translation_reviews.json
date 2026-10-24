@@ -1395,6 +1395,26 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-011.json",
       "evidenceHash": "b40245a1c2b1ec262b1f717ba60eea52cda0903364147c3784c54d4ff7fad97b"
+    },
+    "post/jwt-json-web-token-security-risks/index.de.md": {
+      "source": "post/jwt-json-web-token-security-risks/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
+      "translationHash": "d123cc2530c7640e50789ed12f84b8e9e965e0be393a7513c136ca29e58ba2fc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-011.json",
+      "evidenceHash": "6ee7376662eca38001f5afb2939e774f3ff21c069042fbcfd8f09bcd2680e78d"
+    },
+    "post/jwt-json-web-token-security-risks/index.id.md": {
+      "source": "post/jwt-json-web-token-security-risks/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
+      "translationHash": "0bf5c72426f3642400460815e8cc729e2e93c65ab06a6989a993706f8a11b0b1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-011.json",
+      "evidenceHash": "f6db502ab68932edd7aefbc64cc095f106c7a27b1cb5847c26e0d91c77900db0"
     }
   }
 }

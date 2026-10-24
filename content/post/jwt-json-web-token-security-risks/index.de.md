@@ -1,127 +1,116 @@
 ---
 title: "Licht und Schatten von JWT (JSON Web Token): Risiken der zustandslosen Authentifizierung"
-description: "Warum einige der Meinung sind, dass JWT nicht für die Sitzungsverwaltung verwendet werden sollte."
+description: "JWT-Format und Cookie-Übertragung unterscheiden sowie Validierung, Widerruf, Browserspeicher und Refresh-Tokens vergleichen. Eine gültige Signatur genügt nicht für Authentifizierung und Autorisierung."
 date: 2026-09-27T19:33:04+09:00
+lastmod: 2026-10-24
 slug: jwt-json-web-token-security-risks
 categories: ["software-development", "security"]
 tags: ["tech", "security", "jwt", "authentication", "session"]
 image: eyecatch.jpg
 ---
 
-Mit der Entwicklung von Webanwendungen haben auch Authentifizierungssysteme einen großen Wandel vollzogen. In diesem Zusammenhang hat sich das JSON Web Token (JWT) in modernen Anwendungen, insbesondere in Single-Page-Applications (SPA) und Microservices-Architekturen, als zustandslose Authentifizierungsmethode explosionsartig verbreitet.
+JWT ist ein Format zum Übertragen von Claims zwischen Systemen. Sein Einsatz macht Authentifizierung, Autorisierung oder Sitzungsverwaltung nicht automatisch sicher. Dieser Artikel trennt die Gestaltung von Browser-Anmeldesitzungen von der Validierung und dem Widerruf von API-Tokens.
 
-Viele Sicherheitsexperten warnen jedoch davor, JWT als „Wundermittel für die Sitzungsverwaltung“ zu behandeln. Warum gibt es die Meinung, dass „JWT nicht für die Sitzungsverwaltung verwendet werden sollte“? Dieser Artikel vergleicht die traditionelle Cookie-basierte Sitzungsverwaltung mit JWT und befasst sich eingehend mit den in JWT verborgenen Risiken und architektonischen Herausforderungen.
+Zunächst gilt: **JWT ist ein Tokenformat; Cookies sind ein Speicher- und Übertragungsmechanismus des Browsers**. Ein Cookie kann ein JWT oder eine zufällige Sitzungskennung enthalten. Ein bloßer Vergleich „Cookies gegen JWT“ vermischt unterschiedliche Entscheidungen.
 
-## Die Funktionsweise der traditionellen Sitzungsverwaltung (Zustandsbehaftet)
+## So funktionieren serverseitige Sitzungen
 
-Bevor wir über JWT diskutieren, lassen Sie uns die traditionelle zustandsbehaftete (stateful) Sitzungsverwaltung rekapitulieren, die seit vielen Jahren verwendet wird.
+Ein typischer Entwurf erzeugt nach erfolgreicher Anmeldung eine nicht vorhersagbare Sitzungskennung und speichert auf dem Server ihre Zuordnung zu Benutzer, Ablaufzeit und weiteren Daten. Der Browser erhält die Kennung als Cookie. Die Übersicht setzt HTTPS voraus und lässt Cookie-Attribute und Fehlerfälle aus.
 
 ```mermaid
 graph TD
-    A["Benutzer"] -- "1. Login-Daten senden" --> B["Server"]
-    B -- "2. Verifizierung & Session-ID generieren" --> C["Datenbank/Redis"]
-    C -- "3. Speichern" --> B
-    B -- "4. Set-Cookie (Session-ID)" --> A
-    A -- "5. Anfrage + Cookie" --> B
-    B -- "6. Session-ID abfragen" --> C
-    C -- "7. Benutzerdaten zurückgeben" --> B
-    B -- "8. Antwort" --> A
+    A["Browser"] -- "1. Anmeldedaten" --> B["Anwendungsserver"]
+    B -- "2. Prüfen und Sitzung speichern" --> C["Sitzungsspeicher"]
+    C -- "3. Gespeichert" --> B
+    B -- "4. Set-Cookie mit Sitzungskennung" --> A
+    A -- "5. Anfrage mit Cookie" --> B
+    B -- "6. Kennung und Gültigkeit prüfen" --> C
+    C -- "7. Sitzungsinformationen" --> B
+    B -- "8. Antwort nach Autorisierung" --> A
 ```
 
-Bei der traditionellen Sitzungsverwaltung stellt der Server nach einer erfolgreichen Anmeldung des Benutzers eine eindeutige „Session-ID“ aus und speichert diese in einer Datenbank oder einem In-Memory-Datenspeicher (wie Redis). An den Client wird nur diese Session-ID als Cookie zurückgegeben.
+Der Sitzungsspeicher erleichtert Widerruf, Abmeldung und Berechtigungsänderungen. Caches oder Replikate, die eine Löschung noch nicht übernommen haben, können deren Wirkung jedoch verzögern. Ein verteilter Entwurf muss festlegen, welcher Server wann welche Version des Zustands sieht.
 
-### Vorteile
-- **Einfache Ungültigmachung (Revocation)**: Durch einfaches Löschen der Sitzung auf der Serverseite kann ein Benutzer sofort abgemeldet oder eine kompromittierte Sitzung ungültig gemacht werden.
-- **Geringe Datengröße**: Das Cookie enthält lediglich eine zufällige Zeichenfolge (Session-ID), was die Bandbreite nicht belastet.
-- **Hohe Sicherheit**: Die Sitzungsinformationen werden sicher auf der Serverseite aufbewahrt und sind für den Client nicht sichtbar.
+Sitzungskennungen sind meist kompakt und vermeiden die Offenlegung von Benutzerinformationen gegenüber dem Client. Eine gestohlene Kennung kann dennoch missbraucht werden. Unvorhersagbarkeit, Erneuerung der Kennung bei der Anmeldung, Ablaufregeln, HTTPS, Cookie-Attribute sowie XSS- und CSRF-Schutz sind erforderlich. Der Speicherzugriff verursacht auch Last, Verfügbarkeitsanforderungen und Betriebskosten, die entsprechend der benötigten Größenordnung bewertet werden müssen.
 
-### Nachteile
-- **Skalierbarkeitsprobleme**: Bei jeder Anfrage muss auf den Sitzungsspeicher zugegriffen werden, was bei steigendem Datenverkehr die Belastung der Datenbank erhöht. Außerdem ist eine Sitzungsfreigabe (Session-Sharing) zwischen mehreren Servern hinter einem Load Balancer erforderlich.
+## JWT und lokale Validierung
 
-## Der Aufstieg von JWT (JSON Web Token) und zustandsloser Authentifizierung
+JWT stellt eine Menge von JSON-Claims mit JWS-Signaturen oder MACs und/oder JWE-Verschlüsselung dar. Bei Public-Key-Signaturen wird mit dem privaten Schlüssel des Ausstellers signiert und mit dem öffentlichen Schlüssel verifiziert; HMAC verwendet ein gemeinsames Geheimnis. Im Folgenden geht es hauptsächlich um in sich geschlossene JWTs mit Signatur- oder MAC-Schutz.
 
-Um die Skalierbarkeitsprobleme zu lösen, rückte die zustandslose Authentifizierung mittels JWT in den Fokus.
-
-Ein JWT ist ein Token, das die erforderlichen Benutzerinformationen (Claims) im JSON-Format speichert und mit dem privaten Schlüssel des Servers signiert (Signature) wird.
+**Signieren ist nicht Verschlüsseln.** Die Claims eines lediglich signierten JWT sind lesbar; legen Sie dort nicht unbedacht Geheimnisse ab. Auch base64url-Dekodierung ist etwas anderes als Tokenvalidierung.
 
 ```mermaid
 graph TD
-    A["Benutzer"] -- "1. Login-Daten senden" --> B["Server"]
-    B -- "2. Verifizierung & JWT generieren (Signatur)" --> B
+    A["Client"] -- "1. Authentifizierungsanfrage" --> B["Aussteller"]
+    B -- "2. Authentifizieren und JWT signieren oder mit MAC schützen" --> B
     B -- "3. JWT zurückgeben" --> A
-    A -- "4. Anfrage + JWT" --> B
-    B -- "5. Signatur prüfen (Kein DB-Zugriff nötig)" --> B
-    B -- "6. Antwort" --> A
+    A -- "4. Anfrage mit JWT" --> C["Ressourcenserver"]
+    C -- "5. Schlüssel, Claims und Autorisierung prüfen" --> C
+    C -- "6. Erlaubte Antwort" --> A
 ```
 
-### Der größte Vorteil von JWT: Überprüfung ohne Datenbankzugriff
-Bei der Authentifizierung mit JWT muss der Server bei Erhalt einer Anfrage lediglich die dem Token beigefügte Signatur mit seinem eigenen Schlüssel überprüfen, um sicherzustellen, dass das Token nicht manipuliert wurde und von ihm selbst ausgestellt wurde.
-Das bedeutet, **dass bei jeder Anfrage kein Zugriff auf die Datenbank mehr erforderlich ist**. Dadurch verringert sich der Overhead beim Austausch von Authentifizierungsinformationen zwischen Microservices drastisch, und die Skalierbarkeit wird enorm verbessert.
+Lokale Validierung mit dem Schlüssel eines vertrauenswürdigen Ausstellers kann die Abfrage eines zentralen Sitzungsspeichers bei jeder Anfrage vermeiden. Schlüsselbeschaffung und -aktualisierung, Kontosperren, Widerrufsinformationen oder aktuelle Berechtigungen können weiterhin Kommunikation oder Zustand erfordern. JWT beseitigt nicht jeden Datenbankzugriff und garantiert keine bessere Leistung.
 
----
+Die Anwendung muss erlaubte Algorithmen und Schlüssel festlegen. Neben der kryptografischen Prüfung sind Aussteller `iss`, vorgesehener Dienst `aud`, Ablaufzeit `exp`, gegebenenfalls Gültigkeitsbeginn `nbf`, Tokenzweck und Berechtigung für die angeforderte Aktion zu prüfen. Verlangen Sie die nach dem gewählten Profil erforderlichen Claims. Die allgemeine JWT-Spezifikation schreibt nicht einmal `exp` in jedem Fall vor. Ein Entwurf für Anmeldung oder Zugriffskontrolle muss seine Gültigkeitsregeln ausdrücklich definieren und durchsetzen.
 
-## Der „Schatten“ von JWT: Verborgene Risiken und Herausforderungen bei der Sitzungsverwaltung
+## 1. Widerruf ist möglich, erfordert aber einen Entwurf
 
-Auf den ersten Blick scheint JWT perfekt zu sein, aber wenn man versucht, es direkt auf die „Sitzungsverwaltung“ zwischen Browser und Server anzuwenden, stößt man auf zahlreiche fatale Probleme.
+Ein Server, der offline nur kryptografischen Schutz und Zeitbedingungen prüft und keinerlei zusätzlichen Zustand abfragt, kann vom Widerruf eines einzelnen Tokens oder einer Passwortänderung nach dessen Ausstellung nichts erfahren. In diesem Entwurf kann ein gestohlenes gültiges Bearer-Token bis zum Ablauf nutzbar bleiben. Das Löschen auf dem Client stoppt eine gestohlene Kopie nicht.
 
-### 1. Das Ungültigmachen (Revocation) von Tokens ist extrem schwierig
+Möglichkeiten sind kurze Laufzeiten, Widerrufslisten, Versionsnummern je Benutzer oder Sitzung und Token-Introspektion. Das Ungültigmachen eines Signaturschlüssels betrifft auch andere mit ihm ausgestellte Tokens und muss an Schlüsselcaches und Prüfer weitergegeben werden. Eine kurze Laufzeit begrenzt die Exposition, ersetzt aber nicht den sofortigen Widerruf eines einzelnen Tokens.
 
-Der größte Vorteil von JWT, die „Zustandslosigkeit (kein Speichern des Zustands auf dem Server)“, wird gleichzeitig zu seiner größten Schwäche.
-**Ein ausgestelltes JWT kann serverseitig prinzipiell nicht erzwungenermaßen ungültig gemacht werden, bis seine Gültigkeitsdauer (exp) abläuft.**
+Zustand oder Kommunikation einzuführen ist nicht an sich ein Fehlschlag. Zustandsprüfung an jeder API, Prüfung nur bei der Erneuerung und Verteilung von Widerrufsereignissen haben unterschiedliche Eigenschaften. Wählen Sie die erforderliche Widerrufsgeschwindigkeit und die passenden Betriebskosten. Ein widerrufenes Refresh-Token macht bereits ausgestellte Zugriffstokens nicht zwangsläufig ungültig, wenn die APIs diese weiterhin nur lokal validieren.
 
-Wenn das Gerät eines Benutzers gestohlen wird oder ein JWT durch einen XSS-Angriff kompromittiert wird, hat der Administrator keine Möglichkeit, dieses Token zu stoppen. Selbst wenn das Passwort geändert wird, bleibt das bereits ausgestellte JWT gültig.
+## 2. Algorithmuswahl und Verwechslung von Tokenzwecken
 
-Es gibt Fälle, in denen versucht wird, dieses Problem zu lösen, indem eine Architektur mit einer „Blacklist für ungültig gemachte JWTs“ in einer Datenbank oder Redis implementiert wird, aber das stellt den eigentlichen Zweck auf den Kopf. Wenn bei jeder Anfrage eine Blacklist überprüft wird, ist dies nicht mehr „zustandslos“ und unterscheidet sich in keiner Weise von der traditionellen zustandsbehafteten Sitzungsverwaltung. Vielmehr verschlechtert sich die Leistung, da jedes Mal ein JWT übertragen wird, dessen Datengröße weitaus größer ist als die einer Session-ID.
+`alg: none` bezeichnet eine Form ohne Signatur oder MAC. Ein Authentifizierungs- oder Zugriffsendpunkt, der signierte Tokens verlangt, darf sie nicht akzeptieren. Lassen Sie das empfangene `alg` nicht die Prüfregeln ändern. RFC 8725 unterscheidet die unzulässige Annahme von `none` von einer Algorithmusverwechslung, die einen öffentlichen RSA-Schlüssel als HMAC-Geheimnis verwendet.
 
-### 2. Die Geschichte der „alg: none“-Schwachstelle und Implementierungsrisiken
+Nutzen Sie eine gepflegte Bibliothek und konfigurieren Sie erlaubte Algorithmen, die Zuordnung zwischen Schlüsseln und Ausstellern, Empfänger sowie Prüfregeln für jeden Tokentyp. Verhindern Sie, dass Tokens für andere Zwecke akzeptiert werden, etwa ein ID-Token als API-Zugriffstoken. Sicherheit oder aktueller Patchstand sämtlicher Bibliotheken lassen sich nicht pauschal garantieren.
 
-JWT ist sehr flexibel und unterstützt mehrere Signaturalgorithmen. Diese Flexibilität führte jedoch in der Vergangenheit zu schwerwiegenden Schwachstellen.
-Im Header eines JWT gibt es das `alg`-Feld (Algorithmus). Wenn hier `none` angegeben wird, wird es als „unsigniertes“ Token behandelt.
+## 3. Browserspeicher, XSS und CSRF
 
-In der Vergangenheit wiesen viele JWT-Bibliotheken die Schwachstelle auf, dass sie `alg: none` akzeptierten (z. B. CVE-2015-9256). Ein Angreifer konnte ein JWT mit erhöhten Rechten erstellen, den Header in `alg: none` ändern und es senden, um den Server zu täuschen und sich als Administrator anzumelden.
-Dies wurde inzwischen in den wichtigsten Bibliotheken behoben, ist jedoch ein typisches Beispiel dafür, wie komplex die Implementierung von JWT ist und wie leicht Konfigurationsfehler zu fatalen Folgen führen können.
+JavaScript desselben Ursprungs kann sowohl `localStorage` als auch `sessionStorage` lesen. XSS kann daher dort gespeicherte Bearer-Tokens offenlegen. Die kürzere Speicherdauer von `sessionStorage` verhindert dieses Auslesen nicht.
 
-### 3. Die Debatte um den Speicherort: LocalStorage vs. HttpOnly Cookie
+Ein `HttpOnly`-Cookie verhindert das direkte Auslesen seines Werts durch JavaScript, aber nicht XSS insgesamt. Bösartiger Code desselben Ursprungs kann weiterhin authentifizierte Aktionen mit Cookies ausführen oder abgerufene Informationen lesen.
 
-Nachdem das JWT im Frontend (z. B. SPA) empfangen wurde, ist die Frage, wo es gespeichert werden soll, stets Gegenstand hitziger Debatten.
+Wenn Cookies unter den geltenden Browserbedingungen automatisch mitgesendet werden, ist auch CSRF zu berücksichtigen. Setzen Sie `Secure`, einen passenden `SameSite`-Wert und einen engen Übertragungsbereich und planen Sie für zustandsändernde Aktionen Schutz wie CSRF-Tokens oder Origin-Prüfungen. Verlassen Sie sich nicht darauf, dass `SameSite` alle Fälle abdeckt, und ändern Sie keinen Zustand per GET. Dies gilt unabhängig davon, ob ein Cookie ein JWT oder eine Sitzungskennung enthält. Siehe die [Erklärung zu XSS und CSRF](/de/p/cross-site-scripting-xss-csrf-security/).
 
-#### Bei Speicherung in LocalStorage / SessionStorage
-- **Vorteile**: Leicht über JavaScript zugänglich und einfach in den `Authorization: Bearer <token>`-Header von API-Anfragen einzufügen.
-- **Risiken**: **Extrem anfällig für XSS-Angriffe (Cross-Site Scripting)**. Wenn schädliches Skript auf der Seite eingeschleust wird, kann das JWT im LocalStorage problemlos ausgelesen und an den Server des Angreifers gesendet werden.
+Die Speicherwahl hängt auch von der Architektur ab. Erwägen Sie, API-Tokens auf dem Server zu halten und mit dem Browser über ein Sitzungscookie zu kommunizieren, statt ihm diese Tokens zu geben. Entscheiden Sie anhand der Anwendungsgrenzen und erforderlichen Aktionen.
 
-#### Bei Speicherung als HttpOnly Cookie
-- **Vorteile**: Da über JavaScript nicht darauf zugegriffen werden kann, wird das Risiko verhindert, dass das Token durch XSS direkt gestohlen wird.
-- **Risiken**: **Anfällig für CSRF-Angriffe (Cross-Site Request Forgery)**. Da der Browser das Cookie bei Anfragen automatisch sendet, besteht die Gefahr, dass unbeabsichtigt Aktionen ausgeführt werden, wenn die API von einer anderen bösartigen Seite aus aufgerufen wird (dies kann heutzutage jedoch durch die Verwendung des `SameSite`-Attributs erheblich gemindert werden).
+## 4. Refresh-Tokens und der Ort des Zustands
 
-Als Best Practice für die Sicherheit wird tendenziell empfohlen, **„JWT in einem Cookie mit dem HttpOnly-Attribut zu speichern“**, aber an diesem Punkt kehrt man zu der Frage zurück: „Warum reicht dann nicht eine normale Cookie-basierte Sitzung aus?“
-
-### 4. Die Notwendigkeit von Refresh Tokens und zunehmende Komplexität
-
-Um das Risiko einer JWT-Kompromittierung zu minimieren, wird die Gültigkeitsdauer eines Access Tokens (JWT) in der Regel sehr kurz (z. B. 15 Minuten) eingestellt.
-Man kann den Benutzer jedoch nicht alle 15 Minuten bitten, sich erneut anzumelden. Hier kommt das **Refresh Token** ins Spiel.
+Refresh-Tokens sind eine Möglichkeit, neue kurzlebige Zugriffstokens zu erhalten. Ihre Ausstellung ist optional; JWT-Nutzung macht sie nicht automatisch erforderlich. „15 Minuten“ ist ein Laufzeitbeispiel und kein von einem Standard pauschal vorgeschriebener Wert.
 
 ```mermaid
 graph TD
-    A["Client"] -- "1. Anfrage mit abgelaufenem JWT" --> B["Server"]
-    B -- "2. 401 Unauthorized" --> A
-    A -- "3. Refresh Token senden" --> B
-    B -- "4. Refresh Token in DB prüfen" --> C["Datenbank"]
-    C -- "5. OK" --> B
-    B -- "6. Neues JWT ausstellen" --> A
+    A["Client"] -- "1. Abgelaufenes Zugriffstoken" --> B["API"]
+    B -- "2. Antwort: ungültiges Token" --> A
+    A -- "3. Refresh-Token vorlegen" --> C["Autorisierungsserver"]
+    C -- "4. Client, Autorisierung und Wiederverwendung prüfen" --> D["Autorisierungs- und Erneuerungszustand"]
+    D -- "5. Prüfergebnis" --> C
+    C -- "6. Neue Tokens oder Ablehnung" --> A
 ```
 
-Ein Refresh Token hat eine längere Gültigkeitsdauer, wird in der serverseitigen Datenbank gespeichert und so gestaltet, dass es bei Bedarf ungültig gemacht werden kann (Revocation).
-Aber denken Sie genau darüber nach: **In dem Moment, in dem das Refresh Token in der Datenbank überprüft und verwaltet wird, wird das System wieder vollständig „zustandsbehaftet“.**
+Das Diagramm zeigt einen Entwurf mit Verwaltung des Erneuerungszustands. Schützen Sie Refresh-Tokens als Geheimnisse und legen Sie den Umgang mit Widerruf und Wiederverwendung fest. RFC 9700 verlangt für an öffentliche Clients ausgegebene Refresh-Tokens eine kryptografische Bindung an den Absender oder Rotation. Rotation macht das vorherige Token ungültig und erhält seine Beziehung zum neuen; auch die Reaktion auf erkannte Wiederverwendung gehört zum Entwurf.
 
-## Fazit: Die richtige Architektur für den richtigen Zweck wählen
+Das bedeutet nicht, jedes Token zwingend im Klartext in einer Datenbank zu speichern. Verwalten Sie eine sichere Darstellung und den zugehörigen Zustand und prüfen Sie die Beziehung zum Benutzer, zum Client und zur erteilten Autorisierung (authorization grant). Zustand kann bei der Erneuerung verwaltet werden, während jede API Zugriffstokens lokal validiert.
 
-JWT ist keineswegs „böse“. Es ist aber auch kein Allheilmittel.
-In den folgenden Anwendungsfällen ist JWT ein äußerst leistungsstarkes Werkzeug:
+## Fazit: anhand von Zweck und Anforderungen vergleichen
 
-1. **Server-zu-Server-Kommunikation zwischen Microservices**: Wenn jeder Dienst in einem vertrauenswürdigen internen Netzwerk die Authentifizierung unabhängig überprüfen muss.
-2. **Kurzfristige Delegierung von Berechtigungen**: Verwendung als Link zum Zurücksetzen von Passwörtern oder als einmalige URL zur Bestätigung der E-Mail-Adresse.
-3. **Access Tokens und ID Tokens in OAuth2 / OIDC**: Nutzung für ihren ursprünglichen Zweck.
+JWT kann dazu dienen, überprüfbare Claims zwischen Diensten zu übertragen. Ein internes Netzwerk rechtfertigt es nicht, Aussteller-, Empfänger- oder Berechtigungsprüfungen wegzulassen. OAuth-Zugriffstokens sind nicht auf das JWT-Format beschränkt. OIDC-ID-Tokens hingegen sind JWTs, die einem Client das Authentifizierungsergebnis mitteilen. Sie dürfen API-Zugriffstokens nicht ersetzen.
 
-Andererseits ist die Realität, dass **für die allgemeine Sitzungsverwaltung (Aufrechterhaltung des Login-Status) zwischen Webbrowser und Server die traditionelle zustandsbehaftete Sitzungsverwaltung mittels HttpOnly Cookie (und z. B. Redis) oft weitaus sicherer und einfacher ist**.
+JWT macht auch eine URL zum Zurücksetzen eines Passworts oder Bestätigen einer E-Mail-Adresse nicht automatisch einmalig nutzbar. Ablauf, Empfänger- und Zweckbeschränkungen sowie die Verwaltung des Nutzungsstatus bleiben erforderlich. Erfüllt ein einfaches Zufallstoken die Anforderungen, ist JWT unnötig.
 
-Es ist die wichtigste Verantwortung eines Architekten, JWT nicht nur deshalb für die Sitzungsverwaltung einzusetzen, weil es „modern“ ist oder „jeder es benutzt“, sondern die Anforderungen des Systems an Skalierbarkeit, Ungültigmachung und Sicherheitsrisiken umfassend zu bewerten und die geeignete Technologie auszuwählen.
+Bei browserzentrierten Anwendungen mit Bedarf an schnellem Widerruf sind serverseitige Sitzungen ein Ausgangspunkt für den Vergleich. JWT kommt ebenfalls infrage, wenn lokale Validierung über mehrere Dienste benötigt wird. Dies ist eine anforderungsbezogene Entwurfsentscheidung und keine Aussage, dass eine Option stets sicherer oder schneller sei. Vergleichen Sie akzeptable Widerrufsverzögerung, Aktualität der Informationen, Clienttyp, Schlüsselverwaltung, Speicherung, Datenverkehr und Betriebsaufwand.
+
+## Quellen
+
+- [RFC 7519: JWT-Format und Claims, §3–4](https://www.rfc-editor.org/rfc/rfc7519.html)
+- [RFC 8725: Prüfung von Algorithmen, Aussteller, Empfänger und Zweck, §2.1 und §3](https://www.rfc-editor.org/rfc/rfc8725.html)
+- [RFC 7009: Entwurf der OAuth-Tokenwiderrufsfunktion, §3](https://www.rfc-editor.org/rfc/rfc7009.html)
+- [RFC 9700: Schutz von Refresh-Tokens, §2.2.2 und §4.14](https://www.rfc-editor.org/rfc/rfc9700.html)
+- [RFC 6749: Zugriffs- und Refresh-Tokens, §1.4–1.5](https://www.rfc-editor.org/rfc/rfc6749.html)
+- [OpenID Connect Core 1.0: ID-Token, §2](https://openid.net/specs/openid-connect-core-1_0.html)
+- [OWASP: Sitzungen und Cookie-Attribute](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
+- [OWASP: Sicherheit von Web Storage](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html)
+- [OWASP: Tokens zum Zurücksetzen von Passwörtern](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html)

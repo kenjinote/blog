@@ -3,7 +3,7 @@
   "validatedAt": "2026-10-24",
   "source": "post/fast-fourier-transform-algorithm/index.md",
   "sourceHash": "501271291610af83c7d6e51102ada7580f6a50554f79b35524142df9d44ab4f6",
-  "scope": "Complete corrected Japanese FFT source and all twelve translations, including metadata, full body, mathematics, code, diagrams and links. Publication verification pending.",
+  "scope": "Complete corrected Japanese FFT source and all twelve translations, including metadata, full body, mathematics, code, diagrams and links. Publication verified in publication-010.json.",
   "numpyVersion": "2.3.5",
   "randomSeed": 20261024,
   "comparisonTolerance": {
@@ -4683,7 +4683,7 @@
   "limitations": [
     "AI semantic and technical review, not human native-speaker confirmation.",
     "Finite numerical cases support the algebraic derivation but are not a proof for arbitrary lengths or a benchmark.",
-    "Local Hugo, multilingual and HTTPS checks passed; publication pending. All twelve FFT translations were reviewed in full."
+    "Local Hugo, multilingual and HTTPS checks passed. All twelve FFT translations were reviewed in full; publication CI and all 143 public pages passed (publication-010.json)."
   ],
   "localBuild": {
     "hugoVersion": "0.139.0 extended",
@@ -4705,6 +4705,14 @@
     "referenceUrlListsMatch": true,
     "singlePublicationAndModificationDates": true,
     "finalLocalHtmlInspected": true,
-    "publicationPending": true
+    "publicationPending": false
+  },
+  "publication": {
+    "evidence": "docs/translation-review/publication-010.json",
+    "ciRun": 40086040459,
+    "deployedCommit": "c51127939431329d431cee1e0162db47cea79617",
+    "verifiedPages": 143,
+    "allPassed": true,
+    "checkedAt": "2026-10-24T19:55:25.253809+09:00"
   }
 }

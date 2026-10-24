@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "validatedAt": "2026-10-24T19:49:16.750479+09:00",
+  "validatedAt": "2026-10-24T19:53:37.415554+09:00",
   "source": "post/jwt-json-web-token-security-risks/index.md",
   "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
-  "scope": "Corrected Japanese JWT source, English, both Chinese, Spanish, Korean, Portuguese and French translations only; five other JWT translations have not been reviewed.",
+  "scope": "Corrected Japanese JWT source, English, both Chinese, Spanish, Korean, Portuguese, French, German and Indonesian translations only; three other JWT translations have not been reviewed.",
   "files": [
     {
       "language": "ja",
@@ -898,6 +898,230 @@
       "singleDates": true,
       "inlineCodeTokensMatchSource": true,
       "hugoRendered": true
+    },
+    {
+      "language": "de",
+      "hash": "d123cc2530c7640e50789ed12f84b8e9e965e0be393a7513c136ca29e58ba2fc",
+      "fullBodyRead": true,
+      "displayMathCount": 0,
+      "executableCodeBlocks": 0,
+      "graphs": 3,
+      "edges": 20,
+      "topology": [
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ]
+      ],
+      "referenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "internalLink": "/de/p/cross-site-scripting-xss-csrf-security/",
+      "singleDates": true,
+      "inlineCodeTokensMatchSource": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "id",
+      "hash": "0bf5c72426f3642400460815e8cc729e2e93c65ab06a6989a993706f8a11b0b1",
+      "fullBodyRead": true,
+      "displayMathCount": 0,
+      "executableCodeBlocks": 0,
+      "graphs": 3,
+      "edges": 20,
+      "topology": [
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ]
+      ],
+      "referenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "internalLink": "/id/p/cross-site-scripting-xss-csrf-security/",
+      "singleDates": true,
+      "inlineCodeTokensMatchSource": true,
+      "hugoRendered": true
     }
   ],
   "localBuild": {
@@ -915,10 +1139,10 @@
     "Publication verification pending."
   ],
   "stageAssembly": {
-    "checkedAt": "2026-10-24T19:50:37.708510+09:00",
-    "reviewedVersions": 8,
-    "reviewedTranslations": 7,
-    "unreviewedTranslations": 5,
+    "checkedAt": "2026-10-24T19:56:02.802778+09:00",
+    "reviewedVersions": 10,
+    "reviewedTranslations": 9,
+    "unreviewedTranslations": 3,
     "allRecordedHashesCurrent": true,
     "reviewedLocalHtmlCurrent": true,
     "publicationPending": true
