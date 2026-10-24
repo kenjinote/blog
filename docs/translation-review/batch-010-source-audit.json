@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-24",
+  "source": "post/fast-fourier-transform-algorithm/index.md",
+  "sourceHash": "bca633f709a302efa2b8ca9684b67290b4c792308fd43ffb22cf6cc0e0c05e30",
+  "reviewKind": "preliminary_source_investigation",
+  "sourceReviewComplete": false,
+  "translationsReviewed": [],
+  "numpyVersion": "2.3.5",
+  "originalCodeCases": [
+    {
+      "case": "real-power-two",
+      "returnedShape": [
+        4
+      ],
+      "warnings": [],
+      "real": [
+        10.0,
+        -2.0,
+        -2.0,
+        -1.9999999999999998
+      ],
+      "imag": [
+        0.0,
+        2.0,
+        0.0,
+        -2.0
+      ],
+      "maxDifferenceFromNumpy": 2.220446049250313e-16
+    },
+    {
+      "case": "complex-array",
+      "returnedShape": [
+        2
+      ],
+      "warnings": [
+        "Casting complex values to real discards the imaginary part"
+      ],
+      "real": [
+        4.0,
+        -2.0
+      ],
+      "imag": [
+        0.0,
+        0.0
+      ],
+      "maxDifferenceFromNumpy": 6.0
+    },
+    {
+      "case": "complex-list",
+      "exceptionType": "TypeError",
+      "exception": "float() argument must be a string or a real number, not 'complex'"
+    },
+    {
+      "case": "empty",
+      "returnedShape": [
+        0
+      ],
+      "warnings": [],
+      "real": [],
+      "imag": []
+    },
+    {
+      "case": "two-dimensional",
+      "returnedShape": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "real": [
+        2.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "imag": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "non-power-two",
+      "exceptionType": "ValueError",
+      "exception": "サイズは2のべき乗である必要があります"
+    }
+  ],
+  "findingsToResolve": [
+    "dtype=float drops imaginary parts of a NumPy complex array or rejects a list of complex values.",
+    "Empty input is accepted despite the stated positive power-of-two input requirement.",
+    "Two-dimensional input is accepted despite the function being documented as a one-dimensional transform.",
+    "DIT second-half formula needs explicit k range 0 through N/2-1; existing prose uses k>=N/2 before X[k+N/2].",
+    "Claims about historical priority, NumPy internals, transform convergence and audio codec MDCT/FFT relationship need primary-source verification before editing."
+  ],
+  "limitations": [
+    "This is a preliminary reproduction of original-source behavior, not a completed source or translation review. No ledger entries were added."
+  ]
+}
