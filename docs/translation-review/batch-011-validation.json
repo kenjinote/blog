@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "validatedAt": "2026-10-24T19:38:15.470401+09:00",
+  "source": "post/jwt-json-web-token-security-risks/index.md",
+  "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
+  "scope": "Corrected Japanese source and full English translation only; eleven other JWT translations have not been reviewed.",
+  "files": [
+    {
+      "language": "ja",
+      "hash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
+      "fullBodyRead": true,
+      "displayMathCount": 0,
+      "executableCodeBlocks": 0,
+      "graphs": 3,
+      "edges": 20,
+      "topology": [
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ]
+      ],
+      "referenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "internalLink": "/p/cross-site-scripting-xss-csrf-security/",
+      "singleDates": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "en",
+      "hash": "31446786081b4cf23b07e6c31cd0fd69c0c5179589e0dcd994c4fc985a234f32",
+      "fullBodyRead": true,
+      "displayMathCount": 0,
+      "executableCodeBlocks": 0,
+      "graphs": 3,
+      "edges": 20,
+      "topology": [
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ]
+      ],
+      "referenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "internalLink": "/en/p/cross-site-scripting-xss-csrf-security/",
+      "singleDates": true,
+      "hugoRendered": true
+    }
+  ],
+  "localBuild": {
+    "hugoVersion": "0.139.0 extended",
+    "bundles": 12,
+    "multilingualSitemapPages": 830,
+    "httpsHtmlFiles": 1532,
+    "httpsXmlFiles": 41,
+    "warnings": "Post-only preview has no search/archive/home JSON; existing Portuguese UI translation warnings remain."
+  },
+  "limitations": [
+    "AI editorial and technical review, not a human native-speaker confirmation.",
+    "Mermaid source topology and labels plus HTML output checked; live browser diagram rendering was not inspected.",
+    "No JWT library, authentication service, security penetration test or performance benchmark was executed.",
+    "Publication verification pending."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/jwt-json-web-token-security-risks/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/jwt-json-web-token-security-risks/index.md",
+      "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
+      "translationHash": "31446786081b4cf23b07e6c31cd0fd69c0c5179589e0dcd994c4fc985a234f32",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Japanese and English articles, researched primary references, revised both full bodies, then independently reread the complete corrected source and translation. Matched cookie transport versus JWT format; session consistency and theft; JWS/MAC/JWE and key roles; cryptographic verification versus claims and authorization; generic optional claims versus application requirements; individual versus key revocation and cached propagation; access versus refresh lifecycle; browser storage/XSS/CSRF; public-client refresh protection; and OAuth versus OIDC roles. Checked all three diagram labels and directions, including separating issuer, API and authorization server."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used claims, issuer, audience, authorization grant, bearer token, MAC/shared secret versus public/private key, local validation, revocation, introspection, sender-constrained, rotation and reuse consistently. Corrected the original English standard of treating Cookie as the opposite of JWT, signing as always a server-secret-key operation, and refresh state as making every request equivalent to central session lookup. Removed the unrelated CVE-2015-9256 attribution rather than substituting an ID for a different failure. Distinguished ID token from API access token and token expiry from guaranteed one-time consumption."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative derivations. The fifteen-minute lifetime is explicitly illustrative, not a normative requirement or measured security bound."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable authentication or token-verifier example is present. The three Mermaid flow descriptions were read semantically and their 8/6/6 directed edges matched with the source; local HTML contains them. No claims of penetration testing, library conformance, live authentication checks or benchmark results."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all nine primary-reference URLs to the source, with actual reading scope and inaccessible-CVE-browser fallback recorded in batch-011-source-audit.json and source notes. Verified matching-language XSS/CSRF internal target and eyecatch. Checked both local HTML bodies, updated markers and removal of the wrong CVE; twelve-bundle Hugo, multilingual 830 pages and HTTPS 1,532 HTML/41 XML passed. Publication pending."
+        }
+      },
+      "summary": "Full English review of JWT session-design risks, correcting source factual errors and preserving validation, revocation, browser and refresh-token qualifications.",
+      "languageSpecificFindings": "Full metadata and body rewritten to match the corrected Japanese source, including the distinction between the token format and transport and each server role in the diagrams. Kept current standard requirements distinct from architecture choices and example lifetimes.",
+      "limitations": [
+        "AI editorial and technical review, not a human native-speaker confirmation.",
+        "Mermaid source topology and labels plus HTML output checked; live browser diagram rendering was not inspected.",
+        "No JWT library, authentication service, security penetration test or performance benchmark was executed.",
+        "Publication verification pending.",
+        "Eleven other JWT translations remain unread and unreviewed."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-011-validation.json"
+    }
+  }
+}
