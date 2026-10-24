@@ -1,127 +1,116 @@
 ---
 title: "Luz e Sombra do JWT (JSON Web Token): Os Riscos da Autenticação Stateless"
-description: "Por que há opiniões que afirmam que o JWT não deve ser usado para gerenciamento de sessão."
+description: "Distinção entre formato JWT e transporte por cookies, com comparação de validação, revogação, armazenamento e atualização. Uma assinatura válida não conclui autenticação ou autorização."
 date: 2026-09-27T19:33:04+09:00
+lastmod: 2026-10-24
 slug: jwt-json-web-token-security-risks
 categories: ["software-development", "security"]
 tags: ["tech", "security", "jwt", "authentication", "session"]
 image: eyecatch.jpg
 ---
 
-Com a evolução das aplicações web, os sistemas de autenticação também passaram por grandes transformações. Nesse contexto, o JSON Web Token (JWT) popularizou-se explosivamente como um meio de autenticação stateless em aplicações modernas, especialmente em Single Page Applications (SPA) e arquiteturas de microsserviços.
+JWT é um formato para transmitir declarações (*claims*) entre sistemas. Adotá-lo não torna autenticação, autorização ou gestão de sessões automaticamente seguras. Este artigo separa o projeto das sessões de login do navegador da validação e revogação de tokens de API.
 
-No entanto, muitos especialistas em segurança alertam contra tratar o JWT como uma "bala de prata para o gerenciamento de sessão". Por que existe a opinião de que "o JWT não deve ser usado para gerenciamento de sessão"? Neste artigo, compararemos o gerenciamento tradicional de sessão baseado em cookies com o JWT, e nos aprofundaremos nos riscos e desafios arquitetônicos ocultos no JWT.
+Primeiro, **JWT é um formato de token; cookies são um mecanismo de armazenamento e envio do navegador**. Um cookie pode conter um JWT ou um identificador de sessão aleatório. Comparar apenas “cookies versus JWT” mistura decisões diferentes.
 
-## O Mecanismo Tradicional de Gerenciamento de Sessão (Stateful)
+## Como funcionam as sessões no servidor
 
-Antes de discutir o JWT, vamos recapitular o gerenciamento tradicional de sessão stateful, que tem sido usado por muitos anos.
-
-```mermaid
-graph TD
-    A["Usuário"] -- "1. Envio de credenciais" --> B["Servidor"]
-    B -- "2. Validação e geração do ID de sessão" --> C["Banco de Dados/Redis"]
-    C -- "3. Salvar" --> B
-    B -- "4. Set-Cookie (ID de sessão)" --> A
-    A -- "5. Requisição + Cookie" --> B
-    B -- "6. Consulta do ID de sessão" --> C
-    C -- "7. Retorno dos dados do usuário" --> B
-    B -- "8. Resposta" --> A
-```
-
-No gerenciamento tradicional de sessão, quando um usuário faz login com sucesso, o servidor emite um "ID de sessão" único e o salva em um banco de dados ou datastore em memória (como o Redis). Para o cliente, apenas esse ID de sessão é retornado na forma de um Cookie.
-
-### Vantagens
-- **Facilidade de Revogação (Revocation)**: Basta remover a sessão no lado do servidor para deslogar imediatamente o usuário ou invalidar uma sessão sequestrada.
-- **Tamanho reduzido dos dados**: O Cookie carrega apenas uma string aleatória (o ID de sessão), o que não consome muita largura de banda.
-- **Robustez de segurança**: As informações da sessão são armazenadas de forma segura no lado do servidor e ficam invisíveis para o cliente.
-
-### Desvantagens
-- **Desafios de escalabilidade**: É necessário acessar o armazenamento de sessão a cada requisição, e o aumento do tráfego eleva a carga no banco de dados. Também é necessário compartilhar as sessões entre múltiplos servidores atrás de um balanceador de carga (load balancer).
-
-## A Ascensão do JWT (JSON Web Token) e da Autenticação Stateless
-
-Para resolver os desafios de escalabilidade, a autenticação stateless usando JWT ganhou destaque.
-
-O JWT é um token que armazena as informações necessárias do usuário (claims) no formato JSON, com uma assinatura (Signature) gerada pela chave privada do servidor.
+Um projeto típico gera um identificador de sessão imprevisível após um login bem-sucedido e armazena no servidor sua associação com o usuário, a expiração e outros dados. O navegador recebe o identificador em um cookie. O esquema pressupõe HTTPS e omite atributos de cookie e caminhos de falha.
 
 ```mermaid
 graph TD
-    A["Usuário"] -- "1. Envio de credenciais" --> B["Servidor"]
-    B -- "2. Validação e geração do JWT (Assinatura)" --> B
-    B -- "3. Retorno do JWT" --> A
-    A -- "4. Requisição + JWT" --> B
-    B -- "5. Verificação da assinatura (Sem acesso ao BD)" --> B
-    B -- "6. Resposta" --> A
+    A["Navegador"] -- "1. Credenciais de login" --> B["Servidor de aplicação"]
+    B -- "2. Verificar e salvar sessão" --> C["Armazenamento de sessões"]
+    C -- "3. Salvo" --> B
+    B -- "4. Set-Cookie com ID de sessão" --> A
+    A -- "5. Requisição com cookie" --> B
+    B -- "6. Conferir ID e validade" --> C
+    C -- "7. Informações da sessão" --> B
+    B -- "8. Resposta após autorização" --> A
 ```
 
-### A Maior Vantagem do JWT: Validação Sem Acesso ao BD
-Na autenticação via JWT, quando o servidor recebe uma requisição, basta verificar a assinatura contida no token usando sua própria chave para confirmar que o token não foi adulterado e que foi emitido por ele mesmo.
-Em outras palavras, **elimina-se a necessidade de acessar o banco de dados a cada requisição**. Isso reduz drasticamente o overhead ao trocar informações de autenticação entre microsserviços, melhorando consideravelmente a escalabilidade.
+O armazenamento facilita a revogação, o logout e as mudanças de permissões. Porém, caches ou réplicas que ainda não observaram uma exclusão podem atrasar seu efeito. Um projeto distribuído deve especificar qual servidor vê cada versão do estado e quando.
 
----
+Identificadores de sessão costumam ser compactos e evitam expor informações do usuário ao cliente. Um identificador roubado ainda pode ser usado indevidamente. São necessários imprevisibilidade, renovação do identificador no login, expiração, HTTPS, atributos de cookie e defesas contra XSS e CSRF. O acesso ao armazenamento também tem custos de carga, disponibilidade e operação, que devem ser avaliados para a escala exigida.
 
-## A "Sombra" do JWT: Riscos e Desafios Ocultos no Gerenciamento de Sessão
+## JWT e validação local
 
-À primeira vista, o JWT parece perfeito, mas tentar aplicá-lo diretamente no "gerenciamento de sessão" entre navegador e servidor leva a vários problemas críticos.
+JWT representa um conjunto de declarações JSON usando assinaturas ou MAC de JWS e/ou criptografia JWE. Assinaturas de chave pública usam a chave privada do emissor e a pública do verificador; HMAC usa um segredo compartilhado. A seguir, tratamos principalmente de JWTs autocontidos protegidos por assinatura ou MAC.
 
-### 1. A Revogação (Revocation) do Token é Extremamente Difícil
-
-A principal vantagem do JWT, a sua característica "stateless" (não manter estado no servidor), transforma-se na sua maior fraqueza.
-**Em princípio, um JWT emitido não pode ser forçosamente invalidado pelo servidor até que o seu tempo de expiração (exp) acabe.**
-
-Se o dispositivo de um usuário for roubado ou se o JWT vazar devido a um ataque XSS, o administrador não terá meios para interromper aquele token. Mesmo que a senha seja alterada, o JWT já emitido continuará válido.
-
-Alguns casos adotam uma arquitetura que mantém uma "lista negra (blacklist) de JWTs revogados" num banco de dados ou no Redis para contornar isso, mas tal abordagem anula o propósito inicial. Se for necessário verificar a lista negra a cada requisição, já não é mais "stateless", sendo na prática o mesmo que o gerenciamento de sessão stateful tradicional. Pelo contrário, o desempenho piora porque o JWT, que tem um tamanho de dados muito maior que um ID de sessão, é transmitido todas as vezes.
-
-### 2. O Histórico e o Risco de Implementação da Vulnerabilidade "alg: none"
-
-O JWT é bastante flexível e suporta múltiplos algoritmos de assinatura. No entanto, essa flexibilidade causou vulnerabilidades severas no passado.
-O cabeçalho do JWT possui um campo `alg` (algoritmo), e se `none` for especificado, ele será tratado como um token "sem assinatura".
-
-No passado, muitas bibliotecas JWT tinham uma vulnerabilidade (como a CVE-2015-9256) que aceitava `alg: none`. Um invasor só precisava criar um JWT elevando seus próprios privilégios, alterar o cabeçalho para `alg: none` e enviá-lo para enganar o servidor e conseguir o login como administrador.
-Atualmente as principais bibliotecas estão protegidas contra isso, mas este é um exemplo clássico de como a implementação do JWT é complexa e como configurações incorretas podem ser fatais.
-
-### 3. A Controvérsia do Local de Armazenamento: LocalStorage vs HttpOnly Cookie
-
-Depois de receber um JWT no frontend (como num SPA), o local onde ele deve ser armazenado é sempre alvo de debates acalorados.
-
-#### Ao salvar no LocalStorage / SessionStorage
-- **Vantagens**: Fácil acesso através do JavaScript e facilidade para anexá-lo no cabeçalho `Authorization: Bearer <token>` nas requisições da API.
-- **Riscos**: **Extremamente vulnerável a ataques XSS (Cross-Site Scripting)**. Se um script malicioso for injetado no site, o JWT no LocalStorage pode ser facilmente lido e enviado para o servidor do invasor.
-
-#### Ao salvar num Cookie HttpOnly
-- **Vantagens**: Como não pode ser acessado via JavaScript, evita o risco de o token ser roubado diretamente via XSS.
-- **Riscos**: **Torna-se alvo de ataques CSRF (Cross-Site Request Forgery)**. Como os navegadores enviam os Cookies automaticamente nas requisições, existe o perigo de que uma ação seja executada sem intenção se a API for chamada por um outro site malicioso (embora hoje em dia isso possa ser mitigado consideravelmente utilizando o atributo `SameSite`).
-
-Como melhor prática de segurança, a tendência é recomendar **"armazenar o JWT num Cookie com o atributo HttpOnly"**, mas isso nos leva de volta à questão: "Por que não usar as sessões comuns baseadas em cookies?"
-
-### 4. A Necessidade e a Complexidade do Refresh Token
-
-Para minimizar o risco de vazamento do JWT, é comum configurar o tempo de expiração do token de acesso (JWT) para ser muito curto (ex: 15 minutos).
-Contudo, não é possível pedir para o usuário fazer login novamente a cada 15 minutos. É aí que entra o **Token de Atualização (Refresh Token)**.
+**Assinar não é criptografar.** As declarações de um JWT apenas assinado podem ser lidas; não inclua segredos sem cuidado. Decodificar base64url também é diferente de validar um token.
 
 ```mermaid
 graph TD
-    A["Cliente"] -- "1. Requisição com JWT expirado" --> B["Servidor"]
-    B -- "2. 401 Unauthorized" --> A
-    A -- "3. Envio do Refresh Token" --> B
-    B -- "4. Validação do Refresh Token no BD" --> C["Banco de Dados"]
-    C -- "5. OK" --> B
-    B -- "6. Emissão de um novo JWT" --> A
+    A["Cliente"] -- "1. Solicitação de autenticação" --> B["Emissor"]
+    B -- "2. Autenticar e assinar ou aplicar MAC ao JWT" --> B
+    B -- "3. Retornar JWT" --> A
+    A -- "4. Requisição com JWT" --> C["Servidor de recursos"]
+    C -- "5. Validar chave, declarações e autorização" --> C
+    C -- "6. Resposta autorizada" --> A
 ```
 
-O Refresh Token possui um tempo de expiração mais longo, é armazenado no banco de dados do lado do servidor e tem um design que permite a sua invalidação (Revocation) quando necessário.
-Mas pare e pense. **No momento em que o Refresh Token é validado e gerenciado num banco de dados, o sistema torna-se completamente "stateful".**
+A validação local com a chave de um emissor confiável pode evitar consultas ao armazenamento central de sessões em cada requisição. Obtenção e atualização de chaves, suspensão de contas, informações de revogação ou permissões atuais ainda podem exigir comunicação ou estado. JWT não elimina todos os acessos ao banco de dados nem garante desempenho melhor.
 
-## Conclusão: Escolha a Arquitetura Certa para o Lugar Certo
+A aplicação deve definir os algoritmos e as chaves permitidos. Além da verificação criptográfica, confira o emissor `iss`, o serviço destinatário `aud`, a expiração `exp`, o início de validade `nbf` quando aplicável, a finalidade do token e a permissão para a operação solicitada. Exija as declarações segundo o perfil adotado. A especificação genérica de JWT nem sequer exige `exp` em todos os casos. Um projeto de login ou controle de acesso deve definir e aplicar explicitamente sua política de validade.
 
-O JWT definitivamente não é "maligno". Mas também não é uma panaceia.
-Nos casos de uso abaixo, o JWT é uma ferramenta extremamente poderosa:
+## 1. A revogação é possível, mas exige um projeto
 
-1. **Comunicação entre servidores (Microsserviços)**: Quando cada serviço precisa validar a autenticação de forma independente numa rede interna confiável.
-2. **Delegação de autorização a curto prazo**: Como um link de redefinição de senha ou uma URL de uso único para confirmação de e-mail.
-3. **Tokens de Acesso e Tokens de ID no OAuth2 / OIDC**: O seu uso original pretendido.
+Um servidor que verifica apenas a proteção criptográfica e as condições de tempo de forma offline, sem consultar estado adicional, não pode saber que um token individual foi revogado ou que a senha mudou após a emissão. Nesse projeto, um token bearer válido roubado pode continuar utilizável até expirar. Apagá-lo do cliente não impede o uso de uma cópia roubada.
 
-Por outro lado, **para o gerenciamento comum de sessão entre um navegador web e um servidor (manter o estado de login), o gerenciamento tradicional de sessão stateful utilizando Cookies HttpOnly (com Redis, etc.) é muitas vezes muito mais seguro e simples**.
+As opções incluem validade curta, listas de revogação, números de versão por usuário ou sessão e introspecção de tokens. Invalidar uma chave de assinatura também afeta outros tokens emitidos com ela e exige propagar a mudança aos caches e verificadores. Uma expiração curta limita a exposição, mas não substitui a revogação imediata de um token individual.
 
-Em vez de adotar o JWT para o gerenciamento de sessão só porque é "moderno" ou "porque todos usam", a responsabilidade crítica de um arquiteto é avaliar de forma abrangente a escalabilidade necessária do sistema, os requisitos de invalidação e os riscos de segurança, a fim de selecionar a tecnologia apropriada.
+Introduzir estado ou comunicação não é, por si só, um fracasso. Consultar estado em cada API, apenas na atualização ou distribuir eventos de revogação tem propriedades diferentes. Escolha a velocidade de revogação e o custo operacional necessários. Revogar um token de atualização não invalida necessariamente os tokens de acesso já emitidos que cada API continua aceitando por validação local.
+
+## 2. Escolha de algoritmos e confusão de finalidades
+
+`alg: none` indica um formato sem assinatura nem MAC. Um endpoint de autenticação ou acesso que exige tokens assinados não deve aceitá-lo. Não deixe que o `alg` recebido mude a política de verificação. A RFC 8725 distingue a aceitação indevida de `none` da confusão de algoritmos que usa uma chave pública RSA como segredo HMAC.
+
+Use uma biblioteca mantida e configure algoritmos permitidos, associações entre chaves e emissores, destinatários e regras de validação para cada tipo de token. Impeça a aceitação de tokens destinados a outra finalidade, como usar um token de ID como token de acesso de API. Não é possível garantir de forma geral a segurança ou a situação atual das correções de todas as bibliotecas.
+
+## 3. Armazenamento no navegador, XSS e CSRF
+
+JavaScript de mesma origem pode ler tanto `localStorage` quanto `sessionStorage`. Um XSS pode, portanto, expor tokens bearer armazenados neles. A menor duração do armazenamento em `sessionStorage` não impede essa leitura.
+
+Um cookie `HttpOnly` impede que JavaScript leia diretamente seu valor, mas não impede XSS como um todo. Código malicioso de mesma origem ainda pode executar operações autenticadas com cookies ou ler informações obtidas.
+
+Quando cookies são enviados automaticamente conforme as condições do navegador, trate também de CSRF. Configure `Secure`, um valor adequado de `SameSite` e um escopo de envio restrito, e projete proteções como tokens CSRF ou verificações de Origin para operações que alteram estado. Não suponha que `SameSite` cubra todos os casos nem altere estado por GET. Isso vale tanto para cookies com JWT quanto com identificadores de sessão. Veja a [explicação de XSS e CSRF](/pt/p/cross-site-scripting-xss-csrf-security/).
+
+O armazenamento também depende da arquitetura. Considere manter tokens de API no servidor e usar um cookie de sessão com o navegador, sem entregar a ele esses tokens. Decida segundo os limites da aplicação e as operações necessárias.
+
+## 4. Tokens de atualização e localização do estado
+
+Tokens de atualização são uma forma de obter novos tokens de acesso de curta duração. Sua emissão é opcional; usar JWT não os torna obrigatórios. “15 minutos” é um exemplo de validade, não um valor universal definido por uma norma.
+
+```mermaid
+graph TD
+    A["Cliente"] -- "1. Token de acesso expirado" --> B["API"]
+    B -- "2. Resposta de token inválido" --> A
+    A -- "3. Apresentar token de atualização" --> C["Servidor de autorização"]
+    C -- "4. Conferir cliente, concessão e reutilização" --> D["Estado de concessão e atualização"]
+    D -- "5. Resultado da validação" --> C
+    C -- "6. Novos tokens ou rejeição" --> A
+```
+
+O diagrama mostra um projeto que gerencia o estado de atualização. Proteja os tokens de atualização como segredos e decida como lidar com revogação e reutilização. A RFC 9700 exige que tokens de atualização emitidos a clientes públicos sejam vinculados criptograficamente ao remetente ou usem rotação. A rotação invalida o token anterior, mantendo sua relação com o novo; o tratamento da reutilização detectada também faz parte do projeto.
+
+Isso não significa armazenar necessariamente cada token em texto claro no banco de dados. Gerencie uma representação segura e o estado associado, verificando sua relação com o usuário, o cliente e a concessão de autorização. É possível gerenciar estado na atualização enquanto cada API valida localmente os tokens de acesso.
+
+## Conclusão: comparar conforme a finalidade e os requisitos
+
+JWT pode ser útil para transmitir declarações verificáveis entre serviços. Uma rede interna não justifica omitir a validação de emissor, destinatário ou permissões. Tokens de acesso OAuth não se limitam ao formato JWT. Já os tokens de ID do OIDC são JWTs que comunicam ao cliente o resultado da autenticação. Não devem ser usados como substitutos dos tokens de acesso a uma API.
+
+JWT também não torna uma URL de redefinição de senha ou confirmação de e-mail automaticamente de uso único. Expiração, restrições de destinatário e finalidade e controle de uso continuam necessários. Se um token aleatório simples satisfaz os requisitos, JWT é desnecessário.
+
+Para aplicações centradas no navegador que precisam de revogação rápida, sessões no servidor são um ponto de partida para comparar. JWT também é candidato quando se exige validação local entre serviços. É uma decisão de projeto baseada em requisitos, não uma afirmação de que uma opção é sempre mais segura ou rápida. Compare o atraso de revogação aceitável, a atualidade das informações, o tipo de cliente, a gestão de chaves, o armazenamento, o tráfego e a carga operacional.
+
+## Referências
+
+- [RFC 7519: formato e declarações JWT, §3–4](https://www.rfc-editor.org/rfc/rfc7519.html)
+- [RFC 8725: validação de algoritmos, emissor, destinatário e finalidade, §2.1 e §3](https://www.rfc-editor.org/rfc/rfc8725.html)
+- [RFC 7009: projeto de revogação de tokens OAuth, §3](https://www.rfc-editor.org/rfc/rfc7009.html)
+- [RFC 9700: proteção de tokens de atualização, §2.2.2 e §4.14](https://www.rfc-editor.org/rfc/rfc9700.html)
+- [RFC 6749: tokens de acesso e atualização, §1.4–1.5](https://www.rfc-editor.org/rfc/rfc6749.html)
+- [OpenID Connect Core 1.0: token de ID, §2](https://openid.net/specs/openid-connect-core-1_0.html)
+- [OWASP: sessões e atributos de cookies](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
+- [OWASP: segurança de Web Storage](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html)
+- [OWASP: tokens de redefinição de senha](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html)

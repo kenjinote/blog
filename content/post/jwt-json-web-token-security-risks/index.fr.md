@@ -1,127 +1,116 @@
 ---
 title: "Ombres et lumières de JWT (JSON Web Token) : Les risques de l'authentification sans état"
-description: "Pourquoi certains estiment que JWT ne devrait pas être utilisé pour la gestion des sessions."
+description: "Distinguer format JWT et transport par cookies, et comparer validation, révocation, stockage et renouvellement. Une signature valide ne suffit pas à authentifier ou autoriser."
 date: 2026-09-27T19:33:04+09:00
+lastmod: 2026-10-24
 slug: jwt-json-web-token-security-risks
 categories: ["software-development", "security"]
 tags: ["tech", "security", "jwt", "authentication", "session"]
 image: eyecatch.jpg
 ---
 
-Avec l'évolution des applications web, les systèmes d'authentification ont également subi des transformations majeures. Parmi elles, les JSON Web Tokens (JWT) ont connu une adoption explosive en tant que moyen d'authentification sans état (stateless) dans les applications modernes, en particulier les applications à page unique (SPA) et les architectures de microservices.
+JWT est un format permettant de transmettre des déclarations (*claims*) entre systèmes. L’adopter ne sécurise pas automatiquement l’authentification, l’autorisation ou la gestion des sessions. Cet article distingue la conception des sessions de connexion du navigateur de la validation et de la révocation des jetons d’API.
 
-Cependant, de nombreux experts en sécurité mettent en garde contre le fait de considérer JWT comme une « solution miracle pour la gestion des sessions ». Pourquoi l'opinion selon laquelle « JWT ne devrait pas être utilisé pour la gestion des sessions » existe-t-elle ? Dans cet article, nous comparerons la gestion de session traditionnelle basée sur les cookies avec JWT, et nous approfondirons les risques cachés et les défis architecturaux de JWT.
+D’abord, **JWT est un format de jeton ; les cookies sont un mécanisme de stockage et d’envoi du navigateur**. Un cookie peut transporter un JWT ou un identifiant de session aléatoire. Comparer uniquement « cookies ou JWT » mélange des choix différents.
 
-## Le fonctionnement de la gestion de session traditionnelle (avec état)
+## Fonctionnement des sessions côté serveur
 
-Avant de discuter de JWT, passons en revue la gestion de session traditionnelle avec état (stateful) qui est utilisée depuis de nombreuses années.
-
-```mermaid
-graph TD
-    A["Utilisateur"] -- "1. Envoi des informations de connexion" --> B["Serveur"]
-    B -- "2. Vérification / Génération de l'ID de session" --> C["Base de données / Redis"]
-    C -- "3. Sauvegarde" --> B
-    B -- "4. Set-Cookie (ID de session)" --> A
-    A -- "5. Requête + Cookie" --> B
-    B -- "6. Recherche de l'ID de session" --> C
-    C -- "7. Renvoi des informations utilisateur" --> B
-    B -- "8. Réponse" --> A
-```
-
-Dans la gestion de session traditionnelle, lorsqu'un utilisateur réussit à se connecter, le serveur émet un « ID de session » unique et l'enregistre dans une base de données ou un magasin de données en mémoire (tel que Redis). Seul cet ID de session est renvoyé au client sous forme de cookie.
-
-### Avantages
-- **Révocation facile** : Il suffit de supprimer la session côté serveur pour déconnecter immédiatement l'utilisateur ou invalider une session usurpée.
-- **Petite taille des données** : Le cookie ne contient qu'une chaîne de caractères aléatoire (l'ID de session), ce qui ne surcharge pas la bande passante.
-- **Robustesse de la sécurité** : Les informations de session sont stockées en toute sécurité côté serveur et sont invisibles pour le client.
-
-### Inconvénients
-- **Défis de scalabilité** : Il est nécessaire d'accéder au magasin de sessions à chaque requête, et lorsque le trafic augmente, la charge sur la base de données s'intensifie. Le partage de session entre plusieurs serveurs derrière un équilibreur de charge est également nécessaire.
-
-## L'essor de JWT (JSON Web Token) et de l'authentification sans état
-
-Pour résoudre les problèmes de scalabilité, l'attention s'est portée sur l'authentification sans état à l'aide de JWT.
-
-Un JWT est un jeton qui stocke les informations utilisateur nécessaires (revendications ou *claims*) au format JSON et y appose une signature en utilisant la clé privée du serveur.
+Une conception classique génère un identifiant de session imprévisible après une connexion réussie et conserve côté serveur son association avec l’utilisateur, l’expiration et d’autres données. Le navigateur reçoit l’identifiant dans un cookie. Ce schéma suppose HTTPS et omet les attributs du cookie et les cas d’échec.
 
 ```mermaid
 graph TD
-    A["Utilisateur"] -- "1. Envoi des informations de connexion" --> B["Serveur"]
-    B -- "2. Vérification / Génération du JWT (Signature)" --> B
-    B -- "3. Renvoi du JWT" --> A
-    A -- "4. Requête + JWT" --> B
-    B -- "5. Vérification de la signature (Pas d'accès DB)" --> B
-    B -- "6. Réponse" --> A
+    A["Navigateur"] -- "1. Identifiants de connexion" --> B["Serveur applicatif"]
+    B -- "2. Vérifier et enregistrer la session" --> C["Stockage des sessions"]
+    C -- "3. Enregistrement terminé" --> B
+    B -- "4. Set-Cookie avec identifiant de session" --> A
+    A -- "5. Requête avec cookie" --> B
+    B -- "6. Vérifier identifiant et validité" --> C
+    C -- "7. Informations de session" --> B
+    B -- "8. Répondre après autorisation" --> A
 ```
 
-### Le plus grand avantage de JWT : vérification sans accès à la base de données
-Avec l'authentification JWT, lorsque le serveur reçoit une requête, il lui suffit de vérifier la signature attachée au jeton avec sa propre clé pour confirmer que le jeton n'a pas été altéré et qu'il l'a bien émis lui-même.
-En d'autres termes, **il n'est plus nécessaire d'accéder à la base de données à chaque requête**. Cela réduit considérablement la charge lors de l'échange d'informations d'authentification entre les microservices, améliorant ainsi de manière spectaculaire la scalabilité.
+Le stockage facilite la révocation, la déconnexion et les changements de permissions. Cependant, des caches ou répliques n’ayant pas encore constaté une suppression peuvent retarder son effet. Une conception distribuée doit préciser quel serveur voit quelle version de l’état, et quand.
 
----
+Les identifiants de session sont généralement compacts et évitent d’exposer les informations utilisateur au client. Un identifiant volé peut néanmoins être détourné. Imprévisibilité, renouvellement de l’identifiant à la connexion, expiration, HTTPS, attributs de cookie et protections XSS et CSRF sont nécessaires. L’accès au stockage entraîne aussi des coûts de charge, de disponibilité et d’exploitation à évaluer selon l’échelle requise.
 
-## L'« ombre » de JWT : risques et défis de la gestion des sessions
+## JWT et validation locale
 
-À première vue, JWT semble parfait, mais si l'on tente de l'appliquer tel quel à la « gestion de session » entre un navigateur et un serveur, on se heurte à de nombreux problèmes critiques.
+JWT représente un ensemble de déclarations JSON à l’aide de signatures ou de MAC JWS et/ou de chiffrement JWE. Les signatures à clé publique utilisent la clé privée de l’émetteur et la clé publique du vérificateur ; HMAC utilise un secret partagé. La suite concerne principalement des JWT autonomes protégés par une signature ou un MAC.
 
-### 1. La révocation des jetons est extrêmement difficile
-
-La caractéristique « sans état » (absence d'état côté serveur), qui est le plus grand avantage de JWT, se transforme directement en sa plus grande faiblesse.
-**En principe, un JWT émis ne peut pas être invalidé de force par le serveur avant l'expiration de sa durée de validité (exp).**
-
-Si l'appareil de l'utilisateur est volé ou si le JWT fuit en raison d'une attaque XSS, l'administrateur n'a aucun moyen d'arrêter ce jeton. Même si le mot de passe est modifié, le JWT déjà émis reste valide.
-
-Pour résoudre ce problème, certaines architectures adoptent une « liste noire de JWT révoqués » dans une base de données ou Redis, mais c'est un non-sens. Si la liste noire est vérifiée à chaque requête, le système n'est plus « sans état », et cela ne diffère en rien de la gestion de session traditionnelle avec état. Au contraire, les performances se dégradent car le JWT, dont la taille est bien supérieure à celle d'un ID de session, est transmis à chaque fois.
-
-### 2. L'histoire de la vulnérabilité « alg: none » et les risques d'implémentation
-
-JWT est très flexible et prend en charge plusieurs algorithmes de signature. Cependant, cette flexibilité a causé de graves vulnérabilités par le passé.
-L'en-tête du JWT contient un champ `alg` (algorithme), et si on y spécifie `none`, il est traité comme un jeton « sans signature ».
-
-Autrefois, de nombreuses bibliothèques JWT présentaient une vulnérabilité (comme la CVE-2015-9256) qui acceptait `alg: none`. Un attaquant pouvait créer un JWT élevant ses propres privilèges, modifier l'en-tête en `alg: none` et l'envoyer, trompant ainsi le serveur pour se connecter en tant qu'administrateur.
-Bien que cela soit corrigé dans les bibliothèques principales aujourd'hui, c'est un exemple typique montrant à quel point l'implémentation de JWT est complexe et qu'une erreur de configuration peut être fatale.
-
-### 3. La controverse sur le lieu de stockage : LocalStorage vs HttpOnly Cookie
-
-Après avoir reçu un JWT sur le front-end (comme une SPA), l'endroit où le stocker fait l'objet de débats intenses.
-
-#### Stockage dans LocalStorage / SessionStorage
-- **Avantages** : Facilement accessible depuis JavaScript, ce qui facilite son ajout à l'en-tête `Authorization: Bearer <token>` des requêtes API.
-- **Risques** : **Extrêmement vulnérable aux attaques XSS (Cross-Site Scripting)**. Si un script malveillant s'infiltre dans le site, le JWT contenu dans le LocalStorage peut être facilement lu et envoyé au serveur de l'attaquant.
-
-#### Stockage dans un HttpOnly Cookie
-- **Avantages** : Inaccessible depuis JavaScript, ce qui empêche le risque de vol direct du jeton via XSS.
-- **Risques** : **Sujet aux attaques CSRF (Cross-Site Request Forgery)**. Le navigateur envoyant automatiquement les cookies lors d'une requête, si une API est appelée depuis un autre site malveillant, des actions non désirées pourraient être exécutées (bien que cela puisse être considérablement atténué aujourd'hui en utilisant l'attribut `SameSite`).
-
-En tant que meilleure pratique de sécurité, **« stocker le JWT dans un cookie avec l'attribut HttpOnly »** a tendance à être recommandé, mais cela ramène à la question : « Pourquoi une session classique basée sur les cookies ne suffirait-elle pas ? »
-
-### 4. La nécessité du Refresh Token et la complexification
-
-Pour minimiser le risque de fuite du JWT, la durée de validité du jeton d'accès (JWT) est généralement définie comme étant très courte (par exemple, 15 minutes).
-Cependant, on ne peut pas demander à l'utilisateur de se reconnecter toutes les 15 minutes. C'est là qu'intervient le **Refresh Token (jeton d'actualisation)**.
+**Signer n’est pas chiffrer.** Les déclarations d’un JWT seulement signé sont lisibles : n’y placez pas de secrets sans précaution. Décoder base64url est également différent de valider un jeton.
 
 ```mermaid
 graph TD
-    A["Client"] -- "1. Requête avec JWT expiré" --> B["Serveur"]
-    B -- "2. 401 Unauthorized" --> A
-    A -- "3. Envoi du Refresh Token" --> B
-    B -- "4. Vérification du Refresh Token en DB" --> C["Base de données"]
-    C -- "5. OK" --> B
-    B -- "6. Émission du nouveau JWT" --> A
+    A["Client"] -- "1. Demande d’authentification" --> B["Émetteur"]
+    B -- "2. Authentifier et signer ou appliquer un MAC au JWT" --> B
+    B -- "3. Renvoyer le JWT" --> A
+    A -- "4. Requête avec JWT" --> C["Serveur de ressources"]
+    C -- "5. Valider clé, déclarations et autorisation" --> C
+    C -- "6. Réponse autorisée" --> A
 ```
 
-Le Refresh Token a une longue durée de validité, est stocké dans la base de données côté serveur et est conçu pour pouvoir être révoqué si nécessaire.
-Mais réfléchissez bien. **Au moment où le système vérifie et gère le Refresh Token dans la base de données, il devient complètement « avec état (stateful) ».**
+La validation locale avec la clé d’un émetteur de confiance peut éviter de consulter un stockage central des sessions à chaque requête. Obtenir et actualiser les clés, suspendre des comptes, consulter les révocations ou les permissions actuelles peut encore exiger des communications ou un état. JWT n’élimine pas tous les accès aux bases de données et ne garantit pas de meilleures performances.
 
-## Conclusion : Concevoir une architecture adaptée aux besoins
+L’application doit définir les algorithmes et clés autorisés. Outre la vérification cryptographique, contrôlez l’émetteur `iss`, le service destinataire `aud`, l’expiration `exp`, le début de validité `nbf` si nécessaire, la finalité du jeton et la permission d’effectuer l’opération demandée. Exigez les déclarations imposées par le profil adopté. La spécification générique JWT n’impose même pas `exp` dans tous les cas. Une conception de connexion ou de contrôle d’accès doit définir et appliquer explicitement sa politique de validité.
 
-JWT n'est en aucun cas « mauvais ». Mais ce n'est pas non plus une panacée.
-Dans les cas d'utilisation suivants, JWT est un outil très puissant :
+## 1. La révocation est possible, mais doit être conçue
 
-1. **Communication de serveur à serveur entre microservices** : Lorsque chaque service doit vérifier l'authentification de manière indépendante sur un réseau interne de confiance.
-2. **Délégation de pouvoir à court terme** : Utilisation comme lien de réinitialisation de mot de passe ou URL à usage unique pour la confirmation de l'adresse e-mail.
-3. **Jetons d'accès et jetons d'identité dans OAuth2 / OIDC** : Utilisation dans son but initial.
+Un serveur qui vérifie seulement hors ligne la protection cryptographique et les conditions temporelles, sans consulter d’état supplémentaire, ne peut pas apprendre la révocation d’un jeton individuel ni un changement de mot de passe postérieur à son émission. Dans cette conception, un jeton bearer valide volé peut rester utilisable jusqu’à expiration. Le supprimer du client n’arrête pas une copie volée.
 
-D'un autre côté, **pour la gestion des sessions entre un navigateur Web classique et un serveur (maintien de l'état de connexion), l'utilisation d'une gestion de session avec état utilisant un HttpOnly Cookie traditionnel (avec Redis, etc.) est souvent beaucoup plus sûre et plus simple**.
+Les options incluent des durées courtes, des listes de révocation, des numéros de version par utilisateur ou session et l’introspection des jetons. Invalider une clé de signature affecte aussi les autres jetons émis avec cette clé et nécessite de propager le changement aux caches et vérificateurs. Une expiration courte réduit l’exposition, mais ne remplace pas la révocation immédiate d’un jeton individuel.
 
-Adopter JWT pour la gestion de session simplement parce que c'est « moderne » ou parce que « tout le monde l'utilise » n'est pas recommandé. Il est de la responsabilité majeure de l'architecte d'évaluer globalement la scalabilité, les exigences de révocation et les risques de sécurité du système afin de choisir la technologie appropriée.
+Introduire un état ou des communications n’est pas en soi un échec. Consulter l’état à chaque API, seulement au renouvellement, ou distribuer des événements de révocation présente des propriétés différentes. Choisissez la vitesse de révocation et le coût d’exploitation nécessaires. Révoquer un jeton de renouvellement n’invalide pas nécessairement les jetons d’accès déjà émis que chaque API continue d’accepter par validation locale.
+
+## 2. Choix des algorithmes et confusion des finalités
+
+`alg: none` désigne une forme sans signature ni MAC. Un point d’entrée d’authentification ou d’accès qui exige des jetons signés ne doit pas l’accepter. Ne laissez pas le `alg` reçu modifier votre politique de vérification. RFC 8725 distingue l’acceptation indue de `none` de la confusion d’algorithmes utilisant une clé publique RSA comme secret HMAC.
+
+Utilisez une bibliothèque maintenue et configurez les algorithmes permis, les associations entre clés et émetteurs, les destinataires et les règles de validation propres à chaque type de jeton. Empêchez l’acceptation de jetons destinés à un autre usage, par exemple un jeton d’identité utilisé comme jeton d’accès à une API. On ne peut garantir globalement la sécurité ni l’état actuel des correctifs de toutes les bibliothèques.
+
+## 3. Stockage dans le navigateur, XSS et CSRF
+
+JavaScript de même origine peut lire `localStorage` et `sessionStorage`. Un XSS peut donc exposer les jetons bearer qui y sont stockés. La durée de stockage plus courte de `sessionStorage` n’empêche pas cette lecture.
+
+Un cookie `HttpOnly` empêche JavaScript de lire directement sa valeur, mais ne bloque pas XSS dans son ensemble. Du code malveillant de même origine peut encore effectuer des opérations authentifiées avec les cookies ou lire les informations obtenues.
+
+Lorsque les cookies sont envoyés automatiquement selon les conditions du navigateur, il faut aussi traiter CSRF. Définissez `Secure`, une valeur adaptée de `SameSite` et une portée d’envoi limitée, puis prévoyez des protections telles que des jetons CSRF ou des contrôles d’Origin pour les opérations modifiant l’état. Ne supposez pas que `SameSite` couvre tous les cas et ne modifiez pas l’état par GET. Ces considérations s’appliquent à un cookie contenant un JWT comme à un identifiant de session. Voir l’[explication de XSS et CSRF](/fr/p/cross-site-scripting-xss-csrf-security/).
+
+Le stockage dépend aussi de l’architecture. On peut envisager de conserver les jetons d’API côté serveur et d’utiliser un cookie de session avec le navigateur, sans lui remettre ces jetons. Décidez selon les frontières de l’application et les opérations nécessaires.
+
+## 4. Jetons de renouvellement et emplacement de l’état
+
+Les jetons de renouvellement (*refresh tokens*) sont une manière d’obtenir de nouveaux jetons d’accès à courte durée de vie. Leur émission est facultative ; utiliser JWT ne les rend pas obligatoires. « 15 minutes » est un exemple de durée, pas une valeur universelle imposée par une norme.
+
+```mermaid
+graph TD
+    A["Client"] -- "1. Jeton d’accès expiré" --> B["API"]
+    B -- "2. Réponse de jeton invalide" --> A
+    A -- "3. Présenter le jeton de renouvellement" --> C["Serveur d’autorisation"]
+    C -- "4. Vérifier client, octroi et réutilisation" --> D["État d’octroi et de renouvellement"]
+    D -- "5. Résultat de validation" --> C
+    C -- "6. Nouveaux jetons ou refus" --> A
+```
+
+Ce schéma présente une conception gérant l’état de renouvellement. Protégez ces jetons comme des secrets et décidez du traitement de la révocation et de la réutilisation. RFC 9700 exige que les jetons de renouvellement émis aux clients publics soient liés cryptographiquement à l’instance cliente qui les présente ou soumis à une rotation. Celle-ci invalide le jeton précédent tout en conservant son lien avec le nouveau ; gérer la réutilisation détectée fait également partie de la conception.
+
+Cela ne signifie pas conserver nécessairement chaque jeton en clair dans une base de données. Gérez une représentation sûre et l’état associé, en vérifiant leur lien avec l’utilisateur, le client et l’octroi d’autorisation. On peut gérer l’état lors du renouvellement tout en validant localement les jetons d’accès dans chaque API.
+
+## Conclusion : comparer selon les finalités et les exigences
+
+JWT peut servir à transmettre des déclarations vérifiables entre services. Un réseau interne ne justifie pas d’omettre la validation de l’émetteur, du destinataire ou des permissions. Les jetons d’accès OAuth ne se limitent pas au format JWT. Les jetons d’identité OIDC, en revanche, sont des JWT qui transmettent au client le résultat de l’authentification. Ils ne doivent pas remplacer les jetons d’accès à une API.
+
+JWT ne rend pas non plus une URL de réinitialisation de mot de passe ou de confirmation d’adresse électronique automatiquement à usage unique. Expiration, restrictions de destinataire et de finalité, et suivi de l’utilisation restent nécessaires. Si un simple jeton aléatoire satisfait les exigences, JWT est inutile.
+
+Pour des applications centrées sur le navigateur qui demandent une révocation rapide, les sessions côté serveur constituent un point de départ pour comparer. JWT est aussi candidat lorsque la validation locale entre services est nécessaire. C’est un choix de conception fondé sur les exigences, pas l’affirmation qu’une option est toujours plus sûre ou plus rapide. Comparez le délai de révocation admissible, la fraîcheur de l’information, le type de client, la gestion des clés, le stockage, le trafic et la charge d’exploitation.
+
+## Références
+
+- [RFC 7519 : format et déclarations JWT, §3–4](https://www.rfc-editor.org/rfc/rfc7519.html)
+- [RFC 8725 : validation des algorithmes, émetteur, destinataire et finalité, §2.1 et §3](https://www.rfc-editor.org/rfc/rfc8725.html)
+- [RFC 7009 : conception de la révocation de jetons OAuth, §3](https://www.rfc-editor.org/rfc/rfc7009.html)
+- [RFC 9700 : protection des jetons de renouvellement, §2.2.2 et §4.14](https://www.rfc-editor.org/rfc/rfc9700.html)
+- [RFC 6749 : jetons d’accès et de renouvellement, §1.4–1.5](https://www.rfc-editor.org/rfc/rfc6749.html)
+- [OpenID Connect Core 1.0 : jeton d’identité, §2](https://openid.net/specs/openid-connect-core-1_0.html)
+- [OWASP : sessions et attributs des cookies](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
+- [OWASP : sécurité de Web Storage](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html)
+- [OWASP : jetons de réinitialisation de mot de passe](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html)
