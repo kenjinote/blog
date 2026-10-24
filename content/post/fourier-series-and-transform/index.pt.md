@@ -1,8 +1,9 @@
 ---
-title: "Série de Fourier e Transformada de Fourier: Decompondo Qualquer Onda Complexa em Somas de Senos e Cossenos"
+title: "Série e transformada de Fourier: entender ondas por componentes senoidais e cossenoidais"
 description: "Uma explicação detalhada da 'Série de Fourier', que expressa formas de onda complexas como uma superposição de ondas simples de seno e cosseno, e sua extensão para funções não periódicas, a 'Transformada de Fourier'."
 slug: "fourier-series-and-transform"
 date: "2026-09-20T14:30:00+09:00"
+lastmod: 2026-10-24
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags:
@@ -11,115 +12,163 @@ tags:
   - "Física"
 ---
 
-## 1. Introdução: A Magia de Somar Ondas
+## 1. Introdução: pensar na soma de ondas
 
-Nosso ambiente é preenchido por várias **"ondas"** como som, luz e ondas eletromagnéticas. E se as formas de onda que parecem altamente complexas e irregulares à primeira vista fossem, na verdade, constituídas por combinações de ondas simples? A representação matemática desse fato surpreendente é a **"Série de Fourier"** proposta por Joseph Fourier, e seu desenvolvimento posterior, a **"Transformada de Fourier"**.
+Som, luz e ondas eletromagnéticas estão ao nosso redor. Podemos entender uma forma de onda complexa e irregular como uma combinação de ondas simples? A **série de Fourier**, associada a Joseph Fourier, e a **transformada de Fourier**, que utiliza frequências contínuas, dão expressão matemática a essa ideia. Para usá-las, é necessário especificar as condições sobre as funções e o significado da convergência.
 
-Neste artigo, aprofundaremos neste fascinante método matemático, desde seus fundamentos até uma compreensão intuitiva, e suas aplicações na tecnologia moderna.
+Este artigo apresenta as fórmulas básicas, uma interpretação intuitiva e um exemplo de aplicação ao processamento moderno de sinais.
 
-## 2. Série de Fourier: Decompondo Ondas Periódicas
+## 2. Série de Fourier: decompor ondas periódicas
 
-A ideia fundamental da série de Fourier é que "qualquer função periódica pode ser expressa como uma soma infinita de ondas de seno e cosseno com frequências diferentes".
+Uma série de Fourier representa uma função periódica por componentes trigonométricas cujas frequências são múltiplos inteiros da frequência fundamental. Poder calcular os coeficientes não implica, por si só, que a série convirja ao valor da função em cada ponto. Aqui consideramos funções periódicas suaves por partes: um período pode ser dividido em um número finito de intervalos, em cujo interior a função é continuamente diferenciável, e tanto a função quanto sua derivada têm limites laterais finitos nos extremos. Sob essa condição suficiente, a série converge ao valor da função nos pontos de continuidade e à média dos limites laterais nos saltos.
 
-### 2.1 Série de Fourier de Valores Reais
+$$
+\lim_{M\to\infty} S_M(x)=\frac{f(x-)+f(x+)}{2}
+$$
 
-Uma função $f(x)$ com um período de $2\pi$ pode ser expandida da seguinte forma.
+$S_M$ é a soma parcial até o harmônico de ordem $M$. Na junção entre períodos, usam-se os limites da extensão periódica. Perto de um salto, a ultrapassagem causada pelo fenômeno de Gibbs persiste quando se acrescentam termos. Portanto, aumentar o número de termos não faz o erro tender uniformemente a zero em todo o intervalo.
+
+### 2.1 Forma real da série de Fourier
+
+Para uma função de valores reais e período $2\pi$ que satisfaça as condições acima, a igualdade seguinte vale nos pontos de continuidade. Os ângulos são expressos em radianos. Em um salto, substitua o lado esquerdo pela média dos limites laterais.
 
 $$
 f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos(nx) + b_n \sin(nx) \right)
 $$
 
-Aqui, $a_0$, $a_n$ e $b_n$ são chamados de **"coeficientes de Fourier"**, e representam a intensidade com que cada onda é incluída. Esses coeficientes são calculados pelas seguintes integrais.
+Os números $a_0,a_n,b_n$ são os **coeficientes de Fourier**. O termo constante, ou componente contínua (DC), é a média em um período: $a_0/2$, e não $a_0$. Para $n\ge1$, $a_n$ e $b_n$ são os pesos das componentes cosseno e seno. A ortogonalidade das funções trigonométricas fornece as fórmulas:
 
 $$
-a_0 = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) dx \quad (\text{Componente DC})
-$$
-$$
-a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos(nx) dx \quad (\text{Peso da componente cosseno})
-$$
-$$
-b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin(nx) dx \quad (\text{Peso da componente seno})
+a_0 = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) dx
 $$
 
-### 2.2 Série de Fourier Complexa
+$$
+a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos(nx) dx
+$$
 
-Usando a fórmula de Euler $e^{i\theta} = \cos\theta + i\sin\theta$, a série de Fourier pode ser escrita de forma mais elegante como funções exponenciais complexas.
+$$
+b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin(nx) dx
+$$
+
+### 2.2 Forma complexa da série de Fourier
+
+A [fórmula de Euler](/pt/p/eulers-identity/), $e^{i\theta}=\cos\theta+i\sin\theta$, permite escrever a mesma série com exponenciais complexas. A soma bilateral abaixo deve ser entendida como o limite das somas parciais simétricas de $n=-M$ a $M$. A igualdade nos pontos de continuidade e a ressalva nos saltos são as mesmas da forma real.
 
 $$
 f(x) = \sum_{n=-\infty}^{\infty} c_n e^{inx}
 $$
 
 $$
-c_n = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x) e^{-inx} dx \quad (\text{Coeficiente de Fourier complexo})
+c_n = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x) e^{-inx} dx
 $$
 
-A forma complexa desempenha um papel muito importante como uma ponte para a transformada de Fourier descrita posteriormente.
+Para $f$ de valores reais, $c_0=a_0/2$, $c_n=(a_n-ib_n)/2$ e $c_{-n}=(a_n+ib_n)/2$, com $n\ge1$. Frequências negativas aparecem mesmo ao representar uma forma de onda real por exponenciais complexas. Essa forma também ajuda a compreender a ligação com a transformada de Fourier.
 
-## 3. Transformada de Fourier: Extensão para Funções Não Periódicas
+## 3. Transformada de Fourier: além das funções periódicas
 
-A série de Fourier só pode ser aplicada a funções periódicas. No entanto, muitos sinais no mundo real (como curtas emissões vocais ou sinais de pulso único) são não periódicos. Portanto, ao considerar o limite em que o período vai para o infinito ($T \to \infty$), deriva-se a **"Transformada de Fourier"**.
+A série também pode ser aplicada a funções estendidas periodicamente. Entretanto, para descrever um pulso isolado ou outro sinal em toda a reta real, é útil a **transformada de Fourier**, com frequências que variam continuamente. Aumentar o período e, assim, reduzir o espaçamento entre frequências oferece uma ligação intuitiva. Trocar limites e integrais exige condições; essa intuição, sozinha, não é uma demonstração geral.
 
-### 3.1 Definição da Transformada de Fourier
+### 3.1 Definição e inversão
 
-A transformada de Fourier $\mathcal{F}\{f(t)\}$ e a transformada de Fourier inversa para uma função $f(t)$ são definidas da seguinte maneira.
-
-$$
-F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t} dt \quad (\text{Transformação do domínio do tempo para o domínio da frequência})
-$$
+Usamos sinal negativo no expoente da transformada direta e o fator $1/(2\pi)$ na inversa. Se $\int_{-\infty}^{\infty}|f(t)|\,dt<\infty$, a transformada direta abaixo converge absolutamente para todo $\omega$ real.
 
 $$
-f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} F(\omega) e^{i\omega t} d\omega \quad (\text{Transformação inversa do domínio da frequência para o domínio do tempo})
+F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t} dt
 $$
 
-Aqui, $t$ representa o tempo e $\omega$ representa a frequência angular. $F(\omega)$ é uma função que indica a quantidade do componente de frequência $\omega$ (amplitude e fase) que está incluída no sinal original $f(t)$.
+Por exemplo, se $f$ é contínua e tanto $f$ quanto $F$ são absolutamente integráveis, a transformada inversa recupera $f$ da seguinte forma. A fórmula não se aplica sem condições a uma função arbitrária.
 
-### 3.2 Fluxo de Processamento de Sinais
+$$
+f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} F(\omega) e^{i\omega t} d\omega
+$$
 
-O diagrama a seguir mostra como um sinal de entrada é processado usando a transformada de Fourier.
+Tomamos $t$ em segundos e $\omega$ como frequência angular, em rad/s. A frequência $\nu$ em hertz se relaciona por $\omega=2\pi\nu$. A função complexa $F(\omega)$ representa os pesos de um espectro contínuo; onde $F\ne0$, seu módulo e argumento indicam magnitude e fase. Um peso em um espectro contínuo não equivale diretamente à amplitude de uma componente individual de um sinal periódico.
+
+Para funções com saltos, condições adicionais de regularidade e uma integral imprópria simétrica podem recuperar a média dos limites laterais. Funções de quadrado integrável e sinais periódicos podem exigir extensões no sentido de $L^2$ e das distribuições, respectivamente. Essas teorias ficam fora desta introdução. Os sinais e a normalização variam entre referências; verifique sempre as transformadas direta e inversa como um par.
+
+### 3.2 Processamento de sinais
+
+O diagrama ilustra o processamento de um sinal no domínio da frequência.
 
 ```mermaid
 flowchart LR
-    A["Forma de onda no tempo do sinal de entrada"] -->|"Transformada de Fourier"| B["Espectro de frequência"]
-    B -->|"Processo de filtragem"| C["Espectro processado"]
-    C -->|"Transformada de Fourier Inversa"| D["Forma de onda no tempo do sinal de saída"]
-    
-    %% Estilo de nós
+    A["Sinal de entrada no tempo"] -->|"Transformada de Fourier"| B["Espectro de frequências"]
+    B -->|"Filtragem"| C["Espectro modificado"]
+    C -->|"Transformada inversa de Fourier"| D["Sinal de saída no tempo"]
+
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#bbf,stroke:#333,stroke-width:2px
     style C fill:#bbf,stroke:#333,stroke-width:2px
     style D fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
-## 4. Transformada de Fourier Discreta (DFT) e Transformada Rápida de Fourier (FFT)
+## 4. Transformada discreta de Fourier (DFT) e transformada rápida de Fourier (FFT)
 
-Para processar sinais com computadores, o tempo contínuo e as integrais com comprimento infinito devem ser substituídos por uma soma de um número finito de pontos de dados discretos. Esta é a **Transformada de Fourier Discreta (DFT)**.
+A **transformada discreta de Fourier (DFT)** leva uma sequência finita $x_0,\ldots,x_{N-1}$ ao mesmo número de componentes de frequência. Essa transformação finita deve ser distinguida da simples substituição de uma integral da transformada contínua por uma soma. Para um sinal temporal, primeiro se faz a amostragem e se seleciona um intervalo de observação finito. A DFT direta e a inversa formam o par:
 
 $$
-X_k = \sum_{n=0}^{N-1} x_n e^{-i \frac{2\pi}{N} k n} \quad \text{para } k = 0, 1, \dots, N-1
+X_k = \sum_{n=0}^{N-1} x_n e^{-i \frac{2\pi}{N} k n} \quad \text{for } k = 0, 1, \dots, N-1
 $$
 
-Além disso, um algoritmo que reduz drasticamente a complexidade computacional dessa DFT de $O(N^2)$ para $O(N \log N)$ é a **[Transformada Rápida de Fourier (FFT)](/pt/p/fast-fourier-transform-algorithm/)**. Com o advento da [FFT](/pt/p/fast-fourier-transform-algorithm/), o campo do processamento digital de sinais (DSP) sofreu um desenvolvimento explosivo. Muitas de nossas tecnologias familiares, como reconhecimento de voz em smartphones e compressão de imagens JPEG, se beneficiam da [FFT](/pt/p/fast-fourier-transform-algorithm/).
+$$
+x_n=\frac{1}{N}\sum_{k=0}^{N-1}X_k e^{i\frac{2\pi}{N}kn} \quad \text{for } n=0,1,\dots,N-1
+$$
+
+Para uma frequência de amostragem $f_s$, as posições de frequência, ou *bins*, estão espaçadas em $f_s/N$ Hz. A DFT corresponde a considerar a sequência finita como repetida periodicamente. Componentes do sinal antes da amostragem com frequência igual ou superior a $f_s/2$ causam aliasing ou ambiguidade; recuperar um sinal contínuo exige hipóteses como a limitação de banda. Uma senoide que não completa um número inteiro de ciclos no intervalo de observação também produz vazamento espectral: sua energia se espalha por vários bins.
+
+Calcular diretamente todas as $N$ componentes da DFT exige $O(N^2)$ operações. A [transformada rápida de Fourier (FFT)](/pt/p/fast-fourier-transform-algorithm/) é uma família de algoritmos para calcular a mesma DFT de modo eficiente. Por exemplo, para comprimentos que são potências de dois, a divisão e conquista permite $O(N\log N)$ operações. FFT designa um método de cálculo, não outra transformação nem uma aproximação por si só. É amplamente usada no processamento digital de sinais, incluindo áudio. Por outro lado, o método básico do JPEG comum com perdas utiliza a transformada discreta do cosseno (DCT). Embora essas transformadas sejam relacionadas, JPEG não deve ser apresentado simplesmente como aplicação direta da FFT.
+
+### 4.1 Conferir duas frequências e suas amplitudes com Python
+
+O exemplo utiliza NumPy e Matplotlib. Amostramos um segundo a 1.000 Hz e somamos uma senoide de 50 Hz com amplitude 1 a outra de 120 Hz com amplitude 0,5. Como a entrada é real, usamos `rfft` e `rfftfreq`. Ambas as frequências coincidem com bins espaçados em 1 Hz e estão abaixo de 500 Hz.
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Criar eixo de tempo (de 0 a 1 segundo, frequência de amostragem 1000Hz)
-t = np.linspace(0, 1, 1000, endpoint=False)
-
-# Sinal sintetizando ondas senoidais de 50Hz e 120Hz
+# Amostrar um segundo a 1000 Hz, sem incluir o extremo de um segundo
+fs = 1000.0
+N = 1000
+t = np.arange(N) / fs
 signal = np.sin(2 * np.pi * 50 * t) + 0.5 * np.sin(2 * np.pi * 120 * t)
 
-# Executar FFT
-fft_result = np.fft.fft(signal)
-frequencies = np.fft.fftfreq(len(t), 1/1000)
+# DFT das frequências não negativas de um sinal real
+fft_result = np.fft.rfft(signal)
+frequencies = np.fft.rfftfreq(N, d=1 / fs)
 
-# Índice para plotar apenas o domínio da frequência positiva
-positive_freqs = frequencies > 0
+# Amplitude unilateral: não duplicar DC nem Nyquist para N par
+amplitude = np.abs(fft_result) / N
+if N % 2 == 0:
+    amplitude[1:-1] *= 2
+else:
+    amplitude[1:] *= 2
+
+peak_indices = np.argsort(amplitude)[-2:]
+for k in sorted(peak_indices, key=lambda k: frequencies[k]):
+    print(f"{frequencies[k]:.0f} Hz: {amplitude[k]:.3f}")
+
+fig, ax = plt.subplots()
+ax.plot(frequencies, amplitude)
+ax.set(xlim=(0, 200), xlabel="Frequency (Hz)", ylabel="Amplitude",
+       title="One-sided amplitude spectrum")
+ax.grid(True)
+fig.tight_layout()
+plt.show()
 ```
+
+A saída arredondada é `50 Hz: 1.000` e `120 Hz: 0.500`; a saída do Python usa ponto decimal. A transformada direta padrão de `rfft` não é dividida por $N$, portanto normalizamos como mostrado para exibir amplitudes. Ao reunir o par de frequências positiva e negativa de um sinal real, duplicamos apenas os bins internos, excluindo DC e, para comprimentos pares, a componente de Nyquist. Isso permite ler as amplitudes das senoides deste exemplo, alinhadas aos bins e sem aplicação de janela. A mesma fórmula, sozinha, não garante amplitudes exatas para sinais arbitrários ou dados com aplicação de janela.
 
 ## 5. Conclusão
 
-A série de Fourier e a transformada de Fourier estão entre as ferramentas mais poderosas na ciência e engenharia, dividindo fenômenos complexos em elementos simples. Ao olhar o mundo através dessa "lente" matemática que converte o tempo em frequência, podemos descobrir padrões ocultos e processar informações de forma eficiente.
+A série e a transformada de Fourier ajudam a decompor fenômenos complexos em componentes simples. Observar um sinal no domínio da frequência permite descobrir padrões e processar informações.
 
-A magia de somar ondas continua a desempenhar um papel ativo como a base da tecnologia moderna de hoje.
+Especifique periodicidade, condições de convergência, unidades de frequência e normalização. Distinguir a DFT dos algoritmos FFT que a calculam também esclarece a relação entre as fórmulas e os programas.
+
+## Referências
+
+- [MIT ES.1803 Topic 22: coeficientes, convergência, fenômeno de Gibbs e ortogonalidade (§22.5–22.7)](https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf)
+- [MIT 18.330: transformada e inversão (capítulo 6, Definition 14)](https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf)
+- [NIST DLMF §1.14(i): definição e condições de inversão; sinais e normalização diferentes dos nossos](https://dlmf.nist.gov/1.14#i)
+- [MIT 6.341 Lecture 19: operações da DFT e da FFT](https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf)
+- [NumPy 2.3: FFT](https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html), [rfft para entradas reais](https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html) e [bins de frequência de rfftfreq](https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html)
+- [ITU-T T.81: JPEG com perdas baseado em DCT (§4.2–4.3)](https://www.w3.org/Graphics/JPEG/itu-t81.pdf)

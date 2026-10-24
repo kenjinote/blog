@@ -1135,6 +1135,46 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-009.json",
       "evidenceHash": "84342a3d53d826e001a1c9363fada897dc87b56ae66378b1fd87d37b0a1f3506"
+    },
+    "post/fourier-series-and-transform/index.pt.md": {
+      "source": "post/fourier-series-and-transform/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "916b40d9d1c00344aaaaaeca80c3e56831b9e841853ae6a50430366db2c01263",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-009.json",
+      "evidenceHash": "e3290b63a6399a6be439b251ae38e1a832a585810cc9574c4d8f3523ea3eac9b"
+    },
+    "post/fourier-series-and-transform/index.fr.md": {
+      "source": "post/fourier-series-and-transform/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "7dbb29b6f6c78b127838f5e61c8f6604ad20676e84110a06cfa636e5f801cdeb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-009.json",
+      "evidenceHash": "a66b5ed78a759c31e65e894416687b6c6ff8462fae2684f018b5d6c4b27ba073"
+    },
+    "post/fourier-series-and-transform/index.de.md": {
+      "source": "post/fourier-series-and-transform/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "2033948bccdbece15bae8672750706cb227513086b649bc9f9743671652080ea",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-009.json",
+      "evidenceHash": "0b647431813b055eb954c7229ea8038f355641cda6cdf48f44b136676450cf1d"
+    },
+    "post/fourier-series-and-transform/index.id.md": {
+      "source": "post/fourier-series-and-transform/index.md",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
+      "translationHash": "7bb93c97b38a09429d5dd0e132b5ceab2de3f1d1451710ce9740e8b7b7f4f736",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-009.json",
+      "evidenceHash": "3fd3e937078ab7c454fd3bf79d41ac6a243caa57b9330ff1bfa1a5234e758a29"
     }
   }
 }

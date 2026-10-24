@@ -3,7 +3,7 @@
   "validatedAt": "2026-10-24",
   "source": "post/fourier-series-and-transform/index.md",
   "sourceHash": "7a2bf1c5b8b86e84cd8c5cc3cd7db9177c7775986a58ded75856443f3838ffb9",
-  "scope": "Japanese source and fully read translations: en, zh-cn, zh-tw, es, ko. Other translations remain unreviewed.",
+  "scope": "Japanese source and fully read translations: en, zh-cn, zh-tw, es, ko, pt, fr, de, id. Other translations remain unreviewed.",
   "files": [
     {
       "language": "ja",
@@ -378,6 +378,326 @@
       "plotDataMatch": true,
       "hugoRendered": true,
       "pythonPlotVisuallyInspected": true
+    },
+    {
+      "language": "pt",
+      "hash": "916b40d9d1c00344aaaaaeca80c3e56831b9e841853ae6a50430366db2c01263",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pythonAstMatch": true,
+      "pythonOutput": [
+        "50 Hz: 1.000",
+        "120 Hz: 0.500"
+      ],
+      "mermaidEdges": 3,
+      "referenceUrls": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "internalLinks": [
+        "/pt/p/eulers-identity/",
+        "/pt/p/fast-fourier-transform-algorithm/"
+      ],
+      "maxUnexpectedAmplitude": 6.714248503147612e-15,
+      "articleNormalizationCases": [
+        {
+          "N": 1,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "nyquist",
+          "bin": 1,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "nyquist",
+          "bin": 4,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "highest-odd",
+          "bin": 4,
+          "amplitude": 1.2500000000000002
+        }
+      ],
+      "plotDataMatch": true,
+      "hugoRendered": true,
+      "pythonPlotVisuallyInspected": true
+    },
+    {
+      "language": "fr",
+      "hash": "7dbb29b6f6c78b127838f5e61c8f6604ad20676e84110a06cfa636e5f801cdeb",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pythonAstMatch": true,
+      "pythonOutput": [
+        "50 Hz: 1.000",
+        "120 Hz: 0.500"
+      ],
+      "mermaidEdges": 3,
+      "referenceUrls": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "internalLinks": [
+        "/fr/p/eulers-identity/",
+        "/fr/p/fast-fourier-transform-algorithm/"
+      ],
+      "maxUnexpectedAmplitude": 6.714248503147612e-15,
+      "articleNormalizationCases": [
+        {
+          "N": 1,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "nyquist",
+          "bin": 1,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "nyquist",
+          "bin": 4,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "highest-odd",
+          "bin": 4,
+          "amplitude": 1.2500000000000002
+        }
+      ],
+      "plotDataMatch": true,
+      "hugoRendered": true,
+      "pythonPlotVisuallyInspected": true
+    },
+    {
+      "language": "de",
+      "hash": "2033948bccdbece15bae8672750706cb227513086b649bc9f9743671652080ea",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pythonAstMatch": true,
+      "pythonOutput": [
+        "50 Hz: 1.000",
+        "120 Hz: 0.500"
+      ],
+      "mermaidEdges": 3,
+      "referenceUrls": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "internalLinks": [
+        "/de/p/eulers-identity/",
+        "/de/p/fast-fourier-transform-algorithm/"
+      ],
+      "maxUnexpectedAmplitude": 6.714248503147612e-15,
+      "articleNormalizationCases": [
+        {
+          "N": 1,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "nyquist",
+          "bin": 1,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "nyquist",
+          "bin": 4,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "highest-odd",
+          "bin": 4,
+          "amplitude": 1.2500000000000002
+        }
+      ],
+      "plotDataMatch": true,
+      "hugoRendered": true,
+      "pythonPlotVisuallyInspected": true
+    },
+    {
+      "language": "id",
+      "hash": "7bb93c97b38a09429d5dd0e132b5ceab2de3f1d1451710ce9740e8b7b7f4f736",
+      "displayMathCount": 11,
+      "formulasMatchSource": true,
+      "pythonAstMatch": true,
+      "pythonOutput": [
+        "50 Hz: 1.000",
+        "120 Hz: 0.500"
+      ],
+      "mermaidEdges": 3,
+      "referenceUrls": [
+        "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic22.pdf",
+        "https://math.mit.edu/icg/resources/teaching/18.330/18.330-Apr29.pdf",
+        "https://dlmf.nist.gov/1.14#i",
+        "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/4ee39a5e74c9f5099ac516ce57215c96_lec19.pdf",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.fft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfft.html",
+        "https://numpy.org/doc/2.3/reference/generated/numpy.fft.rfftfreq.html",
+        "https://www.w3.org/Graphics/JPEG/itu-t81.pdf"
+      ],
+      "internalLinks": [
+        "/id/p/eulers-identity/",
+        "/id/p/fast-fourier-transform-algorithm/"
+      ],
+      "maxUnexpectedAmplitude": 6.714248503147612e-15,
+      "articleNormalizationCases": [
+        {
+          "N": 1,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 2,
+          "kind": "nyquist",
+          "bin": 1,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "dc",
+          "bin": 0,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "nyquist",
+          "bin": 4,
+          "amplitude": 1.25
+        },
+        {
+          "N": 8,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "interior",
+          "bin": 2,
+          "amplitude": 1.25
+        },
+        {
+          "N": 9,
+          "kind": "highest-odd",
+          "bin": 4,
+          "amplitude": 1.2500000000000002
+        }
+      ],
+      "plotDataMatch": true,
+      "hugoRendered": true,
+      "pythonPlotVisuallyInspected": true
     }
   ],
   "pythonAstMatch": true,
@@ -507,11 +827,11 @@
   "limitations": [
     "AI technical review, not native-speaker human confirmation.",
     "Finite numerical cases supplement algebra and source reading; they do not prove general convergence or inversion.",
-    "Local Hugo, multilingual and HTTPS checks passed; publication pending. Seven other Fourier translations remain unreviewed."
+    "Local Hugo, multilingual and HTTPS checks passed; publication pending. Hindi, Russian and Arabic Fourier translations remain unreviewed."
   ],
   "localBuild": {
     "hugoVersion": "0.139.0 extended",
-    "contentScope": "Ten article bundles in all thirteen languages; Fourier Japanese, English, both Chinese translations, Spanish and Korean have been read in full. The other seven Fourier translations have not been semantically reviewed.",
+    "contentScope": "Ten article bundles in all thirteen languages. Fourier Japanese and nine translations (en, zh-cn, zh-tw, es, ko, pt, fr, de, id) have been read in full; Hindi, Russian and Arabic have not been semantically reviewed.",
     "multilingualSitemapPages": 702,
     "httpsHtmlFiles": 1301,
     "httpsXmlFiles": 41,
