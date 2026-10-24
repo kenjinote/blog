@@ -1,7 +1,7 @@
 {
   "version": 1,
   "validatedAt": "2026-10-24",
-  "scope": "Japanese source and nine full-body-reviewed translations: en, zh-cn, zh-tw, es, ko, pt, fr, de, id. Three translations remain unreviewed.",
+  "scope": "Japanese source and all twelve full-body-reviewed translations: en, zh-cn, zh-tw, es, ko, pt, fr, de, id, hi, ar, ru.",
   "files": [
     {
       "language": "ja",
@@ -238,6 +238,75 @@
       "eyecatchExists": true,
       "hugoRendered": true,
       "correctedKeyholeDiagramRendered": true
+    },
+    {
+      "language": "hi",
+      "normalizedDisplayMathMatches": true,
+      "displayedFormulaCount": 17,
+      "normalization": "Res/留数 labels are normalized; the Cauchy-theorem prose annotation is checked semantically, separately from the equation.",
+      "mermaidEdgeCounts": [
+        6,
+        3,
+        4
+      ],
+      "branchPhaseAndArcBoundsPresent": true,
+      "principalPartDefinedAsSumOfTerms": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchys-integral-theorem",
+        "euler",
+        "laplace-transform",
+        "taylor-and-maclaurin-series"
+      ],
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedKeyholeDiagramRendered": true
+    },
+    {
+      "language": "ar",
+      "normalizedDisplayMathMatches": true,
+      "displayedFormulaCount": 17,
+      "normalization": "Res/留数 labels are normalized; the Cauchy-theorem prose annotation is checked semantically, separately from the equation.",
+      "mermaidEdgeCounts": [
+        6,
+        3,
+        4
+      ],
+      "branchPhaseAndArcBoundsPresent": true,
+      "principalPartDefinedAsSumOfTerms": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchys-integral-theorem",
+        "euler",
+        "laplace-transform",
+        "taylor-and-maclaurin-series"
+      ],
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedKeyholeDiagramRendered": true
+    },
+    {
+      "language": "ru",
+      "normalizedDisplayMathMatches": true,
+      "displayedFormulaCount": 17,
+      "normalization": "Res/留数 labels are normalized; the Cauchy-theorem prose annotation is checked semantically, separately from the equation.",
+      "mermaidEdgeCounts": [
+        6,
+        3,
+        4
+      ],
+      "branchPhaseAndArcBoundsPresent": true,
+      "principalPartDefinedAsSumOfTerms": true,
+      "internalArticleLinksExist": true,
+      "internalArticleTargets": [
+        "cauchys-integral-theorem",
+        "euler",
+        "laplace-transform",
+        "taylor-and-maclaurin-series"
+      ],
+      "eyecatchExists": true,
+      "hugoRendered": true,
+      "correctedKeyholeDiagramRendered": true
     }
   ],
   "supplementaryNumericalEvidence": "docs/translation-review/batch-006-source-validation.json",
@@ -250,7 +319,7 @@
     "multilingualPagesChecked": 566,
     "httpsHtmlFilesChecked": 1068,
     "httpsXmlFilesChecked": 41,
-    "scope": "Seven bundles rendered; residue-theorem semantic review covers Japanese and en, zh-cn, zh-tw, es, ko, pt, fr, de, id. Three translations remain unreviewed.",
+    "scope": "Seven fully reviewed article bundles rendered: all 91 Japanese/translation article versions. All twelve residue-theorem translations have been read in full.",
     "existingWarnings": "Post-only preview lacks search/archive pages and home JSON layout; existing Portuguese theme UI translations are incomplete."
   }
 }

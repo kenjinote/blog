@@ -388,6 +388,135 @@
         "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf"
       ],
       "validation": "docs/translation-review/batch-006-validation.json"
+    },
+    "post/residue-theorem/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/residue-theorem/index.md",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "42f096d824e622329a69fcea6d4966b24af892567e454de2d9bfc3fdb61d4c59",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, introduction, singularities/Laurent/theorem sections, all rational/Fourier/keyhole examples and conclusion with the corrected Japanese source. Supplied contour/function/convergence hypotheses and removed blanket claims that complexification solves arbitrary real integrals."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Kept विचित्रता with explicit definitions and English aliases for isolated/removable/essential types; used पृथक and अनिवार्य where appropriate. Replaced generic कार्य for mathematical functions with फलन, and antiderivative wording with प्रतिअवकलज. Defined मुख्य भाग as the sum of negative-power terms; distinguished absolute convergence from कॉची प्रधान मान. Added परिक्रमा संख्या (winding number), वामावर्त/दक्षिणावर्त orientation and the branch phase equation, replacing vague constant-multiplier prose. Rewrote the multivalued-expression paragraph descriptively and linked Cauchy theorem, Taylor, Euler and Laplace in Hindi."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 17 display formulas after normalizing Res/留数 labels; read the Cauchy-theorem annotation separately. Verified positive piecewise C1 simple-contour hypotheses, finite interior isolated singularities, none on the curve, and winding-number qualification. Checked R>1/R>a bounds, absolute convergence, k>0 exponential decay, the Jordan estimate, and 0<a<1 keyhole endpoint convergence. On 0<arg z<2π, checked lower-side e^(-2πia), reverse orientation, residue e^(-πia), and the resulting phase equation and π/sin(πa). Source supplementary calculations check four semicircles, three small-circle pole integrals and five logarithmically transformed real integrals; numerical evidence is illustrative, not proof. Explicitly checked that the principal part is the sum of negative-power terms, not the coefficient collection."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all three Mermaid flowcharts, with 6, 3 and 4 edges. Corrected the initial real-integral label, singularity/branch-cut step, and inner/outer circle labels to avoid crossing the cut. There is no standalone executable numerical program in the article."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links; checked every retained absolute and root-relative article target exists in the matching language and the eyecatch exists. Added matching-language Taylor/Euler links and retained or corrected the dedicated Cauchy-theorem and Laplace links. Read the NIST/MIT references for the source correction. Verified the updated keyhole labels/reference in local HTML and passed multilingual/HTTPS validators."
+        }
+      },
+      "summary": "Complete-body semantic comparison and correction against the revised Japanese source, including principal part, theorem hypotheses, all three examples, seventeen formulas, three diagrams and links.",
+      "languageSpecificFindings": "Kept विचित्रता with explicit definitions and English aliases for isolated/removable/essential types; used पृथक and अनिवार्य where appropriate. Replaced generic कार्य for mathematical functions with फलन, and antiderivative wording with प्रतिअवकलज. Defined मुख्य भाग as the sum of negative-power terms; distinguished absolute convergence from कॉची प्रधान मान. Added परिक्रमा संख्या (winding number), वामावर्त/दक्षिणावर्त orientation and the branch phase equation, replacing vague constant-multiplier prose. Rewrote the multivalued-expression paragraph descriptively and linked Cauchy theorem, Taylor, Euler and Laplace in Hindi.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement full-body reading and do not prove the theorem.",
+        "All twelve translations are now locally reviewed; publication of batch 006 is not yet verified."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.10",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/3c58ce71ec6f7573804221d76158a0bd_MIT18_04S18_topic8.pdf",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf"
+      ],
+      "validation": "docs/translation-review/batch-006-validation.json"
+    },
+    "post/residue-theorem/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/residue-theorem/index.md",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "f15dec4bec6d10dd07d86e3d98ac90c732b753a9352e8d4132195a288a61fea3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, introduction, singularities/Laurent/theorem sections, all rational/Fourier/keyhole examples and conclusion with the corrected Japanese source. Supplied contour/function/convergence hypotheses and removed blanket claims that complexification solves arbitrary real integrals."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used изолированная/устранимая/существенно особая точка, полюс, проколотая окрестность, главная часть as a sum and первообразная. Distinguished absolute convergence of the ordinary improper integral from главное значение Коши; specified индекс кривой (число обходов), branch choice and contour orientations. Corrected the real-integral flowchart and supplied small/large-circle bounds and both cut-side phase factors."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 17 display formulas after normalizing Res/留数 labels; read the Cauchy-theorem annotation separately. Verified positive piecewise C1 simple-contour hypotheses, finite interior isolated singularities, none on the curve, and winding-number qualification. Checked R>1/R>a bounds, absolute convergence, k>0 exponential decay, the Jordan estimate, and 0<a<1 keyhole endpoint convergence. On 0<arg z<2π, checked lower-side e^(-2πia), reverse orientation, residue e^(-πia), and the resulting phase equation and π/sin(πa). Source supplementary calculations check four semicircles, three small-circle pole integrals and five logarithmically transformed real integrals; numerical evidence is illustrative, not proof. Explicitly checked that the principal part is the sum of negative-power terms, not the coefficient collection."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all three Mermaid flowcharts, with 6, 3 and 4 edges. Corrected the initial real-integral label, singularity/branch-cut step, and inner/outer circle labels to avoid crossing the cut. There is no standalone executable numerical program in the article."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links; checked every retained absolute and root-relative article target exists in the matching language and the eyecatch exists. Added matching-language Taylor/Euler links and retained or corrected the dedicated Cauchy-theorem and Laplace links. Read the NIST/MIT references for the source correction. Verified the updated keyhole labels/reference in local HTML and passed multilingual/HTTPS validators."
+        }
+      },
+      "summary": "Complete-body semantic comparison and correction against the revised Japanese source, including principal part, theorem hypotheses, all three examples, seventeen formulas, three diagrams and links.",
+      "languageSpecificFindings": "Used изолированная/устранимая/существенно особая точка, полюс, проколотая окрестность, главная часть as a sum and первообразная. Distinguished absolute convergence of the ordinary improper integral from главное значение Коши; specified индекс кривой (число обходов), branch choice and contour orientations. Corrected the real-integral flowchart and supplied small/large-circle bounds and both cut-side phase factors.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement full-body reading and do not prove the theorem.",
+        "All twelve translations are now locally reviewed; publication of batch 006 is not yet verified."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.10",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/3c58ce71ec6f7573804221d76158a0bd_MIT18_04S18_topic8.pdf",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf"
+      ],
+      "validation": "docs/translation-review/batch-006-validation.json"
+    },
+    "post/residue-theorem/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/residue-theorem/index.md",
+      "sourceHash": "e222307b5b5e6f3ac2bcd8295a9251be5c85681ef97d68f8bceb9813b97c1eee",
+      "translationHash": "90752301e690a78f6277f94e3877689a7c1ad2a9b9d824a62c2b5905dda12c45",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read and compared the complete title, description, introduction, singularities/Laurent/theorem sections, all rational/Fourier/keyhole examples and conclusion with the corrected Japanese source. Supplied contour/function/convergence hypotheses and removed blanket claims that complexification solves arbitrary real integrals."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used مبرهنة البواقي, دالة أصلية rather than an ambiguous inverse derivative, and قطع الفرع rather than an ambiguous subsidiary cut. Distinguished isolated/removable/pole/essential types and defined الجزء الرئيسي as a sum. Added عدد الالتفاف, positive orientation, absolute convergence versus قيمة كوشي الرئيسية, both phase factors and circle estimates. Removed the irrelevant Windows executable-path link attached to mathematical مسار; retained the dedicated Arabic Cauchy-theorem link and added Taylor/Euler/Laplace links."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all 17 display formulas after normalizing Res/留数 labels; read the Cauchy-theorem annotation separately. Verified positive piecewise C1 simple-contour hypotheses, finite interior isolated singularities, none on the curve, and winding-number qualification. Checked R>1/R>a bounds, absolute convergence, k>0 exponential decay, the Jordan estimate, and 0<a<1 keyhole endpoint convergence. On 0<arg z<2π, checked lower-side e^(-2πia), reverse orientation, residue e^(-πia), and the resulting phase equation and π/sin(πa). Source supplementary calculations check four semicircles, three small-circle pole integrals and five logarithmically transformed real integrals; numerical evidence is illustrative, not proof. Explicitly checked that the principal part is the sum of negative-power terms, not the coefficient collection."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all three Mermaid flowcharts, with 6, 3 and 4 edges. Corrected the initial real-integral label, singularity/branch-cut step, and inner/outer circle labels to avoid crossing the cut. There is no standalone executable numerical program in the article."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self-links; checked every retained absolute and root-relative article target exists in the matching language and the eyecatch exists. Added matching-language Taylor/Euler links and retained or corrected the dedicated Cauchy-theorem and Laplace links. Read the NIST/MIT references for the source correction. Verified the updated keyhole labels/reference in local HTML and passed multilingual/HTTPS validators."
+        }
+      },
+      "summary": "Complete-body semantic comparison and correction against the revised Japanese source, including principal part, theorem hypotheses, all three examples, seventeen formulas, three diagrams and links.",
+      "languageSpecificFindings": "Used مبرهنة البواقي, دالة أصلية rather than an ambiguous inverse derivative, and قطع الفرع rather than an ambiguous subsidiary cut. Distinguished isolated/removable/pole/essential types and defined الجزء الرئيسي as a sum. Added عدد الالتفاف, positive orientation, absolute convergence versus قيمة كوشي الرئيسية, both phase factors and circle estimates. Removed the irrelevant Windows executable-path link attached to mathematical مسار; retained the dedicated Arabic Cauchy-theorem link and added Taylor/Euler/Laplace links.",
+      "limitations": [
+        "AI technical/semantic review, not native-speaker human confirmation.",
+        "Numerical checks supplement full-body reading and do not prove the theorem.",
+        "All twelve translations are now locally reviewed; publication of batch 006 is not yet verified."
+      ],
+      "references": [
+        "https://dlmf.nist.gov/1.10",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/3c58ce71ec6f7573804221d76158a0bd_MIT18_04S18_topic8.pdf",
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/f69bc227ae476839819fb18e5b283072_MIT18_04S18_topic9.pdf"
+      ],
+      "validation": "docs/translation-review/batch-006-validation.json"
     }
   }
 }
