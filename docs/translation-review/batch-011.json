@@ -153,6 +153,108 @@
         "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
       ],
       "validation": "docs/translation-review/batch-011-validation.json"
+    },
+    "post/jwt-json-web-token-security-risks/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/jwt-json-web-token-security-risks/index.md",
+      "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
+      "translationHash": "4e4a18f2205bc604cfd352d4a5668807e9d5d4a25781552c8cfc63b92cdc9583",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Spanish article and complete corrected Japanese source, revised the full metadata and body, and independently reread the complete revision. Compared all eight sections, cookie transport versus token format, session consistency, signature/MAC/encryption and key roles, claims/profile and permission validation, individual versus key revocation and cache propagation, XSS/CSRF limits, public-client refresh constraints, one-time URL semantics and OAuth/OIDC token roles. Checked the labels, server roles and direction of all three flow diagrams. Structural checks supplement this full semantic reading."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished autenticación and autorización; firma/MAC and cifrado; clave privada/pública and secreto compartido; token de acceso, token de actualización and token de ID. Used declaraciones (claims), perfil, caducidad, revocación, introspección, concesión de autorización, rotación and reutilización. Compared all validity and offline-validation conditions and explicitly described public-client sender binding as cryptographic. Removed the unrelated CVE and categorical safety, performance, revocation and mandatory-refresh assertions. Matched each diagram actor, action and success/failure condition with the full source."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative derivations. The fifteen-minute lifetime is explicitly illustrative, not a normative requirement or measured security bound."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable authentication or token-verifier example is present. The three Mermaid flow descriptions were read semantically and their 8/6/6 directed edges matched with the source; local HTML contains them. No claims of penetration testing, library conformance, live authentication checks or benchmark results."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all nine primary-reference URLs and translated descriptions with the corrected source and documented reading scope. Verified /es/p/cross-site-scripting-xss-csrf-security/ and eyecatch. Updated local HTML contains the corrected translated terminology, JWS/JWE and public-client refresh discussion, and no unrelated CVE citation. Three graphs and 20 edges, inline code tokens, dates and hashes passed; twelve-bundle Hugo, multilingual 830 pages and HTTPS 1,532 HTML/41 XML passed. Publication pending."
+        }
+      },
+      "summary": "Full-body Spanish review of corrected JWT format, verification, revocation, browser and refresh-token explanations.",
+      "languageSpecificFindings": "Distinguished autenticación and autorización; firma/MAC and cifrado; clave privada/pública and secreto compartido; token de acceso, token de actualización and token de ID. Used declaraciones (claims), perfil, caducidad, revocación, introspección, concesión de autorización, rotación and reutilización. Compared all validity and offline-validation conditions and explicitly described public-client sender binding as cryptographic. Removed the unrelated CVE and categorical safety, performance, revocation and mandatory-refresh assertions. Matched each diagram actor, action and success/failure condition with the full source.",
+      "limitations": [
+        "AI editorial and technical review, not a human native-speaker confirmation.",
+        "Mermaid source topology and labels plus HTML output checked; live browser diagram rendering was not inspected.",
+        "No JWT library, authentication service, security penetration test or performance benchmark was executed.",
+        "Publication verification pending.",
+        "Seven other JWT translations remain unread and unreviewed."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-011-validation.json"
+    },
+    "post/jwt-json-web-token-security-risks/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/jwt-json-web-token-security-risks/index.md",
+      "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
+      "translationHash": "e38c0e657e6055636328dafe7fdf2759eb5480c0368cc3b05598f54ee14798c1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Korean article and complete corrected Japanese source, revised the full metadata and body, and independently reread the complete revision. Compared all eight sections, cookie transport versus token format, session consistency, signature/MAC/encryption and key roles, claims/profile and permission validation, individual versus key revocation and cache propagation, XSS/CSRF limits, public-client refresh constraints, one-time URL semantics and OAuth/OIDC token roles. Checked the labels, server roles and direction of all three flow diagrams. Structural checks supplement this full semantic reading."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished 인증 from 인가, 서명 from 암호화, 개인 키/공개 키 from 공유 비밀 키, 폐기 from 만료, and 액세스 토큰 from 리프레시 토큰 and ID 토큰. Used 클레임, 프로파일, 자체 포함형, 로컬 검증, 인가 부여, 송신자 제약, 로테이션, 재사용 and 동일 출처. Replaced the old implication that adding refresh state makes all API requests equivalent to stateful session lookup, and preserved generic versus profile-specific claim requirements, cache propagation, browser protections and public-client refresh rules. Removed the unrelated CVE and checked all three complete translated diagrams."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative derivations. The fifteen-minute lifetime is explicitly illustrative, not a normative requirement or measured security bound."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable authentication or token-verifier example is present. The three Mermaid flow descriptions were read semantically and their 8/6/6 directed edges matched with the source; local HTML contains them. No claims of penetration testing, library conformance, live authentication checks or benchmark results."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all nine primary-reference URLs and translated descriptions with the corrected source and documented reading scope. Verified /ko/p/cross-site-scripting-xss-csrf-security/ and eyecatch. Updated local HTML contains the corrected translated terminology, JWS/JWE and public-client refresh discussion, and no unrelated CVE citation. Three graphs and 20 edges, inline code tokens, dates and hashes passed; twelve-bundle Hugo, multilingual 830 pages and HTTPS 1,532 HTML/41 XML passed. Publication pending."
+        }
+      },
+      "summary": "Full-body Korean review of corrected JWT format, verification, revocation, browser and refresh-token explanations.",
+      "languageSpecificFindings": "Distinguished 인증 from 인가, 서명 from 암호화, 개인 키/공개 키 from 공유 비밀 키, 폐기 from 만료, and 액세스 토큰 from 리프레시 토큰 and ID 토큰. Used 클레임, 프로파일, 자체 포함형, 로컬 검증, 인가 부여, 송신자 제약, 로테이션, 재사용 and 동일 출처. Replaced the old implication that adding refresh state makes all API requests equivalent to stateful session lookup, and preserved generic versus profile-specific claim requirements, cache propagation, browser protections and public-client refresh rules. Removed the unrelated CVE and checked all three complete translated diagrams.",
+      "limitations": [
+        "AI editorial and technical review, not a human native-speaker confirmation.",
+        "Mermaid source topology and labels plus HTML output checked; live browser diagram rendering was not inspected.",
+        "No JWT library, authentication service, security penetration test or performance benchmark was executed.",
+        "Publication verification pending.",
+        "Seven other JWT translations remain unread and unreviewed."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "validation": "docs/translation-review/batch-011-validation.json"
     }
   }
 }

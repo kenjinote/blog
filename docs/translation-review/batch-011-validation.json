@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "validatedAt": "2026-10-24T19:42:32.683477+09:00",
+  "validatedAt": "2026-10-24T19:45:50.564523+09:00",
   "source": "post/jwt-json-web-token-security-risks/index.md",
   "sourceHash": "3403ae93a632773c6aebe91bbdbf37e6761eb6d2bafda493ae467fe79568e7ce",
-  "scope": "Corrected Japanese JWT source, English and both Chinese translations only; nine other JWT translations have not been reviewed.",
+  "scope": "Corrected Japanese JWT source, English, both Chinese, Spanish and Korean translations only; seven other JWT translations have not been reviewed.",
   "files": [
     {
       "language": "ja",
@@ -447,6 +447,230 @@
         "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
       ],
       "internalLink": "/zh-tw/p/cross-site-scripting-xss-csrf-security/",
+      "singleDates": true,
+      "inlineCodeTokensMatchSource": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "es",
+      "hash": "4e4a18f2205bc604cfd352d4a5668807e9d5d4a25781552c8cfc63b92cdc9583",
+      "fullBodyRead": true,
+      "displayMathCount": 0,
+      "executableCodeBlocks": 0,
+      "graphs": 3,
+      "edges": 20,
+      "topology": [
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ]
+      ],
+      "referenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "internalLink": "/es/p/cross-site-scripting-xss-csrf-security/",
+      "singleDates": true,
+      "inlineCodeTokensMatchSource": true,
+      "hugoRendered": true
+    },
+    {
+      "language": "ko",
+      "hash": "e38c0e657e6055636328dafe7fdf2759eb5480c0368cc3b05598f54ee14798c1",
+      "fullBodyRead": true,
+      "displayMathCount": 0,
+      "executableCodeBlocks": 0,
+      "graphs": 3,
+      "edges": 20,
+      "topology": [
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ],
+        [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "A"
+          ],
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "C"
+          ],
+          [
+            "C",
+            "A"
+          ]
+        ]
+      ],
+      "referenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc7519.html",
+        "https://www.rfc-editor.org/rfc/rfc8725.html",
+        "https://www.rfc-editor.org/rfc/rfc7009.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ],
+      "internalLink": "/ko/p/cross-site-scripting-xss-csrf-security/",
       "singleDates": true,
       "inlineCodeTokensMatchSource": true,
       "hugoRendered": true
