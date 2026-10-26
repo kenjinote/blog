@@ -780,7 +780,16 @@
     "remainingUnreviewedLanguages": 0,
     "validation": "docs/translation-review/batch-013-final-validation.json",
     "renderingValidation": "docs/translation-review/batch-013-rendering-validation.json",
-    "publicationPending": true,
-    "limitations": "AI review; no human/native fluency certification, browser visual audit or production cryptographic/security audit. Earlier stage snapshots and review entries remain unchanged."
+    "publicationPending": false,
+    "limitations": "AI review; no human/native fluency certification, browser visual audit or production cryptographic/security audit. Earlier stage snapshots and review entries remain unchanged.",
+    "publication": {
+      "checkedAt": "2026-10-27T08:35:00.329421+09:00",
+      "status": "verified",
+      "ciRun": 40417768600,
+      "deployedCommit": "75e93e631d7f26dc51fc725be71773ebb48b0392",
+      "evidence": "docs/translation-review/publication-013.json",
+      "pages": 182,
+      "passed": 182
+    }
   }
 }

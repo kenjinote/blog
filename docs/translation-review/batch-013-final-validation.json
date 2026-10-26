@@ -500,7 +500,7 @@
     "Mermaid source edges checked, not visual rendering."
   ],
   "buildPending": false,
-  "publicationPending": true,
+  "publicationPending": false,
   "finalRendering": {
     "checkedAt": "2026-10-27T08:08:38.892965+09:00",
     "status": "passed",
@@ -517,5 +517,21 @@
     "preFixDefect": "docs/translation-review/batch-013-rendering-audit.json",
     "regression": "scripts/test_math_rendering.py passes minified and unminified fixtures; added to deployment CI.",
     "warnings": "Isolated preview lacks search/archive/home JSON layouts; existing Portuguese UI translations are absent."
+  },
+  "publication": {
+    "checkedAt": "2026-10-27T08:35:00.326928+09:00",
+    "status": "verified",
+    "ciRun": 40417768600,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40417768600",
+    "ciConclusion": "success",
+    "deployedCommit": "75e93e631d7f26dc51fc725be71773ebb48b0392",
+    "evidence": "docs/translation-review/publication-013.json",
+    "scope": "Batches 001 through 013: all 168 reviewed translations and their fourteen Japanese source articles. Cryptography TeX checked against exact current source content after HTML entity decoding.",
+    "pages": 182,
+    "passed": 182,
+    "allPassed": true,
+    "firstAttemptPassed": true,
+    "cryptographyTeXExpressions": 671,
+    "limits": "Updated markers, decoded TeX, HTTP200,canonical/language/hreflang/sidebar checks; not a visual browser audit. Local batch014 ECC changes are outside this deployed revision."
   }
 }
