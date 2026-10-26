@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T08:40:15.519333+09:00",
+  "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+  "language": "de",
+  "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.de.md",
+  "hash": "89b50a45813a7a3e172419edfaf0f6b34885fb5c80bc5e4ee7dfceef898bf9d8",
+  "compiler": "WSL Ubuntu g++13.3.0 / Ubuntu Boost1.83; -std=c++17 -O2 -Wall -Wextra",
+  "fiveCxxBlocksConcatenatedCompiledAndRan": true,
+  "cppBlocks": 5,
+  "displayMath": 11,
+  "mermaidEdges": [
+    3,
+    6,
+    6
+  ],
+  "scalarInputs": [
+    0,
+    1,
+    2,
+    3,
+    7,
+    42,
+    65537,
+    340282366920938463463374607431768211456,
+    57896044618658097711785492504343953926634992332820282019728792003956564819968,
+    115792089237316195423570985008687907853269984665640564039457584007913129639935,
+    115792089237316195423570985008687907852837564279074904382605163141518161494336,
+    115792089237316195423570985008687907852837564279074904382605163141518161494337,
+    115792089237316195423570985008687907852837564279074904382605163141518161494338
+  ],
+  "scalarDifferentialCases": 13,
+  "invalidCasesRejected": 13,
+  "additionalFixtures": "Negative modular reduction/inverse,7*inverse(7),infinity,inverse-point,swap0/1.",
+  "mainStdout": "2G.x = c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5\n2G.y = 1ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a\nnG = infinity\n",
+  "fixtureStdoutSHA256": "714f05f5c5c497fdfe5c97c3abbfd500374ac394f218e2630c52e4f6dbde259e",
+  "renderedTeXExpressions": 59,
+  "metadataAndLinksChecked": true,
+  "sharedToyCurveEvidence": "batch-014-validation.json#toyCurve; identical core; not redundantly rerun per language.",
+  "build": {
+    "destination": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-15-bundles-ecc-de",
+    "hugo": "0.139.0 extended",
+    "minified": true,
+    "scope": "Fifteen isolated bundles; exact math/markers on this language page.",
+    "multilingualPages": 1050,
+    "https": {
+      "html": 1945,
+      "xml": 41
+    }
+  },
+  "buildPending": false,
+  "publicationPending": true,
+  "limitations": "AI semantic review recorded separately; no human native-language certification, visual browser test, timing/assembly or production-security audit."
+}

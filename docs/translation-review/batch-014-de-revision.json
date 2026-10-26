@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "startedAt": "2026-10-27T08:39:15.682890+09:00",
+  "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.de.md",
+  "originalHash": "fbf16939a5552fa797973a47f03e6d47bb3af03ed05d88e7fd57dd29ea2e1ed9",
+  "fullOriginalBodyAndMetadataRead": true,
+  "reviewRecorded": true,
+  "findings": [
+    "Inherited constant-time safety claims contradict branching cpp_int code and omit input checks.",
+    "Missing field/subgroup/scalar and affine-exception premises; ECDLP and performance overstated; ECDH authentication/validation/KDF absent.",
+    "Vollständige Gruppe suggests an unsupported completeness property.",
+    "Slope Lambda linked to AWS Lambda and Crypto/Euclide/Jacobian word fragments linked to unrelated or biographical content."
+  ],
+  "relatedTargetReadScope": "Read German AWS Lambda target title/metadata/introduction only; not counted as reviewed.",
+  "finalHash": "89b50a45813a7a3e172419edfaf0f6b34885fb5c80bc5e4ee7dfceef898bf9d8",
+  "fullCorrectedBodyAndMetadataReread": true,
+  "validation": "docs/translation-review/batch-014-de-validation.json",
+  "status": "Full review recorded; publication pending."
+}
