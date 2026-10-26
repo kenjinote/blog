@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T01:06:52.615393+09:00",
+  "reviewer": "Codex (AI)",
+  "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+  "revisions": [
+    {
+      "language": "zh-cn",
+      "path": "post/oauth2-oidc-authentication-authorization-difference/index.zh-cn.md",
+      "originalHash": "dcfad42f82ef18413a6e9d8ea63f76d7a2492caa6e0aaf88a0554796ad762f4a",
+      "originalMetadataAndFullBodyRead": true,
+      "correctedHash": "d8c2f5652d4fa6bbf60f025d96128aa3a25bb62f555a0e83563651e3692a957f",
+      "finalValidatedHash": "b75d9bd514c950ae68f262d7c4a568910b785b3c7141d053c73091c488110dc7"
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/oauth2-oidc-authentication-authorization-difference/index.zh-tw.md",
+      "originalHash": "222f7ee263e821c99694de9a8c772a299064f5fe8ba4b8fb2e7dc7d8a7520994",
+      "originalMetadataAndFullBodyRead": true,
+      "correctedHash": "3c54cc6c5d56cd05351c5f94f78d3d6815fd96ceaf942ceba4817aa2567601bc",
+      "finalValidatedHash": "a093b047914ebaf7303f095f160ab82866eacee16120db64a4449be40739d2a3"
+    }
+  ],
+  "status": "Corrected bodies written; independent full rereading, execution, build and ledger record pending.",
+  "finalVerification": {
+    "checkedAt": "2026-10-27T01:09:55.179351+09:00",
+    "status": "Full rereading, code/math/link and preview checks passed; both dated AI ledger records added. Publication pending."
+  }
+}

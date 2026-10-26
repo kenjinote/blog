@@ -1,8 +1,9 @@
 ---
-title: "完全解剖 OAuth 2.0 與 OIDC (OpenID Connect)（授權與驗證的差異）"
-description: "徹底解說 OAuth 2.0 與 OIDC 的機制、驗證與授權的差異、以及各種授權類型。"
+title: "OAuth 2.0 與 OIDC：身分驗證、授權與權杖驗證"
+description: "透過公式及 JavaScript、Python 範例，理解身分驗證與授權、OAuth 2.0 與 OIDC 的角色、授權碼與 PKCE，以及 ID 權杖驗證。"
 slug: "oauth2-oidc-authentication-authorization-difference"
 date: "2026-09-22T08:00:00+09:00"
+lastmod: "2026-10-27"
 image: "eyecatch.jpg"
 categories:
     - "security"
@@ -15,234 +16,264 @@ tags:
 
 ---
 
-在現代的 Web 應用程式與行動應用程式中，為了兼顧安全性與使用者體驗，不可或缺的技術便是 **OAuth 2.0** 與 **OIDC (OpenID Connect)**。然而，許多開發者常常混淆「驗證 (Authentication)」與「授權 (Authorization)」的差異，導致錯誤實作的案例層出不窮。
+OAuth 2.0 是為應用程式授予有限存取權限的授權框架。OpenID Connect（OIDC）在其基礎上，增加了向用戶端傳達終端使用者身分驗證結果的機制。
 
-本文將從 **OAuth 2.0** 與 **OIDC** 的基本概念開始，針對它們各自的角色、驗證與授權的明確差異、各種授權類型 (Grant Type)，以及伴隨 PKCE 的安全實作手法，進行非常詳細且全面的解說。
+本文區分身分驗證與授權、權杖的用途、授權碼與 PKCE，以及 ID 權杖的驗證。程式碼用來說明個別處理步驟，並非完整的登入實作。正式服務應使用符合自身需求的 OIDC 函式庫和提供者設定。
 
----
+## 1. 身分驗證與授權的差異
 
-## 1. 驗證 (Authentication) 與 授權 (Authorization) 的明確差異
+### 身分驗證（Authentication / AuthN）
 
-首先，讓我們來釐清最重要且最容易被混淆的「驗證」與「授權」的差異。
+身分驗證是根據所提供的證據，確認使用者或系統身分的程序。可以將它比作公司櫃台檢查員工證。
 
-### 驗證 (Authentication / AuthN)
-**驗證** 是指「確認前來存取的使用者是誰（是否為本人）」的過程。
-打個比方，這就像是去公司上班時，在櫃台出示「員工證」或「駕照」，以證明「我是這家公司的員工某某某」的行為。
+### 授權（Authorization / AuthZ）
 
-### 授權 (Authorization / AuthZ)
-另一方面，**授權** 是指「賦予特定人物（或系統）存取特定資源的權限」的過程。
-延續剛剛公司的例子，在完成身分確認（驗證）之後，「因為這個人是一般員工，所以不給予進入機房的權限（鑰匙），但給予進入自己所屬樓層的權限（鑰匙）」，進行這類存取控制的行為就相當於授權。
+授權決定某個主體可以執行哪些操作、存取哪些資源。確認某人是員工，並不代表此人可以進入所有機房。
 
-| 項目 | 驗證 (Authentication) | 授權 (Authorization) |
+| 項目 | 身分驗證 | 授權 |
 | --- | --- | --- |
-| 目的 | 確認「是誰」 | 決定「能做什麼」 |
-| 英文縮寫 | AuthN | AuthZ |
-| 代表性協定 | OpenID Connect (OIDC), SAML | OAuth 2.0, XACML |
-| 接收的憑證 | ID 權杖 (ID Token，包含使用者資訊) | 存取權杖 (Access Token，包含存取權限) |
+| 問題 | 是誰 | 允許做什麼 |
+| 縮寫 | AuthN | AuthZ |
+| 本文討論的機制 | OIDC 傳達身分驗證結果 | OAuth 2.0 授予有限存取權限 |
+| 權杖範例 | OIDC 的 ID 權杖 | OAuth 2.0 的存取權杖 |
 
-我們常常會聽到「利用 OAuth 來實作登入功能」這樣的說法，但嚴格來說，**OAuth 2.0** 是一個用於「授權」的協定，如果單獨用它來進行「驗證（登入）」，便屬於規範外的使用（偽驗證）。為了進行驗證，現代的標準做法是使用基於 OAuth 2.0 擴充而來的 **OIDC**。
+並非所有身分驗證方式都會發行 ID 權杖。OAuth 2.0 也不定義應用程式內部的全部存取控制。API 收到權杖後，仍須檢查存取特定資源及執行特定操作所需的權限。
 
----
+OAuth 2.0 本身沒有標準化用戶端如何確認終端使用者的身分驗證結果。不能僅因收到 OAuth 存取權杖，就認定使用者已登入；應使用 OIDC 等能夠驗證身分驗證結果的協定。
 
-## 2. 完全理解 OAuth 2.0
+## 2. OAuth 2.0 的角色與授權類型
 
-### 2.1 什麼是 OAuth 2.0？
-**OAuth 2.0** 是一個標準協定（RFC 6749），主要用於在不將使用者的密碼交給第三方應用程式的情況下，賦予該應用程式對使用者資料的有限存取權限（存取權杖）。
+### 2.1 有限存取權限
 
-### 2.2 OAuth 2.0 的 4 個角色
-要理解 OAuth 2.0 的流程，必須掌握以下 4 個角色：
+OAuth 2.0 允許用戶端代表資源擁有者，或以自身名義取得存取權杖。授權碼流程的重要特點之一，是能夠在不將使用者密碼交給用戶端的情況下委派存取權限。
 
-1. **資源擁有者 (Resource Owner)**：資料（資源）的擁有者。通常是指「使用者」。
-2. **用戶端 (Client)**：試圖存取使用者資料的應用程式。
-3. **授權伺服器 (Authorization Server)**：負責驗證使用者身分、確認存取權限，並發放存取權杖給用戶端的伺服器。
-4. **資源伺服器 (Resource Server)**：保存使用者資料，並負責驗證存取權杖以決定是否允許存取的伺服器。
+### 2.2 四種角色
 
-### 2.3 OAuth 2.0 的授權類型 (Grant Type)
+1. **資源擁有者（Resource Owner）**：能夠允許存取受保護資源的主體，不一定是人類使用者。
+2. **用戶端（Client）**：使用受保護資源的應用程式。
+3. **授權伺服器（Authorization Server）**：依所用流程檢查授權、用戶端身分驗證等條件，並發行權杖的伺服器。
+4. **資源伺服器（Resource Server）**：驗證權杖與權限，並提供受保護資源的伺服器。
 
-OAuth 2.0 根據用戶端的特性，定義了多種「授權類型（取得權杖的流程）」。
+### 2.3 主要授權類型
 
-#### 1. 授權碼授權 (Authorization Code Grant)
-這是最安全且最常被使用的流程。適用於像 Web 應用程式這樣能夠安全保存用戶端機密 (Client Secret)（擁有後端伺服器）的應用程式。
+#### 授權碼授權（Authorization Code Grant）
 
-#### 2. 隱含授權 (Implicit Grant)
-這是為 SPA (Single Page Application) 等無法安全保存用戶端機密的應用程式所設計的流程。然而，由於存取權杖會暴露在 URL 網址片段 (Fragment) 中，存在安全風險，因此 **目前已被棄用**。即使是 SPA，也應該使用後述的「授權碼授權 ＋ PKCE」。
+授權回應會傳回短期有效的授權碼，再透過權杖端點將其交換為存取權杖。能夠在伺服器上安全保存憑證的**機密用戶端**，以及 [SPA](/zh-tw/p/micro-frontends-architecture-spa-division/) 和原生應用程式等**公開用戶端**，都可以搭配 PKCE 使用此流程。將用戶端機密（client secret）嵌入已散布的應用程式或瀏覽器程式碼，無法確保其機密性。
 
-#### 3. 資源擁有者密碼憑證授權 (Resource Owner Password Credentials Grant)
-這是由用戶端直接接收使用者的帳號與密碼，並將其傳送給授權伺服器以取得權杖的流程。僅用於舊有系統轉移等極為受限的用途。基於安全性考量，**目前已被棄用**。
+#### 隱含授權（Implicit Grant）
 
-#### 4. 用戶端憑證授權 (Client Credentials Grant)
-這是在沒有使用者參與的情況下，用於系統間 (M2M: Machine to Machine) 通訊的流程。用戶端本身會扮演資源擁有者的角色。
+這種方式在授權回應中直接傳回存取權杖，存在權杖洩漏、注入和重放的風險。RFC 9700 要求用戶端在未滿足指定風險緩解條件時，不應使用此方式（SHOULD NOT）。新設定應選擇授權碼與 PKCE。不能將這項建議解讀為對所有 OIDC 回應類型完全相同的禁止。
 
-### 2.4 深入探討：授權碼流程 ＋ PKCE (Proof Key for Code Exchange)
+#### 資源擁有者密碼憑證授權（ROPC）
 
-在 [SPA](/zh-tw/p/micro-frontends-architecture-spa-division/) 或行動應用程式中，無法安全地隱藏用戶端機密。因此，為了防止授權碼攔截攻擊 (Authorization Code Interception Attack)，便導入了 **PKCE** (RFC 7636)。
+這種方式讓用戶端直接接收使用者密碼。雖然 RFC 6749 描述了它，但更新後的安全指引 RFC 9700 明確規定**不得使用（MUST NOT）**。不能將舊系統移轉當成建議使用的例外。
 
-PKCE 的運作機制如下：
-用戶端在發起授權請求之前，會先產生一個隨機字串 `code_verifier`，並將其雜湊化以建立 `code_challenge`。
+#### 用戶端憑證授權（Client Credentials Grant）
 
-以數學公式表示如下：
+機密用戶端透過自身的身分驗證取得權杖，用來存取自己控制的資源，或依與授權伺服器的事先約定，存取其他資源擁有者的資源。這通常用於沒有終端使用者互動的系統間通訊，但用戶端並不必然成為資源擁有者。
+
+### 2.4 授權碼與 PKCE
+
+PKCE（Proof Key for Code Exchange）將發起授權請求的用戶端，與交換授權碼的用戶端建立關聯，協助防範授權碼攔截與注入。公開用戶端必須使用 PKCE，機密用戶端也建議使用。它並不取代機密用戶端所需的用戶端身分驗證。
+
+用戶端須為每次授權交易產生新的秘密 `code_verifier`。RFC 7636 規定其長度為 43～128 個字元，字元來自英文字母、數字及 `-._~`，並建議至少具有 256 位元的熵。將密碼學安全的亂數產生器輸出的 32 位元組編碼為不帶填補的 Base64url，便可得到 43 個字元。
+
+使用 `S256` 時，挑戰值依下式計算。Base64url 不保留結尾的 `=` 填補。
+
 $$
-\text{code\_challenge} = \text{BASE64URL-ENCODE}( \text{SHA256}( \text{code\_verifier} ) )
+\text{code\_challenge}=\operatorname{BASE64URL}\!\left(\operatorname{SHA256}\!\left(\operatorname{ASCII}(\text{code\_verifier})\right)\right)
 $$
 
-#### 伴隨 PKCE 的授權碼流程循序圖
+授權請求傳送 `code_challenge` 和 `code_challenge_method=S256`，權杖請求則傳送為同一次交易保存的 `code_verifier`。伺服器依與授權碼一起記錄的方法和挑戰值進行驗證。不能因為 `S256` 失敗就退回 `plain`。
+
+#### 流程概覽
 
 ```mermaid
 sequenceDiagram
     autonumber
-    participant U as "使用者"
-    participant C as "用戶端 (SPA/App)"
-    participant AS as "授權伺服器"
+    participant U as "使用者 / 瀏覽器"
+    participant C as "用戶端"
+    participant AS as "授權伺服器 / OIDC 的 OP"
     participant RS as "資源伺服器"
-
-    Note over C: "產生 code_verifier 與 code_challenge"
-    C->>U: "要求登入與授權"
-    U->>AS: "授權請求 (包含 code_challenge)"
-    AS-->>U: "登入畫面 / 同意畫面"
-    U->>AS: "輸入驗證資訊 / 賦予權限"
-    AS-->>C: "發放授權碼 (Authorization Code)"
-    Note over C: "接收授權碼"
-    C->>AS: "權杖請求 (授權碼 + code_verifier)"
-    Note over AS: "驗證 code_verifier (SHA256 雜湊是否一致)"
-    AS-->>C: "發放存取權杖 (+ ID 權杖)"
-    C->>RS: "資源請求 (附帶存取權杖)"
-    RS-->>C: "回傳受保護的資源"
+    Note over C: "每次交易保存 verifier 與 state；OIDC 還保存 nonce"
+    C->>U: "重新導向至授權端點"
+    U->>AS: "授權請求：challenge 與 S256；OIDC 還包含 openid 和 nonce"
+    AS-->>U: "視需要要求身分驗證與同意"
+    U->>AS: "完成身分驗證與授權操作"
+    AS-->>U: "重新導向至已註冊的 redirect_uri，攜帶 code 和 state"
+    U->>C: "回呼：code 和 state"
+    Note over C: "核對交易、state 和預期發行者"
+    C->>AS: "使用 code、verifier 及必要的用戶端身分驗證進行交換"
+    Note over AS: "驗證授權碼、綁定關係與 PKCE"
+    AS-->>C: "傳回存取權杖；OIDC 還傳回 ID 權杖"
+    Note over C: "OIDC 驗證 ID 權杖與 nonce"
+    C->>RS: "使用存取權杖呼叫 API"
+    RS-->>C: "驗證權杖與權限後傳回資源"
 ```
 
-#### PKCE 產生實作範例 (JavaScript / Web Crypto API)
+這是成功流程的概覽。通訊須受 TLS 保護；實作還須處理重新導向位址驗證、授權碼的一次性使用、錯誤回應、交易期限，以及使用多個授權伺服器時的 mix-up 防護。
 
-以下是在 JavaScript 環境中產生 PKCE 所需參數的範例程式碼。
+#### PKCE 參數產生範例（JavaScript / Web Crypto API）
+
+以下瀏覽器函式須在 HTTPS 等安全環境（secure context）中執行。`generatePkce()` 只傳回參數，不傳送授權請求，也不儲存交易。不要將 verifier 寫入記錄或 URL；須將其綁定至發起請求的瀏覽器交易，並在交換完成或過期後捨棄。
 
 ```javascript
-// 產生隨機字串 (code_verifier)
+function base64url(bytes) {
+    return btoa(String.fromCharCode(...bytes))
+        .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
 function generateCodeVerifier() {
-    const array = new Uint32Array(56 / 2);
-    window.crypto.getRandomValues(array);
-    return Array.from(array, dec => ('0' + dec.toString(16)).substr(-2)).join('');
+    const bytes = new Uint8Array(32);
+    crypto.getRandomValues(bytes);
+    return base64url(bytes);
 }
 
-// 計算 SHA-256 雜湊，並進行 Base64URL 編碼 (code_challenge)
 async function generateCodeChallenge(codeVerifier) {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(codeVerifier);
-    const hashBuffer = await window.crypto.subtle.digest('SHA-256', data);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    const base64String = btoa(String.fromCharCode.apply(null, hashArray));
-    return base64String.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    if (typeof codeVerifier !== 'string' ||
+        codeVerifier.length < 43 || codeVerifier.length > 128 ||
+        /[^A-Za-z0-9._~-]/.test(codeVerifier)) {
+        throw new TypeError('Invalid PKCE verifier');
+    }
+    const data = new TextEncoder().encode(codeVerifier);
+    const digest = await crypto.subtle.digest('SHA-256', data);
+    return base64url(new Uint8Array(digest));
 }
 
-// 執行範例
-const codeVerifier = generateCodeVerifier();
-generateCodeChallenge(codeVerifier).then(codeChallenge => {
-    console.log("Code Verifier:", codeVerifier);
-    console.log("Code Challenge:", codeChallenge);
-});
+async function generatePkce() {
+    const code_verifier = generateCodeVerifier();
+    return {
+        code_verifier,
+        code_challenge: await generateCodeChallenge(code_verifier),
+        code_challenge_method: 'S256'
+    };
+}
 ```
 
----
+這裡對 32 個隨機位元組的所有位元進行編碼。舊範例將 28 個隨機 32 位元整數各自最後兩位十六進位數字串接起來，雖然取得了 896 位元，卻只保留 224 位元，因此已予以修正。
 
-## 3. 完全理解 OIDC (OpenID Connect)
+## 3. OIDC 與 ID 權杖
 
-### 3.1 什麼是 OIDC？
-**OpenID Connect (OIDC)** 是一個建構在 OAuth 2.0 之上的簡單且強大的身分識別層，專門用於 **驗證 (Authentication)**。OAuth 2.0 負責「賦予存取權限（授權）」，而 OIDC 則負責「確認使用者身分（驗證）」。
+### 3.1 在 OAuth 上增加身分驗證層
 
-透過使用 OIDC，用戶端可以從授權伺服器（在 OIDC 的世界中稱為 OpenID Provider，簡稱 OP）取得包含已驗證使用者身分資訊的 **ID 權杖 (ID Token)**。
+OIDC 用戶端（Relying Party）透過包含 `openid` 範圍的請求發起身分驗證，OpenID Provider（OP）透過 ID 權杖傳回驗證結果。使用者不一定每次都輸入密碼；OP 可以使用既有工作階段或其他身分驗證方式。
 
-### 3.2 ID 權杖與存取權杖的差異
-請務必不要混淆 OAuth 2.0 / OIDC 中這兩種權杖的角色。
+### 3.2 區分權杖用途
 
-- **存取權杖 (Access Token)**：用於存取 API（資源伺服器）的「鑰匙」。通常不需要解密其內容，只需將其附加在 API 請求的 Authorization 標頭中使用即可（通常是不透明權杖 / Opaque Token）。
-- **ID 權杖 (ID Token)**：記載了使用者驗證結果與屬性資訊（個人資料）的「名片」或「證明書」。必定會以 **JWT (JSON Web Token)** 格式發放，並由用戶端解碼以利用其中的使用者資訊。**絕對不能作為 API 的存取權限來使用。**
+- **存取權杖**：存取資源伺服器的憑證。格式可以是 JWT，也可以是不透明字串；OAuth 2.0 並未限定為一種格式。用戶端應依 API 規格傳送權杖，而不是自行假設其內部結構。
+- **ID 權杖**：提供給用戶端、表示身分驗證結果的 JWT。使用前須驗證簽章、宣告及其與身分驗證請求的關聯。僅解碼並不足夠，也不能將它當成 API 存取權杖的替代品傳送。
 
-### 3.3 JWT (JSON Web Token) 的結構與驗證
+### 3.3 JWT 的結構與簽章
 
-ID 權杖是以 JWT 格式來表示。JWT 是由 3 個以 `.` (點) 分隔的 Base64URL 編碼字串所組成。
+本節討論未加密的已簽署 JWT 的 **JWS Compact Serialization**，它由句點分隔的三個部分組成。JWT 也可以採用加密的 JWE 或巢狀結構，並非總是三個部分。
 
-1. **Header (標頭)**：指示權杖的類型（JWT）與簽章演算法（例如：RS256）。
-2. **Payload (內容)**：包含使用者資訊或權杖的中繼資料 (Claims)。
-3. **Signature (簽章)**：經過加密的簽章，用於證明權杖未被竄改。
+1. **Header（標頭）**：包含簽章演算法 `alg`、金鑰識別碼 `kid` 等欄位。
+2. **Payload（承載內容）**：包含發行者、對象、到期時間、主體等宣告。
+3. **Signature（簽章）**：由指定演算法產生的簽章或 MAC。本節的 RS256 使用 RSA 數位簽章。
 
-#### Payload 中包含的主要 Claim (宣告)
-- `iss` (Issuer)：權杖發行者 (OP 的 URL)
-- `sub` (Subject)：使用者的唯一識別碼
-- `aud` (Audience)：應接收此權杖的用戶端 (Client ID)
-- `exp` (Expiration Time)：權杖的有效期限
-- `iat` (Issued At)：權杖的發行時間
+標頭與承載內容只是經過 Base64url 編碼，簽章不會隱藏其內容。另見[加密、雜湊與簽章的差異]({{< relref "post/modern-cryptography-public-key-hash-signature/index.zh-tw.md" >}})。
 
-#### JWT 的簽章驗證邏輯
+#### ID 權杖的主要必要宣告
 
-接收到 ID 權杖的用戶端，必須驗證其簽章 (Signature)。如果使用的是 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 演算法（如 RS256），則需要取得 OP 公開的公鑰 (JWKS) 來進行驗證。
+- `iss`：OP 的發行者識別碼，須與預期發行者完全一致。
+- `sub`：在該發行者範圍內唯一且不會重新指派的使用者識別碼。使用多個 OP 時，須搭配 `iss` 識別使用者。
+- `aud`：ID 權杖的預期接收對象。須確認其中包含用戶端的 `client_id`，並拒絕不受信任的額外接收對象。
+- `exp`：到期時間，目前時間必須早於該時間。
+- `iat`：發行時間，可接受的權杖年齡等限制由用戶端原則決定。
 
-產生簽章的數學模型可以用以下公式表示：
+若身分驗證請求傳送了 `nonce`，就須要求該宣告存在並核對其值。要求額外宣告或 `max_age` 時，還須進行相應的驗證。
+
+#### RS256 的簽章輸入
+
+令 `H` 為 UTF-8 編碼的受保護標頭、`P` 為 UTF-8 編碼的承載內容、`B64u` 為不帶填補的 Base64url 編碼，則簽章輸入為以下位元組序列。`||` 表示串接。
+
 $$
-\text{Signature} = \text{Sign}_{\text{PrivateKey}}( \text{SHA256}( \text{Base64Url}(\text{Header}) + "." + \text{Base64Url}(\text{Payload}) ) )
+M=\operatorname{ASCII}\!\left(\operatorname{B64u}(H)\,||\,\texttt{.}\,||\,\operatorname{B64u}(P)\right),\qquad S=\operatorname{Sign}_{\mathrm{RS256}}(sk,M)
 $$
 
-驗證時，會使用公鑰進行解密，並確認雜湊值是否一致。
+RS256 使用 RSASSA-PKCS1-v1_5 與 SHA-256。雜湊處理屬於該簽章演算法的一部分，上式沒有在外部再加一層雜湊。權杖的第三部分是 `B64u(S)`。應使用可信任 OP 的公開金鑰與指定演算法驗證，不能將簽章驗證一概描述為「用公開金鑰解密」。
 
-#### ID 權杖 (JWT) 的解碼範例 (Python)
+不要讓未經驗證的權杖決定允許的演算法或金鑰來源。須使用從已驗證的 OP 設定或 Discovery 取得的可信任 JWKS，並處理金鑰輪替與快取。`kid` 用來在該可信任金鑰集合中選取金鑰，而不是從權杖提供的任意 URL 取得金鑰。
 
-以下是使用 Python 的 `PyJWT` 函式庫來驗證並解碼 ID 權杖的範例。
+#### Python 驗證步驟範例
+
+以下 PyJWT 函式僅支援限定設定：**RS256、未加密、單一字串形式的 audience，而且請求已傳送 nonce**。呼叫端提供的 `signing_key` 必須是來自可信任 OP 的 JWKS 的公開金鑰。必要宣告不僅須通過值的驗證，也必須存在。若包含 `azp`，本例要求其等於 `client_id`。
+
+這個函式本身並不完成登入。呼叫端須驗證與管理回呼和起始交易的關聯、state、授權碼交換、預期發行者，以及 nonce 的一次性使用。多個 audience、加密、額外身分驗證要求、`max_age` 和 `acr` 不在本例範圍內。
 
 ```python
+import hmac
+import math
 import jwt
-from jwt import PyJWKClient
 
-# 發行者的 JWKS (公鑰集) 端點
-jwks_url = "https://example.com/.well-known/jwks.json"
-jwk_client = PyJWKClient(jwks_url)
 
-id_token = "eyJhbGciOiJSUzI1NiIs..." # 取得的 ID 權杖
-client_id = "your_client_id"
-issuer = "https://example.com"
-
-try:
-    # 從權杖的標頭中找出使用的金鑰 (kid)，並取得公鑰
-    signing_key = jwk_client.get_signing_key_from_jwt(id_token)
-    
-    # 同時進行簽章驗證，以及 aud (Audience)、iss (Issuer)、exp (有效期限) 的驗證
-    decoded_payload = jwt.decode(
+def verify_id_token(id_token, signing_key, *, issuer, client_id, expected_nonce):
+    if not isinstance(expected_nonce, str) or not expected_nonce:
+        raise ValueError('A nonce from the stored transaction is required')
+    claims = jwt.decode(
         id_token,
-        signing_key.key,
-        algorithms=["RS256"],
+        signing_key,
+        algorithms=['RS256'],
         audience=client_id,
-        issuer=issuer
+        issuer=issuer,
+        options={
+            'require': ['iss', 'sub', 'aud', 'exp', 'iat', 'nonce'],
+            'strict_aud': True,
+        },
     )
-    print("驗證成功。使用者 ID:", decoded_payload["sub"])
-    print("使用者名稱:", decoded_payload.get("name"))
-
-except jwt.ExpiredSignatureError:
-    print("錯誤: 權杖的有效期限已過。")
-except jwt.InvalidTokenError as e:
-    print(f"錯誤: 無效的權杖。詳細資訊: {e}")
+    for name in ('exp', 'iat'):
+        value = claims[name]
+        if (isinstance(value, bool) or not isinstance(value, (int, float))
+                or (isinstance(value, float) and not math.isfinite(value))):
+            raise jwt.InvalidTokenError('Invalid NumericDate')
+    subject = claims['sub']
+    if (not isinstance(subject, str) or not subject or not subject.isascii()
+            or len(subject) > 255):
+        raise jwt.InvalidTokenError('Invalid subject')
+    nonce = claims['nonce']
+    if (not isinstance(nonce, str) or not hmac.compare_digest(
+            nonce.encode('utf-8'), expected_nonce.encode('utf-8'))):
+        raise jwt.InvalidTokenError('Nonce mismatch')
+    if 'azp' in claims and claims['azp'] != client_id:
+        raise jwt.InvalidTokenError('Authorized party mismatch')
+    return claims
 ```
 
----
+傳回值是在上述範圍內驗證後的宣告。不要僅因簽章正確就顯示「身分驗證成功」，也不要使用未經驗證的姓名或電子郵件地址連結帳號。
 
-## 4. 安全性與最佳實踐
+## 4. 安全注意事項
 
-在實作 OAuth 2.0 與 OIDC 時，必須考慮許多安全風險。
+### 4.1 state、nonce、PKCE 與 CSRF
 
-### 4.1 使用 State 參數防範 [CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)
-在授權請求時包含一個無法預測的 `state` 參數，並在回呼 (Callback) 時驗證其是否一致，藉此防止跨站請求偽造 ([CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)) 攻擊。
+使用 `state` 時，須將不可預測的值安全地綁定至發起請求的瀏覽器交易；在回呼時檢查值是否相符、是否過期、是否尚未使用，然後將其標記為已使用。僅字串相符並不能防止所有類型的 [CSRF]({{< relref "post/cross-site-scripting-xss-csrf-security/index.zh-tw.md" >}})。
 
-### 4.2 權杖的壽命與計算
-為了維持安全性，最佳實踐是將存取權杖的壽命（`exp`）設定得較短（例如：15 分鐘至 1 小時）。如果有效期限過期，則使用更新權杖 (Refresh Token) 來取得新的存取權杖。
+RFC 9700 也討論了確認伺服器支援 PKCE 後依賴其 CSRF 保護，以及使用 OIDC nonce 的情況。這些保護仍須正確驗證，並與每次交易綁定。`state`、`nonce` 與 PKCE 的角色不同；使用固定值或省略比較，都無法提供預期保護。涉及多個授權伺服器時，還須另外防範 mix-up 攻擊。
 
-判斷權杖是否有效的依據如下列不等式。在此，令現在時間為 $ T_{now} $、權杖發行時間為 $ T_{iat} $、有效期間為 $ D_{lifetime} $。
+### 4.2 到期時間與更新權杖
+
+縮短存取權杖的有效期間，是限制遭竊權杖可用時間的一種手段。15 分鐘之類的值是設計範例，並非普遍的強制要求。檢查已簽署 JWT 的 `exp` 時，到期條件如下：
 
 $$
-T_{now} < T_{iat} + D_{lifetime} \quad (\text{或者簡單地表示為 } T_{now} < T_{exp})
+T_{\mathrm{now}}<T_{\mathrm{exp}},\qquad T_{\mathrm{exp}}=T_{\mathrm{iat}}+D_{\mathrm{lifetime}}\ \text{僅在如此設定時}\ T_{\mathrm{now}}<T_{\mathrm{iat}}+D_{\mathrm{lifetime}}
 $$
 
-### 4.3 選擇 OIDC 的流程
-無論是 Web 應用程式還是行動應用程式，目前最推薦的流程都是 **授權碼流程 ＋ PKCE**。由於 Implicit 流程已經不再被視為安全，因此絕對不要在新的開發中使用它。
+這僅檢查到期條件，不能證明權杖整體有效或具有存取權限。還須驗證演算法、金鑰、發行者、接收對象，以及適用時的 `nbf`、撤銷狀態和與身分驗證請求的關聯。若允許一定的時鐘偏差，應明確管理其範圍。
+
+更新權杖的發行是選擇性的。未發行時，用戶端可能需要重新發起授權交易。對發行給公開用戶端的更新權杖，RFC 9700 要求採用傳送者約束（sender constraints）或輪替。撤銷更新權杖，不一定會立即使先前發行的存取權杖失效。
+
+### 4.3 選擇流程與實作
+
+對於使用者參與的 Web、SPA 和原生應用程式，以授權碼與 PKCE 為基礎，再依用戶端類型、權杖儲存位置、提供者支援情況和威脅模型選擇設定。不要將同一流程一律套用到 M2M 用戶端憑證等其他用途。
 
 ## 總結
 
-本文深入探討了 **OAuth 2.0** 與 **OIDC** 的差異，以及「授權」與「驗證」這兩個核心概念的不同之處。
-- **OAuth 2.0** 是一個「授權（賦予權限）」的框架。
-- **OIDC** 是建構其上的「驗證（身分確認）」協定。
-- 在現代的應用程式中，使用 **授權碼流程 ＋ PKCE** 是安全性上的業界標準。
+OAuth 2.0 存取權杖用於存取資源，OIDC ID 權杖則作為提供給用戶端的身分驗證結果進行驗證。須逐項確認授權碼與 PKCE 的綁定、簽章、必要宣告、nonce，以及回呼與起始交易的關聯。
 
-正確理解這些規範與機制，並實作適當的流程與驗證邏輯，來實現安全且堅固的身分識別管理吧。
+## 參考規範
+
+- [RFC 6749：OAuth 2.0](https://www.rfc-editor.org/rfc/rfc6749.html)（角色、權杖與用戶端憑證；更新後的安全指引見 RFC 9700）
+- [RFC 7636：PKCE](https://www.rfc-editor.org/rfc/rfc7636.html)（第 4 節、第 7.1 節及附錄 B）
+- [RFC 9700：OAuth 2.0 安全最佳實務](https://www.rfc-editor.org/rfc/rfc9700.html)（第 2.1、2.2.2、2.4 節）
+- [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html)（第 2、3.1.3.7、5.7 節）
+- [RFC 7515：JWS](https://www.rfc-editor.org/rfc/rfc7515.html)（第 3.1、5.1 節）
+- [PyJWT API](https://pyjwt.readthedocs.io/en/stable/api.html)（允許的演算法、必要宣告與 audience 驗證）

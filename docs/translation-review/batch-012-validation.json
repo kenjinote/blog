@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "checkedAt": "2026-10-27T01:01:57.635757+09:00",
+  "checkedAt": "2026-10-27T01:08:05.783567+09:00",
   "reviewer": "Codex (AI)",
-  "scope": "Corrected Japanese source and English only; no other translation reviewed.",
+  "scope": "Japanese source, English, and the explicitly listed translations in files; all other languages unreviewed.",
   "runtime": {
     "node": "v22.14.0",
     "pyjwt": "2.15.1",
@@ -570,6 +570,566 @@
         "jwsSigningInput": "Verified an RS256 compact JWT using cryptography over ASCII(encoded header + dot + encoded payload). Verification over an extra SHA-256 digest failed as expected.",
         "expiration": "Compared before/at/after expiry with iat=100, lifetime=30, exp=130; checked a counterexample when exp is not iat+lifetime. Expiry is not overall validity."
       }
+    },
+    {
+      "language": "zh-cn",
+      "path": "post/oauth2-oidc-authentication-authorization-difference/index.zh-cn.md",
+      "hash": "b75d9bd514c950ae68f262d7c4a568910b785b3c7141d053c73091c488110dc7",
+      "metadataAndFullBodyRead": true,
+      "displayMathCount": 3,
+      "javascriptBlocks": 1,
+      "pythonBlocks": 1,
+      "mermaidGraphs": 1,
+      "directedEdges": [
+        [
+          "C",
+          "->>",
+          "U"
+        ],
+        [
+          "U",
+          "->>",
+          "AS"
+        ],
+        [
+          "AS",
+          "-->>",
+          "U"
+        ],
+        [
+          "U",
+          "->>",
+          "AS"
+        ],
+        [
+          "AS",
+          "-->>",
+          "U"
+        ],
+        [
+          "U",
+          "->>",
+          "C"
+        ],
+        [
+          "C",
+          "->>",
+          "AS"
+        ],
+        [
+          "AS",
+          "-->>",
+          "C"
+        ],
+        [
+          "C",
+          "->>",
+          "RS"
+        ],
+        [
+          "RS",
+          "-->>",
+          "C"
+        ]
+      ],
+      "primaryReferenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://www.rfc-editor.org/rfc/rfc7636.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://www.rfc-editor.org/rfc/rfc7515.html",
+        "https://pyjwt.readthedocs.io/en/stable/api.html"
+      ],
+      "pkce": {
+        "randomBytesPerVerifier": 32,
+        "encodedBits": 256,
+        "verifierLength": 43,
+        "byteEncodingAndHighBitRetention": true,
+        "rfcAppendixBVector": true,
+        "validBoundaryLengths": [
+          43,
+          128
+        ],
+        "invalidInputsRejected": 12,
+        "parameterBindingPassed": true
+      },
+      "idTokenCases": [
+        {
+          "case": "baseline",
+          "accepted": true,
+          "exception": null
+        },
+        {
+          "case": "matching_azp",
+          "accepted": true,
+          "exception": null
+        },
+        {
+          "case": "fractional_numeric_dates",
+          "accepted": true,
+          "exception": null
+        },
+        {
+          "case": "missing_iss",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "missing_sub",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "missing_aud",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "missing_exp",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "missing_iat",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "missing_nonce",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "wrong_issuer",
+          "accepted": false,
+          "exception": "InvalidIssuerError"
+        },
+        {
+          "case": "issuer_trailing_slash",
+          "accepted": false,
+          "exception": "InvalidIssuerError"
+        },
+        {
+          "case": "wrong_audience",
+          "accepted": false,
+          "exception": "InvalidAudienceError"
+        },
+        {
+          "case": "extra_audience",
+          "accepted": false,
+          "exception": "InvalidAudienceError"
+        },
+        {
+          "case": "single_array_audience_outside_example_profile",
+          "accepted": false,
+          "exception": "InvalidAudienceError"
+        },
+        {
+          "case": "wrong_nonce",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "empty_nonce",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "numeric_nonce",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "null_nonce",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "wrong_azp",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "null_azp",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "expired",
+          "accepted": false,
+          "exception": "ExpiredSignatureError"
+        },
+        {
+          "case": "future_iat",
+          "accepted": false,
+          "exception": "ImmatureSignatureError"
+        },
+        {
+          "case": "future_nbf",
+          "accepted": false,
+          "exception": "ImmatureSignatureError"
+        },
+        {
+          "case": "string_exp",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "string_iat",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "boolean_iat",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "null_exp",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "null_iat",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "empty_sub",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "unicode_sub",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "long_sub",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "numeric_sub",
+          "accepted": false,
+          "exception": "InvalidSubjectError"
+        },
+        {
+          "case": "null_sub",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "wrong_signature",
+          "accepted": false,
+          "exception": "InvalidSignatureError"
+        },
+        {
+          "case": "invalid_expected_nonce_''",
+          "accepted": false,
+          "exception": "ValueError"
+        },
+        {
+          "case": "invalid_expected_nonce_None",
+          "accepted": false,
+          "exception": "ValueError"
+        },
+        {
+          "case": "invalid_expected_nonce_123",
+          "accepted": false,
+          "exception": "ValueError"
+        },
+        {
+          "case": "unsigned_none",
+          "accepted": false,
+          "exception": "InvalidAlgorithmError"
+        }
+      ],
+      "hugoRendered": true,
+      "mathematicsValidation": {
+        "formulaComparison": "All three formulas compared with the source, including translated conditional-expiry text. First two formulas exactly match; only the human-language condition differs in the third.",
+        "execution": "The extracted JavaScript passed the RFC PKCE vector. Identical JWS input and expiry formulas use the independent cryptography and boundary/counterexample checks recorded for the source and English."
+      }
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/oauth2-oidc-authentication-authorization-difference/index.zh-tw.md",
+      "hash": "a093b047914ebaf7303f095f160ab82866eacee16120db64a4449be40739d2a3",
+      "metadataAndFullBodyRead": true,
+      "displayMathCount": 3,
+      "javascriptBlocks": 1,
+      "pythonBlocks": 1,
+      "mermaidGraphs": 1,
+      "directedEdges": [
+        [
+          "C",
+          "->>",
+          "U"
+        ],
+        [
+          "U",
+          "->>",
+          "AS"
+        ],
+        [
+          "AS",
+          "-->>",
+          "U"
+        ],
+        [
+          "U",
+          "->>",
+          "AS"
+        ],
+        [
+          "AS",
+          "-->>",
+          "U"
+        ],
+        [
+          "U",
+          "->>",
+          "C"
+        ],
+        [
+          "C",
+          "->>",
+          "AS"
+        ],
+        [
+          "AS",
+          "-->>",
+          "C"
+        ],
+        [
+          "C",
+          "->>",
+          "RS"
+        ],
+        [
+          "RS",
+          "-->>",
+          "C"
+        ]
+      ],
+      "primaryReferenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://www.rfc-editor.org/rfc/rfc7636.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://www.rfc-editor.org/rfc/rfc7515.html",
+        "https://pyjwt.readthedocs.io/en/stable/api.html"
+      ],
+      "pkce": {
+        "randomBytesPerVerifier": 32,
+        "encodedBits": 256,
+        "verifierLength": 43,
+        "byteEncodingAndHighBitRetention": true,
+        "rfcAppendixBVector": true,
+        "validBoundaryLengths": [
+          43,
+          128
+        ],
+        "invalidInputsRejected": 12,
+        "parameterBindingPassed": true
+      },
+      "idTokenCases": [
+        {
+          "case": "baseline",
+          "accepted": true,
+          "exception": null
+        },
+        {
+          "case": "matching_azp",
+          "accepted": true,
+          "exception": null
+        },
+        {
+          "case": "fractional_numeric_dates",
+          "accepted": true,
+          "exception": null
+        },
+        {
+          "case": "missing_iss",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "missing_sub",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "missing_aud",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "missing_exp",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "missing_iat",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "missing_nonce",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "wrong_issuer",
+          "accepted": false,
+          "exception": "InvalidIssuerError"
+        },
+        {
+          "case": "issuer_trailing_slash",
+          "accepted": false,
+          "exception": "InvalidIssuerError"
+        },
+        {
+          "case": "wrong_audience",
+          "accepted": false,
+          "exception": "InvalidAudienceError"
+        },
+        {
+          "case": "extra_audience",
+          "accepted": false,
+          "exception": "InvalidAudienceError"
+        },
+        {
+          "case": "single_array_audience_outside_example_profile",
+          "accepted": false,
+          "exception": "InvalidAudienceError"
+        },
+        {
+          "case": "wrong_nonce",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "empty_nonce",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "numeric_nonce",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "null_nonce",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "wrong_azp",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "null_azp",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "expired",
+          "accepted": false,
+          "exception": "ExpiredSignatureError"
+        },
+        {
+          "case": "future_iat",
+          "accepted": false,
+          "exception": "ImmatureSignatureError"
+        },
+        {
+          "case": "future_nbf",
+          "accepted": false,
+          "exception": "ImmatureSignatureError"
+        },
+        {
+          "case": "string_exp",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "string_iat",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "boolean_iat",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "null_exp",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "null_iat",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "empty_sub",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "unicode_sub",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "long_sub",
+          "accepted": false,
+          "exception": "InvalidTokenError"
+        },
+        {
+          "case": "numeric_sub",
+          "accepted": false,
+          "exception": "InvalidSubjectError"
+        },
+        {
+          "case": "null_sub",
+          "accepted": false,
+          "exception": "MissingRequiredClaimError"
+        },
+        {
+          "case": "wrong_signature",
+          "accepted": false,
+          "exception": "InvalidSignatureError"
+        },
+        {
+          "case": "invalid_expected_nonce_''",
+          "accepted": false,
+          "exception": "ValueError"
+        },
+        {
+          "case": "invalid_expected_nonce_None",
+          "accepted": false,
+          "exception": "ValueError"
+        },
+        {
+          "case": "invalid_expected_nonce_123",
+          "accepted": false,
+          "exception": "ValueError"
+        },
+        {
+          "case": "unsigned_none",
+          "accepted": false,
+          "exception": "InvalidAlgorithmError"
+        }
+      ],
+      "hugoRendered": true,
+      "mathematicsValidation": {
+        "formulaComparison": "All three formulas compared with the source, including translated conditional-expiry text. First two formulas exactly match; only the human-language condition differs in the third.",
+        "execution": "The extracted JavaScript passed the RFC PKCE vector. Identical JWS input and expiry formulas use the independent cryptography and boundary/counterexample checks recorded for the source and English."
+      }
     }
   ],
   "publication": {
@@ -597,6 +1157,16 @@
         "xml": 41
       },
       "notes": "Expected isolated-preview warnings for absent search/archive/home JSON and pre-existing Portuguese UI translations."
+    },
+    {
+      "status": "passed",
+      "scope": "Fourteen-bundle preview with corrected Japanese, English, Simplified Chinese and Traditional Chinese OAuth/OIDC; includes unreviewed cryptography dependency",
+      "destination": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-14-bundles-oauth-chinese",
+      "multilingualPages": 973,
+      "https": {
+        "html": 1804,
+        "xml": 41
+      }
     }
   ]
 }
