@@ -1595,6 +1595,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-013.json",
       "evidenceHash": "4d158fb9bcd0b0f5967a763e54c72a02e1f2e19ac7dffa832a80d2b163fbe234"
+    },
+    "post/modern-cryptography-public-key-hash-signature/index.es.md": {
+      "source": "post/modern-cryptography-public-key-hash-signature/index.md",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6ba14931d98075ddb9e7231683eccefe7ba568eceb530fd04faeacada6d9d6f7",
+      "translationHash": "cb63a37c2ee18c0e1219bf1571eed5e0044802bada082827a035074416dd69dd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-013.json",
+      "evidenceHash": "0937df44508077b04630d5594019d0b1964577d5a1fe9c589809e9edd95e1062"
     }
   }
 }
