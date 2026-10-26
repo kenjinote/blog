@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T07:30:04.241090+09:00",
+  "runtime": {
+    "python": "3.12.14",
+    "cryptography": "50.0.2"
+  },
+  "files": [
+    {
+      "language": "ja",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.md",
+      "hash": "6ba14931d98075ddb9e7231683eccefe7ba568eceb530fd04faeacada6d9d6f7",
+      "standalonePythonBlocksPassed": 3,
+      "localizedMessageByteLengths": [
+        64,
+        60,
+        55
+      ],
+      "oaepRoundtripPayloads": 5,
+      "oaepInvalidCasesRejected": 4,
+      "hashExampleDigestsMatched": 2,
+      "hashStreamingCasesMatched": 14,
+      "abcKnownDigestsMatched": 2,
+      "pssValidMessages": 3,
+      "pssInvalidCasesRejected": 6,
+      "separateEncryptionAndSigningKeys": true,
+      "displayMath": 10,
+      "mermaidEdgeCounts": [
+        7,
+        8,
+        5
+      ],
+      "primaryReferenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc8017.html",
+        "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+        "https://www.rfc-editor.org/rfc/rfc6090.html",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+        "https://csrc.nist.gov/pubs/fips/186-5/final",
+        "https://www.rfc-editor.org/rfc/rfc5280.html",
+        "https://www.rfc-editor.org/rfc/rfc9525.html",
+        "https://www.rfc-editor.org/rfc/rfc8446.html"
+      ],
+      "hugoRendered": true
+    },
+    {
+      "language": "en",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.en.md",
+      "hash": "1f43e010a51f03626e1e3971e1c1322b48c0f057e870153a5f145bb5a2ce02a8",
+      "standalonePythonBlocksPassed": 3,
+      "localizedMessageByteLengths": [
+        64,
+        60,
+        55
+      ],
+      "oaepRoundtripPayloads": 5,
+      "oaepInvalidCasesRejected": 4,
+      "hashExampleDigestsMatched": 2,
+      "hashStreamingCasesMatched": 14,
+      "abcKnownDigestsMatched": 2,
+      "pssValidMessages": 3,
+      "pssInvalidCasesRejected": 6,
+      "separateEncryptionAndSigningKeys": true,
+      "displayMath": 10,
+      "mermaidEdgeCounts": [
+        7,
+        8,
+        5
+      ],
+      "primaryReferenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc8017.html",
+        "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+        "https://www.rfc-editor.org/rfc/rfc6090.html",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+        "https://csrc.nist.gov/pubs/fips/186-5/final",
+        "https://www.rfc-editor.org/rfc/rfc5280.html",
+        "https://www.rfc-editor.org/rfc/rfc9525.html",
+        "https://www.rfc-editor.org/rfc/rfc8446.html"
+      ],
+      "hugoRendered": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.zh-cn.md",
+      "hash": "45a6585ffb48032e19b60e398d0d5abd1454edd5cbe6ad0c868d9b16307fbfd2",
+      "standalonePythonBlocksPassed": 3,
+      "localizedMessageByteLengths": [
+        64,
+        60,
+        55
+      ],
+      "oaepRoundtripPayloads": 5,
+      "oaepInvalidCasesRejected": 4,
+      "hashExampleDigestsMatched": 2,
+      "hashStreamingCasesMatched": 14,
+      "abcKnownDigestsMatched": 2,
+      "pssValidMessages": 3,
+      "pssInvalidCasesRejected": 6,
+      "separateEncryptionAndSigningKeys": true,
+      "displayMath": 10,
+      "mermaidEdgeCounts": [
+        7,
+        8,
+        5
+      ],
+      "primaryReferenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc8017.html",
+        "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+        "https://www.rfc-editor.org/rfc/rfc6090.html",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+        "https://csrc.nist.gov/pubs/fips/186-5/final",
+        "https://www.rfc-editor.org/rfc/rfc5280.html",
+        "https://www.rfc-editor.org/rfc/rfc9525.html",
+        "https://www.rfc-editor.org/rfc/rfc8446.html"
+      ],
+      "hugoRendered": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.zh-tw.md",
+      "hash": "885c3a6b5ae522d8142d11d929a6513b1abfc5e1b43fa5d23333b6d13794a1c3",
+      "standalonePythonBlocksPassed": 3,
+      "localizedMessageByteLengths": [
+        64,
+        60,
+        55
+      ],
+      "oaepRoundtripPayloads": 5,
+      "oaepInvalidCasesRejected": 4,
+      "hashExampleDigestsMatched": 2,
+      "hashStreamingCasesMatched": 14,
+      "abcKnownDigestsMatched": 2,
+      "pssValidMessages": 3,
+      "pssInvalidCasesRejected": 6,
+      "separateEncryptionAndSigningKeys": true,
+      "displayMath": 10,
+      "mermaidEdgeCounts": [
+        7,
+        8,
+        5
+      ],
+      "primaryReferenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc8017.html",
+        "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+        "https://www.rfc-editor.org/rfc/rfc6090.html",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+        "https://csrc.nist.gov/pubs/fips/186-5/final",
+        "https://www.rfc-editor.org/rfc/rfc5280.html",
+        "https://www.rfc-editor.org/rfc/rfc9525.html",
+        "https://www.rfc-editor.org/rfc/rfc8446.html"
+      ],
+      "hugoRendered": true
+    },
+    {
+      "language": "es",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.es.md",
+      "hash": "cb63a37c2ee18c0e1219bf1571eed5e0044802bada082827a035074416dd69dd",
+      "standalonePythonBlocksPassed": 3,
+      "localizedMessageByteLengths": [
+        64,
+        60,
+        55
+      ],
+      "oaepRoundtripPayloads": 5,
+      "oaepInvalidCasesRejected": 4,
+      "hashExampleDigestsMatched": 2,
+      "hashStreamingCasesMatched": 14,
+      "abcKnownDigestsMatched": 2,
+      "pssValidMessages": 3,
+      "pssInvalidCasesRejected": 6,
+      "separateEncryptionAndSigningKeys": true,
+      "displayMath": 10,
+      "mermaidEdgeCounts": [
+        7,
+        8,
+        5
+      ],
+      "primaryReferenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc8017.html",
+        "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+        "https://www.rfc-editor.org/rfc/rfc6090.html",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+        "https://csrc.nist.gov/pubs/fips/186-5/final",
+        "https://www.rfc-editor.org/rfc/rfc5280.html",
+        "https://www.rfc-editor.org/rfc/rfc9525.html",
+        "https://www.rfc-editor.org/rfc/rfc8446.html"
+      ],
+      "hugoRendered": true
+    },
+    {
+      "language": "ko",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.ko.md",
+      "hash": "cf75ebc00d6ccfeb2713bd0d4e39181b9ce44ee9b0fbbcf946cca3e57ea6510d",
+      "standalonePythonBlocksPassed": 3,
+      "localizedMessageByteLengths": [
+        83,
+        70,
+        71
+      ],
+      "oaepRoundtripPayloads": 5,
+      "oaepInvalidCasesRejected": 4,
+      "hashExampleDigestsMatched": 2,
+      "hashStreamingCasesMatched": 14,
+      "abcKnownDigestsMatched": 2,
+      "pssValidMessages": 3,
+      "pssInvalidCasesRejected": 6,
+      "separateEncryptionAndSigningKeys": true,
+      "displayMath": 10,
+      "mermaidEdgeCounts": [
+        7,
+        8,
+        5
+      ],
+      "primaryReferenceUrls": [
+        "https://www.rfc-editor.org/rfc/rfc8017.html",
+        "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+        "https://www.rfc-editor.org/rfc/rfc6090.html",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+        "https://csrc.nist.gov/pubs/fips/186-5/final",
+        "https://www.rfc-editor.org/rfc/rfc5280.html",
+        "https://www.rfc-editor.org/rfc/rfc9525.html",
+        "https://www.rfc-editor.org/rfc/rfc8446.html"
+      ],
+      "hugoRendered": true
+    }
+  ],
+  "crossLanguage": {
+    "pythonComputationAstEqualIgnoringPrintLabelsAndLocalizedSampleMessages": true,
+    "allTenDisplayFormulasEqual": true
+  },
+  "mathematics": {
+    "rsaToyMessagesPassed": 3233,
+    "nonCoprimeEulerCounterexample": {
+      "M": 61,
+      "N": 3233,
+      "phi": 3120,
+      "eulerPowerModN": 1220,
+      "rsaRoundtrip": 61
+    },
+    "crtResiduesCheckedForEveryToyMessage": true,
+    "lambdaInverseConditionPassed": true,
+    "oaepBoundBytes": 190,
+    "eccToyCurve": "p=17,a=2,b=2,G=(5,1),order=19; 18 distinct nonidentity public points; 19G=infinity",
+    "limitations": "Finite examples support the explanations; they are not general correctness/security proofs or production parameter recommendations."
+  },
+  "limitations": [
+    "Offline fixtures only; no side-channel analysis or formal proof.",
+    "No live TLS/CA, certificate-chain conformance, penetration or native-speaker human review.",
+    "Mermaid source edges checked, not visual rendering."
+  ],
+  "buildPending": false,
+  "publicationPending": true,
+  "buildAttempts": [
+    {
+      "status": "passed",
+      "destination": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-14-bundles-crypto-ko",
+      "scope": "Fourteen bundles; ja/en/zh-cn/zh-tw/es/ko cryptography revisions reviewed, other seven cryptography translations unreviewed.",
+      "multilingualPages": 973,
+      "https": {
+        "html": 1804,
+        "xml": 41
+      },
+      "warnings": "Expected isolated-preview missing search/archive/home JSON; existing Portuguese UI translations."
+    }
+  ]
+}

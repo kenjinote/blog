@@ -204,6 +204,57 @@
         "https://www.rfc-editor.org/rfc/rfc8446.html"
       ],
       "validation": "docs/translation-review/batch-013-es-validation.json"
+    },
+    "post/modern-cryptography-public-key-hash-signature/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/modern-cryptography-public-key-hash-signature/index.md",
+      "sourceHash": "6ba14931d98075ddb9e7231683eccefe7ba568eceb530fd04faeacada6d9d6f7",
+      "translationHash": "cf75ebc00d6ccfeb2713bd0d4e39181b9ce44ee9b0fbbcf946cca3e57ea6510d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Korean metadata and body, revised against the fully corrected Japanese source, then independently reread the complete Korean revision. Compared all six sections and three diagrams/twenty edges: symmetric versus public-key operations and authenticated keys, RSA key/proof/scheme conditions, ECC field/subgroup/scalar requirements, hash resistance and SHA-2/SHA-3 construction, signature verification and identity limits, PKI path/service identity and TLS modes. Structural checks supplement, rather than replace, full semantic comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared 대칭키 versus 개인키 and 공유 비밀 키, 공개키 암호화/서명/키 합의, 암호화/복호화 versus 서명/검증, 역상/제2역상/충돌 저항성, 서로소/역원/중국인의 나머지 정리, 소체/부분군/위수/스칼라, 비트/바이트, 인증서/신뢰 앵커/폐기. Replaced common-key literal wording with 대칭키 and used 이산로그 rather than misleading discrete-algebra wording. Preserved every mathematical and protocol condition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All ten display formulas match exactly, including phi and lambda conditions, bounded inverse d, RSA primitive range, coprime Euler step, complete per-prime/CRT argument, OAEP k-2*hLen-2=190 byte bound, prime-field p>3 nonzero discriminant, subgroup scalar range and chaining formula. Checked all 3,233 toy RSA representatives and both per-prime residues, the explicit non-coprime Euler counterexample and lambda inverse. Checked an order-19 toy elliptic curve with eighteen distinct nonidentity public points and 19G=infinity. Finite fixtures are not a general security proof or recommended curve."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed all three extracted Python blocks independently per language with Python 3.12.14 and cryptography 50.0.2; Computation ASTs match after normalizing literal printed labels and localized sample-message assignments. All other expressions and constants are retained. Korean UTF-8 sample bytes are independently checked against the three displayed Korean messages and the OAEP length bound. Each version passed five OAEP payload roundtrips including empty/UTF-8/190 bytes and four rejection cases (191 bytes, wrong label, altered ciphertext, wrong private key). Two displayed hashes matched hashlib; fourteen streaming hash cases and two fixed abc digests passed. PSS passed three valid messages and six rejection cases covering altered document/signature, wrong key, truncated signature, wrong scheme and salt length. Dedicated signing keys differ from encryption keys. This is offline sample verification, not a live security audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched nine primary-reference URLs and source-note read scopes. Read matching-language Euclidean/ECC target metadata and introductions and checked slug/file mapping; those target articles are not counted as reviewed. Kept image, slug and publication timestamp, added actual lastmod, and checked generated matching-language links, corrected HTML markers and three Mermaid blocks. Fourteen-bundle Hugo, multilingual 973 pages and HTTPS 1,804 HTML/41 XML passed. Publication pending."
+        }
+      },
+      "summary": "Full Korean cryptography review with ten formulas, three independent Python examples, three diagrams and corrected algorithm, proof and trust terminology.",
+      "languageSpecificFindings": "All three original Python blocks fail to compile because Korean characters occur inside bytes literals; reproduced each SyntaxError before editing and preserved it in the revision audit. Corrected them with explicit UTF-8 encoding while retaining the Korean sample text. Made PSS signing independent with a dedicated key. Distinguished 개인키 from the shared secret key, restored ten display formulas, and matched coprimality/CRT, OAEP bounds, subgroup scalars, hash resistance, signature limitations and certificate-path/TLS conditions throughout the complete Korean revision and diagrams. Improved Korean spacing around numerical quantities.",
+      "limitations": [
+        "AI technical/editorial review; no native-speaker or human confirmation.",
+        "No formal cryptographic proof, side-channel analysis, live TLS/CA or full X.509 conformance test.",
+        "Mermaid source and HTML inspected, not visual rendering.",
+        "Seven other translations of this article remain unreviewed and retain their previous content.",
+        "Publication verification pending."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc8017.html",
+        "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+        "https://www.rfc-editor.org/rfc/rfc6090.html",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+        "https://csrc.nist.gov/pubs/fips/186-5/final",
+        "https://www.rfc-editor.org/rfc/rfc5280.html",
+        "https://www.rfc-editor.org/rfc/rfc9525.html",
+        "https://www.rfc-editor.org/rfc/rfc8446.html"
+      ],
+      "validation": "docs/translation-review/batch-013-ko-validation.json"
     }
   },
   "stageAssembly": {
@@ -240,6 +291,18 @@
       "es"
     ],
     "otherTranslationsUnreviewed": 8,
+    "publicationPending": true
+  },
+  "koreanStageAssembly": {
+    "checkedAt": "2026-10-27T07:30:35.056175+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko"
+    ],
+    "otherTranslationsUnreviewed": 7,
     "publicationPending": true
   }
 }

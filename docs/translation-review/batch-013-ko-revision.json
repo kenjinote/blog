@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-27T07:29:05.894497+09:00",
+  "language": "ko",
+  "originalHash": "a84351e15fbc469d8375296a90745a574695f731698de564876bef8112b03d84",
+  "correctedSourceHash": "6ba14931d98075ddb9e7231683eccefe7ba568eceb530fd04faeacada6d9d6f7",
+  "originalFullBodyAndMetadataRead": true,
+  "originalPythonCompileErrors": [
+    {
+      "block": 1,
+      "error": "bytes can only contain ASCII literal characters (original-korean-block-1, line 14)",
+      "line": 14
+    },
+    {
+      "block": 2,
+      "error": "bytes can only contain ASCII literal characters (original-korean-block-2, line 3)",
+      "line": 3
+    },
+    {
+      "block": 3,
+      "error": "bytes can only contain ASCII literal characters (original-korean-block-3, line 6)",
+      "line": 6
+    }
+  ],
+  "reviewRecorded": true,
+  "finalHash": "cf75ebc00d6ccfeb2713bd0d4e39181b9ce44ee9b0fbbcf946cca3e57ea6510d",
+  "fullCorrectedBodyAndMetadataReread": true,
+  "validation": "docs/translation-review/batch-013-ko-validation.json",
+  "remainingUnreviewedLanguages": 7
+}
