@@ -1765,6 +1765,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-014.json",
       "evidenceHash": "07055aa7769c0e705ca2c82f583f42e38ac71aa38120688334cacbcbdde83dc0"
+    },
+    "post/楕円曲線暗号の数学的基礎とcppでの実装/index.id.md": {
+      "source": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "translationHash": "90cbdaac7c64a960c5e9fa1964d9e55ebd729d9e39d85927d269109fc44f87e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-014.json",
+      "evidenceHash": "44e5ca11f5f0d60166cf287b05ec617f252fb7bf751078b9ff99d0166f320a06"
     }
   }
 }

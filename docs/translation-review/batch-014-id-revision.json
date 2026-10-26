@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "startedAt": "2026-10-27T08:41:44.723948+09:00",
+  "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.id.md",
+  "originalHash": "111ea4e48dcde224649263aa5b4611b6632dfa321b7105a975f570a9d5c4128e",
+  "fullOriginalBodyAndMetadataRead": true,
+  "reviewRecorded": true,
+  "findings": [
+    "Inherited constant-time claims contradict branching cpp_int implementation and omit inverse/scalar/point guards.",
+    "Missing affine exceptions and ECDH validation/authentication/KDF; ECDLP/performance overgeneralized.",
+    "Koordinat afinitas mistranslates affine coordinates; perpustakaan means a physical library rather than a code library; grup sempurna suggests a distinct algebraic property.",
+    "Crypto/Abelian/Euclide/Jacobian word fragments and wrong-language Euclidean links obscure intact terms; prediski typo."
+  ],
+  "finalHash": "90cbdaac7c64a960c5e9fa1964d9e55ebd729d9e39d85927d269109fc44f87e4",
+  "fullCorrectedBodyAndMetadataReread": true,
+  "validation": "docs/translation-review/batch-014-id-validation.json",
+  "status": "Full review recorded; publication pending."
+}

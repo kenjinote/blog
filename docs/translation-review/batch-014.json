@@ -520,6 +520,71 @@
         }
       ],
       "validation": "docs/translation-review/batch-014-de-validation.json"
+    },
+    "post/楕円曲線暗号の数学的基礎とcppでの実装/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "translationHash": "90cbdaac7c64a960c5e9fa1964d9e55ebd729d9e39d85927d269109fc44f87e4",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Indonesian metadata/body, revised against the corrected Japanese source, then independently reread all corrected prose/metadata and compared the common implementation. Compared all nine sections, five-row table, three diagrams/fifteen edges, eleven display formulas and five C++ blocks. Retained all field/subgroup/scalar, affine exception, ECDLP/CDH, ECDH authentication/validation/KDF and variable-time implementation premises. Structural checks supplement full semantic comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Preserved lapangan berhingga/lapangan prima, orde subgrup, generator/titik basis, skalar/perkalian skalar, identitas/invers and titik di tak terhingga. Corrected koordinat afinitas to koordinat afin and physical-library perpustakaan to code-library pustaka. Distinguished kunci publik/privat from rahasia/nilai bersama, kesepakatan kunci from enkripsi/tanda tangan, waktu konstan from waktu eksekusi variabel, and saluran samping. Removed unsupported grup sempurna wording, prediski spelling and broken Crypto/Abelian/Euclide/Jacobian links."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All eleven display formulas match exactly; inline premises and table values checked against scoped primary references. NIST Table2 ranges and historical/quantum caveats checked as parsed text. secp256k1 p,a,b,G,n,h checked in SEC2§2.4.1. Ran thirteen scalar differential cases including zero, n±1, n, high-bit and maximum accepted values against cryptography50.0.2; a public toy curve p17,a2,b0 exercised all400 ordered additions against independent Python,8000 associativity triples,820 ladder/repeated-addition cases and all three y=0 doubling points. These finite checks do not prove general security or constant-time behavior."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Extracted this version's five C++ blocks, confirmed exact equality with the reviewed Japanese code, compiled and ran the complete program and additional harness using g++13.3.0/Boost1.83. Passed thirteen scalar differential cases against cryptography50.0.2 and thirteen rejection cases, plus modular/inverse/infinity/inverse-point/swap checks. Existing400-pair/8000-triple/820-scalar toy-curve evidence applies to the identical core and was not redundantly re-executed for this language. Not a constant-time or production implementation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six primary URLs and scoped source notes; retained Indonesian modern-cryptography link to an already-reviewed target. Removed word-fragment/biography links, wrong-language Euclidean link and duplicate body heading. Preserved localized tags, slug, publication timestamp and image; added actual lastmod. Confirmed generated markers/links/three Mermaid blocks and all59 decoded TeX expressions. Fifteen-bundle minified Hugo, multilingual1050pages and HTTPS1945HTML/41XML passed; publication pending. No dependency article added to the review count."
+        }
+      },
+      "summary": "Full Indonesian ECC review with corrected affine/library terminology, eleven formulas, three diagrams and five compiled educational C++ blocks.",
+      "languageSpecificFindings": "Corrected affinity-versus-affine coordinates and physical-library-versus-code-library terminology, removed perfect-group wording and word-fragment links, and preserved Indonesian localized tags. Distinguished subgroup order/field size/private scalar, key agreement/shared value, and constant versus variable runtime while retaining every mathematical and protocol condition.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No browser visual/KaTeX/Mermaid audit, side-channel timing/assembly test, live ECDH/TLS audit or production cryptographic implementation.",
+        "Publication verification remains pending.",
+        "3 other ECC translations remain unreviewed; no review dates added to them."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7748.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.secg.org/sec2-v2.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc5869.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        }
+      ],
+      "validation": "docs/translation-review/batch-014-id-validation.json"
     }
   },
   "englishStageAssembly": {
@@ -600,6 +665,22 @@
       "de"
     ],
     "otherTranslationsUnreviewed": 4,
+    "publicationPending": true
+  },
+  "indonesianStageAssembly": {
+    "checkedAt": "2026-10-27T08:42:44.782127+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko",
+      "pt",
+      "fr",
+      "de",
+      "id"
+    ],
+    "otherTranslationsUnreviewed": 3,
     "publicationPending": true
   }
 }

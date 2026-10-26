@@ -44,3 +44,6 @@
 
 
 追記（2026-10-27）：ECC記事のドイツ語を全文照合し、Primkörper／Untergruppenordnung／Skalar、Schlüsselvereinbarungと共有値、定数／可変時間を整理。λからAWS Lambdaへの誤リンクを参照先の導入確認後に除き、群の完備性を示唆する表現と鍵の置き換えの曖昧さを訂正した。11表示数式・3図15辺・5C++ブロック連結実行、13スカラー差分／13拒否例、59TeX表現のHTML保持、リンクと日付を確認。AI確認日2026-10-27を記録し、15記事束のHugo・多言語1,050ページ・HTTPS HTML1,945件／XML41件を通過。ECCの残る4翻訳と公開確認は未完了。
+
+
+追記（2026-10-27）：ECC記事のインドネシア語を全文照合し、lapangan／orde／skalar、kesepakatan kunciと共有値、定数／可変時間を整理。koordinat afinitasをkoordinat afinへ、perpustakaanをpustakaへ直し、完全群を示唆する表現と誤リンクを訂正した。11表示数式・3図15辺・5C++ブロック連結実行、13スカラー差分／13拒否例、59TeX表現のHTML保持、リンクと日付を確認。AI確認日2026-10-27を記録し、15記事束のHugo・多言語1,050ページ・HTTPS HTML1,945件／XML41件を通過。ECCの残る3翻訳と公開確認は未完了。

@@ -2,6 +2,7 @@
 title: 'Dasar Matematika Kriptografi Kurva Eliptik (ECC) dan Implementasinya dalam C++'
 slug: "elliptic-curve-cryptography-math-cpp"
 date: "2026-09-11T10:00:00+09:00"
+lastmod: "2026-10-27"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,442 +10,306 @@ categories: ["cryptography", "cpp", "mathematics"]
 tags: ["ECC", "Kriptografi", "C++", "Matematika"]
 ---
 
-# Dasar Matematika Kriptografi Kurva Eliptik (ECC) dan Implementasinya dalam C++
+Kriptografi kurva eliptik (Elliptic Curve Cryptography, ECC) adalah keluarga teknik kunci publik yang menggunakan grup kurva eliptik. Kesepakatan kunci ECDH dan tanda tangan seperti ECDSA mempunyai peran berbeda; ECC bukan satu operasi enkripsi yang menyediakan semua sifat keamanan. Bersama [ikhtisar kunci publik, hash, dan tanda tangan](/id/p/modern-cryptography-public-key-hash-signature/), artikel ini menjelaskan syarat matematika dan implementasinya.
 
-Dalam teknologi kriptografi modern, **Kriptografi Kurva Eliptik (Elliptic Curve [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy: ECC)** memainkan peran yang sangat penting. Dari komunikasi internet harian kita (HTTPS/TLS), secure enclave di smartphone, autentikasi server melalui SSH, autentikasi tanpa kata sandi seperti FIDO, hingga aset kripto seperti [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) dan Ethereum, tidak berlebihan untuk mengatakan bahwa fondasi kepercayaan masyarakat digital saat ini didukung oleh ECC.
+Contoh C++ ini merupakan **demonstrasi matematika dengan waktu eksekusi variabel**, menggunakan parameter publik secp256k1. Contoh ini tidak mengimplementasikan pembangkitan kunci privat, kesepakatan kunci terautentikasi, tanda tangan, atau kriptografi waktu konstan. Struktur tangga saja juga belum menjamin waktu konstan.
 
-Dalam artikel ini, kami akan menjelaskan secara menyeluruh dengan detail yang luar biasa tentang bagaimana kriptografi kurva eliptik ini berfungsi, mulai dari teori matematika yang indah namun rumit di baliknya (geometri aljabar di atas lapangan berhingga), metode implementasi aktual menggunakan C++, hingga teknik pengkodean yang aman untuk mencegah serangan saluran samping (serangan waktu).
+## 1. Keamanan dan ukuran kunci
 
----
+Pilih subgrup berorde prima besar $n$ dengan generator $G$. Mencari $d$ dari $Q=dG$ adalah masalah logaritma diskret kurva eliptik (ECDLP). Skalar ditentukan modulo $n$. Kunci privat dipilih secara seragam dari $1\le d<n$ dengan pembangkit bilangan acak yang aman secara kriptografis. Ukuran lapangan $p$, orde subgrup $n$, dan nilai kunci privat harus dibedakan.
 
-## 1. Mengapa Kriptografi Kurva Eliptik? (Perbandingan dengan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/))
+Untuk subgrup berorde prima besar yang sesuai, serangan klasik generik seperti Pollard rho membutuhkan kira-kira $O(\sqrt n)$ operasi grup. Ini tidak berarti pencarian menyeluruh adalah satu-satunya serangan, atau semua kurva eliptik sama sulitnya. Struktur khusus dan subgrup kecil memungkinkan serangan lain, sehingga parameter dan skema harus dipilih dengan tepat.
 
-Sinonim dari kriptografi kunci publik telah lama adalah **kriptografi RSA**. RSA mendasarkan keamanannya pada "kesulitan faktorisasi prima dari bilangan komposit yang sangat besar". Namun, seiring dengan peningkatan kemampuan komputasi komputer, ada kebutuhan untuk terus memperpanjang panjang kunci (jumlah bit modulus) RSA untuk mempertahankan keamanannya. Saat ini, direkomendasikan setidaknya panjang kunci 2048 bit, atau 3072 bit hingga 4096 bit untuk keamanan yang lebih baik.
+Perbandingan berikut mengikuti **perkiraan kekuatan keamanan maksimum terhadap komputer klasik** pada NIST SP 800-57 Part 1 Rev.5, Table 2. Kolom RSA menyatakan panjang bit modulus; kolom ECC menyatakan panjang bit $f$ dari orde titik basis $n$, bukan ukuran kunci publik yang telah dikodekan.
 
-Sebaliknya, kriptografi kurva eliptik (ECC) mendasarkan keamanannya pada kesulitan matematika yang berbeda, yaitu **"Masalah Logaritma Diskret Kurva Eliptik (ECDLP)"**. Algoritma yang efisien untuk memecahkan ECDLP (seperti algoritma waktu sub-eksponensial) belum ditemukan hingga saat ini, dan bahkan metode serangan paling efisien yang diketahui memerlukan waktu eksponensial.
+| Perkiraan kekuatan (bit) | Modulus RSA (bit) | ECC $f$ (bit) |
+| :---: | :---: | :---: |
+| Paling banyak 80 (perbandingan historis) | 1024 | 160–223 |
+| 112 | 2048 | 224–255 |
+| 128 | 3072 | 256–383 |
+| 192 | 7680 | 384–511 |
+| 256 | 15360 | Setidaknya 512 |
 
-Karena sifat ini, ECC memiliki keuntungan krusial yaitu **dapat mencapai tingkat keamanan yang setara dengan RSA namun dengan panjang kunci yang jauh lebih pendek**.
+Baris 80 bit bukan rekomendasi untuk sistem baru. Tabel ini tidak mengesahkan kurva, implementasi, atau masa penggunaan tertentu, dan tidak memberikan ketahanan kuantum. Parameter yang lebih pendek dapat mengurangi biaya komunikasi, tetapi ECC tidak selalu lebih cepat daripada RSA untuk setiap operasi.
 
-| Kekuatan Keamanan (bit) | Panjang Kunci RSA (bit) | Panjang Kunci Kriptografi Kurva Eliptik (bit) | Rasio Panjang Kunci |
-| :---: | :---: | :---: | :---: |
-| 80 | 1024 | 160 | 1:6 |
-| 112 | 2048 | 224 | 1:9 |
-| 128 | 3072 | 256 | 1:12 |
-| 192 | 7680 | 384 | 1:20 |
-| 256 | 15360 | 512 | 1:30 |
+## 2. Grup dan lapangan berhingga
 
-Seperti yang ditunjukkan pada tabel di atas, untuk mendapatkan kekuatan keamanan 128 bit (kekuatan standar saat ini), RSA memerlukan kunci 3072 bit, sedangkan ECC hanya membutuhkan 256 bit. Hal ini memungkinkan pengurangan komputasi, penggunaan memori yang lebih rendah, dan penghematan bandwidth jaringan, yang memberikan keunggulan luar biasa terutama pada perangkat IoT dan lingkungan smart card dengan sumber daya terbatas.
+Grup terdiri atas himpunan dan operasi yang memenuhi sifat tertutup, asosiativitas, keberadaan identitas, dan invers bagi setiap elemen. Jika juga komutatif, grup tersebut disebut grup abelian. Titik-titik kurva eliptik, termasuk titik di tak terhingga dengan aturan penjumlahan di bawah, membentuk grup abelian.
 
----
+Untuk bilangan prima $p$, elemen lapangan prima $\mathbb F_p$ direpresentasikan oleh $0,\ldots,p-1$, dan penjumlahan, pengurangan, serta perkalian direduksi modulo $p$. Pembagian $u/v$ didefinisikan sebagai $uv^{-1}$ **hanya jika $v$ bukan nol**.
 
-## 2. Persiapan Matematika: Teori Grup dan Dunia Lapangan Berhingga
+$$vv^{-1}\equiv1\pmod p$$
 
-Untuk benar-benar memahami kriptografi kurva eliptik, penting untuk memahami konsep dasar aljabar abstrak (teori grup dan teori lapangan). Di sini, kami merangkum pengetahuan prasyarat untuk mengonstruksi ECC secara ringkas.
+Invers dapat dihitung dengan algoritma Euclid diperluas atau sebagai $v^{p-2}\bmod p$ menurut teorema kecil Fermat. Memilih cara kedua tidak otomatis menghasilkan implementasi waktu konstan. Pemangkatan, perkalian, reduksi, dan alokasi memori juga harus diperiksa.
 
-### 2.1. Grup (Group) dan Grup [Abel](https://kenji.blog/id/p/abel/)ian
-**Grup (Group)** adalah himpunan $G$ yang dilengkapi dengan operasi biner (di sini kita gunakan penjumlahan $+$), disimbolkan dengan $(G, +)$, yang memenuhi 4 aksioma berikut:
+## 3. Kurva dan titik di tak terhingga
 
-1. **Sifat Tertutup (Closure)**: Untuk setiap $a, b \in G$, maka $a + b \in G$.
-2. **Sifat Asosiatif (Associativity)**: Untuk setiap $a, b, c \in G$, berlaku $(a + b) + c = a + (b + c)$.
-3. **Eksistensi Elemen Identitas (Identity element)**: Terdapat elemen $e \in G$ sehingga untuk setiap $a \in G$, berlaku $a + e = e + a = a$. Dalam kasus grup aditif, elemen identitas ini biasanya dilambangkan dengan $0$ atau $\mathcal{O}$.
-4. **Eksistensi Elemen Invers (Inverse element)**: Untuk setiap $a \in G$, terdapat elemen $b \in G$ sehingga $a + b = b + a = e$. $b$ ini dilambangkan sebagai $-a$.
+Artikel ini dibatasi pada **bentuk pendek Weierstrass** di atas lapangan prima dengan $p>3$. Rumus ini tidak mencakup secara seragam karakteristik dua atau tiga maupun model Montgomery dan Edwards.
 
-Lebih lanjut, jika urutan operasi diubah dan hasilnya tetap sama, yaitu memenuhi kondisi di bawah ini, grup tersebut disebut **Grup [Abel](https://kenji.blog/id/p/abel/)ian (Grup Komutatif)**.
+$$y^2\equiv x^3+ax+b\pmod p$$
 
-5. **Sifat Komutatif (Commutativity)**: Untuk setiap $a, b \in G$, berlaku $a + b = b + a$.
+Koefisien merupakan elemen lapangan, dan syarat nonsingularitas di dalam lapangan itu adalah:
 
-Himpunan titik-titik pada kurva eliptik membentuk **grup [Abel](https://kenji.blog/id/p/abel/)ian** ini dengan mendefinisikan aturan penjumlahan tertentu.
+$$\Delta=-16(4a^3+27b^2)\not\equiv0\pmod p$$
 
-### 2.2. Lapangan Berhingga (Finite Field)
-Dalam teori kriptografi, kita tidak menggunakan lapangan dengan elemen yang kontinu dan tak terhingga seperti bilangan real atau bilangan kompleks, melainkan menggunakan **Lapangan Berhingga (Finite Field)** atau Lapangan [Galois](https://kenji.blog/id/p/galois/) ([Galois](https://kenji.blog/id/p/galois/) Field) yang jumlah elemennya terbatas.
+Syarat tersebut saja belum menjadikan kurva cocok untuk kriptografi. Pada titik-titik berhingga yang memenuhi persamaan, tambahkan elemen identitas: titik di tak terhingga $\mathcal O$.
 
-Lapangan berhingga yang paling dasar adalah **lapangan prima $\mathbb{F}_p$** menggunakan bilangan prima $p$. Ini adalah himpunan bilangan bulat $\{0, 1, 2, \dots, p-1\}$ yang dilengkapi dengan empat operasi aritmetika (penjumlahan, pengurangan, perkalian, pembagian) dengan modulo $p$ (sisa pembagian dengan $p$).
+$$P+\mathcal O=\mathcal O+P=P$$
 
-- **Penjumlahan**: $(a + b) \pmod p$
-- **Pengurangan**: $(a - b) \pmod p$
-- **Perkalian**: $(a \times b) \pmod p$
-- **Pembagian**: $a \times b^{-1} \pmod p$ (di mana $b^{-1}$ adalah invers perkalian modulo $p$ dari $b$)
+$$-(x,y)=(x,-y\bmod p),\qquad P+(-P)=\mathcal O$$
 
-Penghitungan **Invers Perkalian Modulo (Modular Multiplicative Inverse)** sangat penting dalam implementasi kriptografi. Untuk menemukan $b^{-1}$ yang memenuhi $b \times b^{-1} \equiv 1 \pmod p$, dua algoritma berikut ini terutama digunakan:
+Gambaran pada bilangan real berupa garis yang memotong kurva, lalu pencerminan titik potongnya, memberikan intuisi tentang hukum grup. Di lapangan berhingga kita menghitung dengan rumus aljabar yang sesuai, bukan kurva kontinu yang digambar.
 
-1. **[Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) Diperluas (Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm)**: Cepat, tetapi tergantung pada implementasinya, waktu pemrosesan dapat bergantung pada nilai input sehingga memiliki risiko serangan waktu.
-2. **[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/id/p/fermats-little-theorem/))**: Ketika $p$ adalah bilangan prima dan $b \neq 0$, berlaku $b^{p-1} \equiv 1 \pmod p$. Jika kedua sisi dibagi dengan $b$, maka diperoleh $b^{p-2} \equiv b^{-1} \pmod p$. Artinya, invers dapat dicari dengan menghitung pangkat $p-2$ dari $b$. Karena operasi pemangkatan mudah diimplementasikan dalam waktu konstan (constant time), metode ini lebih disukai dalam implementasi kriptografi.
+## 4. Penjumlahan, penggandaan, dan kasus khusus
 
----
+Misalkan $P=(x_1,y_1)$ dan $Q=(x_2,y_2)$. Pertama tangani penjumlahan dengan $\mathcal O$ dan kasus $Q=-P$. Kasus kedua juga mencakup penggandaan saat $P=Q$ dan $y_1=0$; hasilnya adalah $\mathcal O$.
 
-## 3. Persamaan Kurva Eliptik dan Geometri
+Jika $x_1\ne x_2$, gunakan:
 
-### 3.1. Bentuk Normal Weierstrass
-**Kurva Eliptik (Elliptic Curve)** pada umumnya adalah kurva pada bidang datar yang didefinisikan oleh persamaan berikut, yang disebut **bentuk normal Weierstrass (Weierstrass normal form)**.
+$$\lambda\equiv(y_2-y_1)(x_2-x_1)^{-1}\pmod p$$
 
-$$ y^2 = x^3 + ax + b $$
+Jika $P=Q$ dan $y_1\ne0$, gunakan rumus garis singgung:
 
-Di sini, $a$ dan $b$ adalah konstanta, dan agar kurva tidak memiliki titik singular (seperti persimpangan mandiri atau titik puncak) (yakni, kurvanya mulus), nilai **Diskriminan (Discriminant) $\Delta$** berikut disyaratkan tidak boleh nol.
+$$\lambda\equiv(3x_1^2+a)(2y_1)^{-1}\pmod p$$
 
-$$ \Delta = -16(4a^3 + 27b^2) \neq 0 $$
+Setelah kondisi ini memastikan penyebut bukan nol, hitung hasilnya dengan rumus yang sama:
 
-Karena kurva yang memiliki titik singular dapat merusak keamanan kriptografi, koefisien $a, b$ yang memenuhi kondisi ini selalu dipilih.
+$$x_3\equiv\lambda^2-x_1-x_2\pmod p$$
 
-### 3.2. Titik di Tak Terhingga (Point at Infinity)
-Untuk menjadikan kurva eliptik sebagai grup yang sempurna secara matematis, titik virtual yang disebut **"Titik di Tak Terhingga (Point at Infinity)"** diperkenalkan selain titik-titik pada bidang datar. Titik ini dilambangkan sebagai $\mathcal{O}$ (O besar).
-
-Titik di tak terhingga $\mathcal{O}$ didefinisikan sebagai titik tempat semua garis vertikal bertemu di tempat yang tak terhingga. Dalam teori grup, titik di tak terhingga $\mathcal{O}$ ini berfungsi sebagai **elemen identitas (nol) dalam operasi penjumlahan**.
-
-Artinya, untuk setiap titik $P$ pada kurva, berlaku:
-$$ P + \mathcal{O} = \mathcal{O} + P = P $$
-
-Selain itu, invers $-P$ dari titik $P = (x, y)$ didefinisikan sebagai titik $(x, -y)$ yang simetris terhadap sumbu x. Oleh karena itu:
-$$ P + (-P) = \mathcal{O} $$
-berlaku.
-
----
-
-## 4. Operasi Grup pada Kurva Eliptik (Penambahan Titik dan Penggandaan Titik)
-
-Inti dari kriptografi kurva eliptik adalah operasi **"Penambahan (Addition)"** antara titik-titik pada kurva. Berbeda dengan penambahan bilangan bulat biasa, ini didefinisikan berdasarkan operasi geometris.
-
-### 4.1. Penambahan Geometris (Metode Garis Singgung dan Tali Busur / Tangent and Chord Method)
-Prosedur untuk menambahkan dua titik berbeda $P$ dan $Q$ pada kurva untuk mendapatkan titik baru $R$ ($R = P + Q$) adalah sebagai berikut:
-
-1. Tarik garis lurus (tali busur) yang melewati titik $P$ dan titik $Q$.
-2. Garis lurus ini pasti akan memotong kurva eliptik di satu titik lain (mari sebut ini $-R$). (※ Berdasarkan teorema geometri aljabar)
-3. Titik $R$ yang dicari adalah hasil pencerminan titik potong $-R$ secara simetris terhadap sumbu x (titik dengan tanda koordinat y dibalik).
+$$y_3\equiv\lambda(x_1-x_3)-y_1\pmod p$$
 
 ```mermaid
 graph TD
-    Step1["Tarik garis lurus yang menghubungkan P(x1, y1) dan Q(x2, y2)"] --> Step2["Temukan persimpangan ketiga -R dengan kurva"]
-    Step2 --> Step3["Cerminkan -R pada sumbu x, untuk mendapatkan R(x3, y3)"]
-    Step3 -.-> Result["Ini adalah R = P + Q"]
+    A["Titik valid P, Q pada kurva yang sama"] --> B["Tangani titik tak terhingga, invers, dan kasus y=0"]
+    B --> C["Hitung kemiringan dengan penyebut bukan nol"]
+    C --> D["Gunakan rumus penjumlahan untuk R = P + Q"]
 ```
 
-### 4.2. Penggandaan Titik (Point Doubling)
-Ketika menambahkan titik $P$ dengan titik $P$ yang sama ($P + P = 2P$), kita tidak dapat menarik garis yang melewati dua titik. Dalam kasus ini, kita menarik **garis singgung (Tangent) pada kurva di titik $P$**.
+Koordinat afin membutuhkan inversi. Implementasi praktis dapat mengurangi jumlahnya dengan sistem seperti koordinat Jacobian. Mengganti koordinat saja tidak menjamin waktu konstan atau keamanan.
 
-1. Tarik garis singgung pada kurva di titik $P$.
-2. Garis singgung ini memotong kurva di satu titik lain yaitu $-R$.
-3. Titik $R = 2P$ yang dicari adalah hasil pencerminan titik potong tersebut secara simetris terhadap sumbu x.
+## 5. Perkalian skalar
 
-### 4.3. Rumus Komputasi Aljabar
-Operasi geometris diubah ke dalam rumus aljabar sehingga dapat dihitung oleh komputer.
-Semua operasi dilakukan **di atas lapangan berhingga $\mathbb{F}_p$ (modulo $p$)**.
+Untuk bilangan bulat $k$ nonnegatif, definisikan $kP$ melalui penjumlahan berulang, dengan $0P=\mathcal O$. Double-and-add memproses bit dari yang paling signifikan: gandakan akumulator dan tambahkan $P$ jika bit bernilai satu. Jumlah operasi grup turun dari $k$ penjumlahan langsung menjadi $O(\log k)$. Ini tidak menyatakan biaya tetap per operasi atau waktu eksekusi absolut.
 
-Misalkan Titik $P = (x_1, y_1)$ dan Titik $Q = (x_2, y_2)$.
-Dan biarkan titik hasil perhitungannya adalah $R = P + Q = (x_3, y_3)$.
+Pseudokode konseptual berikut bukan bagian dari program C++ setelahnya. Pseudokode ini bercabang berdasarkan bit rahasia.
 
-Biarkan kemiringan garis menjadi $\lambda$ (lambda).
+```text
+R = O
+for bit in bits_of_k_from_most_significant:
+    R = 2R
+    if bit == 1:
+        R = R + P
+```
 
-**【Kasus 1: Ketika $P \neq Q$ (Penambahan Titik)】**
-Kemiringan $\lambda$ adalah rasio perubahan antara dua titik.
-$$ \lambda \equiv \frac{y_2 - y_1}{x_2 - x_1} \pmod p $$
-$$ \lambda \equiv (y_2 - y_1) \cdot (x_2 - x_1)^{-1} \pmod p $$
+Pembaruan bergaya tangga Montgomery melakukan satu penjumlahan dan satu penggandaan per bit. Jika prefiks yang sudah diproses menyatakan $r$, pembaruan dapat mempertahankan $(R_0,R_1)=(rP,(r+1)P)$. Contoh berikut mendemonstrasikan invarian ini dengan titik afin lengkap; bukan implementasi X25519 atau X448 dari RFC 7748.
 
-Menggunakan $\lambda$ ini, $x_3, y_3$ dihitung sebagai berikut.
-$$ x_3 \equiv \lambda^2 - x_1 - x_2 \pmod p $$
-$$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
+```mermaid
+graph TD
+    A["R0 = O, R1 = P"] --> B["Proses setiap bit mulai yang paling signifikan"]
+    B --> C["Tukar sesuai bit (bercabang dalam demonstrasi)"]
+    C --> D["R1 = R0 + R1, R0 = 2R0"]
+    D --> E["Batalkan pertukaran sesuai bit yang sama"]
+    E --> B
+    B -.-> F["Semua bit selesai: R0 = kP"]
+```
 
-**【Kasus 2: Ketika $P = Q$ (Penggandaan Titik)】**
-Kemiringan $\lambda$ adalah kemiringan garis singgung yang diperoleh melalui diferensiasi. ($y^2 = x^3 + ax + b$ didiferensiasikan secara implisit)
-$$ 2y \cdot y' = 3x^2 + a \implies y' = \frac{3x^2 + a}{2y} $$
-Oleh karena itu,
-$$ \lambda \equiv (3x_1^2 + a) \cdot (2y_1)^{-1} \pmod p $$
+## 6. ECDH: kesepakatan dan autentikasi
 
-Rumus untuk $x_3, y_3$ memiliki bentuk yang sama dengan penambahan, tetapi karena $x_2 = x_1$, menjadi seperti berikut:
-$$ x_3 \equiv \lambda^2 - 2x_1 \pmod p $$
-$$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
+Parameter domain publik mencakup kurva, lapangan, titik basis $G$, ordenya $n$, dan kofaktor. Setiap pihak menghasilkan skalar privat yang sesuai dan bertukar titik publik.
 
-> [!IMPORTANT]
-> Rumus-rumus ini melibatkan **pembagian (perhitungan invers modulo)** seperti $(x_2 - x_1)^{-1}$ dan $(2y_1)^{-1}$. Karena perhitungan invers modulo memiliki biaya komputasi yang sangat tinggi, dalam implementasi praktis, sistem koordinat proyektif seperti **"Sistem Koordinat [Jacobi](https://kenji.blog/id/p/jacobi/)an ([Jacobi](https://kenji.blog/id/p/jacobi/)an Coordinates)"** umumnya digunakan untuk menunda pembagian.
+$$Q_A=d_AG,\qquad Q_B=d_BG$$
 
----
-
-## 5. Perkalian Skalar dan Masalah Logaritma Diskret Kurva Eliptik (ECDLP)
-
-Dalam kriptografi kurva eliptik, operasi yang paling padat komputasi dan membentuk inti keamanan adalah **Perkalian Skalar (Scalar Multiplication)**.
-
-### 5.1. Apa itu Perkalian Skalar?
-Menambahkan titik $P$ sebanyak $k$ kali disebut perkalian skalar, dan dilambangkan sebagai $kP$.
-$$ kP = \underbrace{P + P + \dots + P}_{k \text{ kali}} $$
-
-Di sini, $k$ adalah bilangan bulat yang sangat besar (misalnya bilangan bulat 256-bit).
-
-### 5.2. Masalah Logaritma Diskret Kurva Eliptik (ECDLP)
-Keamanan kriptografi kurva eliptik bergantung pada kesulitan masalah berikut.
-
-> **Masalah Logaritma Diskret Kurva Eliptik (Elliptic Curve Discrete Logarithm Problem: ECDLP)**
-> Diberikan sebuah titik $P$ (base point) yang diketahui, dan sebuah titik hasil $Q$, temukan skalar $k$ sedemikian rupa sehingga memenuhi $Q = kP$.
-
-Menghitung $Q$ dari $k$ dan $P$ (arah maju) adalah mudah (waktu polinomial) menggunakan algoritma yang dijelaskan di bawah ini, tetapi menghitung balik $k$ dari $P$ dan $Q$ (arah mundur) hampir tidak mungkin tanpa pencarian brute-force (fungsi satu arah).
-Dalam protokol kriptografi, **$k$ berkorespondensi dengan "kunci privat" dan $Q$ dengan "kunci publik"**.
-
-### 5.3. Algoritma Double-and-Add
-Ketika $k$ adalah angka yang sangat besar (misalnya: $2^{256}$), menjumlahkan $P$ secara naif sebanyak $k$ kali tidak akan selesai bahkan jika umur alam semesta telah habis. Oleh karena itu, metode **Double-and-Add (Metode Biner)** digunakan untuk melakukan perkalian skalar dengan kecepatan tinggi.
-
-Ini adalah versi kurva eliptik dari "exponentiation by squaring" yang dengan cepat menghitung pangkat bilangan bulat. Skalar $k$ direpresentasikan dalam biner, dan diproses secara berurutan mulai dari bit paling signifikan.
-
-1. Inisialisasi titik $R$ yang menyimpan hasil dengan $\mathcal{O}$.
-2. Ulangi yang berikut ini dari bit paling signifikan hingga bit paling tidak signifikan dari $k$:
-   - Gandakan $R$ (Point Doubling: $R = 2R$)
-   - Jika bit saat ini adalah `1`, tambahkan $P$ ke $R$ (Point Addition: $R = R + P$)
-
-Dengan algoritma ini, kompleksitas waktu berkurang secara drastis dari $O(k)$ menjadi $O(\log_2 k)$, dan memungkinkan perhitungan dalam waktu yang realistis (dalam hitungan milidetik).
-
----
-
-## 6. Pertukaran Kunci Elliptic Curve Diffie-Hellman (ECDH)
-
-Di sini, kami akan menjelaskan cara kerja **protokol pertukaran kunci ECDH (Elliptic Curve Diffie-Hellman)**, yang merupakan contoh aplikasi ECC paling representatif. ECDH adalah mekanisme bagi Alice dan Bob untuk dengan aman menghasilkan dan membagikan kunci rahasia bersama (kunci sesi) melalui saluran komunikasi yang rentan penyadapan (ini adalah inti dari TLS handshake).
-
-**【Parameter Prasyarat (Parameter Domain)】**
-Keduanya berbagi terlebih dahulu kurva eliptik $E$, bilangan prima $p$, dan titik basis $G$ yang akan digunakan. (Misalnya NIST P-256 atau secp256k1)
+$$S=d_AQ_B=d_BQ_A=(d_Ad_B)G$$
 
 ```mermaid
 sequenceDiagram
-    participant Alice as "Alice"
-    participant Bob as "Bob"
-    
-    Note over Alice,Bob: "Parameter publik: Kurva E, Titik Basis G, Bilangan Prima p"
-    
-    Alice->>Alice: "Hasilkan Kunci Privat d_A (bilangan bulat acak)"
-    Alice->>Alice: "Hitung Kunci Publik Q_A = d_A * G"
-    
-    Bob->>Bob: "Hasilkan Kunci Privat d_B (bilangan bulat acak)"
-    Bob->>Bob: "Hitung Kunci Publik Q_B = d_B * G"
-    
-    Alice->>Bob: "Kirim Kunci Publik Q_A (plaintext)"
-    Bob->>Alice: "Kirim Kunci Publik Q_B (plaintext)"
-    
-    Alice->>Alice: "Hitung Rahasia Bersama S = d_A * Q_B"
-    Bob->>Bob: "Hitung Rahasia Bersama S = d_B * Q_A"
-    
-    Note over Alice,Bob: "S = d_A * (d_B * G) = d_B * (d_A * G) = (d_A * d_B) * G"
-    Note over Alice,Bob: "Hasil perhitungan S dari keduanya benar-benar cocok!"
+    participant A as Alice
+    participant B as Bob
+    A->>A: Pilih d_A privat secara seragam dari 1..n-1
+    B->>B: Pilih d_B privat secara seragam dari 1..n-1
+    A->>B: Q_A = d_A G
+    B->>A: Q_B = d_B G
+    A->>A: Validasi dan autentikasi kunci lawan, lalu S = d_A Q_B
+    B->>B: Validasi dan autentikasi kunci lawan, lalu S = d_B Q_A
+    Note over A,B: Turunkan kunci per kegunaan dengan pengodean dan KDF skema
 ```
 
-Penyadap (Eve) dapat mencegat $G$, $Q_A$, dan $Q_B$ yang mengalir di jalur komunikasi, namun karena kesulitan ECDLP, tidak mungkin menemukan kunci privat $d_A$ milik Alice dari $Q_A = d_A \cdot G$. Selain itu, mengalikan $Q_A$ dan $Q_B$ tidak akan menghasilkan kunci bersama $S$, sehingga penyadap tidak dapat menghitung $S$.
+Menghitung nilai bersama dari titik publik adalah masalah komputasional Diffie–Hellman (CDH), yang definisinya berbeda dari ECDLP. Memecahkan ECDLP memungkinkan perhitungan nilai bersama; kita tidak mengasumsikan kesetaraan umum dalam arah sebaliknya.
 
----
+ECDH saja tidak mengautentikasi lawan komunikasi atau mencegah penyerang mengganti kunci publik. Protokol nyata mengikat kunci, pertukaran, dan identitas, serta melakukan pemeriksaan pengodean, rentang koordinat, keanggotaan kurva, titik tak terhingga, dan syarat subgrup sesuai skema. Jangan gunakan titik bersama atau koordinat x-nya langsung sebagai kunci AES. Ikuti pengodean, pengikatan konteks, dan derivasi kunci seperti HKDF yang ditentukan protokol. Diagram ini bukan handshake TLS lengkap.
 
-## 7. Jebakan Implementasi: Serangan Saluran Samping (Side-Channel Attack) dan Penanggulangannya
+## 7. Syarat implementasi waktu konstan
 
-Bahkan algoritma kriptografi yang sempurna secara teoritis dapat memiliki kerentanan yang muncul dalam proses implementasinya sebagai program. Itulah yang disebut **"Serangan Saluran Samping (Side-Channel Attack)"**.
+Percabangan, akses memori, kasus khusus, dan waktu aritmetika yang bergantung pada rahasia dapat membocorkan informasi dalam model pengamatan yang sesuai. Jumlah pengamatan dan kemungkinan pemulihan seluruh kunci bergantung pada implementasi dan serangan. Tidak ada jaminan umum bahwa beberapa ribu pengukuran akan mengungkap setiap bit.
 
-### 7.1. Serangan Waktu (Timing Attack)
-Mari kita lihat kembali algoritma Double-and-Add yang telah dijelaskan sebelumnya.
+Jumlah penjumlahan yang sama per iterasi tidak menjamin waktu konstan jika penjumlahan itu bercabang berdasarkan nilai rahasia perantara. Pertukaran bersyarat dengan mask hanya bagian dari pertahanan; representasi bilangan bulat, kompilator, dan CPU target juga penting. RFC 7748 §5.1 menjelaskan bahwa urutan operasi lapangan yang sama saja tidak mencegah semua saluran samping.
+
+`cpp_int` adalah tipe bilangan bulat berukuran variabel, sedangkan `conditionalSwapDemo` dan penjumlahan titik di bawah mengandung percabangan. **Kode ini bukan implementasi waktu konstan dan tidak boleh menangani kunci rahasia dalam kriptografi produksi.**
+
+## 8. Demonstrasi matematika C++17
+
+Gabungkan lima blok C++ berikut secara berurutan dalam satu berkas. Header Boost.Multiprecision diperlukan. Program hanya memakai parameter tetap dan nilai uji publik; tidak membangkitkan, menyimpan, atau mencetak kunci rahasia.
+
+### 8.1. Aritmetika lapangan prima
+
+`modInverse` hanya berlaku untuk bilangan prima tetap $p$ di sini dan menolak nol. Inversi Fermat dengan `powerMod` juga memiliki waktu eksekusi variabel.
 
 ```cpp
-// Pseudocode dari Double-and-Add yang rentan
-Point R = Point::Infinity;
-for (int i = 255; i >= 0; i--) {
-    R = PointDoubling(R);         // Selalu dieksekusi
-    if (bit(k, i) == 1) {
-        R = PointAddition(R, P);  // Hanya dieksekusi ketika bit adalah 1!
-    }
-}
-```
-
-Implementasi ini memiliki cacat yang fatal. Karena Point Addition dieksekusi saat bit adalah `1`, **waktu komputasi menjadi sedikit lebih lama** daripada saat bit adalah `0`. Selain itu, prediski percabangan prosesor dan perilaku memori cache juga berubah.
-Dengan mengamati perbedaan kecil dalam waktu komputasi (atau konsumsi daya) ribuan kali secara statistik, penyerang dapat **sepenuhnya memulihkan rangkaian bit kunci privat $k$ bit demi bit**. Inilah yang disebut serangan waktu (timing attack).
-
-### 7.2. Implementasi Constant-Time: Montgomery Ladder
-Untuk mencegah serangan waktu, perlu mengadopsi algoritma yang memiliki **urutan instruksi yang dieksekusi dan waktu komputasi yang selalu konstan (Constant-Time), terlepas dari nilai bit kunci privat**.
-
-Contoh utamanya adalah **Montgomery Ladder**.
-
-```mermaid
-graph TD
-    Start["Inisialisasi: R0 = O, R1 = P"] --> LoopStart["Untuk setiap bit i (dari bit paling signifikan)"]
-    LoopStart --> Cond{"Berapa nilai k_i?"}
-    
-    Cond -->|"0"| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
-    Cond -->|"1"| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
-    
-    Branch0 --> LoopEnd["Pindah ke bit selanjutnya"]
-    Branch1 --> LoopEnd
-    
-    LoopEnd --> LoopStart
-    LoopStart -.->|"Semua bit selesai"| End["Akhir: R0 adalah hasilnya (kP)"]
-```
-
-Keindahan dari Montgomery Ladder adalah, terlepas dari bit yang bernilai `0` atau `1`, **"selalu 1 kali Point Addition dan 1 kali Point Doubling"** yang dieksekusi. Hal ini sepenuhnya menghilangkan ketergantungan data dari waktu komputasi.
-
-Namun, jika percabangan (`if (k_i == 0)`) itu sendiri ada, masih ada risiko bahwa waktu eksekusi berfluktuasi karena optimasi compiler dan prediksi percabangan CPU. Oleh karena itu, dalam implementasi Constant-Time yang sebenarnya, percabangan kondisional (pernyataan `if`) dihilangkan, dan **pertukaran bersyarat (Conditional Swap) menggunakan operasi bit** digunakan.
-
----
-
-## 8. Implementasi Kriptografi Kurva Eliptik dalam C++
-
-Mulai dari sini, kita akan mengubah teori menjadi kode C++. Pustaka kriptografi praktis (seperti OpenSSL dan libsodium) menggunakan optimasi assembly tingkat lanjut dan sistem koordinat [Jacobi](https://kenji.blog/id/p/jacobi/)an, tetapi di sini untuk memperdalam pemahaman matematika, kami menunjukkan kerangka dari **implementasi Constant-Time yang mudah dipahami menggunakan sistem koordinat afinitas**.
-
-Kami asumsikan penggunaan `boost::multiprecision::cpp_int` untuk perhitungan bilangan bulat raksasa.
-
-### 8.1. Operasi Modulo dan Invers
-Pertama, kita definisikan fungsi bantuan untuk operasi pada lapangan berhingga. Kita akan mengimplementasikan perhitungan invers menggunakan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/).
-
-```cpp
+#include <cstdint>
 #include <iostream>
-#include <vector>
 #include <stdexcept>
+#include <utility>
 #include <boost/multiprecision/cpp_int.hpp>
 
-using namespace boost::multiprecision;
+using boost::multiprecision::cpp_int;
 
-// Sebagai contoh p dan parameter secp256k1
+// Public secp256k1 parameters; this entire example is variable-time.
 const cpp_int p("0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F");
 const cpp_int a = 0;
 const cpp_int b = 7;
+const cpp_int n("0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141");
 
-// Operasi modulo yang mengembalikan sisa positif
-cpp_int mod(cpp_int x, cpp_int m) {
+cpp_int mod(cpp_int x, const cpp_int& m) {
+    if (m <= 0) throw std::invalid_argument("Modulus must be positive");
     cpp_int r = x % m;
-    return r < 0 ? r + m : r;
+    if (r < 0) r += m;
+    return r;
 }
 
-// Perhitungan eksponensial modulo (x^y mod m)
-cpp_int powerMod(cpp_int base, cpp_int exp, cpp_int m) {
-    cpp_int res = 1;
+cpp_int powerMod(cpp_int base, cpp_int exp, const cpp_int& m) {
+    if (m <= 1 || exp < 0) throw std::invalid_argument("Invalid powerMod input");
+    cpp_int result = 1;
     base = mod(base, m);
     while (exp > 0) {
-        if (exp % 2 == 1) res = mod(res * base, m);
+        if (exp % 2 == 1) result = mod(result * base, m);
         base = mod(base * base, m);
         exp /= 2;
     }
-    return res;
+    return result;
 }
 
-// Invers modulo menggunakan Teorema Kecil Fermat
-cpp_int modInverse(cpp_int n, cpp_int m) {
-    // Asumsikan bahwa m adalah bilangan prima: n^(m-2) ≡ n^(-1) mod m
-    return powerMod(n, m - 2, m);
+// Inversion in the fixed prime field F_p only; zero has no inverse.
+cpp_int modInverse(cpp_int value) {
+    value = mod(value, p);
+    if (value == 0) throw std::invalid_argument("Zero has no inverse");
+    return powerMod(value, p - 2, p);
 }
 ```
 
-### 8.2. Representasi Titik dan Operasi Grup (Penambahan dan Penggandaan)
-Kita definisikan struktur `Point` yang mengelola titik di tak terhingga dengan sebuah flag, beserta implementasi rumus penambahan.
+### 8.2. Titik dan penjumlahan
+
+Titik berhingga harus mempunyai koordinat $0\le x,y<p$ dan memenuhi persamaan kurva. Titik tak terhingga diizinkan untuk aritmetika grup, tetapi harus ditolak secara terpisah sebagai kunci publik ECDH lawan komunikasi. Kofaktor secp256k1 adalah satu; pemeriksaan ini tidak menggantikan validasi subgrup yang diperlukan untuk kurva sembarang.
 
 ```cpp
 struct Point {
-    cpp_int x;
-    cpp_int y;
-    bool isInfinity;
+    cpp_int x = 0;
+    cpp_int y = 0;
+    bool isInfinity = true;
 
-    // Menghasilkan titik di tak terhingga
-    Point() : x(0), y(0), isInfinity(true) {}
-    
-    // Menghasilkan titik biasa
-    Point(cpp_int x, cpp_int y) : x(x), y(y), isInfinity(false) {}
+    Point() = default;
+    Point(cpp_int xValue, cpp_int yValue)
+        : x(std::move(xValue)), y(std::move(yValue)), isInfinity(false) {}
 };
 
-// Penambahan titik pada kurva eliptik (R = P + Q)
+bool isOnCurve(const Point& point) {
+    if (point.isInfinity) return true;
+    if (point.x < 0 || point.x >= p || point.y < 0 || point.y >= p) return false;
+    return mod(point.y * point.y - point.x * point.x * point.x - a * point.x - b, p) == 0;
+}
+
 Point pointAdd(const Point& P, const Point& Q) {
+    if (!isOnCurve(P) || !isOnCurve(Q)) throw std::invalid_argument("Invalid curve point");
     if (P.isInfinity) return Q;
     if (Q.isInfinity) return P;
+    if (P.x == Q.x && mod(P.y + Q.y, p) == 0) return Point();
 
-    if (P.x == Q.x && mod(P.y + Q.y, p) == 0) {
-        return Point(); // P + (-P) = Titik di tak terhingga
-    }
-
-    cpp_int lambda;
+    cpp_int slope;
     if (P.x == Q.x && P.y == Q.y) {
-        // Point Doubling (Kasus P = Q)
-        // lambda = (3x^2 + a) / 2y
-        cpp_int num = mod(3 * P.x * P.x + a, p);
-        cpp_int den = modInverse(mod(2 * P.y, p), p);
-        lambda = mod(num * den, p);
+        slope = mod((3 * P.x * P.x + a) * modInverse(2 * P.y), p);
     } else {
-        // Point Addition (Kasus P != Q)
-        // lambda = (y2 - y1) / (x2 - x1)
-        cpp_int num = mod(Q.y - P.y, p);
-        cpp_int den = modInverse(mod(Q.x - P.x, p), p);
-        lambda = mod(num * den, p);
+        slope = mod((Q.y - P.y) * modInverse(Q.x - P.x), p);
     }
-
-    cpp_int x3 = mod(lambda * lambda - P.x - Q.x, p);
-    cpp_int y3 = mod(lambda * (P.x - x3) - P.y, p);
-
+    cpp_int x3 = mod(slope * slope - P.x - Q.x, p);
+    cpp_int y3 = mod(slope * (P.x - x3) - P.y, p);
     return Point(x3, y3);
 }
 ```
 
-### 8.3. Implementasi Conditional Swap Constant-Time
-Saat menukar isi variabel berdasarkan nilai bit dari kunci privat, penukaran dilakukan hanya dengan operasi bit (masking) tanpa menggunakan pernyataan `if`. Hal ini membuat alur eksekusi menjadi benar-benar konstan.
+### 8.3. Simulasi pertukaran
 
-> [!TIP]
-> Pada implementasi aslinya, kelas integer multipresisi yang dialokasikan secara dinamis seperti `cpp_int` tidak cocok untuk pemrosesan Constant-Time. Pasalnya, informasi waktu bocor karena fluktuasi alokasi memori dan ukuran array. Di perpustakaan praktis, algoritma direpresentasikan dalam panjang tetap (misal array uint64_t × 4 elemen), dan memproses masking pada level bit. Berikut adalah contoh konseptual.
+Fungsi ini bercabang, sehingga namanya memakai Demo.
 
 ```cpp
-// Konseptual Constant-Time Swap (Asumsikan panjang bilangan bulat tetap)
-// Jika bit adalah 1 maka P1 dan P2 akan ditukar, dan jika 0 maka tidak ditukar
-void cswap(Point& P1, Point& P2, uint8_t bit) {
-    // bit adalah 0 atau 1. Masker bit=1 adalah semua bit 1(0xFF..), bit 0 adalah semua bit 0.
-    // (Di sini untuk penjelasan, mari kita asumsikan setiap kata dari kelas BigInt panjang tetap sebagai w)
-    /*
-    uint64_t mask = 0 - (uint64_t)bit;
-    for (int i = 0; i < NUM_WORDS; i++) {
-        uint64_t dummy = mask & (P1.x.words[i] ^ P2.x.words[i]);
-        P1.x.words[i] ^= dummy;
-        P2.x.words[i] ^= dummy;
-        // Koordinat y dan flag isInfinity juga diproses dengan cara yang sama
-    }
-    */
-    
-    // ※ Swap constant-time yang sempurna dengan boost::multiprecision sulit dilakukan,
-    // Di sini kita batasi pada simulasi dengan percabangan demi memahami logikanya.
-    if (bit == 1) {
-        std::swap(P1, P2);
-    }
+// A branching simulation of conditional swap, NOT constant-time.
+void conditionalSwapDemo(Point& left, Point& right, std::uint8_t bit) {
+    if (bit > 1) throw std::invalid_argument("Bit must be zero or one");
+    if (bit == 1) std::swap(left, right);
 }
 ```
 
-### 8.4. Perkalian Skalar dengan Montgomery Ladder
-Menggabungkan `pointAdd` dan `cswap` di atas, kita mengimplementasikan perkalian skalar yang aman.
+### 8.4. Tangga dengan pemeriksaan rentang
+
+Demonstrasi menerima $0\le k<2^{256}$ dan menolak nilai di luar rentang itu. Ini berbeda dari rentang kunci privat $1\le d<n$. Bit tinggi tidak pernah dipotong diam-diam.
 
 ```cpp
-// Perkalian skalar k * P (Metode Montgomery Ladder)
-Point scalarMultiply(const Point& P, cpp_int k) {
-    Point R0 = Point(); // Titik di tak terhingga
+// A functional ladder demonstration for 0 <= k < 2^256.
+// Zero is allowed for group arithmetic, but is not a valid private key.
+Point scalarMultiply(const Point& P, const cpp_int& k) {
+    if (k < 0 || k >= (cpp_int(1) << 256)) throw std::invalid_argument("Scalar outside demo range");
+    if (!isOnCurve(P)) throw std::invalid_argument("Invalid curve point");
+    Point R0;
     Point R1 = P;
-
-    // Dapatkan panjang bit k (untuk secp256k1 adalah 256 bit)
-    int numBits = 256; 
-    
-    for (int i = numBits - 1; i >= 0; i--) {
-        // Dapatkan nilai bit ke-i (0 atau 1)
-        uint8_t bit = static_cast<uint8_t>(bit_test(k, i) ? 1 : 0);
-
-        // Jika bit == 1, tukar R0 dan R1
-        cswap(R0, R1, bit);
-
-        // Selalu eksekusi operasi yang sama (Point Addition dan Point Doubling)
+    for (int i = 255; i >= 0; --i) {
+        std::uint8_t bit = boost::multiprecision::bit_test(k, i) ? 1 : 0;
+        conditionalSwapDemo(R0, R1, bit);
         R1 = pointAdd(R0, R1);
         R0 = pointAdd(R0, R0);
-
-        // Jika bit == 1, tukar lagi untuk mengembalikan keadaan seperti semula
-        cswap(R0, R1, bit);
+        conditionalSwapDemo(R0, R1, bit);
     }
-
     return R0;
 }
 ```
 
-Dengan logika implementasi ini, terlepas dari apakah masing-masing bit skalar $k$ adalah `0` atau `1`, operasi yang dieksekusi dalam setiap iterasi perulangan (`cswap` $\to$ `pointAdd` $\to$ `pointAdd` $\to$ `cswap`) akan memiliki alur yang persis sama, dengan kuat mencegah kebocoran informasi rahasia melalui waktu atau perbedaan dalam pola akses cache.
+### 8.5. Pemeriksaan dengan nilai publik
 
----
+Gunakan generator secp256k1 dari SEC 2 untuk memeriksa $2G$ dan $nG=\mathcal O$. Uji mandiri ini saja tidak membuktikan keamanan implementasi kriptografi.
+
+```cpp
+int main() {
+    const Point G(
+        cpp_int("0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"),
+        cpp_int("0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8")
+    );
+    const Point doubled = scalarMultiply(G, 2);
+    if (doubled.isInfinity || !isOnCurve(doubled) || !scalarMultiply(G, n).isInfinity) {
+        throw std::runtime_error("Arithmetic self-check failed");
+    }
+    std::cout << "2G.x = " << std::hex << doubled.x << "\n";
+    std::cout << "2G.y = " << std::hex << doubled.y << "\n";
+    std::cout << "nG = infinity\n";
+}
+```
+
+Misalnya, simpan kelima blok sebagai `ecc_demo.cpp` dan jalankan di lingkungan dengan jalur penyertaan Boost yang sudah dikonfigurasi:
+
+```sh
+g++ -std=c++17 -O2 -Wall -Wextra ecc_demo.cpp -o ecc_demo
+./ecc_demo
+```
 
 ## 9. Kesimpulan
 
-Kriptografi kurva eliptik (ECC) mungkin tampak aneh pada pandangan pertama dengan bertanya-tanya, "Mengapa operasi geometris seperti menggambar garis lurus dan memantulkan titik persimpangan dapat menjadi kriptografi?". Namun, dengan memetakannya ke dunia diskrit dari lapangan berhingga, ini adalah produk perpaduan yang ajaib antara matematika dan kriptografi, yang memungkinkan kita membangun fungsi satu arah yang mengesankan (masalah logaritma diskret).
+Bedakan lapangan, kurva, subgrup, dan skema kriptografi. Kasus khusus penjumlahan, rentang skalar, validasi kunci publik, autentikasi lawan komunikasi, dan derivasi kunci semuanya penting. Kebenaran aritmetika tangga dan implementasi waktu konstan merupakan tugas pemeriksaan yang berbeda.
 
-Dalam artikel ini, kami menjelaskan poin-poin penting berikut:
+Demonstrasi ini ditujukan untuk mengikuti aritmetika grup. Kesepakatan kunci dan tanda tangan nyata memerlukan pustaka yang dipelihara dan divalidasi serta mendukung protokol dan kurva yang dimaksud.
 
-1. **Keunggulan terhadap [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)**: Memberikan keamanan kuat dengan panjang kunci yang jauh lebih pendek, sangat cocok untuk era perangkat seluler dan IoT modern.
-2. **Dasar-dasar Teori Grup dan Lapangan Berhingga**: Struktur matematika yang mendasari ECC.
-3. **Rumus Penambahan dan Penggandaan**: Metode untuk mengimplementasikan operasi grup aljabar menggunakan persamaan Weierstrass.
-4. **Ancaman Serangan Saluran Samping (Side-Channel Attack)**: Bagaimana percabangan kondisional yang bergantung pada bit kunci privat menghasilkan kerentanan yang fatal.
-5. **Implementasi Constant-Time**: Teknik pengkodean C++ yang menggunakan Montgomery Ladder dan Conditional Swap untuk menyeragamkan perilaku tingkat perangkat keras dan mencegah serangan.
+### Referensi
 
-Membuat perpustakaan kriptografi Anda sendiri yang sebenarnya berjalan di lingkungan produksi sangat tidak disarankan ("Don't roll your own crypto") karena risiko keamanannya sangat tinggi. Namun, pemahaman mendalam tentang algoritma dan latar belakang matematika yang beroperasi di dalamnya harus menjadi senjata yang sangat berharga bagi insinyur yang merancang dan mengoperasikan sistem yang lebih aman dan berkinerja tinggi.
-
-Pada artikel berikutnya, kami ingin menggali lebih dalam tentang mekanisme **ECDSA (Elliptic Curve [Digital Signature](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) Algorithm)**, yaitu algoritma tanda tangan digital menggunakan kurva eliptik ini, serta **Tanda Tangan Schnorr** yang diadopsi pada [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/).
-
+- [RFC 6090: Fundamental Elliptic Curve Cryptography Algorithms](https://www.rfc-editor.org/rfc/rfc6090.html) (§§2–4, 10)
+- [RFC 7748: Elliptic Curves for Security](https://www.rfc-editor.org/rfc/rfc7748.html) (§§5–5.1)
+- [NIST SP 800-57 Part 1 Rev.5](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf) (§5.6.1.1, Table 2)
+- [Standards for Efficient Cryptography 2 (SEC 2), version 2.0](https://www.secg.org/sec2-v2.pdf) (§2.4.1, secp256k1)
+- [RFC 5869: HKDF](https://www.rfc-editor.org/rfc/rfc5869.html) (§§1, 3.2–3.3)
+- [Boost.Multiprecision: cpp_int](https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html)
 
 
