@@ -325,6 +325,71 @@
         }
       ],
       "validation": "docs/translation-review/batch-014-ko-validation.json"
+    },
+    "post/楕円曲線暗号の数学的基礎とcppでの実装/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "translationHash": "81776bcbe5888e899fe7068b21a6c4bfbe0168dd5262c5d7e92427635c814f06",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Portuguese metadata/body, revised against the corrected Japanese source, then independently reread all corrected prose/metadata and compared the common implementation. Compared all nine sections, five-row table, three diagrams/fifteen edges, eleven display formulas and five C++ blocks. Retained the field/subgroup/private-scalar distinctions, affine exceptions, ECDLP/CDH, ECDH authentication/validation/KDF and the actual variable-time teaching scope. Structural checks supplement semantic review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Preserved Brazilian Portuguese usage: corpo primo, ordem do subgrupo, gerador/ponto base, multiplicação escalar, inverso modular versus inverse point, elemento neutro/ponto no infinito, coordenadas afins/jacobianas, ausência de singularidades. Distinguished chave pública/privada from segredo compartilhado, acordo de chaves from cifração/assinaturas, and tempo constante from tempo variável. Corrected grupo matematicamente perfeito and dobrar interseções to the actual identity/group construction and geometric reflection. Removed Crypto/Abel/Euclide/Jacobian word-fragment links."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All eleven display formulas match exactly; inline premises and table values checked against scoped primary references. NIST Table2 ranges and historical/quantum caveats checked as parsed text. secp256k1 p,a,b,G,n,h checked in SEC2§2.4.1. Ran thirteen scalar differential cases including zero, n±1, n, high-bit and maximum accepted values against cryptography50.0.2; a public toy curve p17,a2,b0 exercised all400 ordered additions against independent Python,8000 associativity triples,820 ladder/repeated-addition cases and all three y=0 doubling points. These finite checks do not prove general security or constant-time behavior."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Extracted this version's five C++ blocks, confirmed exact equality with the reviewed Japanese code, compiled and ran the complete program and additional harness using g++13.3.0/Boost1.83. Passed thirteen scalar differential cases against cryptography50.0.2 and thirteen rejection cases, plus modular/inverse/infinity/inverse-point/swap checks. Existing400-pair/8000-triple/820-scalar toy-curve evidence applies to the identical core and was not redundantly re-executed for this language. Not a constant-time or production implementation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six primary URLs and scoped notes; retained matching-language modern-cryptography link to the already-reviewed target. Removed misleading word-fragment/biography links and duplicate body heading. Preserved slug, publication timestamp and image; added actual lastmod. Confirmed generated markers/links/three Mermaid blocks and all59 decoded TeX expressions. Fifteen-bundle Hugo, multilingual1050pages and HTTPS1945HTML/41XML passed; publication pending. No dependency article added to the review count."
+        }
+      },
+      "summary": "Full Brazilian Portuguese ECC review with eleven formulas, three diagrams and five compiled variable-time educational C++ blocks.",
+      "languageSpecificFindings": "Corrected perfect-group wording and doubling-versus-reflecting intersections; retained Brazilian grammar and corpo/ordem/escalar terminology. Distinguished shared values, private keys, key agreement and KDF, qualified ECDLP/performance claims and replaced unsupported constant-time promises with the actual branching example. Preserved literal code and mathematical identifiers.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No browser visual/KaTeX/Mermaid audit, side-channel timing/assembly test, live ECDH/TLS audit or production cryptographic implementation.",
+        "Publication verification remains pending.",
+        "Six other ECC translations remain unreviewed; no review dates added to them."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7748.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.secg.org/sec2-v2.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc5869.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        }
+      ],
+      "validation": "docs/translation-review/batch-014-pt-validation.json"
     }
   },
   "englishStageAssembly": {
@@ -363,6 +428,19 @@
       "ko"
     ],
     "otherTranslationsUnreviewed": 7,
+    "publicationPending": true
+  },
+  "portugueseStageAssembly": {
+    "checkedAt": "2026-10-27T08:34:24.356402+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko",
+      "pt"
+    ],
+    "otherTranslationsUnreviewed": 6,
     "publicationPending": true
   }
 }

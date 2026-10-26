@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "startedAt": "2026-10-27T08:32:04.083283+09:00",
+  "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.pt.md",
+  "originalHash": "f5ab464c59197c369234602c83c7e437aa751d98fb5d661b4f5f78742da7477b",
+  "fullOriginalBodyAndMetadataRead": true,
+  "reviewRecorded": true,
+  "findings": [
+    "Inherited constant-time/security promises contradict branching cpp_int implementation.",
+    "Missing affine exceptions, field/subgroup/scalar constraints and ECDH authentication/KDF requirements; ECDLP overstated as exhaustive-search only.",
+    "Grupo matematicamente perfeito risks the distinct mathematical notion of perfect group; dobrar interseções mistranslates reflecting intersections as doubling them.",
+    "Crypto/Abel/Euclide/Jacobian word-fragment/biographical links obscure terms."
+  ],
+  "plannedTerminology": "Brazilian Portuguese: corpo primo, ordem do subgrupo, multiplicação escalar, inverso, ponto no infinito, acordo de chaves, segredo compartilhado, tempo constante/variável.",
+  "status": "Full Portuguese review recorded; publication pending.",
+  "finalHash": "81776bcbe5888e899fe7068b21a6c4bfbe0168dd5262c5d7e92427635c814f06",
+  "fullCorrectedBodyAndMetadataReread": true,
+  "validation": "docs/translation-review/batch-014-pt-validation.json"
+}
