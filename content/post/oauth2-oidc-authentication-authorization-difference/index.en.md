@@ -1,8 +1,9 @@
 ---
-title: "Complete Anatomy of OAuth 2.0 and OIDC (OpenID Connect) (Difference between Authorization and Authentication)"
-description: "Thorough explanation of the mechanism of OAuth 2.0 and OIDC, the difference between authentication and authorization, and various grant types."
+title: "OAuth 2.0 and OIDC: Authentication, Authorization, and Token Validation"
+description: "Understand authentication and authorization, OAuth 2.0 and OIDC roles, authorization code with PKCE, and ID token validation through equations and JavaScript and Python examples."
 slug: "oauth2-oidc-authentication-authorization-difference"
 date: "2026-09-22T08:00:00+09:00"
+lastmod: "2026-10-27"
 image: "eyecatch.jpg"
 categories:
     - "security"
@@ -15,234 +16,264 @@ tags:
 
 ---
 
-An essential technology for balancing security and user experience in modern Web and mobile applications is **OAuth 2.0** and **OIDC (OpenID Connect)**. However, many developers continue to confuse the differences between "Authentication" and "Authorization", leading to incorrect implementations.
+OAuth 2.0 is an authorization framework for granting applications limited access. OpenID Connect (OIDC) adds a way to communicate the result of end-user authentication to the client.
 
-This article provides a very detailed and comprehensive explanation of **OAuth 2.0** and **OIDC**, from their basic concepts to their respective roles, the clear difference between authentication and authorization, various grant types, and secure implementation methods involving PKCE.
+This article distinguishes authentication from authorization, token purposes, authorization codes and PKCE, and ID token validation. The code illustrates individual operations; it is not a complete login implementation. For a production service, use an OIDC library and provider configuration appropriate to your requirements.
 
----
+## 1. Authentication and authorization
 
-## 1. The Clear Difference Between Authentication and Authorization
+### Authentication / AuthN
 
-First and foremost, let's clarify the difference between "Authentication" and "Authorization", which is the most important and easily confused aspect.
+Authentication checks the identity of a user or system using presented evidence. Checking an employee's identity card at a company reception desk is an analogy.
 
-### Authentication (AuthN)
-**Authentication** is the process of confirming "who the accessing user is (whether they are the actual person)".
-To use an analogy, it is equivalent to presenting an "employee ID" or "driver's license" at the reception desk when arriving at a company, proving "I am an employee of this company".
+### Authorization / AuthZ
 
-### Authorization (AuthZ)
-On the other hand, **Authorization** is the process of "granting access rights to specific resources for a specific person (or system)".
-In the company analogy mentioned earlier, after identity verification is complete, this corresponds to access control such as "Since this person is a regular employee, they are not granted the right (key) to enter the server room, but they are granted the right (key) to enter their own floor".
+Authorization determines which operations or resources a principal may access. Confirming that someone is an employee does not mean they may enter every server room.
 
 | Item | Authentication | Authorization |
 | --- | --- | --- |
-| Purpose | Identify "who you are" | Determine "what you can do" |
-| English Abbreviation | AuthN | AuthZ |
-| Representative Protocols | OpenID Connect (OIDC), SAML | OAuth 2.0, XACML |
-| What is Received | ID Token (User information) | Access Token (Access rights) |
+| Question | Who is it? | What is permitted? |
+| Abbreviation | AuthN | AuthZ |
+| Mechanism discussed here | OIDC communicates an authentication result | OAuth 2.0 grants limited access |
+| Example token | An OIDC ID token | An OAuth 2.0 access token |
 
-We often hear the expression "implement a login function using OAuth", but strictly speaking, **OAuth 2.0** is a protocol for "Authorization", and using it alone for "Authentication (login)" is an off-label use (pseudo-authentication). To perform authentication, the modern standard is to use **OIDC**, which is an extension of OAuth 2.0.
+Not every authentication mechanism issues an ID token. OAuth 2.0 also does not define all access control within an application. After receiving a token, an API must still check the permissions required for the particular resource and operation.
 
----
+OAuth 2.0 alone does not standardize how a client verifies the result of end-user authentication. Do not establish a login merely because an OAuth access token was received: use a protocol, such as OIDC, that lets the client validate the authentication result.
 
-## 2. Complete Understanding of OAuth 2.0
+## 2. OAuth 2.0 roles and grants
 
-### 2.1 What is OAuth 2.0?
-**OAuth 2.0** is a standard protocol (RFC 6749) for granting third-party applications limited access rights (access tokens) to user data without handing over the user's password.
+### 2.1 Limited access
 
-### 2.2 The 4 Roles of OAuth 2.0
-To understand the flow of OAuth 2.0, it is essential to grasp the following four roles:
+OAuth 2.0 lets a client obtain an access token on behalf of a resource owner or on its own behalf. Delegating access without giving the user's password to the client is an important feature of the authorization code flow.
 
-1. **Resource Owner** : The owner of the data (resource). Usually refers to the "User".
-2. **Client** : The application attempting to access the user's data.
-3. **Authorization Server** : The server that authenticates the user, verifies access rights, and then issues an access token to the client.
-4. **Resource Server** : The server that holds the user's data and grants access to it by verifying the access token.
+### 2.2 Four roles
 
-### 2.3 OAuth 2.0 Grant Types (Authorization Methods)
+1. **Resource Owner**: a principal capable of granting access to a protected resource. It need not be a human user.
+2. **Client**: an application that uses protected resources.
+3. **Authorization Server**: a server that checks authorization, client authentication, and other conditions required by the applicable flow and issues tokens.
+4. **Resource Server**: a server that validates tokens and permissions and provides protected resources.
 
-OAuth 2.0 defines multiple "grant types (token acquisition flows)" according to the characteristics of the client.
+### 2.3 Main grant types
 
-#### 1. Authorization Code Grant
-This is the most secure and commonly used flow. It is suitable for applications that can securely hold a client secret (those with a backend server), such as Web applications.
+#### Authorization Code Grant
 
-#### 2. Implicit Grant
-A flow created for applications that cannot hold a client secret, such as SPAs (Single Page Applications). However, it is **currently deprecated** due to security risks like the access token being exposed in URL fragments. Even for SPAs, the "Authorization Code Grant + PKCE" described later should be used.
+The authorization response returns a short-lived code, which is exchanged for an access token at the token endpoint. Both **confidential clients**, which can protect credentials on a server, and **public clients**, such as SPAs and native apps, can use this flow with PKCE. Embedding a client secret in distributed application code or a browser does not make it confidential.
 
-#### 3. Resource Owner Password Credentials Grant
-A flow where the client directly receives the user's ID and password and sends them to the authorization server to obtain a token. It is used only for extremely limited purposes such as migrating legacy systems. It is **currently deprecated** for security reasons.
+#### Implicit Grant
 
-#### 4. Client Credentials Grant
-A flow used for system-to-system (M2M: Machine to Machine) communication without user involvement. The client itself acts as the resource owner.
+This grant returns an access token directly in the authorization response. It carries risks of token leakage, injection, and replay. RFC 9700 says clients SHOULD NOT use it unless the specified risks are mitigated. For a new configuration, choose authorization code with PKCE. Do not interpret this recommendation as an identical prohibition on every OIDC response type.
 
-### 2.4 Deep Dive: Authorization Code Flow + PKCE (Proof Key for Code Exchange)
+#### Resource Owner Password Credentials Grant (ROPC)
 
-SPAs and mobile apps cannot safely conceal client secrets. Therefore, **PKCE** (RFC 7636) was introduced to prevent Authorization Code Interception Attacks.
+In this grant the client receives the user's password directly. Although RFC 6749 describes it, the updated security guidance in RFC 9700 says it MUST NOT be used. Do not present legacy system migration as a recommended exception.
 
-The mechanism of PKCE is as follows:
-Before starting an authorization request, the client generates a random string `code_verifier`, hashes it, and creates a `code_challenge`.
+#### Client Credentials Grant
 
-The mathematical representation is as follows:
+A confidential client authenticates itself to obtain a token. It can access resources under its control, or another resource owner's resources under an arrangement with the authorization server. This commonly supports machine-to-machine communication without end-user interaction; the client does not necessarily become the resource owner.
+
+### 2.4 Authorization code and PKCE
+
+PKCE (Proof Key for Code Exchange) binds the client starting an authorization request to the client exchanging the code for tokens, helping protect against code interception and injection. Public clients must use it, and it is recommended for confidential clients too. It does not replace the client authentication required of a confidential client.
+
+For each authorization transaction, the client generates a new, secret `code_verifier`. RFC 7636 specifies 43–128 characters drawn from letters, digits, and `-._~`, and recommends at least 256 bits of entropy. Encoding 32 cryptographically random bytes as unpadded Base64url produces 43 characters.
+
+For `S256`, the challenge is calculated as follows. Omit trailing `=` padding from Base64url.
+
 $$
-\text{code\_challenge} = \text{BASE64URL-ENCODE}( \text{SHA256}( \text{code\_verifier} ) )
+\text{code\_challenge}=\operatorname{BASE64URL}\!\left(\operatorname{SHA256}\!\left(\operatorname{ASCII}(\text{code\_verifier})\right)\right)
 $$
 
-#### Sequence Diagram of Authorization Code Flow with PKCE
+Send `code_challenge` and `code_challenge_method=S256` in the authorization request, and send the `code_verifier` retained for that transaction in the token request. The server checks it using the method and challenge recorded with the code. Do not fall back to `plain` because `S256` failed.
+
+#### Flow overview
 
 ```mermaid
 sequenceDiagram
     autonumber
-    participant U as "User"
-    participant C as "Client (SPA/App)"
-    participant AS as "Authorization Server"
-    participant RS as "Resource Server"
-
-    Note over C: "Generate code_verifier and code_challenge"
-    C->>U: "Request for login/authorization"
-    U->>AS: "Authorization request (including code_challenge)"
-    AS-->>U: "Login screen / Consent screen"
-    U->>AS: "Enter authentication info / Grant permissions"
-    AS-->>C: "Issue Authorization Code"
-    Note over C: "Receive Authorization Code"
-    C->>AS: "Token request (Authorization Code + code_verifier)"
-    Note over AS: "Verify code_verifier (Match SHA256 hash)"
-    AS-->>C: "Issue Access Token (+ ID Token)"
-    C->>RS: "Resource request (Attach Access Token)"
-    RS-->>C: "Return protected resource"
+    participant U as "User / browser"
+    participant C as "Client"
+    participant AS as "Authorization server / OIDC OP"
+    participant RS as "Resource server"
+    Note over C: "Retain a verifier and state per transaction; also a nonce for OIDC"
+    C->>U: "Redirect to authorization endpoint"
+    U->>AS: "Authorization request: challenge and S256; openid and nonce for OIDC"
+    AS-->>U: "Request authentication and consent as needed"
+    U->>AS: "Authenticate and authorize"
+    AS-->>U: "Redirect to registered redirect_uri with code and state"
+    U->>C: "Callback: code and state"
+    Note over C: "Check transaction, state, and expected issuer"
+    C->>AS: "Exchange code with verifier and required client authentication"
+    Note over AS: "Validate code, bindings, and PKCE"
+    AS-->>C: "Access token; also an ID token for OIDC"
+    Note over C: "For OIDC, validate ID token and nonce"
+    C->>RS: "Call API using access token"
+    RS-->>C: "Validate token and permissions, then return resource"
 ```
 
-#### PKCE Generation Implementation Example (JavaScript / Web Crypto API)
+This is a successful-flow overview. Protect communication with TLS. Implementations must also handle redirect validation, single-use codes, error responses, transaction expiration, and mix-up defenses when using multiple authorization servers.
 
-The following code is an example of generating the parameters necessary for PKCE in a JavaScript environment.
+#### Generating PKCE parameters (JavaScript / Web Crypto API)
+
+These browser functions require a secure context such as HTTPS. `generatePkce()` only returns parameters: it does not send an authorization request or store the transaction. Keep the verifier out of logs and URLs, bind it to the initiating browser transaction, and discard it after exchange or expiration.
 
 ```javascript
-// Generate a random string (code_verifier)
+function base64url(bytes) {
+    return btoa(String.fromCharCode(...bytes))
+        .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
 function generateCodeVerifier() {
-    const array = new Uint32Array(56 / 2);
-    window.crypto.getRandomValues(array);
-    return Array.from(array, dec => ('0' + dec.toString(16)).substr(-2)).join('');
+    const bytes = new Uint8Array(32);
+    crypto.getRandomValues(bytes);
+    return base64url(bytes);
 }
 
-// Calculate SHA-256 hash and Base64URL encode (code_challenge)
 async function generateCodeChallenge(codeVerifier) {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(codeVerifier);
-    const hashBuffer = await window.crypto.subtle.digest('SHA-256', data);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    const base64String = btoa(String.fromCharCode.apply(null, hashArray));
-    return base64String.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    if (typeof codeVerifier !== 'string' ||
+        codeVerifier.length < 43 || codeVerifier.length > 128 ||
+        /[^A-Za-z0-9._~-]/.test(codeVerifier)) {
+        throw new TypeError('Invalid PKCE verifier');
+    }
+    const data = new TextEncoder().encode(codeVerifier);
+    const digest = await crypto.subtle.digest('SHA-256', data);
+    return base64url(new Uint8Array(digest));
 }
 
-// Execution example
-const codeVerifier = generateCodeVerifier();
-generateCodeChallenge(codeVerifier).then(codeChallenge => {
-    console.log("Code Verifier:", codeVerifier);
-    console.log("Code Challenge:", codeChallenge);
-});
+async function generatePkce() {
+    const code_verifier = generateCodeVerifier();
+    return {
+        code_verifier,
+        code_challenge: await generateCodeChallenge(code_verifier),
+        code_challenge_method: 'S256'
+    };
+}
 ```
 
----
+This encodes every bit of the 32 random bytes. The former example concatenated only the last two hexadecimal digits of each of 28 random 32-bit integers, retaining 224 bits despite drawing 896 bits; it has been corrected.
 
-## 3. Complete Understanding of OIDC (OpenID Connect)
+## 3. OIDC and ID tokens
 
-### 3.1 What is OIDC?
-**OpenID Connect (OIDC)** is a simple and powerful identity layer for **Authentication** built on top of OAuth 2.0. While OAuth 2.0 is responsible for "granting access rights (authorization)", OIDC is responsible for "verifying the user's identity (authentication)".
+### 3.1 Adding an authentication layer
 
-By using OIDC, the client can obtain an **ID Token** that contains the identity information of the user authenticated by the authorization server (called the OpenID Provider, OP, in the OIDC world).
+With OIDC, the client (Relying Party) requests authentication using the `openid` scope, and the OpenID Provider (OP) returns the result in an ID token. Users need not enter a password every time: the OP may use an existing session or another authentication method.
 
-### 3.2 Difference Between ID Token and Access Token
-Do not confuse the roles of the two tokens in OAuth 2.0 / OIDC.
+### 3.2 Keep token purposes separate
 
-- **Access Token** : A "key" to access an API (Resource Server). It is usually used by attaching it to the Authorization header of an API request without decoding its contents (often an Opaque token).
-- **ID Token** : A "business card" or "certificate" containing the user's authentication results and attribute information (profile). It is always issued in **JWT (JSON Web Token)** format, and the client uses the user information by decoding it. **It must not be used as an API access permission.**
+- **Access token**: a credential for accessing a resource server. It may be a JWT or an opaque string; OAuth 2.0 does not prescribe a single format. Clients should follow the API's requirements rather than assume an internal structure.
+- **ID token**: a JWT representing an authentication result for the client. Validate its signature, claims, and binding to the authentication request before using it. Decoding alone is insufficient, and it must not be sent as a substitute for an API access token.
 
-### 3.3 JWT (JSON Web Token) Structure and Verification
+### 3.3 JWT structure and signatures
 
-The ID token is expressed in JWT format. A JWT consists of three Base64URL-encoded strings separated by a `.` (dot).
+This section describes **JWS Compact Serialization** for a signed, unencrypted JWT, consisting of three dot-separated parts. JWTs can also be encrypted as JWE or nested; they do not always have three parts.
 
-1. **Header** : Indicates the token type (JWT) and the signing algorithm (e.g., RS256).
-2. **Payload** : Contains user information and token metadata (claims).
-3. **Signature** : An encrypted signature proving that the token has not been tampered with.
+1. **Header**: fields such as the signature algorithm `alg` and key identifier `kid`.
+2. **Payload**: claims such as issuer, audience, expiration, and subject.
+3. **Signature**: a signature or MAC generated by the specified algorithm. RS256, discussed here, uses an RSA digital signature.
 
-#### Main Claims Included in Payload
-- `iss` (Issuer) : Token issuer (OP URL)
-- `sub` (Subject) : Unique identifier for the user
-- `aud` (Audience) : The client (Client ID) that should receive this token
-- `exp` (Expiration Time) : Token expiration time
-- `iat` (Issued At) : Token issue time
+The header and payload are only Base64url-encoded. Signing does not hide their contents. See also [the differences between encryption, hashing, and signatures]({{< relref "post/modern-cryptography-public-key-hash-signature/index.en.md" >}}).
 
-#### JWT Signature Verification Logic
+#### Main required ID token claims
 
-A client that receives an ID token must verify the signature. When an [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) algorithm (like RS256) is used, the verification is done by retrieving the public key (JWKS) published by the OP.
+- `iss`: the OP's issuer identifier, which must exactly match the expected issuer.
+- `sub`: a subject identifier that is unique and never reassigned within that issuer. Combine it with `iss` when identifying users across multiple OPs.
+- `aud`: the intended recipient or recipients. Check that it includes the client's `client_id`, and do not accept additional untrusted audiences.
+- `exp`: expiration time. The current time must be before it.
+- `iat`: issuance time. Client policy determines acceptable age and related restrictions.
 
-The mathematical model for signature generation is expressed by the following formula:
+If a `nonce` was sent in the authentication request, require that claim and check its value. Requesting additional claims or `max_age` also requires corresponding validation.
+
+#### What RS256 signs
+
+Let `H` be the UTF-8 protected header, `P` the UTF-8 payload, and `B64u` unpadded Base64url. The bytes to be signed are defined below; `||` denotes concatenation.
+
 $$
-\text{Signature} = \text{Sign}_{\text{PrivateKey}}( \text{SHA256}( \text{Base64Url}(\text{Header}) + "." + \text{Base64Url}(\text{Payload}) ) )
+M=\operatorname{ASCII}\!\left(\operatorname{B64u}(H)\,||\,\texttt{.}\,||\,\operatorname{B64u}(P)\right),\qquad S=\operatorname{Sign}_{\mathrm{RS256}}(sk,M)
 $$
 
-During verification, it is decrypted using the public key to confirm that the hash value matches.
+RS256 uses RSASSA-PKCS1-v1_5 with SHA-256. Hashing is part of that signature algorithm; the equation does not add an extra outer hash. The token's third part is `B64u(S)`. Verify it using a trusted OP key and the specified algorithm, rather than describing signature verification generally as public-key decryption.
 
-#### ID Token (JWT) Decoding Example (Python)
+Do not let an unverified token choose allowed algorithms or where keys are fetched. Use trusted JWKS obtained from verified OP configuration or Discovery, and handle key rotation and caching. Use `kid` to select within that trusted key set; do not fetch keys from an arbitrary URL supplied by the token.
 
-The following code is an example of verifying and decoding an ID token using Python's `PyJWT` library.
+#### A partial validation example in Python
+
+The following PyJWT function supports a deliberately limited configuration: **RS256, no encryption, a single string audience, and a nonce already sent in the request**. The caller supplies `signing_key`, a public key from the trusted OP's JWKS. Required claims must be present as well as valid. If `azp` is present, this configuration requires it to equal `client_id`.
+
+This function does not complete a login. The caller must validate and manage the callback's relationship to the initiating transaction, state, code exchange, expected issuer, and single use of the nonce. Multiple audiences, encryption, additional authentication requirements, `max_age`, and `acr` are outside this example's scope.
 
 ```python
+import hmac
+import math
 import jwt
-from jwt import PyJWKClient
 
-# Issuer's JWKS (JSON Web Key Set) endpoint
-jwks_url = "https://example.com/.well-known/jwks.json"
-jwk_client = PyJWKClient(jwks_url)
 
-id_token = "eyJhbGciOiJSUzI1NiIs..." # Acquired ID token
-client_id = "your_client_id"
-issuer = "https://example.com"
-
-try:
-    # Identify the key (kid) used from the token header and get the public key
-    signing_key = jwk_client.get_signing_key_from_jwt(id_token)
-    
-    # Simultaneously verify the signature, aud (Audience), iss (Issuer), and exp (Expiration Time)
-    decoded_payload = jwt.decode(
+def verify_id_token(id_token, signing_key, *, issuer, client_id, expected_nonce):
+    if not isinstance(expected_nonce, str) or not expected_nonce:
+        raise ValueError('A nonce from the stored transaction is required')
+    claims = jwt.decode(
         id_token,
-        signing_key.key,
-        algorithms=["RS256"],
+        signing_key,
+        algorithms=['RS256'],
         audience=client_id,
-        issuer=issuer
+        issuer=issuer,
+        options={
+            'require': ['iss', 'sub', 'aud', 'exp', 'iat', 'nonce'],
+            'strict_aud': True,
+        },
     )
-    print("Authentication successful. User ID:", decoded_payload["sub"])
-    print("Username:", decoded_payload.get("name"))
-
-except jwt.ExpiredSignatureError:
-    print("Error: The token has expired.")
-except jwt.InvalidTokenError as e:
-    print(f"Error: Invalid token. Details: {e}")
+    for name in ('exp', 'iat'):
+        value = claims[name]
+        if (isinstance(value, bool) or not isinstance(value, (int, float))
+                or (isinstance(value, float) and not math.isfinite(value))):
+            raise jwt.InvalidTokenError('Invalid NumericDate')
+    subject = claims['sub']
+    if (not isinstance(subject, str) or not subject or not subject.isascii()
+            or len(subject) > 255):
+        raise jwt.InvalidTokenError('Invalid subject')
+    nonce = claims['nonce']
+    if (not isinstance(nonce, str) or not hmac.compare_digest(
+            nonce.encode('utf-8'), expected_nonce.encode('utf-8'))):
+        raise jwt.InvalidTokenError('Nonce mismatch')
+    if 'azp' in claims and claims['azp'] != client_id:
+        raise jwt.InvalidTokenError('Authorized party mismatch')
+    return claims
 ```
 
----
+The return value contains claims validated within that scope. Do not announce successful authentication based only on a valid signature, or link accounts using an unverified name or email address.
 
-## 4. Security and Best Practices
+## 4. Security considerations
 
-When implementing OAuth 2.0 and OIDC, a number of security risks must be considered.
+### 4.1 state, nonce, PKCE, and CSRF
 
-### 4.1 [CSRF](https://kenji.blog/en/p/web-application-vulnerability-owasp-top-10/) Prevention with State Parameter
-By including an unpredictable `state` parameter during the authorization request and verifying that it matches during the callback, you prevent Cross-Site Request Forgery ([CSRF](https://kenji.blog/en/p/web-application-vulnerability-owasp-top-10/)) attacks.
+When using `state`, securely bind an unpredictable value to the initiating browser transaction. At the callback, check its value, expiration, and unused status, then consume it. String equality alone does not prevent every kind of [CSRF]({{< relref "post/cross-site-scripting-xss-csrf-security/index.en.md" >}}).
 
-### 4.2 Token Lifetime and Calculation
-To maintain security, it is a best practice to set the access token's lifetime (`exp`) to be short (e.g., 15 minutes to 1 hour). When it expires, a Refresh Token is used to obtain a new access token.
+RFC 9700 also describes relying on PKCE's CSRF protection after establishing server support, and using an OIDC nonce. These protections still require transaction-specific binding and proper validation. `state`, `nonce`, and PKCE have different roles; constant values or omitted comparisons do not provide the intended protection. Multiple authorization servers additionally require a mix-up defense.
 
-The determination of whether a token is valid is based on the following inequality. Here, the current time is $ T_{now} $, the token issue time is $ T_{iat} $, and the lifetime is $ D_{lifetime} $.
+### 4.2 Expiration and refresh tokens
+
+A short access-token lifetime is one way to limit the useful lifetime of a stolen token. A value such as 15 minutes is a design example, not a universal requirement. When checking a signed JWT's `exp`, the expiration condition is:
 
 $$
-T_{now} < T_{iat} + D_{lifetime} \quad (\text{or simply } T_{now} < T_{exp})
+T_{\mathrm{now}}<T_{\mathrm{exp}},\qquad T_{\mathrm{now}}<T_{\mathrm{iat}}+D_{\mathrm{lifetime}}\ \text{only if}\ T_{\mathrm{exp}}=T_{\mathrm{iat}}+D_{\mathrm{lifetime}}
 $$
 
-### 4.3 Selecting OIDC Flow
-Whether for Web applications or mobile apps, the most recommended flow currently is **Authorization Code Flow + PKCE**. Since the Implicit flow is no longer considered safe, it must absolutely not be used in new developments.
+This checks expiration only; it does not establish overall token validity or access permission. Also validate the algorithm, key, issuer, audience, and, where applicable, `nbf`, revocation status, and binding to the authentication request. Manage any allowed clock skew explicitly.
+
+Issuing refresh tokens is optional. Without one, a client may need a new authorization transaction. RFC 9700 requires sender constraints or rotation for refresh tokens issued to public clients. Revoking a refresh token does not necessarily invalidate previously issued access tokens immediately.
+
+### 4.3 Choosing a flow and implementation
+
+For user-interactive web, SPA, and native applications, start with authorization code and PKCE, then choose a configuration appropriate to the client type, token storage, provider support, and threat model. Do not impose that flow on every use case, such as machine-to-machine client credentials.
 
 ## Conclusion
 
-In this article, we deeply explored the differences between **OAuth 2.0** and **OIDC**, as well as the difference in the core concepts of "Authorization" and "Authentication".
-- **OAuth 2.0** is an "Authorization (permission granting)" framework.
-- **OIDC** is an "Authentication (identity verification)" protocol built on top of it.
-- In modern applications, using the **Authorization Code Flow + PKCE** is the de facto standard for security.
+Use OAuth 2.0 access tokens for resource access and validate OIDC ID tokens as authentication results intended for the client. Check the code's binding to PKCE, the signature, required claims, nonce, and the callback's relationship to the initiating transaction.
 
-By correctly understanding these specifications and mechanisms, and implementing appropriate flows and verification logic, let's achieve safe and robust identity management.
+## References
+
+- [RFC 6749: OAuth 2.0](https://www.rfc-editor.org/rfc/rfc6749.html) (roles, tokens, and client credentials; see RFC 9700 for updated security guidance)
+- [RFC 7636: PKCE](https://www.rfc-editor.org/rfc/rfc7636.html) (Section 4, Section 7.1, and Appendix B)
+- [RFC 9700: OAuth 2.0 Security BCP](https://www.rfc-editor.org/rfc/rfc9700.html) (Sections 2.1, 2.2.2, and 2.4)
+- [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html) (Sections 2, 3.1.3.7, and 5.7)
+- [RFC 7515: JWS](https://www.rfc-editor.org/rfc/rfc7515.html) (Sections 3.1 and 5.1)
+- [PyJWT API](https://pyjwt.readthedocs.io/en/stable/api.html) (allowed algorithms, required claims, and audience validation)

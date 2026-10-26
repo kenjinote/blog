@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T00:56:56.621377+09:00",
+  "reviewer": "Codex (AI)",
+  "source": "post/oauth2-oidc-authentication-authorization-difference/index.md",
+  "sourceHash": "9d8cab17523664c637a70c6071bd1b0004d024663b7fc06a3dc75da5efdc3266",
+  "englishHash": "ada46fa39b825352930d180234079cf8cb43e21637039543b38a4982d23187ff",
+  "metadataAndFullBodyRead": [
+    "ja",
+    "en"
+  ],
+  "sourceReviewComplete": false,
+  "translationsReviewed": [],
+  "ledgerRecordsAdded": 0,
+  "confirmedIssues": [
+    "PKCE verifier truncates 28 random 32-bit words to 56 hex digits, retaining at most 224 random bits rather than the recommended 256; both original JavaScript blocks reproduced this. S256 hashing itself passes the RFC test vector.",
+    "Original jwt.decode calls accept missing exp/iat/sub and missing or wrong nonce; azp and untrusted additional audiences also need application/profile checks. Missing sub raises KeyError in the later print, not a validation success.",
+    "Authentication table overgeneralizes ID tokens; authorization code is wrongly restricted to confidential clients; client credentials does not always make the client the resource owner.",
+    "ROPC recommendation must reflect RFC 9700 MUST NOT; implicit access-token response guidance must retain its conditions and normative strength.",
+    "JWT three-part structure applies to JWS Compact, not all JWTs; signing is not encryption or generic public-key decryption. Signature inputs need explicit bytes and algorithm semantics.",
+    "ID-token decoding is not authentication; claim presence, issuer-scoped subject identity, transaction nonce, trusted key acquisition and callback bindings need explanation.",
+    "Expiry alone is not validity; iat plus lifetime is equivalent only with the stated exp construction; refresh issuance and revocation behavior depend on the design."
+  ],
+  "reproduction": "docs/translation-review/batch-012-source-reproduction.json",
+  "primaryReferences": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7636.html",
+      "readScope": "Sections 4.1-4.3, 7.1-7.2 and Appendix B excerpts; not the whole RFC.",
+      "finding": "Verifier syntax, recommended entropy, S256 input/encoding, explicit method and published test vector."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+      "readScope": "Sections 2.1, 2.1.1, 2.1.2 and 2.4 in this audit; refresh sections 2.2.2 and 4.14 read for preceding JWT review. Not all attack sections.",
+      "finding": "Public/confidential PKCE guidance, transaction binding, CSRF and mix-up requirements; distinct implicit and ROPC recommendations."
+    },
+    {
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "readScope": "Section 2 claim definitions, 3.1.3.5-3.1.3.8 and 5.7; relevant overview excerpts, not the entire specification.",
+      "finding": "Required claims, nonce validation, issuer/audience/key checks, algorithm and response context; stable subject identity uses issuer plus subject."
+    },
+    {
+      "url": "https://pyjwt.readthedocs.io/en/stable/api.html",
+      "readScope": "decode algorithm warning and options require, strict_aud and verify_* entries, PyJWT 2.15.1. Not full library or protocol audit.",
+      "finding": "Presence is distinct from conditional claim validation; a generic decoder does not implement all OIDC transaction checks."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc6749.html",
+      "readScope": "Abstract, section 4.4 and 4.4.1-4.4.3; token format/refresh excerpts previously read for JWT audit. Older password advice superseded by RFC 9700.",
+      "finding": "Client credentials is for confidential clients and can cover prearranged access to another resource owner's resources."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7515.html",
+      "readScope": "Abstract, section 5.1 steps 4-8 and compact-serialization validation excerpt. Not all JOSE algorithms or appendices.",
+      "finding": "JWS signature/MAC is separate from encryption and covers the specified ASCII signing input."
+    }
+  ],
+  "remainingWork": [
+    "Correct and validate the Japanese source and English revision, then review the other eleven translations in full.",
+    "Do not add ledger confirmations on the basis of this preliminary audit.",
+    "Build/HTML/multilingual/HTTPS checks and publication verification remain pending."
+  ]
+}

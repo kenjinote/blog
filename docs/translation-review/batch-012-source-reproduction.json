@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T00:51:12.164240+09:00",
+  "reviewer": "Codex (AI)",
+  "purpose": "Reproduce defects in the unmodified Japanese and English examples before correction; not a completed translation review.",
+  "runtime": {
+    "node": "v22.14.0",
+    "pyjwt": "2.15.1",
+    "cryptography": "50.0.2"
+  },
+  "languages": {
+    "ja": {
+      "path": "post/oauth2-oidc-authentication-authorization-difference/index.md",
+      "normalizedSha256": "9d8cab17523664c637a70c6071bd1b0004d024663b7fc06a3dc75da5efdc3266",
+      "pkce": {
+        "requestedRandomWords": 28,
+        "requestedRandomBits": 896,
+        "outputHexCharacters": 56,
+        "retainedRandomBitsMaximum": 224,
+        "changingUpper24BitsPerWordPreservesVerifier": true,
+        "s256AppendixBVectorPassed": true
+      },
+      "jwtDecodeExpressionCases": [
+        {
+          "case": "complete",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "missing_exp",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "missing_iat",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "missing_sub",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "missing_nonce",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "wrong_nonce",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "wrong_azp",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "additional_untrusted_audience",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "expired",
+          "decoderAccepted": false,
+          "exception": "ExpiredSignatureError"
+        },
+        {
+          "case": "wrong_issuer",
+          "decoderAccepted": false,
+          "exception": "InvalidIssuerError"
+        },
+        {
+          "case": "wrong_audience",
+          "decoderAccepted": false,
+          "exception": "InvalidAudienceError"
+        },
+        {
+          "case": "wrong_signature",
+          "decoderAccepted": false,
+          "exception": "InvalidSignatureError"
+        }
+      ],
+      "displayMathCount": 3,
+      "javascriptBlocks": 1,
+      "pythonBlocks": 1,
+      "mermaidGraphs": 1
+    },
+    "en": {
+      "path": "post/oauth2-oidc-authentication-authorization-difference/index.en.md",
+      "normalizedSha256": "ada46fa39b825352930d180234079cf8cb43e21637039543b38a4982d23187ff",
+      "pkce": {
+        "requestedRandomWords": 28,
+        "requestedRandomBits": 896,
+        "outputHexCharacters": 56,
+        "retainedRandomBitsMaximum": 224,
+        "changingUpper24BitsPerWordPreservesVerifier": true,
+        "s256AppendixBVectorPassed": true
+      },
+      "jwtDecodeExpressionCases": [
+        {
+          "case": "complete",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "missing_exp",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "missing_iat",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "missing_sub",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "missing_nonce",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "wrong_nonce",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "wrong_azp",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "additional_untrusted_audience",
+          "decoderAccepted": true,
+          "exception": null
+        },
+        {
+          "case": "expired",
+          "decoderAccepted": false,
+          "exception": "ExpiredSignatureError"
+        },
+        {
+          "case": "wrong_issuer",
+          "decoderAccepted": false,
+          "exception": "InvalidIssuerError"
+        },
+        {
+          "case": "wrong_audience",
+          "decoderAccepted": false,
+          "exception": "InvalidAudienceError"
+        },
+        {
+          "case": "wrong_signature",
+          "decoderAccepted": false,
+          "exception": "InvalidSignatureError"
+        }
+      ],
+      "displayMathCount": 3,
+      "javascriptBlocks": 1,
+      "pythonBlocks": 1,
+      "mermaidGraphs": 1
+    }
+  },
+  "limitations": [
+    "Offline fixtures only; no real identity provider, JWKS HTTP request, browser navigation, login session or penetration test.",
+    "Randomness experiment proves truncation, not practical guessability or a successful attack.",
+    "Library JWT decoding is tested separately from the article output; missing sub also causes KeyError in the original subsequent print statement."
+  ]
+}

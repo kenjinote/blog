@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/oauth2-oidc-authentication-authorization-difference/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/oauth2-oidc-authentication-authorization-difference/index.md",
+      "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+      "translationHash": "fd57cc3caf823c5a70d9277e8437712409799bfec2bad3a958a3a1d2ec8a6033",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Japanese and English articles and corrected full bodies and metadata. Compared all sections: authentication versus authorization, four OAuth roles, public versus confidential clients, current grant guidance, transaction-specific PKCE, authorization redirect and code exchange, OIDC scope and token purposes, signed versus encrypted JWTs, key trust and claims validation, state/nonce and CSRF conditions, expiry and refresh lifecycle. Corrected source factual errors and independently reread the complete Japanese and English revisions, including the ten message edges and notes in the sequence diagram."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished authentication from authorization, authorization grant from access control, confidential from public client, code interception from injection, encoding from encryption, signature from generic decryption, subject identity within an issuer, audience from authorized party, and nonce from state and PKCE. Retained MUST NOT for ROPC, conditional SHOULD NOT for implicit access-token responses, and explicit limits of the single-audience RS256 example. Changed the overbroad complete-anatomy metadata to describe the actual scope."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all three display formulas and their premises: ASCII verifier input and unpadded Base64url for S256; JWS ASCII signing input and algorithm-internal hashing; expiration versus iat+lifetime only under the defined exp construction. The RFC PKCE vector passed, independent cryptography verification confirmed the RS256 input, extra hashing failed, and before/at/after-expiry plus a non-equivalent-lifetime counterexample were checked."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed both extracted JavaScript and Python blocks per language using Node v22.14.0, PyJWT 2.15.1 and cryptography. JS checks covered 32-byte encoding and upper-bit retention, the RFC vector, valid lengths 43/128, twelve invalid inputs including trailing newlines, and returned S256 parameter binding. Each Python block passed 38 cases covering required claims, nonce, strict audience, azp, claim types, signature, algorithm none, issuer, expiry, nbf and transaction nonce arguments. AST and exact JavaScript equality checked. These are offline component fixtures, not a complete login or provider-conformance test."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six primary-reference URLs and their actual read scopes recorded in the source audit. Verified matching-language cryptography and XSS/CSRF relref targets, eyecatch, original publication timestamp and new lastmod. Corrected HTML markers and links passed. Hugo built the fourteen-bundle preview (including an unreviewed dependency); multilingual checks passed 973 pages and HTTPS checks passed 1,804 HTML/41 XML files. Initial missing-dependency preview failure and resolution retained. Publication pending."
+        }
+      },
+      "summary": "Full English review of OAuth/OIDC roles, updated grant guidance, PKCE generation, ID-token validation and security conditions, including source corrections and executed code examples.",
+      "languageSpecificFindings": "Replaced misleading off-label authentication, always-three-parts JWT, encrypted-signature/public-key-decryption descriptions and authentication-success output. Preserved exact normative strength, transaction bindings, conditional refresh issuance, issuer-scoped identity and restricted example profile. Full English title, description, prose, equations, diagram labels and code were compared with the corrected Japanese source.",
+      "limitations": [
+        "AI technical and editorial review, not a native-speaker or human confirmation.",
+        "No live OP, network JWKS fetch, browser login, session-security audit or penetration test.",
+        "Mermaid source and HTML checked; visual diagram rendering was not inspected.",
+        "Eleven other translations remain unreviewed and retain their old content.",
+        "Publication verification pending."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://www.rfc-editor.org/rfc/rfc7636.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://www.rfc-editor.org/rfc/rfc7515.html",
+        "https://pyjwt.readthedocs.io/en/stable/api.html"
+      ],
+      "validation": "docs/translation-review/batch-012-validation.json"
+    }
+  }
+}
