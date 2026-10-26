@@ -38,3 +38,6 @@
 
 
 追記（2026-10-27、ポルトガル語）：旧本文と改訂後の全文を照合。ブラジル語調でcorpo primo／ordem do subgrupo／multiplicação escalar、chave privadaとsegredo compartilhado、acordo de chavesとcifração／assinaturas、tempo constanteとvariávelを区別。grupo matematicamente perfeitoを単位元を含む群の説明へ、dobrar interseçõesを交点の反射へ訂正した。11表示数式・3図15辺・5C++ブロック、13スカラー差分と13拒否例、剰余・逆元・無限遠点・交換を実行し、59TeX表現のHTML保持も確認。15記事束のHugo・多言語・HTTPS検査を通過。現在6翻訳が現行原文に対応し、他6翻訳と公開確認は未完了。
+
+
+追記（2026-10-27）：ECC記事のフランス語を全文照合し、corps／ordre／scalaire、鍵合意と暗号化・署名、定数／可変時間を整理。群の完備性を示唆する表現と語の途中の誤リンクを訂正した。11表示数式・3図15辺・5C++ブロック連結実行、13スカラー差分／13拒否例、59TeX表現のHTML保持、リンクと日付を確認。AI確認日2026-10-27を記録し、15記事束のHugo・多言語1,050ページ・HTTPS HTML1,945件／XML41件を通過。ECCの残る5翻訳と公開確認は未完了。
