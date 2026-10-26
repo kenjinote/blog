@@ -1,8 +1,9 @@
 ---
 title: "Fondamentaux de la cryptographie moderne (cryptographie à clé publique, fonctions de hachage, signatures numériques)"
-description: "Explication approfondie du fonctionnement des technologies de cryptographie moderne, de la clé symétrique et publique au hachage et aux signatures numériques."
+description: "Clés symétriques et publiques, RSA, courbes elliptiques, hachage, signatures et PKI : rôles et conditions, avec formules et exemples Python."
 slug: "modern-cryptography-public-key-hash-signature"
 date: "2026-09-22T08:00:00+09:00"
+lastmod: "2026-10-27"
 image: "eyecatch.jpg"
 categories:
     - "security"
@@ -12,108 +13,106 @@ tags:
     - "hash"
     - "digital-signature"
     - "rsa"
-
 ---
 
-Dans la société Internet d'aujourd'hui, la **sécurité de l'information** est devenue une infrastructure indispensable pour garantir la confidentialité, l'intégrité et la disponibilité des informations. La technologie de **cryptographie moderne** est à la base de tout cela. Cet article fournit une explication très détaillée et exhaustive des fondements de la cryptographie moderne : la **cryptographie à clé publique** , les **fonctions de hachage** et les **signatures numériques** , allant de leur contexte mathématique à la structure d'algorithmes spécifiques et à des exemples d'implémentation utilisant Python.
+La cryptographie contribue à la confidentialité, à l'intégrité et à l'authentification. Elle ne garantit pas, à elle seule, tous les aspects de la sécurité de l'information, dont la disponibilité. Cet article présente les rôles des clés symétriques et publiques, les bases mathématiques de RSA et des courbes elliptiques, les fonctions de hachage, les signatures numériques et la PKI. Nous distinguons l'explication mathématique des conditions requises par les schémas et protocoles réellement utilisés.
 
----
+## 1. Rôles des clés symétriques et publiques
 
-## 1. Évolution des technologies de cryptographie : de la cryptographie à clé symétrique à la cryptographie à clé publique
+### 1.1. Chiffrement symétrique et distribution des clés
 
-### 1.1. La cryptographie à clé symétrique et ses limites
-La méthode de cryptographie traditionnellement utilisée est la **cryptographie à clé symétrique** (Symmetric-key cryptography), qui utilise la même clé pour le chiffrement et le déchiffrement. Un algorithme représentatif est l'AES (Advanced Encryption Standard). La cryptographie à clé symétrique a l'avantage d'avoir des vitesses de traitement rapides, mais sa plus grande faiblesse est le **problème de distribution des clés** (Key Distribution Problem).
+Le **chiffrement symétrique** utilise une clé secrète partagée pour chiffrer et déchiffrer. AES est un exemple de chiffrement par blocs. Ces techniques conviennent aux volumes importants de données, mais les parties doivent partager la clé de façon sûre. Le chiffrement seul ne détecte pas nécessairement les modifications ; les communications réelles utilisent la protection exigée par leur protocole, comme le chiffrement authentifié.
 
-Les deux parties communicantes doivent partager la même clé à l'avance via un canal sécurisé, mais il est extrêmement difficile de distribuer en toute sécurité des clés sur un réseau ouvert comme Internet.
+### 1.2. Différentes opérations à clé publique
 
-### 1.2. La naissance de la cryptographie à clé publique
-Le problème de distribution des clés a été résolu par une approche mathématique avec la **cryptographie à clé publique** (Public-key cryptography). Dans la cryptographie à clé publique, deux clés différentes sont générées en paire : une **clé publique** (Public Key) utilisée pour le chiffrement, et une **clé privée** (Private Key) utilisée pour le déchiffrement.
+Les **techniques à clé publique** utilisent des paires de clés publique et privée, mais ne signifient pas toutes « chiffrer avec la clé publique et déchiffrer avec la clé privée ».
 
-- **Clé publique** : Une clé qui peut être révélée à tout le monde. Utilisée pour chiffrer les messages.
-- **Clé privée** : Une clé gardée strictement secrète par son propriétaire. Utilisée pour déchiffrer les textes chiffrés.
+- **Chiffrement à clé publique** : chiffrer avec la clé publique du destinataire et déchiffrer avec la clé privée correspondante.
+- **Signatures numériques** : signer avec la clé privée du signataire et vérifier avec la clé publique.
+- **Accord de clés** : dériver un secret partagé à partir du matériel cryptographique des parties, puis générer les clés de communication selon le protocole.
 
-Grâce à cette asymétrie, le destinataire publie sa clé publique dans le monde entier et l'expéditeur utilise cette clé publique pour le chiffrement. Les données chiffrées ne peuvent être déchiffrées que par le destinataire qui possède la clé privée correspondante.
+Une clé publique n'exige pas de distribution secrète, mais **son association avec l'interlocuteur prévu doit être authentifiée**. Le diagramme suivant représente uniquement le chiffrement à clé publique. Réussir à déchiffrer ne suffit pas à authentifier l'expéditeur.
 
 ```mermaid
 graph TD
-    A["Expéditeur (Alice)"]
-    B["Destinataire (Bob)"]
+    A["Expéditeur Alice"]
+    B["Destinataire Bob"]
     K_Pub["Clé publique de Bob"]
     K_Priv["Clé privée de Bob"]
-    P["Texte clair (Message)"]
+    P["Texte clair (message)"]
     C["Texte chiffré"]
-
     B -->|"Publie la clé publique"| K_Pub
     A -->|"Obtient"| K_Pub
     P -->|"Chiffre avec la clé publique de Bob"| A
     A -->|"Envoie"| C
     C -->|"Reçoit"| B
     B -->|"Déchiffre avec la clé privée de Bob"| K_Priv
-    K_Priv -->|"Restaure le texte clair"| P
+    K_Priv -->|"Restitue le texte clair"| P
 ```
 
----
+## 2. Bases mathématiques des techniques à clé publique
 
-## 2. Contexte mathématique de la cryptographie à clé publique
+L'analyse de sécurité doit distinguer les hypothèses de difficulté calculatoire, les conditions de génération des clés et la construction du schéma. Les facteurs secrets de RSA permettent l'opération inverse, mais l'accord de clés et les signatures sur courbes elliptiques ne se réduisent pas à une même « opération inverse ».
 
-La sécurité de la cryptographie à clé publique repose sur les **fonctions à sens unique** (One-way function), où « un certain calcul est facile, mais le calcul inverse est extrêmement difficile », et les **fonctions à sens unique avec trappe** , où le calcul inverse devient possible si l'on connaît des informations spécifiques (trappe : Trapdoor). Nous allons explorer ici en détail le chiffrement RSA et la cryptographie sur les courbes elliptiques ([ECC](/fr/p/elliptic-curve-cryptography-math-cpp/)), qui en sont représentatifs.
+### 2.1. Clés et opérations RSA
 
-### 2.1. Le fonctionnement du chiffrement RSA
+Rivest, Shamir et Adleman ont annoncé RSA en 1977. Il est lié à la difficulté de factoriser de grands entiers. Factoriser le module permet de retrouver une clé privée, mais l'équivalence de difficulté entre l'inversion générale de RSA et la factorisation n'est pas démontrée. La sécurité dépend aussi de l'aléa, de la génération des clés, du bourrage et de l'implémentation, pas seulement de la taille de la clé.
 
-Le chiffrement RSA a été développé en 1977 par Ron Rivest, Adi Shamir et Leonard Adleman. La sécurité du RSA repose sur la **difficulté du problème de factorisation en nombres premiers** . Il est facile de multiplier deux très grands nombres premiers, mais trouver les nombres premiers originaux à partir de leur produit ne peut être résolu dans un temps réaliste par les ordinateurs classiques actuels.
+#### 2.1.1. Génération de clés : présentation pédagogique
 
-#### 2.1.1. Algorithme de génération de clés RSA
+1. Choisir de grands nombres premiers impairs distincts $p,q$ et calculer $N=pq$.
+2. Calculer l'indicatrice d'Euler :
 
-La génération de clés RSA s'effectue selon les étapes suivantes.
+$$\phi(N)=(p-1)(q-1)$$
 
-1. Sélectionner deux très grands nombres premiers $p$ et $q$.
-2. Calculer leur produit $N = p \times q$. ($N$ est le module public).
-3. Calculer la fonction indicatrice d'Euler $\phi(N)$.
-   $ \phi(N) = (p - 1)(q - 1) $
-4. Choisir un entier $e$ tel que $1 < e < \phi(N)$ et qui soit premier avec $\phi(N)$. (Généralement, $e = 65537$ est souvent utilisé).
-5. Calculer $d$ satisfaisant la congruence suivante.
-   $ e \times d \equiv 1 \pmod{\phi(N)} $
-   Cela peut être calculé à l'aide de [l'algorithme d'Euclide](/fr/p/euclidean-algorithm/) étendu.
+3. Choisir $e$ tel que $1<e<\phi(N)$ et $\gcd(e,\phi(N))=1$. L'exemple utilise $e=65537$.
+4. Utiliser, par exemple, [l'algorithme d'Euclide](/fr/p/euclidean-algorithm/) étendu pour obtenir $1\le d<\phi(N)$ satisfaisant :
 
-Ici, $(N, e)$ devient la **clé publique** , et $d$ devient la **clé privée** ($p$ et $q$ sont détruits ou gardés strictement secrets).
+$$ed\equiv1\pmod{\phi(N)}$$
 
-#### 2.1.2. Formules de chiffrement et de déchiffrement
+La clé publique est $(N,e)$ ; une représentation élémentaire de la clé privée est $(N,d)$. Les implémentations conservent aussi $p,q$ et les valeurs nécessaires au théorème des restes chinois (CRT) pour accélérer les calculs. Ces données sont également secrètes. Nous utilisons ici $\phi(N)$ pour l'explication. Le RFC 8017 exprime la condition d'inversion avec $\lambda(N)=\operatorname{lcm}(p-1,q-1)$ ; la construction ci-dessus la satisfait également.
 
-Soit $M$ le texte clair (avec $0 \le M < N$) et $C$ le texte chiffré.
+#### 2.1.2. Opérations RSA et conditions de la démonstration
 
-**Chiffrement** (en utilisant la clé publique $e, N$) :
-$ C \equiv M^e \pmod{N} $
+Pour un représentant entier du message $0\le M<N$, les opérations primitives sont :
 
-**Déchiffrement** (en utilisant la clé privée $d, N$) :
-$ M \equiv C^d \pmod{N} $
+$$C\equiv M^e\pmod N$$
 
-Ce déchiffrement fonctionne correctement grâce au théorème d'Euler $M^{\phi(N)} \equiv 1 \pmod{N}$.
-$ C^d \equiv (M^e)^d \equiv M^{ed} \equiv M^{k\phi(N) + 1} \equiv M \cdot (M^{\phi(N)})^k \equiv M \cdot 1^k \equiv M \pmod{N} $
+$$M\equiv C^d\pmod N$$
 
-### 2.2. Cryptographie sur les courbes elliptiques (ECC: Elliptic Curve Cryptography)
+Le théorème d'Euler s'applique directement **uniquement si $\gcd(M,N)=1$**. En écrivant $ed=1+t\phi(N)$, on obtient :
 
-Bien que le chiffrement RSA soit sécurisé, il nécessite des longueurs de clé très importantes (par exemple 2048 ou 4096 bits) pour fournir une résistance suffisante. En revanche, la **cryptographie sur les courbes elliptiques** offre une sécurité équivalente avec des longueurs de clé beaucoup plus courtes.
+$$M^{ed}=M\left(M^{\phi(N)}\right)^t\equiv M\pmod N$$
 
-#### 2.2.1. Courbes elliptiques et problème du logarithme discret
+Pour les messages tels que $\gcd(M,N)\ne1$, on considère séparément $r=p$ et $r=q$. Si $M\equiv0\pmod r$, alors $M^{ed}\equiv0\pmod r$. Sinon, le petit théorème de Fermat et $(r-1)\mid(ed-1)$ donnent $M^{ed}\equiv M\pmod r$. En combinant les deux congruences par le théorème des restes chinois, on démontre la restitution correcte pour tous les $0\le M<N$.
 
-La sécurité de l'[ECC](/fr/p/elliptic-curve-cryptography-math-cpp/) repose sur la difficulté du **problème du logarithme discret sur les courbes elliptiques** (ECDLP).
-Une courbe elliptique sur un corps fini $\mathbb{F}_p$ utilisé en cryptographie est généralement exprimée sous la forme standard de Weierstrass.
+Par exemple, avec $p=61,q=53,e=17,d=2753$ et $M=61$, on a $M^{3120}\bmod3233=1220$ : l'étape utilisant le théorème d'Euler ne s'applique pas directement. RSA restitue pourtant 61 après chiffrement et déchiffrement. Cette minuscule clé sert à illustrer le calcul ; elle n'est pas sûre.
 
-$ y^2 \equiv x^3 + ax + b \pmod{p} $
+**Il ne faut pas utiliser l'exponentiation modulaire brute comme schéma de chiffrement.** Le chiffrement RSA réel exige un schéma tel que RSAES-OAEP. Avec RSA-2048 et SHA-256, l'exemple ci-dessous accepte au maximum 190 octets de texte clair (RFC 8017 §7.1.1) :
 
-(à condition que $4a^3 + 27b^2 \not\equiv 0 \pmod{p}$)
+$$m_{\mathrm{len}}\le k_{\mathrm{bytes}}-2h_{\mathrm{len}}-2=256-2\cdot32-2=190$$
 
-L'addition entre des points de la courbe elliptique (addition de points) et l'opération d'ajouter le même point de nombreuses fois (multiplication scalaire) sont définies.
-Soit $P$ le point obtenu en ajoutant un point de base de référence $G$ un total de $k$ fois.
+Les données volumineuses sont protégées par chiffrement symétrique authentifié dans un schéma hybride standard. Cet exemple ne chiffre pas directement des fichiers de longueur arbitraire avec RSA.
 
-$ P = k \times G $
+### 2.2. Courbes elliptiques et logarithme discret
 
-Ici, le problème de trouver la valeur scalaire $k$ lorsque $G$ et $P$ sont donnés est appelé le **problème du logarithme discret sur les courbes elliptiques** . Si $k$ est suffisamment grand, il est extrêmement difficile de le calculer par rétro-ingénierie.
-Dans l'[ECC](/fr/p/elliptic-curve-cryptography-math-cpp/), $k$ est la **clé privée** , et $P$ est la **clé publique** .
+Avec des paramètres appropriés, la **[cryptographie sur courbes elliptiques (ECC)](/fr/p/elliptic-curve-cryptography-math-cpp/)** peut viser une sécurité classique comparable avec des clés plus courtes que RSA. La longueur de la clé en bits n'est pas, à elle seule, le niveau de sécurité en bits.
 
-### 2.3. Exemple d'implémentation de la cryptographie à clé publique en Python
+Nous considérons ici la forme courte de Weierstrass sur le corps premier $\mathbb F_p$, avec $p>3$. Cela ne couvre pas toutes les représentations de courbes elliptiques :
 
-Voici un exemple de code implémentant la génération de clés RSA, le chiffrement et le déchiffrement à l'aide de la bibliothèque Python `cryptography`.
+$$y^2\equiv x^3+ax+b\pmod p$$
+
+$$4a^3+27b^2\not\equiv0\pmod p$$
+
+Une addition est définie sur les points de la courbe, avec le point à l'infini. Soit $G$ un générateur d'un sous-groupe d'ordre $n$, où $n$ est un grand nombre premier. Le scalaire secret est choisi uniformément dans $1\le k\le n-1$, avec un aléa cryptographiquement sûr. Le point public est :
+
+$$P=kG$$
+
+Retrouver $k$ à partir de $G,P$ est le problème du logarithme discret sur courbes elliptiques. Choisir simplement un « grand $k$ » ne suffit pas : la courbe, le sous-groupe, la validation des clés et l'aléa comptent. ECC désigne une famille de techniques ; ECDH sert à l'accord de clés et ECDSA aux signatures.
+
+### 2.3. RSA-OAEP en Python
+
+Les trois exemples Python sont exécutables séparément. Ils ont été vérifiés avec Python 3.12.14 et `cryptography` 50.0.2. Les clés sont générées en mémoire à chaque exécution, à des fins pédagogiques. Les exemples ne constituent pas des systèmes de production couvrant le stockage et la distribution des clés, l'authentification de l'interlocuteur et la gestion des erreurs.
 
 ```python
 from cryptography.hazmat.primitives.asymmetric import rsa
@@ -140,7 +139,7 @@ ciphertext = public_key.encrypt(
         label=None
     )
 )
-print("Texte chiffre (Base64) :", base64.b64encode(ciphertext).decode('utf-8'))
+print("Texte chiffré (Base64) :", base64.b64encode(ciphertext).decode('utf-8'))
 
 # 4. Déchiffrement à l'aide de la clé privée
 decrypted_message = private_key.decrypt(
@@ -151,53 +150,46 @@ decrypted_message = private_key.decrypt(
         label=None
     )
 )
-print("Message dechiffre :", decrypted_message.decode('utf-8'))
+print("Message déchiffré :", decrypted_message.decode('utf-8'))
 ```
 
----
+## 3. Fonctions de hachage cryptographiques
 
-## 3. Fonctions de hachage (Hash Functions)
+Une fonction de hachage calcule une empreinte de longueur fixe à partir d'une entrée. Elle est déterministe : la même entrée produit toujours le même résultat. Ce n'est ni un chiffrement ni, à elle seule, une génération de nombres aléatoires. La limite de longueur de l'entrée dépend de l'algorithme.
 
-Les **fonctions de hachage cryptographiques** constituent, avec la cryptographie à clé publique, la pierre angulaire de la cryptographie moderne. Une fonction de hachage est une fonction qui prend en entrée des données de longueur arbitraire et produit en sortie des données de type pseudo-aléatoire (valeur de hachage, empreinte) de longueur fixe.
+### 3.1. Trois propriétés de résistance
 
-### 3.1. Trois propriétés requises pour les fonctions de hachage cryptographiques
+1. **Résistance à la préimage** : pour une valeur de hachage $h$ donnée, il est difficile de trouver une entrée telle que $H(m)=h$. Il ne s'agit pas de retrouver une unique entrée d'origine.
+2. **Résistance à la seconde préimage** : pour un $m_1$ donné, il est difficile de trouver $m_2\ne m_1$ tel que $H(m_2)=H(m_1)$.
+3. **Résistance aux collisions** : il est difficile de trouver deux entrées différentes ayant la même empreinte, même si l'attaquant peut choisir les deux.
 
-Pour être utilisées en toute sécurité en tant que technologie cryptographique, les trois propriétés robustes suivantes sont requises.
+Une empreinte seule n'authentifie pas sa source. Si un attaquant peut remplacer le message et son empreinte, une simple comparaison ne détecte pas la modification. Il faut une valeur de référence fiable ou un mécanisme d'authentification adapté.
 
-1. **Résistance à la préimage** (Pre-image resistance) :
-   Il doit être informatiquement difficile de retrouver le message d'entrée original $m$ à partir de la valeur de hachage de sortie $h$.
-2. **Résistance à la seconde préimage** (Second pre-image resistance) :
-   Étant donné un message d'entrée $m_1$, il doit être difficile de trouver un autre message $m_2$ ($m_1 \neq m_2$) ayant la même valeur de hachage.
-3. **Résistance aux collisions** (Collision resistance) :
-   Il doit être difficile de trouver une paire arbitraire de deux messages $(m_1, m_2)$ dont les valeurs de hachage sont identiques.
+### 3.2. SHA-2 et SHA-256
 
-### 3.2. Structure de SHA-2 (Secure Hash Algorithm 2)
+SHA-256 appartient à SHA-2 : sa sortie fait 256 bits et son entrée doit avoir moins de $2^{64}$ bits. Le message, avec le bourrage incluant sa longueur, est découpé en blocs de 512 bits puis traité depuis la valeur initiale prescrite. Une implémentation en flux peut ajouter le bourrage lorsqu'elle atteint les derniers blocs.
 
-La fonction de hachage la plus largement utilisée aujourd'hui est la famille SHA-2 (en particulier **SHA-256** ). SHA-2 adopte la **construction de Merkle-Damgård** .
+Une représentation schématique du traitement de type Merkle–Damgård, avec les blocs $M_i$ et les valeurs de chaînage $H_i$, est :
 
-Dans la construction de Merkle-Damgård, le message d'entrée est divisé en blocs de longueur fixe (512 bits dans le cas de SHA-256), et un remplissage (padding) est effectué pour ajuster la longueur. Ensuite, la valeur de hachage initiale (IV) et le premier bloc sont introduits dans la **fonction de compression** (Compression function), et la sortie de celle-ci est traitée en chaîne comme entrée du bloc suivant.
+$$H_i=f(H_{i-1},M_i)$$
 
-$ H_i = f(H_{i-1}, M_i) $
+Cet aperçu ne signifie pas que l'on puisse omettre la fonction de compression ou le bourrage prescrits et obtenir un schéma sûr.
 
-Grâce à cette structure en chaîne, une empreinte sécurisée de longueur fixe peut être générée à partir d'un message de n'importe quelle longueur.
+### 3.3. SHA-3 et la construction en éponge
 
-### 3.3. Structure de SHA-3 (Keccak)
+SHA-3 est une norme fondée sur Keccak qui complète SHA-2. Cela ne signifie pas que toutes les attaques contre SHA-2 deviennent inefficaces, ni qu'il faille toujours remplacer SHA-2.
 
-**SHA-3** (algorithme Keccak) a été sélectionné par le NIST comme norme de nouvelle génération et alternative à SHA-2. SHA-3 n'utilise pas la construction de Merkle-Damgård, mais adopte une **construction en éponge** (Sponge) totalement différente.
+- **Absorption (absorb)** : les blocs d'entrée, avec le suffixe et le bourrage prescrits, sont combinés par XOR avec la partie de l'état correspondant au débit ; une permutation est ensuite appliquée.
+- **Extraction (squeeze)** : on extrait la sortie de la partie correspondant au débit. Si davantage de sortie est nécessaire, on répète la permutation et l'extraction.
 
-La construction en éponge maintient un état interne et fonctionne en deux phases :
+Les quatre fonctions de hachage SHA-3, telles que SHA3-256, ont des longueurs de sortie fixes. SHAKE128 et SHAKE256, dans le même FIPS 202, sont des XOF dont on spécifie la longueur de sortie. Le suffixe et le bourrage sont importants : le nom « Keccak-256 » ne suffit pas pour conclure que sa sortie est identique à celle de SHA3-256.
 
-- **Phase d'absorption** (Absorb) : Le bloc de message subit un OU exclusif (XOR) avec une chaîne de bits de l'état interne à un certain débit (Rate), et une fonction de permutation interne (Permutation function $f$) est appliquée pour absorber les données.
-- **Phase d'essorage** (Squeeze) : Une fois l'absorption des données terminée, les données sont extraites en continu de l'état interne (essorage), et l'application et l'extraction de la fonction de permutation $f$ sont répétées jusqu'à ce que la longueur de sortie requise soit atteinte.
-
-Grâce à cette structure, il offre une sécurité si robuste que les méthodes d'attaque existantes contre SHA-2 sont totalement inefficaces.
-
-### 3.4. Exemple d'implémentation de fonctions de hachage en Python
+### 3.4. Hachage en Python
 
 ```python
 from cryptography.hazmat.primitives import hashes
 
-message = b"La cryptographie moderne s'appuie fortement sur des fonctions de hachage securisees."
+message = "La cryptographie moderne s'appuie fortement sur des fonctions de hachage sécurisées.".encode("utf-8")
 
 # Génération SHA-256
 digest_sha256 = hashes.Hash(hashes.SHA256())
@@ -212,143 +204,104 @@ hash_result_sha3 = digest_sha3.finalize()
 print("SHA3-256 :", hash_result_sha3.hex())
 ```
 
----
+## 4. Signatures numériques
 
-## 4. Signatures numériques (Digital Signatures)
+Un schéma de signature numérique permet de **générer une signature** avec une clé privée et de **la vérifier** avec une clé publique. Avec une construction et une implémentation correctes, un lien fiable entre la clé et l'identité et une gestion adéquate de la clé privée, les signatures contribuent à l'intégrité et à l'authentification du signataire. Elles peuvent fournir des éléments de preuve pour la non-répudiation, mais ne démontrent pas inconditionnellement l'intention de la personne ni l'absence de compromission de la clé.
 
-En combinant la cryptographie à clé publique et les fonctions de hachage, il est possible de réaliser des **signatures numériques** , qui sont l'équivalent des « sceaux » ou des « signatures » dans le monde réel. Les signatures numériques garantissent l'**intégrité** du message (il n'a pas été altéré), l'**authentification de l'expéditeur** (ce n'est pas une usurpation d'identité) et la **non-répudiation** (le fait de l'avoir envoyé ne peut être nié).
+### 4.1. Différence entre signature et chiffrement
 
-### 4.1. Le fonctionnement des signatures numériques
+Généraliser les signatures comme « chiffrer avec la clé privée et déchiffrer avec la publique » est incorrect. RSA possède des schémas distincts de chiffrement et de signature ; l'exemple utilise **RSASSA-PSS**. Signer ne cache pas le message. La vérification contrôle si la clé publique, le message et la signature satisfont les conditions du schéma ; ce n'est pas un déchiffrement générique qui restitue une empreinte.
 
-Le concept fondamental d'une signature numérique est « **l'utilisation de la cryptographie à clé publique dans le sens inverse** ».
-
-Dans un chiffrement normal, on « chiffre avec la clé publique et on déchiffre avec la clé privée », mais dans une signature numérique, on « **génère une signature avec la clé privée (équivalent au chiffrement) et on vérifie la signature avec la clé publique (équivalent au déchiffrement)** ». Puisque seule la personne elle-même possède la clé privée, une signature générée avec cette clé privée constitue une preuve irréfutable créée par la personne elle-même.
-
-Cependant, traiter directement l'ensemble des données avec un algorithme à clé publique (comme RSA) entraînerait des coûts de calcul énormes. C'est pourquoi, en pratique, on utilise toujours une **fonction de hachage** en combinaison.
-
-### 4.2. [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de génération et de vérification de signature
+### 4.2. Génération et vérification : aperçu de RSA-PSS
 
 ```mermaid
 graph TD
-    subgraph "Génération de signature (Expéditeur Alice)"
-        M1["Message"] --> H1["Fonction de hachage"]
-        H1 --> Hash1["Valeur de hachage"]
-        Hash1 --> Sign["Chiffrement avec la clé privée d'Alice"]
-        Sign --> Sig["Signature numérique"]
-    end
-
-    subgraph "Vérification de signature (Destinataire Bob)"
-        M2["Message reçu"] --> H2["Fonction de hachage"]
-        H2 --> Hash2["Valeur de hachage calculée"]
-        
-        Sig2["Signature numérique reçue"] --> Ver["Déchiffrement avec la clé publique d'Alice"]
-        Ver --> Hash3["Valeur de hachage restaurée"]
-        
-        Hash2 -.->|"Vérification de comparaison/correspondance"| Hash3
-        Hash3 -.->|"Vérification de comparaison/correspondance"| Hash2
-    end
+    M["Message"] --> S["Signature RSA-PSS (hachage et encodage internes)"]
+    SK["Clé privée de signature d'Alice"] --> S
+    S --> SIG["Signature"]
+    M --> RM["Message reçu"]
+    SIG --> V["Vérification RSA-PSS (hachage et encodage)"]
+    RM --> V
+    PK["Clé publique authentifiée d'Alice"] --> V
+    V --> R["Valide / invalide"]
 ```
 
-1. **Génération de signature** : L'expéditeur calcule la valeur de hachage du message et la chiffre avec sa propre clé privée pour créer les « données de signature ». Il envoie le corps du message et les données de signature au destinataire.
-2. **Vérification de signature** : Le destinataire calcule lui-même la valeur de hachage du message reçu. En même temps, il déchiffre les données de signature reçues avec la clé publique de l'expéditeur pour extraire la valeur de hachage d'origine. Si les deux valeurs de hachage correspondent parfaitement, la vérification est réussie.
+1. Le signataire calcule le hachage du message et génère la signature avec l'encodage PSS, un sel et l'opération utilisant la clé privée. Il transmet le message et la signature.
+2. Le vérificateur utilise une clé publique fiable et des paramètres correspondants pour vérifier le message et la signature reçus. Le hachage et l'encodage font partie du schéma ; l'API de l'exemple ne reçoit pas une empreinte calculée à l'avance.
 
-### 4.3. Exemple d'implémentation de signature numérique en Python (RSA)
+### 4.3. RSA-PSS en Python
+
+Nous générons une clé dédiée à la signature, distincte de celle de l'exemple de chiffrement. La longueur du sel est celle de l'empreinte SHA-256 (32 octets), et la vérification utilise le même réglage. L'authenticité de la clé publique doit être établie en dehors de cet exemple.
 
 ```python
-from cryptography.hazmat.primitives.asymmetric import padding
-from cryptography.hazmat.primitives import hashes
-from cryptography.exceptions import InvalidSignature
 import base64
+from cryptography.exceptions import InvalidSignature
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.asymmetric import padding, rsa
 
-# Message
-doc_message = b"Document de contrat : La partie A accepte de payer 1000 $ a la partie B."
-
-# 1. Génération de la signature (utilisation de la clé privée)
-signature = private_key.sign(
-    doc_message,
-    padding.PSS(
-        mgf=padding.MGF1(hashes.SHA256()),
-        salt_length=padding.PSS.MAX_LENGTH
-    ),
-    hashes.SHA256()
+# Générer une clé de signature dédiée, distincte de celle du chiffrement
+signing_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+verification_key = signing_key.public_key()
+doc_message = "Document contractuel : la partie A accepte de payer 1000 $ à la partie B.".encode("utf-8")
+pss = padding.PSS(
+    mgf=padding.MGF1(hashes.SHA256()),
+    salt_length=padding.PSS.DIGEST_LENGTH,
 )
-print("Signature numerique :", base64.b64encode(signature).decode('utf-8')[:50], "...")
+signature = signing_key.sign(doc_message, pss, hashes.SHA256())
+print("Signature (Base64) :", base64.b64encode(signature).decode("ascii"))
 
-# 2. Vérification de la signature (utilisation de la clé publique)
 try:
-    public_key.verify(
-        signature,
-        doc_message,
-        padding.PSS(
-            mgf=padding.MGF1(hashes.SHA256()),
-            salt_length=padding.PSS.MAX_LENGTH
-        ),
-        hashes.SHA256()
-    )
-    print("La signature est VALIDE. L'integrite et l'authenticite du document sont verifiees.")
+    verification_key.verify(signature, doc_message, pss, hashes.SHA256())
+    print("Signature VALIDE pour ce message et cette clé publique.")
 except InvalidSignature:
-    print("La signature est INVALIDE. Le document a peut-etre ete altere.")
+    print("Signature INVALIDE pour ce message et cette clé publique.")
 ```
 
----
+## 5. Infrastructure à clés publiques (PKI)
 
-## 5. Infrastructure à clé publique (PKI: Public Key Infrastructure)
+Accepter la clé d'un attaquant comme celle de l'interlocuteur peut conduire à communiquer avec la mauvaise partie, même si les opérations cryptographiques sont correctes. La **PKI** fournit des certificats, une configuration de confiance et des procédures de vérification pour établir les associations entre clés publiques et noms ou autres informations.
 
-Bien que les signatures numériques permettent de garantir l'intégrité des données et l'authentification de l'expéditeur, il reste une faille critique dans le système global. C'est le problème de savoir si « **la clé publique utilisée est bien la véritable clé publique de la partie communicante (Alice) ?** ».
+### 5.1. Autorités de certification et certificats X.509
 
-Si un attaquant (Eve) se fait passer pour Alice, donne sa propre clé publique à Bob, et que Bob croit que c'est « la clé publique d'Alice », Eve peut usurper l'identité d'Alice pour déchiffrer des communications chiffrées ou faire vérifier de fausses signatures. C'est ce qu'on appelle une **attaque de l'homme du milieu** (Man-in-the-Middle Attack).
+Une autorité de certification (CA) vérifie le contrôle du domaine ou les informations du sujet selon sa politique, puis émet un certificat. Tous les certificats n'attestent pas dans la même mesure l'identité personnelle de l'exploitant d'un site.
 
-L'infrastructure sociale destinée à garantir la validité de ces clés publiques et à construire une chaîne de confiance est l' **Infrastructure à clé publique (PKI)** .
+Un certificat X.509 comprend version, numéro de série, algorithme de signature, émetteur, sujet, période de validité, clé publique du sujet, extensions et signature. La CA signe **l'encodage DER de TBSCertificate**, contenant les informations à signer, et non la clé publique seule.
 
-### 5.1. Autorité de certification (CA) et Certificat numérique (X.509)
-
-Au cœur de la PKI se trouve une organisation tierce de confiance appelée **Autorité de certification** (CA: Certificate Authority). Le rôle de la CA est d'examiner l'identité des personnes ou la propriété des domaines, et d'émettre un **certificat numérique** (certificat à clé publique) dans lequel la « clé publique » de la cible est signée numériquement avec la « clé privée » de la CA elle-même.
-
-**X.509** est largement utilisé comme norme pour les certificats numériques. Le certificat comprend les informations suivantes :
-- Version, numéro de série
-- Algorithme de signature
-- Informations d'identification de l'émetteur (CA)
-- Période de validité
-- Informations d'identification du sujet (serveur ou individu)
-- **La clé publique du sujet**
-- **La signature numérique de la CA**
-
-### 5.2. Diagramme de la structure du modèle de confiance de la PKI
+### 5.2. Chaînes de certificats et TLS
 
 ```mermaid
 graph TD
-    CA["Autorité de certification racine (Root CA)"]
-    SubCA["Autorité de certification intermédiaire (Intermediate CA)"]
-    Server["Serveur Web (Alice)"]
-    Client["PC Client (Bob)"]
-
-    CA -->|"Émet le certificat (Signature)"| SubCA
-    SubCA -->|"Émet le certificat (Signature)"| Server
-    Server -->|"Présente le certificat du serveur"| Client
-    Client -.->|"Conserve la clé publique de la Root CA à l'avance\n(intégrée au navigateur ou à l'OS)"| CA
-    Client -->|"Vérifie la chaîne de certificats\nUtilise la clé publique de la Root CA"| Server
+    CA["Ancre de confiance (CA racine)"] -->|"Signe le certificat de la CA intermédiaire"| I["CA intermédiaire"]
+    I -->|"Signe le certificat du serveur"| S["Serveur"]
+    S -->|"Présente les certificats final et intermédiaires"| C["Client"]
+    C -.->|"Confiance configurée à l'avance"| CA
+    C -->|"Valide chemin, contraintes, usages, dates et nom"| S
 ```
 
-Même lors de l'accès à un site « https:// » avec un navigateur, ce mécanisme de PKI fonctionne à plein régime en arrière-plan. Un canal de communication sécurisé (TLS) est établi en vérifiant la signature du certificat envoyé par le serveur à l'aide de la clé publique de l'autorité de certification racine préinstallée dans le navigateur.
+Le diagramme montre un exemple : CA racine → CA intermédiaire → serveur. Le client construit un chemin vers une ancre de confiance configurée et valide notamment les signatures, les périodes de validité, les contraintes de CA, les usages des clés et les extensions critiques non prises en charge. Il ne vérifie pas simplement le certificat final directement avec la clé racine. Le traitement de la révocation suit le mécanisme et la politique applicables.
 
----
+TLS exige aussi de vérifier l'identité du service. Pour les noms DNS, on compare le nom attendu aux entrées `dNSName` de `subjectAltName`, sans se rabattre sur Common Name (RFC 9525). Un certificat d'un autre site ne doit pas être accepté même si sa signature est correcte.
+
+Valider le certificat ne suffit pas à établir une communication chiffrée. TLS 1.3 combine échange de clés, authentification et confirmation de clés pour dériver les clés de trafic, et protège les enregistrements par chiffrement authentifié. Le transport de clés RSA statique a été supprimé dans TLS 1.3. Les connexions PSK ou de reprise peuvent omettre les certificats ; le diagramme ne décrit donc pas toutes les connexions TLS.
 
 ## 6. Résumé
 
-La société numérique moderne repose sur la combinaison exquise des **technologies de cryptographie** expliquées cette fois-ci.
+- Le chiffrement symétrique protège les données volumineuses. Il faut distinguer confidentialité et détection des modifications.
+- Chiffrement à clé publique, accord de clés et signatures ont des rôles distincts. Il faut aussi authentifier les clés.
+- Les fonctions de hachage produisent des empreintes. Elles n'authentifient pas seules la source.
+- Les signatures contribuent à l'intégrité et à l'authentification, sous réserve de la gestion des clés et des conditions du schéma.
+- Validation des chemins PKI, contrôle du nom du service et négociation TLS sont des traitements liés, mais distincts.
 
-- Chiffrement rapide des données grâce à la **cryptographie à clé symétrique**
-- Échange de clés sécurisé et réalisation de l'asymétrie grâce à la **cryptographie à clé publique** (RSA, [ECC](/fr/p/elliptic-curve-cryptography-math-cpp/))
-- Extraction de l'empreinte des données grâce aux **fonctions de hachage** (SHA-2/3)
-- Preuve d'intégrité et authentification grâce aux **signatures numériques**
-- Garantie de l'authenticité des clés publiques grâce à la **PKI et aux autorités de certification**
+Ce sont des bases. En production, on utilise des bibliothèques maintenues et des protocoles standard, et on évalue la gestion des clés, les algorithmes, les paramètres et la migration vers la cryptographie post-quantique. Les exemples de cet article ne suffisent pas à déterminer la sécurité de tout un système.
 
-La beauté mathématique et la théorie du calcul rigoureuse de ces éléments protègent au quotidien notre vie privée et nos biens contre les cyberattaques. L'évolution des technologies de cryptographie se poursuit toujours, et la recherche et la standardisation de la **cryptographie post-quantique** (PQC: Post-Quantum Cryptography) pour se préparer à l'avènement des ordinateurs quantiques progressent rapidement.
+### Références
 
-Une bonne compréhension des bases de la cryptographie constituera la première étape vers la conception de systèmes et d'applications plus sûrs et plus robustes.
-
----
-*Références et liens utiles*
-- NIST FIPS 186-4: Digital Signature Standard (DSS)
-- NIST FIPS 202: SHA-3 Standard
-- RFC 5280: Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile
+- [RFC 8017: PKCS #1 — RSA Cryptography Specifications](https://www.rfc-editor.org/rfc/rfc8017.html) (§§3, 5–9)
+- [cryptography 50.0.2: RSA](https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/)
+- [RFC 6090: Fundamental Elliptic Curve Cryptography Algorithms](https://www.rfc-editor.org/rfc/rfc6090.html) (§§3.3, 5.3.1)
+- [NIST FIPS 180-4: Secure Hash Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf) (§§5–6)
+- [NIST FIPS 202: SHA-3 Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf) (§§4–6)
+- [NIST FIPS 186-5: Digital Signature Standard](https://csrc.nist.gov/pubs/fips/186-5/final)
+- [RFC 5280: Internet X.509 PKI Certificate and CRL Profile](https://www.rfc-editor.org/rfc/rfc5280.html) (§§4.1, 6)
+- [RFC 9525: Service Identity in TLS](https://www.rfc-editor.org/rfc/rfc9525.html)
+- [RFC 8446: TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) (§§1.2, 2)
