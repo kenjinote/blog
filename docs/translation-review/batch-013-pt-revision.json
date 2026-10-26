@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-27T07:32:20.051407+09:00",
+  "language": "pt",
+  "originalHash": "3f433ce6e4e164c10abfde8e7c76a14cb8261948b2cdddd3044b4ab2106b0b65",
+  "correctedSourceHash": "6ba14931d98075ddb9e7231683eccefe7ba568eceb530fd04faeacada6d9d6f7",
+  "originalFullBodyAndMetadataRead": true,
+  "reviewRecorded": true,
+  "finalHash": "9d8ba6fece9c50aa1f2f128731a1dc03d24a91ecdf554d1835bfa7b1c9ce81c5",
+  "fullCorrectedBodyAndMetadataReread": true,
+  "validation": "docs/translation-review/batch-013-pt-validation.json",
+  "remainingUnreviewedLanguages": 6
+}

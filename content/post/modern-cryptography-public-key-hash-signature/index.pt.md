@@ -1,8 +1,9 @@
 ---
 title: "Fundamentos da Criptografia Moderna (Criptografia de Chave Pública, Funções Hash, Assinatura Digital)"
-description: "Uma explicação completa sobre o funcionamento da criptografia moderna, desde chaves simétricas e públicas até hashes e assinaturas digitais."
+description: "Chaves simétricas e públicas, RSA, curvas elípticas, hashes, assinaturas e PKI: funções e condições, com fórmulas e exemplos em Python."
 slug: "modern-cryptography-public-key-hash-signature"
 date: "2026-09-22T08:00:00+09:00"
+lastmod: "2026-10-27"
 image: "eyecatch.jpg"
 categories:
     - "security"
@@ -12,108 +13,106 @@ tags:
     - "hash"
     - "digital-signature"
     - "rsa"
-
 ---
 
-Na sociedade da internet de hoje, a **segurança da informação** é uma base indispensável para garantir a confidencialidade, integridade e disponibilidade das informações. O que sustenta essa base é a tecnologia da **criptografia moderna** . Neste artigo, explicaremos de forma muito detalhada e abrangente os fundamentos da criptografia moderna: **criptografia de chave pública** , **funções hash** e **assinaturas digitais** , desde os seus fundamentos matemáticos até a estrutura de algoritmos específicos e exemplos de implementação em Python.
+A criptografia contribui para a confidencialidade, a integridade e a autenticação. Sozinha, ela não garante todos os aspectos da segurança da informação, incluindo a disponibilidade. Este artigo explica as funções das chaves simétricas e públicas, as bases matemáticas do RSA e das curvas elípticas, as funções hash, as assinaturas digitais e a PKI. Distinguimos a explicação matemática das condições exigidas por esquemas e protocolos de uso real.
 
----
+## 1. Funções das chaves simétricas e públicas
 
-## 1. Evolução da Criptografia: Da Chave Simétrica à Chave Pública
+### 1.1. Cifração simétrica e distribuição de chaves
 
-### 1.1. Criptografia de Chave Simétrica e Suas Limitações
-O método de criptografia usado desde os tempos antigos é a **criptografia de chave simétrica** (Symmetric-key cryptography), que utiliza a mesma chave para criptografar e descriptografar. Um algoritmo representativo é o AES (Advanced Encryption Standard). A criptografia de chave simétrica tem a vantagem de ser rápida no processamento, mas sua maior fraqueza é a existência do **problema de distribuição de chaves** (Key Distribution Problem).
+A **cifração simétrica** utiliza uma chave secreta compartilhada para cifrar e decifrar. O AES é um exemplo de cifra de bloco. Essas técnicas são adequadas para grandes volumes de dados, mas as partes precisam compartilhar a chave com segurança. Cifrar não necessariamente permite detectar alterações; as comunicações reais usam a proteção exigida pelo protocolo, como a cifração autenticada.
 
-Ambas as partes envolvidas na comunicação devem compartilhar a mesma chave com antecedência através de um canal seguro, mas distribuir chaves com segurança em uma rede aberta como a internet é extremamente difícil.
+### 1.2. Diferentes operações de chave pública
 
-### 1.2. O Nascimento da Criptografia de Chave Pública
-A **criptografia de chave pública** (Public-key cryptography) resolveu esse problema de distribuição de chaves por meio de uma abordagem matemática. Na criptografia de chave pública, é gerado um par de duas chaves diferentes: uma **chave pública** (Public Key) usada para criptografar, e uma **chave privada** (Private Key) usada para descriptografar.
+As **técnicas de chave pública** usam pares de chaves pública e privada, mas nem todas significam «cifrar com a pública e decifrar com a privada».
 
-- **Chave pública** : Uma chave que pode ser publicada para qualquer pessoa. Usada para criptografar mensagens.
-- **Chave privada** : Uma chave que deve ser mantida estritamente em segredo apenas pelo seu proprietário. Usada para descriptografar textos cifrados.
+- **Cifração de chave pública**: cifra-se com a chave pública do destinatário e decifra-se com a privada correspondente.
+- **Assinaturas digitais**: assina-se com a chave privada do signatário e verifica-se com a pública.
+- **Acordo de chaves**: as partes derivam um segredo compartilhado de seu material criptográfico e geram chaves de comunicação conforme o protocolo.
 
-Devido a essa assimetria, o receptor publica sua chave pública para o mundo inteiro, e o remetente usa essa chave pública para criptografar. Os dados criptografados só podem ser descriptografados pelo receptor, que possui a chave privada correspondente.
+A chave pública não exige distribuição secreta, mas **sua associação com o interlocutor pretendido precisa ser autenticada**. O diagrama representa somente a cifração de chave pública. Decifrar com sucesso não autentica, por si só, o remetente.
 
 ```mermaid
 graph TD
-    A["Remetente (Alice)"]
-    B["Receptor (Bob)"]
-    K_Pub["Chave Pública do Bob"]
-    K_Priv["Chave Privada do Bob"]
-    P["Texto simples (Mensagem)"]
+    A["Remetente Alice"]
+    B["Destinatário Bob"]
+    K_Pub["Chave pública de Bob"]
+    K_Priv["Chave privada de Bob"]
+    P["Texto em claro (mensagem)"]
     C["Texto cifrado"]
-
     B -->|"Publica a chave pública"| K_Pub
     A -->|"Obtém"| K_Pub
-    P -->|"Criptografa com a chave pública do Bob"| A
+    P -->|"Cifra com a chave pública de Bob"| A
     A -->|"Envia"| C
     C -->|"Recebe"| B
-    B -->|"Descriptografa com a chave privada do Bob"| K_Priv
-    K_Priv -->|"Restaura o texto simples"| P
+    B -->|"Decifra com a chave privada de Bob"| K_Priv
+    K_Priv -->|"Recupera o texto em claro"| P
 ```
 
----
+## 2. Bases matemáticas das técnicas de chave pública
 
-## 2. Fundamentos Matemáticos da Criptografia de Chave Pública
+Ao analisar a segurança, é necessário distinguir hipóteses de dificuldade computacional, requisitos de geração de chaves e construção do esquema. Os fatores secretos do RSA permitem a operação inversa, mas o acordo de chaves e as assinaturas com curvas elípticas não se explicam todos pela mesma «operação inversa».
 
-A segurança da criptografia de chave pública depende de **funções de mão única** (One-way function), que significam "um certo cálculo é fácil, mas o cálculo inverso é extremamente difícil", e de **funções de mão única com alçapão** (Trapdoor one-way function), onde o cálculo inverso se torna possível se uma informação específica (o alçapão) for conhecida. Aqui, exploraremos em detalhes a criptografia RSA e a criptografia de curva elíptica ([ECC](/pt/p/elliptic-curve-cryptography-math-cpp/)), que são algoritmos representativos.
+### 2.1. Chaves e operações RSA
 
-### 2.1. Como Funciona a Criptografia RSA
+Rivest, Shamir e Adleman anunciaram o RSA em 1977. Ele se relaciona à dificuldade de fatorar inteiros grandes. Fatorar o módulo permite recuperar uma chave privada, mas não foi demonstrado que inverter RSA em geral seja equivalente em dificuldade à fatoração. A segurança também depende da aleatoriedade, da geração de chaves, do preenchimento e da implementação, além do tamanho da chave.
 
-A criptografia RSA foi desenvolvida em 1977 por Ron Rivest, Adi Shamir e Leonard Adleman. A segurança do RSA depende da **dificuldade do problema de fatoração de inteiros** . É fácil multiplicar dois números primos gigantescos, mas descobrir os números primos originais a partir do seu produto não pode ser resolvido em um tempo realista pelos computadores clássicos atuais.
+#### 2.1.1. Geração didática de chaves
 
-#### 2.1.1. Algoritmo de Geração de Chaves do RSA
+1. Escolher primos ímpares grandes e distintos $p,q$ e calcular $N=pq$.
+2. Calcular a função totiente de Euler:
 
-A geração de chaves do RSA é realizada nas seguintes etapas:
+$$\phi(N)=(p-1)(q-1)$$
 
-1. Selecionar dois números primos muito grandes, $p$ e $q$.
-2. Calcular o produto $N = p \times q$. ($N$ é o módulo público)
-3. Calcular a função totiente de Euler $\phi(N)$.
-   $ \phi(N) = (p - 1)(q - 1) $
-4. Escolher um número inteiro $e$ tal que $1 < e < \phi(N)$ e $e$ seja co-primo de $\phi(N)$. (Normalmente, $e = 65537$ é frequentemente usado)
-5. Calcular $d$ que satisfaça a seguinte congruência.
-   $ e \times d \equiv 1 \pmod{\phi(N)} $
-   Isso pode ser calculado usando [o algoritmo de Euclides](/pt/p/euclidean-algorithm/) estendido.
+3. Escolher $e$ com $1<e<\phi(N)$ e $\gcd(e,\phi(N))=1$. O exemplo usa $e=65537$.
+4. Usar, por exemplo, o [algoritmo de Euclides](/pt/p/euclidean-algorithm/) estendido para obter $1\le d<\phi(N)$ que satisfaça:
 
-Aqui, $(N, e)$ torna-se a **chave pública** e $d$ torna-se a **chave privada** (os valores $p$ e $q$ são descartados ou mantidos estritamente em segredo).
+$$ed\equiv1\pmod{\phi(N)}$$
 
-#### 2.1.2. Fórmulas de Criptografia e Descriptografia
+A chave pública é $(N,e)$; uma representação básica da privada é $(N,d)$. As implementações também mantêm $p,q$ e valores do teorema chinês dos restos (CRT) para acelerar os cálculos. Esses dados também são secretos. Aqui usamos $\phi(N)$ para explicar. O RFC 8017 expressa a condição do inverso por meio de $\lambda(N)=\operatorname{lcm}(p-1,q-1)$; a construção acima também satisfaz essa condição.
 
-Seja $M$ o texto simples (onde $0 \le M < N$) e $C$ o texto cifrado.
+#### 2.1.2. Operações RSA e condições da demonstração
 
-**Criptografia** (usando a chave pública $e, N$):
-$ C \equiv M^e \pmod{N} $
+Para um representante inteiro da mensagem $0\le M<N$, as operações primitivas são:
 
-**Descriptografia** (usando a chave privada $d, N$):
-$ M \equiv C^d \pmod{N} $
+$$C\equiv M^e\pmod N$$
 
-Esta descriptografia funciona corretamente devido ao teorema de Euler $M^{\phi(N)} \equiv 1 \pmod{N}$.
-$ C^d \equiv (M^e)^d \equiv M^{ed} \equiv M^{k\phi(N) + 1} \equiv M \cdot (M^{\phi(N)})^k \equiv M \cdot 1^k \equiv M \pmod{N} $
+$$M\equiv C^d\pmod N$$
 
-### 2.2. Criptografia de Curva Elíptica (ECC: Elliptic Curve Cryptography)
+O teorema de Euler se aplica diretamente **somente quando $\gcd(M,N)=1$**. Escrevendo $ed=1+t\phi(N)$, obtemos:
 
-A criptografia RSA é segura, mas para ter resistência suficiente, o tamanho da chave precisa ser muito longo (por exemplo, 2048 bits ou 4096 bits). Em contrapartida, a **criptografia de curva elíptica** oferece segurança equivalente com tamanhos de chave mais curtos.
+$$M^{ed}=M\left(M^{\phi(N)}\right)^t\equiv M\pmod N$$
 
-#### 2.2.1. Curvas Elípticas e o Problema do Logaritmo Discreto
+Para mensagens não coprimas, consideramos separadamente $r=p$ e $r=q$. Se $M\equiv0\pmod r$, então $M^{ed}\equiv0\pmod r$. Caso contrário, o pequeno teorema de Fermat e $(r-1)\mid(ed-1)$ dão $M^{ed}\equiv M\pmod r$. Combinando as duas congruências pelo teorema chinês dos restos, demonstramos a recuperação correta para todos os $0\le M<N$.
 
-A segurança da [ECC](/pt/p/elliptic-curve-cryptography-math-cpp/) depende da dificuldade do **problema do logaritmo discreto sobre curvas elípticas** (ECDLP).
-Uma curva elíptica sobre um corpo finito $\mathbb{F}_p$ usada em criptografia é geralmente expressa na forma padrão de Weierstrass:
+Por exemplo, com $p=61,q=53,e=17,d=2753$ e $M=61$, temos $M^{3120}\bmod3233=1220$: o passo do teorema de Euler não pode ser aplicado diretamente. Mesmo assim, RSA retorna 61 após a cifração e a decifração. Essa chave minúscula serve como ilustração, não como chave segura.
 
-$ y^2 \equiv x^3 + ax + b \pmod{p} $
+**Não use apenas a exponenciação modular como esquema de cifração.** A cifração RSA real precisa de um esquema como RSAES-OAEP. Com RSA-2048 e SHA-256, o exemplo abaixo aceita no máximo 190 bytes de texto em claro (RFC 8017 §7.1.1):
 
-(onde $4a^3 + 27b^2 \not\equiv 0 \pmod{p}$)
+$$m_{\mathrm{len}}\le k_{\mathrm{bytes}}-2h_{\mathrm{len}}-2=256-2\cdot32-2=190$$
 
-São definidas operações de adição entre pontos na curva elíptica (adição de pontos) e a operação de adicionar o mesmo ponto várias vezes (multiplicação escalar).
-Seja $G$ um ponto de referência (ponto base) e $P$ o ponto obtido pela adição de $G$ a si mesmo $k$ vezes.
+Dados maiores são protegidos com cifração simétrica autenticada dentro de um esquema híbrido padrão. Este exemplo não cifra arquivos de comprimento arbitrário diretamente com RSA.
 
-$ P = k \times G $
+### 2.2. Curvas elípticas e logaritmo discreto
 
-Aqui, quando $G$ e $P$ são dados, o problema de encontrar o valor escalar $k$ é chamado de **problema do logaritmo discreto em curvas elípticas** . Se $k$ for suficientemente grande, é extremamente difícil calculá-lo de forma reversa.
-Na [ECC](/pt/p/elliptic-curve-cryptography-math-cpp/), $k$ é a **chave privada** e $P$ é a **chave pública** .
+Com parâmetros adequados, a **[criptografia de curvas elípticas (ECC)](/pt/p/elliptic-curve-cryptography-math-cpp/)** permite buscar segurança clássica comparável com chaves menores que as do RSA. O número de bits da chave não é, por si só, a força de segurança em bits.
 
-### 2.3. Exemplo de Implementação de Criptografia de Chave Pública em Python
+Aqui consideramos a forma curta de Weierstrass sobre o corpo primo $\mathbb F_p$, com $p>3$. Isso não abrange todas as representações de curvas elípticas:
 
-Aqui está um exemplo de código que usa a biblioteca `cryptography` do Python para gerar chaves RSA, criptografar e descriptografar.
+$$y^2\equiv x^3+ax+b\pmod p$$
+
+$$4a^3+27b^2\not\equiv0\pmod p$$
+
+Define-se uma adição nos pontos da curva juntamente com o ponto no infinito. Seja $G$ um gerador de um subgrupo de ordem prima grande $n$. O escalar secreto é escolhido uniformemente em $1\le k\le n-1$, com aleatoriedade criptograficamente segura. O ponto público é:
+
+$$P=kG$$
+
+Encontrar $k$ a partir de $G,P$ é o problema do logaritmo discreto em curvas elípticas. Escolher apenas um «$k$ grande» não basta: a curva, o subgrupo, a validação das chaves e a aleatoriedade importam. ECC designa uma família de técnicas; ECDH é usado para acordo de chaves e ECDSA para assinaturas.
+
+### 2.3. RSA-OAEP em Python
+
+Os três exemplos de Python podem ser executados separadamente. Foram verificados com Python 3.12.14 e `cryptography` 50.0.2. As chaves são geradas em memória a cada execução, para fins didáticos. Os exemplos não constituem sistemas de produção que incluam armazenamento e distribuição de chaves, autenticação do interlocutor e tratamento de erros.
 
 ```python
 from cryptography.hazmat.primitives.asymmetric import rsa
@@ -131,7 +130,7 @@ public_key = private_key.public_key()
 # 2. Definição da mensagem
 message = b"This is a highly confidential message about modern cryptography."
 
-# 3. Criptografia usando a chave pública (usando preenchimento OAEP)
+# 3. Cifração usando a chave pública (usando preenchimento OAEP)
 ciphertext = public_key.encrypt(
     message,
     padding.OAEP(
@@ -140,9 +139,9 @@ ciphertext = public_key.encrypt(
         label=None
     )
 )
-print("Ciphertext (Base64):", base64.b64encode(ciphertext).decode('utf-8'))
+print("Texto cifrado (Base64):", base64.b64encode(ciphertext).decode('utf-8'))
 
-# 4. Descriptografia usando a chave privada
+# 4. Decifração usando a chave privada
 decrypted_message = private_key.decrypt(
     ciphertext,
     padding.OAEP(
@@ -151,48 +150,41 @@ decrypted_message = private_key.decrypt(
         label=None
     )
 )
-print("Decrypted Message:", decrypted_message.decode('utf-8'))
+print("Mensagem decifrada:", decrypted_message.decode('utf-8'))
 ```
 
----
+## 3. Funções hash criptográficas
 
-## 3. Funções Hash (Hash Functions)
+Uma função hash calcula um resumo de comprimento fixo a partir de uma entrada. Ela é determinística: a mesma entrada sempre produz o mesmo resultado. Não é cifração nem, por si só, geração de números aleatórios. O limite de comprimento da entrada depende do algoritmo.
 
-Junto com a criptografia de chave pública, a **função hash criptográfica** é outro pilar da criptografia moderna. Uma função hash é uma função que aceita dados de qualquer tamanho como entrada e produz dados pseudoaleatórios de tamanho fixo (valor de hash, digest) como saída.
+### 3.1. Três propriedades de resistência
 
-### 3.1. 3 Propriedades Exigidas de Funções Hash Criptográficas
+1. **Resistência à pré-imagem**: dado um valor hash $h$, é difícil encontrar uma entrada com $H(m)=h$. Não se trata de recuperar uma entrada original única.
+2. **Resistência à segunda pré-imagem**: dado $m_1$, é difícil encontrar $m_2\ne m_1$ tal que $H(m_2)=H(m_1)$.
+3. **Resistência a colisões**: é difícil encontrar duas entradas diferentes com o mesmo hash, mesmo quando o atacante pode escolher ambas.
 
-Para serem usadas com segurança na tecnologia de criptografia, as seguintes três fortes propriedades são necessárias:
+Um resumo sozinho não autentica sua origem. Se o atacante puder substituir tanto a mensagem quanto o resumo, uma comparação simples não detectará a alteração. É necessário um valor de referência confiável ou um mecanismo de autenticação adequado.
 
-1. **Resistência à pré-imagem (One-wayness)** (Pre-image resistance):
-   A partir de um valor de hash de saída $h$, deve ser computacionalmente difícil calcular a mensagem original de entrada $m$.
-2. **Resistência à segunda pré-imagem** (Second pre-image resistance):
-   Dada uma mensagem de entrada $m_1$, deve ser difícil encontrar outra mensagem $m_2$ ($m_1 \neq m_2$) que tenha o mesmo valor de hash.
-3. **Resistência à colisão** (Collision resistance):
-   Deve ser difícil encontrar qualquer par de mensagens diferentes $(m_1, m_2)$ que resultem no mesmo valor de hash.
+### 3.2. SHA-2 e SHA-256
 
-### 3.2. Estrutura do SHA-2 (Secure Hash Algorithm 2)
+SHA-256 pertence à família SHA-2, tem saída de 256 bits e admite entradas de menos de $2^{64}$ bits. A mensagem, com o preenchimento que inclui seu comprimento, é dividida em blocos de 512 bits e processada a partir do valor inicial especificado. Uma implementação em fluxo pode acrescentar o preenchimento ao chegar aos blocos finais.
 
-A função hash mais usada atualmente é a família SHA-2 (especialmente o **SHA-256** ). O SHA-2 adota a **construção Merkle-Damgård** .
+Uma representação esquemática do processamento do tipo Merkle–Damgård, com blocos $M_i$ e valores de encadeamento $H_i$, é:
 
-Na construção Merkle-Damgård, a mensagem de entrada é dividida em blocos de tamanho fixo (512 bits para SHA-256) e ajustada por preenchimento (padding). Em seguida, um valor de hash inicial (IV) e o primeiro bloco são inseridos em uma **função de compressão** (Compression function), e essa saída é passada como entrada para o próximo bloco, sendo processada em cadeia.
+$$H_i=f(H_{i-1},M_i)$$
 
-$ H_i = f(H_{i-1}, M_i) $
+Essa visão geral não significa que omitir a função de compressão ou o preenchimento especificados produza um esquema seguro.
 
-Graças a essa estrutura em cadeia, um digest seguro e de tamanho fixo pode ser gerado a partir de uma mensagem de qualquer tamanho.
+### 3.3. SHA-3 e a construção de esponja
 
-### 3.3. Estrutura do SHA-3 (Keccak)
+SHA-3 é um padrão baseado em Keccak que complementa SHA-2. Isso não significa que todos os ataques contra SHA-2 deixem de funcionar, nem que seja sempre necessário substituir SHA-2.
 
-O **SHA-3** (algoritmo Keccak) foi selecionado pelo NIST como padrão de próxima geração ou alternativa ao SHA-2. O SHA-3 não usa a construção Merkle-Damgård, mas adota uma estrutura completamente diferente chamada de **construção de esponja** (Sponge).
+- **Absorção (absorb)**: os blocos de entrada, com o sufixo e o preenchimento prescritos, são combinados por XOR com a parte do estado correspondente à taxa; em seguida aplica-se uma permutação.
+- **Extração (squeeze)**: a saída é obtida da parte correspondente à taxa. Se for necessário mais conteúdo, repetem-se a permutação e a extração.
 
-A construção de esponja mantém um estado interno e opera nas duas fases a seguir:
+As quatro funções hash SHA-3, como SHA3-256, têm comprimentos de saída fixos. SHAKE128 e SHAKE256, no mesmo FIPS 202, são XOFs cujo comprimento de saída é especificado. O sufixo e o preenchimento importam: o nome «Keccak-256» sozinho não permite concluir que sua saída é igual à de SHA3-256.
 
-- **Fase de Absorção (Absorb)** : Em intervalos definidos (Rate), blocos de mensagem sofrem XOR (ou exclusivo) com a sequência de bits do estado interno e, em seguida, uma função de permutação interna (Permutation function $f$) é aplicada para absorver os dados.
-- **Fase de Espremer (Squeeze)** : Após a conclusão da absorção dos dados, os dados são constantemente extraídos (espremidos) do estado interno, e a extração continua com a aplicação da função de permutação $f$ até que o comprimento de saída desejado seja atingido.
-
-Devido a essa estrutura, ele possui uma segurança robusta em que os métodos de ataque existentes contra o SHA-2 não têm nenhum efeito.
-
-### 3.4. Exemplo de Implementação de Funções Hash em Python
+### 3.4. Hash em Python
 
 ```python
 from cryptography.hazmat.primitives import hashes
@@ -212,142 +204,104 @@ hash_result_sha3 = digest_sha3.finalize()
 print("SHA3-256:", hash_result_sha3.hex())
 ```
 
----
+## 4. Assinaturas digitais
 
-## 4. Assinaturas Digitais (Digital Signatures)
+Um esquema de assinatura digital permite **gerar assinaturas** com uma chave privada e **verificá-las** com uma pública. Com construção e implementação corretas, uma associação confiável da chave e uma gestão adequada da chave privada, as assinaturas contribuem para a integridade e a autenticação do signatário. Podem fornecer evidências para o não repúdio, mas não comprovam incondicionalmente a intenção da pessoa nem a ausência de comprometimento da chave.
 
-Ao combinar a criptografia de chave pública com funções hash, podemos realizar **assinaturas digitais** , que são equivalentes a "carimbos" e "assinaturas" no mundo real. Uma assinatura digital garante a **integridade** (que a mensagem não foi adulterada), a **autenticação do remetente** (que não é uma falsificação de identidade) e o **não-repúdio** (o remetente não pode negar o fato de ter enviado a mensagem) de uma mensagem.
+### 4.1. Diferença entre assinar e cifrar
 
-### 4.1. Como Funciona a Assinatura Digital
+É incorreto generalizar assinaturas como «cifrar com a chave privada e decifrar com a pública». RSA tem esquemas diferentes de cifração e assinatura; o exemplo usa **RSASSA-PSS**. Assinar não oculta a mensagem. A verificação avalia se a chave pública, a mensagem e a assinatura atendem às condições do esquema; não é uma decifração genérica que recupera um resumo.
 
-O conceito básico da assinatura digital é " **o uso da criptografia de chave pública no sentido inverso** ".
-
-Na criptografia normal, "criptografamos com a chave pública e descriptografamos com a chave privada", mas na assinatura digital " **geramos a assinatura com a chave privada (equivalente a criptografar) e verificamos a assinatura com a chave pública (equivalente a descriptografar)** ". Como apenas a própria pessoa possui a chave privada, a assinatura gerada por essa chave privada é a prova incontestável de que ela a criou.
-
-No entanto, o custo computacional seria enorme se processássemos os dados inteiros diretamente com um algoritmo de chave pública (como RSA). Por essa razão, uma **função hash** é sempre usada em conjunto na prática.
-
-### 4.2. Fluxo de Geração e Verificação de Assinatura
+### 4.2. Geração e verificação (visão geral de RSA-PSS)
 
 ```mermaid
 graph TD
-    subgraph "Geração da Assinatura (Remetente Alice)"
-        M1["Mensagem"] --> H1["Função Hash"]
-        H1 --> Hash1["Valor do Hash"]
-        Hash1 --> Sign["Criptografa com a chave privada da Alice"]
-        Sign --> Sig["Assinatura Digital"]
-    end
-
-    subgraph "Verificação da Assinatura (Receptor Bob)"
-        M2["Mensagem Recebida"] --> H2["Função Hash"]
-        H2 --> Hash2["Valor do Hash Calculado"]
-        
-        Sig2["Assinatura Digital Recebida"] --> Ver["Descriptografa com a chave pública da Alice"]
-        Ver --> Hash3["Valor do Hash Restaurado"]
-        
-        Hash2 -.->|"Compara e verifica correspondência"| Hash3
-        Hash3 -.->|"Compara e verifica correspondência"| Hash2
-    end
+    M["Mensagem"] --> S["Assinatura RSA-PSS (hash e codificação internos)"]
+    SK["Chave privada de assinatura de Alice"] --> S
+    S --> SIG["Assinatura"]
+    M --> RM["Mensagem recebida"]
+    SIG --> V["Verificação RSA-PSS (confere hash e codificação)"]
+    RM --> V
+    PK["Chave pública autenticada de Alice"] --> V
+    V --> R["Válida / inválida"]
 ```
 
-1. **Geração da Assinatura** : O remetente calcula o valor de hash da mensagem e criptografa-o com sua própria chave privada para criar os "dados de assinatura". O corpo da mensagem e os dados da assinatura são enviados ao receptor.
-2. **Verificação da Assinatura** : O receptor calcula de forma independente o valor de hash da mensagem recebida. Ao mesmo tempo, ele descriptografa os dados de assinatura recebidos usando a chave pública do remetente para recuperar o valor de hash original. Se os dois valores de hash coincidirem perfeitamente, a verificação será bem-sucedida.
+1. O signatário calcula o hash da mensagem e gera a assinatura com a codificação PSS, um sal e a operação com a chave privada. Entrega a mensagem e a assinatura.
+2. O verificador usa uma chave pública confiável e parâmetros correspondentes para verificar a mensagem e a assinatura recebidas. O hash e a codificação fazem parte do esquema; a API do exemplo não recebe um resumo calculado previamente.
 
-### 4.3. Exemplo de Implementação de Assinatura Digital em Python (RSA)
+### 4.3. RSA-PSS em Python
+
+Geramos uma chave dedicada à assinatura, separada da chave do exemplo de cifração. O comprimento do sal é o do resumo SHA-256 (32 bytes), e a verificação usa a mesma configuração. A autenticidade da chave pública precisa ser estabelecida fora deste exemplo.
 
 ```python
-from cryptography.hazmat.primitives.asymmetric import padding
-from cryptography.hazmat.primitives import hashes
+import base64
 from cryptography.exceptions import InvalidSignature
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.asymmetric import padding, rsa
 
-# Mensagem
+# Gerar uma chave de assinatura dedicada, separada do exemplo de cifração
+signing_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+verification_key = signing_key.public_key()
 doc_message = b"Contract document: Party A agrees to pay Party B $1000."
-
-# 1. Geração da assinatura (usando chave privada)
-signature = private_key.sign(
-    doc_message,
-    padding.PSS(
-        mgf=padding.MGF1(hashes.SHA256()),
-        salt_length=padding.PSS.MAX_LENGTH
-    ),
-    hashes.SHA256()
+pss = padding.PSS(
+    mgf=padding.MGF1(hashes.SHA256()),
+    salt_length=padding.PSS.DIGEST_LENGTH,
 )
-print("Digital Signature:", base64.b64encode(signature).decode('utf-8')[:50], "...")
+signature = signing_key.sign(doc_message, pss, hashes.SHA256())
+print("Assinatura (Base64):", base64.b64encode(signature).decode("ascii"))
 
-# 2. Verificação da assinatura (usando chave pública)
 try:
-    public_key.verify(
-        signature,
-        doc_message,
-        padding.PSS(
-            mgf=padding.MGF1(hashes.SHA256()),
-            salt_length=padding.PSS.MAX_LENGTH
-        ),
-        hashes.SHA256()
-    )
-    print("Signature is VALID. Document integrity and authenticity are verified.")
+    verification_key.verify(signature, doc_message, pss, hashes.SHA256())
+    print("Assinatura VÁLIDA para esta mensagem e esta chave pública.")
 except InvalidSignature:
-    print("Signature is INVALID. Document may be tampered with.")
+    print("Assinatura INVÁLIDA para esta mensagem e esta chave pública.")
 ```
 
----
+## 5. Infraestrutura de chaves públicas (PKI)
 
-## 5. Infraestrutura de Chaves Públicas (PKI: Public Key Infrastructure)
+Se a chave de um atacante for aceita como a do interlocutor, até operações criptográficas corretas podem ser direcionadas à parte errada. A **PKI** oferece certificados, configuração de confiança e procedimentos de verificação para estabelecer associações entre chaves públicas e nomes ou outras informações.
 
-Embora as assinaturas digitais tenham tornado possível garantir a integridade dos dados e autenticar os remetentes, um ponto fraco fatal permanece em todo o sistema. Trata-se da questão: " **A chave pública sendo usada é realmente a chave pública correta da pessoa com quem estou me comunicando (Alice)?** ".
+### 5.1. Autoridades certificadoras e certificados X.509
 
-Se um atacante (Eve) fingir ser Alice, entregar sua própria chave pública a Bob e Bob acreditar que ela é "a chave pública de Alice", Eve pode se passar por Alice para interceptar a comunicação criptografada ou forçar a verificação de uma assinatura forjada. Isso é chamado de ataque **Man-in-the-Middle** (Ataque de intermediário).
+Uma autoridade certificadora (CA) verifica o controle do domínio ou as informações do titular conforme suas políticas e emite um certificado. Nem todo certificado comprova, na mesma extensão, a identidade pessoal do operador de um site.
 
-Para garantir a validade desta chave pública e construir uma infraestrutura social para uma rede de confiança, usamos a **PKI (Infraestrutura de Chaves Públicas)** .
+Um certificado X.509 inclui versão, número de série, algoritmo de assinatura, emissor, titular, período de validade, chave pública do titular, extensões e assinatura. A CA assina a **codificação DER de TBSCertificate**, que contém as informações a serem assinadas, e não somente a chave pública.
 
-### 5.1. Autoridade de Certificação (CA) e Certificados Digitais (X.509)
-
-A peça central da PKI é a **Autoridade de Certificação** (CA: Certificate Authority), uma organização terceirizada e confiável. O papel da CA é examinar a identidade do indivíduo ou a propriedade do domínio e emitir um **certificado digital** (certificado de chave pública) para a "chave pública" do indivíduo aplicando a assinatura digital da CA gerada com a "chave privada" da própria CA.
-
-O **X.509** é amplamente utilizado como o padrão para certificados digitais. O certificado inclui as seguintes informações:
-- Versão e número de série
-- Algoritmo de assinatura
-- Informações de identificação do emissor (CA)
-- Período de validade
-- Informações de identificação do titular (servidor ou indivíduo)
-- **Chave pública do titular**
-- **Assinatura digital da CA**
-
-### 5.2. Diagrama da Estrutura do Modelo de Confiança da PKI
+### 5.2. Cadeias de certificados e TLS
 
 ```mermaid
 graph TD
-    CA["Autoridade de Certificação Raiz (Root CA)"]
-    SubCA["Autoridade de Certificação Intermediária (Intermediate CA)"]
-    Server["Servidor Web (Alice)"]
-    Client["PC do Cliente (Bob)"]
-
-    CA -->|"Emite certificado (Assina)"| SubCA
-    SubCA -->|"Emite certificado (Assina)"| Server
-    Server -->|"Apresenta certificado de servidor"| Client
-    Client -.->|"Mantém a chave pública da Root CA com antecedência\n(Embutida no SO ou navegador)"| CA
-    Client -->|"Verifica a cadeia de certificados\nUsando a chave pública da Root CA"| Server
+    CA["Âncora de confiança (CA raiz)"] -->|"Assina o certificado da CA intermediária"| I["CA intermediária"]
+    I -->|"Assina o certificado do servidor"| S["Servidor"]
+    S -->|"Apresenta certificados final e intermediários"| C["Cliente"]
+    C -.->|"Confiança configurada previamente"| CA
+    C -->|"Valida caminho, restrições, usos, prazos e nome"| S
 ```
 
-Até mesmo ao acessar um site com "https://" pelo navegador, esse mecanismo da PKI está operando totalmente nos bastidores. A assinatura do certificado enviado pelo servidor é verificada pela chave pública da autoridade de certificação raiz pré-instalada no navegador, estabelecendo assim um canal de comunicação seguro (TLS).
+O diagrama mostra um exemplo: CA raiz → CA intermediária → servidor. O cliente constrói um caminho até uma âncora de confiança configurada e valida assinaturas, períodos de validade, restrições de CA, uso de chaves e extensões críticas não suportadas, entre outros requisitos. Não se limita a verificar diretamente o certificado final com a chave raiz. O tratamento da revogação segue o mecanismo e a política aplicáveis.
 
----
+TLS também exige verificar a identidade do serviço. Para nomes DNS, compara-se o nome esperado com as entradas `dNSName` de `subjectAltName`, sem recorrer a Common Name como alternativa (RFC 9525). Um certificado de outro site não deve ser aceito, mesmo que sua assinatura seja correta.
 
-## 6. Conclusão
+Validar o certificado não basta para estabelecer a comunicação cifrada. TLS 1.3 combina troca de chaves, autenticação e confirmação de chaves para derivar as chaves de tráfego, e protege os registros com cifração autenticada. O transporte de chaves com RSA estático foi removido no TLS 1.3. Conexões com PSK ou retomada podem omitir certificados, portanto o diagrama não representa todas as conexões TLS.
 
-A sociedade digital moderna baseia-se na incrível combinação das **tecnologias de criptografia** aqui explicadas.
+## 6. Resumo
 
-- Criptografia rápida de dados por **criptografia de chave simétrica**
-- Troca de chaves segura e assimetria alcançadas pela **criptografia de chave pública** (RSA, [ECC](/pt/p/elliptic-curve-cryptography-math-cpp/))
-- Extração de impressões digitais dos dados pelas **funções hash** (SHA-2/3)
-- Comprovação de integridade e autenticação com **assinaturas digitais**
-- Garantia da autenticidade das chaves públicas por meio de **PKI e Autoridades de Certificação**
+- A cifração simétrica protege grandes volumes de dados. É preciso distinguir confidencialidade e detecção de alterações.
+- Cifração de chave pública, acordo de chaves e assinaturas têm funções diferentes. As chaves também precisam ser autenticadas.
+- Hashes produzem resumos. Sozinhos, não autenticam a origem.
+- Assinaturas contribuem para integridade e autenticação, sujeitas à gestão de chaves e às condições do esquema.
+- Validação de caminhos PKI, verificação do nome do serviço e handshake TLS são processos relacionados, mas distintos.
 
-Essa beleza matemática e o rigor computacional da teoria protegem a nossa privacidade e propriedade diariamente contra ataques cibernéticos. A evolução da tecnologia de criptografia continua, e a pesquisa e padronização da **criptografia pós-quântica** (PQC: Post-Quantum Cryptography) para se preparar contra a ascensão dos computadores quânticos também está avançando rapidamente.
+Esses são os fundamentos. Sistemas de produção usam bibliotecas mantidas e protocolos padrão, e avaliam gestão de chaves, algoritmos, parâmetros e migração para criptografia pós-quântica. Os exemplos deste artigo não bastam para determinar a segurança de todo um sistema.
 
-Ter um entendimento correto dos fundamentos da criptografia servirá como o primeiro passo para o projeto de sistemas e aplicativos mais seguros e robustos.
+### Referências
 
----
-*Referências e Links Relacionados*
-- NIST FIPS 186-4: Digital Signature Standard (DSS)
-- NIST FIPS 202: SHA-3 Standard
-- RFC 5280: Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile
+- [RFC 8017: PKCS #1 — RSA Cryptography Specifications](https://www.rfc-editor.org/rfc/rfc8017.html) (§§3, 5–9)
+- [cryptography 50.0.2: RSA](https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/)
+- [RFC 6090: Fundamental Elliptic Curve Cryptography Algorithms](https://www.rfc-editor.org/rfc/rfc6090.html) (§§3.3, 5.3.1)
+- [NIST FIPS 180-4: Secure Hash Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf) (§§5–6)
+- [NIST FIPS 202: SHA-3 Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf) (§§4–6)
+- [NIST FIPS 186-5: Digital Signature Standard](https://csrc.nist.gov/pubs/fips/186-5/final)
+- [RFC 5280: Internet X.509 PKI Certificate and CRL Profile](https://www.rfc-editor.org/rfc/rfc5280.html) (§§4.1, 6)
+- [RFC 9525: Service Identity in TLS](https://www.rfc-editor.org/rfc/rfc9525.html)
+- [RFC 8446: TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) (§§1.2, 2)
