@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T08:13:17.122049+09:00",
+  "results": [
+    {
+      "language": "ja",
+      "combinedFourImplementationBlocksCompiled": true,
+      "compiler": "Ubuntu g++13.3.0 -std=c++17 -O2 -Wall -Wextra; Ubuntu Boost1.83 headers extracted to task temp folder, no global installation",
+      "stdout": "inverse_zero=0\ntwo_power_256_returns_infinity=1\ninvalid_point_one=0,0,0\nnegative_scalar_accepted=1\n",
+      "interpretation": [
+        "Zero inverse accepted with result0; mathematically undefined.",
+        "Scalar2^256 silently truncated to0, producing infinity; secp256k1 base point has odd prime order n and n does not divide2^256.",
+        "Off-curve(0,0) accepted at scalar1.",
+        "Negative scalar accepted despite no documented negative-scalar rule."
+      ],
+      "limitations": "First C++ block is illustrative pseudocode and intentionally not compiled. A test main supplied secp256k1 G. This is functional counterexample reproduction, not timing measurement or proof."
+    },
+    {
+      "language": "en",
+      "combinedFourImplementationBlocksCompiled": true,
+      "compiler": "Ubuntu g++13.3.0 -std=c++17 -O2 -Wall -Wextra; Ubuntu Boost1.83 headers extracted to task temp folder, no global installation",
+      "stdout": "inverse_zero=0\ntwo_power_256_returns_infinity=1\ninvalid_point_one=0,0,0\nnegative_scalar_accepted=1\n",
+      "interpretation": [
+        "Zero inverse accepted with result0; mathematically undefined.",
+        "Scalar2^256 silently truncated to0, producing infinity; secp256k1 base point has odd prime order n and n does not divide2^256.",
+        "Off-curve(0,0) accepted at scalar1.",
+        "Negative scalar accepted despite no documented negative-scalar rule."
+      ],
+      "limitations": "First C++ block is illustrative pseudocode and intentionally not compiled. A test main supplied secp256k1 G. This is functional counterexample reproduction, not timing measurement or proof."
+    }
+  ]
+}

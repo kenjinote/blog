@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/楕円曲線暗号の数学的基礎とcppでの実装/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "translationHash": "b2ee74f5bf9c2fb8559a522290a14acbaa5ae672e423aef8fb81a7cab10ddfb3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Japanese/English metadata and bodies. Corrected the Japanese source and English text, then independently reread the complete revised prose/metadata and compared the common implementation. Compared all nine sections, the five-row strength table and three diagrams/fifteen edges. Corrected overgeneralized ECDLP and performance claims, nonzero inverses and characteristic/nonsingularity premises, vertical-line/doubling exceptions, subgroup/private-scalar ranges, ECDH authentication/validation/KDF and CDH versus DLP. Removed promises that the pedagogical branching/variable-size implementation prevents timing/cache leakage. Retained the mathematical progression while removing unsupported promotional claims and misleading automatic links."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished field size p, base-point/subgroup order n and private scalar d; short Weierstrass form, nonsingularity modulo p, affine/Jacobian coordinates, inverse point versus field inverse, group operation counts versus runtime, key agreement versus encryption/signature, CDH versus ECDLP, functional ladder correctness versus constant-time behavior. Defined ECC key-size column as order-bit-length, not encoded key size. English Crypto/Abel/Euclide/Jacobian substring links were removed in favor of intact terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All eleven display formulas match exactly; inline premises and table values checked against scoped primary references. NIST Table2 ranges and historical/quantum caveats checked as parsed text. secp256k1 p,a,b,G,n,h checked in SEC2§2.4.1. Ran thirteen scalar differential cases including zero, n±1, n, high-bit and maximum accepted values against cryptography50.0.2; a public toy curve p17,a2,b0 exercised all400 ordered additions against independent Python,8000 associativity triples,820 ladder/repeated-addition cases and all three y=0 doubling points. These finite checks do not prove general security or constant-time behavior."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reproduced four original C++ defects in both languages: zero inverse, scalar2^256 truncation, invalid point acceptance and negative scalar acceptance. Compiled and ran the five revised C++17 blocks concatenated in stated order using WSL Ubuntu g++13.3.0 / Boost1.83 extracted to task temp, without global installation. Both versions have identical extracted C++ and eleven display formulas. Passed thirteen scalar differential fixtures and thirteen rejection cases per language, plus modular/inverse, infinity, inverse-point and swap fixtures. Pseudocode is now labeled text and excluded from compilation; shell instructions describe the combined program. No generated private keys, production protocol or timing/assembly audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Read the relevant primary-reference excerpts and recorded exact scope in source notes/audit. Replaced the wrong self-heading path with the normal theme title, removed cryptocurrency and biography substring links, and retained the matching-language link to the already-reviewed modern-cryptography article. Preserved slug, publication timestamp and image, added actual lastmod. Checked image existence, six primary URLs, generated links/markers/three Mermaid blocks, and all TeX as decoded HTML text. Fifteen-bundle minified Hugo, multilingual1050pages and HTTPS1945HTML/41XML passed; publication remains pending."
+        }
+      },
+      "summary": "Full English ECC review against corrected Japanese source; variable-time C++ educational code now has explicit input checks and reproducible public-value examples.",
+      "languageSpecificFindings": "Removed English Crypto/Euclide/Jacobian word-fragment links, corrected the self-heading slug, distinguished subgroup order and field size, and replaced claims of secure constant-time C++ with the actual variable-time teaching scope. Translated all mathematical and protocol conditions without treating structural tests as semantic review.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No browser visual/KaTeX/Mermaid audit, side-channel timing/assembly test, live ECDH/TLS audit or production cryptographic implementation.",
+        "Eleven other ECC translations remain unreviewed; no review date added to them.",
+        "Publication verification remains pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7748.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.secg.org/sec2-v2.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc5869.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        }
+      ],
+      "validation": "docs/translation-review/batch-014-validation.json"
+    }
+  },
+  "englishStageAssembly": {
+    "checkedAt": "2026-10-27T08:19:42.775245+09:00",
+    "otherTranslationsUnreviewed": 11,
+    "publicationPending": true
+  }
+}

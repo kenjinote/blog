@@ -2,6 +2,7 @@
 title: "Mathematical Foundations of Elliptic Curve Cryptography (ECC) and Implementation in C++"
 slug: "elliptic-curve-cryptography-math-cpp"
 date: "2026-09-11T10:00:00+09:00"
+lastmod: "2026-10-27"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,442 +10,305 @@ categories: ["cryptography", "cpp", "mathematics"]
 tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 ---
 
-# [Mathematical Foundations of Elliptic Curve Cryptography (ECC) and Implementation in C++](https://kenji.blog/en/p/楕円曲線暗号の数学的基礎とcppでの実装/)
+Elliptic Curve Cryptography (ECC) is a family of public-key techniques based on elliptic-curve groups. ECDH key agreement and signatures such as ECDSA have different roles; ECC is not one encryption operation that provides every security property. Alongside the [overview of public keys, hashes and signatures](/en/p/modern-cryptography-public-key-hash-signature/), this article explains the mathematical and implementation conditions.
 
-In modern cryptographic technology, **Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC)** plays a tremendously important role. It is no exaggeration to say that the foundation of trust in our modern digital society—from everyday Internet communications (HTTPS/TLS) and smartphone secure enclaves, to server authentication via SSH, passwordless authentication like FIDO, and even crypto assets like [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) and Ethereum—is supported by ECC.
+The C++ example is a **variable-time mathematical demonstration** using public secp256k1 parameters. It does not implement secret-key generation, authenticated key agreement, signatures or constant-time cryptography. We also explain why a ladder structure alone does not establish constant-time behavior.
 
-In this article, we will thoroughly explain how elliptic curve cryptography works, starting from the beautiful yet complex mathematical theory behind it (algebraic geometry over finite fields), to actual implementation methods in C++, and even secure coding techniques to prevent side-channel attacks (timing attacks), with an overwhelming volume of detail.
+## 1. Security and key sizes
 
----
+Choose a large prime-order subgroup of order $n$ with generator $G$. Recovering $d$ from $Q=dG$ is the elliptic-curve discrete logarithm problem (ECDLP). The scalar is determined modulo $n$. A private key is sampled uniformly from $1\le d<n$ using a cryptographically secure random generator. Distinguish the field size $p$, subgroup order $n$ and private-key value.
 
-## 1. Why Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy? (Comparison with [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/))
+For a suitable large prime-order subgroup, a generic classical attack such as Pollard rho takes approximately $O(\sqrt n)$ group operations. This does not mean exhaustive search is the only attack, or that every elliptic curve has the same difficulty. Special curve structures and small subgroups permit other attacks. Parameters and schemes must be selected appropriately.
 
-For a long time, **RSA cryptography** was synonymous with public-key cryptography. The security of RSA relies on the "difficulty of factoring large composite numbers." However, as the computational power of computers has increased, it has become necessary to continuously lengthen the RSA key size (number of modulus bits) to maintain security. Currently, a key size of at least 2048 bits is recommended, and 3072 or 4096 bits if greater security is desired.
+The following comparison reproduces the **estimated maximum security strengths against classical computers** in NIST SP 800-57 Part 1 Rev.5, Table 2. The RSA column gives the modulus bit length; the ECC column gives the bit length $f$ of the base-point order $n$, not the encoded public-key size.
 
-In contrast, Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC) bases its security on a different mathematical difficulty: the **"Elliptic Curve Discrete Logarithm Problem (ECDLP)"**. To this day, no efficient algorithms (such as sub-exponential time algorithms) for solving the ECDLP have been discovered, and even the most efficient known attack methods require exponential time.
+| Estimated strength (bits) | RSA modulus (bits) | ECC $f$ (bits) |
+| :---: | :---: | :---: |
+| At most 80 (historical comparison) | 1024 | 160–223 |
+| 112 | 2048 | 224–255 |
+| 128 | 3072 | 256–383 |
+| 192 | 7680 | 384–511 |
+| 256 | 15360 | At least 512 |
 
-Because of this property, ECC has the decisive advantage of being able to **achieve security strength equivalent to [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) with significantly shorter key lengths**.
+The 80-bit row is not a recommendation for a new system. The table does not certify a particular curve, implementation or deployment lifetime, or provide quantum resistance. Shorter parameters can reduce communication costs, but ECC is not necessarily faster than RSA for every operation.
 
-| Security Strength (bits) | RSA Key Length (bits) | ECC Key Length (bits) | Key Length Ratio |
-| :---: | :---: | :---: | :---: |
-| 80 | 1024 | 160 | 1:6 |
-| 112 | 2048 | 224 | 1:9 |
-| 128 | 3072 | 256 | 1:12 |
-| 192 | 7680 | 384 | 1:20 |
-| 256 | 15360 | 512 | 1:30 |
+## 2. Groups and finite fields
 
-As shown in the table above, to achieve a security strength of 128 bits (currently a standard strength), RSA requires a 3072-bit key, whereas ECC requires only 256 bits. This reduces computational complexity, lowers memory usage, and saves network bandwidth, making ECC overwhelmingly superior, especially in resource-constrained IoT devices and smart card environments.
+A group consists of a set and an operation satisfying closure, associativity, an identity and inverses for every element. A group that also satisfies commutativity is an abelian group. Elliptic-curve points, including the point at infinity and the addition law below, form an abelian group.
 
----
+For a prime $p$, represent elements of the prime field $\mathbb F_p$ by $0,\ldots,p-1$ and reduce addition, subtraction and multiplication modulo $p$. Division $u/v$ is defined as $uv^{-1}$ **only for nonzero $v$**.
 
-## 2. Mathematical Preparation: The World of Group Theory and Finite Fields
+$$vv^{-1}\equiv1\pmod p$$
 
-To truly understand elliptic curve cryptography, it is necessary to grasp the basic concepts of abstract algebra (group theory and field theory). Here, we briefly summarize the prerequisite knowledge for constructing ECC.
+An inverse can be computed with the extended Euclidean algorithm or as $v^{p-2}\bmod p$ using Fermat's little theorem. Choosing the latter does not make an implementation constant-time. Exponentiation, multiplication, reduction and memory allocation must all be considered.
 
-### 2.1. Groups and [Abel](https://kenji.blog/en/p/abel/)ian Groups
-A **Group** is a pair consisting of a set $G$ and a binary operation on that set (here we'll use addition $+$), denoted as $(G, +)$, which satisfies the following four axioms:
+## 3. The curve and point at infinity
 
-1. **Closure**: For any $a, b \in G$, $a + b \in G$.
-2. **Associativity**: For any $a, b, c \in G$, $(a + b) + c = a + (b + c)$.
-3. **Identity element**: There exists an element $e \in G$ such that for any $a \in G$, $a + e = e + a = a$. For additive groups, this identity element is usually denoted as $0$ or $\mathcal{O}$.
-4. **Inverse element**: For any $a \in G$, there exists an element $b \in G$ such that $a + b = b + a = e$. This $b$ is denoted as $-a$.
+We restrict this article to the **short Weierstrass form** over a prime field with $p>3$. This formula does not uniformly cover characteristic two or three, or Montgomery and Edwards models.
 
-Furthermore, a group that satisfies the following condition, where the result does not change even if the order of the operation is swapped, is called an **[Abel](https://kenji.blog/en/p/abel/)ian group (commutative group)**.
+$$y^2\equiv x^3+ax+b\pmod p$$
 
-5. **Commutativity**: For any $a, b \in G$, $a + b = b + a$.
+The coefficients are field elements, and nonsingularity requires the following condition in the field:
 
-The set of points on an elliptic curve, by defining a specific addition rule, constitutes this **[Abel](https://kenji.blog/en/p/abel/)ian group**.
+$$\Delta=-16(4a^3+27b^2)\not\equiv0\pmod p$$
 
-### 2.2. Finite Fields
-In cryptography, we do not use fields with continuous and infinite elements like real or complex numbers, but rather **Finite Fields** (or [Galois](https://kenji.blog/en/p/galois/) Fields), which have a finite number of elements.
+This condition alone does not make a curve cryptographically suitable. Add the identity, the point at infinity $\mathcal O$, to the finite points satisfying the equation.
 
-The most basic finite field is the **prime field $\mathbb{F}_p$** using a prime number $p$. This defines the four basic arithmetic operations (addition, subtraction, multiplication, division) modulo $p$ (the remainder when divided by $p$) on the set of integers $\{0, 1, 2, \dots, p-1\}$.
+$$P+\mathcal O=\mathcal O+P=P$$
 
-- **Addition**: $(a + b) \pmod p$
-- **Subtraction**: $(a - b) \pmod p$
-- **Multiplication**: $(a \times b) \pmod p$
-- **Division**: $a \times b^{-1} \pmod p$ (where $b^{-1}$ is the modular multiplicative inverse of $b$ modulo $p$)
+$$-(x,y)=(x,-y\bmod p),\qquad P+(-P)=\mathcal O$$
 
-Calculating the **Modular Multiplicative Inverse** is extremely important in cryptographic implementations. To find $b^{-1}$ satisfying $b \times b^{-1} \equiv 1 \pmod p$, the following two main algorithms are used:
+The real-number picture of intersecting a line with a curve and reflecting the intersection gives intuition for the group law. Over a finite field, we calculate with the corresponding algebraic formulas rather than a continuous drawn curve.
 
-1. **Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm**: Fast, but depending on the implementation, the processing time can depend on the input values, leading to a risk of timing attacks.
-2. **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**: When $p$ is prime and $b \neq 0$, $b^{p-1} \equiv 1 \pmod p$ holds. Dividing both sides by $b$ yields $b^{p-2} \equiv b^{-1} \pmod p$. That is, the inverse is found by raising $b$ to the power of $p-2$. Exponentiation is easier to implement in constant time, so this method is preferred in cryptographic implementations.
+## 4. Addition, doubling and exceptional cases
 
----
+Let $P=(x_1,y_1)$ and $Q=(x_2,y_2)$. First handle addition with $\mathcal O$ and the case $Q=-P$. The latter includes doubling when $P=Q$ and $y_1=0$; the result is $\mathcal O$.
 
-## 3. Elliptic Curve Equations and Geometry
+When $x_1\ne x_2$, use:
 
-### 3.1. Weierstrass Normal Form
-An **Elliptic Curve** is generally a plane curve defined by the following equation, known as the **Weierstrass normal form**.
+$$\lambda\equiv(y_2-y_1)(x_2-x_1)^{-1}\pmod p$$
 
-$$ y^2 = x^3 + ax + b $$
+When $P=Q$ and $y_1\ne0$, use the tangent formula:
 
-Here, $a$ and $b$ are constants, and as a condition for the curve to have no singular points (self-intersections or cusps) (i.e., to be a smooth curve), the following **Discriminant $\Delta$** must not be zero.
+$$\lambda\equiv(3x_1^2+a)(2y_1)^{-1}\pmod p$$
 
-$$ \Delta = -16(4a^3 + 27b^2) \neq 0 $$
+Once these conditions ensure a nonzero denominator, compute the result with the common formulas:
 
-Since curves with singular points compromise cryptographic security, coefficients $a, b$ that satisfy this condition are always chosen.
+$$x_3\equiv\lambda^2-x_1-x_2\pmod p$$
 
-### 3.2. Point at Infinity
-To make an elliptic curve a mathematically complete group, a virtual point called the **"Point at Infinity"** is introduced in addition to the points on the plane. This is denoted as $\mathcal{O}$.
-
-The point at infinity $\mathcal{O}$ is defined as the point where all vertical lines intersect infinitely far away. In group theory, this point at infinity $\mathcal{O}$ functions as the **identity element** (zero) for addition.
-
-In other words, for any point $P$ on the curve, the following holds:
-$$ P + \mathcal{O} = \mathcal{O} + P = P $$
-
-Also, the inverse $-P$ of point $P = (x, y)$ is defined as the point symmetrical with respect to the x-axis, $(x, -y)$. Therefore:
-$$ P + (-P) = \mathcal{O} $$
-holds.
-
----
-
-## 4. Group Operations on Elliptic Curves (Point Addition and Point Doubling)
-
-The core of elliptic curve cryptography is the operation called **"Addition"** between points on the curve. This is different from the addition of ordinary integers and is defined based on geometric operations.
-
-### 4.1. Geometric Addition (Tangent and Chord Method)
-The procedure for finding a new point $R$ ($R = P + Q$) by adding two distinct points $P$ and $Q$ on the curve is as follows:
-
-1. Draw a straight line (chord) connecting point $P$ and point $Q$.
-2. This straight line will definitely intersect the elliptic curve at a third point (let's call it $-R$). (*Based on a theorem in algebraic geometry)
-3. The point $R$ we are looking for is the point obtained by reflecting the intersection point $-R$ symmetrically across the x-axis (the point with the inverted sign of the y-coordinate).
+$$y_3\equiv\lambda(x_1-x_3)-y_1\pmod p$$
 
 ```mermaid
 graph TD
-    Step1["Draw a line connecting P(x1, y1) and Q(x2, y2)"] --> Step2["Find the 3rd intersection -R with the curve"]
-    Step2 --> Step3["Reflect -R across the x-axis to get R(x3, y3)"]
-    Step3 -.-> Result["This is R = P + Q"]
+    A["Valid points P, Q on the same curve"] --> B["Handle infinity, inverse and y=0 cases"]
+    B --> C["Compute slope with a nonzero denominator"]
+    C --> D["Use addition formulas for R = P + Q"]
 ```
 
-### 4.2. Point Doubling
-When adding the same point $P$ to point $P$ ($P + P = 2P$), we cannot draw a line connecting two points. In this case, we draw the **tangent line to the curve at point $P$**.
+Affine coordinates require inversions. Practical implementations can reduce their number with coordinate systems such as Jacobian coordinates. A change of coordinates alone does not establish constant-time behavior or security.
 
-1. Draw the tangent line to the curve at point $P$.
-2. This tangent line intersects the curve at another point $-R$.
-3. The point $R = 2P$ we are looking for is obtained by reflecting the intersection symmetrically across the x-axis.
+## 5. Scalar multiplication
 
-### 4.3. Algebraic Calculation Formulas
-We translate the geometric operations into algebraic formulas so they can be computed by a computer.
-All operations are performed **over the finite field $\mathbb{F}_p$ (modulo $p$)**.
+For nonnegative $k$, define $kP$ by repeated addition, with $0P=\mathcal O$. Double-and-add processes bits from most significant to least significant: double the accumulator and add $P$ if the bit is one. It reduces the number of group operations from $k$ naive additions to $O(\log k)$. This says nothing about a constant cost per group operation or an absolute running time.
 
-Let point $P = (x_1, y_1)$ and point $Q = (x_2, y_2)$.
-Also, let the resulting point be $R = P + Q = (x_3, y_3)$.
+The following conceptual pseudocode is not part of the later C++ program. It branches on secret bits.
 
-Let the slope of the line be $\lambda$ (lambda).
+```text
+R = O
+for bit in bits_of_k_from_most_significant:
+    R = 2R
+    if bit == 1:
+        R = R + P
+```
 
-**[Case 1: When $P \neq Q$ (Point Addition)]**
-The slope $\lambda$ is the rate of change between the two points.
-$$ \lambda \equiv \frac{y_2 - y_1}{x_2 - x_1} \pmod p $$
-$$ \lambda \equiv (y_2 - y_1) \cdot (x_2 - x_1)^{-1} \pmod p $$
+A Montgomery-ladder-style update performs one addition and one doubling per bit. If the processed prefix represents $r$, it can preserve $(R_0,R_1)=(rP,(r+1)P)$. The later example demonstrates this invariant using full affine points; it is not an implementation of RFC 7748's X25519 or X448.
 
-Using this $\lambda$, $x_3, y_3$ are found as follows:
-$$ x_3 \equiv \lambda^2 - x_1 - x_2 \pmod p $$
-$$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
+```mermaid
+graph TD
+    A["R0 = O, R1 = P"] --> B["Process each bit from the most significant"]
+    B --> C["Swap according to the bit (branching in this demo)"]
+    C --> D["R1 = R0 + R1, R0 = 2R0"]
+    D --> E["Swap back according to the same bit"]
+    E --> B
+    B -.-> F["All bits processed: R0 = kP"]
+```
 
-**[Case 2: When $P = Q$ (Point Doubling)]**
-The slope $\lambda$ becomes the slope of the tangent line obtained by differentiation. (We implicitly differentiate $y^2 = x^3 + ax + b$)
-$$ 2y \cdot y' = 3x^2 + a \implies y' = \frac{3x^2 + a}{2y} $$
-Therefore,
-$$ \lambda \equiv (3x_1^2 + a) \cdot (2y_1)^{-1} \pmod p $$
+## 6. ECDH: agreement and authentication
 
-The formulas for $x_3, y_3$ take the same form as addition, but since $x_2 = x_1$, they are as follows:
-$$ x_3 \equiv \lambda^2 - 2x_1 \pmod p $$
-$$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
+Public domain parameters include the curve, field, base point $G$, its order $n$ and the cofactor. Each party generates an appropriate private scalar and exchanges public points.
 
-> [!IMPORTANT]
-> These formulas include **division (calculation of modular inverses)**, such as $(x_2 - x_1)^{-1}$ and $(2y_1)^{-1}$. Since calculating modular inverses incurs a very high computational cost, practical implementations generally use projective coordinate systems like **"[Jacobi](https://kenji.blog/en/p/jacobi/)an Coordinates"**, which delay division.
+$$Q_A=d_AG,\qquad Q_B=d_BG$$
 
----
-
-## 5. Scalar Multiplication and the Elliptic Curve Discrete Logarithm Problem (ECDLP)
-
-In elliptic curve cryptography, the operation that requires the most computation and forms the core of its security is **Scalar Multiplication**.
-
-### 5.1. What is Scalar Multiplication?
-The operation of adding a point $P$ to itself $k$ times is called scalar multiplication, denoted as $kP$.
-$$ kP = \underbrace{P + P + \dots + P}_{k \text{ times}} $$
-
-Here, $k$ is a very large integer (for example, a 256-bit integer).
-
-### 5.2. Elliptic Curve Discrete Logarithm Problem (ECDLP)
-The security of elliptic curve cryptography depends on the difficulty of the following problem.
-
-> **Elliptic Curve Discrete Logarithm Problem (ECDLP)**
-> Given a known point $P$ (base point) and the resulting point $Q$, find the scalar $k$ that satisfies $Q = kP$.
-
-Calculating $Q$ from $k$ and $P$ (forward direction) is easy (polynomial time) using the algorithm described below, but inversely calculating $k$ from $P$ and $Q$ (reverse direction) is practically impossible as there is no efficient solution other than exhaustive search (a one-way function).
-In cryptographic protocols, **$k$ corresponds to the "private key" and $Q$ to the "public key"**.
-
-### 5.3. Double-and-Add Algorithm
-When $k$ is a huge number (e.g., $2^{256}$), naively adding $P$ for $k$ times will not finish even if the life of the universe ends. Therefore, to perform scalar multiplication quickly, the **Double-and-Add method (binary method)** is used.
-
-This is the elliptic curve version of the "exponentiation by squaring" method used for rapid calculation of integer powers. The scalar $k$ is represented in binary, and processed sequentially starting from the most significant bit.
-
-1. Initialize the point $R$ holding the result to $\mathcal{O}$.
-2. Repeat the following from the most significant bit to the least significant bit of $k$:
-   - Double $R$ (Point Doubling: $R = 2R$)
-   - If the current bit is `1`, add $P$ to $R$ (Point Addition: $R = R + P$)
-
-With this algorithm, the computational complexity is dramatically reduced from $O(k)$ to $O(\log_2 k)$, enabling calculation in a realistic amount of time (milliseconds).
-
----
-
-## 6. Elliptic Curve Diffie-Hellman (ECDH) Key Exchange
-
-Here, we explain the mechanics of the **ECDH (Elliptic Curve Diffie-Hellman) key exchange protocol**, which is the most representative application of ECC. ECDH is a mechanism for Alice and Bob to securely generate and share a common secret key (session key) over a communication channel that could be wiretapped (it is the core of the TLS handshake).
-
-**[Prerequisite Parameters (Domain Parameters)]**
-Both parties share the elliptic curve $E$, a prime number $p$, and a base point $G$ to be used beforehand. (e.g., NIST P-256 or secp256k1)
+$$S=d_AQ_B=d_BQ_A=(d_Ad_B)G$$
 
 ```mermaid
 sequenceDiagram
-    participant Alice as "Alice"
-    participant Bob as "Bob"
-    
-    Note over Alice,Bob: "Public parameters: Curve E, Base point G, Prime p"
-    
-    Alice->>Alice: "Generate private key d_A (random integer)"
-    Alice->>Alice: "Calculate public key Q_A = d_A * G"
-    
-    Bob->>Bob: "Generate private key d_B (random integer)"
-    Bob->>Bob: "Calculate public key Q_B = d_B * G"
-    
-    Alice->>Bob: "Send public key Q_A (plaintext)"
-    Bob->>Alice: "Send public key Q_B (plaintext)"
-    
-    Alice->>Alice: "Calculate shared secret S = d_A * Q_B"
-    Bob->>Bob: "Calculate shared secret S = d_B * Q_A"
-    
-    Note over Alice,Bob: "S = d_A * (d_B * G) = d_B * (d_A * G) = (d_A * d_B) * G"
-    Note over Alice,Bob: "Both parties' calculation results S perfectly match!"
+    participant A as Alice
+    participant B as Bob
+    A->>A: Sample private d_A uniformly from 1..n-1
+    B->>B: Sample private d_B uniformly from 1..n-1
+    A->>B: Q_A = d_A G
+    B->>A: Q_B = d_B G
+    A->>A: Validate and authenticate peer key, then S = d_A Q_B
+    B->>B: Validate and authenticate peer key, then S = d_B Q_A
+    Note over A,B: Derive purpose-specific keys with the scheme's encoding and KDF
 ```
 
-An eavesdropper (Eve) can intercept $G$, $Q_A$, and $Q_B$ flowing over the communication path, but due to the difficulty of the ECDLP, she cannot determine Alice's private key $d_A$ from $Q_A = d_A \cdot G$. Also, even if she multiplies $Q_A$ and $Q_B$, it will not result in the shared key $S$, so the eavesdropper cannot calculate $S$.
+Computing the shared value from the public points is the computational Diffie–Hellman problem (CDH), which is not the definition of ECDLP. Solving ECDLP lets an attacker compute the shared value; we do not assume a general equivalence in the reverse direction.
 
----
+ECDH alone does not authenticate the peer or stop an attacker from substituting public keys. A real protocol binds keys, the exchange and peer identities, and applies its required checks for encoding, coordinate ranges, curve membership, infinity and subgroup conditions. Do not use the shared point or its x-coordinate directly as an AES key: follow the protocol's encoding, context binding and key derivation, such as HKDF. The diagram is not a complete TLS handshake.
 
-## 7. Implementation Pitfalls: Side-Channel Attacks and Countermeasures
+## 7. What constant-time implementation requires
 
-Even a theoretically perfect cryptographic algorithm can harbor vulnerabilities introduced during the process of implementing it as a program. This is known as a **"Side-Channel Attack"**.
+Secret-dependent branches, memory accesses, exceptional cases and arithmetic timing can leak information under an appropriate observation model. The number of observations and whether a full key can be recovered depend on the implementation and attack. There is no universal guarantee that a few thousand measurements reveal every bit.
 
-### 7.1. Timing Attack
-Let's look back at the Double-and-Add algorithm mentioned earlier.
+An equal number of additions per iteration does not establish constant-time behavior if those additions branch on secret intermediate values. A masked conditional swap is only part of a defense: integer representation, the compiler and target CPU also matter. RFC 7748 §5.1 explains that an identical field-operation sequence does not by itself prevent all side channels.
+
+`cpp_int` is a variable-size integer type, and both `conditionalSwapDemo` and point addition below branch. **The following code is not constant-time and must not handle secret keys in production cryptography.**
+
+## 8. A C++17 mathematical demonstration
+
+Concatenate the following five C++ blocks in order into one file. Boost.Multiprecision headers are required. The program uses only public fixed parameters and test values; it does not generate, store or print secret keys.
+
+### 8.1. Prime-field arithmetic
+
+`modInverse` is specific to the fixed prime $p$ used here and rejects zero. The Fermat inversion implemented with `powerMod` is also variable-time.
 
 ```cpp
-// Vulnerable pseudo-code for Double-and-Add
-Point R = Point::Infinity;
-for (int i = 255; i >= 0; i--) {
-    R = PointDoubling(R);         // Always executed
-    if (bit(k, i) == 1) {
-        R = PointAddition(R, P);  // Executed ONLY when bit is 1!
-    }
-}
-```
-
-This implementation has a fatal flaw. Because Point Addition is executed when the bit is `1`, the calculation time is **slightly longer** than when the bit is `0`. Also, the behavior of the processor's branch prediction and cache memory will change.
-By statistically observing this minute difference in calculation time (or power consumption) thousands of times, an attacker can **completely recover the bit sequence of the private key $k$, one bit at a time**. This is a timing attack.
-
-### 7.2. Constant-Time Implementation: Montgomery Ladder
-To prevent timing attacks, it is necessary to adopt algorithms where **the sequence of executed instructions and the calculation time are always constant (Constant-Time), regardless of the bit values of the private key**.
-
-A representative example of this is the **Montgomery Ladder**.
-
-```mermaid
-graph TD
-    Start["Initialization: R0 = O, R1 = P"] --> LoopStart["For each bit i (from MSB)"]
-    LoopStart --> Cond{"Value of k_i?"}
-    
-    Cond -->|"0"| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
-    Cond -->|"1"| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
-    
-    Branch0 --> LoopEnd["Next bit"]
-    Branch1 --> LoopEnd
-    
-    LoopEnd --> LoopStart
-    LoopStart -.->|"All bits processed"| End["End: R0 is the result (kP)"]
-```
-
-The beauty of the Montgomery Ladder is that whether the bit is `0` or `1`, **"exactly one Point Addition and one Point Doubling"** are always executed. This completely eliminates the data dependency of the computation time.
-
-However, if a branch (`if (k_i == 0)`) itself exists, the risk of execution time fluctuating due to compiler optimization and CPU branch prediction remains. Therefore, in actual Constant-Time implementations, conditional branches (`if` statements) are eliminated, and a **Conditional Swap using bitwise operations** is utilized.
-
----
-
-## 8. Implementation of Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy in C++
-
-From here, we will translate the theory into C++ code. While practical cryptographic libraries (like OpenSSL or libsodium) use highly advanced assembly optimizations and [Jacobi](https://kenji.blog/en/p/jacobi/)an coordinates, we present the skeleton of an **easy-to-understand Constant-Time implementation using affine coordinates** to deepen mathematical understanding.
-
-We assume the use of `boost::multiprecision::cpp_int` for operations on huge integers.
-
-### 8.1. Modular Arithmetic and Inverses
-First, we define helper functions for operations over finite fields. We implement inverse calculation using [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
-
-```cpp
+#include <cstdint>
 #include <iostream>
-#include <vector>
 #include <stdexcept>
+#include <utility>
 #include <boost/multiprecision/cpp_int.hpp>
 
-using namespace boost::multiprecision;
+using boost::multiprecision::cpp_int;
 
-// Prime p and parameters for secp256k1 as an example
+// Public secp256k1 parameters; this entire example is variable-time.
 const cpp_int p("0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F");
 const cpp_int a = 0;
 const cpp_int b = 7;
+const cpp_int n("0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141");
 
-// Modulo operation returning a positive remainder
-cpp_int mod(cpp_int x, cpp_int m) {
+cpp_int mod(cpp_int x, const cpp_int& m) {
+    if (m <= 0) throw std::invalid_argument("Modulus must be positive");
     cpp_int r = x % m;
-    return r < 0 ? r + m : r;
+    if (r < 0) r += m;
+    return r;
 }
 
-// Modular exponentiation (x^y mod m)
-cpp_int powerMod(cpp_int base, cpp_int exp, cpp_int m) {
-    cpp_int res = 1;
+cpp_int powerMod(cpp_int base, cpp_int exp, const cpp_int& m) {
+    if (m <= 1 || exp < 0) throw std::invalid_argument("Invalid powerMod input");
+    cpp_int result = 1;
     base = mod(base, m);
     while (exp > 0) {
-        if (exp % 2 == 1) res = mod(res * base, m);
+        if (exp % 2 == 1) result = mod(result * base, m);
         base = mod(base * base, m);
         exp /= 2;
     }
-    return res;
+    return result;
 }
 
-// Modular inverse using Fermat's Little Theorem
-cpp_int modInverse(cpp_int n, cpp_int m) {
-    // Assuming m is prime: n^(m-2) ≡ n^(-1) mod m
-    return powerMod(n, m - 2, m);
+// Inversion in the fixed prime field F_p only; zero has no inverse.
+cpp_int modInverse(cpp_int value) {
+    value = mod(value, p);
+    if (value == 0) throw std::invalid_argument("Zero has no inverse");
+    return powerMod(value, p - 2, p);
 }
 ```
 
-### 8.2. Point Representation and Group Operations (Addition/Doubling)
-We implement the `Point` structure, which manages the point at infinity with a flag, and the addition formulas.
+### 8.2. Points and addition
+
+A finite point must have coordinates $0\le x,y<p$ and satisfy the curve equation. Infinity is permitted for group arithmetic but must be rejected separately as a peer ECDH public key. The cofactor of secp256k1 is one; these checks do not replace the subgroup validation needed for arbitrary curves.
 
 ```cpp
 struct Point {
-    cpp_int x;
-    cpp_int y;
-    bool isInfinity;
+    cpp_int x = 0;
+    cpp_int y = 0;
+    bool isInfinity = true;
 
-    // Creation of the point at infinity
-    Point() : x(0), y(0), isInfinity(true) {}
-    
-    // Creation of a normal point
-    Point(cpp_int x, cpp_int y) : x(x), y(y), isInfinity(false) {}
+    Point() = default;
+    Point(cpp_int xValue, cpp_int yValue)
+        : x(std::move(xValue)), y(std::move(yValue)), isInfinity(false) {}
 };
 
-// Addition of points on the elliptic curve (R = P + Q)
+bool isOnCurve(const Point& point) {
+    if (point.isInfinity) return true;
+    if (point.x < 0 || point.x >= p || point.y < 0 || point.y >= p) return false;
+    return mod(point.y * point.y - point.x * point.x * point.x - a * point.x - b, p) == 0;
+}
+
 Point pointAdd(const Point& P, const Point& Q) {
+    if (!isOnCurve(P) || !isOnCurve(Q)) throw std::invalid_argument("Invalid curve point");
     if (P.isInfinity) return Q;
     if (Q.isInfinity) return P;
+    if (P.x == Q.x && mod(P.y + Q.y, p) == 0) return Point();
 
-    if (P.x == Q.x && mod(P.y + Q.y, p) == 0) {
-        return Point(); // P + (-P) = Point at infinity
-    }
-
-    cpp_int lambda;
+    cpp_int slope;
     if (P.x == Q.x && P.y == Q.y) {
-        // Point Doubling (when P = Q)
-        // lambda = (3x^2 + a) / 2y
-        cpp_int num = mod(3 * P.x * P.x + a, p);
-        cpp_int den = modInverse(mod(2 * P.y, p), p);
-        lambda = mod(num * den, p);
+        slope = mod((3 * P.x * P.x + a) * modInverse(2 * P.y), p);
     } else {
-        // Point Addition (when P != Q)
-        // lambda = (y2 - y1) / (x2 - x1)
-        cpp_int num = mod(Q.y - P.y, p);
-        cpp_int den = modInverse(mod(Q.x - P.x, p), p);
-        lambda = mod(num * den, p);
+        slope = mod((Q.y - P.y) * modInverse(Q.x - P.x), p);
     }
-
-    cpp_int x3 = mod(lambda * lambda - P.x - Q.x, p);
-    cpp_int y3 = mod(lambda * (P.x - x3) - P.y, p);
-
+    cpp_int x3 = mod(slope * slope - P.x - Q.x, p);
+    cpp_int y3 = mod(slope * (P.x - x3) - P.y, p);
     return Point(x3, y3);
 }
 ```
 
-### 8.3. Implementation of Constant-Time Conditional Swap
-When swapping the contents of variables based on the bit value of the private key, we use only bitwise operations (masks) without using an `if` statement. This ensures the execution path is completely constant.
+### 8.3. Simulating a swap
 
-> [!TIP]
-> In an actual implementation, dynamically allocated multiple-precision integer classes like `cpp_int` are not suitable for Constant-Time processing. This is because timing information leaks due to variations in memory allocation and array sizes. Practical libraries represent them with fixed lengths (for example, an array of 4 uint64_t elements) and implement bit-level masking. The following is a conceptual example.
+This function branches, hence Demo in its name.
 
 ```cpp
-// Conceptual Constant-Time Swap (assuming fixed-length integers)
-// If bit is 1, swap P1 and P2; if 0, do not swap
-void cswap(Point& P1, Point& P2, uint8_t bit) {
-    // bit is 0 or 1. Mask is all 1s (0xFF..) if bit=1, all 0s if 0.
-    // (Here we assume each word of a fixed-length BigInt class is w for explanation)
-    /*
-    uint64_t mask = 0 - (uint64_t)bit;
-    for (int i = 0; i < NUM_WORDS; i++) {
-        uint64_t dummy = mask & (P1.x.words[i] ^ P2.x.words[i]);
-        P1.x.words[i] ^= dummy;
-        P2.x.words[i] ^= dummy;
-        // Process y-coordinate and isInfinity flag similarly
-    }
-    */
-    
-    // * Perfect constant-time swapping is difficult with boost::multiprecision,
-    // so here we limit it to simulating with a branch for the sake of understanding the logic.
-    if (bit == 1) {
-        std::swap(P1, P2);
-    }
+// A branching simulation of conditional swap, NOT constant-time.
+void conditionalSwapDemo(Point& left, Point& right, std::uint8_t bit) {
+    if (bit > 1) throw std::invalid_argument("Bit must be zero or one");
+    if (bit == 1) std::swap(left, right);
 }
 ```
 
-### 8.4. Scalar Multiplication using the Montgomery Ladder
-We combine the aforementioned `pointAdd` and `cswap` to implement secure scalar multiplication.
+### 8.4. A ladder with input-range checks
+
+The demonstration accepts $0\le k<2^{256}$ and rejects values outside that range. This differs from the private-key range $1\le d<n$. It never silently truncates higher bits.
 
 ```cpp
-// Scalar multiplication k * P (Montgomery Ladder method)
-Point scalarMultiply(const Point& P, cpp_int k) {
-    Point R0 = Point(); // Point at infinity
+// A functional ladder demonstration for 0 <= k < 2^256.
+// Zero is allowed for group arithmetic, but is not a valid private key.
+Point scalarMultiply(const Point& P, const cpp_int& k) {
+    if (k < 0 || k >= (cpp_int(1) << 256)) throw std::invalid_argument("Scalar outside demo range");
+    if (!isOnCurve(P)) throw std::invalid_argument("Invalid curve point");
+    Point R0;
     Point R1 = P;
-
-    // Get the bit length of k (256 bits for secp256k1)
-    int numBits = 256; 
-    
-    for (int i = numBits - 1; i >= 0; i--) {
-        // Get the value of the i-th bit (0 or 1)
-        uint8_t bit = static_cast<uint8_t>(bit_test(k, i) ? 1 : 0);
-
-        // Swap R0 and R1 if bit == 1
-        cswap(R0, R1, bit);
-
-        // Always execute the same operations (Point Addition and Point Doubling)
+    for (int i = 255; i >= 0; --i) {
+        std::uint8_t bit = boost::multiprecision::bit_test(k, i) ? 1 : 0;
+        conditionalSwapDemo(R0, R1, bit);
         R1 = pointAdd(R0, R1);
         R0 = pointAdd(R0, R0);
-
-        // Swap back to restore state if bit == 1
-        cswap(R0, R1, bit);
+        conditionalSwapDemo(R0, R1, bit);
     }
-
     return R0;
 }
 ```
 
-With this implementation logic, whether each bit of the scalar $k$ is `0` or `1`, the operations executed within each loop iteration (`cswap` $\to$ `pointAdd` $\to$ `pointAdd` $\to$ `cswap`) follow the exact same flow. This powerfully prevents the leakage of secret information through differences in timing or cache access patterns.
+### 8.5. Checking public values
 
----
+Use the secp256k1 generator from SEC 2 to check $2G$ and $nG=\mathcal O$. This self-check alone is not a proof that a cryptographic implementation is secure.
+
+```cpp
+int main() {
+    const Point G(
+        cpp_int("0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"),
+        cpp_int("0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8")
+    );
+    const Point doubled = scalarMultiply(G, 2);
+    if (doubled.isInfinity || !isOnCurve(doubled) || !scalarMultiply(G, n).isInfinity) {
+        throw std::runtime_error("Arithmetic self-check failed");
+    }
+    std::cout << "2G.x = " << std::hex << doubled.x << "\n";
+    std::cout << "2G.y = " << std::hex << doubled.y << "\n";
+    std::cout << "nG = infinity\n";
+}
+```
+
+For example, save the five blocks as `ecc_demo.cpp` and run them in an environment with the Boost include path configured:
+
+```sh
+g++ -std=c++17 -O2 -Wall -Wextra ecc_demo.cpp -o ecc_demo
+./ecc_demo
+```
 
 ## 9. Conclusion
 
-At first glance, Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC) might seem puzzling: "Why does a geometric operation like drawing a line and reflecting the intersection point become cryptography?" However, by mapping it to the discrete world of finite fields, an excellent one-way function (the discrete logarithm problem) can be constructed, making it a product of the miraculous fusion of mathematics and cryptography.
+Distinguish the field, curve, subgroup and cryptographic scheme. Exceptional addition cases, scalar ranges, public-key validation, peer authentication and key derivation all matter. Correct ladder arithmetic and constant-time implementation are separate verification tasks.
 
-In this article, we covered the following key points:
+This demonstration is for tracing group arithmetic. Actual key agreement and signatures require maintained, validated libraries supporting the intended protocol and curve.
 
-1. **Superiority over [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)**: Provides strong security with very short key lengths, making it ideal for the modern mobile and IoT era.
-2. **Basics of Group Theory and Finite Fields**: The mathematical structure that forms the foundation of ECC.
-3. **Addition and Doubling Formulas**: Implementation methods of algebraic group operations using Weierstrass equations.
-4. **Threat of Side-Channel Attacks**: Conditional branches dependent on private key bits create fatal vulnerabilities.
-5. **Constant-Time Implementation**: C++ coding techniques that uniformize hardware-level behavior using the Montgomery Ladder and Conditional Swap to prevent attacks.
+### References
 
-Writing your own cryptographic library to run in a production environment is highly discouraged ("Don't roll your own crypto") because the security risks are extremely high. However, deeply understanding the underlying algorithms and mathematical background should serve as an invaluable and powerful weapon for engineers designing and operating more secure and performant systems.
-
-In the next article, we would like to dig even deeper into the mechanics of the **ECDSA (Elliptic Curve [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Algorithm)**, which is a digital signature algorithm using these elliptic curves, as well as **Schnorr signatures**, which are adopted in [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/).
-
-
+- [RFC 6090: Fundamental Elliptic Curve Cryptography Algorithms](https://www.rfc-editor.org/rfc/rfc6090.html) (§§2–4, 10)
+- [RFC 7748: Elliptic Curves for Security](https://www.rfc-editor.org/rfc/rfc7748.html) (§§5–5.1)
+- [NIST SP 800-57 Part 1 Rev.5](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf) (§5.6.1.1, Table 2)
+- [Standards for Efficient Cryptography 2 (SEC 2), version 2.0](https://www.secg.org/sec2-v2.pdf) (§2.4.1, secp256k1)
+- [RFC 5869: HKDF](https://www.rfc-editor.org/rfc/rfc5869.html) (§§1, 3.2–3.3)
+- [Boost.Multiprecision: cpp_int](https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html)
 

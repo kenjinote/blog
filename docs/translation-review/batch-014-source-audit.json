@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "startedAt": "2026-10-27T08:11:43.790934+09:00",
+  "files": [
+    {
+      "language": "ja",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "hash": "9e35311d85e1b8753b9fbdf575c53feb71b6cbf21f5fe67aeaf8f6c0983455a0",
+      "cppBlocks": 5,
+      "mermaidBlocks": 3,
+      "fullOriginalRead": true
+    },
+    {
+      "language": "en",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.en.md",
+      "hash": "a3aaf49d55cc728b6562e085bffbd0949f3f8ea7f229c4613bde7fc6bf460cec",
+      "cppBlocks": 5,
+      "mermaidBlocks": 3,
+      "fullOriginalRead": true
+    }
+  ],
+  "sourceReviewComplete": false,
+  "reviewRecorded": false,
+  "findings": [
+    "Claims constant-time safety while actual cswap branches on secret bits, pointAdd branches on secret intermediates and cpp_int arithmetic is variable-size. Equal high-level operation counts are insufficient.",
+    "modInverse returns zero for zero although no inverse exists.",
+    "Fixed 256-bit scalar loop silently discards higher bits and has no negative-input guard.",
+    "Affine formula conditions omit vertical-line and y=0 exceptions in prose; characteristic >3 and modulo-p nonsingularity missing.",
+    "ECDLP difficulty overstated for all curves and as exhaustive-search only; Pollard rho and subgroup order distinction needed.",
+    "ECDH omits public-key validation, authentication and KDF; CDH is a distinct problem from DLP.",
+    "Self heading uses old Japanese path instead of configured slug; cryptocurrency Crypto substring, Euclide substring and Jacobian biography links are misleading.",
+    "Key-strength table lacks source/scope and rounds length ratios."
+  ],
+  "primaryReferencesRead": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+      "scope": "Abstract; §§2.3,3 affine formulas,3.3 parameters/discriminant,4 ECDH,10 attack algorithms/subgroups,10.2 authentication and10.3 invalid-point attack excerpts. Not full signature sections or entire standard."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7748.html",
+      "scope": "§5 conditional swap and5.1 side-channel caveats, plus introduction. Not implementing X25519/X448 and no full RFC review."
+    },
+    {
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+      "scope": "§5.6.1.1/Table2 parsed text pp54–55, interpretation of modulus versus base-point-order bit length; no full document/current adoption policy review."
+    },
+    {
+      "url": "https://www.boost.org/doc/libs/1_85_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html",
+      "scope": "cpp_int arbitrary precision, allocation parameters, signed magnitude, exception behavior; runtime tests use Ubuntu Boost1.83, not1.85."
+    }
+  ]
+}

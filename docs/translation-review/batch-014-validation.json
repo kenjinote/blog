@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T08:17:51.709003+09:00",
+  "compiler": "Ubuntu WSL g++13.3.0, -std=c++17 -O2 -Wall -Wextra",
+  "boost": "Ubuntu libboost1.83-dev 1.83.0-2.1ubuntu3.2 extracted inside task temp directory; no global installation",
+  "files": [
+    {
+      "language": "ja",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "hash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "fiveCxxBlocksConcatenatedCompiledAndRan": true,
+      "cppBlocks": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "scalarDifferentialCases": 13,
+      "scalarInputs": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        42,
+        65537,
+        340282366920938463463374607431768211456,
+        57896044618658097711785492504343953926634992332820282019728792003956564819968,
+        115792089237316195423570985008687907853269984665640564039457584007913129639935,
+        115792089237316195423570985008687907852837564279074904382605163141518161494336,
+        115792089237316195423570985008687907852837564279074904382605163141518161494337,
+        115792089237316195423570985008687907852837564279074904382605163141518161494338
+      ],
+      "scalarPoints": [
+        null,
+        [
+          "79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+          "483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8"
+        ],
+        [
+          "c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+          "1ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a"
+        ],
+        [
+          "f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+          "388f7b0f632de8140fe337e62a37f3566500a99934c2231b6cb9fd7584b8e672"
+        ],
+        [
+          "5cbdf0646e5db4eaa398f365f2ea7a0e3d419b7e0330e39ce92bddedcac4f9bc",
+          "6aebca40ba255960a3178d6d861a54dba813d0b813fde7b5a5082628087264da"
+        ],
+        [
+          "fe8d1eb1bcb3432b1db5833ff5f2226d9cb5e65cee430558c18ed3a3c86ce1af",
+          "7b158f244cd0de2134ac7c1d371cffbfae4db40801a2572e531c573cda9b5b4"
+        ],
+        [
+          "23314d19b5eff3c387a420b92c3c3135995d268ece08076a59de4e4dc5356876",
+          "fd254f9a8cc854afecd1d2a7ba16599671ac00bfa98c500a74ed9c906769a871"
+        ],
+        [
+          "8f68b9d2f63b5f339239c1ad981f162ee88c5678723ea3351b7b444c9ec4c0da",
+          "662a9f2dba063986de1d90c2b6be215dbbea2cfe95510bfdf23cbf79501fff82"
+        ],
+        [
+          "b23790a42be63e1b251ad6c94fdef07271ec0aada31db6c3e8bd32043f8be384",
+          "fc6b694919d55edbe8d50f88aa81f94517f004f4149ecb58d10a473deb19880e"
+        ],
+        [
+          "9166c289b9f905e55f9e3df9f69d7f356b4a22095f894f4715714aa4b56606af",
+          "f181eb966be4acb5cff9e16b66d809be94e214f06c93fd091099af98499255e7"
+        ],
+        [
+          "79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+          "b7c52588d95c3b9aa25b0403f1eef75702e84bb7597aabe663b82f6f04ef2777"
+        ],
+        null,
+        [
+          "79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+          "483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8"
+        ]
+      ],
+      "invalidCasesRejected": 13,
+      "additionalFixtures": [
+        "negative modular reduction",
+        "negative nonzero inverse",
+        "7*inverse(7)=1",
+        "infinity input",
+        "P+(-P)",
+        "conditionalSwapDemo bits0/1"
+      ],
+      "mainStdout": "2G.x = c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5\n2G.y = 1ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a\nnG = infinity\n",
+      "fixtureStdoutSHA256": "714f05f5c5c497fdfe5c97c3abbfd500374ac394f218e2630c52e4f6dbde259e",
+      "notes": "Differential oracle: cryptography50.0.2 secp256k1 public numbers after reducing public test scalars mod n. No random secret generation and no side-channel test.",
+      "renderedTeXExpressions": 60,
+      "hugoRendered": true
+    },
+    {
+      "language": "en",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.en.md",
+      "hash": "b2ee74f5bf9c2fb8559a522290a14acbaa5ae672e423aef8fb81a7cab10ddfb3",
+      "fiveCxxBlocksConcatenatedCompiledAndRan": true,
+      "cppBlocks": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "scalarDifferentialCases": 13,
+      "scalarInputs": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        42,
+        65537,
+        340282366920938463463374607431768211456,
+        57896044618658097711785492504343953926634992332820282019728792003956564819968,
+        115792089237316195423570985008687907853269984665640564039457584007913129639935,
+        115792089237316195423570985008687907852837564279074904382605163141518161494336,
+        115792089237316195423570985008687907852837564279074904382605163141518161494337,
+        115792089237316195423570985008687907852837564279074904382605163141518161494338
+      ],
+      "scalarPoints": [
+        null,
+        [
+          "79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+          "483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8"
+        ],
+        [
+          "c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5",
+          "1ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a"
+        ],
+        [
+          "f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9",
+          "388f7b0f632de8140fe337e62a37f3566500a99934c2231b6cb9fd7584b8e672"
+        ],
+        [
+          "5cbdf0646e5db4eaa398f365f2ea7a0e3d419b7e0330e39ce92bddedcac4f9bc",
+          "6aebca40ba255960a3178d6d861a54dba813d0b813fde7b5a5082628087264da"
+        ],
+        [
+          "fe8d1eb1bcb3432b1db5833ff5f2226d9cb5e65cee430558c18ed3a3c86ce1af",
+          "7b158f244cd0de2134ac7c1d371cffbfae4db40801a2572e531c573cda9b5b4"
+        ],
+        [
+          "23314d19b5eff3c387a420b92c3c3135995d268ece08076a59de4e4dc5356876",
+          "fd254f9a8cc854afecd1d2a7ba16599671ac00bfa98c500a74ed9c906769a871"
+        ],
+        [
+          "8f68b9d2f63b5f339239c1ad981f162ee88c5678723ea3351b7b444c9ec4c0da",
+          "662a9f2dba063986de1d90c2b6be215dbbea2cfe95510bfdf23cbf79501fff82"
+        ],
+        [
+          "b23790a42be63e1b251ad6c94fdef07271ec0aada31db6c3e8bd32043f8be384",
+          "fc6b694919d55edbe8d50f88aa81f94517f004f4149ecb58d10a473deb19880e"
+        ],
+        [
+          "9166c289b9f905e55f9e3df9f69d7f356b4a22095f894f4715714aa4b56606af",
+          "f181eb966be4acb5cff9e16b66d809be94e214f06c93fd091099af98499255e7"
+        ],
+        [
+          "79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+          "b7c52588d95c3b9aa25b0403f1eef75702e84bb7597aabe663b82f6f04ef2777"
+        ],
+        null,
+        [
+          "79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+          "483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8"
+        ]
+      ],
+      "invalidCasesRejected": 13,
+      "additionalFixtures": [
+        "negative modular reduction",
+        "negative nonzero inverse",
+        "7*inverse(7)=1",
+        "infinity input",
+        "P+(-P)",
+        "conditionalSwapDemo bits0/1"
+      ],
+      "mainStdout": "2G.x = c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5\n2G.y = 1ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a\nnG = infinity\n",
+      "fixtureStdoutSHA256": "714f05f5c5c497fdfe5c97c3abbfd500374ac394f218e2630c52e4f6dbde259e",
+      "notes": "Differential oracle: cryptography50.0.2 secp256k1 public numbers after reducing public test scalars mod n. No random secret generation and no side-channel test.",
+      "renderedTeXExpressions": 59,
+      "hugoRendered": true
+    }
+  ],
+  "exactCodeAndDisplayMathMatch": true,
+  "buildPending": false,
+  "publicationPending": true,
+  "limitations": [
+    "Original four defects reproduced separately.",
+    "This is a variable-time educational implementation, not production cryptography.",
+    "No claim of browser visual verification, side-channel measurement or native-language human review.",
+    "Eleven other translations remain unreviewed."
+  ],
+  "toyCurve": {
+    "checkedAt": "2026-10-27T08:18:36.583526+09:00",
+    "parameters": {
+      "p": 17,
+      "a": 2,
+      "b": 0
+    },
+    "nonsingular": true,
+    "pointsIncludingInfinity": 20,
+    "allOrderedPairsComparedToIndependentPython": 400,
+    "associativityTriples": 8000,
+    "ladderVsRepeatedAdditionCases": 820,
+    "zeroYPointsDoubledToInfinity": 3,
+    "stdoutSHA256": "f8684b2dc7771b3485e1616d49cbac8e54bddf9c483efaaaeb6ab87c407f2d89",
+    "scope": "Same reviewed C++ core with only public curve constants changed to p17,a2,b0. Compiled and executed with the same compiler. Finite arithmetic verification, not a general proof or secure curve recommendation."
+  },
+  "build": {
+    "checkedAt": "2026-10-27T08:19:42.772745+09:00",
+    "hugo": "0.139.0 extended",
+    "minified": true,
+    "scope": "Fifteen isolated article bundles, only Japanese/English ECC versions reviewed; other eleven ECC translations unchanged and unreviewed.",
+    "destination": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-14-bundles-ecc-ja-en",
+    "multilingualPages": 1050,
+    "https": {
+      "html": 1945,
+      "xml": 41
+    },
+    "warnings": "Isolated preview lacks search/archive/home JSON layouts; existing Portuguese UI labels absent.",
+    "visualBrowserTest": false
+  }
+}
