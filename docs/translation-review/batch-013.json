@@ -102,6 +102,57 @@
         "https://www.rfc-editor.org/rfc/rfc8446.html"
       ],
       "validation": "docs/translation-review/batch-013-cn-validation.json"
+    },
+    "post/modern-cryptography-public-key-hash-signature/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/modern-cryptography-public-key-hash-signature/index.md",
+      "sourceHash": "6ba14931d98075ddb9e7231683eccefe7ba568eceb530fd04faeacada6d9d6f7",
+      "translationHash": "885c3a6b5ae522d8142d11d929a6513b1abfc5e1b43fa5d23333b6d13794a1c3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Traditional Chinese metadata and body, revised against the fully corrected Japanese source, then independently reread the complete Chinese revision. Compared all six sections and three diagrams/twenty edges: symmetric versus public-key operations and authenticated keys, RSA key/proof/scheme conditions, ECC field/subgroup/scalar requirements, hash resistance and SHA-2/SHA-3 construction, signature verification and identity limits, PKI path/service identity and TLS modes. Structural checks supplement, rather than replace, full semantic comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared 公開金鑰/私有金鑰, 對稱式加密/具驗證的加密, 金鑰協議 with key agreement gloss, 雜湊/原像/第二原像/碰撞, 質數階/祕密純量, 模冪/反元素/中國餘數定理, 簽章/驗證 versus 加密/解密, 信任錨/中繼CA/憑證, and 位元 versus 位元組. Corrected the quotient-function mistranslation of Euler totient, unconditional identity/non-repudiation guarantees and blanket SHA-3 attack immunity. Preserved all conditions and the separate signing key."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All ten display formulas match exactly, including phi and lambda conditions, bounded inverse d, RSA primitive range, coprime Euler step, complete per-prime/CRT argument, OAEP k-2*hLen-2=190 byte bound, prime-field p>3 nonzero discriminant, subgroup scalar range and chaining formula. Checked all 3,233 toy RSA representatives and both per-prime residues, the explicit non-coprime Euler counterexample and lambda inverse. Checked an order-19 toy elliptic curve with eighteen distinct nonidentity public points and 19G=infinity. Finite fixtures are not a general security proof or recommended curve."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed all three extracted Python blocks independently per language with Python 3.12.14 and cryptography 50.0.2; ASTs match. Each version passed five OAEP payload roundtrips including empty/UTF-8/190 bytes and four rejection cases (191 bytes, wrong label, altered ciphertext, wrong private key). Two displayed hashes matched hashlib; fourteen streaming hash cases and two fixed abc digests passed. PSS passed three valid messages and six rejection cases covering altered document/signature, wrong key, truncated signature, wrong scheme and salt length. Dedicated signing keys differ from encryption keys. This is offline sample verification, not a live security audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched nine primary-reference URLs and source-note read scopes. Read matching-language Euclidean/ECC target metadata and introductions and checked slug/file mapping; those target articles are not counted as reviewed. Kept image, slug and publication timestamp, added actual lastmod, and checked generated matching-language links, corrected HTML markers and three Mermaid blocks. Fourteen-bundle Hugo, multilingual 973 pages and HTTPS 1,804 HTML/41 XML passed. Publication pending."
+        }
+      },
+      "summary": "Full Traditional Chinese cryptography review with source corrections, ten formulas, three independent Python examples, three diagrams, technical terminology and scheme/trust conditions.",
+      "languageSpecificFindings": "Restored all ten display formulas and used Taiwan terminology 公開金鑰/私有金鑰, 雜湊, 純量, 位元/位元組, 簽章, 憑證 and 用戶端. Changed 尤拉商數函數 to 尤拉φ函數 with Euler totient gloss, and replaced the Euclid-biography link with the matching-language Euclidean algorithm article. Replaced duplicate 公開公開金鑰 diagram wording with 公布公開金鑰. Matched the coprimality/CRT proof, OAEP bound, subgroup range, signature and PKI/TLS conditions to Japanese throughout the complete body and diagrams.",
+      "limitations": [
+        "AI technical/editorial review; no native-speaker or human confirmation.",
+        "No formal cryptographic proof, side-channel analysis, live TLS/CA or full X.509 conformance test.",
+        "Mermaid source and HTML inspected, not visual rendering.",
+        "Nine other translations of this article remain unreviewed and retain their previous content.",
+        "Publication verification pending."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc8017.html",
+        "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+        "https://www.rfc-editor.org/rfc/rfc6090.html",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+        "https://csrc.nist.gov/pubs/fips/186-5/final",
+        "https://www.rfc-editor.org/rfc/rfc5280.html",
+        "https://www.rfc-editor.org/rfc/rfc9525.html",
+        "https://www.rfc-editor.org/rfc/rfc8446.html"
+      ],
+      "validation": "docs/translation-review/batch-013-tw-validation.json"
     }
   },
   "stageAssembly": {
@@ -117,6 +168,16 @@
       "zh-cn"
     ],
     "otherTranslationsUnreviewed": 10,
+    "publicationPending": true
+  },
+  "traditionalChineseStageAssembly": {
+    "checkedAt": "2026-10-27T02:17:24.145268+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw"
+    ],
+    "otherTranslationsUnreviewed": 9,
     "publicationPending": true
   }
 }
