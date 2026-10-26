@@ -1,8 +1,9 @@
 ---
 title: "Dasar-dasar Kriptografi Modern (Kriptografi Kunci Publik, Fungsi Hash, dan Tanda Tangan Digital)"
-description: "Penjelasan mendalam tentang cara kerja teknologi kriptografi modern, mulai dari kunci simetris dan publik, hingga hash dan tanda tangan digital."
+description: "Peran dan syarat kunci simetris dan publik, RSA, kurva eliptik, hash, tanda tangan, serta PKI, dengan rumus dan contoh Python."
 slug: "modern-cryptography-public-key-hash-signature"
 date: "2026-09-22T08:00:00+09:00"
+lastmod: "2026-10-27"
 image: "eyecatch.jpg"
 categories:
     - "security"
@@ -12,108 +13,106 @@ tags:
     - "hash"
     - "digital-signature"
     - "rsa"
-
 ---
 
-Di masyarakat internet modern, **keamanan informasi** untuk menjamin kerahasiaan, integritas, dan ketersediaan informasi telah menjadi fondasi yang sangat penting. Inti dari hal tersebut didukung oleh teknologi **kriptografi modern**. Dalam artikel ini, kita akan membahas dasar-dasar kriptografi modern, yaitu **kriptografi kunci publik**, **fungsi hash**, dan **tanda tangan digital**, secara sangat detail dan komprehensif, mulai dari latar belakang matematisnya, struktur algoritma spesifik, hingga contoh implementasi menggunakan Python.
+Kriptografi mendukung kerahasiaan, integritas, dan autentikasi. Namun, kriptografi saja tidak menjamin seluruh aspek keamanan informasi, termasuk ketersediaan. Artikel ini menjelaskan peran kunci simetris dan publik, dasar matematika RSA dan kurva eliptik, fungsi hash, tanda tangan digital, serta PKI. Kita membedakan penjelasan matematika dari syarat yang dibutuhkan skema dan protokol dalam penggunaan nyata.
 
----
+## 1. Peran kunci simetris dan publik
 
-## 1. Evolusi Teknologi Kriptografi: Dari Kriptografi Kunci Simetris ke Kriptografi Kunci Publik
+### 1.1. Enkripsi simetris dan distribusi kunci
 
-### 1.1. Kriptografi Kunci Simetris dan Keterbatasannya
-Metode kriptografi yang telah digunakan sejak lama adalah **kriptografi kunci simetris** (Symmetric-key cryptography), yang menggunakan kunci yang sama untuk enkripsi dan dekripsi. Algoritma perwakilannya termasuk AES (Advanced Encryption Standard). Kriptografi kunci simetris memiliki keuntungan berupa kecepatan pemrosesan yang tinggi, tetapi kelemahan terbesarnya adalah adanya **masalah distribusi kunci** (Key Distribution Problem).
+**Enkripsi simetris** menggunakan kunci rahasia bersama untuk enkripsi dan dekripsi. AES adalah salah satu contoh sandi blok. Teknik ini cocok untuk melindungi data dalam jumlah besar, tetapi kedua pihak harus memiliki cara yang aman untuk berbagi kunci. Enkripsi saja tidak selalu mendeteksi perubahan; komunikasi nyata menggunakan perlindungan yang diwajibkan protokol, misalnya enkripsi terautentikasi.
 
-Kedua pihak yang berkomunikasi harus membagikan kunci yang sama secara aman terlebih dahulu melalui saluran yang aman, namun mendistribusikan kunci secara aman melalui jaringan terbuka seperti internet sangatlah sulit.
+### 1.2. Membedakan operasi kunci publik
 
-### 1.2. Lahirnya Kriptografi Kunci Publik
-**Kriptografi kunci publik** (Public-key cryptography) memecahkan masalah distribusi kunci ini melalui pendekatan matematis. Dalam kriptografi kunci publik, dihasilkan dua pasangan kunci yang berbeda: **kunci publik** (Public Key) yang digunakan untuk enkripsi, dan **kunci privat** (Private Key) yang digunakan untuk dekripsi.
+**Teknik kunci publik** menggunakan sepasang kunci publik dan privat, tetapi tidak semuanya berarti «mengenkripsi dengan kunci publik dan mendekripsi dengan kunci privat».
 
-- **Kunci publik**: Kunci yang boleh dipublikasikan kepada siapa saja. Digunakan untuk mengenkripsi pesan.
-- **Kunci privat**: Kunci yang disimpan dengan sangat rahasia hanya oleh pemiliknya. Digunakan untuk mendekripsi ciphertext (teks rahasia).
+- **Enkripsi kunci publik**: mengenkripsi dengan kunci publik penerima dan mendekripsi dengan kunci privat pasangannya.
+- **Tanda tangan digital**: menandatangani dengan kunci privat penanda tangan dan memverifikasi dengan kunci publik.
+- **Kesepakatan kunci (key agreement)**: menurunkan rahasia bersama dari material kunci kedua pihak, lalu menghasilkan kunci komunikasi sesuai protokol.
 
-Karena asimetri ini, penerima mempublikasikan kunci publiknya ke seluruh dunia, dan pengirim menggunakan kunci publik tersebut untuk mengenkripsi. Data yang dienkripsi hanya dapat didekripsi oleh penerima yang memiliki kunci privat pasangan tersebut.
+Kunci publik tidak perlu didistribusikan secara rahasia, tetapi **keterkaitannya dengan pihak yang dituju harus diautentikasi**. Diagram berikut hanya menunjukkan enkripsi kunci publik. Keberhasilan dekripsi saja tidak mengautentikasi pengirim.
 
 ```mermaid
 graph TD
-    A["Pengirim (Alice)"]
-    B["Penerima (Bob)"]
-    K_Pub["Kunci Publik Bob"]
-    K_Priv["Kunci Privat Bob"]
-    P["Plaintext (Pesan)"]
+    A["Pengirim Alice"]
+    B["Penerima Bob"]
+    K_Pub["Kunci publik Bob"]
+    K_Priv["Kunci privat Bob"]
+    P["Plaintext (pesan)"]
     C["Ciphertext"]
-
-    B -->|"Mempublikasikan Kunci Publik"| K_Pub
-    A -->|"Mendapatkan"| K_Pub
-    P -->|"Dienkripsi dengan Kunci Publik Bob"| A
+    B -->|"Mempublikasikan kunci publik"| K_Pub
+    A -->|"Memperoleh"| K_Pub
+    P -->|"Mengenkripsi dengan kunci publik Bob"| A
     A -->|"Mengirim"| C
     C -->|"Menerima"| B
-    B -->|"Didekripsi dengan Kunci Privat Bob"| K_Priv
-    K_Priv -->|"Memulihkan Plaintext"| P
+    B -->|"Mendekripsi dengan kunci privat Bob"| K_Priv
+    K_Priv -->|"Memulihkan plaintext"| P
 ```
 
----
+## 2. Dasar matematika teknik kunci publik
 
-## 2. Latar Belakang Matematis Kriptografi Kunci Publik
+Pembahasan keamanan perlu membedakan asumsi kesulitan komputasi, syarat pembuatan kunci, dan konstruksi skema. Faktor rahasia RSA memungkinkan operasi invers, tetapi kesepakatan kunci dan tanda tangan berbasis kurva eliptik tidak semuanya dapat dijelaskan sebagai «perhitungan invers» yang sama.
 
-Keamanan kriptografi kunci publik bergantung pada **fungsi satu arah** (One-way function), di mana "suatu perhitungan mudah dilakukan, tetapi perhitungan kebalikannya sangat sulit", dan **fungsi satu arah dengan trapdoor** (Trapdoor one-way function), di mana perhitungan terbalik menjadi mungkin jika seseorang mengetahui informasi tertentu (trapdoor/pintu jebakan). Di sini, kita akan membahas lebih dalam tentang kriptografi RSA yang paling representatif dan Kriptografi Kurva Eliptik ([ECC](/id/p/elliptic-curve-cryptography-math-cpp/)).
+### 2.1. Kunci dan operasi RSA
 
-### 2.1. Cara Kerja Kriptografi RSA
+Rivest, Shamir, dan Adleman memperkenalkan RSA pada 1977. RSA berkaitan dengan kesulitan memfaktorkan bilangan bulat besar. Faktorisasi modulus memungkinkan pemulihan kunci privat, tetapi kesetaraan kesulitan antara inversi RSA secara umum dan faktorisasi belum terbukti. Keamanan juga bergantung pada keacakan, pembuatan kunci, padding, dan implementasi, bukan hanya panjang kunci.
 
-Kriptografi RSA dikembangkan pada tahun 1977 oleh Ron Rivest, Adi Shamir, dan Leonard Adleman. Keamanan RSA bergantung pada **kesulitan masalah faktorisasi prima**. Mengalikan dua bilangan prima raksasa itu mudah, tetapi menemukan bilangan prima aslinya dari hasil kali tersebut tidak dapat diselesaikan dalam waktu yang realistis oleh komputer klasik saat ini.
+#### 2.1.1. Pembuatan kunci untuk penjelasan
 
-#### 2.1.1. Algoritma Pembuatan Kunci RSA
+1. Pilih bilangan prima ganjil besar yang berbeda $p,q$, lalu hitung $N=pq$.
+2. Hitung fungsi totien Euler:
 
-Pembuatan kunci RSA dilakukan melalui langkah-langkah berikut:
+$$\phi(N)=(p-1)(q-1)$$
 
-1. Pilih dua bilangan prima yang sangat besar $p$ dan $q$.
-2. Hitung hasil kalinya $N = p \times q$. ($N$ adalah modulus yang dipublikasikan)
-3. Hitung fungsi Totient Euler $\phi(N)$.
-   $ \phi(N) = (p - 1)(q - 1) $
-4. Pilih bilangan bulat $e$ sedemikian rupa sehingga $1 < e < \phi(N)$, dan $e$ saling prima (koprima) terhadap $\phi(N)$. (Biasanya, $e = 65537$ sering digunakan)
-5. Hitung $d$ yang memenuhi persamaan kongruensi berikut:
-   $ e \times d \equiv 1 \pmod{\phi(N)} $
-   Ini dapat dihitung menggunakan [Algoritma Euclidean](/id/p/euclidean-algorithm/) yang Diperluas.
+3. Pilih $e$ dengan $1<e<\phi(N)$ dan $\gcd(e,\phi(N))=1$. Contoh menggunakan $e=65537$.
+4. Gunakan, misalnya, [algoritma Euclid](/id/p/euclidean-algorithm/) yang diperluas untuk memperoleh $1\le d<\phi(N)$ yang memenuhi:
 
-Di sini, $(N, e)$ adalah **kunci publik**, dan $d$ adalah **kunci privat** ($p, q$ dibuang atau dirahasiakan dengan ketat).
+$$ed\equiv1\pmod{\phi(N)}$$
 
-#### 2.1.2. Rumus Enkripsi dan Dekripsi
+Kunci publik adalah $(N,e)$; salah satu representasi dasar kunci privat adalah $(N,d)$. Implementasi juga menyimpan $p,q$ dan nilai untuk Teorema Sisa Cina (CRT) agar perhitungan lebih cepat. Nilai-nilai itu juga rahasia. Di sini kita memakai $\phi(N)$ untuk penjelasan. RFC 8017 menyatakan syarat invers dengan $\lambda(N)=\operatorname{lcm}(p-1,q-1)$; konstruksi di atas juga memenuhi syarat tersebut.
 
-Misalkan plaintext adalah $M$ (dengan $0 \le M < N$), dan ciphertext adalah $C$.
+#### 2.1.2. Operasi RSA dan syarat pembuktian
 
-**Enkripsi** (menggunakan kunci publik $e, N$):
-$ C \equiv M^e \pmod{N} $
+Untuk representasi pesan berupa bilangan bulat $0\le M<N$, operasi dasarnya adalah:
 
-**Dekripsi** (menggunakan kunci privat $d, N$):
-$ M \equiv C^d \pmod{N} $
+$$C\equiv M^e\pmod N$$
 
-Fakta bahwa dekripsi ini berfungsi dengan benar didasarkan pada Teorema Euler $M^{\phi(N)} \equiv 1 \pmod{N}$.
-$ C^d \equiv (M^e)^d \equiv M^{ed} \equiv M^{k\phi(N) + 1} \equiv M \cdot (M^{\phi(N)})^k \equiv M \cdot 1^k \equiv M \pmod{N} $
+$$M\equiv C^d\pmod N$$
 
-### 2.2. Kriptografi Kurva Eliptik (ECC: Elliptic Curve Cryptography)
+Teorema Euler dapat langsung digunakan **hanya jika $\gcd(M,N)=1$**. Dengan menulis $ed=1+t\phi(N)$, diperoleh:
 
-Kriptografi RSA aman, tetapi untuk memberikan kekuatan yang cukup, panjang kunci harus sangat panjang (misalnya, 2048 bit atau 4096 bit). Sebaliknya, **Kriptografi Kurva Eliptik** memberikan tingkat keamanan yang setara dengan panjang kunci yang jauh lebih pendek.
+$$M^{ed}=M\left(M^{\phi(N)}\right)^t\equiv M\pmod N$$
 
-#### 2.2.1. Kurva Eliptik dan Masalah Logaritma Diskrit
+Untuk pesan yang tidak koprima dengan $N$, pertimbangkan $r=p$ dan $r=q$ secara terpisah. Jika $M\equiv0\pmod r$, maka $M^{ed}\equiv0\pmod r$. Jika tidak, Teorema Kecil Fermat dan $(r-1)\mid(ed-1)$ memberikan $M^{ed}\equiv M\pmod r$. Dengan menggabungkan kedua kongruensi menggunakan Teorema Sisa Cina, pemulihan yang benar terbukti untuk semua $0\le M<N$.
 
-Keamanan [ECC](/id/p/elliptic-curve-cryptography-math-cpp/) bergantung pada kesulitan **masalah logaritma diskrit pada kurva eliptik** (ECDLP).
-Kurva eliptik pada lapangan berhingga (finite field) $\mathbb{F}_p$ yang digunakan untuk kriptografi umumnya dinyatakan dalam bentuk standar Weierstrass.
+Misalnya, untuk $p=61,q=53,e=17,d=2753$ dan $M=61$, nilai $M^{3120}\bmod3233=1220$, sehingga langkah Teorema Euler tidak dapat langsung dipakai. Meskipun demikian, RSA tetap menghasilkan 61 setelah enkripsi dan dekripsi. Kunci kecil ini hanya untuk ilustrasi dan tidak aman.
 
-$ y^2 \equiv x^3 + ax + b \pmod{p} $
+**Jangan memakai perpangkatan modular mentah sebagai skema enkripsi.** Enkripsi RSA nyata membutuhkan skema seperti RSAES-OAEP. Dengan RSA-2048 dan SHA-256, contoh berikut menerima paling banyak 190 byte plaintext (RFC 8017 §7.1.1):
 
-(dengan syarat $4a^3 + 27b^2 \not\equiv 0 \pmod{p}$)
+$$m_{\mathrm{len}}\le k_{\mathrm{bytes}}-2h_{\mathrm{len}}-2=256-2\cdot32-2=190$$
 
-Penambahan antar titik pada kurva eliptik (penambahan titik) dan operasi menambahkan titik yang sama berulang kali (perkalian skalar) telah didefinisikan.
-Misalkan titik $P$ adalah hasil penjumlahan titik referensi (base point) $G$ sebanyak $k$ kali.
+Data yang lebih besar dilindungi dengan enkripsi simetris terautentikasi dalam skema hibrida standar. Contoh ini tidak mengenkripsi berkas dengan panjang sembarang secara langsung menggunakan RSA.
 
-$ P = k \times G $
+### 2.2. Kurva eliptik dan logaritma diskrit
 
-Di sini, ketika diberikan $G$ dan $P$, masalah mencari nilai skalar $k$ disebut **masalah logaritma diskrit kurva eliptik**. Jika $k$ cukup besar, menghitungnya secara terbalik adalah hal yang sangat sulit.
-Dalam [ECC](/id/p/elliptic-curve-cryptography-math-cpp/), $k$ adalah **kunci privat**, dan $P$ adalah **kunci publik**.
+Dengan parameter yang tepat, **[kriptografi kurva eliptik (ECC)](/id/p/elliptic-curve-cryptography-math-cpp/)** dapat menargetkan keamanan klasik yang sebanding dengan kunci lebih pendek daripada RSA. Panjang kunci dalam bit tidak sama dengan kekuatan keamanan dalam bit.
 
-### 2.3. Contoh Implementasi Kriptografi Kunci Publik dengan Python
+Di sini kita membahas bentuk pendek Weierstrass pada lapangan prima $\mathbb F_p$ dengan $p>3$. Ini tidak mencakup semua representasi kurva eliptik:
 
-Berikut adalah contoh kode untuk mengimplementasikan pembuatan kunci RSA beserta enkripsi dan dekripsi menggunakan pustaka `cryptography` di Python.
+$$y^2\equiv x^3+ax+b\pmod p$$
+
+$$4a^3+27b^2\not\equiv0\pmod p$$
+
+Penjumlahan didefinisikan pada titik-titik kurva beserta titik di tak hingga. Misalkan $G$ membangkitkan subgrup dengan orde prima besar $n$. Skalar rahasia dipilih secara seragam dari $1\le k\le n-1$, menggunakan keacakan yang aman secara kriptografis. Titik publiknya adalah:
+
+$$P=kG$$
+
+Mencari $k$ dari $G,P$ merupakan masalah logaritma diskrit pada kurva eliptik. Memilih «$k$ yang besar» saja tidak cukup: kurva, subgrup, validasi kunci, dan keacakan juga penting. ECC adalah keluarga teknik; ECDH digunakan untuk kesepakatan kunci, sedangkan ECDSA untuk tanda tangan.
+
+### 2.3. RSA-OAEP dengan Python
+
+Ketiga contoh Python dapat dijalankan secara terpisah. Semuanya diperiksa dengan Python 3.12.14 dan `cryptography` 50.0.2. Kunci dibuat di memori pada setiap eksekusi untuk pembelajaran. Contoh ini bukan sistem produksi yang mencakup penyimpanan dan distribusi kunci, autentikasi pihak lain, serta penanganan kesalahan.
 
 ```python
 from cryptography.hazmat.primitives.asymmetric import rsa
@@ -151,48 +150,41 @@ decrypted_message = private_key.decrypt(
         label=None
     )
 )
-print("Decrypted Message:", decrypted_message.decode('utf-8'))
+print("Pesan hasil dekripsi:", decrypted_message.decode('utf-8'))
 ```
 
----
+## 3. Fungsi hash kriptografis
 
-## 3. Fungsi Hash (Hash Functions)
+Fungsi hash menghitung digest dengan panjang tetap dari masukan. Fungsi ini deterministik: masukan yang sama selalu menghasilkan keluaran yang sama. Hash bukan enkripsi dan bukan pembangkitan bilangan acak itu sendiri. Batas panjang masukan bergantung pada algoritma.
 
-Sejalan dengan kriptografi kunci publik, fondasi lain dari kriptografi modern adalah **fungsi hash kriptografis**. Fungsi hash adalah fungsi yang menerima data dengan panjang sembarang sebagai input dan menghasilkan data pseudo-acak dengan panjang tetap (nilai hash, intisari/digest) sebagai output.
+### 3.1. Tiga sifat ketahanan
 
-### 3.1. 3 Sifat yang Dibutuhkan untuk Fungsi Hash Kriptografis
+1. **Ketahanan preimage**: untuk nilai hash $h$ yang diberikan, sulit menemukan masukan dengan $H(m)=h$. Ini bukan pemulihan satu-satunya masukan asli.
+2. **Ketahanan second preimage**: untuk $m_1$ yang diberikan, sulit menemukan $m_2\ne m_1$ dengan $H(m_2)=H(m_1)$.
+3. **Ketahanan kolisi (collision resistance)**: sulit menemukan dua masukan berbeda dengan hash yang sama, sekalipun penyerang dapat memilih keduanya.
 
-Agar dapat digunakan secara aman sebagai teknologi kriptografi, tiga sifat kuat berikut sangat diperlukan:
+Digest saja tidak mengautentikasi sumbernya. Jika penyerang dapat mengganti pesan dan digest sekaligus, perbandingan sederhana tidak akan mendeteksi perubahan. Diperlukan nilai acuan tepercaya atau mekanisme autentikasi yang sesuai.
 
-1. **Satu arah** (Pre-image resistance):
-   Secara komputasi harus sulit untuk membalikkan perhitungan dari nilai hash output $h$ ke pesan input asli $m$.
-2. **Ketahanan kolisi lemah** (Second pre-image resistance):
-   Diberikan pesan input $m_1$, harus sulit untuk menemukan pesan lain $m_2$ ($m_1 \neq m_2$) yang memiliki nilai hash yang sama.
-3. **Ketahanan kolisi kuat** (Collision resistance):
-   Harus sulit untuk menemukan dua pesan sembarang $(m_1, m_2)$ yang nilai hashnya identik.
+### 3.2. SHA-2 dan SHA-256
 
-### 3.2. Struktur SHA-2 (Secure Hash Algorithm 2)
+SHA-256 adalah anggota keluarga SHA-2, dengan keluaran 256 bit dan masukan kurang dari $2^{64}$ bit. Pesan yang telah diberi padding, termasuk informasi panjangnya, dipecah menjadi blok 512 bit dan diproses mulai dari nilai awal yang ditetapkan. Implementasi streaming dapat menambahkan padding ketika mencapai blok-blok terakhir.
 
-Fungsi hash yang paling banyak digunakan saat ini adalah keluarga SHA-2 (khususnya **SHA-256**). SHA-2 mengadopsi **struktur Merkle-Damgård**.
+Gambaran pemrosesan tipe Merkle–Damgård, dengan blok $M_i$ dan nilai rantai $H_i$, adalah:
 
-Dalam struktur Merkle-Damgård, pesan input dibagi menjadi blok-blok berukuran tetap (512 bit untuk SHA-256), dan padding dilakukan untuk menyesuaikan panjangnya. Kemudian, nilai hash awal (IV) dan blok pertama dimasukkan ke dalam **fungsi kompresi** (Compression function), dan outputnya digunakan sebagai input untuk blok berikutnya, diproses secara berantai.
+$$H_i=f(H_{i-1},M_i)$$
 
-$ H_i = f(H_{i-1}, M_i) $
+Gambaran ini tidak berarti bahwa menghilangkan fungsi kompresi atau padding yang ditetapkan akan menghasilkan skema yang aman.
 
-Melalui struktur rantai ini, ringkasan (digest) aman dengan panjang tetap dapat dihasilkan dari pesan dengan panjang sembarang.
+### 3.3. SHA-3 dan konstruksi sponge
 
-### 3.3. Struktur SHA-3 (Keccak)
+SHA-3 adalah standar berbasis Keccak yang melengkapi SHA-2. Ini tidak berarti bahwa seluruh serangan terhadap SHA-2 menjadi tidak efektif, atau bahwa SHA-2 selalu harus diganti.
 
-**SHA-3** (Algoritma Keccak) dipilih oleh NIST sebagai alternatif dan standar generasi berikutnya untuk SHA-2. SHA-3 tidak menggunakan struktur Merkle-Damgård, melainkan mengadopsi **struktur Sponge** yang sama sekali berbeda.
+- **Penyerapan (absorb)**: blok masukan dengan sufiks dan padding yang ditetapkan digabungkan melalui XOR dengan bagian rate dari keadaan internal, lalu dikenai permutasi.
+- **Ekstraksi (squeeze)**: keluaran diambil dari bagian rate. Jika dibutuhkan lebih banyak keluaran, permutasi dan ekstraksi diulang.
 
-Struktur Sponge mempertahankan keadaan internal (internal state) dan beroperasi dalam dua fase berikut:
+Empat fungsi hash SHA-3, seperti SHA3-256, memiliki panjang keluaran tetap. SHAKE128 dan SHAKE256 dalam FIPS 202 yang sama adalah XOF dengan panjang keluaran yang ditentukan. Sufiks dan padding penting: nama «Keccak-256» saja tidak membuktikan bahwa keluarannya sama dengan SHA3-256.
 
-- **Fase Absorb (Menyerap)**: Blok pesan di-XOR (exclusive OR) dengan string bit dari keadaan internal pada setiap kecepatan (Rate) tertentu, dan data diserap dengan menerapkan fungsi permutasi internal ($f$).
-- **Fase Squeeze (Memeras)**: Setelah penyerapan data selesai, data terus-menerus diambil (diperas) dari keadaan internal, dan penerapan fungsi permutasi $f$ serta ekstraksi diulang hingga mencapai panjang output yang diperlukan.
-
-Dengan struktur ini, SHA-3 menawarkan keamanan yang kuat di mana metode serangan yang ada terhadap SHA-2 sama sekali tidak efektif.
-
-### 3.4. Contoh Implementasi Fungsi Hash dengan Python
+### 3.4. Hash dengan Python
 
 ```python
 from cryptography.hazmat.primitives import hashes
@@ -212,142 +204,104 @@ hash_result_sha3 = digest_sha3.finalize()
 print("SHA3-256:", hash_result_sha3.hex())
 ```
 
----
+## 4. Tanda tangan digital
 
-## 4. Tanda Tangan Digital (Digital Signatures)
+Skema tanda tangan digital menyediakan **pembuatan tanda tangan** dengan kunci privat dan **verifikasi tanda tangan** dengan kunci publik. Dengan konstruksi dan implementasi yang benar, keterkaitan kunci yang tepercaya, serta pengelolaan kunci privat yang tepat, tanda tangan mendukung integritas dan autentikasi penanda tangan. Tanda tangan dapat menjadi bukti untuk nirpenyangkalan, tetapi tidak membuktikan tanpa syarat niat seseorang ataupun tidak adanya kebocoran kunci.
 
-Dengan menggabungkan kriptografi kunci publik dan fungsi hash, kita dapat mewujudkan **tanda tangan digital** yang setara dengan "stempel" atau "tanda tangan" di dunia nyata. Tanda tangan digital menjamin **integritas** pesan (bahwa pesan tersebut tidak diubah), **otentikasi pengirim** (bukan peniruan identitas), dan **nir-penyangkalan** (Non-repudiation, pengirim tidak dapat menyangkal fakta pengiriman).
+### 4.1. Perbedaan penandatanganan dan enkripsi
 
-### 4.1. Cara Kerja Tanda Tangan Digital
+Menggeneralisasi tanda tangan sebagai «enkripsi dengan kunci privat dan dekripsi dengan kunci publik» adalah keliru. RSA memiliki skema enkripsi dan tanda tangan yang berbeda; contoh berikut memakai **RSASSA-PSS**. Tanda tangan tidak merahasiakan pesan. Verifikasi memeriksa apakah kunci publik, pesan, dan tanda tangan memenuhi syarat skema; bukan dekripsi umum yang memulihkan digest.
 
-Konsep dasar tanda tangan digital adalah "**penggunaan terbalik dari kriptografi kunci publik**".
-
-Dalam enkripsi biasa, kita "mengenkripsi dengan kunci publik dan mendekripsi dengan kunci privat", tetapi dalam tanda tangan digital, kita "**membuat tanda tangan dengan kunci privat (setara dengan enkripsi) dan memverifikasi tanda tangan dengan kunci publik (setara dengan dekripsi)**". Karena hanya individu tersebut yang memiliki kunci privat, tanda tangan yang dihasilkan dengan kunci privat tersebut merupakan bukti kuat bahwa individu itulah yang membuatnya.
-
-Namun, memproses seluruh data secara langsung menggunakan algoritma kunci publik (seperti RSA) memerlukan biaya komputasi yang sangat besar. Oleh karena itu, dalam praktiknya, **fungsi hash** selalu digunakan bersamaan.
-
-### 4.2. Alur Pembuatan dan Verifikasi Tanda Tangan
+### 4.2. Alur pembuatan dan verifikasi (ringkasan RSA-PSS)
 
 ```mermaid
 graph TD
-    subgraph "Pembuatan Tanda Tangan (Pengirim Alice)"
-        M1["Pesan"] --> H1["Fungsi Hash"]
-        H1 --> Hash1["Nilai Hash"]
-        Hash1 --> Sign["Dienkripsi dengan Kunci Privat Alice"]
-        Sign --> Sig["Tanda Tangan Digital"]
-    end
-
-    subgraph "Verifikasi Tanda Tangan (Penerima Bob)"
-        M2["Pesan yang Diterima"] --> H2["Fungsi Hash"]
-        H2 --> Hash2["Nilai Hash yang Dihitung"]
-        
-        Sig2["Tanda Tangan Digital yang Diterima"] --> Ver["Didekripsi dengan Kunci Publik Alice"]
-        Ver --> Hash3["Nilai Hash yang Dipulihkan"]
-        
-        Hash2 -.->|"Pemeriksaan Perbandingan / Kecocokan"| Hash3
-        Hash3 -.->|"Pemeriksaan Perbandingan / Kecocokan"| Hash2
-    end
+    M["Pesan"] --> S["Penandatanganan RSA-PSS (hash dan pengodean internal)"]
+    SK["Kunci privat khusus tanda tangan Alice"] --> S
+    S --> SIG["Tanda tangan"]
+    M --> RM["Pesan yang diterima"]
+    SIG --> V["Verifikasi RSA-PSS (memeriksa hash dan pengodean)"]
+    RM --> V
+    PK["Kunci publik Alice yang telah diautentikasi"] --> V
+    V --> R["Valid / tidak valid"]
 ```
 
-1. **Pembuatan Tanda Tangan**: Pengirim menghitung nilai hash pesan, lalu mengenkripsinya dengan kunci privatnya sendiri untuk membuat "data tanda tangan". Isi pesan dan data tanda tangan dikirim ke penerima.
-2. **Verifikasi Tanda Tangan**: Penerima menghitung sendiri nilai hash dari pesan yang diterima. Pada saat yang sama, ia mendekripsi data tanda tangan yang diterima menggunakan kunci publik pengirim untuk mengambil nilai hash asli. Jika kedua nilai hash benar-benar cocok, verifikasi berhasil.
+1. Penanda tangan menghitung hash pesan, lalu menghasilkan tanda tangan menggunakan pengodean PSS, salt, dan operasi kunci privat. Pesan dan tanda tangan disampaikan kepada pemeriksa.
+2. Pemeriksa menggunakan kunci publik tepercaya dan parameter yang sesuai untuk memverifikasi pesan dan tanda tangan yang diterima. Hash dan pengodean merupakan bagian skema; API pada contoh tidak menerima digest yang sudah dihitung sebelumnya.
 
-### 4.3. Contoh Implementasi Tanda Tangan Digital dengan Python (RSA)
+### 4.3. RSA-PSS dengan Python
+
+Kita membuat kunci khusus tanda tangan, terpisah dari kunci pada contoh enkripsi. Panjang salt ditetapkan sama dengan panjang digest SHA-256 (32 byte), dan verifikasi memakai pengaturan yang sama. Keaslian kunci publik harus dipastikan di luar contoh ini.
 
 ```python
-from cryptography.hazmat.primitives.asymmetric import padding
-from cryptography.hazmat.primitives import hashes
+import base64
 from cryptography.exceptions import InvalidSignature
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.asymmetric import padding, rsa
 
-# Pesan
+# Buat kunci khusus tanda tangan, terpisah dari contoh enkripsi
+signing_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+verification_key = signing_key.public_key()
 doc_message = b"Contract document: Party A agrees to pay Party B $1000."
-
-# 1. Pembuatan Tanda Tangan (Menggunakan kunci privat)
-signature = private_key.sign(
-    doc_message,
-    padding.PSS(
-        mgf=padding.MGF1(hashes.SHA256()),
-        salt_length=padding.PSS.MAX_LENGTH
-    ),
-    hashes.SHA256()
+pss = padding.PSS(
+    mgf=padding.MGF1(hashes.SHA256()),
+    salt_length=padding.PSS.DIGEST_LENGTH,
 )
-print("Digital Signature:", base64.b64encode(signature).decode('utf-8')[:50], "...")
+signature = signing_key.sign(doc_message, pss, hashes.SHA256())
+print("Tanda tangan (Base64):", base64.b64encode(signature).decode("ascii"))
 
-# 2. Verifikasi Tanda Tangan (Menggunakan kunci publik)
 try:
-    public_key.verify(
-        signature,
-        doc_message,
-        padding.PSS(
-            mgf=padding.MGF1(hashes.SHA256()),
-            salt_length=padding.PSS.MAX_LENGTH
-        ),
-        hashes.SHA256()
-    )
-    print("Signature is VALID. Document integrity and authenticity are verified.")
+    verification_key.verify(signature, doc_message, pss, hashes.SHA256())
+    print("Tanda tangan VALID untuk pesan dan kunci publik ini.")
 except InvalidSignature:
-    print("Signature is INVALID. Document may be tampered with.")
+    print("Tanda tangan TIDAK VALID untuk pesan dan kunci publik ini.")
 ```
 
----
+## 5. Infrastruktur kunci publik (PKI)
 
-## 5. Infrastruktur Kunci Publik (PKI: Public Key Infrastructure)
+Jika kunci penyerang diterima sebagai kunci pihak yang dituju, operasi kriptografi yang benar pun dapat diarahkan ke pihak yang salah. **PKI** menyediakan sertifikat, konfigurasi kepercayaan, dan prosedur verifikasi untuk menetapkan keterkaitan antara kunci publik dan nama atau informasi lain.
 
-Meskipun tanda tangan digital memungkinkan integritas data dan otentikasi pengirim, satu kelemahan fatal tetap ada dalam sistem secara keseluruhan. Itu adalah masalah: "**Apakah kunci publik yang digunakan benar-benar kunci publik yang sah dari pihak yang berkomunikasi (Alice)?**"
+### 5.1. Otoritas sertifikasi dan sertifikat X.509
 
-Jika penyerang (Eve) menyamar sebagai Alice, memberikan kunci publiknya sendiri kepada Bob, dan Bob mempercayai bahwa itu adalah "kunci publik Alice", Eve dapat menyamar sebagai Alice untuk mendekripsi komunikasi terenkripsi atau membuat verifikasi tanda tangan palsu yang dianggap sah. Ini disebut **Serangan Man-in-the-Middle** (Man-in-the-Middle Attack).
+Otoritas sertifikasi (CA) memeriksa kendali domain atau informasi subjek berdasarkan kebijakannya, lalu menerbitkan sertifikat. Tidak semua sertifikat membuktikan identitas pribadi pengelola situs dalam cakupan yang sama.
 
-Infrastruktur sosial untuk menjamin validitas kunci publik ini dan membangun rantai kepercayaan adalah **PKI (Infrastruktur Kunci Publik)**.
+Sertifikat X.509 memuat versi, nomor seri, algoritma tanda tangan, penerbit, subjek, masa berlaku, kunci publik subjek, ekstensi, dan tanda tangan. CA menandatangani **pengodean DER dari TBSCertificate**, yang memuat informasi untuk ditandatangani, bukan kunci publik saja.
 
-### 5.1. Otoritas Sertifikat (CA) dan Sertifikat Digital (X.509)
-
-Pusat dari PKI adalah **Otoritas Sertifikat** (CA: Certificate Authority), sebuah organisasi pihak ketiga yang tepercaya. Peran CA adalah untuk memeriksa identitas individu atau kepemilikan domain, dan menerbitkan **sertifikat digital** (sertifikat kunci publik) di mana "kunci publik" subjek telah diberi tanda tangan digital menggunakan "kunci privat" milik CA sendiri.
-
-Standar yang banyak digunakan untuk sertifikat digital adalah **X.509**. Sertifikat ini memuat informasi berikut:
-- Versi, Nomor Seri
-- Algoritma Tanda Tangan
-- Informasi Identitas Penerbit (CA)
-- Masa Berlaku
-- Informasi Identitas Subjek (Server atau Individu)
-- **Kunci Publik Subjek**
-- **Tanda Tangan Digital oleh CA**
-
-### 5.2. Diagram Struktur Model Kepercayaan PKI
+### 5.2. Rantai sertifikat dan TLS
 
 ```mermaid
 graph TD
-    CA["Otoritas Sertifikat Akar (Root CA)"]
-    SubCA["Otoritas Sertifikat Menengah (Intermediate CA)"]
-    Server["Server Web (Alice)"]
-    Client["PC Klien (Bob)"]
-
-    CA -->|"Menerbitkan Sertifikat (Tanda Tangan)"| SubCA
-    SubCA -->|"Menerbitkan Sertifikat (Tanda Tangan)"| Server
-    Server -->|"Menyajikan Sertifikat Server"| Client
-    Client -.->|"Menyimpan Kunci Publik Root CA Sebelumnya\n(Bawaan Browser atau OS)"| CA
-    Client -->|"Memverifikasi Rantai Sertifikat\nMenggunakan Kunci Publik Root CA"| Server
+    CA["Jangkar kepercayaan (CA akar)"] -->|"Menandatangani sertifikat CA perantara"| I["CA perantara"]
+    I -->|"Menandatangani sertifikat server"| S["Server"]
+    S -->|"Menyajikan sertifikat akhir dan perantara"| C["Klien"]
+    C -.->|"Kepercayaan dikonfigurasi sebelumnya"| CA
+    C -->|"Memvalidasi jalur, batasan, penggunaan, waktu, dan nama"| S
 ```
 
-Bahkan saat mengakses situs web "https://" dengan browser, mekanisme PKI ini beroperasi penuh di latar belakang. Dengan memverifikasi tanda tangan sertifikat yang dikirim dari server menggunakan kunci publik otoritas sertifikat akar yang telah diinstal sebelumnya di browser, saluran komunikasi aman (TLS) dapat dibangun.
+Diagram menunjukkan satu contoh: CA akar → CA perantara → server. Klien membangun jalur menuju jangkar kepercayaan (trust anchor) yang telah dikonfigurasi dan memvalidasi tanda tangan, masa berlaku, batasan CA, penggunaan kunci, serta ekstensi kritis yang tidak didukung, di antara persyaratan lain. Proses ini bukan sekadar memverifikasi sertifikat akhir langsung dengan kunci akar. Penanganan pencabutan mengikuti mekanisme dan kebijakan aplikasi yang berlaku.
 
----
+TLS juga memerlukan pemeriksaan identitas layanan. Untuk nama DNS, nama yang diharapkan dibandingkan dengan entri `dNSName` pada `subjectAltName`, tanpa beralih ke Common Name sebagai alternatif (RFC 9525). Sertifikat situs lain tidak boleh diterima meskipun tanda tangannya benar.
 
-## 6. Kesimpulan
+Validasi sertifikat saja tidak membentuk komunikasi terenkripsi. TLS 1.3 menggabungkan pertukaran kunci, autentikasi, dan konfirmasi kunci untuk menurunkan kunci lalu lintas, serta melindungi record dengan enkripsi terautentikasi. Transportasi kunci RSA statis dihapus pada TLS 1.3. Koneksi PSK atau pelanjutan sesi dapat tidak mengirim sertifikat, sehingga diagram ini tidak menggambarkan setiap koneksi TLS.
 
-Masyarakat digital modern dibangun di atas kombinasi luar biasa dari **teknologi kriptografi** yang dibahas kali ini.
+## 6. Ringkasan
 
-- Enkripsi data berkecepatan tinggi dengan **Kriptografi Kunci Simetris**
-- Pertukaran kunci yang aman dan realisasi asimetri dengan **Kriptografi Kunci Publik** (RSA dan [ECC](/id/p/elliptic-curve-cryptography-math-cpp/))
-- Ekstraksi sidik jari data dengan **Fungsi Hash** (SHA-2/3)
-- Bukti integritas dan otentikasi dengan **Tanda Tangan Digital**
-- Jaminan keaslian kunci publik dengan **PKI dan Otoritas Sertifikat**
+- Enkripsi simetris melindungi data dalam jumlah besar. Bedakan kerahasiaan dari deteksi perubahan.
+- Enkripsi kunci publik, kesepakatan kunci, dan tanda tangan memiliki peran berbeda. Kunci juga perlu diautentikasi.
+- Hash menghasilkan digest. Hash saja tidak mengautentikasi sumber.
+- Tanda tangan mendukung integritas dan autentikasi, dengan syarat pengelolaan kunci dan skema tetap dipenuhi.
+- Validasi jalur PKI, pemeriksaan nama layanan, dan handshake TLS saling berkaitan, tetapi merupakan proses yang berbeda.
 
-Keindahan matematis dan teori komputasi yang ketat ini melindungi privasi dan aset kita setiap hari dari serangan siber. Evolusi teknologi kriptografi terus berlanjut, dan penelitian serta standardisasi **Kriptografi Pasca-Kuantum** (PQC: Post-Quantum Cryptography) sebagai persiapan menghadapi kebangkitan komputer kuantum berkembang pesat.
+Ini adalah dasar-dasarnya. Sistem produksi menggunakan pustaka yang dipelihara dan protokol standar, serta mengevaluasi pengelolaan kunci, algoritma, parameter, dan migrasi menuju kriptografi pascakuantum. Contoh artikel ini saja tidak cukup untuk menentukan keamanan seluruh sistem.
 
-Memahami dasar-dasar kriptografi dengan benar akan menjadi langkah pertama yang bagus dalam merancang sistem dan aplikasi yang lebih aman dan tangguh.
+### Referensi
 
----
-*Referensi & Tautan Terkait*
-- NIST FIPS 186-4: Digital Signature Standard (DSS)
-- NIST FIPS 202: SHA-3 Standard
-- RFC 5280: Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile
+- [RFC 8017: PKCS #1 — RSA Cryptography Specifications](https://www.rfc-editor.org/rfc/rfc8017.html) (§§3, 5–9)
+- [cryptography 50.0.2: RSA](https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/)
+- [RFC 6090: Fundamental Elliptic Curve Cryptography Algorithms](https://www.rfc-editor.org/rfc/rfc6090.html) (§§3.3, 5.3.1)
+- [NIST FIPS 180-4: Secure Hash Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf) (§§5–6)
+- [NIST FIPS 202: SHA-3 Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf) (§§4–6)
+- [NIST FIPS 186-5: Digital Signature Standard](https://csrc.nist.gov/pubs/fips/186-5/final)
+- [RFC 5280: Internet X.509 PKI Certificate and CRL Profile](https://www.rfc-editor.org/rfc/rfc5280.html) (§§4.1, 6)
+- [RFC 9525: Service Identity in TLS](https://www.rfc-editor.org/rfc/rfc9525.html)
+- [RFC 8446: TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) (§§1.2, 2)
