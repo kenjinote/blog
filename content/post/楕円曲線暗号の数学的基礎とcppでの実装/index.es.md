@@ -2,6 +2,7 @@
 title: 'Fundamentos matemáticos de la criptografía de curva elíptica (ECC) e implementación en C++'
 slug: "elliptic-curve-cryptography-math-cpp"
 date: "2026-09-11T10:00:00+09:00"
+lastmod: "2026-10-27"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,441 +10,306 @@ categories: ["cryptography", "cpp", "mathematics"]
 tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 ---
 
-# Fundamentos matemáticos de la criptografía de curva elíptica (ECC) e implementación en C++
+La criptografía de curva elíptica (Elliptic Curve Cryptography, ECC) es una familia de técnicas de clave pública basadas en grupos de curvas elípticas. El acuerdo de claves ECDH y las firmas como ECDSA tienen funciones distintas: ECC no es una única operación de cifrado que proporcione todas las propiedades de seguridad. Junto con el [resumen de claves públicas, hashes y firmas](/es/p/modern-cryptography-public-key-hash-signature/), este artículo explica sus condiciones matemáticas y de implementación.
 
-En la tecnología criptográfica moderna, la **criptografía de curva elíptica (Elliptic Curve [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy: ECC)** juega un papel extremadamente importante. Desde nuestras comunicaciones diarias en Internet (HTTPS/TLS), los enclaves seguros de los teléfonos inteligentes, la autenticación de servidores mediante SSH, la autenticación sin contraseña como FIDO, e incluso en criptomonedas como [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) y Ethereum, no es una exageración decir que la base de confianza de la sociedad digital moderna está respaldada por ECC.
+El ejemplo en C++ es una **demostración matemática de tiempo variable** con parámetros públicos de secp256k1. No implementa generación de claves privadas, acuerdo de claves autenticado, firmas ni criptografía de tiempo constante. También explicamos por qué una estructura de escalera no basta para garantizar un comportamiento de tiempo constante.
 
-En este artículo, explicaremos exhaustivamente con un volumen abrumador cómo funciona esta criptografía de curva elíptica, partiendo de la hermosa pero compleja teoría matemática detrás de ella (geometría algebraica sobre campos finitos), los métodos de implementación prácticos usando C++, y además, técnicas de codificación seguras para prevenir ataques de canal lateral (ataques de tiempo).
+## 1. Seguridad y tamaños de clave
 
----
+Se elige un subgrupo de orden primo grande $n$ con generador $G$. Recuperar $d$ a partir de $Q=dG$ es el problema del logaritmo discreto en curvas elípticas (ECDLP). El escalar queda determinado módulo $n$. Una clave privada se muestrea uniformemente de $1\le d<n$ con un generador aleatorio criptográficamente seguro. Hay que distinguir el tamaño del cuerpo $p$, el orden del subgrupo $n$ y el valor de la clave privada.
 
-## 1. ¿Por qué la criptografía de curva elíptica? (Comparación con [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/))
+Para un subgrupo adecuado de orden primo grande, un ataque clásico genérico como Pollard rho necesita aproximadamente $O(\sqrt n)$ operaciones de grupo. Esto no significa que la búsqueda exhaustiva sea el único ataque, ni que todas las curvas elípticas presenten la misma dificultad. Las estructuras especiales y los subgrupos pequeños permiten otros ataques; es necesario seleccionar apropiadamente los parámetros y el esquema.
 
-Cuando se hablaba de criptografía de clave pública, durante mucho tiempo el sinónimo era **RSA**. RSA basa su seguridad en la "dificultad de factorizar números compuestos enormes". Sin embargo, con el aumento de la capacidad computacional de los ordenadores, para mantener la seguridad ha surgido la necesidad de alargar continuamente el tamaño de la clave RSA (el número de bits del módulo). Hoy en día, se recomienda una longitud de clave de al menos 2048 bits, o 3072 y 4096 bits para mayor seguridad.
+La siguiente comparación reproduce las **resistencias máximas estimadas frente a ordenadores clásicos** de NIST SP 800-57 Part 1 Rev.5, Table 2. La columna RSA indica la longitud del módulo en bits; la columna ECC, la longitud en bits $f$ del orden $n$ del punto base, no el tamaño de la clave pública codificada.
 
-Por otro lado, la criptografía de curva elíptica (ECC) fundamenta su seguridad en una dificultad matemática diferente: el **"problema del logaritmo discreto en curvas elípticas (ECDLP)"**. Hasta la fecha, no se ha descubierto ningún algoritmo eficiente (como algoritmos de tiempo subexponencial) para resolver el ECDLP, e incluso los métodos de ataque más eficientes conocidos requieren un tiempo exponencial.
+| Resistencia estimada (bits) | Módulo RSA (bits) | ECC $f$ (bits) |
+| :---: | :---: | :---: |
+| Como máximo 80 (comparación histórica) | 1024 | 160–223 |
+| 112 | 2048 | 224–255 |
+| 128 | 3072 | 256–383 |
+| 192 | 7680 | 384–511 |
+| 256 | 15360 | Al menos 512 |
 
-Debido a esta propiedad, ECC tiene la ventaja decisiva de **poder lograr el mismo nivel de seguridad que RSA con una longitud de clave mucho más corta**.
+La fila de 80 bits no recomienda su uso en un sistema nuevo. La tabla no certifica una curva, implementación o duración de despliegue concreta, ni ofrece resistencia cuántica. Unos parámetros más cortos pueden reducir los costes de comunicación, pero ECC no es necesariamente más rápido que RSA en todas las operaciones.
 
-| Nivel de seguridad (bits) | Longitud de clave RSA (bits) | Longitud de clave ECC (bits) | Proporción de longitud de clave |
-| :---: | :---: | :---: | :---: |
-| 80 | 1024 | 160 | 1:6 |
-| 112 | 2048 | 224 | 1:9 |
-| 128 | 3072 | 256 | 1:12 |
-| 192 | 7680 | 384 | 1:20 |
-| 256 | 15360 | 512 | 1:30 |
+## 2. Grupos y cuerpos finitos
 
-Como muestra la tabla anterior, para obtener una seguridad de 128 bits (el estándar actual), RSA requiere una clave de 3072 bits, pero con ECC solo se necesitan 256 bits. Esto permite una reducción en la cantidad de cálculos, un menor uso de memoria y un ahorro de ancho de banda en la red, presumiendo de una ventaja abrumadora, especialmente en entornos con recursos limitados como dispositivos IoT y tarjetas inteligentes.
+Un grupo consta de un conjunto y una operación que satisfacen clausura, asociatividad, existencia de un elemento neutro y de inversos para todos sus elementos. Si también cumple la conmutatividad, es un grupo abeliano. Los puntos de una curva elíptica, incluido el punto en el infinito y con la ley de suma descrita abajo, forman un grupo abeliano.
 
----
+Para un primo $p$, los elementos del cuerpo primo $\mathbb F_p$ se representan mediante $0,\ldots,p-1$, y la suma, resta y multiplicación se reducen módulo $p$. Un cuerpo finito también se denomina campo finito. La división $u/v$ se define como $uv^{-1}$ **solo si $v$ es distinto de cero**.
 
-## 2. Preparación matemática: Teoría de grupos y el mundo de los campos finitos
+$$vv^{-1}\equiv1\pmod p$$
 
-Para comprender verdaderamente la criptografía de curva elíptica, es necesario dominar los conceptos básicos del álgebra abstracta (teoría de grupos y teoría de campos). Aquí resumiremos de manera concisa los conocimientos previos para construir ECC.
+El inverso se puede calcular con el algoritmo extendido de Euclides o como $v^{p-2}\bmod p$ mediante el pequeño teorema de Fermat. Elegir la segunda opción no hace que una implementación sea de tiempo constante. También importan la exponenciación, multiplicación, reducción y asignación de memoria.
 
-### 2.1. Grupo (Group) y grupo abeliano
-Un **grupo (Group)** es un conjunto $G$ junto con una operación binaria (aquí la asumiremos como adición $+$) en ese conjunto, denotado como $(G, +)$, que satisface los siguientes 4 axiomas:
+## 3. La curva y el punto en el infinito
 
-1. **Clausura (Closure)**: Para cualesquiera $a, b \in G$, se cumple que $a + b \in G$.
-2. **Asociatividad (Associativity)**: Para cualesquiera $a, b, c \in G$, se cumple que $(a + b) + c = a + (b + c)$.
-3. **Existencia del elemento neutro (Identity element)**: Existe un elemento $e \in G$ tal que para cualquier $a \in G$, $a + e = e + a = a$. En el caso de un grupo aditivo, este elemento neutro generalmente se denota como $0$ o $\mathcal{O}$.
-4. **Existencia del elemento inverso (Inverse element)**: Para cualquier $a \in G$, existe un elemento $b \in G$ tal que $a + b = b + a = e$. Este $b$ se denota como $-a$.
+Este artículo se limita a la **forma corta de Weierstrass** sobre un cuerpo primo con $p>3$. La fórmula no cubre de manera uniforme la característica dos o tres, ni los modelos de Montgomery y Edwards.
 
-Además, si el resultado no cambia al invertir el orden de la operación, es decir, si satisface la siguiente condición, el grupo se denomina **grupo abeliano (grupo conmutativo)**.
+$$y^2\equiv x^3+ax+b\pmod p$$
 
-5. **Conmutatividad (Commutativity)**: Para cualesquiera $a, b \in G$, se cumple que $a + b = b + a$.
+Los coeficientes son elementos del cuerpo y la ausencia de singularidades requiere la siguiente condición dentro de él:
 
-El conjunto de puntos en una curva elíptica, al definir una regla de adición específica, forma este **grupo abeliano**.
+$$\Delta=-16(4a^3+27b^2)\not\equiv0\pmod p$$
 
-### 2.2. Campo finito (Finite Field)
-En la teoría criptográfica, no se utilizan campos con un número infinito de elementos continuos como los números reales o complejos, sino un **campo finito (Finite Field)** o campo de [Galois](https://kenji.blog/es/p/galois/) ([Galois](https://kenji.blog/es/p/galois/) Field), donde el número de elementos es finito.
+Esta condición por sí sola no hace que una curva sea adecuada para criptografía. A los puntos finitos que satisfacen la ecuación se añade el elemento neutro, el punto en el infinito $\mathcal O$.
 
-El campo finito más básico es el **campo primo $\mathbb{F}_p$** utilizando un número primo $p$. Esto es el conjunto de enteros $\{0, 1, 2, \dots, p-1\}$ en el que se definen las cuatro operaciones aritméticas (suma, resta, multiplicación, división) módulo $p$ (el resto de dividir por $p$).
+$$P+\mathcal O=\mathcal O+P=P$$
 
-- **Suma**: $(a + b) \pmod p$
-- **Resta**: $(a - b) \pmod p$
-- **Multiplicación**: $(a \times b) \pmod p$
-- **División**: $a \times b^{-1} \pmod p$ (donde $b^{-1}$ es el inverso multiplicativo de $b$ módulo $p$)
+$$-(x,y)=(x,-y\bmod p),\qquad P+(-P)=\mathcal O$$
 
-El cálculo del **inverso multiplicativo modular (Modular Multiplicative Inverse)** es extremadamente importante en las implementaciones criptográficas. Para encontrar $b^{-1}$ que satisfaga $b \times b^{-1} \equiv 1 \pmod p$, se utilizan principalmente los dos siguientes algoritmos:
+La imagen sobre los números reales de una recta que corta la curva y de la reflexión del punto de intersección aporta intuición sobre la ley de grupo. En un cuerpo finito calculamos con las fórmulas algebraicas correspondientes, no con una curva dibujada de forma continua.
 
-1. **Algoritmo de [Euclides](https://kenji.blog/p/euclid/) extendido (Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm)**: Es rápido, pero dependiendo de la implementación, el tiempo de procesamiento puede depender de los valores de entrada, por lo que existe el riesgo de ataques de tiempo.
-2. **Pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/es/p/fermats-little-theorem/))**: Cuando $p$ es primo y $b \neq 0$, se cumple que $b^{p-1} \equiv 1 \pmod p$. Dividiendo ambos lados por $b$, obtenemos $b^{p-2} \equiv b^{-1} \pmod p$. En otras palabras, calculando la potencia $p-2$ de $b$, se obtiene el inverso. Dado que las operaciones de exponenciación son fáciles de implementar en tiempo constante, esta es la preferida en implementaciones criptográficas.
+## 4. Suma, duplicación y casos excepcionales
 
----
+Sean $P=(x_1,y_1)$ y $Q=(x_2,y_2)$. Primero se trata la suma con $\mathcal O$ y el caso $Q=-P$. Este último incluye la duplicación cuando $P=Q$ y $y_1=0$; el resultado es $\mathcal O$.
 
-## 3. Ecuación de la curva elíptica y geometría
+Si $x_1\ne x_2$, se utiliza:
 
-### 3.1. Forma normal de Weierstrass
-Una **curva elíptica (Elliptic Curve)** es una curva plana generalmente definida por la siguiente ecuación, llamada **forma normal de Weierstrass (Weierstrass normal form)**.
+$$\lambda\equiv(y_2-y_1)(x_2-x_1)^{-1}\pmod p$$
 
-$$ y^2 = x^3 + ax + b $$
+Si $P=Q$ y $y_1\ne0$, se utiliza la fórmula de la tangente:
 
-Aquí, $a$ y $b$ son constantes, y como condición para que la curva no tenga puntos singulares (auto-intersecciones o cúspides), es decir, para que sea una curva suave, se requiere que el siguiente **discriminante (Discriminant) $\Delta$** no sea cero.
+$$\lambda\equiv(3x_1^2+a)(2y_1)^{-1}\pmod p$$
 
-$$ \Delta = -16(4a^3 + 27b^2) \neq 0 $$
+Una vez que estas condiciones aseguran un denominador distinto de cero, el resultado se obtiene con las fórmulas comunes:
 
-Dado que una curva con puntos singulares compromete la seguridad criptográfica, siempre se eligen coeficientes $a, b$ que satisfagan esta condición.
+$$x_3\equiv\lambda^2-x_1-x_2\pmod p$$
 
-### 3.2. Punto en el infinito (Point at Infinity)
-Para convertir matemáticamente la curva elíptica en un grupo completo, además de los puntos en el plano, introducimos un punto virtual llamado **"punto en el infinito (Point at Infinity)"**. Lo denotamos como $\mathcal{O}$.
-
-El punto en el infinito $\mathcal{O}$ se define como el punto donde todas las líneas verticales se cruzan en el infinito infinito. En la teoría de grupos, este punto en el infinito $\mathcal{O}$ funciona como el **elemento neutro en la adición** (cero).
-
-Es decir, para cualquier punto $P$ en la curva, se cumple lo siguiente:
-$$ P + \mathcal{O} = \mathcal{O} + P = P $$
-
-Además, el inverso $-P$ del punto $P = (x, y)$ se define como el punto simétrico con respecto al eje x, $(x, -y)$. Por lo tanto:
-$$ P + (-P) = \mathcal{O} $$
-
----
-
-## 4. Operaciones de grupo en la curva elíptica (Suma de puntos y duplicación)
-
-El núcleo de la criptografía de curva elíptica es la operación de **"suma (Addition)"** entre puntos de la curva. Esta difiere de la suma habitual de números enteros y se define basándose en operaciones geométricas.
-
-### 4.1. Suma geométrica (Tangent and Chord Method)
-El procedimiento para sumar dos puntos diferentes $P$ y $Q$ en la curva para obtener un nuevo punto $R$ ($R = P + Q$) es el siguiente:
-
-1. Se traza una línea recta (cuerda) que pasa por los puntos $P$ y $Q$.
-2. Esta línea recta siempre interceptará la curva elíptica en un tercer punto (a este lo llamaremos $-R$). (*Según un teorema de la geometría algebraica)
-3. El punto obtenido al reflejar el punto de intersección $-R$ simétricamente sobre el eje x (invirtiendo el signo de la coordenada y) será el punto $R$ buscado.
+$$y_3\equiv\lambda(x_1-x_3)-y_1\pmod p$$
 
 ```mermaid
 graph TD
-    Step1["Trazar una línea que conecte P(x1, y1) y Q(x2, y2)"] --> Step2["Encontrar el tercer punto de intersección -R con la curva"]
-    Step2 --> Step3["Reflejar -R sobre el eje x para obtener R(x3, y3)"]
-    Step3 -.-> Result["Esto es R = P + Q"]
+    A["Puntos válidos P, Q de la misma curva"] --> B["Tratar infinito, inversos y casos y=0"]
+    B --> C["Calcular la pendiente con denominador no nulo"]
+    C --> D["Aplicar las fórmulas para R = P + Q"]
 ```
 
-### 4.2. Duplicación de puntos (Point Doubling)
-Al sumar el mismo punto $P$ a sí mismo ($P + P = 2P$), no se puede trazar una línea que pase por dos puntos. En este caso, se traza la **línea tangente (Tangent) a la curva en el punto $P$**.
+Las coordenadas afines requieren inversiones. Las implementaciones prácticas pueden reducir su número con sistemas como las coordenadas jacobianas. Cambiar las coordenadas no garantiza por sí solo ni tiempo constante ni seguridad.
 
-1. Se traza la línea tangente a la curva en el punto $P$.
-2. Esta línea tangente interceptará la curva en un segundo punto $-R$.
-3. El punto reflejado simétricamente sobre el eje x será el punto buscado $R = 2P$.
+## 5. Multiplicación escalar
 
-### 4.3. Fórmulas de cálculo algebraico
-Las operaciones geométricas se traducen a fórmulas algebraicas para que puedan ser calculadas por un ordenador.
-Todas las operaciones se realizan **sobre el campo finito $\mathbb{F}_p$ (módulo $p$)**.
+Para $k$ no negativo, se define $kP$ mediante sumas repetidas, con $0P=\mathcal O$. El método de duplicar y sumar (double-and-add) procesa los bits del más significativo al menos significativo: duplica el acumulador y suma $P$ si el bit es uno. Reduce el número de operaciones de grupo de $k$ sumas directas a $O(\log k)$. Esto no afirma un coste constante por operación ni un tiempo absoluto de ejecución.
 
-Sean el punto $P = (x_1, y_1)$ y el punto $Q = (x_2, y_2)$.
-Además, el punto resultante del cálculo será $R = P + Q = (x_3, y_3)$.
+El siguiente pseudocódigo conceptual no forma parte del programa C++ posterior. Contiene una bifurcación que depende de bits secretos.
 
-Sea $\lambda$ (lambda) la pendiente de la recta.
+```text
+R = O
+for bit in bits_of_k_from_most_significant:
+    R = 2R
+    if bit == 1:
+        R = R + P
+```
 
-**[Caso 1: Cuando $P \neq Q$ (Suma de puntos)]**
-La pendiente $\lambda$ es la tasa de cambio entre los dos puntos.
-$$ \lambda \equiv \frac{y_2 - y_1}{x_2 - x_1} \pmod p $$
-$$ \lambda \equiv (y_2 - y_1) \cdot (x_2 - x_1)^{-1} \pmod p $$
+Una actualización de tipo escalera de Montgomery realiza una suma y una duplicación por bit. Si el prefijo procesado representa $r$, puede conservar $(R_0,R_1)=(rP,(r+1)P)$. El ejemplo posterior demuestra este invariante con puntos afines completos; no implementa X25519 ni X448 de RFC 7748.
 
-Usando este $\lambda$, $x_3, y_3$ se calculan de la siguiente manera:
-$$ x_3 \equiv \lambda^2 - x_1 - x_2 \pmod p $$
-$$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
+```mermaid
+graph TD
+    A["R0 = O, R1 = P"] --> B["Procesar cada bit desde el más significativo"]
+    B --> C["Intercambiar según el bit (con bifurcación en el ejemplo)"]
+    C --> D["R1 = R0 + R1, R0 = 2R0"]
+    D --> E["Deshacer el intercambio según el mismo bit"]
+    E --> B
+    B -.-> F["Todos los bits procesados: R0 = kP"]
+```
 
-**[Caso 2: Cuando $P = Q$ (Duplicación de puntos)]**
-La pendiente $\lambda$ es la pendiente de la recta tangente obtenida por diferenciación. (Se deriva implícitamente $y^2 = x^3 + ax + b$)
-$$ 2y \cdot y' = 3x^2 + a \implies y' = \frac{3x^2 + a}{2y} $$
-Por lo tanto,
-$$ \lambda \equiv (3x_1^2 + a) \cdot (2y_1)^{-1} \pmod p $$
+## 6. ECDH: acuerdo y autenticación
 
-Las fórmulas para $x_3, y_3$ tienen la misma forma que en la suma, pero como $x_2 = x_1$, se convierten en:
-$$ x_3 \equiv \lambda^2 - 2x_1 \pmod p $$
-$$ y_3 \equiv \lambda(x_1 - x_3) - y_1 \pmod p $$
+Los parámetros públicos de dominio incluyen la curva, el cuerpo, el punto base $G$, su orden $n$ y el cofactor. Cada parte genera un escalar privado apropiado e intercambia puntos públicos.
 
-> [!IMPORTANT]
-> Estas fórmulas incluyen **divisiones (cálculo del inverso modular)**, como $(x_2 - x_1)^{-1}$ y $(2y_1)^{-1}$. Dado que el cálculo del inverso modular tiene un costo computacional muy alto, en las implementaciones reales generalmente se utilizan sistemas de coordenadas proyectivas que retrasan la división, como las **"Coordenadas [Jacobi](https://kenji.blog/es/p/jacobi/)anas ([Jacobi](https://kenji.blog/es/p/jacobi/)an Coordinates)"**.
+$$Q_A=d_AG,\qquad Q_B=d_BG$$
 
----
-
-## 5. Multiplicación escalar y el problema del logaritmo discreto en curvas elípticas (ECDLP)
-
-En la criptografía de curva elíptica, la operación con mayor costo computacional y que forma el núcleo de la seguridad es la **multiplicación escalar (Scalar Multiplication)**.
-
-### 5.1. ¿Qué es la multiplicación escalar?
-La operación de sumar un punto $P$ un número $k$ de veces se llama multiplicación escalar y se denota como $kP$.
-$$ kP = \underbrace{P + P + \dots + P}_{k\text{ veces}} $$
-
-Aquí, $k$ es un número entero muy grande (por ejemplo, un entero de 256 bits).
-
-### 5.2. Problema del logaritmo discreto en curvas elípticas (ECDLP)
-La seguridad de la criptografía de curva elíptica depende de la dificultad del siguiente problema.
-
-> **Problema del logaritmo discreto en curvas elípticas (Elliptic Curve Discrete Logarithm Problem: ECDLP)**
-> Dado un punto conocido $P$ (punto base) y el punto resultante $Q$, encontrar el escalar $k$ que satisfaga $Q = kP$.
-
-Calcular $Q$ a partir de $k$ y $P$ (dirección directa) es fácil (tiempo polinomial) utilizando el algoritmo descrito a continuación, pero calcular $k$ inversamente a partir de $P$ y $Q$ (dirección inversa) no tiene una solución eficiente aparte de una búsqueda exhaustiva (fuerza bruta), lo que lo hace virtualmente imposible (función unidireccional).
-En los protocolos criptográficos, **$k$ corresponde a la "clave privada" y $Q$ a la "clave pública"**.
-
-### 5.3. Algoritmo Double-and-Add (Doble y Suma)
-Cuando $k$ es un número enorme (por ejemplo: $2^{256}$), sumar ingenuamente $P$ un total de $k$ veces no terminaría ni siquiera si se agotara la vida del universo. Por lo tanto, para realizar la multiplicación escalar a alta velocidad, se utiliza el **método Double-and-Add (método binario)**.
-
-Esta es la versión de curva elíptica del método de "cuadratura repetida" para calcular potencias de enteros de manera rápida. Expresa el escalar $k$ en formato binario y lo procesa secuencialmente desde el bit más significativo.
-
-1. Inicializar el punto $R$ que mantiene el resultado con $\mathcal{O}$.
-2. Repetir lo siguiente desde el bit más significativo de $k$ hasta el menos significativo:
-   - Duplicar $R$ (Point Doubling: $R = 2R$)
-   - Si el bit actual es `1`, sumar $P$ a $R$ (Point Addition: $R = R + P$)
-
-Gracias a este algoritmo, la complejidad computacional se reduce drásticamente de $O(k)$ a $O(\log_2 k)$, permitiendo cálculos en un tiempo realista (cuestión de milisegundos).
-
----
-
-## 6. Intercambio de claves de curva elíptica Diffie-Hellman (ECDH)
-
-Aquí explicaremos el funcionamiento del **protocolo de intercambio de claves ECDH (Elliptic Curve Diffie-Hellman)**, que es el ejemplo de aplicación más representativo de ECC. ECDH es un mecanismo que permite a Alice y Bob generar y compartir de forma segura una clave secreta compartida (clave de sesión) sobre un canal de comunicación que podría ser espiado (es el núcleo del apretón de manos TLS).
-
-**[Parámetros preestablecidos (Parámetros de dominio)]**
-Ambas partes comparten de antemano la curva elíptica $E$ a utilizar, el número primo $p$ y el punto base $G$. (Por ejemplo, NIST P-256 o secp256k1)
+$$S=d_AQ_B=d_BQ_A=(d_Ad_B)G$$
 
 ```mermaid
 sequenceDiagram
-    participant Alice as "Alice"
-    participant Bob as "Bob"
-    
-    Note over Alice,Bob: "Parámetros públicos: Curva E, Punto base G, Primo p"
-    
-    Alice->>Alice: "Generar clave privada d_A (entero aleatorio)"
-    Alice->>Alice: "Calcular clave pública Q_A = d_A * G"
-    
-    Bob->>Bob: "Generar clave privada d_B (entero aleatorio)"
-    Bob->>Bob: "Calcular clave pública Q_B = d_B * G"
-    
-    Alice->>Bob: "Enviar clave pública Q_A (texto plano)"
-    Bob->>Alice: "Enviar clave pública Q_B (texto plano)"
-    
-    Alice->>Alice: "Calcular secreto compartido S = d_A * Q_B"
-    Bob->>Bob: "Calcular secreto compartido S = d_B * Q_A"
-    
-    Note over Alice,Bob: "S = d_A * (d_B * G) = d_B * (d_A * G) = (d_A * d_B) * G"
-    Note over Alice,Bob: "¡Los resultados de cálculo S de ambos coinciden perfectamente!"
+    participant A as Alice
+    participant B as Bob
+    A->>A: Muestrear d_A privado uniformemente de 1..n-1
+    B->>B: Muestrear d_B privado uniformemente de 1..n-1
+    A->>B: Q_A = d_A G
+    B->>A: Q_B = d_B G
+    A->>A: Validar y autenticar la clave del otro, después S = d_A Q_B
+    B->>B: Validar y autenticar la clave del otro, después S = d_B Q_A
+    Note over A,B: Derivar claves por finalidad con la codificación y KDF del esquema
 ```
 
-Un atacante (Eve) que intercepte la comunicación puede obtener $G$, $Q_A$ y $Q_B$ que fluyen por la red, pero debido a la dificultad del ECDLP, no puede deducir la clave privada $d_A$ de Alice a partir de $Q_A = d_A \cdot G$. Además, multiplicar $Q_A$ y $Q_B$ no produce la clave compartida $S$, por lo que el espía no puede calcular $S$.
+Calcular el valor compartido a partir de los puntos públicos es el problema computacional de Diffie–Hellman (CDH), cuya definición difiere de ECDLP. Resolver ECDLP permite calcular el valor compartido; aquí no se supone una equivalencia general en el sentido inverso.
 
----
+ECDH por sí solo no autentica a la otra parte ni evita que un atacante sustituya las claves públicas. Un protocolo real vincula las claves, el intercambio y las identidades, y aplica las comprobaciones exigidas de codificación, rango de coordenadas, pertenencia a la curva, infinito y subgrupo. No se debe usar directamente el punto compartido o su coordenada x como clave AES: se sigue la codificación, la vinculación al contexto y la derivación de claves, como HKDF, especificadas por el protocolo. El diagrama no es una negociación TLS completa.
 
-## 7. Dificultades en la implementación: Ataques de canal lateral y contramedidas
+## 7. Condiciones de una implementación de tiempo constante
 
-Incluso si un algoritmo criptográfico es teóricamente perfecto, pueden surgir vulnerabilidades en el proceso de implementarlo como programa. Esto se conoce como **"ataque de canal lateral (Side-Channel Attack)"**.
+Las bifurcaciones, accesos a memoria, casos excepcionales y tiempos aritméticos que dependen de secretos pueden filtrar información bajo un modelo de observación apropiado. El número de observaciones y la posibilidad de recuperar toda la clave dependen de la implementación y del ataque. No existe una garantía universal de que unos miles de mediciones revelen cada bit.
 
-### 7.1. Ataque de tiempo (Timing Attack)
-Revisemos el algoritmo Double-and-Add mencionado anteriormente.
+Un número igual de sumas por iteración no garantiza tiempo constante si esas sumas se bifurcan según valores secretos intermedios. Un intercambio condicional con máscaras es solo parte de la defensa: también importan la representación de enteros, el compilador y la CPU objetivo. RFC 7748 §5.1 explica que una secuencia idéntica de operaciones de cuerpo no impide por sí sola todos los canales laterales.
+
+`cpp_int` es un tipo entero de tamaño variable, y tanto `conditionalSwapDemo` como la suma de puntos siguiente contienen bifurcaciones. **Este código no es de tiempo constante y no debe manejar claves secretas en criptografía de producción.**
+
+## 8. Demostración matemática en C++17
+
+Se concatenan en orden los cinco bloques C++ siguientes en un archivo. Se requieren las cabeceras de Boost.Multiprecision. El programa solo utiliza parámetros fijos y valores de prueba públicos; no genera, almacena ni imprime claves secretas.
+
+### 8.1. Aritmética del cuerpo primo
+
+`modInverse` es específico del primo fijo $p$ utilizado aquí y rechaza el cero. La inversión de Fermat implementada mediante `powerMod` también es de tiempo variable.
 
 ```cpp
-// Pseudocódigo vulnerable de Double-and-Add
-Point R = Point::Infinity;
-for (int i = 255; i >= 0; i--) {
-    R = PointDoubling(R);         // Siempre se ejecuta
-    if (bit(k, i) == 1) {
-        R = PointAddition(R, P);  // ¡Solo se ejecuta cuando el bit es 1!
-    }
-}
-```
-
-Esta implementación tiene una falla fatal. Dado que la suma de puntos (Point Addition) se ejecuta cuando el bit es `1`, el **tiempo de cálculo será ligeramente mayor** que cuando el bit es `0`. Además, el comportamiento de predicción de bifurcaciones del procesador y la memoria caché también cambiará.
-Si un atacante observa estadísticamente esta diminuta diferencia en el tiempo de cálculo (o el consumo de energía) miles de veces, **podría recuperar completamente la secuencia de bits de la clave privada $k$ bit por bit**. Este es el ataque de tiempo.
-
-### 7.2. Implementación de tiempo constante (Constant-Time): Escalera de Montgomery (Montgomery Ladder)
-Para prevenir los ataques de tiempo, es necesario adoptar un algoritmo en el que **la secuencia de instrucciones ejecutadas y el tiempo de cálculo sean siempre constantes (Constant-Time), independientemente del valor de los bits de la clave privada**.
-
-El ejemplo representativo de esto es la **Escalera de Montgomery (Montgomery Ladder)**.
-
-```mermaid
-graph TD
-    Start["Inicialización: R0 = O, R1 = P"] --> LoopStart["Para cada bit i (desde el más significativo)"]
-    LoopStart --> Cond{"¿Cuál es el valor de k_i?"}
-    
-    Cond -->|"0"| Branch0["R1 = R0 + R1<br>R0 = 2 * R0"]
-    Cond -->|"1"| Branch1["R0 = R0 + R1<br>R1 = 2 * R1"]
-    
-    Branch0 --> LoopEnd["Siguiente bit"]
-    Branch1 --> LoopEnd
-    
-    LoopEnd --> LoopStart
-    LoopStart -.->|"Todos los bits completados"| End["Fin: R0 es el resultado (kP)"]
-```
-
-Lo hermoso de la Escalera de Montgomery es que, sin importar si el bit es `0` o `1`, **"siempre se ejecuta una suma de puntos (Point Addition) y una duplicación de puntos (Point Doubling)"**. Esto elimina por completo la dependencia de los datos en el tiempo de cálculo.
-
-Sin embargo, si la bifurcación misma (`if (k_i == 0)`) sigue existiendo, aún persiste el riesgo de que el tiempo de ejecución varíe debido a las optimizaciones del compilador o la predicción de saltos de la CPU. Por lo tanto, en una implementación real de Constant-Time, las bifurcaciones condicionales (instrucciones `if`) se eliminan y se utiliza un **intercambio condicional (Conditional Swap) empleando operaciones a nivel de bits**.
-
----
-
-## 8. Implementación de criptografía de curva elíptica en C++
-
-A partir de aquí, plasmaremos la teoría en código C++. Las bibliotecas criptográficas prácticas (como OpenSSL o libsodium) utilizan optimizaciones avanzadas en ensamblador o el sistema de coordenadas jacobianas, pero aquí, para profundizar en la comprensión matemática, mostraremos la estructura de una **implementación Constant-Time fácil de entender usando coordenadas afines**.
-
-Asumiremos el uso de `boost::multiprecision::cpp_int` para las operaciones con enteros gigantes.
-
-### 8.1. Aritmética modular y el inverso
-Primero, definiremos funciones de ayuda para operaciones en campos finitos. Implementaremos el cálculo del inverso modular utilizando el pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/).
-
-```cpp
+#include <cstdint>
 #include <iostream>
-#include <vector>
 #include <stdexcept>
+#include <utility>
 #include <boost/multiprecision/cpp_int.hpp>
 
-using namespace boost::multiprecision;
+using boost::multiprecision::cpp_int;
 
-// Ejemplo usando el número primo p y parámetros de secp256k1
+// Public secp256k1 parameters; this entire example is variable-time.
 const cpp_int p("0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F");
 const cpp_int a = 0;
 const cpp_int b = 7;
+const cpp_int n("0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141");
 
-// Operación modular que devuelve un residuo positivo
-cpp_int mod(cpp_int x, cpp_int m) {
+cpp_int mod(cpp_int x, const cpp_int& m) {
+    if (m <= 0) throw std::invalid_argument("Modulus must be positive");
     cpp_int r = x % m;
-    return r < 0 ? r + m : r;
+    if (r < 0) r += m;
+    return r;
 }
 
-// Exponenciación modular (x^y mod m)
-cpp_int powerMod(cpp_int base, cpp_int exp, cpp_int m) {
-    cpp_int res = 1;
+cpp_int powerMod(cpp_int base, cpp_int exp, const cpp_int& m) {
+    if (m <= 1 || exp < 0) throw std::invalid_argument("Invalid powerMod input");
+    cpp_int result = 1;
     base = mod(base, m);
     while (exp > 0) {
-        if (exp % 2 == 1) res = mod(res * base, m);
+        if (exp % 2 == 1) result = mod(result * base, m);
         base = mod(base * base, m);
         exp /= 2;
     }
-    return res;
+    return result;
 }
 
-// Inverso modular usando el pequeño teorema de Fermat
-cpp_int modInverse(cpp_int n, cpp_int m) {
-    // Asumiendo que m es primo: n^(m-2) ≡ n^(-1) mod m
-    return powerMod(n, m - 2, m);
+// Inversion in the fixed prime field F_p only; zero has no inverse.
+cpp_int modInverse(cpp_int value) {
+    value = mod(value, p);
+    if (value == 0) throw std::invalid_argument("Zero has no inverse");
+    return powerMod(value, p - 2, p);
 }
 ```
 
-### 8.2. Representación de puntos y operaciones de grupo (Suma y Duplicación)
-Implementamos la estructura `Point` que maneja el punto en el infinito con una bandera, y las fórmulas de suma.
+### 8.2. Puntos y suma
+
+Un punto finito debe tener coordenadas $0\le x,y<p$ y satisfacer la ecuación de la curva. El infinito se permite en la aritmética de grupo, pero debe rechazarse por separado como clave pública ECDH de la otra parte. El cofactor de secp256k1 es uno; estas comprobaciones no sustituyen la validación de subgrupo necesaria para curvas arbitrarias.
 
 ```cpp
 struct Point {
-    cpp_int x;
-    cpp_int y;
-    bool isInfinity;
+    cpp_int x = 0;
+    cpp_int y = 0;
+    bool isInfinity = true;
 
-    // Crear el punto en el infinito
-    Point() : x(0), y(0), isInfinity(true) {}
-    
-    // Crear un punto normal
-    Point(cpp_int x, cpp_int y) : x(x), y(y), isInfinity(false) {}
+    Point() = default;
+    Point(cpp_int xValue, cpp_int yValue)
+        : x(std::move(xValue)), y(std::move(yValue)), isInfinity(false) {}
 };
 
-// Suma de puntos en la curva elíptica (R = P + Q)
+bool isOnCurve(const Point& point) {
+    if (point.isInfinity) return true;
+    if (point.x < 0 || point.x >= p || point.y < 0 || point.y >= p) return false;
+    return mod(point.y * point.y - point.x * point.x * point.x - a * point.x - b, p) == 0;
+}
+
 Point pointAdd(const Point& P, const Point& Q) {
+    if (!isOnCurve(P) || !isOnCurve(Q)) throw std::invalid_argument("Invalid curve point");
     if (P.isInfinity) return Q;
     if (Q.isInfinity) return P;
+    if (P.x == Q.x && mod(P.y + Q.y, p) == 0) return Point();
 
-    if (P.x == Q.x && mod(P.y + Q.y, p) == 0) {
-        return Point(); // P + (-P) = punto en el infinito
-    }
-
-    cpp_int lambda;
+    cpp_int slope;
     if (P.x == Q.x && P.y == Q.y) {
-        // Point Doubling (Caso P = Q)
-        // lambda = (3x^2 + a) / 2y
-        cpp_int num = mod(3 * P.x * P.x + a, p);
-        cpp_int den = modInverse(mod(2 * P.y, p), p);
-        lambda = mod(num * den, p);
+        slope = mod((3 * P.x * P.x + a) * modInverse(2 * P.y), p);
     } else {
-        // Point Addition (Caso P != Q)
-        // lambda = (y2 - y1) / (x2 - x1)
-        cpp_int num = mod(Q.y - P.y, p);
-        cpp_int den = modInverse(mod(Q.x - P.x, p), p);
-        lambda = mod(num * den, p);
+        slope = mod((Q.y - P.y) * modInverse(Q.x - P.x), p);
     }
-
-    cpp_int x3 = mod(lambda * lambda - P.x - Q.x, p);
-    cpp_int y3 = mod(lambda * (P.x - x3) - P.y, p);
-
+    cpp_int x3 = mod(slope * slope - P.x - Q.x, p);
+    cpp_int y3 = mod(slope * (P.x - x3) - P.y, p);
     return Point(x3, y3);
 }
 ```
 
-### 8.3. Implementación de intercambio condicional en tiempo constante (Constant-Time Conditional Swap)
-Al intercambiar el contenido de variables basado en el valor de un bit de la clave privada, realizamos el intercambio únicamente mediante operaciones a nivel de bits (máscaras) sin utilizar sentencias `if`. Esto asegura que la ruta de ejecución sea completamente constante.
+### 8.3. Simulación de un intercambio
 
-> [!TIP]
-> En implementaciones reales, las clases de enteros de precisión múltiple con asignación dinámica como `cpp_int` no son adecuadas para procesamientos de tiempo constante, ya que se filtra información de temporización mediante la asignación de memoria o variaciones en el tamaño de los arreglos. Las bibliotecas prácticas los representan con una longitud fija (por ejemplo, arreglos de 4 elementos uint64_t) e implementan el enmascaramiento a nivel de bits. El siguiente es un ejemplo conceptual.
+Esta función contiene una bifurcación, de ahí Demo en el nombre.
 
 ```cpp
-// Constant-Time Swap conceptual (asumiendo enteros de longitud fija)
-// Si el bit es 1, intercambia P1 y P2; si es 0, no los intercambia
-void cswap(Point& P1, Point& P2, uint8_t bit) {
-    // bit es 0 o 1. La máscara es todo 1s (0xFF..) si bit=1, y todo 0s si es 0.
-    // (Aquí asumimos que cada palabra de la clase BigInt de longitud fija es w para la explicación)
-    /*
-    uint64_t mask = 0 - (uint64_t)bit;
-    for (int i = 0; i < NUM_WORDS; i++) {
-        uint64_t dummy = mask & (P1.x.words[i] ^ P2.x.words[i]);
-        P1.x.words[i] ^= dummy;
-        P2.x.words[i] ^= dummy;
-        // Procesar de igual manera la coordenada y, así como la bandera isInfinity
-    }
-    */
-    
-    // * Un intercambio perfecto de tiempo constante en boost::multiprecision es difícil,
-    // pero aquí lo limitaremos a simularlo mediante ramificación para comprender la lógica.
-    if (bit == 1) {
-        std::swap(P1, P2);
-    }
+// A branching simulation of conditional swap, NOT constant-time.
+void conditionalSwapDemo(Point& left, Point& right, std::uint8_t bit) {
+    if (bit > 1) throw std::invalid_argument("Bit must be zero or one");
+    if (bit == 1) std::swap(left, right);
 }
 ```
 
-### 8.4. Multiplicación escalar mediante la Escalera de Montgomery
-Combinamos `pointAdd` y `cswap` previamente descritos para implementar una multiplicación escalar segura.
+### 8.4. Una escalera con comprobación de rango
+
+La demostración admite $0\le k<2^{256}$ y rechaza los valores fuera de ese rango. Este intervalo difiere del rango de claves privadas $1\le d<n$. Nunca trunca silenciosamente los bits superiores.
 
 ```cpp
-// Multiplicación escalar k * P (Método de Escalera de Montgomery)
-Point scalarMultiply(const Point& P, cpp_int k) {
-    Point R0 = Point(); // Punto en el infinito
+// A functional ladder demonstration for 0 <= k < 2^256.
+// Zero is allowed for group arithmetic, but is not a valid private key.
+Point scalarMultiply(const Point& P, const cpp_int& k) {
+    if (k < 0 || k >= (cpp_int(1) << 256)) throw std::invalid_argument("Scalar outside demo range");
+    if (!isOnCurve(P)) throw std::invalid_argument("Invalid curve point");
+    Point R0;
     Point R1 = P;
-
-    // Obtener la longitud de bits de k (256 bits para secp256k1)
-    int numBits = 256; 
-    
-    for (int i = numBits - 1; i >= 0; i--) {
-        // Obtener el valor del i-ésimo bit (0 o 1)
-        uint8_t bit = static_cast<uint8_t>(bit_test(k, i) ? 1 : 0);
-
-        // Si bit == 1, intercambiar R0 y R1
-        cswap(R0, R1, bit);
-
-        // Siempre se ejecuta la misma operación (Point Addition y Point Doubling)
+    for (int i = 255; i >= 0; --i) {
+        std::uint8_t bit = boost::multiprecision::bit_test(k, i) ? 1 : 0;
+        conditionalSwapDemo(R0, R1, bit);
         R1 = pointAdd(R0, R1);
         R0 = pointAdd(R0, R0);
-
-        // Si bit == 1, volver a intercambiar para restaurar el estado original
-        cswap(R0, R1, bit);
+        conditionalSwapDemo(R0, R1, bit);
     }
-
     return R0;
 }
 ```
 
-Con esta lógica de implementación, sin importar si cada bit del escalar $k$ es `0` o `1`, las operaciones ejecutadas dentro de la iteración de cada bucle (`cswap` $\to$ `pointAdd` $\to$ `pointAdd` $\to$ `cswap`) seguirán un flujo exactamente igual, previniendo fuertemente la fuga de información confidencial a través de variaciones en la temporización o los patrones de acceso a la caché.
+### 8.5. Comprobación con valores públicos
 
----
+Se usa el generador secp256k1 de SEC 2 para comprobar $2G$ y $nG=\mathcal O$. Esta autocomprobación no demuestra por sí sola que una implementación criptográfica sea segura.
+
+```cpp
+int main() {
+    const Point G(
+        cpp_int("0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"),
+        cpp_int("0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8")
+    );
+    const Point doubled = scalarMultiply(G, 2);
+    if (doubled.isInfinity || !isOnCurve(doubled) || !scalarMultiply(G, n).isInfinity) {
+        throw std::runtime_error("Arithmetic self-check failed");
+    }
+    std::cout << "2G.x = " << std::hex << doubled.x << "\n";
+    std::cout << "2G.y = " << std::hex << doubled.y << "\n";
+    std::cout << "nG = infinity\n";
+}
+```
+
+Por ejemplo, se guardan los cinco bloques como `ecc_demo.cpp` y se ejecutan en un entorno con la ruta de inclusión de Boost configurada:
+
+```sh
+g++ -std=c++17 -O2 -Wall -Wextra ecc_demo.cpp -o ecc_demo
+./ecc_demo
+```
 
 ## 9. Conclusión
 
-A primera vista, la criptografía de curva elíptica (ECC) puede parecer un misterio y hacernos preguntar, "¿Cómo pueden las operaciones geométricas como trazar una línea recta y reflejar intersecciones convertirse en criptografía?". Sin embargo, al mapearlo al mundo discreto de los campos finitos, es el producto de una fusión milagrosa entre las matemáticas y la criptografía que nos permite construir espléndidas funciones unidireccionales (problema del logaritmo discreto).
+Hay que distinguir el cuerpo, la curva, el subgrupo y el esquema criptográfico. Importan los casos excepcionales de suma, los rangos de escalares, la validación de claves públicas, la autenticación de la otra parte y la derivación de claves. La corrección aritmética de la escalera y su implementación en tiempo constante son comprobaciones distintas.
 
-En este artículo explicamos los siguientes puntos clave:
+Esta demostración sirve para seguir la aritmética de grupo. El acuerdo de claves y las firmas reales requieren bibliotecas mantenidas y validadas que admitan el protocolo y la curva previstos.
 
-1. **Ventaja sobre [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)**: Ofrece una seguridad robusta con longitudes de clave muy cortas, ideal para la era actual móvil e IoT.
-2. **Fundamentos de teoría de grupos y campos finitos**: La estructura matemática que sirve como base para ECC.
-3. **Fórmulas de suma y duplicación**: Métodos de implementación de operaciones de grupo algebraicas usando la ecuación de Weierstrass.
-4. **La amenaza de los ataques de canal lateral**: Cómo las bifurcaciones condicionales que dependen de los bits de la clave privada crean vulnerabilidades fatales.
-5. **Implementación de tiempo constante (Constant-Time)**: Técnicas de codificación en C++ usando la Escalera de Montgomery y el Intercambio Condicional para igualar el comportamiento a nivel de hardware y prevenir ataques.
+### Referencias
 
-Crear por tu cuenta una biblioteca criptográfica para entornos de producción generalmente no se recomienda ("Don't roll your own crypto") debido a los riesgos de seguridad extremadamente altos. Sin embargo, comprender profundamente los algoritmos subyacentes y el contexto matemático puede ser una herramienta invaluable y poderosa para los ingenieros que diseñan y operan sistemas más seguros y eficientes.
-
-En el próximo artículo, nos gustaría profundizar más en el mecanismo de **ECDSA (Elliptic Curve [Digital Signature](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) Algorithm)**, un algoritmo de firma digital que utiliza esta curva elíptica, y en las **firmas de Schnorr** adoptadas en [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/).
-
+- [RFC 6090: Fundamental Elliptic Curve Cryptography Algorithms](https://www.rfc-editor.org/rfc/rfc6090.html) (§§2–4, 10)
+- [RFC 7748: Elliptic Curves for Security](https://www.rfc-editor.org/rfc/rfc7748.html) (§§5–5.1)
+- [NIST SP 800-57 Part 1 Rev.5](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf) (§5.6.1.1, Table 2)
+- [Standards for Efficient Cryptography 2 (SEC 2), version 2.0](https://www.secg.org/sec2-v2.pdf) (§2.4.1, secp256k1)
+- [RFC 5869: HKDF](https://www.rfc-editor.org/rfc/rfc5869.html) (§§1, 3.2–3.3)
+- [Boost.Multiprecision: cpp_int](https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html)
 
 
