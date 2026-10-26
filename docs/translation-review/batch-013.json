@@ -357,6 +357,57 @@
         "https://www.rfc-editor.org/rfc/rfc8446.html"
       ],
       "validation": "docs/translation-review/batch-013-fr-validation.json"
+    },
+    "post/modern-cryptography-public-key-hash-signature/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/modern-cryptography-public-key-hash-signature/index.md",
+      "sourceHash": "6ba14931d98075ddb9e7231683eccefe7ba568eceb530fd04faeacada6d9d6f7",
+      "translationHash": "27b787662cdebcda72eec24b1a49be93f1a8774d93e8d7df20280c3cff4945be",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original German metadata and body, revised against the fully corrected Japanese source, then independently reread the complete German revision. Compared all six sections and three diagrams/twenty edges: symmetric versus public-key operations and authenticated keys, RSA key/proof/scheme conditions, ECC field/subgroup/scalar requirements, hash resistance and SHA-2/SHA-3 construction, signature verification and identity limits, PKI path/service identity and TLS modes. Structural checks supplement, rather than replace, full semantic comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared öffentlicher/privater Schlüssel, symmetrische Verschlüsselung, Schlüsselvereinbarung, Urbildresistenz/zweite Urbilder/Kollisionsresistenz, teilerfremd/Inversenbedingung/chinesischer Restsatz, Primkörper/Untergruppe/Primzahlordnung/Skalar, Signaturerzeugung/Signaturprüfung versus Verschlüsselung/Entschlüsselung, Vertrauensanker and Sperrung. Corrected impossible-versus-computationally-difficult hash wording and awkward discrete-logarithm phrasing. Preserved Bit/Byte, all proof premises, scheme distinctions and protocol conditions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All ten display formulas match exactly, including phi and lambda conditions, bounded inverse d, RSA primitive range, coprime Euler step, complete per-prime/CRT argument, OAEP k-2*hLen-2=190 byte bound, prime-field p>3 nonzero discriminant, subgroup scalar range and chaining formula. Checked all 3,233 toy RSA representatives and both per-prime residues, the explicit non-coprime Euler counterexample and lambda inverse. Checked an order-19 toy elliptic curve with eighteen distinct nonidentity public points and 19G=infinity. Finite fixtures are not a general security proof or recommended curve."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed all three extracted Python blocks independently per language with Python 3.12.14 and cryptography 50.0.2; Computation ASTs match after normalizing only literal printed labels; all other expressions and constants are retained. Each version passed five OAEP payload roundtrips including empty/UTF-8/190 bytes and four rejection cases (191 bytes, wrong label, altered ciphertext, wrong private key). Two displayed hashes matched hashlib; fourteen streaming hash cases and two fixed abc digests passed. PSS passed three valid messages and six rejection cases covering altered document/signature, wrong key, truncated signature, wrong scheme and salt length. Dedicated signing keys differ from encryption keys. This is offline sample verification, not a live security audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched nine primary-reference URLs and source-note read scopes. Read matching-language Euclidean/ECC target metadata and introductions and checked slug/file mapping; those target articles are not counted as reviewed. Kept image, slug and publication timestamp, added actual lastmod, and checked generated matching-language links, corrected HTML markers and three Mermaid blocks. Fourteen-bundle Hugo, multilingual 973 pages and HTTPS 1,804 HTML/41 XML passed. Publication pending. Read the unrelated React target title/introduction before removing the homonym link; that target is not reviewed."
+        }
+      },
+      "summary": "Full German cryptography review with ten formulas, three independent Python examples, three diagrams and corrected algorithm, proof and trust terminology.",
+      "languageSpecificFindings": "Replaced Einwegfunktion as the property heading with Urbildresistenz and removed the unqualified mathematical-impossibility claim. Removed the state-word Zustand link to an unrelated React state-management article after reading its title/introduction. Restored ten display formulas, Euler coprimality and all-message CRT proof, OAEP byte bound and subgroup scalar conditions. Made the RSA-PSS example self-contained with a dedicated signing key and localized validity labels. Matched certificate-path/name checking, key trust and optional TLS certificates throughout the full body and diagrams.",
+      "limitations": [
+        "AI technical/editorial review; no native-speaker or human confirmation.",
+        "No formal cryptographic proof, side-channel analysis, live TLS/CA or full X.509 conformance test.",
+        "Mermaid source and HTML inspected, not visual rendering.",
+        "Four other translations of this article remain unreviewed and retain their previous content.",
+        "Publication verification pending."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc8017.html",
+        "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+        "https://www.rfc-editor.org/rfc/rfc6090.html",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+        "https://csrc.nist.gov/pubs/fips/186-5/final",
+        "https://www.rfc-editor.org/rfc/rfc5280.html",
+        "https://www.rfc-editor.org/rfc/rfc9525.html",
+        "https://www.rfc-editor.org/rfc/rfc8446.html"
+      ],
+      "validation": "docs/translation-review/batch-013-de-validation.json"
     }
   },
   "stageAssembly": {
@@ -432,6 +483,21 @@
       "fr"
     ],
     "otherTranslationsUnreviewed": 5,
+    "publicationPending": true
+  },
+  "germanStageAssembly": {
+    "checkedAt": "2026-10-27T07:40:05.392065+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko",
+      "pt",
+      "fr",
+      "de"
+    ],
+    "otherTranslationsUnreviewed": 4,
     "publicationPending": true
   }
 }
