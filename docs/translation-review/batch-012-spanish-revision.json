@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T01:13:45.851732+09:00",
+  "reviewer": "Codex (AI)",
+  "language": "es",
+  "path": "post/oauth2-oidc-authentication-authorization-difference/index.es.md",
+  "originalHash": "7aaa6e66b9e5888e3709817c900c157511dd95c11f9edf4df8d582579ff77c45",
+  "originalMetadataAndFullBodyRead": true,
+  "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+  "status": "Revision written; independent full rereading and validation pending.",
+  "writtenHash": "a53c3a3f4b7e96b915c5d9264008aff263cbe14fdd348a985c69eeee25c0916e",
+  "finalVerification": {
+    "checkedAt": "2026-10-27T01:15:21.014578+09:00",
+    "status": "Complete rereading, code/math/link/preview checks passed; dated AI ledger record added. Publication pending.",
+    "hash": "a53c3a3f4b7e96b915c5d9264008aff263cbe14fdd348a985c69eeee25c0916e"
+  }
+}

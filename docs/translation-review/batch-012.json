@@ -144,6 +144,54 @@
         "https://pyjwt.readthedocs.io/en/stable/api.html"
       ],
       "validation": "docs/translation-review/batch-012-validation.json"
+    },
+    "post/oauth2-oidc-authentication-authorization-difference/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/oauth2-oidc-authentication-authorization-difference/index.md",
+      "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+      "translationHash": "a53c3a3f4b7e96b915c5d9264008aff263cbe14fdd348a985c69eeee25c0916e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Spanish article and complete corrected Japanese source, revised all metadata and body, and independently reread the complete Spanish revision. Compared authentication versus authorization, all four OAuth roles and grants, public/confidential clients, normative grant conditions, transaction-specific PKCE, browser redirects and code exchange, OIDC scope and token purposes, claims and key trust, state/nonce/CSRF, expiry and refresh conditions. Compared all ten sequence messages, actors and notes. Structural/code checks supplement this full semantic review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished autenticación/autorización, clientes públicos/confidenciales, declaraciones rather than the misleading generic reclamos, emisor/destinatario, firma/cifrado, codificación/descifrado, caducidad/revocación and tokens de acceso/ID/actualización. Restored literal code_challenge and code_verifier identifiers in equations instead of translated pseudo-parameter names. Replaced Inmersión profunda and exhaustive-completeness metadata with descriptions matching the article. Defined sender constraints as cryptographic binding to the client presenting the token, distinct from the JWT issuer. Matched MUST NOT versus conditional SHOULD NOT, issuer-scoped subject identity, required claims and nonce, callback transaction bindings, and the restricted Python configuration."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all three formulas and their premises. Restored actual protocol identifiers in PKCE, explicit ASCII input and unpadded Base64url, exact JWS signing input with algorithm-internal hashing, and expiry reformulation only under exp=iat+lifetime. First two formulas exactly match the source, the third differs only in translated conditional text. The extracted JavaScript passed the RFC vector; identical JWS and expiry expressions use the independent source cryptography and boundary/counterexample checks."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed both extracted JavaScript and Python blocks per language using Node v22.14.0, PyJWT 2.15.1 and cryptography. JS checks covered 32-byte encoding and upper-bit retention, the RFC vector, valid lengths 43/128, twelve invalid inputs including trailing newlines, and returned S256 parameter binding. Each Python block passed 38 cases covering required claims, nonce, strict audience, azp, claim types, signature, algorithm none, issuer, expiry, nbf and transaction nonce arguments. AST and exact JavaScript equality checked. These are offline component fixtures, not a complete login or provider-conformance test."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared all six primary-reference URLs and translated descriptions with the source and documented reading scope. Verified matching Spanish cryptography and XSS/CSRF relref targets, eyecatch, original publication timestamp and lastmod. Corrected HTML markers and internal links passed. Fourteen-bundle Hugo, multilingual 973 pages and HTTPS 1,804 HTML/41 XML passed. Unreviewed preview dependency not counted as reviewed. Publication pending."
+        }
+      },
+      "summary": "Full Spanish review of OAuth/OIDC roles, grant recommendations, PKCE generation, token-purpose and validation requirements, formulas and transaction security conditions.",
+      "languageSpecificFindings": "Distinguished autenticación/autorización, clientes públicos/confidenciales, declaraciones rather than the misleading generic reclamos, emisor/destinatario, firma/cifrado, codificación/descifrado, caducidad/revocación and tokens de acceso/ID/actualización. Restored literal code_challenge and code_verifier identifiers in equations instead of translated pseudo-parameter names. Replaced Inmersión profunda and exhaustive-completeness metadata with descriptions matching the article. Defined sender constraints as cryptographic binding to the client presenting the token, distinct from the JWT issuer. Matched MUST NOT versus conditional SHOULD NOT, issuer-scoped subject identity, required claims and nonce, callback transaction bindings, and the restricted Python configuration.",
+      "limitations": [
+        "AI technical and editorial review, not a native-speaker or human confirmation.",
+        "No live OP, network JWKS fetch, browser login, session-security audit or penetration test.",
+        "Mermaid source and HTML checked; visual diagram rendering was not inspected.",
+        "Eight other OAuth/OIDC translations remain unreviewed and retain old content.",
+        "Publication verification pending."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://www.rfc-editor.org/rfc/rfc7636.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://www.rfc-editor.org/rfc/rfc7515.html",
+        "https://pyjwt.readthedocs.io/en/stable/api.html"
+      ],
+      "validation": "docs/translation-review/batch-012-validation.json"
     }
   }
 }
