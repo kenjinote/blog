@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "startedAt": "2026-10-27T08:44:29.143528+09:00",
+  "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.hi.md",
+  "originalHash": "405dc74dbaf6491e09009379dfda653cd2f23bf27eab47154a5d3c2e3cea42ca",
+  "fullOriginalBodyAndMetadataRead": true,
+  "readingScope": "First long output was truncated in the middle; subsequently read the missing sections4.2–7.1 in bounded ranges before editing.",
+  "reviewRecorded": true,
+  "findings": [
+    "Minute timing difference mistranslated as मिनट के अंतर (minutes), singular points as grammatical एकवचन, constant-time as continuous निरंतर-समय.",
+    "Inherited constant-time promises contradict branching cpp_int implementation; inverse/scalar/point checks absent.",
+    "Missing characteristic/discriminant/affine exceptions and subgroup ranges; ECDLP and speed overstated; ECDH authentication/validation/KDF omitted.",
+    "Common secret/session key wording insufficiently distinguishes derived keys and shared values; Crypto/Abelian/Euclide/Jacobian fragments link to unrelated/biographical targets."
+  ],
+  "finalHash": "1c7611f5ff1273cae667a6f68a9d43ebe0149db533bff6614aad2e6cae93bc53",
+  "fullCorrectedBodyAndMetadataReread": true,
+  "validation": "docs/translation-review/batch-014-hi-validation.json",
+  "status": "Full review recorded; publication pending."
+}

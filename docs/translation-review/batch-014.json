@@ -585,6 +585,71 @@
         }
       ],
       "validation": "docs/translation-review/batch-014-id-validation.json"
+    },
+    "post/楕円曲線暗号の数学的基礎とcppでの実装/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "translationHash": "1c7611f5ff1273cae667a6f68a9d43ebe0149db533bff6614aad2e6cae93bc53",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Hindi metadata/body, including bounded rereads of the middle omitted by the first truncated output. Revised against the corrected Japanese source, then independently reread all corrected prose/metadata in two consecutive ranges and compared the common implementation. Compared all nine sections, five-row table, three diagrams/fifteen edges, eleven display formulas and five C++ blocks. Retained field/subgroup/scalar, affine exceptions, ECDLP/CDH, ECDH validation/authentication/KDF and variable-time teaching premises. Structural checks supplement semantic review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished परिमित/अभाज्य क्षेत्र, उपसमूह/कोटि with order meaning, जनक/आधार बिंदु, अदिश गुणन, तत्समक/प्रतिलोम and अनंत बिंदु. Replaced grammatical एकवचन for singular with explicit singularity/nonsingularity gloss; added denominator gloss to हर. Distinguished निजी/सार्वजनिक कुंजी from साझा मान, कुंजी सहमति from एन्क्रिप्शन/हस्ताक्षर, स्थिर-समय from परिवर्ती-समय, and removed continuous-time निरंतर ambiguity. Corrected मिनट के अंतर, where minute had been mistranslated as minutes rather than tiny differences."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All eleven display formulas match exactly; inline premises and table values checked against scoped primary references. NIST Table2 ranges and historical/quantum caveats checked as parsed text. secp256k1 p,a,b,G,n,h checked in SEC2§2.4.1. Ran thirteen scalar differential cases including zero, n±1, n, high-bit and maximum accepted values against cryptography50.0.2; a public toy curve p17,a2,b0 exercised all400 ordered additions against independent Python,8000 associativity triples,820 ladder/repeated-addition cases and all three y=0 doubling points. These finite checks do not prove general security or constant-time behavior."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Extracted this version's five C++ blocks, confirmed exact equality with the reviewed Japanese code, compiled and ran the complete program and additional harness using g++13.3.0/Boost1.83. Passed thirteen scalar differential cases against cryptography50.0.2 and thirteen rejection cases, plus modular/inverse/infinity/inverse-point/swap checks. Existing400-pair/8000-triple/820-scalar toy-curve evidence applies to the identical core and was not redundantly re-executed for this language. Not a constant-time or production implementation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six primary URLs and scoped notes; retained Hindi modern-cryptography link to an already-reviewed target. Removed word-fragment/biography and wrong-language links and duplicate body heading. Preserved slug, publication timestamp and image; added actual lastmod. Confirmed generated markers/links/three Mermaid blocks and all decoded TeX expressions. Fifteen-bundle minified Hugo, multilingual1050pages and HTTPS1945HTML/41XML passed; publication pending. No dependency article added to the review count."
+        }
+      },
+      "summary": "Full Hindi ECC review with corrected mathematical/time terminology, eleven formulas, three diagrams and five compiled educational C++ blocks.",
+      "languageSpecificFindings": "Corrected minute-versus-minutes, singularity-versus-grammatical-singular, continuous-versus-constant-time and group-completeness wording. Used English glosses where they clarify technical mathematics, distinguished field size/subgroup order/scalar and shared-value/key-derivation roles, removed fragmented links and replaced unsupported timing/security claims with actual variable-time behavior. Preserved literal code and mathematical identifiers.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No browser visual/KaTeX/Mermaid audit, side-channel timing/assembly test, live ECDH/TLS audit or production cryptographic implementation.",
+        "Publication verification remains pending.",
+        "2 other ECC translations remain unreviewed; no review dates added to them."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7748.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.secg.org/sec2-v2.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc5869.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        }
+      ],
+      "validation": "docs/translation-review/batch-014-hi-validation.json"
     }
   },
   "englishStageAssembly": {
@@ -681,6 +746,23 @@
       "id"
     ],
     "otherTranslationsUnreviewed": 3,
+    "publicationPending": true
+  },
+  "hindiStageAssembly": {
+    "checkedAt": "2026-10-27T08:45:54.487355+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko",
+      "pt",
+      "fr",
+      "de",
+      "id",
+      "hi"
+    ],
+    "otherTranslationsUnreviewed": 2,
     "publicationPending": true
   }
 }
