@@ -480,6 +480,102 @@
         "https://pyjwt.readthedocs.io/en/stable/api.html"
       ],
       "validation": "docs/translation-review/batch-012-validation.json"
+    },
+    "post/oauth2-oidc-authentication-authorization-difference/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/oauth2-oidc-authentication-authorization-difference/index.md",
+      "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+      "translationHash": "5a9333227aeb0476130577a767bfea41e5c93f4931948f0a584a334e8f97dd11",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Russian metadata/body and complete corrected Japanese source, revised all metadata and body, then independently reread the entire revision in two consecutive segments. Compared authentication/authorization, four OAuth roles and grants, public/confidential clients, normative grant conditions, transaction-specific PKCE, browser redirects and code exchange, OIDC scope/token purposes, required claims and key trust, state/nonce/CSRF, expiry and optional refresh lifecycle. Matched all ten sequence messages, actors and notes. Structural and execution checks supplement full semantic reading."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished аутентификация/авторизация, подпись/шифрование/расшифровка, утверждения, издатель/получатель, истечение срока/отзыв, публичные/конфиденциальные клиенты and токены доступа/ID/обновления. Removed pseudo-authentication, always-three-parts JWT, encrypted-signature/public-key-decryption and decode-as-login descriptions. Preserved the ROPC prohibition versus conditional implicit recommendation, issuer-local sub, mandatory nonce and claim presence, trusted key acquisition, transaction bindings and restricted Python profile. Used sender binding to the client presenting the token, not the issuer. Retained all scopes and conditions in full prose and the ten sequence messages."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all three complete formulas and surrounding premises: S256 ASCII verifier input and unpadded Base64url, JWS ASCII signing input with algorithm-internal hashing, and expiry reformulation only when exp=iat+lifetime. First two exactly match the source; third differs only in translated conditional text. Extracted JavaScript passed the RFC vector; identical JWS and expiry expressions use independent source cryptography and boundary/counterexample checks."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed both extracted JavaScript and Python blocks per language using Node v22.14.0, PyJWT 2.15.1 and cryptography. JS checks covered 32-byte encoding and upper-bit retention, the RFC vector, valid lengths 43/128, twelve invalid inputs including trailing newlines, and returned S256 parameter binding. Each Python block passed 38 cases covering required claims, nonce, strict audience, azp, claim types, signature, algorithm none, issuer, expiry, nbf and transaction nonce arguments. AST and exact JavaScript equality checked. These are offline component fixtures, not a complete login or provider-conformance test."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared six primary-reference URLs and Russian descriptions with the source and documented reading scope. Verified matching-language cryptography and XSS/CSRF relref targets, eyecatch, original publication timestamp and lastmod. Corrected HTML markers and internal links passed. Final fourteen-bundle Hugo, multilingual 973 pages and HTTPS 1,804 HTML/41 XML passed. The unreviewed dependency is not counted as reviewed. Publication pending."
+        }
+      },
+      "summary": "Full Russian review of OAuth/OIDC roles, normative grant guidance, PKCE generation, ID-token claim/nonce validation, formulas and transaction security conditions.",
+      "languageSpecificFindings": "Distinguished аутентификация/авторизация, подпись/шифрование/расшифровка, утверждения, издатель/получатель, истечение срока/отзыв, публичные/конфиденциальные клиенты and токены доступа/ID/обновления. Removed pseudo-authentication, always-three-parts JWT, encrypted-signature/public-key-decryption and decode-as-login descriptions. Preserved the ROPC prohibition versus conditional implicit recommendation, issuer-local sub, mandatory nonce and claim presence, trusted key acquisition, transaction bindings and restricted Python profile. Used sender binding to the client presenting the token, not the issuer. Retained all scopes and conditions in full prose and the ten sequence messages.",
+      "limitations": [
+        "AI technical and editorial review, not a native-speaker or human confirmation.",
+        "No live OP, network JWKS fetch, browser login, session-security audit or penetration test.",
+        "Mermaid source and HTML checked; visual diagram rendering was not inspected.",
+        "All twelve OAuth/OIDC translations and the Japanese source were reviewed; publication verification remains pending.",
+        "Publication verification pending."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://www.rfc-editor.org/rfc/rfc7636.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://www.rfc-editor.org/rfc/rfc7515.html",
+        "https://pyjwt.readthedocs.io/en/stable/api.html"
+      ],
+      "validation": "docs/translation-review/batch-012-validation.json"
+    },
+    "post/oauth2-oidc-authentication-authorization-difference/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/oauth2-oidc-authentication-authorization-difference/index.md",
+      "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+      "translationHash": "468a01df1250417e9f4a7377b8e0af112b57dd7cac13425265df819c63cb673c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Arabic metadata/body and complete corrected Japanese source, revised all metadata and body, then independently reread the entire revision in two consecutive segments. Compared authentication/authorization, four OAuth roles and grants, public/confidential clients, normative grant conditions, transaction-specific PKCE, browser redirects and code exchange, OIDC scope/token purposes, required claims and key trust, state/nonce/CSRF, expiry and optional refresh lifecycle. Matched all ten sequence messages, actors and notes. Structural and execution checks supplement full semantic reading."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished المصادقة/التفويض/التحقق, التوقيع/التشفير/فك الترميز, المطالبات, المصدِر/المستلم, انتهاء الصلاحية/الإبطال, العملاء السريون/العامون and رموز الوصول/الهوية/التحديث. Corrected Base64url encoding mistranslated as encryption, translated pseudo-identifiers in formulas, generic public-key decryption and decoding-as-login statements. Used موقَّع to disambiguate signed from a website. Removed generic API links to an LLM-provider comparison after locating its different bundle path and inspecting its local title/introduction; that target was not reviewed. Preserved literal protocol identifiers, distinct MUST NOT/conditional SHOULD NOT, issuer-local sub, nonce/claims, transaction bindings and the narrow Python scope. Explained sender constraints as cryptographic binding to the presenting client."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all three complete formulas and surrounding premises: S256 ASCII verifier input and unpadded Base64url, JWS ASCII signing input with algorithm-internal hashing, and expiry reformulation only when exp=iat+lifetime. First two exactly match the source; third differs only in translated conditional text. Extracted JavaScript passed the RFC vector; identical JWS and expiry expressions use independent source cryptography and boundary/counterexample checks."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed both extracted JavaScript and Python blocks per language using Node v22.14.0, PyJWT 2.15.1 and cryptography. JS checks covered 32-byte encoding and upper-bit retention, the RFC vector, valid lengths 43/128, twelve invalid inputs including trailing newlines, and returned S256 parameter binding. Each Python block passed 38 cases covering required claims, nonce, strict audience, azp, claim types, signature, algorithm none, issuer, expiry, nbf and transaction nonce arguments. AST and exact JavaScript equality checked. These are offline component fixtures, not a complete login or provider-conformance test."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared six primary-reference URLs and Arabic descriptions with the source and documented reading scope. Verified matching-language cryptography and XSS/CSRF relref targets, eyecatch, original publication timestamp and lastmod. Corrected HTML markers and internal links passed. Final fourteen-bundle Hugo, multilingual 973 pages and HTTPS 1,804 HTML/41 XML passed. The unreviewed dependency is not counted as reviewed. Publication pending."
+        }
+      },
+      "summary": "Full Arabic review of OAuth/OIDC roles, normative grant guidance, PKCE generation, ID-token claim/nonce validation, formulas and transaction security conditions.",
+      "languageSpecificFindings": "Distinguished المصادقة/التفويض/التحقق, التوقيع/التشفير/فك الترميز, المطالبات, المصدِر/المستلم, انتهاء الصلاحية/الإبطال, العملاء السريون/العامون and رموز الوصول/الهوية/التحديث. Corrected Base64url encoding mistranslated as encryption, translated pseudo-identifiers in formulas, generic public-key decryption and decoding-as-login statements. Used موقَّع to disambiguate signed from a website. Removed generic API links to an LLM-provider comparison after locating its different bundle path and inspecting its local title/introduction; that target was not reviewed. Preserved literal protocol identifiers, distinct MUST NOT/conditional SHOULD NOT, issuer-local sub, nonce/claims, transaction bindings and the narrow Python scope. Explained sender constraints as cryptographic binding to the presenting client.",
+      "limitations": [
+        "AI technical and editorial review, not a native-speaker or human confirmation.",
+        "No live OP, network JWKS fetch, browser login, session-security audit or penetration test.",
+        "Mermaid source and HTML checked; visual diagram rendering was not inspected.",
+        "All twelve OAuth/OIDC translations and the Japanese source were reviewed; publication verification remains pending.",
+        "Publication verification pending."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://www.rfc-editor.org/rfc/rfc7636.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://www.rfc-editor.org/rfc/rfc7515.html",
+        "https://pyjwt.readthedocs.io/en/stable/api.html"
+      ],
+      "validation": "docs/translation-review/batch-012-validation.json"
     }
   }
 }
