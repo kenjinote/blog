@@ -1,0 +1,6 @@
+{{- /* Keep TeX as HTML text: a raw `<e` can otherwise become a tag during minification. */ -}}
+{{- if eq .Type "block" -}}
+\[{{ .Inner | htmlEscape | safeHTML }}\]
+{{- else -}}
+\({{ .Inner | htmlEscape | safeHTML }}\)
+{{- end -}}

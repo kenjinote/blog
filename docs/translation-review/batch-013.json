@@ -561,6 +561,57 @@
         "https://www.rfc-editor.org/rfc/rfc8446.html"
       ],
       "validation": "docs/translation-review/batch-013-ru-validation.json"
+    },
+    "post/modern-cryptography-public-key-hash-signature/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/modern-cryptography-public-key-hash-signature/index.md",
+      "sourceHash": "6ba14931d98075ddb9e7231683eccefe7ba568eceb530fd04faeacada6d9d6f7",
+      "translationHash": "ff0a8ce77b13390df7682ba8c4fa091cc151d4696a23049f99eb2244e616037f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Arabic metadata and body, revised against the fully corrected Japanese source, then independently reread the complete Arabic revision. Compared all six sections and three diagrams/twenty edges: symmetric versus public-key operations and authenticated keys, RSA key/proof/scheme conditions, ECC field/subgroup/scalar requirements, hash resistance and SHA-2/SHA-3 construction, signature verification and identity limits, PKI path/service identity and TLS modes. Structural checks supplement, rather than replace, full semantic comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared المفتاح العام/الخاص versus المفتاح السري المشترك, الاتفاق على المفاتيح with key-agreement gloss, التوقيع/التحقق versus التشفير/فك التشفير, الصورة المسبقة/الصورة المسبقة الثانية/التصادم, دالة أويلر/أوليان نسبيًا/المعكوس/مبرهنة البواقي الصينية, الحقل الأولي/الزمرة الجزئية/الرتبة/العدد السري with scalar gloss, بت/بايت, جهة إصدار الشهادات/مرساة الثقة/الإلغاء. Replaced CA mistranslated as export reference and encrypted hash functions with cryptographic hash functions. Distinguished repeated point addition from a vector dot product. Preserved every mathematical and protocol premise."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All ten display formulas match exactly, including phi and lambda conditions, bounded inverse d, RSA primitive range, coprime Euler step, complete per-prime/CRT argument, OAEP k-2*hLen-2=190 byte bound, prime-field p>3 nonzero discriminant, subgroup scalar range and chaining formula. Checked all 3,233 toy RSA representatives and both per-prime residues, the explicit non-coprime Euler counterexample and lambda inverse. Checked an order-19 toy elliptic curve with eighteen distinct nonidentity public points and 19G=infinity. Finite fixtures are not a general security proof or recommended curve."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed all three extracted Python blocks independently with Python 3.12.14 and cryptography 50.0.2. Computation ASTs match after normalizing only printed labels and localized sample-message assignments; other expressions/constants remain. Independently checked the three Arabic UTF-8 messages and the OAEP length bound. Passed five OAEP payload roundtrips and four rejection cases (191 bytes, wrong label, altered ciphertext, wrong private key); two displayed hashes, fourteen streaming cases and two fixed abc digests; three valid PSS messages and six rejection cases covering altered document/signature, wrong key, truncation, wrong scheme and salt length. Separate encryption/signing keys confirmed. Offline examples, not a live security audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched nine primary-reference URLs and source-note read scopes. Read matching-language Euclidean/ECC target metadata and introductions and checked slug/file mapping; those target articles are not counted as reviewed. Kept image, slug and publication timestamp, added actual lastmod, and checked generated matching-language links, corrected HTML markers and three Mermaid blocks. Fourteen-bundle Hugo, multilingual 973 pages and HTTPS 1,804 HTML/41 XML passed. Publication pending. Also checked and retained the Arabic PQC target and generated /ar/p/post-quantum-cryptography/ link; that target is not reviewed."
+        }
+      },
+      "summary": "Full Arabic cryptography review with ten formulas, three independent Python examples, three diagrams and corrected algorithm, proof and trust terminology.",
+      "languageSpecificFindings": "Corrected مرجع التصدير to جهة إصدار الشهادات throughout prose and CA diagrams, and دوال التجزئة المشفرة to دوال التجزئة التشفيرية. Clarified ECC subgroup order and scalar point multiplication rather than a dot product; kept all protocol and mathematical identifiers literal. Restored ten display formulas, coprimality/CRT, OAEP byte bound, hash definitions and signature/trust qualifications. Retained all three Arabic sample messages and verified their UTF-8 bytes; signing is now independent with a dedicated key and scoped Arabic output. Retained the relevant matching-language PQC article link after reading its metadata/introduction; it is not reviewed.",
+      "limitations": [
+        "AI technical/editorial review; no native-speaker or human confirmation.",
+        "No formal cryptographic proof, side-channel analysis, live TLS/CA or full X.509 conformance test.",
+        "Mermaid source and HTML inspected, not visual rendering.",
+        "Publication verification pending.",
+        "All twelve translations and the Japanese source are reviewed; publication verification remains pending."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc8017.html",
+        "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+        "https://www.rfc-editor.org/rfc/rfc6090.html",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+        "https://csrc.nist.gov/pubs/fips/186-5/final",
+        "https://www.rfc-editor.org/rfc/rfc5280.html",
+        "https://www.rfc-editor.org/rfc/rfc9525.html",
+        "https://www.rfc-editor.org/rfc/rfc8446.html"
+      ],
+      "validation": "docs/translation-review/batch-013-ar-validation.json"
     }
   },
   "stageAssembly": {
@@ -703,5 +754,33 @@
     ],
     "otherTranslationsUnreviewed": 1,
     "publicationPending": true
+  },
+  "arabicStageAssembly": {
+    "checkedAt": "2026-10-27T07:56:27.798073+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko",
+      "pt",
+      "fr",
+      "de",
+      "id",
+      "hi",
+      "ru",
+      "ar"
+    ],
+    "otherTranslationsUnreviewed": 0,
+    "publicationPending": true
+  },
+  "finalAssembly": {
+    "checkedAt": "2026-10-27T08:08:38.895465+09:00",
+    "allTwelveTranslationsCurrent": true,
+    "remainingUnreviewedLanguages": 0,
+    "validation": "docs/translation-review/batch-013-final-validation.json",
+    "renderingValidation": "docs/translation-review/batch-013-rendering-validation.json",
+    "publicationPending": true,
+    "limitations": "AI review; no human/native fluency certification, browser visual audit or production cryptographic/security audit. Earlier stage snapshots and review entries remain unchanged."
   }
 }

@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T08:07:58.170475+09:00",
+  "site": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-14-bundles-crypto-math-final",
+  "scope": "All thirteen cryptography article versions; exact TeX after HTML entity decoding and outer whitespace stripping.",
+  "limitations": "Not a visual browser/KaTeX test. Fenced code excluded; tokenizer scoped to these articles.",
+  "files": [
+    {
+      "language": "ar",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.ar.md",
+      "hash": "ff0a8ce77b13390df7682ba8c4fa091cc151d4696a23049f99eb2244e616037f",
+      "expressions": 54,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.de.md",
+      "hash": "27b787662cdebcda72eec24b1a49be93f1a8774d93e8d7df20280c3cff4945be",
+      "expressions": 51,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.en.md",
+      "hash": "1f43e010a51f03626e1e3971e1c1322b48c0f057e870153a5f145bb5a2ce02a8",
+      "expressions": 51,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.es.md",
+      "hash": "cb63a37c2ee18c0e1219bf1571eed5e0044802bada082827a035074416dd69dd",
+      "expressions": 51,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.fr.md",
+      "hash": "b1bba5c63e18f4cf60650b350e2a2a24b173e7ff096de20a09a4d84e4a188720",
+      "expressions": 53,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.hi.md",
+      "hash": "32d41739d3e3215fa9a4f6764662f8bb5af26beafe4d1c18a19769784feaceef",
+      "expressions": 52,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.id.md",
+      "hash": "f6540b059a67da1eec8e83fe14b2ff2d39c629f70de4d26e42ec238b5ad7849a",
+      "expressions": 52,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.ko.md",
+      "hash": "cf75ebc00d6ccfeb2713bd0d4e39181b9ce44ee9b0fbbcf946cca3e57ea6510d",
+      "expressions": 51,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ja",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.md",
+      "hash": "6ba14931d98075ddb9e7231683eccefe7ba568eceb530fd04faeacada6d9d6f7",
+      "expressions": 51,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.pt.md",
+      "hash": "9d8ba6fece9c50aa1f2f128731a1dc03d24a91ecdf554d1835bfa7b1c9ce81c5",
+      "expressions": 51,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.ru.md",
+      "hash": "269b1fed821debfeca90b2ee7de4f6281f5a684331e43246f03a9ad7a89f3e9d",
+      "expressions": 52,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.zh-cn.md",
+      "hash": "45a6585ffb48032e19b60e398d0d5abd1454edd5cbe6ad0c868d9b16307fbfd2",
+      "expressions": 51,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.zh-tw.md",
+      "hash": "885c3a6b5ae522d8142d11d929a6513b1abfc5e1b43fa5d23333b6d13794a1c3",
+      "expressions": 51,
+      "missing": [],
+      "unexpected": [],
+      "checks": {
+        "allTeXExpressionsPreserved": true,
+        "rsaConditionPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true
+    }
+  ],
+  "allPassed": true
+}

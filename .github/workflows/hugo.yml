@@ -51,6 +51,7 @@ jobs:
       - name: Validate translation review records and generate queue
         run: |
           python3 scripts/test_multilingual.py
+          python3 scripts/test_math_rendering.py
           python3 scripts/test_translation_reviews.py
           python3 scripts/translation_reviews.py check
           python3 scripts/translation_reviews.py report --output translation-review-queue.csv
