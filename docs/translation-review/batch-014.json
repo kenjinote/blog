@@ -260,6 +260,71 @@
         }
       ],
       "validation": "docs/translation-review/batch-014-es-validation.json"
+    },
+    "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "translationHash": "4998fd11040f906116da51b2ca3e6f32846e012e08bbc45670132f4428c08021",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Korean metadata/body, revised against the corrected Japanese source, then independently reread the complete corrected prose/metadata and compared the common implementation. Compared all nine sections, five-row table, three diagrams/fifteen edges, eleven display formulas and five C++ blocks. Retained all field/subgroup/private-scalar, affine exception, ECDLP/CDH, ECDH validation/authentication/KDF and actual variable-time implementation conditions. Machine checks supplement semantic review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected ECDLP from 이산대수 (discrete algebra) to 이산 로그. Distinguished 체/소체, 부분군/위수, 생성원/기준점, 스칼라 곱셈, 역원 and 무한원점; 공개키/개인키 versus 공유값/비밀키, 키 합의 versus 암호화/서명, 상수 시간 versus 가변 시간, 부채널/타이밍, and Jacobian(야코비안) coordinates. Removed fragmented Crypto/Euclide/Jacobian and wrong-language Euclidean links."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All eleven display formulas match exactly; inline premises and table values checked against scoped primary references. NIST Table2 ranges and historical/quantum caveats checked as parsed text. secp256k1 p,a,b,G,n,h checked in SEC2§2.4.1. Ran thirteen scalar differential cases including zero, n±1, n, high-bit and maximum accepted values against cryptography50.0.2; a public toy curve p17,a2,b0 exercised all400 ordered additions against independent Python,8000 associativity triples,820 ladder/repeated-addition cases and all three y=0 doubling points. These finite checks do not prove general security or constant-time behavior."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Extracted this version's five C++ blocks, confirmed exact equality with the reviewed Japanese code, compiled and ran the complete program and additional harness using g++13.3.0/Boost1.83. Passed thirteen scalar differential cases against cryptography50.0.2 and thirteen rejection cases, plus modular/inverse/infinity/inverse-point/swap checks. Existing400-pair/8000-triple/820-scalar toy-curve evidence applies to the identical core and was not redundantly re-executed for this language. Not a constant-time or production implementation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six primary URLs and scoped notes; retained matching-language modern-cryptography link to the already-reviewed target. Removed misleading word-fragment/biography and wrong-language links, and duplicate body heading. Preserved slug, publication timestamp and image; added actual lastmod. Confirmed generated markers/links/three Mermaid blocks and all59 decoded TeX expressions. Fifteen-bundle Hugo, multilingual1050pages and HTTPS1945HTML/41XML passed; publication pending. No dependency article was added to the review count."
+        }
+      },
+      "summary": "Full Korean ECC review with corrected discrete-log terminology, eleven formulas, three diagrams and five compiled variable-time educational C++ blocks.",
+      "languageSpecificFindings": "Replaced repeated 이산대수 with 이산 로그 and distinguished field size, subgroup order and private scalar. Restored every premise for inverses/addition/doubling/ECDH, removed broad constant-time and key-recovery claims, and clarified the role of shared values and KDF. Preserved literal mathematical/code identifiers and the actual variable-time teaching scope.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No browser visual/KaTeX/Mermaid audit, side-channel timing/assembly test, live ECDH/TLS audit or production cryptographic implementation.",
+        "Publication verification remains pending.",
+        "Seven other ECC translations remain unreviewed; no review dates added to them."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7748.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.secg.org/sec2-v2.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc5869.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        }
+      ],
+      "validation": "docs/translation-review/batch-014-ko-validation.json"
     }
   },
   "englishStageAssembly": {
@@ -286,6 +351,18 @@
       "es"
     ],
     "otherTranslationsUnreviewed": 8,
+    "publicationPending": true
+  },
+  "koreanStageAssembly": {
+    "checkedAt": "2026-10-27T08:30:58.284021+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko"
+    ],
+    "otherTranslationsUnreviewed": 7,
     "publicationPending": true
   }
 }

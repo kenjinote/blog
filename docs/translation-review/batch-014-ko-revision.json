@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "startedAt": "2026-10-27T08:29:24.679010+09:00",
+  "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ko.md",
+  "originalHash": "678300239b4815496d65b1ab1f82d581eb9e1330e44fd7c8be0b93bbe6f24890",
+  "fullOriginalBodyAndMetadataRead": true,
+  "reviewRecorded": true,
+  "findings": [
+    "ECDLP repeatedly mistranslated as 이산대수 (discrete algebra) rather than 이산 로그.",
+    "Inherited constant-time safety claims contradict branching variable-size cpp_int code.",
+    "Field/subgroup/private-scalar and ECDH shared-secret roles insufficiently distinguished; affine exceptions/authentication/KDF absent.",
+    "Misleading Crypto/Euclide/Jacobian word-fragment links and wrong-language Euclidean link."
+  ],
+  "finalHash": "4998fd11040f906116da51b2ca3e6f32846e012e08bbc45670132f4428c08021",
+  "fullCorrectedBodyAndMetadataReread": true,
+  "validation": "docs/translation-review/batch-014-ko-validation.json"
+}
