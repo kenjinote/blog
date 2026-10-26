@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T08:24:55.165871+09:00",
+  "runtime": "WSL Ubuntu g++13.3.0 / Ubuntu Boost1.83 headers; C++17 -O2 -Wall -Wextra; differential oracle cryptography50.0.2",
+  "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+  "files": [
+    {
+      "language": "zh-cn",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.zh-cn.md",
+      "hash": "c873ca321e8908d0472a0ac3faf466a7c2b5aa869ed280f960e4e7ffe54f16df",
+      "fiveCxxBlocksConcatenatedCompiledAndRan": true,
+      "cppBlocks": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "scalarDifferentialCases": 13,
+      "invalidCasesRejected": 13,
+      "additionalFixtures": "Same modular/inverse/infinity/inverse-point/swap fixtures as batch-014-validation.json, executed for this language.",
+      "fixtureStdoutSHA256": "714f05f5c5c497fdfe5c97c3abbfd500374ac394f218e2630c52e4f6dbde259e",
+      "mainStdout": "2G.x = c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5\n2G.y = 1ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a\nnG = infinity\n",
+      "renderedTeXExpressions": 59,
+      "metadataAndLinksChecked": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.zh-tw.md",
+      "hash": "4ad6cf60bbf5a284f8f9a99cc2a7a47645701ef70df85703a2a9347426c7c08e",
+      "fiveCxxBlocksConcatenatedCompiledAndRan": true,
+      "cppBlocks": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "scalarDifferentialCases": 13,
+      "invalidCasesRejected": 13,
+      "additionalFixtures": "Same modular/inverse/infinity/inverse-point/swap fixtures as batch-014-validation.json, executed for this language.",
+      "fixtureStdoutSHA256": "714f05f5c5c497fdfe5c97c3abbfd500374ac394f218e2630c52e4f6dbde259e",
+      "mainStdout": "2G.x = c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5\n2G.y = 1ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a\nnG = infinity\n",
+      "renderedTeXExpressions": 59,
+      "metadataAndLinksChecked": true
+    }
+  ],
+  "sharedToyCurveEvidence": "docs/translation-review/batch-014-validation.json#toyCurve; identical C++ core, not redundantly re-executed per language.",
+  "build": {
+    "minified": true,
+    "hugo": "0.139.0 extended",
+    "destination": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-15-bundles-ecc-cn-tw",
+    "scope": "Fifteen isolated article bundles; four ECC versions now reviewed, other nine unchanged/unreviewed.",
+    "multilingualPages": 1050,
+    "https": {
+      "html": 1945,
+      "xml": 41
+    }
+  },
+  "buildPending": false,
+  "publicationPending": true,
+  "limitations": "AI semantic review plus offline functional/structural checks; no human-native certification, visual browser verification, timing test or production crypto audit."
+}

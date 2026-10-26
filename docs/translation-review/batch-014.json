@@ -65,11 +65,151 @@
         }
       ],
       "validation": "docs/translation-review/batch-014-validation.json"
+    },
+    "post/楕円曲線暗号の数学的基礎とcppでの実装/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "translationHash": "c873ca321e8908d0472a0ac3faf466a7c2b5aa869ed280f960e4e7ffe54f16df",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Simplified Chinese metadata/body, revised against the corrected Japanese source, and independently reread the complete corrected prose/metadata. Compared all nine sections, five-row table, three diagrams/fifteen edges, eleven display formulas and five common C++ blocks. Retained all field/subgroup/scalar, affine-exception, ECDLP/CDH, ECDH validation/authentication/KDF and variable-time teaching conditions. Machine structure checks supplement semantic comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished 公钥/私钥 from 共享秘密, 密钥协商 from 加密/签名, 有限域/素域, 子群的阶, 标量乘法, 非奇异性, 倍点, 模逆元, 恒定时间 versus variable-time. Removed the malformed factoring phrase and the AWS Lambda/biographical/cryptocurrency word-fragment links."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All eleven display formulas match exactly; inline premises and table values checked against scoped primary references. NIST Table2 ranges and historical/quantum caveats checked as parsed text. secp256k1 p,a,b,G,n,h checked in SEC2§2.4.1. Ran thirteen scalar differential cases including zero, n±1, n, high-bit and maximum accepted values against cryptography50.0.2; a public toy curve p17,a2,b0 exercised all400 ordered additions against independent Python,8000 associativity triples,820 ladder/repeated-addition cases and all three y=0 doubling points. These finite checks do not prove general security or constant-time behavior."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Extracted this version's five C++ blocks, confirmed exact equality with the reviewed Japanese code, compiled and ran the complete program and additional harness using g++13.3.0/Boost1.83. Passed thirteen scalar differential cases against cryptography50.0.2 and thirteen rejection cases, plus modular/inverse/infinity/inverse-point/swap checks. Existing400-pair/8000-triple/820-scalar toy-curve evidence applies to the identical core and was not redundantly re-executed for this language. Not a constant-time or production implementation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six primary URLs and scoped source notes; retained the already-reviewed modern-cryptography target in zh-cn. Read the matching-language AWS Lambda target title/metadata/introduction to confirm the unrelated slope link; that target is not counted reviewed. Removed word-fragment/biographical links and duplicate body heading. Preserved slug, publication date and image; added actual lastmod. Checked generated links/markers/three Mermaid blocks and exact decoded TeX. Fifteen-bundle minified Hugo, multilingual1050pages, HTTPS1945HTML/41XML passed; publication pending."
+        }
+      },
+      "summary": "Full Simplified Chinese ECC review with eleven formulas, three diagrams and five compiled educational C++ blocks.",
+      "languageSpecificFindings": "Corrected 共同私钥 to the distinct shared-secret role; clarified subgroup order versus field size, restored all premises and removed the slope-to-AWS-Lambda mislink after checking the target introduction. Uses mainland 公钥/私钥、密钥协商、标量、逆元、比特 terms.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No browser visual/KaTeX/Mermaid audit, side-channel timing/assembly test, live ECDH/TLS audit or production cryptographic implementation.",
+        "Publication verification remains pending.",
+        "Nine other ECC translations remain unreviewed; no review dates added to them."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7748.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.secg.org/sec2-v2.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc5869.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        }
+      ],
+      "validation": "docs/translation-review/batch-014-chinese-validation.json"
+    },
+    "post/楕円曲線暗号の数学的基礎とcppでの実装/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "translationHash": "4ad6cf60bbf5a284f8f9a99cc2a7a47645701ef70df85703a2a9347426c7c08e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Traditional Chinese metadata/body, revised against the corrected Japanese source, and independently reread the complete corrected prose/metadata. Compared all nine sections, five-row table, three diagrams/fifteen edges, eleven display formulas and five common C++ blocks. Retained all field/subgroup/scalar, affine-exception, ECDLP/CDH, ECDH validation/authentication/KDF and variable-time teaching conditions. Machine structure checks supplement semantic comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished 公開金鑰/私有金鑰 from 共享秘密, 金鑰協議 from 加密/簽章, 有限體/質數體, 子群階數, 純量乘法, 反元素, 非奇異性, 倍點, 常數時間 versus variable-time. Removed 完美的群 phrasing that suggests a different algebraic property, and AWS Lambda/biographical/cryptocurrency word-fragment links."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All eleven display formulas match exactly; inline premises and table values checked against scoped primary references. NIST Table2 ranges and historical/quantum caveats checked as parsed text. secp256k1 p,a,b,G,n,h checked in SEC2§2.4.1. Ran thirteen scalar differential cases including zero, n±1, n, high-bit and maximum accepted values against cryptography50.0.2; a public toy curve p17,a2,b0 exercised all400 ordered additions against independent Python,8000 associativity triples,820 ladder/repeated-addition cases and all three y=0 doubling points. These finite checks do not prove general security or constant-time behavior."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Extracted this version's five C++ blocks, confirmed exact equality with the reviewed Japanese code, compiled and ran the complete program and additional harness using g++13.3.0/Boost1.83. Passed thirteen scalar differential cases against cryptography50.0.2 and thirteen rejection cases, plus modular/inverse/infinity/inverse-point/swap checks. Existing400-pair/8000-triple/820-scalar toy-curve evidence applies to the identical core and was not redundantly re-executed for this language. Not a constant-time or production implementation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six primary URLs and scoped source notes; retained the already-reviewed modern-cryptography target in zh-tw. Read the matching-language AWS Lambda target title/metadata/introduction to confirm the unrelated slope link; that target is not counted reviewed. Removed word-fragment/biographical links and duplicate body heading. Preserved slug, publication date and image; added actual lastmod. Checked generated links/markers/three Mermaid blocks and exact decoded TeX. Fifteen-bundle minified Hugo, multilingual1050pages, HTTPS1945HTML/41XML passed; publication pending."
+        }
+      },
+      "summary": "Full Traditional Chinese ECC review with eleven formulas, three diagrams and five compiled educational C++ blocks.",
+      "languageSpecificFindings": "Corrected 共通私鑰 to the distinct shared-secret role and removed 完美的群 wording. Clarified subgroup order versus field size and all mathematical/protocol premises. Removed slope-to-AWS-Lambda mislink after checking the target introduction. Uses 公開金鑰/私有金鑰、金鑰協議、純量、反元素、位元 terms.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No browser visual/KaTeX/Mermaid audit, side-channel timing/assembly test, live ECDH/TLS audit or production cryptographic implementation.",
+        "Publication verification remains pending.",
+        "Nine other ECC translations remain unreviewed; no review dates added to them."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7748.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.secg.org/sec2-v2.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc5869.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        }
+      ],
+      "validation": "docs/translation-review/batch-014-chinese-validation.json"
     }
   },
   "englishStageAssembly": {
     "checkedAt": "2026-10-27T08:19:42.775245+09:00",
     "otherTranslationsUnreviewed": 11,
+    "publicationPending": true
+  },
+  "chineseStageAssembly": {
+    "checkedAt": "2026-10-27T08:24:55.167372+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw"
+    ],
+    "otherTranslationsUnreviewed": 9,
     "publicationPending": true
   }
 }

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "startedAt": "2026-10-27T08:21:07.424735+09:00",
+  "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.zh-cn.md",
+  "originalHash": "fa845893aa555bedd61255a69956ea41338eef9d71f315db91d7a3e24c6680bb",
+  "fullOriginalBodyAndMetadataRead": true,
+  "reviewRecorded": true,
+  "findings": [
+    "Inherited constant-time safety claims contradict branching cpp_int implementation.",
+    "Unqualified ECDLP/exhaustive-search/performance claims; missing affine exceptional conditions and subgroup conditions.",
+    "Shared ECDH secret described as a common private key, conflating distinct key roles.",
+    "Lambda slope linked to AWS Lambda; Crypto substring linked to cryptocurrency; Euclidean/Jacobian text linked to biographies.",
+    "Chinese factoring phrase 大分解合成数 and mixing finite-field terms obscure the assumptions."
+  ],
+  "relatedTargetReadScope": "Matching-language AWS Lambda target title/metadata/introduction only; target is not counted as reviewed.",
+  "validationDevelopmentAttempt": "First exact block assertion caught an extra trailing blank line introduced during insertion. Confirmed tokens identical, removed the blank line before recording a review, then exact comparison passed.",
+  "finalHash": "c873ca321e8908d0472a0ac3faf466a7c2b5aa869ed280f960e4e7ffe54f16df",
+  "fullCorrectedBodyAndMetadataReread": true,
+  "validation": "docs/translation-review/batch-014-chinese-validation.json"
+}
