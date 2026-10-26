@@ -1,8 +1,9 @@
 ---
-title: "Anatomie complète de OAuth 2.0 et OIDC (OpenID Connect) (Différence entre authentification et autorisation)"
-description: "Explication détaillée du fonctionnement de OAuth 2.0 et OIDC, de la différence entre authentification et autorisation, et des différents types d'octroi."
+title: "OAuth 2.0 et OIDC : authentification, autorisation et validation des jetons"
+description: "Authentification et autorisation, rôles d'OAuth 2.0 et d'OIDC, code d'autorisation avec PKCE et validation du jeton d'identité à l'aide de formules et d'exemples JavaScript et Python."
 slug: "oauth2-oidc-authentication-authorization-difference"
 date: "2026-09-22T08:00:00+09:00"
+lastmod: "2026-10-27"
 image: "eyecatch.jpg"
 categories:
     - "security"
@@ -15,234 +16,264 @@ tags:
 
 ---
 
-Dans les applications Web et mobiles modernes, **OAuth 2.0** et **OIDC (OpenID Connect)** sont des technologies indispensables pour concilier sécurité et expérience utilisateur. Cependant, de nombreux développeurs confondent encore la différence entre "authentification (Authentication)" et "autorisation (Authorization)", ce qui conduit souvent à des implémentations incorrectes.
+OAuth 2.0 est un cadre d'autorisation qui accorde aux applications un accès limité. OpenID Connect (OIDC) y ajoute un mécanisme permettant de transmettre au client le résultat de l'authentification de l'utilisateur final.
 
-Cet article explique de manière très détaillée et exhaustive les concepts de base de **OAuth 2.0** et **OIDC**, leurs rôles respectifs, la différence claire entre l'authentification et l'autorisation, les différents types d'octroi (grant types), et les méthodes d'implémentation sécurisées avec PKCE.
+Cet article distingue l'authentification de l'autorisation, les usages des jetons, le code d'autorisation avec PKCE et la validation du jeton d'identité. Le code illustre des opérations précises ; il ne constitue pas une implémentation complète de connexion. En production, utilisez une bibliothèque OIDC et une configuration du fournisseur adaptées à vos exigences.
 
----
+## 1. Authentification et autorisation
 
-## 1. La différence claire entre Authentification (Authentication) et Autorisation (Authorization)
+### Authentification / AuthN
 
-Tout d'abord, clarifions la différence la plus importante et la plus souvent confondue entre "l'authentification" et "l'autorisation".
+L'authentification vérifie l'identité d'un utilisateur ou d'un système à partir des éléments présentés. On peut la comparer au contrôle du badge d'un employé à l'accueil d'une entreprise.
 
-### Authentification (Authentication / AuthN)
-L' **authentification** est le processus qui permet de confirmer "qui est l'utilisateur qui accède (s'il est bien la personne qu'il prétend être)".
-Pour donner une analogie, cela équivaut à présenter un "badge d'employé" ou un "permis de conduire" à la réception en arrivant au travail pour prouver "je suis M. X, un employé de cette entreprise".
+### Autorisation / AuthZ
 
-### Autorisation (Authorization / AuthZ)
-D'autre part, l' **autorisation** est le processus qui consiste à "accorder des droits d'accès à une ressource spécifique à une personne (ou un système) spécifique".
-En reprenant l'exemple de l'entreprise, une fois la vérification d'identité terminée, cela correspond au contrôle d'accès tel que "cette personne étant un employé ordinaire, on ne lui donne pas le droit (la clé) d'entrer dans la salle des serveurs, mais on lui donne le droit (la clé) d'entrer à son propre étage".
+L'autorisation détermine les opérations qu'une entité peut effectuer et les ressources auxquelles elle peut accéder. Confirmer qu'une personne est employée ne lui donne pas accès à toutes les salles de serveurs.
 
-| Élément | Authentification (Authentication) | Autorisation (Authorization) |
+| Élément | Authentification | Autorisation |
 | --- | --- | --- |
-| Objectif | Identifier "qui c'est" | Déterminer "ce qu'il peut faire" |
-| Abréviation anglaise | AuthN | AuthZ |
-| Protocoles typiques | OpenID Connect (OIDC), SAML | OAuth 2.0, XACML |
-| Élément reçu | Jeton d'identité (Informations utilisateur) | Jeton d'accès (Droits d'accès) |
+| Question | Qui est-ce ? | Qu'est-ce qui est permis ? |
+| Abréviation | AuthN | AuthZ |
+| Mécanisme étudié ici | OIDC transmet un résultat d'authentification | OAuth 2.0 accorde un accès limité |
+| Exemple de jeton | Jeton d'identité OIDC | Jeton d'accès OAuth 2.0 |
 
-On entend souvent l'expression "implémenter une fonctionnalité de connexion en utilisant OAuth", mais techniquement, **OAuth 2.0** est un protocole pour "l'autorisation", et l'utiliser seul pour "l'authentification (connexion)" est un usage en dehors de ses spécifications (pseudo-authentification). Pour effectuer l'authentification, la norme moderne est d'utiliser **OIDC**, qui est une extension de OAuth 2.0.
+Tous les mécanismes d'authentification n'émettent pas de jeton d'identité. OAuth 2.0 ne définit pas non plus l'ensemble du contrôle d'accès d'une application. Après réception d'un jeton, l'API doit encore vérifier les permissions nécessaires pour la ressource et l'opération concernées.
 
----
+OAuth 2.0 seul ne normalise pas la manière dont le client vérifie le résultat de l'authentification de l'utilisateur final. Recevoir un jeton d'accès ne suffit pas à établir une connexion : utilisez un protocole, tel qu'OIDC, qui permet de valider ce résultat.
 
-## 2. Compréhension complète de OAuth 2.0
+## 2. Rôles et types d'octroi d'OAuth 2.0
 
-### 2.1 Qu'est-ce que OAuth 2.0 ?
-**OAuth 2.0** est un protocole standard (RFC 6749) permettant d'accorder à des applications tierces un droit d'accès limité (jeton d'accès) aux données d'un utilisateur sans divulguer le mot de passe de ce dernier.
+### 2.1 Un accès limité
 
-### 2.2 Les 4 rôles (rôles) de OAuth 2.0
-Pour comprendre le flux OAuth 2.0, il est essentiel de connaître les 4 rôles suivants :
+OAuth 2.0 permet au client d'obtenir un jeton d'accès au nom du propriétaire de la ressource ou pour son propre compte. Déléguer un accès sans transmettre le mot de passe de l'utilisateur au client est une caractéristique importante du flux de code d'autorisation.
 
-1. **Propriétaire de la ressource (Resource Owner)** : Le propriétaire des données (ressources). Désigne généralement "l'utilisateur".
-2. **Client (Client)** : L'application qui tente d'accéder aux données de l'utilisateur.
-3. **Serveur d'autorisation (Authorization Server)** : Le serveur qui authentifie l'utilisateur, vérifie les droits d'accès et émet un jeton d'accès au client.
-4. **Serveur de ressources (Resource Server)** : Le serveur qui détient les données de l'utilisateur et autorise l'accès aux données après avoir vérifié le jeton d'accès.
+### 2.2 Quatre rôles
 
-### 2.3 Les types d'octroi (Grant Types) de OAuth 2.0
+1. **Propriétaire de la ressource (Resource Owner)** : entité capable d'autoriser l'accès à une ressource protégée. Il ne s'agit pas nécessairement d'une personne.
+2. **Client** : application qui utilise des ressources protégées.
+3. **Serveur d'autorisation (Authorization Server)** : serveur qui vérifie l'autorisation, l'authentification du client et les autres conditions du flux applicable, puis émet les jetons.
+4. **Serveur de ressources (Resource Server)** : serveur qui valide les jetons et les permissions, puis fournit les ressources protégées.
 
-OAuth 2.0 définit plusieurs "types d'octroi (flux d'obtention de jeton)" en fonction des caractéristiques du client.
+### 2.3 Principaux types d'octroi
 
-#### 1. Octroi de code d'autorisation (Authorization Code Grant)
-C'est le flux le plus sécurisé et le plus couramment utilisé. Il convient aux applications, comme les applications Web, qui peuvent conserver un secret client de manière sécurisée (ayant un serveur backend).
+#### Code d'autorisation (Authorization Code Grant)
 
-#### 2. Octroi implicite (Implicit Grant)
-C'est un flux conçu pour les applications qui ne peuvent pas conserver un secret client, comme les SPA (Single Page Application). Cependant, en raison des risques de sécurité tels que l'exposition du jeton d'accès dans le fragment d'URL, il est **actuellement déprécié**. Même pour les SPA, il faut utiliser "l'octroi de code d'autorisation + PKCE" décrit ci-dessous.
+La réponse d'autorisation renvoie un code de courte durée, échangé contre un jeton d'accès au point de terminaison de jetons. Les **clients confidentiels**, capables de protéger leurs éléments d'authentification sur un serveur, ainsi que les **clients publics**, notamment les SPA et les applications natives, peuvent utiliser ce flux avec PKCE. Intégrer un secret client dans du code distribué ou dans un navigateur ne permet pas de le garder secret.
 
-#### 3. Octroi par mot de passe du propriétaire de la ressource (Resource Owner Password Credentials Grant)
-C'est un flux où le client reçoit directement l'ID et le mot de passe de l'utilisateur et les envoie au serveur d'autorisation pour obtenir un jeton. Il n'est utilisé que pour des cas très spécifiques, comme la migration de systèmes existants. Pour des raisons de sécurité, il est **actuellement déprécié**.
+#### Octroi implicite (Implicit Grant)
 
-#### 4. Octroi d'informations d'identification du client (Client Credentials Grant)
-C'est un flux utilisé pour la communication entre systèmes (M2M : Machine to Machine) sans l'implication de l'utilisateur. Le client lui-même agit en tant que propriétaire de la ressource.
+Ce mécanisme renvoie directement un jeton d'accès dans la réponse d'autorisation. Il présente des risques de fuite, d'injection et de réutilisation des jetons. La RFC 9700 indique que les clients NE DEVRAIENT PAS l'utiliser (SHOULD NOT), sauf si les risques précisés sont atténués. Pour une nouvelle configuration, choisissez le code d'autorisation avec PKCE. N'interprétez pas cette recommandation comme une interdiction identique de tous les types de réponse OIDC.
 
-### 2.4 En profondeur : [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de code d'autorisation + PKCE (Proof Key for Code Exchange)
+#### Mot de passe du propriétaire de la ressource (ROPC)
 
-Les SPA et les applications mobiles ne peuvent pas dissimuler un secret client de manière sécurisée. C'est pourquoi **PKCE** (RFC 7636) a été introduit pour prévenir les attaques d'interception de code d'autorisation (Authorization Code Interception Attack).
+Dans ce mécanisme, le client reçoit directement le mot de passe de l'utilisateur. Bien que la RFC 6749 le décrive, les recommandations de sécurité actualisées de la RFC 9700 imposent de **NE PAS l'utiliser (MUST NOT)**. La migration de systèmes anciens ne doit pas être présentée comme une exception recommandée.
 
-Le fonctionnement de PKCE est le suivant :
-Avant de commencer la requête d'autorisation, le client génère une chaîne aléatoire `code_verifier`, puis la hache pour créer un `code_challenge`.
+#### Informations d'authentification du client (Client Credentials Grant)
 
-La représentation mathématique est la suivante :
+Un client confidentiel s'authentifie pour obtenir un jeton. Il peut accéder à des ressources qu'il contrôle ou à celles d'un autre propriétaire selon un accord préalable avec le serveur d'autorisation. Ce flux sert généralement aux communications entre systèmes sans interaction de l'utilisateur final ; le client ne devient pas nécessairement le propriétaire de la ressource.
+
+### 2.4 Code d'autorisation et PKCE
+
+PKCE (Proof Key for Code Exchange) lie le client qui lance une requête d'autorisation à celui qui échange le code contre des jetons, ce qui contribue à protéger contre l'interception et l'injection de codes. Il est obligatoire pour les clients publics et également recommandé pour les clients confidentiels. Il ne remplace pas l'authentification exigée d'un client confidentiel.
+
+Pour chaque transaction d'autorisation, le client génère un nouveau `code_verifier` secret. La RFC 7636 impose entre 43 et 128 caractères choisis parmi les lettres, les chiffres et `-._~`, et recommande au moins 256 bits d'entropie. Encoder 32 octets issus d'un générateur cryptographiquement sûr en Base64url sans remplissage produit 43 caractères.
+
+Avec `S256`, le défi est calculé comme suit. Les caractères de remplissage `=` en fin de Base64url sont omis.
+
 $$
-\text{code\_challenge} = \text{BASE64URL-ENCODE}( \text{SHA256}( \text{code\_verifier} ) )
+\text{code\_challenge}=\operatorname{BASE64URL}\!\left(\operatorname{SHA256}\!\left(\operatorname{ASCII}(\text{code\_verifier})\right)\right)
 $$
 
-#### Diagramme de séquence du flux de code d'autorisation avec PKCE
+La requête d'autorisation envoie `code_challenge` et `code_challenge_method=S256`. La requête de jeton envoie le `code_verifier` conservé pour cette même transaction. Le serveur le vérifie avec la méthode et le défi enregistrés avec le code. Ne revenez pas à `plain` parce que `S256` a échoué.
+
+#### Vue d'ensemble du flux
 
 ```mermaid
 sequenceDiagram
     autonumber
-    participant U as "Utilisateur"
-    participant C as "Client (SPA/App)"
-    participant AS as "Serveur d'autorisation"
+    participant U as "Utilisateur / navigateur"
+    participant C as "Client"
+    participant AS as "Serveur d'autorisation / OP OIDC"
     participant RS as "Serveur de ressources"
-
-    Note over C: "Génération de code_verifier et code_challenge"
-    C->>U: "Demande de connexion/autorisation"
-    U->>AS: "Requête d'autorisation (incluant code_challenge)"
-    AS-->>U: "Écran de connexion / Écran de consentement"
-    U->>AS: "Saisie des informations d'authentification / Octroi de permissions"
-    AS-->>C: "Émission du code d'autorisation (Authorization Code)"
-    Note over C: "Réception du code d'autorisation"
-    C->>AS: "Requête de jeton (Code d'autorisation + code_verifier)"
-    Note over AS: "Vérification de code_verifier (Correspondance du hachage SHA256)"
-    AS-->>C: "Émission du jeton d'accès (+ Jeton d'identité)"
-    C->>RS: "Requête de ressource (avec jeton d'accès)"
-    RS-->>C: "Retour des ressources protégées"
+    Note over C: "Conserver verifier et state par transaction ; aussi nonce pour OIDC"
+    C->>U: "Rediriger vers le point de terminaison d'autorisation"
+    U->>AS: "Requête : challenge et S256 ; openid et nonce pour OIDC"
+    AS-->>U: "Demander authentification et consentement si nécessaire"
+    U->>AS: "Effectuer l'authentification et l'autorisation"
+    AS-->>U: "Rediriger vers le redirect_uri enregistré avec code et state"
+    U->>C: "Retour : code et state"
+    Note over C: "Vérifier transaction, state et émetteur attendu"
+    C->>AS: "Échanger code avec verifier et l'authentification du client requise"
+    Note over AS: "Valider code, liaisons et PKCE"
+    AS-->>C: "Jeton d'accès ; aussi jeton d'identité pour OIDC"
+    Note over C: "Pour OIDC, valider jeton d'identité et nonce"
+    C->>RS: "Appeler l'API avec le jeton d'accès"
+    RS-->>C: "Valider jeton et permissions, puis renvoyer la ressource"
 ```
 
-#### Exemple d'implémentation de génération PKCE (JavaScript / Web Crypto API)
+Ce diagramme résume un déroulement réussi. Protégez les communications avec TLS. L'implémentation doit également traiter la validation des redirections, l'usage unique des codes, les réponses d'erreur, l'expiration de la transaction et la protection contre les attaques de confusion de serveurs (mix-up) lorsqu'elle utilise plusieurs serveurs d'autorisation.
 
-Le code suivant est un exemple de génération des paramètres nécessaires pour PKCE dans un environnement JavaScript.
+#### Génération des paramètres PKCE (JavaScript / Web Crypto API)
+
+Ces fonctions destinées au navigateur nécessitent un contexte sécurisé, tel que HTTPS. `generatePkce()` renvoie uniquement les paramètres : elle n'envoie pas la requête d'autorisation et ne stocke pas la transaction. N'exposez pas le verifier dans les journaux ou les URL ; liez-le à la transaction commencée dans ce navigateur, puis supprimez-le après l'échange ou l'expiration.
 
 ```javascript
-// Générer une chaîne de caractères aléatoire (code_verifier)
+function base64url(bytes) {
+    return btoa(String.fromCharCode(...bytes))
+        .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
 function generateCodeVerifier() {
-    const array = new Uint32Array(56 / 2);
-    window.crypto.getRandomValues(array);
-    return Array.from(array, dec => ('0' + dec.toString(16)).substr(-2)).join('');
+    const bytes = new Uint8Array(32);
+    crypto.getRandomValues(bytes);
+    return base64url(bytes);
 }
 
-// Calculer le hachage SHA-256 et l'encoder en Base64URL (code_challenge)
 async function generateCodeChallenge(codeVerifier) {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(codeVerifier);
-    const hashBuffer = await window.crypto.subtle.digest('SHA-256', data);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    const base64String = btoa(String.fromCharCode.apply(null, hashArray));
-    return base64String.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    if (typeof codeVerifier !== 'string' ||
+        codeVerifier.length < 43 || codeVerifier.length > 128 ||
+        /[^A-Za-z0-9._~-]/.test(codeVerifier)) {
+        throw new TypeError('Invalid PKCE verifier');
+    }
+    const data = new TextEncoder().encode(codeVerifier);
+    const digest = await crypto.subtle.digest('SHA-256', data);
+    return base64url(new Uint8Array(digest));
 }
 
-// Exemple d'exécution
-const codeVerifier = generateCodeVerifier();
-generateCodeChallenge(codeVerifier).then(codeChallenge => {
-    console.log("Code Verifier :", codeVerifier);
-    console.log("Code Challenge :", codeChallenge);
-});
+async function generatePkce() {
+    const code_verifier = generateCodeVerifier();
+    return {
+        code_verifier,
+        code_challenge: await generateCodeChallenge(code_verifier),
+        code_challenge_method: 'S256'
+    };
+}
 ```
 
----
+Ce code encode tous les bits des 32 octets aléatoires. L'ancien exemple concaténait seulement les deux derniers chiffres hexadécimaux de chacun de 28 entiers aléatoires de 32 bits : il obtenait 896 bits, mais n'en conservait que 224. Cette troncature a été corrigée.
 
-## 3. Compréhension complète de OIDC (OpenID Connect)
+## 3. OIDC et jetons d'identité
 
-### 3.1 Qu'est-ce que OIDC ?
-**OpenID Connect (OIDC)** est une couche d'identité simple et puissante construite sur OAuth 2.0 pour l' **authentification (Authentication)**. Alors que OAuth 2.0 se charge de "l'octroi des droits d'accès (autorisation)", OIDC se charge de "la vérification de l'identité de l'utilisateur (authentification)".
+### 3.1 Ajouter une couche d'authentification à OAuth
 
-En utilisant OIDC, le client peut obtenir un **jeton d'identité (ID Token)** contenant les informations d'identité de l'utilisateur authentifié par le serveur d'autorisation (appelé OpenID Provider, OP dans le monde de OIDC).
+Avec OIDC, le client (Relying Party) demande l'authentification avec la portée `openid`, et l'OpenID Provider (OP) renvoie le résultat dans un jeton d'identité. L'utilisateur ne saisit pas nécessairement son mot de passe à chaque fois : l'OP peut utiliser une session existante ou un autre moyen d'authentification.
 
-### 3.2 Différence entre le jeton d'identité et le jeton d'accès
-Il ne faut pas confondre les rôles des deux jetons dans OAuth 2.0 / OIDC.
+### 3.2 Séparer les usages des jetons
 
-- **Jeton d'accès (Access Token)** : La "clé" pour accéder à l'API (serveur de ressources). En général, son contenu n'est pas déchiffré par le client, et il est utilisé en l'attachant à l'en-tête Authorization de la requête API (c'est souvent un jeton opaque).
-- **Jeton d'identité (ID Token)** : La "carte de visite" ou le "certificat" contenant le résultat de l'authentification et les informations de profil (attributs) de l'utilisateur. Il est toujours émis au format **JWT (JSON Web Token)**, et le client le décode pour utiliser les informations de l'utilisateur. **Il ne doit pas être utilisé comme droit d'accès à une API.**
+- **Jeton d'accès** : justificatif d'accès à un serveur de ressources. Il peut s'agir d'un JWT ou d'une chaîne opaque ; OAuth 2.0 n'impose pas un format unique. Le client doit suivre les exigences de l'API, sans supposer une structure interne.
+- **Jeton d'identité** : JWT représentant un résultat d'authentification destiné au client. Avant de l'utiliser, validez sa signature, ses déclarations et sa liaison avec la requête d'authentification. Le décodage seul ne suffit pas ; il ne doit pas non plus être envoyé à la place d'un jeton d'accès à l'API.
 
-### 3.3 Structure et vérification du JWT (JSON Web Token)
+### 3.3 Structure des JWT et signatures
 
-Le jeton d'identité est représenté au format JWT. Un JWT est composé de trois chaînes encodées en Base64URL séparées par un point (`.`).
+Cette section décrit la **JWS Compact Serialization** d'un JWT signé et non chiffré, composé de trois parties séparées par des points. Un JWT peut aussi être chiffré sous forme de JWE ou imbriqué : il ne comporte pas toujours trois parties.
 
-1. **Header (En-tête)** : Indique le type de jeton (JWT) et l'algorithme de signature (ex: RS256).
-2. **Payload (Charge utile)** : Contient les informations de l'utilisateur et les métadonnées du jeton (revendications).
-3. **Signature (Signature)** : Une signature chiffrée prouvant que le jeton n'a pas été altéré.
+1. **Header (en-tête)** : champs tels que l'algorithme de signature `alg` et l'identifiant de clé `kid`.
+2. **Payload (charge utile)** : déclarations sur l'émetteur, les destinataires, l'expiration, le sujet, etc.
+3. **Signature** : signature ou MAC produit par l'algorithme indiqué. RS256, utilisé ici, emploie une signature numérique RSA.
 
-#### Principales revendications incluses dans le Payload
-- `iss` (Issuer) : L'émetteur du jeton (URL de l'OP)
-- `sub` (Subject) : L'identifiant unique de l'utilisateur
-- `aud` (Audience) : Le client censé recevoir ce jeton (Client ID)
-- `exp` (Expiration Time) : La date d'expiration du jeton
-- `iat` (Issued At) : La date d'émission du jeton
+L'en-tête et la charge utile sont seulement encodés en Base64url. La signature ne masque pas leur contenu. Consultez aussi [les différences entre chiffrement, hachage et signature]({{< relref "post/modern-cryptography-public-key-hash-signature/index.fr.md" >}}).
 
-#### Logique de vérification de la signature JWT
+#### Principales déclarations obligatoires du jeton d'identité
 
-Le client qui reçoit un jeton d'identité doit obligatoirement vérifier la signature (Signature). Si un algorithme [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) (comme RS256) est utilisé, il récupère la clé publique (JWKS) exposée par l'OP pour la vérification.
+- `iss` : identifiant d'émetteur de l'OP, qui doit correspondre exactement à l'émetteur attendu.
+- `sub` : identifiant unique de l'utilisateur, jamais réattribué au sein de cet émetteur. Si vous utilisez plusieurs OP, associez-le à `iss` pour identifier l'utilisateur.
+- `aud` : destinataire ou destinataires prévus. Vérifiez la présence du `client_id` du client et n'acceptez pas de destinataires supplémentaires non fiables.
+- `exp` : instant d'expiration. L'instant courant doit lui être antérieur.
+- `iat` : instant d'émission. La politique du client définit l'ancienneté acceptable et les autres restrictions.
 
-Le modèle mathématique de génération de la signature est exprimé par la formule suivante :
+Si la requête d'authentification a envoyé un `nonce`, exigez cette déclaration et vérifiez sa valeur. Toute demande de déclarations supplémentaires ou de `max_age` nécessite également les validations correspondantes.
+
+#### Entrée de la signature RS256
+
+Soient `H` l'en-tête protégé en UTF-8, `P` la charge utile en UTF-8 et `B64u` l'encodage Base64url sans remplissage. L'entrée de la signature est la séquence d'octets suivante ; `||` désigne la concaténation.
+
 $$
-\text{Signature} = \text{Sign}_{\text{CléPrivée}}( \text{SHA256}( \text{Base64Url}(\text{Header}) + "." + \text{Base64Url}(\text{Payload}) ) )
+M=\operatorname{ASCII}\!\left(\operatorname{B64u}(H)\,||\,\texttt{.}\,||\,\operatorname{B64u}(P)\right),\qquad S=\operatorname{Sign}_{\mathrm{RS256}}(sk,M)
 $$
 
-Lors de la vérification, la clé publique est utilisée pour déchiffrer, et on vérifie si la valeur de hachage correspond.
+RS256 utilise RSASSA-PKCS1-v1_5 avec SHA-256. Le hachage fait partie de cet algorithme de signature ; l'équation n'ajoute pas de hachage externe supplémentaire. La troisième partie du jeton est `B64u(S)`. Vérifiez la signature avec une clé publique de l'OP de confiance et l'algorithme indiqué, sans présenter la vérification des signatures en général comme un déchiffrement avec la clé publique.
 
-#### Exemple de décodage d'un jeton d'identité (JWT) (Python)
+Ne laissez pas un jeton non vérifié choisir les algorithmes permis ou l'origine des clés. Utilisez un JWKS de confiance issu d'une configuration ou d'une procédure Discovery de l'OP dûment vérifiées, et gérez la rotation ainsi que le cache des clés. `kid` sert à sélectionner une clé dans cet ensemble de confiance ; ne récupérez pas de clé à une URL arbitraire fournie par le jeton.
 
-Le code suivant est un exemple d'utilisation de la bibliothèque `PyJWT` en Python pour vérifier et décoder un jeton d'identité.
+#### Exemple partiel de validation en Python
+
+La fonction PyJWT ci-dessous vise une configuration limitée : **RS256, sans chiffrement, un seul destinataire représenté par une chaîne et un nonce déjà envoyé dans la requête**. L'appelant fournit `signing_key`, une clé publique provenant du JWKS de l'OP de confiance. Les déclarations obligatoires doivent être présentes, en plus d'avoir des valeurs valides. Si `azp` est présent, cette configuration exige qu'il corresponde à `client_id`.
+
+Cette fonction ne suffit pas à terminer une connexion. L'appelant doit vérifier et gérer la correspondance entre le retour et la transaction initiale, state, l'échange du code, l'émetteur attendu et l'usage unique du nonce. Les destinataires multiples, le chiffrement, les exigences d'authentification supplémentaires, `max_age` et `acr` sortent du périmètre de cet exemple.
 
 ```python
+import hmac
+import math
 import jwt
-from jwt import PyJWKClient
 
-# Point de terminaison JWKS (ensemble de clés publiques) de l'émetteur
-jwks_url = "https://example.com/.well-known/jwks.json"
-jwk_client = PyJWKClient(jwks_url)
 
-id_token = "eyJhbGciOiJSUzI1NiIs..." # Jeton d'identité obtenu
-client_id = "your_client_id"
-issuer = "https://example.com"
-
-try:
-    # Identifier la clé utilisée (kid) à partir de l'en-tête du jeton et obtenir la clé publique
-    signing_key = jwk_client.get_signing_key_from_jwt(id_token)
-    
-    # Vérifier la signature, aud (Audience), iss (Émetteur) et exp (Date d'expiration) simultanément
-    decoded_payload = jwt.decode(
+def verify_id_token(id_token, signing_key, *, issuer, client_id, expected_nonce):
+    if not isinstance(expected_nonce, str) or not expected_nonce:
+        raise ValueError('A nonce from the stored transaction is required')
+    claims = jwt.decode(
         id_token,
-        signing_key.key,
-        algorithms=["RS256"],
+        signing_key,
+        algorithms=['RS256'],
         audience=client_id,
-        issuer=issuer
+        issuer=issuer,
+        options={
+            'require': ['iss', 'sub', 'aud', 'exp', 'iat', 'nonce'],
+            'strict_aud': True,
+        },
     )
-    print("Authentification réussie. ID utilisateur :", decoded_payload["sub"])
-    print("Nom d'utilisateur :", decoded_payload.get("name"))
-
-except jwt.ExpiredSignatureError:
-    print("Erreur : Le jeton a expiré.")
-except jwt.InvalidTokenError as e:
-    print(f"Erreur : Jeton invalide. Détails : {e}")
+    for name in ('exp', 'iat'):
+        value = claims[name]
+        if (isinstance(value, bool) or not isinstance(value, (int, float))
+                or (isinstance(value, float) and not math.isfinite(value))):
+            raise jwt.InvalidTokenError('Invalid NumericDate')
+    subject = claims['sub']
+    if (not isinstance(subject, str) or not subject or not subject.isascii()
+            or len(subject) > 255):
+        raise jwt.InvalidTokenError('Invalid subject')
+    nonce = claims['nonce']
+    if (not isinstance(nonce, str) or not hmac.compare_digest(
+            nonce.encode('utf-8'), expected_nonce.encode('utf-8'))):
+        raise jwt.InvalidTokenError('Nonce mismatch')
+    if 'azp' in claims and claims['azp'] != client_id:
+        raise jwt.InvalidTokenError('Authorized party mismatch')
+    return claims
 ```
 
----
+La fonction renvoie les déclarations validées dans ce périmètre. N'annoncez pas une authentification réussie sur la seule base d'une signature valide, et ne liez pas de comptes à partir d'un nom ou d'une adresse électronique non vérifiés.
 
-## 4. Sécurité et bonnes pratiques
+## 4. Considérations de sécurité
 
-Lors de l'implémentation de OAuth 2.0 et OIDC, il est nécessaire de prendre en compte de nombreux risques de sécurité.
+### 4.1 state, nonce, PKCE et CSRF
 
-### 4.1 Protection contre [CSRF](https://kenji.blog/fr/p/web-application-vulnerability-owasp-top-10/) via le paramètre State
-En incluant un paramètre `state` imprévisible lors de la requête d'autorisation et en vérifiant qu'il correspond lors du rappel, on empêche les attaques par falsification de requête intersites ([CSRF](https://kenji.blog/fr/p/web-application-vulnerability-owasp-top-10/)).
+Si vous utilisez `state`, liez de manière sûre une valeur imprévisible à la transaction commencée dans le navigateur. Au retour, vérifiez sa valeur, son expiration et le fait qu'elle n'a pas encore été utilisée, puis marquez-la comme utilisée. L'égalité des chaînes ne suffit pas à empêcher toutes les formes de [CSRF]({{< relref "post/cross-site-scripting-xss-csrf-security/index.fr.md" >}}).
 
-### 4.2 Durée de vie et calcul des jetons
-Pour maintenir la sécurité, la bonne pratique est de configurer une durée de vie courte (`exp`) pour le jeton d'accès (par exemple : de 15 minutes à 1 heure). Lorsqu'il expire, un jeton d'actualisation (Refresh Token) est utilisé pour obtenir un nouveau jeton d'accès.
+La RFC 9700 traite aussi de la possibilité de s'appuyer sur la protection CSRF de PKCE après avoir confirmé sa prise en charge par le serveur, ainsi que de l'utilisation du nonce OIDC. Ces protections nécessitent toujours une liaison propre à chaque transaction et une validation correcte. `state`, `nonce` et PKCE ont des rôles distincts ; des valeurs constantes ou des comparaisons omises ne fournissent pas la protection attendue. Plusieurs serveurs d'autorisation nécessitent également une défense contre les attaques mix-up.
 
-La détermination de la validité d'un jeton est basée sur l'inégalité suivante. Ici, l'heure actuelle est $ T_{now} $, la date d'émission du jeton est $ T_{iat} $ et la durée de validité est $ D_{lifetime} $.
+### 4.2 Expiration et jetons de renouvellement
+
+Une courte durée de vie du jeton d'accès permet de limiter la période d'utilisation d'un jeton volé. Une valeur de 15 minutes, par exemple, est un choix de conception, pas une obligation universelle. Lors de la vérification de `exp` dans un JWT signé, la condition d'expiration est :
 
 $$
-T_{now} < T_{iat} + D_{lifetime} \quad (\text{ou simplement } T_{now} < T_{exp})
+T_{\mathrm{now}}<T_{\mathrm{exp}},\qquad T_{\mathrm{exp}}=T_{\mathrm{iat}}+D_{\mathrm{lifetime}}\ \text{uniquement si défini ainsi}\ T_{\mathrm{now}}<T_{\mathrm{iat}}+D_{\mathrm{lifetime}}
 $$
 
-### 4.3 Choix du flux OIDC
-Que ce soit pour les applications Web ou mobiles, le flux actuellement le plus recommandé est le **flux de code d'autorisation + PKCE**. Le flux Implicit n'étant plus considéré comme sûr, il ne doit absolument pas être utilisé dans les nouveaux développements.
+Cette condition vérifie uniquement l'expiration ; elle ne démontre ni la validité complète du jeton ni les droits d'accès. Vérifiez aussi l'algorithme, la clé, l'émetteur, les destinataires et, selon le cas, `nbf`, l'état de révocation et la liaison avec la requête d'authentification. Gérez explicitement toute tolérance aux écarts d'horloge.
 
-## Résumé
+L'émission de jetons de renouvellement est facultative. Sans eux, le client peut avoir besoin d'une nouvelle transaction d'autorisation. Pour ceux émis aux clients publics, la RFC 9700 exige une liaison cryptographique au client qui présente le jeton (sender constraints) ou une rotation. Révoquer un jeton de renouvellement n'invalide pas nécessairement immédiatement les jetons d'accès déjà émis.
 
-Dans cet article, nous avons approfondi la différence entre **OAuth 2.0** et **OIDC**, ainsi que la distinction entre les concepts centraux "d'autorisation" et "d'authentification".
-- **OAuth 2.0** est un framework "d'autorisation (octroi de droits)".
-- **OIDC** est un protocole "d'authentification (vérification d'identité)" construit par-dessus.
-- Dans les applications modernes, l'utilisation du **flux de code d'autorisation + PKCE** est le standard de facto en matière de sécurité.
+### 4.3 Choisir un flux et une implémentation
 
-En comprenant correctement ces spécifications et mécanismes, et en implémentant les flux et la logique de vérification appropriés, réalisons une gestion d'identité sûre et robuste.
+Pour les applications Web, SPA et natives avec interaction de l'utilisateur, partez du code d'autorisation avec PKCE. Choisissez une configuration adaptée au type de client, au stockage des jetons, à la prise en charge du fournisseur et au modèle de menace. N'imposez pas le même flux à tous les usages, comme le flux Client Credentials pour les échanges M2M.
+
+## Conclusion
+
+Utilisez les jetons d'accès OAuth 2.0 pour accéder aux ressources et validez les jetons d'identité OIDC comme résultats d'authentification destinés au client. Vérifiez la liaison du code avec PKCE, la signature, les déclarations obligatoires, le nonce et la correspondance entre le retour et la transaction initiale.
+
+## Références
+
+- [RFC 6749 : OAuth 2.0](https://www.rfc-editor.org/rfc/rfc6749.html) (rôles, jetons et informations d'authentification du client ; voir la RFC 9700 pour les recommandations de sécurité actualisées)
+- [RFC 7636 : PKCE](https://www.rfc-editor.org/rfc/rfc7636.html) (section 4, section 7.1 et annexe B)
+- [RFC 9700 : bonnes pratiques de sécurité OAuth 2.0](https://www.rfc-editor.org/rfc/rfc9700.html) (sections 2.1, 2.2.2 et 2.4)
+- [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html) (sections 2, 3.1.3.7 et 5.7)
+- [RFC 7515 : JWS](https://www.rfc-editor.org/rfc/rfc7515.html) (sections 3.1 et 5.1)
+- [API PyJWT](https://pyjwt.readthedocs.io/en/stable/api.html) (algorithmes permis, déclarations obligatoires et validation du destinataire)

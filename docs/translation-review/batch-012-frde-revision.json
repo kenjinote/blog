@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T01:29:22.434359+09:00",
+  "reviewer": "Codex (AI)",
+  "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+  "revisions": [
+    {
+      "language": "fr",
+      "path": "post/oauth2-oidc-authentication-authorization-difference/index.fr.md",
+      "originalHash": "ab9d1ab489ca91091560f3a1a1b66b53a30d2c16eb53153379debe750de9d980",
+      "originalMetadataAndFullBodyRead": true,
+      "writtenHash": "3a0064ce7b723bdb3a649a5c233306abc0bc947c220e0b0e0d313271ceda6dc0",
+      "finalValidatedHash": "c3d916d791a3eb3630ca6070dd814dc2ffe6e9ba2e42441add2a15c06c83f939"
+    },
+    {
+      "language": "de",
+      "path": "post/oauth2-oidc-authentication-authorization-difference/index.de.md",
+      "originalHash": "de3eee1bdd7fb77deaf9e875d6c868eee66345932c7d0621397cc8a31cb2995e",
+      "originalMetadataAndFullBodyRead": true,
+      "writtenHash": "9db3cba60cba4204660cf5f553e4f926c03f60d20eec816f323a710172636d02",
+      "finalValidatedHash": "9db3cba60cba4204660cf5f553e4f926c03f60d20eec816f323a710172636d02"
+    }
+  ],
+  "initialStatus": "Revisions written; independent full rereading and validation pending.",
+  "finalVerification": {
+    "checkedAt": "2026-10-27T01:31:37.714301+09:00",
+    "status": "Complete rereading, code/math/link/preview checks passed; dated AI records added. Publication pending."
+  }
+}
