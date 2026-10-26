@@ -2,7 +2,7 @@
   "version": 1,
   "checkedAt": "2026-10-27T01:46:55.121928+09:00",
   "reviewer": "Codex (AI)",
-  "scope": "Complete corrected Japanese source and all twelve translations were read in full, with code, formulas, diagram labels and links compared. Publication verification pending.",
+  "scope": "Complete corrected Japanese source and all twelve translations were read in full, with code, formulas, diagram labels and links compared. All 169 public URLs verified after the successful deployment.",
   "runtime": {
     "node": "v22.14.0",
     "pyjwt": "2.15.1",
@@ -3653,12 +3653,16 @@
     }
   ],
   "publication": {
-    "status": "in_progress",
+    "status": "verified",
     "ciRun": 40362727711,
     "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40362727711",
     "headCommit": "09a5552dfabfaa46bdaada2425bb3c3b95682d04",
     "expectedPublicUrls": 169,
-    "verificationExecuted": false
+    "verificationExecuted": true,
+    "ciConclusion": "success",
+    "verifiedAt": "2026-10-27T02:18:51.762147+09:00",
+    "publicUrlsPassed": 169,
+    "verification": "docs/translation-review/publication-012.json"
   },
   "limitations": [
     "Offline code fixtures only; no live OP, JWKS HTTP requests, browser navigation or session-security test.",
@@ -3786,6 +3790,6 @@
     "idTokenFixtureCases": 494,
     "pkceInvalidInputCases": 156,
     "primaryUrlsPerVersion": 6,
-    "publicationPending": true
+    "publicationPending": false
   }
 }
