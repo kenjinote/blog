@@ -1525,6 +1525,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-012.json",
       "evidenceHash": "b7dc6e56a57b565f84484924c7f154f4c4530d8a1986a0945c96ac379e43b9f9"
+    },
+    "post/oauth2-oidc-authentication-authorization-difference/index.id.md": {
+      "source": "post/oauth2-oidc-authentication-authorization-difference/index.md",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+      "translationHash": "f735328252f93607e2e60913736d80fb076146d6a7e7035653e75b65f46643ba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-012.json",
+      "evidenceHash": "f77ec8fc160f3b04ddce48040d4abdab9d56a85825cedf7bb8c7e1557b1941e1"
     }
   }
 }

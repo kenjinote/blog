@@ -1,8 +1,9 @@
 ---
-title: "Anatomi Lengkap OAuth 2.0 dan OIDC (OpenID Connect) (Perbedaan antara Otorisasi dan Autentikasi)"
-description: "Penjelasan mendalam tentang cara kerja OAuth 2.0 dan OIDC, perbedaan antara autentikasi dan otorisasi, serta berbagai jenis tipe grant."
+title: "OAuth 2.0 dan OIDC: autentikasi, otorisasi, dan validasi token"
+description: "Autentikasi dan otorisasi, peran OAuth 2.0 dan OIDC, kode otorisasi dengan PKCE, serta validasi token ID melalui rumus dan contoh JavaScript serta Python."
 slug: "oauth2-oidc-authentication-authorization-difference"
 date: "2026-09-22T08:00:00+09:00"
+lastmod: "2026-10-27"
 image: "eyecatch.jpg"
 categories:
     - "security"
@@ -15,234 +16,264 @@ tags:
 
 ---
 
-Dalam aplikasi web dan seluler modern, teknologi yang sangat penting untuk menyeimbangkan keamanan dan pengalaman pengguna adalah **OAuth 2.0** dan **OIDC (OpenID Connect)**. Namun, masih banyak kasus di mana pengembang menyalahartikan perbedaan antara "Autentikasi (Authentication)" dan "Otorisasi (Authorization)", yang berujung pada implementasi yang salah.
+OAuth 2.0 adalah kerangka kerja otorisasi untuk memberikan akses terbatas kepada aplikasi. OpenID Connect (OIDC) menambahkan mekanisme untuk menyampaikan hasil autentikasi pengguna akhir kepada klien.
 
-Artikel ini memberikan penjelasan yang sangat rinci dan komprehensif, mulai dari konsep dasar **OAuth 2.0** dan **OIDC**, peran masing-masing, perbedaan yang jelas antara autentikasi dan otorisasi, berbagai jenis tipe grant, hingga metode implementasi yang aman dengan PKCE.
+Artikel ini membedakan autentikasi dan otorisasi, tujuan penggunaan token, kode otorisasi dengan PKCE, serta validasi token ID. Kode hanya mencontohkan operasi tertentu, bukan implementasi login lengkap. Untuk layanan produksi, gunakan pustaka OIDC dan konfigurasi penyedia yang sesuai dengan kebutuhan Anda.
 
----
+## 1. Autentikasi dan otorisasi
 
-## 1. Perbedaan yang Jelas antara Autentikasi (Authentication) dan Otorisasi (Authorization)
+### Autentikasi / AuthN
 
-Pertama-tama, mari kita perjelas perbedaan antara "autentikasi" dan "otorisasi", yang merupakan hal paling penting namun sering disalahartikan.
+Autentikasi memeriksa identitas pengguna atau sistem berdasarkan bukti yang diberikan. Analoginya adalah pemeriksaan kartu identitas karyawan di resepsionis perusahaan.
 
-### Autentikasi (Authentication / AuthN)
-**Autentikasi** adalah proses untuk mengonfirmasi "siapa pengguna yang mengakses (apakah mereka benar-benar orang tersebut)".
-Sebagai analogi, ini setara dengan menunjukkan "kartu identitas karyawan" atau "SIM" di resepsionis saat tiba di kantor untuk membuktikan "Saya adalah karyawan perusahaan ini bernama XX".
+### Otorisasi / AuthZ
 
-### Otorisasi (Authorization / AuthZ)
-Di sisi lain, **otorisasi** adalah proses untuk "memberikan hak akses ke sumber daya tertentu kepada orang (atau sistem) tertentu".
-Menggunakan contoh kantor sebelumnya, setelah verifikasi identitas selesai, ini setara dengan melakukan kontrol akses seperti "karena orang ini adalah karyawan biasa, saya tidak akan memberinya hak (kunci) untuk masuk ke ruang server, tetapi saya akan memberinya hak (kunci) untuk masuk ke lantainya sendiri".
+Otorisasi menentukan operasi yang boleh dilakukan suatu pihak dan sumber daya yang boleh diaksesnya. Memastikan seseorang adalah karyawan tidak berarti mengizinkannya masuk ke semua ruang server.
 
-| Item | Autentikasi (Authentication) | Otorisasi (Authorization) |
+| Aspek | Autentikasi | Otorisasi |
 | --- | --- | --- |
-| Tujuan | Mengidentifikasi "siapa" | Menentukan "apa yang bisa dilakukan" |
-| Singkatan Bahasa Inggris | AuthN | AuthZ |
-| Protokol Representatif | OpenID Connect (OIDC), SAML | OAuth 2.0, XACML |
-| Yang Diterima | Token ID (Informasi pengguna) | Token Akses (Hak akses) |
+| Pertanyaan | Siapa pihak tersebut? | Apa yang diizinkan? |
+| Singkatan | AuthN | AuthZ |
+| Mekanisme yang dibahas | OIDC menyampaikan hasil autentikasi | OAuth 2.0 memberikan akses terbatas |
+| Contoh token | Token ID OIDC | Token akses OAuth 2.0 |
 
-Kita sering mendengar ungkapan "mengimplementasikan fitur login menggunakan OAuth", tetapi secara ketat **OAuth 2.0** adalah protokol untuk "otorisasi", dan menggunakannya sendiri untuk "autentikasi (login)" adalah penggunaan di luar tujuan spesifikasi (autentikasi semu). Untuk melakukan autentikasi, menggunakan **OIDC**, yang merupakan ekstensi dari OAuth 2.0, adalah standar modern.
+Tidak semua mekanisme autentikasi menerbitkan token ID. OAuth 2.0 juga tidak mendefinisikan seluruh kontrol akses dalam aplikasi. Setelah menerima token, API masih harus memeriksa izin yang diperlukan untuk sumber daya dan operasi tertentu.
 
----
+OAuth 2.0 sendiri tidak menstandarkan cara klien memverifikasi hasil autentikasi pengguna akhir. Menerima token akses saja tidak cukup untuk menyatakan pengguna sudah login. Gunakan protokol seperti OIDC yang memungkinkan hasil tersebut divalidasi.
 
-## 2. Pemahaman Lengkap tentang OAuth 2.0
+## 2. Peran dan tipe grant OAuth 2.0
 
-### 2.1 Apa itu OAuth 2.0?
-**OAuth 2.0** adalah standar protokol untuk memberikan hak akses terbatas (token akses) ke data pengguna kepada aplikasi pihak ketiga tanpa menyerahkan kata sandi pengguna (RFC 6749).
+### 2.1 Akses terbatas
 
-### 2.2 4 Peran (Roles) dalam OAuth 2.0
-Untuk memahami alur OAuth 2.0, sangat penting untuk memahami 4 peran berikut.
+OAuth 2.0 memungkinkan klien memperoleh token akses atas nama pemilik sumber daya atau atas namanya sendiri. Pendelegasian akses tanpa memberikan kata sandi pengguna kepada klien merupakan salah satu ciri penting alur kode otorisasi.
 
-1. **Pemilik Sumber Daya (Resource Owner)** : Pemilik data (sumber daya). Biasanya merujuk pada "pengguna".
-2. **Klien (Client)** : Aplikasi yang mencoba mengakses data pengguna.
-3. **Server Otorisasi (Authorization Server)** : Server yang mengautentikasi pengguna, mengonfirmasi hak akses, dan kemudian menerbitkan token akses kepada klien.
-4. **Server Sumber Daya (Resource Server)** : Server yang menyimpan data pengguna, memverifikasi token akses, dan mengizinkan akses ke data.
+### 2.2 Empat peran
 
-### 2.3 Tipe Grant OAuth 2.0 (Metode Pemberian Hak)
+1. **Pemilik sumber daya (Resource Owner)**: pihak yang dapat mengizinkan akses ke sumber daya yang dilindungi. Pihak ini tidak harus berupa manusia.
+2. **Klien (Client)**: aplikasi yang menggunakan sumber daya yang dilindungi.
+3. **Server otorisasi (Authorization Server)**: server yang memeriksa otorisasi, autentikasi klien, dan persyaratan lain sesuai alur yang digunakan, lalu menerbitkan token.
+4. **Server sumber daya (Resource Server)**: server yang memvalidasi token dan izin, lalu menyediakan sumber daya yang dilindungi.
 
-Dalam OAuth 2.0, beberapa "tipe grant (alur akuisisi token)" didefinisikan tergantung pada karakteristik klien.
+### 2.3 Tipe grant utama
 
-#### 1. Grant Kode Otorisasi (Authorization Code Grant)
-Ini adalah alur yang paling aman dan umum digunakan. Sangat cocok untuk aplikasi seperti aplikasi web yang dapat menyimpan rahasia klien dengan aman (memiliki server backend).
+#### Kode otorisasi (Authorization Code Grant)
 
-#### 2. Grant Implisit (Implicit Grant)
-Ini adalah alur yang dibuat untuk aplikasi yang tidak dapat menyimpan rahasia klien, seperti SPA (Single Page Application). Namun, ini **sekarang sudah usang** karena risiko keamanan seperti token akses yang terekspos di fragmen URL. Bahkan di SPA, "Grant Kode Otorisasi + PKCE" yang dijelaskan di bawah ini harus digunakan.
+Respons otorisasi mengembalikan kode berumur pendek yang ditukar dengan token akses di endpoint token. **Klien konfidensial (confidential client)**, yang dapat melindungi kredensial di server, maupun **klien publik (public client)**, seperti SPA dan aplikasi native, dapat menggunakan alur ini dengan PKCE. Menanamkan rahasia klien dalam kode aplikasi yang didistribusikan atau dalam peramban tidak membuatnya tetap rahasia.
 
-#### 3. Grant Kredensial Kata Sandi Pemilik Sumber Daya (Resource Owner Password Credentials Grant)
-Ini adalah alur di mana klien menerima ID dan kata sandi pengguna secara langsung dan mengirimkannya ke server otorisasi untuk mendapatkan token. Ini hanya digunakan untuk tujuan yang sangat terbatas seperti migrasi sistem warisan. Untuk alasan keamanan, ini **sekarang sudah usang**.
+#### Grant implisit (Implicit Grant)
 
-#### 4. Grant Kredensial Klien (Client Credentials Grant)
-Ini adalah alur yang digunakan untuk komunikasi antar sistem (M2M: Machine to Machine) tanpa keterlibatan pengguna. Klien itu sendiri bertindak sebagai pemilik sumber daya.
+Grant ini mengembalikan token akses langsung dalam respons otorisasi. Ada risiko kebocoran, penyisipan, dan penggunaan ulang token. RFC 9700 menyatakan klien SEBAIKNYA TIDAK menggunakannya (SHOULD NOT), kecuali risiko yang disebutkan telah dimitigasi. Untuk konfigurasi baru, pilih kode otorisasi dengan PKCE. Jangan menafsirkan rekomendasi ini sebagai larangan yang sama terhadap semua tipe respons OIDC.
 
-### 2.4 Mendalam: Alur Kode Otorisasi + PKCE (Proof Key for Code Exchange)
+#### Kredensial kata sandi pemilik sumber daya (ROPC)
 
-Di SPA dan aplikasi seluler, rahasia klien tidak dapat disembunyikan dengan aman. Oleh karena itu, **PKCE** (RFC 7636) diperkenalkan untuk mencegah Serangan Intersepsi Kode Otorisasi (Authorization Code Interception Attack).
+Dalam grant ini, klien menerima kata sandi pengguna secara langsung. Walaupun RFC 6749 menjelaskannya, pedoman keamanan yang diperbarui dalam RFC 9700 menetapkan bahwa grant ini **TIDAK BOLEH digunakan (MUST NOT)**. Migrasi sistem lama tidak boleh disajikan sebagai pengecualian yang direkomendasikan.
 
-Cara kerja PKCE adalah sebagai berikut.
-Klien menghasilkan string acak `code_verifier`, melakukan hash terhadapnya, dan membuat `code_challenge` sebelum memulai permintaan otorisasi.
+#### Kredensial klien (Client Credentials Grant)
 
-Representasi matematisnya adalah sebagai berikut.
+Klien konfidensial mengautentikasi dirinya untuk memperoleh token. Klien dapat mengakses sumber daya yang dikendalikannya atau sumber daya milik pihak lain berdasarkan kesepakatan sebelumnya dengan server otorisasi. Grant ini biasanya digunakan untuk komunikasi antarsistem tanpa interaksi pengguna akhir; klien tidak selalu menjadi pemilik sumber daya.
+
+### 2.4 Kode otorisasi dan PKCE
+
+PKCE (Proof Key for Code Exchange) mengikat klien yang memulai permintaan otorisasi dengan klien yang menukar kode menjadi token, sehingga membantu melindungi dari intersepsi dan penyisipan kode. PKCE wajib digunakan oleh klien publik dan juga direkomendasikan untuk klien konfidensial. PKCE tidak menggantikan autentikasi yang diwajibkan bagi klien konfidensial.
+
+Untuk setiap transaksi otorisasi, klien menghasilkan `code_verifier` rahasia yang baru. RFC 7636 menetapkan panjang 43–128 karakter dari huruf, angka, dan `-._~`, serta merekomendasikan entropi setidaknya 256 bit. Mengodekan 32 byte dari generator acak yang aman secara kriptografis sebagai Base64url tanpa padding menghasilkan 43 karakter.
+
+Untuk `S256`, challenge dihitung sebagai berikut. Padding `=` di akhir Base64url dihilangkan.
+
 $$
-\text{code\_challenge} = \text{BASE64URL-ENCODE}( \text{SHA256}( \text{code\_verifier} ) )
+\text{code\_challenge}=\operatorname{BASE64URL}\!\left(\operatorname{SHA256}\!\left(\operatorname{ASCII}(\text{code\_verifier})\right)\right)
 $$
 
-#### Diagram Sekuens Alur Kode Otorisasi dengan PKCE
+Permintaan otorisasi mengirimkan `code_challenge` dan `code_challenge_method=S256`. Permintaan token mengirimkan `code_verifier` yang disimpan untuk transaksi yang sama. Server memeriksanya menggunakan metode dan challenge yang dicatat bersama kode. Jangan beralih ke `plain` hanya karena `S256` gagal.
+
+#### Gambaran alur
 
 ```mermaid
 sequenceDiagram
     autonumber
-    participant U as "Pengguna"
-    participant C as "Klien (SPA/App)"
-    participant AS as "Server Otorisasi"
-    participant RS as "Server Sumber Daya"
-
-    Note over C: "Pembuatan code_verifier dan code_challenge"
-    C->>U: "Permintaan login/otorisasi"
-    U->>AS: "Permintaan otorisasi (termasuk code_challenge)"
-    AS-->>U: "Layar login / Layar persetujuan"
-    U->>AS: "Input informasi autentikasi / Pemberian hak"
-    AS-->>C: "Penerbitan kode otorisasi (Authorization Code)"
-    Note over C: "Menerima kode otorisasi"
-    C->>AS: "Permintaan token (Kode otorisasi + code_verifier)"
-    Note over AS: "Memverifikasi code_verifier (Apakah hash SHA256 cocok)"
-    AS-->>C: "Penerbitan token akses (+ Token ID)"
-    C->>RS: "Permintaan sumber daya (Menyertakan token akses)"
-    RS-->>C: "Mengembalikan sumber daya yang dilindungi"
+    participant U as "Pengguna / peramban"
+    participant C as "Klien"
+    participant AS as "Server otorisasi / OP OIDC"
+    participant RS as "Server sumber daya"
+    Note over C: "Simpan verifier dan state per transaksi; juga nonce untuk OIDC"
+    C->>U: "Alihkan ke endpoint otorisasi"
+    U->>AS: "Permintaan: challenge dan S256; openid dan nonce untuk OIDC"
+    AS-->>U: "Minta autentikasi dan persetujuan bila diperlukan"
+    U->>AS: "Lakukan autentikasi dan otorisasi"
+    AS-->>U: "Alihkan ke redirect_uri terdaftar dengan code dan state"
+    U->>C: "Callback: code dan state"
+    Note over C: "Periksa transaksi, state, dan penerbit yang diharapkan"
+    C->>AS: "Tukar code dengan verifier dan autentikasi klien yang diwajibkan"
+    Note over AS: "Validasi kode, pengikatan, dan PKCE"
+    AS-->>C: "Token akses; juga token ID untuk OIDC"
+    Note over C: "Untuk OIDC, validasi token ID dan nonce"
+    C->>RS: "Panggil API dengan token akses"
+    RS-->>C: "Validasi token dan izin, lalu kembalikan sumber daya"
 ```
 
-#### Contoh Implementasi Pembuatan PKCE (JavaScript / Web Crypto API)
+Diagram ini merangkum alur yang berhasil. Lindungi komunikasi dengan TLS. Implementasi juga perlu menangani validasi tujuan pengalihan, penggunaan kode hanya sekali, respons kesalahan, kedaluwarsa transaksi, serta perlindungan terhadap serangan mix-up ketika menggunakan beberapa server otorisasi.
 
-Kode di bawah ini adalah contoh pembuatan parameter yang diperlukan untuk PKCE di lingkungan JavaScript.
+#### Menghasilkan parameter PKCE (JavaScript / Web Crypto API)
+
+Fungsi untuk peramban ini memerlukan konteks aman, seperti HTTPS. `generatePkce()` hanya mengembalikan parameter: fungsi ini tidak mengirim permintaan otorisasi atau menyimpan transaksi. Jangan menampilkan verifier dalam log atau URL. Ikat verifier ke transaksi yang dimulai di peramban tersebut dan buang setelah pertukaran selesai atau transaksi kedaluwarsa.
 
 ```javascript
-// Menghasilkan string acak (code_verifier)
+function base64url(bytes) {
+    return btoa(String.fromCharCode(...bytes))
+        .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
 function generateCodeVerifier() {
-    const array = new Uint32Array(56 / 2);
-    window.crypto.getRandomValues(array);
-    return Array.from(array, dec => ('0' + dec.toString(16)).substr(-2)).join('');
+    const bytes = new Uint8Array(32);
+    crypto.getRandomValues(bytes);
+    return base64url(bytes);
 }
 
-// Menghitung hash SHA-256, dan encode Base64URL (code_challenge)
 async function generateCodeChallenge(codeVerifier) {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(codeVerifier);
-    const hashBuffer = await window.crypto.subtle.digest('SHA-256', data);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    const base64String = btoa(String.fromCharCode.apply(null, hashArray));
-    return base64String.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    if (typeof codeVerifier !== 'string' ||
+        codeVerifier.length < 43 || codeVerifier.length > 128 ||
+        /[^A-Za-z0-9._~-]/.test(codeVerifier)) {
+        throw new TypeError('Invalid PKCE verifier');
+    }
+    const data = new TextEncoder().encode(codeVerifier);
+    const digest = await crypto.subtle.digest('SHA-256', data);
+    return base64url(new Uint8Array(digest));
 }
 
-// Contoh eksekusi
-const codeVerifier = generateCodeVerifier();
-generateCodeChallenge(codeVerifier).then(codeChallenge => {
-    console.log("Code Verifier:", codeVerifier);
-    console.log("Code Challenge:", codeChallenge);
-});
+async function generatePkce() {
+    const code_verifier = generateCodeVerifier();
+    return {
+        code_verifier,
+        code_challenge: await generateCodeChallenge(code_verifier),
+        code_challenge_method: 'S256'
+    };
+}
 ```
 
----
+Kode ini mengodekan seluruh bit dari 32 byte acak. Contoh sebelumnya hanya menggabungkan dua digit heksadesimal terakhir dari masing-masing 28 bilangan bulat acak 32 bit: 896 bit diambil, tetapi hanya 224 bit dipertahankan. Pemotongan tersebut telah diperbaiki.
 
-## 3. Pemahaman Lengkap tentang OIDC (OpenID Connect)
+## 3. OIDC dan token ID
 
-### 3.1 Apa itu OIDC?
-**OpenID Connect (OIDC)** adalah lapisan identitas sederhana dan kuat untuk **autentikasi (Authentication)** yang dibangun di atas OAuth 2.0. Sementara OAuth 2.0 bertanggung jawab atas "pemberian hak akses (otorisasi)", OIDC bertanggung jawab atas "verifikasi identitas pengguna (autentikasi)".
+### 3.1 Menambahkan lapisan autentikasi pada OAuth
 
-Dengan menggunakan OIDC, klien dapat memperoleh **Token ID (ID Token)** yang berisi informasi identitas pengguna yang diautentikasi oleh server otorisasi (disebut OpenID Provider, OP dalam dunia OIDC).
+Dalam OIDC, klien (Relying Party) meminta autentikasi dengan scope `openid`, lalu OpenID Provider (OP) mengembalikan hasilnya melalui token ID. Pengguna tidak harus mengetik kata sandi setiap kali: OP dapat menggunakan sesi yang sudah ada atau metode autentikasi lain.
 
-### 3.2 Perbedaan antara Token ID dan Token Akses
-Jangan sampai mencampuradukkan peran kedua token dalam OAuth 2.0 / OIDC.
+### 3.2 Memisahkan tujuan token
 
-- **Token Akses (Access Token)** : "Kunci" untuk mengakses API (server sumber daya). Biasanya isinya tidak didekripsi, dan dilampirkan ke header Authorization permintaan API (sering kali berupa Opaque token).
-- **Token ID (ID Token)** : "Kartu nama" atau "sertifikat" yang berisi hasil autentikasi dan informasi atribut (profil) pengguna. Token ini selalu diterbitkan dalam format **JWT (JSON Web Token)**, dan didekode di sisi klien untuk menggunakan informasi pengguna. **Tidak boleh digunakan sebagai hak akses ke API.**
+- **Token akses**: kredensial untuk mengakses server sumber daya. Formatnya bisa berupa JWT atau string opak (opaque); OAuth 2.0 tidak mewajibkan satu format. Klien harus mengikuti persyaratan API tanpa mengasumsikan struktur internal token.
+- **Token ID**: JWT yang menyatakan hasil autentikasi untuk klien. Sebelum menggunakannya, validasi tanda tangan, klaim, serta keterikatannya dengan permintaan autentikasi. Dekode saja tidak cukup. Token ini juga tidak boleh dikirim sebagai pengganti token akses API.
 
-### 3.3 Struktur dan Verifikasi JWT (JSON Web Token)
+### 3.3 Struktur JWT dan tanda tangan
 
-Token ID direpresentasikan dalam format JWT. JWT terdiri dari tiga string yang dienkode dengan Base64URL yang dipisahkan oleh `.` (titik).
+Bagian ini menjelaskan **JWS Compact Serialization** untuk JWT bertanda tangan yang tidak dienkripsi, dengan tiga bagian yang dipisahkan titik. JWT juga dapat dienkripsi sebagai JWE atau disusun secara bersarang; jadi, tidak selalu terdiri dari tiga bagian.
 
-1. **Header (Header)** : Menunjukkan jenis token (JWT) dan algoritma tanda tangan (misalnya: RS256).
-2. **Payload (Payload)** : Berisi informasi pengguna dan metadata token (klaim).
-3. **Signature (Tanda Tangan)** : Tanda tangan terenkripsi yang membuktikan bahwa token belum dimanipulasi.
+1. **Header**: bidang seperti algoritma tanda tangan `alg` dan pengidentifikasi kunci `kid`.
+2. **Payload**: klaim tentang penerbit, penerima, waktu kedaluwarsa, subjek, dan informasi lain.
+3. **Signature (tanda tangan)**: tanda tangan atau MAC yang dihasilkan dengan algoritma yang ditetapkan. RS256 yang dibahas di sini menggunakan tanda tangan digital RSA.
 
-#### Klaim Utama yang Termasuk dalam Payload
-- `iss` (Issuer) : Penerbit token (URL OP)
-- `sub` (Subject) : Pengidentifikasi unik pengguna
-- `aud` (Audience) : Klien yang seharusnya menerima token ini (Client ID)
-- `exp` (Expiration Time) : Waktu kedaluwarsa token
-- `iat` (Issued At) : Waktu dan tanggal penerbitan token
+Header dan payload hanya dikodekan sebagai Base64url. Tanda tangan tidak menyembunyikan isinya. Lihat juga [perbedaan enkripsi, hash, dan tanda tangan]({{< relref "post/modern-cryptography-public-key-hash-signature/index.id.md" >}}).
 
-#### Logika Verifikasi Tanda Tangan JWT
+#### Klaim wajib utama pada token ID
 
-Klien yang menerima Token ID wajib memverifikasi tanda tangannya (Signature). Jika menggunakan algoritma [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) (seperti RS256), klien akan mendapatkan kunci publik (JWKS) yang dipublikasikan oleh OP untuk memverifikasinya.
+- `iss`: pengidentifikasi penerbit OP. Nilainya harus sama persis dengan penerbit yang diharapkan.
+- `sub`: pengidentifikasi pengguna yang unik dan tidak pernah dialokasikan ulang dalam lingkup penerbit tersebut. Jika menggunakan beberapa OP, gabungkan dengan `iss` untuk mengidentifikasi pengguna.
+- `aud`: penerima yang dituju. Pastikan `client_id` klien tercakup dan jangan menerima penerima tambahan yang tidak dipercaya.
+- `exp`: waktu kedaluwarsa. Waktu saat ini harus lebih awal.
+- `iat`: waktu penerbitan. Kebijakan klien menentukan usia token yang dapat diterima dan pembatasan lainnya.
 
-Model matematis untuk menghasilkan tanda tangan ditunjukkan dalam persamaan berikut.
+Jika permintaan autentikasi mengirimkan `nonce`, wajibkan keberadaan klaim itu dan periksa nilainya. Permintaan klaim tambahan atau `max_age` juga membutuhkan validasi yang sesuai.
+
+#### Masukan tanda tangan RS256
+
+Misalkan `H` adalah header terlindungi dalam UTF-8, `P` adalah payload dalam UTF-8, dan `B64u` adalah pengodean Base64url tanpa padding. Masukan tanda tangan adalah urutan byte berikut; `||` berarti penggabungan.
+
 $$
-\text{Signature} = \text{Sign}_{\text{KunciPrivat}}( \text{SHA256}( \text{Base64Url}(\text{Header}) + "." + \text{Base64Url}(\text{Payload}) ) )
+M=\operatorname{ASCII}\!\left(\operatorname{B64u}(H)\,||\,\texttt{.}\,||\,\operatorname{B64u}(P)\right),\qquad S=\operatorname{Sign}_{\mathrm{RS256}}(sk,M)
 $$
 
-Saat memverifikasi, ia mendekripsi dengan kunci publik dan memeriksa apakah nilai hash-nya cocok.
+RS256 menggunakan RSASSA-PKCS1-v1_5 dengan SHA-256. Penghitungan hash merupakan bagian dari algoritma tanda tangan tersebut; persamaan ini tidak menambahkan hash luar lagi. Bagian ketiga token adalah `B64u(S)`. Verifikasi tanda tangan dengan kunci publik OP yang dipercaya dan algoritma yang ditetapkan. Jangan menjelaskan verifikasi tanda tangan secara umum sebagai dekripsi dengan kunci publik.
 
-#### Contoh Dekode Token ID (JWT) (Python)
+Jangan biarkan token yang belum diverifikasi menentukan algoritma yang diizinkan atau sumber kunci. Gunakan JWKS tepercaya dari konfigurasi atau proses Discovery OP yang telah diverifikasi, serta tangani rotasi dan cache kunci. `kid` digunakan untuk memilih kunci dalam kumpulan tepercaya itu; jangan mengambil kunci dari sembarang URL yang disediakan token.
 
-Kode berikut ini adalah contoh untuk memverifikasi dan mendekode Token ID menggunakan pustaka `PyJWT` Python.
+#### Contoh sebagian proses validasi dalam Python
+
+Fungsi PyJWT berikut mendukung konfigurasi terbatas: **RS256, tanpa enkripsi, satu penerima dalam bentuk string, dan nonce yang sudah dikirim dalam permintaan**. Pemanggil menyediakan `signing_key`, yaitu kunci publik dari JWKS OP yang dipercaya. Klaim wajib harus ada dan nilainya harus valid. Jika ada `azp`, konfigurasi ini mewajibkan nilainya sama dengan `client_id`.
+
+Fungsi ini tidak menyelesaikan proses login. Pemanggil harus memvalidasi dan mengelola hubungan callback dengan transaksi awal, state, pertukaran kode, penerbit yang diharapkan, serta penggunaan nonce hanya sekali. Beberapa penerima, enkripsi, persyaratan autentikasi tambahan, `max_age`, dan `acr` berada di luar cakupan contoh ini.
 
 ```python
+import hmac
+import math
 import jwt
-from jwt import PyJWKClient
 
-# Endpoint JWKS (set kunci publik) penerbit
-jwks_url = "https://example.com/.well-known/jwks.json"
-jwk_client = PyJWKClient(jwks_url)
 
-id_token = "eyJhbGciOiJSUzI1NiIs..." # Token ID yang diperoleh
-client_id = "your_client_id"
-issuer = "https://example.com"
-
-try:
-    # Mengidentifikasi kunci (kid) yang digunakan dari header token, dan mendapatkan kunci publik
-    signing_key = jwk_client.get_signing_key_from_jwt(id_token)
-    
-    # Melakukan verifikasi tanda tangan sekaligus verifikasi aud (Audience), iss (Issuer), dan exp (waktu kedaluwarsa)
-    decoded_payload = jwt.decode(
+def verify_id_token(id_token, signing_key, *, issuer, client_id, expected_nonce):
+    if not isinstance(expected_nonce, str) or not expected_nonce:
+        raise ValueError('A nonce from the stored transaction is required')
+    claims = jwt.decode(
         id_token,
-        signing_key.key,
-        algorithms=["RS256"],
+        signing_key,
+        algorithms=['RS256'],
         audience=client_id,
-        issuer=issuer
+        issuer=issuer,
+        options={
+            'require': ['iss', 'sub', 'aud', 'exp', 'iat', 'nonce'],
+            'strict_aud': True,
+        },
     )
-    print("Autentikasi berhasil. ID Pengguna:", decoded_payload["sub"])
-    print("Nama pengguna:", decoded_payload.get("name"))
-
-except jwt.ExpiredSignatureError:
-    print("Error: Waktu kedaluwarsa token telah habis.")
-except jwt.InvalidTokenError as e:
-    print(f"Error: Token tidak valid. Detail: {e}")
+    for name in ('exp', 'iat'):
+        value = claims[name]
+        if (isinstance(value, bool) or not isinstance(value, (int, float))
+                or (isinstance(value, float) and not math.isfinite(value))):
+            raise jwt.InvalidTokenError('Invalid NumericDate')
+    subject = claims['sub']
+    if (not isinstance(subject, str) or not subject or not subject.isascii()
+            or len(subject) > 255):
+        raise jwt.InvalidTokenError('Invalid subject')
+    nonce = claims['nonce']
+    if (not isinstance(nonce, str) or not hmac.compare_digest(
+            nonce.encode('utf-8'), expected_nonce.encode('utf-8'))):
+        raise jwt.InvalidTokenError('Nonce mismatch')
+    if 'azp' in claims and claims['azp'] != client_id:
+        raise jwt.InvalidTokenError('Authorized party mismatch')
+    return claims
 ```
 
----
+Fungsi mengembalikan klaim yang telah divalidasi dalam cakupan tersebut. Jangan menyatakan autentikasi berhasil hanya karena tanda tangan valid, atau menautkan akun berdasarkan nama maupun alamat email yang belum diverifikasi.
 
-## 4. Keamanan dan Praktik Terbaik
+## 4. Pertimbangan keamanan
 
-Saat mengimplementasikan OAuth 2.0 dan OIDC, penting untuk mempertimbangkan berbagai risiko keamanan.
+### 4.1 state, nonce, PKCE, dan CSRF
 
-### 4.1 Pencegahan [CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) dengan Parameter State
-Dengan menyertakan parameter `state` yang tidak dapat ditebak saat meminta otorisasi, dan memverifikasi apakah nilainya cocok saat callback, Anda dapat mencegah serangan Cross-Site Request Forgery ([CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/)).
+Jika memakai `state`, ikat nilai yang sulit ditebak secara aman ke transaksi yang dimulai di peramban. Saat callback, periksa kecocokan nilai, batas waktu, dan status belum digunakan, lalu tandai sebagai sudah digunakan. Kesamaan string saja tidak mencegah semua bentuk [CSRF]({{< relref "post/cross-site-scripting-xss-csrf-security/index.id.md" >}}).
 
-### 4.2 Usia dan Perhitungan Token
-Untuk menjaga keamanan, praktik terbaiknya adalah mengatur usia token akses (`exp`) secara singkat (misalnya: 15 menit hingga 1 jam). Jika telah kedaluwarsa, gunakan Refresh Token untuk mendapatkan token akses baru.
+RFC 9700 juga membahas penggunaan perlindungan CSRF dari PKCE setelah dukungan server dipastikan, serta penggunaan nonce OIDC. Perlindungan tersebut tetap memerlukan pengikatan khusus untuk setiap transaksi dan validasi yang benar. `state`, `nonce`, dan PKCE memiliki peran berbeda; nilai konstan atau perbandingan yang dilewati tidak memberi perlindungan yang dimaksud. Jika menggunakan beberapa server otorisasi, diperlukan pula pertahanan terhadap serangan mix-up.
 
-Penentuan apakah token valid didasarkan pada pertidaksamaan berikut. Di sini, biarkan waktu saat ini menjadi $ T_{now} $, waktu dan tanggal penerbitan token menjadi $ T_{iat} $, dan periode validitas menjadi $ D_{lifetime} $.
+### 4.2 Kedaluwarsa dan token pembaruan
+
+Masa berlaku token akses yang pendek membantu membatasi waktu penggunaan token yang dicuri. Nilai seperti 15 menit merupakan contoh desain, bukan persyaratan universal. Saat memeriksa `exp` dalam JWT bertanda tangan, syarat kedaluwarsanya adalah:
 
 $$
-T_{now} < T_{iat} + D_{lifetime} \quad (\text{atau cukup } T_{now} < T_{exp})
+T_{\mathrm{now}}<T_{\mathrm{exp}},\qquad T_{\mathrm{exp}}=T_{\mathrm{iat}}+D_{\mathrm{lifetime}}\ \text{hanya jika ditetapkan demikian}\ T_{\mathrm{now}}<T_{\mathrm{iat}}+D_{\mathrm{lifetime}}
 $$
 
-### 4.3 Pemilihan Alur OIDC
-Baik untuk aplikasi web maupun seluler, alur yang paling direkomendasikan saat ini adalah **Alur Kode Otorisasi + PKCE**. Alur Implisit tidak lagi dianggap aman dan tidak boleh digunakan sama sekali untuk pengembangan baru.
+Syarat ini hanya memeriksa kedaluwarsa, bukan membuktikan validitas keseluruhan token atau izin akses. Periksa juga algoritma, kunci, penerbit, penerima, serta bila berlaku, `nbf`, status pencabutan, dan keterikatan dengan permintaan autentikasi. Kelola secara eksplisit toleransi perbedaan jam jika digunakan.
+
+Penerbitan token pembaruan (refresh token) bersifat opsional. Tanpanya, klien mungkin perlu melakukan transaksi otorisasi baru. RFC 9700 mewajibkan pembatasan pengirim (sender constraints) atau rotasi untuk token pembaruan yang diterbitkan kepada klien publik. Pembatasan ini mengikat token secara kriptografis ke klien yang menyajikannya. Mencabut token pembaruan tidak selalu langsung membatalkan token akses yang sudah diterbitkan.
+
+### 4.3 Memilih alur dan implementasi
+
+Untuk aplikasi web, SPA, dan aplikasi native yang melibatkan interaksi pengguna, gunakan kode otorisasi dengan PKCE sebagai titik awal. Pilih konfigurasi yang sesuai dengan jenis klien, penyimpanan token, dukungan penyedia, dan model ancaman. Jangan menerapkan alur yang sama secara seragam untuk tujuan lain, seperti kredensial klien untuk M2M.
 
 ## Kesimpulan
 
-Dalam artikel ini, kita telah mendalami perbedaan antara **OAuth 2.0** dan **OIDC**, serta perbedaan dalam konsep inti "otorisasi" dan "autentikasi".
-- **OAuth 2.0** adalah kerangka kerja untuk "otorisasi (pemberian hak)".
-- **OIDC** adalah protokol untuk "autentikasi (verifikasi identitas)" yang dibangun di atasnya.
-- Pada aplikasi modern, menggunakan **Alur Kode Otorisasi + PKCE** merupakan standar de facto dalam hal keamanan.
+Gunakan token akses OAuth 2.0 untuk mengakses sumber daya, dan validasi token ID OIDC sebagai hasil autentikasi yang ditujukan kepada klien. Periksa pengikatan kode dengan PKCE, tanda tangan, klaim wajib, nonce, serta hubungan callback dengan transaksi awal.
 
-Mari capai manajemen identitas yang aman dan tangguh dengan memahami spesifikasi dan mekanisme ini secara tepat, serta mengimplementasikan alur dan logika verifikasi yang sesuai.
+## Referensi
+
+- [RFC 6749: OAuth 2.0](https://www.rfc-editor.org/rfc/rfc6749.html) (peran, token, dan kredensial klien; lihat RFC 9700 untuk pedoman keamanan yang diperbarui)
+- [RFC 7636: PKCE](https://www.rfc-editor.org/rfc/rfc7636.html) (bagian 4, bagian 7.1, dan lampiran B)
+- [RFC 9700: praktik keamanan OAuth 2.0](https://www.rfc-editor.org/rfc/rfc9700.html) (bagian 2.1, 2.2.2, dan 2.4)
+- [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html) (bagian 2, 3.1.3.7, dan 5.7)
+- [RFC 7515: JWS](https://www.rfc-editor.org/rfc/rfc7515.html) (bagian 3.1 dan 5.1)
+- [API PyJWT](https://pyjwt.readthedocs.io/en/stable/api.html) (algoritma yang diizinkan, klaim wajib, dan validasi penerima)

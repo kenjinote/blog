@@ -42,3 +42,7 @@
 ## フランス語・ドイツ語版の追加校閲（2026-10-27）
 
 両版の旧メタデータ・本文全体と修正版全体を読み、修正済み原文へ照合。フランス語はauthentification／autorisation、signature／chiffrement、expiration／révocation、déclarations・jeton de renouvellement、ドイツ語はAuthentifizierung／Autorisierung、Signatur／Verschlüsselung、Ablauf／Widerruf、vertrauliche／öffentliche Clientsを区別した。フランス語のFluxからReact状態管理記事へのリンクは、対象記事のタイトルと導入を確認したうえで除去。認証結果とAPI資格情報、発行者内のsubject、試行の束縛、ROPCとImplicitの勧告の強さ、限定したPython構成を保持した。各3数式・2コード・1図10メッセージ・6一次参照先、各38ケースのIDトークン検証、PKCEのRFCベクトルと不正入力12種類を確認。14記事束のHugo、多言語973ページ、HTTPS HTML1,804件／XML41件が成功。校閲済みOAuth/OIDC全9版のハッシュとローカルHTMLも再照合。AI確認日とハッシュを台帳へ追加。他4翻訳・公開後確認は未完了。
+
+## インドネシア語版の追加校閲（2026-10-27）
+
+旧版・修正版のメタデータと本文全体を読み、修正済み原文へ照合。autentikasi／otorisasi、tanda tangan／enkripsi／dekripsi、kedaluwarsa／pencabutan、klien konfidensial／publik、penerbit／penerimaを区別。ROPCのTIDAK BOLEHとImplicitの条件付きSEBAIKNYA TIDAK、発行者内のsubject、state・nonce・PKCEの試行への束縛、限定したPython構成を保持した。3数式・2コード・1図10メッセージ・6一次参照先、38ケースのIDトークン検証、PKCEのRFCベクトルと不正入力12種類を確認。14記事束のHugo、多言語973ページ、HTTPS HTML1,804件／XML41件が成功。AI確認日とハッシュを台帳へ追加。他3翻訳・公開後確認は未完了。
