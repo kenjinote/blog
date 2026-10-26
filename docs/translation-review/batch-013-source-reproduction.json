@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27T01:52:59.411680+09:00",
+  "reviewer": "Codex (AI)",
+  "runtime": {
+    "python": "3.12.14",
+    "cryptography": "50.0.2"
+  },
+  "scope": "Unmodified Japanese/English source examples and an RSA proof counterexample. This is a preliminary audit, not a completed translation review.",
+  "files": [
+    {
+      "language": "ja",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.md",
+      "normalizedSha256": "cf1e432897807909662824b88a585cc2311c9eb8ad6cd892aa414a8e2e4f979c",
+      "metadataAndFullBodyRead": true,
+      "pythonBlocks": 3,
+      "isolatedExecution": [
+        {
+          "block": 1,
+          "status": "passed"
+        },
+        {
+          "block": 2,
+          "status": "passed"
+        },
+        {
+          "block": 3,
+          "status": "failed",
+          "exception": "NameError",
+          "detail": "name 'private_key' is not defined"
+        }
+      ],
+      "sequentialExecution": "All three blocks passed in order; the signature block depends on the encryption block key/base64 imports.",
+      "oaepMaximumBytes": 190,
+      "oaepBoundaries": [
+        {
+          "messageBytes": 0,
+          "roundTrip": true
+        },
+        {
+          "messageBytes": 1,
+          "roundTrip": true
+        },
+        {
+          "messageBytes": 190,
+          "roundTrip": true
+        },
+        {
+          "messageBytes": 191,
+          "rejected": true
+        }
+      ],
+      "wrongLabelAndTamperedCiphertextRejected": true,
+      "hashesMatchHashlib": true,
+      "signatureValidAndTamperedMessageWrongKeyRejected": true,
+      "doubleDollarMathBlocks": 8,
+      "mermaidGraphs": 3
+    },
+    {
+      "language": "en",
+      "path": "post/modern-cryptography-public-key-hash-signature/index.en.md",
+      "normalizedSha256": "10ae52cd269a79c5dfd0455b8f95d5961c65ff04c059b183151291a301c5c413",
+      "metadataAndFullBodyRead": true,
+      "pythonBlocks": 3,
+      "isolatedExecution": [
+        {
+          "block": 1,
+          "status": "passed"
+        },
+        {
+          "block": 2,
+          "status": "passed"
+        },
+        {
+          "block": 3,
+          "status": "failed",
+          "exception": "NameError",
+          "detail": "name 'private_key' is not defined"
+        }
+      ],
+      "sequentialExecution": "All three blocks passed in order; the signature block depends on the encryption block key/base64 imports.",
+      "oaepMaximumBytes": 190,
+      "oaepBoundaries": [
+        {
+          "messageBytes": 0,
+          "roundTrip": true
+        },
+        {
+          "messageBytes": 1,
+          "roundTrip": true
+        },
+        {
+          "messageBytes": 190,
+          "roundTrip": true
+        },
+        {
+          "messageBytes": 191,
+          "rejected": true
+        }
+      ],
+      "wrongLabelAndTamperedCiphertextRejected": true,
+      "hashesMatchHashlib": true,
+      "signatureValidAndTamperedMessageWrongKeyRejected": true,
+      "doubleDollarMathBlocks": 0,
+      "mermaidGraphs": 3
+    }
+  ],
+  "limitations": [
+    "No cryptographic implementation certification, side-channel evaluation, TLS connection or X.509 chain-validation test.",
+    "RSA toy modulus is for mathematical demonstration only; runtime RSA keys are ephemeral fixtures and not persisted."
+  ],
+  "rsaProof": {
+    "p": 61,
+    "q": 53,
+    "modulus": 3233,
+    "phi": 3120,
+    "e": 17,
+    "d": 2753,
+    "allMessageRepresentativesTested": 3233,
+    "allRoundTripsPassed": true,
+    "counterexampleToUnqualifiedEulerStep": {
+      "M": 61,
+      "gcd": 61,
+      "M_power_phi_mod_N": 1220,
+      "notEqualToOne": true,
+      "rsaRoundTrip": 61
+    },
+    "finding": "The textbook RSA roundtrip still works for a message not coprime to N, but the article's Euler-theorem proof step does not apply to that case. A restricted premise or CRT argument is needed."
+  }
+}

@@ -3653,7 +3653,12 @@
     }
   ],
   "publication": {
-    "status": "pending"
+    "status": "in_progress",
+    "ciRun": 40362727711,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40362727711",
+    "headCommit": "09a5552dfabfaa46bdaada2425bb3c3b95682d04",
+    "expectedPublicUrls": 169,
+    "verificationExecuted": false
   },
   "limitations": [
     "Offline code fixtures only; no live OP, JWKS HTTP requests, browser navigation or session-security test.",
