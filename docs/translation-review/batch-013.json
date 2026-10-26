@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/modern-cryptography-public-key-hash-signature/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/modern-cryptography-public-key-hash-signature/index.md",
+      "sourceHash": "6ba14931d98075ddb9e7231683eccefe7ba568eceb530fd04faeacada6d9d6f7",
+      "translationHash": "1f43e010a51f03626e1e3971e1c1322b48c0f057e870153a5f145bb5a2ce02a8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read both complete original bodies and metadata, corrected the Japanese source and English translation, and independently reread both full revisions. Compared all six sections: symmetric versus public-key operations, authenticated key distribution, RSA assumptions and textbook versus scheme-level correctness, ECC group conditions, hash resistance and SHA-2/SHA-3 construction, signatures and their identity limitations, CA certificates, trust paths, service identity and TLS 1.3. Preserved the distinction between teaching examples and production systems. All three diagrams and twenty directed edges were compared."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished public-key encryption, signing and key agreement; message representative versus arbitrary payload; Euler theorem coprimality versus CRT proof; field modulus versus subgroup order and scalar; preimage versus second-preimage versus collision; fixed digest versus SHAKE XOF; signing/verification versus private-key encryption/public-key decryption; trust anchor, intermediate CA, certificate path and service name. Qualified non-repudiation and key-authentication claims and replaced the withdrawn FIPS 186-4 citation with FIPS 186-5."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All ten display formulas match exactly, including phi and lambda conditions, bounded inverse d, RSA primitive range, coprime Euler step, complete per-prime/CRT argument, OAEP k-2*hLen-2=190 byte bound, prime-field p>3 nonzero discriminant, subgroup scalar range and chaining formula. Checked all 3,233 toy RSA representatives and both per-prime residues, the explicit non-coprime Euler counterexample and lambda inverse. Checked an order-19 toy elliptic curve with eighteen distinct nonidentity public points and 19G=infinity. Finite fixtures are not a general security proof or recommended curve."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed all three extracted Python blocks independently per language with Python 3.12.14 and cryptography 50.0.2; ASTs match. Each version passed five OAEP payload roundtrips including empty/UTF-8/190 bytes and four rejection cases (191 bytes, wrong label, altered ciphertext, wrong private key). Two displayed hashes matched hashlib; fourteen streaming hash cases and two fixed abc digests passed. PSS passed three valid messages and six rejection cases covering altered document/signature, wrong key, truncated signature, wrong scheme and salt length. Dedicated signing keys differ from encryption keys. This is offline sample verification, not a live security audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared nine primary-reference URLs and their actual read scopes in the source notes. Checked matching-language Euclidean/ECC target files, slug metadata and relevant target introductions without treating those targets as reviewed. Removed Japanese block/lock and authentication/CA homonym links. Preserved publication time, slug and eyecatch and added actual lastmod. Corrected HTML markers, three Mermaid blocks, multilingual 973 pages and HTTPS 1,804 HTML/41 XML passed in the isolated fourteen-bundle Hugo build. Publication remains pending."
+        }
+      },
+      "summary": "Full English cryptography review, with corrected Japanese source, RSA proof conditions and OAEP bounds, ECC parameters, hash definitions, self-contained RSA-PSS code, certificate path/service-identity and TLS distinctions.",
+      "languageSpecificFindings": "Restored the English display-math presentation and matched every condition to Japanese, including the previously missing coprimality premise and CRT argument. Replaced blanket RSA security, universal trapdoor/public-key-encryption framing, SHA-3 attack immunity, signatures as decryption and root-key-only certificate checking. Narrowed the comprehensive description to the actual introductory scope. English signature output now states validity for the message and key rather than unconditional document authenticity.",
+      "limitations": [
+        "AI technical/editorial review; no native-speaker or human confirmation.",
+        "No formal cryptographic proof, side-channel analysis, live TLS/CA or full X.509 conformance test.",
+        "Mermaid source and HTML inspected, not visual rendering.",
+        "Eleven other translations of this article remain unreviewed and retain their previous content.",
+        "Publication verification pending."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc8017.html",
+        "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+        "https://www.rfc-editor.org/rfc/rfc6090.html",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf",
+        "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+        "https://csrc.nist.gov/pubs/fips/186-5/final",
+        "https://www.rfc-editor.org/rfc/rfc5280.html",
+        "https://www.rfc-editor.org/rfc/rfc9525.html",
+        "https://www.rfc-editor.org/rfc/rfc8446.html"
+      ],
+      "validation": "docs/translation-review/batch-013-validation.json"
+    }
+  },
+  "stageAssembly": {
+    "checkedAt": "2026-10-27T02:09:07.179298+09:00",
+    "sourceAndEnglishComplete": true,
+    "otherTranslationsUnreviewed": 11,
+    "publicationPending": true
+  }
+}
