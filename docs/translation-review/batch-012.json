@@ -192,6 +192,102 @@
         "https://pyjwt.readthedocs.io/en/stable/api.html"
       ],
       "validation": "docs/translation-review/batch-012-validation.json"
+    },
+    "post/oauth2-oidc-authentication-authorization-difference/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/oauth2-oidc-authentication-authorization-difference/index.md",
+      "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+      "translationHash": "dd9368abd68bb90b7adcf66ec8d79d5ef26d55d347a74b6aff30c795cbf0911a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Korean metadata/body and complete corrected Japanese source, revised the full Korean article, and independently reread the complete revision. Compared authentication/authorization, all four roles and grants, public/confidential clients, normative grant conditions, transaction-specific PKCE, browser redirects and code exchange, OIDC scope/token purposes, claims and key trust, state/nonce/CSRF, expiry and refresh conditions. Matched all ten sequence messages, actors and notes. Structural and code checks supplement full semantic reading."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished 인증 (authentication), 인가 (authorization) and 검증 (validation), 서명 versus 암호화/복호화, 공개 versus 기밀 클라이언트, 발급자 versus 수신 대상, and 폐기 versus 만료. Used 리소스 소유자, 자격 증명, 클레임, 인가 시도, 바인딩, 리프레시 토큰 and 로테이션 consistently. Kept 32바이트 distinct from 256비트 and the original 224-bit truncation. Corrected generic public-key decryption, three-part-only JWT and decoding-as-login statements; preserved exact grant recommendation strengths, issuer-scoped subject identity, required claims/nonce, callback bindings and the single-string-audience RS256 example limits. Explained sender constraints as cryptographic binding to the client presenting the token."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all three display formulas and surrounding conditions: S256 ASCII verifier input with unpadded Base64url, JWS ASCII signing input with algorithm-internal hashing, and expiry reformulation only when exp=iat+lifetime. First two exactly match the source, third differs only in translated conditional text. Extracted JavaScript passed the RFC vector; identical JWS and expiry expressions use the independent source cryptography and boundary/counterexample checks."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed both extracted JavaScript and Python blocks per language using Node v22.14.0, PyJWT 2.15.1 and cryptography. JS checks covered 32-byte encoding and upper-bit retention, the RFC vector, valid lengths 43/128, twelve invalid inputs including trailing newlines, and returned S256 parameter binding. Each Python block passed 38 cases covering required claims, nonce, strict audience, azp, claim types, signature, algorithm none, issuer, expiry, nbf and transaction nonce arguments. AST and exact JavaScript equality checked. These are offline component fixtures, not a complete login or provider-conformance test."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared all six primary-reference URLs and Korean descriptions with the source and documented reading scope. Verified matching-language cryptography and XSS/CSRF relref targets, eyecatch, original publication timestamp and lastmod. Corrected HTML markers and links passed. Fourteen-bundle Hugo, multilingual 973 pages and HTTPS 1,804 HTML/41 XML passed. Unreviewed preview dependency not counted as reviewed. Publication pending."
+        }
+      },
+      "summary": "Full Korean review of OAuth/OIDC roles, grant guidance, PKCE generation, token-purpose and claim/nonce validation, formulas and transaction security conditions.",
+      "languageSpecificFindings": "Distinguished 인증 (authentication), 인가 (authorization) and 검증 (validation), 서명 versus 암호화/복호화, 공개 versus 기밀 클라이언트, 발급자 versus 수신 대상, and 폐기 versus 만료. Used 리소스 소유자, 자격 증명, 클레임, 인가 시도, 바인딩, 리프레시 토큰 and 로테이션 consistently. Kept 32바이트 distinct from 256비트 and the original 224-bit truncation. Corrected generic public-key decryption, three-part-only JWT and decoding-as-login statements; preserved exact grant recommendation strengths, issuer-scoped subject identity, required claims/nonce, callback bindings and the single-string-audience RS256 example limits. Explained sender constraints as cryptographic binding to the client presenting the token.",
+      "limitations": [
+        "AI technical and editorial review, not a native-speaker or human confirmation.",
+        "No live OP, network JWKS fetch, browser login, session-security audit or penetration test.",
+        "Mermaid source and HTML checked; visual diagram rendering was not inspected.",
+        "Seven other OAuth/OIDC translations remain unreviewed and retain old content.",
+        "Publication verification pending."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://www.rfc-editor.org/rfc/rfc7636.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://www.rfc-editor.org/rfc/rfc7515.html",
+        "https://pyjwt.readthedocs.io/en/stable/api.html"
+      ],
+      "validation": "docs/translation-review/batch-012-validation.json"
+    },
+    "post/oauth2-oidc-authentication-authorization-difference/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "source": "post/oauth2-oidc-authentication-authorization-difference/index.md",
+      "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+      "translationHash": "6c0191b5f734b6751b5210ac88c49675ff17f378c318037620ee72a49d7dbdb0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all original Portuguese metadata/body and the complete corrected Japanese source, revised the entire Portuguese article, and independently reread the complete revision. Compared authentication/authorization, four OAuth roles and grants, public/confidential clients, normative grant conditions, transaction-specific PKCE, browser redirects and code exchange, OIDC scope/token purposes, required claims and key trust, state/nonce/CSRF, expiry and optional refresh lifecycle. Matched all ten sequence messages, actors and notes. Structural and execution checks supplement full semantic reading."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Preserved the original Brazilian Portuguese register: usuário, aplicativo, criptografia, cache and gerenciamento. Distinguished autenticação/autorização, declarações, clientes públicos/confidenciais, assinatura/criptografia/descriptografia, emissor/destinatário, expiração/revogação and tokens de acesso/ID/atualização. Corrected assinatura criptografada and generic public-key descriptografia explanations, mandatory refresh and client-as-owner assumptions. Kept ROPC NÃO DEVE (MUST NOT) distinct from conditional NÃO DEVERIAM (SHOULD NOT) for implicit access-token responses. Explained sender constraints as cryptographic binding to the client presenting the token, not the JWT issuer; preserved transaction-specific state/nonce/PKCE, issuer-scoped subject identity and the narrow RS256/single-string-audience example."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all three complete formulas and their surrounding premises: S256 ASCII verifier input with unpadded Base64url, JWS ASCII signing input with algorithm-internal hashing, and expiry reformulation only under exp=iat+lifetime. First two formulas exactly match the source; the third differs only in translated conditional text. The extracted JavaScript passed the RFC vector; identical JWS and expiry expressions use independent source cryptography and boundary/counterexample checks."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed both extracted JavaScript and Python blocks per language using Node v22.14.0, PyJWT 2.15.1 and cryptography. JS checks covered 32-byte encoding and upper-bit retention, the RFC vector, valid lengths 43/128, twelve invalid inputs including trailing newlines, and returned S256 parameter binding. Each Python block passed 38 cases covering required claims, nonce, strict audience, azp, claim types, signature, algorithm none, issuer, expiry, nbf and transaction nonce arguments. AST and exact JavaScript equality checked. These are offline component fixtures, not a complete login or provider-conformance test."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared all six primary-reference URLs and Portuguese descriptions with the source and documented reading scope. Verified matching-language cryptography and XSS/CSRF relref targets, eyecatch, original publication timestamp and lastmod. Corrected local HTML markers and links passed. Fourteen-bundle Hugo, multilingual 973 pages and HTTPS 1,804 HTML/41 XML passed. Unreviewed preview dependency not counted as reviewed; existing Portuguese UI warning scope retained. Publication pending."
+        }
+      },
+      "summary": "Full Portuguese review of OAuth/OIDC roles, normative grant guidance, PKCE generation, ID-token claims/nonce validation, formulas and transaction security conditions.",
+      "languageSpecificFindings": "Preserved the original Brazilian Portuguese register: usuário, aplicativo, criptografia, cache and gerenciamento. Distinguished autenticação/autorização, declarações, clientes públicos/confidenciais, assinatura/criptografia/descriptografia, emissor/destinatário, expiração/revogação and tokens de acesso/ID/atualização. Corrected assinatura criptografada and generic public-key descriptografia explanations, mandatory refresh and client-as-owner assumptions. Kept ROPC NÃO DEVE (MUST NOT) distinct from conditional NÃO DEVERIAM (SHOULD NOT) for implicit access-token responses. Explained sender constraints as cryptographic binding to the client presenting the token, not the JWT issuer; preserved transaction-specific state/nonce/PKCE, issuer-scoped subject identity and the narrow RS256/single-string-audience example.",
+      "limitations": [
+        "AI technical and editorial review, not a native-speaker or human confirmation.",
+        "No live OP, network JWKS fetch, browser login, session-security audit or penetration test.",
+        "Mermaid source and HTML checked; visual diagram rendering was not inspected.",
+        "Six other OAuth/OIDC translations remain unreviewed and retain old content.",
+        "Publication verification pending."
+      ],
+      "references": [
+        "https://www.rfc-editor.org/rfc/rfc6749.html",
+        "https://www.rfc-editor.org/rfc/rfc7636.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "https://openid.net/specs/openid-connect-core-1_0.html",
+        "https://www.rfc-editor.org/rfc/rfc7515.html",
+        "https://pyjwt.readthedocs.io/en/stable/api.html"
+      ],
+      "validation": "docs/translation-review/batch-012-validation.json"
     }
   }
 }

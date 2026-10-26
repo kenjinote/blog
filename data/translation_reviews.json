@@ -1485,6 +1485,26 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-012.json",
       "evidenceHash": "b077ba985ea6c427fe673330c6a88f5979e5c0bf321808f96ed1ade85b43bf89"
+    },
+    "post/oauth2-oidc-authentication-authorization-difference/index.ko.md": {
+      "source": "post/oauth2-oidc-authentication-authorization-difference/index.md",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+      "translationHash": "dd9368abd68bb90b7adcf66ec8d79d5ef26d55d347a74b6aff30c795cbf0911a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-012.json",
+      "evidenceHash": "e2912bed00c1d92d0800d3aad0262f3ad2f5a4f554a8b3d002889dedff63ca3d"
+    },
+    "post/oauth2-oidc-authentication-authorization-difference/index.pt.md": {
+      "source": "post/oauth2-oidc-authentication-authorization-difference/index.md",
+      "reviewedAt": "2026-10-27",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "deb4628715150576a8bad574e7f006f61485649d5a24ab51713b7c61d55c94b4",
+      "translationHash": "6c0191b5f734b6751b5210ac88c49675ff17f378c318037620ee72a49d7dbdb0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-012.json",
+      "evidenceHash": "69527bcadc96fda5f71ba01c517bbe7ea2b9dacb88af8ba31aff46e863850fb5"
     }
   }
 }
