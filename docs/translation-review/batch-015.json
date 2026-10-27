@@ -114,6 +114,63 @@
         }
       ],
       "validation": "docs/translation-review/batch-015-zh-cn-validation.json"
+    },
+    "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.md",
+      "sourceHash": "7f1f1b6784f4e24625bb4f4efae25b6ff517b40e5eecadd82661d59e249fcbec",
+      "translationHash": "149544cdee318a7b30dfefc3cad7373e9830d51b67bc632fd8b197877cf3fb32",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all original Traditional Chinese metadata/body in two bounded ranges before editing. Independently reread all corrected prose/metadata and three diagrams; compared common Python. Matched all eleven sections,27diagram edges, thirteen display formulas and original numeric teaching progression to the corrected Japanese source. Retained nonnegative exponent/coprimality conditions, distinct odd primes, primewise zero/nonzero plus CRT proof, authenticated keys, OAEP/PSS scheme roles and quantum-complexity scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 公開金鑰/私有金鑰 with 公鑰/私鑰 abbreviations, 公鑰指數/私鑰指數 distinct from whole-key representation, 質數/互質, 同餘, 模數, 模反元素, 擴展歐幾里得演算法, 中國餘數定理 with English gloss. Replaced literal 總計函數 with 歐拉函數 and totient gloss. Distinguished 編碼/加密, 身分驗證/簽章驗證, 數位簽章, 雜湊, 位元/位元組, 訊息/代表值, and 常數時間. Removed Euclid biography word-fragment links and unsupported timing/security guarantees."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all display formulas and relevant inline assumptions. Completed Fermat zero/nonzero cases modulo each distinct prime then CRT, retaining Euler proof under its coprimality premise. Verified all143 representatives in each direction, including23noncoprime, known toy arithmetic, totient count and factor recovery, exact617decimal digits for all2048-bit integers via endpoints, and OAEP2048/SHA256190-byte formula. Three diagram edge counts8/14/5 match. Finite checks supplement the mathematical argument; no security proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed the actual revised standalone Python block under3.12.14, exactly identical to the reviewed Japanese/English/Simplified Chinese block. Passed143representatives in each direction including23noncoprime values,18type/range/coprimality rejections,572raw multiplicative-modification cases, dictionary recovery, totient/factor recovery and2048-bit617-digit checks. Reproduced raw public signature pairS2/M128 without usingd; no OAEP/PSS attack. Original Traditional Chinese code was read, not separately executed; original JA/EN reproduction retained in source audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched four primary URLs and their previously read scoped source notes, plus the matching Traditional Chinese link to the already-reviewed modern-cryptography article. Removed unsupported biography/extra automatic links; did not count dependency articles reviewed. Preserved slug, publication timestamp and image; actual lastmod2026-10-28. Checked image and generated links/markers/three diagrams, all104decoded TeX expressions. Sixteen-bundle minified Hugo, multilingual1077pages and HTTPS1986HTML/41XML passed; publication pending."
+        }
+      },
+      "summary": "Full Traditional Chinese RSA-beginner review against corrected Japanese source, including complete proof conditions, three diagrams and executed teaching code.",
+      "languageSpecificFindings": "Corrected total-counting calque 總計函數, restored modulus-bit-length versus prime-size distinctions, standardized 公開金鑰/私有金鑰 and key exponents, 模反元素, 中國餘數定理, 雜湊 and 數位簽章. Removed split Euclid biography link, restored noncoprime proof and qualified raw RSA, quantum and runtime guarantees. All eleven sections and public numeric examples retained.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No visual browser/KaTeX/Mermaid audit, constant-time/security proof, real secret key generation or OAEP/PSS implementation audit.",
+        "Nine other translations remain unreviewed; no dates added to them.",
+        "Publication verification remains pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Actually read scoped key, primitive, range-check, OAEP and signature/PSS excerpts recorded in batch-015-source-notes.md; not full RFC."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Read §1.2 static RSA removal and E.8 RSA key-transport distinction; not full RFC or current web prevalence measurements."
+        },
+        {
+          "url": "https://docs.python.org/3.12/library/functions.html#pow",
+          "scope": "Read pow integer/modulus/inverse and Python3.8 introduction; actual runtime3.12.14. Not a constant-time or fixed-duration assurance."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Read abstract/metadata only: polynomial steps in input size on hypothetical quantum computer; not full paper or hardware forecasts."
+        }
+      ],
+      "validation": "docs/translation-review/batch-015-zh-tw-validation.json"
     }
   },
   "englishStageAssembly": {
@@ -152,6 +209,29 @@
     "publicationPending": true,
     "priorReviewEntryDigests": {
       "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.en.md": "5ebb31343f7134f849dc7d2317c75668a5779fa6f5e4af45b59e12d223985f88"
+    }
+  },
+  "traditionalChineseStageAssembly": {
+    "checkedAt": "2026-10-28T02:19:30.214320+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw"
+    ],
+    "otherTranslationsUnreviewed": 9,
+    "build": {
+      "scope": "Sixteen isolated bundles",
+      "hugo": "0.139.0 extended",
+      "minified": true,
+      "multilingualPages": 1077,
+      "httpsHtml": 1986,
+      "httpsXml": 41
+    },
+    "buildPending": false,
+    "publicationPending": true,
+    "priorReviewEntryDigests": {
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.en.md": "5ebb31343f7134f849dc7d2317c75668a5779fa6f5e4af45b59e12d223985f88",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-cn.md": "2a43fea2212c5c5204bb68dfd5f3fc642dc6e269df508e4953d537d0a898664e"
     }
   }
 }

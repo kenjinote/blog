@@ -1825,6 +1825,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-015.json",
       "evidenceHash": "2a43fea2212c5c5204bb68dfd5f3fc642dc6e269df508e4953d537d0a898664e"
+    },
+    "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-tw.md": {
+      "source": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.md",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7f1f1b6784f4e24625bb4f4efae25b6ff517b40e5eecadd82661d59e249fcbec",
+      "translationHash": "149544cdee318a7b30dfefc3cad7373e9830d51b67bc632fd8b197877cf3fb32",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-015.json",
+      "evidenceHash": "0250e825ae6ef34f34d7d10f13f4706721dd4f48ac3565bb2b29529a0b4f73c6"
     }
   }
 }
