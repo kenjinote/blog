@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T02:04:47.783800+09:00",
+  "scope": "All thirteen ECC versions; shared exact C++ recompiled once with scalar and toy fixtures.",
+  "files": [
+    {
+      "language": "ar",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ar.md",
+      "hash": "44ce37fb983492973320b7d1e5eddcd8e48fe26971ede1ae407682cd230186da",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    },
+    {
+      "language": "de",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.de.md",
+      "hash": "89b50a45813a7a3e172419edfaf0f6b34885fb5c80bc5e4ee7dfceef898bf9d8",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.en.md",
+      "hash": "b2ee74f5bf9c2fb8559a522290a14acbaa5ae672e423aef8fb81a7cab10ddfb3",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.es.md",
+      "hash": "b3b6f91337a2457a1472034093b4203504bccb7e11b28a23bfb7d2c314e97c84",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.fr.md",
+      "hash": "504de0ce40ae47416a62f6f237ab0836ee7a2c8d6997418e6a005819247ae194",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.hi.md",
+      "hash": "1c7611f5ff1273cae667a6f68a9d43ebe0149db533bff6614aad2e6cae93bc53",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.id.md",
+      "hash": "90cbdaac7c64a960c5e9fa1964d9e55ebd729d9e39d85927d269109fc44f87e4",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ko.md",
+      "hash": "4998fd11040f906116da51b2ca3e6f32846e012e08bbc45670132f4428c08021",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    },
+    {
+      "language": "ja",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "hash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 60,
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.pt.md",
+      "hash": "81776bcbe5888e899fe7068b21a6c4bfbe0168dd5262c5d7e92427635c814f06",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ru.md",
+      "hash": "dce8894077c63fe8d1140ec65b69977b8ea9cdecf35daad8188d4711faa395d5",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.zh-cn.md",
+      "hash": "c873ca321e8908d0472a0ac3faf466a7c2b5aa869ed280f960e4e7ffe54f16df",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.zh-tw.md",
+      "hash": "4ad6cf60bbf5a284f8f9a99cc2a7a47645701ef70df85703a2a9347426c7c08e",
+      "cppBlocksIdenticalToSharedCompiledProgram": 5,
+      "displayMath": 11,
+      "mermaidEdges": [
+        3,
+        6,
+        6
+      ],
+      "renderedTeXExpressions": 59,
+      "passed": true
+    }
+  ],
+  "sharedCodeSHA256": "ccee92d6f3181c81e10ca5c3793dce8f7fabdcbe536c34556b26e3b14803c5a0",
+  "mainStdout": "2G.x = c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5\n2G.y = 1ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a\nnG = infinity\n",
+  "scalarDifferentialCases": 13,
+  "invalidCasesRejected": 13,
+  "toyCurve": {
+    "points": 20,
+    "independentAdditionPairs": 400,
+    "associativityTriples": 8000,
+    "ladderRepeatedAdditionCases": 820,
+    "zeroYDoublingCases": 3
+  },
+  "compiler": "g++",
+  "wsl": "Ubuntu",
+  "site": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-15-bundles-ecc-ar",
+  "allPassed": true,
+  "limitations": "AI review recorded separately. Finite functional checks only; no constant-time/security proof, native-speaker certification or visual browser audit."
+}

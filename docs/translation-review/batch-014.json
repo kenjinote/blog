@@ -931,5 +931,48 @@
     ],
     "otherTranslationsUnreviewed": 0,
     "publicationPending": true
+  },
+  "finalAssembly": {
+    "checkedAt": "2026-10-28T02:05:20.050743+09:00",
+    "reviewedTranslations": 12,
+    "sourceVersions": 1,
+    "otherTranslationsUnreviewed": 0,
+    "validation": "docs/translation-review/batch-014-final-validation.json",
+    "reproducer": "docs/translation-review/verify_batch_014.py",
+    "build": {
+      "hugo": "0.139.0 extended",
+      "minified": true,
+      "scope": "Fifteen article bundles; not a full site build. Full build remains in CI.",
+      "multilingualPages": 1050,
+      "httpsHtml": 1945,
+      "httpsXml": 41
+    },
+    "repositoryTests": {
+      "multilingual": 10,
+      "mathRendering": 1,
+      "translationReviews": 6,
+      "allPassed": true,
+      "ledger": {
+        "current": 180,
+        "unreviewed": 12852
+      }
+    },
+    "immutableReviewEntryDigests": {
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.en.md": "7c26b178db51caf92b17f0233111e520683ea1e99812404cafda132c330f19f1",
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.zh-cn.md": "40cd0e54da5e042d33cece709e8f31f7d413a8e77b56da7a919725eb814767e3",
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.zh-tw.md": "f64b53b892aa253f9c175db66b63c4b9ac15dec952d5309c83462685572af35d",
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.es.md": "79023cfb2e6a3c4211a27d5411a2fc122e1eca1209a56f0b4d6c0254aaa65d94",
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ko.md": "97837b5b85341178fd61566ceb00897208e0cacd87b08968b33a599feeb5a585",
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.pt.md": "51bfc7faf7dbb8a0e84a40cba5e18282381e194c644f6fe7fdbcfbfc508f1987",
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.fr.md": "4301c7c4412057fa2f59ba6e7735fd51d3cd25378ce4f33194e80affcad6c820",
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.de.md": "07055aa7769c0e705ca2c82f583f42e38ac71aa38120688334cacbcbdde83dc0",
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.id.md": "44e5ca11f5f0d60166cf287b05ec617f252fb7bf751078b9ff99d0166f320a06",
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.hi.md": "65b186d272163cc87dc77a0b030be717c62825925c6a828ac044a60a6f6bee82",
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ru.md": "77b3ecffaebf9ee560879954691d47c6f56d917a94b61173c5d92d2841849558",
+      "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ar.md": "f1a2cbcfc8c7e64762d34ee5534771ce92b79d484aefa1a81b75283d55c2b7e1"
+    },
+    "buildPending": false,
+    "publicationPending": true,
+    "limitations": "Individual stage entries retain their actual dates and historical pending scope. Final public CI and195URL verification pending; no human/native-speaker, browser visual or side-channel security audit."
   }
 }
