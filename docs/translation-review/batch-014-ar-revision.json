@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "startedAt": "2026-10-28T01:58:30.713414+09:00",
+  "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ar.md",
+  "originalHash": "fcb7d58e08b3045a9155a3c9299dd9a634e854905ca2d414ea1cdf79359c4a7b",
+  "fullOriginalBodyAndMetadataRead": true,
+  "readingScope": "Read original in two consecutive bounded ranges, with all metadata, prose, formulas, diagrams, code and conclusion.",
+  "reviewRecorded": true,
+  "findings": [
+    "Associativity translated as merging الدمج and quantifies a,b but omits c despite formula.",
+    "Scalar multiplication الضرب القياسي can be confused with a vector dot product; explain repeated point addition explicitly.",
+    "Inherited constant-time promises contradict branching cpp_int code and omit zero/scalar/point guards.",
+    "Missing characteristic/discriminant/affine/subgroup premises and ECDH validation/authentication/KDF; shared value/session key conflated.",
+    "Unqualified ECDLP/performance claims, completed-group wording and Crypto/Abelian/Euclide/Jacobian word-fragment links."
+  ],
+  "finalHash": "44ce37fb983492973320b7d1e5eddcd8e48fe26971ede1ae407682cd230186da",
+  "fullCorrectedBodyAndMetadataReread": true,
+  "validation": "docs/translation-review/batch-014-ar-validation.json",
+  "status": "Full review recorded; publication pending."
+}

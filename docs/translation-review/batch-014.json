@@ -715,6 +715,71 @@
         }
       ],
       "validation": "docs/translation-review/batch-014-ru-validation.json"
+    },
+    "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "translationHash": "44ce37fb983492973320b7d1e5eddcd8e48fe26971ede1ae407682cd230186da",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Arabic metadata/body in two bounded ranges before editing; independently reread the entire revised prose/metadata, all three diagrams and text pseudocode. Matched nine sections, five-row security table, eleven display equations and five identical C++ blocks to the corrected Japanese source. Preserved field/subgroup/private-scalar distinctions, finite-field and nonsingularity conditions, all affine exceptions, generic classical ECDLP estimates, ECDLP/CDH direction, authenticated ECDH validation and KDF requirements, and the actual variable-time educational scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Replaced الدمج (merging) with التجميع (associativity). Defined ضرب النقطة في عدد (scalar multiplication) as repeated point addition rather than a vector dot product. Distinguished حقل أولي, زمرة جزئية, رتبة, عنصر مولد, point inverse versus field inverse, مفتاح عام/خاص versus قيمة/سر مشترك, agreement/authentication/derivation and زمن ثابت versus متغير. Corrected agreement in the sentence on integer representation/compiler/processor. Retained Arabic tags and supplied technical glosses."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All eleven display formulas match exactly; inline premises and table values checked against scoped primary references. NIST Table2 ranges and historical/quantum caveats checked as parsed text. secp256k1 p,a,b,G,n,h checked in SEC2§2.4.1. Ran thirteen scalar differential cases including zero, n±1, n, high-bit and maximum accepted values against cryptography50.0.2; a public toy curve p17,a2,b0 exercised all400 ordered additions against independent Python,8000 associativity triples,820 ladder/repeated-addition cases and all three y=0 doubling points. These finite checks do not prove general security or constant-time behavior."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Extracted this version's five C++ blocks, confirmed exact equality with the reviewed Japanese code, compiled and ran the complete program and additional harness using g++13.3.0/Boost1.83. Passed thirteen scalar differential cases against cryptography50.0.2 and thirteen rejection cases, plus modular/inverse/infinity/inverse-point/swap checks. Existing400-pair/8000-triple/820-scalar toy-curve evidence applies to the identical core and was not redundantly re-executed for this language. Not a constant-time or production implementation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all six primary-reference URLs and their scoped source notes; kept the Arabic link to the reviewed modern-cryptography article. Removed misleading biography/word-fragment links and duplicate body heading. Preserved slug, publication timestamp and image; lastmod/review date actual 2026-10-28. Verified three generated Mermaid blocks, markers and all59 decoded TeX expressions; minified fifteen-bundle Hugo, multilingual1050pages and HTTPS1945HTML/41XML passed. Publication remains pending; no dependency article counted reviewed."
+        }
+      },
+      "summary": "Full Arabic ECC review against corrected Japanese source, including all mathematics, diagrams, metadata and compiled variable-time teaching code.",
+      "languageSpecificFindings": "Corrected merging versus associativity, explained scalar multiplication without vector-dot-product ambiguity, separated private keys from shared values and derived keys, restored nonzero/exceptional/group-order assumptions and qualified security/performance claims. Removed unsupported constant-time assurances and misleading links. AI review dated2026-10-28; no native-speaker certification.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No browser visual/KaTeX/Mermaid audit, side-channel timing/assembly test, live ECDH/TLS audit or production cryptographic implementation.",
+        "Publication verification remains pending.",
+        "All twelve ECC translations reviewed; publication verification remains pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7748.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.secg.org/sec2-v2.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc5869.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        }
+      ],
+      "validation": "docs/translation-review/batch-014-ar-validation.json"
     }
   },
   "englishStageAssembly": {
@@ -846,6 +911,25 @@
       "ru"
     ],
     "otherTranslationsUnreviewed": 1,
+    "publicationPending": true
+  },
+  "arabicStageAssembly": {
+    "checkedAt": "2026-10-28T02:02:58.665467+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko",
+      "pt",
+      "fr",
+      "de",
+      "id",
+      "hi",
+      "ru",
+      "ar"
+    ],
+    "otherTranslationsUnreviewed": 0,
     "publicationPending": true
   }
 }
