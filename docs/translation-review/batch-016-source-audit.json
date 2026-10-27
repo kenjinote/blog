@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T02:52:40.856494+09:00",
+  "slug": "public-key-cryptography-rsa-ecc",
+  "stage": "Initial source audit before edits; not a completed translation review",
+  "files": [
+    {
+      "language": "ar",
+      "path": "post/public-key-cryptography-rsa-ecc/index.ar.md",
+      "hash": "da85143627fe1fb3661b7fa76de81303b2b346635aab69ec8d7323ebea9e2584",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "de",
+      "path": "post/public-key-cryptography-rsa-ecc/index.de.md",
+      "hash": "012d7e863a64b7e21d95df24175239ae7dde2e86fee2963c71b351e4e0c66cbc",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "en",
+      "path": "post/public-key-cryptography-rsa-ecc/index.en.md",
+      "hash": "e7d8151347bacf0acaf0514f266665b1c1b9b7884abefd7bf3bb32fd42fe7962",
+      "fullBodyRead": true,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "es",
+      "path": "post/public-key-cryptography-rsa-ecc/index.es.md",
+      "hash": "2da69d3282e214fae560ae839e2bf6eda12c9fac12eed3f3503d248390c7d9e7",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "fr",
+      "path": "post/public-key-cryptography-rsa-ecc/index.fr.md",
+      "hash": "bdff2ded7e1c8508e2466365bca9efe677a8851a9c5bc7ee50d8e2aeac0b4eb9",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "hi",
+      "path": "post/public-key-cryptography-rsa-ecc/index.hi.md",
+      "hash": "ab40c904279648b10525ad71a6a7c51f62a4d7cfd52a699aa6dba7290d95acd6",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "id",
+      "path": "post/public-key-cryptography-rsa-ecc/index.id.md",
+      "hash": "0fac108a183c9ef0623c2145d8dcdc589f6444f8db3a4c99b554c2412bf95614",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "ko",
+      "path": "post/public-key-cryptography-rsa-ecc/index.ko.md",
+      "hash": "d0e3b5388477b7fe281c253288751f408971334ad28a54d61e38c44344e94c2e",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "ja",
+      "path": "post/public-key-cryptography-rsa-ecc/index.md",
+      "hash": "81ae8314fde0fe6614fa01801cdaadebd522ea1dde6554bad21f4147f73b90b4",
+      "fullBodyRead": true,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "pt",
+      "path": "post/public-key-cryptography-rsa-ecc/index.pt.md",
+      "hash": "8e0ac9d5b85a6b0492ce3ebebee591b1822149c4635af362e27cb0046d11cf4e",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "ru",
+      "path": "post/public-key-cryptography-rsa-ecc/index.ru.md",
+      "hash": "f557162e81d611b5dce93c8356b66751f00738d00f781f8d0e46c77d07319b5b",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "path": "post/public-key-cryptography-rsa-ecc/index.zh-cn.md",
+      "hash": "dec31dbada18bd250ff6ba8cb2ee176251ba1b839c52a75bb3c4f06f20f36304",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/public-key-cryptography-rsa-ecc/index.zh-tw.md",
+      "hash": "3c6541d5cc6deae1517cdda0deae7231bd741ac5223ade98f7f2a3bf319289ad",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    }
+  ],
+  "sourceReviewComplete": false,
+  "findings": [
+    "DH shared value is not a traffic key; unauthenticated DH permits active MITM; DLP and CDH are distinct problems.",
+    "RSA e=1 passes the stated coprimality condition but exposes plaintext; specify distinct odd primes and representative range.",
+    "Euler proof needs coprimality; all representatives require primewise zero/nonzero proof and CRT.",
+    "Factoring N suffices to recover d; attacks need not factor N. Raw modular exponentiation is not OAEP/PSS.",
+    "Unsupported generic RSA-1024 factored assertion and universal current key policy; replace with explicitly dated security-strength comparison.",
+    "Finite-field nonsingularity must be modulo p>3; point at infinity, inverses and y=0 doubling missing.",
+    "Doubling is a special case of scalar multiplication; require subgroup order and private scalar range.",
+    "Generic Pollard rho estimate is not a lower-bound proof and special curves can be weak.",
+    "Unsupported universal ECC performance/market and PQC guarantees; distinguish TLS1.3 key agreement, signatures, bulk AEAD.",
+    "Japanese conclusion contains mixed Bengali corruption."
+  ],
+  "refutedSuspicion": "No missing math/Mermaid enablement: global params.article.math true and render-codeblock-mermaid hook sets hasMermaid. No renderer changes needed.",
+  "arithmeticReproductions": {
+    "scope": "Independent small public mathematical fixtures, not executable article code or attacks on production systems. Article has two Mermaid blocks and no executable code.",
+    "dh": {
+      "p": 23,
+      "order": 11,
+      "g": 2,
+      "matchingSecretPairs": 100,
+      "identityPeerForcesOne": true,
+      "mitm": {
+        "a": 6,
+        "b": 7,
+        "attackerExponents": [
+          3,
+          4
+        ],
+        "aliceAttackerShared": 13,
+        "bobAttackerShared": 18,
+        "bothKnownToAttacker": true,
+        "sameAcrossPeers": false
+      }
+    },
+    "rsa": {
+      "N": 143,
+      "phi": 120,
+      "e": 7,
+      "d": 103,
+      "representativesRoundTrip": 143,
+      "nonCoprimeRepresentatives": 23,
+      "e1PassesOldRuleAndLeavesPlaintextUnchanged": true
+    },
+    "singularFieldCounterexample": {
+      "p": 5,
+      "a": 0,
+      "b": 5,
+      "integerDiscriminantFactor": 675,
+      "fieldDiscriminantFactor": 0,
+      "singularPoint": [
+        0,
+        0
+      ]
+    },
+    "ellipticCurve": {
+      "p": 17,
+      "a": 2,
+      "b": 0,
+      "pointsIncludingInfinity": 20,
+      "y0Points": [
+        [
+          0,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "doublingRequiresInfinityInsteadOfInverseZero": true
+    }
+  }
+}

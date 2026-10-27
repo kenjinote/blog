@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/public-key-cryptography-rsa-ecc/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/public-key-cryptography-rsa-ecc/index.md",
+      "sourceHash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "translationHash": "0c05625225de845dc2421a34b48b199a67d4bed28e529ac80005b6a64eba4208",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Japanese and English metadata and bodies, then independently reread both revised versions in four bounded outputs. Compared six numbered sections, conclusion, six primary references and two diagrams. Preserved the progression from symmetric key distribution through DH, RSA, ECC and quantum computing, correcting source assumptions rather than reproducing them in English."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished key agreement from key transport/encryption, shared value from derived traffic keys, authentication from public value validation, subgroup generator from primitive root, DLP from CDH, private exponent from full RSA key, integer representatives from bytes, modulus length from base-point order and serialized key size, point doubling from general scalar multiplication, finite field from real geometry, and classical security estimates from successful factoring records."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all nine display formulas exactly and checked relevant inline assumptions. DH uses prime subgroup order and nonzero uniform secret exponents; Euler proof retains coprimality and all representatives use primewise zero/nonzero cases and CRT. ECC uses p>3, nonsingularity modulo p, infinity/identity/inverse and y=0 exceptions. Independent fixtures verify100DH pairs, active MITM values13/18,143RSA representatives including23noncoprime,286primewise cases, the e1 flaw,20curve points/400pairs/8000associativity triples/3zero-y doublings and a singular field counterexample. Finite checks are not security proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The original and revised article contain no executable code blocks. Inspected both Mermaid diagrams and their arithmetic labels; edge counts8/2 match Japanese. Ran the independent small arithmetic fixtures in verify_batch_016.py, not an article implementation, compiler test or production cryptographic audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Read the scoped primary excerpts documented in batch-016-source-notes.md, not whole RFCs or original historical papers. Matched all six HTTPS reference URLs between JA/EN, checked image exists and preserved publication timestamp, slug, categories/tags and image. Added actual lastmod2026-10-28. Minified Hugo17-bundle build passed; multilingual1103pages and HTTPS2025HTML/41XML passed. Exact173TeX expressions survive generated HTML across JA/EN, including1<e<phi. Full CI/publication remains pending."
+        }
+      },
+      "summary": "Full English DH/RSA/ECC overview review against corrected Japanese source; mathematical correctness, security assumptions and protocol roles are separated.",
+      "languageSpecificFindings": "Replaced unsupported claims of universal RSA1024 factoring, mandatory ECC migration, guaranteed superior performance and absolute security with scoped statements. Clarified subgroup generator versus whole-group primitive root, private exponent versus key, doubling versus scalar multiplication, public-key validation versus authentication, and polynomial input complexity versus instantaneous execution. Matched the Japanese source correction of the Bengali-corrupted conclusion; English originally had no such corruption.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "No executable article code; independent mathematical fixtures only, no constant-time/security proof or protocol implementation audit.",
+        "No visual browser/KaTeX/Mermaid audit.",
+        "Eleven other translations remain unreviewed; no dates added to them.",
+        "Publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7919.html",
+          "scope": "Scoped abstract and5.1–5.2 known-group public validation and exponent excerpts; not universal arbitrary-group validation."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "Scoped2.2–2.3,3,4,10–10.3 and historical bibliography excerpts listed in source notes; not full original historical papers."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Scoped keys/lambda/ranges, RSAEP, OAEP composition and PSS encoding/signature excerpts; not full conformance audit."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Scoped1.2/E.8 RSA transport versus signatures,4.2.8.1,7–7.1 key schedule and7.4.1 serialization excerpts; not prevalence survey."
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+          "scope": "2020 publication metadata and parsed PDF text5.6.1–5.6.1.1/Table2 definitions and comparison rows; not current universal key policy or visual PDF inspection."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Abstract and metadata only, polynomial steps in input size on hypothetical quantum computer; not hardware forecast."
+        }
+      ],
+      "validation": "docs/translation-review/batch-016-ja-en-validation.json"
+    }
+  },
+  "stage": {
+    "sourceAndEnglishFullBodyReviewed": true,
+    "otherTranslationsReviewed": 0,
+    "otherTranslationsRemaining": 11,
+    "fullCiPending": true,
+    "publicationPending": true,
+    "validation": "docs/translation-review/batch-016-ja-en-validation.json"
+  }
+}
