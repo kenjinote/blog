@@ -1085,8 +1085,19 @@
       "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ar.md": "6696bbe9935255b9b1344b4d22250ad7fc313341c6c1061bf891601b083e8213"
     },
     "buildPending": false,
-    "publicationPending": true,
-    "limitations": "Historical stage entries retain actual review dates and pending status. Full public CI and208URL publication verification pending. AI review; no human/native-speaker, visual browser, constant-time or production-cryptography certification."
+    "publicationPending": false,
+    "limitations": "Historical stage entries retain actual dates and pending status. Full CI and208URL publication check passed. AI review; no human/native-speaker, visual browser, constant-time or production-cryptography certification.",
+    "publicationVerification": {
+      "checkedAt": "2026-10-28T03:10:16.189384+09:00",
+      "evidence": "docs/translation-review/publication-015.json",
+      "ciRun": 40553703153,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40553703153",
+      "deployedCommit": "020bbb785cb94b31616c2df1a57083ca0d6205e1",
+      "ciBuildAndDeploy": "success",
+      "publicPagesPassed": 208,
+      "scope": "Batches001–015:192translations plus16Japanese sources. Exact modern-cryptography/ECC/RSA-beginner TeX preserved,2789expressions total. Excludes batch016 local overview revisions.",
+      "limitations": "HTTP/content/decoded-math/language-link checks, not browser layout, native-speaker or security certification."
+    }
   },
   "publicationDispatch": {
     "observedAt": "2026-10-28T02:47:06.679012+09:00",
