@@ -570,6 +570,63 @@
         }
       ],
       "validation": "docs/translation-review/batch-015-hi-validation.json"
+    },
+    "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.md",
+      "sourceHash": "7f1f1b6784f4e24625bb4f4efae25b6ff517b40e5eecadd82661d59e249fcbec",
+      "translationHash": "b81afcaab7e0eb5b8cbbe3865cd2ced7d453bb2bee2d4351092feb5cde9e0e72",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Russian metadata/body in two bounded ranges before editing. Independently reread all revised prose/metadata and three diagrams, comparing exact common Python. Matched eleven sections,13display formulas and27diagram edges to corrected Japanese. Retained all numeric examples, nonnegative exponent/coprimality conditions, primewise zero/nonzero plus CRT proof for all representatives, authenticated keys, raw arithmetic versus OAEP/PSS schemes and scoped quantum complexity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished открытая/секретная экспонента and показатель степени from full открытый/закрытый ключ, модуль/битовая длина from prime sizes, простые from взаимно простые числа, сравнения по модулю from integer equality, целочисленный представитель from bytes, обратный элемент, функция Эйлера, расширенный алгоритм Евклида and китайская теорема об остатках. Separated кодирование/шифрование, аутентификация/проверка and подписи. Removed split Евклид-а biography links, unsupported Python right-to-left algorithm and instant-execution claims. Clarified choosing the private exponent as an inverse on reread."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all display formulas and relevant inline assumptions. Completed Fermat zero/nonzero cases modulo each distinct prime then CRT, retaining Euler proof under its coprimality premise. Verified all143 representatives in each direction, including23noncoprime, known toy arithmetic, totient count and factor recovery, exact617decimal digits for all2048-bit integers via endpoints, and OAEP2048/SHA256190-byte formula. Three diagram edge counts8/14/5 match. Finite checks supplement the mathematical argument; no security proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed actual revised standalone Python under3.12.14, exactly identical to reviewed Japanese/English/Chinese/Spanish/Korean/Portuguese/French/German/Indonesian/Hindi blocks. Passed143representatives in both directions including23noncoprime values,18type/range/coprimality rejections,572raw multiplicative-modification cases, dictionary recovery, totient/factor recovery and617digits for2048-bit endpoints. Confirmed public raw signature pairS2/M128 withoutd; not an OAEP/PSS attack. Original Russian code read but not separately executed; original JA/EN reproduction retained in source audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched four primary URLs and their already-read scoped source notes; retained Russian modern-cryptography link to a reviewed target. Removed split Евклид-а and biography/extra automatic links without counting dependencies reviewed. Preserved slug, publication timestamp and image; actual lastmod/review date2026-10-28. Checked image, generated links/markers, three diagrams and all103decoded TeX expressions. Sixteen-bundle minified Hugo, multilingual1077pages and HTTPS1986HTML/41XML passed; publication pending."
+        }
+      },
+      "summary": "Full Russian RSA-beginner review against corrected Japanese source, including all proof premises, diagrams and executed teaching arithmetic.",
+      "languageSpecificFindings": "Corrected exponent versus full key, modulus bits versus prime size, remainder equality versus congruence, unconditional impossibility and fixed-runtime claims. Removed split Евклид-а link and unsupported Python right-to-left algorithm assertion. Completed noncoprime proof, clarified inverse choice and dedicated signature scheme. Retained eleven sections and known numeric examples; no native-speaker certification.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No visual browser/KaTeX/Mermaid audit, constant-time/security proof, real secret key generation or OAEP/PSS implementation audit.",
+        "One other translation remain unreviewed; no dates added to them.",
+        "Publication verification remains pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Actually read scoped key, primitive, range-check, OAEP and signature/PSS excerpts recorded in batch-015-source-notes.md; not full RFC."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Read §1.2 static RSA removal and E.8 RSA key-transport distinction; not full RFC or current web prevalence measurements."
+        },
+        {
+          "url": "https://docs.python.org/3.12/library/functions.html#pow",
+          "scope": "Read pow integer/modulus/inverse and Python3.8 introduction; actual runtime3.12.14. Not a constant-time or fixed-duration assurance."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Read abstract/metadata only: polynomial steps in input size on hypothetical quantum computer; not full paper or hardware forecasts."
+        }
+      ],
+      "validation": "docs/translation-review/batch-015-ru-validation.json"
     }
   },
   "englishStageAssembly": {
@@ -848,6 +905,45 @@
       "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.fr.md": "244d6c2d2872b91ea74875314c51a7fa5499ec30be0254ec7bf92773d5fd185b",
       "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.de.md": "bfa7fcd3790dd1dcb385f54a96548866c6cfff996f8b3cc5776aef93ea2c00ab",
       "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.id.md": "c2ac6ea0348c2d5d2c79d5bc0a75e4187d777be77cf61aed4587c9a6d2e33547"
+    }
+  },
+  "russianStageAssembly": {
+    "checkedAt": "2026-10-28T02:42:02.951001+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko",
+      "pt",
+      "fr",
+      "de",
+      "id",
+      "hi",
+      "ru"
+    ],
+    "otherTranslationsUnreviewed": 1,
+    "build": {
+      "scope": "Sixteen isolated bundles",
+      "hugo": "0.139.0 extended",
+      "minified": true,
+      "multilingualPages": 1077,
+      "httpsHtml": 1986,
+      "httpsXml": 41
+    },
+    "buildPending": false,
+    "publicationPending": true,
+    "priorReviewEntryDigests": {
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.en.md": "5ebb31343f7134f849dc7d2317c75668a5779fa6f5e4af45b59e12d223985f88",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-cn.md": "2a43fea2212c5c5204bb68dfd5f3fc642dc6e269df508e4953d537d0a898664e",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-tw.md": "0250e825ae6ef34f34d7d10f13f4706721dd4f48ac3565bb2b29529a0b4f73c6",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.es.md": "c69597478e3ddb0d3a8bebb9b7594d2f8329fac7c94b30536ece7164723b5c9e",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ko.md": "e2becca70a82361f3d347e8f01e14cfb990fee3e7bb31350a552a987552da2fa",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.pt.md": "7f377d4877057269d85a480f086ea8b3e3f855456c4e6b96d101d5e63d14de0a",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.fr.md": "244d6c2d2872b91ea74875314c51a7fa5499ec30be0254ec7bf92773d5fd185b",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.de.md": "bfa7fcd3790dd1dcb385f54a96548866c6cfff996f8b3cc5776aef93ea2c00ab",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.id.md": "c2ac6ea0348c2d5d2c79d5bc0a75e4187d777be77cf61aed4587c9a6d2e33547",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.hi.md": "f7f5e20fde98a7a2db4686c09e788ec8c32f7eed7044d85c7a577bd6ea59de96"
     }
   }
 }
