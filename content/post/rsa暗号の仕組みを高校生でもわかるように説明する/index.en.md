@@ -2,6 +2,7 @@
 title: "[Math Explanation] Explaining How RSA Encryption Works So Even a High Schooler Can Understand"
 slug: "rsa-encryption-math-explained-for-beginners"
 date: "2026-09-11T13:00:00+09:00"
+lastmod: "2026-10-28"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,345 +10,232 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Prime Numbers", "Math", "Cryptography"]
 ---
 
-One of the technologies supporting the safety of our internet society from the ground up is "[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Encryption". Many of the communications we casually use every day, such as credit card payments in online shopping, SNS exchanges with friends, and the transmission/reception of company confidential information, are protected by this RSA encryption and its successor technologies.
+RSA is used in public-key encryption and digital signatures. Its arithmetic can be explored with high-school ideas: prime numbers, remainders and powers. However, the textbook operation of raising an integer to a power must be distinguished from the encryption schemes used in real communications.
 
-However, when you hear the word "cryptography", you might imagine complex cipher machines like those in spy movies, or super advanced mathematics that only a few geniuses can understand. It is true that modern cryptographic theory is based on advanced mathematics, but **the fundamental mechanism of RSA encryption can be fully understood if you have the knowledge of high school mathematics (properties of integers, prime numbers, congruences, etc.)**.
+This article follows small public examples and explains why decryption recovers the input. Practical schemes such as RSAES-OAEP for encryption and RSASSA-PSS for signatures require their own encoding and verification rules. See also the [overview of public keys, hashing and signatures](/en/p/modern-cryptography-public-key-hash-signature/).
 
-In this article, taking high school math knowledge as a starting point, I will thoroughly explain step-by-step the mathematical principles by which RSA encryption operates and why it is so difficult to crack. I will explain carefully with concrete examples so that even those who are not very good at math can understand.
+## 1. Symmetric-key and public-key cryptography
 
----
+In symmetric-key encryption, the sender and receiver share a secret key for encryption and decryption. It can handle large amounts of data efficiently, but sharing that key safely with a new correspondent is a separate challenge.
 
-## 1. Symmetric-key and Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
-
-Before getting into the mathematical mechanisms of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption, let's first organize the basic ideas of cryptography. Cryptographic methods can be broadly divided into two types: "Symmetric-key Cryptography" and "Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy".
-
-### 1.1 Limitations of Symmetric-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
-
-Many of the traditionally used ciphers are what is called the "Symmetric-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" method. This is a method that uses **the same key for both "encryption (converting a message into secret ciphertext)" and "decryption (restoring the ciphertext back to the original message)"**.
-
-For example, suppose Alice sends a secret letter to Bob. Alice uses a padlock (symmetric key) to put the letter in a box and lock it. In order for Bob to open that box, he needs to have the exact same key that Alice used.
-
-There is a major problem with this method. It is the "key distribution problem". When Alice and Bob, who are far apart, communicate for the first time, how should they share the key without it being eavesdropped on? If the key is stolen by a third party while being mailed, all subsequent encrypted communications will be completely leaked.
-
-### 1.2 The Breakthrough Invention: "Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy"
-
-"Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" was invented to solve this key distribution problem. [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption is also one of this kind.
-
-In public-key cryptography, we use **two different keys: a "key for encryption (public key)" and a "key for decryption (private key)"**.
-
-1. The receiver, Bob, creates a pair of "public key" and "private key".
-2. Bob publishes the "public key" to the world (it doesn't matter who gets it).
-3. The sender, Alice, encrypts her message using Bob's "public key" and sends it.
-4. The encrypted message can only be decrypted with the "private key" that only Bob possesses.
-
-Comparing this to padlocks, Bob makes many "open padlocks (public keys)" and scatters them all over the world. Alice puts her message addressed to Bob into a box and snaps it shut using a padlock of Bob's that she picked up. Once the padlock is closed, it can only be opened with the "master key (private key)" that Bob holds. Even if someone steals the box on the way, they cannot open it because they don't have the master key.
+For public-key encryption, the receiver, Bob, prepares a public and private key. Alice encrypts with Bob's public key. A padlock analogy is a lock that anyone can close, with Bob keeping the key that opens it. Alice must still establish that the public key really belongs to Bob. Authentication to prevent key substitution is an additional requirement.
 
 ```mermaid
 graph TD
-    A["Alice (Sender)"] --> B["Plaintext (Message)"]
-    B --> C["Encryption Process"]
-    D["Bob's Public Key (Available to anyone)"] --> C
-    C --> E["Send via Internet: Ciphertext"]
-    E --> F["Decryption Process"]
-    G["Bob's Private Key (Held only by Bob)"] --> F
-    F --> H["Restored Plaintext (Message)"]
-    H --> I["Bob (Receiver)"]
+    A["Alice (sender)"] --> B["Message"]
+    B --> C["Scheme encoding and encryption"]
+    D["Authenticated public key of Bob"] --> C
+    C --> E["Send ciphertext"]
+    E --> F["Decryption and encoding checks"]
+    G["Bob's private key"] --> F
+    F --> H["Message after successful checks"]
+    H --> I["Bob (receiver)"]
 ```
 
-In order to realize this epoch-making system, a kind of **"one-way function (a one-way mathematical puzzle)"** is necessary, one where "encryption with the public key is easy, but decryption without the private key is absolutely impossible." What was focused on as a component of that puzzle was the "prime numbers" we all know so well.
+The intended property is computational difficulty of decryption without the private key, even when the public key is known. It is not an unconditional mathematical guarantee that decryption is impossible. Public-key techniques also include key agreement and signatures; they do not all perform the same encryption operation.
 
----
+## 2. Primes and factorization
 
-## 2. The Mathematical Foundation Supporting [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) 1: Prime Numbers and Prime Factorization
+A prime is an integer greater than one whose only positive divisors are one and itself. The first examples are $2,3,5,7,11,13,17,19,23$. Every integer greater than one has a unique prime factorization up to ordering; for example, $60=2^2\times3\times5$. Zero is excluded, and one is treated separately as the empty product.
 
-The security of RSA encryption is based on the mathematical fact that **"prime factorization of huge numbers is extremely difficult."**
+Calculating $11\times13=143$ is easy, but finding $17\times19$ from $323$ is a different task. RSA publishes $N=pq$ for suitably chosen large, distinct primes $p,q$. Knowing the factors allows the private exponent to be calculated. Factoring the modulus breaks RSA, but we do not claim that every way of breaking RSA has been proved generally equivalent to factorization.
 
-### 2.1 What are Prime Numbers?
+“2048-bit RSA” normally describes the **bit length of the modulus $N$**. A 2048-bit $N$ has 617 decimal digits. With balanced two-prime parameters, each prime is approximately 1024 bits. Difficulty depends on parameter generation, sizes, available algorithms and computing resources. An unsupported estimate of “trillions of years” or “longer than the age of the universe” is not a useful guarantee.
 
-A prime number is "a natural number greater than 1 that can only be divided by 1 and itself."
-Example: $2, 3, 5, 7, 11, 13, 17, 19, 23...$
+## 3. Congruences and remainders
 
-Prime numbers are like the "atoms" of all integers. Any natural number can be broken down into the product of prime numbers. This is called **prime factorization**. For example, it is known as the "Fundamental Theorem of Arithmetic" that a number can be uniquely factorized into primes (ignoring order), such as $60 = 2^2 \times 3 \times 5$.
+As on a twelve-hour clock, where five hours after ten is called three, we can focus on remainders modulo a number.
 
-### 2.2 The Difficulty of Prime Factorization (One-way Function)
+$$15\equiv3\pmod{12}$$
 
-What's important here is the asymmetry that **"multiplication is easy, but prime factorization is difficult."**
+For a modulus $N>1$, if $a\equiv b\pmod N$ and $c\equiv d\pmod N$, addition, subtraction and multiplication preserve congruence. For a nonnegative integer $k$, we also have $a^k\equiv b^k\pmod N$. Negative exponents require additional conditions, including the existence of inverses.
 
-For example, try doing mental arithmetic for the multiplication of the following two prime numbers.
-$11 \times 13 = ?$
-This is easy. The answer is $143$.
+Since $7\equiv2\pmod5$, we have $7^{100}\equiv2^{100}\pmod5$. Intermediate results may be replaced by their remainders, allowing computation without constructing the full enormous power. This does not mean that the power of a remainder and the remainder of a power are equal as ordinary integers.
 
-Then, how about the following number?
-Please prime factorize $323$.
-How is it? It should take a little time. (The answer is $17 \times 19$).
+## 4. Euler's totient function and theorem
 
-If the numbers are small, humans can manage to calculate them, but as the numbers get larger, it becomes explosively difficult to calculate even using computers. In mainstream RSA encryption today, we use a number $N = p \times q$, which is the product of two incredibly huge prime numbers $p$ and $q$ of 2048 bits (about 600 digits in decimal).
+$\phi(N)$ counts the integers $1\le a\le N$ that are coprime to $N$. For example, $\phi(5)=4$ and $\phi(6)=2$. For a prime $p$,
 
-Given two huge prime numbers $p$ and $q$, it takes an instant (less than a millisecond) for a computer to calculate $N$. However, conversely, given only $N$, finding the original $p$ and $q$ takes so much time that even the current fastest supercomputer could not solve it if it ran for trillions of years.
+$$\phi(p)=p-1$$
 
-This **"computational asymmetry (one way is easy, the reverse is difficult)"** is the foundation that creates the relationship between the public key and the private key.
+For distinct primes $p,q$ and $N=pq$,
 
----
+$$\phi(N)=(p-1)(q-1)$$
 
-## 3. The Mathematical Foundation Supporting RSA 2: Congruence (Modulo Arithmetic)
+Knowing $p,q$ makes this value easy to calculate. Conversely, knowing $\phi(N)$ gives $p+q=N-\phi(N)+1$ and $pq=N$, from which a quadratic equation recovers both factors. The totient must therefore also be kept secret.
 
-The calculations for RSA encryption are not done with addition or multiplication where numbers grow infinitely like we normally use, but rather in a world of "remainders" after dividing by a certain number. This is called **congruence (modulo arithmetic)**.
+Euler's theorem states that, if $\gcd(a,N)=1$,
 
-### 3.1 Clock Math
+$$a^{\phi(N)}\equiv1\pmod N$$
 
-Modulo arithmetic is often compared to "clock math". If it is currently 10 o'clock, what time will it be 5 hours from now? $10 + 5 = 15$ o'clock, but on a normal 12-hour clock, we answer "3 o'clock". This is because the remainder of 15 divided by 12 is 3.
+Multiplying both sides by $a$ gives
 
-In the world of mathematics, this is written as follows:
-$$ 15 \equiv 3 \pmod{12} $$
-You read this as "15 is congruent to 3 modulo 12 (the remainder when divided by 12 is equal)."
+$$a^{\phi(N)+1}\equiv a\pmod N$$
 
-### 3.2 Basic Properties of Congruences
+and, for every nonnegative integer $k$,
 
-Congruences have very convenient properties very similar to equalities ($=$). Let the modulus (the divisor) be $N$.
-When $a \equiv b \pmod N$ and $c \equiv d \pmod N$, the following hold true:
+$$a^{k\phi(N)+1}\equiv a\pmod N$$
 
-1. **Addition:** $a + c \equiv b + d \pmod N$
-2. **Subtraction:** $a - c \equiv b - d \pmod N$
-3. **Multiplication:** $a \times c \equiv b \times d \pmod N$
-4. **Exponentiation:** $a^k \equiv b^k \pmod N$ ($k$ is a natural number)
+The intermediate assertion $a^{\phi(N)}\equiv1$ cannot be used after dropping the coprimality assumption.
 
-Particularly important is the property of "exponentiation". This means that **"the power of a remainder is equal to the remainder of the power"**.
-For example, suppose you want to find the remainder of $7^{100}$ divided by $5$. Multiplying $7$ a hundred times and then dividing by $5$ in earnest is very hard, but if you use the properties of congruences, since $7 \equiv 2 \pmod 5$, it becomes $7^{100} \equiv 2^{100} \pmod 5$, and you can drastically simplify the calculation. This property is indispensable in the world of cryptography because we deal with exponentiations of very large numbers.
+## 5. Textbook RSA keys, encryption and decryption
 
----
+We now use a two-prime teaching model. Actual parameters require appropriately large, distinct odd primes $p,q$; the later example deliberately uses small known values to make the arithmetic visible.
 
-## 4. The Mathematical Foundation Supporting RSA 3: Euler's Totient Function and Euler's Theorem
+1. Calculate $N=pq$ and $\phi(N)=(p-1)(q-1)$.
+2. Choose a public exponent $e$ with $1<e<\phi(N)$ and $\gcd(e,\phi(N))=1$.
+3. Find a positive private exponent $d$ satisfying
 
-From here on is the magic mathematics that forms the core of RSA encryption. "Euler's Theorem", a generalization of "[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)", makes its appearance.
+$$ed\equiv1\pmod{\phi(N)}$$
 
-### 4.1 Euler's Totient Function $\phi(N)$
+The public key is $(N,e)$, and a basic private-key representation is $(N,d)$. The number $d$ is an exponent, not the entire standard key representation on its own. Practical representations can also include factors and CRT parameters. RFC 8017 defines the condition using $\lambda(N)=\operatorname{lcm}(p-1,q-1)$. Taking the inverse modulo $\phi(N)$ here is a simple sufficient condition that also satisfies the condition modulo $\lambda(N)$.
 
-For a given natural number $N$, Euler's totient function (the $\phi$ function) is a function that returns **"the number of natural numbers from 1 to $N$ that are coprime with $N$ (meaning their greatest common divisor is 1)."**
+For a **message representative** $0\le M<N$, the textbook encryption calculation is
 
-Let's look at some examples.
-- $\phi(5)$: Among 1, 2, 3, 4, 5, the numbers coprime with 5 are 1, 2, 3, 4, which is 4 numbers. Therefore, $\phi(5) = 4$.
-- $\phi(6)$: Among 1, 2, 3, 4, 5, 6, the numbers coprime with 6 are 1, 5, which is 2 numbers. Therefore, $\phi(6) = 2$.
+$$C\equiv M^e\pmod N$$
 
-**[Special Property in the Case of Prime Numbers]**
-If $p$ is a prime number, all numbers from 1 to $p-1$ are coprime with $p$. Therefore,
-$$ \phi(p) = p - 1 $$
+For a ciphertext representative $0\le C<N$, decryption calculates
 
-**[Special Property in the Case of the Product of Prime Numbers]**
-For two distinct prime numbers $p$ and $q$, if $N = p \times q$, $\phi(N)$ can be easily calculated as follows.
-$$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-This property functions as the "secret backdoor (trapdoor)" in [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption. The person who knows $p$ and $q$ (the creator of the key) can calculate $\phi(N)$ instantly, but a third party who only knows $N$ cannot determine $\phi(N)$ unless they prime factorize $N$.
+$$M\equiv C^d\pmod N$$
 
-### 4.2 Euler's Theorem
-
-[Leonhard Euler](https://kenji.blog/en/p/euler/) used this $\phi(N)$ to prove the following beautiful theorem.
-
-**Euler's Theorem:**
-When the integer $a$ and $N$ are coprime, the following congruence holds.
-$$ a^{\phi(N)} \equiv 1 \pmod N $$
-
-This is an amazing property that says, "If you multiply a number $a$ by itself $\phi(N)$ times and divide by $N$, the remainder will always be $1$." (When $N$ is a prime number $p$, it becomes $a^{p-1} \equiv 1 \pmod p$, which is called [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)).
-
-Let's modify this Euler's Theorem. Multiply both sides by $a$ one more time.
-$$ a^{\phi(N) + 1} \equiv a \pmod N $$
-
-Furthermore, for any integer $k$, since $a^{k \cdot \phi(N)}$ also becomes $1^k = 1$, the following equation holds.
-$$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
-
-This very equation is the fundamental principle that makes the magic of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption work: **"If you encrypt and then decrypt, it returns to the original."**
-
----
-
-## 5. The RSA Algorithm: Steps for Key Generation, Encryption, and Decryption
-
-Now that we have the basic knowledge, let's finally look at the specific steps of RSA encryption. RSA encryption is roughly divided into three phases: "1. Key Generation," "2. Encryption," and "3. Decryption."
+In a practical scheme, message bytes undergo the specified encoding before conversion to an integer, and decryption includes validation. Converting characters directly to an integer and exponentiating is insufficient.
 
 ```mermaid
 flowchart TD
-    A1["1. Choose prime numbers p, q"] --> A2["Calculate N = p × q"]
-    A1 --> A3["Calculate φ(N) = (p-1)(q-1)"]
-    A3 --> A4["Choose e coprime with φ(N)"]
-    A3 --> A5["Calculate d such that e × d ≡ 1 (mod φ(N))"]
-    A2 --> A6["Public Key (N, e)"]
+    A1["1. Distinct odd primes p, q"] --> A2["N = p q"]
+    A1 --> A3["phi = (p-1)(q-1)"]
+    A3 --> A4["1＜e＜phi, gcd(e,phi)=1"]
+    A3 --> A5["Inverse d: e d ≡ 1 mod phi"]
+    A2 --> A6["Public key (N,e)"]
     A4 --> A6
-    A5 --> A7["Private Key d"]
-    
-    B1["2. Plaintext message M"] --> B2["Calculate C ≡ M^e (mod N)"]
+    A5 --> A7["Private key (N,d)"]
+    B1["2. Toy representative 0≤M＜N"] --> B2["C = M^e mod N"]
     A6 -.-> B2
-    B2 --> B3["Send ciphertext C"]
-    
-    B3 --> C1["3. Received ciphertext C"]
-    C1 --> C2["Calculate M ≡ C^d (mod N)"]
+    B2 --> B3["0≤C＜N"]
+    B3 --> C1["3. Received representative C"]
+    C1 --> C2["M = C^d mod N"]
     A7 -.-> C2
-    C2 --> C3["Obtain original plaintext message M"]
+    C2 --> C3["Original representative M"]
 ```
 
-### 5.1 Key Generation
+RSA arithmetic alone is deterministic: the same $M$ gives the same $C$. With a small set of candidates, anyone can encrypt each candidate with the public key and compare. Moreover, replacing $C$ with $C\,r^e\bmod N$ changes the recovered representative to $Mr\bmod N$. The security properties needed for a practical encryption scheme do not follow from this arithmetic alone.
 
-The receiver, Bob, generates a "public key" and a "private key" for himself.
+## 6. Why decryption recovers the input
 
-1. **Choice of Primes:** Randomly choose two large prime numbers $p$ and $q$.
-2. **Calculation of Modulus $N$:** Calculate $N = p \times q$. This $N$ is made public.
-3. **Calculation of $\phi(N)$:** Calculate Euler's function $\phi(N) = (p - 1)(q - 1)$. This is a secret number only Bob knows.
-4. **Choice of [Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) $e$:** Choose an integer $e$ such that $1 < e < \phi(N)$ and $e$ is coprime with $\phi(N)$.
-5. **Calculation of Private Key $d$:** Find an integer $d$ that satisfies the following condition.
-   $$ e \times d \equiv 1 \pmod{\phi(N)} $$
-   In other words, this is "a number $d$ such that the remainder is $1$ when $e \times d$ is divided by $\phi(N)$."
+Decryption computes
 
-Now the key preparation is complete.
-- **Public Key:** The pair $(N, e)$. It is published to the whole world.
-- **Private Key:** $d$. Never tell anyone under any circumstances.
+$$C^d\equiv(M^e)^d\equiv M^{ed}\pmod N$$
 
-### 5.2 Encryption
+By the key condition, there is a nonnegative integer $k$ with
 
-Suppose Alice wants to send a secret message $M$ to Bob. (Let $M$ be a number formed by digitizing characters, and assume $0 \le M < N$). Alice calculates as follows using Bob's public key $(N, e)$.
+$$ed=k\phi(N)+1$$
 
-$$ C \equiv M^e \pmod N $$
+If $\gcd(M,N)=1$, Euler's theorem gives
 
-She calculates "the remainder $C$ when message $M$ is raised to the power of $e$, divided by $N$". This $C$ is the ciphertext.
+$$M^{ed}=(M^{\phi(N)})^k M\equiv1^k M\equiv M\pmod N$$
 
-### 5.3 Decryption
+However, RSA representatives need not be coprime to $N$. For example, $M=0,11,13$ are all in range. We therefore examine each prime separately.
 
-Bob receives the ciphertext $C$. Bob calculates as follows using his private key $d$.
+- If $p\mid M$, then $M^{ed}\equiv M\equiv0\pmod p$, since the exponent $ed$ is positive.
+- If $p\nmid M$, Fermat's little theorem gives $M^{p-1}\equiv1\pmod p$. Since $ed-1$ is a multiple of $p-1$, we have $M^{ed}\equiv M\pmod p$.
+- The same reasoning applies modulo $q$.
 
-$$ M \equiv C^d \pmod N $$
+The distinct primes $p,q$ are coprime, so the Chinese remainder theorem gives
 
-By calculating "the remainder when ciphertext $C$ is raised to the power of $d$, divided by $N$", amazingly, the original message $M$ is restored!
+$$M^{ed}\equiv M\pmod{pq}$$
 
----
+for every representative $0\le M<N$. This proves arithmetic correctness, not the security of an encryption scheme against eavesdropping or modification.
 
-## 6. Why Does Decryption Revert it to the Original? (Mathematical Proof)
+## 7. A hand calculation with small primes
 
-You might be wondering, "Why does simply raising $C$ to the power of $d$ return it to the original $M$?" This is where the aforementioned "Euler's Theorem" demonstrates its power.
+Let $p=11,q=13$. Then $N=143$ and $\phi(N)=120$. Choose $e=7$ and solve $7d\equiv1\pmod{120}$. Since $7\times103=721=6\times120+1$, we may use $d=103$.
 
-Let's substitute the encryption formula $C = M^e$ into the decryption calculation formula $C^d \pmod N$.
-$$ C^d \equiv (M^e)^d \equiv M^{ed} \pmod N $$
+For the toy input $M=9$, $9^7=4,782,969=33,447\times143+48$, so $C=48$. Decryption gives $48^{103}\bmod143=9$. In Python, `pow(48, 103, 143)` calculates this without first constructing the full integer $48^{103}$.
 
-Here, recall Step 5 of the key generation. When Bob made $d$, he chose it so that $e \times d \equiv 1 \pmod{\phi(N)}$. This means "the number $ed$ is a multiple of $\phi(N)$ plus $1$." Using an integer $k$, it can be written as follows:
-$$ ed = k \cdot \phi(N) + 1 $$
+These primes and the private exponent are public teaching values visible to everyone. They cannot protect secret messages.
 
-Substitute this into the exponent part, and decompose it using exponent rules.
-$$ M^{ed} = M^{k \cdot \phi(N) + 1} = M^{k \cdot \phi(N)} \times M^1 = (M^{\phi(N)})^k \times M $$
+## 8. Finding an inverse with the extended Euclidean algorithm
 
-Here, assuming that the message $M$ and $N$ are coprime, from **Euler's Theorem**, we get $M^{\phi(N)} \equiv 1 \pmod N$.
-$$ (M^{\phi(N)})^k \times M \equiv 1^k \times M \equiv M \pmod N $$
+The congruence $7d\equiv1\pmod{120}$ means that integers $d,y$ satisfy $7d+120y=1$. Since $120=17\times7+1$, we have $1=120-17\times7$, giving $d\equiv-17\equiv103\pmod{120}$.
 
-Therefore, the following formula beautifully holds true.
-$$ C^d \equiv M \pmod N $$
+The extended Euclidean algorithm finds such coefficients in general. An inverse exists when the integer and modulus are coprime. The computation depends on input length; it does not take a fixed amount of time for arbitrarily large inputs.
 
-Alice does not know $d$, and an eavesdropper does not know $d$ either, so only Bob, who has $d$, can extract $M$ from $C$.
+## 9. Digital signatures use a dedicated scheme
 
----
+RSA signatures are generated with a private key and verified with the corresponding public key. Describing this as “encrypting with the private key and decrypting with the public key” hides the differences between encryption and signature encoding and validation.
 
-## 7. Concrete Example: Experiencing [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) by Hand Calculation Using Small Primes
-
-Let's actually try encrypted communication from Alice to Bob using small numbers (prime numbers).
-
-**[Bob's Key Generation Phase]**
-1. Choose two prime numbers $p=11$, $q=13$.
-2. Calculate $N = 11 \times 13 = 143$.
-3. Calculate $\phi(N) = (11 - 1) \times (13 - 1) = 10 \times 12 = 120$.
-4. Choose a public key $e$ that is coprime with $\phi(N)=120$. Here we will use $e=7$.
-5. Find the private key $d$. Look for $d$ such that $7 \times d \equiv 1 \pmod{120}$.
-   In the equation $7d = 120k + 1$, when $k=6$, it becomes $721$, and $721 \div 7 = 103$.
-   Therefore, $d = 103$.
-
-- Public Key: $(N=143, e=7)$
-- Private Key: $d=103$
-
-**[Alice's Encryption Phase]**
-Suppose she wants to send the message $M = 9$.
-Formula: $C \equiv 9^7 \pmod{143}$
-$9^7 = 4,782,969$. Dividing this by 143 gives $33447$ with a remainder of $48$.
-The ciphertext became $C = 48$.
-
-**[Bob's Decryption Phase]**
-Bob receives the ciphertext $C = 48$ and decrypts it using his private key $d = 103$.
-Formula: $M \equiv 48^{103} \pmod{143}$
-If you run `(48 ** 103) % 143` on a calculator, the result wonderfully turns out to be "**9**"! The original message was successfully received.
-
----
-
-## 8. How to Find the Private Key $d$: Extended [Euclide](https://kenji.blog/en/p/euclid/)an Algorithm
-
-In the hand calculation example, we found $d=103$ by guessing to find $k$, but this method is impossible when the numbers are hundreds of digits long. In actual programs, an algorithm called the **"Extended [Euclide](https://kenji.blog/en/p/euclid/)an Algorithm"** is used.
-
-Solving $7d \equiv 1 \pmod{120}$ is the same as finding integers $d, y$ that satisfy $7d + 120y = 1$. By working backwards through the [Euclide](https://kenji.blog/en/p/euclid/)an Algorithm, this can be calculated mechanically.
-
-1. $120 \div 7 = 17$ remainder $1$ 
-2. Transforming this, $1 = 120 - 17 \times 7$
-3. In other words, $-17 \times 7 \equiv 1 \pmod{120}$
-
-In the world of modulo $120$, $-17$ has the same meaning as $120 - 17 = 103$. Therefore, $d = 103$ is found in an instant. This method can calculate very quickly no matter how huge the numbers are.
-
----
-
-## 9. Another Face of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Encryption: [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s
-
-The wonderful thing about RSA encryption is that it can also be used as a **"digital signature"** by reversing the roles of the public and private keys.
-
-When encrypting, it was "Encrypt with public key $\Rightarrow$ Decrypt with private key", but
-for digital signatures, it takes the steps "Encrypt with private key $\Rightarrow$ Decrypt with public key".
+The raw relation $S=M^d\bmod N$, checked by $S^e\equiv M\pmod N$, is not a secure signature scheme. For example, an attacker can choose $S=2$ and use the public values $e=7,N=143$ to calculate $M=2^7\bmod143=128$. That pair passes the raw check without using the private key. This does not claim a signature on any particular message chosen beforehand; it demonstrates that the raw check is insufficient as a signature scheme.
 
 ```mermaid
 flowchart TD
-    A1["1. Alice creates a signature with her private key"] --> A2["S ≡ M^d (mod N)"]
-    A2 --> A3["Sends the message M and signature S"]
-    
-    A3 --> B1["2. Bob verifies the signature with the public key"]
-    B1 --> B2["Calculates M' ≡ S^e (mod N)"]
-    B2 --> B3["Checks if M' matches M"]
+    A1["Alice: process message with a dedicated scheme"] --> A2["Hash, PSS encode, sign with private key"]
+    A2 --> A3["Send message and signature"]
+    A3 --> B1["Bob: authenticate Alice's public key"]
+    B1 --> B2["Verify scheme, parameters and encoding"]
+    B2 --> B3["Accept or reject signature"]
 ```
 
-Alice transforms the message using her own private key $d$ (this is the signature $S$), and sends it to Bob. Bob performs the verification calculation using Alice's public key $e$. If the calculation result matches the original message, it simultaneously proves that "it is data that could only be created with Alice's private key" and that "the message has not been tampered with along the way".
+Schemes such as RSASSA-PSS combine hashing with dedicated encoding and verification. A signature does not hide the message, and key management and binding the key to an identity still matter. Separate encryption and signing keys by purpose and use a maintained library supporting the intended protocol.
 
----
+## 10. Checking the teaching arithmetic with Python
 
-## 10. Experiencing [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Encryption with Programming
-
-Exponentiation calculations that are tough by hand can be implemented very easily using Python. Below is a Python code that lets you experience the core logic of RSA encryption.
+The following standalone Python 3.8+ example uses only known toy values. `pow(e, -1, phi)` computes an inverse for coprime integers. The representative's range is checked explicitly. This is not a key generator, OAEP, PSS or a constant-time implementation.
 
 ```python
-def gcd(a, b):
-    """Find the greatest common divisor"""
-    while b != 0:
-        a, b = b, a % b
-    return a
+from math import gcd
+
 
 def mod_inverse(e, phi):
-    """Find the private key d (using built-in feature in Python 3.8+)"""
+    # Fixed public teaching parameters, not a key generator.
+    if type(e) is not int or type(phi) is not int:
+        raise TypeError("Integer parameters required")
+    if phi <= 1 or not 1 < e < phi or gcd(e, phi) != 1:
+        raise ValueError("Invalid teaching exponent or modulus")
     return pow(e, -1, phi)
 
-# 1. Key Generation
+
+def rsa_primitive_demo(value, exponent, modulus):
+    # Range checks do not make raw RSA a secure encryption scheme.
+    if any(type(x) is not int for x in (value, exponent, modulus)):
+        raise TypeError("Integer parameters required")
+    if modulus <= 1 or exponent <= 0 or not 0 <= value < modulus:
+        raise ValueError("Invalid exponent, modulus or representative")
+    return pow(value, exponent, modulus)
+
+
+# Public toy values only. Never use this code or these keys for secrets.
 p, q = 11, 13
 N = p * q
 phi = (p - 1) * (q - 1)
 e = 7
 d = mod_inverse(e, phi)
-
-print(f"Public Key: (N={N}, e={e}), Private Key: d={d}")
-
-# 2. Encryption
 message = 9
-ciphertext = pow(message, e, N)
-print(f"Ciphertext: {ciphertext}")
-
-# 3. Decryption
-decrypted_message = pow(ciphertext, d, N)
-print(f"Decrypted Message: {decrypted_message}")
+ciphertext = rsa_primitive_demo(message, e, N)
+decrypted_message = rsa_primitive_demo(ciphertext, d, N)
+assert (N, phi, d, ciphertext, decrypted_message) == (143, 120, 103, 48, 9)
+assert all(rsa_primitive_demo(rsa_primitive_demo(m, e, N), d, N) == m
+           for m in range(N))
+print(f"Public toy parameters: N={N}, e={e}, d={d}")
+print(f"Ciphertext representative: {ciphertext}")
+print(f"Recovered representative: {decrypted_message}")
+print("All 143 representatives round-trip")
 ```
 
-Python's `pow(base, exp, mod)` function internally uses a fast algorithm called "Exponentiation by squaring", so calculations finish in an instant even for numbers with hundreds of digits.
+Three-argument `pow` computes a modular power without constructing the full power. It is more efficient than doing so, but runtime depends on the inputs and implementation. Input checks and successful round trips over all 143 values are still checks of teaching arithmetic.
 
----
+## 11. Practical schemes and future technology
 
-## 11. Conclusion and Future [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Technology
+Practical RSA encryption uses a scheme such as RSAES-OAEP. RSA is used as a component in hybrid encryption, rather than directly encrypting large message bodies. For example, OAEP with a 2048-bit modulus and SHA-256 has a maximum input length of $256-2\times32-2=190$ bytes. Encryption alone does not authenticate the sender.
 
-Based on the knowledge of high school mathematics, we have uncovered how [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption works.
+Communication security depends on the entire protocol. TLS 1.3 does not use RSA key transport. Where RSA signatures are used, their role differs from encryption for key transport. Modern communications should not be understood as universally “encrypted with RSA.”
 
-1. **Difficulty of Prime Factorization:** $p \times q = N$ is easy, but finding $p, q$ from $N$ is extremely difficult.
-2. **Congruence and Euler's Theorem:** With the rule $a^{\phi(N)} \equiv 1 \pmod N$, the magic trapdoor "raising to a certain power brings it back to the original" is completed.
-3. **Public and Private Keys:** Anyone can encrypt, but only the legitimate receiver can decrypt.
+Shor's quantum algorithm factors integers in time polynomial in the input length in the appropriate quantum computation model. This means neither instantaneous computation nor a forecast of when suitable hardware will exist. A quantum computer capable of performing the required computation would threaten RSA, motivating post-quantum cryptography. That name is not an absolute guarantee against every future attack.
 
-The $N$ in currently used RSA encryption has over 600 digits, and even mobilizing all the supercomputers in the world, prime factorization would take more time than the age of the universe. However, when the "quantum computers" currently being researched become practical in the future, there is a possibility that this prime factorization will be solved in an instant by "Shor's algorithm". For this reason, the development of "Post-quantum cryptography" that cannot be cracked even by quantum computers is progressing rapidly worldwide.
+RSA teaches primes, congruences, inverses and a correctness proof. Practical scheme security adds further requirements involving encoding, authentication, verification and implementation.
 
-Advanced mathematics, which is often thought of as "useless," is actually protecting our daily lives from the ground up. RSA encryption is the best teaching material to show us the depth and beauty of such mathematics. I hope this article has helped you feel the fascination of cryptography and mathematics, even just a little.
+### References
+
+- [RFC 8017: PKCS #1 v2.2](https://www.rfc-editor.org/rfc/rfc8017.html) (§§3, 5, 7.1, 8.1)
+- [RFC 8446: TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) (§1.2, Appendix E.8)
+- [Python 3.12: pow](https://docs.python.org/3.12/library/functions.html#pow)
+- [Shor: Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer](https://arxiv.org/abs/quant-ph/9508027) (abstract)

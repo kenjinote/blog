@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.md",
+      "sourceHash": "7f1f1b6784f4e24625bb4f4efae25b6ff517b40e5eecadd82661d59e249fcbec",
+      "translationHash": "8de09d8da0bcaa83bc436e5b28c55a3a3843bef54ec5f1a2e2f62f1a44157f4d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all original Japanese/English metadata and bodies, filling initial truncation with bounded reads before editing. Revised source and English, then independently reread both revised bodies/metadata. Compared all eleven sections, three diagrams/27edges, prime/clock/totient/toy examples and the Python block. Preserved arithmetic progression while adding primewise noncoprime/CRT proof and separating correctness from scheme security, authenticated keys, raw RSA versus OAEP/PSS, and quantum polynomial complexity from instant execution."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished modulus bit length from prime sizes, public/private exponent from whole key representation, message/ciphertext representative from bytes, coprimality from primality, congruence from integer equality, nonnegative exponent from arbitrary integer exponent, phi inverse sufficient condition from lambda standard condition, encoding from encryption, and signature generation/verification from private-key encryption. Removed English Crypto/Euclide word-fragment links; retained intact Euclidean and cryptography terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all display formulas and relevant inline assumptions. Completed Fermat zero/nonzero cases modulo each distinct prime then CRT, retaining Euler proof under its coprimality premise. Verified all143 representatives in each direction, including23noncoprime, known toy arithmetic, totient count and factor recovery, exact617decimal digits for all2048-bit integers via endpoints, and OAEP2048/SHA256190-byte formula. Three diagram edge counts8/14/5 match. Finite checks supplement the mathematical argument; no security proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed original JA/EN standalone examples and reproduced deterministic dictionary recovery, multiplicative modification9→18 and public raw signature pairS2/M128; these are not attacks on OAEP/PSS. Executed actual revised standalone Python3.8+ blocks under3.12.14; exact identical code in JA/EN. Passed143forward and143reverse cases,18type/range/coprimality rejections and572malleability cases per version. Known public toy parameters only, explicit representative guards, no key generator or constant-time promise."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Read scoped primary excerpts documented in source notes, not full documents. Matched four primary URLs and appropriate English link to already-reviewed modern-cryptography article; removed misleading substring/biography links. Preserved slug, publication timestamp and image, added actual lastmod2026-10-28. Verified image exists, three Mermaid blocks, generated markers/links and all207TeX expressions across JA/EN. Sixteen-bundle minified Hugo, multilingual1077pages and HTTPS1986HTML/41XML passed; full CI/publication pending."
+        }
+      },
+      "summary": "Full English RSA-beginner translation review against corrected Japanese source; textbook arithmetic and real encryption/signature schemes are clearly distinguished.",
+      "languageSpecificFindings": "Corrected Crypto/Euclide substring links, coprime/prime and exponent/key distinctions, absolute impossibility and unsupported timing claims. Replaced private-key encryption signature account with dedicated encoding/verification and the scoped raw-forgery example; extended proof to all representatives. All eleven sections and original numeric teaching examples retained.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No visual browser/KaTeX/Mermaid audit, constant-time/security proof, real secret key generation or OAEP/PSS implementation audit.",
+        "Eleven other translations remain unreviewed; no dates added to them.",
+        "Publication verification remains pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Actually read scoped key, primitive, range-check, OAEP and signature/PSS excerpts recorded in batch-015-source-notes.md; not full RFC."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Read §1.2 static RSA removal and E.8 RSA key-transport distinction; not full RFC or current web prevalence measurements."
+        },
+        {
+          "url": "https://docs.python.org/3.12/library/functions.html#pow",
+          "scope": "Read pow integer/modulus/inverse and Python3.8 introduction; actual runtime3.12.14. Not a constant-time or fixed-duration assurance."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Read abstract/metadata only: polynomial steps in input size on hypothetical quantum computer; not full paper or hardware forecasts."
+        }
+      ],
+      "validation": "docs/translation-review/batch-015-ja-en-validation.json"
+    }
+  },
+  "englishStageAssembly": {
+    "checkedAt": "2026-10-28T02:14:04.336097+09:00",
+    "reviewedLanguages": [
+      "en"
+    ],
+    "otherTranslationsUnreviewed": 11,
+    "build": {
+      "scope": "Sixteen isolated article bundles",
+      "hugo": "0.139.0 extended",
+      "minified": true,
+      "multilingualPages": 1077,
+      "httpsHtml": 1986,
+      "httpsXml": 41
+    },
+    "buildPending": false,
+    "publicationPending": true
+  }
+}

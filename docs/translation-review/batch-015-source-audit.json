@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T02:07:49.442085+09:00",
+  "slug": "rsa-encryption-math-explained-for-beginners",
+  "files": [
+    {
+      "language": "ar",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ar.md",
+      "hash": "f46ca55c2a5651fc4e639cd37f2c79264e88f7d4bf7d0db4573033d141a44952",
+      "fullBodyRead": false
+    },
+    {
+      "language": "de",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.de.md",
+      "hash": "527bf99bdb0616e240e4a01ced80f6b038151d464906171d35adf60f2789ff28",
+      "fullBodyRead": false
+    },
+    {
+      "language": "en",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.en.md",
+      "hash": "a316389cbfbffba75f22c0bd3d1cafce7b0be8f141c6b615326125f0a708b42f",
+      "fullBodyRead": true,
+      "originalExecution": {
+        "stdout": "Public Key: (N=143, e=7), Private Key: d=103\nCiphertext: 48\nDecrypted Message: 9\n",
+        "all143RepresentativesRoundTrip": true,
+        "nonCoprimeRepresentatives": 23,
+        "unvalidatedRawPowOutOfRangeInputs": {
+          "-1": 142,
+          "143": 0,
+          "144": 1
+        },
+        "rawSignaturePublicForgery": {
+          "s": 2,
+          "m": 128,
+          "passesArticleEquation": true,
+          "privateExponentUsed": false
+        },
+        "rawEncryptionDictionaryRecoversToyMessage": true,
+        "multiplicativeModification": {
+          "originalMessage": 9,
+          "modifiedRecoveredMessage": 18
+        },
+        "scope": "Reproduces raw textbook arithmetic and missing scheme guarantees, not an attack on OAEP/PSS or production RSA."
+      }
+    },
+    {
+      "language": "es",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.es.md",
+      "hash": "bfef0f8e15bdd7584ab6cb21d44fada3bbaa63abec8c86aa2ea24922ea232d47",
+      "fullBodyRead": false
+    },
+    {
+      "language": "fr",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.fr.md",
+      "hash": "98696ae569c1f481bc4e5170d8c88ae373296a9cf80071878f4c0642bb429c74",
+      "fullBodyRead": false
+    },
+    {
+      "language": "hi",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.hi.md",
+      "hash": "13e2d49fe0745f7e76dbcb4693cc2e22d09ffe198b920c402166a3abc849e3cc",
+      "fullBodyRead": false
+    },
+    {
+      "language": "id",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.id.md",
+      "hash": "3be9e2793e0b82998810524689ac2465763fc28a45fafd8c0668436c70e9e623",
+      "fullBodyRead": false
+    },
+    {
+      "language": "ko",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ko.md",
+      "hash": "1b383429a5cfc5b72c86d7568a1986db82b20d32c0bd3e603851ae911ec01816",
+      "fullBodyRead": false
+    },
+    {
+      "language": "ja",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.md",
+      "hash": "322e17ea6cf3f5d1b91b871970ca0aeb4af4a308185c0f15ee510945833d3ff2",
+      "fullBodyRead": true,
+      "originalExecution": {
+        "stdout": "公開鍵: (N=143, e=7), 秘密鍵: d=103\n暗号文: 48\n復号されたメッセージ: 9\n",
+        "all143RepresentativesRoundTrip": true,
+        "nonCoprimeRepresentatives": 23,
+        "unvalidatedRawPowOutOfRangeInputs": {
+          "-1": 142,
+          "143": 0,
+          "144": 1
+        },
+        "rawSignaturePublicForgery": {
+          "s": 2,
+          "m": 128,
+          "passesArticleEquation": true,
+          "privateExponentUsed": false
+        },
+        "rawEncryptionDictionaryRecoversToyMessage": true,
+        "multiplicativeModification": {
+          "originalMessage": 9,
+          "modifiedRecoveredMessage": 18
+        },
+        "scope": "Reproduces raw textbook arithmetic and missing scheme guarantees, not an attack on OAEP/PSS or production RSA."
+      }
+    },
+    {
+      "language": "pt",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.pt.md",
+      "hash": "95f27708ed2a51b8bfbd031a7d496f510a145dda749b988c8dbe90ade2a85df3",
+      "fullBodyRead": false
+    },
+    {
+      "language": "ru",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ru.md",
+      "hash": "bb20eea99c30e3fcefb2f230adfde7d810459b7a23cf99558b019c59b6c8c3d5",
+      "fullBodyRead": false
+    },
+    {
+      "language": "zh-cn",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-cn.md",
+      "hash": "f305b9288d62c8d00e38755653ab2bf9826bf9ee8d6613b1a95f669857a6e928",
+      "fullBodyRead": false
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-tw.md",
+      "hash": "68c26b90e8e246c3326834654b75faa83cec619490f85cf9b0d898d775ced2f3",
+      "fullBodyRead": false
+    }
+  ],
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+      "scope": "Read key definitions §§3.1–3.2, primitive/scheme distinction §5, range checks §§5.1.1–5.1.2, OAEP overview §7.1 and signature overview §8; next read PSS overview before revising. Not full RFC."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+      "scope": "Read §1.2 static RSA removal and E.8 RSA key-transport distinction; not full RFC or current web prevalence measurements."
+    },
+    {
+      "url": "https://docs.python.org/3.12/library/functions.html#pow",
+      "scope": "Read pow integer/modulus/inverse and Python3.8 introduction; actual runtime3.12.14. Not a constant-time or fixed-duration assurance."
+    },
+    {
+      "url": "https://arxiv.org/abs/quant-ph/9508027",
+      "scope": "Read abstract/metadata only: polynomial steps in input size on hypothetical quantum computer; not full paper or hardware forecasts."
+    }
+  ],
+  "findings": [
+    "2048-bit sentence assigns size to primes instead of modulus; unsupported trillions-of-years/age-of-universe timing estimates.",
+    "Absolute impossibility and mathematically-proven factoring-hardness claims; raw deterministic RSA lacks scheme security and authentication.",
+    "Euler proof covers coprime representatives only despite algorithm range0..N-1; add primewise zero/nonzero proof and CRT.",
+    "Natural-number factorization needs positive>1 scope (1 empty product,0 excluded); arbitrary integer k can introduce undefined negative powers.",
+    "Raw signature described as private-key encryption and asserted unforgeability; trivial public forgery reproduced.",
+    "Key definition should distinguish exponent from full(n,d) key, distinct odd primes, and educational phi inverse from standard lambda condition.",
+    "Python toy runs but unguarded pow wraps out-of-range representatives; fixed execution-time assertions unsupported.",
+    "Quantum algorithm polynomial complexity does not mean instantaneous or certify any PQC as impossible to break.",
+    "English Crypto/Euclide substring links and unreviewed biography targets; review link scope without counting dependency articles."
+  ],
+  "sourceReviewComplete": false,
+  "translationsRecorded": 0,
+  "status": "Original Japanese and English fully read (initial truncated output completed by bounded reads); initial arithmetic reproduced. Source revision, all-language proofreading, final tests and publication pending."
+}

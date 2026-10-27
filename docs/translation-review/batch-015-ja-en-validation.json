@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T02:12:52.957242+09:00",
+  "python": "3.12.14",
+  "files": [
+    {
+      "language": "ja",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.md",
+      "hash": "7f1f1b6784f4e24625bb4f4efae25b6ff517b40e5eecadd82661d59e249fcbec",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 103,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.en.md",
+      "hash": "8de09d8da0bcaa83bc436e5b28c55a3a3843bef54ec5f1a2e2f62f1a44157f4d",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 104,
+      "passed": true
+    }
+  ],
+  "site": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-16-bundles-rsa-ja-en",
+  "allPassed": true,
+  "scope": "Only selected article versions; extracted code execution, public toy arithmetic, exact math and generated markers/links.",
+  "limitations": "Does not record semantic reviews or certify OAEP/PSS, general RSA security, constant-time behavior, native-language quality or visual rendering."
+}
