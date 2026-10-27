@@ -972,7 +972,18 @@
       "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ar.md": "f1a2cbcfc8c7e64762d34ee5534771ce92b79d484aefa1a81b75283d55c2b7e1"
     },
     "buildPending": false,
-    "publicationPending": true,
-    "limitations": "Individual stage entries retain their actual dates and historical pending scope. Final public CI and195URL verification pending; no human/native-speaker, browser visual or side-channel security audit."
+    "publicationPending": false,
+    "limitations": "Individual stage entries retain actual dates and historical pending scope. Full CI and195URL publication check passed. No human/native-speaker, visual browser or side-channel security audit.",
+    "publicationVerification": {
+      "checkedAt": "2026-10-28T02:35:27.448004+09:00",
+      "evidence": "docs/translation-review/publication-014.json",
+      "ciRun": 40547266007,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40547266007",
+      "deployedCommit": "058aab6afcabd602a2936f09715fd9bf5192ba23",
+      "ciBuildAndDeploy": "success",
+      "publicPagesPassed": 195,
+      "scope": "Batches001–014:180translations plus15Japanese sources; exact modern-cryptography/ECC TeX preserved,1439expressions total. Excludes batch015 local RSA-beginner revisions.",
+      "limitations": "HTTP/content/decoded-math/language-link checks, not browser layout, native-speaker or security certification."
+    }
   }
 }
