@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "startedAt": "2026-10-28T01:55:24.263542+09:00",
+  "path": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ru.md",
+  "originalHash": "1a510c375b300c5cf43c782b1d01dc1ca5e83b0785bc83e3f4e5d670fee0f4d2",
+  "fullOriginalBodyAndMetadataRead": true,
+  "readingScope": "Initial long output read on Oct27; truncated ECDLP/double-and-add/ECDH middle reread in bounded ranges on Oct28 before editing.",
+  "reviewRecorded": true,
+  "findings": [
+    "Constant-time promises contradict branching cpp_int code; input/zero inverse checks absent.",
+    "Missing affine exceptional cases, characteristic/discriminant and subgroup/private-scalar premises; ECDLP/performance overstated.",
+    "ECDH shared value conflated with usable session key; authentication/validation/KDF absent.",
+    "Полная группа suggests a distinct algebraic property; malformed grammar с особыми точек; Crypto/Euclide/Jacobian word-fragment links."
+  ],
+  "finalHash": "dce8894077c63fe8d1140ec65b69977b8ea9cdecf35daad8188d4711faa395d5",
+  "fullCorrectedBodyAndMetadataReread": true,
+  "validation": "docs/translation-review/batch-014-ru-validation.json",
+  "status": "Full review recorded; publication pending."
+}

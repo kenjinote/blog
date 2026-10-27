@@ -650,6 +650,71 @@
         }
       ],
       "validation": "docs/translation-review/batch-014-hi-validation.json"
+    },
+    "post/楕円曲線暗号の数学的基礎とcppでの実装/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/楕円曲線暗号の数学的基礎とcppでの実装/index.md",
+      "sourceHash": "b90965fa13d7b966b79964c85084251304b4aab8c6a5187c75102d91e8de9359",
+      "translationHash": "dce8894077c63fe8d1140ec65b69977b8ea9cdecf35daad8188d4711faa395d5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Russian metadata/body, filling the initially truncated ECDLP/double-and-add/ECDH middle with bounded reads before editing. Revised against the corrected Japanese source, then independently reread all corrected prose/metadata and compared the common implementation. Compared all nine sections, five-row table, three diagrams/fifteen edges, eleven formulas and five C++ blocks. Retained field/subgroup/scalar, affine exceptions, ECDLP/CDH, ECDH validation/authentication/KDF and actual variable-time premises. Structural checks supplement semantic review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished простое поле/размер поля, порядок подгруппы, образующий элемент/базовая точка, скалярное умножение, нейтральный/обратный элемент, бесконечно удалённая точка, неособость, аффинные/якобиановы координаты. Used открытый/закрытый ключ versus общее значение/общий секрет, согласование ключей versus шифрование/подписи, постоянное versus переменное время, сторонние каналы and ро-метод Полларда with Pollard rho gloss. Removed unsupported полная группа wording and word-fragment links."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All eleven display formulas match exactly; inline premises and table values checked against scoped primary references. NIST Table2 ranges and historical/quantum caveats checked as parsed text. secp256k1 p,a,b,G,n,h checked in SEC2§2.4.1. Ran thirteen scalar differential cases including zero, n±1, n, high-bit and maximum accepted values against cryptography50.0.2; a public toy curve p17,a2,b0 exercised all400 ordered additions against independent Python,8000 associativity triples,820 ladder/repeated-addition cases and all three y=0 doubling points. These finite checks do not prove general security or constant-time behavior."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Extracted this version's five C++ blocks, confirmed exact equality with the reviewed Japanese code, compiled and ran the complete program and additional harness using g++13.3.0/Boost1.83. Passed thirteen scalar differential cases against cryptography50.0.2 and thirteen rejection cases, plus modular/inverse/infinity/inverse-point/swap checks. Existing400-pair/8000-triple/820-scalar toy-curve evidence applies to the identical core and was not redundantly re-executed for this language. Not a constant-time or production implementation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six primary URLs and scoped source notes; retained Russian modern-cryptography link to an already-reviewed target. Removed word-fragment/biography and wrong-language links and duplicate body heading. Preserved slug, publication timestamp and image; lastmod and review date are actual Oct28, not inherited Oct27. Confirmed generated markers/links/three Mermaid blocks and all59 decoded TeX expressions. Fifteen-bundle minified Hugo, multilingual1050pages and HTTPS1945HTML/41XML passed; publication pending. No dependency article counted reviewed."
+        }
+      },
+      "summary": "Full Russian ECC review with eleven formulas, three diagrams and five compiled variable-time educational C++ blocks.",
+      "languageSpecificFindings": "Corrected group-completeness and malformed singular-point grammar, clarified open/private keys versus shared values and key derivation, retained Russian field/subgroup-order/scalar terminology and qualified ECDLP/performance claims. Removed word-fragment links and replaced unsupported constant-time safety promises. Actual completed review date is2026-10-28; earlier review entries stay unchanged.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No browser visual/KaTeX/Mermaid audit, side-channel timing/assembly test, live ECDH/TLS audit or production cryptographic implementation.",
+        "Publication verification remains pending.",
+        "1 other ECC translations remain unreviewed; no review dates added to them."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7748.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.secg.org/sec2-v2.pdf",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc5869.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        },
+        {
+          "url": "https://www.boost.org/doc/libs/1_83_0/libs/multiprecision/doc/html/boost_multiprecision/tut/ints/cpp_int.html",
+          "scope": "See docs/translation-review/batch-014-source-notes.md for actual read scope."
+        }
+      ],
+      "validation": "docs/translation-review/batch-014-ru-validation.json"
     }
   },
   "englishStageAssembly": {
@@ -763,6 +828,24 @@
       "hi"
     ],
     "otherTranslationsUnreviewed": 2,
+    "publicationPending": true
+  },
+  "russianStageAssembly": {
+    "checkedAt": "2026-10-28T01:56:46.129500+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko",
+      "pt",
+      "fr",
+      "de",
+      "id",
+      "hi",
+      "ru"
+    ],
+    "otherTranslationsUnreviewed": 1,
     "publicationPending": true
   }
 }
