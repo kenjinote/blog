@@ -1087,5 +1087,15 @@
     "buildPending": false,
     "publicationPending": true,
     "limitations": "Historical stage entries retain actual review dates and pending status. Full public CI and208URL publication verification pending. AI review; no human/native-speaker, visual browser, constant-time or production-cryptography certification."
+  },
+  "publicationDispatch": {
+    "observedAt": "2026-10-28T02:47:06.679012+09:00",
+    "commit": "020bbb785cb94b31616c2df1a57083ca0d6205e1",
+    "ciRun": 40553703153,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40553703153",
+    "observedStatus": "in_progress",
+    "conclusion": null,
+    "publicationPending": true,
+    "plannedPublicPages": 208
   }
 }
