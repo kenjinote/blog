@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T02:29:32.389896+09:00",
+  "python": "3.12.14",
+  "files": [
+    {
+      "language": "fr",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.fr.md",
+      "hash": "64de7ec99d7e21e85ec63b2cc0177491f21355b6fc7a7e40a05ff2a18e3038d8",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 103,
+      "passed": true
+    }
+  ],
+  "site": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-16-bundles-rsa-fr",
+  "allPassed": true,
+  "scope": "Only selected article versions; extracted code execution, public toy arithmetic, exact math and generated markers/links.",
+  "limitations": "Does not record semantic reviews or certify OAEP/PSS, general RSA security, constant-time behavior, native-language quality or visual rendering."
+}

@@ -37,3 +37,6 @@ AI校閲であり、ネイティブ話者の確認、ブラウザの視覚確認
 
 
 2026-10-28追記：RSA入門のポルトガル語を旧本文から全文照合し、修正後の全本文・メタデータ・3図も再読。請求を意味するfaturarを因数分解のfatorarへ訂正。ブラジル語調を保ち、expoente／鍵全体、móduloのビット長、primos／coprimos、congruência、função totiente、codificação／criptografia、autenticação／verificaçãoを整理。13表示数式・3図27辺・単独Python、各方向143値・18拒否例・572改変例・103TeX表現を検査。文法一致・時計の文も再読時に修正。残る6翻訳と公開確認は未完了。
+
+
+2026-10-28追記：RSA入門のフランス語を旧本文から全文照合し、修正後の全本文・メタデータ・3図も再読。chiffrement／déchiffrement、exposant／鍵全体、moduleのビット長、premiers entre eux、congruence、indicatrice、encodage、authentification／vérificationを整理。Crypto／Euclideの語の途中の誤リンクを除去し、非互いに素の証明と署名の専用方式を反映。13表示数式・3図27辺・単独Python、各方向143値・18拒否例・572改変例・103TeX表現を検査。数値の間隔と実装範囲の文も再読時に修正。残る5翻訳と公開確認は未完了。
