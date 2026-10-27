@@ -264,18 +264,85 @@
         }
       ],
       "validation": "docs/translation-review/batch-016-es-validation.json"
+    },
+    "post/public-key-cryptography-rsa-ecc/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/public-key-cryptography-rsa-ecc/index.md",
+      "sourceHash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "translationHash": "eb758939096296fa5d2286d8a3b935c0bdcd56ec15d02ef238aaf5518e68b0f3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Korean metadata/body in two bounded outputs and independently reread the revised metadata/body in two bounded outputs. Compared all six numbered sections, conclusion, six references and two diagrams to corrected Japanese; checked final deterministic-word correction before recording. Preserved the full mathematical and protocol argument, noncoprime CRT proof and quantum qualifications. Nine display formulas reused exactly from Japanese and read in resulting article; mechanical reuse alone is not prose review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished 키 합의/키 전송, 공유 값/파생 키, 인증/검증, 부분군 생성원/원시근, 소수/서로소, 개인 지수/개인키, 정수 대표값/바이트열, 유한체/소체/표수/비특이, 위수/스칼라, 항등원/무한원점, 점의 두 배 연산/스칼라 곱셈 and 중국인의 나머지 정리. Corrected 결정적인 (decisive) to 결정론적 (deterministic) during reread. Separated classical strength estimates from factoring records and polynomial input-length complexity from immediate execution."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all nine display formulas exactly and checked relevant inline assumptions. DH uses prime subgroup order and nonzero uniform secret exponents; Euler proof retains coprimality and all representatives use primewise zero/nonzero cases and CRT. ECC uses p>3, nonsingularity modulo p, infinity/identity/inverse and y=0 exceptions. Independent fixtures verify100DH pairs, active MITM values13/18,143RSA representatives including23noncoprime,286primewise cases, the e1 flaw,20curve points/400pairs/8000associativity triples/3zero-y doublings and a singular field counterexample. Finite checks are not security proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised Korean contain no executable article code. Read both Mermaid diagrams and arithmetic labels, matching8/2edges to Japanese. Ran the independent small mathematical fixtures in verify_batch_016.py, not article compilation, constant-time checks or a production protocol audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six HTTPS primary references and scoped supporting evidence in source notes. Preserved title, publication timestamp, slug, image and categories/tags; image exists. Added actual lastmod2026-10-28. All88Korean TeX expressions survive minified HTML, including RSA range. Seventeen-bundle Hugo, multilingual1103pages and HTTPS2025HTML/41XML passed; full CI/publication pending."
+        }
+      },
+      "summary": "Full Korean DH/RSA/ECC overview review against corrected Japanese source, restoring precise group, exponent, security and protocol conditions.",
+      "languageSpecificFindings": "Corrected decisive/deterministic wording, using 결정론적 for raw RSA. Used 개인키 versus 개인 지수, 키 합의 versus 키 전송, 공유 값 versus 파생 키, 인증 versus 검증, and 위수/스칼라/표수/무한원점 consistently. Distinguished point doubling from general scalar multiplication and restored all-representative proof. Removed unsupported RSA1024, universal performance and PQC guarantees.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "No executable article code; independent mathematical fixtures only, no constant-time/security proof or protocol implementation audit.",
+        "No visual browser/KaTeX/Mermaid audit.",
+        "Seven other translations remain unreviewed; no dates added to them.",
+        "Publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7919.html",
+          "scope": "Scoped abstract and5.1–5.2 known-group public validation and exponent excerpts; not universal arbitrary-group validation."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "Scoped2.2–2.3,3,4,10–10.3 and historical bibliography excerpts listed in source notes; not full original historical papers."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Scoped keys/lambda/ranges, RSAEP, OAEP composition and PSS encoding/signature excerpts; not full conformance audit."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Scoped1.2/E.8 RSA transport versus signatures,4.2.8.1,7–7.1 key schedule and7.4.1 serialization excerpts; not prevalence survey."
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+          "scope": "2020 publication metadata and parsed PDF text5.6.1–5.6.1.1/Table2 definitions and comparison rows; not current universal key policy or visual PDF inspection."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Abstract and metadata only, polynomial steps in input size on hypothetical quantum computer; not hardware forecast."
+        }
+      ],
+      "validation": "docs/translation-review/batch-016-ko-validation.json"
     }
   },
   "stage": {
     "sourceAndEnglishFullBodyReviewed": true,
-    "otherTranslationsReviewed": 3,
-    "otherTranslationsRemaining": 8,
+    "otherTranslationsReviewed": 4,
+    "otherTranslationsRemaining": 7,
     "fullCiPending": true,
     "publicationPending": true,
     "validation": "docs/translation-review/batch-016-ja-en-validation.json",
     "simplifiedChineseFullBodyReviewed": true,
-    "latestValidation": "docs/translation-review/batch-016-es-validation.json",
+    "latestValidation": "docs/translation-review/batch-016-ko-validation.json",
     "traditionalChineseFullBodyReviewed": true,
-    "spanishFullBodyReviewed": true
+    "spanishFullBodyReviewed": true,
+    "koreanFullBodyReviewed": true
   }
 }
