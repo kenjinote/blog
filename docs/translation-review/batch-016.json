@@ -198,17 +198,84 @@
         }
       ],
       "validation": "docs/translation-review/batch-016-zh-tw-validation.json"
+    },
+    "post/public-key-cryptography-rsa-ecc/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/public-key-cryptography-rsa-ecc/index.md",
+      "sourceHash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "translationHash": "f4eade471a441e995ba84419a32da5b0feedd73e2287b89f15a4e4246e13d135",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full original Spanish metadata/body in two bounded outputs; independently reread all revised metadata/body in two bounded outputs and checked the final two-line grammar/tabla correction before recording. Compared all six numbered sections, conclusion, six references and two diagrams against corrected Japanese. Retained the full argument and restored group/exponent conditions, all-representative proof, protocol distinctions and quantum qualifications. Nine display formulas copied exactly from Japanese and then read in generated article; mechanical copying alone is not prose review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used acuerdo de claves versus transporte de claves, valor compartido versus claves derivadas, autenticacion versus validacion, generador de subgrupo versus raiz primitiva, primo versus coprimo, exponente privado versus complete clave privada, representante entero, cuerpo finito/primo/caracteristica/no singular, orden/elemento neutro/punto del infinito, duplicacion versus multiplicacion escalar and teorema chino del resto. Kept consistent Latin American computadoras/costo. Separated classical estimated resistance from factoring records and input-size polynomial steps from instant quantum execution."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all nine display formulas exactly and checked relevant inline assumptions. DH uses prime subgroup order and nonzero uniform secret exponents; Euler proof retains coprimality and all representatives use primewise zero/nonzero cases and CRT. ECC uses p>3, nonsingularity modulo p, infinity/identity/inverse and y=0 exceptions. Independent fixtures verify100DH pairs, active MITM values13/18,143RSA representatives including23noncoprime,286primewise cases, the e1 flaw,20curve points/400pairs/8000associativity triples/3zero-y doublings and a singular field counterexample. Finite checks are not security proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Neither original nor revised Spanish has executable article code. Read both Mermaid blocks and corrected the authentication note grammar, with arithmetic labels and8/2edges matching Japanese. Ran independent mathematical fixtures in verify_batch_016.py, not article compilation or a production security test."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all six HTTPS primary references and scoped supporting evidence in source notes. Preserved title, publication timestamp, slug, image and categories/tags; image exists. Added actual lastmod2026-10-28. All86Spanish TeX expressions survive minified HTML, including RSA range. Seventeen-bundle Hugo, multilingual1103pages and HTTPS2025HTML/41XML passed; full CI/publication pending."
+        }
+      },
+      "summary": "Full Spanish DH/RSA/ECC overview review against corrected Japanese source, distinguishing arithmetic correctness, cryptographic assumptions and protocol roles.",
+      "languageSpecificFindings": "Replaced ambiguous ordinary logarithm comparison and complete exponential impossibility with scoped generic-attack estimate. Clarified acuerdo/transporte de claves, valor compartido/clave derivada, authentication/validation, exponent/key and doubling/scalar multiplication. Used consistent cuerpo finito, orden, elemento neutro and teorema chino del resto. Restored spaces around bit quantities, corrected the diagram authentication-note grammar and localized tabla2. Retained Latin American wording; removed unsupported RSA1024, universal performance and PQC guarantees.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "No executable article code; independent mathematical fixtures only, no constant-time/security proof or protocol implementation audit.",
+        "No visual browser/KaTeX/Mermaid audit.",
+        "Eight other translations remain unreviewed; no dates added to them.",
+        "Publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7919.html",
+          "scope": "Scoped abstract and5.1–5.2 known-group public validation and exponent excerpts; not universal arbitrary-group validation."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "Scoped2.2–2.3,3,4,10–10.3 and historical bibliography excerpts listed in source notes; not full original historical papers."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Scoped keys/lambda/ranges, RSAEP, OAEP composition and PSS encoding/signature excerpts; not full conformance audit."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Scoped1.2/E.8 RSA transport versus signatures,4.2.8.1,7–7.1 key schedule and7.4.1 serialization excerpts; not prevalence survey."
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+          "scope": "2020 publication metadata and parsed PDF text5.6.1–5.6.1.1/Table2 definitions and comparison rows; not current universal key policy or visual PDF inspection."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Abstract and metadata only, polynomial steps in input size on hypothetical quantum computer; not hardware forecast."
+        }
+      ],
+      "validation": "docs/translation-review/batch-016-es-validation.json"
     }
   },
   "stage": {
     "sourceAndEnglishFullBodyReviewed": true,
-    "otherTranslationsReviewed": 2,
-    "otherTranslationsRemaining": 9,
+    "otherTranslationsReviewed": 3,
+    "otherTranslationsRemaining": 8,
     "fullCiPending": true,
     "publicationPending": true,
     "validation": "docs/translation-review/batch-016-ja-en-validation.json",
     "simplifiedChineseFullBodyReviewed": true,
-    "latestValidation": "docs/translation-review/batch-016-zh-tw-validation.json",
-    "traditionalChineseFullBodyReviewed": true
+    "latestValidation": "docs/translation-review/batch-016-es-validation.json",
+    "traditionalChineseFullBodyReviewed": true,
+    "spanishFullBodyReviewed": true
   }
 }
