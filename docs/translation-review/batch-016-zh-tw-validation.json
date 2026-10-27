@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T03:04:29.449015+09:00",
+  "site": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-17-bundles-rsa-ecc-tw",
+  "scope": "Explicitly selected reviewed languages only. Automated checks do not record prose reviews.",
+  "limitations": [
+    "No executable article code; independent arithmetic only.",
+    "Not a visual browser/KaTeX/Mermaid or native-speaker audit.",
+    "Finite examples do not prove cryptographic security."
+  ],
+  "arithmetic": {
+    "scope": "Independent mathematical fixtures, not executable article blocks or a security proof.",
+    "dhMatchingPairs": 100,
+    "dhSubgroupNonidentityMembers": 10,
+    "dhIdentityForcesOne": true,
+    "mitmSharedValues": [
+      13,
+      18
+    ],
+    "rsaRepresentatives": 143,
+    "rsaNonCoprimeRepresentatives": 23,
+    "rsaPrimewiseCases": 286,
+    "e1RejectedByRevisedCondition": true,
+    "curvePointsIncludingInfinity": 20,
+    "pointPairs": 400,
+    "associativityTriples": 8000,
+    "y0DoublingsToInfinity": 3,
+    "singularIntegerVsFieldCounterexample": true
+  },
+  "files": [
+    {
+      "language": "zh-tw",
+      "path": "post/public-key-cryptography-rsa-ecc/index.zh-tw.md",
+      "hash": "53c51cb770e2177d24a8f228557d8b0556380c873337f3cbc7ccd8db8b87f741",
+      "displayFormulas": 9,
+      "texExpressions": 88,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    }
+  ],
+  "allPassed": true
+}

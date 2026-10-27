@@ -132,16 +132,83 @@
         }
       ],
       "validation": "docs/translation-review/batch-016-zh-cn-validation.json"
+    },
+    "post/public-key-cryptography-rsa-ecc/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/public-key-cryptography-rsa-ecc/index.md",
+      "sourceHash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "translationHash": "53c51cb770e2177d24a8f228557d8b0556380c873337f3cbc7ccd8db8b87f741",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all original Traditional Chinese metadata/body in two bounded outputs, then independently reread all revised metadata/body in two bounded outputs. Compared six numbered sections, conclusion, six references and two diagrams with corrected Japanese. Retained the full progression, conditions, zero/nonzero CRT proof, security-strength comparison and protocol/quantum qualifications. Nine display formulas were inserted exactly from Japanese to avoid transcription drift, then read in the generated article; this mechanical copying is not itself the prose review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 金鑰協議/金鑰傳輸, 共享值/衍生金鑰, 身分鑑別/公開值驗證, 子群生成元/原根, 質數/互質, 公開指數/私有指數 versus entire 公開金鑰/私有金鑰, 模反元素, 有限體/質體/特徵/非奇異, 階/純量, 單位元素/無限遠點, 倍點運算/純量乘法 and 中國餘數定理. Kept Taiwanese 位元/位元組, 訊息, 交握, 協定, 演算法 and 效能. Distinguished estimated strength from factoring records and input bit length from instantaneous quantum execution."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all nine display formulas exactly and checked relevant inline assumptions. DH uses prime subgroup order and nonzero uniform secret exponents; Euler proof retains coprimality and all representatives use primewise zero/nonzero cases and CRT. ECC uses p>3, nonsingularity modulo p, infinity/identity/inverse and y=0 exceptions. Independent fixtures verify100DH pairs, active MITM values13/18,143RSA representatives including23noncoprime,286primewise cases, the e1 flaw,20curve points/400pairs/8000associativity triples/3zero-y doublings and a singular field counterexample. Finite checks are not security proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised Traditional Chinese contain no executable article code. Read both Mermaid diagrams and their arithmetic labels, matching8/2edges to Japanese; retained valid diagram semantics. Ran independent small mathematical fixtures in verify_batch_016.py, not an article compilation or production security audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six primary HTTPS references and the scoped supporting evidence in source notes. Preserved title, publication timestamp, slug, image and categories/tags; image exists. Added actual lastmod2026-10-28. All88Traditional Chinese TeX expressions survive minified HTML, including RSA range. Seventeen-bundle Hugo, multilingual1103pages and HTTPS2025HTML/41XML passed; full CI/publication pending."
+        }
+      },
+      "summary": "Full Traditional Chinese DH/RSA/ECC overview review against corrected Japanese source, using consistent Taiwanese cryptography and mathematical terms.",
+      "languageSpecificFindings": "Corrected DH shared value versus symmetric key, subgroup generator versus whole-group primitive root, exponent versus full key, doubling versus scalar multiplication, and nonsingularity in the finite field. Used 金鑰協議/衍生, 身分鑑別, 有限體/階/純量, 模反元素 and 中國餘數定理 consistently, with 位元/位元組 and Taiwanese protocol vocabulary. Removed unsupported RSA1024/performance/PQC absolutes and completed noncoprime recovery proof. Nine exact display formulas reused from Japanese while all localized prose and diagrams were read separately.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "No executable article code; independent mathematical fixtures only, no constant-time/security proof or protocol implementation audit.",
+        "No visual browser/KaTeX/Mermaid audit.",
+        "Nine other translations remain unreviewed; no dates added to them.",
+        "Publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7919.html",
+          "scope": "Scoped abstract and5.1–5.2 known-group public validation and exponent excerpts; not universal arbitrary-group validation."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "Scoped2.2–2.3,3,4,10–10.3 and historical bibliography excerpts listed in source notes; not full original historical papers."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Scoped keys/lambda/ranges, RSAEP, OAEP composition and PSS encoding/signature excerpts; not full conformance audit."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Scoped1.2/E.8 RSA transport versus signatures,4.2.8.1,7–7.1 key schedule and7.4.1 serialization excerpts; not prevalence survey."
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+          "scope": "2020 publication metadata and parsed PDF text5.6.1–5.6.1.1/Table2 definitions and comparison rows; not current universal key policy or visual PDF inspection."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Abstract and metadata only, polynomial steps in input size on hypothetical quantum computer; not hardware forecast."
+        }
+      ],
+      "validation": "docs/translation-review/batch-016-zh-tw-validation.json"
     }
   },
   "stage": {
     "sourceAndEnglishFullBodyReviewed": true,
-    "otherTranslationsReviewed": 1,
-    "otherTranslationsRemaining": 10,
+    "otherTranslationsReviewed": 2,
+    "otherTranslationsRemaining": 9,
     "fullCiPending": true,
     "publicationPending": true,
     "validation": "docs/translation-review/batch-016-ja-en-validation.json",
     "simplifiedChineseFullBodyReviewed": true,
-    "latestValidation": "docs/translation-review/batch-016-zh-cn-validation.json"
+    "latestValidation": "docs/translation-review/batch-016-zh-tw-validation.json",
+    "traditionalChineseFullBodyReviewed": true
   }
 }
