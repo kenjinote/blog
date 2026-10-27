@@ -2,6 +2,7 @@
 title: '【Penjelasan Matematika】Menjelaskan Cara Kerja Enkripsi RSA Agar Dapat Dipahami Bahkan oleh Siswa SMA'
 slug: "rsa-encryption-math-explained-for-beginners"
 date: "2026-09-11T13:00:00+09:00"
+lastmod: "2026-10-28"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,345 +10,232 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Bilangan Prima", "Matematika", "Kriptografi"]
 ---
 
-Salah satu teknologi yang mendasari keamanan masyarakat internet adalah "Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)". Sebagian besar komunikasi yang kita gunakan tanpa disadari setiap hari, seperti pembayaran kartu kredit dalam belanja online, interaksi di media sosial dengan teman, dan transmisi serta penerimaan informasi rahasia perusahaan, dilindungi oleh enkripsi RSA ini atau teknologi penerusnya.
+RSA digunakan dalam enkripsi kunci publik dan tanda tangan digital. Aritmetikanya dapat dipahami dari matematika SMA: bilangan prima, sisa pembagian, dan perpangkatan. Namun, memangkatkan bilangan bulat secara langsung dalam model pembelajaran harus dibedakan dari skema untuk komunikasi nyata.
 
-Namun, ketika mendengar kata "kriptografi", Anda mungkin membayangkan mesin sandi yang rumit seperti yang ada di film mata-mata, atau matematika tingkat sangat tinggi yang hanya dapat dipahami oleh sebagian kecil orang jenius. Memang benar bahwa teori kriptografi modern didasarkan pada matematika tingkat tinggi, tetapi **mekanisme dasar dari enkripsi RSA dapat dipahami dengan baik jika Anda memiliki pengetahuan matematika yang dipelajari di sekolah menengah atas (sifat bilangan bulat, bilangan prima, aritmetika modular (kongruensi), dll.)**.
+Kita akan mengikuti nilai kecil yang bersifat publik untuk menjelaskan mengapa dekripsi memulihkan masukan. Skema praktis seperti RSAES-OAEP untuk enkripsi dan RSASSA-PSS untuk tanda tangan memerlukan aturan pengodean dan verifikasinya sendiri. Lihat juga [pengantar kunci publik, hash, dan tanda tangan](/id/p/modern-cryptography-public-key-hash-signature/).
 
-Dalam artikel ini, dengan pengetahuan matematika sekolah menengah atas sebagai titik awal, kami akan menjelaskan secara menyeluruh selangkah demi selangkah prinsip matematika apa yang membuat enkripsi RSA bekerja dan mengapa sulit untuk dipecahkan. Kami akan menjelaskannya dengan hati-hati disertai contoh-contoh konkret sehingga bahkan mereka yang kurang ahli dalam matematika dapat memahaminya.
+## 1. Enkripsi simetris dan kunci publik
 
----
+Dalam enkripsi simetris, pengirim dan penerima berbagi kunci rahasia untuk enkripsi dan dekripsi. Cara ini efisien untuk data dalam jumlah besar, tetapi berbagi kunci itu secara aman dengan pihak yang baru pertama kali dihubungi merupakan persoalan tersendiri.
 
-## 1. Kriptografi Kunci Simetris dan Kriptografi Kunci Publik
-
-Sebelum masuk ke mekanisme matematis dari enkripsi RSA, mari kita perjelas konsep dasar dari kriptografi terlebih dahulu. Sistem kriptografi secara garis besar dibagi menjadi dua jenis: "kriptografi kunci simetris" dan "kriptografi kunci publik".
-
-### 1.1 Keterbatasan Sistem Kriptografi Kunci Simetris
-
-Banyak kriptografi yang telah digunakan sejak zaman dahulu disebut "sistem kriptografi kunci simetris". Ini adalah sistem yang **menggunakan kunci yang sama untuk "enkripsi (mengubah pesan menjadi teks sandi rahasia)" dan "dekripsi (mengembalikan teks sandi ke pesan aslinya)"**.
-
-Sebagai contoh, misalkan Alice mengirim surat rahasia kepada Bob. Alice memasukkan surat itu ke dalam kotak dan menguncinya menggunakan gembok (kunci simetris). Agar Bob bisa membuka kotak tersebut, ia harus memiliki kunci yang sama dengan yang digunakan Alice.
-
-Ada masalah besar dengan sistem ini. Yakni "masalah distribusi kunci". Ketika Alice dan Bob, yang berjauhan, berkomunikasi untuk pertama kalinya, bagaimana mereka bisa berbagi kunci tanpa disadap? Jika kunci tersebut dicuri oleh pihak ketiga saat dikirim melalui pos, semua komunikasi terenkripsi setelahnya akan sepenuhnya bocor.
-
-### 1.2 Penemuan Revolusioner "Sistem Kriptografi Kunci Publik"
-
-Untuk menyelesaikan masalah distribusi kunci ini, "sistem kriptografi kunci publik" diciptakan. Enkripsi RSA adalah salah satu jenisnya.
-
-Dalam sistem kriptografi kunci publik, **dua kunci yang berbeda digunakan: "kunci untuk enkripsi (kunci publik)" dan "kunci untuk dekripsi (kunci privat/rahasia)"**.
-
-1. Penerima, Bob, membuat sepasang "kunci publik" dan "kunci privat".
-2. Bob mempublikasikan "kunci publik"-nya ke seluruh dunia (tidak masalah siapa pun yang mendapatkannya).
-3. Pengirim, Alice, menggunakan "kunci publik" Bob untuk mengenkripsi pesan dan mengirimkannya.
-4. Pesan yang terenkripsi hanya bisa didekripsi dengan "kunci privat" yang hanya dimiliki oleh Bob.
-
-Jika diibaratkan dengan gembok, Bob membuat banyak "gembok yang terbuka (kunci publik)" dan menyebarkannya ke seluruh dunia. Alice memasukkan pesan yang ditujukan kepada Bob ke dalam kotak, dan menguncinya dengan klik menggunakan gembok Bob yang ia temukan. Begitu gembok ditutup, ia hanya dapat dibuka dengan "kunci master (kunci privat)" yang dimiliki oleh Bob. Bahkan jika seseorang mencuri kotak itu di tengah jalan, mereka tidak bisa membukanya karena tidak memiliki kunci master.
+Dalam enkripsi kunci publik, Bob sebagai penerima menyiapkan kunci publik dan kunci privat. Alice mengenkripsi dengan kunci publik Bob. Analogi gemboknya ialah gembok yang dapat ditutup siapa saja, sementara Bob menyimpan kunci pembukanya. Alice masih harus memastikan bahwa kunci publik itu benar-benar milik Bob. Autentikasi untuk mencegah penggantian kunci oleh penyerang adalah persyaratan tambahan.
 
 ```mermaid
 graph TD
-    A["Alice (Pengirim)"] --> B["Teks Terang (Pesan)"]
-    B --> C["Proses Enkripsi"]
-    D["Kunci Publik Bob (Tersedia untuk siapa saja)"] --> C
-    C --> E["Dikirim via Internet: Teks Sandi"]
-    E --> F["Proses Dekripsi"]
-    G["Kunci Privat Bob (Hanya dimiliki Bob)"] --> F
-    F --> H["Teks Terang Dipulihkan (Pesan)"]
-    H --> I["Bob (Penerima)"]
+    A["Alice (pengirim)"] --> B["Pesan"]
+    B --> C["Pengodean skema dan enkripsi"]
+    D["Kunci publik Bob yang diautentikasi"] --> C
+    C --> E["Kirim teks sandi"]
+    E --> F["Dekripsi dan pemeriksaan pengodean"]
+    G["Kunci privat Bob"] --> F
+    F --> H["Pesan setelah pemeriksaan berhasil"]
+    H --> I["Bob (penerima)"]
 ```
 
-Untuk mewujudkan sistem revolusioner ini, diperlukan semacam **"fungsi satu arah (teka-teki matematika satu arah)"** yang "mudah dienkripsi dengan kunci publik, tetapi sama sekali tidak dapat didekripsi tanpa kunci privat". Yang menjadi perhatian sebagai bagian dari teka-teki itu adalah "bilangan prima" yang sering kita kenal.
+Tujuannya adalah membuat dekripsi tanpa kunci privat sulit secara komputasi, meskipun kunci publik diketahui. Ini bukan jaminan matematis tanpa syarat bahwa dekripsi mustahil. Teknik kunci publik juga mencakup kesepakatan kunci dan tanda tangan; tidak semuanya melakukan operasi enkripsi yang sama.
 
----
+## 2. Bilangan prima dan faktorisasi
 
-## 2. Dasar Matematika yang Mendukung Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) 1: Bilangan Prima dan Faktorisasi Prima
+Bilangan prima adalah bilangan bulat lebih besar dari satu yang pembagi positifnya hanya satu dan dirinya sendiri. Contoh awalnya ialah $2,3,5,7,11,13,17,19,23$. Setiap bilangan bulat lebih besar dari satu memiliki faktorisasi prima yang unik jika urutannya diabaikan; misalnya $60=2^2\times3\times5$. Nol tidak termasuk, sedangkan satu diperlakukan terpisah sebagai hasil kali kosong.
 
-Keamanan enkripsi RSA didasarkan pada fakta matematis bahwa **"faktorisasi prima dari bilangan yang sangat besar adalah sangat sulit"**.
+Menghitung $11\times13=143$ mudah, tetapi menemukan $17\times19$ dari $323$ adalah tugas lain. RSA memublikasikan $N=pq$ untuk bilangan prima besar, berbeda, dan dipilih secara tepat. Mengetahui faktor memungkinkan perhitungan eksponen privat. Memfaktorkan modulus dapat mematahkan RSA, tetapi kita tidak menyatakan bahwa setiap cara mematahkan RSA telah terbukti secara umum setara dengan faktorisasi.
 
-### 2.1 Apa itu Bilangan Prima?
+'RSA 2048 bit' biasanya menyatakan **panjang bit modulus $N$**. Nilai $N$ sepanjang 2048 bit memiliki 617 digit desimal. Dengan dua bilangan prima yang seimbang, masing-masing sekitar 1024 bit. Kesulitan bergantung pada pembentukan dan ukuran parameter, algoritma yang tersedia, serta sumber daya komputasi. Perkiraan tanpa dasar seperti 'triliunan tahun' atau 'lebih lama daripada usia alam semesta' bukan jaminan.
 
-Bilangan prima adalah "bilangan asli lebih besar dari 1 yang hanya bisa dibagi habis oleh 1 dan dirinya sendiri".
-Contoh: $2, 3, 5, 7, 11, 13, 17, 19, 23...$
+## 3. Kongruensi dan sisa pembagian
 
-Bilangan prima itu seperti "atom" untuk semua bilangan bulat. Bilangan asli apa pun bisa diuraikan ke dalam bentuk perkalian bilangan-bilangan prima. Ini disebut **faktorisasi prima**. Sebagai contoh, $60 = 2^2 \times 3 \times 5$, dapat difaktorisasi prima hanya dalam satu cara dengan mengabaikan urutan, hal ini dikenal sebagai "Teorema Dasar Aritmetika".
+Seperti pada jam dengan format dua belas jam, ketika lima jam setelah pukul sepuluh disebut pukul tiga, kita dapat memperhatikan sisa pembagian modulo suatu bilangan.
 
-### 2.2 Kesulitan Faktorisasi Prima (Fungsi Satu Arah)
+$$15\equiv3\pmod{12}$$
 
-Yang penting di sini adalah asimetri di mana **"perkalian itu mudah, tetapi faktorisasi prima itu sulit"**.
+Untuk modulus $N>1$, jika $a\equiv b\pmod N$ dan $c\equiv d\pmod N$, penjumlahan, pengurangan, serta perkalian mempertahankan kongruensi. Untuk bilangan bulat tak negatif $k$, berlaku pula $a^k\equiv b^k\pmod N$. Eksponen negatif membutuhkan syarat tambahan, termasuk keberadaan invers.
 
-Sebagai contoh, coba hitung perkalian dua bilangan prima berikut di luar kepala.
-$11 \times 13 = ?$
-Ini mudah, bukan? Jawabannya adalah $143$.
+Karena $7\equiv2\pmod5$, berlaku $7^{100}\equiv2^{100}\pmod5$. Hasil antara juga dapat diganti dengan sisanya tanpa membentuk seluruh bilangan berpangkat yang sangat besar. Ini tidak berarti pangkat suatu sisa dan sisa suatu pangkat sama sebagai bilangan bulat biasa.
 
-Lalu, bagaimana dengan bilangan berikut?
-Faktorisasi prima dari $323$.
-Bagaimana? Seharusnya butuh sedikit waktu. (Jawabannya adalah $17 \times 19$).
+## 4. Fungsi totien dan teorema Euler
 
-Jika bilangannya kecil, manusia masih bisa menghitungnya entah bagaimana, tetapi ketika bilangannya menjadi besar, penghitungannya akan sangat sulit bahkan dengan menggunakan komputer. Enkripsi RSA mainstream saat ini menggunakan bilangan $N = p \times q$ yang mengalikan bilangan prima yang sangat besar $p$ dan $q$ sebesar 2048 bit (sekitar 600 digit dalam desimal).
+$\phi(N)$ menghitung banyaknya bilangan bulat $1\le a\le N$ yang relatif prima dengan $N$, yaitu memiliki faktor persekutuan terbesar satu. Misalnya $\phi(5)=4$ dan $\phi(6)=2$. Untuk bilangan prima $p$,
 
-Diberikan dua bilangan prima raksasa $p$ dan $q$, menghitung $N$ membutuhkan waktu sekejap (kurang dari milidetik) bagi komputer. Namun sebaliknya, jika hanya diberikan $N$ untuk mencari tahu $p$ dan $q$ yang asli, akan memakan waktu yang sangat lama yang tidak dapat dipecahkan bahkan jika superkomputer tercepat saat ini dijalankan selama triliunan tahun.
+$$\phi(p)=p-1$$
 
-Inilah **"asimetri komputasi (mudah satu arah, sulit arah sebaliknya)"** yang menjadi landasan untuk menciptakan hubungan antara kunci publik dan kunci privat.
+Untuk bilangan prima berbeda $p,q$ dan $N=pq$,
 
----
+$$\phi(N)=(p-1)(q-1)$$
 
-## 3. Dasar Matematika yang Mendukung Enkripsi RSA 2: Kongruensi (Aritmetika Modular)
+Mengetahui $p,q$ memungkinkan perhitungan nilai ini. Sebaliknya, mengetahui $\phi(N)$ memberi $p+q=N-\phi(N)+1$ dan $pq=N$; persamaan kuadrat kemudian mengembalikan kedua faktor. Jadi, nilai tersebut juga harus dirahasiakan.
 
-Perhitungan enkripsi RSA tidak dilakukan dengan penjumlahan atau perkalian bilangan yang menjadi besar tanpa batas seperti yang biasa kita gunakan, melainkan dalam dunia "sisa" setelah dibagi dengan suatu bilangan tertentu. Ini disebut **kongruensi (aritmetika modular)**.
+Teorema Euler menyatakan bahwa jika $\gcd(a,N)=1$,
 
-### 3.1 Matematika Jam
+$$a^{\phi(N)}\equiv1\pmod N$$
 
-Aritmetika modular sering diibaratkan sebagai "matematika jam". Misalkan sekarang jam 10, jam berapakah 5 jam dari sekarang? $10 + 5 = 15$, namun pada jam 12 jam biasa kita akan menjawab "jam 3". Hal ini karena sisa dari 15 dibagi 12 adalah 3.
+Dengan mengalikan kedua sisi dengan $a$, diperoleh
 
-Dalam dunia matematika, ini ditulis sebagai berikut.
-$$ 15 \equiv 3 \pmod{12} $$
-Ini dibaca sebagai "15 dan 3 adalah kongruen modulo 12 (sisanya sama jika dibagi 12)".
+$$a^{\phi(N)+1}\equiv a\pmod N$$
 
-### 3.2 Sifat Dasar Kongruensi
+dan untuk setiap bilangan bulat tak negatif $k$,
 
-Kongruensi memiliki sifat-sifat yang sangat berguna yang mirip dengan persamaan ($=$). Misalkan modulo (pembagi)-nya adalah $N$.
-Jika $a \equiv b \pmod N$ dan $c \equiv d \pmod N$, maka hal-hal berikut ini berlaku:
+$$a^{k\phi(N)+1}\equiv a\pmod N$$
 
-1. **Penjumlahan:** $a + c \equiv b + d \pmod N$
-2. **Pengurangan:** $a - c \equiv b - d \pmod N$
-3. **Perkalian:** $a \times c \equiv b \times d \pmod N$
-4. **Perpangkatan:** $a^k \equiv b^k \pmod N$ (di mana $k$ adalah bilangan asli)
+Kesimpulan antara $a^{\phi(N)}\equiv1$ tidak dapat digunakan setelah syarat relatif prima dihilangkan.
 
-Yang paling penting adalah sifat "perpangkatan". Ini berarti **"sisa pembagian suatu perpangkatan sama dengan perpangkatan dari sisa pembagian"**.
-Misalnya, misalkan kita ingin mencari sisa dari $7^{100}$ dibagi $5$. Jika kita serius mengalikan $7$ seratus kali dan kemudian membaginya dengan $5$, itu akan sangat sulit, tetapi menggunakan sifat kongruensi, karena $7 \equiv 2 \pmod 5$, maka akan menjadi $7^{100} \equiv 2^{100} \pmod 5$, yang menyederhanakan perhitungan secara drastis. Sifat ini sangat penting dalam dunia kriptografi karena berkaitan dengan perpangkatan angka yang sangat besar.
+## 5. Kunci, enkripsi, dan dekripsi pada model pembelajaran
 
----
+Kita memakai model dengan dua bilangan prima. Parameter nyata memerlukan bilangan prima ganjil yang berbeda dan cukup besar $p,q$; contoh berikut sengaja memakai nilai kecil yang diketahui agar aritmetikanya terlihat.
 
-## 4. Dasar Matematika yang Mendukung Enkripsi RSA 3: Fungsi Euler dan Teorema Euler
+1. Hitung $N=pq$ dan $\phi(N)=(p-1)(q-1)$.
+2. Pilih eksponen publik $e$ dengan $1<e<\phi(N)$ dan $\gcd(e,\phi(N))=1$.
+3. Cari eksponen privat positif $d$ yang memenuhi
 
-Mulai dari sini, kita masuk ke inti keajaiban matematika dari enkripsi RSA. Muncullah "Teorema Euler" yang merupakan generalisasi dari "[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)".
+$$ed\equiv1\pmod{\phi(N)}$$
 
-### 4.1 Fungsi Totient Euler $\phi(N)$
+Kunci publiknya $(N,e)$, sedangkan salah satu representasi dasar kunci privat adalah $(N,d)$. Bilangan $d$ ialah eksponen, bukan seluruh representasi standar kunci itu sendiri. Representasi praktis juga dapat memuat faktor dan parameter teorema sisa Cina. RFC 8017 mendefinisikan syarat menggunakan $\lambda(N)=\operatorname{lcm}(p-1,q-1)$. Mengambil invers modulo $\phi(N)$ di sini adalah syarat cukup sederhana yang juga memenuhi syarat modulo $\lambda(N)$.
 
-Fungsi Totient Euler (Fungsi $\phi$) adalah fungsi yang untuk suatu bilangan asli $N$, menghasilkan **"jumlah bilangan dari bilangan asli antara 1 hingga $N$ yang saling prima (faktor persekutuan terbesarnya adalah 1) dengan $N$"**.
+Untuk **wakil bilangan bulat pesan** (message representative) $0\le M<N$, perhitungan enkripsi pada model ini adalah
 
-Mari kita lihat beberapa contoh.
-- $\phi(5)$: Di antara 1, 2, 3, 4, 5, bilangan yang saling prima dengan 5 ada 4 bilangan yaitu 1, 2, 3, 4. Sehingga, $\phi(5) = 4$.
-- $\phi(6)$: Di antara 1, 2, 3, 4, 5, 6, bilangan yang saling prima dengan 6 ada 2 bilangan yaitu 1, 5. Sehingga, $\phi(6) = 2$.
+$$C\equiv M^e\pmod N$$
 
-**【Sifat Khusus dalam Kasus Bilangan Prima】**
-Jika $p$ adalah bilangan prima, semua angka dari 1 hingga $p-1$ akan saling prima dengan $p$. Oleh karena itu,
-$$ \phi(p) = p - 1 $$
+Untuk wakil teks sandi $0\le C<N$, dekripsi menghitung
 
-**【Sifat Khusus dalam Kasus Hasil Kali Bilangan Prima】**
-Untuk dua bilangan prima berbeda $p$ dan $q$, jika $N = p \times q$, $\phi(N)$ dapat dengan mudah dicari melalui perhitungan berikut.
-$$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-Sifat ini berfungsi sebagai "pintu belakang rahasia (trapdoor)" dari enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/). Seseorang yang mengetahui $p$ dan $q$ (pembuat kunci) dapat menghitung $\phi(N)$ dalam sekejap, tetapi pihak ketiga yang hanya tahu $N$ tidak akan bisa mencari $\phi(N)$ kecuali mereka memfaktorkan prima $N$.
+$$M\equiv C^d\pmod N$$
 
-### 4.2 Teorema Euler
-
-[Leonhard Euler](https://kenji.blog/id/p/euler/) menggunakan $\phi(N)$ ini untuk membuktikan teorema yang indah sebagai berikut.
-
-**Teorema Euler:**
-Ketika bilangan bulat $a$ dan $N$ saling prima, persamaan kongruensi berikut berlaku.
-$$ a^{\phi(N)} \equiv 1 \pmod N $$
-
-Ini adalah sifat yang luar biasa, yang menyatakan bahwa "jika suatu bilangan $a$ dikalikan $\phi(N)$ kali lalu dibagi $N$, sisanya pasti akan menjadi $1$". (Jika $N$ adalah bilangan prima $p$, ia menjadi $a^{p-1} \equiv 1 \pmod p$ dan disebut [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)).
-
-Mari kita ubah bentuk Teorema Euler ini. Kita kalikan kedua sisi dengan $a$ sekali lagi.
-$$ a^{\phi(N) + 1} \equiv a \pmod N $$
-
-Lebih lanjut, untuk sembarang bilangan bulat $k$, $a^{k \cdot \phi(N)}$ juga menjadi $1^k = 1$, sehingga persamaan berikut berlaku.
-$$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
-
-Persamaan inilah prinsip fundamental yang mewujudkan keajaiban enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) yaitu **"setelah dienkripsi dan kemudian didekripsi akan kembali ke asalnya"**.
-
----
-
-## 5. Algoritma Enkripsi RSA: Langkah Pembuatan Kunci, Enkripsi, dan Dekripsi
-
-Sekarang setelah kita memiliki pengetahuan dasarnya, mari kita lihat prosedur spesifik dari enkripsi RSA. Enkripsi RSA dibagi menjadi 3 fase utama: "1. Pembuatan Kunci", "2. Enkripsi", dan "3. Dekripsi".
+Dalam skema praktis, byte pesan melalui pengodean yang ditentukan sebelum diubah menjadi bilangan bulat; setelah dekripsi juga diperlukan validasi. Mengubah karakter langsung menjadi bilangan bulat lalu memangkatkannya belum cukup.
 
 ```mermaid
 flowchart TD
-    A1["1. Pilih bilangan prima p, q"] --> A2["Hitung N = p × q"]
-    A1 --> A3["Hitung φ(N) = (p-1)(q-1)"]
-    A3 --> A4["Pilih e yang saling prima dengan φ(N)"]
-    A3 --> A5["Hitung d sehingga e × d ≡ 1 (mod φ(N))"]
-    A2 --> A6["Kunci Publik (N, e)"]
+    A1["1. Prima ganjil berbeda p, q"] --> A2["N = p q"]
+    A1 --> A3["phi = (p-1)(q-1)"]
+    A3 --> A4["1＜e＜phi, gcd(e,phi)=1"]
+    A3 --> A5["Invers d: e d ≡ 1 mod phi"]
+    A2 --> A6["Kunci publik (N,e)"]
     A4 --> A6
-    A5 --> A7["Kunci Privat d"]
-    
-    B1["2. Pesan Teks Terang M"] --> B2["Hitung C ≡ M^e (mod N)"]
+    A5 --> A7["Kunci privat (N,d)"]
+    B1["2. Wakil pada contoh 0≤M＜N"] --> B2["C = M^e mod N"]
     A6 -.-> B2
-    B2 --> B3["Kirim Teks Sandi C"]
-    
-    B3 --> C1["3. Teks Sandi C Diterima"]
-    C1 --> C2["Hitung M ≡ C^d (mod N)"]
+    B2 --> B3["0≤C＜N"]
+    B3 --> C1["3. Wakil yang diterima C"]
+    C1 --> C2["M = C^d mod N"]
     A7 -.-> C2
-    C2 --> C3["Dapatkan pesan teks terang awal M"]
+    C2 --> C3["Wakil semula M"]
 ```
 
-### 5.1 Pembuatan Kunci (Key Generation)
+Aritmetika RSA saja bersifat deterministik: $M$ yang sama menghasilkan $C$ yang sama. Bila kandidat pesan sedikit, siapa saja dapat mengenkripsi setiap kandidat dengan kunci publik lalu membandingkannya. Selain itu, mengganti $C$ dengan $C\,r^e\bmod N$ mengubah wakil hasil dekripsi menjadi $Mr\bmod N$. Sifat keamanan yang diperlukan skema praktis tidak diperoleh hanya dari aritmetika ini.
 
-Penerima, Bob, membuat "kunci publik" dan "kunci privat" untuk dirinya sendiri.
+## 6. Mengapa dekripsi memulihkan masukan
 
-1. **Pemilihan Bilangan Prima:** Pilih dua bilangan prima besar $p$ dan $q$ secara acak.
-2. **Perhitungan Modulo $N$:** Hitung $N = p \times q$. Nilai $N$ ini akan dipublikasikan.
-3. **Perhitungan $\phi(N)$:** Hitung fungsi Euler $\phi(N) = (p - 1)(q - 1)$. Ini adalah angka rahasia milik Bob.
-4. **Pemilihan Kunci Publik $e$:** Pilih bilangan bulat $e$ dengan syarat $1 < e < \phi(N)$ dan saling prima dengan $\phi(N)$.
-5. **Perhitungan Kunci Privat $d$:** Temukan bilangan bulat $d$ yang memenuhi syarat berikut:
-   $$ e \times d \equiv 1 \pmod{\phi(N)} $$
-   Artinya, "suatu bilangan $d$ sedemikian rupa sehingga jika $e \times d$ dibagi $\phi(N)$, sisanya adalah $1$".
+Dekripsi menghitung
 
-Kini kunci sudah siap.
-- **Kunci Publik:** Pasangan $(N, e)$. Dipublikasikan ke seluruh dunia.
-- **Kunci Privat:** $d$. Sama sekali tidak diberitahukan kepada siapa pun.
+$$C^d\equiv(M^e)^d\equiv M^{ed}\pmod N$$
 
-### 5.2 Enkripsi (Encryption)
+Dari syarat kunci, ada bilangan bulat tak negatif $k$ sehingga
 
-Misalkan Alice ingin mengirim pesan rahasia $M$ kepada Bob. (Misalkan $M$ adalah nilai numerik dari teks, dengan $0 \le M < N$). Alice menggunakan kunci publik Bob $(N, e)$ untuk menghitung hal berikut.
+$$ed=k\phi(N)+1$$
 
-$$ C \equiv M^e \pmod N $$
+Jika $\gcd(M,N)=1$, teorema Euler memberi
 
-Menghitung "pesan $M$ dipangkatkan dengan $e$, dan sisanya setelah dibagi dengan $N$ adalah $C$". $C$ ini adalah teks sandinya.
+$$M^{ed}=(M^{\phi(N)})^k M\equiv1^k M\equiv M\pmod N$$
 
-### 5.3 Dekripsi (Decryption)
+Namun, wakil RSA tidak harus relatif prima dengan $N$. Misalnya $M=0,11,13$ juga berada dalam rentang. Karena itu, kita meninjau setiap bilangan prima secara terpisah.
 
-Bob menerima teks sandi $C$. Bob menggunakan kunci privatnya $d$ untuk menghitung hal berikut.
+- Jika $p\mid M$, maka $M^{ed}\equiv M\equiv0\pmod p$ karena eksponen $ed$ positif.
+- Jika $p\nmid M$, teorema kecil Fermat memberi $M^{p-1}\equiv1\pmod p$. Karena $ed-1$ merupakan kelipatan $p-1$, diperoleh $M^{ed}\equiv M\pmod p$.
+- Penalaran yang sama berlaku modulo $q$.
 
-$$ M \equiv C^d \pmod N $$
+Bilangan prima berbeda $p,q$ relatif prima, sehingga teorema sisa Cina memberi
 
-Jika "teks sandi $C$ dipangkatkan dengan $d$, dan dihitung sisanya setelah dibagi dengan $N$", menakjubkan sekali, pesan asli $M$ berhasil dipulihkan!
+$$M^{ed}\equiv M\pmod{pq}$$
 
----
+untuk setiap wakil $0\le M<N$. Ini membuktikan kebenaran aritmetika, bukan keamanan skema terhadap penyadapan atau perubahan.
 
-## 6. Mengapa Bisa Kembali Asal Melalui Dekripsi? (Pembuktian Matematis)
+## 7. Perhitungan manual dengan prima kecil
 
-Anda mungkin bertanya-tanya, "Bagaimana mungkin hanya dengan memangkatkan $C$ dengan $d$ bisa mengembalikannya ke $M$ yang asli?". Di sinilah "Teorema Euler" yang sudah dibahas sebelumnya menunjukkan kekuatannya.
+Ambil $p=11,q=13$. Maka $N=143$ dan $\phi(N)=120$. Pilih $e=7$ dan selesaikan $7d\equiv1\pmod{120}$. Karena $7\times103=721=6\times120+1$, kita dapat memakai $d=103$.
 
-Mari kita substitusikan rumus enkripsi $C = M^e$ ke dalam rumus dekripsi $C^d \pmod N$.
-$$ C^d \equiv (M^e)^d \equiv M^{ed} \pmod N $$
+Untuk masukan contoh $M=9$, berlaku $9^7=4\,782\,969=33\,447\times143+48$, sehingga $C=48$. Dekripsi memberi $48^{103}\bmod143=9$. Dalam Python, `pow(48, 103, 143)` menghitungnya tanpa lebih dahulu membentuk bilangan bulat lengkap $48^{103}$.
 
-Sekarang, ingatlah langkah 5 pada pembuatan kunci. Saat Bob membuat $d$, ia memilihnya sedemikian rupa sehingga $e \times d \equiv 1 \pmod{\phi(N)}$. Ini berarti bahwa "$ed$ adalah kelipatan $\phi(N)$ ditambah $1$". Kita bisa menuliskannya menggunakan bilangan bulat $k$ seperti ini:
-$$ ed = k \cdot \phi(N) + 1 $$
+Bilangan prima dan eksponen privat ini merupakan nilai pembelajaran publik yang terlihat oleh siapa saja. Nilai tersebut tidak dapat melindungi pesan rahasia.
 
-Kita substitusikan ini ke eksponen, dan menjabarkannya menggunakan hukum eksponen.
-$$ M^{ed} = M^{k \cdot \phi(N) + 1} = M^{k \cdot \phi(N)} \times M^1 = (M^{\phi(N)})^k \times M $$
+## 8. Mencari invers dengan algoritma Euclid diperluas
 
-Di sini, jika kita mengasumsikan bahwa pesan $M$ dan $N$ saling prima, menurut **Teorema Euler** maka $M^{\phi(N)} \equiv 1 \pmod N$.
-$$ (M^{\phi(N)})^k \times M \equiv 1^k \times M \equiv M \pmod N $$
+Kongruensi $7d\equiv1\pmod{120}$ berarti ada bilangan bulat $d,y$ sehingga $7d+120y=1$. Karena $120=17\times7+1$, diperoleh $1=120-17\times7$, sehingga $d\equiv-17\equiv103\pmod{120}$.
 
-Sehingga, terbukti bahwa persamaan berikut ini benar.
-$$ C^d \equiv M \pmod N $$
+Algoritma Euclid diperluas mencari koefisien semacam ini secara umum. Invers ada ketika bilangan bulat dan modulus relatif prima. Perhitungan bergantung pada panjang masukan; waktunya tidak tetap untuk masukan sebesar apa pun.
 
-Alice tidak tahu $d$, dan penyadap juga tidak tahu $d$, jadi hanya Bob yang memiliki $d$ lah yang bisa mengekstrak $M$ dari $C$.
+## 9. Tanda tangan digital memakai skema khusus
 
----
+Tanda tangan RSA dibuat dengan kunci privat dan diverifikasi dengan kunci publik yang bersesuaian. Menyebutnya 'enkripsi dengan kunci privat lalu dekripsi dengan kunci publik' menutupi perbedaan pengodean dan validasi antara skema enkripsi dan tanda tangan.
 
-## 7. Contoh Konkret: Mari Mencoba [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dengan Perhitungan Manual Menggunakan Bilangan Prima Kecil
-
-Mari kita gunakan angka-angka (bilangan prima) kecil untuk mempraktekkan komunikasi terenkripsi dari Alice ke Bob.
-
-**【Fase Pembuatan Kunci oleh Bob】**
-1. Pilih dua bilangan prima $p=11$, $q=13$.
-2. Hitung $N = 11 \times 13 = 143$.
-3. Hitung $\phi(N) = (11 - 1) \times (13 - 1) = 10 \times 12 = 120$.
-4. Pilih kunci publik $e$ yang saling prima dengan $\phi(N)=120$. Di sini, kita buat $e=7$.
-5. Cari kunci privat $d$. Kita cari $d$ yang mana $7 \times d \equiv 1 \pmod{120}$.
-   Dalam persamaan $7d = 120k + 1$, saat $k=6$, hasilnya menjadi $721$, dan $721 \div 7 = 103$.
-   Maka, $d = 103$.
-
-- Kunci Publik: $(N=143, e=7)$
-- Kunci Privat: $d=103$
-
-**【Fase Enkripsi oleh Alice】**
-Misalkan Alice ingin mengirim pesan $M = 9$.
-Rumus: $C \equiv 9^7 \pmod{143}$
-$9^7 = 4.782.969$. Jika dibagi 143, hasil baginya 33.447 dengan sisa $48$.
-Teks sandinya menjadi $C = 48$.
-
-**【Fase Dekripsi oleh Bob】**
-Bob menerima teks sandi $C = 48$ dan menggunakan kunci privat $d = 103$ untuk mendekripsinya.
-Rumus: $M \equiv 48^{103} \pmod{143}$
-Jika Anda mengeksekusi `(48 ** 103) % 143` di kalkulator (atau komputer), hasilnya secara menakjubkan adalah "**9**"! Pesan asli berhasil diterima dengan aman.
-
----
-
-## 8. Cara Mencari Kunci Privat $d$: [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas (Extended [Euclide](https://kenji.blog/id/p/euclid/)an Algorithm)
-
-Pada contoh hitung manual, kita menebak nilai $k$ untuk mencari $d=103$, namun saat bilangannya menjadi ratusan digit, cara ini tidak mungkin dilakukan. Dalam program komputer yang nyata, digunakan algoritma yang disebut **"[Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas"** (Extended [Euclide](https://kenji.blog/id/p/euclid/)an Algorithm).
-
-Menyelesaikan $7d \equiv 1 \pmod{120}$ sama artinya dengan mencari bilangan bulat $d, y$ yang memenuhi $7d + 120y = 1$. Dengan menghitung balik [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/), hal ini bisa didapatkan secara mekanis.
-
-1. $120 \div 7 = 17$ sisa $1$ 
-2. Jika kita ubah persamaannya, $1 = 120 - 17 \times 7$
-3. Artinya, $-17 \times 7 \equiv 1 \pmod{120}$
-
-$-17$ memiliki makna yang sama dengan $120 - 17 = 103$ dalam dunia modulo $120$. Oleh karena itu, $d = 103$ dapat ditemukan dalam sekejap. Cara ini dapat menghitung bilangan sebesar apa pun dengan sangat cepat.
-
----
-
-## 9. Wajah Lain dari Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/): Tanda Tangan Digital
-
-Hal hebat dari enkripsi RSA adalah, ia juga bisa digunakan sebagai **"tanda tangan digital"** dengan menukar peran kunci publik dan kunci privat.
-
-Pada enkripsi: "Enkripsi dengan kunci publik $\Rightarrow$ Dekripsi dengan kunci privat".
-Pada tanda tangan digital, prosedurnya menjadi: "Enkripsi dengan kunci privat $\Rightarrow$ Dekripsi dengan kunci publik".
+Relasi tanpa pengodean $S=M^d\bmod N$ dengan pemeriksaan $S^e\equiv M\pmod N$ bukan skema tanda tangan yang aman. Penyerang dapat memilih $S=2$, lalu memakai nilai publik $e=7,N=143$ untuk menghitung $M=2^7\bmod143=128$. Pasangan ini lolos pemeriksaan tanpa memakai kunci privat. Ini bukan klaim dapat menandatangani sembarang pesan yang sudah ditentukan sebelumnya; ini menunjukkan bahwa pemeriksaan tadi saja tidak memadai.
 
 ```mermaid
 flowchart TD
-    A1["1. Alice membuat tanda tangan dengan kunci privatnya"] --> A2["S ≡ M^d (mod N)"]
-    A2 --> A3["Mengirim pesan M dan tanda tangan S"]
-    
-    A3 --> B1["2. Bob memverifikasi tanda tangan dengan kunci publik"]
-    B1 --> B2["Menghitung M' ≡ S^e (mod N)"]
-    B2 --> B3["Memeriksa apakah M' cocok dengan M"]
+    A1["Alice: olah pesan sesuai skema"] --> A2["Hash, pengodean PSS, tanda tangan dengan kunci privat"]
+    A2 --> A3["Kirim pesan dan tanda tangan"]
+    A3 --> B1["Bob: autentikasi kunci publik Alice"]
+    B1 --> B2["Verifikasi skema, parameter, dan pengodean"]
+    B2 --> B3["Terima atau tolak tanda tangan"]
 ```
 
-Alice menggunakan kunci privatnya sendiri $d$ untuk mengubah pesan (ini adalah tanda tangan $S$) dan mengirimkannya ke Bob. Bob menggunakan kunci publik Alice $e$ untuk melakukan perhitungan verifikasi. Jika hasil perhitungannya cocok dengan pesan asli, ini sekaligus membuktikan "bahwa data itu hanya bisa dibuat dengan kunci privat Alice" dan "pesan itu tidak dimanipulasi di tengah jalan".
+Skema seperti RSASSA-PSS menggabungkan hash dengan pengodean dan verifikasi khusus. Tanda tangan tidak menyembunyikan pesan; pengelolaan kunci serta pengikatannya dengan identitas tetap penting. Pisahkan kunci enkripsi dan tanda tangan menurut tujuannya, dan gunakan pustaka terpelihara yang mendukung protokol yang dimaksud.
 
----
+## 10. Memeriksa aritmetika pembelajaran dengan Python
 
-## 10. Merasakan Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) Melalui Program
-
-Perhitungan perpangkatan yang berat jika dihitung manual dapat diimplementasikan dengan sangat mudah menggunakan Python. Berikut adalah kode Python untuk mengalami logika inti dari enkripsi RSA.
+Contoh mandiri untuk Python 3.8 atau lebih baru ini hanya memakai nilai pembelajaran yang diketahui. `pow(e, -1, phi)` mencari invers bilangan bulat yang relatif prima. Rentang wakil juga diperiksa secara eksplisit. Contoh ini tidak membangkitkan kunci, tidak mengimplementasikan OAEP atau PSS, dan tidak menjamin waktu eksekusi konstan.
 
 ```python
-def gcd(a, b):
-    """Mencari faktor persekutuan terbesar (FPB)"""
-    while b != 0:
-        a, b = b, a % b
-    return a
+from math import gcd
+
 
 def mod_inverse(e, phi):
-    """Mencari kunci privat d (Menggunakan fungsi bawaan dari Python 3.8 ke atas)"""
+    # Fixed public teaching parameters, not a key generator.
+    if type(e) is not int or type(phi) is not int:
+        raise TypeError("Integer parameters required")
+    if phi <= 1 or not 1 < e < phi or gcd(e, phi) != 1:
+        raise ValueError("Invalid teaching exponent or modulus")
     return pow(e, -1, phi)
 
-# 1. Pembuatan Kunci
+
+def rsa_primitive_demo(value, exponent, modulus):
+    # Range checks do not make raw RSA a secure encryption scheme.
+    if any(type(x) is not int for x in (value, exponent, modulus)):
+        raise TypeError("Integer parameters required")
+    if modulus <= 1 or exponent <= 0 or not 0 <= value < modulus:
+        raise ValueError("Invalid exponent, modulus or representative")
+    return pow(value, exponent, modulus)
+
+
+# Public toy values only. Never use this code or these keys for secrets.
 p, q = 11, 13
 N = p * q
 phi = (p - 1) * (q - 1)
 e = 7
 d = mod_inverse(e, phi)
-
-print(f"Kunci Publik: (N={N}, e={e}), Kunci Privat: d={d}")
-
-# 2. Enkripsi
 message = 9
-ciphertext = pow(message, e, N)
-print(f"Teks Sandi: {ciphertext}")
-
-# 3. Dekripsi
-decrypted_message = pow(ciphertext, d, N)
-print(f"Pesan yang Didekripsi: {decrypted_message}")
+ciphertext = rsa_primitive_demo(message, e, N)
+decrypted_message = rsa_primitive_demo(ciphertext, d, N)
+assert (N, phi, d, ciphertext, decrypted_message) == (143, 120, 103, 48, 9)
+assert all(rsa_primitive_demo(rsa_primitive_demo(m, e, N), d, N) == m
+           for m in range(N))
+print(f"Public toy parameters: N={N}, e={e}, d={d}")
+print(f"Ciphertext representative: {ciphertext}")
+print(f"Recovered representative: {decrypted_message}")
+print("All 143 representatives round-trip")
 ```
 
-Fungsi `pow(base, exp, mod)` pada Python secara internal menggunakan algoritma cepat yang disebut "Exponensiasi Pengkuadratan Berulang" (Repeated Squaring), sehingga perhitungan selesai dalam sekejap bahkan jika angkanya ratusan digit.
+`pow` dengan tiga argumen menghitung pangkat modular tanpa membentuk seluruh pangkatnya. Ini lebih efisien, tetapi waktu eksekusi bergantung pada masukan dan implementasi. Pemeriksaan masukan serta pemulihan semua 143 nilai tetap merupakan pengujian aritmetika pembelajaran.
 
----
+## 11. Skema praktis dan teknologi masa depan
 
-## 11. Kesimpulan dan Teknologi Kriptografi Masa Depan
+Enkripsi RSA praktis memakai skema seperti RSAES-OAEP. RSA digunakan sebagai komponen enkripsi hibrida, bukan untuk langsung mengenkripsi pesan panjang. Misalnya, OAEP dengan modulus 2048 bit dan SHA-256 menerima paling banyak $256-2\times32-2=190$ byte. Enkripsi saja tidak mengautentikasi pengirim.
 
-Berdasarkan pengetahuan matematika tingkat sekolah menengah atas, kita telah mengungkap cara kerja dari enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/).
+Keamanan komunikasi bergantung pada keseluruhan protokol. TLS 1.3 tidak menggunakan transportasi kunci RSA. Jika tanda tangan RSA digunakan, perannya berbeda dari enkripsi untuk mengirimkan kunci. Komunikasi modern tidak boleh dipahami selalu 'dienkripsi dengan RSA'.
 
-1. **Kesulitan Faktorisasi Prima:** Mudah untuk menghitung $p \times q = N$, tetapi sangat sulit untuk menemukan $p, q$ dari $N$.
-2. **Kongruensi dan Teorema Euler:** Berkat aturan $a^{\phi(N)} \equiv 1 \pmod N$, sebuah trapdoor ajaib "memangkatkan dengan suatu bilangan mengembalikan ke bentuk asli" telah tercipta.
-3. **Kunci Publik dan Kunci Privat:** Siapa pun dapat mengenkripsi, tetapi hanya penerima sah yang dapat mendekripsi.
+Algoritma kuantum Shor memfaktorkan bilangan bulat dalam waktu polinomial terhadap panjang masukan pada model komputasi kuantum yang sesuai. Ini tidak berarti perhitungan seketika atau perkiraan kapan perangkat kerasnya tersedia. Komputer kuantum yang mampu menjalankan perhitungan yang diperlukan akan mengancam RSA, sehingga mendorong kriptografi pascakuantum. Nama itu pun tidak menjamin keamanan mutlak terhadap setiap serangan masa depan.
 
-Nilai $N$ pada enkripsi RSA yang digunakan saat ini lebih dari 600 digit, dan butuh waktu lebih lama dari usia alam semesta untuk memfaktorkan primanya meskipun dengan menggerakkan seluruh superkomputer di dunia. Namun, jika "komputer kuantum", yang penelitiannya sedang berkembang dalam beberapa tahun terakhir, berhasil dikomersialkan di masa depan, ada kemungkinan bahwa faktorisasi prima ini akan dipecahkan dalam sekejap oleh algoritma Shor. Oleh karena itu, pengembangan "Kriptografi Pasca Kuantum" (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy) yang tidak dapat dipecahkan bahkan oleh komputer kuantum saat ini sedang dikembangkan dengan sangat cepat di seluruh dunia.
+RSA mengajarkan bilangan prima, kongruensi, invers, dan bukti kebenaran. Keamanan skema praktis menambahkan persyaratan pengodean, autentikasi, verifikasi, dan implementasi.
 
-Matematika tingkat tinggi yang sering dianggap "tidak berguna", nyatanya melindungi kehidupan sehari-hari kita dari fondasinya. Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) merupakan materi pembelajaran terbaik yang mengajarkan kita kedalaman dan keindahan matematika tersebut. Kami harap melalui artikel ini, Anda sedikit banyak dapat merasakan betapa menariknya kriptografi dan matematika.
+### Referensi
+
+- [RFC 8017: PKCS #1 v2.2](https://www.rfc-editor.org/rfc/rfc8017.html) (§§3, 5, 7.1, 8.1)
+- [RFC 8446: TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) (§1.2, Appendix E.8)
+- [Python 3.12: pow](https://docs.python.org/3.12/library/functions.html#pow)
+- [Shor: Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer](https://arxiv.org/abs/quant-ph/9508027) (abstrak)
