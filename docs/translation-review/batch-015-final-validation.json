@@ -1,0 +1,310 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T02:45:28.885104+09:00",
+  "python": "3.12.14",
+  "files": [
+    {
+      "language": "ja",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.md",
+      "hash": "7f1f1b6784f4e24625bb4f4efae25b6ff517b40e5eecadd82661d59e249fcbec",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 103,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.en.md",
+      "hash": "8de09d8da0bcaa83bc436e5b28c55a3a3843bef54ec5f1a2e2f62f1a44157f4d",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 104,
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-cn.md",
+      "hash": "63f98ebf49a65c2db31e81b8e4e46b903ffbd157ab9311704b75f840528314b9",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 104,
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.es.md",
+      "hash": "c04be29776fb6ef43d0799ac5e2daa33632709958addd5b626895be865c7b63a",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 103,
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ko.md",
+      "hash": "bea9e7f76fb7a20cd467f0b4277944b1e46e02379cae822a3d25f4125f066d88",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 104,
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.pt.md",
+      "hash": "bc798f4249b162fc5437d0c14e0251d2ca4c217542ba8f0c917e73f07a3dc0f2",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 103,
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-tw.md",
+      "hash": "149544cdee318a7b30dfefc3cad7373e9830d51b67bc632fd8b197877cf3fb32",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 104,
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.hi.md",
+      "hash": "195c0a8bac55b81fbc3555451a2aac85b8b220d5f717424a70529f254595c42e",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 106,
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.fr.md",
+      "hash": "64de7ec99d7e21e85ec63b2cc0177491f21355b6fc7a7e40a05ff2a18e3038d8",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 103,
+      "passed": true
+    },
+    {
+      "language": "de",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.de.md",
+      "hash": "683c5a290ff7c7d6310d0b987f6c71286affc680157fb4301244274ca54d8ab6",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 104,
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ar.md",
+      "hash": "e907f23a45bc03f2587a542a96487d81dbf7531ae43f05783ca86ba07258d5f9",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 106,
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ru.md",
+      "hash": "b81afcaab7e0eb5b8cbbe3865cd2ced7d453bb2bee2d4351092feb5cde9e0e72",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 103,
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.id.md",
+      "hash": "d425aa363beaeec8a2ba6bc05c0fc7e322a0223a15e1b1a68a07b266e7032a91",
+      "standalonePythonBlocks": 1,
+      "stdout": "Public toy parameters: N=143, e=7, d=103\nCiphertext representative: 48\nRecovered representative: 9\nAll 143 representatives round-trip\n",
+      "roundTripRepresentativesEachDirection": 143,
+      "nonCoprimeRepresentatives": 23,
+      "invalidCasesRejected": 18,
+      "rawRsaMalleabilityCases": 572,
+      "rawSignatureForgery": {
+        "s": 2,
+        "m": 128
+      },
+      "displayMath": 13,
+      "mermaidEdges": [
+        8,
+        14,
+        5
+      ],
+      "renderedTeXExpressions": 103,
+      "passed": true
+    }
+  ],
+  "site": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-16-bundles-rsa-ar",
+  "allPassed": true,
+  "scope": "Only selected article versions; extracted code execution, public toy arithmetic, exact math and generated markers/links.",
+  "limitations": "Does not record semantic reviews or certify OAEP/PSS, general RSA security, constant-time behavior, native-language quality or visual rendering."
+}

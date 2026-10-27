@@ -1043,5 +1043,49 @@
       "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.hi.md": "f7f5e20fde98a7a2db4686c09e788ec8c32f7eed7044d85c7a577bd6ea59de96",
       "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ru.md": "35cc66ad427025222cd5dc84004e8743e88581744b8c988a99d15bd28f8df07c"
     }
+  },
+  "finalAssembly": {
+    "checkedAt": "2026-10-28T02:46:05.354840+09:00",
+    "reviewedTranslations": 12,
+    "sourceVersions": 1,
+    "otherTranslationsUnreviewed": 0,
+    "validation": "docs/translation-review/batch-015-final-validation.json",
+    "reproducer": "docs/translation-review/verify_batch_015.py",
+    "scope": "All13versions:13standalonePythonblocks,169displayformulas,39Mermaiddiagrams/351edges,1350decodedTeXexpressions. Per-version143forward and143reverse representatives,18invalid cases and572public raw-RSA modifications.",
+    "build": {
+      "hugo": "0.139.0 extended",
+      "minified": true,
+      "scope": "Sixteen isolated article bundles, not a full site build. Full site remains in CI.",
+      "multilingualPages": 1077,
+      "httpsHtml": 1986,
+      "httpsXml": 41
+    },
+    "repositoryTests": {
+      "multilingual": 10,
+      "mathRendering": 1,
+      "translationReviews": 6,
+      "allPassed": true,
+      "ledger": {
+        "current": 192,
+        "unreviewed": 12840
+      }
+    },
+    "immutableReviewEntryDigests": {
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.en.md": "5ebb31343f7134f849dc7d2317c75668a5779fa6f5e4af45b59e12d223985f88",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-cn.md": "2a43fea2212c5c5204bb68dfd5f3fc642dc6e269df508e4953d537d0a898664e",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-tw.md": "0250e825ae6ef34f34d7d10f13f4706721dd4f48ac3565bb2b29529a0b4f73c6",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.es.md": "c69597478e3ddb0d3a8bebb9b7594d2f8329fac7c94b30536ece7164723b5c9e",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ko.md": "e2becca70a82361f3d347e8f01e14cfb990fee3e7bb31350a552a987552da2fa",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.pt.md": "7f377d4877057269d85a480f086ea8b3e3f855456c4e6b96d101d5e63d14de0a",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.fr.md": "244d6c2d2872b91ea74875314c51a7fa5499ec30be0254ec7bf92773d5fd185b",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.de.md": "bfa7fcd3790dd1dcb385f54a96548866c6cfff996f8b3cc5776aef93ea2c00ab",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.id.md": "c2ac6ea0348c2d5d2c79d5bc0a75e4187d777be77cf61aed4587c9a6d2e33547",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.hi.md": "f7f5e20fde98a7a2db4686c09e788ec8c32f7eed7044d85c7a577bd6ea59de96",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ru.md": "35cc66ad427025222cd5dc84004e8743e88581744b8c988a99d15bd28f8df07c",
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.ar.md": "6696bbe9935255b9b1344b4d22250ad7fc313341c6c1061bf891601b083e8213"
+    },
+    "buildPending": false,
+    "publicationPending": true,
+    "limitations": "Historical stage entries retain actual review dates and pending status. Full public CI and208URL publication verification pending. AI review; no human/native-speaker, visual browser, constant-time or production-cryptography certification."
   }
 }
