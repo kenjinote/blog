@@ -2,6 +2,7 @@
 title: '【Explicação de Matemática】Explicando o mecanismo da criptografia RSA para que até alunos do ensino médio entendam'
 slug: "rsa-encryption-math-explained-for-beginners"
 date: "2026-09-11T13:00:00+09:00"
+lastmod: "2026-10-28"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,345 +10,232 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Prime Numbers", "Math", "Cryptography"]
 ---
 
-Uma das tecnologias que sustenta a segurança da nossa sociedade baseada na internet desde a sua base é a "Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)". Muitas das comunicações que usamos casualmente todos os dias, como pagamentos com cartão de crédito em compras online, troca de mensagens em redes sociais com amigos, ou o envio e recebimento de informações confidenciais de empresas, são protegidas pela criptografia RSA e suas tecnologias sucessoras.
+RSA é usado em criptografia de chave pública e assinaturas digitais. Sua aritmética pode ser explorada com ideias do ensino médio: números primos, restos e potências. Porém, elevar diretamente um inteiro a uma potência em um exemplo didático deve ser distinguido dos esquemas usados em comunicações reais.
 
-No entanto, ao ouvir a palavra "criptografia", você pode imaginar máquinas de cifra complexas como as que aparecem em filmes de espionagem, ou uma matemática super avançada que apenas alguns gênios conseguem entender. É verdade que a teoria criptográfica moderna é baseada em matemática avançada, mas **o mecanismo fundamental da criptografia RSA pode ser plenamente compreendido com o conhecimento de matemática ensinado no ensino médio (propriedades de números inteiros, números primos, congruências, etc.)**.
+Vamos acompanhar valores pequenos e públicos para explicar por que a descriptografia recupera a entrada. Esquemas práticos, como RSAES-OAEP para criptografia e RSASSA-PSS para assinaturas, exigem suas próprias regras de codificação e verificação. Veja também a [introdução a chaves públicas, hash e assinaturas](/pt/p/modern-cryptography-public-key-hash-signature/).
 
-Neste artigo, usaremos o conhecimento da matemática do ensino médio como ponto de partida para explicar passo a passo e de forma aprofundada os princípios matemáticos pelos quais a criptografia RSA funciona e por que é tão difícil de quebrar. Explicarei cuidadosamente usando exemplos concretos para que mesmo aqueles que têm um pouco de dificuldade com matemática possam entender.
+## 1. Criptografia simétrica e de chave pública
 
----
+Na criptografia simétrica, remetente e destinatário compartilham uma chave secreta para criptografar e descriptografar. Isso permite tratar grandes quantidades de dados com eficiência, mas compartilhar essa chave com segurança com um novo interlocutor é outro problema.
 
-## 1. Criptografia de Chave Simétrica e Criptografia de Chave Pública
-
-Antes de mergulhar no mecanismo matemático da criptografia RSA, vamos primeiro revisar a ideia básica de criptografia. Os métodos criptográficos podem ser amplamente divididos em dois tipos: "Criptografia de chave simétrica" e "Criptografia de chave pública".
-
-### 1.1 Limitações da Criptografia de Chave Simétrica
-
-Muitos dos métodos de criptografia usados há muito tempo são chamados de "Criptografia de chave simétrica". Este é um método em que **a mesma chave é usada tanto para "criptografia" (converter uma mensagem em um texto cifrado secreto) quanto para "descriptografia" (retornar o texto cifrado à mensagem original)**.
-
-Por exemplo, suponha que a Alice vá enviar uma carta secreta ao Bob. A Alice coloca a carta em uma caixa e a tranca usando um cadeado (chave simétrica). Para o Bob abrir essa caixa, ele precisará ter a mesma chave que a Alice usou.
-
-Este método tem um grande problema: o "Problema de distribuição de chaves". Quando Alice e Bob, que estão distantes, se comunicam pela primeira vez, como eles poderiam compartilhar a chave sem serem interceptados? Se a chave for roubada por terceiros enquanto é enviada por correio, toda a comunicação criptografada subsequente ficará totalmente exposta.
-
-### 1.2 Uma Invenção Revolucionária: "Criptografia de Chave Pública"
-
-A "Criptografia de chave pública" foi idealizada para resolver esse problema de distribuição de chaves. A criptografia RSA é um tipo deste sistema.
-
-Na criptografia de chave pública, usamos **duas chaves diferentes: uma "chave para criptografar (chave pública)" e uma "chave para descriptografar (chave privada)"**.
-
-1. O destinatário, Bob, cria um par de "chave pública" e "chave privada".
-2. Bob publica a "chave pública" para todo o mundo (não importa quem a obtenha).
-3. A remetente, Alice, criptografa a mensagem usando a "chave pública" de Bob e a envia.
-4. A mensagem criptografada só pode ser descriptografada com a "chave privada" que apenas Bob possui.
-
-Comparando isso com o exemplo do cadeado: Bob cria vários "cadeados abertos (chaves públicas)" e os distribui pelo mundo. Alice coloca sua mensagem destinada a Bob em uma caixa e a tranca fechando um dos cadeados que encontrou pertencente a Bob. Uma vez que o cadeado é fechado, ele só pode ser aberto com a "chave mestra (chave privada)" que Bob possui. Mesmo que alguém roube a caixa no meio do caminho, essa pessoa não conseguirá abri-la porque não tem a chave mestra.
+Na criptografia de chave pública, Bob, o destinatário, prepara uma chave pública e uma privada. Alice criptografa com a chave pública de Bob. A analogia do cadeado é um fecho que qualquer pessoa pode fechar, enquanto Bob guarda a chave que o abre. Alice ainda precisa confirmar que a chave pública realmente pertence a Bob. A autenticação para impedir a substituição da chave é um requisito adicional.
 
 ```mermaid
 graph TD
-    A["Alice (Remetente)"] --> B["Texto Plano (Mensagem)"]
-    B --> C["Processo de Criptografia"]
-    D["Chave Pública do Bob (Disponível para qualquer um)"] --> C
-    C --> E["Enviado via Internet: Texto Cifrado"]
-    E --> F["Processo de Descriptografia"]
-    G["Chave Privada do Bob (Mantida apenas pelo Bob)"] --> F
-    F --> H["Texto Plano Restaurado (Mensagem)"]
-    H --> I["Bob (Destinatário)"]
+    A["Alice (remetente)"] --> B["Mensagem"]
+    B --> C["Codificação do esquema e criptografia"]
+    D["Chave pública autenticada de Bob"] --> C
+    C --> E["Enviar texto cifrado"]
+    E --> F["Descriptografia e verificações da codificação"]
+    G["Chave privada de Bob"] --> F
+    F --> H["Mensagem após as verificações"]
+    H --> I["Bob (destinatário)"]
 ```
 
-Para implementar este sistema revolucionário, é necessária algum tipo de **"função unidirecional (um quebra-cabeça matemático de mão única)"**, que significa que "é fácil criptografar com a chave pública, mas é absolutamente impossível descriptografar sem a chave privada". Como peça para esse quebra-cabeça, a atenção se voltou para os "números primos", algo que conhecemos bem.
+O objetivo é tornar computacionalmente difícil descriptografar sem a chave privada, mesmo conhecendo a pública. Não é uma garantia matemática incondicional de impossibilidade. Técnicas de chave pública também incluem acordo de chaves e assinaturas; nem todas realizam a mesma operação de criptografia.
 
----
+## 2. Números primos e fatoração
 
-## 2. Base Matemática 1 Sustentando a Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/): Números Primos e Fatoração em Números Primos
+Um primo é um inteiro maior que um cujos únicos divisores positivos são um e ele mesmo. Os primeiros exemplos são $2,3,5,7,11,13,17,19,23$. Todo inteiro maior que um tem uma fatoração única em primos, desconsiderando a ordem; por exemplo, $60=2^2\times3\times5$. O zero fica excluído, e o um é tratado separadamente como produto vazio.
 
-A segurança da criptografia RSA é baseada no fato matemático de que **"a fatoração de números gigantes em números primos é extremamente difícil"**.
+Calcular $11\times13=143$ é fácil, mas encontrar $17\times19$ a partir de $323$ é outra tarefa. RSA publica $N=pq$, com primos grandes, distintos e escolhidos adequadamente. Conhecer os fatores permite calcular o expoente privado. Fatorar o módulo permite quebrar RSA, mas não afirmamos que toda forma de quebrar RSA tenha sido demonstrada geralmente equivalente à fatoração.
 
-### 2.1 O que são Números Primos?
+'RSA de 2048 bits' normalmente descreve o **comprimento em bits do módulo $N$**. Um $N$ de 2048 bits tem 617 algarismos decimais. Com dois primos equilibrados, cada um tem aproximadamente 1024 bits. A dificuldade depende da geração e do tamanho dos parâmetros, dos algoritmos disponíveis e dos recursos de cálculo. Estimativas sem fundamento de 'trilhões de anos' ou 'mais que a idade do universo' não são garantias.
 
-Os números primos são "números naturais maiores que 1 que só podem ser divididos por 1 e por si mesmos".
-Exemplo: $2, 3, 5, 7, 11, 13, 17, 19, 23...$
+## 3. Congruências e restos
 
-Os números primos são como "átomos" para todos os números inteiros. Qualquer número natural pode ser decomposto na forma de uma multiplicação de números primos. Isso é chamado de **fatoração em números primos**. Por exemplo, como em $60 = 2^2 \times 3 \times 5$, ignorando a ordem, o fato de que pode ser fatorado em números primos de apenas uma única forma é conhecido como o "Teorema Fundamental da Aritmética".
+Como em um relógio de doze horas, no qual cinco horas depois das dez são três horas, podemos nos concentrar nos restos módulo um número.
 
-### 2.2 A Dificuldade da Fatoração em Números Primos (Função Unidirecional)
+$$15\equiv3\pmod{12}$$
 
-O importante aqui é a assimetria: **"A multiplicação é fácil, mas a fatoração em números primos é difícil"**.
+Para um módulo $N>1$, se $a\equiv b\pmod N$ e $c\equiv d\pmod N$, soma, subtração e multiplicação preservam a congruência. Para um inteiro não negativo $k$, também vale $a^k\equiv b^k\pmod N$. Expoentes negativos exigem condições adicionais, como a existência de inversos.
 
-Por exemplo, tente calcular de cabeça a multiplicação destes dois números primos:
-$11 \times 13 = ?$
-Isto é fácil. A resposta é $143$.
+Como $7\equiv2\pmod5$, temos $7^{100}\equiv2^{100}\pmod5$. Os resultados intermediários podem ser substituídos por seus restos, sem construir a potência inteira. Isso não significa que a potência de um resto e o resto de uma potência sejam iguais como inteiros comuns.
 
-Então, que tal o próximo número?
-Por favor, fatore $323$ em números primos.
-E então? Deve demorar um pouco. (A resposta é $17 \times 19$).
+## 4. Função totiente e teorema de Euler
 
-Quando os números são pequenos, até humanos conseguem calcular de alguma forma, mas quando os números ficam grandes, o cálculo se torna explosivamente difícil, mesmo usando computadores. Na criptografia RSA moderna, usamos um número $N = p \times q$ obtido pela multiplicação de números primos incrivelmente gigantes $p$ e $q$ de 2048 bits (cerca de 600 dígitos decimais).
+$\phi(N)$ conta os inteiros $1\le a\le N$ que são coprimos com $N$. Por exemplo, $\phi(5)=4$ e $\phi(6)=2$. Para um primo $p$,
 
-Quando fornecidos dois números primos gigantes $p$ e $q$, calcular $N$ leva apenas um instante (menos de um milissegundo) para um computador. No entanto, reversamente, receber apenas $N$ e encontrar os $p$ e $q$ originais leva tanto tempo que não seria resolvido mesmo rodando os supercomputadores mais rápidos da atualidade por trilhões de anos.
+$$\phi(p)=p-1$$
 
-Essa **"assimetria computacional (um caminho é fácil, o caminho inverso é difícil)"** é a base que cria o relacionamento entre a chave pública e a chave privada.
+Para primos distintos $p,q$ e $N=pq$,
 
----
+$$\phi(N)=(p-1)(q-1)$$
 
-## 3. Base Matemática 2 Sustentando a Criptografia RSA: Congruência (Aritmética Modular)
+Conhecer $p,q$ permite calcular esse valor. Inversamente, conhecer $\phi(N)$ fornece $p+q=N-\phi(N)+1$ e $pq=N$, com os quais uma equação do segundo grau recupera os fatores. Por isso, esse valor também deve permanecer secreto.
 
-Os cálculos da criptografia RSA não são realizados com adição e multiplicação onde os números ficam infinitamente grandes, como costumamos usar, mas sim no mundo dos "restos" quando divididos por um certo número. Isso é chamado de **congruência (aritmética modular)**.
+O teorema de Euler afirma que, se $\gcd(a,N)=1$,
 
-### 3.1 A Matemática do Relógio
+$$a^{\phi(N)}\equiv1\pmod N$$
 
-A aritmética modular é frequentemente comparada com a "matemática do relógio". Supondo que agora são 10 horas, que horas serão daqui a 5 horas? $10 + 5 = 15$ horas, mas em um relógio normal de 12 horas, respondemos "3 horas". Isso ocorre porque o resto de 15 dividido por 12 é 3.
+Multiplicando por $a$, obtemos
 
-No mundo da matemática, isso é escrito da seguinte forma:
-$$ 15 \equiv 3 \pmod{12} $$
-Lê-se "15 e 3 são congruentes módulo 12 (os restos quando divididos por 12 são iguais)".
+$$a^{\phi(N)+1}\equiv a\pmod N$$
 
-### 3.2 Propriedades Básicas da Congruência
+e, para todo inteiro não negativo $k$,
 
-A congruência possui propriedades muito úteis e semelhantes a equações (igualdades $=$). Vamos assumir que o módulo (número pelo qual dividimos) é $N$.
-Quando $a \equiv b \pmod N$ e $c \equiv d \pmod N$, o seguinte é verdadeiro:
+$$a^{k\phi(N)+1}\equiv a\pmod N$$
 
-1. **Adição:** $a + c \equiv b + d \pmod N$
-2. **Subtração:** $a - c \equiv b - d \pmod N$
-3. **Multiplicação:** $a \times c \equiv b \times d \pmod N$
-4. **Exponenciação:** $a^k \equiv b^k \pmod N$ ($k$ é um número natural)
+Não podemos usar a conclusão intermediária $a^{\phi(N)}\equiv1$ depois de retirar a hipótese de coprimalidade.
 
-Particularmente importante é a propriedade da "exponenciação". Isso significa que **"o resto de uma potência é igual à potência do resto"**.
-Por exemplo, imagine que você queira encontrar o resto de $7^{100}$ dividido por $5$. Seria muito difícil multiplicar o $7$ por ele mesmo 100 vezes e depois dividir por $5$, mas se usarmos a propriedade da congruência, como $7 \equiv 2 \pmod 5$, então $7^{100} \equiv 2^{100} \pmod 5$, permitindo simplificar drasticamente o cálculo. No mundo da criptografia lidamos com potências de números extremamente grandes, então essa propriedade é indispensável.
+## 5. Chaves, criptografia e descriptografia do modelo didático
 
----
+Usaremos um modelo com dois primos. Parâmetros reais exigem primos ímpares, distintos e adequadamente grandes $p,q$; o exemplo posterior usa deliberadamente valores pequenos e conhecidos para observar a aritmética.
 
-## 4. Base Matemática 3 Sustentando a Criptografia RSA: Função de Euler e Teorema de Euler
+1. Calcular $N=pq$ e $\phi(N)=(p-1)(q-1)$.
+2. Escolher um expoente público $e$ com $1<e<\phi(N)$ e $\gcd(e,\phi(N))=1$.
+3. Encontrar um expoente privado positivo $d$ que satisfaça
 
-A partir daqui, entra a matemática mágica que forma o núcleo da criptografia RSA. Apresentamos o "Teorema de Euler", que é uma generalização do "Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)".
+$$ed\equiv1\pmod{\phi(N)}$$
 
-### 4.1 A Função Totiente de Euler $\phi(N)$
+A chave pública é $(N,e)$, e uma representação básica da privada é $(N,d)$. O número $d$ é um expoente, não toda a representação padrão da chave por si só. Representações práticas também podem incluir fatores e parâmetros do teorema chinês dos restos. A RFC 8017 define a condição usando $\lambda(N)=\operatorname{lcm}(p-1,q-1)$. Tomar aqui o inverso módulo $\phi(N)$ é uma condição suficiente simples que também satisfaz a condição módulo $\lambda(N)$.
 
-A função totiente de Euler (função $\phi$) é uma função que, para um determinado número natural $N$, retorna **"a quantidade de números naturais de 1 até $N$ que são coprimos de $N$ (ou seja, seu máximo divisor comum é 1)"**.
+Para um **representante inteiro da mensagem** $0\le M<N$, o cálculo didático de criptografia é
 
-Vamos olhar alguns exemplos.
-- $\phi(5)$: Dentre 1, 2, 3, 4, 5, os números coprimos de 5 são 1, 2, 3, 4; ou seja, 4 números. Portanto, $\phi(5) = 4$.
-- $\phi(6)$: Dentre 1, 2, 3, 4, 5, 6, os números coprimos de 6 são 1, 5; ou seja, 2 números. Portanto, $\phi(6) = 2$.
+$$C\equiv M^e\pmod N$$
 
-**[Propriedade especial no caso de números primos]**
-Quando $p$ é um número primo, todos os números de 1 até $p-1$ são coprimos de $p$. Logo,
-$$ \phi(p) = p - 1 $$
+Para um representante do texto cifrado $0\le C<N$, a descriptografia calcula
 
-**[Propriedade especial no caso de um produto de números primos]**
-Para dois números primos distintos $p$ e $q$, quando se estabelece que $N = p \times q$, $\phi(N)$ pode ser facilmente obtido pelo seguinte cálculo:
-$$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-Essa propriedade funciona como a "porta dos fundos secreta (alçapão)" na criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/). Alguém que conhece $p$ e $q$ (o criador das chaves) pode calcular $\phi(N)$ em um instante, mas um terceiro que conhece apenas $N$ não pode determinar $\phi(N)$ a menos que fatore $N$ em números primos.
+$$M\equiv C^d\pmod N$$
 
-### 4.2 Teorema de Euler
-
-[Leonhard Euler](https://kenji.blog/pt/p/euler/) usou esse $\phi(N)$ para provar o seguinte belo teorema.
-
-**Teorema de Euler:**
-Quando um inteiro $a$ e $N$ são coprimos, a seguinte congruência é verdadeira:
-$$ a^{\phi(N)} \equiv 1 \pmod N $$
-
-Isso é uma propriedade surpreendente que diz: "quando você multiplica um certo número $a$ por ele mesmo $\phi(N)$ vezes e divide por $N$, o resto será sempre $1$". (Se $N$ for um número primo $p$, torna-se $a^{p-1} \equiv 1 \pmod p$, que é chamado de Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)).
-
-Vamos transformar este Teorema de Euler. Multiplicamos ambos os lados por $a$ mais uma vez.
-$$ a^{\phi(N) + 1} \equiv a \pmod N $$
-
-Além disso, para qualquer número inteiro $k$, $a^{k \cdot \phi(N)}$ também será $1^k = 1$, de modo que a seguinte fórmula é válida:
-$$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
-
-Esta exata equação é o princípio fundamental que faz com que a mágica da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) de **"retornar ao original quando descriptografada após criptografar"** funcione.
-
----
-
-## 5. Algoritmo da Criptografia RSA: Passos para Geração de Chaves, Criptografia e Descriptografia
-
-Agora que temos o conhecimento básico, vamos olhar para os passos concretos da criptografia RSA. A criptografia RSA é dividida principalmente em três fases: "1. Geração de Chaves", "2. Criptografia" e "3. Descriptografia".
+Em um esquema prático, os bytes da mensagem passam pela codificação especificada antes da conversão para inteiro, e a descriptografia inclui validações. Não basta converter caracteres diretamente para um inteiro e elevá-lo a uma potência.
 
 ```mermaid
 flowchart TD
-    A1["1. Escolher os primos p, q"] --> A2["Calcular N = p × q"]
-    A1 --> A3["Calcular φ(N) = (p-1)(q-1)"]
-    A3 --> A4["Escolher e coprimo de φ(N)"]
-    A3 --> A5["Calcular d tal que e × d ≡ 1 (mod φ(N))"]
-    A2 --> A6["Chave Pública (N, e)"]
+    A1["1. Primos ímpares distintos p, q"] --> A2["N = p q"]
+    A1 --> A3["phi = (p-1)(q-1)"]
+    A3 --> A4["1＜e＜phi, gcd(e,phi)=1"]
+    A3 --> A5["Inverso d: e d ≡ 1 mod phi"]
+    A2 --> A6["Chave pública (N,e)"]
     A4 --> A6
-    A5 --> A7["Chave Privada d"]
-    
-    B1["2. Mensagem em Texto Plano M"] --> B2["Calcular C ≡ M^e (mod N)"]
+    A5 --> A7["Chave privada (N,d)"]
+    B1["2. Representante didático 0≤M＜N"] --> B2["C = M^e mod N"]
     A6 -.-> B2
-    B2 --> B3["Enviar Texto Cifrado C"]
-    
-    B3 --> C1["3. Receber Texto Cifrado C"]
-    C1 --> C2["Calcular M ≡ C^d (mod N)"]
+    B2 --> B3["0≤C＜N"]
+    B3 --> C1["3. Representante recebido C"]
+    C1 --> C2["M = C^d mod N"]
     A7 -.-> C2
-    C2 --> C3["Obter a Mensagem em Texto Plano original M"]
+    C2 --> C3["Representante original M"]
 ```
 
-### 5.1 Geração de Chaves (Key Generation)
+A aritmética RSA isolada é determinística: o mesmo $M$ produz o mesmo $C$. Se houver poucos candidatos, qualquer pessoa pode criptografar cada um com a chave pública e comparar. Além disso, substituir $C$ por $C\,r^e\bmod N$ muda o representante recuperado para $Mr\bmod N$. As propriedades de segurança necessárias a um esquema prático não decorrem apenas dessa aritmética.
 
-Bob, o destinatário, gera sua "chave pública" e "chave privada".
+## 6. Por que a descriptografia recupera a entrada
 
-1. **Seleção dos primos:** Ele escolhe dois grandes números primos $p$ e $q$ aleatoriamente.
-2. **Cálculo do módulo $N$:** Ele calcula $N = p \times q$. Este $N$ é tornado público.
-3. **Cálculo de $\phi(N)$:** Ele calcula a função de Euler $\phi(N) = (p - 1)(q - 1)$. Este número é um segredo apenas do Bob.
-4. **Seleção da chave pública $e$:** Ele escolhe um inteiro $e$ tal que $1 < e < \phi(N)$ e que $e$ seja coprimo de $\phi(N)$.
-5. **Cálculo da chave privada $d$:** Ele encontra um inteiro $d$ que satisfaça a seguinte condição:
-   $$ e \times d \equiv 1 \pmod{\phi(N)} $$
-   Isso significa "um número $d$ tal que, quando $e \times d$ é dividido por $\phi(N)$, o resto é $1$".
+A descriptografia calcula
 
-Com isso, as chaves estão prontas.
-- **Chave Pública:** O par $(N, e)$. Publicado para todo o mundo.
-- **Chave Privada:** $d$. Jamais revelado a ninguém.
+$$C^d\equiv(M^e)^d\equiv M^{ed}\pmod N$$
 
-### 5.2 Criptografia (Encryption)
+Pela condição das chaves, existe um inteiro não negativo $k$ tal que
 
-Suponha que Alice queira enviar uma mensagem secreta $M$ para Bob. (Assumimos que $M$ é um texto convertido em valor numérico, e que $0 \le M < N$). Alice usa a chave pública do Bob, $(N, e)$, para fazer o seguinte cálculo:
+$$ed=k\phi(N)+1$$
 
-$$ C \equiv M^e \pmod N $$
+Se $\gcd(M,N)=1$, o teorema de Euler fornece
 
-Ela calcula "o resto $C$ obtido após elevar a mensagem $M$ à potência de $e$, e dividir por $N$". Esse $C$ é o texto cifrado.
+$$M^{ed}=(M^{\phi(N)})^k M\equiv1^k M\equiv M\pmod N$$
 
-### 5.3 Descriptografia (Decryption)
+No entanto, representantes RSA não precisam ser coprimos com $N$. Por exemplo, $M=0,11,13$ estão no intervalo. Examinamos cada primo separadamente.
 
-Bob recebe o texto cifrado $C$. Bob usa sua chave privada $d$ para calcular o seguinte:
+- Se $p\mid M$, então $M^{ed}\equiv M\equiv0\pmod p$, pois o expoente $ed$ é positivo.
+- Se $p\nmid M$, o pequeno teorema de Fermat fornece $M^{p-1}\equiv1\pmod p$. Como $ed-1$ é múltiplo de $p-1$, temos $M^{ed}\equiv M\pmod p$.
+- O mesmo raciocínio vale módulo $q$.
 
-$$ M \equiv C^d \pmod N $$
+Os primos distintos $p,q$ são coprimos, portanto o teorema chinês dos restos fornece
 
-Ao calcular "o resto de elevar o texto cifrado $C$ à potência de $d$, e dividir por $N$", incrivelmente a mensagem original $M$ é restaurada!
+$$M^{ed}\equiv M\pmod{pq}$$
 
----
+para todo representante $0\le M<N$. Isso demonstra a correção aritmética, não a segurança de um esquema contra interceptação ou alteração.
 
-## 6. Por que retorna ao original na descriptografia? (Prova Matemática)
+## 7. Um cálculo à mão com primos pequenos
 
-Você pode se perguntar: "Por que simplesmente elevar $C$ à potência de $d$ retorna ao $M$ original?". Aqui, o "Teorema de Euler" mencionado anteriormente mostra o seu poder.
+Tomemos $p=11,q=13$. Então $N=143$ e $\phi(N)=120$. Escolhemos $e=7$ e resolvemos $7d\equiv1\pmod{120}$. Como $7\times103=721=6\times120+1$, podemos usar $d=103$.
 
-Vamos substituir a equação de criptografia $C = M^e$ na equação de descriptografia $C^d \pmod N$.
-$$ C^d \equiv (M^e)^d \equiv M^{ed} \pmod N $$
+Para a entrada didática $M=9$, $9^7=4\,782\,969=33\,447\times143+48$, portanto $C=48$. A descriptografia fornece $48^{103}\bmod143=9$. Em Python, `pow(48, 103, 143)` calcula isso sem construir primeiro o inteiro completo $48^{103}$.
 
-Aqui, lembre-se do Passo 5 da Geração de Chaves. Ao criar $d$, Bob o escolheu de forma que $e \times d \equiv 1 \pmod{\phi(N)}$. Isso significa que "$ed$ é um múltiplo de $\phi(N)$ somado a $1$". Podemos escrevê-lo da seguinte maneira, utilizando um inteiro $k$:
-$$ ed = k \cdot \phi(N) + 1 $$
+Esses primos e o expoente privado são valores didáticos públicos, visíveis para todos. Não podem proteger mensagens secretas.
 
-Substituímos isso no expoente e o decompomos usando as leis dos expoentes:
-$$ M^{ed} = M^{k \cdot \phi(N) + 1} = M^{k \cdot \phi(N)} \times M^1 = (M^{\phi(N)})^k \times M $$
+## 8. Encontrar um inverso com o algoritmo de Euclides estendido
 
-Aqui, assumindo que a mensagem $M$ e $N$ são coprimos, a partir do **Teorema de Euler**, temos $M^{\phi(N)} \equiv 1 \pmod N$.
-$$ (M^{\phi(N)})^k \times M \equiv 1^k \times M \equiv M \pmod N $$
+A congruência $7d\equiv1\pmod{120}$ significa que existem inteiros $d,y$ com $7d+120y=1$. Como $120=17\times7+1$, temos $1=120-17\times7$, de onde $d\equiv-17\equiv103\pmod{120}$.
 
-Portanto, a seguinte equação é perfeitamente estabelecida:
-$$ C^d \equiv M \pmod N $$
+O algoritmo de Euclides estendido encontra esses coeficientes em geral. O inverso existe quando o inteiro e o módulo são coprimos. O cálculo depende do comprimento da entrada; não leva um tempo fixo para entradas arbitrariamente grandes.
 
-Como a Alice não conhece $d$, e o espião também não conhece $d$, apenas Bob, que possui $d$, consegue extrair o $M$ a partir de $C$.
+## 9. Assinaturas digitais usam um esquema específico
 
----
+Assinaturas RSA são geradas com uma chave privada e verificadas com a pública correspondente. Descrever isso como 'criptografar com a privada e descriptografar com a pública' esconde as diferenças de codificação e validação entre esquemas de criptografia e de assinatura.
 
-## 7. Exemplo Concreto: Vamos vivenciar o [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) calculando à mão usando pequenos números primos
-
-Vamos tentar enviar uma comunicação criptografada de Alice para Bob usando números pequenos (números primos) de fato.
-
-**[Fase de Geração de Chaves do Bob]**
-1. Escolhe-se dois números primos $p=11$, $q=13$.
-2. Calcula-se $N = 11 \times 13 = 143$.
-3. Calcula-se $\phi(N) = (11 - 1) \times (13 - 1) = 10 \times 12 = 120$.
-4. Escolhe-se uma chave pública $e$ coprima de $\phi(N)=120$. Aqui usaremos $e=7$.
-5. Calcula-se a chave privada $d$. Buscamos um $d$ que satisfaça $7 \times d \equiv 1 \pmod{120}$.
-   Na equação $7d = 120k + 1$, quando $k=6$, temos $721$, e $721 \div 7 = 103$.
-   Portanto, $d = 103$.
-
-- Chave Pública: $(N=143, e=7)$
-- Chave Privada: $d=103$
-
-**[Fase de Criptografia da Alice]**
-Suponha que ela queira enviar a mensagem $M = 9$.
-Fórmula: $C \equiv 9^7 \pmod{143}$
-$9^7 = 4.782.969$. Dividindo isso por 143, dá $33447$ com resto $48$.
-O texto cifrado se tornou $C = 48$.
-
-**[Fase de Descriptografia do Bob]**
-Bob recebe o texto cifrado $C = 48$ e o descriptografa usando a chave privada $d = 103$.
-Fórmula: $M \equiv 48^{103} \pmod{143}$
-Se executarmos `(48 ** 103) % 143` na calculadora, brilhantemente o resultado será "**9**"! A mensagem original foi recebida com sucesso.
-
----
-
-## 8. Como encontrar a Chave Privada $d$: Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) Estendido
-
-No exemplo calculado à mão, adivinhamos o valor de $k$ para encontrar $d=103$, mas quando o número atinge centenas de dígitos, esse método se torna impossível. Nos programas reais usamos um algoritmo chamado **"Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) Estendido"**.
-
-Resolver $7d \equiv 1 \pmod{120}$ é o mesmo que encontrar inteiros $d, y$ que satisfaçam $7d + 120y = 1$. Ao realizar os passos do Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) ao reverso, podemos encontrar isso mecanicamente.
-
-1. $120 \div 7 = 17$ com resto $1$
-2. Rearranjando isso, temos $1 = 120 - 17 \times 7$
-3. Em outras palavras, $-17 \times 7 \equiv 1 \pmod{120}$
-
-No mundo do módulo $120$, $-17$ tem o mesmo significado que $120 - 17 = 103$. Assim, o $d = 103$ pode ser encontrado em um instante. Este método consegue calcular de forma extremamente rápida por mais gigante que o número seja.
-
----
-
-## 9. Outra Face da Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/): Assinatura Digital
-
-A parte fantástica da criptografia RSA é que, se invertermos as funções da chave pública e chave privada, ela também pode ser usada como uma **"Assinatura Digital"**.
-
-Na criptografia os passos eram: "Criptografar com a chave pública $\Rightarrow$ Descriptografar com a chave privada",
-Mas na assinatura digital seguimos os passos: "Criptografar com a chave privada $\Rightarrow$ Descriptografar com a chave pública".
+A relação sem codificação $S=M^d\bmod N$, verificada por $S^e\equiv M\pmod N$, não é um esquema de assinatura seguro. Um atacante pode escolher $S=2$ e usar os valores públicos $e=7,N=143$ para calcular $M=2^7\bmod143=128$. Esse par passa na verificação sem usar a chave privada. Isso não afirma que seja possível assinar qualquer mensagem escolhida previamente; mostra que aquela verificação isolada é insuficiente.
 
 ```mermaid
 flowchart TD
-    A1["1. Alice cria a assinatura com a chave privada"] --> A2["S ≡ M^d (mod N)"]
-    A2 --> A3["Envia a mensagem M e a assinatura S"]
-    
-    A3 --> B1["2. Bob verifica a assinatura com a chave pública"]
-    B1 --> B2["Calcula M' ≡ S^e (mod N)"]
-    B2 --> B3["Verifica se M' e M coincidem"]
+    A1["Alice: processar mensagem conforme o esquema"] --> A2["Hash, codificação PSS e assinatura com chave privada"]
+    A2 --> A3["Enviar mensagem e assinatura"]
+    A3 --> B1["Bob: autenticar a chave pública de Alice"]
+    B1 --> B2["Verificar esquema, parâmetros e codificação"]
+    B2 --> B3["Aceitar ou rejeitar a assinatura"]
 ```
 
-A Alice transforma a mensagem usando sua própria chave privada $d$ (essa será a assinatura $S$) e envia ao Bob. O Bob faz o cálculo de verificação usando a chave pública de Alice, $e$. Se o resultado do cálculo for igual à mensagem original, isso prova simultaneamente que "os dados só poderiam ter sido criados pela chave privada da Alice" e que "a mensagem não foi adulterada no meio do caminho".
+Esquemas como RSASSA-PSS combinam hash com codificação e verificação específicas. Uma assinatura não esconde a mensagem; a gestão das chaves e sua vinculação à identidade também importam. É necessário separar chaves de criptografia e de assinatura por finalidade e usar uma biblioteca mantida que ofereça suporte ao protocolo pretendido.
 
----
+## 10. Conferir a aritmética didática com Python
 
-## 10. Sentindo a Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) na Prática com Código
-
-O cálculo de potências que seria difícil de fazer à mão pode ser implementado muito facilmente usando Python. A seguir, um código Python para você experienciar a lógica central da criptografia RSA.
+Este exemplo independente para Python 3.8 ou posterior usa somente valores didáticos conhecidos. `pow(e, -1, phi)` calcula um inverso de inteiros coprimos. O intervalo do representante também é verificado explicitamente. Não é um gerador de chaves nem uma implementação de OAEP, PSS ou tempo constante.
 
 ```python
-def gcd(a, b):
-    """Calcular o máximo divisor comum"""
-    while b != 0:
-        a, b = b, a % b
-    return a
+from math import gcd
+
 
 def mod_inverse(e, phi):
-    """Encontrar a chave privada d (usando a função embutida a partir do Python 3.8)"""
+    # Fixed public teaching parameters, not a key generator.
+    if type(e) is not int or type(phi) is not int:
+        raise TypeError("Integer parameters required")
+    if phi <= 1 or not 1 < e < phi or gcd(e, phi) != 1:
+        raise ValueError("Invalid teaching exponent or modulus")
     return pow(e, -1, phi)
 
-# 1. Geração de chaves
+
+def rsa_primitive_demo(value, exponent, modulus):
+    # Range checks do not make raw RSA a secure encryption scheme.
+    if any(type(x) is not int for x in (value, exponent, modulus)):
+        raise TypeError("Integer parameters required")
+    if modulus <= 1 or exponent <= 0 or not 0 <= value < modulus:
+        raise ValueError("Invalid exponent, modulus or representative")
+    return pow(value, exponent, modulus)
+
+
+# Public toy values only. Never use this code or these keys for secrets.
 p, q = 11, 13
 N = p * q
 phi = (p - 1) * (q - 1)
 e = 7
 d = mod_inverse(e, phi)
-
-print(f"Chave Pública: (N={N}, e={e}), Chave Privada: d={d}")
-
-# 2. Criptografia
 message = 9
-ciphertext = pow(message, e, N)
-print(f"Texto Cifrado: {ciphertext}")
-
-# 3. Descriptografia
-decrypted_message = pow(ciphertext, d, N)
-print(f"Mensagem Descriptografada: {decrypted_message}")
+ciphertext = rsa_primitive_demo(message, e, N)
+decrypted_message = rsa_primitive_demo(ciphertext, d, N)
+assert (N, phi, d, ciphertext, decrypted_message) == (143, 120, 103, 48, 9)
+assert all(rsa_primitive_demo(rsa_primitive_demo(m, e, N), d, N) == m
+           for m in range(N))
+print(f"Public toy parameters: N={N}, e={e}, d={d}")
+print(f"Ciphertext representative: {ciphertext}")
+print(f"Recovered representative: {decrypted_message}")
+print("All 143 representatives round-trip")
 ```
 
-Como a função `pow(base, exp, mod)` do Python usa internamente um algoritmo rápido chamado "exponenciação binária (ou método das multiplicações repetidas)", o cálculo termina em um instante mesmo para números com centenas de dígitos.
+A versão de `pow` com três argumentos calcula uma potência modular sem construir a potência completa. É mais eficiente do que fazer isso, mas o tempo depende das entradas e da implementação. As verificações de entrada e o retorno correto dos 143 valores continuam sendo testes de aritmética didática.
 
----
+## 11. Esquemas práticos e tecnologias futuras
 
-## 11. Conclusão e Futuro das Tecnologias de Criptografia
+A criptografia RSA prática usa um esquema como RSAES-OAEP. RSA é empregado como componente da criptografia híbrida, em vez de criptografar diretamente mensagens longas. Por exemplo, OAEP com módulo de 2048 bits e SHA-256 admite no máximo $256-2\times32-2=190$ bytes. A criptografia isolada não autentica o remetente.
 
-Nós desvendamos o mecanismo da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) tendo como base a matemática do ensino médio.
+A segurança da comunicação depende do protocolo inteiro. TLS 1.3 não usa transporte de chaves RSA. Quando assinaturas RSA são usadas, seu papel é diferente da criptografia para transportar chaves. Não devemos interpretar que toda comunicação moderna seja 'criptografada com RSA'.
 
-1. **A dificuldade da fatoração em números primos:** É fácil calcular $p \times q = N$, mas é extremamente difícil encontrar $p, q$ a partir de $N$.
-2. **Congruências e Teorema de Euler:** Devido à regra $a^{\phi(N)} \equiv 1 \pmod N$, completa-se o mágico alçapão onde "a exponenciação por um certo número retorna ao estado original".
-3. **Chave Pública e Chave Privada:** Qualquer um pode criptografar, mas apenas o destinatário legítimo consegue descriptografar.
+O algoritmo quântico de Shor fatora inteiros em tempo polinomial no comprimento da entrada, no modelo quântico correspondente. Isso não significa cálculo instantâneo nem prevê quando existirá o hardware adequado. Um computador quântico capaz de realizar o cálculo necessário ameaçaria RSA, motivando a criptografia pós-quântica. Esse nome tampouco garante segurança absoluta contra qualquer ataque futuro.
 
-O $N$ da criptografia RSA usada atualmente possui mais de 600 dígitos, e mesmo que todos os supercomputadores do mundo se juntassem para faturar esse número em primos, levaria um tempo maior do que a idade do universo. No entanto, se o "computador quântico", que vem sendo pesquisado ativamente nos últimos anos, se tornar prático no futuro, essa fatoração poderá ser resolvida em instantes pelo "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)". Por esse motivo, criptografias "resistentes a computadores quânticos", que não poderiam ser quebradas nem mesmo por eles, estão sendo desenvolvidas a um ritmo acelerado pelo mundo todo.
+RSA ensina números primos, congruências, inversos e uma demonstração de correção. A segurança de um esquema prático acrescenta requisitos de codificação, autenticação, verificação e implementação.
 
-A matemática avançada que costumamos considerar "inútil", na verdade, protege nosso dia a dia na sua essência mais profunda. A criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) é um excelente material didático que nos ensina essa profundidade e beleza da matemática. Ficaria muito feliz se através deste artigo você pudesse sentir um pouco do fascínio da criptografia e da matemática.
+### Referências
+
+- [RFC 8017: PKCS #1 v2.2](https://www.rfc-editor.org/rfc/rfc8017.html) (§§3, 5, 7.1, 8.1)
+- [RFC 8446: TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) (§1.2, Appendix E.8)
+- [Python 3.12: pow](https://docs.python.org/3.12/library/functions.html#pow)
+- [Shor: Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer](https://arxiv.org/abs/quant-ph/9508027) (resumo)
