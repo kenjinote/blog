@@ -57,6 +57,63 @@
         }
       ],
       "validation": "docs/translation-review/batch-015-ja-en-validation.json"
+    },
+    "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.md",
+      "sourceHash": "7f1f1b6784f4e24625bb4f4efae25b6ff517b40e5eecadd82661d59e249fcbec",
+      "translationHash": "63f98ebf49a65c2db31e81b8e4e46b903ffbd157ab9311704b75f840528314b9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Simplified Chinese metadata/body in two bounded ranges before editing. Independently reread revised prose, metadata and all three diagrams, compared identical extracted Python. Matched all eleven sections and27diagram edges to corrected Japanese source. Preserved prime/clock/totient/toy/Euclidean examples, conditions on nonnegative exponents and coprimality, primewise zero/nonzero and CRT proof, key authentication, OAEP/PSS distinction, and scoped quantum complexity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 公钥指数/私钥指数 versus 公钥/私钥 as full key representations; 模数/二进制位数 versus 素数大小, 互质 versus 素数, 同余 versus equality of integers, 整数代表值 versus message bytes, 编码 versus 加密, 身份认证 versus encryption, and 生成/验证签名. Used 中国剩余定理 and 扩展欧几里得算法 consistently; replaced 小数值 with 小整数 to avoid decimal ambiguity. Removed absolute impossibility, instant timing and unsupported guarantees."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all display formulas and relevant inline assumptions. Completed Fermat zero/nonzero cases modulo each distinct prime then CRT, retaining Euler proof under its coprimality premise. Verified all143 representatives in each direction, including23noncoprime, known toy arithmetic, totient count and factor recovery, exact617decimal digits for all2048-bit integers via endpoints, and OAEP2048/SHA256190-byte formula. Three diagram edge counts8/14/5 match. Finite checks supplement the mathematical argument; no security proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed the actual revised standalone Python block under3.12.14, exactly identical to the reviewed Japanese/English block. Passed143representatives in each direction including23noncoprime values,18type/range/coprimality rejections,572raw multiplicative-modification cases, dictionary recovery, totient/factor recovery and2048-bit617-digit checks. Reproduced raw public signature pairS2/M128 without usingd; no OAEP/PSS attack. Original Chinese code was read, not separately executed; original JA/EN reproduction retained in source audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched four primary URLs and their previously read scoped source notes, plus the matching Chinese link to the already-reviewed modern-cryptography article. Removed unsupported biography/extra automatic links; did not count dependency articles reviewed. Preserved slug, publication timestamp and image; actual lastmod2026-10-28. Checked image and generated links/markers/three diagrams, all104decoded TeX expressions. Sixteen-bundle minified Hugo, multilingual1077pages and HTTPS1986HTML/41XML passed; publication pending."
+        }
+      },
+      "summary": "Full Simplified Chinese RSA-beginner review against corrected Japanese source, including all proof conditions, diagrams and independently executed teaching code.",
+      "languageSpecificFindings": "Corrected modulus/prime size and whole-key/exponent distinctions; used 公钥指数/私钥指数, 互质, 同余, 中国剩余定理, 编码, 身份认证 and 签名验证 consistently. Replaced misleading remainder equality and raw-signature security account, restored noncoprime proof, and qualified quantum and runtime claims. All eleven sections and numeric teaching examples retained.",
+      "limitations": [
+        "AI review, not native-speaker or human certification.",
+        "No visual browser/KaTeX/Mermaid audit, constant-time/security proof, real secret key generation or OAEP/PSS implementation audit.",
+        "Ten other translations remain unreviewed; no dates added to them.",
+        "Publication verification remains pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Actually read scoped key, primitive, range-check, OAEP and signature/PSS excerpts recorded in batch-015-source-notes.md; not full RFC."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Read §1.2 static RSA removal and E.8 RSA key-transport distinction; not full RFC or current web prevalence measurements."
+        },
+        {
+          "url": "https://docs.python.org/3.12/library/functions.html#pow",
+          "scope": "Read pow integer/modulus/inverse and Python3.8 introduction; actual runtime3.12.14. Not a constant-time or fixed-duration assurance."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Read abstract/metadata only: polynomial steps in input size on hypothetical quantum computer; not full paper or hardware forecasts."
+        }
+      ],
+      "validation": "docs/translation-review/batch-015-zh-cn-validation.json"
     }
   },
   "englishStageAssembly": {
@@ -75,5 +132,26 @@
     },
     "buildPending": false,
     "publicationPending": true
+  },
+  "simplifiedChineseStageAssembly": {
+    "checkedAt": "2026-10-28T02:17:06.008932+09:00",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn"
+    ],
+    "otherTranslationsUnreviewed": 10,
+    "build": {
+      "scope": "Sixteen isolated bundles",
+      "hugo": "0.139.0 extended",
+      "minified": true,
+      "multilingualPages": 1077,
+      "httpsHtml": 1986,
+      "httpsXml": 41
+    },
+    "buildPending": false,
+    "publicationPending": true,
+    "priorReviewEntryDigests": {
+      "post/rsa暗号の仕組みを高校生でもわかるように説明する/index.en.md": "5ebb31343f7134f849dc7d2317c75668a5779fa6f5e4af45b59e12d223985f88"
+    }
   }
 }
