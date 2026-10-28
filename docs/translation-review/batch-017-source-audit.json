@@ -1,0 +1,255 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T09:41:51.257464+09:00",
+  "slug": "prime-factorization-limits-big-o-notation",
+  "stage": "Initial source audit before article edits; not a completed translation review",
+  "files": [
+    {
+      "language": "ar",
+      "path": "post/素因数分解と計算量/index.ar.md",
+      "hash": "dd63fc5ccead3b6c0da5e6d35296a2e67a211192c7a9a766f9a057ead0b099c4",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "de",
+      "path": "post/素因数分解と計算量/index.de.md",
+      "hash": "4e14dcc929fa39f758cd7d476074b061daf651611200355a5ae91ff6775db4ab",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "en",
+      "path": "post/素因数分解と計算量/index.en.md",
+      "hash": "a26780880c16f29a81a0ef65ca001261a3f5d67cdcdae7f930973de403122e1f",
+      "fullBodyRead": true,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "es",
+      "path": "post/素因数分解と計算量/index.es.md",
+      "hash": "ab68d86c9a921fef1209ac043d2fe1f9df51e4cea402375ae41458b840515d64",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "fr",
+      "path": "post/素因数分解と計算量/index.fr.md",
+      "hash": "586b11981ad3c9af3226a594861b7df13c41021abf0c9025b3663ee439de2792",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "hi",
+      "path": "post/素因数分解と計算量/index.hi.md",
+      "hash": "d785c56095455fe81fd45fc80c7890c5f113692df291b379a1f825801bdf8761",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "id",
+      "path": "post/素因数分解と計算量/index.id.md",
+      "hash": "caa00ba75816655f6c69fedf7943f00090eea3e065c4e36a1324b31376899fba",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "ko",
+      "path": "post/素因数分解と計算量/index.ko.md",
+      "hash": "23781eb1dd1f9af471579297285431eff2f203eca2714814c6646fcfb0bb4544",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "ja",
+      "path": "post/素因数分解と計算量/index.md",
+      "hash": "0cc8ad1af3c667345f7a3f6cde45f7c76976e285142697e9611cc573a084c58d",
+      "fullBodyRead": true,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "pt",
+      "path": "post/素因数分解と計算量/index.pt.md",
+      "hash": "6739c2c6fdb17eb421af21ec4a26d9c6606c2d6962e3ca164dcd8214129844e0",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "ru",
+      "path": "post/素因数分解と計算量/index.ru.md",
+      "hash": "e104f3dc1c0e79df60f22aec0bea6e623729be66bd9065609b3e78fd4adcdc12",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "zh-cn",
+      "path": "post/素因数分解と計算量/index.zh-cn.md",
+      "hash": "a848fbc22ab8c753f945d3be177220c418535aa446bc56a321a71f39058313dc",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/素因数分解と計算量/index.zh-tw.md",
+      "hash": "a58078fd5697db4e8128e5d906ec1782ec63569ddced1f0f94250344566e16b3",
+      "fullBodyRead": false,
+      "fencedBlockLanguages": [
+        "mermaid",
+        "mermaid"
+      ]
+    }
+  ],
+  "sourceReviewComplete": false,
+  "findings": [
+    "Big-O is an asymptotic upper bound, not automatically a worst-case or tight growth ratio; model and average/expected/worst-case scope must be specified. Polynomial does not guarantee practical feasibility.",
+    "Integer magnitude N differs from bit length b=floor(log2N)+1; exact N=2^b is false. Modular arithmetic steps have nonconstant bit costs; constant stored residues are not constant bits.",
+    "Two k-bit primes produce a2k-1or2k-bit product, not invariably2k. Need distinct odd primes and exclude e1; exponent d is not whole key.",
+    "Factoring suffices for RSA inversion; not all attacks require factoring. Raw arithmetic, OAEP/PSS, authentication and scheme security need separation; no unconditional one-way or timing guarantee.",
+    "The smallest prime factor of a composite is at most sqrtN; a largest prime factor can exceed it. Easy huge inputs exist.",
+    "Fermat iteration count depends on factor gap and can be Theta(N) for unbalanced factors, not a universal same exponent as sqrtN trial division.",
+    "Rho square-root-factor estimate is heuristic/expected under random-function assumptions, not unconditional worst-case; gcdN failure/restart required and nontrivial factor need not be prime.",
+    "Quadratic-sieve smooth small signed polynomial values differ from generic Dixon residues; distinguish QS and multiple-polynomial variant. Remove unconditional digit crossover/current fastest claims.",
+    "Congruent squares can yield composite nontrivial divisors; require gcd/retry handling, not promise prime factors.",
+    "Z[alpha] is not generally the full number-field integer ring; f need not be monic. Need precise scope for algebraic-side factor bases and square-root step.",
+    "GNFS complexity is an asymptotic heuristic estimate with o1 term and input/log base specified. Endpoint L equalities and exact O(b^c) need correction; bit-length conversion changes leading exponential constant.",
+    "RSA2502020 is a dated example, not a verified current world record.2700core-years are aggregate CPU resource, not a count of simultaneously running computers.",
+    "P/NP refer to decision languages; distinguish factoring function from an appropriate decision version and primality. Do not inherit obsolete1996COMPOSITES-not-known-in-P statement; AKS2004 establishes deterministic polynomial primality.",
+    "QFT/period finding is not instantaneous or extraction of all parallel answers; exact gate bounds/resource-time forecasts need additional primary verification or removal. No universal PQC guarantee or collapse of all cryptosystems.",
+    "Misleading substring links: Japanese CPU clock/block fragments lead to database locks; English Crypto fragments lead to cryptocurrency and NP-complet word split. Linked dependency articles not themselves reviewed."
+  ],
+  "arithmeticReproductions": {
+    "scope": "Independent public mathematical fixtures; original JA/EN article has no executable code, only2Mermaid blocks. Not cryptographic attacks or an implementation audit.",
+    "bitLengthBoundsInputs": 10000,
+    "exampleN15": {
+      "N": 15,
+      "bits": 4,
+      "twoToBits": 16,
+      "largestPrimeFactor": 5,
+      "sqrtN": 3.872983346207417
+    },
+    "equalPrimeBitLengthExamples": [
+      {
+        "p": 521,
+        "q": 523,
+        "primeBits": [
+          10,
+          10
+        ],
+        "product": 272483,
+        "productBits": 19
+      },
+      {
+        "p": 1019,
+        "q": 1021,
+        "primeBits": [
+          10,
+          10
+        ],
+        "product": 1040399,
+        "productBits": 20
+      }
+    ],
+    "fermatClose": {
+      "N": 1022117,
+      "start": 1011,
+      "successX": 1011,
+      "candidates": 1,
+      "factors": [
+        1009,
+        1013
+      ]
+    },
+    "fermatUnbalanced": {
+      "N": 314187,
+      "start": 561,
+      "successX": 52366,
+      "candidates": 51806,
+      "factors": [
+        3,
+        104729
+      ]
+    },
+    "rhoFixedPolynomialFailure": {
+      "N": 21,
+      "seed": 2,
+      "polynomial": "x^2+1 mod N",
+      "firstFloydValues": [
+        5,
+        5
+      ],
+      "gcd": 21,
+      "needsRestart": true
+    },
+    "congruentSquaresCompositeDivisors": {
+      "N": 1155,
+      "x": 76,
+      "y": 1,
+      "gcdMinus": 15,
+      "gcdPlus": 77,
+      "bothComposite": true
+    },
+    "bigOUpperNotTight": "f(b)=1 belongs to O(2^b), yet f(b+1)/f(b)=1, not2.",
+    "lEndpointCounterexample": "b^(c+o1) can be b^c*ln(b), taking o1=lnln(b)/ln(b); ratio to b^c is unbounded.",
+    "gnfsNaturalLogConstant": 1.9229994270765445,
+    "gnfsLeadingConstantWithBinaryBitLength": 1.7018488095389308,
+    "integerRingCounterexample": {
+      "alpha": "sqrt5",
+      "betaCoordinatesInQsqrt5": [
+        "1/2",
+        "1/2"
+      ],
+      "betaSatisfiesMonicPolynomial": "beta^2-beta-1=0",
+      "integralButNotInZalpha": true,
+      "scope": "Exact rational pair arithmetic for a counterexample; not GNFS implementation."
+    },
+    "rsa250Announcement": {
+      "url": "https://caramba.loria.fr/rsa250.txt",
+      "announcedAt": "2020-02-28",
+      "p": "64135289477071580278790190170577389084825014742943447208116859632024532344630238623598752668347708737661925585694639798853367",
+      "q": "33372027594978156556226010605355114227940760344767554666784520987023841729210037080257448673296881877565718986258036932062711",
+      "N": "2140324650240744961264423072839333563008614715144755017797754920881418023447140136643345519095804679610992851872470914587687396261921557363047454770520805119056493106687691590019759405693457452230589325976697471681738069364894699871578494975937497937",
+      "productVerified": true,
+      "digits": 250,
+      "bits": 829,
+      "reportedApproxCoreYears": 2700,
+      "claimedCurrentRecord": false,
+      "primalityOfPublishedFactorsIndependentlyCertified": false
+    }
+  }
+}
