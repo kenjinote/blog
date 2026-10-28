@@ -624,6 +624,84 @@
         }
       ],
       "validation": "docs/translation-review/batch-017-de-validation.json"
+    },
+    "post/素因数分解と計算量/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/素因数分解と計算量/index.md",
+      "sourceHash": "35642af8501dc5b58c64a5b2fa0ccfe34a6d0bc55fd8e142c2d1a56035043af0",
+      "translationHash": "a81e45687cc58839bced47e86f90a5a46f13ee7bc65c2b68dcc5bea7c1cbd80a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Indonesian metadata/body in three bounded outputs, then independently reread the complete revision in two bounded outputs against corrected Japanese. Matched six sections, seven-row table, five algorithms, P/NP/coNP decision certificates, quantum model limitations, both diagrams and nine external references. Reread final wording adjustments to multiprecision division, primality and the NP-completeness claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished batas atas/bawah/ketat asimtotik, kasus terburuk/rata-rata/nilai harapan, nilai bilangan/panjang bit, eksponen privat/kunci privat, faktor nontrivial/faktor prima, masalah keputusan/pencarian/pengujian keprimaan and deterministik. Used larik/terurut/pengurutan, multipresisi, faktor persekutuan terbesar(FPB)/relatif prima, kongruensi, medan bilangan/ideal prima/gelanggang bilangan bulat, nilai mulus/basis faktor/matriks jarang and kriptografi pascakuantum. Chose medan consistently without calling all lapangan terminology incorrect. Replaced imprecise angka in number-field naming with bilangan and clarified MPQS as using multiple polynomials."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all10display formulas exactly, relevant inline assumptions and bitlength inequality. Compared Fermat candidate count, rho success/restart and random-function qualification, signed QS values, congruent-square coprimality, L-notation o1 and log-base conversion1.923to1.702. Independent fixture rerun verifies bitbounds1..10000, equal-bit prime products19/20bits, Fermat1/51806candidates, rho21failure, composite gcds15/77, Qsqrt5 integral-element example and public RSA250 product. Added decision-certificate partition checks and binary-search extraction finite examples; these supplement, not prove, the stated complexity reasoning."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Neither original nor revised article contains executable code. Inspected two Mermaid diagrams, now3and2edges, removing feasibility guarantees and the unsupported classical-physics-limit claim. Ran independent math fixtures and certificate/search examples in verify_batch_017.py; no article compilation, GNFS implementation, quantum simulation or production cryptography audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all9unique external HTTPS references and language-specific reviewed modern-cryptography internal target. Removed iteration-function-to-generating-functions link, split NP-complet-e and Crypto-to-cryptocurrency links, repeated Fermat links and unreviewed complexity/PvsNP/Moore/lattice dependencies. Before removing duplicate dates, inspected actual old generated datePublished2026-09-11T23:00:00+09:00 and preserved it. Preserved slug, image, categories and original localized tags. Removed raw undelimited mathcal O from title and added actual lastmod2026-10-28. Image exists. Hugo18-bundle minified build, multilingual1155pages and HTTPS2116HTML/41XML passed. All122IndonesianTeX expressions preserved; ten reviewed versions total1217expressions. Indonesian decimal comma1,702 explicitly checked. Publication pending."
+        }
+      },
+      "summary": "Full Indonesian factoring review with exact metadata preservation, clearer technical vocabulary and corrected source assumptions.",
+      "languageSpecificFindings": "Removed undelimited LaTeX from the title and redundant date after checking effective old HTML date; retained localized taxonomy. Corrected inappropriate generating-functions link and split NP-complet-e/Crypto links. Clarified medan bilangan, gelanggang bilangan bulat, ideal prima, FPB/relatif prima, nilai harapan versus worst-case guarantee, and eksponen privat versus key. Rephrased multiprecision division and NP-completeness sentences for clarity. Source-aligned Fermat gap/rho restarts/QS signed values/GNFS integer-ring-o1-log conversion/primality/Shor limitations are carried through. Decimal commas occur in prose while exact display formulas match Japanese.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Three other translations remain unread and unreviewed, without confirmation dates.",
+        "No executable article code; independent finite examples do not prove cryptographic security or asymptotic complexity.",
+        "No visual browser/KaTeX/Mermaid audit or full primary-paper proof audit.",
+        "Full-site CI and publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://xlinux.nist.gov/dads/HTML/bigOnotation.html",
+          "scope": "Complete short definition and model/tight-bound caveats; not a hardware timing model."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap2.pdf",
+          "scope": "Scoped parsed sections2.3.1-2.3.3 plus NP-completeness consequences, as listed in source notes. Superseded 1996 primality status not reused."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+          "scope": "Scoped trial/rho/Floyd/smooth-relation/QS/NFS/RSA-problem excerpts listed in source notes, not a whole-chapter audit or current crossover survey."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Abstract this batch; actual key/lambda/range/OAEP/PSS excerpts previously read in batches015/016. Not a full fresh RFC read."
+        },
+        {
+          "url": "https://caramba.loria.fr/rsa250.txt",
+          "scope": "Complete dated author announcement, 2020-02-28, 250digits829bits and2700physicalcore-years; independently verified published factor product, not prime certification or current record."
+        },
+        {
+          "url": "https://annals.math.princeton.edu/2004/160-2/p12",
+          "scope": "2004 journal metadata and abstract for unconditional deterministic polynomial primality testing; proof/algorithm text not read."
+        },
+        {
+          "url": "https://www.claymath.org/millennium/p-vs-np/",
+          "scope": "Current page explicitly labels PvsNP unsolved; read explanatory main body, not linked formal problem description."
+        },
+        {
+          "url": "https://arxiv.org/html/quant-ph/9508027",
+          "scope": "Metadata/abstract and scoped parsed section5 lines259-329: order finding, classical postprocessing, QFT/measurement, continued fractions and repeats. Not full paper, proof certification, hardware or current resource forecast."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc9794.html",
+          "scope": "June2025 metadata/abstract and section1, including design goals of PQC and qualification of quantum-safe terminology; not whole RFC."
+        }
+      ],
+      "validation": "docs/translation-review/batch-017-id-validation.json"
     }
   },
   "stages": [
@@ -844,6 +922,39 @@
         "pt": 122,
         "fr": 122,
         "de": 122
+      },
+      "displayFormulasPerVersion": 10,
+      "diagramEdgesPerVersion": [
+        3,
+        2
+      ],
+      "build": {
+        "hugo": "0.139.0 extended",
+        "minified": true,
+        "isolatedArticleBundles": 18,
+        "multilingualPages": 1155,
+        "httpsHtml": 2116,
+        "httpsXml": 41
+      },
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-10-28T10:20:20.931302+09:00",
+      "language": "id",
+      "reviewedTranslations": 9,
+      "otherTranslationsUnreviewed": 3,
+      "validation": "docs/translation-review/batch-017-id-validation.json",
+      "texExpressions": {
+        "ja": 121,
+        "en": 122,
+        "zh-cn": 121,
+        "zh-tw": 122,
+        "es": 122,
+        "ko": 121,
+        "pt": 122,
+        "fr": 122,
+        "de": 122,
+        "id": 122
       },
       "displayFormulasPerVersion": 10,
       "diagramEdgesPerVersion": [

@@ -121,7 +121,7 @@ def verify(site, languages):
                   "linksPreserved": all(url in html for url in links),
                   "mathEnabled": "katex" in html, "mermaidEnabled": "mermaid" in html,
                   "markersPreserved": all(marker in rendered for marker in ("51806", "2700", "829", "2047", "MPQS", "OAEP", "coNP")),
-                  "convertedConstantPreserved": ("1,702" if language in ("fr", "de") else "1.702") in rendered}
+                  "convertedConstantPreserved": ("1,702" if language in ("fr", "de", "id") else "1.702") in rendered}
         files.append({"language": language, "path": path.relative_to(ROOT / "content").as_posix(),
                       "hash": digest(path), "displayFormulas": 10, "texExpressions": sum(expected.values()),
                       "diagrams": 2, "diagramEdges": [3, 2], "executableArticleBlocks": 0,
