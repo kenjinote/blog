@@ -2,6 +2,7 @@
 title: 'Implementando um Algoritmo Rápido de Teste de Primalidade em C++ (Miller-Rabin, etc.)'
 slug: "cpp-fast-prime-testing-miller-rabin"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-10-28"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,321 +10,265 @@ categories: ["cpp", "algorithms", "mathematics"]
 tags: ["C++", "Miller-Rabin", "Prime Numbers", "Algorithm"]
 ---
 
-# Introdução: Por que é necessário um teste de primalidade rápido?
+## Introdução: distinguir primalidade de fatoração
 
-No mundo da ciência da computação, teoria da criptografia e programação competitiva, determinar de forma rápida e precisa "se um determinado número é primo" é um problema fundamental e extremamente importante. Por exemplo, a criptografia de chave pública, como a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), que sustenta a segurança da sociedade da internet moderna, baseia-se na geração de números primos gigantescos e na dificuldade de sua multiplicação (a dificuldade da fatoração em números primos) como base de sua segurança. Portanto, a tecnologia para identificar instantaneamente se um número gigante é primo não é exagero dizer que é a tecnologia que sustenta os fundamentos da sociedade digital.
+O teste de primalidade responde se um inteiro é primo. Encontrar os fatores de um inteiro composto é outro problema. Gerar primos grandes é importante na [criptografia de chave pública, como RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), mas a multiplicação em si não é a operação difícil. Encontrar primos também não garante, por si só, a segurança de um esquema criptográfico.
 
-Além disso, na programação competitiva (como AtCoder e Codeforces), o teste de primalidade é um tema frequente. Em situações onde as restrições são para entradas gigantescas como $N \le 10^{18}$, e você precisa realizar dezenas de milhares de testes de primalidade em menos de 1 segundo, algoritmos tradicionais e ingênuos certamente não conseguirão ser executados a tempo (Time Limit Exceeded: TLE).
+Vamos comparar a divisão por tentativa, o teste de Fermat e o de Miller–Rabin, e apresentar uma implementação em C++ para inteiros não negativos de 64 bits. O domínio é $0\le N<2^{64}$, não os inteiros de milhares de bits usados na geração de chaves RSA. O tempo depende da implementação e da entrada, sem garantia universal de duração ou fator de aceleração.
 
-Neste artigo, começaremos com algoritmos de teste de primalidade ingênuos, passaremos pelo "Teste de [Fermat](https://kenji.blog/pt/p/fermat/)", que é um método de teste de primalidade probabilístico, e explicaremos detalhadamente o algoritmo de altíssima velocidade de nível mais forte na prática, o "Teste de Primalidade de Miller-Rabin", que superou as fraquezas do anterior, desde a base matemática até uma implementação altamente otimizada em C++. Em particular, para inteiros de 64 bits ($N < 2^{64}$), explicaremos em detalhes o método que vai além do teste probabilístico e pode "testar a primalidade com 100% de certeza (teste determinístico)", e forneceremos o código-fonte em C++ que pode ser usado diretamente na prática.
+## 1. Primos e divisão por tentativa
 
----
+Um primo é um inteiro maior ou igual a 2 cujos únicos divisores positivos são 1 e ele mesmo. Um composto é um inteiro maior ou igual a 2 que não é primo. Zero, um e inteiros negativos não são primos nem compostos.
 
-# 1. Fundamentos do Teste de Primalidade e Divisão por Tentativa (Trial Division)
-
-Um número primo (Prime number) é um número natural maior ou igual a 2 que não possui divisores positivos além de 1 e ele mesmo. Seguindo estritamente a definição de número primo, para determinar se um inteiro $N$ é primo, podemos tentar dividir $N$ por todos os inteiros de $2$ a $N-1$, e se ele nunca for divisível, podemos julgar que é um número primo; se for divisível mesmo uma vez, é um número composto (não é um número primo).
-
-No entanto, a complexidade de tempo deste método é $O(N)$, e se $N$ for um número gigante como $10^{18}$, até mesmo computadores modernos levariam uma quantidade enorme de tempo para calcular.
-
-## Otimização da Divisão por Tentativa: Busca até $\sqrt{N}$
-
-Quando um número composto $N$ é expresso como $a \times b = N$ ($a \le b$), é certo que $a \le \sqrt{N}$. Portanto, não é necessário iterar o loop de teste de primalidade até $N-1$; é suficiente verificar até $\sqrt{N}$.
+Se um composto $N=ab$ tem fatores com $2\le a\le b$, então $a\le\sqrt N$. Basta procurar divisores até a raiz quadrada. Primeiro verificamos o 2 e depois apenas candidatos ímpares.
 
 ```cpp
-#include <iostream>
+#include <cstdint>
 
-// Teste de primalidade por divisão por tentativa (O(sqrt(N)))
-bool is_prime_trial_division(long long n) {
-    if (n <= 1) return false;
-    if (n == 2 || n == 3) return true;
+bool is_prime_trial_division(std::int64_t n) {
+    if (n < 2) return false;
+    if (n == 2) return true;
     if (n % 2 == 0) return false;
-    
-    // Verificar apenas números ímpares a partir de 3
-    for (long long i = 3; i * i <= n; i += 2) {
+    for (std::int64_t i = 3; i <= n / i; i += 2) {
         if (n % i == 0) return false;
     }
     return true;
 }
 ```
 
-A complexidade de tempo deste algoritmo é $O(\sqrt{N})$. Se for em torno de $N \le 10^{12}$, pode ser calculado instantaneamente, mas se $N \approx 10^{18}$, o número de loops será de cerca de $10^9$ vezes, e mesmo com o compilador C++, levará de centenas de milissegundos a vários segundos, tornando-o inadequado para múltiplos testes.
+A multiplicação com sinal em `i*i <= n` pode causar overflow. Para valores positivos, a condição equivalente `i <= n/i` evita esse produto. A função aceita o intervalo de `std::int64_t` e também retorna `false` para entradas negativas.
 
----
+O número de divisões no pior caso é $\mathcal{O}(\sqrt N)$. Testar apenas ímpares dá aproximadamente $\sqrt N/2$ candidatos, mas muitos testes com entradas grandes ainda podem custar caro. Não existe um limite universal de quantidade de dígitos para a viabilidade prática.
 
-# 2. Teste de [Fermat](https://kenji.blog/pt/p/fermat/): O Início do Teste de Primalidade Probabilístico
+## 2. Fermat e a exponenciação modular
 
-O que foi concebido para superar as limitações do método de divisão por tentativa foi o "Algoritmo Probabilístico" usando teoremas da teoria dos números. Um exemplo representativo é o "Teste de Primalidade de [Fermat](https://kenji.blog/pt/p/fermat/)" que utiliza o Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/).
+O pequeno teorema de Fermat afirma que, para um primo $p$ e um inteiro $a$ com $\gcd(a,p)=1$:
 
-## [O Pequeno Teorema de Fermat](https://kenji.blog/pt/p/fermats-little-theorem/)
+$$
+a^{p-1}\equiv1\pmod p.
+$$
 
-Este teorema, descoberto por [Pierre de Fermat](https://kenji.blog/pt/p/fermat/), afirma o seguinte:
+Portanto, para $N>2$, se uma base $1<a<N-1$ não satisfizer a congruência, $N$ é composto. Passar no teste não demonstra primalidade. O número de Carmichael $561=3\cdot11\cdot17$ passa em todas as bases coprimas com 561. Já a base 3 não é coprima, e $3^{560}\bmod561=375$, portanto falha. Não é correto dizer que qualquer base necessariamente engana o teste.
 
-> Para qualquer número primo $p$ e qualquer inteiro $a$ coprimo com $p$ (que não seja um múltiplo de $p$), a seguinte congruência é válida.
-> $$ a^{p-1} \equiv 1 \pmod p $$
-
-Tomando a contrapositiva deste teorema, podemos dizer que "Se para um inteiro $N$ e um inteiro $a$ coprimo com $N$, $a^{N-1} \not\equiv 1 \pmod N$, então $N$ é definitivamente um número composto". Usando esta propriedade, o Teste de [Fermat](https://kenji.blog/pt/p/fermat/) seleciona uma base aleatória $a$ para o número $N$ a ser testado e verifica se o cálculo de $a^{N-1} \pmod N$ resulta em $1$.
-
-## Exponenciação Modular Rápida (Exponenciação Binária)
-
-Para realizar o teste de [Fermat](https://kenji.blog/pt/p/fermat/), é necessário calcular rapidamente a potência gigante $a^{N-1} \pmod N$. Para isso, usamos o método de "Exponenciação Modular / Binária". A complexidade de tempo é $O(\log N)$, tornando-o extremamente rápido.
+Não precisamos construir a potência inteira completa. A exponenciação binária faz a redução modular após cada multiplicação. As funções auxiliares abaixo podem ser compiladas separadamente. A base, o expoente e os operandos da multiplicação são inteiros não negativos de 64 bits; o módulo `m` é um inteiro positivo de 64 bits. Módulo zero lança uma exceção.
 
 ```cpp
-// Cálculo de a^b mod m usando exponenciação binária
-long long mod_pow(long long a, long long b, long long m) {
-    long long res = 1;
-    a %= m;
-    while (b > 0) {
-        if (b & 1) res = (__int128_t)res * a % m;
-        a = (__int128_t)a * a % m;
-        b >>= 1;
-    }
-    return res;
-}
-```
-※ Aqui, para evitar overflow, estamos usando a extensão do GCC/Clang `__int128_t` (inteiro de 128 bits) para manter o produto intermediário.
-
-## Pseudoprimos e Números de Carmichael
-
-O Teste de [Fermat](https://kenji.blog/pt/p/fermat/) é muito poderoso, mas tem uma fraqueza fatal. É a existência de números tais que, mesmo $N$ sendo um número composto, $a^{N-1} \equiv 1 \pmod N$ é válido para todos os $a$ (onde $a$ é coprimo com $N$).
-
-Tais números são chamados de "pseudoprimos absolutos" ou "números de Carmichael". O menor número de Carmichael é $561 = 3 \times 11 \times 17$.
-Como os números de Carmichael existem, não é possível realizar um teste determinístico de "100% de probabilidade" apenas com o Teste de [Fermat](https://kenji.blog/pt/p/fermat/). Não importa quantos $a$ diferentes você tente, números como $561$ sempre se farão passar por primos (enganarão o teste).
-
----
-
-# 3. Teste de Primalidade de Miller-Rabin
-
-O que superou de forma brilhante a fraqueza do Teste de [Fermat](https://kenji.blog/pt/p/fermat/) (a existência dos números de Carmichael) foi o "Teste de Primalidade de Miller-Rabin" concebido por Gary L. Miller e Michael O. Rabin.
-Atualmente, como um algoritmo prático de teste de primalidade de alta velocidade, é o mais amplamente utilizado em bibliotecas internas de várias linguagens de programação e na geração de chaves para sistemas criptográficos.
-
-## Princípio Matemático
-
-O algoritmo de Miller-Rabin, além do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), utiliza a propriedade de que "em um anel de resíduos módulo um primo ($\mathbb{Z}/p\mathbb{Z}$), as soluções para $x^2 \equiv 1 \pmod p$ limitam-se a $x \equiv 1$ ou $x \equiv -1$" (ao usar um número composto como módulo, outras raízes quadradas não triviais podem existir).
-
-Subtrair $1$ do número ímpar $N$ a ser testado, $N-1$, resultará sempre em um número par. Portanto, dividimos $N-1$ por $2$ o máximo possível e expressamos no seguinte formato:
-$$ N-1 = d \cdot 2^s $$
-(Onde $d$ é um número ímpar e $s \ge 1$)
-
-Para qualquer base $a$ ($1 < a < N-1$), verificamos se $a^{N-1} \equiv 1 \pmod N$ de acordo com o Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), mas realizamos esse cálculo em etapas.
-Especificamente, repetimos a elevação ao quadrado em ordem: $a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$.
-
-A condição para o teste de Miller-Rabin julgar $N$ como "sendo primo (ou sendo um primo com forte probabilidade)" é que **qualquer uma** das seguintes afirmações seja verdadeira.
-
-1. $a^d \equiv 1 \pmod N$
-2. Existe algum $r$ ($0 \le r < s$) tal que $a^{d \cdot 2^r} \equiv -1 \pmod N$ é satisfeito.
-   ※ Na operação de módulo em C++, $-1 \pmod N$ se torna $N-1$.
-
-Se $N$ for um número primo, esta condição será necessariamente satisfeita para qualquer $a$. Por outro lado, foi matematicamente provado que se $N$ for um número composto, a probabilidade de satisfazer essa condição (a probabilidade de ser enganado) ao escolher um $a$ aleatório é de $\frac{1}{4}$ ou menos.
-Se você realizar $k$ testes independentes, a probabilidade de um falso positivo será menor ou igual a $\left(\frac{1}{4}\right)^k$, podendo ser praticamente considerada zero. Não há números que possam "enganar absolutamente" como os números de Carmichael.
-
-## Fluxo do Algoritmo de Miller-Rabin (Fluxograma Mermaid)
-
-A figura a seguir mostra o fluxo lógico de uma única rodada do teste de primalidade de Miller-Rabin (teste para uma única base $a$).
-
-```mermaid
-graph TD
-    Start["Início do Teste (Entrada: N, a)"] --> CalcDS["Calcular d (ímpar) e s que satisfazem N-1 = d * 2^s"]
-    CalcDS --> CalcX["Calcular x = a^d mod N"]
-    CalcX --> CheckX1{"x == 1 ou x == N-1 ?"}
-    CheckX1 -- Yes --> ReturnTrue["Pode ser primo (Probably Prime)"]
-    CheckX1 -- No --> LoopStart["Iniciar loop de r = 1 até s-1"]
-    
-    LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- No --> ReturnFalse["Certamente composto (Composite)"]
-    LoopCondition -- Yes --> SquareX["Calcular x = (x * x) mod N"]
-    
-    SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- Yes --> ReturnTrue
-    CheckXMinus1 -- No --> CheckXOne{"x == 1 ?"}
-    
-    CheckXOne -- Yes --> ReturnFalse
-    CheckXOne -- No --> LoopNext["Incrementar r em 1 e prosseguir"]
-    LoopNext --> LoopCondition
-```
-
----
-
-# 4. Teste Determinístico para Inteiros de 64 Bits
-
-O teste de primalidade de Miller-Rabin é inerentemente um algoritmo "probabilístico", mas se o limite superior de $N$ for fixo, você pode realizar o teste de primalidade com "100% de certeza" testando todos de um conjunto específico de várias bases $a$.
-Isso é chamado de **Teste Determinístico de Miller-Rabin (Deterministic Miller-Rabin Test)**.
-
-Pesquisas de Jim Sinclair e outros revelaram que para todos os inteiros de $N < 2^{64}$ (aproximadamente $1.8 \times 10^{19}$), um julgamento determinístico suficiente e completo é possível se você escolher e testar os seguintes $7$ números primos como a base $a$.
-
-**Lista de bases $a$ a serem testadas:**
-`{2, 325, 9375, 28178, 450775, 9780504, 1795265022}`
-
-Alternativamente, é bem conhecido que ao usar o seguinte conjunto de $12$ números primos, também é possível determinar perfeitamente para $N < 2^{64}$ e abaixo.
-`{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37}`
-
-Desta vez, a fim de aumentar a simplicidade e confiabilidade do algoritmo, adotaremos um método que usa os últimos $12$ números primos como base (ou as $7$ bases mais otimizadas). Na implementação em C++, otimizamos dividindo os intervalos com desvios condicionais para manter o número de testes no mínimo.
-
----
-
-# 5. Implementação Avançada em C++ (Highly Optimized C++ Implementation)
-
-Agora, resumiremos as teorias matemáticas e o design do algoritmo discutidos até agora, e apresentaremos o código de implementação da função de teste de primalidade de Miller-Rabin de nível mais forte em C++ moderno.
-
-## Pontos de Implementação
-1. **Evitar o overflow da multiplicação de inteiros de 64 bits:**
-   Quando $N \approx 10^{18}$, $x \times x$ na multiplicação modular atinge o máximo de $10^{36}$, ultrapassando facilmente o valor máximo de $1.8 \times 10^{19}$ de um inteiro normal de 64 bits (`uint64_t` ou `long long`).
-   Para resolver este problema, usamos a extensão do tipo `__int128_t` (ou `unsigned __int128`) do GCC e Clang e pegamos o módulo após calcular com precisão de 128 bits. Isso permite multiplicações modulares rápidas sem usar algoritmos complexos.
-
-2. **Seleção da base determinística:**
-   Se o valor de $N$ for pequeno, otimizamos para que precisemos testar apenas algumas bases.
-
-## Código-Fonte C++ Completo
-
-Abaixo, mostramos o código-fonte finalizado pronto para uso prático. Este código pode ser copiado e usado como está em ambientes como de programação competitiva.
-
-```cpp
-#include <iostream>
-#include <vector>
 #include <cstdint>
-#include <initializer_list>
+#include <stdexcept>
 
-using namespace std;
+#if !defined(__SIZEOF_INT128__)
+#error "This example requires unsigned __int128 support"
+#endif
 
-// Fast (a * b) mod m using 128-bit integers
-inline uint64_t mod_mul(uint64_t a, uint64_t b, uint64_t m) {
-    return (uint64_t)((unsigned __int128)a * b % m);
+using u64 = std::uint64_t;
+using u128 = unsigned __int128;
+
+u64 mod_mul(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    return static_cast<u64>(static_cast<u128>(a) * b % m);
 }
 
-// Cálculo de (base^exp) mod m por exponenciação binária
-uint64_t mod_pow(uint64_t base, uint64_t exp, uint64_t m) {
-    uint64_t res = 1;
+u64 mod_pow(u64 base, u64 exp, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
     base %= m;
     while (exp > 0) {
-        if (exp & 1) res = mod_mul(res, base, m);
+        if (exp & 1) result = mod_mul(result, base, m);
         base = mod_mul(base, base, m);
         exp >>= 1;
     }
-    return res;
+    return result;
+}
+```
+
+O resultado é o menor resíduo não negativo. Expoente zero retorna $1\bmod m$, que vale zero quando o módulo é um. Aqui, $0^0$ também segue essa convenção computacional. Passar diretamente uma base negativa para um parâmetro sem sinal está fora do uso previsto.
+
+`unsigned __int128` é uma extensão, não um tipo do padrão ISO C++. O GCC a oferece em plataformas de destino adequadas, e o código detecta sua ausência durante a compilação. Não se presume que funcione sem alterações em qualquer ambiente MSVC; consulte a [documentação do GCC](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html). Para armazenar todos os produtos possíveis de dois valores sem sinal de 64 bits, são necessários 128 bits sem sinal; o tipo de 128 bits com sinal não representa todos esses produtos.
+
+## 3. Condições de Miller–Rabin e significado da probabilidade
+
+Módulo um primo ímpar, as únicas raízes quadradas de 1 são 1 e −1. Miller–Rabin combina esse fato com o pequeno teorema de Fermat. Para um ímpar $N\ge3$, escrevemos:
+
+$$
+N-1=d\,2^s,\qquad d\text{ is odd},\quad s\ge1.
+$$
+
+Ou seja, d é ímpar. Uma base $a$ com $1<a<N-1$ passa no teste se uma das condições for satisfeita:
+
+$$
+a^d\equiv1\pmod N
+\quad\text{or}\quad
+\exists r\ (0\le r<s):\ a^{d2^r}\equiv-1\pmod N.
+$$
+
+Um primo sempre passa; uma falha demonstra que o número é composto. Se os quadrados sucessivos produzirem 1 quando o valor anterior não era 1 nem −1, isso também demonstra que é composto. O menor resíduo não negativo de −1 é $N-1$, mas a expressão com sinal de C++ `-1 % N` não retorna esse valor. Por exemplo, `-1 % 7` resulta em −1. Devemos distinguir o resíduo matemático das [regras de divisão e resto de C++](https://eel.is/c++draft/expr.mul).
+
+Para um composto ímpar fixo $N$, cada base escolhida de forma independente e uniforme em $2\le a\le N-2$ passa com probabilidade no máximo $1/4$. Assim, a probabilidade de passar incorretamente em todas as $k$ rodadas satisfaz:
+
+$$
+\Pr[\text{all }k\text{ rounds pass}\mid N\text{ is composite}]\le4^{-k}.
+$$
+
+Essa é uma probabilidade de erro sobre a escolha aleatória das bases. Não pode ser simplesmente reformulada como a probabilidade de $4^{-k}$ de o inteiro ser composto depois de passar. O argumento também não se aplica a um conjunto fixo arbitrário de bases. Para N=3 o intervalo de bases está vazio, por isso a implementação o trata primeiro. O [artigo original de Rabin](https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf) também distingue a aceitação probabilística de uma demonstração de primalidade.
+
+O diagrama mostra uma rodada com uma base usual. N=3 já foi tratado; o ímpar de entrada precisa admitir uma base no intervalo indicado.
+
+```mermaid
+graph TD
+    Start["Uma rodada: N ímpar pelo menos 3; base entre 2 e N-2"] --> DS["N-1 = d*2^s com d ímpar"]
+    DS --> Power["x = a^d mod N"]
+    Power --> First{"x é 1 ou N-1?"}
+    First -- Sim --> Pass["Passa nesta base: não demonstra primalidade"]
+    First -- Não --> Init["Definir r=1"]
+    Init --> More{"r é menor que s?"}
+    More -- Não --> Fail["Composto"]
+    More -- Sim --> Square["x = x*x mod N"]
+    Square --> Minus{"x é N-1?"}
+    Minus -- Sim --> Pass
+    Minus -- Não --> One{"x é 1?"}
+    One -- Sim --> Fail
+    One -- Não --> Next["Incrementar r em 1"]
+    Next --> More
+```
+
+## 4. Teste determinístico em um intervalo fixo
+
+Em um intervalo limitado de inteiros, um conjunto suficiente de bases respaldado por resultados de verificação conhecidos permite testar sem aleatoriedade. Os [registros de bases SPRP](https://miller-rabin.appspot.com/) apresentam as condições utilizadas aqui. Todos os limites superiores são estritos.
+
+| Intervalo de entrada | Bases testadas |
+| --- | --- |
+| $N<4759123141$ | 2, 7, 61 |
+| $N<1122004669633$ | 2, 13, 23, 1662803 |
+| $N<2^{64}$ | 2, 325, 9375, 28178, 450775, 9780504, 1795265022 |
+
+O último conjunto contém sete bases inteiras, não sete primos: 325, por exemplo, é composto. O registro atribui esse resultado de sete bases a Jim Sinclair, em 2011. Este artigo não repete de forma independente toda a busca no intervalo de 64 bits.
+
+Outra opção são os doze primeiros primos `2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37`, que também bastam para esse intervalo de 64 bits. O [resultado de Sorenson–Webster](https://arxiv.org/abs/1509.00864) identifica 318665857834031151167461 como o primeiro composto que é pseudoprimo forte para todas as doze bases; ele supera $2^{64}$. A implementação abaixo usa as ramificações de 3, 4 e 7 bases da tabela, não a alternativa de doze bases.
+
+## 5. Exemplo completo em C++
+
+O tipo de entrada `u64` abrange $0\le N\le2^{64}-1$. Zero e um retornam `false`, mas não são compostos, então a saída diz `Not prime`. A multiplicação modular converte o tipo antes de formar o produto. Cada base é reduzida módulo N; se virar zero, apenas essa base é ignorada e as demais continuam sendo testadas. Uma base zero, sozinha, não determina se o inteiro é primo ou composto.
+
+O próximo bloco é um programa completo com suas funções auxiliares. Não é preciso concatenar os blocos anteriores. Em um destino GCC compatível, compile com um comando como `g++ -std=c++17 -O2 primality.cpp -o primality`.
+
+```cpp
+#include <cstdint>
+#include <stdexcept>
+
+#if !defined(__SIZEOF_INT128__)
+#error "This example requires unsigned __int128 support"
+#endif
+
+using u64 = std::uint64_t;
+using u128 = unsigned __int128;
+
+u64 mod_mul(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    return static_cast<u64>(static_cast<u128>(a) * b % m);
 }
 
-// Teste determinístico de inteiros de 64 bits pelo Teste de Primalidade de Miller-Rabin
-bool is_prime_miller_rabin(uint64_t n) {
-    // Pré-julgamento de valores limite e pequenos números primos
-    if (n < 2) return false;
-    if (n == 2 || n == 3 || n == 5 || n == 7) return true;
-    if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0 || n % 7 == 0) return false;
+u64 mod_pow(u64 base, u64 exp, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
+    base %= m;
+    while (exp > 0) {
+        if (exp & 1) result = mod_mul(result, base, m);
+        base = mod_mul(base, base, m);
+        exp >>= 1;
+    }
+    return result;
+}
 
-    // Decompor n-1 no formato d * 2^s
-    uint64_t d = n - 1;
-    int s = 0;
-    while ((d & 1) == 0) {
-        d >>= 1;
-        s++;
+#include <iostream>
+#include <initializer_list>
+#include <vector>
+
+bool is_prime_miller_rabin(u64 n) {
+    if (n < 2) return false;
+    for (u64 p : {2ULL, 3ULL, 5ULL, 7ULL}) {
+        if (n == p) return true;
+        if (n % p == 0) return false;
     }
 
-    // Lista de bases usadas para determinação
-    // Otimização para minimizar o número de bases testadas de acordo com o tamanho de N
-    vector<uint64_t> bases;
+    u64 d = n - 1;
+    unsigned s = 0;
+    while ((d & 1) == 0) {
+        d >>= 1;
+        ++s;
+    }
+
+    std::vector<u64> bases;
     if (n < 4759123141ULL) {
         bases = {2, 7, 61};
     } else if (n < 1122004669633ULL) {
         bases = {2, 13, 23, 1662803};
     } else {
-        // 7 bases que são determinísticas para todos os números N < 2^64
         bases = {2, 325, 9375, 28178, 450775, 9780504, 1795265022};
     }
 
-    // Executar teste para cada base
-    for (uint64_t a : bases) {
+    for (u64 a : bases) {
         a %= n;
-        if (a == 0) continue; // Se a for múltiplo de n, não pode ser julgado, mas não é primo
+        if (a == 0) continue; // No witness from this base; keep testing the others.
+        u64 x = mod_pow(a, d, n);
+        if (x == 1 || x == n - 1) continue;
 
-        uint64_t x = mod_pow(a, d, n);
-        if (x == 1 || x == n - 1) continue; // Primeira condição atendida, para a próxima base
-
-        bool composite = true;
-        // Loop de s-1 vezes (x = x^2 mod n)
-        for (int r = 1; r < s; r++) {
+        bool passed = false;
+        for (unsigned r = 1; r < s; ++r) {
             x = mod_mul(x, x, n);
             if (x == n - 1) {
-                composite = false; // Segunda condição atendida, possível primo
+                passed = true;
                 break;
             }
+            if (x == 1) return false;
         }
-        
-        // Se nenhuma condição for atendida, é definitivamente um número composto
-        if (composite) return false;
+        if (!passed) return false;
     }
-
-    // Se as condições forem atendidas em todas as bases, definitivamente é primo
     return true;
 }
 
 int main() {
-    // Casos de teste de exemplo
-    vector<uint64_t> test_cases = {
-        1000000007,           // Número primo famoso
-        998244353,            // Número primo famoso
-        1000000000000000003,  // Número primo próximo de 10^18
-        1000000000000000007,  // Número composto (10^18 + 7)
-        561,                  // Número de Carmichael (Número composto)
-        18446744073709551557ULL // Um dos maiores primos perto de 2^64
+    const std::vector<u64> cases = {
+        0, 1, 2, 73, 561, 1000000007, 998244353,
+        1000000000000000003ULL, 1000000000000000007ULL,
+        18446744073709551557ULL, 18446744073709551615ULL
     };
-
-    for (uint64_t n : test_cases) {
-        cout << n << " is " 
-             << (is_prime_miller_rabin(n) ? "Prime" : "Composite") 
-             << endl;
+    for (u64 n : cases) {
+        std::cout << n << " is "
+                  << (is_prime_miller_rabin(n) ? "Prime" : "Not prime") << '\n';
     }
-
-    return 0;
 }
 ```
 
----
+A saída classifica 0 e 1 como `Not prime`; 2 e 73 como `Prime`; 561 como `Not prime`; 1000000007, 998244353 e 1000000000000000003 como `Prime`; 1000000000000000007 como `Not prime`; 18446744073709551557 como `Prime`; e 18446744073709551615 como `Not prime`. O último composto é $2^{64}-1$. Este é um exemplo didático e de teste de inteiros no intervalo indicado, não um gerador criptográfico de primos, uma implementação de tempo constante nem uma biblioteca que valide strings de entrada.
 
-# 6. Avaliação de Complexidade e Desempenho do Algoritmo
+## 6. Complexidade e multiplicação de Montgomery
 
-Consideraremos o desempenho do algoritmo implementado.
+Contando uma multiplicação modular como uma operação, a exponenciação binária e uma rodada de Miller–Rabin usam $\mathcal{O}(\log N)$ operações; testar k bases usa $\mathcal{O}(k\log N)$. A divisão por tentativa faz $\mathcal{O}(\sqrt N)$ divisões. Em função do comprimento de entrada $b=\lfloor\log_2 N\rfloor+1$, Miller–Rabin usa $\mathcal{O}(kb)$ multiplicações modulares. Para inteiros de precisão arbitrária, a complexidade em bits também inclui o custo da multiplicação e da redução modular.
 
-## Complexidade de Tempo (Time Complexity)
-* **Divisão por tentativa:** $O(\sqrt{N})$
-* **Teste de [Fermat](https://kenji.blog/pt/p/fermat/):** Cálculo de potência $O(\log N) \times k$ ($k$ é o número de tentativas)
-* **Método de Miller-Rabin:** Cálculo de potência e loop $O(\log N) \times k$
+Este intervalo fixo exige no máximo sete bases. Porém, um bit pode exigir uma multiplicação condicional além de um quadrado, e a sequência posterior de quadrados acrescenta operações. Logo, $7\times64=448$ não limita todas as operações elementares. Uma comparação de tempos deve informar CPU, compilador, opções de otimização, conjunto de entradas e método de medição.
 
-No ambiente de 64 bits ($N \le 2^{64}$), o método determinístico de Miller-Rabin acima verificará no máximo $7$ bases. Portanto, pode-se considerar uma constante $k \le 7$, e a complexidade de tempo total é estritamente $O(\log N)$.
-Mesmo no caso máximo ($N \approx 10^{19}$), o número de etapas de execução caberá em não mais que $7 \times 64 = 448$ etapas de operações básicas, e o tempo de execução é menor que alguns microssegundos (segundos $10^{-6}$). Em comparação com o $O(\sqrt{N})$ (cerca de $4 \times 10^9$ loops) do método de divisão por tentativa, uma **aceleração de milhões de vezes** foi alcançada.
+A multiplicação de Montgomery altera a representação para evitar a divisão pelo módulo ao repetir operações com o mesmo módulo. Na construção usual com uma base de numeração (radix) que é potência de dois, o módulo precisa ser ímpar e coprimo com essa base de numeração. Além de multiplicações e deslocamentos, são usadas adições, tratamento de carry (vai-um) e subtrações condicionais; conversões e preparação também têm custo. Não há garantia de aceleração de duas ou três vezes. Consulte os procedimentos e condições no [capítulo 14 do HAC, algoritmos 14.32, 14.36 e 14.94](https://cacr.uwaterloo.ca/hac/about/chap14.pdf). Essa técnica não está implementada no código acima.
 
-## Otimização Adicional: Multiplicação de Montgomery (Montgomery Multiplication)
+## 7. Conclusão
 
-Na implementação deste artigo, a extensão do tipo `__int128_t` de 128 bits é usada para a divisão (operação de módulo `%`). Mesmo com CPUs modernas, a divisão de inteiros (instrução DIV) é uma instrução de alto custo que requer dezenas de ciclos em comparação com a adição e multiplicação.
-
-Os criadores de bibliotecas e programadores competitivos em busca de otimização extrema ocasionalmente empregarão um método chamado **Multiplicação de Montgomery (Montgomery Multiplication)**. A multiplicação de Montgomery é um algoritmo surpreendente que substitui a operação cara de módulo (divisão) apenas por "deslocamentos de bits e multiplicações", mapeando os números em um "espaço de Montgomery" especial.
-Ao incorporar isso na multiplicação modular do teste de Miller-Rabin, é possível aumentar ainda mais a velocidade de execução em cerca de duas a três vezes. Sendo este um tema muito profundo, eu gostaria de explicá-lo em detalhes em outro artigo.
-
----
-
-# 7. Resumo
-
-Neste artigo, explicamos tudo de uma vez, desde os fundamentos dos testes de primalidade até o conteúdo avançado.
-Vamos revisar os pontos principais.
-
-1. **O Método de Divisão por Tentativa** é confiável, mas como a complexidade computacional é $O(\sqrt{N})$, falta praticidade quando $N$ excede $10^{12}$.
-2. **O Teste de [Fermat](https://kenji.blog/pt/p/fermat/)** é muito rápido com $O(\log N)$, mas tem uma fraqueza fatal de ser enganado por pseudoprimos absolutos, como os números de Carmichael.
-3. **O Teste de Primalidade de Miller-Rabin** é o algoritmo mais prático e mais forte que resolve a fraqueza do Teste de [Fermat](https://kenji.blog/pt/p/fermat/).
-4. Na implementação em C++, o uso de `__int128_t` permite o tratamento seguro do overflow da multiplicação de inteiros de 64 bits.
-5. Se estiver dentro do intervalo de inteiros de 64 bits ($N < 2^{64}$), selecionando $7$ ou $12$ números primos específicos como base, é possível **realizar o teste de primalidade deterministicamente (100% preciso)** em vez de probabilisticamente.
-
-Testes rápidos de primalidade são uma técnica inevitável nos cálculos que lidam com números gigantescos. O código-fonte de Miller-Rabin em C++ fornecido neste artigo é robusto e pode ser utilizado como está na prática. Por favor, tente utilizá-lo em seus próprios projetos ou competições de algoritmos.
+A divisão por tentativa procura divisores diretamente, enquanto Fermat elimina candidatos por uma congruência. Miller–Rabin usa condições mais fortes. Sua forma probabilística geral deve ser distinguida do teste determinístico com um conjunto de bases verificado e um intervalo restrito.
 
 ```mermaid
 graph LR
-    TrialDivision["Divisão por Tentativa (O(√N))"] --> Fermat["Teste de Fermat (O(log N), tem fraqueza)"]
-    Fermat --> MillerRabin["Método Miller-Rabin (O(log N), pode ser determinístico)"]
-    MillerRabin --> Montgomery["+ Multiplicação Montgomery (Aceleração por fator constante)"]
-    
-    style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px
+    Trial["Divisão por tentativa: procurar divisores"] --> Fermat["Fermat: eliminar por congruência"]
+    Fermat --> MR["Miller-Rabin: condições mais fortes"]
+    MR --> Fixed["Bases verificadas e intervalo fixo: teste determinístico"]
+    MR --> Mont["Montgomery: melhorar a aritmética modular"]
 ```
 
-O mundo dos algoritmos onde a programação e a matemática se cruzam é muito bonito e profundo. Esperamos que isso o ajude em seu aprendizado futuro.
+A correção depende dos limites de entrada, tipos inteiros, overflow, condições do módulo e tratamento das bases, além da matemática. As garantias do código de 64 bits não se estendem a inteiros de comprimento arbitrário nem a um sistema criptográfico completo.
 
----
-*Referência:*
-- *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
-- *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+### Referências
 
+- [HAC, capítulo 4: Fermat, Miller–Rabin e condições da probabilidade de erro](https://cacr.uwaterloo.ca/hac/about/chap4.pdf) (fonte de 1996; distinguir resultados posteriores de primalidade e normas atuais de geração de chaves)
+- [Rabin (1980): Probabilistic Algorithm for Testing Primality](https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf)
+- [Registros de bases SPRP para Miller–Rabin determinístico](https://miller-rabin.appspot.com/)
+- [Sorenson–Webster: Strong Pseudoprimes to Twelve Prime Bases](https://arxiv.org/abs/1509.00864) (preprint de 2015, publicação em revista em 2017)
+- [GCC: extensão de inteiros de 128 bits](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)
+- [Rascunho de C++: divisão e resto](https://eel.is/c++draft/expr.mul)
+- [HAC, capítulo 14: aritmética de Montgomery](https://cacr.uwaterloo.ca/hac/about/chap14.pdf)

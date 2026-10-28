@@ -158,7 +158,7 @@ int main() {
         assert len(re.findall(r'^## [1-7]\. ', text, re.M)) == 7
         diagrams = re.findall(r'^```mermaid\n(.*?)^```', text, re.M | re.S)
         assert [len(re.findall(r'--(?: [^\n]*?)?\s*>', diagram)) for diagram in diagrams] == [14, 4]
-        assert 'More -- No --> Fail' in diagrams[0] and 'Next --> More' in diagrams[0]
+        assert re.search(r'More -- [^\n]+ --> Fail', diagrams[0]) and 'Next --> More' in diagrams[0]
         links = re.findall(r'\]\((https://[^)]+)\)', text)
         assert {u for u in links if not u.startswith('https://kenji.blog/')} == external
         internal = 'https://kenji.blog/' + ('' if lang == 'ja' else lang+'/') + 'p/modern-cryptography-public-key-hash-signature/'
