@@ -78,6 +78,84 @@
         }
       ],
       "validation": "docs/translation-review/batch-017-ja-en-validation-r3.json"
+    },
+    "post/素因数分解と計算量/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/素因数分解と計算量/index.md",
+      "sourceHash": "35642af8501dc5b58c64a5b2fa0ccfe34a6d0bc55fd8e142c2d1a56035043af0",
+      "translationHash": "1fdb0b983104a33d4f6fc247b5c62d3ac928eee5aacd3ef82eac5b5e3290a8c3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Simplified Chinese metadata/body in three bounded outputs, then independently reread its complete revised body in two bounded outputs and compared with the corrected Japanese source. Checked six sections, seven-row table, five factoring algorithms, both diagrams and all nine external references. No other unread language was treated as reviewed."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 素因数分解/整数分解, 渐近上界/紧确界/下界, 最坏/平均/期望时间, 比特长度/整数值, 最小/最大素因数, 非平凡因数/素因数, 私钥指数/私钥, 判定/搜索/素数判定, 一般数域筛法/素理想/整数环, 光滑值/因子基, 多重多项式二次筛法 and 后量子密码. Replaced 普通数域筛选法 with standard 一般数域筛法 and disambiguated multiple polynomials from polynomial running time."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all10display formulas exactly, relevant inline assumptions and bitlength inequality. Compared Fermat candidate count, rho success/restart and random-function qualification, signed QS values, congruent-square coprimality, L-notation o1 and log-base conversion1.923to1.702. Independent fixture rerun verifies bitbounds1..10000, equal-bit prime products19/20bits, Fermat1/51806candidates, rho21failure, composite gcds15/77, Qsqrt5 integral-element example and public RSA250 product. Added decision-certificate partition checks and binary-search extraction finite examples; these supplement, not prove, the stated complexity reasoning."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Neither original nor revised article contains executable code. Inspected two Mermaid diagrams, now3and2edges, removing feasibility guarantees and the unsupported classical-physics-limit claim. Ran independent math fixtures and certificate/search examples in verify_batch_017.py; no article compilation, GNFS implementation, quantum simulation or production cryptography audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all9unique external HTTPS references and language-specific already-reviewed modern-cryptography internal target. Removed erroneous iteration-function-to-generating-functions link, Crypto-substring-to-cryptocurrency link and repeated unreviewed complexity/GNFS dependency links. Checked actual old generated datePublished2026-09-11T23:00:00+09:00 before removing the extra duplicate2026-09-24 date; preserved effective publication date, slug, image and categories/tags. Updated title from 素数分解 to 素因数分解 and added actual lastmod2026-10-28. Image exists; Hugo18-bundle minified build, multilingual1155pages and HTTPS2116HTML/41XML passed. All121ChineseTeX expressions survive HTML; JA/EN unchanged and checked with it. Publication pending."
+        }
+      },
+      "summary": "Full Simplified Chinese factoring/complexity review against corrected Japanese, including language-specific terminology and mislinked substrings.",
+      "languageSpecificFindings": "Removed unconditional hardness/security/timing and exact-doubling claims, repaired least-prime bound and model/expectation distinctions, and aligned Fermat/rho/QS/GNFS/PvsNP/quantum discussion with corrected source. Clarified 私钥指数 rather than entire private key, 亚指数 estimate rather than general factoring lower bound, 判定/搜索 distinction, finite field exponent parity, and the difference between 2700core-years and simultaneous machine count. Fixed 生成函数 and Crypto-substring links. 多重多项式二次筛法 avoids confusing multiple polynomials with polynomial-time complexity.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Ten other translations remain unread and unreviewed, without confirmation dates.",
+        "No executable article code; independent finite examples do not prove cryptographic security or asymptotic complexity.",
+        "No visual browser/KaTeX/Mermaid audit or full primary-paper proof audit.",
+        "Full-site CI and publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://xlinux.nist.gov/dads/HTML/bigOnotation.html",
+          "scope": "Complete short definition and model/tight-bound caveats; not a hardware timing model."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap2.pdf",
+          "scope": "Scoped parsed sections2.3.1-2.3.3 plus NP-completeness consequences, as listed in source notes. Superseded 1996 primality status not reused."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+          "scope": "Scoped trial/rho/Floyd/smooth-relation/QS/NFS/RSA-problem excerpts listed in source notes, not a whole-chapter audit or current crossover survey."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Abstract this batch; actual key/lambda/range/OAEP/PSS excerpts previously read in batches015/016. Not a full fresh RFC read."
+        },
+        {
+          "url": "https://caramba.loria.fr/rsa250.txt",
+          "scope": "Complete dated author announcement, 2020-02-28, 250digits829bits and2700physicalcore-years; independently verified published factor product, not prime certification or current record."
+        },
+        {
+          "url": "https://annals.math.princeton.edu/2004/160-2/p12",
+          "scope": "2004 journal metadata and abstract for unconditional deterministic polynomial primality testing; proof/algorithm text not read."
+        },
+        {
+          "url": "https://www.claymath.org/millennium/p-vs-np/",
+          "scope": "Current page explicitly labels PvsNP unsolved; read explanatory main body, not linked formal problem description."
+        },
+        {
+          "url": "https://arxiv.org/html/quant-ph/9508027",
+          "scope": "Metadata/abstract and scoped parsed section5 lines259-329: order finding, classical postprocessing, QFT/measurement, continued fractions and repeats. Not full paper, proof certification, hardware or current resource forecast."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc9794.html",
+          "scope": "June2025 metadata/abstract and section1, including design goals of PQC and qualification of quantum-safe terminology; not whole RFC."
+        }
+      ],
+      "validation": "docs/translation-review/batch-017-cn-validation.json"
     }
   },
   "stages": [
@@ -110,6 +188,32 @@
           "unreviewed": 12827
         }
       }
+    },
+    {
+      "checkedAt": "2026-10-28T09:57:20.442647+09:00",
+      "language": "zh-cn",
+      "reviewedTranslations": 2,
+      "otherTranslationsUnreviewed": 10,
+      "validation": "docs/translation-review/batch-017-cn-validation.json",
+      "texExpressions": {
+        "ja": 121,
+        "en": 122,
+        "zh-cn": 121
+      },
+      "displayFormulasPerVersion": 10,
+      "diagramEdgesPerVersion": [
+        3,
+        2
+      ],
+      "build": {
+        "hugo": "0.139.0 extended",
+        "minified": true,
+        "isolatedArticleBundles": 18,
+        "multilingualPages": 1155,
+        "httpsHtml": 2116,
+        "httpsXml": 41
+      },
+      "publicationPending": true
     }
   ]
 }

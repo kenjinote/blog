@@ -1,290 +1,211 @@
 ---
-title: '素数分解的极限与时间复杂度的大O表示法分析'
-date: "2026-09-24T19:44:38+09:00"
-slug: 'prime-factorization-limits-big-o-notation'
-date: '2026-09-11T23:00:00+09:00'
-image: 'img/eyecatch.jpg'
+title: "素因数分解的极限与时间复杂度的大O表示法解析"
+slug: "prime-factorization-limits-big-o-notation"
+date: "2026-09-11T23:00:00+09:00"
+lastmod: "2026-10-28"
+image: "img/eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["mathematics", "computer-science", "cryptography"]
 tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 ---
 
-# 引言：为什么素数分解“很难”？
+## 1. 引言：整数分解的难点在哪里
 
-在现代互联网社会中，我们之所以能安心地享受在线购物、交换机密信息，是因为有“密码技术”的存在。而支撑这些密码技术（特别是被广泛使用的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密等）安全性的核心，正是“对极大整数进行素数分解非常困难”这一数学事实。
+把小整数分解成素数的乘积，是学校里常见的计算。然而，从大素数的乘积中找回因数，在经典计算机上可能需要极大的计算资源。这种不对称性是[RSA等公钥密码](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)的背景之一。
 
-乍看之下，素数分解似乎只是“将数字分解为素数相乘”的简单工作，但随着位数的增加，它会变成即使让世界最快的超级计算机运行数十年、数百年也无法解开的超级难题。我们平时在学校里学的素数分解，充其量只是不断用 $2$、$3$、$5$ 去除的简单操作，但当面对几百位未知素数的乘积时，这种简单的方法就会彻底崩溃。
+这并不意味着每个大整数都难以分解，也不意味着人们已经证明任何经典算法都不可能快速完成分解。偶数等含有小因数的巨大整数可能很容易处理。下文中各算法的复杂度，也不是整数分解问题本身的下界。密码安全性需要针对正确生成的密钥，以及假定攻击者可用的资源进行评估。
 
-本文将从信息科学、计算机科学的基础概念“时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)（大O表示法：$\mathcal{O}$ 表示法）”出发，详细且在数学层面上解析用于解决素数分解的各种算法（试除法、Pollard的 $\rho$ 算法、[普通数域筛选法](/zh-cn/p/beyond-gnfs-integer-factorization-algorithms/)等）到底需要花费多长的计算时间。并且，我们将彻底剖析为什么在经典计算机上分解巨大数字实际上是不可能的，它是如何保护我们的信息与隐私的，以及量子计算机将如何推翻这一前提。
+本文先说明大O表示法和输入规模，再比较试除法、费马法、Pollard的rho算法、二次筛法和一般数域筛法，最后讨论P与NP问题及量子计算。阅读时，请区分复杂度估计、安全性证明和实际运行的秒数。
 
----
+## 2. 复杂度与大O表示法
 
-# 时间复杂度与大O($\mathcal{O}$)表示法的严格定义
+实际耗时受CPU、内存、实现和并行化等条件影响。讨论复杂度时，需要明确输入规模，以及什么算作一次基本操作。把多精度整数乘法算作一次操作，与统计其内部的比特操作，含义并不相同。
 
-在评估算法的性能和效率时，仅仅测量“程序的执行时间（秒数）”是不够的。因为执行时间在很大程度上取决于所用计算机的性能（CPU时钟频率、内存速度等），以及编程语言和编译器的优化。
+### 渐近上界
 
-因此，作为不依赖于硬件和环境的通用评估指标，我们使用 **时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)（Time Complexity） ** ，而用来表达它的记法就是 **大O表示法（Big-O Notation）** 。大O表示法是一种数学记号，用来表示当输入数据的规模 $N$ 变得非常大时，算法的执行时间（或执行步骤数）随 $N$ 增加而增长的趋势（渐近增长率）。
+对于在充分大的输入上非负的函数，$f(n)=\mathcal{O}(g(n))$ 表示：
 
-## 渐近记法的数学定义
+$$
+\exists c>0,\ \exists n_0,\ \forall n\ge n_0:\quad 0\le f(n)\le c\,g(n).
+$$
 
-在计算机科学中，对于函数 $f(n)$ 和 $g(n)$，$f(n) = \mathcal{O}(g(n))$ 的数学定义如下：
+常数 $c$ 和 $n_0$ 不依赖输入 $n$。这定义的是上界，本身不代表“最坏情况”。还必须说明被估计的函数是最坏时间、平均时间，还是随机算法的期望时间。
 
-$$ \exists c > 0, \exists n_0 > 0 \text{ s.t. } \forall n \ge n_0, 0 \le f(n) \le c \cdot g(n) $$
+上下界具有相同数量级时用 $\Theta$，下界用 $\Omega$。例如，$f(n)=1$ 也属于 $\mathcal{O}(2^n)$。因此，仅凭这个上界，不能断言输入增加1时耗时恰好翻倍。这种记法也不直接表达实测时间之比。[NIST的定义](https://xlinux.nist.gov/dads/HTML/bigOnotation.html)同样区分上界和紧确界。
 
-这意味着，“当输入规模 $n$ 足够大（$n \ge n_0$）时，函数 $f(n)$ 的增长可以被 $g(n)$ 的某个常数倍从上方限制住”。换句话说，它表示算法的处理时间在最坏情况下也能控制在 $g(n)$ 的常数倍之内，即“上界（Upper Bound）”。
+### 常见的增长形式
 
-同样地，表示下界的记法是 $\Omega$（大Omega），表示上界和下界一致时的记法是 $\Theta$（大Theta）。不过，在一般讨论算法的最坏时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)时，最常使用的是 $\mathcal{O}$ 表示法。
+下表以 $n$ 表示数据元素的个数，统计比较、元素访问等基本操作。
 
-## 常见的时间复杂度类别
+| 数量级 | 例子和条件 |
+| --- | --- |
+| $\mathcal{O}(1)$ | 在随机访问模型中，按下标访问数组元素 |
+| $\mathcal{O}(\log n)$ | 在有序数组中进行二分查找的比较次数 |
+| $\mathcal{O}(n)$ | 线性查找在最坏情况下的比较次数 |
+| $\mathcal{O}(n\log n)$ | 归并排序的最坏情况，或适当假设下快速排序的平均情况 |
+| $\mathcal{O}(n^2)$ | 例如插入排序在最坏情况下的比较次数 |
+| $\mathcal{O}(2^n)$ | $n$ 个元素的全部子集的数量；每个候选的处理成本另计 |
+| $\mathcal{O}(n!)$ | $n$ 个不同元素的全部排列的数量；每个候选的处理成本另计 |
 
-时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)有几个常见的类别。我们按照执行时间从短（效率高）到长来看看：
-
-1. **$\mathcal{O}(1)$ : 常数时间（Constant time）**
-   无论输入规模 $N$ 变得多大，执行时间都保持不变的算法。例如，通过数组索引获取值的操作，或者哈希表中的搜索（理想情况下）等。
-
-2. **$\mathcal{O}(\log N)$ : 对数时间（Logarithmic time）**
-   即使输入规模翻倍，执行时间也只增加常数级，是非常高效的算法。从已排序的数组中查找目标值的“二分查找（[Binary Search](https://kenji.blog/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/)）”就是典型例子。即使数据量达到10亿，也只需约30次比较就能找到目标数据。
-
-3. **$\mathcal{O}(N)$ : 线性时间（Linear time）**
-   执行时间与输入规模成正比增加。如果数据量达到原来的10倍，时间也会变成10倍。按顺序检查数组中所有元素的“线性搜索”就是这种情况。
-
-4. **$\mathcal{O}(N \log N)$ : 线性对数时间（Linearithmic time）**
-   比 $\mathcal{O}(N)$ 稍慢一些，但仍属于高效的一类。归并排序（Merge Sort）和快速排序（Quick Sort 的平均时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)）等大多数实用的高效[排序算法](https://kenji.blog/zh-cn/p/sorting-algorithms/)都属于这个[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)。
-
-5. **$\mathcal{O}(N^2)$ : 多项式时间 / 平方时间（Quadratic time）**
-   当输入规模翻倍时，执行时间变为4倍；如果是10倍，则变为100倍。使用双重循环的简单处理、冒泡排序、插入排序等属于此类。当数据量超过几万时，处理时间就会变得很长。这些以 $\mathcal{O}(N^k)$ 形式表示的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)统称为 **多项式时间（Polynomial time）** 。
-
-6. **$\mathcal{O}(2^N)$ : 指数时间（Exponential time）**
-   输入规模每增加1，执行时间就会翻倍。效率极低，只要 $N$ 达到40或50，即便是最先进的计算机也无法在现实的时间内完成计算。背包问题的全搜索、旅行商问题的简单解法等属于此类。
-
-7. **$\mathcal{O}(N!)$ : 阶乘时间（Factorial time）**
-   比 $\mathcal{O}(2^N)$ 增长得还要快。例如尝试旅行商问题所有排列的算法。
-
-以下 Mermaid 图表粗略比较了随着 $N$ 的增加，各时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)对应的执行时间（步骤数）的增长率。
+对于固定常数 $k$，时间能被 $\mathcal{O}(n^k)$ 限制时，称为多项式时间。较大的指数或常数仍可能使它不实用；指数级方法也可能适合小规模输入。下图整理的是相对于输入比特长度的代表性估计，并不是困难性证明或实际耗时曲线。
 
 ```mermaid
 graph TD
-    classDef poly fill:#a8e6cf,stroke:#333,stroke-width:2px;
-    classDef subexp fill:#ffd3b6,stroke:#333,stroke-width:2px;
-    classDef exp fill:#ffaaa5,stroke:#333,stroke-width:2px;
-
-    Poly["多项式时间 O(n^k)"]:::poly
-    SubExp["亚指数时间 L_n"]:::subexp
-    Exp["指数时间 O(2^n)"]:::exp
-
-    GNFS["GNFS (普通数域筛选法)"]:::subexp
-    Pollard["Pollard的rho算法"]:::exp
-    Trial["试除法"]:::exp
-
-    Easy["Feasible (现实可行)"]:::poly
-    Hard["Intractable (困难)"]:::exp
-
-    Poly --- Easy
-    Exp --- Hard
-
-    Trial --> Exp
-    Pollard --> Exp
-    GNFS --> SubExp
-    
-    Poly -.-> SubExp
-    SubExp -.-> Exp
+    Trial["试除法：整数除法次数"] --> Exp["相对于比特长度的指数级估计"]
+    Rho["Pollard rho：启发式期望乘法次数"] --> Exp
+    GNFS["一般数域筛法：启发式估计"] --> SubExp["相对于比特长度的亚指数级估计"]
 ```
 
-相信您已经了解时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)的不同对于算法的选择是多么重要。在密码技术中，正是利用了这种需要“指数时间”或“接近指数时间的[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)”的问题（也就是无法轻易求解的问题）来确保安全性。
+## 3. RSA：整数的值与输入长度
 
----
+用 $N\ge2$ 表示待分解的整数，用 $b$ 表示其二进制表示的长度。这与前一张表中的元素个数 $n$ 不同。
 
-# [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密的机制与素数分解问题
+$$
+b=\lfloor\log_2 N\rfloor+1,\qquad 2^{b-1}\le N<2^b.
+$$
 
-为了理解为什么素数分解如此重要，让我们简单回顾一下RSA加密的机制。RSA加密是由罗纳德·李维斯特（Ron Rivest）、阿迪·萨莫尔（Adi Shamir）和伦纳德·阿德曼（Leonard Adleman）三人于1977年开发的公钥加密算法。
+例如，$15$ 的比特长度是4，但 $2^4=16$，并不是 $15$。关于数值 $N$ 的多项式界，可能是关于输入长度 $b$ 的指数级界。大整数运算本身的成本也会随 $b$ 改变。
 
-### 密钥生成的步骤
-1. 随机选择两个极大的素数 $p$ 和 $q$。（例如各自长达1024比特）
-2. 将它们相乘计算得出 $N = p \times q$。这个 $N$ 将作为公钥的一部分向全世界公开。（长度将达到2048比特）
-3. 计算欧拉函数 $\phi(N) = (p-1)(q-1)$。
-4. 选择一个与 $\phi(N)$ 互质的整数 $e$，这也作为公钥。
-5. 计算满足 $e \times d \equiv 1 \pmod{\phi(N)}$ 的 $d$（私钥）。
+在基本的双素数RSA中，用不同的奇素数 $p,q$ 构造 $N=pq$。若两个素数各有1024比特，乘积可能是2047比特或2048比特，并不总是2048比特。公钥包含 $N,e$，私钥包含私钥指数 $d$ 等信息。例如，以下是选取 $d$ 的一组充分条件：
 
-这里极为重要的一点是： **“为了破解密码，必须要有私钥 $d$；为了计算 $d$，必须要有 $\phi(N)$；为了计算 $\phi(N)$，就必须将 $N$ 素数分解为 $p$ 和 $q$。”**
+$$
+\varphi(N)=(p-1)(q-1),\quad 1<e<\varphi(N),\quad
+\gcd(e,\varphi(N))=1,\quad ed\equiv1\pmod{\varphi(N)}.
+$$
 
-巨大素数的乘法 $p \times q$ 可以在瞬间完成，但从其结果 $N$ 中反推找出原来的 $p$ 和 $q$（即素数分解）却令人绝望地困难。这种“单向函数（One-way function）”的特性正是RSA加密的核心。
+[RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html)更一般地使用 $\lambda(N)=\operatorname{lcm}(p-1,q-1)$ 规定密钥。知道因数后，可以计算私钥指数。然而，RSA求逆问题与整数分解一般是否等价，并没有得到证明；也不是所有针对RSA的攻击都需要分解模数。
 
-这里必须注意一个非常重要的一点。在素数分解问题中，“输入规模 $n$”并不是数值 $N$ 本身的大小，而是“表示数值 $N$ 所需的比特数”。
-如果将整数 $N$ 用二进制表示时的位数设为 $n$，那么 $n \approx \log_2 N$。也就是说，算法的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)必须相对于 $n = \log_2 N$（或者 $\ln N$）来评估，而不是相对于 $N$ 评估。
+仅有整数模幂运算，并不构成安全的加密方案。实际使用还需要包含OAEP的加密方案或PSS等签名方案，并考虑密钥生成、实现和整个协议。不能把乘法与找回因数之间的不对称性，当作无条件的安全性证明。
 
----
+## 4. 五种整数分解算法
 
-# 素数分解算法的历史与时间复杂度
+### 4.1 试除法
 
-接下来，我们将详细解释用于将给定的合数 $N$ 分解为素数乘积的各种算法及其工作原理和时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)。这也是人类如何挑战素数分解极限的一部历史。
+合数 $N$ 至少有一个不超过 $\sqrt N$ 的素因数。因此，从小的候选因数一直试到 $\lfloor\sqrt N\rfloor$，就能找到因数。这里不是说“最大的素因数不超过平方根”：例如，$15=3\cdot5$ 的最大素因数是 $5$，大于 $\sqrt{15}$。
 
-## 1. 试除法（Trial Division）
+对于逐一测试所有整数候选的简单方法，最坏情况下的除法次数可以估计为 $\mathcal{O}(\sqrt N)$。由比特长度的不等式，也可得到 $\mathcal{O}(2^{b/2})$ 的上界。这以一次多精度除法为单位计数，并非比特操作的总次数。如果存在小因数，就能提前结束。
 
-最直观、最原始的算法就是“试除法”。这种方法是从 $2$ 开始，按顺序尝试用素数去整除 $N$。
+### 4.2 费马法：因数之间的距离很重要
 
-### 算法概述
-利用 $N$ 的素因子最大也不会超过 $\sqrt{N}$ 的特性（因为 $\sqrt{N} \times \sqrt{N} = N$，如果存在更大的素因子，必定会与一个小于等于 $\sqrt{N}$ 的素因子成对出现）。
-因此，只需要检查它是否能被 $2, 3, 5, 7, \dots, \lfloor\sqrt{N}\rfloor$ 的所有数（或素数）整除即可。
+对于奇合数，寻找平方差：
 
-### 时间复杂度评估
-在最坏的情况下（例如 $N$ 是两个巨大素数的乘积时），需要进行到 $\sqrt{N}$ 为止的除法。
-如前所述，输入规模 $n$ 满足 $n = \log_2 N$，所以可以表示为 $N = 2^n$。
-因此，计算步骤数最多与以下数值成正比：
+$$
+N=x^2-y^2=(x-y)(x+y).
+$$
 
-$$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
+从 $x=\lceil\sqrt N\rceil$ 开始递增，检查 $x^2-N$ 是否是完全平方数。若 $N=pq$ 且 $p\le q$ 均为奇数，则 $x=(p+q)/2$、$y=(q-p)/2$ 是一组解。检查到这组解为止的候选数量如下；如果更早遇到另一组解，就可以提前结束。
 
-这意味着，相对于比特长度 $n$，其时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)为 **$\mathcal{O}(2^{n/2})$** 。也就是说，试除法是一个关于 $n$ 的 **“纯指数时间（Exponential time）算法”** 。
-位数每增加1比特（数值变为2倍），计算时间就会变为约 $\sqrt{2} \approx 1.414$ 倍。如果 $N$ 是一个超过1024比特（十进制约300位）的数字，即使花费宇宙年龄那么长的时间也算不完。
+$$
+\frac{p+q}{2}-\lceil\sqrt N\rceil+1.
+$$
 
-## 2. 费马素数分解法（[Fermat](https://kenji.blog/zh-cn/p/fermat/)'s Factorization Method）
+对于因数接近的 $1009\cdot1013$，第一个候选就能成功。相比之下，$3\cdot104729=314187$ 需要检查51806个候选。特别是固定 $p=3$、增大素数 $q$ 时，候选数量为 $\Theta(N)$。因此，不能一概把费马法归为与试除法相同的平方根数量级。偶数应先除去因数2。
 
-这是由17世纪数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)提出的方法。当给定一个奇合数 $N$ 时，它尝试将 $N$ 表示为两个平方数之差：
+### 4.3 Pollard的rho算法
 
-$$ N = x^2 - y^2 = (x - y)(x + y) $$
+对 $x\mapsto x^2+c\pmod N$ 等函数反复迭代，计算序列中两个位置的差与 $N$ 的最大公约数。如果序列在未知素因数 $p$ 的模意义下发生碰撞，差值就是 $p$ 的倍数，有时可以由此找出因数。Floyd判圈法只保留常数个剩余值，但每个值需要 $\mathcal{O}(b)$ 比特，因此并不是以比特计量的常数空间。
 
-如果能找到这样的 $x$ 和 $y$，那么 $a = x - y$ 和 $b = x + y$ 就是 $N$ 的因数。
-在算法执行上，让 $x$ 从 $\lceil \sqrt{N} \rceil$ 开始依次递增，并检查 $x^2 - N$ 是否为完全平方数（某个整数 $y$ 的平方）。
-当两个素因子 $p$ 和 $q$ 在数值上非常接近时，这种方法运作得极其迅速。但在一般情况下（$p$ 和 $q$ 取随机相距较远的值），它最终仍需要花费与试除法相当的指数时间。
+在假定序列行为类似随机函数的启发式分析中，找到因数 $p$ 所需的期望模乘次数估计为 $\mathcal{O}(\sqrt p)$。当 $p$ 与 $\sqrt N$ 同一数量级时，可写为 $\mathcal{O}(N^{1/4})$，进而得到 $\mathcal{O}(2^{b/4})$。这不是无条件的最坏时间保证；乘法和最大公约数运算的比特成本也需要另行考虑。
 
-## 3. Pollard的 $\rho$ 算法（Pollard's rho algorithm）
+所得最大公约数 $d$ 只有在 $1<d<N$ 时才意味着成功。$d=1$ 时继续；$d=N$ 时可改变初值或函数后重试。例如，$N=21$、初值为2、$f(x)=x^2+1$ 时，第一次Floyd比较得到5和5，最大公约数是21本身。非平凡因数也可能是合数，需要继续分解。
 
-为了突破试除法的限制，1975年约翰·波拉德（John Pollard）提出了一种被称为“Pollard的 $\rho$（Rho）算法”的方法。
+### 4.4 二次筛法与MPQS
 
-### 算法概述
-这种方法应用了被称为“生日悖论（Birthday Paradox）”的概率论概念，以及伪随机数序列的周期性（因为它的形状类似于希腊字母 $\rho$，因此得名）。
+二次筛法收集仅由小素数相乘得到的光滑值，构造平方同余式。基本形式中，取 $m=\lfloor\sqrt N\rfloor$，在较小的 $x$ 的范围内筛选下列值：
 
-使用某个伪随机数[生成函数](https://kenji.blog/zh-cn/p/generating-functions/) $f(x) = (x^2 + 1) \pmod N$ 生成序列，并找出序列中满足 $x_i \equiv x_j \pmod p$ （$p$ 是 $N$ 的未知素因子）的两个值。
-此时，由于 $x_i - x_j$ 是 $p$ 的倍数，通过计算最大公约数 $\gcd(|x_i - x_j|, N)$，就能以很高概率提取出 $p$（即 $N$ 的素因子）。结合罗伯特·弗洛伊德的循环检测算法（[龟兔赛跑算法](/zh-cn/p/floyds-cycle-finding/)）等，可以在保持内存使用量为 $\mathcal{O}(1)$ 的同时进行高效计算。
+$$
+Q(x)=(m+x)^2-N.
+$$
 
-### 时间复杂度评估
-已知 Pollard的 $\rho$ 算法找到素因子 $p$ 所需的步骤数大约为 $\mathcal{O}(\sqrt{p})$。
-在最坏的情况下（当 $N$ 是两个大小相近的素数 $p, q$ 的乘积时，有 $p \approx \sqrt{N}$），时间复杂度为 $\mathcal{O}(N^{1/4})$。
+以符号 $-1$ 和选定的小素数组成因子基，记录这些值的指数。在二元域上线性组合指数的奇偶性，寻找乘积为平方数的关系。仅描述随机取 $x^2\bmod N$ 并检查其光滑性，不能体现二次筛法利用较小多项式值的特点。
 
-用输入规模 $n = \log_2 N$ 来表示：
+MPQS（多重多项式二次筛法）是使用多个适当二次多项式的变种。性能依赖实现、输入和可用资源，因此不能给出“恰好100位时某种方法必然更快”的通用分界。
 
-$$ N^{1/4} = (2^n)^{1/4} = 2^{n/4} $$
+目标同余式与提取因数的操作如下：
 
-因此，时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)为 **$\mathcal{O}(2^{n/4})$** 。
-与试除法的 $\mathcal{O}(2^{n/2})$ 相比有了戏剧性的速度提升，在实际应用中对中等规模（数十位）数字的素数分解非常强大。然而，相对于比特长度 $n$，它依然未能跨越“指数时间”的壁垒，对于[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密中使用的如2048比特（十进制约600位）的巨大数字仍然无能为力。
+$$
+X^2\equiv Y^2\pmod N,\qquad d=\gcd(X-Y,N).
+$$
 
-## 4. 多项式二次筛选法（MPQS: Multiple Polynomial Quadratic Sieve）
+如果 $d=1$ 或 $d=N$，应尝试其他关系。若 $X,Y$ 均与 $N$ 互素，且 $X\not\equiv\pm Y\pmod N$，就能得到非平凡因数，但不一定是素数。例如，$N=1155$、$X=76$、$Y=1$ 时，两个平方同余，而 $\gcd(75,1155)=15$、$\gcd(77,1155)=77$ 都是合数。
 
-进入20世纪80年代，卡尔·波默兰斯（Carl Pomerance）提出了“二次筛选法（Quadratic Sieve: QS）”。这是对费马“平方差”概念的扩展。
-费马法直接寻找 $x^2 - y^2 = N$，而二次筛选法则寻找更宽松的条件：
+### 4.5 一般数域筛法（GNFS）
 
-$$ x^2 \equiv y^2 \pmod N $$
-且
-$$ x \not\equiv \pm y \pmod N $$
+一般数域筛法用于分解不具有特殊形式的大整数。大致过程如下：
 
-如果能找到这样的一对 $x, y$，那么 $x^2 - y^2 = (x - y)(x + y)$ 就会是 $N$ 的倍数。因此，只要计算 $\gcd(x - y, N)$ 或 $\gcd(x + y, N)$，就能得到 $N$ 的非平凡素因子。
+1. 选择模 $N$ 下具有公共根的整数多项式等参数，建立相应的数域环境。
+2. 在有理数侧和数域侧，通过筛选收集满足关于小素数或素理想的分解条件的关系。
+3. 求解表示指数奇偶性等条件的大型稀疏矩阵，组合出可以提取平方的关系。
+4. 在两侧计算平方根，转化为整数的平方同余式，通过最大公约数提取非平凡因数；关系失败时重试。
 
-在二次筛选法中，需要找出大量使得 $x^2 \pmod N$ 成为“仅包含小素数因子的数（这被称为 $B$-平滑数）”的 $x$，并将它们的素数分解结果排列成矩阵的形式（二元域 $\mathbb{F}_2$ 上的线性方程组）。然后使用高斯消元法等将多个关系式相乘，并调整使得等式右边成为完全平方数（各素因子的指数均为偶数），从而构造出 $x^2 \equiv y^2 \pmod N$。
+这只是概要，并不是数域侧平方根及其附加条件的实现指南。由多项式根 $\alpha$ 构造的 $\mathbb Z[\alpha]$，也不一定是该数域的整个整数环。例如，$\alpha=\sqrt5$ 时，$\beta=(1+\sqrt5)/2$ 满足 $\beta^2-\beta-1=0$，是代数整数，却不属于 $\mathbb Z[\sqrt5]$。
 
-在[普通数域筛选法](/zh-cn/p/beyond-gnfs-integer-factorization-algorithms/)出现之前，二次筛选法一直是世界上最快的算法，并且目前在分解100位以下的数字时，它依然被认为是最快的。
+使用自然对数 $\ln$ 定义L记法，其中 $c>0$、$0\le\alpha\le1$：
 
-## 5. 普通数域筛选法（General Number Field Sieve: GNFS）深度解析
+$$
+L_N[\alpha,c]=\exp\!\left((c+o(1))(\ln N)^\alpha(\ln\ln N)^{1-\alpha}\right).
+$$
 
-目前，在超过100位的巨大整数素数分解中，被认为是“世界最快”的就是 **[普通数域筛选法](/zh-cn/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)** 。它在20世纪80年代后期被提出，是进一步发展了二次筛选法并利用了代数数论的深刻结果（数域）的高级算法。
+当 $N\to\infty$ 时，$o(1)$ 趋于0。两个端点为 $L_N[0,c]=(\ln N)^{c+o(1)}$ 和 $L_N[1,c]=N^{c+o(1)}$。不能直接删去渐近项，改成严格等式或固定次数的上界。
 
-在针对RSA加密的攻击（从公钥进行素数分解）中，不断刷新世界纪录的始终是GNFS。2020年曾有报告称成功分解了829比特（250位）的合数（RSA-250），但这需要数千台规模的计算机长期并行运行才能完成。
+GNFS的标准启发式运行时间估计为：
 
-### 算法的数学结构
-GNFS 非常复杂，但大致按以下步骤进行：
+$$
+L_N\!\left[\frac13,\left(\frac{64}{9}\right)^{1/3}\right]
+=\exp\!\left(\left(\left(\frac{64}{9}\right)^{1/3}+o(1)\right)(\ln N)^{1/3}(\ln\ln N)^{2/3}\right).
+$$
 
-1. **多项式选择 (Polynomial Selection):**
-   对于 $N$，选择一个整数 $m$ 和一个系数较小且满足 $f(m) \equiv 0 \pmod N$ 的不可约多项式 $f(X)$。由此，定义添加了 $f(X)$ 的根 $\alpha$ 的代数数域的整数环 $\mathbb{Z}[\alpha]$。
+常数约为1.923。转换成输入比特长度时，由于 $\ln N=b\ln2+\mathcal{O}(1)$，指数中的首项常数也需要换算：
 
-2. **筛选 (Sieving):**
-   在有理数域上的整数环 $\mathbb{Z}$ 和代数数域上的整数环 $\mathbb{Z}[\alpha]$ 这“两个不同的世界”中，同时寻找平滑（Smooth）数。具体来说，就是找出大量 $(a, b)$ 对，使得有理整数 $a - bm$ 和代数整数 $a - b\alpha$ 的范数都能在一个预先确定的小素数集合（因子基底: Factor Base）上被完全分解。
+$$
+\exp\!\left(\left(\left(\frac{64\ln2}{9}\right)^{1/3}+o(1)\right)b^{1/3}(\ln b)^{2/3}\right).
+$$
 
-3. **矩阵化简 (Matrix Reduction):**
-   将找到的海量平滑对表示为矩阵（巨大的稀疏矩阵）。在二元域 $\mathbb{F}_2$ 上使用 Lanczos 算法（如块 Lanczos 算法）求出解空间。这个矩阵达到数百万行 $\times$ 数百万列也是很常见的。
+这里的常数约为1.702。该估计相对于比特长度是亚指数级的：增长快于任意多项式，但慢于每个固定 $\varepsilon>0$ 对应的 $2^{\varepsilon b}$。它既不是针对所有输入的无条件最坏时间定理，也不是某个规模的实际耗时预测。
 
-4. **平方根计算 (Square Root):**
-   从矩阵的解中，分别在“两个不同的世界”里构造出巨大的平方数，最终推导出 $X^2 \equiv Y^2 \pmod N$ 的关系式。然后计算 $\gcd(X-Y, N)$ 从而得到素因子。
+作为有明确日期的实例，[2020年2月28日的RSA-250分解公告](https://caramba.loria.fr/rsa250.txt)报告使用NFS分解了一个250位十进制、829比特的整数，计算工作量约为2700核年（core-years）。这并不等于同时使用2700台计算机，也不表示实际经过了2700年。这里不把该历史实例当作当前世界纪录，或所有同样长度整数的分解成本。
 
-### 普通数域筛选法的时间复杂度：亚指数时间（Sub-exponential time）
+## 5. P与NP问题和量子计算
 
-GNFS 最大的贡献在于，它将素数分解的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)从“纯指数时间”降到了 **“亚指数时间（Sub-exponential time）”** 。
-GNFS 的渐近时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)使用被称为 L 记法（L-notation）的特殊记法，表示如下：
+### 素数判定与寻找因数
 
-$$ L_N[\gamma, c] = \exp\left( (c + o(1)) (\ln N)^\gamma (\ln \ln N)^{1-\gamma} \right) $$
+判定一个数是否为素数，与找出合数的因数是不同的问题。[AKS论文](https://annals.math.princeton.edu/2004/160-2/p12)证明了素数判定可以在无条件、确定性的多项式时间内完成。这并不意味着整数分解也有相同的结果。
 
-其中，$N$ 是要分解的数字，$\ln$ 是自然对数。
-$\gamma$ 是取值在 $0 \le \gamma \le 1$ 之间的参数，表示算法[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)的“程度”。
-- 当 $\gamma = 0$ 时，$L_N[0, c]$ 变为 $(\ln N)^c$，代表多项式时间 $\mathcal{O}(n^c)$。（高效）
-- 当 $\gamma = 1$ 时，$L_N[1, c]$ 变为 $e^{c \ln N} = N^c$，代表指数时间 $\mathcal{O}(2^{cn})$。（低效）
+P、NP、coNP基本上是回答Yes/No的判定问题的类别。素因数分解本身是输出因数的搜索问题，因此单说“素因数分解属于NP”，会使问题类型不明确。例如，给定 $N\ge2$、$2\le K<N$，可以提出这样的判定问题：是否存在因数，满足 $1<d\le K$ 且 $d\mid N$？
 
-在 GNFS 的情况下，这个参数如下所示：
+若答案为Yes，因数 $d$ 就是可以用除法验证的证据。若为No，可以给出完整的素因数分解作为证据，在多项式时间内核对乘积、各因数的素数性，以及所有素因数都大于 $K$。因此，这个判定问题同时属于NP和coNP。若搜索能在多项式时间内完成，判定也能完成；反过来，若有多项式时间的判定算法，也可以通过对 $K$ 二分查找并反复提取因数，得到素因数分解。
 
-$$ L_N\left[\frac{1}{3}, \left(\frac{64}{9}\right)^{1/3}\right] = e^{\left(\sqrt[3]{\frac{64}{9}} + o(1)\right) (\ln N)^{1/3} (\ln \ln N)^{2/3}} $$
+这种分类既没有证明NP完全性，也没有证明经典多项式时间算法不存在。若一个同时属于NP和coNP的问题，在通常的多项式时间归约下是NP完全的，就会推出NP=coNP。[P与NP问题仍未解决](https://www.claymath.org/millennium/p-vs-np/)。即使假设P≠NP，也不能仅凭这一点断言整数分解不属于P。
 
-在这个公式中，常数 $c = (64/9)^{1/3} \approx 1.923$。
-如果将其改写为输入规模 $n \approx \ln N$（与比特长度成正比），时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)大致表现如下：
+### Shor算法改变了计算模型
 
-$$ \mathcal{O}\left( \exp\left( 1.923 \cdot n^{1/3} (\ln n)^{2/3} \right) \right) $$
+[Shor算法](https://arxiv.org/abs/quant-ph/9508027)在具有足够量子计算资源的模型中，可以用关于输入比特长度的多项式步数完成整数分解。量子部分获得周期的信息，再通过测量结果和经典后处理提取因数，必要时重试。这并不是量子傅里叶变换瞬间读取了全部候选的答案。
 
-可以看出，指数部分不再依赖于 $n$ 的1次方，而是依赖于 $n^{1/3}$（$n$ 的立方根）。
-相比于 Pollard的 $\rho$ 算法的 $\mathcal{O}(2^{n/4})$ 即 $\mathcal{O}(\exp(c \cdot n^1))$，GNFS 将 $n$ 的次数降到了 $1/3$。
-这意味着，虽然还没有达到多项式时间（$\gamma=0$），但其计算量增长速度要比纯指数时间（$\gamma=1$）缓慢得多。这就是它被称为“亚指数时间”的原因。
-
----
-
-# 现代密码的极限与量子计算机
-
-正如我们迄今所见，人类汇集数学智慧，将算法从试除法进化到 GNFS，不断挑战着素数分解的壁垒。然而，即使有了 GNFS，对于经典计算机而言，素数分解仍然无法在“多项式时间”内被解决。
-
-## [P vs NP](https://kenji.blog/zh-cn/p/p-vs-np-problem/) 问题与素数分解的地位
-
-计算机科学中最大的未解问题是“P = NP 猜想”。
-素数分解问题属于 NP（只要给出答案就能在多项式时间内验证其正确性的问题类别），但尚未被证明是 [NP完全](https://kenji.blog/zh-cn/p/p-vs-np-problem/)（NP 中最难的问题类别）。
-此外，它是否属于 P（能在多项式时间内求解的问题类别，即是否存在多项式时间算法）也还是个未知数。
-
-许多研究人员猜测，素数分解属于既不是 P 也不是 NP完全 的中间类别（NP-intermediate）。如果在经典计算机上发现了能够在多项式时间（例如 $\mathcal{O}(n^3)$ 等）内解决素数分解的算法，那将成为令全球密码系统崩溃的大事件，但到目前为止，尚未发现此类算法。据估计，要破解2048比特的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密，即使经典计算机的性能提升遵循[摩尔定律](/zh-cn/p/business-moores-law/)，所需的时间也会比宇宙的寿命还要长。
-
-## 量子计算机这位“游戏改变者”：Shor算法
-
-虽然 RSA 加密在经典计算机面前坚如磐石，但当基于完全不同原理运行的“量子计算机”投入实用时，情况将发生彻底改变。
-1994年彼得·秀尔（Peter Shor）提出的 **“Shor算法（Shor's algorithm）” ** 利用量子傅里叶变换，居然能在 ** 多项式时间 $\mathcal{O}(n^3)$**（更严格地说，量子门数量级别为 $\mathcal{O}(n^2 \log n \log \log n)$ 左右）内解决素数分解问题。
-
-让我们通过以下的 Mermaid 图表来确认经典算法与量子算法在时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)上的差异。
+理论步数不能直接决定真实硬件要用“几小时”还是“几天”。这类估计需要给出量子门、纠错、算术电路、可用量子比特等条件。下图最后一条箭头表示计算模型改变，并不是经典计算机极限的证明。
 
 ```mermaid
 graph LR
-    classDef classical fill:#f9f871,stroke:#333,stroke-width:2px;
-    classDef quantum fill:#00c9a7,stroke:#333,stroke-width:2px;
-
-    subgraph "Classical Computers (经典计算机)"
-        C1["试除法: O(2^(n/2))"]:::classical
-        C2["GNFS: 亚指数时间 L_n(1/3)"]:::classical
-    end
-
-    subgraph "Quantum Computers (量子计算机)"
-        Q1["Shor算法: O(n^3) 多项式时间"]:::quantum
-    end
-
-    C1 --> C2
-    C2 -. Limit of Classical Physics (经典物理的极限) .-> Q1
+    Trial["试除法"] -->|不同的经典算法| GNFS["一般数域筛法"]
+    GNFS -->|改变计算模型| Shor["Shor：量子模型中的多项式步数"]
 ```
 
-在 Shor 算法中，经典算法里的瓶颈——“寻找周期”的过程，通过利用量子纠缠和量子叠加的“量子傅里叶变换（QFT）”，能够被并行且瞬间计算出来。
-一旦其能够在实用规模（噪声低且具备足够数量的逻辑量子比特）的量子计算机上运行，目前被认为是安全的2048比特 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) 加密，可能在数小时到数天内就会被完全破解。
+为这类未来攻击做准备，是后量子密码（PQC）的动机之一。正如[RFC 9794](https://www.rfc-editor.org/rfc/rfc9794.html)所说明的，PQC指被设计为能够抵抗拥有量子计算机的攻击者的密码，并不保证绝对无法破解。仍然需要评估数学假设以及实现和运用方式。
 
-为了应对这一威胁，目前世界各地的密码学家以及美国国家标准与技术研究院（NIST），正马不停蹄地推进“抗量子计算密码（Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy: PQC）”的标准化工作，这种密码即使是量子计算机也难以破解。基于格的密码学（[Lattice-based cryptography](/zh-cn/p/lattice-based-cryptography-math-intuition/)）等就是其中的代表，它们的安全性建立在与素数分解问题完全不同的数学困难性（例如最短向量问题等）之上。
+## 6. 总结
 
----
+比较整数分解的复杂度，首先要区分整数的值 $N$ 与输入比特长度 $b$、基本操作次数与比特成本、最坏时间与期望时间。试除法、费马法和rho算法利用不同的结构，而二次筛法与GNFS从大量关系中构造平方同余式。
 
-# 总结
+密码安全性不能由单个上界或整数看起来很大来判断。应综合已知算法、输入生成方式、攻击模型和实现。对于量子计算的理论结果，也要明确哪些已经证明，哪些依赖假设或资源估计，才能形成准确的理解。
 
-本文从时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)（大O表示法）的基础开始，深入探讨并解析了素数分解算法的演进及其数学极限。
+### 参考资料
 
-* **大O($\mathcal{O}$)表示法** 是衡量计算步骤数随输入规模 $n$ 增加而增长的重要指标，在多项式时间与指数时间之间，存在着在实际应用中难以逾越的巨大鸿沟。
-* **试除法 ** 和 **Pollard的 $\rho$ 算法** 属于纯“指数时间”算法，对极大的数字无能为力。
-* 目前最快的经典算法 **[普通数域筛选法](/zh-cn/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)** ，运用了高级的代数数论，实现了“亚指数时间”，但它仍未达到多项式时间，对于巨大数字的素数分解仍需要天文数字般的时间。
-* 正是基于这种 **“（强烈猜测）不存在能以多项式时间求解的经典算法”** 的事实，保障了 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) 加密的安全性，支撑了现代数字社会。
-* 然而，随着 **量子计算机和 Shor算法** 的问世，理论上在多项式时间内进行素数分解成为了可能，密码技术正即将迈向下一个时代（抗量子计算密码）。
-
-算法的时间[复杂度](/zh-cn/p/time-space-complexity-big-o-notation-examples/)这种抽象的概念，实际上直接关系到我们日常生活的安全，这正是信息科学与数学最迷人、最激动人心的一面。敬请持续关注未来的技术发展，特别是量子计算机的研发动态以及密码技术的演变。
-
-
+- [NIST DADS：big-O notation](https://xlinux.nist.gov/dads/HTML/bigOnotation.html)
+- [Handbook of Applied Cryptography，第2章：复杂度定义](https://cacr.uwaterloo.ca/hac/about/chap2.pdf)
+- [第3章：整数分解与RSA问题](https://cacr.uwaterloo.ca/hac/about/chap3.pdf)（1996年的资料，需与后来的分解纪录和素数判定进展区分）
+- [RFC 8017：RSA密钥与方案](https://www.rfc-editor.org/rfc/rfc8017.html)
+- [RSA-250作者公告（2020年）](https://caramba.loria.fr/rsa250.txt)
+- [Agrawal–Kayal–Saxena：PRIMES is in P](https://annals.math.princeton.edu/2004/160-2/p12)
+- [Clay Mathematics Institute：P vs NP](https://www.claymath.org/millennium/p-vs-np/)
+- [Shor：量子计算中的多项式时间因数分解与离散对数算法](https://arxiv.org/abs/quant-ph/9508027)
+- [RFC 9794：后量子密码术语](https://www.rfc-editor.org/rfc/rfc9794.html)
