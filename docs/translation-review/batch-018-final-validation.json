@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T20:32:56.047690+09:00",
+  "site": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-19-bundles-primality-ar",
+  "compiler": "WSL GCC13.3.0/C++17",
+  "tempDirectory": "C:\\Users\\kenjinote\\.codex\\tmp\\kenji-batch018-17blxm9f",
+  "scope": "Only explicitly selected languages; not an automated prose review or review-date recorder.",
+  "counts": {
+    "sieveRange": [
+      0,
+      50000
+    ],
+    "sieveCasesPerAlgorithm": 50001,
+    "extraSignedTrialCases": 4,
+    "largeAndBoundaryMillerRabinCases": 742,
+    "multiplicationCases": 262,
+    "powerCases": 262,
+    "zeroModulusCases": 3
+  },
+  "files": [
+    {
+      "language": "ja",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.md",
+      "hash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.en.md",
+      "hash": "0521f3d60016a0459e95afc24cb3ddc604df7d9e4e41c80760ea0aaf63356d81",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.zh-cn.md",
+      "hash": "ac60345e16a9db78b7553e38251c26d1c24e38a1f770a2573a34277f7fb7853b",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 40,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.zh-tw.md",
+      "hash": "188d36a1b11d16aa6ecfab1212b1ba515228b1dd4afdf0a8d5616d0cac3898ae",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.es.md",
+      "hash": "1278037ddc07e2b0eafd9e307863e5d58af6eaf58379da8e44ddedb5608fdae5",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.ko.md",
+      "hash": "a0178e4e4fc7e25d8e992a2f998d3a02d1c105bccc959c4620e210cb1f2deab0",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.pt.md",
+      "hash": "c83b65701454ba8cb282f48071b56f35fe308d215f0821270338eac1292a9287",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.fr.md",
+      "hash": "f09689b252fe38c161fb2b586ecc72a0b6561b968553f1606233517bf65ba378",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "de",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.de.md",
+      "hash": "9e86e42303773eea3126ed32605688bcab60fe6028ead53caeaf588384d50d5b",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.id.md",
+      "hash": "aae86cace1ef33f4bc0712f98601341b25475b1968d65427f3f04310ab3792fd",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.hi.md",
+      "hash": "b1bc0367812e8109be7511d0f2c94f80b83eccf58c42c5f7decac06d437c35d1",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.ru.md",
+      "hash": "4c202d14c7292eff739a0e481c30c37bccf353fb47611ee47040102e9ac67d8f",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.ar.md",
+      "hash": "b844606d1e29e90476b4c49968816e43a28396a7b3662c5ee110753ddb899a25",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    }
+  ],
+  "allPassed": true,
+  "limitations": [
+    "Finite tests, not an independent exhaustive64bit base-set proof.",
+    "Large-number reference uses independent Python pow and published first12prime-base bound.",
+    "No timing, native-language, visual-browser, constant-time or cryptographic-library certification."
+  ]
+}

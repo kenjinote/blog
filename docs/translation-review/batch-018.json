@@ -770,6 +770,76 @@
         }
       ],
       "validation": "docs/translation-review/batch-018-ru-validation.json"
+    },
+    "post/cppで実装する高速な素数判定アルゴリズム/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/cppで実装する高速な素数判定アルゴリズム/index.md",
+      "sourceHash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+      "translationHash": "b844606d1e29e90476b4c49968816e43a28396a7b3662c5ee110753ddb899a25",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Arabic metadata/body in three bounded outputs, revised against corrected Japanese and reviewed English, then independently reread complete revised metadata/body in two bounded outputs with final small exponentiation/signedness/punctuation cleanup. Compared introduction/seven sections,3row base table,3C++blocks,2diagrams and7external reference targets. All12translations of this article now read and reviewed; not a full-site review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished اختبار الأولية/التحليل إلى عوامل/توليد الأعداد الأولية, أولي/مؤلف/ليس أوليًا, قيم الأساس/الأس/الرفع إلى قوة, اختبار/برهان الأولية, independentuniform choices/fixed sets, conditional error/posterior compositeness, ذو إشارة(signed)/بلا إشارة(unsigned), مقياس(modulus)/باقي القسمة and تجاوز سعة التمثيل/استثناء. Replaced ambiguous الأسس النمطية exponentiation label with explicit الرفع إلى قوة بترديد عدد and base plural with قيم الأساس; exponent is الأس. Stated direct Fermat implication rather than unhelpful المعاكس الإيجابي label, without claiming every alternative Arabic logic term invalid. Retained valid مؤلف and أولي نسبيًا, and defined0/1separately."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All4display formulas exactly match corrected source, with inline conditions/strict bounds compared. Verified Fermat561base3counterexample375, sevenintegerbase325composite, independentuniform conditional4^-k not posterior assertion, published3/4/7ranges and12prime bound>2^64, unsigned64endpoint and operation-count/bit-cost distinction. All41ArabicTeX expressions survive HTML; final all13versions total532expressions."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All3C++blocks exactly match reviewed Japanese source and separately compile without warnings under WSL GCC13.3.0/C++17. Eleven main outputs match. Final13language harnesses each101275cases pass O2 and UBSanO1: both algorithms against sieve0..50000,4extra signed trial cases,742large/boundary MRcases via independent Python pow and published12base criterion,262multiplication+262power cases and3zero-modulus exceptions. Diagrams14and4edges use نعم/لا and retain pre-loop s=1exhaustion/current-base-not-proof labels. All17repository tests pass. No timing/exhaustive64bit/constant-time/security or visualRTL certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched7unique external HTTPS targets and reviewed Arabic modern-cryptography internal link. Removed repeated unreviewed Fermat dependencies without omitting theorem/algorithm concepts. Preserved publication timestamp,slug,image,categories/tags; actual lastmod2026-10-28. Image exists. Minified Hugo19bundles, multilingual1185pages and HTTPS2163HTML/41XML passed;41ArabicTeX expressions and final532allversion expressions preserved. Publication of this Arabic revision and other remaining versions pending."
+        }
+      },
+      "summary": "Full Arabic primality review with unambiguous base/exponent/exponentiation terminology and verified unsigned arithmetic contracts.",
+      "languageSpecificFindings": "Clarified الأساس/الأس/الرفع إلى قوة and positive modulus versus remainder; direct implication replaces the confusing contrapositive label. Repaired multiplication-as-hard-operation, seven-prime claim, signed remainder statement, signed128fullrange wording and zero-base comment. Preserved مؤلف/coprimality terminology, expressed strong pseudoprime bound as satisfying MRconditions for all12bases with English gloss, and distinguished randomized acceptance from proof. No invented cryptocurrency link claim, native-speaker or visualRTL certification.",
+      "limitations": [
+        "AI, not human or native-speaker certification.",
+        "All12translations of this article reviewed; not a full-site content review.",
+        "Finite tests do not independently prove all2^64 classifications or published base-set search results.",
+        "No visual browser/RTL/KaTeX/Mermaid, cryptographic deployment or constant-time audit.",
+        "Full-siteCI and remaining publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html",
+          "scope": "Complete short extension documentation; target dependent signed/unsigned support."
+        },
+        {
+          "url": "https://eel.is/c++draft/expr.mul",
+          "scope": "Complete short multiplicative-operator section: zero modulus UB and truncation/remainder rules; reproduced signed remainder."
+        },
+        {
+          "url": "https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf",
+          "scope": "Parsed opening pages through Theorem1, including random error interpretation, not full proof or implementation sections; obsolete1980 status not reused."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap4.pdf",
+          "scope": "Scoped parsed Fermat/MR sections,4.20/4.23/4.25,Algorithm4.24,Note4.47 and historical notes, not whole chapter or current key-generation audit."
+        },
+        {
+          "url": "https://miller-rabin.appspot.com/",
+          "scope": "3/4/7base records,strictthresholds,attribution,date and base-reduction remarks. Did not reproduce underlying64bitdatabase; zero-base remark means passing that round only."
+        },
+        {
+          "url": "https://arxiv.org/html/1509.00864",
+          "scope": "Parsed introduction/Theorem1.1; first twelve-prime-base strong pseudoprime. Journal metadata2017 separately checked. Not computational-proof replication; generatedHTML2026date not used as historical date."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap14.pdf",
+          "scope": "Scoped parsed14.32/14.36/14.94 and related efficiency/precomputation conditions. OriginalMontgomery1985publisheraccess failed; scan supplied no readable output, so no full original-paper reading claim."
+        }
+      ],
+      "validation": "docs/translation-review/batch-018-final-validation.json"
     }
   },
   "stages": [
@@ -943,6 +1013,22 @@
       ],
       "casesPerOptimizedAndUbsanHarness": 101275,
       "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-10-28T20:34:04.223489+09:00",
+      "language": "ar",
+      "reviewedTranslations": 12,
+      "otherTranslationsUnreviewed": 0,
+      "validation": "docs/translation-review/batch-018-final-validation.json",
+      "texExpressions": 41,
+      "displayFormulas": 4,
+      "codeBlocks": 3,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "casesPerOptimizedAndUbsanHarness": 101275,
+      "publicationPending": true
     }
   ],
   "publicationDispatch": {
@@ -962,5 +1048,63 @@
     "priorRun": 40674107915,
     "priorRunObservedStatus": "in_progress",
     "concurrency": "pages cancel-in-progress:false; prior workflow retained."
-  }
+  },
+  "finalAssembly": {
+    "checkedAt": "2026-10-28T20:34:04.223489+09:00",
+    "reviewedTranslations": 12,
+    "sourceHash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+    "validation": "docs/translation-review/batch-018-final-validation.json",
+    "versions": 13,
+    "texExpressions": 532,
+    "codeBlocksPerVersion": 3,
+    "displayFormulasPerVersion": 4,
+    "diagramEdgesPerVersion": [
+      14,
+      4
+    ],
+    "casesPerVersionPerOptimizedAndUbsanHarness": 101275,
+    "sampleOutputsPerVersion": 11,
+    "repositoryTests": 17,
+    "publicationPending": true,
+    "reviewEvidenceOverrides": {
+      "post/cppで実装する高速な素数判定アルゴリズム/index.zh-cn.md": "docs/translation-review/batch-018-cn-revision.json"
+    },
+    "limitations": [
+      "AI, not human/native-speaker certification.",
+      "Finite tests, not independent exhaustive64bit base-set proof.",
+      "No timing, visualbrowser/RTL, cryptographic-library or constant-time certification."
+    ]
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-10-28T20:32:31.173727+09:00",
+      "ciRun": 40676526926,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40676526926",
+      "deployedCommit": "8979a17c08c18a00ac2833c79d436cabd7b88bf5",
+      "ciConclusion": "success",
+      "proof": "docs/translation-review/publication-018-en-cn-tw.json",
+      "pages": 238,
+      "passed": 238,
+      "reviewedTranslationsPublished": 219,
+      "japaneseSources": 19,
+      "primalityLanguagesPublished": [
+        "en",
+        "zh-cn",
+        "zh-tw"
+      ],
+      "otherPrimalityLanguagesPublicationPending": [
+        "es",
+        "ko",
+        "pt",
+        "fr",
+        "de",
+        "id",
+        "hi",
+        "ru",
+        "ar"
+      ],
+      "texExpressions": 5666,
+      "scope": "Batches001-017 plus first3primality translations/JA. Exact updated content/HTTP/canonical/lang/expected14hreflang and13sidebar article URLs, exact decoded TeX across69reviewedmathversions. Not full-site content/native-language/visual/security certification."
+    }
+  ]
 }
