@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T19:45:18.055483+09:00",
+  "article": "post/cppで実装する高速な素数判定アルゴリズム",
+  "oldHashes": {
+    "index.ar.md": "00d119cb469eb954656fa1b290268aed3c47d58a37122ffa3fc321cc09acdd22",
+    "index.de.md": "fa256decd67e3883952ef5ccc53f4ed6412839ed78f13ade0a87534b0dc6c25a",
+    "index.en.md": "fe9e73178da9aafdb1c9ea92d6cf4909196ab50232961612c241ca1a966a90e6",
+    "index.es.md": "1710fe089b10c1643f5484e738aeb2d7fdd501fdcd96524ecbd9787f7578e1ca",
+    "index.fr.md": "db42427a437df3b010f628cfeeb002be08737e71cadfd99bbf109c3e471fb338",
+    "index.hi.md": "ff2919308ec37de45ec318c17d7100425f373f9ed75211d59e4ae06a0682dc02",
+    "index.id.md": "47f1829b8ac1d656863c9e25a30b4bb661d3115870c1f39da8408ff36b19751c",
+    "index.ko.md": "772ba3d993085ced48f3ac7a733fd5734636a98f8166720ecd14b292618cec73",
+    "index.md": "ff3726832ba8f6525f5690751822738ed21bbf0a60854faebdb8d65e39daa5fb",
+    "index.pt.md": "f946f1ede362816e7637fe059512de355c71c0e611d8cd555363547ad29a1d61",
+    "index.ru.md": "1a2daea41706b0a0413487ae8d645710874a9c7bc9a6a948647986437f1ae13a",
+    "index.zh-cn.md": "cfd43c2cb44ecf7ddb64cb480bdb831e605cac128ae20173edcc638e7e558459",
+    "index.zh-tw.md": "d95ea89b04ceb76f2816abd0189f84bddb36436e194c986415ce5d4e161bdd07"
+  },
+  "readScope": [
+    "Complete original Japanese metadata/body in three bounded outputs.",
+    "Complete original English metadata/body in three bounded outputs.",
+    "Other11translations not read or reviewed."
+  ],
+  "compiler": "WSL g++13.3.0 Ubuntu24.04 C++17; original main/helper O1; bound-expression UBSan O0",
+  "tempDirectory": "C:\\Users\\kenjinote\\.codex\\tmp\\kenji-batch018-original-mmgafcc0",
+  "originalCodeBlocks": 3,
+  "originalMain": {
+    "exit": 0,
+    "stdout": "1000000007 is Prime\n998244353 is Prime\n1000000000000000003 is Prime\n1000000000000000007 is Composite\n561 is Composite\n18446744073709551557 is Prime",
+    "stderr": ""
+  },
+  "originalSignedModPowAndCppRemainder": {
+    "exit": 0,
+    "stdout": "1 -3 -1",
+    "stderr": ""
+  },
+  "originalZeroModulusUbsan": {
+    "exit": 1,
+    "stdout": "",
+    "stderr": "/mnt/c/Users/kenjinote/.codex/tmp/kenji-batch018-original-mmgafcc0/original-zero.cpp:5:7: runtime error: division by zero"
+  },
+  "isolatedOriginalTrialBoundExpressionUbsan": {
+    "exit": 1,
+    "stdout": "",
+    "stderr": "/mnt/c/Users/kenjinote/.codex/tmp/kenji-batch018-original-mmgafcc0/original-bound-expression.cpp:3:109: runtime error: signed integer overflow: 3037000501 * 3037000501 cannot be represented in type 'long long int'"
+  },
+  "boundFirstAttempt": {
+    "result": {
+      "exit": 0,
+      "stdout": "1",
+      "stderr": ""
+    },
+    "explanation": "O1 optimized the i*i<=LLONG_MAX expression to true, so no multiplication remained for UBSan; reran same isolated expression with O0. First assertion failure was not a clean bill of health."
+  },
+  "instrumentedOriginalModularMultiplicationCount": {
+    "exit": 0,
+    "stdout": "1 852",
+    "stderr": ""
+  },
+  "limitations": [
+    "Original full trial division was not run at LLONG_MAX; UBSan evaluates its same i*i bound expression at the overflowing odd candidate.",
+    "Instrumentation adds only a call counter to copied full MR code; not a timing benchmark.",
+    "No translations marked reviewed, no source edits yet.",
+    "No full2^64 exhaustive search, security or native-language certification."
+  ],
+  "findings": [
+    "RSA prose confuses difficulty of multiplication with recovering factors.",
+    "1 is not composite; reject n<2 before classification.",
+    "Trial bound signed i*i can overflow; use i<=n/i.",
+    "Standalone signed helper lacks modulus/exponent/base domain checks, returns1 for exponent0modulus1, negative residues for negative bases, division-by-zero UB.",
+    "C++ signed -1%7 is -1, while least nonnegative residue is6.",
+    "Seven bases are integers, not seven primes. Published fixed ranges must be separated from randomized independent uniform bases.",
+    "a==0 comment falsely says not prime, even though skipping this base is intentional.",
+    "Unsigned128 is suitable for uint64 products; signed128 cannot represent all such products.",
+    "klogN modular operations are not448total basic operations or universal microseconds/millionfold speedup.",
+    "64bit upper endpoint is N<2^64, not N<=2^64.",
+    "Montgomery also needs additions/subtractions/reduction and conversion/setup; no guaranteed2to3speedup."
+  ]
+}

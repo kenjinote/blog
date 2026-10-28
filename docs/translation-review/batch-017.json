@@ -1357,6 +1357,31 @@
       "priorRun": 40612369511,
       "priorRunObservedStatus": "in_progress",
       "concurrency": "pages cancel-in-progress:false; prior workflow retained."
+    },
+    {
+      "commit": "95e257f736c11457dc7eb0ecb58f64a84b0c2eed",
+      "ciRun": 40674107915,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40674107915",
+      "observedStatus": "in_progress",
+      "observedStep": "Build with Hugo",
+      "reviewedLanguages": [
+        "en",
+        "zh-cn",
+        "zh-tw",
+        "es",
+        "ko",
+        "pt",
+        "fr",
+        "de",
+        "id",
+        "hi",
+        "ru",
+        "ar"
+      ],
+      "publicationPending": true,
+      "plannedPublicPages": 234,
+      "otherTranslationsUnreviewed": 0,
+      "concurrency": "Normal Pages workflow; no cancellation or restart."
     }
   ],
   "publicationCheckpoints": [
