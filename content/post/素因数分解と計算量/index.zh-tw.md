@@ -1,7 +1,8 @@
 ---
-title: '質因數分解的極限與時間複雜度Big O標記解說'
+title: "質因數分解的極限與時間複雜度Big O標記解說"
 slug: "prime-factorization-limits-big-o-notation"
 date: "2026-09-11T23:00:00+09:00"
+lastmod: "2026-10-28"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,281 +10,202 @@ categories: ["mathematics", "computer-science", "cryptography"]
 tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 ---
 
-# 前言：為何質因數分解如此「困難」？
+## 1. 前言：整數分解的困難在哪裡
 
-在現代的網際網路社會中，我們能夠安心地享受線上購物或傳輸機密資訊，都是因為有「密碼學」的存在。而支撐著這些加密技術（特別是廣泛使用的 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密等）安全性的核心，正是基於「對極大整數進行質因數分解非常困難」這個數學事實。
+把小整數分解成質數的乘積，是學校裡常見的計算。然而，從大質數的乘積找回因數，在古典電腦上可能需要龐大的計算資源。這種不對稱性是[RSA等公開金鑰密碼](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)的背景之一。
 
-乍看之下，質因數分解似乎只是「把數字分解成質數相乘」的簡單作業，但當位數變得極大時，這就變成了一個即使讓世界上最快的超級電腦運作幾十年、甚至幾百年也解不開的超級難題。我們平時在學校學到的質因數分解，充其量只是用 $2$、$3$、$5$ 去除的簡單作業，但當面對高達數百位數的未知質數相乘的結果時，這種簡單的方法將徹底失效。
+這並不表示每個大整數都難以分解，也不表示人們已經證明任何古典演算法都不可能快速完成分解。偶數等含有小因數的巨大整數可能很容易處理。下文各演算法的複雜度，也不是整數分解問題本身的下界。密碼安全性需要針對正確產生的金鑰，以及假定攻擊者可用的資源進行評估。
 
-這篇文章將從資訊科學、計算機科學的基礎「時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)（[Big O](https://kenji.blog/zh-tw/p/time-space-complexity-big-o-notation-examples/) 標記：$\mathcal{O}$ 標記）」的概念出發，詳細且具有數學嚴謹性地解說各種用於解開質因數分解的演算法（試除法、Pollard's $\rho$ 演算法、普通數域篩法等）究竟需要花費多少計算時間。接著，我們將徹底剖析為何在古典電腦上對巨大數字進行質因數分解幾乎是不可能的，而這又是如何保護我們的資訊與隱私，甚至量子電腦又將如何顛覆這個前提。
+本文先說明Big O標記和輸入規模，再比較試除法、費馬法、Pollard的rho演算法、二次篩法和一般數體篩法，最後討論P與NP問題及量子計算。閱讀時，請區分複雜度估計、安全性證明和實際執行秒數。
 
----
+## 2. 複雜度與Big O標記
 
-# 時間複雜度與 Big O ($\mathcal{O}$) 標記的嚴格定義
+實際耗時受CPU、記憶體、實作和並行化等條件影響。討論複雜度時，需要明確定義輸入規模，以及什麼算作一次基本操作。把多倍精度整數乘法算作一次操作，與計算其內部的位元操作，含義並不相同。
 
-在評估演算法的效能或效率時，單純測量「程式的執行時間（秒數）」是不夠的。因為執行時間在很大程度上取決於所使用的電腦效能（CPU 時脈速度、記憶體速度等）、程式語言以及編譯器的最佳化程度。
+### 漸近上界
 
-因此，作為不依賴硬體或環境的普遍評估指標，我們使用的是 **時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)（Time Complexity） ** ，而用來表現它的記法就是 **Big O 標記（Big-O Notation）** 。Big O 標記是一種數學記號，用來表示當輸入資料的大小 $N$ 變得非常大時，演算法的執行時間（或執行步驟數）相對於 $N$ 會如何增加（漸近增長率）。
+對於在充分大的輸入上非負的函數，$f(n)=\mathcal{O}(g(n))$ 表示：
 
-## 漸近記法的數學定義
+$$
+\exists c>0,\ \exists n_0,\ \forall n\ge n_0:\quad 0\le f(n)\le c\,g(n).
+$$
 
-在計算機科學中，對於函數 $f(n)$ 與 $g(n)$，$f(n) = \mathcal{O}(g(n))$ 的數學定義如下：
+常數 $c$ 和 $n_0$ 不依賴輸入 $n$。這定義的是上界，本身不代表「最壞情況」。還必須說明被估計的函數是最壞時間、平均時間，還是隨機演算法的期望時間。
 
-$$ \exists c > 0, \exists n_0 > 0 \text{ s.t. } \forall n \ge n_0, 0 \le f(n) \le c \cdot g(n) $$
+上下界具有相同數量級時用 $\Theta$，下界用 $\Omega$。例如，$f(n)=1$ 也屬於 $\mathcal{O}(2^n)$。因此，僅憑這個上界，不能斷言輸入增加1時耗時恰好加倍。這種記法也不直接表達實測時間的比值。[NIST的定義](https://xlinux.nist.gov/dads/HTML/bigOnotation.html)同樣區分上界和緊確界。
 
-這意味著：「當輸入大小 $n$ 足夠大（$n \ge n_0$）時，函數 $f(n)$ 的增長會被某個常數倍的 $g(n)$ 從上方限制住」。換句話說，它表示了演算法的處理時間即使在最壞情況下，也會被控制在 $g(n)$ 的常數倍以內，即所謂的「上界（Upper Bound）」。
+### 常見的成長形式
 
-同樣地，表示下界的記法有 $\Omega$（Big Omega），而上界與下界一致時的記法有 $\Theta$（Big Theta）。不過一般在討論演算法的最壞時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)時，最常使用的是 $\mathcal{O}$ 標記。
+下表以 $n$ 表示資料元素的個數，計算比較、元素存取等基本操作。
 
-## 代表性的時間複雜度等級
+| 數量級 | 例子和條件 |
+| --- | --- |
+| $\mathcal{O}(1)$ | 在隨機存取模型中，依索引存取陣列元素 |
+| $\mathcal{O}(\log n)$ | 在已排序陣列中二分搜尋的比較次數 |
+| $\mathcal{O}(n)$ | 線性搜尋在最壞情況下的比較次數 |
+| $\mathcal{O}(n\log n)$ | 合併排序的最壞情況，或適當假設下快速排序的平均情況 |
+| $\mathcal{O}(n^2)$ | 例如插入排序在最壞情況下的比較次數 |
+| $\mathcal{O}(2^n)$ | $n$ 個元素的所有子集合的數量；每個候選的處理成本另計 |
+| $\mathcal{O}(n!)$ | $n$ 個不同元素的所有排列的數量；每個候選的處理成本另計 |
 
-時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)有幾個代表性的等級。讓我們從執行時間最短（效率最高）的開始看起：
-
-1. **$\mathcal{O}(1)$ : 常數時間（Constant time）**
-   無論輸入大小 $N$ 變得多大，執行時間都不會改變的演算法。例如，透過指定陣列索引來取得值的操作，或是雜湊表中的搜尋（理想情況下）等。
-
-2. **$\mathcal{O}(\log N)$ : 對數時間（Logarithmic time）**
-   即使輸入大小加倍，執行時間也只增加常數，是非常高效率的演算法。從已排序的陣列中尋找目標值的「二分搜尋（[Binary Search](https://kenji.blog/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/)）」是其代表例子。即使資料量高達 10 億，也只需要大約 30 次比較就能找到目標資料。
-
-3. **$\mathcal{O}(N)$ : 線性時間（Linear time）**
-   執行時間與輸入大小成正比增加。資料變成 10 倍，時間也會變成 10 倍。依序檢查陣列所有元素的「線性搜尋」等皆屬此類。
-
-4. **$\mathcal{O}(N \log N)$ : 準線性時間（Linearithmic time）**
-   比 $\mathcal{O}(N)$ 稍慢一點，但仍屬於高效率的範圍。合併排序（Merge Sort）和快速排序（Quick Sort 的平均[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)）等許多實用的高速排序演算法都具有這個時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)。
-
-5. **$\mathcal{O}(N^2)$ : 多項式時間 / 平方時間（Quadratic time）**
-   當輸入大小變為 2 倍時，執行時間會變為 4 倍；變為 10 倍時，時間變為 100 倍。使用雙重迴圈的簡單處理、氣泡排序、插入排序等皆屬此類。當資料量超過幾萬時，處理就會花費相當長的時間。這些以 $\mathcal{O}(N^k)$ 形式表示的[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)統稱為 **多項式時間（Polynomial time）** 。
-
-6. **$\mathcal{O}(2^N)$ : 指數時間（Exponential time）**
-   輸入大小只要增加 1，執行時間就會加倍。效率極差，當 $N$ 達到 40 或 50 時，即使是最頂尖的電腦也無法在現實時間內完成計算。背包問題的窮舉搜尋、旅行推銷員問題的簡單解法等皆屬此類。
-
-7. **$\mathcal{O}(N!)$ : 階乘時間（Factorial time）**
-   比 $\mathcal{O}(2^N)$ 增長得更為迅速。例如嘗試旅行推銷員問題中所有排列組合的演算法。
-
-以下的 Mermaid 示意圖粗略地比較了各種時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)的執行時間（步驟數）相對於 $N$ 增加時的增長率：
+對於固定常數 $k$，時間能被 $\mathcal{O}(n^k)$ 限制時，稱為多項式時間。較大的指數或常數仍可能使它不實用；指數級方法也可能適合小規模輸入。下圖整理的是相對於輸入位元長度的代表性估計，不是困難性證明或實際耗時曲線。
 
 ```mermaid
 graph TD
-    classDef poly fill:#a8e6cf,stroke:#333,stroke-width:2px;
-    classDef subexp fill:#ffd3b6,stroke:#333,stroke-width:2px;
-    classDef exp fill:#ffaaa5,stroke:#333,stroke-width:2px;
-
-    Poly["多項式時間 O(n^k)"]:::poly
-    SubExp["次指數時間 L_n"]:::subexp
-    Exp["指數時間 O(2^n)"]:::exp
-
-    GNFS["普通數域篩法 (GNFS)"]:::subexp
-    Pollard["Pollard's rho 演算法"]:::exp
-    Trial["試除法"]:::exp
-
-    Easy["可行 (Feasible)"]:::poly
-    Hard["困難 (Intractable)"]:::exp
-
-    Poly --- Easy
-    Exp --- Hard
-
-    Trial --> Exp
-    Pollard --> Exp
-    GNFS --> SubExp
-    
-    Poly -.-> SubExp
-    SubExp -.-> Exp
+    Trial["試除法：整數除法次數"] --> Exp["相對於位元長度的指數級估計"]
+    Rho["Pollard rho：啟發式期望乘法次數"] --> Exp
+    GNFS["一般數體篩法：啟發式估計"] --> SubExp["相對於位元長度的次指數級估計"]
 ```
 
-相信您現在已經了解時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)的差異在選擇演算法時有多麼重要了。在密碼學技術中，正是刻意利用這種需要「指數時間」或「接近指數時間」的問題（也就是無法輕易解開的問題）來確保安全性。
+## 3. RSA：整數的值與輸入長度
 
----
+以 $N\ge2$ 表示待分解的整數，以 $b$ 表示其二進位表示的長度。這與前一張表的元素個數 $n$ 不同。
 
-# [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密的機制與質因數分解問題
+$$
+b=\lfloor\log_2 N\rfloor+1,\qquad 2^{b-1}\le N<2^b.
+$$
 
-為了理解為何質因數分解如此重要，讓我們先簡單回顧一下 RSA 加密的機制。RSA 加密是 1977 年由羅納德·李維斯特（Ronald Rivest）、阿迪·薩莫爾（Adi Shamir）和倫納德·阿德曼（Leonard Adleman）三人所開發的公開金鑰加密系統。
+例如，$15$ 的位元長度是4，但 $2^4=16$，並不是 $15$。關於數值 $N$ 的多項式界，可能是關於輸入長度 $b$ 的指數級界。大整數運算本身的成本也會隨 $b$ 改變。
 
-### 金鑰生成的步驟
-1. 隨機選擇兩個極大的質數 $p$ 與 $q$。（例如長度各為 1024 位元）
-2. 將它們相乘計算出 $N = p \times q$。這個 $N$ 將作為公鑰的一部分向全世界公開。（長度會是 2048 位元）
-3. 計算尤拉商數函數 $\phi(N) = (p-1)(q-1)$。
-4. 選擇與 $\phi(N)$ 互質的整數 $e$，這也作為公鑰。
-5. 計算出滿足 $e \times d \equiv 1 \pmod{\phi(N)}$ 的 $d$（私鑰）。
+在基本的雙質數RSA中，以不同的奇質數 $p,q$ 構造 $N=pq$。若兩個質數各有1024位元，乘積可能是2047位元或2048位元，並不總是2048位元。公開金鑰包含 $N,e$，私密金鑰包含私密指數 $d$ 等資訊。例如，以下是選取 $d$ 的一組充分條件，其中 $\varphi$ 是尤拉函數：
 
-這裡極為重要的一點是： **「為了破解密碼，必須要有私鑰 $d$；而要計算出 $d$，就必須知道 $\phi(N)$；而要計算出 $\phi(N)$，就必須將 $N$ 質因數分解成 $p$ 與 $q$」** 。
+$$
+\varphi(N)=(p-1)(q-1),\quad 1<e<\varphi(N),\quad
+\gcd(e,\varphi(N))=1,\quad ed\equiv1\pmod{\varphi(N)}.
+$$
 
-巨大質數的乘法 $p \times q$ 一瞬間就能完成，但要從結果 $N$ 中找出原本的 $p$ 與 $q$（即質因數分解）卻是絕望般地困難。這種「單向函數（One-way function）」的特性，正是 RSA 加密的心臟地帶。
+[RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html)更一般地使用 $\lambda(N)=\operatorname{lcm}(p-1,q-1)$ 規定金鑰。知道因數後，可以計算私密指數。然而，RSA求逆問題與整數分解一般是否等價，並沒有得到證明；也不是所有針對RSA的攻擊都需要分解模數。
 
-這裡有一個需要注意且非常重要的觀念。在質因數分解問題中，「輸入大小 $n$」並不是數值 $N$ 本身的大小，而是「用來表示數值 $N$ 所需的位元數」。
-若將整數 $N$ 以二進制表示時的位數設為 $n$，則 $n \approx \log_2 N$。也就是說，演算法的時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)不應相對於 $N$，而是必須相對於 $n = \log_2 N$（或者 $\ln N$）來進行評估。
+僅有整數模冪運算，並不構成安全的加密方案。實際使用還需要包含OAEP的加密方案或PSS等簽章方案，並考慮金鑰產生、實作和整個協定。不能把乘法與找回因數之間的不對稱性，當作無條件的安全性證明。
 
----
+## 4. 五種整數分解演算法
 
-# 質因數分解演算法的歷史與時間複雜度
+### 4.1 試除法
 
-接下來，我們將針對如何將給定的合成數 $N$ 分解為質數乘積的各種演算法，詳細解說它們的機制與時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)。這同時也是人類如何挑戰質因數分解極限的歷史。
+合數 $N$ 至少有一個不超過 $\sqrt N$ 的質因數。因此，從小的候選因數一直試到 $\lfloor\sqrt N\rfloor$，就能找到因數。這裡不是說「最大的質因數不超過平方根」：例如，$15=3\cdot5$ 的最大質因數是 $5$，大於 $\sqrt{15}$。
 
-## 1. 試除法（Trial Division）
+對於逐一測試所有整數候選的簡單方法，最壞情況下的除法次數可估計為 $\mathcal{O}(\sqrt N)$。由位元長度的不等式，也可得到 $\mathcal{O}(2^{b/2})$ 的上界。這以一次多倍精度除法為單位計數，並非位元操作的總次數。如果存在小因數，就能提早結束。
 
-最直觀且原始的演算法就是「試除法」。這是一種從 $2$ 開始，依序嘗試用質數去除非 $N$ 的方法。
+### 4.2 費馬法：因數間的距離很重要
 
-### 演算法概要
-利用「$N$ 的質因數最大也不會超過 $\sqrt{N}$」的特性（因為 $\sqrt{N} \times \sqrt{N} = N$，如果有更大的質因數，必然會與另一個小於等於 $\sqrt{N}$ 的質因數成對）。
-因此，我們只需要確認是否能被 $2, 3, 5, 7, \dots, \lfloor\sqrt{N}\rfloor$ 之間的所有數（或質數）整除即可。
+對於奇合數，尋找平方差：
 
-### 時間複雜度評估
-在最壞的情況下（例如 $N$ 是兩個巨大質數的乘積），需要進行直到 $\sqrt{N}$ 的除法。
-如前所述，輸入大小 $n$ 為 $n = \log_2 N$，因此可以表示為 $N = 2^n$。
-因此，計算步驟數最大會正比於：
+$$
+N=x^2-y^2=(x-y)(x+y).
+$$
 
-$$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
+從 $x=\lceil\sqrt N\rceil$ 開始遞增，檢查 $x^2-N$ 是否是完全平方數。若 $N=pq$ 且 $p\le q$ 均為奇數，則 $x=(p+q)/2$、$y=(q-p)/2$ 是一組解。檢查到這組解為止的候選數量如下；如果更早遇到另一組解，就可以提早結束。
 
-這意味著，相對於位元長度 $n$，時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)為 **$\mathcal{O}(2^{n/2})$** 。也就是說，試除法是相對於 $n$ 的 **「純指數時間（Exponential time）演算法」** 。
-位數每增加 1 位元（數值變為 2 倍），計算時間就會變為大約 $\sqrt{2} \approx 1.414$ 倍。如果 $N$ 是一個超過 1024 位元（十進位約 300 位數）的數字，就算花上等同於宇宙年齡的時間也算不完。
+$$
+\frac{p+q}{2}-\lceil\sqrt N\rceil+1.
+$$
 
-## 2. 費馬質因數分解法（[Fermat](https://kenji.blog/zh-tw/p/fermat/)'s Factorization Method）
+對於因數接近的 $1009\cdot1013$，第一個候選就能成功。相較之下，$3\cdot104729=314187$ 需要檢查51806個候選。特別是固定 $p=3$、增大質數 $q$ 時，候選數量為 $\Theta(N)$。因此，不能一概把費馬法歸為與試除法相同的平方根數量級。偶數應先除去因數2。
 
-這是由 17 世紀數學家皮耶·德·費馬所構想的方法。當給定一個奇數的合成數 $N$ 時，試圖將 $N$ 表現為兩個平方數的差。
+### 4.3 Pollard的rho演算法
 
-$$ N = x^2 - y^2 = (x - y)(x + y) $$
+對 $x\mapsto x^2+c\pmod N$ 等函數反覆迭代，計算數列中兩個位置的差與 $N$ 的最大公因數。如果數列在未知質因數 $p$ 的模意義下發生碰撞，差值就是 $p$ 的倍數，有時可以由此找出因數。Floyd循環偵測法只保留常數個餘數值，但每個值需要 $\mathcal{O}(b)$ 位元，因此並不是以位元計量的常數空間。
 
-如果能找到這樣的 $x$ 與 $y$，那麼 $a = x - y$ 與 $b = x + y$ 就會是 $N$ 的因數。
-作為演算法，是將 $x$ 從 $\lceil \sqrt{N} \rceil$ 開始依序增加，並檢查 $x^2 - N$ 是否為完全平方數（某個整數 $y$ 的平方）。
-當兩個質因數 $p$ 與 $q$ 的數值非常接近時，這個方法運作得極快。然而，在一般情況下（$p$ 與 $q$ 是隨機且相距甚遠的值），最終仍會需要與試除法相當的指數時間。
+在假定數列行為類似隨機函數的啟發式分析中，找到因數 $p$ 所需的期望模乘次數估計為 $\mathcal{O}(\sqrt p)$。當 $p$ 與 $\sqrt N$ 同一數量級時，可寫為 $\mathcal{O}(N^{1/4})$，進而得到 $\mathcal{O}(2^{b/4})$。這不是無條件的最壞時間保證；乘法和最大公因數運算的位元成本也需要另行考慮。
 
-## 3. Pollard's $\rho$ 演算法（Pollard's rho algorithm）
+所得最大公因數 $d$ 只有在 $1<d<N$ 時才表示成功。$d=1$ 時繼續；$d=N$ 時可改變初值或函數後重試。例如，$N=21$、初值為2、$f(x)=x^2+1$ 時，第一次Floyd比較得到5和5，最大公因數是21本身。非平凡因數也可能是合數，需要繼續分解。
 
-為了突破試除法的極限，1975 年由約翰·波拉德（John Pollard）發表的「Pollard's $\rho$ 演算法」是其中一個被構想出來的方法。
+### 4.4 二次篩法與MPQS
 
-### 演算法概要
-這個方法應用了被稱為「生日悖論（Birthday Paradox）」的機率論概念，以及偽亂數數列的週期性（其形狀類似希臘字母 $\rho$，這也是名稱的由來）。
+二次篩法收集僅由小質數相乘得到的平滑值，構造平方同餘式。基本形式中，取 $m=\lfloor\sqrt N\rfloor$，在較小的 $x$ 的範圍內篩選下列值：
 
-使用某個偽亂數生成函數 $f(x) = (x^2 + 1) \pmod N$ 來產生數列，並在數列中找出滿足 $x_i \equiv x_j \pmod p$ 的兩個值（$p$ 為 $N$ 的未知質因數）。
-此時，$x_i - x_j$ 會是 $p$ 的倍數，因此透過計算最大公因數 $\gcd(|x_i - x_j|, N)$，就能以高機率提取出 $p$（即 $N$ 的質因數）。結合羅伯特·弗洛伊德的循環偵測法（[龜兔賽跑演算法](/zh-tw/p/floyds-cycle-finding/)）等，可以在將記憶體使用量控制在 $\mathcal{O}(1)$ 的同時進行高效率的計算。
+$$
+Q(x)=(m+x)^2-N.
+$$
 
-### 時間複雜度評估
-已知 Pollard's $\rho$ 演算法找到質因數 $p$ 所需的步驟數大約是 $\mathcal{O}(\sqrt{p})$。
-在最壞的情況下（當 $N$ 是兩個大小相同的質數 $p, q$ 之積時，$p \approx \sqrt{N}$），時間複雜度為 $\mathcal{O}(N^{1/4})$。
+以符號 $-1$ 和選定的小質數組成因子基底，記錄這些值的指數。在二元體上線性組合指數的奇偶性，尋找乘積為平方數的關係。僅描述隨機取 $x^2\bmod N$ 並檢查其平滑性，不能呈現二次篩法利用較小多項式值的特點。
 
-用輸入大小 $n = \log_2 N$ 來表示：
+MPQS（多重多項式二次篩法）是使用多個適當二次多項式的變種。效能依賴實作、輸入和可用資源，因此不能給出「恰好100位數時某種方法必然更快」的通用分界。
 
-$$ N^{1/4} = (2^n)^{1/4} = 2^{n/4} $$
+目標同餘式與提取因數的操作如下：
 
-因此，時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)為 **$\mathcal{O}(2^{n/4})$** 。
-與試除法的 $\mathcal{O}(2^{n/2})$ 相比，速度有著戲劇性的提升，在實用上對於中等規模（數十位數）的質因數分解非常強大。然而，相對於位元長度 $n$，它依然未能跨越「指數時間」的障礙，對於像 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密中使用的 2048 位元（十進位約 600 位數）的巨大數字依舊無能為力。
+$$
+X^2\equiv Y^2\pmod N,\qquad d=\gcd(X-Y,N).
+$$
 
-## 4. 多項式二次篩法（MPQS: Multiple Polynomial Quadratic Sieve）
+如果 $d=1$ 或 $d=N$，應嘗試其他關係。若 $X,Y$ 均與 $N$ 互質，且 $X\not\equiv\pm Y\pmod N$，就能得到非平凡因數，但不一定是質數。例如，$N=1155$、$X=76$、$Y=1$ 時，兩個平方同餘，而 $\gcd(75,1155)=15$、$\gcd(77,1155)=77$ 都是合數。
 
-進入 1980 年代，卡爾·波梅蘭斯（Carl Pomerance）構想出了「二次篩法（Quadratic Sieve: QS）」。這是費馬「平方差」概念的延伸。
-在費馬法中是直接尋找 $x^2 - y^2 = N$，而二次篩法則是尋找更寬鬆的條件。
+### 4.5 一般數體篩法（GNFS）
 
-$$ x^2 \equiv y^2 \pmod N $$
-且
-$$ x \not\equiv \pm y \pmod N $$
+一般數體篩法用來分解不具有特殊形式的大整數。大致過程如下：
 
-如果能找到這樣的 $x, y$ 配對，那麼 $x^2 - y^2 = (x - y)(x + y)$ 就會是 $N$ 的倍數。因此，只要計算 $\gcd(x - y, N)$ 或 $\gcd(x + y, N)$，就能得到 $N$ 的非平凡質因數。
+1. 選擇模 $N$ 下具有共同根的整數多項式等參數，建立相應的數體環境。
+2. 在有理數側和數體側，透過篩選收集滿足關於小質數或質理想的分解條件的關係。
+3. 求解表示指數奇偶性等條件的大型稀疏矩陣，組合出可以提取平方的關係。
+4. 在兩側計算平方根，轉換為整數的平方同餘式，透過最大公因數提取非平凡因數；關係失敗時重試。
 
-在二次篩法中，會大量找出使得 $x^2 \pmod N$ 成為「只由小質數作為質因數的數（這被稱為 $B$-平滑數）」的 $x$，並將這些質因數分解的結果排成矩陣的形式（二元體 $\mathbb{F}_2$ 上的聯立一次方程式）。接著，使用高斯消去法等將多個關係式相乘，調整右邊使其完全成為平方數（各個質因數的指數皆為偶數），藉此構造出 $x^2 \equiv y^2 \pmod N$。
+這只是概要，不是數體側平方根及其附加條件的實作指南。由多項式根 $\alpha$ 構造的 $\mathbb Z[\alpha]$，也不一定是該數體的整個整數環。例如，$\alpha=\sqrt5$ 時，$\beta=(1+\sqrt5)/2$ 滿足 $\beta^2-\beta-1=0$，是代數整數，卻不屬於 $\mathbb Z[\sqrt5]$。
 
-在普通數域篩法出現之前，二次篩法曾是世界最快的演算法，而對於 100 位數以下的數字分解，目前它仍被認為是最快的。
+使用自然對數 $\ln$ 定義L記法，其中 $c>0$、$0\le\alpha\le1$：
 
-## 5. 普通數域篩法（General Number Field Sieve: GNFS）深度解析
+$$
+L_N[\alpha,c]=\exp\!\left((c+o(1))(\ln N)^\alpha(\ln\ln N)^{1-\alpha}\right).
+$$
 
-目前，在對超過 100 位數的巨大整數進行質因數分解時，被譽為「世界最快」的是 **普通數域篩法 (GNFS)** 。這是在 1980 年代後半所構想出來，進一步發展了二次篩法，利用代數整數論的深奧結果（數域）所開發出的高階演算法。
+當 $N\to\infty$ 時，$o(1)$ 趨近0。兩個端點為 $L_N[0,c]=(\ln N)^{c+o(1)}$ 和 $L_N[1,c]=N^{c+o(1)}$。不能直接刪去漸近項，改成嚴格等式或固定次數的上界。
 
-在針對 RSA 加密的攻擊（從公鑰進行質因數分解）中，不斷刷新世界紀錄的始終是這個 GNFS。在 2020 年，曾有報告成功對 829 位元（250 位數）的合成數（RSA-250）進行了質因數分解，但這需要讓數千台規模的電腦長時間平行運作才能完成。
+GNFS的標準啟發式執行時間估計為：
 
-### 演算法的數學結構
-GNFS 非常複雜，但大致上是按照以下步驟進行的：
+$$
+L_N\!\left[\frac13,\left(\frac{64}{9}\right)^{1/3}\right]
+=\exp\!\left(\left(\left(\frac{64}{9}\right)^{1/3}+o(1)\right)(\ln N)^{1/3}(\ln\ln N)^{2/3}\right).
+$$
 
-1. **多項式選擇 (Polynomial Selection):**
-   對於 $N$，選擇一個整數 $m$ 與係數很小且滿足 $f(m) \equiv 0 \pmod N$ 的不可約多項式 $f(X)$。藉此定義出添加了 $f(X)$ 的根 $\alpha$ 的代數數域的整數環 $\mathbb{Z}[\alpha]$。
+常數約為1.923。轉換成輸入位元長度時，由於 $\ln N=b\ln2+\mathcal{O}(1)$，指數中的首項常數也需要換算：
 
-2. **篩選 (Sieving):**
-   在有理數體上的整數環 $\mathbb{Z}$ 與代數數域上的整數環 $\mathbb{Z}[\alpha]$ 這「兩個不同的世界」中，同時尋找平滑（Smooth）的數。具體來說，就是大量找出 $(a, b)$ 這樣的配對，使得 $a - bm$ 這個有理整數與 $a - b\alpha$ 這個代數整數的範數（Norm），都能在預先定好的小質數集合（因子基底: Factor Base）上被完全分解。
+$$
+\exp\!\left(\left(\left(\frac{64\ln2}{9}\right)^{1/3}+o(1)\right)b^{1/3}(\ln b)^{2/3}\right).
+$$
 
-3. **矩陣化簡 (Matrix Reduction):**
-   將找到的龐大數量的平滑配對表示為矩陣（巨大的稀疏矩陣）。在二元體 $\mathbb{F}_2$ 上使用 Lanczos 演算法（如 Block-Lanczos 法等）來求得解空間。這個矩陣規模達到數百萬行 $\times$ 數百萬列也是很常見的事。
+這裡的常數約為1.702。該估計相對於位元長度是次指數級的：成長快於任意多項式，但慢於每個固定 $\varepsilon>0$ 對應的 $2^{\varepsilon b}$。它既不是針對所有輸入的無條件最壞時間定理，也不是某個規模的實際耗時預測。
 
-4. **平方根計算 (Square Root):**
-   從矩陣的解中，在「兩個不同的世界」裡各自製造出巨大的平方數，最終導出 $X^2 \equiv Y^2 \pmod N$ 的關係式。然後計算 $\gcd(X-Y, N)$ 來獲得質因數。
+作為有明確日期的實例，[2020年2月28日的RSA-250分解公告](https://caramba.loria.fr/rsa250.txt)報告使用NFS分解了一個250位十進位、829位元的整數，計算工作量約為2700核心年（core-years）。這不等於同時使用2700台電腦，也不表示實際經過了2700年。這裡不把該歷史實例當作目前世界紀錄，或所有同樣長度整數的分解成本。
 
-### 普通數域篩法的時間複雜度：次指數時間（Sub-exponential time）
+## 5. P與NP問題和量子計算
 
-GNFS 最大的貢獻在於，它將質因數分解的時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)從「純指數時間」降到了 **「次指數時間（Sub-exponential time）」** 。
-GNFS 的漸近時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)，使用被稱為 L-notation 的特殊記法，表示如下：
+### 質數判定與尋找因數
 
-$$ L_N[\gamma, c] = \exp\left( (c + o(1)) (\ln N)^\gamma (\ln \ln N)^{1-\gamma} \right) $$
+判定一個數是否為質數，與找出合數的因數是不同的問題。[AKS論文](https://annals.math.princeton.edu/2004/160-2/p12)證明了質數判定可以在無條件、確定性的多項式時間內完成。這不表示整數分解也有相同的結果。
 
-這裡，$N$ 是想要分解的數字，$\ln$ 是自然對數。
-$\gamma$ 是介於 $0 \le \gamma \le 1$ 之間的值，表示演算法[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)的「程度」。
-- 當 $\gamma = 0$ 時，$L_N[0, c]$ 變為 $(\ln N)^c$，代表多項式時間 $\mathcal{O}(n^c)$。（高效率）
-- 當 $\gamma = 1$ 時，$L_N[1, c]$ 變為 $e^{c \ln N} = N^c$，代表指數時間 $\mathcal{O}(2^{cn})$。（低效率）
+P、NP、coNP基本上是回答Yes/No的判定問題的類別。質因數分解本身是輸出因數的搜尋問題，因此單說「質因數分解屬於NP」，會使問題類型不明確。例如，給定 $N\ge2$、$2\le K<N$，可以提出這樣的判定問題：是否存在因數，滿足 $1<d\le K$ 且 $d\mid N$？
 
-在 GNFS 的情況下，這個參數如下所示：
+若答案為Yes，因數 $d$ 就是可以用除法驗證的證據。若為No，可以給出完整的質因數分解作為證據，在多項式時間內核對乘積、各因數的質數性，以及所有質因數都大於 $K$。因此，這個判定問題同時屬於NP和coNP。若搜尋能在多項式時間內完成，判定也能完成；反過來，若有多項式時間的判定演算法，也可以對 $K$ 二分搜尋並反覆提取因數，得到質因數分解。
 
-$$ L_N\left[\frac{1}{3}, \left(\frac{64}{9}\right)^{1/3}\right] = e^{\left(\sqrt[3]{\frac{64}{9}} + o(1)\right) (\ln N)^{1/3} (\ln \ln N)^{2/3}} $$
+這種分類既沒有證明NP完全性，也沒有證明古典多項式時間演算法不存在。若一個同時屬於NP和coNP的問題，在通常的多項式時間歸約下是NP完全的，就會推出NP=coNP。[P與NP問題仍未解決](https://www.claymath.org/millennium/p-vs-np/)。即使假設P≠NP，也不能僅憑這一點斷言整數分解不屬於P。
 
-在這個公式中，常數 $c = (64/9)^{1/3} \approx 1.923$。
-如果用輸入大小 $n \approx \ln N$（與位元長度成正比）來改寫，[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)的變化大致如下：
+### 秀爾演算法改變了計算模型
 
-$$ \mathcal{O}\left( \exp\left( 1.923 \cdot n^{1/3} (\ln n)^{2/3} \right) \right) $$
+[秀爾演算法](https://arxiv.org/abs/quant-ph/9508027)在具有足夠量子計算資源的模型中，可以用關於輸入位元長度的多項式步數完成整數分解。量子部分獲得週期的資訊，再透過測量結果和古典後處理提取因數，必要時重試。這並不是量子傅立葉轉換瞬間讀取了所有候選的答案。
 
-可以看出，指數部分並不是取決於 $n$ 的 1 次方，而是取決於 $n^{1/3}$（$n$ 的立方根）。
-Pollard's $\rho$ 演算法是 $\mathcal{O}(2^{n/4})$，也就是 $\mathcal{O}(\exp(c \cdot n^1))$，相較之下，GNFS 的 $n$ 次數已經降到了 $1/3$。
-這意味著，雖然還沒達到多項式時間（$\gamma=0$），但時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)增加的速度已經比純指數時間（$\gamma=1$）慢非常多。這就是它被稱為「次指數時間」的原因。
-
----
-
-# 現代密碼的極限與量子電腦
-
-正如我們目前為止所看到的，人類集結了數學的智慧，透過將演算法從試除法進化到 GNFS，不斷挑戰著質因數分解的障礙。然而，即使有了 GNFS，古典電腦依然無法在「多項式時間」內解開質因數分解。
-
-## [P vs NP](https://kenji.blog/zh-tw/p/p-vs-np-problem/) 問題與質因數分解的定位
-
-計算機科學中最大的未解決問題之一就是「P = NP 猜想」。
-質因數分解問題屬於 NP（給出答案便能在多項式時間內驗證正確性的問題類別），但並未被證明為 NP-完全（NP 中最難的問題類別）。
-此外，它是否屬於 P（能在多項式時間內解開的問題類別，也就是是否存在多項式時間的演算法），目前也是未知數。
-
-許多研究者猜測，質因數分解屬於介於 P 與 NP-完全 之間的中間類別（NP-intermediate）。如果能發現用古典電腦在多項式時間內解開質因數分解的演算法（例如 $\mathcal{O}(n^3)$ 等），將會是導致全世界密碼系統崩潰的大事件，但直到目前為止，尚未發現這樣的演算法。如果要解密 2048 位元的 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密，即使古典電腦的效能提升遵循[摩爾定律](/zh-tw/p/business-moores-law/)，估計也需要花費比宇宙壽命還要長的時間。
-
-## 量子電腦這個「遊戲規則改變者」：秀爾演算法
-
-RSA 加密在古典電腦上堅不可摧，但一旦以完全不同原理運作的「量子電腦」普及化，情況將會完全改觀。
-1994 年由彼得·秀爾（Peter Shor）發表的 **「秀爾演算法（[Shor's algorithm](/zh-tw/p/shors-algorithm-and-rsa-breaking/)）」 ** ，利用了量子傅立葉轉換，竟然能夠在 **多項式時間 $\mathcal{O}(n^3)$** （更嚴格地說，量子閘數量約為 $\mathcal{O}(n^2 \log n \log \log n)$）內解開質因數分解。
-
-透過以下的 Mermaid 示意圖，我們來確認古典演算法與量子演算法在時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)上的差異：
+理論步數不能直接決定真實硬體要用「幾小時」還是「幾天」。這類估計需要給出量子閘、錯誤更正、算術電路、可用量子位元等條件。下圖最後一條箭頭表示計算模型改變，不是古典電腦極限的證明。
 
 ```mermaid
 graph LR
-    classDef classical fill:#f9f871,stroke:#333,stroke-width:2px;
-    classDef quantum fill:#00c9a7,stroke:#333,stroke-width:2px;
-
-    subgraph "古典電腦"
-        C1["試除法: O(2^(n/2))"]:::classical
-        C2["GNFS: 次指數時間 L_n(1/3)"]:::classical
-    end
-
-    subgraph "量子電腦"
-        Q1["秀爾演算法: O(n^3) 多項式時間"]:::quantum
-    end
-
-    C1 --> C2
-    C2 -. 古典物理的極限 .-> Q1
+    Trial["試除法"] -->|不同的古典演算法| GNFS["一般數體篩法"]
+    GNFS -->|改變計算模型| Shor["秀爾：量子模型中的多項式步數"]
 ```
 
-在秀爾演算法中，古典演算法中的瓶頸「尋找週期」過程，透過運用量子纏結與量子疊加的「量子傅立葉轉換（QFT）」，可以瞬間且平行地完成計算。
-一旦能夠在實用規模（雜訊低且具有足夠邏輯量子位元數量）的量子電腦上執行，目前被認為安全的 2048 位元 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密，可能會在數小時到數天內被完全破解。
+為這類未來攻擊做準備，是後量子密碼（PQC）的動機之一。正如[RFC 9794](https://www.rfc-editor.org/rfc/rfc9794.html)所說明的，PQC指被設計為能夠抵抗擁有量子電腦的攻擊者的密碼，並不保證絕對無法破解。仍然需要評估數學假設以及實作和運作方式。
 
-為了應對這項威脅，目前世界各國的密碼學家與 NIST（美國國家標準暨技術研究院）正在加速推進向即使是量子電腦也很難破解的「後量子密碼學（Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy: PQC）」轉型的標準化作業。晶格密碼（[Lattice-based cryptography](/zh-tw/p/lattice-based-cryptography-math-intuition/)）等是其中的代表，這些技術的安全性基礎建立在與質因數分解問題完全不同的數學困難度（例如最短向量問題等）之上。
+## 6. 總結
 
----
+比較整數分解的複雜度，首先要區分整數的值 $N$ 與輸入位元長度 $b$、基本操作次數與位元成本、最壞時間與期望時間。試除法、費馬法和rho演算法利用不同的結構，而二次篩法與GNFS從大量關係中構造平方同餘式。
 
-# 總結
+密碼安全性不能由單個上界或整數看起來很大來判斷。應綜合已知演算法、輸入產生方式、攻擊模型和實作。對於量子計算的理論結果，也要明確說明哪些已經證明，哪些依賴假設或資源估計，才能形成準確的理解。
 
-本文從時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)（[Big O](https://kenji.blog/zh-tw/p/time-space-complexity-big-o-notation-examples/) 標記）的基礎開始，深入探討了質因數分解演算法的進化及其數學極限。
+### 參考資料
 
-* **Big O ($\mathcal{O}$) 標記** 是顯示計算步驟數相對於輸入大小 $n$ 增加而增長的重要指標，而在多項式時間與指數時間之間，存在著實用上無法跨越的巨大鴻溝。
-* **試除法 ** 與 **Pollard's $\rho$ 演算法** 屬於純粹的「指數時間」演算法，對於巨大的數字無能為力。
-* 目前最快的古典演算法 **普通數域篩法 (GNFS)** ，運用了高階的代數整數論達成了「次指數時間」，但仍然未達多項式時間，對於巨大數字的質因數分解仍需要天文數字般的時間。
-* 正是因為這個 **「（強烈猜測）不存在能以多項式時間解開的古典演算法」** 的事實，確保了 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密的安全性，並支撐著現代的數位社會。
-* 然而，隨著 **量子電腦與秀爾演算法** 的出現，理論上已能在多項式時間內進行質因數分解，密碼學技術正準備轉移到下一個時代（後量子密碼學）。
-
-演算法時間[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)這個抽象的概念，卻與我們日常生活的安全息息相關，這正是資訊科學與數學中最迷人且令人興奮的面向之一。今後科技的發展，特別是量子電腦的開發動向與密碼技術的演進，請務必持續關注。
-
-
+- [NIST DADS：big-O notation](https://xlinux.nist.gov/dads/HTML/bigOnotation.html)
+- [Handbook of Applied Cryptography，第2章：複雜度定義](https://cacr.uwaterloo.ca/hac/about/chap2.pdf)
+- [第3章：整數分解與RSA問題](https://cacr.uwaterloo.ca/hac/about/chap3.pdf)（1996年的資料，需與後來的分解紀錄和質數判定進展區分）
+- [RFC 8017：RSA金鑰與方案](https://www.rfc-editor.org/rfc/rfc8017.html)
+- [RSA-250作者公告（2020年）](https://caramba.loria.fr/rsa250.txt)
+- [Agrawal–Kayal–Saxena：PRIMES is in P](https://annals.math.princeton.edu/2004/160-2/p12)
+- [Clay Mathematics Institute：P vs NP](https://www.claymath.org/millennium/p-vs-np/)
+- [Shor：量子計算中的多項式時間因數分解與離散對數演算法](https://arxiv.org/abs/quant-ph/9508027)
+- [RFC 9794：後量子密碼術語](https://www.rfc-editor.org/rfc/rfc9794.html)
