@@ -396,17 +396,83 @@
         }
       ],
       "validation": "docs/translation-review/batch-016-pt-validation.json"
+    },
+    "post/public-key-cryptography-rsa-ecc/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/public-key-cryptography-rsa-ecc/index.md",
+      "sourceHash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "translationHash": "10a926c6f5b00b784b6c1e1545e07b02915e5313168f3053aee1190b3e9dc1bf",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all original French metadata/body in two bounded outputs and independently reread all revised metadata/body in two bounded outputs. Compared six numbered sections, conclusion, six references and both diagrams against corrected Japanese, including final singular-verb correction in both diagram parameter labels. Restored mathematical conditions, noncoprime proof, security-strength scope and protocol/quantum distinctions without claiming a whole system security proof. Nine display formulas mechanically reused from Japanese and then read in resulting article; reuse alone is not prose review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used accord/transport de cles, valeur partagee/cles derivees, authentification/validation, generateur de sous-groupe/racine primitive, nombres premiers/premiers entre eux, exposant prive versus entire cle privee, representant entier/octets, corps fini/premier/caracteristique/non singuliere, ordre/scalaire, element neutre/point a l infini, doublement/multiplication scalaire and theoreme chinois des restes. Retained correct coprimality wording rather than treating premier avec as an error. Used dechiffrement for normal authorized recovery and encodage separately from chiffrement."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all nine display formulas exactly and checked relevant inline assumptions. DH uses prime subgroup order and nonzero uniform secret exponents; Euler proof retains coprimality and all representatives use primewise zero/nonzero cases and CRT. ECC uses p>3, nonsingularity modulo p, infinity/identity/inverse and y=0 exceptions. Independent fixtures verify100DH pairs, active MITM values13/18,143RSA representatives including23noncoprime,286primewise cases, the e1 flaw,20curve points/400pairs/8000associativity triples/3zero-y doublings and a singular field counterexample. Finite checks are not security proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised French have no executable article blocks. Read both Mermaid diagrams and arithmetic labels, matching8/2edges to Japanese; corrected Conviennent to singular Convient for each individual participant before validation. Ran independent small arithmetic fixtures in verify_batch_016.py, not article compilation or production cryptography certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six primary HTTPS URLs and scoped supporting evidence in source notes. Corrected French title to Les mathematiques with natural capitalization while preserving publication timestamp, slug, image and categories/tags; image exists. Added actual lastmod2026-10-28. All86French TeX expressions survive minified HTML, including RSA range. Seventeen-bundle Hugo, multilingual1103pages and HTTPS2025HTML/41XML passed; full CI/publication pending."
+        }
+      },
+      "summary": "Full French DH/RSA/ECC overview review against corrected Japanese source, with precise mathematical conditions, protocol roles and security estimates.",
+      "languageSpecificFindings": "Corrected title grammar to Les mathematiques and diagram parameter labels to singular verbs. Distinguished accord de cles from transport, valeur partagee from derived key, authentification from validation, exposant from full key and doublement from scalar multiplication. Used corps fini, ordre, element neutre, point a l infini and theoreme chinois des restes consistently; preserved correct existing premiers entre eux terminology. Removed unsupported universal RSA1024, performance and PQC claims.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "No executable article code; independent mathematical fixtures only, no constant-time/security proof or protocol implementation audit.",
+        "No visual browser/KaTeX/Mermaid audit.",
+        "Five other translations remain unreviewed; no dates added to them.",
+        "Publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7919.html",
+          "scope": "Scoped abstract and5.1–5.2 known-group public validation and exponent excerpts; not universal arbitrary-group validation."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "Scoped2.2–2.3,3,4,10–10.3 and historical bibliography excerpts listed in source notes; not full original historical papers."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Scoped keys/lambda/ranges, RSAEP, OAEP composition and PSS encoding/signature excerpts; not full conformance audit."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Scoped1.2/E.8 RSA transport versus signatures,4.2.8.1,7–7.1 key schedule and7.4.1 serialization excerpts; not prevalence survey."
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+          "scope": "2020 publication metadata and parsed PDF text5.6.1–5.6.1.1/Table2 definitions and comparison rows; not current universal key policy or visual PDF inspection."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Abstract and metadata only, polynomial steps in input size on hypothetical quantum computer; not hardware forecast."
+        }
+      ],
+      "validation": "docs/translation-review/batch-016-fr-validation.json"
     }
   },
   "stage": {
     "sourceAndEnglishFullBodyReviewed": true,
-    "otherTranslationsReviewed": 5,
-    "otherTranslationsRemaining": 6,
+    "otherTranslationsReviewed": 6,
+    "otherTranslationsRemaining": 5,
     "fullCiPending": true,
     "publicationPending": true,
     "validation": "docs/translation-review/batch-016-ja-en-validation.json",
     "simplifiedChineseFullBodyReviewed": true,
-    "latestValidation": "docs/translation-review/batch-016-pt-validation.json",
+    "latestValidation": "docs/translation-review/batch-016-fr-validation.json",
     "traditionalChineseFullBodyReviewed": true,
     "spanishFullBodyReviewed": true,
     "koreanFullBodyReviewed": true,
@@ -417,15 +483,16 @@
       "zh-tw",
       "es",
       "ko",
-      "pt"
+      "pt",
+      "fr"
     ],
     "unreviewedLanguages": [
-      "fr",
       "de",
       "id",
       "hi",
       "ru",
       "ar"
-    ]
+    ],
+    "frenchFullBodyReviewed": true
   }
 }

@@ -42,3 +42,6 @@ DHの生成元と部分群・指数範囲、DLPとCDHの違い、能動的中間
 
 
 - バッチ016のポルトガル語も全文照合。fatoração de primosを整数の素因数分解へ、kの逆値を求める説明を秘密スカラーの復元へ訂正し、acordo/transporte de chaves、valor compartilhado/chaves derivadas、autenticação/validação、corpo・ordem・duplicação・teorema chinês dos restosを整理。ブラジルの用語を維持した。9表示数式・2図10辺・6参照先、86TeX表現のHTML保持、独立数学例を検査し、17記事束のHugo・多言語1103ページ・HTTPS HTML2025件/XML41件を通過。AI確認日2026-10-28を追加した。バッチ016は残る6翻訳と公開確認が未完了。
+
+
+- バッチ016のフランス語も全文照合。accord/transport de clés、valeur partagée/clés dérivées、authentification/validation、exposant/clé、corps fini・ordre・doublement・théorème chinois des restesを整理。正しかったpremiers entre euxは維持し、タイトルをLes mathématiquesへ、図の各参加者の動詞を単数形Convientへ訂正した。9表示数式・2図10辺・6参照先、86TeX表現のHTML保持、独立数学例を検査し、17記事束のHugo・多言語1103ページ・HTTPS HTML2025件/XML41件を通過。AI確認日2026-10-28を追加した。バッチ016は残る5翻訳と公開確認が未完了。
