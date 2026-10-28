@@ -888,8 +888,23 @@
       "post/public-key-cryptography-rsa-ecc/index.ar.md": "722fef56b9747d88fa41d8829dffd89c16a057f48614f1497fe99fd0dcf083c7"
     },
     "buildPending": false,
-    "publicationPending": true,
-    "limitations": "Historical stage entries retain actual review dates and pending status. Full CI and221URL publication verification pending. AI review, no human/native-speaker, visual browser/RTL, constant-time or production-security certification."
+    "publicationPending": false,
+    "limitations": "Individual review entries and historical stages retain their actual dates and pending status. Full CI40609932394 succeeded and221URL publication proof passed. AI review, no human/native-speaker, visual browser/RTL, constant-time or production-security certification.",
+    "publication": {
+      "checkedAt": "2026-10-28T10:06:54.082792+09:00",
+      "ciRun": 40609932394,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40609932394",
+      "deployedCommit": "e0f50ce96168db87c7b74b6ffa7bcba9c7cab0fa",
+      "ciConclusion": "success",
+      "proof": "docs/translation-review/publication-016.json",
+      "pages": 221,
+      "passed": 221,
+      "reviewedTranslations": 204,
+      "japaneseSources": 17,
+      "cryptographyVersionsWithExactTeXCheck": 52,
+      "cryptographyTeXExpressions": 3917,
+      "checks": "HTTP200, updated-content markers, exact canonical and html lang, unique14hreflang/13sidebar entries, wrong-JWT-CVE absence, exact decoded TeX for four crypto articles. Counts/uniqueness here; full target reciprocity verified in local/full CI multilingual gate. Not visual browser or security certification."
+    }
   },
   "publicationDispatch": {
     "observedAt": "2026-10-28T09:38:11.185354+09:00",
