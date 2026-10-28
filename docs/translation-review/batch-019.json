@@ -46,6 +46,98 @@
         "No binary/NULinput,output-stream-failure,visual-browser or cryptographic audit.",
         "Full-siteCI and publication pending."
       ]
+    },
+    "post/素数を生成するC言語コード/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/素数を生成するC言語コード/index.md",
+      "sourceHash": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "translationHash": "2b0a7b63373ab53612bdaf86be0338519d8c5c7a62709c1f58e7d4e3d90e4b58",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original language metadata/body/code, revised against corrected full Japanese and reviewed English, then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,one complete C program,one output sample,input contract and limits. No unread/unvalidated language recorded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Simplified Chinese uses 素数/合数/试除法/素因子/指针/溢出/字节. Original 步长为6 was valid; clarified tested divisors without falsely calling it multiples-of-six wording. Retained localized Chinese UI and original mixed-Japanese slug."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "No TeX-delimited formulas or diagrams. Matched square-root factor bound,6k±1candidate restriction without converse primality claim,positive division stop condition,increment guards,32bit INT_MAX example and coarse O(n sqrt(n)) division-count upper bound distinct from bit cost/runtime. Sample primes<=30 matched sieve."
+        },
+        "code": {
+          "status": "checked",
+          "note": "One C17block has same executable structure as Japanese, with reviewed localized UIstrings. Separately compiled full program and helper harness with GCC13.3 Wall/Wextra under O2 and O0+UBSan,no warnings. Per mode50168classifications from independent sieve0..50000 plus167Python trial-division boundary/negative/random checks,11valid/17invalid inputs,12printer outputs,6full-program valid/5invalid cases passed. Includes INT_MAX classification/parsing and exact127byte LF/EOF boundary; no full INT_MAX enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Same WG14 N1570 HTTPS target and corresponding reviewed Miller–Rabin language URL. Preserved original distinct slug/canonical and actual datePublished2024-08-24T09:38:10+09:00,image,tags/categories; duplicate date removed,lastmod2026-10-28.20bundle Hugo build,multilingual1243pages,HTTPS2267HTML/41XML passed. Existing17tests previously passed for same revised source and verifier. Publication pending."
+        }
+      },
+      "summary": "Full zh-cn C prime-enumeration review against corrected Japanese, including complete localized C program and actual boundary/input checks.",
+      "languageSpecificFindings": "Simplified Chinese uses 素数/合数/试除法/素因子/指针/溢出/字节. Original 步长为6 was valid; clarified tested divisors without falsely calling it multiples-of-six wording. Retained localized Chinese UI and original mixed-Japanese slug.",
+      "validation": "docs/translation-review/batch-019-chinese-validation.json",
+      "references": [
+        {
+          "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+          "scope": "Scoped clauses as documented in batch-019-source-notes.md; no whole-standard or finalC17reading claim."
+        }
+      ],
+      "limitations": [
+        "AI, not human/native-speaker certification.",
+        "Other translations are counted only after their own full-body review and executable validation.",
+        "Finite Ubuntu GCC13.3/32bit-int checks,not every C implementation or full INT_MAX enumeration.",
+        "No binary/NULinput,output-stream-failure,browser visual or cryptographic audit.",
+        "Full-siteCI/publication pending."
+      ]
+    },
+    "post/素数を生成するC言語コード/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/素数を生成するC言語コード/index.md",
+      "sourceHash": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "translationHash": "2c0c5a549c8bc156e08cfcf11ce8c175f29c5a714170e37694e6b6767ea51919",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original language metadata/body/code, revised against corrected full Japanese and reviewed English, then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,one complete C program,one output sample,input contract and limits. No unread/unvalidated language recorded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Traditional Chinese uses 質數/合數/試除法/質因數/函式/指標/溢位/位元組. Corrected original 6的倍數 assertion to6k±1candidates and normalized 函數 toTaiwan-oriented函式 in prose. Localized UI and original distinct 質數 slug retained."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "No TeX-delimited formulas or diagrams. Matched square-root factor bound,6k±1candidate restriction without converse primality claim,positive division stop condition,increment guards,32bit INT_MAX example and coarse O(n sqrt(n)) division-count upper bound distinct from bit cost/runtime. Sample primes<=30 matched sieve."
+        },
+        "code": {
+          "status": "checked",
+          "note": "One C17block has same executable structure as Japanese, with reviewed localized UIstrings. Separately compiled full program and helper harness with GCC13.3 Wall/Wextra under O2 and O0+UBSan,no warnings. Per mode50168classifications from independent sieve0..50000 plus167Python trial-division boundary/negative/random checks,11valid/17invalid inputs,12printer outputs,6full-program valid/5invalid cases passed. Includes INT_MAX classification/parsing and exact127byte LF/EOF boundary; no full INT_MAX enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Same WG14 N1570 HTTPS target and corresponding reviewed Miller–Rabin language URL. Preserved original distinct slug/canonical and actual datePublished2024-08-24T09:38:10+09:00,image,tags/categories; duplicate date removed,lastmod2026-10-28.20bundle Hugo build,multilingual1243pages,HTTPS2267HTML/41XML passed. Existing17tests previously passed for same revised source and verifier. Publication pending."
+        }
+      },
+      "summary": "Full zh-tw C prime-enumeration review against corrected Japanese, including complete localized C program and actual boundary/input checks.",
+      "languageSpecificFindings": "Traditional Chinese uses 質數/合數/試除法/質因數/函式/指標/溢位/位元組. Corrected original 6的倍數 assertion to6k±1candidates and normalized 函數 toTaiwan-oriented函式 in prose. Localized UI and original distinct 質數 slug retained.",
+      "validation": "docs/translation-review/batch-019-chinese-validation.json",
+      "references": [
+        {
+          "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+          "scope": "Scoped clauses as documented in batch-019-source-notes.md; no whole-standard or finalC17reading claim."
+        }
+      ],
+      "limitations": [
+        "AI, not human/native-speaker certification.",
+        "Other translations are counted only after their own full-body review and executable validation.",
+        "Finite Ubuntu GCC13.3/32bit-int checks,not every C implementation or full INT_MAX enumeration.",
+        "No binary/NULinput,output-stream-failure,browser visual or cryptographic audit.",
+        "Full-siteCI/publication pending."
+      ]
     }
   },
   "stages": [
@@ -56,6 +148,15 @@
       ],
       "sourceReviewed": true,
       "validation": "docs/translation-review/batch-019-ja-en-validation.json",
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-28",
+      "languages": [
+        "zh-cn",
+        "zh-tw"
+      ],
+      "validation": "docs/translation-review/batch-019-chinese-validation.json",
       "publicationPending": true
     }
   ]
