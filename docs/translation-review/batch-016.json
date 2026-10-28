@@ -726,17 +726,82 @@
         }
       ],
       "validation": "docs/translation-review/batch-016-ru-validation.json"
+    },
+    "post/public-key-cryptography-rsa-ecc/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/public-key-cryptography-rsa-ecc/index.md",
+      "sourceHash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "translationHash": "6d3d069839ab556f567c53f40d42d4645b09b641b7993c83d55e3a058ba67b58",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Arabic metadata/body in three bounded outputs, then independently reread the complete revised metadata/body in three bounded outputs, checking final integer-operations wording before recording. Compared six sections, conclusion, six references and both diagrams against corrected Japanese. Restored subgroup/exponent conditions, all-representative proof, curve exceptions, scoped security-strength and protocol/quantum distinctions. Nine exact display formulas reused from Japanese and read in resulting article; copying alone is not prose review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished الاتفاق على المفاتيح/نقل المفاتيح/إنشاء المفاتيح, القيمة المشتركة/المفاتيح المشتقة, المصادقة/التحقق من الصلاحية, مولد الزمرة الجزئية/الجذر البدائي, أولي/أولي نسبيًا, الأس الخاص versus whole المفتاح الخاص, العدد الصحيح الممثل/بايتات, الحقل المنتهي/المميزة/غير شاذ, الرتبة/العدد القياسي, العنصر المحايد/نقطة اللانهاية and مبرهنة البواقي الصينية. Explained scalar multiplication explicitly as integer multiplication of a point and distinguished doubling. Kept الترميز distinct from التشفير and corrected integer operations to العمليات على الأعداد الصحيحة rather than ambiguous correct operations."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all nine display formulas exactly and checked relevant inline assumptions. DH uses prime subgroup order and nonzero uniform secret exponents; Euler proof retains coprimality and all representatives use primewise zero/nonzero cases and CRT. ECC uses p>3, nonsingularity modulo p, infinity/identity/inverse and y=0 exceptions. Independent fixtures verify100DH pairs, active MITM values13/18,143RSA representatives including23noncoprime,286primewise cases, the e1 flaw,20curve points/400pairs/8000associativity triples/3zero-y doublings and a singular field counterexample. Finite checks are not security proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised Arabic have no executable article code. Read both Mermaid blocks and arithmetic labels, matching8/2edges with Japanese. Ran independent small mathematical fixtures in verify_batch_016.py, not article compilation, RTL browser layout or production cryptographic certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six HTTPS primary references and scoped evidence in source notes. Preserved title, publication timestamp, slug, image and categories/tags; image exists. Added actual lastmod2026-10-28. All87Arabic TeX expressions survive minified HTML, including RSA range; explicit public e gloss adds one expression versus English. Seventeen-bundle Hugo, multilingual1103pages and HTTPS2025HTML/41XML passed; full CI/publication pending."
+        }
+      },
+      "summary": "Full Arabic DH/RSA/ECC overview review against corrected Japanese source, with precise exponent, encoding, validation and group terminology.",
+      "languageSpecificFindings": "Clarified الأس versus key as a whole, integer exponentiation versus ambiguous raising power wording, الترميز versus التشفير, and المصادقة versus validity checks. Defined multiplication of a point by an integer separately from doubling and used الرتبة/المميزة/الحقل/نقطة اللانهاية consistently. Corrected integer-operations wording and parameter/key-management agreement before recording. Removed unsupported PQC examples including ambiguous network/lattice wording under the source correction; no claim that the removed example was otherwise audited. Removed universal RSA1024/performance/PQC guarantees.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "No executable article code; independent mathematical fixtures only, no constant-time/security proof or protocol implementation audit.",
+        "No visual browser/KaTeX/Mermaid or RTL layout audit.",
+        "All twelve translations of this article have now been reviewed locally; aggregate and publication checks remain pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7919.html",
+          "scope": "Scoped abstract and5.1–5.2 known-group public validation and exponent excerpts; not universal arbitrary-group validation."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "Scoped2.2–2.3,3,4,10–10.3 and historical bibliography excerpts listed in source notes; not full original historical papers."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Scoped keys/lambda/ranges, RSAEP, OAEP composition and PSS encoding/signature excerpts; not full conformance audit."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Scoped1.2/E.8 RSA transport versus signatures,4.2.8.1,7–7.1 key schedule and7.4.1 serialization excerpts; not prevalence survey."
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+          "scope": "2020 publication metadata and parsed PDF text5.6.1–5.6.1.1/Table2 definitions and comparison rows; not current universal key policy or visual PDF inspection."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Abstract and metadata only, polynomial steps in input size on hypothetical quantum computer; not hardware forecast."
+        }
+      ],
+      "validation": "docs/translation-review/batch-016-ar-validation.json"
     }
   },
   "stage": {
     "sourceAndEnglishFullBodyReviewed": true,
-    "otherTranslationsReviewed": 10,
-    "otherTranslationsRemaining": 1,
+    "otherTranslationsReviewed": 11,
+    "otherTranslationsRemaining": 0,
     "fullCiPending": true,
     "publicationPending": true,
     "validation": "docs/translation-review/batch-016-ja-en-validation.json",
     "simplifiedChineseFullBodyReviewed": true,
-    "latestValidation": "docs/translation-review/batch-016-ru-validation.json",
+    "latestValidation": "docs/translation-review/batch-016-ar-validation.json",
     "traditionalChineseFullBodyReviewed": true,
     "spanishFullBodyReviewed": true,
     "koreanFullBodyReviewed": true,
@@ -752,15 +817,15 @@
       "de",
       "id",
       "hi",
-      "ru"
-    ],
-    "unreviewedLanguages": [
+      "ru",
       "ar"
     ],
+    "unreviewedLanguages": [],
     "frenchFullBodyReviewed": true,
     "germanFullBodyReviewed": true,
     "indonesianFullBodyReviewed": true,
     "hindiFullBodyReviewed": true,
-    "russianFullBodyReviewed": true
+    "russianFullBodyReviewed": true,
+    "arabicFullBodyReviewed": true
   }
 }
