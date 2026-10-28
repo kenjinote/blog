@@ -1420,6 +1420,34 @@
         "conclusion": "success",
         "note": "225URL plan superseded by later deployed210revision and228URL verification; did not run the older probe against a newer deployment while claiming the older deployed head."
       }
+    },
+    {
+      "checkedAt": "2026-10-28T20:12:49.374932+09:00",
+      "ciRun": 40674107915,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40674107915",
+      "deployedCommit": "95e257f736c11457dc7eb0ecb58f64a84b0c2eed",
+      "ciConclusion": "success",
+      "proof": "docs/translation-review/publication-017.json",
+      "pages": 234,
+      "passed": 234,
+      "reviewedTranslationsPublished": 216,
+      "japaneseSources": 18,
+      "factoringLanguagesPublished": [
+        "en",
+        "zh-cn",
+        "zh-tw",
+        "es",
+        "ko",
+        "pt",
+        "fr",
+        "de",
+        "id",
+        "hi",
+        "ru",
+        "ar"
+      ],
+      "texExpressions": 5503,
+      "scope": "Batches001-017, all12factoring translations. Exact updated content/HTTP/canonical/lang/all14hreflang and13sidebar article URL targets. Exact decoded TeX for52crypto+13factoring versions. Not a full-site content, native-language, visual-browser or security certification."
     }
   ],
   "finalAssembly": {
@@ -1436,10 +1464,38 @@
     ],
     "executableArticleCodeBlocks": 0,
     "repositoryTests": 17,
-    "publicationPending": true,
+    "publicationPending": false,
     "limitations": [
       "AI, not human/native-speaker certification.",
       "No visual browser/RTL audit, full primary-paper proof or cryptographic security certification."
-    ]
+    ],
+    "publication": {
+      "checkedAt": "2026-10-28T20:12:49.374932+09:00",
+      "ciRun": 40674107915,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40674107915",
+      "deployedCommit": "95e257f736c11457dc7eb0ecb58f64a84b0c2eed",
+      "ciConclusion": "success",
+      "proof": "docs/translation-review/publication-017.json",
+      "pages": 234,
+      "passed": 234,
+      "reviewedTranslationsPublished": 216,
+      "japaneseSources": 18,
+      "factoringLanguagesPublished": [
+        "en",
+        "zh-cn",
+        "zh-tw",
+        "es",
+        "ko",
+        "pt",
+        "fr",
+        "de",
+        "id",
+        "hi",
+        "ru",
+        "ar"
+      ],
+      "texExpressions": 5503,
+      "scope": "Batches001-017, all12factoring translations. Exact updated content/HTTP/canonical/lang/all14hreflang and13sidebar article URL targets. Exact decoded TeX for52crypto+13factoring versions. Not a full-site content, native-language, visual-browser or security certification."
+    }
   }
 }
