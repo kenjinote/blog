@@ -1243,5 +1243,43 @@
       "priorRunObservedStatus": "in_progress",
       "concurrency": "pages cancel-in-progress:false; prior workflow retained."
     }
+  ],
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-10-28T19:32:13.013564+09:00",
+      "ciRun": 40613417587,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40613417587",
+      "deployedCommit": "5516f910de1d20bc594525e9731775ceb4395615",
+      "ciConclusion": "success",
+      "proof": "docs/translation-review/publication-017-en-cn-tw-es-ko-pt.json",
+      "pages": 228,
+      "passed": 228,
+      "reviewedTranslationsPublished": 210,
+      "japaneseSources": 18,
+      "factoringLanguagesPublished": [
+        "en",
+        "zh-cn",
+        "zh-tw",
+        "es",
+        "ko",
+        "pt"
+      ],
+      "otherFactoringLanguagesPublicationPending": [
+        "fr",
+        "de",
+        "id",
+        "hi",
+        "ru",
+        "ar"
+      ],
+      "texExpressions": 4768,
+      "scope": "Batches001-016 plus first6factoring translations and18JA sources. Exact content/canonical/lang/expected14hreflang and13sidebar URLs, no wrong JWT CVE, and exact decoded TeX for52crypto+7factoring versions. Not a full-site content review, native-language, visual-browser or security certification.",
+      "prior207Run": {
+        "id": 40612369511,
+        "head": "cacb29dde6fbe7569219fb580c0d15818a34251e",
+        "conclusion": "success",
+        "note": "225URL plan superseded by later deployed210revision and228URL verification; did not run the older probe against a newer deployment while claiming the older deployed head."
+      }
+    }
   ]
 }
