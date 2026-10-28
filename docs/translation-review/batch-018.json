@@ -630,6 +630,76 @@
         }
       ],
       "validation": "docs/translation-review/batch-018-id-validation.json"
+    },
+    "post/cppで実装する高速な素数判定アルゴリズム/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/cppで実装する高速な素数判定アルゴリズム/index.md",
+      "sourceHash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+      "translationHash": "b1bc0367812e8109be7511d0f2c94f80b83eccf58c42c5f7decac06d437c35d1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Hindi metadata/body in three bounded outputs, revised against corrected Japanese and reviewed English, then independently reread complete revised metadata/body in two bounded outputs plus small definition/modular-remainder/spacing cleanup. Compared introduction/seven sections,3row base table,3C++blocks,2diagrams and7external reference targets. No unread language marked reviewed."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished अभाज्यता परीक्षण/गुणनखंडन/अभाज्य उत्पन्न करना, अभाज्य/भाज्य(composite)/notprime0or1, पूर्णांक आधार/अभाज्य आधार, परीक्षण/प्रमाण, स्वतंत्र एकसमान चयन/निश्चित समुच्चय, conditional error/posterior probability, सचिह्न(signed)/अचिह्न(unsigned), घात गणना(exponentiation)/घातांक(exponent), मापांक/शेष, अतिप्रवाह/अपवाद and bit costs. Replaced फर्मेंट with फ़र्मा(Fermat). Explained modular reduction as remainder on division by N rather than ambiguous घटाना(subtract). Preserved valid सह-अभाज्य/सर्वांगसमता and defined composite explicitly; no claim every alternative Hindi term is invalid."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All4display formulas exactly match corrected source, with inline conditions/strict bounds compared. Verified Fermat561base3counterexample375, sevenintegerbase325composite, independentuniform conditional4^-k not posterior assertion, published3/4/7ranges and12prime bound>2^64, unsigned64endpoint and operation-count/bit-cost distinction. All41HindiTeX expressions survive HTML."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All3C++blocks exactly match reviewed Japanese source and separately compile without warnings under WSL GCC13.3.0/C++17. Eleven main outputs match. New Hindi harness101275cases passes O2 and UBSanO1: both algorithms against sieve0..50000,4extra signed trial cases,742large/boundary MRcases via independent Python pow and published12base criterion,262multiplication+262power cases and3zero-modulus exceptions. Diagrams14and4edges use हाँ/नहीं, retaining pre-loop s=1exhaustion/current-base-not-proof labels. No timing/exhaustive64bit/constant-time/security certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched7unique external HTTPS targets and reviewed Hindi modern-cryptography internal link. Removed repetitive unreviewed Fermat dependencies without dropping theorem/algorithm concepts. Preserved publication timestamp,slug,image,categories/tags; actual lastmod2026-10-28. Image exists. Final minified Hugo19bundles, multilingual1185pages and HTTPS2163HTML/41XML passed;41TeX expressions preserved. Publication pending."
+        }
+      },
+      "summary": "Full Hindi primality review with correct Fermat name, exponentiation/signedness terminology and verified arithmetic contracts.",
+      "languageSpecificFindings": "Corrected फर्मेंट name and exponent versus exponentiation phrasing; clarified भाज्य(composite) not0or1, signed/unsigned interfaces, remainder versus subtraction and modular operation counts. Repaired multiplication-as-hard-operation, seven-prime claim, signed remainder statement, signed128fullrange and zero-base comment. Replaced production-ready and probability-practically-zero assertions with scoped implementation/conditional error. Native diagram labels and readable numeral/Latin-variable spacing; no visual/native-speaker certification.",
+      "limitations": [
+        "AI, not human or native-speaker certification.",
+        "Two other translations unread and unreviewed; no confirmation dates for them.",
+        "Finite tests do not independently prove all2^64 classifications or published base-set search results.",
+        "No visual browser/KaTeX/Mermaid, cryptographic deployment or constant-time audit.",
+        "Full-siteCI and publication pending."
+      ],
+      "references": [
+        {
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html",
+          "scope": "Complete short extension documentation; target dependent signed/unsigned support."
+        },
+        {
+          "url": "https://eel.is/c++draft/expr.mul",
+          "scope": "Complete short multiplicative-operator section: zero modulus UB and truncation/remainder rules; reproduced signed remainder."
+        },
+        {
+          "url": "https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf",
+          "scope": "Parsed opening pages through Theorem1, including random error interpretation, not full proof or implementation sections; obsolete1980 status not reused."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap4.pdf",
+          "scope": "Scoped parsed Fermat/MR sections,4.20/4.23/4.25,Algorithm4.24,Note4.47 and historical notes, not whole chapter or current key-generation audit."
+        },
+        {
+          "url": "https://miller-rabin.appspot.com/",
+          "scope": "3/4/7base records,strictthresholds,attribution,date and base-reduction remarks. Did not reproduce underlying64bitdatabase; zero-base remark means passing that round only."
+        },
+        {
+          "url": "https://arxiv.org/html/1509.00864",
+          "scope": "Parsed introduction/Theorem1.1; first twelve-prime-base strong pseudoprime. Journal metadata2017 separately checked. Not computational-proof replication; generatedHTML2026date not used as historical date."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap14.pdf",
+          "scope": "Scoped parsed14.32/14.36/14.94 and related efficiency/precomputation conditions. OriginalMontgomery1985publisheraccess failed; scan supplied no readable output, so no full original-paper reading claim."
+        }
+      ],
+      "validation": "docs/translation-review/batch-018-hi-validation.json"
     }
   },
   "stages": [
@@ -762,6 +832,22 @@
       "reviewedTranslations": 9,
       "otherTranslationsUnreviewed": 3,
       "validation": "docs/translation-review/batch-018-id-validation.json",
+      "texExpressions": 41,
+      "displayFormulas": 4,
+      "codeBlocks": 3,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "casesPerOptimizedAndUbsanHarness": 101275,
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-10-28T20:24:23.844970+09:00",
+      "language": "hi",
+      "reviewedTranslations": 10,
+      "otherTranslationsUnreviewed": 2,
+      "validation": "docs/translation-review/batch-018-hi-validation.json",
       "texExpressions": 41,
       "displayFormulas": 4,
       "codeBlocks": 3,
