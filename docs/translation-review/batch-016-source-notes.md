@@ -39,3 +39,6 @@ DHの生成元と部分群・指数範囲、DLPとCDHの違い、能動的中間
 
 
 - バッチ016の韓国語も全文照合。키 합의/키 전송、공유 값/파생 키、인증/검증、개인 지수/개인키、위수・스칼라・표수・무한원점を整理。決定的な生RSAの説明を「決定論的」の결정론적へ訂正した。9表示数式・2図10辺・6参照先、88TeX表現のHTML保持、独立数学例を確認し、17記事束のHugo・多言語1103ページ・HTTPS HTML2025件/XML41件を通過。AI確認日2026-10-28を追加した。バッチ016は残る7翻訳と公開確認が未完了。
+
+
+- バッチ016のポルトガル語も全文照合。fatoração de primosを整数の素因数分解へ、kの逆値を求める説明を秘密スカラーの復元へ訂正し、acordo/transporte de chaves、valor compartilhado/chaves derivadas、autenticação/validação、corpo・ordem・duplicação・teorema chinês dos restosを整理。ブラジルの用語を維持した。9表示数式・2図10辺・6参照先、86TeX表現のHTML保持、独立数学例を検査し、17記事束のHugo・多言語1103ページ・HTTPS HTML2025件/XML41件を通過。AI確認日2026-10-28を追加した。バッチ016は残る6翻訳と公開確認が未完了。

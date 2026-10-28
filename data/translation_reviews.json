@@ -1975,6 +1975,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-016.json",
       "evidenceHash": "ec0e2ce35b15653521389245062aaa31bcbb17a00bf1e6a077022334bf0fd5f6"
+    },
+    "post/public-key-cryptography-rsa-ecc/index.pt.md": {
+      "source": "post/public-key-cryptography-rsa-ecc/index.md",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "translationHash": "99b018ad75a8909240ee84087d6ad8d22be96b54ddd7143e27cf9cb5c22b9edb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-016.json",
+      "evidenceHash": "aff2cac363650ab85b5a3262338ddd06e217926e34d3f832cf27bb373e185e24"
     }
   }
 }

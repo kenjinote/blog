@@ -330,19 +330,102 @@
         }
       ],
       "validation": "docs/translation-review/batch-016-ko-validation.json"
+    },
+    "post/public-key-cryptography-rsa-ecc/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/public-key-cryptography-rsa-ecc/index.md",
+      "sourceHash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "translationHash": "99b018ad75a8909240ee84087d6ad8d22be96b54ddd7143e27cf9cb5c22b9edb",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Portuguese metadata/body in two bounded outputs, then independently reread the complete revised metadata/body in two bounded outputs. Compared six numbered sections, conclusion, six references and both diagrams against corrected Japanese. Preserved the full progression and restored DH conditions, all-representative RSA proof, finite-field exceptions, scoped security comparison and protocol/quantum qualifications. Nine display formulas reused exactly from Japanese and read in the generated article; this mechanical reuse is not the prose review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used acordo/transporte de chaves, valor compartilhado/chaves derivadas, autenticacao/validacao, gerador de subgrupo/raiz primitiva, primo/coprimo, expoente privado versus entire chave privada, representante inteiro/bytes, corpo finito/primo/caracteristica/nao singular, ordem/escalar, elemento neutro/ponto no infinito, duplicacao/multiplicacao escalar and teorema chines dos restos. Corrected fatoracao de primos to fatoracao de inteiros and inverse-value wording to recovering k. Retained Brazilian criptografia, computadores, compartilhado and gerenciamento."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all nine display formulas exactly and checked relevant inline assumptions. DH uses prime subgroup order and nonzero uniform secret exponents; Euler proof retains coprimality and all representatives use primewise zero/nonzero cases and CRT. ECC uses p>3, nonsingularity modulo p, infinity/identity/inverse and y=0 exceptions. Independent fixtures verify100DH pairs, active MITM values13/18,143RSA representatives including23noncoprime,286primewise cases, the e1 flaw,20curve points/400pairs/8000associativity triples/3zero-y doublings and a singular field counterexample. Finite checks are not security proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Neither original nor revised Portuguese contains executable article code. Read both Mermaid diagrams and arithmetic labels, matching8/2edges with Japanese. Ran independent small mathematical fixtures in verify_batch_016.py, not article compilation, constant-time checks or production security certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all six primary HTTPS references to Japanese and their scoped supporting evidence in source notes. Preserved title, publication timestamp, slug, image and categories/tags; image exists. Added actual lastmod2026-10-28. All86Portuguese TeX expressions survive minified HTML, including RSA range. Seventeen-bundle Hugo, multilingual1103pages and HTTPS2025HTML/41XML passed; full CI/publication pending."
+        }
+      },
+      "summary": "Full Brazilian Portuguese DH/RSA/ECC overview review against corrected Japanese source, with precise factorization, group, key and protocol terminology.",
+      "languageSpecificFindings": "Replaced fatoracao de primos, which suggests factoring primes, with integer factorization; replaced calculating the inverse value k with recovering the private scalar. Removed the literal percebeu o conceito phrasing by stating the RSA development directly. Distinguished exponent/key, shared value/derived key, public validation/authentication and doubling/scalar multiplication. Kept Brazilian vocabulary and restored mathematical assumptions rather than claiming universal factoring, performance or PQC guarantees.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "No executable article code; independent mathematical fixtures only, no constant-time/security proof or protocol implementation audit.",
+        "No visual browser/KaTeX/Mermaid audit.",
+        "Six other translations remain unreviewed; no dates added to them.",
+        "Publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7919.html",
+          "scope": "Scoped abstract and5.1–5.2 known-group public validation and exponent excerpts; not universal arbitrary-group validation."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "Scoped2.2–2.3,3,4,10–10.3 and historical bibliography excerpts listed in source notes; not full original historical papers."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Scoped keys/lambda/ranges, RSAEP, OAEP composition and PSS encoding/signature excerpts; not full conformance audit."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Scoped1.2/E.8 RSA transport versus signatures,4.2.8.1,7–7.1 key schedule and7.4.1 serialization excerpts; not prevalence survey."
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+          "scope": "2020 publication metadata and parsed PDF text5.6.1–5.6.1.1/Table2 definitions and comparison rows; not current universal key policy or visual PDF inspection."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Abstract and metadata only, polynomial steps in input size on hypothetical quantum computer; not hardware forecast."
+        }
+      ],
+      "validation": "docs/translation-review/batch-016-pt-validation.json"
     }
   },
   "stage": {
     "sourceAndEnglishFullBodyReviewed": true,
-    "otherTranslationsReviewed": 4,
-    "otherTranslationsRemaining": 7,
+    "otherTranslationsReviewed": 5,
+    "otherTranslationsRemaining": 6,
     "fullCiPending": true,
     "publicationPending": true,
     "validation": "docs/translation-review/batch-016-ja-en-validation.json",
     "simplifiedChineseFullBodyReviewed": true,
-    "latestValidation": "docs/translation-review/batch-016-ko-validation.json",
+    "latestValidation": "docs/translation-review/batch-016-pt-validation.json",
     "traditionalChineseFullBodyReviewed": true,
     "spanishFullBodyReviewed": true,
-    "koreanFullBodyReviewed": true
+    "koreanFullBodyReviewed": true,
+    "portugueseFullBodyReviewed": true,
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko",
+      "pt"
+    ],
+    "unreviewedLanguages": [
+      "fr",
+      "de",
+      "id",
+      "hi",
+      "ru",
+      "ar"
+    ]
   }
 }
