@@ -2,6 +2,7 @@
 title: 'Algoritma Pengujian Keprimaan Cepat Diimplementasikan dalam C++ (Metode Miller-Rabin, dll.)'
 slug: "cpp-fast-prime-testing-miller-rabin"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-10-28"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,321 +10,265 @@ categories: ["cpp", "algorithms", "mathematics"]
 tags: ["C++", "Miller-Rabin", "Prime Numbers", "Algorithm"]
 ---
 
-# Pendahuluan: Mengapa Pengujian Keprimaan yang Cepat Diperlukan?
+## Pendahuluan: membedakan keprimaan dan faktorisasi
 
-Dalam ilmu komputer, kriptografi, atau pemrograman kompetitif, menentukan secara cepat dan akurat "apakah suatu bilangan adalah bilangan prima" merupakan tugas yang sangat penting dan mendasar. Misalnya, kriptografi kunci publik seperti [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), yang mendasari keamanan masyarakat internet modern, mendasarkan keamanannya pada pembuatan bilangan prima yang besar dan kesulitan mengalikannya (kesulitan faktorisasi prima). Oleh karena itu, teknologi untuk secara instan membedakan apakah bilangan yang sangat besar adalah bilangan prima atau bukan, bisa dikatakan sebagai teknologi yang menopang fondasi masyarakat digital.
+Uji keprimaan menjawab apakah suatu bilangan bulat adalah prima. Mencari faktor-faktor bilangan komposit merupakan tugas berbeda. Pembangkitan bilangan prima besar penting dalam [kriptografi kunci publik seperti RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), tetapi perkalian itu sendiri bukan operasi yang sulit. Menemukan bilangan prima saja juga tidak menjamin keamanan suatu skema kriptografi.
 
-Selain itu, dalam pemrograman kompetitif (seperti AtCoder atau Codeforces), pengujian keprimaan adalah tema yang sering muncul. Untuk input besar dengan batasan seperti $N \le 10^{18}$, dalam situasi di mana puluhan ribu uji keprimaan perlu dilakukan dalam waktu 1 detik, algoritma tradisional dan naif tidak akan pernah bisa memenuhi batas waktu (Time Limit Exceeded: TLE).
+Kita akan membandingkan pembagian coba-coba, uji Fermat, dan Miller–Rabin, lalu memberikan implementasi C++ untuk bilangan bulat tak negatif 64-bit. Domainnya adalah $0\le N<2^{64}$, bukan bilangan ribuan bit yang digunakan untuk membangkitkan kunci RSA. Waktu eksekusi bergantung pada implementasi dan masukan, sehingga tidak ada jaminan durasi atau faktor percepatan universal.
 
-Artikel ini akan membahas secara menyeluruh, mulai dari latar belakang matematika hingga implementasi yang sangat dioptimalkan dalam C++, dari algoritma pengujian keprimaan naif, lalu "Uji [Fermat](https://kenji.blog/id/p/fermat/)" yang merupakan metode pengujian keprimaan probabilistik, dan algoritma pengujian sangat cepat tingkat paling praktis yang mengatasi kelemahannya: "Uji Keprimaan Miller-Rabin". Khususnya untuk bilangan bulat 64-bit ($N < 2^{64}$), artikel ini akan menjelaskan secara rinci bukan hanya pengujian probabilistik tetapi juga metode untuk "100% pasti melakukan pengujian keprimaan (pengujian deterministik)", dan menyediakan kode sumber C++ yang dapat langsung digunakan dalam praktik.
+## 1. Bilangan prima dan pembagian coba-coba
 
----
+Bilangan prima adalah bilangan bulat setidaknya 2 yang hanya memiliki pembagi positif 1 dan dirinya sendiri. Bilangan komposit adalah bilangan bulat setidaknya 2 yang bukan prima. Nol, satu, dan bilangan bulat negatif bukan prima maupun komposit.
 
-# 1. Dasar-dasar Pengujian Keprimaan dan Pembagian Coba-coba (Trial Division)
-
-Bilangan prima (Prime number) adalah bilangan asli lebih besar dari 1 yang tidak memiliki pembagi positif selain 1 dan dirinya sendiri. Mengikuti definisi bilangan prima secara ketat, untuk menguji apakah suatu bilangan bulat $N$ adalah bilangan prima, kita bisa membagi $N$ dengan semua bilangan bulat dari $2$ hingga $N-1$. Jika tidak pernah habis dibagi, maka ia adalah bilangan prima; jika habis dibagi walau hanya sekali, maka ia adalah bilangan komposit (bukan bilangan prima).
-
-Namun, metode ini memiliki kompleksitas waktu $O(N)$. Jika $N$ adalah bilangan besar seperti $10^{18}$, bahkan komputer modern pun akan membutuhkan waktu yang sangat lama untuk menghitungnya.
-
-## Optimasi Pembagian Coba-coba: Pencarian hingga $\sqrt{N}$
-
-Ketika bilangan komposit $N$ dinyatakan sebagai $a \times b = N$ ($a \le b$), maka selalu berlaku $a \le \sqrt{N}$. Oleh karena itu, loop pengujian keprimaan tidak perlu dijalankan hingga $N-1$; cukup memeriksa hingga $\sqrt{N}$ sudah memadai.
+Jika bilangan komposit $N=ab$ memiliki faktor dengan $2\le a\le b$, maka $a\le\sqrt N$. Karena itu, pencarian pembagi cukup sampai akar kuadrat. Periksa 2 terlebih dahulu, lalu hanya kandidat ganjil.
 
 ```cpp
-#include <iostream>
+#include <cstdint>
 
-// Uji keprimaan dengan pembagian coba-coba (O(sqrt(N)))
-bool is_prime_trial_division(long long n) {
-    if (n <= 1) return false;
-    if (n == 2 || n == 3) return true;
+bool is_prime_trial_division(std::int64_t n) {
+    if (n < 2) return false;
+    if (n == 2) return true;
     if (n % 2 == 0) return false;
-    
-    // Hanya periksa bilangan ganjil 3 atau lebih
-    for (long long i = 3; i * i <= n; i += 2) {
+    for (std::int64_t i = 3; i <= n / i; i += 2) {
         if (n % i == 0) return false;
     }
     return true;
 }
 ```
 
-Kompleksitas waktu dari algoritma ini adalah $O(\sqrt{N})$. Jika $N \le 10^{12}$, ia dapat dihitung dalam sekejap, tetapi jika $N \approx 10^{18}$, jumlah perulangan menjadi sekitar $10^9$ kali, dan bahkan implementasi C++ membutuhkan waktu ratusan milidetik hingga beberapa detik, membuatnya tidak cocok untuk evaluasi berulang.
+Perkalian bertanda pada `i*i <= n` dapat mengalami overflow. Untuk nilai positif, syarat ekuivalen `i <= n/i` menghindari perkalian itu. Fungsi ini menerima rentang `std::int64_t` dan juga mengembalikan `false` untuk masukan negatif.
 
----
+Jumlah pembagian pada kasus terburuk adalah $\mathcal{O}(\sqrt N)$. Menguji hanya bilangan ganjil memberi sekitar $\sqrt N/2$ kandidat, tetapi pengujian berulang pada masukan besar tetap dapat mahal. Tidak ada batas jumlah digit desimal yang menentukan kepraktisan secara universal.
 
-# 2. Uji [Fermat](https://kenji.blog/id/p/fermat/): Awal dari Pengujian Keprimaan Probabilistik
+## 2. Fermat dan eksponensiasi modular
 
-Untuk mengatasi batasan metode pembagian coba-coba, "Algoritma Probabilistik (Probabilistic Algorithm)" menggunakan teorema teori bilangan dirancang. Perwakilan dari ini adalah "Uji Keprimaan [Fermat](https://kenji.blog/id/p/fermat/) (Fermat Primality Test)", yang menggunakan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/).
+Teorema kecil Fermat menyatakan bahwa untuk bilangan prima $p$ dan bilangan bulat $a$ dengan $\gcd(a,p)=1$:
 
-## [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/id/p/fermats-little-theorem/))
+$$
+a^{p-1}\equiv1\pmod p.
+$$
 
-Teorema yang ditemukan oleh [Pierre de Fermat](https://kenji.blog/id/p/fermat/) ini menyatakan sebagai berikut.
+Jadi, untuk $N>2$, jika basis $1<a<N-1$ tidak memenuhi kongruensi tersebut, $N$ pasti komposit. Lolos tidak membuktikan keprimaan. Bilangan Carmichael $561=3\cdot11\cdot17$ lolos untuk semua basis yang koprima dengan 561. Namun, basis 3 tidak koprima, dan $3^{560}\bmod561=375$, sehingga gagal. Mengatakan bahwa setiap basis pasti mengelabui uji ini tidak tepat.
 
-> Untuk sembarang bilangan prima $p$ dan sembarang bilangan bulat $a$ yang koprima dengannya (bukan kelipatan $p$), kongruensi berikut berlaku.
-> $$ a^{p-1} \equiv 1 \pmod p $$
-
-Mengambil kontraposisi dari teorema ini, kita dapat mengatakan bahwa "Untuk suatu bilangan bulat $N$ dan bilangan bulat $a$ yang koprima dengan $N$, jika $a^{N-1} \not\equiv 1 \pmod N$, maka $N$ pasti bilangan komposit". Menggunakan properti ini, Uji [Fermat](https://kenji.blog/id/p/fermat/) memilih basis (base) acak $a$ untuk bilangan $N$ yang akan diuji, lalu menghitung $a^{N-1} \pmod N$ dan memeriksa apakah hasilnya $1$.
-
-## Eksponensiasi Modular Cepat (Exponentiation by Squaring)
-
-Untuk melakukan Uji [Fermat](https://kenji.blog/id/p/fermat/), perhitungan eksponensiasi yang besar $a^{N-1} \pmod N$ harus dihitung dengan cepat. "Eksponensiasi Modular (Modular Exponentiation / Binary Exponentiation)" digunakan untuk ini. Kompleksitas waktunya adalah $O(\log N)$, membuatnya sangat cepat.
+Kita tidak perlu membentuk pangkat bilangan bulat secara utuh. Eksponensiasi biner melakukan reduksi modular setelah setiap perkalian. Fungsi-fungsi pembantu berikut dapat dikompilasi secara terpisah. Basis, eksponen, dan operand perkalian adalah bilangan bulat tak negatif 64-bit; modulus `m` adalah bilangan bulat positif 64-bit. Modulus nol memicu pengecualian.
 
 ```cpp
-// Menghitung a^b mod m menggunakan eksponensiasi modular
-long long mod_pow(long long a, long long b, long long m) {
-    long long res = 1;
-    a %= m;
-    while (b > 0) {
-        if (b & 1) res = (__int128_t)res * a % m;
-        a = (__int128_t)a * a % m;
-        b >>= 1;
-    }
-    return res;
-}
-```
-* Di sini, untuk mencegah overflow, perkalian perantara dipertahankan menggunakan ekstensi GCC/Clang `__int128_t` (bilangan bulat 128-bit).
-
-## Pseudoprima dan Bilangan Carmichael (Carmichael Numbers)
-
-Uji [Fermat](https://kenji.blog/id/p/fermat/) sangat kuat, tetapi memiliki kelemahan yang fatal. Artinya, ada bilangan sedemikian rupa sehingga meskipun $N$ adalah komposit, $a^{N-1} \equiv 1 \pmod N$ berlaku untuk semua $a$ ($a$ koprima dengan $N$).
-
-Bilangan semacam itu disebut "pseudoprima absolut (absolute pseudoprimes)" atau "Bilangan Carmichael". Bilangan Carmichael terkecil adalah $561 = 3 \times 11 \times 17$.
-Karena adanya bilangan Carmichael, pengujian deterministik dengan "probabilitas 100%" tidak mungkin dilakukan hanya dengan Uji [Fermat](https://kenji.blog/id/p/fermat/). Tidak peduli berapa banyak nilai $a$ berbeda yang dicoba, bilangan seperti $561$ akan selalu berpura-pura menjadi bilangan prima.
-
----
-
-# 3. Uji Keprimaan Miller-Rabin (Miller-Rabin Primality Test)
-
-"Uji Keprimaan Miller-Rabin", yang dirancang oleh Gary L. Miller dan Michael O. Rabin, dengan luar biasa mengatasi kelemahan Uji [Fermat](https://kenji.blog/id/p/fermat/) (adanya bilangan Carmichael).
-Saat ini, ini paling banyak digunakan sebagai algoritma pengujian keprimaan berkecepatan tinggi yang praktis dalam perpustakaan internal berbagai bahasa pemrograman dan pembuatan kunci dalam sistem kriptografi.
-
-## Prinsip Matematika
-
-Selain [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/), algoritma Miller-Rabin menggunakan properti bahwa "dalam bidang sisa (residual field) modulo bilangan prima ($\mathbb{Z}/p\mathbb{Z}$), solusi dari $x^2 \equiv 1 \pmod p$ terbatas pada $x \equiv 1$ atau $x \equiv -1$" (jika modulo bilangan komposit, mungkin ada akar kuadrat non-trivial lainnya).
-
-Jika Anda mengurangi $1$ dari bilangan ganjil $N$ yang akan diuji, $N-1$ selalu menjadi genap. Oleh karena itu, $N-1$ dibagi dengan $2$ sebanyak mungkin, dan dinyatakan dalam bentuk berikut.
-$$ N-1 = d \cdot 2^s $$
-(Di mana $d$ ganjil dan $s \ge 1$)
-
-Untuk basis acak $a$ ($1 < a < N-1$), diverifikasi apakah $a^{N-1} \equiv 1 \pmod N$ sesuai dengan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/), tetapi perhitungannya dilakukan secara bertahap.
-Secara khusus, ini terus mengkuadratkan dalam urutan: $a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$.
-
-Kondisi agar Uji Miller-Rabin menentukan $N$ sebagai "prima (atau kemungkinkan besar prima)" adalah jika **salah satu** dari hal berikut berlaku.
-
-1. $a^d \equiv 1 \pmod N$
-2. Terdapat suatu $r$ ($0 \le r < s$) sedemikian rupa sehingga $a^{d \cdot 2^r} \equiv -1 \pmod N$.
-   * Dalam aritmatika modulo C++, $-1 \pmod N$ adalah $N-1$.
-
-Jika $N$ adalah bilangan prima, kondisi ini pasti akan dipenuhi untuk sembarang $a$. Sebaliknya, jika $N$ adalah bilangan komposit, secara matematis terbukti bahwa ketika $a$ acak dipilih, probabilitas bahwa kondisi ini terpenuhi (probabilitas tertipu) kurang dari $\frac{1}{4}$.
-Dengan $k$ pengujian independen, probabilitas positif palsu menjadi kurang dari $\left(\frac{1}{4}\right)^k$, yang pada praktiknya dapat dianggap nol. Tidak ada bilangan yang "benar-benar bisa menipu" seperti bilangan Carmichael.
-
-## Alur Algoritma Metode Miller-Rabin (Flowchart Mermaid)
-
-Gambar di bawah ini menunjukkan alur logika dari satu uji Miller-Rabin (uji untuk satu basis $a$).
-
-```mermaid
-graph TD
-    Start["Mulai pengujian (Input: N, a)"] --> CalcDS["Hitung d (ganjil) dan s sedemikian sehingga N-1 = d * 2^s"]
-    CalcDS --> CalcX["Hitung x = a^d mod N"]
-    CalcX --> CheckX1{"x == 1 atau x == N-1 ?"}
-    CheckX1 -- Ya --> ReturnTrue["Kemungkinan Prima (Probably Prime)"]
-    CheckX1 -- Tidak --> LoopStart["Mulai loop dari r = 1 hingga s-1"]
-    
-    LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- Tidak --> ReturnFalse["Pasti Komposit (Composite)"]
-    LoopCondition -- Ya --> SquareX["Hitung x = (x * x) mod N"]
-    
-    SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- Ya --> ReturnTrue
-    CheckXMinus1 -- Tidak --> CheckXOne{"x == 1 ?"}
-    
-    CheckXOne -- Ya --> ReturnFalse
-    CheckXOne -- Tidak --> LoopNext["Tingkatkan r sebanyak 1 lalu lanjut"]
-    LoopNext --> LoopCondition
-```
-
----
-
-# 4. Pengujian Deterministik untuk Bilangan Bulat 64-bit
-
-Meskipun Uji Keprimaan Miller-Rabin pada asalnya adalah algoritma "probabilistik", saat batasan atas $N$ tetap, kita dapat melakukan pengujian keprimaan "100% pasti" dengan mencoba sekumpulan spesifik $a$ (basis).
-Ini disebut **Uji Miller-Rabin Deterministik (Deterministic Miller-Rabin Test)**.
-
-Penelitian oleh Jim Sinclair dan lainnya telah menunjukkan bahwa untuk semua bilangan bulat $N < 2^{64}$ (sekitar $1.8 \times 10^{19}$), pengujian yang cukup dan sepenuhnya deterministik dapat dicapai dengan menguji menggunakan $7$ bilangan prima berikut sebagai basis $a$.
-
-**Daftar basis $a$ yang akan diuji:**
-`{2, 325, 9375, 28178, 450775, 9780504, 1795265022}`
-
-Sebagai alternatif, pengujian sempurna untuk $N < 2^{64}$ dapat dilakukan dengan kumpulan yang banyak diketahui dengan menggunakan $12$ bilangan prima berikut.
-`{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37}`
-
-Kali ini, untuk meningkatkan kesederhanaan dan keandalan algoritma, kita akan menggunakan pendekatan yang memakai $12$ bilangan prima tersebut sebagai basis (atau pendekatan $7$ basis yang lebih optimal). Dalam implementasi C++, kita akan melakukan optimasi untuk meminimalkan jumlah tes dengan memisahkan rentang menggunakan pencabangan kondisi.
-
----
-
-# 5. Implementasi Tingkat Lanjut di C++ (Highly Optimized C++ Implementation)
-
-Sekarang, mari satukan teori matematika dan desain algoritma dari penjelasan di atas, dan menyajikan kode implementasi fungsi pengujian keprimaan Miller-Rabin tingkat paling kuat di C++ modern.
-
-## Poin Penting Implementasi
-1. **Menghindari Overflow pada Perkalian Bilangan Bulat 64-bit:**
-   Ketika $N \approx 10^{18}$, nilai dari $x \times x$ dalam perkalian modulo dapat mencapai hingga $10^{36}$, yang dengan mudah melewati nilai maksimum dari bilangan bulat 64-bit standar (`uint64_t` atau `long long`), yaitu $1.8 \times 10^{19}$.
-   Untuk mengatasi masalah ini, kita menggunakan tipe data diperluas dari GCC dan Clang, yaitu `__int128_t` (atau `unsigned __int128`), dan setelah menghitung dengan akurasi 128-bit, kita akan memodulokannya. Ini memungkinkan perkalian sisa yang cepat tanpa menggunakan algoritma kompleks.
-
-2. **Pemilihan Basis Deterministik:**
-   Ketika nilai $N$ kecil, kita mengoptimalkannya sehingga hanya sedikit basis (base) yang perlu diuji.
-
-## Kode Sumber C++ Lengkap
-
-Berikut adalah kode sumber versi lengkap yang siap digunakan dalam praktiknya. Kode ini dapat langsung disalin dan digunakan dalam lingkungan seperti pemrograman kompetitif.
-
-```cpp
-#include <iostream>
-#include <vector>
 #include <cstdint>
-#include <initializer_list>
+#include <stdexcept>
 
-using namespace std;
+#if !defined(__SIZEOF_INT128__)
+#error "This example requires unsigned __int128 support"
+#endif
 
-// (a * b) mod m yang cepat dengan bilangan bulat 128-bit
-inline uint64_t mod_mul(uint64_t a, uint64_t b, uint64_t m) {
-    return (uint64_t)((unsigned __int128)a * b % m);
+using u64 = std::uint64_t;
+using u128 = unsigned __int128;
+
+u64 mod_mul(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    return static_cast<u64>(static_cast<u128>(a) * b % m);
 }
 
-// Menghitung (base^exp) mod m menggunakan eksponensiasi modular
-uint64_t mod_pow(uint64_t base, uint64_t exp, uint64_t m) {
-    uint64_t res = 1;
+u64 mod_pow(u64 base, u64 exp, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
     base %= m;
     while (exp > 0) {
-        if (exp & 1) res = mod_mul(res, base, m);
+        if (exp & 1) result = mod_mul(result, base, m);
         base = mod_mul(base, base, m);
         exp >>= 1;
     }
-    return res;
+    return result;
+}
+```
+
+Hasilnya adalah sisa tak negatif terkecil. Eksponen nol mengembalikan $1\bmod m$, sehingga hasilnya nol jika modulus satu. Di sini $0^0$ juga mengikuti konvensi komputasi tersebut. Mengirim basis negatif langsung ke parameter tanpa tanda berada di luar penggunaan yang dimaksud.
+
+`unsigned __int128` adalah ekstensi, bukan tipe dalam standar ISO C++. GCC menyediakannya pada target yang sesuai, dan kode mendeteksi ketiadaan dukungan saat kompilasi. Tidak diasumsikan bahwa kode ini berjalan tanpa perubahan pada semua lingkungan MSVC; lihat [dokumentasi GCC](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html). Untuk menampung semua hasil perkalian dua nilai tanpa tanda 64-bit, diperlukan penyimpanan tanpa tanda 128-bit; tipe bertanda 128-bit tidak mencakup semua hasil itu.
+
+## 3. Syarat Miller–Rabin dan makna probabilitas
+
+Modulo bilangan prima ganjil, akar kuadrat dari 1 hanya 1 dan −1. Miller–Rabin menggabungkan sifat ini dengan teorema kecil Fermat. Untuk bilangan ganjil $N\ge3$, tuliskan:
+
+$$
+N-1=d\,2^s,\qquad d\text{ is odd},\quad s\ge1.
+$$
+
+Artinya, d ganjil. Basis $a$ dengan $1<a<N-1$ lolos jika salah satu syarat berikut terpenuhi:
+
+$$
+a^d\equiv1\pmod N
+\quad\text{or}\quad
+\exists r\ (0\le r<s):\ a^{d2^r}\equiv-1\pmod N.
+$$
+
+Bilangan prima selalu lolos; kegagalan membuktikan bahwa bilangan itu komposit. Jika pengkuadratan berulang menghasilkan 1 padahal nilai sebelumnya bukan 1 maupun −1, hal itu juga membuktikan bahwa bilangan tersebut komposit. Sisa tak negatif terkecil dari −1 adalah $N-1$, tetapi ekspresi C++ bertanda `-1 % N` tidak mengembalikan nilai itu. Misalnya, `-1 % 7` menghasilkan −1. Bedakan sisa matematis dari [aturan pembagian dan sisa C++](https://eel.is/c++draft/expr.mul).
+
+Untuk suatu bilangan komposit ganjil tetap $N$, setiap basis yang dipilih secara independen dan seragam dari $2\le a\le N-2$ lolos dengan probabilitas paling tinggi $1/4$. Maka probabilitas lolos secara keliru dalam seluruh $k$ putaran memenuhi:
+
+$$
+\Pr[\text{all }k\text{ rounds pass}\mid N\text{ is composite}]\le4^{-k}.
+$$
+
+Ini adalah probabilitas kesalahan atas pemilihan basis secara acak. Nilai itu tidak dapat langsung dinyatakan ulang sebagai probabilitas $4^{-k}$ bahwa bilangan yang telah lolos pengujian itu sebenarnya komposit. Argumen ini juga tidak berlaku untuk sembarang himpunan basis tetap. Untuk N=3, interval basis kosong, sehingga implementasi menanganinya lebih dahulu. [Makalah asli Rabin](https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf) juga membedakan penerimaan probabilistik dari bukti keprimaan.
+
+Diagram berikut menunjukkan satu putaran dengan basis biasa. N=3 sudah ditangani; masukan ganjil harus mempunyai basis yang dapat dipilih dari interval tersebut.
+
+```mermaid
+graph TD
+    Start["Satu putaran: N ganjil setidaknya 3; basis antara 2 dan N-2"] --> DS["N-1 = d*2^s dengan d ganjil"]
+    DS --> Power["x = a^d mod N"]
+    Power --> First{"Apakah x sama dengan 1 atau N-1?"}
+    First -- Ya --> Pass["Lolos basis ini: bukan bukti keprimaan"]
+    First -- Tidak --> Init["Tetapkan r=1"]
+    Init --> More{"Apakah r kurang dari s?"}
+    More -- Tidak --> Fail["Komposit"]
+    More -- Ya --> Square["x = x*x mod N"]
+    Square --> Minus{"Apakah x sama dengan N-1?"}
+    Minus -- Ya --> Pass
+    Minus -- Tidak --> One{"Apakah x sama dengan 1?"}
+    One -- Ya --> Fail
+    One -- Tidak --> Next["Tambah r sebanyak 1"]
+    Next --> More
+```
+
+## 4. Uji deterministik dalam rentang tetap
+
+Dalam rentang bilangan bulat terbatas, himpunan basis yang memadai berdasarkan hasil verifikasi yang diketahui memungkinkan pengujian tanpa keacakan. [Catatan basis SPRP](https://miller-rabin.appspot.com/) mencantumkan syarat yang digunakan di sini. Semua batas atas bersifat ketat.
+
+| Rentang masukan | Basis yang diuji |
+| --- | --- |
+| $N<4759123141$ | 2, 7, 61 |
+| $N<1122004669633$ | 2, 13, 23, 1662803 |
+| $N<2^{64}$ | 2, 325, 9375, 28178, 450775, 9780504, 1795265022 |
+
+Himpunan terakhir berisi tujuh basis bilangan bulat, bukan tujuh bilangan prima: 325, misalnya, komposit. Catatan itu mengatribusikan hasil tujuh basis kepada Jim Sinclair pada 2011. Artikel ini tidak mengulang seluruh pencarian 64-bit secara independen.
+
+Alternatifnya, dua belas bilangan prima pertama `2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37` juga cukup untuk rentang 64-bit ini. [Hasil Sorenson–Webster](https://arxiv.org/abs/1509.00864) memberikan 318665857834031151167461 sebagai bilangan komposit terkecil yang merupakan pseudoprima kuat untuk kedua belas basis; nilainya melebihi $2^{64}$. Implementasi berikut menggunakan cabang 3, 4, dan 7 basis pada tabel, bukan alternatif dua belas basis.
+
+## 5. Contoh C++ lengkap
+
+Tipe masukan `u64` mencakup $0\le N\le2^{64}-1$. Nol dan satu mengembalikan `false`, tetapi bukan komposit, jadi keluaran menggunakan `Not prime`. Perkalian modular mengonversi tipe sebelum membentuk hasil kali. Setiap basis direduksi modulo N; jika menjadi nol, hanya basis itu yang dilewati dan basis lain tetap diperiksa. Basis nol sendiri tidak menentukan apakah seluruh bilangan prima atau komposit.
+
+Blok berikut adalah program lengkap beserta fungsi pembantunya. Tidak perlu menggabungkan lagi blok-blok sebelumnya. Pada target GCC yang sesuai, kompilasi dapat dilakukan dengan perintah seperti `g++ -std=c++17 -O2 primality.cpp -o primality`.
+
+```cpp
+#include <cstdint>
+#include <stdexcept>
+
+#if !defined(__SIZEOF_INT128__)
+#error "This example requires unsigned __int128 support"
+#endif
+
+using u64 = std::uint64_t;
+using u128 = unsigned __int128;
+
+u64 mod_mul(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    return static_cast<u64>(static_cast<u128>(a) * b % m);
 }
 
-// Pengujian deterministik bilangan bulat 64bit menggunakan metode pengujian keprimaan Miller-Rabin
-bool is_prime_miller_rabin(uint64_t n) {
-    // Pengecekan awal untuk nilai batas dan bilangan prima kecil
-    if (n < 2) return false;
-    if (n == 2 || n == 3 || n == 5 || n == 7) return true;
-    if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0 || n % 7 == 0) return false;
+u64 mod_pow(u64 base, u64 exp, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
+    base %= m;
+    while (exp > 0) {
+        if (exp & 1) result = mod_mul(result, base, m);
+        base = mod_mul(base, base, m);
+        exp >>= 1;
+    }
+    return result;
+}
 
-    // Faktorisasi n-1 menjadi bentuk d * 2^s
-    uint64_t d = n - 1;
-    int s = 0;
-    while ((d & 1) == 0) {
-        d >>= 1;
-        s++;
+#include <iostream>
+#include <initializer_list>
+#include <vector>
+
+bool is_prime_miller_rabin(u64 n) {
+    if (n < 2) return false;
+    for (u64 p : {2ULL, 3ULL, 5ULL, 7ULL}) {
+        if (n == p) return true;
+        if (n % p == 0) return false;
     }
 
-    // Daftar basis yang digunakan untuk pengujian
-    // Optimasi untuk meminimalkan jumlah basis yang diuji berdasarkan ukuran N
-    vector<uint64_t> bases;
+    u64 d = n - 1;
+    unsigned s = 0;
+    while ((d & 1) == 0) {
+        d >>= 1;
+        ++s;
+    }
+
+    std::vector<u64> bases;
     if (n < 4759123141ULL) {
         bases = {2, 7, 61};
     } else if (n < 1122004669633ULL) {
         bases = {2, 13, 23, 1662803};
     } else {
-        // 7 basis yang bersifat deterministik untuk semua bilangan N < 2^64
         bases = {2, 325, 9375, 28178, 450775, 9780504, 1795265022};
     }
 
-    // Jalankan pengujian untuk setiap basis
-    for (uint64_t a : bases) {
+    for (u64 a : bases) {
         a %= n;
-        if (a == 0) continue; // Jika a kelipatan n, tak bisa diuji tapi ia bukan prima
+        if (a == 0) continue; // No witness from this base; keep testing the others.
+        u64 x = mod_pow(a, d, n);
+        if (x == 1 || x == n - 1) continue;
 
-        uint64_t x = mod_pow(a, d, n);
-        if (x == 1 || x == n - 1) continue; // Kondisi 1 terpenuhi, lanjut ke basis berikutnya
-
-        bool composite = true;
-        // Loop sebanyak s-1 kali (x = x^2 mod n)
-        for (int r = 1; r < s; r++) {
+        bool passed = false;
+        for (unsigned r = 1; r < s; ++r) {
             x = mod_mul(x, x, n);
             if (x == n - 1) {
-                composite = false; // Kondisi 2 terpenuhi, kemungkinan prima
+                passed = true;
                 break;
             }
+            if (x == 1) return false;
         }
-        
-        // Pasti komposit jika tak satu pun kondisi yang terpenuhi
-        if (composite) return false;
+        if (!passed) return false;
     }
-
-    // Pasti prima jika lolos kondisi di semua basis
     return true;
 }
 
 int main() {
-    // Sampel uji coba
-    vector<uint64_t> test_cases = {
-        1000000007,           // Bilangan prima yang terkenal
-        998244353,            // Bilangan prima yang terkenal
-        1000000000000000003,  // Prima di sekitar 10^18
-        1000000000000000007,  // Bilangan komposit (10^18 + 7)
-        561,                  // Bilangan Carmichael (Bilangan komposit)
-        18446744073709551557ULL // Salah satu bilangan prima terbesar di sekitar 2^64
+    const std::vector<u64> cases = {
+        0, 1, 2, 73, 561, 1000000007, 998244353,
+        1000000000000000003ULL, 1000000000000000007ULL,
+        18446744073709551557ULL, 18446744073709551615ULL
     };
-
-    for (uint64_t n : test_cases) {
-        cout << n << " is " 
-             << (is_prime_miller_rabin(n) ? "Prime" : "Composite") 
-             << endl;
+    for (u64 n : cases) {
+        std::cout << n << " is "
+                  << (is_prime_miller_rabin(n) ? "Prime" : "Not prime") << '\n';
     }
-
-    return 0;
 }
 ```
 
----
+Keluaran menggolongkan 0 dan 1 sebagai `Not prime`; 2 dan 73 sebagai `Prime`; 561 sebagai `Not prime`; 1000000007, 998244353, dan 1000000000000000003 sebagai `Prime`; 1000000000000000007 sebagai `Not prime`; 18446744073709551557 sebagai `Prime`; dan 18446744073709551615 sebagai `Not prime`. Bilangan komposit terakhir adalah $2^{64}-1$. Ini adalah contoh pembelajaran dan pengujian bilangan dalam rentang tersebut, bukan pembangkit prima kriptografis, implementasi waktu konstan, atau pustaka yang memvalidasi string masukan.
 
-# 6. Kompleksitas Algoritma dan Evaluasi Performa
+## 6. Kompleksitas dan perkalian Montgomery
 
-Mari bahas performa dari algoritma yang diimplementasikan.
+Jika satu perkalian modular dihitung sebagai satu operasi, eksponensiasi biner dan satu putaran Miller–Rabin memakai $\mathcal{O}(\log N)$ operasi; pengujian k basis memakai $\mathcal{O}(k\log N)$. Pembagian coba-coba membutuhkan $\mathcal{O}(\sqrt N)$ pembagian. Dalam panjang masukan $b=\lfloor\log_2 N\rfloor+1$, Miller–Rabin memakai $\mathcal{O}(kb)$ perkalian modular. Untuk bilangan bulat berpresisi sembarang, kompleksitas bit juga harus memasukkan biaya perkalian dan reduksi modular.
 
-## Kompleksitas Waktu (Time Complexity)
-* **Pembagian Coba-coba:** $O(\sqrt{N})$
-* **Uji [Fermat](https://kenji.blog/id/p/fermat/):** Penghitungan pangkat $O(\log N) \times k$ ($k$ adalah jumlah percobaan)
-* **Metode Miller-Rabin:** Penghitungan pangkat dan loop $O(\log N) \times k$
+Rentang tetap ini memerlukan paling banyak tujuh basis. Akan tetapi, satu bit dapat memerlukan perkalian bersyarat selain pengkuadratan, dan rangkaian pengkuadratan berikutnya menambah operasi. Jadi, $7\times64=448$ bukan batas semua operasi dasar. Perbandingan waktu sebaiknya menyebutkan CPU, kompilator, opsi optimasi, himpunan masukan, dan metode pengukuran.
 
-Pada lingkungan 64-bit ($N \le 2^{64}$), metode Miller-Rabin deterministik di atas memeriksa paling banyak hanya $7$ basis. Oleh karena itu, kita dapat menganggap $k \le 7$ sebagai konstanta, dan keseluruhan kompleksitas waktu secara ketat adalah $O(\log N)$.
-Bahkan untuk kasus maksimum ($N \approx 10^{19}$), jumlah eksekusi langkah tertahan pada maksimum $7 \times 64 = 448$ operasi dasar, dan waktu eksekusi kurang dari beberapa mikrodetik ($10^{-6}$ detik). Dibandingkan dengan $O(\sqrt{N})$ dari metode pembagian coba-coba (jumlah perulangan $\approx 4 \times 10^9$ kali), peningkatan kecepatannya mencapai **jutaan kali**.
+Perkalian Montgomery mengubah representasi untuk menghindari pembagian oleh modulus ketika operasi berulang memakai modulus yang sama. Dalam konstruksi umum dengan basis penomoran (radix) berupa pangkat dua, modulus harus ganjil dan koprima dengan basis penomoran itu. Selain perkalian dan pergeseran, ada penjumlahan, penanganan carry, serta pengurangan bersyarat; konversi dan praperhitungan juga memiliki biaya. Tidak ada jaminan percepatan dua atau tiga kali. Lihat prosedur dan syarat dalam [HAC bab 14, algoritma 14.32, 14.36, dan 14.94](https://cacr.uwaterloo.ca/hac/about/chap14.pdf). Teknik ini tidak diimplementasikan dalam kode di atas.
 
-## Optimasi Lebih Lanjut: Perkalian Montgomery (Montgomery Multiplication)
+## 7. Penutup
 
-Dalam implementasi artikel ini, kita menggunakan tipe data diperluas `__int128_t` untuk bilangan bulat 128-bit dalam melakukan pembagian (operasi modulo `%`). Bahkan pada CPU modern, operasi pembagian bilangan bulat (instruksi DIV) adalah operasi berbiaya tinggi yang membutuhkan puluhan siklus dibandingkan dengan penambahan atau perkalian.
-
-Pembuat pustaka dan pemrogram kompetitif yang mencari optimasi batas maksimal kadang menerapkan metode yang disebut **Perkalian Montgomery (Montgomery Multiplication)**. Perkalian Montgomery adalah algoritma luar biasa yang menggantikan operasi modulo berbiaya tinggi (pembagian) dengan "hanya pergeseran bit dan perkalian" dengan memetakan angka ke "ruang Montgomery" khusus.
-Dengan menyematkan fungsi ini ke dalam perkalian modular uji Miller-Rabin, kecepatan eksekusi dapat ditingkatkan lebih jauh sekitar dua hingga tiga kali lipat. Karena topik ini sangat mendalam, kita akan membahasnya lebih rinci dalam artikel terpisah.
-
----
-
-# 7. Kesimpulan
-
-Artikel ini telah merangkum penjelasan lengkap mengenai pengujian keprimaan, mulai dari prinsip dasar hingga lanjutan.
-Mari kita lihat kembali poin-poin utamanya.
-
-1. **Metode pembagian coba-coba** sangat pasti, tetapi karena kompleksitas perhitungannya adalah $O(\sqrt{N})$, itu tidak praktis ketika $N$ lebih besar dari $10^{12}$.
-2. **Uji [Fermat](https://kenji.blog/id/p/fermat/)** sangat cepat dengan $O(\log N)$, tetapi memiliki kelemahan fatal yaitu bisa tertipu oleh pseudoprima absolut seperti bilangan Carmichael.
-3. **Uji Keprimaan Miller-Rabin** memecahkan kelemahan dari Uji [Fermat](https://kenji.blog/id/p/fermat/), dan ini adalah algoritma paling kuat dan praktis.
-4. Dalam implementasi C++, kita dapat menangani overflow secara aman dalam perkalian 64-bit menggunakan `__int128_t`.
-5. Selama bilangan bulat berada dalam rentang 64-bit ($N < 2^{64}$), kita bisa membuat algoritmanya menjadi **deterministik (100% akurat) dan bukan probabilistik** dengan memilih sekumpulan tertentu $7$ atau $12$ bilangan prima sebagai basis.
-
-Pengujian keprimaan berkecepatan tinggi adalah teknik yang tak terhindarkan saat melakukan komputasi yang menangani angka sangat besar. Kode sumber Miller-Rabin di C++ yang disediakan dalam artikel ini terbukti kuat untuk diterapkan langsung di praktik. Silakan gunakan untuk proyek atau kompetisi algoritma Anda sendiri.
+Pembagian coba-coba mencari pembagi secara langsung, sedangkan Fermat menyingkirkan kandidat melalui kongruensi. Miller–Rabin memakai syarat yang lebih kuat. Bentuk probabilistik umum harus dibedakan dari pengujian deterministik dengan himpunan basis terverifikasi dan rentang masukan terbatas.
 
 ```mermaid
 graph LR
-    TrialDivision["Pembagian Coba-coba (O(√N))"] --> Fermat["Uji Fermat (O(log N), punya kelemahan)"]
-    Fermat --> MillerRabin["Metode Miller-Rabin (O(log N), dapat dideterministikkan)"]
-    MillerRabin --> Montgomery["+ Perkalian Montgomery (Peningkatan kecepatan konstanta)"]
-    
-    style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px
+    Trial["Pembagian coba-coba: mencari pembagi"] --> Fermat["Fermat: menyingkirkan lewat kongruensi"]
+    Fermat --> MR["Miller-Rabin: syarat lebih kuat"]
+    MR --> Fixed["Basis terverifikasi dan rentang tetap: uji deterministik"]
+    MR --> Mont["Montgomery: memperbaiki aritmetika modular"]
 ```
 
-Dunia algoritma tempat pemrograman dan matematika saling berpapasan sangat indah dan dalam. Semoga artikel ini bisa membantu proses belajar Anda.
+Ketepatan bergantung pada batas masukan, tipe bilangan bulat, overflow, syarat modulus, dan penanganan basis, selain matematika. Jaminan kode 64-bit tidak dapat diperluas ke bilangan dengan panjang sembarang atau ke seluruh sistem kriptografi.
 
----
-*Referensi:*
-- *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
-- *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+### Referensi
 
+- [HAC bab 4: Fermat, Miller–Rabin, dan syarat probabilitas kesalahan](https://cacr.uwaterloo.ca/hac/about/chap4.pdf) (sumber 1996; bedakan hasil keprimaan berikutnya dan standar pembangkitan kunci saat ini)
+- [Rabin (1980): Probabilistic Algorithm for Testing Primality](https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf)
+- [Catatan basis SPRP untuk Miller–Rabin deterministik](https://miller-rabin.appspot.com/)
+- [Sorenson–Webster: Strong Pseudoprimes to Twelve Prime Bases](https://arxiv.org/abs/1509.00864) (pracetak 2015, publikasi jurnal 2017)
+- [GCC: ekstensi bilangan bulat 128-bit](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)
+- [Draf C++: pembagian dan sisa](https://eel.is/c++draft/expr.mul)
+- [HAC bab 14: aritmetika Montgomery](https://cacr.uwaterloo.ca/hac/about/chap14.pdf)
