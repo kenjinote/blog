@@ -420,6 +420,76 @@
         }
       ],
       "validation": "docs/translation-review/batch-018-pt-validation.json"
+    },
+    "post/cppで実装する高速な素数判定アルゴリズム/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/cppで実装する高速な素数判定アルゴリズム/index.md",
+      "sourceHash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+      "translationHash": "f09689b252fe38c161fb2b586ecc72a0b6561b968553f1606233517bf65ba378",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original French metadata/body in three bounded outputs, revised against corrected Japanese and reviewed English, then independently reread complete revised metadata/body in two bounded outputs. Compared introduction/seven sections,3row base table,3C++blocks,2diagrams and7external reference targets. Corrected awkward introduction/implementation syntax and irrelevant Flux hyperlink; no unread language marked reviewed."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished test de primalité/factorisation/génération de nombres premiers, premier/composé/non premier, bases entières/bases premières, test/démonstration, choix indépendant et uniforme/ensemble fixe, conditional error/posterior compositeness, résidu non négatif/C++reste, entier signé/non signé, dépassement/exception and coût en bits. Used premier avec for coprimality, pseudo-premier fort and base de numération/retenues for Montgomery, without falsely declaring every prior valid term incorrect."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All4display formulas exactly match corrected source and inline conditions/strict bounds were compared. Verified Fermat561base3counterexample375, sevenintegerbase325composite, independentuniform conditional4^-k not posterior assertion, published3/4/7ranges and12prime bound>2^64, unsigned64endpoint and operation-count/bit-cost distinction. All41FrenchTeX expressions survive HTML."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All3C++blocks exactly match reviewed Japanese source and separately compile without warnings under WSL GCC13.3.0/C++17. Eleven main outputs match. New French harness101275cases passes O2 and UBSanO1: both algorithms against sieve0..50000,4extra signed trial cases,742large/boundary MRcases via independent Python pow and published12base criterion,262multiplication+262power cases and3zero-modulus exceptions. Diagrams14and4edges use Oui/Non and preserve pre-loop exhaustion for s=1/current-base-not-proof labels. No timing/exhaustive64bit/constant-time/security certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched7unique external HTTPS targets and reviewed French modern-cryptography internal link. Removed erroneous Flux-to-React/state-management hyperlink and repetitive unreviewed Fermat dependencies without omitting concepts. Preserved publication timestamp,slug,image,categories/tags; actual lastmod2026-10-28. Image exists. Minified Hugo19bundles, multilingual1185pages and HTTPS2163HTML/41XML passed;41TeX expressions preserved. Publication pending."
+        }
+      },
+      "summary": "Full French primality-testing review with precise proof/error terminology, removal of unrelated Flux link and independently compiled examples.",
+      "languageSpecificFindings": "Removed Flux hyperlink to unrelated state-management article. Replaced multiplication-as-hard-operation, seven-prime claim, signed remainder statement, signed128fullrange and zero-base comment. Clarified test/démonstration and premiers avec/coprimality, signedness and randomized conditional error. Replaced unnatural attribution/pseudo-prime syntax; used base de numération and retenues for Montgomery. Native Oui/Non diagram labels; no universal speed or portability promise.",
+      "limitations": [
+        "AI, not human or native-speaker certification.",
+        "Five other translations unread and unreviewed; no confirmation dates for them.",
+        "Finite tests do not independently prove all2^64 classifications or published base-set search results.",
+        "No visual browser/KaTeX/Mermaid, cryptographic deployment or constant-time audit.",
+        "Full-siteCI and publication pending."
+      ],
+      "references": [
+        {
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html",
+          "scope": "Complete short extension documentation; target dependent signed/unsigned support."
+        },
+        {
+          "url": "https://eel.is/c++draft/expr.mul",
+          "scope": "Complete short multiplicative-operator section: zero modulus UB and truncation/remainder rules; reproduced signed remainder."
+        },
+        {
+          "url": "https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf",
+          "scope": "Parsed opening pages through Theorem1, including random error interpretation, not full proof or implementation sections; obsolete1980 status not reused."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap4.pdf",
+          "scope": "Scoped parsed Fermat/MR sections,4.20/4.23/4.25,Algorithm4.24,Note4.47 and historical notes, not whole chapter or current key-generation audit."
+        },
+        {
+          "url": "https://miller-rabin.appspot.com/",
+          "scope": "3/4/7base records,strictthresholds,attribution,date and base-reduction remarks. Did not reproduce underlying64bitdatabase; zero-base remark means passing that round only."
+        },
+        {
+          "url": "https://arxiv.org/html/1509.00864",
+          "scope": "Parsed introduction/Theorem1.1; first twelve-prime-base strong pseudoprime. Journal metadata2017 separately checked. Not computational-proof replication; generatedHTML2026date not used as historical date."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap14.pdf",
+          "scope": "Scoped parsed14.32/14.36/14.94 and related efficiency/precomputation conditions. OriginalMontgomery1985publisheraccess failed; scan supplied no readable output, so no full original-paper reading claim."
+        }
+      ],
+      "validation": "docs/translation-review/batch-018-fr-validation.json"
     }
   },
   "stages": [
@@ -504,6 +574,22 @@
       "reviewedTranslations": 6,
       "otherTranslationsUnreviewed": 6,
       "validation": "docs/translation-review/batch-018-pt-validation.json",
+      "texExpressions": 41,
+      "displayFormulas": 4,
+      "codeBlocks": 3,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "casesPerOptimizedAndUbsanHarness": 101275,
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-10-28T20:12:04.528287+09:00",
+      "language": "fr",
+      "reviewedTranslations": 7,
+      "otherTranslationsUnreviewed": 5,
+      "validation": "docs/translation-review/batch-018-fr-validation.json",
       "texExpressions": 41,
       "displayFormulas": 4,
       "codeBlocks": 3,
