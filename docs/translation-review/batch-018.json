@@ -210,6 +210,76 @@
         }
       ],
       "validation": "docs/translation-review/batch-018-tw-validation.json"
+    },
+    "post/cppで実装する高速な素数判定アルゴリズム/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/cppで実装する高速な素数判定アルゴリズム/index.md",
+      "sourceHash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+      "translationHash": "1278037ddc07e2b0eafd9e307863e5d58af6eaf58379da8e44ddedb5608fdae5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Spanish metadata/body in three bounded outputs; revised against corrected Japanese and fully reviewed English, then independently reread complete revised Spanish metadata/body in two bounded outputs. Compared introduction and seven sections,3row base table,3C++blocks,2diagrams and7external primary references. No unread language marked reviewed."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished primalidad/factorización/generación de primos; primo/compuesto/no primo; base entera/base prima; prueba algorithmic test/demostración mathematical proof; probabilidad condicional de error/posterior compositeness; elección independiente y uniforme/conjunto fijo; residuo no negativo/C++resto; enteros con signo/sin signo; multiplicación modular/costo en bits; desbordamiento/excepción. Used base de numeración (radix) for Montgomery to distinguish it contextually from an MR test base; avoided calling the radix a square root. Retained valid división por tentativa and coprimo."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All4display formulas exactly match corrected Japanese and inline constraints/quantities were compared. Checked Fermat561base3counterexample375, randomized conditional4^-k not posterior assertion, strict3/4/7thresholds, twelve-prime published bound>2^64, unsigned64endpoint and operation-count/bit-cost distinction. All41SpanishTeX expressions survive HTML."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All3C++blocks exactly match reviewed Japanese source, separately compile without warnings under WSL GCC13.3.0/C++17. Complete11sample outputs match. New Spanish harness101275cases passes O2 and UBSanO1: both algorithms against sieve0..50000,4extra signed trial cases,742large/boundary MRcases via independent Python pow and published12base criterion,262multiplication+262power cases and3zero-modulus exceptions. Two diagrams14and4edges retain pre-loop exhaustion for s=1 and passing-current-base-not-proof labels. Not timing/exhaustive64bit/constant-time/security certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched7unique external HTTPS targets and reviewed Spanish modern-cryptography internal target. Removed repetitive unreviewed Fermat dependencies without omitting theorem or algorithms. Preserved publication timestamp,slug,image,categories/tags and added actual lastmod2026-10-28. Image exists. Minified Hugo19bundles, multilingual1185pages and HTTPS2163HTML/41XML passed;41TeX expressions preserved. Publication pending."
+        }
+      },
+      "summary": "Full Spanish primality-testing review separating algorithmic testing from mathematical proof and verifying all executable examples.",
+      "languageSpecificFindings": "Corrected multiplication-as-hard-operation wording, seven-prime claim, signed -1%N assertion, signed128fulluint64 range and zero-base comment. Explicitly separates prueba/demostración and randomized conditional error/fixed-range deterministic result; retained LatinAmerican computadora/costo where applicable and valid división por tentativa. Montgomery radix described as base de numeración, not a root; no minimum-base, universal speed or portability promise.",
+      "limitations": [
+        "AI, not human or native-speaker certification.",
+        "Eight other translations unread and unreviewed; no confirmation dates for them.",
+        "Finite tests do not independently prove all2^64 classifications or published base-set search results.",
+        "No visual browser/KaTeX/Mermaid, cryptographic deployment or constant-time audit.",
+        "Full-siteCI and publication pending."
+      ],
+      "references": [
+        {
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html",
+          "scope": "Complete short extension documentation; target dependent signed/unsigned support."
+        },
+        {
+          "url": "https://eel.is/c++draft/expr.mul",
+          "scope": "Complete short multiplicative-operator section: zero modulus UB and truncation/remainder rules; reproduced signed remainder."
+        },
+        {
+          "url": "https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf",
+          "scope": "Parsed opening pages through Theorem1, including random error interpretation, not full proof or implementation sections; obsolete1980 status not reused."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap4.pdf",
+          "scope": "Scoped parsed Fermat/MR sections,4.20/4.23/4.25,Algorithm4.24,Note4.47 and historical notes, not whole chapter or current key-generation audit."
+        },
+        {
+          "url": "https://miller-rabin.appspot.com/",
+          "scope": "3/4/7base records,strictthresholds,attribution,date and base-reduction remarks. Did not reproduce underlying64bitdatabase; zero-base remark means passing that round only."
+        },
+        {
+          "url": "https://arxiv.org/html/1509.00864",
+          "scope": "Parsed introduction/Theorem1.1; first twelve-prime-base strong pseudoprime. Journal metadata2017 separately checked. Not computational-proof replication; generatedHTML2026date not used as historical date."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap14.pdf",
+          "scope": "Scoped parsed14.32/14.36/14.94 and related efficiency/precomputation conditions. OriginalMontgomery1985publisheraccess failed; scan supplied no readable output, so no full original-paper reading claim."
+        }
+      ],
+      "validation": "docs/translation-review/batch-018-es-validation.json"
     }
   },
   "stages": [
@@ -255,6 +325,40 @@
       ],
       "casesPerOptimizedAndUbsanHarness": 101275,
       "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-10-28T20:02:41.211952+09:00",
+      "language": "es",
+      "reviewedTranslations": 4,
+      "otherTranslationsUnreviewed": 8,
+      "validation": "docs/translation-review/batch-018-es-validation.json",
+      "texExpressions": 41,
+      "displayFormulas": 4,
+      "codeBlocks": 3,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "casesPerOptimizedAndUbsanHarness": 101275,
+      "publicationPending": true
     }
-  ]
+  ],
+  "publicationDispatch": {
+    "observedAt": "2026-10-28T20:00:31.416716+09:00",
+    "commit": "8979a17c08c18a00ac2833c79d436cabd7b88bf5",
+    "ciRun": 40676526926,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40676526926",
+    "observedStatus": "pending",
+    "reviewedLanguages": [
+      "en",
+      "zh-cn",
+      "zh-tw"
+    ],
+    "otherTranslationsUnreviewed": 9,
+    "publicationPending": true,
+    "plannedPublicPages": 238,
+    "priorRun": 40674107915,
+    "priorRunObservedStatus": "in_progress",
+    "concurrency": "pages cancel-in-progress:false; prior workflow retained."
+  }
 }

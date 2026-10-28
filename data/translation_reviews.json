@@ -2195,6 +2195,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-018.json",
       "evidenceHash": "d00e3f1e9499660b86e4c3aead4fabe2aad84eefc7c324c635c9daed67679beb"
+    },
+    "post/cppで実装する高速な素数判定アルゴリズム/index.es.md": {
+      "source": "post/cppで実装する高速な素数判定アルゴリズム/index.md",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+      "translationHash": "1278037ddc07e2b0eafd9e307863e5d58af6eaf58379da8e44ddedb5608fdae5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-018.json",
+      "evidenceHash": "a2e4995c1dc7deed14a5594003a68245fcc6074bfa0d3e9b1b958276c5bce6a9"
     }
   }
 }
