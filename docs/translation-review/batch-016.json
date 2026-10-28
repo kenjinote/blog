@@ -462,17 +462,83 @@
         }
       ],
       "validation": "docs/translation-review/batch-016-fr-validation.json"
+    },
+    "post/public-key-cryptography-rsa-ecc/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/public-key-cryptography-rsa-ecc/index.md",
+      "sourceHash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "translationHash": "eb182a7b93bbab320ce02a3d1da2020f2d5d6dc53f62eefd5780701a045c7421",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full original German metadata/body in two bounded outputs, then independently reread full revised metadata/body in two bounded outputs. Compared all six sections, conclusion, references and both diagrams against corrected Japanese. Checked final shared-value pronoun/transcript correction before recording. Preserved the full argument, restored subgroup/exponent and noncoprime proof conditions, and separated protocol roles and quantum complexity. Nine display formulas reused exactly from Japanese then read in article; mechanical reuse alone is not prose review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used Schluesselvereinbarung/Schluesseltransport/Schluesseletablierung, gemeinsamer Wert/abgeleitete Schluessel, Authentifizierung/Pruefung, Untergruppenerzeuger/Primitivwurzel, Primzahl/teilerfremd, privater Exponent versus whole privater Schluessel, ganzzahliger Repraesentant/Bytefolge, endlicher Koerper/Primkoerper/Charakteristik/nichtsingulaer, Ordnung/Skalar, neutrales Element/unendlich ferner Punkt, Punktverdopplung/Skalarmultiplikation and chinesischer Restsatz. Retained correct existing teilerfremd wording. Used Aufzeichnung for handshake transcript to avoid protocol/log ambiguity and broad Schluesseletablierung for PQC."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all nine display formulas exactly and checked relevant inline assumptions. DH uses prime subgroup order and nonzero uniform secret exponents; Euler proof retains coprimality and all representatives use primewise zero/nonzero cases and CRT. ECC uses p>3, nonsingularity modulo p, infinity/identity/inverse and y=0 exceptions. Independent fixtures verify100DH pairs, active MITM values13/18,143RSA representatives including23noncoprime,286primewise cases, the e1 flaw,20curve points/400pairs/8000associativity triples/3zero-y doublings and a singular field counterexample. Finite checks are not security proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised German have no executable article code. Read both Mermaid diagrams and arithmetic labels, matching8/2edges with Japanese. Ran independent small mathematical fixtures in verify_batch_016.py, not article compilation or a production implementation audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six HTTPS primary references and scoped supporting evidence in source notes. Made German title natural while preserving publication timestamp, slug, image and categories/tags; image exists. Added actual lastmod2026-10-28. All86German TeX expressions survive minified HTML, including RSA range. Seventeen-bundle Hugo, multilingual1103pages and HTTPS2025HTML/41XML passed; full CI/publication pending."
+        }
+      },
+      "summary": "Full German DH/RSA/ECC overview review against corrected Japanese source, distinguishing group conditions, arithmetic correctness and protocol security roles.",
+      "languageSpecificFindings": "Distinguished Schluesselvereinbarung from Schluesseltransport and broad PQC Schluesseletablierung; privater Exponent from complete key, generator from primitive root and Punktverdopplung from scalar multiplication. Retained accurate teilerfremd, corrected shared-value pronoun with Der Wert and made handshake transcript explicit as Aufzeichnung. Used standard Koerper, Ordnung, Charakteristik and chinesischer Restsatz. Removed unsupported universal factoring/performance/PQC claims and restored noncoprime proof.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "No executable article code; independent mathematical fixtures only, no constant-time/security proof or protocol implementation audit.",
+        "No visual browser/KaTeX/Mermaid audit.",
+        "Four other translations remain unreviewed; no dates added to them.",
+        "Publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7919.html",
+          "scope": "Scoped abstract and5.1–5.2 known-group public validation and exponent excerpts; not universal arbitrary-group validation."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "Scoped2.2–2.3,3,4,10–10.3 and historical bibliography excerpts listed in source notes; not full original historical papers."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Scoped keys/lambda/ranges, RSAEP, OAEP composition and PSS encoding/signature excerpts; not full conformance audit."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Scoped1.2/E.8 RSA transport versus signatures,4.2.8.1,7–7.1 key schedule and7.4.1 serialization excerpts; not prevalence survey."
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+          "scope": "2020 publication metadata and parsed PDF text5.6.1–5.6.1.1/Table2 definitions and comparison rows; not current universal key policy or visual PDF inspection."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Abstract and metadata only, polynomial steps in input size on hypothetical quantum computer; not hardware forecast."
+        }
+      ],
+      "validation": "docs/translation-review/batch-016-de-validation.json"
     }
   },
   "stage": {
     "sourceAndEnglishFullBodyReviewed": true,
-    "otherTranslationsReviewed": 6,
-    "otherTranslationsRemaining": 5,
+    "otherTranslationsReviewed": 7,
+    "otherTranslationsRemaining": 4,
     "fullCiPending": true,
     "publicationPending": true,
     "validation": "docs/translation-review/batch-016-ja-en-validation.json",
     "simplifiedChineseFullBodyReviewed": true,
-    "latestValidation": "docs/translation-review/batch-016-fr-validation.json",
+    "latestValidation": "docs/translation-review/batch-016-de-validation.json",
     "traditionalChineseFullBodyReviewed": true,
     "spanishFullBodyReviewed": true,
     "koreanFullBodyReviewed": true,
@@ -484,15 +550,16 @@
       "es",
       "ko",
       "pt",
-      "fr"
+      "fr",
+      "de"
     ],
     "unreviewedLanguages": [
-      "de",
       "id",
       "hi",
       "ru",
       "ar"
     ],
-    "frenchFullBodyReviewed": true
+    "frenchFullBodyReviewed": true,
+    "germanFullBodyReviewed": true
   }
 }

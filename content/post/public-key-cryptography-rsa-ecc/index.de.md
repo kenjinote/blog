@@ -1,143 +1,197 @@
 ---
-title: "Die Mathematik der Public-Key-Kryptographie: Von RSA zur Elliptischen-Kurven-Kryptographie (ECC)"
-description: "Der Wechsel von der Schwierigkeit der Primfaktorzerlegung zum diskreten Logarithmusproblem."
+title: "Die Mathematik der Public-Key-Kryptographie: von RSA zu elliptischen Kurven (ECC)"
+description: "DH-Schlüsselvereinbarung, RSA und Gruppenoperationen auf elliptischen Kurven: mathematische Voraussetzungen, Sicherheitsannahmen und Rollen in Protokollen."
 date: 2026-09-27T23:50:00+09:00
+lastmod: 2026-10-28
 slug: public-key-cryptography-rsa-ecc
 categories: ["computer-science", "algorithms"]
 tags: ["tech", "cryptography", "security", "math", "algorithm"]
 image: eyecatch.jpg
 ---
 
-In der Internetgesellschaft ist es die „Kryptographietechnologie“, die es uns ermöglicht, jeden Tag sicher zu kommunizieren. Hinter dem Senden und Empfangen aller digitalen Daten wie Online-Banking, E-Mails und SNS-Nachrichten verbergen sich Sicherheitsmechanismen, die durch fortgeschrittene mathematische Theorien gestützt werden. In diesem Artikel erklären wir sehr detailliert den historischen und mathematischen Wechsel von der mathematischen Struktur der RSA-Kryptographie, die die Grundlage der modernen Public-Key-Kryptographie bildete, hin zur Elliptischen-Kurven-Kryptographie (ECC), die eine effizientere und stärkere Sicherheit bietet.
+Public-Key-Kryptographie ermöglicht Kommunikation zwischen Parteien, die vorher keinen gemeinsamen geheimen Schlüssel besitzen. Dieser Artikel erklärt die Mathematik der Diffie–Hellman-Schlüsselvereinbarung (DH), von RSA und der Kryptographie mit elliptischen Kurven (ECC). Gleiche Schlüssellängen bedeuten bei unterschiedlichen Verfahren nicht dieselbe geschätzte Sicherheit. Die Gleichungen allein garantieren auch nicht die Sicherheit der gesamten Kommunikation.
 
-## 1. Die Grenzen der symmetrischen Kryptographie und das Schlüsselverteilungsproblem
+## 1. Symmetrische Kryptographie und Schlüsselverteilung
 
-Die Geschichte der Kryptographie ist alt, und viele kryptographische Methoden wie die Caesar-Chiffre und die Enigma wurden entwickelt. Diese werden grundsätzlich als „symmetrische Kryptographie“ (Symmetric-key cryptography) klassifiziert. Bei der symmetrischen Kryptographie wird derselbe Schlüssel zum Ver- und Entschlüsseln verwendet.
+Die Caesar-Chiffre und Enigma sind historische Beispiele, bei denen Sender und Empfänger geheime Einstellungen teilen. Auch moderne symmetrische Kryptographie verwendet einen gemeinsamen geheimen Schlüssel. Die historischen Verfahren dürfen jedoch nicht mit sicheren modernen Algorithmen gleichgesetzt werden.
 
-### Das Schlüsselverteilungsproblem (Key Distribution Problem)
-Die größte Schwäche der symmetrischen Kryptographie ist die Frage, „wie man den Schlüssel sicher an den Empfänger übermittelt“. Wenn sich der Kommunikationspartner auf der anderen Seite der Erde befindet und der Schlüssel über das Internet gesendet wird, besteht die Gefahr, dass ein Lauscher den Schlüssel stiehlt. Wenn der Schlüssel gestohlen wird, kann die Verschlüsselung leicht geknackt werden. Dieses „Schlüsselverteilungsproblem“ war das größte Hindernis für die sichere Kommunikation in offenen Netzwerken wie dem Internet.
+### Das Schlüsselverteilungsproblem
 
-## 2. Diffie-Hellman-Schlüsselaustausch (Diffie-Hellman Key Exchange)
+Wird ein symmetrischer Schlüssel unverändert über einen ungeschützten Kanal übertragen, erfährt ihn auch ein Lauscher. Die Frage ist daher, wie und mit wem ein gemeinsames Geheimnis vereinbart wird. Public-Key-Techniken helfen dabei, doch auch die Authentifizierung des Gegenübers ist erforderlich.
 
-Im Jahr 1976 veröffentlichten Whitfield Diffie und Martin Hellman eine bahnbrechende Methode zur Lösung dieses Schlüsselverteilungsproblems. Das war der „Diffie-Hellman-Schlüsselaustausch“. Mit dieser Methode wurde es möglich, dass zwei Parteien einen gemeinsamen geheimen Schlüssel sicher austauschen können, selbst wenn der Kommunikationsweg abgehört wird.
+Symmetrische Kryptographie behält ihre Aufgabe. TLS 1.3 verbindet beispielsweise Schlüsselvereinbarung und Authentifizierung mit authentifizierter Verschlüsselung der Daten unter abgeleiteten Schlüsseln. Es verschlüsselt nicht sämtliche Anwendungsdaten durch Public-Key-Operationen.
 
-### Mathematische Grundlage: Das Problem des diskreten Logarithmus
-Die Sicherheit des Diffie-Hellman-Schlüsselaustauschs beruht auf der rechnerischen Schwierigkeit des „Problems des diskreten Logarithmus“ (Discrete Logarithm Problem).
+## 2. Diffie–Hellman-Schlüsselvereinbarung
 
-Angenommen, eine Primzahl $p$ und ihre Primitivwurzel $g$ sind öffentlich bekannt.
-Alice und Bob tauschen den Schlüssel wie folgt aus:
+Diffie und Hellman beschrieben 1976, wie zwei Parteien aus öffentlich ausgetauschten Informationen denselben geheimen Wert berechnen können. Hier betrachten wir DH über einem endlichen Körper.
 
-1. Alice wählt eine geheime Ganzzahl $a$, berechnet $A = g^a \pmod p$ und sendet dies an Bob.
-2. Bob wählt eine geheime Ganzzahl $b$, berechnet $B = g^b \pmod p$ und sendet dies an Alice.
-3. Alice verwendet das empfangene $B$, um $S = B^a \pmod p$ zu berechnen.
-4. Bob verwendet das empfangene $A$, um $S = A^b \pmod p$ zu berechnen.
+### Diskrete Logarithmen und gemeinsamer Wert
 
-Hierbei ist $B^a = (g^b)^a = g^{ba} = g^{ab} = (g^a)^b = A^b \pmod p$, sodass Alice und Bob denselben geheimen Wert $S$ teilen können.
-Der Lauscher Eve kennt $p, g, A, B$, aber es ist rechnerisch extrem schwierig, $a$ aus $A$ zu ermitteln (das Problem des diskreten Logarithmus), wenn die Zahlen groß werden.
+In der multiplikativen Gruppe modulo einer Primzahl $p$ verwenden wir eine von $g$ erzeugte Untergruppe mit großer Primzahlordnung $q$, wobei $q$ ein Teiler von $p-1$ ist. Dieses $g$ erzeugt die Untergruppe und muss keine Primitivwurzel der gesamten multiplikativen Gruppe sein. Reale Protokolle verwenden festgelegte, ausreichend starke Parameter statt selbst erfundener kleiner Werte zum Schutz echter Daten.
+
+1. Alice wählt mit kryptographisch sicherem Zufall gleichverteilt einen geheimen Exponenten $1\le a\le q-1$ und sendet $A=g^a\bmod p$.
+2. Bob wählt ebenso $1\le b\le q-1$ und sendet $B=g^b\bmod p$.
+3. Nach der verfahrensgemäßen Prüfung des öffentlichen Werts des Gegenübers berechnet Alice $B^a\bmod p$ und Bob $A^b\bmod p$.
+
+$$
+B^a\equiv (g^b)^a\equiv g^{ab}\equiv(g^a)^b\equiv A^b\pmod p.
+$$
+
+Den gemeinsamen Wert nennen wir $S$. Aus $A$ den Exponenten $a$ zu bestimmen, ist das diskrete Logarithmusproblem (DLP). Aus $g,A,B$ den Wert $S$ zu berechnen, ist das Computational-Diffie–Hellman-Problem (CDH). Wer DLP lösen kann, kann auch CDH lösen; daraus folgt aber kein Beweis, dass beide Probleme immer gleich schwierig sind. Sicherheitsaussagen über DH müssen die Gruppe, das Protokoll und die Fähigkeiten des Angreifers benennen.
+
+### Authentifizierung, Prüfung öffentlicher Werte und Schlüsselableitung
+
+DH ohne Authentifizierung verhindert keinen Man-in-the-Middle-Angriff, der den Austausch verändert. Durch das Ersetzen öffentlicher Werte kann ein Angreifer mit Alice und Bob jeweils unterschiedliche gemeinsame Werte vereinbaren. Die Prüfung der öffentlichen Werte ersetzt die Authentifizierung des Gegenübers nicht.
+
+Auch die Prüfung hängt von den Parametern ab. Bei der obigen Untergruppe mit Primzahlordnung gehören der korrekte Wertebereich, die Untergruppenzugehörigkeit und der Ausschluss des neutralen Elements dazu. Die Prüfung $1<Y<p-1$ aus RFC 7919 für die dort festgelegten Gruppen mit sicheren Primzahlen ist keine vollständige Prüfvorschrift für beliebige Gruppen.
+
+$S$ wird nicht unmittelbar als symmetrischer Schlüssel verwendet. Der Wert wird protokollgemäß kodiert und mit einer Schlüsselableitungsfunktion (KDF) unter Einbeziehung von Kontextinformationen in Schlüssel für verschiedene Zwecke überführt. Der Schlüsselplan von TLS 1.3 verwendet HKDF und die Aufzeichnung der Handshake-Nachrichten.
 
 ```mermaid
 sequenceDiagram
     participant Alice
     participant Public
     participant Bob
-    Alice->>Public: Einigung auf p, g
-    Bob->>Public: Einigung auf p, g
-    Alice->>Alice: Generiert privaten Schlüssel a
-    Bob->>Bob: Generiert privaten Schlüssel b
+    Alice->>Public: Vereinbart Gruppenparameter p, q, g
+    Bob->>Public: Vereinbart Gruppenparameter p, q, g
+    Alice->>Alice: Erzeugt geheimen Exponenten a
+    Bob->>Bob: Erzeugt geheimen Exponenten b
     Alice->>Bob: Sendet A = g^a mod p
     Bob->>Alice: Sendet B = g^b mod p
-    Alice->>Alice: Berechnet S = B^a mod p
-    Bob->>Bob: Berechnet S = A^b mod p
-    Note over Alice,Bob: Gemeinsamer Schlüssel S sicher geteilt
+    Alice->>Alice: Prüft B, dann S = B^a mod p
+    Bob->>Bob: Prüft A, dann S = A^b mod p
+    Note over Alice,Bob: Authentifizierung der öffentlichen Werte und KDF zusätzlich nötig
 ```
 
-## 3. Die Geburt der RSA-Kryptographie und der Satz von Euler
+Das Diagramm zeigt den arithmetischen Ablauf, nicht die konkreten Authentifizierungsnachrichten oder das vollständige KDF-Verfahren.
 
-Der Diffie-Hellman-Schlüsselaustausch war nützlich für den Austausch von Schlüsseln, aber er selbst besaß keine Funktionen zur Verschlüsselung/Entschlüsselung oder für digitale Signaturen. Im Jahr 1977 wurde die „RSA-Kryptographie“, das erste vollwertige Public-Key-Kryptosystem, von Ronald Rivest, Adi Shamir und Leonard Adleman entwickelt.
+## 3. RSA und der Satz von Euler
 
-### Die Asymmetrie von öffentlichen und privaten Schlüsseln
-Die RSA-Kryptographie verwirklichte das revolutionäre Konzept der Trennung des „öffentlichen Schlüssels“, der zur Verschlüsselung verwendet wird, vom „privaten Schlüssel“, der zur Entschlüsselung verwendet wird. Der öffentliche Schlüssel kann jedem zugänglich gemacht werden, und eine Nachricht, die damit verschlüsselt wurde, kann nur von der Person entschlüsselt werden, die den entsprechenden privaten Schlüssel besitzt.
+RSA wurde von Rivest, Shamir und Adleman entwickelt und verwendet andere Mathematik als DH. RSA-basierte Verschlüsselungs- und Signaturverfahren werden unterschiedlich konstruiert.
 
-### Mathematische Grundlage: Die Schwierigkeit der Primfaktorzerlegung und der Satz von Euler
-Die Sicherheit der RSA-Kryptographie basiert auf der „Schwierigkeit der Primfaktorzerlegung“ einer riesigen zusammengesetzten Zahl.
+### Schlüssel und Operationen mit ganzen Zahlen
 
-1. Wähle zwei sehr große Primzahlen $p$ und $q$ und berechne ihr Produkt $N = p \times q$.
-2. Berechne Eulersche Phi-Funktion $\phi(N) = (p-1)(q-1)$.
-3. Wähle eine Ganzzahl $e$, die teilerfremd zu $\phi(N)$ ist (dies wird Teil des öffentlichen Schlüssels).
-4. Berechne $d$, das $e \times d \equiv 1 \pmod{\phi(N)}$ erfüllt (dies wird der private Schlüssel).
+Als Lehrmodell für RSA mit zwei Primfaktoren wählen wir große, unterschiedliche ungerade Primzahlen $p,q$ und setzen $N=pq$. Dieses $q$ ist ein RSA-Primfaktor und nicht die Untergruppenordnung aus dem vorherigen Abschnitt.
 
-Der öffentliche Schlüssel ist $(N, e)$ und der private Schlüssel ist $d$.
+$$
+\phi(N)=(p-1)(q-1),\qquad ed\equiv1\pmod{\phi(N)}.
+$$
 
-#### Der Prozess der Verschlüsselung und Entschlüsselung
-- **Verschlüsselung**: Um die Nachricht $M$ zu verschlüsseln und den Geheimtext $C$ zu erhalten, berechne $C = M^e \pmod N$.
-- **Entschlüsselung**: Um den Geheimtext $C$ zu entschlüsseln und die ursprüngliche Nachricht $M$ zu erhalten, berechne $M = C^d \pmod N$.
+Wir wählen einen öffentlichen Exponenten mit $1<e<\phi(N)$ und $\gcd(e,\phi(N))=1$ und bestimmen seine Inverse als positiven privaten Exponenten $d<\phi(N)$. Dies sind hinreichende Bedingungen für die Erklärung. RFC 8017 verwendet die Bedingung $ed\equiv1\pmod{\lambda(N)}$ mit $\lambda(N)=\operatorname{lcm}(p-1,q-1)$. Der öffentliche Schlüssel ist $(N,e)$; eine Darstellung des privaten Schlüssels ist $(N,d)$. Der private Exponent $d$ ist von der vollständigen Schlüsselinformation zu unterscheiden.
 
-Warum funktioniert das? Es beruht auf dem Satz von Euler.
-Nach dem Satz von Euler gilt $M^{\phi(N)} \equiv 1 \pmod N$, wenn $M$ und $N$ teilerfremd sind.
-Da $e \times d = 1 + k \times \phi(N)$ (wobei $k$ eine Ganzzahl ist), gilt:
-$C^d = (M^e)^d = M^{ed} = M^{1 + k\phi(N)} = M \times (M^{\phi(N)})^k \equiv M \times 1^k \equiv M \pmod N$
-Die ursprüngliche Nachricht $M$ wird wunderbar wiederhergestellt.
+Für einen ganzzahligen Repräsentanten $0\le M<N$ lauten die Grundoperationen:
 
-Damit ein Angreifer den privaten Schlüssel $d$ aus dem öffentlichen Schlüssel $(N, e)$ ermitteln kann, muss er $\phi(N)$ kennen, und dafür muss er $N$ in $p$ und $q$ in Primfaktoren zerlegen. Die Primfaktorzerlegung einer riesigen Zahl (z.B. 2048 Bit) dauert auf aktuellen klassischen Computern astronomisch lange.
+$$
+C=M^e\bmod N,\qquad M=C^d\bmod N.
+$$
 
-## 4. Die Grenzen der RSA-Kryptographie: Die enorme Vergrößerung der Schlüssellänge
+Auch der Chiffratrepräsentant $C$ ist eine ganze Zahl mit $0\le C<N$. Hier ist $M$ nicht unmittelbar ein beliebig langer Text oder eine Bytefolge.
 
-RSA hat viele Jahre als Grundlage für die Internetsicherheit gedient, aber mit der Verbesserung der Rechenleistung von Computern und der Entwicklung von Algorithmen zur Primfaktorzerlegung (wie dem allgemeinen Zahlkörpersieb) wurden Schwachstellen aufgedeckt.
+### Warum erhält man den ursprünglichen Wert zurück?
 
-Um die Sicherheit aufrechtzuerhalten, muss die Anzahl der Ziffern von $N$ (die Schlüssellänge) kontinuierlich erhöht werden. Früher galten 512 Bit als sicher, aber 1024 Bit wurden geknackt, und heute werden mindestens 2048 Bit oder für höhere Sicherheit Schlüssellängen von 3072 Bit oder 4096 Bit empfohlen.
+Für $\gcd(M,N)=1$ liefert der Satz von Euler $M^{\phi(N)}\equiv1\pmod N$. Mit $ed=1+t\phi(N)$ und $t\ge0$ folgt:
 
-Wenn die Schlüssellänge länger wird, treten folgende Probleme auf:
-1. **Erhöhte Rechenkosten**: Die für die Ver- und Entschlüsselung, insbesondere für die Signaturerstellung, erforderlichen Rechenressourcen steigen.
-2. **Speicher- und Bandbreitenverbrauch**: In Umgebungen mit begrenzten Ressourcen, wie Smartphones und IoT-Geräten, ist das Speichern und Übertragen von Schlüsseln mit Tausenden von Bits ineffizient.
+$$
+M^{ed}=M\bigl(M^{\phi(N)}\bigr)^t\equiv M\pmod N.
+$$
 
-Um dieser „Inflation der Schlüssellängen“ entgegenzuwirken, wurde ein völlig neuer mathematischer Ansatz erforderlich.
+Sind $M$ und $N$ nicht teilerfremd, darf der Satz von Euler nicht direkt angewendet werden. Für jeden Primfaktor $r\in\{p,q\}$ gilt jedoch: Falls $M\equiv0\pmod r$, dann ist $M^{ed}\equiv M\equiv0\pmod r$. Andernfalls liefern der kleine Satz von Fermat und die Teilbarkeit von $ed-1$ durch $r-1$ die Kongruenz $M^{ed}\equiv M\pmod r$. Der chinesische Restsatz verbindet beide Ergebnisse modulo $N$. Damit wird jeder Repräsentant $0\le M<N$ wiederhergestellt.
 
-## 5. Die Eleganz der Elliptischen-Kurven-Kryptographie (ECC)
+### Mathematische Korrektheit und Sicherheit
 
-Hier kommt die „Elliptische-Kurven-Kryptographie“ (Elliptic Curve Cryptography: ECC) ins Spiel. ECC wurde 1985 unabhängig von Neal Koblitz und Victor Miller vorgeschlagen und bietet das gleiche Sicherheitsniveau wie RSA, jedoch mit einer weitaus kürzeren Schlüssellänge. Zum Beispiel kann die gleiche Sicherheit wie bei einem 3072-Bit-RSA-Schlüssel mit einer ECC-Schlüssellänge von nur 256 Bit erreicht werden.
+Wer $N$ faktorisieren kann, kann $\phi(N)$ und $d$ berechnen. Dies beweist nicht, dass jeder RSA-Angriff eine Faktorisierung benötigt. Schwacher Zufall, fehlerhafte Kodierung und Informationsabflüsse aus der Implementierung können ebenfalls zum Versagen führen.
 
-### Die Mathematik der elliptischen Kurven
-Eine elliptische Kurve ist eine kubische Gleichung, die in der folgenden Weierstraß-Normalform ausgedrückt wird:
-$$ y^2 = x^3 + ax + b $$
-(Unter der Bedingung $4a^3 + 27b^2 \neq 0$, um sicherzustellen, dass die Kurve keine Singularitäten aufweist).
+Die obige deterministische Potenzierung direkt zur Verschlüsselung zu verwenden, erlaubt etwa das Testen weniger möglicher Nachrichten mit dem öffentlichen Schlüssel. Praktische Verfahren benötigen eigene Kodierungen und Prüfungen, beispielsweise RSAES-OAEP zur Verschlüsselung und RSASSA-PSS für Signaturen. Signieren ist nicht dasselbe wie das Verschlüsseln der Nachricht mit einem privaten Schlüssel. Auch die Zuordnung des öffentlichen Schlüssels zum erwarteten Gegenüber muss authentifiziert werden.
 
-Bei der Verwendung für die Kryptographie ist diese Kurve nicht über den reellen Zahlen definiert, sondern über einem endlichen Körper (z.B. einem Körper modulo einer Primzahl $p$).
+## 4. Schlüssellänge und geschätzte Sicherheit
 
-### Punktaddition auf der elliptischen Kurve (Point Addition)
-Die wichtigste Eigenschaft von ECC ist, dass zwischen zwei Punkten auf der Kurve eine geometrische Operation namens „Addition“ definiert werden kann.
+Die RSA-Schlüssellänge bezeichnet gewöhnlich die Bitlänge des Modulus $N$. Rechenressourcen und Angriffsalgorithmen beeinflussen Sicherheitsschätzungen. Wird eine Schlüssellänge nicht mehr empfohlen, bedeutet dies nicht, dass RSA-1024-Moduli allgemein faktorisiert worden wären.
 
-Wenn die Punkte $P$ und $Q$ auf der Kurve liegen und $P \neq Q$, zieht man eine Linie durch die beiden Punkte, findet den anderen Schnittpunkt mit der Kurve und spiegelt diesen Punkt an der $x$-Achse, um den Punkt $R = P + Q$ zu definieren.
-Wenn man den Punkt $P$ zu sich selbst addiert (Skalarmultiplikation), zieht man die Tangente an den Punkt $P$, findet auf ähnliche Weise den Schnittpunkt und spiegelt ihn, um $2P$ zu erhalten.
+Als konkreten Vergleich ordnet Tabelle 2 von NIST SP 800-57 Part 1 Rev.5 aus dem Jahr 2020 einen RSA-Modulus mit 2048 Bit der Zeile mit geschätzter maximaler Sicherheitsstärke von 112 Bit zu, einen mit 3072 Bit der Zeile mit 128 Bit. Das sind Schätzungen gegenüber klassischer Berechnung unter den Annahmen dieses Dokuments. Sie sind weder universelle heutige Schlüssellängenempfehlungen noch Aufzeichnungen erfolgreicher Entschlüsselungen.
 
-### Skalarmultiplikation und das Problem des diskreten Logarithmus auf elliptischen Kurven (ECDLP)
-Die Operation, einen Basispunkt $G$ eine geheime ganzzahlige Anzahl von $k$-mal zu addieren, wird als Skalarmultiplikation bezeichnet.
-$Q = k \times G = G + G + \dots + G$ (k-mal)
+Ein längerer Modulus erhöht im Allgemeinen den Aufwand für Ganzzahloperationen sowie das Speichern und Übertragen von Schlüsseln und Signaturen. Die Leistung hängt aber auch vom öffentlichen Exponenten, CRT-Optimierungen, der Implementierung, der Hardware und der Operation ab. Allein aus der Schlüssellänge lässt sich nicht ableiten, welches Verfahren schneller ist.
 
-Hierbei ist:
-- $k$ der „private Schlüssel“
-- $Q$ der „öffentliche Schlüssel“
+## 5. Die Mathematik elliptischer Kurven
 
-Das Problem, $k$ aus einem gegebenen $G$ und $Q$ zurückzurechnen, wird als „Problem des diskreten Logarithmus auf elliptischen Kurven (ECDLP)“ bezeichnet.
-Im Gegensatz zum gewöhnlichen Problem des diskreten Logarithmus wurde bisher kein effizienter Algorithmus (Subexponentialzeitalgorithmus) zur Lösung des ECDLP gefunden, und es wird angenommen, dass vollständig exponentielle Zeit erforderlich ist. Dies ist der mathematische Grund, warum ECC mit sehr kurzen Schlüsseln starke Sicherheit bieten kann.
+Miller und Koblitz schlugen unabhängig voneinander in den 1980er-Jahren vor, elliptische Kurven für Kryptographie zu verwenden. RFC 6090 nennt Millers Beitrag zu CRYPTO '85 und Koblitz' Veröffentlichung von 1987. Vorschlagszeitpunkt und Erscheinungsjahr sind zu unterscheiden.
+
+Dieselbe NIST-Tabelle ordnet ECC mit einer Basispunktordnung von 256–383 Bit der Zeile mit geschätzter maximaler Sicherheitsstärke von 128 Bit zu. Dies ist der Hintergrund des Vergleichs RSA-3072 mit ECC-256. Die ECC-Spalte misst die Bitlänge der Basispunktordnung, nicht die Dateigröße eines serialisierten öffentlichen Schlüssels mit Koordinaten. Der Vergleich setzt unter anderem geeignete Parameter und sachgerechte Schlüsselverwaltung voraus.
+
+### Eine Kurve über einem endlichen Körper
+
+Wir beschränken uns auf den Primkörper $\mathbb F_p$ mit $p>3$ und $a,b,x,y\in\mathbb F_p$. Diese Parameter sind von den obigen RSA-Primzahlen unabhängig.
+
+$$
+y^2\equiv x^3+ax+b\pmod p,\qquad 4a^3+27b^2\not\equiv0\pmod p.
+$$
+
+Die zweite Bedingung stellt sicher, dass die Kurve über diesem Körper nichtsingulär ist. Es genügt nicht, dass der Ausdruck als ganze Zahl ungleich null ist. Auf den Kurvenpunkten zusammen mit dem neutralen Element, dem unendlich fernen Punkt $\mathcal O$, wird eine Addition definiert. Die allgemeine Behandlung von Körpern der Charakteristik 2 oder 3 ist mit dieser Gleichung allein nicht abgedeckt.
+
+### Punktaddition und Ausnahmefälle
+
+Über den reellen Zahlen veranschaulicht man die Addition durch eine Gerade durch zwei Punkte, deren dritter Schnittpunkt mit der Kurve an der waagerechten Achse gespiegelt wird. Über einem endlichen Körper berechnet man die entsprechenden algebraischen Formeln modulo $p$. Für $P=(x_1,y_1)$ und $Q=(x_2,y_2)$ ist die Steigung in den gewöhnlichen Fällen:
+
+$$
+s=\begin{cases}
+(y_2-y_1)(x_2-x_1)^{-1} & (x_1\ne x_2),\\
+(3x_1^2+a)(2y_1)^{-1} & (P=Q,\ y_1\ne0).
+\end{cases}
+$$
+
+$$
+x_3=s^2-x_1-x_2,\qquad y_3=s(x_1-x_3)-y_1\quad\text{in }\mathbb F_p.
+$$
+
+Nur von null verschiedene Körperelemente besitzen eine multiplikative Inverse. Bei einem Nenner von null dürfen diese Formeln nicht verwendet werden.
+
+$$
+P+\mathcal O=P,\qquad -P=(x_1,-y_1),\qquad P+(-P)=\mathcal O.
+$$
+
+Für $P=Q$ und $y_1=0$ gilt $2P=\mathcal O$. Die Berechnung von $P+P$ ist eine Punktverdopplung, ein Spezialfall der Skalarmultiplikation, die allgemeine ganzzahlige Vielfache berechnet.
+
+### Skalarmultiplikation und ECDLP
+
+Wir verwenden einen Basispunkt $G$, der eine Untergruppe mit großer Primzahlordnung $n$ erzeugt. Die Ordnung ist die kleinste positive ganze Zahl mit $nG=\mathcal O$. Ein privater Skalar $1\le k\le n-1$ wird mit kryptographisch sicherem Zufall gleichverteilt gewählt.
+
+$$
+Q=kG=\underbrace{G+\cdots+G}_{k\text{ terms}}.
+$$
+
+$k$ ist der private und $Q$ der öffentliche Schlüssel. Die Körperprimzahl $p$, die Untergruppenordnung $n$ und der private Skalar $k$ haben verschiedene Rollen. Aus $G,Q$ den Wert $k$ zu bestimmen, ist das elliptische diskrete Logarithmusproblem (ECDLP).
+
+RFC 6090 beschreibt generische klassische Angriffe wie Pollard rho mit ungefähr $O(\sqrt n)$ Gruppenoperationen. Für ein etwa 256 Bit langes $n$ liegt diese Größenordnung bei etwa $2^{128}$. Diese Schätzung ist exponentiell in der Bitlänge, aber kein Beweis der Schwierigkeit für alle Kurven. Es gibt Angriffe auf besondere Kurven. Deshalb sind die Wahl von Kurve und Untergruppe, die Prüfung öffentlicher Punkte und der Schutz vor Informationsabflüssen der Implementierung wichtig.
 
 ```mermaid
 graph TD
-    A["Basispunkt G"] -->|"Multiplikation mit privatem Schlüssel k (Skalarmultiplikation)"| B["Öffentlicher Schlüssel Q"]
-    B -->|"Rückrechnung von k aus öffentlichem Schlüssel Q? (ECDLP)"| C["Praktisch unmöglich"]
+    A["Basispunkt G und geeignete Parameter"] -->|"Skalarmultiplikation mit privatem Skalar k"| B["Öffentlicher Punkt Q = kG"]
+    B -->|"Bestimme k aus G, Q: ECDLP"| C["In geeigneten Gruppen als klassisch schwierig angenommen"]
     style A fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px
     style B fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
     style C fill:#ffebee,stroke:#f44336,stroke-width:2px
 ```
 
-## 6. Anwendungen und Zukunft von ECC
+## 6. Rollen in Protokollen und Quantenberechnung
 
-Heute ist ECC als grundlegende Technologie für TLS/SSL (HTTPS-Kommunikation in Webbrowsern), SSH, Kryptowährungen wie Bitcoin und viele moderne Messaging-Apps (wie Signal und WhatsApp) weit verbreitet. Der Übergang von RSA zu ECC hat zu Ressourceneinsparungen und Leistungsverbesserungen geführt und ist in unserer modernen Gesellschaft mit der weiten Verbreitung von Mobil- und IoT-Geräten unverzichtbar geworden.
+ECC ist nicht der Name eines einzigen Verschlüsselungsverfahrens. Beispielsweise dient ECDH der Schlüsselvereinbarung und ECDSA der Signatur. Auch bei ECDH sind eine protokollgemäße Schlüsselableitung aus dem gemeinsamen Punkt, die Prüfung öffentlicher Werte und Authentifizierung erforderlich.
 
-### Die Bedrohung durch Quantencomputer
-Allerdings sind sowohl RSA als auch ECC anfällig für die zukünftige Bedrohung durch „Quantencomputer“. Wenn groß angelegte Quantencomputer realisiert werden, die den Shor-Algorithmus ausführen können, werden sowohl die Primfaktorzerlegung als auch das Problem des diskreten Logarithmus in polynomialer Zeit gelöst.
-Aus diesem Grund schreiten die Erforschung und Standardisierung der „Post-Quanten-Kryptographie“ (Post-Quantum Cryptography: PQC), wie z.B. gitterbasierte Kryptographie und multivariate polynomische Kryptographie, die selbst von Quantencomputern schwer zu knacken ist, derzeit schnell voran.
+In TLS 1.3 haben Schlüsselvereinbarung wie ECDHE, Signaturen wie ECDSA oder RSA-PSS und authentifizierte Verschlüsselung mit abgeleiteten symmetrischen Schlüsseln unterschiedliche Aufgaben. Es gibt auch Modi mit vorab geteilten Schlüsseln. TLS 1.3 hat den RSA-Schlüsseltransport entfernt, nicht aber deshalb auch RSA-Signaturen. Ein Wechsel zu ECC garantiert nicht, dass jede Operation schneller wird.
+
+### Quantencomputer und Post-Quanten-Kryptographie
+
+Der Shor-Algorithmus löst Faktorisierung und diskrete Logarithmen auf einem ausreichend leistungsfähigen Quantencomputer mit einer in der Eingabebitlänge polynomialen Schrittzahl. Er bedroht RSA und herkömmliche ECC. Polynomialzeit bedeutet jedoch weder sofortige Ausführung noch eine Vorhersage, wann eine solche Maschine existiert.
+
+Post-Quanten-Kryptographie (PQC) soll unter anderen Annahmen, die Quantenangriffe berücksichtigen, etwa Schlüsseletablierung und Signaturen ermöglichen. Sie garantiert keine absolute Unbrechbarkeit auch gegenüber Quantencomputern. Einzelne Verfahren, Implementierungen und die umzustellenden Protokolle müssen bewertet werden.
 
 ## Fazit
 
-In diesem Artikel haben wir uns eingehend mit dem Diffie-Hellman-Schlüsselaustausch, der die Grenzen der symmetrischen Kryptographie überwand, der eleganten Struktur der RSA-Kryptographie basierend auf der Primfaktorzerlegung und der geometrischen und algebraischen Schönheit der Elliptischen-Kurven-Kryptographie (ECC), die die Grenzen der Schlüssellängen durchbrach, befasst.
-Kryptographietechnologie ist nicht nur das bloße Verbergen von Informationen, sondern eines der erfolgreichsten Beispiele für die Anwendung der fortschrittlichsten Erkenntnisse der Mathematik auf reale Infrastrukturen. Der Wechsel von RSA zu ECC veranschaulicht wunderbar den Prozess, durch den ausgefeiltere Mathematik unser digitales Leben sicherer und effizienter macht.
+DH berechnet gemeinsame Werte, RSA verwendet modulare Potenzierung ganzer Zahlen und ECC Gruppenoperationen auf Punkten über einem endlichen Körper. Nach Erfüllung der mathematischen Voraussetzungen kombinieren Protokolle Authentifizierung, Schlüsselableitung, geeignete Kodierung und Prüfung sowie Schlüsselverwaltung zum Schutz der Kommunikation. Kurze Schlüssel oder korrekte Gleichungen allein belegen nicht die Sicherheit des gesamten Systems.
+
+## Quellen
+
+- [RFC 7919 §5.1: Prüfung öffentlicher Werte in bekannten FFDHE-Gruppen](https://www.rfc-editor.org/rfc/rfc7919.html#section-5.1)
+- [RFC 8017: RSA-Schlüssel, Grundoperationen, OAEP und PSS](https://www.rfc-editor.org/rfc/rfc8017.html)
+- [RFC 6090 §§2–4 und 10: endliche Körper, Kurvenoperationen, ECDH und Sicherheitsbedingungen](https://www.rfc-editor.org/rfc/rfc6090.html)
+- [NIST SP 800-57 Part 1 Rev.5 (2020), §5.6.1.1 und Tabelle 2: geschätzte Sicherheitsstärke](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final)
+- [RFC 8446: Protokollrollen und Schlüsselableitung in TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html)
+- [Shor: Zusammenfassung zur Quantenfaktorisierung und zu diskreten Logarithmen](https://arxiv.org/abs/quant-ph/9508027)
