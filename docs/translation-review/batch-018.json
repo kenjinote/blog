@@ -140,6 +140,76 @@
         }
       ],
       "validation": "docs/translation-review/batch-018-cn-validation.json"
+    },
+    "post/cppで実装する高速な素数判定アルゴリズム/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/cppで実装する高速な素数判定アルゴリズム/index.md",
+      "sourceHash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+      "translationHash": "188d36a1b11d16aa6ecfab1212b1ba515228b1dd4afdf0a8d5616d0cac3898ae",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Traditional Chinese metadata/body in three bounded outputs, then independently reread complete revised metadata/body in two bounded outputs against corrected Japanese. Compared introduction/seven sections,3row base table,3C++blocks,2diagrams and7external references. No unread language treated as reviewed."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Preserved Taiwan usage 質數/合成數/非質數, 位元, 公開金鑰, 程式碼, 函式/函式庫, 型別, 帶號/不帶號, 溢位, 迴圈, 編譯, 回傳, 例外, 同餘/最小非負剩餘/餘數, 機率/亂數, 決定性判定, 強偽質數 and 蒙哥馬利乘法. Replaced mistranslated base as 基礎 with 底數; distinguished radix基底 in Montgomery representation. Clarified repeated-squaring as 二進位快速冪（平方乘法） without claiming original 重複平方法 was necessarily invalid."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All4display formulas exactly match corrected source; compared inline domain/strict thresholds/conditional probability/coprimality/input bitlength. Original factor-recovery introduction was already closer than Japanese; retained correct distinction. All41TraditionalChineseTeX expressions survive HTML. Same Fermat561counterexample375,3/4/7published base ranges,12prime bound>2^64 and independent arithmetic verification apply."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All3C++blocks exactly match reviewed Japanese source, separately compiled without warnings under WSL GCC13.3.0/C++17. Eleven main outputs match. New TraditionalChinese harness101275cases passes O2 and UBSanO1, including sieve0..50000 for both algorithms,4extra signed trial cases,742large/boundary MRcases via independent Python pow and published12base criterion,262multiplication+262power cases and3zero-modulus exceptions. Two diagrams14and4edges preserve pre-loop exhaustion for s=1 and one-round-not-proof labeling. Not timing/exhaustive64bit/constant-time/security certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all7unique external HTTPS targets and reviewed TraditionalChinese modern-cryptography internal target. Removed repeated unreviewed Fermat dependencies without omitting the theorem. Preserved publication timestamp,slug,image,categories and localized質數/演算法 tags. Added actual lastmod2026-10-28. Image exists. Minified Hugo19bundles, multilingual1185pages and HTTPS2163HTML/41XML passed;41TeX expressions preserved. Publication pending."
+        }
+      },
+      "summary": "Full Traditional Chinese primality-testing review with Taiwan terminology, accurate base/radix distinctions and verified C++ boundary behavior.",
+      "languageSpecificFindings": "Changed 基礎 as algorithmic base to 底數 while retaining radix基底 for Montgomery; separated 質數/合成數/非質數 and random conditional error from fixed-base deterministic guarantees. Corrected7prime claim, signed remainder assertion, unsigned128 range, zero-base comment and universal speed promises. Retained original valid factor-recovery introduction and localized tags; did not invent a cryptocurrency mislink or claim every prior regional term was invalid.",
+      "limitations": [
+        "AI, not human or native-speaker certification.",
+        "Nine other translations unread and unreviewed; no confirmation dates for them.",
+        "Finite tests do not independently prove all2^64 classifications or published base-set search results.",
+        "No visual browser/KaTeX/Mermaid, cryptographic deployment or constant-time audit.",
+        "Full-siteCI and publication pending."
+      ],
+      "references": [
+        {
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html",
+          "scope": "Complete short extension documentation; target dependent signed/unsigned support."
+        },
+        {
+          "url": "https://eel.is/c++draft/expr.mul",
+          "scope": "Complete short multiplicative-operator section: zero modulus UB and truncation/remainder rules; reproduced signed remainder."
+        },
+        {
+          "url": "https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf",
+          "scope": "Parsed opening pages through Theorem1, including random error interpretation, not full proof or implementation sections; obsolete1980 status not reused."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap4.pdf",
+          "scope": "Scoped parsed Fermat/MR sections,4.20/4.23/4.25,Algorithm4.24,Note4.47 and historical notes, not whole chapter or current key-generation audit."
+        },
+        {
+          "url": "https://miller-rabin.appspot.com/",
+          "scope": "3/4/7base records,strictthresholds,attribution,date and base-reduction remarks. Did not reproduce underlying64bitdatabase; zero-base remark means passing that round only."
+        },
+        {
+          "url": "https://arxiv.org/html/1509.00864",
+          "scope": "Parsed introduction/Theorem1.1; first twelve-prime-base strong pseudoprime. Journal metadata2017 separately checked. Not computational-proof replication; generatedHTML2026date not used as historical date."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap14.pdf",
+          "scope": "Scoped parsed14.32/14.36/14.94 and related efficiency/precomputation conditions. OriginalMontgomery1985publisheraccess failed; scan supplied no readable output, so no full original-paper reading claim."
+        }
+      ],
+      "validation": "docs/translation-review/batch-018-tw-validation.json"
     }
   },
   "stages": [
@@ -161,6 +231,22 @@
       "otherTranslationsUnreviewed": 10,
       "validation": "docs/translation-review/batch-018-cn-validation.json",
       "texExpressions": 40,
+      "displayFormulas": 4,
+      "codeBlocks": 3,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "casesPerOptimizedAndUbsanHarness": 101275,
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-10-28T19:59:20.866363+09:00",
+      "language": "zh-tw",
+      "reviewedTranslations": 3,
+      "otherTranslationsUnreviewed": 9,
+      "validation": "docs/translation-review/batch-018-tw-validation.json",
+      "texExpressions": 41,
       "displayFormulas": 4,
       "codeBlocks": 3,
       "diagramEdges": [
