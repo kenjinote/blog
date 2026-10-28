@@ -280,6 +280,76 @@
         }
       ],
       "validation": "docs/translation-review/batch-018-es-validation.json"
+    },
+    "post/cppで実装する高速な素数判定アルゴリズム/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/cppで実装する高速な素数判定アルゴリズム/index.md",
+      "sourceHash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+      "translationHash": "a0178e4e4fc7e25d8e992a2f998d3a02d1c105bccc959c4620e210cb1f2deab0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Korean metadata/body in three bounded outputs, revised against corrected Japanese and reviewed English, then independently reread complete revision in two bounded outputs with final small spacing and full-product wording cleanup. Compared introduction/seven sections,3row base table,3C++blocks,2diagrams and7external primary references. No unread language marked reviewed."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished 소수 판별/소인수분해/소수 생성, 소수/합성수/소수가 아님, 정수 밑/소수 밑, 확률적/결정론적 판별 and 소수라는 증명, 독립 균등 선택/고정 집합, 조건부 오류 확률/posterior probability, 최소 비음수 잉여/C++나머지, 부호 있는/부호 없는 정수, 모듈러 곱셈/비트 복잡도, 오버플로/예외. Used 기수 for Montgomery radix, separate from test 밑; retained valid 서로소, 합동식 and 시험 나눗셈 terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All4display formulas exactly match corrected source, with compared inline assumptions/strict ranges. Checked Fermat561base3counterexample375, sevenintegerbase325composite, randomized conditional4^-k and independence/uniformity, strict3/4/7thresholds,12prime published bound>2^64 and operation-count/bit-cost distinction. All41KoreanTeX expressions survive generated HTML."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All3C++blocks exactly match reviewed Japanese source and independently compile without warnings under WSL GCC13.3.0/C++17. Complete11sample outputs match. New Korean harness101275cases passes O2 and UBSanO1: both algorithms vs sieve0..50000,4extra signed trial cases,742large/boundary MRcases via independent Python pow and published12base criterion,262multiplication+262power cases and3zero-modulus exceptions. Diagrams14and4edges preserve pre-loop exhaustion for s=1 and passing-current-base-not-proof wording. No timing, exhaustive64bit, constant-time or security certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched7unique external HTTPS targets and reviewed Korean modern-cryptography internal link. Removed repeated unreviewed Fermat dependencies while retaining theorem and algorithm explanations. Preserved publication timestamp,slug,image,categories/tags and added actual lastmod2026-10-28. Image exists. Minified Hugo19bundles, multilingual1185pages and HTTPS2163HTML/41XML passed;41TeX expressions preserved. Publication pending."
+        }
+      },
+      "summary": "Full Korean primality-testing review with correct signed/unsigned modular arithmetic contracts and conditional randomized-error interpretation.",
+      "languageSpecificFindings": "Corrected multiplication-as-hard-operation prose, seven-prime claim, signed remainder assertion, signed128fullrange wording and zero-base comment. Removed 강한 확률 and 실용상0 wording in favor of explicit conditional bound. Distinguished 판별/증명, 밑/기수 and 소수가 아님/합성수, and fixed source-code-prose spacing. Retained ordinary Korean theorem/coprimality terminology without inventing a separate mistranslation.",
+      "limitations": [
+        "AI, not human or native-speaker certification.",
+        "Seven other translations unread and unreviewed; no confirmation dates for them.",
+        "Finite tests do not independently prove all2^64 classifications or published base-set search results.",
+        "No visual browser/KaTeX/Mermaid, cryptographic deployment or constant-time audit.",
+        "Full-siteCI and publication pending."
+      ],
+      "references": [
+        {
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html",
+          "scope": "Complete short extension documentation; target dependent signed/unsigned support."
+        },
+        {
+          "url": "https://eel.is/c++draft/expr.mul",
+          "scope": "Complete short multiplicative-operator section: zero modulus UB and truncation/remainder rules; reproduced signed remainder."
+        },
+        {
+          "url": "https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf",
+          "scope": "Parsed opening pages through Theorem1, including random error interpretation, not full proof or implementation sections; obsolete1980 status not reused."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap4.pdf",
+          "scope": "Scoped parsed Fermat/MR sections,4.20/4.23/4.25,Algorithm4.24,Note4.47 and historical notes, not whole chapter or current key-generation audit."
+        },
+        {
+          "url": "https://miller-rabin.appspot.com/",
+          "scope": "3/4/7base records,strictthresholds,attribution,date and base-reduction remarks. Did not reproduce underlying64bitdatabase; zero-base remark means passing that round only."
+        },
+        {
+          "url": "https://arxiv.org/html/1509.00864",
+          "scope": "Parsed introduction/Theorem1.1; first twelve-prime-base strong pseudoprime. Journal metadata2017 separately checked. Not computational-proof replication; generatedHTML2026date not used as historical date."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap14.pdf",
+          "scope": "Scoped parsed14.32/14.36/14.94 and related efficiency/precomputation conditions. OriginalMontgomery1985publisheraccess failed; scan supplied no readable output, so no full original-paper reading claim."
+        }
+      ],
+      "validation": "docs/translation-review/batch-018-ko-validation.json"
     }
   },
   "stages": [
@@ -332,6 +402,22 @@
       "reviewedTranslations": 4,
       "otherTranslationsUnreviewed": 8,
       "validation": "docs/translation-review/batch-018-es-validation.json",
+      "texExpressions": 41,
+      "displayFormulas": 4,
+      "codeBlocks": 3,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "casesPerOptimizedAndUbsanHarness": 101275,
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-10-28T20:06:24.674905+09:00",
+      "language": "ko",
+      "reviewedTranslations": 5,
+      "otherTranslationsUnreviewed": 7,
+      "validation": "docs/translation-review/batch-018-ko-validation.json",
       "texExpressions": 41,
       "displayFormulas": 4,
       "codeBlocks": 3,

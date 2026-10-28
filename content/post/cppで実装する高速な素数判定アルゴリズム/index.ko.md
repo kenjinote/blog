@@ -2,6 +2,7 @@
 title: 'C++로 구현하는 고속 소수 판별 알고리즘 (Miller-Rabin 법 등)'
 slug: "cpp-fast-prime-testing-miller-rabin"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-10-28"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,322 +10,265 @@ categories: ["cpp", "algorithms", "mathematics"]
 tags: ["C++", "Miller-Rabin", "Prime Numbers", "Algorithm"]
 ---
 
-# 머리말：왜 고속 소수 판별이 필요한가
+## 들어가며: 소수 판별과 소인수분해의 차이
 
-정보 과학이나 암호 이론, 혹은 경쟁 프로그래밍 세계에서 「어떤 수가 소수인지 아닌지」를 빠르고 정확하게 판별하는 것은 매우 중요하고 기초적인 과제입니다. 예를 들어 현대 인터넷 사회의 보안을 지탱하고 있는 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호 등의 공개키 암호 방식은 거대한 소수의 생성과 그 곱셈의 어려움(소인수 분해의 어려움)을 안전성의 근거로 삼고 있습니다. 따라서 거대한 수가 소수인지 순식간에 구별하는 기술은 디지털 사회의 근간을 지탱하는 기술이라고 해도 과언이 아닙니다.
+소수 판별은 주어진 정수가 소수인지 답하는 문제입니다. 합성수의 실제 인수를 찾는 문제와는 다릅니다. [RSA 등의 공개키 암호](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)에서는 큰 소수를 생성하는 일이 중요하지만, 곱셈 자체가 어려운 것은 아닙니다. 소수를 찾았다는 사실만으로 암호 방식 전체의 안전성이 보장되지도 않습니다.
 
-또한, 경쟁 프로그래밍(AtCoder나 Codeforces 등)에서도 소수 판별은 자주 나오는 주제입니다. 제약이 $N \le 10^{18}$ 과 같은 거대한 입력에 대해 1초 이내에 소수 판별을 수만 번 수행해야 하는 상황에서는, 전통적이고 소박한 알고리즘으로는 도저히 계산 시간(Time Limit Exceeded: TLE)을 맞출 수 없습니다.
+이 글에서는 시험 나눗셈, 페르마 테스트, 밀러–라빈 테스트를 비교하고 음이 아닌 64비트 정수용 C++ 예제를 제시합니다. 구현의 범위는 $0\le N<2^{64}$이며, RSA 키 생성에 사용하는 수천 비트 정수는 범위 밖입니다. 실행 시간은 구현과 입력에 따라 달라지므로 일정한 초 단위 시간이나 속도 배율을 보장하지 않습니다.
 
-본 기사에서는 소박한 소수 판별 알고리즘부터 시작하여, 확률적 소수 판별법인 「페르마 테스트」, 그리고 그 약점을 극복한 실용상 최강 수준의 고속 알고리즘 「밀러-라빈 (Miller-Rabin) 소수 판별법」에 대해 수학적 배경부터 C++를 이용한 고도로 최적화된 구현까지 철저히 해설합니다. 특히, 64비트 정수($N < 2^{64}$)에 대해서는 확률적인 판별에 그치지 않고 「100% 확실하게 소수 판별을 할 수 있는(결정론적 판별)」 기법에 대해서도 자세히 설명하며, 실전에서 그대로 사용할 수 있는 C++ 소스 코드를 제공합니다.
+## 1. 소수의 정의와 시험 나눗셈
 
----
+소수는 양의 약수가 1과 자기 자신뿐인 2 이상의 정수입니다. 합성수는 2 이상이면서 소수가 아닌 정수입니다. 0, 1, 음의 정수는 소수도 합성수도 아닙니다.
 
-# 1. 소수 판별의 기초와 시험 나눗셈 (Trial Division)
-
-소수(Prime number)란 1과 자기 자신 이외에 양의 약수를 가지지 않는 2 이상의 자연수입니다. 소수의 정의를 충실히 따르면, 어떤 정수 $N$ 이 소수인지 판별하려면 $2$ 부터 $N-1$ 까지의 모든 정수로 $N$ 을 나누어 보고, 한 번도 나누어떨어지지 않으면 소수, 한 번이라도 나누어떨어지면 합성수(소수가 아님)라고 판단할 수 있습니다.
-
-그러나 이 방법은 시간 복잡도가 $O(N)$ 이 되어, $N$ 이 $10^{18}$ 등과 같은 거대한 수일 경우 현대의 컴퓨터라도 계산에 방대한 시간이 걸립니다.
-
-## 시험 나눗셈의 최적화：$\sqrt{N}$ 까지의 탐색
-
-합성수 $N$ 이 $a \times b = N$ ($a \le b$)로 표현될 때, 반드시 $a \le \sqrt{N}$ 이 됩니다. 따라서 소수 판별 루프는 $N-1$ 까지 돌릴 필요 없이 $\sqrt{N}$ 까지 검사하면 충분합니다.
+합성수 $N=ab$의 인수가 $2\le a\le b$를 만족하면 $a\le\sqrt N$입니다. 따라서 제곱근까지 약수를 찾으면 판별할 수 있습니다. 2를 먼저 검사하고 나머지는 홀수 후보만 검사합니다.
 
 ```cpp
-#include <iostream>
+#include <cstdint>
 
-// 시험 나눗셈을 통한 소수 판별 (O(sqrt(N)))
-bool is_prime_trial_division(long long n) {
-    if (n <= 1) return false;
-    if (n == 2 || n == 3) return true;
+bool is_prime_trial_division(std::int64_t n) {
+    if (n < 2) return false;
+    if (n == 2) return true;
     if (n % 2 == 0) return false;
-    
-    // 3 이상의 홀수만 검사
-    for (long long i = 3; i * i <= n; i += 2) {
+    for (std::int64_t i = 3; i <= n / i; i += 2) {
         if (n % i == 0) return false;
     }
     return true;
 }
 ```
 
-이 알고리즘의 시간 복잡도는 $O(\sqrt{N})$ 입니다. $N \le 10^{12}$ 정도라면 순식간에 계산할 수 있지만, $N \approx 10^{18}$ 인 경우 루프 횟수가 약 $10^9$ 번이 되어 C++ 환경이라도 수백 밀리초에서 수 초의 시간이 소요되므로 여러 번의 판별에는 부적합합니다.
+조건 `i*i <= n`의 부호 있는 곱셈은 오버플로가 발생할 수 있습니다. 양수에서 동치인 `i <= n/i`를 사용하면 이 곱을 만들지 않습니다. 함수의 입력 범위는 `std::int64_t`이며 음수도 `false`를 반환합니다.
 
----
+최악의 경우 나눗셈 횟수는 $\mathcal{O}(\sqrt N)$입니다. 홀수만 검사하면 후보는 약 $\sqrt N/2$개이지만, 큰 입력에 대해 반복해서 판별하는 비용은 여전히 클 수 있습니다. 실용성의 경계가 일정한 십진 자릿수로 정해지는 것은 아닙니다.
 
-# 2. 페르마 테스트：확률적 소수 판별의 서막
+## 2. 페르마 테스트와 모듈러 거듭제곱
 
-시험 나눗셈의 한계를 돌파하기 위해 고안된 것이 정수론의 정리를 이용한 「확률적 알고리즘 (Probabilistic Algorithm)」입니다. 그 대표적인 예가 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 이용한 「페르마 테스트 ([Fermat](https://kenji.blog/ko/p/fermat/) Primality Test)」입니다.
+소수 $p$와 $\gcd(a,p)=1$을 만족하는 정수 $a$에 대해 페르마의 소정리가 성립합니다.
 
-## [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/ko/p/fermats-little-theorem/))
+$$
+a^{p-1}\equiv1\pmod p.
+$$
 
-[피에르 드 페르마](https://kenji.blog/ko/p/fermat/)([Pierre de Fermat](https://kenji.blog/ko/p/fermat/))가 발견한 이 정리는 다음과 같이 주장합니다.
+따라서 $N>2$에 대해 $1<a<N-1$인 밑을 골랐을 때 이 합동식이 성립하지 않으면 $N$은 합성수입니다. 반대로 통과했다는 사실만으로 소수임이 증명되지는 않습니다. 카마이클 수 $561=3\cdot11\cdot17$은 561과 서로소인 모든 밑에서 통과합니다. 하지만 밑 3은 서로소가 아니며 $3^{560}\bmod561=375$이므로 실패합니다. 어떤 밑을 골라도 항상 속인다는 설명은 정확하지 않습니다.
 
-> 임의의 소수 $p$ 와, 서로 소인($p$ 의 배수가 아닌) 임의의 정수 $a$ 에 대해 다음 합동식이 성립한다.
-> $$ a^{p-1} \equiv 1 \pmod p $$
-
-이 정리의 대우를 취하면, 「어떤 정수 $N$ 과, $N$ 과 서로 소인 정수 $a$ 에 대해 $a^{N-1} \not\equiv 1 \pmod N$ 이 된다면, $N$ 은 확실히 합성수이다」라고 말할 수 있습니다. 이 성질을 이용하여, 판별 대상인 수 $N$ 에 대해 무작위 밑(base) $a$ 를 선택하고, $a^{N-1} \pmod N$ 을 계산하여 $1$ 이 되는지 확인하는 것이 페르마 테스트입니다.
-
-## 고속 거듭제곱 나머지 (반복 제곱법)
-
-페르마 테스트를 수행하기 위해서는 $a^{N-1} \pmod N$ 이라는 거대한 거듭제곱을 빠르게 계산해야 합니다. 여기에는 「반복 제곱법 (Modular Exponentiation / Binary Exponentiation)」을 사용합니다. 시간 복잡도는 $O(\log N)$ 이 되어 매우 빠릅니다.
+거대한 정수 거듭제곱 전체를 먼저 만들 필요는 없습니다. 이진 거듭제곱법은 곱셈마다 나머지를 구합니다. 다음 보조 함수들은 독립적으로 컴파일할 수 있습니다. 밑, 지수, 곱셈의 피연산자는 음이 아닌 64비트 정수이고 법 `m`은 양의 64비트 정수입니다. 법이 0이면 예외를 던집니다.
 
 ```cpp
-// 반복 제곱법을 이용한 a^b mod m 계산
-long long mod_pow(long long a, long long b, long long m) {
-    long long res = 1;
-    a %= m;
-    while (b > 0) {
-        if (b & 1) res = (__int128_t)res * a % m;
-        a = (__int128_t)a * a % m;
-        b >>= 1;
-    }
-    return res;
-}
-```
-※ 여기서는 오버플로우를 방지하기 위해 GCC/Clang의 확장인 `__int128_t` (128비트 정수)를 사용하여 중간 곱을 유지하고 있습니다.
-
-## 유사 소수와 카마이클 수 (Carmichael Numbers)
-
-페르마 테스트는 매우 강력하지만 치명적인 약점이 있습니다. 바로 $N$ 이 합성수임에도 불구하고, 모든 $a$ ($N$ 과 서로 소인 $a$)에 대해 $a^{N-1} \equiv 1 \pmod N$ 이 성립해버리는 수가 존재한다는 것입니다.
-
-이러한 수를 「절대 유사 소수」 또는 「카마이클 수」라고 부릅니다. 가장 작은 카마이클 수는 $561 = 3 \times 11 \times 17$ 입니다.
-카마이클 수가 존재하기 때문에 페르마 테스트만으로는 「확률 100%」의 결정론적 판별을 할 수 없습니다. 아무리 다른 $a$ 를 시도해도 $561$ 과 같은 수는 항상 소수인 척(속임수)을 합니다.
-
----
-
-# 3. 밀러-라빈 소수 판별법 (Miller-Rabin Primality Test)
-
-페르마 테스트의 약점(카마이클 수의 존재)을 훌륭하게 극복한 것이 밀러(Gary L. Miller)와 라빈(Michael O. Rabin)이 고안한 「밀러-라빈 소수 판별법」입니다.
-현재 실용적인 고속 소수 판별 알고리즘으로서, 다양한 프로그래밍 언어의 내부 라이브러리나 암호 시스템의 키 생성에 가장 널리 사용되고 있습니다.
-
-## 수학적 원리
-
-밀러-라빈 알고리즘은 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)에 더해, 「소수를 법으로 하는 잉여체($\mathbb{Z}/p\mathbb{Z}$)에서는 $x^2 \equiv 1 \pmod p$ 의 해는 $x \equiv 1$ 또는 $x \equiv -1$ 로 제한된다」는 성질을 이용합니다 (합성수를 법으로 하는 경우에는 이외의 비자명한 제곱근이 존재할 수 있습니다).
-
-판별하려는 홀수 $N$ 에서 $1$ 을 뺀 $N-1$ 은 반드시 짝수가 됩니다. 그래서 $N-1$ 을 $2$ 로 나눌 수 있을 때까지 나누어 다음과 같은 형태로 나타냅니다.
-$$ N-1 = d \cdot 2^s $$
-(여기서 $d$ 는 홀수, $s \ge 1$)
-
-임의의 밑 $a$ ($1 < a < N-1$)에 대해, $a^{N-1} \equiv 1 \pmod N$ 인지를 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)에 따라 검증하되, 그 계산을 단계적으로 수행합니다.
-구체적으로는 $a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$ 와 같이 순서대로 제곱을 반복해 나갑니다.
-
-밀러-라빈 테스트가 $N$ 을 「소수이다(혹은 강한 확률로 소수이다)」라고 판별하기 위한 조건은 다음 중 **하나** 가 성립하는 것입니다.
-
-1. $a^d \equiv 1 \pmod N$
-2. 어떤 $r$ ($0 \le r < s$)이 존재하여 $a^{d \cdot 2^r} \equiv -1 \pmod N$ 이 성립한다.
-   ※ C++의 모듈로 연산에서 $-1 \pmod N$ 은 $N-1$ 이 됩니다.
-
-만약 $N$ 이 소수라면 임의의 $a$ 에 대해 이 조건이 반드시 만족됩니다. 반대로 $N$ 이 합성수라면 무작위로 $a$ 를 선택했을 때 이 조건을 만족할 확률(속을 확률)은 $\frac{1}{4}$ 이하라는 것이 수학적으로 증명되어 있습니다.
-$k$ 번의 독립적인 테스트를 수행하면 오판 확률은 $\left(\frac{1}{4}\right)^k$ 이하가 되어 실용상 0으로 간주할 수 있습니다. 카마이클 수처럼 「절대적으로 속일 수 있는」 수는 존재하지 않습니다.
-
-## 밀러-라빈 법의 알고리즘 흐름 (Mermaid 플로우차트)
-
-아래 그림은 밀러-라빈 소수 판별법의 1회 테스트(하나의 밑 $a$ 에 대한 테스트)의 논리적인 흐름을 보여줍니다.
-
-```mermaid
-graph TD
-    Start["테스트 시작 (입력: N, a)"] --> CalcDS["N-1 = d * 2^s 를 만족하는 d (홀수) 와 s 를 계산"]
-    CalcDS --> CalcX["x = a^d mod N 을 계산"]
-    CalcX --> CheckX1{"x == 1 또는 x == N-1 ?"}
-    CheckX1 -- Yes --> ReturnTrue["소수일 가능성이 있음 (Probably Prime)"]
-    CheckX1 -- No --> LoopStart["r = 1 부터 s-1 까지 루프 시작"]
-    
-    LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- No --> ReturnFalse["확실히 합성수 (Composite)"]
-    LoopCondition -- Yes --> SquareX["x = (x * x) mod N 을 계산"]
-    
-    SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- Yes --> ReturnTrue
-    CheckXMinus1 -- No --> CheckXOne{"x == 1 ?"}
-    
-    CheckXOne -- Yes --> ReturnFalse
-    CheckXOne -- No --> LoopNext["r 을 1 증가시키고 다음으로"]
-    LoopNext --> LoopCondition
-```
-
----
-
-# 4. 64비트 정수에 대한 결정론적 판별
-
-밀러-라빈 소수 판별법은 본래 「확률적」 알고리즘이지만, $N$ 의 상한이 고정되어 있는 경우 특정 여러 개의 $a$ (밑)를 모두 테스트함으로써 「100% 확실하게」 소수 판별을 수행할 수 있습니다.
-이를 **결정론적 밀러-라빈 테스트 (Deterministic Miller-Rabin Test)** 라고 부릅니다.
-
-Jim Sinclair 등의 연구에 따르면, $N < 2^{64}$ (약 $1.8 \times 10^{19}$)의 모든 정수에 대해서는 다음 $7$ 개의 소수를 밑 $a$ 로 선택해 테스트하면 충분하고도 완전하게 결정론적인 판별이 가능함이 밝혀졌습니다.
-
-**테스트해야 할 밑 $a$ 의 리스트:**
-`{2, 325, 9375, 28178, 450775, 9780504, 1795265022}`
-
-혹은 잘 알려진 다른 세트로서, 다음 $12$ 개의 소수를 사용하는 것으로도 $N < 2^{64}$ 이하에서 완벽하게 판별할 수 있습니다.
-`{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37}`
-
-이번에는 알고리즘의 간결성과 신뢰성을 높이기 위해 후자인 $12$ 개의 소수를 베이스(혹은 더 최적화된 $7$ 개의 베이스)로 사용하는 기법을 채택합니다. C++ 구현에서는 조건 분기로 범위를 나눔으로써 테스트 횟수를 최소한으로 억제하는 최적화를 수행합니다.
-
----
-
-# 5. C++를 이용한 고도화된 구현 (Highly Optimized C++ Implementation)
-
-그러면 여기까지의 수학적 이론과 알고리즘 설계를 종합하여, 현대 C++ 환경에서의 최강 수준인 밀러-라빈 소수 판별 함수의 구현 코드를 제시합니다.
-
-## 구현의 포인트
-1. **64비트 정수 곱셈의 오버플로우 회피:**
-   $N \approx 10^{18}$ 인 경우, 모듈로 곱셈에서의 $x \times x$ 는 최대 $10^{36}$ 이 되어 일반적인 64비트 정수(`uint64_t` 나 `long long`)의 최댓값 $1.8 \times 10^{19}$ 를 가볍게 오버플로우 해버립니다.
-   이 문제를 해결하기 위해 GCC나 Clang의 확장형인 `__int128_t` (혹은 `unsigned __int128`)를 사용하여 128비트 정밀도로 계산을 수행한 후 모듈로를 취합니다. 이를 통해 복잡한 알고리즘을 사용하지 않고도 고속으로 나머지 곱셈이 가능합니다.
-
-2. **결정론적 베이스의 선택:**
-   $N$ 의 값이 작을 경우에는 적은 수의 밑(base)만 테스트해도 되도록 최적화합니다.
-
-## 완전한 C++ 소스 코드
-
-아래에 실전에 투입 가능한 완성 버전의 소스 코드를 보여줍니다. 이 코드는경쟁 프로그래밍 등의 환경에 그대로 복사하여 사용할 수 있습니다.
-
-```cpp
-#include <iostream>
-#include <vector>
 #include <cstdint>
-#include <initializer_list>
+#include <stdexcept>
 
-using namespace std;
+#if !defined(__SIZEOF_INT128__)
+#error "This example requires unsigned __int128 support"
+#endif
 
-// 128비트 정수에 의한 고속 (a * b) mod m
-inline uint64_t mod_mul(uint64_t a, uint64_t b, uint64_t m) {
-    return (uint64_t)((unsigned __int128)a * b % m);
+using u64 = std::uint64_t;
+using u128 = unsigned __int128;
+
+u64 mod_mul(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    return static_cast<u64>(static_cast<u128>(a) * b % m);
 }
 
-// 반복 제곱법에 의한 (base^exp) mod m 계산
-uint64_t mod_pow(uint64_t base, uint64_t exp, uint64_t m) {
-    uint64_t res = 1;
+u64 mod_pow(u64 base, u64 exp, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
     base %= m;
     while (exp > 0) {
-        if (exp & 1) res = mod_mul(res, base, m);
+        if (exp & 1) result = mod_mul(result, base, m);
         base = mod_mul(base, base, m);
         exp >>= 1;
     }
-    return res;
+    return result;
+}
+```
+
+반환값은 최소 비음수 잉여입니다. 지수가 0이면 $1\bmod m$을 반환하므로 법이 1일 때는 0입니다. 여기서는 $0^0$도 이 계산 규약으로 처리합니다. 음의 밑을 부호 없는 매개변수에 그대로 전달하는 용도는 지원 범위에 포함하지 않습니다.
+
+`unsigned __int128`은 ISO C++ 표준 자료형이 아니라 적절한 대상 플랫폼에서 GCC 등이 제공하는 확장입니다. 코드는 미지원 환경을 컴파일 단계에서 감지하며, 모든 MSVC 환경에서 그대로 동작한다고 가정하지 않습니다. [GCC 문서](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)를 참고하세요. 부호 없는 64비트 값 두 개를 곱했을 때 가능한 모든 결과를 저장하려면 부호 없는 128비트가 필요하며, 부호 있는 128비트로는 모든 곱을 표현할 수 없습니다.
+
+## 3. 밀러–라빈 조건과 확률의 의미
+
+홀수 소수를 법으로 할 때 1의 제곱근은 1과 −1뿐입니다. 밀러–라빈 테스트는 이 성질과 페르마의 소정리를 결합합니다. 홀수 $N\ge3$에 대해 다음과 같이 분해합니다.
+
+$$
+N-1=d\,2^s,\qquad d\text{ is odd},\quad s\ge1.
+$$
+
+즉 d는 홀수입니다. 밑 $a$가 $1<a<N-1$을 만족할 때 통과 조건은 다음 중 하나입니다.
+
+$$
+a^d\equiv1\pmod N
+\quad\text{or}\quad
+\exists r\ (0\le r<s):\ a^{d2^r}\equiv-1\pmod N.
+$$
+
+소수는 반드시 통과하며, 실패하면 합성수임을 알 수 있습니다. 반복 제곱 중 직전 값이 1도 −1도 아니었는데 1이 나오면 역시 합성수입니다. 수학에서 −1의 최소 비음수 잉여는 $N-1$이지만, C++의 부호 있는 식 `-1 % N`이 그 값을 반환하는 것은 아닙니다. 예를 들어 `-1 % 7`은 −1입니다. 수학적 잉여와 [C++의 나눗셈·나머지 규칙](https://eel.is/c++draft/expr.mul)을 구분해야 합니다.
+
+고정된 홀수 합성수 $N$에 대해 밑을 $2\le a\le N-2$에서 독립적이고 균등하게 선택하면 한 번 통과할 확률은 최대 $1/4$입니다. 따라서 잘못하여 $k$번 모두 통과할 확률은 다음과 같이 제한됩니다.
+
+$$
+\Pr[\text{all }k\text{ rounds pass}\mid N\text{ is composite}]\le4^{-k}.
+$$
+
+이는 밑을 무작위로 선택하는 과정의 오류 확률입니다. 통과한 뒤 그 정수가 합성수일 확률이 그대로 $4^{-k}$라고 바꾸어 말할 수는 없습니다. 임의로 고정한 밑의 집합에도 독립 균등 무작위 선택의 논리를 적용할 수 없습니다. N=3에서는 밑의 구간이 비어 있으므로 구현에서 먼저 판별합니다. [라빈의 원논문](https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf)도 확률적 통과와 소수라는 증명을 구별합니다.
+
+다음 그림은 일반적인 밑으로 한 번 검사하는 흐름입니다. N=3은 사전에 처리했으며, 홀수 입력에는 지정 구간에서 선택할 수 있는 밑이 있어야 합니다.
+
+```mermaid
+graph TD
+    Start["한 번의 검사: 홀수N은3이상; 밑은2부터N-2까지"] --> DS["N-1 = d*2^s; d는홀수"]
+    DS --> Power["x = a^d mod N"]
+    Power --> First{"x가1또는N-1인가?"}
+    First -- Yes --> Pass["이 밑을 통과: 소수라는 증명은 아님"]
+    First -- No --> Init["r=1로 설정"]
+    Init --> More{"r이s보다 작은가?"}
+    More -- No --> Fail["합성수"]
+    More -- Yes --> Square["x = x*x mod N"]
+    Square --> Minus{"x가N-1인가?"}
+    Minus -- Yes --> Pass
+    Minus -- No --> One{"x가1인가?"}
+    One -- Yes --> Fail
+    One -- No --> Next["r을1증가"]
+    Next --> More
+```
+
+## 4. 범위를 제한한 결정론적 판별
+
+제한된 정수 범위에서는 알려진 검증 결과에 근거한 충분한 밑의 집합으로 난수 없이 판별할 수 있습니다. [SPRP 밑 기록](https://miller-rabin.appspot.com/)에 실린 이번 구현의 조건은 다음과 같습니다. 모든 상한은 엄격한 미만 조건입니다.
+
+| 입력 범위 | 검사할 밑 |
+| --- | --- |
+| $N<4759123141$ | 2, 7, 61 |
+| $N<1122004669633$ | 2, 13, 23, 1662803 |
+| $N<2^{64}$ | 2, 325, 9375, 28178, 450775, 9780504, 1795265022 |
+
+마지막 집합은 소수 7개가 아니라 정수 밑 7개입니다. 예를 들어 325는 합성수입니다. 기록에는 이 일곱 밑의 결과가 Jim Sinclair의 2011년 결과로 기재되어 있습니다. 이 글에서 64비트 전체 범위를 독립적으로 다시 탐색한 것은 아닙니다.
+
+다른 방법으로 처음 12개 소수 `2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37`도 이 64비트 범위를 판별하기에 충분합니다. [Sorenson–Webster의 결과](https://arxiv.org/abs/1509.00864)에서 열두 밑 모두에 대한 가장 작은 강한 유사소수는 318665857834031151167461이며 $2^{64}$보다 큽니다. 아래 구현은 열두 밑의 대안이 아니라 표의 범위별 3·4·7개 밑을 사용합니다.
+
+## 5. 완전한 C++ 예제
+
+입력형 `u64`의 범위는 $0\le N\le2^{64}-1$입니다. 0과 1은 `false`이지만 합성수라는 뜻은 아니므로 출력은 `Not prime`으로 합니다. 모듈러 곱셈은 곱을 만들기 전에 형 변환합니다. 밑을 N으로 나눈 나머지로 줄이고 0이면 해당 밑만 건너뛰어 다른 밑을 계속 검사합니다. 밑이 0이라는 사실만으로 정수 전체의 소수·합성수 여부를 판단할 수 없습니다.
+
+아래 블록은 보조 함수까지 포함한 완전한 프로그램입니다. 앞의 블록을 추가로 이어 붙일 필요가 없습니다. 지원되는 GCC 대상 플랫폼에서는 `g++ -std=c++17 -O2 primality.cpp -o primality`와 같은 명령으로 컴파일할 수 있습니다.
+
+```cpp
+#include <cstdint>
+#include <stdexcept>
+
+#if !defined(__SIZEOF_INT128__)
+#error "This example requires unsigned __int128 support"
+#endif
+
+using u64 = std::uint64_t;
+using u128 = unsigned __int128;
+
+u64 mod_mul(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    return static_cast<u64>(static_cast<u128>(a) * b % m);
 }
 
-// 밀러-라빈 소수 판별법에 의한 64bit 정수의 결정론적 판별
-bool is_prime_miller_rabin(uint64_t n) {
-    // 경계값 및 작은 소수의 사전 판별
-    if (n < 2) return false;
-    if (n == 2 || n == 3 || n == 5 || n == 7) return true;
-    if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0 || n % 7 == 0) return false;
+u64 mod_pow(u64 base, u64 exp, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
+    base %= m;
+    while (exp > 0) {
+        if (exp & 1) result = mod_mul(result, base, m);
+        base = mod_mul(base, base, m);
+        exp >>= 1;
+    }
+    return result;
+}
 
-    // n-1 = d * 2^s 형태로 분해한다
-    uint64_t d = n - 1;
-    int s = 0;
-    while ((d & 1) == 0) {
-        d >>= 1;
-        s++;
+#include <iostream>
+#include <initializer_list>
+#include <vector>
+
+bool is_prime_miller_rabin(u64 n) {
+    if (n < 2) return false;
+    for (u64 p : {2ULL, 3ULL, 5ULL, 7ULL}) {
+        if (n == p) return true;
+        if (n % p == 0) return false;
     }
 
-    // 판별에 사용할 밑 (bases) 리스트
-    // N 의 크기에 따라 테스트할 베이스의 수를 최소화하는 최적화
-    vector<uint64_t> bases;
+    u64 d = n - 1;
+    unsigned s = 0;
+    while ((d & 1) == 0) {
+        d >>= 1;
+        ++s;
+    }
+
+    std::vector<u64> bases;
     if (n < 4759123141ULL) {
         bases = {2, 7, 61};
     } else if (n < 1122004669633ULL) {
         bases = {2, 13, 23, 1662803};
     } else {
-        // N < 2^64 의 모든 수에 대해 결정론적이 되는 7개의 밑
         bases = {2, 325, 9375, 28178, 450775, 9780504, 1795265022};
     }
 
-    // 각 밑에 대해 테스트를 실행
-    for (uint64_t a : bases) {
+    for (u64 a : bases) {
         a %= n;
-        if (a == 0) continue; // a 가 n 의 배수인 경우는 판별 불능이나 소수는 아님
+        if (a == 0) continue; // No witness from this base; keep testing the others.
+        u64 x = mod_pow(a, d, n);
+        if (x == 1 || x == n - 1) continue;
 
-        uint64_t x = mod_pow(a, d, n);
-        if (x == 1 || x == n - 1) continue; // 첫 번째 조건 통과, 다음 밑으로
-
-        bool composite = true;
-        // s-1 번의 루프 (x = x^2 mod n)
-        for (int r = 1; r < s; r++) {
+        bool passed = false;
+        for (unsigned r = 1; r < s; ++r) {
             x = mod_mul(x, x, n);
             if (x == n - 1) {
-                composite = false; // 두 번째 조건 통과, 소수일 가능성 있음
+                passed = true;
                 break;
             }
+            if (x == 1) return false;
         }
-        
-        // 어떤 조건도 만족하지 않으면 확실히 합성수
-        if (composite) return false;
+        if (!passed) return false;
     }
-
-    // 모든 베이스에서 조건을 통과한 경우 확실히 소수
     return true;
 }
 
 int main() {
-    // 테스트용 샘플
-    vector<uint64_t> test_cases = {
-        1000000007,           // 유명한 소수
-        998244353,            // 유명한 소수
-        1000000000000000003,  // 10^18 근처의 소수
-        1000000000000000007,  // 합성수 (10^18 + 7)
-        561,                  // 카마이클 수 (합성수)
-        18446744073709551557ULL // 2^64 근처의 가장 큰 소수 중 하나
+    const std::vector<u64> cases = {
+        0, 1, 2, 73, 561, 1000000007, 998244353,
+        1000000000000000003ULL, 1000000000000000007ULL,
+        18446744073709551557ULL, 18446744073709551615ULL
     };
-
-    for (uint64_t n : test_cases) {
-        cout << n << " is " 
-             << (is_prime_miller_rabin(n) ? "Prime" : "Composite") 
-             << endl;
+    for (u64 n : cases) {
+        std::cout << n << " is "
+                  << (is_prime_miller_rabin(n) ? "Prime" : "Not prime") << '\n';
     }
-
-    return 0;
 }
 ```
 
----
+출력은 순서대로 0과 1은 `Not prime`, 2와 73은 `Prime`, 561은 `Not prime`, 1000000007·998244353·1000000000000000003은 `Prime`, 1000000000000000007은 `Not prime`, 18446744073709551557은 `Prime`, 18446744073709551615는 `Not prime`입니다. 마지막 합성수는 $2^{64}-1$입니다. 이는 지정 범위의 교육 및 일반 정수 판별용 예제이며, 암호용 소수 생성기나 상수 시간 구현, 입력 문자열을 검증하는 라이브러리는 아닙니다.
 
-# 6. 알고리즘의 시간 복잡도와 성능 평가
+## 6. 계산량과 몽고메리 곱셈
 
-구현한 알고리즘의 성능에 대해 고찰해 봅니다.
+모듈러 곱셈 한 번을 하나의 연산으로 세면 이진 거듭제곱과 한 번의 밀러–라빈 검사는 $\mathcal{O}(\log N)$, k개의 밑은 $\mathcal{O}(k\log N)$번의 연산을 사용합니다. 시험 나눗셈의 나눗셈 횟수는 $\mathcal{O}(\sqrt N)$입니다. 입력 길이 $b=\lfloor\log_2 N\rfloor+1$로 쓰면 밀러–라빈의 모듈러 곱셈 횟수는 $\mathcal{O}(kb)$입니다. 임의 정밀도 정수의 비트 복잡도에는 곱셈과 나머지 계산 비용도 포함해야 합니다.
 
-## 시간 복잡도 (Time Complexity)
-* **시험 나눗셈:** $O(\sqrt{N})$
-* **페르마 테스트:** 거듭제곱 계산 $O(\log N) \times k$ ($k$ 는 시도 횟수)
-* **밀러-라빈 법:** 거듭제곱 계산 및 루프 $O(\log N) \times k$
+이번 고정 범위에서는 밑이 최대 7개입니다. 그러나 한 비트에 제곱뿐 아니라 조건부 곱셈이 필요할 수 있고, 이후의 제곱 반복에도 연산이 필요합니다. 따라서 전체 기본 연산 수를 $7\times64=448$로 제한할 수 없습니다. 실행 시간을 비교할 때는 CPU, 컴파일러, 최적화 옵션, 입력 집합, 측정 방법을 명시해야 합니다.
 
-64비트 환경($N \le 2^{64}$)에서 위의 결정론적 밀러-라빈 법은 최대 $7$ 개의 베이스만을 검증합니다. 따라서 $k \le 7$ 인 상수로 간주할 수 있으며, 전체 시간 복잡도는 엄밀하게 $O(\log N)$ 이 됩니다.
-최대 케이스($N \approx 10^{19}$)라고 하더라도 실행 단계 수는 많아 봐야 $7 \times 64 = 448$ 단계의 기본 연산에 수렴하며, 실행 시간은 수 마이크로초($10^{-6}$ 초) 이하입니다. 시험 나눗셈의 $O(\sqrt{N})$ (루프 횟수 $\approx 4 \times 10^9$ 번)과 비교하면 **수백만 배의 고속화** 가 달성되었습니다.
+몽고메리 곱셈은 같은 법으로 연산을 반복할 때 표현을 바꾸어 그 법으로 나누는 연산을 피하는 방법입니다. 기수가 2의 거듭제곱인 일반적인 구성에서는 법이 홀수여야 하며 기수와 서로소여야 합니다. 곱셈과 시프트 외에 덧셈, 자리올림 처리, 조건부 뺄셈도 쓰고, 표현 변환과 사전 계산 비용도 듭니다. 항상 2~3배 빨라진다는 보장은 없습니다. 절차와 조건은 [HAC 14장의 알고리즘14.32·14.36·14.94](https://cacr.uwaterloo.ca/hac/about/chap14.pdf)를 참고하세요. 위 코드에는 몽고메리 곱셈을 구현하지 않았습니다.
 
-## 추가적인 최적화：몽고메리 곱셈 (Montgomery Multiplication)
+## 7. 마무리
 
-본 기사의 구현에서는 128비트 정수 확장형 `__int128_t` 를 사용하여 나눗셈(모듈로 연산 `%`)을 수행하고 있습니다. 현대의 CPU라 하더라도 정수 나눗셈(DIV 명령)은 덧셈이나 곱셈에 비해 수십 사이클을 요구하는 비용이 높은 명령입니다.
-
-보다 극한의 최적화를 추구하는 라이브러리 제작자나 경쟁 프로그래머는 **몽고메리 곱셈 (Montgomery Multiplication)** 이라고 불리는 기법을 채택하는 경우가 있습니다. 몽고메리 곱셈은 수치를 특수한 「몽고메리 공간」으로 사상함으로써 비용이 큰 모듈로 연산(나눗셈)을 「비트 시프트와 곱셈만」으로 대체하는 경이로운 알고리즘입니다.
-이것을 밀러-라빈 판별의 나머지 곱셈에 편입시킴으로써 실행 속도를 2배에서 3배 정도 더 끌어올리는 것이 가능합니다. 이에 대해서는 매우 심오한 주제가 되므로, 다른 기사에서 자세히 해설하고자 합니다.
-
----
-
-# 7. 요약
-
-본 기사에서는 소수 판별의 기초부터 발전적인 내용까지 한 번에 해설했습니다.
-포인트를 되짚어 봅시다.
-
-1. **시험 나눗셈** 은 확실하지만 계산량이 $O(\sqrt{N})$ 이기 때문에 $N$ 이 $10^{12}$ 를 넘으면 실용성이 떨어집니다.
-2. **페르마 테스트** 는 $O(\log N)$ 으로 매우 빠르지만, 카마이클 수 등 절대 유사 소수에 속는다는 치명적인 약점이 있습니다.
-3. **밀러-라빈 소수 판별법** 은 페르마 테스트의 약점을 해소한 실용적이고 강력한 알고리즘입니다.
-4. C++ 구현에서는 `__int128_t` 를 활용하여 64비트 정수의 곱셈 오버플로우를 안전하게 처리할 수 있습니다.
-5. 64비트 정수 범위 내($N < 2^{64}$)라면 $7$ 개 또는 $12$ 개의 특정 소수를 밑으로 선택함으로써 확률적이 아니라 **결정론적(100% 정확하게)으로 소수 판별이 가능** 합니다.
-
-고속 소수 판별은 거대한 수를 다루는 계산에서 피할 수 없는 기술입니다. 본 기사에서 제공한 C++ 밀러-라빈 소스 코드는 그대로 실전에 활용할 수 있는 견고한 코드입니다. 부디 여러분의 프로젝트나 알고리즘 대회에서 활용해 보시기 바랍니다.
+시험 나눗셈은 약수를 직접 찾고, 페르마 테스트는 합동식을 이용해 후보를 제외합니다. 밀러–라빈은 더 강한 조건을 사용합니다. 일반적인 확률적 판별과, 입력 범위 및 검증된 밑의 집합을 제한한 결정론적 판별을 구분해야 합니다.
 
 ```mermaid
 graph LR
-    TrialDivision["시험 나눗셈 (O(√N))"] --> Fermat["페르마 테스트 (O(log N), 약점 있음)"]
-    Fermat --> MillerRabin["밀러-라빈 법 (O(log N), 결정론적 판별 가능)"]
-    MillerRabin --> Montgomery["+ 몽고메리 곱셈 (상수 배 고속화)"]
-    
-    style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px
+    Trial["시험 나눗셈: 약수를 직접 탐색"] --> Fermat["페르마: 합동식으로 제외"]
+    Fermat --> MR["밀러-라빈: 더 강한 조건"]
+    MR --> Fixed["제한된 범위와 검증된 밑: 결정론적 판별"]
+    MR --> Mont["몽고메리: 모듈러 연산 구현 개선"]
 ```
 
-프로그래밍과 수학이 교차하는 알고리즘의 세계는 매우 아름답고 심오합니다. 앞으로의 학습에 도움이 되기를 바랍니다.
+정확성은 수학뿐 아니라 입력 범위, 정수형, 오버플로, 법의 조건과 밑의 처리에도 달려 있습니다. 64비트 코드의 보장을 임의 길이 정수나 암호 시스템 전체로 확장해서는 안 됩니다.
 
----
-*Reference:*
-- *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
-- *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+### 참고 자료
 
-
+- [HAC 4장: 페르마·밀러–라빈과 오류 확률의 조건](https://cacr.uwaterloo.ca/hac/about/chap4.pdf) (1996년 자료이므로 이후의 소수 판별 결과 및 현행 키 생성 표준과 구분)
+- [Rabin (1980): Probabilistic Algorithm for Testing Primality](https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf)
+- [결정론적 밀러–라빈의 SPRP 밑 기록](https://miller-rabin.appspot.com/)
+- [Sorenson–Webster: Strong Pseudoprimes to Twelve Prime Bases](https://arxiv.org/abs/1509.00864) (2015년 프리프린트, 2017년 학술지 게재)
+- [GCC: 128비트 정수 확장](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)
+- [C++ 작업 초안: 나눗셈과 나머지](https://eel.is/c++draft/expr.mul)
+- [HAC 14장: 몽고메리 연산](https://cacr.uwaterloo.ca/hac/about/chap14.pdf)
