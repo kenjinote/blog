@@ -827,5 +827,68 @@
     "hindiFullBodyReviewed": true,
     "russianFullBodyReviewed": true,
     "arabicFullBodyReviewed": true
+  },
+  "finalAssembly": {
+    "checkedAt": "2026-10-28T09:37:13.040263+09:00",
+    "reviewedTranslations": 12,
+    "sourceVersions": 1,
+    "otherTranslationsUnreviewed": 0,
+    "validation": "docs/translation-review/batch-016-final-validation.json",
+    "reproducer": "docs/translation-review/verify_batch_016.py",
+    "scope": "All13versions:117displayformulas,26Mermaiddiagrams/130edges,78primary-reference links,1128TeX expressions. No executable article code. Independent public toy arithmetic is separate from prose and diagrams.",
+    "arithmetic": {
+      "scope": "Independent mathematical fixtures, not executable article blocks or a security proof.",
+      "dhMatchingPairs": 100,
+      "dhSubgroupNonidentityMembers": 10,
+      "dhIdentityForcesOne": true,
+      "mitmSharedValues": [
+        13,
+        18
+      ],
+      "rsaRepresentatives": 143,
+      "rsaNonCoprimeRepresentatives": 23,
+      "rsaPrimewiseCases": 286,
+      "e1RejectedByRevisedCondition": true,
+      "curvePointsIncludingInfinity": 20,
+      "pointPairs": 400,
+      "associativityTriples": 8000,
+      "y0DoublingsToInfinity": 3,
+      "singularIntegerVsFieldCounterexample": true
+    },
+    "build": {
+      "hugo": "0.139.0 extended",
+      "minified": true,
+      "scope": "Seventeen isolated article bundles; full-site build remains in CI.",
+      "multilingualPages": 1103,
+      "httpsHtml": 2025,
+      "httpsXml": 41
+    },
+    "repositoryTests": {
+      "multilingual": 10,
+      "mathRendering": 1,
+      "translationReviews": 6,
+      "allPassed": true,
+      "ledger": {
+        "current": 204,
+        "unreviewed": 12828
+      }
+    },
+    "immutableReviewEntryDigests": {
+      "post/public-key-cryptography-rsa-ecc/index.en.md": "3e00231f074baac267f3a5fe9a6212775fc6eb29330574ffba82b01a7eb81ecd",
+      "post/public-key-cryptography-rsa-ecc/index.zh-cn.md": "422a160933f31e444a51a8f2168634418c885d806011dcff8a76895cb6d5bbad",
+      "post/public-key-cryptography-rsa-ecc/index.zh-tw.md": "9cd7c58f7f0e995ff375086d21795a8e2441236c83d0fc0d14d041a5aa35d99a",
+      "post/public-key-cryptography-rsa-ecc/index.es.md": "cdc70d1c83437e840bef814e2f32225283967706c22728214abbee9c7827b328",
+      "post/public-key-cryptography-rsa-ecc/index.ko.md": "ec0e2ce35b15653521389245062aaa31bcbb17a00bf1e6a077022334bf0fd5f6",
+      "post/public-key-cryptography-rsa-ecc/index.pt.md": "aff2cac363650ab85b5a3262338ddd06e217926e34d3f832cf27bb373e185e24",
+      "post/public-key-cryptography-rsa-ecc/index.fr.md": "351d0fa307266fa4146dde203c3186c17604dfca06edc14c67dd8c70528078e5",
+      "post/public-key-cryptography-rsa-ecc/index.de.md": "b195074ac2a15c9d2ae1e80d6f4d8f34d24be434c28447bdad7b0fc12d38bafe",
+      "post/public-key-cryptography-rsa-ecc/index.id.md": "7af63722f14671b321272a7aa116781cfeaa8052de7deb461b78fc220918a414",
+      "post/public-key-cryptography-rsa-ecc/index.hi.md": "9b8966fb08cefd0bd188333d0e18887efa516190349d9a34a7c21e1635067bcc",
+      "post/public-key-cryptography-rsa-ecc/index.ru.md": "1026b9e594827ce1c2d0a19fd618e6b731113c231304f5920e3faf5d49bd7510",
+      "post/public-key-cryptography-rsa-ecc/index.ar.md": "722fef56b9747d88fa41d8829dffd89c16a057f48614f1497fe99fd0dcf083c7"
+    },
+    "buildPending": false,
+    "publicationPending": true,
+    "limitations": "Historical stage entries retain actual review dates and pending status. Full CI and221URL publication verification pending. AI review, no human/native-speaker, visual browser/RTL, constant-time or production-security certification."
   }
 }

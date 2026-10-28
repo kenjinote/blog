@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T09:36:50.693546+09:00",
+  "site": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-17-bundles-rsa-ecc-ar",
+  "scope": "Explicitly selected reviewed languages only. Automated checks do not record prose reviews.",
+  "limitations": [
+    "No executable article code; independent arithmetic only.",
+    "Not a visual browser/KaTeX/Mermaid or native-speaker audit.",
+    "Finite examples do not prove cryptographic security."
+  ],
+  "arithmetic": {
+    "scope": "Independent mathematical fixtures, not executable article blocks or a security proof.",
+    "dhMatchingPairs": 100,
+    "dhSubgroupNonidentityMembers": 10,
+    "dhIdentityForcesOne": true,
+    "mitmSharedValues": [
+      13,
+      18
+    ],
+    "rsaRepresentatives": 143,
+    "rsaNonCoprimeRepresentatives": 23,
+    "rsaPrimewiseCases": 286,
+    "e1RejectedByRevisedCondition": true,
+    "curvePointsIncludingInfinity": 20,
+    "pointPairs": 400,
+    "associativityTriples": 8000,
+    "y0DoublingsToInfinity": 3,
+    "singularIntegerVsFieldCounterexample": true
+  },
+  "files": [
+    {
+      "language": "ja",
+      "path": "post/public-key-cryptography-rsa-ecc/index.md",
+      "hash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "displayFormulas": 9,
+      "texExpressions": 87,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "post/public-key-cryptography-rsa-ecc/index.en.md",
+      "hash": "0c05625225de845dc2421a34b48b199a67d4bed28e529ac80005b6a64eba4208",
+      "displayFormulas": 9,
+      "texExpressions": 86,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "post/public-key-cryptography-rsa-ecc/index.zh-cn.md",
+      "hash": "b3ec2ea11a37374046807da369f6c05262079eba892ca3faee86ff2334d886f8",
+      "displayFormulas": 9,
+      "texExpressions": 88,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "post/public-key-cryptography-rsa-ecc/index.zh-tw.md",
+      "hash": "53c51cb770e2177d24a8f228557d8b0556380c873337f3cbc7ccd8db8b87f741",
+      "displayFormulas": 9,
+      "texExpressions": 88,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "post/public-key-cryptography-rsa-ecc/index.es.md",
+      "hash": "f4eade471a441e995ba84419a32da5b0feedd73e2287b89f15a4e4246e13d135",
+      "displayFormulas": 9,
+      "texExpressions": 86,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "post/public-key-cryptography-rsa-ecc/index.ko.md",
+      "hash": "eb758939096296fa5d2286d8a3b935c0bdcd56ec15d02ef238aaf5518e68b0f3",
+      "displayFormulas": 9,
+      "texExpressions": 88,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "path": "post/public-key-cryptography-rsa-ecc/index.pt.md",
+      "hash": "99b018ad75a8909240ee84087d6ad8d22be96b54ddd7143e27cf9cb5c22b9edb",
+      "displayFormulas": 9,
+      "texExpressions": 86,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "path": "post/public-key-cryptography-rsa-ecc/index.fr.md",
+      "hash": "10a926c6f5b00b784b6c1e1545e07b02915e5313168f3053aee1190b3e9dc1bf",
+      "displayFormulas": 9,
+      "texExpressions": 86,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "path": "post/public-key-cryptography-rsa-ecc/index.de.md",
+      "hash": "eb182a7b93bbab320ce02a3d1da2020f2d5d6dc53f62eefd5780701a045c7421",
+      "displayFormulas": 9,
+      "texExpressions": 86,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "post/public-key-cryptography-rsa-ecc/index.id.md",
+      "hash": "a67ed3af20ee453ea8438dec919c878c9d6b88ef2f4a6d62826e6054f2a933c8",
+      "displayFormulas": 9,
+      "texExpressions": 86,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "path": "post/public-key-cryptography-rsa-ecc/index.hi.md",
+      "hash": "b827fb20e57e443c89fdd5e9161d4add751edc03165aa255299eac50f0cc4153",
+      "displayFormulas": 9,
+      "texExpressions": 88,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "path": "post/public-key-cryptography-rsa-ecc/index.ru.md",
+      "hash": "59d864f43a81ecde5496751739c3ec6977975378b8462e52b997d2e16c353f54",
+      "displayFormulas": 9,
+      "texExpressions": 86,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "path": "post/public-key-cryptography-rsa-ecc/index.ar.md",
+      "hash": "6d3d069839ab556f567c53f40d42d4645b09b641b7993c83d55e3a058ba67b58",
+      "displayFormulas": 9,
+      "texExpressions": 87,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "rsaRangePreserved": true,
+        "linksPreserved": true,
+        "mermaidEnabled": true,
+        "mathEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": true
+    }
+  ],
+  "allPassed": true
+}
