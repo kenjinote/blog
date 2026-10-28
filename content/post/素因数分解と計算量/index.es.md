@@ -1,7 +1,8 @@
 ---
-title: 'Límites de la factorización de números primos y explicación de la notación Big O (O) de la complejidad temporal'
+title: "Los límites de la factorización de enteros y la notación Big O"
 slug: "prime-factorization-limits-big-o-notation"
 date: "2026-09-11T23:00:00+09:00"
+lastmod: "2026-10-28"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,280 +10,202 @@ categories: ["mathematics", "computer-science", "cryptography"]
 tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 ---
 
-# Introducción: ¿Por qué la factorización de números primos es "difícil"?
+## 1. Introducción: ¿qué tiene de difícil factorizar?
 
-En la sociedad de Internet actual, la razón por la que podemos disfrutar de las compras en línea y el intercambio de información confidencial con tranquilidad es la existencia de la "tecnología criptográfica". Y el fundamento que sustenta la seguridad de esta tecnología criptográfica (especialmente el cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/), que se usa ampliamente) es el hecho matemático de que "la factorización de enteros enormes en números primos es extremadamente difícil".
+Descomponer un entero pequeño en factores primos es una operación escolar familiar. Sin embargo, recuperar los factores de un producto de primos grandes puede exigir enormes recursos de cómputo clásico. Esta asimetría forma parte del contexto de la [criptografía de clave pública, incluido RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/).
 
-A primera vista, la factorización de números primos puede parecer una tarea simple de "simplemente descomponer un número en una multiplicación de números primos", pero a medida que aumenta el número de dígitos, se transforma en un problema sumamente difícil que ni las supercomputadoras más rápidas del mundo podrían resolver incluso si estuvieran funcionando durante décadas o siglos. La factorización de números primos que solemos aprender en la escuela es, en el mejor de los casos, la simple tarea de dividir por $2$, $3$ o $5$, pero frente al producto de números primos desconocidos de cientos de dígitos, ese enfoque simple colapsa por completo.
+Esto no significa que todo entero grande sea difícil de factorizar, ni que se haya demostrado que ningún algoritmo clásico rápido puede existir. Un entero enorme con factores pequeños, como un número par, puede ser fácil de tratar. Tampoco las complejidades de los algoritmos siguientes son cotas inferiores del problema en sí. La seguridad criptográfica exige evaluar claves generadas correctamente frente a los recursos del atacante supuesto.
 
-En este artículo, comenzando desde el concepto de "complejidad temporal (notación [Big O](https://kenji.blog/es/p/time-space-complexity-big-o-notation-examples/): $\mathcal{O}$)", que es la base de las ciencias de la información y la computación, explicaremos matemática y detalladamente cuánto tiempo de cálculo requieren varios algoritmos para resolver la factorización de números primos (división por tentativa, algoritmo $\rho$ de Pollard, [criba general del cuerpo de números](/es/p/beyond-gnfs-integer-factorization-algorithms/), etc.). Luego, desentrañaremos por qué la factorización en números primos de números gigantescos es prácticamente imposible para las computadoras clásicas, cómo esto protege nuestra información y privacidad, e incluso cómo las computadoras cuánticas cambiarán esta premisa.
+Primero aclararemos la notación Big O y el tamaño de entrada; después compararemos la división por tentativa, el método de Fermat, rho de Pollard, la criba cuadrática y la criba general de cuerpos numéricos. Finalmente, examinaremos su relación con P frente a NP y la computación cuántica. Conviene distinguir las estimaciones de complejidad, las pruebas de seguridad y los segundos de ejecución.
 
----
+## 2. Complejidad y notación Big O
 
-# Definición estricta de complejidad temporal y notación Big O ($\mathcal{O}$)
+El tiempo transcurrido depende de la CPU, la memoria, la implementación, la paralelización y otras condiciones. Una afirmación de complejidad debe especificar el tamaño de entrada y qué se cuenta como operación elemental. Contar una multiplicación de enteros grandes como una operación es distinto de contar las operaciones de bits que contiene.
 
-Al evaluar el rendimiento y la eficiencia de un algoritmo, no basta con simplemente medir "el tiempo de ejecución del programa (en segundos)". Esto se debe a que el tiempo de ejecución depende en gran medida del rendimiento de la computadora utilizada (como la frecuencia del reloj de la CPU y la velocidad de la memoria), el lenguaje de programación y la optimización del compilador.
+### Una cota superior asintótica
 
-Por lo tanto, la **complejidad temporal (Time Complexity)** se utiliza como una métrica de evaluación universal independiente del hardware y el entorno, y la notación utilizada para expresarla es la **notación Big O (Big-O Notation)**. La notación Big O es una notación matemática que expresa cómo el tiempo de ejecución (o el número de pasos de ejecución) de un algoritmo aumenta en relación con el tamaño de los datos de entrada $N$ (la tasa de crecimiento asintótico) cuando $N$ se vuelve muy grande.
+Para funciones no negativas en entradas suficientemente grandes, $f(n)=\mathcal{O}(g(n))$ significa:
 
-## Definición matemática de la notación asintótica
+$$
+\exists c>0,\ \exists n_0,\ \forall n\ge n_0:\quad 0\le f(n)\le c\,g(n).
+$$
 
-En ciencias de la computación, para las funciones $f(n)$ y $g(n)$, decir que $f(n) = \mathcal{O}(g(n))$ se define matemáticamente de la siguiente manera:
+Las constantes $c$ y $n_0$ no dependen de la entrada $n$. Esta es la definición de una cota superior; por sí sola no significa «peor caso». Hay que precisar si la función describe el peor tiempo, el tiempo promedio o el tiempo esperado de un algoritmo aleatorizado.
 
-$$ \exists c > 0, \exists n_0 > 0 \text{ s.t. } \forall n \ge n_0, 0 \le f(n) \le c \cdot g(n) $$
+Usamos $\Theta$ cuando las cotas superior e inferior tienen el mismo orden, y $\Omega$ para una cota inferior. Por ejemplo, incluso $f(n)=1$ pertenece a $\mathcal{O}(2^n)$. Por tanto, esa cota no implica que el tiempo se duplique exactamente al aumentar la entrada en uno. La notación tampoco expresa directamente proporciones entre tiempos medidos. La [definición del NIST](https://xlinux.nist.gov/dads/HTML/bigOnotation.html) también distingue una cota superior de una cota ajustada.
 
-Esto significa que "cuando el tamaño de entrada $n$ es lo suficientemente grande ($n \ge n_0$), el crecimiento de la función $f(n)$ está acotado superiormente por un múltiplo constante de $g(n)$". En otras palabras, indica un "límite superior (Upper Bound)" de que el tiempo de procesamiento del algoritmo, incluso en el peor de los casos, estará dentro de un múltiplo constante de $g(n)$.
+### Formas representativas de crecimiento
 
-Del mismo modo, existen notaciones como $\Omega$ (Big-Omega) para indicar un límite inferior, y $\Theta$ (Big-Theta) para los casos en que los límites superior e inferior coinciden, pero en general, al discutir la complejidad temporal del peor caso de un algoritmo, la notación $\mathcal{O}$ es la que se usa con más frecuencia.
+En esta tabla, $n$ es el número de elementos de datos, y se cuentan operaciones como comparaciones y accesos a elementos.
 
-## Clases representativas de complejidad temporal
+| Orden | Ejemplo y condiciones |
+| --- | --- |
+| $\mathcal{O}(1)$ | Acceder a un elemento de un arreglo por su índice en un modelo de acceso aleatorio |
+| $\mathcal{O}(\log n)$ | Comparaciones de una búsqueda binaria en un arreglo ordenado |
+| $\mathcal{O}(n)$ | Comparaciones de una búsqueda lineal en el peor caso |
+| $\mathcal{O}(n\log n)$ | Ordenamiento por mezcla en el peor caso, o quicksort en promedio bajo supuestos adecuados |
+| $\mathcal{O}(n^2)$ | Por ejemplo, comparaciones del ordenamiento por inserción en el peor caso |
+| $\mathcal{O}(2^n)$ | Cantidad de todos los subconjuntos de $n$ elementos; el procesamiento de cada candidato tiene un costo adicional |
+| $\mathcal{O}(n!)$ | Cantidad de todas las permutaciones de $n$ elementos distintos; el procesamiento de cada candidato tiene un costo adicional |
 
-Existen varias clases representativas de complejidad temporal. Veámoslas en orden desde el tiempo de ejecución más corto (más eficiente).
-
-1. **$\mathcal{O}(1)$ : Tiempo constante (Constant time)**
-   Es un algoritmo cuyo tiempo de ejecución no cambia por mucho que aumente el tamaño de entrada $N$. Ejemplos de esto incluyen obtener un valor especificando el índice de un arreglo o buscar en una tabla hash (en el caso ideal).
-
-2. **$\mathcal{O}(\log N)$ : Tiempo logarítmico (Logarithmic time)**
-   Es un algoritmo altamente eficiente donde, incluso si el tamaño de la entrada se duplica, el tiempo de ejecución solo aumenta en una constante. La "búsqueda binaria ([Binary Search](https://kenji.blog/es/p/search-algorithms-linear-binary-hash-table-principles/))", que busca un valor objetivo en un arreglo ordenado, es un ejemplo representativo. Incluso con 1,000 millones de datos, el objetivo se puede encontrar con solo unas 30 comparaciones.
-
-3. **$\mathcal{O}(N)$ : Tiempo lineal (Linear time)**
-   El tiempo de ejecución aumenta proporcionalmente al tamaño de la entrada. Si los datos se multiplican por 10, el tiempo también se multiplica por 10. La "búsqueda lineal", que verifica todos los elementos de un arreglo uno por uno, pertenece a esta categoría.
-
-4. **$\mathcal{O}(N \log N)$ : Tiempo cuasilineal (Linearithmic time)**
-   Es un poco más lento que $\mathcal{O}(N)$, pero entra en la categoría eficiente. Muchos de los algoritmos de ordenamiento rápido prácticos, como el ordenamiento por mezcla (Merge Sort) y el ordenamiento rápido (Quick Sort, en su complejidad promedio), tienen esta complejidad temporal.
-
-5. **$\mathcal{O}(N^2)$ : Tiempo polinómico / Tiempo cuadrático (Quadratic time)**
-   Cuando el tamaño de la entrada se duplica, el tiempo de ejecución se cuadruplica; si se multiplica por 10, aumenta 100 veces. Los procesamientos simples que usan bucles anidados, el ordenamiento de burbuja (Bubble Sort) y el ordenamiento por inserción (Insertion Sort) caen en esta categoría. Cuando la cantidad de datos supera las decenas de miles, el procesamiento lleva mucho tiempo. Las complejidades temporales expresadas en la forma $\mathcal{O}(N^k)$ se denominan colectivamente **tiempo polinómico (Polynomial time)**.
-
-6. **$\mathcal{O}(2^N)$ : Tiempo exponencial (Exponential time)**
-   Un simple aumento de 1 en el tamaño de la entrada duplica el tiempo de ejecución. Es extremadamente ineficiente, y con solo que $N$ llegue a 40 o 50, incluso las computadoras más avanzadas no podrán finalizar el cálculo en un tiempo realista. La búsqueda exhaustiva del problema de la mochila o las soluciones simples para el problema del viajante de comercio pertenecen a esta categoría.
-
-7. **$\mathcal{O}(N!)$ : Tiempo factorial (Factorial time)**
-   Aumenta aún más rápido que $\mathcal{O}(2^N)$. Un algoritmo de este tipo probaría todas las permutaciones en el problema del viajante de comercio.
-
-El siguiente diagrama Mermaid es una comparación esquemática de la tasa de crecimiento del tiempo de ejecución (número de pasos) de cada complejidad temporal con respecto al aumento de $N$.
+Un tiempo acotado por $\mathcal{O}(n^k)$ para una constante fija $k$ es polinómico. Un exponente o una constante grandes pueden hacerlo poco práctico, mientras que un método exponencial puede ser útil con entradas pequeñas. El siguiente diagrama clasifica estimaciones representativas según la longitud de entrada en bits. No es una prueba de dificultad ni una gráfica del tiempo transcurrido.
 
 ```mermaid
 graph TD
-    classDef poly fill:#a8e6cf,stroke:#333,stroke-width:2px;
-    classDef subexp fill:#ffd3b6,stroke:#333,stroke-width:2px;
-    classDef exp fill:#ffaaa5,stroke:#333,stroke-width:2px;
-
-    Poly["Tiempo Polinómico O(n^k)"]:::poly
-    SubExp["Tiempo Subexponencial L_n"]:::subexp
-    Exp["Tiempo Exponencial O(2^n)"]:::exp
-
-    GNFS["Criba General del Cuerpo de Números (GNFS)"]:::subexp
-    Pollard["Algoritmo rho de Pollard"]:::exp
-    Trial["División por Tentativa"]:::exp
-
-    Easy["Factible"]:::poly
-    Hard["Intratable"]:::exp
-
-    Poly --- Easy
-    Exp --- Hard
-
-    Trial --> Exp
-    Pollard --> Exp
-    GNFS --> SubExp
-    
-    Poly -.-> SubExp
-    SubExp -.-> Exp
+    Trial["División por tentativa: cantidad de divisiones enteras"] --> Exp["Estimación exponencial en la longitud en bits"]
+    Rho["Rho de Pollard: cantidad esperada heurística de multiplicaciones"] --> Exp
+    GNFS["Criba general de cuerpos numéricos: estimación heurística"] --> SubExp["Estimación subexponencial en la longitud en bits"]
 ```
 
-Espero que haya comprendido cuán importante es la diferencia en la complejidad temporal a la hora de elegir un algoritmo. En criptografía, garantizamos la seguridad utilizando intencionalmente problemas que requieren este "tiempo exponencial" o "complejidad temporal cercana a este" (es decir, problemas que no se pueden resolver fácilmente).
+## 3. RSA: valor del entero y longitud de entrada
 
----
+Sea $N\ge2$ el entero que queremos factorizar y $b$ la longitud de su representación binaria. No es el número de elementos $n$ de la tabla anterior.
 
-# El mecanismo del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) y el problema de la factorización de números primos
+$$
+b=\lfloor\log_2 N\rfloor+1,\qquad 2^{b-1}\le N<2^b.
+$$
 
-Para comprender por qué es importante la factorización en números primos, repasemos brevemente cómo funciona el cifrado RSA. El cifrado RSA es un sistema criptográfico de clave pública desarrollado en 1977 por Ronald Rivest, Adi Shamir y Leonard Adleman.
+Por ejemplo, $15$ tiene cuatro bits, pero $2^4=16$, no $15$. Una cota polinómica en el valor $N$ puede ser exponencial en la longitud de entrada $b$. Las propias operaciones con enteros grandes también tienen costos que dependen de $b$.
 
-### Pasos para la generación de claves
-1. Se eligen aleatoriamente dos números primos muy grandes, $p$ y $q$. (Por ejemplo, de 1024 bits de longitud cada uno).
-2. Se multiplican para calcular $N = p \times q$. Este $N$ se hace público al mundo entero como parte de la clave pública. (Tendrá una longitud de 2048 bits).
-3. Se calcula la función indicatriz de Euler $\phi(N) = (p-1)(q-1)$.
-4. Se elige un número entero $e$ que sea coprimo con $\phi(N)$, y esto también se convierte en la clave pública.
-5. Se calcula un $d$ (clave privada) de tal manera que $e \times d \equiv 1 \pmod{\phi(N)}$.
+En el caso básico de RSA con dos primos, usamos primos impares distintos $p,q$ para formar $N=pq$. Si cada primo tiene 1024 bits, el producto tiene 2047 o 2048 bits, no siempre 2048. La clave pública incluye $N,e$, y la privada incluye el exponente privado $d$ y posiblemente otros valores. Por ejemplo, las siguientes condiciones son suficientes para elegir $d$:
 
-Aquí, lo extremadamente importante es el hecho de que **"para descifrar el cifrado es necesaria la clave privada $d$, para calcular $d$ es necesario $\phi(N)$, y para calcular $\phi(N)$, el número $N$ debe ser factorizado en $p$ y $q$"**.
+$$
+\varphi(N)=(p-1)(q-1),\quad 1<e<\varphi(N),\quad
+\gcd(e,\varphi(N))=1,\quad ed\equiv1\pmod{\varphi(N)}.
+$$
 
-La multiplicación de números primos enormes $p \times q$ se realiza en un instante, pero es desesperadamente difícil encontrar (factorizar) los números primos originales $p$ y $q$ a partir del resultado $N$. Esta propiedad de "función unidireccional (One-way function)" es precisamente el corazón del cifrado RSA.
+El [RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html) define las claves de forma más general mediante $\lambda(N)=\operatorname{lcm}(p-1,q-1)$. Conocer los factores permite calcular un exponente privado. Sin embargo, no se ha demostrado en general que invertir RSA sea equivalente a factorizar, y no todos los ataques contra RSA requieren factorizar el módulo.
 
-Aquí hay un punto muy importante a tener en cuenta. El "tamaño de entrada $n$" en el problema de la factorización de números primos no es el tamaño del número $N$ en sí, sino "el número de bits necesarios para representar el número $N$".
-Si el número de dígitos de la representación binaria del entero $N$ es $n$, entonces $n \approx \log_2 N$. Es decir, la complejidad del algoritmo debe evaluarse en relación con $n = \log_2 N$ (o $\ln N$), no con $N$.
+La operación básica de exponenciación modular de enteros no constituye por sí sola un esquema de cifrado seguro. El uso real exige esquemas de cifrado que incorporen OAEP, esquemas de firma como PSS y considerar la generación de claves, las implementaciones y el protocolo completo. La asimetría entre multiplicar y recuperar factores no es una prueba incondicional de seguridad.
 
----
+## 4. Cinco algoritmos de factorización
 
-# Historia de los algoritmos de factorización de números primos y su complejidad temporal
+### 4.1 División por tentativa
 
-A partir de aquí, explicaremos en detalle los mecanismos y complejidades de varios algoritmos para descomponer un número compuesto dado $N$ en el producto de números primos. Esta es también la historia de cómo la humanidad ha desafiado los límites de la factorización de números primos.
+Un entero compuesto $N$ tiene al menos un factor primo que no supera $\sqrt N$. Por eso, probar divisores pequeños hasta $\lfloor\sqrt N\rfloor$ permite encontrar un factor. No se afirma que el factor primo más grande sea menor que la raíz cuadrada: el mayor factor primo de $15=3\cdot5$ es $5$, superior a $\sqrt{15}$.
 
-## 1. División por tentativa (Trial Division)
+Para el método simple que prueba todos los candidatos enteros, el número de divisiones en el peor caso se puede estimar como $\mathcal{O}(\sqrt N)$. La desigualdad de la longitud en bits también proporciona la cota $\mathcal{O}(2^{b/2})$. Se cuenta cada división de precisión múltiple como una operación, no el total de operaciones de bits. Un factor pequeño permite terminar antes.
 
-El algoritmo más intuitivo y primitivo es la "división por tentativa". Es un método que intenta dividir $N$ por números primos en ordern, comenzando desde $2$.
+### 4.2 Método de Fermat: importa la distancia entre factores
 
-### Descripción general del algoritmo
-Se basa en la propiedad de que los factores primos de $N$ nunca superarán $\sqrt{N}$ (dado que $\sqrt{N} \times \sqrt{N} = N$, si hay un factor primo mayor que eso, necesariamente estará emparejado con un factor primo menor o igual a $\sqrt{N}$).
-Por lo tanto, se verifica si es divisible por todos los números (o números primos) hasta $2, 3, 5, 7, \dots, \lfloor\sqrt{N}\rfloor$.
+Para un entero compuesto impar, buscamos una diferencia de cuadrados:
 
-### Evaluación de la complejidad temporal
-En el peor de los casos (como cuando $N$ es el producto de dos números primos enormes), es necesario realizar divisiones hasta $\sqrt{N}$.
-Como se mencionó anteriormente, dado que el tamaño de entrada $n$ es $n = \log_2 N$, se puede expresar como $N = 2^n$.
-Por lo tanto, el número de pasos de cálculo es, como máximo, proporcional a lo siguiente:
+$$
+N=x^2-y^2=(x-y)(x+y).
+$$
 
-$$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
+Empezamos en $x=\lceil\sqrt N\rceil$ y aumentamos $x$ hasta que $x^2-N$ sea un cuadrado perfecto. Si $N=pq$ con $p\le q$ impares, una solución es $x=(p+q)/2$, $y=(q-p)/2$. La cantidad de candidatos hasta esa solución es la siguiente; si aparece otra solución antes, podemos terminar antes.
 
-Esto significa que la complejidad temporal es de **$\mathcal{O}(2^{n/2})$** con respecto a la longitud en bits $n$. En otras palabras, la división por tentativa es un **"algoritmo de tiempo puramente exponencial (Exponential time)"** con respecto a $n$.
-Por cada aumento de 1 bit en el número de dígitos (el número se duplica), el tiempo de cálculo se multiplica por aproximadamente $\sqrt{2} \approx 1.414$. Si $N$ es un número que supera los 1024 bits (unos 300 dígitos en decimal), el cálculo no terminaría ni siquiera utilizando una cantidad de tiempo equivalente a la edad del universo.
+$$
+\frac{p+q}{2}-\lceil\sqrt N\rceil+1.
+$$
 
-## 2. Método de factorización de [Fermat](https://kenji.blog/es/p/fermat/) ([Fermat](https://kenji.blog/es/p/fermat/)'s Factorization Method)
+Con los factores cercanos de $1009\cdot1013$, el primer candidato funciona. En cambio, $3\cdot104729=314187$ requiere 51806 candidatos. En particular, fijar $p=3$ y aumentar el primo $q$ produce $\Theta(N)$ candidatos. No es correcto asignar siempre al método de Fermat el mismo orden de raíz cuadrada que a la división por tentativa. Para entradas pares, primero se retiran los factores de dos.
 
-Este método fue ideado por el matemático [Pierre de Fermat](https://kenji.blog/es/p/fermat/) en el siglo XVII. Dado un número compuesto impar $N$, intenta expresar $N$ como la diferencia de dos cuadrados.
+### 4.3 Rho de Pollard
 
-$$ N = x^2 - y^2 = (x - y)(x + y) $$
+Se itera una función como $x\mapsto x^2+c\pmod N$ y se calcula el máximo común divisor de $N$ y la diferencia entre dos posiciones de la secuencia. Una colisión módulo un factor primo desconocido $p$ puede producir una diferencia divisible por $p$ y revelar un factor. La detección de ciclos de Floyd conserva una cantidad constante de residuos. Cada residuo requiere $\mathcal{O}(b)$ bits, por lo que esto no significa memoria constante medida en bits.
 
-Si se pueden encontrar tales $x$ e $y$, entonces $a = x - y$ y $b = x + y$ serán los factores de $N$.
-El algoritmo implica incrementar $x$ gradualmente a partir de $\lceil \sqrt{N} \rceil$ y verificar si $x^2 - N$ es un cuadrado perfecto (el cuadrado de algún entero $y$).
-Este método funciona de manera extremadamente rápida cuando los dos factores primos $p$ y $q$ tienen valores muy cercanos. Sin embargo, en un caso general (cuando $p$ y $q$ toman valores que están separados al azar), en última instancia requerirá un tiempo exponencial similar al de la división por tentativa.
+Bajo un modelo heurístico de función aleatoria, la cantidad esperada de multiplicaciones modulares para encontrar un factor $p$ se estima como $\mathcal{O}(\sqrt p)$. Cuando $p$ es del orden de $\sqrt N$, resulta $\mathcal{O}(N^{1/4})$ y, por tanto, $\mathcal{O}(2^{b/4})$. No es una garantía incondicional del peor tiempo; también hay que considerar los costos en bits de la multiplicación y del máximo común divisor.
 
-## 3. Algoritmo $\rho$ de Pollard (Pollard's rho algorithm)
+Un máximo común divisor $d$ solo representa un éxito si $1<d<N$. Si $d=1$, se continúa; si $d=N$, se reintenta con otro valor inicial o función, por ejemplo. Con $N=21$, valor inicial 2 y $f(x)=x^2+1$, la primera comparación de Floyd es entre 5 y 5, y el máximo común divisor es el propio 21. Un factor no trivial también puede ser compuesto y requerir más factorización.
 
-Uno de los algoritmos ideados para superar los límites de la división por tentativa fue el "Algoritmo $\rho$ (rho) de Pollard", presentado por John Pollard en 1975.
+### 4.4 Criba cuadrática y MPQS
 
-### Descripción general del algoritmo
-Este método aplica el concepto probabilístico conocido como la "Paradoja del cumpleaños (Birthday Paradox)" y la periodicidad de las secuencias de números pseudoaleatorios (se llama así porque esta forma se asemeja a la letra griega $\rho$).
+La criba cuadrática reúne valores lisos, que se factorizan por completo sobre primos pequeños, para construir una congruencia de cuadrados. En su forma básica, se toma $m=\lfloor\sqrt N\rfloor$ y se criban los siguientes valores para un intervalo de $x$ pequeños:
 
-Usando una función generadora de números pseudoaleatorios $f(x) = (x^2 + 1) \pmod N$, genera una secuencia de números y encuentra dos valores $x_i \equiv x_j \pmod p$ (donde $p$ es un factor primo desconocido de $N$) dentro de la secuencia.
-En este momento, dado que $x_i - x_j$ será un múltiplo de $p$, se puede extraer $p$ (es decir, el factor primo de $N$) con alta probabilidad calculando el máximo común divisor $\gcd(|x_i - x_j|, N)$. Al combinarlo con el algoritmo de detección de ciclos de Robert Floyd ([el algoritmo de la liebre y la tortuga](/es/p/floyds-cycle-finding/)), los cálculos se pueden realizar de manera eficiente manteniendo el uso de memoria en $\mathcal{O}(1)$.
+$$
+Q(x)=(m+x)^2-N.
+$$
 
-### Evaluación de la complejidad temporal
-Se sabe que el número de pasos necesarios para que el algoritmo $\rho$ de Pollard encuentre un factor primo $p$ es aproximadamente $\mathcal{O}(\sqrt{p})$.
-En el peor de los casos (cuando $N$ es el producto de dos números primos del mismo tamaño $p$ y $q$, resultando en $p \approx \sqrt{N}$), la complejidad es $\mathcal{O}(N^{1/4})$.
+Se registran exponentes sobre una base de factores que incluye el signo $-1$ y primos pequeños seleccionados. El álgebra lineal sobre el cuerpo binario combina las paridades de los exponentes para encontrar productos que sean cuadrados. Describir solo valores lisos aleatorios de $x^2\bmod N$ omite el uso de valores pequeños de un polinomio que caracteriza a la criba cuadrática.
 
-Expresado en términos del tamaño de entrada $n = \log_2 N$:
+MPQS, la criba cuadrática de polinomios múltiples, es una variante que usa varios polinomios cuadráticos adecuados. El rendimiento depende de la implementación, la entrada y los recursos disponibles. No hay una regla universal según la cual un método supere a otro exactamente a partir de 100 dígitos.
 
-$$ N^{1/4} = (2^n)^{1/4} = 2^{n/4} $$
+La congruencia buscada y la extracción del factor tienen la forma:
 
-Por lo tanto, la complejidad temporal es **$\mathcal{O}(2^{n/4})$**.
-Es drásticamente más rápido en comparación con el $\mathcal{O}(2^{n/2})$ de la división por tentativa, y en la práctica es muy poderoso para la factorización de números de tamaño mediano (decenas de dígitos). Sin embargo, todavía no ha superado la barrera del "tiempo exponencial" con respecto a la longitud en bits $n$, y es inútil contra números gigantescos de 2048 bits (alrededor de 600 dígitos en decimal) como los que se utilizan en el cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/).
+$$
+X^2\equiv Y^2\pmod N,\qquad d=\gcd(X-Y,N).
+$$
 
-## 4. Criba cuadrática de polinomios múltiples (MPQS: Multiple Polynomial Quadratic Sieve)
+Si $d=1$ o $d=N$, se prueba otra relación. Si $X,Y$ son coprimos con $N$ y $X\not\equiv\pm Y\pmod N$, obtenemos un factor no trivial, que no tiene por qué ser primo. Por ejemplo, con $N=1155$, $X=76$, $Y=1$, los cuadrados son congruentes, pero $\gcd(75,1155)=15$ y $\gcd(77,1155)=77$ son ambos compuestos.
 
-A principios de la década de 1980, Carl Pomerance ideó la "Criba cuadrática (Quadratic Sieve: QS)". Esta es una extensión del concepto de "diferencia de cuadrados" de [Fermat](https://kenji.blog/es/p/fermat/).
-Mientras que el método de [Fermat](https://kenji.blog/es/p/fermat/) buscaba directamente $x^2 - y^2 = N$, la criba cuadrática busca condiciones mucho más laxas.
+### 4.5 Criba general de cuerpos numéricos (GNFS)
 
-$$ x^2 \equiv y^2 \pmod N $$
-y
-$$ x \not\equiv \pm y \pmod N $$
+La criba general de cuerpos numéricos se utiliza para factorizar enteros grandes sin una forma especial. Su esquema general es:
 
-Si podemos encontrar un par de $x$ e $y$ así, $x^2 - y^2 = (x - y)(x + y)$ será un múltiplo de $N$. Por lo tanto, calculando $\gcd(x - y, N)$ o $\gcd(x + y, N)$, podemos obtener un factor primo no trivial de $N$.
+1. Elegir polinomios enteros y parámetros relacionados con una raíz común módulo $N$, y preparar el cuerpo numérico asociado.
+2. Cribar relaciones que cumplan condiciones de factorización con primos pequeños o ideales primos, tanto del lado racional como del lado del cuerpo numérico.
+3. Resolver una gran matriz dispersa que describe las paridades de exponentes y otras condiciones para combinar relaciones de las que puedan extraerse cuadrados.
+4. Calcular raíces cuadradas en ambos lados, obtener una congruencia de cuadrados entre enteros y usar un máximo común divisor para extraer un factor no trivial. Reintentar las relaciones que no funcionen.
 
-En la criba cuadrática, encontramos una gran cantidad de $x$ tales que $x^2 \pmod N$ sea un número compuesto únicamente por pequeños factores primos (esto se denomina número $B$-liso), y organizamos los resultados de su factorización en forma de matriz (un sistema de ecuaciones lineales sobre el cuerpo finito $\mathbb{F}_2$). Luego, usando la eliminación gaussiana u otros métodos, multiplicamos múltiples relaciones matemáticas para ajustar el lado derecho y que se convierta en un cuadrado perfecto (haciendo pares los exponentes de cada factor primo), construyendo así $x^2 \equiv y^2 \pmod N$.
+Es un esquema, no un procedimiento de implementación de las raíces cuadradas del lado del cuerpo numérico ni de sus condiciones adicionales. Además, $\mathbb Z[\alpha]$, formado a partir de una raíz $\alpha$ de un polinomio, no siempre es todo el anillo de enteros del cuerpo numérico. Por ejemplo, para $\alpha=\sqrt5$, $\beta=(1+\sqrt5)/2$ satisface $\beta^2-\beta-1=0$, de modo que es un entero algebraico, pero no pertenece a $\mathbb Z[\sqrt5]$.
 
-La criba cuadrática fue el algoritmo más rápido del mundo hasta la aparición de la [criba general del cuerpo de números](/es/p/beyond-gnfs-integer-factorization-algorithms/), y en la actualidad sigue siendo considerado el más rápido para factorizar números de menos de 100 dígitos.
+Definimos la notación L con logaritmos naturales $\ln$, para $c>0$ y $0\le\alpha\le1$:
 
-## 5. Profundización en la Criba General del Cuerpo de Números (General Number Field Sieve: GNFS)
+$$
+L_N[\alpha,c]=\exp\!\left((c+o(1))(\ln N)^\alpha(\ln\ln N)^{1-\alpha}\right).
+$$
 
-Actualmente, se considera que el algoritmo "más rápido del mundo" para la factorización en números primos de enteros gigantes que superan los 100 dígitos es la **[Criba General del Cuerpo de Números](/es/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)**. Fue ideado a finales de la década de 1980 y es un algoritmo avanzado que desarrolla aún más la criba cuadrática, utilizando resultados profundos de la teoría algebraica de números (cuerpos de números).
+Aquí $o(1)$ tiende a cero cuando $N\to\infty$. Los extremos son $L_N[0,c]=(\ln N)^{c+o(1)}$ y $L_N[1,c]=N^{c+o(1)}$. No se debe eliminar el término asintótico y sustituirlo por una igualdad exacta o una cota superior de grado fijo.
 
-En los ataques al cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) (factorización de números primos a partir de una clave pública), siempre es este GNFS el que sigue rompiendo récords mundiales. En 2020, hubo un informe de una factorización exitosa de un número compuesto de 829 bits (250 dígitos) (RSA-250), pero esto requirió la operación paralela a gran escala de miles de computadoras durante un largo período.
+La estimación heurística estándar del tiempo de GNFS se expresa como:
 
-### Estructura matemática del algoritmo
-Aunque GNFS es extremadamente complejo, a grandes rasgos procede en los siguientes pasos:
+$$
+L_N\!\left[\frac13,\left(\frac{64}{9}\right)^{1/3}\right]
+=\exp\!\left(\left(\left(\frac{64}{9}\right)^{1/3}+o(1)\right)(\ln N)^{1/3}(\ln\ln N)^{2/3}\right).
+$$
 
-1. **Selección del polinomio (Polynomial Selection):**
-   Para $N$, elegimos un entero $m$ y un polinomio irreducible $f(X)$ con coeficientes pequeños de tal manera que $f(m) \equiv 0 \pmod N$. Esto define el anillo de enteros $\mathbb{Z}[\alpha]$ de un cuerpo algebraico (cuerpo de números) que adjunta la raíz $\alpha$ de $f(X)$.
+La constante es aproximadamente 1.923. La conversión a la longitud de entrada en bits utiliza $\ln N=b\ln2+\mathcal{O}(1)$, por lo que también cambia la constante principal del exponente:
 
-2. **Criba (Sieving):**
-   Buscamos simultáneamente números lisos (Smooth) en los "dos mundos diferentes": el anillo de enteros $\mathbb{Z}$ sobre el cuerpo de los números racionales, y el anillo de enteros $\mathbb{Z}[\alpha]$ sobre el cuerpo algebraico. Específicamente, buscamos una gran cantidad de pares $(a, b)$ de modo que las normas de un entero racional $a - bm$ y de un entero algebraico $a - b\alpha$ se factoricen completamente sobre un conjunto de números primos pequeños predefinidos (Base de Factores: Factor Base).
+$$
+\exp\!\left(\left(\left(\frac{64\ln2}{9}\right)^{1/3}+o(1)\right)b^{1/3}(\ln b)^{2/3}\right).
+$$
 
-3. **Reducción de la matriz (Matrix Reduction):**
-   Representamos la gran cantidad de pares lisos encontrados como una matriz (una matriz dispersa gigante). Encontramos el espacio de soluciones utilizando el algoritmo de Lanczos (como el método de Lanczos por bloques) sobre el cuerpo finito $\mathbb{F}_2$. No es raro que esta matriz abarque millones de filas $\times$ millones de columnas.
+Esta constante es aproximadamente 1.702. La estimación es subexponencial en la longitud en bits: crece más rápido que cualquier polinomio, pero más lentamente que $2^{\varepsilon b}$ para cada $\varepsilon>0$ fijo. No es un teorema incondicional del peor caso para todas las entradas ni una predicción de segundos para un tamaño concreto.
 
-4. **Cálculo de la raíz cuadrada (Square Root):**
-   A partir de la solución de la matriz, creamos un número cuadrado gigante en cada uno de los "dos mundos diferentes", y finalmente derivamos la relación $X^2 \equiv Y^2 \pmod N$. Luego, calculamos $\gcd(X-Y, N)$ para obtener los factores primos.
+Como ejemplo fechado, el [anuncio de factorización de RSA-250 del 28 de febrero de 2020](https://caramba.loria.fr/rsa250.txt) informa de la factorización mediante NFS de un entero de 250 dígitos y 829 bits, con aproximadamente 2700 años-núcleo de trabajo (core-years). Es una medida del trabajo computacional, no necesariamente 2700 máquinas simultáneas ni 2700 años transcurridos. Aquí no se presenta como el récord mundial actual ni como el costo para todo entero de esa longitud.
 
-### Complejidad temporal de la criba general del cuerpo de números: Tiempo subexponencial (Sub-exponential time)
+## 5. P frente a NP y computación cuántica
 
-El mayor logro de GNFS es que redujo la complejidad temporal de la factorización de números primos de "tiempo puramente exponencial" a **"tiempo subexponencial (Sub-exponential time)"**.
-La complejidad temporal asintótica de GNFS se expresa de la siguiente manera usando una notación especial llamada notación L (L-notation).
+### Decidir la primalidad y encontrar factores
 
-$$ L_N[\gamma, c] = \exp\left( (c + o(1)) (\ln N)^\gamma (\ln \ln N)^{1-\gamma} \right) $$
+Decidir si un número es primo no es lo mismo que encontrar factores de un compuesto. El [artículo de AKS](https://annals.math.princeton.edu/2004/160-2/p12) estableció que la primalidad puede decidirse en tiempo polinómico determinista e incondicional. No estableció el mismo resultado para la factorización.
 
-Donde $N$ es el número a factorizar y $\ln$ es el logaritmo natural.
-$\gamma$ es un parámetro que toma un valor de $0 \le \gamma \le 1$ e indica el "grado" de complejidad del algoritmo.
-- Cuando $\gamma = 0$, $L_N[0, c]$ se convierte en $(\ln N)^c$, lo que significa tiempo polinómico $\mathcal{O}(n^c)$. (Eficiente)
-- Cuando $\gamma = 1$, $L_N[1, c]$ se convierte en $e^{c \ln N} = N^c$, lo que significa tiempo exponencial $\mathcal{O}(2^{cn})$. (Ineficiente)
+P, NP y coNP son fundamentalmente clases de problemas de decisión con respuestas Sí/No. La factorización es un problema de búsqueda que produce factores, por lo que decir simplemente «la factorización está en NP» deja ambiguo el tipo de problema. Por ejemplo, dados $N\ge2$ y $2\le K<N$, consideremos esta decisión: ¿existe un divisor que satisfaga $1<d\le K$ y $d\mid N$?
 
-En el caso de GNFS, este parámetro es el siguiente:
+Una respuesta Sí tiene como certificado el divisor $d$, verificable mediante división. Una respuesta No puede certificarse con una factorización completa en primos: su producto, la primalidad de cada factor y que todos los factores primos superen $K$ pueden comprobarse en tiempo polinómico. Por tanto, este problema de decisión pertenece tanto a NP como a coNP. Una búsqueda en tiempo polinómico resolvería la decisión. A la inversa, un algoritmo de decisión polinómico permitiría obtener la factorización mediante búsqueda binaria sobre $K$ y extracción repetida de factores.
 
-$$ L_N\left[\frac{1}{3}, \left(\frac{64}{9}\right)^{1/3}\right] = e^{\left(\sqrt[3]{\frac{64}{9}} + o(1)\right) (\ln N)^{1/3} (\ln \ln N)^{2/3}} $$
+Esta clasificación no demuestra NP-completitud ni la inexistencia de un algoritmo clásico polinómico. Si un problema de NP y coNP fuera NP-completo bajo las reducciones polinómicas habituales, implicaría NP=coNP. [P frente a NP sigue sin resolverse](https://www.claymath.org/millennium/p-vs-np/). Incluso suponer P≠NP no demostraría por sí solo que la factorización está fuera de P.
 
-En esta fórmula, la constante $c = (64/9)^{1/3} \approx 1.923$.
-Reescribiéndolo en términos del tamaño de entrada $n \approx \ln N$ (proporcional a la longitud en bits), la complejidad se comporta aproximadamente de la siguiente manera:
+### El algoritmo de Shor cambia el modelo computacional
 
-$$ \mathcal{O}\left( \exp\left( 1.923 \cdot n^{1/3} (\ln n)^{2/3} \right) \right) $$
+El [algoritmo de Shor](https://arxiv.org/abs/quant-ph/9508027) factoriza enteros en una cantidad de pasos polinómica en la longitud de entrada en bits, en un modelo con suficientes recursos de computación cuántica. Su parte cuántica obtiene información sobre períodos, seguida de medición y procesamiento clásico posterior, con reintentos cuando hace falta. La transformada cuántica de Fourier no revela instantáneamente las respuestas para todos los candidatos.
 
-Podemos ver que la parte exponencial depende de $n^{1/3}$ (la raíz cúbica de $n$), en lugar de la primera potencia de $n$.
-Mientras que el algoritmo $\rho$ de Pollard era de $\mathcal{O}(2^{n/4})$, es decir, $\mathcal{O}(\exp(c \cdot n^1))$, el grado de $n$ en GNFS se ha reducido a $1/3$.
-Esto significa que, aunque no alcanza el tiempo polinómico ($\gamma=0$), la complejidad temporal aumenta mucho más lentamente que en el tiempo puramente exponencial ($\gamma=1$). Esta es la razón por la que se le llama "tiempo subexponencial".
-
----
-
-# Los límites de la criptografía moderna y la computación cuántica
-
-Como hemos visto hasta ahora, la humanidad ha movilizado su sabiduría matemática para continuar desafiando las barreras de la factorización de números primos mediante la evolución de algoritmos, desde la división por tentativa hasta el GNFS. Sin embargo, incluso con el GNFS, la factorización de números primos aún no se puede resolver en "tiempo polinómico" en una computadora clásica.
-
-## El problema [P vs NP](https://kenji.blog/es/p/p-vs-np-problem/) y la posición de la factorización de números primos
-
-El mayor problema sin resolver en la informática es la "hipótesis P = NP".
-El problema de la factorización de números primos pertenece a NP (la clase de problemas para los cuales la corrección de una respuesta proporcionada se puede verificar en tiempo polinómico), pero no se ha demostrado que sea [NP-complet](https://kenji.blog/es/p/p-vs-np-problem/)o (la clase de problemas más difíciles dentro de NP).
-Además, tampoco está resuelto si pertenece a P (la clase de problemas que se pueden resolver en tiempo polinómico) (es decir, si existe un algoritmo de tiempo polinómico).
-
-Muchos investigadores conjeturan que la factorización de números primos pertenece a una clase intermedia (NP-intermediate) que no es ni P ni NP-completa. Si se descubriera un algoritmo que resuelva la factorización de números primos en tiempo polinómico en una computadora clásica (por ejemplo, $\mathcal{O}(n^3)$), sería un evento monumental que colapsaría los sistemas criptográficos de todo el mundo; sin embargo, hasta la fecha, no se ha descubierto tal algoritmo. Se estima que descifrar un cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) de 2048 bits tomaría un tiempo mayor que la edad del universo, incluso asumiendo que las mejoras de rendimiento en computadoras clásicas sigan [la Ley de Moore](/es/p/business-moores-law/).
-
-## Las computadoras cuánticas como "cambiadores de juego": El algoritmo de Shor
-
-Aunque el cifrado RSA es robusto en las computadoras clásicas, la situación cambiará drásticamente cuando las "computadoras cuánticas", que operan bajo principios completamente diferentes, se vuelvan viables.
-El **"[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/) (Shor's algorithm)"**, publicado por Peter Shor en 1994, es un algoritmo que puede resolver de manera asombrosa la factorización de números primos en **tiempo polinómico $\mathcal{O}(n^3)$** (más estrictamente, alrededor de $\mathcal{O}(n^2 \log n \log \log n)$ en términos de número de puertas cuánticas) aprovechando la transformada cuántica de Fourier.
-
-Verifiquemos la diferencia en la complejidad temporal entre los algoritmos clásicos y cuánticos en el siguiente diagrama Mermaid.
+Este número teórico de pasos no determina directamente si una máquina real necesitaría horas o días. Esas estimaciones requieren supuestos sobre puertas cuánticas, corrección de errores, circuitos aritméticos, qubits disponibles y otros recursos. La última flecha del diagrama cambia el modelo computacional; no demuestra un límite de las computadoras clásicas.
 
 ```mermaid
 graph LR
-    classDef classical fill:#f9f871,stroke:#333,stroke-width:2px;
-    classDef quantum fill:#00c9a7,stroke:#333,stroke-width:2px;
-
-    subgraph "Computadoras Clásicas"
-        C1["División por Tentativa: O(2^(n/2))"]:::classical
-        C2["GNFS: Subexponencial L_n(1/3)"]:::classical
-    end
-
-    subgraph "Computadoras Cuánticas"
-        Q1["Algoritmo de Shor: O(n^3) Polinómico"]:::quantum
-    end
-
-    C1 --> C2
-    C2 -. Límite de la Física Clásica .-> Q1
+    Trial["División por tentativa"] -->|Otro algoritmo clásico| GNFS["Criba general de cuerpos numéricos"]
+    GNFS -->|Cambio de modelo computacional| Shor["Shor: pasos polinómicos en un modelo cuántico"]
 ```
 
-En el algoritmo de Shor, el proceso de "búsqueda de período", que era un cuello de botella en los algoritmos clásicos, se calcula de manera instantánea y paralela mediante la "Transformada Cuántica de Fourier (QFT)" utilizando entrelazamiento y superposición cuántica.
-Una vez que pueda ejecutarse en una computadora cuántica a escala práctica (con poco ruido y suficientes qubits lógicos), el cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) de 2048 bits que hoy se considera seguro podría descifrarse por completo en un plazo de unas horas a unos días.
+Prepararse para esos ataques futuros es una motivación de la criptografía poscuántica (PQC). Como explica el [RFC 9794](https://www.rfc-editor.org/rfc/rfc9794.html), el término se refiere a criptografía diseñada para resistir a atacantes con computadoras cuánticas; no garantiza que un esquema no pueda romperse. Hay que evaluar tanto los supuestos matemáticos como la implementación y las decisiones operativas.
 
-Para prepararse para esta amenaza, criptógrafos de todo el mundo y el NIST (Instituto Nacional de Estándares y Tecnología de EE.UU.) están avanzando rápidamente en los trabajos de estandarización hacia la transición a la "Criptografía Post-Cuántica (PQC: Post-Quantum [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)", la cual es difícil de descifrar incluso para las computadoras cuánticas. La criptografía basada en retículos ([Lattice-based cryptography](/es/p/lattice-based-cryptography-math-intuition/)) es un ejemplo representativo, que basa su seguridad en dificultades matemáticas (como el problema del vector más corto) que son completamente diferentes del problema de la factorización de números primos.
+## 6. Conclusión
 
----
+Comparar complejidades de factorización empieza por separar el valor entero $N$ de la longitud de entrada $b$, las cantidades de operaciones de sus costos en bits, y el peor tiempo del tiempo esperado. La división por tentativa, Fermat y rho aprovechan estructuras diferentes; la criba cuadrática y GNFS construyen congruencias de cuadrados a partir de muchas relaciones.
 
-# Resumen
+La seguridad criptográfica no puede deducirse de una sola cota superior ni de que un entero parezca grande. Exige considerar conjuntamente los algoritmos conocidos, la generación de entradas, los modelos de ataque y la implementación. También para los resultados teóricos cuánticos, una explicación precisa debe indicar qué está demostrado y qué depende de supuestos o estimaciones de recursos.
 
-En este artículo, comenzando desde los conceptos básicos de la complejidad temporal (notación [Big O](https://kenji.blog/es/p/time-space-complexity-big-o-notation-examples/)), hemos profundizado en la evolución de los algoritmos de factorización de números primos y sus límites matemáticos.
+### Referencias
 
-* La **notación Big O ($\mathcal{O}$)** es un indicador importante que muestra la tasa de aumento en el número de pasos computacionales con respecto a un aumento en el tamaño de la entrada $n$, y existe un muro enorme, prácticamente insuperable en la práctica, entre el tiempo polinómico y el tiempo exponencial.
-* La **división por tentativa** y el **algoritmo $\rho$ de Pollard** son algoritmos puros de "tiempo exponencial" y son impotentes frente a números gigantescos.
-* El algoritmo clásico más rápido en la actualidad, la **[Criba General del Cuerpo de Números](/es/p/beyond-gnfs-integer-factorization-algorithms/) (GNFS)**, logró un "tiempo subexponencial" haciendo pleno uso de la teoría algebraica avanzada de números, pero aun así no alcanza el tiempo polinómico y requiere una cantidad de tiempo astronómica para factorizar números enormes.
-* El hecho de que **"se conjetura fuertemente que no existe ningún algoritmo clásico que resuelva el problema en tiempo polinómico"** es exactamente lo que garantiza la seguridad del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) y apoya a la sociedad digital moderna.
-* Sin embargo, con el advenimiento de las **computadoras cuánticas y el algoritmo de Shor**, la factorización de números primos en tiempo polinómico se ha vuelto teóricamente posible, y la tecnología de cifrado está a punto de dar el salto a la próxima era (criptografía post-cuántica).
-
-El hecho de que un concepto abstracto como la complejidad temporal de un algoritmo esté directamente vinculado a la seguridad de nuestras vidas es uno de los aspectos más fascinantes y emocionantes de la informática y las matemáticas. No deje de seguir de cerca la futura evolución de la tecnología, especialmente las tendencias en el desarrollo de las computadoras cuánticas y los cambios en la tecnología criptográfica.
-
+- [NIST DADS: big-O notation](https://xlinux.nist.gov/dads/HTML/bigOnotation.html)
+- [Handbook of Applied Cryptography, capítulo 2: definiciones de complejidad](https://cacr.uwaterloo.ca/hac/about/chap2.pdf)
+- [Capítulo 3: factorización y problema RSA](https://cacr.uwaterloo.ca/hac/about/chap3.pdf) (fuente de 1996; sus récords y la situación de la primalidad deben distinguirse de los avances posteriores)
+- [RFC 8017: claves y esquemas RSA](https://www.rfc-editor.org/rfc/rfc8017.html)
+- [Anuncio de los autores sobre RSA-250 (2020)](https://caramba.loria.fr/rsa250.txt)
+- [Agrawal–Kayal–Saxena: PRIMES is in P](https://annals.math.princeton.edu/2004/160-2/p12)
+- [Clay Mathematics Institute: P vs NP](https://www.claymath.org/millennium/p-vs-np/)
+- [Shor: algoritmos polinómicos para factorizar y calcular logaritmos discretos en una computadora cuántica](https://arxiv.org/abs/quant-ph/9508027)
+- [RFC 9794: terminología poscuántica](https://www.rfc-editor.org/rfc/rfc9794.html)
