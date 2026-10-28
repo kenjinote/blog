@@ -862,6 +862,84 @@
         }
       ],
       "validation": "docs/translation-review/batch-017-ru-validation.json"
+    },
+    "post/素因数分解と計算量/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/素因数分解と計算量/index.md",
+      "sourceHash": "35642af8501dc5b58c64a5b2fa0ccfe34a6d0bc55fd8e142c2d1a56035043af0",
+      "translationHash": "00a53299c7e83dd8af86bfeca822b5c5c56e69f4ea679894c92b83f2e873f348",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Arabic metadata/body in three bounded outputs, revised against the corrected Japanese and fully reviewed English, then independently reread complete revised Arabic in two bounded outputs. Compared six sections, seven-row complexity table, five algorithms, decision/search/primality distinction, both diagrams and nine external references. Reread final small clarifications to multiplication count and alpha as a polynomial root."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished حد علوي/حد سفلي/حد محكم, أسوأ حالة/الزمن المتوسط/الزمن المتوقع, integer value/bit length, الأس الخاص/full private key, عامل غير تافه/عامل أولي, مسائل القرار/البحث/اختبار الأولية, حقل الأعداد/مثاليات أولية/حلقة الأعداد الصحيحة, and البتات/البتات الكمية. Retained valid عدد مؤلف and أولي نسبيًا with explicit coprimality to N. Described MPQS explicitly as using multiple quadratic polynomials, and دون أسي (subexponential) with its growth definition; does not claim every alternative Arabic label is erroneous."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all10display formulas exactly, relevant inline assumptions and bitlength inequality. Compared Fermat candidate count, rho success/restart and random-function qualification, signed QS values, congruent-square coprimality, L-notation o1 and log-base conversion1.923to1.702. Independent fixture rerun verifies bitbounds1..10000, equal-bit prime products19/20bits, Fermat1/51806candidates, rho21failure, composite gcds15/77, Qsqrt5 integral-element example and public RSA250 product. Added decision-certificate partition checks and binary-search extraction finite examples; these supplement, not prove, the stated complexity reasoning."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Neither original nor revised article contains executable code. Inspected two Mermaid diagrams, now3and2edges, removing feasibility guarantees and the unsupported classical-physics-limit claim. Ran independent math fixtures and certificate/search examples in verify_batch_017.py; no article compilation, GNFS implementation, quantum simulation or production cryptography audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all9unique external HTTPS references and the reviewed Arabic modern-cryptography internal target. Removed split NP-complet/e and English possessive Shor link fragments, duplicate Fermat links and unreviewed algorithm/PQC dependencies. The original Arabic has no Crypto-to-cryptocurrency substring link; no claim to fixing one. Preserved publication timestamp, slug, image and categories/tags; added actual lastmod2026-10-28. Image exists. Minified Hugo18-bundle build, multilingual1155pages and HTTPS2116HTML/41XML passed. All125ArabicTeX expressions preserved; all13versions total1586expressions and exact10display formulas per version pass. Repository17tests pass. Publication of remaining languages pending."
+        }
+      },
+      "summary": "Full Arabic factoring and Big-O review against the corrected source, with explicit computational models, conditional estimates and accurate algebra and quantum scope.",
+      "languageSpecificFindings": "Replaced plural dual-factor wording and typo العامالان through accurate rewritten factor discussion. Distinguished private exponent from the whole key, nontrivial factor from prime factor, and upper bound from worst case. MPQS explicitly uses several polynomials, alpha is explicitly the root rather than the name of a polynomial, and modular coprimality is not a claim that X/Y themselves are prime. Removed malformed NP-complete/Shor English fragments, universal hardness/timing/security assertions and the classical-physics limit claim; aligned Fermat, rho, QS, GNFS, decision certificates and Shor qualifications with corrected source. Retained decimal points1.923/1.702 and all source formulas.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "All12translations of this article reviewed; this is not a full-site review.",
+        "No executable article code; independent finite examples do not prove cryptographic security or asymptotic complexity.",
+        "No visual browser/RTL/KaTeX/Mermaid audit or full primary-paper proof audit.",
+        "Full-site CI and remaining publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://xlinux.nist.gov/dads/HTML/bigOnotation.html",
+          "scope": "Complete short definition and model/tight-bound caveats; not a hardware timing model."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap2.pdf",
+          "scope": "Scoped parsed sections2.3.1-2.3.3 plus NP-completeness consequences, as listed in source notes. Superseded 1996 primality status not reused."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+          "scope": "Scoped trial/rho/Floyd/smooth-relation/QS/NFS/RSA-problem excerpts listed in source notes, not a whole-chapter audit or current crossover survey."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Abstract this batch; actual key/lambda/range/OAEP/PSS excerpts previously read in batches015/016. Not a full fresh RFC read."
+        },
+        {
+          "url": "https://caramba.loria.fr/rsa250.txt",
+          "scope": "Complete dated author announcement, 2020-02-28, 250digits829bits and2700physicalcore-years; independently verified published factor product, not prime certification or current record."
+        },
+        {
+          "url": "https://annals.math.princeton.edu/2004/160-2/p12",
+          "scope": "2004 journal metadata and abstract for unconditional deterministic polynomial primality testing; proof/algorithm text not read."
+        },
+        {
+          "url": "https://www.claymath.org/millennium/p-vs-np/",
+          "scope": "Current page explicitly labels PvsNP unsolved; read explanatory main body, not linked formal problem description."
+        },
+        {
+          "url": "https://arxiv.org/html/quant-ph/9508027",
+          "scope": "Metadata/abstract and scoped parsed section5 lines259-329: order finding, classical postprocessing, QFT/measurement, continued fractions and repeats. Not full paper, proof certification, hardware or current resource forecast."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc9794.html",
+          "scope": "June2025 metadata/abstract and section1, including design goals of PQC and qualification of quantum-safe terminology; not whole RFC."
+        }
+      ],
+      "validation": "docs/translation-review/batch-017-ar-validation.json"
     }
   },
   "stages": [
@@ -1199,6 +1277,43 @@
         "httpsXml": 41
       },
       "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-10-28T19:41:06.338309+09:00",
+      "language": "ar",
+      "reviewedTranslations": 12,
+      "otherTranslationsUnreviewed": 0,
+      "validation": "docs/translation-review/batch-017-ar-validation.json",
+      "texExpressions": {
+        "ja": 121,
+        "en": 122,
+        "zh-cn": 121,
+        "zh-tw": 122,
+        "es": 122,
+        "ko": 121,
+        "pt": 122,
+        "fr": 122,
+        "de": 122,
+        "id": 122,
+        "hi": 122,
+        "ru": 122,
+        "ar": 125
+      },
+      "displayFormulasPerVersion": 10,
+      "diagramEdgesPerVersion": [
+        3,
+        2
+      ],
+      "build": {
+        "hugo": "0.139.0 extended",
+        "minified": true,
+        "isolatedArticleBundles": 18,
+        "multilingualPages": 1155,
+        "httpsHtml": 2116,
+        "httpsXml": 41
+      },
+      "repositoryTests": 17,
+      "publicationPending": true
     }
   ],
   "publicationDispatch": {
@@ -1281,5 +1396,25 @@
         "note": "225URL plan superseded by later deployed210revision and228URL verification; did not run the older probe against a newer deployment while claiming the older deployed head."
       }
     }
-  ]
+  ],
+  "finalAssembly": {
+    "checkedAt": "2026-10-28T19:41:06.338309+09:00",
+    "reviewedTranslations": 12,
+    "sourceHash": "35642af8501dc5b58c64a5b2fa0ccfe34a6d0bc55fd8e142c2d1a56035043af0",
+    "validation": "docs/translation-review/batch-017-ar-validation.json",
+    "versions": 13,
+    "texExpressions": 1586,
+    "displayFormulasPerVersion": 10,
+    "diagramEdgesPerVersion": [
+      3,
+      2
+    ],
+    "executableArticleCodeBlocks": 0,
+    "repositoryTests": 17,
+    "publicationPending": true,
+    "limitations": [
+      "AI, not human/native-speaker certification.",
+      "No visual browser/RTL audit, full primary-paper proof or cryptographic security certification."
+    ]
+  }
 }
