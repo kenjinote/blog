@@ -1,7 +1,8 @@
 ---
-title: 'Limites de la factorisation en nombres premiers et explication de la notation Grand O (O)'
+title: "Limites de la factorisation en nombres premiers et explication de la notation Grand O (O)"
 slug: "prime-factorization-limits-big-o-notation"
 date: "2026-09-11T23:00:00+09:00"
+lastmod: "2026-10-28"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,281 +10,202 @@ categories: ["mathematics", "computer-science", "cryptography"]
 tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 ---
 
-# Introduction : Pourquoi la factorisation en nombres premiers est-elle « difficile » ?
+## 1. Introduction : qu'est-ce qui rend la factorisation difficile ?
 
-Dans la société Internet moderne, si nous pouvons faire des achats en ligne en toute tranquillité et échanger des informations confidentielles, c'est grâce à l'existence de la « cryptographie ». Et la sécurité de cette cryptographie (en particulier le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), largement utilisé) repose sur un fait mathématique : « la factorisation de très grands nombres entiers en nombres premiers est extrêmement difficile ».
+Décomposer un petit entier en facteurs premiers est un calcul familier depuis l'école. Retrouver les facteurs d'un produit de grands nombres premiers peut toutefois demander des ressources considérables sur un ordinateur classique. Cette asymétrie fait partie du contexte de la [cryptographie à clé publique, notamment RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/).
 
-À première vue, la factorisation en nombres premiers peut sembler être une tâche simple consistant « juste à décomposer un nombre en produits de nombres premiers ». Cependant, lorsque le nombre de chiffres devient important, cela se transforme en un problème tellement complexe que même les superordinateurs les plus rapides du monde, fonctionnant pendant des décennies ou des siècles, ne pourraient le résoudre. La factorisation que nous apprenons à l'école est au mieux une tâche simple consistant à diviser par $2$, $3$ ou $5$, mais face au produit de deux nombres premiers inconnus de plusieurs centaines de chiffres, cette approche simpliste s'effondre complètement.
+Cela ne signifie ni que tout grand entier est difficile à factoriser, ni que l'impossibilité d'un algorithme classique rapide a été démontrée. Un immense entier possédant de petits facteurs, comme un nombre pair, peut être facile à traiter. Les complexités des algorithmes présentés ci-dessous ne sont pas non plus des bornes inférieures du problème lui-même. La sécurité cryptographique exige d'évaluer des clés correctement générées face aux ressources de l'attaquant considéré.
 
-Dans cet article, en partant du concept de « complexité algorithmique (notation Grand O : $\mathcal{O}$) », qui est la base de l'informatique, nous expliquerons en détail et mathématiquement combien de temps de calcul nécessitent divers algorithmes de factorisation (méthode des divisions successives, algorithme $\rho$ de Pollard, crible du corps de nombres généralisé, etc.). Ensuite, nous analyserons pourquoi la factorisation de nombres géants est pratiquement impossible sur des ordinateurs classiques, comment cela protège nos informations et notre vie privée, et enfin, comment les ordinateurs quantiques pourraient bouleverser ce paradigme.
+Nous préciserons la notation grand O et la taille de l'entrée, puis comparerons les divisions d'essai, la méthode de Fermat, rho de Pollard, le crible quadratique et le crible général des corps de nombres. Enfin, nous examinerons leur rapport avec P contre NP et le calcul quantique. Il faut distinguer estimations de complexité, preuves de sécurité et secondes d'exécution.
 
----
+## 2. Complexité et notation grand O
 
-# Définition rigoureuse de la complexité algorithmique et de la notation Grand O ($\mathcal{O}$)
+Le temps écoulé dépend du processeur, de la mémoire, de l'implémentation, de la parallélisation et d'autres conditions. Une affirmation de complexité doit préciser la taille de l'entrée et ce qui compte comme opération élémentaire. Compter une multiplication de grands entiers comme une opération diffère du décompte des opérations sur les bits qu'elle nécessite.
 
-Lors de l'évaluation des performances ou de l'efficacité d'un algorithme, il ne suffit pas de mesurer simplement le « temps d'exécution (en secondes) » du programme. En effet, le temps d'exécution dépend fortement des performances de l'ordinateur utilisé (fréquence d'horloge du processeur, vitesse de la mémoire, etc.), du langage de programmation et des optimisations du compilateur.
+### Une borne supérieure asymptotique
 
-Par conséquent, l'indicateur d'évaluation universel indépendant du matériel et de l'environnement est la **complexité temporelle (Time Complexity)**, et la notation utilisée pour l'exprimer est la **notation Grand O (Big-O Notation)**. La notation Grand O est une écriture mathématique qui décrit comment le temps d'exécution (ou le nombre d'étapes d'exécution) d'un algorithme augmente par rapport à la taille des données d'entrée $N$ lorsque celle-ci devient très grande (taux de croissance asymptotique).
+Pour des fonctions non négatives sur les entrées suffisamment grandes, $f(n)=\mathcal{O}(g(n))$ signifie :
 
-## Définition mathématique de la notation asymptotique
+$$
+\exists c>0,\ \exists n_0,\ \forall n\ge n_0:\quad 0\le f(n)\le c\,g(n).
+$$
 
-En informatique, pour les fonctions $f(n)$ et $g(n)$, l'expression $f(n) = \mathcal{O}(g(n))$ est définie mathématiquement comme suit :
+Les constantes $c$ et $n_0$ ne dépendent pas de l'entrée $n$. C'est la définition d'une borne supérieure ; elle ne signifie pas, à elle seule, « pire cas ». Il faut préciser séparément si la fonction décrit le temps dans le pire cas, le temps moyen ou l'espérance du temps d'un algorithme aléatoire.
 
-$$ \exists c > 0, \exists n_0 > 0 \text{ s.t. } \forall n \ge n_0, 0 \le f(n) \le c \cdot g(n) $$
+On emploie $\Theta$ lorsque les bornes supérieure et inférieure ont le même ordre, et $\Omega$ pour une borne inférieure. Par exemple, même $f(n)=1$ appartient à $\mathcal{O}(2^n)$. Cette borne ne permet donc pas d'affirmer que le temps double exactement lorsque l'entrée augmente d'une unité. La notation ne donne pas directement les rapports entre temps mesurés. La [définition du NIST](https://xlinux.nist.gov/dads/HTML/bigOnotation.html) distingue également une borne supérieure d'une estimation asymptotiquement serrée.
 
-Cela signifie que « lorsque la taille de l'entrée $n$ est suffisamment grande ($n \ge n_0$), la croissance de la fonction $f(n)$ est bornée supérieurement par $g(n)$ multipliée par une constante ». En d'autres termes, cela indique une « borne supérieure (Upper Bound) », garantissant que même dans le pire des cas, le temps de traitement de l'algorithme restera dans une constante multipliée par $g(n)$.
+### Quelques formes de croissance
 
-De même, il existe la notation $\Omega$ (Grand Oméga) pour indiquer une borne inférieure, et $\Theta$ (Grand Thêta) lorsque les bornes supérieure et inférieure coïncident. Cependant, la notation $\mathcal{O}$ est la plus fréquemment utilisée pour discuter de la complexité dans le pire des cas d'un algorithme.
+Dans le tableau suivant, $n$ désigne le nombre d'éléments de données ; on compte des opérations comme les comparaisons et les accès aux éléments.
 
-## Classes de complexité représentatives
+| Ordre | Exemple et conditions |
+| --- | --- |
+| $\mathcal{O}(1)$ | Accès à un élément de tableau par son indice dans un modèle à accès aléatoire |
+| $\mathcal{O}(\log n)$ | Comparaisons d'une recherche dichotomique dans un tableau trié |
+| $\mathcal{O}(n)$ | Comparaisons d'une recherche linéaire dans le pire cas |
+| $\mathcal{O}(n\log n)$ | Tri fusion dans le pire cas, ou tri rapide en moyenne sous des hypothèses appropriées |
+| $\mathcal{O}(n^2)$ | Par exemple, comparaisons du tri par insertion dans le pire cas |
+| $\mathcal{O}(2^n)$ | Nombre de tous les sous-ensembles de $n$ éléments ; le traitement de chaque candidat a un coût distinct |
+| $\mathcal{O}(n!)$ | Nombre de toutes les permutations de $n$ éléments distincts ; le traitement de chaque candidat a un coût distinct |
 
-Il existe plusieurs classes représentatives de complexité algorithmique. Examinons-les dans l'ordre, du temps d'exécution le plus court (le plus efficace) au plus long.
-
-1. **$\mathcal{O}(1)$ : Temps constant (Constant time)**
-   Un algorithme dont le temps d'exécution ne change pas, quelle que soit la taille de l'entrée $N$. Par exemple, l'accès à une valeur en spécifiant l'index d'un tableau, ou la recherche dans une table de hachage (dans le cas idéal).
-
-2. **$\mathcal{O}(\log N)$ : Temps logarithmique (Logarithmic time)**
-   Un algorithme très efficace où même si la taille de l'entrée double, le temps d'exécution n'augmente que d'une constante. La « recherche dichotomique ([Binary Search](https://kenji.blog/fr/p/search-algorithms-linear-binary-hash-table-principles/)) », qui recherche une valeur cible dans un tableau trié, en est un exemple typique. Même avec un milliard de données, il suffit d'environ 30 comparaisons pour trouver la donnée souhaitée.
-
-3. **$\mathcal{O}(N)$ : Temps linéaire (Linear time)**
-   Le temps d'exécution augmente proportionnellement à la taille de l'entrée. Si les données sont multipliées par 10, le temps sera également multiplié par 10. La « recherche linéaire », qui vérifie tous les éléments d'un tableau dans l'ordre, correspond à ce cas.
-
-4. **$\mathcal{O}(N \log N)$ : Temps quasi-linéaire (Linearithmic time)**
-   Un peu plus lent que $\mathcal{O}(N)$, mais toujours considéré comme efficace. De nombreux algorithmes de tri rapide pratiques, tels que le tri fusion (Merge Sort) et le tri rapide (Quick Sort, complexité moyenne), ont cette complexité.
-
-5. **$\mathcal{O}(N^2)$ : Temps polynomial / Temps quadratique (Quadratic time)**
-   Lorsque la taille de l'entrée double, le temps d'exécution quadruple ; si elle est multipliée par 10, il est multiplié par 100. Les traitements simples utilisant des boucles imbriquées, le tri à bulles ou le tri par insertion en font partie. Si la quantité de données dépasse plusieurs dizaines de milliers, le traitement commence à prendre beaucoup de temps. Ces complexités exprimées sous la forme $\mathcal{O}(N^k)$ sont collectivement appelées **temps polynomial (Polynomial time)**.
-
-6. **$\mathcal{O}(2^N)$ : Temps exponentiel (Exponential time)**
-   Il suffit que la taille de l'entrée augmente de 1 pour que le temps d'exécution double. C'est extrêmement inefficace : dès que $N$ atteint 40 ou 50, même les ordinateurs de pointe ne peuvent plus terminer le calcul dans un temps réaliste. La recherche exhaustive du problème du sac à dos, ou la solution naïve du problème du voyageur de commerce en sont des exemples.
-
-7. **$\mathcal{O}(N!)$ : Temps factoriel (Factorial time)**
-   Il augmente encore plus rapidement que $\mathcal{O}(2^N)$. C'est le cas d'un algorithme qui testerait toutes les permutations possibles pour le problème du voyageur de commerce.
-
-Le diagramme Mermaid ci-dessous est une comparaison schématique du taux d'augmentation du temps d'exécution (nombre d'étapes) pour chaque classe de complexité par rapport à l'augmentation de $N$.
+Un temps borné par $\mathcal{O}(n^k)$ pour une constante fixe $k$ est polynomial. Un grand exposant ou une grande constante peut néanmoins le rendre peu pratique ; inversement, une méthode exponentielle peut être utile pour de petites entrées. Le schéma suivant classe des estimations représentatives selon la longueur de l'entrée en bits. Ce n'est ni une preuve de difficulté ni un graphique du temps écoulé.
 
 ```mermaid
 graph TD
-    classDef poly fill:#a8e6cf,stroke:#333,stroke-width:2px;
-    classDef subexp fill:#ffd3b6,stroke:#333,stroke-width:2px;
-    classDef exp fill:#ffaaa5,stroke:#333,stroke-width:2px;
-
-    Poly["Temps Polynomial O(n^k)"]:::poly
-    SubExp["Temps Sous-exponentiel L_n"]:::subexp
-    Exp["Temps Exponentiel O(2^n)"]:::exp
-
-    GNFS["Crible du Corps de Nombres Généralisé (GNFS)"]:::subexp
-    Pollard["Algorithme rho de Pollard"]:::exp
-    Trial["Méthode des Divisions Successives"]:::exp
-
-    Easy["Réalisable (Faisable)"]:::poly
-    Hard["Intraitable (Difficile)"]:::exp
-
-    Poly --- Easy
-    Exp --- Hard
-
-    Trial --> Exp
-    Pollard --> Exp
-    GNFS --> SubExp
-    
-    Poly -.-> SubExp
-    SubExp -.-> Exp
+    Trial["Divisions d'essai : nombre de divisions entières"] --> Exp["Estimation exponentielle en la longueur en bits"]
+    Rho["Rho de Pollard : estimation heuristique du nombre moyen de multiplications"] --> Exp
+    GNFS["Crible général des corps de nombres : estimation heuristique"] --> SubExp["Estimation sous-exponentielle en la longueur en bits"]
 ```
 
-Vous comprenez désormais à quel point la différence de complexité est cruciale dans le choix d'un algorithme. En cryptographie, la sécurité est garantie en utilisant intentionnellement des problèmes qui nécessitent un « temps exponentiel » ou une « complexité proche » (c'est-à-dire des problèmes qui ne peuvent pas être résolus facilement).
+## 3. RSA : valeur de l'entier et longueur de l'entrée
 
----
+Notons $N\ge2$ l'entier à factoriser et $b$ la longueur de sa représentation binaire. Ce n'est pas le nombre d'éléments $n$ du tableau précédent.
 
-# Mécanisme du chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et le problème de la factorisation en nombres premiers
+$$
+b=\lfloor\log_2 N\rfloor+1,\qquad 2^{b-1}\le N<2^b.
+$$
 
-Pour comprendre pourquoi la factorisation en nombres premiers est importante, rappelons brièvement le fonctionnement du chiffrement RSA. Le chiffrement RSA est un système de cryptographie à clé publique développé en 1977 par Ronald Rivest, Adi Shamir et Leonard Adleman.
+Par exemple, $15$ s'écrit sur quatre bits, mais $2^4=16$, et non $15$. Une borne polynomiale en la valeur $N$ peut être exponentielle en la longueur d'entrée $b$. Les opérations sur de grands entiers ont elles-mêmes des coûts qui dépendent de $b$.
 
-### Étapes de génération des clés
-1. Deux très grands nombres premiers $p$ et $q$ sont choisis au hasard (par exemple, chacun d'une longueur de 1024 bits).
-2. Ils sont multipliés pour calculer $N = p \times q$. Ce $N$ est publié dans le monde entier comme faisant partie de la clé publique (il aura une longueur de 2048 bits).
-3. L'indicatrice d'Euler $\phi(N) = (p-1)(q-1)$ est calculée.
-4. Un entier $e$ premier avec $\phi(N)$ est choisi et devient également une partie de la clé publique.
-5. Une clé privée $d$ est calculée de sorte que $e \times d \equiv 1 \pmod{\phi(N)}$.
+Dans le cas élémentaire de RSA à deux nombres premiers, on choisit des nombres premiers impairs distincts $p,q$ et on forme $N=pq$. S'ils ont chacun 1024 bits, leur produit a 2047 ou 2048 bits, et non systématiquement 2048. La clé publique comprend $N,e$ ; la clé privée comprend l'exposant privé $d$ et éventuellement d'autres valeurs. Par exemple, les conditions suivantes suffisent pour choisir $d$ :
 
-Le point crucial ici est le fait que **« pour déchiffrer le message, la clé privée $d$ est nécessaire ; pour calculer $d$, $\phi(N)$ est nécessaire ; et pour calculer $\phi(N)$, il faut factoriser $N$ en $p$ et $q$ »**.
+$$
+\varphi(N)=(p-1)(q-1),\quad 1<e<\varphi(N),\quad
+\gcd(e,\varphi(N))=1,\quad ed\equiv1\pmod{\varphi(N)}.
+$$
 
-La multiplication de très grands nombres premiers $p \times q$ se fait en un instant, mais retrouver les $p$ et $q$ d'origine à partir du résultat $N$ (factorisation en nombres premiers) est désespérément difficile. Cette nature de « fonction à sens unique (One-way function) » est le cœur même du chiffrement RSA.
+La [RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html) définit plus généralement les clés à l'aide de $\lambda(N)=\operatorname{lcm}(p-1,q-1)$. Connaître les facteurs permet de calculer un exposant privé. Toutefois, il n'a pas été démontré en général que l'inversion de RSA soit équivalente à la factorisation, et toutes les attaques contre RSA ne nécessitent pas de factoriser le module.
 
-Il y a un point très important à noter ici. La « taille de l'entrée $n$ » dans le problème de la factorisation n'est pas la grandeur du nombre $N$ lui-même, mais le « nombre de bits nécessaires pour représenter le nombre $N$ ».
-Si $n$ est le nombre de chiffres lors de la représentation de l'entier $N$ en binaire, alors $n \approx \log_2 N$. En d'autres termes, la complexité de l'algorithme doit être évaluée par rapport à $n = \log_2 N$ (ou $\ln N$), et non à $N$.
+La seule opération élémentaire d'exponentiation modulaire ne constitue pas un schéma de chiffrement sûr. En pratique, il faut des schémas de chiffrement intégrant OAEP, des schémas de signature comme PSS, et une analyse de la génération des clés, des implémentations et du protocole complet. L'asymétrie entre multiplication et récupération des facteurs n'est pas une preuve inconditionnelle de sécurité.
 
----
+## 4. Cinq algorithmes de factorisation
 
-# Histoire des algorithmes de factorisation en nombres premiers et leur complexité
+### 4.1 Divisions d'essai
 
-À partir d'ici, nous expliquerons en détail le fonctionnement et la complexité des divers algorithmes utilisés pour décomposer un nombre composé donné $N$ en produit de nombres premiers. C'est aussi l'histoire de la façon dont l'humanité a défié les limites de la factorisation.
+Un entier composé $N$ possède au moins un facteur premier inférieur ou égal à $\sqrt N$. Essayer de petits diviseurs jusqu'à $\lfloor\sqrt N\rfloor$ permet donc de trouver un facteur. Cela ne signifie pas que le plus grand facteur premier soit inférieur à la racine carrée : le plus grand facteur premier de $15=3\cdot5$ est $5$, supérieur à $\sqrt{15}$.
 
-## 1. Méthode des divisions successives (Trial Division)
+Pour la méthode simple qui teste tous les candidats entiers, le nombre de divisions dans le pire cas est estimé par $\mathcal{O}(\sqrt N)$. L'inégalité sur la longueur en bits donne aussi la borne $\mathcal{O}(2^{b/2})$. On compte ici chaque division en précision multiple comme une opération, et non le nombre total d'opérations sur les bits. Un petit facteur permet de terminer plus tôt.
 
-L'algorithme le plus intuitif et primitif est la « méthode des divisions successives ». Il consiste à essayer de diviser $N$ par des nombres premiers dans l'ordre, à partir de $2$.
+### 4.2 Méthode de Fermat : l'écart entre les facteurs compte
 
-### Aperçu de l'algorithme
-Il tire parti de la propriété selon laquelle les facteurs premiers de $N$ ne dépasseront jamais $\sqrt{N}$ (puisque $\sqrt{N} \times \sqrt{N} = N$, s'il existait un facteur premier plus grand, il serait nécessairement associé à un facteur premier inférieur ou égal à $\sqrt{N}$).
-Par conséquent, on vérifie si $N$ est divisible par tous les nombres (ou nombres premiers) jusqu'à $\lfloor\sqrt{N}\rfloor$ : $2, 3, 5, 7, \dots$.
+Pour un entier composé impair, on cherche une différence de carrés :
 
-### Évaluation de la complexité
-Dans le pire des cas (par exemple, si $N$ est le produit de deux très grands nombres premiers), il faut effectuer des divisions jusqu'à $\sqrt{N}$.
-Comme mentionné précédemment, la taille de l'entrée $n$ est $n = \log_2 N$, on peut donc exprimer $N = 2^n$.
-Ainsi, le nombre maximal d'étapes de calcul est proportionnel à :
+$$
+N=x^2-y^2=(x-y)(x+y).
+$$
 
-$$ \sqrt{N} = \sqrt{2^n} = (2^n)^{1/2} = 2^{n/2} $$
+On part de $x=\lceil\sqrt N\rceil$ et on augmente $x$ jusqu'à ce que $x^2-N$ soit un carré parfait. Pour $N=pq$ avec $p\le q$ impairs, une solution est $x=(p+q)/2$, $y=(q-p)/2$. Le nombre de candidats jusqu'à cette solution est le suivant ; une solution antérieure, s'il en existe une, permet de s'arrêter plus tôt.
 
-Cela signifie que pour une longueur de bit $n$, la complexité est **$\mathcal{O}(2^{n/2})$**. Autrement dit, la méthode des divisions successives est un algorithme à ** « temps exponentiel pur (Exponential time) »** par rapport à $n$.
-Chaque fois que le nombre de bits augmente de 1 (le nombre double), le temps de calcul est multiplié par environ $\sqrt{2} \approx 1,414$. Si $N$ est un nombre dépassant 1024 bits (environ 300 chiffres en décimal), même en y consacrant un temps égal à l'âge de l'univers, le calcul ne s'achèverait pas.
+$$
+\frac{p+q}{2}-\lceil\sqrt N\rceil+1.
+$$
 
-## 2. Méthode de factorisation de [Fermat](https://kenji.blog/fr/p/fermat/) ([Fermat](https://kenji.blog/fr/p/fermat/)'s Factorization Method)
+Avec les facteurs proches de $1009\cdot1013$, le premier candidat réussit. À l'inverse, $3\cdot104729=314187$ nécessite 51806 candidats. En particulier, fixer $p=3$ et augmenter le nombre premier $q$ donne $\Theta(N)$ candidats. Il est incorrect d'attribuer systématiquement à Fermat le même ordre en racine carrée qu'aux divisions d'essai. Pour une entrée paire, on retire d'abord les facteurs 2.
 
-Il s'agit d'une méthode inventée par le mathématicien du 17ème siècle, [Pierre de Fermat](https://kenji.blog/fr/p/fermat/). Étant donné un nombre composé impair $N$, on tente de représenter $N$ comme la différence de deux carrés.
+### 4.3 Rho de Pollard
 
-$$ N = x^2 - y^2 = (x - y)(x + y) $$
+On itère une fonction telle que $x\mapsto x^2+c\pmod N$ et on calcule le plus grand commun diviseur de $N$ et de la différence entre deux positions de la suite. Une collision modulo un facteur premier inconnu $p$ peut produire une différence divisible par $p$ et révéler un facteur. La détection de cycle de Floyd conserve un nombre constant de résidus. Chaque résidu demande toutefois $\mathcal{O}(b)$ bits : la mémoire n'est donc pas constante si on la mesure en bits.
 
-Si l'on trouve de tels $x$ et $y$, alors $a = x - y$ et $b = x + y$ seront les facteurs de $N$.
-Dans l'algorithme, on augmente $x$ progressivement à partir de $\lceil \sqrt{N} \rceil$ et on vérifie si $x^2 - N$ est un carré parfait (le carré d'un entier $y$).
-Cette méthode fonctionne de manière extrêmement rapide lorsque les deux facteurs premiers $p$ et $q$ sont très proches en valeur. Cependant, dans le cas général (où $p$ et $q$ ont des valeurs aléatoirement distantes), elle nécessite finalement un temps exponentiel similaire à celui de la méthode des divisions successives.
+Dans un modèle heuristique de fonction aléatoire, le nombre espéré de multiplications modulaires pour trouver un facteur $p$ est estimé par $\mathcal{O}(\sqrt p)$. Lorsque $p$ est de l'ordre de $\sqrt N$, on obtient $\mathcal{O}(N^{1/4})$, donc $\mathcal{O}(2^{b/4})$. Ce n'est pas une garantie inconditionnelle dans le pire cas ; les coûts en bits des multiplications et des calculs de PGCD doivent aussi être pris en compte.
 
-## 3. Algorithme $\rho$ de Pollard (Pollard's rho algorithm)
+Un PGCD $d$ représente un succès seulement si $1<d<N$. Si $d=1$, on continue ; si $d=N$, on réessaie, par exemple en changeant la valeur initiale ou la fonction. Avec $N=21$, la valeur initiale 2 et $f(x)=x^2+1$, la première comparaison de Floyd porte sur 5 et 5, donnant 21 lui-même comme PGCD. Un facteur non trivial peut aussi être composé et nécessiter une factorisation supplémentaire.
 
-L'un des algorithmes conçus pour dépasser les limites de la méthode des divisions successives est « l'algorithme $\rho$ (rho) de Pollard », publié par John Pollard en 1975.
+### 4.4 Crible quadratique et MPQS
 
-### Aperçu de l'algorithme
-Cette méthode applique un concept probabiliste appelé « paradoxe des anniversaires (Birthday Paradox) » et la périodicité des suites pseudo-aléatoires (qui ressemble à la forme de la lettre grecque $\rho$, d'où son nom).
+Le crible quadratique rassemble des valeurs friables, dont la décomposition ne fait intervenir que de petits nombres premiers, pour construire une congruence de carrés. Dans sa forme de base, on pose $m=\lfloor\sqrt N\rfloor$ et on crible les valeurs suivantes pour un intervalle de petits $x$ :
 
-En utilisant une certaine fonction génératrice de nombres pseudo-aléatoires $f(x) = (x^2 + 1) \pmod N$, on génère une suite et on cherche deux valeurs dans la suite telles que $x_i \equiv x_j \pmod p$ (où $p$ est un facteur premier inconnu de $N$).
-À ce stade, comme $x_i - x_j$ est un multiple de $p$, on peut extraire $p$ (c'est-à-dire un facteur premier de $N$) avec une forte probabilité en calculant le plus grand commun diviseur $\gcd(|x_i - x_j|, N)$. En combinant cela avec l'[algorithme de détection de cycle de Robert Floyd (algorithme du lièvre et de la tortue)](/fr/p/floyds-cycle-finding/), le calcul se fait efficacement tout en maintenant l'utilisation de la mémoire à $\mathcal{O}(1)$.
+$$
+Q(x)=(m+x)^2-N.
+$$
 
-### Évaluation de la complexité
-Il est connu que le nombre d'étapes nécessaires pour que l'algorithme $\rho$ de Pollard trouve un facteur premier $p$ est d'environ $\mathcal{O}(\sqrt{p})$.
-Dans le pire des cas (lorsque $N$ est le produit de deux nombres premiers $p, q$ de même taille, tel que $p \approx \sqrt{N}$), la complexité est de $\mathcal{O}(N^{1/4})$.
+On enregistre les exposants sur une base de facteurs comprenant le signe $-1$ et de petits nombres premiers choisis. L'algèbre linéaire sur le corps à deux éléments combine les parités des exposants pour trouver des produits qui sont des carrés. Se contenter de décrire des valeurs friables aléatoires de $x^2\bmod N$ masque l'utilisation de petites valeurs polynomiales propre au crible quadratique.
 
-Exprimé avec la taille d'entrée $n = \log_2 N$ :
+Le MPQS, crible quadratique à polynômes multiples, est une variante utilisant plusieurs polynômes quadratiques appropriés. Les performances dépendent de l'implémentation, de l'entrée et des ressources disponibles. Il n'existe pas de règle universelle selon laquelle une méthode en dépasse une autre à exactement 100 chiffres.
 
-$$ N^{1/4} = (2^n)^{1/4} = 2^{n/4} $$
+La congruence recherchée et l'extraction du facteur prennent la forme :
 
-Par conséquent, la complexité est **$\mathcal{O}(2^{n/4})$**.
-Par rapport au $\mathcal{O}(2^{n/2})$ de la méthode des divisions successives, l'accélération est spectaculaire, et elle est très puissante en pratique pour factoriser des nombres de taille moyenne (plusieurs dizaines de chiffres). Cependant, elle ne parvient toujours pas à franchir la barrière du « temps exponentiel » par rapport à la longueur de bit $n$, la rendant impuissante face aux nombres gigantesques de 2048 bits (environ 600 chiffres décimaux) utilisés dans le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/).
+$$
+X^2\equiv Y^2\pmod N,\qquad d=\gcd(X-Y,N).
+$$
 
-## 4. Crible Quadratique à Polys Multiples (MPQS: Multiple Polynomial Quadratic Sieve)
+Si $d=1$ ou $d=N$, on essaie une autre relation. Si $X,Y$ sont premiers avec $N$ et $X\not\equiv\pm Y\pmod N$, on obtient un facteur non trivial, pas nécessairement premier. Par exemple, pour $N=1155$, $X=76$, $Y=1$, les carrés sont congrus, mais $\gcd(75,1155)=15$ et $\gcd(77,1155)=77$ sont tous deux composés.
 
-Au début des années 1980, Carl Pomerance a inventé le « crible quadratique (Quadratic Sieve : QS) ». C'est une extension du concept de la « différence de carrés » de [Fermat](https://kenji.blog/fr/p/fermat/).
-Alors que la méthode de [Fermat](https://kenji.blog/fr/p/fermat/) cherchait directement $x^2 - y^2 = N$, le crible quadratique recherche une condition beaucoup plus souple.
+### 4.5 Crible général des corps de nombres (GNFS)
 
-$$ x^2 \equiv y^2 \pmod N $$
-et
-$$ x \not\equiv \pm y \pmod N $$
+Le crible général des corps de nombres sert à factoriser de grands entiers sans forme particulière. Son déroulement général est le suivant :
 
-Si l'on peut trouver une telle paire $x, y$, alors $x^2 - y^2 = (x - y)(x + y)$ est un multiple de $N$. Par conséquent, en calculant $\gcd(x - y, N)$ ou $\gcd(x + y, N)$, on peut obtenir un facteur premier non trivial de $N$.
+1. Choisir des polynômes entiers et des paramètres associés ayant une racine commune modulo $N$, et préparer le corps de nombres correspondant.
+2. Cribler des relations satisfaisant des conditions de factorisation faisant intervenir de petits nombres premiers ou des idéaux premiers, du côté rationnel et du côté du corps de nombres.
+3. Résoudre une grande matrice creuse décrivant les parités des exposants et des conditions supplémentaires pour combiner des relations dont on pourra extraire des carrés.
+4. Calculer des racines carrées des deux côtés, obtenir une congruence de carrés entre entiers et utiliser un PGCD pour extraire un facteur non trivial. Réessayer avec d'autres relations en cas d'échec.
 
-Dans le crible quadratique, on trouve un grand nombre de $x$ tels que $x^2 \pmod N$ donne un « nombre n'ayant que de petits facteurs premiers (ce qu'on appelle un nombre $B$-friable) », et on dispose le résultat de leurs factorisations sous forme de matrice (un système d'équations linéaires sur le corps fini $\mathbb{F}_2$). Ensuite, on utilise l'élimination de Gauss ou des méthodes similaires pour multiplier plusieurs relations entre elles, afin d'ajuster le côté droit pour qu'il devienne un carré parfait (les exposants de chaque facteur premier deviennent pairs), construisant ainsi $x^2 \equiv y^2 \pmod N$.
+C'est un aperçu, pas une procédure d'implémentation des racines carrées du côté du corps de nombres ni de leurs conditions supplémentaires. De plus, $\mathbb Z[\alpha]$, formé à partir d'une racine $\alpha$ d'un polynôme, ne coïncide pas toujours avec l'anneau des entiers du corps de nombres. Par exemple, pour $\alpha=\sqrt5$, $\beta=(1+\sqrt5)/2$ satisfait $\beta^2-\beta-1=0$ : c'est un entier algébrique, mais il n'appartient pas à $\mathbb Z[\sqrt5]$.
 
-Le crible quadratique fut l'algorithme le plus rapide au monde jusqu'à l'apparition du crible du corps de nombres généralisé, et il est toujours considéré comme le plus rapide pour factoriser des nombres de moins de 100 chiffres.
+Définissons la notation L avec les logarithmes naturels $\ln$, pour $c>0$ et $0\le\alpha\le1$ :
 
-## 5. Examen approfondi du Crible du Corps de Nombres Généralisé (General Number Field Sieve : GNFS)
+$$
+L_N[\alpha,c]=\exp\!\left((c+o(1))(\ln N)^\alpha(\ln\ln N)^{1-\alpha}\right).
+$$
 
-Actuellement, l'algorithme réputé « le plus rapide au monde » pour la factorisation de nombres entiers géants dépassant 100 chiffres est le **crible du corps de nombres généralisé (GNFS)**. Conçu à la fin des années 1980, il s'agit d'un algorithme très sophistiqué qui prolonge le crible quadratique en utilisant des résultats profonds de la théorie algébrique des nombres (corps de nombres).
+Ici, $o(1)$ tend vers zéro lorsque $N\to\infty$. Les extrémités sont $L_N[0,c]=(\ln N)^{c+o(1)}$ et $L_N[1,c]=N^{c+o(1)}$. Il ne faut pas supprimer le terme asymptotique pour le remplacer par une égalité exacte ou une borne supérieure de degré fixe.
 
-Dans les attaques contre le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) (factorisation à partir de la clé publique), c'est toujours ce GNFS qui bat les records mondiaux. En 2020, on a signalé le succès de la factorisation d'un nombre composé de 829 bits (250 chiffres) (RSA-250), mais cela a nécessité l'exécution en parallèle de milliers d'ordinateurs sur une longue période.
+L'estimation heuristique habituelle du temps de GNFS s'écrit :
 
-### Structure mathématique de l'algorithme
-Le GNFS est extrêmement complexe, mais il se déroule grossièrement selon les étapes suivantes.
+$$
+L_N\!\left[\frac13,\left(\frac{64}{9}\right)^{1/3}\right]
+=\exp\!\left(\left(\left(\frac{64}{9}\right)^{1/3}+o(1)\right)(\ln N)^{1/3}(\ln\ln N)^{2/3}\right).
+$$
 
-1. **Sélection du polynôme (Polynomial Selection):**
-   Pour $N$, on choisit un entier $m$ et un polynôme irréductible $f(X)$ avec de petits coefficients tel que $f(m) \equiv 0 \pmod N$. Cela définit l'anneau des entiers $\mathbb{Z}[\alpha]$ du corps algébrique (corps de nombres) obtenu en ajoutant la racine $\alpha$ de $f(X)$.
+La constante vaut environ 1,923. Le passage à la longueur de l'entrée en bits utilise $\ln N=b\ln2+\mathcal{O}(1)$, ce qui change aussi la constante principale de l'exposant :
 
-2. **Criblage (Sieving):**
-   On recherche des nombres friables (Smooth) simultanément dans « deux mondes différents » : l'anneau des entiers rationnels $\mathbb{Z}$ et l'anneau des entiers algébriques $\mathbb{Z}[\alpha]$. Concrètement, on trouve un grand nombre de paires $(a, b)$ telles que la norme de l'entier rationnel $a - bm$ et de l'entier algébrique $a - b\alpha$ se factorisent complètement sur un ensemble de petits nombres premiers prédéfini (la base de facteurs : Factor Base).
+$$
+\exp\!\left(\left(\left(\frac{64\ln2}{9}\right)^{1/3}+o(1)\right)b^{1/3}(\ln b)^{2/3}\right).
+$$
 
-3. **Réduction de matrice (Matrix Reduction):**
-   On représente l'énorme quantité de paires friables trouvées sous forme de matrice (une gigantesque matrice creuse). On recherche l'espace des solutions sur le corps fini $\mathbb{F}_2$ à l'aide de l'algorithme de Lanczos (comme la méthode de Lanczos par blocs). Il n'est pas rare que cette matrice atteigne des millions de lignes sur des millions de colonnes.
+Cette constante vaut environ 1,702. L'estimation est sous-exponentielle en la longueur en bits : elle croît plus vite que tout polynôme, mais plus lentement que $2^{\varepsilon b}$ pour tout $\varepsilon>0$ fixé. Ce n'est ni un théorème inconditionnel du pire cas pour toutes les entrées, ni une prévision du temps écoulé pour une taille donnée.
 
-4. **Calcul de la racine carrée (Square Root):**
-   À partir de la solution de la matrice, on crée un carré parfait géant dans chacun des « deux mondes différents », pour finalement dériver la relation $X^2 \equiv Y^2 \pmod N$. Ensuite, on calcule $\gcd(X-Y, N)$ pour obtenir les facteurs premiers.
+À titre d'exemple daté, l'[annonce de factorisation de RSA-250 du 28 février 2020](https://caramba.loria.fr/rsa250.txt) rapporte la factorisation par NFS d'un entier de 250 chiffres et 829 bits, pour environ 2700 années-cœur de travail (core-years). Il s'agit d'une mesure du travail de calcul, pas nécessairement de 2700 machines simultanées ni de 2700 années écoulées. Cet exemple n'est présenté ni comme le record mondial actuel ni comme le coût pour tout entier de cette longueur.
 
-### Complexité du crible du corps de nombres généralisé : Temps sous-exponentiel (Sub-exponential time)
+## 5. P contre NP et calcul quantique
 
-La plus grande réalisation du GNFS est d'avoir réduit la complexité de la factorisation du « temps exponentiel pur » au **« temps sous-exponentiel (Sub-exponential time) »**.
-La complexité temporelle asymptotique du GNFS s'exprime à l'aide d'une notation spéciale appelée notation L (L-notation) :
+### Tester la primalité et trouver des facteurs
 
-$$ L_N[\gamma, c] = \exp\left( (c + o(1)) (\ln N)^\gamma (\ln \ln N)^{1-\gamma} \right) $$
+Déterminer si un nombre est premier diffère de la recherche de facteurs d'un composé. L'[article AKS](https://annals.math.princeton.edu/2004/160-2/p12) a établi un test de primalité déterministe et inconditionnel en temps polynomial. Il n'a pas établi le même résultat pour la factorisation.
 
-Où $N$ est le nombre à factoriser et $\ln$ est le logarithme népérien.
-$\gamma$ est un paramètre compris entre $0 \le \gamma \le 1$ qui indique le « degré » de complexité de l'algorithme.
-- Lorsque $\gamma = 0$, $L_N[0, c]$ devient $(\ln N)^c$, ce qui signifie un temps polynomial $\mathcal{O}(n^c)$. (Efficace)
-- Lorsque $\gamma = 1$, $L_N[1, c]$ devient $e^{c \ln N} = N^c$, ce qui signifie un temps exponentiel $\mathcal{O}(2^{cn})$. (Inefficace)
+P, NP et coNP sont fondamentalement des classes de problèmes de décision à réponse Oui/Non. La factorisation elle-même est un problème de recherche qui produit des facteurs ; dire seulement qu'elle est dans NP laisse donc le type de problème ambigu. Par exemple, étant donnés $N\ge2$ et $2\le K<N$, demandons s'il existe un diviseur satisfaisant $1<d\le K$ et $d\mid N$.
 
-Dans le cas du GNFS, ce paramètre est le suivant :
+Une réponse Oui admet le diviseur $d$ comme certificat, vérifiable par division. Une réponse Non peut être certifiée par une factorisation complète en nombres premiers : on vérifie en temps polynomial le produit, la primalité de chaque facteur et le fait que tous les facteurs premiers dépassent $K$. Ce problème de décision appartient donc à NP et à coNP. Une recherche polynomiale résoudrait la décision. Réciproquement, un algorithme de décision polynomial permettrait d'obtenir la factorisation par recherche dichotomique sur $K$ et extraction répétée de facteurs.
 
-$$ L_N\left[\frac{1}{3}, \left(\frac{64}{9}\right)^{1/3}\right] = e^{\left(\sqrt[3]{\frac{64}{9}} + o(1)\right) (\ln N)^{1/3} (\ln \ln N)^{2/3}} $$
+Ce classement ne démontre ni la NP-complétude ni l'absence d'algorithme classique polynomial. Si un problème de NP et de coNP était NP-complet pour les réductions polynomiales usuelles, cela impliquerait NP=coNP. [P contre NP reste ouvert](https://www.claymath.org/millennium/p-vs-np/). Même supposer P≠NP ne suffirait pas à démontrer que la factorisation est hors de P.
 
-Dans cette équation, la constante $c = (64/9)^{1/3} \approx 1,923$.
-Si on la réécrit avec la taille de l'entrée $n \approx \ln N$ (proportionnelle à la longueur des bits), la complexité se comporte approximativement comme suit :
+### L'algorithme de Shor change de modèle de calcul
 
-$$ \mathcal{O}\left( \exp\left( 1,923 \cdot n^{1/3} (\ln n)^{2/3} \right) \right) $$
+L'[algorithme de Shor](https://arxiv.org/abs/quant-ph/9508027) factorise des entiers en un nombre d'étapes polynomial en la longueur de l'entrée en bits, dans un modèle disposant de ressources quantiques suffisantes. Sa partie quantique fournit des informations sur les périodes, suivies d'une mesure et d'un traitement classique, avec de nouvelles tentatives si nécessaire. La transformée de Fourier quantique ne révèle pas instantanément les réponses de tous les candidats.
 
-On constate que la partie exponentielle ne dépend pas de $n$ à la puissance 1, mais de $n^{1/3}$ (la racine cubique de $n$).
-Alors que l'algorithme $\rho$ de Pollard était en $\mathcal{O}(2^{n/4})$, c'est-à-dire $\mathcal{O}(\exp(c \cdot n^1))$, le GNFS a fait chuter le degré de $n$ à $1/3$.
-Cela signifie que bien qu'on n'atteigne pas le temps polynomial ($\gamma=0$), la complexité croît beaucoup plus lentement que pour un temps exponentiel pur ($\gamma=1$). C'est la raison pour laquelle on l'appelle « temps sous-exponentiel ».
-
----
-
-# Limites de la cryptographie moderne et ordinateurs quantiques
-
-Comme nous l'avons vu, l'humanité a mobilisé la sagesse mathématique pour repousser les limites de la factorisation en faisant évoluer les algorithmes, de la méthode des divisions successives au GNFS. Cependant, même avec le GNFS, la factorisation n'a toujours pas pu être résolue en « temps polynomial » sur des ordinateurs classiques.
-
-## Le problème [P vs NP](https://kenji.blog/fr/p/p-vs-np-problem/) et la position de la factorisation en nombres premiers
-
-L'un des plus grands problèmes non résolus de l'informatique est la « conjecture P = NP ».
-Le problème de la factorisation appartient à NP (la classe des problèmes dont la solution, si elle est donnée, peut être vérifiée en temps polynomial), mais il n'a pas été prouvé qu'il soit [NP-complet](https://kenji.blog/fr/p/p-vs-np-problem/) (la classe des problèmes les plus difficiles dans NP).
-De plus, il n'est pas encore prouvé s'il appartient à P (la classe des problèmes solvables en temps polynomial), c'est-à-dire s'il existe un algorithme en temps polynomial pour le résoudre.
-
-De nombreux chercheurs supposent que la factorisation appartient à une classe intermédiaire entre P et NP-complet (NP-intermédiaire). Si un algorithme résolvant la factorisation en temps polynomial sur un ordinateur classique (par exemple, $\mathcal{O}(n^3)$) venait à être découvert, ce serait un événement majeur qui ferait s'effondrer les systèmes cryptographiques du monde entier ; cependant, jusqu'à présent, aucun algorithme de ce type n'a été trouvé. Il est estimé que le déchiffrement d'une clé [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) de 2048 bits prendrait plus de temps que la durée de vie de l'univers, même si les performances des ordinateurs classiques continuaient à s'améliorer selon [la loi de Moore](/fr/p/business-moores-law/).
-
-## L'ordinateur quantique, un « changeur de donne (Game Changer) » : l'algorithme de Shor
-
-Alors que le chiffrement RSA est robuste face aux ordinateurs classiques, la situation changera radicalement avec la mise en pratique des « ordinateurs quantiques », qui fonctionnent sur des principes totalement différents.
-Publié en 1994 par Peter Shor, l'**« algorithme de Shor (Shor's algorithm) » ** est un algorithme capable de résoudre la factorisation en nombres premiers en **temps polynomial $\mathcal{O}(n^3)$** (ou plus précisément, environ $\mathcal{O}(n^2 \log n \log \log n)$ en termes de portes quantiques), de manière stupéfiante, grâce à la transformée de Fourier quantique.
-
-Voyons la différence de complexité entre les algorithmes classiques et quantiques dans le diagramme Mermaid suivant.
+Ce nombre théorique d'étapes ne détermine pas directement si une machine réelle aurait besoin d'heures ou de jours. Une telle estimation nécessite des hypothèses sur les portes quantiques, la correction d'erreurs, les circuits arithmétiques, les qubits disponibles et d'autres ressources. La dernière flèche du schéma change de modèle de calcul ; elle ne prouve pas une limite des ordinateurs classiques.
 
 ```mermaid
 graph LR
-    classDef classical fill:#f9f871,stroke:#333,stroke-width:2px;
-    classDef quantum fill:#00c9a7,stroke:#333,stroke-width:2px;
-
-    subgraph "Ordinateurs Classiques"
-        C1["Divisions Successives : O(2^(n/2))"]:::classical
-        C2["GNFS : Sous-exponentiel L_n(1/3)"]:::classical
-    end
-
-    subgraph "Ordinateurs Quantiques"
-        Q1["Algorithme de Shor : O(n^3) Polynomial"]:::quantum
-    end
-
-    C1 --> C2
-    C2 -. Limite de la Physique Classique .-> Q1
+    Trial["Divisions d'essai"] -->|Autre algorithme classique| GNFS["Crible général des corps de nombres"]
+    GNFS -->|Changement de modèle de calcul| Shor["Shor : étapes polynomiales dans un modèle quantique"]
 ```
 
-Dans l'algorithme de Shor, le processus de « recherche de période », qui constituait un goulot d'étranglement dans les algorithmes classiques, est calculé en parallèle et en un instant grâce à l'intrication et à la superposition quantiques utilisant la « transformée de Fourier quantique (QFT) ».
-S'il devient possible de l'exécuter sur un ordinateur quantique de taille pratique (avec peu de bruit et un nombre suffisant de qubits logiques), la clé [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) de 2048 bits, actuellement considérée comme sûre, pourrait être complètement déchiffrée en quelques heures à quelques jours.
+Se préparer à ces attaques futures est une motivation de la cryptographie post-quantique (PQC). Comme l'explique la [RFC 9794](https://www.rfc-editor.org/rfc/rfc9794.html), le terme désigne une cryptographie conçue pour résister à des attaquants dotés d'ordinateurs quantiques ; il ne garantit pas qu'un schéma ne puisse jamais être cassé. Il faut évaluer tant les hypothèses mathématiques que l'implémentation et les choix opérationnels.
 
-Pour se prémunir contre cette menace, les cryptographes du monde entier et le NIST (Institut national des normes et de la technologie aux États-Unis) accélèrent actuellement les travaux de normalisation pour la transition vers la « [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie post-quantique (Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy : PQC) », qui reste difficile à déchiffrer même pour les ordinateurs quantiques. La cryptographie fondée sur les réseaux euclidiens ([Lattice-based cryptography](/fr/p/lattice-based-cryptography-math-intuition/)) en est un exemple représentatif, sa sécurité reposant sur une difficulté mathématique totalement différente de celle de la factorisation (par exemple, le problème du vecteur le plus court).
+## 6. Conclusion
 
----
+Comparer les complexités de factorisation commence par distinguer la valeur entière $N$ de la longueur d'entrée $b$, les nombres d'opérations de leurs coûts en bits, et le pire temps du temps espéré. Les divisions d'essai, Fermat et rho exploitent des structures différentes ; le crible quadratique et GNFS construisent des congruences de carrés à partir de nombreuses relations.
 
-# Conclusion
+La sécurité cryptographique ne se déduit ni d'une seule borne supérieure ni de l'apparence d'un grand entier. Elle demande de considérer ensemble les algorithmes connus, la génération des entrées, les modèles d'attaque et l'implémentation. Pour les résultats théoriques quantiques aussi, une explication précise doit indiquer ce qui est démontré et ce qui dépend d'hypothèses ou d'estimations de ressources.
 
-Dans cet article, en partant des bases de la complexité algorithmique (notation Grand O), nous avons exploré en profondeur l'évolution des algorithmes de factorisation et leurs limites mathématiques.
+### Références
 
-* La **notation Grand O ($\mathcal{O}$)** est un indicateur clé montrant le taux de croissance du nombre d'étapes de calcul par rapport à l'augmentation de la taille d'entrée $n$, et il existe un fossé infranchissable en pratique entre le temps polynomial et le temps exponentiel.
-* La **méthode des divisions successives** et l'**algorithme $\rho$ de Pollard** sont de purs algorithmes en « temps exponentiel », impuissants face aux nombres gigantesques.
-* Le **crible du corps de nombres généralisé (GNFS)**, actuellement le plus rapide des algorithmes classiques, a atteint un temps « sous-exponentiel » en exploitant une théorie algébrique des nombres avancée, mais n'atteint toujours pas un temps polynomial, et la factorisation de nombres énormes prendrait un temps astronomique.
-* Le fait **« qu'il n'existe pas (ou qu'on suppose fortement qu'il n'existe pas) d'algorithme classique résolvant ce problème en temps polynomial »** est exactement ce qui garantit la sécurité du chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et soutient notre société numérique moderne.
-* Cependant, avec l'avènement de **l'ordinateur quantique et de l'algorithme de Shor**, la factorisation en temps polynomial devient théoriquement possible, et la technologie cryptographique s'apprête à entrer dans une nouvelle ère (la cryptographie post-quantique).
-
-Le fait qu'un concept aussi abstrait que la complexité d'un algorithme soit directement lié à la sécurité de notre quotidien est l'un des aspects les plus fascinants et palpitants de l'informatique et des mathématiques. Nous vous invitons à rester attentifs aux futurs développements technologiques, en particulier à l'évolution des ordinateurs quantiques et aux transitions de la technologie cryptographique.
-
-
+- [NIST DADS : big-O notation](https://xlinux.nist.gov/dads/HTML/bigOnotation.html)
+- [Handbook of Applied Cryptography, chapitre 2 : définitions de complexité](https://cacr.uwaterloo.ca/hac/about/chap2.pdf)
+- [Chapitre 3 : factorisation et problème RSA](https://cacr.uwaterloo.ca/hac/about/chap3.pdf) (source de 1996 ; distinguer ses records et l'état de la primalité des avancées ultérieures)
+- [RFC 8017 : clés et schémas RSA](https://www.rfc-editor.org/rfc/rfc8017.html)
+- [Annonce des auteurs concernant RSA-250 (2020)](https://caramba.loria.fr/rsa250.txt)
+- [Agrawal–Kayal–Saxena : PRIMES is in P](https://annals.math.princeton.edu/2004/160-2/p12)
+- [Clay Mathematics Institute : P vs NP](https://www.claymath.org/millennium/p-vs-np/)
+- [Shor : algorithmes polynomiaux de factorisation et de logarithme discret sur un ordinateur quantique](https://arxiv.org/abs/quant-ph/9508027)
+- [RFC 9794 : terminologie post-quantique](https://www.rfc-editor.org/rfc/rfc9794.html)
