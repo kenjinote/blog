@@ -660,17 +660,83 @@
         }
       ],
       "validation": "docs/translation-review/batch-016-hi-validation.json"
+    },
+    "post/public-key-cryptography-rsa-ecc/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/public-key-cryptography-rsa-ecc/index.md",
+      "sourceHash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "translationHash": "59d864f43a81ecde5496751739c3ec6977975378b8462e52b997d2e16c353f54",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Russian metadata/body in two bounded outputs and independently reread the complete revised version in three bounded outputs. Compared all six numbered sections, conclusion, six references and two diagrams against corrected Japanese. Restored subgroup/exponent conditions, noncoprime CRT proof, curve exceptions, scoped security-strength comparison and protocol/quantum distinctions. Nine display formulas reused exactly from Japanese and read in resulting article; copying alone is not prose review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished согласование/транспорт/установление ключей, общее значение/производные ключи, аутентификация/проверка допустимости, образующий подгруппы/первообразный корень, простые/взаимно простые, закрытый показатель versus whole закрытый ключ, целочисленный представитель/байты, конечное поле/характеристика/неособость, порядок/скаляр, нейтральный элемент/бесконечно удалённая точка, удвоение/скалярное умножение and китайская теорема об остатках. Used расшифрование for authorized decryption and кодирование separately from шифрование; no implication that all decryption is cryptanalysis."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all nine display formulas exactly and checked relevant inline assumptions. DH uses prime subgroup order and nonzero uniform secret exponents; Euler proof retains coprimality and all representatives use primewise zero/nonzero cases and CRT. ECC uses p>3, nonsingularity modulo p, infinity/identity/inverse and y=0 exceptions. Independent fixtures verify100DH pairs, active MITM values13/18,143RSA representatives including23noncoprime,286primewise cases, the e1 flaw,20curve points/400pairs/8000associativity triples/3zero-y doublings and a singular field counterexample. Finite checks are not security proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised Russian have no executable article code. Read both Mermaid diagrams and arithmetic labels, matching8/2edges with Japanese. Ran independent small mathematical fixtures in verify_batch_016.py, not article compilation or production cryptographic certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six primary HTTPS references and scoped evidence in source notes. Preserved title, publication timestamp, slug, image and categories/tags; image exists. Added actual lastmod2026-10-28. All86Russian TeX expressions survive minified HTML, including RSA range. Seventeen-bundle Hugo, multilingual1103pages and HTTPS2025HTML/41XML passed; full CI/publication pending."
+        }
+      },
+      "summary": "Full Russian DH/RSA/ECC overview review against corrected Japanese source, with complete assumptions and protocol/security distinctions.",
+      "languageSpecificFindings": "Standardized ordinary authorized recovery as расшифрование and encoding as кодирование, distinguishing private exponent from whole key, subgroup order from serialized key size and shared value from derived traffic keys. Used поле/порядок/характеристика/неособость, удвоение and китайская теорема об остатках consistently. Clarified inverse-element wording and feminine agreement via Система RSA; added Pollard rho alongside Russian name. Removed unsupported RSA1024, universal performance and PQC absolutes.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "No executable article code; independent mathematical fixtures only, no constant-time/security proof or protocol implementation audit.",
+        "No visual browser/KaTeX/Mermaid audit.",
+        "The Arabic translation remains unreviewed; no date added to it.",
+        "Publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7919.html",
+          "scope": "Scoped abstract and5.1–5.2 known-group public validation and exponent excerpts; not universal arbitrary-group validation."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "Scoped2.2–2.3,3,4,10–10.3 and historical bibliography excerpts listed in source notes; not full original historical papers."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Scoped keys/lambda/ranges, RSAEP, OAEP composition and PSS encoding/signature excerpts; not full conformance audit."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Scoped1.2/E.8 RSA transport versus signatures,4.2.8.1,7–7.1 key schedule and7.4.1 serialization excerpts; not prevalence survey."
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+          "scope": "2020 publication metadata and parsed PDF text5.6.1–5.6.1.1/Table2 definitions and comparison rows; not current universal key policy or visual PDF inspection."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Abstract and metadata only, polynomial steps in input size on hypothetical quantum computer; not hardware forecast."
+        }
+      ],
+      "validation": "docs/translation-review/batch-016-ru-validation.json"
     }
   },
   "stage": {
     "sourceAndEnglishFullBodyReviewed": true,
-    "otherTranslationsReviewed": 9,
-    "otherTranslationsRemaining": 2,
+    "otherTranslationsReviewed": 10,
+    "otherTranslationsRemaining": 1,
     "fullCiPending": true,
     "publicationPending": true,
     "validation": "docs/translation-review/batch-016-ja-en-validation.json",
     "simplifiedChineseFullBodyReviewed": true,
-    "latestValidation": "docs/translation-review/batch-016-hi-validation.json",
+    "latestValidation": "docs/translation-review/batch-016-ru-validation.json",
     "traditionalChineseFullBodyReviewed": true,
     "spanishFullBodyReviewed": true,
     "koreanFullBodyReviewed": true,
@@ -685,15 +751,16 @@
       "fr",
       "de",
       "id",
-      "hi"
+      "hi",
+      "ru"
     ],
     "unreviewedLanguages": [
-      "ru",
       "ar"
     ],
     "frenchFullBodyReviewed": true,
     "germanFullBodyReviewed": true,
     "indonesianFullBodyReviewed": true,
-    "hindiFullBodyReviewed": true
+    "hindiFullBodyReviewed": true,
+    "russianFullBodyReviewed": true
   }
 }
