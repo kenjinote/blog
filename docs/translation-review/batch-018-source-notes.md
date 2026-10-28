@@ -31,3 +31,9 @@ The complete original Japanese and English metadata and bodies were read in thre
 ## Pending
 
 Fix and independently reread Japanese and English; validate all revised code blocks and mathematical/diagram/link structure; then read each remaining language in full. Unread or machine-only checked translations must remain unreviewed. Full-site CI and publication verification follow actual review records.
+
+## Subsequent source revision and actual validation
+
+Readable HAC chapter14 parsed Algorithms14.32/14.36/14.94 and surrounding efficiency/representation/setup conditions. This supports the corrected Montgomery discussion; no original-paper reading claim is added.
+
+Japanese and English were rewritten and independently reread in full. During rereading, the first rewritten diagram lacked a pre-loop exhaustion check for s=1; both were corrected before review recording. Added explicit initializer_list header. All3blocks separately compile; complete11sample outputs pass. Each version passes101275cases under O2 and UBSan (sieve0..50000 for both algorithms, signed/boundary/large numbers, fulluint64 multiplication/power and zero-modulus exceptions). Exact counts and hashes are in batch-018-ja-en-validation.json. All82TeX expressions survive minified HTML. Hugo19bundles, multilingual1185pages and HTTPS2163HTML/41XML pass. Eleven translations remain unread and unreviewed.

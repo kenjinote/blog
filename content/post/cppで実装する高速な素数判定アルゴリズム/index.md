@@ -2,6 +2,7 @@
 title: "C++で実装する高速な素数判定アルゴリズム（Miller-Rabin法など）"
 slug: "cpp-fast-prime-testing-miller-rabin"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-10-28"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,322 +10,265 @@ categories: ["cpp", "algorithms", "mathematics"]
 tags: ["C++", "Miller-Rabin", "Prime Numbers", "Algorithm"]
 ---
 
-# はじめに：なぜ高速な素数判定が必要なのか
+## はじめに：素数判定と因数分解を区別する
 
-情報科学や暗号理論、あるいは競技プログラミングの世界において、「ある数が素数であるかどうか」を高速かつ正確に判定することは、非常に重要で基礎的な課題です。例えば、現代のインターネット社会のセキュリティを支えている[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号などの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号方式は、巨大な素数の生成とその掛け算の困難性（素因数分解の難しさ）を安全性の根拠としています。したがって、巨大な数が素数であるかを瞬時に見分ける技術は、デジタル社会の根幹を支える技術と言っても過言ではありません。
+素数判定は「この整数は素数か」を答える問題です。合成数の因数を実際に求める問題とは異なります。[RSAなどの公開鍵暗号](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)では大きな素数の生成が重要ですが、掛け算そのものが難しいわけではありません。また、素数を見つけるだけで暗号方式の安全性が保証されるわけでもありません。
 
-また、競技プログラミング（AtCoderやCodeforcesなど）においても、素数判定は頻出のテーマです。制約が $N \le 10^{18}$ といった巨大な入力に対して、1秒以内で素数判定を数万回行うようなシチュエーションでは、伝統的で素朴なアルゴリズムでは到底計算時間（Time Limit Exceeded: TLE）に間に合いません。
+ここでは試し割り、フェルマーテスト、Miller–Rabin法を比較し、非負64ビット整数を判定するC++例を示します。実装の対象は $0\le N<2^{64}$ であり、RSAの鍵生成で扱う数千ビットの整数は範囲外です。実行時間は処理系や入力に依存するため、秒数や速度倍率を一律に保証しません。
 
-本記事では、素朴な素数判定アルゴリズムから始まり、確率的素数判定法である「[フェルマー](https://kenji.blog/p/fermat/)テスト」、そしてその弱点を克服した実用上最強レベルの高速アルゴリズム「ミラー・ラビン（Miller-Rabin）素数判定法」について、数学的な背景からC++による高度に最適化された実装まで、徹底的に解説します。特に、64ビット整数（$N < 2^{64}$）に対しては、確率的な判定にとどまらず「100%確実に素数判定ができる（決定論的判定）」手法についても詳しく説明し、実践でそのまま使えるC++のソースコードを提供します。
+## 1. 素数の定義と試し割り
 
----
+素数は、正の約数が1と自分自身だけである2以上の整数です。合成数は2以上で素数ではない整数で、0・1・負の整数は素数でも合成数でもありません。
 
-# 1. 素数判定の基礎と試し割り法 (Trial Division)
-
-素数（Prime number）とは、1と自分自身以外に正の約数を持たない、2以上の自然数のことです。素数の定義に忠実に従えば、ある整数 $N$ が素数かどうかを判定するには、$2$ から $N-1$ までのすべての整数で $N$ を割ってみて、一度も割り切れなければ素数、一度でも割り切れれば合成数（素数でない）と判断できます。
-
-しかし、この方法は計算量が $O(N)$ となり、$N$ が $10^{18}$ などの巨大な数の場合、現代のコンピュータでも計算に膨大な時間がかかってしまいます。
-
-## 試し割り法の最適化：$\sqrt{N}$ までの探索
-
-合成数 $N$ が $a \times b = N$ （$a \le b$）と表されるとき、必ず $a \le \sqrt{N}$ となります。したがって、素数判定のループは $N-1$ まで回す必要はなく、$\sqrt{N}$ まで調べれば十分です。
+合成数 $N=ab$ に $2\le a\le b$ を満たす因数があれば、$a\le\sqrt N$ です。そのため、平方根まで約数を探せば判定できます。2を先に調べ、残りは奇数だけを試します。
 
 ```cpp
-#include <iostream>
+#include <cstdint>
 
-// 試し割り法による素数判定 (O(sqrt(N)))
-bool is_prime_trial_division(long long n) {
-    if (n <= 1) return false;
-    if (n == 2 || n == 3) return true;
+bool is_prime_trial_division(std::int64_t n) {
+    if (n < 2) return false;
+    if (n == 2) return true;
     if (n % 2 == 0) return false;
-    
-    // 3以上の奇数のみ調べる
-    for (long long i = 3; i * i <= n; i += 2) {
+    for (std::int64_t i = 3; i <= n / i; i += 2) {
         if (n % i == 0) return false;
     }
     return true;
 }
 ```
 
-このアルゴリズムの計算量は $O(\sqrt{N})$ です。$N \le 10^{12}$ 程度であれば一瞬で計算できますが、$N \approx 10^{18}$ の場合、ループ回数が約 $10^9$ 回となり、C++の処理系であっても数百ミリ秒から数秒の時間を要するため、複数回の判定には不向きです。
+ループ条件を `i*i <= n` にすると符号付き整数の乗算がオーバーフローするおそれがあるため、正の値について同値な `i <= n/i` を使っています。この関数は `std::int64_t` の範囲を対象とし、負数も `false` にします。
 
----
+最悪の場合の除算回数は $\mathcal{O}(\sqrt N)$ です。奇数だけなら候補はおよそ $\sqrt N/2$ 個ですが、大きな値への多数回の判定には依然として負担になります。特定の桁数だけで実用性の境界は決まりません。
 
-# 2. [フェルマー](https://kenji.blog/p/fermat/)テスト：確率的素数判定の幕開け
+## 2. フェルマーテストと剰余べき乗
 
-試し割り法の限界を突破するために考え出されたのが、数論の定理を用いた「確率的アルゴリズム（Probabilistic Algorithm）」です。その代表例が、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)を利用した「フェルマーテスト（[Fermat](https://kenji.blog/p/fermat/) Primality Test）」です。
+素数 $p$ と $\gcd(a,p)=1$ を満たす整数 $a$ について、フェルマーの小定理が成り立ちます。
 
-## [フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
+$$
+a^{p-1}\equiv1\pmod p.
+$$
 
-[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)（[Pierre de Fermat](https://kenji.blog/p/fermat/)）が発見したこの定理は、次のように主張しています。
+したがって、$N>2$ に対して $1<a<N-1$ を選び、この合同式に反すれば $N$ は合成数です。ただし、成立したことだけでは素数とはいえません。$561=3\cdot11\cdot17$ はカーマイケル数で、561と互いに素な底ではすべて通過します。一方、底3は互いに素ではなく、$3^{560}\bmod561=375$ なので失敗します。「どの底でも必ずだます」という説明は正確ではありません。
 
-> 任意の素数 $p$ と、互いに素な（$p$ の倍数ではない）任意の整数 $a$ について、以下の合同式が成り立つ。
-> $$ a^{p-1} \equiv 1 \pmod p $$
-
-この定理の対偶をとると、「ある整数 $N$ と、$N$ と互いに素な整数 $a$ に対して $a^{N-1} \not\equiv 1 \pmod N$ となるならば、$N$ は確実に合成数である」と言えます。この性質を利用して、判定対象の数 $N$ に対してランダムな底（base）$a$ を選び、$a^{N-1} \pmod N$ を計算して $1$ になるか確認するのが[フェルマー](https://kenji.blog/p/fermat/)テストです。
-
-## 高速なべき乗剰余（繰り返し二乗法）
-
-[フェルマー](https://kenji.blog/p/fermat/)テストを行うためには、$a^{N-1} \pmod N$ という巨大なべき乗を高速に計算する必要があります。これには「繰り返し二乗法（Modular Exponentiation / Binary Exponentiation）」を用います。計算量は $O(\log N)$ となり、非常に高速です。
+べき乗を通常の整数として構成する必要はありません。繰り返し二乗法で、各乗算のたびに剰余を取ります。以下は単独でコンパイルできる補助関数群です。`base`・`exp`・乗算の引数は非負64ビット整数、法 `m` は正の64ビット整数を受け取り、法0は例外にします。
 
 ```cpp
-// 繰り返し二乗法を用いた a^b mod m の計算
-long long mod_pow(long long a, long long b, long long m) {
-    long long res = 1;
-    a %= m;
-    while (b > 0) {
-        if (b & 1) res = (__int128_t)res * a % m;
-        a = (__int128_t)a * a % m;
-        b >>= 1;
-    }
-    return res;
-}
-```
-※ ここではオーバーフローを防ぐため、GCC/Clangの拡張である `__int128_t`（128ビット整数）を使用して途中の積を保持しています。
-
-## 疑似素数とカーマイケル数 (Carmichael Numbers)
-
-[フェルマー](https://kenji.blog/p/fermat/)テストは非常に強力ですが、致命的な弱点があります。それは、$N$ が合成数であるにもかかわらず、すべての $a$ （$N$ と互いに素な $a$）に対して $a^{N-1} \equiv 1 \pmod N$ が成立してしまうような数が存在するということです。
-
-このような数を「絶対疑似素数」または「カーマイケル数」と呼びます。最小のカーマイケル数は $561 = 3 \times 11 \times 17$ です。
-カーマイケル数が存在するため、[フェルマー](https://kenji.blog/p/fermat/)テストだけでは「確率100%」の決定論的判定を行うことができません。いくら異なる $a$ を試しても、$561$ のような数は常に素数のフリ（騙し）をしてしまいます。
-
----
-
-# 3. ミラー・ラビン素数判定法 (Miller-Rabin Primality Test)
-
-[フェルマー](https://kenji.blog/p/fermat/)テストの弱点（カーマイケル数の存在）を見事に克服したのが、ミラー（Gary L. Miller）とラビン（Michael O. Rabin）によって考案された「ミラー・ラビン素数判定法」です。
-現在、実用的な高速素数判定アルゴリズムとして、さまざまな[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の内部ライブラリや暗号システムの鍵生成で最も広く使われています。
-
-## 数学的原理
-
-ミラー・ラビンのアルゴリズムは、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)に加えて、「素数を法とする剰余体（$\mathbb{Z}/p\mathbb{Z}$）においては、$x^2 \equiv 1 \pmod p$ の解は $x \equiv 1$ または $x \equiv -1$ に限られる」という性質を利用します（合成数を法とする場合は、これ以外の非自明な平方根が存在し得ます）。
-
-判定したい奇数 $N$ から $1$ を引いた $N-1$ は必ず偶数になります。そこで、$N-1$ を $2$ で割れるだけ割り、次のような形式で表します。
-$$ N-1 = d \cdot 2^s $$
-（ここで、$d$ は奇数、$s \ge 1$）
-
-任意の底 $a$ （$1 < a < N-1$）について、$a^{N-1} \equiv 1 \pmod N$ であるかを[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)に従って検証しますが、その計算を段階的に行います。
-具体的には、$a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$ と順番に2乗を繰り返していきます。
-
-ミラー・ラビンテストが $N$ を「素数である（あるいは強い確率で素数である）」と判定するための条件は、以下の **いずれか** が成立することです。
-
-1. $a^d \equiv 1 \pmod N$
-2. ある $r$ （$0 \le r < s$）が存在して、$a^{d \cdot 2^r} \equiv -1 \pmod N$ が成り立つ。
-   ※ C++のモジュロ演算では $-1 \pmod N$ は $N-1$ となります。
-
-もし $N$ が素数であれば、任意の $a$ についてこの条件が必ず満たされます。逆に $N$ が合成数であれば、ランダムな $a$ を選んだとき、この条件を満たす確率（騙される確率）は $\frac{1}{4}$ 以下であることが数学的に証明されています。
-$k$ 回の独立したテストを行えば、誤判定の確率は $\left(\frac{1}{4}\right)^k$ 以下となり、実用上ゼロとみなすことができます。カーマイケル数のような「絶対にごまかせる」数は存在しません。
-
-## ミラー・ラビン法のアルゴリズムの流れ（Mermaidフローチャート）
-
-以下の図は、ミラー・ラビン素数判定法の1回のテスト（1つの底 $a$ に対するテスト）の論理的なフローを示しています。
-
-```mermaid
-graph TD
-    Start["テスト開始 (入力: N, a)"] --> CalcDS["N-1 = d * 2^s を満たす d (奇数) と s を計算"]
-    CalcDS --> CalcX["x = a^d mod N を計算"]
-    CalcX --> CheckX1{"x == 1 または x == N-1 ?"}
-    CheckX1 -- Yes --> ReturnTrue["素数の可能性がある (Probably Prime)"]
-    CheckX1 -- No --> LoopStart["r = 1 から s-1 までループ開始"]
-    
-    LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- No --> ReturnFalse["確実に合成数 (Composite)"]
-    LoopCondition -- Yes --> SquareX["x = (x * x) mod N を計算"]
-    
-    SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- Yes --> ReturnTrue
-    CheckXMinus1 -- No --> CheckXOne{"x == 1 ?"}
-    
-    CheckXOne -- Yes --> ReturnFalse
-    CheckXOne -- No --> LoopNext["r を 1 増加させて次へ"]
-    LoopNext --> LoopCondition
-```
-
----
-
-# 4. 64ビット整数に対する決定論的判定
-
-ミラー・ラビン素数判定法は本来「確率的」アルゴリズムですが、$N$ の上限が固定されている場合、特定の複数の $a$ （底）をすべて試すことで、「100%確実に」素数判定を行うことができます。
-これを **決定論的ミラー・ラビンテスト（Deterministic Miller-Rabin Test）** と呼びます。
-
-Jim Sinclairらの研究により、$N < 2^{64}$ （約 $1.8 \times 10^{19}$）のすべての整数に対しては、以下の $7$ つの素数を底 $a$ として選んでテストすれば、十分かつ完全に決定論的な判定が可能であることが判明しています。
-
-**テストすべき底 $a$ のリスト:**
-`{2, 325, 9375, 28178, 450775, 9780504, 1795265022}`
-
-あるいは、よく知られた別のセットとして、以下の $12$ 個の素数を使用することでも $N < 2^{64}$ 以下で完璧に判定できます。
-`{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37}`
-
-今回は、アルゴリズムの簡潔さと信頼性を高めるために、後者の $12$ 個の素数をベース（あるいはより最適化された $7$ つのベース）として用いる手法を採用します。C++の実装では、条件分岐で範囲を分けることで、テスト回数を最小限に抑える最適化を行います。
-
----
-
-# 5. C++による高度な実装 (Highly Optimized C++ Implementation)
-
-それでは、ここまでの数学的な理論とアルゴリズムの設計をまとめ上げ、現代のC++における最強レベルのミラー・ラビン素数判定関数の実装コードを提示します。
-
-## 実装のポイント
-1. **64ビット整数の掛け算のオーバーフロー回避:**
-   $N \approx 10^{18}$ の場合、モジュロ乗算における $x \times x$ は最大 $10^{36}$ となり、通常の64ビット整数（`uint64_t` や `long long`）の最大値 $1.8 \times 10^{19}$ を軽々とオーバーフローしてしまいます。
-   この問題を解決するため、GCCやClangの拡張型である `__int128_t`（あるいは `unsigned __int128`）を使用し、128ビット精度で計算を行った後にモジュロを取ります。これにより、複雑なアルゴリズムを使わずとも高速に剰余乗算が可能です。
-
-2. **決定論的ベースの選択:**
-   $N$ の値が小さい場合は、少しの底（base）をテストするだけで済むように最適化します。
-
-## 完全なC++ソースコード
-
-以下に、実戦投入可能な完成版のソースコードを示します。このコードは競技プログラミング等の環境にそのままコピーして利用可能です。
-
-```cpp
-#include <iostream>
-#include <vector>
 #include <cstdint>
-#include <initializer_list>
+#include <stdexcept>
 
-using namespace std;
+#if !defined(__SIZEOF_INT128__)
+#error "This example requires unsigned __int128 support"
+#endif
 
-// 128ビット整数による高速な (a * b) mod m
-inline uint64_t mod_mul(uint64_t a, uint64_t b, uint64_t m) {
-    return (uint64_t)((unsigned __int128)a * b % m);
+using u64 = std::uint64_t;
+using u128 = unsigned __int128;
+
+u64 mod_mul(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    return static_cast<u64>(static_cast<u128>(a) * b % m);
 }
 
-// 繰り返し二乗法による (base^exp) mod m の計算
-uint64_t mod_pow(uint64_t base, uint64_t exp, uint64_t m) {
-    uint64_t res = 1;
+u64 mod_pow(u64 base, u64 exp, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
     base %= m;
     while (exp > 0) {
-        if (exp & 1) res = mod_mul(res, base, m);
+        if (exp & 1) result = mod_mul(result, base, m);
         base = mod_mul(base, base, m);
         exp >>= 1;
     }
-    return res;
+    return result;
+}
+```
+
+返り値は最小非負剰余です。指数0では $1\bmod m$ を返すので、法1なら0となります。ここでは $0^0$ もこの計算規約で扱います。負の底を符号なし型へそのまま渡す用途は対象外です。
+
+`unsigned __int128` はISO C++の標準型ではなく、対応ターゲット上のGCCなどの拡張です。上のコードは非対応の処理系をコンパイル時に検出します。すべてのMSVC環境でそのまま動くとは限りません。[GCCの型の説明](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)を参照してください。符号なし64ビット値2個の積には符号なし128ビットが必要で、符号付き128ビットでは範囲全体を表せません。
+
+## 3. Miller–Rabin法の条件と確率の意味
+
+奇素数を法とすると、1の平方根は1と−1だけです。Miller–Rabin法は、この性質とフェルマーの小定理を組み合わせます。奇数 $N\ge3$ について、次のように分解します。
+
+$$
+N-1=d\,2^s,\qquad d\text{ is odd},\quad s\ge1.
+$$
+
+底 $a$ が $1<a<N-1$ を満たすとき、通過条件はいずれかです。
+
+$$
+a^d\equiv1\pmod N
+\quad\text{or}\quad
+\exists r\ (0\le r<s):\ a^{d2^r}\equiv-1\pmod N.
+$$
+
+素数なら必ず通過し、失敗すれば合成数です。途中の二乗で、直前の値が1でも−1でもなかったのに1になれば、やはり合成数と分かります。数学上の−1の最小非負剰余は $N-1$ ですが、C++の符号付き式 `-1 % N` がその値を返すわけではありません。たとえば `-1 % 7` は−1です。[C++の除算・剰余の規則](https://eel.is/c++draft/expr.mul)と区別してください。
+
+固定した奇合成数 $N$ に対して、底を $2\le a\le N-2$ から独立かつ一様に選ぶ各回の通過確率は高々 $1/4$ です。したがって、$k$ 回すべてを誤って通過する確率は次のように抑えられます。
+
+$$
+\Pr[\text{all }k\text{ rounds pass}\mid N\text{ is composite}]\le4^{-k}.
+$$
+
+これは乱数の選択に対する誤り確率です。通過後にその整数が合成数である確率を、そのまま $4^{-k}$ と言い換えることはできません。任意の固定した底の集合にも、この独立一様乱数の説明は適用できません。N=3はこの底の区間が空になるため、実装では先に判定します。[Rabinの原論文](https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf)も、確率的な通過と素数の証明を区別しています。
+
+次は通常の底に対する1回の流れです。N=3は事前判定済みとし、実際に底を選べる奇数Nを扱います。
+
+```mermaid
+graph TD
+    Start["1回のテスト: 奇数Nが3以上、底は2以上N-2以下"] --> DS["N-1 = d*2^s、dは奇数"]
+    DS --> Power["x = a^d mod N"]
+    Power --> First{"xが1またはN-1か"}
+    First -- Yes --> Pass["この底を通過: 素数の証明ではない"]
+    First -- No --> Init["r=1に設定"]
+    Init --> More{"rがsより小さいか"}
+    More -- No --> Fail["合成数"]
+    More -- Yes --> Square["x = x*x mod N"]
+    Square --> Minus{"xがN-1か"}
+    Minus -- Yes --> Pass
+    Minus -- No --> One{"xが1か"}
+    One -- Yes --> Fail
+    One -- No --> Next["rを1増やす"]
+    Next --> More
+```
+
+## 4. 範囲を限定した決定論的判定
+
+限られた範囲の整数では、十分な底の集合を既知の検証結果に基づいて選ぶことで、乱数を使わずに判定できます。[SPRPの底の記録](https://miller-rabin.appspot.com/)に掲載された、今回使う条件は以下です。境界はいずれも「未満」です。
+
+| 対象範囲 | 試す底 |
+| --- | --- |
+| $N<4759123141$ | 2, 7, 61 |
+| $N<1122004669633$ | 2, 13, 23, 1662803 |
+| $N<2^{64}$ | 2, 325, 9375, 28178, 450775, 9780504, 1795265022 |
+
+最後の7個は「7つの素数」ではなく整数の底です。たとえば325は合成数です。記録はこの7底をJim Sinclairの2011年の結果として掲載しています。本記事で64ビット全域を再探索したわけではありません。
+
+別の選択として、最初の12素数 `2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37` でもこの64ビット範囲を判定できます。[Sorenson–Websterの結果](https://arxiv.org/abs/1509.00864)による最初の共通強擬素数は318665857834031151167461で、$2^{64}$ より大きいからです。以下は12底ではなく、表の3・4・7底を範囲別に使います。
+
+## 5. C++の完全な例
+
+入力型 `u64` の範囲は $0\le N\le2^{64}-1$ です。0と1は `false` ですが、合成数という意味ではないので、出力は `Not prime` としています。剰余乗算は必ずキャストしてから積を作ります。底はNで縮約し、0ならその底だけを飛ばして残りを調べます。底が0というだけで整数全体の素数・合成数は決められません。
+
+以下のブロックは補助関数も含む完全なプログラムです。前のブロックを追加で連結する必要はありません。対応するGCC環境なら `g++ -std=c++17 -O2 primality.cpp -o primality` のようにコンパイルできます。
+
+```cpp
+#include <cstdint>
+#include <stdexcept>
+
+#if !defined(__SIZEOF_INT128__)
+#error "This example requires unsigned __int128 support"
+#endif
+
+using u64 = std::uint64_t;
+using u128 = unsigned __int128;
+
+u64 mod_mul(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    return static_cast<u64>(static_cast<u128>(a) * b % m);
 }
 
-// ミラー・ラビン素数判定法による 64bit 整数の決定論的判定
-bool is_prime_miller_rabin(uint64_t n) {
-    // 境界値と小さな素数の事前判定
-    if (n < 2) return false;
-    if (n == 2 || n == 3 || n == 5 || n == 7) return true;
-    if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0 || n % 7 == 0) return false;
+u64 mod_pow(u64 base, u64 exp, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
+    base %= m;
+    while (exp > 0) {
+        if (exp & 1) result = mod_mul(result, base, m);
+        base = mod_mul(base, base, m);
+        exp >>= 1;
+    }
+    return result;
+}
 
-    // n-1 = d * 2^s の形に分解する
-    uint64_t d = n - 1;
-    int s = 0;
-    while ((d & 1) == 0) {
-        d >>= 1;
-        s++;
+#include <iostream>
+#include <initializer_list>
+#include <vector>
+
+bool is_prime_miller_rabin(u64 n) {
+    if (n < 2) return false;
+    for (u64 p : {2ULL, 3ULL, 5ULL, 7ULL}) {
+        if (n == p) return true;
+        if (n % p == 0) return false;
     }
 
-    // 判定に使用する底 (bases) のリスト
-    // N の大きさに応じてテストするベースの数を最小限に抑える最適化
-    vector<uint64_t> bases;
+    u64 d = n - 1;
+    unsigned s = 0;
+    while ((d & 1) == 0) {
+        d >>= 1;
+        ++s;
+    }
+
+    std::vector<u64> bases;
     if (n < 4759123141ULL) {
         bases = {2, 7, 61};
     } else if (n < 1122004669633ULL) {
         bases = {2, 13, 23, 1662803};
     } else {
-        // N < 2^64 のすべての数に対して決定論的となる 7 つの底
         bases = {2, 325, 9375, 28178, 450775, 9780504, 1795265022};
     }
 
-    // 各底についてテストを実行
-    for (uint64_t a : bases) {
+    for (u64 a : bases) {
         a %= n;
-        if (a == 0) continue; // a が n の倍数の場合は判定不能だが素数ではない
+        if (a == 0) continue; // No witness from this base; keep testing the others.
+        u64 x = mod_pow(a, d, n);
+        if (x == 1 || x == n - 1) continue;
 
-        uint64_t x = mod_pow(a, d, n);
-        if (x == 1 || x == n - 1) continue; // 第一条件クリア、次の底へ
-
-        bool composite = true;
-        // s-1 回のループ (x = x^2 mod n)
-        for (int r = 1; r < s; r++) {
+        bool passed = false;
+        for (unsigned r = 1; r < s; ++r) {
             x = mod_mul(x, x, n);
             if (x == n - 1) {
-                composite = false; // 第二条件クリア、素数の可能性あり
+                passed = true;
                 break;
             }
+            if (x == 1) return false;
         }
-        
-        // どの条件も満たさなければ確実に合成数
-        if (composite) return false;
+        if (!passed) return false;
     }
-
-    // すべてのベースで条件をクリアした場合は確実に素数
     return true;
 }
 
 int main() {
-    // テスト用のサンプル
-    vector<uint64_t> test_cases = {
-        1000000007,           // 有名な素数
-        998244353,            // 有名な素数
-        1000000000000000003,  // 10^18近辺の素数
-        1000000000000000007,  // 合成数 (10^18 + 7)
-        561,                  // カーマイケル数 (合成数)
-        18446744073709551557ULL // 2^64 近辺の最大の素数の一つ
+    const std::vector<u64> cases = {
+        0, 1, 2, 73, 561, 1000000007, 998244353,
+        1000000000000000003ULL, 1000000000000000007ULL,
+        18446744073709551557ULL, 18446744073709551615ULL
     };
-
-    for (uint64_t n : test_cases) {
-        cout << n << " is " 
-             << (is_prime_miller_rabin(n) ? "Prime" : "Composite") 
-             << endl;
+    for (u64 n : cases) {
+        std::cout << n << " is "
+                  << (is_prime_miller_rabin(n) ? "Prime" : "Not prime") << '\n';
     }
-
-    return 0;
 }
 ```
 
----
+出力は順に、0・1が `Not prime`、2・73が `Prime`、561が `Not prime`、1000000007・998244353・1000000000000000003が `Prime`、1000000000000000007が `Not prime`、18446744073709551557が `Prime`、18446744073709551615が `Not prime` です。最後の合成数は $2^{64}-1$ です。これは64ビット範囲の教材・一般整数判定用の例で、暗号用の素数生成器、定数時間実装、入力文字列の検証を含むライブラリではありません。
 
-# 6. アルゴリズムの計算量とパフォーマンス評価
+## 6. 計算量とモンゴメリ乗算
 
-実装したアルゴリズムの性能について考察します。
+剰余乗算を1操作として数えると、繰り返し二乗法と1回のMiller–Rabinは $\mathcal{O}(\log N)$、底をk個試す場合は $\mathcal{O}(k\log N)$ です。試し割りは除算回数が $\mathcal{O}(\sqrt N)$ です。入力長 $b=\lfloor\log_2 N\rfloor+1$ を使えば、Miller–Rabinの剰余乗算回数は $\mathcal{O}(kb)$ となります。任意精度整数でのビット計算量には、その乗算・剰余計算の費用も必要です。
 
-## [時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) (Time Complexity)
-* **試し割り法:** $O(\sqrt{N})$
-* **[フェルマー](https://kenji.blog/p/fermat/)テスト:** べき乗計算 $O(\log N) \times k$ （$k$ は試行回数）
-* **ミラー・ラビン法:** べき乗計算とループ $O(\log N) \times k$
+今回の固定範囲では底は高々7個です。ただし、1ビットにつき二乗だけでなく条件付き乗算があり、その後の二乗列もあるため、基本演算総数を $7\times64=448$ とすることはできません。速度を比較するなら、CPU・処理系・最適化オプション・入力群・測定方法を明記してください。
 
-64ビット環境（$N \le 2^{64}$）において、上記の決定論的ミラー・ラビン法は、最大でも $7$ つのベースしか検証しません。したがって、$k \le 7$ の定数とみなすことができ、全体の[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は厳密に $O(\log N)$ となります。
-最大ケース（$N \approx 10^{19}$）であっても、実行ステップ数は高々 $7 \times 64 = 448$ ステップの基本演算に収まり、実行時間は数マイクロ秒（$10^{-6}$ 秒）以下です。試し割り法の $O(\sqrt{N})$ （ループ回数 $\approx 4 \times 10^9$ 回）と比較すると、 **数百万倍の高速化** が達成されています。
+モンゴメリ乗算は、同じ法で演算を繰り返す場合に、表現を変えて法による除算を避ける方法です。基数を2のべきにする通常の構成では、法は奇数で基数と互いに素である必要があります。乗算・シフトに加え、加算、桁上がり処理、条件付き減算なども使い、変換や前計算の費用もあります。常に2〜3倍速くなるという保証はありません。手順と条件は[HAC第14章の14.32・14.36・14.94](https://cacr.uwaterloo.ca/hac/about/chap14.pdf)を参照してください。上のコード自体には実装していません。
 
-## さらなる最適化：モンゴメリ乗算 (Montgomery Multiplication)
+## 7. まとめ
 
-本記事の実装では、128ビット整数の拡張型 `__int128_t` を用いて除算（モジュロ演算 `%`）を行っています。現代のCPUであっても、整数除算（DIV命令）は加算や乗算に比べて数十サイクルを要するコストの高い命令です。
-
-より極限の最適化を追求するライブラリ作成者や競技プログラマは、 **モンゴメリ乗算（Montgomery Multiplication）** と呼ばれる手法を採用することがあります。モンゴメリ乗算は、数値を特殊な「モンゴメリ空間」に写像することで、高コストなモジュロ演算（除算）を「ビットシフトと乗算のみ」に置き換える驚異的なアルゴリズムです。
-これをミラー・ラビン判定の剰余乗算に組み込むことで、さらに実行速度を2倍から3倍程度引き上げることが可能です。これについては非常に奥深いテーマとなるため、別の記事で詳細に解説したいと思います。
-
----
-
-# 7. まとめ
-
-本記事では、素数判定の基礎から発展的な内容までを一挙に解説しました。
-ポイントを振り返りましょう。
-
-1. **試し割り法** は確実だが、計算量 $O(\sqrt{N})$ のため $N$ が $10^{12}$ を超えると実用性に欠ける。
-2. **[フェルマー](https://kenji.blog/p/fermat/)テスト** は $O(\log N)$ と非常に高速だが、カーマイケル数などの絶対疑似素数に騙されるという致命的な弱点がある。
-3. **ミラー・ラビン素数判定法** は、[フェルマー](https://kenji.blog/p/fermat/)テストの弱点を解消した実用的で最強のアルゴリズム。
-4. C++による実装では、`__int128_t` を活用することで 64ビット整数の乗算オーバーフローを安全に処理できる。
-5. 64ビット整数の範囲内（$N < 2^{64}$）であれば、$7$ 個または $12$ 個の特定の素数を底として選ぶことで、確率的ではなく **決定論的（100%正確）に素数判定が可能** 。
-
-高速な素数判定は、巨大な数を扱う計算において避けては通れない技術です。本記事で提供したC++のミラー・ラビンのソースコードは、そのまま実戦で活用できる堅牢なものになっています。ぜひ、ご自身のプロジェクトやアルゴリズム競技で活用してみてください。
+試し割りは約数を直接調べ、フェルマーテストは合同式で候補を除外します。Miller–Rabinはより強い条件を使いますが、一般の確率的判定と、範囲・底の組を限定した決定論的判定は区別が必要です。
 
 ```mermaid
 graph LR
-    TrialDivision["試し割り法 (O(√N))"] --> Fermat["フェルマーテスト (O(log N), 弱点あり)"]
-    Fermat --> MillerRabin["ミラー・ラビン法 (O(log N), 決定論的化可能)"]
-    MillerRabin --> Montgomery["+ モンゴメリ乗算 (定数倍高速化)"]
-    
-    style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px
+    Trial["試し割り: 約数を直接探す"] --> Fermat["フェルマー: 合同式で除外"]
+    Fermat --> MR["Miller-Rabin: より強い条件"]
+    MR --> Fixed["範囲を限定し底の集合を検証: 決定論的判定"]
+    MR --> Mont["モンゴメリ乗算: 剰余演算の実装を改善"]
 ```
 
-プログラミングと数学が交差するアルゴリズムの世界は非常に美しく、奥深いものです。今後の学習の一助となれば幸いです。
+正しさは数式だけでなく、入力範囲、整数型、オーバーフロー、法の条件、底の扱いにも依存します。64ビット用コードの保証を任意長の整数や暗号システム全体へ広げないことが、実装を使う際の重要な前提です。
 
----
-*Reference:*
-- *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
-- *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+### 参照
 
-
+- [HAC第4章：Fermat・Miller–Rabin・誤り確率の条件](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)（1996年の資料。以後の素数判定の発展や最新の鍵生成規格とは区別）
+- [Rabin (1980): Probabilistic Algorithm for Testing Primality](https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf)
+- [決定論的Miller–RabinのSPRP底の記録](https://miller-rabin.appspot.com/)
+- [Sorenson–Webster: Strong Pseudoprimes to Twelve Prime Bases](https://arxiv.org/abs/1509.00864)（2015年プレプリント、2017年誌上刊行）
+- [GCC：128ビット整数拡張](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)
+- [C++ working draft：除算と剰余](https://eel.is/c++draft/expr.mul)
+- [HAC第14章：モンゴメリ演算](https://cacr.uwaterloo.ca/hac/about/chap14.pdf)

@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/cppで実装する高速な素数判定アルゴリズム/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/cppで実装する高速な素数判定アルゴリズム/index.md",
+      "sourceHash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+      "translationHash": "0521f3d60016a0459e95afc24cb3ddc604df7d9e4e41c80760ea0aaf63356d81",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original JA and EN metadata/body in three bounded outputs each. Revised source with primary references and executable reproductions, then independently reread full revised JA/EN in three paired outputs plus the repaired loop diagram and final small code context. Compared introduction, seven sections, 3row base table,3C++blocks,2diagrams and7external references. Preserved trial/Fermat/MR progression,3/4/7branch optimization,12prime alternative and Montgomery discussion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished primality testing from factoring and prime generation; nonprime0/1/negative values from composite integers; integer bases from prime bases; randomized probable acceptance from a deterministic bounded-range result; conditional error over random bases from posterior compositeness probability; arithmetic-operation counts from bit costs; mathematical nonnegative residue from C++ signed remainder; unsigned128 and signed128 ranges. Removed strongest/instantaneous/production-ready and universal performance claims."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all4display formulas exactly and inline bounds. Independently verified Fermat counterexample pow(3,560,561)=375, seven-base325composite, strict3/4/7thresholds and12base-bound>2^64. Both versions preserve all41TeX expressions each. Correct error bound requires independent uniform bases; not arbitrary fixed bases or posterior probability. Signed trial bound uses n/i; N<2^64 not <=2^64."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Extracted and separately compiled all3C++blocks per version under WSL GCC13.3.0 C++17 with no warnings. Complete program11outputs matched. Each version passed101275harness cases under O2 and UBSan O1, including both algorithms against independent sieve0..50000,4extra signed trial cases,742large/boundary MR cases using independent Python pow and published first12prime-base criterion,262multiplication+262power cases and3zero-modulus exceptions. Inputs include thresholdneighbors,pseudoprimes,powers-of-two,semiprimes,fulluint64 products,modulus1/exponent0. Caught initial rewrite diagram missing pre-loop exhaustion for s=1; corrected both to14edges, second diagram4edges. No timing benchmark, exhaustive64bit base proof, constant-time or cryptographic audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all7unique external HTTPS targets and the already-reviewed modern-cryptography language-specific internal link. Removed repetitive unreviewed Fermat/programming-language/complexity dependencies without omitting their concepts. Preserved effective publication timestamp2026-09-11T14:00:00+09:00,slug,image,categories/tags and added actual lastmod2026-10-28. Image exists. Minified Hugo19bundles build passed; multilingual1185pages,HTTPS2163HTML/41XML. All82JA/ENTeX expressions survive generated HTML. Full-siteCI/publication pending."
+        }
+      },
+      "summary": "Full English primality-testing review against corrected Japanese, including actual compiler, arithmetic, boundary and conditional-probability verification.",
+      "languageSpecificFindings": "English retains the correct factor-recovery phrasing already absent from Japanese multiplication confusion, while correcting both languages common source errors. Replaced seven-prime claim with integer bases, signed -1%N assertion with mathematical/C++ distinction, zero-base comment and all-input speed guarantees. Clarified Not prime for0/1, independently uniform random choices, exact scope of fixed-base published bounds, unsigned input contract and no unsupported MSVC portability promise.",
+      "limitations": [
+        "AI, not human or native-speaker certification.",
+        "Eleven other translations unread and unreviewed; no confirmation dates for them.",
+        "Finite tests do not independently prove all2^64 classifications or published base-set search results.",
+        "No visual browser/KaTeX/Mermaid, cryptographic deployment or constant-time audit.",
+        "Full-siteCI and publication pending."
+      ],
+      "references": [
+        {
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html",
+          "scope": "Complete short extension documentation; target dependent signed/unsigned support."
+        },
+        {
+          "url": "https://eel.is/c++draft/expr.mul",
+          "scope": "Complete short multiplicative-operator section: zero modulus UB and truncation/remainder rules; reproduced signed remainder."
+        },
+        {
+          "url": "https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf",
+          "scope": "Parsed opening pages through Theorem1, including random error interpretation, not full proof or implementation sections; obsolete1980 status not reused."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap4.pdf",
+          "scope": "Scoped parsed Fermat/MR sections,4.20/4.23/4.25,Algorithm4.24,Note4.47 and historical notes, not whole chapter or current key-generation audit."
+        },
+        {
+          "url": "https://miller-rabin.appspot.com/",
+          "scope": "3/4/7base records,strictthresholds,attribution,date and base-reduction remarks. Did not reproduce underlying64bitdatabase; zero-base remark means passing that round only."
+        },
+        {
+          "url": "https://arxiv.org/html/1509.00864",
+          "scope": "Parsed introduction/Theorem1.1; first twelve-prime-base strong pseudoprime. Journal metadata2017 separately checked. Not computational-proof replication; generatedHTML2026date not used as historical date."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap14.pdf",
+          "scope": "Scoped parsed14.32/14.36/14.94 and related efficiency/precomputation conditions. OriginalMontgomery1985publisheraccess failed; scan supplied no readable output, so no full original-paper reading claim."
+        }
+      ],
+      "validation": "docs/translation-review/batch-018-ja-en-validation.json"
+    }
+  },
+  "stages": [
+    {
+      "checkedAt": "2026-10-28T19:53:35.892970+09:00",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "reviewedTranslations": 1,
+      "otherTranslationsUnreviewed": 11,
+      "validation": "docs/translation-review/batch-018-ja-en-validation.json",
+      "publicationPending": true
+    }
+  ]
+}

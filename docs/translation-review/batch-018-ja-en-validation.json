@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T19:52:19.467376+09:00",
+  "site": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-19-bundles-primality-ja-en",
+  "compiler": "WSL GCC13.3.0/C++17",
+  "tempDirectory": "C:\\Users\\kenjinote\\.codex\\tmp\\kenji-batch018-v7d1f7dy",
+  "scope": "Only explicitly selected languages; not an automated prose review or review-date recorder.",
+  "counts": {
+    "sieveRange": [
+      0,
+      50000
+    ],
+    "sieveCasesPerAlgorithm": 50001,
+    "extraSignedTrialCases": 4,
+    "largeAndBoundaryMillerRabinCases": 742,
+    "multiplicationCases": 262,
+    "powerCases": 262,
+    "zeroModulusCases": 3
+  },
+  "files": [
+    {
+      "language": "ja",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.md",
+      "hash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.en.md",
+      "hash": "0521f3d60016a0459e95afc24cb3ddc604df7d9e4e41c80760ea0aaf63356d81",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 41,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    }
+  ],
+  "allPassed": true,
+  "limitations": [
+    "Finite tests, not an independent exhaustive64bit base-set proof.",
+    "Large-number reference uses independent Python pow and published first12prime-base bound.",
+    "No timing, native-language, visual-browser, constant-time or cryptographic-library certification."
+  ]
+}
