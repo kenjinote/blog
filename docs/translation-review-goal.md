@@ -33,7 +33,7 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 優先記事の36翻訳について、2026-10-24のAI校閲として根拠と原文・翻訳のハッシュを記録。人による確認は0件。
 - 中心極限定理は全13版のPython例を実行し、数式とコード構造も照合。セキュリティ記事のCSP・HTML例は全13版で一致。Unicodeのバイト列は実際の変換で確認。
 - 根拠: `docs/translation-review/batch-001.json`、`batch-002.json`。各バッチの `*-validation.json` に補助検査を保存。
-- 全記事の編集キュー13,032行のうち、AI校閲済み223、未校閲12,809。未確認の翻訳を校閲済みにはしない。
+- 全記事の編集キュー13,032行のうち、AI校閲済み224、未校閲12,808。未確認の翻訳を校閲済みにはしない。
 - 大数の法則は原文と12翻訳すべての本文全体を校閲し、バッチ003に記録。全13版のコード実行・数式比較・ローカルビルドを通過。
 - 大数の法則の12翻訳を含む公開CI（run 40000689502）は成功。バッチ001〜003の48翻訳と日本語原文4記事の計52公開ページで、更新本文・canonical・言語・hreflang・サイドバーを確認済み（`publication-002-003.json`）。
 - コーシーは原文と12翻訳すべての本文全体を校閲し、バッチ004に記録。積分定理・積分公式・シュワルツの不等式の条件、歴史年表、各言語の数学用語と誤リンクを訂正。全13版の数式・年表・リンク・ローカルビルドを検査済み。公開CI run 40003002739 は成功し、バッチ001〜004の60翻訳と原文5記事の計65公開URLで修正本文・canonical・言語・hreflang・サイドバーを確認済み（`publication-004.json`）。
@@ -244,3 +244,5 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - バッチ018のフランス語版も全文校閲。Fluxから状態管理記事への無関係なリンクを除去。test/démonstration、premier/composé/non premier、bases entières/premières、signé/non signé、résidu/C++reste、条件付き誤り確率と事後確率を区別し、モンゴメリのbase de numération/ retenuesと説明した。全3コードを個別コンパイル、101275ケースを通常最適化/UBSanで実行。4表示数式・2図18辺・7参照先・41TeX表現のHTML保持、19記事束のビルド、多言語1185ページ、HTTPS2163HTML/41XMLを検査し、2026-10-28のAI確認日を追加。223校閲済み/12,809未校閲。残る5翻訳は未読・未記録。
 
 - バッチ017の全12翻訳はコミット95e257f73で公開。CI run40674107915のビルド・デプロイ成功を確認し、234公開URLを初回ですべて検査通過（publication-017.json）。HTTP200・修正本文・HTTPS canonical・言語・14hreflangと13サイドバーの言語別対応URL、暗号4記事と因数分解の5503TeX表現のHTML保持を確認。レビューentryは変更せずfinalAssemblyへ公開記録を追加した。これはサイト全記事の校閲完了ではない。
+
+- バッチ018のドイツ語版も全文校閲。Primzahltest/Faktorisierung/Primzahlbeweis、prim/zusammengesetzt/nicht prim、ganzzahlige Basen/Primzahlbasen、vorzeichenbehaftet/vorzeichenlos、条件付き誤り確率/事後確率を区別。モンゴメリのDarstellungsbasis/Übertragsbehandlungを説明し、既存の正しいteilerfremdなどの用語は保った。全3コードを個別コンパイル、101275ケースを通常最適化/UBSanで実行。4表示数式・2図18辺・7参照先・41TeX表現のHTML保持、19記事束のビルド、多言語1185ページ、HTTPS2163HTML/41XMLを検査し、2026-10-28のAI確認日を追加。224校閲済み/12,808未校閲。残るインドネシア語・ヒンディー語・ロシア語・アラビア語は未読・未記録。
