@@ -48,3 +48,6 @@ DHの生成元と部分群・指数範囲、DLPとCDHの違い、能動的中間
 
 
 - バッチ016のドイツ語も全文照合。Schlüsselvereinbarung/Schlüsseltransport/Schlüsseletablierung、gemeinsamer Wert/abgeleitete Schlüssel、Authentifizierung/Prüfung、Exponent/Schlüssel、Körper・Ordnung・Charakteristik・Punktverdopplung・chinesischer Restsatzを整理。正しいteilerfremdは維持し、共有値の代名詞とハンドシェイク記録の表現を明確化した。9表示数式・2図10辺・6参照先、86TeX表現のHTML保持、独立数学例を検査し、17記事束のHugo・多言語1103ページ・HTTPS HTML2025件/XML41件を通過。AI確認日2026-10-28を追加した。バッチ016は残る4翻訳と公開確認が未完了。
+
+
+- バッチ016のインドネシア語も全文照合。eksponensial sub-linierという混乱した計算量表現を、位数に対する平方根とビット長に対する指数的規模へ訂正。kesepakatan/transport kunci、nilai bersama/kunci turunan、autentikasi/validasi、eksponen/kunci、medan・orde・skalar・karakteristik・teorema sisa Tiongkokを整理した。9表示数式・2図10辺・6参照先、86TeX表現のHTML保持、独立数学例を検査し、17記事束のHugo・多言語1103ページ・HTTPS HTML2025件/XML41件を通過。AI確認日2026-10-28を追加した。バッチ016は残る3翻訳と公開確認が未完了。
