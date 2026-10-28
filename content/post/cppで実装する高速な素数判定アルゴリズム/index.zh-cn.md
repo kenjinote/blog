@@ -2,6 +2,7 @@
 title: '使用C++实现的高速素数判定算法（Miller-Rabin法等）'
 slug: "cpp-fast-prime-testing-miller-rabin"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-10-28"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -9,322 +10,265 @@ categories: ["cpp", "algorithms", "mathematics"]
 tags: ["C++", "Miller-Rabin", "Prime Numbers", "Algorithm"]
 ---
 
-# 前言：为什么需要高速的素数判定
+## 引言：区分素数判定与整数分解
 
-在信息科学、密码学理论以及算法竞赛的世界中，快速且准确地判断“一个数是否为素数”是一个非常重要且基础的课题。例如，支撑现代互联网社会安全的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密等公钥加密体制，其安全性的基础就在于巨大素数的生成及其相乘的困难性（大整数分解的困难性）。因此，能够瞬间辨别出巨大数是否为素数的技术，毫不夸张地说，正是支撑数字社会根基的技术。
+素数判定回答的是“这个整数是不是素数”。寻找合数的实际因数则是另一项任务。在[RSA等公钥密码](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)中，生成大素数很重要，但困难的并不是乘法本身。仅仅找到素数，也不能保证整个密码方案的安全性。
 
-此外，在算法竞赛（如AtCoder、Codeforces等）中，素数判定也是一个高频主题。面对限制条件为 $N \le 10^{18}$ 这样巨大的输入，如果要求在1秒内进行数万次素数判定，传统的朴素算法绝对无法在规定时间内完成（会导致超时：Time Limit Exceeded, TLE）。
+本文比较试除法、费马测试和米勒–拉宾测试，并给出针对非负64位整数的C++实现。实现范围是 $0\le N<2^{64}$，不包括RSA密钥生成所使用的数千位整数。运行时间取决于实现和输入，因此不作统一的秒数或加速倍数保证。
 
-本文将从朴素的素数判定算法开始，介绍概率性素数判定法“费马测试”，以及克服了其弱点、在实际应用中堪称最强级别的高速算法——“米勒-拉宾（Miller-Rabin）素数判定法”。我们将从数学背景到高度优化的C++实现，进行彻底的讲解。特别是针对64位整数（$N < 2^{64}$），我们不仅停留在概率性判定上，还将详细说明“能够100%确定是否为素数（确定性判定）”的方法，并提供可直接应用于实战的C++源代码。
+## 1. 素数定义与试除法
 
----
+素数是大于等于2、正因数只有1和自身的整数。合数是大于等于2且不是素数的整数。0、1和负整数既不是素数，也不是合数。
 
-# 1. 素数判定的基础与试除法 (Trial Division)
-
-素数（Prime number）是指在大于1的自然数中，除了1和它本身以外不再有其他正因数的数。如果严格按照素数的定义，要判断一个整数 $N$ 是否为素数，只需用从 $2$ 到 $N-1$ 的所有整数去尝试除 $N$，如果都无法整除，则是素数；如果哪怕有一次能整除，则是合数（非素数）。
-
-然而，这种方法的时间复杂度为 $O(N)$。当 $N$ 是像 $10^{18}$ 这样的巨大数字时，即使是现代计算机也会消耗极其漫长的时间来进行计算。
-
-## 试除法的优化：探索至 $\sqrt{N}$
-
-当合数 $N$ 可以表示为 $a \times b = N$ （$a \le b$）时，必然有 $a \le \sqrt{N}$。因此，素数判定的循环不需要执行到 $N-1$，只需检查到 $\sqrt{N}$ 就足够了。
+若合数 $N=ab$ 的因数满足 $2\le a\le b$，则有 $a\le\sqrt N$。因此只需寻找不超过平方根的因数。先检查2，再只试奇数。
 
 ```cpp
-#include <iostream>
+#include <cstdint>
 
-// 使用试除法进行素数判定 (O(sqrt(N)))
-bool is_prime_trial_division(long long n) {
-    if (n <= 1) return false;
-    if (n == 2 || n == 3) return true;
+bool is_prime_trial_division(std::int64_t n) {
+    if (n < 2) return false;
+    if (n == 2) return true;
     if (n % 2 == 0) return false;
-    
-    // 只检查3以上的奇数
-    for (long long i = 3; i * i <= n; i += 2) {
+    for (std::int64_t i = 3; i <= n / i; i += 2) {
         if (n % i == 0) return false;
     }
     return true;
 }
 ```
 
-该算法的时间复杂度为 $O(\sqrt{N})$。如果 $N \le 10^{12}$ 左右，可以瞬间计算完成；但如果 $N \approx 10^{18}$，循环次数约为 $10^9$ 次，即使使用C++编译器，也需要数百毫秒到几秒的时间，因此不适合进行多次判定。
+循环条件 `i*i <= n` 中的有符号乘法可能溢出。对于正数，等价条件 `i <= n/i` 避免了这个乘积。该函数接受 `std::int64_t` 范围内的整数，负输入也返回 `false`。
 
----
+最坏情况下的除法次数为 $\mathcal{O}(\sqrt N)$。只试奇数时，候选数约为 $\sqrt N/2$ 个，但对大输入反复判定仍可能很耗时。实用与否没有统一的十进制位数分界。
 
-# 2. 费马测试：概率性素数判定的开端
+## 2. 费马测试与模幂运算
 
-为了突破试除法的局限性，人们利用数论定理提出了“概率性算法（Probabilistic Algorithm）”。其中最具代表性的就是利用[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的“费马测试（[Fermat](https://kenji.blog/zh-cn/p/fermat/) Primality Test）”。
+对于素数 $p$ 和满足 $\gcd(a,p)=1$ 的整数 $a$，费马小定理给出：
 
-## [费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/zh-cn/p/fermats-little-theorem/))
+$$
+a^{p-1}\equiv1\pmod p.
+$$
 
-[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)（[Pierre de Fermat](https://kenji.blog/zh-cn/p/fermat/)）发现的这一定理主张如下：
+因此，对于 $N>2$，选择 $1<a<N-1$，若同余式不成立，就能确定 $N$ 是合数。但通过测试并不能证明素性。卡迈克尔数 $561=3\cdot11\cdot17$ 会通过所有与561互质的底数；底数3则不与561互质，且 $3^{560}\bmod561=375$，因此会失败。说它“无论选什么底数都能蒙混过关”并不准确。
 
-> 对于任意素数 $p$ 和任意与 $p$ 互质（不是 $p$ 的倍数）的整数 $a$，以下同余式成立：
-> $$ a^{p-1} \equiv 1 \pmod p $$
-
-取该定理的逆否命题，可以说：“对于某个整数 $N$ 及与 $N$ 互质的整数 $a$，如果 $a^{N-1} \not\equiv 1 \pmod N$ 成立，那么 $N$ 必定是合数。”费马测试正是利用这一性质，针对待判定的数 $N$ 选择一个随机的底数（base）$a$，计算 $a^{N-1} \pmod N$ 并确认其结果是否为 $1$。
-
-## 快速幂取模（反复平方法）
-
-为了进行费马测试，必须能够高速计算 $a^{N-1} \pmod N$ 这种巨大的幂运算。为此，我们使用“反复平方法（Modular Exponentiation / Binary Exponentiation）”。其时间复杂度为 $O(\log N)$，计算速度非常快。
+无需先构造完整的整数幂。二进制快速幂（平方乘法）在每次乘法后取模。以下辅助函数可以独立编译。底数、指数和乘法操作数是非负64位整数，模数 `m` 是正的64位整数；模数为0时抛出异常。
 
 ```cpp
-// 使用反复平方法计算 a^b mod m
-long long mod_pow(long long a, long long b, long long m) {
-    long long res = 1;
-    a %= m;
-    while (b > 0) {
-        if (b & 1) res = (__int128_t)res * a % m;
-        a = (__int128_t)a * a % m;
-        b >>= 1;
-    }
-    return res;
-}
-```
-※ 在此代码中，为了防止溢出，我们使用了GCC/Clang的扩展类型 `__int128_t`（128位整数）来保存中间的乘积。
-
-## 伪素数与卡迈克尔数 (Carmichael Numbers)
-
-费马测试虽然非常强大，但存在一个致命的弱点。那就是：存在一些数 $N$，尽管它是合数，但对于所有的 $a$ （与 $N$ 互质的 $a$），$a^{N-1} \equiv 1 \pmod N$ 都能成立。
-
-这种数被称为“绝对伪素数”或“卡迈克尔数”。最小的卡迈克尔数是 $561 = 3 \times 11 \times 17$。
-由于卡迈克尔数的存在，仅靠费马测试无法进行“100%概率”的确定性判定。无论你尝试多少个不同的 $a$，像 $561$ 这样的数始终会伪装成素数骗过测试。
-
----
-
-# 3. 米勒-拉宾素数判定法 (Miller-Rabin Primality Test)
-
-出色地克服了费马测试弱点（卡迈克尔数的存在）的方法，是由加里·米勒（Gary L. Miller）和迈克尔·拉宾（Michael O. Rabin）提出的“米勒-拉宾素数判定法”。
-目前，作为实用的高速素数判定算法，它在各种编程语言的内部库以及密码系统的密钥生成中得到了最广泛的应用。
-
-## 数学原理
-
-米勒-拉宾算法除了利用[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)外，还利用了这样一个性质：“在以素数为模的剩余系（$\mathbb{Z}/p\mathbb{Z}$）中，方程 $x^2 \equiv 1 \pmod p$ 的解仅限于 $x \equiv 1$ 或 $x \equiv -1$”（当模为合数时，可能存在除此以外的非平凡平方根）。
-
-待判定的奇数 $N$ 减去 $1$ 得到的 $N-1$ 必定是偶数。因此，我们可以将 $N-1$ 尽可能多地除以 $2$，表示为以下形式：
-$$ N-1 = d \cdot 2^s $$
-（其中，$d$ 为奇数，$s \ge 1$）
-
-对于任意底数 $a$ （$1 < a < N-1$），我们会根据[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)验证 $a^{N-1} \equiv 1 \pmod N$ 是否成立，但这个计算是分阶段进行的。
-具体来说，就是依次连续进行平方计算：$a^d, a^{d \cdot 2}, a^{d \cdot 4}, \ldots, a^{d \cdot 2^s}$。
-
-米勒-拉宾测试判定 $N$ 为“素数（或者以极高的概率为素数）”的条件是，以下 **任意一项** 成立：
-
-1. $a^d \equiv 1 \pmod N$
-2. 存在某个 $r$ （$0 \le r < s$），使得 $a^{d \cdot 2^r} \equiv -1 \pmod N$ 成立。
-   ※ 在C++的取模运算中，$-1 \pmod N$ 相当于 $N-1$。
-
-如果 $N$ 是素数，那么对于任意的 $a$，该条件必定满足。反之，如果 $N$ 是合数，在随机选择 $a$ 时，满足该条件（即被骗过）的概率在数学上被证明为不超过 $\frac{1}{4}$。
-只要进行 $k$ 次独立的测试，误判的概率就会小于 $\left(\frac{1}{4}\right)^k$，在实际应用中可以视作零。不存在像卡迈克尔数那样“绝对能蒙混过关”的数。
-
-## 米勒-拉宾法的算法流程（Mermaid流程图）
-
-下图展示了米勒-拉宾素数判定法中一次测试（针对单一底数 $a$ 的测试）的逻辑流程。
-
-```mermaid
-graph TD
-    Start["测试开始 (输入: N, a)"] --> CalcDS["计算满足 N-1 = d * 2^s 的 d (奇数) 和 s"]
-    CalcDS --> CalcX["计算 x = a^d mod N"]
-    CalcX --> CheckX1{"x == 1 或 x == N-1 ?"}
-    CheckX1 -- Yes --> ReturnTrue["可能是素数 (Probably Prime)"]
-    CheckX1 -- No --> LoopStart["从 r = 1 到 s-1 开始循环"]
-    
-    LoopStart --> LoopCondition{"r < s ?"}
-    LoopCondition -- No --> ReturnFalse["确认为合数 (Composite)"]
-    LoopCondition -- Yes --> SquareX["计算 x = (x * x) mod N"]
-    
-    SquareX --> CheckXMinus1{"x == N - 1 ?"}
-    CheckXMinus1 -- Yes --> ReturnTrue
-    CheckXMinus1 -- No --> CheckXOne{"x == 1 ?"}
-    
-    CheckXOne -- Yes --> ReturnFalse
-    CheckXOne -- No --> LoopNext["r 增加 1 并继续"]
-    LoopNext --> LoopCondition
-```
-
----
-
-# 4. 针对64位整数的确定性判定
-
-米勒-拉宾素数判定法本质上是“概率性”算法，但如果 $N$ 的上限是固定的，通过测试特定的一组 $a$ （底数），就能够“100%确切地”进行素数判定。
-这被称为 **确定性米勒-拉宾测试（Deterministic Miller-Rabin Test）** 。
-
-根据Jim Sinclair等人的研究，对于 $N < 2^{64}$ （约 $1.8 \times 10^{19}$）的所有整数，只要选取以下 $7$ 个素数作为底数 $a$ 进行测试，就足以实现完全确定性的判定。
-
-**需要测试的底数 $a$ 列表:**
-`{2, 325, 9375, 28178, 450775, 9780504, 1795265022}`
-
-或者，使用另一组广为人知的 $12$ 个素数，同样能够在 $N < 2^{64}$ 的范围内进行完美判定：
-`{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37}`
-
-在本次实现中，为了兼顾算法的简洁性与高可靠性，我们采用基于后者 $12$ 个素数（或更为优化的 $7$ 个基底）的方法。在C++的实现中，通过条件分支划分数值范围，进行优化以将测试次数降至最低。
-
----
-
-# 5. 使用C++的高级实现 (Highly Optimized C++ Implementation)
-
-接下来，我们将结合迄今为止的数学理论与算法设计，展示现代C++中最强级别的米勒-拉宾素数判定函数的实现代码。
-
-## 实现要点
-1. **避免64位整数乘法的溢出:**
-   当 $N \approx 10^{18}$ 时，取模乘法中的 $x \times x$ 最大可达 $10^{36}$，会轻松超过普通64位整数（`uint64_t` 或 `long long`）的最大值 $1.8 \times 10^{19}$ 导致溢出。
-   为了解决这个问题，我们使用GCC和Clang的扩展类型 `__int128_t`（或 `unsigned __int128`），在进行128位精度的计算后再取模。这样一来，无需复杂的算法也能高速完成取模乘法。
-
-2. **确定性基底的选择:**
-   当 $N$ 的值较小时，优化代码使得只需测试少量的底数（base）。
-
-## 完整的C++源代码
-
-下面给出可用于实战的最终版源代码。您可以直接将此代码复制到算法竞赛等环境中使用。
-
-```cpp
-#include <iostream>
-#include <vector>
 #include <cstdint>
-#include <initializer_list>
+#include <stdexcept>
 
-using namespace std;
+#if !defined(__SIZEOF_INT128__)
+#error "This example requires unsigned __int128 support"
+#endif
 
-// 使用 128 位整数进行高速的 (a * b) mod m 计算
-inline uint64_t mod_mul(uint64_t a, uint64_t b, uint64_t m) {
-    return (uint64_t)((unsigned __int128)a * b % m);
+using u64 = std::uint64_t;
+using u128 = unsigned __int128;
+
+u64 mod_mul(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    return static_cast<u64>(static_cast<u128>(a) * b % m);
 }
 
-// 使用反复平方法计算 (base^exp) mod m
-uint64_t mod_pow(uint64_t base, uint64_t exp, uint64_t m) {
-    uint64_t res = 1;
+u64 mod_pow(u64 base, u64 exp, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
     base %= m;
     while (exp > 0) {
-        if (exp & 1) res = mod_mul(res, base, m);
+        if (exp & 1) result = mod_mul(result, base, m);
         base = mod_mul(base, base, m);
         exp >>= 1;
     }
-    return res;
+    return result;
+}
+```
+
+返回值是最小非负剩余。指数为0时返回 $1\bmod m$，因此模数为1时结果是0。这里也按这一计算约定处理 $0^0$。接口不支持把负底数直接传给无符号参数的用法。
+
+`unsigned __int128` 不是ISO C++标准类型，而是GCC等在适当目标平台上提供的扩展。代码会在编译时检测不支持该扩展的环境，不能假定所有MSVC环境都能原样编译。参见[GCC文档](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)。两个全范围无符号64位整数的乘积需要无符号128位存储；有符号128位无法容纳所有这样的乘积。
+
+## 3. 米勒–拉宾条件与概率的含义
+
+以奇素数为模时，1的平方根只有1和−1。米勒–拉宾测试结合这一性质与费马小定理。对于奇数 $N\ge3$，写成：
+
+$$
+N-1=d\,2^s,\qquad d\text{ is odd},\quad s\ge1.
+$$
+
+其中d是奇数。满足 $1<a<N-1$ 的底数a，通过测试的条件是以下任一项成立：
+
+$$
+a^d\equiv1\pmod N
+\quad\text{or}\quad
+\exists r\ (0\le r<s):\ a^{d2^r}\equiv-1\pmod N.
+$$
+
+素数必定通过，失败就能证明是合数。若连续平方得到1，而前一个值既不是1也不是−1，同样能证明是合数。数学中−1的最小非负剩余是 $N-1$，但C++有符号表达式 `-1 % N` 不会返回这个值。例如 `-1 % 7` 的结果是−1。需要区分数学中的剩余与[C++除法、余数规则](https://eel.is/c++draft/expr.mul)。
+
+对于固定的奇合数 $N$，从 $2\le a\le N-2$ 中独立、均匀地选择底数时，每轮通过的概率至多为 $1/4$。错误地通过全部 $k$ 轮的概率因此满足：
+
+$$
+\Pr[\text{all }k\text{ rounds pass}\mid N\text{ is composite}]\le4^{-k}.
+$$
+
+这是针对随机选择底数的错误概率，不能直接改述为“通过测试后，这个整数是合数的概率为 $4^{-k}$”。独立均匀随机底数的论证也不适用于任意固定底数集合。N=3时底数区间为空，所以实现先处理这个数。[Rabin原论文](https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf)也明确区分了概率性通过与素性证明。
+
+下图表示普通底数的一轮测试。假定已预先处理N=3，奇数输入确实存在满足区间要求的底数。
+
+```mermaid
+graph TD
+    Start["一轮测试: 奇数N至少为3; 底数在2至N-2之间"] --> DS["N-1 = d*2^s; d为奇数"]
+    DS --> Power["x = a^d mod N"]
+    Power --> First{"x是否为1或N-1?"}
+    First -- Yes --> Pass["通过当前底数: 不是素性证明"]
+    First -- No --> Init["令r=1"]
+    Init --> More{"r是否小于s?"}
+    More -- No --> Fail["合数"]
+    More -- Yes --> Square["x = x*x mod N"]
+    Square --> Minus{"x是否为N-1?"}
+    Minus -- Yes --> Pass
+    Minus -- No --> One{"x是否为1?"}
+    One -- Yes --> Fail
+    One -- No --> Next["r增加1"]
+    Next --> More
+```
+
+## 4. 限定范围内的确定性判定
+
+对于有限范围内的整数，可以依据已知验证结果选取充分的底数集合，不使用随机数进行判定。[SPRP底数记录](https://miller-rabin.appspot.com/)列出了这里采用的条件。所有上界都是严格小于。
+
+| 输入范围 | 需要测试的底数 |
+| --- | --- |
+| $N<4759123141$ | 2, 7, 61 |
+| $N<1122004669633$ | 2, 13, 23, 1662803 |
+| $N<2^{64}$ | 2, 325, 9375, 28178, 450775, 9780504, 1795265022 |
+
+最后一组是7个整数底数，不是7个素数；例如325就是合数。记录将这组7底数结果归于Jim Sinclair在2011年的工作。本文并未独立重复整个64位范围的搜索。
+
+另一种选择是前12个素数 `2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37`，它们也足以覆盖该64位范围。[Sorenson–Webster的结果](https://arxiv.org/abs/1509.00864)给出同时通过这12个底数的最小强伪素数为318665857834031151167461，大于 $2^{64}$。下面的实现采用表中按范围选择的3、4、7个底数，而不是12底数方案。
+
+## 5. 完整的C++示例
+
+输入类型 `u64` 覆盖 $0\le N\le2^{64}-1$。0和1返回 `false`，但它们不是合数，所以输出使用 `Not prime`。模乘必须在形成乘积之前进行类型转换。底数先对N取模；若结果为0，只跳过当前底数，继续检查其他底数。底数为0本身不能决定整个整数是素数还是合数。
+
+以下代码块包括辅助函数，是完整程序，无需再拼接前面的代码块。在支持该扩展的GCC目标平台上，可以用 `g++ -std=c++17 -O2 primality.cpp -o primality` 这样的命令编译。
+
+```cpp
+#include <cstdint>
+#include <stdexcept>
+
+#if !defined(__SIZEOF_INT128__)
+#error "This example requires unsigned __int128 support"
+#endif
+
+using u64 = std::uint64_t;
+using u128 = unsigned __int128;
+
+u64 mod_mul(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    return static_cast<u64>(static_cast<u128>(a) * b % m);
 }
 
-// 基于米勒-拉宾素数判定法的 64 位整数确定性判定
-bool is_prime_miller_rabin(uint64_t n) {
-    // 边界值与小素数的提前判定
-    if (n < 2) return false;
-    if (n == 2 || n == 3 || n == 5 || n == 7) return true;
-    if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0 || n % 7 == 0) return false;
+u64 mod_pow(u64 base, u64 exp, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
+    base %= m;
+    while (exp > 0) {
+        if (exp & 1) result = mod_mul(result, base, m);
+        base = mod_mul(base, base, m);
+        exp >>= 1;
+    }
+    return result;
+}
 
-    // 分解为 n-1 = d * 2^s 的形式
-    uint64_t d = n - 1;
-    int s = 0;
-    while ((d & 1) == 0) {
-        d >>= 1;
-        s++;
+#include <iostream>
+#include <initializer_list>
+#include <vector>
+
+bool is_prime_miller_rabin(u64 n) {
+    if (n < 2) return false;
+    for (u64 p : {2ULL, 3ULL, 5ULL, 7ULL}) {
+        if (n == p) return true;
+        if (n % p == 0) return false;
     }
 
-    // 判定所用的底数 (bases) 列表
-    // 根据 N 的大小，将需要测试的基底数量优化到最低限度
-    vector<uint64_t> bases;
+    u64 d = n - 1;
+    unsigned s = 0;
+    while ((d & 1) == 0) {
+        d >>= 1;
+        ++s;
+    }
+
+    std::vector<u64> bases;
     if (n < 4759123141ULL) {
         bases = {2, 7, 61};
     } else if (n < 1122004669633ULL) {
         bases = {2, 13, 23, 1662803};
     } else {
-        // 对于所有 N < 2^64 的数，都能提供确定性判定的 7 个底数
         bases = {2, 325, 9375, 28178, 450775, 9780504, 1795265022};
     }
 
-    // 对每个底数执行测试
-    for (uint64_t a : bases) {
+    for (u64 a : bases) {
         a %= n;
-        if (a == 0) continue; // 当 a 为 n 的倍数时无法判定，但能说明 n 不是素数
+        if (a == 0) continue; // No witness from this base; keep testing the others.
+        u64 x = mod_pow(a, d, n);
+        if (x == 1 || x == n - 1) continue;
 
-        uint64_t x = mod_pow(a, d, n);
-        if (x == 1 || x == n - 1) continue; // 满足第一条件，进入下一个底数
-
-        bool composite = true;
-        // 循环 s-1 次 (x = x^2 mod n)
-        for (int r = 1; r < s; r++) {
+        bool passed = false;
+        for (unsigned r = 1; r < s; ++r) {
             x = mod_mul(x, x, n);
             if (x == n - 1) {
-                composite = false; // 满足第二条件，可能是素数
+                passed = true;
                 break;
             }
+            if (x == 1) return false;
         }
-        
-        // 如果所有条件都不满足，则确认为合数
-        if (composite) return false;
+        if (!passed) return false;
     }
-
-    // 所有基底都满足条件，则确认为素数
     return true;
 }
 
 int main() {
-    // 测试用例
-    vector<uint64_t> test_cases = {
-        1000000007,           // 著名的素数
-        998244353,            // 著名的素数
-        1000000000000000003,  // 10^18 附近的素数
-        1000000000000000007,  // 合数 (10^18 + 7)
-        561,                  // 卡迈克尔数 (合数)
-        18446744073709551557ULL // 2^64 附近最大的素数之一
+    const std::vector<u64> cases = {
+        0, 1, 2, 73, 561, 1000000007, 998244353,
+        1000000000000000003ULL, 1000000000000000007ULL,
+        18446744073709551557ULL, 18446744073709551615ULL
     };
-
-    for (uint64_t n : test_cases) {
-        cout << n << " is " 
-             << (is_prime_miller_rabin(n) ? "Prime" : "Composite") 
-             << endl;
+    for (u64 n : cases) {
+        std::cout << n << " is "
+                  << (is_prime_miller_rabin(n) ? "Prime" : "Not prime") << '\n';
     }
-
-    return 0;
 }
 ```
 
----
+输出依次为：0和1是 `Not prime`；2和73是 `Prime`；561是 `Not prime`；1000000007、998244353、1000000000000000003是 `Prime`；1000000000000000007是 `Not prime`；18446744073709551557是 `Prime`；18446744073709551615是 `Not prime`。最后一个合数是 $2^{64}-1$。这是限定范围的教学与一般整数判定示例，不是密码学素数生成器、常数时间实现，也不是包含输入字符串校验的库。
 
-# 6. 算法的时间复杂度与性能评估
+## 6. 复杂度与蒙哥马利乘法
 
-接下来探讨所实现算法的性能。
+把一次模乘计为一个操作时，二进制快速幂和一轮米勒–拉宾测试的操作次数为 $\mathcal{O}(\log N)$，测试k个底数为 $\mathcal{O}(k\log N)$。试除法需要 $\mathcal{O}(\sqrt N)$ 次除法。以输入长度 $b=\lfloor\log_2 N\rfloor+1$ 表示，米勒–拉宾的模乘次数为 $\mathcal{O}(kb)$。对于任意精度整数，位复杂度还要计入乘法与模约减的成本。
 
-## 时间复杂度 (Time Complexity)
-* **试除法:** $O(\sqrt{N})$
-* **费马测试:** 幂运算 $O(\log N) \times k$ （$k$ 为尝试次数）
-* **米勒-拉宾法:** 幂运算及内部循环 $O(\log N) \times k$
+本实现的固定范围至多需要7个底数，但每一位除了平方，还可能需要条件乘法，随后还有平方序列。因此不能把全部基本操作数限定为 $7\times64=448$。比较运行时间时，应说明CPU、编译器、优化选项、输入集合和测量方法。
 
-在64位环境（$N \le 2^{64}$）下，上述确定性米勒-拉宾法最多只验证 $7$ 个基底。因此，可将 $k \le 7$ 视为常数，整体的时间复杂度严格来说就是 $O(\log N)$。
-即使在最坏情况下（$N \approx 10^{19}$），执行步骤也最多只有 $7 \times 64 = 448$ 步基本运算，运行时间在数微秒（$10^{-6}$ 秒）以内。与试除法的 $O(\sqrt{N})$（循环次数 $\approx 4 \times 10^9$ 次）相比，实现了 **数百万倍的性能提升** 。
+蒙哥马利乘法在相同模数下反复运算时，通过改变表示来避免除以模数。通常以2的幂为基数，此时模数必须是奇数，并与基数互质。除乘法、移位外，还需要加法、进位处理和条件减法等操作；表示转换与预计算也有成本。不能保证总能加速2至3倍。步骤与条件可参见[HAC第14章的算法14.32、14.36、14.94](https://cacr.uwaterloo.ca/hac/about/chap14.pdf)。上面的代码没有实现蒙哥马利乘法。
 
-## 进一步优化：蒙哥马利乘法 (Montgomery Multiplication)
+## 7. 总结
 
-在本文的实现中，我们使用了128位整数扩展类型 `__int128_t` 来进行除法（取模运算 `%`）。即使在现代CPU上，整数除法（DIV指令）也是比加法和乘法花费更多周期（数十个周期）的高成本指令。
-
-追求极限优化的代码库作者或竞赛选手，有时会采用被称为 **蒙哥马利乘法（Montgomery Multiplication）** 的技术。蒙哥马利乘法通过将数字映射到特殊的“蒙哥马利空间”，是一种能将高成本的取模运算（除法）替换为“仅需位移和乘法”的惊人算法。
-将此技术引入到米勒-拉宾判定的取模乘法中，可将执行速度进一步提升2到3倍左右。由于这是一个极其深奥的主题，我希望能在另一篇文章中对其进行详细讲解。
-
----
-
-# 7. 总结
-
-本文从素数判定的基础一直讲解到了进阶内容。
-让我们回顾一下要点：
-
-1. **试除法** 确切可靠，但由于时间复杂度为 $O(\sqrt{N})$，当 $N$ 超过 $10^{12}$ 时缺乏实用性。
-2. **费马测试** 在 $O(\log N)$ 内极其快速，但有着被卡迈克尔数等绝对伪素数欺骗的致命弱点。
-3. **米勒-拉宾素数判定法** 解决了费马测试的弱点，是最具实用性且最强的算法。
-4. 在使用C++实现时，通过运用 `__int128_t` 可以安全地处理64位整数的乘法溢出。
-5. 在64位整数范围（$N < 2^{64}$）内，通过选取 $7$ 个或 $12$ 个特定的素数作为底数，可以进行 **确定性（100%准确）而非概率性的素数判定** 。
-
-在涉及大数字计算的领域，高速的素数判定是一项不可或缺的技术。本文提供的C++米勒-拉宾源代码健壮可靠，可直接应用于实战。请务必在您的项目或算法竞赛中尝试使用它。
+试除法直接寻找因数，费马测试利用同余式排除候选，米勒–拉宾采用更强的条件。一般的随机判定与限定输入范围、使用已验证底数集合的确定性判定，必须加以区分。
 
 ```mermaid
 graph LR
-    TrialDivision["试除法 (O(√N))"] --> Fermat["费马测试 (O(log N), 存在弱点)"]
-    Fermat --> MillerRabin["米勒-拉宾法 (O(log N), 可转化为确定性)"]
-    MillerRabin --> Montgomery["+ 蒙哥马利乘法 (常数倍加速)"]
-    
-    style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px
+    Trial["试除法: 直接寻找因数"] --> Fermat["费马: 通过同余式排除"]
+    Fermat --> MR["米勒-拉宾: 更强的条件"]
+    MR --> Fixed["限定范围并验证底数集合: 确定性判定"]
+    MR --> Mont["蒙哥马利乘法: 改进模运算实现"]
 ```
 
-编程与数学交织的算法世界是如此美丽且深奥。希望能为您的学习带来帮助。
+正确性不仅依赖数学，还依赖输入范围、整数类型、溢出、模数条件和底数处理。不能把64位代码的保证扩展到任意长度整数或整个密码系统。
 
----
-*参考资料 (Reference):*
-- *Pomerance, C., Selfridge, J. L., & Wagstaff, S. S. (1980). The pseudoprimes to 25.10^9. Mathematics of Computation.*
-- *Sinclair, J. (2011). Deterministic Miller-Rabin primality testing.*
+### 参考资料
 
-
+- [HAC第4章：费马、米勒–拉宾及错误概率条件](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)（1996年资料；应与后来的素数判定成果和现行密钥生成标准区分）
+- [Rabin (1980): Probabilistic Algorithm for Testing Primality](https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf)
+- [确定性米勒–拉宾的SPRP底数记录](https://miller-rabin.appspot.com/)
+- [Sorenson–Webster: Strong Pseudoprimes to Twelve Prime Bases](https://arxiv.org/abs/1509.00864)（2015年预印本，2017年期刊发表）
+- [GCC：128位整数扩展](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)
+- [C++ working draft：除法与余数](https://eel.is/c++draft/expr.mul)
+- [HAC第14章：蒙哥马利运算](https://cacr.uwaterloo.ca/hac/about/chap14.pdf)

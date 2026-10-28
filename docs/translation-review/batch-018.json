@@ -70,6 +70,76 @@
         }
       ],
       "validation": "docs/translation-review/batch-018-ja-en-validation.json"
+    },
+    "post/cppで実装する高速な素数判定アルゴリズム/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/cppで実装する高速な素数判定アルゴリズム/index.md",
+      "sourceHash": "759ca9aa4d862e70c161d5cbf084518136b3b3bec449649ab67187754d08c4ce",
+      "translationHash": "ac60345e16a9db78b7553e38251c26d1c24e38a1f770a2573a34277f7fb7853b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Simplified Chinese metadata/body in three bounded outputs, revised against corrected Japanese and reviewed English, then independently reread complete revised version in two bounded outputs. Compared introduction and seven sections,3row base table,all3C++blocks,2diagrams and7external references. No unread language was marked reviewed."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished 素数/合数/非素数, 素数判定/整数分解/素数生成, 整数底数/素数底数, 互质, 同余/最小非负剩余/C++余数, 独立均匀随机选择/固定底数集合, 条件错误概率/通过后的合数概率, 模乘/模约减/位复杂度, 有符号/无符号128位, 确定性判定/素性证明. Replaced uncommon 反复平方法 description with 二进制快速幂（平方乘法） and clarified Montgomery preconditions and setup costs."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all4display formulas exactly and inline assumptions/bounds, including Fermat561base3counterexample375, randomized4^-k conditional direction, strict3/4/7ranges,12base published bound and unsigned64endpoint. All40SimplifiedChineseTeX expressions survive HTML. The prose states d as an un-delimited variable alongside the unchanged formula; this accounts for one fewer TeX delimiter expression than JA/EN, not a missing mathematical assertion."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All3C++blocks exactly match reviewed source and independently compile under WSL GCC13.3.0/C++17 without warnings. Complete11sample outputs match. New Chinese harness101275cases passes both O2 and UBSanO1: both algorithms vs sieve0..50000,4signed trial cases,742large/boundary MR cases via independent Python pow and published12base bound,262multiplication+262power cases and3zero-modulus exceptions. Two diagrams14and4edges retain pre-loop s=1exhaustion and one-round-not-proof labeling. Not a timing benchmark, exhaustive64bit proof or cryptographic audit."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared all7unique external HTTPS targets and reviewed Chinese modern-cryptography internal target. Removed repetitive unreviewed Fermat dependencies without omitting the concept. Preserved publication timestamp,slug,image,categories/tags; actual lastmod2026-10-28. Image exists. Minified Hugo19bundles, multilingual1185pages and HTTPS2163HTML/41XML passed. All40ChineseTeX expressions preserved. Publication pending."
+        }
+      },
+      "summary": "Full Simplified Chinese primality-testing review with corrected modular arithmetic contracts and clear randomized versus bounded deterministic guarantees.",
+      "languageSpecificFindings": "Repaired multiplication-as-hard-operation prose, seven-prime base claim, common source conditional-probability and C++remainder errors, signed128fullrange assertion and zero-base comment. Used standard 二进制快速幂/平方乘法 and distinct 素数判定/整数分解/素性证明; nonprime0/1are not labeled合数. Preserved3/4/7range implementation and12prime alternative without implying minimality or all-environment portability.",
+      "limitations": [
+        "AI, not human or native-speaker certification.",
+        "Ten other translations unread and unreviewed; no confirmation dates for them.",
+        "Finite tests do not independently prove all2^64 classifications or published base-set search results.",
+        "No visual browser/KaTeX/Mermaid, cryptographic deployment or constant-time audit.",
+        "Full-siteCI and publication pending."
+      ],
+      "references": [
+        {
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html",
+          "scope": "Complete short extension documentation; target dependent signed/unsigned support."
+        },
+        {
+          "url": "https://eel.is/c++draft/expr.mul",
+          "scope": "Complete short multiplicative-operator section: zero modulus UB and truncation/remainder rules; reproduced signed remainder."
+        },
+        {
+          "url": "https://math.nyu.edu/~goodman/teaching/Algebra_2_2021/MillerRabinTest.pdf",
+          "scope": "Parsed opening pages through Theorem1, including random error interpretation, not full proof or implementation sections; obsolete1980 status not reused."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap4.pdf",
+          "scope": "Scoped parsed Fermat/MR sections,4.20/4.23/4.25,Algorithm4.24,Note4.47 and historical notes, not whole chapter or current key-generation audit."
+        },
+        {
+          "url": "https://miller-rabin.appspot.com/",
+          "scope": "3/4/7base records,strictthresholds,attribution,date and base-reduction remarks. Did not reproduce underlying64bitdatabase; zero-base remark means passing that round only."
+        },
+        {
+          "url": "https://arxiv.org/html/1509.00864",
+          "scope": "Parsed introduction/Theorem1.1; first twelve-prime-base strong pseudoprime. Journal metadata2017 separately checked. Not computational-proof replication; generatedHTML2026date not used as historical date."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap14.pdf",
+          "scope": "Scoped parsed14.32/14.36/14.94 and related efficiency/precomputation conditions. OriginalMontgomery1985publisheraccess failed; scan supplied no readable output, so no full original-paper reading claim."
+        }
+      ],
+      "validation": "docs/translation-review/batch-018-cn-validation.json"
     }
   },
   "stages": [
@@ -82,6 +152,22 @@
       "reviewedTranslations": 1,
       "otherTranslationsUnreviewed": 11,
       "validation": "docs/translation-review/batch-018-ja-en-validation.json",
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-10-28T19:56:17.598141+09:00",
+      "language": "zh-cn",
+      "reviewedTranslations": 2,
+      "otherTranslationsUnreviewed": 10,
+      "validation": "docs/translation-review/batch-018-cn-validation.json",
+      "texExpressions": 40,
+      "displayFormulas": 4,
+      "codeBlocks": 3,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "casesPerOptimizedAndUbsanHarness": 101275,
       "publicationPending": true
     }
   ]

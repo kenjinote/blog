@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T19:55:44.518930+09:00",
+  "site": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-19-bundles-primality-cn",
+  "compiler": "WSL GCC13.3.0/C++17",
+  "tempDirectory": "C:\\Users\\kenjinote\\.codex\\tmp\\kenji-batch018-ppl0bzhm",
+  "scope": "Only explicitly selected languages; not an automated prose review or review-date recorder.",
+  "counts": {
+    "sieveRange": [
+      0,
+      50000
+    ],
+    "sieveCasesPerAlgorithm": 50001,
+    "extraSignedTrialCases": 4,
+    "largeAndBoundaryMillerRabinCases": 742,
+    "multiplicationCases": 262,
+    "powerCases": 262,
+    "zeroModulusCases": 3
+  },
+  "files": [
+    {
+      "language": "zh-cn",
+      "path": "post/cppで実装する高速な素数判定アルゴリズム/index.zh-cn.md",
+      "hash": "ac60345e16a9db78b7553e38251c26d1c24e38a1f770a2573a34277f7fb7853b",
+      "codeBlocks": 3,
+      "displayFormulas": 4,
+      "texExpressions": 40,
+      "diagramEdges": [
+        14,
+        4
+      ],
+      "primaryReferenceTargets": 7,
+      "sampleOutputs": 11,
+      "casesPerHarness": 101275,
+      "optimizedAndUbsanPassed": true,
+      "allTeXPreserved": true,
+      "passed": true
+    }
+  ],
+  "allPassed": true,
+  "limitations": [
+    "Finite tests, not an independent exhaustive64bit base-set proof.",
+    "Large-number reference uses independent Python pow and published first12prime-base bound.",
+    "No timing, native-language, visual-browser, constant-time or cryptographic-library certification."
+  ]
+}
