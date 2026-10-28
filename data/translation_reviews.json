@@ -2045,6 +2045,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-016.json",
       "evidenceHash": "722fef56b9747d88fa41d8829dffd89c16a057f48614f1497fe99fd0dcf083c7"
+    },
+    "post/素因数分解と計算量/index.en.md": {
+      "source": "post/素因数分解と計算量/index.md",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "35642af8501dc5b58c64a5b2fa0ccfe34a6d0bc55fd8e142c2d1a56035043af0",
+      "translationHash": "a2b0063f6646fbada120a9d7ae1fe39d4380cf9c1dd5e146ca8ac8923f9ec1a0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-017.json",
+      "evidenceHash": "b05767411415a3681454a8726070134a6f5578a7b9a4a086138ed92d2a092023"
     }
   }
 }

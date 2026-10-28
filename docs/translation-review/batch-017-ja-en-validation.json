@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T09:52:32.819552+09:00",
+  "site": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-18-bundles-factoring-ja-en",
+  "scope": "Explicitly selected languages only; no automated prose-review or review-date recording.",
+  "limitations": [
+    "No executable article code; independent arithmetic only.",
+    "No visual browser, native-speaker, full primary-paper proof or production cryptography audit."
+  ],
+  "arithmetic": {
+    "priorFixturesRerun": {
+      "scope": "Independent public mathematical fixtures; original JA/EN article has no executable code, only2Mermaid blocks. Not cryptographic attacks or an implementation audit.",
+      "bitLengthBoundsInputs": 10000,
+      "exampleN15": {
+        "N": 15,
+        "bits": 4,
+        "twoToBits": 16,
+        "largestPrimeFactor": 5,
+        "sqrtN": 3.872983346207417
+      },
+      "equalPrimeBitLengthExamples": [
+        {
+          "p": 521,
+          "q": 523,
+          "primeBits": [
+            10,
+            10
+          ],
+          "product": 272483,
+          "productBits": 19
+        },
+        {
+          "p": 1019,
+          "q": 1021,
+          "primeBits": [
+            10,
+            10
+          ],
+          "product": 1040399,
+          "productBits": 20
+        }
+      ],
+      "fermatClose": {
+        "N": 1022117,
+        "start": 1011,
+        "successX": 1011,
+        "candidates": 1,
+        "factors": [
+          1009,
+          1013
+        ]
+      },
+      "fermatUnbalanced": {
+        "N": 314187,
+        "start": 561,
+        "successX": 52366,
+        "candidates": 51806,
+        "factors": [
+          3,
+          104729
+        ]
+      },
+      "rhoFixedPolynomialFailure": {
+        "N": 21,
+        "seed": 2,
+        "polynomial": "x^2+1 mod N",
+        "firstFloydValues": [
+          5,
+          5
+        ],
+        "gcd": 21,
+        "needsRestart": true
+      },
+      "congruentSquaresCompositeDivisors": {
+        "N": 1155,
+        "x": 76,
+        "y": 1,
+        "gcdMinus": 15,
+        "gcdPlus": 77,
+        "bothComposite": true
+      },
+      "bigOUpperNotTight": "f(b)=1 belongs to O(2^b), yet f(b+1)/f(b)=1, not2.",
+      "lEndpointCounterexample": "b^(c+o1) can be b^c*ln(b), taking o1=lnln(b)/ln(b); ratio to b^c is unbounded.",
+      "gnfsNaturalLogConstant": 1.9229994270765445,
+      "gnfsLeadingConstantWithBinaryBitLength": 1.7018488095389308,
+      "integerRingCounterexample": {
+        "alpha": "sqrt5",
+        "betaCoordinatesInQsqrt5": [
+          "1/2",
+          "1/2"
+        ],
+        "betaSatisfiesMonicPolynomial": "beta^2-beta-1=0",
+        "integralButNotInZalpha": true,
+        "scope": "Exact rational pair arithmetic for a counterexample; not GNFS implementation."
+      },
+      "rsa250Announcement": {
+        "url": "https://caramba.loria.fr/rsa250.txt",
+        "announcedAt": "2020-02-28",
+        "p": "64135289477071580278790190170577389084825014742943447208116859632024532344630238623598752668347708737661925585694639798853367",
+        "q": "33372027594978156556226010605355114227940760344767554666784520987023841729210037080257448673296881877565718986258036932062711",
+        "N": "2140324650240744961264423072839333563008614715144755017797754920881418023447140136643345519095804679610992851872470914587687396261921557363047454770520805119056493106687691590019759405693457452230589325976697471681738069364894699871578494975937497937",
+        "productVerified": true,
+        "digits": 250,
+        "bits": 829,
+        "reportedApproxCoreYears": 2700,
+        "claimedCurrentRecord": false,
+        "primalityOfPublishedFactorsIndependentlyCertified": false
+      }
+    },
+    "decisionVsCertificatesCases": 44551,
+    "decisionBinarySearchFactorizations": 499,
+    "limitations": "Finite arithmetic examples, not proofs of asymptotic complexity, AKS, GNFS, Shor or cryptographic security."
+  },
+  "files": [
+    {
+      "language": "ja",
+      "path": "post/素因数分解と計算量/index.md",
+      "hash": "b2acfdb74b3772af676a411ce6af4a001a3caf1eea928878b3e79539784a8f82",
+      "displayFormulas": 10,
+      "texExpressions": 121,
+      "diagrams": 2,
+      "diagramEdges": [
+        3,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "strictBoundsPreserved": false,
+        "linksPreserved": true,
+        "mathEnabled": true,
+        "mermaidEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": false
+    },
+    {
+      "language": "en",
+      "path": "post/素因数分解と計算量/index.en.md",
+      "hash": "8942f35728bcd6714c3236d6cb074edb9940ba6057c0a47c6c74153bb132ca01",
+      "displayFormulas": 10,
+      "texExpressions": 122,
+      "diagrams": 2,
+      "diagramEdges": [
+        3,
+        2
+      ],
+      "executableArticleBlocks": 0,
+      "missingMath": [],
+      "unexpectedMath": [],
+      "checks": {
+        "allTeXPreserved": true,
+        "strictBoundsPreserved": false,
+        "linksPreserved": true,
+        "mathEnabled": true,
+        "mermaidEnabled": true,
+        "markersPreserved": true
+      },
+      "passed": false
+    }
+  ],
+  "allPassed": false
+}
