@@ -594,17 +594,83 @@
         }
       ],
       "validation": "docs/translation-review/batch-016-id-validation.json"
+    },
+    "post/public-key-cryptography-rsa-ecc/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/public-key-cryptography-rsa-ecc/index.md",
+      "sourceHash": "8040dd0d70b85131e53d7093cbd18db0c6503d44433c9d6eb02b75d32a860004",
+      "translationHash": "b827fb20e57e443c89fdd5e9161d4add751edc03165aa255299eac50f0cc4153",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all original Hindi metadata/body, filling two initial truncated outputs with bounded follow-up reads before editing. Independently reread the entire revised metadata/body in four bounded outputs, compared all six sections, conclusion, six references and both diagrams against corrected Japanese, and checked final grammar/denominator/serialized wording corrections. Restored subgroup and exponent conditions, noncoprime proof, curve exceptions and protocol/quantum scope. Nine exact display formulas reused from Japanese then read; mechanical reuse is not prose review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished कुंजी सहमति/कुंजी परिवहन/कुंजी स्थापना, साझा मान/व्युत्पन्न कुंजी, पहचान प्रमाणीकरण/वैधता जाँच, उपसमूह जनक/आदिम मूल, अभाज्य/सह-अभाज्य, घातांक/whole निजी कुंजी, पूर्णांक प्रतिनिधि/बाइट अनुक्रम, परिमित क्षेत्र/अभिलक्षण/अविलक्षण, कोटि/अदिश, तत्समक अवयव/अनंत बिंदु, बिंदु द्विगुणन/अदिश गुणन and चीनी शेषफल प्रमेय. Replaced grammatical singular एकवचन with mathematical nonsingularity अविलक्षण plus English gloss. Made denominator explicit as भिन्न का हर (denominator), used नियतात्मक (deterministic), and replaced sorted-sounding serialized wording with सीरियलाइज़ की गई."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched all nine display formulas exactly and checked relevant inline assumptions. DH uses prime subgroup order and nonzero uniform secret exponents; Euler proof retains coprimality and all representatives use primewise zero/nonzero cases and CRT. ECC uses p>3, nonsingularity modulo p, infinity/identity/inverse and y=0 exceptions. Independent fixtures verify100DH pairs, active MITM values13/18,143RSA representatives including23noncoprime,286primewise cases, the e1 flaw,20curve points/400pairs/8000associativity triples/3zero-y doublings and a singular field counterexample. Finite checks are not security proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article code in original or revised Hindi. Read both Mermaid diagrams and arithmetic labels, matching8/2edges to Japanese. Ran independent small mathematical fixtures in verify_batch_016.py, not article compilation or production cryptographic certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched six HTTPS primary references and scoped evidence in source notes. Preserved title, publication timestamp, slug, image and categories/tags; image exists. Added actual lastmod2026-10-28. All88Hindi TeX expressions survive minified HTML, including RSA range. Seventeen-bundle Hugo, multilingual1103pages and HTTPS2025HTML/41XML passed; full CI/publication pending."
+        }
+      },
+      "summary": "Full Hindi DH/RSA/ECC overview review against corrected Japanese source, correcting mathematical singularity and key/protocol terminology.",
+      "languageSpecificFindings": "Corrected grammatical singular एकवचन used for curve singularity, using अविलक्षण (nonsingular) and finite-field condition. Distinguished घातांक/घात operation, कोटि/अदिश, प्रमाणीकरण/वैधता जाँच and private exponent/full key. Clarified denominator हर and deterministic term with English glosses and serialized key wording. Restored all-representative proof and removed unsupported universal RSA1024, performance and PQC guarantees.",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "No executable article code; independent mathematical fixtures only, no constant-time/security proof or protocol implementation audit.",
+        "No visual browser/KaTeX/Mermaid audit.",
+        "Two other translations remain unreviewed; no dates added to them.",
+        "Publication verification pending."
+      ],
+      "references": [
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc7919.html",
+          "scope": "Scoped abstract and5.1–5.2 known-group public validation and exponent excerpts; not universal arbitrary-group validation."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc6090.html",
+          "scope": "Scoped2.2–2.3,3,4,10–10.3 and historical bibliography excerpts listed in source notes; not full original historical papers."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Scoped keys/lambda/ranges, RSAEP, OAEP composition and PSS encoding/signature excerpts; not full conformance audit."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+          "scope": "Scoped1.2/E.8 RSA transport versus signatures,4.2.8.1,7–7.1 key schedule and7.4.1 serialization excerpts; not prevalence survey."
+        },
+        {
+          "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+          "scope": "2020 publication metadata and parsed PDF text5.6.1–5.6.1.1/Table2 definitions and comparison rows; not current universal key policy or visual PDF inspection."
+        },
+        {
+          "url": "https://arxiv.org/abs/quant-ph/9508027",
+          "scope": "Abstract and metadata only, polynomial steps in input size on hypothetical quantum computer; not hardware forecast."
+        }
+      ],
+      "validation": "docs/translation-review/batch-016-hi-validation.json"
     }
   },
   "stage": {
     "sourceAndEnglishFullBodyReviewed": true,
-    "otherTranslationsReviewed": 8,
-    "otherTranslationsRemaining": 3,
+    "otherTranslationsReviewed": 9,
+    "otherTranslationsRemaining": 2,
     "fullCiPending": true,
     "publicationPending": true,
     "validation": "docs/translation-review/batch-016-ja-en-validation.json",
     "simplifiedChineseFullBodyReviewed": true,
-    "latestValidation": "docs/translation-review/batch-016-id-validation.json",
+    "latestValidation": "docs/translation-review/batch-016-hi-validation.json",
     "traditionalChineseFullBodyReviewed": true,
     "spanishFullBodyReviewed": true,
     "koreanFullBodyReviewed": true,
@@ -618,15 +684,16 @@
       "pt",
       "fr",
       "de",
-      "id"
+      "id",
+      "hi"
     ],
     "unreviewedLanguages": [
-      "hi",
       "ru",
       "ar"
     ],
     "frenchFullBodyReviewed": true,
     "germanFullBodyReviewed": true,
-    "indonesianFullBodyReviewed": true
+    "indonesianFullBodyReviewed": true,
+    "hindiFullBodyReviewed": true
   }
 }
