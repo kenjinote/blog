@@ -660,5 +660,29 @@
     "priorRun": 40609932394,
     "priorRunObservedStatus": "in_progress",
     "concurrency": "pages group cancel-in-progress:false; did not cancel or restart prior deployment."
-  }
+  },
+  "publicationDispatchFollowUps": [
+    {
+      "observedAt": "2026-10-28T10:11:22.125672+09:00",
+      "commit": "5516f910de1d20bc594525e9731775ceb4395615",
+      "ciRun": 40613417587,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40613417587",
+      "observedStatus": "pending",
+      "conclusion": null,
+      "reviewedLanguages": [
+        "en",
+        "zh-cn",
+        "zh-tw",
+        "es",
+        "ko",
+        "pt"
+      ],
+      "publicationPending": true,
+      "plannedPublicPages": 228,
+      "otherTranslationsUnreviewed": 6,
+      "priorRun": 40612369511,
+      "priorRunObservedStatus": "in_progress",
+      "concurrency": "pages cancel-in-progress:false; prior workflow retained."
+    }
+  ]
 }
