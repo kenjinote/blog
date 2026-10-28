@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/素数を生成するC言語コード/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-28",
+      "reviewer": "Codex (AI)",
+      "source": "post/素数を生成するC言語コード/index.md",
+      "sourceHash": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "translationHash": "a832d8ef2a9880c10ea0284c166c3a6af30d33ed922f5b745bd922353b993046",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete old JA/EN metadata/body/code, revised source and English, independently reread complete revised versions plus final date/127-byte wording contexts. Compared introduction,4sections,complete C program,30-bound sample,input contract and limits. Includes inclusive bound,0/1empty output,6k-1/6k+1candidates and rejection before int conversion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished primality testing/listing from cryptographic prime generation, composite from nonprime0/1,six-step candidates from multiples of six,bytes from characters,signed overflow from ordinary input failure,division-count upper bound from bit complexity or measured performance. English original six-step wording was valid, refined without falsely identifying it as a multiples-of-six error."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "No TeX-delimited formulas or diagrams. Checked factor-pair square-root argument,6k±1candidate condition after excluding2/3,equivalence of positive-integer i<=num/i to square bound and portable loop increment limits. O(n sqrt(n)) is a coarse division-count upper bound. Sample primes<=30matched independent sieve."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Extracted1C block per version; separately compiled complete program and function harness with GCC13.3 C17 Wall/Wextra under O2 and O0+UBSan,no warnings. Per version per mode:50168classifications(50001sieve values0..50000 plus167negative/large/boundary/random cases checked by Python integer trial division),11valid inputs,17invalid inputs,12printer outputs,6complete-program valid and5invalid inputs. Tests include INT_MAX primality and parsing without attempting full enumeration,127-byte LF/EOF and overlong boundaries,ERANGE,emptyEOF/trailingjunk. Windows LF-to-CRLF harness failure corrected with byte input. Original two overflow problems independently reproduced; no uninitialized-memory sanitizer claim."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Primary WG14 N1570 scoped clauses read, not whole701page standard. English internal Miller–Rabin target matches reviewed English article. Preserved actual Hugo datePublished2024-08-24T09:38:10+09:00 and distinct existing slug/canonical,image,tags/categories; removed duplicate date and set actual lastmod2026-10-28. Hugo20bundle build passed,multilingual1243pages,HTTPS2267HTML/41XML,17repository tests. Publication pending."
+        }
+      },
+      "summary": "Full English review of the C prime-listing article against corrected Japanese, including executable integer/input boundary tests and preserved public URL/date.",
+      "languageSpecificFindings": "English already described six-step iteration rather than multiples of six; clarified exact candidates. Corrected common source code flaws and unsupported efficient-algorithm implication, retained localized English UI messages, C identifiers and actual public slug.",
+      "references": [
+        {
+          "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+          "scope": "Scoped6.5p5,7.4p1,7.21.6.2p10,7.21.7.2 and7.22.1.4p2-8. C11committee draft, not complete reading or finalC17standard certification."
+        }
+      ],
+      "validation": "docs/translation-review/batch-019-ja-en-validation.json",
+      "limitations": [
+        "AI, not human or native-speaker certification.",
+        "Other11translations not yet revised or recorded; preliminary old-version reading does not count.",
+        "Finite GCC13.3/32bit-int tests; not every C implementation or full INT_MAX enumeration.",
+        "No binary/NULinput,output-stream-failure,visual-browser or cryptographic audit.",
+        "Full-siteCI and publication pending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-10-28",
+      "languages": [
+        "en"
+      ],
+      "sourceReviewed": true,
+      "validation": "docs/translation-review/batch-019-ja-en-validation.json",
+      "publicationPending": true
+    }
+  ]
+}

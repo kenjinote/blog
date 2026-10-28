@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-28T20:46:30.723451+09:00",
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "versions": [
+    {
+      "language": "ja",
+      "sha256": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "canonicalPreserved": "https://kenji.blog/p/%E7%B4%A0%E6%95%B0%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublishedPreserved": "2024-08-24T09:38:10+09:00",
+      "codeBlocks": 1,
+      "sampleBlocks": 1,
+      "sections": 4,
+      "mathDelimiters": 0,
+      "diagrams": 0,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "sha256": "a832d8ef2a9880c10ea0284c166c3a6af30d33ed922f5b745bd922353b993046",
+      "canonicalPreserved": "https://kenji.blog/en/p/prime-number%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublishedPreserved": "2024-08-24T09:38:10+09:00",
+      "codeBlocks": 1,
+      "sampleBlocks": 1,
+      "sections": 4,
+      "mathDelimiters": 0,
+      "diagrams": 0,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Finite tests under Ubuntu GCC13.3 with32bit int; not every C implementation.",
+    "Full enumeration to INT_MAX is deliberately not executed.",
+    "No browser visual audit, native-speaker certification, binary/NUL input or stream-output failure audit.",
+    "Prose, trial-division proof, portable bound argument and primary-source reading recorded separately; this script does not approve translations."
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "date": "2026-10-28",
+  "versions": {
+    "ar": {
+      "path": "content/post/素数を生成するC言語コード/index.ar.md",
+      "sha256": "aff30a6bbf9f806605ed641c0503d677b0ef88db22879071af9c15e9914b9e80",
+      "slug": "أعداد أوليةを生成するC言語コード",
+      "canonical": "https://kenji.blog/ar/p/%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A3%D9%88%D9%84%D9%8A%D8%A9%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "de": {
+      "path": "content/post/素数を生成するC言語コード/index.de.md",
+      "sha256": "593fbd401e4167ebb7b5bad342d58c9935f3e3a84c39de2a399c5c15c6ff7f00",
+      "slug": "Primzahlを生成するC言語コード",
+      "canonical": "https://kenji.blog/de/p/primzahl%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "en": {
+      "path": "content/post/素数を生成するC言語コード/index.en.md",
+      "sha256": "76a053ab4dbdc60fc541c7e2002e2d12a47e8002391e5a6dcba2af0e7061a288",
+      "slug": "Prime Numberを生成するC言語コード",
+      "canonical": "https://kenji.blog/en/p/prime-number%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "es": {
+      "path": "content/post/素数を生成するC言語コード/index.es.md",
+      "sha256": "1e6877865819593e5b0094d0cbc8f93bde4655d3795407acc4e5a32c120a9a22",
+      "slug": "Número primoを生成するC言語コード",
+      "canonical": "https://kenji.blog/es/p/n%C3%BAmero-primo%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "fr": {
+      "path": "content/post/素数を生成するC言語コード/index.fr.md",
+      "sha256": "cada42ba25094a1ba32edaa5ce853f2fb8d798c112cf3cef3e516325f4d77878",
+      "slug": "Nombre premierを生成するC言語コード",
+      "canonical": "https://kenji.blog/fr/p/nombre-premier%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "hi": {
+      "path": "content/post/素数を生成するC言語コード/index.hi.md",
+      "sha256": "dfcfbd15640ce1813b889c3284d604eebc14b1883e060034fe7fd56388ebf2fa",
+      "slug": "अभाज्य संख्याを生成するC言語コード",
+      "canonical": "https://kenji.blog/hi/p/%E0%A4%85%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF-%E0%A4%B8%E0%A4%82%E0%A4%96%E0%A5%8D%E0%A4%AF%E0%A4%BE%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "id": {
+      "path": "content/post/素数を生成するC言語コード/index.id.md",
+      "sha256": "3ea8fd63dd3260fecd5ef0d6bcfd4d921bedbea29d5407610fc4b7a91e2ced71",
+      "slug": "Bilangan Primaを生成するC言語コード",
+      "canonical": "https://kenji.blog/id/p/bilangan-prima%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "ko": {
+      "path": "content/post/素数を生成するC言語コード/index.ko.md",
+      "sha256": "634178e92ef2f8537e025219e096e602df23f924f8c2158f44008557e84d64a8",
+      "slug": "소수を生成するC言語コード",
+      "canonical": "https://kenji.blog/ko/p/%EC%86%8C%EC%88%98%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "ja": {
+      "path": "content/post/素数を生成するC言語コード/index.md",
+      "sha256": "681e3879db365b79b75feae213c1d110f4fe0ce804927c21f8d51c29b5d780f1",
+      "slug": "素数を生成するC言語コード",
+      "canonical": "https://kenji.blog/p/%E7%B4%A0%E6%95%B0%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "pt": {
+      "path": "content/post/素数を生成するC言語コード/index.pt.md",
+      "sha256": "aa8a7853d9ffb29ff51e22d22efafb1a40cb2b0ee76aa7c26877decbf4df1329",
+      "slug": "Número Primoを生成するC言語コード",
+      "canonical": "https://kenji.blog/pt/p/n%C3%BAmero-primo%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "ru": {
+      "path": "content/post/素数を生成するC言語コード/index.ru.md",
+      "sha256": "b334450ecec3fbed372ca9b2dd8caccf8516fc83eaa3dd3f8422112bbdc07c4f",
+      "slug": "Простое числоを生成するC言語コード",
+      "canonical": "https://kenji.blog/ru/p/%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5-%D1%87%D0%B8%D1%81%D0%BB%D0%BE%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "zh-cn": {
+      "path": "content/post/素数を生成するC言語コード/index.zh-cn.md",
+      "sha256": "f78e398d6149293a438715a213aa02eebd09fabc3d4f072cd64857c5ee22bf88",
+      "slug": "素数を生成するC言語コード",
+      "canonical": "https://kenji.blog/zh-cn/p/%E7%B4%A0%E6%95%B0%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    },
+    "zh-tw": {
+      "path": "content/post/素数を生成するC言語コード/index.zh-tw.md",
+      "sha256": "23e686c554d64a0502f2481f463bce47277fb51bbbad840b1234cc08ea153cbe",
+      "slug": "質數を生成するC言語コード",
+      "canonical": "https://kenji.blog/zh-tw/p/%E8%B3%AA%E6%95%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "datePublished": [
+        "2024-08-24T09:38:10+09:00"
+      ]
+    }
+  },
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "flags": "-std=c17 -Wall -Wextra -O0 -fsanitize=undefined -fno-sanitize-recover=undefined",
+  "reproductions": {
+    "printBelowTwo": {
+      "exitCode": 0,
+      "stdout": "2 \n2 \n2 \n",
+      "stderr": "",
+      "compilerDiagnostics": ""
+    },
+    "isPrimeIntMax": {
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "/mnt/c/Users/kenjinote/AppData/Local/Temp/kenji-c-prime-original-dqpn6uzv/intmax.c:9:23: runtime error: signed integer overflow: 46343 * 46343 cannot be represented in type 'int'\n",
+      "compilerDiagnostics": ""
+    },
+    "isolatedPrinterIncrement": {
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "/mnt/c/Users/kenjinote/AppData/Local/Temp/kenji-c-prime-original-dqpn6uzv/increment.c:2:40: runtime error: signed integer overflow: 2147483647 + 2 cannot be represented in type 'int'\n",
+      "compilerDiagnostics": ""
+    },
+    "scanfFailedAssignmentSentinel": {
+      "exitCode": 0,
+      "stdout": "return=0 n=12345\n",
+      "stderr": "",
+      "compilerDiagnostics": ""
+    }
+  },
+  "limitations": [
+    "Increment test isolates the original final increment; full enumeration to INT_MAX was not run.",
+    "Initialized sentinel demonstrates failed assignment only; original indeterminate-variable risk is established by inspection, not an uninitialized-memory sanitizer.",
+    "C standard primary source reading is limited to referenced clauses. No complete standard reading or portable implementation certification."
+  ]
+}
