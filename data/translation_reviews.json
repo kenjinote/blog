@@ -2915,6 +2915,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-024.json",
       "evidenceHash": "a43f108791122bff60a54f7a1c5e531f6e76f257ad7a43aa082de521b04ed82f"
+    },
+    "post/chinese-remainder-theorem/index.es.md": {
+      "source": "post/chinese-remainder-theorem/index.md",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "translationHash": "006c253f51b3c6e95e09e81a453a46920294bfa88cd35e25ef030cc1646546f1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-024.json",
+      "evidenceHash": "8c1559949df61630a6de7981e49479915be4654656dd5059d34b59cdddf5c132"
     }
   }
 }

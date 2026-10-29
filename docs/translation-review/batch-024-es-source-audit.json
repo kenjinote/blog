@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:04:55.456935+09:00",
+  "path": "content/post/chinese-remainder-theorem/index.es.md",
+  "sha256": "1fa2235c518c804df7f3b8c89c615e77f99b13564ef14e3a00c04810a3180458",
+  "fullOriginalBodyMetadataPythonAndDiagramRead": true,
+  "completeOriginalPythonExecuted": true,
+  "stdout": "Solución del problema de Sunzi: 23\n",
+  "missingResidueReturned": 5,
+  "extraResidueReturned": 2,
+  "findings": "Read all original Spanish. Same mathematical/API gaps as Japanese; repeated self/biography/Lagrange and broad cryptography links. Typo restaur, awkward se sublimó, private CRT exponents treated as replacing entire key, unconditional fourfold speed and no-carry claims. Original correct Sunzi23 example preserved.",
+  "reviewed": false
+}
