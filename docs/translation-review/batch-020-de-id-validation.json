@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T17:02:35.131930+09:00",
+  "compiler": "rustc 1.90.0 (1159e78c4 2025-09-14)\nbinary: rustc\ncommit-hash: 1159e78c4747b02ef996e55082b704c09b970588\ncommit-date: 2025-09-14\nhost: x86_64-pc-windows-msvc\nrelease: 1.90.0\nLLVM version: 20.1.8\n",
+  "independentReference": "Python integer trial division through100000, embedded full prime vector, exact equality per bound; not a mirrored sieve.",
+  "versions": [
+    {
+      "language": "de",
+      "sha256": "1ae8ccf4f3cdf0e01c621c3f4961c9022a2af8b3f3ae7c952ae766323c8b2f0a",
+      "canonical": "https://kenji.blog/de/p/sieb-des-eratosthenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEprimzahl%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "mathExpressions": 8,
+      "rustCodeBlocks": 2,
+      "htmlCodeExact": true,
+      "imageAltPreserved": true,
+      "gifBytesUnchanged": true,
+      "externalTargets": [
+        "https://commons.wikimedia.org/wiki/File:Animation_Sieb_des_Eratosthenes.gif",
+        "https://creativecommons.org/licenses/by-sa/3.0/",
+        "https://doc.rust-lang.org/reference/types/boolean.html",
+        "https://doc.rust-lang.org/std/vec/struct.Vec.html#guarantees",
+        "https://introcs.cs.princeton.edu/java/41analysis/"
+      ],
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ]
+    },
+    {
+      "language": "id",
+      "sha256": "e613e190a0e407d58e9d291d37d29a959f695eb3d3b21204515e1a98504c9f4d",
+      "canonical": "https://kenji.blog/id/p/saringan-eratosthenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEbilangan-prima%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "mathExpressions": 8,
+      "rustCodeBlocks": 2,
+      "htmlCodeExact": true,
+      "imageAltPreserved": true,
+      "gifBytesUnchanged": true,
+      "externalTargets": [
+        "https://commons.wikimedia.org/wiki/File:Animation_Sieb_des_Eratosthenes.gif",
+        "https://creativecommons.org/licenses/by-sa/3.0/",
+        "https://doc.rust-lang.org/reference/types/boolean.html",
+        "https://doc.rust-lang.org/std/vec/struct.Vec.html#guarantees",
+        "https://introcs.cs.princeton.edu/java/41analysis/"
+      ],
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Finite bounds<=100000 under Rust1.90 Windows64bit; not every usize or target.",
+    "No speed benchmark, huge memory-allocation test, full animation visual/browser/KaTeX audit or native-speaker certification.",
+    "usizeMAX uses catch_unwind with temporary silent panic hook to verify explicit checked_add rejection; no huge allocation attempted.",
+    "Prose review is recorded separately; this script never approves a translation."
+  ],
+  "publicationPending": true
+}
