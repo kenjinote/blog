@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:50:23.178332+09:00",
+  "path": "content/post/chinese-remainder-theorem/index.ru.md",
+  "sha256": "b563c7bee7870c089079c18b30073acc804b542ae8c1f73f6d2ec8f92d75ab91",
+  "fullOriginalBodyMetadataPythonAndDiagramRead": true,
+  "completeOriginalPythonExecuted": true,
+  "stdout": "Решение задачи Сунь-цзы: 23\n",
+  "missingResidueReturned": 5,
+  "extraResidueReturned": 2,
+  "findings": "Read all original Russian metadata/body/Python/Mermaid. Repeated Sunzi biography and self/broad cryptography links, Euclid word fragment. Shared API/theorem/polynomial-field/degree/RSA-key/performance/RNS range/carry qualifications missing. Original23 program succeeds. No unverified biography identity or historical date/priority claim retained.",
+  "reviewed": false
+}
