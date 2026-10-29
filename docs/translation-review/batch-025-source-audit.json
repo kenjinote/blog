@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T08:22:55.543444+09:00",
+  "versions": {
+    "ar": {
+      "path": "content/post/2つの封筒のパラドックス/index.ar.md",
+      "sha256": "2039fda9804811ad4138d46dd106275bcd39c0a2bb9ebda14a5bca45909e3585",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/ar/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/2つの封筒のパラドックス/index.de.md",
+      "sha256": "540c36f07b4b6e3369ec702050a1d3498d50b81e569f1052be7d2f5595854059",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/de/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/2つの封筒のパラドックス/index.en.md",
+      "sha256": "2a2f644df8569c0798f88ffc113e2a04ee5ea914487c8c4309476356a806f287",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/en/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/2つの封筒のパラドックス/index.es.md",
+      "sha256": "fc071469b14ec5eaac6ab183de3deedcba5586fe63b2a76680f825104e1b8ce3",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/es/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/2つの封筒のパラドックス/index.fr.md",
+      "sha256": "43270f2bc8da3a9d8c051e2ac3b28d5294ed97164cccef71d11f36079f3bc753",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/fr/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/2つの封筒のパラドックス/index.hi.md",
+      "sha256": "7c0e5136219f180655cd376108ec65c74a10aaba0629d9392afa6f81a3d25d63",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/hi/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/2つの封筒のパラドックス/index.id.md",
+      "sha256": "1f51a5550caac8293fb51ab015479763d0f4191a90664b49ec2885f5ae2fc142",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/id/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/2つの封筒のパラドックス/index.ko.md",
+      "sha256": "90ff8708d715b8cae2fbf86d32a8be91ee6f25cd4d751fd0365075eed9d19b89",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/ko/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/2つの封筒のパラドックス/index.md",
+      "sha256": "3cf65ce9ef835df0f456c58e29bb738cc08dc51349b345b7ef89e547ece65ed5",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/2つの封筒のパラドックス/index.pt.md",
+      "sha256": "9f4d06cfdb61e028a3e8592c5be4cb366af892e6aec175397b06d388bcf92d04",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/pt/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/2つの封筒のパラドックス/index.ru.md",
+      "sha256": "0f75d044713e7d3aa35283b70618b92472476f4bda2e4f0ef0f02e07ccb27585",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/ru/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/2つの封筒のパラドックス/index.zh-cn.md",
+      "sha256": "9bb80786a73ec25c31feb368f8884b7dcdcc902533a9368c1dc6799194177619",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/zh-cn/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/2つの封筒のパラドックス/index.zh-tw.md",
+      "sha256": "7f98d7153d18c9dec6769b1d9e4c868c3881a378b85f9d98b33b3de55f0d6224",
+      "slug": "two-envelopes-paradox",
+      "canonical": "https://kenji.blog/zh-tw/p/two-envelopes-paradox/",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "fullOriginalBodyMetadataAndDiagramsRead": false,
+      "reviewed": false
+    }
+  },
+  "image": {
+    "path": "content/post/2つの封筒のパラドックス/img/two_envelopes.jpg",
+    "sha256": "9c6db1e0da19c53393e5fa5a950ea7ef8b6429da25b438eaa230296fc778a61d"
+  },
+  "scope": "Original JA/EN complete metadata/body/twoMermaid diagrams read. Other11translations only metadata/hash/baselineHTMLdate inventoried,not manually read or reviewed. No executable article code in JA/EN. All arithmetic below is auxiliary exact Fraction verification,not article-program execution.",
+  "auxiliary": {
+    "fixedSmallerAmounts": [
+      {
+        "s": 1,
+        "expectedStay": "3/2",
+        "expectedSwitch": "3/2"
+      },
+      {
+        "s": 2,
+        "expectedStay": "3",
+        "expectedSwitch": "3"
+      },
+      {
+        "s": 10,
+        "expectedStay": "15",
+        "expectedSwitch": "15"
+      },
+      {
+        "s": 10000,
+        "expectedStay": "15000",
+        "expectedSwitch": "15000"
+      }
+    ],
+    "finitePriors": [
+      [
+        {
+          "x": "1",
+          "probability": "1/2",
+          "probabilityOtherDouble": "1",
+          "expectedOther": "2",
+          "conditionalGain": "1"
+        },
+        {
+          "x": "2",
+          "probability": "1/2",
+          "probabilityOtherDouble": "0",
+          "expectedOther": "1",
+          "conditionalGain": "-1"
+        }
+      ],
+      [
+        {
+          "x": "5000",
+          "probability": "1/4",
+          "probabilityOtherDouble": "1",
+          "expectedOther": "10000",
+          "conditionalGain": "5000"
+        },
+        {
+          "x": "10000",
+          "probability": "1/2",
+          "probabilityOtherDouble": "1/2",
+          "expectedOther": "12500",
+          "conditionalGain": "2500"
+        },
+        {
+          "x": "20000",
+          "probability": "1/4",
+          "probabilityOtherDouble": "0",
+          "expectedOther": "10000",
+          "conditionalGain": "-10000"
+        }
+      ],
+      [
+        {
+          "x": "1",
+          "probability": "49/200",
+          "probabilityOtherDouble": "1",
+          "expectedOther": "2",
+          "conditionalGain": "1"
+        },
+        {
+          "x": "2",
+          "probability": "1/4",
+          "probabilityOtherDouble": "1/50",
+          "expectedOther": "53/50",
+          "conditionalGain": "-47/50"
+        },
+        {
+          "x": "4",
+          "probability": "51/200",
+          "probabilityOtherDouble": "50/51",
+          "expectedOther": "134/17",
+          "conditionalGain": "66/17"
+        },
+        {
+          "x": "8",
+          "probability": "1/4",
+          "probabilityOtherDouble": "0",
+          "expectedOther": "4",
+          "conditionalGain": "-4"
+        }
+      ]
+    ],
+    "normalizationPrefixTailCases": 101,
+    "geometricProperPrior": "P(S=2^n)=(1/3)(2/3)^n,n>=0. Sum=1 because prefix=1-r^(N+1),r=2/3<1 and tail tends0.",
+    "possiblePositiveProbabilityObservations": "X=2^n,n>=0 only;conditioning outside support not claimed.",
+    "geometricPosteriorCases": 100,
+    "geometricPosteriorExamples": [
+      {
+        "n": 1,
+        "x": "2",
+        "probabilityOtherDouble": "2/5",
+        "expectedOther": "11/5"
+      },
+      {
+        "n": 2,
+        "x": "4",
+        "probabilityOtherDouble": "2/5",
+        "expectedOther": "22/5"
+      },
+      {
+        "n": 10,
+        "x": "1024",
+        "probabilityOtherDouble": "2/5",
+        "expectedOther": "5632/5"
+      },
+      {
+        "n": 100,
+        "x": "1267650600228229401496703205376",
+        "probabilityOtherDouble": "2/5",
+        "expectedOther": "6972078301255261708231867629568/5"
+      }
+    ],
+    "xEquals1ExpectedOther": 2,
+    "finiteTruncationsChecked": 33,
+    "finiteTruncationExamples": [
+      {
+        "maximumExponent": 0,
+        "mass": "1",
+        "largestObservation": {
+          "x": "2",
+          "probability": "1/2",
+          "probabilityOtherDouble": "0",
+          "expectedOther": "1",
+          "conditionalGain": "-1"
+        },
+        "weightedMeanGain": "0"
+      },
+      {
+        "maximumExponent": 1,
+        "mass": "1",
+        "largestObservation": {
+          "x": "4",
+          "probability": "1/5",
+          "probabilityOtherDouble": "0",
+          "expectedOther": "2",
+          "conditionalGain": "-2"
+        },
+        "weightedMeanGain": "0"
+      },
+      {
+        "maximumExponent": 2,
+        "mass": "1",
+        "largestObservation": {
+          "x": "8",
+          "probability": "2/19",
+          "probabilityOtherDouble": "0",
+          "expectedOther": "4",
+          "conditionalGain": "-4"
+        },
+        "weightedMeanGain": "0"
+      },
+      {
+        "maximumExponent": 5,
+        "mass": "1",
+        "largestObservation": {
+          "x": "64",
+          "probability": "16/665",
+          "probabilityOtherDouble": "0",
+          "expectedOther": "32",
+          "conditionalGain": "-32"
+        },
+        "weightedMeanGain": "0"
+      },
+      {
+        "maximumExponent": 10,
+        "mass": "1",
+        "largestObservation": {
+          "x": "2048",
+          "probability": "512/175099",
+          "probabilityOtherDouble": "0",
+          "expectedOther": "1024",
+          "conditionalGain": "-1024"
+        },
+        "weightedMeanGain": "0"
+      },
+      {
+        "maximumExponent": 20,
+        "mass": "1",
+        "largestObservation": {
+          "x": "2097152",
+          "probability": "524288/10458256051",
+          "probabilityOtherDouble": "0",
+          "expectedOther": "1048576",
+          "conditionalGain": "-1048576"
+        },
+        "weightedMeanGain": "0"
+      },
+      {
+        "maximumExponent": 32,
+        "mass": "1",
+        "largestObservation": {
+          "x": "8589934592",
+          "probability": "2147483648/5559051976620931",
+          "probabilityOtherDouble": "0",
+          "expectedOther": "4294967296",
+          "conditionalGain": "-4294967296"
+        },
+        "weightedMeanGain": "0"
+      }
+    ],
+    "divergenceArgument": "E[S]=(1/3)sum(4/3)^n=+infinity. Positive and negative parts of Y-X each have expectation(1/2)E[S]=infinity;unconditional signed gain undefined. Nonnegative tower identity remains valid with infinite values;do not subtract infinity-infinity.",
+    "positiveNegativePartialExamples": [
+      {
+        "maximumExponent": 0,
+        "partialExpectedS": "1/3",
+        "partialPositiveGain": "1/6",
+        "partialNegativeGain": "1/6"
+      },
+      {
+        "maximumExponent": 1,
+        "partialExpectedS": "7/9",
+        "partialPositiveGain": "7/18",
+        "partialNegativeGain": "7/18"
+      },
+      {
+        "maximumExponent": 2,
+        "partialExpectedS": "37/27",
+        "partialPositiveGain": "37/54",
+        "partialNegativeGain": "37/54"
+      },
+      {
+        "maximumExponent": 10,
+        "partialExpectedS": "4017157/177147",
+        "partialPositiveGain": "4017157/354294",
+        "partialNegativeGain": "4017157/354294"
+      },
+      {
+        "maximumExponent": 32,
+        "partialExpectedS": "73781417234271650941/5559060566555523",
+        "partialPositiveGain": "73781417234271650941/11118121133111046",
+        "partialNegativeGain": "73781417234271650941/11118121133111046"
+      }
+    ],
+    "ratioExpectations": {
+      "meanYOverX": "5/4",
+      "meanXOverY": "5/4",
+      "meanProductOfReciprocalRatios": "1",
+      "productOfMeans": "25/16"
+    },
+    "continuousDensity": "f(s)=1/(1+s)^2,s>0. Integral0toL=1-1/(1+L),tending1;mean infinite. Conditional densities use1/2 and1/4 mixture/Jacobian factors.",
+    "continuousRationalSubstitutionCases": 268,
+    "continuousScope": "Exact rational substitution against derived conditional-density formula;no numerical quadrature or symbolic integration execution claimed."
+  },
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "limitations": [
+    "Finite exact checks supplement explicit geometric/analytic arguments,not a universal proof.",
+    "No native-language or browser/diagram visual certification.",
+    "Original article remains unmodified;no AI review entry recorded by this audit."
+  ]
+}
