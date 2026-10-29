@@ -651,5 +651,21 @@
       "Finite auxiliary arithmetic,not exhaustive proof or a cryptographic audit.",
       "Mermaid sources/HTML and TeX checked,no browser visual/KaTeX/Mermaid runtime certification."
     ]
+  },
+  "publicationDispatch": {
+    "date": "2026-10-29",
+    "deployedCommitExpected": "e4bd77a295ac44fb8dae80e986de0baf176ec17d",
+    "ciRun": 40893592967,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40893592967",
+    "statusAtDispatch": "pending",
+    "precedingLiveBuildRun": 40889391311,
+    "pagesPlanned": 312,
+    "translationsPlanned": 288,
+    "japaneseSourcesPlanned": 24,
+    "texExpressionsPlanned": 7959,
+    "mathVersionsPlanned": 117,
+    "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_288.py",
+    "publicationPending": true,
+    "scope": "Ordinary non-force push after fetch confirmed zero incoming commits. Matching next run/head observed pending;preceding run40889391311 matching649794682 remains live build inprogress. Both probes prepared,neither new publication claimed verified."
   }
 }
