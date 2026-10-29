@@ -755,12 +755,13 @@
     "reviewedTranslationsTotal": 300,
     "unreviewedTranslations": 12732,
     "humanReviews": 0,
-    "publicationPending": true,
+    "publicationPending": false,
     "limitations": [
       "AI,not human/native-speaker certification.",
       "Finite arithmetic checks supplement manually read arguments;not exhaustive proof or cryptographic audit.",
       "Source and decoded HTML checked;no browser visual/RTL/KaTeX/Mermaid runtime certification."
-    ]
+    ],
+    "publicationProof": "docs/translation-review/publication-024.json"
   },
   "publicationDispatch": {
     "date": "2026-10-30",
@@ -780,5 +781,31 @@
     "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_300.py",
     "publicationPending": true,
     "scope": "Ordinary push after fetch confirmed zero incoming commits. Matching run/head observed live in_progress. Probe prepared but not run before CI build/deploy success. No live publication confirmation claimed."
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-10-30T08:35:15.189716+09:00",
+      "ciRun": 40971735941,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40971735941",
+      "deployedCommit": "3abd54d7ded1c099523536da637196548470c4aa",
+      "ciConclusion": "success",
+      "buildConclusion": "success",
+      "deployConclusion": "success",
+      "deploymentAttempt": 1,
+      "ciProof": "docs/translation-review/batch-024-ci-completion.json",
+      "proof": "docs/translation-review/publication-024.json",
+      "pages": 325,
+      "passed": 325,
+      "httpRetryRounds": 0,
+      "reviewedTranslationsPublished": 300,
+      "japaneseSources": 25,
+      "mathVersions": 130,
+      "texExpressions": 8492,
+      "crtVersions": 13,
+      "crtTeX": 533,
+      "crtCompletePythonBlocks": 13,
+      "crtDiagramSources": 13,
+      "scope": "Batches001-024 only. All325URL/content/canonical/lang/14hreflang/13sidebar targets passed on first probe;130mathversions8492TeX including CRT13versions533TeX,13completePythonblocks,13localizeddiagrams,references/originalSep14date/lastmod. Previous C/Rust/Python/C++ blocks and sieveimage alt/credit/liveGIFbytes retained. Current two-envelope drafts excluded. Not full-site/native-speaker/browservisual/security certification."
+    }
+  ]
 }
