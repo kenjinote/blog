@@ -586,6 +586,204 @@
         "No speed benchmark,huge allocation,full animation or browservisual/KaTeX audit.",
         "Full-siteCI/publication pending."
       ]
+    },
+    "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.md",
+      "sourceHash": "4c971bb00d7ce3a7bcaa707a334f1a62fbe42840f493ecf1e9bed72f4a106534",
+      "translationHash": "040fab6b7c56c78a5536c0c6dac489f159f23fb567c1b55d2175531df20fb9d5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original metadata/body/2Rustblocks,revised against corrected Japanese and reviewed English,then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,8TeX expressions,image/credit,5external targets and all input/memory/performance qualifications. Did not invent failures at original fixed1000."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hindi uses छलनी,अभाज्य/भाज्य,अभाज्य गुणनखंड,सूचकांक,वर्ग/वर्गमूल,विषम and बाइट. Corrected original strict less-than definition/title to inclusive up-to n,which matters at prime bounds even though1000iscomposite. Clarified ordinal/index confusion and marking versus output. Added asymptotic English gloss without claiming prior Hindi term was invalid; original transliteration variants/tags/slug preserved,localized alt/credit and None/expect explicit."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched8exact TeX expression counters and decoded generatedHTML:square bound,kpwith2<=k<p,odd2pstep,timeO(n log log n)/spaceO(n). Confirmed all primes throughn are returned,not just sqrtN;0/1empty,2included. Same proof conditions as corrected Japanese; no full Mertens proof or arbitrary-precision bit-cost claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Both Rust blocks exact to revised Japanese and generated HTML. Separate full programs and harnesses compiled with Rust1.90 Windows64bit edition2021,Dwarnings,debugchecked and optimizedchecked overflow modes. Perblock/mode2161bounds compared as full vectors against independently trial-divided primes through100000; full168line1000 output exact. usizeMAXchecked_add+expect rejection verified with catch_unwind,without huge allocation. No benchmark or fullusize/target search."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All5HTTPS targets match reviewed primaryRust/Princeton references and Commons/license credit. Existing GIF exact remote byte equality retained; localized alt survivesHTML. Source imageexists. Preserved actual datePublished2023-04-09T12:54:24+09:00,existing language-specific slug/canonical,image,tags/categories,mathtrue;single date,lastmod2026-10-29.21bundle Hugo build,multilingual1283pages,HTTPS2368HTML/41XML passed. Prior17tests passed for revised Rust source. Publication pending."
+        }
+      },
+      "summary": "Full hi sieve review against corrected Japanese,including actual Rust vector equality checks,exactmath/code HTML and credited unchanged illustration.",
+      "languageSpecificFindings": "Hindi uses छलनी,अभाज्य/भाज्य,अभाज्य गुणनखंड,सूचकांक,वर्ग/वर्गमूल,विषम and बाइट. Corrected original strict less-than definition/title to inclusive up-to n,which matters at prime bounds even though1000iscomposite. Clarified ordinal/index confusion and marking versus output. Added asymptotic English gloss without claiming prior Hindi term was invalid; original transliteration variants/tags/slug preserved,localized alt/credit and None/expect explicit.",
+      "validation": "docs/translation-review/batch-020-hi-ru-ar-validation.json",
+      "references": [
+        {
+          "url": "https://doc.rust-lang.org/reference/types/boolean.html",
+          "scope": "Complete short Boolean type page; not whole language reference."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/vec/struct.Vec.html#guarantees",
+          "scope": "Scoped contiguous-elements/size/capacity guarantee paragraphs in fetched1.99.1docs,not full6780lines or unsafe API audit. Actual compiler1.90.0 separately recorded."
+        },
+        {
+          "url": "https://introcs.cs.princeton.edu/java/41analysis/",
+          "scope": "Scoped final sieve exercise6and solution; WindowsTLS fetch after web403. Not full chapter or Mertens proof."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Animation_Sieb_des_Eratosthenes.gif",
+          "scope": "Summary,licensing,filehistory and actual current file byte equality; first frame visual only."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/primitive.usize.html#method.checked_add",
+          "scope": "Scoped signature,description,examples: returnsNone on overflow,not fullusizepage."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/option/enum.Option.html#method.expect",
+          "scope": "Scoped return/panic behavior and examples: None makes expect panic,not fullOptionpage."
+        }
+      ],
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "Other languages are counted only after their own full-body review and actual validation; no unread language receives a confirmation date.",
+        "Finite bounds<=100000 under Rust1.90 Windows64bit,not everyusize or target.",
+        "No speed benchmark,huge allocation,full animation or browservisual/KaTeX audit.",
+        "Full-siteCI/publication pending."
+      ]
+    },
+    "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.md",
+      "sourceHash": "4c971bb00d7ce3a7bcaa707a334f1a62fbe42840f493ecf1e9bed72f4a106534",
+      "translationHash": "eb04aca9a20cf72782832864aa347a4b91828befd925a0a14d8f757fe3293e61",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original metadata/body/2Rustblocks,revised against corrected Japanese and reviewed English,then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,8TeX expressions,image/credit,5external targets and all input/memory/performance qualifications. Did not invent failures at original fixed1000."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Russian uses решето Эратосфена,составное,простой множитель,индекс,квадрат/корень,нечётный,вектор and побитовая упаковка. Clarified original strict меньше1000description to inclusive bound and zero-based indices; refined grammar around symbolic n+1element count. Preserved code,square-start proof,actual RAM/memory limits,localized imagecredit/alt,original Cyrillic slug and None/expect distinction."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched8exact TeX expression counters and decoded generatedHTML:square bound,kpwith2<=k<p,odd2pstep,timeO(n log log n)/spaceO(n). Confirmed all primes throughn are returned,not just sqrtN;0/1empty,2included. Same proof conditions as corrected Japanese; no full Mertens proof or arbitrary-precision bit-cost claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Both Rust blocks exact to revised Japanese and generated HTML. Separate full programs and harnesses compiled with Rust1.90 Windows64bit edition2021,Dwarnings,debugchecked and optimizedchecked overflow modes. Perblock/mode2161bounds compared as full vectors against independently trial-divided primes through100000; full168line1000 output exact. usizeMAXchecked_add+expect rejection verified with catch_unwind,without huge allocation. No benchmark or fullusize/target search."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All5HTTPS targets match reviewed primaryRust/Princeton references and Commons/license credit. Existing GIF exact remote byte equality retained; localized alt survivesHTML. Source imageexists. Preserved actual datePublished2023-04-09T12:54:24+09:00,existing language-specific slug/canonical,image,tags/categories,mathtrue;single date,lastmod2026-10-29.21bundle Hugo build,multilingual1283pages,HTTPS2368HTML/41XML passed. Prior17tests passed for revised Rust source. Publication pending."
+        }
+      },
+      "summary": "Full ru sieve review against corrected Japanese,including actual Rust vector equality checks,exactmath/code HTML and credited unchanged illustration.",
+      "languageSpecificFindings": "Russian uses решето Эратосфена,составное,простой множитель,индекс,квадрат/корень,нечётный,вектор and побитовая упаковка. Clarified original strict меньше1000description to inclusive bound and zero-based indices; refined grammar around symbolic n+1element count. Preserved code,square-start proof,actual RAM/memory limits,localized imagecredit/alt,original Cyrillic slug and None/expect distinction.",
+      "validation": "docs/translation-review/batch-020-hi-ru-ar-validation.json",
+      "references": [
+        {
+          "url": "https://doc.rust-lang.org/reference/types/boolean.html",
+          "scope": "Complete short Boolean type page; not whole language reference."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/vec/struct.Vec.html#guarantees",
+          "scope": "Scoped contiguous-elements/size/capacity guarantee paragraphs in fetched1.99.1docs,not full6780lines or unsafe API audit. Actual compiler1.90.0 separately recorded."
+        },
+        {
+          "url": "https://introcs.cs.princeton.edu/java/41analysis/",
+          "scope": "Scoped final sieve exercise6and solution; WindowsTLS fetch after web403. Not full chapter or Mertens proof."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Animation_Sieb_des_Eratosthenes.gif",
+          "scope": "Summary,licensing,filehistory and actual current file byte equality; first frame visual only."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/primitive.usize.html#method.checked_add",
+          "scope": "Scoped signature,description,examples: returnsNone on overflow,not fullusizepage."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/option/enum.Option.html#method.expect",
+          "scope": "Scoped return/panic behavior and examples: None makes expect panic,not fullOptionpage."
+        }
+      ],
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "Other languages are counted only after their own full-body review and actual validation; no unread language receives a confirmation date.",
+        "Finite bounds<=100000 under Rust1.90 Windows64bit,not everyusize or target.",
+        "No speed benchmark,huge allocation,full animation or browservisual/KaTeX audit.",
+        "Full-siteCI/publication pending."
+      ]
+    },
+    "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.md",
+      "sourceHash": "4c971bb00d7ce3a7bcaa707a334f1a62fbe42840f493ecf1e9bed72f4a106534",
+      "translationHash": "8b994b420f267256f226ace3edcfeb87778d69cee8587b75db05138ba8cf45e4",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original metadata/body/2Rustblocks,revised against corrected Japanese and reviewed English,then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,8TeX expressions,image/credit,5external targets and all input/memory/performance qualifications. Did not invent failures at original fixed1000."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Arabic uses غربال إراتوستينس,أولي/مؤلف,عامل أولي,فهرس,مربع/جذر تربيعي,فردي,متجه and بايت. Corrected original ordinal second/third element language to zero-based indices and strict larger-than-square phrase to marking from square inclusively. Preserved source factor proof,2exception,full output range,conditional speed/memory and None/expect behavior. Localized alt/credit and original Arabic slug preserved; no visual RTL/native-speaker certification."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched8exact TeX expression counters and decoded generatedHTML:square bound,kpwith2<=k<p,odd2pstep,timeO(n log log n)/spaceO(n). Confirmed all primes throughn are returned,not just sqrtN;0/1empty,2included. Same proof conditions as corrected Japanese; no full Mertens proof or arbitrary-precision bit-cost claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Both Rust blocks exact to revised Japanese and generated HTML. Separate full programs and harnesses compiled with Rust1.90 Windows64bit edition2021,Dwarnings,debugchecked and optimizedchecked overflow modes. Perblock/mode2161bounds compared as full vectors against independently trial-divided primes through100000; full168line1000 output exact. usizeMAXchecked_add+expect rejection verified with catch_unwind,without huge allocation. No benchmark or fullusize/target search."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All5HTTPS targets match reviewed primaryRust/Princeton references and Commons/license credit. Existing GIF exact remote byte equality retained; localized alt survivesHTML. Source imageexists. Preserved actual datePublished2023-04-09T12:54:24+09:00,existing language-specific slug/canonical,image,tags/categories,mathtrue;single date,lastmod2026-10-29.21bundle Hugo build,multilingual1283pages,HTTPS2368HTML/41XML passed. Prior17tests passed for revised Rust source. Publication pending."
+        }
+      },
+      "summary": "Full ar sieve review against corrected Japanese,including actual Rust vector equality checks,exactmath/code HTML and credited unchanged illustration.",
+      "languageSpecificFindings": "Arabic uses غربال إراتوستينس,أولي/مؤلف,عامل أولي,فهرس,مربع/جذر تربيعي,فردي,متجه and بايت. Corrected original ordinal second/third element language to zero-based indices and strict larger-than-square phrase to marking from square inclusively. Preserved source factor proof,2exception,full output range,conditional speed/memory and None/expect behavior. Localized alt/credit and original Arabic slug preserved; no visual RTL/native-speaker certification.",
+      "validation": "docs/translation-review/batch-020-hi-ru-ar-validation.json",
+      "references": [
+        {
+          "url": "https://doc.rust-lang.org/reference/types/boolean.html",
+          "scope": "Complete short Boolean type page; not whole language reference."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/vec/struct.Vec.html#guarantees",
+          "scope": "Scoped contiguous-elements/size/capacity guarantee paragraphs in fetched1.99.1docs,not full6780lines or unsafe API audit. Actual compiler1.90.0 separately recorded."
+        },
+        {
+          "url": "https://introcs.cs.princeton.edu/java/41analysis/",
+          "scope": "Scoped final sieve exercise6and solution; WindowsTLS fetch after web403. Not full chapter or Mertens proof."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Animation_Sieb_des_Eratosthenes.gif",
+          "scope": "Summary,licensing,filehistory and actual current file byte equality; first frame visual only."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/primitive.usize.html#method.checked_add",
+          "scope": "Scoped signature,description,examples: returnsNone on overflow,not fullusizepage."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/option/enum.Option.html#method.expect",
+          "scope": "Scoped return/panic behavior and examples: None makes expect panic,not fullOptionpage."
+        }
+      ],
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "Other languages are counted only after their own full-body review and actual validation; no unread language receives a confirmation date.",
+        "Finite bounds<=100000 under Rust1.90 Windows64bit,not everyusize or target.",
+        "No speed benchmark,huge allocation,full animation or browservisual/KaTeX audit.",
+        "Full-siteCI/publication pending."
+      ]
     }
   },
   "stages": [
@@ -635,9 +833,44 @@
       ],
       "validation": "docs/translation-review/batch-020-de-id-validation.json",
       "publicationPending": true
+    },
+    {
+      "date": "2026-10-29",
+      "languages": [
+        "hi",
+        "ru",
+        "ar"
+      ],
+      "validation": "docs/translation-review/batch-020-hi-ru-ar-validation.json",
+      "publicationPending": true
     }
   ],
   "reviewEvidenceOverrides": {
     "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.en.md": "docs/translation-review/batch-020-en-revision.json"
+  },
+  "finalAssembly": {
+    "date": "2026-10-29",
+    "validation": "docs/translation-review/batch-020-final-validation.json",
+    "versions": 13,
+    "reviewedTranslations": 12,
+    "sourceReviewed": true,
+    "texExpressions": 104,
+    "exactRustBlocks": 26,
+    "fullVectorBoundComparisons": 112372,
+    "completeProgramRunsWith168ExactOutputs": 52,
+    "multilingualPages": 1283,
+    "httpsHtml": 2368,
+    "httpsXml": 41,
+    "repositoryTests": 17,
+    "reviewEvidenceOverrides": {
+      "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.en.md": "docs/translation-review/batch-020-en-revision.json"
+    },
+    "publicationPending": true,
+    "limitations": [
+      "AI,not human/native-speaker certification.",
+      "Preserved actual Rust execution evidence matched to current hashes; no fabricated new runs.",
+      "Finite bounds<=100000 under Rust1.90Windows64bit,not everyusize/target.",
+      "No timing benchmark,hugeallocation,fullanimation/browservisual/KaTeX or cryptographic audit."
+    ]
   }
 }

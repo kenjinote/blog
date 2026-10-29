@@ -2495,6 +2495,36 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-020.json",
       "evidenceHash": "8f282f647907a71c9c144928d2be5f81dd59364e2fe549ef4e10a701299a6c85"
+    },
+    "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.hi.md": {
+      "source": "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c971bb00d7ce3a7bcaa707a334f1a62fbe42840f493ecf1e9bed72f4a106534",
+      "translationHash": "040fab6b7c56c78a5536c0c6dac489f159f23fb567c1b55d2175531df20fb9d5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-020.json",
+      "evidenceHash": "ac22583eb7a742df01e89b23c7c5e156486d412d2801036c5fa8844a1819ac2c"
+    },
+    "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.ru.md": {
+      "source": "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c971bb00d7ce3a7bcaa707a334f1a62fbe42840f493ecf1e9bed72f4a106534",
+      "translationHash": "eb04aca9a20cf72782832864aa347a4b91828befd925a0a14d8f757fe3293e61",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-020.json",
+      "evidenceHash": "e40cf26963bd35d4e3d8edee7f2c3ad0dcab76cf94773c1c9d6093b4738aa07a"
+    },
+    "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.ar.md": {
+      "source": "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4c971bb00d7ce3a7bcaa707a334f1a62fbe42840f493ecf1e9bed72f4a106534",
+      "translationHash": "8b994b420f267256f226ace3edcfeb87778d69cee8587b75db05138ba8cf45e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-020.json",
+      "evidenceHash": "b0d4cc1d0d888f544a084b04c313921707c64dc80b5b2398535eef46f03f6607"
     }
   }
 }

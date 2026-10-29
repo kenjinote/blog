@@ -1,0 +1,616 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T17:07:10.912092+09:00",
+  "scope": "Fresh all13version HTML/exactRust/exactTeX/metadata/imagealt/expected language-map checks,joined to preserved actual Rust executions. Does not claim duplicate new executable runs or automated prose approval.",
+  "versions": [
+    {
+      "language": "ja",
+      "sha256": "4c971bb00d7ce3a7bcaa707a334f1a62fbe42840f493ecf1e9bed72f4a106534",
+      "canonical": "https://kenji.blog/p/%E3%82%A8%E3%83%A9%E3%83%88%E3%82%B9%E3%83%86%E3%83%8D%E3%82%B9%E3%81%AE%E7%AF%A9%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%E7%B4%A0%E6%95%B0%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-ja-en-cn-tw-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "en",
+      "sha256": "f82074fcf21d70f06a016ad89e52e1af28a4eb5ee5e311ff0580fafce744a9cc",
+      "canonical": "https://kenji.blog/en/p/sieve-of-eratosthenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEprime-number%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-ja-en-cn-tw-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "zh-cn",
+      "sha256": "3576ebdc3f103031da07f5b4ee0a21a67f032ed0e68e6909c7d609cd96c3a3a4",
+      "canonical": "https://kenji.blog/zh-cn/p/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AD%9B%E6%B3%95%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%E7%B4%A0%E6%95%B0%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-ja-en-cn-tw-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "zh-tw",
+      "sha256": "9fd94ea4e2b662fb5b405ab9d3276f9ca5da1a42af1ce3b5d20143689771234c",
+      "canonical": "https://kenji.blog/zh-tw/p/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AF%A9%E6%B3%95%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%E8%B3%AA%E6%95%B8%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-ja-en-cn-tw-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "es",
+      "sha256": "c180b14fb226271492f9d1ecc1b3280f53e86d5db858787dd7e36d8924896f8b",
+      "canonical": "https://kenji.blog/es/p/criba-de-erat%C3%B3stenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEn%C3%BAmero-primo%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-es-ko-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "ko",
+      "sha256": "a22a653abef2fb8350a8c109521eb28222ae611a21ecb1623b73077f1c41b674",
+      "canonical": "https://kenji.blog/ko/p/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98-%EC%B2%B4%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%EC%86%8C%EC%88%98%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-es-ko-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "pt",
+      "sha256": "c20e52a0444f68f8c1f2a5bb61a82bdb528eda2ae17a5ba1f387da2cb28ac69c",
+      "canonical": "https://kenji.blog/pt/p/crivo-de-erat%C3%B3stenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEn%C3%BAmero-primo%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-pt-fr-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "fr",
+      "sha256": "87c4c905889cffadd71c94b97a140c416517e5b3ab0a7eb9a8e73e334fbbdd32",
+      "canonical": "https://kenji.blog/fr/p/crible-d%C3%A9ratosth%C3%A8ne%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEnombre-premier%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-pt-fr-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "de",
+      "sha256": "1ae8ccf4f3cdf0e01c621c3f4961c9022a2af8b3f3ae7c952ae766323c8b2f0a",
+      "canonical": "https://kenji.blog/de/p/sieb-des-eratosthenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEprimzahl%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-de-id-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "id",
+      "sha256": "e613e190a0e407d58e9d291d37d29a959f695eb3d3b21204515e1a98504c9f4d",
+      "canonical": "https://kenji.blog/id/p/saringan-eratosthenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEbilangan-prima%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-de-id-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "hi",
+      "sha256": "040fab6b7c56c78a5536c0c6dac489f159f23fb567c1b55d2175531df20fb9d5",
+      "canonical": "https://kenji.blog/hi/p/%E0%A4%8F%E0%A4%B0%E0%A4%BE%E0%A4%9F%E0%A5%8B%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%A8%E0%A5%80%E0%A4%9C-%E0%A4%95%E0%A5%80-%E0%A4%9B%E0%A4%B2%E0%A4%A8%E0%A5%80%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%E0%A4%85%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF-%E0%A4%B8%E0%A4%82%E0%A4%96%E0%A5%8D%E0%A4%AF%E0%A4%BE%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-hi-ru-ar-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "ru",
+      "sha256": "eb04aca9a20cf72782832864aa347a4b91828befd925a0a14d8f757fe3293e61",
+      "canonical": "https://kenji.blog/ru/p/%D1%80%D0%B5%D1%88%D0%B5%D1%82%D0%BE-%D1%8D%D1%80%D0%B0%D1%82%D0%BE%D1%81%D1%84%D0%B5%D0%BD%D0%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5-%D1%87%D0%B8%D1%81%D0%BB%D0%BE%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-hi-ru-ar-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    },
+    {
+      "language": "ar",
+      "sha256": "8b994b420f267256f226ace3edcfeb87778d69cee8587b75db05138ba8cf45e4",
+      "canonical": "https://kenji.blog/ar/p/%D8%BA%D8%B1%D8%A8%D8%A7%D9%84-%D8%A5%D8%B1%D8%A7%D8%AA%D9%88%D8%B3%D8%AA%D9%8A%D9%86%D8%B3%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A3%D9%88%D9%84%D9%8A%D8%A9%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executionEvidence": "docs/translation-review/batch-020-hi-ru-ar-validation.json",
+      "executions": [
+        {
+          "block": 1,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 1,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        },
+        {
+          "block": 2,
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "sampleOutputExact": true,
+          "fullVectorBoundsComparedToIndependentTrialDivision": 2161,
+          "usizeMaxCheckedAddPanic": true
+        }
+      ],
+      "texExpressions": 8,
+      "allTexPreserved": true,
+      "rustBlocksExact": 2,
+      "imageAltPreserved": true,
+      "datePublishedPreserved": true,
+      "all14HreflangAnd13SidebarUrlsExact": true
+    }
+  ],
+  "texExpressions": 104,
+  "rustBlocksExact": 26,
+  "fullVectorBoundComparisons": 112372,
+  "completeProgramRunsWith168ExactOutputs": 52,
+  "gifSha256": "749afb4300f631891b1f76a41e334bbef038bae11a1a2dd574e65724ccb249d9",
+  "publicationPending": true,
+  "limitations": [
+    "AI,not human/native-speaker certification.",
+    "Finite bounds<=100000,Rust1.90Windows64bit,not everyusize/target.",
+    "No timing benchmark,hugeallocation,fullanimation/browservisual/KaTeX or cryptographic audit."
+  ]
+}
