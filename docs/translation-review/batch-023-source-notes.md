@@ -52,3 +52,8 @@
 ## Françaisの確認
 
 修正前後のフランス語全文・メタデータ・全2図を独立に読了。petit théorème,congruence,premiers entre eux,inverse,base,exposant,module,reste,représentant,indicatrice d’Euler,pseudopremier,théorème des restes chinoisを照合。元のnombres réelsは具体例の意味が実数とも読めるため整数例として整理し、premier avecという有効な用語自体を誤訳扱いしない。Crypto/graphieの途中から暗号資産記事へ飛ぶリンク、自己・伝記の反復リンクを除去。condition nécessaire／preuve、correction／confidentialité、primitive／schéma de chiffrement、RSA brut／実用方式を区別。Carmichaelの互いに素な全底条件、小さい整数と底範囲、相異素数と全代表元CRT、独立一様底での条件付き誤通過率と事後確率を照合。全現代暗号への普遍的依存の断定を整理し、性・数の一致と数式の否定を再読した。 各58TeX・図5辺／5辺とソース全文、14hreflang／13切替先、3外部・2内部参照、公開日と画像ハッシュをdocs/translation-review/batch-023-fr-validation.jsonで確認。補助算術は当該検証呼出しで1回実行した共通検査であり、各翻訳での実行と重複計上しない。24記事束の多言語1387ページ、HTTPS2540HTML／41XMLを通過。確認日2026-10-29、AI。残る5翻訳と公開確認は未完了。
+
+
+## Deutschの確認
+
+修正前後のドイツ語全文・メタデータ・全2図を独立に読了。kleiner Satz von Fermat,Kongruenz,teilerfremd,Inverses,Basis,Exponent,Modulus,Rest,Repräsentant,eulersche Phi-Funktion,Pseudoprimzahl,chinesischer Restsatzを照合。元のmit der Potenz potenziertという重複表現を整理し、必要条件とPrimzahlbeweis、KorrektheitとVertraulichkeit、PrimitiveとVerschlüsselungsverfahrenを区別。図のwahrscheinlich eine PrimzahlをTest für diese Basis bestanden: kein Primzahlbeweisへ訂正。Carmichaelの互いに素な全底条件、独立一様底と事後確率、相異素数と全代表元CRT証明を反映。自己・伝記への反復リンクと現代暗号全体への普遍的依存の断定を整理し、Modulも有効な呼称だがここではModulusで一貫させた。 各58TeX・図5辺／5辺とソース全文、14hreflang／13切替先、3外部・2内部参照、公開日と画像ハッシュをdocs/translation-review/batch-023-de-validation.jsonで確認。補助算術は当該検証呼出しで1回実行した共通検査であり、各翻訳での実行と重複計上しない。24記事束の多言語1387ページ、HTTPS2540HTML／41XMLを通過。確認日2026-10-29、AI。残る4翻訳と公開確認は未完了。

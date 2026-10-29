@@ -280,6 +280,46 @@
         "No browser visual/RTL/KaTeX/Mermaid runtime certification.",
         "Publication and live checks pending."
       ]
+    },
+    "post/fermats-little-theorem/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/fermats-little-theorem/index.md",
+      "sourceHash": "05b557bc6703982b0176505857405e7ab09f7cc82988041dd1d8adbc6ada498c",
+      "translationHash": "6733d4bff18fe7d913f3364037cae988add5198a233006f9ed956a1be588f5ba",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and revised German independently,allmetadata/body/two diagram sources,andcompare alltopics against currentJapanese. Explicit assumptions,proof,coprime cancellation,base restrictions,necessarycondition-versus-proof,Carmichael andall-representativeRSA CRT validity included."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "修正前後のドイツ語全文・メタデータ・全2図を独立に読了。kleiner Satz von Fermat,Kongruenz,teilerfremd,Inverses,Basis,Exponent,Modulus,Rest,Repräsentant,eulersche Phi-Funktion,Pseudoprimzahl,chinesischer Restsatzを照合。元のmit der Potenz potenziertという重複表現を整理し、必要条件とPrimzahlbeweis、KorrektheitとVertraulichkeit、PrimitiveとVerschlüsselungsverfahrenを区別。図のwahrscheinlich eine PrimzahlをTest für diese Basis bestanden: kein Primzahlbeweisへ訂正。Carmichaelの互いに素な全底条件、独立一様底と事後確率、相異素数と全代表元CRT証明を反映。自己・伝記への反復リンクと現代暗号全体への普遍的依存の断定を整理し、Modulも有効な呼称だがここではModulusで一貫させた。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "CurrentJapanese and selected German each58TeX exact in source/decodedHTML. Allconditions andproofs manually compared. AuxiliaryPython onceper validation invocation checks5025Fermat cases,4658permutations,320coprimebases for561,and3426RSArepresentatives across4primepairs. Shared arithmetic isnot counted as executed onceper translation orarticleprogram."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable articlecode;two localizedMermaid sources andtopologies5flow/5sequenceedges reviewed andexact in generatedHTML. Auxiliaryverifier arithmetic is separate. No runtime/visual diagram certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three scopedprimaryreferences DLMF/HAC/RFC8017 andtwo reviewed matching German internalRSA/primalitytargets exact andexist in24bundleHTML. OriginalSep20publicationdate/slug/imagehash/tags/categories preserved;duplicateSep24date removedonly in this reviewed version,lastmodOct29,math/Mermaid enabled. Multilingual1387pages,HTTPS2540HTML/41XML pass. Existing17tests passed atbatch022,not rerunfor this proof. Publication pending."
+        }
+      },
+      "summary": "Full German review against correctedJapanese:theorem assumptions,proof,Fermat limitations,andRSA correctness distinctfrom secureencryption.",
+      "languageSpecificFindings": "修正前後のドイツ語全文・メタデータ・全2図を独立に読了。kleiner Satz von Fermat,Kongruenz,teilerfremd,Inverses,Basis,Exponent,Modulus,Rest,Repräsentant,eulersche Phi-Funktion,Pseudoprimzahl,chinesischer Restsatzを照合。元のmit der Potenz potenziertという重複表現を整理し、必要条件とPrimzahlbeweis、KorrektheitとVertraulichkeit、PrimitiveとVerschlüsselungsverfahrenを区別。図のwahrscheinlich eine PrimzahlをTest für diese Basis bestanden: kein Primzahlbeweisへ訂正。Carmichaelの互いに素な全底条件、独立一様底と事後確率、相異素数と全代表元CRT証明を反映。自己・伝記への反復リンクと現代暗号全体への普遍的依存の断定を整理し、Modulも有効な呼称だがここではModulusで一貫させた。",
+      "validation": "docs/translation-review/batch-023-de-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "Other4translations remain unread andunreviewed atthis stage.",
+        "Finite auxiliary arithmetic is not exhaustive proof,article-code execution or cryptographic audit.",
+        "No browser visual/RTL/KaTeX/Mermaid runtime certification.",
+        "Publication and live checks pending."
+      ]
     }
   },
   "stages": [
@@ -331,6 +371,14 @@
         "fr"
       ],
       "validation": "docs/translation-review/batch-023-fr-validation.json",
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-29",
+      "languages": [
+        "de"
+      ],
+      "validation": "docs/translation-review/batch-023-de-validation.json",
       "publicationPending": true
     }
   ]

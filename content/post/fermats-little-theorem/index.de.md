@@ -1,121 +1,104 @@
 ---
 title: "Der kleine Satz von Fermat: Die Natur der Primzahlen und die Grundlage der modernen Kryptographie (RSA)"
-date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung des kleinen Satzes von Fermat, vom intuitiven Verständnis bis hin zum mathematischen Beweis und seiner praktischen Anwendung in der RSA-Kryptographie."
 slug: "fermats-little-theorem"
-date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags:
   - "Zahlentheorie"
   - "Kryptographie"
   - "Primzahlen"
+date: "2026-09-20T15:00:00+09:00"
+lastmod: 2026-10-29
+math: true
+mermaid: true
 ---
 
-In der modernen Internetgesellschaft verdanken wir unsere Fähigkeit zur sicheren Kommunikation der **Kryptographie**. An der eigentlichen Basis dieser Kryptographie liegt ein wunderschöner Satz, der im 17. Jahrhundert von dem Mathematiker [Pierre de Fermat](https://kenji.blog/de/p/fermat/) entdeckt wurde.
+Der kleine Satz von Fermat beschreibt Potenzen modulo einer Primzahl. Er liefert eine notwendige Bedingung für Primalität und hilft zu erklären, warum die RSA-Entschlüsselung korrekt ist. Korrekte Entschlüsselung allein garantiert jedoch keine Vertraulichkeit. Dieser Artikel unterscheidet den Satz, Beispiele, den Beweis, Primzahltests und die Anwendung auf RSA.
 
-In diesem Artikel werden wir **den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/)**, einen entscheidenden Grundstein der Zahlentheorie, auf leicht verständliche Weise erklären und dabei seine Bedeutung, seinen Beweis und seine Anwendung in der modernen [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie behandeln.
+## Der kleine Satz von Fermat
 
-## Was ist der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/)?
+Für eine Primzahl $p$ und eine ganze Zahl $a$ mit $p\nmid a$ gilt:
 
-[Der kleine Satz von Fermat](https://kenji.blog/de/p/fermats-little-theorem/) ist ein extrem einfacher, aber mächtiger Satz, der die Beziehung zwischen Primzahlen und ganzen Zahlen aufzeigt.
+$$ a^{p-1}\equiv1\pmod p. $$
 
-Der Satz besagt Folgendes:
+Kongruenz bedeutet, dass die Differenz beider Seiten ein Vielfaches des Modulus ist. Hier lässt die Potenz bei Division durch $p$ den Rest 1. Eine für jede ganze Zahl $a$ gültige Form lautet:
 
-> **[Der kleine Satz von Fermat](https://kenji.blog/de/p/fermats-little-theorem/)**
-> Sei $p$ eine Primzahl und $a$ eine beliebige ganze Zahl, die nicht durch $p$ teilbar ist (was bedeutet, dass $a$ und $p$ teilerfremd sind). Dann gilt die folgende Kongruenzrelation:
-> 
-> $$ a^{p-1} \equiv 1 \pmod p $$
+$$ a^p\equiv a\pmod p. $$
 
-Dies bedeutet, dass "wenn die ganze Zahl $a$ mit der Potenz $p-1$ potenziert und durch die Primzahl $p$ dividiert wird, der Rest immer $1$ ist".
+Falls $p\nmid a$, multiplizieren wir die erste Kongruenz mit $a$. Falls $p\mid a$, sind beide Seiten der zweiten Kongruenz kongruent zu null. Um die Bedingung wegzulassen, muss auch dieser Fall gesondert geprüft werden.
 
-Durch Multiplikation beider Seiten mit $a$ kann er in eine allgemeinere Form umgewandelt werden, die die Bedingung entfernt, dass "$a$ kein Vielfaches von $p$ ist".
+### Beispiele
 
-> $$ a^p \equiv a \pmod p $$
-> (Gilt für jede ganze Zahl $a$)
+- $p=5$, $a=2$: $2^4=16=5\cdot3+1$.
+- $p=7$, $a=3$: $3^6=729=7\cdot104+1$.
 
-### Überprüfung an konkreten Beispielen
+Beide Beispiele erfüllen die Voraussetzungen und liefern Rest 1. Selbst bei einem Primzahlmodulus fällt eine durch ihn teilbare Basis nicht unter die erste Aussage.
 
-Setzen wir einige tatsächliche Zahlen ein, um zu überprüfen, ob der Satz zutrifft.
+## Beweis durch Permutation der Reste
 
-**Beispiel 1: $p = 5$ (prim), $a = 2$**
-- $p-1 = 4$.
-- $a^{p-1} = 2^4 = 16$.
-- Wenn $16$ durch $5$ geteilt wird, ist der Quotient $3$ und **der Rest ist $1$** ($16 \equiv 1 \pmod 5$).
+Wir multiplizieren jedes Element von $S=\{1,2,\ldots,p-1\}$ mit $a$ und reduzieren modulo $p$. Kein resultierender Rest ist null. Gilt $ia\equiv ja\pmod p$, können wir wegen der Teilerfremdheit von $a$ und $p$ den Faktor $a$ kürzen und erhalten $i\equiv j\pmod p$. Die Indizes sind positiv und kleiner als der Modulus, also ist $i=j$.
 
-**Beispiel 2: $p = 7$ (prim), $a = 3$**
-- $p-1 = 6$.
-- $a^{p-1} = 3^6 = 729$.
-- Wenn $729$ durch $7$ geteilt wird, ist der Quotient $104$ und **der Rest ist $1$** ($729 = 7 \times 104 + 1$).
+Die resultierenden Reste bilden somit eine Permutation der ursprünglichen von null verschiedenen Reste. Durch Multiplikation aller Elemente folgt:
 
-Auf diese Weise gilt dieses mysteriöse Gesetz, egal welche Primzahl $p$ Sie wählen.
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-## Beweis des Satzes
+Da $(p-1)!$ zu $p$ teilerfremd ist, können wir mit seinem Inversen multiplizieren und den gemeinsamen Faktor kürzen. Daraus folgt der Satz. In Kongruenzen darf man nicht ohne Bedingungen durch einen beliebigen Faktor teilen.
 
-Es gibt mehrere Ansätze, um den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) zu beweisen, aber hier stellen wir eine repräsentative Beweismethode vor, die auf der Zahlentheorie basiert.
+## Der Fermat-Test prüft eine notwendige Bedingung
 
-Sei $p$ eine Primzahl und $a$ eine ganze Zahl, die nicht durch $p$ teilbar ist.
-Betrachten Sie die Menge $S = \{1, 2, 3, \dots, p-1\}$. Sei $S'$ eine neue Menge, die durch Multiplikation jedes Elements dieser Menge mit $a$ gebildet wird.
+Zunächst behandeln wir ganze Zahlen unter 2 als nicht prim, 2 und 3 als prim und alle übrigen geraden Zahlen als zusammengesetzt. Für eine verbleibende ungerade Zahl $n>3$ wählen wir eine Basis $a$ mit $2\le a\le n-2$.
 
-$$ S' = \{a, 2a, 3a, \dots, (p-1)a\} $$
+$$ a^{n-1}\not\equiv1\pmod n $$
 
-Betrachten Sie den Rest, wenn jedes Element dieser Menge $S'$ durch $p$ geteilt wird. Überraschenderweise sind alle diese Reste verschieden, und außerdem ist keiner von ihnen $0$. Mit anderen Worten, die Menge der Reste stimmt perfekt mit der ursprünglichen Menge $S$ überein (wenn man die Reihenfolge ignoriert).
-
-Daher sind das Produkt der Elemente von $S$ und das Produkt der Elemente von $S'$ kongruent modulo $p$.
-
-$$ 1 \times 2 \times \dots \times (p-1) \equiv a \times 2a \times \dots \times (p-1)a \pmod p $$
-
-Wenn man dies vereinfacht, ergibt sich:
-
-$$ (p-1)! \equiv a^{p-1} \times (p-1)! \pmod p $$
-
-Da $(p-1)!$ und $p$ teilerfremd sind, können wir beide Seiten durch $(p-1)!$ teilen (eine Eigenschaft der Division in Kongruenzrelationen). Daraus leitet sich der folgende Satz ab:
-
-$$ 1 \equiv a^{p-1} \pmod p $$
-
-Dies schließt den Beweis ab.
-
-## [Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest: Anwendung beim Primzahlentest
-
-Dieser Satz wird in einem **Primzahltest-Algorithmus** (dem [Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest) angewendet, um zu bestimmen, ob eine gegebene Zahl prim ist.
-
-Wenn Sie wissen wollen, ob eine riesige Zahl $n$ prim ist, wählen Sie zufällig $a$ und überprüfen Sie, ob $a^{n-1} \equiv 1 \pmod n$ gilt. Wenn dies nicht zutrifft, ist $n$ **absolut keine Primzahl** (es ist eine zusammengesetzte Zahl).
+zeigt, dass $n$ zusammengesetzt ist. Ist der Rest dagegen 1, hat der Test mit dieser Basis lediglich keinen Verstoß gegen die notwendige Bedingung gefunden; die Primalität ist damit nicht bewiesen.
 
 ```mermaid
 flowchart TD
-    Start("Start") --> ChooseA("Zufällige ganze Zahl a wählen")
-    ChooseA --> Calc("Berechne a^(n-1) mod n")
-    Calc --> Check{"Ist das Ergebnis 1?"}
-    Check -- "Nein" --> Composite("n ist eine zusammengesetzte Zahl (nicht prim)")
-    Check -- "Ja" --> ProbPrime("n ist wahrscheinlich eine Primzahl")
+    Input["Ungerades n nach Behandlung kleiner und gerader Zahlen"] --> Choose["Basis a von 2 bis n-2 wählen"]
+    Choose --> Calc["a hoch n-1 modulo n berechnen"]
+    Calc --> Check{"Ist der Rest 1?"}
+    Check -- No --> Composite["n ist zusammengesetzt"]
+    Check -- Yes --> Pass["Test für diese Basis bestanden: kein Primzahlbeweis"]
 ```
 
-Da es jedoch Ausnahmezahlen gibt, die sogenannten **Carmichael-Zahlen**, die zusammengesetzte Zahlen sind, aber dennoch $a^{n-1} \equiv 1 \pmod n$ erfüllen, kann dieser Test allein die Primalität nicht definitiv beweisen. Daher werden in der Praxis Methoden wie der Miller-Rabin-Primzahltest verwendet.
+Zum Beispiel ist $341=11\cdot31$ zusammengesetzt, besteht aber den Test zur Basis 2. Eine solche Zahl heißt Pseudoprimzahl zu dieser Basis. Eine Carmichael-Zahl ist zusammengesetzt und erfüllt die Fermat-Kongruenz für **jede zur Zahl teilerfremde Basis**. Das kleinste Beispiel $561=3\cdot11\cdot17$ besteht den Test zur Basis 2, scheitert aber an der nicht teilerfremden Basis 3.
 
-## Anwendung in der modernen Kryptographie: [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie
+Mehrere zufällige Basen liefern keine einheitlich kleine Fehlerschranke für alle zusammengesetzten Zahlen. [HAC, Kapitel 4](https://cacr.uwaterloo.ca/hac/about/chap4.pdf) unterscheidet Fermat und Miller–Rabin. Für eine feste ungerade zusammengesetzte Zahl beträgt die Wahrscheinlichkeit, $k$ Miller–Rabin-Tests mit unabhängigen, gleichverteilten zufälligen Basen fälschlich zu bestehen, höchstens $4^{-k}$. Dies ist nicht die Wahrscheinlichkeit, dass eine Zahl nach bestandenem Test zusammengesetzt ist. Die Schranke gilt auch nicht automatisch für beliebige feste Basen. Siehe den [ausführlichen Artikel zu Primzahltests](https://kenji.blog/de/p/cpp-fast-prime-testing-miller-rabin/).
 
-Die wichtigste Anwendung des kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/) (und seiner Verallgemeinerung, des **Satzes von Euler**) ist die **[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie**, die der Internetsicherheit zugrunde liegt.
+## Bedingungen für korrekte RSA-Entschlüsselung
 
-Die RSA-Kryptographie beruht für ihre Sicherheit auf der Schwierigkeit, massive Zahlen zu faktorisieren. Innerhalb ihres Mechanismus spielt das Prinzip des "kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/)" eine entscheidende Rolle bei den Schlüsselerzeugungs- und Entschlüsselungsprozessen.
+Wir wählen verschiedene Primzahlen $p,q$ und setzen $n=pq$. Mit der eulerschen Phi-Funktion $\varphi(n)=(p-1)(q-1)$ wählen wir in dieser Lehrkonstruktion einen öffentlichen Exponenten mit $1<e<\varphi(n)$ und $\gcd(e,\varphi(n))=1$. Sein Inverses ist der positive private Exponent $d$:
+
+$$ ed\equiv1\pmod{\varphi(n)}. $$
+
+Der öffentliche Schlüssel ist $(n,e)$, eine vereinfachte Darstellung des privaten Schlüssels ist $(n,d)$. Reale private Schlüssel können Faktoren für schnellere Berechnungen enthalten; auch diese sind geheim. Die mathematischen Operationen für einen ganzzahligen Repräsentanten $0\le M<n$ lauten:
+
+$$ C=M^e\bmod n,\qquad M'=C^d\bmod n. $$
 
 ```mermaid
 sequenceDiagram
-    participant Sender as "Sender"
-    participant Receiver as "Empfänger"
-    Note over Receiver: "Öffentlichen Schlüssel (e, n) und privaten Schlüssel (d) generieren"
-    Receiver->>Sender: "Öffentlichen Schlüssel (e, n) senden"
-    Note over Sender: "Klartext M verschlüsseln"
-    Note over Sender: "C = M^e mod n"
-    Sender->>Receiver: "Geheimtext C senden"
-    Note over Receiver: "Geheimtext C entschlüsseln"
-    Note over Receiver: "M = C^d mod n"
+    participant Sender as Sender
+    participant Receiver as Empfänger
+    Note over Sender,Receiver: Lehrbeispiel für rohes RSA: Nachrichtenkodierung weggelassen
+    Receiver->>Sender: Öffentlichen Schlüssel (n,e) übergeben
+    Sender->>Sender: Ganzzahligen Repräsentanten M von 0 bis n-1 vorbereiten
+    Sender->>Sender: C = M^e mod n berechnen
+    Sender->>Receiver: C übergeben
+    Receiver->>Receiver: M' = C^d mod n berechnen
 ```
 
-In der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie werden zwei riesige Primzahlen, $p$ und $q$, vorbereitet, und wir setzen $n = p \times q$.
-Nach dem Satz von Euler werden die Schlüssel ($e$ und $d$) so konstruiert, dass $M^{ed} \equiv M \pmod n$ bei den Verschlüsselungs- und Entschlüsselungsprozessen gilt. Hierbei beruht das magische Phänomen, dass der Klartext $M$ in seine ursprüngliche Form zurückkehrt, im Wesentlichen auf den mathematischen Eigenschaften, die durch den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) garantiert werden.
+Ist $\gcd(M,n)=1$, ergibt der [Satz von Euler](https://dlmf.nist.gov/27.2#E8) die Kongruenz $M^{\varphi(n)}\equiv1\pmod n$. Da $ed=1+t\varphi(n)$ für eine nichtnegative ganze Zahl $t$ gilt, stellt die Entschlüsselung den ursprünglichen Repräsentanten wieder her.
 
-## Fazit
+Für nicht teilerfremde Repräsentanten betrachten wir jede Primzahl als Modulus. Falls $p\mid M$, sind $M^{ed}$ und $M$ beide kongruent zu null. Andernfalls liefern der kleine Satz von Fermat und $p-1\mid ed-1$ die erforderliche Kongruenz. Dasselbe gilt modulo $q$. Nach dem chinesischen Restsatz folgt:
 
-Ein kleiner Satz, der im 17. Jahrhundert von [Pierre de Fermat](https://kenji.blog/de/p/fermat/) entdeckt wurde, ist zu einem unverzichtbaren Element geworden, das Hunderte von Jahren später die Grundlage der Informationssicherheit in der modernen Gesellschaft bildet.
+$$ M^{ed}\equiv M\pmod p,\quad M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod n. $$
 
-**[Der kleine Satz von Fermat](https://kenji.blog/de/p/fermats-little-theorem/)** kann als eines der schönsten Beispiele dafür angesehen werden, wie reine Mathematik mit praktischer Technologie (Kryptographie und Algorithmen) in Verbindung steht. Man kann nicht umhin, über die Tiefe der Mathematik und die Breite ihrer Anwendbarkeit zu staunen.
+Damit werden alle Repräsentanten wiederhergestellt, einschließlich null und der Vielfachen der Faktoren. Durch Faktorisieren des Modulus lässt sich der private Exponent berechnen. Das bedeutet jedoch nicht, dass die allgemeine RSA-Inversion und die Faktorisierung nachweislich gleich schwierig sind.
+
+## Korrektheit und Sicherheit unterscheiden
+
+Das rohe RSA im Diagramm ist deterministisch und reicht als sicheres Verschlüsselungsverfahren nicht aus. [Abschnitte 5 und 7 von RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html) unterscheiden Primitive und Verschlüsselungsverfahren. Für den praktischen Einsatz benötigt man eine auditierte Bibliothek, ein geeignetes Verfahren wie RSAES-OAEP, passende Parameter, sichere Zufallswerte und Schlüsselverwaltung. RSASSA-PSS ist ein eigenständiges Signaturverfahren.
+
+Der kleine Satz von Fermat bildet eine Grundlage für das Verständnis modularer Arithmetik und der RSA-Mathematik. Satz, Primzahltest, gültige Schlüssel und praktische kryptographische Verfahren müssen auseinandergehalten werden. Die [RSA-Einführung](https://kenji.blog/de/p/rsa-encryption-math-explained-for-beginners/) erläutert diese Unterschiede genauer.
