@@ -54,3 +54,8 @@
 ## Traditional Chineseの確認
 
 原文・修正版の繁体字全文を読了。元の歐拉も有効な訳であることを保ち、他の校閲済み記事と合わせて尤拉へ整理。模算數を模運算／同餘の説明へ、曖昧な指數を冪次運算へ改善。質數、合數、互質、模反元素、餘數、底數、模數、金鑰、私鑰、型別、位元、記憶體、函式庫、亂數と簽章を照合。「結果的地方」という直訳見出し、欧幾里得の伝記への部分リンク、全通信の機密性を保証する断定を除去。CRT、必要条件、条件付き誤通過率、原語と方案、全代表元素の意味を照合。 修正前後のメタデータ・本文全体・全3コード・2図を別出力で読了し、docs/translation-review/batch-022-tw-validation.jsonで各82TeXとHTML・全コード、図13辺／6辺、C++各モード7480ケース、Pythonの全3233代表元等を確認した。多言語1351ページとHTTPS2481HTML／41XMLを通過。既存17テストは先行日英段階で通過したもので、この言語で再実行したとは数えない。確認日2026-10-29、AI。残る9翻訳と公開確認は未完了。
+
+
+## Spanishの確認
+
+修正前後のスペイン語全文を読了。小定理・合同・互いに素・逆元・底・剰余・代表元・CRTをpequeño teorema,congruencia,coprimo,inverso,base,resto,representante,teorema chino del restoで照合。元のcuadratura sucesivaを積分の求積と取り違えにくいexponenciación por cuadradosへ整理し、Pythonリストをmatrizとする説明も除去。prueba de primalidadはテストにも使う語なので図の結論をno demuestra la primalidadとして証明との区別を明示。主語直後の不要なコンマを直し、Euclidesの日本語伝記への部分リンクとWhatsApp/Amazonへの普遍的依存の断定を除去。正当性／機密性、primitiva／esquema、条件付き誤通過率と事後確率を照合。 修正前後のメタデータ・本文全体・全3コード・2図を別出力で読了し、docs/translation-review/batch-022-es-validation.jsonで各82TeXとHTML・全コード、図13辺／6辺、C++各モード7480ケース、Pythonの全3233代表元等を確認した。多言語1351ページとHTTPS2481HTML／41XMLを通過。既存17テストは先行日英段階で通過したもので、この言語で再実行したとは数えない。確認日2026-10-29、AI。残る8翻訳と公開確認は未完了。
