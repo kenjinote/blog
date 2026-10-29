@@ -1,9 +1,9 @@
 ---
-title: 'La paradoja de los dos sobres: el colapso lógico y la trampa de las decisiones provocados por el valor esperado infinito'
-date: "2026-09-24T19:44:38+09:00"
+title: "La paradoja de los dos sobres: probabilidad condicional y esperanza infinita"
+date: "2026-09-10T00:00:00+09:00"
+lastmod: 2026-10-30
 slug: 'two-envelopes-paradox'
-description: 'Dos sobres frente a ti. Uno contiene el doble de dinero que el otro. Si cambias de sobre sin abrir el tuyo, ¿siempre ganarás según el valor esperado? A través de "La paradoja de los dos sobres", donde la intuición y las matemáticas chocan violentamente, explicaremos en detalle los peligros del valor esperado y el concepto de infinito.'
-date: '2026-09-10T00:00:00+09:00'
+description: "¿Conviene cambiar de sobre? Calcula la ganancia condicional desde una distribución a priori, distingue normalización y esperanza finita, y examina contraejemplos basados en distribuciones propias con esperanza infinita."
 image: 'img/two_envelopes.jpg'
 math: true
 mermaid: true
@@ -14,152 +14,174 @@ tags:
   - 'Infinito'
 ---
 
-## 1. La decisión definitiva: ¿Cambiar o no cambiar?
+## 1. Especificar cómo se elige el sobre
 
-Estás en la etapa final de un programa de juegos. En la mesa frente a ti hay **dos sobres (A y B)** que se ven exactamente iguales.
-El presentador te dice:
+Dos sobres de aspecto idéntico contienen dinero: uno guarda el doble que el otro. Tras elegir uno, puedes cambiarlo. ¿Conviene hacerlo antes de abrirlo o después de ver su contenido?
 
-> "Un sobre contiene el **doble de dinero** que el otro. Por favor, elige uno."
+Sea $S$ el importe menor, una variable aleatoria positiva y finita. Los sobres contienen $S$ y $2S$. Elige uno lanzando una moneda equilibrada, cuyo resultado sea independiente de los contenidos. Llamaremos $X$ al importe elegido y $Y$ al otro. Condicionando a un importe menor fijo $S=s$, estos dos resultados tienen probabilidad $1/2$ cada uno.
 
-Después de dudar, eliges el **sobre A**.
-Justo cuando estás a punto de ver lo que hay dentro, el presentador te susurra como un demonio.
+$$
+(X,Y)=(s,2s)\quad\text{or}\quad(X,Y)=(2s,s).
+$$
 
-> "Ahora mismo, puedes **cambiar** ese sobre A por el sobre B restante si quieres. ¿Lo cambias?"
+La elección equiprobable antes de ver un importe no determina las probabilidades después de observarlo. Para calcular estas últimas hace falta también una **distribución a priori** que describa cómo se genera el importe menor. «Importe finito» se refiere a cada realización, no a que la esperanza o la cota superior de los importes sean finitas.
 
-Entonces, ¿deberías cambiar los sobres?
+## 2. El tentador cálculo de «ganar un 25% cada vez»
 
----
+Supón que observas $X=x$. Resulta tentador decir: «El otro sobre tiene la mitad o el doble, con probabilidad $1/2$ cada uno», y calcular:
 
-## 2. El "bucle infinito" que se deduce del cálculo del valor esperado
+$$
+\frac12\cdot\frac{x}{2}+\frac12\cdot2x=\frac54x.
+$$
 
-Aquí, pongamos en práctica un poco de pensamiento matemático.
-Supongamos que la cantidad de dinero en tu sobre A es de $X$ yenes.
-La cantidad en el sobre B, según las reglas, es "la mitad de $X$ yenes ($\frac{X}{2}$)" o "el doble de $X$ yenes ($2X$)". La probabilidad de cada uno es $\frac{1}{2}$ (50%).
-
-Entonces, calculemos el **valor esperado (la cantidad promedio esperada) si cambias el sobre**.
-
-$$ E = \frac{1}{2} \times \left(\frac{X}{2}\right) + \frac{1}{2} \times (2X) $$
-$$ E = \frac{X}{4} + X = \frac{5}{4}X = 1.25X $$
-
-El resultado es sorprendente.
-Con solo cambiar el sobre, el valor esperado salta de los $X$ yenes originales a **$1.25$ veces** (un aumento del 25%).
-La conclusión es: "¡Pensando matemáticamente, definitivamente es más rentable cambiar!".
-
-Sin embargo, aquí ocurre un **colapso lógico**.
-Supongamos que lo cambiaste por el sobre B. ¿Qué pasaría si, inmediatamente después, el presentador volviera a preguntar: "¿Quieres volver al A después de todo?"?
-Se aplicará exactamente la misma fórmula, y esta vez será "cambiar de B a A aumentará el valor esperado 1,25 veces".
-
-Es decir, **el valor esperado teórico seguirá aumentando infinitamente con solo seguir cambiando "de A a B" y "de B a A"**. Esto es claramente contradictorio con la realidad (el contenido del sobre está determinado desde el principio, y no aumentará solo porque lo cambies).
+La aritmética es correcta, pero **la equiprobabilidad después de observar el importe no está justificada**. Repetir el argumento tras cambiar sugeriría que ir y volver aumenta el dinero sin cesar. El siguiente diagrama muestra ese razonamiento erróneo, no una estrategia válida.
 
 ```mermaid
-graph TD
-    Start["Eliges el sobre A (El contenido es X yenes)"] --> Think["Calculas si es mejor cambiar"]
-    
-    Think --> Case1["El sobre B tiene la mitad (X/2 yenes) : Probabilidad 50%"]
-    Think --> Case2["El sobre B tiene el doble (2X yenes) : Probabilidad 50%"]
-    
-    Case1 --> Calc["Valor esperado = (X/4) + X = 1.25X"]
-    Case2 --> Calc
-    
-    Calc --> SwitchToB["¡Cambias al sobre B! (El contenido es Y yenes)"]
-    
-    SwitchToB --> ThinkAgain["Calculas de nuevo"]
-    ThinkAgain --> Case3["El sobre A tiene la mitad (Y/2 yenes) : Probabilidad 50%"]
-    ThinkAgain --> Case4["El sobre A tiene el doble (2Y yenes) : Probabilidad 50%"]
-    
-    Case3 --> Calc2["Valor esperado = 1.25Y"]
-    Case4 --> Calc2
-    
-    Calc2 --> SwitchToA["¡Vuelves a cambiar al sobre A!"]
-    SwitchToA --> Start
-    
-    style Calc fill:#ff9999,stroke:#333,stroke-width:2px
-    style Calc2 fill:#ff9999,stroke:#333,stroke-width:2px
-    style SwitchToA fill:#ff4444,color:#fff,stroke:#333,stroke-width:4px
+flowchart TD
+    A["Observas tu importe"] --> B["Supones mitad o doble con 50% cada uno sin justificación"]
+    B --> C["Calculas la media del otro como 1,25 veces tu importe"]
+    C --> D["Cambias"]
+    D --> E["Usas la misma suposición para justificar volver"]
+    E --> A
 ```
 
-¿Por qué un cálculo del valor esperado que parece perfecto a primera vista crea una paradoja tan extraña?
+Tampoco es adecuado atribuir el error a que una variable aleatoria toma valores distintos en casos distintos: eso es precisamente lo que hacen las variables aleatorias. El problema es cambiar qué se mantiene fijo y qué probabilidades se utilizan.
 
----
+## 3. Simetría antes de abrir y esperanza finita
 
-## 3. Aclarando el truco matemático: el intercambio de variables
+Fijado el importe menor, los importes esperados antes y después de cambiar coinciden.
 
-La trampa de esta paradoja reside en el **"uso de la variable aleatoria $X$"**.
+$$
+\mathbb E[X\mid S=s]=\mathbb E[Y\mid S=s]=\frac{3s}{2}.
+$$
 
-En la fórmula anterior, tratamos la cantidad $X$ del sobre A como una **constante fija** y supusimos que el sobre B era "$\frac{X}{2}$ o $2X$".
-Sin embargo, lo que originalmente está fijo es **"la suma de las cantidades en los dos sobres"**, o **"la cantidad menor"**.
+Aunque el importe menor sea aleatorio, el importe elegido y el otro tienen la misma distribución. En particular, si la esperanza del importe menor es finita,
 
-Sea $S$ la cantidad en el sobre con menos dinero. Entonces, el sobre con más dinero contiene la cantidad de $2S$.
-Hay solo dos patrones para todos los escenarios del juego (cada uno con una probabilidad de $\frac{1}{2}$).
+$$
+\mathbb E[X]=\mathbb E[Y]=\frac32\mathbb E[S]<\infty.
+$$
 
-- **Patrón 1:** El sobre A que elegiste es el que tiene menos ($S$) y el sobre B es el que tiene más ($2S$)
-- **Patrón 2:** El sobre A que elegiste es el que tiene más ($2S$) y el sobre B es el que tiene menos ($S$)
+Por tanto, cambiar sin observar ningún importe no aumenta el dinero esperado. Esto no descarta una ventaja condicionada a un importe observado concreto. Si la esperanza es infinita, la simetría de las distribuciones se mantiene, pero restar dos infinitos no permite establecer una ganancia media.
 
-Aquí calcularemos correctamente el valor esperado para **"cuando no cambias"** y **"cuando cambias"** el sobre.
+## 4. Después de abrir, calcular a partir de la distribución a priori
 
-**Valor esperado cuando no cambias $E_{stay}$:**
-$$ E_{stay} = \frac{1}{2} \times S + \frac{1}{2} \times 2S = \frac{3}{2}S = 1.5S $$
+Consideremos primero un importe menor discreto, con $p(s)=\Pr(S=s)$ y masa nula fuera de su soporte. Para un importe $x$ observable con probabilidad positiva, sea $q(x)$ la probabilidad condicional de que el otro sobre contenga el doble. El [teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) da:
 
-**Valor esperado cuando cambias $E_{switch}$:**
-En el patrón 1 obtienes $2S$, y en el patrón 2 obtienes $S$.
-$$ E_{switch} = \frac{1}{2} \times 2S + \frac{1}{2} \times S = \frac{3}{2}S = 1.5S $$
+$$
+q(x)=\Pr(Y=2x\mid X=x)=\frac{p(x)}{p(x)+p(x/2)}.
+$$
 
-$$ E_{stay} = E_{switch} $$
+El numerador corresponde a que el importe menor sea el observado y se haya elegido el sobre menor. El otro término corresponde a que el importe menor sea la mitad de lo observado y se haya elegido el sobre mayor. Los factores comunes de la selección se cancelan. El denominador debe ser positivo.
 
-¡El valor esperado coincide perfectamente!
-En el primer cálculo incorrecto, la ilusión de que "el valor esperado aumenta si cambias" fue creada por **tratar diferentes valores, el $X$ en el patrón 1 (en realidad $S$) y el $X$ en el patrón 2 (en realidad $2S$), como la misma variable $X$**.
+$$
+\begin{aligned}\mathbb E[Y\mid X=x]&=2xq(x)+\frac{x}{2}(1-q(x)),\\ g(x)&=\mathbb E[Y\mid X=x]-x=\frac{x}{2}(3q(x)-1).\end{aligned}
+$$
+
+Cambiar mejora el importe esperado condicional cuando $q(x)>1/3$. Esto no garantiza una ganancia realizada. Estas fórmulas usan masas de probabilidad discretas; no se pueden trasladar a densidades continuas mediante una simple sustitución.
+
+## 5. Cuándo observar 10 000 yenes da una esperanza de 12 500
+
+Supongamos que el importe menor es de 5 000 o 10 000 yenes, con probabilidad 1/2 cada uno. Elegimos un sobre de forma equiprobable y observamos 10 000 yenes. Condicionado a esta observación, el otro importe es de 5 000 o 20 000 yenes, con probabilidad 1/2 cada uno. En este modelo, el cálculo anterior sí está justificado.
+
+$$
+\mathbb E[Y\mid X=10000]=\frac12\cdot5000+\frac12\cdot20000=12500.
+$$
 
 ```mermaid
-pie title La verdad del valor esperado (asumiendo S como la cantidad menor)
-    "Valor esperado si no cambias (1.5S)" : 50
-    "Valor esperado si cambias (1.5S)" : 50
+flowchart TD
+    A["Importe menor 5000 o 10000 yenes: probabilidad 1/2 cada uno"] --> B["Eliges un sobre de forma equiprobable"]
+    B --> C["Condicionas a observar 10000 yenes"]
+    C --> D["Importe menor 5000: otro importe 5000 yenes"]
+    C --> E["Importe menor 10000: otro importe 20000 yenes"]
+    D --> F["Probabilidades condicionales 1/2 cada una: media del otro 12500 yenes"]
+    E --> F
 ```
 
----
+El diagrama solo muestra la parte condicionada a observar 10 000 yenes. Considerando todas las observaciones, tu importe es de 5 000, 10 000 o 20 000 yenes con probabilidades 1/4, 1/2 y 1/4. Las ganancias condicionales al cambiar son, respectivamente, 5 000, 2 500 y −10 000 yenes, y su media es cero.
 
-## 4. ¿Qué pasa si ya has abierto el sobre?
+$$
+\frac14\cdot5000+\frac12\cdot2500-\frac14\cdot10000=0.
+$$
 
-La paradoja parece estar resuelta con esto. Sin embargo, nos espera un problema más profundo.
+Un presupuesto finito acota los importes. Si el modelo admite un importe máximo observable, este no puede tener un importe correspondiente que sea el doble. Eso no implica que la probabilidad de obtener el doble siempre disminuya con el importe observado. Si los importes menores 1, 2 y 4 tienen probabilidades 49/100, 1/100 y 1/2, entonces $q(2)=1/50$, pero $q(4)=50/51$. Importa la forma de la distribución a priori.
 
-¿Qué pasaría si, **antes de cambiar de sobre, vieras lo que hay dentro de tu sobre A**?
-Abres el sobre A y resulta que contiene **"10,000 yenes"**.
+## 6. Con esperanza finita, no puede haber ventaja en toda observación
 
-En este momento, se convierte en un valor confirmado de $X = 10000$.
-El sobre B contiene "5,000 yenes" o "20,000 yenes".
-¿Qué sucede si aplicamos la primera fórmula aquí?
+Si el importe menor tiene esperanza finita, $g(X)$ es integrable. La [ley de la esperanza total](https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/c1ab69cb198badcebee42d5880784439_MIT6_436JF18_rec3.pdf) da:
 
-$$ E_{switch} = \frac{1}{2} \times 5000 + \frac{1}{2} \times 20000 = 2500 + 10000 = 12500 $$
+$$
+\mathbb E[g(X)]=\mathbb E[Y]-\mathbb E[X]=0.
+$$
 
-El valor esperado es de 12,500 yenes. Es indudablemente más alto que los 10,000 yenes actuales.
-Además, esta vez $X$ es una "constante específica" de 10,000 yenes, por lo que el contraargumento de "intercambio de variables" de antes no es aplicable.
-Siendo este el caso, **¿es absolutamente más rentable cambiar?**
+Por tanto, no puede cumplirse que la ganancia condicional sea estrictamente positiva casi seguramente. En un modelo discreto, cambiar no puede ser estrictamente favorable para cada observación de probabilidad positiva. La hipótesis decisiva es la **esperanza finita**, no solo que las probabilidades sumen uno.
 
-### Refutación por inferencia bayesiana: Falta de "distribución a priori"
+## 7. Una distribución a priori propia con esperanza infinita da un contraejemplo
 
-Frente a esto, los matemáticos introdujeron el concepto de **"distribución a priori (probabilidad a priori) de la cantidad de dinero"**.
-La pregunta es si realmente podemos decir que los 5,000 yenes y los 20,000 yenes tienen cada uno una probabilidad de $\frac{1}{2}$ de estar dentro.
+Consideremos la distribución estudiada en el [artículo de Broome](https://users.ox.ac.uk/~sfop0060/pdf/Two%20envelope%20paradox.pdf):
 
-Por ejemplo, digamos que el presupuesto máximo del programa es de 100 millones de yenes. Si abres el sobre A y tiene "60 millones de yenes", la probabilidad de que el sobre B tenga "120 millones de yenes" es cero (porque supera el presupuesto). En otras palabras, cuanto mayor sea la cantidad en el sobre A, menor debería ser la probabilidad de que el sobre B tenga "el doble", y mayor debería ser la probabilidad de que tenga "la mitad".
+$$
+\Pr(S=2^n)=\frac13\left(\frac23\right)^n,\qquad n=0,1,2,\ldots.
+$$
 
-Si calculamos el valor esperado usando el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) asumiendo una distribución a priori arbitraria $P(x)$, se ha demostrado matemáticamente que **para cualquier distribución de probabilidad realista (cuya suma es 1), no existe una distribución mágica en la que "sea más rentable cambiar" para todas las cantidades $X$**.
+$$
+\sum_{n=0}^{\infty}\frac13\left(\frac23\right)^n=1,\qquad \mathbb E[S]=\frac13\sum_{n=0}^{\infty}\left(\frac43\right)^n=\infty.
+$$
 
----
+Es una **distribución de probabilidad propia y normalizada**, no una distribución a priori uniforme impropia. Para una observación $x=2^n$ con $n\ge1$,
 
-## 5. La trampa del infinito: la conexión con la paradoja de San Petersburgo
+$$
+q(x)=\frac25,\qquad \mathbb E[Y\mid X=x]=\frac25(2x)+\frac35\frac{x}{2}=\frac{11}{10}x>x.
+$$
 
-Existe un único caso en el que "es más rentable cambiar para todas las cantidades $X$".
-Eso es solo cuando el presupuesto del programa es **infinito** y asumimos una "distribución de probabilidad impropia (una distribución cuya suma es infinita)" en la que todas las cantidades (1 yen, 2 yenes, 4 yenes, 8 yenes... infinito) aparecen de manera uniforme.
+En la observación mínima, 1, el otro importe es necesariamente 2. Por tanto, en cada observación de probabilidad positiva, el importe esperado condicional del otro sobre supera al tuyo. Esto no afirma nada sobre condicionar a importes fuera del soporte.
 
-Sin embargo, en el mundo real no existe una cadena de televisión con activos infinitos.
-El error causado por este "valor esperado infinito" está profundamente arraigado en la **[Paradoja de San Petersburgo](/es/p/st-petersburg-paradox/)** (el problema de cuánto estaría dispuesta a pagar una persona por una apuesta con un valor esperado infinito).
+Sin embargo, no se deduce una ganancia media incondicional positiva. Sea $D=Y-X$, con parte positiva $D^+=\max(D,0)$ y parte negativa $D^-=\max(-D,0)$:
 
-## 6. Resumen: Los peligros de la probabilidad y el valor esperado
+$$
+\mathbb E[D^+]=\mathbb E[D^-]=\frac12\mathbb E[S]=\infty.
+$$
 
-"La paradoja de los dos sobres", a pesar de consistir únicamente en multiplicaciones y sumas simples, nos enseña las siguientes lecciones.
+Ambas partes tienen esperanza infinita, así que la esperanza de la diferencia con signo [no está definida](https://www.stat.berkeley.edu/~wfithian/courses/stat210a/measure-theory-basics.html). La ley de la esperanza total sigue siendo válida para el importe no negativo:
 
-1. **Errores nacidos de definiciones ambiguas**: si no dejas claro a qué se refiere una variable (¿$X$ siempre se refiere a la misma cantidad?), la lógica colapsa fácilmente.
-2. **La ilusión de que "sin información = probabilidad del 50%"**: la suposición de "no sé, así que será mitad y mitad" (el principio de razón insuficiente) a veces provoca errores de cálculo fatales.
-3. **La dificultad de tratar con el infinito**: introducir el concepto de "infinito", que no se puede aplicar al mundo real, en fórmulas de cálculo produce resultados que van en contra del sentido común.
+$$
+\mathbb E[\mathbb E[Y\mid X]]=\mathbb E[Y]=\infty.
+$$
 
-La próxima vez en la vida que pienses que "el césped del vecino se ve más verde y es mejor cambiar", recuerda esta paradoja. Es posible que solo se hayan intercambiado las variables en tu fórmula de cálculo.
+El infinito no rompe la ley. Lo que no se puede hacer es aplicar sin comprobar sus hipótesis la resta o la linealidad del caso de esperanza finita a una diferencia con signo no integrable. Hay que distinguir los cálculos finitos condicionados a cada observación posible de una esperanza incondicional con signo. Al truncar y renormalizar la distribución a priori, queda una pérdida en la mayor observación y la ganancia media al cambiar vuelve a ser cero.
 
+## 8. Las densidades continuas requieren un cambio de variable
+
+Si el importe menor tiene densidad continua $f$, la rama en la que se elige el menor aporta densidad $f(x)/2$, mientras que la rama en la que se elige el mayor aporta $f(x/2)/4$. La segunda incluye tanto el factor de selección equiprobable como el del cambio de variable $x=2s$.
+
+$$
+q(x)=\frac{f(x)}{f(x)+\tfrac12f(x/2)}.
+$$
+
+Esta fórmula condicional se usa donde la densidad del importe observado es positiva. Observar un valor exacto de una variable continua es un suceso de probabilidad cero; no estamos dividiendo probabilidades de sucesos discretos. Broome también presenta la densidad propia:
+
+$$
+f(s)=\frac{1}{(1+s)^2},\qquad s>0.
+$$
+
+Su integral es uno, pero la esperanza del importe menor es infinita. Para un importe observado positivo,
+
+$$
+\frac{f(x/2)}{f(x)}=\frac{4(1+x)^2}{(2+x)^2}<4
+\quad\Longrightarrow\quad q(x)>\frac13.
+$$
+
+Así, la versión continua de la esperanza condicional determinada por estas densidades supera tu importe en cada observación positiva. Es otro contraejemplo a que la normalización por sí sola obligue a que cambiar resulte desfavorable en algún importe.
+
+## 9. Cocientes de intercambio, decisiones e infinito
+
+Para el cociente antes de abrir $R=Y/X$, la elección equiprobable da un cociente de 2 o de 1/2 con probabilidad 1/2 cada uno. Su esperanza es realmente 5/4, igual que la del cociente recíproco. Pero los cocientes de dos cambios sucesivos son recíprocos, no independientes.
+
+$$
+\mathbb E[R]=\mathbb E[1/R]=\frac54,\qquad \mathbb E[R(1/R)]=1\ne\frac{25}{16}=\mathbb E[R]\mathbb E[1/R].
+$$
+
+Volver al sobre original devuelve el importe original. No se puede multiplicar tu importe por una media incondicional del cociente, ni multiplicar las medias de dos cocientes sucesivos, sin justificación. Ver ambos importes también cambia la información: desaparece la incertidumbre entre la mitad y el doble.
+
+El problema está relacionado con la [paradoja de San Petersburgo](https://kenji.blog/es/p/st-petersburg-paradox/), que también trata apuestas de esperanza infinita. Los límites presupuestarios reales, la generación de los importes, la utilidad y la actitud ante el riesgo pueden cambiar las decisiones. Aquí comparamos dinero esperado, no una regla universal de decisión ni un beneficio garantizado.
+
+Las probabilidades condicionales necesitan un modelo que genere los importes, y normalizar no equivale a tener esperanza finita. Con esperanza finita, la simetría y la esperanza total dan una ganancia media nula al cambiar. Con esperanza infinita existen contraejemplos basados en distribuciones propias: hay que distinguir entre la esperanza infinita de una variable no negativa y el caso de una diferencia con signo cuya esperanza no está definida.

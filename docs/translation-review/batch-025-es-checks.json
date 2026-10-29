@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T08:52:32.432468+09:00",
+  "allPassed": true,
+  "scope": "Selected revised Spanish and28-bundle preview. Shared auxiliary arithmetic once per validator invocation, not article program execution. Existing17unit tests passed at JA/EN stage and not rerun here; no new code changes to unit-tested site/ledger implementation. Same isolated-preview missing page/layout/PortugueseUI warnings; no native/browservisual or publication certification.",
+  "results": [
+    {
+      "command": [
+        "docs/translation-review/verify_batch_025.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-two-envelopes-es",
+        "--languages",
+        "es",
+        "--output",
+        "docs/translation-review/batch-025-es-validation.json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"passed\": true, \"versions\": 1, \"texEach\": 44, \"diagramsEach\": 2, \"auxiliary\": {\"finitePriors\": 102, \"jointObservationCases\": 1619, \"normalizationIdentities\": 101, \"geometricPosteriorCases\": 100, \"continuousRationalCases\": 268, \"ratioMean\": \"5/4\", \"meanReciprocalProduct\": \"1\", \"productOfRatioMeans\": \"25/16\", \"scope\": \"Shared exact auxiliary arithmetic once per invocation, not article code execution or universal proof. Geometric limits, finite-mean argument and continuous inequality manually checked separately. Original source-audit also contains33finite truncations; not rerun or counted here.\"}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-two-envelopes-es"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1609 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-two-envelopes-es"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 2933, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    }
+  ]
+}
