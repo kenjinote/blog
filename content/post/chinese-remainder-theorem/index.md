@@ -1,9 +1,7 @@
 ---
 title: "中国剰余定理（Chinese Remainder Theorem） - 古代の算術から現代のRSA暗号を支える大定理"
-date: "2026-09-24T19:44:38+09:00"
 description: "古代中国の算術書に起源を持つ中国剰余定理（CRT）について、その数学的原理から現代の公開鍵暗号（RSA暗号）における重要な応用までを詳しく解説します。"
 slug: "chinese-remainder-theorem"
-date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "cryptography"]
 tags:
@@ -11,240 +9,176 @@ tags:
   - "CRT"
   - "RSA暗号"
   - "整数論"
+date: "2026-09-14T13:11:25+09:00"
+lastmod: 2026-10-29
+math: true
+mermaid: true
 ---
 
-## はじめに
+中国剰余定理（CRT）は、異なる法の剰余を一つの剰余へまとめる定理です。整数の問題、RSAの秘密鍵演算、環や多項式、並列的な剰余計算につながります。ただし、法の条件、復元できる範囲、計算の正当性と暗号方式の安全性を区別する必要があります。
 
-中国剰余定理（[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)、略してCRT）は、整数論における最も重要で美しい定理の一つです。その起源は、3世紀から5世紀頃に編纂されたとされる古代中国の数学書『孫子算経』にまで遡ります。古代の素朴な算術の問題から始まったこの定理は、数千年を経た現代において、私たちが日常的に利用しているインターネットの安全な通信を支える **RSA暗号** などの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号技術において、必要不可欠な役割を果たしています。
+## 1. 孫子の問題と解の範囲
 
-本記事では、この **中国剰余定理** について、その歴史的背景から数学的な厳密な定義、具体的な計算手順、そして現代の暗号理論における応用までを、図解や具体例を交えながら詳しく解説します。
+『孫子算経』の例として知られる問題は、3で割ると2、5で割ると3、7で割ると2余る数を求めるものです。[歴史研究論文に再掲された問題と計算](https://sgmathsociety.org/smsmedley/Vol-30-1/The%20History%20of%20the%20Chinese%20Reminder%20Theorem%20%28Law%20Huang%20lng%29.pdf)を参照できます。
 
-## 歴史的背景：孫子の問題
+$$ x\equiv2\pmod3,\quad x\equiv3\pmod5,\quad x\equiv2\pmod7. $$
 
-中国剰余定理のルーツは、『孫子算経』の下巻第26問に記されている以下の有名な問題にあります。
+最小非負解は23です。整数解が一つという意味ではなく、すべての解は $x=23+105t$（$t\in\mathbb Z$）です。例えば128も条件を満たします。
 
-> 「今有物不知其數、三三數之賸二、五五數之賸三、七七數之賸二。問物幾何？」
-> （今、数がわからない物がある。3つずつ数えると2余り、5つずつ数えると3余り、7つずつ数えると2余る。物の数はいくつか？）
+## 2. 整数CRTの条件と一意性
 
-これを現代の数学の記法である連立合同式（システム）を用いて表現すると、未知の整数 $x$ について以下のようになります。
+以下では $k\ge1$、各法 $m_i>1$ とし、法が対ごとに互いに素、すなわち $\gcd(m_i,m_j)=1$（$i\ne j$）とします。法は素数でなくても構いません。任意の整数剰余 $a_i$ に対して、
 
-$$
-\begin{cases}
-x \equiv 2 \pmod 3 \\
-x \equiv 3 \pmod 5 \\
-x \equiv 2 \pmod 7
-\end{cases}
-$$
+$$ x\equiv a_i\pmod{m_i}\quad(1\le i\le k) $$
 
-この問題の解は $x = 23$ です。孫子算経には、この解を導き出すための具体的な計算手順も示されており、これが中国剰余定理の具体的な構成法の最初の例とされています。
+は、$M=\prod_{i=1}^k m_i$ を法としてただ一つの解を持ちます。従って $0\le x<M$ の代表元が一つに決まります。「全部の最大公約数が1」だけでは足りず、例えば6・10・15は対ごとには互いに素ではありません。[整数CRTの証明](https://kconrad.math.uconn.edu/blurbs/ugradnumthy/crt.pdf)もこの区別を説明しています。
 
-## 数学的な定義と定理の主張
+二つの解の差はすべての法の倍数です。法が対ごとに互いに素なら、その差は積の倍数にもなるため、一意性が従います。存在は次の構成で示せます。
 
-現代の数学において、 **中国剰余定理** は次のように定式化されます。
+## 3. 逆元による構成と具体的な計算
 
-### 定理の主張
+各法について、
 
-互いに素な（最大公約数が1である） $k$ 個の正の整数 $m_1, m_2, \dots, m_k$ があるとします。つまり、任意の $i \neq j$ について $\gcd(m_i, m_j) = 1$ が成り立ちます。
+$$ M_i=M/m_i,\quad M_i y_i\equiv1\pmod{m_i} $$
 
-このとき、任意の整数 $a_1, a_2, \dots, a_k$ に対して、以下の連立合同式を満たす整数 $x$ が、モジュロ $M = m_1 m_2 \dots m_k$ において一意に存在します。
+を満たす逆元を拡張ユークリッドの互除法で求めます。互いに素の条件から、この逆元が存在します。解は次の和を法の範囲に正規化して得られます。
 
-$$
-\begin{cases}
-x \equiv a_1 \pmod{m_1} \\
-x \equiv a_2 \pmod{m_2} \\
-\vdots \\
-x \equiv a_k \pmod{m_k}
-\end{cases}
-$$
+$$ x=\left(\sum_{i=1}^k a_iM_iy_i\right)\bmod M. $$
 
-つまり、解 $x$ は $0 \leq x < M$ の範囲にただ一つ存在し、すべての解は $x \equiv x_0 \pmod M$ の形で表されます。
+一つの法 $m_j$ で見ると、$i\ne j$ の項は0に合同で、残った項は $a_j$ に合同です。これで存在も示せます。
 
-### 証明と構成法（[ガウス](https://kenji.blog/p/gauss/)のアルゴリズム）
+孫子の例では $M=105$、部分積は35・21・15、対応する逆元は2・1・1です。
 
-この定理の素晴らしい点は、単に解の存在を保証するだけでなく、具体的な解を構成するアルゴリズムを提供していることです。以下にその構成法を示します。
+$$ 2\cdot35\cdot2+3\cdot21\cdot1+2\cdot15\cdot1=233,
+\qquad233\bmod105=23. $$
 
-1. 全体の積 $M = m_1 m_2 \dots m_k$ を計算します。
-2. 各 $i$ について、$M_i = \frac{M}{m_i}$ を計算します。（ $M_i$ は $m_i$ 以外のすべてのモジュラの積です）
-3. $\gcd(M_i, m_i) = 1$ であるため、モジュロ $m_i$ における $M_i$ の乗法逆元 $y_i$ が存在します。すなわち、$M_i y_i \equiv 1 \pmod{m_i}$ を満たす $y_i$ を拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)などで求めます。
-4. 最終的な解 $x$ は次の式で与えられます。
+互いに素でない法にも別の一般化があります。二つの法なら、剰余の差が法の最大公約数で割り切れるときに限って解が存在し、最小公倍数を法として一意です。例えば法4・6、剰余1・3なら解は9を法12で考えたものですが、剰余0・1なら解はありません。以下のコードはこの一般化を実装せず、対ごとに互いに素な法だけを受け付けます。
 
-$$
-x = \sum_{i=1}^{k} a_i M_i y_i \pmod M
-$$
+## 4. 入力条件を確認するPython実装
 
-この $x$ が元の連立合同式を満たすことは、各 $m_j$ を法として $x$ を評価することで容易に確認できます。$i \neq j$ のとき、$M_i$ は $m_j$ の倍数なので $M_i \equiv 0 \pmod{m_j}$ となります。したがって、和の項の中で $i = j$ の項だけが残り、$x \equiv a_j M_j y_j \equiv a_j \cdot 1 \equiv a_j \pmod{m_j}$ となり、条件を満たします。
-
-## 具体例での計算
-
-先ほどの「孫子の問題」をこのアルゴリズムで解いてみましょう。
-
-問題：
-$x \equiv 2 \pmod 3$  (ここで $a_1=2, m_1=3$)
-$x \equiv 3 \pmod 5$  (ここで $a_2=3, m_2=5$)
-$x \equiv 2 \pmod 7$  (ここで $a_3=2, m_3=7$)
-
-**ステップ1：** $M$ の計算
-$M = 3 \times 5 \times 7 = 105$
-
-**ステップ2：** $M_i$ の計算
-$M_1 = 105 / 3 = 35$
-$M_2 = 105 / 5 = 21$
-$M_3 = 105 / 7 = 15$
-
-**ステップ3：** 逆元 $y_i$ の計算
-- $35 y_1 \equiv 1 \pmod 3 \implies 2 y_1 \equiv 1 \pmod 3 \implies y_1 = 2$
-- $21 y_2 \equiv 1 \pmod 5 \implies 1 y_2 \equiv 1 \pmod 5 \implies y_2 = 1$
-- $15 y_3 \equiv 1 \pmod 7 \implies 1 y_3 \equiv 1 \pmod 7 \implies y_3 = 1$
-
-**ステップ4：** 解 $x$ の計算
-$x = (2 \times 35 \times 2) + (3 \times 21 \times 1) + (2 \times 15 \times 1)$
-$x = 140 + 63 + 30 = 233$
-
-これを $M = 105$ で割った余りを求めます。
-$233 \equiv 23 \pmod{105}$
-
-よって、最小の正の解は **23** となり、見事に孫子の解と一致しました。
-
-## 現代における応用：[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号とCRT
-
-古代のパズルであった **中国剰余定理** は、現代のデジタル社会において極めて実用的な用途を持っています。その代表例が **RSA暗号** における復号・署名生成の高速化です。
-
-### RSA暗号の概要
-
-RSA暗号では、2つの大きな素数 $p$ と $q$ を用い、その積 $N = pq$ を[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)の一部とします。暗号文 $C$ から平文 $M$ を復号する計算は、秘密鍵 $d$ を用いて次のように行われます。
-
-$$
-M = C^d \pmod N
-$$
-
-ここで、$N$ は非常に巨大な数（例えば2048ビット）であり、$d$ も同程度の大きさになるため、このべき乗剰余計算には大きな計算コストがかかります。
-
-### CRTによる高速化（RSA-CRT）
-
-ここで **中国剰余定理** の出番です。$N$ を法とする巨大な計算を行う代わりに、$N$ の素因数である $p$ と $q$ を法とする2つの小さな計算に分割し、最後にCRTを用いて元の解を再構成するというアプローチをとります。
-
-具体的には以下の手順を踏みます。
-
-```mermaid
-graph TD
-    A["暗号文 C"] --> B["C_p = C mod p を計算"]
-    A --> C["C_q = C mod q を計算"]
-    B --> D["M_p = (C_p)^(d mod (p-1)) mod p を計算"]
-    C --> E["M_q = (C_q)^(d mod (q-1)) mod q を計算"]
-    D --> F["CRTを用いて M_p と M_q から M mod N を復元"]
-    E --> F
-    F --> G["平文 M"]
-```
-
-1. 秘密鍵として $d$ の代わりに、$d_p = d \pmod{p-1}$ と $d_q = d \pmod{q-1}$ をあらかじめ計算しておきます。
-2. モジュロ $p$ とモジュロ $q$ での復号を個別に行います。
-   $M_p = C^{d_p} \pmod p$
-   $M_q = C^{d_q} \pmod q$
-3. $M_p$ と $M_q$ に対してCRTを適用し、$M \pmod N$ を求めます。
-
-法が半分のビット長（例えば1024ビット）になると、べき乗計算のコストは約1/8になります。これを2回行っても全体のコストは約1/4となり、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)-CRTを利用することで復号や署名生成を **約4倍高速化** することができます。スマートフォンやICカードなどの計算資源が限られたデバイスにおいて、この高速化は極めて重要です。
-
-## 中国剰余定理のプログラミングによる実装
-
-理論だけでなく、実際にプログラムを書いて **中国剰余定理** を実装してみましょう。ここでは、Pythonを用いて[ガウス](https://kenji.blog/p/gauss/)のアルゴリズムを実装します。
+組み込みの `int` のみを受け付け、`bool` や浮動小数点数は拒否します。入力は有限の反復可能な列とし、剰余と法は同じ長さで空ではなく、各法は1より大きく、対ごとに互いに素とします。剰余は負でも法以上でも構いません。返す値は法の積に対する最小非負代表元です。法1や空の系を除外するのは、この教材APIの契約です。
 
 ```python
-def extended_gcd(a, b):
-    """
-    拡張ユークリッドの互除法
-    a*x + b*y = gcd(a, b) となる (gcd(a, b), x, y) を返す
-    """
-    if a == 0:
-        return b, 0, 1
-    else:
-        g, y, x = extended_gcd(b % a, a)
-        return g, x - (b // a) * y, y
+from math import gcd, prod
 
-def mod_inverse(a, m):
-    """
-    モジュロ m における a の乗法逆元を返す
-    """
-    g, x, y = extended_gcd(a, m)
+
+def _extended_gcd(a, b):
+    # Internal helper: integer a, positive integer b.
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r:
+        quotient = old_r // r
+        old_r, r = r, old_r - quotient * r
+        old_s, s = s, old_s - quotient * s
+        old_t, t = t, old_t - quotient * t
+    return old_r, old_s, old_t
+
+
+def mod_inverse(a, modulus):
+    if type(a) is not int or type(modulus) is not int:
+        raise TypeError("Arguments must be built-in integers")
+    if modulus <= 1:
+        raise ValueError("Modulus must exceed one")
+    g, x, _ = _extended_gcd(a % modulus, modulus)
     if g != 1:
-        raise Exception('モジュラー逆元が存在しません')
-    else:
-        return x % m
+        raise ValueError("Inverse does not exist")
+    return x % modulus
 
-def chinese_remainder_theorem(a_list, m_list):
-    """
-    中国剰余定理 (CRT)
-    x ≡ a_i (mod m_i) を満たす x を返す
-    """
-    total_m = 1
-    for m in m_list:
-        total_m *= m
-        
-    x = 0
-    for a, m in zip(a_list, m_list):
-        M_i = total_m // m
-        y_i = mod_inverse(M_i, m)
-        x += a * M_i * y_i
-        
-    return x % total_m
 
-# 孫子の問題を解く
-a = [2, 3, 2]
-m = [3, 5, 7]
-result = chinese_remainder_theorem(a, m)
-print(f"孫子の問題の解: {result}") # 出力: 23
+def chinese_remainder_theorem(residues, moduli):
+    residues, moduli = tuple(residues), tuple(moduli)
+    if not moduli or len(residues) != len(moduli):
+        raise ValueError("Provide equally sized, nonempty inputs")
+    if any(type(x) is not int for x in residues + moduli):
+        raise TypeError("Residues and moduli must be built-in integers")
+    if any(m <= 1 for m in moduli):
+        raise ValueError("Every modulus must exceed one")
+    for i, m in enumerate(moduli):
+        if any(gcd(m, other) != 1 for other in moduli[:i]):
+            raise ValueError("Moduli must be pairwise coprime")
+
+    combined_modulus = prod(moduli)
+    result = 0
+    for a, m in zip(residues, moduli):
+        partial = combined_modulus // m
+        inverse = mod_inverse(partial, m)
+        result = (result + (a % m) * partial * inverse) % combined_modulus
+    return result
+
+
+if __name__ == "__main__":
+    residues = [2, 3, 2]
+    moduli = [3, 5, 7]
+    print("Sunzi solution:", chinese_remainder_theorem(residues, moduli))
+    print("Combined modulus:", prod(moduli))
 ```
 
-このように、わずか数十行のコードで **中国剰余定理** をコンピュータ上で再現することができます。この実装は、競技プログラミングなどでも頻繁に用いられる基本的なアルゴリズムです。
+Python 3.12で実行すると `Sunzi solution: 23` と `Combined modulus: 105` を表示します。長さが違う入力を黙って切り捨てず、法0・負の法・型・互いに素の条件も検査します。Python整数に固定幅の桁あふれはありませんが、入力の長さと整数サイズに応じて時間とメモリを消費します。これは暗号用の定数時間実装ではありません。
 
-## 抽象代数学における一般化：環とイデアル
+## 5. RSA-CRTは何を再構成するのか
 
-**中国剰余定理** は、単なる整数の性質にとどまらず、現代数学の重要な分野である **抽象代数学** において、より一般的な形で拡張されています。
+正しい2素数RSA鍵を仮定します。相異なる奇素数 $p,q$ と $N=pq$、公開指数 $e$、秘密指数 $d$ を用い、$ed\equiv1\pmod{\lambda(N)}$ とします。ここで $\lambda(N)=\operatorname{lcm}(p-1,q-1)$ です。暗号文代表元は $0\le C<N$ で、直接の秘密鍵演算は $m=C^d\bmod N$ です。
 
-可換環 $R$ とそのイデアル $I_1, I_2, \dots, I_k$ を考えます。これらのイデアルが互いに素である（すなわち、任意の $i \neq j$ に対して $I_i + I_j = R$ が成り立つ）とき、以下のような自然な環準同型写像 $\phi$ を定義することができます。
+CRT用には次を準備します。
 
-$$
-\phi: R \to (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
-$$
-\phi(x) = (x \pmod{I_1}, x \pmod{I_2}, \dots, x \pmod{I_k})
-$$
+$$ d_p=d\bmod(p-1),\quad d_q=d\bmod(q-1),\quad q_{\mathrm{inv}}=q^{-1}\bmod p. $$
 
-抽象代数学における **中国剰余定理** は、この準同型写像 $\phi$ が全射であり、その核（カーネル）がイデアルの交わり $\bigcap_{i=1}^k I_i$ （これはイデアルの積 $\prod_{i=1}^k I_i$ と一致します）になることを主張しています。
+$$ m_p=C^{d_p}\bmod p,\quad m_q=C^{d_q}\bmod q. $$
 
-したがって、第一同型定理により、以下の自然な同型が成り立ちます。
+$$ h=(m_p-m_q)q_{\mathrm{inv}}\bmod p,\qquad m=m_q+qh. $$
 
-$$
-R / \left( \bigcap_{i=1}^k I_i \right) \cong (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
+この代表元は各素数で必要な剰余を持ち、元の法の範囲内にあります。[RFC8017 Section3.2と5.1.2](https://www.rfc-editor.org/rfc/rfc8017.html)は、この秘密鍵表現と再構成を規定しています。二つのCRT指数だけで秘密鍵全体を置き換えるのではなく、素因数と係数も秘密の鍵材料です。
 
-### 多項式環への応用
+```mermaid
+flowchart TD
+    A["範囲内の暗号文代表元 C と正しい秘密鍵"] --> B["m_p = C^d_p mod p"]
+    A --> C["m_q = C^d_q mod q"]
+    B --> D["h = (m_p - m_q) q_inv mod p"]
+    C --> D
+    D --> E["m = m_q + q h を再構成"]
+    E --> F["検証済みライブラリの方式処理へ"]
+```
 
-この一般化された定理の最も重要な応用の一つが、体 $F$ 上の1変数多項式環 $F[x]$ における **中国剰余定理** です。
+これは整数演算の図で、メッセージの符号化・方式の検証を省いています。実用の暗号化と署名は別の方式であり、[RSAの解説](https://kenji.blog/p/rsa-encryption-math-explained-for-beginners/)のように、監査されたライブラリで目的に合う処理を行う必要があります。
 
-整数の場合の「互いに素な整数」は、多項式環においては「共通の根を持たない（最大公約多項式が定数である）多項式」に相当します。この多項式版のCRTは、[ラグランジュ](https://kenji.blog/p/lagrange/)補間（[Lagrange](https://kenji.blog/p/lagrange/) interpolation）の理論的裏付けとなっており、与えられた複数の点を通る最小次数の多項式を一意に決定するアルゴリズムと完全に一致します。また、これは[誤り訂正符号](/p/error-correcting-codes-explained/)の一種である **リード・ソロモン符号** の数学的基盤でもあります。
+## 6. 速度の見積もりと実装上の境界
 
-## 剰余数系（RNS）による超並列計算
+[HAC第14章](https://cacr.uwaterloo.ca/hac/about/chap14.pdf)のNote14.75では、同程度の大きさの素数、古典的な2次の乗算費用、指数ビット長に比例する乗算回数、再構成費用を無視できるという仮定のもとで、約4倍という見積もりを示します。異なる乗算アルゴリズム、並列実行、防御処理、機器では倍率は変わります。この記事のコードを計測して4倍を確認したという意味ではありません。
 
-**中国剰余定理** の工学的な応用として、 **剰余数系（Residue Number System, RNS）** についても触れておきましょう。
+CRTで別々に計算した剰余の片方が壊れると、未検証の結果が秘密因数の漏えいにつながる場合があります。[RSA-CRTの故障解析の論文](https://courses.csail.mit.edu/6.857/2010/handouts/faults.pdf)で、その条件が説明されています。教材の正しい算術だけでは、故障対策やサイドチャネル耐性まで保証できません。公開鍵による結果の照合などを含む実装上の対策は、方式全体を扱うライブラリに委ねます。
 
-通常、コンピュータは数値を2進数で表現し、計算を行います。しかし、加算や乗算を行う際、桁上がり（キャリー）の伝播が発生するため、ビット幅が大きくなると回路の遅延が増大するという問題があります。
+## 7. 環とイデアルへの一般化
 
-RNSでは、互いに素なモジュロのセット $\{m_1, m_2, \dots, m_k\}$ を用意し、巨大な整数 $X$ をそれぞれのモジュロで割った余りの組 $(x_1, x_2, \dots, x_k)$ として表現します。
+単位元を持つ可換環 $R$ と有限個のイデアルについて、対ごとに $I_i+I_j=R$ とします。自然な準同型
 
-この表現の最大の利点は、加算と乗算において **桁上がりが生じない** ことです。
-例えば、$X$ と $Y$ を足す場合、各モジュロごとに独立して計算を行うことができます。
+$$ \phi:R\longrightarrow\prod_{i=1}^k R/I_i,\qquad
+\phi(r)=(r+I_1,\ldots,r+I_k) $$
 
-$$
-X + Y \leftrightarrow ( (x_1+y_1)\pmod{m_1}, \dots, (x_k+y_k)\pmod{m_k} )
-$$
-$$
-X \times Y \leftrightarrow ( (x_1y_1)\pmod{m_1}, \dots, (x_k y_k)\pmod{m_k} )
-$$
+は全射で、核はイデアルの交わりです。この条件では交わりと積が等しいので、
 
-各モジュロでの計算は完全に独立しているため、並列回路を組むことで極めて高速な演算が可能になります。最終的な結果を通常の数値に戻す際に、まさに **中国剰余定理** が用いられます。この技術は、リアルタイム性が求められるデジタル信号処理（DSP）や、特定の暗号処理回路の設計において現在でも研究され、実用化されています。
+$$ R/\left(\bigcap_{i=1}^k I_i\right)
+\cong\prod_{i=1}^k R/I_i,\qquad
+\bigcap_{i=1}^k I_i=\prod_{i=1}^k I_i. $$
 
-## まとめ
+[Stacks Projectの中国剰余定理](https://stacks.math.columbia.edu/tag/00DT)に、条件と証明があります。整数の対ごとに互いに素な法は、このイデアル条件の特別な場合です。
 
-**中国剰余定理** は、単なる数学のパズルから始まり、抽象代数学におけるイデアルの構造定理へと昇華し、そして現代の暗号理論や計算機科学の基盤技術へと発展してきました。
+## 8. 多項式と補間
 
-数千年の時を超えて、古代中国の数学者の知恵が私たちのスマートフォンの中の暗号処理として生き続けているというのは、数学という学問の持つ普遍性と力強さを象徴していると言えるでしょう。
+体上の多項式では、互いに素とはgcdが非零定数という意味です。「元の体の中に共通の根がない」だけでは足りません。例えば有理数体で両方を $x^2+1$ とすると、有理根はありませんが多項式同士のgcdはその2次式です。共通根で言い換えるなら代数閉包で考えます。
+
+異なる評価点 $\alpha_1,\ldots,\alpha_k$ の一次因子は対ごとに互いに素なので、指定した値を取る多項式が次数 $<k$ の範囲で一意に決まります。これがラグランジュ補間との対応です。より高い次数まで許せば一意ではありません。有限体での評価と次数の制約は、リード・ソロモン符号にもつながりますが、誤り訂正能力までCRTだけで得られるわけではありません。
+
+## 9. 剰余数系と復元の範囲
+
+RNSは整数を複数の法の剰余で表し、成分ごとに加算・乗算できます。ここで $x_i=X\bmod m_i$、$y_i=Y\bmod m_i$ とします。法の積 $M$ に対して、
+
+$$ (X+Y)\bmod M\longleftrightarrow
+((x_i+y_i)\bmod m_i)_{i=1}^k, $$
+
+$$ (XY)\bmod M\longleftrightarrow
+((x_iy_i)\bmod m_i)_{i=1}^k. $$
+
+チャンネル間の桁上がりは不要ですが、各チャンネル内の2進演算には桁上がりがあり得ます。復元結果は法の積に対する代表元であり、範囲を超えた整数の和や積をそのまま一意に取り戻すものではありません。比較・除算・通常表現への変換には追加処理が必要です。
+
+古典的な余りの問題から暗号・代数・並列計算まで、CRTの役割は「条件を満たす複数の剰余を、指定した法と範囲で再構成すること」です。この範囲と用途の違いを保って理解することが大切です。

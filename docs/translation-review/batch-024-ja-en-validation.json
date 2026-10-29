@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T23:52:32.697680+09:00",
+  "pythonVersion": "3.12.14",
+  "scope": "Explicit selected versions only. Each complete article program executed and functions compared against independent enumeration/Python arithmetic. Auxiliary interpolation check once per invocation. No prose approval or ledger writes.",
+  "versions": [
+    {
+      "language": "ja",
+      "sha256": "178b40464125f3eb9377b86e1f7b3f21368afb73dfe4a97c80acd1ce571120e4",
+      "canonical": "https://kenji.blog/p/chinese-remainder-theorem/",
+      "texExpressions": 39,
+      "allTeXPreserved": true,
+      "pythonBlocksExact": 1,
+      "completeProgramOutputExact": true,
+      "smallPairCases": 1647,
+      "smallTripleCases": 1365,
+      "largeSignedCases": 128,
+      "generatorInputsExact": true,
+      "invalidCrtCases": 18,
+      "extendedGcdAndInverseCases": 9999,
+      "invalidInverseCases": 5,
+      "rsaCrtAllRepresentatives": 3233,
+      "rnsAddAndMultiplyCases": 22050,
+      "diagramEdges": 6,
+      "referencesMetadataLanguageMapsExact": true,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "sha256": "91fbc602995e261d3d2c83c794a7e1b279c22672c4720e9f88893399d630dac6",
+      "canonical": "https://kenji.blog/en/p/chinese-remainder-theorem/",
+      "texExpressions": 39,
+      "allTeXPreserved": true,
+      "pythonBlocksExact": 1,
+      "completeProgramOutputExact": true,
+      "smallPairCases": 1647,
+      "smallTripleCases": 1365,
+      "largeSignedCases": 128,
+      "generatorInputsExact": true,
+      "invalidCrtCases": 18,
+      "extendedGcdAndInverseCases": 9999,
+      "invalidInverseCases": 5,
+      "rsaCrtAllRepresentatives": 3233,
+      "rnsAddAndMultiplyCases": 22050,
+      "diagramEdges": 6,
+      "referencesMetadataLanguageMapsExact": true,
+      "passed": true
+    }
+  ],
+  "auxiliaryInterpolationEvaluationBijection": 343,
+  "publicationPending": true,
+  "limitations": [
+    "Finite inputs,not exhaustive proof or cryptographic audit.",
+    "Contract rejects noncoprime systems,unitmoduli andempty systems;does not implement generalizedCRT.",
+    "No timing/constant-time/production-key-validation or native-language certification.",
+    "Diagram source and HTML/TeX checked,no browser visual/runtime certification."
+  ]
+}

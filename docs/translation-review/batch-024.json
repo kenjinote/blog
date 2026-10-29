@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/chinese-remainder-theorem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/chinese-remainder-theorem/index.md",
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "translationHash": "3a86d04874c7df83697b60b01f6c790d81c3e09c15078844b301c86286c875ea",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Japanese and English metadata, all bodies, one complete Python example and one Mermaid diagram independently. Rewrote and reread both full versions; reread final history/fault/RNS edits. Preserved all topics: Sunzi example, existence/uniqueness, construction, Python, RSA-CRT, performance/security, rings, polynomials/interpolation and RNS. Clarified all solutions versus least nonnegative solution, pairwise versus total gcd, generalized CRT versus this API contract, and mathematical correctness versus implementation security."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared congruence/modulus/residue, pairwise coprime, inverse, least nonnegative representative, commutative ring with identity/comaximal ideals, algebraic closure/polynomial degree, RSA private exponent/CRT key components, fault verification and RNS channels/carry. Removed Crypto/graphy and Euclide/an substring links. Kept message representative separate from encoded message, and multiplication-cost estimate separate from a benchmark."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared assumptions, construction and uniqueness proof, noncoprime compatibility, RSA valid two-prime key and RFC recombination, comaximal-ideal theorem, algebraic-closure counterexample and interpolation degree bound. Final Japanese/English each 41 TeX expressions exact in source and decoded HTML, 82 total. Each language program independently passed 1647 exhaustive small-pair cases, 1365 small-triple cases, 128 large signed cases, 9999 extended-gcd/inverse cases, all 3233 toy RSA representatives and 22050 RNS addition/multiplication checks. Auxiliary GF(7) evaluation bijection: 343 coefficient triples once per verifier invocation. Finite checks supplement the manually read arguments, not a universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed each complete published Python program separately under Python 3.12.14: exact two-line output 23 and modulus 105. Exact identical code in both generated pages. Rejects 18 invalid CRT cases and 5 invalid inverse cases; finite generator accepted. Validates lengths, built-in integer types excluding bool, moduli greater than one and pairwise coprimality. Explicitly does not implement compatible noncoprime systems. One Mermaid source per language exact in HTML, six edges each. Auxiliary RSA/RNS/interpolation arithmetic distinguished from article code. No constant-time, cryptographic, native-language or browser-runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Read scoped primary-source passages: Sunzi historical research example; Conrad CRT theorem/construction and pairwise condition; HAC14.5 RNS and model-dependent factor-four estimate; RFC8017 3.2/5.1.2; Stacks10.15.4 statement/proof; Boneh-DeMillo-Lipton sections2.1/2.2 and opening4. Six external URLs and matching-English reviewed RSA internal target exact in HTML, internal target exists. All 14 hreflang and 13 sidebar destinations match audit. Preserved actual Sep14 publication date, slug, hero-image bytes and tags/categories; removed duplicate date, enabled math/Mermaid, lastmod Oct29. Final 25-bundle Hugo preview: multilingual1439 pages and HTTPS2632 HTML/41 XML pass. Existing17 tests rerun and passed before final RNS notation edit; final notation/source and HTML checked afterward. Publication pending; other11 translations unread."
+        }
+      },
+      "summary": "Complete English review against corrected Japanese CRT article, including validated Python, mathematical conditions, RSA limitations and bounded RNS representation.",
+      "languageSpecificFindings": "Read original and revised English in full. Removed word-fragment cryptocurrency/biography links, defined least nonnegative representative and pairwise coprimality, made finite-input/type contract explicit, separated all-integer solutions from canonical representative, and corrected polynomial common-root field, degree bound, RSA key components and speed/security claims. Added explicit RNS component definitions in final reread.",
+      "validation": "docs/translation-review/batch-024-ja-en-revision-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Other 11 translations remain unread and unreviewed at this stage.",
+        "Finite tests are not exhaustive proof, production cryptography or a timing/fault-security audit.",
+        "Source/decoded HTML checked; no browser visual/KaTeX/Mermaid runtime certification.",
+        "Publication and live checks pending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-10-29",
+      "languagesRead": [
+        "ja",
+        "en"
+      ],
+      "reviewedTranslations": [
+        "en"
+      ],
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "validation": "docs/translation-review/batch-024-ja-en-revision-validation.json",
+      "priorValidation": "docs/translation-review/batch-024-ja-en-validation.json",
+      "priorValidationScope": "39-TeX draft before explicit RNS component definitions; preserved as historical proof, not evidence for current hashes.",
+      "currentTeXEach": 41,
+      "completeProgramsExecutedSeparately": 2,
+      "diagramEdgesEach": 6,
+      "multilingualPages": 1439,
+      "httpsHtmlPages": 2632,
+      "httpsXmlFiles": 41,
+      "existingTestsPassed": 17,
+      "reviewedTranslationsTotal": 289,
+      "unreviewedTranslations": 12743,
+      "humanReviews": 0,
+      "publicationPending": true
+    }
+  ]
+}
