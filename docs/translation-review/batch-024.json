@@ -320,6 +320,46 @@
         "Source and decoded HTML checked; no browser visual/KaTeX/Mermaid runtime certification.",
         "Publication/live checks pending."
       ]
+    },
+    "post/chinese-remainder-theorem/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/chinese-remainder-theorem/index.md",
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "translationHash": "69337c30750b2120fd4719d3bbb5d292b48c7dbd77afddc1593e596191763daa",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read selected original and revised metadata, complete body, complete Python block and Mermaid source independently; compared every topic against current Japanese and reread final local wording changes. Preserved Sunzi, integer CRT existence/uniqueness, inverse construction, validated Python, RSA-CRT, performance/security, rings, polynomials/interpolation and RNS. Kept assumptions, reconstruction ranges, API exclusions and arithmetic/security distinctions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Read original and revised Indonesian metadata, complete body, Python and Mermaid against Japanese; reread final FPB/input/two-prime-key/ring/iff/range edits. Compared saling prima berpasangan versus collective FPB,FPB/KPK,sisa/modulus/wakil/kelas residu,invers perkalian,gelanggang komutatif dengan identitas perkalian/ideal/irisan,lapangan/penutupan aljabar,derajat,eksponen privat/kunci privat,pustaka,waktu konstan/kanal samping,and kanal/carry. Lapangan is valid field terminology and retained; clarified carry as value propagated to next digit instead of relying on literal bawaan. Removed Euclidean word-fragment biography and repeated self/Lagrange/broad cryptography links. Preserved six primary references and reviewed IndonesianRSA target. Clarified all integer solutions versus nonnegative representative, pairwise versus total gcd, noncoprime generalization versus API rejection, key components versus exponent, encoded message versus integer representative, conditional speed model versus benchmark, and interchannel versus internal carry with bounded reconstruction."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared proof and assumptions, pairwise versus total gcd, noncoprime compatibility versus API rejection, valid RSA key and reconstruction, comaximal ideals, algebraic-closure counterexample, interpolation degree bound and modular RNS arithmetic. Selected translation and current Japanese each41TeX exact in source and decoded HTML. Selected language separately passed1647small-pair cases,1365triple cases,128large signed cases,9999gcd/inverse cases,3233RSA representatives and22050RNS operations. Auxiliary GF(7) interpolation bijection343 once per invocation shared across selected languages. Finite checks are supplementary, not a universal proof. This selected program also passed319 signed single-modulus cases, covering the k=1 boundary; earlier language proofs are not retroactively claimed to contain these added cases."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed this complete article Python program separately underPython3.12.14 with exact two-line output23/105. Identical article code in generatedHTML; valid finite generator,18CRT rejection cases and5inverse rejection cases passed. Checked one localized Mermaid diagram with6edges against original topology and exact generatedHTML. Original selected-language complete program executed before replacement, including actual missing/extra-input truncation, preserved in the corresponding source-audit. Auxiliary RSA/RNS/interpolation checks are distinguished from article execution. No browser runtime, timing or cryptographic certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Six exact external primary references and matching-language reviewedRSA internal target verified in generatedHTML; internal target exists. Primary-source reading scope is documented in batch024source-notes, not a claim to read entire books/PDFs. Preserved effectiveSep14publicationdate,slug,heroimagehash,tags/categories;removedduplicateSep24date;math/Mermaid enabled and lastmodOct30. All14hreflang/13sidebar URLs exact.25bundlepreview multilingual1439pages andHTTPS2632HTML/41XML pass. Existing17tests passed at preceding JA/EN stage, not rerun or counted perlanguage. Publication pending."
+        }
+      },
+      "summary": "Complete id review against corrected Japanese CRT, with input-contract Python, theorem assumptions, RSA limitations and bounded RNS representation.",
+      "languageSpecificFindings": "Read original and revised Indonesian metadata, complete body, Python and Mermaid against Japanese; reread final FPB/input/two-prime-key/ring/iff/range edits. Compared saling prima berpasangan versus collective FPB,FPB/KPK,sisa/modulus/wakil/kelas residu,invers perkalian,gelanggang komutatif dengan identitas perkalian/ideal/irisan,lapangan/penutupan aljabar,derajat,eksponen privat/kunci privat,pustaka,waktu konstan/kanal samping,and kanal/carry. Lapangan is valid field terminology and retained; clarified carry as value propagated to next digit instead of relying on literal bawaan. Removed Euclidean word-fragment biography and repeated self/Lagrange/broad cryptography links. Preserved six primary references and reviewed IndonesianRSA target. Clarified all integer solutions versus nonnegative representative, pairwise versus total gcd, noncoprime generalization versus API rejection, key components versus exponent, encoded message versus integer representative, conditional speed model versus benchmark, and interchannel versus internal carry with bounded reconstruction.",
+      "validation": "docs/translation-review/batch-024-id-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other 3 translations remain unread and unreviewed at this stage.",
+        "Finite checks are not exhaustive proof or a cryptographic/timing/fault-security audit.",
+        "Source and decoded HTML checked; no browser visual/KaTeX/Mermaid runtime certification.",
+        "Publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -461,6 +501,25 @@
       "unreviewedTranslations": 12736,
       "humanReviews": 0,
       "otherTranslationsUnread": 4,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "id"
+      ],
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "validation": "docs/translation-review/batch-024-id-validation.json",
+      "texEach": 41,
+      "completeProgramsExecutedSeparately": 1,
+      "diagramEdgesEach": 6,
+      "multilingualPages": 1439,
+      "httpsHtmlPages": 2632,
+      "httpsXmlFiles": 41,
+      "reviewedTranslationsTotal": 297,
+      "unreviewedTranslations": 12735,
+      "humanReviews": 0,
+      "otherTranslationsUnread": 3,
       "publicationPending": true
     }
   ]

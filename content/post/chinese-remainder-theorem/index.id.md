@@ -1,9 +1,7 @@
 ---
 title: "Teorema Sisa Tiongkok (Chinese Remainder Theorem) - Dari Aritmatika Kuno hingga Teorema Besar yang Mendukung Kriptografi RSA Modern"
-date: "2026-09-24T19:44:38+09:00"
 description: "Menjelaskan tentang Teorema Sisa Tiongkok (CRT), yang berawal dari naskah aritmatika Tiongkok kuno, mulai dari prinsip matematika hingga aplikasi pentingnya dalam kriptografi kunci publik modern (Kriptografi RSA)."
 slug: "chinese-remainder-theorem"
-date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "cryptography"]
 tags:
@@ -11,239 +9,176 @@ tags:
   - "CRT"
   - "Kriptografi RSA"
   - "Teori Bilangan"
+date: "2026-09-14T13:11:25+09:00"
+lastmod: 2026-10-30
+math: true
+mermaid: true
 ---
 
-## Pendahuluan
+Teorema sisa Tiongkok (CRT) menggabungkan sisa untuk beberapa modulus menjadi satu kelas residu. Teorema ini menghubungkan masalah bilangan bulat, operasi RSA dengan kunci privat, gelanggang dan polinomial, serta aritmatika residu paralel. Syarat modulus, rentang rekonstruksi, serta perbedaan antara kebenaran aritmatika dan keamanan kriptografi perlu dinyatakan dengan jelas.
 
-Teorema Sisa Tiongkok ([Chinese Remainder Theorem](https://kenji.blog/id/p/chinese-remainder-theorem/), disingkat CRT) adalah salah satu teorema yang paling penting dan indah dalam teori bilangan. Asal-usulnya berawal dari naskah matematika Tiongkok kuno "Sunzi Suanjing" yang diyakini disusun antara abad ke-3 hingga ke-5. Berawal dari masalah aritmatika sederhana di zaman kuno, teorema ini kini memainkan peran yang sangat penting dalam teknologi kriptografi kunci publik, seperti **Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)**, yang mengamankan komunikasi internet kita sehari-hari setelah ribuan tahun.
+## 1. Masalah Sunzi dan himpunan solusi
 
-Pada artikel ini, kita akan membahas **Teorema Sisa Tiongkok** secara detail, mulai dari latar belakang sejarahnya, definisi matematis yang ketat, langkah-langkah komputasi konkret, hingga aplikasinya dalam teori kriptografi modern, disertai dengan ilustrasi dan contoh konkret.
+Contoh yang dikaitkan dengan Sunzi Suanjing meminta bilangan yang bersisa 2 jika dibagi 3, bersisa 3 jika dibagi 5, dan bersisa 2 jika dibagi 7. Sebuah [penelitian sejarah memuat kembali masalah dan perhitungannya](https://sgmathsociety.org/smsmedley/Vol-30-1/The%20History%20of%20the%20Chinese%20Reminder%20Theorem%20%28Law%20Huang%20lng%29.pdf).
 
-## Latar Belakang Sejarah: Masalah Sunzi
+$$ x\equiv2\pmod3,\quad x\equiv3\pmod5,\quad x\equiv2\pmod7. $$
 
-Akar Teorema Sisa Tiongkok dapat ditemukan dalam masalah terkenal berikut yang tertulis pada soal ke-26 volume bawah "Sunzi Suanjing".
+Solusi nonnegatif terkecil adalah 23. Namun, solusi bilangan bulatnya tidak hanya satu: semua solusi berbentuk $x=23+105t$ dengan $t\in\mathbb Z$. Sebagai contoh, 128 juga memenuhi syarat.
 
-> "Ada suatu barang yang jumlahnya tidak diketahui. Jika dihitung tiga-tiga bersisa dua, jika dihitung lima-lima bersisa tiga, jika dihitung tujuh-tujuh bersisa dua. Berapakah jumlah barang tersebut?"
+## 2. CRT bilangan bulat: syarat dan keunikan
 
-Jika ini diekspresikan menggunakan notasi matematika modern yaitu sistem kongruensi linier, maka untuk bilangan bulat $x$ yang tidak diketahui adalah sebagai berikut:
+Ambil $k\ge1$ dan modulus $m_i>1$ yang saling prima untuk setiap pasangan: $\gcd(m_i,m_j)=1$ jika $i\ne j$. Modulus itu sendiri tidak harus berupa bilangan prima. Untuk sembarang sisa bilangan bulat $a_i$, sistem
 
-$$
-\begin{cases}
-x \equiv 2 \pmod 3 \\
-x \equiv 3 \pmod 5 \\
-x \equiv 2 \pmod 7
-\end{cases}
-$$
+$$ x\equiv a_i\pmod{m_i}\quad(1\le i\le k) $$
 
-Solusi dari masalah ini adalah $x = 23$. Sunzi Suanjing juga memberikan langkah-langkah perhitungan yang konkret untuk memperoleh solusi ini, yang dianggap sebagai contoh pertama dari metode konstruktif untuk Teorema Sisa Tiongkok.
+memiliki tepat satu solusi modulo $M=\prod_{i=1}^k m_i$. Jadi, ada tepat satu wakil dengan $0\le x<M$. Syarat bahwa faktor persekutuan terbesar (FPB) seluruh modulus adalah 1 belum cukup: 6, 10, dan 15 memiliki FPB keseluruhan 1, tetapi tidak saling prima untuk setiap pasangan. [Bukti CRT bilangan bulat](https://kconrad.math.uconn.edu/blurbs/ugradnumthy/crt.pdf) menjelaskan perbedaan ini.
 
-## Definisi Matematis dan Pernyataan Teorema
+Selisih dua solusi mana pun habis dibagi setiap modulus. Karena modulus saling prima berpasangan, selisih itu juga habis dibagi hasil kalinya. Inilah bukti keunikan. Konstruksi berikut membuktikan keberadaan solusi.
 
-Dalam matematika modern, **Teorema Sisa Tiongkok** dirumuskan sebagai berikut.
+## 3. Konstruksi dengan invers dan contoh perhitungan
 
-### Pernyataan Teorema
+Untuk setiap modulus, gunakan algoritma Euclid diperluas untuk memperoleh invers perkalian yang memenuhi
 
-Misalkan ada $k$ bilangan bulat positif $m_1, m_2, \dots, m_k$ yang saling prima (pembagi persekutuan terbesarnya adalah 1). Artinya, untuk setiap $i \neq j$ berlaku $\gcd(m_i, m_j) = 1$.
+$$ M_i=M/m_i,\quad M_i y_i\equiv1\pmod{m_i} $$
 
-Pada kondisi ini, untuk setiap bilangan bulat $a_1, a_2, \dots, a_k$, terdapat sebuah bilangan bulat $x$ yang memenuhi sistem kongruensi berikut, dan $x$ ini unik dalam modulo $M = m_1 m_2 \dots m_k$.
+Syarat saling prima menjamin invers tersebut ada. Mereduksi jumlah berikut ke rentang modulus memberikan solusi:
 
-$$
-\begin{cases}
-x \equiv a_1 \pmod{m_1} \\
-x \equiv a_2 \pmod{m_2} \\
-\vdots \\
-x \equiv a_k \pmod{m_k}
-\end{cases}
-$$
+$$ x=\left(\sum_{i=1}^k a_iM_iy_i\right)\bmod M. $$
 
-Dengan kata lain, hanya ada satu solusi $x$ dalam rentang $0 \leq x < M$, dan semua solusi dapat dinyatakan dalam bentuk $x \equiv x_0 \pmod M$.
+Modulo $m_j$, suku-suku dengan $i\ne j$ menjadi nol, sedangkan suku yang tersisa kongruen dengan $a_j$. Ini membuktikan keberadaan solusi.
 
-### Pembuktian dan Metode Konstruksi (Algoritma Gauss)
+Dalam contoh Sunzi, $M=105$, hasil kali parsialnya 35, 21, dan 15, dengan invers masing-masing 2, 1, dan 1.
 
-Hal yang menakjubkan dari teorema ini adalah teorema ini tidak hanya menjamin keberadaan solusi, tetapi juga menyediakan algoritma untuk membangun solusi tersebut secara konkret. Metode konstruksinya ditunjukkan di bawah ini.
+$$ 2\cdot35\cdot2+3\cdot21\cdot1+2\cdot15\cdot1=233,
+\qquad233\bmod105=23. $$
 
-1. Hitung hasil kali keseluruhan $M = m_1 m_2 \dots m_k$.
-2. Untuk setiap $i$, hitung $M_i = \frac{M}{m_i}$. ($M_i$ adalah hasil kali semua modulus kecuali $m_i$)
-3. Karena $\gcd(M_i, m_i) = 1$, maka terdapat invers perkalian $y_i$ dari $M_i$ dalam modulo $m_i$. Yaitu, kita mencari $y_i$ yang memenuhi $M_i y_i \equiv 1 \pmod{m_i}$ menggunakan algoritma [Euclide](https://kenji.blog/id/p/euclid/)an yang diperluas.
-4. Solusi akhir $x$ diberikan oleh rumus berikut.
+Ada generalisasi terpisah untuk modulus yang tidak saling prima. Untuk dua modulus, solusi ada jika dan hanya jika FPB keduanya membagi selisih sisa, dan solusi unik modulo kelipatan persekutuan terkecil (KPK). Contohnya, modulus 4 dan 6 dengan sisa 1 dan 3 memberikan 9 modulo 12; sisa 0 dan 1 tidak memberikan solusi. Kode di bawah tidak menerapkan generalisasi ini dan hanya menerima modulus yang saling prima berpasangan.
 
-$$
-x = \sum_{i=1}^{k} a_i M_i y_i \pmod M
-$$
+## 4. Implementasi Python dengan pemeriksaan masukan
 
-Bahwa $x$ ini memenuhi sistem kongruensi awal dapat dipastikan dengan mudah dengan mengevaluasi $x$ modulo masing-masing $m_j$. Ketika $i \neq j$, $M_i$ adalah kelipatan dari $m_j$, sehingga $M_i \equiv 0 \pmod{m_j}$. Oleh karena itu, di antara suku-suku dalam penjumlahan, hanya suku $i = j$ yang tersisa, sehingga $x \equiv a_j M_j y_j \equiv a_j \cdot 1 \equiv a_j \pmod{m_j}$, yang memenuhi kondisi.
-
-## Perhitungan dengan Contoh Konkret
-
-Mari kita coba selesaikan "Masalah Sunzi" di atas menggunakan algoritma ini.
-
-Masalah:
-$x \equiv 2 \pmod 3$  (di sini $a_1=2, m_1=3$)
-$x \equiv 3 \pmod 5$  (di sini $a_2=3, m_2=5$)
-$x \equiv 2 \pmod 7$  (di sini $a_3=2, m_3=7$)
-
-**Langkah 1:** Perhitungan $M$
-$M = 3 \times 5 \times 7 = 105$
-
-**Langkah 2:** Perhitungan $M_i$
-$M_1 = 105 / 3 = 35$
-$M_2 = 105 / 5 = 21$
-$M_3 = 105 / 7 = 15$
-
-**Langkah 3:** Perhitungan invers $y_i$
-- $35 y_1 \equiv 1 \pmod 3 \implies 2 y_1 \equiv 1 \pmod 3 \implies y_1 = 2$
-- $21 y_2 \equiv 1 \pmod 5 \implies 1 y_2 \equiv 1 \pmod 5 \implies y_2 = 1$
-- $15 y_3 \equiv 1 \pmod 7 \implies 1 y_3 \equiv 1 \pmod 7 \implies y_3 = 1$
-
-**Langkah 4:** Perhitungan solusi $x$
-$x = (2 \times 35 \times 2) + (3 \times 21 \times 1) + (2 \times 15 \times 1)$
-$x = 140 + 63 + 30 = 233$
-
-Kita cari sisa pembagian bilangan ini dengan $M = 105$.
-$233 \equiv 23 \pmod{105}$
-
-Dengan demikian, solusi positif terkecilnya adalah **23**, yang secara sempurna sesuai dengan solusi Sunzi.
-
-## Aplikasi di Era Modern: Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan CRT
-
-Teka-teki kuno **Teorema Sisa Tiongkok** ini memiliki aplikasi praktis yang sangat berguna di masyarakat digital modern. Contoh utamanya adalah percepatan dekripsi dan pembuatan tanda tangan pada **Kriptografi RSA**.
-
-### Ringkasan Kriptografi RSA
-
-Dalam kriptografi RSA, dua bilangan prima besar $p$ dan $q$ digunakan, dan hasil kalinya $N = pq$ menjadi bagian dari kunci publik. Komputasi untuk mendekripsi teks sandi $C$ menjadi teks biasa $M$ menggunakan kunci privat $d$ dilakukan sebagai berikut.
-
-$$
-M = C^d \pmod N
-$$
-
-Di sini, karena $N$ adalah bilangan yang sangat besar (misalnya 2048 bit), dan $d$ juga memiliki ukuran yang sama, perhitungan eksponen modular ini memakan biaya komputasi yang besar.
-
-### Percepatan dengan CRT (RSA-CRT)
-
-Di sinilah **Teorema Sisa Tiongkok** berperan. Daripada melakukan perhitungan besar dengan modulo $N$, pendekatan yang digunakan adalah memecah komputasi menjadi dua komputasi yang lebih kecil dengan modulo dari faktor prima $N$, yaitu $p$ dan $q$, kemudian di akhir menggabungkan solusinya kembali menggunakan CRT.
-
-Secara spesifik, langkah-langkahnya adalah sebagai berikut.
-
-```mermaid
-graph TD
-    A["Teks sandi C"] --> B["Hitung C_p = C mod p"]
-    A --> C["Hitung C_q = C mod q"]
-    B --> D["Hitung M_p = (C_p)^(d mod (p-1)) mod p"]
-    C --> E["Hitung M_q = (C_q)^(d mod (q-1)) mod q"]
-    D --> F["Gunakan CRT untuk memulihkan M mod N dari M_p dan M_q"]
-    E --> F
-    F --> G["Teks biasa M"]
-```
-
-1. Sebagai kunci privat, daripada menggunakan $d$, nilai $d_p = d \pmod{p-1}$ dan $d_q = d \pmod{q-1}$ dihitung terlebih dahulu.
-2. Proses dekripsi dilakukan secara terpisah untuk modulo $p$ dan modulo $q$.
-   $M_p = C^{d_p} \pmod p$
-   $M_q = C^{d_q} \pmod q$
-3. CRT diterapkan pada $M_p$ dan $M_q$ untuk mendapatkan $M \pmod N$.
-
-Ketika modulus berukuran setengah (misalnya 1024 bit), biaya perhitungan eksponensial berkurang menjadi sekitar 1/8. Melakukan hal ini dua kali menjadikan total biayanya sekitar 1/4. Sehingga, penggunaan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)-CRT dapat mempercepat dekripsi dan pembuatan tanda tangan **sekitar 4 kali lipat**. Pada perangkat dengan sumber daya komputasi terbatas seperti ponsel pintar atau kartu pintar, percepatan ini sangatlah penting.
-
-## Implementasi Pemrograman Teorema Sisa Tiongkok
-
-Selain teori, mari kita tulis program untuk mengimplementasikan **Teorema Sisa Tiongkok**. Di sini, kita akan mengimplementasikan algoritma Gauss menggunakan Python.
+Hanya nilai bertipe bawaan `int` yang diterima; `bool` dan nilai floating-point ditolak. Kedua masukan harus berupa objek iterable berhingga, tidak kosong, dan sama panjang. Setiap modulus harus lebih besar dari 1 dan saling prima dengan setiap modulus lainnya. Sisa boleh negatif atau melebihi modulusnya. Hasilnya adalah wakil nonnegatif terkecil modulo hasil kali modulus. Pengecualian modulus 1 dan sistem kosong merupakan kontrak API pembelajaran ini.
 
 ```python
-def extended_gcd(a, b):
-    """
-    Algoritma Euclidean yang Diperluas
-    Mengembalikan (gcd(a, b), x, y) sedemikian rupa sehingga a*x + b*y = gcd(a, b)
-    """
-    if a == 0:
-        return b, 0, 1
-    else:
-        g, y, x = extended_gcd(b % a, a)
-        return g, x - (b // a) * y, y
+from math import gcd, prod
 
-def mod_inverse(a, m):
-    """
-    Mengembalikan invers perkalian dari a dalam modulo m
-    """
-    g, x, y = extended_gcd(a, m)
+
+def _extended_gcd(a, b):
+    # Internal helper: integer a, positive integer b.
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r:
+        quotient = old_r // r
+        old_r, r = r, old_r - quotient * r
+        old_s, s = s, old_s - quotient * s
+        old_t, t = t, old_t - quotient * t
+    return old_r, old_s, old_t
+
+
+def mod_inverse(a, modulus):
+    if type(a) is not int or type(modulus) is not int:
+        raise TypeError("Arguments must be built-in integers")
+    if modulus <= 1:
+        raise ValueError("Modulus must exceed one")
+    g, x, _ = _extended_gcd(a % modulus, modulus)
     if g != 1:
-        raise Exception('Invers modular tidak ada')
-    else:
-        return x % m
+        raise ValueError("Inverse does not exist")
+    return x % modulus
 
-def chinese_remainder_theorem(a_list, m_list):
-    """
-    Teorema Sisa Tiongkok (CRT)
-    Mengembalikan x yang memenuhi x ≡ a_i (mod m_i)
-    """
-    total_m = 1
-    for m in m_list:
-        total_m *= m
-        
-    x = 0
-    for a, m in zip(a_list, m_list):
-        M_i = total_m // m
-        y_i = mod_inverse(M_i, m)
-        x += a * M_i * y_i
-        
-    return x % total_m
 
-# Menyelesaikan masalah Sunzi
-a = [2, 3, 2]
-m = [3, 5, 7]
-result = chinese_remainder_theorem(a, m)
-print(f"Solusi masalah Sunzi: {result}") # Output: 23
+def chinese_remainder_theorem(residues, moduli):
+    residues, moduli = tuple(residues), tuple(moduli)
+    if not moduli or len(residues) != len(moduli):
+        raise ValueError("Provide equally sized, nonempty inputs")
+    if any(type(x) is not int for x in residues + moduli):
+        raise TypeError("Residues and moduli must be built-in integers")
+    if any(m <= 1 for m in moduli):
+        raise ValueError("Every modulus must exceed one")
+    for i, m in enumerate(moduli):
+        if any(gcd(m, other) != 1 for other in moduli[:i]):
+            raise ValueError("Moduli must be pairwise coprime")
+
+    combined_modulus = prod(moduli)
+    result = 0
+    for a, m in zip(residues, moduli):
+        partial = combined_modulus // m
+        inverse = mod_inverse(partial, m)
+        result = (result + (a % m) * partial * inverse) % combined_modulus
+    return result
+
+
+if __name__ == "__main__":
+    residues = [2, 3, 2]
+    moduli = [3, 5, 7]
+    print("Sunzi solution:", chinese_remainder_theorem(residues, moduli))
+    print("Combined modulus:", prod(moduli))
 ```
 
-Seperti ini, kita dapat mereproduksi **Teorema Sisa Tiongkok** pada komputer hanya dengan beberapa puluh baris kode. Implementasi ini adalah algoritma dasar yang juga sering digunakan dalam kompetisi pemrograman.
+Pada Python 3.12, program mencetak `Sunzi solution: 23` dan `Combined modulus: 105`. Masukan yang berbeda panjang tidak dipotong diam-diam; modulus nol atau negatif, tipe, dan syarat saling prima diperiksa. Bilangan bulat Python menghindari overflow berlebar tetap, tetapi waktu dan memori bergantung pada panjang masukan serta ukuran bilangan. Ini bukan implementasi kriptografi dengan waktu konstan.
 
-## Generalisasi dalam Aljabar Abstrak: Gelanggang dan Ideal
+## 5. Nilai yang direkonstruksi RSA-CRT
 
-**Teorema Sisa Tiongkok** tidak hanya sebatas sifat-sifat bilangan bulat semata, tetapi juga diperluas dalam bentuk yang lebih umum pada cabang **Aljabar Abstrak** yang penting dalam matematika modern.
+Asumsikan kunci RSA yang valid dengan dua faktor prima. Gunakan bilangan prima ganjil berbeda $p,q$, $N=pq$, eksponen publik $e$, dan eksponen privat $d$ yang memenuhi $ed\equiv1\pmod{\lambda(N)}$, dengan $\lambda(N)=\operatorname{lcm}(p-1,q-1)$. Wakil bilangan bulat dari teks sandi memenuhi $0\le C<N$; operasi langsung dengan kunci privat adalah $m=C^d\bmod N$.
 
-Misalkan kita mempertimbangkan gelanggang komutatif $R$ dan idealnya $I_1, I_2, \dots, I_k$. Jika ideal-ideal tersebut saling prima (yakni, untuk setiap $i \neq j$ berlaku $I_i + I_j = R$), maka pemetaan homomorfisma gelanggang natural $\phi$ berikut ini dapat didefinisikan.
+Siapkan parameter CRT:
 
-$$
-\phi: R \to (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
-$$
-\phi(x) = (x \pmod{I_1}, x \pmod{I_2}, \dots, x \pmod{I_k})
-$$
+$$ d_p=d\bmod(p-1),\quad d_q=d\bmod(q-1),\quad q_{\mathrm{inv}}=q^{-1}\bmod p. $$
 
-**Teorema Sisa Tiongkok** dalam aljabar abstrak menyatakan bahwa pemetaan homomorfisma $\phi$ ini bersifat surjektif, dan inti (kernel) dari pemetaan ini adalah irisan ideal $\bigcap_{i=1}^k I_i$ (yang sama dengan hasil kali ideal $\prod_{i=1}^k I_i$).
+$$ m_p=C^{d_p}\bmod p,\quad m_q=C^{d_q}\bmod q. $$
 
-Oleh karena itu, menurut Teorema Isomorfisma Pertama, isomorfisma natural berikut akan berlaku:
+$$ h=(m_p-m_q)q_{\mathrm{inv}}\bmod p,\qquad m=m_q+qh. $$
 
-$$
-R / \left( \bigcap_{i=1}^k I_i \right) \cong (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
+Wakil ini memiliki sisa yang diperlukan untuk kedua bilangan prima dan berada dalam rentang modulus semula. [RFC 8017 bagian 3.2 dan 5.1.2](https://www.rfc-editor.org/rfc/rfc8017.html) menetapkan representasi kunci privat dan rekonstruksi ini. Dua eksponen CRT saja tidak menggantikan seluruh kunci privat: faktor-faktor dan koefisien juga merupakan material kunci rahasia.
 
-### Aplikasi pada Gelanggang Polinomial
+```mermaid
+flowchart TD
+    A["Wakil teks sandi C dalam rentang dan kunci privat valid"] --> B["m_p = C^d_p mod p"]
+    A --> C["m_q = C^d_q mod q"]
+    B --> D["h = (m_p - m_q) q_inv mod p"]
+    C --> D
+    D --> E["Rekonstruksi m = m_q + q h"]
+    E --> F["Lanjutkan pemrosesan skema dalam pustaka teraudit"]
+```
 
-Salah satu aplikasi paling penting dari teorema yang digeneralisasi ini adalah **Teorema Sisa Tiongkok** pada gelanggang polinomial satu variabel $F[x]$ atas lapangan $F$.
+Diagram ini hanya menggambarkan aritmatika bilangan bulat, tanpa pengodean pesan dan validasi skema. Enkripsi dan tanda tangan dalam praktik menggunakan skema berbeda. Seperti dijelaskan dalam [pengantar RSA](https://kenji.blog/id/p/rsa-encryption-math-explained-for-beginners/), pustaka yang telah diaudit harus melakukan pemrosesan yang sesuai dengan tujuan penggunaan.
 
-"Bilangan bulat yang saling prima" pada bilangan bulat, ekuivalen dengan "polinomial yang tidak memiliki akar persekutuan (polinomial pembagi persekutuan terbesarnya adalah sebuah konstanta)" dalam gelanggang polinomial. CRT versi polinomial ini adalah dasar teoretis untuk interpolasi [Lagrange](https://kenji.blog/id/p/lagrange/) ([Lagrange](https://kenji.blog/id/p/lagrange/) interpolation), dan sepenuhnya sesuai dengan algoritma yang menentukan polinomial derajat terendah secara unik yang melewati sejumlah titik yang diberikan. Hal ini juga merupakan dasar matematis dari **Kode Reed-Solomon**, sejenis kode koreksi kesalahan.
+## 6. Perkiraan kecepatan dan batas implementasi
 
-## Komputasi Paralel Masif dengan Sistem Bilangan Residu (RNS)
+Catatan 14.75 pada [HAC bab 14](https://cacr.uwaterloo.ca/hac/about/chap14.pdf) memberikan perkiraan faktor sekitar empat dengan sejumlah asumsi: ukuran kedua bilangan prima serupa, perkalian klasik berbiaya kuadratik, jumlah perkalian sebanding dengan panjang bit eksponen, dan biaya rekonstruksi dapat diabaikan. Algoritma perkalian lain, eksekusi paralel, perlindungan, serta perangkat berbeda akan mengubah perbandingan ini. Ini bukan hasil pengukuran bahwa kode artikel ini empat kali lebih cepat.
 
-Sebagai aplikasi rekayasa dari **Teorema Sisa Tiongkok**, mari kita bahas juga **Sistem Bilangan Residu (Residue Number System, RNS)**.
+Jika salah satu sisa CRT yang dihitung terpisah rusak, hasil yang tidak diperiksa dapat membocorkan faktor rahasia. [Makalah analisis gangguan pada RSA-CRT](https://courses.csail.mit.edu/6.857/2010/handouts/faults.pdf) menjelaskan syaratnya. Aritmatika pembelajaran yang benar tidak menjamin perlindungan terhadap gangguan ataupun ketahanan terhadap serangan kanal samping. Perlindungan, termasuk pemeriksaan dengan kunci publik, perlu ditangani pustaka yang memproses skema lengkap.
 
-Biasanya, komputer merepresentasikan dan memproses nilai-nilai menggunakan bilangan biner. Akan tetapi, ketika melakukan penjumlahan atau perkalian, propagasi carry (bawaan) akan terjadi. Oleh karena itu, jika lebar bit membesar, terdapat masalah penundaan sirkuit yang meningkat.
+## 7. Generalisasi ke gelanggang dan ideal
 
-Dalam RNS, satu set modulus yang saling prima $\{m_1, m_2, \dots, m_k\}$ disiapkan, dan suatu bilangan bulat $X$ yang besar dinyatakan sebagai himpunan sisa pembagian $(x_1, x_2, \dots, x_k)$ terhadap setiap modulus tersebut.
+Misalkan $R$ adalah gelanggang komutatif dengan identitas perkalian, dan pilih sejumlah berhingga ideal di dalamnya. Asumsikan $I_i+I_j=R$ untuk setiap pasangan ideal berbeda. Homomorfisma alami
 
-Keuntungan terbesar dari representasi ini adalah **tidak adanya bawaan (carry)** yang terjadi saat melakukan penjumlahan dan perkalian.
-Misalnya, saat menjumlahkan $X$ dan $Y$, perhitungannya dapat dilakukan secara terpisah dan independen untuk setiap modulus.
+$$ \phi:R\longrightarrow\prod_{i=1}^k R/I_i,\qquad
+\phi(r)=(r+I_1,\ldots,r+I_k) $$
 
-$$
-X + Y \leftrightarrow ( (x_1+y_1)\pmod{m_1}, \dots, (x_k+y_k)\pmod{m_k} )
-$$
-$$
-X \times Y \leftrightarrow ( (x_1y_1)\pmod{m_1}, \dots, (x_k y_k)\pmod{m_k} )
-$$
+bersifat surjektif dan intinya adalah irisan ideal-ideal tersebut. Dengan syarat ini, irisan sama dengan hasil kali ideal, sehingga:
 
-Karena komputasi pada setiap modulus sepenuhnya independen, kecepatan operasi yang sangat tinggi dimungkinkan dengan merakit sirkuit paralel. Pada saat mengembalikan hasil akhirnya menjadi angka biasa, di sinilah tepatnya **Teorema Sisa Tiongkok** digunakan. Teknologi ini masih diteliti dan digunakan secara praktis saat ini, seperti dalam Pengolahan Sinyal Digital (DSP) yang membutuhkan pemrosesan secara waktu nyata dan desain sirkuit pemrosesan kriptografi tertentu.
+$$ R/\left(\bigcap_{i=1}^k I_i\right)
+\cong\prod_{i=1}^k R/I_i,\qquad
+\bigcap_{i=1}^k I_i=\prod_{i=1}^k I_i. $$
 
-## Kesimpulan
+[Teorema sisa Tiongkok pada Stacks Project](https://stacks.math.columbia.edu/tag/00DT) memberikan syarat dan buktinya. Modulus bilangan bulat yang saling prima berpasangan merupakan kasus khusus dari syarat ideal ini.
 
-**Teorema Sisa Tiongkok** diawali sebagai teka-teki matematika semata, kemudian berevolusi menjadi teorema struktural mengenai ideal dalam aljabar abstrak, dan akhirnya berkembang menjadi teknologi fondasi dalam teori kriptografi dan ilmu komputer masa kini.
+## 8. Polinomial dan interpolasi
 
-Fakta bahwa kearifan para matematikawan Tiongkok kuno masih terus hidup ribuan tahun kemudian dalam pemrosesan kriptografi di ponsel pintar kita seakan melambangkan universalitas dan kekuatan matematika sebagai suatu disiplin ilmu.
+Dua polinomial atas suatu lapangan saling prima jika dan hanya jika FPB-nya berupa konstanta tak nol. Tidak adanya akar bersama di lapangan asal saja belum cukup. Sebagai contoh, di atas bilangan rasional, ambil kedua polinomial sama dengan $x^2+1$. Keduanya tidak memiliki akar rasional, tetapi FPB-nya justru polinomial berderajat dua tersebut. Untuk menyatakan syarat saling prima melalui akar bersama, kita harus bekerja pada penutupan aljabar (algebraic closure).
+
+Faktor linear untuk titik evaluasi berbeda $\alpha_1,\ldots,\alpha_k$ saling prima berpasangan. Karena itu, polinomial dengan nilai yang ditentukan unik di antara polinomial berderajat $<k$. Inilah hubungannya dengan interpolasi Lagrange. Jika derajat lebih tinggi diizinkan, keunikan tidak berlaku lagi. Evaluasi dan batas derajat atas lapangan berhingga juga berkaitan dengan kode Reed–Solomon, tetapi CRT saja tidak menjamin kemampuan koreksi kesalahan.
+
+## 9. Sistem bilangan residu dan rentang rekonstruksi
+
+RNS merepresentasikan bilangan bulat sebagai tuple sisa untuk beberapa modulus serta memungkinkan penjumlahan dan perkalian per komponen. Di sini $x_i=X\bmod m_i$ dan $y_i=Y\bmod m_i$. Untuk hasil kali modulus $M$:
+
+$$ (X+Y)\bmod M\longleftrightarrow
+((x_i+y_i)\bmod m_i)_{i=1}^k, $$
+
+$$ (XY)\bmod M\longleftrightarrow
+((x_iy_i)\bmod m_i)_{i=1}^k. $$
+
+Carry adalah nilai yang diteruskan ke posisi digit berikutnya. Carry antarkanal tidak diperlukan, tetapi aritmatika biner di dalam setiap kanal masih dapat melibatkan carry. Rekonstruksi menghasilkan wakil modulo hasil kali modulus; tanpa informasi rentang tambahan, sisa-sisa itu tidak menentukan secara unik hasil penjumlahan atau perkalian bilangan bulat yang melampaui rentang tersebut. Perbandingan, pembagian, dan konversi ke representasi biasa memerlukan pemrosesan tambahan.
+
+Dari masalah sisa klasik hingga kriptografi, aljabar, dan aritmatika paralel, CRT merekonstruksi sisa yang kompatibel di bawah syarat modulus dan rentang yang dinyatakan. Membedakan rentang serta kegunaannya penting untuk menerapkan teorema ini dengan benar.

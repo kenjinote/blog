@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:40:30.870556+09:00",
+  "path": "content/post/chinese-remainder-theorem/index.id.md",
+  "sha256": "afe372d9b5275e9e9b74e8aa4702db2c12961ea947823005aacc1a512d083e09",
+  "fullOriginalBodyMetadataPythonAndDiagramRead": true,
+  "completeOriginalPythonExecuted": true,
+  "stdout": "Solusi masalah Sunzi: 23\n",
+  "missingResidueReturned": 5,
+  "extraResidueReturned": 2,
+  "findings": "Read complete original Indonesian metadata/body/Python/Mermaid. Euclidean word fragment linked to biography and duplicate Lagrange links. Shared missing API/uniqueness/polynomial-field/degree/RSA/RNS qualifications. Carry rendered literally as bawaan without arithmetic explanation; clarify rather than claim all possible regional usages wrong. Lapangan is valid field terminology. Original Sunzi23 program succeeds.",
+  "reviewed": false
+}
