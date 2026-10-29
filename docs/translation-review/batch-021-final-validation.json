@@ -1,0 +1,342 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T17:33:57.224128+09:00",
+  "scope": "Fresh all13version HTML/exactRust/metadata/reference/expected language-map checks,joined to preserved actual Rust executions. Does not claim duplicate new executable runs or automatic prose approval.",
+  "versions": [
+    {
+      "language": "ja",
+      "sha256": "a82d199b8f195dbbc6cba8b28180142d56ff3ff02db3abfb8cc1bf939b3c49fa",
+      "canonical": "https://kenji.blog/p/rust%E3%81%A7%E7%B4%A0%E6%95%B0%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-ja-en-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/p/%E3%82%A8%E3%83%A9%E3%83%88%E3%82%B9%E3%83%86%E3%83%8D%E3%82%B9%E3%81%AE%E7%AF%A9%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%E7%B4%A0%E6%95%B0%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "en",
+      "sha256": "96c9062dfd14c2b496d707deb9c180dcdbed9615c6cbd1684f529d9327e35009",
+      "canonical": "https://kenji.blog/en/p/rust%E3%81%A7prime-number%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-ja-en-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/en/p/sieve-of-eratosthenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEprime-number%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "zh-cn",
+      "sha256": "41964d6b201a322291c09f54c8b7a7b413325289515b563f4df6998cb71b4526",
+      "canonical": "https://kenji.blog/zh-cn/p/rust%E3%81%A7%E7%B4%A0%E6%95%B0%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-chinese-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/zh-cn/p/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AD%9B%E6%B3%95%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%E7%B4%A0%E6%95%B0%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "zh-tw",
+      "sha256": "55bd2e04006d70d0aae0cefb0846cae432bb0609aa18f12985245cb2aa0a6915",
+      "canonical": "https://kenji.blog/zh-tw/p/rust%E3%81%A7%E8%B3%AA%E6%95%B8%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-chinese-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/zh-tw/p/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AF%A9%E6%B3%95%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%E8%B3%AA%E6%95%B8%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "es",
+      "sha256": "bd24ffe2fd16281deec02b8f472f0e2e95a2bdefed68d6681e56308a1f436a79",
+      "canonical": "https://kenji.blog/es/p/rust%E3%81%A7n%C3%BAmero-primo%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-es-ko-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/es/p/criba-de-erat%C3%B3stenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEn%C3%BAmero-primo%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "ko",
+      "sha256": "ddb8d02fa18b4f33620287934dfb35fef53be27a9ec716abf7d7a5e7c05d7abd",
+      "canonical": "https://kenji.blog/ko/p/rust%E3%81%A7%EC%86%8C%EC%88%98%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-es-ko-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/ko/p/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98-%EC%B2%B4%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%EC%86%8C%EC%88%98%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "pt",
+      "sha256": "ed85e4636ca4e92276d6ef2f6222de5ba2864ad683c604eaf5b9feeaad2b4157",
+      "canonical": "https://kenji.blog/pt/p/rust%E3%81%A7n%C3%BAmero-primo%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-pt-fr-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/pt/p/crivo-de-erat%C3%B3stenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEn%C3%BAmero-primo%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "fr",
+      "sha256": "ca202dff2de4b4b96771d2d93721189ac48aa9c33fd194b5cebb6f34426ecd5f",
+      "canonical": "https://kenji.blog/fr/p/rust%E3%81%A7nombre-premier%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-pt-fr-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/fr/p/crible-d%C3%A9ratosth%C3%A8ne%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEnombre-premier%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "de",
+      "sha256": "d00f43ba6a3af577ba3e2e1a8948d9fffcf1b9c677890cf79d824547866dec5a",
+      "canonical": "https://kenji.blog/de/p/rust%E3%81%A7primzahl%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-de-id-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/de/p/sieb-des-eratosthenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEprimzahl%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "id",
+      "sha256": "eda24e2fb1a260bfabbb720a519605b8ca0e106dbcf8637558772ad9a21de103",
+      "canonical": "https://kenji.blog/id/p/rust%E3%81%A7bilangan-prima%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-de-id-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/id/p/saringan-eratosthenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEbilangan-prima%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "hi",
+      "sha256": "18bc17039704f6c70085870bd4f19173060e43fd0d0a26b704d15c6b09df4562",
+      "canonical": "https://kenji.blog/hi/p/rust%E3%81%A7%E0%A4%85%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF-%E0%A4%B8%E0%A4%82%E0%A4%96%E0%A5%8D%E0%A4%AF%E0%A4%BE%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-hi-ru-ar-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/hi/p/%E0%A4%8F%E0%A4%B0%E0%A4%BE%E0%A4%9F%E0%A5%8B%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%A8%E0%A5%80%E0%A4%9C-%E0%A4%95%E0%A5%80-%E0%A4%9B%E0%A4%B2%E0%A4%A8%E0%A5%80%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%E0%A4%85%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF-%E0%A4%B8%E0%A4%82%E0%A4%96%E0%A5%8D%E0%A4%AF%E0%A4%BE%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "ru",
+      "sha256": "70697b496c714413355d20f226fa923edbddec706624f26087b2531c7af1dc6a",
+      "canonical": "https://kenji.blog/ru/p/rust%E3%81%A7%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5-%D1%87%D0%B8%D1%81%D0%BB%D0%BE%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-hi-ru-ar-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/ru/p/%D1%80%D0%B5%D1%88%D0%B5%D1%82%D0%BE-%D1%8D%D1%80%D0%B0%D1%82%D0%BE%D1%81%D1%84%D0%B5%D0%BD%D0%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5-%D1%87%D0%B8%D1%81%D0%BB%D0%BE%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    },
+    {
+      "language": "ar",
+      "sha256": "a3355c58709ca586a0ad1a4d9494a0cce4a2215047f0ea1d002b440f75961590",
+      "canonical": "https://kenji.blog/ar/p/rust%E3%81%A7%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A3%D9%88%D9%84%D9%8A%D8%A9%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "executionEvidence": "docs/translation-review/batch-021-hi-ru-ar-validation.json",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ],
+      "rustBlocksExact": 1,
+      "formalTexExpressions": 0,
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "originalDistinctCanonicalAndDatePreserved": true,
+      "sieveTarget": "https://kenji.blog/ar/p/%D8%BA%D8%B1%D8%A8%D8%A7%D9%84-%D8%A5%D8%B1%D8%A7%D8%AA%D9%88%D8%B3%D8%AA%D9%8A%D9%86%D8%B3%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A3%D9%88%D9%84%D9%8A%D8%A9%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+    }
+  ],
+  "fullVectorBoundComparisons": 56186,
+  "completeProgramRunsWith168ExactOutputs": 26,
+  "rustBlocksExact": 13,
+  "formalTexExpressions": 0,
+  "publicationPending": true,
+  "limitations": [
+    "AI,not human/native-speaker certification.",
+    "Finite bounds<=100000,Rust1.90Windows64bit,not everyusize or target.",
+    "No usizeMAX enumeration,performance benchmark,visualbrowser/RTL or cryptographic audit."
+  ]
+}
