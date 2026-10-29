@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/2つの封筒のパラドックス/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/2つの封筒のパラドックス/index.md",
+      "sourceHash": "6fbb8397037b64b965eceac9fabe38880228b0a0311d6da2e5d4f33a7bd69ada",
+      "translationHash": "ddfa92c7410d730faf52017272f67828cc533640604bca83a19fb86b5573d870",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read original JA/EN metadata, full bodies and both Mermaid sources independently; rewrote and reread both complete versions and final finite-budget/almost-sure/continuous-inequality edits. Preserved the unopened/opened problem, fair selection, conditional versus unconditional reasoning, finite priors and means, proper infinite-mean counterexamples, continuous density transformation, repeated switches and StPetersburg/decision context. Corrected original and English claims that normalization alone forbids conditional gains at every possible observation, and that infinite expectations collapse logic. Expected money is distinct from certain profit or a universal decision rule."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared random variable versus realized amount; prior versus posterior; mass/support versus density/Jacobian; proper normalization versus improper uniform prior; finite realization/upper bound/mean; expected amount versus expected signed gain; positive/negative parts and integrability; almost surely versus every positive-probability discrete observation; mean ratio versus ratio of expectations and mean product. Used continuous conditional-expectation version for the continuous counterexample, not conditioning by a zero point-probability ratio. Removed unsupported universal monotonicity of doubling probability and distinguished a finite bound from existence of an attained maximum."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually checked all44TeX expressions per version, conditional law given smaller amount, discrete Bayes denominator/support, gain threshold1/3,5000/10000prior and all three observation weights/gains,nonmonotone49/100-1/100-1/2counterexample,finite-mean proof,proper geometric prior and2/5posterior/11x/10conditional mean,positive/negative infinite gain parts,nonnegative tower law,continuous1/2and1/4density factors,f(s)=1/(1+s)^2and ratio<4,reciprocal switch ratios and25/16versus1.44TeX each exact in source/decodedHTML. Shared once:102finite priors with1619joint-observation comparisons,101normalization identities,100geometric posterior cases,268continuous rational substitutions. Auxiliary source-audit previously executed33finite truncations; not newly rerun or counted perlanguage. Limits/analytic arguments separately read, finite tests not universal proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Neither original nor revised JA/EN article contains an executable program. Checked both complete localized Mermaid sources, preserving corresponding revised topologies of5and6edges, exact decodedHTML retention and corrected faulty-reasoning/conditioned-example labels. Auxiliary Fraction calculations run underPython3.12.14 once per invocation; these are not article-code executions. No browser Mermaid/KaTeX visual-runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three exact primary reference links and two matching-language internal Bayes/StPetersburg targets present in generatedHTML; internal targets exist in28-bundle preview but their bodies are not certified by this batch. Primary reading scope/failure is documented in source-notes:Broome extracted full paper, scoped MIT/Berkeley passages, ORA403not full-read. Preserved actualSep10date,slug,heroimage bytes,tags/categories; removed duplicateSep24date, recordedOct30lastmod, math/Mermaid enabled. All14hreflang/13sidebar targets exact for selectedJAEN. Preview multilingual1609pages andHTTPS2933HTML/41XML, plus17existing unit tests passed. Hugo's isolated-preview missing pages/layout and PortugueseUI warnings recorded, not represented as warning-free. Publication pending."
+        }
+      },
+      "summary": "Complete English comparison against corrected Japanese two-envelope article, with finite-mean conditions, proper infinite-mean counterexamples and density/ratio distinctions.",
+      "validation": "docs/translation-review/batch-025-ja-en-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other11translations have not completed full reading/revision/review and remain unreviewed.",
+        "Auxiliary finite checks supplement manually checked analytic arguments; not universal proof or article-code execution.",
+        "Source/decodedHTML only; no browser visual/diagram runtime certification.",
+        "Linked Bayes/StPetersburg bodies not reviewed here; source-reading scope recorded precisely.",
+        "Publication/live checks for this batch pending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "ja",
+        "en"
+      ],
+      "sourceHash": "6fbb8397037b64b965eceac9fabe38880228b0a0311d6da2e5d4f33a7bd69ada",
+      "validation": "docs/translation-review/batch-025-ja-en-validation.json",
+      "checks": "docs/translation-review/batch-025-ja-en-checks.json",
+      "texEach": 44,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        5,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "finitePriors": 102,
+        "jointObservationCases": 1619,
+        "normalizationIdentities": 101,
+        "geometricPosteriorCases": 100,
+        "continuousRationalCases": 268,
+        "ratioMean": "5/4",
+        "meanReciprocalProduct": "1",
+        "productOfRatioMeans": "25/16",
+        "scope": "Shared exact auxiliary arithmetic once per invocation, not article code execution or universal proof. Geometric limits, finite-mean argument and continuous inequality manually checked separately. Original source-audit also contains33finite truncations; not rerun or counted here."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTests": 17,
+      "reviewedTranslationsTotal": 301,
+      "unreviewedTranslations": 12731,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    }
+  ],
+  "sourceAudit": "docs/translation-review/batch-025-source-audit.json",
+  "sourceNotes": "docs/translation-review/batch-025-source-notes.md"
+}

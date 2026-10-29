@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T08:36:47.201116+09:00",
+  "allPassed": true,
+  "scope": "28-bundle isolated preview; auxiliary Bayes/StPetersburg bundles rendered but not article-reviewed. Existing unit tests have simulated human-review fixtures, not real human records. Selected two-envelope JA/EN evidence stored separately; no other translations certified. Hugo reported existing missing-preview pages/layout/Portuguese-UI translation warnings; build itself succeeded. No browser visual or live publication certification.",
+  "results": [
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-two-envelopes-ja-en"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1609 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-two-envelopes-ja-en"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 2933, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_multilingual.py"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 19 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.356s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_math_rendering.py"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.442s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_translation_reviews.py"
+      ],
+      "exitCode": 0,
+      "stdout": "Recorded ai review: post/sample/index.en.md\nRecorded ai review: post/sample/index.en.md\nRecorded human review: post/sample/index.en.md\n",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.122s\n\nOK\n"
+    }
+  ]
+}
