@@ -163,6 +163,47 @@
         "Linked Bayes/StPetersburg bodies not reviewed here; primary-source reading scope documented.",
         "Publication/live checks pending."
       ]
+    },
+    "post/2つの封筒のパラドックス/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/2つの封筒のパラドックス/index.md",
+      "sourceHash": "6fbb8397037b64b965eceac9fabe38880228b0a0311d6da2e5d4f33a7bd69ada",
+      "translationHash": "ba1726107e4f185cfd7938b4945b3b7383e875817d65cfcd99421afcda93d3ad",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and revised Korean metadata/body/two Mermaid sources independently against corrected Japanese, including final law-name/change-of-variable/unconditional-difference wording edits. Preserved all nine revised topics:setup,unsupported half/double weights,fixed-smaller symmetry,discrete posterior,finite money example and nonmonotonicity,finite-mean argument,proper infinite-mean discrete counterexample,continuous density change,and reciprocal ratios/StPetersburg/decision limits. Did not classify random variables taking different values as inherently wrong, nor normalization as implying a finite mean."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Read original and revised Korean metadata/full body/two Mermaid sources independently against Japanese; reread final law-name/change-of-variable/unconditional-difference wording. Compared 사전 분포/조건부 확률,확률변수/실현값,확률질량/확률밀도,정규화 versus 정규분포 and 유한한 기댓값,금액 상한/최댓값,양의 부분/음의 부분/적분 가능,거의 확실하게(확률1),기대 금액/실제 이익,and 역수/곱의 기댓값. Clarified proper prior through probabilities summing to1 instead of relying on a possibly unfamiliar label. Used 전체 기댓값의 법칙 with English law of total expectation once; no claim of an exclusive official Korean name. Preserved 기댓값 taxonomy and all topics; corrected source-derived claims, not accepted synonyms. Formulated the x=2s variable-transformation sentence to avoid awkward Korean particles; distinguished conditional expected amount from guaranteed profit and finite realizations from finite means."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared all44TeX and assumptions:independent fair coin,p(x)and p(x/2)off-support masses,positive denominator,gain iff q>1/3,5000/10000prior with1/4-1/2-1/4observations,nonmonotone1/50versus50/51,integrability/finite-mean total expectation,normalized geometric distribution with2/5posterior and11x/10mean,undefined signed expectation when both parts infinite,valid nonnegative tower law,continuous1/2and1/4density factors and f(x/2)/f(x)<4,reciprocal ratios and25/16versus1.44expressions exact in source/decodedHTML. Actual shared auxiliary run in this invocation:102finite priors1619joint-observation checks,101normalization identities,100geometric posteriors,268rational density substitutions. Finite arithmetic supplements manually checked analytic arguments,not universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised Korean contain only two Mermaid blocks and no executable article program. Read labels and compared revised corresponding5and6edge topologies with Japanese; exact complete localized sources retained in decodedHTML. Shared Fraction arithmetic is auxiliary,not a Chinese article-program execution. No browser diagram/KaTeX runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three primary external links and localized Korean Bayes/StPetersburg URLs exact in generatedHTML; internal pages exist in28bundlepreview,but their bodies not reviewed here. Primary-source reading scope documented separately,including unavailableORA403not fully read. Preserved actualSep10date,slug,imagebytes/tags/categories;removed duplicateSep24date,setOct30lastmod,math/Mermaid enabled. All14hreflang/13sidebar targets exact. New preview multilingual1609pages/HTTPS2933HTML41XML passed. Existing17unit tests passed at precedingJAENstage and not rerun here. Existing isolated-preview pages/layout/PortugueseUI warnings retained. Publication pending."
+        }
+      },
+      "summary": "Full Korean comparison against corrected Japanese, preserving all topics with proper priors, finite-mean conditions and density/expectation distinctions.",
+      "languageSpecificFindings": "Read original and revised Korean metadata/full body/two Mermaid sources independently against Japanese; reread final law-name/change-of-variable/unconditional-difference wording. Compared 사전 분포/조건부 확률,확률변수/실현값,확률질량/확률밀도,정규화 versus 정규분포 and 유한한 기댓값,금액 상한/최댓값,양의 부분/음의 부분/적분 가능,거의 확실하게(확률1),기대 금액/실제 이익,and 역수/곱의 기댓값. Clarified proper prior through probabilities summing to1 instead of relying on a possibly unfamiliar label. Used 전체 기댓값의 법칙 with English law of total expectation once; no claim of an exclusive official Korean name. Preserved 기댓값 taxonomy and all topics; corrected source-derived claims, not accepted synonyms. Formulated the x=2s variable-transformation sentence to avoid awkward Korean particles; distinguished conditional expected amount from guaranteed profit and finite realizations from finite means.",
+      "validation": "docs/translation-review/batch-025-ko-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "At this stage7other translations have not completed full revision/review/recording.",
+        "Auxiliary arithmetic is not article-code execution or universal proof.",
+        "Source and decodedHTML only; no browservisual/diagramruntime certification.",
+        "Linked Bayes/StPetersburg bodies not reviewed here; primary-source reading scope documented.",
+        "Publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -309,6 +350,42 @@
       "unreviewedTranslations": 12728,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 8,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "ko"
+      ],
+      "sourceHash": "6fbb8397037b64b965eceac9fabe38880228b0a0311d6da2e5d4f33a7bd69ada",
+      "validation": "docs/translation-review/batch-025-ko-validation.json",
+      "checks": "docs/translation-review/batch-025-ko-checks.json",
+      "texEach": 44,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        5,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "finitePriors": 102,
+        "jointObservationCases": 1619,
+        "normalizationIdentities": 101,
+        "geometricPosteriorCases": 100,
+        "continuousRationalCases": 268,
+        "ratioMean": "5/4",
+        "meanReciprocalProduct": "1",
+        "productOfRatioMeans": "25/16",
+        "scope": "Shared exact auxiliary arithmetic once per invocation, not article code execution or universal proof. Geometric limits, finite-mean argument and continuous inequality manually checked separately. Original source-audit also contains33finite truncations; not rerun or counted here."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 305,
+      "unreviewedTranslations": 12727,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 7,
       "publicationPending": true
     }
   ],

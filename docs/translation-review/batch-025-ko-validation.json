@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T08:56:12.676760+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ko",
+      "path": "content/post/2つの封筒のパラドックス/index.ko.md",
+      "sha256": "ba1726107e4f185cfd7938b4945b3b7383e875817d65cfcd99421afcda93d3ad",
+      "sourceSha256": "6fbb8397037b64b965eceac9fabe38880228b0a0311d6da2e5d4f33a7bd69ada",
+      "texExpressions": 44,
+      "mermaidDiagrams": 2,
+      "diagramEdges": [
+        5,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "lastmod": "2026-10-30",
+      "passed": true
+    }
+  ],
+  "sharedAuxiliaryChecks": {
+    "finitePriors": 102,
+    "jointObservationCases": 1619,
+    "normalizationIdentities": 101,
+    "geometricPosteriorCases": 100,
+    "continuousRationalCases": 268,
+    "ratioMean": "5/4",
+    "meanReciprocalProduct": "1",
+    "productOfRatioMeans": "25/16",
+    "scope": "Shared exact auxiliary arithmetic once per invocation, not article code execution or universal proof. Geometric limits, finite-mean argument and continuous inequality manually checked separately. Original source-audit also contains33finite truncations; not rerun or counted here."
+  },
+  "sourceAuditSha256": "56b7e9b5b9b53b6f184ba5a5e1c6d01ce82c44974a9abf9723fbdefa1df48210",
+  "limitations": [
+    "Selected versions only; no unread translation certified.",
+    "No executable article program; auxiliary arithmetic is separate.",
+    "Source and decodedHTML; no native-language/browservisual/KaTeX/Mermaidruntime certification.",
+    "Internal Bayes/StPetersburg targets exist and match language; their bodies have not been reviewed in this batch.",
+    "Primary-source reading scope is in source-notes; no entire-course certification.",
+    "Publication pending."
+  ]
+}
