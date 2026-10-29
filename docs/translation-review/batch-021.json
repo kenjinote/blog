@@ -414,6 +414,144 @@
         "No huge upper-bound enumeration,timing,visualbrowser or cryptographic audit.",
         "Full-siteCI/publication pending."
       ]
+    },
+    "post/Rustで素数を列挙する/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustで素数を列挙する/index.md",
+      "sourceHash": "a82d199b8f195dbbc6cba8b28180142d56ff3ff02db3abfb8cc1bf939b3c49fa",
+      "translationHash": "18bc17039704f6c70085870bd4f19173060e43fd0d0a26b704d15c6b09df4562",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original metadata/body/code before editing,revised against corrected fullJapanese and reviewedEnglish,then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,one complete program,inclusive bounds,small-limit vectors,stored-prime proof,borrowed/owned iteration and resource limits. No unread/unvalidated language recorded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hindi explicitly describes सूची/listing rather than ambiguous गणना/counting. Uses अभाज्य/भाज्य,अभाज्य गुणनखंड,भाजक,शेषफल,वर्गमूल,वेक्टर,संदर्भ,उधार and स्वामित्व. Corrected feminine plural मिली,explicit existential कम से कम एक prime factor and natural before-candidate-test boundary wording. Matched inclusive bound,all boundary vectors,quotient cutoff,borrowed-copy versus owned-consuming iteration and bounded increment. Original title/slug/date and localized reviewed sieve link preserved."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "No TeX-delimited formulas or diagrams. Confirmed increasing-prime invariant and smallest-prime-factor square-root argument; p>n/p is safe forpositive divisors and does not omit square factors. max-n subtraction occurs only with n<=max; final increment only when remaining>=2,so it cannot exceedmax. O(max sqrt(max)) is a coarse asymptotic division-count bound. Finite tests do not prove allusize or timings."
+        },
+        "code": {
+          "status": "checked",
+          "note": "One Rust block exactly matches revised Japanese and generatedHTML. Rust1.90Windows64bit,edition2021,Dwarnings,debugchecked/optimizedchecked modes compiled separate complete program and harness. Per mode2161bounds compared as full vectors against independent Python trial division through100000; includes0..2000,seededrandom,square/power neighbors,99999/100000.1000sample168lines exact. No huge-bound run,overflow reproduction or timing benchmark claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Official Vec reference shared with source,and matching reviewed sieve canonical for this language. Existing Rust->Wasm link removed. Preserved original distinct slug/canonical,actual datePublished2022-09-09T07:08:49+09:00,images/img.webp,tags/categories;single date and actual lastmod2026-10-29.22bundle Hugo build,multilingual1310pages,HTTPS2409HTML/41XML passed. Prior17tests passed for same revised source. This article and referenced sieve publication are separately tracked."
+        }
+      },
+      "summary": "Full hi Rust stored-prime enumeration review against corrected Japanese,including actual full-vector and exactHTMLcode checks.",
+      "languageSpecificFindings": "Hindi explicitly describes सूची/listing rather than ambiguous गणना/counting. Uses अभाज्य/भाज्य,अभाज्य गुणनखंड,भाजक,शेषफल,वर्गमूल,वेक्टर,संदर्भ,उधार and स्वामित्व. Corrected feminine plural मिली,explicit existential कम से कम एक prime factor and natural before-candidate-test boundary wording. Matched inclusive bound,all boundary vectors,quotient cutoff,borrowed-copy versus owned-consuming iteration and bounded increment. Original title/slug/date and localized reviewed sieve link preserved.",
+      "validation": "docs/translation-review/batch-021-hi-ru-ar-validation.json",
+      "references": [
+        {
+          "url": "https://doc.rust-lang.org/std/vec/struct.Vec.html",
+          "scope": "Scoped IntoIterator for ownedVec(Item=T) and shared&Vec(Item=&T),plus previously read Guaranteesparagraphs;not all6780lines or unsafeAPI audit. Retrieved docs1.99.1 versus actual compiler1.90 separately recorded."
+        }
+      ],
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "Other original translations were read,but each receives a current review only after its own full revised-body comparison and actual validation.",
+        "Finite bounds<=100000,Rust1.90Windows64bit,not everyusize or target.",
+        "No huge upper-bound enumeration,timing,visualbrowser or cryptographic audit.",
+        "Full-siteCI/publication pending."
+      ]
+    },
+    "post/Rustで素数を列挙する/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustで素数を列挙する/index.md",
+      "sourceHash": "a82d199b8f195dbbc6cba8b28180142d56ff3ff02db3abfb8cc1bf939b3c49fa",
+      "translationHash": "70697b496c714413355d20f226fa923edbddec706624f26087b2531c7af1dc6a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original metadata/body/code before editing,revised against corrected fullJapanese and reviewedEnglish,then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,one complete program,inclusive bounds,small-limit vectors,stored-prime proof,borrowed/owned iteration and resource limits. No unread/unvalidated language recorded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Russian uses простое/составное,пробное деление,простой множитель,делитель,остаток,квадратный корень,вектор,ссылка,заимствование and владение. Matched до границы включительно,small-limit vectors,integer quotient proof,borrowed copies versus ownership-taking iteration,post-borrow push and final guard. Original1000code remains correctly described;valid перечисление title,original mixed slug,date and corresponding sieve URL preserved."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "No TeX-delimited formulas or diagrams. Confirmed increasing-prime invariant and smallest-prime-factor square-root argument; p>n/p is safe forpositive divisors and does not omit square factors. max-n subtraction occurs only with n<=max; final increment only when remaining>=2,so it cannot exceedmax. O(max sqrt(max)) is a coarse asymptotic division-count bound. Finite tests do not prove allusize or timings."
+        },
+        "code": {
+          "status": "checked",
+          "note": "One Rust block exactly matches revised Japanese and generatedHTML. Rust1.90Windows64bit,edition2021,Dwarnings,debugchecked/optimizedchecked modes compiled separate complete program and harness. Per mode2161bounds compared as full vectors against independent Python trial division through100000; includes0..2000,seededrandom,square/power neighbors,99999/100000.1000sample168lines exact. No huge-bound run,overflow reproduction or timing benchmark claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Official Vec reference shared with source,and matching reviewed sieve canonical for this language. Existing Rust->Wasm link removed. Preserved original distinct slug/canonical,actual datePublished2022-09-09T07:08:49+09:00,images/img.webp,tags/categories;single date and actual lastmod2026-10-29.22bundle Hugo build,multilingual1310pages,HTTPS2409HTML/41XML passed. Prior17tests passed for same revised source. This article and referenced sieve publication are separately tracked."
+        }
+      },
+      "summary": "Full ru Rust stored-prime enumeration review against corrected Japanese,including actual full-vector and exactHTMLcode checks.",
+      "languageSpecificFindings": "Russian uses простое/составное,пробное деление,простой множитель,делитель,остаток,квадратный корень,вектор,ссылка,заимствование and владение. Matched до границы включительно,small-limit vectors,integer quotient proof,borrowed copies versus ownership-taking iteration,post-borrow push and final guard. Original1000code remains correctly described;valid перечисление title,original mixed slug,date and corresponding sieve URL preserved.",
+      "validation": "docs/translation-review/batch-021-hi-ru-ar-validation.json",
+      "references": [
+        {
+          "url": "https://doc.rust-lang.org/std/vec/struct.Vec.html",
+          "scope": "Scoped IntoIterator for ownedVec(Item=T) and shared&Vec(Item=&T),plus previously read Guaranteesparagraphs;not all6780lines or unsafeAPI audit. Retrieved docs1.99.1 versus actual compiler1.90 separately recorded."
+        }
+      ],
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "Other original translations were read,but each receives a current review only after its own full revised-body comparison and actual validation.",
+        "Finite bounds<=100000,Rust1.90Windows64bit,not everyusize or target.",
+        "No huge upper-bound enumeration,timing,visualbrowser or cryptographic audit.",
+        "Full-siteCI/publication pending."
+      ]
+    },
+    "post/Rustで素数を列挙する/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustで素数を列挙する/index.md",
+      "sourceHash": "a82d199b8f195dbbc6cba8b28180142d56ff3ff02db3abfb8cc1bf939b3c49fa",
+      "translationHash": "a3355c58709ca586a0ad1a4d9494a0cce4a2215047f0ea1d002b440f75961590",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original metadata/body/code before editing,revised against corrected fullJapanese and reviewedEnglish,then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,one complete program,inclusive bounds,small-limit vectors,stored-prime proof,borrowed/owned iteration and resource limits. No unread/unvalidated language recorded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Arabic uses الأعداد الأولية/المركبة,القسمة التجريبية,عامل أولي,قاسم,باقي,الجذر التربيعي,متجه,مراجع,استعارة and ملكية. Matched inclusive الحد شاملًا,small-limit vectors,integer quotient cutoff,borrowed copies versus owning consuming iteration and final distance guard. Refined old-adaptation example to قيمًا مثل2أو3 without misleading dual wording. Kept code identifiers unaltered,original Arabic slug/date and localized reviewed sieve link;no native visualRTL or cryptographic certification claimed."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "No TeX-delimited formulas or diagrams. Confirmed increasing-prime invariant and smallest-prime-factor square-root argument; p>n/p is safe forpositive divisors and does not omit square factors. max-n subtraction occurs only with n<=max; final increment only when remaining>=2,so it cannot exceedmax. O(max sqrt(max)) is a coarse asymptotic division-count bound. Finite tests do not prove allusize or timings."
+        },
+        "code": {
+          "status": "checked",
+          "note": "One Rust block exactly matches revised Japanese and generatedHTML. Rust1.90Windows64bit,edition2021,Dwarnings,debugchecked/optimizedchecked modes compiled separate complete program and harness. Per mode2161bounds compared as full vectors against independent Python trial division through100000; includes0..2000,seededrandom,square/power neighbors,99999/100000.1000sample168lines exact. No huge-bound run,overflow reproduction or timing benchmark claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Official Vec reference shared with source,and matching reviewed sieve canonical for this language. Existing Rust->Wasm link removed. Preserved original distinct slug/canonical,actual datePublished2022-09-09T07:08:49+09:00,images/img.webp,tags/categories;single date and actual lastmod2026-10-29.22bundle Hugo build,multilingual1310pages,HTTPS2409HTML/41XML passed. Prior17tests passed for same revised source. This article and referenced sieve publication are separately tracked."
+        }
+      },
+      "summary": "Full ar Rust stored-prime enumeration review against corrected Japanese,including actual full-vector and exactHTMLcode checks.",
+      "languageSpecificFindings": "Arabic uses الأعداد الأولية/المركبة,القسمة التجريبية,عامل أولي,قاسم,باقي,الجذر التربيعي,متجه,مراجع,استعارة and ملكية. Matched inclusive الحد شاملًا,small-limit vectors,integer quotient cutoff,borrowed copies versus owning consuming iteration and final distance guard. Refined old-adaptation example to قيمًا مثل2أو3 without misleading dual wording. Kept code identifiers unaltered,original Arabic slug/date and localized reviewed sieve link;no native visualRTL or cryptographic certification claimed.",
+      "validation": "docs/translation-review/batch-021-hi-ru-ar-validation.json",
+      "references": [
+        {
+          "url": "https://doc.rust-lang.org/std/vec/struct.Vec.html",
+          "scope": "Scoped IntoIterator for ownedVec(Item=T) and shared&Vec(Item=&T),plus previously read Guaranteesparagraphs;not all6780lines or unsafeAPI audit. Retrieved docs1.99.1 versus actual compiler1.90 separately recorded."
+        }
+      ],
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "Other original translations were read,but each receives a current review only after its own full revised-body comparison and actual validation.",
+        "Finite bounds<=100000,Rust1.90Windows64bit,not everyusize or target.",
+        "No huge upper-bound enumeration,timing,visualbrowser or cryptographic audit.",
+        "Full-siteCI/publication pending."
+      ]
     }
   },
   "stages": [
@@ -460,6 +598,16 @@
         "id"
       ],
       "validation": "docs/translation-review/batch-021-de-id-validation.json",
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-29",
+      "languages": [
+        "hi",
+        "ru",
+        "ar"
+      ],
+      "validation": "docs/translation-review/batch-021-hi-ru-ar-validation.json",
       "publicationPending": true
     }
   ]
