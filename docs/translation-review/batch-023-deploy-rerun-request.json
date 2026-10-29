@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-30T00:17:47.5977607+09:00",
+  "ciRun": 40893592967,
+  "head": "e4bd77a295ac44fb8dae80e986de0baf176ec17d",
+  "action": "rerun-failed-jobs",
+  "responseStatus": null,
+  "attempt": 2,
+  "status": "in_progress",
+  "conclusion": null,
+  "jobs": [
+    {
+      "id": 123518865239,
+      "name": "build",
+      "run_attempt": 1,
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-29T14:42:56Z",
+      "completed_at": "2026-10-29T15:03:52Z"
+    },
+    {
+      "id": 123531315135,
+      "name": "deploy",
+      "run_attempt": 1,
+      "status": "completed",
+      "conclusion": "failure",
+      "started_at": "2026-10-29T15:03:57Z",
+      "completed_at": "2026-10-29T15:14:01Z"
+    },
+    {
+      "id": 123539395278,
+      "name": "deploy",
+      "run_attempt": 2,
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-10-29T15:17:21Z",
+      "completed_at": null
+    },
+    {
+      "id": 123539396959,
+      "name": "build",
+      "run_attempt": 2,
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-29T14:42:56Z",
+      "completed_at": "2026-10-29T15:03:52Z"
+    }
+  ],
+  "scope": "One POST returned without HTTP error; caller incorrectly required202 and exited before recording actual status. Follow-up GET independently confirms attempt2 at same head. No second POST issued. Only deployment was failed; build success retained. No successful deployment/live verification claimed."
+}

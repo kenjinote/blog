@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:17:15.3796985+09:00",
+  "ciRun": 40893592967,
+  "head": "e4bd77a295ac44fb8dae80e986de0baf176ec17d",
+  "attempt": 1,
+  "status": "completed",
+  "conclusion": "failure",
+  "jobs": [
+    {
+      "id": 123518865239,
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-29T14:42:56Z",
+      "completed_at": "2026-10-29T15:03:52Z"
+    },
+    {
+      "id": 123531315135,
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "failure",
+      "started_at": "2026-10-29T15:03:57Z",
+      "completed_at": "2026-10-29T15:14:01Z"
+    }
+  ],
+  "annotations": [
+    {
+      "annotation_level": "warning",
+      "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/deploy-pages@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/"
+    },
+    {
+      "annotation_level": "failure",
+      "message": "Timeout reached, aborting!"
+    },
+    {
+      "annotation_level": "failure",
+      "message": "Timeout reached, aborting!"
+    },
+    {
+      "annotation_level": "warning",
+      "message": "Uploaded artifact size of 2625587675 bytes exceeds the allowed size of 1 GB. Deployment might fail."
+    },
+    {
+      "annotation_level": "warning",
+      "message": "Warning: timeout value is greater than the allowed maximum - timeout set to the maximum of 600000 milliseconds."
+    },
+    {
+      "annotation_level": "notice",
+      "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\""
+    }
+  ],
+  "comparison": {
+    "priorArtifactBytes": 2625603978,
+    "currentArtifactBytes": 2625587675,
+    "priorDeployConclusion": "success",
+    "priorRun": 40889391311,
+    "scope": "Same artifact-size and timeout-cap warnings occurred on successful prior deployment. Direct failure is timeout; no definitive infrastructure/size cause asserted."
+  },
+  "liveVerificationAttempted": false
+}

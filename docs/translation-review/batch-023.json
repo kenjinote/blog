@@ -667,5 +667,27 @@
     "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_288.py",
     "publicationPending": true,
     "scope": "Ordinary non-force push after fetch confirmed zero incoming commits. Matching next run/head observed pending;preceding run40889391311 matching649794682 remains live build inprogress. Both probes prepared,neither new publication claimed verified."
-  }
+  },
+  "publicationAttempts": [
+    {
+      "attempt": 1,
+      "ciRun": 40893592967,
+      "head": "e4bd77a295ac44fb8dae80e986de0baf176ec17d",
+      "buildConclusion": "success",
+      "deployConclusion": "failure",
+      "reason": "Timeout reached, aborting;deploy action capped at600000ms. Artifact-size warning also occurred in preceding successful run,so root cause not conclusively attributed to size.",
+      "proof": "docs/translation-review/batch-023-deploy-attempt-001-failure.json",
+      "liveVerificationAttempted": false
+    },
+    {
+      "attempt": 2,
+      "ciRun": 40893592967,
+      "head": "e4bd77a295ac44fb8dae80e986de0baf176ec17d",
+      "observedAt": "2026-10-30T00:17:47.5977607+09:00",
+      "status": "in_progress",
+      "action": "rerun-failed-jobs",
+      "proof": "docs/translation-review/batch-023-deploy-rerun-request.json",
+      "scope": "One POST only; API response code not captured after caller incorrectly required202. Subsequent GET confirmed attempt2. Preserve original failure;no successful publication claimed."
+    }
+  ]
 }
