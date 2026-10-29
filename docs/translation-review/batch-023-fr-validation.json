@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T23:30:15.945443+09:00",
+  "scope": "Selected versions only;HTML and mathematical source checks. Auxiliary Python arithmetic is executed once and shared,not misrepresented as executable article code or prose approval.",
+  "versions": [
+    {
+      "language": "fr",
+      "sha256": "32d8ecc1b1a00579b4691bdf53bc6c69d2f9b8fe5a75a80015a2eec5504887a0",
+      "canonical": "https://kenji.blog/fr/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    }
+  ],
+  "auxiliaryArithmetic": {
+    "fermatAllIntegerFormCases": 5025,
+    "nonzeroResiduePermutationCases": 4658,
+    "carmichaelCoprimeBases": 320,
+    "rsaCases": [
+      {
+        "p": 3,
+        "q": 5,
+        "n": 15,
+        "e": 3,
+        "d": 3,
+        "allRepresentativesRoundTrip": 15
+      },
+      {
+        "p": 5,
+        "q": 7,
+        "n": 35,
+        "e": 5,
+        "d": 5,
+        "allRepresentativesRoundTrip": 35
+      },
+      {
+        "p": 11,
+        "q": 13,
+        "n": 143,
+        "e": 7,
+        "d": 103,
+        "allRepresentativesRoundTrip": 143
+      },
+      {
+        "p": 61,
+        "q": 53,
+        "n": 3233,
+        "e": 7,
+        "d": 1783,
+        "allRepresentativesRoundTrip": 3233
+      }
+    ],
+    "rsaRepresentativesTotal": 3426
+  },
+  "publicationPending": true,
+  "limitations": [
+    "AI,not human/native-language certification.",
+    "Finite auxiliary arithmetic,not exhaustive proof or a cryptographic audit.",
+    "Mermaid sources/HTML and TeX checked,no browser visual/KaTeX/Mermaid runtime certification."
+  ]
+}

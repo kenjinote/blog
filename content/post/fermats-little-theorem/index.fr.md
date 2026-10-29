@@ -1,121 +1,104 @@
 ---
 title: "Le Petit Théorème de Fermat : La nature des nombres premiers et le fondement de la cryptographie moderne (RSA)"
-date: "2026-09-24T19:44:38+09:00"
 description: "Une explication détaillée du petit théorème de Fermat, de sa compréhension intuitive à sa démonstration mathématique, et de son application pratique dans la cryptographie RSA."
 slug: "fermats-little-theorem"
-date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags:
   - "Théorie des Nombres"
   - "Cryptographie"
   - "Nombres Premiers"
+date: "2026-09-20T15:00:00+09:00"
+lastmod: 2026-10-29
+math: true
+mermaid: true
 ---
 
-Dans la société Internet moderne, nous devons notre capacité à communiquer en toute sécurité à la **cryptographie**. À la base même de cette cryptographie se trouve un magnifique théorème découvert par le mathématicien du XVIIe siècle [Pierre de Fermat](https://kenji.blog/fr/p/fermat/).
+Le petit théorème de Fermat décrit les puissances modulo un nombre premier. Il fournit une condition nécessaire de primalité et aide à comprendre la correction du déchiffrement RSA. Un déchiffrement correct ne garantit pas à lui seul la confidentialité. Cet article distingue le théorème, les exemples, la démonstration, les tests de primalité et l'application à RSA.
 
-Dans cet article, nous expliquerons **le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/)**, une pierre angulaire cruciale de la théorie des nombres, d'une manière facile à comprendre, en couvrant sa signification, sa démonstration et la façon dont il est appliqué à la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) moderne.
+## Le petit théorème de Fermat
 
-## Qu'est-ce que le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ?
+Pour un nombre premier $p$ et un entier $a$ tels que $p\nmid a$ :
 
-Le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est un théorème extrêmement simple mais puissant qui démontre la relation entre les nombres premiers et les nombres entiers.
+$$ a^{p-1}\equiv1\pmod p. $$
 
-Le théorème énonce ce qui suit :
+Une congruence signifie que la différence entre les deux membres est un multiple du module. Ici, la puissance donne un reste de 1 dans la division par $p$. Une forme valable pour tout entier $a$ est :
 
-> **Petit Théorème de [Fermat](https://kenji.blog/fr/p/fermat/)**
-> Soit $p$ un nombre premier, et $a$ un nombre entier quelconque non divisible par $p$ (c'est-à-dire que $a$ et $p$ sont premiers entre eux). Alors, la relation de congruence suivante est vraie :
-> 
-> $$ a^{p-1} \equiv 1 \pmod p $$
+$$ a^p\equiv a\pmod p. $$
 
-Cela signifie que "lorsque l'entier $a$ est élevé à la puissance $p-1$ et divisé par le nombre premier $p$, le reste est toujours $1$".
+Si $p\nmid a$, on multiplie la première congruence par $a$. Si $p\mid a$, les deux membres de la seconde sont congrus à zéro. Supprimer la condition exige donc de vérifier aussi ce cas séparément.
 
-De plus, en multipliant les deux côtés par $a$, il peut être transformé en une forme plus générale qui supprime la condition selon laquelle "$a$ n'est pas un multiple de $p$".
+### Exemples
 
-> $$ a^p \equiv a \pmod p $$
-> (Vrai pour tout entier $a$)
+- $p=5$, $a=2$ : $2^4=16=5\cdot3+1$.
+- $p=7$, $a=3$ : $3^6=729=7\cdot104+1$.
 
-### Vérification avec des exemples concrets
+Les deux exemples satisfont les hypothèses et donnent un reste de 1. Même si le module est premier, une base divisible par celui-ci sort du cadre du premier énoncé.
 
-Insérons quelques nombres réels pour vérifier si le théorème est vrai.
+## Démonstration par permutation des restes
 
-**Exemple 1 : $p = 5$ (premier), $a = 2$**
-- $p-1 = 4$.
-- $a^{p-1} = 2^4 = 16$.
-- Lorsque $16$ est divisé par $5$, le quotient est $3$ et **le reste est $1$** ($16 \equiv 1 \pmod 5$).
+Multiplions chaque élément de $S=\{1,2,\ldots,p-1\}$ par $a$, puis réduisons modulo $p$. Aucun reste n'est nul. Si $ia\equiv ja\pmod p$, puisque $a$ et $p$ sont premiers entre eux, on peut simplifier par le facteur $a$ pour obtenir $i\equiv j\pmod p$. Les indices sont positifs et inférieurs au module, donc $i=j$.
 
-**Exemple 2 : $p = 7$ (premier), $a = 3$**
-- $p-1 = 6$.
-- $a^{p-1} = 3^6 = 729$.
-- Lorsque $729$ est divisé par $7$, le quotient est $104$ et **le reste est $1$** ($729 = 7 \times 104 + 1$).
+Les restes obtenus forment ainsi une permutation des restes non nuls initiaux. En multipliant tous les éléments :
 
-De cette façon, peu importe le nombre premier $p$ que vous choisissez, cette loi mystérieuse est vraie.
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-## Démonstration du théorème
+Puisque $(p-1)!$ est premier avec $p$, on multiplie par son inverse pour éliminer le facteur commun et obtenir le théorème. Une congruence ne permet pas de diviser par un facteur quelconque sans condition.
 
-Il existe plusieurs approches pour démontrer le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/), mais nous introduisons ici une méthode de démonstration représentative basée sur la théorie des nombres.
+## Le test de Fermat vérifie une condition nécessaire
 
-Soit $p$ un nombre premier et $a$ un entier non divisible par $p$.
-Considérez l'ensemble $S = \{1, 2, 3, \dots, p-1\}$. Soit $S'$ un nouvel ensemble créé en multipliant chaque élément de cet ensemble par $a$.
+On traite d'abord les entiers inférieurs à 2 comme non premiers, 2 et 3 comme premiers, et les autres entiers pairs comme composés. Pour un entier impair restant $n>3$, on choisit une base $a$ telle que $2\le a\le n-2$.
 
-$$ S' = \{a, 2a, 3a, \dots, (p-1)a\} $$
+$$ a^{n-1}\not\equiv1\pmod n $$
 
-Considérez le reste lorsque chaque élément de cet ensemble $S'$ est divisé par $p$. Étonnamment, tous ces restes sont distincts et, de plus, aucun d'entre eux n'est $0$. En d'autres termes, l'ensemble des restes correspond parfaitement à l'ensemble d'origine $S$ (en ignorant l'ordre).
-
-Par conséquent, le produit des éléments de $S$ et le produit des éléments de $S'$ sont congrus modulo $p$.
-
-$$ 1 \times 2 \times \dots \times (p-1) \equiv a \times 2a \times \dots \times (p-1)a \pmod p $$
-
-En simplifiant cela, on obtient :
-
-$$ (p-1)! \equiv a^{p-1} \times (p-1)! \pmod p $$
-
-Puisque $(p-1)!$ et $p$ sont premiers entre eux, nous pouvons diviser les deux côtés par $(p-1)!$ (une propriété de la division dans les relations de congruence). Par conséquent, le théorème suivant est dérivé :
-
-$$ 1 \equiv a^{p-1} \pmod p $$
-
-Ceci complète la démonstration.
-
-## Test de primalité de [Fermat](https://kenji.blog/fr/p/fermat/) : Application à la détection de nombres premiers
-
-Ce théorème est appliqué dans un **algorithme de test de primalité** (le test de primalité de [Fermat](https://kenji.blog/fr/p/fermat/)) pour déterminer si un nombre donné est premier.
-
-Si vous voulez savoir si un nombre énorme $n$ est premier, choisissez au hasard $a$ et vérifiez si $a^{n-1} \equiv 1 \pmod n$ est vrai. Si ce n'est pas le cas, alors $n$ n'est **absolument pas un nombre premier** (c'est un nombre composé).
+implique que $n$ est composé. Si, au contraire, le reste vaut 1, le test avec cette base n'a détecté aucune violation de la condition nécessaire ; la primalité n'a pas été démontrée.
 
 ```mermaid
 flowchart TD
-    Start("Début") --> ChooseA("Choisir un entier aléatoire a")
-    ChooseA --> Calc("Calculer a^(n-1) mod n")
-    Calc --> Check{"Le résultat est-il 1 ?"}
-    Check -- "Non" --> Composite("n est un nombre composé (non premier)")
-    Check -- "Oui" --> ProbPrime("n est probablement un nombre premier")
+    Input["Entier impair n après traitement des petits entiers et des pairs"] --> Choose["Choisir une base a entre 2 et n-2"]
+    Choose --> Calc["Calculer a à la puissance n-1 modulo n"]
+    Calc --> Check{"Le reste vaut-il 1 ?"}
+    Check -- No --> Composite["n est composé"]
+    Check -- Yes --> Pass["Passe cette base : ce n'est pas une preuve de primalité"]
 ```
 
-Cependant, parce qu'il existe des nombres exceptionnels appelés **nombres de Carmichael**, qui sont des nombres composés mais satisfont à $a^{n-1} \equiv 1 \pmod n$, ce test seul ne peut pas prouver définitivement la primalité. Par conséquent, dans la pratique, des méthodes comme le test de primalité de Miller-Rabin sont utilisées.
+Par exemple, $341=11\cdot31$ est composé, mais passe le test en base 2. Un tel nombre est pseudopremier pour cette base. Un nombre de Carmichael est composé et satisfait la congruence de Fermat pour **toute base première avec ce nombre**. Le plus petit exemple, $561=3\cdot11\cdot17$, passe la base 2 mais échoue en base 3, qui n'est pas première avec lui.
 
-## Application à la cryptographie moderne : [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)
+Essayer plusieurs bases aléatoires ne fournit pas une petite borne uniforme de faux positifs pour tous les composés. [Le chapitre 4 du HAC](https://cacr.uwaterloo.ca/hac/about/chap4.pdf) distingue Fermat de Miller–Rabin. Pour un composé impair fixé, $k$ tests de Miller–Rabin avec des bases aléatoires indépendantes et uniformes ont une probabilité de faux positif d'au plus $4^{-k}$. Ce n'est pas la probabilité que le nombre soit composé après avoir passé le test, et la borne ne s'applique pas automatiquement à des bases fixes quelconques. Voir l'[article détaillé sur les tests de primalité](https://kenji.blog/fr/p/cpp-fast-prime-testing-miller-rabin/).
 
-L'application la plus importante du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) (et de sa généralisation, le **théorème d'Euler**) est la **cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)**, qui sous-tend la sécurité d'Internet.
+## Conditions d'un déchiffrement RSA correct
 
-La cryptographie RSA repose sur la difficulté de factoriser des nombres massifs pour sa sécurité. Dans son mécanisme, le principe du « petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) » joue un rôle décisif dans les processus de génération de clés et de déchiffrement.
+On choisit des nombres premiers distincts $p,q$ et on pose $n=pq$. Avec l'indicatrice d'Euler $\varphi(n)=(p-1)(q-1)$, cette construction pédagogique choisit un exposant public tel que $1<e<\varphi(n)$ et $\gcd(e,\varphi(n))=1$. Son inverse est l'exposant privé positif $d$ :
+
+$$ ed\equiv1\pmod{\varphi(n)}. $$
+
+La clé publique est $(n,e)$ et une représentation simplifiée de la clé privée est $(n,d)$. Les clés privées réelles peuvent contenir des facteurs qui accélèrent les calculs ; ils sont eux aussi secrets. Les opérations mathématiques sur un représentant entier $0\le M<n$ sont :
+
+$$ C=M^e\bmod n,\qquad M'=C^d\bmod n. $$
 
 ```mermaid
 sequenceDiagram
-    participant Sender as "Expéditeur"
-    participant Receiver as "Destinataire"
-    Note over Receiver: "Générer la clé publique (e, n) et la clé privée (d)"
-    Receiver->>Sender: "Envoyer la clé publique (e, n)"
-    Note over Sender: "Chiffrer le texte clair M"
-    Note over Sender: "C = M^e mod n"
-    Sender->>Receiver: "Envoyer le texte chiffré C"
-    Note over Receiver: "Déchiffrer le texte chiffré C"
-    Note over Receiver: "M = C^d mod n"
+    participant Sender as Expéditeur
+    participant Receiver as Destinataire
+    Note over Sender,Receiver: Exemple pédagogique de RSA brut : encodage du message omis
+    Receiver->>Sender: Fournir la clé publique (n,e)
+    Sender->>Sender: Préparer un représentant entier M de 0 à n-1
+    Sender->>Sender: Calculer C = M^e mod n
+    Sender->>Receiver: Fournir C
+    Receiver->>Receiver: Calculer M' = C^d mod n
 ```
 
-Dans la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), deux énormes nombres premiers, $p$ et $q$, sont préparés, et nous définissons $n = p \times q$.
-Par le théorème d'Euler, les clés ($e$ et $d$) sont conçues pour que $M^{ed} \equiv M \pmod n$ soit vrai dans les processus de chiffrement et de déchiffrement. Ici, le phénomène magique du texte clair $M$ reprenant sa forme d'origine repose essentiellement sur les propriétés mathématiques garanties par le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/).
+Si $\gcd(M,n)=1$, [le théorème d'Euler](https://dlmf.nist.gov/27.2#E8) donne $M^{\varphi(n)}\equiv1\pmod n$. Puisque $ed=1+t\varphi(n)$ pour un certain entier non négatif $t$, le déchiffrement restitue le représentant initial.
 
-## Conclusion
+Pour inclure les représentants non premiers avec le module, on raisonne modulo chaque nombre premier. Si $p\mid M$, alors $M^{ed}$ et $M$ sont tous deux congrus à zéro. Sinon, le petit théorème de Fermat et $p-1\mid ed-1$ donnent la congruence voulue. Le même raisonnement vaut modulo $q$. Par le théorème des restes chinois :
 
-Un petit théorème découvert par [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) au XVIIe siècle est devenu un élément indispensable soutenant le fondement de la sécurité de l'information dans la société moderne des centaines d'années plus tard.
+$$ M^{ed}\equiv M\pmod p,\quad M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod n. $$
 
-**Le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/)** peut être considéré comme l'un des plus beaux exemples démontrant comment les mathématiques pures se connectent à la technologie pratique (cryptographie et algorithmes). On ne peut s'empêcher d'être étonné par la profondeur des mathématiques et l'étendue de leur applicabilité.
+Cela restitue tous les représentants, y compris zéro et les multiples des facteurs. Factoriser le module permet de calculer l'exposant privé, mais cela ne signifie pas que l'inversion générale de RSA et la factorisation ont été démontrées équivalentes en difficulté.
+
+## Séparer correction et sécurité
+
+Le RSA brut du diagramme est déterministe et ne suffit pas à constituer un schéma de chiffrement sûr. [Les sections 5 et 7 du RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html) distinguent les primitives des schémas de chiffrement. Un usage en production exige une bibliothèque auditée, un schéma approprié tel que RSAES-OAEP, des paramètres adaptés, un aléa sûr et une gestion des clés. RSASSA-PSS est un schéma de signature distinct.
+
+Le petit théorème de Fermat fournit une base pour comprendre l'arithmétique modulaire et les mathématiques de RSA. Il faut distinguer le théorème, les tests de primalité, les clés valides et les schémas cryptographiques pratiques. L'[introduction à RSA](https://kenji.blog/fr/p/rsa-encryption-math-explained-for-beginners/) explique davantage cette distinction.
