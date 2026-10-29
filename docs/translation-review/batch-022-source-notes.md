@@ -79,3 +79,8 @@
 ## Germanの確認
 
 修正前後のドイツ語全文を読了。kleiner Satz von Fermat,eulersche Phi-Funktion,Kongruenz,teilerfremd,modulares Inverses,Basis,Modulus,Rest,Repräsentant,chinesischer Restsatzを照合。元の有効なModulという呼称自体を誤りとせずModulusで一貫させ、必要条件のTestとPrimzahlbeweis、KorrektheitとVertraulichkeit、RSA-GrundoperationとVerschlüsselungsverfahrenを区別。全底とするCarmichael説明、誤通過率ほぼゼロ、LINE/Amazonの普遍的依存を訂正。新しい剰余が非零であること、1105は基底自体ではなく基底ごとのテストを通過すること、RFC主語の文法を明確化。固定鍵／任意鍵の検証範囲、条件付き確率と事後確率、整数境界と操作数単位を全文で照合。 修正前後のメタデータ・本文全体・全3コード・2図を別出力で読了し、docs/translation-review/batch-022-de-validation.jsonで各82TeXとHTML・全コード、図13辺／6辺、C++各モード7480ケース、Pythonの全3233代表元等を確認した。多言語1351ページとHTTPS2481HTML／41XMLを通過。既存17テストは先行日英段階で通過したもので、この言語で再実行したとは数えない。確認日2026-10-29、AI。残る4翻訳と公開確認は未完了。
+
+
+## Indonesianの確認
+
+修正前後のインドネシア語全文を読了。kongruensi,saling prima,invers modular,basis,modulus,residu/sisa,wakil,totien,teorema sisa Tiongkokを照合。kriptografiとenkripsiの混同を解消し、Python整数のpresisi gandaをpresisi arbitrerへ訂正。物理図書館を指すperpustakaanではなくソフトウェアのpustakaとし、壊れたCRTリンクと日本語Euclid伝記への部分リンクを整理。syarat perluとbukti primalitas、kebenaranとkerahasiaan、primitifとskema enkripsi、条件付き誤通過率と通過後の合成数確率を区別。整数のメッセージ代表元を明確化し、全通信の安全性と歴史の普遍的断定を除去した。 修正前後のメタデータ・本文全体・全3コード・2図を別出力で読了し、docs/translation-review/batch-022-id-validation.jsonで各82TeXとHTML・全コード、図13辺／6辺、C++各モード7480ケース、Pythonの全3233代表元等を確認した。多言語1351ページとHTTPS2481HTML／41XMLを通過。既存17テストは先行日英段階で通過したもので、この言語で再実行したとは数えない。確認日2026-10-29、AI。残る3翻訳と公開確認は未完了。
