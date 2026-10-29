@@ -33,7 +33,7 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 優先記事の36翻訳について、2026-10-24のAI校閲として根拠と原文・翻訳のハッシュを記録。人による確認は0件。
 - 中心極限定理は全13版のPython例を実行し、数式とコード構造も照合。セキュリティ記事のCSP・HTML例は全13版で一致。Unicodeのバイト列は実際の変換で確認。
 - 根拠: `docs/translation-review/batch-001.json`、`batch-002.json`。各バッチの `*-validation.json` に補助検査を保存。
-- 全記事の編集キュー13,032行のうち、AI校閲済み273、未校閲12,759。未確認の翻訳を校閲済みにはしない。
+- 全記事の編集キュー13,032行のうち、AI校閲済み274、未校閲12,758。未確認の翻訳を校閲済みにはしない。
 - 大数の法則は原文と12翻訳すべての本文全体を校閲し、バッチ003に記録。全13版のコード実行・数式比較・ローカルビルドを通過。
 - 大数の法則の12翻訳を含む公開CI（run 40000689502）は成功。バッチ001〜003の48翻訳と日本語原文4記事の計52公開ページで、更新本文・canonical・言語・hreflang・サイドバーを確認済み（`publication-002-003.json`）。
 - コーシーは原文と12翻訳すべての本文全体を校閲し、バッチ004に記録。積分定理・積分公式・シュワルツの不等式の条件、歴史年表、各言語の数学用語と誤リンクを訂正。全13版の数式・年表・リンク・ローカルビルドを検査済み。公開CI run 40003002739 は成功し、バッチ001〜004の60翻訳と原文5記事の計65公開URLで修正本文・canonical・言語・hreflang・サイドバーを確認済み（`publication-004.json`）。
@@ -334,3 +334,5 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - バッチ022のGermanを原文と全文照合し、各82TeX・3コード全文・2図、C++各モード7480ケースとPython逆元9999組／全3233代表元等を検証して2026-10-29のAI確認を記録。多言語1351ページ、HTTPS2481HTML／41XMLを通過。全記事で272校閲・12760未確認。修正前後のドイツ語全文を読了。kleiner Satz von Fermat,eulersche Phi-Funktion,Kongruenz,teilerfremd,modulares Inverses,Basis,Modulus,Rest,Repräsentant,chinesischer Restsatzを照合。元の有効なModulという呼称自体を誤りとせずModulusで一貫させ、必要条件のTestとPrimzahlbeweis、KorrektheitとVertraulichkeit、RSA-GrundoperationとVerschlüsselungsverfahrenを区別。全底とするCarmichael説明、誤通過率ほぼゼロ、LINE/Amazonの普遍的依存を訂正。新しい剰余が非零であること、1105は基底自体ではなく基底ごとのテストを通過すること、RFC主語の文法を明確化。固定鍵／任意鍵の検証範囲、条件付き確率と事後確率、整数境界と操作数単位を全文で照合。 他4翻訳と公開確認は未完了。
 
 - バッチ022のIndonesianを原文と全文照合し、各82TeX・3コード全文・2図、C++各モード7480ケースとPython逆元9999組／全3233代表元等を検証して2026-10-29のAI確認を記録。多言語1351ページ、HTTPS2481HTML／41XMLを通過。全記事で273校閲・12759未確認。修正前後のインドネシア語全文を読了。kongruensi,saling prima,invers modular,basis,modulus,residu/sisa,wakil,totien,teorema sisa Tiongkokを照合。kriptografiとenkripsiの混同を解消し、Python整数のpresisi gandaをpresisi arbitrerへ訂正。物理図書館を指すperpustakaanではなくソフトウェアのpustakaとし、壊れたCRTリンクと日本語Euclid伝記への部分リンクを整理。syarat perluとbukti primalitas、kebenaranとkerahasiaan、primitifとskema enkripsi、条件付き誤通過率と通過後の合成数確率を区別。整数のメッセージ代表元を明確化し、全通信の安全性と歴史の普遍的断定を除去した。 他3翻訳と公開確認は未完了。
+
+- バッチ022のHindiを原文と全文照合し、各82TeX・3コード全文・2図、C++各モード7480ケースとPython逆元9999組／全3233代表元等を検証して2026-10-29のAI確認を記録。多言語1351ページ、HTTPS2481HTML／41XMLを通過。全記事で274校閲・12758未確認。修正前後のヒンディー語全文を読了。सर्वांगसमता,सह-अभाज्य,मॉड्यूलर व्युत्क्रम,आधार,मॉड्यूलस,शेषफल,प्रतिनिधि,टोटिएंटとचीनी शेषफल प्रमेयを照合。元のभाज्यは合成数の文脈で有効な用法として保持。逆の命題と対偶を混同するप्रतिलोम (contrapositive)を整理し、必要条件と証明、शुद्धताとगोपनीयता、प्रिमिटिवとएन्क्रिप्शन योजनाを区別。Carmichael条件の सह-अभाज्य を補い、誤通過率と通過後の合成数確率を区別。拡張ユークリッドの語を分断する伝記／日本語部分リンク、CRTのreminder誤表記、LINE／WhatsApp／Amazonと全通信の安全性を保証する断定を整理。固定長整数と任意精度、操作回数とビット計算量、全RSA代表元と固定教材鍵の範囲を照合。 他2翻訳と公開確認は未完了。

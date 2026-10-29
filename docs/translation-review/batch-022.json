@@ -594,6 +594,72 @@
         "Source/HTML math and diagrams checked;no browservisual,Mermaid/KaTeX runtime,constant-time or cryptographic-library certification.",
         "Full-siteCI/publication for this batch pending."
       ]
+    },
+    "post/フェルマーの小定理と暗号化/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/フェルマーの小定理と暗号化/index.md",
+      "sourceHash": "6893ab05e8f2d866b4069c4f6ff11ef57e8c4e6b3f56c58c72fc7605ca663904",
+      "translationHash": "324060c09bb17ad1960f20c73554ca768b5776ed97d4af076c49d4d65fab22c8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and revised Hindi version independently,comparing all9sections,82TeXexpressions,two diagram sources and3executableblocks against currentJapanese. Matched prime assumptions,permutation proof,coprime cancellation,Euler condition,Fermat necessary-not-sufficient test,CRT all-representative proof and secure-scheme boundaries."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "修正前後のヒンディー語全文を読了。सर्वांगसमता,सह-अभाज्य,मॉड्यूलर व्युत्क्रम,आधार,मॉड्यूलस,शेषफल,प्रतिनिधि,टोटिएंटとचीनी शेषफल प्रमेयを照合。元のभाज्यは合成数の文脈で有効な用法として保持。逆の命題と対偶を混同するप्रतिलोम (contrapositive)を整理し、必要条件と証明、शुद्धताとगोपनीयता、प्रिमिटिवとएन्क्रिप्शन योजनाを区別。Carmichael条件の सह-अभाज्य を補い、誤通過率と通過後の合成数確率を区別。拡張ユークリッドの語を分断する伝記／日本語部分リンク、CRTのreminder誤表記、LINE／WhatsApp／Amazonと全通信の安全性を保証する断定を整理。固定長整数と任意精度、操作回数とビット計算量、全RSA代表元と固定教材鍵の範囲を照合。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All82TeX expressions are exact betweenJA/HI and decoded generatedHTML. Proof handles p-divisible a separately,cancels only invertible factors,states Euler coprimality,and proves RSA all-representative recovery modulo both distinct primes thenCRT. Carmichael property restricted to coprimebases;MillerRabin4^-k bounds fixed-composite pass probability with independent uniform random bases,not posterior probability or arbitrary fixed bases. Modular-addition guard is justified by reduced operands;O(logb) counts modular multiplications,not bitoperations/runtime. Diagram topology13flowedges/6sequenceedges and labels reviewed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Actual selected Hindi completeC++ and harness in optimized/UBSan modes,WSLGCC13.3C++17,Werror/pedanticerrors;7480cases eachmode(2696mul,2696pow,2080Fermat,8invalid). BothPythoncompleteprogram outputs exact;2078Fermat+11invalid,9999extendedgcd/inverse+5invalid,3233RSAroundtrips+9invalid. All3codeblocks matchJapanese and decodedHTML exactly. JAsource prioractual executions retained separately;not new JAexecution in this Hindi proof."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Sixprimary references retained with their existing scoped research notes;two internal targets use reviewed Hindi RSA/primality articles and exist inHTMLpreview. Original sharedslug/date2026-09-11T22:00:00+09:00 and hero preserved,lastmod2026-10-29.23bundle build,multilingual1351pages,HTTPS2481HTML/41XMLpassed.17existingtests passed at precedingJAENstage;not falsely rerun for this language. Publication pending."
+        }
+      },
+      "summary": "Full Hindi review of Fermat/Euler conditions,probable-prime limitations,portable modular arithmetic and all-representative RSA correctness against corrected Japanese.",
+      "languageSpecificFindings": "修正前後のヒンディー語全文を読了。सर्वांगसमता,सह-अभाज्य,मॉड्यूलर व्युत्क्रम,आधार,मॉड्यूलस,शेषफल,प्रतिनिधि,टोटिएंटとचीनी शेषफल प्रमेयを照合。元のभाज्यは合成数の文脈で有効な用法として保持。逆の命題と対偶を混同するप्रतिलोम (contrapositive)を整理し、必要条件と証明、शुद्धताとगोपनीयता、प्रिमिटिवとएन्क्रिप्शन योजनाを区別。Carmichael条件の सह-अभाज्य を補い、誤通過率と通過後の合成数確率を区別。拡張ユークリッドの語を分断する伝記／日本語部分リンク、CRTのreminder誤表記、LINE／WhatsApp／Amazonと全通信の安全性を保証する断定を整理。固定長整数と任意精度、操作回数とビット計算量、全RSA代表元と固定教材鍵の範囲を照合。",
+      "validation": "docs/translation-review/batch-022-hi-validation.json",
+      "references": [
+        {
+          "url": "https://dlmf.nist.gov/27.2#E8",
+          "scope": "Totient definition/EulerFermat condition near27.2.6-8,not wholechapter."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap4.pdf",
+          "scope": "ScopedAlgorithm4.9,Definition4.10,Fact4.11,Definitions4.21-Algorithm4.24,Fact4.25 andNote4.47;not all37pages."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Sections5,5.1.1/5.1.2 and7/7.1 primitives/range/errors/schemes;not all4171lines or security-proof audit."
+        },
+        {
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html",
+          "scope": "Shortsigned/unsigned128extension explanation;actual originaloverflow confirmed withUBSan separately."
+        },
+        {
+          "url": "https://docs.python.org/3/library/random.html",
+          "scope": "OpeningMersenneTwister/cryptographyunsuitability paragraphs;retrieveddocs3.15.2 versus executedPython3.12.14."
+        },
+        {
+          "url": "https://docs.openssl.org/master/man3/BN_generate_prime/",
+          "scope": "Probableprime/trialdivision/MillerRabinround paragraphs inmasterdocs,not allversions or6405lines."
+        }
+      ],
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "Other2translations not yet full-body read/revised/reviewed at this stage.",
+        "Finite uint64 arithmetic and fixed smallRSAkey,not exhaustive range proof or production-key-generation validation.",
+        "Source/HTML math and diagrams checked;no browservisual,Mermaid/KaTeX runtime,constant-time or cryptographic-library certification.",
+        "Full-siteCI/publication for this batch pending."
+      ]
     }
   },
   "stages": [
@@ -668,6 +734,14 @@
         "id"
       ],
       "validation": "docs/translation-review/batch-022-id-validation.json",
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-29",
+      "languages": [
+        "hi"
+      ],
+      "validation": "docs/translation-review/batch-022-hi-validation.json",
       "publicationPending": true
     }
   ]
