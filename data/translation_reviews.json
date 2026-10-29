@@ -2405,6 +2405,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-019.json",
       "evidenceHash": "62351414d6d16817f7e3bd6f2df9a7767584ad661cf71e69aa82a8fdde8ec8de"
+    },
+    "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.en.md": {
+      "source": "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ca5d90db0c9827149e0b226e6b079fa0949da0ac875d1a99feba6488856e0b14",
+      "translationHash": "c036a20a457ad29d82179b8e3180ec270d90744a71f244f041111c9a934c472d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-020.json",
+      "evidenceHash": "0e613fd000cc9e71b181b8dba7df572d270dc94c38bc21c68055a0830efb2e9f"
     }
   }
 }
