@@ -2865,6 +2865,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-023.json",
       "evidenceHash": "a2bdc8fe9fa0f3f7916ec7422615e2b41b08b9a9b109a3064d32c6aa3c8448a6"
+    },
+    "post/fermats-little-theorem/index.ru.md": {
+      "source": "post/fermats-little-theorem/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05b557bc6703982b0176505857405e7ab09f7cc82988041dd1d8adbc6ada498c",
+      "translationHash": "a9ed59f60b0f11c50c0f8d0b6513a00ee3113e97239c209c5c448cc88f403732",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-023.json",
+      "evidenceHash": "0962a7f63013a870bc42070976b433954d698a6ae57bdfd438130ca958352673"
     }
   }
 }
