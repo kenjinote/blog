@@ -59,3 +59,8 @@
 ## Spanishの確認
 
 修正前後のスペイン語全文を読了。小定理・合同・互いに素・逆元・底・剰余・代表元・CRTをpequeño teorema,congruencia,coprimo,inverso,base,resto,representante,teorema chino del restoで照合。元のcuadratura sucesivaを積分の求積と取り違えにくいexponenciación por cuadradosへ整理し、Pythonリストをmatrizとする説明も除去。prueba de primalidadはテストにも使う語なので図の結論をno demuestra la primalidadとして証明との区別を明示。主語直後の不要なコンマを直し、Euclidesの日本語伝記への部分リンクとWhatsApp/Amazonへの普遍的依存の断定を除去。正当性／機密性、primitiva／esquema、条件付き誤通過率と事後確率を照合。 修正前後のメタデータ・本文全体・全3コード・2図を別出力で読了し、docs/translation-review/batch-022-es-validation.jsonで各82TeXとHTML・全コード、図13辺／6辺、C++各モード7480ケース、Pythonの全3233代表元等を確認した。多言語1351ページとHTTPS2481HTML／41XMLを通過。既存17テストは先行日英段階で通過したもので、この言語で再実行したとは数えない。確認日2026-10-29、AI。残る8翻訳と公開確認は未完了。
+
+
+## Koreanの確認
+
+修正前後の韓国語全文を読了。페르마의 소정리,오일러 피 함수,합동식,서로소,역원,밑,법,나머지,대표원,합성수,카마이클 수と중국인의 나머지 정리を照合し、元の有効なCRT呼称を誤訳と断定せず保持。피関数を不明瞭な別名に頼らず説明し、反復二乗を반복 제곱법へ整理。誤通過率を自然な잘못 통과할 확률とし、加数を두 덧셈 피연산자として条件を明確化。正確性／機密性、프리미티브／암호화 방식、条件付き通過率／事後確率、定数鍵と任意鍵の検証範囲を照合。日本語アルゴリズムへのリンクや全通信の機密性を保証する断定を除去。 修正前後のメタデータ・本文全体・全3コード・2図を別出力で読了し、docs/translation-review/batch-022-ko-validation.jsonで各82TeXとHTML・全コード、図13辺／6辺、C++各モード7480ケース、Pythonの全3233代表元等を確認した。多言語1351ページとHTTPS2481HTML／41XMLを通過。既存17テストは先行日英段階で通過したもので、この言語で再実行したとは数えない。確認日2026-10-29、AI。残る7翻訳と公開確認は未完了。

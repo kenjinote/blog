@@ -7,471 +7,297 @@ math: true
 mermaid: true
 categories: ["mathematics", "cryptography", "programming"]
 tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C++"]
+lastmod: 2026-10-29
 ---
 
-## 1. 시작하며: 현대 암호를 지탱하는 수학의 신비
+## 1. 정리가 보장하는 것
 
-현대 디지털 사회, 특히 인터넷을 통한 통신에서 '암호화'는 필수 불가결한 기반 기술이 되었습니다. 우리가 웹 브라우저에서 HTTPS를 통해 안전하게 웹사이트를 탐색하고, 온라인 뱅킹으로 금융 거래를 하며, 메시징 앱으로 사적인 대화를 나눌 수 있는 것은 고도의 수학적 이론이 뒷받침된 암호 프로토콜이 배후에서 작동하고 있기 때문입니다. 그중에서도 특히 중요한 역할을 담당하고 있는 것이 '공개키 암호 방식'이며, 그 대표적인 예가 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호** 입니다.
+페르마의 소정리는 소수를 법으로 하는 거듭제곱의 성질을 설명합니다. 소수의 필요조건과 RSA 복호화의 정확성을 이해하는 데 도움이 됩니다. 그러나 정확하게 복호화되는 것과 안전한 암호화 방식을 갖추는 것은 다른 성질입니다. 정리만으로 통신의 기밀성이 보장되지는 않습니다.
 
-RSA 암호를 비롯한 많은 암호 알고리즘의 안전성과 정당성은 17세기 프랑스의 수학자 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)(Pierre de Fermat)가 발견한 매우 아름답고 강력한 정리에 크게 의존하고 있습니다. 그것이 바로 **페르마의 소정리(Fermat's Little Theorem)** 입니다. 더 나아가 이를 일반화한 레온하르트 오일러([Leonhard Euler](https://kenji.blog/ko/p/euler/))의 정리 역시 암호 이론에서 결정적인 역할을 하고 있습니다.
+이 글에서는 합동식, 페르마와 오일러의 정리, 페르마 테스트의 한계, RSA의 수학을 설명합니다. 코드는 경계를 확인하는 학습용 예제이며, 실제 서비스의 키 생성기나 암호화 방식이 아닙니다. [RSA의 수학과 암호화 방식의 차이](https://kenji.blog/ko/p/rsa-encryption-math-explained-for-beginners/)도 참고하세요.
 
-본 기사에서는 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)라는 순수 수학의 발견이 어떻게 현대의 실용적인 암호 기술, 특히 '소수 판별'과 '[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호'에 응용되고 있는지를 기초부터 철저하게 해설합니다. 수학적인 증명, 암호화 및 복호화의 메커니즘, 그리고 C++와 Python을 활용한 구체적인 알고리즘 구현까지 모두 다루는 매우 상세한 기술 가이드가 될 것입니다.
+## 2. 합동식과 역원
 
----
+양의 정수 $n$에 대해, 정수 $a,b$의 차이가 $n$의 배수라는 것을 다음과 같이 나타냅니다.
 
-## 2. 합동식과 모듈러 연산의 기초
+$$ a \equiv b \pmod n. $$
 
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 이해하기 위해서는 먼저 '모듈러 연산(합동식)'이라는 수학 개념에 친숙해질 필요가 있습니다. 모듈러 연산이란 어떤 정해진 수(법, 모듈러스라고 부름)로 나눈 '나머지'에 주목한 계산 체계를 말합니다. 시계의 문자판(12시간에 1바퀴를 돎)과 같은 계산이기 때문에 '시계 산술'이라고도 불립니다.
+예를 들어 $17\equiv12\equiv2\pmod5$입니다. 합동 관계는 덧셈, 뺄셈, 곱셈, 음이 아닌 정수 지수의 거듭제곱과 양립합니다. 다만 인수를 약분하려면 조건이 필요합니다.
 
-정수 $a$와 $b$를 양의 정수 $n$으로 나눈 나머지가 같을 때, 수학적으로는 다음과 같이 기술합니다.
+$$ ac\equiv bc\pmod n,\quad \gcd(c,n)=1
+\quad\Longrightarrow\quad a\equiv b\pmod n. $$
 
-$$
-a \equiv b \pmod n
-$$
+서로소 조건이 없으면 $2\cdot1\equiv2\cdot4\pmod6$이어도 $1\not\equiv4\pmod6$입니다. $n>1$일 때 역원 $c^{-1}$이 존재할 필요충분조건은 $\gcd(c,n)=1$입니다. 확장 유클리드 알고리즘으로 $cx+ny=1$을 구하면, $x$를 법 $n$에 대해 정규화한 값이 역원입니다.
 
-이것은 '$n$을 법으로 하여 $a$와 $b$는 합동이다'라고 읽습니다. 예를 들어, 17을 5로 나눈 나머지는 2이고, 12를 5로 나눈 나머지 역시 2입니다. 따라서 다음과 같이 쓸 수 있습니다.
+## 3. 페르마의 소정리와 증명
 
-$$
-17 \equiv 12 \pmod 5 \equiv 2 \pmod 5
-$$
+$p$가 소수이고 $p\nmid a$이면 다음이 성립합니다.
 
-모듈러 연산에서는 일반적인 사칙연산(덧셈, 뺄셈, 곱셈)이 그대로 성립합니다.
+$$ a^{p-1}\equiv1\pmod p. $$
 
-1. **덧셈**: $a \equiv b \pmod n$ 이고 $c \equiv d \pmod n$ 이면, $a + c \equiv b + d \pmod n$
-2. **뺄셈**: $a \equiv b \pmod n$ 이고 $c \equiv d \pmod n$ 이면, $a - c \equiv b - d \pmod n$
-3. **곱셈**: $a \equiv b \pmod n$ 이고 $c \equiv d \pmod n$ 이면, $a \times c \equiv b \times d \pmod n$
-4. **거듭제곱**: $a \equiv b \pmod n$ 이면, 임의의 자연수 $k$에 대해 $a^k \equiv b^k \pmod n$
+$p=5$이면 $2^4=16$, $3^4=81$, $4^4=256$을 5로 나눈 나머지는 모두 1입니다. 모든 정수 $a$에 대해 성립하는 형태는 다음과 같습니다.
 
-단, **나눗셈** 에 대해서는 주의가 필요합니다. 일반적으로 $a \times c \equiv b \times c \pmod n$ 이라고 해서 양변을 $c$로 나누어 $a \equiv b \pmod n$ 으로 만들 수는 없습니다. 이것이 성립하는 것은 $c$와 $n$이 서로소(최대공약수가 1)인 경우에 한합니다. 이 '모듈러 역원'의 개념은 후술할 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호의 키 생성에서 극히 중요해집니다.
+$$ a^p\equiv a\pmod p. $$
 
----
+$p\nmid a$이면 첫 번째 식의 양변에 $a$를 곱합니다. $p\mid a$이면 두 번째 식의 양변은 모두 0과 합동입니다.
 
-## 3. [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)의 수학적 배경과 증명
+첫 번째 형태를 증명하기 위해 0이 아닌 나머지 $1,2,\ldots,p-1$에 $a$를 곱합니다. 결과의 나머지는 0이 되지 않습니다. $ia\equiv ja\pmod p$이면 $a$를 약분하여 $i=j$를 얻으므로, 이 곱들의 나머지는 원래 나머지들의 순열입니다. 곱을 취하면 다음과 같습니다.
 
-모듈러 연산의 기초를 다졌으니, 본 주제인 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)에 대해 살펴보겠습니다.
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-### 3.1 정리의 정의
+$(p-1)!$은 $p$와 서로소이므로 약분할 수 있으며, 정리가 증명됩니다.
 
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)는 다음과 같이 정식화됩니다.
+## 4. 오일러의 정리
 
-> **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/ko/p/fermats-little-theorem/))**
-> $p$를 소수라 하고, $a$를 $p$의 배수가 아닌(즉 $a$와 $p$는 서로소인) 임의의 정수라고 하자. 이때 다음의 합동식이 성립한다.
-> $$ a^{p-1} \equiv 1 \pmod p $$
+오일러 피 함수 $\varphi(n)$은 1부터 $n$까지의 정수 중 $n$과 서로소인 수의 개수입니다. 소수 $p$에 대해 $\varphi(p)=p-1$이고, 서로 다른 소수 $p,q$에 대해서는 다음과 같습니다.
 
-또한, 조건 '$a$가 $p$의 배수가 아닐 것'을 제외하고, 모든 정수 $a$에 대해 성립하는 형태로 표현하는 것도 일반적입니다. 그 경우는 양변에 $a$를 곱하여 다음과 같이 됩니다.
+$$ \varphi(pq)=(p-1)(q-1). $$
 
-$$
-a^p \equiv a \pmod p
-$$
+$n>1$이고 $\gcd(a,n)=1$이면 [오일러의 정리](https://dlmf.nist.gov/27.2#E8)는 다음을 말합니다.
 
-### 3.2 구체적인 예를 통한 확인
+$$ a^{\varphi(n)}\equiv1\pmod n. $$
 
-정리가 정말로 성립하는지 구체적인 숫자를 사용하여 확인해 봅시다.
-소수 $p = 5$라고 합시다. $p-1 = 4$입니다. $a$로서 $p$의 배수가 아닌 정수를 선택합니다.
+서로소인 나머지들의 집합에 앞 절과 같은 순열 및 곱의 약분 논증을 적용하여 증명할 수 있습니다. 법이 소수인 경우가 페르마의 소정리입니다. 서로소가 아닌 입력에 오일러의 정리를 무조건 적용할 수는 없습니다.
 
-- $a = 2$인 경우: $2^{5-1} = 2^4 = 16$. $16 \div 5 = 3$ 나머지 $1$. 따라서 $16 \equiv 1 \pmod 5$. (성립)
-- $a = 3$인 경우: $3^{5-1} = 3^4 = 81$. $81 \div 5 = 16$ 나머지 $1$. 따라서 $81 \equiv 1 \pmod 5$. (성립)
-- $a = 4$인 경우: $4^{5-1} = 4^4 = 256$. $256 \div 5 = 51$ 나머지 $1$. 따라서 $256 \equiv 1 \pmod 5$. (성립)
+## 5. 페르마 테스트로 알 수 있는 것
 
-이처럼 어떤 $a$를 선택하든(5의 배수만 아니라면) 4제곱하여 5로 나눈 나머지는 항상 1이 됩니다. 마법처럼 보이지만, 이는 소수가 가지는 아름다운 성질에서 유래한 것입니다.
+홀수인 정수 $n>3$에 대해 밑 $a$를 $2\le a\le n-2$에서 선택합니다. 다음과 같은 불일치가 있으면 $n$은 합성수로 확정됩니다.
 
-### 3.3 정리의 수학적 증명
+$$ a^{n-1}\not\equiv1\pmod n. $$
 
-어째서 이런 일이 성립하는 것일까요. 여기서는 잉여류의 집합을 이용한 우아한 증명을 소개합니다.
-
-집합 $S = \{1, 2, 3, \dots, p-1\}$을 생각합니다. 이들은 $p$로 나눈 나머지가 $1$부터 $p-1$이 되는 정수들의 대표원입니다.
-여기서 각 원소에 $p$와 서로소인 정수 $a$를 곱한 새로운 집합 $T$를 생각합니다.
-$$ T = \{1a, 2a, 3a, \dots, (p-1)a\} $$
-
-이 집합 $T$의 각 원소를 $p$로 나눈 나머지를 생각해 봅니다. 놀랍게도 이 나머지들은 순서는 바뀔지 몰라도 원래 집합 $S$의 원소들의 집합과 완전히 일치합니다.
-왜냐하면:
-1. $T$의 원소가 $p$의 배수가 되는 일은 없습니다($a$도 원래의 원소도 $p$의 배수가 아니기 때문).
-2. $T$ 안에서 $p$를 법으로 하여 합동이 되는 서로 다른 두 원소는 존재하지 않습니다. 만약 $ia \equiv ja \pmod p$ ($i \neq j$)라고 한다면, $a$와 $p$는 서로소이므로 $a$로 나눌 수 있고, $i \equiv j \pmod p$가 되어 모순되기 때문입니다.
-
-따라서 $S$의 원소를 모두 곱한 것과 $T$의 원소를 모두 곱한 것은 $p$를 법으로 하여 합동이 됩니다.
-
-$$
-(1a) \times (2a) \times \dots \times ((p-1)a) \equiv 1 \times 2 \times \dots \times (p-1) \pmod p
-$$
-
-좌변을 정리하면 $a$가 $p-1$개 있으므로,
-
-$$
-a^{p-1} \cdot (p-1)! \equiv (p-1)! \pmod p
-$$
-
-$(p-1)!$은 $p$와 서로소이므로 양변을 $(p-1)!$로 나눌 수 있으며, 최종적으로 다음의 정리가 도출됩니다.
-
-$$
-a^{p-1} \equiv 1 \pmod p
-$$
-
-이것이 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)의 증명입니다.
-
----
-
-## 4. 오일러의 피 함수와 오일러의 정리
-
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)는 '소수 $p$'에 관한 정리지만, 이를 '임의의 양의 정수 $n$'으로 일반화한 사람이 레온하르트 오일러입니다. [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호를 이해하려면 이 확장이 필수적입니다.
-
-### 4.1 오일러의 피(토션트) 함수 $\phi(n)$
-
-오일러의 피 함수(또는 오일러의 $\phi$ 함수) $\phi(n)$은 '$1$부터 $n$까지의 정수 중 $n$과 서로소인 것의 개수'를 나타내는 함수입니다.
-
-- 소수 $p$의 경우, $1$부터 $p-1$까지의 모든 정수가 $p$와 서로소이므로 $\phi(p) = p - 1$이 됩니다.
-- 서로 다른 두 소수 $p, q$에 대해, 그 곱인 $n = p \times q$의 경우 $\phi(n)$은 매우 간단한 식으로 구해집니다.
-  $$ \phi(p \times q) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-
-이 성질이 RSA 암호의 키 생성에 있어 근간이 되는 로직이 됩니다.
-
-### 4.2 오일러의 정리
-
-오일러는 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 다음과 같이 일반화했습니다.
-
-> **오일러의 정리 (Euler's Theorem)**
-> 양의 정수 $n$과, 그 수와 서로소인 정수 $a$에 대하여 다음이 성립한다.
-> $$ a^{\phi(n)} \equiv 1 \pmod n $$
-
-만약 $n$이 소수 $p$라면 $\phi(p) = p - 1$이므로, 이것은 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/) 자체($a^{p-1} \equiv 1 \pmod p$)가 됩니다. 즉, [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)는 오일러의 정리의 특수한 경우에 불과합니다.
-
----
-
-## 5. 거대한 소수 찾기: 페르마의 소수 판별법
-
-암호 기술([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호나 Diffie-Hellman 키 교환 등)에서는 수백 자리에 달하는 '거대한 소수'를 고속으로 찾아낼 필요가 있습니다. 하지만 거대한 수 $N$이 소수인지 판별하기 위해 $2$부터 $\sqrt{N}$까지의 모든 수로 나누어 떨어지는지 시험하는 '시도 나눗셈법'으로는 우주의 수명만큼의 시간이 걸려 버립니다.
-
-그래서 등장하는 것이 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 역으로 이용한 '확률적 소수 판별법'인 **페르마 테스트([Fermat](https://kenji.blog/ko/p/fermat/) Primality Test)** 입니다.
-
-### 5.1 확률적 소수 판별법이란
-
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)에 의하면, $p$가 소수라면 임의의 $a$ ($1 < a < p$)에 대해 $a^{p-1} \equiv 1 \pmod p$ 가 반드시 성립합니다.
-이의 대우를 취하면, '어떤 $a$에 대해 $a^{p-1} \not\equiv 1 \pmod p$ 가 될 경우, $p$는 **절대로 소수가 아니다(합성수이다)**'라는 것을 말할 수 있습니다.
-
-따라서 $N$이 소수인지 판별하고 싶은 경우, 무작위로 몇 개의 $a$를 선택하여 $a^{N-1} \pmod N$을 계산해서 $1$이 되는지를 확인합니다. 만약 한 번이라도 $1$이 아닌 답이 나오면 $N$은 합성수임이 확정됩니다. 몇 번을 시험해도 $1$이 되는 경우 $N$은 '아마도 소수일 것이다'라고 높은 확률로 판단할 수 있습니다.
-
-### 5.2 알고리즘의 해설과 플로우차트
-
-페르마 테스트의 알고리즘은 다음과 같습니다.
+역은 성립하지 않습니다. 통과했다는 것은 선택한 밑에서 이 필요조건을 위반하지 않았다는 뜻뿐입니다. 몇 개의 밑을 무작위로 선택하여 반복하더라도, 모든 합성수에 대해 검사를 잘못 통과할 확률이 일률적으로 작다고 보장할 수는 없습니다.
 
 ```mermaid
 flowchart TD
-    Start["시작"] --> Input["판별 대상의 수 p 와, 테스트 횟수 k 를 입력"]
-    Input --> LoopStart["i = 0 부터 k-1 까지 루프"]
-    LoopStart --> Condition{"i < k ?"}
-    Condition -- 예 --> RandomA["1 < a < p-1 의 범위에서 무작위 정수 a 를 선택"]
-    RandomA --> Calc["모듈러 거듭제곱 a^(p-1) mod p 를 계산"]
-    Calc --> CheckPrime{"결과는 1 인가?"}
-    CheckPrime -- 아니요 --> ReturnComposite["p 는 합성수이다 (확정)"]
-    CheckPrime -- 예 --> Increment["i 를 증가시킴"]
-    Increment --> Condition
-    Condition -- 아니요 --> ReturnPrime["p 는 아마도 소수일 것이다 (확률적)"]
-    ReturnComposite --> End["종료"]
-    ReturnPrime --> End
+    Input["정수 n과 비어 있지 않은 밑 목록 입력"] --> Small{"n이 2보다 작은가?"}
+    Small -- Yes --> NotPrime["소수가 아님"]
+    Small -- No --> Tiny{"n이 2 또는 3인가?"}
+    Tiny -- Yes --> Known["이 작은 n은 소수"]
+    Tiny -- No --> Even{"n이 짝수인가?"}
+    Even -- Yes --> Composite["합성수"]
+    Even -- No --> Validate["모든 밑이 2부터 n-2까지인지 검증"]
+    Validate --> Next{"검사하지 않은 밑이 있는가?"}
+    Next -- Yes --> Power["다음 밑의 n-1제곱을 법 n으로 계산"]
+    Power --> Check{"나머지가 1인가?"}
+    Check -- No --> Composite
+    Check -- Yes --> Next
+    Next -- No --> Pass["선택한 밑을 통과: 소수라는 증명이 아님"]
 ```
 
-### 5.3 카마이클 수(위소수)의 함정
+코드는 빈 목록과 잘못된 밑 범위에 예외를 발생시킵니다. Python 버전은 정수가 아닌 타입도 거부합니다. 작은 정수와 짝수를 처리한 뒤, 홀수 $n\ge5$에 대해서만 밑 범위를 검증합니다.
 
-페르마 테스트는 매우 빠르지만 중대한 단점이 있습니다. 그것은 합성수임에도 불구하고 모든 $a$에 대해 $a^{N-1} \equiv 1 \pmod N$을 만족시켜 버리는 악마와 같은 수가 존재한다는 것입니다. 이를 **카마이클 수(Carmichael numbers)** 라고 부릅니다. 가장 작은 카마이클 수는 $561$ ($3 \times 11 \times 17$)입니다.
+카마이클 수는 **$n$과 서로소인 모든 밑**에서 페르마 합동식을 만족하는 합성수입니다. 가장 작은 예인 $561=3\cdot11\cdot17$은 밑 2를 통과하지만 밑 3은 통과하지 않습니다. 합성수 $1105=5\cdot13\cdot17$도 밑 2와 3을 통과합니다. 소수를 생성할 때 이러한 결과를 증명으로 채택해서는 안 됩니다.
 
-카마이클 수가 존재하기 때문에 순수한 페르마 테스트만으로는 절대적인 소수 판별을 할 수 없습니다. 그러므로 실제 암호화 시스템(OpenSSL 등)에서는 페르마 테스트를 개량한 **밀러-라빈(Miller-Rabin) 소수 판별법** 이 표준적으로 사용되고 있습니다. 밀러-라빈 판별법은 카마이클 수를 꿰뚫어 볼 수 있어 오판 확률을 실질적으로 제로에 가깝게 만들 수 있습니다.
+[Handbook of Applied Cryptography 4장](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)의 Fermat 및 Miller–Rabin 절은 이 차이를 설명합니다. 고정된 홀수 합성수에 대해 독립적이고 균등하게 무작위로 선택한 밑으로 Miller–Rabin 검사를 $k$회 수행하면, 잘못 통과할 확률의 상한은 $4^{-k}$입니다. 이는 통과한 뒤 그 수가 합성수일 확률과는 다른 양이며, 임의의 고정된 밑에 그대로 적용되는 값도 아닙니다. [OpenSSL 문서](https://docs.openssl.org/master/man3/BN_generate_prime/)도 소수 후보와 반복 검사를 설명합니다. 자세한 내용은 [소수 판별 글](https://kenji.blog/ko/p/cpp-fast-prime-testing-miller-rabin/)을 참고하세요.
 
-### 5.4 고속 거듭제곱 나머지 연산(분할 정복 거듭제곱)
+## 6. C++와 Python으로 필요조건 검사하기
 
-소수 판별 알고리즘 내에서 $a^{N-1} \pmod N$을 계산해야 하지만, $N$이 거대한 경우 $a^{N-1}$은 천문학적인 자릿수가 되어 컴퓨터 메모리에 다 들어가지 않습니다.
-이를 해결하는 것이 **분할 정복 거듭제곱(Exponentiation by Squaring)** 또는 모듈러 거듭제곱 연산입니다. 계산의 각 단계마다 나머지(mod N)를 취함으로써 항상 값을 $N$보다 작게 유지하며 매우 고속($O(\log N)$의 시간 복잡도)으로 계산 가능하게 됩니다.
+다음 학습용 예제는 난수를 사용하지 않고 지정한 밑을 검사합니다. 함수 이름의 `passes`는 통과를 뜻하며, 소수임을 보증한다는 뜻은 아닙니다. 원래 반복 횟수를 받던 구현에서는 0회나 음수 횟수로 검사가 생략되었지만, 여기서는 빈 밑 목록을 거부합니다.
 
----
+### C++17
 
-## 6. 소수 판별과 거듭제곱 나머지 구현
-
-그러면 페르마의 소수 판별법과 분할 정복 거듭제곱을 C++와 Python으로 구현해 보겠습니다.
-
-### 6.1 C++를 이용한 구현
-
-C++에서는 표준 정수형이 오버플로우되기 쉽기 때문에 거대한 수를 다루려면 다정밀도 정수 라이브러리(GMP 등)가 필요하지만, 여기서는 알고리즘을 이해하기 위해 64비트 정수(`unsigned long long`) 범위 내에서의 구현을 보여줍니다.
+`std::uint64_t`를 제공하는 구현이 대상이며, 음수 입력은 다루지 않습니다. `__int128` 확장에 의존하지 않고, 나머지를 법의 범위 안에 유지하는 덧셈으로 곱셈을 만듭니다. 내부 보조 함수 `add_mod`는 두 덧셈 피연산자가 모두 법보다 작다는 전제를 가집니다. `a >= m-b`이면 덧셈 대신 뺄셈을 사용하고, 그렇지 않으면 합이 법보다 작으므로 64비트 범위를 넘지 않습니다. 곱셈과 거듭제곱 함수는 법 0을 거부하고, 법 1에서는 나머지 0을 반환합니다.
 
 ```cpp
+#include <cstdint>
 #include <iostream>
-#include <random>
+#include <stdexcept>
+#include <vector>
 
-using namespace std;
+using u64 = std::uint64_t;
 
-// 고속 거듭제곱 나머지 연산 (a^b mod m) - 분할 정복 거듭제곱
-unsigned long long power_mod(unsigned long long a, unsigned long long b, unsigned long long m) {
-    unsigned long long result = 1;
-    a = a % m;
-    while (b > 0) {
-        // b의 최하위 비트가 1인 경우, 결과에 a를 곱함
-        if (b % 2 == 1) {
-            result = (__int128)result * a % m; // 오버플로우 방지를 위해 128비트 확장
-        }
-        // a를 제곱함
-        a = (__int128)a * a % m;
-        // b를 오른쪽 시프트 (절반으로 만듦)
-        b /= 2;
+// Internal helper: m > 0 and a, b < m.
+u64 add_mod(u64 a, u64 b, u64 m) {
+    return a >= m - b ? a - (m - b) : a + b;
+}
+
+u64 mul_mod(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    a %= m;
+    u64 result = 0;
+    while (b != 0) {
+        if (b & 1) result = add_mod(result, a, m);
+        b >>= 1;
+        if (b != 0) a = add_mod(a, a, m);
     }
     return result;
 }
 
-// 페르마의 소수 판별법
-bool fermat_is_prime(unsigned long long p, int iterations = 5) {
-    if (p <= 1) return false;
-    if (p <= 3) return true;
-    if (p % 2 == 0) return false;
-
-    random_device rd;
-    mt19937_64 gen(rd());
-    uniform_int_distribution<unsigned long long> dis(2, p - 2);
-
-    for (int i = 0; i < iterations; ++i) {
-        unsigned long long a = dis(gen);
-        // a^(p-1) mod p 가 1 이 아니면 합성수
-        if (power_mod(a, p - 1, p) != 1) {
-            return false;
-        }
+u64 power_mod(u64 a, u64 exponent, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
+    a %= m;
+    while (exponent != 0) {
+        if (exponent & 1) result = mul_mod(result, a, m);
+        exponent >>= 1;
+        if (exponent != 0) a = mul_mod(a, a, m);
     }
-    return true; // 아마도 소수
+    return result;
+}
+
+bool fermat_passes(u64 n, const std::vector<u64>& bases) {
+    if (bases.empty()) throw std::invalid_argument("Choose at least one base");
+    if (n < 2) return false;
+    if (n <= 3) return true;
+    if (n % 2 == 0) return false;
+    for (u64 a : bases) {
+        if (a < 2 || a > n - 2) throw std::invalid_argument("Base outside range");
+    }
+    for (u64 a : bases) {
+        if (power_mod(a, n - 1, n) != 1) return false;
+    }
+    return true;
 }
 
 int main() {
-    unsigned long long num = 1000000007; // 이미 알려진 소수
-    if (fermat_is_prime(num, 10)) {
-        cout << num << " is probably prime." << endl;
-    } else {
-        cout << num << " is composite." << endl;
-    }
-    return 0;
+    std::cout << "1000000007 passes bases 2,3: " << fermat_passes(1000000007, {2, 3}) << '\n';
+    std::cout << "1105 passes bases 2,3: " << fermat_passes(1105, {2, 3}) << '\n';
+    std::cout << "1105 passes base 5: " << fermat_passes(1105, {5}) << '\n';
 }
 ```
 
-### 6.2 Python을 이용한 구현
+예를 들어 `g++ -std=c++17 fermat.cpp -o fermat`로 컴파일합니다. WSL의 GCC 13.3에서 검증했습니다. 불리언 출력은 순서대로 `1, 1, 0`입니다. 합성수 1105가 두 밑을 통과하는 것 자체가 한계를 보여 줍니다.
 
-Python의 표준 정수형은 다정밀도 정수를 지원하므로 자릿수 넘침을 걱정할 필요가 없습니다. 게다가 Python의 내장 함수 `pow(a, b, m)`는 내부적으로 분할 정복 거듭제곱을 사용하기 때문에 매우 빠릅니다.
+### Python
+
+Python 3 정수와 인수 세 개를 받는 `pow`를 사용합니다. 내장 `int` 타입만 허용하며 `bool` 등은 거부합니다. 밑 목록은 비어 있을 수 없습니다. 후보와 밑은 C++ 예제와 같습니다.
 
 ```python
-import random
-
-def fermat_is_prime(p, iterations=5):
-    """
-    페르마의 소수 판별법을 이용한 확률적 소수 판별
-    """
-    if p <= 1:
+def fermat_passes(n, bases):
+    if type(n) is not int:
+        raise TypeError("n must be an integer")
+    bases = tuple(bases)
+    if not bases:
+        raise ValueError("Choose at least one base")
+    if any(type(a) is not int for a in bases):
+        raise TypeError("Bases must be integers")
+    if n < 2:
         return False
-    if p <= 3:
+    if n <= 3:
         return True
-    if p % 2 == 0:
+    if n % 2 == 0:
         return False
+    if any(a < 2 or a > n - 2 for a in bases):
+        raise ValueError("Base outside range")
+    return all(pow(a, n - 1, n) == 1 for a in bases)
 
-    for _ in range(iterations):
-        # 2 에서 p-2 사이의 무작위 수 a 를 고름
-        a = random.randint(2, p - 2)
-        # a^(p-1) mod p 를 계산. 내장 pow 는 고속.
-        if pow(a, p - 1, p) != 1:
-            return False # 합성수 확정
 
-    return True # 아마도 소수
-
-# 테스트
-number_to_test = 104729
-if fermat_is_prime(number_to_test, 10):
-    print(f"{number_to_test} 는 아마도 소수입니다.")
-else:
-    print(f"{number_to_test} 는 합성수입니다.")
+if __name__ == "__main__":
+    print("1000000007 passes bases 2,3:", fermat_passes(1000000007, [2, 3]))
+    print("1105 passes bases 2,3:", fermat_passes(1105, [2, 3]))
+    print("1105 passes base 5:", fermat_passes(1105, [5]))
 ```
 
----
+Python 3.12에서 검증했으며, 결과는 순서대로 `True, True, False`입니다. 원래 예제의 104729도 소수로서 통과하는 성질은 그대로입니다. Python 정수는 고정 폭 오버플로를 피하지만 시간과 메모리가 무제한인 것은 아닙니다.
 
-## 7. [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호에의 응용: 페르마와 오일러가 결실을 맺는 곳
+반복 제곱법은 지수 $b>0$의 비트 수에 비례하는 $O(\log b)$회의 모듈러 곱셈을 수행합니다. 이는 비트 복잡도나 측정된 실행 시간이 아닙니다. C++ 예제의 모듈러 곱셈 한 번은 승수의 비트 수에 비례하는 모듈러 덧셈으로 구현됩니다. Python `pow`의 구체적인 내부 알고리즘이 모든 버전에서 같다고 단정하지는 않습니다.
 
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)(및 오일러의 정리)의 가장 위대한 응용처가 1977년에 Rivest, Shamir, Adleman 세 사람에 의해 개발된 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호** 입니다.
-RSA 암호는 '공개키 암호'라는 획기적인 시스템으로, 암호화하기 위한 키(공개키)는 전 세계에 공개해 두면서, 복호화하기 위한 키(비밀키)는 수신자 본인만이 알고 있는 구조를 구현하고 있습니다.
+## 7. RSA 복호화가 가능한 이유
 
-이 비대칭성은 '거대한 합성수의 소인수분해는 지극히 어렵다'라는 계산 복잡도 기반 안전성에 근거하고 있습니다.
+서로 다른 소수 $p,q$에서 $N=pq$를 만듭니다. 이 학습용 구성에서는 $1<e<\varphi(N)$과 $\gcd(e,\varphi(N))=1$을 만족하는 공개 지수를 선택하고, 그 역원을 비밀 지수 $d$로 정합니다.
 
-### 7.1 RSA 암호의 구조 (키 생성, 암호화, 복호화)
+$$ ed\equiv1\pmod{\varphi(N)},\qquad
+\varphi(N)=(p-1)(q-1). $$
 
-RSA 암호의 전체적인 통신 흐름을 Mermaid 시퀀스 다이어그램으로 확인해 봅시다.
+공개키는 $(N,e)$이고, 비밀키의 간략한 표현은 $(N,d)$입니다. 실제 비밀키에는 CRT 계산을 위한 소인수 등이 포함될 수 있으며, 이들 역시 비밀입니다. 법을 소인수분해하면 비밀 지수를 계산할 수 있지만, RSA 역산과 소인수분해가 일반적으로 동치라고 증명되었다는 뜻은 아닙니다.
+
+대표원 $0\le M<N$에 대해 다음과 같습니다.
+
+$$ C=M^e\bmod N,\qquad M'=C^d\bmod N. $$
+
+아래 그림은 정수 대표원에 대한 **인코딩 없는 RSA 연산**만 나타냅니다. 실제 메시지 인코딩과 인증을 생략한 수학용 그림입니다.
 
 ```mermaid
 sequenceDiagram
-    participant Alice["앨리스 (수신자)"]
-    participant Bob["밥 (송신자)"]
-    
-    Alice->>Alice: "거대한 소수 p, q 를 생성"
-    Alice->>Alice: "N = p * q, φ(N) = (p-1)(q-1) 을 계산"
-    Alice->>Alice: "공개키 e 와 비밀키 d 를 계산 (e*d ≡ 1 mod φ(N))"
-    Alice->>Bob: "공개키 (N, e) 를 전송"
-    Note over Bob: "평문 M 을 준비 (M < N)"
-    Bob->>Bob: "암호문 C = M^e mod N 을 계산"
-    Bob->>Alice: "암호문 C 를 전송"
-    Alice->>Alice: "평문 M = C^d mod N 을 계산하여 복호화"
+    participant Alice as 앨리스
+    participant Bob as 밥
+    Note over Alice,Bob: 인코딩 없는 RSA 학습 예제
+    Alice->>Alice: 서로 다른 소수 p,q와 조건에 맞는 e,d 선택
+    Alice->>Bob: 공개키 (N,e) 전달
+    Bob->>Bob: 0부터 N-1까지의 대표원 M 준비
+    Bob->>Bob: C = M^e mod N 계산
+    Bob->>Alice: C 전달
+    Alice->>Alice: M' = C^d mod N 계산
 ```
 
-아래에 수학적인 세부 단계를 해설합니다.
+먼저 $\gcd(M,N)=1$이면, 어떤 음이 아닌 정수 $t$에 대해 $ed=1+t\varphi(N)$으로 쓸 수 있습니다. 오일러의 정리에 따라 다음을 얻습니다.
 
-#### 단계 1: 키 생성 (수신자 앨리스의 작업)
+$$ M^{ed}=M(M^{\varphi(N)})^t\equiv M\pmod N. $$
 
-1. 두 개의 거대한 소수 $p$와 $q$를 무작위로 생성합니다(여기서 앞서 말한 소수 판별법이 사용됩니다).
-2. 그 곱인 $N = p \times q$를 계산합니다. 이 $N$은 공개됩니다.
-3. 오일러의 피 함수를 사용하여 $\phi(N) = (p-1)(q-1)$을 계산합니다.
-4. $\phi(N)$과 서로소인 정수 $e$(공개 지수)를 선택합니다(종종 $e = 65537$이 사용됩니다).
-5. $e$의 모듈러 역원 $d$(비밀 지수)를 계산합니다. 즉, 다음을 만족하는 $d$를 찾습니다.
-   $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   이 계산에는 **확장 [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/)** 이 사용됩니다.
+서로소가 아닌 대표원도 제외하지 않습니다. 법 $p$에서 $p\mid M$이면 $M^{ed}$와 $M$은 모두 0입니다. 그렇지 않으면 페르마의 소정리와 $p-1\mid ed-1$에 따라 둘은 합동입니다. 법 $q$에서도 마찬가지이며, $p,q$가 서로소이므로 중국인의 나머지 정리로 다음을 얻습니다.
 
-이것으로 **공개키는 $(N, e)$**, ** 비밀키는 $(N, d)$**가 됩니다. ($p, q, \phi(N)$은 즉시 파기하거나 엄중히 숨깁니다).
+$$ M^{ed}\equiv M\pmod p,\quad
+M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod N. $$
 
-#### 단계 2: 암호화 (송신자 밥의 작업)
+따라서 0이나 $p,q$의 배수를 포함하는 모든 대표원이 복원됩니다. 이것은 정확성의 증명이지 기밀성의 증명이 아닙니다.
 
-밥은 앨리스에게 메시지 $M$을 보내고 싶다고 합시다($M$은 문자를 수치화한 것으로 $0 \le M < N$입니다).
-밥은 앨리스의 공개키 $(N, e)$를 사용하여 다음 계산을 수행해 암호문 $C$를 만듭니다.
+## 8. 재현 가능한 RSA 프리미티브 학습 예제
 
-$$
-C \equiv M^e \pmod N
-$$
+고정된 알려진 소수 61과 53, 지수 17을 사용하며 확장 유클리드 알고리즘으로 역원을 구합니다. 무작위 소수 생성이나 문자별 문자열 변환은 하지 않습니다. 원래 밑 2와 3만 확인하던 '소수 생성기'는 1105를 받아들여 복호화를 깨뜨리는 키를 만들 수 있습니다. 실제 암호화 요구 사항을 다룰 때 지수 1이나 범위를 벗어난 대표원도 간과해서는 안 됩니다.
 
-이 $C$를 네트워크를 통해 앨리스에게 송신합니다.
-
-#### 단계 3: 복호화 (수신자 앨리스의 작업)
-
-암호문 $C$를 받은 앨리스는 자신만이 알고 있는 비밀키 $d$를 사용하여 다음 계산을 수행합니다.
-
-$$
-M' \equiv C^d \pmod N
-$$
-
-놀랍게도 이 계산 결과 $M'$은 원래의 메시지 $M$과 완전히 일치합니다.
-
-### 7.2 왜 복호화가 가능한가? (수학적 증명)
-
-여기서 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)(오일러의 정리)가 진가를 발휘합니다. 어째서 $C^d \pmod N$이 $M$으로 되돌아가는 것일까요?
-
-복호화 식을 전개해 봅니다.
-$C \equiv M^e \pmod N$ 이므로,
-$$ C^d \equiv (M^e)^d \equiv M^{ed} \pmod N $$
-
-키 생성 단계에서 $e \cdot d \equiv 1 \pmod{\phi(N)}$ 이 되도록 $d$를 선택했습니다. 이것은 어떤 정수 $k$가 존재하여 다음과 같이 쓸 수 있음을 의미합니다.
-$$ e \cdot d = 1 + k \cdot \phi(N) $$
-
-이것을 위의 식에 대입합니다.
-$$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
-
-여기서 **오일러의 정리** ($M^{\phi(N)} \equiv 1 \pmod N$)가 등장합니다. (※엄밀히는 $M$과 $N$이 서로소여야 하지만, [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)에서는 $M$과 $N$이 서로소가 아닐 확률이 천문학적으로 낮으며 중국인의 나머지 정리를 사용하면 서로소가 아니어도 성립함이 증명 가능합니다).
-
-오일러의 정리를 적용하면 $M^{\phi(N)} \equiv 1$ 이므로,
-$$ M \cdot (1)^k \equiv M \pmod N $$
-
-보기 좋게 $M$이 복원되었습니다! 페르마와 오일러가 수백 년 전에 발견한 수의 성질이 현대 디지털 통신의 기밀성을 완벽하게 보장하고 있는 것입니다.
-
----
-
-## 8. RSA 암호의 토이 구현 (Python)
-
-이론만으로는 실감이 나지 않기 때문에 Python을 사용하여 실제로 RSA 암호의 키 생성, 암호화, 복호화의 과정을 구현해 보겠습니다. 이것은 교육용 '토이(장난감) 구현'이지만 사용된 수학은 진짜와 완전히 같습니다.
-
-모듈러 역원 $d$를 구하기 위한 '확장 [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/)'도 구현에 포함시킵니다.
+다음 `rsa_primitive`는 지수, 법, 대표원의 산술적 입력 범위만 검사합니다. 임의로 전달된 법을 소인수분해하거나 임의의 RSA 키가 유효한지까지 검사하는 함수는 아닙니다. 고정된 학습용 키는 키 조건을 별도로 만족합니다. [RFC 8017의 5절과 7절](https://www.rfc-editor.org/rfc/rfc8017.html)도 프리미티브와 암호화 방식을 구분합니다.
 
 ```python
-import random
-
-# 최대공약수를 구함
-def gcd(a, b):
-    while b != 0:
-        a, b = b, a % b
-    return a
-
-# 확장 유클리드 호제법 (ax + by = gcd(a,b) 의 x, y 를 구함)
-# e*d ≡ 1 (mod φ(N)) 의 d 를 찾기 위해 사용
 def extended_gcd(a, b):
-    if a == 0:
-        return (b, 0, 1)
-    else:
-        g, y, x = extended_gcd(b % a, a)
-        return (g, x - (b // a) * y, y)
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r:
+        q = old_r // r
+        old_r, r = r, old_r - q * r
+        old_s, s = s, old_s - q * s
+        old_t, t = t, old_t - q * t
+    return old_r, old_s, old_t
 
-def mod_inverse(e, phi):
-    g, x, y = extended_gcd(e, phi)
+
+def mod_inverse(a, modulus):
+    if type(a) is not int or type(modulus) is not int:
+        raise TypeError("Arguments must be integers")
+    if modulus <= 1:
+        raise ValueError("Modulus must exceed one")
+    g, x, _ = extended_gcd(a % modulus, modulus)
     if g != 1:
-        raise Exception('역원이 존재하지 않습니다')
-    else:
-        return x % phi
+        raise ValueError("Inverse does not exist")
+    return x % modulus
 
-# 소수 생성 함수 (간이판: 작은 소수를 생성)
-def generate_prime(bits):
-    while True:
-        p = random.getrandbits(bits)
-        # 앞서 말한 페르마 테스트 대신 간이로 판별
-        if p > 1 and pow(2, p-1, p) == 1 and pow(3, p-1, p) == 1:
-            return p
 
-# RSA 키 생성
-def generate_keypair(bits=16):
-    p = generate_prime(bits)
-    q = generate_prime(bits)
-    # p 와 q 가 같아지지 않도록 함
-    while p == q:
-        q = generate_prime(bits)
+def rsa_primitive(value, exponent, modulus):
+    if any(type(x) is not int for x in (value, exponent, modulus)):
+        raise TypeError("Arguments must be integers")
+    if exponent <= 0 or modulus <= 1 or not 0 <= value < modulus:
+        raise ValueError("Invalid exponent, modulus or representative")
+    return pow(value, exponent, modulus)
 
+
+def rsa_primitive_demo():
+    p, q, e = 61, 53, 17  # Fixed public teaching constants, not secret keys.
     n = p * q
     phi = (p - 1) * (q - 1)
-
-    # e 는 65537 등의 소수가 자주 사용되지만, 여기서는 무작위로 고름
-    e = random.randrange(1, phi)
-    g = gcd(e, phi)
-    while g != 1:
-        e = random.randrange(1, phi)
-        g = gcd(e, phi)
-
-    # 비밀키 d 계산
     d = mod_inverse(e, phi)
-    
-    # 공개키 (e, n), 비밀키 (d, n)
-    return ((e, n), (d, n))
+    print("Public key (n, e):", (n, e))
+    print("Private key (n, d):", (n, d))
+    m = 65
+    c = rsa_primitive(m, e, n)
+    recovered = rsa_primitive(c, d, n)
+    print(f"{m} -> {c} -> {recovered}")
+    for representative in range(n):
+        cipher = rsa_primitive(representative, e, n)
+        if rsa_primitive(cipher, d, n) != representative:
+            raise ArithmeticError("Round-trip failed")
+    print("All 3233 representatives round-trip.")
 
-def encrypt(pk, plaintext):
-    e, n = pk
-    # plaintext^e mod n 을 계산
-    cipher = [pow(ord(char), e, n) for char in plaintext]
-    return cipher
 
-def decrypt(sk, ciphertext):
-    d, n = sk
-    # cipher^d mod n 을 계산하고 문자로 되돌림
-    plain = [chr(pow(char, d, n)) for char in ciphertext]
-    return ''.join(plain)
-
-# 실행 예시
-if __name__ == '__main__':
-    print("--- RSA 암호 토이 구현 ---")
-    public_key, private_key = generate_keypair(bits=12) # 12비트의 소수 사용
-    
-    print(f"공개키 (e, n): {public_key}")
-    print(f"비밀키 (d, n): {private_key}")
-
-    message = "Hello Math!"
-    print(f"\n원래의 메시지: {message}")
-
-    # 암호화
-    encrypted_msg = encrypt(public_key, message)
-    print(f"암호문: {encrypted_msg}")
-
-    # 복호화
-    decrypted_msg = decrypt(private_key, encrypted_msg)
-    print(f"복호화된 메시지: {decrypted_msg}")
+if __name__ == "__main__":
+    rsa_primitive_demo()
 ```
 
-이 코드를 실행하면 문자 배열이 낯선 숫자 배열(암호문)로 변환되고, 그것이 비밀키에 의해 훌륭하게 원래 문자열로 복원되는 모습을 확인할 수 있습니다.
+실행하면 $(N,e)=(3233,17)$, $(N,d)=(3233,2753)$과 `65 -> 2790 -> 65`를 출력하고, 3233개 대표원 전체의 왕복을 검사합니다. 출력하는 비밀키도 고정되어 공개된 학습용 값입니다. 이 검사는 일반적인 RSA 키의 안전성을 보장하지 않습니다.
 
----
+## 9. 실제 암호화와의 경계 및 참고 자료
 
-## 9. 마치며: 수학의 아름다움과 실용성의 교차점
+인코딩 없는 RSA는 결정적이므로 안전한 암호화 방식에 필요한 성질이 부족합니다. 예를 들어 문자별 암호문을 공개키로 사전 대조할 수 있습니다. 실제로는 검토된 라이브러리, RSAES-OAEP 같은 목적에 맞는 방식, 적절한 매개변수와 안전한 난수를 사용해야 합니다. [Python random](https://docs.python.org/3/library/random.html)의 의사 난수를 암호 키 생성용으로 취급해서는 안 됩니다. RSASSA-PSS는 서명 방식이며 암호화와는 별개입니다.
 
-[피에르 드 페르마](https://kenji.blog/ko/p/fermat/)가 이 '소정리'를 발견한 17세기 당시, 이것이 어딘가에 쓸모가 있을 것이라고 생각한 사람은 아무도 없었습니다. 페르마 자신도 순수한 수학적 탐구심에서 정수론 연구를 하고 있었습니다.
+각 단계를 구분해야 합니다. 정리는 합동식을 보장하고, 소수 판별은 조건을 검사하며, 올바른 키를 사용하는 RSA 연산은 대표원을 복원합니다. 실제 방식은 여기에 인코딩과 다른 보안 요구 사항을 더합니다. 특정 통신 서비스나 모든 현대 암호가 페르마의 소정리 하나에만 의존한다고 말할 수는 없습니다.
 
-하지만 약 300년 후인 1970년대, 컴퓨터 네트워크의 여명기에 안전한 통신 프로토콜을 확립하기 위해 없어서는 안 될 암호 기술로서 페르마의 정리는 극적인 부활을 이뤘습니다. [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)에 기반한 소수 판별 기술과 오일러의 정리에 기반한 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호는 현대의 인터넷 인프라를 말 그대로 지탱하고 있습니다.
-
-우리가 매일 무심코 보내는 메신저의 메시지도, 쇼핑몰에서의 물건 구매도, 모든 것은 이 $a^{p-1} \equiv 1 \pmod p$ 라는 심플하고 아름다운 수식 위에서 춤추고 있는 것입니다. 수학이 아무리 추상적이라 할지라도 언젠가는 반드시 인류에게 도움이 될 때가 온다는 것을 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)는 가르쳐 주고 있습니다.
-
-프로그래밍이나 암호 이론을 배울 때 그 기초에 있는 수학적 구조를 이해하는 것은 블랙박스로 제공되는 라이브러리의 동작을 깊이 이해하고, 더 안전한 시스템을 설계하기 위한 큰 무기가 될 것입니다.
-
-
+참고한 일차 자료는 [DLMF의 오일러 정리](https://dlmf.nist.gov/27.2#E8), [HAC 4장](https://cacr.uwaterloo.ca/hac/about/chap4.pdf), [RSA 명세 RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html), [GCC의 128비트 정수 설명](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)입니다. 마지막 자료는 원래 구현의 확장 정수형 제약을 확인하기 위한 것입니다.
