@@ -865,13 +865,14 @@
     "reviewEvidenceOverrides": {
       "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.en.md": "docs/translation-review/batch-020-en-revision.json"
     },
-    "publicationPending": true,
+    "publicationPending": false,
     "limitations": [
       "AI,not human/native-speaker certification.",
       "Preserved actual Rust execution evidence matched to current hashes; no fabricated new runs.",
       "Finite bounds<=100000 under Rust1.90Windows64bit,not everyusize/target.",
       "No timing benchmark,hugeallocation,fullanimation/browservisual/KaTeX or cryptographic audit."
-    ]
+    ],
+    "publicationProof": "docs/translation-review/publication-020.json"
   },
   "publicationDispatch": {
     "date": "2026-10-29",
@@ -883,5 +884,27 @@
     "liveProbe": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_252.py",
     "publicationPending": true,
     "scope": "All12sieve translations and Japanese plus all earlier reviewed articles. Plan exact TeX across91versions6139expressions,Rust26blocks,C13blocks,localizedGIFalt/credit and exact public GIF bytes. No live success claimed before matching deployment."
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-10-29T17:32:44.509464+09:00",
+      "ciRun": 40840327511,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40840327511",
+      "deployedCommit": "36cef2293bcb84fc9251a0f16e0b93231b06a58c",
+      "ciConclusion": "success",
+      "buildConclusion": "success",
+      "deployConclusion": "success",
+      "proof": "docs/translation-review/publication-020.json",
+      "pages": 273,
+      "passed": 273,
+      "reviewedTranslationsPublished": 252,
+      "japaneseSources": 21,
+      "texExpressions": 6139,
+      "mathVersions": 91,
+      "cPrimeEnumerationVersions": 13,
+      "sieveVersions": 13,
+      "sieveRustBlocks": 26,
+      "scope": "Batches001-020 reviewed versions only. HTTP/content/canonical/lang/exact14hreflang/13sidebar article URLs; exact decodedTeX across91mathversions,exact completeCcode across13prime-enumeration versions,and both completeRust blocks/localized imagealt+credit/exact liveGIFbytes across13sieve versions. Original distinct canonical/date preserved. Not full-site content/native-language/visual/security certification."
+    }
+  ]
 }
