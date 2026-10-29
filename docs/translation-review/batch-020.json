@@ -872,5 +872,16 @@
       "Finite bounds<=100000 under Rust1.90Windows64bit,not everyusize/target.",
       "No timing benchmark,hugeallocation,fullanimation/browservisual/KaTeX or cryptographic audit."
     ]
+  },
+  "publicationDispatch": {
+    "date": "2026-10-29",
+    "head": "36cef2293bcb84fc9251a0f16e0b93231b06a58c",
+    "ciRun": 40840327511,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40840327511",
+    "observedStatus": "in_progress",
+    "plannedLiveUrls": 273,
+    "liveProbe": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_252.py",
+    "publicationPending": true,
+    "scope": "All12sieve translations and Japanese plus all earlier reviewed articles. Plan exact TeX across91versions6139expressions,Rust26blocks,C13blocks,localizedGIFalt/credit and exact public GIF bytes. No live success claimed before matching deployment."
   }
 }
