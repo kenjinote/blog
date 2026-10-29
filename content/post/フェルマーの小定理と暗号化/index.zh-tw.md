@@ -7,471 +7,297 @@ math: true
 mermaid: true
 categories: ["mathematics", "cryptography", "programming"]
 tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C++"]
+lastmod: 2026-10-29
 ---
 
-## 1. 簡介：支撐現代密碼學的數學奧秘
+## 1. 定理保證什麼
 
-在現代數位社會，特別是透過網際網路進行通訊時，「加密」已成為不可或缺的基礎技術。我們能透過網頁瀏覽器經由 HTTPS 安全地瀏覽網站、在網路銀行進行金融交易，以及在通訊應用程式中進行私密對話，全是因為有高度數學理論支持的加密協定在背後運作。其中扮演特別重要角色的就是「公開金鑰加密」，而其代表正是 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密** 。
+費馬小定理描述以質數為模數的冪次性質，有助於理解質數的必要條件，以及RSA解密的正確性。但能正確解密與安全的加密方案是兩回事，定理本身並不保證通訊的機密性。
 
-包含 RSA 加密在內的許多加密演算法，其安全性與正確性在很大程度上依賴於 17 世紀法國數學家皮耶·德·費馬（[Pierre de Fermat](https://kenji.blog/zh-tw/p/fermat/)）所發現的一個非常優美且強大的定理。這就是 **費馬小定理（Fermat's Little Theorem）** 。此外，將其一般化的李昂哈德·歐拉（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）定理，在密碼學理論中也發揮了決定性的作用。
+本文介紹同餘式、費馬與尤拉定理、費馬測試的限制，以及RSA的數學原理。程式碼是帶有邊界檢查的教材，不是實務環境的金鑰產生器或加密方案。另見[RSA數學原理與加密方案的差別](https://kenji.blog/zh-tw/p/rsa-encryption-math-explained-for-beginners/)。
 
-本篇文章將從基礎開始，徹底解說[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)這個純數學的發現，是如何應用於現代實用的加密技術，特別是「質數判定」與「[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密」。這是一份非常詳細的技術指南，內容涵蓋數學證明、加密與解密機制，以及使用 C++ 與 Python 進行具體演算法實作。
+## 2. 同餘式與反元素
 
----
+對正整數 $n$，整數 $a,b$ 的差是 $n$ 的倍數，可記為：
 
-## 2. 同餘與模算數基礎
+$$ a \equiv b \pmod n. $$
 
-為了理解[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)，首先必須熟悉「模算數（同餘式）」這個數學概念。模算數是一種著眼於除以某個固定數字（稱為模數）後的「餘數」之計算系統。因為它像時鐘的表面（每 12 小時繞一圈）一樣運算，所以也被稱為「時鐘數學」。
+例如 $17\equiv12\equiv2\pmod5$。同餘關係與加法、減法、乘法，以及非負整數次冪相容。但約去因子需要條件：
 
-當整數 $a$ 和 $b$ 除以正整數 $n$ 的餘數相等時，數學上會以下列方式表示：
+$$ ac\equiv bc\pmod n,\quad \gcd(c,n)=1
+\quad\Longrightarrow\quad a\equiv b\pmod n. $$
 
-$$
-a \equiv b \pmod n
-$$
+若沒有互質條件，雖然 $2\cdot1\equiv2\cdot4\pmod6$，卻有 $1\not\equiv4\pmod6$。當 $n>1$ 時，模反元素 $c^{-1}$ 存在的充要條件是 $\gcd(c,n)=1$。擴展歐幾里得演算法求出 $cx+ny=1$，將 $x$ 對 $n$ 取模就得到反元素。
 
-這讀作「在模 $n$ 之下，$a$ 與 $b$ 同餘」。例如，17 除以 5 的餘數是 2，而 12 除以 5 的餘數也是 2。因此，可以寫成如下形式：
+## 3. 費馬小定理及其證明
 
-$$
-17 \equiv 12 \pmod 5 \equiv 2 \pmod 5
-$$
+若 $p$ 為質數且 $p\nmid a$，則：
 
-在模算數中，一般的四則運算（加法、減法、乘法）可以直接成立：
+$$ a^{p-1}\equiv1\pmod p. $$
 
-1. **加法**: 若 $a \equiv b \pmod n$ 且 $c \equiv d \pmod n$，則 $a + c \equiv b + d \pmod n$
-2. **減法**: 若 $a \equiv b \pmod n$ 且 $c \equiv d \pmod n$，則 $a - c \equiv b - d \pmod n$
-3. **乘法**: 若 $a \equiv b \pmod n$ 且 $c \equiv d \pmod n$，則 $a \times c \equiv b \times d \pmod n$
-4. **指數**: 若 $a \equiv b \pmod n$，則對於任意自然數 $k$，$a^k \equiv b^k \pmod n$ 成立
+例如 $p=5$ 時，$2^4=16$、$3^4=81$ 與 $4^4=256$ 除以5的餘數都是1。對任意整數 $a$ 都成立的形式是：
 
-不過，關於 **除法** 必須特別注意。一般來說，即使 $a \times c \equiv b \times c \pmod n$，也不能直接將兩邊除以 $c$ 得出 $a \equiv b \pmod n$。這只有在 $c$ 和 $n$ 互質（最大公因數為 1）的情況下才成立。這個「模反元素（模逆元）」的概念，在後文將提到的 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密金鑰生成中非常重要。
+$$ a^p\equiv a\pmod p. $$
 
----
+當 $p\nmid a$ 時，在前式兩邊乘以 $a$；當 $p\mid a$ 時，後式兩邊都與0同餘。
 
-## 3. [費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的數學背景與證明
+證明前式時，將非零剩餘 $1,2,\ldots,p-1$ 分別乘以 $a$。結果不會是零。若 $ia\equiv ja\pmod p$，約去 $a$ 得到 $i=j$，因此這些乘積的剩餘只是原來非零剩餘的重新排列。兩邊取乘積：
 
-掌握了模算數的基礎後，讓我們來看看本篇的主題——[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)。
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-### 3.1 定理的定義
+由於 $(p-1)!$ 與 $p$ 互質，可以約去，定理得證。
 
-[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)可以表述如下：
+## 4. 尤拉定理
 
-> **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/zh-tw/p/fermats-little-theorem/))**
-> 設 $p$ 為質數，$a$ 為不是 $p$ 的倍數（即 $a$ 與 $p$ 互質）的任意整數。此時，以下同餘式成立：
-> $$ a^{p-1} \equiv 1 \pmod p $$
+尤拉函數 $\varphi(n)$ 計算1到 $n$ 之間與 $n$ 互質的整數個數。對質數 $p$，有 $\varphi(p)=p-1$；對相異質數 $p,q$，有：
 
-此外，拿掉「$a$ 不是 $p$ 的倍數」的條件，將其表示為對所有整數 $a$ 都成立的形式也很常見。在這種情況下，兩邊同乘 $a$ 可得：
+$$ \varphi(pq)=(p-1)(q-1). $$
 
-$$
-a^p \equiv a \pmod p
-$$
+當 $n>1$ 且 $\gcd(a,n)=1$ 時，[尤拉定理](https://dlmf.nist.gov/27.2#E8)指出：
 
-### 3.2 透過具體例子確認
+$$ a^{\varphi(n)}\equiv1\pmod n. $$
 
-為了確認定理是否真的成立，我們用具體的數字來驗證看看。
-設質數 $p = 5$。則 $p-1 = 4$。我們選擇不是 $p$ 的倍數的整數作為 $a$。
+對互質剩餘的集合使用上一節的排列與乘積約去論證，即可證明。費馬小定理是模數為質數的特例，不能將尤拉定理無條件套用於不互質的輸入。
 
-- 當 $a = 2$ 時：$2^{5-1} = 2^4 = 16$。$16 \div 5 = 3$ 餘 $1$。因此 $16 \equiv 1 \pmod 5$。（成立）
-- 當 $a = 3$ 時：$3^{5-1} = 3^4 = 81$。$81 \div 5 = 16$ 餘 $1$。因此 $81 \equiv 1 \pmod 5$。（成立）
-- 當 $a = 4$ 時：$4^{5-1} = 4^4 = 256$。$256 \div 5 = 51$ 餘 $1$。因此 $256 \equiv 1 \pmod 5$。（成立）
+## 5. 費馬測試能告訴我們什麼
 
-就這樣，無論選擇什麼樣的 $a$（只要不是 5 的倍數），其 4 次方除以 5 的餘數必然為 1。看起來像魔法一樣，但這源自於質數所具備的優美性質。
+對奇整數 $n>3$，從 $2\le a\le n-2$ 選取底數 $a$。若出現以下不一致，就能確定 $n$ 是合數：
 
-### 3.3 定理的數學證明
+$$ a^{n-1}\not\equiv1\pmod n. $$
 
-為什麼會成立這樣的事實呢？這裡我們介紹一個使用剩餘系集合的優雅證明。
-
-考慮集合 $S = \{1, 2, 3, \dots, p-1\}$。這些是除以 $p$ 後餘數為 $1$ 到 $p-1$ 的整數代表元素。
-現在，我們將各個元素乘上與 $p$ 互質的整數 $a$，得到一個新集合 $T$：
-$$ T = \{1a, 2a, 3a, \dots, (p-1)a\} $$
-
-我們考慮這個集合 $T$ 中的各個元素除以 $p$ 的餘數。令人驚訝的是，這些餘數雖然順序可能改變，但與原來集合 $S$ 的元素集合完全一致。
-因為：
-1. $T$ 的元素不會是 $p$ 的倍數（因為 $a$ 和原本的元素都不是 $p$ 的倍數）。
-2. 在 $T$ 之中，不存在兩個在模 $p$ 下同餘的不同元素。如果 $ia \equiv ja \pmod p$ （其中 $i \neq j$），因為 $a$ 和 $p$ 互質，我們可以除以 $a$，得到 $i \equiv j \pmod p$，這就產生了矛盾。
-
-因此，將 $S$ 的所有元素相乘的結果，與將 $T$ 的所有元素相乘的結果，在模 $p$ 之下是同餘的。
-
-$$
-(1a) \times (2a) \times \dots \times ((p-1)a) \equiv 1 \times 2 \times \dots \times (p-1) \pmod p
-$$
-
-將左邊整理，因為有 $p-1$ 個 $a$，所以：
-
-$$
-a^{p-1} \cdot (p-1)! \equiv (p-1)! \pmod p
-$$
-
-因為 $(p-1)!$ 與 $p$ 互質，所以兩邊可以除以 $(p-1)!$，最終導出以下定理：
-
-$$
-a^{p-1} \equiv 1 \pmod p
-$$
-
-這就是[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的證明。
-
----
-
-## 4. 歐拉函數與歐拉定理
-
-[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)是關於「質數 $p$」的定理，而將其推廣至「任意正整數 $n$」的人，就是李昂哈德·歐拉。為了理解 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密，這個推廣是不可或缺的。
-
-### 4.1 歐拉函數 $\phi(n)$
-
-歐拉函數（或稱歐拉 $\phi$ 函數） $\phi(n)$ 是一個表示「在 $1$ 到 $n$ 的整數中，與 $n$ 互質的數字個數」的函數。
-
-- 當為質數 $p$ 時，由於 $1$ 到 $p-1$ 的所有整數都與 $p$ 互質，因此 $\phi(p) = p - 1$。
-- 對於兩個相異質數 $p, q$，其乘積 $n = p \times q$ 的情況，$\phi(n)$ 可以用非常簡單的算式求出：
-  $$ \phi(p \times q) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-
-這個性質，正是 RSA 加密金鑰生成的根本邏輯。
-
-### 4.2 歐拉定理
-
-歐拉將[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)推廣如下：
-
-> **歐拉定理 (Euler's Theorem)**
-> 對於正整數 $n$ 以及與其互質的整數 $a$，以下關係成立：
-> $$ a^{\phi(n)} \equiv 1 \pmod n $$
-
-如果 $n$ 是質數 $p$，則 $\phi(p) = p - 1$，這就變成了[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)本身（$a^{p-1} \equiv 1 \pmod p$）。也就是說，[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)只不過是歐拉定理的一個特例。
-
----
-
-## 5. 尋找巨大的質數：費馬質數判定法
-
-在加密技術（如 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密與 Diffie-Hellman 金鑰交換等）中，必須能高速找出長達數百位數的「巨大質數」。然而，如果要判定一個巨大數字 $N$ 是否為質數，若使用測試除以從 $2$ 到 $\sqrt{N}$ 的所有數字是否能整除的「試除法」，將會花費等同於宇宙壽命般漫長的時間。
-
-因此，反過來利用[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的「機率性質數判定法」，即 **費馬質數判定法（[Fermat](https://kenji.blog/zh-tw/p/fermat/) Primality Test）** 便應運而生。
-
-### 5.1 什麼是機率性質數判定法
-
-根據[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)，若 $p$ 為質數，則對於任意的 $a$ ($1 < a < p$)，$a^{p-1} \equiv 1 \pmod p$ 必然成立。
-取其逆否命題，可以說「如果對於某個 $a$，得出 $a^{p-1} \not\equiv 1 \pmod p$，那麼 $p$ **絕對不是質數（是合數）** 」。
-
-因此，如果想判定 $N$ 是否為質數，隨機選擇幾個 $a$，計算 $a^{N-1} \pmod N$ 並確認結果是否為 $1$。如果只要有一次得出 $1$ 以外的答案，就可以確定 $N$ 是合數。如果試了多次結果都是 $1$，則可以高度機率地判斷 $N$ 「大概是質數」。
-
-### 5.2 演算法解說與流程圖
-
-費馬質數判定法的演算法如下。
+反向推論不成立。通過測試只表示選取的底數沒有違反這項必要條件。即使隨機選取數個底數反覆檢查，也不能據此對所有合數保證一致且很小的誤通過機率。
 
 ```mermaid
 flowchart TD
-    Start["開始"] --> Input["輸入判定目標數 p 與測試次數 k"]
-    Input --> LoopStart["迴圈從 i = 0 到 k-1"]
-    LoopStart --> Condition{"i < k ?"}
-    Condition -- 是 --> RandomA["在 1 < a < p-1 範圍內隨機選擇整數 a"]
-    RandomA --> Calc["計算模冪 a^(p-1) mod p"]
-    Calc --> CheckPrime{"結果為 1 嗎？"}
-    CheckPrime -- 否 --> ReturnComposite["p 是合數（確定）"]
-    CheckPrime -- 是 --> Increment["將 i 加 1"]
-    Increment --> Condition
-    Condition -- 否 --> ReturnPrime["p 大概是質數（機率性）"]
-    ReturnComposite --> End["結束"]
-    ReturnPrime --> End
+    Input["輸入整數 n 與非空的底數串列"] --> Small{"n 小於 2？"}
+    Small -- Yes --> NotPrime["不是質數"]
+    Small -- No --> Tiny{"n 是 2 或 3？"}
+    Tiny -- Yes --> Known["這個小整數 n 是質數"]
+    Tiny -- No --> Even{"n 是偶數？"}
+    Even -- Yes --> Composite["合數"]
+    Even -- No --> Validate["檢查所有底數是否介於 2 到 n-2"]
+    Validate --> Next{"還有未檢查的底數？"}
+    Next -- Yes --> Power["計算下一個底數的 n-1 次冪模 n"]
+    Power --> Check{"餘數是 1？"}
+    Check -- No --> Composite
+    Check -- Yes --> Next
+    Next -- No --> Pass["通過選取的底數：不是質數證明"]
 ```
 
-### 5.3 卡邁克爾數（偽質數）的陷阱
+程式對空串列與底數範圍錯誤拋出例外，Python版本也拒絕非整數型別。先處理小整數與偶數，僅對奇數 $n\ge5$ 檢查底數範圍。
 
-費馬質數判定法雖然非常快速，但有一個重大的缺點。那就是存在著像惡魔一般的數字，明明是合數，卻對所有的 $a$ 都滿足 $a^{N-1} \equiv 1 \pmod N$。這被稱為 **卡邁克爾數 (Carmichael numbers)** 。最小的卡邁克爾數是 $561$ ($3 \times 11 \times 17$)。
+卡邁克爾數是對**所有與 $n$ 互質的底數**都滿足費馬同餘式的合數。最小的例子 $561=3\cdot11\cdot17$ 通過底數2，但不通過底數3。合數 $1105=5\cdot13\cdot17$ 通過底數2與3。產生質數時，不能將這種通過結果當成證明。
 
-由於卡邁克爾數的存在，單純的費馬測試無法進行絕對的質數判定。因此，在實際的加密系統（如 OpenSSL 等）中，標準使用的是改良自費馬測試的 **米勒-拉賓（Miller-Rabin）質數判定法** 。因為米勒-拉賓判定法能看穿卡邁克爾數，可將誤判的機率實質上降至零。
+[Handbook of Applied Cryptography第4章](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)的Fermat與Miller–Rabin小節說明了這個差別。對一個固定的奇合數，使用獨立、均勻隨機選取的底數進行 $k$ 次Miller–Rabin檢驗，誤通過機率的上界為 $4^{-k}$。這與「通過後該數是合數的機率」是不同的量，也不能直接套用到任意固定底數。[OpenSSL文件](https://docs.openssl.org/master/man3/BN_generate_prime/)同樣說明通過檢驗的數仍只是可能為質數的候選數，並介紹重複檢驗。詳情見[質數判定文章](https://kenji.blog/zh-tw/p/cpp-fast-prime-testing-miller-rabin/)。
 
-### 5.4 高速的模冪運算（反覆平方法）
+## 6. 用C++與Python檢查必要條件
 
-在質數判定演算法中，需要計算 $a^{N-1} \pmod N$，但當 $N$ 巨大時，$a^{N-1}$ 將成為天文數字級別的位數，無法裝入電腦的記憶體中。
-解決這個問題的是 **反覆平方法（Exponentiation by Squaring）** 或模冪運算。透過在計算的每一個步驟都取餘數（mod N），可以讓數值始終保持小於 $N$，從而能非常高速（計算複雜度為 $O(\log N)$）地進行計算。
+以下教材不使用亂數，而是檢查指定的底數。函式名稱中的 `passes` 表示通過，不表示已證明為質數。原來以次數為參數的實作在零次或負次數時會略過檢查，現在拒絕空的底數串列。
 
----
+### C++17
 
-## 6. 質數判定與模冪運算的實作
-
-那麼，我們就來使用 C++ 和 Python 實作費馬質數判定法和反覆平方法吧。
-
-### 6.1 使用 C++ 實作
-
-在 C++ 中，標準整數型別容易發生溢位，處理巨大數字時需要多精度整數函式庫（如 GMP 等）。不過，為了理解演算法，這裡展示在 64 位元整數（`unsigned long long`）範圍內的實作。
+範例要求編譯環境提供 `std::uint64_t`，不處理負數輸入。不依賴 `__int128` 擴充，而是用讓餘數維持在模數範圍內的加法實作乘法。內部輔助函式 `add_mod` 要求兩個加數都小於模數。當 `a >= m-b` 時以減法取代加法；否則和小於模數，不會超出64位元的上限。乘法與冪次運算函式拒絕模數0，模數1的餘數為0。
 
 ```cpp
+#include <cstdint>
 #include <iostream>
-#include <random>
+#include <stdexcept>
+#include <vector>
 
-using namespace std;
+using u64 = std::uint64_t;
 
-// 高速的模冪運算 (a^b mod m) - 反覆平方法
-unsigned long long power_mod(unsigned long long a, unsigned long long b, unsigned long long m) {
-    unsigned long long result = 1;
-    a = a % m;
-    while (b > 0) {
-        // 若 b 的最低位元為 1，則將 result 乘上 a
-        if (b % 2 == 1) {
-            result = (__int128)result * a % m; // 為防止溢位擴展為 128bit
-        }
-        // 將 a 平方
-        a = (__int128)a * a % m;
-        // 將 b 右移（減半）
-        b /= 2;
+// Internal helper: m > 0 and a, b < m.
+u64 add_mod(u64 a, u64 b, u64 m) {
+    return a >= m - b ? a - (m - b) : a + b;
+}
+
+u64 mul_mod(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    a %= m;
+    u64 result = 0;
+    while (b != 0) {
+        if (b & 1) result = add_mod(result, a, m);
+        b >>= 1;
+        if (b != 0) a = add_mod(a, a, m);
     }
     return result;
 }
 
-// 費馬質數判定法
-bool fermat_is_prime(unsigned long long p, int iterations = 5) {
-    if (p <= 1) return false;
-    if (p <= 3) return true;
-    if (p % 2 == 0) return false;
-
-    random_device rd;
-    mt19937_64 gen(rd());
-    uniform_int_distribution<unsigned long long> dis(2, p - 2);
-
-    for (int i = 0; i < iterations; ++i) {
-        unsigned long long a = dis(gen);
-        // 若 a^(p-1) mod p 不為 1，則是合數
-        if (power_mod(a, p - 1, p) != 1) {
-            return false;
-        }
+u64 power_mod(u64 a, u64 exponent, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
+    a %= m;
+    while (exponent != 0) {
+        if (exponent & 1) result = mul_mod(result, a, m);
+        exponent >>= 1;
+        if (exponent != 0) a = mul_mod(a, a, m);
     }
-    return true; // 大概是質數
+    return result;
+}
+
+bool fermat_passes(u64 n, const std::vector<u64>& bases) {
+    if (bases.empty()) throw std::invalid_argument("Choose at least one base");
+    if (n < 2) return false;
+    if (n <= 3) return true;
+    if (n % 2 == 0) return false;
+    for (u64 a : bases) {
+        if (a < 2 || a > n - 2) throw std::invalid_argument("Base outside range");
+    }
+    for (u64 a : bases) {
+        if (power_mod(a, n - 1, n) != 1) return false;
+    }
+    return true;
 }
 
 int main() {
-    unsigned long long num = 1000000007; // 已知的質數
-    if (fermat_is_prime(num, 10)) {
-        cout << num << " is probably prime." << endl;
-    } else {
-        cout << num << " is composite." << endl;
-    }
-    return 0;
+    std::cout << "1000000007 passes bases 2,3: " << fermat_passes(1000000007, {2, 3}) << '\n';
+    std::cout << "1105 passes bases 2,3: " << fermat_passes(1105, {2, 3}) << '\n';
+    std::cout << "1105 passes base 5: " << fermat_passes(1105, {5}) << '\n';
 }
 ```
 
-### 6.2 使用 Python 實作
+例如以 `g++ -std=c++17 fermat.cpp -o fermat` 編譯。已在WSL的GCC13.3驗證。布林輸出依序為 `1, 1, 0`。合數1105通過兩個底數，本身就展示了限制。
 
-Python 的標準整數型別支援多精度整數，因此不需擔心位數溢位。此外，Python 的內建函數 `pow(a, b, m)` 內部就使用了反覆平方法，因此非常快速。
+### Python
+
+使用Python3整數與三參數 `pow`。只接受內建 `int` 型別，拒絕 `bool` 等型別；底數串列不能為空。候選數與底數和C++範例相同。
 
 ```python
-import random
-
-def fermat_is_prime(p, iterations=5):
-    """
-    使用費馬質數判定法的機率性質數判定
-    """
-    if p <= 1:
+def fermat_passes(n, bases):
+    if type(n) is not int:
+        raise TypeError("n must be an integer")
+    bases = tuple(bases)
+    if not bases:
+        raise ValueError("Choose at least one base")
+    if any(type(a) is not int for a in bases):
+        raise TypeError("Bases must be integers")
+    if n < 2:
         return False
-    if p <= 3:
+    if n <= 3:
         return True
-    if p % 2 == 0:
+    if n % 2 == 0:
         return False
+    if any(a < 2 or a > n - 2 for a in bases):
+        raise ValueError("Base outside range")
+    return all(pow(a, n - 1, n) == 1 for a in bases)
 
-    for _ in range(iterations):
-        # 在 2 到 p-2 之間隨機選擇一個數字 a
-        a = random.randint(2, p - 2)
-        # 計算 a^(p-1) mod p。內建的 pow 很快速。
-        if pow(a, p - 1, p) != 1:
-            return False # 確定是合數
 
-    return True # 大概是質數
-
-# 測試
-number_to_test = 104729
-if fermat_is_prime(number_to_test, 10):
-    print(f"{number_to_test} 大概是質數。")
-else:
-    print(f"{number_to_test} 是合數。")
+if __name__ == "__main__":
+    print("1000000007 passes bases 2,3:", fermat_passes(1000000007, [2, 3]))
+    print("1105 passes bases 2,3:", fermat_passes(1105, [2, 3]))
+    print("1105 passes base 5:", fermat_passes(1105, [5]))
 ```
 
----
+已使用Python3.12驗證，結果依序為 `True, True, False`。原範例104729仍會以質數通過。Python整數可避免固定寬度的溢位，但時間與記憶體並非無限。
 
-## 7. 在 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密中的應用：費馬與歐拉結果的地方
+對指數 $b>0$，反覆平方法執行 $O(\log b)$ 次模乘，次數與指數的位元數成正比。這不是位元複雜度或實測執行時間。C++範例中的每次模乘，透過次數與乘數位元數成正比的模加實作。不能斷言所有Python版本的 `pow` 內部演算法完全相同。
 
-[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（以及歐拉定理）最偉大的應用領域，就是 1977 年由 Rivest、Shamir 與 Adleman 三人所開發的 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密** 。
-RSA 加密是一個名為「公開金鑰加密」的劃時代系統，它實現了一種機制：用來加密的金鑰（公開金鑰）對全世界公開，但用來解密的金鑰（私鑰）只有接收者本人知道。
+## 7. RSA為什麼能正確解密
 
-這種不對稱性，是基於「將巨大的合數進行質因數分解是極度困難的」這一計算複雜度上的安全性。
+選取相異質數 $p,q$，令 $N=pq$。在這個教學構造中，選擇滿足 $1<e<\varphi(N)$ 與 $\gcd(e,\varphi(N))=1$ 的公開指數，並令私密指數 $d$ 為其反元素。
 
-### 7.1 RSA 加密的機制（金鑰生成、加密、解密）
+$$ ed\equiv1\pmod{\varphi(N)},\qquad
+\varphi(N)=(p-1)(q-1). $$
 
-讓我們透過 Mermaid 的循序圖來確認 RSA 加密的整體通訊流程。
+公開金鑰是 $(N,e)$，私鑰的簡化表示是 $(N,d)$。實際私鑰也可能包含CRT使用的質因數等資訊，這些同樣必須保密。分解模數就能計算私密指數，但這不代表RSA反演問題與整數分解問題已被證明在一般情況下等價。
+
+對代表元素 $0\le M<N$：
+
+$$ C=M^e\bmod N,\qquad M'=C^d\bmod N. $$
+
+下圖僅表示對整數代表元素進行的**原始RSA運算**，是省略實務訊息編碼與身分驗證環節的數學示意圖。
 
 ```mermaid
 sequenceDiagram
-    participant Alice["愛麗絲 (接收者)"]
-    participant Bob["鮑伯 (發送者)"]
-    
-    Alice->>Alice: "生成巨大的質數 p, q"
-    Alice->>Alice: "計算 N = p * q, φ(N) = (p-1)(q-1)"
-    Alice->>Alice: "計算公開金鑰 e 與私鑰 d (e*d ≡ 1 mod φ(N))"
-    Alice->>Bob: "傳送公開金鑰 (N, e)"
-    Note over Bob: "準備明文 M (M < N)"
-    Bob->>Bob: "計算密文 C = M^e mod N"
-    Bob->>Alice: "傳送密文 C"
-    Alice->>Alice: "計算明文 M = C^d mod N 並解密"
+    participant Alice as 愛麗絲
+    participant Bob as 鮑伯
+    Note over Alice,Bob: 原始RSA教學範例
+    Alice->>Alice: 選取相異質數 p,q 與滿足條件的 e,d
+    Alice->>Bob: 提供公開金鑰 (N,e)
+    Bob->>Bob: 準備0到N-1之間的代表元素 M
+    Bob->>Bob: 計算 C = M^e mod N
+    Bob->>Alice: 提供 C
+    Alice->>Alice: 計算 M' = C^d mod N
 ```
 
-以下解說數學上的詳細步驟。
+首先，若 $\gcd(M,N)=1$，可對某個非負整數 $t$ 寫成 $ed=1+t\varphi(N)$。尤拉定理給出：
 
-#### 步驟 1：金鑰的生成（接收者愛麗絲的作業）
+$$ M^{ed}=M(M^{\varphi(N)})^t\equiv M\pmod N. $$
 
-1. 隨機生成兩個巨大的質數 $p$ 與 $q$（這裡會用到前述的質數判定法）。
-2. 計算其乘積 $N = p \times q$。這個 $N$ 會被公開。
-3. 使用歐拉函數，計算 $\phi(N) = (p-1)(q-1)$。
-4. 選擇與 $\phi(N)$ 互質的整數 $e$（公開指數）（常使用 $e = 65537$）。
-5. 計算 $e$ 的模反元素 $d$（私密指數）。亦即，找出滿足下式的 $d$：
-   $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   這個計算使用了 **擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法** 。
+也不能排除不互質的代表元素。在模 $p$ 下，若 $p\mid M$，則 $M^{ed}$ 與 $M$ 都為0；否則，由費馬小定理與 $p-1\mid ed-1$ 可得同餘。在模 $q$ 下亦同。由於 $p,q$ 互質，中國剩餘定理給出：
 
-至此， **公開金鑰為 $(N, e)$** ， **私鑰為 $(N, d)$** 。（$p, q, \phi(N)$ 會立即銷毀或嚴格保密）。
+$$ M^{ed}\equiv M\pmod p,\quad
+M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod N. $$
 
-#### 步驟 2：加密（發送者鮑伯的作業）
+因此，包含0以及 $p,q$ 倍數的全部代表元素都能還原。這是正確性證明，不是機密性證明。
 
-假設鮑伯想發送訊息 $M$ 給愛麗絲（$M$ 是將文字轉換為數值後的結果，且 $0 \le M < N$）。
-鮑伯使用愛麗絲的公開金鑰 $(N, e)$，進行以下計算製作密文 $C$：
+## 8. 可重現的RSA原語教材
 
-$$
-C \equiv M^e \pmod N
-$$
+使用已知的固定質數61與53，以及指數17，透過擴展歐幾里得演算法求反元素。不隨機產生質數，也不逐字元轉換字串。原來只檢查底數2與3的「質數產生器」會接受1105，因此可能產生無法正確解密的金鑰。討論實務加密的要求時，也不能忽略指數1與代表元素超出範圍的問題。
 
-透過網路將這個 $C$ 發送給愛麗絲。
-
-#### 步驟 3：解密（接收者愛麗絲的作業）
-
-收到密文 $C$ 的愛麗絲，使用只有自己知道的私鑰 $d$ 進行以下計算：
-
-$$
-M' \equiv C^d \pmod N
-$$
-
-令人驚奇的是，這個計算結果 $M'$ 會與原始訊息 $M$ 完全一致。
-
-### 7.2 為什麼能解密？（數學證明）
-
-在這裡，[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（歐拉定理）發揮了它的真正價值。為什麼 $C^d \pmod N$ 能變回 $M$ 呢？
-
-我們將解密的式子展開。
-因為 $C \equiv M^e \pmod N$，所以：
-$$ C^d \equiv (M^e)^d \equiv M^{ed} \pmod N $$
-
-在金鑰生成的步驟中，我們選擇了 $d$ 使得 $e \cdot d \equiv 1 \pmod{\phi(N)}$。這意味著存在某個整數 $k$，可以寫成如下形式：
-$$ e \cdot d = 1 + k \cdot \phi(N) $$
-
-將其代入上面的式子：
-$$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
-
-在這裡 **歐拉定理** ($M^{\phi(N)} \equiv 1 \pmod N$) 登場了。（※嚴格來說，$M$ 和 $N$ 必須互質，但在 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 中 $M$ 和 $N$ 不互質的機率是天文數字級別地低，且透過中國剩餘定理可以證明即使不互質也成立）。
-
-應用歐拉定理，$M^{\phi(N)} \equiv 1$，因此：
-$$ M \cdot (1)^k \equiv M \pmod N $$
-
-完美地還原了 $M$！費馬與歐拉在幾百年前發現的數之性質，完美地保證了現代數位通訊的機密性。
-
----
-
-## 8. RSA 加密的簡易實作 (Python)
-
-因為只有理論較難體會，所以我們用 Python 來實際實作 RSA 加密的金鑰生成、加密、解密的過程吧。這是一個供教育用途的「簡易（玩具）實作」，但所使用的數學與真實情況完全相同。
-
-用來求得模反元素 $d$ 的「擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法」也包含在實作中。
+以下的 `rsa_primitive` 只檢查指數、模數與代表元素在算術上的輸入範圍，不會分解任意傳入的模數，也不會驗證任意RSA金鑰的有效性。固定教學金鑰另行滿足金鑰條件。[RFC8017第5、7節](https://www.rfc-editor.org/rfc/rfc8017.html)也區分了原語與加密方案。
 
 ```python
-import random
-
-# 求最大公因數
-def gcd(a, b):
-    while b != 0:
-        a, b = b, a % b
-    return a
-
-# 擴展歐幾里得演算法 (求得 ax + by = gcd(a,b) 的 x, y)
-# 用於尋找 e*d ≡ 1 (mod φ(N)) 中的 d
 def extended_gcd(a, b):
-    if a == 0:
-        return (b, 0, 1)
-    else:
-        g, y, x = extended_gcd(b % a, a)
-        return (g, x - (b // a) * y, y)
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r:
+        q = old_r // r
+        old_r, r = r, old_r - q * r
+        old_s, s = s, old_s - q * s
+        old_t, t = t, old_t - q * t
+    return old_r, old_s, old_t
 
-def mod_inverse(e, phi):
-    g, x, y = extended_gcd(e, phi)
+
+def mod_inverse(a, modulus):
+    if type(a) is not int or type(modulus) is not int:
+        raise TypeError("Arguments must be integers")
+    if modulus <= 1:
+        raise ValueError("Modulus must exceed one")
+    g, x, _ = extended_gcd(a % modulus, modulus)
     if g != 1:
-        raise Exception('不存在反元素')
-    else:
-        return x % phi
+        raise ValueError("Inverse does not exist")
+    return x % modulus
 
-# 質數生成函數（簡易版：生成小質數）
-def generate_prime(bits):
-    while True:
-        p = random.getrandbits(bits)
-        # 用簡單判定來代替前述的費馬測試
-        if p > 1 and pow(2, p-1, p) == 1 and pow(3, p-1, p) == 1:
-            return p
 
-# RSA 金鑰生成
-def generate_keypair(bits=16):
-    p = generate_prime(bits)
-    q = generate_prime(bits)
-    # 避免 p 和 q 變成一樣
-    while p == q:
-        q = generate_prime(bits)
+def rsa_primitive(value, exponent, modulus):
+    if any(type(x) is not int for x in (value, exponent, modulus)):
+        raise TypeError("Arguments must be integers")
+    if exponent <= 0 or modulus <= 1 or not 0 <= value < modulus:
+        raise ValueError("Invalid exponent, modulus or representative")
+    return pow(value, exponent, modulus)
 
+
+def rsa_primitive_demo():
+    p, q, e = 61, 53, 17  # Fixed public teaching constants, not secret keys.
     n = p * q
     phi = (p - 1) * (q - 1)
-
-    # e 常使用 65537 等質數，但這裡隨機選擇
-    e = random.randrange(1, phi)
-    g = gcd(e, phi)
-    while g != 1:
-        e = random.randrange(1, phi)
-        g = gcd(e, phi)
-
-    # 私鑰 d 的計算
     d = mod_inverse(e, phi)
-    
-    # 公開金鑰 (e, n), 私鑰 (d, n)
-    return ((e, n), (d, n))
+    print("Public key (n, e):", (n, e))
+    print("Private key (n, d):", (n, d))
+    m = 65
+    c = rsa_primitive(m, e, n)
+    recovered = rsa_primitive(c, d, n)
+    print(f"{m} -> {c} -> {recovered}")
+    for representative in range(n):
+        cipher = rsa_primitive(representative, e, n)
+        if rsa_primitive(cipher, d, n) != representative:
+            raise ArithmeticError("Round-trip failed")
+    print("All 3233 representatives round-trip.")
 
-def encrypt(pk, plaintext):
-    e, n = pk
-    # 計算 plaintext^e mod n
-    cipher = [pow(ord(char), e, n) for char in plaintext]
-    return cipher
 
-def decrypt(sk, ciphertext):
-    d, n = sk
-    # 計算 cipher^d mod n，並轉回字元
-    plain = [chr(pow(char, d, n)) for char in ciphertext]
-    return ''.join(plain)
-
-# 執行範例
-if __name__ == '__main__':
-    print("--- RSA加密 簡易實作 ---")
-    public_key, private_key = generate_keypair(bits=12) # 使用 12bit 的質數
-    
-    print(f"公開金鑰 (e, n): {public_key}")
-    print(f"私鑰 (d, n): {private_key}")
-
-    message = "Hello Math!"
-    print(f"\n原始訊息: {message}")
-
-    # 加密
-    encrypted_msg = encrypt(public_key, message)
-    print(f"密文: {encrypted_msg}")
-
-    # 解密
-    decrypted_msg = decrypt(private_key, encrypted_msg)
-    print(f"解密後的訊息: {decrypted_msg}")
+if __name__ == "__main__":
+    rsa_primitive_demo()
 ```
 
-執行這段程式碼後，就可以確認字元陣列如何被轉換成不眼熟的數字陣列（密文），然後再透過私鑰完美還原為原始字串的過程。
+執行後顯示 $(N,e)=(3233,17)$、$(N,d)=(3233,2753)$ 與 `65 -> 2790 -> 65`，並檢查全部3233個代表元素的往返。顯示的私鑰也只是固定、公開的教學數值。這個檢驗不保證一般RSA金鑰的安全性。
 
----
+## 9. 與實務密碼系統的界線及參考資料
 
-## 9. 結語：數學之美與實用性的交會點
+原始RSA是確定性的，不足以構成安全的加密方案。例如，逐字元的密文可用公開金鑰進行字典比對。實務應使用經審查的函式庫、RSAES-OAEP等符合用途的方案、適當的參數與安全亂數。[Python random](https://docs.python.org/3/library/random.html)的偽亂數不能用於密碼金鑰產生。RSASSA-PSS是簽章方案，與加密是不同用途。
 
-在 17 世紀，當皮耶·德·費馬發現這個「小定理」時，沒有人認為這會有什麼實際用途。費馬本人也是出於純粹的數學探求心在進行數論的研究。
+應區分這些階段：定理保證同餘式，質數測試檢查條件，有效金鑰下的RSA運算還原代表元素，實務方案則加入編碼等安全要求。不能說特定通訊服務或所有現代密碼技術都只依賴費馬小定理。
 
-然而，大約 300 年後的 1970 年代，在電腦網路的黎明期，作為確立安全通訊協定不可或缺的加密技術，費馬定理實現了戲劇性的復活。基於[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的質數判定技術，以及基於歐拉定理的 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密，字面上支撐著現代的網際網路基礎設施。
-
-我們每天不經意發送的 LINE 訊息、在 Amazon 上的購物，全都是在這個 $a^{p-1} \equiv 1 \pmod p$ 簡單而優美的數學公式之上舞動著的。[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)告訴我們，無論數學多麼抽象，總有一天必定會派上用場。
-
-在學習程式設計或密碼學理論時，理解其基礎的數學結構，將會成為深入理解那些被當作黑盒子般提供的函式庫運作方式，並設計出更安全系統的一大武器。
-
-
+參考的第一手資料包括[DLMF的尤拉定理](https://dlmf.nist.gov/27.2#E8)、[HAC第4章](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)、[RSA規格RFC8017](https://www.rfc-editor.org/rfc/rfc8017.html)，以及[GCC的128位元整數說明](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)。最後一份資料用來核對原實作中擴充整數型別的限制。
