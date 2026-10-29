@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:27:52.826719+09:00",
+  "ciRun": 40893592967,
+  "deployedCommit": "e4bd77a295ac44fb8dae80e986de0baf176ec17d",
+  "firstAttempt": "docs/translation-review/publication-023.json",
+  "firstAttemptSha256": "b871ff1a605bff65232edd469917245ffd37269cbfa538bc53a19db0ecc56cad",
+  "scope": "Only the two first-pass network-timeout URLs requested again. Same content/math/code/diagram/reference/canonical/language-map checks; read timeout60seconds, concurrency2. No successful first-pass URL re-requested. Initial310pass/2timeout proof preserved.",
+  "pages": [
+    {
+      "url": "https://kenji.blog/de/p/cpp-fast-prime-testing-miller-rabin/",
+      "language": "de",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "noWrongJwtCve": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true,
+        "allHreflangTargetsMatch": true,
+        "allSidebarTargetsMatch": true,
+        "allReviewedTeXPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true,
+      "lastModified": "Thu, 29 Oct 2026 15:19:12 GMT"
+    },
+    {
+      "url": "https://kenji.blog/pt/p/prime-factorization-limits-big-o-notation/",
+      "language": "pt",
+      "checks": {
+        "http200": true,
+        "updatedContent": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "noWrongJwtCve": true,
+        "hreflangCount14": true,
+        "sidebarLanguageCount13": true,
+        "allHreflangTargetsMatch": true,
+        "allSidebarTargetsMatch": true,
+        "allReviewedTeXPreserved": true,
+        "followingEnglishSentencePreserved": true
+      },
+      "passed": true,
+      "lastModified": "Thu, 29 Oct 2026 15:19:26 GMT"
+    }
+  ],
+  "allPassed": true
+}

@@ -645,12 +645,13 @@
     "reviewedTranslationsTotal": 288,
     "unreviewedTranslations": 12744,
     "humanReviews": 0,
-    "publicationPending": true,
+    "publicationPending": false,
     "limitations": [
       "AI,not human/native-language certification.",
       "Finite auxiliary arithmetic,not exhaustive proof or a cryptographic audit.",
       "Mermaid sources/HTML and TeX checked,no browser visual/KaTeX/Mermaid runtime certification."
-    ]
+    ],
+    "publicationProof": "docs/translation-review/publication-023-combined.json"
   },
   "publicationDispatch": {
     "date": "2026-10-29",
@@ -688,6 +689,37 @@
       "action": "rerun-failed-jobs",
       "proof": "docs/translation-review/batch-023-deploy-rerun-request.json",
       "scope": "One POST only; API response code not captured after caller incorrectly required202. Subsequent GET confirmed attempt2. Preserve original failure;no successful publication claimed."
+    }
+  ],
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-10-30T00:27:52.826719+09:00",
+      "ciRun": 40893592967,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40893592967",
+      "deployedCommit": "e4bd77a295ac44fb8dae80e986de0baf176ec17d",
+      "ciConclusion": "success",
+      "buildConclusion": "success",
+      "deployConclusion": "success",
+      "deploymentAttempt": 2,
+      "buildReusedAfterFailedDeployment": true,
+      "ciProof": "docs/translation-review/batch-023-ci-completion.json",
+      "proof": "docs/translation-review/publication-023-combined.json",
+      "firstHttpAttempt": "docs/translation-review/publication-023.json",
+      "retryHttpAttempt": "docs/translation-review/publication-023-retry-001.json",
+      "pages": 312,
+      "passed": 312,
+      "firstHttpAttemptPassed": 310,
+      "firstHttpAttemptFailures": 2,
+      "httpRetryRounds": 1,
+      "httpRetriedUrls": 2,
+      "reviewedTranslationsPublished": 288,
+      "japaneseSources": 24,
+      "mathVersions": 117,
+      "texExpressions": 7959,
+      "fermatTheoremVersions": 13,
+      "fermatTheoremTeX": 754,
+      "fermatTheoremDiagramSourcesExact": 26,
+      "scope": "Batches001-023 reviewed versions only:initial310pass/2network-timeout,then retry only those two URLs passed. Deployment attempt2 succeeded;first deployment and firstHTTP failures preserved. All312HTTP/content/canonical/lang/exact14hreflang/13sidebar targets,117versions7959TeX;basicFermat13versions26diagrams and primary/localizedrefs/date;priorFermat39C++/Pythonblocks/26diagrams,13Ccode/13storedprimeRust/26sieveRustblocks,localizedalt/credit/liveGIFbytes. Current batch024 local changes excluded. Not full-site/native-language/browser-visual/security certification."
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:21:09.3621446+09:00",
+  "ciRun": 40893592967,
+  "job": 123531315135,
+  "attempt": 1,
+  "scope": "Selected first-attempt log state summary only; not entire log. Original attempt preserved; no successful deployment claimed.",
+  "states": [
+    {
+      "state": "deployment_in_progress",
+      "count": 14,
+      "first": "2026-10-29T15:04:05.0780632Z",
+      "last": "2026-10-29T15:05:12.2974663Z"
+    },
+    {
+      "state": "syncing_files",
+      "count": 102,
+      "first": "2026-10-29T15:05:17.4369756Z",
+      "last": "2026-10-29T15:14:00.0626186Z"
+    }
+  ],
+  "deploymentCreation": [
+    "2026-10-29T15:03:59.8988210Z Created deployment for e4bd77a295ac44fb8dae80e986de0baf176ec17d, ID: e4bd77a295ac44fb8dae80e986de0baf176ec17d"
+  ],
+  "timeout": [
+    "2026-10-29T15:14:00.0630471Z ##[error]Timeout reached, aborting!",
+    "2026-10-29T15:14:00.0632621Z ##[error]Timeout reached, aborting!"
+  ]
+}
