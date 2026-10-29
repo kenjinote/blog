@@ -624,13 +624,14 @@
     "httpsHtml": 2267,
     "httpsXml": 41,
     "repositoryTests": 17,
-    "publicationPending": true,
+    "publicationPending": false,
     "limitations": [
       "AI, not human/native-speaker certification.",
       "Preserved O2/UBSan execution evidence; no duplicate runs claimed for prose-only final changes.",
       "Finite GCC/32bit-int tests, no full INT_MAX enumeration or binary/NUL-input/output-stream-failure audit.",
       "No browser visual or cryptographic certification."
-    ]
+    ],
+    "publicationProof": "docs/translation-review/publication-019.json"
   },
   "publicationDispatch": {
     "date": "2026-10-29",
@@ -642,5 +643,25 @@
     "liveProbe": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_240.py",
     "publicationPending": true,
     "scope": "Full batch019 C prime enumeration plus all earlier reviewed articles. No live success claimed before matching deployment."
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-10-29T17:09:14.818132+09:00",
+      "ciRun": 40836460474,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40836460474",
+      "deployedCommit": "b7a7669d3c8a83b6cf91efafc4f6677ac90dab2c",
+      "ciConclusion": "success",
+      "buildConclusion": "success",
+      "deployConclusion": "success",
+      "proof": "docs/translation-review/publication-019.json",
+      "pages": 260,
+      "passed": 260,
+      "reviewedTranslationsPublished": 240,
+      "japaneseSources": 20,
+      "texExpressions": 6035,
+      "mathVersions": 78,
+      "cPrimeEnumerationVersions": 13,
+      "scope": "Batches001-019 all reviewed versions. HTTP/content/canonical/lang/exact14hreflang/13sidebar article URLs; exact decodedTeX across78mathversions and exact completeC code across13prime-enumeration versions,original distinct canonical/date preserved. Not full-site content/native-language/visual/security certification."
+    }
+  ]
 }
