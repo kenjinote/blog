@@ -7,471 +7,297 @@ math: true
 mermaid: true
 categories: ["mathematics", "cryptography", "programming"]
 tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C++"]
+lastmod: 2026-10-29
 ---
 
-## 1. 引言：支撑现代密码学的数学奥秘
+## 1. 定理保证什么
 
-在现代数字社会，尤其是基于互联网的通信中，“加密”已经成为不可或缺的基础设施技术。我们在网络浏览器上通过HTTPS安全地浏览网站、在网上银行进行金融交易、在即时通讯应用上进行私密交流，这一切的背后，都是由基于高级数学理论的加密协议在发挥作用。其中发挥关键作用的是“公钥加密算法”，其代表就是 **[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密** 。
+费马小定理描述以素数为模的幂的性质，有助于理解素性的必要条件以及RSA解密的正确性。但正确解密与安全的加密方案是两回事，定理本身并不能保证通信的机密性。
 
-包括RSA加密在内的许多加密算法的安全性与合理性，都极大地依赖于17世纪法国数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)（Pierre de Fermat）发现的一个非常优美且强大的定理。那就是 **费马小定理（Fermat's Little Theorem）** 。此外，将其一般化的莱昂哈德·欧拉（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）定理也在密码学理论中发挥了决定性作用。
+本文介绍同余式、费马与欧拉定理、费马测试的局限以及RSA的数学原理。代码是带有边界检查的教学示例，不是生产环境的密钥生成器或加密方案。另见[RSA数学原理与加密方案的区别](https://kenji.blog/zh-cn/p/rsa-encryption-math-explained-for-beginners/)。
 
-本文将从基础开始全面解析，纯数学的发现——[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)，是如何被应用到现代实用的加密技术中，特别是在“素数测试”和“[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密”中的。本篇将是一份非常详细的技术指南，涵盖数学证明、加密与解密的机制，以及使用 C++ 和 Python 进行的具体算法实现。
+## 2. 同余式与逆元
 
----
+对于正整数 $n$，整数 $a,b$ 之差是 $n$ 的倍数，记作：
 
-## 2. 同余与模运算基础
+$$ a \equiv b \pmod n. $$
 
-要理解[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)，首先需要熟悉“模运算（同余式）”这一数学概念。模运算是一种关注除以某个固定数（称为模数）后所得“余数”的计算体系。因为类似于钟表表盘（12小时转一圈）的计算，所以也被称为“时钟算术”。
+例如 $17\equiv12\equiv2\pmod5$。同余关系与加法、减法、乘法以及非负整数次幂相容。但约去因子需要条件：
 
-当整数 $a$ 和 $b$ 除以正整数 $n$ 的余数相等时，在数学上可以这样描述：
+$$ ac\equiv bc\pmod n,\quad \gcd(c,n)=1
+\quad\Longrightarrow\quad a\equiv b\pmod n. $$
 
-$$
-a \equiv b \pmod n
-$$
+如果不互质，虽然 $2\cdot1\equiv2\cdot4\pmod6$，却有 $1\not\equiv4\pmod6$。当 $n>1$ 时，逆元 $c^{-1}$ 存在的充要条件是 $\gcd(c,n)=1$。扩展欧几里得算法求出 $cx+ny=1$，将 $x$ 对 $n$ 取模就得到逆元。
 
-这读作“在模 $n$ 下 $a$ 和 $b$ 同余”。例如，17 除以 5 的余数是 2，12 除以 5 的余数也是 2。因此，可以写成如下形式：
+## 3. 费马小定理及其证明
 
-$$
-17 \equiv 12 \pmod 5 \equiv 2 \pmod 5
-$$
+若 $p$ 为素数且 $p\nmid a$，则：
 
-在模运算中，常规的四则运算（加、减、乘）依然成立。
+$$ a^{p-1}\equiv1\pmod p. $$
 
-1. **加法**: 如果 $a \equiv b \pmod n$ 且 $c \equiv d \pmod n$，那么 $a + c \equiv b + d \pmod n$
-2. **减法**: 如果 $a \equiv b \pmod n$ 且 $c \equiv d \pmod n$，那么 $a - c \equiv b - d \pmod n$
-3. **乘法**: 如果 $a \equiv b \pmod n$ 且 $c \equiv d \pmod n$，那么 $a \times c \equiv b \times d \pmod n$
-4. **幂运算**: 如果 $a \equiv b \pmod n$，那么对于任意自然数 $k$，都有 $a^k \equiv b^k \pmod n$
+例如 $p=5$ 时，$2^4=16$、$3^4=81$ 和 $4^4=256$ 除以5的余数均为1。对任意整数 $a$ 都成立的形式是：
 
-但是，关于 **除法** 则需要特别注意。通常情况下，即使 $a \times c \equiv b \times c \pmod n$，也不能直接将两边同时除以 $c$ 得到 $a \equiv b \pmod n$。这只有在 $c$ 和 $n$ 互质（最大公约数为1）的情况下才成立。这个“模逆元”的概念，在后文所述的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密密钥生成中极其重要。
+$$ a^p\equiv a\pmod p. $$
 
----
+当 $p\nmid a$ 时，在前式两边乘以 $a$；当 $p\mid a$ 时，后式两边都与0同余。
 
-## 3. [费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的数学背景与证明
+证明前式时，将非零剩余 $1,2,\ldots,p-1$ 分别乘以 $a$。结果不可能为零。如果 $ia\equiv ja\pmod p$，约去 $a$ 得到 $i=j$，因此这些乘积的剩余只是原来非零剩余的一个排列。两边取乘积：
 
-掌握了模运算的基础后，让我们进入正题，来看[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)。
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-### 3.1 定理的定义
+由于 $(p-1)!$ 与 $p$ 互质，可以约去，定理得证。
 
-[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的表述如下：
+## 4. 欧拉定理
 
-> **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/zh-cn/p/fermats-little-theorem/))**
-> 设 $p$ 为一个素数，且 $a$ 是任意一个不是 $p$ 的倍数的整数（即 $a$ 和 $p$ 互质）。此时，以下同余式成立：
-> $$ a^{p-1} \equiv 1 \pmod p $$
+欧拉函数 $\varphi(n)$ 统计1到 $n$ 之间与 $n$ 互质的整数个数。对于素数 $p$，有 $\varphi(p)=p-1$；对于不同的素数 $p,q$，有：
 
-另外，去掉“$a$ 不是 $p$ 的倍数”这一条件，将其表述为对所有整数 $a$ 都成立的形式也很常见。这种情况下，两边同时乘以 $a$，变成如下形式：
+$$ \varphi(pq)=(p-1)(q-1). $$
 
-$$
-a^p \equiv a \pmod p
-$$
+当 $n>1$ 且 $\gcd(a,n)=1$ 时，[欧拉定理](https://dlmf.nist.gov/27.2#E8)给出：
 
-### 3.2 通过具体例子进行验证
+$$ a^{\varphi(n)}\equiv1\pmod n. $$
 
-定理是否真的成立呢？让我们用具体的数字来验证一下。
-假设素数 $p = 5$。则 $p-1 = 4$。选择一个不是 $p$ 的倍数的整数作为 $a$。
+对互质剩余的集合使用上一节的排列与乘积约去论证，即可证明。费马小定理是模数为素数的特例。不能将欧拉定理无条件应用于不互质的输入。
 
-- 当 $a = 2$ 时: $2^{5-1} = 2^4 = 16$。$16 \div 5 = 3$ 余 $1$。因此 $16 \equiv 1 \pmod 5$。（成立）
-- 当 $a = 3$ 时: $3^{5-1} = 3^4 = 81$。$81 \div 5 = 16$ 余 $1$。因此 $81 \equiv 1 \pmod 5$。（成立）
-- 当 $a = 4$ 时: $4^{5-1} = 4^4 = 256$。$256 \div 5 = 51$ 余 $1$。因此 $256 \equiv 1 \pmod 5$。（成立）
+## 5. 费马测试能说明什么
 
-就像这样，无论选择什么样的 $a$（只要不是5的倍数），其4次方除以5的余数一定为1。这看起来像魔法，但其实源于素数所具有的优美性质。
+对奇整数 $n>3$，从 $2\le a\le n-2$ 中选择底 $a$。若出现以下不一致，就能确定 $n$ 是合数：
 
-### 3.3 定理的数学证明
+$$ a^{n-1}\not\equiv1\pmod n. $$
 
-为什么会成立这样的定理呢？这里介绍一种使用剩余类集合的优雅证明方法。
-
-考虑集合 $S = \{1, 2, 3, \dots, p-1\}$。这些是除以 $p$ 后余数为 $1$ 到 $p-1$ 的整数的代表元。
-现在，考虑一个新集合 $T$，它是将 $S$ 中的每个元素都乘以与 $p$ 互质的整数 $a$ 得到的：
-$$ T = \{1a, 2a, 3a, \dots, (p-1)a\} $$
-
-考虑集合 $T$ 的各个元素除以 $p$ 的余数。令人惊讶的是，这些余数，虽然顺序可能发生改变，但它们组成的集合与原来的集合 $S$ 完全一致。
-这是因为：
-1. $T$ 的元素不可能成为 $p$ 的倍数（因为 $a$ 和原来的元素都不是 $p$ 的倍数）。
-2. 在 $T$ 中，不存在在模 $p$ 下同余的两个不同元素。如果 $ia \equiv ja \pmod p$ （其中 $i \neq j$），因为 $a$ 和 $p$ 互质，所以可以除以 $a$，得到 $i \equiv j \pmod p$，这导致矛盾。
-
-因此，$S$ 中所有元素的乘积，与 $T$ 中所有元素的乘积，在模 $p$ 下是同余的。
-
-$$
-(1a) \times (2a) \times \dots \times ((p-1)a) \equiv 1 \times 2 \times \dots \times (p-1) \pmod p
-$$
-
-整理左边，因为有 $p-1$ 个 $a$，所以：
-
-$$
-a^{p-1} \cdot (p-1)! \equiv (p-1)! \pmod p
-$$
-
-因为 $(p-1)!$ 与 $p$ 互质，所以两边可以同时除以 $(p-1)!$，最终导出以下定理：
-
-$$
-a^{p-1} \equiv 1 \pmod p
-$$
-
-这就是[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的证明。
-
----
-
-## 4. 欧拉函数与欧拉定理
-
-[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)是关于“素数 $p$”的定理，而将其推广到“任意正整数 $n$”的人，正是莱昂哈德·欧拉。要理解[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密，这种推广是必不可少的。
-
-### 4.1 欧拉函数 $\phi(n)$
-
-欧拉的totient函数（或称欧拉的 $\phi$ 函数） $\phi(n)$，是一个表示“从 $1$ 到 $n$ 的整数中，与 $n$ 互质的数的个数”的函数。
-
-- 对于素数 $p$，从 $1$ 到 $p-1$ 的所有整数都与 $p$ 互质，因此 $\phi(p) = p - 1$。
-- 对于两个不同的素数 $p, q$，它们的乘积 $n = p \times q$，$\phi(n)$ 可以通过一个非常简单的公式求出：
-  $$ \phi(p \times q) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-
-这个性质，构成了RSA加密中密钥生成的核心逻辑。
-
-### 4.2 欧拉定理
-
-欧拉对[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)进行了如下的推广。
-
-> **欧拉定理 (Euler's Theorem)**
-> 对于正整数 $n$ 以及与其互质的整数 $a$，以下等式成立：
-> $$ a^{\phi(n)} \equiv 1 \pmod n $$
-
-如果 $n$ 是素数 $p$，那么 $\phi(p) = p - 1$，此时就变成了[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)本身（$a^{p-1} \equiv 1 \pmod p$）。换句话说，[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)只是欧拉定理的一个特例。
-
----
-
-## 5. 寻找巨大的素数：费马素性测试
-
-在加密技术（如[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密或Diffie-Hellman密钥交换等）中，需要高速地找出长达数百位的“巨大素数”。然而，为了判断一个巨大的数 $N$ 是否为素数，如果尝试用 $2$ 到 $\sqrt{N}$ 之间的所有数去试除，这种“试除法”可能需要耗费宇宙寿命般的时间。
-
-于是，利用[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)逆向思维的“概率素性测试”—— **费马测试（[Fermat](https://kenji.blog/zh-cn/p/fermat/) Primality Test）** 登场了。
-
-### 5.1 什么是概率素性测试
-
-根据[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)，如果 $p$ 是素数，那么对于任意的 $a$ ($1 < a < p$)，$a^{p-1} \equiv 1 \pmod p$ 必定成立。
-取其逆否命题，可以说：“如果对于某个 $a$，$a^{p-1} \not\equiv 1 \pmod p$，那么 $p$ **绝对不是素数（是合数）** ”。
-
-因此，如果想判断 $N$ 是否为素数，可以随机选取几个 $a$，计算 $a^{N-1} \pmod N$ 看是否等于 $1$。如果只要有一次得出除 $1$ 以外的结果，就可以确定 $N$ 是合数。如果尝试多次结果都为 $1$，就可以以很高的概率判断 $N$ “可能是一个素数”。
-
-### 5.2 算法解说与流程图
-
-费马测试的算法如下：
+逆命题不成立。通过测试只说明所选底未违反这个必要条件。即便随机选取若干个底反复检查，也不能据此对所有合数保证统一且很小的误通过概率。
 
 ```mermaid
 flowchart TD
-    Start["开始"] --> Input["输入待判断的数 p 和测试次数 k"]
-    Input --> LoopStart["循环 i = 0 到 k-1"]
-    LoopStart --> Condition{"i < k ?"}
-    Condition -- Yes --> RandomA["在 1 < a < p-1 范围内随机选取整数 a"]
-    RandomA --> Calc["计算模幂 a^(p-1) mod p"]
-    Calc --> CheckPrime{"结果是 1 吗？"}
-    CheckPrime -- No --> ReturnComposite["p 是合数（确定）"]
-    CheckPrime -- Yes --> Increment["i 递增"]
-    Increment --> Condition
-    Condition -- No --> ReturnPrime["p 可能是素数（概率性）"]
-    ReturnComposite --> End["结束"]
-    ReturnPrime --> End
+    Input["输入整数 n 和非空的底列表"] --> Small{"n 小于 2？"}
+    Small -- Yes --> NotPrime["不是素数"]
+    Small -- No --> Tiny{"n 是 2 或 3？"}
+    Tiny -- Yes --> Known["这个小整数 n 是素数"]
+    Tiny -- No --> Even{"n 是偶数？"}
+    Even -- Yes --> Composite["合数"]
+    Even -- No --> Validate["检查所有底是否在 2 到 n-2 之间"]
+    Validate --> Next{"还有未检查的底？"}
+    Next -- Yes --> Power["计算下一个底的 n-1 次幂模 n"]
+    Power --> Check{"余数是 1？"}
+    Check -- No --> Composite
+    Check -- Yes --> Next
+    Next -- No --> Pass["通过所选底：不是素性证明"]
 ```
 
-### 5.3 卡迈克尔数（伪素数）的陷阱
+代码对空列表和底的范围错误抛出异常，Python版本还拒绝非整数类型。先处理小整数和偶数，仅对奇数 $n\ge5$ 检查底的范围。
 
-费马测试速度极快，但也存在一个重大的缺点。那就是存在这样一种恶魔般的数：虽然是合数，但对于所有的 $a$，都满足 $a^{N-1} \equiv 1 \pmod N$。这被称为 **卡迈克尔数 (Carmichael numbers)** 。最小的卡迈克尔数是 $561$ ($3 \times 11 \times 17$)。
+卡迈克尔数是对**所有与 $n$ 互质的底**都满足费马同余式的合数。最小的例子 $561=3\cdot11\cdot17$ 通过底2，却不通过底3。合数 $1105=5\cdot13\cdot17$ 通过底2和3。生成素数时，不能把这样的通过结果当作证明。
 
-因为卡迈克尔数的存在，单纯的费马测试无法做出绝对的素数判定。因此，在实际的加密系统（如OpenSSL等）中，标准使用的是改进了费马测试的 **米勒-拉宾（Miller-Rabin）素性测试** 。米勒-拉宾测试能够识破卡迈克尔数，从而将误判的概率实质上降至零。
+[Handbook of Applied Cryptography第4章](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)的Fermat与Miller–Rabin小节解释了这种区别。对于一个固定的奇合数，使用独立、均匀随机选取的底进行 $k$ 次Miller–Rabin检验，误通过概率可界定为不超过 $4^{-k}$。这与“通过后该数是合数的概率”并非同一个量，也不能直接用于任意固定底。[OpenSSL文档](https://docs.openssl.org/master/man3/BN_generate_prime/)同样说明通过检验的数只是可能素数，并介绍反复检验。更多内容见[素性测试文章](https://kenji.blog/zh-cn/p/cpp-fast-prime-testing-miller-rabin/)。
 
-### 5.4 高速模幂运算（反复平方法）
+## 6. 用C++和Python检查必要条件
 
-在素性测试算法中需要计算 $a^{N-1} \pmod N$，但当 $N$ 非常巨大时，$a^{N-1}$ 的位数将是天文数字，计算机的内存根本装不下。
-解决这个问题的方法是 **反复平方法（Exponentiation by Squaring）** 或模幂运算。通过在计算的每一步都取模（mod N），始终保持数值小于 $N$，从而实现极高速（计算复杂度为 $O(\log N)$）的计算。
+以下教学示例不使用随机数，而是检查指定的底。函数名中的 `passes` 表示通过，不代表证明了素性。原来的次数参数实现遇到零次或负次数会跳过检查，现在拒绝空的底列表。
 
----
+### C++17
 
-## 6. 素性测试与模幂的实现
-
-那么，让我们用C++和Python来实现费马素性测试和反复平方法吧。
-
-### 6.1 C++ 实现
-
-在C++中，标准的整数类型很容易溢出，因此处理巨大的数字通常需要高精度整数库（如GMP等），但这里为了理解算法，展示在64位整数（`unsigned long long`）范围内的实现。
+示例要求编译环境提供 `std::uint64_t`，不处理负数输入。不依赖 `__int128` 扩展，而用将余数保持在模数范围内的加法实现乘法。内部辅助函数 `add_mod` 要求两个加数均小于模数。当 `a >= m-b` 时以减法替代加法，否则和小于模数，不会超出64位上限。乘法与幂运算函数拒绝模数0，模数1的余数为0。
 
 ```cpp
+#include <cstdint>
 #include <iostream>
-#include <random>
+#include <stdexcept>
+#include <vector>
 
-using namespace std;
+using u64 = std::uint64_t;
 
-// 高速模幂运算 (a^b mod m) - 反复平方法
-unsigned long long power_mod(unsigned long long a, unsigned long long b, unsigned long long m) {
-    unsigned long long result = 1;
-    a = a % m;
-    while (b > 0) {
-        // 当 b 的最低位为 1 时，结果乘以 a
-        if (b % 2 == 1) {
-            result = (__int128)result * a % m; // 为防止溢出扩展为128位
-        }
-        // a 自身平方
-        a = (__int128)a * a % m;
-        // b 右移（减半）
-        b /= 2;
+// Internal helper: m > 0 and a, b < m.
+u64 add_mod(u64 a, u64 b, u64 m) {
+    return a >= m - b ? a - (m - b) : a + b;
+}
+
+u64 mul_mod(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    a %= m;
+    u64 result = 0;
+    while (b != 0) {
+        if (b & 1) result = add_mod(result, a, m);
+        b >>= 1;
+        if (b != 0) a = add_mod(a, a, m);
     }
     return result;
 }
 
-// 费马素性测试
-bool fermat_is_prime(unsigned long long p, int iterations = 5) {
-    if (p <= 1) return false;
-    if (p <= 3) return true;
-    if (p % 2 == 0) return false;
-
-    random_device rd;
-    mt19937_64 gen(rd());
-    uniform_int_distribution<unsigned long long> dis(2, p - 2);
-
-    for (int i = 0; i < iterations; ++i) {
-        unsigned long long a = dis(gen);
-        // 如果 a^(p-1) mod p 不等于 1，则是合数
-        if (power_mod(a, p - 1, p) != 1) {
-            return false;
-        }
+u64 power_mod(u64 a, u64 exponent, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
+    a %= m;
+    while (exponent != 0) {
+        if (exponent & 1) result = mul_mod(result, a, m);
+        exponent >>= 1;
+        if (exponent != 0) a = mul_mod(a, a, m);
     }
-    return true; // 可能是素数
+    return result;
+}
+
+bool fermat_passes(u64 n, const std::vector<u64>& bases) {
+    if (bases.empty()) throw std::invalid_argument("Choose at least one base");
+    if (n < 2) return false;
+    if (n <= 3) return true;
+    if (n % 2 == 0) return false;
+    for (u64 a : bases) {
+        if (a < 2 || a > n - 2) throw std::invalid_argument("Base outside range");
+    }
+    for (u64 a : bases) {
+        if (power_mod(a, n - 1, n) != 1) return false;
+    }
+    return true;
 }
 
 int main() {
-    unsigned long long num = 1000000007; // 已知的素数
-    if (fermat_is_prime(num, 10)) {
-        cout << num << " is probably prime." << endl;
-    } else {
-        cout << num << " is composite." << endl;
-    }
-    return 0;
+    std::cout << "1000000007 passes bases 2,3: " << fermat_passes(1000000007, {2, 3}) << '\n';
+    std::cout << "1105 passes bases 2,3: " << fermat_passes(1105, {2, 3}) << '\n';
+    std::cout << "1105 passes base 5: " << fermat_passes(1105, {5}) << '\n';
 }
 ```
 
-### 6.2 Python 实现
+例如用 `g++ -std=c++17 fermat.cpp -o fermat` 编译。已在WSL的GCC13.3上验证。布尔输出依次为 `1, 1, 0`。合数1105通过两个底本身就展示了局限。
 
-Python的内置整数类型支持高精度整数，所以完全不需要担心溢出问题。此外，Python的内置函数 `pow(a, b, m)` 内部就是使用了反复平方法，因此速度非常快。
+### Python
+
+使用Python3整数与三参数 `pow`。只接受内置 `int` 类型，拒绝 `bool` 等类型，底列表不能为空。候选数和底与C++示例相同。
 
 ```python
-import random
-
-def fermat_is_prime(p, iterations=5):
-    """
-    使用费马素性测试进行概率素数判断
-    """
-    if p <= 1:
+def fermat_passes(n, bases):
+    if type(n) is not int:
+        raise TypeError("n must be an integer")
+    bases = tuple(bases)
+    if not bases:
+        raise ValueError("Choose at least one base")
+    if any(type(a) is not int for a in bases):
+        raise TypeError("Bases must be integers")
+    if n < 2:
         return False
-    if p <= 3:
+    if n <= 3:
         return True
-    if p % 2 == 0:
+    if n % 2 == 0:
         return False
+    if any(a < 2 or a > n - 2 for a in bases):
+        raise ValueError("Base outside range")
+    return all(pow(a, n - 1, n) == 1 for a in bases)
 
-    for _ in range(iterations):
-        # 在 2 到 p-2 之间随机选取数字 a
-        a = random.randint(2, p - 2)
-        # 计算 a^(p-1) mod p。内置的 pow 函数速度很快。
-        if pow(a, p - 1, p) != 1:
-            return False # 确定是合数
 
-    return True # 可能是素数
-
-# 测试
-number_to_test = 104729
-if fermat_is_prime(number_to_test, 10):
-    print(f"{number_to_test} 可能是素数。")
-else:
-    print(f"{number_to_test} 是合数。")
+if __name__ == "__main__":
+    print("1000000007 passes bases 2,3:", fermat_passes(1000000007, [2, 3]))
+    print("1105 passes bases 2,3:", fermat_passes(1105, [2, 3]))
+    print("1105 passes base 5:", fermat_passes(1105, [5]))
 ```
 
----
+已用Python3.12验证，结果依次为 `True, True, False`。原来的示例104729仍作为素数通过。Python整数可以避免固定宽度溢出，但时间和内存并非无限。
 
-## 7. 在[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密中的应用：费马与欧拉的结晶
+对于指数 $b>0$，平方求幂法进行 $O(\log b)$ 次模乘，次数与指数的位数成比例。这不是位复杂度或实测运行时间。C++示例中的每次模乘，通过次数与乘数位数成比例的模加实现。不能断言所有Python版本的 `pow` 内部算法完全相同。
 
-[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（以及欧拉定理）最伟大的应用领域，就是1977年由Rivest、Shamir和Adleman三人开发的 **[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密** 。
-RSA加密是一种革命性的“公钥加密”系统，它实现了一种机制：用于加密的密钥（公钥）对全世界公开，而用于解密的密钥（私钥）只有接收者本人知晓。
+## 7. RSA为什么能正确解密
 
-这种非对称性，是基于“对巨大的合数进行质因数分解极其困难”的计算复杂性安全保证的。
+选取不同的素数 $p,q$，令 $N=pq$。在这个教学构造中，选择满足 $1<e<\varphi(N)$ 和 $\gcd(e,\varphi(N))=1$ 的公开指数，并令秘密指数 $d$ 为其逆元。
 
-### 7.1 RSA加密机制（密钥生成、加密、解密）
+$$ ed\equiv1\pmod{\varphi(N)},\qquad
+\varphi(N)=(p-1)(q-1). $$
 
-让我们通过Mermaid的时序图来了解RSA加密的整体通信流程。
+公钥是 $(N,e)$，私钥的简化表示是 $(N,d)$。实际私钥还可能包含CRT所用的素因数等信息，它们同样必须保密。分解模数就能计算秘密指数，但这并不意味着RSA求逆问题与整数分解问题已被证明在一般情形下等价。
+
+对于代表元 $0\le M<N$：
+
+$$ C=M^e\bmod N,\qquad M'=C^d\bmod N. $$
+
+下图只表示对整数代表元进行的**裸RSA运算**。这是省略了实际消息编码与认证环节的数学示意图。
 
 ```mermaid
 sequenceDiagram
-    participant Alice["爱丽丝 (接收者)"]
-    participant Bob["鲍勃 (发送者)"]
-    
-    Alice->>Alice: "生成巨大的素数 p, q"
-    Alice->>Alice: "计算 N = p * q, φ(N) = (p-1)(q-1)"
-    Alice->>Alice: "计算公钥 e 和私钥 d (e*d ≡ 1 mod φ(N))"
-    Alice->>Bob: "发送公钥 (N, e)"
-    Note over Bob: "准备明文 M (M < N)"
-    Bob->>Bob: "计算密文 C = M^e mod N"
-    Bob->>Alice: "发送密文 C"
-    Alice->>Alice: "计算明文 M = C^d mod N 进行解密"
+    participant Alice as 爱丽丝
+    participant Bob as 鲍勃
+    Note over Alice,Bob: 裸RSA教学示例
+    Alice->>Alice: 选取不同素数 p,q 和满足条件的 e,d
+    Alice->>Bob: 提供公钥 (N,e)
+    Bob->>Bob: 准备0到N-1之间的代表元 M
+    Bob->>Bob: 计算 C = M^e mod N
+    Bob->>Alice: 提供 C
+    Alice->>Alice: 计算 M' = C^d mod N
 ```
 
-以下将解说数学上的详细步骤。
+首先，若 $\gcd(M,N)=1$，则可对某个非负整数 $t$ 写成 $ed=1+t\varphi(N)$。欧拉定理给出：
 
-#### 步骤1：密钥生成（接收者爱丽丝的操作）
+$$ M^{ed}=M(M^{\varphi(N)})^t\equiv M\pmod N. $$
 
-1. 随机生成两个巨大的素数 $p$ 和 $q$（这里会用到前面提到的素性测试算法）。
-2. 计算它们的乘积 $N = p \times q$。这个 $N$ 是公开的。
-3. 利用欧拉函数，计算 $\phi(N) = (p-1)(q-1)$。
-4. 选择一个与 $\phi(N)$ 互质的整数 $e$ （公开指数）（通常使用 $e = 65537$）。
-5. 计算 $e$ 的模逆元 $d$ （私有指数）。即，找到满足以下条件的 $d$：
-   $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   这个计算需要用到 **扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)** 。
+也不能排除不互质的代表元。在模 $p$ 下，若 $p\mid M$，则 $M^{ed}$ 与 $M$ 都为0；否则，由费马小定理及 $p-1\mid ed-1$ 可得同余。在模 $q$ 下同理。由于 $p,q$ 互质，中国剩余定理给出：
 
-至此， **公钥为 $(N, e)$** ， **私钥为 $(N, d)$** 。（$p, q, \phi(N)$ 应立即销毁或严格保密）。
+$$ M^{ed}\equiv M\pmod p,\quad
+M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod N. $$
 
-#### 步骤2：加密（发送者鲍勃的操作）
+因此包括0以及 $p,q$ 的倍数在内的全部代表元都能恢复。这是正确性证明，不是机密性证明。
 
-假设鲍勃想给爱丽丝发送消息 $M$（$M$ 是字符数字化后的数值，且 $0 \le M < N$）。
-鲍勃使用爱丽丝的公钥 $(N, e)$，进行如下计算生成密文 $C$：
+## 8. 可复现的RSA原语教学示例
 
-$$
-C \equiv M^e \pmod N
-$$
+使用已知的固定素数61和53以及指数17，通过扩展欧几里得算法求逆元。不随机生成素数，也不逐字符转换字符串。原来只检查底2和3的“素数生成器”会接受1105，因而可能生成无法正确解密的密钥。讨论实际加密要求时，也不能忽略指数1与代表元超范围的问题。
 
-然后通过网络将这个 $C$ 发送给爱丽丝。
-
-#### 步骤3：解密（接收者爱丽丝的操作）
-
-收到密文 $C$ 的爱丽丝，使用只有自己知道的私钥 $d$ 进行如下计算：
-
-$$
-M' \equiv C^d \pmod N
-$$
-
-令人惊奇的是，这个计算结果 $M'$ 与原始消息 $M$ 完全一致。
-
-### 7.2 为什么能够解密？（数学证明）
-
-在这里，[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（欧拉定理）发挥了真正的价值。为什么 $C^d \pmod N$ 能够还原成 $M$ 呢？
-
-展开解密的公式。
-因为 $C \equiv M^e \pmod N$，所以：
-$$ C^d \equiv (M^e)^d \equiv M^{ed} \pmod N $$
-
-在密钥生成步骤中，我们选择 $d$ 使得 $e \cdot d \equiv 1 \pmod{\phi(N)}$。这意味着存在一个整数 $k$，可以写成如下形式：
-$$ e \cdot d = 1 + k \cdot \phi(N) $$
-
-将此代入上面的公式：
-$$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
-
-此时， **欧拉定理** ($M^{\phi(N)} \equiv 1 \pmod N$) 就登场了。（※严格来说，这要求 $M$ 和 $N$ 互质，但在[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)中，$M$ 和 $N$ 不互质的概率是天文数字级别的低，而且利用中国剩余定理可以证明即使不互质等式也成立）。
-
-应用欧拉定理，由于 $M^{\phi(N)} \equiv 1$，因此：
-$$ M \cdot (1)^k \equiv M \pmod N $$
-
-漂亮地还原了 $M$！几百年前费马和欧拉发现的数字规律，完美地保证了现代数字通信的机密性。
-
----
-
-## 8. RSA加密的玩具实现 (Python)
-
-仅凭理论可能难以有直观感受，所以我们用Python来实际实现一下RSA加密的密钥生成、加密、解密的过程。这是一个用于教学的“玩具实现（Toy Implementation）”，但所使用的数学原理与实际完全相同。
-
-求模逆元 $d$ 的“扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)”也会包含在实现中。
+下面的 `rsa_primitive` 只检查指数、模数和代表元在算术上的输入范围，不会分解任意传入的模数，也不会验证任意RSA密钥的有效性。固定教学密钥另行满足密钥条件。[RFC8017第5、7节](https://www.rfc-editor.org/rfc/rfc8017.html)也区分了原语和加密方案。
 
 ```python
-import random
-
-# 求最大公约数
-def gcd(a, b):
-    while b != 0:
-        a, b = b, a % b
-    return a
-
-# 扩展欧几里得算法 (求 ax + by = gcd(a,b) 中的 x, y)
-# 用于寻找 e*d ≡ 1 (mod φ(N)) 中的 d
 def extended_gcd(a, b):
-    if a == 0:
-        return (b, 0, 1)
-    else:
-        g, y, x = extended_gcd(b % a, a)
-        return (g, x - (b // a) * y, y)
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r:
+        q = old_r // r
+        old_r, r = r, old_r - q * r
+        old_s, s = s, old_s - q * s
+        old_t, t = t, old_t - q * t
+    return old_r, old_s, old_t
 
-def mod_inverse(e, phi):
-    g, x, y = extended_gcd(e, phi)
+
+def mod_inverse(a, modulus):
+    if type(a) is not int or type(modulus) is not int:
+        raise TypeError("Arguments must be integers")
+    if modulus <= 1:
+        raise ValueError("Modulus must exceed one")
+    g, x, _ = extended_gcd(a % modulus, modulus)
     if g != 1:
-        raise Exception('逆元不存在')
-    else:
-        return x % phi
+        raise ValueError("Inverse does not exist")
+    return x % modulus
 
-# 素数生成函数（简易版：生成较小的素数）
-def generate_prime(bits):
-    while True:
-        p = random.getrandbits(bits)
-        # 用简易判断替代前面提到的费马测试
-        if p > 1 and pow(2, p-1, p) == 1 and pow(3, p-1, p) == 1:
-            return p
 
-# RSA 密钥生成
-def generate_keypair(bits=16):
-    p = generate_prime(bits)
-    q = generate_prime(bits)
-    # 防止 p 和 q 相同
-    while p == q:
-        q = generate_prime(bits)
+def rsa_primitive(value, exponent, modulus):
+    if any(type(x) is not int for x in (value, exponent, modulus)):
+        raise TypeError("Arguments must be integers")
+    if exponent <= 0 or modulus <= 1 or not 0 <= value < modulus:
+        raise ValueError("Invalid exponent, modulus or representative")
+    return pow(value, exponent, modulus)
 
+
+def rsa_primitive_demo():
+    p, q, e = 61, 53, 17  # Fixed public teaching constants, not secret keys.
     n = p * q
     phi = (p - 1) * (q - 1)
-
-    # e 通常使用 65537 等素数，但这里随机选择
-    e = random.randrange(1, phi)
-    g = gcd(e, phi)
-    while g != 1:
-        e = random.randrange(1, phi)
-        g = gcd(e, phi)
-
-    # 计算私钥 d
     d = mod_inverse(e, phi)
-    
-    # 公钥 (e, n), 私钥 (d, n)
-    return ((e, n), (d, n))
+    print("Public key (n, e):", (n, e))
+    print("Private key (n, d):", (n, d))
+    m = 65
+    c = rsa_primitive(m, e, n)
+    recovered = rsa_primitive(c, d, n)
+    print(f"{m} -> {c} -> {recovered}")
+    for representative in range(n):
+        cipher = rsa_primitive(representative, e, n)
+        if rsa_primitive(cipher, d, n) != representative:
+            raise ArithmeticError("Round-trip failed")
+    print("All 3233 representatives round-trip.")
 
-def encrypt(pk, plaintext):
-    e, n = pk
-    # 计算 plaintext^e mod n
-    cipher = [pow(ord(char), e, n) for char in plaintext]
-    return cipher
 
-def decrypt(sk, ciphertext):
-    d, n = sk
-    # 计算 cipher^d mod n，并转换回字符
-    plain = [chr(pow(char, d, n)) for char in ciphertext]
-    return ''.join(plain)
-
-# 运行示例
-if __name__ == '__main__':
-    print("--- RSA加密 玩具实现 ---")
-    public_key, private_key = generate_keypair(bits=12) # 使用12位素数
-    
-    print(f"公钥 (e, n): {public_key}")
-    print(f"私钥 (d, n): {private_key}")
-
-    message = "Hello Math!"
-    print(f"\n原始消息: {message}")
-
-    # 加密
-    encrypted_msg = encrypt(public_key, message)
-    print(f"密文: {encrypted_msg}")
-
-    # 解密
-    decrypted_msg = decrypt(private_key, encrypted_msg)
-    print(f"解密后的消息: {decrypted_msg}")
+if __name__ == "__main__":
+    rsa_primitive_demo()
 ```
 
-运行这段代码，你会看到字符数组被转换成陌生的数字数组（密文），然后通过私钥又完美地恢复成了原始字符串。
+运行后显示 $(N,e)=(3233,17)$、$(N,d)=(3233,2753)$ 及 `65 -> 2790 -> 65`，并检查全部3233个代表元的往返。所显示的私钥也只是固定、公开的教学数值。这个检验不保证一般RSA密钥的安全性。
 
----
+## 9. 与实际密码系统的边界及参考资料
 
-## 9. 结语：数学之美与实用性的交汇点
+裸RSA是确定性的，不足以构成安全的加密方案。例如，逐字符的密文可以用公钥进行字典匹配。实际应用应使用经过审查的库、RSAES-OAEP等适合用途的方案、恰当的参数和安全随机数。[Python random](https://docs.python.org/3/library/random.html)的伪随机数不能用于密码密钥生成。RSASSA-PSS是签名方案，与加密是不同的用途。
 
-17世纪[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)发现这个“小定理”时，没有人觉得这会有什么用处。费马本人也是出于纯粹的数学探求欲才去研究数论的。
+应区分这些阶段：定理保证同余式，素性测试检查条件，有效密钥下的RSA运算恢复代表元，实际方案则增加编码等安全要求。不能说特定通信服务或所有现代密码技术都只依赖费马小定理。
 
-然而，在大约300年后的20世纪70年代，计算机网络黎明期，作为确立安全通信协议不可或缺的加密技术，费马定理迎来了戏剧性的复苏。基于[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的素性测试技术和基于欧拉定理的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密，字面意义上支撑了现代的互联网基础设施。
-
-我们每天不经意间发送的微信消息、在淘宝上的购物，这一切都在 $a^{p-1} \equiv 1 \pmod p$ 这个简单而优美的数学公式之上舞动。[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)告诉我们，无论数学多么抽象，总有一天它必然会为人类所用。
-
-在学习编程和密码学理论时，理解其基础的数学结构，将成为深入理解那些作为黑盒提供的库的行为、并设计出更加安全的系统的强大武器。
-
-
+参考的一手资料包括[DLMF的欧拉定理](https://dlmf.nist.gov/27.2#E8)、[HAC第4章](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)、[RSA规范RFC8017](https://www.rfc-editor.org/rfc/rfc8017.html)和[GCC的128位整数说明](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)。最后一份资料用于核对原实现中扩展整数类型的限制。

@@ -2655,6 +2655,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-022.json",
       "evidenceHash": "0e8731cac8eaa888334f298e89c7b6456080cbf15bb31e6c6a35db8803cd9c10"
+    },
+    "post/フェルマーの小定理と暗号化/index.zh-cn.md": {
+      "source": "post/フェルマーの小定理と暗号化/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6893ab05e8f2d866b4069c4f6ff11ef57e8c4e6b3f56c58c72fc7605ca663904",
+      "translationHash": "88c8271471a1ba74b2f33cabf626565018435c9b41976d9c43082863c6ebffb7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-022.json",
+      "evidenceHash": "52c73a8e7743e04d13f34cca79c9c0dfb91ab4c6c6e1b988104bc44e6a34ae67"
     }
   }
 }
