@@ -1,0 +1,272 @@
+{
+  "version": 1,
+  "date": "2026-10-29",
+  "versions": {
+    "ar": {
+      "path": "content/post/Rustで素数を列挙する/index.ar.md",
+      "sha256": "12b4d7a611914c682e5d441ea23c1e73384dd7a27d312299438e95151e350e3f",
+      "slug": "Rustでأعداد أوليةを列挙する",
+      "canonical": "https://kenji.blog/ar/p/rust%E3%81%A7%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A3%D9%88%D9%84%D9%8A%D8%A9%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "de": {
+      "path": "content/post/Rustで素数を列挙する/index.de.md",
+      "sha256": "25b6c9eac834b31e7bca164f136720abf21c5a6fb794bbc47799b2e9bdd687e2",
+      "slug": "RustでPrimzahlを列挙する",
+      "canonical": "https://kenji.blog/de/p/rust%E3%81%A7primzahl%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "en": {
+      "path": "content/post/Rustで素数を列挙する/index.en.md",
+      "sha256": "9a4c96cb7c027d114c8cd7d71a5225687ed6e3d2562ecd7f9d2a1e9ca8c411a6",
+      "slug": "RustでPrime Numberを列挙する",
+      "canonical": "https://kenji.blog/en/p/rust%E3%81%A7prime-number%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "es": {
+      "path": "content/post/Rustで素数を列挙する/index.es.md",
+      "sha256": "7ac7ba2a803634203f43eb3d184bc46f9763249763572b1319cfdaf020ad24d3",
+      "slug": "RustでNúmero primoを列挙する",
+      "canonical": "https://kenji.blog/es/p/rust%E3%81%A7n%C3%BAmero-primo%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "fr": {
+      "path": "content/post/Rustで素数を列挙する/index.fr.md",
+      "sha256": "e898e4598969cb9f702770fe050709fe24f929703123fb0bb75adeb92f2dd1b0",
+      "slug": "RustでNombre premierを列挙する",
+      "canonical": "https://kenji.blog/fr/p/rust%E3%81%A7nombre-premier%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "hi": {
+      "path": "content/post/Rustで素数を列挙する/index.hi.md",
+      "sha256": "830c184c275f3fa8cf611e8304956a1f87852888003fafdfafc0a9930561ea07",
+      "slug": "Rustでअभाज्य संख्याを列挙する",
+      "canonical": "https://kenji.blog/hi/p/rust%E3%81%A7%E0%A4%85%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF-%E0%A4%B8%E0%A4%82%E0%A4%96%E0%A5%8D%E0%A4%AF%E0%A4%BE%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "id": {
+      "path": "content/post/Rustで素数を列挙する/index.id.md",
+      "sha256": "da372d85080fb41d0ffe389bdd9bdea7043eea80ef419fc0d648831910fc6216",
+      "slug": "RustでBilangan Primaを列挙する",
+      "canonical": "https://kenji.blog/id/p/rust%E3%81%A7bilangan-prima%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "ko": {
+      "path": "content/post/Rustで素数を列挙する/index.ko.md",
+      "sha256": "fe41496082120802d16d818f2c9b7e0a4b704c68f9a98d9a56d3920a8acad4bb",
+      "slug": "Rustで소수を列挙する",
+      "canonical": "https://kenji.blog/ko/p/rust%E3%81%A7%EC%86%8C%EC%88%98%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "ja": {
+      "path": "content/post/Rustで素数を列挙する/index.md",
+      "sha256": "82e690f48a1aa46a2e31057adfa7c7ccb9f7b3893ceca3e50af38ebf13978c49",
+      "slug": "Rustで素数を列挙する",
+      "canonical": "https://kenji.blog/p/rust%E3%81%A7%E7%B4%A0%E6%95%B0%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "pt": {
+      "path": "content/post/Rustで素数を列挙する/index.pt.md",
+      "sha256": "469bd714ee324ebe2abaa3853a4e13ccd2c569542cf37d7ec3733288196e1e71",
+      "slug": "RustでNúmero Primoを列挙する",
+      "canonical": "https://kenji.blog/pt/p/rust%E3%81%A7n%C3%BAmero-primo%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "ru": {
+      "path": "content/post/Rustで素数を列挙する/index.ru.md",
+      "sha256": "efa3633b577659691b8133b2ab5d1524c2dc9764cd579472861dba3eee8d9146",
+      "slug": "RustでПростое числоを列挙する",
+      "canonical": "https://kenji.blog/ru/p/rust%E3%81%A7%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5-%D1%87%D0%B8%D1%81%D0%BB%D0%BE%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "zh-cn": {
+      "path": "content/post/Rustで素数を列挙する/index.zh-cn.md",
+      "sha256": "593f4335572fcbce70b3553f11bf88d1877d309d0e15495529316db22651f119",
+      "slug": "Rustで素数を列挙する",
+      "canonical": "https://kenji.blog/zh-cn/p/rust%E3%81%A7%E7%B4%A0%E6%95%B0%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    },
+    "zh-tw": {
+      "path": "content/post/Rustで素数を列挙する/index.zh-tw.md",
+      "sha256": "8d6d289f2e8bd93d61a706781bf136c487a0f1609eb02ee12867e5132e3b1455",
+      "slug": "Rustで質數を列挙する",
+      "canonical": "https://kenji.blog/zh-tw/p/rust%E3%81%A7%E8%B3%AA%E6%95%B8%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "datePublished": [
+        "2022-09-09T07:08:49+09:00"
+      ]
+    }
+  },
+  "originalAll13RustBlocksExact": true,
+  "originalCodeExecutions": [
+    {
+      "limit": 1000,
+      "originalUnmodified": true,
+      "exitCode": 0,
+      "count": 168,
+      "first": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29
+      ],
+      "last": [
+        937,
+        941,
+        947,
+        953,
+        967,
+        971,
+        977,
+        983,
+        991,
+        997
+      ],
+      "matchesIndependentTrialDivision": true,
+      "outOfRangeValues": [],
+      "stderr": ""
+    },
+    {
+      "limit": 0,
+      "originalUnmodified": false,
+      "exitCode": 0,
+      "count": 2,
+      "first": [
+        2,
+        3
+      ],
+      "last": [
+        2,
+        3
+      ],
+      "matchesIndependentTrialDivision": false,
+      "outOfRangeValues": [
+        2,
+        3
+      ],
+      "stderr": ""
+    },
+    {
+      "limit": 1,
+      "originalUnmodified": false,
+      "exitCode": 0,
+      "count": 2,
+      "first": [
+        2,
+        3
+      ],
+      "last": [
+        2,
+        3
+      ],
+      "matchesIndependentTrialDivision": false,
+      "outOfRangeValues": [
+        2,
+        3
+      ],
+      "stderr": ""
+    },
+    {
+      "limit": 2,
+      "originalUnmodified": false,
+      "exitCode": 0,
+      "count": 2,
+      "first": [
+        2,
+        3
+      ],
+      "last": [
+        2,
+        3
+      ],
+      "matchesIndependentTrialDivision": false,
+      "outOfRangeValues": [
+        3
+      ],
+      "stderr": ""
+    },
+    {
+      "limit": 3,
+      "originalUnmodified": false,
+      "exitCode": 0,
+      "count": 2,
+      "first": [
+        2,
+        3
+      ],
+      "last": [
+        2,
+        3
+      ],
+      "matchesIndependentTrialDivision": true,
+      "outOfRangeValues": [],
+      "stderr": ""
+    },
+    {
+      "limit": 10,
+      "originalUnmodified": false,
+      "exitCode": 0,
+      "count": 4,
+      "first": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "last": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "matchesIndependentTrialDivision": true,
+      "outOfRangeValues": [],
+      "stderr": ""
+    }
+  ],
+  "compiler": "rustc 1.90.0 (1159e78c4 2025-09-14)\nbinary: rustc\ncommit-hash: 1159e78c4747b02ef996e55082b704c09b970588\ncommit-date: 2025-09-14\nhost: x86_64-pc-windows-msvc\nrelease: 1.90.0\nLLVM version: 20.1.8\n",
+  "findings": [
+    "All13originalmetadata/body/code fully read before editing.",
+    "Original fixed1000 program correctly prints168primes2..997; its identical code was executed once,not falsely claimed as13separate runs.",
+    "Changing max to0/1/2prints2and3outside bound; lower-bound tests must distinguish adaptation from original fixed1000 behavior.",
+    "Source performs trial division with stored primes,not the sieve,and returns an enumerated list rather than only a count.",
+    "No need to trial-divide by stored primes above square root; original does so,but that is inefficiency,not incorrect1000classification.",
+    "Old termination checks bound after processing and increment; robust reusable function should check before processing and guard final increment.",
+    "Original Rust link points to WebAssembly article; source article itself is not a Rust tutorial dependency review.",
+    "Actual hero images/img.webp exists; preserve it and original distinct public URLs/date."
+  ],
+  "limitations": [
+    "No original huge upper-bound run,signed-overflow reproduction or timing benchmark.",
+    "Same old code in13versions tested once; language reading and executable testing scopes distinguished.",
+    "No human/native-speaker,visual-browser,cryptographic or all-usize certification."
+  ]
+}

@@ -2525,6 +2525,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-020.json",
       "evidenceHash": "b0d4cc1d0d888f544a084b04c313921707c64dc80b5b2398535eef46f03f6607"
+    },
+    "post/Rustで素数を列挙する/index.en.md": {
+      "source": "post/Rustで素数を列挙する/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a82d199b8f195dbbc6cba8b28180142d56ff3ff02db3abfb8cc1bf939b3c49fa",
+      "translationHash": "96c9062dfd14c2b496d707deb9c180dcdbed9615c6cbd1684f529d9327e35009",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-021.json",
+      "evidenceHash": "0f9bd9eec72c2c48521795f855c8ad24c43e8096bdc83a5f70a4e922c7f99da7"
     }
   }
 }
