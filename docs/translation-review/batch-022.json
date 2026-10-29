@@ -927,12 +927,13 @@
     "reviewedTranslationsTotal": 276,
     "unreviewedTranslations": 12756,
     "humanReviews": 0,
-    "publicationPending": true,
+    "publicationPending": false,
     "limitations": [
       "AI review,not human/native-language certification.",
       "Finite C++/Python cases,not exhaustive uint64 proof,production cryptographic audit or performance/constant-time assessment.",
       "HTML/source checked;no visualbrowser,RTL,KaTeX or Mermaid runtime-rendering certification."
-    ]
+    ],
+    "publicationProof": "docs/translation-review/publication-022.json"
   },
   "publicationDispatch": {
     "date": "2026-10-29",
@@ -949,5 +950,27 @@
     "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_276.py",
     "publicationPending": true,
     "scope": "Ordinary non-force push after fetch confirmed no incoming commits. Matching run/head and live build job observed via GitHubAPI. Prepared299URLprobe has not run; neither deployment success nor publication completion is claimed."
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-10-29T23:45:32.504147+09:00",
+      "ciRun": 40889391311,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40889391311",
+      "deployedCommit": "64979468216256b30d71b03c83f718c52de97172",
+      "ciConclusion": "success",
+      "buildConclusion": "success",
+      "deployConclusion": "success",
+      "proof": "docs/translation-review/publication-022.json",
+      "pages": 299,
+      "passed": 299,
+      "reviewedTranslationsPublished": 276,
+      "japaneseSources": 23,
+      "mathVersions": 104,
+      "texExpressions": 7205,
+      "fermatImplementationVersions": 13,
+      "fermatExecutableBlocksExact": 39,
+      "fermatDiagramSourcesExact": 26,
+      "scope": "Batches001-022 reviewed versions only. All299HTTP/content/canonical/lang/exact14hreflang/13sidebar targets;104versions7205decodedTeX;Fermat13versions39C++/Pythonblocks,26diagrams,primary/localizedrefs,originaldate;prior13Ccode/13storedprimeRust/26sieveRustblocks,imagealt/credit/liveGIFbytes. Firstpass299/299,no retries. Not full-site/native-language/visual/security certification."
+    }
+  ]
 }
