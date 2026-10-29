@@ -59,7 +59,8 @@ int main(int argc,char **argv) {
         code=codes[0];assert normalize(code)==normalize(source_code)
         assert len(re.findall(r'^## ',text,re.M))==4
         assert text.count('\ndate: ')==1 and 'date: 2024-08-24T09:38:10+09:00' in text
-        assert 'lastmod: 2026-10-28' in text
+        lastmod=re.search(r'^lastmod: (.*)$',text,re.M).group(1)
+        assert lastmod in ('2026-10-28','2026-10-29')
         assert 'image: "img.webp"' in text and (FOLDER/'img.webp').exists()
         slug=original['versions'][lang]['slug'];assert 'slug: "'+slug+'"' in text
         canonical=original['versions'][lang]['canonical']
@@ -67,7 +68,7 @@ int main(int argc,char **argv) {
         html=(a.site/unquote(urlsplit(canonical).path).lstrip('/')/'index.html').read_text(encoding='utf-8')
         assert re.search(r'<link rel=canonical href=["\']?'+re.escape(canonical),html)
         assert '"datePublished":"2024-08-24T09:38:10+09:00"' in html
-        assert '"dateModified":"2026-10-28' in html
+        assert '"dateModified":"'+lastmod in html
         assert '6k - 1' in html and '127' in html and 'strtol' in html
         assert 'https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf' in text
         target='https://kenji.blog/'+('' if lang=='ja' else lang+'/')+'p/cpp-fast-prime-testing-miller-rabin/'

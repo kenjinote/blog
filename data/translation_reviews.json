@@ -2375,6 +2375,36 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-019.json",
       "evidenceHash": "7be7a106887c267777b933783197f79d826a7530b9d3d9be91f1031607de319e"
+    },
+    "post/素数を生成するC言語コード/index.hi.md": {
+      "source": "post/素数を生成するC言語コード/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "translationHash": "d0eed68184651ace07d470e3d212e903fee4434c53bd897ac25d09b17d08c00b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-019.json",
+      "evidenceHash": "512bb3ea80ba4fd40346792c5e6cd8f79cdb40319e8037b7d66c159c4589d626"
+    },
+    "post/素数を生成するC言語コード/index.ru.md": {
+      "source": "post/素数を生成するC言語コード/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "translationHash": "8640d99033401e83ea0d4480c9900a0be1e2bc17403587cb02c902eede32b7b0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-019.json",
+      "evidenceHash": "c584ca4a3a6805e7c29dd5f5f2ac34102e16014b618aaf2279f58dbd668370df"
+    },
+    "post/素数を生成するC言語コード/index.ar.md": {
+      "source": "post/素数を生成するC言語コード/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "translationHash": "441ec306823aa2ceb9027f1e1dc64a35d7755fd6381a40d1980839e599bf06e7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-019.json",
+      "evidenceHash": "62351414d6d16817f7e3bd6f2df9a7767584ad661cf71e69aa82a8fdde8ec8de"
     }
   }
 }

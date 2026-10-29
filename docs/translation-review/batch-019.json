@@ -414,6 +414,144 @@
         "No binary/NULinput,output-stream-failure,browser visual or cryptographic audit.",
         "Full-siteCI/publication pending."
       ]
+    },
+    "post/素数を生成するC言語コード/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/素数を生成するC言語コード/index.md",
+      "sourceHash": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "translationHash": "d0eed68184651ace07d470e3d212e903fee4434c53bd897ac25d09b17d08c00b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original language metadata/body/code, revised against corrected full Japanese and reviewed English, then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,one complete C program,one output sample,input contract and limits. No unread/unvalidated language recorded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hindi uses अभाज्य/भाज्य,परीक्षण विभाजन,अभाज्य गुणनखंड,अतिप्रवाह,बाइट and रूपांतरण-अंत सूचक. Corrected original6के गुणक claim to6k±1candidate divisors. Final separate context reread changed the definition to 2 या उससे बड़ा पूर्णांक for natural unambiguous at-least2 meaning, updated actual lastmodOct29; C code is exactly unchanged after execution proof. Localized UI and original अभाज्य संख्या slug retained."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "No TeX-delimited formulas or diagrams. Matched square-root factor bound,6k±1candidate restriction without converse primality claim,positive division stop condition,increment guards,32bit INT_MAX example and coarse O(n sqrt(n)) division-count upper bound distinct from bit cost/runtime. Sample primes<=30 matched sieve."
+        },
+        "code": {
+          "status": "checked",
+          "note": "One C17block has same executable structure as Japanese, with reviewed localized UIstrings. Separately compiled full program and helper harness with GCC13.3 Wall/Wextra under O2 and O0+UBSan,no warnings. Per mode50168classifications from independent sieve0..50000 plus167Python trial-division boundary/negative/random checks,11valid/17invalid inputs,12printer outputs,6full-program valid/5invalid cases passed. Includes INT_MAX classification/parsing and exact127byte LF/EOF boundary; no full INT_MAX enumeration. Original executions preserved in batch-019-hi-ru-ar-validation.json; final validation reuses them after exact code equality proof and fresh generated HTML comparison. No new executable runs claimed for prose/date-only polish."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Same WG14 N1570 HTTPS target and corresponding reviewed Miller–Rabin language URL. Preserved original distinct slug/canonical and actual datePublished2024-08-24T09:38:10+09:00,image,tags/categories; duplicate date removed,lastmod2026-10-29.20bundle Hugo build,multilingual1243pages,HTTPS2267HTML/41XML passed. Existing17tests previously passed for same revised source and verifier. Publication pending."
+        }
+      },
+      "summary": "Full hi C prime-enumeration review against corrected Japanese, including complete localized C program and actual boundary/input checks.",
+      "languageSpecificFindings": "Hindi uses अभाज्य/भाज्य,परीक्षण विभाजन,अभाज्य गुणनखंड,अतिप्रवाह,बाइट and रूपांतरण-अंत सूचक. Corrected original6के गुणक claim to6k±1candidate divisors. Final separate context reread changed the definition to 2 या उससे बड़ा पूर्णांक for natural unambiguous at-least2 meaning, updated actual lastmodOct29; C code is exactly unchanged after execution proof. Localized UI and original अभाज्य संख्या slug retained.",
+      "validation": "docs/translation-review/batch-019-final-validation.json",
+      "references": [
+        {
+          "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+          "scope": "Scoped clauses as documented in batch-019-source-notes.md; no whole-standard or finalC17reading claim."
+        }
+      ],
+      "limitations": [
+        "AI, not human/native-speaker certification.",
+        "Other translations are counted only after their own full-body review and executable validation.",
+        "Finite Ubuntu GCC13.3/32bit-int checks,not every C implementation or full INT_MAX enumeration.",
+        "No binary/NULinput,output-stream-failure,browser visual or cryptographic audit.",
+        "Full-siteCI/publication pending."
+      ]
+    },
+    "post/素数を生成するC言語コード/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/素数を生成するC言語コード/index.md",
+      "sourceHash": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "translationHash": "8640d99033401e83ea0d4480c9900a0be1e2bc17403587cb02c902eede32b7b0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original language metadata/body/code, revised against corrected full Japanese and reviewed English, then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,one complete C program,one output sample,input contract and limits. No unread/unvalidated language recorded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Russian uses пробное деление,составное,простой делитель,переполнение,указатель and байты. Corrected original кратными6 claim to6k±1candidate divisors. Final context reread refined article link to о тесте Миллера—Рабина, updated actual lastmodOct29; executable code is exactly unchanged after execution proof. Localized UI and original Простое число slug preserved."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "No TeX-delimited formulas or diagrams. Matched square-root factor bound,6k±1candidate restriction without converse primality claim,positive division stop condition,increment guards,32bit INT_MAX example and coarse O(n sqrt(n)) division-count upper bound distinct from bit cost/runtime. Sample primes<=30 matched sieve."
+        },
+        "code": {
+          "status": "checked",
+          "note": "One C17block has same executable structure as Japanese, with reviewed localized UIstrings. Separately compiled full program and helper harness with GCC13.3 Wall/Wextra under O2 and O0+UBSan,no warnings. Per mode50168classifications from independent sieve0..50000 plus167Python trial-division boundary/negative/random checks,11valid/17invalid inputs,12printer outputs,6full-program valid/5invalid cases passed. Includes INT_MAX classification/parsing and exact127byte LF/EOF boundary; no full INT_MAX enumeration. Original executions preserved in batch-019-hi-ru-ar-validation.json; final validation reuses them after exact code equality proof and fresh generated HTML comparison. No new executable runs claimed for prose/date-only polish."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Same WG14 N1570 HTTPS target and corresponding reviewed Miller–Rabin language URL. Preserved original distinct slug/canonical and actual datePublished2024-08-24T09:38:10+09:00,image,tags/categories; duplicate date removed,lastmod2026-10-29.20bundle Hugo build,multilingual1243pages,HTTPS2267HTML/41XML passed. Existing17tests previously passed for same revised source and verifier. Publication pending."
+        }
+      },
+      "summary": "Full ru C prime-enumeration review against corrected Japanese, including complete localized C program and actual boundary/input checks.",
+      "languageSpecificFindings": "Russian uses пробное деление,составное,простой делитель,переполнение,указатель and байты. Corrected original кратными6 claim to6k±1candidate divisors. Final context reread refined article link to о тесте Миллера—Рабина, updated actual lastmodOct29; executable code is exactly unchanged after execution proof. Localized UI and original Простое число slug preserved.",
+      "validation": "docs/translation-review/batch-019-final-validation.json",
+      "references": [
+        {
+          "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+          "scope": "Scoped clauses as documented in batch-019-source-notes.md; no whole-standard or finalC17reading claim."
+        }
+      ],
+      "limitations": [
+        "AI, not human/native-speaker certification.",
+        "Other translations are counted only after their own full-body review and executable validation.",
+        "Finite Ubuntu GCC13.3/32bit-int checks,not every C implementation or full INT_MAX enumeration.",
+        "No binary/NULinput,output-stream-failure,browser visual or cryptographic audit.",
+        "Full-siteCI/publication pending."
+      ]
+    },
+    "post/素数を生成するC言語コード/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/素数を生成するC言語コード/index.md",
+      "sourceHash": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "translationHash": "441ec306823aa2ceb9027f1e1dc64a35d7755fd6381a40d1980839e599bf06e7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original language metadata/body/code, revised against corrected full Japanese and reviewed English, then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,one complete C program,one output sample,input contract and limits. No unread/unvalidated language recorded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Arabic uses القسمة التجريبية,عدد أولي/مؤلف,قاسم أولي,تجاوز السعة,مؤشر and بايت. Corrected original مضاعفات6 claim to6k±1candidate divisors. Compared full revised Arabic body and localized prompt/error/output,without claiming visual RTL or native-speaker certification; kept original أعداد أولية slug."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "No TeX-delimited formulas or diagrams. Matched square-root factor bound,6k±1candidate restriction without converse primality claim,positive division stop condition,increment guards,32bit INT_MAX example and coarse O(n sqrt(n)) division-count upper bound distinct from bit cost/runtime. Sample primes<=30 matched sieve."
+        },
+        "code": {
+          "status": "checked",
+          "note": "One C17block has same executable structure as Japanese, with reviewed localized UIstrings. Separately compiled full program and helper harness with GCC13.3 Wall/Wextra under O2 and O0+UBSan,no warnings. Per mode50168classifications from independent sieve0..50000 plus167Python trial-division boundary/negative/random checks,11valid/17invalid inputs,12printer outputs,6full-program valid/5invalid cases passed. Includes INT_MAX classification/parsing and exact127byte LF/EOF boundary; no full INT_MAX enumeration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Same WG14 N1570 HTTPS target and corresponding reviewed Miller–Rabin language URL. Preserved original distinct slug/canonical and actual datePublished2024-08-24T09:38:10+09:00,image,tags/categories; duplicate date removed,lastmod2026-10-28.20bundle Hugo build,multilingual1243pages,HTTPS2267HTML/41XML passed. Existing17tests previously passed for same revised source and verifier. Publication pending."
+        }
+      },
+      "summary": "Full ar C prime-enumeration review against corrected Japanese, including complete localized C program and actual boundary/input checks.",
+      "languageSpecificFindings": "Arabic uses القسمة التجريبية,عدد أولي/مؤلف,قاسم أولي,تجاوز السعة,مؤشر and بايت. Corrected original مضاعفات6 claim to6k±1candidate divisors. Compared full revised Arabic body and localized prompt/error/output,without claiming visual RTL or native-speaker certification; kept original أعداد أولية slug.",
+      "validation": "docs/translation-review/batch-019-final-validation.json",
+      "references": [
+        {
+          "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+          "scope": "Scoped clauses as documented in batch-019-source-notes.md; no whole-standard or finalC17reading claim."
+        }
+      ],
+      "limitations": [
+        "AI, not human/native-speaker certification.",
+        "Other translations are counted only after their own full-body review and executable validation.",
+        "Finite Ubuntu GCC13.3/32bit-int checks,not every C implementation or full INT_MAX enumeration.",
+        "No binary/NULinput,output-stream-failure,browser visual or cryptographic audit.",
+        "Full-siteCI/publication pending."
+      ]
     }
   },
   "stages": [
@@ -461,6 +599,37 @@
       ],
       "validation": "docs/translation-review/batch-019-de-id-validation.json",
       "publicationPending": true
+    },
+    {
+      "date": "2026-10-29",
+      "languages": [
+        "hi",
+        "ru",
+        "ar"
+      ],
+      "validation": "docs/translation-review/batch-019-final-validation.json",
+      "publicationPending": true
     }
-  ]
+  ],
+  "finalAssembly": {
+    "date": "2026-10-29",
+    "validation": "docs/translation-review/batch-019-final-validation.json",
+    "versions": 13,
+    "reviewedTranslations": 12,
+    "sourceReviewed": true,
+    "primeClassificationsAcrossVersionsAndModes": 1304368,
+    "otherInputOutputCasesAcrossVersionsAndModes": 1326,
+    "exactHtmlCodeBlocks": 13,
+    "multilingualPages": 1243,
+    "httpsHtml": 2267,
+    "httpsXml": 41,
+    "repositoryTests": 17,
+    "publicationPending": true,
+    "limitations": [
+      "AI, not human/native-speaker certification.",
+      "Preserved O2/UBSan execution evidence; no duplicate runs claimed for prose-only final changes.",
+      "Finite GCC/32bit-int tests, no full INT_MAX enumeration or binary/NUL-input/output-stream-failure audit.",
+      "No browser visual or cryptographic certification."
+    ]
+  }
 }

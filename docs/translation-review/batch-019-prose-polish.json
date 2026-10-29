@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "date": "2026-10-29",
+  "changes": [
+    {
+      "language": "hi",
+      "beforeHash": "be51116bb6b74156e53e117707f5b827cd987326d634eddbf4dc72281cee94ee",
+      "afterHash": "d0eed68184651ace07d470e3d212e903fee4434c53bd897ac25d09b17d08c00b",
+      "codeHash": "c9fd35d9fb24fd4022e6ffab9d374b721a297a7188a0b6088106d8b953f86e0e",
+      "change": {
+        "old": "अभाज्य संख्या कम-से-कम 2 का पूर्णांक होती है",
+        "new": "अभाज्य संख्या 2 या उससे बड़ा पूर्णांक होती है"
+      },
+      "executionEvidence": "docs/translation-review/batch-019-hi-ru-ar-validation.json",
+      "executionCodeUnchanged": true
+    },
+    {
+      "language": "ru",
+      "beforeHash": "00ac56347ebf7d7dfb45c6f4daf85789b0966112b77caf34a25373557df45111",
+      "afterHash": "8640d99033401e83ea0d4480c9900a0be1e2bc17403587cb02c902eede32b7b0",
+      "codeHash": "812eade382aec06901dc5c0a88aa045873f2fef711df06fe7a868bec77a6fa33",
+      "change": {
+        "old": "[статью о Миллере—Рабине]",
+        "new": "[статью о тесте Миллера—Рабина]"
+      },
+      "executionEvidence": "docs/translation-review/batch-019-hi-ru-ar-validation.json",
+      "executionCodeUnchanged": true
+    }
+  ],
+  "scope": "Prose and actual modification date only. Original executable evidence preserved; code exact equality checked before edit. Fresh HTML validation required."
+}

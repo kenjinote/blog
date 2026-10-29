@@ -1,0 +1,439 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T16:33:30.243014+09:00",
+  "versions": [
+    {
+      "language": "ja",
+      "sha256": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "codeSha256": "5509b72f2fac6b16a9f3ae6c6fba10877ef94360a08728b16dc0758a2d721cc9",
+      "canonical": "https://kenji.blog/p/%E7%B4%A0%E6%95%B0%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-28",
+      "executionEvidence": "docs/translation-review/batch-019-ja-en-validation.json",
+      "executedVersionHash": "c707ec81fd69d7205224c7dc61e1259157b426d9501040d7b3f92de80d1355f4",
+      "executionCodeUnchangedAfterPolish": false,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "en",
+      "sha256": "a832d8ef2a9880c10ea0284c166c3a6af30d33ed922f5b745bd922353b993046",
+      "codeSha256": "b07115b44e0e344ed2a5657c7c454dcbb9cb42e48443661e6ab2680758b17da9",
+      "canonical": "https://kenji.blog/en/p/prime-number%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-28",
+      "executionEvidence": "docs/translation-review/batch-019-ja-en-validation.json",
+      "executedVersionHash": "a832d8ef2a9880c10ea0284c166c3a6af30d33ed922f5b745bd922353b993046",
+      "executionCodeUnchangedAfterPolish": false,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "zh-cn",
+      "sha256": "2b0a7b63373ab53612bdaf86be0338519d8c5c7a62709c1f58e7d4e3d90e4b58",
+      "codeSha256": "2294847b83acc4e5bb7ee5ac82a39e950a404bbed79227788c081e6fef30288b",
+      "canonical": "https://kenji.blog/zh-cn/p/%E7%B4%A0%E6%95%B0%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-28",
+      "executionEvidence": "docs/translation-review/batch-019-chinese-validation.json",
+      "executedVersionHash": "2b0a7b63373ab53612bdaf86be0338519d8c5c7a62709c1f58e7d4e3d90e4b58",
+      "executionCodeUnchangedAfterPolish": false,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "zh-tw",
+      "sha256": "2c0c5a549c8bc156e08cfcf11ce8c175f29c5a714170e37694e6b6767ea51919",
+      "codeSha256": "a6907f29c518bd6bbc38650bab1c6a13bdfe0f5e2370ed85dcccc9a6b38c355e",
+      "canonical": "https://kenji.blog/zh-tw/p/%E8%B3%AA%E6%95%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-28",
+      "executionEvidence": "docs/translation-review/batch-019-chinese-validation.json",
+      "executedVersionHash": "2c0c5a549c8bc156e08cfcf11ce8c175f29c5a714170e37694e6b6767ea51919",
+      "executionCodeUnchangedAfterPolish": false,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "es",
+      "sha256": "2c246d457c1653b105cb35769974c5609442d68cbdbf6370c003a834e5482557",
+      "codeSha256": "dbe40f0f48c33672b6a0531a7a4893b31cf8d7816bd4aedb1aefd51ed482424d",
+      "canonical": "https://kenji.blog/es/p/n%C3%BAmero-primo%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-28",
+      "executionEvidence": "docs/translation-review/batch-019-es-ko-validation.json",
+      "executedVersionHash": "2c246d457c1653b105cb35769974c5609442d68cbdbf6370c003a834e5482557",
+      "executionCodeUnchangedAfterPolish": false,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "ko",
+      "sha256": "4613694ced0ac6c4bb8b87ebf7f5f50547e9cec91e75f9a328baa7013e6ebc2a",
+      "codeSha256": "fa88a5f7c390d51b392c675d98cf33f00f7a98a999ba08abbcf9178c1e97a890",
+      "canonical": "https://kenji.blog/ko/p/%EC%86%8C%EC%88%98%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-28",
+      "executionEvidence": "docs/translation-review/batch-019-es-ko-validation.json",
+      "executedVersionHash": "4613694ced0ac6c4bb8b87ebf7f5f50547e9cec91e75f9a328baa7013e6ebc2a",
+      "executionCodeUnchangedAfterPolish": false,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "pt",
+      "sha256": "7d27d5ca9d44a791a4baee9742c4dc2cfd6d9392c8129c16b1e728e8dbed4a9c",
+      "codeSha256": "b1625d6d219f7f42675e49e7ff38b358a3753a9a716b216397a1e74b5655433f",
+      "canonical": "https://kenji.blog/pt/p/n%C3%BAmero-primo%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-28",
+      "executionEvidence": "docs/translation-review/batch-019-pt-fr-validation.json",
+      "executedVersionHash": "7d27d5ca9d44a791a4baee9742c4dc2cfd6d9392c8129c16b1e728e8dbed4a9c",
+      "executionCodeUnchangedAfterPolish": false,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "fr",
+      "sha256": "b9f369f5c0d4daa0577114bf09f00374533f6747a62054dca45e1e77c65bd561",
+      "codeSha256": "371aa079c508cb07b83b5605f801a1b639e5d596bb7f2c400a65f9941135e764",
+      "canonical": "https://kenji.blog/fr/p/nombre-premier%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-28",
+      "executionEvidence": "docs/translation-review/batch-019-pt-fr-validation.json",
+      "executedVersionHash": "b9f369f5c0d4daa0577114bf09f00374533f6747a62054dca45e1e77c65bd561",
+      "executionCodeUnchangedAfterPolish": false,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "de",
+      "sha256": "de0adda56a9bda06eb273e2fc002a01caf7863f54eb15180b1c01dd5b715944e",
+      "codeSha256": "93faf146e318f5df11206ba292ba1b705591716565b6579c09c18ceb9ba7f893",
+      "canonical": "https://kenji.blog/de/p/primzahl%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-28",
+      "executionEvidence": "docs/translation-review/batch-019-de-id-validation.json",
+      "executedVersionHash": "de0adda56a9bda06eb273e2fc002a01caf7863f54eb15180b1c01dd5b715944e",
+      "executionCodeUnchangedAfterPolish": false,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "id",
+      "sha256": "633c403b5f0c0469dbaa99e000ea6efe21ac0b7351fabeede5ebf46076a45ac8",
+      "codeSha256": "5676078876ea41181362b34c4bb6a9f093723b6967e1a4e3e2af5501e4b1d848",
+      "canonical": "https://kenji.blog/id/p/bilangan-prima%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-28",
+      "executionEvidence": "docs/translation-review/batch-019-de-id-validation.json",
+      "executedVersionHash": "633c403b5f0c0469dbaa99e000ea6efe21ac0b7351fabeede5ebf46076a45ac8",
+      "executionCodeUnchangedAfterPolish": false,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "hi",
+      "sha256": "d0eed68184651ace07d470e3d212e903fee4434c53bd897ac25d09b17d08c00b",
+      "codeSha256": "c9fd35d9fb24fd4022e6ffab9d374b721a297a7188a0b6088106d8b953f86e0e",
+      "canonical": "https://kenji.blog/hi/p/%E0%A4%85%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%8D%E0%A4%AF-%E0%A4%B8%E0%A4%82%E0%A4%96%E0%A5%8D%E0%A4%AF%E0%A4%BE%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-29",
+      "executionEvidence": "docs/translation-review/batch-019-hi-ru-ar-validation.json",
+      "executedVersionHash": "be51116bb6b74156e53e117707f5b827cd987326d634eddbf4dc72281cee94ee",
+      "executionCodeUnchangedAfterPolish": true,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "ru",
+      "sha256": "8640d99033401e83ea0d4480c9900a0be1e2bc17403587cb02c902eede32b7b0",
+      "codeSha256": "812eade382aec06901dc5c0a88aa045873f2fef711df06fe7a868bec77a6fa33",
+      "canonical": "https://kenji.blog/ru/p/%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5-%D1%87%D0%B8%D1%81%D0%BB%D0%BE%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-29",
+      "executionEvidence": "docs/translation-review/batch-019-hi-ru-ar-validation.json",
+      "executedVersionHash": "00ac56347ebf7d7dfb45c6f4daf85789b0966112b77caf34a25373557df45111",
+      "executionCodeUnchangedAfterPolish": true,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    },
+    {
+      "language": "ar",
+      "sha256": "441ec306823aa2ceb9027f1e1dc64a35d7755fd6381a40d1980839e599bf06e7",
+      "codeSha256": "c800dbaee70ff0ce12906d2fd317edf8ce15cf8356b8d43f69596c33b1648ec6",
+      "canonical": "https://kenji.blog/ar/p/%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A3%D9%88%D9%84%D9%8A%D8%A9%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8Bc%E8%A8%80%E8%AA%9E%E3%82%B3%E3%83%BC%E3%83%89/",
+      "lastmod": "2026-10-28",
+      "executionEvidence": "docs/translation-review/batch-019-hi-ru-ar-validation.json",
+      "executedVersionHash": "441ec306823aa2ceb9027f1e1dc64a35d7755fd6381a40d1980839e599bf06e7",
+      "executionCodeUnchangedAfterPolish": false,
+      "executions": [
+        {
+          "mode": "optimized",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        },
+        {
+          "mode": "ubsan",
+          "primeClassifications": 50168,
+          "validInputCases": 11,
+          "invalidInputCases": 17,
+          "printerCases": 12,
+          "completeProgramValidCases": 6,
+          "completeProgramInvalidCases": 5
+        }
+      ],
+      "htmlCodeExact": true,
+      "languageAndAllArticleTranslationTargetsMatch": true,
+      "datePublishedPreserved": true
+    }
+  ],
+  "scope": "Fresh generated HTML/code/metadata/expected language maps for all13versions. Reuses preserved actual O2/UBSan execution evidence, does not falsely claim new executable runs. Hindi/Russian prose/date-only change has before/after hashes and exact unchanged-code proof. Prose review recorded separately.",
+  "totalPrimeClassificationsAcrossVersionsAndModes": 1304368,
+  "otherExecutionCasesAcrossVersionsAndModes": 1326,
+  "publicationPending": true
+}
