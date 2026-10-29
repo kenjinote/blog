@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T17:29:36.124445+09:00",
+  "compiler": "rustc 1.90.0 (1159e78c4 2025-09-14)\nbinary: rustc\ncommit-hash: 1159e78c4747b02ef996e55082b704c09b970588\ncommit-date: 2025-09-14\nhost: x86_64-pc-windows-msvc\nrelease: 1.90.0\nLLVM version: 20.1.8\n",
+  "independentReference": "Python integer trial division through100000,fullvector equality not hashes or a mirrored stored-prime algorithm.",
+  "versions": [
+    {
+      "language": "de",
+      "sha256": "d00f43ba6a3af577ba3e2e1a8948d9fffcf1b9c677890cf79d824547866dec5a",
+      "canonical": "https://kenji.blog/de/p/rust%E3%81%A7primzahl%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "sourceMathExpressions": 0,
+      "rustBlocks": 1,
+      "htmlCodeExact": true,
+      "sieveTarget": "https://kenji.blog/de/p/sieb-des-eratosthenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEprimzahl%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ]
+    },
+    {
+      "language": "id",
+      "sha256": "eda24e2fb1a260bfabbb720a519605b8ca0e106dbcf8637558772ad9a21de103",
+      "canonical": "https://kenji.blog/id/p/rust%E3%81%A7bilangan-prima%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "sourceMathExpressions": 0,
+      "rustBlocks": 1,
+      "htmlCodeExact": true,
+      "sieveTarget": "https://kenji.blog/id/p/saringan-eratosthenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEbilangan-prima%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Finite bounds<=100000 withRust1.90Windows64bit,not everyusize or target.",
+    "No huge upper-bound run,performance benchmark,visualbrowser/native-language or cryptographic audit.",
+    "Arithmetic bounds justified separately; no attempt to enumerateusizeMAX.",
+    "Prose reading is separate; script does not record or approve translations."
+  ],
+  "publicationPending": true
+}
