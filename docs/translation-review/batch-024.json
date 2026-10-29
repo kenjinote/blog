@@ -706,5 +706,60 @@
       "scope": "Remaining-language wording only; no change to completed review scope or ledger counts.",
       "clarification": "Earlier otherTranslationsUnread fields and unread wording describe versions without completed revision review/AI recording, not a measured count of completely unread originals. In particular,the German original was read while French validation finished,before the French AI entry was recorded;the French entry remaining5 were unreviewed,not necessarily unread. Arabic original and revision were read while Russian validation finished. New stages use otherTranslationsUnreviewed. Original per-version entries and hashes are preserved; draft-only reading is never counted as completed review."
     }
-  ]
+  ],
+  "finalAssembly": {
+    "checkedAt": "2026-10-30T08:11:29.210611+09:00",
+    "validation": "docs/translation-review/batch-024-final-validation.json",
+    "checks": "docs/translation-review/batch-024-final-checks.json",
+    "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+    "versionHashes": {
+      "ja": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "en": "3a86d04874c7df83697b60b01f6c790d81c3e09c15078844b301c86286c875ea",
+      "zh-cn": "f86e3d509dd1f5af2ec568df0be5a0fdf9415bed267d126e97c90da0c764f9c9",
+      "zh-tw": "cf34738087e2344674f098e208c991ad5fc5264c51da8170c15f0e0970bd8c5a",
+      "es": "006c253f51b3c6e95e09e81a453a46920294bfa88cd35e25ef030cc1646546f1",
+      "ko": "66cd9cd6edfc31ce55dc766e44bdea5ff74b00d8458fb0bdd5039647ae901c0f",
+      "pt": "8a89c61ee1b5fab81fa1170d3dcd9dc90e1d51b9e0706cb90a26e611b37a3f40",
+      "fr": "d497d9a88900202499152a978fbb7e2e5bbbf3f7ab3b760fe196c04662c32ca1",
+      "de": "dd53d985b90bc7c74d845d01f2c73feb677277125afe498445d75c4f04a05db6",
+      "id": "69337c30750b2120fd4719d3bbb5d292b48c7dbd77afddc1593e596191763daa",
+      "hi": "5c7299656b4bcf53439c8f9eb3eed144ae964c45a556b48fa00d8ac0eb107e7c",
+      "ru": "c22ad16075013532e28bb3aef892e3c3562776895065e8c7a88c7bfec564a600",
+      "ar": "0133af069343bc52551be203d9d22d466856342ddee7f366be494f5084405324"
+    },
+    "versions": 13,
+    "reviewedTranslations": 12,
+    "texExpressions": 533,
+    "completePythonProgramsExecutedSeparately": 13,
+    "mermaidDiagramSourcesExact": 13,
+    "diagramEdges": 78,
+    "casesPerVersion": {
+      "singleModulusSignedCases": 319,
+      "smallPairCases": 1647,
+      "smallTripleCases": 1365,
+      "largeSignedCases": 128,
+      "invalidCrtCases": 18,
+      "extendedGcdAndInverseCases": 9999,
+      "invalidInverseCases": 5,
+      "rsaCrtAllRepresentatives": 3233,
+      "rnsAddAndMultiplyCases": 22050
+    },
+    "sharedAuxiliaryInterpolationCasesOnce": 343,
+    "all14HreflangAnd13SidebarTargetsExact": true,
+    "sixPrimaryReferencesAndLocalizedRsaEach": true,
+    "originalPublicationDatesSlugImageTagsCategoriesPreserved": true,
+    "multilingualPages": 1439,
+    "httpsHtmlPages": 2632,
+    "httpsXmlFiles": 41,
+    "existingTestsPassed": 17,
+    "reviewedTranslationsTotal": 300,
+    "unreviewedTranslations": 12732,
+    "humanReviews": 0,
+    "publicationPending": true,
+    "limitations": [
+      "AI,not human/native-speaker certification.",
+      "Finite arithmetic checks supplement manually read arguments;not exhaustive proof or cryptographic audit.",
+      "Source and decoded HTML checked;no browser visual/RTL/KaTeX/Mermaid runtime certification."
+    ]
+  }
 }

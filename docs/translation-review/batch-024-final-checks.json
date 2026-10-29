@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T08:11:29.210611+09:00",
+  "allPassed": true,
+  "scope": "Final thirteen CRT versions,25-bundle preview,and17existing unit tests. Article programs and finite checks actually executed separately for all13versions. Test fixture human-review messages do not create real human ledger reviews. No publication or native-language/browser certification.",
+  "results": [
+    {
+      "command": [
+        "docs/translation-review/verify_batch_024.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-25-bundles-crt-ar",
+        "--languages",
+        "ja",
+        "en",
+        "zh-cn",
+        "zh-tw",
+        "es",
+        "ko",
+        "pt",
+        "fr",
+        "de",
+        "id",
+        "hi",
+        "ru",
+        "ar",
+        "--output",
+        "docs/translation-review/batch-024-final-validation.json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"versions\": 13, \"texEach\": 41, \"smallPairsEach\": 1647, \"smallTriplesEach\": 1365, \"rsaCrtEach\": 3233, \"rnsCasesEach\": 22050}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-25-bundles-crt-ar"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1439 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-25-bundles-crt-ar"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 2632, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_multilingual.py"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 19 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.660s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_math_rendering.py"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.487s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_translation_reviews.py"
+      ],
+      "exitCode": 0,
+      "stdout": "Recorded ai review: post/sample/index.en.md\nRecorded ai review: post/sample/index.en.md\nRecorded human review: post/sample/index.en.md\n",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.130s\n\nOK\n"
+    }
+  ]
+}
