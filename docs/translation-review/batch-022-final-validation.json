@@ -1,0 +1,566 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T23:13:03.731863+09:00",
+  "scope": "Fresh all13version HTML/metadata/exactcode/TeX/diagram/reference/language-map checks joined to preserved actual per-language executions. No duplicate new executable runs or automatic prose approval.",
+  "versions": [
+    {
+      "language": "ja",
+      "sha256": "6893ab05e8f2d866b4069c4f6ff11ef57e8c4e6b3f56c58c72fc7605ca663904",
+      "canonical": "https://kenji.blog/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-ja-en-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "en",
+      "sha256": "8772aab67d35cc1c8b1e4f1fb586992bc3d9da36748816b221035baf4a1666b6",
+      "canonical": "https://kenji.blog/en/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-ja-en-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "zh-cn",
+      "sha256": "88c8271471a1ba74b2f33cabf626565018435c9b41976d9c43082863c6ebffb7",
+      "canonical": "https://kenji.blog/zh-cn/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-cn-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "zh-tw",
+      "sha256": "c53612f5c47759659351df1ae17938a02b04eaaabb384d91ab0c5facefa6b382",
+      "canonical": "https://kenji.blog/zh-tw/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-tw-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "es",
+      "sha256": "1a67260b2cc52ad05965c3bf7c71ebaed626878e48787eb99f0aca90b8721cce",
+      "canonical": "https://kenji.blog/es/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-es-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "ko",
+      "sha256": "be0594a7a09bba15326ab160c9a8a91ac6f48d942689ba2d930513e631102623",
+      "canonical": "https://kenji.blog/ko/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-ko-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "pt",
+      "sha256": "89d6b9b580f0d55eabd51a83407dd9b33f77e9ba24154d25decbc0031562d0ef",
+      "canonical": "https://kenji.blog/pt/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-pt-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "fr",
+      "sha256": "38d3a9c7f9d2327dcf626df7dd2aea1c4601ebcbb7d0ad67a35a1ac8182ec13d",
+      "canonical": "https://kenji.blog/fr/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-fr-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "de",
+      "sha256": "938612b7c615f720c53e3b1ec1cdca9d6ac8304f5ce368fcfd9329d5b51983b2",
+      "canonical": "https://kenji.blog/de/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-de-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "id",
+      "sha256": "85f52667a9207573e82ef78bbb8e6ee9fd58a10487497cd2652d2b4f71bc4d91",
+      "canonical": "https://kenji.blog/id/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-id-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "hi",
+      "sha256": "324060c09bb17ad1960f20c73554ca768b5776ed97d4af076c49d4d65fab22c8",
+      "canonical": "https://kenji.blog/hi/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-hi-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "ru",
+      "sha256": "ff99e58653b43d5bbc236dfc4430b3a9331f8c11bdeb0e0f004b0b15316b8b87",
+      "canonical": "https://kenji.blog/ru/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-ru-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    },
+    {
+      "language": "ar",
+      "sha256": "9d16d317bc115078997b101a149c3265cfdcaf3785dc2eb539c54c8f1963c70f",
+      "canonical": "https://kenji.blog/ar/p/fermats-little-theorem-cryptography-implementation/",
+      "executionEvidence": "docs/translation-review/batch-022-ar-validation.json",
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "rsaRepresentativesRoundTrip": 3233,
+      "codeBlocksExact": 3,
+      "texExpressionsExact": 82,
+      "diagramEdgesExact": [
+        13,
+        6
+      ],
+      "all14HreflangAnd13SidebarUrlsExact": true,
+      "referencesAndMetadataExact": true
+    }
+  ],
+  "codeBlocksExact": 39,
+  "texExpressionsExact": 1066,
+  "diagramsExact": 26,
+  "diagramEdgesExact": 247,
+  "preservedCppCasesAllModes": 194480,
+  "preservedCppCompleteProgramRuns": 26,
+  "preservedPythonCompleteProgramRuns": 26,
+  "publicationPending": true,
+  "limitations": [
+    "AI review,not human/native-language certification.",
+    "Finite C++/Python cases,not exhaustive uint64 proof,production cryptographic audit or performance/constant-time assessment.",
+    "HTML/source checked;no visualbrowser,RTL,KaTeX or Mermaid runtime-rendering certification."
+  ]
+}

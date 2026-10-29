@@ -892,5 +892,46 @@
       "validation": "docs/translation-review/batch-022-ar-validation.json",
       "publicationPending": true
     }
-  ]
+  ],
+  "finalAssembly": {
+    "date": "2026-10-29",
+    "validation": "docs/translation-review/batch-022-final-validation.json",
+    "languages": [
+      "ja",
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko",
+      "pt",
+      "fr",
+      "de",
+      "id",
+      "hi",
+      "ru",
+      "ar"
+    ],
+    "versions": 13,
+    "codeBlocksExact": 39,
+    "texExpressionsExact": 1066,
+    "diagramsExact": 26,
+    "diagramEdgesExact": 247,
+    "preservedCppCasesAllModes": 194480,
+    "preservedCppCompleteProgramRuns": 26,
+    "preservedPythonCompleteProgramRuns": 26,
+    "all14HreflangAnd13SidebarUrlsExact": true,
+    "multilingualPages": 1351,
+    "httpsHtmlPages": 2481,
+    "httpsXmlFiles": 41,
+    "existingTestsPassed": 17,
+    "reviewedTranslationsTotal": 276,
+    "unreviewedTranslations": 12756,
+    "humanReviews": 0,
+    "publicationPending": true,
+    "limitations": [
+      "AI review,not human/native-language certification.",
+      "Finite C++/Python cases,not exhaustive uint64 proof,production cryptographic audit or performance/constant-time assessment.",
+      "HTML/source checked;no visualbrowser,RTL,KaTeX or Mermaid runtime-rendering certification."
+    ]
+  }
 }
