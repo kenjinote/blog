@@ -40,6 +40,47 @@
         "Linked Bayes/StPetersburg bodies not reviewed here; source-reading scope recorded precisely.",
         "Publication/live checks for this batch pending."
       ]
+    },
+    "post/2つの封筒のパラドックス/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/2つの封筒のパラドックス/index.md",
+      "sourceHash": "6fbb8397037b64b965eceac9fabe38880228b0a0311d6da2e5d4f33a7bd69ada",
+      "translationHash": "91423e62eb767c9a3140c041b7e004791bf8988c417855b61be3193743880ceb",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and revised SimplifiedChinese metadata/body/two Mermaid sources independently against corrected Japanese, including final coin/normalization/continuous-version edits. Preserved all nine revised topics:setup,unsupported half/double weights,fixed-smaller symmetry,discrete posterior,finite money example and nonmonotonicity,finite-mean argument,proper infinite-mean discrete counterexample,continuous density change,and reciprocal ratios/StPetersburg/decision limits. Did not classify random variables taking different values as inherently wrong, nor normalization as implying a finite mean."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "阅读全文，包括改订前后元数据、正文与两个Mermaid，并逐节对照日文原文。核对先验/后验、条件概率/公平选择、概率质量/概率密度/变量变换系数、归一化/有限均值、单次有限金额/有限上界/最大值、正部/负部/可积性、几乎必然/正概率观测、期望金额/实际收益、平均比率/乘积的期望。用归一化明确proper，不把正规化视为数学错误；修整抛公平硬币的表达和连续条件期望函数，保留原分类标签。删除逻辑崩溃及只有不可归一化均匀分布才有反例等断言，完整保留并修正未打开/已打开、有限/无穷均值、连续密度、反复交换和圣彼得堡主题。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared all44TeX and assumptions:independent fair coin,p(x)and p(x/2)off-support masses,positive denominator,gain iff q>1/3,5000/10000prior with1/4-1/2-1/4observations,nonmonotone1/50versus50/51,integrability/finite-mean total expectation,normalized geometric distribution with2/5posterior and11x/10mean,undefined signed expectation when both parts infinite,valid nonnegative tower law,continuous1/2and1/4density factors and f(x/2)/f(x)<4,reciprocal ratios and25/16versus1.44expressions exact in source/decodedHTML. Actual shared auxiliary run in this invocation:102finite priors1619joint-observation checks,101normalization identities,100geometric posteriors,268rational density substitutions. Finite arithmetic supplements manually checked analytic arguments,not universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised SimplifiedChinese contain only two Mermaid blocks and no executable article program. Read labels and compared revised corresponding5and6edge topologies with Japanese; exact complete localized sources retained in decodedHTML. Shared Fraction arithmetic is auxiliary,not a Chinese article-program execution. No browser diagram/KaTeX runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three primary external links and localized SimplifiedChinese Bayes/StPetersburg URLs exact in generatedHTML; internal pages exist in28bundlepreview,but their bodies not reviewed here. Primary-source reading scope documented separately,including unavailableORA403not fully read. Preserved actualSep10date,slug,imagebytes/tags/categories;removed duplicateSep24date,setOct30lastmod,math/Mermaid enabled. All14hreflang/13sidebar targets exact. New preview multilingual1609pages/HTTPS2933HTML41XML passed. Existing17unit tests passed at precedingJAENstage and not rerun here. Existing isolated-preview pages/layout/PortugueseUI warnings retained. Publication pending."
+        }
+      },
+      "summary": "Full SimplifiedChinese comparison against corrected Japanese, preserving all topics with proper priors, finite-mean conditions and density/expectation distinctions.",
+      "languageSpecificFindings": "阅读全文，包括改订前后元数据、正文与两个Mermaid，并逐节对照日文原文。核对先验/后验、条件概率/公平选择、概率质量/概率密度/变量变换系数、归一化/有限均值、单次有限金额/有限上界/最大值、正部/负部/可积性、几乎必然/正概率观测、期望金额/实际收益、平均比率/乘积的期望。用归一化明确proper，不把正规化视为数学错误；修整抛公平硬币的表达和连续条件期望函数，保留原分类标签。删除逻辑崩溃及只有不可归一化均匀分布才有反例等断言，完整保留并修正未打开/已打开、有限/无穷均值、连续密度、反复交换和圣彼得堡主题。",
+      "validation": "docs/translation-review/batch-025-zh-cn-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "At this stage10other translations have not completed full revision/review/recording.",
+        "Auxiliary arithmetic is not article-code execution or universal proof.",
+        "Source and decodedHTML only; no browservisual/diagramruntime certification.",
+        "Linked Bayes/StPetersburg bodies not reviewed here; primary-source reading scope documented.",
+        "Publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -78,6 +119,42 @@
       "unreviewedTranslations": 12731,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "zh-cn"
+      ],
+      "sourceHash": "6fbb8397037b64b965eceac9fabe38880228b0a0311d6da2e5d4f33a7bd69ada",
+      "validation": "docs/translation-review/batch-025-zh-cn-validation.json",
+      "checks": "docs/translation-review/batch-025-zh-cn-checks.json",
+      "texEach": 44,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        5,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "finitePriors": 102,
+        "jointObservationCases": 1619,
+        "normalizationIdentities": 101,
+        "geometricPosteriorCases": 100,
+        "continuousRationalCases": 268,
+        "ratioMean": "5/4",
+        "meanReciprocalProduct": "1",
+        "productOfRatioMeans": "25/16",
+        "scope": "Shared exact auxiliary arithmetic once per invocation, not article code execution or universal proof. Geometric limits, finite-mean argument and continuous inequality manually checked separately. Original source-audit also contains33finite truncations; not rerun or counted here."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 302,
+      "unreviewedTranslations": 12730,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 10,
       "publicationPending": true
     }
   ],
