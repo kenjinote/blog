@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T17:40:35.929020+09:00",
+  "versions": {
+    "ar": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.ar.md",
+      "sha256": "4cafed47483bfcaa575cdd851e4185d8588502b1651735cb65edf5714399625f",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.de.md",
+      "sha256": "1c8c3861cb99d398a30afbad6f5ed3f4537e9fd1fc970d11f52eba831e6708e1",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.en.md",
+      "sha256": "d6308dea5a2115fd159892a49acf80a4f3cc838efec0236205409fd655f3210e",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.es.md",
+      "sha256": "3f169a0de4c6e880bcb536680d46a24e7f559fb35f589dba4f450d32a89ca2bc",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.fr.md",
+      "sha256": "c4150b4538700db7f9f371d2f2185a5ffc37c073f4d0ee25c859e2cd9f624629",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.hi.md",
+      "sha256": "aa69dfd4109267a7ddc080baa58823ee65eb73dc76d7be35d71706a0bcb05bdb",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.id.md",
+      "sha256": "bcdb11f497f66830fb9ec555859c61c50fd74a877b310d6560ba45e9785e3e76",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.ko.md",
+      "sha256": "33ca88df6c8fbe81252e31445764c20d9c6265098b91f95dd4303182879a8e01",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.md",
+      "sha256": "26c088efa5fa01023fc21e675a62368da71de42a1c80563b678ebf251d049401",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": true,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.pt.md",
+      "sha256": "e9a69019f414be65ef7d73da9dc72fd51a740db6ef6b02e0ad2533f7afa06516",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.ru.md",
+      "sha256": "8f2cf13bca74141f257fe044a680c8daea9029ad70a862079072e0a38bdc64f0",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.zh-cn.md",
+      "sha256": "d7bdecbc7a0fc1a1b82b665def2748cfe3cbe2fd16e12fafbd19a8099a116c31",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/フェルマーの小定理と暗号化/index.zh-tw.md",
+      "sha256": "4a4bd9fcf1a0ada23a0e3c1865271ed4eb867451169735fe52b13fb2afbf9926",
+      "slug": "fermats-little-theorem-cryptography-implementation",
+      "datePublished": [
+        "\"2026-09-11T22:00:00+09:00\""
+      ],
+      "fullBodyRead": false,
+      "reviewed": false
+    }
+  },
+  "readScope": "Japanese and English originals fully read;initial combined output was truncated and missing ranges were re-read separately. Other11translation metadata/hashes are inventoried only,not full-body reviewed. No review ledger entry added.",
+  "pythonOriginalFermatSample": "104729 はおそらく素数です。",
+  "pythonNonpositiveIterations": [
+    {
+      "n": 9,
+      "iterations": 0,
+      "returned": true
+    },
+    {
+      "n": 9,
+      "iterations": -1,
+      "returned": true
+    }
+  ],
+  "forcedBase2TenRounds561": true,
+  "carmichaelCounterexample": {
+    "n": 561,
+    "a": 3,
+    "gcd": 3,
+    "pow": 375,
+    "meaning": "Original all-a claim false;Carmichael property requires coprimality."
+  },
+  "initialCounterexampleAttempt": {
+    "forcedCandidates": [
+      1105,
+      7
+    ],
+    "forcedExponent": 5,
+    "plaintextCodepoint": 2,
+    "publicKey": [
+      5,
+      7735
+    ],
+    "privateKey": [
+      1325,
+      7735
+    ],
+    "cipher": [
+      32
+    ],
+    "decodedCodepoints": [
+      2
+    ],
+    "roundTrip": true,
+    "note": "Initial q7fixture did round-trip despite compositep;the first audit stopped on its incorrect failure expectation and wrote no JSON. Reproduced and preserved here. Composite candidate does not imply every key/message fails;second q5fixture shares a factor and actually fails."
+  },
+  "compositePrimeGeneratorAndRoundTrip": {
+    "forcedCandidates": [
+      1105,
+      5
+    ],
+    "forcedExponent": 7,
+    "publicKey": [
+      7,
+      5525
+    ],
+    "privateKey": [
+      631,
+      5525
+    ],
+    "compositeCandidate1105Factors": [
+      5,
+      13,
+      17
+    ],
+    "base2Pass": true,
+    "base3Pass": true,
+    "plaintextCodepoint": 2,
+    "cipher": [
+      128
+    ],
+    "decodedCodepoints": [
+      4422
+    ],
+    "roundTrip": false,
+    "scope": "Actual original complete keygen/encrypt/decrypt functions with temporary deterministic RNG fixture;not measured natural random failure frequency."
+  },
+  "uncheckedMessageRange": {
+    "key": [
+      [
+        5,
+        35
+      ],
+      [
+        5,
+        35
+      ]
+    ],
+    "plaintextCodepoint": 65,
+    "cipher": [
+      25
+    ],
+    "decodedCodepoints": [
+      30
+    ],
+    "roundTrip": false
+  },
+  "identityExponentAccepted": {
+    "key": [
+      1,
+      35
+    ],
+    "plaintextCodepoint": 2,
+    "cipher": [
+      2
+    ]
+  },
+  "cppOriginalRuns": [
+    {
+      "name": "sample",
+      "returncode": 0,
+      "stdout": "1000000007 is probably prime.",
+      "stderr": "",
+      "flags": [
+        "-std=c++17",
+        "-O0",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=undefined"
+      ],
+      "scope": "Actual Japanese original block or prefix with explicitly replaced temporary harness main;not all13language executions."
+    },
+    {
+      "name": "signed128-overflow",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "/mnt/c/Users/KENJIN~1/AppData/Local/Temp/kenji-fermat-old-2ih2qc7i/signed128-overflow.cpp:16:25: runtime error: signed integer overflow: 0x0000000000000000ffffffffffffffc4 * 0x0000000000000000ffffffffffffffc4 cannot be represented in type '__int128'",
+      "flags": [
+        "-std=c++17",
+        "-O0",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=undefined"
+      ],
+      "scope": "Actual Japanese original block or prefix with explicitly replaced temporary harness main;not all13language executions."
+    },
+    {
+      "name": "zero-rounds",
+      "returncode": 0,
+      "stdout": "1 1",
+      "stderr": "",
+      "flags": [
+        "-std=c++17",
+        "-O0",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=undefined"
+      ],
+      "scope": "Actual Japanese original block or prefix with explicitly replaced temporary harness main;not all13language executions."
+    },
+    {
+      "name": "exponentzero-modone",
+      "returncode": 0,
+      "stdout": "1",
+      "stderr": "",
+      "flags": [
+        "-std=c++17",
+        "-O0",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=undefined"
+      ],
+      "scope": "Actual Japanese original block or prefix with explicitly replaced temporary harness main;not all13language executions."
+    }
+  ],
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "findings": [
+    "Fermat/Euler correctness conflated with confidentiality and all modern protocols;unjustified historical/LINE/Amazon universality.",
+    "Carmichael all-a wording omits gcd;Fermat repeat-pass confidence claim lacks universal bound,MillerRabin probability needs independent uniform bases and finite-round limits.",
+    "Flowchart lacks smalln/nonpositive-round guards,initializes i implicitly,and omits the relevant test outcome distinction.",
+    "Signed __int128 multiplication can overflow for uint64 operands;extension portability and m=1/zero-exponent case missing.",
+    "Python/C++ nonpositive iterations accept9;MersenneTwister is not a cryptographic prime generator.",
+    "Toy generate_prime can return composite1105;actual forced composite key fails roundtrip. e=1 is allowed;message representatives are not range-checked;key tuple order differs between prose and code.",
+    "RSA proof needs explicit all-representative CRT treatment,not probability dismissal;raw character-wise deterministic RSA is not secure encryption.",
+    "English Crypto substring links point into cryptocurrency,and Euclide substring link points to Japanese biography rather than algorithm."
+  ],
+  "limitations": [
+    "Preliminary audit only;no source rewrite,new translation review or publication claim for batch022.",
+    "Original samples use finite deterministic fixtures;no natural failure frequency or broad compiler/security/visual audit.",
+    "bits<=1nontermination follows from possible candidates0/1,not an intentionally hung run."
+  ]
+}
