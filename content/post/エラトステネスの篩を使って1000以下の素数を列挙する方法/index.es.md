@@ -1,93 +1,122 @@
 ---
-
-
-
-
 title: '¿Qué es la criba de Eratóstenes? Algoritmo e implementación para enumerar números primos hasta 1000'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Criba de Eratóstenesを使って1000以下のNúmero primoを列挙する方法"
-date: 2023-04-09T12:54:24+09:00
 tags: ["Criba de Eratóstenes", "Números primos", "Matemáticas", "Rust"]
 draft: false
 math: true
 image: "img.webp"
 categories: ["math-cryptography-quantum"]
-description: 'Explicamos de manera clara el mecanismo y el procedimiento específico de la ''criba de Eratóstenes'', un algoritmo para encontrar números primos de manera eficiente. También presentamos un ejemplo de implementación utilizando el lenguaje Rust para enumerar los números primos hasta el 1000.'
+description: "Enumera los 168 primos hasta 1000 con Rust. Explica el inicio en el cuadrado, los candidatos impares, los límites 0 y 1, la complejidad y la memoria."
+date: 2023-04-09T12:54:24+09:00
+lastmod: 2026-10-29
 ---
 
+La criba de Eratóstenes enumera todos los primos hasta un límite superior `n`, incluido. Estos programas en Rust imprimen los 168 primos menores o iguales a 1000. El límite está incluido; 0 y 1 no son primos.
 
+## Pasos de la criba y por qué se empieza en el cuadrado
 
+1. Reserva `n + 1` elementos booleanos para usar los índices de 0 a `n`. La versión básica los inicializa a verdadero y marca 0 y 1 como falsos. Si el límite es menor que 2, devuelve un resultado vacío antes de acceder al índice 1.
+2. Examina los candidatos `p` en orden creciente, empezando por 2. Si la marca sigue siendo verdadera, `p` es primo: marca como falsos sus múltiplos desde $p^2$, avanzando de `p` en `p`. No marques el propio `p`.
+3. Basta con eliminar múltiplos para los candidatos que cumplen $p^2\le n$, porque todo compuesto tiene un factor primo menor o igual que su raíz cuadrada.
+4. Al final, recorre de 2 a `n` e imprime todos los números que conservan la marca verdadera. El rango de salida no se limita a la raíz cuadrada.
 
+Un múltiplo $kp$ menor que $p^2$, con $2\le k<p$, ya fue eliminado por un factor primo de `k` menor que `p`. Esto no significa que todos los números menores ya se hayan enumerado.
 
-## ¿Qué es la criba de Eratóstenes?
+![Animación de la criba con los números de 2 a 120](Animation_Sieb_des_Eratosthenes.gif)
 
-La criba de Eratóstenes es un algoritmo para enumerar los números primos menores o iguales a un cierto número.
-El algoritmo es simple y se puede implementar con los siguientes pasos:
+Imagen: SKopp, versión actualizada por Suricata, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Animation_Sieb_des_Eratosthenes.gif), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). El archivo no se ha modificado. La ilustración abarca de 2 a 120; los programas siguientes usan un límite de 1000.
 
-1. Crear un arreglo de valores booleanos de tamaño N e inicializar todos los elementos a true.
-2. Establecer el 0º y 1º elemento del arreglo a false (porque 0 y 1 no son primos).
-3. Si el 2º elemento del arreglo es true, mostrar 2 como número primo.
-4. Establecer a false todos los elementos del arreglo que sean múltiplos de 2 mayores o iguales a $2^2$*.
-5. Si el 3º elemento del arreglo es true, mostrar 3 como número primo.
-6. Establecer a false todos los elementos del arreglo que sean múltiplos de 3 mayores o iguales a $3^2$.
-7. Repetir el mismo proceso para el 4º, 5º, ..., N-ésimo elemento.
+## Implementación básica en Rust
 
-*Se dirigen los elementos a partir del cuadrado para convertirlos a false porque los números más pequeños que el cuadrado ya han sido procesados (su enumeración se ha completado).
-
-![](Animation_Sieb_des_Eratosthenes.gif)
-
-
-## Implementación en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)
-
-```
-fn main() {
-    let n = 1000;
-    let mut is_prime = vec![true; n+1];
+```rust
+fn sieve(n: usize) -> Vec<usize> {
+    if n < 2 {
+        return Vec::new();
+    }
+    let len = n.checked_add(1).expect("n + 1 is too large");
+    let mut is_prime = vec![true; len];
     is_prime[0] = false;
     is_prime[1] = false;
-    for i in 2..=n {
-        if is_prime[i] {
-            println!("{}", i);
-            let mut j = i * i;
-            while j <= n {
-                is_prime[j] = false;
-                j += i;
+
+    let mut p = 2;
+    while p <= n / p {
+        if is_prime[p] {
+            let mut multiple = p * p;
+            loop {
+                is_prime[multiple] = false;
+                if n - multiple < p {
+                    break;
+                }
+                multiple += p;
             }
         }
+        p += 1;
+    }
+
+    (2..=n).filter(|&i| is_prime[i]).collect()
+}
+
+fn main() {
+    for prime in sieve(1000) {
+        println!("{}", prime);
     }
 }
 ```
 
-## Una versión un poco más rápida
+Guarda como `sieve.rs` y compila con `rustc --edition=2021 sieve.rs -o sieve`. En Windows, usa `sieve.exe` como nombre del ejecutable. Al ejecutarlo se imprimen 168 líneas: la primera contiene 2 y la última, 997. Estos ejemplos se ejecutaron con Rust 1.90.0.
 
-Realizaremos una implementación ligeramente más rápida considerando los siguientes puntos:
+`sieve(0)` y `sieve(1)` devuelven un vector vacío; `sieve(2)` devuelve `[2]`. La condición `p <= n / p` hace que `p * p` se evalúe solo cuando el cuadrado está dentro del límite. Antes de sumar el siguiente múltiplo se comprueba la distancia restante. No se necesita una raíz cuadrada en coma flotante.
 
-- Inicializar el arreglo a false en lugar de true (esto es más rápido).
-- Omitir el proceso de establecer en false los elementos múltiplos de 2, ya que no son primos.
-- No es necesario iterar hasta n; si enumeramos los primos hasta la raíz cuadrada de n, podremos enumerar todos los primos menores o iguales a n.
+## Versión que elimina solo candidatos impares
 
-```
-fn main() {
-    let n = 1000;
-    let mut is_prime = vec![false; n+1];
+Los pares mayores que 2 son compuestos. Podemos marcar 2 como verdadero e inicializar solo los impares como candidatos. Para un primo impar `p`, su cuadrado es impar; avanzar desde él en pasos de $2p$ visita únicamente múltiplos impares.
+
+```rust
+fn sieve_odd(n: usize) -> Vec<usize> {
+    if n < 2 {
+        return Vec::new();
+    }
+    let len = n.checked_add(1).expect("n + 1 is too large");
+    let mut is_prime = vec![false; len];
     is_prime[2] = true;
     for i in (3..=n).step_by(2) {
         is_prime[i] = true;
     }
-    for i in 3..=((n as f64).sqrt() as usize) {
-        if is_prime[i] {
-            let mut j = i * i;
-            while j <= n {
-                is_prime[j] = false;
-                j += i * 2;
+
+    let mut p = 3;
+    while p <= n / p {
+        if is_prime[p] {
+            let step = 2 * p;
+            let mut multiple = p * p;
+            loop {
+                is_prime[multiple] = false;
+                if n - multiple < step {
+                    break;
+                }
+                multiple += step;
             }
         }
+        p += 2;
     }
-    for i in (2..=n).filter(|&x| is_prime[x]) {
-        println!("{}", i);
+
+    (2..=n).filter(|&i| is_prime[i]).collect()
+}
+
+fn main() {
+    for prime in sieve_odd(1000) {
+        println!("{}", prime);
     }
 }
 ```
 
-## Referencia
-- [Criba de Eratóstenes](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%A9%E3%83%88%E3%82%B9%E3%83%86%E3%83%8D%E3%82%B9%E3%81%AE%E7%AF%A9)
+Guarda esta versión en otro archivo y compílala. Imprime los mismos 168 primos, devuelve un resultado vacío para 0 y 1, y `[2]` para 2. No combines los dos `main` en un mismo archivo.
+
+Esta versión omite parte del trabajo con los pares. Sin embargo, inicializar a falso no garantiza mayor velocidad. El tiempo depende de la inicialización, las escrituras, el acceso a memoria, el compilador y la máquina. Aquí no se comparan tiempos medidos. El arreglo sigue teniendo `n + 1` elementos para que los índices correspondan directamente a los números.
+
+## Complejidad y límites de uso
+
+En el modelo RAM habitual, la criba necesita tiempo $O(n\log\log n)$ y espacio $O(n)$ para las marcas. Son estimaciones asintóticas de operaciones y almacenamiento, no tiempos medidos ni complejidad en bits para enteros de precisión arbitraria. El ejercicio de la criba del [material de análisis de Princeton](https://introcs.cs.princeton.edu/java/41analysis/) también indica este crecimiento.
+
+En Rust, [`bool`](https://doc.rust-lang.org/reference/types/boolean.html) ocupa un byte y [`Vec<T>`](https://doc.rust-lang.org/std/vec/struct.Vec.html#guarantees) almacena elementos contiguos. Este `Vec<bool>` no es un arreglo de bits empaquetados. Hay `n + 1` marcas lógicas; los metadatos del vector, la capacidad reservada y el `Vec<usize>` devuelto también requieren memoria.
+
+Si no se puede representar `n + 1`, `checked_add` devuelve `None`, y el `expect` que sigue provoca un panic. En los demás casos sigue siendo necesario disponer de suficiente memoria; no se admiten límites arbitrariamente grandes. Para intervalos grandes, considera una criba segmentada. Enumerar primos en un rango tiene un propósito distinto de comprobar un solo entero grande.
