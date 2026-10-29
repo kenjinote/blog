@@ -200,6 +200,46 @@
         "No browser visual/RTL/KaTeX/Mermaid runtime certification.",
         "Publication and live checks pending."
       ]
+    },
+    "post/fermats-little-theorem/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/fermats-little-theorem/index.md",
+      "sourceHash": "05b557bc6703982b0176505857405e7ab09f7cc82988041dd1d8adbc6ada498c",
+      "translationHash": "ff7adb6dfdcb28f2aee02a62638c336017c3af365e927ea3e160cf1b541c35a7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and revised Portuguese independently,allmetadata/body/two diagram sources,andcompare alltopics against currentJapanese. Explicit assumptions,proof,coprime cancellation,base restrictions,necessarycondition-versus-proof,Carmichael andall-representativeRSA CRT validity included."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "修正前後のポルトガル語全文・メタデータ・全2図を独立に読了。pequeno teorema,congruência,coprimo,base,expoente,módulo,resto,representante,inverso,função totiente,teorema chinês do restoを照合。元のVamos conectar alguns números reaisという直訳を具体的な整数のExemplosへ整理し、集合がcombinaという表現をpermutaçãoとして正確化。元のcriptografia/descriptografia自体は有効な用語だが本稿はcifração/decifraçãoで統一。teste／demonstração、correção／confidencialidade、primitiva／esquema、pseudoprimo／Carmichael、条件付き誤通過率／事後確率を区別。底の範囲と小さい整数処理、相異素数と全代表元CRT、固定図の数学演算と実用方式の違いを反映。自己・伝記リンクの反復と暗号全体への普遍的依存の断定を整理し、性・数の一致と否定条件も再読。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "CurrentJapanese and selected Portuguese each58TeX exact in source/decodedHTML. Allconditions andproofs manually compared. AuxiliaryPython onceper validation invocation checks5025Fermat cases,4658permutations,320coprimebases for561,and3426RSArepresentatives across4primepairs. Shared arithmetic isnot counted as executed onceper translation orarticleprogram."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable articlecode;two localizedMermaid sources andtopologies5flow/5sequenceedges reviewed andexact in generatedHTML. Auxiliaryverifier arithmetic is separate. No runtime/visual diagram certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three scopedprimaryreferences DLMF/HAC/RFC8017 andtwo reviewed matching Portuguese internalRSA/primalitytargets exact andexist in24bundleHTML. OriginalSep20publicationdate/slug/imagehash/tags/categories preserved;duplicateSep24date removedonly in this reviewed version,lastmodOct29,math/Mermaid enabled. Multilingual1387pages,HTTPS2540HTML/41XML pass. Existing17tests passed atbatch022,not rerunfor this proof. Publication pending."
+        }
+      },
+      "summary": "Full Portuguese review against correctedJapanese:theorem assumptions,proof,Fermat limitations,andRSA correctness distinctfrom secureencryption.",
+      "languageSpecificFindings": "修正前後のポルトガル語全文・メタデータ・全2図を独立に読了。pequeno teorema,congruência,coprimo,base,expoente,módulo,resto,representante,inverso,função totiente,teorema chinês do restoを照合。元のVamos conectar alguns números reaisという直訳を具体的な整数のExemplosへ整理し、集合がcombinaという表現をpermutaçãoとして正確化。元のcriptografia/descriptografia自体は有効な用語だが本稿はcifração/decifraçãoで統一。teste／demonstração、correção／confidencialidade、primitiva／esquema、pseudoprimo／Carmichael、条件付き誤通過率／事後確率を区別。底の範囲と小さい整数処理、相異素数と全代表元CRT、固定図の数学演算と実用方式の違いを反映。自己・伝記リンクの反復と暗号全体への普遍的依存の断定を整理し、性・数の一致と否定条件も再読。",
+      "validation": "docs/translation-review/batch-023-pt-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "Other6translations remain unread andunreviewed atthis stage.",
+        "Finite auxiliary arithmetic is not exhaustive proof,article-code execution or cryptographic audit.",
+        "No browser visual/RTL/KaTeX/Mermaid runtime certification.",
+        "Publication and live checks pending."
+      ]
     }
   },
   "stages": [
@@ -235,6 +275,14 @@
         "ko"
       ],
       "validation": "docs/translation-review/batch-023-ko-validation.json",
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-29",
+      "languages": [
+        "pt"
+      ],
+      "validation": "docs/translation-review/batch-023-pt-validation.json",
       "publicationPending": true
     }
   ]

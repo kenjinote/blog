@@ -1,121 +1,104 @@
 ---
 title: "O Pequeno Teorema de Fermat: A Natureza dos Números Primos e a Base da Criptografia Moderna (RSA)"
-date: "2026-09-24T19:44:38+09:00"
 description: "Uma explicação detalhada do Pequeno Teorema de Fermat, desde uma compreensão intuitiva até sua prova matemática e sua aplicação prática na criptografia RSA."
 slug: "fermats-little-theorem"
-date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags:
   - "Teoria dos Números"
   - "Criptografia"
   - "Números Primos"
+date: "2026-09-20T15:00:00+09:00"
+lastmod: 2026-10-29
+math: true
+mermaid: true
 ---
 
-Na sociedade moderna da internet, devemos nossa capacidade de comunicação segura à **criptografia**. Na própria base desta criptografia reside um belo teorema descoberto pelo matemático do século XVII [Pierre de Fermat](https://kenji.blog/pt/p/fermat/).
+O pequeno teorema de Fermat descreve potências módulo um primo. Ele fornece uma condição necessária para a primalidade e ajuda a explicar a correção da decifração RSA. Decifrar corretamente, por si só, não garante confidencialidade. Este artigo distingue o teorema, os exemplos, a demonstração, os testes de primalidade e sua aplicação ao RSA.
 
-Neste artigo, explicaremos **o Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)**, uma pedra angular crucial da teoria dos números, de uma maneira fácil de entender, cobrindo seu significado, prova e como ele é aplicado na moderna criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/).
+## O pequeno teorema de Fermat
 
-## O que é o Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)?
+Para um primo $p$ e um inteiro $a$ com $p\nmid a$:
 
-[O Pequeno Teorema de Fermat](https://kenji.blog/pt/p/fermats-little-theorem/) é um teorema extremamente simples, mas poderoso, que demonstra a relação entre números primos e inteiros.
+$$ a^{p-1}\equiv1\pmod p. $$
 
-O teorema afirma o seguinte:
+Congruência significa que a diferença entre os dois membros é múltipla do módulo. Aqui, a potência deixa resto 1 na divisão por $p$. Uma forma válida para todo inteiro $a$ é:
 
-> **Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)**
-> Seja $p$ um número primo e $a$ um número inteiro qualquer não divisível por $p$ (o que significa que $a$ e $p$ são coprimos). Então, a seguinte relação de congruência é verdadeira:
-> 
-> $$ a^{p-1} \equiv 1 \pmod p $$
+$$ a^p\equiv a\pmod p. $$
 
-Isso significa que "quando o inteiro $a$ é elevado à potência de $p-1$ e dividido pelo número primo $p$, o resto é sempre $1$".
+Se $p\nmid a$, multiplicamos a primeira congruência por $a$. Se $p\mid a$, os dois membros da segunda são congruentes a zero. Retirar a condição exige verificar esse caso separadamente também.
 
-Além disso, multiplicando ambos os lados por $a$, pode ser transformado em uma forma mais geral que remove a condição de que "$a$ não é um múltiplo de $p$".
+### Exemplos
 
-> $$ a^p \equiv a \pmod p $$
-> (Verdadeiro para qualquer inteiro $a$)
+- $p=5$, $a=2$: $2^4=16=5\cdot3+1$.
+- $p=7$, $a=3$: $3^6=729=7\cdot104+1$.
 
-### Verificando com Exemplos Concretos
+Ambos satisfazem as hipóteses e deixam resto 1. Mesmo com módulo primo, uma base divisível por ele fica fora do primeiro enunciado.
 
-Vamos conectar alguns números reais para verificar se o teorema é verdadeiro.
+## Demonstração por permutação dos restos
 
-**Exemplo 1: $p = 5$ (primo), $a = 2$**
-- $p-1 = 4$.
-- $a^{p-1} = 2^4 = 16$.
-- Quando $16$ é dividido por $5$, o quociente é $3$ e **o resto é $1$** ($16 \equiv 1 \pmod 5$).
+Multiplicamos cada elemento de $S=\{1,2,\ldots,p-1\}$ por $a$ e reduzimos módulo $p$. Nenhum resto é zero. Se $ia\equiv ja\pmod p$, como $a$ e $p$ são coprimos, podemos cancelar o fator $a$ e obter $i\equiv j\pmod p$. Os índices são positivos e menores que o módulo, portanto $i=j$.
 
-**Exemplo 2: $p = 7$ (primo), $a = 3$**
-- $p-1 = 6$.
-- $a^{p-1} = 3^6 = 729$.
-- Quando $729$ é dividido por $7$, o quociente é $104$ e **o resto é $1$** ($729 = 7 \times 104 + 1$).
+Assim, os restos obtidos formam uma permutação dos restos não nulos originais. Multiplicando todos os elementos:
 
-Dessa forma, não importa qual número primo $p$ você escolha, essa lei misteriosa é verdadeira.
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-## Prova do Teorema
+Como $(p-1)!$ é coprimo com $p$, multiplicamos por seu inverso para cancelar o fator comum e obter o teorema. Congruências não permitem dividir por um fator arbitrário sem condições.
 
-Existem várias abordagens para provar o Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), mas aqui introduzimos um método de prova representativo baseado na teoria dos números.
+## O teste de Fermat verifica uma condição necessária
 
-Seja $p$ um número primo e $a$ um número inteiro não divisível por $p$.
-Considere o conjunto $S = \{1, 2, 3, \dots, p-1\}$. Seja $S'$ um novo conjunto criado multiplicando cada elemento deste conjunto por $a$.
+Primeiro, os inteiros menores que 2 são tratados como não primos, 2 e 3 como primos, e os demais pares como compostos. Para um ímpar restante $n>3$, escolhemos uma base $a$ com $2\le a\le n-2$.
 
-$$ S' = \{a, 2a, 3a, \dots, (p-1)a\} $$
+$$ a^{n-1}\not\equiv1\pmod n $$
 
-Considere o resto quando cada elemento deste conjunto $S'$ é dividido por $p$. Surpreendentemente, todos esses restos são distintos e, além disso, nenhum deles é $0$. Em outras palavras, o conjunto de restos combina perfeitamente com o conjunto original $S$ (ignorando a ordem).
-
-Portanto, o produto dos elementos de $S$ e o produto dos elementos de $S'$ são congruentes módulo $p$.
-
-$$ 1 \times 2 \times \dots \times (p-1) \equiv a \times 2a \times \dots \times (p-1)a \pmod p $$
-
-Simplificando isso, obtém-se:
-
-$$ (p-1)! \equiv a^{p-1} \times (p-1)! \pmod p $$
-
-Como $(p-1)!$ e $p$ são coprimos, podemos dividir ambos os lados por $(p-1)!$ (uma propriedade de divisão em relações de congruência). Como resultado, o seguinte teorema é derivado:
-
-$$ 1 \equiv a^{p-1} \pmod p $$
-
-Isso conclui a prova.
-
-## Teste de Primalidade de [Fermat](https://kenji.blog/pt/p/fermat/): Aplicação ao Teste de Primos
-
-Este teorema é aplicado em um **algoritmo de teste de primalidade** (o teste de primalidade de [Fermat](https://kenji.blog/pt/p/fermat/)) para determinar se um determinado número é primo.
-
-Se você quiser saber se um número enorme $n$ é primo, escolha aleatoriamente $a$ e verifique se $a^{n-1} \equiv 1 \pmod n$ é verdadeiro. Se não for verdade, então $n$ **absolutamente não é um número primo** (é um número composto).
+implica que $n$ é composto. Se, em vez disso, o resto for 1, o teste com essa base não detectou uma violação da condição necessária; a primalidade não foi demonstrada.
 
 ```mermaid
 flowchart TD
-    Start("Início") --> ChooseA("Escolher um número inteiro aleatório a")
-    ChooseA --> Calc("Calcular a^(n-1) mod n")
-    Calc --> Check{"O resultado é 1?"}
-    Check -- "Não" --> Composite("n é um número composto (não primo)")
-    Check -- "Sim" --> ProbPrime("n provavelmente é um número primo")
+    Input["Ímpar n após tratar os inteiros pequenos e os pares"] --> Choose["Escolher uma base a entre 2 e n-2"]
+    Choose --> Calc["Calcular a elevado a n-1 módulo n"]
+    Calc --> Check{"O resto é 1?"}
+    Check -- No --> Composite["n é composto"]
+    Check -- Yes --> Pass["Passa nesta base: não é demonstração de primalidade"]
 ```
 
-No entanto, como existem números excepcionais chamados **números de Carmichael**, que são números compostos, mas satisfazem $a^{n-1} \equiv 1 \pmod n$, esse teste por si só não pode provar definitivamente a primalidade. Portanto, na prática, métodos como o teste de primalidade de Miller-Rabin são usados.
+Por exemplo, $341=11\cdot31$ é composto, mas passa no teste de base 2. Um número assim é pseudoprimo para essa base. Um número de Carmichael é composto e satisfaz a congruência de Fermat para **toda base coprima com o número**. O menor exemplo, $561=3\cdot11\cdot17$, passa na base 2, mas falha na base 3, que não é coprima com ele.
 
-## Aplicação na Criptografia Moderna: Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)
+Testar várias bases aleatórias não fornece um limite pequeno e uniforme de falsos positivos para todos os compostos. [O capítulo 4 do HAC](https://cacr.uwaterloo.ca/hac/about/chap4.pdf) distingue Fermat de Miller–Rabin. Para um composto ímpar fixo, $k$ testes de Miller–Rabin com bases aleatórias independentes e uniformes têm probabilidade de falso positivo de no máximo $4^{-k}$. Essa não é a probabilidade de o número ser composto depois de passar no teste, nem o limite se aplica automaticamente a bases fixas arbitrárias. Veja o [artigo detalhado sobre testes de primalidade](https://kenji.blog/pt/p/cpp-fast-prime-testing-miller-rabin/).
 
-A aplicação mais importante do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) (e de sua generalização, o **Teorema de Euler**) é a **criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)**, que sustenta a segurança da internet.
+## Condições para a decifração correta do RSA
 
-A criptografia RSA baseia-se na dificuldade de fatorar números massivos para sua segurança. Dentro de seu mecanismo, o princípio do "Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)" desempenha um papel decisivo nos processos de geração de chaves e descriptografia.
+Escolhemos primos distintos $p,q$ e definimos $n=pq$. Usando a função totiente $\varphi(n)=(p-1)(q-1)$, esta construção didática escolhe um expoente público com $1<e<\varphi(n)$ e $\gcd(e,\varphi(n))=1$. Seu inverso é o expoente privado positivo $d$:
+
+$$ ed\equiv1\pmod{\varphi(n)}. $$
+
+A chave pública é $(n,e)$, e uma representação simplificada da chave privada é $(n,d)$. Chaves privadas reais podem incluir fatores que aceleram os cálculos; eles também são secretos. As operações matemáticas sobre um representante inteiro $0\le M<n$ são:
+
+$$ C=M^e\bmod n,\qquad M'=C^d\bmod n. $$
 
 ```mermaid
 sequenceDiagram
-    participant Sender as "Remetente"
-    participant Receiver as "Destinatário"
-    Note over Receiver: "Gerar chave pública (e, n) e chave privada (d)"
-    Receiver->>Sender: "Enviar chave pública (e, n)"
-    Note over Sender: "Criptografar texto simples M"
-    Note over Sender: "C = M^e mod n"
-    Sender->>Receiver: "Enviar texto cifrado C"
-    Note over Receiver: "Descriptografar texto cifrado C"
-    Note over Receiver: "M = C^d mod n"
+    participant Sender as Remetente
+    participant Receiver as Destinatário
+    Note over Sender,Receiver: Exemplo didático de RSA sem codificação da mensagem
+    Receiver->>Sender: Fornecer a chave pública (n,e)
+    Sender->>Sender: Preparar um representante inteiro M de 0 a n-1
+    Sender->>Sender: Calcular C = M^e mod n
+    Sender->>Receiver: Fornecer C
+    Receiver->>Receiver: Calcular M' = C^d mod n
 ```
 
-Na criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), dois enormes números primos, $p$ e $q$, são preparados e definimos $n = p \times q$.
-Pelo Teorema de Euler, as chaves ($e$ e $d$) são projetadas de forma que $M^{ed} \equiv M \pmod n$ seja verdadeiro nos processos de criptografia e descriptografia. Aqui, o fenômeno mágico do texto simples $M$ retornando à sua forma original baseia-se essencialmente nas propriedades matemáticas garantidas pelo Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/).
+Se $\gcd(M,n)=1$, [o teorema de Euler](https://dlmf.nist.gov/27.2#E8) fornece $M^{\varphi(n)}\equiv1\pmod n$. Como $ed=1+t\varphi(n)$ para algum inteiro não negativo $t$, a decifração recupera o representante original.
 
-## Conclusão
+Para incluir representantes que não sejam coprimos com o módulo, trabalhamos módulo cada primo. Se $p\mid M$, tanto $M^{ed}$ quanto $M$ são congruentes a zero. Caso contrário, o pequeno teorema de Fermat e $p-1\mid ed-1$ fornecem a congruência necessária. O mesmo argumento vale módulo $q$. Pelo teorema chinês do resto:
 
-Um pequeno teorema descoberto por [Pierre de Fermat](https://kenji.blog/pt/p/fermat/) no século XVII tornou-se um elemento indispensável que sustenta a base da segurança da informação na sociedade moderna centenas de anos depois.
+$$ M^{ed}\equiv M\pmod p,\quad M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod n. $$
 
-**[O Pequeno Teorema de Fermat](https://kenji.blog/pt/p/fermats-little-theorem/)** pode ser considerado um dos mais belos exemplos que demonstram como a matemática pura se conecta à tecnologia prática (criptografia e algoritmos). Não se pode deixar de se surpreender com a profundidade da matemática e a amplitude de sua aplicabilidade.
+Isso recupera todos os representantes, inclusive zero e múltiplos dos fatores. Fatorar o módulo permite calcular o expoente privado, mas não significa que a inversão geral do RSA e a fatoração tenham sido demonstradas equivalentes em dificuldade.
+
+## Separar correção e segurança
+
+O RSA do diagrama, sem codificação da mensagem, é determinístico e insuficiente como esquema de cifração seguro. [As seções 5 e 7 do RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html) distinguem primitivas de esquemas de cifração. O uso em produção exige uma biblioteca auditada, um esquema apropriado como RSAES-OAEP, parâmetros adequados, aleatoriedade segura e gestão de chaves. RSASSA-PSS é um esquema de assinatura separado.
+
+O pequeno teorema de Fermat fornece uma base para entender a aritmética modular e a matemática do RSA. É preciso distinguir o teorema, os testes de primalidade, as chaves válidas e os esquemas criptográficos práticos. A [introdução ao RSA](https://kenji.blog/pt/p/rsa-encryption-math-explained-for-beginners/) explica melhor essa distinção.

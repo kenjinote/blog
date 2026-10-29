@@ -42,3 +42,8 @@
 ## 한국어の確認
 
 修正前後の韓国語全文・メタデータ・全2図を独立に読了。페르마의 소정리,합동식,서로소,밑,법,지수,나머지,역원,오일러 피 함수,대표원,유사소수,중국인의 나머지 정리を照合。元の有効なCRT呼称は保持。小さい整数と偶数の処理・底の範囲、カーマイケルの互いに素な全底条件、相異なる素数と全代表元CRT証明を反映。필요조건／증명、정확성／기밀성、프리미티브／암호화 방식、条件付き誤通過率と事後確率を区別。図の소수일 가능성이 높음という断定を이 밑을 통과함: 소수라는 증명은 아님へ訂正。自己・伝記リンクの反復と現代暗号全体への普遍的依存の断定を整理し、数式直後の助詞と語間も再読した。 各58TeX・図5辺／5辺とソース全文、14hreflang／13切替先、3外部・2内部参照、公開日と画像ハッシュをdocs/translation-review/batch-023-ko-validation.jsonで確認。補助算術は当該検証呼出しで1回実行した共通検査であり、各翻訳での実行と重複計上しない。24記事束の多言語1387ページ、HTTPS2540HTML／41XMLを通過。確認日2026-10-29、AI。残る7翻訳と公開確認は未完了。
+
+
+## Portuguêsの確認
+
+修正前後のポルトガル語全文・メタデータ・全2図を独立に読了。pequeno teorema,congruência,coprimo,base,expoente,módulo,resto,representante,inverso,função totiente,teorema chinês do restoを照合。元のVamos conectar alguns números reaisという直訳を具体的な整数のExemplosへ整理し、集合がcombinaという表現をpermutaçãoとして正確化。元のcriptografia/descriptografia自体は有効な用語だが本稿はcifração/decifraçãoで統一。teste／demonstração、correção／confidencialidade、primitiva／esquema、pseudoprimo／Carmichael、条件付き誤通過率／事後確率を区別。底の範囲と小さい整数処理、相異素数と全代表元CRT、固定図の数学演算と実用方式の違いを反映。自己・伝記リンクの反復と暗号全体への普遍的依存の断定を整理し、性・数の一致と否定条件も再読。 各58TeX・図5辺／5辺とソース全文、14hreflang／13切替先、3外部・2内部参照、公開日と画像ハッシュをdocs/translation-review/batch-023-pt-validation.jsonで確認。補助算術は当該検証呼出しで1回実行した共通検査であり、各翻訳での実行と重複計上しない。24記事束の多言語1387ページ、HTTPS2540HTML／41XMLを通過。確認日2026-10-29、AI。残る6翻訳と公開確認は未完了。
