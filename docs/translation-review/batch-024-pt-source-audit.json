@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:22:36.413944+09:00",
+  "path": "content/post/chinese-remainder-theorem/index.pt.md",
+  "sha256": "4cf78c47c5c6129e9931d03b7132450adb1f890205052ec79f57dbf75ac51af2",
+  "fullOriginalBodyMetadataPythonAndDiagramRead": true,
+  "completeOriginalPythonExecuted": true,
+  "stdout": "Solução para o problema de Sunzi: 23\n",
+  "missingResidueReturned": 5,
+  "extraResidueReturned": 2,
+  "findings": "Read all original Portuguese, retaining European Portuguese usage polinómio/facto/decifragem. Shared theorem/API/RSA/polynomial/RNS gaps; old text states largura do bit and no carry without channel/range qualifications. Coprimos and primos entre si are valid; make pairwise condition explicit rather than calling existing phrase wrong. Original23example correct. Repeated self/biography/broad cryptography links replaced after revision.",
+  "reviewed": false
+}

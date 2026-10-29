@@ -1,9 +1,7 @@
 ---
 title: "Teorema Chinês do Resto (Chinese Remainder Theorem) - Da Aritmética Antiga ao Grande Teorema que Suporta a Criptografia RSA Moderna"
-date: "2026-09-24T19:44:38+09:00"
 description: "Explica o Teorema Chinês do Resto (CRT), que tem as suas origens em textos aritméticos chineses antigos, desde os seus princípios matemáticos até às suas importantes aplicações na criptografia moderna de chave pública (Criptografia RSA)."
 slug: "chinese-remainder-theorem"
-date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "cryptography"]
 tags:
@@ -11,239 +9,176 @@ tags:
   - "CRT"
   - "Criptografia RSA"
   - "Teoria dos Números"
+date: "2026-09-14T13:11:25+09:00"
+lastmod: 2026-10-30
+math: true
+mermaid: true
 ---
 
-## Introdução
+O teorema chinês do resto (CRT) combina restos relativos a módulos diferentes numa classe de resíduos. Liga problemas com inteiros, operações RSA com a chave privada, anéis e polinómios, e aritmética paralela por resíduos. Importa explicitar as condições sobre os módulos, o intervalo de reconstrução e a diferença entre correção aritmética e segurança criptográfica.
 
-O Teorema Chinês do Resto ([Chinese Remainder Theorem](https://kenji.blog/pt/p/chinese-remainder-theorem/), abreviado CRT) é um dos teoremas mais importantes e belos da teoria dos números. As suas origens remontam ao "Sunzi Suanjing", um antigo livro de matemática chinês compilado entre os séculos III e V. Este teorema, que começou com simples problemas aritméticos na antiguidade, desempenha hoje, milhares de anos depois, um papel essencial nas tecnologias de criptografia de chave pública, como a **Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)**, que suportam as comunicações seguras na internet que utilizamos diariamente.
+## 1. O problema de Sunzi e o conjunto das soluções
 
-Neste artigo, explicaremos detalhadamente este **Teorema Chinês do Resto**, desde o seu contexto histórico, definições matemáticas rigorosas e procedimentos de cálculo específicos, até às suas aplicações na teoria da criptografia moderna, acompanhados de diagramas e exemplos concretos.
+O exemplo associado ao Sunzi Suanjing pede um número que deixe resto 2 na divisão por 3, resto 3 na divisão por 5 e resto 2 na divisão por 7. Um [estudo histórico reproduz o problema e o cálculo](https://sgmathsociety.org/smsmedley/Vol-30-1/The%20History%20of%20the%20Chinese%20Reminder%20Theorem%20%28Law%20Huang%20lng%29.pdf).
 
-## Contexto Histórico: O Problema de Sunzi
+$$ x\equiv2\pmod3,\quad x\equiv3\pmod5,\quad x\equiv2\pmod7. $$
 
-As raízes do Teorema Chinês do Resto encontram-se no seguinte famoso problema, registado na 26ª questão do volume inferior de "Sunzi Suanjing".
+A menor solução não negativa é 23. Não existe apenas uma solução inteira: todas são $x=23+105t$, com $t\in\mathbb Z$. Por exemplo, 128 também satisfaz as condições.
 
-> "Temos agora algumas coisas de número desconhecido. Se as contarmos de três em três, sobram duas; se de cinco em cinco, sobram três; se de sete em sete, sobram duas. Qual é o número de coisas?"
+## 2. CRT para inteiros: hipóteses e unicidade
 
-Expressando isto utilizando o sistema de congruências da notação matemática moderna, para um inteiro desconhecido $x$, temos o seguinte:
+Tomamos $k\ge1$ e módulos $m_i>1$ coprimos dois a dois: $\gcd(m_i,m_j)=1$ quando $i\ne j$. Os próprios módulos não têm de ser primos. Para quaisquer restos inteiros $a_i$, o sistema
 
-$$
-\begin{cases}
-x \equiv 2 \pmod 3 \\
-x \equiv 3 \pmod 5 \\
-x \equiv 2 \pmod 7
-\end{cases}
-$$
+$$ x\equiv a_i\pmod{m_i}\quad(1\le i\le k) $$
 
-A solução deste problema é $x = 23$. "Sunzi Suanjing" também fornece o procedimento de cálculo específico para derivar esta solução, o que é considerado o primeiro exemplo de um método de construção para o Teorema Chinês do Resto.
+tem exatamente uma solução módulo $M=\prod_{i=1}^k m_i$. Assim, existe um único representante com $0\le x<M$. Não basta que o máximo divisor comum de todos os módulos em conjunto seja 1: 6, 10 e 15 têm máximo divisor comum global igual a 1, mas não são coprimos dois a dois. A [demonstração do CRT para inteiros](https://kconrad.math.uconn.edu/blurbs/ugradnumthy/crt.pdf) explica esta distinção.
 
-## Definição Matemática e o Enunciado do Teorema
+A diferença entre duas soluções quaisquer é divisível por cada módulo. Como os módulos são coprimos dois a dois, essa diferença é divisível pelo produto, o que prova a unicidade. A construção seguinte prova a existência.
 
-Na matemática moderna, o **Teorema Chinês do Resto** é formulado da seguinte forma.
+## 3. Construção com inversos e exemplo de cálculo
 
-### Enunciado do Teorema
+Para cada módulo, o algoritmo de Euclides estendido permite encontrar um inverso que satisfaça
 
-Suponhamos que temos $k$ inteiros positivos $m_1, m_2, \dots, m_k$ que são primos entre si (o seu máximo divisor comum é 1). Ou seja, para qualquer $i \neq j$, verifica-se $\gcd(m_i, m_j) = 1$.
+$$ M_i=M/m_i,\quad M_i y_i\equiv1\pmod{m_i} $$
 
-Então, para quaisquer inteiros $a_1, a_2, \dots, a_k$, existe um único inteiro $x$, módulo $M = m_1 m_2 \dots m_k$, que satisfaz o seguinte sistema de congruências.
+A coprimalidade garante a existência do inverso. Reduzindo a soma seguinte ao intervalo do módulo, obtemos a solução:
 
-$$
-\begin{cases}
-x \equiv a_1 \pmod{m_1} \\
-x \equiv a_2 \pmod{m_2} \\
-\vdots \\
-x \equiv a_k \pmod{m_k}
-\end{cases}
-$$
+$$ x=\left(\sum_{i=1}^k a_iM_iy_i\right)\bmod M. $$
 
-Por outras palavras, a solução $x$ existe e é única no intervalo $0 \leq x < M$, e todas as soluções podem ser expressas na forma $x \equiv x_0 \pmod M$.
+Ao reduzir módulo $m_j$, os termos com $i\ne j$ desaparecem e o termo restante é congruente com $a_j$. Isto demonstra a existência.
 
-### Prova e Método de Construção (Algoritmo de Gauss)
+No exemplo de Sunzi, $M=105$, os produtos parciais são 35, 21 e 15, e os inversos correspondentes são 2, 1 e 1.
 
-O ponto brilhante deste teorema é que não só garante a existência da solução, mas também fornece um algoritmo para construir a solução específica. O método de construção é mostrado abaixo.
+$$ 2\cdot35\cdot2+3\cdot21\cdot1+2\cdot15\cdot1=233,
+\qquad233\bmod105=23. $$
 
-1. Calcule o produto total $M = m_1 m_2 \dots m_k$.
-2. Para cada $i$, calcule $M_i = \frac{M}{m_i}$. ($M_i$ é o produto de todos os módulos exceto $m_i$)
-3. Como $\gcd(M_i, m_i) = 1$, existe o inverso multiplicativo $y_i$ de $M_i$ módulo $m_i$. Ou seja, encontramos o $y_i$ que satisfaz $M_i y_i \equiv 1 \pmod{m_i}$ utilizando o algoritmo euclidiano estendido, etc.
-4. A solução final $x$ é dada pela seguinte fórmula.
+Há uma generalização separada para módulos não coprimos. Com dois módulos, existe solução se e só se o máximo divisor comum dividir a diferença entre os restos; a solução é única módulo o mínimo múltiplo comum. Por exemplo, os módulos 4 e 6 com restos 1 e 3 dão 9 módulo 12, mas com restos 0 e 1 não existe solução. O código abaixo não implementa esta generalização: aceita apenas módulos coprimos dois a dois.
 
-$$
-x = \sum_{i=1}^{k} a_i M_i y_i \pmod M
-$$
+## 4. Implementação em Python com validação das entradas
 
-O facto de este $x$ satisfazer o sistema original de congruências pode ser facilmente verificado avaliando $x$ em cada módulo $m_j$. Quando $i \neq j$, $M_i$ é um múltiplo de $m_j$, logo $M_i \equiv 0 \pmod{m_j}$. Portanto, na soma, apenas resta o termo $i = j$, e $x \equiv a_j M_j y_j \equiv a_j \cdot 1 \equiv a_j \pmod{m_j}$, satisfazendo a condição.
-
-## Cálculo com um Exemplo Concreto
-
-Vamos resolver o "Problema de Sunzi" usando este algoritmo.
-
-Problema:
-$x \equiv 2 \pmod 3$  (onde $a_1=2, m_1=3$)
-$x \equiv 3 \pmod 5$  (onde $a_2=3, m_2=5$)
-$x \equiv 2 \pmod 7$  (onde $a_3=2, m_3=7$)
-
-**Passo 1:** Cálculo de $M$
-$M = 3 \times 5 \times 7 = 105$
-
-**Passo 2:** Cálculo de $M_i$
-$M_1 = 105 / 3 = 35$
-$M_2 = 105 / 5 = 21$
-$M_3 = 105 / 7 = 15$
-
-**Passo 3:** Cálculo dos inversos $y_i$
-- $35 y_1 \equiv 1 \pmod 3 \implies 2 y_1 \equiv 1 \pmod 3 \implies y_1 = 2$
-- $21 y_2 \equiv 1 \pmod 5 \implies 1 y_2 \equiv 1 \pmod 5 \implies y_2 = 1$
-- $15 y_3 \equiv 1 \pmod 7 \implies 1 y_3 \equiv 1 \pmod 7 \implies y_3 = 1$
-
-**Passo 4:** Cálculo da solução $x$
-$x = (2 \times 35 \times 2) + (3 \times 21 \times 1) + (2 \times 15 \times 1)$
-$x = 140 + 63 + 30 = 233$
-
-Encontramos o resto disto dividindo por $M = 105$.
-$233 \equiv 23 \pmod{105}$
-
-Assim, a menor solução positiva é **23**, coincidindo perfeitamente com a solução de Sunzi.
-
-## Aplicações Modernas: Criptografia RSA e CRT
-
-O que era um antigo quebra-cabeças, o **Teorema Chinês do Resto**, tem usos extremamente práticos na sociedade digital moderna. Um exemplo principal é a aceleração da decifragem e geração de assinaturas na **Criptografia RSA**.
-
-### Resumo da Criptografia RSA
-
-Na Criptografia RSA, utilizam-se dois grandes números primos $p$ e $q$, e o seu produto $N = pq$ faz parte da chave pública. O cálculo para decifrar o texto cifrado $C$ no texto simples $M$ é feito usando a chave privada $d$ da seguinte forma.
-
-$$
-M = C^d \pmod N
-$$
-
-Aqui, como $N$ é um número enorme (por exemplo, 2048 bits) e $d$ é de dimensão semelhante, esta exponenciação modular envolve um elevado custo computacional.
-
-### Aceleração com CRT (RSA-CRT)
-
-Eis que entra em cena o **Teorema Chinês do Resto**. Em vez de realizar um enorme cálculo de módulo $N$, a abordagem passa por o dividir em dois pequenos cálculos usando os fatores primos $p$ e $q$ de $N$ como módulos e, finalmente, reconstruir a solução original usando o CRT.
-
-Especificamente, seguimos as etapas abaixo.
-
-```mermaid
-graph TD
-    A["Texto cifrado C"] --> B["Calcular C_p = C mod p"]
-    A --> C["Calcular C_q = C mod q"]
-    B --> D["Calcular M_p = (C_p)^(d mod (p-1)) mod p"]
-    C --> E["Calcular M_q = (C_q)^(d mod (q-1)) mod q"]
-    D --> F["Restaurar M mod N a partir de M_p e M_q usando CRT"]
-    E --> F
-    F --> G["Texto simples M"]
-```
-
-1. Como chave privada, em vez de $d$, pré-calculamos $d_p = d \pmod{p-1}$ e $d_q = d \pmod{q-1}$.
-2. A decifragem no módulo $p$ e módulo $q$ é feita de forma independente.
-   $M_p = C^{d_p} \pmod p$
-   $M_q = C^{d_q} \pmod q$
-3. O CRT é aplicado a $M_p$ e $M_q$ para obter $M \pmod N$.
-
-Quando o módulo fica com metade do tamanho em bits (por exemplo, 1024 bits), o custo do cálculo da exponenciação diminui para cerca de 1/8. Fazer isto duas vezes resulta num custo total de cerca de 1/4; logo, o uso de [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)-CRT pode tornar a decifragem e a geração de assinaturas **cerca de 4 vezes mais rápidas**. Em dispositivos com recursos computacionais limitados, como smartphones ou cartões inteligentes, esta aceleração é crucial.
-
-## Implementação em Programação do Teorema Chinês do Resto
-
-Além da teoria, vamos escrever código para implementar o **Teorema Chinês do Resto**. Aqui, implementaremos o algoritmo de Gauss usando Python.
+Apenas são aceites valores do tipo incorporado `int`; `bool` e valores de vírgula flutuante são rejeitados. As entradas devem ser iteráveis finitos, não vazios e com o mesmo comprimento. Cada módulo deve ser maior que 1 e os módulos devem ser coprimos dois a dois. Os restos podem ser negativos ou exceder o respetivo módulo. O resultado é o menor representante não negativo módulo o produto. Excluir o módulo 1 e o sistema vazio faz parte do contrato desta API didática.
 
 ```python
-def extended_gcd(a, b):
-    """
-    Algoritmo Euclidiano Estendido
-    Retorna (gcd(a, b), x, y) tal que a*x + b*y = gcd(a, b)
-    """
-    if a == 0:
-        return b, 0, 1
-    else:
-        g, y, x = extended_gcd(b % a, a)
-        return g, x - (b // a) * y, y
+from math import gcd, prod
 
-def mod_inverse(a, m):
-    """
-    Retorna o inverso multiplicativo de a módulo m
-    """
-    g, x, y = extended_gcd(a, m)
+
+def _extended_gcd(a, b):
+    # Internal helper: integer a, positive integer b.
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r:
+        quotient = old_r // r
+        old_r, r = r, old_r - quotient * r
+        old_s, s = s, old_s - quotient * s
+        old_t, t = t, old_t - quotient * t
+    return old_r, old_s, old_t
+
+
+def mod_inverse(a, modulus):
+    if type(a) is not int or type(modulus) is not int:
+        raise TypeError("Arguments must be built-in integers")
+    if modulus <= 1:
+        raise ValueError("Modulus must exceed one")
+    g, x, _ = _extended_gcd(a % modulus, modulus)
     if g != 1:
-        raise Exception('O inverso modular não existe')
-    else:
-        return x % m
+        raise ValueError("Inverse does not exist")
+    return x % modulus
 
-def chinese_remainder_theorem(a_list, m_list):
-    """
-    Teorema Chinês do Resto (CRT)
-    Retorna x que satisfaz x ≡ a_i (mod m_i)
-    """
-    total_m = 1
-    for m in m_list:
-        total_m *= m
-        
-    x = 0
-    for a, m in zip(a_list, m_list):
-        M_i = total_m // m
-        y_i = mod_inverse(M_i, m)
-        x += a * M_i * y_i
-        
-    return x % total_m
 
-# Resolvendo o problema de Sunzi
-a = [2, 3, 2]
-m = [3, 5, 7]
-result = chinese_remainder_theorem(a, m)
-print(f"Solução para o problema de Sunzi: {result}") # Saída: 23
+def chinese_remainder_theorem(residues, moduli):
+    residues, moduli = tuple(residues), tuple(moduli)
+    if not moduli or len(residues) != len(moduli):
+        raise ValueError("Provide equally sized, nonempty inputs")
+    if any(type(x) is not int for x in residues + moduli):
+        raise TypeError("Residues and moduli must be built-in integers")
+    if any(m <= 1 for m in moduli):
+        raise ValueError("Every modulus must exceed one")
+    for i, m in enumerate(moduli):
+        if any(gcd(m, other) != 1 for other in moduli[:i]):
+            raise ValueError("Moduli must be pairwise coprime")
+
+    combined_modulus = prod(moduli)
+    result = 0
+    for a, m in zip(residues, moduli):
+        partial = combined_modulus // m
+        inverse = mod_inverse(partial, m)
+        result = (result + (a % m) * partial * inverse) % combined_modulus
+    return result
+
+
+if __name__ == "__main__":
+    residues = [2, 3, 2]
+    moduli = [3, 5, 7]
+    print("Sunzi solution:", chinese_remainder_theorem(residues, moduli))
+    print("Combined modulus:", prod(moduli))
 ```
 
-Deste modo, com apenas algumas dezenas de linhas de código, é possível reproduzir o **Teorema Chinês do Resto** num computador. Esta implementação é um algoritmo básico frequentemente utilizado, inclusive, em programação competitiva.
+Com Python 3.12, o programa imprime `Sunzi solution: 23` e `Combined modulus: 105`. Comprimentos diferentes não são truncados silenciosamente; verificam-se os módulos nulos ou negativos, os tipos e a coprimalidade. Os inteiros de Python evitam o transbordo de largura fixa, mas o tempo e a memória dependem do comprimento das entradas e do tamanho dos inteiros. Esta não é uma implementação criptográfica de tempo constante.
 
-## Generalização em Álgebra Abstrata: Anéis e Ideais
+## 5. O que o RSA-CRT reconstrói
 
-O **Teorema Chinês do Resto** não se limita a simples propriedades de números inteiros, tendo sido expandido para formas mais gerais na **Álgebra Abstrata**, uma área importante da matemática moderna.
+Suponhamos uma chave RSA válida de dois primos. Usam-se primos ímpares distintos $p,q$, $N=pq$, um expoente público $e$ e um expoente privado $d$ que satisfazem $ed\equiv1\pmod{\lambda(N)}$, onde $\lambda(N)=\operatorname{lcm}(p-1,q-1)$. O representante do texto cifrado satisfaz $0\le C<N$; a operação direta com a chave privada é $m=C^d\bmod N$.
 
-Consideremos um anel comutativo $R$ e os seus ideais $I_1, I_2, \dots, I_k$. Quando estes ideais são co-primos (isto é, para qualquer $i \neq j$, $I_i + I_j = R$), podemos definir o seguinte homomorfismo de anel natural $\phi$.
+Preparam-se os parâmetros CRT:
 
-$$
-\phi: R \to (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
-$$
-\phi(x) = (x \pmod{I_1}, x \pmod{I_2}, \dots, x \pmod{I_k})
-$$
+$$ d_p=d\bmod(p-1),\quad d_q=d\bmod(q-1),\quad q_{\mathrm{inv}}=q^{-1}\bmod p. $$
 
-O **Teorema Chinês do Resto** na álgebra abstrata afirma que este homomorfismo $\phi$ é sobrejetivo, e o seu núcleo (kernel) é a interseção dos ideais $\bigcap_{i=1}^k I_i$ (que coincide com o produto dos ideais $\prod_{i=1}^k I_i$).
+$$ m_p=C^{d_p}\bmod p,\quad m_q=C^{d_q}\bmod q. $$
 
-Portanto, de acordo com o Primeiro Teorema do Isomorfismo, o seguinte isomorfismo natural é válido.
+$$ h=(m_p-m_q)q_{\mathrm{inv}}\bmod p,\qquad m=m_q+qh. $$
 
-$$
-R / \left( \bigcap_{i=1}^k I_i \right) \cong (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
+Este representante tem os restos necessários para os dois primos e pertence ao intervalo do módulo original. As [secções 3.2 e 5.1.2 do RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html) especificam esta representação da chave privada e a reconstrução. Os dois expoentes CRT não substituem, por si só, a chave privada completa: os fatores e o coeficiente também são material secreto da chave.
 
-### Aplicação aos Anéis de Polinómios
+```mermaid
+flowchart TD
+    A["Representante cifrado C no intervalo e chave privada válida"] --> B["m_p = C^d_p mod p"]
+    A --> C["m_q = C^d_q mod q"]
+    B --> D["h = (m_p - m_q) q_inv mod p"]
+    C --> D
+    D --> E["Reconstruir m = m_q + q h"]
+    E --> F["Continuar o esquema numa biblioteca auditada"]
+```
 
-Uma das aplicações mais importantes deste teorema generalizado é o **Teorema Chinês do Resto** no anel de polinómios de uma variável $F[x]$ sobre o corpo $F$.
+O diagrama descreve aritmética de inteiros e omite a codificação da mensagem e a validação do esquema. A cifragem e as assinaturas usadas na prática empregam esquemas distintos. Como explica a [introdução ao RSA](https://kenji.blog/pt/p/rsa-encryption-math-explained-for-beginners/), uma biblioteca auditada deve realizar o processamento adequado à finalidade.
 
-"Inteiros coprimos" no caso dos números inteiros correspondem a "polinómios sem raízes comuns (o máximo divisor comum polinomial é constante)" no anel de polinómios. Esta versão polinomial do CRT é o suporte teórico da interpolação de [Lagrange](https://kenji.blog/pt/p/lagrange/), e é completamente equivalente ao algoritmo que determina exclusivamente um polinómio do menor grau possível que passa por múltiplos pontos dados. Sendo também a base matemática para o **Código de Reed-Solomon**, que é um tipo de código corretor de erros.
+## 6. Estimativas de velocidade e limites da implementação
 
-## Computação Massivamente Paralela Baseada no Sistema de Resíduos Numéricos (RNS)
+A nota 14.75 do [capítulo 14 do HAC](https://cacr.uwaterloo.ca/hac/about/chap14.pdf) estima um fator de aproximadamente quatro sob certas hipóteses: primos de dimensões semelhantes, multiplicação clássica de custo quadrático, número de multiplicações proporcional ao comprimento do expoente em bits e custo de reconstrução desprezável. Outros algoritmos de multiplicação, a execução paralela, as defesas e os dispositivos alteram essa proporção. Não se trata de uma aceleração por quatro medida no código deste artigo.
 
-Como aplicação de engenharia do **Teorema Chinês do Resto**, falemos também do **Sistema de Resíduos Numéricos (Residue Number System, RNS)**.
+Se um dos restos CRT calculados separadamente for corrompido, um resultado não verificado pode revelar um fator secreto. O [artigo sobre análise de falhas no RSA-CRT](https://courses.csail.mit.edu/6.857/2010/handouts/faults.pdf) explica as condições. A correção da aritmética didática não garante proteção contra falhas nem resistência a canais laterais. As defesas, incluindo verificações com a chave pública, pertencem a uma biblioteca que trate o esquema completo.
 
-Tipicamente, os computadores representam números e efetuam cálculos utilizando a base binária (sistema binário). Contudo, ao realizar adições ou multiplicações, ocorre propagação de transporte (carry). Assim, se a largura do bit for grande, o atraso no circuito aumenta, o que é um problema.
+## 7. Generalização a anéis e ideais
 
-No RNS, é preparado um conjunto de módulos mutuamente primos $\{m_1, m_2, \dots, m_k\}$, e um inteiro gigante $X$ é representado como um conjunto de restos $(x_1, x_2, \dots, x_k)$ divididos por cada módulo.
+Para um anel comutativo com unidade $R$ e um número finito de ideais, suponhamos que $I_i+I_j=R$ dois a dois, isto é, que os ideais são comaximais dois a dois. O homomorfismo natural
 
-A maior vantagem desta representação é que **não ocorrem transportes (carry)** na adição e multiplicação.
-Por exemplo, ao somar $X$ e $Y$, os cálculos podem ser feitos independentemente para cada módulo.
+$$ \phi:R\longrightarrow\prod_{i=1}^k R/I_i,\qquad
+\phi(r)=(r+I_1,\ldots,r+I_k) $$
 
-$$
-X + Y \leftrightarrow ( (x_1+y_1)\pmod{m_1}, \dots, (x_k+y_k)\pmod{m_k} )
-$$
-$$
-X \times Y \leftrightarrow ( (x_1y_1)\pmod{m_1}, \dots, (x_k y_k)\pmod{m_k} )
-$$
+é sobrejetivo e o seu núcleo é a interseção dos ideais. Sob esta condição, a interseção coincide com o produto, pelo que:
 
-Como a computação em cada módulo é completamente independente, a montagem de um circuito paralelo possibilita operações computacionais extremamente rápidas. Ao converter o resultado final de volta a um número normal, utiliza-se precisamente o **Teorema Chinês do Resto**. Atualmente, esta tecnologia ainda é estudada e aplicada em processamentos digitais de sinais (DSP) que exigem processamento em tempo real, ou na conceção de determinados circuitos de processamento criptográfico.
+$$ R/\left(\bigcap_{i=1}^k I_i\right)
+\cong\prod_{i=1}^k R/I_i,\qquad
+\bigcap_{i=1}^k I_i=\prod_{i=1}^k I_i. $$
 
-## Resumo
+O [teorema chinês do resto do Stacks Project](https://stacks.math.columbia.edu/tag/00DT) apresenta as hipóteses e a demonstração. Os módulos inteiros coprimos dois a dois são um caso particular desta condição sobre ideais.
 
-O **Teorema Chinês do Resto** começou por ser um mero quebra-cabeças matemático, elevou-se a um teorema estrutural de ideais na álgebra abstrata, e depois transformou-se numa tecnologia fundacional das modernas teorias da criptografia e ciência da computação.
+## 8. Polinómios e interpolação
 
-Milhares de anos mais tarde, a sabedoria dos antigos matemáticos chineses continua a viver como processamento criptográfico nos nossos smartphones, o que pode ser considerado um símbolo da universalidade e força da matemática como disciplina de estudo.
+Dois polinómios sobre um corpo são coprimos quando o seu máximo divisor comum é uma constante não nula. Não basta não terem raízes comuns no corpo original. Por exemplo, sobre os racionais, tomemos ambos os polinómios iguais a $x^2+1$. Nenhum tem raízes racionais, mas o máximo divisor comum é esse mesmo polinómio quadrático. Uma caracterização por raízes comuns exige trabalhar num fecho algébrico.
+
+Os fatores lineares correspondentes a pontos de avaliação distintos $\alpha_1,\ldots,\alpha_k$ são coprimos dois a dois. Por isso, o polinómio com os valores indicados é único entre os de grau $<k$. Esta é a ligação à interpolação de Lagrange. Se permitirmos graus superiores, perdemos a unicidade. A avaliação e os limites de grau sobre corpos finitos também se relacionam com os códigos de Reed–Solomon, mas o CRT, por si só, não garante a capacidade de correção de erros.
+
+## 9. Sistemas de numeração por resíduos e intervalos de reconstrução
+
+Um RNS representa inteiros por um tuplo de restos relativos a vários módulos e permite somar e multiplicar por componentes. Aqui $x_i=X\bmod m_i$ e $y_i=Y\bmod m_i$. Para o produto $M$ dos módulos:
+
+$$ (X+Y)\bmod M\longleftrightarrow
+((x_i+y_i)\bmod m_i)_{i=1}^k, $$
+
+$$ (XY)\bmod M\longleftrightarrow
+((x_iy_i)\bmod m_i)_{i=1}^k. $$
+
+Não é necessário propagar transportes entre canais, mas a aritmética binária dentro de cada canal ainda pode envolver transportes. A reconstrução dá um representante módulo o produto; não recupera de forma única uma soma ou um produto de inteiros sem restrições que exceda esse intervalo. A comparação, a divisão e a conversão para a representação habitual exigem trabalho adicional.
+
+De um problema clássico de restos à criptografia, à álgebra e à aritmética paralela, o CRT reconstrói restos compatíveis sob condições explícitas sobre os módulos e os intervalos. Distinguir esses intervalos e utilizações é essencial para o aplicar corretamente.
