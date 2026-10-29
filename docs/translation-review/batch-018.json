@@ -1065,7 +1065,7 @@
     "casesPerVersionPerOptimizedAndUbsanHarness": 101275,
     "sampleOutputsPerVersion": 11,
     "repositoryTests": 17,
-    "publicationPending": true,
+    "publicationPending": false,
     "reviewEvidenceOverrides": {
       "post/cppで実装する高速な素数判定アルゴリズム/index.zh-cn.md": "docs/translation-review/batch-018-cn-revision.json"
     },
@@ -1073,7 +1073,8 @@
       "AI, not human/native-speaker certification.",
       "Finite tests, not independent exhaustive64bit base-set proof.",
       "No timing, visualbrowser/RTL, cryptographic-library or constant-time certification."
-    ]
+    ],
+    "publicationProof": "docs/translation-review/publication-018.json"
   },
   "publicationCheckpoints": [
     {
@@ -1105,6 +1106,37 @@
       ],
       "texExpressions": 5666,
       "scope": "Batches001-017 plus first3primality translations/JA. Exact updated content/HTTP/canonical/lang/expected14hreflang and13sidebar article URLs, exact decoded TeX across69reviewedmathversions. Not full-site content/native-language/visual/security certification."
+    },
+    {
+      "checkedAt": "2026-10-29T16:30:06.441637+09:00",
+      "ciRun": 40680993103,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40680993103",
+      "deployedCommit": "d54dd9dceded47af69432584434e1766374db5ae",
+      "ciConclusion": "success",
+      "buildConclusion": "success",
+      "deployConclusion": "success",
+      "proof": "docs/translation-review/publication-018.json",
+      "pages": 247,
+      "passed": 247,
+      "reviewedTranslationsPublished": 228,
+      "japaneseSources": 19,
+      "primalityLanguagesPublished": [
+        "en",
+        "zh-cn",
+        "zh-tw",
+        "es",
+        "ko",
+        "pt",
+        "fr",
+        "de",
+        "id",
+        "hi",
+        "ru",
+        "ar"
+      ],
+      "texExpressions": 6035,
+      "mathVersions": 78,
+      "scope": "Batches001-018 all reviewed versions. HTTP/content markers/canonical/lang/exact expected14hreflang/13sidebar URLs; exact decoded TeX across78mathversions. Not full-site content/native-language/visual/security certification."
     }
   ]
 }
