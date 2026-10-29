@@ -1,9 +1,7 @@
 ---
 title: "フェルマーの小定理：素数の性質と、現代の暗号理論（RSA暗号）を支える基礎"
-date: "2026-09-24T19:44:38+09:00"
 description: "フェルマーの小定理の直感的な理解から、数学的な証明、そしてRSA暗号における実践的な応用までを詳しく解説します。"
 slug: "fermats-little-theorem"
-date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "mathematics"
@@ -11,112 +9,97 @@ tags:
   - "整数論"
   - "暗号理論"
   - "素数"
+date: "2026-09-20T15:00:00+09:00"
+lastmod: 2026-10-29
+math: true
+mermaid: true
 ---
 
-現代のインターネット社会において、私たちが安全に通信できるのは **暗号理論** のおかげです。そして、その暗号理論の根底には、17世紀の数学者[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)（[Pierre de Fermat](https://kenji.blog/p/fermat/)）が発見した美しい定理が存在しています。
+フェルマーの小定理は、素数を法とするべき乗の性質です。素数判定の必要条件とRSAの復号の正当性につながります。ただし、正しく復号できることだけでは通信の機密性を保証できません。この記事では、定理、具体例、証明、素数判定とRSAへの応用を区別して説明します。
 
-本記事では、整数論の重要な基礎である **[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)** （Fermat's Little Theorem）について、その意味や証明、そして現代の[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号にどのように応用されているのかを分かりやすく解説します。
+## フェルマーの小定理
 
-## [フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)とは？
+$p$ が素数、$a$ が整数で $p\nmid a$ のとき、
 
-[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)は、素数と整数の関係を示す非常にシンプルで強力な定理です。
+$$ a^{p-1}\equiv1\pmod p. $$
 
-定理の主張は以下の通りです。
+合同とは、両辺の差が法の倍数であることです。ここではべき乗を $p$ で割った余りが1になることを表します。すべての整数 $a$ に対して成り立つ形は、
 
-> **[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)**
-> $p$ を素数とし、$a$ を $p$ の倍数ではない任意の整数（つまり、$a$ と $p$ は互いに素）とします。このとき、次の合同式が成り立ちます。
-> 
-> $$ a^{p-1} \equiv 1 \pmod p $$
+$$ a^p\equiv a\pmod p. $$
 
-これは、「整数 $a$ を $p-1$ 乗して素数 $p$ で割ったときの余りは、必ず $1$ になる」ということを意味しています。
+$p\nmid a$ なら前の式に $a$ を掛けます。$p\mid a$ の場合は、後の式の両辺が0に合同です。条件を外すには、この場合も別に確認する必要があります。
 
-また、両辺に $a$ を掛けることで、条件「$a$ が $p$ の倍数ではない」を外した、より一般的な形に変形することもできます。
+### 具体例
 
-> $$ a^p \equiv a \pmod p $$
-> （任意の整数 $a$ に対して成立）
+- $p=5$、$a=2$：$2^4=16=5\cdot3+1$。
+- $p=7$、$a=3$：$3^6=729=7\cdot104+1$。
 
-### 具体例で確認してみよう
+どちらも定理の条件を満たし、余りは1です。素数でも底がその倍数なら第一の式の対象外です。
 
-実際に数字を当てはめて、定理が成り立つか確認してみましょう。
+## 剰余の並べ替えによる証明
 
-**例1：$p = 5$（素数）、$a = 2$ の場合**
-- $p-1 = 4$ です。
-- $a^{p-1} = 2^4 = 16$ です。
-- $16$ を $5$ で割ると、商が $3$ で **余りが $1$** になります（$16 \equiv 1 \pmod 5$）。
+$S=\{1,2,\ldots,p-1\}$ の各要素を $a$ 倍し、法 $p$ の剰余を取ります。積の剰余は0になりません。また、$ia\equiv ja\pmod p$ なら、$a$ と $p$ が互いに素なので $a$ を約分して $i\equiv j\pmod p$ が得られます。添字は1以上で法未満なので $i=j$ です。
 
-**例2：$p = 7$（素数）、$a = 3$ の場合**
-- $p-1 = 6$ です。
-- $a^{p-1} = 3^6 = 729$ です。
-- $729$ を $7$ で割ると、商が $104$ で **余りが $1$** になります（$729 = 7 \times 104 + 1$）。
+したがって得られた剰余は元の非零剰余の並べ替えです。各要素を掛け合わせると、
 
-このように、どんな素数 $p$ を選んでも、この不思議な法則が成り立ちます。
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-## 定理の証明
+$(p-1)!$ は $p$ と互いに素なので、この因子の逆元を掛けて約分できます。これで定理が得られます。合同式では一般の因子を無条件に割り算できるわけではありません。
 
-[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)の証明にはいくつかのアプローチがありますが、ここでは整数論に基づく代表的な証明方法を紹介します。
+## フェルマーテストは必要条件の検査
 
-$p$ を素数とし、$a$ を $p$ の倍数ではない整数とします。
-集合 $S = \{1, 2, 3, \dots, p-1\}$ を考えます。この集合の各要素に $a$ を掛けた新しい集合を $S'$ とします。
+まず2未満は素数ではなく、2と3は素数、それ以外の偶数は合成数と処理します。残った奇数 $n>3$ について、底 $a$ を $2\le a\le n-2$ から選びます。
 
-$$ S' = \{a, 2a, 3a, \dots, (p-1)a\} $$
+$$ a^{n-1}\not\equiv1\pmod n $$
 
-この集合 $S'$ の各要素を $p$ で割った余りを考えます。驚くべきことに、これらの余りはすべて異なり、さらに $0$ になることはありません。つまり、余りの集合は元の集合 $S$ と（順番を無視すれば）完全に一致します。
-
-したがって、$S$ の要素の積と $S'$ の要素の積は、$p$ を法として合同になります。
-
-$$ 1 \times 2 \times \dots \times (p-1) \equiv a \times 2a \times \dots \times (p-1)a \pmod p $$
-
-これを整理すると、次のようになります。
-
-$$ (p-1)! \equiv a^{p-1} \times (p-1)! \pmod p $$
-
-$(p-1)!$ は $p$ と互いに素であるため、両辺を $(p-1)!$ で割ることができます（合同式における除算の性質）。その結果、以下の定理が導かれます。
-
-$$ 1 \equiv a^{p-1} \pmod p $$
-
-これで証明は完了です。
-
-## [フェルマー](https://kenji.blog/p/fermat/)テスト：素数判定への応用
-
-この定理は、ある数が素数かどうかを判定する **素数判定アルゴリズム** （[フェルマー](https://kenji.blog/p/fermat/)テスト）に応用されています。
-
-ある巨大な数 $n$ が素数かどうかを知りたい場合、ランダムに $a$ を選び、$a^{n-1} \equiv 1 \pmod n$ が成り立つかを確認します。もし成り立たなければ、$n$ は **絶対に素数ではありません** （合成数です）。
+ならば $n$ は合成数です。一方、等式が成立しても、その底で必要条件に違反しなかっただけで、素数と証明したことにはなりません。
 
 ```mermaid
 flowchart TD
-    Start("開始") --> ChooseA("ランダムな整数 a を選ぶ")
-    ChooseA --> Calc("a^(n-1) mod n を計算")
-    Calc --> Check{"結果は 1 か？"}
-    Check -- "No" --> Composite("n は合成数 (素数ではない)")
-    Check -- "Yes" --> ProbPrime("n は素数の可能性が高い")
+    Input["小さい数と偶数を処理した奇数 n が対象"] --> Choose["2以上n-2以下の底 a を選ぶ"]
+    Choose --> Calc["a の n-1 乗の剰余を法 n で計算"]
+    Calc --> Check{"剰余は1？"}
+    Check -- No --> Composite["n は合成数"]
+    Check -- Yes --> Pass["この底を通過：素数の証明ではない"]
 ```
 
-ただし、合成数であるにもかかわらず $a^{n-1} \equiv 1 \pmod n$ を満たしてしまう **カーマイケル数** （Carmichael numbers）と呼ばれる例外的な数が存在するため、このテスト単体では確実な素数判定はできません。そのため、実用上はミラー・ラビン素数判定法などが使われます。
+例えば $341=11\cdot31$ は合成数ですが底2を通過します。このような数を、その底に対する擬素数と呼びます。カーマイケル数は、**その数と互いに素なすべての底**でフェルマーの合同式を満たす合成数です。最小の例 $561=3\cdot11\cdot17$ は底2を通過しますが、互いに素でない底3では通過しません。
 
-## 現代の暗号理論への応用：[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号
+複数のランダムな底を試すだけで、すべての合成数に一律の小さな誤通過率が得られるとは言えません。[HAC第4章](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)は、FermatとMiller–Rabinを区別しています。固定した奇合成数に対するMiller–Rabinでは、独立・一様なランダム底による $k$ 回の検査の誤通過率は $4^{-k}$ 以下です。これは通過後に合成数である確率そのものではなく、任意の固定底へそのまま適用する上限でもありません。[素数判定の詳しい解説](https://kenji.blog/p/cpp-fast-prime-testing-miller-rabin/)も参照してください。
 
-[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)（およびその一般化である **オイラーの定理** ）の最も重要な応用先が、インターネットのセキュリティを支える **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号** です。
+## RSAの復号が成り立つ条件
 
-RSA暗号は、巨大な数の素因数分解が困難であることを安全性の根拠としています。その仕組みにおいて、「[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)」の原理が鍵の生成と復号プロセスで決定的な役割を果たしています。
+異なる素数 $p,q$ を選び、$n=pq$ とします。トーティエント $\varphi(n)=(p-1)(q-1)$ を用い、教材では $1<e<\varphi(n)$、$\gcd(e,\varphi(n))=1$ を満たす公開指数を選びます。その逆元となる正の秘密指数を $d$ とします。
+
+$$ ed\equiv1\pmod{\varphi(n)}. $$
+
+公開鍵は $(n,e)$、秘密鍵の簡略表現は $(n,d)$ です。実際の秘密鍵には計算を速くする因数などを含むこともあり、それらも秘密です。整数代表元 $0\le M<n$ に対する数学的な操作は、
+
+$$ C=M^e\bmod n,\qquad M'=C^d\bmod n. $$
 
 ```mermaid
 sequenceDiagram
-    participant Sender as "送信者"
-    participant Receiver as "受信者"
-    Note over Receiver: "公開鍵 (e, n) と秘密鍵 (d) を生成"
-    Receiver->>Sender: "公開鍵 (e, n) を送信"
-    Note over Sender: "平文 M を暗号化"
-    Note over Sender: "C = M^e mod n"
-    Sender->>Receiver: "暗号文 C を送信"
-    Note over Receiver: "暗号文 C を復号"
-    Note over Receiver: "M = C^d mod n"
+    participant Sender as 送信者
+    participant Receiver as 受信者
+    Note over Sender,Receiver: 教材用の素のRSA演算：メッセージ符号化を省略
+    Receiver->>Sender: 公開鍵 (n,e) を渡す
+    Sender->>Sender: 0以上n未満の整数代表元 M を用意
+    Sender->>Sender: C = M^e mod n を計算
+    Sender->>Receiver: C を渡す
+    Receiver->>Receiver: M' = C^d mod n を計算
 ```
 
-[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号では、$p$ と $q$ という2つの巨大な素数を用意し、$n = p \times q$ とします。
-[オイラー](https://kenji.blog/p/euler/)の定理により、暗号化と復号のプロセスにおいて $M^{ed} \equiv M \pmod n$ が成り立つように鍵（$e$ と $d$）が設計されます。ここで、平文 $M$ が元の姿に戻るという魔法のような現象は、本質的に[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)が保証している数学的性質に依存しているのです。
+$\gcd(M,n)=1$ なら、[オイラーの定理](https://dlmf.nist.gov/27.2#E8)から $M^{\varphi(n)}\equiv1\pmod n$ です。非負整数 $t$ に対して $ed=1+t\varphi(n)$ と書けるので、復号は元の代表元に戻ります。
 
-## まとめ
+互いに素でない代表元も含めるには、各素数を法として考えます。$p\mid M$ なら $M^{ed}$ と $M$ はともに0に合同です。そうでなければフェルマーの小定理と $p-1\mid ed-1$ により両者は合同です。法 $q$ でも同じです。中国剰余定理から、
 
-17世紀に[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)によって発見された小さな定理は、数百年後の現代社会において、情報セキュリティの根幹を支える不可欠な要素となっています。
+$$ M^{ed}\equiv M\pmod p,\quad M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod n. $$
 
-**[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)** は、純粋数学がいかにして実用的な技術（暗号理論やアルゴリズム）へと結びつくかを示す、最も美しい例の一つと言えるでしょう。数学の奥深さと、その応用力の広さには驚かされるばかりです。
+これで0や因数の倍数を含むすべての代表元を復元できます。素因数分解ができれば秘密指数を計算できますが、一般のRSA反転と素因数分解の困難さが同値と証明されたという意味ではありません。
+
+## 正当性と安全性を分ける
+
+図の素のRSAは決定的な演算であり、安全な暗号化方式としては不十分です。[RFC8017のSection5と7](https://www.rfc-editor.org/rfc/rfc8017.html)は、プリミティブと暗号化方式を区別しています。実用では監査されたライブラリ、RSAES-OAEPなど適切な方式、パラメータ、安全な乱数、鍵管理が必要です。RSASSA-PSSは署名用の別方式です。
+
+フェルマーの小定理は剰余計算とRSAの数学を理解する基礎です。定理、素数判定、正しい鍵、実用の暗号方式という段階を混同せずに考えましょう。[RSAの入門解説](https://kenji.blog/p/rsa-encryption-math-explained-for-beginners/)では、この違いをさらに説明しています。

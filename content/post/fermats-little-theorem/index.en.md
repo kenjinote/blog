@@ -1,121 +1,104 @@
 ---
 title: "Fermat's Little Theorem: The Nature of Primes and the Foundation of Modern Cryptography (RSA)"
-date: "2026-09-24T19:44:38+09:00"
 description: "A detailed explanation of Fermat's Little Theorem, from an intuitive understanding to its mathematical proof, and its practical application in RSA cryptography."
 slug: "fermats-little-theorem"
-date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags:
   - "Number Theory"
   - "Cryptography"
   - "Prime Numbers"
+date: "2026-09-20T15:00:00+09:00"
+lastmod: 2026-10-29
+math: true
+mermaid: true
 ---
 
-In modern internet society, we owe our ability to communicate securely to **cryptography**. At the very foundation of this cryptography lies a beautiful theorem discovered by the 17th-century mathematician [Pierre de Fermat](https://kenji.blog/en/p/fermat/).
+Fermat's little theorem describes powers modulo a prime. It leads to a necessary condition for primality and helps explain why RSA decryption is correct. Correct decryption alone does not guarantee confidentiality. This article distinguishes the theorem, examples, proof, primality testing, and its use in RSA.
 
-In this article, we will explain **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**, a crucial cornerstone of number theory, in an easy-to-understand manner, covering its meaning, proof, and how it is applied to modern [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography.
+## Fermat's little theorem
 
-## What is [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)?
+For a prime $p$ and an integer $a$ with $p\nmid a$:
 
-[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is an extremely simple yet powerful theorem that demonstrates the relationship between prime numbers and integers.
+$$ a^{p-1}\equiv1\pmod p. $$
 
-The theorem states the following:
+Congruence means that the difference between the two sides is a multiple of the modulus. Here, the power leaves remainder 1 when divided by $p$. A form valid for every integer $a$ is:
 
-> **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**
-> Let $p$ be a prime number, and $a$ be any integer not divisible by $p$ (meaning $a$ and $p$ are coprime). Then, the following congruence relation holds true:
-> 
-> $$ a^{p-1} \equiv 1 \pmod p $$
+$$ a^p\equiv a\pmod p. $$
 
-This means that "when the integer $a$ is raised to the power of $p-1$ and divided by the prime number $p$, the remainder is always $1$".
+If $p\nmid a$, multiply the first congruence by $a$. If $p\mid a$, both sides of the second congruence are congruent to zero. Removing the condition requires checking this case separately too.
 
-Also, by multiplying both sides by $a$, it can be transformed into a more general form that removes the condition that "$a$ is not a multiple of $p$".
+### Examples
 
-> $$ a^p \equiv a \pmod p $$
-> (Holds true for any integer $a$)
+- $p=5$, $a=2$: $2^4=16=5\cdot3+1$.
+- $p=7$, $a=3$: $3^6=729=7\cdot104+1$.
 
-### Verifying with Concrete Examples
+Both satisfy the assumptions and leave remainder 1. Even with a prime modulus, a base divisible by it falls outside the first statement.
 
-Let's plug in some actual numbers to verify if the theorem holds true.
+## Proof by permuting the residues
 
-**Example 1: $p = 5$ (prime), $a = 2$**
-- $p-1 = 4$.
-- $a^{p-1} = 2^4 = 16$.
-- When $16$ is divided by $5$, the quotient is $3$ and the **remainder is $1$** ($16 \equiv 1 \pmod 5$).
+Multiply every element of $S=\{1,2,\ldots,p-1\}$ by $a$ and reduce modulo $p$. None of the resulting residues is zero. If $ia\equiv ja\pmod p$, coprimality of $a$ and $p$ allows cancellation of $a$, giving $i\equiv j\pmod p$. Since the indices are positive and below the modulus, $i=j$.
 
-**Example 2: $p = 7$ (prime), $a = 3$**
-- $p-1 = 6$.
-- $a^{p-1} = 3^6 = 729$.
-- When $729$ is divided by $7$, the quotient is $104$ and the **remainder is $1$** ($729 = 7 \times 104 + 1$).
+Thus the resulting residues permute the original nonzero residues. Multiplying all the elements gives:
 
-In this way, no matter what prime number $p$ you choose, this mysterious law holds true.
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-## Proof of the Theorem
+Since $(p-1)!$ is coprime to $p$, multiply by its inverse to cancel the common factor and obtain the theorem. Congruences do not permit division by an arbitrary factor without conditions.
 
-There are several approaches to proving [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/), but here we introduce a representative proof method based on number theory.
+## The Fermat test checks a necessary condition
 
-Let $p$ be a prime number and $a$ be an integer not divisible by $p$.
-Consider the set $S = \{1, 2, 3, \dots, p-1\}$. Let $S'$ be a new set created by multiplying each element of this set by $a$.
+First handle integers below 2 as nonprime, 2 and 3 as prime, and all other even integers as composite. For a remaining odd $n>3$, choose a base $a$ with $2\le a\le n-2$.
 
-$$ S' = \{a, 2a, 3a, \dots, (p-1)a\} $$
+$$ a^{n-1}\not\equiv1\pmod n $$
 
-Consider the remainder when each element of this set $S'$ is divided by $p$. Surprisingly, all these remainders are distinct, and furthermore, none of them are $0$. In other words, the set of remainders perfectly matches the original set $S$ (ignoring the order).
-
-Therefore, the product of the elements of $S$ and the product of the elements of $S'$ are congruent modulo $p$.
-
-$$ 1 \times 2 \times \dots \times (p-1) \equiv a \times 2a \times \dots \times (p-1)a \pmod p $$
-
-Simplifying this gives:
-
-$$ (p-1)! \equiv a^{p-1} \times (p-1)! \pmod p $$
-
-Since $(p-1)!$ and $p$ are coprime, we can divide both sides by $(p-1)!$ (a property of division in congruence relations). As a result, the following theorem is derived:
-
-$$ 1 \equiv a^{p-1} \pmod p $$
-
-This completes the proof.
-
-## [Fermat](https://kenji.blog/en/p/fermat/) Primality Test: Application to Prime Testing
-
-This theorem is applied in a **primality test algorithm** (the [Fermat](https://kenji.blog/en/p/fermat/) primality test) to determine whether a given number is prime.
-
-If you want to know whether a huge number $n$ is prime, randomly choose $a$ and check if $a^{n-1} \equiv 1 \pmod n$ holds true. If it does not hold true, then $n$ is **absolutely not a prime number** (it is a composite number).
+implies that $n$ is composite. If the congruence instead holds, the base has only failed to violate a necessary condition; primality has not been proved.
 
 ```mermaid
 flowchart TD
-    Start("Start") --> ChooseA("Choose a random integer a")
-    ChooseA --> Calc("Calculate a^(n-1) mod n")
-    Calc --> Check{"Is the result 1?"}
-    Check -- "No" --> Composite("n is a composite number (not prime)")
-    Check -- "Yes" --> ProbPrime("n is likely a prime number")
+    Input["Odd n after handling small integers and even numbers"] --> Choose["Choose a base a from 2 to n-2"]
+    Choose --> Calc["Compute a to the power n-1 modulo n"]
+    Calc --> Check{"Is the remainder 1?"}
+    Check -- No --> Composite["n is composite"]
+    Check -- Yes --> Pass["Passes this base: not a proof of primality"]
 ```
 
-However, because there exist exceptional numbers called **Carmichael numbers**, which are composite numbers yet satisfy $a^{n-1} \equiv 1 \pmod n$, this test alone cannot definitively prove primality. Therefore, in practice, methods like the Miller-Rabin primality test are used.
+For example, $341=11\cdot31$ is composite but passes base 2. Such a number is a pseudoprime to that base. A Carmichael number is composite and satisfies the Fermat congruence for **every base coprime to the number**. The smallest example, $561=3\cdot11\cdot17$, passes base 2 but fails base 3, which is not coprime to it.
 
-## Application to Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
+Trying several random bases does not give a uniformly small false-positive bound for every composite. [HAC Chapter 4](https://cacr.uwaterloo.ca/hac/about/chap4.pdf) distinguishes Fermat and Miller–Rabin. For a fixed odd composite, $k$ Miller–Rabin tests with independent uniformly random bases have false-positive probability at most $4^{-k}$. This is not the probability of compositeness after passing, nor does it automatically apply to arbitrary fixed bases. See the [detailed primality-testing article](https://kenji.blog/en/p/cpp-fast-prime-testing-miller-rabin/).
 
-The most important application of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) (and its generalization, **Euler's Theorem**) is **[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography**, which underpins internet security.
+## Conditions for correct RSA decryption
 
-RSA cryptography relies on the difficulty of factoring massive numbers for its security. Within its mechanism, the principle of "[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)" plays a decisive role in the key generation and decryption processes.
+Choose distinct primes $p,q$ and set $n=pq$. Using the totient $\varphi(n)=(p-1)(q-1)$, this teaching construction selects a public exponent with $1<e<\varphi(n)$ and $\gcd(e,\varphi(n))=1$. The positive private exponent $d$ is its inverse:
+
+$$ ed\equiv1\pmod{\varphi(n)}. $$
+
+The public key is $(n,e)$, and a simplified private-key representation is $(n,d)$. Actual private keys may include factors that speed up computation; these are secret too. The mathematical operations on an integer representative $0\le M<n$ are:
+
+$$ C=M^e\bmod n,\qquad M'=C^d\bmod n. $$
 
 ```mermaid
 sequenceDiagram
-    participant Sender as "Sender"
-    participant Receiver as "Receiver"
-    Note over Receiver: "Generate public key (e, n) and private key (d)"
-    Receiver->>Sender: "Send public key (e, n)"
-    Note over Sender: "Encrypt plaintext M"
-    Note over Sender: "C = M^e mod n"
-    Sender->>Receiver: "Send ciphertext C"
-    Note over Receiver: "Decrypt ciphertext C"
-    Note over Receiver: "M = C^d mod n"
+    participant Sender as Sender
+    participant Receiver as Receiver
+    Note over Sender,Receiver: Teaching example of raw RSA: message encoding omitted
+    Receiver->>Sender: Provide public key (n,e)
+    Sender->>Sender: Prepare integer representative M from 0 to n-1
+    Sender->>Sender: Compute C = M^e mod n
+    Sender->>Receiver: Provide C
+    Receiver->>Receiver: Compute M' = C^d mod n
 ```
 
-In [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography, two huge prime numbers, $p$ and $q$, are prepared, and we set $n = p \times q$.
-By Euler's Theorem, the keys ($e$ and $d$) are designed so that $M^{ed} \equiv M \pmod n$ holds true in the encryption and decryption processes. Here, the magical phenomenon of the plaintext $M$ returning to its original form essentially relies on the mathematical properties guaranteed by [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
+If $\gcd(M,n)=1$, [Euler's theorem](https://dlmf.nist.gov/27.2#E8) gives $M^{\varphi(n)}\equiv1\pmod n$. Since $ed=1+t\varphi(n)$ for some nonnegative integer $t$, decryption restores the original representative.
 
-## Conclusion
+To include representatives that are not coprime, work modulo each prime. If $p\mid M$, both $M^{ed}$ and $M$ are congruent to zero. Otherwise, Fermat's little theorem and $p-1\mid ed-1$ give the required congruence. The same argument holds modulo $q$. By the Chinese remainder theorem:
 
-A small theorem discovered by [Pierre de Fermat](https://kenji.blog/en/p/fermat/) in the 17th century has become an indispensable element supporting the foundation of information security in modern society hundreds of years later.
+$$ M^{ed}\equiv M\pmod p,\quad M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod n. $$
 
-**[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)** can be said to be one of the most beautiful examples demonstrating how pure mathematics connects to practical technology (cryptography and algorithms). One cannot help but be amazed by the depth of mathematics and the breadth of its applicability.
+This recovers every representative, including zero and multiples of the factors. Factoring the modulus allows computation of the private exponent, but this does not mean that general RSA inversion and factoring have been proved equivalent in difficulty.
+
+## Separate correctness from security
+
+Raw RSA in the diagram is deterministic and insufficient as a secure encryption scheme. [Sections 5 and 7 of RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html) distinguish primitives from encryption schemes. Production use requires an audited library, an appropriate scheme such as RSAES-OAEP, suitable parameters, secure randomness, and key management. RSASSA-PSS is a separate signature scheme.
+
+Fermat's little theorem provides a foundation for understanding modular arithmetic and the mathematics of RSA. Keep the theorem, primality testing, valid keys, and practical cryptographic schemes distinct. The [RSA introduction](https://kenji.blog/en/p/rsa-encryption-math-explained-for-beginners/) explains this distinction further.

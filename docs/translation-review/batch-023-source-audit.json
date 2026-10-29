@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T23:16:24.093000+09:00",
+  "scope": "Original metadata/hashes for all13versions;full-body JA/EN reading only. Python arithmetic counterexamples and original Hugo0.139 generated publication dates;no translation approved.",
+  "versions": {
+    "ar": {
+      "path": "content/post/fermats-little-theorem/index.ar.md",
+      "sha256": "169d71138d8bd500722459b3d1f183bdf4ce82e8c93ef508f01b9386ca308462",
+      "canonical": "https://kenji.blog/ar/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/fermats-little-theorem/index.de.md",
+      "sha256": "d6bada770bfc63effb9b2a5141242b047b2ba724e3322a0ce7c235d7c6f5e775",
+      "canonical": "https://kenji.blog/de/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/fermats-little-theorem/index.en.md",
+      "sha256": "0df233459c857bbde4b3b6558fd8ebe00a1e9530fad668739a88d21f91546ef0",
+      "canonical": "https://kenji.blog/en/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/fermats-little-theorem/index.es.md",
+      "sha256": "bf3a7e753d2310bcc3d7dc091e2facdee0c7fb1583efa5cb55c7f9608374b483",
+      "canonical": "https://kenji.blog/es/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/fermats-little-theorem/index.fr.md",
+      "sha256": "03a50cb9e7462d08ffc97013bb7e9ff78c7105c590ff624f7262c4e0a96ab4a4",
+      "canonical": "https://kenji.blog/fr/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/fermats-little-theorem/index.hi.md",
+      "sha256": "a774c39686f558c51c2dc4002311534d593b5d95b30737e5ef1310fd8430b868",
+      "canonical": "https://kenji.blog/hi/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/fermats-little-theorem/index.id.md",
+      "sha256": "c7666a9bca97c7eef0c0ccf87e80a80846eddba76d6318cf7dc95aa5f9c2afd6",
+      "canonical": "https://kenji.blog/id/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/fermats-little-theorem/index.ko.md",
+      "sha256": "6fab012da389d397127892af7b74175c790dc0edbe7992ee4c6686fa194b9bc1",
+      "canonical": "https://kenji.blog/ko/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/fermats-little-theorem/index.md",
+      "sha256": "8a223b9f38350ef537fc2a8215d813fc1973b442e96c423f92e54a84402fbdf0",
+      "canonical": "https://kenji.blog/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": true,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/fermats-little-theorem/index.pt.md",
+      "sha256": "a36d1e152f42cf068259948567ef120af015111b09f5b755a2088a1b894b9f4c",
+      "canonical": "https://kenji.blog/pt/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/fermats-little-theorem/index.ru.md",
+      "sha256": "41a86ccfbae61677ef8cc8f9271c5bb148f2f8018471498396605479e6b3ab13",
+      "canonical": "https://kenji.blog/ru/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/fermats-little-theorem/index.zh-cn.md",
+      "sha256": "5b117239cc4c64ce9f20b37a52fcc1b6e65959dba41479fa2eb4fae88a17a0cf",
+      "canonical": "https://kenji.blog/zh-cn/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/fermats-little-theorem/index.zh-tw.md",
+      "sha256": "9eda62655555206c2f8607f81d63daca527be0e8931a73a8dd64ef6c8a03c13f",
+      "canonical": "https://kenji.blog/zh-tw/p/fermats-little-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-20T15:00:00+09:00"
+      ],
+      "datePublished": "2026-09-20T15:00:00+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    }
+  },
+  "arithmeticEvidence": {
+    "unrestrictedBaseCounterexample": {
+      "n": 7,
+      "a": 7,
+      "remainder": 0,
+      "nIsPrime": true
+    },
+    "baseSpecificPseudoprime": {
+      "n": 341,
+      "factors": [
+        11,
+        31
+      ],
+      "base": 2,
+      "remainder": 1
+    },
+    "carmichael561": {
+      "coprimeBasesChecked": 320,
+      "allPass": true,
+      "base3Gcd": 3,
+      "base3Remainder": 375
+    },
+    "nonDistinctPrimeRsaCounterexample": {
+      "p": 3,
+      "q": 3,
+      "n": 9,
+      "incorrectPhiFormula": 4,
+      "e": 3,
+      "d": 3,
+      "m": 2,
+      "cipher": 8,
+      "recovered": 8
+    }
+  },
+  "imageSha256": "793b9d6f9dc3adff31626a3d39dbc8d083e142cda1209598b1f0f497c85a1a91",
+  "limitations": [
+    "Eleven other translation bodies unread.",
+    "No executable article code:two Mermaid source diagrams only.",
+    "Finite auxiliary arithmetic is not a proof of all integer cases or security."
+  ],
+  "publicationPending": true
+}

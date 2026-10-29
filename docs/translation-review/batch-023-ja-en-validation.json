@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T23:19:02.548793+09:00",
+  "scope": "Selected versions only;HTML and mathematical source checks. Auxiliary Python arithmetic is executed once and shared,not misrepresented as executable article code or prose approval.",
+  "versions": [
+    {
+      "language": "ja",
+      "sha256": "05b557bc6703982b0176505857405e7ab09f7cc82988041dd1d8adbc6ada498c",
+      "canonical": "https://kenji.blog/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "sha256": "50b897d0b9c2f96c51d94ceefe51164c147242f7aaf359fe0f351ee30f046d8f",
+      "canonical": "https://kenji.blog/en/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    }
+  ],
+  "auxiliaryArithmetic": {
+    "fermatAllIntegerFormCases": 5025,
+    "nonzeroResiduePermutationCases": 4658,
+    "carmichaelCoprimeBases": 320,
+    "rsaCases": [
+      {
+        "p": 3,
+        "q": 5,
+        "n": 15,
+        "e": 3,
+        "d": 3,
+        "allRepresentativesRoundTrip": 15
+      },
+      {
+        "p": 5,
+        "q": 7,
+        "n": 35,
+        "e": 5,
+        "d": 5,
+        "allRepresentativesRoundTrip": 35
+      },
+      {
+        "p": 11,
+        "q": 13,
+        "n": 143,
+        "e": 7,
+        "d": 103,
+        "allRepresentativesRoundTrip": 143
+      },
+      {
+        "p": 61,
+        "q": 53,
+        "n": 3233,
+        "e": 7,
+        "d": 1783,
+        "allRepresentativesRoundTrip": 3233
+      }
+    ],
+    "rsaRepresentativesTotal": 3426
+  },
+  "publicationPending": true,
+  "limitations": [
+    "AI,not human/native-language certification.",
+    "Finite auxiliary arithmetic,not exhaustive proof or a cryptographic audit.",
+    "Mermaid sources/HTML and TeX checked,no browser visual/KaTeX/Mermaid runtime certification."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/fermats-little-theorem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/fermats-little-theorem/index.md",
+      "sourceHash": "05b557bc6703982b0176505857405e7ab09f7cc82988041dd1d8adbc6ada498c",
+      "translationHash": "50b897d0b9c2f96c51d94ceefe51164c147242f7aaf359fe0f351ee30f046d8f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original JA/EN metadata/body/two diagram sources independently,then reread both complete revised versions and final wording changes. Kept theorem/examples/proof/primality/RSA/security topics. Added separate p-divisible case,explicit cancellation/permutation justification,base bounds/small cases,necessary-not-sufficient distinction,and RSA distinct-prime/all-representative CRT proof. Removed unsupported universal cryptography/confidentiality claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared prime/composite/nonprime,coprime,congruence/modulus,residue/base/exponent,inverse/totient,pseudoprime-to-a-base/Carmichael number,primality test/proof,RSA representative/primitive/scheme,correctness/confidentiality. Removed Crypto substring links to cryptocurrency;clarified coprimality of a and p. Arbitrary random bases and fixed odd-composite conditional error bound are distinguished from posterior compositeness."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Current JA/EN each58TeX expressions exact in source and decoded generatedHTML. Conditions and proof manually read. AuxiliaryPython independently checked5025prime/integer-form cases,4658nonzero residue permutations,all320coprimebases for561,base3failure375,and3426RSArepresentatives across4distinct-primepairs. Counterexamples to omitted base and distinct-prime conditions retained in source-audit;finite checks supplement rather than replace proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article code:two Mermaid diagrams only. Reviewed source labels and topology5flowedges/5sequenceedges;both exact diagram sources preserved in generatedHTML. AuxiliaryPython arithmetic is verifier code executed once,not presented as article program execution. No browser runtime/visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three externalprimaryrefs DLMF27.2/HACchapter4/RFC8017 andtwointernal matching-English reviewedRSA/primality links exact inHTML;internaltargets exist. Removed self/biography/cryptocurrency substring links. Original Hugo0.139 datePublished was Sep20 despite duplicateSep24date;all13baseline dates preserved in audit,and reviewedJAEN now eachoneSep20date. Kept slug/heroimagebytes/tags/categories;enabledmath/Mermaid,lastmodOct29.24bundlebuild,multilingual1387pages,HTTPS2540HTML/41XML pass. Publication pending;11othertranslations unread."
+        }
+      },
+      "summary": "Full English review against corrected Japanese: theorem assumptions,proof,Fermat limitations,and RSA correctness distinct from secure encryption.",
+      "languageSpecificFindings": "Read original and revised English full bodies. Removed Crypto/graphy links to cryptocurrency and repetitive self/biography links. Named the coprime factors a,p explicitly;kept base/exponent and necessarycondition/proof distinct. Preserved all five topics and diagrams while adding missing assumptions rather than treating test success as likely primality.",
+      "validation": "docs/translation-review/batch-023-ja-en-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "Other11translations remain unread and unreviewed.",
+        "Finite auxiliary arithmetic is not exhaustive proof,article-code execution or cryptographic audit.",
+        "No browser visual/RTL/KaTeX/Mermaid runtime certification.",
+        "Publication and live checks pending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-10-29",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "validation": "docs/translation-review/batch-023-ja-en-validation.json",
+      "publicationPending": true
+    }
+  ]
+}
