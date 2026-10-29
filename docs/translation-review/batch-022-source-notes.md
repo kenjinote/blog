@@ -69,3 +69,8 @@
 ## Portugueseの確認
 
 修正前後のポルトガル語全文を読了。pequeno teorema,congruência,coprimo,inverso modular,base,módulo,resíduo,resto,representante,totiente,teorema chinês do restoを照合。暗号化・復号をcifração/decifraçãoで一貫させたが、元のcriptografia/descriptografia自体を誤訳とは扱わない。Pythonリストをmatrizとする説明、四則としつつ3演算だけ列挙する表現、日本語Euclides伝記への部分リンク、LINE/Amazonの普遍的依存の断定を整理。exponenciação por quadrados sucessivosと操作数の単位を明示し、correção/confidencialidade、primitiva/esquema、条件付き通過率と事後確率を照合。主語後の不要コンマ、文字ごとの変換と検証文の文法も修正した。 修正前後のメタデータ・本文全体・全3コード・2図を別出力で読了し、docs/translation-review/batch-022-pt-validation.jsonで各82TeXとHTML・全コード、図13辺／6辺、C++各モード7480ケース、Pythonの全3233代表元等を確認した。多言語1351ページとHTTPS2481HTML／41XMLを通過。既存17テストは先行日英段階で通過したもので、この言語で再実行したとは数えない。確認日2026-10-29、AI。残る6翻訳と公開確認は未完了。
+
+
+## Frenchの確認
+
+修正前後のフランス語全文を読了。petit théorème,congruence,premiers entre eux,inverse modulaire,indicatrice d’Euler,base,module,reste/résidu,représentant,théorème des restes chinoisを照合。Eulerの元のqui lui est premier entre euxという文法を整理し、元のpremier avecという有効な用法自体は誤訳としない。積のfacteursとtermes、必要条件とpreuve、RSA brut／primitive／schéma、correction／confidentialitéを区別。非合同をnon-congruenceで表し、主語直後の不要コンマと1105の通過を述べる文法を修正。日本語Euclide伝記／アルゴリズムへのリンクとLINE/Amazonの普遍的依存の断定を除去し、条件付き誤通過率・CRTの全代表元・固定鍵の検証範囲を照合。 修正前後のメタデータ・本文全体・全3コード・2図を別出力で読了し、docs/translation-review/batch-022-fr-validation.jsonで各82TeXとHTML・全コード、図13辺／6辺、C++各モード7480ケース、Pythonの全3233代表元等を確認した。多言語1351ページとHTTPS2481HTML／41XMLを通過。既存17テストは先行日英段階で通過したもので、この言語で再実行したとは数えない。確認日2026-10-29、AI。残る5翻訳と公開確認は未完了。

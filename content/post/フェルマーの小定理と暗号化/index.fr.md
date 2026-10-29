@@ -7,470 +7,297 @@ math: true
 mermaid: true
 categories: ["mathematics", "cryptography", "programming"]
 tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C++"]
+lastmod: 2026-10-29
 ---
 
-## 1. Introduction : Le mystère mathématique qui sous-tend la cryptographie moderne
+## 1. Ce que garantit le théorème
 
-Dans la société numérique d'aujourd'hui, et particulièrement dans les communications sur Internet, le "chiffrement" est devenu une technologie fondamentale indispensable. Le fait que nous puissions naviguer en toute sécurité sur des sites web via HTTPS dans nos navigateurs, effectuer des transactions financières par le biais des services bancaires en ligne, et avoir des échanges privés sur des applications de messagerie est dû aux protocoles cryptographiques basés sur des théories mathématiques avancées fonctionnant en arrière-plan. Parmi ceux-ci, la "cryptographie à clé publique" joue un rôle particulièrement important, dont le représentant le plus célèbre est le **chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)**.
+Le petit théorème de Fermat décrit les puissances modulo un nombre premier. Il aide à comprendre une condition nécessaire de primalité et pourquoi le déchiffrement RSA fonctionne. Déchiffrer correctement et disposer d’un schéma de chiffrement sûr sont deux propriétés distinctes : le théorème seul ne garantit pas la confidentialité des communications.
 
-La sécurité et la validité de nombreux algorithmes cryptographiques, y compris RSA, dépendent fortement d'un théorème extrêmement beau et puissant découvert par le mathématicien français du 17e siècle, [Pierre de Fermat](https://kenji.blog/fr/p/fermat/). Il s'agit du **petit théorème de Fermat (Fermat's Little Theorem)**. De plus, le théorème de [Leonhard Euler](https://kenji.blog/fr/p/euler/), qui généralise ce théorème, joue également un rôle décisif dans la théorie cryptographique.
+Cet article présente les congruences, les théorèmes de Fermat et d’Euler, les limites du test de Fermat et les mathématiques de RSA. Le code est un support pédagogique avec des contrôles des bornes, pas une implémentation de génération de clés ou de chiffrement en production. Voir aussi [les mathématiques de RSA et les schémas de chiffrement](https://kenji.blog/fr/p/rsa-encryption-math-explained-for-beginners/).
 
-Cet article explique en détail, depuis les bases, comment la découverte mathématique pure qu'est le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) s'applique aux technologies cryptographiques pratiques modernes, en particulier aux "tests de primalité" et au "chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)". Il s'agit d'un guide technique très détaillé couvrant tout, des preuves mathématiques, aux mécanismes de chiffrement et de déchiffrement, jusqu'à l'implémentation concrète des algorithmes en C++ et Python.
+## 2. Congruences et inverses
 
----
+Pour un entier positif $n$, la notation suivante signifie que la différence entre les entiers $a,b$ est un multiple de $n$.
 
-## 2. Bases des congruences et de l'arithmétique modulaire
+$$ a \equiv b \pmod n. $$
 
-Pour comprendre le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/), vous devez d'abord vous familiariser avec le concept mathématique d'"arithmétique modulaire (congruences)". L'arithmétique modulaire est un système de calcul qui se concentre sur le "reste" lorsqu'un nombre est divisé par un nombre fixe (appelé module). Comme il s'agit d'un calcul similaire à celui du cadran d'une horloge (qui fait un tour en 12 heures), on l'appelle aussi parfois "mathématiques de l'horloge".
+Par exemple, $17\equiv12\equiv2\pmod5$. Les congruences sont compatibles avec l’addition, la soustraction, la multiplication et les puissances entières non négatives. En revanche, simplifier par un facteur exige une condition.
 
-Lorsque le reste de la division de deux entiers $a$ et $b$ par un entier positif $n$ est égal, on l'écrit mathématiquement comme suit :
+$$ ac\equiv bc\pmod n,\quad \gcd(c,n)=1
+\quad\Longrightarrow\quad a\equiv b\pmod n. $$
 
-$$
-a \equiv b \pmod n
-$$
+Sans cette condition, $2\cdot1\equiv2\cdot4\pmod6$ est vrai, mais $1\not\equiv4\pmod6$. Pour $n>1$, l’inverse $c^{-1}$ existe si et seulement si $\gcd(c,n)=1$. L’algorithme d’Euclide étendu trouve $cx+ny=1$ ; réduire $x$ modulo $n$ donne l’inverse.
 
-Cela se lit "$a$ et $b$ sont congrus modulo $n$". Par exemple, le reste de 17 divisé par 5 est 2, et le reste de 12 divisé par 5 est également 2. Par conséquent, on peut écrire ce qui suit :
+## 3. Petit théorème de Fermat et démonstration
 
-$$
-17 \equiv 12 \pmod 5 \equiv 2 \pmod 5
-$$
+Si $p$ est premier et $p\nmid a$, alors :
 
-En arithmétique modulaire, les quatre opérations arithmétiques habituelles (addition, soustraction, multiplication) s'appliquent telles quelles.
+$$ a^{p-1}\equiv1\pmod p. $$
 
-1. **Addition** : Si $a \equiv b \pmod n$ et $c \equiv d \pmod n$, alors $a + c \equiv b + d \pmod n$
-2. **Soustraction** : Si $a \equiv b \pmod n$ et $c \equiv d \pmod n$, alors $a - c \equiv b - d \pmod n$
-3. **Multiplication** : Si $a \equiv b \pmod n$ et $c \equiv d \pmod n$, alors $a \times c \equiv b \times d \pmod n$
-4. **Exponentiation** : Si $a \equiv b \pmod n$, alors pour tout entier naturel $k$, $a^k \equiv b^k \pmod n$
+Pour $p=5$, les valeurs $2^4=16$, $3^4=81$ et $4^4=256$ ont toutes pour reste 1 dans la division par 5. Une forme valable pour tout entier $a$ est :
 
-Cependant, il faut faire attention à la **division**. En général, même si $a \times c \equiv b \times c \pmod n$, vous ne pouvez pas diviser les deux côtés par $c$ pour obtenir $a \equiv b \pmod n$. Cela n'est vrai que si $c$ et $n$ sont premiers entre eux (leur plus grand commun diviseur est 1). Ce concept d'"inverse modulaire" devient extrêmement important dans la génération de clés pour le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), que nous aborderons plus tard.
+$$ a^p\equiv a\pmod p. $$
 
----
+Lorsque $p\nmid a$, on multiplie la première forme par $a$. Lorsque $p\mid a$, les deux membres de la seconde sont congrus à zéro.
 
-## 3. Contexte mathématique et preuve du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/)
+Pour démontrer la première forme, multiplions les résidus non nuls $1,2,\ldots,p-1$ par $a$. Aucun ne devient nul. Si $ia\equiv ja\pmod p$, on simplifie par $a$ pour obtenir $i=j$ : ces produits permutent donc les résidus non nuls initiaux. En prenant les produits :
 
-Maintenant que nous avons couvert les bases de l'arithmétique modulaire, examinons le sujet principal, le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/).
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-### 3.1 Définition du théorème
+Comme $(p-1)!$ et $p$ sont premiers entre eux, on peut simplifier par ce facteur, ce qui démontre le théorème.
 
-Le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est formulé comme suit :
+## 4. Théorème d’Euler
 
-> **Petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/fr/p/fermats-little-theorem/))**
-> Soit $p$ un nombre premier et $a$ un entier quelconque qui n'est pas un multiple de $p$ (c'est-à-dire que $a$ et $p$ sont premiers entre eux). Alors, la congruence suivante est vraie :
-> $$ a^{p-1} \equiv 1 \pmod p $$
+L’indicatrice d’Euler $\varphi(n)$ compte les entiers de 1 à $n$ qui sont premiers avec $n$. Pour un nombre premier $p$, $\varphi(p)=p-1$ ; pour des nombres premiers distincts $p,q$ :
 
-Il est également courant d'exprimer ce théorème sous une forme valable pour tout entier $a$, en supprimant la condition "$a$ n'est pas un multiple de $p$". Dans ce cas, on multiplie les deux côtés par $a$, ce qui donne :
+$$ \varphi(pq)=(p-1)(q-1). $$
 
-$$
-a^p \equiv a \pmod p
-$$
+Pour $n>1$ et $\gcd(a,n)=1$, le [théorème d’Euler](https://dlmf.nist.gov/27.2#E8) affirme :
 
-### 3.2 Vérification par des exemples concrets
+$$ a^{\varphi(n)}\equiv1\pmod n. $$
 
-Vérifions si le théorème se vérifie vraiment en utilisant des nombres concrets.
-Soit le nombre premier $p = 5$. Alors $p-1 = 4$. Nous choisissons un entier pour $a$ qui n'est pas un multiple de $p$.
+Une permutation des résidus premiers avec le module, suivie d’une simplification du produit, le démontre comme dans la section précédente. Le petit théorème de Fermat est le cas où le module est premier. On ne peut pas appliquer le théorème d’Euler sans condition à une entrée qui n’est pas première avec le module.
 
-- Pour $a = 2$ : $2^{5-1} = 2^4 = 16$. $16 \div 5 = 3$ avec un reste de $1$. Donc $16 \equiv 1 \pmod 5$. (Vérifié)
-- Pour $a = 3$ : $3^{5-1} = 3^4 = 81$. $81 \div 5 = 16$ avec un reste de $1$. Donc $81 \equiv 1 \pmod 5$. (Vérifié)
-- Pour $a = 4$ : $4^{5-1} = 4^4 = 256$. $256 \div 5 = 51$ avec un reste de $1$. Donc $256 \equiv 1 \pmod 5$. (Vérifié)
+## 5. Ce qu’indique le test de Fermat
 
-Ainsi, quel que soit le $a$ que vous choisissez (à condition qu'il ne soit pas un multiple de 5), le reste de sa 4ème puissance divisée par 5 sera toujours 1. Cela ressemble à de la magie, mais cela découle des magnifiques propriétés des nombres premiers.
+Pour un entier impair $n>3$, choisissons une base $a$ telle que $2\le a\le n-2$. Si la non-congruence suivante est vérifiée, $n$ est certainement composé.
 
-### 3.3 Preuve mathématique du théorème
+$$ a^{n-1}\not\equiv1\pmod n. $$
 
-Pourquoi cela est-il vrai ? Nous présentons ici une preuve élégante utilisant l'ensemble des classes de restes.
-
-Considérons l'ensemble $S = \{1, 2, 3, \dots, p-1\}$. Ce sont les représentants des entiers dont les restes de la division par $p$ vont de $1$ à $p-1$.
-Considérons maintenant un nouvel ensemble $T$ obtenu en multipliant chaque élément par un entier $a$ qui est premier avec $p$.
-$$ T = \{1a, 2a, 3a, \dots, (p-1)a\} $$
-
-Considérons les restes de chaque élément de cet ensemble $T$ divisé par $p$. Étonnamment, ces restes, bien que leur ordre puisse changer, correspondent exactement à l'ensemble des éléments de l'ensemble d'origine $S$.
-Pourquoi ?
-1. Les éléments de $T$ ne peuvent jamais être des multiples de $p$ (car ni $a$ ni les éléments d'origine ne sont des multiples de $p$).
-2. Il n'y a pas deux éléments distincts dans $T$ qui sont congrus modulo $p$. Si $ia \equiv ja \pmod p$ ($i \neq j$), puisque $a$ et $p$ sont premiers entre eux, nous pouvons diviser par $a$ pour obtenir $i \equiv j \pmod p$, ce qui est une contradiction.
-
-Par conséquent, le produit de tous les éléments de $S$ et le produit de tous les éléments de $T$ sont congrus modulo $p$.
-
-$$
-(1a) \times (2a) \times \dots \times ((p-1)a) \equiv 1 \times 2 \times \dots \times (p-1) \pmod p
-$$
-
-En réorganisant le côté gauche, puisqu'il y a $p-1$ termes de $a$,
-
-$$
-a^{p-1} \cdot (p-1)! \equiv (p-1)! \pmod p
-$$
-
-Comme $(p-1)!$ est premier avec $p$, nous pouvons diviser les deux côtés par $(p-1)!$, ce qui conduit finalement au théorème suivant :
-
-$$
-a^{p-1} \equiv 1 \pmod p
-$$
-
-Ceci est la preuve du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/).
-
----
-
-## 4. La fonction indicatrice d'Euler et le théorème d'Euler
-
-Le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est un théorème concernant "un nombre premier $p$", mais il a été généralisé à "tout entier positif $n$" par Leonhard Euler. Cette extension est essentielle pour comprendre le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/).
-
-### 4.1 La fonction indicatrice d'Euler $\phi(n)$
-
-La fonction indicatrice d'Euler (ou fonction $\phi$ d'Euler) $\phi(n)$ est une fonction qui représente "le nombre d'entiers de $1$ à $n$ qui sont premiers avec $n$".
-
-- Dans le cas d'un nombre premier $p$, puisque tous les entiers de $1$ à $p-1$ sont premiers avec $p$, $\phi(p) = p - 1$.
-- Pour le produit de deux nombres premiers distincts $p$ et $q$, c'est-à-dire $n = p \times q$, $\phi(n)$ peut être calculé avec une formule très simple :
-  $$ \phi(p \times q) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-
-Cette propriété est la logique fondamentale derrière la génération de clés dans le chiffrement RSA.
-
-### 4.2 Le théorème d'Euler
-
-Euler a généralisé le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) comme suit :
-
-> **Théorème d'Euler (Euler's Theorem)**
-> Pour tout entier positif $n$ et tout entier $a$ qui lui est premier entre eux, ce qui suit est vrai :
-> $$ a^{\phi(n)} \equiv 1 \pmod n $$
-
-Si $n$ est un nombre premier $p$, alors $\phi(p) = p - 1$, donc cela devient exactement le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ($a^{p-1} \equiv 1 \pmod p$). En d'autres termes, le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) n'est qu'un cas particulier du théorème d'Euler.
-
----
-
-## 5. Trouver d'énormes nombres premiers : Le test de primalité de [Fermat](https://kenji.blog/fr/p/fermat/)
-
-Dans les technologies cryptographiques (comme le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et l'échange de clés Diffie-Hellman), il est nécessaire de trouver rapidement "d'énormes nombres premiers" s'étendant sur des centaines de chiffres. Cependant, utiliser la méthode de la "division par essais", qui consiste à essayer de diviser par tous les nombres de $2$ à $\sqrt{N}$ pour déterminer si un grand nombre $N$ est premier, prendrait un temps équivalent à l'âge de l'univers.
-
-C'est là qu'intervient le **test de primalité de [Fermat](https://kenji.blog/fr/p/fermat/) (Fermat Primality Test)**, un "test de primalité probabiliste" qui utilise le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) à l'envers.
-
-### 5.1 Qu'est-ce qu'un test de primalité probabiliste ?
-
-Selon le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/), si $p$ est premier, alors $a^{p-1} \equiv 1 \pmod p$ est toujours vrai pour tout $a$ ($1 < a < p$).
-La contraposée de cette affirmation est : "S'il existe un $a$ pour lequel $a^{p-1} \not\equiv 1 \pmod p$, alors $p$ **n'est absolument pas un nombre premier (c'est un nombre composé)**".
-
-Par conséquent, si vous voulez déterminer si $N$ est premier, vous choisissez quelques valeurs aléatoires de $a$, calculez $a^{N-1} \pmod N$ et vérifiez si le résultat est $1$. Si vous obtenez une réponse autre que $1$ ne serait-ce qu'une seule fois, il est certain que $N$ est un nombre composé. S'il vaut $1$ peu importe le nombre de fois que vous essayez, vous pouvez juger avec une forte probabilité que $N$ est "probablement premier".
-
-### 5.2 Explication de l'algorithme et organigramme
-
-L'algorithme du test de [Fermat](https://kenji.blog/fr/p/fermat/) est le suivant :
+La réciproque est fausse. Réussir le test signifie seulement que les bases choisies n’ont pas violé cette condition nécessaire. Répéter le test avec plusieurs bases aléatoires ne fournit pas une petite borne d’erreur uniforme pour tous les nombres composés.
 
 ```mermaid
 flowchart TD
-    Start["Début"] --> Input["Entrer le nombre à tester p et le nombre de tests k"]
-    Input --> LoopStart["Boucle de i = 0 à k-1"]
-    LoopStart --> Condition{"i < k ?"}
-    Condition -- Oui --> RandomA["Choisir un entier aléatoire a dans la plage 1 < a < p-1"]
-    RandomA --> Calc["Calculer l'exponentiation modulaire a^(p-1) mod p"]
-    Calc --> CheckPrime{"Le résultat est-il 1 ?"}
-    CheckPrime -- Non --> ReturnComposite["p est un nombre composé (certain)"]
-    CheckPrime -- Oui --> Increment["Incrémenter i"]
-    Increment --> Condition
-    Condition -- Non --> ReturnPrime["p est probablement premier (probabiliste)"]
-    ReturnComposite --> End["Fin"]
-    ReturnPrime --> End
+    Input["Entrer un entier n et une liste non vide de bases"] --> Small{"n est-il inférieur à 2 ?"}
+    Small -- Yes --> NotPrime["Non premier"]
+    Small -- No --> Tiny{"n vaut-il 2 ou 3 ?"}
+    Tiny -- Yes --> Known["Ce petit n est premier"]
+    Tiny -- No --> Even{"n est-il pair ?"}
+    Even -- Yes --> Composite["Composé"]
+    Even -- No --> Validate["Valider toutes les bases de 2 à n-2"]
+    Validate --> Next{"Reste-t-il une base à tester ?"}
+    Next -- Yes --> Power["Élever la base suivante à n-1 modulo n"]
+    Power --> Check{"Le reste vaut-il 1 ?"}
+    Check -- No --> Composite
+    Check -- Yes --> Next
+    Next -- No --> Pass["Bases réussies : pas une preuve de primalité"]
 ```
 
-### 5.3 Le piège des nombres de Carmichael (pseudo-premiers)
+Le code lève une exception si la liste est vide ou si une base est hors intervalle. La version Python refuse aussi les types non entiers. Les bornes des bases ne sont contrôlées que pour les impairs $n\ge5$, après le traitement des petits entiers et des nombres pairs.
 
-Bien que le test de [Fermat](https://kenji.blog/fr/p/fermat/) soit extrêmement rapide, il présente un défaut majeur. Il existe des nombres diaboliques qui, bien qu'ils soient composés, satisfont $a^{N-1} \equiv 1 \pmod N$ pour tous les $a$. Ceux-ci sont appelés **nombres de Carmichael (Carmichael numbers)**. Le plus petit nombre de Carmichael est $561$ ($3 \times 11 \times 17$).
+Un nombre de Carmichael est un composé qui satisfait la congruence de Fermat pour **toute base première avec $n$**. Le plus petit exemple, $561=3\cdot11\cdot17$, réussit le test en base 2, mais échoue en base 3. Le composé $1105=5\cdot13\cdot17$ réussit en bases 2 et 3. Lors de la génération de nombres premiers, ces résultats ne doivent pas tenir lieu de preuve.
 
-En raison de l'existence des nombres de Carmichael, un test de [Fermat](https://kenji.blog/fr/p/fermat/) pur seul ne peut pas déterminer la primalité de manière absolue. C'est pourquoi, dans les systèmes cryptographiques réels (comme OpenSSL), le **test de primalité de Miller-Rabin (Miller-Rabin primality test)**, qui est une version améliorée du test de [Fermat](https://kenji.blog/fr/p/fermat/), est utilisé en standard. Le test de Miller-Rabin peut détecter les nombres de Carmichael, réduisant ainsi la probabilité de fausse détection à presque zéro.
+Les sections Fermat et Miller–Rabin du [Handbook of Applied Cryptography, chapitre 4](https://cacr.uwaterloo.ca/hac/about/chap4.pdf) expliquent cette distinction. Pour un composé impair fixé, $k$ tests de Miller–Rabin avec des bases aléatoires uniformes et indépendantes bornent la probabilité de faux positif par $4^{-k}$. Ce n’est pas la même quantité que la probabilité que le nombre soit composé après avoir réussi les tests, et cette borne ne s’applique pas automatiquement à des bases fixes arbitraires. La [documentation d’OpenSSL](https://docs.openssl.org/master/man3/BN_generate_prime/) explique également les nombres probablement premiers et les tests répétés. Voir l’[article sur les tests de primalité](https://kenji.blog/fr/p/cpp-fast-prime-testing-miller-rabin/).
 
-### 5.4 Exponentiation modulaire rapide (Méthode d'exponentiation par carrés)
+## 6. Tester la condition nécessaire en C++ et Python
 
-Dans l'algorithme de test de primalité, il est nécessaire de calculer $a^{N-1} \pmod N$. Si $N$ est énorme, $a^{N-1}$ aura un nombre de chiffres astronomique et ne tiendra pas dans la mémoire d'un ordinateur.
-La solution à ce problème est la **méthode d'exponentiation par carrés (Exponentiation by Squaring)** ou exponentiation modulaire. En prenant le modulo (mod N) à chaque étape du calcul, la valeur est toujours maintenue plus petite que $N$, ce qui permet un calcul très rapide (complexité temporelle $O(\log N)$).
+Ces exemples pédagogiques testent des bases spécifiées, sans tirage aléatoire. Le nom `passes` indique la réussite d’un test, pas une certification de primalité. L’implémentation initiale ne faisait aucun test avec zéro itération ou un nombre négatif d’itérations ; ces versions refusent une liste vide de bases.
 
----
+### C++17
 
-## 6. Implémentation du test de primalité et de l'exponentiation modulaire
-
-Maintenant, implémentons le test de primalité de [Fermat](https://kenji.blog/fr/p/fermat/) et la méthode d'exponentiation par carrés en C++ et Python.
-
-### 6.1 Implémentation en C++
-
-En C++, les types d'entiers standard ont tendance à déborder facilement, donc une bibliothèque d'entiers à précision multiple (comme GMP) est nécessaire pour manipuler des nombres géants. Cependant, pour comprendre l'algorithme, nous montrons ici une implémentation dans la limite des entiers 64 bits (`unsigned long long`).
+L’exemple exige une implémentation fournissant `std::uint64_t` et ne traite pas les entrées négatives. La multiplication modulaire utilise des additions qui maintiennent le résidu dans l’intervalle du module, sans extension `__int128`. La fonction interne `add_mod` suppose que les deux termes sont inférieurs au module. Si `a >= m-b`, une soustraction remplace l’addition ; sinon, la somme est inférieure au module et tient sur 64 bits. Les fonctions de multiplication et d’exponentiation refusent le module zéro et renvoient le résidu zéro pour le module un.
 
 ```cpp
+#include <cstdint>
 #include <iostream>
-#include <random>
+#include <stdexcept>
+#include <vector>
 
-using namespace std;
+using u64 = std::uint64_t;
 
-// Exponentiation modulaire rapide (a^b mod m) - Exponentiation par carrés
-unsigned long long power_mod(unsigned long long a, unsigned long long b, unsigned long long m) {
-    unsigned long long result = 1;
-    a = a % m;
-    while (b > 0) {
-        // Si le bit de poids faible de b est 1, multiplier le résultat par a
-        if (b % 2 == 1) {
-            result = (__int128)result * a % m; // Extension en 128 bits pour éviter le débordement
-        }
-        // Élever a au carré
-        a = (__int128)a * a % m;
-        // Décaler b vers la droite (diviser par la moitié)
-        b /= 2;
+// Internal helper: m > 0 and a, b < m.
+u64 add_mod(u64 a, u64 b, u64 m) {
+    return a >= m - b ? a - (m - b) : a + b;
+}
+
+u64 mul_mod(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    a %= m;
+    u64 result = 0;
+    while (b != 0) {
+        if (b & 1) result = add_mod(result, a, m);
+        b >>= 1;
+        if (b != 0) a = add_mod(a, a, m);
     }
     return result;
 }
 
-// Test de primalité de Fermat
-bool fermat_is_prime(unsigned long long p, int iterations = 5) {
-    if (p <= 1) return false;
-    if (p <= 3) return true;
-    if (p % 2 == 0) return false;
-
-    random_device rd;
-    mt19937_64 gen(rd());
-    uniform_int_distribution<unsigned long long> dis(2, p - 2);
-
-    for (int i = 0; i < iterations; ++i) {
-        unsigned long long a = dis(gen);
-        // Si a^(p-1) mod p n'est pas 1, alors c'est un nombre composé
-        if (power_mod(a, p - 1, p) != 1) {
-            return false;
-        }
+u64 power_mod(u64 a, u64 exponent, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
+    a %= m;
+    while (exponent != 0) {
+        if (exponent & 1) result = mul_mod(result, a, m);
+        exponent >>= 1;
+        if (exponent != 0) a = mul_mod(a, a, m);
     }
-    return true; // Probablement premier
+    return result;
+}
+
+bool fermat_passes(u64 n, const std::vector<u64>& bases) {
+    if (bases.empty()) throw std::invalid_argument("Choose at least one base");
+    if (n < 2) return false;
+    if (n <= 3) return true;
+    if (n % 2 == 0) return false;
+    for (u64 a : bases) {
+        if (a < 2 || a > n - 2) throw std::invalid_argument("Base outside range");
+    }
+    for (u64 a : bases) {
+        if (power_mod(a, n - 1, n) != 1) return false;
+    }
+    return true;
 }
 
 int main() {
-    unsigned long long num = 1000000007; // Nombre premier connu
-    if (fermat_is_prime(num, 10)) {
-        cout << num << " is probably prime." << endl;
-    } else {
-        cout << num << " is composite." << endl;
-    }
-    return 0;
+    std::cout << "1000000007 passes bases 2,3: " << fermat_passes(1000000007, {2, 3}) << '\n';
+    std::cout << "1105 passes bases 2,3: " << fermat_passes(1105, {2, 3}) << '\n';
+    std::cout << "1105 passes base 5: " << fermat_passes(1105, {5}) << '\n';
 }
 ```
 
-### 6.2 Implémentation en Python
+Par exemple, compilez avec `g++ -std=c++17 fermat.cpp -o fermat`. Le code a été vérifié avec GCC 13.3 sous WSL. Les sorties booléennes sont `1, 1, 0`, dans cet ordre. Le fait que le nombre composé 1105 réussisse le test pour deux bases illustre sa limite.
 
-En Python, le type entier standard prend en charge les entiers à précision multiple, il n'y a donc pas besoin de s'inquiéter du débordement. De plus, la fonction intégrée `pow(a, b, m)` de Python utilise l'exponentiation par carrés en interne et est très rapide.
+### Python
+
+Cette version utilise les entiers de Python 3 et `pow` à trois arguments. Elle exige le type natif `int` et refuse `bool`. La liste de bases ne peut pas être vide. Les candidats et les bases sont les mêmes qu’en C++.
 
 ```python
-import random
-
-def fermat_is_prime(p, iterations=5):
-    """
-    Test de primalité probabiliste utilisant le test de Fermat
-    """
-    if p <= 1:
+def fermat_passes(n, bases):
+    if type(n) is not int:
+        raise TypeError("n must be an integer")
+    bases = tuple(bases)
+    if not bases:
+        raise ValueError("Choose at least one base")
+    if any(type(a) is not int for a in bases):
+        raise TypeError("Bases must be integers")
+    if n < 2:
         return False
-    if p <= 3:
+    if n <= 3:
         return True
-    if p % 2 == 0:
+    if n % 2 == 0:
         return False
+    if any(a < 2 or a > n - 2 for a in bases):
+        raise ValueError("Base outside range")
+    return all(pow(a, n - 1, n) == 1 for a in bases)
 
-    for _ in range(iterations):
-        # Choisir un nombre aléatoire a entre 2 et p-2
-        a = random.randint(2, p - 2)
-        # Calculer a^(p-1) mod p. La fonction intégrée pow est rapide.
-        if pow(a, p - 1, p) != 1:
-            return False # Certitude que c'est un nombre composé
 
-    return True # Probablement premier
-
-# Test
-number_to_test = 104729
-if fermat_is_prime(number_to_test, 10):
-    print(f"{number_to_test} est probablement premier.")
-else:
-    print(f"{number_to_test} est un nombre composé.")
+if __name__ == "__main__":
+    print("1000000007 passes bases 2,3:", fermat_passes(1000000007, [2, 3]))
+    print("1105 passes bases 2,3:", fermat_passes(1105, [2, 3]))
+    print("1105 passes base 5:", fermat_passes(1105, [5]))
 ```
 
----
+Le code a été vérifié avec Python 3.12. Les résultats sont `True, True, False`. L’exemple initial 104729 réussit toujours le test en tant que nombre premier. Les entiers Python évitent le débordement de largeur fixe, mais le temps et la mémoire restent limités.
 
-## 7. Application au chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) : Où [Fermat](https://kenji.blog/fr/p/fermat/) et Euler se rencontrent
+L’exponentiation par carrés effectue $O(\log b)$ multiplications modulaires pour un exposant $b>0$, un nombre proportionnel à sa longueur en bits. Ce n’est ni une complexité en bits ni un temps mesuré. Chaque multiplication modulaire de l’exemple C++ utilise un nombre d’additions modulaires proportionnel à la longueur du multiplicateur en bits. On ne suppose pas que l’algorithme interne précis de `pow` soit identique dans toutes les versions de Python.
 
-La plus grande application du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) (et du théorème d'Euler) est le **chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)**, développé en 1977 par Rivest, Shamir et Adleman.
-Le chiffrement RSA est un système révolutionnaire de "cryptographie à clé publique", qui réalise un mécanisme où la clé de chiffrement (clé publique) est rendue publique au monde entier, tandis que la clé de déchiffrement (clé privée) n'est connue que du destinataire.
+## 7. Pourquoi le déchiffrement RSA fonctionne
 
-Cette asymétrie repose sur la sécurité computationnelle selon laquelle "la factorisation en nombres premiers de nombres composés géants est extrêmement difficile".
+Choisissons des nombres premiers distincts $p,q$ et posons $N=pq$. Pour cette construction pédagogique, l’exposant public vérifie $1<e<\varphi(N)$ et $\gcd(e,\varphi(N))=1$ ; l’exposant privé $d$ est son inverse.
 
-### 7.1 Fonctionnement du chiffrement RSA (Génération de clés, Chiffrement, Déchiffrement)
+$$ ed\equiv1\pmod{\varphi(N)},\qquad
+\varphi(N)=(p-1)(q-1). $$
 
-Vérifions le flux de communication global du chiffrement RSA avec un diagramme de séquence Mermaid.
+La clé publique est $(N,e)$, et une représentation simplifiée de la clé privée est $(N,d)$. Les clés privées réelles peuvent aussi contenir des facteurs pour les calculs CRT, qui restent secrets. Factoriser le module permet de calculer l’exposant privé, mais l’équivalence générale entre l’inversion de RSA et la factorisation n’a pas été démontrée.
+
+Pour un représentant $0\le M<N$ :
+
+$$ C=M^e\bmod N,\qquad M'=C^d\bmod N. $$
+
+Le diagramme représente uniquement les **opérations RSA brutes** sur des représentants entiers. C’est un diagramme mathématique qui omet l’encodage des messages et l’authentification d’une application réelle.
 
 ```mermaid
 sequenceDiagram
-    participant Alice["Alice (Destinataire)"]
-    participant Bob["Bob (Expéditeur)"]
-    
-    Alice->>Alice: "Générer d'énormes nombres premiers p, q"
-    Alice->>Alice: "Calculer N = p * q, φ(N) = (p-1)(q-1)"
-    Alice->>Alice: "Calculer la clé publique e et la clé privée d (e*d ≡ 1 mod φ(N))"
-    Alice->>Bob: "Envoyer la clé publique (N, e)"
-    Note over Bob: "Préparer le texte clair M (M < N)"
-    Bob->>Bob: "Calculer le texte chiffré C = M^e mod N"
-    Bob->>Alice: "Envoyer le texte chiffré C"
-    Alice->>Alice: "Calculer le texte clair M = C^d mod N pour déchiffrer"
+    participant Alice as Alice
+    participant Bob as Bob
+    Note over Alice,Bob: Exemple pédagogique de RSA brut
+    Alice->>Alice: Choisir des nombres premiers distincts p,q et e,d appropriés
+    Alice->>Bob: Fournir la clé publique (N,e)
+    Bob->>Bob: Préparer un représentant M de 0 à N-1
+    Bob->>Bob: Calculer C = M^e mod N
+    Bob->>Alice: Fournir C
+    Alice->>Alice: Calculer M' = C^d mod N
 ```
 
-Voici une explication des étapes mathématiques détaillées.
+D’abord, si $\gcd(M,N)=1$, écrivons $ed=1+t\varphi(N)$ pour un entier non négatif $t$. Le théorème d’Euler donne :
 
-#### Étape 1 : Génération de clés (Travail du destinataire Alice)
+$$ M^{ed}=M(M^{\varphi(N)})^t\equiv M\pmod N. $$
 
-1. Générer aléatoirement deux énormes nombres premiers $p$ et $q$ (c'est là que la méthode de test de primalité mentionnée ci-dessus est utilisée).
-2. Calculer leur produit $N = p \times q$. Ce $N$ est rendu public.
-3. En utilisant la fonction indicatrice d'Euler, calculer $\phi(N) = (p-1)(q-1)$.
-4. Choisir un entier $e$ (exposant public) qui est premier avec $\phi(N)$ (souvent $e = 65537$ est utilisé).
-5. Calculer l'inverse modulaire $d$ (exposant privé) de $e$. C'est-à-dire, trouver $d$ qui satisfait ce qui suit :
-   $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   **[L'algorithme d'Euclide](https://kenji.blog/p/euclidean-algorithm/) étendu** est utilisé pour ce calcul.
+Les représentants non premiers avec le module ne sont pas exclus. Modulo $p$, si $p\mid M$, alors $M^{ed}$ et $M$ valent tous deux zéro. Sinon, le petit théorème de Fermat et $p-1\mid ed-1$ donnent la congruence. Le même argument vaut modulo $q$. Comme $p,q$ sont premiers entre eux, le théorème des restes chinois donne :
 
-La **clé publique est maintenant $(N, e)$** et la **clé privée est $(N, d)$**. ($p$, $q$, et $\phi(N)$ doivent être immédiatement détruits ou strictement dissimulés).
+$$ M^{ed}\equiv M\pmod p,\quad
+M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod N. $$
 
-#### Étape 2 : Chiffrement (Travail de l'expéditeur Bob)
+Tous les représentants sont donc retrouvés, y compris zéro et les multiples de $p,q$. C’est une preuve de correction, pas de confidentialité.
 
-Supposons que Bob veuille envoyer un message $M$ à Alice ($M$ est la version numérisée des caractères, avec $0 \le M < N$).
-Bob utilise la clé publique d'Alice $(N, e)$ pour effectuer le calcul suivant et créer le texte chiffré $C$.
+## 8. Démonstration reproductible de la primitive RSA
 
-$$
-C \equiv M^e \pmod N
-$$
+Utilisons les nombres premiers connus et fixes 61 et 53, avec l’exposant 17, en calculant l’inverse par l’algorithme d’Euclide étendu. L’exemple ne génère pas de nombres premiers aléatoires et ne convertit pas les chaînes caractère par caractère. Le « générateur de nombres premiers » initial, limité aux bases 2 et 3, accepte 1105 et peut produire des clés qui empêchent de retrouver le message. L’exposant un et les représentants hors intervalle ne doivent pas non plus être ignorés dans les exigences du chiffrement réel.
 
-Ce $C$ est envoyé à Alice via le réseau.
-
-#### Étape 3 : Déchiffrement (Travail du destinataire Alice)
-
-Alice, après avoir reçu le texte chiffré $C$, effectue le calcul suivant en utilisant sa clé privée $d$, qu'elle seule connaît.
-
-$$
-M' \equiv C^d \pmod N
-$$
-
-Étonnamment, ce résultat de calcul $M'$ correspond parfaitement au message original $M$.
-
-### 7.2 Pourquoi cela peut-il être déchiffré ? (Preuve mathématique)
-
-C'est ici que le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) (le théorème d'Euler) montre sa véritable valeur. Pourquoi $C^d \pmod N$ revient-il à $M$ ?
-
-Développons la formule de déchiffrement.
-Puisque $C \equiv M^e \pmod N$,
-$$ C^d \equiv (M^e)^d \equiv M^{ed} \pmod N $$
-
-Lors de l'étape de génération de clés, nous avons choisi $d$ de sorte que $e \cdot d \equiv 1 \pmod{\phi(N)}$. Cela signifie qu'il existe un entier $k$ tel qu'il peut s'écrire comme suit :
-$$ e \cdot d = 1 + k \cdot \phi(N) $$
-
-En substituant cela dans la formule ci-dessus :
-$$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
-
-Ici, le **théorème d'Euler** ($M^{\phi(N)} \equiv 1 \pmod N$) entre en jeu. (*Strictement parlant, $M$ et $N$ doivent être premiers entre eux, mais dans [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), la probabilité que $M$ et $N$ ne soient pas premiers entre eux est astronomiquement faible, et en utilisant le théorème des restes chinois, il peut être prouvé que cela est vrai même s'ils ne sont pas premiers entre eux*).
-
-En appliquant le théorème d'Euler, puisque $M^{\phi(N)} \equiv 1$,
-$$ M \cdot (1)^k \equiv M \pmod N $$
-
-$M$ est magnifiquement restauré ! Les propriétés des nombres que [Fermat](https://kenji.blog/fr/p/fermat/) et Euler ont découvertes il y a des centaines d'années garantissent parfaitement la confidentialité des communications numériques modernes.
-
----
-
-## 8. Implémentation jouet du chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) (Python)
-
-Comme il est difficile de saisir cela uniquement en théorie, utilisons Python pour implémenter réellement le processus de génération de clés, de chiffrement et de déchiffrement RSA. Bien qu'il s'agisse d'une "implémentation jouet" à des fins éducatives, les mathématiques utilisées sont exactement les mêmes que les vraies.
-
-Nous inclurons également une implémentation de "l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) étendu" pour trouver l'inverse modulaire $d$.
+La fonction `rsa_primitive` ne contrôle que les intervalles arithmétiques de l’exposant, du module et du représentant. Elle ne factorise pas un module arbitraire et ne valide pas n’importe quelle clé RSA. La clé pédagogique fixe satisfait séparément les conditions sur les clés. La [RFC 8017, sections 5 et 7](https://www.rfc-editor.org/rfc/rfc8017.html) distingue aussi les primitives des schémas de chiffrement.
 
 ```python
-import random
-
-# Trouver le plus grand commun diviseur
-def gcd(a, b):
-    while b != 0:
-        a, b = b, a % b
-    return a
-
-# Algorithme d'Euclide étendu (trouver x, y pour ax + by = gcd(a,b))
-# Utilisé pour trouver d pour e*d ≡ 1 (mod φ(N))
 def extended_gcd(a, b):
-    if a == 0:
-        return (b, 0, 1)
-    else:
-        g, y, x = extended_gcd(b % a, a)
-        return (g, x - (b // a) * y, y)
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r:
+        q = old_r // r
+        old_r, r = r, old_r - q * r
+        old_s, s = s, old_s - q * s
+        old_t, t = t, old_t - q * t
+    return old_r, old_s, old_t
 
-def mod_inverse(e, phi):
-    g, x, y = extended_gcd(e, phi)
+
+def mod_inverse(a, modulus):
+    if type(a) is not int or type(modulus) is not int:
+        raise TypeError("Arguments must be integers")
+    if modulus <= 1:
+        raise ValueError("Modulus must exceed one")
+    g, x, _ = extended_gcd(a % modulus, modulus)
     if g != 1:
-        raise Exception("L'inverse n'existe pas")
-    else:
-        return x % phi
+        raise ValueError("Inverse does not exist")
+    return x % modulus
 
-# Fonction de génération de nombres premiers (Version simplifiée : génère de petits nombres premiers)
-def generate_prime(bits):
-    while True:
-        p = random.getrandbits(bits)
-        # Jugement simplifié au lieu du test de Fermat mentionné ci-dessus
-        if p > 1 and pow(2, p-1, p) == 1 and pow(3, p-1, p) == 1:
-            return p
 
-# Génération de clés RSA
-def generate_keypair(bits=16):
-    p = generate_prime(bits)
-    q = generate_prime(bits)
-    # S'assurer que p et q ne sont pas identiques
-    while p == q:
-        q = generate_prime(bits)
+def rsa_primitive(value, exponent, modulus):
+    if any(type(x) is not int for x in (value, exponent, modulus)):
+        raise TypeError("Arguments must be integers")
+    if exponent <= 0 or modulus <= 1 or not 0 <= value < modulus:
+        raise ValueError("Invalid exponent, modulus or representative")
+    return pow(value, exponent, modulus)
 
+
+def rsa_primitive_demo():
+    p, q, e = 61, 53, 17  # Fixed public teaching constants, not secret keys.
     n = p * q
     phi = (p - 1) * (q - 1)
-
-    # e est souvent un nombre premier comme 65537, mais ici il est choisi aléatoirement
-    e = random.randrange(1, phi)
-    g = gcd(e, phi)
-    while g != 1:
-        e = random.randrange(1, phi)
-        g = gcd(e, phi)
-
-    # Calcul de la clé privée d
     d = mod_inverse(e, phi)
-    
-    # Clé publique (e, n), Clé privée (d, n)
-    return ((e, n), (d, n))
+    print("Public key (n, e):", (n, e))
+    print("Private key (n, d):", (n, d))
+    m = 65
+    c = rsa_primitive(m, e, n)
+    recovered = rsa_primitive(c, d, n)
+    print(f"{m} -> {c} -> {recovered}")
+    for representative in range(n):
+        cipher = rsa_primitive(representative, e, n)
+        if rsa_primitive(cipher, d, n) != representative:
+            raise ArithmeticError("Round-trip failed")
+    print("All 3233 representatives round-trip.")
 
-def encrypt(pk, plaintext):
-    e, n = pk
-    # Calculer plaintext^e mod n
-    cipher = [pow(ord(char), e, n) for char in plaintext]
-    return cipher
 
-def decrypt(sk, ciphertext):
-    d, n = sk
-    # Calculer cipher^d mod n et reconvertir en caractères
-    plain = [chr(pow(char, d, n)) for char in ciphertext]
-    return ''.join(plain)
-
-# Exemple d'exécution
-if __name__ == '__main__':
-    print("--- Implémentation jouet du chiffrement RSA ---")
-    public_key, private_key = generate_keypair(bits=12) # Utilisation de nombres premiers de 12 bits
-    
-    print(f"Clé publique (e, n): {public_key}")
-    print(f"Clé privée (d, n): {private_key}")
-
-    message = "Hello Math!"
-    print(f"\nMessage d'origine : {message}")
-
-    # Chiffrement
-    encrypted_msg = encrypt(public_key, message)
-    print(f"Texte chiffré : {encrypted_msg}")
-
-    # Déchiffrement
-    decrypted_msg = decrypt(private_key, encrypted_msg)
-    print(f"Message déchiffré : {decrypted_msg}")
+if __name__ == "__main__":
+    rsa_primitive_demo()
 ```
 
-Lorsque vous exécutez ce code, vous pouvez voir le tableau de caractères être converti en un tableau de nombres peu familiers (texte chiffré), qui est ensuite magnifiquement restauré en la chaîne d'origine par la clé privée.
+L’exécution affiche $(N,e)=(3233,17)$, $(N,d)=(3233,2753)$ et `65 -> 2790 -> 65`, puis vérifie l’aller-retour des 3233 représentants. La clé privée affichée est une constante pédagogique fixe et publique. Ce test ne garantit pas la sécurité des clés RSA en général.
 
----
+## 9. Limites pratiques et références
 
-## 9. Conclusion : L'intersection de la beauté mathématique et de la praticité
+RSA brut est déterministe et ne suffit pas pour un chiffrement sûr. Par exemple, la clé publique permet une comparaison par dictionnaire avec les textes chiffrés caractère par caractère. En production, il faut des bibliothèques auditées, un schéma adapté tel que RSAES-OAEP, des paramètres appropriés et un aléa sûr. Le générateur pseudo-aléatoire de [random en Python](https://docs.python.org/3/library/random.html) ne doit pas servir à générer des clés cryptographiques. RSASSA-PSS est un schéma de signature, distinct du chiffrement.
 
-Au 17ème siècle, lorsque [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) a découvert ce "petit théorème", personne ne pensait qu'il serait utile à quoi que ce soit. [Fermat](https://kenji.blog/fr/p/fermat/) lui-même a mené des recherches en théorie des nombres par pure curiosité mathématique.
+Il faut distinguer les étapes : le théorème établit des congruences ; les tests de primalité vérifient des conditions ; les opérations RSA avec des clés valides retrouvent les représentants ; les schémas réels ajoutent un encodage et d’autres exigences de sécurité. On ne peut pas affirmer que certains services de communication, ou toute la cryptographie moderne, reposent exclusivement sur le petit théorème de Fermat.
 
-Cependant, environ 300 ans plus tard, dans les années 1970, à l'aube des réseaux informatiques, le théorème de [Fermat](https://kenji.blog/fr/p/fermat/) a fait un retour spectaculaire en tant que technologie cryptographique essentielle pour l'établissement de protocoles de communication sécurisés. La technologie de test de primalité basée sur le petit théorème de Fermat et le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) basé sur le théorème d'Euler soutiennent littéralement l'infrastructure Internet moderne.
-
-Les messages LINE que nous envoyons nonchalamment tous les jours, les achats sur Amazon, tout cela danse sur cette belle et simple formule $a^{p-1} \equiv 1 \pmod p$. Le petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) nous enseigne que peu importe à quel point les mathématiques peuvent être abstraites, le moment viendra toujours où elles seront utiles à l'humanité.
-
-Dans l'apprentissage de la programmation et de la théorie cryptographique, comprendre les structures mathématiques à la base de celles-ci sera une arme puissante pour comprendre en profondeur le comportement des bibliothèques fournies sous forme de boîtes noires et pour concevoir des systèmes plus sécurisés.
-
+Les sources primaires sont [DLMF sur le théorème d’Euler](https://dlmf.nist.gov/27.2#E8), [HAC, chapitre 4](https://cacr.uwaterloo.ca/hac/about/chap4.pdf), [la spécification RSA, RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html) et [la description des entiers de 128 bits de GCC](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html). La dernière explique les limites du type d’extension utilisé dans l’implémentation initiale.

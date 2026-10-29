@@ -33,7 +33,7 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 優先記事の36翻訳について、2026-10-24のAI校閲として根拠と原文・翻訳のハッシュを記録。人による確認は0件。
 - 中心極限定理は全13版のPython例を実行し、数式とコード構造も照合。セキュリティ記事のCSP・HTML例は全13版で一致。Unicodeのバイト列は実際の変換で確認。
 - 根拠: `docs/translation-review/batch-001.json`、`batch-002.json`。各バッチの `*-validation.json` に補助検査を保存。
-- 全記事の編集キュー13,032行のうち、AI校閲済み270、未校閲12,762。未確認の翻訳を校閲済みにはしない。
+- 全記事の編集キュー13,032行のうち、AI校閲済み271、未校閲12,761。未確認の翻訳を校閲済みにはしない。
 - 大数の法則は原文と12翻訳すべての本文全体を校閲し、バッチ003に記録。全13版のコード実行・数式比較・ローカルビルドを通過。
 - 大数の法則の12翻訳を含む公開CI（run 40000689502）は成功。バッチ001〜003の48翻訳と日本語原文4記事の計52公開ページで、更新本文・canonical・言語・hreflang・サイドバーを確認済み（`publication-002-003.json`）。
 - コーシーは原文と12翻訳すべての本文全体を校閲し、バッチ004に記録。積分定理・積分公式・シュワルツの不等式の条件、歴史年表、各言語の数学用語と誤リンクを訂正。全13版の数式・年表・リンク・ローカルビルドを検査済み。公開CI run 40003002739 は成功し、バッチ001〜004の60翻訳と原文5記事の計65公開URLで修正本文・canonical・言語・hreflang・サイドバーを確認済み（`publication-004.json`）。
@@ -328,3 +328,5 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - バッチ022のKoreanを原文と全文照合し、各82TeX・3コード全文・2図、C++各モード7480ケースとPython逆元9999組／全3233代表元等を検証して2026-10-29のAI確認を記録。多言語1351ページ、HTTPS2481HTML／41XMLを通過。全記事で269校閲・12763未確認。修正前後の韓国語全文を読了。페르마의 소정리,오일러 피 함수,합동식,서로소,역원,밑,법,나머지,대표원,합성수,카마이클 수と중국인의 나머지 정리を照合し、元の有効なCRT呼称を誤訳と断定せず保持。피関数を不明瞭な別名に頼らず説明し、反復二乗を반복 제곱법へ整理。誤通過率を自然な잘못 통과할 확률とし、加数を두 덧셈 피연산자として条件を明確化。正確性／機密性、프리미티브／암호화 방식、条件付き通過率／事後確率、定数鍵と任意鍵の検証範囲を照合。日本語アルゴリズムへのリンクや全通信の機密性を保証する断定を除去。 他7翻訳と公開確認は未完了。
 
 - バッチ022のPortugueseを原文と全文照合し、各82TeX・3コード全文・2図、C++各モード7480ケースとPython逆元9999組／全3233代表元等を検証して2026-10-29のAI確認を記録。多言語1351ページ、HTTPS2481HTML／41XMLを通過。全記事で270校閲・12762未確認。修正前後のポルトガル語全文を読了。pequeno teorema,congruência,coprimo,inverso modular,base,módulo,resíduo,resto,representante,totiente,teorema chinês do restoを照合。暗号化・復号をcifração/decifraçãoで一貫させたが、元のcriptografia/descriptografia自体を誤訳とは扱わない。Pythonリストをmatrizとする説明、四則としつつ3演算だけ列挙する表現、日本語Euclides伝記への部分リンク、LINE/Amazonの普遍的依存の断定を整理。exponenciação por quadrados sucessivosと操作数の単位を明示し、correção/confidencialidade、primitiva/esquema、条件付き通過率と事後確率を照合。主語後の不要コンマ、文字ごとの変換と検証文の文法も修正した。 他6翻訳と公開確認は未完了。
+
+- バッチ022のFrenchを原文と全文照合し、各82TeX・3コード全文・2図、C++各モード7480ケースとPython逆元9999組／全3233代表元等を検証して2026-10-29のAI確認を記録。多言語1351ページ、HTTPS2481HTML／41XMLを通過。全記事で271校閲・12761未確認。修正前後のフランス語全文を読了。petit théorème,congruence,premiers entre eux,inverse modulaire,indicatrice d’Euler,base,module,reste/résidu,représentant,théorème des restes chinoisを照合。Eulerの元のqui lui est premier entre euxという文法を整理し、元のpremier avecという有効な用法自体は誤訳としない。積のfacteursとtermes、必要条件とpreuve、RSA brut／primitive／schéma、correction／confidentialitéを区別。非合同をnon-congruenceで表し、主語直後の不要コンマと1105の通過を述べる文法を修正。日本語Euclide伝記／アルゴリズムへのリンクとLINE/Amazonの普遍的依存の断定を除去し、条件付き誤通過率・CRTの全代表元・固定鍵の検証範囲を照合。 他5翻訳と公開確認は未完了。
