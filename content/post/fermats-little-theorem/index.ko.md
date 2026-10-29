@@ -1,121 +1,104 @@
 ---
 title: "페르마의 소정리: 소수의 성질과 현대 암호 이론(RSA 암호)을 지탱하는 기초"
-date: "2026-09-24T19:44:38+09:00"
 description: "페르마의 소정리에 대한 직관적인 이해부터 수학적 증명, 그리고 RSA 암호에서의 실용적인 응용까지 자세히 해설합니다."
 slug: "fermats-little-theorem"
-date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags:
   - "정수론"
   - "암호학"
   - "소수"
+date: "2026-09-20T15:00:00+09:00"
+lastmod: 2026-10-29
+math: true
+mermaid: true
 ---
 
-현대 인터넷 사회에서 우리가 안전하게 통신할 수 있는 것은 **암호 이론** 덕분입니다. 그리고 그 암호 이론의 근저에는 17세기 수학자 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)([Pierre de Fermat](https://kenji.blog/ko/p/fermat/))가 발견한 아름다운 정리가 존재하고 있습니다.
+페르마의 소정리는 소수를 법으로 하는 거듭제곱의 성질을 설명합니다. 소수 판정의 필요조건을 제공하며 RSA 복호화가 올바른 이유를 이해하는 데도 도움이 됩니다. 하지만 올바르게 복호화할 수 있다는 사실만으로 통신의 기밀성이 보장되지는 않습니다. 이 글에서는 정리, 예시, 증명, 소수 판정과 RSA에 대한 응용을 구분하여 설명합니다.
 
-본 기사에서는 정수론의 중요한 기초인 **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)** (Fermat's Little Theorem)에 대해, 그 의미와 증명, 그리고 현대의 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호에 어떻게 응용되고 있는지를 알기 쉽게 해설합니다.
+## 페르마의 소정리
 
-## [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)란?
+소수 $p$와 정수 $a$가 $p\nmid a$를 만족하면 다음이 성립합니다.
 
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)는 소수와 정수의 관계를 보여주는 매우 간단하면서도 강력한 정리입니다.
+$$ a^{p-1}\equiv1\pmod p. $$
 
-정리의 주장은 다음과 같습니다.
+합동은 양변의 차가 법의 배수라는 뜻입니다. 여기서는 거듭제곱한 값을 $p$로 나눈 나머지가 1임을 나타냅니다. 모든 정수 $a$에 대해 성립하는 형태는 다음과 같습니다.
 
-> **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)**
-> $p$ 를 소수라 하고, $a$ 를 $p$ 의 배수가 아닌 임의의 정수(즉, $a$ 와 $p$ 는 서로소)라고 합시다. 이때, 다음 합동식이 성립합니다.
-> 
-> $$ a^{p-1} \equiv 1 \pmod p $$
+$$ a^p\equiv a\pmod p. $$
 
-이것은 "정수 $a$ 를 $p-1$ 제곱하여 소수 $p$ 로 나누었을 때의 나머지는 항상 $1$ 이 된다"는 것을 의미합니다.
+$p\nmid a$이면 첫 번째 합동식에 $a$를 곱합니다. $p\mid a$이면 두 번째 합동식의 양변이 모두 0과 합동입니다. 조건을 없애려면 이 경우도 따로 확인해야 합니다.
 
-또한 양변에 $a$ 를 곱함으로써 "$a$ 가 $p$ 의 배수가 아니다"라는 조건을 제외한, 보다 일반적인 형태로 변형할 수도 있습니다.
+### 예시
 
-> $$ a^p \equiv a \pmod p $$
-> (임의의 정수 $a$ 에 대해 성립)
+- $p=5$, $a=2$: $2^4=16=5\cdot3+1$.
+- $p=7$, $a=3$: $3^6=729=7\cdot104+1$.
 
-### 구체적인 예로 확인해 보자
+두 예시는 모두 정리의 가정을 만족하며 나머지가 1입니다. 법이 소수이더라도 밑이 그 배수이면 첫 번째 명제의 적용 대상이 아닙니다.
 
-실제로 숫자를 대입하여 정리가 성립하는지 확인해 봅시다.
+## 나머지의 순열을 이용한 증명
 
-**예 1: $p = 5$(소수), $a = 2$ 인 경우**
-- $p-1 = 4$ 입니다.
-- $a^{p-1} = 2^4 = 16$ 입니다.
-- $16$ 을 $5$ 로 나누면 몫이 $3$ 이고 **나머지가 $1$** 이 됩니다 ($16 \equiv 1 \pmod 5$).
+$S=\{1,2,\ldots,p-1\}$의 각 원소에 $a$를 곱하고 법 $p$에 대한 나머지를 구합니다. 나머지가 0인 경우는 없습니다. $ia\equiv ja\pmod p$이면 $a$와 $p$가 서로소이므로 인자 $a$를 약분하여 $i\equiv j\pmod p$를 얻습니다. 첨자는 법보다 작은 양의 정수이므로 $i=j$입니다.
 
-**예 2: $p = 7$(소수), $a = 3$ 인 경우**
-- $p-1 = 6$ 입니다.
-- $a^{p-1} = 3^6 = 729$ 입니다.
-- $729$ 를 $7$ 로 나누면 몫이 $104$ 이고 **나머지가 $1$** 이 됩니다 ($729 = 7 \times 104 + 1$).
+따라서 얻은 나머지는 원래의 0이 아닌 나머지들을 재배열한 것입니다. 모든 원소를 곱하면 다음을 얻습니다.
 
-이처럼 어떤 소수 $p$ 를 선택하더라도 이 신기한 법칙이 성립합니다.
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-## 정리의 증명
+$(p-1)!$과 $p$가 서로소이므로 그 역원을 곱해 공통 인자를 약분하면 정리가 나옵니다. 합동식에서 임의의 인자로 조건 없이 나눌 수 있는 것은 아닙니다.
 
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 증명하는 데는 몇 가지 접근법이 있지만, 여기서는 정수론에 기반한 대표적인 증명 방법을 소개합니다.
+## 페르마 테스트는 필요조건을 검사합니다
 
-$p$ 를 소수라 하고, $a$ 를 $p$ 의 배수가 아닌 정수라고 합시다.
-집합 $S = \{1, 2, 3, \dots, p-1\}$ 을 생각합니다. 이 집합의 각 원소에 $a$ 를 곱한 새로운 집합을 $S'$ 라고 합시다.
+먼저 2보다 작은 정수는 소수가 아니고, 2와 3은 소수이며, 그 밖의 짝수는 합성수라고 처리합니다. 남은 홀수 $n>3$에 대해 $2\le a\le n-2$인 밑 $a$를 선택합니다.
 
-$$ S' = \{a, 2a, 3a, \dots, (p-1)a\} $$
+$$ a^{n-1}\not\equiv1\pmod n $$
 
-이 집합 $S'$ 의 각 원소를 $p$ 로 나누었을 때의 나머지를 생각합니다. 놀랍게도 이 나머지들은 모두 다르며, 게다가 $0$ 이 되지 않습니다. 즉, 나머지의 집합은 원래의 집합 $S$ 와 (순서를 무시하면) 완전히 일치합니다.
-
-따라서 $S$ 의 원소들의 곱과 $S'$ 의 원소들의 곱은 $p$ 를 법으로 하여 합동이 됩니다.
-
-$$ 1 \times 2 \times \dots \times (p-1) \equiv a \times 2a \times \dots \times (p-1)a \pmod p $$
-
-이것을 정리하면 다음과 같이 됩니다.
-
-$$ (p-1)! \equiv a^{p-1} \times (p-1)! \pmod p $$
-
-$(p-1)!$ 은 $p$ 와 서로소이므로, 양변을 $(p-1)!$ 로 나눌 수 있습니다(합동식에서의 나눗셈의 성질). 그 결과, 다음 정리가 도출됩니다.
-
-$$ 1 \equiv a^{p-1} \pmod p $$
-
-이것으로 증명이 완료되었습니다.
-
-## 페르마 테스트: 소수 판정에의 응용
-
-이 정리는 어떤 수가 소수인지 판정하는 **소수 판정 알고리즘** (페르마 테스트)에 응용되고 있습니다.
-
-어떤 거대한 수 $n$ 이 소수인지 알고 싶을 때, 무작위로 $a$ 를 선택하여 $a^{n-1} \equiv 1 \pmod n$ 이 성립하는지 확인합니다. 만약 성립하지 않는다면, $n$ 은 **절대로 소수가 아닙니다** (합성수입니다).
+위와 같이 합동이 아니면 $n$은 합성수입니다. 반대로 나머지가 1이면 그 밑에서는 필요조건 위반이 발견되지 않았다는 뜻일 뿐, 소수임을 증명한 것은 아닙니다.
 
 ```mermaid
 flowchart TD
-    Start("시작") --> ChooseA("무작위 정수 a 를 선택")
-    ChooseA --> Calc("a^(n-1) mod n 을 계산")
-    Calc --> Check{"결과가 1 인가?"}
-    Check -- "아니오" --> Composite("n 은 합성수 (소수가 아님)")
-    Check -- "예" --> ProbPrime("n 은 소수일 가능성이 높음")
+    Input["작은 정수와 짝수를 처리한 뒤 남은 홀수 n"] --> Choose["2부터 n-2까지의 밑 a를 선택"]
+    Choose --> Calc["a의 n-1제곱을 법 n으로 계산"]
+    Calc --> Check{"나머지가 1인가?"}
+    Check -- No --> Composite["n은 합성수"]
+    Check -- Yes --> Pass["이 밑을 통과함: 소수라는 증명은 아님"]
 ```
 
-다만, 합성수임에도 불구하고 $a^{n-1} \equiv 1 \pmod n$ 을 만족시켜 버리는 **카마이클 수** (Carmichael numbers)라고 불리는 예외적인 수가 존재하기 때문에, 이 테스트 단독으로는 확실한 소수 판정을 할 수 없습니다. 그래서 실용적으로는 밀러-라빈 소수 판정법 등이 사용됩니다.
+예를 들어 $341=11\cdot31$은 합성수이지만 밑 2의 테스트를 통과합니다. 이런 수를 해당 밑에 대한 유사소수라고 합니다. 카마이클 수는 **그 수와 서로소인 모든 밑**에 대해 페르마 합동식을 만족하는 합성수입니다. 가장 작은 예인 $561=3\cdot11\cdot17$은 밑 2를 통과하지만, 서로소가 아닌 밑 3에서는 통과하지 못합니다.
 
-## 현대 암호 이론에의 응용: [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호
+여러 무작위 밑을 시도한다고 해서 모든 합성수에 대해 잘못 통과할 확률의 작고 일률적인 상한이 보장되지는 않습니다. [HAC 4장](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)은 Fermat와 Miller–Rabin을 구분합니다. 고정된 홀수 합성수에 대해 독립적이고 균등한 무작위 밑으로 $k$번 Miller–Rabin 테스트를 수행하면 잘못 통과할 확률은 최대 $4^{-k}$입니다. 이는 통과한 뒤 그 수가 합성수일 확률과 같지 않으며, 임의의 고정 밑에 자동으로 적용되는 상한도 아닙니다. [소수 판정에 관한 자세한 글](https://kenji.blog/ko/p/cpp-fast-prime-testing-miller-rabin/)도 참고하세요.
 
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)(및 그 일반화인 **오일러의 정리** )의 가장 중요한 응용처가 바로 인터넷의 보안을 지탱하는 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호** 입니다.
+## RSA가 올바르게 복호화되는 조건
 
-RSA 암호는 거대한 수의 소인수분해가 어렵다는 점을 안전성의 근거로 삼고 있습니다. 그 구조에 있어서, '[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)'의 원리가 키의 생성과 복호화 과정에서 결정적인 역할을 하고 있습니다.
+서로 다른 소수 $p,q$를 선택하고 $n=pq$로 둡니다. 오일러 피 함수 $\varphi(n)=(p-1)(q-1)$를 이용하여, 이 학습용 구성에서는 $1<e<\varphi(n)$과 $\gcd(e,\varphi(n))=1$을 만족하는 공개 지수를 선택합니다. 그 역원인 양의 정수가 비밀 지수 $d$입니다.
+
+$$ ed\equiv1\pmod{\varphi(n)}. $$
+
+공개키는 $(n,e)$이고 비밀키의 단순화된 표현은 $(n,d)$입니다. 실제 비밀키에는 계산을 빠르게 하는 인수가 포함될 수도 있으며, 이 값들도 비밀입니다. 정수 메시지 대표원 $0\le M<n$에 대한 수학적 연산은 다음과 같습니다.
+
+$$ C=M^e\bmod n,\qquad M'=C^d\bmod n. $$
 
 ```mermaid
 sequenceDiagram
-    participant Sender as "송신자"
-    participant Receiver as "수신자"
-    Note over Receiver: "공개키 (e, n) 와 비밀키 (d) 를 생성"
-    Receiver->>Sender: "공개키 (e, n) 를 송신"
-    Note over Sender: "평문 M 을 암호화"
-    Note over Sender: "C = M^e mod n"
-    Sender->>Receiver: "암호문 C 를 송신"
-    Note over Receiver: "암호문 C 를 복호화"
-    Note over Receiver: "M = C^d mod n"
+    participant Sender as 송신자
+    participant Receiver as 수신자
+    Note over Sender,Receiver: 학습용 원시 RSA 연산: 메시지 인코딩 생략
+    Receiver->>Sender: 공개키 (n,e)를 전달
+    Sender->>Sender: 0부터 n-1까지의 정수 대표원 M을 준비
+    Sender->>Sender: C = M^e mod n을 계산
+    Sender->>Receiver: C를 전달
+    Receiver->>Receiver: M' = C^d mod n을 계산
 ```
 
-[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호에서는 $p$ 와 $q$ 라는 2개의 거대한 소수를 준비하고, $n = p \times q$ 로 둡니다.
-오일러의 정리에 의해 암호화와 복호화 과정에서 $M^{ed} \equiv M \pmod n$ 이 성립하도록 키($e$ 와 $d$)가 설계됩니다. 여기서 평문 $M$ 이 원래 모습으로 돌아간다는 마법 같은 현상은 본질적으로 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)가 보장하고 있는 수학적 성질에 의존하고 있는 것입니다.
+$\gcd(M,n)=1$이면 [오일러의 정리](https://dlmf.nist.gov/27.2#E8)에 따라 $M^{\varphi(n)}\equiv1\pmod n$입니다. 어떤 음이 아닌 정수 $t$에 대해 $ed=1+t\varphi(n)$로 쓸 수 있으므로 복호화는 원래 대표원을 복원합니다.
 
-## 요약
+서로소가 아닌 대표원까지 포함하려면 각 소수를 법으로 하여 생각합니다. $p\mid M$이면 $M^{ed}$와 $M$은 모두 0과 합동입니다. 그렇지 않으면 페르마의 소정리와 $p-1\mid ed-1$로부터 필요한 합동식이 나옵니다. 법 $q$에서도 마찬가지입니다. 중국인의 나머지 정리에 따라 다음을 얻습니다.
 
-17세기에 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)에 의해 발견된 작은 정리는 수백 년 후인 현대 사회에서 정보 보안의 근간을 지탱하는 불가결한 요소가 되었습니다.
+$$ M^{ed}\equiv M\pmod p,\quad M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod n. $$
 
-**[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)** 는 순수 수학이 어떻게 실용적인 기술(암호 이론이나 알고리즘)로 결부되는지를 보여주는 가장 아름다운 예 중 하나라고 할 수 있을 것입니다. 수학의 심오함과 그 응용력의 넓이에는 놀라울 따름입니다.
+따라서 0과 인수의 배수를 포함한 모든 대표원이 복원됩니다. 법을 소인수분해하면 비밀 지수를 계산할 수 있지만, 일반적인 RSA 역산과 소인수분해의 어려움이 동등하다고 증명된 것은 아닙니다.
+
+## 정확성과 안전성을 구분하기
+
+그림의 원시 RSA는 결정적 연산이며 안전한 암호화 방식으로는 충분하지 않습니다. [RFC 8017의 5절과 7절](https://www.rfc-editor.org/rfc/rfc8017.html)은 프리미티브와 암호화 방식을 구분합니다. 실제 사용에는 감사를 거친 라이브러리, RSAES-OAEP 같은 적절한 방식, 알맞은 매개변수, 안전한 난수와 키 관리가 필요합니다. RSASSA-PSS는 별도의 서명 방식입니다.
+
+페르마의 소정리는 모듈러 연산과 RSA의 수학을 이해하는 기초입니다. 정리, 소수 판정, 유효한 키, 실제 암호 방식을 구분해야 합니다. [RSA 입문 해설](https://kenji.blog/ko/p/rsa-encryption-math-explained-for-beginners/)에서 이 차이를 더 설명합니다.
