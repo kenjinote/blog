@@ -119,4 +119,4 @@ In the usual RAM model, the sieve takes $O(n\log\log n)$ time and $O(n)$ flag st
 
 Rust’s [`bool`](https://doc.rust-lang.org/reference/types/boolean.html) occupies one byte, and [`Vec<T>`](https://doc.rust-lang.org/std/vec/struct.Vec.html#guarantees) stores elements contiguously. This `Vec<bool>` is not a bit-packed array. The logical flag count is `n + 1`; vector metadata, allocated capacity and the returned `Vec<usize>` also require storage.
 
-In this code, `checked_add` explicitly triggers a panic if `n + 1` cannot be represented. Otherwise, sufficient memory must still be available; the implementation does not support arbitrarily large bounds. Consider a segmented sieve for large intervals. Listing a range of primes serves a different purpose from testing one large integer.
+If `n + 1` cannot be represented, `checked_add` returns `None`, and the following `expect` triggers a panic. Otherwise, sufficient memory must still be available; the implementation does not support arbitrarily large bounds. Consider a segmented sieve for large intervals. Listing a range of primes serves a different purpose from testing one large integer.

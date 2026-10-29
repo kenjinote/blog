@@ -53,6 +53,8 @@ def main():
         assert len(re.findall(r'^## ',text,re.M))==4
         assert 'slug: "'+audit['versions'][lang]['slug']+'"' in text
         actual_refs=set(re.findall(r'\]\((https://[^)]+)\)',text));assert actual_refs==refs
+        prose=re.sub(r'^```.*?^```[^\n]*','',text,flags=re.M|re.S)
+        assert '`None`' in prose and '`expect`' in prose
         alt=re.findall(r'!\[([^\]]+)\]\(Animation_Sieb_des_Eratosthenes.gif\)',text);assert len(alt)==1 and alt[0]
         url=audit['versions'][lang]['canonical'];html=(a.site/unquote(urlsplit(url).path).lstrip('/')/'index.html').read_text(encoding='utf-8')
         page=PageParser();page.feed(html.split('</aside>',1)[0]+'</aside>');assert page.canonical==url and page.language==lang

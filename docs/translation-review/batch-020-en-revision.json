@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/エラトステネスの篩を使って1000以下の素数を列挙する方法/index.md",
+      "sourceHash": "4c971bb00d7ce3a7bcaa707a334f1a62fbe42840f493ecf1e9bed72f4a106534",
+      "translationHash": "f82074fcf21d70f06a016ad89e52e1af28a4eb5ee5e311ff0580fafce744a9cc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original JA/EN metadata/body and2Rust examples, revised both against primary documentation and actual original executions, independently reread complete revised versions across two paired outputs plus final repaired math/description contexts. Matched introduction,4sections,2complete Rust programs,8TeX expressions,image/caption,5external targets and bounds/memory qualifications. Correct original fixed1000 examples were preserved as valid historical evidence,not falsely diagnosed as failing. Subsequently reread final checked_add/None/expect clarification in both source and English; all other content and executable code unchanged, with before/after hashes in batch-020-checked-add-clarification.json."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished inclusive up-to1000 from under1000 wording,prime listing from one-integer testing,marking candidates up to sqrtN from final output throughN,smaller prime factors from all smaller numbers being enumerated,2from larger even composites,odd-candidate work reduction from measured speed,Vec<bool> from bit-packed C++vector<bool>,RAM operation/storage model from bit complexity. Corrected English description spacing and clarified bool/Vec layout. Explicitly distinguishes checked_add Option-return behavior from expect panic behavior,using official scoped API docs."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Matched8TeX expressions as exact counters and in decoded generated HTML: square-start bound,p²<=n,kp with2<=k<p,odd-step2p,and O(n log log n)/O(n). Proved smaller-factor marking argument,positive-integer division stop guard and safe2p under p²<=n,p>=3. Final output includes all remaining flags throughn;0/1empty and2included. Initial writer lost TeX backslashes; independent reread caught and corrected le/log escapes before any record. No full number-theoretic Mertens proof or arbitrary-size performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Both Rust blocks exact between JA/EN and fully preserved in generated HTML. Compiled separate complete programs and function harnesses with Rust1.90.0 Windows64bit,edition2021,Dwarnings,debugchecked and optimizedchecked overflow modes. Per language/block/mode2161bounds compared as full prime vectors against independent Python integer trial division through100000:0..2000,seededrandom,square/power-of-two neighbors,99999/100000. Each full program produced exactly168lines for1000. Harness verified usizeMAX checked_add panic with catch_unwind/silent temporary panic hook without huge allocation. No speed benchmark,fullusize search or unsafe/constant-time audit. Recompiled both current JA/EN versions after prose clarification alongside bothChinese versions; current-version hashes and all2161full-vector bounds perblock/mode are recorded in docs/translation-review/batch-020-ja-en-cn-tw-validation.json."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed unrelated Rust->WebAssembly link and used primary Rust bool/Vec and scoped Princeton sieve analysis references. Read CommonsSummary/Licensing/Filehistory; added nonempty image alt and SKopp/Suricata credit,CCBYSA3link. TLS-verified Windows HTTP comparison confirmed exact existing GIF bytes/SHA256; Python certificate failure retained as failed attempt,not bypassed. Viewed first frame only. Preserved original distinct slug/canonical,datePublished2023-04-09T12:54:24+09:00,image,tags/categories,math:true; removed duplicate date and set actual lastmod2026-10-29. Hugo21bundles,multilingual1283pages,HTTPS2368HTML/41XML,17repository tests passed. Publication pending."
+        }
+      },
+      "summary": "English revision: distinguish checked_add returningNone from expect causing panic, while preserving original full review/execution evidence.",
+      "languageSpecificFindings": "Original English Under1000 title clarified to inclusive Up to and Including1000, without claiming a numeric difference for composite1000. Corrected N-element prose,p² explanation,2exception,square-root output ambiguity and unconditional false-initialization speed assertion. Kept original mixed-Japanese public slug. Rust bool occupies one byte and Vec<bool> is not implicitly bit packed. Corrected imprecise checked_add panic wording: overflow returnsNone; following expect causes panic.",
+      "references": [
+        {
+          "url": "https://doc.rust-lang.org/reference/types/boolean.html",
+          "scope": "Complete short Boolean type page; not whole language reference."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/vec/struct.Vec.html#guarantees",
+          "scope": "Scoped contiguous-elements/size/capacity guarantee paragraphs in fetched1.99.1docs,not full6780lines or unsafe API audit. Actual compiler1.90.0 separately recorded."
+        },
+        {
+          "url": "https://introcs.cs.princeton.edu/java/41analysis/",
+          "scope": "Scoped final sieve exercise6and solution; WindowsTLS fetch after web403. Not full chapter or Mertens proof."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Animation_Sieb_des_Eratosthenes.gif",
+          "scope": "Summary,licensing,filehistory and actual current file byte equality; first frame visual only."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/primitive.usize.html#method.checked_add",
+          "scope": "Scoped signature,description,examples: returnsNone on overflow,not fullusizepage."
+        },
+        {
+          "url": "https://doc.rust-lang.org/std/option/enum.Option.html#method.expect",
+          "scope": "Scoped return/panic behavior and examples: None makes expect panic,not fullOptionpage."
+        }
+      ],
+      "validation": "docs/translation-review/batch-020-ja-en-cn-tw-validation.json",
+      "limitations": [
+        "AI, not human/native-speaker certification.",
+        "Other9translations unread/unreviewed; bothChinese versions reviewed and recorded separately after their actual checks.",
+        "Finite bounds<=100000 under Rust1.90 Windows64bit,not everyusize or target.",
+        "No speed benchmark,huge allocation,full animation/visualbrowser/KaTeX audit or cryptographic certification.",
+        "Full-siteCI/publication pending."
+      ],
+      "revisionReason": "Clarify API boundary in prose; original English review entry remains immutable. Executable code unchanged and current-version verification performed."
+    }
+  },
+  "replacesEvidence": "docs/translation-review/batch-020.json",
+  "clarification": "docs/translation-review/batch-020-checked-add-clarification.json"
+}

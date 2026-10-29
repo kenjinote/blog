@@ -35,3 +35,15 @@ Rust 1.90.0 / x86_64-pc-windows-msvcで、元の日英2コードずつをedition
 先行Python urllib取得は証明書検証エラーとなり、webの画像取得もcache missとなった。TLS検証を無効にしていない。失敗と成功した後続照合をauditへ併記している。
 
 この時点では記事の修正、翻訳校閲記録、公開後確認は未完了。
+
+## 日英中2版の修正・確認
+
+原文と英訳を修正し、各2Rustコード・8TeX表現と本文全体を独立した出力で読み直した。最初の生成時にJavaScript文字列でTeXのバックスラッシュが失われたため、読み直しで検出して `le` / `log` を正しいコマンドへ訂正した。校閲記録前に検査済み。
+
+その後、簡体字・繁体字も旧版と修正版のメタデータ・本文・全コードを全文読了。簡体字の素数・合数・下标・字节・内存、繁体字の質數・合數・索引・旗標・函式・位元組・記憶體を整理し、境界・倍数を消す範囲と出力範囲・速度とメモリの条件を原文と照合した。他9翻訳は未読・未記録。
+
+中国語版の照合時に、`checked_add` 自体がpanicするように読める説明を発見。公式の [usize::checked_add](https://doc.rust-lang.org/std/primitive.usize.html#method.checked_add) の戻り値・例と [Option::expect](https://doc.rust-lang.org/std/option/enum.Option.html#method.expect) の戻り値・panic条件・例を追加で読んだ。どちらも該当メソッドの範囲であり、usize／Optionの全ページの読了ではない。オーバーフローでNoneを返し、続くexpectがpanicを起こすように4版とも説明を訂正。コードは全く変わらないことを確認したが、現行4版のハッシュと結び付けて実行検査も再実施した。
+
+英訳の初回証拠 `batch-020.json` の該当レビューは変更せず、`batch-020-en-revision.json` で再確認を記録した。台帳の英訳参照を更新し、確認件数を二重計上しない。
+
+日英中2版はそれぞれ、2コード×debugchecked／optimizedcheckedの各モードで2161上限の全素数ベクタを独立したPython整数の試し割りと厳密比較。各実行ファイルの1000に対する168行の完全出力とusizeMAXの明示的な拒否も検査した。後者はcatch_unwindと一時的なpanic hookを用い、大量メモリ確保は試していない。全32TeX表現、8コード全文、GIFの代替テキストと出典、既存URL／公開日を生成HTMLで確認。21記事束ビルド、多言語1283ページ、HTTPS2368HTML／41XMLを通過した。

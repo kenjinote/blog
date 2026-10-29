@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "date": "2026-10-29",
+  "changes": [
+    {
+      "language": "ja",
+      "beforeHash": "ca5d90db0c9827149e0b226e6b079fa0949da0ac875d1a99feba6488856e0b14",
+      "afterHash": "4c971bb00d7ce3a7bcaa707a334f1a62fbe42840f493ecf1e9bed72f4a106534",
+      "codeUnchanged": true,
+      "change": {
+        "old": "`checked_add` は `n + 1` を表現できない場合に、このコードでは明示的にpanicさせます。",
+        "new": "`n + 1` を表現できない場合、`checked_add` は `None` を返し、続く `expect` が明示的にpanicを起こします。"
+      }
+    },
+    {
+      "language": "en",
+      "beforeHash": "c036a20a457ad29d82179b8e3180ec270d90744a71f244f041111c9a934c472d",
+      "afterHash": "f82074fcf21d70f06a016ad89e52e1af28a4eb5ee5e311ff0580fafce744a9cc",
+      "codeUnchanged": true,
+      "change": {
+        "old": "In this code, `checked_add` explicitly triggers a panic if `n + 1` cannot be represented.",
+        "new": "If `n + 1` cannot be represented, `checked_add` returns `None`, and the following `expect` triggers a panic."
+      }
+    },
+    {
+      "language": "zh-cn",
+      "beforeHash": "8e8027638b5ae76cbb32c0ea708014b9b5e6efc3fea7164a3a32a41ecc88a6af",
+      "afterHash": "3576ebdc3f103031da07f5b4ee0a21a67f032ed0e68e6909c7d609cd96c3a3a4",
+      "codeUnchanged": true,
+      "change": {
+        "old": "在这份代码中，若无法表示 `n + 1`，`checked_add` 会导致显式的panic。",
+        "new": "若无法表示 `n + 1`，`checked_add` 会返回 `None`，随后的 `expect` 会触发panic。"
+      }
+    },
+    {
+      "language": "zh-tw",
+      "beforeHash": "db7800c13993a314abc14a70bad3ce419d1e287bd20907f5cc2ac625a381c870",
+      "afterHash": "9fd94ea4e2b662fb5b405ab9d3276f9ca5da1a42af1ce3b5d20143689771234c",
+      "codeUnchanged": true,
+      "change": {
+        "old": "在這份程式碼中，若無法表示 `n + 1`，`checked_add` 會造成明確的panic。",
+        "new": "若無法表示 `n + 1`，`checked_add` 會傳回 `None`，接著由 `expect` 引發panic。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "url": "https://doc.rust-lang.org/std/primitive.usize.html#method.checked_add",
+      "scope": "Only checked_add signature,description,examples; Option None on overflow,not whole12224line page."
+    },
+    {
+      "url": "https://doc.rust-lang.org/std/option/enum.Option.html#method.expect",
+      "scope": "Only expect return/panic description and examples; None causes panic,not wholeOptionpage."
+    }
+  ],
+  "scope": "Accurate API separation in prose. Original English evidence remains immutable; rerecord English against corrected source after fresh validation."
+}
