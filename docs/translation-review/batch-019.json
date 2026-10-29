@@ -631,5 +631,16 @@
       "Finite GCC/32bit-int tests, no full INT_MAX enumeration or binary/NUL-input/output-stream-failure audit.",
       "No browser visual or cryptographic certification."
     ]
+  },
+  "publicationDispatch": {
+    "date": "2026-10-29",
+    "head": "b7a7669d3c8a83b6cf91efafc4f6677ac90dab2c",
+    "ciRun": 40836460474,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40836460474",
+    "observedStatus": "in_progress",
+    "plannedLiveUrls": 260,
+    "liveProbe": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_240.py",
+    "publicationPending": true,
+    "scope": "Full batch019 C prime enumeration plus all earlier reviewed articles. No live success claimed before matching deployment."
   }
 }
