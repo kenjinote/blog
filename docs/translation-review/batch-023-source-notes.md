@@ -62,3 +62,8 @@
 ## Bahasa Indonesiaの確認
 
 修正前後のインドネシア語全文・メタデータ・全2図を独立に読了。kongruensi,saling prima,invers,basis,eksponen,modulus,residu/sisa,wakil,totien,prima semu,teorema sisa Tiongkokを照合。元のkoprima自体は有効だがsaling primaで統一し、angka nyataを具体的整数例として整理。syarat perlu／bukti primalitas、kebenaran／kerahasiaan、primitif／skema enkripsiを区別。図のkemungkinan besar adalah bilangan primaをLulus basis ini: bukan bukti primalitasへ訂正。Carmichaelの互いに素な全底条件、独立一様な底による条件付き確率と事後確率、相異素数と全整数代表元のCRT証明を反映。自己・伝記への反復リンクと現代暗号への普遍的依存の断定を整理し、整数のメッセージ代表元とソフトウェアpustakaの用語を確認。 各58TeX・図5辺／5辺とソース全文、14hreflang／13切替先、3外部・2内部参照、公開日と画像ハッシュをdocs/translation-review/batch-023-id-validation.jsonで確認。補助算術は当該検証呼出しで1回実行した共通検査であり、各翻訳での実行と重複計上しない。24記事束の多言語1387ページ、HTTPS2540HTML／41XMLを通過。確認日2026-10-29、AI。残る3翻訳と公開確認は未完了。
+
+
+## हिन्दीの確認
+
+修正前後のヒンディー語全文・メタデータ・全2図を独立に読了。Fermatのफर्मेंटを他の校閲済み記事に合うफर्मेटへタイトルとdescriptionも含め整理。सर्वांगसमता,सह-अभाज्य,आधार,घातांक,मॉड्यूलस,शेषफल,व्युत्क्रम,टोटिएंट,प्रतिनिधि,छद्म-अभाज्य,चीनी शेषफल प्रमेयを照合。元のभाज्यは合成数の文脈で有効な語として保持。実数をプラグインするという直訳を整数例へ整理し、必要条件とप्रमाण、शुद्धताとगोपनीयता、प्रिमिटिवとएन्क्रिप्शन योजनाを区別。相異素数と全代表元CRT、底の範囲と小さい整数、Carmichaelの互いに素な全底条件、条件付き確率と事後確率を確認。元の安全性・全暗号への依存の断定と自己リンクを除去し、ऐसी संख्याの性一致と数式後の助詞を再読修正した。 各58TeX・図5辺／5辺とソース全文、14hreflang／13切替先、3外部・2内部参照、公開日と画像ハッシュをdocs/translation-review/batch-023-hi-validation.jsonで確認。補助算術は当該検証呼出しで1回実行した共通検査であり、各翻訳での実行と重複計上しない。24記事束の多言語1387ページ、HTTPS2540HTML／41XMLを通過。確認日2026-10-29、AI。残る2翻訳と公開確認は未完了。
