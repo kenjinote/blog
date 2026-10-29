@@ -64,3 +64,8 @@
 ## Koreanの確認
 
 修正前後の韓国語全文を読了。페르마의 소정리,오일러 피 함수,합동식,서로소,역원,밑,법,나머지,대표원,합성수,카마이클 수と중국인의 나머지 정리を照合し、元の有効なCRT呼称を誤訳と断定せず保持。피関数を不明瞭な別名に頼らず説明し、反復二乗を반복 제곱법へ整理。誤通過率を自然な잘못 통과할 확률とし、加数を두 덧셈 피연산자として条件を明確化。正確性／機密性、프리미티브／암호화 방식、条件付き通過率／事後確率、定数鍵と任意鍵の検証範囲を照合。日本語アルゴリズムへのリンクや全通信の機密性を保証する断定を除去。 修正前後のメタデータ・本文全体・全3コード・2図を別出力で読了し、docs/translation-review/batch-022-ko-validation.jsonで各82TeXとHTML・全コード、図13辺／6辺、C++各モード7480ケース、Pythonの全3233代表元等を確認した。多言語1351ページとHTTPS2481HTML／41XMLを通過。既存17テストは先行日英段階で通過したもので、この言語で再実行したとは数えない。確認日2026-10-29、AI。残る7翻訳と公開確認は未完了。
+
+
+## Portugueseの確認
+
+修正前後のポルトガル語全文を読了。pequeno teorema,congruência,coprimo,inverso modular,base,módulo,resíduo,resto,representante,totiente,teorema chinês do restoを照合。暗号化・復号をcifração/decifraçãoで一貫させたが、元のcriptografia/descriptografia自体を誤訳とは扱わない。Pythonリストをmatrizとする説明、四則としつつ3演算だけ列挙する表現、日本語Euclides伝記への部分リンク、LINE/Amazonの普遍的依存の断定を整理。exponenciação por quadrados sucessivosと操作数の単位を明示し、correção/confidencialidade、primitiva/esquema、条件付き通過率と事後確率を照合。主語後の不要コンマ、文字ごとの変換と検証文の文法も修正した。 修正前後のメタデータ・本文全体・全3コード・2図を別出力で読了し、docs/translation-review/batch-022-pt-validation.jsonで各82TeXとHTML・全コード、図13辺／6辺、C++各モード7480ケース、Pythonの全3233代表元等を確認した。多言語1351ページとHTTPS2481HTML／41XMLを通過。既存17テストは先行日英段階で通過したもので、この言語で再実行したとは数えない。確認日2026-10-29、AI。残る6翻訳と公開確認は未完了。
