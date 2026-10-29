@@ -7,471 +7,297 @@ math: true
 mermaid: true
 categories: ["mathematics", "cryptography", "programming"]
 tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C++"]
+lastmod: 2026-10-29
 ---
 
-## 1. はじめに：現代暗号を支える数学の神秘
+## 1. 定理が保証すること
 
-現代のデジタル社会、とりわけインターネットを介した通信において、「[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)」は不可欠な基盤技術となっています。私たちがウェブブラウザでHTTPS経由で安全にウェブサイトを閲覧し、オンラインバンキングで金融取引を行い、メッセージングアプリでプライベートなやり取りができるのは、高度な数学的理論に裏打ちされた暗号プロトコルが背後で機能しているからです。その中でも特に重要な役割を担っているのが「公開鍵暗号方式」であり、その代表格が **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号** です。
+フェルマーの小定理は、素数を法とするべき乗の性質を述べる定理です。素数判定の必要条件やRSAの復号の正当性を理解する手がかりになります。ただし、正しく復号できることと、安全な暗号方式であることは別です。定理だけで通信の機密性が保証されるわけではありません。
 
-RSA暗号をはじめとする多くの暗号アルゴリズムの安全性や正当性は、17世紀のフランスの数学者[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)（Pierre de Fermat）が発見した非常に美しく、かつ強力な定理に大きく依存しています。それが **フェルマーの小定理（Fermat's Little Theorem）** です。さらに、これを一般化したレオンハルト・オイラー（[Leonhard Euler](https://kenji.blog/p/euler/)）の定理も、暗号理論において決定的な役割を果たしています。
+この記事では合同式、フェルマーとオイラーの定理、フェルマーテストの限界、RSAの数学を説明します。コードは境界を確認できる教材です。実用の鍵生成器や暗号方式として使用する実装ではありません。[RSAの仕組みと方式の違い](https://kenji.blog/p/rsa-encryption-math-explained-for-beginners/)も参照してください。
 
-本記事では、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)という純粋数学の発見が、いかにして現代の実用的な暗号技術、特に「素数判定」や「RSA暗号」へと応用されているのかを、基礎から徹底的に解説します。数学的な証明、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)・復号のメカニズム、そして C++ と Python を用いた具体的なアルゴリズムの実装までを網羅する、非常に詳細な技術ガイドとなります。
+## 2. 合同式と逆元
 
----
+正の整数 $n$ に対して、整数 $a,b$ の差が $n$ の倍数であることを次のように書きます。
 
-## 2. 合同式とモジュラ演算の基礎
+$$ a \equiv b \pmod n. $$
 
-[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)を理解するためには、まず「モジュラ演算（合同式）」という数学の概念に慣れ親しむ必要があります。モジュラ演算とは、ある決まった数（法、モジュラスと呼ばれる）で割った「余り」に着目した計算体系のことです。時計の文字盤（12時間で1周する）のような計算であるため、「時計の数学」とも呼ばれます。
+例えば $17\equiv12\equiv2\pmod5$ です。合同式は加法・減法・乗法、非負整数回のべき乗と両立します。ただし約分には条件が必要です。
 
-整数 $a$ と $b$ を正の整数 $n$ で割った余りが等しいとき、数学的には以下のように記述します。
+$$ ac\equiv bc\pmod n,\quad \gcd(c,n)=1
+\quad\Longrightarrow\quad a\equiv b\pmod n. $$
 
-$$
-a \equiv b \pmod n
-$$
+互いに素の条件がないと、例えば $2\cdot1\equiv2\cdot4\pmod6$ でも $1\not\equiv4\pmod6$ です。$n>1$ のとき、逆元 $c^{-1}$ が存在する条件は $\gcd(c,n)=1$ です。拡張ユークリッドの互除法で $cx+ny=1$ を求めれば、$x$ を法 $n$ で正規化したものが逆元になります。
 
-これは「$n$ を法として $a$ と $b$ は合同である」と読みます。例えば、17 を 5 で割った余りは 2 であり、12 を 5 で割った余りも 2 です。したがって、次のように書くことができます。
+## 3. フェルマーの小定理と証明
 
-$$
-17 \equiv 12 \pmod 5 \equiv 2 \pmod 5
-$$
+$p$ が素数で $p\nmid a$ のとき、
 
-モジュラ演算においては、通常の四則演算（足し算、引き算、掛け算）がそのまま成り立ちます。
+$$ a^{p-1}\equiv1\pmod p. $$
 
-1. **加法**: $a \equiv b \pmod n$ かつ $c \equiv d \pmod n$ ならば、$a + c \equiv b + d \pmod n$
-2. **減法**: $a \equiv b \pmod n$ かつ $c \equiv d \pmod n$ ならば、$a - c \equiv b - d \pmod n$
-3. **乗法**: $a \equiv b \pmod n$ かつ $c \equiv d \pmod n$ ならば、$a \times c \equiv b \times d \pmod n$
-4. **べき乗**: $a \equiv b \pmod n$ ならば、任意の自然数 $k$ について $a^k \equiv b^k \pmod n$
+例えば $p=5$ では $2^4=16$、$3^4=81$、$4^4=256$ はどれも5で割った余りが1です。すべての整数 $a$ に対して成立する形は、
 
-ただし、 **除法（割り算）** については注意が必要です。一般に、$a \times c \equiv b \times c \pmod n$ だからといって、両辺を $c$ で割って $a \equiv b \pmod n$ とすることはできません。これが成り立つのは、$c$ と $n$ が互いに素（最大公約数が 1）である場合に限られます。この「モジュラ逆元」の概念は、後述する[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の鍵生成において極めて重要になります。
+$$ a^p\equiv a\pmod p. $$
 
----
+後者は $p\nmid a$ の場合に前者へ $a$ を掛け、$p\mid a$ の場合には両辺が0に合同であることから得られます。
 
-## 3. [フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)の数学的背景と証明
+前者の証明では、$1,2,\ldots,p-1$ に $a$ を掛けた剰余を考えます。剰余0は現れず、$ia\equiv ja\pmod p$ なら $a$ を約分できて $i=j$ となるため、元の非零剰余の並べ替えです。積を取ると、
 
-モジュラ演算の基礎を押さえたところで、本題である[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)について見ていきましょう。
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-### 3.1 定理の定義
+$(p-1)!$ は $p$ と互いに素なので約分でき、定理が従います。
 
-[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)は次のように定式化されます。
+## 4. オイラーの定理
 
-> **[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))**
-> $p$ を素数とし、$a$ を $p$ の倍数ではない（すなわち $a$ と $p$ は互いに素である）任意の整数とする。このとき、次の合同式が成り立つ。
-> $$ a^{p-1} \equiv 1 \pmod p $$
+トーティエント $\varphi(n)$ は、1以上 $n$ 以下の整数のうち $n$ と互いに素なものの個数です。素数 $p$ では $\varphi(p)=p-1$、異なる素数 $p,q$ では、
 
-また、条件「$a$ が $p$ の倍数でない」を外し、すべての整数 $a$ に対して成り立つ形として表現することも一般的です。その場合は両辺に $a$ を掛けて次のようになります。
+$$ \varphi(pq)=(p-1)(q-1). $$
 
-$$
-a^p \equiv a \pmod p
-$$
+$n>1$ と $\gcd(a,n)=1$ に対し、[オイラーの定理](https://dlmf.nist.gov/27.2#E8)は次を述べます。
 
-### 3.2 具体例による確認
+$$ a^{\varphi(n)}\equiv1\pmod n. $$
 
-定理が本当に成り立つのか、具体的な数字を使って確認してみましょう。
-素数 $p = 5$ とします。$p-1 = 4$ です。$a$ として $p$ の倍数ではない整数を選びます。
+互いに素な剰余の集合に対して、前節と同様の並べ替えと積の約分で示せます。法が素数の場合がフェルマーの小定理です。互いに素でない入力へ無条件に適用することはできません。
 
-- $a = 2$ の場合: $2^{5-1} = 2^4 = 16$。$16 \div 5 = 3$ 余り $1$。よって $16 \equiv 1 \pmod 5$。（成立）
-- $a = 3$ の場合: $3^{5-1} = 3^4 = 81$。$81 \div 5 = 16$ 余り $1$。よって $81 \equiv 1 \pmod 5$。（成立）
-- $a = 4$ の場合: $4^{5-1} = 4^4 = 256$。$256 \div 5 = 51$ 余り $1$。よって $256 \equiv 1 \pmod 5$。（成立）
+## 5. フェルマーテストで分かること
 
-このように、どんな $a$ を選んでも（5の倍数でなければ）、4乗して5で割った余りは必ず1になります。魔法のように見えますが、これは素数が持つ美しい性質に由来しています。
+整数 $n>3$ が奇数のとき、底 $a$ を $2\le a\le n-2$ から選びます。次の不一致があれば、$n$ は合成数と確定します。
 
-### 3.3 定理の数学的証明
+$$ a^{n-1}\not\equiv1\pmod n. $$
 
-なぜこのようなことが成り立つのでしょうか。ここでは剰余類の集合を用いたエレガントな証明を紹介します。
-
-集合 $S = \{1, 2, 3, \dots, p-1\}$ を考えます。これらは $p$ で割った余りが $1$ から $p-1$ になる整数の代表元です。
-ここで、各要素に $p$ と互いに素な整数 $a$ を掛けた新しい集合 $T$ を考えます。
-$$ T = \{1a, 2a, 3a, \dots, (p-1)a\} $$
-
-この集合 $T$ の各要素を $p$ で割った余りを考えます。驚くべきことに、これらの余りは、順番こそ入れ替わるかもしれませんが、元の集合 $S$ の要素の集合と完全に一致します。
-なぜなら：
-1. $T$ の要素が $p$ の倍数になることはありません（$a$ も元の要素も $p$ の倍数ではないため）。
-2. $T$ の中で $p$ を法として合同になる2つの異なる要素は存在しません。もし $ia \equiv ja \pmod p$ （$i \neq j$）だとすると、$a$ と $p$ は互いに素なので $a$ で割ることができ、$i \equiv j \pmod p$ となって矛盾するからです。
-
-したがって、$S$ の要素をすべて掛け合わせたものと、$T$ の要素をすべて掛け合わせたものは、$p$ を法として合同になります。
-
-$$
-(1a) \times (2a) \times \dots \times ((p-1)a) \equiv 1 \times 2 \times \dots \times (p-1) \pmod p
-$$
-
-左辺を整理すると $a$ が $p-1$ 個あるので、
-
-$$
-a^{p-1} \cdot (p-1)! \equiv (p-1)! \pmod p
-$$
-
-$(p-1)!$ は $p$ と互いに素なので、両辺を $(p-1)!$ で割ることができ、最終的に次の定理が導かれます。
-
-$$
-a^{p-1} \equiv 1 \pmod p
-$$
-
-これが[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)の証明です。
-
----
-
-## 4. [オイラー](https://kenji.blog/p/euler/)のトーティエント関数と[オイラー](https://kenji.blog/p/euler/)の定理
-
-[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)は「素数 $p$」に関する定理ですが、これを「任意の正の整数 $n$」に一般化したのが、レオンハルト・オイラーです。[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号を理解するには、この拡張が不可欠です。
-
-### 4.1 [オイラー](https://kenji.blog/p/euler/)のトーティエント関数 $\phi(n)$
-
-[オイラー](https://kenji.blog/p/euler/)のトーティエント関数（あるいは[オイラー](https://kenji.blog/p/euler/)の $\phi$ 関数） $\phi(n)$ は、「$1$ から $n$ までの整数のうち、$n$ と互いに素であるものの個数」を表す関数です。
-
-- 素数 $p$ の場合、$1$ から $p-1$ までのすべての整数が $p$ と互いに素なので、$\phi(p) = p - 1$ となります。
-- 2つの異なる素数 $p, q$ について、その積 $n = p \times q$ の場合、$\phi(n)$ は非常に簡単な式で求まります。
-  $$ \phi(p \times q) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-
-この性質が、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の鍵生成における根幹のロジックとなります。
-
-### 4.2 [オイラー](https://kenji.blog/p/euler/)の定理
-
-[オイラー](https://kenji.blog/p/euler/)は、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)を次のように一般化しました。
-
-> **[オイラー](https://kenji.blog/p/euler/)の定理 (Euler's Theorem)**
-> 正の整数 $n$ と、それと互いに素な整数 $a$ に対して、次が成り立つ。
-> $$ a^{\phi(n)} \equiv 1 \pmod n $$
-
-もし $n$ が素数 $p$ であれば $\phi(p) = p - 1$ なので、これは[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)そのもの（$a^{p-1} \equiv 1 \pmod p$）になります。つまり、フェルマーの小定理は[オイラー](https://kenji.blog/p/euler/)の定理の特殊なケースに過ぎません。
-
----
-
-## 5. 巨大な素数を見つける：[フェルマー](https://kenji.blog/p/fermat/)の素数判定法
-
-暗号技術（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号やDiffie-Hellman鍵交換など）においては、数百桁にも及ぶ「巨大な素数」を高速に見つけ出す必要があります。しかし、巨大な数 $N$ が素数かどうかを判定するために、$2$ から $\sqrt{N}$ までのすべての数で割り切れるか試す「試し割り法」では、宇宙の寿命ほどの時間がかかってしまいます。
-
-そこで登場するのが、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)を逆手に取った「確率的素数判定法」である **フェルマーテスト（[Fermat](https://kenji.blog/p/fermat/) Primality Test）** です。
-
-### 5.1 確率的素数判定法とは
-
-[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)によれば、$p$ が素数ならば、任意の $a$ ($1 < a < p$) に対して $a^{p-1} \equiv 1 \pmod p$ が必ず成立します。
-この対偶をとると、「ある $a$ について $a^{p-1} \not\equiv 1 \pmod p$ となった場合、$p$ は **絶対に素数ではない（合成数である）** 」ということが言えます。
-
-したがって、$N$ が素数かどうかを判定したい場合、ランダムにいくつか $a$ を選び、$a^{N-1} \pmod N$ を計算して $1$ になるかを確認します。もし1回でも $1$ 以外の答えが出れば、$N$ は合成数であると確定します。何度試しても $1$ になる場合、$N$ は「おそらく素数である」と高い確率で判断できます。
-
-### 5.2 アルゴリズムの解説とフローチャート
-
-[フェルマー](https://kenji.blog/p/fermat/)テストのアルゴリズムは以下の通りです。
+逆向きは成り立ちません。通過したという結果は、選んだ底でこの必要条件に違反しなかったことだけを意味します。底を何回かランダムに選んでも、すべての合成数に一律の小さな誤通過率を保証する説明にはできません。
 
 ```mermaid
 flowchart TD
-    Start["開始"] --> Input["判定対象の数 p と、テスト回数 k を入力"]
-    Input --> LoopStart["i = 0 から k-1 までループ"]
-    LoopStart --> Condition{"i < k ?"}
-    Condition -- Yes --> RandomA["1 < a < p-1 の範囲でランダムな整数 a を選択"]
-    RandomA --> Calc["モジュラべき乗 a^(p-1) mod p を計算"]
-    Calc --> CheckPrime{"結果は 1 か？"}
-    CheckPrime -- No --> ReturnComposite["p は合成数である（確定）"]
-    CheckPrime -- Yes --> Increment["i をインクリメント"]
-    Increment --> Condition
-    Condition -- No --> ReturnPrime["p はおそらく素数である（確率的）"]
-    ReturnComposite --> End["終了"]
-    ReturnPrime --> End
+    Input["整数 n と空でない底の一覧を入力"] --> Small{"n は 2 未満？"}
+    Small -- Yes --> NotPrime["素数ではない"]
+    Small -- No --> Tiny{"n は 2 または 3？"}
+    Tiny -- Yes --> Known["この小さい n は素数"]
+    Tiny -- No --> Even{"n は偶数？"}
+    Even -- Yes --> Composite["合成数"]
+    Even -- No --> Validate["全底の範囲 2 から n-2 を検証"]
+    Validate --> Next{"未検査の底がある？"}
+    Next -- Yes --> Power["次の底で a の n-1 乗を法 n で計算"]
+    Power --> Check{"剰余は 1？"}
+    Check -- No --> Composite
+    Check -- Yes --> Next
+    Next -- No --> Pass["選んだ底を通過：素数の証明ではない"]
 ```
 
-### 5.3 カーマイケル数（偽素数）の落とし穴
+空の一覧と底の範囲の誤りはコードで例外にします。Python版では整数以外の型も拒否します。小さい整数と偶数を処理した後、奇数 $n\ge5$ のときだけ底の範囲を検証します。
 
-[フェルマー](https://kenji.blog/p/fermat/)テストは非常に高速ですが、重大な欠点があります。それは、合成数であるにもかかわらず、すべての $a$ に対して $a^{N-1} \equiv 1 \pmod N$ を満たしてしまう悪魔のような数が存在することです。これを **カーマイケル数 (Carmichael numbers)** と呼びます。最も小さいカーマイケル数は $561$ ($3 \times 11 \times 17$) です。
+カーマイケル数は、**$n$ と互いに素なすべての底**でフェルマーの合同式を満たす合成数です。最小の例 $561=3\cdot11\cdot17$ は底2を通過しますが、底3では通過しません。$1105=5\cdot13\cdot17$ も合成数であり、底2と3を通過します。これを素数生成の証明として採用してはいけません。
 
-カーマイケル数が存在するため、純粋な[フェルマー](https://kenji.blog/p/fermat/)テストだけでは絶対的な素数判定はできません。そのため、実際の暗号化システム（OpenSSLなど）では、[フェルマー](https://kenji.blog/p/fermat/)テストを改良した **ミラー・ラビン（Miller-Rabin）素数判定法** が標準的に使用されています。ミラー・ラビン判定法はカーマイケル数を見破ることができるため、誤判定の確率を実質的にゼロにすることができます。
+[Handbook of Applied Cryptography第4章](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)のFermatとMiller–Rabinの節は、この違いを説明しています。Miller–Rabinでは、固定した奇合成数に対し、独立・一様なランダム底を使う $k$ 回の検査の誤通過率を $4^{-k}$ 以下に抑えられます。これは「通過後にその数が合成数である確率」と同じ量ではなく、任意の固定底へそのまま適用する値でもありません。[OpenSSLの説明](https://docs.openssl.org/master/man3/BN_generate_prime/)もprobable primeと反復検査を区別しています。より詳しくは[素数判定の記事](https://kenji.blog/p/cpp-fast-prime-testing-miller-rabin/)を参照してください。
 
-### 5.4 高速なべき乗剰余演算（繰り返し二乗法）
+## 6. C++とPythonで必要条件を試す
 
-素数判定アルゴリズムの中で $a^{N-1} \pmod N$ を計算する必要がありますが、$N$ が巨大な場合、$a^{N-1}$ は天文学的な桁数になり、コンピュータのメモリに入りきりません。
-これを解決するのが **繰り返し二乗法（Exponentiation by Squaring）** またはモジュラべき乗演算です。計算の各ステップで剰余（mod N）を取ることで、常に値が $N$ より小さく保たれ、非常に高速（$O(\log N)$の計算量）で計算可能になります。
+以下は乱数を使わず、指定した底を調べる教材です。関数名の `passes` は通過を意味し、素数との断定ではありません。元の反復数による実装では0回・負の回数で検査が省略されましたが、ここでは空の底一覧を拒否します。
 
----
+### C++17
 
-## 6. 素数判定とべき乗剰余の実装
-
-それでは、[フェルマー](https://kenji.blog/p/fermat/)の素数判定法と繰り返し二乗法を、C++とPythonで実装してみましょう。
-
-### 6.1 C++ による実装
-
-C++では標準の整数型がオーバーフローしやすいため、巨大な数を扱うには多倍長整数ライブラリ（GMPなど）が必要ですが、ここではアルゴリズムを理解するために64bit整数（`unsigned long long`）の範囲内での実装を示します。
+`std::uint64_t` がある処理系を対象とし、負の入力は扱いません。`__int128` 拡張には依存せず、剰余を保った加算で乗算を作ります。`add_mod` は内部用で、両加数が法未満という前提を持ちます。`a >= m-b` の場合は引き算へ置き換え、それ以外では和が法未満なので64bitの上限を超えません。乗算・べき乗関数は法0を拒否し、法1では剰余0を返します。
 
 ```cpp
+#include <cstdint>
 #include <iostream>
-#include <random>
+#include <stdexcept>
+#include <vector>
 
-using namespace std;
+using u64 = std::uint64_t;
 
-// 高速なべき乗剰余演算 (a^b mod m) - 繰り返し二乗法
-unsigned long long power_mod(unsigned long long a, unsigned long long b, unsigned long long m) {
-    unsigned long long result = 1;
-    a = a % m;
-    while (b > 0) {
-        // bの最下位ビットが1の場合、結果にaを掛ける
-        if (b % 2 == 1) {
-            result = (__int128)result * a % m; // オーバーフロー防止のため128bit拡張
-        }
-        // aを二乗する
-        a = (__int128)a * a % m;
-        // bを右シフト（半分にする）
-        b /= 2;
+// Internal helper: m > 0 and a, b < m.
+u64 add_mod(u64 a, u64 b, u64 m) {
+    return a >= m - b ? a - (m - b) : a + b;
+}
+
+u64 mul_mod(u64 a, u64 b, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    a %= m;
+    u64 result = 0;
+    while (b != 0) {
+        if (b & 1) result = add_mod(result, a, m);
+        b >>= 1;
+        if (b != 0) a = add_mod(a, a, m);
     }
     return result;
 }
 
-// フェルマーの素数判定法
-bool fermat_is_prime(unsigned long long p, int iterations = 5) {
-    if (p <= 1) return false;
-    if (p <= 3) return true;
-    if (p % 2 == 0) return false;
-
-    random_device rd;
-    mt19937_64 gen(rd());
-    uniform_int_distribution<unsigned long long> dis(2, p - 2);
-
-    for (int i = 0; i < iterations; ++i) {
-        unsigned long long a = dis(gen);
-        // a^(p-1) mod p が 1 でなければ合成数
-        if (power_mod(a, p - 1, p) != 1) {
-            return false;
-        }
+u64 power_mod(u64 a, u64 exponent, u64 m) {
+    if (m == 0) throw std::invalid_argument("Modulus must be positive");
+    u64 result = 1 % m;
+    a %= m;
+    while (exponent != 0) {
+        if (exponent & 1) result = mul_mod(result, a, m);
+        exponent >>= 1;
+        if (exponent != 0) a = mul_mod(a, a, m);
     }
-    return true; // おそらく素数
+    return result;
+}
+
+bool fermat_passes(u64 n, const std::vector<u64>& bases) {
+    if (bases.empty()) throw std::invalid_argument("Choose at least one base");
+    if (n < 2) return false;
+    if (n <= 3) return true;
+    if (n % 2 == 0) return false;
+    for (u64 a : bases) {
+        if (a < 2 || a > n - 2) throw std::invalid_argument("Base outside range");
+    }
+    for (u64 a : bases) {
+        if (power_mod(a, n - 1, n) != 1) return false;
+    }
+    return true;
 }
 
 int main() {
-    unsigned long long num = 1000000007; // 既知の素数
-    if (fermat_is_prime(num, 10)) {
-        cout << num << " is probably prime." << endl;
-    } else {
-        cout << num << " is composite." << endl;
-    }
-    return 0;
+    std::cout << "1000000007 passes bases 2,3: " << fermat_passes(1000000007, {2, 3}) << '\n';
+    std::cout << "1105 passes bases 2,3: " << fermat_passes(1105, {2, 3}) << '\n';
+    std::cout << "1105 passes base 5: " << fermat_passes(1105, {5}) << '\n';
 }
 ```
 
-### 6.2 Python による実装
+例えば `g++ -std=c++17 fermat.cpp -o fermat` でコンパイルします。WSLのGCC13.3で検証しました。出力の真偽値は順に `1, 1, 0` です。1105が二つの底を通過すること自体が、限界を示す例です。
 
-Pythonの標準の整数型は多倍長整数をサポートしており、桁溢れを気にする必要がありません。さらにPythonの組み込み関数 `pow(a, b, m)` は内部的に繰り返し二乗法を使用しているため非常に高速です。
+### Python
+
+Python3の `int` と3引数の `pow` を使います。組み込みの `int` 型だけを受け付け、`bool` などは拒否します。底の一覧を空にはできません。C++と同じ候補と底を試します。
 
 ```python
-import random
-
-def fermat_is_prime(p, iterations=5):
-    """
-    フェルマーの素数判定法を用いた確率的素数判定
-    """
-    if p <= 1:
+def fermat_passes(n, bases):
+    if type(n) is not int:
+        raise TypeError("n must be an integer")
+    bases = tuple(bases)
+    if not bases:
+        raise ValueError("Choose at least one base")
+    if any(type(a) is not int for a in bases):
+        raise TypeError("Bases must be integers")
+    if n < 2:
         return False
-    if p <= 3:
+    if n <= 3:
         return True
-    if p % 2 == 0:
+    if n % 2 == 0:
         return False
+    if any(a < 2 or a > n - 2 for a in bases):
+        raise ValueError("Base outside range")
+    return all(pow(a, n - 1, n) == 1 for a in bases)
 
-    for _ in range(iterations):
-        # 2 から p-2 の間でランダムな数 a を選ぶ
-        a = random.randint(2, p - 2)
-        # a^(p-1) mod p を計算。組み込みの pow は高速。
-        if pow(a, p - 1, p) != 1:
-            return False # 合成数確定
 
-    return True # おそらく素数
-
-# テスト
-number_to_test = 104729
-if fermat_is_prime(number_to_test, 10):
-    print(f"{number_to_test} はおそらく素数です。")
-else:
-    print(f"{number_to_test} は合成数です。")
+if __name__ == "__main__":
+    print("1000000007 passes bases 2,3:", fermat_passes(1000000007, [2, 3]))
+    print("1105 passes bases 2,3:", fermat_passes(1105, [2, 3]))
+    print("1105 passes base 5:", fermat_passes(1105, [5]))
 ```
 
----
+Python3.12で検証しました。結果は順に `True, True, False` です。元の104729の例も素数として通過する性質は変わりません。Python整数は固定幅の桁あふれを避けられますが、時間・メモリが無制限になるわけではありません。
 
-## 7. [RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号への応用：フェルマーと[オイラー](https://kenji.blog/p/euler/)が結実する場所
+繰り返し二乗法は、指数 $b>0$ のビット数に比例する $O(\log b)$ 回の剰余乗算を行います。これはビット計算量や実測時間ではありません。C++例の各剰余乗算は、乗数のビット数に比例する剰余加算で実装しています。Pythonの `pow` の具体的な内部アルゴリズムを全版で同一とは断定しません。
 
-[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)（およびオイラーの定理）の最も偉大な応用先が、1977年にRivest, Shamir, Adlemanの3人によって開発された **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号** です。
-RSA暗号は「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号」という画期的なシステムであり、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)するための鍵（公開鍵）は全世界に公開しておきながら、復号するための鍵（秘密鍵）は受信者本人だけが知っているという仕組みを実現しています。
+## 7. RSAが復号できる理由
 
-この非対称性は、「巨大な合成数の素因数分解は極めて困難である」という計算量的安全性に基づいています。
+異なる素数 $p,q$ から $N=pq$ を作ります。ここでは教材として $1<e<\varphi(N)$、$\gcd(e,\varphi(N))=1$ を満たす公開指数を選び、その逆元を秘密指数 $d$ とします。
 
-### 7.1 RSA暗号の仕組み（鍵生成、暗号化、復号）
+$$ ed\equiv1\pmod{\varphi(N)},\qquad
+\varphi(N)=(p-1)(q-1). $$
 
-RSA暗号の全体的な通信フローをMermaidのシーケンス図で確認しましょう。
+公開鍵は $(N,e)$、秘密鍵の簡略表現は $(N,d)$ です。実用の秘密鍵はCRT用の因数などを含むこともあり、それらも秘密です。素因数分解ができれば秘密指数を計算できますが、RSAの反転と素因数分解が一般に同値だと証明されたという意味ではありません。
+
+代表元 $0\le M<N$ について、
+
+$$ C=M^e\bmod N,\qquad M'=C^d\bmod N. $$
+
+以下の図は整数代表元への**素のRSA演算**だけを表します。実用暗号のメッセージ符号化や認証を省いた、数学用の図です。
 
 ```mermaid
 sequenceDiagram
-    participant Alice["アリス (受信者)"]
-    participant Bob["ボブ (送信者)"]
-    
-    Alice->>Alice: "巨大な素数 p, q を生成"
-    Alice->>Alice: "N = p * q, φ(N) = (p-1)(q-1) を計算"
-    Alice->>Alice: "公開鍵 e と 秘密鍵 d を計算 (e*d ≡ 1 mod φ(N))"
-    Alice->>Bob: "公開鍵 (N, e) を送信"
-    Note over Bob: "平文 M を準備 (M < N)"
-    Bob->>Bob: "暗号文 C = M^e mod N を計算"
-    Bob->>Alice: "暗号文 C を送信"
-    Alice->>Alice: "平文 M = C^d mod N を計算し復号"
+    participant Alice as アリス
+    participant Bob as ボブ
+    Note over Alice,Bob: 教材用の素のRSA演算
+    Alice->>Alice: 異なる素数 p,q と条件を満たす e,d を選ぶ
+    Alice->>Bob: 公開鍵 (N,e) を渡す
+    Bob->>Bob: 0以上N未満の代表元 M を用意
+    Bob->>Bob: C = M^e mod N を計算
+    Bob->>Alice: C を渡す
+    Alice->>Alice: M' = C^d mod N を計算
 ```
 
-以下に、数学的な詳細ステップを解説します。
+まず $\gcd(M,N)=1$ なら、ある非負整数 $t$ に対して $ed=1+t\varphi(N)$ と書けるため、オイラーの定理から、
 
-#### ステップ1：鍵の生成（受信者アリスの作業）
+$$ M^{ed}=M(M^{\varphi(N)})^t\equiv M\pmod N. $$
 
-1. 2つの巨大な素数 $p$ と $q$ をランダムに生成します（ここで前述の素数判定法が使われます）。
-2. その積 $N = p \times q$ を計算します。この $N$ は公開されます。
-3. [オイラー](https://kenji.blog/p/euler/)のトーティエント関数を用いて、$\phi(N) = (p-1)(q-1)$ を計算します。
-4. $\phi(N)$ と互いに素な整数 $e$ （公開指数）を選びます（よく $e = 65537$ が使われます）。
-5. $e$ のモジュラ逆元 $d$ （秘密指数）を計算します。すなわち、次を満たす $d$ を見つけます。
-   $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   この計算には **拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)** が用いられます。
+互いに素でない代表元も除外しません。法 $p$ で、$p\mid M$ なら $M^{ed}$ と $M$ はともに0です。そうでなければフェルマーの小定理と $p-1\mid ed-1$ により両者は合同です。法 $q$ でも同様で、$p,q$ が互いに素なので中国剰余定理から、
 
-これで、 **[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)は $(N, e)$** 、 **秘密鍵は $(N, d)$** となります。（$p, q, \phi(N)$ は直ちに破棄するか厳重に隠匿します）。
+$$ M^{ed}\equiv M\pmod p,\quad
+M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod N. $$
 
-#### ステップ2：[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)（送信者ボブの作業）
+したがって0や $p,q$ の倍数を含むすべての代表元が戻ります。これは正当性の証明であり、機密性の証明ではありません。
 
-ボブはアリスにメッセージ $M$ を送りたいとします（$M$ は文字を数値化したもので、$0 \le M < N$ です）。
-ボブはアリスの公開鍵 $(N, e)$ を使い、次の計算を行って暗号文 $C$ を作ります。
+## 8. 再現可能なRSAプリミティブの教材
 
-$$
-C \equiv M^e \pmod N
-$$
+固定した既知の素数61と53、指数17を使い、逆元を拡張ユークリッドの互除法で求めます。ランダムな素数生成・文字列ごとの変換は行いません。元の底2・3だけの「素数生成器」は1105を受理するため、復号を壊す鍵を作る場合があります。指数1や代表元の範囲外入力も、実用暗号の条件として見過ごせません。
 
-この $C$ をネットワーク経由でアリスに送信します。
-
-#### ステップ3：復号（受信者アリスの作業）
-
-暗号文 $C$ を受け取ったアリスは、自分だけが知っている秘密鍵 $d$ を使って次の計算を行います。
-
-$$
-M' \equiv C^d \pmod N
-$$
-
-驚くべきことに、この計算結果 $M'$ は元のメッセージ $M$ と完全に一致します。
-
-### 7.2 なぜ復号できるのか？（数学的証明）
-
-ここで、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)（[オイラー](https://kenji.blog/p/euler/)の定理）が真価を発揮します。なぜ $C^d \pmod N$ が $M$ に戻るのでしょうか？
-
-復号の式を展開してみます。
-$C \equiv M^e \pmod N$ ですから、
-$$ C^d \equiv (M^e)^d \equiv M^{ed} \pmod N $$
-
-鍵生成のステップにおいて、$e \cdot d \equiv 1 \pmod{\phi(N)}$ となるように $d$ を選びました。これは、ある整数 $k$ が存在して、次のように書けることを意味します。
-$$ e \cdot d = 1 + k \cdot \phi(N) $$
-
-これを上の式に代入します。
-$$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
-
-ここで **[オイラー](https://kenji.blog/p/euler/)の定理** ($M^{\phi(N)} \equiv 1 \pmod N$) が登場します。（※厳密には $M$ と $N$ が互いに素である必要がありますが、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)においては $M$ と $N$ が互いに素でない確率は天文学的に低く、かつ中国剰余定理を用いることで互いに素でなくても成立することが証明できます）。
-
-[オイラー](https://kenji.blog/p/euler/)の定理を適用すると、$M^{\phi(N)} \equiv 1$ なので、
-$$ M \cdot (1)^k \equiv M \pmod N $$
-
-見事に $M$ が復元されました！ [フェルマー](https://kenji.blog/p/fermat/)と[オイラー](https://kenji.blog/p/euler/)が何百年も前に発見した数の性質が、現代のデジタル通信の機密性を完璧に保証しているのです。
-
----
-
-## 8. [RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号のトイ実装 (Python)
-
-理論だけでは実感が湧きにくいため、Pythonを使って実際にRSA暗号の鍵生成・[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)・復号のプロセスを実装してみましょう。これは教育用の「トイ（おもちゃ）実装」ですが、使われている数学は本物と全く同じです。
-
-モジュラ逆元 $d$ を求めるための「拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)」も実装に含めます。
+次の `rsa_primitive` は指数・法・代表元の算術上の入力範囲だけを検証します。任意に渡された法の因数やRSA鍵の妥当性まで検査する関数ではありません。固定した教材鍵の条件は別に満たしています。[RFC8017のSection5と7](https://www.rfc-editor.org/rfc/rfc8017.html)も、プリミティブと暗号方式を分けています。
 
 ```python
-import random
-
-# 最大公約数を求める
-def gcd(a, b):
-    while b != 0:
-        a, b = b, a % b
-    return a
-
-# 拡張ユークリッドの互除法 (ax + by = gcd(a,b) の x, y を求める)
-# e*d ≡ 1 (mod φ(N)) の d を見つけるために使用
 def extended_gcd(a, b):
-    if a == 0:
-        return (b, 0, 1)
-    else:
-        g, y, x = extended_gcd(b % a, a)
-        return (g, x - (b // a) * y, y)
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r:
+        q = old_r // r
+        old_r, r = r, old_r - q * r
+        old_s, s = s, old_s - q * s
+        old_t, t = t, old_t - q * t
+    return old_r, old_s, old_t
 
-def mod_inverse(e, phi):
-    g, x, y = extended_gcd(e, phi)
+
+def mod_inverse(a, modulus):
+    if type(a) is not int or type(modulus) is not int:
+        raise TypeError("Arguments must be integers")
+    if modulus <= 1:
+        raise ValueError("Modulus must exceed one")
+    g, x, _ = extended_gcd(a % modulus, modulus)
     if g != 1:
-        raise Exception('逆元が存在しません')
-    else:
-        return x % phi
+        raise ValueError("Inverse does not exist")
+    return x % modulus
 
-# 素数生成関数（簡易版：小さな素数を生成）
-def generate_prime(bits):
-    while True:
-        p = random.getrandbits(bits)
-        # 前述のフェルマーテストの代わりに簡易的に判定
-        if p > 1 and pow(2, p-1, p) == 1 and pow(3, p-1, p) == 1:
-            return p
 
-# RSA 鍵生成
-def generate_keypair(bits=16):
-    p = generate_prime(bits)
-    q = generate_prime(bits)
-    # p と q が同じにならないようにする
-    while p == q:
-        q = generate_prime(bits)
+def rsa_primitive(value, exponent, modulus):
+    if any(type(x) is not int for x in (value, exponent, modulus)):
+        raise TypeError("Arguments must be integers")
+    if exponent <= 0 or modulus <= 1 or not 0 <= value < modulus:
+        raise ValueError("Invalid exponent, modulus or representative")
+    return pow(value, exponent, modulus)
 
+
+def rsa_primitive_demo():
+    p, q, e = 61, 53, 17  # Fixed public teaching constants, not secret keys.
     n = p * q
     phi = (p - 1) * (q - 1)
-
-    # e は 65537 などの素数がよく使われるが、ここではランダムに選ぶ
-    e = random.randrange(1, phi)
-    g = gcd(e, phi)
-    while g != 1:
-        e = random.randrange(1, phi)
-        g = gcd(e, phi)
-
-    # 秘密鍵 d の計算
     d = mod_inverse(e, phi)
-    
-    # 公開鍵 (e, n), 秘密鍵 (d, n)
-    return ((e, n), (d, n))
+    print("Public key (n, e):", (n, e))
+    print("Private key (n, d):", (n, d))
+    m = 65
+    c = rsa_primitive(m, e, n)
+    recovered = rsa_primitive(c, d, n)
+    print(f"{m} -> {c} -> {recovered}")
+    for representative in range(n):
+        cipher = rsa_primitive(representative, e, n)
+        if rsa_primitive(cipher, d, n) != representative:
+            raise ArithmeticError("Round-trip failed")
+    print("All 3233 representatives round-trip.")
 
-def encrypt(pk, plaintext):
-    e, n = pk
-    # plaintext^e mod n を計算
-    cipher = [pow(ord(char), e, n) for char in plaintext]
-    return cipher
 
-def decrypt(sk, ciphertext):
-    d, n = sk
-    # cipher^d mod n を計算し、文字に戻す
-    plain = [chr(pow(char, d, n)) for char in ciphertext]
-    return ''.join(plain)
-
-# 実行例
-if __name__ == '__main__':
-    print("--- RSA暗号 トイ実装 ---")
-    public_key, private_key = generate_keypair(bits=12) # 12bitの素数を使用
-    
-    print(f"公開鍵 (e, n): {public_key}")
-    print(f"秘密鍵 (d, n): {private_key}")
-
-    message = "Hello Math!"
-    print(f"\n元のメッセージ: {message}")
-
-    # 暗号化
-    encrypted_msg = encrypt(public_key, message)
-    print(f"暗号文: {encrypted_msg}")
-
-    # 復号
-    decrypted_msg = decrypt(private_key, encrypted_msg)
-    print(f"復号されたメッセージ: {decrypted_msg}")
+if __name__ == "__main__":
+    rsa_primitive_demo()
 ```
 
-このコードを実行すると、文字の配列が見慣れない数字の配列（暗号文）に変換され、それが秘密鍵によって見事に元の文字列に復元される様子が確認できます。
+実行すると $(N,e)=(3233,17)$、$(N,d)=(3233,2753)$ と `65 -> 2790 -> 65` を表示し、3233個すべての代表元の往復を検査します。秘密鍵表示も固定した公開教材値だけのものです。この検査は一般のRSA鍵の安全性を保証しません。
 
----
+## 9. 実用暗号との境界と参考資料
 
-## 9. おわりに：数学の美しさと実用性の交差点
+素のRSAは決定的で、文字ごとの暗号文を公開鍵で辞書照合できるなど、安全な暗号化方式には足りません。実用では監査されたライブラリと、RSAES-OAEPなど目的に合う方式・適切なパラメータ・安全な乱数を使います。[Pythonのrandom](https://docs.python.org/3/library/random.html)の擬似乱数を暗号鍵の生成用として扱ってはいけません。署名のRSASSA-PSSは暗号化とは別の方式です。
 
-[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)がこの「小定理」を発見した17世紀当時、これが何かの役に立つと考えた人は皆無でした。[フェルマー](https://kenji.blog/p/fermat/)自身も純粋な数学的探求心から数論の研究を行っていました。
+理解すべき対応は、定理が合同式を保証し、素数判定が条件を検査し、正しい鍵のRSA演算が代表元を復元し、実用方式が追加の符号化や安全性要件を満たす、という段階です。特定の通信サービスや現代暗号のすべてがフェルマーの小定理だけに依存するとは言えません。
 
-しかし、約300年後の1970年代、コンピュータネットワークの黎明期において、安全な通信プロトコルを確立するために不可欠な暗号技術として、[フェルマー](https://kenji.blog/p/fermat/)の定理は劇的な復活を遂げました。フェルマーの小定理に基づく素数判定技術と、オイラーの定理に基づく[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号は、現代のインターネットインフラを文字通り支えています。
-
-私たちが日々何気なく送っているLINEのメッセージも、Amazonでの買い物も、すべてはこの $a^{p-1} \equiv 1 \pmod p$ というシンプルで美しい数式の上で踊っているのです。数学がいかに抽象的であっても、いつか必ず人類の役に立つ時が来るということを、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)は教えてくれています。
-
-プログラミングや暗号理論を学ぶ上で、その基礎にある数学的構造を理解することは、ブラックボックスとして提供されているライブラリの挙動を深く理解し、よりセキュアなシステムを設計するための大きな武器になるでしょう。
-
-
+参照した一次資料は、[DLMFのオイラーの定理](https://dlmf.nist.gov/27.2#E8)、[HAC第4章](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)、[RSA仕様RFC8017](https://www.rfc-editor.org/rfc/rfc8017.html)、[GCCの128bit整数の説明](https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html)です。最後の資料は、元の実装にあった拡張型の制約を確認するためのものです。

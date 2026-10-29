@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/フェルマーの小定理と暗号化/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/フェルマーの小定理と暗号化/index.md",
+      "sourceHash": "6893ab05e8f2d866b4069c4f6ff11ef57e8c4e6b3f56c58c72fc7605ca663904",
+      "translationHash": "8772aab67d35cc1c8b1e4f1fb586992bc3d9da36748816b221035baf4a1666b6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read original JA/EN full metadata/body/all3executable blocks and2Mermaid diagrams;truncated initial output was re-read by ranges. Independently read revised JA/EN complete bodies,proofs,code and diagrams. Preserved9topics while removing false all-protocol/historical/confidentiality universality. Clarified Fermat necessary condition,Euler assumptions,and RSA recovery for all representatives,not probability dismissal of noncoprime inputs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared Fermat little theorem,Euler totient,coprime residue permutation,modular inverse,composite witness,Carmichael number,probableprime,independent uniform random bases,RSA representative/primitive/scheme,CRT and raw deterministic encryption. C++uint64 input domain and Python exactbuilt-inint contract are explicit;code is a teaching example,not a production generator."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All82TeX expressions are exact betweenJA/EN and decoded generatedHTML. Proof handles p-divisible a separately,cancels only invertible factors,states Euler coprimality,and proves RSA all-representative recovery modulo both distinct primes thenCRT. Carmichael property restricted to coprimebases;MillerRabin4^-k bounds fixed-composite pass probability with independent uniform random bases,not posterior probability or arbitrary fixed bases. Modular-addition guard is justified by reduced operands;O(logb) counts modular multiplications,not bitoperations/runtime. Diagram topology13flowedges/6sequenceedges and labels reviewed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Each current JA/EN version compiled completeC++ andharness in optimized andUBSan modes,WSLGCC13.3C++17,Werror,pedanticerrors. Each mode7480cases:2696mul,2696pow,2080Fermat,8invalid inputs;exact comparison to independentPythoninteger multiply/pow includes0,1,2^32/2^63/2^64boundaries,seededrandom,Carmichael liars/witnesses. BothPythoncompleteprogram outputs exact;2078Fermatcases+11invalid,9999extendedgcd/inversecases+5invalid,all3233RSArepresentative roundtrips+9invalid. Exact3codeblocks preserved inHTML. Original successful samples and actual overflow/nonpositive-round/composite-generator failures preserved separately;initial q7fixture success also retained,not falsely reported as failure."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Six distinct primary targets scoped in source-notes;two internal targets point to reviewed matching English RSA/primality articles and exist inpreview. Kept original sharedslug,publicationdate2026-09-11T22:00:00+09:00,heroimage,tags/categories;actual lastmod2026-10-29.23bundleHugo,multilingual1351pages,HTTPS2481HTML/41XML,and17existing repository tests passed. Publication for batch022 pending;batch021 CI is tracked separately."
+        }
+      },
+      "summary": "Full English review against corrected Japanese: theorem assumptions,proofs,Fermat limitations,portable modular arithmetic,and reproducible rawRSA with all-representative CRT correctness.",
+      "languageSpecificFindings": "Replaced misleading Crypto substring links to cryptocurrency and Japanese Euclide biography substring links with English reviewed RSA/primality articles and scoped primary references. Distinguished prime/composite/nonprime,base/modulus/residue/coprimality,inverse/reciprocal,correctness/confidentiality,primitive/scheme,conditional false-positive bound/post-pass compositeness probability. Re-read all revised English prose,82TeX expressions,two diagram sources,oneC++ andtwoPython blocks. Explicit built-in int requirement and named cancellation of a;removed grammatical comma afterRFCsubject.",
+      "validation": "docs/translation-review/batch-022-ja-en-validation.json",
+      "references": [
+        {
+          "url": "https://dlmf.nist.gov/27.2#E8",
+          "scope": "Totient definition/EulerFermat condition near27.2.6-8,not wholechapter."
+        },
+        {
+          "url": "https://cacr.uwaterloo.ca/hac/about/chap4.pdf",
+          "scope": "ScopedAlgorithm4.9,Definition4.10,Fact4.11,Definitions4.21-Algorithm4.24,Fact4.25 andNote4.47;not all37pages."
+        },
+        {
+          "url": "https://www.rfc-editor.org/rfc/rfc8017.html",
+          "scope": "Sections5,5.1.1/5.1.2 and7/7.1 primitives/range/errors/schemes;not all4171lines or security-proof audit."
+        },
+        {
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/_005f_005fint128.html",
+          "scope": "Shortsigned/unsigned128extension explanation;actual originaloverflow confirmed withUBSan separately."
+        },
+        {
+          "url": "https://docs.python.org/3/library/random.html",
+          "scope": "OpeningMersenneTwister/cryptographyunsuitability paragraphs;retrieveddocs3.15.2 versus executedPython3.12.14."
+        },
+        {
+          "url": "https://docs.openssl.org/master/man3/BN_generate_prime/",
+          "scope": "Probableprime/trialdivision/MillerRabinround paragraphs inmasterdocs,not allversions or6405lines."
+        }
+      ],
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "Other11translations inventoried but not full-body read/revised/reviewed.",
+        "Finite uint64 arithmetic and fixed smallRSAkey,not exhaustive range proof or production-key-generation validation.",
+        "Source/HTML math and diagrams checked;no browservisual,Mermaid/KaTeX runtime,constant-time or cryptographic-library certification.",
+        "Full-siteCI/publication for this batch pending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-10-29",
+      "sourceReviewed": true,
+      "languages": [
+        "en"
+      ],
+      "validation": "docs/translation-review/batch-022-ja-en-validation.json",
+      "publicationPending": true
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T17:51:15.969636+09:00",
+  "compiler": "WSL GCC13.3/C++17,Python3.12.14",
+  "scope": "Selected versions only. Exact finite arithmetic references use Python integers/pow/gcd,not a mirrored C++ multiplication implementation. No prose approval or review-date writes.",
+  "versions": [
+    {
+      "language": "ja",
+      "sha256": "414af2b88c61aff5999372f165926d5901dbf096a0e57ae73b71b21531650005",
+      "canonical": "https://kenji.blog/p/fermats-little-theorem-cryptography-implementation/",
+      "texExpressions": 82,
+      "allTexPreserved": true,
+      "diagramEdges": [
+        13,
+        6
+      ],
+      "codeBlocks": 3,
+      "cppBuilds": [
+        {
+          "mode": "optimized",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        },
+        {
+          "mode": "ubsan",
+          "cases": 7480,
+          "kindCounts": {
+            "M": 2696,
+            "P": 2696,
+            "F": 2080,
+            "invalid": 8
+          },
+          "completeProgramOutputExact": true,
+          "allArithmeticAndFermatCasesExact": true
+        }
+      ],
+      "pythonCompleteProgramsExact": 2,
+      "pythonFermatCases": 2078,
+      "pythonInvalidFermatCases": 11,
+      "pythonExtendedGcdAndInverseCases": 9999,
+      "pythonInvalidInverseCases": 5,
+      "rsaRepresentativesRoundTrip": 3233,
+      "pythonInvalidRsaCases": 9,
+      "referencesExact": true,
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Finite arithmetic cases,not exhaustive uint64 proof.",
+    "No performance,constant-time,production-key-generation,cryptographic-library or native-language certification.",
+    "Math/diagram source and generated HTML checked;no browservisual/KaTeX or Mermaid runtime rendering certification."
+  ],
+  "publicationPending": true
+}
