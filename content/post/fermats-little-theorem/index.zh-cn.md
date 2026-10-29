@@ -1,9 +1,7 @@
 ---
 title: "费马小定理：素数的性质与支撑现代密码学（RSA密码）的基础"
-date: "2026-09-24T19:44:38+09:00"
 description: "详细讲解费马小定理，从直观理解到数学证明，以及其在RSA密码学中的实际应用。"
 slug: "fermats-little-theorem"
-date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories:
   - "mathematics"
@@ -11,112 +9,97 @@ tags:
   - "数论"
   - "密码学"
   - "素数"
+date: "2026-09-20T15:00:00+09:00"
+lastmod: 2026-10-29
+math: true
+mermaid: true
 ---
 
-在现代互联网社会中，我们能够安全地进行通信，全靠 **密码学** 的功劳。而在这密码学的基础之中，存在着由17世纪数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)（[Pierre de Fermat](https://kenji.blog/zh-cn/p/fermat/)）发现的一条优美的定理。
+费马小定理描述以素数为模的幂运算性质。它给出了素性判定的一个必要条件，也有助于理解RSA解密的正确性。但正确解密本身并不能保证通信的机密性。本文区分定理、实例、证明、素性检验及其在RSA中的应用。
 
-本文将以通俗易懂的方式，为您讲解数论的重要基础—— **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)** （Fermat's Little Theorem），探讨它的含义、证明方法，以及它是如何被应用到现代[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码学中的。
+## 费马小定理
 
-## 什么是[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)？
+设 $p$ 为素数，$a$ 为整数且 $p\nmid a$，则：
 
-[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)是一个揭示素数与整数之间关系的非常简单却强大的定理。
+$$ a^{p-1}\equiv1\pmod p. $$
 
-该定理的主张如下：
+同余表示两边之差是模数的倍数。这里表示该幂除以 $p$ 后余数为1。对所有整数 $a$ 都成立的形式为：
 
-> **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)**
-> 设 $p$ 为一个素数，且 $a$ 是任意一个不是 $p$ 的倍数的整数（即 $a$ 与 $p$ 互素）。此时，以下同余式成立：
-> 
-> $$ a^{p-1} \equiv 1 \pmod p $$
+$$ a^p\equiv a\pmod p. $$
 
-这意味着，“将整数 $a$ 进行 $p-1$ 次方后除以素数 $p$，其余数必定为 $1$”。
+若 $p\nmid a$，将前一个同余式乘以 $a$ 即可。若 $p\mid a$，后一个同余式的两边都与零同余。去掉条件时，也必须单独检查这种情况。
 
-此外，通过在两边同时乘以 $a$，可以去除“$a$ 不是 $p$ 的倍数”这一条件，从而变形为一个更普遍的形式。
+### 实例
 
-> $$ a^p \equiv a \pmod p $$
-> （对任意整数 $a$ 均成立）
+- $p=5$，$a=2$：$2^4=16=5\cdot3+1$。
+- $p=7$，$a=3$：$3^6=729=7\cdot104+1$。
 
-### 通过具体例子来验证
+两例都满足定理的假设，余数为1。即使模数是素数，若底数是它的倍数，也不适用第一个结论。
 
-让我们代入实际的数字，看看定理是否成立。
+## 用余数的排列证明
 
-**例1：$p = 5$（素数），$a = 2$ 的情况**
-- $p-1 = 4$。
-- $a^{p-1} = 2^4 = 16$。
-- 将 $16$ 除以 $5$ 时，商为 $3$， **余数为 $1$** （$16 \equiv 1 \pmod 5$）。
+将 $S=\{1,2,\ldots,p-1\}$ 中的每个元素乘以 $a$，再取模 $p$ 的余数。结果不会为零。若 $ia\equiv ja\pmod p$，由于 $a$ 与 $p$ 互素，可以约去因子 $a$，得到 $i\equiv j\pmod p$。下标是小于模数的正整数，所以 $i=j$。
 
-**例2：$p = 7$（素数），$a = 3$ 的情况**
-- $p-1 = 6$。
-- $a^{p-1} = 3^6 = 729$。
-- 将 $729$ 除以 $7$ 时，商为 $104$， **余数为 $1$** （$729 = 7 \times 104 + 1$）。
+因此，得到的余数是原来非零余数的一个排列。把所有元素相乘，有：
 
-就像这样，无论选择哪个素数 $p$，这个神奇的法则都会成立。
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-## 定理的证明
+由于 $(p-1)!$ 与 $p$ 互素，可乘以其逆元约去公共因子，得出定理。同余式中不能不加条件地除以任意因子。
 
-[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的证明有多种途径，这里我们介绍一种基于数论的经典证明方法。
+## 费马检验只检查必要条件
 
-设 $p$ 为素数，$a$ 为不是 $p$ 的倍数的整数。
-考虑集合 $S = \{1, 2, 3, \dots, p-1\}$。我们将这个集合中的每一个元素都乘以 $a$，得到一个新的集合 $S'$。
+先处理小于2的整数为非素数、2和3为素数、其余偶数为合数。对于剩下的奇数 $n>3$，选择底数 $a$，满足 $2\le a\le n-2$。
 
-$$ S' = \{a, 2a, 3a, \dots, (p-1)a\} $$
+$$ a^{n-1}\not\equiv1\pmod n $$
 
-考虑集合 $S'$ 中的每一个元素除以 $p$ 的余数。令人惊讶的是，这些余数全部互不相同，而且都不会是 $0$。换句话说，余数的集合与原集合 $S$ （忽略顺序的话）是完全一致的。
-
-因此，$S$ 中所有元素的乘积，与 $S'$ 中所有元素的乘积，在模 $p$ 的意义下是同余的。
-
-$$ 1 \times 2 \times \dots \times (p-1) \equiv a \times 2a \times \dots \times (p-1)a \pmod p $$
-
-整理后可以得到：
-
-$$ (p-1)! \equiv a^{p-1} \times (p-1)! \pmod p $$
-
-由于 $(p-1)!$ 与 $p$ 互素，我们可以在两边同时除以 $(p-1)!$ （同余式中的除法性质）。结果就导出了以下定理：
-
-$$ 1 \equiv a^{p-1} \pmod p $$
-
-至此证明完成。
-
-## 费马素性检验：在素数判定中的应用
-
-这个定理被应用于判断一个数是否为素数的 **素数判定算法** （费马素性检验）中。
-
-当我们想知道一个巨大的数字 $n$ 是否为素数时，可以随机选择一个 $a$，然后检查 $a^{n-1} \equiv 1 \pmod n$ 是否成立。如果不成立，那么 $n$ **绝对不是素数** （它是合数）。
+若出现上述不满足同余的情况，则 $n$ 是合数。若同余式成立，只能说明该底数未发现必要条件遭到违反，并不构成素性的证明。
 
 ```mermaid
 flowchart TD
-    Start("开始") --> ChooseA("选择一个随机整数 a")
-    ChooseA --> Calc("计算 a^(n-1) mod n")
-    Calc --> Check{"结果是 1 吗？"}
-    Check -- "否" --> Composite("n 是合数 (非素数)")
-    Check -- "是" --> ProbPrime("n 可能是素数")
+    Input["处理小整数和偶数后，检查奇数 n"] --> Choose["选择从2到n-2的底数 a"]
+    Choose --> Calc["计算 a 的 n-1 次幂模 n 的余数"]
+    Calc --> Check{"余数是1吗？"}
+    Check -- No --> Composite["n 是合数"]
+    Check -- Yes --> Pass["通过这个底数：并非素性的证明"]
 ```
 
-不过，由于存在一种被称为 **卡迈克尔数** （Carmichael numbers）的特殊数字，它们虽然是合数，却能满足 $a^{n-1} \equiv 1 \pmod n$，因此仅凭这个检验无法百分之百确定素数。所以，在实际应用中，通常会使用米勒-拉宾（Miller-Rabin）素性检验法等。
+例如 $341=11\cdot31$ 是合数，却通过底数2的检验。这种数称为相应底数的伪素数。卡迈克尔数是对**所有与该数互素的底数**都满足费马同余式的合数。最小的例子 $561=3\cdot11\cdot17$ 通过底数2，但不能通过与它不互素的底数3。
 
-## 在现代密码学中的应用：[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码
+尝试多个随机底数，并不能为每个合数提供统一且很小的误通过概率上限。[HAC第4章](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)区分了Fermat和Miller–Rabin。对于一个固定的奇合数，使用独立、均匀随机底数的 $k$ 次Miller–Rabin检验，其误通过概率不超过 $4^{-k}$。这并非通过检验后该数为合数的概率，也不能自动用于任意固定底数。另见[素性检验详解](https://kenji.blog/zh-cn/p/cpp-fast-prime-testing-miller-rabin/)。
 
-[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（以及它的推广，即 **欧拉定理** ）最重要的应用领域，就是支撑着互联网安全的 **[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码**。
+## RSA正确解密的条件
 
-RSA密码的安全性建立在大整数分解的困难性之上。在其机制中，“[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)”的原理在密钥生成与解密过程中发挥着决定性的作用。
+选择不同的素数 $p,q$，令 $n=pq$。使用欧拉函数 $\varphi(n)=(p-1)(q-1)$，在这个教学构造中，选择满足 $1<e<\varphi(n)$ 和 $\gcd(e,\varphi(n))=1$ 的公开指数。其逆元是正的私有指数 $d$：
+
+$$ ed\equiv1\pmod{\varphi(n)}. $$
+
+公钥为 $(n,e)$，私钥的简化表示为 $(n,d)$。实际私钥还可能包含加速计算的因子，这些也必须保密。对整数消息代表元 $0\le M<n$，数学运算为：
+
+$$ C=M^e\bmod n,\qquad M'=C^d\bmod n. $$
 
 ```mermaid
 sequenceDiagram
-    participant Sender as "发送者"
-    participant Receiver as "接收者"
-    Note over Receiver: "生成公钥 (e, n) 和私钥 (d)"
-    Receiver->>Sender: "发送公钥 (e, n)"
-    Note over Sender: "加密明文 M"
-    Note over Sender: "C = M^e mod n"
-    Sender->>Receiver: "发送密文 C"
-    Note over Receiver: "解密密文 C"
-    Note over Receiver: "M = C^d mod n"
+    participant Sender as 发送者
+    participant Receiver as 接收者
+    Note over Sender,Receiver: 教学用原始RSA运算：省略消息编码
+    Receiver->>Sender: 提供公钥 (n,e)
+    Sender->>Sender: 准备从0到n-1的整数代表元 M
+    Sender->>Sender: 计算 C = M^e mod n
+    Sender->>Receiver: 提供 C
+    Receiver->>Receiver: 计算 M' = C^d mod n
 ```
 
-在[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码中，准备两个巨大的素数 $p$ 和 $q$，并令 $n = p \times q$。
-根据欧拉定理，在加密和解密的过程中，密钥（$e$ 和 $d$）被设计成使得 $M^{ed} \equiv M \pmod n$ 成立。在这里，明文 $M$ 能够神奇地恢复原貌，本质上正是依赖于[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)所保证的数学性质。
+若 $\gcd(M,n)=1$，[欧拉定理](https://dlmf.nist.gov/27.2#E8)给出 $M^{\varphi(n)}\equiv1\pmod n$。由于对某个非负整数 $t$ 有 $ed=1+t\varphi(n)$，解密就会恢复原代表元。
 
-## 总结
+为包含不互素的代表元，分别考虑以每个素数为模的情况。若 $p\mid M$，则 $M^{ed}$ 与 $M$ 都与零同余。否则，费马小定理和 $p-1\mid ed-1$ 给出所需同余式。模 $q$ 时同理。由中国剩余定理：
 
-17世纪由[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)发现的这个小小的定理，在几百年后的现代社会中，已经成为了支撑信息安全根基的不可或缺的元素。
+$$ M^{ed}\equiv M\pmod p,\quad M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod n. $$
 
-**[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)** 可以说是展示纯数学如何与实用技术（密码学和算法）相结合的最优美的例子之一。我们不禁要为数学的深奥与其应用范围的广泛而惊叹。
+这样可恢复包括零和因子倍数在内的所有代表元。分解模数能计算私有指数，但这并不意味着一般RSA求逆与整数分解在困难程度上已被证明等价。
+
+## 区分正确性与安全性
+
+图中的原始RSA是确定性运算，不能单独构成安全的加密方案。[RFC 8017第5节和第7节](https://www.rfc-editor.org/rfc/rfc8017.html)区分了原语和加密方案。实际使用需要经审计的库、RSAES-OAEP等合适的方案、正确的参数、安全的随机数及密钥管理。RSASSA-PSS是另一种用于签名的方案。
+
+费马小定理是理解模运算和RSA数学原理的基础。应区分定理、素性检验、有效密钥和实际密码方案。[RSA入门解说](https://kenji.blog/zh-cn/p/rsa-encryption-math-explained-for-beginners/)进一步说明了这些差别。

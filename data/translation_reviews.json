@@ -2775,6 +2775,26 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-023.json",
       "evidenceHash": "2d7e62a518d0791e73de2b534aaa31cc608591ea81730cbad4822de4db07c77a"
+    },
+    "post/fermats-little-theorem/index.zh-cn.md": {
+      "source": "post/fermats-little-theorem/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05b557bc6703982b0176505857405e7ab09f7cc82988041dd1d8adbc6ada498c",
+      "translationHash": "1f4b0625bf932b91e9d93dbff64201a30a79650f2380619cd79d4e2bf9ca74f0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-023.json",
+      "evidenceHash": "c3dd4ef4bdb1fe06af86e327f5b19336406f0b49964ad169f62cb53e3dbe5f8c"
+    },
+    "post/fermats-little-theorem/index.zh-tw.md": {
+      "source": "post/fermats-little-theorem/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "05b557bc6703982b0176505857405e7ab09f7cc82988041dd1d8adbc6ada498c",
+      "translationHash": "8a58fe0496680acf342b6f8dd51cc2c2925f989a527f6e629b4373887040f076",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-023.json",
+      "evidenceHash": "c9bd581dc34e36764c8ad46742fd03e105b8f7f16dd39f4cffbe13b2326d21ba"
     }
   }
 }

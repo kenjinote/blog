@@ -1,121 +1,104 @@
 ---
 title: "費馬小定理：質數的性質與支撐現代密碼學（RSA密碼）的基礎"
-date: "2026-09-24T19:44:38+09:00"
 description: "詳細講解費馬小定理，從直觀理解到數學證明，以及其在RSA密碼學中的實際應用。"
 slug: "fermats-little-theorem"
-date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags:
   - "數論"
   - "密碼學"
   - "質數"
+date: "2026-09-20T15:00:00+09:00"
+lastmod: 2026-10-29
+math: true
+mermaid: true
 ---
 
-在現代網際網路社會中，我們能夠安全地進行通訊，全靠 **密碼學** 的功勞。而在這密碼學的基礎之中，存在著由17世紀數學家[皮埃爾·德·費馬](https://kenji.blog/zh-tw/p/fermat/)（[Pierre de Fermat](https://kenji.blog/zh-tw/p/fermat/)）發現的一條優美的定理。
+費馬小定理描述以質數為模的冪次運算性質。它提供質數判定的必要條件，也有助於理解RSA解密的正確性。但能夠正確解密，本身並不保證通訊的機密性。本文分別說明定理、實例、證明、質數檢驗及其在RSA中的應用。
 
-本文將以通俗易懂的方式，為您講解數論的重要基礎—— **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)** （Fermat's Little Theorem），探討它的含義、證明方法，以及它是如何被應用到現代[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼學中的。
+## 費馬小定理
 
-## 什麼是[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)？
+設 $p$ 為質數，$a$ 為整數且 $p\nmid a$，則：
 
-[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)是一個揭示質數與整數之間關係的非常簡單卻強大的定理。
+$$ a^{p-1}\equiv1\pmod p. $$
 
-該定理的主張如下：
+同餘表示兩邊之差是模數的倍數。此處表示該冪除以 $p$ 後，餘數為1。對所有整數 $a$ 都成立的形式是：
 
-> **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)**
-> 設 $p$ 為一個質數，且 $a$ 是任意一個不是 $p$ 的倍數的整數（即 $a$ 與 $p$ 互質）。此時，以下同餘式成立：
-> 
-> $$ a^{p-1} \equiv 1 \pmod p $$
+$$ a^p\equiv a\pmod p. $$
 
-這意味著，「將整數 $a$ 進行 $p-1$ 次方後除以質數 $p$，其餘數必定為 $1$」。
+若 $p\nmid a$，將前一個同餘式乘以 $a$。若 $p\mid a$，後一個同餘式的兩邊都與零同餘。移除條件時，也必須另行確認這種情況。
 
-此外，透過在兩邊同時乘以 $a$，可以去除「$a$ 不是 $p$ 的倍數」這一條件，從而變形為一個更普遍的形式。
+### 實例
 
-> $$ a^p \equiv a \pmod p $$
-> （對任意整數 $a$ 均成立）
+- $p=5$，$a=2$：$2^4=16=5\cdot3+1$。
+- $p=7$，$a=3$：$3^6=729=7\cdot104+1$。
 
-### 透過具體例子來驗證
+兩例都滿足定理的假設，餘數為1。即使模數是質數，若底數是它的倍數，也不適用第一個結論。
 
-讓我們代入實際的數字，看看定理是否成立。
+## 以餘數的排列證明
 
-**例1：$p = 5$（質數），$a = 2$ 的情況**
-- $p-1 = 4$。
-- $a^{p-1} = 2^4 = 16$。
-- 將 $16$ 除以 $5$ 時，商為 $3$， **餘數為 $1$** （$16 \equiv 1 \pmod 5$）。
+將 $S=\{1,2,\ldots,p-1\}$ 中的各個元素乘以 $a$，再取模 $p$ 的餘數。所得餘數不會為零。若 $ia\equiv ja\pmod p$，由於 $a$ 與 $p$ 互質，可約去因子 $a$，得到 $i\equiv j\pmod p$。索引是小於模數的正整數，因此 $i=j$。
 
-**例2：$p = 7$（質數），$a = 3$ 的情況**
-- $p-1 = 6$。
-- $a^{p-1} = 3^6 = 729$。
-- 將 $729$ 除以 $7$ 時，商為 $104$， **餘數為 $1$** （$729 = 7 \times 104 + 1$）。
+所以所得餘數是原本非零餘數的一個排列。將各元素相乘，得到：
 
-就像這樣，無論選擇哪個質數 $p$，這個神奇的法則都會成立。
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-## 定理的證明
+因為 $(p-1)!$ 與 $p$ 互質，可乘以其反元素約去共同因子，定理即得證。同餘式不能無條件地除以任意因子。
 
-[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的證明有多種途徑，這裡我們介紹一種基於數論的經典證明方法。
+## 費馬檢驗只檢查必要條件
 
-設 $p$ 為質數，$a$ 為不是 $p$ 的倍數的整數。
-考慮集合 $S = \{1, 2, 3, \dots, p-1\}$。我們將這個集合中的每一個元素都乘以 $a$，得到一個新的集合 $S'$。
+先將小於2的整數判為非質數、2和3判為質數，其餘偶數判為合數。對剩下的奇數 $n>3$，選擇底數 $a$，使 $2\le a\le n-2$。
 
-$$ S' = \{a, 2a, 3a, \dots, (p-1)a\} $$
+$$ a^{n-1}\not\equiv1\pmod n $$
 
-考慮集合 $S'$ 中的每一個元素除以 $p$ 的餘數。令人驚訝的是，這些餘數全部互不相同，而且都不會是 $0$。換句話說，餘數的集合與原集合 $S$ （忽略順序的話）是完全一致的。
-
-因此，$S$ 中所有元素的乘積，與 $S'$ 中所有元素的乘積，在模 $p$ 的意義下是同餘的。
-
-$$ 1 \times 2 \times \dots \times (p-1) \equiv a \times 2a \times \dots \times (p-1)a \pmod p $$
-
-整理後可以得到：
-
-$$ (p-1)! \equiv a^{p-1} \times (p-1)! \pmod p $$
-
-由於 $(p-1)!$ 與 $p$ 互質，我們可以在兩邊同時除以 $(p-1)!$ （同餘式中的除法性質）。結果就導出了以下定理：
-
-$$ 1 \equiv a^{p-1} \pmod p $$
-
-至此證明完成。
-
-## 費馬質數檢驗：在質數判定中的應用
-
-這個定理被應用於判斷一個數是否為質數的 **質數判定演算法** （費馬質數檢驗）中。
-
-當我們想知道一個巨大的數字 $n$ 是否為質數時，可以隨機選擇一個 $a$，然後檢查 $a^{n-1} \equiv 1 \pmod n$ 是否成立。如果不成立，那麼 $n$ **絕對不是質數** （它是合數）。
+若出現上述不同餘的情況，則 $n$ 是合數。若同餘式成立，只表示該底數沒有發現必要條件遭到違反，並不是質數的證明。
 
 ```mermaid
 flowchart TD
-    Start("開始") --> ChooseA("選擇一個隨機整數 a")
-    ChooseA --> Calc("計算 a^(n-1) mod n")
-    Calc --> Check{"結果是 1 嗎？"}
-    Check -- "否" --> Composite("n 是合數 (非質數)")
-    Check -- "是" --> ProbPrime("n 可能是質數")
+    Input["處理小整數與偶數後，檢查奇數 n"] --> Choose["選擇從2到n-2的底數 a"]
+    Choose --> Calc["計算 a 的 n-1 次冪模 n 的餘數"]
+    Calc --> Check{"餘數是1嗎？"}
+    Check -- No --> Composite["n 是合數"]
+    Check -- Yes --> Pass["通過這個底數：不是質數的證明"]
 ```
 
-不過，由於存在一種被稱為 **卡邁克爾數** （Carmichael numbers）的特殊數字，它們雖然是合數，卻能滿足 $a^{n-1} \equiv 1 \pmod n$，因此僅憑這個檢驗無法百分之百確定質數。所以，在實際應用中，通常會使用米勒-拉賓（Miller-Rabin）質數檢驗法等。
+例如 $341=11\cdot31$ 是合數，卻通過底數2的檢驗。這種數稱為對應底數的偽質數。卡邁克爾數是對**所有與該數互質的底數**都滿足費馬同餘式的合數。最小的例子 $561=3\cdot11\cdot17$ 通過底數2，但無法通過與它不互質的底數3。
 
-## 在現代密碼學中的應用：[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼
+嘗試多個隨機底數，並不能為所有合數提供一致且很小的誤通過機率上限。[HAC第4章](https://cacr.uwaterloo.ca/hac/about/chap4.pdf)區分Fermat與Miller–Rabin。對固定的奇合數，使用獨立且均勻隨機底數的 $k$ 次Miller–Rabin檢驗，其誤通過機率不超過 $4^{-k}$。這並不是通過檢驗後該數為合數的機率，也不能直接套用至任意固定底數。另見[質數判定詳解](https://kenji.blog/zh-tw/p/cpp-fast-prime-testing-miller-rabin/)。
 
-[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（以及它的推廣，即 **歐拉定理** ）最重要的應用領域，就是支撐著網際網路安全的 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼**。
+## RSA正確解密的條件
 
-RSA密碼的安全性建立在大整數分解的困難性之上。在其機制中，「[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)」的原理在金鑰生成與解密過程中發揮著決定性的作用。
+選取相異質數 $p,q$，令 $n=pq$。使用尤拉函數 $\varphi(n)=(p-1)(q-1)$，在這個教學構造中，選擇滿足 $1<e<\varphi(n)$ 與 $\gcd(e,\varphi(n))=1$ 的公開指數。它的反元素是正的私密指數 $d$：
+
+$$ ed\equiv1\pmod{\varphi(n)}. $$
+
+公開金鑰是 $(n,e)$，私密金鑰的簡化表示為 $(n,d)$。實際的私密金鑰也可能包含加速計算的因子，這些也必須保密。對整數訊息代表元素 $0\le M<n$，其數學運算為：
+
+$$ C=M^e\bmod n,\qquad M'=C^d\bmod n. $$
 
 ```mermaid
 sequenceDiagram
-    participant Sender as "發送者"
-    participant Receiver as "接收者"
-    Note over Receiver: "生成公鑰 (e, n) 和私鑰 (d)"
-    Receiver->>Sender: "發送公鑰 (e, n)"
-    Note over Sender: "加密明文 M"
-    Note over Sender: "C = M^e mod n"
-    Sender->>Receiver: "發送密文 C"
-    Note over Receiver: "解密密文 C"
-    Note over Receiver: "M = C^d mod n"
+    participant Sender as 傳送者
+    participant Receiver as 接收者
+    Note over Sender,Receiver: 教學用原始RSA運算：省略訊息編碼
+    Receiver->>Sender: 提供公開金鑰 (n,e)
+    Sender->>Sender: 準備從0到n-1的整數代表元素 M
+    Sender->>Sender: 計算 C = M^e mod n
+    Sender->>Receiver: 提供 C
+    Receiver->>Receiver: 計算 M' = C^d mod n
 ```
 
-在[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼中，準備兩個巨大的質數 $p$ 和 $q$，並令 $n = p \times q$。
-根據歐拉定理，在加密和解密的過程中，金鑰（$e$ 和 $d$）被設計成使得 $M^{ed} \equiv M \pmod n$ 成立。在這裡，明文 $M$ 能夠神奇地恢復原貌，本質上正是依賴於[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)所保證的數學性質。
+若 $\gcd(M,n)=1$，[尤拉定理](https://dlmf.nist.gov/27.2#E8)給出 $M^{\varphi(n)}\equiv1\pmod n$。對某個非負整數 $t$ 有 $ed=1+t\varphi(n)$，因此解密會還原原本的代表元素。
 
-## 總結
+為涵蓋不互質的代表元素，分別以各質數為模來考慮。若 $p\mid M$，則 $M^{ed}$ 與 $M$ 都與零同餘。否則，由費馬小定理與 $p-1\mid ed-1$ 可得所需同餘式。模 $q$ 時同理。由中國剩餘定理可得：
 
-17世紀由[皮埃爾·德·費馬](https://kenji.blog/zh-tw/p/fermat/)發現的這個小小的定理，在幾百年後的現代社會中，已經成為了支撐資訊安全根基的不可或缺的元素。
+$$ M^{ed}\equiv M\pmod p,\quad M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod n. $$
 
-**[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)** 可以說是展示純數學如何與實用技術（密碼學和演算法）相結合的最優美的例子之一。我們不禁要為數學的深奧與其應用範圍的廣泛而驚嘆。
+因此可以還原所有代表元素，包括零及因子的倍數。將模數分解成因數便能計算私密指數，但一般RSA反演與整數分解在困難程度上是否等價，並未獲得證明。
+
+## 區分正確性與安全性
+
+圖中的原始RSA是確定性的運算，單獨使用不足以構成安全的加密方案。[RFC 8017第5節與第7節](https://www.rfc-editor.org/rfc/rfc8017.html)區分原語與加密方案。實際使用時，需要經稽核的函式庫、RSAES-OAEP等適當方案、正確參數、安全亂數及金鑰管理。RSASSA-PSS是另一種用於簽章的方案。
+
+費馬小定理是理解模運算與RSA數學的基礎。應分清定理、質數檢驗、有效金鑰及實際密碼方案。[RSA入門解說](https://kenji.blog/zh-tw/p/rsa-encryption-math-explained-for-beginners/)進一步說明這些差別。
