@@ -761,5 +761,24 @@
       "Finite arithmetic checks supplement manually read arguments;not exhaustive proof or cryptographic audit.",
       "Source and decoded HTML checked;no browser visual/RTL/KaTeX/Mermaid runtime certification."
     ]
+  },
+  "publicationDispatch": {
+    "date": "2026-10-30",
+    "observedAt": "2026-10-30T08:15:16.7200860+09:00",
+    "deployedCommitExpected": "3abd54d7ded1c099523536da637196548470c4aa",
+    "ciRun": 40971735941,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40971735941",
+    "statusAtDispatch": "in_progress",
+    "proof": "docs/translation-review/batch-024-publication-dispatch.json",
+    "pagesPlanned": 325,
+    "translationsPlanned": 300,
+    "japaneseSourcesPlanned": 25,
+    "texExpressionsPlanned": 8492,
+    "mathVersionsPlanned": 130,
+    "crtPythonBlocksPlanned": 13,
+    "crtDiagramsPlanned": 13,
+    "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_300.py",
+    "publicationPending": true,
+    "scope": "Ordinary push after fetch confirmed zero incoming commits. Matching run/head observed live in_progress. Probe prepared but not run before CI build/deploy success. No live publication confirmation claimed."
   }
 }
