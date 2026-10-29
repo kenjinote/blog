@@ -933,5 +933,21 @@
       "Finite C++/Python cases,not exhaustive uint64 proof,production cryptographic audit or performance/constant-time assessment.",
       "HTML/source checked;no visualbrowser,RTL,KaTeX or Mermaid runtime-rendering certification."
     ]
+  },
+  "publicationDispatch": {
+    "date": "2026-10-29",
+    "deployedCommitExpected": "64979468216256b30d71b03c83f718c52de97172",
+    "ciRun": 40889391311,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40889391311",
+    "statusAtDispatch": "in_progress",
+    "buildStatusObserved": "in_progress",
+    "pagesPlanned": 299,
+    "translationsPlanned": 276,
+    "japaneseSourcesPlanned": 23,
+    "texExpressionsPlanned": 7205,
+    "mathVersionsPlanned": 104,
+    "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_276.py",
+    "publicationPending": true,
+    "scope": "Ordinary non-force push after fetch confirmed no incoming commits. Matching run/head and live build job observed via GitHubAPI. Prepared299URLprobe has not run; neither deployment success nor publication completion is claimed."
   }
 }
