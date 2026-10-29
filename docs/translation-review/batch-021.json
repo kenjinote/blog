@@ -642,13 +642,14 @@
     "reviewedTranslationsTotal": 264,
     "unreviewedTranslations": 12768,
     "humanReviews": 0,
-    "publicationPending": true,
+    "publicationPending": false,
     "limitations": [
       "AI full-body review,not human/native-speaker certification.",
       "Execution evidence is retained per language/mode,not falsely counted as new execution by final assembly.",
       "Finite bounds<=100000,Rust1.90Windows64bit,no usizeMAX enumeration or timing benchmark.",
       "No browservisual/RTL or cryptographic certification."
-    ]
+    ],
+    "publicationProof": "docs/translation-review/publication-021.json"
   },
   "publicationDispatch": {
     "date": "2026-10-29",
@@ -662,5 +663,27 @@
     "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_264.py",
     "publicationPending": true,
     "scope": "Ordinary non-force push after fetching/checking no incoming changes. 286URLprobe prepared,not yet executed;publication verified only after matching build/deploysuccess and livecheck."
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-10-29T18:04:51.438084+09:00",
+      "ciRun": 40843171656,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40843171656",
+      "deployedCommit": "33d438cdfef088927763eda6dc8c15bd65f1450c",
+      "ciConclusion": "success",
+      "buildConclusion": "success",
+      "deployConclusion": "success",
+      "proof": "docs/translation-review/publication-021.json",
+      "pages": 286,
+      "passed": 286,
+      "reviewedTranslationsPublished": 264,
+      "japaneseSources": 22,
+      "texExpressions": 6139,
+      "mathVersions": 91,
+      "cPrimeEnumerationVersions": 13,
+      "sieveVersions": 13,
+      "storedPrimeRustVersions": 13,
+      "scope": "Batches001-021 reviewed versions only. All286HTTP/content/canonical/lang/exact14hreflang/13sidebar article URLs. All13stored-primeRustcompletecode/primaryVec/localizedsieve targets,all26sieveRustblocks/imagealt/credit/liveGIFbytes,all13Ccode and91versions6139decodedTeX checked. OriginaldistinctURL/date preserved. Not full-site/native-language/visual/security certification."
+    }
+  ]
 }
