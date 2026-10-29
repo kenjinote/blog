@@ -1,0 +1,530 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T23:42:10.144369+09:00",
+  "scope": "Original metadata/hashes/all13Hugo publicationdates,completeJAENbody/code/diagram reading,actualoriginal JAENPython executions. No translation approved.",
+  "versions": {
+    "ar": {
+      "path": "content/post/chinese-remainder-theorem/index.ar.md",
+      "sha256": "27dc1fb7811df98b16721f3d1528213e911a765b7e556cfbb1399c46c6e722d0",
+      "canonical": "https://kenji.blog/ar/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/chinese-remainder-theorem/index.de.md",
+      "sha256": "b586f7e975ec08e56a2b6feaa753e6e4e35541169f00083e8174e2fcf01e61f9",
+      "canonical": "https://kenji.blog/de/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/chinese-remainder-theorem/index.en.md",
+      "sha256": "998e3af1d6a200165b1d8f12cf325c1c0e9045aaa0e8a3089d59e187e3a8af60",
+      "canonical": "https://kenji.blog/en/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/chinese-remainder-theorem/index.es.md",
+      "sha256": "1fa2235c518c804df7f3b8c89c615e77f99b13564ef14e3a00c04810a3180458",
+      "canonical": "https://kenji.blog/es/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/chinese-remainder-theorem/index.fr.md",
+      "sha256": "e71bea4383189ae235a2d0d8047d937d9a04fae3e5298b64732009ad7165a0e5",
+      "canonical": "https://kenji.blog/fr/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/chinese-remainder-theorem/index.hi.md",
+      "sha256": "8e79f194beb45f6778a7c5e7291d0ade8613b24b20ac12206af339a3b1727385",
+      "canonical": "https://kenji.blog/hi/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/chinese-remainder-theorem/index.id.md",
+      "sha256": "afe372d9b5275e9e9b74e8aa4702db2c12961ea947823005aacc1a512d083e09",
+      "canonical": "https://kenji.blog/id/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/chinese-remainder-theorem/index.ko.md",
+      "sha256": "92dbe5fd987805c51c3ae484cf33a3a20106020e6acfc7cf4061467ec893fc17",
+      "canonical": "https://kenji.blog/ko/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/chinese-remainder-theorem/index.md",
+      "sha256": "6e166736823d7f7ab2161fe6da7ce82b2439ffc2d8de6140230d8bf8bb63b8ce",
+      "canonical": "https://kenji.blog/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": true,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/chinese-remainder-theorem/index.pt.md",
+      "sha256": "4cf78c47c5c6129e9931d03b7132450adb1f890205052ec79f57dbf75ac51af2",
+      "canonical": "https://kenji.blog/pt/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/chinese-remainder-theorem/index.ru.md",
+      "sha256": "b563c7bee7870c089079c18b30073acc804b542ae8c1f73f6d2ec8f92d75ab91",
+      "canonical": "https://kenji.blog/ru/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/chinese-remainder-theorem/index.zh-cn.md",
+      "sha256": "b228eb191a7075bffeca12748cdcaae5c263db89b703aab0d3eb1b350188913e",
+      "canonical": "https://kenji.blog/zh-cn/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/chinese-remainder-theorem/index.zh-tw.md",
+      "sha256": "cdb1cf0b19490e35ad3a5d610dd1b94902153703ee7f3d0242d2191ced09d282",
+      "canonical": "https://kenji.blog/zh-tw/p/chinese-remainder-theorem/",
+      "originalDateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T13:11:25+09:00"
+      ],
+      "datePublished": "2026-09-14T13:11:25+09:00",
+      "fullBodyRead": false,
+      "reviewed": false
+    }
+  },
+  "originalExecutions": {
+    "en": {
+      "originalCompleteProgramOutput": "Solution to Sunzi's problem: 23\n",
+      "sampleResult": 23,
+      "inputCases": [
+        {
+          "name": "missing_residue",
+          "residues": [
+            2
+          ],
+          "moduli": [
+            3,
+            5
+          ],
+          "actual": {
+            "value": 5,
+            "type": "int"
+          }
+        },
+        {
+          "name": "extra_residue",
+          "residues": [
+            2,
+            3
+          ],
+          "moduli": [
+            3
+          ],
+          "actual": {
+            "value": 2,
+            "type": "int"
+          }
+        },
+        {
+          "name": "empty",
+          "residues": [],
+          "moduli": [],
+          "actual": {
+            "value": 0,
+            "type": "int"
+          }
+        },
+        {
+          "name": "zero_modulus",
+          "residues": [
+            0
+          ],
+          "moduli": [
+            0
+          ],
+          "actual": {
+            "exception": "ZeroDivisionError",
+            "message": "integer division or modulo by zero"
+          }
+        },
+        {
+          "name": "negative_modulus",
+          "residues": [
+            2
+          ],
+          "moduli": [
+            -3
+          ],
+          "actual": {
+            "value": -1,
+            "type": "int"
+          }
+        },
+        {
+          "name": "float_residue",
+          "residues": [
+            2.5
+          ],
+          "moduli": [
+            3
+          ],
+          "actual": {
+            "value": 2.5,
+            "type": "float"
+          }
+        },
+        {
+          "name": "bool_residue",
+          "residues": [
+            true
+          ],
+          "moduli": [
+            3
+          ],
+          "actual": {
+            "value": 1,
+            "type": "int"
+          }
+        },
+        {
+          "name": "bool_modulus",
+          "residues": [
+            0
+          ],
+          "moduli": [
+            true
+          ],
+          "actual": {
+            "value": 0,
+            "type": "int"
+          }
+        },
+        {
+          "name": "unit_modulus",
+          "residues": [
+            0
+          ],
+          "moduli": [
+            1
+          ],
+          "actual": {
+            "value": 0,
+            "type": "int"
+          }
+        },
+        {
+          "name": "compatible_non_coprime",
+          "residues": [
+            1,
+            3
+          ],
+          "moduli": [
+            4,
+            6
+          ],
+          "actual": {
+            "exception": "Exception",
+            "message": "Modular inverse does not exist"
+          }
+        },
+        {
+          "name": "incompatible_non_coprime",
+          "residues": [
+            0,
+            1
+          ],
+          "moduli": [
+            4,
+            6
+          ],
+          "actual": {
+            "exception": "Exception",
+            "message": "Modular inverse does not exist"
+          }
+        }
+      ]
+    },
+    "ja": {
+      "originalCompleteProgramOutput": "孫子の問題の解: 23\n",
+      "sampleResult": 23,
+      "inputCases": [
+        {
+          "name": "missing_residue",
+          "residues": [
+            2
+          ],
+          "moduli": [
+            3,
+            5
+          ],
+          "actual": {
+            "value": 5,
+            "type": "int"
+          }
+        },
+        {
+          "name": "extra_residue",
+          "residues": [
+            2,
+            3
+          ],
+          "moduli": [
+            3
+          ],
+          "actual": {
+            "value": 2,
+            "type": "int"
+          }
+        },
+        {
+          "name": "empty",
+          "residues": [],
+          "moduli": [],
+          "actual": {
+            "value": 0,
+            "type": "int"
+          }
+        },
+        {
+          "name": "zero_modulus",
+          "residues": [
+            0
+          ],
+          "moduli": [
+            0
+          ],
+          "actual": {
+            "exception": "ZeroDivisionError",
+            "message": "integer division or modulo by zero"
+          }
+        },
+        {
+          "name": "negative_modulus",
+          "residues": [
+            2
+          ],
+          "moduli": [
+            -3
+          ],
+          "actual": {
+            "value": -1,
+            "type": "int"
+          }
+        },
+        {
+          "name": "float_residue",
+          "residues": [
+            2.5
+          ],
+          "moduli": [
+            3
+          ],
+          "actual": {
+            "value": 2.5,
+            "type": "float"
+          }
+        },
+        {
+          "name": "bool_residue",
+          "residues": [
+            true
+          ],
+          "moduli": [
+            3
+          ],
+          "actual": {
+            "value": 1,
+            "type": "int"
+          }
+        },
+        {
+          "name": "bool_modulus",
+          "residues": [
+            0
+          ],
+          "moduli": [
+            true
+          ],
+          "actual": {
+            "value": 0,
+            "type": "int"
+          }
+        },
+        {
+          "name": "unit_modulus",
+          "residues": [
+            0
+          ],
+          "moduli": [
+            1
+          ],
+          "actual": {
+            "value": 0,
+            "type": "int"
+          }
+        },
+        {
+          "name": "compatible_non_coprime",
+          "residues": [
+            1,
+            3
+          ],
+          "moduli": [
+            4,
+            6
+          ],
+          "actual": {
+            "exception": "Exception",
+            "message": "モジュラー逆元が存在しません"
+          }
+        },
+        {
+          "name": "incompatible_non_coprime",
+          "residues": [
+            0,
+            1
+          ],
+          "moduli": [
+            4,
+            6
+          ],
+          "actual": {
+            "exception": "Exception",
+            "message": "モジュラー逆元が存在しません"
+          }
+        }
+      ]
+    }
+  },
+  "auxiliaryArithmetic": {
+    "sunzi": {
+      "leastNonnegative": 23,
+      "modulus": 105,
+      "anotherPositiveSolution": 128
+    },
+    "nonCoprimeExamples": {
+      "compatible": {
+        "residues": [
+          1,
+          3
+        ],
+        "moduli": [
+          4,
+          6
+        ],
+        "solutionsModuloLcm": [
+          9
+        ]
+      },
+      "incompatible": {
+        "residues": [
+          0,
+          1
+        ],
+        "moduli": [
+          4,
+          6
+        ],
+        "solutionsModuloLcm": []
+      }
+    },
+    "rsaCrtFixedValidKey": {
+      "p": 61,
+      "q": 53,
+      "d": 2753,
+      "dp": 53,
+      "dq": 49,
+      "qInverseModP": 38,
+      "all3233CiphertextRepresentativesExact": 3233
+    },
+    "uncheckedSingleResidueFaultTeachingExample": {
+      "ciphertext": 2790,
+      "faultyRepresentative": 2079,
+      "gcdOfReencryptedFaultMinusCiphertextAndN": 53,
+      "scope": "Deliberate toy fault,not exploitation or general fault-rate measurement."
+    },
+    "polynomialCounterexample": {
+      "field": "Q",
+      "f": "x^2+1",
+      "g": "x^2+1",
+      "noRootsInBaseField": true,
+      "gcd": "x^2+1",
+      "argument": "Squares of rational numbers are nonnegative,so f has no rational root. gcd(f,f)=f exactly. No CAS execution claimed."
+    }
+  },
+  "imageSha256": "25e7598ba409edb02c48f95736ec7d6e1f4627fa3d4f6525bb21496b43f85728",
+  "limitations": [
+    "Other11translationbodies unread.",
+    "Original advertised23sample succeeds;not claiming all oldcode inputs fail.",
+    "Finite auxiliaryRSA/noncoprime examples,not productioncrypto or performance/visual certification."
+  ],
+  "publicationPending": true
+}
