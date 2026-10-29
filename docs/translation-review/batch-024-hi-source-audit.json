@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:45:31.690906+09:00",
+  "path": "content/post/chinese-remainder-theorem/index.hi.md",
+  "sha256": "8e79f194beb45f6778a7c5e7291d0ade8613b24b20ac12206af339a3b1727385",
+  "fullOriginalBodyMetadataPythonAndDiagramRead": true,
+  "completeOriginalPythonExecuted": true,
+  "stdout": "सुनजी की समस्या का हल: 23\n",
+  "missingResidueReturned": 5,
+  "extraResidueReturned": 2,
+  "bengaliCodepoints": 7,
+  "findings": "Read complete original Hindi metadata/body/Python/Mermaid. RNS paragraph contains Bengali token কমপক্ষে; Euclidean word split by biography link; missing kernel predicate and ambiguous homomorphism/isomorphism terminology. Shared API/theorem/polynomial/RSA/RNS qualifications absent. Original complete program succeeds for23. Chinese historical quote removed in favor of scoped historical-research paraphrase,not asserted to be a script error.",
+  "reviewed": false
+}

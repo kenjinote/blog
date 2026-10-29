@@ -85,6 +85,9 @@ def main():
             assert crt([(x+y)%m for m in [3,5,7]],[3,5,7])==(x+y)%105
             assert crt([(x*y)%m for m in [3,5,7]],[3,5,7])==x*y%105
         versions.append({'language':lang,'sha256':check.digest(p),'canonical':url,'texExpressions':41,'allTeXPreserved':True,'pythonBlocksExact':1,'completeProgramOutputExact':True,'singleModulusSignedCases':len(singleton),'smallPairCases':len(small),'smallTripleCases':len(triples),'largeSignedCases':128,'generatorInputsExact':True,'invalidCrtCases':len(invalid),'extendedGcdAndInverseCases':inverse_cases,'invalidInverseCases':len(bad_inverse),'rsaCrtAllRepresentatives':3233,'rnsAddAndMultiplyCases':22050,'diagramEdges':6,'referencesMetadataLanguageMapsExact':True,'passed':True})
+        if lang=='hi':
+            versions[-1]['bengaliCodepoints']=len(re.findall('[\u0980-\u09ff]',text))
+            assert versions[-1]['bengaliCodepoints']==0
     # A finite polynomial evaluation bijection illustrates, not proves, interpolation.
     evaluations={tuple((a0+a1*x+a2*x*x)%7 for x in [0,1,3]):(a0,a1,a2) for a0,a1,a2 in itertools.product(range(7),repeat=3)};assert len(evaluations)==343
     output={'version':1,'checkedAt':datetime.now(timezone(timedelta(hours=9))).isoformat(),'pythonVersion':sys.version.split()[0],'scope':'Explicit selected versions only. Each complete article program executed and functions compared against independent enumeration/Python arithmetic. Auxiliary interpolation check once per invocation. No prose approval or ledger writes.','versions':versions,'auxiliaryInterpolationEvaluationBijection':343,'publicationPending':True,'limitations':['Finite inputs,not exhaustive proof or cryptographic audit.','Contract rejects noncoprime systems,unitmoduli andempty systems;does not implement generalizedCRT.','No timing/constant-time/production-key-validation or native-language certification.','Diagram source and HTML/TeX checked,no browser visual/runtime certification.']}
