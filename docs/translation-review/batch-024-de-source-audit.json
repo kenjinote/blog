@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:35:39.329106+09:00",
+  "path": "content/post/chinese-remainder-theorem/index.de.md",
+  "sha256": "b586f7e975ec08e56a2b6feaa753e6e4e35541169f00083e8174e2fcf01e61f9",
+  "fullOriginalBodyMetadataPythonAndDiagramRead": true,
+  "completeOriginalPythonExecuted": true,
+  "stdout": "Lösung des Problems von Sunzi: 23\n",
+  "missingResidueReturned": 5,
+  "extraResidueReturned": 2,
+  "findings": "Read all original German. Euklidischen split by biography link; missing predicate in ring-kernel sentence. Durchschnitt is a valid German mathematical term for intersection, not an erroneous arithmetic-average translation. Shared API/theorem/polynomial/RSA/RNS conditions need correction. Original complete program correctly prints23. Preserve original taxonomy and actualSep14publicationdate.",
+  "reviewed": false
+}

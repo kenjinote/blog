@@ -1,9 +1,7 @@
 ---
 title: "Chinesischer Restsatz - Vom antiken Rechnen zum großen Theorem, das die moderne RSA-Kryptographie unterstützt"
-date: "2026-09-24T19:44:38+09:00"
 description: "Eine detaillierte Erklärung des Chinesischen Restsatzes (CRT), der auf antiken chinesischen Rechenbüchern basiert, von seinen mathematischen Prinzipien bis hin zu seinen wichtigen Anwendungen in der modernen Public-Key-Kryptographie (RSA-Kryptographie)."
 slug: "chinese-remainder-theorem"
-date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "cryptography"]
 tags:
@@ -11,239 +9,176 @@ tags:
   - "CRT"
   - "RSA-Kryptographie"
   - "Zahlentheorie"
+date: "2026-09-14T13:11:25+09:00"
+lastmod: 2026-10-30
+math: true
+mermaid: true
 ---
 
-## Einführung
+Der chinesische Restsatz (CRT) fasst Reste zu verschiedenen Moduli zu einer Restklasse zusammen. Er verbindet ganzzahlige Probleme, RSA-Operationen mit dem privaten Schlüssel, Ringe und Polynome sowie parallele Restklassenarithmetik. Dabei müssen die Voraussetzungen an die Moduli, der Rekonstruktionsbereich und der Unterschied zwischen arithmetischer Korrektheit und kryptographischer Sicherheit klar sein.
 
-Der Chinesische Restsatz ([Chinese Remainder Theorem](https://kenji.blog/de/p/chinese-remainder-theorem/), kurz CRT) ist einer der wichtigsten und schönsten Sätze in der Zahlentheorie. Sein Ursprung lässt sich auf den antiken chinesischen mathematischen Text „Sunzi Suanjing“ zurückverfolgen, der vermutlich zwischen dem 3. und 5. Jahrhundert zusammengestellt wurde. Angefangen bei einem einfachen Rechenproblem aus der Antike, spielt dieser Satz nach Jahrtausenden heute eine unverzichtbare Rolle in der Public-Key-Kryptographie, wie der **[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie**, die unsere tägliche sichere Kommunikation im Internet gewährleistet.
+## 1. Sunzis Problem und die Lösungsmenge
 
-In diesem Artikel erklären wir den **Chinesischen Restsatz** im Detail, von seinem historischen Hintergrund über die strenge mathematische Definition und die konkreten Berechnungsschritte bis hin zu seinen Anwendungen in der modernen Kryptographie, ergänzt durch Illustrationen und konkrete Beispiele.
+Das mit dem Sunzi Suanjing verbundene Beispiel fragt nach einer Zahl, die bei Division durch 3 den Rest 2, durch 5 den Rest 3 und durch 7 den Rest 2 lässt. Eine [historische Untersuchung gibt das Problem und den Rechenweg wieder](https://sgmathsociety.org/smsmedley/Vol-30-1/The%20History%20of%20the%20Chinese%20Reminder%20Theorem%20%28Law%20Huang%20lng%29.pdf).
 
-## Historischer Hintergrund: Das Problem von Sunzi
+$$ x\equiv2\pmod3,\quad x\equiv3\pmod5,\quad x\equiv2\pmod7. $$
 
-Die Wurzeln des Chinesischen Restsatzes liegen in dem folgenden berühmten Problem, das in der 26. Frage des unteren Bandes des „Sunzi Suanjing“ festgehalten ist.
+Die kleinste nichtnegative Lösung ist 23. Es gibt jedoch nicht nur eine ganzzahlige Lösung: Alle Lösungen lauten $x=23+105t$ mit $t\in\mathbb Z$. Beispielsweise erfüllt auch 128 die Bedingungen.
 
-> „Es gibt Dinge, deren Anzahl unbekannt ist. Zählen wir sie zu dritt, bleiben zwei übrig; zählen wir sie zu fünft, bleiben drei übrig; zählen wir sie zu siebt, bleiben zwei übrig. Wie viele Dinge gibt es?“
+## 2. Ganzzahliger CRT: Voraussetzungen und Eindeutigkeit
 
-Wenn wir dies mit einem modernen mathematischen Kongruenzsystem ausdrücken, ergibt sich für eine unbekannte ganze Zahl $x$:
+Wir nehmen $k\ge1$ und Moduli $m_i>1$ an, die paarweise teilerfremd sind: $\gcd(m_i,m_j)=1$ für $i\ne j$. Die Moduli müssen selbst keine Primzahlen sein. Für beliebige ganzzahlige Reste $a_i$ besitzt das System
 
-$$
-\begin{cases}
-x \equiv 2 \pmod 3 \\
-x \equiv 3 \pmod 5 \\
-x \equiv 2 \pmod 7
-\end{cases}
-$$
+$$ x\equiv a_i\pmod{m_i}\quad(1\le i\le k) $$
 
-Die Lösung für dieses Problem ist $x = 23$. Das „Sunzi Suanjing“ bietet auch das konkrete Berechnungsverfahren zur Ableitung dieser Lösung, was als das erste Beispiel für eine konkrete Konstruktionsmethode des Chinesischen Restsatzes gilt.
+genau eine Lösung modulo $M=\prod_{i=1}^k m_i$. Somit gibt es genau einen Repräsentanten mit $0\le x<M$. Ein gemeinsamer ggT von 1 für alle Moduli zusammen genügt nicht: 6, 10 und 15 haben insgesamt den ggT 1, sind aber nicht paarweise teilerfremd. Der [Beweis des ganzzahligen CRT](https://kconrad.math.uconn.edu/blurbs/ugradnumthy/crt.pdf) erläutert diese Unterscheidung.
 
-## Mathematische Definition und Satz
+Die Differenz zweier beliebiger Lösungen ist durch jeden Modul teilbar. Wegen der paarweisen Teilerfremdheit ist sie auch durch das Produkt teilbar. Das beweist die Eindeutigkeit. Die folgende Konstruktion zeigt die Existenz.
 
-In der modernen Mathematik wird der **Chinesische Restsatz** wie folgt formuliert.
+## 3. Konstruktion mit Inversen und ein Rechenbeispiel
 
-### Aussage des Satzes
+Für jeden Modul bestimmt man mit dem erweiterten euklidischen Algorithmus ein multiplikativ inverses Element, das
 
-Angenommen, es gibt $k$ paarweise teilerfremde positive ganze Zahlen $m_1, m_2, \dots, m_k$. Das heißt, für alle $i \neq j$ gilt $\gcd(m_i, m_j) = 1$.
+$$ M_i=M/m_i,\quad M_i y_i\equiv1\pmod{m_i} $$
 
-Dann existiert für beliebige ganze Zahlen $a_1, a_2, \dots, a_k$ eine ganze Zahl $x$, die das folgende System von Kongruenzen erfüllt, und diese Lösung ist eindeutig modulo $M = m_1 m_2 \dots m_k$.
+erfüllt. Die Teilerfremdheit garantiert die Existenz dieses Elements. Reduziert man die folgende Summe auf den Bereich des Moduls, erhält man die Lösung:
 
-$$
-\begin{cases}
-x \equiv a_1 \pmod{m_1} \\
-x \equiv a_2 \pmod{m_2} \\
-\vdots \\
-x \equiv a_k \pmod{m_k}
-\end{cases}
-$$
+$$ x=\left(\sum_{i=1}^k a_iM_iy_i\right)\bmod M. $$
 
-Das bedeutet, dass es genau eine Lösung $x$ im Bereich $0 \leq x < M$ gibt, und alle Lösungen können in der Form $x \equiv x_0 \pmod M$ ausgedrückt werden.
+Modulo $m_j$ verschwinden die Terme mit $i\ne j$, und der verbleibende Term ist kongruent zu $a_j$. Damit ist die Existenz gezeigt.
 
-### Beweis und Konstruktionsmethode (Gaußscher Algorithmus)
+In Sunzis Beispiel gilt $M=105$. Die Teilprodukte sind 35, 21 und 15, die zugehörigen Inversen 2, 1 und 1.
 
-Das Brillante an diesem Satz ist, dass er nicht nur die Existenz einer Lösung garantiert, sondern auch einen Algorithmus liefert, um eine konkrete Lösung zu konstruieren. Die Konstruktionsmethode wird unten gezeigt.
+$$ 2\cdot35\cdot2+3\cdot21\cdot1+2\cdot15\cdot1=233,
+\qquad233\bmod105=23. $$
 
-1. Berechne das Gesamtprodukt $M = m_1 m_2 \dots m_k$.
-2. Berechne für jedes $i$ den Wert $M_i = \frac{M}{m_i}$. ($M_i$ ist das Produkt aller Moduli außer $m_i$)
-3. Da $\gcd(M_i, m_i) = 1$, existiert das modulare multiplikative Inverse $y_i$ von $M_i$ modulo $m_i$. Das bedeutet, finde ein $y_i$, das $M_i y_i \equiv 1 \pmod{m_i}$ erfüllt, beispielsweise mithilfe des Erweiterten [Euklid](https://kenji.blog/de/p/euclid/)ischen Algorithmus.
-4. Die endgültige Lösung $x$ ist durch die folgende Formel gegeben:
+Für nicht teilerfremde Moduli gibt es eine gesonderte Verallgemeinerung. Bei zwei Moduli existiert genau dann eine Lösung, wenn ihr ggT die Differenz der Reste teilt. Sie ist dann modulo dem kleinsten gemeinsamen Vielfachen eindeutig. Beispielsweise ergeben die Moduli 4 und 6 mit den Resten 1 und 3 die Lösung 9 modulo 12; mit den Resten 0 und 1 gibt es keine Lösung. Der folgende Code implementiert diese Verallgemeinerung nicht und akzeptiert nur paarweise teilerfremde Moduli.
 
-$$
-x = \sum_{i=1}^{k} a_i M_i y_i \pmod M
-$$
+## 4. Python-Implementierung mit Eingabeprüfung
 
-Dass dieses $x$ das ursprüngliche Kongruenzsystem erfüllt, kann leicht überprüft werden, indem man $x$ modulo jedes $m_j$ auswertet. Für $i \neq j$ ist $M_i$ ein Vielfaches von $m_j$, also gilt $M_i \equiv 0 \pmod{m_j}$. Daher bleibt in der Summe nur der Term mit $i = j$ übrig, was $x \equiv a_j M_j y_j \equiv a_j \cdot 1 \equiv a_j \pmod{m_j}$ ergibt und somit die Bedingung erfüllt.
-
-## Berechnung anhand eines konkreten Beispiels
-
-Lösen wir das „Problem von Sunzi“ von vorhin mit diesem Algorithmus.
-
-Problem:
-$x \equiv 2 \pmod 3$  (hierbei $a_1=2, m_1=3$)
-$x \equiv 3 \pmod 5$  (hierbei $a_2=3, m_2=5$)
-$x \equiv 2 \pmod 7$  (hierbei $a_3=2, m_3=7$)
-
-**Schritt 1:** Berechnung von $M$
-$M = 3 \times 5 \times 7 = 105$
-
-**Schritt 2:** Berechnung von $M_i$
-$M_1 = 105 / 3 = 35$
-$M_2 = 105 / 5 = 21$
-$M_3 = 105 / 7 = 15$
-
-**Schritt 3:** Berechnung der Inversen $y_i$
-- $35 y_1 \equiv 1 \pmod 3 \implies 2 y_1 \equiv 1 \pmod 3 \implies y_1 = 2$
-- $21 y_2 \equiv 1 \pmod 5 \implies 1 y_2 \equiv 1 \pmod 5 \implies y_2 = 1$
-- $15 y_3 \equiv 1 \pmod 7 \implies 1 y_3 \equiv 1 \pmod 7 \implies y_3 = 1$
-
-**Schritt 4:** Berechnung der Lösung $x$
-$x = (2 \times 35 \times 2) + (3 \times 21 \times 1) + (2 \times 15 \times 1)$
-$x = 140 + 63 + 30 = 233$
-
-Finde den Rest, wenn dies durch $M = 105$ geteilt wird.
-$233 \equiv 23 \pmod{105}$
-
-Daher ist die kleinste positive Lösung **23**, was perfekt mit Sunzis Lösung übereinstimmt.
-
-## Anwendungen in der Moderne: [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie und CRT
-
-Der **Chinesische Restsatz**, einst ein antikes Rätsel, hat in unserer modernen digitalen Gesellschaft äußerst praktische Anwendungen. Ein Paradebeispiel ist die Beschleunigung der Entschlüsselung und Signaturerstellung in der **RSA-Kryptographie**.
-
-### Übersicht über die RSA-Kryptographie
-
-In der RSA-Kryptographie werden zwei große Primzahlen $p$ und $q$ verwendet, und ihr Produkt $N = pq$ bildet einen Teil des öffentlichen Schlüssels. Die Berechnung zur Entschlüsselung des Klartextes $M$ aus dem Geheimtext $C$ wird mithilfe des privaten Schlüssels $d$ wie folgt durchgeführt:
-
-$$
-M = C^d \pmod N
-$$
-
-Hierbei ist $N$ eine extrem große Zahl (z. B. 2048 Bit) und $d$ ist von ähnlicher Größe, weshalb diese modulare Potenzierung erhebliche Rechenkosten verursacht.
-
-### Beschleunigung durch CRT (RSA-CRT)
-
-Hier kommt der **Chinesische Restsatz** ins Spiel. Anstatt eine riesige Berechnung modulo $N$ durchzuführen, teilt dieser Ansatz sie in zwei kleinere Berechnungen modulo $p$ und modulo $q$ (den Primfaktoren von $N$) auf und rekonstruiert schließlich die ursprüngliche Lösung mit dem CRT.
-
-Konkret werden die folgenden Schritte ausgeführt:
-
-```mermaid
-graph TD
-    A["Geheimtext C"] --> B["Berechne C_p = C mod p"]
-    A --> C["Berechne C_q = C mod q"]
-    B --> D["Berechne M_p = (C_p)^(d mod (p-1)) mod p"]
-    C --> E["Berechne M_q = (C_q)^(d mod (q-1)) mod q"]
-    D --> F["Stelle M mod N aus M_p und M_q mit CRT wieder her"]
-    E --> F
-    F --> G["Klartext M"]
-```
-
-1. Berechne anstelle von $d$ vorab $d_p = d \pmod{p-1}$ und $d_q = d \pmod{q-1}$ als private Schlüssel.
-2. Führe die Entschlüsselung einzeln modulo $p$ und modulo $q$ durch.
-   $M_p = C^{d_p} \pmod p$
-   $M_q = C^{d_q} \pmod q$
-3. Wende den CRT auf $M_p$ und $M_q$ an, um $M \pmod N$ zu erhalten.
-
-Wenn sich die Bitlänge des Moduls halbiert (z. B. 1024 Bit), betragen die Kosten für die Potenzierung nur noch etwa 1/8. Selbst wenn man dies zweimal durchführt, betragen die Gesamtkosten etwa 1/4. Daher kann die Verwendung von [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-CRT die Entschlüsselung und Signaturerstellung um das **etwa 4-fache beschleunigen**. Bei Geräten mit begrenzten Rechenressourcen wie Smartphones und Chipkarten ist diese Beschleunigung extrem wichtig.
-
-## Programmierimplementierung des Chinesischen Restsatzes
-
-Neben der Theorie wollen wir auch tatsächlich ein Programm schreiben, um den **Chinesischen Restsatz** zu implementieren. Hier implementieren wir den Gaußschen Algorithmus mit Python.
+Zulässig sind nur Werte des eingebauten Typs `int`; `bool` und Gleitkommazahlen werden abgewiesen. Die Eingaben müssen endliche, nicht leere Iterables gleicher Länge sein. Jeder Modul muss größer als 1 sein, und die Moduli müssen paarweise teilerfremd sein. Reste dürfen negativ sein oder ihren Modul überschreiten. Zurückgegeben wird der kleinste nichtnegative Repräsentant modulo dem Produkt. Der Ausschluss von Modul 1 und dem leeren System gehört zum Vertrag dieser Lehr-API.
 
 ```python
-def extended_gcd(a, b):
-    """
-    Erweiterter Euklidischer Algorithmus
-    Gibt (gcd(a, b), x, y) zurück, sodass a*x + b*y = gcd(a, b) gilt
-    """
-    if a == 0:
-        return b, 0, 1
-    else:
-        g, y, x = extended_gcd(b % a, a)
-        return g, x - (b // a) * y, y
+from math import gcd, prod
 
-def mod_inverse(a, m):
-    """
-    Gibt das modulare multiplikative Inverse von a modulo m zurück
-    """
-    g, x, y = extended_gcd(a, m)
+
+def _extended_gcd(a, b):
+    # Internal helper: integer a, positive integer b.
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r:
+        quotient = old_r // r
+        old_r, r = r, old_r - quotient * r
+        old_s, s = s, old_s - quotient * s
+        old_t, t = t, old_t - quotient * t
+    return old_r, old_s, old_t
+
+
+def mod_inverse(a, modulus):
+    if type(a) is not int or type(modulus) is not int:
+        raise TypeError("Arguments must be built-in integers")
+    if modulus <= 1:
+        raise ValueError("Modulus must exceed one")
+    g, x, _ = _extended_gcd(a % modulus, modulus)
     if g != 1:
-        raise Exception('Modulares Inverses existiert nicht')
-    else:
-        return x % m
+        raise ValueError("Inverse does not exist")
+    return x % modulus
 
-def chinese_remainder_theorem(a_list, m_list):
-    """
-    Chinesischer Restsatz (CRT)
-    Gibt x zurück, das x ≡ a_i (mod m_i) erfüllt
-    """
-    total_m = 1
-    for m in m_list:
-        total_m *= m
-        
-    x = 0
-    for a, m in zip(a_list, m_list):
-        M_i = total_m // m
-        y_i = mod_inverse(M_i, m)
-        x += a * M_i * y_i
-        
-    return x % total_m
 
-# Lösen des Problems von Sunzi
-a = [2, 3, 2]
-m = [3, 5, 7]
-result = chinese_remainder_theorem(a, m)
-print(f"Lösung des Problems von Sunzi: {result}") # Ausgabe: 23
+def chinese_remainder_theorem(residues, moduli):
+    residues, moduli = tuple(residues), tuple(moduli)
+    if not moduli or len(residues) != len(moduli):
+        raise ValueError("Provide equally sized, nonempty inputs")
+    if any(type(x) is not int for x in residues + moduli):
+        raise TypeError("Residues and moduli must be built-in integers")
+    if any(m <= 1 for m in moduli):
+        raise ValueError("Every modulus must exceed one")
+    for i, m in enumerate(moduli):
+        if any(gcd(m, other) != 1 for other in moduli[:i]):
+            raise ValueError("Moduli must be pairwise coprime")
+
+    combined_modulus = prod(moduli)
+    result = 0
+    for a, m in zip(residues, moduli):
+        partial = combined_modulus // m
+        inverse = mod_inverse(partial, m)
+        result = (result + (a % m) * partial * inverse) % combined_modulus
+    return result
+
+
+if __name__ == "__main__":
+    residues = [2, 3, 2]
+    moduli = [3, 5, 7]
+    print("Sunzi solution:", chinese_remainder_theorem(residues, moduli))
+    print("Combined modulus:", prod(moduli))
 ```
 
-Auf diese Weise lässt sich der **Chinesische Restsatz** mit nur wenigen Dutzend Codezeilen auf einem Computer nachbilden. Diese Implementierung ist ein grundlegender Algorithmus, der beim kompetitiven Programmieren und in ähnlichen Bereichen häufig verwendet wird.
+Unter Python 3.12 gibt das Programm `Sunzi solution: 23` und `Combined modulus: 105` aus. Unterschiedlich lange Eingaben werden nicht stillschweigend abgeschnitten; Moduli mit Wert 0 oder negativem Wert, Typen und Teilerfremdheit werden geprüft. Python-Ganzzahlen vermeiden Überläufe fester Bitbreite, benötigen aber Zeit und Speicher entsprechend der Eingabelänge und der Größe der Zahlen. Dies ist keine kryptographische Implementierung mit konstanter Laufzeit.
 
-## Verallgemeinerung in der abstrakten Algebra: Ringe und Ideale
+## 5. Was RSA-CRT rekonstruiert
 
-Der **Chinesische Restsatz** ist nicht nur auf die Eigenschaften ganzer Zahlen beschränkt, sondern lässt sich in der **abstrakten Algebra**, einem wichtigen Teilgebiet der modernen Mathematik, auf eine allgemeinere Form erweitern.
+Wir setzen einen gültigen RSA-Schlüssel mit zwei Primfaktoren voraus. Verwendet werden verschiedene ungerade Primzahlen $p,q$, $N=pq$, ein öffentlicher Exponent $e$ und ein privater Exponent $d$ mit $ed\equiv1\pmod{\lambda(N)}$, wobei $\lambda(N)=\operatorname{lcm}(p-1,q-1)$. Der ganzzahlige Repräsentant des Chiffrats erfüllt $0\le C<N$; die direkte Operation mit dem privaten Schlüssel lautet $m=C^d\bmod N$.
 
-Betrachte einen kommutativen Ring $R$ und seine Ideale $I_1, I_2, \dots, I_k$. Wenn diese Ideale paarweise teilerfremd sind (das heißt, es gilt $I_i + I_j = R$ für alle $i \neq j$), können wir einen natürlichen Ringhomomorphismus $\phi$ wie folgt definieren:
+Die CRT-Parameter werden vorbereitet:
 
-$$
-\phi: R \to (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
-$$
-\phi(x) = (x \pmod{I_1}, x \pmod{I_2}, \dots, x \pmod{I_k})
-$$
+$$ d_p=d\bmod(p-1),\quad d_q=d\bmod(q-1),\quad q_{\mathrm{inv}}=q^{-1}\bmod p. $$
 
-Der **Chinesische Restsatz** in der abstrakten Algebra besagt, dass dieser Homomorphismus $\phi$ surjektiv ist und sein Kern der Durchschnitt der Ideale $\bigcap_{i=1}^k I_i$ (was mit dem Produkt der Ideale $\prod_{i=1}^k I_i$ übereinstimmt).
+$$ m_p=C^{d_p}\bmod p,\quad m_q=C^{d_q}\bmod q. $$
 
-Nach dem ersten Isomorphiesatz gilt daher der folgende natürliche Isomorphismus:
+$$ h=(m_p-m_q)q_{\mathrm{inv}}\bmod p,\qquad m=m_q+qh. $$
 
-$$
-R / \left( \bigcap_{i=1}^k I_i \right) \cong (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
+Dieser Repräsentant hat für beide Primzahlen die benötigten Reste und liegt im Bereich des ursprünglichen Moduls. Die [Abschnitte 3.2 und 5.1.2 von RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html) legen diese Darstellung des privaten Schlüssels und die Rekonstruktion fest. Die beiden CRT-Exponenten allein ersetzen nicht den gesamten privaten Schlüssel: Auch Faktoren und Koeffizient sind geheimes Schlüsselmaterial.
 
-### Anwendung auf Polynomringe
+```mermaid
+flowchart TD
+    A["Chiffratrepräsentant C im Bereich und gültiger privater Schlüssel"] --> B["m_p = C^d_p mod p"]
+    A --> C["m_q = C^d_q mod q"]
+    B --> D["h = (m_p - m_q) q_inv mod p"]
+    C --> D
+    D --> E["m = m_q + q h rekonstruieren"]
+    E --> F["Verfahren in einer geprüften Bibliothek fortsetzen"]
+```
 
-Eine der wichtigsten Anwendungen dieses verallgemeinerten Satzes ist der **Chinesische Restsatz** im univariaten Polynomring $F[x]$ über einem Körper $F$.
+Das Diagramm zeigt nur ganzzahlige Arithmetik und lässt Nachrichtenkodierung und Verfahrensvalidierung aus. Praktische Verschlüsselung und Signaturen verwenden unterschiedliche Verfahren. Wie in der [RSA-Einführung](https://kenji.blog/de/p/rsa-encryption-math-explained-for-beginners/) erläutert, sollte eine geprüfte Bibliothek die zum Zweck passende Verarbeitung übernehmen.
 
-„Teilerfremde ganze Zahlen“ im Fall der ganzen Zahlen entsprechen im Polynomring „Polynomen ohne gemeinsame Nullstellen (deren größter gemeinsamer Teiler eine Konstante ist)“. Diese Polynomversion des CRT liefert die theoretische Untermauerung der [Lagrange](https://kenji.blog/de/p/lagrange/)-Interpolation, was genau dem Algorithmus entspricht, um ein Polynom minimalen Grades eindeutig zu bestimmen, das durch eine gegebene Menge von Punkten verläuft. Darüber hinaus bildet dies die mathematische Grundlage für **Reed-Solomon-Codes**, eine Art von Fehlerkorrekturcodes.
+## 6. Geschwindigkeitsschätzungen und Grenzen der Implementierung
 
-## Massiv paralleles Rechnen mithilfe des Restklassensystems (RNS)
+Anmerkung 14.75 in [HAC, Kapitel 14](https://cacr.uwaterloo.ca/hac/about/chap14.pdf) schätzt einen Faktor von ungefähr vier unter bestimmten Annahmen: ähnlich große Primzahlen, klassische Multiplikation mit quadratischen Kosten, eine zur Bitlänge des Exponenten proportionale Zahl von Multiplikationen und vernachlässigbare Rekonstruktionskosten. Andere Multiplikationsalgorithmen, parallele Ausführung, Schutzmaßnahmen und Geräte verändern dieses Verhältnis. Eine gemessene vierfache Beschleunigung des Codes in diesem Artikel ist damit nicht gemeint.
 
-Als technische Anwendung des **Chinesischen Restsatzes** sollte auch das **Restklassensystem (Residue Number System, RNS)** erwähnt werden.
+Wird einer der getrennt berechneten CRT-Reste verfälscht, kann ein ungeprüftes Ergebnis einen geheimen Faktor offenlegen. Die [Arbeit über Fehlerangriffe auf RSA-CRT](https://courses.csail.mit.edu/6.857/2010/handouts/faults.pdf) erläutert die Bedingungen. Korrekte Lehrbucharithmetik garantiert weder Schutz vor solchen Fehlern noch Seitenkanalresistenz. Schutzmaßnahmen, darunter Prüfungen mit dem öffentlichen Schlüssel, gehören in eine Bibliothek, die das vollständige Verfahren behandelt.
 
-Normalerweise stellen Computer Zahlen im Binärsystem dar und führen Berechnungen damit durch. Bei Additionen oder Multiplikationen tritt jedoch das Problem des Übertrags (Carry) auf, was mit zunehmender Bitbreite die Schaltungsverzögerung erhöht.
+## 7. Verallgemeinerung auf Ringe und Ideale
 
-Im RNS wird eine Menge paarweise teilerfremder Moduli $\{m_1, m_2, \dots, m_k\}$ vorbereitet, und eine große ganze Zahl $X$ wird als Tupel von Resten $(x_1, x_2, \dots, x_k)$ bei der Division durch die einzelnen Moduli dargestellt.
+Für einen kommutativen Ring mit Eins $R$ und endlich viele Ideale nehmen wir paarweise $I_i+I_j=R$ an. Die Ideale sind also paarweise komaximal. Der natürliche Homomorphismus
 
-Der größte Vorteil dieser Darstellung ist, dass bei Addition und Multiplikation **kein Übertrag stattfindet**.
-Wenn man beispielsweise $X$ und $Y$ addiert, kann die Berechnung für jeden Modul unabhängig durchgeführt werden:
+$$ \phi:R\longrightarrow\prod_{i=1}^k R/I_i,\qquad
+\phi(r)=(r+I_1,\ldots,r+I_k) $$
 
-$$
-X + Y \leftrightarrow ( (x_1+y_1)\pmod{m_1}, \dots, (x_k+y_k)\pmod{m_k} )
-$$
-$$
-X \times Y \leftrightarrow ( (x_1y_1)\pmod{m_1}, \dots, (x_k y_k)\pmod{m_k} )
-$$
+ist surjektiv, und sein Kern ist der Schnitt der Ideale. Unter dieser Voraussetzung stimmt der Schnitt mit ihrem Produkt überein. Daher gilt:
 
-Da die Berechnungen in jedem Modul völlig unabhängig voneinander sind, ermöglicht der Aufbau paralleler Schaltungen extrem schnelle Operationen. Wenn das Endergebnis wieder in eine normale Zahl umgewandelt wird, kommt genau der **Chinesische Restsatz** zum Einsatz. Diese Technologie wird immer noch erforscht und in der Praxis für die digitale Signalverarbeitung (DSP), wo Echtzeitfähigkeit gefragt ist, sowie beim Entwurf bestimmter kryptographischer Verarbeitungsschaltungen eingesetzt.
+$$ R/\left(\bigcap_{i=1}^k I_i\right)
+\cong\prod_{i=1}^k R/I_i,\qquad
+\bigcap_{i=1}^k I_i=\prod_{i=1}^k I_i. $$
 
-## Fazit
+Der [chinesische Restsatz im Stacks Project](https://stacks.math.columbia.edu/tag/00DT) nennt die Voraussetzungen und den Beweis. Paarweise teilerfremde ganzzahlige Moduli sind ein Spezialfall dieser Idealbedingung.
 
-Der **Chinesische Restsatz** begann als einfaches mathematisches Rätsel, wurde zum Strukturtheorem von Idealen in der abstrakten Algebra erhoben und hat sich zu einer Basistechnologie für die moderne Kryptographie und Informatik entwickelt.
+## 8. Polynome und Interpolation
 
-Die Tatsache, dass die Weisheit der antiken chinesischen Mathematiker über Jahrtausende hinweg als kryptographische Verarbeitung in unseren Smartphones weiterlebt, ist ein Beweis für die Universalität und die Kraft der Mathematik als Disziplin.
+Zwei Polynome über einem Körper sind genau dann teilerfremd, wenn ihr ggT eine von null verschiedene Konstante ist. Keine gemeinsamen Nullstellen im Ausgangskörper zu haben genügt nicht. Beispielsweise seien über den rationalen Zahlen beide Polynome gleich $x^2+1$. Keines hat eine rationale Nullstelle, aber ihr ggT ist genau dieses quadratische Polynom. Für eine Charakterisierung durch gemeinsame Nullstellen muss man in einem algebraischen Abschluss arbeiten.
+
+Die linearen Faktoren zu verschiedenen Auswertungsstellen $\alpha_1,\ldots,\alpha_k$ sind paarweise teilerfremd. Daher gibt es unter den Polynomen vom Grad $<k$ genau eines mit den vorgegebenen Werten. Das ist der Zusammenhang mit der Lagrange-Interpolation. Werden höhere Grade zugelassen, entfällt die Eindeutigkeit. Auswertungen und Gradschranken über endlichen Körpern hängen auch mit Reed–Solomon-Codes zusammen; der CRT allein garantiert aber keine Fehlerkorrekturfähigkeit.
+
+## 9. Restklassensysteme und Rekonstruktionsbereiche
+
+Ein RNS stellt ganze Zahlen durch ein Tupel von Resten zu mehreren Moduli dar und ermöglicht komponentenweise Addition und Multiplikation. Hier seien $x_i=X\bmod m_i$ und $y_i=Y\bmod m_i$. Für das Produkt $M$ der Moduli gilt:
+
+$$ (X+Y)\bmod M\longleftrightarrow
+((x_i+y_i)\bmod m_i)_{i=1}^k, $$
+
+$$ (XY)\bmod M\longleftrightarrow
+((x_iy_i)\bmod m_i)_{i=1}^k. $$
+
+Überträge zwischen den Kanälen sind nicht nötig; binäre Arithmetik innerhalb eines Kanals kann jedoch weiterhin Überträge enthalten. Die Rekonstruktion liefert einen Repräsentanten modulo dem Produkt. Eine unbeschränkte ganzzahlige Summe oder ein Produkt außerhalb dieses Bereichs lässt sich aus diesen Resten nicht eindeutig zurückgewinnen. Vergleiche, Divisionen und die Umwandlung in die gewöhnliche Darstellung erfordern zusätzliche Arbeit.
+
+Von einem klassischen Restproblem bis zur Kryptographie, Algebra und parallelen Arithmetik rekonstruiert der CRT miteinander verträgliche Reste unter klaren Voraussetzungen an Moduli und Bereiche. Diese Bereiche und Verwendungszwecke müssen auseinandergehalten werden, um den Satz korrekt anzuwenden.
