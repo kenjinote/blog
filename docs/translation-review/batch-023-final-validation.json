@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T23:38:01.877425+09:00",
+  "scope": "Selected versions only;HTML and mathematical source checks. Auxiliary Python arithmetic is executed once and shared,not misrepresented as executable article code or prose approval.",
+  "versions": [
+    {
+      "language": "ja",
+      "sha256": "05b557bc6703982b0176505857405e7ab09f7cc82988041dd1d8adbc6ada498c",
+      "canonical": "https://kenji.blog/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "sha256": "50b897d0b9c2f96c51d94ceefe51164c147242f7aaf359fe0f351ee30f046d8f",
+      "canonical": "https://kenji.blog/en/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "sha256": "1f4b0625bf932b91e9d93dbff64201a30a79650f2380619cd79d4e2bf9ca74f0",
+      "canonical": "https://kenji.blog/zh-cn/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "sha256": "8a58fe0496680acf342b6f8dd51cc2c2925f989a527f6e629b4373887040f076",
+      "canonical": "https://kenji.blog/zh-tw/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "es",
+      "sha256": "368467a35543c2fbd065f16b2a49500b4e6f4f1f370df4ef786b6c76f96493a6",
+      "canonical": "https://kenji.blog/es/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "sha256": "32c6ff51953e2f6f24441a4b42db20f7e5337bc5523cdd7e1bcd87a308582b81",
+      "canonical": "https://kenji.blog/ko/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "sha256": "ff7adb6dfdcb28f2aee02a62638c336017c3af365e927ea3e160cf1b541c35a7",
+      "canonical": "https://kenji.blog/pt/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "sha256": "32d8ecc1b1a00579b4691bdf53bc6c69d2f9b8fe5a75a80015a2eec5504887a0",
+      "canonical": "https://kenji.blog/fr/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "de",
+      "sha256": "6733d4bff18fe7d913f3364037cae988add5198a233006f9ed956a1be588f5ba",
+      "canonical": "https://kenji.blog/de/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "id",
+      "sha256": "0762d0095ec6c77d179596d730eaf901ee1d1f4270e638e76e8318af01a1c22b",
+      "canonical": "https://kenji.blog/id/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "sha256": "9f8963c769374ab573014a160c4b82b1b13cf9ac581fd2f4deb875d65949dd04",
+      "canonical": "https://kenji.blog/hi/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "sha256": "a9ed59f60b0f11c50c0f8d0b6513a00ee3113e97239c209c5c448cc88f403732",
+      "canonical": "https://kenji.blog/ru/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "sha256": "bda66ee02dab8a61aef186e43315e3c3b0108bcfda773f2f77eb5c87969472cc",
+      "canonical": "https://kenji.blog/ar/p/fermats-little-theorem/",
+      "texExpressions": 58,
+      "allTeXPreserved": true,
+      "diagramsExact": 2,
+      "diagramEdges": [
+        5,
+        5
+      ],
+      "executableArticleCodeBlocks": 0,
+      "all14HreflangAnd13SidebarTargetsExact": true,
+      "referencesAndMetadataExact": true,
+      "passed": true
+    }
+  ],
+  "auxiliaryArithmetic": {
+    "fermatAllIntegerFormCases": 5025,
+    "nonzeroResiduePermutationCases": 4658,
+    "carmichaelCoprimeBases": 320,
+    "rsaCases": [
+      {
+        "p": 3,
+        "q": 5,
+        "n": 15,
+        "e": 3,
+        "d": 3,
+        "allRepresentativesRoundTrip": 15
+      },
+      {
+        "p": 5,
+        "q": 7,
+        "n": 35,
+        "e": 5,
+        "d": 5,
+        "allRepresentativesRoundTrip": 35
+      },
+      {
+        "p": 11,
+        "q": 13,
+        "n": 143,
+        "e": 7,
+        "d": 103,
+        "allRepresentativesRoundTrip": 143
+      },
+      {
+        "p": 61,
+        "q": 53,
+        "n": 3233,
+        "e": 7,
+        "d": 1783,
+        "allRepresentativesRoundTrip": 3233
+      }
+    ],
+    "rsaRepresentativesTotal": 3426
+  },
+  "publicationPending": true,
+  "limitations": [
+    "AI,not human/native-language certification.",
+    "Finite auxiliary arithmetic,not exhaustive proof or a cryptographic audit.",
+    "Mermaid sources/HTML and TeX checked,no browser visual/KaTeX/Mermaid runtime certification."
+  ]
+}

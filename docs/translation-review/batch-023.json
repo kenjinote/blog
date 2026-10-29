@@ -573,5 +573,83 @@
       "validation": "docs/translation-review/batch-023-ar-validation.json",
       "publicationPending": true
     }
-  ]
+  ],
+  "finalAssembly": {
+    "date": "2026-10-29",
+    "validation": "docs/translation-review/batch-023-final-validation.json",
+    "versions": 13,
+    "languages": [
+      "ja",
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "es",
+      "ko",
+      "pt",
+      "fr",
+      "de",
+      "id",
+      "hi",
+      "ru",
+      "ar"
+    ],
+    "texExpressionsExact": 754,
+    "diagramsExact": 26,
+    "diagramEdgesExact": 130,
+    "executableArticleCodeBlocks": 0,
+    "sharedAuxiliaryArithmeticThisInvocation": {
+      "fermatAllIntegerFormCases": 5025,
+      "nonzeroResiduePermutationCases": 4658,
+      "carmichaelCoprimeBases": 320,
+      "rsaCases": [
+        {
+          "p": 3,
+          "q": 5,
+          "n": 15,
+          "e": 3,
+          "d": 3,
+          "allRepresentativesRoundTrip": 15
+        },
+        {
+          "p": 5,
+          "q": 7,
+          "n": 35,
+          "e": 5,
+          "d": 5,
+          "allRepresentativesRoundTrip": 35
+        },
+        {
+          "p": 11,
+          "q": 13,
+          "n": 143,
+          "e": 7,
+          "d": 103,
+          "allRepresentativesRoundTrip": 143
+        },
+        {
+          "p": 61,
+          "q": 53,
+          "n": 3233,
+          "e": 7,
+          "d": 1783,
+          "allRepresentativesRoundTrip": 3233
+        }
+      ],
+      "rsaRepresentativesTotal": 3426
+    },
+    "all14HreflangAnd13SidebarTargetsExact": true,
+    "multilingualPages": 1387,
+    "httpsHtmlPages": 2540,
+    "httpsXmlFiles": 41,
+    "existingTestsPassed": 17,
+    "reviewedTranslationsTotal": 288,
+    "unreviewedTranslations": 12744,
+    "humanReviews": 0,
+    "publicationPending": true,
+    "limitations": [
+      "AI,not human/native-language certification.",
+      "Finite auxiliary arithmetic,not exhaustive proof or a cryptographic audit.",
+      "Mermaid sources/HTML and TeX checked,no browser visual/KaTeX/Mermaid runtime certification."
+    ]
+  }
 }
