@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T23:59:34.043768+09:00",
+  "scope": "Chinese original metadata, all bodies, complete Python blocks and Mermaid sources read independently before revision. Old programs executed separately; this audit itself is not review approval.",
+  "versions": {
+    "zh-cn": {
+      "path": "content/post/chinese-remainder-theorem/index.zh-cn.md",
+      "sha256": "b228eb191a7075bffeca12748cdcaae5c263db89b703aab0d3eb1b350188913e",
+      "fullOriginalBodyAndMetadataRead": true,
+      "originalPythonExecuted": true,
+      "stdout": "孙子问题的解: 23\n",
+      "missingResidueReturned": 5,
+      "extraResidueReturned": 2,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/chinese-remainder-theorem/index.zh-tw.md",
+      "sha256": "cdb1cf0b19490e35ad3a5d610dd1b94902153703ee7f3d0242d2191ced09d282",
+      "fullOriginalBodyAndMetadataRead": true,
+      "originalPythonExecuted": true,
+      "stdout": "孫子問題的解: 23\n",
+      "missingResidueReturned": 5,
+      "extraResidueReturned": 2,
+      "reviewed": false
+    }
+  }
+}

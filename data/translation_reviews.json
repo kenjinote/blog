@@ -2895,6 +2895,26 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-024.json",
       "evidenceHash": "604f3e323e35d17ba2829e45f5a2213b08a4764f3d2b1e23f3ae2c256a1ce213"
+    },
+    "post/chinese-remainder-theorem/index.zh-cn.md": {
+      "source": "post/chinese-remainder-theorem/index.md",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "translationHash": "f86e3d509dd1f5af2ec568df0be5a0fdf9415bed267d126e97c90da0c764f9c9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-024.json",
+      "evidenceHash": "372fdc79e82b6224963ec2682b8c5472d27c84092e90d1c11c3de4fedce0dfc9"
+    },
+    "post/chinese-remainder-theorem/index.zh-tw.md": {
+      "source": "post/chinese-remainder-theorem/index.md",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "translationHash": "cf34738087e2344674f098e208c991ad5fc5264c51da8170c15f0e0970bd8c5a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-024.json",
+      "evidenceHash": "a43f108791122bff60a54f7a1c5e531f6e76f257ad7a43aa082de521b04ed82f"
     }
   }
 }

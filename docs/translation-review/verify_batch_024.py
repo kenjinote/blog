@@ -46,9 +46,12 @@ def main():
         refs=set(re.findall(r'\]\((https://[^)]+)\)',text));assert refs==external|{internal} and all(u in html for u in refs)
         assert (a.site/internal.removeprefix('https://kenji.blog/')/'index.html').is_file()
         assert len(re.findall(r'^## [1-9]\. ',text,re.M))==9
-        assert text.count('\ndate: ')==1 and 'date: "2026-09-14T13:11:25+09:00"' in text and 'lastmod: 2026-10-29' in text
+        assert text.count('\ndate: ')==1 and 'date: "2026-09-14T13:11:25+09:00"' in text
+        lastmod=re.search(r'^lastmod: (\d{4}-\d{2}-\d{2})$',text,re.M)[1]
+        datetime.strptime(lastmod,'%Y-%m-%d')
+        assert '2026-10-29' <= lastmod <= datetime.now(timezone(timedelta(hours=9))).date().isoformat()
         assert 'image: "eyecatch.jpg"' in text and 'slug: "chinese-remainder-theorem"' in text and 'math: true' in text and 'mermaid: true' in text
-        assert '"datePublished":"2026-09-14T13:11:25+09:00"' in html and '"dateModified":"2026-10-29' in html and 'katex' in html
+        assert '"datePublished":"2026-09-14T13:11:25+09:00"' in html and ('"dateModified":"'+lastmod) in html and 'katex' in html
         assert hashlib.sha256((FOLDER/'eyecatch.jpg').read_bytes()).hexdigest()==audit['imageSha256']
         ns={'__name__':'__main__'};capture=io.StringIO()
         with contextlib.redirect_stdout(capture):exec(compile(code[0],str(p),'exec'),ns)

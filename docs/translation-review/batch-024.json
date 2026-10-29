@@ -40,6 +40,86 @@
         "Source/decoded HTML checked; no browser visual/KaTeX/Mermaid runtime certification.",
         "Publication and live checks pending."
       ]
+    },
+    "post/chinese-remainder-theorem/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/chinese-remainder-theorem/index.md",
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "translationHash": "f86e3d509dd1f5af2ec568df0be5a0fdf9415bed267d126e97c90da0c764f9c9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read selected original and revised metadata, complete body, complete Python block and Mermaid source independently; compared every topic against current Japanese and reread final local wording changes. Preserved Sunzi, integer CRT existence/uniqueness, inverse construction, validated Python, RSA-CRT, performance/security, rings, polynomials/interpolation and RNS. Kept assumptions, reconstruction ranges, API exclusions and arithmetic/security distinctions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "简体字原文与改订版的全部正文、元数据、完整Python与Mermaid均已阅读。逐项核对互素／素数、余数／模数／代表元、最大公约数、逆元、含幺交换环与互素理想、域与代数闭包、私钥指数与密钥材料、常数时间、侧信道、剩余数通道与进位。补齐唯一性的模数范围、多项式的次数上界和RNS的范围；四倍加速改为有前提的估计，消息编码与整数运算分开。移除重复自链接、传记或宽泛密码学目标的链接，改为匹配中文的已校阅RSA文章。图中的审计用语也与正文统一。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared proof and assumptions, pairwise versus total gcd, noncoprime compatibility versus API rejection, valid RSA key and reconstruction, comaximal ideals, algebraic-closure counterexample, interpolation degree bound and modular RNS arithmetic. Selected translation and current Japanese each41TeX exact in source and decoded HTML. Selected language separately passed1647small-pair cases,1365triple cases,128large signed cases,9999gcd/inverse cases,3233RSA representatives and22050RNS operations. Auxiliary GF(7) interpolation bijection343 once per invocation shared across selected languages. Finite checks are supplementary, not a universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed this complete article Python program separately underPython3.12.14 with exact two-line output23/105. Identical article code in generatedHTML; valid finite generator,18CRT rejection cases and5inverse rejection cases passed. Checked one localized Mermaid diagram with6edges against original topology and exact generatedHTML. Original Chinese programs executed separately before replacement, including actual missing/extra-input truncation, in Chinese source-audit. Auxiliary RSA/RNS/interpolation checks are distinguished from article execution. No browser runtime, timing or cryptographic certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Six exact external primary references and matching-language reviewedRSA internal target verified in generatedHTML; internal target exists. Primary-source reading scope is documented in batch024source-notes, not a claim to read entire books/PDFs. Preserved effectiveSep14publicationdate,slug,heroimagehash,tags/categories;removedduplicateSep24date;math/Mermaid enabled and lastmodOct30. All14hreflang/13sidebar URLs exact.25bundlepreview multilingual1439pages andHTTPS2632HTML/41XML pass. Existing17tests passed at preceding JA/EN stage, not rerun or counted perlanguage. Publication pending."
+        }
+      },
+      "summary": "Complete zh-cn review against corrected Japanese CRT, with input-contract Python, theorem assumptions, RSA limitations and bounded RNS representation.",
+      "languageSpecificFindings": "简体字原文与改订版的全部正文、元数据、完整Python与Mermaid均已阅读。逐项核对互素／素数、余数／模数／代表元、最大公约数、逆元、含幺交换环与互素理想、域与代数闭包、私钥指数与密钥材料、常数时间、侧信道、剩余数通道与进位。补齐唯一性的模数范围、多项式的次数上界和RNS的范围；四倍加速改为有前提的估计，消息编码与整数运算分开。移除重复自链接、传记或宽泛密码学目标的链接，改为匹配中文的已校阅RSA文章。图中的审计用语也与正文统一。",
+      "validation": "docs/translation-review/batch-024-chinese-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other 9 translations remain unread and unreviewed at this stage.",
+        "Finite checks are not exhaustive proof or a cryptographic/timing/fault-security audit.",
+        "Source and decoded HTML checked; no browser visual/KaTeX/Mermaid runtime certification.",
+        "Publication/live checks pending."
+      ]
+    },
+    "post/chinese-remainder-theorem/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/chinese-remainder-theorem/index.md",
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "translationHash": "cf34738087e2344674f098e208c991ad5fc5264c51da8170c15f0e0970bd8c5a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read selected original and revised metadata, complete body, complete Python block and Mermaid source independently; compared every topic against current Japanese and reread final local wording changes. Preserved Sunzi, integer CRT existence/uniqueness, inverse construction, validated Python, RSA-CRT, performance/security, rings, polynomials/interpolation and RNS. Kept assumptions, reconstruction ranges, API exclusions and arithmetic/security distinctions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "繁體字原文與改訂版的全部正文、詮釋資料、完整Python與Mermaid均已閱讀。逐項核對互質／質數、餘數／模數／代表元素、最大公因數、乘法反元素、含單位元素的交換環與互質理想、體與代數閉包、公開／私密指數與金鑰材料、常數時間、旁通道、函式庫與稽核、通道與進位。補齊唯一性的模數範圍、多項式的次數上限與RNS的範圍；四倍加速改為有前提的估計，訊息編碼與整數運算分開。移除重複自連結與反覆的傳記／寬泛密碼學連結，改為相應繁體字的已校閱RSA文章。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared proof and assumptions, pairwise versus total gcd, noncoprime compatibility versus API rejection, valid RSA key and reconstruction, comaximal ideals, algebraic-closure counterexample, interpolation degree bound and modular RNS arithmetic. Selected translation and current Japanese each41TeX exact in source and decoded HTML. Selected language separately passed1647small-pair cases,1365triple cases,128large signed cases,9999gcd/inverse cases,3233RSA representatives and22050RNS operations. Auxiliary GF(7) interpolation bijection343 once per invocation shared across selected languages. Finite checks are supplementary, not a universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed this complete article Python program separately underPython3.12.14 with exact two-line output23/105. Identical article code in generatedHTML; valid finite generator,18CRT rejection cases and5inverse rejection cases passed. Checked one localized Mermaid diagram with6edges against original topology and exact generatedHTML. Original Chinese programs executed separately before replacement, including actual missing/extra-input truncation, in Chinese source-audit. Auxiliary RSA/RNS/interpolation checks are distinguished from article execution. No browser runtime, timing or cryptographic certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Six exact external primary references and matching-language reviewedRSA internal target verified in generatedHTML; internal target exists. Primary-source reading scope is documented in batch024source-notes, not a claim to read entire books/PDFs. Preserved effectiveSep14publicationdate,slug,heroimagehash,tags/categories;removedduplicateSep24date;math/Mermaid enabled and lastmodOct30. All14hreflang/13sidebar URLs exact.25bundlepreview multilingual1439pages andHTTPS2632HTML/41XML pass. Existing17tests passed at preceding JA/EN stage, not rerun or counted perlanguage. Publication pending."
+        }
+      },
+      "summary": "Complete zh-tw review against corrected Japanese CRT, with input-contract Python, theorem assumptions, RSA limitations and bounded RNS representation.",
+      "languageSpecificFindings": "繁體字原文與改訂版的全部正文、詮釋資料、完整Python與Mermaid均已閱讀。逐項核對互質／質數、餘數／模數／代表元素、最大公因數、乘法反元素、含單位元素的交換環與互質理想、體與代數閉包、公開／私密指數與金鑰材料、常數時間、旁通道、函式庫與稽核、通道與進位。補齊唯一性的模數範圍、多項式的次數上限與RNS的範圍；四倍加速改為有前提的估計，訊息編碼與整數運算分開。移除重複自連結與反覆的傳記／寬泛密碼學連結，改為相應繁體字的已校閱RSA文章。",
+      "validation": "docs/translation-review/batch-024-chinese-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other 9 translations remain unread and unreviewed at this stage.",
+        "Finite checks are not exhaustive proof or a cryptographic/timing/fault-security audit.",
+        "Source and decoded HTML checked; no browser visual/KaTeX/Mermaid runtime certification.",
+        "Publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -66,6 +146,26 @@
       "reviewedTranslationsTotal": 289,
       "unreviewedTranslations": 12743,
       "humanReviews": 0,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "zh-cn",
+        "zh-tw"
+      ],
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "validation": "docs/translation-review/batch-024-chinese-validation.json",
+      "texEach": 41,
+      "completeProgramsExecutedSeparately": 2,
+      "diagramEdgesEach": 6,
+      "multilingualPages": 1439,
+      "httpsHtmlPages": 2632,
+      "httpsXmlFiles": 41,
+      "reviewedTranslationsTotal": 291,
+      "unreviewedTranslations": 12741,
+      "humanReviews": 0,
+      "otherTranslationsUnread": 9,
       "publicationPending": true
     }
   ]

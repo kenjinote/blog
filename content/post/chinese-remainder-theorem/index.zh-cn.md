@@ -1,9 +1,7 @@
 ---
 title: "中国剩余定理（Chinese Remainder Theorem） - 从古代算术到支撑现代RSA加密的大定理"
-date: "2026-09-24T19:44:38+09:00"
 description: "详细解说起源于古代中国算术书的中国剩余定理（CRT），从其数学原理到其在现代公开密钥加密（RSA加密）中的重要应用。"
 slug: "chinese-remainder-theorem"
-date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "cryptography"]
 tags:
@@ -11,240 +9,176 @@ tags:
   - "CRT"
   - "RSA加密"
   - "数论"
+date: "2026-09-14T13:11:25+09:00"
+lastmod: 2026-10-30
+math: true
+mermaid: true
 ---
 
-## 引言
+中国剩余定理（CRT）把不同模数下的余数合并为一个剩余类。它连接整数问题、RSA私钥运算、环与多项式，以及并行的剩余数运算。使用时必须说明模数的条件、重构范围，并区分算术正确性和密码安全性。
 
-中国剩余定理（[Chinese Remainder Theorem](https://kenji.blog/zh-cn/p/chinese-remainder-theorem/)，简称CRT）是数论中最重要且优美的定理之一。其起源可以追溯到3世纪至5世纪左右编纂的古代中国数学著作《孙子算经》。这个从古代朴素的算术问题开始的定理，在经过几千年后的现代，在我们日常使用的互联网安全通信所依赖的 **[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密** 等公钥加密技术中，发挥着不可或缺的作用。
+## 1. 孙子问题与解的范围
 
-本文将详细解说 **中国剩余定理** ，从其历史背景到数学上的严格定义、具体的计算步骤，以及在[现代密码学](/zh-cn/p/modern-cryptography-public-key-hash-signature/)理论中的应用，并配以图解和具体例子。
+《孙子算经》中的著名例子要求一个数除以3余2、除以5余3、除以7余2。[相关历史研究论文重述了问题和计算方法](https://sgmathsociety.org/smsmedley/Vol-30-1/The%20History%20of%20the%20Chinese%20Reminder%20Theorem%20%28Law%20Huang%20lng%29.pdf)。
 
-## 历史背景：孙子问题
+$$ x\equiv2\pmod3,\quad x\equiv3\pmod5,\quad x\equiv2\pmod7. $$
 
-中国剩余定理的根源在于《孙子算经》下卷第26问中记载的以下著名问题。
+最小非负解是23，但整数解并不只有一个：全部解为 $x=23+105t$，其中 $t\in\mathbb Z$。例如，128也满足条件。
 
-> 「今有物不知其数，三三数之剩二，五五数之剩三，七七数之剩二。问物几何？」
-> （现在有数量未知的物品。每次数3个剩2个，每次数5个剩3个，每次数7个剩2个。问物品的数量是多少？）
+## 2. 整数CRT：条件与唯一性
 
-如果我们使用现代数学记法中的线性同余方程组来表示它，对于未知的整数 $x$，可以写作如下形式：
+这里取 $k\ge1$，各模数 $m_i>1$，并要求两两互素：当 $i\ne j$ 时，$\gcd(m_i,m_j)=1$。模数本身不必是素数。对任意整数余数 $a_i$，
 
-$$
-\begin{cases}
-x \equiv 2 \pmod 3 \\
-x \equiv 3 \pmod 5 \\
-x \equiv 2 \pmod 7
-\end{cases}
-$$
+$$ x\equiv a_i\pmod{m_i}\quad(1\le i\le k) $$
 
-这个问题的解是 $x = 23$。在《孙子算经》中，也给出了得出这个解的具体计算步骤，这被认为是中国剩余定理具体构造方法的最初例子。
+在模 $M=\prod_{i=1}^k m_i$ 意义下恰有一个解，也就是恰有一个满足 $0\le x<M$ 的代表元。仅要求所有模数的最大公约数为1是不够的：6、10、15的整体最大公约数为1，却不两两互素。[整数CRT的证明](https://kconrad.math.uconn.edu/blurbs/ugradnumthy/crt.pdf)说明了这一区别。
 
-## 数学定义与定理表述
+任意两个解之差都能被每个模数整除。两两互素使这个差能被模数的乘积整除，因此解在模乘积的意义下唯一。下面的构造证明存在性。
 
-在现代数学中， **中国剩余定理** 的公式化如下。
+## 3. 用逆元构造解并实际计算
 
-### 定理的表述
+对每个模数，使用扩展欧几里得算法求出满足下式的逆元：
 
-假设有 $k$ 个两两互素（最大公约数为1）的正整数 $m_1, m_2, \dots, m_k$。也就是说，对于任意的 $i \neq j$，都有 $\gcd(m_i, m_j) = 1$ 成立。
+$$ M_i=M/m_i,\quad M_i y_i\equiv1\pmod{m_i} $$
 
-此时，对于任意整数 $a_1, a_2, \dots, a_k$，在模 $M = m_1 m_2 \dots m_k$ 下，存在唯一的一个整数 $x$，满足以下同余方程组：
+互素条件保证逆元存在。把以下和约化到模数的范围内，就得到所需的解：
 
-$$
-\begin{cases}
-x \equiv a_1 \pmod{m_1} \\
-x \equiv a_2 \pmod{m_2} \\
-\vdots \\
-x \equiv a_k \pmod{m_k}
-\end{cases}
-$$
+$$ x=\left(\sum_{i=1}^k a_iM_iy_i\right)\bmod M. $$
 
-换言之，解 $x$ 在 $0 \leq x < M$ 的范围内仅存在一个，并且所有的解都可以表示为 $x \equiv x_0 \pmod M$ 的形式。
+对某个模数 $m_j$ 取模时，$i\ne j$ 的项都消失，剩余的一项与 $a_j$ 同余。这就证明了解的存在性。
 
-### 证明与构造法（高斯算法）
+在孙子问题中，$M=105$，部分乘积为35、21、15，对应逆元为2、1、1。
 
-这个定理的奇妙之处在于，它不仅保证了解的存在性，还提供了一个构造具体解的算法。下面展示其构造方法。
+$$ 2\cdot35\cdot2+3\cdot21\cdot1+2\cdot15\cdot1=233,
+\qquad233\bmod105=23. $$
 
-1. 计算总乘积 $M = m_1 m_2 \dots m_k$。
-2. 对于每个 $i$，计算 $M_i = \frac{M}{m_i}$。（ $M_i$ 是除了 $m_i$ 以外所有模数的乘积）
-3. 由于 $\gcd(M_i, m_i) = 1$，所以在模 $m_i$ 下存在 $M_i$ 的乘法逆元 $y_i$。即，使用扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)等方法求出满足 $M_i y_i \equiv 1 \pmod{m_i}$ 的 $y_i$。
-4. 最终的解 $x$ 由下式给出：
+对于不互素的模数，还有另一种推广。两个模数的情形有解，当且仅当它们的最大公约数整除两余数之差；此时解在模最小公倍数的意义下唯一。例如，模数4、6和余数1、3给出模12的解9；余数0、1则无解。下面的代码不实现这种推广，只接受两两互素的模数。
 
-$$
-x = \sum_{i=1}^{k} a_i M_i y_i \pmod M
-$$
+## 4. 带输入检查的Python实现
 
-通过在模 $m_j$ 下对 $x$ 进行计算，可以很容易地验证这个 $x$ 满足原来的同余方程组。当 $i \neq j$ 时，$M_i$ 是 $m_j$ 的倍数，因此 $M_i \equiv 0 \pmod{m_j}$。所以，在求和项中只有 $i = j$ 的项留下来，即 $x \equiv a_j M_j y_j \equiv a_j \cdot 1 \equiv a_j \pmod{m_j}$，满足条件。
-
-## 具体计算示例
-
-让我们用这个算法来解答之前的“孙子问题”。
-
-问题：
-$x \equiv 2 \pmod 3$  (这里 $a_1=2, m_1=3$)
-$x \equiv 3 \pmod 5$  (这里 $a_2=3, m_2=5$)
-$x \equiv 2 \pmod 7$  (这里 $a_3=2, m_3=7$)
-
-**步骤1：** 计算 $M$
-$M = 3 \times 5 \times 7 = 105$
-
-**步骤2：** 计算 $M_i$
-$M_1 = 105 / 3 = 35$
-$M_2 = 105 / 5 = 21$
-$M_3 = 105 / 7 = 15$
-
-**步骤3：** 计算逆元 $y_i$
-- $35 y_1 \equiv 1 \pmod 3 \implies 2 y_1 \equiv 1 \pmod 3 \implies y_1 = 2$
-- $21 y_2 \equiv 1 \pmod 5 \implies 1 y_2 \equiv 1 \pmod 5 \implies y_2 = 1$
-- $15 y_3 \equiv 1 \pmod 7 \implies 1 y_3 \equiv 1 \pmod 7 \implies y_3 = 1$
-
-**步骤4：** 计算解 $x$
-$x = (2 \times 35 \times 2) + (3 \times 21 \times 1) + (2 \times 15 \times 1)$
-$x = 140 + 63 + 30 = 233$
-
-求其除以 $M = 105$ 的余数。
-$233 \equiv 23 \pmod{105}$
-
-因此，最小的正数解为 **23** ，完美符合孙子问题的解。
-
-## 现代应用：[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密与CRT
-
-作为古代数学难题的 **中国剩余定理** ，在现代数字社会中拥有着极其重要的实际用途。其代表性例子就是在 **RSA加密** 中加速解密和签名生成。
-
-### RSA加密概述
-
-在RSA加密中，使用两个大素数 $p$ 和 $q$，并将其乘积 $N = pq$ 作为公钥的一部分。利用私钥 $d$ 从密文 $C$ 解密出明文 $M$ 的计算如下进行：
-
-$$
-M = C^d \pmod N
-$$
-
-在这里，$N$ 是一个非常巨大的数（例如2048位），并且 $d$ 也有相似的大小，因此这种模幂运算的计算成本非常高。
-
-### 使用CRT加速（RSA-CRT）
-
-这时候就轮到 **中国剩余定理** 出场了。与其直接在模 $N$ 下进行巨大的计算，不如将其分割为在 $N$ 的素因子 $p$ 和 $q$ 为模的两个较小计算，最后利用CRT重构出原来的解，这就是我们采取的方法。
-
-具体来说，步骤如下：
-
-```mermaid
-graph TD
-    A["密文 C"] --> B["计算 C_p = C mod p"]
-    A --> C["计算 C_q = C mod q"]
-    B --> D["计算 M_p = (C_p)^(d mod (p-1)) mod p"]
-    C --> E["计算 M_q = (C_q)^(d mod (q-1)) mod q"]
-    D --> F["使用CRT从 M_p 和 M_q 还原 M mod N"]
-    E --> F
-    F --> G["明文 M"]
-```
-
-1. 作为私钥，预先计算 $d_p = d \pmod{p-1}$ 和 $d_q = d \pmod{q-1}$ 来代替 $d$。
-2. 分别进行模 $p$ 和模 $q$ 的解密计算。
-   $M_p = C^{d_p} \pmod p$
-   $M_q = C^{d_q} \pmod q$
-3. 对 $M_p$ 和 $M_q$ 应用CRT，求出 $M \pmod N$。
-
-当模数的位长减半（例如1024位）时，幂运算的成本大约会变为1/8。即使执行两次，总成本也只是大约1/4。利用[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)-CRT，能够使解密和签名生成的运算 **提速约4倍** 。对于智能手机和IC卡等计算资源有限的设备，这种加速是至关重要的。
-
-## 中国剩余定理的编程实现
-
-除了理论，我们来实际写段代码实现一下 **中国剩余定理** 。这里使用Python实现高斯算法。
+只接受Python内置的 `int`，拒绝 `bool` 和浮点数。两组输入必须是长度相同、非空的有限可迭代对象。每个模数必须大于1，且模数两两互素。余数可以为负，也可以超过对应模数。返回值是模乘积下的最小非负代表元。不接受模数1和空方程组，是这个教学API明确规定的契约。
 
 ```python
-def extended_gcd(a, b):
-    """
-    扩展欧几里得算法
-    返回满足 a*x + b*y = gcd(a, b) 的 (gcd(a, b), x, y)
-    """
-    if a == 0:
-        return b, 0, 1
-    else:
-        g, y, x = extended_gcd(b % a, a)
-        return g, x - (b // a) * y, y
+from math import gcd, prod
 
-def mod_inverse(a, m):
-    """
-    返回 a 在模 m 下的乘法逆元
-    """
-    g, x, y = extended_gcd(a, m)
+
+def _extended_gcd(a, b):
+    # Internal helper: integer a, positive integer b.
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r:
+        quotient = old_r // r
+        old_r, r = r, old_r - quotient * r
+        old_s, s = s, old_s - quotient * s
+        old_t, t = t, old_t - quotient * t
+    return old_r, old_s, old_t
+
+
+def mod_inverse(a, modulus):
+    if type(a) is not int or type(modulus) is not int:
+        raise TypeError("Arguments must be built-in integers")
+    if modulus <= 1:
+        raise ValueError("Modulus must exceed one")
+    g, x, _ = _extended_gcd(a % modulus, modulus)
     if g != 1:
-        raise Exception('模逆元不存在')
-    else:
-        return x % m
+        raise ValueError("Inverse does not exist")
+    return x % modulus
 
-def chinese_remainder_theorem(a_list, m_list):
-    """
-    中国剩余定理 (CRT)
-    返回满足 x ≡ a_i (mod m_i) 的 x
-    """
-    total_m = 1
-    for m in m_list:
-        total_m *= m
-        
-    x = 0
-    for a, m in zip(a_list, m_list):
-        M_i = total_m // m
-        y_i = mod_inverse(M_i, m)
-        x += a * M_i * y_i
-        
-    return x % total_m
 
-# 解决孙子问题
-a = [2, 3, 2]
-m = [3, 5, 7]
-result = chinese_remainder_theorem(a, m)
-print(f"孙子问题的解: {result}") # 输出: 23
+def chinese_remainder_theorem(residues, moduli):
+    residues, moduli = tuple(residues), tuple(moduli)
+    if not moduli or len(residues) != len(moduli):
+        raise ValueError("Provide equally sized, nonempty inputs")
+    if any(type(x) is not int for x in residues + moduli):
+        raise TypeError("Residues and moduli must be built-in integers")
+    if any(m <= 1 for m in moduli):
+        raise ValueError("Every modulus must exceed one")
+    for i, m in enumerate(moduli):
+        if any(gcd(m, other) != 1 for other in moduli[:i]):
+            raise ValueError("Moduli must be pairwise coprime")
+
+    combined_modulus = prod(moduli)
+    result = 0
+    for a, m in zip(residues, moduli):
+        partial = combined_modulus // m
+        inverse = mod_inverse(partial, m)
+        result = (result + (a % m) * partial * inverse) % combined_modulus
+    return result
+
+
+if __name__ == "__main__":
+    residues = [2, 3, 2]
+    moduli = [3, 5, 7]
+    print("Sunzi solution:", chinese_remainder_theorem(residues, moduli))
+    print("Combined modulus:", prod(moduli))
 ```
 
-就这样，仅仅几十行代码就能在计算机上重现 **中国剩余定理** 。这种实现在竞技编程等领域也是经常被使用的基本算法。
+用Python 3.12运行会输出 `Sunzi solution: 23` 和 `Combined modulus: 105`。长度不匹配时不会静默截断；零或负模数、类型及互素条件都会被检查。Python整数避免了固定位宽溢出，但时间和内存仍取决于输入长度与整数大小。这不是常数时间的密码实现。
 
-## 抽象代数中的推广：环与理想
+## 5. RSA-CRT重构的是什么
 
-**中国剩余定理** 不仅局限于整数的性质，在现代数学的重要分支 **抽象代数** 中，也以更一般的形式得到了推广。
+假设使用有效的双素数RSA密钥。取不同的奇素数 $p,q$，$N=pq$，公钥指数 $e$ 和私钥指数 $d$ 满足 $ed\equiv1\pmod{\lambda(N)}$，其中 $\lambda(N)=\operatorname{lcm}(p-1,q-1)$。密文代表元满足 $0\le C<N$，直接的私钥运算为 $m=C^d\bmod N$。
 
-考虑交换环 $R$ 及其理想 $I_1, I_2, \dots, I_k$。当这些理想两两互素（即对于任意 $i \neq j$，都有 $I_i + I_j = R$ 成立）时，可以定义如下自然的环同态映射 $\phi$：
+预先计算CRT参数：
 
-$$
-\phi: R \to (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
-$$
-\phi(x) = (x \pmod{I_1}, x \pmod{I_2}, \dots, x \pmod{I_k})
-$$
+$$ d_p=d\bmod(p-1),\quad d_q=d\bmod(q-1),\quad q_{\mathrm{inv}}=q^{-1}\bmod p. $$
 
-抽象代数中的 **中国剩余定理** 断言，此同态映射 $\phi$ 是满射，并且其核（kernel）是这些理想的交集 $\bigcap_{i=1}^k I_i$ （它等于理想的乘积 $\prod_{i=1}^k I_i$ ）。
+$$ m_p=C^{d_p}\bmod p,\quad m_q=C^{d_q}\bmod q. $$
 
-因此，根据第一同构定理，可以得出如下的自然同构：
+$$ h=(m_p-m_q)q_{\mathrm{inv}}\bmod p,\qquad m=m_q+qh. $$
 
-$$
-R / \left( \bigcap_{i=1}^k I_i \right) \cong (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
+得到的代表元在两个素数模数下都有正确余数，并落在原模数范围内。[RFC 8017第3.2和5.1.2节](https://www.rfc-editor.org/rfc/rfc8017.html)规定了这种私钥表示与重构方法。两个CRT指数不能单独代替整个私钥；素因数和重构系数同样是秘密密钥材料。
 
-### 在多项式环中的应用
+```mermaid
+flowchart TD
+    A["范围内的密文代表元C和有效私钥"] --> B["m_p = C^d_p mod p"]
+    A --> C["m_q = C^d_q mod q"]
+    B --> D["h = (m_p - m_q) q_inv mod p"]
+    C --> D
+    D --> E["重构 m = m_q + q h"]
+    E --> F["由经审计的库继续处理完整方案"]
+```
 
-这个广义定理最重要的应用之一，是在域 $F$ 上的单变量多项式环 $F[x]$ 中的 **中国剩余定理** 。
+这是整数运算的示意图，省略了消息编码和方案验证。实际加密与签名采用不同方案。如[RSA入门文章](https://kenji.blog/zh-cn/p/rsa-encryption-math-explained-for-beginners/)所述，应由经过审计的库完成与用途相应的处理。
 
-整数情形下的“互素整数”，在多项式环中对应于“没有公共根（最大公约多项式为常数）的多项式”。这种多项式版本的CRT构成了拉格朗日插值法（[Lagrange](https://kenji.blog/zh-cn/p/lagrange/) interpolation）的理论基础，并完全等同于唯一确定穿过给定多点的最低次多项式的算法。此外，这也是一种纠错码—— **里德-所罗门码** 的数学基石。
+## 6. 速度估计与实现边界
 
-## 基于剩余数系统（RNS）的超并行计算
+[HAC第14章](https://cacr.uwaterloo.ca/hac/about/chap14.pdf)的Note 14.75给出了约四倍的估计，其前提包括两个素数大小相近、采用经典二次复杂度的乘法、乘法次数与指数位长成比例，以及重构开销可忽略。乘法算法、并行执行、安全防护和设备不同，比例也会变化。这不是本文代码实测提速四倍的结论。
 
-作为 **中国剩余定理** 在工程学上的应用，我们也应当提及 **剩余数系统（Residue Number System, RNS）** 。
+如果单独计算的一个CRT余数发生错误，未经检查的输出可能泄露秘密素因数。[RSA-CRT故障分析论文](https://courses.csail.mit.edu/6.857/2010/handouts/faults.pdf)说明了相应条件。教学算术正确不代表实现具备故障防护或侧信道抵抗能力。包括使用公钥验证在内的防护，应由处理完整方案的库实现。
 
-通常，计算机使用二进制来表示数字并进行计算。但是，在进行加法或乘法时，会发生进位传播，如果位宽增加，电路的延迟也会随之变大。
+## 7. 推广到环与理想
 
-在RNS中，我们准备一组互素的模数集合 $\{m_1, m_2, \dots, m_k\}$，并将一个巨大的整数 $X$ 表示为分别除以各模数后的余数组 $(x_1, x_2, \dots, x_k)$。
+对含幺交换环 $R$ 中的有限多个理想，假设它们两两满足 $I_i+I_j=R$，即理想两两互素。自然同态
 
-这种表示法最大的优势在于，加法和乘法中 **不会产生进位** 。
-例如，当将 $X$ 和 $Y$ 相加时，可以独立地对每个模数进行计算。
+$$ \phi:R\longrightarrow\prod_{i=1}^k R/I_i,\qquad
+\phi(r)=(r+I_1,\ldots,r+I_k) $$
 
-$$
-X + Y \leftrightarrow ( (x_1+y_1)\pmod{m_1}, \dots, (x_k+y_k)\pmod{m_k} )
-$$
-$$
-X \times Y \leftrightarrow ( (x_1y_1)\pmod{m_1}, \dots, (x_k y_k)\pmod{m_k} )
-$$
+是满射，核为这些理想的交。在上述条件下，交等于理想的乘积，因此：
 
-由于在每个模数下的计算是完全独立的，通过构建并行电路可以实现极高速的运算。在最终将结果转换回普通数值时，正需要用到 **中国剩余定理** 。这种技术目前仍在要求实时性的数字信号处理（DSP）以及特定的密码处理电路设计中被研究和实际应用。
+$$ R/\left(\bigcap_{i=1}^k I_i\right)
+\cong\prod_{i=1}^k R/I_i,\qquad
+\bigcap_{i=1}^k I_i=\prod_{i=1}^k I_i. $$
 
-## 结语
+[Stacks Project的中国剩余定理](https://stacks.math.columbia.edu/tag/00DT)给出了条件和证明。整数模数两两互素，是这一理想条件的特殊情形。
 
-**中国剩余定理** 从一个单纯的数学谜题开始，升华为抽象代数中关于理想结构的定理，并发展成为支撑[现代密码学](/zh-cn/p/modern-cryptography-public-key-hash-signature/)和计算机科学的基础技术。
+## 8. 多项式与插值
 
-跨越几千年的时光，古代中国数学家的智慧仍然作为我们智能手机中密码处理的一部分而生生不息，这可以说是象征了数学这门学问的普遍性与生命力。
+域上多项式互素，是指最大公因式为非零常数。仅仅在原来的域中没有公共根还不够。例如，在有理数域上，让两个多项式都为 $x^2+1$。它们均无有理根，但最大公因式就是这个二次多项式。用公共根来刻画互素时，需要在代数闭包中考察。
+
+不同求值点 $\alpha_1,\ldots,\alpha_k$ 对应的一次因子两两互素，所以在次数 $<k$ 的多项式中，具有指定求值结果的多项式唯一。这是与拉格朗日插值的联系。允许更高次数时，唯一性就不再成立。有限域上的求值和次数限制也与里德–所罗门码有关，但CRT本身不能给出纠错能力保证。
+
+## 9. 剩余数系统与重构范围
+
+RNS用不同模数下的余数表示整数，并允许按分量进行加法和乘法。这里令 $x_i=X\bmod m_i$，$y_i=Y\bmod m_i$。设模数的乘积为 $M$，则：
+
+$$ (X+Y)\bmod M\longleftrightarrow
+((x_i+y_i)\bmod m_i)_{i=1}^k, $$
+
+$$ (XY)\bmod M\longleftrightarrow
+((x_iy_i)\bmod m_i)_{i=1}^k. $$
+
+通道之间无需传播进位，但每个通道内部的二进制运算仍可能产生进位。重构得到的是模乘积下的代表元；超出该范围的、不受限制的整数和或积，无法由这些余数唯一恢复。比较、除法以及转换回普通表示都需要额外工作。
+
+从古典的余数问题到密码学、代数与并行运算，CRT都在给定模数和范围条件下重构相容的余数。理解这些范围与用途的区别，才能正确应用它。
