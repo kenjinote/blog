@@ -1,121 +1,104 @@
 ---
 title: "Teorema Kecil Fermat: Sifat Bilangan Prima dan Fondasi Kriptografi Modern (RSA)"
-date: "2026-09-24T19:44:38+09:00"
 description: "Penjelasan mendetail tentang Teorema Kecil Fermat, dari pemahaman intuitif hingga pembuktian matematisnya, dan aplikasi praktisnya dalam kriptografi RSA."
 slug: "fermats-little-theorem"
-date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics"]
 tags:
   - "Teori Bilangan"
   - "Kriptografi"
   - "Bilangan Prima"
+date: "2026-09-20T15:00:00+09:00"
+lastmod: 2026-10-29
+math: true
+mermaid: true
 ---
 
-Dalam masyarakat internet modern, kemampuan kita untuk berkomunikasi secara aman berkat **kriptografi**. Di dasar kriptografi ini terdapat sebuah teorema indah yang ditemukan pada abad ke-17 oleh matematikawan [Pierre de Fermat](https://kenji.blog/id/p/fermat/).
+Teorema kecil Fermat menjelaskan sifat perpangkatan modulo bilangan prima. Teorema ini memberi syarat perlu bagi primalitas dan membantu menjelaskan kebenaran dekripsi RSA. Dekripsi yang benar saja tidak menjamin kerahasiaan. Artikel ini membedakan teorema, contoh, pembuktian, uji primalitas, dan penerapannya pada RSA.
 
-Dalam artikel ini, kita akan menjelaskan **[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)**, landasan penting dari teori bilangan, dengan cara yang mudah dipahami, mencakup makna, pembuktian, dan bagaimana hal itu diterapkan pada kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) modern.
+## Teorema kecil Fermat
 
-## Apa itu [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)?
+Untuk prima $p$ dan bilangan bulat $a$ dengan $p\nmid a$:
 
-[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) adalah teorema yang sangat sederhana namun kuat yang menunjukkan hubungan antara bilangan prima dan bilangan bulat.
+$$ a^{p-1}\equiv1\pmod p. $$
 
-Teorema tersebut menyatakan sebagai berikut:
+Kongruensi berarti selisih kedua ruas merupakan kelipatan modulus. Di sini, hasil perpangkatan bersisa 1 saat dibagi $p$. Bentuk yang berlaku bagi setiap bilangan bulat $a$ adalah:
 
-> **[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)**
-> Misalkan $p$ adalah bilangan prima, dan $a$ adalah bilangan bulat apa pun yang tidak habis dibagi oleh $p$ (artinya $a$ dan $p$ adalah koprima). Maka, relasi kongruensi berikut berlaku:
-> 
-> $$ a^{p-1} \equiv 1 \pmod p $$
+$$ a^p\equiv a\pmod p. $$
 
-Ini berarti bahwa "ketika bilangan bulat $a$ dipangkatkan $p-1$ dan dibagi dengan bilangan prima $p$, sisanya selalu $1$".
+Jika $p\nmid a$, kalikan kongruensi pertama dengan $a$. Jika $p\mid a$, kedua ruas kongruensi kedua kongruen dengan nol. Menghapus syarat tersebut juga memerlukan pemeriksaan kasus ini secara terpisah.
 
-Selain itu, dengan mengalikan kedua ruas dengan $a$, dapat diubah menjadi bentuk yang lebih umum yang menghilangkan syarat bahwa "$a$ bukan kelipatan $p$".
+### Contoh
 
-> $$ a^p \equiv a \pmod p $$
-> (Berlaku untuk semua bilangan bulat $a$)
+- $p=5$, $a=2$: $2^4=16=5\cdot3+1$.
+- $p=7$, $a=3$: $3^6=729=7\cdot104+1$.
 
-### Verifikasi dengan Contoh Konkret
+Kedua contoh memenuhi asumsi dan bersisa 1. Meskipun modulusnya prima, basis yang habis dibagi modulus tidak termasuk dalam pernyataan pertama.
 
-Mari kita masukkan beberapa angka nyata untuk memverifikasi apakah teorema tersebut berlaku.
+## Pembuktian melalui permutasi residu
 
-**Contoh 1: $p = 5$ (prima), $a = 2$**
-- $p-1 = 4$.
-- $a^{p-1} = 2^4 = 16$.
-- Ketika $16$ dibagi dengan $5$, hasil baginya adalah $3$ dan **sisanya adalah $1$** ($16 \equiv 1 \pmod 5$).
+Kalikan setiap anggota $S=\{1,2,\ldots,p-1\}$ dengan $a$, lalu reduksi modulo $p$. Tidak ada residu yang nol. Jika $ia\equiv ja\pmod p$, karena $a$ dan $p$ saling prima, faktor $a$ dapat dicoret sehingga diperoleh $i\equiv j\pmod p$. Indeksnya positif dan lebih kecil dari modulus, sehingga $i=j$.
 
-**Contoh 2: $p = 7$ (prima), $a = 3$**
-- $p-1 = 6$.
-- $a^{p-1} = 3^6 = 729$.
-- Ketika $729$ dibagi dengan $7$, hasil baginya adalah $104$ dan **sisanya adalah $1$** ($729 = 7 \times 104 + 1$).
+Jadi, residu yang dihasilkan merupakan permutasi residu tak nol semula. Dengan mengalikan semua anggota:
 
-Dengan cara ini, tidak peduli bilangan prima $p$ apa yang Anda pilih, hukum misterius ini berlaku.
+$$ a^{p-1}(p-1)!\equiv(p-1)!\pmod p. $$
 
-## Pembuktian Teorema
+Karena $(p-1)!$ saling prima dengan $p$, kalikan dengan inversnya untuk mencoret faktor bersama dan memperoleh teorema. Kongruensi tidak mengizinkan pembagian dengan faktor sembarang tanpa syarat.
 
-Ada beberapa pendekatan untuk membuktikan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/), namun di sini kami memperkenalkan metode pembuktian representatif berdasarkan teori bilangan.
+## Uji Fermat memeriksa syarat perlu
 
-Misalkan $p$ adalah bilangan prima dan $a$ bilangan bulat yang tidak habis dibagi oleh $p$.
-Pertimbangkan himpunan $S = \{1, 2, 3, \dots, p-1\}$. Misalkan $S'$ adalah himpunan baru yang dibuat dengan mengalikan setiap elemen dari himpunan ini dengan $a$.
+Pertama, tangani bilangan bulat kurang dari 2 sebagai bukan prima, 2 dan 3 sebagai prima, serta bilangan genap lainnya sebagai komposit. Untuk bilangan ganjil yang tersisa $n>3$, pilih basis $a$ dengan $2\le a\le n-2$.
 
-$$ S' = \{a, 2a, 3a, \dots, (p-1)a\} $$
+$$ a^{n-1}\not\equiv1\pmod n $$
 
-Pertimbangkan sisa pembagian ketika setiap elemen dari himpunan $S'$ ini dibagi dengan $p$. Secara mengejutkan, semua sisa pembagian ini berbeda, dan lebih jauh lagi, tak satu pun dari sisa tersebut adalah $0$. Dengan kata lain, himpunan sisa pembagian tersebut sangat cocok dengan himpunan asli $S$ (mengabaikan urutannya).
-
-Oleh karena itu, hasil kali elemen-elemen $S$ dan hasil kali elemen-elemen $S'$ adalah kongruen modulo $p$.
-
-$$ 1 \times 2 \times \dots \times (p-1) \equiv a \times 2a \times \dots \times (p-1)a \pmod p $$
-
-Menyederhanakannya memberikan:
-
-$$ (p-1)! \equiv a^{p-1} \times (p-1)! \pmod p $$
-
-Karena $(p-1)!$ dan $p$ adalah koprima, kita dapat membagi kedua ruas dengan $(p-1)!$ (sifat pembagian dalam relasi kongruensi). Sebagai hasilnya, teorema berikut diturunkan:
-
-$$ 1 \equiv a^{p-1} \pmod p $$
-
-Ini melengkapi pembuktian.
-
-## Uji Primalitas [Fermat](https://kenji.blog/id/p/fermat/): Aplikasi pada Pengujian Bilangan Prima
-
-Teorema ini diterapkan dalam sebuah **algoritma uji primalitas** (uji primalitas [Fermat](https://kenji.blog/id/p/fermat/)) untuk menentukan apakah suatu bilangan prima.
-
-Jika Anda ingin tahu apakah suatu bilangan besar $n$ adalah prima, pilih $a$ secara acak dan periksa apakah $a^{n-1} \equiv 1 \pmod n$ berlaku. Jika tidak berlaku, maka $n$ **sama sekali bukan bilangan prima** (itu adalah bilangan komposit).
+menunjukkan bahwa $n$ komposit. Sebaliknya, jika sisanya 1, uji pada basis tersebut hanya tidak menemukan pelanggaran syarat perlu; primalitas belum terbukti.
 
 ```mermaid
 flowchart TD
-    Start("Mulai") --> ChooseA("Pilih bilangan bulat acak a")
-    ChooseA --> Calc("Hitung a^(n-1) mod n")
-    Calc --> Check{"Apakah hasilnya 1?"}
-    Check -- "Tidak" --> Composite("n adalah bilangan komposit (bukan prima)")
-    Check -- "Ya" --> ProbPrime("n kemungkinan besar adalah bilangan prima")
+    Input["Bilangan ganjil n setelah menangani bilangan kecil dan genap"] --> Choose["Pilih basis a dari 2 sampai n-2"]
+    Choose --> Calc["Hitung a pangkat n-1 modulo n"]
+    Calc --> Check{"Apakah sisanya 1?"}
+    Check -- No --> Composite["n komposit"]
+    Check -- Yes --> Pass["Lulus basis ini: bukan bukti primalitas"]
 ```
 
-Namun, karena terdapat bilangan-bilangan pengecualian yang disebut **bilangan Carmichael**, yang merupakan bilangan komposit namun memenuhi $a^{n-1} \equiv 1 \pmod n$, uji ini saja tidak dapat membuktikan keprimaan secara definitif. Oleh karena itu, dalam praktiknya, metode seperti uji primalitas Miller-Rabin digunakan.
+Contohnya, $341=11\cdot31$ komposit, tetapi lulus uji pada basis 2. Bilangan seperti ini disebut prima semu terhadap basis tersebut. Bilangan Carmichael adalah komposit yang memenuhi kongruensi Fermat untuk **setiap basis yang saling prima dengan bilangan itu**. Contoh terkecil, $561=3\cdot11\cdot17$, lulus basis 2 tetapi gagal pada basis 3 yang tidak saling prima dengannya.
 
-## Aplikasi pada Kriptografi Modern: Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)
+Mencoba beberapa basis acak tidak memberi batas kecil yang seragam untuk peluang positif palsu bagi semua komposit. [HAC Bab 4](https://cacr.uwaterloo.ca/hac/about/chap4.pdf) membedakan Fermat dan Miller–Rabin. Untuk satu komposit ganjil tetap, $k$ uji Miller–Rabin dengan basis acak seragam dan independen memiliki peluang positif palsu paling besar $4^{-k}$. Ini bukan peluang bahwa bilangan tersebut komposit setelah lulus uji, dan batasnya tidak otomatis berlaku untuk basis tetap sembarang. Lihat [artikel uji primalitas yang lebih rinci](https://kenji.blog/id/p/cpp-fast-prime-testing-miller-rabin/).
 
-Aplikasi terpenting dari [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) (dan generalisasinya, **Teorema Euler**) adalah **kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)**, yang mendasari keamanan internet.
+## Syarat agar dekripsi RSA benar
 
-Kriptografi RSA bergantung pada kesulitan memfaktorkan bilangan besar untuk keamanannya. Dalam mekanismenya, prinsip "[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)" memainkan peran yang sangat penting dalam proses pembuatan kunci dan dekripsi.
+Pilih prima berbeda $p,q$ dan tetapkan $n=pq$. Dengan fungsi totien $\varphi(n)=(p-1)(q-1)$, konstruksi pembelajaran ini memilih eksponen publik dengan $1<e<\varphi(n)$ dan $\gcd(e,\varphi(n))=1$. Inversnya adalah eksponen privat positif $d$:
+
+$$ ed\equiv1\pmod{\varphi(n)}. $$
+
+Kunci publik adalah $(n,e)$, dan bentuk sederhana kunci privat adalah $(n,d)$. Kunci privat nyata dapat memuat faktor untuk mempercepat perhitungan; faktor tersebut juga rahasia. Operasi matematika pada wakil pesan berupa bilangan bulat $0\le M<n$ adalah:
+
+$$ C=M^e\bmod n,\qquad M'=C^d\bmod n. $$
 
 ```mermaid
 sequenceDiagram
-    participant Sender as "Pengirim"
-    participant Receiver as "Penerima"
-    Note over Receiver: "Hasilkan kunci publik (e, n) dan kunci privat (d)"
-    Receiver->>Sender: "Kirim kunci publik (e, n)"
-    Note over Sender: "Enkripsi teks terang M"
-    Note over Sender: "C = M^e mod n"
-    Sender->>Receiver: "Kirim teks sandi C"
-    Note over Receiver: "Dekripsi teks sandi C"
-    Note over Receiver: "M = C^d mod n"
+    participant Sender as Pengirim
+    participant Receiver as Penerima
+    Note over Sender,Receiver: Contoh pembelajaran RSA tanpa pengodean pesan
+    Receiver->>Sender: Berikan kunci publik (n,e)
+    Sender->>Sender: Siapkan wakil bilangan bulat M dari 0 sampai n-1
+    Sender->>Sender: Hitung C = M^e mod n
+    Sender->>Receiver: Berikan C
+    Receiver->>Receiver: Hitung M' = C^d mod n
 ```
 
-Dalam kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), dua bilangan prima besar, $p$ dan $q$, disiapkan, dan kita menetapkan $n = p \times q$.
-Menurut Teorema Euler, kunci ($e$ dan $d$) dirancang sedemikian rupa sehingga $M^{ed} \equiv M \pmod n$ berlaku dalam proses enkripsi dan dekripsi. Di sini, fenomena magis dari teks terang $M$ yang kembali ke bentuk aslinya pada dasarnya bergantung pada sifat-sifat matematis yang dijamin oleh [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/).
+Jika $\gcd(M,n)=1$, [teorema Euler](https://dlmf.nist.gov/27.2#E8) memberikan $M^{\varphi(n)}\equiv1\pmod n$. Karena $ed=1+t\varphi(n)$ untuk suatu bilangan bulat tak negatif $t$, dekripsi memulihkan wakil semula.
 
-## Kesimpulan
+Untuk menyertakan wakil yang tidak saling prima dengan modulus, tinjau modulo setiap prima. Jika $p\mid M$, maka $M^{ed}$ dan $M$ sama-sama kongruen dengan nol. Jika tidak, teorema kecil Fermat dan $p-1\mid ed-1$ memberikan kongruensi yang diperlukan. Argumen yang sama berlaku modulo $q$. Dari teorema sisa Tiongkok:
 
-Sebuah teorema kecil yang ditemukan oleh [Pierre de Fermat](https://kenji.blog/id/p/fermat/) pada abad ke-17 telah menjadi elemen tak terpisahkan yang mendukung fondasi keamanan informasi dalam masyarakat modern ratusan tahun kemudian.
+$$ M^{ed}\equiv M\pmod p,\quad M^{ed}\equiv M\pmod q
+\quad\Longrightarrow\quad M^{ed}\equiv M\pmod n. $$
 
-**[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)** dapat dikatakan sebagai salah satu contoh paling indah yang menunjukkan bagaimana matematika murni terhubung dengan teknologi praktis (kriptografi dan algoritma). Seseorang tidak bisa tidak kagum dengan kedalaman matematika dan luasnya penerapannya.
+Ini memulihkan semua wakil, termasuk nol dan kelipatan faktor-faktornya. Memfaktorkan modulus memungkinkan perhitungan eksponen privat, tetapi tidak berarti inversi RSA secara umum dan faktorisasi telah terbukti setara dalam kesulitannya.
+
+## Membedakan kebenaran dan keamanan
+
+RSA tanpa pengodean pesan pada diagram bersifat deterministik dan tidak cukup sebagai skema enkripsi yang aman. [Bagian 5 dan 7 RFC 8017](https://www.rfc-editor.org/rfc/rfc8017.html) membedakan primitif dan skema enkripsi. Penggunaan produksi memerlukan pustaka yang diaudit, skema yang sesuai seperti RSAES-OAEP, parameter yang tepat, keacakan aman, dan pengelolaan kunci. RSASSA-PSS adalah skema tanda tangan yang terpisah.
+
+Teorema kecil Fermat memberi dasar untuk memahami aritmetika modular dan matematika RSA. Bedakan teorema, uji primalitas, kunci yang valid, dan skema kriptografi praktis. [Pengantar RSA](https://kenji.blog/id/p/rsa-encryption-math-explained-for-beginners/) menjelaskan perbedaan ini lebih lanjut.

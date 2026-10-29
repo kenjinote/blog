@@ -57,3 +57,8 @@
 ## Deutschの確認
 
 修正前後のドイツ語全文・メタデータ・全2図を独立に読了。kleiner Satz von Fermat,Kongruenz,teilerfremd,Inverses,Basis,Exponent,Modulus,Rest,Repräsentant,eulersche Phi-Funktion,Pseudoprimzahl,chinesischer Restsatzを照合。元のmit der Potenz potenziertという重複表現を整理し、必要条件とPrimzahlbeweis、KorrektheitとVertraulichkeit、PrimitiveとVerschlüsselungsverfahrenを区別。図のwahrscheinlich eine PrimzahlをTest für diese Basis bestanden: kein Primzahlbeweisへ訂正。Carmichaelの互いに素な全底条件、独立一様底と事後確率、相異素数と全代表元CRT証明を反映。自己・伝記への反復リンクと現代暗号全体への普遍的依存の断定を整理し、Modulも有効な呼称だがここではModulusで一貫させた。 各58TeX・図5辺／5辺とソース全文、14hreflang／13切替先、3外部・2内部参照、公開日と画像ハッシュをdocs/translation-review/batch-023-de-validation.jsonで確認。補助算術は当該検証呼出しで1回実行した共通検査であり、各翻訳での実行と重複計上しない。24記事束の多言語1387ページ、HTTPS2540HTML／41XMLを通過。確認日2026-10-29、AI。残る4翻訳と公開確認は未完了。
+
+
+## Bahasa Indonesiaの確認
+
+修正前後のインドネシア語全文・メタデータ・全2図を独立に読了。kongruensi,saling prima,invers,basis,eksponen,modulus,residu/sisa,wakil,totien,prima semu,teorema sisa Tiongkokを照合。元のkoprima自体は有効だがsaling primaで統一し、angka nyataを具体的整数例として整理。syarat perlu／bukti primalitas、kebenaran／kerahasiaan、primitif／skema enkripsiを区別。図のkemungkinan besar adalah bilangan primaをLulus basis ini: bukan bukti primalitasへ訂正。Carmichaelの互いに素な全底条件、独立一様な底による条件付き確率と事後確率、相異素数と全整数代表元のCRT証明を反映。自己・伝記への反復リンクと現代暗号への普遍的依存の断定を整理し、整数のメッセージ代表元とソフトウェアpustakaの用語を確認。 各58TeX・図5辺／5辺とソース全文、14hreflang／13切替先、3外部・2内部参照、公開日と画像ハッシュをdocs/translation-review/batch-023-id-validation.jsonで確認。補助算術は当該検証呼出しで1回実行した共通検査であり、各翻訳での実行と重複計上しない。24記事束の多言語1387ページ、HTTPS2540HTML／41XMLを通過。確認日2026-10-29、AI。残る3翻訳と公開確認は未完了。
