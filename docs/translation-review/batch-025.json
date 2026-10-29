@@ -81,6 +81,47 @@
         "Linked Bayes/StPetersburg bodies not reviewed here; primary-source reading scope documented.",
         "Publication/live checks pending."
       ]
+    },
+    "post/2つの封筒のパラドックス/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/2つの封筒のパラドックス/index.md",
+      "sourceHash": "6fbb8397037b64b965eceac9fabe38880228b0a0311d6da2e5d4f33a7bd69ada",
+      "translationHash": "b8592684364f320823f7f2d1d9b1492437786067e89c147a0d1f607a4184a6c6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and revised TraditionalChinese metadata/body/two Mermaid sources independently against corrected Japanese, including final coin/normalization/continuous-version edits. Preserved all nine revised topics:setup,unsupported half/double weights,fixed-smaller symmetry,discrete posterior,finite money example and nonmonotonicity,finite-mean argument,proper infinite-mean discrete counterexample,continuous density change,and reciprocal ratios/StPetersburg/decision limits. Did not classify random variables taking different values as inherently wrong, nor normalization as implying a finite mean."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "已獨立閱讀改訂前後全文、詮釋資料與兩個Mermaid，逐節與日文原文核對。沿用事前分配、機率、隨機變數、正規化等繁體用語，區分條件機率與公平選擇、離散機率質量與連續密度、單次有限金額與有限期望值、金額上界與最大值、正部負部與可積分性、幾乎必然與各正機率觀察。原圖半價容易混淆商品價格，改為金額的一半。修正原有粗體標記空格，範例金額明示日圓以對應原文，不把通用元的計算當作算術錯誤。保留事前分配而非機械沿用簡體先验分布；不把正規化與歸一化等可接受術語差異判為數學錯誤。完整保留有限與無窮期望值、連續密度、重複交換及聖彼得堡主題。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared all44TeX and assumptions:independent fair coin,p(x)and p(x/2)off-support masses,positive denominator,gain iff q>1/3,5000/10000prior with1/4-1/2-1/4observations,nonmonotone1/50versus50/51,integrability/finite-mean total expectation,normalized geometric distribution with2/5posterior and11x/10mean,undefined signed expectation when both parts infinite,valid nonnegative tower law,continuous1/2and1/4density factors and f(x/2)/f(x)<4,reciprocal ratios and25/16versus1.44expressions exact in source/decodedHTML. Actual shared auxiliary run in this invocation:102finite priors1619joint-observation checks,101normalization identities,100geometric posteriors,268rational density substitutions. Finite arithmetic supplements manually checked analytic arguments,not universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised TraditionalChinese contain only two Mermaid blocks and no executable article program. Read labels and compared revised corresponding5and6edge topologies with Japanese; exact complete localized sources retained in decodedHTML. Shared Fraction arithmetic is auxiliary,not a Chinese article-program execution. No browser diagram/KaTeX runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three primary external links and localized TraditionalChinese Bayes/StPetersburg URLs exact in generatedHTML; internal pages exist in28bundlepreview,but their bodies not reviewed here. Primary-source reading scope documented separately,including unavailableORA403not fully read. Preserved actualSep10date,slug,imagebytes/tags/categories;removed duplicateSep24date,setOct30lastmod,math/Mermaid enabled. All14hreflang/13sidebar targets exact. New preview multilingual1609pages/HTTPS2933HTML41XML passed. Existing17unit tests passed at precedingJAENstage and not rerun here. Existing isolated-preview pages/layout/PortugueseUI warnings retained. Publication pending."
+        }
+      },
+      "summary": "Full TraditionalChinese comparison against corrected Japanese, preserving all topics with proper priors, finite-mean conditions and density/expectation distinctions.",
+      "languageSpecificFindings": "已獨立閱讀改訂前後全文、詮釋資料與兩個Mermaid，逐節與日文原文核對。沿用事前分配、機率、隨機變數、正規化等繁體用語，區分條件機率與公平選擇、離散機率質量與連續密度、單次有限金額與有限期望值、金額上界與最大值、正部負部與可積分性、幾乎必然與各正機率觀察。原圖半價容易混淆商品價格，改為金額的一半。修正原有粗體標記空格，範例金額明示日圓以對應原文，不把通用元的計算當作算術錯誤。保留事前分配而非機械沿用簡體先验分布；不把正規化與歸一化等可接受術語差異判為數學錯誤。完整保留有限與無窮期望值、連續密度、重複交換及聖彼得堡主題。",
+      "validation": "docs/translation-review/batch-025-zh-tw-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "At this stage9other translations have not completed full revision/review/recording.",
+        "Auxiliary arithmetic is not article-code execution or universal proof.",
+        "Source and decodedHTML only; no browservisual/diagramruntime certification.",
+        "Linked Bayes/StPetersburg bodies not reviewed here; primary-source reading scope documented.",
+        "Publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -155,6 +196,42 @@
       "unreviewedTranslations": 12730,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 10,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "zh-tw"
+      ],
+      "sourceHash": "6fbb8397037b64b965eceac9fabe38880228b0a0311d6da2e5d4f33a7bd69ada",
+      "validation": "docs/translation-review/batch-025-zh-tw-validation.json",
+      "checks": "docs/translation-review/batch-025-zh-tw-checks.json",
+      "texEach": 44,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        5,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "finitePriors": 102,
+        "jointObservationCases": 1619,
+        "normalizationIdentities": 101,
+        "geometricPosteriorCases": 100,
+        "continuousRationalCases": 268,
+        "ratioMean": "5/4",
+        "meanReciprocalProduct": "1",
+        "productOfRatioMeans": "25/16",
+        "scope": "Shared exact auxiliary arithmetic once per invocation, not article code execution or universal proof. Geometric limits, finite-mean argument and continuous inequality manually checked separately. Original source-audit also contains33finite truncations; not rerun or counted here."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 303,
+      "unreviewedTranslations": 12729,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 9,
       "publicationPending": true
     }
   ],
