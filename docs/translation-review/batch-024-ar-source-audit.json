@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:54:11.699167+09:00",
+  "path": "content/post/chinese-remainder-theorem/index.ar.md",
+  "sha256": "27dc1fb7811df98b16721f3d1528213e911a765b7e556cfbb1399c46c6e722d0",
+  "fullOriginalBodyMetadataPythonAndDiagramRead": true,
+  "completeOriginalPythonExecuted": true,
+  "stdout": "حل مسألة صون تزي: 23\n",
+  "missingResidueReturned": 5,
+  "extraResidueReturned": 2,
+  "findings": "Read all original Arabic metadata/body/Python/Mermaid. Shared missing input contract, uniqueness/range, polynomial-field/degree,RSA-key/representative,performance-model and RNS-channel qualifications. Prime/coprime,homomorphism/isomorphism and encryption/message-representation distinctions compared. Original23 program succeeds; original title/tag/taxonomy preserved.",
+  "reviewed": false
+}

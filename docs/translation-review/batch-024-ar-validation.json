@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:57:04.846643+09:00",
+  "pythonVersion": "3.12.14",
+  "scope": "Explicit selected versions only. Each complete article program executed and functions compared against independent enumeration/Python arithmetic. Auxiliary interpolation check once per invocation. No prose approval or ledger writes.",
+  "versions": [
+    {
+      "language": "ar",
+      "sha256": "0133af069343bc52551be203d9d22d466856342ddee7f366be494f5084405324",
+      "canonical": "https://kenji.blog/ar/p/chinese-remainder-theorem/",
+      "texExpressions": 41,
+      "allTeXPreserved": true,
+      "pythonBlocksExact": 1,
+      "completeProgramOutputExact": true,
+      "singleModulusSignedCases": 319,
+      "smallPairCases": 1647,
+      "smallTripleCases": 1365,
+      "largeSignedCases": 128,
+      "generatorInputsExact": true,
+      "invalidCrtCases": 18,
+      "extendedGcdAndInverseCases": 9999,
+      "invalidInverseCases": 5,
+      "rsaCrtAllRepresentatives": 3233,
+      "rnsAddAndMultiplyCases": 22050,
+      "diagramEdges": 6,
+      "referencesMetadataLanguageMapsExact": true,
+      "passed": true
+    }
+  ],
+  "auxiliaryInterpolationEvaluationBijection": 343,
+  "publicationPending": true,
+  "limitations": [
+    "Finite inputs,not exhaustive proof or cryptographic audit.",
+    "Contract rejects noncoprime systems,unitmoduli andempty systems;does not implement generalizedCRT.",
+    "No timing/constant-time/production-key-validation or native-language certification.",
+    "Diagram source and HTML/TeX checked,no browser visual/runtime certification."
+  ]
+}
