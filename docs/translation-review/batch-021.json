@@ -138,6 +138,98 @@
         "No huge upper-bound enumeration,timing,visualbrowser or cryptographic audit.",
         "Full-siteCI/publication pending."
       ]
+    },
+    "post/Rustで素数を列挙する/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustで素数を列挙する/index.md",
+      "sourceHash": "a82d199b8f195dbbc6cba8b28180142d56ff3ff02db3abfb8cc1bf939b3c49fa",
+      "translationHash": "bd24ffe2fd16281deec02b8f472f0e2e95a2bdefed68d6681e56308a1f436a79",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original metadata/body/code before editing,revised against corrected fullJapanese and reviewedEnglish,then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,one complete program,inclusive bounds,small-limit vectors,stored-prime proof,borrowed/owned iteration and resource limits. No unread/unvalidated language recorded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Spanish uses división por tentativa,primo/compuesto,factor primo,resto,vector,referencia,préstamo and propiedad. Original enumerar wording retained as valid. Matched inclusive bound,0/1/2vectors,integer quotient cutoff,borrowed copies versus owned consuming iteration,post-loop push and bounded final increment. Describes adapted small-limit failure without falsely rejecting original1000code;localized sieve target and accented original slug preserved."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "No TeX-delimited formulas or diagrams. Confirmed increasing-prime invariant and smallest-prime-factor square-root argument; p>n/p is safe forpositive divisors and does not omit square factors. max-n subtraction occurs only with n<=max; final increment only when remaining>=2,so it cannot exceedmax. O(max sqrt(max)) is a coarse asymptotic division-count bound. Finite tests do not prove allusize or timings."
+        },
+        "code": {
+          "status": "checked",
+          "note": "One Rust block exactly matches revised Japanese and generatedHTML. Rust1.90Windows64bit,edition2021,Dwarnings,debugchecked/optimizedchecked modes compiled separate complete program and harness. Per mode2161bounds compared as full vectors against independent Python trial division through100000; includes0..2000,seededrandom,square/power neighbors,99999/100000.1000sample168lines exact. No huge-bound run,overflow reproduction or timing benchmark claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Official Vec reference shared with source,and matching reviewed sieve canonical for this language. Existing Rust->Wasm link removed. Preserved original distinct slug/canonical,actual datePublished2022-09-09T07:08:49+09:00,images/img.webp,tags/categories;single date and actual lastmod2026-10-29.22bundle Hugo build,multilingual1310pages,HTTPS2409HTML/41XML passed. Prior17tests passed for same revised source. This article and referenced sieve publication are separately tracked."
+        }
+      },
+      "summary": "Full es Rust stored-prime enumeration review against corrected Japanese,including actual full-vector and exactHTMLcode checks.",
+      "languageSpecificFindings": "Spanish uses división por tentativa,primo/compuesto,factor primo,resto,vector,referencia,préstamo and propiedad. Original enumerar wording retained as valid. Matched inclusive bound,0/1/2vectors,integer quotient cutoff,borrowed copies versus owned consuming iteration,post-loop push and bounded final increment. Describes adapted small-limit failure without falsely rejecting original1000code;localized sieve target and accented original slug preserved.",
+      "validation": "docs/translation-review/batch-021-es-ko-validation.json",
+      "references": [
+        {
+          "url": "https://doc.rust-lang.org/std/vec/struct.Vec.html",
+          "scope": "Scoped IntoIterator for ownedVec(Item=T) and shared&Vec(Item=&T),plus previously read Guaranteesparagraphs;not all6780lines or unsafeAPI audit. Retrieved docs1.99.1 versus actual compiler1.90 separately recorded."
+        }
+      ],
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "Other original translations were read,but each receives a current review only after its own full revised-body comparison and actual validation.",
+        "Finite bounds<=100000,Rust1.90Windows64bit,not everyusize or target.",
+        "No huge upper-bound enumeration,timing,visualbrowser or cryptographic audit.",
+        "Full-siteCI/publication pending."
+      ]
+    },
+    "post/Rustで素数を列挙する/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustで素数を列挙する/index.md",
+      "sourceHash": "a82d199b8f195dbbc6cba8b28180142d56ff3ff02db3abfb8cc1bf939b3c49fa",
+      "translationHash": "ddb8d02fa18b4f33620287934dfb35fef53be27a9ec716abf7d7a5e7c05d7abd",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original metadata/body/code before editing,revised against corrected fullJapanese and reviewedEnglish,then independently reread complete revised metadata/body/code in separate output. Compared introduction,4sections,one complete program,inclusive bounds,small-limit vectors,stored-prime proof,borrowed/owned iteration and resource limits. No unread/unvalidated language recorded."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Korean uses 시행 나눗셈,소수/합성수,소인수,약수,나머지,벡터,참조 and 소유. Describes shared borrowing naturally as 목록을 빌려,distinguished from consuming the owned returned vector. Preserved old 열거/listing meaning,small-limit vectors,inclusive bound,sqrtquotient proof,post-borrow push and final increment guard. Kept original Korean slug and localized reviewed sieve link;no unsupported speed or timing claim."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "No TeX-delimited formulas or diagrams. Confirmed increasing-prime invariant and smallest-prime-factor square-root argument; p>n/p is safe forpositive divisors and does not omit square factors. max-n subtraction occurs only with n<=max; final increment only when remaining>=2,so it cannot exceedmax. O(max sqrt(max)) is a coarse asymptotic division-count bound. Finite tests do not prove allusize or timings."
+        },
+        "code": {
+          "status": "checked",
+          "note": "One Rust block exactly matches revised Japanese and generatedHTML. Rust1.90Windows64bit,edition2021,Dwarnings,debugchecked/optimizedchecked modes compiled separate complete program and harness. Per mode2161bounds compared as full vectors against independent Python trial division through100000; includes0..2000,seededrandom,square/power neighbors,99999/100000.1000sample168lines exact. No huge-bound run,overflow reproduction or timing benchmark claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Official Vec reference shared with source,and matching reviewed sieve canonical for this language. Existing Rust->Wasm link removed. Preserved original distinct slug/canonical,actual datePublished2022-09-09T07:08:49+09:00,images/img.webp,tags/categories;single date and actual lastmod2026-10-29.22bundle Hugo build,multilingual1310pages,HTTPS2409HTML/41XML passed. Prior17tests passed for same revised source. This article and referenced sieve publication are separately tracked."
+        }
+      },
+      "summary": "Full ko Rust stored-prime enumeration review against corrected Japanese,including actual full-vector and exactHTMLcode checks.",
+      "languageSpecificFindings": "Korean uses 시행 나눗셈,소수/합성수,소인수,약수,나머지,벡터,참조 and 소유. Describes shared borrowing naturally as 목록을 빌려,distinguished from consuming the owned returned vector. Preserved old 열거/listing meaning,small-limit vectors,inclusive bound,sqrtquotient proof,post-borrow push and final increment guard. Kept original Korean slug and localized reviewed sieve link;no unsupported speed or timing claim.",
+      "validation": "docs/translation-review/batch-021-es-ko-validation.json",
+      "references": [
+        {
+          "url": "https://doc.rust-lang.org/std/vec/struct.Vec.html",
+          "scope": "Scoped IntoIterator for ownedVec(Item=T) and shared&Vec(Item=&T),plus previously read Guaranteesparagraphs;not all6780lines or unsafeAPI audit. Retrieved docs1.99.1 versus actual compiler1.90 separately recorded."
+        }
+      ],
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "Other original translations were read,but each receives a current review only after its own full revised-body comparison and actual validation.",
+        "Finite bounds<=100000,Rust1.90Windows64bit,not everyusize or target.",
+        "No huge upper-bound enumeration,timing,visualbrowser or cryptographic audit.",
+        "Full-siteCI/publication pending."
+      ]
     }
   },
   "stages": [
@@ -157,6 +249,15 @@
         "zh-tw"
       ],
       "validation": "docs/translation-review/batch-021-chinese-validation.json",
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-29",
+      "languages": [
+        "es",
+        "ko"
+      ],
+      "validation": "docs/translation-review/batch-021-es-ko-validation.json",
       "publicationPending": true
     }
   ]

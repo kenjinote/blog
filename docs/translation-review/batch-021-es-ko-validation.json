@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-29T17:26:07.109270+09:00",
+  "compiler": "rustc 1.90.0 (1159e78c4 2025-09-14)\nbinary: rustc\ncommit-hash: 1159e78c4747b02ef996e55082b704c09b970588\ncommit-date: 2025-09-14\nhost: x86_64-pc-windows-msvc\nrelease: 1.90.0\nLLVM version: 20.1.8\n",
+  "independentReference": "Python integer trial division through100000,fullvector equality not hashes or a mirrored stored-prime algorithm.",
+  "versions": [
+    {
+      "language": "es",
+      "sha256": "bd24ffe2fd16281deec02b8f472f0e2e95a2bdefed68d6681e56308a1f436a79",
+      "canonical": "https://kenji.blog/es/p/rust%E3%81%A7n%C3%BAmero-primo%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "sourceMathExpressions": 0,
+      "rustBlocks": 1,
+      "htmlCodeExact": true,
+      "sieveTarget": "https://kenji.blog/es/p/criba-de-erat%C3%B3stenes%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AEn%C3%BAmero-primo%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ]
+    },
+    {
+      "language": "ko",
+      "sha256": "ddb8d02fa18b4f33620287934dfb35fef53be27a9ec716abf7d7a5e7c05d7abd",
+      "canonical": "https://kenji.blog/ko/p/rust%E3%81%A7%EC%86%8C%EC%88%98%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B/",
+      "sourceMathExpressions": 0,
+      "rustBlocks": 1,
+      "htmlCodeExact": true,
+      "sieveTarget": "https://kenji.blog/ko/p/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98-%EC%B2%B4%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A61000%E4%BB%A5%E4%B8%8B%E3%81%AE%EC%86%8C%EC%88%98%E3%82%92%E5%88%97%E6%8C%99%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "executions": [
+        {
+          "mode": "debug-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        },
+        {
+          "mode": "optimized-checked",
+          "samplePrimes": 168,
+          "fullSampleOutputExact": true,
+          "fullVectorsAgainstIndependentTrialDivision": 2161
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Finite bounds<=100000 withRust1.90Windows64bit,not everyusize or target.",
+    "No huge upper-bound run,performance benchmark,visualbrowser/native-language or cryptographic audit.",
+    "Arithmetic bounds justified separately; no attempt to enumerateusizeMAX.",
+    "Prose reading is separate; script does not record or approve translations."
+  ],
+  "publicationPending": true
+}

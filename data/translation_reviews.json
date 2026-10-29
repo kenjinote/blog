@@ -2555,6 +2555,26 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-021.json",
       "evidenceHash": "d9574c1e3f9f76dd8b303a5c6dc9c6c6a693e973d4b20c6265d7119417102007"
+    },
+    "post/Rustで素数を列挙する/index.es.md": {
+      "source": "post/Rustで素数を列挙する/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a82d199b8f195dbbc6cba8b28180142d56ff3ff02db3abfb8cc1bf939b3c49fa",
+      "translationHash": "bd24ffe2fd16281deec02b8f472f0e2e95a2bdefed68d6681e56308a1f436a79",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-021.json",
+      "evidenceHash": "c25dae6ca5f5dd917bb0a02033b034092379e083a6abe3252677cab9197a5fe1"
+    },
+    "post/Rustで素数を列挙する/index.ko.md": {
+      "source": "post/Rustで素数を列挙する/index.md",
+      "reviewedAt": "2026-10-29",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a82d199b8f195dbbc6cba8b28180142d56ff3ff02db3abfb8cc1bf939b3c49fa",
+      "translationHash": "ddb8d02fa18b4f33620287934dfb35fef53be27a9ec716abf7d7a5e7c05d7abd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-021.json",
+      "evidenceHash": "64a0724e01ca6fa9bf909ef5b5e92398398661610cb8b28d0b0b2328668ad992"
     }
   }
 }
