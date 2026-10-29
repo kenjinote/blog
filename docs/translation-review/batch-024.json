@@ -160,6 +160,46 @@
         "Source and decoded HTML checked; no browser visual/KaTeX/Mermaid runtime certification.",
         "Publication/live checks pending."
       ]
+    },
+    "post/chinese-remainder-theorem/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/chinese-remainder-theorem/index.md",
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "translationHash": "66cd9cd6edfc31ce55dc766e44bdea5ff74b00d8458fb0bdd5039647ae901c0f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read selected original and revised metadata, complete body, complete Python block and Mermaid source independently; compared every topic against current Japanese and reread final local wording changes. Preserved Sunzi, integer CRT existence/uniqueness, inverse construction, validated Python, RSA-CRT, performance/security, rings, polynomials/interpolation and RNS. Kept assumptions, reconstruction ranges, API exclusions and arithmetic/security distinctions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Read original and revised Korean metadata, all body, complete Python and diagram independently; reread final two-prime-key sentence. Compared 쌍마다 서로소,법,나머지/나머지류/대표원,곱셈 역원,가환환/곱셈 항등원/아이디얼,체/대수적 폐포,비밀 지수/개인키,상수 시간/부채널,채널/자리올림. Fixed arbitrary k-component residue tuple being called a pair(쌍), and replaced awkward 기표/승화 narrative. Matched title/description/body 중국인의 나머지 정리 and 아이디얼 to the scoped official SNU Algebra1 course description; 이데알 is also valid, not treated as a mathematical error. Original tag/category taxonomy retained. Distinguished RSA integer representative from encoded/plaintext message, secret exponents from entire key, conditional speed estimate from benchmark, and interchannel carry from internal binary carry. Matching Korean reviewedRSA link and six primary references preserved."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared proof and assumptions, pairwise versus total gcd, noncoprime compatibility versus API rejection, valid RSA key and reconstruction, comaximal ideals, algebraic-closure counterexample, interpolation degree bound and modular RNS arithmetic. Selected translation and current Japanese each41TeX exact in source and decoded HTML. Selected language separately passed1647small-pair cases,1365triple cases,128large signed cases,9999gcd/inverse cases,3233RSA representatives and22050RNS operations. Auxiliary GF(7) interpolation bijection343 once per invocation shared across selected languages. Finite checks are supplementary, not a universal proof. This selected program also passed319 signed single-modulus cases, covering the k=1 boundary; earlier language proofs are not retroactively claimed to contain these added cases."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed this complete article Python program separately underPython3.12.14 with exact two-line output23/105. Identical article code in generatedHTML; valid finite generator,18CRT rejection cases and5inverse rejection cases passed. Checked one localized Mermaid diagram with6edges against original topology and exact generatedHTML. Original selected-language complete program executed before replacement, including actual missing/extra-input truncation, preserved in the corresponding source-audit. Auxiliary RSA/RNS/interpolation checks are distinguished from article execution. No browser runtime, timing or cryptographic certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Six exact external primary references and matching-language reviewedRSA internal target verified in generatedHTML; internal target exists. Primary-source reading scope is documented in batch024source-notes, not a claim to read entire books/PDFs. Preserved effectiveSep14publicationdate,slug,heroimagehash,tags/categories;removedduplicateSep24date;math/Mermaid enabled and lastmodOct30. All14hreflang/13sidebar URLs exact.25bundlepreview multilingual1439pages andHTTPS2632HTML/41XML pass. Existing17tests passed at preceding JA/EN stage, not rerun or counted perlanguage. Publication pending."
+        }
+      },
+      "summary": "Complete ko review against corrected Japanese CRT, with input-contract Python, theorem assumptions, RSA limitations and bounded RNS representation.",
+      "languageSpecificFindings": "Read original and revised Korean metadata, all body, complete Python and diagram independently; reread final two-prime-key sentence. Compared 쌍마다 서로소,법,나머지/나머지류/대표원,곱셈 역원,가환환/곱셈 항등원/아이디얼,체/대수적 폐포,비밀 지수/개인키,상수 시간/부채널,채널/자리올림. Fixed arbitrary k-component residue tuple being called a pair(쌍), and replaced awkward 기표/승화 narrative. Matched title/description/body 중국인의 나머지 정리 and 아이디얼 to the scoped official SNU Algebra1 course description; 이데알 is also valid, not treated as a mathematical error. Original tag/category taxonomy retained. Distinguished RSA integer representative from encoded/plaintext message, secret exponents from entire key, conditional speed estimate from benchmark, and interchannel carry from internal binary carry. Matching Korean reviewedRSA link and six primary references preserved.",
+      "validation": "docs/translation-review/batch-024-ko-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other 7 translations remain unread and unreviewed at this stage.",
+        "Finite checks are not exhaustive proof or a cryptographic/timing/fault-security audit.",
+        "Source and decoded HTML checked; no browser visual/KaTeX/Mermaid runtime certification.",
+        "Publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -225,6 +265,25 @@
       "unreviewedTranslations": 12740,
       "humanReviews": 0,
       "otherTranslationsUnread": 8,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "ko"
+      ],
+      "sourceHash": "82d733787857e50fe29e29a5087f8559c225580ed04d9c3be73883d9db651e8e",
+      "validation": "docs/translation-review/batch-024-ko-validation.json",
+      "texEach": 41,
+      "completeProgramsExecutedSeparately": 1,
+      "diagramEdgesEach": 6,
+      "multilingualPages": 1439,
+      "httpsHtmlPages": 2632,
+      "httpsXmlFiles": 41,
+      "reviewedTranslationsTotal": 293,
+      "unreviewedTranslations": 12739,
+      "humanReviews": 0,
+      "otherTranslationsUnread": 7,
       "publicationPending": true
     }
   ]

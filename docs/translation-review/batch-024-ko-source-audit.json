@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:10:11.545959+09:00",
+  "path": "content/post/chinese-remainder-theorem/index.ko.md",
+  "sha256": "92dbe5fd987805c51c3ae484cf33a3a20106020e6acfc7cf4061467ec893fc17",
+  "fullOriginalBodyMetadataPythonAndDiagramRead": true,
+  "completeOriginalPythonExecuted": true,
+  "stdout": "손자의 문제의 해: 23\n",
+  "missingResidueReturned": 5,
+  "extraResidueReturned": 2,
+  "findings": "Read all original Korean. In addition to shared theorem/API/security gaps, k-component residue tuple was called a pair(쌍); 기표 awkwardly used for notation; message plaintext conflated with integer representative. 이데알 is a valid transliteration; chose 아이디얼 consistently rather than declaring the old term wrong. Preserve original tags and category taxonomy.",
+  "terminologySource": {
+    "url": "https://likesnu.snu.ac.kr/usr/course/courseDetail.do?course_cd=3341.501&lang=ko",
+    "scope": "Opened official SNU Algebra1 course description and read ring-theory passage using 중국인의 나머지 정리,아이디얼,환,체. Only terminology,not the full course or theorem/security validation."
+  },
+  "reviewed": false
+}

@@ -21,6 +21,7 @@ def main():
         if math.gcd(m,n)!=1:continue
         expected={(x%m,x%n):x for x in range(m*n)};assert len(expected)==m*n
         for residues,x in expected.items():small.append((residues,(m,n),x))
+    singleton=[([x],[m],x%m) for m in range(2,13) for x in range(-2*m,2*m+1)]
     triples=[]
     for moduli in [(3,5,7),(4,9,25),(5,8,9)]:
         total=math.prod(moduli)
@@ -56,7 +57,7 @@ def main():
         ns={'__name__':'__main__'};capture=io.StringIO()
         with contextlib.redirect_stdout(capture):exec(compile(code[0],str(p),'exec'),ns)
         assert capture.getvalue()=='Sunzi solution: 23\nCombined modulus: 105\n';crt=ns['chinese_remainder_theorem'];inverse=ns['mod_inverse']
-        for residues,moduli,x in small+triples+large:assert crt(residues,moduli)==x
+        for residues,moduli,x in singleton+small+triples+large:assert crt(residues,moduli)==x
         assert crt(iter([-1,8]),iter([3,5]))==8
         for residues,moduli,error in invalid:
             try:crt(residues,moduli)
@@ -83,7 +84,7 @@ def main():
         for x,y in itertools.product(range(105),repeat=2):
             assert crt([(x+y)%m for m in [3,5,7]],[3,5,7])==(x+y)%105
             assert crt([(x*y)%m for m in [3,5,7]],[3,5,7])==x*y%105
-        versions.append({'language':lang,'sha256':check.digest(p),'canonical':url,'texExpressions':41,'allTeXPreserved':True,'pythonBlocksExact':1,'completeProgramOutputExact':True,'smallPairCases':len(small),'smallTripleCases':len(triples),'largeSignedCases':128,'generatorInputsExact':True,'invalidCrtCases':len(invalid),'extendedGcdAndInverseCases':inverse_cases,'invalidInverseCases':len(bad_inverse),'rsaCrtAllRepresentatives':3233,'rnsAddAndMultiplyCases':22050,'diagramEdges':6,'referencesMetadataLanguageMapsExact':True,'passed':True})
+        versions.append({'language':lang,'sha256':check.digest(p),'canonical':url,'texExpressions':41,'allTeXPreserved':True,'pythonBlocksExact':1,'completeProgramOutputExact':True,'singleModulusSignedCases':len(singleton),'smallPairCases':len(small),'smallTripleCases':len(triples),'largeSignedCases':128,'generatorInputsExact':True,'invalidCrtCases':len(invalid),'extendedGcdAndInverseCases':inverse_cases,'invalidInverseCases':len(bad_inverse),'rsaCrtAllRepresentatives':3233,'rnsAddAndMultiplyCases':22050,'diagramEdges':6,'referencesMetadataLanguageMapsExact':True,'passed':True})
     # A finite polynomial evaluation bijection illustrates, not proves, interpolation.
     evaluations={tuple((a0+a1*x+a2*x*x)%7 for x in [0,1,3]):(a0,a1,a2) for a0,a1,a2 in itertools.product(range(7),repeat=3)};assert len(evaluations)==343
     output={'version':1,'checkedAt':datetime.now(timezone(timedelta(hours=9))).isoformat(),'pythonVersion':sys.version.split()[0],'scope':'Explicit selected versions only. Each complete article program executed and functions compared against independent enumeration/Python arithmetic. Auxiliary interpolation check once per invocation. No prose approval or ledger writes.','versions':versions,'auxiliaryInterpolationEvaluationBijection':343,'publicationPending':True,'limitations':['Finite inputs,not exhaustive proof or cryptographic audit.','Contract rejects noncoprime systems,unitmoduli andempty systems;does not implement generalizedCRT.','No timing/constant-time/production-key-validation or native-language certification.','Diagram source and HTML/TeX checked,no browser visual/runtime certification.']}

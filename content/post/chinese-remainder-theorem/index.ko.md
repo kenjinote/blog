@@ -1,9 +1,7 @@
 ---
-title: "중국인 나머지 정리 (Chinese Remainder Theorem) - 고대의 산술에서 현대의 RSA 암호를 지탱하는 대정리"
-date: "2026-09-24T19:44:38+09:00"
-description: "고대 중국의 산술서에 기원을 둔 중국인 나머지 정리(CRT)에 대해, 그 수학적 원리부터 현대의 공개키 암호(RSA 암호)에서의 중요한 응용까지 자세히 해설합니다."
+title: "중국인의 나머지 정리 (Chinese Remainder Theorem) - 고대의 산술에서 현대의 RSA 암호를 지탱하는 대정리"
+description: "고대 중국의 산술서에 기원을 둔 중국인의 나머지 정리(CRT)에 대해, 그 수학적 원리부터 현대의 공개키 암호(RSA 암호)에서의 중요한 응용까지 자세히 해설합니다."
 slug: "chinese-remainder-theorem"
-date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "cryptography"]
 tags:
@@ -11,239 +9,176 @@ tags:
   - "CRT"
   - "RSA 암호"
   - "정수론"
+date: "2026-09-14T13:11:25+09:00"
+lastmod: 2026-10-30
+math: true
+mermaid: true
 ---
 
-## 처음으로
+중국인의 나머지 정리(CRT)는 서로 다른 법에 대한 나머지를 하나의 나머지류로 결합합니다. 정수 문제, RSA 개인키 연산, 환과 다항식, 나머지를 이용한 병렬 연산을 연결하는 정리입니다. 법의 조건과 복원 범위를 명시하고, 산술적 정확성과 암호학적 안전성을 구분해야 합니다.
 
-중국인 나머지 정리([Chinese Remainder Theorem](https://kenji.blog/ko/p/chinese-remainder-theorem/), 줄여서 CRT)는 정수론에서 가장 중요하고 아름다운 정리 중 하나입니다. 그 기원은 3세기에서 5세기경에 편찬된 것으로 알려진 고대 중국의 수학서 '손자산경'으로까지 거슬러 올라갑니다. 고대의 소박한 산술 문제에서 시작된 이 정리는 수천 년이 지난 현대에 이르러서도 우리가 일상적으로 이용하는 인터넷의 안전한 통신을 지탱하는 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호** 등의 공개키 암호 기술에서 필수불가결한 역할을 다하고 있습니다.
+## 1. 손자의 문제와 해의 범위
 
-본 기사에서는 이 **중국인 나머지 정리** 에 대해, 그 역사적 배경부터 수학적인 엄밀한 정의, 구체적인 계산 절차, 그리고 현대 암호 이론에서의 응용까지를 도해와 구체적인 예를 섞어가며 자세히 해설합니다.
+『손자산경』의 유명한 예는 3으로 나누면 2, 5로 나누면 3, 7로 나누면 2가 남는 수를 묻습니다. [역사 연구 논문에서 문제와 계산법을 확인할 수 있습니다](https://sgmathsociety.org/smsmedley/Vol-30-1/The%20History%20of%20the%20Chinese%20Reminder%20Theorem%20%28Law%20Huang%20lng%29.pdf).
 
-## 역사적 배경: 손자의 문제
+$$ x\equiv2\pmod3,\quad x\equiv3\pmod5,\quad x\equiv2\pmod7. $$
 
-중국인 나머지 정리의 뿌리는 '손자산경' 하권 제26문에 적혀 있는 다음과 같은 유명한 문제에 있습니다.
+최소의 음이 아닌 해는 23입니다. 그러나 정수 해가 하나뿐인 것은 아닙니다. 모든 해는 $x=23+105t$이며 $t\in\mathbb Z$입니다. 예를 들어 128도 조건을 만족합니다.
 
-> "지금 개수를 모르는 물건이 있다. 3개씩 세면 2개가 남고, 5개씩 세면 3개가 남고, 7개씩 세면 2개가 남는다. 물건의 개수는 몇 개인가?"
+## 2. 정수 CRT의 조건과 유일성
 
-이것을 현대 수학의 기표인 연립 합동식(시스템)을 사용하여 표현하면, 미지의 정수 $x$ 에 대해 다음과 같습니다.
+여기서는 $k\ge1$이고 각 법이 $m_i>1$이며, 쌍마다 서로소라고 가정합니다. 즉 $i\ne j$일 때 $\gcd(m_i,m_j)=1$입니다. 법 자체가 소수일 필요는 없습니다. 임의의 정수 나머지 $a_i$에 대해
 
-$$
-\begin{cases}
-x \equiv 2 \pmod 3 \\
-x \equiv 3 \pmod 5 \\
-x \equiv 2 \pmod 7
-\end{cases}
-$$
+$$ x\equiv a_i\pmod{m_i}\quad(1\le i\le k) $$
 
-이 문제의 해는 $x = 23$ 입니다. 손자산경에는 이 해를 도출하기 위한 구체적인 계산 절차도 제시되어 있으며, 이것이 중국인 나머지 정리의 구체적인 구성법의 첫 번째 예로 여겨집니다.
+은 법 $M=\prod_{i=1}^k m_i$에 대해 유일한 해를 가집니다. 따라서 $0\le x<M$인 대표원이 정확히 하나 존재합니다. 모든 법을 한꺼번에 취한 최대공약수가 1인 것만으로는 부족합니다. 6, 10, 15는 전체 최대공약수가 1이지만 쌍마다 서로소는 아닙니다. [정수 CRT의 증명](https://kconrad.math.uconn.edu/blurbs/ugradnumthy/crt.pdf)에서 이 차이를 설명합니다.
 
-## 수학적 정의와 정리의 주장
+임의의 두 해의 차이는 각 법으로 나누어떨어집니다. 법들이 쌍마다 서로소이므로 그 곱으로도 나누어떨어지며, 이것이 유일성을 증명합니다. 다음 구성은 존재성을 증명합니다.
 
-현대 수학에서 **중국인 나머지 정리** 는 다음과 같이 정식화됩니다.
+## 3. 역원을 이용한 구성과 계산 예
 
-### 정리의 주장
+각 법에 대해 확장 유클리드 알고리즘으로 다음 조건을 만족하는 곱셈 역원을 구합니다.
 
-서로소인 (최대공약수가 1인) $k$ 개의 양의 정수 $m_1, m_2, \dots, m_k$ 가 있다고 합시다. 즉, 임의의 $i \neq j$ 에 대해 $\gcd(m_i, m_j) = 1$ 이 성립합니다.
+$$ M_i=M/m_i,\quad M_i y_i\equiv1\pmod{m_i} $$
 
-이때 임의의 정수 $a_1, a_2, \dots, a_k$ 에 대해, 다음의 연립 합동식을 만족하는 정수 $x$ 가 법(모듈로) $M = m_1 m_2 \dots m_k$ 에서 유일하게 존재합니다.
+서로소 조건이 역원의 존재를 보장합니다. 다음 합을 법에 따른 범위로 줄이면 해를 얻습니다.
 
-$$
-\begin{cases}
-x \equiv a_1 \pmod{m_1} \\
-x \equiv a_2 \pmod{m_2} \\
-\vdots \\
-x \equiv a_k \pmod{m_k}
-\end{cases}
-$$
+$$ x=\left(\sum_{i=1}^k a_iM_iy_i\right)\bmod M. $$
 
-다시 말해 해 $x$ 는 $0 \leq x < M$ 의 범위에 오직 하나만 존재하며, 모든 해는 $x \equiv x_0 \pmod M$ 의 형태로 표현됩니다.
+$m_j$를 법으로 계산하면 $i\ne j$인 항들은 사라지고, 남은 항은 $a_j$와 합동입니다. 따라서 해가 존재합니다.
 
-### 증명 및 구성법 (가우스의 알고리즘)
+손자의 예에서는 $M=105$이고 부분 곱은 35, 21, 15, 이에 대응하는 역원은 2, 1, 1입니다.
 
-이 정리의 훌륭한 점은 단순히 해의 존재를 보장할 뿐만 아니라, 구체적인 해를 구성하는 알고리즘을 제공하고 있다는 것입니다. 아래에 그 구성법을 나타냅니다.
+$$ 2\cdot35\cdot2+3\cdot21\cdot1+2\cdot15\cdot1=233,
+\qquad233\bmod105=23. $$
 
-1. 전체의 곱 $M = m_1 m_2 \dots m_k$ 를 계산합니다.
-2. 각 $i$ 에 대해 $M_i = \frac{M}{m_i}$ 를 계산합니다. ($M_i$ 는 $m_i$ 를 제외한 모든 법의 곱입니다)
-3. $\gcd(M_i, m_i) = 1$ 이므로, 법 $m_i$ 에서 $M_i$ 의 곱셈 역원 $y_i$ 가 존재합니다. 즉, $M_i y_i \equiv 1 \pmod{m_i}$ 를 만족하는 $y_i$ 를 확장 [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/) 등으로 구합니다.
-4. 최종 해 $x$ 는 다음 식으로 주어집니다.
+서로소가 아닌 법에 대해서는 별도의 일반화가 있습니다. 두 법의 경우, 최대공약수가 두 나머지의 차이를 나눌 때 그리고 그때에만 해가 존재하며, 해는 최소공배수를 법으로 유일합니다. 예를 들어 법 4, 6과 나머지 1, 3은 법 12의 해 9를 주지만, 나머지 0, 1이면 해가 없습니다. 아래 코드는 이 일반화를 구현하지 않고 쌍마다 서로소인 법만 받습니다.
 
-$$
-x = \sum_{i=1}^{k} a_i M_i y_i \pmod M
-$$
+## 4. 입력을 검사하는 Python 구현
 
-이 $x$ 가 원래의 연립 합동식을 만족한다는 것은, 각 $m_j$ 를 법으로 하여 $x$ 를 평가함으로써 쉽게 확인할 수 있습니다. $i \neq j$ 일 때 $M_i$ 는 $m_j$ 의 배수이므로 $M_i \equiv 0 \pmod{m_j}$ 가 됩니다. 따라서 합의 항 중에서 $i = j$ 인 항만이 남아 $x \equiv a_j M_j y_j \equiv a_j \cdot 1 \equiv a_j \pmod{m_j}$ 가 되며, 조건을 만족하게 됩니다.
-
-## 구체적 예시를 통한 계산
-
-앞서 언급한 "손자의 문제"를 이 알고리즘으로 풀어봅시다.
-
-문제:
-$x \equiv 2 \pmod 3$  (여기서 $a_1=2, m_1=3$)
-$x \equiv 3 \pmod 5$  (여기서 $a_2=3, m_2=5$)
-$x \equiv 2 \pmod 7$  (여기서 $a_3=2, m_3=7$)
-
-**단계 1:** $M$ 의 계산
-$M = 3 \times 5 \times 7 = 105$
-
-**단계 2:** $M_i$ 의 계산
-$M_1 = 105 / 3 = 35$
-$M_2 = 105 / 5 = 21$
-$M_3 = 105 / 7 = 15$
-
-**단계 3:** 역원 $y_i$ 의 계산
-- $35 y_1 \equiv 1 \pmod 3 \implies 2 y_1 \equiv 1 \pmod 3 \implies y_1 = 2$
-- $21 y_2 \equiv 1 \pmod 5 \implies 1 y_2 \equiv 1 \pmod 5 \implies y_2 = 1$
-- $15 y_3 \equiv 1 \pmod 7 \implies 1 y_3 \equiv 1 \pmod 7 \implies y_3 = 1$
-
-**단계 4:** 해 $x$ 의 계산
-$x = (2 \times 35 \times 2) + (3 \times 21 \times 1) + (2 \times 15 \times 1)$
-$x = 140 + 63 + 30 = 233$
-
-이것을 $M = 105$ 로 나눈 나머지를 구합니다.
-$233 \equiv 23 \pmod{105}$
-
-따라서 최소의 양의 해는 **23** 이 되며, 훌륭하게 손자의 해와 일치했습니다.
-
-## 현대의 응용: [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호와 CRT
-
-고대의 퍼즐이었던 **중국인 나머지 정리** 는 현대의 디지털 사회에서 지극히 실용적인 용도를 가지고 있습니다. 그 대표적인 예가 **RSA 암호** 에서의 복호화 및 서명 생성의 고속화입니다.
-
-### RSA 암호 개요
-
-RSA 암호에서는 두 개의 거대한 소수 $p$ 와 $q$ 를 사용하여, 그 곱인 $N = pq$ 를 공개키의 일부로 합니다. 암호문 $C$ 로부터 평문 $M$ 을 복호화하는 계산은 비밀키 $d$ 를 사용하여 다음과 같이 이루어집니다.
-
-$$
-M = C^d \pmod N
-$$
-
-여기서 $N$ 은 매우 거대한 수(예: 2048비트)이고, $d$ 도 동등한 크기가 되기 때문에, 이 거듭제곱 잉여 계산에는 큰 계산 비용이 듭니다.
-
-### CRT를 통한 고속화 (RSA-CRT)
-
-여기서 **중국인 나머지 정리** 의 차례입니다. $N$ 을 법으로 하는 거대한 계산을 수행하는 대신, $N$ 의 소인수인 $p$ 와 $q$ 를 법으로 하는 두 개의 작은 계산으로 분할하고, 마지막에 CRT를 이용하여 원래의 해를 재구성하는 접근 방식을 취합니다.
-
-구체적으로는 다음과 같은 절차를 거칩니다.
-
-```mermaid
-graph TD
-    A["암호문 C"] --> B["C_p = C mod p 를 계산"]
-    A --> C["C_q = C mod q 를 계산"]
-    B --> D["M_p = (C_p)^(d mod (p-1)) mod p 를 계산"]
-    C --> E["M_q = (C_q)^(d mod (q-1)) mod q 를 계산"]
-    D --> F["CRT를 사용하여 M_p 와 M_q 에서 M mod N 을 복원"]
-    E --> F
-    F --> G["평문 M"]
-```
-
-1. 비밀키로서 $d$ 대신, $d_p = d \pmod{p-1}$ 와 $d_q = d \pmod{q-1}$ 을 미리 계산해 둡니다.
-2. 법 $p$ 와 법 $q$ 에 대한 복호화를 개별적으로 수행합니다.
-   $M_p = C^{d_p} \pmod p$
-   $M_q = C^{d_q} \pmod q$
-3. $M_p$ 와 $M_q$ 에 대하여 CRT를 적용해, $M \pmod N$ 을 구합니다.
-
-법이 절반의 비트 길이(예: 1024비트)가 되면, 거듭제곱 계산의 비용은 약 1/8이 됩니다. 이것을 2회 수행해도 전체 비용은 약 1/4이 되어, [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)-CRT를 이용함으로써 복호화나 서명 생성을 **약 4배 고속화** 할 수 있습니다. 스마트폰이나 IC 카드 등 계산 자원이 한정된 디바이스에서 이러한 고속화는 극히 중요합니다.
-
-## 중국인 나머지 정리의 프로그래밍 구현
-
-이론뿐만 아니라, 실제로 프로그램을 작성하여 **중국인 나머지 정리** 를 구현해 봅시다. 여기에서는 Python을 사용하여 가우스의 알고리즘을 구현합니다.
+Python 내장 `int`만 허용하며 `bool`과 부동소수점 값은 거부합니다. 두 입력은 길이가 같고 비어 있지 않은 유한 이터러블이어야 합니다. 각 법은 1보다 커야 하며 법들은 쌍마다 서로소여야 합니다. 나머지는 음수이거나 해당 법보다 커도 됩니다. 반환값은 법들의 곱에 대한 최소의 음이 아닌 대표원입니다. 법 1과 빈 연립식을 제외하는 것은 이 교육용 API의 명시적인 계약입니다.
 
 ```python
-def extended_gcd(a, b):
-    """
-    확장 유클리드 호제법
-    a*x + b*y = gcd(a, b) 가 되는 (gcd(a, b), x, y) 를 반환
-    """
-    if a == 0:
-        return b, 0, 1
-    else:
-        g, y, x = extended_gcd(b % a, a)
-        return g, x - (b // a) * y, y
+from math import gcd, prod
 
-def mod_inverse(a, m):
-    """
-    법 m 에 대한 a 의 곱셈 역원을 반환
-    """
-    g, x, y = extended_gcd(a, m)
+
+def _extended_gcd(a, b):
+    # Internal helper: integer a, positive integer b.
+    old_r, r = a, b
+    old_s, s = 1, 0
+    old_t, t = 0, 1
+    while r:
+        quotient = old_r // r
+        old_r, r = r, old_r - quotient * r
+        old_s, s = s, old_s - quotient * s
+        old_t, t = t, old_t - quotient * t
+    return old_r, old_s, old_t
+
+
+def mod_inverse(a, modulus):
+    if type(a) is not int or type(modulus) is not int:
+        raise TypeError("Arguments must be built-in integers")
+    if modulus <= 1:
+        raise ValueError("Modulus must exceed one")
+    g, x, _ = _extended_gcd(a % modulus, modulus)
     if g != 1:
-        raise Exception('모듈러 역원이 존재하지 않습니다')
-    else:
-        return x % m
+        raise ValueError("Inverse does not exist")
+    return x % modulus
 
-def chinese_remainder_theorem(a_list, m_list):
-    """
-    중국인 나머지 정리 (CRT)
-    x ≡ a_i (mod m_i) 를 만족하는 x 를 반환
-    """
-    total_m = 1
-    for m in m_list:
-        total_m *= m
-        
-    x = 0
-    for a, m in zip(a_list, m_list):
-        M_i = total_m // m
-        y_i = mod_inverse(M_i, m)
-        x += a * M_i * y_i
-        
-    return x % total_m
 
-# 손자의 문제를 푼다
-a = [2, 3, 2]
-m = [3, 5, 7]
-result = chinese_remainder_theorem(a, m)
-print(f"손자의 문제의 해: {result}") # 출력: 23
+def chinese_remainder_theorem(residues, moduli):
+    residues, moduli = tuple(residues), tuple(moduli)
+    if not moduli or len(residues) != len(moduli):
+        raise ValueError("Provide equally sized, nonempty inputs")
+    if any(type(x) is not int for x in residues + moduli):
+        raise TypeError("Residues and moduli must be built-in integers")
+    if any(m <= 1 for m in moduli):
+        raise ValueError("Every modulus must exceed one")
+    for i, m in enumerate(moduli):
+        if any(gcd(m, other) != 1 for other in moduli[:i]):
+            raise ValueError("Moduli must be pairwise coprime")
+
+    combined_modulus = prod(moduli)
+    result = 0
+    for a, m in zip(residues, moduli):
+        partial = combined_modulus // m
+        inverse = mod_inverse(partial, m)
+        result = (result + (a % m) * partial * inverse) % combined_modulus
+    return result
+
+
+if __name__ == "__main__":
+    residues = [2, 3, 2]
+    moduli = [3, 5, 7]
+    print("Sunzi solution:", chinese_remainder_theorem(residues, moduli))
+    print("Combined modulus:", prod(moduli))
 ```
 
-이와 같이 단 몇 십 줄의 코드로 **중국인 나머지 정리** 를 컴퓨터 상에 재현할 수 있습니다. 이 구현은 경기 프로그래밍 등에서도 빈번하게 쓰이는 기본적인 알고리즘입니다.
+Python 3.12로 실행하면 `Sunzi solution: 23`과 `Combined modulus: 105`를 출력합니다. 길이가 다를 때 조용히 잘라내지 않으며, 0이나 음수인 법, 자료형, 서로소 조건을 검사합니다. Python 정수는 고정 비트 폭의 오버플로를 피하지만 시간과 메모리는 입력 길이와 정수 크기에 따라 달라집니다. 상수 시간 암호 구현은 아닙니다.
 
-## 추상 대수학에서의 일반화: 환과 이데알
+## 5. RSA-CRT가 복원하는 값
 
-**중국인 나머지 정리** 는 단순한 정수의 성질에 그치지 않고, 현대 수학의 중요한 분야인 **추상 대수학** 에서 더욱 일반적인 형태로 확장되고 있습니다.
+두 소수를 사용하는 유효한 RSA 키를 가정합니다. 서로 다른 홀수 소수 $p,q$, $N=pq$, 공개 지수 $e$, 비밀 지수 $d$를 사용하며 $ed\equiv1\pmod{\lambda(N)}$을 만족해야 합니다. 여기서 $\lambda(N)=\operatorname{lcm}(p-1,q-1)$입니다. 암호문 대표원은 $0\le C<N$을 만족하고, 직접적인 개인키 연산은 $m=C^d\bmod N$입니다.
 
-가환환 $R$ 과 그 이데알 $I_1, I_2, \dots, I_k$ 를 생각해 봅시다. 이들 이데알이 서로소일 때(즉, 임의의 $i \neq j$ 에 대해 $I_i + I_j = R$ 이 성립할 때), 다음과 같은 자연스러운 환 준동형 사상 $\phi$ 를 정의할 수 있습니다.
+CRT 매개변수를 준비합니다.
 
-$$
-\phi: R \to (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
-$$
-\phi(x) = (x \pmod{I_1}, x \pmod{I_2}, \dots, x \pmod{I_k})
-$$
+$$ d_p=d\bmod(p-1),\quad d_q=d\bmod(q-1),\quad q_{\mathrm{inv}}=q^{-1}\bmod p. $$
 
-추상 대수학에서의 **중국인 나머지 정리** 는, 이 준동형 사상 $\phi$ 가 전사이며, 그 핵(커널)이 이데알의 교집합 $\bigcap_{i=1}^k I_i$ (이것은 이데알의 곱 $\prod_{i=1}^k I_i$ 과 일치합니다)이 됨을 주장하고 있습니다.
+$$ m_p=C^{d_p}\bmod p,\quad m_q=C^{d_q}\bmod q. $$
 
-따라서 제1 동형 정리에 의해 다음의 자연스러운 동형이 성립합니다.
+$$ h=(m_p-m_q)q_{\mathrm{inv}}\bmod p,\qquad m=m_q+qh. $$
 
-$$
-R / \left( \bigcap_{i=1}^k I_i \right) \cong (R/I_1) \times (R/I_2) \times \dots \times (R/I_k)
-$$
+이 대표원은 두 소수 각각에 대해 필요한 나머지를 가지며 원래 법의 범위 안에 있습니다. [RFC 8017의 3.2절과 5.1.2절](https://www.rfc-editor.org/rfc/rfc8017.html)은 이 개인키 표현과 복원법을 명시합니다. 두 CRT 지수만으로 개인키 전체를 대체할 수는 없습니다. 인수와 계수도 비밀 키 재료입니다.
 
-### 다항식환으로의 응용
+```mermaid
+flowchart TD
+    A["범위 안의 암호문 대표원 C와 유효한 개인키"] --> B["m_p = C^d_p mod p"]
+    A --> C["m_q = C^d_q mod q"]
+    B --> D["h = (m_p - m_q) q_inv mod p"]
+    C --> D
+    D --> E["m = m_q + q h 복원"]
+    E --> F["검토된 라이브러리에서 스킴 처리 계속"]
+```
 
-이 일반화된 정리의 가장 중요한 응용 중 하나가, 체 $F$ 위의 1변수 다항식환 $F[x]$ 에서의 **중국인 나머지 정리** 입니다.
+이 그림은 정수 연산만 나타내며 메시지 인코딩과 스킴 검증을 생략합니다. 실제 암호화와 서명은 서로 다른 스킴을 사용합니다. [RSA 입문 글](https://kenji.blog/ko/p/rsa-encryption-math-explained-for-beginners/)에서 설명하듯이, 보안 검토를 거친 라이브러리가 목적에 맞는 처리를 수행해야 합니다.
 
-정수에서의 '서로소인 정수'는, 다항식환에 있어서는 '공통의 근을 갖지 않는 (최대공약다항식이 상수인) 다항식'에 해당합니다. 이 다항식 버전의 CRT는 라그랑주 보간([Lagrange](https://kenji.blog/ko/p/lagrange/) interpolation)의 이론적 뒷받침이 되며, 주어진 여러 점을 지나는 최소 차수의 다항식을 유일하게 결정하는 알고리즘과 완전히 일치합니다. 또한 이는 오류 정정 부호의 일종인 **리드-솔로몬 부호** 의 수학적 기반이기도 합니다.
+## 6. 속도 추정과 구현의 경계
 
-## 잉여 수계(RNS)를 통한 초병렬 계산
+[HAC 14장](https://cacr.uwaterloo.ca/hac/about/chap14.pdf)의 Note 14.75는 두 소수의 크기가 비슷하고, 고전적인 이차 비용의 곱셈을 사용하며, 곱셈 횟수가 지수의 비트 길이에 비례하고, 복원 비용을 무시할 수 있다는 가정 아래 약 4배라는 추정치를 제시합니다. 곱셈 알고리즘, 병렬 실행, 방어 기법, 기기에 따라 비율은 달라집니다. 이 글의 코드를 실측해 4배 빨라졌다는 뜻이 아닙니다.
 
-**중국인 나머지 정리** 의 공학적인 응용으로서 **잉여 수계 (Residue Number System, RNS)** 에 대해서도 언급해 둡시다.
+따로 계산한 두 CRT 나머지 중 하나에만 오류가 생겼을 때, 결과를 검사하지 않으면 비밀 인수가 드러날 수 있습니다. [RSA-CRT 오류 분석 논문](https://courses.csail.mit.edu/6.857/2010/handouts/faults.pdf)에서 그 조건을 설명합니다. 교육용 산술이 정확하다고 해서 오류 방어나 부채널 저항성까지 보장되는 것은 아닙니다. 공개키를 이용한 검사 등을 포함한 방어는 전체 스킴을 처리하는 라이브러리에서 구현해야 합니다.
 
-보통 컴퓨터는 수치를 2진수로 표현하고 계산을 수행합니다. 그러나 덧셈이나 곱셈을 할 때, 자리올림(캐리)의 전파가 발생하기 때문에 비트 폭이 커지면 회로의 지연이 증대한다는 문제가 있습니다.
+## 7. 환과 아이디얼로의 일반화
 
-RNS에서는 서로소인 법들의 집합 $\{m_1, m_2, \dots, m_k\}$ 를 준비하고, 거대한 정수 $X$ 를 각각의 법으로 나눈 나머지의 쌍 $(x_1, x_2, \dots, x_k)$ 으로써 표현합니다.
+곱셈 항등원을 가진 가환환 $R$의 유한 개 아이디얼이 쌍마다 $I_i+I_j=R$을 만족한다고 가정합니다. 자연스러운 준동형
 
-이 표현의 최대의 이점은 가산과 승산에서 **자리올림이 발생하지 않는다** 는 것입니다.
-예를 들어 $X$ 와 $Y$ 를 더할 경우, 각 법마다 독립적으로 계산을 수행할 수 있습니다.
+$$ \phi:R\longrightarrow\prod_{i=1}^k R/I_i,\qquad
+\phi(r)=(r+I_1,\ldots,r+I_k) $$
 
-$$
-X + Y \leftrightarrow ( (x_1+y_1)\pmod{m_1}, \dots, (x_k+y_k)\pmod{m_k} )
-$$
-$$
-X \times Y \leftrightarrow ( (x_1y_1)\pmod{m_1}, \dots, (x_k y_k)\pmod{m_k} )
-$$
+은 전사이고 그 핵은 아이디얼들의 교집합입니다. 이 조건 아래에서는 교집합이 아이디얼들의 곱과 같으므로 다음이 성립합니다.
 
-각 법에서의 계산은 완전히 독립되어 있으므로, 병렬 회로를 구성함으로써 극히 고속의 연산이 가능해집니다. 최종적인 결과를 통상의 수치로 되돌릴 때 바로 **중국인 나머지 정리** 가 사용됩니다. 이 기술은 실시간성이 요구되는 디지털 신호 처리(DSP)나 특정한 암호 처리 회로의 설계에 있어서 현재도 연구되며 실용화되고 있습니다.
+$$ R/\left(\bigcap_{i=1}^k I_i\right)
+\cong\prod_{i=1}^k R/I_i,\qquad
+\bigcap_{i=1}^k I_i=\prod_{i=1}^k I_i. $$
 
-## 요약
+[Stacks Project의 중국인의 나머지 정리](https://stacks.math.columbia.edu/tag/00DT)에 조건과 증명이 나옵니다. 정수 법들이 쌍마다 서로소인 경우는 이 아이디얼 조건의 특수한 경우입니다.
 
-**중국인 나머지 정리** 는 단순한 수학 퍼즐에서 시작하여 추상 대수학의 이데알 구조 정리로 승화하고, 이어서 현대 암호 이론과 컴퓨터 과학의 기반 기술로 발전해 왔습니다.
+## 8. 다항식과 보간
 
-수천 년의 시간을 넘어, 고대 중국 수학자들의 지혜가 우리 스마트폰 속 암호 처리로서 계속 살아 숨쉬고 있다는 것은, 수학이라는 학문이 가진 보편성과 강인함을 상징하고 있다고 말할 수 있을 것입니다.
+체 위의 다항식이 서로소라는 것은 최대공약다항식이 0이 아닌 상수라는 뜻입니다. 원래의 체에서 공통근이 없다는 것만으로는 부족합니다. 예를 들어 유리수체에서 두 다항식을 모두 $x^2+1$로 잡으면, 둘 다 유리근이 없지만 최대공약다항식은 바로 그 이차다항식입니다. 공통근으로 서로소 조건을 설명하려면 대수적 폐포에서 생각해야 합니다.
+
+서로 다른 평가점 $\alpha_1,\ldots,\alpha_k$에 대응하는 일차 인수들은 쌍마다 서로소입니다. 따라서 주어진 값을 갖는 다항식은 차수가 $<k$인 다항식들 중에서 유일합니다. 이것이 라그랑주 보간과의 연결입니다. 더 높은 차수를 허용하면 유일하지 않습니다. 유한체 위의 값 평가와 차수 제한은 리드–솔로몬 부호와도 연결되지만, CRT만으로 오류 정정 능력이 보장되지는 않습니다.
+
+## 9. 잉여 수 체계와 복원 범위
+
+RNS는 여러 법에 대한 나머지의 튜플로 정수를 표현하고, 성분별 덧셈과 곱셈을 허용합니다. 여기서 $x_i=X\bmod m_i$, $y_i=Y\bmod m_i$로 둡니다. 법들의 곱이 $M$이면 다음과 같습니다.
+
+$$ (X+Y)\bmod M\longleftrightarrow
+((x_i+y_i)\bmod m_i)_{i=1}^k, $$
+
+$$ (XY)\bmod M\longleftrightarrow
+((x_iy_i)\bmod m_i)_{i=1}^k. $$
+
+채널 사이의 자리올림 전파는 필요 없지만, 각 채널 안의 이진 연산에는 여전히 자리올림이 생길 수 있습니다. 복원 결과는 법들의 곱에 대한 대표원입니다. 범위를 벗어난 제한 없는 정수의 합이나 곱을 이 나머지들만으로 유일하게 복원하지는 못합니다. 비교, 나눗셈, 일반적인 표현으로의 변환에는 추가 작업이 필요합니다.
+
+고전적인 나머지 문제부터 암호학, 대수학, 병렬 연산까지 CRT는 법과 범위에 관한 조건 아래 서로 맞는 나머지들을 복원합니다. 그 범위와 용도를 구분해야 올바르게 적용할 수 있습니다.
