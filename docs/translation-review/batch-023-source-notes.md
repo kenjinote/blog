@@ -32,3 +32,8 @@
 ## 繁體中文の確認
 
 修正前後の繁体字全文・メタデータ・全2図を独立に読了。質數／合數／互質、同餘、底數／指數／模數、餘數／代表元素、反元素、金鑰、公私密指數、機率、亂數、簽章を照合。歐拉も有効な訳であり誤りとはせず、他の校閲済み記事に合わせ尤拉へ整理。費馬檢驗は必要條件の検査であり證明ではないこと、偽質數と卡邁克爾數、正確性と機密性、原語と加密方案を区別。相異質數と全代表元素のCRT証明、独立一様な底と事後確率の区別を確認。自己リンク・伝記リンクの反復と普遍的な暗号依存の断定を整理。 各58TeX・図5辺／5辺とソース全文、14hreflang／13切替先、3外部・2内部参照、公開日と画像ハッシュをdocs/translation-review/batch-023-chinese-validation.jsonで確認。補助算術は当該検証呼出しで1回実行した共通検査であり、各翻訳での実行と重複計上しない。24記事束の多言語1387ページ、HTTPS2540HTML／41XMLを通過。確認日2026-10-29、AI。残る9翻訳と公開確認は未完了。
+
+
+## Españolの確認
+
+修正前後のスペイン語全文・メタデータ・全2図を独立に読了。pequeño teorema,congruencia,coprimo,base,exponente,módulo,resto,representante,inverso,totiente,teorema chino del restoを照合。元のnúmeros realesは具体的な数の意味が実数とも読めるのでEjemplosで整数例として明確化し、元の数値が実数でもあること自体を誤りとはしない。testとdemostración、pseudoprimoとCarmichael、correcciónとconfidencialidad、primitivaとesquemaを区別。pruebaは検査にも証明にも使われるため図のno demuestra la primalidadを明示。非合同式に続く反対の場合を余り1と明確化し、原始RSAの文法を整理。自己・伝記リンクの反復と暗号全体への普遍的依存を除去。底の範囲、互いに素条件、相異素数、全代表元CRT、条件付き確率と事後確率を照合。 各58TeX・図5辺／5辺とソース全文、14hreflang／13切替先、3外部・2内部参照、公開日と画像ハッシュをdocs/translation-review/batch-023-es-validation.jsonで確認。補助算術は当該検証呼出しで1回実行した共通検査であり、各翻訳での実行と重複計上しない。24記事束の多言語1387ページ、HTTPS2540HTML／41XMLを通過。確認日2026-10-29、AI。残る8翻訳と公開確認は未完了。
