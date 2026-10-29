@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T00:31:50.699338+09:00",
+  "path": "content/post/chinese-remainder-theorem/index.fr.md",
+  "sha256": "e71bea4383189ae235a2d0d8047d937d9a04fae3e5298b64732009ad7165a0e5",
+  "fullOriginalBodyMetadataPythonAndDiagramRead": true,
+  "completeOriginalPythonExecuted": true,
+  "stdout": "Solution du problème de Sunzi : 23\n",
+  "missingResidueReturned": 5,
+  "extraResidueReturned": 2,
+  "findings": "Read complete original French. Crypto fragment linked to cryptocurrency; RSA third step has missing closing dollar after M_q. Shared missing input contract, polynomial root-field/degree condition, RNS range/interchannel-only carry qualification, RSA key-material distinction and model-dependent speed estimate. Original Sunzi23 program succeeds. Retain original title/description/tag/category taxonomy and effectiveSep14date.",
+  "reviewed": false
+}
