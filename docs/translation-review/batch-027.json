@@ -47,6 +47,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/サンクトペテルブルクのパラドックス/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/サンクトペテルブルクのパラドックス/index.md",
+      "sourceHash": "2811748d99d856be0d88241417c403223a1f588470252a0aabe8b077d225bd2e",
+      "translationHash": "8051ddfae90da13ae17e0352a61e024ae62a96a9979a48a8121f71a0714917e7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "旧簡体字版の本文全体・メタデータ・図を読み、改訂日本語に対する改訂簡体字版の7節・表・16式・図1点を全文再読して照合。ゲーム、期待値、歴史、水の比喩/限界効用、対数効用、経済学の全テーマを保持。无限赚钱と有限実現賞金、借遍倾家荡产也应该参与の誤った含意、全員共通4ドルと心理の数学的証明の断定を修正した。"
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "无条件期望/条件付き賞金、扩展意义下的期望净收益、以概率1为有限值と没有有限上界、边际效用递减と无上界、确定性等价金额(CE)と无差异参与费、初始财富/最终财富、凹性と损失厌恶、合同の上限を役割別に確認。Nは反面が出た回数ではなく首次出现反面时的抛掷次数と明確化。数字の2/4/8、1/2・1/4・1/8、資産1000と価格10.95を照合。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "全16TeXを一件ずつ日本語と照合。IID公平、Nの幾何分布/停止CDF、有限a.s./無限期待値、無条件寄与1と部分和K、有限cで定義される拡張期待値、対数微分2式/効用級数部分和と極限2/CE4、w>0/0≤c≤w、Gの符号とw>4での一意根、上限2^K契約のN≥Kによる期待値K+1を確認。補助検査1回共有の12長さ8190二値列・64有限級数・128項90桁の3資産例は別範囲で、一般無限証明や丸め区間証明/支払意思額の実測ではない。"
+        },
+        "code": {
+          "status": "checked",
+          "note": "本文の実行プログラムは0、Mermaid1点8辺。正面/反面と初回2・2回目4・3回目8、4回目以降も同じ規則という説明を図と照合。奖金无限翻倍という実際の無限賞金を連想する表示を反復規則に変更。本文のゲーム規則も候选奖金という不自然な名詞を簡潔にし、最後のNの文言とともに再読。生成HTMLの全TeXと図ソースを検査し、ブラウザ視覚やMermaid/KaTeX実行は認定しない。"
+        },
+        "links": {
+          "status": "checked",
+          "note": "Bernoulli1738/Sommer1954とTversky/Kahneman1981の2一次資料、および簡体字の大数定律/双信封悖论/贝叶斯定理の内部3参照を確認。引用中の1713/1728、古典1ducatと本稿2USDの尺度差、Daniel/Nicolausのcousin関係、Montmort/Cramerを照合。二重dateは公開HTML実効の9月10日を保持して1つにし、更新10月30日・元の分類/画像/slugを保持。14hreflang/13切替、多言語1609とHTTPS2933HTML/41XMLを検査。17テストは先行batch026の最終実行を参照し今回は未再実行。"
+        }
+      },
+      "summary": "簡体字全7節を校閲。無限期待値と有限賞金、CEと資産込み参加費、上限契約、効用/損失回避、歴史と重複日付を訂正。",
+      "languageSpecificFindings": "Nの首次出现反面的次数という曖昧さを首次出现反面时的抛掷次数へ明確化。候选奖金を簡潔な奖金とし、确定性等价金额と无差异参与费、边际效用递减と损失厌恶を区別。借债参与と全員共通4美元、数学证明人类心理の断定を除去。",
+      "validation": "docs/translation-review/batch-027-zh-cn-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "10other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,financial advice,empirical choice evidence or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -100,6 +141,58 @@
       "unreviewedTranslations": 12707,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "zh-cn"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "2811748d99d856be0d88241417c403223a1f588470252a0aabe8b077d225bd2e",
+      "validation": "docs/translation-review/batch-027-zh-cn-validation.json",
+      "checks": "docs/translation-review/batch-027-zh-cn-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-027-zh-cn-ledger-validation.json",
+      "texEach": 16,
+      "diagramsEach": 1,
+      "diagramEdges": [
+        8
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "binarySequenceLengths": 12,
+        "binarySequencesEnumerated": 8190,
+        "finiteSeriesCases": 64,
+        "logWealthFeeExamples": [
+          {
+            "w": "10",
+            "feeRounded": "4.97",
+            "terms": 128,
+            "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-77"
+          },
+          {
+            "w": "100",
+            "feeRounded": "7.79",
+            "terms": 128,
+            "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-76"
+          },
+          {
+            "w": "1000",
+            "feeRounded": "10.95",
+            "terms": 128,
+            "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-75"
+          }
+        ],
+        "scope": "Once per validator invocation,not per language. Full finite binary-sequence enumeration independently checks the capped contract and stopping CDF;finite series and Decimal fee calculations separately scoped. Not article-program execution,infinite-limit machine proof,interval-rounding proof or human-choice evidence."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 326,
+      "unreviewedTranslations": 12706,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 10,
       "publicationPending": true
     }
   ],
