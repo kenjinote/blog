@@ -450,6 +450,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/bayes-theorem/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/bayes-theorem/index.md",
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "translationHash": "becc4bc02bb1b07bc548a9d77147ef9fa9c0abc5be9ae52bfd06fe2ae52541de",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "アラビア語旧稿の全メタデータ・本文・両Mermaidを連続した2分割で読み、改訂日本語と比較。改稿全10節・表・22式・2図を全文再読し、最終のacquisition functionとvariationalの文言も照合した。4つのAI応用、統計的解釈、学習/更新の結びを維持し、全学習をMAPとする説明や最少試行・確実な較正の保証を訂正。"
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "الإمكان/دالة الإمكان(likelihood)はθを変数としdを固定する関数として定義し、الأرجحيةとの曖昧さを避けた。الاحتمال القبلي/البعدي、كثافة、التطبيع、منوال、الاحتمال التنبؤي البعدي、الحساسية/النوعية/القيمة التنبؤية الإيجابية(PPV)、accuracyの総正解率を照合。旧稿spamのالبريد الإلكتروني العشوائي(ランダムなメール)をالرسائل غير المرغوب فيهاへ修正。条件付き相互独立、رسم بياني موجه غير دوري、تقارب شبه مؤكدの確率1を明記した。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "全22TeXを日本語と照合。正規化とP(B)>0/逆条件P(A)>0、0<Z<∞、最大値達成時のMAP、連続密度と点確率、順序コイン12θ²(1−θ)・2/3対3/5、架空医学表99/1/495/9405・PPV1/6・accuracy95.04%、条件付き共同独立、有限離散DAGと追加の因果仮定、連続重みの積分、IID公平コインの確率1極限を確認。補助計算は共通1回1296表/1260joint/1230reverse/ゼロA30/ゼロB36と128状態DAGであり一般証明/臨床認定ではない。"
+        },
+        "code": {
+          "status": "checked",
+          "note": "実行プログラムは0、Mermaidソース2点のみ。医学仮想例9辺、DAG7確率変数/内部6辺/外側1推論点線の意味・アラビア語ラベルを照合。生成HTMLの図ソース・TeX・lang=ar/dir=rtlと既存KaTeXのLTR+unicode-bidi:isolateのCSSソースを検査。これはブラウザの見た目・Mermaid/KaTeXの実行認定ではない。"
+        },
+        "links": {
+          "status": "checked",
+          "note": "9一次資料とアラビア語の大数の法則/二封筒の内部2リンク、元の公開日・slug・分類・画像を保持。更新日10月30日・フラグを追加し、生成14hreflang/13切替、多言語1609ページ、HTTPS2933HTML/41XMLを確認。17既存単体テストは先行JA/EN実行の参照で今回未再実行。WHOのArabic検索結果はPPV/感度/特異度の用語確認だけで新しい臨床根拠や研究全体の既読とはしない。"
+        }
+      },
+      "summary": "アラビア語を全文校閲。spamの誤訳、尤度と正規化、医療指標、密度MAPと予測、相互独立、因果、変分推論、確率1の収束を整理。",
+      "languageSpecificFindings": "random mailとspamを区別。likelihoodを英語併記のدالة الإمكانで関数として定義し、oddsとの混同を回避。臨床用語はالحساسية/النوعية/القيمة التنبؤية الإيجابية、総正解率はaccuracyと定義。母語話者確認なし。RTLはHTML/CSSソースの検査のみで視覚認定していない。",
+      "validation": "docs/translation-review/batch-026-ar-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "0other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,clinical evidence,model training or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -871,8 +912,105 @@
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "ar"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "validation": "docs/translation-review/batch-026-ar-validation.json",
+      "checks": "docs/translation-review/batch-026-ar-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-026-ar-ledger-validation.json",
+      "texEach": 22,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "jointFormulaTables": 1260,
+        "reverseFormulaTables": 1230,
+        "zeroPriorAWithPositiveB": 30,
+        "undefinedBExcluded": 36,
+        "toyDagAssignments": 128,
+        "toyDagTotalMass": "1",
+        "toyDagPrior": "151/600",
+        "toyDagPosterior": "14949/17194",
+        "scope": "Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 324,
+      "unreviewedTranslations": 12708,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 0,
+      "publicationPending": true
     }
   ],
   "sourceAudit": "docs/translation-review/batch-026-source-audit.json",
-  "sourceNotes": "docs/translation-review/batch-026-source-notes.md"
+  "sourceNotes": "docs/translation-review/batch-026-source-notes.md",
+  "finalAssembly": {
+    "checkedAt": "2026-10-30T19:52:03.635351+09:00",
+    "article": "bayes-theorem",
+    "allOriginalAndRevisedBodiesRead": true,
+    "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+    "languages": [
+      "ja",
+      "en",
+      "zh-cn",
+      "es",
+      "ko",
+      "pt",
+      "zh-tw",
+      "hi",
+      "fr",
+      "de",
+      "ar",
+      "ru",
+      "id"
+    ],
+    "translationReviews": 12,
+    "texExpressions": 286,
+    "diagramSources": 26,
+    "diagramEdges": 208,
+    "articleProgramsExecuted": 0,
+    "sharedAuxiliaryChecks": {
+      "jointFormulaTables": 1260,
+      "reverseFormulaTables": 1230,
+      "zeroPriorAWithPositiveB": 30,
+      "undefinedBExcluded": 36,
+      "toyDagAssignments": 128,
+      "toyDagTotalMass": "1",
+      "toyDagPrior": "151/600",
+      "toyDagPosterior": "14949/17194",
+      "scope": "Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun."
+    },
+    "multilingualPages": 1609,
+    "httpsHtmlPages": 2933,
+    "httpsXmlFiles": 41,
+    "unitTestsRerun": 17,
+    "unitTestsByFile": [
+      10,
+      1,
+      6
+    ],
+    "realLedgerCurrent": 324,
+    "realLedgerUnreviewed": 12708,
+    "humanReviews": 0,
+    "validation": "docs/translation-review/batch-026-final-validation.json",
+    "checks": "docs/translation-review/batch-026-final-checks.json",
+    "probePreparation": "docs/translation-review/batch-026-probe-preparation.json",
+    "publicationProof": "docs/translation-review/publication-026.json",
+    "publicationPending": true,
+    "limitations": [
+      "Isolated 28-bundle preview with existing layout/Portuguese UI warnings;not full-site build.",
+      "No browser visual/runtime,native-language,clinical,training or universal-proof certification.",
+      "Full article/translation goal remains active;only324of13032translations reviewed."
+    ]
+  }
 }

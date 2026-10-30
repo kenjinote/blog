@@ -1,0 +1,17 @@
+{
+  "preparedAt": "2026-10-30T19:51:22.616574+09:00",
+  "helper": "C:\\Users\\kenjinote\\.codex\\tmp\\verify_review_publication_324.py",
+  "helperSha256": "3758f58c2d6fce02e7e8e97e9ed3f103ab1ba642f4eb0e50ffe6fc4ff717cfb5",
+  "articles": 27,
+  "pagesPlanned": 351,
+  "translationsPlanned": 324,
+  "japaneseSourcesPlanned": 27,
+  "mathVersions": 156,
+  "texExpressions": 9350,
+  "bayesVersions": 13,
+  "bayesTeX": 286,
+  "bayesDiagramSources": 26,
+  "httpRequestsMade": 0,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Preparation-only checks:local inputs/expected counters/refsets;no HTTP or publication certification. Existing 338-URL cohort preserved;Bayes13URLs appended. Final live probe must wait for matching CI build/deploy success."
+}

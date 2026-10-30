@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T19:49:46.688598+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/bayes-theorem/index.md",
+      "sha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "content/post/bayes-theorem/index.en.md",
+      "sha256": "efa0771d54ff11c020c56ac01a94204d3bf4c76a918958fb4478f98f7819abeb",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "content/post/bayes-theorem/index.zh-cn.md",
+      "sha256": "1b9f910c2d49de2969c94435cd60d27c64b9665fa7e202c8b3d5bc5258e76988",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "content/post/bayes-theorem/index.es.md",
+      "sha256": "bc62dcf3991c6286d7d5229564bf2a40ad01d156e229ad57e0d6cfb01abb7e26",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "content/post/bayes-theorem/index.ko.md",
+      "sha256": "a102101d186f37ab9a9e430e166e12d4d172dc0ea4790669ee4f92295f468790",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "path": "content/post/bayes-theorem/index.pt.md",
+      "sha256": "1ba1791a7ca90f50c8ea6500950d8bb7c4d548dea697726cba84bf4f58a5bfbb",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "content/post/bayes-theorem/index.zh-tw.md",
+      "sha256": "5b10de45aaef8fc25e1d1c1c03f185f8cd010343c89519e4fc270b09fc07cdd8",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "path": "content/post/bayes-theorem/index.hi.md",
+      "sha256": "a260f0c34e23c11dea2536ea70e4b03216bfdaab7eb59f21a169e6a196967760",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "path": "content/post/bayes-theorem/index.fr.md",
+      "sha256": "f851e3a7a67f1bd644e0a593ac837a97c135981ec55b6fed5b215770d467932e",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "de",
+      "path": "content/post/bayes-theorem/index.de.md",
+      "sha256": "1689e2b5a8d42d8e02ef3ceeae8cb29948e9a3a7da7823d0bbc33fb524fb7e68",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "path": "content/post/bayes-theorem/index.ar.md",
+      "sha256": "becc4bc02bb1b07bc548a9d77147ef9fa9c0abc5be9ae52bfd06fe2ae52541de",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "path": "content/post/bayes-theorem/index.ru.md",
+      "sha256": "e6086f7ab76b889355aa2b399d6c1d0d4104364bada538e21311231766ae66b7",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "content/post/bayes-theorem/index.id.md",
+      "sha256": "f2ff2f418e478cac58382383b6af05f2ed5d0ae3aa301aae5a433d003bbe1d9d",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    }
+  ],
+  "sharedAuxiliaryChecks": {
+    "jointFormulaTables": 1260,
+    "reverseFormulaTables": 1230,
+    "zeroPriorAWithPositiveB": 30,
+    "undefinedBExcluded": 36,
+    "toyDagAssignments": 128,
+    "toyDagTotalMass": "1",
+    "toyDagPrior": "151/600",
+    "toyDagPosterior": "14949/17194",
+    "scope": "Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun."
+  },
+  "sourceAuditSha256": "d5f43b48aa78a52548fd3870c880cc657dab90d0e4832046b2b6e95989fc02d3",
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source and decoded HTML checks do not certify full prose review or add ledger records.",
+    "No executable article program; auxiliary calculations are distinct.",
+    "Not browser visual, KaTeX/Mermaid runtime, native-language, clinical or full-primary-paper certification.",
+    "Publication pending."
+  ]
+}

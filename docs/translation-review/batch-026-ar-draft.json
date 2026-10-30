@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "draftedAt": "2026-10-30T19:46:41.854176+09:00",
+  "path": "content/post/bayes-theorem/index.ar.md",
+  "originalSha256": "81dd081b20d1dae7b375e73046aa2646f6fecd1e18bc6e9a06bcf9bf2028f09e",
+  "draftSha256": "02ade347bc2dc78f499d5f1cb149f39aad42e06ab87973badd52851125cb81fb",
+  "commonTeX": 22,
+  "draftOnly": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Full original Arabic metadata/body/both diagrams read in two contiguous chunks;complete rewrite against corrected Japanese. Pending full revised-body reread/HTML checks/ledger. No native/browser/runtime/clinical/publication certification."
+}

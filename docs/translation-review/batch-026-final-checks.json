@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T19:50:02.739963+09:00",
+  "allPassed": true,
+  "results": [
+    {
+      "command": [
+        "hugo",
+        "--minify",
+        "--buildFuture",
+        "--baseURL",
+        "https://kenji.blog/",
+        "--contentDir",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\content",
+        "--destination",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-bayes-final",
+        "--cacheDir",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\cache"
+      ],
+      "exitCode": 0,
+      "stdout": "Start building sites … \nhugo v0.139.0-dacef0df92a9a20072b4eaa42003e1a63ace8f41+extended windows/amd64 BuildDate=2024-11-18T16:17:45Z VendorInfo=gohugoio\n\nWARN  Search page not found. Create a page with layout: search.\nWARN  Archives page not found. Create a page with layout: archives.\nWARN  found no layout file for \"json\" for kind \"home\": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.\nWARN  Failed to get translated string for language \"pt\" and ID \"toggleMenu\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"darkMode\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"widget.categoriesCloud.title\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"widget.tagCloud.title\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"list.section\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"list.page\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"notFound.title\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"notFound.subtitle\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"footer.builtWith\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"footer.designedBy\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"article.readingTime\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"article.tableOfContents\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"article.lastUpdatedOn\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"article.relatedContent\": %!s(<nil>)\n\n                   | JA  | EN  | ZH-CN | ES  | KO  | PT  | ZH-TW | HI  | FR  | DE  | AR  | RU  | ID   \n-------------------+-----+-----+-------+-----+-----+-----+-------+-----+-----+-----+-----+-----+------\n  Pages            | 130 | 123 |   128 | 127 | 128 | 127 |   129 | 130 | 129 | 127 | 131 | 129 | 125  \n  Paginator pages  |   5 |   5 |     5 |   5 |   5 |   5 |     5 |   5 |   5 |   5 |   5 |   5 |   5  \n  Non-page files   |  29 |  29 |    29 |  29 |  29 |  29 |    29 |  29 |  29 |  29 |  29 |  29 |  29  \n  Static files     |  22 |  22 |    22 |  22 |  22 |  22 |    22 |  22 |  22 |  22 |  22 |  22 |  22  \n  Processed images | 113 |   0 |     0 |   0 |   0 |   0 |     0 |   0 |   0 |   0 |   0 |   0 |   0  \n  Aliases          |  97 |  91 |    96 |  95 |  96 |  95 |    97 |  98 |  97 |  95 |  99 |  97 |  93  \n  Cleaned          |   0 |   0 |     0 |   0 |   0 |   0 |     0 |   0 |   0 |   0 |   0 |   0 |   0  \n\nTotal in 4159 ms\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\kenjinote\\.codex\\tmp\\kenji-translation-review-runtime\\Scripts\\python.exe",
+        "docs/translation-review/verify_batch_026.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-bayes-final",
+        "--languages",
+        "ja",
+        "en",
+        "zh-cn",
+        "es",
+        "ko",
+        "pt",
+        "zh-tw",
+        "hi",
+        "fr",
+        "de",
+        "ar",
+        "ru",
+        "id",
+        "--output",
+        "docs/translation-review/batch-026-final-validation.json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"passed\": true, \"versions\": 13, \"texEach\": 22, \"diagramsEach\": 2, \"auxiliary\": {\"jointFormulaTables\": 1260, \"reverseFormulaTables\": 1230, \"zeroPriorAWithPositiveB\": 30, \"undefinedBExcluded\": 36, \"toyDagAssignments\": 128, \"toyDagTotalMass\": \"1\", \"toyDagPrior\": \"151/600\", \"toyDagPosterior\": \"14949/17194\", \"scope\": \"Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun.\"}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\kenjinote\\.codex\\tmp\\kenji-translation-review-runtime\\Scripts\\python.exe",
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-bayes-final"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1609 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\kenjinote\\.codex\\tmp\\kenji-translation-review-runtime\\Scripts\\python.exe",
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-bayes-final"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 2933, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\kenjinote\\.codex\\tmp\\kenji-translation-review-runtime\\Scripts\\python.exe",
+        "scripts/test_multilingual.py"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 19 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.355s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\kenjinote\\.codex\\tmp\\kenji-translation-review-runtime\\Scripts\\python.exe",
+        "scripts/test_math_rendering.py"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.463s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\kenjinote\\.codex\\tmp\\kenji-translation-review-runtime\\Scripts\\python.exe",
+        "scripts/test_translation_reviews.py"
+      ],
+      "exitCode": 0,
+      "stdout": "Recorded ai review: post/sample/index.en.md\nRecorded ai review: post/sample/index.en.md\nRecorded human review: post/sample/index.en.md\n",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.124s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\kenjinote\\.codex\\tmp\\kenji-translation-review-runtime\\Scripts\\python.exe",
+        "scripts/translation_reviews.py",
+        "check"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"current\": 324, \"unreviewed\": 12708}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "All13Bayes source/decodedHTML,28-bundle isolated preview,17 existing unit tests rerun and global real ledger. Auxiliary shared once in final validator,not13 executions. Hugo existing warnings retained. Not full-site/native/browser visual/runtime/clinical/publication certification."
+}
