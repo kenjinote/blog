@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T09:36:15.456942+09:00",
+  "probeSha256": "186ea230cc00ba9c83b1446abb5296f0f42bba4f059afa851b4bcbbfaf9c2f1a",
+  "probe": "C:\\Users\\kenjinote\\.codex\\tmp\\verify_review_publication_312.py",
+  "ciRun": 40979650370,
+  "expectedHead": "987c31d250bafe6f40ab1a37cf827c00571e5f42",
+  "articleBundles": 26,
+  "urlsPrepared": 338,
+  "mathVersions": 143,
+  "texExpressions": 9064,
+  "twoEnvelopeVersions": 13,
+  "twoEnvelopeDiagrams": 26,
+  "scope": "Executed only local data-loading prefix and input assertions. No HTTP requests,live page checks,article program execution or publication conclusion. Full probe requires matching CI build/deploy success."
+}
