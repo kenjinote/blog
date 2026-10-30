@@ -1,6 +1,6 @@
 ---
-title: "Satz von Bayes: Wahrscheinlichkeiten mit \"Neuen Beweisen\" aktualisieren, der Kern von KI und Statistik"
-description: "Eine ausführliche Erklärung, wie der Satz von Bayes Wahrscheinlichkeiten basierend auf neuen Beweisen aktualisiert, sein mathematischer Hintergrund und seine Anwendungen in KI und maschinellem Lernen."
+title: "Satz von Bayes: Bedingte Wahrscheinlichkeit, medizinisches Testbeispiel und vier KI-Anwendungen"
+description: "Normierung, Sensitivität und positiver prädiktiver Wert, MAP und posterior-prädiktive Vorhersage: vier bayessche KI-Anwendungen und ihre Annahmen."
 slug: "bayes-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
@@ -11,147 +11,206 @@ tags:
   - "Wahrscheinlichkeit"
   - "KI"
   - "Statistik"
+lastmod: "2026-10-30"
+math: true
+mermaid: true
 ---
 
-## Einleitung: "Überzeugungen aktualisieren" in einer unsicheren Welt
+## 1. Vorhersagen in einer unsicheren Welt aktualisieren
 
-Die Welt, in der wir leben, ist voller Unsicherheiten. Von der Wahrscheinlichkeit, dass es morgen regnet, über die Wahrscheinlichkeit, dass ein neues Medikament gegen eine bestimmte Krankheit wirksam ist, bis hin zur Chance, dass eine empfangene E-Mail Spam ist – wir treffen ständig Entscheidungen auf der Grundlage unvollständiger Informationen. Ein mächtiger Rahmen, um diese Unsicherheit mathematisch zu handhaben und **unsere Vorhersagen jedes Mal zu aktualisieren, wenn neue Informationen (Beweise) gewonnen werden**, ist der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/de/p/bayes-theorem/)).
+Morgiger Regen, die Wirkung eines Medikaments oder die Frage, ob eine E-Mail Spam ist: Wir urteilen mit unvollständigen Informationen. **Der Satz von Bayes verknüpft die Wahrscheinlichkeit eines Ereignisses bei gegebener Beobachtung mit der Wahrscheinlichkeit dieser Beobachtung bei gegebenem Ereignis.** Sind Modell und Vorinformationen festgelegt, lassen sich Wahrscheinlichkeiten anhand neuer Beobachtungen aktualisieren.
 
-Dieses Theorem wurde von Thomas Bayes, einem englischen Geistlichen und Mathematiker des 18. Jahrhunderts, entdeckt und ist zu einer grundlegenden Theorie geworden, die der modernen KI (Künstliche Intelligenz) und dem maschinellen Lernen zugrunde liegt. In diesem Artikel werden wir tief in alles eintauchen, von der grundlegenden Mathematik des Satzes von Bayes bis hin zu kontraintuitiven Wahrscheinlichkeitsparadoxien und wie er in der modernen Technologie angewendet wird.
+Namensgeber ist Thomas Bayes, ein Geistlicher und Mathematiker des 18. Jahrhunderts. [Richard Prices Brief über Bayes' nachgelassene Abhandlung](https://bayes.wustl.edu/Manual/an.essay.pdf) nennt eine Verlesung vor der Royal Society am 23. Dezember 1763. Die moderne bayessche Inferenz umfasst auch die Weiterentwicklungen vieler späterer Forschender. Wir betrachten die Formel, ein Testbeispiel, vier KI-Anwendungen und unterschiedliche Deutungen von Wahrscheinlichkeit.
 
-## Mathematische Formulierung des Satzes von Bayes
+## 2. Die Formel und die Rolle der Normierung
 
-Der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) ist ein Theorem, das verwendet wird, um die Wahrscheinlichkeit $P(A|B)$ eines Ereignisses $A$ unter der Bedingung, dass ein Ereignis $B$ eingetreten ist, basierend auf der inversen bedingten Wahrscheinlichkeit $P(B|A)$ und anderen Faktoren zu berechnen. Obwohl die Formel extrem einfach ist, sind ihre Auswirkungen tiefgreifend.
-
-$$
-P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
-$$
-
-Jedem Term in dieser Gleichung wird aus der Perspektive der statistischen "Aktualisierung von Überzeugungen" ein besonderer Name gegeben.
-
-- **A-priori-Wahrscheinlichkeit (Prior Probability)** $P(A)$ : Die Wahrscheinlichkeit, dass Ereignis $A$ eintritt, bevor der neue Beweis $B$ berücksichtigt wird. Unsere anfängliche Überzeugung.
-- **Likelihood (Verisimilitude)** $P(B|A)$ : Die Wahrscheinlichkeit, Beweis $B$ zu beobachten, unter der Annahme, dass Ereignis $A$ wahr ist.
-- **Marginale Likelihood / Evidenz (Marginal Likelihood / Evidence)** $P(B)$ : Die Gesamtwahrscheinlichkeit, Beweis $B$ zu beobachten, unabhängig davon, ob Ereignis $A$ wahr oder falsch ist. Sie fungiert als Normalisierungskonstante.
-- **A-posteriori-Wahrscheinlichkeit (Posterior Probability)** $P(A|B)$ : Die Wahrscheinlichkeit von Ereignis $A$ nach Berücksichtigung des neuen Beweises $B$. Unsere aktualisierte Überzeugung.
-
-Kurz gesagt, der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) kann als mathematische Formulierung des Prozesses beschrieben werden, **unsere Überzeugung auf eine "A-posteriori-Wahrscheinlichkeit" zu aktualisieren, indem die "A-priori-Wahrscheinlichkeit" mit "wie gut der neue Beweis passt (Likelihood)" multipliziert wird**.
-
-## Abweichung von der Intuition: Das Paradoxon der "Falsch-Positiven" (Beispiel eines medizinischen Tests)
-
-Die menschliche Intuition macht bei Wahrscheinlichkeitsberechnungen oft Fehler. Als klassisches Beispiel, um die Macht des Satzes von Bayes zu verstehen, betrachten wir Krankheitstests (medizinisches Screening).
-
-Angenommen, es gibt eine seltene Krankheit, und $1\%$ ($0.01$) der Gesamtbevölkerung ist mit dieser Krankheit infiziert (dies ist die A-priori-Wahrscheinlichkeit $P(\text{Krankheit})$).
-Der Test zur Erkennung dieser Krankheit ist sehr genau: Wenn eine Person mit der Krankheit den Test macht, wird sie mit einer Wahrscheinlichkeit von $99\%$ als "Positiv" beurteilt (Richtig-Positiv-Rate: Likelihood $P(\text{Positiv}|\text{Krankheit})$).
-Dieser Test hat jedoch einen leichten Fehler: Selbst wenn eine gesunde Person ohne die Krankheit ihn macht, wird sie fälschlicherweise mit einer Wahrscheinlichkeit von $5\%$ als "Positiv" beurteilt (Falsch-Positiv-Rate $P(\text{Positiv}|\text{Gesund})$).
-
-Angenommen, Sie machen diesen Test zufällig und erhalten ein **"Positives"** Ergebnis. Wie hoch ist die Wahrscheinlichkeit, dass Sie diese Krankheit tatsächlich haben?
-
-Viele Menschen neigen zu der Annahme: "Da der Test zu $99\%$ genau ist, besteht eine Chance von $90\%$ oder mehr, dass ich die Krankheit habe." Lassen Sie uns dies jedoch mit dem [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) berechnen.
-
-Wir wollen $P(\text{Krankheit}|\text{Positiv})$ finden.
-
-1. **A-priori-Wahrscheinlichkeit** $P(\text{Krankheit}) = 0.01$
-2. **Likelihood** $P(\text{Positiv}|\text{Krankheit}) = 0.99$
-3. **Wahrscheinlichkeit einer gesunden Person** $P(\text{Gesund}) = 1 - 0.01 = 0.99$
-4. **Wahrscheinlichkeit für ein falsch positives Ergebnis** $P(\text{Positiv}|\text{Gesund}) = 0.05$
-
-Zunächst berechnen wir die Gesamtwahrscheinlichkeit eines positiven Testergebnisses $P(\text{Positiv})$ (Marginale Likelihood). Dies ist die Summe aus "positiv testen, wenn man krank ist" und "positiv testen, wenn man gesund ist".
+Für ein Ereignis B mit $P(B)>0$ liefert die Definition der bedingten Wahrscheinlichkeit
 
 $$
-\begin{aligned}
-P(\text{Positiv}) &= P(\text{Positiv}|\text{Krankheit}) \cdot P(\text{Krankheit}) + P(\text{Positiv}|\text{Gesund}) \cdot P(\text{Gesund}) \\
-&= (0.99 \times 0.01) + (0.05 \times 0.99) \\
-&= 0.0099 + 0.0495 \\
-&= 0.0594
-\end{aligned}
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}
 $$
 
-Als nächstes wenden wir den [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) an.
+Gilt zusätzlich $P(A)>0$, sodass auch die umgekehrte bedingte Wahrscheinlichkeit definiert ist, ergibt die Zerlegung der gemeinsamen Wahrscheinlichkeit
 
 $$
-\begin{aligned}
-P(\text{Krankheit}|\text{Positiv}) &= \frac{P(\text{Positiv}|\text{Krankheit}) \cdot P(\text{Krankheit})}{P(\text{Positiv})} \\
-&= \frac{0.0099}{0.0594} \\
-&\approx 0.1667
-\end{aligned}
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}
 $$
 
-Überraschenderweise beträgt die Wahrscheinlichkeit, dass Sie die Krankheit tatsächlich haben, selbst bei einem positiven Testergebnis **nur etwa $16.7\%$**. Die restlichen $83.3\%$ sind Fälle von "gesunden Menschen, die fälschlicherweise als positiv beurteilt wurden" (Falsch-Positive). Dies liegt daran, dass die ursprüngliche Prävalenz der Krankheit ($1\%$) sehr niedrig ist, sodass die "Falsch-Positiven aus der großen gesunden Bevölkerung" die kleine Anzahl der "wirklich kranken Menschen" überwältigend übertreffen.
+Wenn B eine neue Beobachtung bezeichnet, haben die Terme folgende Rollen:
 
-Auf diese Weise korrigiert der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) mathematisch die Fallen, in die unsere Intuition leicht tappt, und dient als mächtiges Werkzeug, um ruhige Urteile zu fällen.
+- **A-priori-Wahrscheinlichkeit** $P(A)$: Wahrscheinlichkeit von A vor Berücksichtigung von B.
+- **Likelihood** $P(B\mid A)$: Wahrscheinlichkeit, B unter der Annahme A zu beobachten.
+- **Wahrscheinlichkeit der Beobachtung / marginale Likelihood** $P(B)$: gesamte Wahrscheinlichkeit, B zu beobachten.
+- **A-posteriori-Wahrscheinlichkeit** $P(A\mid B)$: Wahrscheinlichkeit von A nach Berücksichtigung von B.
+
+Das Produkt aus A-priori-Wahrscheinlichkeit und Likelihood ist der Zähler. **Für die A-posteriori-Wahrscheinlichkeit muss durch die Wahrscheinlichkeit der Beobachtung geteilt und damit normiert werden.** Auch wenn A Wahrscheinlichkeit null hat, gilt die erste Formel über die gemeinsame Wahrscheinlichkeit, sofern B positive Wahrscheinlichkeit hat. In die zweite Formel darf nicht einfach eingesetzt werden, wenn die umgekehrte bedingte Wahrscheinlichkeit undefiniert ist.
+
+## 3. Likelihood, MAP und posterior-prädiktive Vorhersage
+
+Wir bezeichnen den unbekannten Parameter mit θ und die beobachteten Daten mit d. Bei der [Aktualisierung einer A-priori-Dichte mithilfe einer Likelihood](https://web.stanford.edu/class/stats200/Lecture20.pdf) schreibt man
+
+$$
+\pi(\theta\mid d)=\frac{L(\theta;d)\pi(\theta)}{Z(d)},\qquad Z(d)=\int L(t;d)\pi(t)\,dt
+$$
+
+Dabei setzen wir $0<Z(d)<\infty$ voraus. Die Likelihood L ist bei festgehaltenem d eine Funktion von θ, keine Wahrscheinlichkeitsverteilung über θ. Für stetige Daten verwendet man Dichten, deren Werte größer als eins sein können. Die Wahrscheinlichkeit null eines einzelnen beobachteten Punktes verhindert nicht schon für sich eine Aktualisierung über Dichten.
+
+Falls die A-posteriori-Dichte ein Maximum erreicht, wählt die **Maximum-a-posteriori-Schätzung (MAP)** einen entsprechenden Parameterwert:
+
+$$
+\hat\theta_{\mathrm{MAP}}\in\arg\max_\theta\pi(\theta\mid d)
+$$
+
+Die **posterior-prädiktive Wahrscheinlichkeit** einer zukünftigen binären Beobachtung entsteht dagegen durch Mittelung der Vorhersagen über die A-posteriori-Verteilung:
+
+$$
+\Pr(Y_{\mathrm{new}}=1\mid d)=\int\Pr(Y_{\mathrm{new}}=1\mid\theta,d)\pi(\theta\mid d)\,d\theta
+$$
+
+Beispielsweise erhält die Kopfwahrscheinlichkeit θ einer Münze eine Gleichverteilung zwischen null und eins als A-priori-Verteilung. Bedingt auf θ seien die Würfe unabhängig. Wir beobachten der Reihe nach 1,1,0, wobei 1 Kopf bedeutet. Dann gilt
+
+$$
+\pi(\theta\mid 1,1,0)=12\theta^2(1-\theta),\qquad 0<\theta<1
+$$
+
+und damit
+
+$$
+\hat\theta_{\mathrm{MAP}}=\frac23,\qquad\Pr(Y_{\mathrm{new}}=1\mid1,1,0)=\frac35
+$$
+
+Das Einsetzen eines Modus der A-posteriori-Dichte und die Mittelung über die Verteilung können verschiedene Antworten liefern. Eine Klasse auszuwählen, Parameter mittels MAP zu schätzen und zukünftige Beobachtungen vorherzusagen lässt sich nicht pauschal als „Maximierung der A-posteriori-Wahrscheinlichkeit“ beschreiben.
+
+## 4. Ein hypothetischer medizinischer Test: 99 % Sensitivität, etwa 16,7 % PPV
+
+Dies ist **ein hypothetisches Rechenbeispiel, keine gemessene Leistung eines realen Tests**. D bedeutet, die untersuchte Erkrankung zu haben; T bezeichnet ein positives Testergebnis. Die Prävalenz in der Zielpopulation sei 1 %, die Sensitivität 99 % und die Falsch-Positiv-Rate 5 %.
+
+$$
+P(D)=0.01,\qquad P(T\mid D)=0.99,\qquad P(T\mid D^c)=0.05
+$$
+
+Das Gegenereignis zu D bedeutet, diese Erkrankung nicht zu haben, nicht aber in jeder Hinsicht gesund zu sein. Durch Addition der beiden möglichen Quellen positiver Ergebnisse erhält man
+
+$$
+P(T)=P(T\mid D)P(D)+P(T\mid D^c)P(D^c)=0.99\cdot0.01+0.05\cdot0.99=0.0594
+$$
+
+Die Wahrscheinlichkeit der Erkrankung bei positivem Ergebnis ist somit
+
+$$
+P(D\mid T)=\frac{0.0099}{0.0594}=\frac{99}{594}=\frac16\approx0.1667
+$$
+
+Das Ergebnis beträgt etwa 16,7 %; der genaue Wert ist 1/6. Die übrigen 5/6, also etwa 83,3 % der positiven Ergebnisse, sind falsch positive Ergebnisse bei Personen ohne die untersuchte Erkrankung. Bei niedriger Prävalenz können die falsch positiven Fälle aus der viel größeren Gruppe ohne Erkrankung die richtig positiven Fälle überwiegen.
+
+Um die Anteile als Personen darzustellen, konstruieren wir eine fiktive Population von 10.000 Personen mit genau diesen Anteilen. Bei einer realen Stichprobe von 10.000 würden die Anzahlen schwanken.
+
+| Testergebnis | Mit untersuchter Erkrankung | Ohne untersuchte Erkrankung | Gesamt |
+| --- | ---: | ---: | ---: |
+| Positiv | 99 (richtig positiv) | 495 (falsch positiv) | 594 |
+| Negativ | 1 (falsch negativ) | 9.405 (richtig negativ) | 9.406 |
+| Gesamt | 100 | 9.900 | 10.000 |
 
 ```mermaid
 flowchart TD
-    Population["Gesamtbevölkerung (10.000 Personen)"] --> Disease["Mit Krankheit (100 Personen, 1%)"]
-    Population --> Healthy["Gesund (9.900 Personen, 99%)"]
-    
-    Disease --> TruePositive["Richtig positiv: Positives Ergebnis (99 Personen, 99%)"]
-    Disease --> FalseNegative["Falsch negativ: Negatives Ergebnis (1 Person, 1%)"]
-    
-    Healthy --> FalsePositive["Falsch positiv: Positives Ergebnis (495 Personen, 5%)"]
-    Healthy --> TrueNegative["Richtig negativ: Negatives Ergebnis (9.405 Personen, 95%)"]
-
-    TruePositive -.->|"Insgesamt Positiv (594 Personen)"| AllPositives["Test Positiv"]
-    FalsePositive -.->|"Insgesamt Positiv (594 Personen)"| AllPositives
-    
-    AllPositives -->|"Wahrscheinlichkeit, tatsächlich krank zu sein?"| Posterior["A-posteriori-Wahrscheinlichkeit: 99 / 594 = 16.7%"]
+    Population["Fiktive Population: 10.000"] --> Disease["Mit Erkrankung: 100"]
+    Population --> NoDisease["Ohne untersuchte Erkrankung: 9.900"]
+    Disease --> TP["Richtig positiv: 99 (99% der Erkrankten)"]
+    Disease --> FN["Falsch negativ: 1 (1% der Erkrankten)"]
+    NoDisease --> FP["Falsch positiv: 495 (5% der Personen ohne Erkrankung)"]
+    NoDisease --> TN["Richtig negativ: 9.405 (95% der Personen ohne Erkrankung)"]
+    TP -.-> AllPositive["Positive Ergebnisse insgesamt: 594"]
+    FP -.-> AllPositive
+    AllPositive --> PPV["Positiver prädiktiver Wert: 99/594 = 1/6 ≈ 16,7%"]
 ```
 
-## Anwendung des Satzes von Bayes in KI und Maschinellem Lernen
+**Eine Sensitivität von 99 % bedeutet weder einen positiven prädiktiven Wert von 99 % noch eine Gesamtgenauigkeit von 99 %.** Die Gesamtgenauigkeit, also der Anteil aller korrekten Ergebnisse in dieser Tabelle, beträgt
 
-Der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) ist mehr als nur ein Wahrscheinlichkeitsrätsel; er spielt eine entscheidende Rolle in der modernen Datenwissenschaft und Künstlichen Intelligenz (KI). Denn der eigentliche Prozess des Lernens von Mustern aus großen Datenmengen und der Vorhersage unbekannter Daten kann als "Maximierung der A-posteriori-Wahrscheinlichkeit" formuliert werden.
+$$
+\frac{99+9405}{10000}=0.9504=95.04\%
+$$
 
-### 1. Naive Bayes Klassifikator
+Die [Definitionen von Sensitivität, Spezifität und positivem prädiktivem Wert](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda) verwenden unterschiedliche Nenner. Die Intuition „99 % bedeutet, dass ein positiver Fall fast sicher erkrankt ist“ verwechselt die Bezugsgruppen. Eine Anwendung auf reale Ergebnisse erfordert Prävalenz und Testeigenschaften, die zur jeweiligen Population passen.
 
-Der "Naive Bayes Klassifikator", der häufig für das Filtern von Spam-E-Mails verwendet wird, ist eine der direktesten Anwendungen des Satzes von Bayes. Dieser Algorithmus behandelt die in einer E-Mail enthaltenen Wörter (wie "kostenlos", "Gewinner", "Passwort") als Beweise (Merkmale) und berechnet die A-posteriori-Wahrscheinlichkeit, ob die E-Mail Spam ist.
+## 5. KI-Anwendung 1: Naive-Bayes-Klassifikation
 
-Er wird als "naiv" bezeichnet, weil er die starke Annahme trifft, dass jedes Merkmal (Wort) unabhängig von den anderen auftritt. In der Realität stehen Wörter in Beziehung zueinander, aber trotz dieser vereinfachenden Annahme weist Naive Bayes bei Aufgaben wie der Textklassifizierung eine sehr hohe Genauigkeit und schnelle Verarbeitungsgeschwindigkeiten auf.
+Bei der Spamerkennung liefern Merkmale X, etwa das Vorkommen bestimmter Wörter, Informationen über die A-posteriori-Wahrscheinlichkeit der Klasse C. Die grundlegende Annahme lautet **bedingte Unabhängigkeit bei gegebener Klasse**, nicht unbedingte Unabhängigkeit der Wörter. Bei drei oder mehr Merkmalen garantiert selbst paarweise Unabhängigkeit innerhalb jeder Klasse keine gemeinsame Unabhängigkeit.
 
-### 2. Bayessche Netze
+Für diskrete Merkmale seien die Randwahrscheinlichkeit der Beobachtung x und die A-priori-Wahrscheinlichkeiten der Klassen positiv. Sind alle Merkmale innerhalb jeder Klasse gemeinsam unabhängig, gilt
 
-In Systemen, in denen mehrere Variablen kompliziert miteinander verflochten sind, drücken Bayessche Netze die Abhängigkeiten zwischen den Variablen als Graphenstruktur (Gerichteter azyklischer [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) aus, um Schlussfolgerungen unter Unsicherheit durchzuführen.
+$$
+\Pr(C=c\mid X=x)\propto\Pr(C=c)\prod_{j=1}^{m}\Pr(X_j=x_j\mid C=c)
+$$
 
-Zum Beispiel wird in der medizinischen Diagnose-KI der probabilistische Einfluss von "Alter des Patienten", "Lebensgewohnheiten" und "genetischen Faktoren" auf eine "bestimmte Krankheit" modelliert und dann der Einfluss dieser Krankheit auf "auftretende Symptome" verknüpft. Jedes Mal, wenn ein neues Symptom (Beweis) eingegeben wird, werden die Wahrscheinlichkeiten im gesamten Netzwerk gemäß dem [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) aktualisiert, wodurch auf den wahrscheinlichsten Namen der Krankheit geschlossen wird. Dies wird in einer Vielzahl von Bereichen eingesetzt, wie z. B. bei der Situationsbeurteilung in selbstfahrenden Autos und bei der Vorhersage von Finanzmärkten.
+Haben alle Fehlklassifikationen dieselben Kosten, wählt man eine Klasse mit maximaler A-posteriori-Wahrscheinlichkeit. Diese Klassifikationsentscheidung ist etwas anderes als eine MAP-Schätzung der Modellparameter selbst.
+
+Tatsächliche Wörter hängen zusammen; die Unabhängigkeit ist eine Näherung. Einfachheit und Rechengeschwindigkeit sind Vorteile, aber keine Garantie für stets höhere Genauigkeit oder gut kalibrierte Wahrscheinlichkeiten. Auch die [offizielle scikit-learn-Dokumentation](https://scikit-learn.org/stable/modules/naive_bayes.html) unterscheidet Klassifikationsleistung und Qualität der geschätzten Wahrscheinlichkeiten. Die konkreten generativen Modelle unterscheiden sich, etwa Bernoulli für das Vorkommen von Wörtern und Multinomial für ihre Häufigkeiten.
+
+## 6. KI-Anwendung 2: Bayessche Netze
+
+Ein bayessches Netz stellt eine gemeinsame Verteilung durch einen gerichteten azyklischen Graphen (DAG) und eine lokale bedingte Verteilung je Knoten dar. In einem endlichen diskreten Modell bezeichne pa die Werte der Elternknoten. Dann lautet die Faktorisierung
+
+$$
+\Pr(V_1=v_1,\ldots,V_n=v_n)=\prod_{i=1}^{n}\Pr(V_i=v_i\mid\mathrm{pa}_i)
+$$
+
+Die [Darstellung einer Verteilung durch einen DAG](https://ermongroup.github.io/cs228-notes/representation/directed/) legt auch Annahmen über bedingte Unabhängigkeit fest.
+
+Das folgende fiktive Modell verbindet Alter, Lebensgewohnheiten, genetische Faktoren, Erkrankung, Symptome und einen Test. Die drei Faktoren ohne Eltern werden als unabhängig angenommen. Durchgezogene Pfeile legen Eltern-Kind-Beziehungen der lokalen Verteilungen fest; sie machen den Graphen nicht zu einem validierten Diagramm realer Kausalbeziehungen. **Kausale Aussagen benötigen zusätzliche kausale Annahmen**, die über ein statistisches Abhängigkeitsmodell hinausgehen ([Pearls Unterscheidung](https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf)).
 
 ```mermaid
 flowchart LR
-    Age["Alter"] --> Disease["Spezifische Krankheit"]
-    Lifestyle["Lebensgewohnheiten"] --> Disease
-    Genes["Genetische Faktoren"] --> Disease
-    
-    Disease --> SymptomA["Symptom A"]
-    Disease --> SymptomB["Symptom B"]
-    Disease --> TestResult["Testergebnis"]
-    
-    TestResult -.->|"Als neuer Beweis beobachtet"| Update["Wahrscheinlichkeitsaktualisierung (Inferenz)"]
+    subgraph Model["Fiktives Wahrscheinlichkeitsmodell"]
+        Age["Alter"] --> Disease["Untersuchte Erkrankung"]
+        Lifestyle["Lebensgewohnheiten"] --> Disease
+        Genes["Genetische Faktoren"] --> Disease
+        Disease --> SymptomA["Symptom A"]
+        Disease --> SymptomB["Symptom B"]
+        Disease --> TestResult["Testergebnis"]
+    end
+    TestResult -.->|"Beobachtung verwenden"| Inference["Inferenzoperation: A-posteriori-Verteilung berechnen"]
 ```
 
-### 3. Bayes'sche Optimierung
+Der Hinweis am gestrichelten Pfeil bezeichnet eine Inferenzoperation, keine zusätzliche Zufallsvariable der gemeinsamen Verteilung. Die Berechnung posteriorer Randverteilungen der Erkrankung oder anderer Variablen ist auch nicht dasselbe wie das erneute Lernen sämtlicher Parameter. Solche Modelle bieten einen Rahmen für Diagnostik, Situationsschätzung oder Finanzprognosen; ihre Eignung im jeweiligen Einsatz hängt von Struktur und Daten ab.
 
-Beim Erstellen von Modellen für maschinelles Lernen ist die Aufgabe, die optimale Kombination von Hyperparametern (Parametern, die von Menschen festgelegt werden müssen, wie Lernrate oder Netzwerktiefe) zu finden, sehr zeitaufwendig. Es ist unrealistisch, alle Kombinationen auszuprobieren.
+## 7. KI-Anwendung 3: Bayessche Optimierung
 
-Bei der Bayes'schen Optimierung wird die Beziehung zwischen "Parametereinstellungen" und "Modellleistung" als probabilistisches Modell (wie ein Gaußprozess) ausgedrückt. Basierend auf vergangenen Versuchseinstellungen und Ergebnissen (Beweisen) leitet es die vielversprechendste Parametereinstellung ab, die als nächstes untersucht werden soll. Dies ermöglicht es, leistungsstarke KI-Modelle mit einem Minimum an Versuchen zu erstellen.
+Die Abstimmung von Hyperparametern wie Lernrate oder Netztiefe kann wiederholtes Trainieren und Auswerten erfordern. Einstellungen müssen nicht von Hand ausgewählt werden; die Suche lässt sich automatisieren.
 
-### 4. Bayesianisches Deep Learning
+Bayessche Optimierung bildet die Beziehung zwischen Einstellungen und Leistung durch ein probabilistisches Ersatzmodell, etwa einen Gaußprozess, ab und aktualisiert es anhand der Auswertungen. Eine **Akquisitionsfunktion**, etwa die erwartete Verbesserung, wählt den nächsten Kandidaten. Sowohl die Nutzung vielversprechender Bereiche als auch die Erkundung unsicherer Bereiche sind wichtig. [Snoek und Mitautoren](https://arxiv.org/abs/1206.2944) untersuchen die Abstimmung von Algorithmen des maschinellen Lernens.
 
-Ein Ansatz, der in letzter Zeit Aufmerksamkeit erregt hat, ist die Verschmelzung von Deep Learning und Bayes'scher Statistik. Ein standardmäßiges neuronales Netzwerk gibt seine Vorhersage als einen einzigen deterministischen Wert aus, sagt Ihnen jedoch nicht, "wie sicher es sich ist".
+Ziel ist eine effiziente Verteilung teurer Auswertungen. Für beliebige Zielfunktionen, Budgets und Rauschbedingungen ist nicht garantiert, das Optimum mit der geringstmöglichen Zahl von Versuchen zu finden.
 
-Im Bayesianischen Deep Learning werden die Netzwerkgewichte nicht als feste Zahlen, sondern als "Wahrscheinlichkeitsverteilungen" behandelt. Dadurch kann die KI zusammen mit ihren Vorhersagen **"Unsicherheit (mangelndes Vertrauen)"** ausgeben. Zum Beispiel könnte eine medizinische KI warnen: "Die Wahrscheinlichkeit für Krebs liegt bei 90 %. Allerdings ist die Unsicherheit dieser Vorhersage selbst sehr hoch, weshalb eine Bestätigung durch einen menschlichen Arzt erforderlich ist." Dies ist eine extrem wichtige Technologie, um die Sicherheit und Zuverlässigkeit von KI zu erhöhen.
+## 8. KI-Anwendung 4: Bayessches Deep Learning
 
-## Philosophische Perspektive: Frequentismus vs. Bayesianismus
+Auch ein gewöhnliches neuronales Netz kann Klassenwahrscheinlichkeiten ausgeben, etwa mittels Softmax. Die Berechnung mit festen Gewichten ist mit der Ausgabe einer Wahrscheinlichkeitsverteilung vereinbar.
 
-In der Geschichte der Statistik sind zwei große Denkschulen in der Frage aufeinandergeprallt, "was Wahrscheinlichkeit ist". Diese sind der **Frequentismus (Frequentism)** und der **Bayesianismus (Bayesianism)** .
+Ein bayesscher Ansatz kann den stetigen Gewichten w eine A-priori-Dichte zuweisen und ihre A-posteriori-Dichte bedingt auf die Trainingsdaten d bestimmen. Im üblichen Modell bedingter Unabhängigkeit lautet die posterior-prädiktive Wahrscheinlichkeit einer diskreten Klasse y
 
-Im Frequentismus wird Wahrscheinlichkeit als "die relative Häufigkeit, mit der ein Ereignis auftritt, wenn derselbe Versuch unendlich oft wiederholt wird" definiert. Zu sagen, dass die Wahrscheinlichkeit, dass eine Münze auf Kopf landet, bei $50\%$ liegt, bedeutet, dass bei unendlich vielen Würfen genau die Hälfte Kopf sein wird. In dieser Haltung existiert eine wahre, feste Wahrscheinlichkeit für das Ereignis selbst und lässt dem Beobachter keinen Raum für eine "Überzeugung".
+$$
+\Pr(y\mid x,d)=\int\Pr(y\mid x,w)\pi(w\mid d)\,dw
+$$
 
-Andererseits wird Wahrscheinlichkeit im Bayesianismus als **"der Grad der Überzeugung des Beobachters (subjektive Wahrscheinlichkeit)"** behandelt. Eine Regenwahrscheinlichkeit von $70\%$ für morgen repräsentiert den "Grad des Vertrauens" des Wetterdienstes auf der Grundlage verfügbarer Wetterdaten (Beweise). Wenn neue Daten (z. B. ein plötzlicher Abfall des Luftdrucks) beobachtet werden, wird dieses Vertrauen gemäß dem [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) aktualisiert.
+Die [Originalarbeit von Blundell und Mitautoren](https://arxiv.org/abs/1505.05424) nähert die bei Netzen praxisrelevanter Größe schwer exakt berechenbare Inferenz durch eine Variationsverteilung an. Vorhersagen können die Unsicherheit über Gewichte berücksichtigen, hängen aber von A-priori-Verteilung, Likelihood und Näherungsverfahren ab.
 
-Der Frequentismus dominierte einen Großteil des 20. Jahrhunderts, aber in der modernen Ära, in der sich die Rechenleistung von Computern drastisch verbessert hat, wurde der flexible und praktische Ansatz des Bayesianismus neu bewertet und wurde zu einer der treibenden Kräfte hinter dem KI-Boom.
+Eine Ausgabe wie „90 % Wahrscheinlichkeit für eine Klasse“ vermittelt allein nicht die gesamte Unsicherheit über das Modell. Die Bezeichnung „bayessch“ garantiert keine kalibrierten Vorhersagen in medizinischer KI oder anderen Anwendungen. Auch [Forschung zur Unsicherheit bei Verteilungsverschiebungen](https://arxiv.org/abs/1906.02530) motiviert, Unterschiede zwischen Trainings- und Einsatzdaten zu bewerten.
 
-## Fazit: Weiter lernen und aktualisieren
+## 9. Frequentistische und bayessche Inferenz vergleichen
 
-Der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) bietet eine Art Denkrahmen, der über eine bloße mathematische Formel hinausgeht.
+Beide Ansätze verwenden Wahrscheinlichkeitstheorie; der Satz von Bayes selbst ist gemeinsame Mathematik. Bei statistischer Inferenz behandeln frequentistische Verfahren unbekannte Parameter als fest und betonen die Eigenschaften von Schätz- oder Testverfahren bei wiederholter Stichprobenziehung. Bayessche Inferenz stellt Unsicherheit über unbekannte Größen durch eine A-priori-Verteilung dar und verwendet nach der Beobachtung eine A-posteriori-Verteilung. Eine Verteilung zuzuweisen bedeutet nicht, dass sich ein physikalischer Parameter bei jeder Beobachtung ändert.
 
-Wir alle haben "A-priori-Wahrscheinlichkeiten (anfängliche Überzeugungen)", die auf vergangenen Erfahrungen und Vorurteilen basieren. Das ist nicht unbedingt etwas Schlechtes; es ist ein Ausgangspunkt, um die Welt effizient wahrzunehmen. Wichtig ist jedoch, **die Flexibilität zu haben, die eigenen Überzeugungen anmutig zu aktualisieren (auf A-posteriori-Wahrscheinlichkeit aktualisieren), genau wie der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/), anstatt die Augen zu verschließen, wenn man mit neuen Fakten und Beweisen konfrontiert wird**.
+Für unabhängige, identisch verteilte Würfe einer fairen Münze, mit Kopf als 1 und Zahl als 0, liefert das [Gesetz der großen Zahlen](https://kenji.blog/de/p/law-of-large-numbers/) den Grenzwert
 
-Genauso wie KI durch den Konsum von Daten intelligenter wird, sollten auch wir Menschen neue Informationen als Beweise aufnehmen und uns ständig aktualisieren, um ein genaueres Verständnis der Welt zu erreichen. Vielleicht lässt sich sagen, dass der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) eine mathematische Darstellung des "Wesens der Intelligenz" selbst ist.
+$$
+\frac1n\sum_{i=1}^{n}X_i\xrightarrow{\mathrm{a.s.}}\frac12
+$$
+
+Das Symbol a.s. bezeichnet fast sichere Konvergenz: Die Wahrscheinlichkeit, dass der Anteil gegen 1/2 konvergiert, ist 1. Für eine endliche Zahl von Würfen wird dadurch nicht genau die Hälfte Kopf garantiert.
+
+A-priori-Verteilungen können Fachwissen berücksichtigen oder beispielsweise schwach informative Verteilungen sein. Es wäre irreführend, sie alle als willkürliche Vorlieben abzutun oder durch ihre Wahl automatisch Objektivität zu erwarten. Eine Regenprognose von 70 % für morgen lässt sich als modell- und informationsgestützte Wahrscheinlichkeit lesen, deren Kalibrierung überprüfbar ist. Diese Zahl allein identifiziert weder eine statistische Schule noch die persönliche Überzeugung der vorhersagenden Person.
+
+## 10. Beobachtungen aktualisieren und Annahmen prüfen
+
+Bayessche Aktualisierung verbindet Vorinformationen und Beobachtungen nach den Regeln der Wahrscheinlichkeit. Bei sequentieller Aktualisierung wird die bisherige A-posteriori-Verteilung zur nächsten A-priori-Verteilung; verwendet wird die bedingte Likelihood der neuen Daten. Eine bereits verwendete Beobachtung darf nicht erneut wie eine unabhängige neue Information einmultipliziert werden.
+
+Die Formel allein korrigiert weder ein falsches Modell noch verzerrte Daten. Zu prüfen, was beobachtet und welche Population oder Verteilung angenommen wurde, gehört zum Lernen und Überarbeiten unseres Verständnisses. Auch das [Zwei-Umschläge-Paradoxon](https://kenji.blog/de/p/two-envelopes-paradox/) zeigt, warum bedingte Wahrscheinlichkeiten aus einem expliziten Modell berechnet werden müssen.
