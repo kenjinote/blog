@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T18:53:54.869520+09:00",
+  "allPassed": true,
+  "results": [
+    {
+      "command": [
+        "docs/translation-review/verify_batch_026.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-bayes-es-final",
+        "--languages",
+        "ja",
+        "es",
+        "--output",
+        "docs/translation-review/batch-026-es-validation.json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"passed\": true, \"versions\": 2, \"texEach\": 22, \"diagramsEach\": 2, \"auxiliary\": {\"jointFormulaTables\": 1260, \"reverseFormulaTables\": 1230, \"zeroPriorAWithPositiveB\": 30, \"undefinedBExcluded\": 36, \"toyDagAssignments\": 128, \"toyDagTotalMass\": \"1\", \"toyDagPrior\": \"151/600\", \"toyDagPosterior\": \"14949/17194\", \"scope\": \"Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun.\"}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-bayes-es-final"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1609 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-bayes-es-final"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 2933, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    }
+  ],
+  "existingUnitTestsRerun": false,
+  "prior17TestEvidence": "docs/translation-review/batch-026-ja-en-checks.json",
+  "scope": "Final Spanish source/decodedHTML after complete reread and grammar/variable wording edits;whole-preview multilingual/HTTPS checks. Auxiliary arithmetic shared once per validator call;no native/browser/runtime/clinical/publication certification."
+}

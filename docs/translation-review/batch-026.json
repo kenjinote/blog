@@ -122,6 +122,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/bayes-theorem/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/bayes-theorem/index.md",
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "translationHash": "bc62dcf3991c6286d7d5229564bf2a40ad01d156e229ad57e0d6cfb01abb7e26",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and revised Spanish metadata, body, table and both diagrams against corrected Japanese, including final grammar and italic-y clarification. Preserved updating/history, normalized event theorem, likelihood/MAP/predictive distinction, hypothetical test, all four AI applications, both diagrams, frequentist/Bayesian comparison and conclusion. Corrected omitted normalizer, unconditional independence, all-learning-as-posterior-maximization, automatic causal/minimum-trials/calibration claims and finite-half language. Retained the numerically correct original16.7% result as1/6. Replaced infectada with having the studied disease,without assuming it is infectious or its absence means general health."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Comparé probabilidad a priori/a posteriori,verosimilitud/verosimilitud marginal,normalización,densidad,moda/MAP/predicción posterior,sensibilidad/especificidad/tasa de falsos positivos/valor predictivo positivo/exactitud global,independencia condicional conjunta/frente a independencia por pares,grafo dirigido acíclico/causalidad,función de adquisición/exploración/explotación,incertidumbre sobre pesos/calibración y convergencia casi segura. Ministro religioso evita la lectura de cargo político. Los recuentos10 000/9 405 no confunden separador decimal y millares;el texto usa16,7% y las fórmulas conservan la notación matemática compartida. La variable y se distingue de la conjunción española. Conservé categorías y etiquetas originales."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually checked all22TeX and assumptions against Japanese:positiveB and additional positiveA only for reverse conditioning,joint form for zeroA,positive finite normalizer,MAP attainment,uniform-prior ordered1,1,0posterior12theta^2(1-theta),mode2/3 versus predictive3/5,99/1/495/9405medical counts and1/6VPP/95.04%global accuracy,conditional joint-independence product,DAG local CPDs and independent roots,continuous-weight predictive average for a discrete class,and IIDfair-coin almost-sure limit. Source/decodedHTML exact. Shared auxiliary run once:1260positiveB tables,1230reverse cases,30zeroA cases,36undefinedB exclusions,128toyDAG assignments with normalization/marginal/posterior comparisons. Earlier source-audit calculations remain separately scoped,not newly rerun or universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised Spanish contain only two Mermaid blocks and0executable article programs. Read complete localized graph labels and sources,checked corresponding9and7edge topologies and exact decodedHTML retention. Second graph has6probabilistic edges inside the model and1dotted inference annotation outside it. Auxiliary Fraction arithmetic is not article-code execution,clinical validation,BNN training or BO optimization. No browser visual/KaTeX/Mermaid runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Nine exact primary references and Spanish internal LLN/two-envelope URLs checked in source/generatedHTML;internal targets exist in28-bundle preview. Primary reading ranges/failures remain documented separately,not full-paper certification. Preserved originalSep20date,slug,heroimage bytes,Spanish categories/tags;Oct30lastmod and explicit math/Mermaid flags do not establish prior renderer failure. All14hreflang/13sidebar targets exact. Current1609multilingual pages/2933HTML41XMLHTTPS passed. Previous17unit tests were not rerun at this stage. Existing isolated-preview missing-page/layout/PortugueseUI warnings retained. Publication pending."
+        }
+      },
+      "summary": "Full Spanish comparison with correct medical denominators, likelihood and prediction terminology, causal assumptions and localized numerical wording.",
+      "languageSpecificFindings": "Leí todo el original y la revisión española frente al japonés. Separé sensibilidad,VPP y exactitud global;evité infectada/sano como equivalentes de presencia/ausencia de la enfermedad. Revisé verosimilitud,moda,predicción posterior,independencia condicional,función de adquisición y calibración;aclaré ministro religioso y la variable y. Se mantienen las cuatro aplicaciones,las dos figuras y la comparación estadística.",
+      "validation": "docs/translation-review/batch-026-es-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "8other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,clinical evidence,model training or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -238,6 +279,44 @@
       "unreviewedTranslations": 12717,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 9,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "es"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "validation": "docs/translation-review/batch-026-es-validation.json",
+      "checks": "docs/translation-review/batch-026-es-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-026-es-ledger-validation.json",
+      "texEach": 22,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "jointFormulaTables": 1260,
+        "reverseFormulaTables": 1230,
+        "zeroPriorAWithPositiveB": 30,
+        "undefinedBExcluded": 36,
+        "toyDagAssignments": 128,
+        "toyDagTotalMass": "1",
+        "toyDagPrior": "151/600",
+        "toyDagPosterior": "14949/17194",
+        "scope": "Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 316,
+      "unreviewedTranslations": 12716,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 8,
       "publicationPending": true
     }
   ],

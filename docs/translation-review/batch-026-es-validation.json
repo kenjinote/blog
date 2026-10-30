@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T18:53:43.887179+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/bayes-theorem/index.md",
+      "sha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "content/post/bayes-theorem/index.es.md",
+      "sha256": "bc62dcf3991c6286d7d5229564bf2a40ad01d156e229ad57e0d6cfb01abb7e26",
+      "sourceSha256": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "texExpressions": 22,
+      "diagrams": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "probabilisticNetworkEdges": 6,
+      "inferenceAnnotationEdges": 1,
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "passed": true
+    }
+  ],
+  "sharedAuxiliaryChecks": {
+    "jointFormulaTables": 1260,
+    "reverseFormulaTables": 1230,
+    "zeroPriorAWithPositiveB": 30,
+    "undefinedBExcluded": 36,
+    "toyDagAssignments": 128,
+    "toyDagTotalMass": "1",
+    "toyDagPrior": "151/600",
+    "toyDagPosterior": "14949/17194",
+    "scope": "Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun."
+  },
+  "sourceAuditSha256": "d5f43b48aa78a52548fd3870c880cc657dab90d0e4832046b2b6e95989fc02d3",
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source and decoded HTML checks do not certify full prose review or add ledger records.",
+    "No executable article program; auxiliary calculations are distinct.",
+    "Not browser visual, KaTeX/Mermaid runtime, native-language, clinical or full-primary-paper certification.",
+    "Publication pending."
+  ]
+}
