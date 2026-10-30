@@ -1012,5 +1012,36 @@
       "No browser visual/runtime,native-language,clinical,training or universal-proof certification.",
       "Full article/translation goal remains active;only324of13032translations reviewed."
     ]
+  },
+  "publicationDispatch": {
+    "version": 1,
+    "observedAt": "2026-10-30T19:52:51.6153480+09:00",
+    "deployedCommitExpected": "03dc2a9279274bd8db955101c882034535d7197e",
+    "ciRun": 41043918765,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/41043918765",
+    "runAttempt": 1,
+    "statusAtDispatch": "in_progress",
+    "conclusionAtDispatch": null,
+    "jobsObserved": [
+      {
+        "name": "build",
+        "status": "in_progress",
+        "conclusion": null,
+        "started_at": "2026-10-30T10:52:25Z",
+        "completed_at": null
+      }
+    ],
+    "pagesPlanned": 351,
+    "translationsPlanned": 324,
+    "japaneseSourcesPlanned": 27,
+    "texExpressionsPlanned": 9350,
+    "mathVersionsPlanned": 156,
+    "bayesVersionsPlanned": 13,
+    "bayesTeXPlanned": 286,
+    "bayesDiagramsPlanned": 26,
+    "publicationPending": true,
+    "scope": "Ordinary push after fetch:zero incoming/16local outgoing. Matching run/head observed live.351URL probe prepared,not executed before matching build/deploy success. No publication confirmation claimed.",
+    "proof": "docs/translation-review/batch-026-publication-dispatch.json",
+    "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_324.py"
   }
 }
