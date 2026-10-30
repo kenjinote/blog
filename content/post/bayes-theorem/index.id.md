@@ -1,6 +1,6 @@
 ---
-title: "Teorema Bayes: Memperbarui Probabilitas dengan 'Bukti Baru', Inti dari AI dan Statistik"
-description: "Penjelasan mendalam tentang bagaimana Teorema Bayes memperbarui probabilitas berdasarkan bukti baru, latar belakang matematisnya, dan penerapannya dalam AI dan pembelajaran mesin."
+title: "Teorema Bayes: probabilitas bersyarat, contoh tes medis, dan empat penerapan AI"
+description: "Normalisasi, sensitivitas dan nilai prediktif positif, MAP dan prediksi posterior: empat penerapan Bayesian dalam AI beserta asumsinya."
 slug: "bayes-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
@@ -11,147 +11,206 @@ tags:
   - "Probabilitas"
   - "AI"
   - "Statistik"
+lastmod: "2026-10-30"
+math: true
+mermaid: true
 ---
 
-## Pendahuluan: "Memperbarui Keyakinan" di Dunia yang Penuh Ketidakpastian
+## 1. Memperbarui prediksi di tengah ketidakpastian
 
-Dunia tempat kita hidup penuh dengan ketidakpastian. Dari probabilitas hujan esok hari hingga kemungkinan obat baru efektif terhadap penyakit tertentu, atau peluang email yang diterima adalah spam, kita terus-menerus membuat keputusan berdasarkan informasi yang tidak lengkap. Kerangka kerja yang kuat untuk menangani ketidakpastian ini secara matematis dan **memperbarui prediksi kita setiap kali informasi (bukti) baru diperoleh** adalah [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/id/p/bayes-theorem/)).
+Hujan besok, efek obat, atau kemungkinan sebuah surel adalah spam: kita mengambil keputusan dengan informasi yang tidak lengkap. **Teorema Bayes menghubungkan probabilitas suatu kejadian setelah suatu pengamatan diketahui dengan probabilitas bersyarat dalam arah sebaliknya.** Setelah model dan informasi awal ditentukan, teorema ini dapat digunakan untuk memperbarui probabilitas berdasarkan pengamatan baru.
 
-Ditemukan oleh Thomas Bayes, seorang menteri dan matematikawan Inggris abad ke-18, teorema ini telah menjadi teori fundamental yang mendasari AI (Kecerdasan Buatan) modern dan pembelajaran mesin. Dalam artikel ini, kita akan menggali lebih dalam mulai dari dasar matematika [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/) hingga paradoks probabilitas yang berlawanan dengan intuisi, serta bagaimana hal ini diterapkan dalam teknologi modern.
+Namanya berasal dari Thomas Bayes, pendeta dan matematikawan abad ke-18. [Surat Richard Price yang memperkenalkan tulisan peninggalan Bayes](https://bayes.wustl.edu/Manual/an.essay.pdf) mencatat pembacaan di Royal Society pada 23 Desember 1763. Inferensi Bayesian modern juga mencakup perkembangan dari banyak peneliti berikutnya. Kita akan membahas rumus, contoh tes, empat penerapan AI, dan perbedaan penafsiran probabilitas.
 
-## Formulasi Matematis [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/)
+## 2. Rumus dan peran normalisasi
 
-[Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/) adalah teorema yang digunakan untuk menghitung probabilitas $P(A|B)$ dari sebuah kejadian $A$ dengan syarat kejadian $B$ telah terjadi, berdasarkan probabilitas bersyarat kebalikannya $P(B|A)$ dan faktor-faktor lainnya. Meskipun rumusnya sangat sederhana, implikasinya sangat mendalam.
-
-$$
-P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
-$$
-
-Setiap suku dalam persamaan ini diberi nama khusus dari perspektif "pembaruan keyakinan" statistik.
-
-- **Probabilitas Prior (Prior Probability)** $P(A)$ : Probabilitas kejadian $A$ terjadi sebelum mempertimbangkan bukti baru $B$. Keyakinan awal kita.
-- **Kemungkinan (Likelihood)** $P(B|A)$ : Probabilitas mengamati bukti $B$ dengan asumsi bahwa kejadian $A$ adalah benar.
-- **Kemungkinan Marginal / Bukti (Marginal Likelihood / Evidence)** $P(B)$ : Probabilitas keseluruhan mengamati bukti $B$ terlepas dari apakah kejadian $A$ benar atau salah. Bertindak sebagai konstanta normalisasi.
-- **Probabilitas Posterior (Posterior Probability)** $P(A|B)$ : Probabilitas kejadian $A$ setelah mempertimbangkan bukti baru $B$. Keyakinan kita yang telah diperbarui.
-
-Singkatnya, [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/) dapat digambarkan sebagai rumusan matematis dari proses **memperbarui keyakinan kita menjadi "probabilitas posterior" dengan mengalikan "probabilitas prior" dengan "seberapa cocok bukti baru tersebut (kemungkinan)"**.
-
-## Penyimpangan dari Intuisi: Paradoks "Positif Palsu" (Contoh Tes Medis)
-
-Intuisi manusia sering membuat kesalahan dalam perhitungan probabilitas. Sebagai contoh klasik untuk memahami kekuatan [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/), mari kita pertimbangkan pengujian penyakit (skrining medis).
-
-Misalkan ada penyakit langka, dan $1\%$ ($0.01$) dari total populasi terinfeksi penyakit ini (ini adalah probabilitas prior $P(\text{Penyakit})$).
-Tes untuk mendeteksi penyakit ini sangat akurat: jika orang yang mengidap penyakit tersebut mengikuti tes, mereka akan dinilai "Positif" dengan probabilitas $99\%$ (Tingkat Positif Benar: Kemungkinan $P(\text{Positif}|\text{Penyakit})$).
-Namun, tes ini memiliki sedikit kelemahan: meskipun orang sehat tanpa penyakit tersebut mengikutinya, mereka akan salah dinilai sebagai "Positif" dengan probabilitas $5\%$ (Tingkat Positif Salah $P(\text{Positif}|\text{Sehat})$).
-
-Sekarang, misalkan Anda mengikuti tes ini secara acak dan mendapatkan hasil **"Positif"** . Berapa probabilitas Anda benar-benar mengidap penyakit ini?
-
-Banyak orang cenderung berpikir, "Karena tes ini $99\%$ akurat, ada peluang $90\%$ atau lebih bahwa saya mengidap penyakit ini." Namun, mari kita hitung menggunakan [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/).
-
-Kita ingin mencari $P(\text{Penyakit}|\text{Positif})$.
-
-1. **Probabilitas Prior** $P(\text{Penyakit}) = 0.01$
-2. **Kemungkinan** $P(\text{Positif}|\text{Penyakit}) = 0.99$
-3. **Probabilitas Orang Sehat** $P(\text{Sehat}) = 1 - 0.01 = 0.99$
-4. **Probabilitas Positif Salah** $P(\text{Positif}|\text{Sehat}) = 0.05$
-
-Pertama, kita menghitung probabilitas keseluruhan dari hasil tes positif $P(\text{Positif})$ (Kemungkinan Marginal). Ini adalah jumlah dari "dites positif saat sakit" dan "dites positif saat sehat".
+Untuk kejadian B dengan $P(B)>0$, definisi probabilitas bersyarat memberikan
 
 $$
-\begin{aligned}
-P(\text{Positif}) &= P(\text{Positif}|\text{Penyakit}) \cdot P(\text{Penyakit}) + P(\text{Positif}|\text{Sehat}) \cdot P(\text{Sehat}) \\
-&= (0.99 \times 0.01) + (0.05 \times 0.99) \\
-&= 0.0099 + 0.0495 \\
-&= 0.0594
-\end{aligned}
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}
 $$
 
-Selanjutnya, kita terapkan [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/).
+Jika $P(A)>0$ juga berlaku, sehingga probabilitas bersyarat dalam arah sebaliknya terdefinisi, penguraian probabilitas gabungan memberikan
 
 $$
-\begin{aligned}
-P(\text{Penyakit}|\text{Positif}) &= \frac{P(\text{Positif}|\text{Penyakit}) \cdot P(\text{Penyakit})}{P(\text{Positif})} \\
-&= \frac{0.0099}{0.0594} \\
-&\approx 0.1667
-\end{aligned}
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}
 $$
 
-Mengejutkan, bahkan dengan hasil tes positif, **probabilitas Anda benar-benar mengidap penyakit ini hanya sekitar $16.7\%$**. Sisa $83.3\%$ adalah kasus "orang sehat yang salah dinilai sebagai positif" (positif salah). Hal ini karena prevalensi awal penyakit ($1\%$) sangat rendah, membuat "positif salah dari populasi sehat yang besar" jauh melebihi jumlah kecil "orang yang benar-benar sakit".
+Ketika B merupakan pengamatan baru, peran setiap suku adalah:
 
-Dengan cara ini, [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/) secara matematis mengoreksi jebakan yang mudah menjerumuskan intuisi kita dan berfungsi sebagai alat yang kuat untuk membuat penilaian yang tenang.
+- **Probabilitas prior** $P(A)$: probabilitas A sebelum memperhitungkan B.
+- **Likelihood** $P(B\mid A)$: probabilitas mengamati B dengan mengasumsikan A.
+- **Probabilitas pengamatan / likelihood marginal** $P(B)$: probabilitas total mengamati B.
+- **Probabilitas posterior** $P(A\mid B)$: probabilitas A setelah memperhitungkan B.
+
+Perkalian prior dan likelihood hanyalah pembilang. **Untuk memperoleh posterior, kita masih harus membaginya dengan probabilitas pengamatan agar ternormalisasi.** Meskipun probabilitas A nol, rumus pertama yang memakai probabilitas gabungan tetap berlaku jika probabilitas B positif. Jangan langsung menggunakan rumus kedua ketika probabilitas bersyarat dalam arah sebaliknya tidak terdefinisi.
+
+## 3. Likelihood, MAP, dan prediksi posterior berbeda
+
+Misalkan θ adalah parameter yang tidak diketahui dan d adalah data pengamatan. Saat [memperbarui densitas prior dengan likelihood](https://web.stanford.edu/class/stats200/Lecture20.pdf), kita dapat menulis
+
+$$
+\pi(\theta\mid d)=\frac{L(\theta;d)\pi(\theta)}{Z(d)},\qquad Z(d)=\int L(t;d)\pi(t)\,dt
+$$
+
+Kita mengasumsikan $0<Z(d)<\infty$. Likelihood L adalah fungsi θ dengan d tetap, bukan distribusi probabilitas atas θ. Untuk data kontinu digunakan densitas, yang nilainya dapat melebihi satu. Probabilitas nol pada satu titik pengamatan tidak dengan sendirinya menghalangi pembaruan melalui densitas.
+
+Jika densitas posterior mencapai maksimum, **estimasi maximum a posteriori (MAP)** memilih titik tempat maksimum itu dicapai:
+
+$$
+\hat\theta_{\mathrm{MAP}}\in\arg\max_\theta\pi(\theta\mid d)
+$$
+
+Sebaliknya, **probabilitas prediktif posterior** untuk pengamatan biner berikutnya diperoleh dengan merata-ratakan prediksi menurut distribusi posterior:
+
+$$
+\Pr(Y_{\mathrm{new}}=1\mid d)=\int\Pr(Y_{\mathrm{new}}=1\mid\theta,d)\pi(\theta\mid d)\,d\theta
+$$
+
+Sebagai contoh, berikan prior seragam antara nol dan satu pada probabilitas θ munculnya sisi gambar dari sebuah koin. Bersyarat pada θ, tiap lemparan independen. Kita mengamati urutan 1,1,0, dengan 1 berarti gambar dan 0 berarti angka. Maka
+
+$$
+\pi(\theta\mid 1,1,0)=12\theta^2(1-\theta),\qquad 0<\theta<1
+$$
+
+sehingga
+
+$$
+\hat\theta_{\mathrm{MAP}}=\frac23,\qquad\Pr(Y_{\mathrm{new}}=1\mid1,1,0)=\frac35
+$$
+
+Memasukkan modus densitas posterior dan mengambil rata-rata menurut distribusi dapat memberikan jawaban berbeda. Memilih kelas, mengestimasi parameter dengan MAP, dan memprediksi pengamatan berikutnya tidak semuanya dapat disebut “memaksimalkan probabilitas posterior”.
+
+## 4. Tes medis hipotetis: sensitivitas 99%, NPP sekitar 16,7%
+
+Ini adalah **contoh perhitungan hipotetis, bukan kinerja terukur dari tes nyata**. D berarti memiliki penyakit yang diteliti, sedangkan T berarti hasil tes positif. Asumsikan prevalensi 1% pada populasi sasaran, sensitivitas 99%, dan tingkat positif palsu 5%.
+
+$$
+P(D)=0.01,\qquad P(T\mid D)=0.99,\qquad P(T\mid D^c)=0.05
+$$
+
+Komplemen D berarti tidak memiliki penyakit tersebut, bukan sehat dalam segala hal. Menjumlahkan dua sumber hasil positif memberikan
+
+$$
+P(T)=P(T\mid D)P(D)+P(T\mid D^c)P(D^c)=0.99\cdot0.01+0.05\cdot0.99=0.0594
+$$
+
+Dengan demikian, probabilitas memiliki penyakit ketika hasilnya positif adalah
+
+$$
+P(D\mid T)=\frac{0.0099}{0.0594}=\frac{99}{594}=\frac16\approx0.1667
+$$
+
+Hasilnya sekitar 16,7%; nilai tepatnya 1/6. Sisanya, 5/6 atau sekitar 83,3% dari hasil positif, merupakan positif palsu pada orang tanpa penyakit yang diteliti. Jika prevalensi rendah, positif palsu dari kelompok tanpa penyakit yang jauh lebih besar dapat melebihi positif benar.
+
+Untuk menyatakan proporsi sebagai jumlah orang, kita membangun populasi rekaan berisi 10.000 orang dengan proporsi persis seperti di atas. Dalam sampel nyata berisi 10.000 orang, jumlah tiap kelompok dapat bervariasi.
+
+| Hasil tes | Memiliki penyakit yang diteliti | Tidak memiliki penyakit yang diteliti | Total |
+| --- | ---: | ---: | ---: |
+| Positif | 99 (positif benar) | 495 (positif palsu) | 594 |
+| Negatif | 1 (negatif palsu) | 9.405 (negatif benar) | 9.406 |
+| Total | 100 | 9.900 | 10.000 |
 
 ```mermaid
 flowchart TD
-    Population["Total Populasi (10.000 orang)"] --> Disease["Dengan Penyakit (100 orang, 1%)"]
-    Population --> Healthy["Sehat (9.900 orang, 99%)"]
-    
-    Disease --> TruePositive["Positif Benar: Hasil Positif (99 orang, 99%)"]
-    Disease --> FalseNegative["Negatif Salah: Hasil Negatif (1 orang, 1%)"]
-    
-    Healthy --> FalsePositive["Positif Salah: Hasil Positif (495 orang, 5%)"]
-    Healthy --> TrueNegative["Negatif Benar: Hasil Negatif (9.405 orang, 95%)"]
-
-    TruePositive -.->|"Total Positif (594 orang)"| AllPositives["Tes Positif"]
-    FalsePositive -.->|"Total Positif (594 orang)"| AllPositives
-    
-    AllPositives -->|"Probabilitas benar-benar sakit?"| Posterior["Probabilitas Posterior: 99 / 594 = 16.7%"]
+    Population["Populasi rekaan: 10.000"] --> Disease["Memiliki penyakit: 100"]
+    Population --> NoDisease["Tanpa penyakit yang diteliti: 9.900"]
+    Disease --> TP["Positif benar: 99 (99% dari yang memiliki penyakit)"]
+    Disease --> FN["Negatif palsu: 1 (1% dari yang memiliki penyakit)"]
+    NoDisease --> FP["Positif palsu: 495 (5% dari yang tidak memiliki penyakit)"]
+    NoDisease --> TN["Negatif benar: 9.405 (95% dari yang tidak memiliki penyakit)"]
+    TP -.-> AllPositive["Total hasil positif: 594"]
+    FP -.-> AllPositive
+    AllPositive --> PPV["Nilai prediktif positif: 99/594 = 1/6 ≈ 16,7%"]
 ```
 
-## Penerapan [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/) dalam AI dan Pembelajaran Mesin
+**Sensitivitas 99% tidak berarti nilai prediktif positif (NPP) 99% ataupun akurasi keseluruhan 99%.** Akurasi keseluruhan, yaitu proporsi seluruh hasil yang benar dalam tabel ini, adalah
 
-[Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/) tidak sekadar teka-teki probabilitas belaka; ia memainkan peran penting dalam ilmu data modern dan Kecerdasan Buatan (AI). Hal ini karena proses pembelajaran pola dari sejumlah besar data dan membuat prediksi pada data yang tidak diketahui dapat dirumuskan sebagai "memaksimalkan probabilitas posterior".
+$$
+\frac{99+9405}{10000}=0.9504=95.04\%
+$$
 
-### 1. Pengklasifikasi Naive Bayes (Naive Bayes Classifier)
+[Definisi sensitivitas, spesifisitas, dan nilai prediktif positif](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda) menggunakan penyebut berbeda. Intuisi “99% berarti orang dengan hasil positif hampir pasti sakit” mencampuradukkan kelompok yang menjadi dasar proporsi. Penerapan pada hasil nyata memerlukan prevalensi dan karakteristik tes yang sesuai dengan populasi terkait.
 
-"Pengklasifikasi Naive Bayes", yang sering digunakan untuk penyaringan email spam, adalah salah satu penerapan paling langsung dari [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/). Algoritma ini memperlakukan kata-kata yang terkandung dalam email (seperti "gratis", "pemenang", "kata sandi") sebagai bukti (fitur) dan menghitung probabilitas posterior apakah email tersebut adalah spam.
+## 5. Penerapan AI 1: klasifikasi Naive Bayes
 
-Penyebutan "naive" (naif) dikarenakan adanya asumsi kuat bahwa setiap fitur (kata) muncul secara independen satu sama lain. Pada kenyataannya, kata-kata saling berhubungan, tetapi terlepas dari asumsi yang menyederhanakan ini, Naive Bayes menunjukkan akurasi yang sangat tinggi dan kecepatan pemrosesan yang cepat dalam tugas-tugas seperti klasifikasi teks.
+Untuk mendeteksi spam, fitur X seperti kemunculan kata tertentu memberikan informasi tentang probabilitas posterior kelas C. Asumsi dasar Naive Bayes adalah **independensi bersyarat ketika kelas diketahui**, bukan independensi kata tanpa syarat. Untuk tiga fitur atau lebih, bahkan independensi berpasangan dalam setiap kelas tidak menjamin independensi bersama.
 
-### 2. Jaringan Bayesian (Bayesian Networks)
+Untuk fitur diskret, anggap probabilitas marginal pengamatan x dan probabilitas prior setiap kelas positif. Jika semua fitur independen secara bersama dalam setiap kelas, maka
 
-Dalam sistem di mana beberapa variabel saling terkait secara rumit, Jaringan Bayesian mengekspresikan dependensi antar variabel sebagai struktur grafik (Grafik Asiklik Berarah) untuk melakukan penalaran di bawah ketidakpastian.
+$$
+\Pr(C=c\mid X=x)\propto\Pr(C=c)\prod_{j=1}^{m}\Pr(X_j=x_j\mid C=c)
+$$
 
-Misalnya, dalam AI diagnosis medis, pengaruh probabilistik dari "usia pasien", "gaya hidup", dan "faktor genetik" pada "penyakit spesifik" dimodelkan, dan kemudian dihubungkan dengan pengaruh penyakit tersebut pada "gejala yang muncul". Setiap kali gejala (bukti) baru diinput, probabilitas di seluruh jaringan diperbarui sesuai dengan [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/), menyimpulkan nama penyakit yang paling mungkin. Ini dimanfaatkan dalam berbagai bidang, seperti penilaian situasi pada mobil self-driving dan prediksi pasar keuangan.
+Jika semua kesalahan klasifikasi memiliki biaya yang sama, kita memilih kelas dengan probabilitas posterior terbesar. Keputusan klasifikasi ini berbeda dari estimasi MAP atas parameter model itu sendiri.
+
+Kata-kata nyata saling berkaitan, sehingga independensi hanyalah pendekatan. Kesederhanaan dan kecepatan adalah kelebihan, tetapi tidak menjamin akurasi selalu lebih tinggi atau probabilitas terkalibrasi dengan baik. [Dokumentasi resmi scikit-learn](https://scikit-learn.org/stable/modules/naive_bayes.html) juga membedakan kinerja klasifikasi dari kualitas estimasi probabilitas. Model generatif konkretnya berbeda, misalnya Bernoulli untuk ada-tidaknya kata dan multinomial untuk jumlah kemunculannya.
+
+## 6. Penerapan AI 2: jaringan Bayesian
+
+Jaringan Bayesian menyatakan distribusi gabungan melalui graf berarah tanpa siklus (DAG) dan distribusi bersyarat lokal untuk setiap simpul. Pada model diskret berhingga, dengan pa menyatakan nilai simpul induk, faktorisasi tersebut adalah
+
+$$
+\Pr(V_1=v_1,\ldots,V_n=v_n)=\prod_{i=1}^{n}\Pr(V_i=v_i\mid\mathrm{pa}_i)
+$$
+
+[Menyatakan distribusi dengan DAG](https://ermongroup.github.io/cs228-notes/representation/directed/) juga menetapkan asumsi independensi bersyarat.
+
+Model rekaan berikut menghubungkan usia, gaya hidup, faktor genetik, penyakit, gejala, dan tes. Model ini mengasumsikan ketiga faktor tanpa induk saling independen. Panah utuh menentukan hubungan induk-anak dalam distribusi lokal; diagram ini bukan hubungan sebab-akibat nyata yang telah divalidasi. **Klaim sebab-akibat memerlukan asumsi kausal tambahan**, di luar model dependensi statistik ([pembedaan oleh Pearl](https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf)).
 
 ```mermaid
 flowchart LR
-    Age["Usia"] --> Disease["Penyakit Spesifik"]
-    Lifestyle["Gaya Hidup"] --> Disease
-    Genes["Faktor Genetik"] --> Disease
-    
-    Disease --> SymptomA["Gejala A"]
-    Disease --> SymptomB["Gejala B"]
-    Disease --> TestResult["Hasil Tes"]
-    
-    TestResult -.->|"Diamati sebagai bukti baru"| Update["Pembaruan Probabilitas (Inferensi)"]
+    subgraph Model["Model probabilitas rekaan"]
+        Age["Usia"] --> Disease["Penyakit yang diteliti"]
+        Lifestyle["Gaya hidup"] --> Disease
+        Genes["Faktor genetik"] --> Disease
+        Disease --> SymptomA["Gejala A"]
+        Disease --> SymptomB["Gejala B"]
+        Disease --> TestResult["Hasil tes"]
+    end
+    TestResult -.->|"Gunakan pengamatan"| Inference["Operasi inferensi: menghitung distribusi posterior"]
 ```
 
-### 3. Optimisasi Bayesian (Bayesian Optimization)
+Catatan pada ujung panah putus-putus adalah operasi inferensi, bukan variabel acak tambahan dalam distribusi gabungan. Menghitung distribusi marginal posterior penyakit atau variabel lain juga tidak sama dengan mempelajari ulang seluruh parameter model. Model seperti ini dapat menjadi kerangka diagnosis, estimasi situasi, atau prediksi keuangan, tetapi kesesuaiannya untuk setiap penggunaan bergantung pada struktur dan data.
 
-Dalam membangun model pembelajaran mesin, tugas menemukan kombinasi hyperparameter yang optimal (parameter yang harus diatur oleh manusia, seperti kecepatan pembelajaran atau kedalaman jaringan) sangat memakan waktu. Sangat tidak realistis untuk mencoba semua kombinasi.
+## 7. Penerapan AI 3: optimisasi Bayesian
 
-Dalam Optimisasi Bayesian, hubungan antara "pengaturan parameter" dan "performa model" diekspresikan sebagai model probabilistik (seperti Proses Gaussian). Berdasarkan pengaturan dan hasil percobaan masa lalu (bukti), ia menyimpulkan pengaturan parameter yang paling menjanjikan untuk dilihat selanjutnya. Hal ini memungkinkan untuk membangun model AI berkinerja tinggi dengan jumlah percobaan minimum.
+Menyesuaikan hiperparameter seperti laju pembelajaran atau kedalaman jaringan dapat memerlukan pelatihan dan evaluasi berulang. Pengaturan tidak harus dipilih manual oleh manusia; pencarian dapat diotomatisasi.
 
-### 4. Pembelajaran Mendalam Bayesian (Bayesian Deep Learning)
+Optimisasi Bayesian menyatakan hubungan antara pengaturan dan kinerja melalui model pengganti probabilistik, misalnya proses Gaussian, lalu memperbaruinya dengan hasil evaluasi. **Fungsi akuisisi**, seperti peningkatan yang diharapkan, memilih kandidat berikutnya. Eksploitasi wilayah yang menjanjikan dan eksplorasi wilayah yang belum pasti sama-sama penting. [Snoek dan rekan-rekan](https://arxiv.org/abs/1206.2944) mempelajari penyesuaian algoritma pembelajaran mesin.
 
-Pendekatan yang akhir-akhir ini menarik perhatian adalah perpaduan Deep Learning (Pembelajaran Mendalam) dan statistik Bayesian. Jaringan saraf standar menghasilkan prediksinya sebagai nilai deterministik tunggal, tetapi tidak memberi tahu Anda "seberapa yakin" prediksi tersebut.
+Tujuannya adalah mengalokasikan evaluasi yang mahal secara efisien. Tidak ada jaminan menemukan optimum dengan jumlah percobaan paling sedikit untuk setiap fungsi objektif, anggaran, dan kondisi derau.
 
-Dalam Pembelajaran Mendalam Bayesian, bobot jaringan diperlakukan sebagai "distribusi probabilitas", bukan angka tetap. Ini memungkinkan AI untuk menghasilkan **"ketidakpastian (kurangnya rasa percaya diri)"** bersama dengan prediksinya. Misalnya, AI medis dapat memperingatkan: "Terdapat peluang kanker sebesar 90%. Namun, ketidakpastian prediksi ini sendiri sangat tinggi, sehingga diperlukan konfirmasi oleh dokter manusia." Ini adalah teknologi yang sangat penting untuk meningkatkan keamanan dan keandalan AI.
+## 8. Penerapan AI 4: pembelajaran mendalam Bayesian
 
-## Perspektif Filosofis: Frekuentisme vs. Bayesianisme
+Jaringan saraf biasa juga dapat menghasilkan probabilitas kelas, misalnya melalui softmax. Perhitungan dengan bobot tetap tidak bertentangan dengan keluaran berupa distribusi probabilitas.
 
-Dalam sejarah statistik, dua aliran pemikiran utama telah berbenturan mengenai "apa itu probabilitas". Ini adalah **Frekuentisme (Frequentism)** dan **Bayesianisme (Bayesianism)** .
+Salah satu pendekatan Bayesian memberikan densitas prior pada bobot kontinu w dan memperoleh densitas posteriornya berdasarkan data pelatihan d. Pada model independensi bersyarat yang lazim, probabilitas prediktif posterior untuk kelas diskret y adalah
 
-Dalam Frekuentisme, probabilitas didefinisikan sebagai "frekuensi relatif terjadinya suatu kejadian jika percobaan yang sama diulang tanpa batas". Mengatakan probabilitas koin mendarat dengan sisi kepala di atas adalah $50\%$ berarti jika dilempar tanpa batas, tepat setengahnya akan berupa sisi kepala. Dalam pandangan ini, ada probabilitas yang benar dan tetap untuk kejadian itu sendiri, tidak menyisakan ruang bagi pengamat untuk memiliki "keyakinan".
+$$
+\Pr(y\mid x,d)=\int\Pr(y\mid x,w)\pi(w\mid d)\,dw
+$$
 
-Di sisi lain, dalam Bayesianisme, probabilitas diperlakukan sebagai **"tingkat keyakinan pengamat (probabilitas subjektif)"**. Probabilitas hujan $70\%$ untuk esok hari mewakili "tingkat keyakinan" badan meteorologi berdasarkan data cuaca yang tersedia (bukti). Jika data baru (misal, penurunan tekanan atmosfer secara tiba-tiba) diamati, keyakinan tersebut diperbarui menurut [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/).
+[Makalah asli Blundell dan rekan-rekan](https://arxiv.org/abs/1505.05424) menggunakan distribusi variasional untuk mendekati inferensi yang sulit dihitung secara eksak pada jaringan yang digunakan dalam praktik. Prediksi dapat mencerminkan ketidakpastian bobot, tetapi juga bergantung pada prior, likelihood, dan metode pendekatan.
 
-Frekuentisme mendominasi sebagian besar abad ke-20, tetapi di era modern, di mana kekuatan pemrosesan komputer telah meningkat drastis, pendekatan fleksibel dan praktis dari Bayesianisme telah dievaluasi kembali, menjadi salah satu kekuatan pendorong di balik ledakan AI.
+Keluaran seperti “probabilitas kelas ini 90%” saja tidak menyampaikan seluruh ketidakpastian tentang model. Sebutan Bayesian tidak menjamin prediksi terkalibrasi dalam AI medis atau aplikasi lain. [Penelitian ketidakpastian saat distribusi bergeser](https://arxiv.org/abs/1906.02530) juga mendorong evaluasi perbedaan data pelatihan dan data saat penggunaan.
 
-## Kesimpulan: Terus Belajar dan Memperbarui
+## 9. Membandingkan inferensi frekuentis dan Bayesian
 
-[Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/) menyediakan semacam kerangka pemikiran yang melampaui sekadar rumus matematika.
+Kedua pendekatan memakai teori probabilitas; teorema Bayes sendiri adalah matematika yang digunakan bersama. Dalam inferensi statistik, metode frekuentis memperlakukan parameter tak diketahui sebagai nilai tetap dan menekankan sifat prosedur estimasi atau pengujian pada pengambilan sampel berulang. Inferensi Bayesian menyatakan ketidakpastian tentang besaran tak diketahui melalui distribusi prior dan memakai posterior setelah mengamati data. Memberikan distribusi tidak berarti parameter fisik berubah setiap kali ada pengamatan.
 
-Kita semua memiliki "probabilitas prior (keyakinan awal)" berdasarkan pengalaman masa lalu dan bias. Ini belum tentu hal yang buruk; ini adalah titik awal untuk mempersepsikan dunia secara efisien. Namun, yang penting adalah memiliki **fleksibilitas untuk memperbarui keyakinan seseorang dengan anggun (memperbarui ke probabilitas posterior), seperti halnya [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/), alih-alih menutup mata ketika dihadapkan pada fakta dan bukti baru**.
+Untuk pelemparan koin adil yang independen dan berdistribusi sama, dengan gambar bernilai 1 dan angka bernilai 0, [hukum bilangan besar](https://kenji.blog/id/p/law-of-large-numbers/) memberikan limit
 
-Sama seperti AI menjadi lebih pintar dengan mengonsumsi data, kita manusia juga harus menggabungkan informasi baru sebagai bukti dan terus memperbarui diri, mencapai pemahaman dunia yang lebih akurat. Mungkin, [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/) dapat dikatakan sebagai representasi matematis dari "esensi kecerdasan" itu sendiri.
+$$
+\frac1n\sum_{i=1}^{n}X_i\xrightarrow{\mathrm{a.s.}}\frac12
+$$
+
+Simbol a.s. menyatakan konvergensi hampir pasti: probabilitas proporsi tersebut konvergen ke 1/2 adalah 1. Ini tidak menjamin jumlah kemunculan sisi gambar tepat setengah dari jumlah lemparan yang berhingga.
+
+Prior dapat memasukkan pengetahuan ahli atau pilihan seperti distribusi yang memberikan informasi lemah. Tidak tepat menyebut semua prior sekadar selera sewenang-wenang ataupun menganggap pemilihan prior otomatis membuat analisis objektif. Prediksi hujan 70% untuk besok dapat dipahami sebagai probabilitas berbasis model dan informasi yang kalibrasinya dapat dievaluasi. Angka itu saja tidak menentukan aliran statistik tertentu atau keyakinan pribadi seorang peramal cuaca.
+
+## 10. Memperbarui pengamatan dan memeriksa asumsi
+
+Pembaruan Bayesian menggabungkan informasi awal dan pengamatan sesuai aturan probabilitas. Dalam pembaruan berurutan, posterior sebelumnya menjadi prior berikutnya, dan digunakan likelihood bersyarat dari data baru. Jangan mengalikan pengamatan yang sudah dipakai lagi seolah-olah merupakan informasi baru yang independen.
+
+Rumus saja tidak memperbaiki model yang salah atau data yang bias. Memeriksa apa yang diamati serta populasi atau distribusi yang diasumsikan merupakan bagian dari belajar dan merevisi pemahaman. [Paradoks dua amplop](https://kenji.blog/id/p/two-envelopes-paradox/) juga menunjukkan mengapa probabilitas bersyarat harus dihitung dari model yang eksplisit.

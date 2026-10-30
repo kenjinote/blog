@@ -327,6 +327,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/bayes-theorem/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/bayes-theorem/index.md",
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "translationHash": "f2ff2f418e478cac58382383b6af05f2ed5d0ae3aa301aae5a433d003bbe1d9d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read original and revised Indonesian metadata, entire body, table and both graphs against corrected Japanese,including final conditioning,NPP abbreviation and finite-count sentence. Preserved all10sections,updating/history,theorem/normalizer,likelihood/MAP/predictive distinction,hypothetical test,four AI applications,both diagrams,frequentist/Bayesian comparison and conclusion. Corrected minister-as-government-official,omitted denominator,unconditional independence,all-ML-as-posterior-maximization,causal/minimum-trials/calibration guarantees and infinite-versus-finite wording. Original16.7% answer retained as1/6. Generic disease is not necessarily infection and its absence is not universal health."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Saya membandingkan prior/posterior,likelihood/likelihood marginal,normalisasi,densitas,modus/MAP/prediksi posterior,prevalensi/sensitivitas/spesifisitas/positif palsu/nilai prediktif positif/akurasi keseluruhan,independensi bersyarat bersama/berpasangan,graf berarah tanpa siklus/asumsi kausal,fungsi akuisisi/eksplorasi/eksploitasi,ketidakpastian bobot/kalibrasi dan konvergensi hampir pasti. Menteri diperbaiki menjadi pendeta;pengamatan tidak diperlakukan sebagai bukti matematis. Sisi koin gambar/angka mengganti terjemahan literal kepala,dan graf dibedakan dari grafik. SingkatanNPP dan jumlah kemunculan dalam lemparan berhingga diperjelas;tag asli dipertahankan."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually checked all22TeX and conditions:positiveB and extra positiveA only for reverse conditioning,joint form with zeroA,positive finite normalizer,MAP attainment,uniform-prior ordered1,1,0posterior12theta^2(1-theta),mode2/3 versus predictive3/5,medical99/1/495/9405counts and1/6NPP/95.04%accuracy,conditional joint-independence product,DAG CPDs and independent roots,continuous-weight predictive average for discrete classes,IIDfair-coin almost-sure limit versus finite count. Relabeling coin faces gambar/angka preserves1/0meaning. Source/decodedHTML exact. FinalR2validator shared one auxiliary run:1260positiveB tables,1230reverse cases,30zeroA cases,36undefinedB exclusions,128toyDAG assignments with normalization/marginal/posterior checks. Initial successful proof preserved;duplicate cases not counted as new distinct cases. Prior source-audit arithmetic is not newly rerun or universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised Indonesian contain two Mermaid blocks and0executable article programs. Read all localized labels and both complete graph sources;9and7edges match Japanese topology and exact decodedHTML. Second graph separates6probabilistic edges inside the model from1outside dotted inference annotation,not an additional random variable. Auxiliary Fraction calculations are not article-code execution,clinical measurement,BNN training or BO optimization. No browser visual/KaTeX/Mermaid runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Nine exact primary references and Indonesian internal LLN/two-envelope URLs checked in source/generatedHTML;internal targets exist in28-bundle preview. Primary reading ranges/failures separately documented,not full-paper certification. Preserved originalSep20date,slug,heroimage bytes,categories/Indonesian tags;Oct30lastmod/math/Mermaid preferences do not prove prior renderer failure.14hreflang/13sidebar targets exact. Current1609multilingual pages/2933HTML41XMLHTTPS passed. Previous17unit tests were not rerun here. First successful proof preserved with freshR2final proof. Existing isolated-preview missing-page/layout/PortugueseUI warnings retained. Publication pending."
+        }
+      },
+      "summary": "Full Indonesian comparison correcting the minister mistranslation and clarifying likelihood, medical denominators, conditional independence and finite versus almost-sure reasoning.",
+      "languageSpecificFindings": "Membaca seluruh naskah sebelum/sesudah revisi dan kedua gambar,serta membandingkan dengan Jepang. Menteri menjadi pendeta,kemungkinan dibedakan dari likelihood,graf bukan grafik,dan sisi koin memakai gambar/angka. Sensitivitas,NPP,akurasi,independensi bersyarat,modus/prediksi posterior,kausalitas dan konvergensi hampir pasti dipisahkan. Empat penerapan,dua gambar dan perbandingan statistik tetap lengkap.",
+      "validation": "docs/translation-review/batch-026-id-r2-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "3other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,clinical evidence,model training or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -633,6 +674,44 @@
       "unreviewedTranslations": 12712,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 4,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "id"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "validation": "docs/translation-review/batch-026-id-r2-validation.json",
+      "checks": "docs/translation-review/batch-026-id-r2-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-026-id-ledger-validation.json",
+      "texEach": 22,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "jointFormulaTables": 1260,
+        "reverseFormulaTables": 1230,
+        "zeroPriorAWithPositiveB": 30,
+        "undefinedBExcluded": 36,
+        "toyDagAssignments": 128,
+        "toyDagTotalMass": "1",
+        "toyDagPrior": "151/600",
+        "toyDagPosterior": "14949/17194",
+        "scope": "Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 321,
+      "unreviewedTranslations": 12711,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 3,
       "publicationPending": true
     }
   ],

@@ -3205,6 +3205,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-026.json",
       "evidenceHash": "717ee209180104d703334776ba807846c26559dc1d7ba1d69f42cc39e01dbca7"
+    },
+    "post/bayes-theorem/index.id.md": {
+      "source": "post/bayes-theorem/index.md",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "translationHash": "f2ff2f418e478cac58382383b6af05f2ed5d0ae3aa301aae5a433d003bbe1d9d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-026.json",
+      "evidenceHash": "229d3f7993d537b9baa97e278abd275c8e4be31581db9a033faa616b8b471ee1"
     }
   }
 }
