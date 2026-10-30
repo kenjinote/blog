@@ -1,6 +1,6 @@
 ---
-title: "Teorema de Bayes: Atualizando Probabilidades com 'Novas Evidências', o Núcleo da IA e Estatística"
-description: "Uma explicação aprofundada de como o Teorema de Bayes atualiza as probabilidades com base em novas evidências, seus fundamentos matemáticos e suas aplicações em IA e aprendizado de máquina."
+title: "Teorema de Bayes: probabilidade condicional, um teste médico e quatro aplicações em IA"
+description: "Normalização, sensibilidade e valor preditivo positivo, MAP e previsão a posteriori: quatro aplicações bayesianas em IA e suas hipóteses."
 slug: "bayes-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
@@ -11,147 +11,206 @@ tags:
   - "Probabilidade"
   - "IA"
   - "Estatística"
+lastmod: "2026-10-30"
+math: true
+mermaid: true
 ---
 
-## Introdução: "Atualizando Crenças" em um Mundo Incerto
+## 1. Atualizar previsões em um mundo incerto
 
-O mundo em que vivemos é cheio de incertezas. Desde a probabilidade de chover amanhã até a probabilidade de um novo medicamento ser eficaz contra uma doença específica, ou a chance de um e-mail recebido ser spam, tomamos decisões constantemente com base em informações incompletas. Um poderoso framework para lidar matematicamente com essa incerteza e **atualizar nossas previsões cada vez que novas informações (evidências) são obtidas** é o [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/pt/p/bayes-theorem/)).
+A chuva de amanhã, o efeito de um medicamento ou a possibilidade de um e-mail ser spam: decidimos com informações incompletas. **O teorema de Bayes relaciona uma probabilidade condicionada à evidência com a probabilidade condicional no sentido inverso.** Definidos o modelo e as informações prévias, ele permite atualizar probabilidades com novas observações.
 
-Descoberto por Thomas Bayes, um ministro e matemático inglês do século XVIII, este teorema tornou-se uma teoria fundamental que sustenta a IA (Inteligência Artificial) moderna e o aprendizado de máquina. Neste artigo, vamos nos aprofundar em tudo, desde a matemática básica do [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) até os paradoxos contra-intuitivos de probabilidade, e como ele é aplicado na tecnologia moderna.
+O nome homenageia Thomas Bayes, pastor e matemático do século XVIII. [A carta de Richard Price que apresenta seu ensaio póstumo](https://bayes.wustl.edu/Manual/an.essay.pdf) registra a leitura na Royal Society em 23 de dezembro de 1763. A inferência bayesiana moderna também incorpora desenvolvimentos de muitos pesquisadores posteriores. Veremos a fórmula, um exemplo de teste, quatro aplicações em IA e diferentes interpretações da probabilidade.
 
-## Formulação Matemática do [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/)
+## 2. A fórmula e o papel da normalização
 
-O [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) é um teorema usado para calcular a probabilidade $P(A|B)$ de um evento $A$ sob a condição de que um evento $B$ ocorreu, com base na probabilidade condicional inversa $P(B|A)$ e outros fatores. Embora a fórmula seja extremamente simples, suas implicações são profundas.
-
-$$
-P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
-$$
-
-A cada termo nesta equação é dado um nome especial sob a perspectiva da "atualização de crenças" estatística.
-
-- **Probabilidade a Priori (Prior Probability)** $P(A)$ : A probabilidade do evento $A$ ocorrer antes de considerar a nova evidência $B$. Nossa crença inicial.
-- **Verossimilhança (Likelihood)** $P(B|A)$ : A probabilidade de observar a evidência $B$ assumindo que o evento $A$ é verdadeiro.
-- **Verossimilhança Marginal / Evidência (Marginal Likelihood / Evidence)** $P(B)$ : A probabilidade geral de observar a evidência $B$ independentemente de o evento $A$ ser verdadeiro ou falso. Atua como uma constante de normalização.
-- **Probabilidade a Posteriori (Posterior Probability)** $P(A|B)$ : A probabilidade do evento $A$ após considerar a nova evidência $B$. Nossa crença atualizada.
-
-Em suma, o [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) pode ser descrito como a formulação matemática do processo de **atualizar nossa crença para uma "probabilidade a posteriori", multiplicando a "probabilidade a priori" por "quão bem a nova evidência se ajusta (verossimilhança)"**.
-
-## Desvio da Intuição: O Paradoxo dos "Falsos Positivos" (Exemplo de Exame Médico)
-
-A intuição humana costuma cometer erros em cálculos de probabilidade. Como um exemplo clássico para entender o poder do [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/), vamos considerar exames de doenças (triagem médica).
-
-Suponha que exista uma doença rara, e $1\%$ ($0.01$) da população total está infectada com esta doença (esta é a probabilidade a priori $P(\text{Doença})$).
-O teste para detectar essa doença é altamente preciso: se uma pessoa com a doença fizer o teste, ela será julgada "Positivo" com uma probabilidade de $99\%$ (Taxa de Verdadeiros Positivos: Verossimilhança $P(\text{Positivo}|\text{Doença})$).
-No entanto, este teste tem uma pequena falha: mesmo que uma pessoa saudável sem a doença o faça, ela será julgada incorretamente como "Positivo" com uma probabilidade de $5\%$ (Taxa de Falsos Positivos $P(\text{Positivo}|\text{Saudável})$).
-
-Agora, suponha que você faça esse teste ao acaso e obtenha um resultado **"Positivo"** . Qual é a probabilidade de você realmente ter essa doença?
-
-Muitas pessoas tendem a pensar: "Como o teste é $99\%$ preciso, há uma chance de $90\%$ ou mais de que eu tenha a doença." No entanto, vamos calcular isso usando o [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/).
-
-Queremos encontrar $P(\text{Doença}|\text{Positivo})$.
-
-1. **Probabilidade a priori** $P(\text{Doença}) = 0.01$
-2. **Verossimilhança** $P(\text{Positivo}|\text{Doença}) = 0.99$
-3. **Probabilidade de Pessoa Saudável** $P(\text{Saudável}) = 1 - 0.01 = 0.99$
-4. **Probabilidade de Falso Positivo** $P(\text{Positivo}|\text{Saudável}) = 0.05$
-
-Primeiro, calculamos a probabilidade geral de um resultado de teste positivo $P(\text{Positivo})$ (Verossimilhança Marginal). Esta é a soma de "testar positivo estando doente" e "testar positivo estando saudável".
+Para um evento B com $P(B)>0$, a definição de probabilidade condicional fornece
 
 $$
-\begin{aligned}
-P(\text{Positivo}) &= P(\text{Positivo}|\text{Doença}) \cdot P(\text{Doença}) + P(\text{Positivo}|\text{Saudável}) \cdot P(\text{Saudável}) \\
-&= (0.99 \times 0.01) + (0.05 \times 0.99) \\
-&= 0.0099 + 0.0495 \\
-&= 0.0594
-\end{aligned}
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}
 $$
 
-A seguir, aplicamos o [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/).
+Se também $P(A)>0$, de modo que a probabilidade condicional inversa esteja definida, a decomposição da probabilidade conjunta fornece
 
 $$
-\begin{aligned}
-P(\text{Doença}|\text{Positivo}) &= \frac{P(\text{Positivo}|\text{Doença}) \cdot P(\text{Doença})}{P(\text{Positivo})} \\
-&= \frac{0.0099}{0.0594} \\
-&\approx 0.1667
-\end{aligned}
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}
 $$
 
-Surpreendentemente, mesmo com um resultado de teste positivo, **a probabilidade de que você realmente tenha a doença é de apenas cerca de $16.7\%$**. Os $83.3\%$ restantes são casos de "pessoas saudáveis julgadas incorretamente como positivas" (falsos positivos). Isso ocorre porque a prevalência original da doença ($1\%$) é muito baixa, fazendo com que os "falsos positivos da grande população saudável" superem esmagadoramente o pequeno número de "pessoas verdadeiramente doentes".
+Quando B é uma nova evidência, cada termo tem o seguinte papel:
 
-Dessa forma, o [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) corrige matematicamente as armadilhas nas quais nossa intuição cai facilmente e serve como uma ferramenta poderosa para fazer julgamentos sensatos.
+- **Probabilidade a priori** $P(A)$: probabilidade de A antes de incorporar B.
+- **Verossimilhança** $P(B\mid A)$: probabilidade de observar B sob a hipótese A.
+- **Evidência ou verossimilhança marginal** $P(B)$: probabilidade total de observar B.
+- **Probabilidade a posteriori** $P(A\mid B)$: probabilidade de A após incorporar B.
+
+O produto da probabilidade prévia pela verossimilhança é o numerador. **Para obter a posterior, é preciso dividir pela evidência e normalizar.** Mesmo que A tenha probabilidade zero, a primeira fórmula, baseada na probabilidade conjunta, continua válida se B tiver probabilidade positiva. Não se deve substituir diretamente na segunda quando a probabilidade condicional inversa não está definida.
+
+## 3. Verossimilhança, MAP e previsão a posteriori
+
+Denotemos por θ o parâmetro desconhecido e por d os dados observados. Ao [atualizar uma densidade prévia pela verossimilhança](https://web.stanford.edu/class/stats200/Lecture20.pdf), escrevemos
+
+$$
+\pi(\theta\mid d)=\frac{L(\theta;d)\pi(\theta)}{Z(d)},\qquad Z(d)=\int L(t;d)\pi(t)\,dt
+$$
+
+Supomos $0<Z(d)<\infty$. A verossimilhança L é uma função de θ com d fixado, não uma distribuição de probabilidade sobre θ. Dados contínuos usam densidades, cujos valores podem ultrapassar um. Um ponto observado ter probabilidade zero não impede, por si só, a atualização por densidades.
+
+Se a densidade posterior atinge um máximo, a **estimação de máximo a posteriori (MAP)** seleciona um ponto em que isso ocorre:
+
+$$
+\hat\theta_{\mathrm{MAP}}\in\arg\max_\theta\pi(\theta\mid d)
+$$
+
+Já a **previsão a posteriori** de uma futura observação binária calcula a média das previsões em relação à distribuição posterior:
+
+$$
+\Pr(Y_{\mathrm{new}}=1\mid d)=\int\Pr(Y_{\mathrm{new}}=1\mid\theta,d)\pi(\theta\mid d)\,d\theta
+$$
+
+Por exemplo, atribuamos uma distribuição prévia uniforme entre zero e um à probabilidade θ de obter cara. Condicionadas a θ, as jogadas são independentes. Observamos, em ordem, 1,1,0, com 1 representando cara. Então
+
+$$
+\pi(\theta\mid 1,1,0)=12\theta^2(1-\theta),\qquad 0<\theta<1
+$$
+
+e, portanto,
+
+$$
+\hat\theta_{\mathrm{MAP}}=\frac23,\qquad\Pr(Y_{\mathrm{new}}=1\mid1,1,0)=\frac35
+$$
+
+Substituir a moda e calcular uma média sobre uma distribuição podem produzir respostas diferentes. Escolher uma classe, estimar parâmetros por MAP e prever observações futuras não podem ser descritos, em conjunto, como «maximizar a probabilidade posterior».
+
+## 4. Um teste médico hipotético: sensibilidade de 99% e VPP de aproximadamente 16,7%
+
+Este é **um exemplo de cálculo hipotético, não o desempenho medido de um teste real**. D significa ter a doença estudada e T obter um resultado positivo. Suponhamos prevalência de 1% na população de interesse, sensibilidade de 99% e taxa de falsos positivos de 5%.
+
+$$
+P(D)=0.01,\qquad P(T\mid D)=0.99,\qquad P(T\mid D^c)=0.05
+$$
+
+O complementar de D significa não ter essa doença; não significa estar saudável em todos os aspectos. Somando as duas fontes de resultados positivos, obtemos
+
+$$
+P(T)=P(T\mid D)P(D)+P(T\mid D^c)P(D^c)=0.99\cdot0.01+0.05\cdot0.99=0.0594
+$$
+
+Portanto, a probabilidade de ter a doença dado um resultado positivo é
+
+$$
+P(D\mid T)=\frac{0.0099}{0.0594}=\frac{99}{594}=\frac16\approx0.1667
+$$
+
+O resultado é aproximadamente 16,7%; o valor exato é 1/6. Os 5/6 restantes, cerca de 83,3% dos positivos, são falsos positivos sem a doença estudada. Com prevalência baixa, os falsos positivos do grupo muito maior sem a doença podem superar os verdadeiros positivos.
+
+Para expressar as proporções em pessoas, construímos uma população fictícia de 10.000 com exatamente essas proporções. Em uma amostra real de 10.000, os números variariam.
+
+| Resultado | Com a doença estudada | Sem a doença estudada | Total |
+| --- | ---: | ---: | ---: |
+| Positivo | 99 (verdadeiros positivos) | 495 (falsos positivos) | 594 |
+| Negativo | 1 (falso negativo) | 9.405 (verdadeiros negativos) | 9.406 |
+| Total | 100 | 9.900 | 10.000 |
 
 ```mermaid
 flowchart TD
-    Population["População Total (10.000 pessoas)"] --> Disease["Com Doença (100 pessoas, 1%)"]
-    Population --> Healthy["Saudáveis (9.900 pessoas, 99%)"]
-    
-    Disease --> TruePositive["Verdadeiro Positivo: Resultado Positivo (99 pessoas, 99%)"]
-    Disease --> FalseNegative["Falso Negativo: Resultado Negativo (1 pessoa, 1%)"]
-    
-    Healthy --> FalsePositive["Falso Positivo: Resultado Positivo (495 pessoas, 5%)"]
-    Healthy --> TrueNegative["Verdadeiro Negativo: Resultado Negativo (9.405 pessoas, 95%)"]
-
-    TruePositive -.->|"Total de Positivos (594 pessoas)"| AllPositives["Teste Positivo"]
-    FalsePositive -.->|"Total de Positivos (594 pessoas)"| AllPositives
-    
-    AllPositives -->|"Probabilidade de estar realmente doente?"| Posterior["Probabilidade a Posteriori: 99 / 594 = 16.7%"]
+    Population["População fictícia: 10.000"] --> Disease["Com a doença: 100"]
+    Population --> NoDisease["Sem a doença estudada: 9.900"]
+    Disease --> TP["Verdadeiros positivos: 99 (99% de quem tem a doença)"]
+    Disease --> FN["Falsos negativos: 1 (1% de quem tem a doença)"]
+    NoDisease --> FP["Falsos positivos: 495 (5% de quem não tem a doença)"]
+    NoDisease --> TN["Verdadeiros negativos: 9.405 (95% de quem não tem a doença)"]
+    TP -.-> AllPositive["Total de positivos: 594"]
+    FP -.-> AllPositive
+    AllPositive --> PPV["Valor preditivo positivo: 99/594 = 1/6 ≈ 16,7%"]
 ```
 
-## Aplicação do [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) na IA e Aprendizado de Máquina
+**Sensibilidade de 99% não significa valor preditivo positivo de 99% nem acurácia global de 99%.** A acurácia global, isto é, a proporção total de acertos nesta tabela, é
 
-O [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) vai além de ser apenas um quebra-cabeça de probabilidade; ele desempenha um papel crucial na moderna ciência de dados e Inteligência Artificial (IA). Isso ocorre porque o próprio processo de aprender padrões a partir de grandes quantidades de dados e fazer previsões sobre dados desconhecidos pode ser formulado como "maximizar a probabilidade a posteriori".
+$$
+\frac{99+9405}{10000}=0.9504=95.04\%
+$$
 
-### 1. Classificador Naive Bayes
+As [definições de sensibilidade, especificidade e valor preditivo positivo](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda) usam denominadores diferentes. A intuição «99% significa que um positivo quase certamente tem a doença» confunde o grupo sobre o qual se calcula a proporção. Para aplicar o cálculo a resultados reais, a prevalência e as características do teste precisam corresponder à população relevante.
 
-O "Classificador Naive Bayes", frequentemente usado para filtragem de e-mails de spam, é uma das aplicações mais diretas do [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/). Este algoritmo trata as palavras contidas num e-mail (como "grátis", "vencedor", "senha") como evidências (características) e calcula a probabilidade a posteriori de o e-mail ser spam.
+## 5. Aplicação em IA 1: classificação Naive Bayes
 
-É chamado de "ingênuo" (naive) porque impõe a forte suposição de que cada característica (palavra) ocorre independentemente das outras. Na realidade, as palavras estão relacionadas, mas, apesar dessa suposição simplista, o Naive Bayes exibe uma precisão muito alta e velocidades de processamento rápidas em tarefas como classificação de texto.
+Na detecção de spam, características X, como a presença de determinadas palavras, informam a probabilidade posterior da classe C. A hipótese básica do Naive Bayes é a **independência condicional dada a classe**, não a independência incondicional das palavras. Com três ou mais características, nem mesmo a independência aos pares dentro de cada classe garante a independência conjunta.
 
-### 2. Redes Bayesianas
+Para características discretas, suponhamos que a observação x tenha probabilidade marginal positiva, que as probabilidades prévias das classes sejam positivas e que as características sejam conjuntamente independentes dentro de cada classe. Então
 
-Em sistemas onde múltiplas variáveis estão intrincadamente interligadas, as Redes Bayesianas expressam as dependências entre variáveis como uma estrutura de grafo (Grafo Acíclico Dirigido) para realizar raciocínio sob incerteza.
+$$
+\Pr(C=c\mid X=x)\propto\Pr(C=c)\prod_{j=1}^{m}\Pr(X_j=x_j\mid C=c)
+$$
 
-Por exemplo, na IA de diagnóstico médico, a influência probabilística da "idade do paciente", "hábitos de vida" e "fatores genéticos" sobre uma "doença específica" é modelada, e a influência dessa doença sobre os "sintomas aparentes" é vinculada. Cada vez que um novo sintoma (evidência) é inserido, as probabilidades em toda a rede são atualizadas de acordo com o [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/), inferindo o nome da doença mais provável. Isso é utilizado em uma ampla variedade de campos, como julgamento de situações em carros autônomos e previsão do mercado financeiro.
+Se todas as classificações incorretas têm o mesmo custo, escolhe-se uma classe com probabilidade posterior máxima. Essa decisão de classificação é diferente da estimação MAP dos próprios parâmetros do modelo.
+
+Palavras reais têm relações entre si, portanto a independência é uma aproximação. Simplicidade e rapidez são vantagens, mas não garantem sempre maior acurácia nem probabilidades bem calibradas. A [documentação oficial do scikit-learn](https://scikit-learn.org/stable/modules/naive_bayes.html) também distingue desempenho de classificação e qualidade das probabilidades estimadas. Os modelos generativos concretos variam: por exemplo, Bernoulli para presença de palavras e multinomial para suas contagens.
+
+## 6. Aplicação em IA 2: redes bayesianas
+
+Uma rede bayesiana representa uma distribuição conjunta por meio de um grafo dirigido acíclico (DAG) e uma distribuição condicional local para cada nó. Em um modelo discreto finito, com pa indicando os valores dos nós pais, a fatoração é
+
+$$
+\Pr(V_1=v_1,\ldots,V_n=v_n)=\prod_{i=1}^{n}\Pr(V_i=v_i\mid\mathrm{pa}_i)
+$$
+
+[Representar uma distribuição por um DAG](https://ermongroup.github.io/cs228-notes/representation/directed/) também especifica hipóteses de independência condicional.
+
+O modelo fictício abaixo relaciona idade, hábitos, fatores genéticos, doença, sintomas e um teste. Ele supõe independentes os três fatores sem pais. As setas contínuas especificam as relações entre pais e filhos nas distribuições locais; não tornam o gráfico um diagrama validado de relações causais reais. **Afirmações causais exigem hipóteses causais adicionais**, além de um modelo de dependências estatísticas ([distinção de Pearl](https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf)).
 
 ```mermaid
 flowchart LR
-    Age["Idade"] --> Disease["Doença Específica"]
-    Lifestyle["Hábitos de Vida"] --> Disease
-    Genes["Fatores Genéticos"] --> Disease
-    
-    Disease --> SymptomA["Sintoma A"]
-    Disease --> SymptomB["Sintoma B"]
-    Disease --> TestResult["Resultado do Teste"]
-    
-    TestResult -.->|"Observado como nova evidência"| Update["Atualização de Probabilidade (Inferência)"]
+    subgraph Model["Modelo probabilístico fictício"]
+        Age["Idade"] --> Disease["Doença estudada"]
+        Lifestyle["Hábitos"] --> Disease
+        Genes["Fatores genéticos"] --> Disease
+        Disease --> SymptomA["Sintoma A"]
+        Disease --> SymptomB["Sintoma B"]
+        Disease --> TestResult["Resultado do teste"]
+    end
+    TestResult -.->|"Usar a observação"| Inference["Operação de inferência: calcular a posterior"]
 ```
 
-### 3. Otimização Bayesiana
+A anotação indicada pela seta tracejada é uma operação de inferência, não uma variável aleatória adicional da distribuição conjunta. Calcular distribuições marginais posteriores da doença ou de outras variáveis também não equivale a reaprender todos os parâmetros. Esses modelos oferecem um quadro para diagnóstico, estimativa de situações ou previsão financeira, mas a validade em cada uso depende da estrutura e dos dados.
 
-Na construção de modelos de aprendizado de máquina, a tarefa de encontrar a combinação ideal de hiperparâmetros (parâmetros que os humanos devem definir, como a taxa de aprendizado ou a profundidade da rede) consome muito tempo. É irreal testar todas as combinações.
+## 7. Aplicação em IA 3: otimização bayesiana
 
-Na Otimização Bayesiana, a relação entre "configurações de parâmetros" e "desempenho do modelo" é expressa como um modelo probabilístico (como um Processo Gaussiano). Com base em configurações e resultados de testes anteriores (evidências), ela infere a configuração de parâmetro mais promissora a ser analisada a seguir. Isso torna possível construir modelos de IA de alto desempenho com um número mínimo de tentativas.
+Ajustar hiperparâmetros, como taxa de aprendizado ou profundidade da rede, pode exigir treinamentos e avaliações repetidos. Não é necessário selecionar as configurações manualmente: a busca pode ser automatizada.
 
-### 4. Aprendizado Profundo Bayesiano (Bayesian Deep Learning)
+A otimização bayesiana representa a relação entre configuração e desempenho por um modelo substituto probabilístico, como um processo gaussiano, e o atualiza com os resultados das avaliações. Uma **função de aquisição**, como a melhoria esperada, escolhe o próximo candidato. Importam tanto a exploração de regiões incertas quanto o aproveitamento de regiões promissoras. [Snoek e colaboradores](https://arxiv.org/abs/1206.2944) estudam o ajuste de algoritmos de aprendizado de máquina.
 
-Uma abordagem que tem ganhado atenção recentemente é a fusão do Aprendizado Profundo (Deep Learning) com as estatísticas Bayesianas. Uma rede neural padrão emite sua previsão como um valor determinístico único, mas não diz "quão confiante ela está".
+O objetivo é distribuir avaliações caras de maneira eficiente. Não se garante encontrar o ótimo no menor número de tentativas para toda função objetivo, orçamento ou condição de ruído.
 
-No Aprendizado Profundo Bayesiano, os pesos da rede são tratados como "distribuições de probabilidade" em vez de números fixos. Isso permite que a IA emita **"incerteza (falta de confiança)"** junto com suas previsões. Por exemplo, uma IA médica poderia alertar: "Há 90% de chance de câncer. No entanto, a incerteza desta previsão em si é muito alta, então a confirmação por um médico humano é necessária." Esta é uma tecnologia extremamente importante para aumentar a segurança e a confiabilidade da IA.
+## 8. Aplicação em IA 4: aprendizado profundo bayesiano
 
-## Perspectiva Filosófica: Frequentismo vs. Bayesianismo
+Uma rede neural comum também pode produzir probabilidades de classe, por exemplo com softmax. Calcular com pesos fixos é compatível com produzir uma distribuição de probabilidade.
 
-Na história da estatística, duas grandes escolas de pensamento se chocaram sobre "o que é a probabilidade". Estas são o **Frequentismo (Frequentism)** e o **Bayesianismo (Bayesianism)** .
+Um tratamento bayesiano pode atribuir uma densidade prévia aos pesos contínuos w e obter sua densidade posterior condicionada aos dados de treinamento d. No modelo usual de independência condicional, a probabilidade preditiva posterior de uma classe discreta y é
 
-No Frequentismo, a probabilidade é definida como "a frequência relativa com que um evento ocorre quando a mesma tentativa é repetida infinitamente". Dizer que a probabilidade de uma moeda dar cara é de $50\%$ significa que se jogada infinitamente, exatamente a metade será cara. Nesta postura, existe uma probabilidade verdadeira e fixa para o evento em si, não deixando espaço para o observador ter uma "crença".
+$$
+\Pr(y\mid x,d)=\int\Pr(y\mid x,w)\pi(w\mid d)\,dw
+$$
 
-Por outro lado, no Bayesianismo, a probabilidade é tratada como **"o grau de crença do observador (probabilidade subjetiva)"**. Uma probabilidade de $70\%$ de chuva para amanhã representa o "grau de confiança" da agência meteorológica com base nos dados meteorológicos disponíveis (evidências). Se novos dados (por exemplo, uma queda repentina na pressão atmosférica) forem observados, essa confiança é atualizada de acordo com o [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/).
+O [trabalho original de Blundell e colaboradores](https://arxiv.org/abs/1505.05424) aproxima, com uma distribuição variacional, a inferência difícil de calcular exatamente em redes de tamanho prático. As previsões podem refletir incerteza sobre os pesos, mas dependem da distribuição prévia, da verossimilhança e do método de aproximação.
 
-O frequentismo dominou grande parte do século XX, mas na era moderna, onde o poder de processamento dos computadores melhorou drasticamente, a abordagem flexível e prática do Bayesianismo foi reavaliada, tornando-se uma das forças motrizes por trás do boom da IA.
+Uma saída como «90% de probabilidade de uma classe» não transmite, sozinha, toda a incerteza sobre o modelo. Chamar um método de bayesiano não garante previsões calibradas em IA médica nem em outras aplicações. A [pesquisa sobre incerteza diante de mudanças de distribuição](https://arxiv.org/abs/1906.02530) também motiva avaliar diferenças entre os dados de treinamento e os dados de uso.
 
-## Conclusão: Continue Aprendendo e Atualizando
+## 9. Comparar inferência frequentista e bayesiana
 
-O [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) fornece uma espécie de estrutura de pensamento que vai além de uma mera fórmula matemática.
+Ambas as abordagens usam teoria da probabilidade; o teorema de Bayes é matemática compartilhada. Na inferência estatística, métodos frequentistas tratam parâmetros desconhecidos como fixos e enfatizam as propriedades dos procedimentos de estimação ou teste sob amostragem repetida. A inferência bayesiana representa a incerteza sobre quantidades desconhecidas com uma distribuição prévia e usa a posterior após observar dados. Atribuir uma distribuição não significa que um parâmetro físico mude a cada observação.
 
-Todos nós temos "probabilidades a priori (crenças iniciais)" baseadas em experiências passadas e preconceitos. Isso não é necessariamente uma coisa ruim; é um ponto de partida para perceber o mundo de forma eficiente. No entanto, o que é importante é ter **a flexibilidade de atualizar graciosamente as próprias crenças (atualizar para a probabilidade a posteriori), assim como o [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/), em vez de fechar os olhos quando confrontado com novos fatos e evidências**.
+Para lançamentos independentes e identicamente distribuídos de uma moeda equilibrada, com cara representada por 1 e coroa por 0, a [lei dos grandes números](https://kenji.blog/pt/p/law-of-large-numbers/) dá o limite
 
-Assim como a IA se torna mais inteligente consumindo dados, nós, humanos, também devemos incorporar novas informações como evidências e nos atualizarmos constantemente, alcançando uma compreensão mais precisa do mundo. Talvez, o [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) possa ser considerado uma representação matemática da própria "essência da inteligência".
+$$
+\frac1n\sum_{i=1}^{n}X_i\xrightarrow{\mathrm{a.s.}}\frac12
+$$
+
+O símbolo a.s. indica convergência quase certa: a probabilidade de a proporção convergir para 1/2 é 1. Isso não garante exatamente metade de caras em um número finito de lançamentos.
+
+Distribuições prévias podem incorporar conhecimento especializado ou escolhas como distribuições fracamente informativas. É inadequado descartá-las todas como preferências arbitrárias ou supor que escolher uma prévia torna a análise automaticamente objetiva. Uma previsão de 70% de chuva amanhã pode ser interpretada como probabilidade baseada em um modelo e em informações, cuja calibração pode ser avaliada. Esse número, por si só, não identifica uma escola estatística nem a confiança pessoal de quem fez a previsão.
+
+## 10. Atualizar a evidência e examinar as hipóteses
+
+A atualização bayesiana combina informações prévias e evidência conforme as regras de probabilidade. Na atualização sequencial, a posterior anterior torna-se a nova prévia e usa-se a verossimilhança condicional dos dados novos. Não se deve multiplicar novamente uma observação já utilizada como se fosse evidência nova e independente.
+
+A fórmula não corrige, por si só, um modelo errado ou dados enviesados. Examinar o que foi observado e qual população ou distribuição foi suposta faz parte de aprender e rever nossa compreensão. O [paradoxo dos dois envelopes](https://kenji.blog/pt/p/two-envelopes-paradox/) também mostra por que probabilidades condicionais devem ser calculadas a partir de um modelo explícito.
