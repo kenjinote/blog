@@ -81,6 +81,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/bayes-theorem/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/bayes-theorem/index.md",
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "translationHash": "5b10de45aaef8fc25e1d1c1c03f185f8cd010343c89519e4fc270b09fc07cdd8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the original and revised Traditional Chinese metadata, entire body, table and both diagrams against the corrected Japanese. Preserved all10revised sections covering updating/history, normalized theorem, likelihood/MAP/predictive distinction, hypothetical test, four AI applications, probability interpretation and conclusion. Corrected the original's omitted normalization, unconditional feature independence, all-learning-as-posterior-maximization, automatic causal/minimum-trials/calibration claims and infinite-versus-finite wording. Retained correct1/6medical answer and distinguished absence of the target condition from universal health."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "全文核對貝氏、先驗/後驗、概似/邊際概似、正規化、機率密度、最大後驗估計/眾數/後驗預測、盛行率/敏感度/特異度/偽陽性率/陽性預測值/整體正確率、條件聯合獨立/兩兩獨立、有向無環圖/相依性/因果假設、獲取函數/探索與利用、類神經網路/機率校準、幾乎必然。統一偽陽性與偽陰性，不沿用原稿中偽/假的混用。用機率規則結合表達coherence，避免與估計量一致性混淆；保留原有貝氏分類標籤與地區用語。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually checked all22TeX expressions against Japanese:positiveB and additional positiveA only for reverse conditioning,joint form with zeroA,positive finite normalizer,MAP existence,uniform-prior ordered1,1,0posterior12theta^2(1-theta),mode2/3 and predictive3/5,medical counts99/1/495/9405 with1/6PPV and95.04%accuracy,conditional joint-independence product,DAG CPD product and independent roots,continuous-weight predictive average for discrete classes,and IIDfair-coin almost-sure limit. Source and decodedHTML exact. Current validator shared one auxiliary run:1260positiveB tables,1230reverse cases,30zeroA cases,36undefinedB exclusions and128toyDAG assignments with normalization/marginal/posterior checks. Earlier medical/XOR/finite-coin/polynomial pre-audit remains distinct historical evidence,not newly rerun or a universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised Traditional Chinese contain two Mermaid blocks and0executable article programs. Read all localized labels and complete diagram sources;checked9and7edges with corresponding Japanese topology and exact decodedHTML retention. Second diagram separates6probabilistic edges inside the model from1dotted inference annotation outside it. Auxiliary Fraction checks are not article-code execution,clinical measurements,BNN training or BO optimization. No browser visual/KaTeX/Mermaid runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Nine exact primary references and Traditional Chinese internal LLN/two-envelope targets checked in source/generatedHTML;internal pages exist in the28-bundle preview. Scoped primary reading and failed publisher access remain documented separately,not full-paper certification. Preserved originalSep20date,slug,heroimage bytes,categories and Traditional Chinese tags;Oct30lastmod/math/Mermaid preferences do not prove prior renderer failure. All14hreflang/13sidebar targets exact. Current1609multilingual pages/2933HTML41XMLHTTPS passed. Existing17unit tests passed at precedingJAENstage and were not rerun here. Same isolated-preview pages/layout/PortugueseUI warnings retained. Publication pending."
+        }
+      },
+      "summary": "Full Traditional Chinese review with regional terminology, preserving four AI applications and distinguishing conditional probability, prediction, medical metrics and causal assumptions.",
+      "languageSpecificFindings": "全文照合原稿、改訂稿與日文。採用貝氏／概似／正規化／盛行率／敏感度／陽性預測值／整體正確率／類神經網路等用語，統一偽陽性和偽陰性；保持醫療假想例、兩圖、四類AI應用、頻率學派比較與逐次更新。明確區分條件聯合獨立、後驗預測與MAP、機率校準與模型不確定性。",
+      "validation": "docs/translation-review/batch-026-zh-tw-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "9other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,clinical evidence,model training or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -159,6 +200,44 @@
       "unreviewedTranslations": 12718,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 10,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "zh-tw"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "validation": "docs/translation-review/batch-026-zh-tw-validation.json",
+      "checks": "docs/translation-review/batch-026-zh-tw-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-026-zh-tw-ledger-validation.json",
+      "texEach": 22,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "jointFormulaTables": 1260,
+        "reverseFormulaTables": 1230,
+        "zeroPriorAWithPositiveB": 30,
+        "undefinedBExcluded": 36,
+        "toyDagAssignments": 128,
+        "toyDagTotalMass": "1",
+        "toyDagPrior": "151/600",
+        "toyDagPosterior": "14949/17194",
+        "scope": "Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 315,
+      "unreviewedTranslations": 12717,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 9,
       "publicationPending": true
     }
   ],

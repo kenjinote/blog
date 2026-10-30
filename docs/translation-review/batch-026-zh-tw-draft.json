@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "draftedAt": "2026-10-30T18:46:45.918468+09:00",
+  "path": "content/post/bayes-theorem/index.zh-tw.md",
+  "originalSha256": "6c3227ebbc2114f161874a6702d7a245605e2bf711e1a9ab108c71ab6cdc259e",
+  "draftSha256": "5b10de45aaef8fc25e1d1c1c03f185f8cd010343c89519e4fc270b09fc07cdd8",
+  "commonTeX": 22,
+  "draftOnly": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original TraditionalChinese full metadata/body/two diagrams read. Complete rewrite against corrected Japanese with regional terminology;pending reread/HTML checks and ledger. Other9translations not newly reviewed."
+}
