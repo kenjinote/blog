@@ -1,9 +1,7 @@
 ---
-title: 'Das Sankt-Petersburg-Paradoxon: Wie viel würden Sie für ein Glücksspiel mit "unendlichem" Erwartungswert zahlen?'
-date: "2026-09-24T19:44:38+09:00"
+title: "Sankt-Petersburg-Paradoxon: unendlicher Erwartungswert, Nutzen und Teilnahmegebühr"
 slug: 'st-petersburg-paradox'
-description: 'Ein Glücksspiel, das mathematisch gesehen "unendlich viel Profit" abwerfen sollte. In der Realität würde jedoch niemand viel Geld dafür bezahlen. Wir erklären das historische Paradoxon, das die Diskrepanz zwischen Wahrscheinlichkeitstheorie und menschlicher Psychologie (Nutzen) aufzeigt und zur Grundlage der modernen Wirtschaftswissenschaften wurde.'
-date: '2026-09-10T05:00:00+09:00'
+description: "Eine mit Wahrscheinlichkeit 1 endliche Auszahlung kann einen unendlichen Erwartungswert haben. Sicherheitsäquivalent und Teilnahmegebühr unterscheiden, Vermögen berücksichtigen und Auszahlungsgrenzen verstehen."
 image: 'img/st_petersburg.jpg'
 math: true
 mermaid: true
@@ -13,137 +11,184 @@ tags:
   - 'Erwartungswert'
   - 'Wirtschaftswissenschaften'
   - 'Bernoulli'
+date: "2026-09-10T05:00:00+09:00"
+lastmod: "2026-10-30"
 ---
 
-## 1. Das Traum-Glücksspiel mit „unendlichem“ Erwartungswert
+## 1. Spielen, bis zum ersten Mal Zahl fällt
 
-Stellen Sie sich vor, Sie gehen durch ein Casino und ein Croupier lädt Sie zu einem neuen Münzwurf-Spiel ein.
+Wie beurteilen wir ein Münzwurfspiel mit einer Teilnahmegebühr von 10 000 US-Dollar allein anhand der erwarteten Auszahlung? Zunächst betrachten wir ein **ideales Modell: unabhängige Würfe mit einer fairen Münze, ohne Obergrenze für die Auszahlung und ohne Beschränkung der Zahlungsfähigkeit des Veranstalters**. Geldbeträge sind Zahlenwerte in US-Dollar.
 
-**【Spielregeln】**
-1. Sie zahlen eine Teilnahmegebühr, um das Spiel zu starten.
-2. Eine Münze wird geworfen. Wenn **Kopf** fällt, verdoppelt sich das Preisgeld und Sie dürfen erneut werfen.
-3. Wenn **Zahl** fällt, endet das Spiel sofort. Sie erhalten das bis zu diesem Zeitpunkt angesammelte Preisgeld.
+1. Die Teilnahmegebühr wird bezahlt.
+2. Die Münze wird geworfen. Bei Kopf verdoppelt sich die mögliche Auszahlung, und das Spiel geht weiter.
+3. Sobald erstmals Zahl fällt, endet das Spiel; der erreichte Betrag wird ausgezahlt.
 
-Das anfängliche Preisgeld beginnt bei 2 Dollar.
-- Fällt beim 1. Wurf Zahl, erhalten Sie **2 Dollar** und das Spiel endet.
-- Fällt beim 1. Wurf Kopf und beim 2. Wurf Zahl, erhalten Sie **4 Dollar** und das Spiel endet.
-- Fällt beim 1. Wurf Kopf, beim 2. Wurf Kopf und beim 3. Wurf Zahl, erhalten Sie **8 Dollar** und das Spiel endet.
-- ...und so weiter. Solange Kopf fällt, verdoppelt sich das Preisgeld auf 16 Dollar, 32 Dollar, 64 Dollar...
+Der Anfangsbetrag ist 2. Bei Zahl im ersten Wurf beträgt die Auszahlung 2; bei Kopf und anschließend Zahl 4; bei Kopf, Kopf und anschließend Zahl 8. N bezeichnet die Nummer des Wurfs, bei dem erstmals Zahl fällt, und X die Auszahlung vor Abzug der Teilnahmegebühr.
+
+$$
+X=2^N,\qquad \Pr(N=n)=2^{-n}\quad(n=1,2,\ldots)
+$$
 
 ```mermaid
 graph TD
-    Start["Spielbeginn"] --> Toss1{"1. Münzwurf"}
-    
-    Toss1 -->|"Zahl 1/2"| End1["Ende: 2 Dollar gewonnen"]
-    Toss1 -->|"Kopf 1/2"| Toss2{"2. Münzwurf"}
-    
-    Toss2 -->|"Zahl 1/2"| End2["Ende: 4 Dollar gewonnen"]
-    Toss2 -->|"Kopf 1/2"| Toss3{"3. Münzwurf"}
-    
-    Toss3 -->|"Zahl 1/2"| End3["Ende: 8 Dollar gewonnen"]
-    Toss3 -->|"Kopf 1/2"| Toss4{"..."}
-    
-    Toss4 -.->|"Je öfter in Folge"| Infinite["Preisgeld verdoppelt sich unendlich!"]
+    Start["Spielbeginn"] --> Toss1{"Erster Wurf"}
+    Toss1 -->|"Zahl (1/2)"| End1["Ende: 2 Dollar"]
+    Toss1 -->|"Kopf (1/2)"| Toss2{"Zweiter Wurf"}
+    Toss2 -->|"Zahl (1/2)"| End2["Ende: 4 Dollar"]
+    Toss2 -->|"Kopf (1/2)"| Toss3{"Dritter Wurf"}
+    Toss3 -->|"Zahl (1/2)"| End3["Ende: 8 Dollar"]
+    Toss3 -->|"Kopf (1/2)"| Toss4{"Vierter Wurf und weitere"}
+    Toss4 -.->|"Keine Obergrenze der Wurfzahl"| Continue["Dieselbe Regel wiederholen"]
 ```
 
-Nun eine Frage an Sie:
-**Würden Sie an diesem Spiel teilnehmen, wenn die Teilnahmegebühr „10.000 Dollar“ betragen würde?**
+Die Wahrscheinlichkeit, mehr als m Würfe zu benötigen, geht mit wachsendem m gegen null:
 
-Wahrscheinlich werden die meisten Menschen mit „Nein“ antworten. Denn es besteht eine 50-prozentige Wahrscheinlichkeit, dass gleich beim ersten Wurf Zahl fällt und Sie nur 2 Dollar erhalten, was einen enormen Verlust bedeuten würde.
+$$
+\Pr(N>m)=2^{-m}\longrightarrow0,\qquad \Pr(N=\infty)=0,\qquad\Pr(X<\infty)=1
+$$
 
-Wenn man jedoch streng nach der mathematischen Wahrscheinlichkeitstheorie (dem Erwartungswert) rechnet, offenbart sich eine erstaunliche Tatsache: **Mathematisch gesehen sollten Sie sich, egal ob die Teilnahmegebühr 10.000 Dollar oder 1 Million Dollar beträgt, sogar Ihr gesamtes Vermögen leihen, um an diesem Spiel teilzunehmen.**
+Die Auszahlung ist also **mit Wahrscheinlichkeit 1 endlich**, ihre möglichen Werte haben jedoch keine endliche obere Schranke. Eine nach oben unbeschränkte Verteilung bedeutet nicht, dass tatsächlich eine unendliche Summe ausgezahlt wird.
 
-Warum ist das so?
+## 2. Was ein unendlicher Erwartungswert bedeutet
 
----
+Der Erwartungswert einer nichtnegativen diskreten Auszahlung ist die Summe aller Beträge, jeweils multipliziert mit ihrer Wahrscheinlichkeit.
 
-## 2. Lasst uns den Erwartungswert berechnen
+| Zum ersten Mal Zahl bei Wurf | Auszahlung | Wahrscheinlichkeit | Beitrag zum unbedingten Erwartungswert |
+| --- | ---: | ---: | ---: |
+| 1 | 2 | 1/2 | 1 |
+| 2 | 4 | 1/4 | 1 |
+| 3 | 8 | 1/8 | 1 |
 
-Ein mathematischer Indikator, um zu beurteilen, ob ein Glücksspiel „profitabel oder verlustreich“ ist, ist der **„Erwartungswert“**.
-Der Erwartungswert ist eine Zahl, die angibt, „wie viel Gewinn man durchschnittlich pro Runde macht, wenn man das Spiel sehr oft wiederholt“. Die Formel ist **die Summe aller („möglichen Preisgelder“ × „deren Wahrscheinlichkeit“)**.
+Jeder mögliche Endzeitpunkt trägt 1 bei. Deshalb gilt
 
-Berechnen wir den Erwartungswert für dieses Spiel:
+$$
+\mathbb E[X]=\sum_{n=1}^{\infty}2^n2^{-n}=\sum_{n=1}^{\infty}1=\infty
+$$
 
-- **Wahrscheinlichkeit, dass beim 1. Wurf Zahl fällt:** $\frac{1}{2}$
-  Das Preisgeld beträgt $2$ Dollar.
-  Beitrag zum Erwartungswert = $2 \times \frac{1}{2} = 1$ Dollar
+Unter der Bedingung, dass das Spiel bei Wurf n endet, beträgt die Auszahlung 2 hoch n, nicht 1. Die 1 ist der **Beitrag dieses Ereignisses zum unbedingten Erwartungswert**.
 
-- **Wahrscheinlichkeit, dass beim 2. Wurf Zahl fällt:** Da Kopf, dann Zahl fallen muss: $\frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$
-  Das Preisgeld beträgt $4$ Dollar.
-  Beitrag zum Erwartungswert = $4 \times \frac{1}{4} = 1$ Dollar
+Die ersten K Summanden ergeben
 
-- **Wahrscheinlichkeit, dass beim 3. Wurf Zahl fällt:** Da Kopf, Kopf, dann Zahl fallen muss: $(\frac{1}{2})^3 = \frac{1}{8}$
-  Das Preisgeld beträgt $8$ Dollar.
-  Beitrag zum Erwartungswert = $8 \times \frac{1}{8} = 1$ Dollar
+$$
+\sum_{n=1}^{K}2^n2^{-n}=K
+$$
 
-- **Wahrscheinlichkeit, dass beim $n$-ten Wurf Zahl fällt:** $(\frac{1}{2})^n$
-  Das Preisgeld beträgt $2^n$ Dollar.
-  Beitrag zum Erwartungswert = $2^n \times (\frac{1}{2})^n = 1$ Dollar
+und diese Partialsummen wachsen mit K über jede Grenze. In diesem Sinn ist der Erwartungswert unendlich groß. Das garantiert weder eine unendliche Auszahlung noch einen bestimmten Gewinn bei endlich vielen Beobachtungen. Das [Gesetz der großen Zahlen](https://kenji.blog/de/p/law-of-large-numbers/) behandelt die Voraussetzungen für den Zusammenhang zwischen endlichen Erwartungswerten und Stichprobenmitteln.
 
-Das bedeutet, egal in welcher Runde das Spiel endet, der Erwartungswert dieses Musters beträgt **immer „1 Dollar“**.
-Da das Spiel theoretisch unendlich lange weitergehen kann, sieht die Summe all dieser Erwartungswerte wie folgt aus:
+Auch nach Abzug einer festen, endlichen Teilnahmegebühr c bleibt der Erwartungswert des Nettogewinns im erweiterten Sinn
 
-$$ \text{Gesamterwartungswert} = 1 + 1 + 1 + 1 + \dots = \infty \text{ (Unendlich)} $$
+$$
+\mathbb E[X-c]=\infty\qquad(0\le c<\infty)
+$$
 
-Die Antwort der Mathematik lautet: **„Der Erwartungswert dieses Spiels ist unendlich.“**
-Da der Erwartungswert unendlich ist, ist es theoretisch gesehen absolut „profitabel“, ganz gleich, wie hoch die Teilnahmegebühr ist.
+Dieser Erwartungswert allein bewertet aber weder die Möglichkeit eines hohen Verlusts noch die Finanzierbarkeit der Gebühr oder die Zahlungsfähigkeit des Veranstalters. Aus einem unendlichen Erwartungswert folgt nicht, dass man sich für die Teilnahme verschulden sollte.
 
-Das ist das **„Sankt-Petersburg-Paradoxon“**, das 1713 von Nicolaus Bernoulli aufgestellt wurde.
-Das korrekte mathematische Ergebnis (ein unendlicher Wert) und das realistische menschliche Empfinden (man möchte nur wenige Dollar bezahlen) stehen im krassen Widerspruch zueinander.
+## 3. Geschichte und Bewertungsmaßstab
 
----
+Die [englische Übersetzung von Daniel Bernoullis Aufsatz aus dem Jahr 1738](https://faculty.econ.ucsb.edu/~tedb/Courses/GraduateTheoryUCSB/Bernoulli.pdf) beschreibt, wie sein Cousin Nicolaus Bernoulli Montmort Probleme zusandte. Ein darin zitierter Brief Cramers von 1728 verweist auf das Problem aus dem Brief vom 9. September 1713. Der Name des Paradoxons hängt mit der Veröffentlichung von Daniels Aufsatz in den Abhandlungen der Akademie der Wissenschaften in Sankt Petersburg zusammen.
 
-## 3. Die Entdeckung des „Nutzens“ zur Lösung der Diskrepanz zwischen Mathematik und Menschen
+Das dort zitierte klassische Spiel beginnt mit einer Auszahlung von einem Dukaten. Hier verwenden wir einen Anfangsbetrag von 2 Dollar. Sicherheitsäquivalente und andere Geldbeträge dürfen daher nicht ohne Anpassung der Skala übernommen werden.
 
-Derjenige, der dieses Paradoxon löste, war der geniale Mathematiker Daniel Bernoulli, der Cousin von Nicolaus. (Da er diese Arbeit an der Akademie der Wissenschaften in Sankt Petersburg präsentierte, erhielt das Paradoxon diesen Namen.)
+Das Problem regt dazu an, den erwarteten Geldbetrag von der Bewertung riskanter Ergebnisse zu unterscheiden. Daniel schlug eine Bewertung anhand des Nutzens vor und stellte auch ähnliche frühere Ideen Cramers vor. Solche Erklärungen beruhen auf Modellen; sie sind keine universellen mathematischen Beweise für die Psychologie jedes Menschen.
 
-Daniel beschäftigte sich intensiv mit der menschlichen Psychologie.
-Er dachte sich: **„Menschen beurteilen Dinge nicht nach dem ‚absoluten Geldbetrag‘, sondern nach der ‚Zufriedenheit (dem Nutzen)‘, die das Geld bringt.“**
+## 4. Abnehmenden Grenznutzen modellieren
 
-Dies wird als das **„Gesetz vom abnehmenden Grenznutzen“** bezeichnet.
+Wer bereits genug Wasser getrunken hat, bewertet ein weiteres Glas möglicherweise geringer. Auch beim Vermögen lässt sich modellieren, dass der Wert eines festen Geldzuwachses vom Ausgangsniveau abhängt.
 
-### Der Wert von Geld sinkt mit der Menge, die man besitzt
-Stellen Sie sich zum Beispiel vor, Sie sind in der Wüste und sehr durstig. Das erste Glas Wasser hat für Sie einen so hohen Wert (Zufriedenheit), dass Sie „sogar 10.000 Dollar dafür zahlen würden“. Aber während Sie ein zweites und drittes Glas trinken, sinkt der Wert jedes weiteren Glases Wasser immer mehr. Beim zehnten Glas würden Sie wahrscheinlich sagen: „Ich will es nicht mehr, selbst wenn es kostenlos ist.“
+Beispielsweise setzen wir für positive Beträge einen logarithmischen Nutzen an:
 
-Mit Geld verhält es sich genauso.
-- „10.000 Euro“ haben für jemanden ohne Ersparnisse einen immensen, lebensrettenden Wert.
-- Für einen Milliardär wie Elon Musk haben „10.000 Euro“ jedoch nur noch den Wert (die Zufriedenheit) einer gefundenen Ein-Cent-Münze auf der Straße.
+$$
+u(x)=\log_2x,\qquad x>0
+$$
 
-Das heißt, selbst wenn das Preisgeld unendlich auf 2 Dollar $\rightarrow$ 4 Dollar $\rightarrow$ 8 Dollar $\rightarrow$ 16 Dollar... ansteigt, **wächst die „Freude (der Nutzen)“, die ein Mensch empfindet, nicht proportional und unendlich mit dem Betrag mit**.
+Diese Funktion erfüllt
 
----
+$$
+u'(x)=\frac{1}{x\ln2}>0,\qquad u''(x)=-\frac{1}{x^2\ln2}<0
+$$
 
-## 4. Den Erwartungswert mit dem „Nutzen“ neu berechnen
+Mit dem Vermögen steigt auch der Nutzen, doch eine zusätzliche Einheit bewirkt bei höherem Vermögen einen kleineren Nutzenzuwachs. Das ist der abnehmende Grenznutzen in diesem Modell. Der logarithmische Nutzen selbst wächst weiterhin ohne obere Schranke. Abnehmende Zuwächse und eine endliche obere Nutzengrenze sind unterschiedliche Eigenschaften.
 
-Daniel Bernoulli nahm an, dass „der Wert von Geld (der Nutzen), den ein Mensch empfindet, proportional zum Logarithmus ($\log$) des Betrags ist“.
+Solche Nutzenfunktionen sind Annahmen zur Darstellung von Präferenzen, keine empirische Feststellung, dass die Zufriedenheit aller Menschen derselben logarithmischen Formel folgt.
 
-Wenn wir den Betrag $x$ nennen, können wir den Wert (den Nutzen) $u(x)$, den ein Mensch empfindet, als logarithmische Funktion darstellen (hier betrachten wir ein einfaches Modell mit der Basis 2).
+## 5. Erwarteter Nutzen 2, Sicherheitsäquivalent 4 und Teilnahmegebühr
 
-- Nutzen eines Preisgeldes von $2$ Dollar: $\log_2(2) = 1$
-- Nutzen eines Preisgeldes von $4$ Dollar: $\log_2(4) = 2$
-- Nutzen eines Preisgeldes von $8$ Dollar: $\log_2(8) = 3$
-- Nutzen eines Preisgeldes von $2^n$ Dollar: $\log_2(2^n) = n$
+Zunächst vergleichen wir vereinfacht, indem wir den Nutzen direkt auf die erhaltene Auszahlung anwenden. Endet das Spiel bei Wurf n, beträgt der Nutzen
 
-Der Betrag verdoppelt sich jedes Mal, aber die menschliche „Freude“ steigt nur in kleinen Schritten an: 1, 2, 3...
-Berechnen wir den Erwartungswert (**Erwartungsnutzen**) mit diesem „Nutzen“ neu.
+$$
+\log_2(2^n)=n
+$$
 
-$$ \text{Erwartungsnutzen} = \sum_{n=1}^{\infty} \left( n \times \left(\frac{1}{2}\right)^n \right) $$
-$$ = 1 \cdot \frac{1}{2} + 2 \cdot \frac{1}{4} + 3 \cdot \frac{1}{8} + 4 \cdot \frac{1}{16} + \dots $$
+und der erwartete Nutzen ist
 
-Wenn man die Summe dieser unendlichen Reihe berechnet, ist das Ergebnis nicht „unendlich“, sondern **es konvergiert gegen „2“.**
-Wenn man den Betrag zurückrechnet, bei dem der Nutzen „2“ ist, erhält man $2^2 = 4$ Dollar.
+$$
+\mathbb E[u(X)]=\sum_{n=1}^{\infty}n2^{-n}=2
+$$
 
-Das bedeutet, wenn man die menschliche Psychologie (den Nutzen) in die Berechnungen einbezieht, ergibt sich die äußerst vernünftige und realistische Antwort: **„Der Wert dieses Spiels liegt für das menschliche Empfinden bei etwa ‚4 Dollar‘.“**
-Genau deshalb sind wir nicht bereit, 10.000 Dollar für dieses Spiel zu bezahlen.
+Die Partialsummen bestätigen dies:
 
----
+$$
+\sum_{n=1}^{K}n2^{-n}=2-\frac{K+2}{2^K}\longrightarrow2
+$$
 
-## 5. Fazit: Das Paradoxon, das die Tür zu den Wirtschaftswissenschaften öffnete
+Die mit Wahrscheinlichkeiten gewichtete Nutzenreihe konvergiert. Somit kann der erwartete Nutzen endlich sein, obwohl die Nutzenfunktion nach oben unbeschränkt ist.
 
-Das Sankt-Petersburg-Paradoxon war ein bahnbrechendes Paradoxon, das mathematisch bewies, dass die objektive Zahl des „Geldbetrags“ und der subjektive Wert der „menschlichen Zufriedenheit“ nicht übereinstimmen.
+Der sichere Auszahlungsbetrag mit demselben Nutzen in diesem Vergleich, das **Sicherheitsäquivalent (CE)**, ist
 
-Das von Daniel Bernoulli vorgeschlagene Konzept des „Nutzens (Utility)“ wurde 200 Jahre später zur wichtigsten Grundlage der modernen Mikroökonomie und Finanzmathematik (wie der Portfoliotheorie).
-Unser Verhalten, Versicherungen abzuschließen oder unser Portfolio zu diversifizieren, lässt sich alles durch diesen menschlichen psychologischen Mechanismus des „abnehmenden Grenznutzens“ erklären (der Schmerz über einen großen Verlust ist viel größer als die Freude über einen großen Gewinn).
+$$
+\mathrm{CE}=u^{-1}\!\left(\mathbb E[u(X)]\right)=2^2=4
+$$
 
-Ein einfaches Rechenproblem eines Glücksspiels wurde zum Auslöser dafür, den menschlichen Geist zu entschlüsseln und die riesige Disziplin der Wirtschaftswissenschaften hervorzubringen.
+Verglichen werden die zufällige Auszahlung X und eine sichere Auszahlung von 4. **Das bedeutet keine allgemeingültige Obergrenze von 4 für die Teilnahmegebühr.**
 
+Für die Entscheidung, ob man die Gebühr bezahlt, müssen Anfangsvermögen w und Gebühr c einbezogen werden. Ein einfaches Modell ohne Kreditaufnahme verwendet folgende Größen und Bedingungen:
+
+$$
+w>0,\qquad0\le c\le w,\qquad W_{\mathrm{final}}=w-c+X
+$$
+
+Bei demselben logarithmischen Nutzen ist die Differenz zwischen erwartetem Nutzen bei Teilnahme und Nutzen bei Nichtteilnahme
+
+$$
+G_w(c)=\sum_{n=1}^{\infty}2^{-n}\log_2(w-c+2^n)-\log_2w
+$$
+
+Eine positive Differenz spricht in diesem Modell für die Teilnahme, null bedeutet Indifferenz, eine negative Differenz spricht für die Nichtteilnahme. Für w größer als 4 ist die Differenz stetig und streng fallend in c, positiv bei c gleich 0 und negativ bei c gleich w. Es gibt daher genau eine Teilnahmegebühr, bei der der Spieler zwischen beiden Entscheidungen indifferent ist:
+
+$$
+G_w(c^\ast)=0,\qquad0<c^\ast<w\quad(w>4)
+$$
+
+Die numerische Lösung der Reihe liefert diese Beispiele:
+
+| Anfangsvermögen w | Ungefährer Indifferenzpreis c* |
+| ---: | ---: |
+| 10 | 4,97 |
+| 100 | 7,79 |
+| 1 000 | 10,95 |
+
+Selbst bei derselben Nutzenfunktion ändert die Berücksichtigung des Vermögens die Bewertung. Der sichere Vermögenszuwachs, der einer bereits gehaltenen Lotterie entspricht, unterscheidet sich zudem vom Indifferenzpreis für ihren Kauf. Bernoulli selbst unterscheidet in Abschnitt 19 zwischen Kaufpreis und Wert einer bereits vorhandenen Gewinnmöglichkeit.
+
+## 6. Die Auszahlung begrenzen
+
+Ein praktisches Modell muss auch Vertragsgrenzen und Zahlungsfähigkeit berücksichtigen. Legen wir etwa eine Obergrenze von 2 hoch K fest: Sobald erstmals Zahl fällt, wird der kleinere Wert aus ursprünglichem Betrag und Obergrenze ausgezahlt.
+
+$$
+X_K=\min(X,2^K),\qquad K\in\{1,2,\ldots\}
+$$
+
+Die Wahrscheinlichkeit, dass N mindestens K ist, beträgt den Kehrwert von 2 hoch K−1. Daher gilt
+
+$$
+\mathbb E[X_K]=\sum_{n=1}^{K-1}2^n2^{-n}+2^K\Pr(N\ge K)=(K-1)+2=K+1
+$$
+
+Bei einer Obergrenze von 1 024, also K gleich 10, ist die erwartete Auszahlung 11. Die ersten K Summanden des ursprünglichen Erwartungswerts ergeben K; der begrenzte Vertrag hat dagegen den Erwartungswert K+1. Eine andere Zahlungsregel bei vorzeitigem Abbruch definiert ein anderes Spiel.
+
+## 7. Eine ökonomische Perspektive mit ausdrücklichen Annahmen
+
+Bernoulli wendet Vermögens- und Nutzenmodelle auch auf Versicherungen und die Verteilung von Waren auf mehrere Schiffe an. Erwarteter Nutzen ist ein Rahmen für Überlegungen zu riskanten Entscheidungen. Preise, Abhängigkeiten zwischen Verlusten und Finanzierungsbeschränkungen sind für Versicherung und Diversifikation ebenfalls wichtig; ein einzelnes psychologisches Prinzip erklärt nicht jede Entscheidung.
+
+**Die Konkavität des Nutzens über dem Vermögen und Verlustaversion als Asymmetrie von Gewinnen und Verlusten relativ zu einem Referenzpunkt sind unterschiedliche Begriffe.** [Tversky und Kahneman behandeln in ihrem Aufsatz von 1981](https://www.stanford.edu/class/psych205/papers/Tversky-Kahneman-1981.pdf) Referenzpunkte, den Wert von Gewinnen und Verlusten sowie Entscheidungsgewichte und weisen darauf hin, dass diese Eigenschaften nicht für alle Menschen universell gelten.
+
+Das Sankt-Petersburg-Paradoxon unterscheidet Wahrscheinlichkeitsmodell, erwarteten Geldbetrag, Präferenzen und Beschränkungen. Auch das [Zwei-Umschläge-Paradoxon](https://kenji.blog/de/p/two-envelopes-paradox/) und der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) werden verständlicher, wenn Annahmen und bedingende Informationen ausdrücklich genannt werden.

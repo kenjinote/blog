@@ -293,6 +293,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/サンクトペテルブルクのパラドックス/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/サンクトペテルブルクのパラドックス/index.md",
+      "sourceHash": "2811748d99d856be0d88241417c403223a1f588470252a0aabe8b077d225bd2e",
+      "translationHash": "982828ad582579da94687a12a2e23b47672df10055678ad9ecc0774025e2fb98",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "ドイツ語旧稿の全メタデータ・本文・図を読了し、改訂日本語と改稿7節・表・16式・図を全文で照合。最終の条件表現、借入の結論、受取額と水の比喩も再読。元のゲーム/期待値/歴史/限界効用/対数計算/経済学を維持し、借金勧誘・利益保証・普遍的4ドル・心理の数学的証明・実在人の効用の断定を訂正した。"
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Kopf/ZahlとNの投数、AuszahlungとNettogewinn、unbedingter Erwartungswertへの寄与と条件付き賞金、mit Wahrscheinlichkeit1 endlichとnach oben unbeschränkt、erwarteter Nutzen/abnehmender Grenznutzen、Sicherheitsäquivalent(CE)とIndifferenzpreis/Teilnahmegebühr、Anfangsvermögen、KonkavitätとVerlustaversionを文脈で照合。keine Pflichtという弱い訳を借入すべき結論は出ない表現へ訂正。3価格は小数コンマ4,97/7,79/10,95。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "全16TeXを日本語と手読比較。IID公平の幾何分布/停止CDFの極限と有限a.s./無限期待値、寄与1対条件付き2^n/部分和K、有限cでの拡張純期待値、対数微分/凹性/無上限と有限期待効用2/部分和/CE4、w>0と0≤c≤w/Gの連続/厳密減少/端点とw>4一意根、上限2^K契約でN≥KによるK+1を確認。共有1呼出の12長さ8190二値列/64有限級数/3資産例128項90桁は無限一般証明・丸め区間証明・人の意思額実測ではない。"
+        },
+        "code": {
+          "status": "checked",
+          "note": "実行プログラム0、Mermaid1点8辺のみ。Kopfで倍増反復、Zahlで2/4/8を受取、4回目以降同じ規則という意味を本文と照合。実際に無限賞金を得るような表示と受取額/純利益の混同を訂正。生成HTMLで全16式と図ソースを検証し、補助算術は掲載プログラムの実行ではない。母語話者/ブラウザ視覚/KaTeX/Mermaid実行は未認定。"
+        },
+        "links": {
+          "status": "checked",
+          "note": "2一次資料とドイツ語の大数法則/二封筒/ベイズの内部3リンクを照合。NicolausのCousin、1738と引用1713/1728、古典1Dukatと本稿2USD、保有/購入価格差、参照点の限定を確認。二重dateを実効公開9月10日のまま解消、更新10月30日と元slug/分類/画像バイトを保持。14hreflang/13切替、多言語1609ページ/HTTPS2933HTML41XMLを検査。17テストはbatch026最終実行参照で今回未再実行。"
+        }
+      },
+      "summary": "ドイツ語全7節を校閲。Auszahlung/Nettogewinn、Sicherheitsäquivalent/Indifferenzpreis、Konkavität/Verlustaversion、上限契約と重複日付を整理。",
+      "languageSpecificFindings": "Kopf/ZahlとNの投数を明確化。確定受取をAuszahlungsbetragとし、keine Pflichtを借入推奨が数学から出ない意味へ訂正。期待効用はerwarteter Nutzen、価格はIndifferenzpreisで区別し、小数コンマと条件文を整えた。",
+      "validation": "docs/translation-review/batch-027-de-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "4other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,financial advice,empirical choice evidence or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -658,6 +699,58 @@
       "unreviewedTranslations": 12701,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 5,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "de"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "2811748d99d856be0d88241417c403223a1f588470252a0aabe8b077d225bd2e",
+      "validation": "docs/translation-review/batch-027-de-validation.json",
+      "checks": "docs/translation-review/batch-027-de-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-027-de-ledger-validation.json",
+      "texEach": 16,
+      "diagramsEach": 1,
+      "diagramEdges": [
+        8
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "binarySequenceLengths": 12,
+        "binarySequencesEnumerated": 8190,
+        "finiteSeriesCases": 64,
+        "logWealthFeeExamples": [
+          {
+            "w": "10",
+            "feeRounded": "4.97",
+            "terms": 128,
+            "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-77"
+          },
+          {
+            "w": "100",
+            "feeRounded": "7.79",
+            "terms": 128,
+            "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-76"
+          },
+          {
+            "w": "1000",
+            "feeRounded": "10.95",
+            "terms": 128,
+            "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-75"
+          }
+        ],
+        "scope": "Once per validator invocation,not per language. Full finite binary-sequence enumeration independently checks the capped contract and stopping CDF;finite series and Decimal fee calculations separately scoped. Not article-program execution,infinite-limit machine proof,interval-rounding proof or human-choice evidence."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 332,
+      "unreviewedTranslations": 12700,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 4,
       "publicationPending": true
     }
   ],

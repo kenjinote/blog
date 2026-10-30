@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T20:47:24.812056+09:00",
+  "allPassed": true,
+  "results": [
+    {
+      "command": [
+        "docs/translation-review/verify_batch_027.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-stp-de",
+        "--languages",
+        "ja",
+        "de",
+        "--output",
+        "docs/translation-review/batch-027-de-validation.json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"passed\": true, \"versions\": 2, \"texEach\": 16, \"diagramsEach\": 1, \"edgesEach\": 8, \"auxiliary\": {\"binarySequenceLengths\": 12, \"binarySequencesEnumerated\": 8190, \"finiteSeriesCases\": 64, \"logWealthFeeExamples\": [{\"w\": \"10\", \"feeRounded\": \"4.97\", \"terms\": 128, \"positiveOmittedTailUpperBound\": \"4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-77\"}, {\"w\": \"100\", \"feeRounded\": \"7.79\", \"terms\": 128, \"positiveOmittedTailUpperBound\": \"4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-76\"}, {\"w\": \"1000\", \"feeRounded\": \"10.95\", \"terms\": 128, \"positiveOmittedTailUpperBound\": \"4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-75\"}], \"scope\": \"Once per validator invocation,not per language. Full finite binary-sequence enumeration independently checks the capped contract and stopping CDF;finite series and Decimal fee calculations separately scoped. Not article-program execution,infinite-limit machine proof,interval-rounding proof or human-choice evidence.\"}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-stp-de"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1609 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-stp-de"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 2933, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    }
+  ],
+  "actualPreviewBundles": 28,
+  "previous17UnitTests": "docs/translation-review/batch-026-final-checks.json",
+  "unitTestsRerun": false,
+  "scope": "JA/German final16math/one8edge diagram/source/decodedHTML and whole28bundle preview multilingual/HTTPS;auxiliary shared once,not prose/native/browser/financial/publication certification."
+}
