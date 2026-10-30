@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T09:32:35.997619+09:00",
+  "versions": {
+    "ar": {
+      "path": "content/post/bayes-theorem/index.ar.md",
+      "sha256": "81dd081b20d1dae7b375e73046aa2646f6fecd1e18bc6e9a06bcf9bf2028f09e",
+      "canonical": "https://kenji.blog/ar/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/bayes-theorem/index.de.md",
+      "sha256": "b7adf14ac629d6d39aa225ff46a69dd80d53ccc4d9329c3d678d3a6f770d0350",
+      "canonical": "https://kenji.blog/de/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/bayes-theorem/index.en.md",
+      "sha256": "90f954e6705a36b0b53cccf1042a204023daa1b5f1a3986cad44894a4ebfecea",
+      "canonical": "https://kenji.blog/en/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/bayes-theorem/index.es.md",
+      "sha256": "688c331ed3b0f79c196605c7196970adcf8d65daa020e74ef0d8d8722e7d5c6f",
+      "canonical": "https://kenji.blog/es/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/bayes-theorem/index.fr.md",
+      "sha256": "5cc55b9c067ea8eae24079ff8a01b3fba50ddf4c46b2cf4bd15a8cfa1b0245dc",
+      "canonical": "https://kenji.blog/fr/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/bayes-theorem/index.hi.md",
+      "sha256": "1ef09b78efea90f26a023d48ad748bd1e48a4c529f0e6f17584d0399849f06bb",
+      "canonical": "https://kenji.blog/hi/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/bayes-theorem/index.id.md",
+      "sha256": "bad5885f7af30055a175991d1915a849c82180ba3e739c8ad963ec50d1ea7d54",
+      "canonical": "https://kenji.blog/id/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/bayes-theorem/index.ko.md",
+      "sha256": "59038043ba79b19025f176872f6d07f23e89b404de54d377fd3e9e37f6d0d98e",
+      "canonical": "https://kenji.blog/ko/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/bayes-theorem/index.md",
+      "sha256": "db5ae2838718f0a6bb5c569cb38609424d9c893610b066362f34866b6ea24c2f",
+      "canonical": "https://kenji.blog/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/bayes-theorem/index.pt.md",
+      "sha256": "a61cf13a574f2f0ba47cbf2730a05c0805b49abc16eed65361586987348ae638",
+      "canonical": "https://kenji.blog/pt/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/bayes-theorem/index.ru.md",
+      "sha256": "540046718869f0fb6601387b230eddf394a39a642e858c7da7163d8de25513a7",
+      "canonical": "https://kenji.blog/ru/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/bayes-theorem/index.zh-cn.md",
+      "sha256": "21c1114f0696331d041c7bad77658ce24f877a661c654142a58a8d47ac6b70b0",
+      "canonical": "https://kenji.blog/zh-cn/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/bayes-theorem/index.zh-tw.md",
+      "sha256": "6c3227ebbc2114f161874a6702d7a245605e2bf711e1a9ab108c71ab6cdc259e",
+      "canonical": "https://kenji.blog/zh-tw/p/bayes-theorem/",
+      "datePublished": "2026-09-20T15:15:00+09:00",
+      "slug": "bayes-theorem",
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    }
+  },
+  "image": {
+    "path": "content/post/bayes-theorem/eyecatch.jpg",
+    "sha256": "cd78fc63037bfd3339da0d00c1f5f7c686b166d4ac0441aadbd8ca120688ca30"
+  },
+  "baselineSite": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-28-bundles-two-envelopes-final",
+  "auxiliaryChecks": {
+    "hypotheticalDiagnosticExample": {
+      "population": 10000,
+      "truePositive": 99,
+      "falseNegative": 1,
+      "falsePositive": 495,
+      "trueNegative": 9405,
+      "prevalence": "1/100",
+      "sensitivity": "99/100",
+      "specificity": "19/20",
+      "falsePositiveRate": "1/20",
+      "positiveProbability": "297/5000",
+      "positivePredictiveValue": "1/6",
+      "falseDiscoveryProportionAmongPositives": "5/6",
+      "overallAccuracy": "594/625"
+    },
+    "bayesJointTablesChecked": 1230,
+    "zeroOrUndefinedConditioningTablesSkipped": 66,
+    "conditionalIndependentButMarginalDependent": {
+      "states": 8,
+      "pBothOne": "41/100",
+      "productMarginals": "1/4"
+    },
+    "pairwiseIndependentButNotJointIndependent": {
+      "xorStates": 4,
+      "pairTablesChecked": 3,
+      "p111": "0",
+      "productMarginals": "1/8"
+    },
+    "finiteCoinCases": [
+      {
+        "tosses": 1,
+        "probabilityExactlyHalfHeads": "0"
+      },
+      {
+        "tosses": 2,
+        "probabilityExactlyHalfHeads": "1/2"
+      },
+      {
+        "tosses": 3,
+        "probabilityExactlyHalfHeads": "0"
+      },
+      {
+        "tosses": 4,
+        "probabilityExactlyHalfHeads": "3/8"
+      },
+      {
+        "tosses": 5,
+        "probabilityExactlyHalfHeads": "0"
+      },
+      {
+        "tosses": 6,
+        "probabilityExactlyHalfHeads": "5/16"
+      },
+      {
+        "tosses": 7,
+        "probabilityExactlyHalfHeads": "0"
+      },
+      {
+        "tosses": 8,
+        "probabilityExactlyHalfHeads": "35/128"
+      },
+      {
+        "tosses": 9,
+        "probabilityExactlyHalfHeads": "0"
+      },
+      {
+        "tosses": 10,
+        "probabilityExactlyHalfHeads": "63/256"
+      },
+      {
+        "tosses": 11,
+        "probabilityExactlyHalfHeads": "0"
+      },
+      {
+        "tosses": 12,
+        "probabilityExactlyHalfHeads": "231/1024"
+      },
+      {
+        "tosses": 13,
+        "probabilityExactlyHalfHeads": "0"
+      },
+      {
+        "tosses": 14,
+        "probabilityExactlyHalfHeads": "429/2048"
+      },
+      {
+        "tosses": 15,
+        "probabilityExactlyHalfHeads": "0"
+      },
+      {
+        "tosses": 16,
+        "probabilityExactlyHalfHeads": "6435/32768"
+      },
+      {
+        "tosses": 17,
+        "probabilityExactlyHalfHeads": "0"
+      },
+      {
+        "tosses": 18,
+        "probabilityExactlyHalfHeads": "12155/65536"
+      },
+      {
+        "tosses": 19,
+        "probabilityExactlyHalfHeads": "0"
+      },
+      {
+        "tosses": 20,
+        "probabilityExactlyHalfHeads": "46189/262144"
+      }
+    ],
+    "posteriorModeVersusPredictive": {
+      "model": "Uniform prior on[0,1],ordered data1,1,0,posterior12theta^2(1-theta)",
+      "normalization": "1",
+      "mode": "2/3",
+      "posteriorPredictive": "3/5",
+      "scope": "Hand-specified polynomial coefficients integrated by exact rational arithmetic;derivative sign argument separately checked. No general symbolic integration,BNN training,empirical clinical validation or LLN proof."
+    }
+  },
+  "reviewedTranslationsAdded": 0,
+  "currentAiTranslations": 312,
+  "unreviewedTranslations": 12720,
+  "humanReviews": 0,
+  "limitations": [
+    "Pre-audit only;no article source edits or review entry.",
+    "OnlyJAENoriginal full bodies read;other11metadata/hash/HTML inventory only.",
+    "Numerical medical example is hypothetical,not measured clinical test performance or advice.",
+    "ExplicitKaTeX/Mermaid script references found;presence does not certify browser runtime or visual rendering.",
+    "Primary-reading scope and still-unverified history/BO/BNN claims recorded separately."
+  ],
+  "inspectionClarifications": [
+    "Preliminary external-script-only regex missed inline script/module content. Actual all-script-block inventory found both runtime references in all13versions;no measured version or arithmetic data changed."
+  ]
+}
