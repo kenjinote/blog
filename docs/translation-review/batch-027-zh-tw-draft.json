@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "draftedAt": "2026-10-30T20:21:03.868250+09:00",
+  "path": "content/post/サンクトペテルブルクのパラドックス/index.zh-tw.md",
+  "originalSha256": "fcf535dd969f1a84d1666871a0115c87aaa3d88440bb9cc36fb78b397af57389",
+  "draftSha256": "052d7e249ddf64dd71b806325844adc832ac5b9c922388a5c8d39c023289f19e",
+  "commonTeX": 16,
+  "diagrams": 1,
+  "diagramEdges": 8,
+  "draftOnly": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original TraditionalChinese full metadata/body/diagram read;manual complete rewrite against corrected Japanese. Pending final full reread/HTML checks/ledger. Other9translations unreviewed;not native/browser/publication certification."
+}

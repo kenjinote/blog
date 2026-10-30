@@ -1006,7 +1006,7 @@
     "checks": "docs/translation-review/batch-026-final-checks.json",
     "probePreparation": "docs/translation-review/batch-026-probe-preparation.json",
     "publicationProof": "docs/translation-review/publication-026.json",
-    "publicationPending": true,
+    "publicationPending": false,
     "limitations": [
       "Isolated 28-bundle preview with existing layout/Portuguese UI warnings;not full-site build.",
       "No browser visual/runtime,native-language,clinical,training or universal-proof certification.",
@@ -1043,5 +1043,30 @@
     "scope": "Ordinary push after fetch:zero incoming/16local outgoing. Matching run/head observed live.351URL probe prepared,not executed before matching build/deploy success. No publication confirmation claimed.",
     "proof": "docs/translation-review/batch-026-publication-dispatch.json",
     "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_324.py"
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-10-30T20:25:05.123370+09:00",
+      "ciRun": 41043918765,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/41043918765",
+      "deployedCommit": "03dc2a9279274bd8db955101c882034535d7197e",
+      "ciConclusion": "success",
+      "buildConclusion": "success",
+      "deployConclusion": "success",
+      "deploymentAttempt": 1,
+      "ciProof": "docs/translation-review/batch-026-ci-completion.json",
+      "proof": "docs/translation-review/publication-026.json",
+      "pages": 351,
+      "passed": 351,
+      "httpRetryRounds": 0,
+      "reviewedTranslationsPublished": 324,
+      "japaneseSources": 27,
+      "mathVersions": 156,
+      "texExpressions": 9350,
+      "bayesVersions": 13,
+      "bayesTeX": 286,
+      "bayesDiagramSources": 26,
+      "scope": "Batches001-026 only.351unique URLs passed first probe,all14hreflang/13sidebar targets.156mathversions9350TeX;Bayes13versions286TeX/26localizeddiagram sources/9primaryand2localizedrefs per version/originalSep20date/Oct30modified/title/no unexpectedarticlecodeelements. Existing completeC/Rust/Python/Cpp blocks,diagrams and sieveimage checks retained. Batch027 local StPetersburg source/English/Chinese revisions excluded. Not full-site/native/browser-visual/financial/clinical/security certification."
+    }
+  ]
 }
