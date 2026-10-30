@@ -1,9 +1,9 @@
 ---
-title: 'O Paradoxo dos Dois Envelopes: O Colapso Lógico e a Armadilha da Tomada de Decisão Causados pela Esperança Matemática Infinita'
-date: "2026-09-24T19:44:38+09:00"
+title: "O paradoxo dos dois envelopes: probabilidade condicional e esperança infinita"
+date: "2026-09-10T00:00:00+09:00"
+lastmod: 2026-10-30
 slug: 'two-envelopes-paradox'
-description: 'Dois envelopes à sua frente. Um contém o dobro do dinheiro do outro. Se você trocar sem abrir o seu, sempre terá vantagem na esperança matemática? Através do "Paradoxo dos Dois Envelopes", onde a intuição e a matemática colidem violentamente, explicaremos detalhadamente as armadilhas do valor esperado e o conceito do infinito.'
-date: '2026-09-10T00:00:00+09:00'
+description: "Vale a pena trocar de envelope? Calcule o ganho condicional a partir de uma distribuição a priori, distinga normalização de esperança finita e examine contraexemplos baseados em distribuições próprias com esperança infinita."
 image: 'img/two_envelopes.jpg'
 math: true
 mermaid: true
@@ -14,152 +14,174 @@ tags:
   - 'Infinito'
 ---
 
-## 1. A Escolha Definitiva: Trocar ou não trocar?
+## 1. Definir como o envelope é escolhido
 
-Você está na fase final de um game show. Na mesa à sua frente estão **dois envelopes (A e B)** de aparência idêntica.
-O apresentador diz:
+Dois envelopes de aparência idêntica contêm dinheiro: um guarda o dobro da quantia do outro. Depois de escolher um deles, você pode trocar. Vale a pena fazer isso antes de abrir ou depois de ver a quantia?
 
-> "Um dos envelopes contém o **dobro do dinheiro** do outro. Por favor, escolha um deles."
+Seja $S$ a menor quantia, uma variável aleatória positiva e finita. Os envelopes contêm $S$ e $2S$. Escolha um deles lançando uma moeda equilibrada, com resultado independente dos conteúdos. Chamaremos de $X$ a quantia escolhida e de $Y$ a outra. Condicionando ao valor fixo $S=s$ da menor quantia, os dois resultados abaixo têm probabilidade $1/2$ cada um.
 
-Depois de hesitar, você escolhe o **envelope A**.
-Exatamente quando você está prestes a olhar o que tem dentro, o apresentador sussurra algo tentador:
+$$
+(X,Y)=(s,2s)\quad\text{or}\quad(X,Y)=(2s,s).
+$$
 
-> "Agora, se você quiser, **pode trocar** esse envelope A pelo envelope B que sobrou. Você quer trocar?"
+A escolha equiprovável antes de ver a quantia não determina as probabilidades depois da observação. Para calcular estas últimas, é preciso também uma **distribuição a priori** que descreva como a menor quantia é gerada. «Quantia finita» se refere a cada realização; não implica que a esperança (valor esperado) ou um limite superior para as quantias sejam finitos.
 
-E agora, você deveria trocar de envelope?
+## 2. O tentador cálculo de «ganhar 25% a cada troca»
 
----
+Suponha que você observe $X=x$. É tentador pensar: «O outro envelope tem metade ou o dobro, com probabilidade $1/2$ para cada caso», e calcular:
 
-## 2. O "Loop Infinito" Derivado do Cálculo do Valor Esperado
+$$
+\frac12\cdot\frac{x}{2}+\frac12\cdot2x=\frac54x.
+$$
 
-Aqui, vamos aplicar um pouco de pensamento matemático.
-Vamos assumir que a quantia no seu envelope A seja $X$ ienes.
-A quantia no envelope B, de acordo com as regras, é "metade de $X$" ($\frac{X}{2}$) ou "o dobro de $X$" ($2X$). A probabilidade de cada um é de $\frac{1}{2}$ (50%).
-
-Então, vamos calcular o **valor esperado (quantia média prevista) se você trocar os envelopes**.
-
-$$ E = \frac{1}{2} \times \left(\frac{X}{2}\right) + \frac{1}{2} \times (2X) $$
-$$ E = \frac{X}{4} + X = \frac{5}{4}X = 1.25X $$
-
-Um resultado surpreendente apareceu.
-Apenas trocando os envelopes, o valor esperado salta do original $X$ ienes para **$1.25$ vezes** (um aumento de 25%).
-A conclusão seria: "Pensando matematicamente, é absolutamente mais vantajoso trocar!"
-
-No entanto, é aqui que ocorre o **colapso lógico**.
-Suponha que você trocou pelo envelope B. Logo depois, se o apresentador perguntasse de novo: "Gostaria de voltar para o A?", o que aconteceria?
-A mesma equação se aplica, e desta vez "trocar do B para o A aumenta o valor esperado em 1.25 vezes".
-
-Em outras palavras, **apenas por continuar trocando "de A para B" e "de B para A", o valor esperado teórico continuaria a crescer infinitamente**. Isso é claramente uma contradição com a realidade (o conteúdo dos envelopes está determinado desde o início, e trocar não o aumenta).
+A aritmética está correta, mas **não há justificativa para a equiprobabilidade depois de observar a quantia**. Repetir o argumento após a troca sugeriria que ir e voltar aumenta o dinheiro sem parar. O diagrama mostra esse raciocínio incorreto, não uma estratégia válida.
 
 ```mermaid
-graph TD
-    Start["Você escolhe o envelope A (contém X ienes)"] --> Think["Calcula se é vantajoso trocar"]
-    
-    Think --> Case1["Envelope B tem a metade (X/2 ienes) : probabilidade de 50%"]
-    Think --> Case2["Envelope B tem o dobro (2X ienes) : probabilidade de 50%"]
-    
-    Case1 --> Calc["Valor esperado = (X/4) + X = 1.25X"]
-    Case2 --> Calc
-    
-    Calc --> SwitchToB["Trocar para o envelope B! (contém Y ienes)"]
-    
-    SwitchToB --> ThinkAgain["Calcular novamente"]
-    ThinkAgain --> Case3["Envelope A tem a metade (Y/2 ienes) : probabilidade de 50%"]
-    ThinkAgain --> Case4["Envelope A tem o dobro (2Y ienes) : probabilidade de 50%"]
-    
-    Case3 --> Calc2["Valor esperado = 1.25Y"]
-    Case4 --> Calc2
-    
-    Calc2 --> SwitchToA["Trocar novamente para o envelope A!"]
-    SwitchToA --> Start
-    
-    style Calc fill:#ff9999,stroke:#333,stroke-width:2px
-    style Calc2 fill:#ff9999,stroke:#333,stroke-width:2px
-    style SwitchToA fill:#ff4444,color:#fff,stroke:#333,stroke-width:4px
+flowchart TD
+    A["Observa sua quantia"] --> B["Supõe metade ou dobro com 50% cada sem justificativa"]
+    B --> C["Calcula a média da outra quantia como 1,25 vezes a sua"]
+    C --> D["Troca"]
+    D --> E["Usa a mesma suposição para justificar voltar"]
+    E --> A
 ```
 
-Por que um cálculo de valor esperado que parece perfeito criou um paradoxo tão estranho?
+Também não é adequado atribuir o erro ao fato de uma variável aleatória assumir valores diferentes em casos diferentes: isso é uma propriedade normal de variáveis aleatórias. O problema é mudar o que se mantém fixo e quais probabilidades são usadas.
 
----
+## 3. Simetria antes de abrir e esperança finita
 
-## 3. Desvendando o Truque Matemático: A Troca Oculta de Variáveis
+Fixada a menor quantia, os valores esperados antes e depois da troca coincidem.
 
-A armadilha desse paradoxo reside na **"forma como a variável aleatória $X$ é usada"**.
+$$
+\mathbb E[X\mid S=s]=\mathbb E[Y\mid S=s]=\frac{3s}{2}.
+$$
 
-Na equação anterior, tratamos a quantia $X$ do envelope A como se fosse uma **constante fixa**, e assumimos que o envelope B seria "$\frac{X}{2}$ ou $2X$".
-No entanto, o que está originalmente fixado é o **"total de dinheiro contido nos dois envelopes"**, ou a **"menor quantia"**.
+Mesmo quando a menor quantia é aleatória, a quantia escolhida e a outra têm a mesma distribuição. Em particular, se a esperança da menor quantia é finita,
 
-Vamos chamar a quantia no envelope com menos dinheiro de $S$. Então, o envelope com mais dinheiro tem $2S$.
-O jogo inteiro só tem os seguintes dois cenários possíveis (cada um com probabilidade de $\frac{1}{2}$).
+$$
+\mathbb E[X]=\mathbb E[Y]=\frac32\mathbb E[S]<\infty.
+$$
 
-- **Cenário 1:** O envelope A que você escolheu é o menor ($S$), e o envelope B é o maior ($2S$)
-- **Cenário 2:** O envelope A que você escolheu é o maior ($2S$), e o envelope B é o menor ($S$)
+Portanto, trocar sem observar nenhuma quantia não aumenta o dinheiro esperado. Isso não descarta uma vantagem condicionada a uma observação específica. Se a esperança é infinita, a simetria das distribuições permanece, mas subtrair dois infinitos não permite estabelecer um ganho médio.
 
-Agora, vamos calcular corretamente o valor esperado para quando você **"não troca"** e quando você **"troca"**.
+## 4. Depois de abrir, calcular a partir da distribuição a priori
 
-**Valor esperado se não trocar $E_{stay}$:**
-$$ E_{stay} = \frac{1}{2} \times S + \frac{1}{2} \times 2S = \frac{3}{2}S = 1.5S $$
+Considere primeiro uma menor quantia discreta, com $p(s)=\Pr(S=s)$ e massa nula fora do seu suporte. Para uma quantia $x$ observável com probabilidade positiva, seja $q(x)$ a probabilidade condicional de o outro envelope conter o dobro. Pelo [teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/),
 
-**Valor esperado se trocar $E_{switch}$:**
-No Cenário 1 você ganha $2S$, e no Cenário 2 você ganha $S$.
-$$ E_{switch} = \frac{1}{2} \times 2S + \frac{1}{2} \times S = \frac{3}{2}S = 1.5S $$
+$$
+q(x)=\Pr(Y=2x\mid X=x)=\frac{p(x)}{p(x)+p(x/2)}.
+$$
 
-$$ E_{stay} = E_{switch} $$
+O numerador corresponde ao caso em que a menor quantia coincide com a observada e o envelope com menos dinheiro é escolhido. O outro termo corresponde ao caso em que a menor quantia é metade da observada e o envelope com mais dinheiro é escolhido. Os fatores comuns da seleção se cancelam. O denominador deve ser positivo.
 
-Lindamente, os valores esperados coincidem!
-No primeiro cálculo incorreto, nós pegamos o valor $X$ do Cenário 1 (que na verdade é $S$) e o valor $X$ do Cenário 2 (que na verdade é $2S$) e **tratamos dois valores diferentes como se fossem a mesma variável $X$**, criando assim a ilusão de que "trocar aumenta o valor esperado".
+$$
+\begin{aligned}\mathbb E[Y\mid X=x]&=2xq(x)+\frac{x}{2}(1-q(x)),\\ g(x)&=\mathbb E[Y\mid X=x]-x=\frac{x}{2}(3q(x)-1).\end{aligned}
+$$
+
+Trocar aumenta o valor esperado condicional da quantia quando $q(x)>1/3$. Isso não significa ganho certo. Estas fórmulas usam massas de probabilidade discretas; não podem ser transferidas para densidades contínuas por simples substituição.
+
+## 5. Quando observar 10.000 ienes permite calcular uma esperança de 12.500
+
+Suponha que a menor quantia seja de 5.000 ou 10.000 ienes, com probabilidade 1/2 para cada uma. Escolhemos um envelope de forma equiprovável e observamos 10.000 ienes. Condicionada a essa observação, a outra quantia é de 5.000 ou 20.000 ienes, com probabilidade 1/2 para cada uma. Nesse modelo, o cálculo anterior é justificado.
+
+$$
+\mathbb E[Y\mid X=10000]=\frac12\cdot5000+\frac12\cdot20000=12500.
+$$
 
 ```mermaid
-pie title A Verdade sobre o Valor Esperado (Assumindo que a menor quantia é S)
-    "Valor esperado ao não trocar (1.5S)" : 50
-    "Valor esperado ao trocar (1.5S)" : 50
+flowchart TD
+    A["Menor quantia 5000 ou 10000 ienes: probabilidade 1/2 cada"] --> B["Escolhe um envelope de forma equiprovável"]
+    B --> C["Condiciona a observar 10000 ienes"]
+    C --> D["Menor quantia 5000: outra quantia 5000 ienes"]
+    C --> E["Menor quantia 10000: outra quantia 20000 ienes"]
+    D --> F["Probabilidades condicionais 1/2 cada: média da outra quantia 12500 ienes"]
+    E --> F
 ```
 
----
+O diagrama mostra apenas a parte condicionada a observar 10.000 ienes. Considerando todas as observações, sua quantia é de 5.000, 10.000 ou 20.000 ienes com probabilidades 1/4, 1/2 e 1/4. Os ganhos condicionais da troca são, respectivamente, 5.000, 2.500 e −10.000 ienes, e sua média é zero.
 
-## 4. E se você abrisse o envelope?
+$$
+\frac14\cdot5000+\frac12\cdot2500-\frac14\cdot10000=0.
+$$
 
-O paradoxo parece ter sido resolvido aqui. No entanto, um problema mais profundo nos aguarda.
+Um orçamento finito limita as quantias. Se o modelo admite uma quantia máxima observável, ela não pode ter uma correspondente que seja o dobro. Isso não significa que a probabilidade de obter o dobro sempre diminua com a quantia observada. Se as menores quantias 1, 2 e 4 têm probabilidades 49/100, 1/100 e 1/2, então $q(2)=1/50$, mas $q(4)=50/51$. A forma da distribuição a priori importa.
 
-O que aconteceria se você **olhasse o conteúdo do seu envelope A antes de trocar os envelopes**?
-Quando você abre o envelope A, ele contém **"10.000 ienes"**.
+## 6. Com esperança finita, não pode haver vantagem em toda observação
 
-Neste momento, há um valor fixo de $X = 10000$.
-O envelope B contém ou "5.000 ienes" ou "20.000 ienes".
-Se aplicarmos a primeira equação aqui, o que acontece?
+Se a menor quantia tem esperança finita, $g(X)$ é integrável. Pela [lei da esperança total](https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/c1ab69cb198badcebee42d5880784439_MIT6_436JF18_rec3.pdf),
 
-$$ E_{switch} = \frac{1}{2} \times 5000 + \frac{1}{2} \times 20000 = 2500 + 10000 = 12500 $$
+$$
+\mathbb E[g(X)]=\mathbb E[Y]-\mathbb E[X]=0.
+$$
 
-O valor esperado é de 12.500 ienes. É certamente maior do que os atuais 10.000 ienes.
-Além disso, como desta vez $X$ é uma "constante específica" de 10.000 ienes, o argumento anterior de "troca de variáveis" não funciona.
-Sendo assim, é **absolutamente mais vantajoso trocar**?
+Portanto, não é possível que o ganho condicional seja estritamente positivo quase certamente. Em um modelo discreto, trocar não pode ser estritamente vantajoso para toda observação de probabilidade positiva. A hipótese decisiva é a **esperança finita**, não apenas a soma das probabilidades ser um.
 
-### Refutação por Inferência Bayesiana: A Omissão da "Distribuição a Priori"
+## 7. Uma distribuição a priori própria com esperança infinita dá um contraexemplo
 
-Contra isso, os matemáticos trouxeram o conceito de **"distribuição a priori (probabilidade a priori) da quantia de dinheiro"**.
-A dúvida é se podemos realmente dizer que os 5.000 ienes e 20.000 ienes estão cada um presentes com uma probabilidade de $\frac{1}{2}$.
+Considere a distribuição discutida no [artigo de Broome](https://users.ox.ac.uk/~sfop0060/pdf/Two%20envelope%20paradox.pdf):
 
-Por exemplo, suponha que o orçamento do programa tenha um limite máximo de 100 milhões de ienes. Se você abrir o envelope A e encontrar "60 milhões de ienes", a probabilidade de o envelope B ter "120 milhões de ienes" é zero (pois excederia o orçamento). Em outras palavras, à medida que a quantia no envelope A aumenta, a probabilidade de o envelope B ser o "dobro" deve diminuir, e a probabilidade de ser a "metade" deve aumentar.
+$$
+\Pr(S=2^n)=\frac13\left(\frac23\right)^n,\qquad n=0,1,2,\ldots.
+$$
 
-Se assumirmos qualquer distribuição a priori $P(x)$ e calcularmos o valor esperado usando o [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/), foi provado matematicamente que **não existe uma distribuição mágica onde "sempre é vantajoso trocar" para qualquer quantia $X$, seja qual for a distribuição de probabilidade realista (cuja soma seja 1) que você usar**.
+$$
+\sum_{n=0}^{\infty}\frac13\left(\frac23\right)^n=1,\qquad \mathbb E[S]=\frac13\sum_{n=0}^{\infty}\left(\frac43\right)^n=\infty.
+$$
 
----
+Esta é uma **distribuição de probabilidade própria e normalizada**, não uma distribuição a priori uniforme imprópria. Para uma observação $x=2^n$ com $n\ge1$,
 
-## 5. A Armadilha do Infinito: Ligação com o Paradoxo de São Petersburgo
+$$
+q(x)=\frac25,\qquad \mathbb E[Y\mid X=x]=\frac25(2x)+\frac35\frac{x}{2}=\frac{11}{10}x>x.
+$$
 
-Existe apenas um caso onde "é mais vantajoso trocar para todos os $X$".
-Isso só acontece se assumirmos que o orçamento do programa é **infinito**, e criarmos uma "distribuição de probabilidade imprópria (uma distribuição cuja soma é infinita)", onde todos os valores (1 iene, 2 ienes, 4 ienes, 8 ienes... infinito) aparecem de forma igual.
+Na menor observação, 1, a outra quantia é necessariamente 2. Assim, para toda observação de probabilidade positiva, a esperança condicional da outra quantia supera a sua. Isso não faz afirmações sobre condicionar a quantias fora do suporte.
 
-No entanto, nenhuma emissora de TV no mundo real tem ativos infinitos.
-Esse erro causado pelo "valor esperado infinito" tem as mesmas raízes profundas do **[Paradoxo de São Petersburgo](/pt/p/st-petersburg-paradox/)** (o problema de quanto as pessoas estão dispostas a pagar por uma aposta com um valor esperado infinito).
+Mesmo assim, não se pode concluir que o ganho médio incondicional seja positivo. Seja $D=Y-X$, com parte positiva $D^+=\max(D,0)$ e parte negativa $D^-=\max(-D,0)$:
 
-## 6. Conclusão: O Terror da Probabilidade e do Valor Esperado
+$$
+\mathbb E[D^+]=\mathbb E[D^-]=\frac12\mathbb E[S]=\infty.
+$$
 
-Apesar de ser composto apenas de multiplicações e adições simples, o "Paradoxo dos Dois Envelopes" nos ensina as seguintes lições:
+As duas partes têm esperança infinita, logo a esperança da diferença com sinal [não está definida](https://www.stat.berkeley.edu/~wfithian/courses/stat210a/measure-theory-basics.html). A lei da esperança total continua válida para a quantia não negativa:
 
-1. **Erros causados pela ambiguidade das definições**: Se você não esclarecer o que as variáveis representam (se $X$ sempre aponta para a mesma quantia), a lógica pode entrar em colapso facilmente.
-2. **A ilusão de que "Nenhuma informação = 50% de probabilidade"**: A premissa "Eu não sei, então deve ser meio a meio" (O Princípio da Razão Insuficiente) às vezes leva a erros de cálculo fatais.
-3. **A dificuldade de lidar com o infinito**: Se você introduzir o conceito do "infinito" que não pode ser aplicado ao mundo real em suas equações matemáticas, resultados que desafiam o senso comum surgirão.
+$$
+\mathbb E[\mathbb E[Y\mid X]]=\mathbb E[Y]=\infty.
+$$
 
-Da próxima vez na vida que você pensar "A grama do vizinho é mais verde e é vantajoso trocar", lembre-se deste paradoxo. Talvez você apenas tenha trocado as variáveis em sua própria equação.
+O infinito não quebra a lei. O que não se pode fazer é aplicar, sem verificar as hipóteses, a subtração ou a linearidade do caso de esperança finita a uma diferença com sinal não integrável. Cálculos finitos condicionados a cada observação possível devem ser distinguidos da esperança incondicional da diferença. Ao truncar e renormalizar a distribuição a priori, resta uma perda na maior observação, e o ganho médio da troca volta a ser zero.
 
+## 8. Densidades contínuas exigem uma mudança de variável
+
+Se a menor quantia tem densidade contínua $f$, o ramo em que se escolhe a menor quantia contribui com densidade $f(x)/2$, enquanto o ramo da maior quantia contribui com $f(x/2)/4$. A segunda contribuição inclui tanto o fator da seleção equiprovável quanto o da mudança de variável $x=2s$.
+
+$$
+q(x)=\frac{f(x)}{f(x)+\tfrac12f(x/2)}.
+$$
+
+Essa fórmula condicional é usada onde a densidade da quantia observada é positiva. Uma variável contínua assumir um valor exato é um evento de probabilidade zero; não estamos dividindo probabilidades de eventos discretos. Broome também apresenta a densidade própria:
+
+$$
+f(s)=\frac{1}{(1+s)^2},\qquad s>0.
+$$
+
+Sua integral é um, mas a esperança da menor quantia é infinita. Para uma quantia observada positiva,
+
+$$
+\frac{f(x/2)}{f(x)}=\frac{4(1+x)^2}{(2+x)^2}<4
+\quad\Longrightarrow\quad q(x)>\frac13.
+$$
+
+Assim, a versão contínua da esperança condicional determinada por essas densidades supera a sua quantia em toda observação positiva. É outro contraexemplo à afirmação de que a normalização, por si só, obrigue a troca a ser desfavorável em alguma quantia.
+
+## 9. Razões de troca, decisões e infinito
+
+Para a razão antes de abrir $R=Y/X$, a escolha equiprovável dá uma razão de 2 ou de 1/2 com probabilidade 1/2 para cada caso. Sua esperança é realmente 5/4, assim como a da razão recíproca. Mas as razões de duas trocas sucessivas são recíprocas, não independentes.
+
+$$
+\mathbb E[R]=\mathbb E[1/R]=\frac54,\qquad \mathbb E[R(1/R)]=1\ne\frac{25}{16}=\mathbb E[R]\mathbb E[1/R].
+$$
+
+Voltar ao envelope original devolve a quantia original. Não se pode multiplicar sua quantia pela média incondicional da razão, nem multiplicar as médias das razões de duas trocas, sem justificativa. Ver as duas quantias também muda a informação: desaparece a incerteza entre metade e dobro.
+
+O problema está relacionado ao [paradoxo de São Petersburgo](https://kenji.blog/pt/p/st-petersburg-paradox/), que também envolve apostas com esperança infinita. Limites orçamentários reais, a geração das quantias, a utilidade e a atitude em relação ao risco podem mudar as decisões. Aqui comparamos dinheiro esperado, não uma regra universal de decisão ou lucro garantido.
+
+Probabilidades condicionais precisam de um modelo que gere as quantias, e normalizar não equivale a ter esperança finita. Com esperança finita, a simetria e a esperança total dão ganho médio nulo ao trocar. Com esperança infinita, há contraexemplos baseados em distribuições próprias: é preciso distinguir a esperança infinita de uma variável não negativa de uma diferença com sinal cuja esperança não está definida.
