@@ -163,6 +163,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/bayes-theorem/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/bayes-theorem/index.md",
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "translationHash": "a102101d186f37ab9a9e430e166e12d4d172dc0ea4790669ee4f92295f468790",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read original and revised Korean metadata, entire body, table and both Mermaid sources against corrected Japanese, including final particles,mutual-independence wording and probability-one limit clarification. Preserved all10revised sections,medical hypothetical example,four AI applications,two diagrams,frequentist/Bayesian comparison and conclusion. Corrected missing normalization,unconditional feature independence,all-ML-as-posterior-maximization,causal/minimum-trials/calibration guarantees and infinite-versus-finite wording. Retained original numerically correct16.7% result as1/6 and distinguished target-condition absence from general health."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "사전/사후 확률,우도(가능도)/주변 우도,정규화,확률밀도,모수/최빈값/MAP/사후 예측,유병률/민감도/특이도/위양성률/양성예측도/전체 정확도,클래스를 조건으로 한 상호 독립/쌍별 독립,DAG/인과 가정,대리 모델/획득 함수/탐색과 활용,가중치 불확실성/확률 보정,거의 확실한 수렴을 대조했습니다. 수렴할 확률이1이라는 뜻과 유한 횟수의 정확한 절반을 구분하고,수식 뒤 조사와 자동 탐색 문장을 다듬었습니다. 기존 분류와 태그는 유지했습니다."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually checked all22TeX and assumptions:positiveB and extra positiveA only for reverse conditioning,joint form with zeroA,positive finite normalizer,MAP maximum existence,uniform-prior ordered1,1,0posterior12theta^2(1-theta),mode2/3 versus predictive3/5,medical counts99/1/495/9405 with1/6PPV/95.04%accuracy,conditional mutual-independence product,DAG local CPDs and independent roots,continuous-weight predictive average for discrete classes,IIDfair-coin almost-sure limit explicitly explained as probability1ofconvergence. Exact source/decodedHTML passed. Shared auxiliary run once:1260positiveB tables,1230reverse cases,30zeroA cases,36undefinedB exclusions and128toyDAG assignments with normalization/marginal/posterior checks. Earlier source-audit arithmetic remains distinct historical evidence,not newly rerun or universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised Korean contain two Mermaid blocks and0executable article programs. Read complete localized labels and both graph sources;9and7edges match Japanese topology and exact decodedHTML. Second graph separates6probabilistic edges in the model from1outside dotted inference annotation,not an extra random variable. Auxiliary Fraction checks are not article-code execution,clinical measurement,BNN training or BO optimization. No browser visual/KaTeX/Mermaid runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Nine exact primary references and Korean internal LLN/two-envelope URLs checked in source/generatedHTML;internal targets exist in28-bundle preview. Source-reading ranges/failures remain documented separately,not full-paper certification. Preserved originalSep20date,slug,heroimage bytes,categories/Korean tags;Oct30lastmod/math/Mermaid preferences do not imply a previously broken renderer.14hreflang/13sidebar targets exact. Current1609multilingual pages/2933HTML41XMLHTTPS passed. Existing17unit tests belong to previousJAENstage and were not rerun here. Same isolated-preview missing-page/layout/PortugueseUI warnings retained. Publication pending."
+        }
+      },
+      "summary": "Full Korean comparison clarifying conditional mutual independence, medical denominators, posterior prediction and almost-sure convergence.",
+      "languageSpecificFindings": "개정 전후 전문과 두 그림을 일본어 원문에 대조했습니다. 우도,모수,양성예측도와 민감도,상호 독립과 쌍별 독립,획득 함수와 확률 보정을 구분했습니다. 거의 확실한 수렴을 앞면 비율이 수렴할 확률1로 설명하고 유한 회의 절반 보장과 분리했습니다. 의료 가상 예시와 네 가지AI응용,철학적 비교를 유지했습니다.",
+      "validation": "docs/translation-review/batch-026-ko-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "7other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,clinical evidence,model training or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -317,6 +358,44 @@
       "unreviewedTranslations": 12716,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 8,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "ko"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "validation": "docs/translation-review/batch-026-ko-validation.json",
+      "checks": "docs/translation-review/batch-026-ko-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-026-ko-ledger-validation.json",
+      "texEach": 22,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "jointFormulaTables": 1260,
+        "reverseFormulaTables": 1230,
+        "zeroPriorAWithPositiveB": 30,
+        "undefinedBExcluded": 36,
+        "toyDagAssignments": 128,
+        "toyDagTotalMass": "1",
+        "toyDagPrior": "151/600",
+        "toyDagPosterior": "14949/17194",
+        "scope": "Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 317,
+      "unreviewedTranslations": 12715,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 7,
       "publicationPending": true
     }
   ],

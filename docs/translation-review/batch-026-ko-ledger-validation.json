@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T19:00:32.398084+09:00",
+  "recordStdout": "Recorded ai review: post/bayes-theorem/index.ko.md\n",
+  "checkStdout": "{\"current\": 317, \"unreviewed\": 12715}\n",
+  "current": 317,
+  "unreviewed": 12715,
+  "humanReviews": 0,
+  "scope": "One fully compared translation added; existing review entries preserved;publication pending."
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "draftedAt": "2026-10-30T18:57:50.343005+09:00",
+  "path": "content/post/bayes-theorem/index.ko.md",
+  "originalSha256": "59038043ba79b19025f176872f6d07f23e89b404de54d377fd3e9e37f6d0d98e",
+  "draftSha256": "6373a938ab3cbc84893817859c950d46bed7aa4dd8c520fb178314837c0091ea",
+  "commonTeX": 22,
+  "draftOnly": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original Korean full metadata/body/two diagrams read. Complete rewrite against corrected Japanese;pending reread/HTML checks and ledger. Other7translations not newly reviewed."
+}
