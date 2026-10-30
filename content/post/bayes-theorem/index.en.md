@@ -1,6 +1,6 @@
 ---
-title: "Bayes' Theorem: Updating Probability with \"New Evidence\", the Core of AI and Statistics"
-description: "An in-depth explanation of how Bayes' Theorem updates probabilities based on new evidence, its mathematical background, and its applications in AI and machine learning."
+title: "Bayes' Theorem: Conditional Probability, a Medical-Test Example, and Four AI Applications"
+description: "Understand normalization, sensitivity versus positive predictive value, MAP versus posterior prediction, and the assumptions behind four Bayesian applications in AI."
 slug: "bayes-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
@@ -11,147 +11,206 @@ tags:
   - "Probability"
   - "AI"
   - "Statistics"
+lastmod: "2026-10-30"
+math: true
+mermaid: true
 ---
 
-## Introduction: "Updating Beliefs" in an Uncertain World
+## 1. Updating predictions in an uncertain world
 
-The world we live in is full of uncertainty. From the probability of rain tomorrow to the likelihood that a new drug will be effective against a specific disease, or the chance that a received email is spam, we constantly make decisions based on incomplete information. A powerful framework for mathematically handling this uncertainty and **updating our predictions every time new information (evidence) is obtained** is [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/).
+Tomorrow's rain, a drug's effect, or whether an email is spam: we make judgments from incomplete information. **Bayes' theorem connects a probability conditional on evidence with a conditional probability in the reverse direction.** Given a model and prior information, it provides a way to update probabilities after a new observation.
 
-Discovered by Thomas Bayes, an 18th-century English minister and mathematician, this theorem has become a fundamental theory underlying modern AI (Artificial Intelligence) and machine learning. In this article, we will delve deep into everything from the basic mathematics of [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/) to counter-intuitive probability paradoxes, and how it is applied in modern technology.
+The theorem is named after the eighteenth-century minister and mathematician Thomas Bayes. [Richard Price's letter communicating Bayes' posthumous essay](https://bayes.wustl.edu/Manual/an.essay.pdf) records that it was read at the Royal Society on December 23, 1763. Modern Bayesian inference also includes developments by many later researchers. We will cover the formula, a testing example, four AI applications, and different interpretations of probability.
 
-## Mathematical Formulation of [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/)
+## 2. The formula and the role of normalization
 
-[Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/) is a theorem used to calculate the probability $P(A|B)$ of an event $A$ under the condition that an event $B$ has occurred, based on the inverse conditional probability $P(B|A)$ and other factors. Although the formula is extremely simple, its implications are profound.
-
-$$
-P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
-$$
-
-Each term in this equation is given a special name from the perspective of statistical "belief updating".
-
-- **Prior Probability** $P(A)$ : The probability of event $A$ occurring before considering the new evidence $B$. Our initial belief.
-- **Likelihood** $P(B|A)$ : The probability of observing evidence $B$ assuming that event $A$ is true.
-- **Marginal Likelihood / Evidence** $P(B)$ : The overall probability of observing evidence $B$ regardless of whether event $A$ is true or false. It acts as a normalizing constant.
-- **Posterior Probability** $P(A|B)$ : The probability of event $A$ after considering the new evidence $B$. Our updated belief.
-
-In short, [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/) can be described as a mathematical formula for the process of **updating our belief to a "posterior probability" by multiplying the "prior probability" by "how well the new evidence fits (likelihood)"**.
-
-## Deviation from Intuition: The "False Positive" Paradox (Medical Testing Example)
-
-Human intuition often makes mistakes in probability calculations. As a classic example to understand the power of [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/), let's consider disease testing (medical screening).
-
-Suppose there is a rare disease, and $1\%$ ($0.01$) of the total population is infected with this disease (this is the prior probability $P(\text{Disease})$).
-The test to detect this disease is highly accurate: if a person with the disease takes the test, they are judged "Positive" with a $99\%$ probability (True Positive Rate: Likelihood $P(\text{Positive}|\text{Disease})$).
-However, this test has a slight flaw: even if a healthy person without the disease takes it, they are incorrectly judged "Positive" with a $5\%$ probability (False Positive Rate $P(\text{Positive}|\text{Healthy})$).
-
-Now, suppose you take this test at random and get a **"Positive"** result. What is the probability that you actually have this disease?
-
-Many people tend to think, "Since the test is $99\%$ accurate, there is a $90\%$ or higher chance that I have the disease." However, let's calculate it using [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/).
-
-We want to find $P(\text{Disease}|\text{Positive})$.
-
-1. **Prior Probability** $P(\text{Disease}) = 0.01$
-2. **Likelihood** $P(\text{Positive}|\text{Disease}) = 0.99$
-3. **Probability of Healthy Person** $P(\text{Healthy}) = 1 - 0.01 = 0.99$
-4. **False Positive Probability** $P(\text{Positive}|\text{Healthy}) = 0.05$
-
-First, we calculate the overall probability of a positive test result $P(\text{Positive})$ (Marginal Likelihood). This is the sum of "testing positive when sick" and "testing positive when healthy".
+For an event B with $P(B)>0$, the definition of conditional probability gives
 
 $$
-\begin{aligned}
-P(\text{Positive}) &= P(\text{Positive}|\text{Disease}) \cdot P(\text{Disease}) + P(\text{Positive}|\text{Healthy}) \cdot P(\text{Healthy}) \\
-&= (0.99 \times 0.01) + (0.05 \times 0.99) \\
-&= 0.0099 + 0.0495 \\
-&= 0.0594
-\end{aligned}
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}
 $$
 
-Next, we apply [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/).
+If $P(A)>0$ as well, so that the reverse conditional probability is defined, decomposing the joint probability gives
 
 $$
-\begin{aligned}
-P(\text{Disease}|\text{Positive}) &= \frac{P(\text{Positive}|\text{Disease}) \cdot P(\text{Disease})}{P(\text{Positive})} \\
-&= \frac{0.0099}{0.0594} \\
-&\approx 0.1667
-\end{aligned}
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}
 $$
 
-Surprisingly, even with a positive test result, **the probability that you actually have the disease is only about $16.7\%$**. The remaining $83.3\%$ are cases of "healthy people incorrectly judged as positive" (false positives). This is because the original prevalence of the disease ($1\%$) is very low, making the "false positives from the large healthy population" overwhelmingly outnumber the small number of "truly sick people".
+When B is new evidence, the terms have the following roles.
 
-In this way, [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/) corrects the mathematical traps our intuition easily falls into and serves as a powerful tool for making calm judgments.
+- **Prior probability** $P(A)$: the probability of A before accounting for B.
+- **Likelihood** $P(B\mid A)$: the probability of observing B under A.
+- **Evidence / marginal likelihood** $P(B)$: the overall probability of observing B.
+- **Posterior probability** $P(A\mid B)$: the probability of A after accounting for B.
+
+Prior times likelihood is the numerator. **To obtain the posterior probability, divide by the evidence to normalize it.** Even if A has probability zero, the first formula using the joint probability remains valid when B has positive probability. Do not substitute into the second formula when its reverse conditional probability is undefined.
+
+## 3. Likelihood, MAP, and posterior prediction
+
+Let θ be an unknown parameter and d the observed data. [Updating a prior density using a likelihood](https://web.stanford.edu/class/stats200/Lecture20.pdf) gives
+
+$$
+\pi(\theta\mid d)=\frac{L(\theta;d)\pi(\theta)}{Z(d)},\qquad Z(d)=\int L(t;d)\pi(t)\,dt
+$$
+
+Here we assume $0<Z(d)<\infty$. The likelihood L is a function of θ with the observed d held fixed. It is not a probability distribution over θ. For continuous data, we use densities, whose values may exceed one. A particular observation having probability zero does not by itself prevent density-based updating.
+
+When a maximum of the posterior density exists, **maximum a posteriori (MAP) estimation** selects such a point:
+
+$$
+\hat\theta_{\mathrm{MAP}}\in\arg\max_\theta\pi(\theta\mid d)
+$$
+
+In contrast, the **posterior predictive** probability for a future binary observation averages the predictions over the posterior distribution:
+
+$$
+\Pr(Y_{\mathrm{new}}=1\mid d)=\int\Pr(Y_{\mathrm{new}}=1\mid\theta,d)\pi(\theta\mid d)\,d\theta
+$$
+
+For example, put a uniform prior between zero and one on a coin's heads probability θ. Given θ, assume independent tosses and observe the ordered outcomes 1,1,0, where 1 means heads. Then
+
+$$
+\pi(\theta\mid 1,1,0)=12\theta^2(1-\theta),\qquad 0<\theta<1
+$$
+
+and therefore
+
+$$
+\hat\theta_{\mathrm{MAP}}=\frac23,\qquad\Pr(Y_{\mathrm{new}}=1\mid1,1,0)=\frac35
+$$
+
+Substituting the mode and averaging over a distribution give different answers. Selecting a class, estimating parameters by MAP, and predicting future observations cannot all be described as “maximizing the posterior probability.”
+
+## 4. A hypothetical medical test: 99% sensitivity, about 16.7% PPV
+
+This is **a hypothetical calculation, not the measured performance of a real test**. Let D mean having the target condition and T mean a positive test. Suppose prevalence in the target population is 1%, sensitivity is 99%, and the false-positive rate is 5%.
+
+$$
+P(D)=0.01,\qquad P(T\mid D)=0.99,\qquad P(T\mid D^c)=0.05
+$$
+
+The complement of D means not having the target condition; it does not mean being healthy in every respect. Adding the two possible sources of positive results gives
+
+$$
+P(T)=P(T\mid D)P(D)+P(T\mid D^c)P(D^c)=0.99\cdot0.01+0.05\cdot0.99=0.0594
+$$
+
+Consequently, the probability of the target condition given a positive result is
+
+$$
+P(D\mid T)=\frac{0.0099}{0.0594}=\frac{99}{594}=\frac16\approx0.1667
+$$
+
+The result is about 16.7%; the exact value is 1/6. The remaining 5/6, about 83.3% of positive results, are false positives without the target condition. At low prevalence, false positives from the much larger group without the condition can outnumber true positives.
+
+To express these proportions as counts, construct a fictional population of 10,000 with exactly these ratios. Counts would vary in an actual sample of 10,000.
+
+| Test result | Target condition present | Target condition absent | Total |
+| --- | ---: | ---: | ---: |
+| Positive | 99 (true positives) | 495 (false positives) | 594 |
+| Negative | 1 (false negative) | 9,405 (true negatives) | 9,406 |
+| Total | 100 | 9,900 | 10,000 |
 
 ```mermaid
 flowchart TD
-    Population["Total Population (10,000 people)"] --> Disease["With Disease (100 people, 1%)"]
-    Population --> Healthy["Healthy (9,900 people, 99%)"]
-    
-    Disease --> TruePositive["True Positive: Positive Result (99 people, 99%)"]
-    Disease --> FalseNegative["False Negative: Negative Result (1 person, 1%)"]
-    
-    Healthy --> FalsePositive["False Positive: Positive Result (495 people, 5%)"]
-    Healthy --> TrueNegative["True Negative: Negative Result (9,405 people, 95%)"]
-
-    TruePositive -.->|"Total Positives (594 people)"| AllPositives["Test Positive"]
-    FalsePositive -.->|"Total Positives (594 people)"| AllPositives
-    
-    AllPositives -->|"Probability of actually having disease?"| Posterior["Posterior Probability: 99 / 594 = 16.7%"]
+    Population["Fictional population: 10,000"] --> Disease["Target condition present: 100"]
+    Population --> NoDisease["Target condition absent: 9,900"]
+    Disease --> TP["True positives: 99 (99% of those with condition)"]
+    Disease --> FN["False negatives: 1 (1% of those with condition)"]
+    NoDisease --> FP["False positives: 495 (5% of those without condition)"]
+    NoDisease --> TN["True negatives: 9,405 (95% of those without condition)"]
+    TP -.-> AllPositive["Total positive results: 594"]
+    FP -.-> AllPositive
+    AllPositive --> PPV["Positive predictive value: 99/594 = 1/6 ≈ 16.7%"]
 ```
 
-## Application of [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/) in AI and Machine Learning
+**99% sensitivity does not mean 99% positive predictive value or 99% overall accuracy.** Overall accuracy in this table is
 
-[Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/) goes beyond being just a probability puzzle; it plays a crucial role in modern data science and Artificial Intelligence (AI). This is because the very process of learning patterns from large amounts of data and making predictions on unknown data can be formulated as "maximizing the posterior probability".
+$$
+\frac{99+9405}{10000}=0.9504=95.04\%
+$$
 
-### 1. Naive Bayes Classifier
+The [definitions of sensitivity, specificity, and positive predictive value](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda) use different denominators. The intuition “99% means almost certainly affected if positive” confuses which group conditions the proportion. Applying the calculation to real results requires prevalence and test characteristics appropriate to that population.
 
-The "Naive Bayes Classifier", often used for spam email filtering, is one of the most direct applications of [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/). This algorithm treats the words contained in an email (such as "free", "winner", "password") as evidence (features) and calculates the posterior probability of whether the email is spam.
+## 5. AI application 1: naive Bayes classification
 
-It is called "naive" because it places a strong assumption that each feature (word) occurs independently of the others. In reality, words are related, but despite this simplistic assumption, Naive Bayes exhibits very high accuracy and fast processing speeds in tasks like text classification.
+For spam detection, features X, such as whether particular words occur, inform the posterior probability of class C. The basic naive Bayes assumption is **conditional independence given the class**, not unconditional independence of words. With three or more features, independence of every pair alone is also insufficient.
 
-### 2. Bayesian Networks
+For discrete features, suppose the observed x has positive marginal probability, the classes have positive prior probabilities, and the features are jointly independent within each class. Then
 
-In systems where multiple variables are intricately intertwined, Bayesian Networks express the dependencies between variables as a graph structure (Directed Acyclic [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) to perform reasoning under uncertainty.
+$$
+\Pr(C=c\mid X=x)\propto\Pr(C=c)\prod_{j=1}^{m}\Pr(X_j=x_j\mid C=c)
+$$
 
-For instance, in medical diagnostic AI, the probabilistic influence from "patient's age", "lifestyle habits", and "genetic factors" on a "specific disease" is modeled, and the influence from that disease to "appearing symptoms" is linked. Every time a new symptom (evidence) is input, the probabilities across the entire network are updated according to [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/), inferring the most likely disease name. This is utilized in a wide variety of fields, such as situation judgment in self-driving cars and financial market prediction.
+If all misclassifications have the same cost, select a class with the largest posterior probability. This classification decision is different from MAP estimation of the model parameters themselves.
+
+Actual words are related, so independence is an approximation. Simplicity and computational speed are advantages, but superior accuracy or well-calibrated probabilities are not guaranteed. The [official scikit-learn discussion](https://scikit-learn.org/stable/modules/naive_bayes.html) also distinguishes classification performance from the quality of probability estimates. Concrete generative models differ between variants, such as Bernoulli models for word presence and multinomial models for word counts.
+
+## 6. AI application 2: Bayesian networks
+
+A Bayesian network represents a joint distribution using a directed acyclic graph (DAG) and a local conditional distribution for each node. In a finite discrete model, with pa denoting parent-node values, it factorizes as
+
+$$
+\Pr(V_1=v_1,\ldots,V_n=v_n)=\prod_{i=1}^{n}\Pr(V_i=v_i\mid\mathrm{pa}_i)
+$$
+
+[Representing a distribution with a DAG](https://ermongroup.github.io/cs228-notes/representation/directed/) also specifies conditional independence assumptions.
+
+The following is a fictional model connecting age, lifestyle, genetic factors, a condition, symptoms, and a test. It assumes the three factors without parents are independent. Solid arrows specify parent relationships in local distributions; they do not make this a validated diagram of real causal relationships. **Causal claims require additional causal assumptions**, beyond a model of statistical dependencies ([Pearl's distinction](https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf)).
 
 ```mermaid
 flowchart LR
-    Age["Age"] --> Disease["Specific Disease"]
-    Lifestyle["Lifestyle Habits"] --> Disease
-    Genes["Genetic Factors"] --> Disease
-    
-    Disease --> SymptomA["Symptom A"]
-    Disease --> SymptomB["Symptom B"]
-    Disease --> TestResult["Test Result"]
-    
-    TestResult -.->|"Observed as new evidence"| Update["Probability Update (Inference)"]
+    subgraph Model["Fictional probability model"]
+        Age["Age"] --> Disease["Target condition"]
+        Lifestyle["Lifestyle"] --> Disease
+        Genes["Genetic factors"] --> Disease
+        Disease --> SymptomA["Symptom A"]
+        Disease --> SymptomB["Symptom B"]
+        Disease --> TestResult["Test result"]
+    end
+    TestResult -.->|"Use the observation"| Inference["Inference operation: compute posterior"]
 ```
 
-### 3. Bayesian Optimization
+The annotation reached by the dotted arrow is an inference operation, not an additional random variable in the joint distribution. Computing posterior marginals for a condition or other variables is also different from relearning every parameter. Such models provide a framework for diagnosis, situation estimation, and financial prediction, but their validity for a particular use depends on the structure and data.
 
-In building machine learning models, the task of finding the optimal combination of hyperparameters (parameters that humans must set, such as learning rate or network depth) is very time-consuming. It is unrealistic to try all combinations.
+## 7. AI application 3: Bayesian optimization
 
-In Bayesian Optimization, the relationship between "parameter settings" and "model performance" is expressed as a probabilistic model (such as a Gaussian Process). Based on past trial settings and results (evidence), it infers the most promising parameter setting to look at next. This makes it possible to build high-performance AI models with a minimum number of trials.
+Tuning hyperparameters such as a learning rate or network depth may require repeatedly training and evaluating a model. Settings need not be selected manually; automated search is possible.
 
-### 4. Bayesian Deep Learning
+Bayesian optimization represents the relationship between settings and performance with a probabilistic surrogate, such as a Gaussian process, and updates it with evaluation results. An **acquisition function**, such as expected improvement, selects the next candidate. Both exploitation of promising regions and exploration of uncertain regions matter. [Snoek and colleagues](https://arxiv.org/abs/1206.2944) study the tuning of machine-learning algorithms.
 
-An approach that has been gaining attention recently is the fusion of Deep Learning and Bayesian statistics. A standard neural network outputs its prediction as a single deterministic value, but it does not tell you "how confident it is".
+The aim is to allocate expensive evaluations efficiently. It does not guarantee the optimum in the fewest trials for every objective function, budget, or noise setting.
 
-In Bayesian Deep Learning, the network weights are treated as "probability distributions" rather than fixed numbers. This allows the AI to output **"uncertainty (lack of confidence)"** along with its predictions. For example, a medical AI could warn, "There is a 90% chance of cancer. However, the uncertainty of this prediction itself is very high, so confirmation by a human doctor is required." This is an extremely important technology for increasing the safety and reliability of AI.
+## 8. AI application 4: Bayesian deep learning
 
-## Philosophical Perspective: Frequentism vs. Bayesianism
+An ordinary neural network can output class probabilities, for example through softmax. Computing with fixed weights is compatible with outputting a probability distribution.
 
-In the history of statistics, two major schools of thought have clashed over "what probability is". These are **Frequentism** and **Bayesianism**.
+A Bayesian treatment can put a prior density on continuous weights w and obtain their posterior density given training data d. Under the usual conditional independence model, the posterior predictive probability for a discrete class y is
 
-In Frequentism, probability is defined as "the relative frequency with which an event occurs when the same trial is repeated infinitely". Saying the probability of a coin landing heads is $50\%$ means that if tossed infinitely, exactly half will be heads. In this stance, a true, fixed probability exists for the event itself, leaving no room for the observer to hold a "belief".
+$$
+\Pr(y\mid x,d)=\int\Pr(y\mid x,w)\pi(w\mid d)\,dw
+$$
 
-On the other hand, in Bayesianism, probability is treated as **"the observer's degree of belief (subjective probability)"**. A $70\%$ probability of rain tomorrow represents the meteorological agency's "degree of confidence" based on available weather data (evidence). If new data (e.g., a sudden drop in atmospheric pressure) is observed, that confidence is updated according to [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/).
+[Blundell and colleagues' original paper](https://arxiv.org/abs/1505.05424) approximates inference that is difficult to perform exactly for practically sized networks, using a variational distribution. Predictions can reflect uncertainty about weights, but depend on the prior, likelihood, and approximation method.
 
-Frequentism dominated much of the 20th century, but in the modern era, where computer processing power has drastically improved, the flexible and practical approach of Bayesianism has been re-evaluated, becoming one of the driving forces behind the AI boom.
+An output such as “90% probability of a class” alone does not convey all uncertainty about the model. Calling a method Bayesian does not guarantee calibrated predictions in medical AI or other applications. [Research on uncertainty under dataset shift](https://arxiv.org/abs/1906.02530) also motivates evaluating differences between training and deployment data.
 
-## Conclusion: Keep Learning and Updating
+## 9. Comparing frequentist and Bayesian inference
 
-[Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/) provides a kind of thinking framework that goes beyond a mere mathematical formula.
+Both approaches use probability theory; Bayes' theorem itself is shared mathematics. In statistical inference, frequentist methods treat unknown parameters as fixed and emphasize properties of estimation or testing procedures under repeated sampling. Bayesian inference represents uncertainty about unknown quantities with a prior distribution and uses a posterior after observing data. Assigning a distribution does not mean a physical parameter changes after every observation.
 
-We all have "prior probabilities (initial beliefs)" based on past experiences and biases. This is not necessarily a bad thing; it's a starting point for efficiently perceiving the world. However, what is important is to have **the flexibility to gracefully update one's beliefs (update to posterior probability), just like [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/), rather than turning a blind eye when faced with new facts and evidence**.
+For independent, identically distributed fair coin tosses, with heads represented by 1 and tails by 0, the [law of large numbers](https://kenji.blog/en/p/law-of-large-numbers/) gives the limit
 
-Just as AI becomes smarter by consuming data, we humans should also incorporate new information as evidence and constantly update ourselves, reaching a more accurate understanding of the world. Perhaps [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/) can be said to be a mathematical representation of the very "essence of intelligence".
+$$
+\frac1n\sum_{i=1}^{n}X_i\xrightarrow{\mathrm{a.s.}}\frac12
+$$
+
+It does not guarantee exactly half heads in a finite number of tosses.
+
+Bayesian priors may encode expertise or use choices such as weakly informative distributions. It is misleading either to dismiss all priors as arbitrary preferences or to assume a prior automatically makes an analysis objective. A 70% forecast of rain tomorrow can be read as a probability based on a model and information, whose calibration can be evaluated. That number alone identifies neither a particular statistical school nor an individual forecaster's personal confidence.
+
+## 10. Update the evidence and examine the assumptions
+
+Bayesian updating combines prior information and evidence coherently. In sequential updating, the previous posterior becomes the next prior, using the conditional likelihood of the new data. Do not multiply an already-used observation in again as independent new evidence.
+
+The formula alone cannot repair a wrong model or biased data. Examining what was observed, and which population or distribution was assumed, is part of learning and revising our understanding. The [two-envelope paradox](https://kenji.blog/en/p/two-envelopes-paradox/) is another example of why conditional probabilities must be calculated from an explicit model.

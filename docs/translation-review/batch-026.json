@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "reviews": {
+    "post/bayes-theorem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/bayes-theorem/index.md",
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "translationHash": "efa0771d54ff11c020c56ac01a94204d3bf4c76a918958fb4478f98f7819abeb",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read original JA/EN metadata, complete bodies and both diagrams, then rewrote and reread both complete on-disk revisions. Preserved probability updating/history, theorem and definitions, hypothetical medical example, both diagrams, all four AI applications, frequentist/Bayesian comparison and learning/model-checking conclusion. Corrected missing normalization/domain conditions, unconditional feature independence, all-ML-as-posterior-maximization, automatic causal/optimality/calibration claims and finite-versus-limit wording. The original approximately16.7% medical answer was already numerically correct; retained its exact1/6 value."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared prior/posterior, likelihood/evidence and mass/density; parameter MAP versus class choice versus posterior predictive averaging; sensitivity/specificity/false-positive rate/positive predictive value/overall accuracy; target-condition absence versus universal health; conditional joint independence versus marginal/pairwise independence; DAG factorization versus causal interpretation; exploration/exploitation/acquisition; fixed-weight probability outputs versus posterior uncertainty and calibration. Checked English wording and matching localized labels throughout, including all10sections, tables and both diagrams."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually checked all22TeX expressions per version:positiveB and additional positiveA for reverse conditioning,joint-probability zeroA case,positive finite evidence integral,MAP existence,uniform-prior ordered1,1,0posterior12theta^2(1-theta),mode2/3 versus predictive3/5,medical counts99/1/495/9405 and1/6PPV/95.04%accuracy,conditional-independence product,DAG local-CPD product and independent roots,continuous-weight averaging for discrete output classes,IIDfair-coin almost-sure limit. Exact source/decodedHTML math checked. Shared auxiliary run once:1260positiveB tables including30zeroA cases,1230reverse formulas,36undefinedB exclusions;128toyDAG assignments normalized to1 with independent marginal/posterior comparison. Original pre-audit medical/XOR/coin/polynomial calculations retained as earlier evidence, not claimed as rerun. Finite enumeration is not a universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised JA/EN contain0executable article programs. Read both complete localized Mermaid sources; checked matching9and7edge topologies and exact decodedHTML retention. Second diagram has6probabilistic edges inside the model and1dotted inference annotation outside, not an additional random variable. Auxiliary Fraction calculations are separate Python3.12.14 checks, not article-code execution, clinical validation, optimization or BNN training. No browser visual/KaTeX/Mermaid runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Nine exact primary-source reference links and two matching-language internal LLN/two-envelope links checked in source/generatedHTML; internal targets exist in28-bundle preview. Reading ranges and failures recorded in source-notes:scoped Stanford/Pearl/BO/BNN/CS228/FDA/sklearn passages,history PDF opening only,publisher403,Ovadia abstract only; no full-paper certification. OriginalSep20date/slug/hero bytes/categories/tags preserved;Oct30lastmod and explicit math/Mermaid preferences added without claiming original runtime was broken.14hreflang/13sidebar targets exact.1609multilingual pages,2933HTML/41XMLHTTPS and17existing tests passed; fixture human records are simulated. Pre-ledger preview warnings retained. This Bayes revision has not been published."
+        }
+      },
+      "summary": "Full English comparison against corrected Japanese Bayes article, preserving all four AI applications while distinguishing normalization, conditioning, prediction, causal assumptions and calibration.",
+      "validation": "docs/translation-review/batch-026-ja-en-draft-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other11translations have not completed full-body review or revision.",
+        "Draft-named validation is an earlier source/HTML check of the exact unchanged hashes; complete prose review followed it. No validator alone certifies prose.",
+        "Finite auxiliary arithmetic supplements analytic review;not universal proof or executable article code.",
+        "No browser visual/runtime,clinical,model-training or full-primary-paper certification.",
+        "Publication/live checks for batch026 pending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "ja",
+        "en"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "validation": "docs/translation-review/batch-026-ja-en-draft-validation.json",
+      "checks": "docs/translation-review/batch-026-ja-en-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-026-en-ledger-validation.json",
+      "texEach": 22,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "jointFormulaTables": 1260,
+        "reverseFormulaTables": 1230,
+        "zeroPriorAWithPositiveB": 30,
+        "undefinedBExcluded": 36,
+        "toyDagAssignments": 128,
+        "toyDagTotalMass": "1",
+        "toyDagPrior": "151/600",
+        "toyDagPosterior": "14949/17194",
+        "scope": "Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTests": 17,
+      "reviewedTranslationsTotal": 313,
+      "unreviewedTranslations": 12719,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    }
+  ],
+  "sourceAudit": "docs/translation-review/batch-026-source-audit.json",
+  "sourceNotes": "docs/translation-review/batch-026-source-notes.md"
+}

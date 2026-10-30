@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "draftedAt": "2026-10-30T09:48:07.933475+09:00",
+  "draftOnly": true,
+  "reviewedTranslationsAdded": 0,
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/bayes-theorem/index.md",
+      "originalSha256": "db5ae2838718f0a6bb5c569cb38609424d9c893610b066362f34866b6ea24c2f",
+      "draftSha256": "d32ce10d2943f97ee785828d1056c89eb42332ca194c55655388413f3231c023",
+      "commonTeX": 22,
+      "h2": 10,
+      "diagrams": 2
+    },
+    {
+      "language": "en",
+      "path": "content/post/bayes-theorem/index.en.md",
+      "originalSha256": "90f954e6705a36b0b53cccf1042a204023daa1b5f1a3986cad44894a4ebfecea",
+      "draftSha256": "7ac360562285652cdf713cdf8ced1887c28dbf65bb3aef8eb9c596814ec2ec66",
+      "commonTeX": 22,
+      "h2": 10,
+      "diagrams": 2
+    }
+  ],
+  "hashNormalization": "UTF-8 without BOM; CRLF normalized to LF",
+  "scope": "JA/EN full-body drafts after reading both originals and scoped primary sources. Not final proofreading, rendered HTML verification, ledger certification, or publication. Other11translations untouched. Flags are explicit preferences, not evidence of a previously broken renderer."
+}
