@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "draftedAt": "2026-10-30T20:07:18.174877+09:00",
+  "drafts": [
+    {
+      "language": "ja",
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.md",
+      "originalSha256": "baa4ab8ca9312636b1f1c1ca1f08f333804ed1ddab9a33b69d3d7d3792aa64b4",
+      "draftSha256": "7aa83f78103458e7744e6bea2aeea10f059500755b12d9c167bea7577877324b"
+    },
+    {
+      "language": "en",
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.en.md",
+      "originalSha256": "8cfeafbe665fe487731f39de08c44d1c07e18dc58010a47cf61f0ade2bd77494",
+      "draftSha256": "8a32a6cef56bd8538c5ad2ef1a5e91cf122c3dbe1f2c671f3f95d24d8e0c54c0"
+    }
+  ],
+  "commonTeX": 16,
+  "diagramsEach": 1,
+  "diagramEdges": 8,
+  "reviewedTranslationsAdded": 0,
+  "draftOnly": true,
+  "scope": "Complete JAENoriginal bodies/diagram read before rewriting. New7sections preserve all themes with explicit assumptions and date correction. Pending full revised-body reread/checks;other11bodies not newly read. No ledger/human/browser/publication certification."
+}

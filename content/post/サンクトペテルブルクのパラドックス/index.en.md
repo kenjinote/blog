@@ -1,9 +1,7 @@
 ---
-title: 'St. Petersburg Paradox: How Much Would You Pay for a Gamble with "Infinite" Expected Value?'
-date: "2026-09-24T19:44:38+09:00"
+title: "St. Petersburg paradox: infinite expectation, utility, and the entry fee"
 slug: 'st-petersburg-paradox'
-description: 'A gamble that is mathematically supposed to make you "infinite money". Yet, in reality, nobody would pay a large sum for it. We explain the historical paradox that highlighted the gap between probability theory and human psychology (utility), laying the foundation of modern economics.'
-date: '2026-09-10T05:00:00+09:00'
+description: "A prize finite with probability 1 can have infinite expectation. Distinguish logarithmic certainty equivalents from entry fees, include wealth, and examine prize caps and the history."
 image: 'img/st_petersburg.jpg'
 math: true
 mermaid: true
@@ -13,137 +11,184 @@ tags:
   - 'Expected Value'
   - 'Economics'
   - 'Bernoulli'
+date: "2026-09-10T05:00:00+09:00"
+lastmod: "2026-10-30"
 ---
 
-## 1. The Dream Gamble with "Infinite" Expected Value
+## 1. Play until the first tails
 
-As you walk through a casino, a dealer invites you to play a new coin toss game.
+How should we assess a coin-toss game with an entry fee of USD 10 000 using expected prize money? Start with an **ideal model: independent tosses of a fair coin, no prize cap, and no limit on the organizer's ability to pay**. Monetary amounts are numerical values in US dollars.
 
-**[Game Rules]**
-1. You pay an entry fee to start the game.
-2. You toss a coin. If it lands on **Heads**, your prize money doubles, and you get to toss again.
-3. The game ends as soon as it lands on **Tails**. You receive the prize money accumulated up to that point.
+1. Pay an entry fee.
+2. Toss the coin. On heads, double the potential prize and continue.
+3. Stop at the first tails and receive the prize reached at that point.
 
-The initial prize starts at $2.
-- If it lands on Tails on the 1st toss, you get **$2** and the game ends.
-- If it's Heads on the 1st and Tails on the 2nd, you get **$4** and the game ends.
-- If it's Heads on the 1st and 2nd, and Tails on the 3rd, you get **$8** and the game ends.
-- ...From then on, as long as Heads keep appearing, the prize doubles to $16, $32, $64... and so on.
+The initial prize is 2. Tails on the first toss pays 2, heads then tails pays 4, and heads, heads, tails pays 8. Let N be the first toss that lands tails and X the gross prize before the entry fee.
+
+$$
+X=2^N,\qquad \Pr(N=n)=2^{-n}\quad(n=1,2,\ldots)
+$$
 
 ```mermaid
 graph TD
-    Start["Game Start"] --> Toss1{"1st Coin Toss"}
-    
-    Toss1 -->|"Tails (1/2)"| End1["End: Win $2"]
-    Toss1 -->|"Heads (1/2)"| Toss2{"2nd Coin Toss"}
-    
-    Toss2 -->|"Tails (1/2)"| End2["End: Win $4"]
-    Toss2 -->|"Heads (1/2)"| Toss3{"3rd Coin Toss"}
-    
-    Toss3 -->|"Tails (1/2)"| End3["End: Win $8"]
-    Toss3 -->|"Heads (1/2)"| Toss4{"..."}
-    
-    Toss4 -.->|"The longer the streak"| Infinite["Prize doubles infinitely!"]
+    Start["Start game"] --> Toss1{"First toss"}
+    Toss1 -->|"Tails (1/2)"| End1["Stop: USD 2"]
+    Toss1 -->|"Heads (1/2)"| Toss2{"Second toss"}
+    Toss2 -->|"Tails (1/2)"| End2["Stop: USD 4"]
+    Toss2 -->|"Heads (1/2)"| Toss3{"Third toss"}
+    Toss3 -->|"Tails (1/2)"| End3["Stop: USD 8"]
+    Toss3 -->|"Heads (1/2)"| Toss4{"Fourth toss onward"}
+    Toss4 -.->|"No upper bound on tosses"| Continue["Repeat the same rule"]
 ```
 
-Now, here is a question for you.
-**If the entry fee for this game were "$10,000 (about 1.5 million yen)", would you participate?**
+The probability that the game outlasts a finite number of tosses tends to zero as that number grows:
 
-Most people would probably say "I won't participate". Because there is a 50% chance of getting Tails on the first toss, meaning you would only get $2 and suffer a massive loss.
+$$
+\Pr(N>m)=2^{-m}\longrightarrow0,\qquad \Pr(N=\infty)=0,\qquad\Pr(X<\infty)=1
+$$
 
-However, if you calculate this strictly according to mathematical probability theory (expected value), a surprising fact emerges. **Mathematically, whether the entry fee is $10,000 or $100 million, you should participate in this game even if you have to borrow your entire net worth.**
+Thus the prize is **finite with probability 1**, while its possible values have no finite upper bound. An unbounded prize distribution does not mean that the player actually receives an infinite prize.
 
-Why on earth is that?
+## 2. What infinite expectation means
 
----
+The expectation of a nonnegative discrete prize is the sum of each prize multiplied by its probability.
 
-## 2. Let's Calculate the Expected Value
+| First tails on toss | Prize | Probability | Contribution to unconditional expectation |
+| --- | ---: | ---: | ---: |
+| 1 | 2 | 1/2 | 1 |
+| 2 | 4 | 1/4 | 1 |
+| 3 | 8 | 1/8 | 1 |
 
-To determine whether a gamble is "profitable or not", we use a mathematical metric called **"expected value"**.
-The expected value is a number that represents "how much you will make on average per game if you repeat the game many times". The formula is **the sum of all "(prize money) × (probability of getting it)"**.
+Each possible stopping time contributes 1, giving
 
-Let's calculate the expected value for this game.
+$$
+\mathbb E[X]=\sum_{n=1}^{\infty}2^n2^{-n}=\sum_{n=1}^{\infty}1=\infty
+$$
 
-- **Probability of getting Tails on the 1st toss:** $\frac{1}{2}$
-  Prize is $2$.
-  Contribution to expected value = $2 \times \frac{1}{2} = 1$ dollar
+Conditional on ending at toss n, the prize is 2 to the power n, not 1. The number 1 is that event's **contribution to the unconditional expectation**.
 
-- **Probability of getting Tails on the 2nd toss:** Getting Heads then Tails, so $\frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$
-  Prize is $4$.
-  Contribution to expected value = $4 \times \frac{1}{4} = 1$ dollar
+The first K terms alone give
 
-- **Probability of getting Tails on the 3rd toss:** Getting Heads, Heads, then Tails, so $(\frac{1}{2})^3 = \frac{1}{8}$
-  Prize is $8$.
-  Contribution to expected value = $8 \times \frac{1}{8} = 1$ dollar
+$$
+\sum_{n=1}^{K}2^n2^{-n}=K
+$$
 
-- **Probability of getting Tails on the $n$-th toss:** $(\frac{1}{2})^n$
-  Prize is $2^n$ dollars.
-  Contribution to expected value = $2^n \times (\frac{1}{2})^n = 1$ dollar
+and these partial sums grow without bound as K increases. This is the meaning of positive infinite expectation. It does not imply an infinite prize or a guaranteed profit in a finite set of observations. The [law of large numbers](https://kenji.blog/en/p/law-of-large-numbers/) discusses the assumptions connecting ordinary finite means and sample averages.
 
-In other words, no matter what toss the game ends on, the expected value for that pattern is **always "$1"**.
-Since the game can potentially continue infinitely, adding all these expected values together results in the following:
+Subtracting a finite, fixed entry fee c still gives the extended expected net payoff
 
-$$ \text{Total Expected Value} = 1 + 1 + 1 + 1 + \dots = \infty \text{ (Infinity)} $$
+$$
+\mathbb E[X-c]=\infty\qquad(0\le c<\infty)
+$$
 
-The answer derived by mathematics is **"the expected value of this game is infinite"**.
-Since the expected value is infinite, no matter how high the entry fee is, theoretically it is an absolutely "profitable gamble".
+But expected net payoff alone does not assess the possibility of a large loss, whether the player can fund the fee, or whether the organizer can pay. Infinite expectation does not imply that the player should borrow to participate.
 
-This is the **"St. Petersburg Paradox"**, proposed by Nicolaus Bernoulli in 1713.
-There is a fierce contradiction between the correct mathematical calculation result (having infinite value) and human realistic sensation (only wanting to pay a few dollars).
+## 3. History and the criterion of evaluation
 
----
+The [English translation of Daniel Bernoulli's 1738 paper](https://faculty.econ.ucsb.edu/~tedb/Courses/GraduateTheoryUCSB/Bernoulli.pdf) describes his cousin Nicolaus Bernoulli's submission of problems to Montmort. A 1728 letter from Cramer, quoted in the paper, refers to a problem in the letter dated 9 September 1713. The paradox's name is associated with the publication of Daniel's paper in the proceedings of the academy of sciences in St. Petersburg.
 
-## 3. The Discovery of "Utility" that Resolves the Gap between Mathematics and Humans
+The classical game quoted in that paper starts with a prize of one ducat. This article uses an initial prize of USD 2, so numerical certainty equivalents and other monetary results should not be carried over unchanged.
 
-The one who solved this paradox was Daniel Bernoulli, a genius mathematician and cousin of Nicolaus. (It got this name because he presented this paper at the Academy of Sciences in St. Petersburg.)
+The problem invites us to distinguish expected money from the evaluation of risky outcomes. Daniel proposed a utility-based approach and also reported Cramer's similar earlier ideas. Such explanations depend on models; they are not universal mathematical proofs of every individual's psychology.
 
-Daniel delved into human psychology.
-He thought, **"Humans do not judge things by the 'absolute monetary amount', but by the 'satisfaction (utility)' that the money brings."**
+## 4. Modeling diminishing marginal utility
 
-This is called the **"Law of Diminishing Marginal Utility"**.
+After enough water, an additional glass may become less valuable. For wealth, too, we can model the value of a fixed monetary increment as depending on the starting level.
 
-### The value of money decreases depending on the amount you hold
-For example, when you are extremely thirsty in a desert, the first glass of water has enough value (satisfaction) that you would "want to drink it even if you had to pay 10,000 yen". However, as you drink the second and third glasses, the value of a single glass of water rapidly drops. By the 10th glass, you would likely say "I wouldn't want it even if it were free".
+For example, use logarithmic utility for positive amounts:
 
-The same goes for money.
-- "1 million yen" given to someone with zero savings has immense, life-saving value.
-- However, "1 million yen" given to Elon Musk, who has a net worth of tens of billions, only holds about as much value (satisfaction) as a 1-yen coin found on the street.
+$$
+u(x)=\log_2x,\qquad x>0
+$$
 
-In other words, even if the prize money doubles infinitely like $2 \rightarrow $4 \rightarrow $8 \rightarrow $16..., **the "happiness (utility)" a human feels does not increase infinitely in proportion to the amount**.
+This function satisfies
 
----
+$$
+u'(x)=\frac{1}{x\ln2}>0,\qquad u''(x)=-\frac{1}{x^2\ln2}<0
+$$
 
-## 4. Recalculating the Expected Value using "Utility"
+Utility increases with wealth, but an extra unit produces a smaller utility increment at higher wealth. This is diminishing marginal utility in this model. Logarithmic utility itself remains unbounded above. Diminishing increments and a finite upper bound on utility are different properties.
 
-Daniel Bernoulli assumed that "the value (utility) of money felt by humans is proportional to the logarithm ($\log$) of the amount".
+Utility functions of this kind are assumptions representing preferences, not an empirical finding that every person's satisfaction follows the same logarithmic formula.
 
-Let the amount be $x$, and let's express the value (utility) felt by humans $u(x)$ as a logarithmic function (here we consider a simple model with a base of 2).
+## 5. Expected utility 2, certainty equivalent 4, and the entry fee
 
-- Utility of $2 prize: $\log_2(2) = 1$
-- Utility of $4 prize: $\log_2(4) = 2$
-- Utility of $8 prize: $\log_2(8) = 3$
-- Utility of $2^n$ prize: $\log_2(2^n) = n$
+First make a simplified comparison by applying the utility function directly to the prize received. Ending at toss n gives utility
 
-The amount doubles each time, but human "happiness" only increases little by little like 1, 2, 3...
-Using this "utility", let's calculate the expected value (**expected utility**) again.
+$$
+\log_2(2^n)=n
+$$
 
-$$ \text{Expected Utility} = \sum_{n=1}^{\infty} \left( n \times \left(\frac{1}{2}\right)^n \right) $$
-$$ = 1 \cdot \frac{1}{2} + 2 \cdot \frac{1}{4} + 3 \cdot \frac{1}{8} + 4 \cdot \frac{1}{16} + \dots $$
+so expected utility is
 
-When you calculate the sum of this infinite series, the result does not become "infinite", but **converges to "2".**
-If we reverse calculate the amount for which the utility is "2", it becomes $2^2 = 4$ dollars.
+$$
+\mathbb E[u(X)]=\sum_{n=1}^{\infty}n2^{-n}=2
+$$
 
-In other words, when recalculated by incorporating human psychology (utility), a very common-sense and realistic answer is derived: **"The value of this game is about '$4' according to human sensation."**
-That is precisely why we do not feel like paying $10,000 for this game.
+The partial sums verify this:
 
----
+$$
+\sum_{n=1}^{K}n2^{-n}=2-\frac{K+2}{2^K}\longrightarrow2
+$$
 
-## 5. Conclusion: The Paradox that Opened the Door to Economics
+The probability-weighted utility series converges, so expected utility can be finite even though the utility function is unbounded.
 
-The St. Petersburg Paradox was a groundbreaking paradox that mathematically proved that the objective number of "monetary amount" and the subjective value of "human satisfaction" do not match.
+The certain receipt giving the same utility in this comparison, the **certainty equivalent**, is
 
-The concept of "Utility" proposed by Daniel Bernoulli, 200 years later, became the most important foundation of modern microeconomics and financial engineering (such as portfolio theory).
-The behavior of us buying insurance or diversifying investments can all be explained by this human psychological mechanism of "diminishing marginal utility (the pain of a huge loss is far greater than the joy of a huge gain)".
+$$
+\mathrm{CE}=u^{-1}\!\left(\mathbb E[u(X)]\right)=2^2=4
+$$
 
-A simple calculation problem of gambling ended up deciphering the human mind and triggering the birth of the massive academic discipline of economics.
+This compares receiving the lottery prize X with receiving 4 for certain. **It is not a universal entry-fee ceiling of 4.**
 
+To decide whether to pay a fee, include initial wealth w and fee c. A simple model without borrowing uses
+
+$$
+w>0,\qquad0\le c\le w,\qquad W_{\mathrm{final}}=w-c+X
+$$
+
+Under the same logarithmic utility, the difference between expected utility from playing and utility from not playing is
+
+$$
+G_w(c)=\sum_{n=1}^{\infty}2^{-n}\log_2(w-c+2^n)-\log_2w
+$$
+
+A positive difference favors participation in this model, zero means indifference, and a negative difference favors not playing. If w exceeds 4, the difference is continuous and strictly decreasing in c, positive at c equal to 0 and negative at c equal to w. There is therefore a unique indifference fee:
+
+$$
+G_w(c^\ast)=0,\qquad0<c^\ast<w\quad(w>4)
+$$
+
+Solving the series numerically gives these examples:
+
+| Initial wealth w | Approximate indifference fee c* |
+| ---: | ---: |
+| 10 | 4.97 |
+| 100 | 7.79 |
+| 1 000 | 10.95 |
+
+Including wealth changes the evaluation even with the same utility function. The certainty-equivalent increment for an already-owned lottery also differs from the indifference price for buying it. Bernoulli himself discusses purchase price versus the value of an opportunity already held in section 19.
+
+## 6. Capping the prize
+
+A practical model should include the contract's prize limits and payment capacity. For example, specify a cap of 2 to the power K: at the first tails, pay the smaller of the original prize and the cap.
+
+$$
+X_K=\min(X,2^K),\qquad K\in\{1,2,\ldots\}
+$$
+
+The probability that N is at least K is the reciprocal of 2 to the power K−1, so
+
+$$
+\mathbb E[X_K]=\sum_{n=1}^{K-1}2^n2^{-n}+2^K\Pr(N\ge K)=(K-1)+2=K+1
+$$
+
+A cap of 1 024, or K equal to 10, gives an expected prize of 11. The first K terms of the original expectation sum to K; the capped contract has expectation K+1. Changing what is paid when a game is stopped early defines a different game.
+
+## 7. An economic perspective that makes assumptions explicit
+
+Bernoulli also applied wealth and utility models to insurance and dividing cargo across shipments. Expected utility is one framework for considering risky choices. Prices, dependence between losses, and funding constraints also affect insurance and diversification; a single psychological principle does not explain every decision.
+
+**Concavity of utility over wealth and loss aversion as an asymmetry between gains and losses relative to a reference point are distinct concepts.** [Tversky and Kahneman's 1981 paper](https://www.stanford.edu/class/psych205/papers/Tversky-Kahneman-1981.pdf) discusses reference points, values of gains and losses, and decision weights, while noting that these properties are not universal across individuals.
+
+The St. Petersburg paradox separates the probability model, expected money, preferences, and constraints. The [two-envelope paradox](https://kenji.blog/en/p/two-envelopes-paradox/) and [Bayes' theorem](https://kenji.blog/en/p/bayes-theorem/) likewise become easier to interpret when the assumptions and conditioning information are explicit.
