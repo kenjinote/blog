@@ -409,6 +409,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/bayes-theorem/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/bayes-theorem/index.md",
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "translationHash": "e6086f7ab76b889355aa2b399d6c1d0d4104364bada538e21311231766ae66b7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "原ロシア語本文・図2点を基準コミットから全文で再読し、改訂日本語との比較後、改訂ロシア語の全10節・見出し・表・図・結論を通読。доказательства を観測/данные に置き換え、証明と観測を区別。正規化、ゼロ確率条件、4つのAI応用、統計観、逐次更新を維持し、原文の一般的な疾患を感染症だけに限定する инфицировано を修正した。"
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "априорная/апостериорная вероятность、правдоподобие、плотность、маргинальное правдоподобие とMAP-оценка/апостериорная предиктивная вероятностьを役割別に照合。чувствительность と прогностическая ценность положительного результата(PPV)、общая доля правильных результатов(accuracy)を異なる分母で説明。DAGをориентированный ациклический граф、相互独立をнезависимость в совокупности、確率1の収束をсходимость почти наверноеと明記。引用著者名Snoek/Blundellは原綴りを保持した。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "共通22TeXを全件手読で照合し、P(B)>0、逆条件にはP(A)>0、連続更新0<Z<∞、MAP最大値達成条件、順序付きコインの密度12θ²(1−θ)、モード2/3対予測3/5、PPV1/6とaccuracy95.04%、条件付き相互独立、有限離散DAG、連続重みの予測積分、IID公平コインのa.s.極限を確認。補助計算は検証器1回の1296表中1260/1230の式、ゼロA30/ゼロB36、128状態DAGであり記事一般の証明ではない。"
+        },
+        "code": {
+          "status": "checked",
+          "note": "本文に実行プログラムは0、Mermaidソース2点のみ。架空10000人の99/1/495/9405と9辺、DAGの7確率変数・6確率辺・外側の1推論点線を読み合わせた。図の推論操作は新しい確率変数ではなく、確率辺は無条件に因果を意味しない。生成HTMLでTeXとソース図を確認し、ブラウザ実描画・実行・ネイティブ校閲を認定していない。"
+        },
+        "links": {
+          "status": "checked",
+          "note": "一次資料9件とロシア語の大数の法則/二封筒の内部参照2件を照合。公開日・slug・分類・画像を保持し更新日10月30日と明示フラグを追加。生成プレビュー1609記事の多言語、2933HTML/41XMLのHTTPS、対象14hreflang/13言語切替を検証済み。既存17単体テストは先行JA/EN実行証跡で今回未再実行。全サイトビルド・公開・医学性能・校正済み予測を認定していない。"
+        }
+      },
+      "summary": "ロシア語全10節を全文照合し、証明と観測、感度/PPV、感染症限定、密度MAPと予測、独立性・因果・最適化・不確実性・収束を修正。",
+      "languageSpecificFindings": "доказательства は統計的観測としてданные/наблюденияに整理。原文のинфицированоを一般疾患の存在へ、健康全般を対象疾患の非存在へ訂正。PPVとaccuracyを明示定義しточностьの曖昧さを避けた。a.s.はсходимость почти наверноеと確率1の定義を併記。原文全文比較の時系列はdraft receiptの訂正に記録し、証拠未読のまま登録していない。",
+      "validation": "docs/translation-review/batch-026-ru-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "1other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,clinical evidence,model training or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -791,6 +832,44 @@
       "unreviewedTranslations": 12710,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 2,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "ru"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "validation": "docs/translation-review/batch-026-ru-validation.json",
+      "checks": "docs/translation-review/batch-026-ru-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-026-ru-ledger-validation.json",
+      "texEach": 22,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "jointFormulaTables": 1260,
+        "reverseFormulaTables": 1230,
+        "zeroPriorAWithPositiveB": 30,
+        "undefinedBExcluded": 36,
+        "toyDagAssignments": 128,
+        "toyDagTotalMass": "1",
+        "toyDagPrior": "151/600",
+        "toyDagPosterior": "14949/17194",
+        "scope": "Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 323,
+      "unreviewedTranslations": 12709,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 1,
       "publicationPending": true
     }
   ],

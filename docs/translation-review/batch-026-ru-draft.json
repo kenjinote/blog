@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "draftedAt": "2026-10-30T19:39:43.177094+09:00",
+  "path": "content/post/bayes-theorem/index.ru.md",
+  "originalSha256": "540046718869f0fb6601387b230eddf394a39a642e858c7da7163d8de25513a7",
+  "draftSha256": "eced1f05f24a655e95ffd1f2d320b0e0b642110e77b1fb90a551530166b08a28",
+  "commonTeX": 22,
+  "draftOnly": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Russian full rewrite draft against corrected Japanese. Final complete baseline Russian read/recomparison occurred after drafting and before registration;machine validation and AI review tracked separately.",
+  "receiptCorrection": "Earlier draft scope wording claimed the original had already been fully read at drafting. The truncated previous output did not establish that reading;complete git-show baseline was actually read after drafting and before certification. No review ledger entry was added by this draft receipt."
+}
