@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T20:33:46.369623+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.md",
+      "sha256": "2811748d99d856be0d88241417c403223a1f588470252a0aabe8b077d225bd2e",
+      "sourceSha256": "2811748d99d856be0d88241417c403223a1f588470252a0aabe8b077d225bd2e",
+      "texExpressions": 16,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.ko.md",
+      "sha256": "8a737a79956831104a14490853b60c273bf911125a6baba8232f005b09c0832a",
+      "sourceSha256": "2811748d99d856be0d88241417c403223a1f588470252a0aabe8b077d225bd2e",
+      "texExpressions": 16,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "passed": true
+    }
+  ],
+  "sharedAuxiliaryChecks": {
+    "binarySequenceLengths": 12,
+    "binarySequencesEnumerated": 8190,
+    "finiteSeriesCases": 64,
+    "logWealthFeeExamples": [
+      {
+        "w": "10",
+        "feeRounded": "4.97",
+        "terms": 128,
+        "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-77"
+      },
+      {
+        "w": "100",
+        "feeRounded": "7.79",
+        "terms": 128,
+        "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-76"
+      },
+      {
+        "w": "1000",
+        "feeRounded": "10.95",
+        "terms": 128,
+        "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-75"
+      }
+    ],
+    "scope": "Once per validator invocation,not per language. Full finite binary-sequence enumeration independently checks the capped contract and stopping CDF;finite series and Decimal fee calculations separately scoped. Not article-program execution,infinite-limit machine proof,interval-rounding proof or human-choice evidence."
+  },
+  "sourceAuditSha256": "0dd852fb051954120510b7ddcb7bbff072db206688cfdebe7959be68188ea517",
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source/decodedHTML/auxiliary checks do not certify full prose or add ledger records.",
+    "No article executable programs;auxiliary calculations distinct.",
+    "Not native-language,browser visual/runtime,historical Latin original or financial/empirical-choice certification.",
+    "Other languages/publication pending;full article goal active."
+  ]
+}
