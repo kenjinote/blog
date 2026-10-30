@@ -1,9 +1,7 @@
 ---
-title: 'Paradoxo de São Petersburgo: Quanto você pagaria por uma aposta com valor esperado "infinito"?'
-date: "2026-09-24T19:44:38+09:00"
+title: "Paradoxo de São Petersburgo: valor esperado infinito, utilidade e preço de entrada"
 slug: 'st-petersburg-paradox'
-description: 'Uma aposta que matematicamente deveria lhe render "lucro infinito". No entanto, ninguém pagaria uma grande quantia por ela na realidade. Explicamos esse paradoxo histórico que destacou a divergência entre a teoria das probabilidades e a psicologia humana (utilidade), tornando-se a base da economia moderna.'
-date: '2026-09-10T05:00:00+09:00'
+description: "Um prêmio finito com probabilidade 1 pode ter valor esperado infinito. Distinga equivalente certo e preço de entrada, inclua a riqueza e examine tetos de prêmio e o contexto histórico."
 image: 'img/st_petersburg.jpg'
 math: true
 mermaid: true
@@ -13,137 +11,184 @@ tags:
   - 'Valor Esperado'
   - 'Economia'
   - 'Bernoulli'
+date: "2026-09-10T05:00:00+09:00"
+lastmod: "2026-10-30"
 ---
 
-## 1. A aposta dos sonhos com valor esperado "infinito"
+## 1. Jogar até a primeira coroa
 
-Enquanto você caminha por um cassino, um crupiê o convida para um novo jogo de cara ou coroa:
+Como avaliar, apenas pelo prêmio esperado, um jogo de moeda com entrada de 10 000 dólares americanos? Comecemos com um **modelo ideal: lançamentos independentes de uma moeda equilibrada, sem teto para o prêmio nem limite à capacidade de pagamento do organizador**. Os valores monetários são números expressos em dólares americanos.
 
-**【Regras do Jogo】**
-1. Você paga uma taxa de inscrição para começar o jogo.
-2. Uma moeda é lançada. Se der **Cara**, o prêmio dobra e a moeda é lançada novamente.
-3. Se der **Coroa**, o jogo termina. Você recebe o prêmio acumulado até aquele momento.
+1. Paga-se a entrada.
+2. Lança-se a moeda. Se sair cara, o prêmio potencial dobra e o jogo continua.
+3. Na primeira coroa, o jogo termina e você recebe o prêmio atingido.
 
-O prêmio inicial começa em 2 dólares.
-- Se der Coroa no 1º lançamento, você ganha **2 dólares** e o jogo termina.
-- Se der Cara no 1º e Coroa no 2º, você ganha **4 dólares** e termina.
-- Se der Cara no 1º e 2º, e Coroa no 3º, você ganha **8 dólares** e termina.
-- ...A partir daí, enquanto der Cara, o prêmio dobra infinitamente: 16 dólares, 32 dólares, 64 dólares...
+O prêmio inicial é 2. Se sair coroa no primeiro lançamento, você recebe 2; com cara e coroa, 4; com cara, cara e coroa, 8. Seja N o número do lançamento em que aparece a primeira coroa, e X o prêmio bruto, antes de descontar a entrada.
+
+$$
+X=2^N,\qquad \Pr(N=n)=2^{-n}\quad(n=1,2,\ldots)
+$$
 
 ```mermaid
 graph TD
-    Start["Início do Jogo"] --> Toss1{"1º Lançamento"}
-    
-    Toss1 -->|"Coroa (1/2)"| End1["Fim: Ganha 2 dólares"]
-    Toss1 -->|"Cara (1/2)"| Toss2{"2º Lançamento"}
-    
-    Toss2 -->|"Coroa (1/2)"| End2["Fim: Ganha 4 dólares"]
-    Toss2 -->|"Cara (1/2)"| Toss3{"3º Lançamento"}
-    
-    Toss3 -->|"Coroa (1/2)"| End3["Fim: Ganha 8 dólares"]
-    Toss3 -->|"Cara (1/2)"| Toss4{"..."}
-    
-    Toss4 -.->|"Quanto mais consecutivas"| Infinite["O prêmio dobra infinitamente!"]
+    Start["Início"] --> Toss1{"Primeiro lançamento"}
+    Toss1 -->|"Coroa (1/2)"| End1["Fim: 2 dólares"]
+    Toss1 -->|"Cara (1/2)"| Toss2{"Segundo lançamento"}
+    Toss2 -->|"Coroa (1/2)"| End2["Fim: 4 dólares"]
+    Toss2 -->|"Cara (1/2)"| Toss3{"Terceiro lançamento"}
+    Toss3 -->|"Coroa (1/2)"| End3["Fim: 8 dólares"]
+    Toss3 -->|"Cara (1/2)"| Toss4{"Quarto lançamento em diante"}
+    Toss4 -.->|"Sem máximo de lançamentos"| Continue["Repetir a mesma regra"]
 ```
 
-Agora, uma pergunta para você:
-**Se a taxa de inscrição deste jogo fosse de "10.000 dólares", você participaria?**
+A probabilidade de o jogo ultrapassar um número finito de lançamentos tende a zero quando esse número cresce:
 
-Provavelmente, a maioria das pessoas responderia "não participo". Isso porque, em metade das vezes, o primeiro lançamento será coroa e você receberá apenas 2 dólares, sofrendo um grande prejuízo.
+$$
+\Pr(N>m)=2^{-m}\longrightarrow0,\qquad \Pr(N=\infty)=0,\qquad\Pr(X<\infty)=1
+$$
 
-No entanto, se calcularmos fielmente usando a teoria das probabilidades da matemática (valor esperado), um fato surpreendente é revelado. **Matematicamente, seja a taxa de inscrição de 10.000 ou 1 milhão de dólares, você deveria fazer um empréstimo com todo o seu patrimônio para participar deste jogo.**
+Portanto, o prêmio é **finito com probabilidade 1**, embora os valores possíveis não tenham limite superior finito. Não ter um teto não significa receber de fato um prêmio infinito.
 
-Mas por que será?
+## 2. O significado de um valor esperado infinito
 
----
+O valor esperado de um prêmio discreto não negativo é a soma de cada prêmio multiplicado por sua probabilidade.
 
-## 2. Vamos calcular o valor esperado
+| Primeira coroa no lançamento | Prêmio | Probabilidade | Contribuição ao valor esperado incondicional |
+| --- | ---: | ---: | ---: |
+| 1 | 2 | 1/2 | 1 |
+| 2 | 4 | 1/4 | 1 |
+| 3 | 8 | 1/8 | 1 |
 
-Um indicador matemático para julgar se uma aposta é "vantajosa ou desvantajosa" é o **"valor esperado"**.
-O valor esperado é um número que representa "quanto você ganharia em média por rodada se repetisse o jogo muitas vezes". A fórmula é **a soma de todos os "(prêmio ganho) × (sua probabilidade)"**.
+Cada possível instante de término contribui com 1, de modo que
 
-Vamos calcular o valor esperado do nosso jogo.
+$$
+\mathbb E[X]=\sum_{n=1}^{\infty}2^n2^{-n}=\sum_{n=1}^{\infty}1=\infty
+$$
 
-- **Probabilidade de dar Coroa na 1ª vez:** $\frac{1}{2}$
-  O prêmio é $2$ dólares.
-  Contribuição para o valor esperado = $2 \times \frac{1}{2} = 1$ dólar
+Se sabemos que o jogo termina no lançamento n, o prêmio é 2 elevado a n, não 1. Esse 1 é a **contribuição do evento ao valor esperado incondicional**.
 
-- **Probabilidade de dar Coroa na 2ª vez:** A sequência é Cara, Coroa, então $\frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$
-  O prêmio é $4$ dólares.
-  Contribuição para o valor esperado = $4 \times \frac{1}{4} = 1$ dólar
+Somando apenas os primeiros K termos,
 
-- **Probabilidade de dar Coroa na 3ª vez:** A sequência é Cara, Cara, Coroa, então $(\frac{1}{2})^3 = \frac{1}{8}$
-  O prêmio é $8$ dólares.
-  Contribuição para o valor esperado = $8 \times \frac{1}{8} = 1$ dólar
+$$
+\sum_{n=1}^{K}2^n2^{-n}=K
+$$
 
-- **Probabilidade de dar Coroa na $n$-ésima vez:** $(\frac{1}{2})^n$
-  O prêmio é $2^n$ dólares.
-  Contribuição para o valor esperado = $2^n \times (\frac{1}{2})^n = 1$ dólar
+as somas parciais crescem sem limite quando K aumenta. Nesse sentido, o valor esperado é infinito positivo. Isso não implica um prêmio infinito nem lucro garantido em um conjunto finito de observações. A [lei dos grandes números](https://kenji.blog/pt/p/law-of-large-numbers/) discute as hipóteses que relacionam médias finitas usuais e médias amostrais.
 
-Ou seja, não importa em que rodada termine, o valor esperado de cada padrão é **sempre "1 dólar"**.
-Como o jogo pode continuar infinitamente, a soma de todos esses valores esperados fica assim:
+Mesmo descontando um preço de entrada c fixo e finito, o valor esperado do resultado líquido, no sentido estendido, é
 
-$$ \text{Valor Esperado Total} = 1 + 1 + 1 + 1 + \dots = \infty \text{ (infinito)} $$
+$$
+\mathbb E[X-c]=\infty\qquad(0\le c<\infty)
+$$
 
-A resposta calculada pela matemática foi que **"o valor esperado deste jogo é infinito"**.
-Como o valor esperado é infinito, independentemente de quão alta seja a taxa de inscrição, logicamente essa é uma "aposta lucrativa".
+Mas esse valor, sozinho, não avalia a possibilidade de uma grande perda, se a pessoa consegue pagar a entrada ou se o organizador consegue honrar os prêmios. Valor esperado infinito não implica que seja necessário ou recomendável se endividar para jogar.
 
-Este é o **"Paradoxo de São Petersburgo"**, proposto por Nicolaus Bernoulli em 1713.
-Há uma forte contradição entre o resultado matemático correto (o jogo tem valor infinito) e a intuição humana realista (não queremos pagar mais do que alguns dólares).
+## 3. História e critério de avaliação
 
----
+A [tradução inglesa do artigo de Daniel Bernoulli de 1738](https://faculty.econ.ucsb.edu/~tedb/Courses/GraduateTheoryUCSB/Bernoulli.pdf) relata como seu primo Nicolaus Bernoulli enviou problemas a Montmort. Uma carta de Cramer de 1728, citada no artigo, faz referência ao problema da carta de 9 de setembro de 1713. O nome do paradoxo se relaciona à publicação do artigo de Daniel nos anais da Academia de Ciências de São Petersburgo.
 
-## 3. A descoberta da "Utilidade" que resolve a divergência entre matemática e humanos
+O jogo clássico citado nesse artigo começa com um prêmio de um ducado. Aqui, usamos um prêmio inicial de 2 dólares, de modo que equivalentes certos e outros resultados monetários não devem ser transportados diretamente entre as duas escalas.
 
-Quem resolveu este paradoxo foi o primo de Nicolaus, o genial matemático Daniel Bernoulli. (Recebeu este nome porque ele apresentou o artigo na Academia de Ciências de São Petersburgo.)
+O problema convida a distinguir o valor monetário esperado da avaliação de resultados arriscados. Daniel propôs uma avaliação baseada na utilidade e também apresentou ideias semelhantes anteriores de Cramer. São explicações que dependem de modelos, não provas matemáticas universais da psicologia de cada pessoa.
 
-Daniel se aprofundou na psicologia humana.
-Ele pensou: **"As pessoas não julgam as coisas pelo 'valor absoluto' do dinheiro, mas pela 'satisfação (utilidade)' que o dinheiro proporciona"**.
+## 4. Modelar a utilidade marginal decrescente
 
-A isso chamamos de **"Lei da Utilidade Marginal Decrescente"**.
+Depois de beber água suficiente, um copo adicional pode ter menos valor. Para a riqueza, também podemos modelar o valor de um acréscimo monetário fixo como dependente do nível inicial.
 
-### O valor do dinheiro diminui de acordo com a quantidade que você possui
-Por exemplo, quando você está com muita sede no deserto, o 1º copo de água tem um valor (satisfação) pelo qual você pagaria até "10.000 dólares". No entanto, ao beber o 2º, o 3º, o valor de cada copo de água cai vertiginosamente. No 10º copo, você diria "não quero nem de graça".
+Por exemplo, adotemos utilidade logarítmica para valores positivos:
 
-Com o dinheiro é a mesma coisa.
-- Para uma pessoa com zero economias, ganhar "10.000 dólares" tem um valor imenso que pode salvar sua vida.
-- No entanto, para Elon Musk, com um patrimônio de bilhões, ganhar "10.000 dólares" tem apenas o valor (satisfação) equivalente a encontrar uma moeda no chão.
+$$
+u(x)=\log_2x,\qquad x>0
+$$
 
-Ou seja, mesmo que o prêmio aumente infinitamente de 2 dólares $\rightarrow$ 4 dólares $\rightarrow$ 8 dólares $\rightarrow$ 16 dólares..., **a "alegria (utilidade)" sentida pelas pessoas não aumenta infinitamente de forma proporcional ao valor**.
+Essa função satisfaz
 
----
+$$
+u'(x)=\frac{1}{x\ln2}>0,\qquad u''(x)=-\frac{1}{x^2\ln2}<0
+$$
 
-## 4. Recalculando o valor esperado usando "Utilidade"
+A utilidade aumenta com a riqueza, mas uma unidade adicional gera um acréscimo de utilidade menor em níveis de riqueza maiores. Essa é a utilidade marginal decrescente neste modelo. A própria utilidade logarítmica continua sem limite superior. Acréscimos decrescentes e um limite superior finito são propriedades distintas.
 
-Daniel Bernoulli presumiu que "o valor (utilidade) do dinheiro sentido pelas pessoas é proporcional ao logaritmo ($\log$) do montante".
+Funções de utilidade desse tipo são hipóteses para representar preferências, não uma constatação empírica de que a satisfação de todas as pessoas segue a mesma fórmula logarítmica.
 
-Seja o valor $x$, representamos o valor percebido (utilidade) humano $u(x)$ através de uma função logarítmica (vamos usar um modelo simples com base 2).
+## 5. Utilidade esperada 2, equivalente certo 4 e preço de entrada
 
-- Utilidade do prêmio de $2$ dólares: $\log_2(2) = 1$
-- Utilidade do prêmio de $4$ dólares: $\log_2(4) = 2$
-- Utilidade do prêmio de $8$ dólares: $\log_2(8) = 3$
-- Utilidade do prêmio de $2^n$ dólares: $\log_2(2^n) = n$
+Primeiro, façamos uma comparação simplificada aplicando a utilidade diretamente ao prêmio recebido. Terminar no lançamento n dá utilidade
 
-Enquanto o montante dobra, a "alegria" humana aumenta apenas um pouco: 1, 2, 3...
-Usando esta "utilidade", vamos calcular o valor esperado novamente (**utilidade esperada**).
+$$
+\log_2(2^n)=n
+$$
 
-$$ \text{Utilidade Esperada} = \sum_{n=1}^{\infty} \left( n \times \left(\frac{1}{2}\right)^n \right) $$
-$$ = 1 \cdot \frac{1}{2} + 2 \cdot \frac{1}{4} + 3 \cdot \frac{1}{8} + 4 \cdot \frac{1}{16} + \dots $$
+e, portanto, utilidade esperada
 
-Ao calcular a soma desta série infinita, o resultado não é "infinito", mas **converge para "2".**
-Se calcularmos de volta o valor em dinheiro para a utilidade "2", teremos $2^2 = 4$ dólares.
+$$
+\mathbb E[u(X)]=\sum_{n=1}^{\infty}n2^{-n}=2
+$$
 
-Em outras palavras, ao recalcular incorporando a psicologia humana (utilidade), chegamos a uma resposta extremamente sensata e realista: **"O valor deste jogo, na percepção humana, é de aproximadamente '4 dólares'."**
-É por isso que não nos sentimos inclinados a pagar 10.000 dólares por este jogo.
+As somas parciais confirmam:
 
----
+$$
+\sum_{n=1}^{K}n2^{-n}=2-\frac{K+2}{2^K}\longrightarrow2
+$$
 
-## 5. Resumo: O paradoxo que abriu as portas da Economia
+A série de utilidades ponderadas por suas probabilidades converge. Assim, a utilidade esperada pode ser finita mesmo quando a função de utilidade não tem limite superior.
 
-O Paradoxo de São Petersburgo foi um paradoxo inovador que provou matematicamente a divergência entre os números objetivos, chamados de "valor", e o valor subjetivo humano, chamado de "satisfação".
+O recebimento certo que produz a mesma utilidade nesta comparação, o **equivalente certo (CE)**, é
 
-O conceito de "Utilidade (Utility)" proposto por Daniel Bernoulli, após 200 anos, tornou-se a base mais importante da microeconomia moderna e da engenharia financeira (como a Teoria do Portfólio).
-Comportamentos como o de adquirir seguros ou diversificar investimentos podem ser todos explicados por este mecanismo psicológico humano da "utilidade marginal decrescente" (a dor de uma grande perda é muito maior do que a alegria de um grande ganho).
+$$
+\mathrm{CE}=u^{-1}\!\left(\mathbb E[u(X)]\right)=2^2=4
+$$
 
-Um simples problema de cálculo de apostas acabou se tornando o gatilho para decifrar a mente humana e dar origem à vasta disciplina da economia.
+Isso compara receber o prêmio aleatório X com receber 4 com certeza. **Não é um teto universal de 4 para o preço de entrada.**
 
+Para decidir se vale pagar, é preciso incluir a riqueza inicial w e o preço c. Um modelo simples sem endividamento usa
+
+$$
+w>0,\qquad0\le c\le w,\qquad W_{\mathrm{final}}=w-c+X
+$$
+
+Com a mesma utilidade logarítmica, a diferença entre a utilidade esperada de participar e a utilidade de não participar é
+
+$$
+G_w(c)=\sum_{n=1}^{\infty}2^{-n}\log_2(w-c+2^n)-\log_2w
+$$
+
+Uma diferença positiva favorece participar neste modelo; zero indica indiferença; uma diferença negativa favorece não participar. Se w supera 4, a diferença é contínua e estritamente decrescente em c, positiva quando c é 0 e negativa quando c é w. Assim, existe um único preço de entrada que produz indiferença:
+
+$$
+G_w(c^\ast)=0,\qquad0<c^\ast<w\quad(w>4)
+$$
+
+A solução numérica da série fornece estes exemplos:
+
+| Riqueza inicial w | Preço de indiferença c* aproximado |
+| ---: | ---: |
+| 10 | 4,97 |
+| 100 | 7,79 |
+| 1 000 | 10,95 |
+
+Incluir a riqueza muda a avaliação mesmo com a mesma função de utilidade. O acréscimo certo de riqueza equivalente a uma loteria já possuída também difere do preço de indiferença para comprá-la. O próprio Bernoulli distingue preço de compra e valor de uma oportunidade já possuída na seção 19.
+
+## 6. Impor um teto ao prêmio
+
+Um modelo prático também deve considerar os limites do contrato e a capacidade de pagamento. Por exemplo, fixe um teto de 2 elevado a K: na primeira coroa, paga-se o menor entre o prêmio original e o teto.
+
+$$
+X_K=\min(X,2^K),\qquad K\in\{1,2,\ldots\}
+$$
+
+A probabilidade de N ser pelo menos K é o inverso de 2 elevado a K−1. Logo,
+
+$$
+\mathbb E[X_K]=\sum_{n=1}^{K-1}2^n2^{-n}+2^K\Pr(N\ge K)=(K-1)+2=K+1
+$$
+
+Um teto de 1 024, isto é, K igual a 10, dá prêmio esperado de 11. Os primeiros K termos da expectativa original somam K, enquanto o contrato com esse teto tem valor esperado K+1. Mudar a regra de pagamento quando o jogo é interrompido antes de terminar define outro jogo.
+
+## 7. Uma perspectiva econômica que explicita as hipóteses
+
+Bernoulli também aplicou modelos de riqueza e utilidade a seguros e à divisão de cargas entre embarcações. A utilidade esperada é uma estrutura para pensar escolhas arriscadas. Preços, dependência entre perdas e restrições financeiras também importam para seguros e diversificação; um único princípio psicológico não explica todas as decisões.
+
+**A concavidade da utilidade sobre a riqueza e a aversão a perdas como assimetria entre ganhos e perdas em relação a um ponto de referência são conceitos distintos.** [Tversky e Kahneman, no artigo de 1981](https://www.stanford.edu/class/psych205/papers/Tversky-Kahneman-1981.pdf), discutem pontos de referência, valores de ganhos e perdas e pesos de decisão, observando que essas propriedades não são universais entre indivíduos.
+
+O paradoxo de São Petersburgo separa modelo probabilístico, valor monetário esperado, preferências e restrições. O [paradoxo dos dois envelopes](https://kenji.blog/pt/p/two-envelopes-paradox/) e o [teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) também ficam mais claros quando as hipóteses e as informações condicionantes são explícitas.
