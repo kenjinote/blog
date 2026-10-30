@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-30T09:55:23.7662878+09:00",
+  "run": 40979650370,
+  "head": "987c31d250bafe6f40ab1a37cf827c00571e5f42",
+  "attempt": 1,
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-30T00:26:04Z",
+      "completed_at": "2026-10-30T00:52:26Z"
+    },
+    {
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-30T00:52:30Z",
+      "completed_at": "2026-10-30T00:54:34Z"
+    }
+  ]
+}

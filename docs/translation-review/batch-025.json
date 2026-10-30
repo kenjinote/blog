@@ -979,14 +979,15 @@
     "reviewedTranslationsTotal": 312,
     "unreviewedTranslations": 12720,
     "humanReviews": 0,
-    "publicationPending": true,
+    "publicationPending": false,
     "limitations": [
       "AI,not human/native-speaker certification.",
       "Finite auxiliary arithmetic supplements manually checked analytic arguments;not article-program execution or universal proof.",
       "Source/decodedHTML only;no browservisual/RTL/KaTeX/Mermaidruntime certification.",
       "Per-entry remaining-language counts are historical stage snapshots;all12versions are now reviewed.",
       "Isolated-preview page/layout/PortugueseUI warnings retained;not warning-free certification."
-    ]
+    ],
+    "publicationProof": "docs/translation-review/publication-025.json"
   },
   "publicationDispatch": {
     "version": 1,
@@ -1017,5 +1018,30 @@
     "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_312.py",
     "publicationPending": true,
     "scope": "Ordinary push after fetch:zero incoming/15local outgoing. Matching run/head observed live.338URL probe prepared,not executed before build/deploy success. No live-publication confirmation claimed."
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-10-30T09:55:48.725111+09:00",
+      "ciRun": 40979650370,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40979650370",
+      "deployedCommit": "987c31d250bafe6f40ab1a37cf827c00571e5f42",
+      "ciConclusion": "success",
+      "buildConclusion": "success",
+      "deployConclusion": "success",
+      "deploymentAttempt": 1,
+      "ciProof": "docs/translation-review/batch-025-ci-completion.json",
+      "proof": "docs/translation-review/publication-025.json",
+      "pages": 338,
+      "passed": 338,
+      "httpRetryRounds": 0,
+      "reviewedTranslationsPublished": 312,
+      "japaneseSources": 26,
+      "mathVersions": 143,
+      "texExpressions": 9064,
+      "twoEnvelopeVersions": 13,
+      "twoEnvelopeTeX": 572,
+      "twoEnvelopeDiagramSources": 26,
+      "scope": "Batches001-025 only.338unique URLs passed first probe,including canonical/lang/14hreflang/13sidebar targets.143mathversions9064TeX;two-envelope13versions572TeX/26localized diagrams/threeprimaryandtwolocalizedrefs/originalSep10date/lastmod/title. Existing completeC/Rust/Python/C++ blocks,diagrams and sieveimage evidence retained. Bayes-theorem batch026 local revisions excluded. Not full-site/native-speaker/browser-visual/security certification."
+    }
+  ]
 }
