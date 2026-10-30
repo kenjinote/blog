@@ -1,9 +1,9 @@
 ---
-title: 'Le paradoxe des deux enveloppes : l’effondrement logique et le piège décisionnel causés par une espérance mathématique infinie'
-date: "2026-09-24T19:44:38+09:00"
+title: "Le paradoxe des deux enveloppes : probabilité conditionnelle et espérance infinie"
+date: "2026-09-10T00:00:00+09:00"
+lastmod: 2026-10-30
 slug: 'two-envelopes-paradox'
-description: 'Deux enveloppes sont devant vous. L’une contient le double du montant de l’autre. Si vous échangez sans ouvrir votre enveloppe, êtes-vous toujours gagnant selon l’espérance ? À travers le « paradoxe des deux enveloppes » où l’intuition et les mathématiques s’affrontent violemment, nous expliquerons en profondeur les pièges de l’espérance mathématique et le concept de l’infini.'
-date: '2026-09-10T00:00:00+09:00'
+description: "Faut-il échanger les enveloppes ? Calculez le gain conditionnel à partir de la loi a priori, distinguez normalisation et espérance finie, et examinez des contre-exemples fondés sur des lois propres d’espérance infinie."
 image: 'img/two_envelopes.jpg'
 math: true
 mermaid: true
@@ -14,153 +14,174 @@ tags:
   - 'Infini'
 ---
 
-## 1. Le choix ultime : échanger ou ne pas échanger ?
+## 1. Préciser comment l’enveloppe est choisie
 
-Vous êtes à l'étape finale d'un jeu télévisé. Sur la table devant vous se trouvent **deux enveloppes (A et B)** d'apparence identique.
-Le présentateur vous dit :
+Deux enveloppes d’apparence identique contiennent de l’argent : l’une renferme le double du montant de l’autre. Après en avoir choisi une, vous pouvez l’échanger. Faut-il le faire avant de l’ouvrir ou après avoir vu son contenu ?
 
-> « L'une des enveloppes contient le **double de l'argent** de l'autre. Veuillez en choisir une. »
+Notons $S$ le plus petit montant, une variable aléatoire strictement positive et finie. Les enveloppes contiennent $S$ et $2S$. Choisissez-en une au moyen d’un lancer de pièce équilibré, indépendant des contenus. Notons $X$ le montant choisi et $Y$ l’autre. Conditionnellement à un plus petit montant fixé $S=s$, les deux résultats suivants ont chacun une probabilité $1/2$.
 
-Après avoir hésité, vous avez choisi **l'enveloppe A**.
-Au moment où vous vous apprêtez à regarder à l'intérieur, le présentateur vous murmure une tentation diabolique :
+$$
+(X,Y)=(s,2s)\quad\text{or}\quad(X,Y)=(2s,s).
+$$
 
-> « Maintenant, si vous le souhaitez, **vous pouvez échanger** cette enveloppe A avec l'enveloppe B restante. Voulez-vous échanger ? »
+Le choix équiprobable avant d’observer un montant ne détermine pas les probabilités après cette observation. Pour calculer ces dernières, il faut aussi une **loi a priori** décrivant comment le plus petit montant est généré. « Montant fini » concerne chaque réalisation : cela n’implique ni une espérance finie ni une borne supérieure finie des montants.
 
-Alors, devriez-vous échanger les enveloppes ?
+## 2. Le calcul séduisant d’un « gain de 25 % à chaque échange »
 
----
+Supposons que vous observiez $X=x$. Il est tentant de dire : « L’autre enveloppe contient la moitié ou le double, avec une probabilité $1/2$ pour chaque cas », puis de calculer :
 
-## 2. La « boucle infinie » déduite par le calcul de l'espérance
+$$
+\frac12\cdot\frac{x}{2}+\frac12\cdot2x=\frac54x.
+$$
 
-Ici, exerçons un peu de réflexion mathématique.
-Supposons que le montant contenu dans l'enveloppe A que vous possédez est de $X$ yens.
-Le montant contenu dans l'enveloppe B est, selon les règles, soit « la moitié de $X$ yens ($\frac{X}{2}$) », soit « le double de $X$ yens ($2X$) ». La probabilité est de $\frac{1}{2}$ (50 %) pour chacun.
-
-Calculons maintenant **l'espérance (le montant moyen attendu) si vous échangez les enveloppes**.
-
-$$ E = \frac{1}{2} \times \left(\frac{X}{2}\right) + \frac{1}{2} \times (2X) $$
-$$ E = \frac{X}{4} + X = \frac{5}{4}X = 1.25X $$
-
-Un résultat surprenant est apparu.
-Rien qu'en échangeant les enveloppes, l'espérance bondit à **$1.25$ fois** (une augmentation de 25 %) le montant initial $X$.
-La conclusion est : « Mathématiquement parlant, il est absolument avantageux d'échanger ! »
-
-Cependant, c'est ici que se produit **l'effondrement logique**.
-Supposons que vous ayez échangé pour l'enveloppe B. Que se passerait-il si, juste après, le présentateur vous demandait à nouveau : « Voulez-vous finalement revenir à A ? »
-La formule de calcul exacte s'applique de la même manière, et cette fois, la conclusion serait « l'espérance sera multipliée par 1.25 si vous passez de B à A ».
-
-En d'autres termes, **rien qu'en continuant à échanger de « A vers B » puis de « B vers A », l'espérance théorique continuerait d'augmenter indéfiniment**. Cela contredit clairement la réalité (le contenu des enveloppes est déterminé dès le départ et n'augmente pas parce que vous les avez échangées).
+L’arithmétique est correcte, mais **l’équiprobabilité après observation du montant n’est pas justifiée**. Répéter ce raisonnement après l’échange laisserait croire que les allers-retours augmentent indéfiniment l’argent. Le diagramme représente ce raisonnement erroné, pas une stratégie valide.
 
 ```mermaid
-graph TD
-    Start["Vous choisissez l'enveloppe A (Contient X yens)"] --> Think["Calculer s'il est avantageux d'échanger"]
-    
-    Think --> Case1["Enveloppe B est la moitié (X/2 yens) : probabilité 50%"]
-    Think --> Case2["Enveloppe B est le double (2X yens) : probabilité 50%"]
-    
-    Case1 --> Calc["Espérance = (X/4) + X = 1.25X"]
-    Case2 --> Calc
-    
-    Calc --> SwitchToB["Échanger pour l'enveloppe B ! (Contient Y yens)"]
-    
-    SwitchToB --> ThinkAgain["Calculer à nouveau"]
-    ThinkAgain --> Case3["Enveloppe A est la moitié (Y/2 yens) : probabilité 50%"]
-    ThinkAgain --> Case4["Enveloppe A est le double (2Y yens) : probabilité 50%"]
-    
-    Case3 --> Calc2["Espérance = 1.25Y"]
-    Case4 --> Calc2
-    
-    Calc2 --> SwitchToA["Échanger à nouveau pour l'enveloppe A !"]
-    SwitchToA --> Start
-    
-    style Calc fill:#ff9999,stroke:#333,stroke-width:2px
-    style Calc2 fill:#ff9999,stroke:#333,stroke-width:2px
-    style SwitchToA fill:#ff4444,color:#fff,stroke:#333,stroke-width:4px
+flowchart TD
+    A["Vous observez votre montant"] --> B["Vous supposez moitié ou double à 50 % chacun sans justification"]
+    B --> C["Vous calculez la moyenne de l’autre montant à 1,25 fois le vôtre"]
+    C --> D["Vous échangez"]
+    D --> E["Vous utilisez la même hypothèse pour justifier le retour"]
+    E --> A
 ```
 
-Pourquoi un calcul d'espérance en apparence parfait a-t-il produit un paradoxe aussi étrange ?
+Il est également trompeur d’attribuer l’erreur au fait qu’une variable aléatoire prend des valeurs différentes selon les cas : c’est précisément une propriété normale des variables aléatoires. Le problème est de changer ce qui est tenu fixe et les probabilités utilisées.
 
----
+## 3. Symétrie avant l’ouverture et espérance finie
 
-## 3. Explication de l'astuce mathématique : la substitution de variables
+Une fois le plus petit montant fixé, les espérances avant et après l’échange sont identiques.
 
-Le piège de ce paradoxe réside dans **« l'utilisation de la variable aléatoire $X$ »**.
+$$
+\mathbb E[X\mid S=s]=\mathbb E[Y\mid S=s]=\frac{3s}{2}.
+$$
 
-Dans la formule précédente, nous avons traité le montant $X$ de l'enveloppe A comme une **constante fixe**, et avons supposé que l'enveloppe B était « $\frac{X}{2}$ ou $2X$ ».
-Cependant, ce qui est véritablement fixe est la **« somme des montants dans les deux enveloppes » **, ou encore le ** « montant le plus faible »**.
+Même si le plus petit montant est aléatoire, le montant choisi et l’autre ont la même loi. En particulier, si l’espérance du plus petit montant est finie,
 
-Soit $S$ le montant dans l'enveloppe contenant le moins d'argent. Alors, l'enveloppe contenant le plus d'argent contient un montant de $2S$.
-Il n'y a que les 2 scénarios suivants pour l'ensemble du jeu (avec une probabilité de $\frac{1}{2}$ chacun).
+$$
+\mathbb E[X]=\mathbb E[Y]=\frac32\mathbb E[S]<\infty.
+$$
 
-- **Scénario 1 :** L'enveloppe A que vous avez choisie contient le plus faible montant ($S$), et l'enveloppe B contient le montant le plus élevé ($2S$)
-- **Scénario 2 :** L'enveloppe A que vous avez choisie contient le montant le plus élevé ($2S$), et l'enveloppe B contient le plus faible montant ($S$)
+Échanger sans observer aucun montant n’augmente donc pas l’espérance du montant reçu. Cela n’exclut pas un avantage conditionnel à une observation particulière. Si l’espérance est infinie, la symétrie des lois subsiste, mais soustraire deux infinis ne permet pas de calculer un gain moyen.
 
-Maintenant, calculons correctement l'espérance pour les cas **« si vous n'échangez pas » ** et ** « si vous échangez »**.
+## 4. Après l’ouverture, partir de la loi a priori
 
-**Espérance si vous n'échangez pas $E_{stay}$ :**
-$$ E_{stay} = \frac{1}{2} \times S + \frac{1}{2} \times 2S = \frac{3}{2}S = 1.5S $$
+Considérons d’abord un plus petit montant discret, avec $p(s)=\Pr(S=s)$ et une masse nulle hors de son support. Pour un montant $x$ observable avec une probabilité non nulle, notons $q(x)$ la probabilité conditionnelle que l’autre enveloppe contienne le double. Le [théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/) donne :
 
-**Espérance si vous échangez $E_{switch}$ :**
-Dans le scénario 1, vous obtenez $2S$, et dans le scénario 2, vous obtenez $S$.
-$$ E_{switch} = \frac{1}{2} \times 2S + \frac{1}{2} \times S = \frac{3}{2}S = 1.5S $$
+$$
+q(x)=\Pr(Y=2x\mid X=x)=\frac{p(x)}{p(x)+p(x/2)}.
+$$
 
-$$ E_{stay} = E_{switch} $$
+Le numérateur correspond au cas où le plus petit montant est celui observé et où l’enveloppe contenant le moins d’argent a été choisie. L’autre terme correspond au cas où le plus petit montant est la moitié de celui observé et où l’enveloppe contenant le plus d’argent a été choisie. Les facteurs de sélection communs se simplifient. Le dénominateur doit être strictement positif.
 
-L'espérance concorde parfaitement !
-Dans le premier calcul erroné, nous avons traité $X$ du scénario 1 (qui est en réalité $S$) et $X$ du scénario 2 (qui est en réalité $2S$) **comme s'il s'agissait de la même variable $X$, alors qu'ils ont des valeurs différentes**, ce qui a créé l'illusion que « l'espérance augmente si l'on échange ».
+$$
+\begin{aligned}\mathbb E[Y\mid X=x]&=2xq(x)+\frac{x}{2}(1-q(x)),\\ g(x)&=\mathbb E[Y\mid X=x]-x=\frac{x}{2}(3q(x)-1).\end{aligned}
+$$
+
+Échanger augmente l’espérance conditionnelle du montant lorsque $q(x)>1/3$. Cela ne garantit pas un gain effectif. Ces formules utilisent des masses de probabilité discrètes ; on ne peut pas les transposer à des densités continues par simple substitution.
+
+## 5. Quand observer 10 000 yens donne une espérance de 12 500
+
+Supposons que le plus petit montant soit de 5 000 ou 10 000 yens, avec une probabilité 1/2 pour chacun. Nous choisissons une enveloppe de façon équiprobable et observons 10 000 yens. Conditionnellement à cette observation, l’autre montant est de 5 000 ou 20 000 yens, avec une probabilité 1/2 pour chacun. Dans ce modèle, le calcul précédent est justifié.
+
+$$
+\mathbb E[Y\mid X=10000]=\frac12\cdot5000+\frac12\cdot20000=12500.
+$$
 
 ```mermaid
-pie title La vérité sur l'espérance (si le montant le plus faible est S)
-    "Espérance sans échanger (1.5S)" : 50
-    "Espérance avec échange (1.5S)" : 50
+flowchart TD
+    A["Plus petit montant 5000 ou 10000 yens : probabilité 1/2 chacun"] --> B["Choix équiprobable d’une enveloppe"]
+    B --> C["Conditionnement par l’observation de 10000 yens"]
+    C --> D["Plus petit montant 5000 : autre montant 5000 yens"]
+    C --> E["Plus petit montant 10000 : autre montant 20000 yens"]
+    D --> F["Probabilités conditionnelles 1/2 chacune : moyenne de l’autre montant 12500 yens"]
+    E --> F
 ```
 
----
+Le diagramme ne montre que la partie conditionnée par l’observation de 10 000 yens. Pour l’ensemble des observations, votre montant est de 5 000, 10 000 ou 20 000 yens avec les probabilités respectives 1/4, 1/2 et 1/4. Les gains conditionnels de l’échange sont respectivement de 5 000, 2 500 et −10 000 yens, et leur moyenne est nulle.
 
-## 4. Que se passe-t-il si vous ouvrez l'enveloppe ?
+$$
+\frac14\cdot5000+\frac12\cdot2500-\frac14\cdot10000=0.
+$$
 
-Le paradoxe semble résolu. Cependant, un problème plus profond vous attend.
+Un budget fini borne les montants. Si le modèle admet un montant maximal observable, celui-ci ne peut pas avoir un montant correspondant qui soit le double. Cela ne signifie pas que la probabilité d’obtenir le double diminue toujours avec le montant observé. Si les plus petits montants 1, 2 et 4 ont les probabilités 49/100, 1/100 et 1/2, alors $q(2)=1/50$, mais $q(4)=50/51$. La forme de la loi a priori compte.
 
-Que se passerait-il si, **avant d'échanger les enveloppes, vous regardiez à l'intérieur de votre enveloppe A** ?
-En ouvrant l'enveloppe A, vous découvrez qu'elle contient **« 10 000 yens »**.
+## 6. Avec une espérance finie, pas d’avantage à chaque observation
 
-À cet instant, la valeur devient une certitude : $X = 10000$.
-L'enveloppe B contient alors soit « 5 000 yens », soit « 20 000 yens ».
-Que se passe-t-il si l'on applique la première formule de calcul ici ?
+Si le plus petit montant a une espérance finie, $g(X)$ est intégrable. La [formule de l’espérance totale](https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/c1ab69cb198badcebee42d5880784439_MIT6_436JF18_rec3.pdf) donne :
 
-$$ E_{switch} = \frac{1}{2} \times 5000 + \frac{1}{2} \times 20000 = 2500 + 10000 = 12500 $$
+$$
+\mathbb E[g(X)]=\mathbb E[Y]-\mathbb E[X]=0.
+$$
 
-L'espérance est de 12 500 yens. Elle est incontestablement supérieure aux 10 000 yens actuels.
-De plus, cette fois-ci, $X$ étant une « constante spécifique » de 10 000 yens, la contre-argumentation de la « substitution de variables » ne tient plus.
-Dans ce cas, est-il **absolument avantageux d'échanger** ?
+Il est donc impossible que le gain conditionnel soit strictement positif presque sûrement. Dans un modèle discret, échanger ne peut pas être strictement avantageux pour chaque observation de probabilité non nulle. L’hypothèse décisive est une **espérance finie**, pas seulement des probabilités dont la somme vaut un.
 
-### Réfutation par l'inférence bayésienne : l'absence de « distribution a priori »
+## 7. Une loi a priori propre d’espérance infinie fournit un contre-exemple
 
-Face à cela, les mathématiciens ont introduit le concept de **« distribution a priori des montants (probabilité a priori) »**.
-Il s'agit de se demander : peut-on vraiment dire que 5 000 yens et 20 000 yens ont chacun une probabilité de $\frac{1}{2}$ de s'y trouver ?
+Considérons la loi étudiée dans [l’article de Broome](https://users.ox.ac.uk/~sfop0060/pdf/Two%20envelope%20paradox.pdf) :
 
-Par exemple, supposons que le budget maximum du jeu soit de 100 millions de yens. Si vous ouvrez l'enveloppe A et y trouvez « 60 millions de yens », la probabilité que l'enveloppe B contienne « 120 millions de yens » est de zéro (car cela dépasse le budget). En d'autres termes, plus le montant de l'enveloppe A est élevé, plus la probabilité que l'enveloppe B contienne « le double » devrait diminuer, et la probabilité qu'elle contienne « la moitié » devrait augmenter.
+$$
+\Pr(S=2^n)=\frac13\left(\frac23\right)^n,\qquad n=0,1,2,\ldots.
+$$
 
-En supposant une distribution a priori arbitraire $P(x)$, et en calculant l'espérance à l'aide du [théorème de Bayes](/fr/p/bayes-theorem/), il a été mathématiquement prouvé que **pour toute distribution de probabilité réaliste (dont la somme est égale à 1), il n'existe aucune distribution magique pour laquelle il est "plus avantageux d'échanger" pour tous les montants $X$**.
+$$
+\sum_{n=0}^{\infty}\frac13\left(\frac23\right)^n=1,\qquad \mathbb E[S]=\frac13\sum_{n=0}^{\infty}\left(\frac43\right)^n=\infty.
+$$
 
----
+C’est une **loi de probabilité propre et normalisée**, et non une loi a priori uniforme impropre. Pour une observation $x=2^n$ avec $n\ge1$,
 
-## 5. Le piège de l'infini : lien avec le paradoxe de Saint-Pétersbourg
+$$
+q(x)=\frac25,\qquad \mathbb E[Y\mid X=x]=\frac25(2x)+\frac35\frac{x}{2}=\frac{11}{10}x>x.
+$$
 
-Il n'existe qu'un seul cas où « il est avantageux d'échanger pour tous les $X$ ».
-C'est uniquement lorsqu'on suppose une « distribution de probabilité impropre (une distribution dont la somme est infinie) » où le budget du jeu est **infini** et où tous les montants (1 yen, 2 yens, 4 yens, 8 yens... à l'infini) apparaissent de manière équiprobable.
+Pour l’observation minimale, 1, l’autre montant est nécessairement 2. Ainsi, à chaque observation de probabilité non nulle, l’espérance conditionnelle de l’autre montant dépasse le vôtre. Cela ne concerne pas un conditionnement par des montants hors du support.
 
-Cependant, il n'existe aucune chaîne de télévision dotée d'actifs infinis dans le monde réel.
-Ce bug provoqué par cette « espérance mathématique infinie » trouve ses racines profondément liées au **[paradoxe de Saint-Pétersbourg](/fr/p/st-petersburg-paradox/)** (le problème de savoir combien une personne serait prête à payer pour un pari ayant une espérance mathématique infinie).
+On ne peut pourtant pas en déduire un gain moyen inconditionnel positif. Posons $D=Y-X$, avec la partie positive $D^+=\max(D,0)$ et la partie négative $D^-=\max(-D,0)$ :
 
-## 6. Conclusion : la terreur des probabilités et de l'espérance
+$$
+\mathbb E[D^+]=\mathbb E[D^-]=\frac12\mathbb E[S]=\infty.
+$$
 
-Bien que le « paradoxe des deux enveloppes » ne repose que sur de simples multiplications et additions, il nous livre les leçons suivantes :
+Les deux parties ont une espérance infinie : l’espérance de la différence signée [n’est donc pas définie](https://www.stat.berkeley.edu/~wfithian/courses/stat210a/measure-theory-basics.html). La formule de l’espérance totale reste valable pour le montant positif ou nul :
 
-1. **Les erreurs causées par l'ambiguïté des définitions** : Si l'on ne précise pas clairement ce que représente une variable (si $X$ indique toujours le même montant), la logique s'effondre facilement.
-2. **L'illusion que "pas d'information = probabilité de 50%"** : L'hypothèse selon laquelle « puisque je ne sais pas, ce doit être du cinquante-cinquante » (le principe de raison insuffisante) conduit parfois à des erreurs de calcul fatales.
-3. **La difficulté de manipuler l'infini** : Introduire dans une formule mathématique le concept d'« infini » qui ne peut être appliqué au monde réel produit des résultats contraires au bon sens.
+$$
+\mathbb E[\mathbb E[Y\mid X]]=\mathbb E[Y]=\infty.
+$$
 
-La prochaine fois que vous penserez dans votre vie que « l'herbe est plus verte ailleurs, et qu'il est plus avantageux d'échanger », souvenez-vous de ce paradoxe. Il se peut que, dans votre équation, les variables aient simplement été substituées.
+L’infini ne brise pas cette formule. Ce qui n’est pas permis, c’est d’appliquer sans vérifier les hypothèses la soustraction ou la linéarité du cas d’espérance finie à une différence signée non intégrable. Il faut distinguer les calculs finis conditionnés par chaque observation possible de l’espérance inconditionnelle de la différence. En tronquant puis en renormalisant la loi a priori, on conserve une perte à l’observation maximale et le gain moyen de l’échange redevient nul.
 
+## 8. Les densités continues nécessitent un changement de variable
 
+Si le plus petit montant a une densité continue $f$, la contribution à la densité du montant observé est $f(x)/2$ lorsque le plus petit montant est choisi, et $f(x/2)/4$ lorsque le plus grand est choisi. La seconde contribution inclut à la fois le facteur de sélection équiprobable et celui du changement de variable $x=2s$.
+
+$$
+q(x)=\frac{f(x)}{f(x)+\tfrac12f(x/2)}.
+$$
+
+Cette formule conditionnelle s’utilise là où la densité du montant observé est strictement positive. Pour une variable à densité, l’événement « prendre une valeur donnée » est de probabilité nulle ; il ne s’agit pas d’un quotient de probabilités d’événements discrets. Broome présente aussi la densité propre :
+
+$$
+f(s)=\frac{1}{(1+s)^2},\qquad s>0.
+$$
+
+Son intégrale vaut un, mais l’espérance du plus petit montant est infinie. Pour un montant observé strictement positif,
+
+$$
+\frac{f(x/2)}{f(x)}=\frac{4(1+x)^2}{(2+x)^2}<4
+\quad\Longrightarrow\quad q(x)>\frac13.
+$$
+
+La version continue de l’espérance conditionnelle déterminée par ces densités dépasse donc votre montant à chaque observation strictement positive. C’est un autre contre-exemple à l’affirmation selon laquelle la normalisation seule rendrait nécessairement l’échange défavorable pour certains montants.
+
+## 9. Rapports d’échange, décisions et infini
+
+Pour le rapport avant l’ouverture $R=Y/X$, le choix équiprobable donne un rapport de 2 ou de 1/2 avec une probabilité 1/2 pour chacun. Son espérance vaut bien 5/4, tout comme celle du rapport inverse. Mais les rapports de deux échanges successifs sont inverses l’un de l’autre, et ne sont pas indépendants.
+
+$$
+\mathbb E[R]=\mathbb E[1/R]=\frac54,\qquad \mathbb E[R(1/R)]=1\ne\frac{25}{16}=\mathbb E[R]\mathbb E[1/R].
+$$
+
+Revenir à l’enveloppe d’origine restitue le montant d’origine. On ne peut pas multiplier votre montant par l’espérance inconditionnelle du rapport, ni multiplier les espérances des rapports de deux échanges, sans justification. Voir les deux montants change aussi l’information : l’incertitude entre la moitié et le double disparaît.
+
+Ce problème est lié au [paradoxe de Saint-Pétersbourg](https://kenji.blog/fr/p/st-petersburg-paradox/), qui traite aussi de paris d’espérance infinie. Les limites budgétaires réelles, la génération des montants, l’utilité et l’attitude face au risque peuvent modifier les décisions. Nous comparons ici des montants espérés, pas une règle universelle de décision ni un bénéfice garanti.
+
+Les probabilités conditionnelles nécessitent un modèle de génération des montants, et normaliser ne signifie pas avoir une espérance finie. Avec une espérance finie, la symétrie et l’espérance totale donnent un gain moyen nul à l’échange. Avec une espérance infinie, des lois propres fournissent des contre-exemples : il faut distinguer l’espérance infinie d’une variable positive ou nulle du cas d’une différence signée dont l’espérance n’est pas définie.
