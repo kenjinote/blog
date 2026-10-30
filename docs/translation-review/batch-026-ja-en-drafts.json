@@ -23,6 +23,6 @@
       "diagrams": 2
     }
   ],
-  "hashNormalization": "UTF-8 without BOM; CRLF normalized to LF",
+  "hashNormalization": "originalSha256 is UTF-8 text without BOM with CRLF normalized to LF. draftSha256 records raw bytes from the writer and may include retained header CRLF. Use normalized sha256 values in batch-026-ja-en-draft-validation.json for version comparison.",
   "scope": "JA/EN full-body drafts after reading both originals and scoped primary sources. Not final proofreading, rendered HTML verification, ledger certification, or publication. Other11translations untouched. Flags are explicit preferences, not evidence of a previously broken renderer."
 }
