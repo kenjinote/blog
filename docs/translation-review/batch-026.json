@@ -368,6 +368,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/bayes-theorem/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "source": "post/bayes-theorem/index.md",
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "translationHash": "a260f0c34e23c11dea2536ea70e4b03216bfdaab7eb59f21a169e6a196967760",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read original and revised Hindi metadata, entire body, table and both Mermaid sources against corrected Japanese,including final posterior-computation and new-information headings. Preserved all10sections,updating/history,theorem/normalizer,likelihood/MAP/predictive distinction,hypothetical medical test,four AI applications,both diagrams,frequentist/Bayesian comparison and conclusion. Corrected the explicit original directed-cyclic description of a DAG to directed-acyclic with no directed cycles,omitted normalization,unconditional independence,all-learning-as-posterior-maximization,causal/minimum-trials/calibration guarantees and finite-half wording. Retained original correct16.7% as1/6;target disease is not necessarily infection or the only aspect of health."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared पूर्व/पश्च प्रायिकता,लाइकलीहुड/सीमांत लाइकलीहुड,सामान्यीकरण,प्रायिकता घनत्व,प्राचल/पैरामीटर,बहुलक/MAP/पश्च पूर्वानुमान,संवेदनशीलता/विशिष्टता/PPV/कुल सही परिणामों का अनुपात,सशर्त संयुक्त/जोड़ों में स्वतंत्रता,निर्देशित अचक्रीय ग्राफ,acquisition function,भारों की अनिश्चितता/कैलिब्रेशन and लगभग निश्चित अभिसरण. Used standard technical English labels with explicit Hindi definitions where a generic संभावना could conflate likelihood and probability. Explained PPV's conditioning group and directed cycles,kept1=चित/0=पट,clarified posterior inference rather than ordinary network computation and taking new information rather than changing observations. Original tags retained."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually checked all22TeX and conditions:positiveB and extra positiveA only for reverse conditioning,joint form with zeroA,positive finite normalizer,MAP attainment,uniform-prior ordered1,1,0posterior12theta^2(1-theta),mode2/3 versus predictive3/5,medical99/1/495/9405counts and1/6PPV/95.04%accuracy,conditional joint-independence product,acyclic-DAG local CPD product and independent roots,continuous-weight predictive average for discrete classes,IIDfair-coin almost-sure convergence versus a finite half. Source/decodedHTML exact. FinalR2validator shared one auxiliary run:1260positiveB tables,1230reverse cases,30zeroA cases,36undefinedB exclusions,128toyDAG assignments with normalization/marginal/posterior checks. First successful proof preserved;repeated cases not counted as new distinct cases. Earlier source-audit calculations are separate historical evidence,not newly rerun or universal proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original and revised Hindi contain two Mermaid blocks and0executable article programs. Read all localized labels and both complete graph sources;9and7edges match Japanese topology and exact decodedHTML. Second graph separates6probabilistic edges in the model from1dotted inference annotation outside,not an extra random variable. The original cyclic-DAG prose was corrected explicitly;graph-source preservation alone would not catch that semantic error. Auxiliary Fraction checks are not article-code execution,clinical measurement,BNN training or BO optimization. No browser visual/KaTeX/Mermaid runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Nine exact primary references and Hindi internal LLN/two-envelope URLs checked in source/generatedHTML;internal targets exist in28-bundle preview. Primary reading ranges/failures separately documented,not full-paper certification. Preserved originalSep20date,slug,heroimage bytes,categories/Hindi tags;Oct30lastmod/math/Mermaid preferences do not prove prior renderer failure.14hreflang/13sidebar targets exact. Current1609multilingual pages/2933HTML41XMLHTTPS passed. Previous17unit tests not rerun here. First successful proof preserved with freshR2final proof. Existing isolated-preview missing-page/layout/PortugueseUI warnings retained. Publication pending."
+        }
+      },
+      "summary": "Full Hindi review correcting cyclic versus acyclic DAG meaning and distinguishing likelihood, medical denominators, posterior prediction and almost-sure convergence.",
+      "languageSpecificFindings": "मूल और संशोधित पूरे लेख,मेटाडेटा,तालिका और दोनों चित्रों का जापानी से मिलान किया। चक्रीय ग्राफ को अचक्रीय किया और निर्देशित चक्र न होने का अर्थ बताया। लाइकलीहुड,घनत्व,बहुलक,पश्च पूर्वानुमान,संवेदनशीलता/PPV/accuracy,सशर्त स्वतंत्रता और लगभग निश्चित अभिसरण अलग किए। चारAIउपयोग,दोचित्र और सांख्यिकीय तुलना सुरक्षित हैं।",
+      "validation": "docs/translation-review/batch-026-hi-r2-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "2other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,clinical evidence,model training or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -712,6 +753,44 @@
       "unreviewedTranslations": 12711,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 3,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-10-30",
+      "languagesRead": [
+        "hi"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "e08c68362ba0de9480a9fb0493e5c68eaaecc720255dc8342c81369ceb2e38f0",
+      "validation": "docs/translation-review/batch-026-hi-r2-validation.json",
+      "checks": "docs/translation-review/batch-026-hi-r2-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-026-hi-ledger-validation.json",
+      "texEach": 22,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        9,
+        7
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "jointFormulaTables": 1260,
+        "reverseFormulaTables": 1230,
+        "zeroPriorAWithPositiveB": 30,
+        "undefinedBExcluded": 36,
+        "toyDagAssignments": 128,
+        "toyDagTotalMass": "1",
+        "toyDagPrior": "151/600",
+        "toyDagPosterior": "14949/17194",
+        "scope": "Exact auxiliary enumeration once per invocation. Not article-program execution, clinical evidence, BNN training, BO optimization, or a universal proof. Source-audit arithmetic for medical counts, conditional independence/XOR, finite coins and posterior mode/prediction is preserved separately, not recounted as rerun."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 322,
+      "unreviewedTranslations": 12710,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 2,
       "publicationPending": true
     }
   ],

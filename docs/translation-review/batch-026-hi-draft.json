@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "draftedAt": "2026-10-30T19:31:56.766343+09:00",
+  "path": "content/post/bayes-theorem/index.hi.md",
+  "originalSha256": "1ef09b78efea90f26a023d48ad748bd1e48a4c529f0e6f17584d0399849f06bb",
+  "draftSha256": "6c26b351f761282e6f565bf268bd446da038636d4bbdfa9d8885f52944802cbe",
+  "commonTeX": 22,
+  "draftOnly": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original Hindi full metadata/body/two diagrams read. Complete rewrite against corrected Japanese,including cyclic-to-acyclic correction;pending reread/HTML checks and ledger. Other2translations not newly reviewed."
+}
