@@ -1,9 +1,9 @@
 ---
-title: 'Paradoks Dua Amplop: Runtuhnya Logika dan Perangkap Pengambilan Keputusan akibat Nilai Harapan Tak Terhingga'
-date: "2026-09-24T19:44:38+09:00"
+title: "Paradoks Dua Amplop: Peluang Bersyarat dan Nilai Harapan Tak Terhingga"
+date: "2026-09-10T00:00:00+09:00"
+lastmod: 2026-10-30
 slug: 'two-envelopes-paradox'
-description: 'Ada dua amplop di depan Anda. Salah satunya berisi uang dua kali lipat dari yang lain. Jika Anda menukarnya tanpa membuka amplop Anda sendiri, apakah Anda akan selalu untung secara nilai harapan? Melalui "Paradoks Dua Amplop" yang memicu benturan keras antara intuisi dan matematika, kami akan menjelaskan secara tuntas jebakan nilai harapan dan konsep tak terhingga.'
-date: '2026-09-10T00:00:00+09:00'
+description: "Apakah menukar amplop menguntungkan? Hitung keuntungan bersyarat yang diharapkan dari distribusi prior, bedakan normalisasi dan nilai harapan berhingga, serta periksa contoh penyangkal dengan distribusi ternormalisasi bernilai harapan tak terhingga."
 image: 'img/two_envelopes.jpg'
 math: true
 mermaid: true
@@ -14,152 +14,174 @@ tags:
   - 'Tak Terhingga'
 ---
 
-## 1. Pilihan Utama: Menukar atau Tidak Menukar?
+## 1. Tentukan dahulu cara memilih amplop
 
-Anda sedang berada di babak final sebuah acara permainan. Di atas meja di depan Anda, terdapat **dua amplop (A dan B)** yang terlihat sama persis.
-Pembawa acara berkata:
+Dua amplop yang tampak sama berisi uang. Salah satunya berisi dua kali jumlah pada amplop lainnya. Setelah memilih satu, Anda boleh menukarnya. Apakah menukar menguntungkan sebelum amplop dibuka atau setelah jumlahnya terlihat?
 
-> "Salah satu amplop berisi **uang dua kali lipat** dari amplop yang lain. Silakan pilih salah satu."
+Misalkan $S$ adalah jumlah yang lebih kecil, suatu variabel acak positif dan berhingga. Kedua amplop berisi $S$ dan $2S$. Pilih satu dengan lemparan koin seimbang yang hasilnya independen dari isi amplop. Sebut jumlah yang dipilih $X$ dan jumlah lainnya $Y$. Dengan syarat jumlah yang lebih kecil ditetapkan pada $S=s$, dua hasil berikut masing-masing memiliki peluang $1/2$.
 
-Setelah ragu-ragu, Anda memilih **Amplop A**.
-Tepat saat Anda hendak melihat isinya, pembawa acara memberikan bisikan setan.
+$$
+(X,Y)=(s,2s)\quad\text{or}\quad(X,Y)=(2s,s).
+$$
 
-> "Sekarang, Anda **boleh menukar** Amplop A tersebut dengan Amplop B yang tersisa. Apakah Anda ingin menukarnya?"
+Pemilihan dengan peluang sama sebelum melihat jumlah uang tidak menentukan peluang setelah suatu jumlah diamati. Untuk menghitung yang terakhir, diperlukan **distribusi prior** yang menjelaskan bagaimana jumlah yang lebih kecil dihasilkan. Jumlah berhingga berarti setiap realisasi bernilai berhingga, bukan berarti nilai harapan atau batas atas jumlah uang juga berhingga.
 
-Nah, haruskah Anda menukar amplop tersebut?
+## 2. Perhitungan menggoda: «untung 25% setiap menukar»
 
----
+Misalkan Anda mengamati $X=x$. Kita mungkin tergoda mengatakan, «Amplop lain berisi setengah atau dua kali lipat, masing-masing dengan peluang $1/2$», lalu menghitung:
 
-## 2. "Lingkaran Tak Terhingga" yang Dihasilkan oleh Perhitungan Nilai Harapan
+$$
+\frac12\cdot\frac{x}{2}+\frac12\cdot2x=\frac54x.
+$$
 
-Sekarang, mari kita gunakan sedikit pemikiran matematis.
-Misalkan jumlah uang di dalam Amplop A yang Anda pegang adalah $X$ Yen.
-Sesuai aturan, jumlah uang di Amplop B bisa jadi "setengah dari $X$ Yen ($\frac{X}{2}$)" atau "dua kali lipat dari $X$ Yen ($2X$)". Peluang masing-masing adalah $\frac{1}{2}$ (50%).
-
-Sekarang, mari kita hitung **nilai harapan (rata-rata jumlah yang diharapkan) jika Anda menukar amplop**.
-
-$$ E = \frac{1}{2} \times \left(\frac{X}{2}\right) + \frac{1}{2} \times (2X) $$
-$$ E = \frac{X}{4} + X = \frac{5}{4}X = 1.25X $$
-
-Hasil yang mengejutkan muncul.
-Hanya dengan menukar amplop, nilai harapannya melonjak menjadi **$1.25$ kali lipat** (naik 25%) dari nilai awal $X$ Yen.
-Kesimpulannya adalah, "Jika dipikirkan secara matematis, pasti lebih menguntungkan untuk menukar!"
-
-Namun, di sinilah **runtuhnya logika** terjadi.
-Misalkan Anda menukarnya dengan Amplop B. Tepat setelah itu, bagaimana jika pembawa acara bertanya lagi, "Apakah Anda ingin kembali ke A?"
-Rumus perhitungan yang sama persis akan berlaku, dan kali ini menjadi "jika Anda menukar dari B ke A, nilai harapannya menjadi 1.25 kali lipat".
-
-Dengan kata lain, **hanya dengan terus menukar dari "A ke B" dan "B ke A", nilai harapan teoretisnya akan terus meningkat tanpa batas**. Ini jelas bertentangan dengan kenyataan (isi amplop sudah ditentukan sejak awal, dan tidak akan bertambah hanya karena Anda menukarnya).
+Aritmetikanya benar, tetapi **asumsi bahwa kedua kemungkinan tetap sama peluangnya setelah jumlah uang diamati tidak memiliki dasar**. Mengulang alasan itu setelah menukar akan memberi kesan bahwa bolak-balik menukar terus menambah uang. Diagram ini menunjukkan penalaran yang keliru, bukan strategi yang benar.
 
 ```mermaid
-graph TD
-    Start["Anda memilih Amplop A (isi: X Yen)"] --> Think["Menghitung apakah lebih menguntungkan jika ditukar"]
-    
-    Think --> Case1["Amplop B berisi setengahnya (X/2 Yen) : Peluang 50%"]
-    Think --> Case2["Amplop B berisi dua kali lipat (2X Yen) : Peluang 50%"]
-    
-    Case1 --> Calc["Nilai Harapan = (X/4) + X = 1.25X"]
-    Case2 --> Calc
-    
-    Calc --> SwitchToB["Menukar ke Amplop B! (isi: Y Yen)"]
-    
-    SwitchToB --> ThinkAgain["Menghitung lagi"]
-    ThinkAgain --> Case3["Amplop A berisi setengahnya (Y/2 Yen) : Peluang 50%"]
-    ThinkAgain --> Case4["Amplop A berisi dua kali lipat (2Y Yen) : Peluang 50%"]
-    
-    Case3 --> Calc2["Nilai Harapan = 1.25Y"]
-    Case4 --> Calc2
-    
-    Calc2 --> SwitchToA["Menukar lagi ke Amplop A!"]
-    SwitchToA --> Start
-    
-    style Calc fill:#ff9999,stroke:#333,stroke-width:2px
-    style Calc2 fill:#ff9999,stroke:#333,stroke-width:2px
-    style SwitchToA fill:#ff4444,color:#fff,stroke:#333,stroke-width:4px
+flowchart TD
+    A["Mengamati jumlah Anda"] --> B["Mengasumsikan setengah atau dua kali lipat masing-masing 50% tanpa dasar"]
+    B --> C["Menghitung rata-rata jumlah lain sebagai 1,25 kali jumlah Anda"]
+    C --> D["Menukar"]
+    D --> E["Memakai asumsi sama untuk membenarkan kembali"]
+    E --> A
 ```
 
-Mengapa perhitungan nilai harapan yang sekilas tampak sempurna ini bisa menghasilkan paradoks yang aneh seperti ini?
+Menganggap kesalahannya terletak pada variabel acak yang mengambil nilai berbeda dalam kasus berbeda juga menyesatkan. Itu justru sifat biasa variabel acak. Masalahnya adalah mengubah apa yang dianggap tetap dan peluang mana yang digunakan.
 
----
+## 3. Simetri sebelum membuka dan nilai harapan berhingga
 
-## 3. Mengungkap Trik Matematis: Pertukaran Variabel
+Jika jumlah yang lebih kecil ditetapkan, nilai harapan sebelum dan sesudah menukar sama.
 
-Jebakan dari paradoks ini terletak pada **"cara menggunakan variabel acak $X$"**.
+$$
+\mathbb E[X\mid S=s]=\mathbb E[Y\mid S=s]=\frac{3s}{2}.
+$$
 
-Pada rumus perhitungan sebelumnya, jumlah uang $X$ di Amplop A diperlakukan sebagai **konstanta tetap**, dan diasumsikan bahwa Amplop B berisi "$\frac{X}{2}$ atau $2X$".
-Namun, yang sebenarnya tetap adalah **"total uang di dalam kedua amplop"**, atau **"jumlah uang yang lebih kecil"**.
+Sekalipun jumlah yang lebih kecil bersifat acak, jumlah yang dipilih dan jumlah lainnya berdistribusi sama. Khususnya, jika nilai harapan jumlah yang lebih kecil berhingga,
 
-Misalkan jumlah uang di amplop yang lebih kecil adalah $S$. Maka, amplop yang lebih besar berisi jumlah uang $2S$.
-Seluruh skenario permainan hanya terdiri dari 2 pola berikut (peluang masing-masing adalah $\frac{1}{2}$).
+$$
+\mathbb E[X]=\mathbb E[Y]=\frac32\mathbb E[S]<\infty.
+$$
 
-- **Pola 1:** Amplop A yang Anda pilih adalah yang lebih kecil ($S$), dan Amplop B adalah yang lebih besar ($2S$)
-- **Pola 2:** Amplop A yang Anda pilih adalah yang lebih besar ($2S$), dan Amplop B adalah yang lebih kecil ($S$)
+Jadi, menukar tanpa mengamati jumlah apa pun tidak meningkatkan nilai harapan uang. Hal ini tidak menutup kemungkinan adanya keuntungan bersyarat untuk suatu pengamatan tertentu. Bila nilai harapannya tak terhingga, simetri distribusi tetap berlaku, tetapi mengurangkan dua besaran tak terhingga tidak menentukan rata-rata keuntungan.
 
-Sekarang, mari kita hitung dengan benar nilai harapan jika **"tidak menukar"** dan **"menukar"** amplop.
+## 4. Setelah membuka, hitung dari distribusi prior
 
-**Nilai harapan jika tidak menukar $E_{stay}$:**
-$$ E_{stay} = \frac{1}{2} \times S + \frac{1}{2} \times 2S = \frac{3}{2}S = 1.5S $$
+Pertimbangkan dahulu jumlah yang lebih kecil yang dipilih secara diskret, dengan $p(s)=\Pr(S=s)$ dan massa peluang nol di luar himpunan nilai yang mungkin. Untuk jumlah $x$ yang dapat diamati dengan peluang positif, tulis $q(x)$ sebagai peluang bersyarat bahwa amplop lain berisi dua kali lipat. [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/) memberikan:
 
-**Nilai harapan jika menukar $E_{switch}$:**
-Pada Pola 1 Anda mendapatkan $2S$, dan pada Pola 2 Anda mendapatkan $S$.
-$$ E_{switch} = \frac{1}{2} \times 2S + \frac{1}{2} \times S = \frac{3}{2}S = 1.5S $$
+$$
+q(x)=\Pr(Y=2x\mid X=x)=\frac{p(x)}{p(x)+p(x/2)}.
+$$
 
-$$ E_{stay} = E_{switch} $$
+Pembilang mewakili kasus ketika jumlah yang lebih kecil sama dengan jumlah yang diamati dan amplop dengan uang lebih sedikit dipilih. Suku lainnya mewakili kasus ketika jumlah yang lebih kecil adalah setengah dari jumlah yang diamati dan amplop dengan uang lebih banyak dipilih. Faktor pemilihan yang sama saling menghapus. Penyebut harus positif.
 
-Luar biasa, nilai harapannya sama!
-Pada perhitungan awal yang salah, nilai $X$ pada Pola 1 (sebenarnya $S$) dan nilai $X$ pada Pola 2 (sebenarnya $2S$), yang merupakan **nilai yang berbeda, diperlakukan sebagai variabel $X$ yang sama**, sehingga menciptakan ilusi bahwa "jika ditukar, nilai harapannya akan naik".
+$$
+\begin{aligned}\mathbb E[Y\mid X=x]&=2xq(x)+\frac{x}{2}(1-q(x)),\\ g(x)&=\mathbb E[Y\mid X=x]-x=\frac{x}{2}(3q(x)-1).\end{aligned}
+$$
+
+Menukar meningkatkan nilai harapan uang bersyarat ketika $q(x)>1/3$. Ini bukan jaminan memperoleh keuntungan nyata. Rumus ini menggunakan massa peluang diskret; kita tidak dapat langsung menggantinya dengan kepadatan peluang kontinu.
+
+## 5. Kapan melihat 10.000 yen memberi nilai harapan 12.500?
+
+Misalkan jumlah yang lebih kecil adalah 5.000 atau 10.000 yen, masing-masing dengan peluang 1/2. Kita memilih amplop dengan peluang sama dan mengamati 10.000 yen. Dengan syarat pengamatan ini, jumlah lainnya adalah 5.000 atau 20.000 yen, masing-masing dengan peluang 1/2. Dalam model ini, perhitungan sebelumnya memiliki dasar.
+
+$$
+\mathbb E[Y\mid X=10000]=\frac12\cdot5000+\frac12\cdot20000=12500.
+$$
 
 ```mermaid
-pie title Fakta Nilai Harapan (Jika jumlah yang lebih kecil adalah S)
-    "Nilai Harapan Tidak Menukar (1.5S)" : 50
-    "Nilai Harapan Menukar (1.5S)" : 50
+flowchart TD
+    A["Jumlah lebih kecil 5000 atau 10000 yen: peluang masing-masing 1/2"] --> B["Memilih amplop dengan peluang sama"]
+    B --> C["Mensyaratkan pengamatan 10000 yen"]
+    C --> D["Jumlah lebih kecil 5000: jumlah lain 5000 yen"]
+    C --> E["Jumlah lebih kecil 10000: jumlah lain 20000 yen"]
+    D --> F["Peluang bersyarat masing-masing 1/2: rata-rata jumlah lain 12500 yen"]
+    E --> F
 ```
 
----
+Diagram hanya menunjukkan bagian dengan syarat pengamatan 10.000 yen. Untuk semua pengamatan, jumlah Anda adalah 5.000, 10.000, atau 20.000 yen dengan peluang berturut-turut 1/4, 1/2, dan 1/4. Keuntungan bersyarat yang diharapkan dari menukar berturut-turut adalah 5.000, 2.500, dan −10.000 yen, sehingga rata-ratanya nol.
 
-## 4. Apa yang Terjadi Jika Amplop Dibuka?
+$$
+\frac14\cdot5000+\frac12\cdot2500-\frac14\cdot10000=0.
+$$
 
-Paradoks ini tampaknya telah terpecahkan. Namun, masalah yang lebih dalam menanti.
+Anggaran berhingga membatasi jumlah uang. Jika model memiliki jumlah uang maksimum yang dapat diamati, tidak mungkin amplop lain berisi dua kali jumlah tersebut. Namun, ini tidak berarti peluang memperoleh dua kali lipat selalu menurun ketika jumlah yang diamati meningkat. Jika jumlah yang lebih kecil 1, 2, dan 4 memiliki peluang 49/100, 1/100, dan 1/2, maka $q(2)=1/50$, tetapi $q(4)=50/51$. Bentuk distribusi prior penting.
 
-Bagaimana jika Anda **melihat isi Amplop A Anda sebelum menukarnya**?
-Saat Anda membuka Amplop A, di dalamnya terdapat **"10.000 Yen"**.
+## 6. Dengan nilai harapan berhingga, peningkatan nilai harapan tidak mungkin terjadi pada setiap pengamatan
 
-Pada momen ini, $X$ menjadi nilai pasti yaitu $10000$.
-Di dalam Amplop B, terdapat "5.000 Yen" atau "20.000 Yen".
-Apa yang terjadi jika kita menerapkan rumus perhitungan awal di sini?
+Jika jumlah yang lebih kecil memiliki nilai harapan berhingga, $g(X)$ dapat diintegralkan. [Hukum nilai harapan total](https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/c1ab69cb198badcebee42d5880784439_MIT6_436JF18_rec3.pdf) memberikan:
 
-$$ E_{switch} = \frac{1}{2} \times 5000 + \frac{1}{2} \times 20000 = 2500 + 10000 = 12500 $$
+$$
+\mathbb E[g(X)]=\mathbb E[Y]-\mathbb E[X]=0.
+$$
 
-Nilai harapannya adalah 12.500 Yen. Jauh lebih tinggi daripada 10.000 Yen yang ada saat ini.
-Apalagi, karena kali ini $X$ adalah "konstanta spesifik" sebesar 10.000 Yen, bantahan "pertukaran variabel" yang tadi tidak berlaku.
-Jika begini, apakah **pasti lebih menguntungkan untuk menukar**?
+Karena itu, tidak mungkin keuntungan bersyarat yang diharapkan bernilai positif hampir pasti, yaitu dengan peluang 1. Dalam model diskret, menukar tidak dapat benar-benar lebih menguntungkan pada setiap pengamatan berpeluang positif. Syarat kuncinya adalah **nilai harapan berhingga**, bukan sekadar jumlah peluang sama dengan satu.
 
-### Sanggahan melalui Inferensi Bayes: Hilangnya "Distribusi Apriori"
+## 7. Prior ternormalisasi dengan nilai harapan tak terhingga memberikan contoh penyangkal
 
-Menanggapi hal ini, para matematikawan mengemukakan konsep **"distribusi apriori (probabilitas apriori) dari jumlah uang"**.
-Pertanyaannya adalah: dapatkah dikatakan bahwa peluang masing-masing 5.000 Yen dan 20.000 Yen benar-benar ada di dalam sebesar $\frac{1}{2}$?
+Pertimbangkan distribusi yang dibahas dalam [artikel Broome](https://users.ox.ac.uk/~sfop0060/pdf/Two%20envelope%20paradox.pdf):
 
-Sebagai contoh, misalkan anggaran maksimum acara tersebut adalah 100 juta Yen. Jika Anda membuka Amplop A dan terdapat "60 juta Yen", probabilitas Amplop B berisi "120 juta Yen" adalah nol (karena melebihi anggaran). Dengan kata lain, semakin besar jumlah di Amplop A, probabilitas Amplop B berisi "dua kali lipat" akan semakin menurun, dan probabilitas berisi "setengah" seharusnya semakin meningkat.
+$$
+\Pr(S=2^n)=\frac13\left(\frac23\right)^n,\qquad n=0,1,2,\ldots.
+$$
 
-Jika kita mengasumsikan distribusi apriori $P(x)$ yang berubah-ubah, saat menghitung nilai harapan menggunakan [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/), secara matematis telah dibuktikan bahwa **tidak ada distribusi ajaib yang membuat "menukar menjadi lebih menguntungkan" untuk semua nilai $X$, pada distribusi probabilitas realistis manapun (di mana jumlah totalnya adalah 1)**.
+$$
+\sum_{n=0}^{\infty}\frac13\left(\frac23\right)^n=1,\qquad \mathbb E[S]=\frac13\sum_{n=0}^{\infty}\left(\frac43\right)^n=\infty.
+$$
 
----
+Ini adalah **distribusi peluang yang ternormalisasi dengan jumlah peluang satu**, bukan prior seragam yang tidak dapat dinormalisasi. Untuk pengamatan $x=2^n$ dengan $n\ge1$,
 
-## 5. Jebakan Tak Terhingga: Hubungannya dengan Paradoks St. Petersburg
+$$
+q(x)=\frac25,\qquad \mathbb E[Y\mid X=x]=\frac25(2x)+\frac35\frac{x}{2}=\frac{11}{10}x>x.
+$$
 
-Satu-satunya kasus di mana "menukar menjadi lebih menguntungkan untuk semua nilai $X$" memang ada.
-Itu hanya terjadi jika kita mengasumsikan anggaran acara adalah **tak terhingga**, dan ada "distribusi probabilitas tak wajar (distribusi di mana jumlah totalnya menjadi tak terhingga)" di mana semua jumlah uang (1 Yen, 2 Yen, 4 Yen, 8 Yen... tak terhingga) muncul secara merata.
+Pada pengamatan terkecil, 1, jumlah lainnya pasti 2. Jadi, untuk setiap pengamatan berpeluang positif, nilai harapan bersyarat dari jumlah lainnya melebihi jumlah Anda. Ini tidak menyatakan apa pun tentang pengondisian pada jumlah di luar himpunan nilai yang mungkin.
 
-Namun, tidak ada stasiun televisi di dunia nyata yang memiliki aset tak terhingga.
-Bug yang disebabkan oleh "nilai harapan tak terhingga" ini berakar dalam pada **[Paradoks St. Petersburg](/id/p/st-petersburg-paradox/)** (masalah tentang seberapa banyak seseorang bersedia membayar untuk perjudian dengan nilai harapan tak terhingga).
+Meskipun demikian, kita tidak dapat menyimpulkan bahwa rata-rata keuntungan tanpa syarat positif. Tulis $D=Y-X$, dengan bagian positif $D^+=\max(D,0)$ dan bagian negatif $D^-=\max(-D,0)$, yang keduanya tidak negatif:
 
-## 6. Kesimpulan: Kengerian Probabilitas dan Nilai Harapan
+$$
+\mathbb E[D^+]=\mathbb E[D^-]=\frac12\mathbb E[S]=\infty.
+$$
 
-Meskipun "Paradoks Dua Amplop" hanya terdiri dari perkalian dan penjumlahan sederhana, paradoks ini memberikan kita pelajaran berikut:
+Kedua bagian memiliki nilai harapan tak terhingga, sehingga nilai harapan selisih bertanda [tidak terdefinisi](https://www.stat.berkeley.edu/~wfithian/courses/stat210a/measure-theory-basics.html). Hukum nilai harapan total tetap berlaku untuk jumlah uang yang tidak negatif:
 
-1. **Kesalahan akibat Definisi yang Ambigu**: Jika Anda tidak memperjelas apa yang dirujuk oleh variabel (apakah $X$ selalu merujuk pada jumlah yang sama), logika akan mudah runtuh.
-2. **Ilusi bahwa "Tidak Ada Informasi = Peluang 50%"**: Asumsi bahwa "karena kita tidak tahu, berarti peluangnya setengah-setengah" (Prinsip Alasan Tidak Cukup) terkadang menyebabkan kesalahan perhitungan yang fatal.
-3. **Kesulitan dalam Menangani Tak Terhingga**: Memasukkan konsep "tak terhingga" yang tidak dapat diterapkan di dunia nyata ke dalam rumus perhitungan akan menghasilkan hasil yang bertentangan dengan akal sehat.
+$$
+\mathbb E[\mathbb E[Y\mid X]]=\mathbb E[Y]=\infty.
+$$
 
-Lain kali dalam hidup saat Anda berpikir "rumput tetangga lebih hijau, dan lebih menguntungkan untuk menukar", ingatlah paradoks ini. Mungkin saja, variabel dalam rumus perhitungan Anda hanya tertukar.
+Tak terhingga tidak merusak hukum tersebut. Yang tidak boleh dilakukan adalah menerapkan pengurangan atau linearitas dari kasus nilai harapan berhingga pada selisih bertanda yang tidak dapat diintegralkan, tanpa memeriksa syaratnya. Perhitungan berhingga dengan syarat setiap pengamatan harus dibedakan dari nilai harapan selisih tanpa syarat. Jika prior dipotong menjadi sejumlah suku yang berhingga lalu dinormalisasi ulang, kerugian pada pengamatan terbesar tetap ada dan rata-rata keuntungan menukar kembali nol.
 
+## 8. Kepadatan kontinu juga memerlukan perubahan variabel
+
+Jika jumlah yang lebih kecil memiliki kepadatan kontinu $f$, cabang pemilihan jumlah lebih kecil menyumbang kepadatan $f(x)/2$, sedangkan cabang jumlah lebih besar menyumbang $f(x/2)/4$. Kontribusi kedua memuat faktor pemilihan dengan peluang sama sekaligus faktor perubahan variabel $x=2s$.
+
+$$
+q(x)=\frac{f(x)}{f(x)+\tfrac12f(x/2)}.
+$$
+
+Rumus bersyarat ini digunakan ketika kepadatan jumlah yang diamati positif. Untuk variabel acak berkepadatan, kejadian mengambil satu nilai tertentu memiliki peluang nol; ini bukan pembagian peluang kejadian diskret. Broome juga memberikan kepadatan ternormalisasi berikut:
+
+$$
+f(s)=\frac{1}{(1+s)^2},\qquad s>0.
+$$
+
+Integralnya satu, tetapi nilai harapan jumlah yang lebih kecil tak terhingga. Untuk jumlah uang teramati yang positif,
+
+$$
+\frac{f(x/2)}{f(x)}=\frac{4(1+x)^2}{(2+x)^2}<4
+\quad\Longrightarrow\quad q(x)>\frac13.
+$$
+
+Jadi, versi kontinu dari nilai harapan bersyarat yang ditentukan oleh kepadatan ini melebihi jumlah Anda pada setiap pengamatan positif. Ini juga menyangkal klaim bahwa normalisasi saja memaksa menukar menjadi tidak menguntungkan pada suatu jumlah.
+
+## 9. Rasio pertukaran, keputusan, dan tak terhingga
+
+Untuk rasio sebelum membuka $R=Y/X$, pemilihan dengan peluang sama menghasilkan rasio 2 atau 1/2, masing-masing dengan peluang 1/2. Nilai harapannya memang 5/4, begitu pula nilai harapan rasio kebalikannya. Namun, rasio dua pertukaran berturut-turut saling berkebalikan, bukan independen.
+
+$$
+\mathbb E[R]=\mathbb E[1/R]=\frac54,\qquad \mathbb E[R(1/R)]=1\ne\frac{25}{16}=\mathbb E[R]\mathbb E[1/R].
+$$
+
+Kembali ke amplop semula mengembalikan jumlah semula. Tanpa alasan yang sah, kita tidak boleh mengalikan jumlah Anda dengan rata-rata rasio tanpa syarat, atau mengalikan rata-rata rasio dua pertukaran. Melihat kedua jumlah juga mengubah informasi: ketidakpastian antara setengah dan dua kali lipat menghilang.
+
+Masalah ini berkaitan dengan [paradoks St. Petersburg](https://kenji.blog/id/p/st-petersburg-paradox/), yang juga membahas taruhan dengan nilai harapan tak terhingga. Batas anggaran nyata, cara jumlah uang dihasilkan, utilitas, dan sikap terhadap risiko dapat mengubah keputusan. Yang dibandingkan di sini adalah nilai harapan uang, bukan aturan keputusan universal atau keuntungan yang dijamin.
+
+Peluang bersyarat memerlukan model pembentukan jumlah uang, dan normalisasi tidak sama dengan nilai harapan berhingga. Dengan nilai harapan berhingga, simetri dan hukum nilai harapan total memberikan rata-rata keuntungan menukar nol. Dengan nilai harapan tak terhingga, distribusi ternormalisasi dapat memberikan contoh penyangkal: kita perlu membedakan nilai harapan tak terhingga dari variabel tidak negatif dengan selisih bertanda yang nilai harapannya tidak terdefinisi.
