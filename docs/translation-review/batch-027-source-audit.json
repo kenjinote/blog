@@ -1,0 +1,887 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-30T19:59:29.246087+09:00",
+  "baselineCommit": "03dc2a9279274bd8db955101c882034535d7197e",
+  "baselineSite": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-29-bundles-stp-baseline",
+  "actualPreviewBundles": 28,
+  "previewDirectoryNameIsNotBundleCount": true,
+  "versions": {
+    "ar": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.ar.md",
+      "sha256": "c2fe3399601b969823fc08d41683226777524dc90401e8e2d1b61728f5ad5dd8",
+      "canonical": "https://kenji.blog/ar/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.de.md",
+      "sha256": "9fab97160c549181d20399f38c1a1c1cc2469b2d23bd0365d49d072ab6f28746",
+      "canonical": "https://kenji.blog/de/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.en.md",
+      "sha256": "8cfeafbe665fe487731f39de08c44d1c07e18dc58010a47cf61f0ade2bd77494",
+      "canonical": "https://kenji.blog/en/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.es.md",
+      "sha256": "8204869ef3379ec889aadc1d64c9eb366b272785ab778959662b59e0f7513f11",
+      "canonical": "https://kenji.blog/es/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.fr.md",
+      "sha256": "8d52d1a576a06159a93a7aa4f07577cb6c2755c589f0ce24f4b9cf4255fefbc9",
+      "canonical": "https://kenji.blog/fr/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.hi.md",
+      "sha256": "ab9127af869a4be5435f2caa30a5c78b107a79794f84150f5a529e02f76e76bf",
+      "canonical": "https://kenji.blog/hi/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.id.md",
+      "sha256": "19f5fe45de0d9753b570bc26a3009a45df2975aca307d7eee6cec9decb10479e",
+      "canonical": "https://kenji.blog/id/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": false,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.ko.md",
+      "sha256": "35b33919fcb8ecc6b4f7c1775fdbb7a4a901cc5a2b56a95d7cb9d112cc6d24ef",
+      "canonical": "https://kenji.blog/ko/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.md",
+      "sha256": "baa4ab8ca9312636b1f1c1ca1f08f333804ed1ddab9a33b69d3d7d3792aa64b4",
+      "canonical": "https://kenji.blog/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": true,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.pt.md",
+      "sha256": "5d93c9faf9ec706f2df847d508e3b42e649eb8167a9034fa00ef1f8880239f18",
+      "canonical": "https://kenji.blog/pt/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.ru.md",
+      "sha256": "5c30ff6c409cff5af2789e52ebf15b4b0553e64a50510efee00eea06d1a9dff6",
+      "canonical": "https://kenji.blog/ru/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.zh-cn.md",
+      "sha256": "2f44be83ad7c908ffdcae15b3984f477007a0319173c49b3357e022b69fc1bec",
+      "canonical": "https://kenji.blog/zh-cn/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/サンクトペテルブルクのパラドックス/index.zh-tw.md",
+      "sha256": "fcf535dd969f1a84d1666871a0115c87aaa3d88440bb9cc36fb78b397af57389",
+      "canonical": "https://kenji.blog/zh-tw/p/st-petersburg-paradox/",
+      "slug": "st-petersburg-paradox",
+      "datePublished": "2026-09-10T05:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T05:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid"
+      ],
+      "explicitKaTeXScriptReference": true,
+      "explicitMermaidScriptReference": true,
+      "fullOriginalMetadataBodyAndDiagramRead": false,
+      "reviewed": false
+    }
+  },
+  "image": {
+    "path": "content/post/サンクトペテルブルクのパラドックス/img/st_petersburg.jpg",
+    "sha256": "e62a10c12eac12b2e3a032deede94b4d381739c47d24a3e7e66b090e218838d0"
+  },
+  "auxiliaryChecks": {
+    "finiteExactCases": [
+      {
+        "K": 1,
+        "firstTailByK": "1/2",
+        "partialUncappedExpectation": "1",
+        "capAt2ToKExpectation": "2",
+        "partialLog2PrizeUtility": "1/2",
+        "logUtilityRemainder": "3/2"
+      },
+      {
+        "K": 2,
+        "firstTailByK": "3/4",
+        "partialUncappedExpectation": "2",
+        "capAt2ToKExpectation": "3",
+        "partialLog2PrizeUtility": "1",
+        "logUtilityRemainder": "1"
+      },
+      {
+        "K": 3,
+        "firstTailByK": "7/8",
+        "partialUncappedExpectation": "3",
+        "capAt2ToKExpectation": "4",
+        "partialLog2PrizeUtility": "11/8",
+        "logUtilityRemainder": "5/8"
+      },
+      {
+        "K": 4,
+        "firstTailByK": "15/16",
+        "partialUncappedExpectation": "4",
+        "capAt2ToKExpectation": "5",
+        "partialLog2PrizeUtility": "13/8",
+        "logUtilityRemainder": "3/8"
+      },
+      {
+        "K": 5,
+        "firstTailByK": "31/32",
+        "partialUncappedExpectation": "5",
+        "capAt2ToKExpectation": "6",
+        "partialLog2PrizeUtility": "57/32",
+        "logUtilityRemainder": "7/32"
+      },
+      {
+        "K": 6,
+        "firstTailByK": "63/64",
+        "partialUncappedExpectation": "6",
+        "capAt2ToKExpectation": "7",
+        "partialLog2PrizeUtility": "15/8",
+        "logUtilityRemainder": "1/8"
+      },
+      {
+        "K": 7,
+        "firstTailByK": "127/128",
+        "partialUncappedExpectation": "7",
+        "capAt2ToKExpectation": "8",
+        "partialLog2PrizeUtility": "247/128",
+        "logUtilityRemainder": "9/128"
+      },
+      {
+        "K": 8,
+        "firstTailByK": "255/256",
+        "partialUncappedExpectation": "8",
+        "capAt2ToKExpectation": "9",
+        "partialLog2PrizeUtility": "251/128",
+        "logUtilityRemainder": "5/128"
+      },
+      {
+        "K": 9,
+        "firstTailByK": "511/512",
+        "partialUncappedExpectation": "9",
+        "capAt2ToKExpectation": "10",
+        "partialLog2PrizeUtility": "1013/512",
+        "logUtilityRemainder": "11/512"
+      },
+      {
+        "K": 10,
+        "firstTailByK": "1023/1024",
+        "partialUncappedExpectation": "10",
+        "capAt2ToKExpectation": "11",
+        "partialLog2PrizeUtility": "509/256",
+        "logUtilityRemainder": "3/256"
+      },
+      {
+        "K": 11,
+        "firstTailByK": "2047/2048",
+        "partialUncappedExpectation": "11",
+        "capAt2ToKExpectation": "12",
+        "partialLog2PrizeUtility": "4083/2048",
+        "logUtilityRemainder": "13/2048"
+      },
+      {
+        "K": 12,
+        "firstTailByK": "4095/4096",
+        "partialUncappedExpectation": "12",
+        "capAt2ToKExpectation": "13",
+        "partialLog2PrizeUtility": "4089/2048",
+        "logUtilityRemainder": "7/2048"
+      },
+      {
+        "K": 13,
+        "firstTailByK": "8191/8192",
+        "partialUncappedExpectation": "13",
+        "capAt2ToKExpectation": "14",
+        "partialLog2PrizeUtility": "16369/8192",
+        "logUtilityRemainder": "15/8192"
+      },
+      {
+        "K": 14,
+        "firstTailByK": "16383/16384",
+        "partialUncappedExpectation": "14",
+        "capAt2ToKExpectation": "15",
+        "partialLog2PrizeUtility": "2047/1024",
+        "logUtilityRemainder": "1/1024"
+      },
+      {
+        "K": 15,
+        "firstTailByK": "32767/32768",
+        "partialUncappedExpectation": "15",
+        "capAt2ToKExpectation": "16",
+        "partialLog2PrizeUtility": "65519/32768",
+        "logUtilityRemainder": "17/32768"
+      },
+      {
+        "K": 16,
+        "firstTailByK": "65535/65536",
+        "partialUncappedExpectation": "16",
+        "capAt2ToKExpectation": "17",
+        "partialLog2PrizeUtility": "65527/32768",
+        "logUtilityRemainder": "9/32768"
+      },
+      {
+        "K": 17,
+        "firstTailByK": "131071/131072",
+        "partialUncappedExpectation": "17",
+        "capAt2ToKExpectation": "18",
+        "partialLog2PrizeUtility": "262125/131072",
+        "logUtilityRemainder": "19/131072"
+      },
+      {
+        "K": 18,
+        "firstTailByK": "262143/262144",
+        "partialUncappedExpectation": "18",
+        "capAt2ToKExpectation": "19",
+        "partialLog2PrizeUtility": "131067/65536",
+        "logUtilityRemainder": "5/65536"
+      },
+      {
+        "K": 19,
+        "firstTailByK": "524287/524288",
+        "partialUncappedExpectation": "19",
+        "capAt2ToKExpectation": "20",
+        "partialLog2PrizeUtility": "1048555/524288",
+        "logUtilityRemainder": "21/524288"
+      },
+      {
+        "K": 20,
+        "firstTailByK": "1048575/1048576",
+        "partialUncappedExpectation": "20",
+        "capAt2ToKExpectation": "21",
+        "partialLog2PrizeUtility": "1048565/524288",
+        "logUtilityRemainder": "11/524288"
+      },
+      {
+        "K": 21,
+        "firstTailByK": "2097151/2097152",
+        "partialUncappedExpectation": "21",
+        "capAt2ToKExpectation": "22",
+        "partialLog2PrizeUtility": "4194281/2097152",
+        "logUtilityRemainder": "23/2097152"
+      },
+      {
+        "K": 22,
+        "firstTailByK": "4194303/4194304",
+        "partialUncappedExpectation": "22",
+        "capAt2ToKExpectation": "23",
+        "partialLog2PrizeUtility": "1048573/524288",
+        "logUtilityRemainder": "3/524288"
+      },
+      {
+        "K": 23,
+        "firstTailByK": "8388607/8388608",
+        "partialUncappedExpectation": "23",
+        "capAt2ToKExpectation": "24",
+        "partialLog2PrizeUtility": "16777191/8388608",
+        "logUtilityRemainder": "25/8388608"
+      },
+      {
+        "K": 24,
+        "firstTailByK": "16777215/16777216",
+        "partialUncappedExpectation": "24",
+        "capAt2ToKExpectation": "25",
+        "partialLog2PrizeUtility": "16777203/8388608",
+        "logUtilityRemainder": "13/8388608"
+      },
+      {
+        "K": 25,
+        "firstTailByK": "33554431/33554432",
+        "partialUncappedExpectation": "25",
+        "capAt2ToKExpectation": "26",
+        "partialLog2PrizeUtility": "67108837/33554432",
+        "logUtilityRemainder": "27/33554432"
+      },
+      {
+        "K": 26,
+        "firstTailByK": "67108863/67108864",
+        "partialUncappedExpectation": "26",
+        "capAt2ToKExpectation": "27",
+        "partialLog2PrizeUtility": "33554425/16777216",
+        "logUtilityRemainder": "7/16777216"
+      },
+      {
+        "K": 27,
+        "firstTailByK": "134217727/134217728",
+        "partialUncappedExpectation": "27",
+        "capAt2ToKExpectation": "28",
+        "partialLog2PrizeUtility": "268435427/134217728",
+        "logUtilityRemainder": "29/134217728"
+      },
+      {
+        "K": 28,
+        "firstTailByK": "268435455/268435456",
+        "partialUncappedExpectation": "28",
+        "capAt2ToKExpectation": "29",
+        "partialLog2PrizeUtility": "268435441/134217728",
+        "logUtilityRemainder": "15/134217728"
+      },
+      {
+        "K": 29,
+        "firstTailByK": "536870911/536870912",
+        "partialUncappedExpectation": "29",
+        "capAt2ToKExpectation": "30",
+        "partialLog2PrizeUtility": "1073741793/536870912",
+        "logUtilityRemainder": "31/536870912"
+      },
+      {
+        "K": 30,
+        "firstTailByK": "1073741823/1073741824",
+        "partialUncappedExpectation": "30",
+        "capAt2ToKExpectation": "31",
+        "partialLog2PrizeUtility": "67108863/33554432",
+        "logUtilityRemainder": "1/33554432"
+      },
+      {
+        "K": 31,
+        "firstTailByK": "2147483647/2147483648",
+        "partialUncappedExpectation": "31",
+        "capAt2ToKExpectation": "32",
+        "partialLog2PrizeUtility": "4294967263/2147483648",
+        "logUtilityRemainder": "33/2147483648"
+      },
+      {
+        "K": 32,
+        "firstTailByK": "4294967295/4294967296",
+        "partialUncappedExpectation": "32",
+        "capAt2ToKExpectation": "33",
+        "partialLog2PrizeUtility": "4294967279/2147483648",
+        "logUtilityRemainder": "17/2147483648"
+      },
+      {
+        "K": 33,
+        "firstTailByK": "8589934591/8589934592",
+        "partialUncappedExpectation": "33",
+        "capAt2ToKExpectation": "34",
+        "partialLog2PrizeUtility": "17179869149/8589934592",
+        "logUtilityRemainder": "35/8589934592"
+      },
+      {
+        "K": 34,
+        "firstTailByK": "17179869183/17179869184",
+        "partialUncappedExpectation": "34",
+        "capAt2ToKExpectation": "35",
+        "partialLog2PrizeUtility": "8589934583/4294967296",
+        "logUtilityRemainder": "9/4294967296"
+      },
+      {
+        "K": 35,
+        "firstTailByK": "34359738367/34359738368",
+        "partialUncappedExpectation": "35",
+        "capAt2ToKExpectation": "36",
+        "partialLog2PrizeUtility": "68719476699/34359738368",
+        "logUtilityRemainder": "37/34359738368"
+      },
+      {
+        "K": 36,
+        "firstTailByK": "68719476735/68719476736",
+        "partialUncappedExpectation": "36",
+        "capAt2ToKExpectation": "37",
+        "partialLog2PrizeUtility": "68719476717/34359738368",
+        "logUtilityRemainder": "19/34359738368"
+      },
+      {
+        "K": 37,
+        "firstTailByK": "137438953471/137438953472",
+        "partialUncappedExpectation": "37",
+        "capAt2ToKExpectation": "38",
+        "partialLog2PrizeUtility": "274877906905/137438953472",
+        "logUtilityRemainder": "39/137438953472"
+      },
+      {
+        "K": 38,
+        "firstTailByK": "274877906943/274877906944",
+        "partialUncappedExpectation": "38",
+        "capAt2ToKExpectation": "39",
+        "partialLog2PrizeUtility": "68719476731/34359738368",
+        "logUtilityRemainder": "5/34359738368"
+      },
+      {
+        "K": 39,
+        "firstTailByK": "549755813887/549755813888",
+        "partialUncappedExpectation": "39",
+        "capAt2ToKExpectation": "40",
+        "partialLog2PrizeUtility": "1099511627735/549755813888",
+        "logUtilityRemainder": "41/549755813888"
+      },
+      {
+        "K": 40,
+        "firstTailByK": "1099511627775/1099511627776",
+        "partialUncappedExpectation": "40",
+        "capAt2ToKExpectation": "41",
+        "partialLog2PrizeUtility": "1099511627755/549755813888",
+        "logUtilityRemainder": "21/549755813888"
+      },
+      {
+        "K": 41,
+        "firstTailByK": "2199023255551/2199023255552",
+        "partialUncappedExpectation": "41",
+        "capAt2ToKExpectation": "42",
+        "partialLog2PrizeUtility": "4398046511061/2199023255552",
+        "logUtilityRemainder": "43/2199023255552"
+      },
+      {
+        "K": 42,
+        "firstTailByK": "4398046511103/4398046511104",
+        "partialUncappedExpectation": "42",
+        "capAt2ToKExpectation": "43",
+        "partialLog2PrizeUtility": "2199023255541/1099511627776",
+        "logUtilityRemainder": "11/1099511627776"
+      },
+      {
+        "K": 43,
+        "firstTailByK": "8796093022207/8796093022208",
+        "partialUncappedExpectation": "43",
+        "capAt2ToKExpectation": "44",
+        "partialLog2PrizeUtility": "17592186044371/8796093022208",
+        "logUtilityRemainder": "45/8796093022208"
+      },
+      {
+        "K": 44,
+        "firstTailByK": "17592186044415/17592186044416",
+        "partialUncappedExpectation": "44",
+        "capAt2ToKExpectation": "45",
+        "partialLog2PrizeUtility": "17592186044393/8796093022208",
+        "logUtilityRemainder": "23/8796093022208"
+      },
+      {
+        "K": 45,
+        "firstTailByK": "35184372088831/35184372088832",
+        "partialUncappedExpectation": "45",
+        "capAt2ToKExpectation": "46",
+        "partialLog2PrizeUtility": "70368744177617/35184372088832",
+        "logUtilityRemainder": "47/35184372088832"
+      },
+      {
+        "K": 46,
+        "firstTailByK": "70368744177663/70368744177664",
+        "partialUncappedExpectation": "46",
+        "capAt2ToKExpectation": "47",
+        "partialLog2PrizeUtility": "8796093022205/4398046511104",
+        "logUtilityRemainder": "3/4398046511104"
+      },
+      {
+        "K": 47,
+        "firstTailByK": "140737488355327/140737488355328",
+        "partialUncappedExpectation": "47",
+        "capAt2ToKExpectation": "48",
+        "partialLog2PrizeUtility": "281474976710607/140737488355328",
+        "logUtilityRemainder": "49/140737488355328"
+      },
+      {
+        "K": 48,
+        "firstTailByK": "281474976710655/281474976710656",
+        "partialUncappedExpectation": "48",
+        "capAt2ToKExpectation": "49",
+        "partialLog2PrizeUtility": "281474976710631/140737488355328",
+        "logUtilityRemainder": "25/140737488355328"
+      },
+      {
+        "K": 49,
+        "firstTailByK": "562949953421311/562949953421312",
+        "partialUncappedExpectation": "49",
+        "capAt2ToKExpectation": "50",
+        "partialLog2PrizeUtility": "1125899906842573/562949953421312",
+        "logUtilityRemainder": "51/562949953421312"
+      },
+      {
+        "K": 50,
+        "firstTailByK": "1125899906842623/1125899906842624",
+        "partialUncappedExpectation": "50",
+        "capAt2ToKExpectation": "51",
+        "partialLog2PrizeUtility": "562949953421299/281474976710656",
+        "logUtilityRemainder": "13/281474976710656"
+      },
+      {
+        "K": 51,
+        "firstTailByK": "2251799813685247/2251799813685248",
+        "partialUncappedExpectation": "51",
+        "capAt2ToKExpectation": "52",
+        "partialLog2PrizeUtility": "4503599627370443/2251799813685248",
+        "logUtilityRemainder": "53/2251799813685248"
+      },
+      {
+        "K": 52,
+        "firstTailByK": "4503599627370495/4503599627370496",
+        "partialUncappedExpectation": "52",
+        "capAt2ToKExpectation": "53",
+        "partialLog2PrizeUtility": "4503599627370469/2251799813685248",
+        "logUtilityRemainder": "27/2251799813685248"
+      },
+      {
+        "K": 53,
+        "firstTailByK": "9007199254740991/9007199254740992",
+        "partialUncappedExpectation": "53",
+        "capAt2ToKExpectation": "54",
+        "partialLog2PrizeUtility": "18014398509481929/9007199254740992",
+        "logUtilityRemainder": "55/9007199254740992"
+      },
+      {
+        "K": 54,
+        "firstTailByK": "18014398509481983/18014398509481984",
+        "partialUncappedExpectation": "54",
+        "capAt2ToKExpectation": "55",
+        "partialLog2PrizeUtility": "4503599627370489/2251799813685248",
+        "logUtilityRemainder": "7/2251799813685248"
+      },
+      {
+        "K": 55,
+        "firstTailByK": "36028797018963967/36028797018963968",
+        "partialUncappedExpectation": "55",
+        "capAt2ToKExpectation": "56",
+        "partialLog2PrizeUtility": "72057594037927879/36028797018963968",
+        "logUtilityRemainder": "57/36028797018963968"
+      },
+      {
+        "K": 56,
+        "firstTailByK": "72057594037927935/72057594037927936",
+        "partialUncappedExpectation": "56",
+        "capAt2ToKExpectation": "57",
+        "partialLog2PrizeUtility": "72057594037927907/36028797018963968",
+        "logUtilityRemainder": "29/36028797018963968"
+      },
+      {
+        "K": 57,
+        "firstTailByK": "144115188075855871/144115188075855872",
+        "partialUncappedExpectation": "57",
+        "capAt2ToKExpectation": "58",
+        "partialLog2PrizeUtility": "288230376151711685/144115188075855872",
+        "logUtilityRemainder": "59/144115188075855872"
+      },
+      {
+        "K": 58,
+        "firstTailByK": "288230376151711743/288230376151711744",
+        "partialUncappedExpectation": "58",
+        "capAt2ToKExpectation": "59",
+        "partialLog2PrizeUtility": "144115188075855857/72057594037927936",
+        "logUtilityRemainder": "15/72057594037927936"
+      },
+      {
+        "K": 59,
+        "firstTailByK": "576460752303423487/576460752303423488",
+        "partialUncappedExpectation": "59",
+        "capAt2ToKExpectation": "60",
+        "partialLog2PrizeUtility": "1152921504606846915/576460752303423488",
+        "logUtilityRemainder": "61/576460752303423488"
+      },
+      {
+        "K": 60,
+        "firstTailByK": "1152921504606846975/1152921504606846976",
+        "partialUncappedExpectation": "60",
+        "capAt2ToKExpectation": "61",
+        "partialLog2PrizeUtility": "1152921504606846945/576460752303423488",
+        "logUtilityRemainder": "31/576460752303423488"
+      },
+      {
+        "K": 61,
+        "firstTailByK": "2305843009213693951/2305843009213693952",
+        "partialUncappedExpectation": "61",
+        "capAt2ToKExpectation": "62",
+        "partialLog2PrizeUtility": "4611686018427387841/2305843009213693952",
+        "logUtilityRemainder": "63/2305843009213693952"
+      },
+      {
+        "K": 62,
+        "firstTailByK": "4611686018427387903/4611686018427387904",
+        "partialUncappedExpectation": "62",
+        "capAt2ToKExpectation": "63",
+        "partialLog2PrizeUtility": "144115188075855871/72057594037927936",
+        "logUtilityRemainder": "1/72057594037927936"
+      },
+      {
+        "K": 63,
+        "firstTailByK": "9223372036854775807/9223372036854775808",
+        "partialUncappedExpectation": "63",
+        "capAt2ToKExpectation": "64",
+        "partialLog2PrizeUtility": "18446744073709551551/9223372036854775808",
+        "logUtilityRemainder": "65/9223372036854775808"
+      },
+      {
+        "K": 64,
+        "firstTailByK": "18446744073709551615/18446744073709551616",
+        "partialUncappedExpectation": "64",
+        "capAt2ToKExpectation": "65",
+        "partialLog2PrizeUtility": "18446744073709551583/9223372036854775808",
+        "logUtilityRemainder": "33/9223372036854775808"
+      }
+    ],
+    "logWealthFeeExamples": [
+      {
+        "initialWealth": "10",
+        "numericalFeeBracket": [
+          "4.97002002668213808886423958742519334082872240752976137614579932311187349114334210753440856",
+          "4.97002002668213808886423958743308194988093252558387866179862718540860555549443233758211135"
+        ],
+        "terms": 128,
+        "analyticOmittedPositiveTailBoundAtMost": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-77",
+        "scope": "90-digit Decimal arithmetic/100 bisections,with analytical truncation bound. Not machine-verified floating/Decimal interval-rounding proof or empirical willingness-to-pay."
+      },
+      {
+        "initialWealth": "100",
+        "numericalFeeBracket": [
+          "7.7920981919755476318074815650991063503990346441601312513312166396772795451397541910409927",
+          "7.7920981919755476318074815651779924409211358247013041078594952626446001886506564915180206"
+        ],
+        "terms": 128,
+        "analyticOmittedPositiveTailBoundAtMost": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-76",
+        "scope": "90-digit Decimal arithmetic/100 bisections,with analytical truncation bound. Not machine-verified floating/Decimal interval-rounding proof or empirical willingness-to-pay."
+      },
+      {
+        "initialWealth": "1000",
+        "numericalFeeBracket": [
+          "10.9538130141893086750116975121226644154684740679863702160663774254345526060205884277820586",
+          "10.9538130141893086750116975129115253206894858733980987813491636551077590411296114325523376"
+        ],
+        "terms": 128,
+        "analyticOmittedPositiveTailBoundAtMost": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-75",
+        "scope": "90-digit Decimal arithmetic/100 bisections,with analytical truncation bound. Not machine-verified floating/Decimal interval-rounding proof or empirical willingness-to-pay."
+      }
+    ],
+    "scope": "64 finite exact geometric/utility/cap checks plus three numerical fee examples. Limit arguments and model assumptions require manual review;not game-program execution, a general utility theorem or human-choice certification."
+  },
+  "reviewedTranslationsAdded": 0,
+  "currentAiTranslations": 324,
+  "unreviewedTranslations": 12708,
+  "humanReviews": 0,
+  "limitations": [
+    "Pre-audit only;no source edits or review ledger entry.",
+    "OnlyJAENoriginal full bodies read;other11metadata/hash/fence/script inventory only.",
+    "All13headers contain two dates;effectiveHTML date Sep10 preserved;newer duplicate Sep24 must not silently replace public date.",
+    "Directory says29bundles but actual content inventory is28:StPetersburg was already in old28-bundle preview. Do not claim29.",
+    "Explicit script references are not browser runtime/visual proof.",
+    "Primary-reading scope/history/utility corrections recorded separately;batch026 deployment remains pending."
+  ]
+}
