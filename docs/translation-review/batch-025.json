@@ -987,5 +987,35 @@
       "Per-entry remaining-language counts are historical stage snapshots;all12versions are now reviewed.",
       "Isolated-preview page/layout/PortugueseUI warnings retained;not warning-free certification."
     ]
+  },
+  "publicationDispatch": {
+    "version": 1,
+    "observedAt": "2026-10-30T09:26:51.3200637+09:00",
+    "deployedCommitExpected": "987c31d250bafe6f40ab1a37cf827c00571e5f42",
+    "ciRun": 40979650370,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/40979650370",
+    "statusAtDispatch": "in_progress",
+    "conclusionAtDispatch": null,
+    "jobsObserved": [
+      {
+        "name": "build",
+        "status": "in_progress",
+        "conclusion": null,
+        "started_at": "2026-10-30T00:26:04Z",
+        "completed_at": null
+      }
+    ],
+    "proof": "docs/translation-review/batch-025-publication-dispatch.json",
+    "pagesPlanned": 338,
+    "translationsPlanned": 312,
+    "japaneseSourcesPlanned": 26,
+    "texExpressionsPlanned": 9064,
+    "mathVersionsPlanned": 143,
+    "twoEnvelopeVersionsPlanned": 13,
+    "twoEnvelopeTeXPlanned": 572,
+    "twoEnvelopeDiagramsPlanned": 26,
+    "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_312.py",
+    "publicationPending": true,
+    "scope": "Ordinary push after fetch:zero incoming/15local outgoing. Matching run/head observed live.338URL probe prepared,not executed before build/deploy success. No live-publication confirmation claimed."
   }
 }
