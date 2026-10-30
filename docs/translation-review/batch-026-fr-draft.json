@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "draftedAt": "2026-10-30T19:08:21.411572+09:00",
+  "path": "content/post/bayes-theorem/index.fr.md",
+  "originalSha256": "5cc55b9c067ea8eae24079ff8a01b3fba50ddf4c46b2cf4bd15a8cfa1b0245dc",
+  "draftSha256": "874ede555cc112732bfedf0877dc9d8e4c6d127118387b41b3f07c5b02f068f0",
+  "commonTeX": 22,
+  "draftOnly": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original French full metadata/body/two diagrams read. Complete rewrite against corrected Japanese;pending reread/HTML checks and ledger. Other5translations not newly reviewed."
+}

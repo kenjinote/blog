@@ -1,6 +1,6 @@
 ---
-title: "Théorème de Bayes : Mettre à jour les probabilités avec de 'nouvelles preuves', le cœur de l'IA et des statistiques"
-description: "Une explication approfondie de la façon dont le théorème de Bayes met à jour les probabilités en fonction de nouvelles preuves, de son contexte mathématique et de ses applications dans l'IA et l'apprentissage automatique."
+title: "Théorème de Bayes : probabilité conditionnelle, test médical et quatre applications en IA"
+description: "Normalisation, sensibilité et valeur prédictive positive, MAP et prédiction a posteriori : quatre applications bayésiennes en IA et leurs hypothèses."
 slug: "bayes-theorem"
 date: "2026-09-20T15:15:00+09:00"
 image: "eyecatch.jpg"
@@ -11,147 +11,206 @@ tags:
   - "Probabilité"
   - "IA"
   - "Statistiques"
+lastmod: "2026-10-30"
+math: true
+mermaid: true
 ---
 
-## Introduction : « Mettre à jour les croyances » dans un monde incertain
+## 1. Actualiser les prédictions dans un monde incertain
 
-Le monde dans lequel nous vivons est rempli d'incertitudes. Qu'il s'agisse de la probabilité qu'il pleuve demain, de la probabilité qu'un nouveau médicament soit efficace contre une maladie spécifique, ou de la chance qu'un courriel reçu soit un spam, nous prenons constamment des décisions basées sur des informations incomplètes. Le « [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/) » ([Bayes' Theorem](https://kenji.blog/fr/p/bayes-theorem/)) est un cadre puissant pour traiter mathématiquement cette incertitude et **mettre à jour nos prédictions chaque fois que de nouvelles informations (preuves) sont obtenues**.
+La pluie de demain, l'effet d'un médicament ou la possibilité qu'un courriel soit indésirable : nous décidons avec des informations incomplètes. **Le théorème de Bayes relie la probabilité d'un événement sachant une observation à celle de cette observation sachant l'événement.** Une fois le modèle et les informations préalables définis, il permet d'actualiser les probabilités avec de nouvelles observations.
 
-Découvert par Thomas Bayes, un ministre et mathématicien anglais du 18ème siècle, ce théorème est devenu une théorie fondamentale qui sous-tend l'IA (Intelligence Artificielle) moderne et l'apprentissage automatique. Dans cet article, nous allons approfondir tout ce qui concerne le théorème de Bayes, depuis ses mathématiques de base jusqu'aux paradoxes de probabilité contre-intuitifs, et la manière dont il est appliqué dans la technologie moderne.
+Il porte le nom de Thomas Bayes, pasteur et mathématicien du XVIIIe siècle. [La lettre de Richard Price présentant son mémoire posthume](https://bayes.wustl.edu/Manual/an.essay.pdf) mentionne une lecture à la Royal Society le 23 décembre 1763. L'inférence bayésienne moderne comprend aussi les développements de nombreux chercheurs ultérieurs. Nous examinerons la formule, un exemple de dépistage, quatre applications en IA et différentes interprétations de la probabilité.
 
-## Formulation mathématique du [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/)
+## 2. La formule et le rôle de la normalisation
 
-Le [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/) est un théorème utilisé pour calculer la probabilité $P(A|B)$ d'un événement $A$ à la condition qu'un événement $B$ se soit produit, en se basant sur la probabilité conditionnelle inverse $P(B|A)$ et d'autres facteurs. Bien que la formule soit extrêmement simple, ses implications sont profondes.
-
-$$
-P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
-$$
-
-Chaque terme de cette équation reçoit un nom spécial du point de vue de la « mise à jour des croyances » statistique.
-
-- **Probabilité a priori (Prior Probability)** $P(A)$ : La probabilité que l'événement $A$ se produise avant de considérer la nouvelle preuve $B$. Notre croyance initiale.
-- **Vraisemblance (Likelihood)** $P(B|A)$ : La probabilité d'observer la preuve $B$ en supposant que l'événement $A$ est vrai.
-- **Vraisemblance marginale / Preuve (Marginal Likelihood / Evidence)** $P(B)$ : La probabilité globale d'observer la preuve $B$ indépendamment du fait que l'événement $A$ soit vrai ou faux. Elle agit comme une constante de normalisation.
-- **Probabilité a posteriori (Posterior Probability)** $P(A|B)$ : La probabilité de l'événement $A$ après avoir considéré la nouvelle preuve $B$. Notre croyance mise à jour.
-
-En bref, le [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/) peut être décrit comme la formulation mathématique du processus de **mise à jour de notre croyance vers une « probabilité a posteriori » en multipliant la « probabilité a priori » par « la mesure dans laquelle la nouvelle preuve correspond (vraisemblance) »**.
-
-## Écart par rapport à l'intuition : Le paradoxe du « faux positif » (Exemple de test médical)
-
-L'intuition humaine fait souvent des erreurs dans les calculs de probabilité. Comme exemple classique pour comprendre la puissance du [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/), considérons les tests de maladies (dépistage médical).
-
-Supposons qu'il existe une maladie rare, et que $1\%$ ($0.01$) de la population totale est infectée par cette maladie (c'est la probabilité a priori $P(\text{Maladie})$).
-Le test pour détecter cette maladie est très précis : si une personne atteinte de la maladie passe le test, elle est jugée « Positive » avec une probabilité de $99\%$ (Taux de vrais positifs : Vraisemblance $P(\text{Positif}|\text{Maladie})$).
-Cependant, ce test présente un léger défaut : même si une personne en bonne santé et non atteinte de la maladie le passe, elle est incorrectement jugée « Positive » avec une probabilité de $5\%$ (Taux de faux positifs $P(\text{Positif}|\text{Sain})$).
-
-Maintenant, supposons que vous passiez ce test au hasard et que vous obteniez un résultat **« Positif »** . Quelle est la probabilité que vous soyez réellement atteint de cette maladie ?
-
-Beaucoup de gens ont tendance à penser : « Puisque le test est précis à $99\%$, il y a $90\%$ de chances ou plus que j'aie la maladie. » Cependant, calculons cela en utilisant le [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/).
-
-Nous cherchons $P(\text{Maladie}|\text{Positif})$.
-
-1. **Probabilité a priori** $P(\text{Maladie}) = 0.01$
-2. **Vraisemblance** $P(\text{Positif}|\text{Maladie}) = 0.99$
-3. **Probabilité d'une personne saine** $P(\text{Sain}) = 1 - 0.01 = 0.99$
-4. **Probabilité de faux positif** $P(\text{Positif}|\text{Sain}) = 0.05$
-
-Tout d'abord, nous calculons la probabilité globale d'un résultat de test positif $P(\text{Positif})$ (Vraisemblance Marginale). C'est la somme de « tester positif en étant malade » et « tester positif en étant sain ».
+Pour un événement B tel que $P(B)>0$, la définition de la probabilité conditionnelle donne
 
 $$
-\begin{aligned}
-P(\text{Positif}) &= P(\text{Positif}|\text{Maladie}) \cdot P(\text{Maladie}) + P(\text{Positif}|\text{Sain}) \cdot P(\text{Sain}) \\
-&= (0.99 \times 0.01) + (0.05 \times 0.99) \\
-&= 0.0099 + 0.0495 \\
-&= 0.0594
-\end{aligned}
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}
 $$
 
-Ensuite, nous appliquons le [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/).
+Si l'on a également $P(A)>0$, de sorte que la probabilité conditionnelle inverse soit définie, la décomposition de la probabilité conjointe donne
 
 $$
-\begin{aligned}
-P(\text{Maladie}|\text{Positif}) &= \frac{P(\text{Positif}|\text{Maladie}) \cdot P(\text{Maladie})}{P(\text{Positif})} \\
-&= \frac{0.0099}{0.0594} \\
-&\approx 0.1667
-\end{aligned}
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}
 $$
 
-Étonnamment, même avec un résultat de test positif, **la probabilité que vous soyez réellement atteint de la maladie n'est que d'environ $16.7\%$**. Les $83.3\%$ restants sont des cas de « personnes saines incorrectement jugées positives » (faux positifs). Cela s'explique par le fait que la prévalence initiale de la maladie ($1\%$) est très faible, ce qui fait que les « faux positifs de la grande population saine » surpassent largement le petit nombre de « personnes véritablement malades ».
+Lorsque B représente une nouvelle observation, les termes ont les rôles suivants :
 
-De cette manière, le [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/) corrige mathématiquement les pièges dans lesquels notre intuition tombe facilement et sert d'outil puissant pour porter des jugements sereins.
+- **Probabilité a priori** $P(A)$ : probabilité de A avant de prendre B en compte.
+- **Vraisemblance** $P(B\mid A)$ : probabilité d'observer B sous l'hypothèse A.
+- **Probabilité de l'observation / vraisemblance marginale** $P(B)$ : probabilité totale d'observer B.
+- **Probabilité a posteriori** $P(A\mid B)$ : probabilité de A après prise en compte de B.
+
+Le produit de la probabilité a priori par la vraisemblance constitue le numérateur. **Il faut encore diviser par la probabilité de l'observation pour normaliser et obtenir la probabilité a posteriori.** Même si A est de probabilité nulle, la première formule, fondée sur la probabilité conjointe, reste valable si B a une probabilité positive. Il ne faut pas appliquer directement la seconde lorsque sa probabilité conditionnelle inverse n'est pas définie.
+
+## 3. Vraisemblance, MAP et prédiction a posteriori
+
+Notons θ le paramètre inconnu et d les données observées. Pour [actualiser une densité a priori à partir d'une vraisemblance](https://web.stanford.edu/class/stats200/Lecture20.pdf), on écrit
+
+$$
+\pi(\theta\mid d)=\frac{L(\theta;d)\pi(\theta)}{Z(d)},\qquad Z(d)=\int L(t;d)\pi(t)\,dt
+$$
+
+On suppose $0<Z(d)<\infty$. La vraisemblance L est une fonction de θ, les données d étant fixées ; ce n'est pas une distribution de probabilité sur θ. Pour des données continues, on utilise des densités, dont les valeurs peuvent dépasser un. La probabilité nulle d'un point observé n'empêche pas, à elle seule, l'actualisation par des densités.
+
+Si la densité a posteriori atteint un maximum, l'**estimation par maximum a posteriori (MAP)** choisit un point où ce maximum est atteint :
+
+$$
+\hat\theta_{\mathrm{MAP}}\in\arg\max_\theta\pi(\theta\mid d)
+$$
+
+En revanche, la **probabilité prédictive a posteriori** d'une future observation binaire s'obtient en faisant la moyenne des prédictions selon la distribution a posteriori :
+
+$$
+\Pr(Y_{\mathrm{new}}=1\mid d)=\int\Pr(Y_{\mathrm{new}}=1\mid\theta,d)\pi(\theta\mid d)\,d\theta
+$$
+
+Par exemple, attribuons une loi a priori uniforme entre zéro et un à la probabilité θ d'obtenir face. Conditionnellement à θ, les lancers sont indépendants. On observe, dans l'ordre, 1,1,0, où 1 désigne face. Alors
+
+$$
+\pi(\theta\mid 1,1,0)=12\theta^2(1-\theta),\qquad 0<\theta<1
+$$
+
+et donc
+
+$$
+\hat\theta_{\mathrm{MAP}}=\frac23,\qquad\Pr(Y_{\mathrm{new}}=1\mid1,1,0)=\frac35
+$$
+
+Remplacer le paramètre par un mode de la densité a posteriori et calculer une moyenne sur la distribution peuvent donner des réponses différentes. Choisir une classe, estimer les paramètres par MAP et prévoir de futures observations ne se résument pas tous à « maximiser la probabilité a posteriori ».
+
+## 4. Un test médical fictif : sensibilité de 99 % et VPP d'environ 16,7 %
+
+Il s'agit d'un **exemple de calcul fictif, et non des performances mesurées d'un test réel**. D signifie être atteint de la maladie étudiée et T avoir un résultat positif. Supposons une prévalence de 1 % dans la population concernée, une sensibilité de 99 % et un taux de faux positifs de 5 %.
+
+$$
+P(D)=0.01,\qquad P(T\mid D)=0.99,\qquad P(T\mid D^c)=0.05
+$$
+
+L'événement complémentaire de D signifie ne pas avoir cette maladie, et non être en bonne santé à tous égards. En additionnant les deux sources possibles de résultats positifs, on obtient
+
+$$
+P(T)=P(T\mid D)P(D)+P(T\mid D^c)P(D^c)=0.99\cdot0.01+0.05\cdot0.99=0.0594
+$$
+
+La probabilité d'avoir la maladie sachant que le résultat est positif est donc
+
+$$
+P(D\mid T)=\frac{0.0099}{0.0594}=\frac{99}{594}=\frac16\approx0.1667
+$$
+
+Le résultat vaut environ 16,7 % ; sa valeur exacte est 1/6. Les 5/6 restants, soit environ 83,3 % des positifs, sont des faux positifs sans la maladie étudiée. Lorsque la prévalence est faible, les faux positifs issus du groupe beaucoup plus nombreux sans la maladie peuvent dépasser les vrais positifs.
+
+Pour exprimer ces proportions en personnes, construisons une population fictive de 10 000 personnes présentant exactement ces proportions. Dans un échantillon réel de 10 000 personnes, les effectifs varieraient.
+
+| Résultat | Avec la maladie étudiée | Sans la maladie étudiée | Total |
+| --- | ---: | ---: | ---: |
+| Positif | 99 (vrais positifs) | 495 (faux positifs) | 594 |
+| Négatif | 1 (faux négatif) | 9 405 (vrais négatifs) | 9 406 |
+| Total | 100 | 9 900 | 10 000 |
 
 ```mermaid
 flowchart TD
-    Population["Population totale (10 000 personnes)"] --> Disease["Atteints de la maladie (100 personnes, 1%)"]
-    Population --> Healthy["En bonne santé (9 900 personnes, 99%)"]
-    
-    Disease --> TruePositive["Vrai positif : Résultat positif (99 personnes, 99%)"]
-    Disease --> FalseNegative["Faux négatif : Résultat négatif (1 personne, 1%)"]
-    
-    Healthy --> FalsePositive["Faux positif : Résultat positif (495 personnes, 5%)"]
-    Healthy --> TrueNegative["Vrai négatif : Résultat négatif (9 405 personnes, 95%)"]
-
-    TruePositive -.->|"Total des positifs (594 personnes)"| AllPositives["Test positif"]
-    FalsePositive -.->|"Total des positifs (594 personnes)"| AllPositives
-    
-    AllPositives -->|"Probabilité d'être réellement malade ?"| Posterior["Probabilité a posteriori : 99 / 594 = 16.7%"]
+    Population["Population fictive : 10 000"] --> Disease["Avec la maladie : 100"]
+    Population --> NoDisease["Sans la maladie étudiée : 9 900"]
+    Disease --> TP["Vrais positifs : 99 (99% des personnes atteintes)"]
+    Disease --> FN["Faux négatifs : 1 (1% des personnes atteintes)"]
+    NoDisease --> FP["Faux positifs : 495 (5% des personnes sans la maladie)"]
+    NoDisease --> TN["Vrais négatifs : 9 405 (95% des personnes sans la maladie)"]
+    TP -.-> AllPositive["Total des positifs : 594"]
+    FP -.-> AllPositive
+    AllPositive --> PPV["Valeur prédictive positive : 99/594 = 1/6 ≈ 16,7%"]
 ```
 
-## Application du [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/) en IA et Apprentissage Automatique
+**Une sensibilité de 99 % n'est ni une valeur prédictive positive de 99 %, ni une exactitude globale de 99 %.** L'exactitude globale, c'est-à-dire la proportion totale de classifications correctes dans ce tableau, est
 
-Le [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/) va bien au-delà d'un simple casse-tête de probabilité ; il joue un rôle crucial dans la science des données moderne et l'Intelligence Artificielle (IA). En effet, le processus même d'apprentissage de modèles à partir de grandes quantités de données et de prédiction sur des données inconnues peut être formulé comme la « maximisation de la probabilité a posteriori ».
+$$
+\frac{99+9405}{10000}=0.9504=95.04\%
+$$
 
-### 1. Classificateur naïf de Bayes (Naive Bayes)
+Les [définitions de la sensibilité, de la spécificité et de la valeur prédictive positive](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda) utilisent des dénominateurs différents. L'intuition « 99 % signifie qu'un positif est presque certainement malade » confond le groupe sur lequel la proportion est calculée. L'application à des résultats réels exige une prévalence et des caractéristiques du test adaptées à la population concernée.
 
-Le « Classificateur naïf de Bayes », souvent utilisé pour le filtrage des courriels indésirables (spam), est l'une des applications les plus directes du [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/). Cet algorithme traite les mots contenus dans un courriel (tels que « gratuit », « gagnant », « mot de passe ») comme des preuves (caractéristiques) et calcule la probabilité a posteriori que le courriel soit un spam.
+## 5. Application en IA 1 : classification naïve bayésienne
 
-Il est appelé « naïf » car il pose l'hypothèse forte que chaque caractéristique (mot) apparaît indépendamment des autres. En réalité, les mots sont liés, mais malgré cette hypothèse simpliste, le classificateur Naive Bayes affiche une précision très élevée et des vitesses de traitement rapides dans des tâches comme la classification de textes.
+Pour détecter les courriels indésirables, les caractéristiques X, comme la présence de certains mots, renseignent la probabilité a posteriori de la classe C. L'hypothèse de base est l'**indépendance conditionnelle sachant la classe**, et non l'indépendance inconditionnelle des mots. À partir de trois caractéristiques, même l'indépendance deux à deux au sein de chaque classe ne garantit pas l'indépendance mutuelle.
 
-### 2. Réseaux Bayésiens
+Pour des caractéristiques discrètes, supposons que l'observation x ait une probabilité marginale positive, que les probabilités a priori des classes soient positives et que les caractéristiques soient mutuellement indépendantes dans chaque classe. Alors
 
-Dans les systèmes où de multiples variables sont intimement entrelacées, les Réseaux Bayésiens expriment les dépendances entre les variables sous forme de structure graphique (Graphe Orienté Acyclique) pour effectuer un raisonnement sous incertitude.
+$$
+\Pr(C=c\mid X=x)\propto\Pr(C=c)\prod_{j=1}^{m}\Pr(X_j=x_j\mid C=c)
+$$
 
-Par exemple, dans l'IA de diagnostic médical, l'influence probabiliste de « l'âge du patient », de ses « habitudes de vie » et de ses « facteurs génétiques » sur une « maladie spécifique » est modélisée, puis l'influence de cette maladie sur l'« apparition des symptômes » y est reliée. Chaque fois qu'un nouveau symptôme (preuve) est saisi, les probabilités de l'ensemble du réseau sont mises à jour selon le [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/), déduisant le nom de la maladie la plus probable. Ceci est utilisé dans une grande variété de domaines, tels que l'évaluation des situations dans les voitures autonomes et les prédictions sur les marchés financiers.
+Si toutes les erreurs de classification ont le même coût, on choisit une classe de probabilité a posteriori maximale. Cette décision de classification diffère de l'estimation MAP des paramètres du modèle eux-mêmes.
+
+Les mots réels sont liés : l'indépendance est une approximation. La simplicité et la rapidité sont des avantages, sans garantie d'une exactitude toujours supérieure ou de probabilités bien calibrées. La [documentation officielle de scikit-learn](https://scikit-learn.org/stable/modules/naive_bayes.html) distingue aussi les performances de classification de la qualité des probabilités estimées. Les modèles génératifs concrets diffèrent, par exemple Bernoulli pour la présence de mots et multinomial pour leurs effectifs.
+
+## 6. Application en IA 2 : réseaux bayésiens
+
+Un réseau bayésien représente une distribution conjointe au moyen d'un graphe orienté acyclique (DAG) et d'une distribution conditionnelle locale par nœud. Dans un modèle discret fini, pa désignant les valeurs des nœuds parents, la factorisation s'écrit
+
+$$
+\Pr(V_1=v_1,\ldots,V_n=v_n)=\prod_{i=1}^{n}\Pr(V_i=v_i\mid\mathrm{pa}_i)
+$$
+
+[Représenter une distribution par un DAG](https://ermongroup.github.io/cs228-notes/representation/directed/) précise aussi des hypothèses d'indépendance conditionnelle.
+
+Le modèle fictif suivant relie âge, habitudes de vie, facteurs génétiques, maladie, symptômes et test. Il suppose indépendants les trois facteurs sans parents. Les flèches pleines définissent les relations parent-enfant des distributions locales ; elles ne font pas du graphique un diagramme validé des relations causales réelles. **Une affirmation causale exige des hypothèses causales supplémentaires**, au-delà d'un modèle de dépendances statistiques ([distinction de Pearl](https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf)).
 
 ```mermaid
 flowchart LR
-    Age["Âge"] --> Disease["Maladie spécifique"]
-    Lifestyle["Habitudes de vie"] --> Disease
-    Genes["Facteurs génétiques"] --> Disease
-    
-    Disease --> SymptomA["Symptôme A"]
-    Disease --> SymptomB["Symptôme B"]
-    Disease --> TestResult["Résultat du test"]
-    
-    TestResult -.->|"Observé comme nouvelle preuve"| Update["Mise à jour de la probabilité (Inférence)"]
+    subgraph Model["Modèle probabiliste fictif"]
+        Age["Âge"] --> Disease["Maladie étudiée"]
+        Lifestyle["Habitudes de vie"] --> Disease
+        Genes["Facteurs génétiques"] --> Disease
+        Disease --> SymptomA["Symptôme A"]
+        Disease --> SymptomB["Symptôme B"]
+        Disease --> TestResult["Résultat du test"]
+    end
+    TestResult -.->|"Utiliser l'observation"| Inference["Opération d'inférence : calculer la distribution a posteriori"]
 ```
 
-### 3. Optimisation Bayésienne
+L'annotation visée par la flèche en pointillés est une opération d'inférence, pas une variable aléatoire supplémentaire de la distribution conjointe. Calculer des distributions marginales a posteriori pour la maladie ou d'autres variables ne revient pas non plus à réapprendre tous les paramètres. Ces modèles offrent un cadre pour le diagnostic, l'estimation de situations ou les prévisions financières, mais leur validité pour chaque usage dépend de la structure et des données.
 
-Lors de la construction de modèles d'apprentissage automatique, la tâche consistant à trouver la combinaison optimale d'hyperparamètres (les paramètres que les humains doivent définir, comme le taux d'apprentissage ou la profondeur du réseau) prend beaucoup de temps. Il n'est pas réaliste d'essayer toutes les combinaisons.
+## 7. Application en IA 3 : optimisation bayésienne
 
-Dans l'Optimisation Bayésienne, la relation entre les « réglages des paramètres » et la « performance du modèle » est exprimée comme un modèle probabiliste (tel qu'un Processus Gaussien). Sur la base des réglages et des résultats des essais précédents (preuves), elle déduit le réglage de paramètres le plus prometteur à examiner ensuite. Cela permet de construire des modèles d'IA très performants avec un minimum d'essais.
+Régler des hyperparamètres, comme le taux d'apprentissage ou la profondeur du réseau, peut demander des entraînements et évaluations répétés. Les réglages ne doivent pas nécessairement être choisis à la main : la recherche peut être automatisée.
 
-### 4. Apprentissage Profond Bayésien (Bayesian Deep Learning)
+L'optimisation bayésienne représente le lien entre réglages et performances par un modèle probabiliste de substitution, tel qu'un processus gaussien, puis l'actualise avec les évaluations. Une **fonction d'acquisition**, comme l'amélioration espérée, sélectionne le candidat suivant. L'exploitation des régions prometteuses et l'exploration des régions incertaines comptent toutes deux. [Snoek et ses collaborateurs](https://arxiv.org/abs/1206.2944) étudient le réglage d'algorithmes d'apprentissage automatique.
 
-Une approche qui a récemment attiré l'attention est la fusion de l'Apprentissage Profond (Deep Learning) et des statistiques bayésiennes. Un réseau neuronal standard fournit sa prédiction sous la forme d'une valeur déterministe unique, mais il ne vous indique pas « son niveau de certitude ».
+L'objectif est d'allouer efficacement des évaluations coûteuses. Il n'est pas garanti de trouver l'optimum en un minimum d'essais pour toute fonction objectif, tout budget ou toute situation de bruit.
 
-Dans l'Apprentissage Profond Bayésien, les poids du réseau sont traités comme des « distributions de probabilité » plutôt que comme des nombres fixes. Cela permet à l'IA d'exprimer une **« incertitude (manque de confiance) »** en même temps que ses prédictions. Par exemple, une IA médicale pourrait avertir : « Il y a 90 % de chances qu'il s'agisse d'un cancer. Cependant, l'incertitude de cette prédiction elle-même est très élevée, la confirmation d'un médecin humain est donc requise. » Il s'agit d'une technologie extrêmement importante pour accroître la sécurité et la fiabilité de l'IA.
+## 8. Application en IA 4 : apprentissage profond bayésien
 
-## Perspective philosophique : Fréquentisme vs Bayésianisme
+Un réseau neuronal ordinaire peut aussi produire des probabilités de classe, par exemple avec softmax. Calculer avec des poids fixes est compatible avec la production d'une distribution de probabilité.
 
-Dans l'histoire des statistiques, deux grandes écoles de pensée se sont affrontées sur la question « qu'est-ce que la probabilité ». Il s'agit du **Fréquentisme (Frequentism)** et du **Bayésianisme (Bayesianism)** .
+Un traitement bayésien peut attribuer une densité a priori aux poids continus w, puis obtenir leur densité a posteriori conditionnellement aux données d'entraînement d. Dans le modèle habituel d'indépendance conditionnelle, la probabilité prédictive a posteriori d'une classe discrète notée *y* est
 
-Dans le Fréquentisme, la probabilité est définie comme « la fréquence relative avec laquelle un événement se produit lorsque la même expérience est répétée indéfiniment ». Dire que la probabilité qu'une pièce tombe sur face est de $50\%$ signifie que si elle est lancée à l'infini, exactement la moitié des lancers donnera face. Dans cette approche, il existe une véritable probabilité fixe pour l'événement lui-même, ne laissant aucune place à l'observateur pour avoir une « croyance ».
+$$
+\Pr(y\mid x,d)=\int\Pr(y\mid x,w)\pi(w\mid d)\,dw
+$$
 
-D'un autre côté, dans le Bayésianisme, la probabilité est traitée comme **« le degré de croyance de l'observateur (probabilité subjective) »**. Une probabilité de $70\%$ qu'il pleuve demain représente le « degré de confiance » de l'agence météorologique sur la base des données météorologiques disponibles (preuves). Si de nouvelles données (par exemple, une baisse soudaine de la pression atmosphérique) sont observées, cette confiance est mise à jour selon le [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/).
+Le [travail original de Blundell et de ses collaborateurs](https://arxiv.org/abs/1505.05424) utilise une distribution variationnelle pour approcher une inférence difficile à calculer exactement sur des réseaux de taille pratique. Les prédictions peuvent refléter l'incertitude sur les poids, mais dépendent de la loi a priori, de la vraisemblance et de la méthode d'approximation.
 
-Le fréquentisme a dominé une grande partie du 20ème siècle, mais à l'époque moderne, où la puissance de calcul des ordinateurs s'est considérablement améliorée, l'approche flexible et pratique du Bayésianisme a été réévaluée, devenant l'une des forces motrices de l'essor de l'IA.
+Une sortie telle que « probabilité de 90 % pour une classe » n'exprime pas à elle seule toute l'incertitude sur le modèle. Qualifier une méthode de bayésienne ne garantit pas des prédictions calibrées en IA médicale ou ailleurs. Les [recherches sur l'incertitude lors de changements de distribution](https://arxiv.org/abs/1906.02530) motivent aussi l'évaluation des différences entre données d'entraînement et données d'utilisation.
 
-## Conclusion : Continuer à apprendre et à se mettre à jour
+## 9. Comparer les inférences fréquentiste et bayésienne
 
-Le [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/) fournit une sorte de cadre de réflexion qui va au-delà d'une simple formule mathématique.
+Les deux approches utilisent la théorie des probabilités ; le théorème de Bayes lui-même est un outil mathématique commun. En inférence statistique, les méthodes fréquentistes traitent les paramètres inconnus comme fixes et s'intéressent aux propriétés des procédures d'estimation ou de test lors d'échantillonnages répétés. L'inférence bayésienne représente l'incertitude sur des quantités inconnues par une loi a priori et utilise une loi a posteriori après observation des données. Attribuer une distribution ne signifie pas qu'un paramètre physique change à chaque observation.
 
-Nous avons tous des « probabilités a priori (croyances initiales) » basées sur des expériences passées et des préjugés. Ce n'est pas nécessairement une mauvaise chose ; c'est un point de départ pour percevoir le monde efficacement. Cependant, ce qui est important, c'est d'avoir **la flexibilité de mettre à jour gracieusement ses propres croyances (mise à jour vers la probabilité a posteriori), tout comme le [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/), plutôt que de fermer les yeux face à de nouveaux faits et de nouvelles preuves**.
+Pour des lancers indépendants et identiquement distribués d'une pièce équilibrée, avec face représentée par 1 et pile par 0, la [loi des grands nombres](https://kenji.blog/fr/p/law-of-large-numbers/) donne la limite
 
-Tout comme l'IA devient plus intelligente en consommant des données, nous, les humains, devrions également intégrer de nouvelles informations comme des preuves et nous mettre à jour en permanence, pour atteindre une compréhension plus précise du monde. Peut-être que le [Théorème de Bayes](https://kenji.blog/fr/p/bayes-theorem/) peut être considéré comme une représentation mathématique de l'« essence même de l'intelligence ».
+$$
+\frac1n\sum_{i=1}^{n}X_i\xrightarrow{\mathrm{a.s.}}\frac12
+$$
+
+Le symbole a.s. indique une convergence presque sûre : la probabilité que la proportion converge vers 1/2 est 1. Cela ne garantit pas exactement la moitié de faces sur un nombre fini de lancers.
+
+Les lois a priori peuvent intégrer des connaissances expertes ou des choix tels que des lois faiblement informatives. Il serait trompeur de les réduire toutes à des préférences arbitraires, ou de supposer qu'un choix de loi a priori rend automatiquement une analyse objective. Une prévision de pluie de 70 % pour demain peut se lire comme une probabilité fondée sur un modèle et des informations, dont on peut évaluer la calibration. Ce nombre seul n'identifie ni une école statistique ni la confiance personnelle du prévisionniste.
+
+## 10. Actualiser les observations et examiner les hypothèses
+
+L'actualisation bayésienne combine les informations préalables et les observations selon les règles de probabilité. Lors d'une actualisation séquentielle, la loi a posteriori précédente devient la nouvelle loi a priori et l'on utilise la vraisemblance conditionnelle des nouvelles données. Il ne faut pas réutiliser une observation déjà prise en compte comme si elle constituait une nouvelle information indépendante à multiplier.
+
+La formule ne répare pas à elle seule un modèle erroné ou des données biaisées. Examiner ce qui a été observé et la population ou la distribution supposée fait partie de l'apprentissage et de la révision de notre compréhension. Le [paradoxe des deux enveloppes](https://kenji.blog/fr/p/two-envelopes-paradox/) illustre aussi pourquoi les probabilités conditionnelles doivent être calculées à partir d'un modèle explicite.
