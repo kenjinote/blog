@@ -3095,6 +3095,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-025.json",
       "evidenceHash": "7142ae11a909176fd9eabf2d4b1856fbefe72658a8d5430299864840b44e68f7"
+    },
+    "post/2つの封筒のパラドックス/index.hi.md": {
+      "source": "post/2つの封筒のパラドックス/index.md",
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6fbb8397037b64b965eceac9fabe38880228b0a0311d6da2e5d4f33a7bd69ada",
+      "translationHash": "d488deac0456da64888a258ee75c5f1cd59967c21d330ad10f165b269f4fb91a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-025.json",
+      "evidenceHash": "955837935c35002e95725f3436631726e1c2d700633ef18424d05acc69fbc558"
     }
   }
 }
