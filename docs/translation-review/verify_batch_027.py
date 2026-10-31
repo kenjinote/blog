@@ -54,11 +54,20 @@ def auxiliary():
 def main():
     ap=argparse.ArgumentParser();ap.add_argument("site",type=Path)
     ap.add_argument("--languages",nargs="+",required=True);ap.add_argument("--output",type=Path,required=True)
+    ap.add_argument("--expected-modified",action="append",default=[],metavar="LANG=YYYY-MM-DD")
     args=ap.parse_args();assert not args.output.exists()
     audit=json.loads((D/"batch-027-source-audit.json").read_text(encoding="utf-8"))
     source=ROOT/audit["versions"]["ja"]["path"];tex=render.expressions(strip(source.read_text(encoding="utf-8")))
     assert sum(tex.values())==16
     urls={l:v["canonical"] for l,v in audit["versions"].items()}
+    modified_dates={l:"2026-10-30" for l in urls}
+    for value in args.expected_modified:
+        lang,day=value.split("=",1)
+        assert lang in args.languages and lang in urls
+        assert re.fullmatch(r"\d{4}-\d{2}-\d{2}",day)
+        datetime.strptime(day,"%Y-%m-%d")
+        assert "2026-10-30"<=day<=datetime.now(timezone(timedelta(hours=9))).date().isoformat()
+        modified_dates[lang]=day
     external={"https://faculty.econ.ucsb.edu/~tedb/Courses/GraduateTheoryUCSB/Bernoulli.pdf",
       "https://www.stanford.edu/class/psych205/papers/Tversky-Kahneman-1981.pdf"}
     versions=[]
@@ -68,8 +77,9 @@ def main():
         assert hashlib.sha256(original.replace("\r\n","\n").encode()).hexdigest()==audit["versions"][lang]["sha256"]
         assert taxonomy(text)==taxonomy(original)
         header=text.split("---",2)[1]
+        if lang=="hi":assert not any("\u0980"<=c<="\u09ff" for c in text)
         assert re.findall(r"^date:.*$",header,re.M)==['date: "2026-09-10T05:00:00+09:00"']
-        assert re.findall(r"^lastmod:.*$",header,re.M)==['lastmod: "2026-10-30"']
+        assert re.findall(r"^lastmod:.*$",header,re.M)==['lastmod: "'+modified_dates[lang]+'"']
         for k in ["slug","image"]:
             assert re.findall(r"^"+k+r":.*$",header,re.M)==re.findall(r"^"+k+r":.*$",original.split("---",2)[1],re.M)
         assert re.findall(r"^(?:math|mermaid): true$",header,re.M)==["math: true","mermaid: true"]
@@ -90,12 +100,12 @@ def main():
         assert refs==external|internal and all(u in html for u in refs)
         assert all((args.site/u.removeprefix("https://kenji.blog/")/"index.html").is_file() for u in internal)
         assert '"datePublished":"2026-09-10T05:00:00+09:00"' in html
-        assert '"dateModified":"2026-10-30' in html and "katex" in html and "mermaid" in html
+        assert ('"dateModified":"'+modified_dates[lang]) in html and "katex" in html and "mermaid" in html
         title=json.loads(re.search(r"^title: (.*)$",header,re.M)[1]);assert title in unescape(html)
         assert hashlib.sha256((ROOT/audit["image"]["path"]).read_bytes()).hexdigest()==audit["image"]["sha256"]
         versions.append({"language":lang,"path":p.relative_to(ROOT).as_posix(),"sha256":digest(p),
           "sourceSha256":digest(source),"texExpressions":16,"diagrams":1,"diagramEdges":[8],
-          "articleExecutablePrograms":0,"references":len(refs),"datePublished":audit["versions"][lang]["datePublished"],"passed":True})
+          "articleExecutablePrograms":0,"references":len(refs),"datePublished":audit["versions"][lang]["datePublished"],"dateModified":modified_dates[lang],"passed":True})
     result={"version":1,"checkedAt":datetime.now(timezone(timedelta(hours=9))).isoformat(),
       "allPassed":True,"versions":versions,"sharedAuxiliaryChecks":auxiliary(),
       "sourceAuditSha256":hashlib.sha256((D/"batch-027-source-audit.json").read_bytes()).hexdigest(),

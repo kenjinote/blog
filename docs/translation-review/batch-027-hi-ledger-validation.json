@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-31T14:58:30.275494+09:00",
+  "recordStdout": "Recorded ai review: post/サンクトペテルブルクのパラドックス/index.hi.md\n",
+  "checkStdout": "{\"current\": 334, \"unreviewed\": 12698}\n",
+  "current": 334,
+  "unreviewed": 12698,
+  "humanReviews": 0,
+  "scope": "One fully compared translation added; existing review entries preserved;publication pending."
+}
