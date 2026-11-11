@@ -37,3 +37,7 @@ Read complete original and revised body,table and both diagrams against Japanese
 ## Traditional Chinese full review — 2026-11-11
 
 Read complete original/revised body,table and diagrams against Japanese. Corrected陽性患者/陰性患者 conflation in sensitivity/specificity definitions;used貝氏/先驗/概似/後驗,敏感度/特異度/偽陽性,期望人數 and common效用units. Matched conditional host rules and scoped psychology/application discussion.15TeX,13/5edge diagrams,3primary/two internal refs,date/image/taxonomy and30bundle1680pages3052HTML41XML checks passed. Prior17tests referenced,not rerun. AI1added,total351/unreviewed12681/human0;prior350ledger and twoexisting batch029reviews unchanged. Other9translation bodies unread;publication pending.
+
+## Spanish full review — 2026-11-11
+
+Read old and revised full bodies,table and diagrams against Japanese. Corrected personas positivas/negativas versus disease status in sensibilidad/especificidad definitions. Aligned verosimilitudes,a priori/a posteriori,global/condicional,cambiar/mantener and prose decimal commas0,98/0,99/99,99. Preserved15TeX,13/5edge diagrams,3primary/two localized refs,date/image/taxonomy.30bundle1680pages3052HTML41XML checks passed;prior17tests referenced,not rerun. AI1added,total352/unreviewed12680/human0;prior351ledger and threeexisting batch029reviews unchanged. Other8translation bodies unread;publication pending.

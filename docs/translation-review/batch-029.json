@@ -122,6 +122,46 @@
         "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
         "Primary-source reading scope documented separately;publication pending."
       ]
+    },
+    "post/paradox-monty-hall-problem/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-monty-hall-problem/index.md",
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "translationHash": "76616a5c155bfd88254c0255d9a3fd0b613e87e1decea1f925ef402b98fec72d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read entire original Spanish and complete revised body/table/both diagrams against Japanese. Preserved six themes while adding explicit uniform placement,every-game offer,symmetric ties and observed-label conditions. Corrected unsupported universal psychological causation,unreferenced historical statistics and business success2/3 generalization consistently with reviewed source. Primary psychological study scope remains repeated learning and heterogeneous individuals."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used teorema de Bayes,verosimilitudes,probabilidad a priori/a posteriori,global versus condicional,and cambiar/mantener consistently. Old personas positivas/negativas conflated disease state/test results;defined sensibilidad/especificidad using disease presence/absence. Recuentos esperados are not patients observed. Used Spanish decimal commas0,98/0,99/99,99 in prose while retaining shared TeX;costes and utilidad in common units."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared15expressions and assumptions:likelihood1/2,0,1,posterior1/3/2/3,q dependence,uninformed B AND goat half,million-door uniformremainingR versus fixedr and no opening-order info. Hypothetical prevalence1/10000,sensitivity/specificity99percent yields1/102,counts0.99/99.99;utility difference(car-goat)/3-cost uses same units. Auxiliary finite Monty enumeration plus136joint-table/125utility cases once,not clinical/general/psychological proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Article programs0. Read all labels and13outcome diagram edges against car/goat cases and5edge proposed reasoning procedure,explicitly not an established psychological causal graph. Exact graph sources and15TeX preserved in decodedHTML. Libraries existed in baseline;explicit flags document requirements rather than prove a runtime repair. No actual Mermaid/KaTeX/browser execution,native-speaker or visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified three primary and two Spanish internal links,original September24published date/actualNovember11modified,image bytes/slug/taxonomy,14hreflang/13sidebar URLs.30bundle global1680pages and HTTPS3052HTML41XML checks passed.17existingtests referenced from JA/EN success,not rerun. Primary-reading scope documented separately;other8translation reviews and batch029publication pending."
+        }
+      },
+      "summary": "Full Spanish intuition/probability review with explicit host/conditioning assumptions,defined diagnostic terminology and scoped psychological/business applications.",
+      "languageSpecificFindings": "Corrected personas positivas/negativas versus actual disease status. Aligned sensibilidad/especificidad,verosimilitud,a priori/a posteriori and decimal-comma expected counts. Removed inaccurate always-nonrandom-host phrasing and unsupported brain/business generalizations;reasoning procedure does not claim empirical causation.",
+      "validation": "docs/translation-review/batch-029-es-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "8other translation bodies not yet fully reviewed at this stage.",
+        "Finite auxiliary arithmetic distinct from article programs0,clinical advice,psychological experiment or corporate-success proof.",
+        "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
+        "Primary-source reading scope documented separately;publication pending."
+      ]
     }
   },
   "stages": [
@@ -249,6 +289,48 @@
       "unreviewedTranslations": 12681,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 9,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "es"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "validation": "docs/translation-review/batch-029-es-validation.json",
+      "checks": "docs/translation-review/batch-029-es-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-029-es-ledger-validation.json",
+      "texEach": 15,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.",
+        "diagnosticJointTableCases": 136,
+        "diagnosticExamplePosterior": "1/102",
+        "utilityPlacementCases": 125,
+        "additionalScope": "Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence."
+      },
+      "actualPreviewBundles": 30,
+      "multilingualPages": 1680,
+      "httpsHtmlPages": 3052,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 352,
+      "unreviewedTranslations": 12680,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 8,
       "publicationPending": true
     }
   ]
