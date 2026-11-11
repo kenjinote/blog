@@ -403,6 +403,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/囚人のジレンマ/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "b0371d12309df9a5e24f3a40c7f359229eb7bfed501425eb850b462561a7059a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read entire original/revised Russian metadata,six sections,matrix and both diagrams against frozen Japanese. Matched fictional simultaneous own-utility model,efficient pureCC/CD/DC versus CCsum maximum,unilateral Nash deviation,finite common-knowledge backward induction,infinite conditionalgrim cooperation and TFTpreviousround. All price/climate/doping themes retained with explicit need for independent payoffs/institutions,not universal empirical outcomes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared выигрыш/полезность versus срок заключения,строго доминирующая,чистые/смешанные,эффективность по Парето,равновесие Нэша versus совершенное в подыграх,обратная индукция,общее знание,коэффициент дисконтирования,око за око and defined permanent-punishment trigger. Original opening said release from punishment,but later case1 claimed вас оправдают/оправдание;removed that legal inference without falsely claiming every passage used it. Correct иен retained."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all nine identical TeX and four payoff cells,own/opponent argument order,T0>R-1>P-5>S-10,three efficient pureprofiles,CCsum-2 versus others-10,strictD and mixed-belief5-4p>=1. Infinite perfect observation0<=delta<1 yieldsgrim1/5,not TFT or MITdifferenttable. Exact auxiliary4profiles101beliefs2players102discounts612delays/two8roundtraces once,not general or empirical proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read both complete six-edge Mermaid sources:conditionaloneshot incentives andt=1,simultaneousroundt play,observe,setroundt+1,incrementt onbothbranches. Corrected olddirectrepentance shortcut and one-shot table label beforefirstvalidation. Exact graphsource/topology/decodedHTMLmath and library inclusion checked,flags already true. No browser,visual,KaTeX/Mermaid execution or tournament reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primary references match source and occur in preview;documented substantive reading scope retained,not every cited work read. Kept author names in source Latin spelling rather than guessing transliteration. Preserved slug,image hash,taxonomy,both rawdate lines/effectiveSep10T03 andactualNov11lastmod.14hreflang13sidebar,31bundles1736pages/HTTPS3157HTML41XML passed. Prior17tests not rerun;Arabic/publication pending."
+        }
+      },
+      "summary": "Full Russian review of utility,unilateral equilibrium and conditional repeated-game cooperation with precise round timing.",
+      "languageSpecificFindings": "Original Russian called negative utility годы тюрьмы and its later case1 asserted acquittal although opening release-from-punishment wording differed. Corrected fictional utility model,kept correct иен,and replaced monetary штраф implication with action-based permanent punishment. Qualified обязательно human choices,подавляющее tournament margin and longrelationship guarantee;matched previous/current/nextраунд. Polished однократной игры label before proof.",
+      "validation": "docs/translation-review/batch-030-ru-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "1 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0 and empirical tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -844,6 +884,50 @@
       "unreviewedTranslations": 12662,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 2,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "ru"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-ru-validation.json",
+      "checks": "docs/translation-review/batch-030-ru-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-030-ru-ledger-validation.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 371,
+      "unreviewedTranslations": 12661,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 1,
       "publicationPending": true
     }
   ]
