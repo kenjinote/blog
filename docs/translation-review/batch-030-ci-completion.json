@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "observedAt": "2026-11-12T08:43:57.3154776+09:00",
+  "ciRun": 43042507959,
+  "deployedCommit": "5208e8790f7e1e883b99c5a601d628efd878dbcc",
+  "runAttempt": 1,
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-11T14:51:21Z",
+      "completed_at": "2026-11-11T15:17:31Z"
+    },
+    {
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-11T15:17:37Z",
+      "completed_at": "2026-11-11T15:19:23Z"
+    }
+  ]
+}

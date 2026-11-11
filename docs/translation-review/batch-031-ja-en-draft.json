@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-12T08:50:01.395271+09:00",
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/paradox-prisoners-dilemma/index.md",
+      "originalHash": "1f406bed720bb0d3b0754cde684afcacc22e1f77db4c3a3f52b1d611ee526455",
+      "revisedHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "publishedDatePreserved": "2026-09-24T15:00:00+09:00",
+      "modifiedDate": "2026-11-12",
+      "texExpressions": 10,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articlePrograms": 0,
+      "draftNotCertified": true
+    },
+    {
+      "language": "en",
+      "path": "content/post/paradox-prisoners-dilemma/index.en.md",
+      "originalHash": "5bf98cd472e9be80e47554d6217148cd1ceada2aa4450436ef79c0f1817d6b38",
+      "revisedHash": "2c2fb6e3d5f00e626646027e93d6c268049a2a87559656cad3a89b1a6782c075",
+      "publishedDatePreserved": "2026-09-24T15:00:00+09:00",
+      "modifiedDate": "2026-11-12",
+      "texExpressions": 10,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articlePrograms": 0,
+      "draftNotCertified": true
+    }
+  ],
+  "scope": "Draft only,pending full revised reread/checks before any ledger entry. Explicit flags document requirements;baseline libraries already present."
+}

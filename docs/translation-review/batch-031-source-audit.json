@@ -1,0 +1,297 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T23:56:46.042330+09:00",
+  "baselineCommit": "5208e8790f7e1e883b99c5a601d628efd878dbcc",
+  "baselineSite": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-cooperation-baseline",
+  "actualPreviewBundles": 32,
+  "versions": {
+    "ar": {
+      "path": "content/post/paradox-prisoners-dilemma/index.ar.md",
+      "sha256": "0893f5a15344d34f0eb10756a9c08759512209fc0122257853b856c3f5e8754d",
+      "canonical": "https://kenji.blog/ar/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/paradox-prisoners-dilemma/index.de.md",
+      "sha256": "805ce6c84fb9960a36ce3f380531e43dd91eb4ac089b0462341547a043226f4f",
+      "canonical": "https://kenji.blog/de/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/paradox-prisoners-dilemma/index.en.md",
+      "sha256": "5bf98cd472e9be80e47554d6217148cd1ceada2aa4450436ef79c0f1817d6b38",
+      "canonical": "https://kenji.blog/en/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/paradox-prisoners-dilemma/index.es.md",
+      "sha256": "991ab511d2c48289d3ef8f53bdd6ef5cd8103601d475dc40eaff77c05b0b6a5f",
+      "canonical": "https://kenji.blog/es/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/paradox-prisoners-dilemma/index.fr.md",
+      "sha256": "9901dbfcfc2c205b3c53b60253d842ee897dcc6938701a7dcc20637683c297be",
+      "canonical": "https://kenji.blog/fr/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/paradox-prisoners-dilemma/index.hi.md",
+      "sha256": "0682d7c6cd6ff0987131a888de3aafef374ad61deba11bd4335e2d195d0b2279",
+      "canonical": "https://kenji.blog/hi/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/paradox-prisoners-dilemma/index.id.md",
+      "sha256": "afd5d8b2ac99c6ea4d5ce7853290bae80e57316925bdb9150932d1f88a4fd189",
+      "canonical": "https://kenji.blog/id/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/paradox-prisoners-dilemma/index.ko.md",
+      "sha256": "933b0d55ba614486926602a2da2843f042047e6b7ab2ef2779d11509c57abc67",
+      "canonical": "https://kenji.blog/ko/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/paradox-prisoners-dilemma/index.md",
+      "sha256": "1f406bed720bb0d3b0754cde684afcacc22e1f77db4c3a3f52b1d611ee526455",
+      "canonical": "https://kenji.blog/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/paradox-prisoners-dilemma/index.pt.md",
+      "sha256": "7d693d21893f9c8024267b45b65e6dda2683a0d4cb2c9a4343a896048aaac176",
+      "canonical": "https://kenji.blog/pt/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/paradox-prisoners-dilemma/index.ru.md",
+      "sha256": "73deaad6dc3c4dfbbd4f3954673ec34b7e1b95cd6884b395e938e2418f9b91fc",
+      "canonical": "https://kenji.blog/ru/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/paradox-prisoners-dilemma/index.zh-cn.md",
+      "sha256": "2e1a3dd60e170a085102353269ee89f28dbfc1092af5b52bb71f66dd9ed2ab1a",
+      "canonical": "https://kenji.blog/zh-cn/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/paradox-prisoners-dilemma/index.zh-tw.md",
+      "sha256": "ba1bd02ea08b69dcbd7be5672adc196dd045b8257bf3fe15755a4cf0cec530dd",
+      "canonical": "https://kenji.blog/zh-tw/p/paradox-prisoners-dilemma/",
+      "slug": "paradox-prisoners-dilemma",
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T15:00:00+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    }
+  },
+  "assets": [
+    {
+      "path": "content/post/paradox-prisoners-dilemma/eyecatch.jpg",
+      "sha256": "dd09fdc559b808c274111eec273effdd101248ee0be8649f8fca6bd6ad5b5df0"
+    }
+  ],
+  "manualFindings": [
+    "JA/EN entire originals including metadata,six sections andbothgraphs read. Other11 only inventory at this stage.",
+    "Keep distinct public paradox-prisoners-dilemma article;do not merge or certify via priorprisoners-dilemma review. Preserve history,one-shot,applications,repetition,evolution,cooperation-design themes.",
+    "Fictional sentencing/ownutility model required;Pareto efficiency is not sum maximization and pureCC/CD/DC efficient in this table.",
+    "One-shot selfish incentives are conditional,not inevitable human/social worst outcome.",
+    "Price/climate/ColdWar armsrace analogies need own payoffs/institutions;not unconditional historical causation or policy recommendations.",
+    "Original TFT diagram has three disconnected components and no round-observe loop. First branch diagram enumerates joint outcomes,not an observable sequential game.",
+    "Tournament score depends on rules/entries;three named qualities supported by1981paper,clear rule is descriptive,not unverified universal empiricalcause.",
+    "Small TFTcluster does not always invade ALLD;assortative matching andcontinuation matter. Negative discounted scores are not literal reproductive fitness.",
+    "Vampire bat food sharing andbee social behavior cannot be identified withTFT from a generic simulation. NewCarter/Wilkinson2013fullpaperbody read;no supplements/data/code reproduced.",
+    "History checked against selectedCornellofficialteaching sections;itsdifferentDD=-4 andapparent10yearprose typo mustnot be imported. RAND1952listing read,scannedPDFnotread."
+  ],
+  "reviewedTranslationsAdded": 0,
+  "currentAiTranslations": 372,
+  "unreviewedTranslations": 12660,
+  "humanReviews": 0,
+  "limitations": [
+    "Pre-audit only;no rewrite/ledger certification.",
+    "Only JA/EN complete original bodies read.",
+    "No native/browser/tournament/biologicaldata reproduction or currentpolicy/legal advice certification.",
+    "Batch030run43042507959 still pending matching build/deploy andlive403article+3tagURLs."
+  ]
+}

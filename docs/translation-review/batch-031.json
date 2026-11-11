@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "article": "paradox-prisoners-dilemma",
+  "sourceAudit": "docs/translation-review/batch-031-source-audit.json",
+  "sourceNotes": "docs/translation-review/batch-031-source-notes.md",
+  "reviews": {
+    "post/paradox-prisoners-dilemma/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-prisoners-dilemma/index.md",
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "translationHash": "2c2fb6e3d5f00e626646027e93d6c268049a2a87559656cad3a89b1a6782c075",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full original and revised JA/EN metadata,introductions,sixsections,two revisedtables and bothgraphs. Preserved history,one-shot incentives,price/climate/armsrace,repetition,evolution,bat/bee examples and cooperation-design themes. Distinguished fictional ownutility,Paretoefficiency fromsum,unilateral Nash,finite/infinite repetition,rare-cluster score comparison and measured biology. No universal human choices or automatic cooperative-group victory."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared payoff/utility versus sentence duration,strictly dominant,pure/mixed,Paretoefficiency versus sum,Nash versus subgame-perfect,discounted score versus reproductive fitness,initial advantage versus fixation,TFT versus ALLD,and qbelief versus pwithin-cluster matching versus population prevalence. Corrected old English lost-parenthesis phrases remain silent Cooperate/acquitted released and legal innocence inference. Source names/credits use documented reading scopes."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually read ten identical TeX andboth tables. T0>R-1>P-5>S-10,pure efficientCC/CD/DC,unique one-shotDD,sumCC-2 versusothers-10,belief advantage5-4q>=1. TFT pair discounted values andrarecluster advantage[p(9-5delta)-5(1-delta)]/(1-delta) yield p>5(1-delta)/(9-5delta),atdelta9/10 p>1/9;numericfourrows andisolatedTFTloss5 verified. Auxiliary4profiles101beliefs2players102discounts/306deterministictails/10605matchingcases/4tablerows/errortrace once. Not population-update/ESS/SPE/general empirical proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Zero executable article programs. Read two complete six-edge Mermaid sources:enumeration of simultaneous joint outcomes,not sequentially observed choice;and connected TFTplay-observe-nextaction loop witht=1 andbothbranches incrementing. Original secondgraph hadthree disconnectedcomponents. Exact source/topology/decodedHTMLmath andlibrary inclusion checked;baseline already included libraries,flags merely document requirements. No browser,visual,KaTeX/Mermaid execution,tournament reproduction or biological analysis code execution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Four external references(two research papers,two official teaching sources) plus localized English internal prisoner article match preview. NewCarter/Wilkinsoncomplete author-hosted body/captions/references read,not supplement/data;20fasted individuals not20totalcolony. PriorAxelrod/Hamilton/MIT andselectedCornellscopes documented;RANDscannedPDF notread. Preserved slug,imagehash,taxonomy,originalSep24T15 date andactualNov12lastmod.14hreflang13sidebar,32bundles1800pages/HTTPS3277HTML41XML and17tests passed. Other11prose/publication pending."
+        }
+      },
+      "summary": "Complete English review of cooperation/evolution models with explicit matching threshold and separate biological evidence.",
+      "languageSpecificFindings": "Old English action labels lost parentheses and acquitted released obscured zero sentence versus innocence. Corrected these,strict dominance/Pareto-sum conflation,disconnected TFT diagram and universal TFTcluster elimination. Preserved all substantive themes and distinguished correlation,score,fitness and fixation;complete revised reread finished.",
+      "validation": "docs/translation-review/batch-031-ja-en-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "Other11 translation bodies unreviewed.",
+        "Finite exact auxiliary arithmetic/traces separate from article programs0,population updates,tournament or biological dataset reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary/teaching reading scopes documented;no current policy/legal advice or universal ESS certificate.",
+        "Publication and full-site goal remain pending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "ja",
+        "en"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "validation": "docs/translation-review/batch-031-ja-en-validation.json",
+      "checks": "docs/translation-review/batch-031-ja-en-checks.json",
+      "texEach": 10,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "cooperationBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "deterministicStrategyPairs": 3,
+        "roundsEach": 8,
+        "discountedPrefixPlusExactTailCases": 306,
+        "clusterMatchingCases": 10605,
+        "isolatedTftDifference": "-5",
+        "exampleDelta": "9/10",
+        "exampleMatchingThreshold": "1/9",
+        "numericTableCases": 4,
+        "tftErrorTraceRounds": 8,
+        "scope": "Once per invocation,finite exact auxiliary arithmetic and traces. Not article programs,population-update simulation,ESS/SPE/all-strategy proof,biological data reanalysis or tournament reproduction. Rare-cluster resident baseline and negative score meaning read separately in prose."
+      },
+      "actualPreviewBundles": 32,
+      "multilingualPages": 1800,
+      "httpsHtmlPages": 3277,
+      "httpsXmlFiles": 41,
+      "existingTestsRerun": 17,
+      "reviewedTranslationsTotal": 373,
+      "unreviewedTranslations": 12659,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    }
+  ]
+}

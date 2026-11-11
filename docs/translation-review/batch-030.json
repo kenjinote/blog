@@ -1038,7 +1038,7 @@
     "publicationProbePreparation": "docs/translation-review/batch-030-probe-preparation-r2.json",
     "publicationProbeLocalCheck": "docs/translation-review/batch-030-probe-local-structure-r2.json",
     "firstLocalProbeAttemptPreserved": "docs/translation-review/batch-030-probe-local-structure.json",
-    "publicationPending": true,
+    "publicationPending": false,
     "scope": "All13 bodies manually read/compared and12AI entries immutable.31bundle source/decodedHTML checks,not fullsite/native/browser/tournament certification. Localprobe403+3passes after localHTMLCRLF normalization;first54graph-only failures retained and diagnosed. Actual live verification waits CI."
   },
   "publicationDispatch": {
@@ -1077,5 +1077,31 @@
         ]
       }
     ]
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-11-12T08:45:28.726475+09:00",
+      "ciRun": 43042507959,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43042507959",
+      "deployedCommit": "5208e8790f7e1e883b99c5a601d628efd878dbcc",
+      "ciCompletion": "docs/translation-review/batch-030-ci-completion.json",
+      "proof": "docs/translation-review/publication-030.json",
+      "pages": 403,
+      "passed": 403,
+      "failed": 0,
+      "translations": 372,
+      "japaneseSources": 31,
+      "mathVersions": 208,
+      "texExpressions": 10104,
+      "prisonerVersions": 13,
+      "prisonerTeX": 117,
+      "prisonerDiagramSources": 26,
+      "prisonerGraphEdges": 156,
+      "additionalHindiTaxonomyPages": 3,
+      "additionalHindiTaxonomyPassed": 3,
+      "httpPageProbeAttempts": 1,
+      "httpPageRetries": 0,
+      "scope": "001through030 live403articleURLs plus3Hindi taxonomyURLs passed firstHTTPattempt after matching build/deploy success. Prisoner13 exact math/diagrams/refs/title/date/fourpayoffcells/canonical/language/hreflang/sidebar;Arabic4LTRnumericpairs/RTL,Germanirrelevantarticlelinkabsence. Prior390checks preserved. Initial local54CRLF graph failures are separate from liveHTTP,not erased or counted as HTTP retries. StaticHTMLaliases,not HTTP301/browser navigation. Not fullsite/native/browser/tournament certification."
+    }
+  ]
 }
