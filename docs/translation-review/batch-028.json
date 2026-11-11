@@ -169,6 +169,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/モンティ・ホール問題/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/モンティ・ホール問題/index.md",
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "translationHash": "1d4df14b5a7ea05a3334d2fab79a490d6e416765423c2557bba961126a4779fe",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read original Korean full metadata/body/diagrams and full six-section revision/table/18math/two diagrams against unchanged JA;explicitly read final natural-language rule/event/R-definition changes. Preserve setup/history/cases/Bayes/intuition/information/million doors/life themes. Add uniform car placement,every-game goat opening and switch offer,tie selection;separate overall strategy and labeled observation. Correct exactly2wins each3games,host could not open C,universal psychology/life doubling and unrun100simulations. Remove unsupported historical breakdown with revised JA."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Check 조건부 확률/무조건부 당첨 확률,사전 확률/우도/사후 확률,전확률의 법칙,유지/변경 and 관측. Confirm 우도 terminology in previously reviewed Korean Bayes passages,not a fresh whole-article review. Replace 결정적인 which can mean decisive with 열 문이 항상 하나로 정해지는 것은 아닙니다 to express nondeterminism. Replace 개문 with 문을 여는 and compressed 미선택 with explicit unchosen-door wording. Define U_B/G with proper object constructions,R uniquely closed besides initial1,n>=3 and r!=1. AI,not native certification."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all18formal expressions and conditions:uniform3prior,fixedA,informed host/always-goat/always-offer/uniformtie;likelihood1/2,0,1/evidence1/2/posteriors1/3,2/3. Generalq0..1 gives positive MB/MC masses,both posterior formulas/weighted2/3/q1example. Uninformed independent B/C and B AND goat yield1/2 each. n>=3integer,r!=1,R-only observation,symmetric versus fixed-label leave policies. Shared once101q/all3initial choices9pairs/1212weighted paths,uninformed18paths/six observations/many99closedforms are finite supplements,not million-path simulation,general-policy proof or psychological experiment."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read graph15edges and table/prose for all3car arrangements,initial-A유지당첨/변경탈락 and reverse results for other2. Pie theoretical2:1 replaces unmeasured67/33and100trials label.18TeX and two diagram sources match decodedHTML;existing math/mermaid true retained. Auxiliary execution distinct from article code;script references not browser KaTeX/Mermaid runtime or visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Gill/Rosenthal primary2PDF reading scope stays documented,no inaccessible original column/psychology certification. Two internal links use ko and exist,fourreferences match. Preserve effectiveSep10T00date,oldslug/taxonomy/twoassetbytes;single date/actualNov11lastmod/AI review. Canonical14hreflang13sidebar,multilingual1629pages/HTTPS2960HTML41XML pass. Previous17JA/ENtests referenced,not rerun. Not full-site/native/browser/psychological/publication certification."
+        }
+      },
+      "summary": "Full Korean original/revision comparison:host assumptions,conditional versus overall probability,theoretical diagrams,and natural nondeterminism/event/R wording;publication pending.",
+      "languageSpecificFindings": "Use 사전 확률/우도/사후 확률 and 조건부 versus 무조건부. Replace 결정적인/개문/미선택 with explicit natural explanations;define events and uniquely remaining R carefully. Separate probability from repeated trial counts. AI only.",
+      "validation": "docs/translation-review/batch-028-ko-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "7other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,financial advice,empirical choice evidence or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -334,6 +375,47 @@
       "unreviewedTranslations": 12692,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 8,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "ko"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "validation": "docs/translation-review/batch-028-ko-validation.json",
+      "checks": "docs/translation-review/batch-028-ko-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-028-ko-ledger-validation.json",
+      "texEach": 18,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        15,
+        0
+      ],
+      "pieRatio": [
+        2,
+        1
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution."
+      },
+      "multilingualPages": 1629,
+      "httpsHtmlPages": 2960,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 341,
+      "unreviewedTranslations": 12691,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 7,
       "publicationPending": true
     }
   ],
