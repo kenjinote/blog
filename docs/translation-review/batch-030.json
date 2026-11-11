@@ -323,6 +323,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/囚人のジレンマ/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "84a0f75a756d086b17b0141d1002057c6cef5e3318ba103f0dc35840c2133eab",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all original and revised Hindi metadata,six sections,matrix and both diagrams against frozen Japanese. Matched fictional simultaneous own-utility model,efficient pure CC/CD/DC versus CCsum maximum,unilateral Nash changes,finite common-knowledge backward reasoning,infinite perfect-monitoring grim cooperation and TFT previous-round rule. Clarified that environmental applications may involve many countries and profit margin is not a difference between firms' profits. All three themes retained conditionally."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished पेऑफ/उपयोगिता from जेल की अवधि and zero years from निर्दोष. Made old प्रभावी रणनीति unambiguous with सख्ती से प्रभुत्वशाली रणनीति and strictly dominant strategy. Compared पैरेटो दक्षता,नैश संतुलन,शुद्ध/मिश्रित,उपखेल-पूर्ण संतुलन with English,जैसे को तैसा,डिस्काउंट गुणक and defined स्थायी दंड(grim trigger). Explained shared common knowledge at every level,not ordinary general knowledge. Corrected old कबूूल spelling. Original येन retained."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read nine identical TeX expressions,four matrix cells and own/opponent payoff argument convention. Verified T0>R-1>P-5>S-10,efficient pure CC/CD/DC,CCsum-2 versus other-10,strictD advantage and mixed-belief5-4p>=1. Infinite perfect observation and0<=delta<1 givegrimdelta>=1/5,not TFT or MITdifferenttable. Exact auxiliary4profiles101beliefs2players102discounts612delays/two8roundtraces once,not general or empirical proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read both complete six-edge Mermaid sources:conditional one-round incentives andt=1,simultaneous current-round play,observation,next-round decision andincrementt on bothbranches. Replaced repentance shortcut. Source topology and decodedHTMLmath exact,library presence checked,flags already true. No browser,visual,KaTeX/Mermaid execution or tournament reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Both primary reference URLs match Japanese and occur in preview;documented substantive reading limits retained,not all cited references read. Preserved slug,image hash,taxonomy,both date lines/effectiveSep10T03 andactualNov11lastmod.14hreflang13sidebar,31bundles1736pages/HTTPS3157HTML41XML passed. Existing17tests referenced,not rerun;other3prose/publication pending."
+        }
+      },
+      "summary": "Complete Hindi review with precise utility,dominance,common knowledge and conditional repeated-game cooperation.",
+      "languageSpecificFindings": "Old Hindi used कबूूल with duplicated vowel and प्रभावी रणनीति without strict dominance precision. Clarified utility versus sentence and zero versus innocence;kept correct येन. Reworked ordinary-general-knowledge wording to shared common knowledge with recursive explanation,profit margin and may-involve-many-countries wording before first proof. Qualified universal human behavior,TFT margin and longrelationship guarantee;previous/current/nextदौर consistent.",
+      "validation": "docs/translation-review/batch-030-hi-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "3 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0 and empirical tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -676,6 +716,50 @@
       "unreviewedTranslations": 12664,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 4,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "hi"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-hi-validation.json",
+      "checks": "docs/translation-review/batch-030-hi-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-030-hi-ledger-validation.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 369,
+      "unreviewedTranslations": 12663,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 3,
       "publicationPending": true
     }
   ]
