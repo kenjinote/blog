@@ -3,6 +3,8 @@ from pathlib import Path
 from fractions import Fraction as F
 from datetime import datetime,timezone,timedelta
 from html import unescape
+from html.parser import HTMLParser
+from urllib.parse import unquote
 from decimal import Decimal as Q,localcontext
 import argparse,hashlib,importlib.util,itertools,json,re,subprocess,sys
 ROOT=Path(__file__).resolve().parents[2];D=ROOT/"docs/translation-review"
@@ -19,6 +21,37 @@ def graphs(s):
 def taxonomy(s):
     h=s.split("---",2)[1]
     return tuple(re.search(r"(?ms)^"+k+r":(.*?)(?=^[A-Za-z]|\Z)",h)[1].strip() for k in ("categories","tags"))
+
+def hindi_tag_redirects(site):
+    """One documented tag correction; keep both old public archive URLs."""
+    target="https://kenji.blog/hi/tags/बेज़-का-प्रमेय/"
+    class Links(HTMLParser):
+        def __init__(self):
+            super().__init__();self.canonical=None;self.refresh=None;self.links=[]
+        def handle_starttag(self,tag,attrs):
+            a=dict(attrs)
+            if tag=="link" and a.get("rel")=="canonical":self.canonical=a.get("href")
+            if tag=="meta" and a.get("http-equiv","").lower()=="refresh":self.refresh=a.get("content")
+            if tag=="a":self.links.append(unquote(a.get("href","")))
+    archive=site/"hi/tags/बेज़-का-प्रमेय/index.html"
+    parser=Links();parser.feed(archive.read_text(encoding="utf-8"))
+    assert unquote(parser.canonical)==target
+    for slug in ("monty-hall-problem","bayes-theorem"):
+        assert any(u.endswith("/hi/p/"+slug+"/") for u in parser.links)
+    article=Links();article.feed((site/"hi/p/monty-hall-problem/index.html").read_text(encoding="utf-8"))
+    assert any(u.endswith("/hi/tags/बेज़-का-प्रमेय/") for u in article.links)
+    assert not any("/hi/tags/बायेस-की-प्रमेय/" in u for u in article.links)
+    checks=[]
+    for relative in ("hi/tags/बायेस-की-प्रमेय/","hi/tags/बायेस-की-प्रमेय/page/1/"):
+        p=Links();p.feed((site/relative/"index.html").read_text(encoding="utf-8"))
+        assert unquote(p.canonical)==target
+        assert unquote(p.refresh)=="0; url="+target
+        checks.append({"oldUrl":"https://kenji.blog/"+relative,"target":target,
+                       "canonicalMatches":True,"zeroDelayMetaRefreshMatches":True})
+    return {"oldTag":"बायेस की प्रमेय","newTag":"बेज़ का प्रमेय",
+            "archiveContainsBothArticles":True,"articleLinksToCorrectedTag":True,
+            "legacyArchives":checks,
+            "scope":"Static generated alias HTML,not an HTTP301 or browser/live certification."}
 def auxiliary():
     weighted_paths=0
     for k in range(101):
@@ -85,7 +118,11 @@ def main():
         p=ROOT/audit["versions"][lang]["path"];text=p.read_text(encoding="utf-8-sig")
         original=subprocess.run(["git","show",audit["baselineCommit"]+":"+p.relative_to(ROOT).as_posix()],cwd=ROOT,capture_output=True,text=True,encoding="utf-8",check=True).stdout
         assert hashlib.sha256(original.replace("\r\n","\n").encode()).hexdigest()==audit["versions"][lang]["sha256"]
-        assert taxonomy(text)==taxonomy(original)
+        expected_taxonomy=original
+        if lang=="hi":
+            assert original.count("'बायेस की प्रमेय'")==1
+            expected_taxonomy=original.replace("'बायेस की प्रमेय'","'बेज़ का प्रमेय'")
+        assert taxonomy(text)==taxonomy(expected_taxonomy)
         header=text.split("---",2)[1]
         if lang=="hi":assert not any("\u0980"<=c<="\u09ff" for c in text)
         assert re.findall(r"^date:.*$",header,re.M)==['date: "2026-09-10T00:00:00+09:00"']
@@ -124,6 +161,7 @@ def main():
           "articleExecutablePrograms":0,"references":len(refs),"datePublished":audit["versions"][lang]["datePublished"],"dateModified":modified_dates[lang],"passed":True})
     result={"version":1,"checkedAt":datetime.now(timezone(timedelta(hours=9))).isoformat(),
       "allPassed":True,"versions":versions,"sharedAuxiliaryChecks":auxiliary(),
+      "hindiTaxonomyCorrection":hindi_tag_redirects(args.site) if "hi" in args.languages else None,
       "sourceAuditSha256":hashlib.sha256((D/"batch-028-source-audit.json").read_bytes()).hexdigest(),
       "reviewedTranslationsAdded":0,"limitations":["Selected source/decodedHTML/auxiliary checks do not certify full prose or add ledger records.",
         "No article executable programs;auxiliary calculations distinct.",
