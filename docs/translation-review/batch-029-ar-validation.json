@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T22:39:51.352036+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/paradox-monty-hall-problem/index.md",
+      "sha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "path": "content/post/paradox-monty-hall-problem/index.ar.md",
+      "sha256": "6c9567ab8c9ac2e14403103f9ef5781edbc7479093734d98cab6b2179b8d8f20",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    }
+  ],
+  "sharedAuxiliaryChecks": {
+    "biasedHostValues": 101,
+    "initialChoiceCarPairsEach": 9,
+    "weightedHostPathsIncludingZeroWeights": 1212,
+    "uninformedElementaryPaths": 18,
+    "uninformedGoatPaths": 12,
+    "uninformedLabeledGoatObservations": 6,
+    "manyDoorFormulaCases": 99,
+    "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.",
+    "diagnosticJointTableCases": 136,
+    "diagnosticExamplePosterior": "1/102",
+    "utilityPlacementCases": 125,
+    "additionalScope": "Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence."
+  },
+  "sourceAuditSha256": "10845573b974c8371b3b93ce37406a111219b603fb6455f646338c7182441741",
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source/decodedHTML/finite arithmetic only;not full prose approval or ledger record.",
+    "Article programs0;auxiliary checks separate. No native/browser/clinical/psychological/general-policy certification.",
+    "Source flags now explicit;baseline already included runtime libraries.",
+    "Other languages/publication pending;full article goal active."
+  ]
+}

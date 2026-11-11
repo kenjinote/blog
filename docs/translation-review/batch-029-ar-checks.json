@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T22:39:58.894493+09:00",
+  "allPassed": true,
+  "results": [
+    {
+      "command": [
+        "docs/translation-review/verify_batch_029.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-intuition-ar",
+        "--languages",
+        "ja",
+        "ar",
+        "--output",
+        "docs/translation-review/batch-029-ar-validation.json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"passed\": true, \"versions\": 2, \"texEach\": 15, \"diagramEdges\": [13, 5], \"auxiliary\": {\"biasedHostValues\": 101, \"initialChoiceCarPairsEach\": 9, \"weightedHostPathsIncludingZeroWeights\": 1212, \"uninformedElementaryPaths\": 18, \"uninformedGoatPaths\": 12, \"uninformedLabeledGoatObservations\": 6, \"manyDoorFormulaCases\": 99, \"scope\": \"Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.\", \"diagnosticJointTableCases\": 136, \"diagnosticExamplePosterior\": \"1/102\", \"utilityPlacementCases\": 125, \"additionalScope\": \"Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence.\"}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-intuition-ar"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1680 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-intuition-ar"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 3052, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    }
+  ],
+  "actualPreviewBundles": 30,
+  "previous17UnitTests": "docs/translation-review/batch-029-ja-en-checks.json",
+  "unitTestsRerun": false,
+  "staticRtlCheck": {
+    "lang": "ar",
+    "dir": "rtl",
+    "linkedMathIsolationCss": [
+      {
+        "path": "scss/style.min.053be3a5f0163a09f569d953d9f2378f640c0b40dc9454bd891db75e1e15e946.css",
+        "sha256": "053be3a5f0163a09f569d953d9f2378f640c0b40dc9454bd891db75e1e15e946"
+      }
+    ],
+    "browserVisualOrRuntimeChecked": false
+  },
+  "scope": "JA/Arabic source/decodedHTML15math/two diagrams13and5edges/5refs;staticRTL+actuallylinkedCSS mathisolation;global30bundle1680pages3052HTML41XML. Auxiliary once. Prior17tests referenced,not rerun. No native/browser/clinical/psychological/publication certification."
+}

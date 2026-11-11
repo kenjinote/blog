@@ -442,6 +442,46 @@
         "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
         "Primary-source reading scope documented separately;publication pending."
       ]
+    },
+    "post/paradox-monty-hall-problem/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-monty-hall-problem/index.md",
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "translationHash": "6c9567ab8c9ac2e14403103f9ef5781edbc7479093734d98cab6b2179b8d8f20",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all original Arabic metadata/body/table/two diagrams and complete revised version against Japanese. Preserved six themes with uniform placement,every-game offer,symmetric ties,overall/conditional distinctions and remaining-label-only observation. Corrected unsupported universal historical/brain/business claims and scoped psychological evidence to repeated tasks/individual differences;not a universal cause."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Standardized مسألة مونتي هول,مبرهنة بايز,الاحتمالات القبلية/البعدية and likelihood defined explicitly as conditional opening probabilities(قيم دالة الإمكان). Replaced mixed Arabic door letters with consistent A/B/C matching formulas/diagrams. Corrected positive-result group described as confirmed infected and positive/negative-person definitions;الحساسية/النوعية use disease presence/absence. True/false positive expected counts and common المنفعة units explicit. Full reread polished event notation and actual car-presence proposition."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared15expressions and assumptions:1/2,0,1 likelihoods,posterior1/3/2/3,q-biased host,uninformed B AND goat half,ninteger>=3,r2..n,R-only observation,symmetric versus fixed-label rule. Hypothetical diagnostic1/102,expected counts0.99/99.99 and utility advantage(car-goat)/3-cost in common units preserved. Shared finite auxiliary once plus136diagnostic/125utility cases,not clinical/psychological/general proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Article executable programs0. Read13outcome edges and Arabic car/goat win/loss labels,and5edge proposed reasoning procedure explicitly not proven psychological causes. Exact Mermaid sources/15TeX preserved in decodedHTML. Static Arabic lang/RTL checked;actuallylinked compiled stylesheet contains .katex LTR/isolate rule and hash recorded. Baseline already loaded libraries;flags are documentation. No browser/KaTeX/Mermaid execution,native-speaker or visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified three primary and two Arabic internal links,original September24published date/actualNovember11modified,image hash/publicslug/taxonomy,14hreflang/13sidebar targets.30bundle1680pages and HTTPS3052HTML41XML passed.17existingtests referenced from JA/EN success,not rerun here. Primary-reading scope documented;full13version assembly and publication still pending despite all12translation bodies now compared."
+        }
+      },
+      "summary": "Complete Arabic intuition/probability review with consistent events,defined test characteristics,scoped psychological evidence and static RTL/math-isolation checks.",
+      "languageSpecificFindings": "Corrected positive-tested group wrongly called confirmed infected;defined الحساسية/النوعية by disease state and true/false positive expected counts. Aligned A/B/C across prose/math/diagrams,prior/posterior and likelihood meaning. Full reread polished event notation/car-presence proposition and graph wording before first proof;draft hash preserved.",
+      "validation": "docs/translation-review/batch-029-ar-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "0other translation bodies not yet fully reviewed at this stage.",
+        "Finite auxiliary arithmetic distinct from article programs0,clinical advice,psychological experiment or corporate-success proof.",
+        "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
+        "Primary-source reading scope documented separately;publication pending."
+      ]
     }
   },
   "stages": [
@@ -906,6 +946,69 @@
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "ar"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "validation": "docs/translation-review/batch-029-ar-validation.json",
+      "checks": "docs/translation-review/batch-029-ar-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-029-ar-ledger-validation.json",
+      "texEach": 15,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.",
+        "diagnosticJointTableCases": 136,
+        "diagnosticExamplePosterior": "1/102",
+        "utilityPlacementCases": 125,
+        "additionalScope": "Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence."
+      },
+      "actualPreviewBundles": 30,
+      "multilingualPages": 1680,
+      "httpsHtmlPages": 3052,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 360,
+      "unreviewedTranslations": 12672,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 0,
+      "publicationPending": true
     }
-  ]
+  ],
+  "finalAssembly": {
+    "checkedAt": "2026-11-11T22:43:11.239769+09:00",
+    "validation": "docs/translation-review/batch-029-final-validation.json",
+    "checks": "docs/translation-review/batch-029-final-checks.json",
+    "allOriginalAndTranslationBodiesRead": true,
+    "languages": 13,
+    "texExpressions": 195,
+    "diagrams": 26,
+    "graphEdges": 234,
+    "referencesEach": 5,
+    "unitTestsPassed": 17,
+    "actualPreviewBundles": 30,
+    "multilingualPages": 1680,
+    "httpsHtmlPages": 3052,
+    "httpsXmlFiles": 41,
+    "reviewedTranslationsTotal": 360,
+    "unreviewedTranslations": 12672,
+    "humanReviews": 0,
+    "publicationPending": true,
+    "scope": "All13bodies manually compared and12AIreviews recorded;static source/decodedHTML and30bundle preview checks. PriorHindi correctedtag/twoaliases retained. No native/browser/clinical/psychological/full-site certification;publication pending."
+  }
 }

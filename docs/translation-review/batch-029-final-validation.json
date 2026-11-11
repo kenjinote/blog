@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T22:41:49.373053+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/paradox-monty-hall-problem/index.md",
+      "sha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "content/post/paradox-monty-hall-problem/index.en.md",
+      "sha256": "9ec8b007ffa48ddff2d38e2e90d5ccc8c91add21644794eda3a7f3961034d234",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "content/post/paradox-monty-hall-problem/index.zh-cn.md",
+      "sha256": "ce406bcf1e15b5ba5813db87341443cd2d5b5ac33521ad3bd91c33efe7985915",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "content/post/paradox-monty-hall-problem/index.zh-tw.md",
+      "sha256": "887068926cc32d81474d1ede9a063a4585fa0076928c4f22d7dcdd715b264920",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "content/post/paradox-monty-hall-problem/index.es.md",
+      "sha256": "76616a5c155bfd88254c0255d9a3fd0b613e87e1decea1f925ef402b98fec72d",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "content/post/paradox-monty-hall-problem/index.ko.md",
+      "sha256": "7d3d50d552435367db7d247f8dd43e30199d8bff38cf31f7ac26fcb09f587097",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "path": "content/post/paradox-monty-hall-problem/index.pt.md",
+      "sha256": "6652db5592bb756bf53986e446c36c85b75c5aaca0921cbe11d6b2f87d0da720",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "path": "content/post/paradox-monty-hall-problem/index.fr.md",
+      "sha256": "75c749f556422cf775e8cfe55858dfba21a6c81b13679420fe5d0b08f37b9b59",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "de",
+      "path": "content/post/paradox-monty-hall-problem/index.de.md",
+      "sha256": "e6836fac414b228daa4bc35b8fd372cd070bca1ab8aab671c27551e21be0865a",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "path": "content/post/paradox-monty-hall-problem/index.hi.md",
+      "sha256": "bbb6bea20084c813c64017f23c366518e5c77e3cf725a751e5548afcafc727c8",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "content/post/paradox-monty-hall-problem/index.id.md",
+      "sha256": "8d6d61ffadd5c58c2526bc916f663c8f275b0c0532574f811a4e17064e80a51a",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "path": "content/post/paradox-monty-hall-problem/index.ru.md",
+      "sha256": "dd6a82158d84eeb610a54fb74c9ba834f86f166891ceccba2e19a3943a0a5e8e",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "path": "content/post/paradox-monty-hall-problem/index.ar.md",
+      "sha256": "6c9567ab8c9ac2e14403103f9ef5781edbc7479093734d98cab6b2179b8d8f20",
+      "sourceSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "texExpressions": 15,
+      "diagrams": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    }
+  ],
+  "sharedAuxiliaryChecks": {
+    "biasedHostValues": 101,
+    "initialChoiceCarPairsEach": 9,
+    "weightedHostPathsIncludingZeroWeights": 1212,
+    "uninformedElementaryPaths": 18,
+    "uninformedGoatPaths": 12,
+    "uninformedLabeledGoatObservations": 6,
+    "manyDoorFormulaCases": 99,
+    "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.",
+    "diagnosticJointTableCases": 136,
+    "diagnosticExamplePosterior": "1/102",
+    "utilityPlacementCases": 125,
+    "additionalScope": "Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence."
+  },
+  "sourceAuditSha256": "10845573b974c8371b3b93ce37406a111219b603fb6455f646338c7182441741",
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source/decodedHTML/finite arithmetic only;not full prose approval or ledger record.",
+    "Article programs0;auxiliary checks separate. No native/browser/clinical/psychological/general-policy certification.",
+    "Source flags now explicit;baseline already included runtime libraries.",
+    "Other languages/publication pending;full article goal active."
+  ]
+}
