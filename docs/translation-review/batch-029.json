@@ -1008,7 +1008,7 @@
     "reviewedTranslationsTotal": 360,
     "unreviewedTranslations": 12672,
     "humanReviews": 0,
-    "publicationPending": true,
+    "publicationPending": false,
     "scope": "All13bodies manually compared and12AIreviews recorded;static source/decodedHTML and30bundle preview checks. PriorHindi correctedtag/twoaliases retained. No native/browser/clinical/psychological/full-site certification;publication pending."
   },
   "publicationDispatch": {
@@ -1033,5 +1033,31 @@
     "scope": "Ordinary authorized push after fetch zero incoming/16outgoing. Matching workflow/run/head/attempt observed.390articleURL plus3tagURL probe prepared and actual new-page functions locally checked;live HTTP waits matching build/deploy success.",
     "proof": "docs/translation-review/batch-029-publication-dispatch.json",
     "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_360.py"
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-11-11T23:16:21.867597+09:00",
+      "ciRun": 43031920623,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43031920623",
+      "deployedCommit": "b22ba1bd68a4b18831cb633f1a038dbd8aed8e91",
+      "ciCompletion": "docs/translation-review/batch-029-ci-completion.json",
+      "proof": "docs/translation-review/publication-029.json",
+      "pages": 390,
+      "passed": 390,
+      "failed": 0,
+      "translations": 360,
+      "japaneseSources": 30,
+      "mathVersions": 195,
+      "texExpressions": 9987,
+      "intuitionVersions": 13,
+      "intuitionTeX": 195,
+      "intuitionDiagramSources": 26,
+      "intuitionGraphEdges": 234,
+      "additionalHindiTaxonomyPages": 3,
+      "additionalHindiTaxonomyPassed": 3,
+      "httpPageProbeAttempts": 1,
+      "httpPageRetries": 0,
+      "scope": "001through029 live390articleURLs plus3Hindi taxonomyURLs passed firstattempt after matching build/deploy success. Intuition13 exact math/diagram/ref/title/date/canonical/language/hreflang/sidebar,prior377checks retained. StaticHTMLaliases,not HTTP301/browser navigation. Local030reviews excluded from published360;not fullsite/native/browser/clinical/psychological certification."
+    }
+  ]
 }
