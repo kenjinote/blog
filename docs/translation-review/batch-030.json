@@ -363,6 +363,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/囚人のジレンマ/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "62e16da34c4d26eb2066c58cfa88880f155196f559609d7ff86b0c129acc1af4",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original/revised Indonesian metadata,six sections,matrix and both full diagrams against frozen Japanese. Matched fictional simultaneous own-utility model,efficient pure CC/CD/DC versus sum maximumCC,unilateral Nash deviation,finite common-knowledge backward induction,infinite conditionalgrim cooperation and TFTpreviousround. Preserved price,climate and sport topics as analogies needing their own payoffs/institutions,not inevitable outcomes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared payoff/utilitas versus masa hukuman,strategi dominan ketat with English,strategi murni/campuran,efisiensi Pareto,keseimbangan Nash versus sempurna subpermainan,pengetahuan bersama(common knowledge),induksi mundur,faktor diskonto,Tit for Tat and defined pemicu dengan hukuman permanen. Zero years is not original tanpa/bebas dari tuntutan. Original yen correct and retained;cooperation between players distinguished from investigators."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read allnine identical TeX,four payoff cells and own/opponent convention. Checked T0>R-1>P-5>S-10,efficient pureCC/CD/DC,CCsum-2 versus other-10,strictD and mixed-belief advantage5-4p>=1. Perfect observation,infinite geometric discount0<=delta<1 givegrim1/5,not TFT or MITdifferenttable1/2. Exact auxiliary fourprofiles101beliefs2players102discounts612delays/two8roundtraces once;not general or empiricalproof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Zero executable article programs. Read two fullsix-edge Mermaid sources:conditionalone-shot incentives andt=1,simultaneous currentround,observe opponentroundt,setroundt+1,incrementt onbothbranches. Replaced oldrepentance shortcut. Exact graphsource/topology and decodedHTMLmath matched,library presence checked,flags already true. No browser,visual,KaTeX/Mermaid execution or tournament reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primary references match Japanese and occur in preview;documented substantive reading limits retained,not every cited work read. Preserved slug,image hash,taxonomy,both raw date lines/effectiveSep10T03 andactualNov11lastmod.14hreflang13sidebar,31bundles1736pages/HTTPS3157HTML41XML passed. Prior17tests not rerun;other2prose/publication pending."
+        }
+      },
+      "summary": "Full Indonesian review distinguishing payoff,sentence and unilateral incentives,with correctly conditioned repeated-game cooperation.",
+      "languageSpecificFindings": "Original Indonesian identified negative payoff as tahun penjara and zero years as tanpa/bebas dari tuntutan;replaced with fictional utility model. Retained correct yen. Qualified pasti human choices,extraordinary TFT victory and longrelationship guarantee. Polished antara kedua pemain,margin wording and bisa lebih dari dua countries before first proof;checked previous/current/nextputaran and separate grimstrategy.",
+      "validation": "docs/translation-review/batch-030-id-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "2 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0 and empirical tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -760,6 +800,50 @@
       "unreviewedTranslations": 12663,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 3,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "id"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-id-validation.json",
+      "checks": "docs/translation-review/batch-030-id-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-030-id-ledger-validation.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 370,
+      "unreviewedTranslations": 12662,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 2,
       "publicationPending": true
     }
   ]
