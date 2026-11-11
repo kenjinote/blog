@@ -322,6 +322,46 @@
         "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
         "Primary-source reading scope documented separately;publication pending."
       ]
+    },
+    "post/paradox-monty-hall-problem/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-monty-hall-problem/index.md",
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "translationHash": "bbb6bea20084c813c64017f23c366518e5c77e3cf725a751e5548afcafc727c8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read every original Hindi metadata/body/table/diagram and complete revised version in bounded chunks against Japanese. Preserved six themes with uniform placement,every-game offer,symmetric ties,overall/conditional distinction and observed remaining label. Corrected unsupported historical/universal brain/business-success claims and limited empirical psychology to repeated learning and individual differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected old बकरियां(खाली) and खाली दरवाजा to actual goat doors. Removed stray Chinese接 in प्राप्त करने接 करने. Standardized बेज़ का प्रमेय,पूर्व प्रायिकता/लाइकलीहुड/पश्च प्रायिकता instead of ambiguous उत्तर प्रायिकता. Defined संवेदनशीलता/विशिष्टता by disease status and धनात्मक/ऋणात्मक results,सही/गलत धनात्मक and अपेक्षित संख्या. Explicitly distinguished ndoorcount from R/r labels and actual chosen door from abstract first preference during reread."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually matched15expressions and conditions:likelihood1/2,0,1,posterior1/3/2/3,q-bias,uninformed B AND goat half,ninteger>=3,r2..n,R-only conditioning,symmetric versus fixed-label host. Hypothetical diagnostic1/102,expected counts0.99/99.99 and utility advantage(car-goat)/3-cost in same units preserved. Auxiliary finite Monty checks once plus136joint-table/125utility cases,not clinical/general/psychological proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Article programs0. Read13outcome diagram edges/localized labels against actual car/goat wins;second5edge reasoning diagram explicitly not empirical psychological causes. Complete Mermaid sources and15TeX exact in generated decodedHTML. Added Hindi-specific CJK-character assertion after observed stray接 and confirmed no unexpectedCJK. Baseline already loaded libraries;flags document requirements rather than certify runtime repair. No browser/native/visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified three primary and two Hindi internal links,original September24published date/actualNovember11modified,image hash/publicslug/taxonomy,14hreflang/13sidebar URLs.30bundle1680pages and HTTPS3052HTML41XML passed.17existingtests referenced from JA/EN success,not rerun. Primary-reading scope documented separately;other3translation reviews and batch029publication pending."
+        }
+      },
+      "summary": "Complete Hindi intuition/probability review fixing empty-goat-door mistranslation,strayChinese character and prior/posterior terminology.",
+      "languageSpecificFindings": "Old खाली wrongly described doors containing goats;stray接 corrupted a sentence. Used पूर्व/लाइकलीहुड/पश्च,बेज़ का प्रमेय,संवेदनशीलता/विशिष्टता and expected rather than observed counts. Full reread clarified actual chosen door and denominator wording before first proof;draft receipt remains preserved.",
+      "validation": "docs/translation-review/batch-029-hi-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "3other translation bodies not yet fully reviewed at this stage.",
+        "Finite auxiliary arithmetic distinct from article programs0,clinical advice,psychological experiment or corporate-success proof.",
+        "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
+        "Primary-source reading scope documented separately;publication pending."
+      ]
     }
   },
   "stages": [
@@ -659,6 +699,48 @@
       "unreviewedTranslations": 12676,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 4,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "hi"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "validation": "docs/translation-review/batch-029-hi-validation.json",
+      "checks": "docs/translation-review/batch-029-hi-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-029-hi-ledger-validation.json",
+      "texEach": 15,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.",
+        "diagnosticJointTableCases": 136,
+        "diagnosticExamplePosterior": "1/102",
+        "utilityPlacementCases": 125,
+        "additionalScope": "Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence."
+      },
+      "actualPreviewBundles": 30,
+      "multilingualPages": 1680,
+      "httpsHtmlPages": 3052,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 357,
+      "unreviewedTranslations": 12675,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 3,
       "publicationPending": true
     }
   ]

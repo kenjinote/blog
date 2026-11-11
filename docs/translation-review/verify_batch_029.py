@@ -75,6 +75,8 @@ def main():
         v = audit["versions"][lang]
         p = ROOT / v["path"]
         text = p.read_text(encoding="utf-8")
+        if lang == "hi":
+            assert not re.search(r"[\u3400-\u9fff]", text), "Unexpected CJK character in Hindi article"
         original = subprocess.run(["git", "show", audit["baselineCommit"]+":"+v["path"]],
                                   cwd=ROOT, capture_output=True, text=True, encoding="utf-8", check=True).stdout
         assert hashlib.sha256(original.replace("\r\n", "\n").encode()).hexdigest() == v["sha256"]
