@@ -41,3 +41,7 @@ Read complete original/revised body,table and diagrams against Japanese. Correct
 ## Spanish full review — 2026-11-11
 
 Read old and revised full bodies,table and diagrams against Japanese. Corrected personas positivas/negativas versus disease status in sensibilidad/especificidad definitions. Aligned verosimilitudes,a priori/a posteriori,global/condicional,cambiar/mantener and prose decimal commas0,98/0,99/99,99. Preserved15TeX,13/5edge diagrams,3primary/two localized refs,date/image/taxonomy.30bundle1680pages3052HTML41XML checks passed;prior17tests referenced,not rerun. AI1added,total352/unreviewed12680/human0;prior351ledger and threeexisting batch029reviews unchanged. Other8translation bodies unread;publication pending.
+
+## Korean full review — 2026-11-11
+
+Read old and revised full bodies,table and diagrams against Japanese. Corrected양성인 사람/음성인 사람 versus질병 유무 in민감도/특이도 definitions. Aligned사전확률/우도/사후확률,조건부/전체,진양성/위양성 and기대 인원. Replaced미선택 문 with plain descriptions during full reread before first proof;draft receipt preserves earlier hash.15TeX,13/5edges,3primary/two internal refs,date/image/taxonomy,30bundle1680pages3052HTML41XML passed. Prior17tests referenced,not rerun. AI1added,total353/unreviewed12679/human0;prior352ledger/fourexisting batch029reviews unchanged. Other7translation bodies unread;publication pending.

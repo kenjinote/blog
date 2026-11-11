@@ -162,6 +162,46 @@
         "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
         "Primary-source reading scope documented separately;publication pending."
       ]
+    },
+    "post/paradox-monty-hall-problem/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-monty-hall-problem/index.md",
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "translationHash": "7d3d50d552435367db7d247f8dd43e30199d8bff38cf31f7ac26fcb09f587097",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Korean,table/two diagrams and complete revised version against Japanese. Preserved six themes,explicit uniform placement,every-game offer,symmetric tie rule,conditional/overall distinction and remaining-number-only conditioning. Scoped psychological findings as repeated-learning results rather than universal brain causes;corrected unreferenced history statistics and corporate-success2/3 claims in alignment with source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 사전확률/우도/사후확률 and 조건부 확률 versus 전체 승률 consistently. Corrected old 양성인 사람/음성인 사람 definitions to actual 질병 유무 for 민감도/특이도;진양성/위양성 and 기대 인원 not observed patients. During reread replaced compressed 미선택 문 with plain 선택하지 않은 문 and specified the one still closed besides initial1. 자동차/염소,유지/변경 and 효용 units aligned."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually aligned15expressions and conditions:likelihood1/2,0,1,posterior1/3/2/3,q-bias,uninformed B AND goat half,ninteger>=3,r2..n,R-only observation with symmetric versus fixed remaining label. Hypothetical diagnostic1/102 and expected counts0.99/99.99 preserved;utility advantage(car-goat)/3-cost measured in common units. Auxiliary finite checks once plus136diagnostic/125utility cases,not clinical/general/psychological proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read all13outcome diagram edges/labels and fiveedge reasoning procedure,explicitly not proven psychological causation. Complete graph sources and15TeX exact in decodedHTML. Baseline already loaded libraries;flags now explicit documentation rather than runtime-repair claim. No Mermaid/KaTeX/browser execution or visual/native-speaker certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified three primary and two Korean internal links,original September24published date/actualNovember11modified,image hash/public slug/taxonomy,14hreflang/13sidebar URLs.30bundle1680pages and HTTPS3052HTML41XML passed.17tests referenced from JA/EN successful rerun,not repeated here. Primary-reading scope documented;other7translation reviews and batch029publication pending."
+        }
+      },
+      "summary": "Full Korean intuition/probability review:plain door descriptions,defined test terminology,conditional models and scoped psychological/application claims.",
+      "languageSpecificFindings": "Corrected 양성인 사람/음성인 사람 versus actual disease status in민감도/특이도 definitions. Aligned사전확률/우도/사후확률 and기대 인원;replaced미선택 with clear selected/unselected closed-door descriptions during full reread. Initial draft receipt preserved,final checks use correctedhash.",
+      "validation": "docs/translation-review/batch-029-ko-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "7other translation bodies not yet fully reviewed at this stage.",
+        "Finite auxiliary arithmetic distinct from article programs0,clinical advice,psychological experiment or corporate-success proof.",
+        "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
+        "Primary-source reading scope documented separately;publication pending."
+      ]
     }
   },
   "stages": [
@@ -331,6 +371,48 @@
       "unreviewedTranslations": 12680,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 8,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "ko"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "validation": "docs/translation-review/batch-029-ko-validation.json",
+      "checks": "docs/translation-review/batch-029-ko-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-029-ko-ledger-validation.json",
+      "texEach": 15,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.",
+        "diagnosticJointTableCases": 136,
+        "diagnosticExamplePosterior": "1/102",
+        "utilityPlacementCases": 125,
+        "additionalScope": "Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence."
+      },
+      "actualPreviewBundles": 30,
+      "multilingualPages": 1680,
+      "httpsHtmlPages": 3052,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 353,
+      "unreviewedTranslations": 12679,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 7,
       "publicationPending": true
     }
   ]
