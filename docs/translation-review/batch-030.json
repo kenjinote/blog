@@ -123,6 +123,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/囚人のジレンマ/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "6ab4b9e22d4958ecdbecc7c27cef9f27aae4a9ad9c6e41c6927238075c61f258",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and revised Spanish metadata,six sections,payoff matrix,two full diagrams against frozen Japanese. Matched fictional simultaneous one-shot utility model,pure efficient CC/CD/DC versus sum-maxCC,unilateral Nash changes,finite common-knowledge backward induction,infinite conditionalgrim cooperation and distinct TFTprevious-round rule. Allthree applications preserved with separate real-world payoff/institution requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared pagos/utilidad versus años de prisión,estrategia estrictamente dominante,estrategias puras/mixtas,eficiencia/óptimo de Pareto,equilibrio de Nash versus perfecto en subjuegos,conocimiento común,inducción hacia atrás,factor de descuento,toma y daca andgatillo implacable. Oldabsuelto/absolución is not entailed by zero sentence;fictional model explicit. Originalyenes was correct and retained,not falsely called currency error."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually matched nine identical TeX expressions and four matrix cells. T0>R-1>P-5>S-10,CC sum-2 versus others-10,three efficient pure profiles anduniqueDD Nash. Explicit own/opponent arguments andmixed-belief EUdifference5-4p>=1. Infinite perfect-monitoring grim yieldsdelta>=1/5,not finite TFTguarantee orMITdifferent table. Shared4profiles/101beliefs2players/102discounts612delays/two8round traces once;not general or empirical proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read both full six-edge Mermaid sources:conditional own-utility one-shot reasoning andt=1,simultaneousplay,observe,setnextaction,incrementt through both C/D branches. Corrected original repentance shortcut;TFT uses previous round not current. Exact graphs/decodedHTML/TeX and library presence verified;originalflags retained. No browser visual/runtime or tournamentcode reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Both primary references match source,present in preview;documented substantive source reading retained,not everylinked reference read. Slug,image hash,taxonomy,duplicate rawdate lines and effectiveSep10T03 preserved;actualNov11lastmod.14hreflang13sidebar,31bundle1736pages/HTTPS3157HTML41XML passed. Prior17tests referenced,not rerun here. Other8prose and publication pending."
+        }
+      },
+      "summary": "Complete Spanish review of one-shot efficiency/equilibrium and conditional repeated cooperation,with precise payoff and round terminology.",
+      "languageSpecificFindings": "OldSpanish called negative payoffs años de prisión and usedabsuelto/absolución for zero years;corrected fictional utility model. Preserved already-correctyenes. Replaced universal siemprebetrayal,abrumadora TFTvictory and longrelationship guarantee;matched unilateral versusjoint changes,finite/infinite andprevious/current/next ronda throughout. Polished numeric spacing beforefirstvalidation.",
+      "validation": "docs/translation-review/batch-030-es-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "8 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0 and empirical tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -256,6 +296,50 @@
       "unreviewedTranslations": 12669,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 9,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "es"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-es-validation.json",
+      "checks": "docs/translation-review/batch-030-es-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-030-es-ledger-validation.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 364,
+      "unreviewedTranslations": 12668,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 8,
       "publicationPending": true
     }
   ]
