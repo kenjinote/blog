@@ -45,3 +45,7 @@ Read old and revised full bodies,table and diagrams against Japanese. Corrected 
 ## Korean full review — 2026-11-11
 
 Read old and revised full bodies,table and diagrams against Japanese. Corrected양성인 사람/음성인 사람 versus질병 유무 in민감도/특이도 definitions. Aligned사전확률/우도/사후확률,조건부/전체,진양성/위양성 and기대 인원. Replaced미선택 문 with plain descriptions during full reread before first proof;draft receipt preserves earlier hash.15TeX,13/5edges,3primary/two internal refs,date/image/taxonomy,30bundle1680pages3052HTML41XML passed. Prior17tests referenced,not rerun. AI1added,total353/unreviewed12679/human0;prior352ledger/fourexisting batch029reviews unchanged. Other7translation bodies unread;publication pending.
+
+## Portuguese original reading — 2026-11-11
+
+Complete original metadata/body/table/two diagrams read in two bounded chunks;original hash unchanged against source audit. No revised body exists and no review was registered. Identified goats as os perdedores,positive/negative-person versus disease-status confusion,and model/psychological/business generalizations requiring alignment with revised Japanese. Next action is manual rewrite and full revised reread,then proof/ledger. Other6translation originals remain unread;Portuguese itself unreviewed in ledger. CurrentAI353/unreviewed12679/human0.

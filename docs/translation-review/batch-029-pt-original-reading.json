@@ -1,0 +1,22 @@
+{
+  "readAt": "2026-11-11T14:37:18.788369+09:00",
+  "language": "pt",
+  "path": "content/post/paradox-monty-hall-problem/index.pt.md",
+  "originalSha256": "3d85ce91cf8ba89d2b06d28bd9e7da956315ef450865d5f0e47adc918c27a7d1",
+  "allOriginalMetadataBodyTableAndDiagramsRead": true,
+  "revisedBodyExists": false,
+  "reviewedTranslationsAdded": 0,
+  "findings": [
+    "Original calls goats os perdedores instead of explaining losing outcomes;use actual door/car/goat distinctions.",
+    "Original pessoas positivas/negativas conflates disease status and test result;define sensibilidade/especificidade.",
+    "Uniform prior is assumed,not inferred from ignorance;host tie rule and every-game offer explicit.",
+    "Million-door named-label conditional needs symmetry;separate overall success and observed remaining number.",
+    "Universal brain/regret causes,unreferenced85percent/IQ/letterstatistics and corporate2/3 success need corrections consistent with revised Japanese."
+  ],
+  "nextAction": "Manual full six-section Portuguese rewrite,then complete revised reread,source/HTML checks and honest ledger registration.",
+  "limitations": [
+    "Original only read;not yet revised or certified.",
+    "Current batch029registered5translations;Portuguese remains unreviewed in ledger.",
+    "No native/browser/clinical/psychological/publication certification."
+  ]
+}
