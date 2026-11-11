@@ -1,227 +1,209 @@
 ---
-title: "The Divergence of Intuition and Probability: Exploring the Depths of the Monty Hall Problem"
+title: "Intuition and probability: Monty Hall assumptions and psychology"
 date: "2026-09-24T19:44:38+09:00"
-description: "The \"Monty Hall problem\" is a prime example of counterintuitive probability theory. Why does human intuition deviate so much from probability? From mathematical proofs to psychological backgrounds, we thoroughly explain the entire picture of this paradox."
+description: "Separate host rules, conditional probability and psychological evidence. Examine a million doors, hypothetical false positives and the costs of switching."
 slug: "paradox-monty-hall-problem"
 categories: ["science"]
 tags: ["probability", "monty-hall-problem", "mathematics"]
 image: "eyecatch.jpg"
+math: true
+mermaid: true
+lastmod: "2026-11-11"
 ---
 
-# Introduction: The Trap Human Intuition Falls Into and the World of Probability
+## 1. Specify the rules before examining intuition
 
-In our daily lives, "intuition" functions as a very powerful decision-making tool. Based on rules of thumb and heuristics, the ability to instantly judge a situation and choose an action is a gift of evolution that humanity acquired to survive harsh natural environments. However, this excellent intuitive system has a weakness: it causes fatal errors under certain conditions. The most prominent example of this is when faced with problems concerning "probability".
+Choose one of three doors. A host opens another door to show a goat, then asks whether you want to switch to the remaining door. The [Monty Hall problem](https://kenji.blog/en/p/monty-hall-problem/) illustrates why the number of remaining options alone does not determine their probabilities. [Gill's paper](https://pub.math.leidenuniv.nl/~gillrd/montyhall3.pdf) examines its history, including the 1990 discussion in *Parade*'s “Ask Marilyn” column, and different mathematical formulations.
 
-Probability theory is a mathematical framework for quantitatively evaluating uncertain events, but its conclusions often violently clash with our intuition. This phenomenon has long been studied in the fields of psychology, behavioral economics, and mathematics education as "cognitive bias" and "the divergence of intuition and logic".
+We first state the model used in this article.
 
-In this article, we will take up the most famous paradox that symbolizes this divergence between intuition and probability: the "Monty Hall problem". Despite its apparent simplicity, this problem caused a massive controversy involving renowned mathematicians and scientists around the world. Through the question, "Why do we fall into such a simple probability trap?", we will deeply and thoroughly explore the limits of human cognitive structure and the importance of logical thinking.
+1. One car and two goats are behind doors A, B and C. The car's location is uniform over the three doors. You initially choose A without using information about its location.
+2. The host knows where the car is and opens neither A nor the car's door.
+3. Every time, the host opens one unchosen goat door and always offers a switch to the remaining unchosen door.
+4. When A has the car, the host opens B or C with probability 1/2 each.
 
-## Chapter 1: What is the Monty Hall Problem?
+Equal probabilities are an assumption about placement, rather than a consequence of ignorance. Write C_A, C_B and C_C for the events that the car is behind A, B and C respectively.
 
-The Monty Hall problem is a probability paradox named after Monty Hall, the host of the long-running American television game show "Let's Make a Deal". This problem became widely known to the public after it was featured in the "Ask Marilyn" column of the news magazine *Parade* in 1990.
+$$
+\Pr(C_A)=\Pr(C_B)=\Pr(C_C)=\frac13
+$$
 
-### Problem Setting
+In this model, always switching wins with probability 2/3. However, distinguish a strategy's overall winning probability from a conditional probability after a particular observation, such as B being opened. The host's rules matter to why both calculations give 2/3 here.
 
-Imagine you are a contestant on a television game show. In front of you are three closed doors (Door A, Door B, and Door C).
+Mathematics can identify what is missing from the inference “two remain, so each has half the probability.” Why a person gives that answer or hesitates to switch is a separate question requiring psychological research.
 
-1. Behind one door is a "new car (win)".
-2. Behind the remaining two doors are "goats (lose)".
-3. If you guess the new car, you get to keep it.
+## 2. Case analysis and a million doors
 
-The rules and progression of the game are as follows:
+### Separate cases by the initial arrangement
 
-1. First, you choose one of the three doors (for example, let's say you chose **Door A**).
-2. Monty, the host of the show, knows what is behind which door.
-3. Of the remaining two doors you did not choose (Door B and Door C), Monty **always opens one door that has a goat behind it**. (For example, if Door B had a goat, he opens Door B).
-4. Then, Monty asks you:
-   **"You may switch to Door C. Do you want to change your choice?"**
+Divide by the car's initial location, rather than by the name of the opened door.
 
-Now, here is the question:
-**Should you change your choice? Or should you keep your initial choice (Door A)? Which has a higher probability of winning the new car?**
+| Car location (each with probability 1/3) | Door the host opens | Stay at A | Switch |
+| --- | --- | --- | --- |
+| A | B or C | Win | Lose |
+| B | C | Lose | Win |
+| C | B | Lose | Win |
 
-### Intuitive Answer
+Because the host always removes a goat and offers a switch, switching wins exactly when the initial choice was a goat.
 
-When presented with this problem, many people reason as follows:
-
-"There were three doors, and one (the goat door) was opened. The only ones left are the door I chose (Door A) and the other closed door (Door C). The new car must be behind one of them, so the probability should be 50% (1/2) for each. Therefore, the win rate is the same whether I change my choice or not, and there is no need to bother changing."
-
-This intuitive answer is very persuasive, and the overwhelming majority of people (about 85% or more depending on the survey) answer, "The probability does not change even if you change your choice (1/2)".
-
-However, **the mathematically correct answer is "you should change your choice"**. If you change your choice, the probability of winning the new car jumps to **2/3 (about 66.7%)**, which is twice the probability of **1/3 (about 33.3%)** if you keep your initial choice.
-
-When this answer was presented by Marilyn vos Savant (a woman who was certified by the Guinness Book of Records at the time as having the highest IQ in the world), about 10,000 letters of rebuttal poured in from all over the United States. Among them were about 1,000 letters from mathematicians and scientists with PhDs, throwing fierce criticism such as "You do not understand mathematics at all" and "This is the illogical delusion of a woman."
-
-Why did so many intellectuals get it wrong? In the next chapter, we will unravel the mathematical proof.
-
-## Chapter 2: The Truth of Probability and Mathematical Proof
-
-Why does a probability that intuitively seems like "1/2" become "2/3 if you change your choice"? To understand this, it is necessary to re-examine the problem from several different approaches.
-
-### Proof Approach 1: Enumeration of All Patterns (Tree Diagram Thinking)
-
-The most reliable and easy-to-understand method is to list all possible patterns and calculate the probabilities.
-Since which door the new car is behind is determined randomly, the following three cases occur with a probability of 1/3 each.
-
-- Case 1: The new car is behind "Door A"
-- Case 2: The new car is behind "Door B"
-- Case 3: The new car is behind "Door C"
-
-Assuming you initially chose **Door A**, let's look at the results of "keeping your choice" and "changing your choice" in each case.
-
-| Case | Position of New Car | Your Choice | Door the Host Opens | If You Keep Choice | If You Change Choice |
-|---|---|---|---|---|---|
-| 1 (1/3) | Door A | Door A | B or C (Goat) | **Win New Car** (Win) | Goat (Lose) |
-| 2 (1/3) | Door B | Door A | Door C (Goat) | Goat (Lose) | **Win New Car** (Win) |
-| 3 (1/3) | Door C | Door A | Door B (Goat) | Goat (Lose) | **Win New Car** (Win) |
-
-As is clear from this table, the only time you can win the new car "if you keep your choice" is Case 1 (probability 1/3). On the other hand, there are two patterns where you can win the new car "if you change your choice": Case 2 and Case 3, and their total probability is 2/3.
-In short, it is nothing more than a comparison between **"the probability of choosing the correct answer from the start (1/3)"** and **"the probability of choosing a dud initially (2/3)"**. Because the host eliminates one dud for you, the structure is such that the misfortune of "choosing a dud initially" is flipped into the good fortune of "definitely turning into a win" by changing your choice.
-
-### Proof Approach 2: Information Theory and Extreme Models
-
-When intuition gets in the way with three doors, it becomes easier to understand if we extremely increase the number of doors.
-
-Imagine "there are 1,000,000 doors".
-1. You choose one door (Door Number 1). At this point, the probability of winning is 1/1,000,000.
-2. Monty, the host, knows the answer. Out of the remaining 999,999 doors, he opens all 999,998 doors that have goats.
-3. The only two closed doors are "Door 1", which you chose, and "Door 777,777", which Monty left closed.
-
-At this time, what do you think?
-It should be obvious which is higher: "the probability that Door 1, which you initially chose, was coincidentally the correct answer (1/1,000,000)" or "the probability that you were wrong, and Monty intentionally avoided Door 777,777, which is the correct answer, and opened all the rest (999,999/1,000,000)".
-Naturally, you would switch to Door 777,777. Even in the case of three doors, the essential mathematical structure is exactly the same.
-
-### Proof Approach 3: State Transition Diagram with Mermaid
-
-To deepen our visual understanding, let's represent the progress of the game in a flowchart.
+$$
+\Pr(\mathrm{stay\ wins})=\frac13,\qquad\Pr(\mathrm{switch\ wins})=\frac23
+$$
 
 ```mermaid
 flowchart TD
-    Start["Game Start"] --> Choose["Player chooses 1 door"]
-    Choose -- "Probability 1/3" --> ChooseCar["Choose the winning door"]
-    Choose -- "Probability 2/3" --> ChooseGoat["Choose a losing door"]
-    
-    ChooseCar --> MontyOpensGoat1["Host opens the remaining dud (1 of 2)"]
-    ChooseGoat --> MontyOpensGoat2["Host opens the remaining dud (the only 1)"]
-    
-    MontyOpensGoat1 --> Stay1["Do not change choice"]
-    MontyOpensGoat1 --> Switch1["Change choice"]
-    
-    MontyOpensGoat2 --> Stay2["Do not change choice"]
-    MontyOpensGoat2 --> Switch2["Change choice"]
-    
-    Stay1 -- "Result" --> Win1["Win New Car (Win)"]
-    Switch1 -- "Result" --> Lose1["Goat (Lose)"]
-    
-    Stay2 -- "Result" --> Lose2["Goat (Lose)"]
-    Switch2 -- "Result" --> Win2["Win New Car (Win)"]
+    Start["Game starts"] --> Choose["Choose the first door"]
+    Choose -- "Probability 1/3" --> ChooseCar["Initially choose the car"]
+    Choose -- "Probability 2/3" --> ChooseGoat["Initially choose a goat"]
+    ChooseCar --> MontyOpensGoat1["Open one of two remaining goat doors"]
+    ChooseGoat --> MontyOpensGoat2["Open the only remaining goat door"]
+    MontyOpensGoat1 --> Stay1["Stay"]
+    MontyOpensGoat1 --> Switch1["Switch"]
+    MontyOpensGoat2 --> Stay2["Stay"]
+    MontyOpensGoat2 --> Switch2["Switch"]
+    Stay1 --> Win1["Car: Win"]
+    Switch1 --> Lose1["Goat: Lose"]
+    Stay2 --> Lose2["Goat: Lose"]
+    Switch2 --> Win2["Car: Win"]
 ```
 
-From this diagram, we can see that **if you take the action to "change choice" from the state of "initially choosing a dud door (probability 2/3)", you will reach "Win New Car" with a 100% probability**. Conversely, if you change your choice from the state of initially choosing the winning door (probability 1/3), you will definitely draw a goat.
-Therefore, the expected win rate of the strategy to change choices is 2/3 × 100% = 2/3.
+These are model probabilities, not a guarantee of exactly two wins in every three games. The diagram shows theoretical branches rather than experimental results.
 
-## Chapter 3: Strict Solution Using Bayes' Theorem
+### More doors still require a specified observation
 
-The Monty Hall problem can be solved more mathematically and strictly by using "[Bayes' theorem](/en/p/bayes-theorem/)" to calculate conditional probabilities. Bayesian inference is a powerful tool that shows how a prior probability should be updated (posterior probability) when new information (evidence) is obtained.
+Let n be an integer at least 3, and number the doors from 1 to n. The car's location C is uniform and the initial choice is 1. Every time, the host opens n−2 unchosen goat doors and offers a switch to the single remaining unchosen door R. The overall probabilities are
 
-Let the events be defined as follows:
-- $C_i$ : The event that the new car is behind door $i$ ($i \in \{A, B, C\}$)
-- $M_j$ : The event that Monty opens door $j$ ($j \in \{A, B, C\}$)
+$$
+\Pr(C=1)=\frac1n,\qquad\Pr(C=R)=\frac{n-1}{n}
+$$
 
-Assume the player initially chose "Door A".
-The prior probabilities are equiprobable because there is absolutely no information about which door has the new car:
-$P(C_A) = 1/3$
-$P(C_B) = 1/3$
-$P(C_C) = 1/3$
+With a million doors, always switching wins with probability 999999/1000000.
 
-Now, suppose Monty opened "Door B". After obtaining this information, we calculate the probability that the new car is behind Door A (posterior probability $P(C_A|M_B)$) and the probability that the new car is behind Door C (posterior probability $P(C_C|M_B)$).
+Using the information that R has a particular label r requires another rule. Here r is one of 2 through n. Suppose that whenever the initial door has the car, the host chooses R uniformly from the other n−1 doors. Then
 
-Monty's rules of action (conditional probabilities $P(M_B|C_i)$) are as follows:
-1. If the new car is behind Door A ($C_A$), Monty randomly opens B or C, so $P(M_B|C_A) = 1/2$
-2. If the new car is behind Door B ($C_B$), Monty can never open B, so $P(M_B|C_B) = 0$
-3. If the new car is behind Door C ($C_C$), Monty cannot open C, and he cannot open A because the player chose it. Therefore, he is forced to open B, so $P(M_B|C_C) = 1$
+$$
+\Pr(C=r\mid R=r)=\frac{1/n}{(1/n)+(1/n)(1/(n-1))}=\frac{n-1}{n}
+$$
 
-The formula for [Bayes' theorem](/en/p/bayes-theorem/) is as follows:
-$P(C_i|M_B) = \frac{P(M_B|C_i) P(C_i)}{P(M_B)}$
+Under this symmetric rule, observing that door 777777 remains closed out of a million gives the same high probability. But if the host always leaves that fixed label r whenever the initial door has the car, then
 
-We calculate the denominator $P(M_B)$ (the total probability that Monty opens Door B) (Law of Total Probability).
-$P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C)$
-$P(M_B) = (1/2 \times 1/3) + (0 \times 1/3) + (1 \times 1/3) = 1/6 + 0 + 1/3 = 1/2$
+$$
+\Pr(C=r\mid R=r)=\frac{1/n}{(1/n)+(1/n)}=\frac12
+$$
 
-Now, let's calculate the posterior probabilities.
+Switching can be advantageous overall while the probability after observing a particular label changes. These calculations condition only on R, excluding additional information such as the opening order. Without checking the rules, this example does not justify saying that the remaining door almost certainly has the car.
 
-**Probability that the new car is behind Door A (keeping choice):**
-$P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{(1/2) \times (1/3)}{1/2} = 1/3$
+## 3. Use Bayes' theorem for probabilities after an observation
 
-**Probability that the new car is behind Door C (changing choice):**
-$P(C_C|M_B) = \frac{P(M_B|C_C) P(C_C)}{P(M_B)} = \frac{1 \times (1/3)}{1/2} = 2/3$
+Return to the three-door model, and let M_B be the event that the host opens B. The rules in Section 1 give these likelihoods:
 
-In this way, using [Bayes' theorem](/en/p/bayes-theorem/) mathematically perfectly proves that the probability is updated by the new information (Monty opening Door B), and the probability of Door C jumps to 2/3.
+$$
+\Pr(M_B\mid C_A)=\frac12,\qquad\Pr(M_B\mid C_B)=0,\qquad\Pr(M_B\mid C_C)=1
+$$
 
-## Chapter 4: Why Does Human Intuition Get It Wrong? (Psychological and Cognitive Factors)
+[Bayes' theorem](https://kenji.blog/en/p/bayes-theorem/) gives
 
-No matter how many times they are shown the mathematical proof, many people still feel "I still just can't accept it" or "It feels like I'm being bewitched." Why is the human brain so vulnerable to this problem? Research in psychology and behavioral economics has revealed that several severe cognitive biases are involved.
+$$
+\Pr(C_i\mid M_B)=\frac{\Pr(M_B\mid C_i)\Pr(C_i)}{\sum_{j\in\{A,B,C\}}\Pr(M_B\mid C_j)\Pr(C_j)}
+$$
 
-### 1. Equiprobability Bias
+By the law of total probability, the denominator is
 
-In random events or uncertain situations, humans have a strong tendency to unconsciously assume that "if there are available options remaining, their probabilities must all be equal".
-In the Monty Hall problem, two choices ultimately remain: "Door A" and "Door C". The moment this visual and situational information of "two choices" is input into the brain, a powerful heuristic fires: "Since there are two, the probability is 1/2 for each."
-Our brains separate and ignore the "asymmetric information" of past historical context (that there were three initially, and Monty intentionally opened a dud) from the "current situation".
+$$
+\Pr(M_B)=\frac12\cdot\frac13+0\cdot\frac13+1\cdot\frac13=\frac12
+$$
 
-### 2. Misinterpretation of Causality and "Intent"
+The posterior probability that the original door A has the car is therefore
 
-We try to understand the causality of things linearly.
-It is similar to the "Gambler's fallacy", where after red comes up 5 times in a row in roulette, we think "black should be coming up soon", but in the Monty Hall problem, we conversely underestimate the "updating of information".
+$$
+\Pr(C_A\mid M_B)=\frac{(1/2)(1/3)}{1/2}=\frac13
+$$
 
-The important point is that **"Monty the host is not opening a door randomly"**.
-If the host knew nothing and opened a door randomly, and it "happened to be a goat", then the probability for the remaining two doors would truly be 1/2 (this is called the "Ignorant Monty problem").
-However, Monty has a strong constraint (intent) to "always open a goat". Human intuition cannot correctly process this "information asymmetry caused by intentional choice", and we only look at the physical fact that "the number of doors just decreased by one."
+and the posterior probability that the switching destination C has the car is
 
-### 3. Status Quo Bias and Regret Avoidance
+$$
+\Pr(C_C\mid M_B)=\frac{1\cdot(1/3)}{1/2}=\frac23
+$$
 
-From the perspective of behavioral economics, "status quo bias" has a major impact.
-Humans are creatures that feel greater psychological damage from the regret of taking action and failing (commission error) than from the regret of not taking action and failing (omission error).
+The event that C has the car had probability 1/3 before conditioning on M_B. Its probability becoming 2/3 after this observation and the explanation “switching wins whenever the initial choice was wrong” are different views of the same model.
 
-Imagine "if you changed your choice and the first door was the correct answer". You would be tormented by intense regret: "I shouldn't have bothered changing it!" On the other hand, "if you don't change your choice and lose", it is easier to give up and say, "Well, it can't be helped, I was just unlucky."
-In this way, the emotional defense mechanism of "wanting to minimize regret" works, creating a cognitive distortion that "it's the same whether I change it or not (or rather, I want to believe so)", ultimately leading us to choose to "maintain the status quo (Stay)".
+Change only the probability of opening B when A has the car to q, keeping the other rules. Then
+
+$$
+q=\Pr(M_B\mid C_A),\quad0\le q\le1,\qquad\Pr(C_C\mid M_B)=\frac1{1+q}
+$$
+
+For example, with q equal to 1, A and C are equally likely after B is opened. Even when the host knows where the car is, a preference between goat doors matters to conditional probabilities.
+
+Now consider a different model: the host does not know the car's location and chooses B or C with probability 1/2 each, independently of that location. This can reveal the car. Let U_B be the event that this host opens B, and G the event that the opened door reveals a goat. After observing both that B was opened and that it revealed a goat,
+
+$$
+\Pr(C_A\mid U_B\cap G)=\Pr(C_C\mid U_B\cap G)=\frac12
+$$
+
+Always revealing a goat and happening to reveal a goat are different observation mechanisms. [Rosenthal's paper](https://probability.ca/jeff/writing/montyfall.pdf) also examines variants of the host's behavior.
+
+## 4. Separate psychological hypotheses from mathematical errors
+
+### Examine the inference of equal probabilities
+
+Treating remaining options as equally likely is discussed in psychology in terms such as the equiprobability heuristic. However, we can establish that “two doors, so half each” does not fit the Section 1 model without a causal claim about the brain. The calculation must include the process that left those doors closed.
+
+### Separate the host's knowledge from the opening mechanism
+
+Simply saying “the host does not open randomly” is inaccurate. An informed host can still choose randomly between B and C when A has the car. Leaving C closed also does not mean that the host could not open it because it held the car: if A had the car, opening C was possible. We need a specific selection rule, rather than a guess about intent alone.
+
+### Hesitation and anticipated regret
+
+Understanding a probability and choosing an action are separate issues. We can imagine feeling “I would regret switching and losing,” but this does not explain everyone's behavior. Claims that maintaining the status quo or avoiding regret are universal brain mechanisms require appropriate empirical evidence.
+
+[Mazur and Kahlbaugh (2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3435463/) compared repeated choices by pigeons, college students and preschool children. There were large individual differences under the standard probability conditions. In conditions with higher probabilities of reward for switching, students and pigeons switched more. The authors argued that difficulty discriminating reward probabilities matters in repeated tasks. These differ from answering a one-shot verbal problem and do not establish that everyone errs because of status quo bias.
+
+The next diagram is a procedure for organizing reasoning. It does not depict established psychological causes.
 
 ```mermaid
 flowchart LR
-    Situation["Forced to make a choice"] --> Feeling["Emotion of not wanting to regret"]
-    Feeling --> Bias1["Status Quo Bias"]
-    Feeling --> Bias2["Equiprobability Bias (illusion of 1/2)"]
-    Bias1 --> Conclusion["Do not change choice (Stay)"]
-    Bias2 --> Conclusion
+    Situation["A choice is required"] --> Rules["Check the rules"]
+    Rules --> Observation["Identify the observed information"]
+    Observation --> Posterior["Calculate conditional probabilities"]
+    Posterior --> Utility["Consider value and switching costs"]
+    Utility --> Decision["Decide"]
 ```
 
-## Chapter 5: Lessons of the Paradox in Daily Life
+## 5. Applications need their own models
 
-The Monty Hall problem is not just a quiz or a math puzzle. The lessons this paradox teaches us have universal value that can be applied to various fields such as our daily lives, business, medicine, and AI development.
+### A hypothetical test and false positives
 
-### Conflict Between Data and Intuition (The Problem of False Positives in Medicine)
+Sensitivity and specificity alone do not determine the probability after a positive result. For an arithmetic example, suppose the prior disease probability p is 1/10000, sensitivity s is 99%, and specificity t is 99%. Sensitivity is the probability of a positive result given disease; specificity is the probability of a negative result given no disease.
 
-The interpretation of "test accuracy" in medical settings is also a typical example where intuition and Bayesian probability diverge.
-For example, suppose there is an "intractable disease that affects 1 in 10,000 people", and the accuracy of the test drug for it is "99% (it correctly identifies 99% of positive people as positive, and 99% of negative people as negative)".
-If you take this test and are judged "positive", what is the probability that you actually have that intractable disease?
+$$
+p=\frac1{10000},\qquad s=\frac{99}{100},\qquad t=\frac{99}{100}
+$$
 
-Intuitively, you might despair, thinking, "Since the accuracy is 99%, the probability that I am sick must also be 99%."
-However, calculating with [Bayes' theorem](/en/p/bayes-theorem/), the probability that you are actually afflicted is **only just under 1% (about 0.98%)**. This is because 1% (about 100 people) of the overwhelming majority of "healthy people (9,999 people)" will be "false positives", so within the group of people who tested positive, the genuine patients (almost 1 person) become a tiny minority.
+Let D be the event that disease is present, and + a positive result. Then
 
-In this way, the overwhelming divergence between intuitive probability evaluation (99%) and mathematical truth (1%) risks bringing unnecessary panic or wrong medical decisions to people. Understanding the Monty Hall problem is the first step to acquiring the literacy to correctly evaluate such "information asymmetry and prior probability".
+$$
+\Pr(D\mid +)=\frac{sp}{sp+(1-t)(1-p)}=\frac{0.000099}{0.000099+0.009999}=\frac1{102}\approx0.009804
+$$
 
-### The Value of Information in Business Strategy
+which is about 0.98%. In a hypothetical population of 10000, the expected counts are 0.99 true positives and 99.99 false positives. Fractional counts occur because these are expectations, rather than observed patient counts.
 
-In business, the trends of competitors and market reactions correspond exactly to "the door Monty opened".
-Suppose your company chooses a certain strategy (Door A). After that, new information comes in, such as changes in the market environment or the failure of a competitor (a dud door opening).
-At this time, do you "stubbornly stick to the original strategy (status quo bias)", or do you "evaluate the new information from a Bayesian perspective and pivot the strategy (change choice)"? This can be interpreted as a lesson that companies that can flexibly change their strategies are able to grasp a higher probability of success (2/3) in the long run. It is important to always make decisions based on "posterior probability" without being bound by sunk costs.
+This example follows from the three assumed probabilities. It does not assign a probability of 0.98% to an actual test or individual. Distinguishing disease status from a positive or negative test result is also essential to reading the formula.
 
-## Conclusion: Intelligence is the Courage to "Doubt Intuition"
+### Business strategy and criteria beyond winning probability
 
-The reason the Monty Hall problem is so fascinating, and so terrifying, is that it brilliantly highlights the "limits of human intelligence". Even experts with PhDs were deceived by their initial intuition and reacted emotionally against the correct proof.
+Market reactions can prompt a strategy review. However, markets do not necessarily remove an unsuccessful option under a known rule, and a change of strategy does not acquire a success probability of 2/3. Competition and information gathering each need their own models.
 
-We live by relying on the powerful weapon of "intuition" that we acquired in the process of evolution. However, in modern society, which is becoming increasingly complex and overflowing with data, we must realize that this intuition sometimes leads us into a trap.
+Even within the game, let the utilities of a car and a goat be u_car and u_goat, and let the switching cost k be measured in the same utility units. Using the Section 1 probabilities, the expected-utility difference is
 
-The Monty Hall problem conveys one important message to us.
-That is **"the importance of not blindly believing your own intuition, but stopping and rethinking things using the tools of logic and mathematics"**. To accept a truth that seems contrary to intuition at first glance requires intellectual humility and the courage to update one's own assumptions.
+$$
+\mathrm{EU}(\mathrm{switch})-\mathrm{EU}(\mathrm{stay})=\frac{u_{\mathrm{car}}-u_{\mathrm{goat}}}{3}-k
+$$
 
-The next time you are forced to make a major choice in life and acquire new information (an opened door), please remember this Monty Hall problem. Has the probability changed due to that information? Are you trapped in status quo bias?
-The logically derived decision to "change your choice" might just bring a new car right before your eyes.
+Maximizing the chance of getting the car and maximizing value after costs are distinct objectives. In an actual decision, examine option values, switching costs and how information was obtained.
+
+## 6. Conclusion: check the assumptions behind intuition and calculation
+
+The Monty Hall problem is practice in specifying how an observation arises, rather than assigning probabilities from the number of options alone. Mathematics gives conclusions within a stated model. Psychology empirically examines how people understand, learn and choose.
+
+After receiving information, identify what was observed, which rules generated it, and what you want to maximize. This procedure can help, but it is not a general rule that changing a choice always doubles success.

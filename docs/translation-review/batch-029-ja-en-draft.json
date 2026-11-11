@@ -1,0 +1,26 @@
+{
+  "draftedAt": "2026-11-11T14:13:09.643730+09:00",
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/paradox-monty-hall-problem/index.md",
+      "originalSha256": "53a9a1909cfca0937832f1c66d2503c34aae85415f75aa98a4c7b9533e47c009",
+      "draftSha256": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8"
+    },
+    {
+      "language": "en",
+      "path": "content/post/paradox-monty-hall-problem/index.en.md",
+      "originalSha256": "a4db9d28984898075ae16ad93e3d53a718bf33c95524ae88e328e930204efe68",
+      "draftSha256": "d66bea4e00fdf6f84ec71baa036c4b13a6188e7364e6e4de501471f8ddaccc48"
+    }
+  ],
+  "displayTeXEach": 15,
+  "diagramsEach": 2,
+  "graphEdges": [
+    13,
+    5
+  ],
+  "programs": 0,
+  "reviewedTranslationsAdded": 0,
+  "scope": "JA/EN originals full read and manual rewrite;pending full revised reread and validation/registration. Other11translation prose unread. Flags explicit for maintainability;baseline already included libraries,not a runtime repair claim. No native/browser/clinical certification."
+}

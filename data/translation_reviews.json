@@ -3485,6 +3485,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-028.json",
       "evidenceHash": "f48fa2560495989b514e5421d12dddafdf855724d77ae1d4b41707b065ce8339"
+    },
+    "post/paradox-monty-hall-problem/index.en.md": {
+      "source": "post/paradox-monty-hall-problem/index.md",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "translationHash": "9ec8b007ffa48ddff2d38e2e90d5ccc8c91add21644794eda3a7f3961034d234",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-029.json",
+      "evidenceHash": "9fda47307a1dbb504e08466c8c4d65c571c2da7ac24a2ebfad92779aa567935a"
     }
   }
 }

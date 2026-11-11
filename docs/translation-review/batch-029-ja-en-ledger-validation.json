@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-11-11T14:17:26.896450+09:00",
+  "recordStdout": "Recorded ai review: post/paradox-monty-hall-problem/index.en.md\n",
+  "ledgerStdout": "{\"current\": 349, \"unreviewed\": 12683}\n",
+  "prior348EntriesUnchanged": true,
+  "humanReviews": 0,
+  "scope": "One fully read English translation added;publication pending."
+}

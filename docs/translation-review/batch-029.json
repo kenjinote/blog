@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "article": "paradox-monty-hall-problem",
+  "sourceAudit": "docs/translation-review/batch-029-source-audit.json",
+  "sourceNotes": "docs/translation-review/batch-029-source-notes.md",
+  "reviews": {
+    "post/paradox-monty-hall-problem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-monty-hall-problem/index.md",
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "translationHash": "9ec8b007ffa48ddff2d38e2e90d5ccc8c91add21644794eda3a7f3961034d234",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete old Japanese and English and both revised versions, including tables, diagrams and all application passages. Explicitly matched uniform placement, every-game switch offer, symmetric ties, overall versus conditional success and million-door remaining-label observation. Preserved psychological/application themes while qualifying empirical scope and removing unsupported universal causation and corporate2/3 success claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared prior/posterior/likelihood,conditional versus overall probability,uninformed versus informed host,and equiprobability heuristic versus universal causal diagnosis. Corrected English positive/negative people to disease status versus test result; sensitivity/specificity definitions and expected versus observed counts explicit. Reworded higher probabilities of reward before first validation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually checked15expressions and assumptions against Japanese:prior1/3,stay1/3/switch2/3,99many-door closed forms,symmetric versus fixed remaining label,Bayes likelihood1/2,0,1,qhost,uninformedB AND goat. Diagnostic1/102 is correct given p1/10000,s/t99percent;counts0.99/99.99 expectations. Expected utility advantage(car-goat)/3-cost uses same utility units. Shared finite auxiliary once plus136joint-table cases and125utility cases;not general/clinical/psychological proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Zero executable article programs. Read two complete Mermaid diagrams:13edge outcome branches match car/goat winning cases and5edge reasoning procedure explicitly not an empirical causal diagram. Source and decoded HTML exact,with runtime libraries included. Baseline already included libraries without per-article flags;added explicit flags document requirements,no missing-runtime repair claim. No browser/Mermaid/KaTeX execution or visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three primary references and two localized English internal targets checked in final preview. Gill/Rosenthal prior full-reading scope and new Mazur/Kahlbaugh complete body reading are documented with limits. Preserved public slug,image hash,taxonomy and Sep24T19:44:38 published date;actualNov11lastmod. Verified14hreflang/13sidebar,30bundle1680pages,HTTPS3052HTML41XML,and reran17existing tests. Other11prose/later publication pending."
+        }
+      },
+      "summary": "Complete English intuition/probability review:explicit models,scoped psychological evidence,hypothetical diagnostics and switching utility.",
+      "languageSpecificFindings": "Old English positive/negative people conflated disease status/test result. Corrected terminology and expected counts,unqualified random-host statements,brain/regret causal claims and corporate-success2/3 generalization. Full six-section reread completed.",
+      "validation": "docs/translation-review/batch-029-ja-en-validation.json",
+      "limitations": [
+        "AI,not human/native speaker review.",
+        "Other11translation bodies unreviewed.",
+        "Finite auxiliary arithmetic distinct from article programs0 and psychological/clinical evidence.",
+        "No browser visual/runtime or publication certification."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "ja",
+        "en"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "validation": "docs/translation-review/batch-029-ja-en-validation.json",
+      "checks": "docs/translation-review/batch-029-ja-en-checks.json",
+      "texEach": 15,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.",
+        "diagnosticJointTableCases": 136,
+        "diagnosticExamplePosterior": "1/102",
+        "utilityPlacementCases": 125,
+        "additionalScope": "Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence."
+      },
+      "actualPreviewBundles": 30,
+      "multilingualPages": 1680,
+      "httpsHtmlPages": 3052,
+      "httpsXmlFiles": 41,
+      "existingUnitTestsRerun": 17,
+      "reviewedTranslationsTotal": 349,
+      "unreviewedTranslations": 12683,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    }
+  ]
+}
