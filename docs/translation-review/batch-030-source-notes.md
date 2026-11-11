@@ -22,3 +22,11 @@ TFT firstC, then previous opponent move; both retaliation/cooperation branches m
 ## Remaining
 
 No revised body or translation has yet been certified by this pre-audit. Other11 full readings, publication and live checks remain. No human/native speaker, browser visual, KaTeX/Mermaid execution or current clinical/legal validation is claimed.
+
+## Later language reading, 2026-11-11
+
+JA/EN revised six sections,table,nine TeX and both graphs were completely reread before first validation/English ledger record. Added own/opponent payoff argument convention,split expected-utility display into aligned lines,and initialt=1 before proof. Frozen Japanese hash is recorded in batch030 validation and immutable English evidence.
+
+Simplified Chinese: complete old and revised bodies read. Currency was silently changed from Japanese yen to 元 in the old price example;restored explicit日元. Compared严格占优策略/帕累托有效/纳什均衡/子博弈精炼均衡/折现/冷酷触发 and current/previous/next-round wording. No other language certified by this reading.
+
+Traditional Chinese: complete old and revised bodies read. Old price example also used unspecified元 rather than original yen;restored日圓. Chose報酬/效用/嚴格優勢策略/納許均衡/子賽局完美均衡/折現/以牙還牙. Pareto has multiple Chinese renderings;do not assert that old柏拉圖最適 is necessarily a mistranslation. Selected柏雷多效率 with English explicit,checking Ministry of Education education-dictionary entry by陳麗珠(2000):https://pedia.cloud.edu.tw/Entry/Detail?title=%E6%9F%8F%E9%9B%B7%E5%A4%9A%E6%95%88%E7%8E%87 . Read entry heading/attribution/full definition(lines48–82),not every navigation/linked entry. Terminology/context cross-check only,not a new article citation or substitute for matrix reasoning. Also read only first two pages(extracted0–78)of陳恭平 repeated-games notes:https://idv.sinica.edu.tw/kongpin/teaching/micro/Ch8.4%20repeated%20games.pdf ;observability/折現/finite backward-induction terminology,not the rest18-page chapter or its references. Two original article references unchanged. ExplicitDD不具柏雷多效率 wording polished before first validation.

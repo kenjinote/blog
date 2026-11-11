@@ -83,6 +83,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/囚人のジレンマ/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "2d3f6dcd5e28de9210088bf281bff547c4bac266dec8edf9761217d484a8bffa",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original/revised Traditional Chinese metadata,six sections,table and both graphs against frozen Japanese. Matched fictional simultaneous game,own utility only,pure efficient CC/CD/DC versus CC sum maximum,unilateral Nash deviation,finite common-knowledge backward induction,infinite perfect-monitoring grim condition and TFT timing. Preserved price/climate/sport analogies with separate payoff/institution requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Taiwanese 報酬/效用,嚴格優勢策略,機率,純策略/混合策略,納許均衡,子賽局完美均衡,逆向歸納,折現,以牙還牙 and 冷酷觸發. Selected 柏雷多效率 with English using official education-dictionary terminology;multiple Pareto renderings exist and old 柏拉圖最適 is not asserted wrong. Old unspecified元1000/500 replaced with original explicit日圓,no conversion. Zero sentence not innocence."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all nine identical TeX expressions,four payoff cells,CC sum-2 and other sums-10,three efficient pure profiles,strict dominance and mixed-belief difference5-4p>=1. Explicit own/opponent argument convention;TFT next-round copies previous opponent action. Infinite discount0<=delta<1 andgrim threshold1/5 match source,not MIT different table or TFT theorem. Shared exact4profile/101belief/102discount612delay/two8round checks separate from general/empirical proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Zero executable article programs. Read both complete6edge Mermaid sources:conditional one-shot incentives andt=1,simultaneousplay,observe,setnextmove,incrementt on both branches. Replaced original retaliation-to-cooperation shortcut. Exact graph topology and decoded HTML/TeX checked;flags unchanged,libraries included. No browser,visual,KaTeX/Mermaid execution or tournament reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two original primary references retained/accessed;substantive reading scope recorded in source notes. Supplemental official glossary definition and onlyfirst2pages ofauthor-hostedSinica notes used for terminology,not fullchapter certification/newarticle citations. Preserved slug,image,taxonomy,bothdate lines/effectiveSep10T03;actualNov11lastmod.14hreflang13sidebar,31bundle1736pages/HTTPS3157HTML41XML pass. Prior17tests not rerun;other9/publication pending."
+        }
+      },
+      "summary": "Complete Traditional Chinese review with Taiwanese terminology,explicit yen and correctly scoped one-shot/repeated-game reasoning.",
+      "languageSpecificFindings": "Old Traditional Chinese used unspecified元 instead of sourceyen,and equated negative utility with服刑年數 and zero years with無罪. Corrected these,overgeneralized必然 choices/壓倒性 TFT victory/longrelationship guarantee,and full previous/current/next回合 diagram. Pareto rendering standardized with English without falsely calling accepted variant a mistranslation;DD不具柏雷多效率 clarified before firstproof.",
+      "validation": "docs/translation-review/batch-030-zh-tw-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "9 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0 and empirical tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -172,6 +212,50 @@
       "unreviewedTranslations": 12670,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 10,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "zh-tw"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-zh-tw-validation.json",
+      "checks": "docs/translation-review/batch-030-zh-tw-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-030-zh-tw-ledger-validation.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 363,
+      "unreviewedTranslations": 12669,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 9,
       "publicationPending": true
     }
   ]
