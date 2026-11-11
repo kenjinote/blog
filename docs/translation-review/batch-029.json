@@ -402,6 +402,46 @@
         "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
         "Primary-source reading scope documented separately;publication pending."
       ]
+    },
+    "post/paradox-monty-hall-problem/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-monty-hall-problem/index.md",
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "translationHash": "dd6a82158d84eeb610a54fb74c9ba834f86f166891ceccba2e19a3943a0a5e8e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read every original Russian metadata/body/table/two diagrams and complete revised version against Japanese. Preserved six themes with uniform prior,every-game offer,symmetric ties,overall/conditional distinction and remaining-label-only observation. Corrected unsupported universal historical/brain/business-success claims and limited empirical psychological findings to repeated tasks with individual differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used задача Монти Холла,априорная/правдоподобие/апостериорная,условная/общая probabilities and сохранить/сменить consistently. Corrected открыть козу to actual door with goat,and used observation/data rather than equating empirical evidence with mathematical proof. Original Russian diagnostic example already distinguished sick/healthy correctly;not falsely counted as disease-status mistranslation. Defined чувствительность/специфичность,expected истинноположительные/ложноположительные counts and common полезность units."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared15expressions and conditions:likelihood1/2,0,1,posterior1/3/2/3,q preference,uninformed B AND goat half,ninteger>=3,r2..n,R-only observation with symmetric versus fixed-label host. Hypothetical diagnostic1/102,expected counts0.99/99.99 and utility advantage(car-goat)/3-cost in common units preserved. Finite auxiliary once plus136diagnostic/125utility cases,not clinical/psychological/general proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Article programs0. Read all13outcome diagram edges/localized labels with car/goat wins,and5edge proposed reasoning procedure explicitly not empirically established psychological causes. Complete Mermaid sources and15TeX exact in generated decodedHTML. Baseline already loaded libraries;flags document requirements rather than establish runtime repair. No actual browser/KaTeX/Mermaid execution,native-speaker or visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked three primary and two Russian internal links,original September24published date/actualNovember11modified,image hash/publicslug/taxonomy,14hreflang/13sidebar URLs.30bundle1680pages and HTTPS3052HTML41XML passed.17existingtests referenced from JA/EN success,not rerun. Primary-reading scope documented;Arabic review and batch029publication pending."
+        }
+      },
+      "summary": "Complete Russian intuition/probability review with actual door wording,conditional models and scoped psychological/hypothetical applications.",
+      "languageSpecificFindings": "Russian original sick/healthy test explanation was correct. Corrected открывает козу,qualified universal causation and business2/3 assumptions,and separated empirical information from proof. Full reread clarified fixed-label condition and joint B-open/goat observation before first validation;draft receipt preserved.",
+      "validation": "docs/translation-review/batch-029-ru-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "1other translation bodies not yet fully reviewed at this stage.",
+        "Finite auxiliary arithmetic distinct from article programs0,clinical advice,psychological experiment or corporate-success proof.",
+        "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
+        "Primary-source reading scope documented separately;publication pending."
+      ]
     }
   },
   "stages": [
@@ -823,6 +863,48 @@
       "unreviewedTranslations": 12674,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 2,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "ru"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "validation": "docs/translation-review/batch-029-ru-validation.json",
+      "checks": "docs/translation-review/batch-029-ru-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-029-ru-ledger-validation.json",
+      "texEach": 15,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.",
+        "diagnosticJointTableCases": 136,
+        "diagnosticExamplePosterior": "1/102",
+        "utilityPlacementCases": 125,
+        "additionalScope": "Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence."
+      },
+      "actualPreviewBundles": 30,
+      "multilingualPages": 1680,
+      "httpsHtmlPages": 3052,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 359,
+      "unreviewedTranslations": 12673,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 1,
       "publicationPending": true
     }
   ]
