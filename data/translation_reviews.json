@@ -3435,6 +3435,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-028.json",
       "evidenceHash": "51b1a08775fff53871fcd6177a09db5c1a20990da17691cbceb8335ef7f22ff6"
+    },
+    "post/モンティ・ホール問題/index.de.md": {
+      "source": "post/モンティ・ホール問題/index.md",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "translationHash": "e62ae62748aad90adba593f0c770764f3ef9c6fb5ba9f97800b2fc66f3a00663",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-028.json",
+      "evidenceHash": "eb56e5a789acd7cef6b7e4118a8718605379e1e527a6f721f4d827fbd8075924"
     }
   }
 }

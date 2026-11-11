@@ -1,9 +1,7 @@
 ---
-title: 'Monty-Hall-Problem: Die Falle der Wahrscheinlichkeitstheorie, die die Intuition täuscht, und die vollständige Lösung durch Bayes-Schätzung'
-date: "2026-09-24T19:44:38+09:00"
+title: "Monty-Hall-Problem: Regeln des Moderators und bedingte Wahrscheinlichkeiten"
 slug: 'monty-hall-problem'
-description: 'Ein Spiel aus einer Fernsehsendung, bei dem Sie aus 3 Türen den Treffer wählen. Sollten Sie Ihre Wahl ändern, nachdem der Moderator eine Tür mit einer Niete geöffnet hat? Wir erklären das "Monty-Hall-Problem", das unter Mathematikern weltweit eine große Kontroverse auslöste, gründlich aus der Perspektive der Wahrscheinlichkeitstheorie, der Bayes-Schätzung und der kognitiven Psychologie.'
-date: '2026-09-10T00:00:00+09:00'
+description: "Wann gewinnt Wechseln mit Wahrscheinlichkeit 2/3? Bayes, Auswahlregeln des Moderators und eine Million Türen, mit Diagrammen theoretischer Wahrscheinlichkeiten."
 image: 'img/monty_hall.jpg'
 math: true
 mermaid: true
@@ -12,164 +10,196 @@ tags:
   - 'Paradoxon'
   - 'Satz von Bayes'
   - 'Statistik'
+date: "2026-09-10T00:00:00+09:00"
+lastmod: "2026-11-11"
 ---
 
-## 1. Die Bühne ist eine Fernsehquizshow: Was würden Sie tun?
+## 1. Drei Türen und die Regeln, die zuerst feststehen müssen
 
-Im Jahr 1990 erhielt die Kolumne "Ask Marilyn" des amerikanischen Nachrichtenmagazins *Parade* folgende Frage eines Lesers:
+Ein Auto und zwei Ziegen. Sie wählen A unter drei geschlossenen Türen A, B und C. Danach öffnet der Moderator eine andere Tür und zeigt eine Ziege. Sollten Sie zur verbleibenden Tür wechseln?
 
-> Sie sind Kandidat in einer Fernsehspielshow. Vor Ihnen befinden sich **3 Türen (A, B, C)**.
-> Hinter einer der Türen befindet sich ein **neues Auto (Treffer)**, und hinter den verbleibenden zwei Türen befinden sich **Ziegen (Niete)**.
-> 
-> 1. Sie wählen zunächst **Tür A**.
-> 2. Daraufhin öffnet der Moderator Monty Hall, der weiß, hinter welcher Tür das neue Auto steht, von den verbleibenden Türen die **Tür B**, hinter der sich eine Ziege befindet.
-> 3. Monty sagt zu Ihnen: **"Sie dürfen jetzt auf Tür C wechseln. Was tun Sie?"**
-> 
-> Sollten Sie nun tatsächlich **die Tür wechseln?**
+Das Monty-Hall-Problem löste nach seiner Darstellung in der Kolumne „Ask Marilyn“ der Zeitschrift *Parade* im Jahr 1990 eine Debatte aus. [Gills Aufsatz](https://pub.math.leidenuniv.nl/~gillrd/montyhall3.pdf) behandelt die Geschichte und verschiedene mathematische Formulierungen; [Rosenthals Aufsatz](https://probability.ca/jeff/writing/montyfall.pdf) untersucht Varianten der Regeln des Moderators. Hier verwenden wir folgendes ausdrücklich festgelegte Modell.
 
-Intuitiv könnte man denken: "Es bleiben zwei Türen, A und C. Da es völlig zufällig ist, wo das neue Auto steht, ist die Wahrscheinlichkeit für beide $\frac{1}{2}$ (50%). Deshalb ist es egal, ob man wechselt oder nicht."
+1. Das Auto steht mit gleicher Wahrscheinlichkeit hinter jeder Tür. Sie wählen A ohne Informationen über seinen Standort.
+2. Der Moderator kennt die Inhalte und öffnet weder A noch die Tür mit dem Auto.
+3. In jeder Runde öffnet er eine nicht gewählte Tür mit einer Ziege und bietet immer den Wechsel zur anderen, noch geschlossenen und nicht gewählten Tür an.
+4. Steht das Auto hinter A, sind beide anderen Türen mit Ziegen besetzt. Dann öffnet er B oder C mit einer Wahrscheinlichkeit von jeweils 1/2.
 
-Die Kolumnistin Marilyn vos Savant (die laut Guinness-Buch der Rekorde den höchsten IQ besitzt) antwortete jedoch: **"Sie sollten wechseln. Wenn Sie wechseln, verdoppelt sich Ihre Gewinnwahrscheinlichkeit."**
+Gleiche Wahrscheinlichkeiten sind eine Annahme über die Platzierung des Autos. Sie folgen nicht allein daraus, dass man seinen Standort nicht kennt. C_A, C_B und C_C bezeichnen die Ereignisse, dass das Auto hinter A, B beziehungsweise C steht.
 
-Diese Antwort sorgte in den gesamten USA für Aufsehen und führte zu einer Flut von etwa 10.000 Protestbriefen (davon etwa 1.000 von Wissenschaftlern mit Doktortitel in Mathematik). Es gab einen Sturm scharfer Kritik wie "Sie verstehen die Grundlagen der Wahrscheinlichkeit nicht" und "Das ist Frauenlogik".
-Um es vorwegzunehmen: **Marilyns Antwort war mathematisch absolut korrekt.**
+$$
+\Pr(C_A)=\Pr(C_B)=\Pr(C_C)=\frac13
+$$
 
----
+Unter diesen Regeln gewinnt die von Anfang an festgelegte Strategie „immer wechseln“ mit Wahrscheinlichkeit 2/3, die Strategie „immer bei der ersten Wahl bleiben“ mit Wahrscheinlichkeit 1/3. Nach der Beobachtung, dass B geöffnet wurde, beträgt die bedingte Wahrscheinlichkeit für das Auto hinter C ebenfalls 2/3. **Die Gewinnwahrscheinlichkeit einer Strategie insgesamt und eine bedingte Wahrscheinlichkeit nach dem Öffnen einer bestimmten Tür sind verschiedene Berechnungen.**
 
-## 2. Die Kluft zwischen Intuition und Mathematik: Verzweigungen der Wahrscheinlichkeit mit Mermaid
+## 2. Wechseln gewinnt bei zwei der drei Anfangspositionen
 
-Warum unterliegen wir der intuitiven Täuschung, dass es "$\frac{1}{2}$" ist?
-Lassen Sie uns zunächst alle Muster des Spiels visualisieren.
+Zunächst unterscheiden wir nur nach der ursprünglichen Position des Autos, ohne auf eine bestimmte geöffnete Tür zu bedingen.
+
+| Position des Autos (jeweils Wahrscheinlichkeit 1/3) | Vom Moderator geöffnete Tür | Beibehalten | Wechseln |
+| --- | --- | --- | --- |
+| A | B oder C | Auto | Ziege |
+| B | C | Ziege | Auto |
+| C | B | Ziege | Auto |
+
+Wechseln gewinnt genau dann, wenn zuerst eine Tür mit einer Ziege gewählt wurde. Denn der Moderator scheidet immer eine Tür mit einer Ziege aus und bietet den Wechsel an.
+
+$$
+\Pr(\mathrm{stay\ wins})=\frac13,\qquad\Pr(\mathrm{switch\ wins})=\frac23
+$$
 
 ```mermaid
 graph TD
-    Start["Spielbeginn"] --> CarA["Neues Auto ist Tür A (Wahrscheinlichkeit 1/3)"]
-    Start --> CarB["Neues Auto ist Tür B (Wahrscheinlichkeit 1/3)"]
-    Start --> CarC["Neues Auto ist Tür C (Wahrscheinlichkeit 1/3)"]
-
-    CarA --> PickA1["Sie wählen Tür A"]
-    CarB --> PickA2["Sie wählen Tür A"]
-    CarC --> PickA3["Sie wählen Tür A"]
-
-    PickA1 --> HostB_or_C["Moderator öffnet B oder C"]
-    PickA2 --> HostC["Moderator öffnet immer C"]
-    PickA3 --> HostB["Moderator öffnet immer B"]
-
-    HostB_or_C --> Stay1["Nicht wechseln: Treffer!"]
-    HostB_or_C --> Switch1["Wechseln: Niete..."]
-
-    HostC --> Stay2["Nicht wechseln: Niete..."]
-    HostC --> Switch2["Wechseln: Treffer!"]
-
-    HostB --> Stay3["Nicht wechseln: Niete..."]
-    HostB --> Switch3["Wechseln: Treffer!"]
-
-    style Switch2 fill:#bbf,stroke:#333,stroke-width:2px
-    style Switch3 fill:#bbf,stroke:#333,stroke-width:2px
-    style Stay1 fill:#f99,stroke:#333,stroke-width:2px
+    Start["Spielbeginn"] --> CarA["Auto hinter A (Wahrscheinlichkeit 1/3)"]
+    Start --> CarB["Auto hinter B (Wahrscheinlichkeit 1/3)"]
+    Start --> CarC["Auto hinter C (Wahrscheinlichkeit 1/3)"]
+    CarA --> PickA1["A wählen"]
+    CarB --> PickA2["A wählen"]
+    CarC --> PickA3["A wählen"]
+    PickA1 --> HostB_or_C["B oder C öffnen (jeweils 1/2)"]
+    PickA2 --> HostC["C öffnen"]
+    PickA3 --> HostB["B öffnen"]
+    HostB_or_C --> Stay1["Beibehalten: Auto"]
+    HostB_or_C --> Switch1["Wechseln: Ziege"]
+    HostC --> Stay2["Beibehalten: Ziege"]
+    HostC --> Switch2["Wechseln: Auto"]
+    HostB --> Stay3["Beibehalten: Ziege"]
+    HostB --> Switch3["Wechseln: Auto"]
 ```
 
-Wenn wir annehmen, dass Sie "Tür A" gewählt haben, treten die folgenden drei Szenarien mit gleicher Wahrscheinlichkeit ($\frac{1}{3}$) auf.
+2/3 ist eine Wahrscheinlichkeit im Modell, keine Garantie für genau zwei Gewinne in jeder Gruppe von drei Spielen. Der Zusammenhang zwischen Wahrscheinlichkeiten und relativen Gewinnhäufigkeiten bei unabhängigen Wiederholungen führt auch zum [Gesetz der großen Zahlen](https://kenji.blog/de/p/law-of-large-numbers/).
 
-1. **Szenario 1 (Neues Auto in A):** Der Moderator öffnet B oder C, wo sich eine Ziege befindet. Wenn Sie die Tür wechseln, ist es eine **Niete**.
-2. **Szenario 2 (Neues Auto in B):** Der Moderator kann nur C öffnen, wo sich eine Ziege befindet. Wenn Sie die Tür wechseln, ist es ein **Treffer**.
-3. **Szenario 3 (Neues Auto in C):** Der Moderator kann nur B öffnen, wo sich eine Ziege befindet. Wenn Sie die Tür wechseln, ist es ein **Treffer**.
+## 3. Der Satz von Bayes nach dem Öffnen von B
 
-Das heißt, in 2 von 3 Fällen (Szenario 2 und 3) befindet man sich in dem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/): **"Wenn Sie die Tür wechseln, gewinnen Sie auf jeden Fall"**.
-Daher beträgt die Gewinnquote beim Wechsel der Tür $\frac{2}{3}$, was genau **doppelt** so hoch ist wie die Gewinnquote von $\frac{1}{3}$, wenn man nicht wechselt.
+C_A, C_B und C_C sind die Ereignisse, dass das Auto hinter A, B beziehungsweise C steht; M_B ist das Ereignis, dass der Moderator B öffnet. Die Regeln liefern folgende Likelihood-Werte:
 
----
+$$
+\Pr(M_B\mid C_A)=\frac12,\qquad\Pr(M_B\mid C_B)=0,\qquad\Pr(M_B\mid C_C)=1
+$$
 
-## 3. Strenger Beweis durch den [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/)
+Gesucht sind die Wahrscheinlichkeiten unter der Bedingung, dass B geöffnet wurde. Der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) verbindet diese Likelihood-Werte mit den A-priori-Wahrscheinlichkeiten.
 
-Um dieses Problem mathematisch exakt zu lösen, verwenden wir den "[Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/)", der bedingte Wahrscheinlichkeiten berechnet.
+$$
+\Pr(C_i\mid M_B)=\frac{\Pr(M_B\mid C_i)\Pr(C_i)}{\sum_{j\in\{A,B,C\}}\Pr(M_B\mid C_j)\Pr(C_j)}
+$$
 
-$$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
+Nach dem Satz der totalen Wahrscheinlichkeit beträgt die Wahrscheinlichkeit für das Öffnen von B
 
-Hierbei definieren wir die Ereignisse wie folgt:
-- $C_A, C_B, C_C$ : Die Ereignisse, dass sich das neue Auto jeweils hinter Tür A, B oder C befindet. Die a priori Wahrscheinlichkeiten sind $P(C_A) = P(C_B) = P(C_C) = \frac{1}{3}$
-- Angenommen, Sie haben anfangs **Tür A** gewählt.
-- $M_B$ : Das Ereignis, dass der Moderator **Tür B** öffnet, hinter der sich eine Ziege befindet.
+$$
+\Pr(M_B)=\frac12\cdot\frac13+0\cdot\frac13+1\cdot\frac13=\frac12
+$$
 
-Was wir herausfinden wollen, ist "die Wahrscheinlichkeit, dass sich das neue Auto hinter Tür C befindet, unter der Bedingung, dass der Moderator Tür B geöffnet hat", also die a posteriori Wahrscheinlichkeit $P(C_C|M_B)$.
+Damit ist die Wahrscheinlichkeit für das Auto hinter der ursprünglich gewählten Tür A
 
-Zunächst betrachten wir die Wahrscheinlichkeit $P(M_B|C_X)$, dass der Moderator Tür B öffnet, abhängig davon, wo sich das neue Auto befindet.
+$$
+\Pr(C_A\mid M_B)=\frac{(1/2)(1/3)}{1/2}=\frac13
+$$
 
-1. **Wenn das neue Auto hinter Tür A ist ($C_A$)**
-   Der Moderator kann zufällig B oder C öffnen.
-   $$ P(M_B|C_A) = \frac{1}{2} $$
+und die für das Auto hinter C, dem Ziel des Wechsels,
 
-2. **Wenn das neue Auto hinter Tür B ist ($C_B$)**
-   Da der Moderator die Tür mit dem neuen Auto nicht öffnen kann, ist die Wahrscheinlichkeit, B zu öffnen, null.
-   $$ P(M_B|C_B) = 0 $$
+$$
+\Pr(C_C\mid M_B)=\frac{1\cdot(1/3)}{1/2}=\frac23
+$$
 
-3. **Wenn das neue Auto hinter Tür C ist ($C_C$)**
-   Da der Moderator weder A (die Sie gewählt haben) noch C (wo das neue Auto steht) öffnen kann, muss er zwangsläufig B öffnen.
-   $$ P(M_B|C_C) = 1 $$
+Dass A und C noch geschlossen sind, reicht nicht aus, um gleiche Wahrscheinlichkeiten anzunehmen. Die Berechnung nutzt, dass die Wahrscheinlichkeit für das Öffnen von B vom Standort des Autos abhängt.
 
-Als nächstes ermitteln wir die Gesamtwahrscheinlichkeit $P(M_B)$, dass der Moderator Tür B öffnet, durch den "Satz der totalen Wahrscheinlichkeit".
+## 4. Intuition prüfen: Wissen und Regeln des Moderators
 
-$$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
-$$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
+Die Intuition „zwei bleiben übrig, also hat jede die Hälfte der Wahrscheinlichkeit“ berücksichtigt nicht, wie diese beiden Türen übrig geblieben sind. Umgekehrt macht das Wissen über den Standort des Autos nicht jede Entscheidung des Moderators deterministisch. Im Modell aus Abschnitt 1 wählt er weiterhin zufällig zwischen B und C, wenn das Auto hinter A steht. Dass C geschlossen bleibt, bedeutet auch nicht, dass er C nicht hätte öffnen dürfen: Steht das Auto hinter A, wäre das Öffnen von C ebenfalls erlaubt.
 
-Nun wenden wir endlich den [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) an, um die a posteriori Wahrscheinlichkeiten für Tür A und Tür C zu berechnen.
+### 4.1. Bevorzugung einer der beiden Türen mit einer Ziege
 
-**Wahrscheinlichkeit, dass das neue Auto hinter Tür A ist (wenn man nicht wechselt):**
-$$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$
+Wir behalten die übrigen Regeln bei und ändern nur die Wahrscheinlichkeit, B zu öffnen, wenn das Auto hinter A steht, auf q.
 
-**Wahrscheinlichkeit, dass das neue Auto hinter Tür C ist (wenn man wechselt):**
-$$ P(C_C|M_B) = \frac{P(M_B|C_C) P(C_C)}{P(M_B)} = \frac{1 \times \frac{1}{3}}{\frac{1}{2}} = \frac{2}{3} $$
+$$
+q=\Pr(M_B\mid C_A),\qquad0\le q\le1
+$$
 
-Auch der mathematische Beweis zeigt eindeutig: **"Die Wahrscheinlichkeit zu gewinnen ist doppelt so hoch (2/3), wenn man die Tür wechselt"**.
+Dann gilt
 
----
+$$
+\Pr(M_B)=\frac{1+q}{3}
+$$
 
-## 4. Kognitive Verzerrung: Der Wert der Information als "Bedingung"
+und nach dem Öffnen von B ergeben sich
 
-Warum haben selbst so viele geniale Mathematiker dieses Problem intuitiv falsch verstanden?
-Die Gründe liegen im "Equiprobability Bias" (Gleichwahrscheinlichkeits-Verzerrung) und im "Versäumnis der Informationsaktualisierung", die in unser menschliches Gehirn eingebaut sind.
+$$
+\Pr(C_A\mid M_B)=\frac{q}{1+q},\qquad\Pr(C_C\mid M_B)=\frac1{1+q}
+$$
 
-### 4.1. Equiprobability Bias (Gleichwahrscheinlichkeits-Verzerrung)
-Menschen haben die Eigenschaft, wenn ihnen unbekannte Optionen präsentiert werden, unbewusst davon auszugehen, dass "die Wahrscheinlichkeit der verbleibenden Optionen immer gleichverteilt ist".
-In dem Moment, in dem das Gehirn sieht, dass zwei Türen übrig bleiben, etikettiert es diese automatisch mit "$50\%$ : $50\%$".
+Bezeichnet M_C entsprechend das Öffnen von C, so gilt
 
-### 4.2. Die Information der "Absicht" des Moderators
-Der Hauptgrund, warum uns unsere Intuition täuscht, ist, dass wir übersehen, dass **die Handlungen des Moderators nicht zufällig sind**.
-Wenn die Regel wäre: "Der Moderator öffnet zufällig eine Tür, ohne zu wissen, wo das Auto ist, und es war zufällig eine Ziege" (dies wird als "Monty-Fall-Problem" bezeichnet), dann wäre die Wahrscheinlichkeit für Tür A und Tür C tatsächlich jeweils $\frac{1}{2}$.
+$$
+\Pr(M_C)=\frac{2-q}{3}
+$$
 
-Aber beim tatsächlichen Monty-Hall-Problem handelt der Moderator unter den folgenden strengen Einschränkungen:
-1. Er darf die vom Kandidaten gewählte Tür nicht öffnen.
-2. Er darf die Tür mit dem neuen Auto nicht öffnen.
+$$
+\Pr(C_A\mid M_C)=\frac{1-q}{2-q},\qquad\Pr(C_B\mid M_C)=\frac1{2-q}
+$$
 
-Aufgrund dieser Einschränkungen gibt uns allein die Tatsache, dass der Moderator "Tür B geöffnet hat", **eine gewaltige Information über Tür C**. Es ist eine unausgesprochene Botschaft darin enthalten: "Ich konnte Tür C nicht öffnen (weil dort das neue Auto ist)".
+Bei q gleich 1 etwa haben A und C nach der Beobachtung, dass B geöffnet wurde, jeweils Wahrscheinlichkeit 1/2. Wird hingegen C geöffnet, steht das Auto sicher hinter B. Dennoch bleibt die mit den Öffnungswahrscheinlichkeiten gewichtete Gewinnwahrscheinlichkeit der Strategie „immer wechseln“
 
----
+$$
+\Pr(M_B)\Pr(C_C\mid M_B)+\Pr(M_C)\Pr(C_B\mid M_C)=\frac23
+$$
 
-## 5. Die Intuition durch ein extremes Beispiel korrigieren
+Für Wahrscheinlichkeiten nach einer bestimmten Beobachtung muss die Bevorzugung einer Tür durch den Moderator im Modell enthalten sein.
 
-Wenn Sie immer noch nicht überzeugt sind, erhöhen wir die Anzahl der Türen auf **1 Million**.
+### 4.2. Eine Tür ohne Kenntnis des Inhalts öffnen
 
-1. Sie wählen aus 1 Million Türen **Tür 1**. (Die Gewinnwahrscheinlichkeit ist $\frac{1}{1.000.000}$)
-2. Der allwissende Moderator **öffnet** von den verbleibenden 999.999 Türen **alle 999.998 Türen**, hinter denen sich eine Ziege befindet.
-3. Geschlossen bleiben nur "Tür 1", die Sie gewählt haben, und "Tür 777.777", die der Moderator absichtlich übrig gelassen hat.
+Betrachten wir ein anderes Spiel: Der Moderator kennt den Standort des Autos nicht und öffnet B oder C mit einer Wahrscheinlichkeit von jeweils 1/2, unabhängig vom Standort des Autos. Dabei kann auch das Auto sichtbar werden. Nun beobachten wir, dass er B geöffnet und eine Ziege gezeigt hat.
 
-Nun, werden Sie wechseln?
-In diesem Fall sollten Sie nicht wechseln, wenn Sie glauben, dass Sie gleich am Anfang das "Eins zu einer Million"-Wunder getroffen haben. Aber realistisch betrachtet wird intuitiv klar, dass die Wahrscheinlichkeit, dass sich das neue Auto hinter der **"einzigen Tür, die der Moderator unter keinen Umständen öffnen konnte"**, befindet, $\frac{999.999}{1.000.000}$ beträgt.
+U_B sei das Ereignis, dass dieser Moderator B öffnet, und G das Ereignis, dass die geöffnete Tür eine Ziege zeigt. Dann gilt
 
-Das Monty-Hall-Problem (mit 3 Türen) ist lediglich dieses "1-Million-Türen-Phänomen" in kleinerem Maßstab.
+$$
+\Pr(U_B\cap G\mid C_A)=\frac12,\qquad\Pr(U_B\cap G\mid C_B)=0,\qquad\Pr(U_B\cap G\mid C_C)=\frac12
+$$
+
+Aus gleichen A-priori-Wahrscheinlichkeiten und dem Satz von Bayes folgt
+
+$$
+\Pr(C_A\mid U_B\cap G)=\Pr(C_C\mid U_B\cap G)=\frac12
+$$
+
+„Immer eine Ziege zeigen“ und „zufällig eine Ziege zeigen“ beschreiben verschiedene Beobachtungsmechanismen. Eine Erklärung menschlicher Psychologie und eine Wahrscheinlichkeitsberechnung unter festgelegten Regeln sind unterschiedliche Fragen.
+
+## 5. Auch bei einer Million Türen muss die Bedingung klar sein
+
+Wir nummerieren n Türen von 1 bis n. Die Position C des Autos ist gleichverteilt auf diese Türnummern; die erste Wahl ist fest auf 1 gesetzt. In jeder Runde öffnet der informierte Moderator n−2 nicht gewählte Türen mit Ziegen und bietet den Wechsel zur einzigen noch geschlossenen, nicht gewählten Tür R an. Dabei ist n ganzzahlig und mindestens 3.
+
+$$
+\Pr(C=1)=\frac1n,\qquad\Pr(C=R)=\frac{n-1}{n}
+$$
+
+Bei einer Million Türen beträgt die unbedingte Gewinnwahrscheinlichkeit der Strategie „immer wechseln“ 999999/1000000. Der Grund bleibt derselbe: Wechseln gewinnt, wenn zuerst eine Tür mit einer Ziege gewählt wurde.
+
+Nun berechnen wir bedingte Wahrscheinlichkeiten, wobei wir nur die beobachtete Nummer R der verbleibenden Tür verwenden. Zusätzlich nehmen wir an: Steht das Auto hinter der zuerst gewählten Tür, wählt der Moderator R gleichverteilt unter den anderen n−1 Türen. Für eine bestimmte Nummer r ungleich 1 ergibt sich
+
+$$
+\Pr(C=r\mid R=r)=\frac{1/n}{(1/n)+(1/n)(1/(n-1))}=\frac{n-1}{n}
+$$
+
+Unter dieser symmetrischen Regel beträgt die Gewinnwahrscheinlichkeit beim Wechsel zu Tür 777777 auch dann 999999/1000000, wenn gerade diese Tür unter einer Million geschlossen geblieben ist.
+
+Lässt der Moderator jedoch immer dieselbe Nummer r übrig, wenn das Auto hinter der ursprünglichen Tür steht, dann gilt nach der Beobachtung, dass diese Nummer übrig bleibt,
+
+$$
+\Pr(C=r\mid R=r)=\frac{1/n}{(1/n)+(1/n)}=\frac12
+$$
+
+Die gesamte Gewinnwahrscheinlichkeit der Strategie „immer wechseln“ kann also hoch bleiben, während die Wahrscheinlichkeit nach Beobachtung einer bestimmten Nummer anders ausfällt. Bei dieser Berechnung berücksichtigen wir nur R, keine zusätzlichen Informationen wie die Reihenfolge des Öffnens.
+
+Das folgende Diagramm teilt die Anfangspositionen des Drei-Türen-Modells aus Abschnitt 1 danach auf, welche Strategie gewinnt. Die Werte 2 und 1 sind ein theoretisches Wahrscheinlichkeitsverhältnis, keine Anzahlen tatsächlich gespielter Runden.
 
 ```mermaid
-pie title Der Effekt des Türwechsels (100 Simulationen)
-    "Gewinn durch Wechseln (ca. 66,7%)" : 67
-    "Gewinn ohne Wechseln (ca. 33,3%)" : 33
+pie title Gewinnende Strategie nach Anfangsposition (theoretisches Verhältnis)
+    "Gewinn beim Wechseln (2/3)" : 2
+    "Gewinn beim Beibehalten (1/3)" : 1
 ```
 
-## 6. Fazit: Was uns die Wahrscheinlichkeitstheorie für Geschäft und Leben lehrt
+## 6. Vor einem Wechsel Annahmen und Informationen prüfen
 
-Das Monty-Hall-Problem geht über ein bloßes Quiz hinaus und lehrt uns wichtige Lektionen.
+Die Lehre lautet nicht, dass ein Wechsel in jeder Situation die Erfolgswahrscheinlichkeit verdoppelt. Gewinnwahrscheinlichkeiten hängen von der Platzierung des Autos, dem Wissen des Moderators, der Öffnungsregel und der Regel für das Wechselangebot ab.
 
-1. **Die Intuition irrt sich oft**: Das menschliche Gehirn hat sich nicht daraufhin entwickelt, komplexe bedingte Wahrscheinlichkeiten intuitiv zu verarbeiten. Bei wichtigen Entscheidungen ist es gefährlich, sich nur auf die Intuition zu verlassen.
-2. **Wahrscheinlichkeiten mit neuen Informationen aktualisieren (Bayes-Aktualisierung)**: Wenn sich die Situation ändert und neue Informationen (z.B. welche Tür der Moderator geöffnet hat) eintreffen, ist der Schlüssel zum Erfolg, nicht an bestehenden Ansichten festzuhalten, sondern Wahrscheinlichkeiten und Strategien flexibel aktualisieren zu können.
-
-Die kleine Entscheidung, "die Tür zu wechseln", könnte die Wahrscheinlichkeit, das "neue Auto" Ihres Lebens zu bekommen, verdoppeln.
-
+Auch im Geschäftsleben und im Alltag kann neue Information helfen, Annahmen zu überprüfen und Entscheidungen anzupassen. Tatsächliche Kosten, Präferenzen und die Art der Informationsgewinnung brauchen jedoch eigene Modelle; sie lassen sich nicht einfach mit drei Türen gleichsetzen.

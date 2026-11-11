@@ -90,3 +90,13 @@ AI342／未確認12,690／人0。先行341台帳エントリ・当バッチ先�
 旧自己リンク2件は/fr/p/モンティ・ホール問題/を指し、baselineプレビューにその行先はなく、正規monty-hall-problemは存在すると確認して除去。残る4参照は一次2件と同言語のBayes／LLN。18TeX・graph15辺／pie辺0と理論比2対1、元の画像2点バイト／分類／slug／実効公開9月10日00:00・実日11月11日更新、14hreflang／13切替、多言語1629ページ／HTTPS2960HTML41XMLは成功。共有補助1回101q／1212重み経路、未知司会者18経路／6観測、多扉99閉形式例は有限補助。記事プログラム0、17テストはJA/EN成功参照で今回未再実行。既存Hugo警告と全サイト・母語話者・ブラウザ描画／実行・心理・公開の限界を保持。
 
 AI343／未確認12,689／人0。先行342台帳エントリ・当バッチ先行6エントリ・原文ハッシュは不変。当記事の原文＋7翻訳を記録済み。残るhi/de/ar/ru/idの5翻訳と公開確認、全記事goalを継続。
+
+## ドイツ語の全文照合（11月11日）
+
+旧稿・改稿の全6節、全メタデータ、表、18式、2図を原文と照合し、最終の確率文・n整数範囲・Rだけを用いる条件付けの変更文も再読。Beibehalten／Wechseln、bedingte／unbedingte Gewinnwahrscheinlichkeit、Likelihood-Werte／A-priori-Wahrscheinlichkeiten、全確率、Ereignisse、gleichverteilt、deterministisch／zufälligを確認。旧図のNeues Auto ist Tür Aという同一性の訳をAuto hinter Aへ直し、事象・確率・位置を区別。mit einer Wahrscheinlichkeit von jeweils1/2、n ganzzahlig und mindestens3、Rのみを観測情報とする文を自然化した。
+
+旧稿の一般語ZustandからJS状態管理記事への無関係なリンクを除去。設定・歴史・場合分け・Bayes・直感と情報・多扉・生活のテーマは維持し、一様事前・毎回のヤギ開示／提案・ヤギ間の選択、無条件戦略と特定観測を明示。毎3回2勝、Cを開けられなかったとの断定、未裏付け歴史内訳・普遍的心理／人生成功2倍、実行していない100Simulationenを訂正。図・表・本文で初期A当たりはBeibehaltenAuto／WechselnZiege、他2配置の逆を確認。
+
+18TeX・graph15辺／pie辺0と理論比2対1、一次2件とde内部Bayes／LLNの4参照、元の画像2点バイト／分類／slug／実効公開9月10日00:00・実日11月11日更新、14hreflang／13切替、多言語1629ページ／HTTPS2960HTML41XML成功。共有補助1回101q／1212重み経路、未知司会者18経路／6観測、多扉99閉形式例は有限補助。記事プログラム0、17テストはJA/EN成功参照で今回未再実行。既存警告と全サイト・母語話者・ブラウザ実描画／実行・心理・公開の制限を保持。
+
+AI344／未確認12,688／人0。先行343台帳エントリ・当バッチ先行7エントリ・原文ハッシュは不変。当記事の原文＋8翻訳を記録済み。残るhi/ar/ru/idの4翻訳と公開確認、全記事goalを継続。

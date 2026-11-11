@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T13:37:12.816799+09:00",
+  "recordStdout": "Recorded ai review: post/モンティ・ホール問題/index.de.md\n",
+  "checkStdout": "{\"current\": 344, \"unreviewed\": 12688}\n",
+  "current": 344,
+  "unreviewed": 12688,
+  "humanReviews": 0,
+  "scope": "One fully compared translation added; existing review entries preserved;publication pending."
+}
