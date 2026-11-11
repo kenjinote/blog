@@ -362,6 +362,46 @@
         "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
         "Primary-source reading scope documented separately;publication pending."
       ]
+    },
+    "post/paradox-monty-hall-problem/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-monty-hall-problem/index.md",
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "translationHash": "8d6d61ffadd5c58c2526bc916f663c8f275b0c0532574f811a4e17064e80a51a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read entire original Indonesian metadata/body/table/two diagrams and complete revised version against Japanese. Preserved six themes with uniform placement,every-game offer,symmetric tie rule,overall/conditional distinction and remaining-number-only observation. Corrected unsupported historical/brain/business-success assertions,with psychological study scoped to repeated choices and individual differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Old Masalah Pembawa Acara yang Bodoh incorrectly turned lack of car-location knowledge into stupidity;used neutral tidak mengetahui posisi mobil. Used probabilitas prior/likelihood/posterior,bersyarat/keseluruhan,Tetap/Beralih and actual car behind door. Corrected orang positif/negatif definitions to disease presence/absence for sensitivitas/spesifisitas. Expected counts/positif benar/palsu and common utilitas units clear. During reread explicitly placed goats behind opened doors to remove possible later-hiding ambiguity."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared15expressions and assumptions:likelihood1/2,0,1,posterior1/3/2/3,q-preference,uninformed B AND goat half,ninteger>=3,r2..n,R-only observation and symmetric versus fixed-label rules. Hypothetical disease1/102,expected counts0.99/99.99 and utility advantage(car-goat)/3-cost in same units preserved. Finite auxiliary once plus136diagnostic/125utility cases,not clinical/general/psychological proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Article programs0. Read all13outcome edges and localized car/goat win/loss labels;second5edge graph explicitly proposed reasoning procedure,not established psychological causes. Complete Mermaid sources and15TeX exact in generated decodedHTML. Baseline already included libraries;explicit flags are documentation rather than proof of runtime repair. No actual browser/KaTeX/Mermaid execution,native or visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified three primary and two Indonesian internal links,original September24published date/actualNovember11modified,image hash/publicslug/taxonomy,14hreflang/13sidebar URLs.30bundle1680pages and HTTPS3052HTML41XML passed.17existingtests referenced from JA/EN success,not rerun. Primary-reading scope documented;remainingRussian/Arabic reviews and batch029publication pending."
+        }
+      },
+      "summary": "Complete Indonesian intuition/probability review with neutral uninformed-host wording,defined test characteristics and precise door/observation models.",
+      "languageSpecificFindings": "Replaced insulting Bodoh with lack of location knowledge;corrected positive/negative-person disease-status confusion and car at versus behind a door. Aligned prior/likelihood/posterior,sensitivitas/spesifisitas,expected counts with decimal commas and utilitas. Full reread made goat placement explicit before opening;draft hash preserved before first proof.",
+      "validation": "docs/translation-review/batch-029-id-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "2other translation bodies not yet fully reviewed at this stage.",
+        "Finite auxiliary arithmetic distinct from article programs0,clinical advice,psychological experiment or corporate-success proof.",
+        "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
+        "Primary-source reading scope documented separately;publication pending."
+      ]
     }
   },
   "stages": [
@@ -741,6 +781,48 @@
       "unreviewedTranslations": 12675,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 3,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "id"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "validation": "docs/translation-review/batch-029-id-validation.json",
+      "checks": "docs/translation-review/batch-029-id-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-029-id-ledger-validation.json",
+      "texEach": 15,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.",
+        "diagnosticJointTableCases": 136,
+        "diagnosticExamplePosterior": "1/102",
+        "utilityPlacementCases": 125,
+        "additionalScope": "Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence."
+      },
+      "actualPreviewBundles": 30,
+      "multilingualPages": 1680,
+      "httpsHtmlPages": 3052,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 358,
+      "unreviewedTranslations": 12674,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 2,
       "publicationPending": true
     }
   ]
