@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-11-12T08:57:49.140852+09:00",
+  "recordStdout": "Recorded ai review: post/paradox-prisoners-dilemma/index.zh-cn.md\n",
+  "ledgerStdout": "{\"current\": 374, \"unreviewed\": 12658}\n",
+  "priorEntriesUnchanged": 373,
+  "humanReviews": 0,
+  "scope": "Only fully compared translation added;publication pending."
+}

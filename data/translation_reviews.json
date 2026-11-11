@@ -3735,6 +3735,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-031.json",
       "evidenceHash": "fcd26b307c19b1f6c8a1571c8d085b864263050b567010a2a543652be68774bf"
+    },
+    "post/paradox-prisoners-dilemma/index.zh-cn.md": {
+      "source": "post/paradox-prisoners-dilemma/index.md",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "translationHash": "67b035653a0f6af69e7d4e0716ac849b6bb645f691a35f3f09e3c845d661777b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-031.json",
+      "evidenceHash": "cfa1a59d2ff51c53bb2c48ba419762a83c6a5a70e8fca42fa0c987f39572d0e3"
     }
   }
 }
