@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T23:05:12.567518+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "zh-cn",
+      "path": "content/post/囚人のジレンマ/index.zh-cn.md",
+      "sha256": "0ec4e3815dcf8477e69bf15434d8477888fa8d8b24f2f8a238b318d4b51046be",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    }
+  ],
+  "sharedAuxiliaryChecks": {
+    "pureProfiles": 4,
+    "paretoEfficientPureProfiles": [
+      "CC",
+      "CD",
+      "DC"
+    ],
+    "uniquePureNash": "DD",
+    "mixedBeliefValues": 101,
+    "playersEach": 2,
+    "discountValues": 102,
+    "delayedDeviationCases": 612,
+    "tftTraces": 2,
+    "roundsEach": 8,
+    "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+  },
+  "sourceAuditSha256": "9682a1119938c4d2bff05379cf2615af37247cabdb44129943914ec8c79ded5f",
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source/decoded HTML/finite arithmetic only;not automatic prose approval or ledger record.",
+    "No native speaker/browser/KaTeX/Mermaid execution or tournament reproduction.",
+    "Other11 prose and publication pending;full goal active."
+  ]
+}

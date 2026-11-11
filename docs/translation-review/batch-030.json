@@ -43,6 +43,46 @@
         "Primary biological/clinical speculation not adopted as current evidence;no real-world legal,clinical or market model certified.",
         "Publication and live verification pending;whole-site goal remains active."
       ]
+    },
+    "post/囚人のジレンマ/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "0ec4e3815dcf8477e69bf15434d8477888fa8d8b24f2f8a238b318d4b51046be",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and revised Simplified Chinese against frozen Japanese,all six sections,table and both diagrams. Matched fictional simultaneous own-utility model,pure Pareto CC/CD/DC versus sum maximum CC,unique DD Nash,finite backward induction,infinite conditional cooperation,TFT previous-round timing and distinct grim strategy. Retained three application themes with their own-model requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared 收益/效用 versus 刑期,严格占优策略,纯策略/混合策略,帕累托最优/有效,纳什均衡,共同知识,后向归纳,子博弈精炼均衡,折现因子,一报还一报 and 冷酷触发策略. Corrected original currency1000元/500元 back to original Japanese1000日元/500日元 without implying conversion. Zero years does not imply 无罪."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read nine identical TeX expressions and four matrix cells. Verified T0>R-1>P-5>S-10,own/opponent payoff argument convention,CC total-2 versus others-10,strict dominance for pure/mixed opponent and5-4p>=1. Grim perfect-monitoring infinite discount threshold1/5 distinguished from different-table MIT1/2 and TFT. Exact auxiliary4profiles/101beliefs each2players/102discounts612delays/two eight-round traces once,not universal or empirical proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read complete two six-edge Mermaid sources,including startt=1,simultaneous play,observe roundt,set roundt+1 and incrementt on both branches. Corrected old direct revenge-to-cooperation transition. Source graph topology and decodedHTML match;math/Mermaid libraries present,flags unchanged. No browser,visual or runtime certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primary links same as Japanese and present in preview;primary full substantive reading scope documented separately,not secondary references read. Original slug,image hash,taxonomy and duplicate date lines retained;baseline effectiveSep10T03 published/actualNov11lastmod.14hreflang13sidebar,31bundle1736pages/HTTPS3157HTML41XML passed. Existing17tests prior success referenced,not rerun. Other10 prose/publication pending."
+        }
+      },
+      "summary": "Complete Simplified Chinese review with corrected currency,precise efficiency/equilibrium terminology and conditional repeated-game cooperation.",
+      "languageSpecificFindings": "Old Chinese changed original yen to 元,called negative utility prison years,and stated 无罪 for zero years. Corrected these plus inherited Pareto-sum conflation,必然 universal human outcomes,压倒性 TFT victory and long-term cooperation guarantee. Full previous/current/next-round loop and1/5 assumptions reread.",
+      "validation": "docs/translation-review/batch-030-zh-cn-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "10 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0 and empirical tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -88,6 +128,50 @@
       "unreviewedTranslations": 12671,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "zh-cn"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-zh-cn-validation.json",
+      "checks": "docs/translation-review/batch-030-zh-cn-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-030-zh-cn-ledger-validation.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 362,
+      "unreviewedTranslations": 12670,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 10,
       "publicationPending": true
     }
   ]
