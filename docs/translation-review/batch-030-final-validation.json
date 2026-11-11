@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T23:44:24.525856+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/囚人のジレンマ/index.md",
+      "sha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "content/post/囚人のジレンマ/index.en.md",
+      "sha256": "c44967b1407890aedcef92989919c83464deeba7c1448132f03c5f0368a37a72",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "content/post/囚人のジレンマ/index.zh-cn.md",
+      "sha256": "0ec4e3815dcf8477e69bf15434d8477888fa8d8b24f2f8a238b318d4b51046be",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "content/post/囚人のジレンマ/index.zh-tw.md",
+      "sha256": "2d3f6dcd5e28de9210088bf281bff547c4bac266dec8edf9761217d484a8bffa",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "content/post/囚人のジレンマ/index.es.md",
+      "sha256": "6ab4b9e22d4958ecdbecc7c27cef9f27aae4a9ad9c6e41c6927238075c61f258",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "content/post/囚人のジレンマ/index.ko.md",
+      "sha256": "26addfec01d767a2639a1adc6ae316e882d09db10a6bca39b563fe9a172922a3",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "path": "content/post/囚人のジレンマ/index.pt.md",
+      "sha256": "63b8d469f52e161c4300b9ba0a28a75a76fb942827b19338c5cd8b6d559e894d",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "path": "content/post/囚人のジレンマ/index.fr.md",
+      "sha256": "a7afa36aa2ad1b5b62b7284cb06612325ee3d80edb3f00ee2fa6d2b3833548fd",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "de",
+      "path": "content/post/囚人のジレンマ/index.de.md",
+      "sha256": "3b532807c58632ac4d4dcb6106fe971237f5637ecba29796c0488670f797bf48",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "path": "content/post/囚人のジレンマ/index.hi.md",
+      "sha256": "84a0f75a756d086b17b0141d1002057c6cef5e3318ba103f0dc35840c2133eab",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "content/post/囚人のジレンマ/index.id.md",
+      "sha256": "62e16da34c4d26eb2066c58cfa88880f155196f559609d7ff86b0c129acc1af4",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "path": "content/post/囚人のジレンマ/index.ru.md",
+      "sha256": "b0371d12309df9a5e24f3a40c7f359229eb7bfed501425eb850b462561a7059a",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "path": "content/post/囚人のジレンマ/index.ar.md",
+      "sha256": "8fff23e0e2d13e64e954a62c4f61d2883a4702c7d089b1b5168a68bea0c2af01",
+      "sourceSha256": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 2,
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    }
+  ],
+  "sharedAuxiliaryChecks": {
+    "pureProfiles": 4,
+    "paretoEfficientPureProfiles": [
+      "CC",
+      "CD",
+      "DC"
+    ],
+    "uniquePureNash": "DD",
+    "mixedBeliefValues": 101,
+    "playersEach": 2,
+    "discountValues": 102,
+    "delayedDeviationCases": 612,
+    "tftTraces": 2,
+    "roundsEach": 8,
+    "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+  },
+  "sourceAuditSha256": "9682a1119938c4d2bff05379cf2615af37247cabdb44129943914ec8c79ded5f",
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source/decoded HTML/finite arithmetic only;not automatic prose approval or ledger record.",
+    "No native speaker/browser/KaTeX/Mermaid execution or tournament reproduction.",
+    "Other11 prose and publication pending;full goal active."
+  ]
+}

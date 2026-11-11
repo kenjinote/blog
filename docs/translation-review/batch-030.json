@@ -443,6 +443,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/囚人のジレンマ/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "8fff23e0e2d13e64e954a62c4f61d2883a4702c7d089b1b5168a68bea0c2af01",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and revised Arabic metadata,six sections,matrix and both diagrams against frozen Japanese. Matched fictional simultaneous own-utility model,efficient pureCC/CD/DC versus CCsum maximum,unilateral Nash deviation,finite common-knowledge backward induction,infinite conditionalgrim cooperation and TFTpreviousround. Changed convicted-accomplice implication to suspects. All three applications preserved with independent payoff/institution requirements rather than inevitable outcomes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared العائد/المنفعة with مدة السجن,strict dominance with explicit English,النقية/المختلطة,كفاءة باريتو,توازن ناش versus التوازن التام في الألعاب الفرعية,المعرفة المشتركة,الاستقراء العكسي,معامل الخصم,العين بالعين and defined العقاب الدائم. Zero years does not imply تبرئة/البراءة. Original ين correct and retained. Replaced بأغلبية ساحقة electoral-majority wording with documented average-score rank."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read nine identical TeX expressions,four payoff cells,own/opponent convention,T0>R-1>P-5>S-10,efficient pureCC/CD/DC,CCsum-2 versus other-10,strictD and mixed-belief5-4p>=1. Infinite perfect observation0<=delta<1 producesgrim1/5,not TFT or MITdifferenttable. Added four explicit bdi dir=ltr wrappers around numeric pairs and explained order;generatedHTMLparser confirms exact ordered cell contents. Auxiliary4profiles101beliefs2players102discounts612delays/two8roundtraces once,not general/empiricalproof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read two complete six-edge Mermaid sources witht=1,simultaneousplay,observe roundt,setroundt+1 andincrementt onbothbranches. Corrected oldrepentance shortcut;polished dual-suspect and equilibrium grammar before firstvalidation. Exact graphsource/topology/decodedHTMLmath checked. Actual langar/dirrtl and linked CSS KaTeX directionltr/unicode-bidi isolate checked in separate static-direction receipt. No browser,visual,KaTeX/Mermaid execution or tournament reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primary references match Japanese and occur in preview;documented substantive reading limits retained,not every cited work read. Kept author names in source Latin spelling. Preserved slug,image hash,taxonomy,both date lines/effectiveSep10T03 andactualNov11lastmod.14hreflang13sidebar,31bundles1736pages/HTTPS3157HTML41XML passed. Prior17tests not rerun here. All12 translation bodies now read;final assembly/publication pending."
+        }
+      },
+      "summary": "Complete Arabic review with corrected tournament wording,explicit utility conditions and isolated numeric payoff pairs in RTL HTML.",
+      "languageSpecificFindings": "Original Arabic described suspects as partners in a crime,used negative prison years/تبرئة and called TFT victory بأغلبية ساحقة. Corrected fictional suspects/utility/average-score ranking,kept ين,distinguished individual incentives from universal behavior and longterm guarantee. Matched current/previous/nextجولة and distinctgrim1/5. Added numeric-pair LTR isolation and explanatory order;dual subject/equilibrium grammar polished beforeproof. Static direction checks do not certify browser appearance.",
+      "validation": "docs/translation-review/batch-030-ar-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "0 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0 and empirical tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -929,6 +969,76 @@
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "ar"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-ar-validation.json",
+      "checks": "docs/translation-review/batch-030-ar-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-030-ar-ledger-validation.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 372,
+      "unreviewedTranslations": 12660,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 0,
+      "publicationPending": true
     }
-  ]
+  ],
+  "finalAssembly": {
+    "checkedAt": "2026-11-11T23:50:48.910130+09:00",
+    "validation": "docs/translation-review/batch-030-final-validation.json",
+    "checks": "docs/translation-review/batch-030-final-checks.json",
+    "allOriginalAndTranslationBodiesRead": true,
+    "languages": 13,
+    "texExpressions": 117,
+    "diagrams": 26,
+    "graphEdges": 156,
+    "referencesEach": 2,
+    "articlePrograms": 0,
+    "unitTestsPassed": 17,
+    "actualPreviewBundles": 31,
+    "multilingualPages": 1736,
+    "httpsHtmlPages": 3157,
+    "httpsXmlFiles": 41,
+    "reviewedTranslationsTotal": 372,
+    "unreviewedTranslations": 12660,
+    "humanReviews": 0,
+    "arabicStaticDirection": "docs/translation-review/batch-030-ar-static-direction.json",
+    "publicationProbePreparation": "docs/translation-review/batch-030-probe-preparation-r2.json",
+    "publicationProbeLocalCheck": "docs/translation-review/batch-030-probe-local-structure-r2.json",
+    "firstLocalProbeAttemptPreserved": "docs/translation-review/batch-030-probe-local-structure.json",
+    "publicationPending": true,
+    "scope": "All13 bodies manually read/compared and12AI entries immutable.31bundle source/decodedHTML checks,not fullsite/native/browser/tournament certification. Localprobe403+3passes after localHTMLCRLF normalization;first54graph-only failures retained and diagnosed. Actual live verification waits CI."
+  }
 }

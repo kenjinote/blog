@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T23:49:49.743554+09:00",
+  "helper": "C:\\Users\\kenjinote\\.codex\\tmp\\verify_review_publication_372_r2.py",
+  "helperSha256": "2296b2689f38bd3a7cd7c8fbd11212aa7b7e7ca67d1febc5bcaf2354980bf6f9",
+  "articlePages": 403,
+  "articlePassed": 403,
+  "taxonomyPages": 3,
+  "taxonomyPassed": 3,
+  "allPassed": true,
+  "priorAttempt": "docs/translation-review/batch-030-probe-local-structure.json",
+  "htmlLineEndingsNormalized": true,
+  "fileReads": 419,
+  "httpRequests": 0,
+  "failures": [],
+  "scope": "R2 normalizes only local HTML CRLF/LF through text read,matching Linux-generation line ending convention;binary GIF bytes unchanged. First54graph-only failures retained and diagnosed as CRLF differences. Actual helper check/check_tag functions against fresh31bundle generated files using filesystem-only urlopen stub.403articleURL cases and3tagURL cases,plus13GIF asset file reads. Does not satisfy CI/live HTTP gate,HTTPstatus or browser certification. R2 scopes German irrelevant-link andArabicbdi checks to article,not unrelated UI."
+}

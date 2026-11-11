@@ -3,6 +3,7 @@ from pathlib import Path
 from fractions import Fraction as F
 from datetime import datetime,timezone,timedelta
 from html import unescape
+from html.parser import HTMLParser
 import argparse,hashlib,importlib.util,json,re,subprocess
 ROOT=Path(__file__).resolve().parents[2];D=ROOT/'docs/translation-review'
 spec=importlib.util.spec_from_file_location('shared',D/'verify_batch_028.py')
@@ -79,7 +80,20 @@ def main():
         assert '"dateModified":"2026-11-11' in html
         assert 'katex.min.js' in html and 'mermaid' in html
         assert json.loads(re.search(r'^title: (.*)$',h,re.M)[1]) in unescape(html)
-        for cell in ('(-1, -1)','(-10, 0)','(0, -10)','(-5, -5)'):assert cell in html
+        cells=['(-1, -1)','(-10, 0)','(0, -10)','(-5, -5)']
+        for cell in cells:assert cell in html
+        if lang=='ar':
+            class BidiPairs(HTMLParser):
+                def __init__(self):super().__init__();self.active=False;self.pairs=[]
+                def handle_starttag(self,tag,attrs):
+                    if tag=='bdi':
+                        assert dict(attrs).get('dir')=='ltr';self.active=True;self.pairs.append('')
+                def handle_data(self,data):
+                    if self.active:self.pairs[-1]+=data
+                def handle_endtag(self,tag):
+                    if tag=='bdi':self.active=False
+            pairs=BidiPairs();pairs.feed(html);assert pairs.pairs==cells
+            assert re.search(r'<html\b[^>]*\blang=ar\b[^>]*\bdir=rtl\b',html)
         for asset in audit['assets']:assert hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest()==asset['sha256']
         versions.append({'language':lang,'path':v['path'],'sha256':shared.digest(p),'sourceSha256':shared.digest(source),'texExpressions':9,'diagrams':2,'diagramEdges':[6,6],'articleExecutablePrograms':0,'references':2,'datePublished':v['datePublished'],'dateModified':'2026-11-11','passed':True})
     result={'version':1,'checkedAt':datetime.now(timezone(timedelta(hours=9))).isoformat(),'allPassed':True,'versions':versions,'sharedAuxiliaryChecks':auxiliary(),'sourceAuditSha256':hashlib.sha256(audit_path.read_bytes()).hexdigest(),'reviewedTranslationsAdded':0,'limitations':['Selected source/decoded HTML/finite arithmetic only;not automatic prose approval or ledger record.','No native speaker/browser/KaTeX/Mermaid execution or tournament reproduction.','Other11 prose and publication pending;full goal active.']}

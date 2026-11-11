@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T23:43:02.880786+09:00",
+  "documentLanguage": "ar",
+  "documentDirection": "rtl",
+  "numericPairsBdiLtr": 4,
+  "linkedStylesheetMatches": [
+    {
+      "stylesheet": "/scss/style.min.053be3a5f0163a09f569d953d9f2378f640c0b40dc9454bd891db75e1e15e946.css",
+      "sha256": "053be3a5f0163a09f569d953d9f2378f640c0b40dc9454bd891db75e1e15e946",
+      "rule": "[dir=rtl] .katex{direction:ltr;unicode-bidi:isolate;display:inline-block}"
+    }
+  ],
+  "scope": "Actual linked CSS and generatedHTML attributes,pair-content check in selected validator. No browser visual or KaTeX/Mermaid execution certification."
+}
