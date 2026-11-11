@@ -210,6 +210,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/モンティ・ホール問題/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/モンティ・ホール問題/index.md",
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "translationHash": "a89e516ba0f772779e1c679af3d86771a3669eb6018efce7eeab2239c1d5aae9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full old Portuguese metadata/body/table/diagrams and full six-section revision/18math/two diagrams against JA,then explicitly read final probability/location/selection-process/theoretical-count wording. Preserve setup/history/cases/Bayes/intuition/information/million doors/business-life themes. Specify uniform placement,always-goat,always-offer,tie rules;separate strategy-wide and labeled observation probabilities. Correct guaranteed2of3,C could not be opened,universal psychology/life doubling and unrun100simulations claim;remove unsupported historical details with revised JA."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Check trocar de porta/manter a escolha,probabilidade global/incondicional versus condicional/condicionada,verossimilhança/a priori/a posteriori,lei da probabilidade total,events and mechanisms of observation. Brazilian Portuguese voice follows existing você/carro. Use de o carro/de o apresentador before infinitive subjects. Explain how two doors remained closed instead of awkward como elas restaram;exclude a porta com cabra rather than eliminating a cabra. Specific original door contains car,not abstract choice;theoretical ratio not counts of actual games. AI,not native certification."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually check18formal expressions/definitions:uniform3prior/fixedA/informed every-goat/every-offer/uniformtie;likelihood1/2,0,1/evidence1/2/posteriors1/3,2/3. Generalq0..1 positive MB/MC masses,both posterior formulas/weighted2/3/q1boundary. Uninformed independent B/C plus B AND goat gives1/2. n>=3integer,r!=1,R-only observation,symmetric versus fixed-label leave policies. Shared once101q/all3initial choices9pairs/1212weighted paths,uninformed18paths/six observations,many99closedforms finite supplements,not million-path simulation,general-policy proof or psychology experiment."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Article executable programs0. Mermaid graph15edges checked against all3cases/table/prose,initial-A Manterganha/Trocarperde and other2reversed. Pie theoretical2:1 replaces simulated100/67:33. All18TeX/two diagram sources match decodedHTML,existing math/mermaid true retained. Auxiliary execution distinct from article code;script references not browser KaTeX/Mermaid runtime or visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Gill/Rosenthal2primaryPDF reading scope stays in notes,no inaccessible original column/psychology experiment certification. Bayes/LLN internal links use pt and exist;allfourreferences match. Preserve effectiveSep10T00publication,oldslug/taxonomy/twoassetbytes;single date/actualNov11lastmod/review. Canonical14hreflang13sidebar,1629multilingual pages/HTTPS2960HTML41XML pass. Previous17JA/ENtests referenced,not rerun. Existing Hugo Portuguese UI/layout warnings retained;not full-site/native/browser/psychological/publication certification."
+        }
+      },
+      "summary": "Full Portuguese original/revision comparison:host rules,conditional versus overall probability,theoretical diagram and natural selected-door/observation-process wording;publication pending.",
+      "languageSpecificFindings": "Trocar de porta/manter choice,verossimilhança/a priori/a posteriori and conditional versus unconditional distinguished. Replace awkward como elas restaram,abstract choice/animal removal and trial counts with explicit door/process/game wording. Keep de o infinitive subjects. AI only.",
+      "validation": "docs/translation-review/batch-028-pt-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "6other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,financial advice,empirical choice evidence or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -416,6 +457,47 @@
       "unreviewedTranslations": 12691,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 7,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "pt"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "validation": "docs/translation-review/batch-028-pt-validation.json",
+      "checks": "docs/translation-review/batch-028-pt-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-028-pt-ledger-validation.json",
+      "texEach": 18,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        15,
+        0
+      ],
+      "pieRatio": [
+        2,
+        1
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution."
+      },
+      "multilingualPages": 1629,
+      "httpsHtmlPages": 2960,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 342,
+      "unreviewedTranslations": 12690,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 6,
       "publicationPending": true
     }
   ],
