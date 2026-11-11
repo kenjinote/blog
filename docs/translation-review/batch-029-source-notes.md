@@ -33,3 +33,7 @@ Each selected version has15displayTeX,two Mermaid diagrams13and5edges,three prim
 ## Simplified Chinese full review — 2026-11-11
 
 Read complete original and revised body,table and both diagrams against Japanese. Original wording conflated prior/posterior as 先验概率（事后概率）;corrected to distinct先验/似然/后验 and 条件概率/总体胜率. Defined灵敏度/特异度 by disease status and distinguished expected versus observed counts. Preserved all15expressions,13/5edge diagrams,3primary/two localized refs,date/asset/taxonomy. Exact source/HTML and30bundle1680pages3052HTML41XML checks passed. Previous17tests referenced,not rerun. AI1added,total350/unreviewed12682/human0. Prior349ledger entries and existingEnglishreview entry unchanged. Other10translation bodies unread;publication pending.
+
+## Traditional Chinese full review — 2026-11-11
+
+Read complete original/revised body,table and diagrams against Japanese. Corrected陽性患者/陰性患者 conflation in sensitivity/specificity definitions;used貝氏/先驗/概似/後驗,敏感度/特異度/偽陽性,期望人數 and common效用units. Matched conditional host rules and scoped psychology/application discussion.15TeX,13/5edge diagrams,3primary/two internal refs,date/image/taxonomy and30bundle1680pages3052HTML41XML checks passed. Prior17tests referenced,not rerun. AI1added,total351/unreviewed12681/human0;prior350ledger and twoexisting batch029reviews unchanged. Other9translation bodies unread;publication pending.

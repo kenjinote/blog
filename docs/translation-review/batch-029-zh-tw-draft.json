@@ -1,0 +1,13 @@
+{
+  "draftedAt": "2026-11-11T14:24:21.234990+09:00",
+  "language": "zh-tw",
+  "originalSha256": "84779ecd9388c4bf0e2baa08f1b9933eef535c78e07f59663bd17c90bc2cc36b",
+  "draftSha256": "887068926cc32d81474d1ede9a063a4585fa0076928c4f22d7dcdd715b264920",
+  "texEach": 15,
+  "diagramEdges": [
+    13,
+    5
+  ],
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original traditional Chinese full body read;manual rewrite,pending complete reread/checks/ledger. Other9translation bodies unread. No native/browser/publication certification."
+}
