@@ -134,3 +134,7 @@ AI347／未確認12,685／人0。先行346台帳エントリ・当バッチ先�
 ## Arabic full-body review and final assembly — 2026-11-11
 
 Read entire original Arabic and revised Arabic against Japanese. Corrected implied impossibility of opening an unchosen closed door, omitted unsupported exact historical/psychological assertions, and replaced claimed100simulations with theoretical2:1. Clarified prior/posterior, observed conjunction, host preference and remaining-label-only conditioning. Static Arabic RTL/math-isolation check passed; no browser/native certification. Registered AI348, unreviewed12684, human0. All13 final preview checks passed:234TeX,26diagrams,195graph edges,13pies,4references each,17existing tests; Hindi correct tag and two aliases. Proofs preserve earlier receipts and prior review objects. Publication pending.
+
+## Publication checkpoint — 2026-11-11
+
+Matching commit5cc480ad8ba98654f9c575dd09c30272c1f74edb/run42963485816/attempt1 completed build05:32:29Z/deploy05:34:41Z successfully. First live probe377/377articleURLs and3/3additionalHindi taxonomyURLs passed,0retries. NewMonty13versions234TeX/26diagram sources/195graph edges/13theoretical2:1pies,all4refs,title,original date,modified date,canonical,14hreflang/13sidebar matched;prior364checks retained,182mathversions9792TeX overall. Correct tag archive contains Monty/Bayes,oldtwoURLs have immediateHTMLaliases;notHTTP301/browser certification. Existing12review entries and initial dispatch unchanged. Current ledger353includes5local029translations excluded from this publication. Full goal remains active.

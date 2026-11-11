@@ -1027,7 +1027,9 @@
       "https://kenji.blog/hi/tags/बायेस-की-प्रमेय/",
       "https://kenji.blog/hi/tags/बायेस-की-प्रमेय/page/1/"
     ],
-    "publicationPending": true
+    "publicationPending": false,
+    "publicationProof": "docs/translation-review/publication-028.json",
+    "publicArchivesPassed": 3
   },
   "finalAssembly": {
     "checkedAt": "2026-11-11T14:04:12.072429+09:00",
@@ -1099,7 +1101,7 @@
     "reviewedTranslationsTotal": 348,
     "unreviewedTranslations": 12684,
     "humanReviews": 0,
-    "publicationPending": true,
+    "publicationPending": false,
     "scope": "All13full-body manual comparisons recorded;static source/HTML and29bundle preview checks. No native speaker/browser or complete-site certification;public URLs pending."
   },
   "publicationDispatch": {
@@ -1121,5 +1123,32 @@
     "scope": "Ordinary authorized push after fetch zero incoming/16outgoing. Matching run/head/attempt observed.377articleURL plus3tagURL probe prepared and local functions tested;live HTTP waits matching build/deploy success.",
     "proof": "docs/translation-review/batch-028-publication-dispatch.json",
     "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_348.py"
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-11-11T14:36:43.923387+09:00",
+      "ciRun": 42963485816,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/42963485816",
+      "deployedCommit": "5cc480ad8ba98654f9c575dd09c30272c1f74edb",
+      "ciCompletion": "docs/translation-review/batch-028-ci-completion.json",
+      "proof": "docs/translation-review/publication-028.json",
+      "pages": 377,
+      "passed": 377,
+      "failed": 0,
+      "translations": 348,
+      "japaneseSources": 29,
+      "mathVersions": 182,
+      "texExpressions": 9792,
+      "montyVersions": 13,
+      "montyTeX": 234,
+      "montyDiagramSources": 26,
+      "montyGraphEdges": 195,
+      "montyTheoreticalPies": 13,
+      "additionalHindiTaxonomyPages": 3,
+      "additionalHindiTaxonomyPassed": 3,
+      "httpPageProbeAttempts": 1,
+      "httpPageRetries": 0,
+      "scope": "001through028 live377articleURLs plus3Hindi taxonomyURLs passed after matching build/deploy success. NewMonty13math/diagram/ref/date/title/canonical/language/hreflang/sidebar;prior364checks preserved. Static HTML aliases,not HTTP301/browser navigation certification. Local029five translations excluded. Not native/browser/clinical/psychological/full-site certification."
+    }
+  ]
 }
