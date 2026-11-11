@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T13:11:55.793533+09:00",
+  "allPassed": true,
+  "results": [
+    {
+      "command": [
+        "docs/translation-review/verify_batch_028.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-monty-zh-tw",
+        "--languages",
+        "ja",
+        "zh-tw",
+        "--output",
+        "docs/translation-review/batch-028-zh-tw-validation.json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"passed\": true, \"versions\": 2, \"texEach\": 18, \"diagramsEach\": 2, \"diagramEdges\": [15, 0], \"pieRatio\": [2, 1], \"auxiliary\": {\"biasedHostValues\": 101, \"initialChoiceCarPairsEach\": 9, \"weightedHostPathsIncludingZeroWeights\": 1212, \"uninformedElementaryPaths\": 18, \"uninformedGoatPaths\": 12, \"uninformedLabeledGoatObservations\": 6, \"manyDoorFormulaCases\": 99, \"scope\": \"Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.\"}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-monty-zh-tw"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1629 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-monty-zh-tw"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 2960, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    }
+  ],
+  "actualPreviewBundles": 29,
+  "previous17UnitTests": "docs/translation-review/batch-028-ja-en-checks.json",
+  "unitTestsRerun": false,
+  "scope": "JA/Traditional Chinese source/decodedHTML18math/two diagrams15edges and2:1pie,29bundle multilingual/HTTPS. Auxiliary shared once. Previous17tests referenced,not rerun. Not prose/native/browser/psychological/publication certification."
+}

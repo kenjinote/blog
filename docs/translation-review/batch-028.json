@@ -87,6 +87,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/モンティ・ホール問題/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/モンティ・ホール問題/index.md",
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "translationHash": "f5e075ff2eb39e52ca0bafb593759e0e21fdea5a66295145ad4e56f96f20a076",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full original Traditional Chinese metadata/body/tables/diagrams,then full revised six sections/18math/two diagrams against current JA;explicitly read final 數學表述 change. Original had 約0封 where old JA had an unverified1000 PhD subset;do not invent a corrected count,follow revised JA removing unsupported breakdown. Preserve setup/history/cases/Bayes/intuition/information/million doors/life implications. Correct fixed2-of3guarantee,C could not be opened,universal psychology/life doubling and measured100simulations claim. Specify uniform prior,every-game goat opening/offer and labeled versus unconditional probabilities."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Use 條件機率 and 以...為條件 instead of old literal 制約/情報. Check 先驗/概似/後驗 against already reviewed zh-tw Bayes term passages,大數法則 against its title;not a fresh full review of those articles. Distinguish host選擇偏向 from認知偏誤,random versus deterministic,理論比例 versus實測試驗次數. Check 若且唯若,均勻分布,觀測機制,R/r and r!=1. Remove overclaim 完全解明 and use natural 數學表述. No native-speaker certification."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all18formal expressions and surrounding conditions. Initial-A uniform car/known host/every-goat/every-offer/uniform tie choice;standard likelihood1/2,0,1,evidence1/2,posterior1/3,2/3. q0..1 gives positive MB/MC masses,both posteriors/weighted2/3/q1example. Uninformed independent B/C plus observedB AND goat gives1/2. n>=3integer,r!=1,R-only conditioning,symmetric versus fixed-label preference formulas. Shared auxiliary once101q/all3initial choices9pairs/1212weighted paths,uninformed18paths/six observations,many99closed forms supplement manual reading,not million-path simulation,general-policy or psychology proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Compare Mermaid graph15edges to prose/table for all3initial car placements;initial-A不換中獎/換門沒中獎 and other two reversed. Pie理論比例2:1 removes unrun100simulations/67:33 presentation. All18TeX and two diagram sources match decodedHTML;existing math/mermaid true retained. Auxiliary execution distinct from article code. No browser KaTeX/Mermaid runtime or visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primary Gill/Rosenthal PDFs retain documented full extracted-text reading scope;inaccessible vosSavant/psychology pages not certified. Two internal links use zh-tw and exist;four references match. Preserve effectiveSep10T00 date,oldslug/taxonomy/twoassetbytes;single date/actualNov11lastmod/review. Canonical14hreflang13sidebar,1629multilingual pages/HTTPS2960HTML41XML pass. Prior17tests from JA/EN stage referenced,not rerun. Not full-site/native/browser/psychological/publication certification."
+        }
+      },
+      "summary": "Full Traditional Chinese original/revision comparison;fix conditioning terminology and unsupported-count distortion;explicit host assumptions and theoretical diagrams;publication pending.",
+      "languageSpecificFindings": "Old 約0封 is a translation defect,not corrected by certifying unverified1000. Remove breakdown with revised JA. Use 條件機率/以...為條件 rather than 制約,consistent先驗/概似/後驗 and大數法則. Separate host bias,random choice,theory/empirical counts. AI only.",
+      "validation": "docs/translation-review/batch-028-zh-tw-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "9other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,financial advice,empirical choice evidence or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -170,6 +211,47 @@
       "unreviewedTranslations": 12694,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 10,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "zh-tw"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "validation": "docs/translation-review/batch-028-zh-tw-validation.json",
+      "checks": "docs/translation-review/batch-028-zh-tw-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-028-zh-tw-ledger-validation.json",
+      "texEach": 18,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        15,
+        0
+      ],
+      "pieRatio": [
+        2,
+        1
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution."
+      },
+      "multilingualPages": 1629,
+      "httpsHtmlPages": 2960,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 339,
+      "unreviewedTranslations": 12693,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 9,
       "publicationPending": true
     }
   ],
