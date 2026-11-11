@@ -243,6 +243,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/囚人のジレンマ/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "a7afa36aa2ad1b5b62b7284cb06612325ee3d80edb3f00ee2fa6d2b3833548fd",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original and revised French metadata, six sections, matrix and two diagrams against frozen Japanese. Matched the fictional simultaneous own-utility model, efficient pure CC/CD/DC versus sum-maximizing CC, unilateral Nash deviation, finite common-knowledge backward induction, infinite conditional grim cooperation and TFT's previous-round rule. Preserved all three application topics with their own payoff and institutional requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared gains/utilité with durée de peine, strictement dominante, stratégies pures/mixtes, efficacité/optimalité de Pareto, équilibre de Nash versus parfait en sous-jeux, connaissance commune, récurrence à rebours, facteur d'actualisation, donnant-donnant and explicitly defined punition permanente (grim trigger). Original yens was correct and retained. Zero years does not imply acquittement; negative utility does not mean negative imprisonment."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all nine identical TeX expressions and four payoff cells. Checked T0>R-1>P-5>S-10, efficient pure CC/CD/DC, CC sum -2 versus other sums -10, own/opponent payoff arguments and mixed-belief advantage 5-4p>=1. Infinite perfect-monitoring geometric discount gives grim threshold1/5, distinct from TFT and MIT's different table. Exact auxiliary four profiles,101beliefs for2players,102discounts/612delays and two8round traces run once;not general or empirical proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read both complete six-edge Mermaid sources: conditional one-shot incentives and t=1, simultaneous roundt play, observation, next-round choice and t increment on both branches. Replaced the old repentance shortcut. Exact source topology/decodedHTML/TeX and runtime-library inclusion checked;flags already true. No browser,visual,KaTeX/Mermaid execution or tournament reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Both primary references match Japanese and occur in preview;their documented substantive reading scope retained,not all cited works certified read. Preserved slug,image hash,taxonomy,both raw date lines and effectiveSep10T03 publication;actualNov11lastmod.14hreflang/13sidebar,31bundles1736pages and HTTPS3157HTML41XML passed. Prior17tests not rerun;other5prose/publication pending."
+        }
+      },
+      "summary": "Full French review distinguishing utility,efficiency and equilibrium,with conditional repeated-game cooperation and exact round timing.",
+      "languageSpecificFindings": "Original French used années de prison for negative gains and acquittement for zero years;clarified fictional utility rather than legal innocence. Retained already-correct yens. Removed inherited toujours universal choices,résultats écrasants tournament margin and long-relationship guarantee;rechecked précédent/actuel/suivant and parfait en sous-jeux. Polished de connaissance commune before first proof.",
+      "validation": "docs/translation-review/batch-030-fr-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "5 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0 and empirical tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -508,6 +548,50 @@
       "unreviewedTranslations": 12666,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 6,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "fr"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-fr-validation.json",
+      "checks": "docs/translation-review/batch-030-fr-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-030-fr-ledger-validation.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 367,
+      "unreviewedTranslations": 12665,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 5,
       "publicationPending": true
     }
   ]
