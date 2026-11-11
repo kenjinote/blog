@@ -42,6 +42,46 @@
         "Finite auxiliary arithmetic distinct from article programs0 and psychological/clinical evidence.",
         "No browser visual/runtime or publication certification."
       ]
+    },
+    "post/paradox-monty-hall-problem/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-monty-hall-problem/index.md",
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "translationHash": "ce406bcf1e15b5ba5813db87341443cd2d5b5ac33521ad3bd91c33efe7985915",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read every original simplified Chinese paragraph/table/diagram and entire revised body against reviewed Japanese. Preserved six themes and applications with explicit host rules,uniform placement,observed-label versus strategy calculations,scoped psychological evidence and own-model limitations. Removed unsupported85percent/IQ/letter claims and universal brain/corporate2/3 success assertions consistently with Japanese."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Old paragraph conflated prior and posterior as 先验概率（事后概率）. Standardized 先验/似然/后验 and 条件概率/总体胜率,with host preference versus cognitive bias distinguished. Defined 灵敏度/特异度 by disease state rather than positive/negative people,and 期望人数 versus observed patients. Kept actual car/goats behind doors,换门/不换门,剩余编号R and fixedr distinct."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually aligned15expressions,1/2,0,1 likelihoods,posteriorA1/3/C2/3,q preference and uninformed B AND goat half. Million-door model states integern>=3,r2..n,symmetric remaining-label rule versus fixedr bias and no opening-order information. Diagnostic1/102/about0.98percent,expected counts0.99/99.99 and utility difference with common units preserved. Finite shared arithmetic once plus136diagnostic/125utility cases is auxiliary,not clinical/psychological/general proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Article has0executable programs. Read all labels and13outcome diagram edges against win/loss cases;second5edge diagram is proposed reasoning procedure rather than empirical regret-to-bias causation. Exact diagram sources and15math expressions preserved in decodedHTML. Baseline already loaded libraries;explicit flags do not certify runtime repair. No browser or native-speaker certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified3primary/two simplifiedChinese internal links,original Sep24published date/actualNov11lastmod,unchanged slug/image hash/taxonomy,14hreflang and13sidebar targets.30bundle multilingual1680pages and HTTPS3052HTML41XML passed.17existingtests referenced from JA/EN success,not rerun. Primary-reading scope limited as separately documented;other10languages/publication pending."
+        }
+      },
+      "summary": "Complete simplified Chinese review:correct prior/posterior confusion,conditional-model assumptions,psychological evidence and hypothetical applications.",
+      "languageSpecificFindings": "Corrected 先验概率（事后概率） conflation and disease-status/test-result wording;used先验/似然/后验,条件概率/总体胜率,灵敏度/特异度 and expected rather than observed counts. Host preference,remaining label and proposed reasoning diagram are explicit.",
+      "validation": "docs/translation-review/batch-029-zh-cn-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "10other translation bodies not yet fully reviewed at this stage.",
+        "Finite auxiliary arithmetic distinct from article programs0,clinical advice,psychological experiment or corporate-success proof.",
+        "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
+        "Primary-source reading scope documented separately;publication pending."
+      ]
     }
   },
   "stages": [
@@ -85,6 +125,48 @@
       "unreviewedTranslations": 12683,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "zh-cn"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "validation": "docs/translation-review/batch-029-zh-cn-validation.json",
+      "checks": "docs/translation-review/batch-029-zh-cn-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-029-zh-cn-ledger-validation.json",
+      "texEach": 15,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.",
+        "diagnosticJointTableCases": 136,
+        "diagnosticExamplePosterior": "1/102",
+        "utilityPlacementCases": 125,
+        "additionalScope": "Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence."
+      },
+      "actualPreviewBundles": 30,
+      "multilingualPages": 1680,
+      "httpsHtmlPages": 3052,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 350,
+      "unreviewedTranslations": 12682,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 10,
       "publicationPending": true
     }
   ]
