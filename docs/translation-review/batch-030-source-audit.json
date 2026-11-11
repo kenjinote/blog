@@ -1,0 +1,335 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T22:54:48.517069+09:00",
+  "baselineCommit": "b22ba1bd68a4b18831cb633f1a038dbd8aed8e91",
+  "baselineSite": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-prisoner-baseline",
+  "actualPreviewBundles": 31,
+  "versions": {
+    "ar": {
+      "path": "content/post/囚人のジレンマ/index.ar.md",
+      "sha256": "1e1a3838c47132a19230c46ca7cb416878b76e2689160a3725d7e37d79fab97c",
+      "canonical": "https://kenji.blog/ar/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/囚人のジレンマ/index.de.md",
+      "sha256": "ae824c96a98164abadf7a59a94bc6b727b6d62b05f2a73cf555beb75bbdbacfc",
+      "canonical": "https://kenji.blog/de/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/囚人のジレンマ/index.en.md",
+      "sha256": "3cc758107b0981e9643a01c630b8ee7a4b4f4100e504a9b7d6f0f09a5085bd3f",
+      "canonical": "https://kenji.blog/en/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/囚人のジレンマ/index.es.md",
+      "sha256": "d6502560abadb94b86df1f91f84593bcb548303893c3e2d134908b63f9a1148f",
+      "canonical": "https://kenji.blog/es/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/囚人のジレンマ/index.fr.md",
+      "sha256": "922d0720d3c293ab51645b26a6550fd78f59ba0751c8609ba9c47b4a2817cc8e",
+      "canonical": "https://kenji.blog/fr/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/囚人のジレンマ/index.hi.md",
+      "sha256": "8024aa6433b5c6f47829475af9abd47bface28d31b306c985ece43e5f9920f81",
+      "canonical": "https://kenji.blog/hi/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/囚人のジレンマ/index.id.md",
+      "sha256": "b09fea6886493bbda41fc0478f768bcf31bb7d885be53414cd74ae5e46d7c06f",
+      "canonical": "https://kenji.blog/id/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/囚人のジレンマ/index.ko.md",
+      "sha256": "49b1f59e4e2498e033e7d50d5900d4e6965f1c4fcb652b09a56e6a6dba077d4f",
+      "canonical": "https://kenji.blog/ko/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/囚人のジレンマ/index.md",
+      "sha256": "5459a9c3a260a5487c93d2a26d1b261aeb8c25abf82df1e281cab247587ea36a",
+      "canonical": "https://kenji.blog/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/囚人のジレンマ/index.pt.md",
+      "sha256": "bb3c7a29f61e92a0714f5c213fa92a06ce7af29b522368084c67cf175ba0f7e9",
+      "canonical": "https://kenji.blog/pt/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/囚人のジレンマ/index.ru.md",
+      "sha256": "1d7f214c6192271dcc1e4834f29cc39c72c8e87111d018dfcc9a0e8f53c692e8",
+      "canonical": "https://kenji.blog/ru/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/囚人のジレンマ/index.zh-cn.md",
+      "sha256": "10fffea35b49d1de8f5dcfcd39d27a6a8f6874d138e20a273ef72428e5bcfafd",
+      "canonical": "https://kenji.blog/zh-cn/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/囚人のジレンマ/index.zh-tw.md",
+      "sha256": "6edca5752f24b8b1e22e206b1800d9bac420be55efaca59f2b332d16a6dac901",
+      "canonical": "https://kenji.blog/zh-tw/p/prisoners-dilemma/",
+      "slug": "prisoners-dilemma",
+      "datePublished": "2026-09-10T03:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T03:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    }
+  },
+  "assets": [
+    {
+      "path": "content/post/囚人のジレンマ/img/prisoners_dilemma.jpg",
+      "sha256": "5d2a288a690dea803ca78cd186e8897ce5b7f9698ccd2e23a203e15bfaa27e19"
+    }
+  ],
+  "manualFindings": [
+    "JA and EN complete originals including two payoff tables/diagrams read;other11 only metadata/hash/HTML inventory.",
+    "Negative prison years are utilities,not negative sentence durations. Define fictional game,preferences and payoff order explicitly.",
+    "Pareto efficiency is not sum maximization;CC,CD,DC are efficient pure outcomes in this table. DD is uniquely Nash but Pareto dominated.",
+    "Strict dominance conclusion is conditional on given one-shot own-payoff preferences,not universal human behavior.",
+    "Price/climate/doping applications require their own payoffs and institutions;no universal real-world outcomes from this matrix.",
+    "Known finite horizon versus infinite/uncertain continuation differs;long relationship alone does not guarantee cooperation.",
+    "TFT copies opponent previous move;diagram must explicitly advance rounds and observe both branches,not jump directly from retaliation to cooperation.",
+    "Tournament success conditional on submitted field/rules;grim-trigger equilibrium threshold for this table is1/5,not MIT different-table1/2 or TFT invasion stability condition.",
+    "Preserve separate paradox-prisoners-dilemma article as unread;no merging or certification."
+  ],
+  "reviewedTranslationsAdded": 0,
+  "currentAiTranslations": 360,
+  "unreviewedTranslations": 12672,
+  "humanReviews": 0,
+  "limitations": [
+    "Pre-audit only;no rewrite or ledger certification.",
+    "Only JA/EN full original bodies read. Other11 unreviewed.",
+    "No browser/native speaker/runtime/empirical tournament reproduction.",
+    "Batch029 CI/live verification still pending."
+  ]
+}

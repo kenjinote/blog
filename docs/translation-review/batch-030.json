@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "article": "prisoners-dilemma",
+  "sourceAudit": "docs/translation-review/batch-030-source-audit.json",
+  "sourceNotes": "docs/translation-review/batch-030-source-notes.md",
+  "reviews": {
+    "post/囚人のジレンマ/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "c44967b1407890aedcef92989919c83464deeba7c1448132f03c5f0368a37a72",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original JA/EN and entire revised JA/EN, including metadata, six sections, table, two full diagrams and applications. Matched fictional simultaneous one-shot own-utility model, pure Pareto set versus sum maximum, Nash unilateral deviation, finite versus infinite horizon, TFT timing and distinct grim trigger. Retained price/climate/doping themes with scoped assumptions rather than universal empirical conclusions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared cooperate/defect labels between players versus cooperation with investigators, sentence duration versus negative utility, strictly dominant strategy, pure/mixed strategy, Pareto efficiency, Nash versus subgame-perfect equilibrium, common knowledge and discount factor. Old English found not guilty is not equivalent to zero sentence;removed legal inference through explicit fictional model. No automatic claim about human behavior or all long relationships."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually matched nine identical TeX expressions and four matrix cells:0>-1>-5>-10,CC sum-2 versus other sums-10,efficient pure CC/CD/DC,strict D advantages versus both actions and EU difference5-4p>=1. Infinite perfect-monitoring grim values-1/(1-delta) and-5delta/(1-delta) yield delta>=1/5,not MIT different-table1/2 or TFT evolutionary-invasion criterion. Auxiliary independently compares4profiles,101beliefs for2players,102discounts/612delayed deviations and2eight-round TFT traces;not empirical or general-strategy proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Zero executable article programs. Read both six-edge Mermaid diagrams completely:one-shot conditional incentives and TFT play-observe-next-action loop with both branches incrementing t. Explicit t=1 and own/opponent payoff argument convention added before first validation. Exact source graphs/decodedHTML match and math/Mermaid library presence checked;flags were already true. No browser,visual,KaTeX/Mermaid execution or tournament-program reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primary references accessed and substantive text read within documented source-note scope. Axelrod/Hamilton tournament report distinguished from universal winner;MIT matrix differs. Preserved original slug,image hash,taxonomy and both raw date lines;actual baseline effective Sep10T03 date retained,actualNov11lastmod. Preview14hreflang/13sidebar,31bundles1736pages,HTTPS3157HTML41XML,17existing tests allpassed. Other11 prose and publication remain pending."
+        }
+      },
+      "summary": "Full English review against corrected Japanese:precise one-shot efficiency/equilibrium and conditional repeated-game cooperation.",
+      "languageSpecificFindings": "Old English prison years described negative utility as sentence length,found not guilty conflated zero years with innocence,and Pareto optimal was misdefined as total maximum. Universal human betrayal,overwhelming TFT winner and long-term cooperation guarantee corrected. Rechecked current/previous/next round and all utility notation after clarification.",
+      "validation": "docs/translation-review/batch-030-ja-en-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "Other11 translation bodies still unreviewed.",
+        "Source/decodedHTML and finite exact auxiliaries only;no browser/runtime or tournament reproduction.",
+        "Primary biological/clinical speculation not adopted as current evidence;no real-world legal,clinical or market model certified.",
+        "Publication and live verification pending;whole-site goal remains active."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "ja",
+        "en"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-ja-en-validation.json",
+      "checks": "docs/translation-review/batch-030-ja-en-checks.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsRerun": 17,
+      "reviewedTranslationsTotal": 361,
+      "unreviewedTranslations": 12671,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-11T22:59:05.381178+09:00",
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/囚人のジレンマ/index.md",
+      "originalHash": "5459a9c3a260a5487c93d2a26d1b261aeb8c25abf82df1e281cab247587ea36a",
+      "revisedHash": "90e68d709b10c8bfe49782aad078383dd06d74ca4b6c3a38f30d9157bdbb64c4",
+      "publishedDatePreserved": "2026-09-10T03:00:00+09:00",
+      "modifiedDate": "2026-11-11",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articlePrograms": 0,
+      "draftNotCertified": true
+    },
+    {
+      "language": "en",
+      "path": "content/post/囚人のジレンマ/index.en.md",
+      "originalHash": "3cc758107b0981e9643a01c630b8ee7a4b4f4100e504a9b7d6f0f09a5085bd3f",
+      "revisedHash": "7ca40a77c8fddda73aa922d5a2ecd10e7e19cbed257fb02870e4c012102f3849",
+      "publishedDatePreserved": "2026-09-10T03:00:00+09:00",
+      "modifiedDate": "2026-11-11",
+      "texExpressions": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articlePrograms": 0,
+      "draftNotCertified": true
+    }
+  ],
+  "scope": "Draft only,requires complete revised reread and checks before any ledger record."
+}
