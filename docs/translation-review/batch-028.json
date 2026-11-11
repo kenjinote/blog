@@ -374,6 +374,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/モンティ・ホール問題/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/モンティ・ホール問題/index.md",
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "translationHash": "fae79318a4333cc7a37c2083cb02c76b5749d06a7152e391dcb49789830429b9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full original Indonesian metadata/body/table/diagrams and full six-section revision/18math/two diagrams against JA,then explicitly read final conditioning/placement/selected-door wording. Preserve setup/history/cases/Bayes/intuition/information/million doors/life themes. Specify uniform placement,every-goat/every-offer/tie selection;separate whole strategy from labeled-door posterior. Correct exactly2of3guarantee,host could not open C,universal psychology/life doubling and unrun100simulation counts. Goat outcomes are kambing,not old kosong empty doors."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Check mengganti pilihan/mempertahankan pilihan,Tetap/Beralih,peluang bersyarat/tak bersyarat,probabilitas prior/likelihood/posterior,hukum probabilitas total,kejadian,pengamatan and distribusi seragam. Differentiate chance probability peluang from opportunity kesempatan. Replace mensyaratkanR which can imply imposing a rule with using observed nomorR for conditional probability. Actual pintuA rather than abstract choice contains car;precise one-car placement model,not ignorance-implies-equal. Host kecenderungan distinct from cognitive bias. AI,not native certification."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read18formal expressions/conditions:uniform3prior/fixedA/informed every-goat/every-offer/uniformtie;likelihood1/2,0,1/evidence1/2/posteriors1/3,2/3. Generalq0..1 positive MB/MC masses,both posterior formulas/weighted2/3/q1boundary. Uninformed independent B/C plus B AND goat yields1/2. n>=3integer,r!=1,R-only observation,symmetric versus fixed-label leave policies. Shared once101q/all3initial choices9pairs/1212weighted paths,uninformed18paths/six observations/many99closedforms finite supplements,not million-path simulation,general-policy or psychological proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read graph15edges against table/prose:initial-A Tetapmobil/Beralihkambing and other2reversed. Pie rasio teoretis2:1 replaces unrun100simulations/67:33.18TeX/two diagram sources match decodedHTML,existing math/mermaid true retained. Auxiliary execution separate from article code;no browser KaTeX/Mermaid runtime/visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primaryGill/Rosenthal scopes documented,no inaccessible original column/psychology certification. Two internal links use id Bayes/LLN and exist,fourrefs match. Preserve effectiveSep10T00date,oldslug/taxonomy/twoassetbytes;single date/actualNov11lastmod/review. Canonical14hreflang13sidebar,29bundles1628multilingual pages/HTTPS2960HTML41XML pass after documented Hindi tag merge. Previous17JA/ENtests referenced,not rerun;not full-site/native/browser/psychological/publication certification."
+        }
+      },
+      "summary": "Full Indonesian original/revision comparison;explicit host rules and conditional/global probability;clarify observed-information conditioning and actual goat/door outcomes;publication pending.",
+      "languageSpecificFindings": "Prior/likelihood/posterior and peluang versus kesempatan clarified. Replace mensyaratkanR requiring-rule ambiguity with conditional computation using observed nomorR;actual selected door versus abstract choice and kambing versus kosong. Probability not fixed2of3or measured trials. AI only.",
+      "validation": "docs/translation-review/batch-028-id-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "2other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,financial advice,empirical choice evidence or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -744,6 +785,47 @@
       "unreviewedTranslations": 12687,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 3,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "id"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "validation": "docs/translation-review/batch-028-id-validation.json",
+      "checks": "docs/translation-review/batch-028-id-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-028-id-ledger-validation.json",
+      "texEach": 18,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        15,
+        0
+      ],
+      "pieRatio": [
+        2,
+        1
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution."
+      },
+      "multilingualPages": 1628,
+      "httpsHtmlPages": 2960,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 346,
+      "unreviewedTranslations": 12686,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 2,
       "publicationPending": true
     }
   ],

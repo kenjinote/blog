@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T13:50:10.935298+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/モンティ・ホール問題/index.md",
+      "sha256": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "sourceSha256": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "texExpressions": 18,
+      "diagrams": 2,
+      "diagramEdges": [
+        15,
+        0
+      ],
+      "pieRatio": [
+        2,
+        1
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 4,
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "content/post/モンティ・ホール問題/index.id.md",
+      "sha256": "fae79318a4333cc7a37c2083cb02c76b5749d06a7152e391dcb49789830429b9",
+      "sourceSha256": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "texExpressions": 18,
+      "diagrams": 2,
+      "diagramEdges": [
+        15,
+        0
+      ],
+      "pieRatio": [
+        2,
+        1
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 4,
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "dateModified": "2026-11-11",
+      "passed": true
+    }
+  ],
+  "sharedAuxiliaryChecks": {
+    "biasedHostValues": 101,
+    "initialChoiceCarPairsEach": 9,
+    "weightedHostPathsIncludingZeroWeights": 1212,
+    "uninformedElementaryPaths": 18,
+    "uninformedGoatPaths": 12,
+    "uninformedLabeledGoatObservations": 6,
+    "manyDoorFormulaCases": 99,
+    "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution."
+  },
+  "hindiTaxonomyCorrection": null,
+  "sourceAuditSha256": "646d7c88538c6adc208b24e48683fe0004b0028385c1a8372be9cfcd97d7917a",
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source/decodedHTML/auxiliary checks do not certify full prose or add ledger records.",
+    "No article executable programs;auxiliary calculations distinct.",
+    "Not native-language,browser visual/runtime,psychological or universal-policy certification.",
+    "Other languages/publication pending;full article goal active."
+  ]
+}
