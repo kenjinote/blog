@@ -203,6 +203,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/囚人のジレンマ/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "63b8d469f52e161c4300b9ba0a28a75a76fb942827b19338c5cd8b6d559e894d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete old Portuguese and entire revision against frozen Japanese,metadata,sixsections,matrix andbothgraphs. Preserved fictional simultaneous own-utility setting,ParetoefficientpureCC/CD/DC versus summaxCC,unilateralNash comparison,finite commonknowledge induction versus infinite conditionalgrim,and TFTpreviousround timing. Allthree applications retained as conditional analogies,not inevitable real-world outcomes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared pagamentos/utilidade versus anos/duração da pena,estratégia estritamente dominante,puras/mistas,eficiência/ótimo de Pareto,equilíbrio de Nash/perfeito em subjogos,conhecimento comum,indução retroativa,fator de desconto,olho por olho andexplicitgatilho com punição permanente(grim trigger). OldR$1000/500 substitutedBrazilianreais forsourceyen;restored1000/500ienes withoutconversion. Zero-year payoff does not entailinocentado/inocência."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually matched allnineTeX andfourmatrixcells,T0>R-1>P-5>S-10,threeefficientpureprofiles,CCsum-2 versusother-10,strictD andmixed-beliefdifference5-4p>=1. Own/opponent argument orderexplicit;infiniteperfectmonitoringdiscount0<=delta<1 producesgrim1/5,notTFT orMITdifferenttable1/2. Auxiliaryonce4profiles101beliefs2players102discounts612delays/two8roundtraces separate fromarticleprograms,general or empiricalproof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read two fullsix-edge Mermaid sources:conditionaloneshotincentives andt=1,simultaneousplay,observe,setnextaction,incrementt onbothC/Dbranches. Oldrepentance-to-cooperation shortcutremoved. PolishedDDworse-for-both graphlabel beforefirstvalidation. Exact graphsource/topology/decodedHTMLmath andlibrarypresence checked;flagsalreadytrue. No browser,visual,runtime ortournamentreproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primary references sameassource andpresentinpreview,documented substantive readinglimits preserved;linkedreferences themselves notcertifiedread. Slug,imagehash,taxonomy,bothrawdate lines/effectiveSep10T03 andactualNov11lastmod preserved.14hreflang13sidebar,31bundle1736pages/HTTPS3157HTML41XML passed. Prior17JA/ENtests notrerun;other6prose/publication pending."
+        }
+      },
+      "summary": "Full Portuguese review with restored yen,payoff terminology and conditional finite/infinite repeated-game reasoning.",
+      "languageSpecificFindings": "OriginalPortuguese changedsourceyen toR$withoutconversion andcallednegativeutilityanos de prisão,inocentado/inocência forzero-yearsentence. Correctedienes,pagamentos/utilidade andfictionalmodel. Matchedperfeito em subjogos,indução retroativa/fator de desconto,previous/current/nextrodada;removedinvariavelmentehumanchoices,resultados esmagadorestournament andlongrelationshipguarantee. DDgraphwording polished beforefirstproof.",
+      "validation": "docs/translation-review/batch-030-pt-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "6 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0 and empirical tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -424,6 +464,50 @@
       "unreviewedTranslations": 12667,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 7,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "pt"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-pt-validation.json",
+      "checks": "docs/translation-review/batch-030-pt-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-030-pt-ledger-validation.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 366,
+      "unreviewedTranslations": 12666,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 6,
       "publicationPending": true
     }
   ]
