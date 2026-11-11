@@ -457,6 +457,47 @@
         "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
         "Primary-source reading scope is limited as documented;publication/live checks pending."
       ]
+    },
+    "post/サンクトペテルブルクのパラドックス/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/サンクトペテルブルクのパラドックス/index.md",
+      "sourceHash": "2811748d99d856be0d88241417c403223a1f588470252a0aabe8b077d225bd2e",
+      "translationHash": "f49fdd6806ec1c6ab804f71aae8394d384d91dce0dabcfd44cb7c64b635346b5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read original Arabic full metadata/body/diagram and full seven-section revision against current full JA, then explicitly reread final endpoint wording. Original ظهر served as both verb and coin-side noun; define الصورة/الكتابة before rules and use throughout. Correct debt encouragement, guaranteed profit, realized infinity, universal4 fee/psychology claims. Preserve history, water intuition, expected utility, wealth, capped contract and economic framework. Payout X before fee differs from net result; unconditional contribution1 differs from conditional2^n."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Check الصورة/الكتابة, رقم الرمية N, القيمة المتوقعة/المنفعة المتوقعة, الجائزة/صافي العائد, المكافئ النقدي اليقيني(CE) versus plain explanatory fee making utilities equal, الثروة الابتدائية, تقعر versus النفور من الخسارة and نقطة مرجعية. Nonpreference between options is explicit, not emotional apathy. Rewrite c endpoints as fee zero/fee equals wealth to avoid gender awkwardness. Keep Latin math variables and consistent numeric USD; no native-speaker certification."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All16 shared formal expressions and surrounding Arabic assumptions checked: finite almost surely versus unbounded support, extended expectation with finite-c bounded negative part; log increasing concave/unbounded yet weighted sum2, CE4 receipt comparator not universal fee. Positive wealth/no borrowing/0<=c<=w and only w>4 unique root via continuous strict decrease/end signs; three approximate values. Cap explicitly min(original-rule X,2^K), expectationK+1 vs partialK. Auxiliary once8190binary sequences/64finite series/three90digit Decimal examples not infinite-limit/interval-rounding proof or human choice evidence."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Localized Mermaid source has8edges with first tails/الكتابة termination awards2/4/8, heads/الصورة continuation and no infinite actual award. TeX16 matches decodedHTML. math/mermaid flags were already true, preserved. HTML lang ar/dir rtl and linked compiled CSS katex direction ltr/unicode-bidi isolate statically verified. No browser KaTeX/Mermaid runtime or visual certification; auxiliary calculation separate from article code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primary-source links keep documented limited reading scope; three internal links are ar and preview destinations exist. Effective Sep10 date retained once, actual final edit/review Nov11 and title/meta dateModified checked; image bytes/slug/taxonomy retained. Canonical14hreflang13sidebar,1609multilingual pages and HTTPS2933HTML41XML pass. Prior17unit tests referenced, not rerun at this language stage. Other11translations retained unchanged; publication pending."
+        }
+      },
+      "summary": "Arabic original/revision fully compared with JA; disambiguate coin labels, monetary expectation, utility/wealth/fee and capped payout; AI reviewer actual Nov11/date/hashes recorded; publication pending.",
+      "languageSpecificFindings": "Replace ambiguous ظهر noun/verb with explicitly defined الصورة/الكتابة. Separate finite/unbounded, gross/net, CE/fee and concavity/reference loss aversion. Explicit fee endpoints avoid Latin variable/gender awkwardness; cap uses original X. Static RTL/math-isolation checks only, no native/browser certificate.",
+      "validation": "docs/translation-review/batch-027-ar-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "0other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,financial advice,empirical choice evidence or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -1031,7 +1072,134 @@
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "ar"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "2811748d99d856be0d88241417c403223a1f588470252a0aabe8b077d225bd2e",
+      "validation": "docs/translation-review/batch-027-ar-validation.json",
+      "checks": "docs/translation-review/batch-027-ar-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-027-ar-ledger-validation.json",
+      "texEach": 16,
+      "diagramsEach": 1,
+      "diagramEdges": [
+        8
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "binarySequenceLengths": 12,
+        "binarySequencesEnumerated": 8190,
+        "finiteSeriesCases": 64,
+        "logWealthFeeExamples": [
+          {
+            "w": "10",
+            "feeRounded": "4.97",
+            "terms": 128,
+            "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-77"
+          },
+          {
+            "w": "100",
+            "feeRounded": "7.79",
+            "terms": 128,
+            "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-76"
+          },
+          {
+            "w": "1000",
+            "feeRounded": "10.95",
+            "terms": 128,
+            "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-75"
+          }
+        ],
+        "scope": "Once per validator invocation,not per language. Full finite binary-sequence enumeration independently checks the capped contract and stopping CDF;finite series and Decimal fee calculations separately scoped. Not article-program execution,infinite-limit machine proof,interval-rounding proof or human-choice evidence."
+      },
+      "multilingualPages": 1609,
+      "httpsHtmlPages": 2933,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 336,
+      "unreviewedTranslations": 12696,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 0,
+      "publicationPending": true
     }
   ],
-  "scope": "Per-language stages document full original/revised-body comparisons and their date/hash/limitations. Only actual completed comparisons are registered;machine checks add zero reviews. Later stages supersede earlier pending counts without altering existing review-entry objects. This article publication and whole-site review goal remain unfinished."
+  "scope": "Per-language stages document full original/revised-body comparisons and their date/hash/limitations. Only actual completed comparisons are registered;machine checks add zero reviews. Later stages supersede earlier pending counts without altering existing review-entry objects. This article publication and whole-site review goal remain unfinished.",
+  "finalAssembly": {
+    "checkedAt": "2026-11-11T12:39:42.451387+09:00",
+    "article": "st-petersburg-paradox",
+    "allOriginalAndRevisedBodiesRead": true,
+    "sourceHash": "2811748d99d856be0d88241417c403223a1f588470252a0aabe8b077d225bd2e",
+    "languages": [
+      "ja",
+      "en",
+      "zh-cn",
+      "es",
+      "ko",
+      "pt",
+      "zh-tw",
+      "hi",
+      "fr",
+      "de",
+      "ar",
+      "ru",
+      "id"
+    ],
+    "translationReviews": 12,
+    "texExpressions": 208,
+    "diagramSources": 13,
+    "diagramEdges": 104,
+    "articleProgramsExecuted": 0,
+    "sharedAuxiliaryChecks": {
+      "binarySequenceLengths": 12,
+      "binarySequencesEnumerated": 8190,
+      "finiteSeriesCases": 64,
+      "logWealthFeeExamples": [
+        {
+          "w": "10",
+          "feeRounded": "4.97",
+          "terms": 128,
+          "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-77"
+        },
+        {
+          "w": "100",
+          "feeRounded": "7.79",
+          "terms": 128,
+          "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-76"
+        },
+        {
+          "w": "1000",
+          "feeRounded": "10.95",
+          "terms": 128,
+          "positiveOmittedTailUpperBound": "4.15311918223865327262364760979470891297776168688921715513736103511602410145368115536457194E-75"
+        }
+      ],
+      "scope": "Once per validator invocation,not per language. Full finite binary-sequence enumeration independently checks the capped contract and stopping CDF;finite series and Decimal fee calculations separately scoped. Not article-program execution,infinite-limit machine proof,interval-rounding proof or human-choice evidence."
+    },
+    "multilingualPages": 1609,
+    "httpsHtmlPages": 2933,
+    "httpsXmlFiles": 41,
+    "unitTestsRerun": 17,
+    "unitTestsByFile": [
+      10,
+      1,
+      6
+    ],
+    "realLedgerCurrent": 336,
+    "realLedgerUnreviewed": 12696,
+    "humanReviews": 0,
+    "validation": "docs/translation-review/batch-027-final-validation.json",
+    "checks": "docs/translation-review/batch-027-final-checks.json",
+    "probePreparation": "docs/translation-review/batch-027-probe-preparation-r2.json",
+    "probeLocalStructure": "docs/translation-review/batch-027-probe-local-structure.json",
+    "publicationProof": "docs/translation-review/publication-027.json",
+    "publicationPending": true,
+    "limitations": [
+      "28-bundle isolated preview,existing layout/Portuguese UI warnings retained;not full-site build.",
+      "No native-speaker/browser visual or KaTeX/Mermaid runtime/financial/universal-proof certification.",
+      "Only336of13032translations reviewed;full article goal remains active."
+    ]
+  }
 }

@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-11-11T12:38:50.708232+09:00",
+  "versions": [
+    {
+      "language": "ja",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "en",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "zh-cn",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "es",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "ko",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "pt",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "zh-tw",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "hi",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "fr",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "de",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "ar",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "ru",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    },
+    {
+      "language": "id",
+      "articleCodeElements": [],
+      "mermaidPreElements": 1
+    }
+  ],
+  "allPassed": true,
+  "httpRequestsMade": 0,
+  "scope": "Exact ArticleCodes class from revised live helper against13localHTML;Hugo renders diagram as pre.mermaid,not code. First preparation retained;R2 supersedes helper hash. Not browser/live certification."
+}

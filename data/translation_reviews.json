@@ -3355,6 +3355,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-027.json",
       "evidenceHash": "e0d443e0d191bbe328a23e98f6a1b2610c15d6b16165a5d6c0bc80ae5bc88908"
+    },
+    "post/サンクトペテルブルクのパラドックス/index.ar.md": {
+      "source": "post/サンクトペテルブルクのパラドックス/index.md",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2811748d99d856be0d88241417c403223a1f588470252a0aabe8b077d225bd2e",
+      "translationHash": "f49fdd6806ec1c6ab804f71aae8394d384d91dce0dabcfd44cb7c64b635346b5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-027.json",
+      "evidenceHash": "6ffa552e59a32d37a862183eeed747caeb57154610d3662d450bc90cfb4852ac"
     }
   }
 }
