@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T14:08:03.072429+09:00",
+  "baselineCommit": "5cc480ad8ba98654f9c575dd09c30272c1f74edb",
+  "baselineSite": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-intuition-baseline",
+  "actualPreviewBundles": 30,
+  "versions": {
+    "ar": {
+      "path": "content/post/paradox-monty-hall-problem/index.ar.md",
+      "sha256": "e602ff8273f7c6726b29765e227f3ecf6e6c01cf1666de42914479aca30f5a1e",
+      "canonical": "https://kenji.blog/ar/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/paradox-monty-hall-problem/index.de.md",
+      "sha256": "6ea49d96edadb71c94045b579b8710f2fba17f8f9ab2cc48bd74433343e07dc3",
+      "canonical": "https://kenji.blog/de/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/paradox-monty-hall-problem/index.en.md",
+      "sha256": "a4db9d28984898075ae16ad93e3d53a718bf33c95524ae88e328e930204efe68",
+      "canonical": "https://kenji.blog/en/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/paradox-monty-hall-problem/index.es.md",
+      "sha256": "e21ad0618d163771d9b2fbfc55d536f78cba1f5f1d40d6fc8631a197b9239759",
+      "canonical": "https://kenji.blog/es/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/paradox-monty-hall-problem/index.fr.md",
+      "sha256": "e430d4b5a86cf3e02e190fc78bcd091274a8beb0adadd93fd18bad03dd9890ac",
+      "canonical": "https://kenji.blog/fr/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/paradox-monty-hall-problem/index.hi.md",
+      "sha256": "be48c2d9ff2cef3b0d3b6ba2398c9b9330a544ac99d3431fbd3f01f5c54a490b",
+      "canonical": "https://kenji.blog/hi/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/paradox-monty-hall-problem/index.id.md",
+      "sha256": "7678e70b8b60788a5522590ec43a05289df1f89a5a8f8b79774c0791ab004653",
+      "canonical": "https://kenji.blog/id/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/paradox-monty-hall-problem/index.ko.md",
+      "sha256": "b47811841726889bd16ffa74655c18b05e69b0d8ea3aee8265202ef61ad2637e",
+      "canonical": "https://kenji.blog/ko/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/paradox-monty-hall-problem/index.md",
+      "sha256": "53a9a1909cfca0937832f1c66d2503c34aae85415f75aa98a4c7b9533e47c009",
+      "canonical": "https://kenji.blog/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/paradox-monty-hall-problem/index.pt.md",
+      "sha256": "3d85ce91cf8ba89d2b06d28bd9e7da956315ef450865d5f0e47adc918c27a7d1",
+      "canonical": "https://kenji.blog/pt/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/paradox-monty-hall-problem/index.ru.md",
+      "sha256": "71621bb1347a52c4ea7b61800fefc0b1e5f1bf228a6aa65883a5139cb409cd00",
+      "canonical": "https://kenji.blog/ru/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/paradox-monty-hall-problem/index.zh-cn.md",
+      "sha256": "3420bef193c388c5b1d020c0e042b01250a63670fd275c87c281906554170a37",
+      "canonical": "https://kenji.blog/zh-cn/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/paradox-monty-hall-problem/index.zh-tw.md",
+      "sha256": "84779ecd9388c4bf0e2baa08f1b9933eef535c78e07f59663bd17c90bc2cc36b",
+      "canonical": "https://kenji.blog/zh-tw/p/paradox-monty-hall-problem/",
+      "slug": "paradox-monty-hall-problem",
+      "datePublished": "2026-09-24T19:44:38+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\""
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    }
+  },
+  "assets": [
+    {
+      "path": "content/post/paradox-monty-hall-problem/eyecatch.jpg",
+      "sha256": "e16ee3c745cd628c2e78aa3741712e1d8a5bda66fadc09aac7d3ca2a2f9dc9ea"
+    }
+  ],
+  "manualFindings": [
+    "JA/EN original full bodies and both diagrams read. No other11translation prose read at this stage.",
+    "Ignorance does not imply uniform prior. Random host tie rule needs explicit1/2,always offer switch and distinguish observed-label conditioning from unconditional strategy.",
+    "Million-door named777777 conditional result requires symmetric remaining-label selection when initial choice has car.",
+    "Unsupported85percent survey,exactletters/IQ and universal brain/evolution/regret causation lack source citations;requires primary research or careful qualification.",
+    "Two diagrams exist but no math:true/mermaid:true flags;actual runtime must be inspected before changing flags.",
+    "Hypothetical diagnostic numeric0.98percent is arithmetically correct under stated prevalence/sensitivity/specificity. English positive/negative people conflates disease status with test result;clarify terms and hypothetical scope without actual clinical inference.",
+    "Corporate strategy success2/3 is not implied by Monty model;preserve application discussion with separate cost,utility and observation-model assumptions.",
+    "Keep this article separate from reviewed monty-hall-problem and preserve original public slug/assets/date/taxonomy."
+  ],
+  "auxiliaryHypotheticalDiagnosticArithmetic": {
+    "prevalence": "1/10000",
+    "sensitivity": "99/100",
+    "specificity": "99/100",
+    "truePositiveMass": "99/1000000",
+    "falsePositiveMass": "9999/1000000",
+    "posterior": "1/102",
+    "percent": 0.9803921568627451,
+    "scope": "One exact abstract Bayes calculation,not patient-specific probability,clinical advice or empirical test validation."
+  },
+  "reviewedTranslationsAdded": 0,
+  "currentAiTranslations": 348,
+  "unreviewedTranslations": 12684,
+  "humanReviews": 0,
+  "limitations": [
+    "Pre-audit only;no source rewrite or ledger certification.",
+    "JA/EN originals full-read;other11onlyhash/header/HTML inventory.",
+    "No new psychology primary source full-read;batch028Gill/Rosenthal prior full-reading scope preserved.",
+    "No browser/runtime/native-speaker certification.",
+    "Batch028run42963485816 still pending matching CI success/live377article+3tagURLs."
+  ]
+}

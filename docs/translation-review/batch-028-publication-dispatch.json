@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "observedAt": "2026-11-11T14:06:34.212021+09:00",
+  "deployedCommitExpected": "5cc480ad8ba98654f9c575dd09c30272c1f74edb",
+  "ciRun": 42963485816,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/42963485816",
+  "runAttempt": 1,
+  "statusAtDispatch": "in_progress",
+  "conclusionAtDispatch": null,
+  "pagesPlanned": 377,
+  "translationsPlanned": 348,
+  "japaneseSourcesPlanned": 29,
+  "texExpressionsPlanned": 9792,
+  "mathVersionsPlanned": 182,
+  "additionalHindiTaxonomyUrlsPlanned": 3,
+  "publicationPending": true,
+  "scope": "Ordinary authorized push after fetch zero incoming/16outgoing. Matching run/head/attempt observed.377articleURL plus3tagURL probe prepared and local functions tested;live HTTP waits matching build/deploy success.",
+  "proof": "docs/translation-review/batch-028-publication-dispatch.json",
+  "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_348.py"
+}
