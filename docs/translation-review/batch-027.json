@@ -1192,10 +1192,10 @@
     "humanReviews": 0,
     "validation": "docs/translation-review/batch-027-final-validation.json",
     "checks": "docs/translation-review/batch-027-final-checks.json",
-    "probePreparation": "docs/translation-review/batch-027-probe-preparation-r2.json",
+    "probePreparation": "docs/translation-review/batch-027-probe-preparation-r3.json",
     "probeLocalStructure": "docs/translation-review/batch-027-probe-local-structure.json",
     "publicationProof": "docs/translation-review/publication-027.json",
-    "publicationPending": true,
+    "publicationPending": false,
     "limitations": [
       "28-bundle isolated preview,existing layout/Portuguese UI warnings retained;not full-site build.",
       "No native-speaker/browser visual or KaTeX/Mermaid runtime/financial/universal-proof certification.",
@@ -1232,5 +1232,49 @@
     "scope": "Ordinary push after fetch:zero incoming/14local outgoing. Matching run/head/attempt observed live.364URL probe prepared,not executed before matching build/deploy success. No publication confirmation claimed.",
     "proof": "docs/translation-review/batch-027-publication-dispatch.json",
     "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_336_r2.py"
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-11-11T13:08:28.113780+09:00",
+      "ciRun": 42954231392,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/42954231392",
+      "deployedCommit": "6436ffa6d7b07d988f4b6468c837a22ef9033fef",
+      "ciCompletion": "docs/translation-review/batch-027-ci-completion.json",
+      "proof": "docs/translation-review/publication-027.json",
+      "pages": 364,
+      "passed": 364,
+      "failed": 0,
+      "translations": 336,
+      "japaneseSources": 28,
+      "mathVersions": 169,
+      "texExpressions": 9558,
+      "stPetersburgVersions": 13,
+      "stPetersburgTeX": 208,
+      "stPetersburgDiagramSources": 13,
+      "stPetersburgDiagramEdges": 104,
+      "httpPageProbeAttempts": 1,
+      "httpPageRetries": 0,
+      "preflightFailuresBeforeHttp": 1,
+      "preflightFailureProof": "docs/translation-review/batch-027-probe-r2-preflight-failure.json",
+      "scope": "001through027live364URLs passed after matching build/deploy success. NewStP13math/diagram/ref/date/title/canonical/language/hreflang/sidebar;prior351checks preserved. Local028JA/EN/zh-cn excluded. No native/browser/financial/full-site certification."
+    }
+  ],
+  "publicationProbePreparations": [
+    {
+      "proof": "docs/translation-review/batch-027-probe-preparation.json",
+      "httpRequestsMade": 0,
+      "supersededBy": "docs/translation-review/batch-027-probe-preparation-r2.json"
+    },
+    {
+      "proof": "docs/translation-review/batch-027-probe-preparation-r2.json",
+      "httpRequestsMade": 0,
+      "preflightFailure": "docs/translation-review/batch-027-probe-r2-preflight-failure.json",
+      "supersededBy": "docs/translation-review/batch-027-probe-preparation-r3.json"
+    },
+    {
+      "proof": "docs/translation-review/batch-027-probe-preparation-r3.json",
+      "helper": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_336_r3.py",
+      "publicationProof": "docs/translation-review/publication-027.json"
+    }
+  ]
 }

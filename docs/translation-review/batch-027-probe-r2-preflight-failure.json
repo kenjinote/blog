@@ -1,0 +1,9 @@
+{
+  "observedAt": "2026-11-11T13:06:33.637415+09:00",
+  "helper": "C:\\Users\\kenjinote\\.codex\\tmp\\verify_review_publication_336_r2.py",
+  "helperSha256": "46ea5146f7c887f23a9b6a6f87a7f55f2eab241cc80c5701eb6572c9c31be5ac",
+  "exitCode": 1,
+  "failedBeforeHttp": true,
+  "httpRequestsMade": 0,
+  "reason": "R2 dispatch lookup retained batch026 while completion gate correctly loaded batch027;CI/head mismatch assertion stopped before defining/requesting live pages. Fix only dispatch reference;preserve R2 and all previous preparation receipts."
+}

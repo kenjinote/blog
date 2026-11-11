@@ -1,0 +1,18 @@
+{
+  "preparedAt": "2026-11-11T13:06:34.037866+09:00",
+  "helper": "C:\\Users\\kenjinote\\.codex\\tmp\\verify_review_publication_336_r3.py",
+  "helperSha256": "b8b77cb132771ee32136d469784b0cfd96e339c3b1dc27fa5d165cd3f48ebc8e",
+  "articles": 28,
+  "pagesPlanned": 364,
+  "translationsPlanned": 336,
+  "japaneseSourcesPlanned": 28,
+  "mathVersions": 169,
+  "texExpressions": 9558,
+  "stPetersburgVersions": 13,
+  "stPetersburgTeX": 208,
+  "stPetersburgDiagramSources": 13,
+  "stPetersburgDiagramEdges": 104,
+  "httpRequestsMade": 0,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Preparation-only checks:local inputs/expected counters/refsets;no HTTP or publication certification. Existing 351-URL cohort preserved;StPetersburg13URLs appended. Final live probe must wait for matching CI build/deploy success."
+}

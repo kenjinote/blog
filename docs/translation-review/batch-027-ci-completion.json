@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "observedAt": "2026-11-11T13:05:29.0303192+09:00",
+  "ciRun": 42954231392,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/42954231392",
+  "deployedCommit": "6436ffa6d7b07d988f4b6468c837a22ef9033fef",
+  "runAttempt": 1,
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-11T03:39:52Z",
+      "completed_at": "2026-11-11T04:00:39Z"
+    },
+    {
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-11T04:00:43Z",
+      "completed_at": "2026-11-11T04:02:15Z"
+    }
+  ],
+  "scope": "Exact deployed-head/run/attempt observation. Required build/deploy success precedes364URL probe. Local batch028 source edits excluded."
+}
