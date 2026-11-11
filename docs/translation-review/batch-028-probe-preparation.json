@@ -1,0 +1,22 @@
+{
+  "preparedAt": "2026-11-11T14:05:16.078912+09:00",
+  "helper": "C:\\Users\\kenjinote\\.codex\\tmp\\verify_review_publication_348.py",
+  "helperSha256": "9aabeef447209929eb0ace5832049b96e75009e7ed1ecb37ba87c56992a933e9",
+  "articles": 29,
+  "pagesPlanned": 377,
+  "translationsPlanned": 348,
+  "japaneseSourcesPlanned": 29,
+  "mathVersions": 182,
+  "texExpressions": 9792,
+  "stPetersburgVersions": 13,
+  "stPetersburgTeX": 208,
+  "stPetersburgDiagramSources": 13,
+  "stPetersburgDiagramEdges": 104,
+  "montyVersions": 13,
+  "montyTeX": 234,
+  "montyDiagrams": 26,
+  "hindiTaxonomyUrlsPlanned": 3,
+  "httpRequestsMade": 0,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Preparation-only checks:local inputs/expected counters/refsets;no HTTP or publication certification. Existing364URLcohort preserved;Monty13article URLs and3Hindi taxonomy URLs appended. Final live probe must wait for matching CI build/deploy success."
+}

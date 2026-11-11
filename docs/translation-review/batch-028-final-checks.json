@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T14:03:37.971189+09:00",
+  "allPassed": true,
+  "results": [
+    {
+      "command": [
+        "docs/translation-review/verify_batch_028.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-monty-final",
+        "--languages",
+        "ja",
+        "en",
+        "zh-cn",
+        "zh-tw",
+        "es",
+        "ko",
+        "pt",
+        "fr",
+        "de",
+        "hi",
+        "id",
+        "ru",
+        "ar",
+        "--output",
+        "docs/translation-review/batch-028-final-validation.json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"passed\": true, \"versions\": 13, \"texEach\": 18, \"diagramsEach\": 2, \"diagramEdges\": [15, 0], \"pieRatio\": [2, 1], \"auxiliary\": {\"biasedHostValues\": 101, \"initialChoiceCarPairsEach\": 9, \"weightedHostPathsIncludingZeroWeights\": 1212, \"uninformedElementaryPaths\": 18, \"uninformedGoatPaths\": 12, \"uninformedLabeledGoatObservations\": 6, \"manyDoorFormulaCases\": 99, \"scope\": \"Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.\"}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-monty-final"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1628 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-monty-final"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 2960, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/test_multilingual.py"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 19 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.377s\n\nOK\n"
+    },
+    {
+      "command": [
+        "scripts/test_math_rendering.py"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.457s\n\nOK\n"
+    },
+    {
+      "command": [
+        "scripts/test_translation_reviews.py"
+      ],
+      "exitCode": 0,
+      "stdout": "Recorded ai review: post/sample/index.en.md\nRecorded ai review: post/sample/index.en.md\nRecorded human review: post/sample/index.en.md\n",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.123s\n\nOK\n"
+    },
+    {
+      "command": [
+        "scripts/translation_reviews.py",
+        "check"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"current\": 348, \"unreviewed\": 12684}\n",
+      "stderr": ""
+    }
+  ],
+  "actualPreviewBundles": 29,
+  "unitTestsRerun": 17,
+  "scope": "All13Monty sources snapshot equality,234TeX/26diagrams/195graph edges/13theoretical pies,14hreflang/13sidebar each,Hindi tag archive and two aliases,29bundle multilingual/HTTPS. Shared finite auxiliary once. No browser/native/publication certification."
+}

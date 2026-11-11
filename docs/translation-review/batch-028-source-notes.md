@@ -130,3 +130,7 @@ AI346／未確認12,686／人0。先行345台帳エントリ・当バッチ先�
 18TeX・graph15辺／pie辺0、一次2件とru内部Bayes／LLNの4参照、元の画像2点バイト／分類／slug／実効公開9月10日00:00・実日11月11日更新、14hreflang／13切替、多言語1628ページ／HTTPS2960HTML41XML成功。Hindiタグ統合後のプレビューで既存aliasを保持。共有補助1回101q／1212重み経路、未知司会者18経路／6観測、多扉99閉形式例は有限補助。記事プログラム0、17テストはJA/EN成功参照で今回は未再実行。既存警告と全サイト・母語話者・ブラウザ実描画／実行・心理・公開の限界を保持。
 
 AI347／未確認12,685／人0。先行346台帳エントリ・当バッチ先行10エントリ・原文ハッシュは不変。当記事の原文＋11翻訳を記録済み。残るarと全13版最終検査・公開確認、全記事goalを継続。
+
+## Arabic full-body review and final assembly — 2026-11-11
+
+Read entire original Arabic and revised Arabic against Japanese. Corrected implied impossibility of opening an unchosen closed door, omitted unsupported exact historical/psychological assertions, and replaced claimed100simulations with theoretical2:1. Clarified prior/posterior, observed conjunction, host preference and remaining-label-only conditioning. Static Arabic RTL/math-isolation check passed; no browser/native certification. Registered AI348, unreviewed12684, human0. All13 final preview checks passed:234TeX,26diagrams,195graph edges,13pies,4references each,17existing tests; Hindi correct tag and two aliases. Proofs preserve earlier receipts and prior review objects. Publication pending.
