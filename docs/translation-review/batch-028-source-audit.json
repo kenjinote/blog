@@ -1,0 +1,2653 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-11T12:45:04.254454+09:00",
+  "baselineCommit": "6436ffa6d7b07d988f4b6468c837a22ef9033fef",
+  "baselineSite": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-monty-baseline",
+  "actualPreviewBundles": 29,
+  "versions": {
+    "ar": {
+      "path": "content/post/モンティ・ホール問題/index.ar.md",
+      "sha256": "1f198c347235ace5fbdbf1e7f22618ceed335025ba60d7ba0b6edaa3f18310c4",
+      "canonical": "https://kenji.blog/ar/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/モンティ・ホール問題/index.de.md",
+      "sha256": "449a7cc242accd85f393423dbcc16d3fb6ff396a6c886d545382bbda2d0fc27e",
+      "canonical": "https://kenji.blog/de/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/モンティ・ホール問題/index.en.md",
+      "sha256": "29c4b16723528ff34732b12c46cde0a9718a91fe1e92f37cff73842cbc0b726f",
+      "canonical": "https://kenji.blog/en/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/モンティ・ホール問題/index.es.md",
+      "sha256": "68914d64ffc39b64a5a09dd91389967ce991fa80e60c227746e2f143fb476666",
+      "canonical": "https://kenji.blog/es/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/モンティ・ホール問題/index.fr.md",
+      "sha256": "fa3487360e90be957f83d50c94d91c611392a75597cd027c8503b06e542c2d45",
+      "canonical": "https://kenji.blog/fr/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/モンティ・ホール問題/index.hi.md",
+      "sha256": "9c49b8db5007ade7731f972e1e537dd63db3e520eae00531768f9313440097d7",
+      "canonical": "https://kenji.blog/hi/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/モンティ・ホール問題/index.id.md",
+      "sha256": "2bbdcfa3c2361fd534d3b59416a17c12e21e493fb794edef317b652299635e1e",
+      "canonical": "https://kenji.blog/id/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/モンティ・ホール問題/index.ko.md",
+      "sha256": "1fa0a7cb46a04d1570a6fbe76ee3b222ad02980b109ae74ae5006ec803457bc7",
+      "canonical": "https://kenji.blog/ko/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/モンティ・ホール問題/index.md",
+      "sha256": "406efd6f9642b4134a28eb41333c1c56365f9f57054b12f7f4d71e87e0f2f5c6",
+      "canonical": "https://kenji.blog/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/モンティ・ホール問題/index.pt.md",
+      "sha256": "a6f8775c4ce008b66682c9d6e5592ac23da1ec4dcef031e59b5969543bedf48d",
+      "canonical": "https://kenji.blog/pt/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/モンティ・ホール問題/index.ru.md",
+      "sha256": "f149a734de3dd4dd14299e9a5fb05eaba6fd57e06e86b3647db9185d09d3bc7b",
+      "canonical": "https://kenji.blog/ru/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/モンティ・ホール問題/index.zh-cn.md",
+      "sha256": "3aa0e82b6852ce1a36a95f960b811fd06aa683170fcb61f9a52326f38dc6fcb7",
+      "canonical": "https://kenji.blog/zh-cn/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/モンティ・ホール問題/index.zh-tw.md",
+      "sha256": "e6682259d474520dc987658ca7bfd031432b57665ec7e86da94d1da5e0083da6",
+      "canonical": "https://kenji.blog/zh-tw/p/monty-hall-problem/",
+      "slug": "monty-hall-problem",
+      "datePublished": "2026-09-10T00:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: '2026-09-10T00:00:00+09:00'"
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [
+        "mermaid: true"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    }
+  },
+  "assets": [
+    {
+      "path": "content/post/モンティ・ホール問題/img/monty_hall.jpg",
+      "sha256": "28338c27e2efe7a479406b52a7b3fbd78b66e8102b1fceee2dfbbe6e71e97c87"
+    },
+    {
+      "path": "content/post/モンティ・ホール問題/img_1.webp",
+      "sha256": "28d309e981bda54ff73d543690e3f76ead82aff01b1f56fcb2fefc5a24ac263a"
+    }
+  ],
+  "confirmedEnglishDiagramError": "Initial car A: English says stay loses/switch wins, contradicting source/prose.",
+  "auxiliaryChecks": {
+    "biasedHostCases": [
+      {
+        "qOpenBWhenCarA": "0",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "1/3",
+            "stay": "0",
+            "switch": "1"
+          },
+          "C": {
+            "observationMass": "2/3",
+            "stay": "1/2",
+            "switch": "1/2"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "1/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "101/300",
+            "stay": "1/101",
+            "switch": "100/101"
+          },
+          "C": {
+            "observationMass": "199/300",
+            "stay": "99/199",
+            "switch": "100/199"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "1/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "17/50",
+            "stay": "1/51",
+            "switch": "50/51"
+          },
+          "C": {
+            "observationMass": "33/50",
+            "stay": "49/99",
+            "switch": "50/99"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "3/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "103/300",
+            "stay": "3/103",
+            "switch": "100/103"
+          },
+          "C": {
+            "observationMass": "197/300",
+            "stay": "97/197",
+            "switch": "100/197"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "1/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "26/75",
+            "stay": "1/26",
+            "switch": "25/26"
+          },
+          "C": {
+            "observationMass": "49/75",
+            "stay": "24/49",
+            "switch": "25/49"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "1/20",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "7/20",
+            "stay": "1/21",
+            "switch": "20/21"
+          },
+          "C": {
+            "observationMass": "13/20",
+            "stay": "19/39",
+            "switch": "20/39"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "3/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "53/150",
+            "stay": "3/53",
+            "switch": "50/53"
+          },
+          "C": {
+            "observationMass": "97/150",
+            "stay": "47/97",
+            "switch": "50/97"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "7/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "107/300",
+            "stay": "7/107",
+            "switch": "100/107"
+          },
+          "C": {
+            "observationMass": "193/300",
+            "stay": "93/193",
+            "switch": "100/193"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "2/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "9/25",
+            "stay": "2/27",
+            "switch": "25/27"
+          },
+          "C": {
+            "observationMass": "16/25",
+            "stay": "23/48",
+            "switch": "25/48"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "9/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "109/300",
+            "stay": "9/109",
+            "switch": "100/109"
+          },
+          "C": {
+            "observationMass": "191/300",
+            "stay": "91/191",
+            "switch": "100/191"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "1/10",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "11/30",
+            "stay": "1/11",
+            "switch": "10/11"
+          },
+          "C": {
+            "observationMass": "19/30",
+            "stay": "9/19",
+            "switch": "10/19"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "11/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "37/100",
+            "stay": "11/111",
+            "switch": "100/111"
+          },
+          "C": {
+            "observationMass": "63/100",
+            "stay": "89/189",
+            "switch": "100/189"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "3/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "28/75",
+            "stay": "3/28",
+            "switch": "25/28"
+          },
+          "C": {
+            "observationMass": "47/75",
+            "stay": "22/47",
+            "switch": "25/47"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "13/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "113/300",
+            "stay": "13/113",
+            "switch": "100/113"
+          },
+          "C": {
+            "observationMass": "187/300",
+            "stay": "87/187",
+            "switch": "100/187"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "7/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "19/50",
+            "stay": "7/57",
+            "switch": "50/57"
+          },
+          "C": {
+            "observationMass": "31/50",
+            "stay": "43/93",
+            "switch": "50/93"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "3/20",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "23/60",
+            "stay": "3/23",
+            "switch": "20/23"
+          },
+          "C": {
+            "observationMass": "37/60",
+            "stay": "17/37",
+            "switch": "20/37"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "4/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "29/75",
+            "stay": "4/29",
+            "switch": "25/29"
+          },
+          "C": {
+            "observationMass": "46/75",
+            "stay": "21/46",
+            "switch": "25/46"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "17/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "39/100",
+            "stay": "17/117",
+            "switch": "100/117"
+          },
+          "C": {
+            "observationMass": "61/100",
+            "stay": "83/183",
+            "switch": "100/183"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "9/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "59/150",
+            "stay": "9/59",
+            "switch": "50/59"
+          },
+          "C": {
+            "observationMass": "91/150",
+            "stay": "41/91",
+            "switch": "50/91"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "19/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "119/300",
+            "stay": "19/119",
+            "switch": "100/119"
+          },
+          "C": {
+            "observationMass": "181/300",
+            "stay": "81/181",
+            "switch": "100/181"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "1/5",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "2/5",
+            "stay": "1/6",
+            "switch": "5/6"
+          },
+          "C": {
+            "observationMass": "3/5",
+            "stay": "4/9",
+            "switch": "5/9"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "21/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "121/300",
+            "stay": "21/121",
+            "switch": "100/121"
+          },
+          "C": {
+            "observationMass": "179/300",
+            "stay": "79/179",
+            "switch": "100/179"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "11/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "61/150",
+            "stay": "11/61",
+            "switch": "50/61"
+          },
+          "C": {
+            "observationMass": "89/150",
+            "stay": "39/89",
+            "switch": "50/89"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "23/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "41/100",
+            "stay": "23/123",
+            "switch": "100/123"
+          },
+          "C": {
+            "observationMass": "59/100",
+            "stay": "77/177",
+            "switch": "100/177"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "6/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "31/75",
+            "stay": "6/31",
+            "switch": "25/31"
+          },
+          "C": {
+            "observationMass": "44/75",
+            "stay": "19/44",
+            "switch": "25/44"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "1/4",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "5/12",
+            "stay": "1/5",
+            "switch": "4/5"
+          },
+          "C": {
+            "observationMass": "7/12",
+            "stay": "3/7",
+            "switch": "4/7"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "13/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "21/50",
+            "stay": "13/63",
+            "switch": "50/63"
+          },
+          "C": {
+            "observationMass": "29/50",
+            "stay": "37/87",
+            "switch": "50/87"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "27/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "127/300",
+            "stay": "27/127",
+            "switch": "100/127"
+          },
+          "C": {
+            "observationMass": "173/300",
+            "stay": "73/173",
+            "switch": "100/173"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "7/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "32/75",
+            "stay": "7/32",
+            "switch": "25/32"
+          },
+          "C": {
+            "observationMass": "43/75",
+            "stay": "18/43",
+            "switch": "25/43"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "29/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "43/100",
+            "stay": "29/129",
+            "switch": "100/129"
+          },
+          "C": {
+            "observationMass": "57/100",
+            "stay": "71/171",
+            "switch": "100/171"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "3/10",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "13/30",
+            "stay": "3/13",
+            "switch": "10/13"
+          },
+          "C": {
+            "observationMass": "17/30",
+            "stay": "7/17",
+            "switch": "10/17"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "31/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "131/300",
+            "stay": "31/131",
+            "switch": "100/131"
+          },
+          "C": {
+            "observationMass": "169/300",
+            "stay": "69/169",
+            "switch": "100/169"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "8/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "11/25",
+            "stay": "8/33",
+            "switch": "25/33"
+          },
+          "C": {
+            "observationMass": "14/25",
+            "stay": "17/42",
+            "switch": "25/42"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "33/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "133/300",
+            "stay": "33/133",
+            "switch": "100/133"
+          },
+          "C": {
+            "observationMass": "167/300",
+            "stay": "67/167",
+            "switch": "100/167"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "17/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "67/150",
+            "stay": "17/67",
+            "switch": "50/67"
+          },
+          "C": {
+            "observationMass": "83/150",
+            "stay": "33/83",
+            "switch": "50/83"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "7/20",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "9/20",
+            "stay": "7/27",
+            "switch": "20/27"
+          },
+          "C": {
+            "observationMass": "11/20",
+            "stay": "13/33",
+            "switch": "20/33"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "9/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "34/75",
+            "stay": "9/34",
+            "switch": "25/34"
+          },
+          "C": {
+            "observationMass": "41/75",
+            "stay": "16/41",
+            "switch": "25/41"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "37/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "137/300",
+            "stay": "37/137",
+            "switch": "100/137"
+          },
+          "C": {
+            "observationMass": "163/300",
+            "stay": "63/163",
+            "switch": "100/163"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "19/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "23/50",
+            "stay": "19/69",
+            "switch": "50/69"
+          },
+          "C": {
+            "observationMass": "27/50",
+            "stay": "31/81",
+            "switch": "50/81"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "39/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "139/300",
+            "stay": "39/139",
+            "switch": "100/139"
+          },
+          "C": {
+            "observationMass": "161/300",
+            "stay": "61/161",
+            "switch": "100/161"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "2/5",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "7/15",
+            "stay": "2/7",
+            "switch": "5/7"
+          },
+          "C": {
+            "observationMass": "8/15",
+            "stay": "3/8",
+            "switch": "5/8"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "41/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "47/100",
+            "stay": "41/141",
+            "switch": "100/141"
+          },
+          "C": {
+            "observationMass": "53/100",
+            "stay": "59/159",
+            "switch": "100/159"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "21/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "71/150",
+            "stay": "21/71",
+            "switch": "50/71"
+          },
+          "C": {
+            "observationMass": "79/150",
+            "stay": "29/79",
+            "switch": "50/79"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "43/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "143/300",
+            "stay": "43/143",
+            "switch": "100/143"
+          },
+          "C": {
+            "observationMass": "157/300",
+            "stay": "57/157",
+            "switch": "100/157"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "11/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "12/25",
+            "stay": "11/36",
+            "switch": "25/36"
+          },
+          "C": {
+            "observationMass": "13/25",
+            "stay": "14/39",
+            "switch": "25/39"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "9/20",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "29/60",
+            "stay": "9/29",
+            "switch": "20/29"
+          },
+          "C": {
+            "observationMass": "31/60",
+            "stay": "11/31",
+            "switch": "20/31"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "23/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "73/150",
+            "stay": "23/73",
+            "switch": "50/73"
+          },
+          "C": {
+            "observationMass": "77/150",
+            "stay": "27/77",
+            "switch": "50/77"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "47/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "49/100",
+            "stay": "47/147",
+            "switch": "100/147"
+          },
+          "C": {
+            "observationMass": "51/100",
+            "stay": "53/153",
+            "switch": "100/153"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "12/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "37/75",
+            "stay": "12/37",
+            "switch": "25/37"
+          },
+          "C": {
+            "observationMass": "38/75",
+            "stay": "13/38",
+            "switch": "25/38"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "49/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "149/300",
+            "stay": "49/149",
+            "switch": "100/149"
+          },
+          "C": {
+            "observationMass": "151/300",
+            "stay": "51/151",
+            "switch": "100/151"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "1/2",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "1/2",
+            "stay": "1/3",
+            "switch": "2/3"
+          },
+          "C": {
+            "observationMass": "1/2",
+            "stay": "1/3",
+            "switch": "2/3"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "51/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "151/300",
+            "stay": "51/151",
+            "switch": "100/151"
+          },
+          "C": {
+            "observationMass": "149/300",
+            "stay": "49/149",
+            "switch": "100/149"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "13/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "38/75",
+            "stay": "13/38",
+            "switch": "25/38"
+          },
+          "C": {
+            "observationMass": "37/75",
+            "stay": "12/37",
+            "switch": "25/37"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "53/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "51/100",
+            "stay": "53/153",
+            "switch": "100/153"
+          },
+          "C": {
+            "observationMass": "49/100",
+            "stay": "47/147",
+            "switch": "100/147"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "27/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "77/150",
+            "stay": "27/77",
+            "switch": "50/77"
+          },
+          "C": {
+            "observationMass": "73/150",
+            "stay": "23/73",
+            "switch": "50/73"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "11/20",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "31/60",
+            "stay": "11/31",
+            "switch": "20/31"
+          },
+          "C": {
+            "observationMass": "29/60",
+            "stay": "9/29",
+            "switch": "20/29"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "14/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "13/25",
+            "stay": "14/39",
+            "switch": "25/39"
+          },
+          "C": {
+            "observationMass": "12/25",
+            "stay": "11/36",
+            "switch": "25/36"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "57/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "157/300",
+            "stay": "57/157",
+            "switch": "100/157"
+          },
+          "C": {
+            "observationMass": "143/300",
+            "stay": "43/143",
+            "switch": "100/143"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "29/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "79/150",
+            "stay": "29/79",
+            "switch": "50/79"
+          },
+          "C": {
+            "observationMass": "71/150",
+            "stay": "21/71",
+            "switch": "50/71"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "59/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "53/100",
+            "stay": "59/159",
+            "switch": "100/159"
+          },
+          "C": {
+            "observationMass": "47/100",
+            "stay": "41/141",
+            "switch": "100/141"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "3/5",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "8/15",
+            "stay": "3/8",
+            "switch": "5/8"
+          },
+          "C": {
+            "observationMass": "7/15",
+            "stay": "2/7",
+            "switch": "5/7"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "61/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "161/300",
+            "stay": "61/161",
+            "switch": "100/161"
+          },
+          "C": {
+            "observationMass": "139/300",
+            "stay": "39/139",
+            "switch": "100/139"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "31/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "27/50",
+            "stay": "31/81",
+            "switch": "50/81"
+          },
+          "C": {
+            "observationMass": "23/50",
+            "stay": "19/69",
+            "switch": "50/69"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "63/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "163/300",
+            "stay": "63/163",
+            "switch": "100/163"
+          },
+          "C": {
+            "observationMass": "137/300",
+            "stay": "37/137",
+            "switch": "100/137"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "16/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "41/75",
+            "stay": "16/41",
+            "switch": "25/41"
+          },
+          "C": {
+            "observationMass": "34/75",
+            "stay": "9/34",
+            "switch": "25/34"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "13/20",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "11/20",
+            "stay": "13/33",
+            "switch": "20/33"
+          },
+          "C": {
+            "observationMass": "9/20",
+            "stay": "7/27",
+            "switch": "20/27"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "33/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "83/150",
+            "stay": "33/83",
+            "switch": "50/83"
+          },
+          "C": {
+            "observationMass": "67/150",
+            "stay": "17/67",
+            "switch": "50/67"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "67/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "167/300",
+            "stay": "67/167",
+            "switch": "100/167"
+          },
+          "C": {
+            "observationMass": "133/300",
+            "stay": "33/133",
+            "switch": "100/133"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "17/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "14/25",
+            "stay": "17/42",
+            "switch": "25/42"
+          },
+          "C": {
+            "observationMass": "11/25",
+            "stay": "8/33",
+            "switch": "25/33"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "69/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "169/300",
+            "stay": "69/169",
+            "switch": "100/169"
+          },
+          "C": {
+            "observationMass": "131/300",
+            "stay": "31/131",
+            "switch": "100/131"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "7/10",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "17/30",
+            "stay": "7/17",
+            "switch": "10/17"
+          },
+          "C": {
+            "observationMass": "13/30",
+            "stay": "3/13",
+            "switch": "10/13"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "71/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "57/100",
+            "stay": "71/171",
+            "switch": "100/171"
+          },
+          "C": {
+            "observationMass": "43/100",
+            "stay": "29/129",
+            "switch": "100/129"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "18/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "43/75",
+            "stay": "18/43",
+            "switch": "25/43"
+          },
+          "C": {
+            "observationMass": "32/75",
+            "stay": "7/32",
+            "switch": "25/32"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "73/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "173/300",
+            "stay": "73/173",
+            "switch": "100/173"
+          },
+          "C": {
+            "observationMass": "127/300",
+            "stay": "27/127",
+            "switch": "100/127"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "37/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "29/50",
+            "stay": "37/87",
+            "switch": "50/87"
+          },
+          "C": {
+            "observationMass": "21/50",
+            "stay": "13/63",
+            "switch": "50/63"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "3/4",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "7/12",
+            "stay": "3/7",
+            "switch": "4/7"
+          },
+          "C": {
+            "observationMass": "5/12",
+            "stay": "1/5",
+            "switch": "4/5"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "19/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "44/75",
+            "stay": "19/44",
+            "switch": "25/44"
+          },
+          "C": {
+            "observationMass": "31/75",
+            "stay": "6/31",
+            "switch": "25/31"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "77/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "59/100",
+            "stay": "77/177",
+            "switch": "100/177"
+          },
+          "C": {
+            "observationMass": "41/100",
+            "stay": "23/123",
+            "switch": "100/123"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "39/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "89/150",
+            "stay": "39/89",
+            "switch": "50/89"
+          },
+          "C": {
+            "observationMass": "61/150",
+            "stay": "11/61",
+            "switch": "50/61"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "79/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "179/300",
+            "stay": "79/179",
+            "switch": "100/179"
+          },
+          "C": {
+            "observationMass": "121/300",
+            "stay": "21/121",
+            "switch": "100/121"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "4/5",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "3/5",
+            "stay": "4/9",
+            "switch": "5/9"
+          },
+          "C": {
+            "observationMass": "2/5",
+            "stay": "1/6",
+            "switch": "5/6"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "81/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "181/300",
+            "stay": "81/181",
+            "switch": "100/181"
+          },
+          "C": {
+            "observationMass": "119/300",
+            "stay": "19/119",
+            "switch": "100/119"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "41/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "91/150",
+            "stay": "41/91",
+            "switch": "50/91"
+          },
+          "C": {
+            "observationMass": "59/150",
+            "stay": "9/59",
+            "switch": "50/59"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "83/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "61/100",
+            "stay": "83/183",
+            "switch": "100/183"
+          },
+          "C": {
+            "observationMass": "39/100",
+            "stay": "17/117",
+            "switch": "100/117"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "21/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "46/75",
+            "stay": "21/46",
+            "switch": "25/46"
+          },
+          "C": {
+            "observationMass": "29/75",
+            "stay": "4/29",
+            "switch": "25/29"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "17/20",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "37/60",
+            "stay": "17/37",
+            "switch": "20/37"
+          },
+          "C": {
+            "observationMass": "23/60",
+            "stay": "3/23",
+            "switch": "20/23"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "43/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "31/50",
+            "stay": "43/93",
+            "switch": "50/93"
+          },
+          "C": {
+            "observationMass": "19/50",
+            "stay": "7/57",
+            "switch": "50/57"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "87/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "187/300",
+            "stay": "87/187",
+            "switch": "100/187"
+          },
+          "C": {
+            "observationMass": "113/300",
+            "stay": "13/113",
+            "switch": "100/113"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "22/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "47/75",
+            "stay": "22/47",
+            "switch": "25/47"
+          },
+          "C": {
+            "observationMass": "28/75",
+            "stay": "3/28",
+            "switch": "25/28"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "89/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "63/100",
+            "stay": "89/189",
+            "switch": "100/189"
+          },
+          "C": {
+            "observationMass": "37/100",
+            "stay": "11/111",
+            "switch": "100/111"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "9/10",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "19/30",
+            "stay": "9/19",
+            "switch": "10/19"
+          },
+          "C": {
+            "observationMass": "11/30",
+            "stay": "1/11",
+            "switch": "10/11"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "91/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "191/300",
+            "stay": "91/191",
+            "switch": "100/191"
+          },
+          "C": {
+            "observationMass": "109/300",
+            "stay": "9/109",
+            "switch": "100/109"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "23/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "16/25",
+            "stay": "23/48",
+            "switch": "25/48"
+          },
+          "C": {
+            "observationMass": "9/25",
+            "stay": "2/27",
+            "switch": "25/27"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "93/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "193/300",
+            "stay": "93/193",
+            "switch": "100/193"
+          },
+          "C": {
+            "observationMass": "107/300",
+            "stay": "7/107",
+            "switch": "100/107"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "47/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "97/150",
+            "stay": "47/97",
+            "switch": "50/97"
+          },
+          "C": {
+            "observationMass": "53/150",
+            "stay": "3/53",
+            "switch": "50/53"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "19/20",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "13/20",
+            "stay": "19/39",
+            "switch": "20/39"
+          },
+          "C": {
+            "observationMass": "7/20",
+            "stay": "1/21",
+            "switch": "20/21"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "24/25",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "49/75",
+            "stay": "24/49",
+            "switch": "25/49"
+          },
+          "C": {
+            "observationMass": "26/75",
+            "stay": "1/26",
+            "switch": "25/26"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "97/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "197/300",
+            "stay": "97/197",
+            "switch": "100/197"
+          },
+          "C": {
+            "observationMass": "103/300",
+            "stay": "3/103",
+            "switch": "100/103"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "49/50",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "33/50",
+            "stay": "49/99",
+            "switch": "50/99"
+          },
+          "C": {
+            "observationMass": "17/50",
+            "stay": "1/51",
+            "switch": "50/51"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "99/100",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "199/300",
+            "stay": "99/199",
+            "switch": "100/199"
+          },
+          "C": {
+            "observationMass": "101/300",
+            "stay": "1/101",
+            "switch": "100/101"
+          }
+        }
+      },
+      {
+        "qOpenBWhenCarA": "1",
+        "unconditionalStay": "1/3",
+        "unconditionalSwitch": "2/3",
+        "conditional": {
+          "B": {
+            "observationMass": "2/3",
+            "stay": "1/2",
+            "switch": "1/2"
+          },
+          "C": {
+            "observationMass": "1/3",
+            "stay": "0",
+            "switch": "1"
+          }
+        }
+      }
+    ],
+    "uninformedHostElementaryPaths": 6,
+    "uninformedGoatObservationMass": "2/3",
+    "uninformedGivenGoatStayAndSwitch": "1/2",
+    "manyDoorCases": [
+      {
+        "doors": 3,
+        "unconditionalSwitch": "2/3",
+        "symmetricFixedRemainingSwitch": "2/3",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 4,
+        "unconditionalSwitch": "3/4",
+        "symmetricFixedRemainingSwitch": "3/4",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 5,
+        "unconditionalSwitch": "4/5",
+        "symmetricFixedRemainingSwitch": "4/5",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 6,
+        "unconditionalSwitch": "5/6",
+        "symmetricFixedRemainingSwitch": "5/6",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 7,
+        "unconditionalSwitch": "6/7",
+        "symmetricFixedRemainingSwitch": "6/7",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 8,
+        "unconditionalSwitch": "7/8",
+        "symmetricFixedRemainingSwitch": "7/8",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 9,
+        "unconditionalSwitch": "8/9",
+        "symmetricFixedRemainingSwitch": "8/9",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 10,
+        "unconditionalSwitch": "9/10",
+        "symmetricFixedRemainingSwitch": "9/10",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 11,
+        "unconditionalSwitch": "10/11",
+        "symmetricFixedRemainingSwitch": "10/11",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 12,
+        "unconditionalSwitch": "11/12",
+        "symmetricFixedRemainingSwitch": "11/12",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 13,
+        "unconditionalSwitch": "12/13",
+        "symmetricFixedRemainingSwitch": "12/13",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 14,
+        "unconditionalSwitch": "13/14",
+        "symmetricFixedRemainingSwitch": "13/14",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 15,
+        "unconditionalSwitch": "14/15",
+        "symmetricFixedRemainingSwitch": "14/15",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 16,
+        "unconditionalSwitch": "15/16",
+        "symmetricFixedRemainingSwitch": "15/16",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 17,
+        "unconditionalSwitch": "16/17",
+        "symmetricFixedRemainingSwitch": "16/17",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 18,
+        "unconditionalSwitch": "17/18",
+        "symmetricFixedRemainingSwitch": "17/18",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 19,
+        "unconditionalSwitch": "18/19",
+        "symmetricFixedRemainingSwitch": "18/19",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 20,
+        "unconditionalSwitch": "19/20",
+        "symmetricFixedRemainingSwitch": "19/20",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 21,
+        "unconditionalSwitch": "20/21",
+        "symmetricFixedRemainingSwitch": "20/21",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 22,
+        "unconditionalSwitch": "21/22",
+        "symmetricFixedRemainingSwitch": "21/22",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 23,
+        "unconditionalSwitch": "22/23",
+        "symmetricFixedRemainingSwitch": "22/23",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 24,
+        "unconditionalSwitch": "23/24",
+        "symmetricFixedRemainingSwitch": "23/24",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 25,
+        "unconditionalSwitch": "24/25",
+        "symmetricFixedRemainingSwitch": "24/25",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 26,
+        "unconditionalSwitch": "25/26",
+        "symmetricFixedRemainingSwitch": "25/26",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 27,
+        "unconditionalSwitch": "26/27",
+        "symmetricFixedRemainingSwitch": "26/27",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 28,
+        "unconditionalSwitch": "27/28",
+        "symmetricFixedRemainingSwitch": "27/28",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 29,
+        "unconditionalSwitch": "28/29",
+        "symmetricFixedRemainingSwitch": "28/29",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 30,
+        "unconditionalSwitch": "29/30",
+        "symmetricFixedRemainingSwitch": "29/30",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 31,
+        "unconditionalSwitch": "30/31",
+        "symmetricFixedRemainingSwitch": "30/31",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 32,
+        "unconditionalSwitch": "31/32",
+        "symmetricFixedRemainingSwitch": "31/32",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 33,
+        "unconditionalSwitch": "32/33",
+        "symmetricFixedRemainingSwitch": "32/33",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 34,
+        "unconditionalSwitch": "33/34",
+        "symmetricFixedRemainingSwitch": "33/34",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 35,
+        "unconditionalSwitch": "34/35",
+        "symmetricFixedRemainingSwitch": "34/35",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 36,
+        "unconditionalSwitch": "35/36",
+        "symmetricFixedRemainingSwitch": "35/36",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 37,
+        "unconditionalSwitch": "36/37",
+        "symmetricFixedRemainingSwitch": "36/37",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 38,
+        "unconditionalSwitch": "37/38",
+        "symmetricFixedRemainingSwitch": "37/38",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 39,
+        "unconditionalSwitch": "38/39",
+        "symmetricFixedRemainingSwitch": "38/39",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 40,
+        "unconditionalSwitch": "39/40",
+        "symmetricFixedRemainingSwitch": "39/40",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 41,
+        "unconditionalSwitch": "40/41",
+        "symmetricFixedRemainingSwitch": "40/41",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 42,
+        "unconditionalSwitch": "41/42",
+        "symmetricFixedRemainingSwitch": "41/42",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 43,
+        "unconditionalSwitch": "42/43",
+        "symmetricFixedRemainingSwitch": "42/43",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 44,
+        "unconditionalSwitch": "43/44",
+        "symmetricFixedRemainingSwitch": "43/44",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 45,
+        "unconditionalSwitch": "44/45",
+        "symmetricFixedRemainingSwitch": "44/45",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 46,
+        "unconditionalSwitch": "45/46",
+        "symmetricFixedRemainingSwitch": "45/46",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 47,
+        "unconditionalSwitch": "46/47",
+        "symmetricFixedRemainingSwitch": "46/47",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 48,
+        "unconditionalSwitch": "47/48",
+        "symmetricFixedRemainingSwitch": "47/48",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 49,
+        "unconditionalSwitch": "48/49",
+        "symmetricFixedRemainingSwitch": "48/49",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 50,
+        "unconditionalSwitch": "49/50",
+        "symmetricFixedRemainingSwitch": "49/50",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 51,
+        "unconditionalSwitch": "50/51",
+        "symmetricFixedRemainingSwitch": "50/51",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 52,
+        "unconditionalSwitch": "51/52",
+        "symmetricFixedRemainingSwitch": "51/52",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 53,
+        "unconditionalSwitch": "52/53",
+        "symmetricFixedRemainingSwitch": "52/53",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 54,
+        "unconditionalSwitch": "53/54",
+        "symmetricFixedRemainingSwitch": "53/54",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 55,
+        "unconditionalSwitch": "54/55",
+        "symmetricFixedRemainingSwitch": "54/55",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 56,
+        "unconditionalSwitch": "55/56",
+        "symmetricFixedRemainingSwitch": "55/56",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 57,
+        "unconditionalSwitch": "56/57",
+        "symmetricFixedRemainingSwitch": "56/57",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 58,
+        "unconditionalSwitch": "57/58",
+        "symmetricFixedRemainingSwitch": "57/58",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 59,
+        "unconditionalSwitch": "58/59",
+        "symmetricFixedRemainingSwitch": "58/59",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 60,
+        "unconditionalSwitch": "59/60",
+        "symmetricFixedRemainingSwitch": "59/60",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 61,
+        "unconditionalSwitch": "60/61",
+        "symmetricFixedRemainingSwitch": "60/61",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 62,
+        "unconditionalSwitch": "61/62",
+        "symmetricFixedRemainingSwitch": "61/62",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 63,
+        "unconditionalSwitch": "62/63",
+        "symmetricFixedRemainingSwitch": "62/63",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 64,
+        "unconditionalSwitch": "63/64",
+        "symmetricFixedRemainingSwitch": "63/64",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 65,
+        "unconditionalSwitch": "64/65",
+        "symmetricFixedRemainingSwitch": "64/65",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 66,
+        "unconditionalSwitch": "65/66",
+        "symmetricFixedRemainingSwitch": "65/66",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 67,
+        "unconditionalSwitch": "66/67",
+        "symmetricFixedRemainingSwitch": "66/67",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 68,
+        "unconditionalSwitch": "67/68",
+        "symmetricFixedRemainingSwitch": "67/68",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 69,
+        "unconditionalSwitch": "68/69",
+        "symmetricFixedRemainingSwitch": "68/69",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 70,
+        "unconditionalSwitch": "69/70",
+        "symmetricFixedRemainingSwitch": "69/70",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 71,
+        "unconditionalSwitch": "70/71",
+        "symmetricFixedRemainingSwitch": "70/71",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 72,
+        "unconditionalSwitch": "71/72",
+        "symmetricFixedRemainingSwitch": "71/72",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 73,
+        "unconditionalSwitch": "72/73",
+        "symmetricFixedRemainingSwitch": "72/73",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 74,
+        "unconditionalSwitch": "73/74",
+        "symmetricFixedRemainingSwitch": "73/74",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 75,
+        "unconditionalSwitch": "74/75",
+        "symmetricFixedRemainingSwitch": "74/75",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 76,
+        "unconditionalSwitch": "75/76",
+        "symmetricFixedRemainingSwitch": "75/76",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 77,
+        "unconditionalSwitch": "76/77",
+        "symmetricFixedRemainingSwitch": "76/77",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 78,
+        "unconditionalSwitch": "77/78",
+        "symmetricFixedRemainingSwitch": "77/78",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 79,
+        "unconditionalSwitch": "78/79",
+        "symmetricFixedRemainingSwitch": "78/79",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 80,
+        "unconditionalSwitch": "79/80",
+        "symmetricFixedRemainingSwitch": "79/80",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 81,
+        "unconditionalSwitch": "80/81",
+        "symmetricFixedRemainingSwitch": "80/81",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 82,
+        "unconditionalSwitch": "81/82",
+        "symmetricFixedRemainingSwitch": "81/82",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 83,
+        "unconditionalSwitch": "82/83",
+        "symmetricFixedRemainingSwitch": "82/83",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 84,
+        "unconditionalSwitch": "83/84",
+        "symmetricFixedRemainingSwitch": "83/84",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 85,
+        "unconditionalSwitch": "84/85",
+        "symmetricFixedRemainingSwitch": "84/85",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 86,
+        "unconditionalSwitch": "85/86",
+        "symmetricFixedRemainingSwitch": "85/86",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 87,
+        "unconditionalSwitch": "86/87",
+        "symmetricFixedRemainingSwitch": "86/87",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 88,
+        "unconditionalSwitch": "87/88",
+        "symmetricFixedRemainingSwitch": "87/88",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 89,
+        "unconditionalSwitch": "88/89",
+        "symmetricFixedRemainingSwitch": "88/89",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 90,
+        "unconditionalSwitch": "89/90",
+        "symmetricFixedRemainingSwitch": "89/90",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 91,
+        "unconditionalSwitch": "90/91",
+        "symmetricFixedRemainingSwitch": "90/91",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 92,
+        "unconditionalSwitch": "91/92",
+        "symmetricFixedRemainingSwitch": "91/92",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 93,
+        "unconditionalSwitch": "92/93",
+        "symmetricFixedRemainingSwitch": "92/93",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 94,
+        "unconditionalSwitch": "93/94",
+        "symmetricFixedRemainingSwitch": "93/94",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 95,
+        "unconditionalSwitch": "94/95",
+        "symmetricFixedRemainingSwitch": "94/95",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 96,
+        "unconditionalSwitch": "95/96",
+        "symmetricFixedRemainingSwitch": "95/96",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 97,
+        "unconditionalSwitch": "96/97",
+        "symmetricFixedRemainingSwitch": "96/97",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 98,
+        "unconditionalSwitch": "97/98",
+        "symmetricFixedRemainingSwitch": "97/98",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 99,
+        "unconditionalSwitch": "98/99",
+        "symmetricFixedRemainingSwitch": "98/99",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 100,
+        "unconditionalSwitch": "99/100",
+        "symmetricFixedRemainingSwitch": "99/100",
+        "biasedFixedRemainingSwitch": "1/2"
+      },
+      {
+        "doors": 1000000,
+        "unconditionalSwitch": "999999/1000000",
+        "symmetricFixedRemainingSwitch": "999999/1000000",
+        "biasedFixedRemainingSwitch": "1/2"
+      }
+    ],
+    "scope": "Finite exact enumeration/formula checks,not simulation,psychology,all policies or article-program execution."
+  },
+  "reviewedTranslationsAdded": 0,
+  "currentAiTranslations": 336,
+  "unreviewedTranslations": 12696,
+  "humanReviews": 0,
+  "limitations": [
+    "Pre-audit only;source and ledger unchanged.",
+    "JA/EN original full bodies read;other11metadata/hash/fence inventory only.",
+    "Duplicate dates and effective dates reported per language,not silently replaced.",
+    "100-simulations pie has constants67/33 and no recorded random experiment;not verified experimental data.",
+    "Separate paradox-monty-hall-problem article only partially read after truncated output;not reviewed or merged.",
+    "Primary-source reading scopes and inaccessible pages documented separately.",
+    "No native-speaker/browser runtime/visual certification;batch027 deployment pending."
+  ]
+}
