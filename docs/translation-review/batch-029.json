@@ -1010,5 +1010,28 @@
     "humanReviews": 0,
     "publicationPending": true,
     "scope": "All13bodies manually compared and12AIreviews recorded;static source/decodedHTML and30bundle preview checks. PriorHindi correctedtag/twoaliases retained. No native/browser/clinical/psychological/full-site certification;publication pending."
+  },
+  "publicationDispatch": {
+    "version": 1,
+    "observedAt": "2026-11-11T22:45:50.199271+09:00",
+    "deployedCommitExpected": "b22ba1bd68a4b18831cb633f1a038dbd8aed8e91",
+    "ciRun": 43031920623,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43031920623",
+    "runAttempt": 1,
+    "statusAtDispatch": "in_progress",
+    "conclusionAtDispatch": null,
+    "pagesPlanned": 390,
+    "translationsPlanned": 360,
+    "japaneseSourcesPlanned": 30,
+    "texExpressionsPlanned": 9987,
+    "mathVersionsPlanned": 195,
+    "intuitionVersionsPlanned": 13,
+    "intuitionTeXPlanned": 195,
+    "intuitionDiagramsPlanned": 26,
+    "additionalHindiTaxonomyUrlsPlanned": 3,
+    "publicationPending": true,
+    "scope": "Ordinary authorized push after fetch zero incoming/16outgoing. Matching workflow/run/head/attempt observed.390articleURL plus3tagURL probe prepared and actual new-page functions locally checked;live HTTP waits matching build/deploy success.",
+    "proof": "docs/translation-review/batch-029-publication-dispatch.json",
+    "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_360.py"
   }
 }
