@@ -1040,5 +1040,42 @@
     "firstLocalProbeAttemptPreserved": "docs/translation-review/batch-030-probe-local-structure.json",
     "publicationPending": true,
     "scope": "All13 bodies manually read/compared and12AI entries immutable.31bundle source/decodedHTML checks,not fullsite/native/browser/tournament certification. Localprobe403+3passes after localHTMLCRLF normalization;first54graph-only failures retained and diagnosed. Actual live verification waits CI."
+  },
+  "publicationDispatch": {
+    "version": 1,
+    "observedAt": "2026-11-11T23:52:21.1108666+09:00",
+    "deployedCommitExpected": "5208e8790f7e1e883b99c5a601d628efd878dbcc",
+    "ciRun": 43042507959,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43042507959",
+    "runAttempt": 1,
+    "statusAtDispatch": "in_progress",
+    "conclusionAtDispatch": null,
+    "pagesPlanned": 403,
+    "translationsPlanned": 372,
+    "japaneseSourcesPlanned": 31,
+    "texExpressionsPlanned": 10104,
+    "mathVersionsPlanned": 208,
+    "prisonerVersionsPlanned": 13,
+    "prisonerTeXPlanned": 117,
+    "prisonerDiagramsPlanned": 26,
+    "additionalHindiTaxonomyUrlsPlanned": 3,
+    "publicationPending": true,
+    "scope": "Ordinary authorized push after fetch zero incoming/14outgoing. Matching run/head/attempt observed.403articleURL plus3tagURL probe prepared;local actual-function checks pass after documented HTML newline normalization. LiveHTTP waits matching build/deploy success. Initial local54graph-only failure receipt preserved.",
+    "proof": "docs/translation-review/batch-030-publication-dispatch.json",
+    "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_372_r2.py",
+    "probeSha256": "2296b2689f38bd3a7cd7c8fbd11212aa7b7e7ca67d1febc5bcaf2354980bf6f9",
+    "probePreparation": "docs/translation-review/batch-030-probe-preparation-r2.json",
+    "probeLocalCheck": "docs/translation-review/batch-030-probe-local-structure-r2.json",
+    "jobsObserved": [
+      {
+        "name": "build",
+        "status": "in_progress",
+        "conclusion": null,
+        "started_at": "2026-11-11T14:51:21Z",
+        "activeSteps": [
+          "Checkout"
+        ]
+      }
+    ]
   }
 }
