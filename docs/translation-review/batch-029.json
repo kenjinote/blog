@@ -242,6 +242,46 @@
         "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
         "Primary-source reading scope documented separately;publication pending."
       ]
+    },
+    "post/paradox-monty-hall-problem/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-monty-hall-problem/index.md",
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "translationHash": "75c749f556422cf775e8cfe55858dfba21a6c81b13679420fe5d0b08f37b9b59",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original French metadata/body/table/two diagrams and entire revised version against Japanese. Preserved six themes while making uniform placement,every-game offer,symmetric tie rules,overall/conditional distinction and named remaining label explicit. Corrected unsupported universal psychological/historical/business claims and limited empirical paragraph to repeated-learning study scope and individual differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used théorème de Bayes,vraisemblances,a priori/a posteriori,globale/conditionnelle,conserver/changer consistently. Old French already correctly distinguished malades/personnes saines in the test example;not falsely reported as a disease-status mistranslation. Explicit sensibilité/spécificité and effectifs attendus now clarify assumptions. Corrected ouvrir une chèvre and literal ensorcelé par un renard. During reread changed abstract choix cachait to actual porte choisie and specified equal car probabilities behind A/C."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared15expressions and assumptions:1/2,0,1 likelihoods,posterior1/3/2/3,q-biased host,uninformedB AND goat half,ninteger>=3,r2..n,R-only observation with symmetric versus fixed label rules. Hypothetical disease example1/102 with expected counts0.99/99.99 preserved;utility advantage(car-goat)/3-cost uses same units. Finite auxiliary once plus136diagnostic/125utility cases,not clinical/psychological/general proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read13outcome diagram edges/localized labels and5edge proposed reasoning procedure;explicitly not proven psychological causes. Complete Mermaid sources and15TeX match decodedHTML. Baseline already loaded libraries,so flags are explicit documentation rather than evidence of runtime repair. No actual browser/Mermaid/KaTeX execution,native-speaker or visual certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked three primary and two French internal references,original September24published date/actualNovember11modified,image hash/publicslug/taxonomy,14hreflang/13sidebar URLs.30bundle1680pages and HTTPS3052HTML41XML passed.17existingtests referenced from JA/EN successful rerun,not repeated. Primary-reading scope documented;other5translation reviews and batch029publication pending."
+        }
+      },
+      "summary": "Full French intuition/probability review:precise door/event wording,scoped psychology and explicit hypothetical test/utility assumptions.",
+      "languageSpecificFindings": "French original test example already used disease status correctly. Corrected ouvrir une chèvre,literal fox idiom and abstract choice hiding goat;clarified actual car location behind A/C,probability versus mechanism,decimal-comma expected counts and utility units. Initial draft receipt retained;validation captures final reread corrections.",
+      "validation": "docs/translation-review/batch-029-fr-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "5other translation bodies not yet fully reviewed at this stage.",
+        "Finite auxiliary arithmetic distinct from article programs0,clinical advice,psychological experiment or corporate-success proof.",
+        "Source/decodedHTML only;no browser visual/KaTeX/Mermaid execution certification.",
+        "Primary-source reading scope documented separately;publication pending."
+      ]
     }
   },
   "stages": [
@@ -495,6 +535,48 @@
       "unreviewedTranslations": 12678,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 6,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "fr"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "b29daf4b7ffa3c885559bf2da800021f17fe33a8c5fe6fcfd5d6105232792bc8",
+      "validation": "docs/translation-review/batch-029-fr-validation.json",
+      "checks": "docs/translation-review/batch-029-fr-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-029-fr-ledger-validation.json",
+      "texEach": 15,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        13,
+        5
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution.",
+        "diagnosticJointTableCases": 136,
+        "diagnosticExamplePosterior": "1/102",
+        "utilityPlacementCases": 125,
+        "additionalScope": "Exact hypothetical arithmetic/utility units only;not clinical accuracy,individual risk,psychological experiment or business-success evidence."
+      },
+      "actualPreviewBundles": 30,
+      "multilingualPages": 1680,
+      "httpsHtmlPages": 3052,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 355,
+      "unreviewedTranslations": 12677,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 5,
       "publicationPending": true
     }
   ]
