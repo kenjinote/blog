@@ -163,6 +163,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/囚人のジレンマ/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "26addfec01d767a2639a1adc6ae316e882d09db10a6bca39b563fe9a172922a3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Korean in prior pre-reading and entire revised Korean now against frozen Japanese,metadata,sixsections,table andbothgraphs. Matched fictional simultaneous one-shot own-utility game,ParetoefficientpureCC/CD/DC versus CCsum maximum,unilateral Nash changes,knownfinite commonknowledge versus infiniteconditionalcooperation,TFTpreviousround anddistinctgrim. Preserved price/environment/sport themes with scoped institutional/payoff requirements."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared 보수/효용 versus 형기,엄격한 우월전략,순수전략/혼합전략,파레토 효율성,내시 균형,부분게임완전균형,역진귀납,공통지식,할인인자,팃포탯 andexplicitlydefined 영구 보복 전략(grim trigger). Restored originalyen1000/500 as엔,not old원 withoutconversion. Distinguished between-player협력 from investigator협조 andzero-year sentence from무죄."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read allnineidenticalTeX andfourmatrixcells. Verified T0>R-1>P-5>S-10,CCsum-2 versusother-10,threeefficientpureprofiles,strictD superiority tobothactions andmixedbeliefEUdifference5-4p>=1. Own/opponent argument order explicit. Infiniteperfectmonitoringdiscount0<=delta<1 givesgrimdelta>=1/5,not TFT or MITdifferenttable. Auxiliary4profiles101beliefs2players102discounts612delays/two8roundtracesonce,notgeneral/empiricalproof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read both full6edgeMermaid sources,includingt=1,simultaneousroundt play,observingopponentroundt,settingroundt+1 andincrementt onbothbranches. Replaced originaldirect repentance-to-cooperation shortcut. Exact topology/source/decodedHTMLmath match andlibrariespresent,flagsalreadytrue. No browser,visual,KaTeX/Mermaid execution ortournament-program reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Both primary links sameassource,presentinpreview;reading scope retained separately,not all cited works read. Preserved slug,imagehash,taxonomy,bothdate lines/effectiveSep10T03 andactualNov11lastmod.14hreflang13sidebar,31bundle1736pages/HTTPS3157HTML41XML passed. Existing17tests referenceJA/ENsuccess,not rerun;other7prose/publication pending."
+        }
+      },
+      "summary": "Complete Korean review with restored yen,payoff/utility distinction and precise one-shot versus repeated-game conditions.",
+      "languageSpecificFindings": "Old Korean changed1000/500yen to원 withoutconversion,callednegativeutility징역연수,andzero-year sentence무죄. Corrected엔/형기/보수/효용 andcooperationwithopponent versusinvestigators. Made엄격한 우월전략 and부분게임완전균형 explicit,qualified반드시humanbehavior/압도적TFTvictory/longrelationshipguarantee,andmatched everyprevious/current/next회차throughdiagram.",
+      "validation": "docs/translation-review/batch-030-ko-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "7 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0 and empirical tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -340,6 +380,50 @@
       "unreviewedTranslations": 12668,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 8,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "ko"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-ko-validation.json",
+      "checks": "docs/translation-review/batch-030-ko-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-030-ko-ledger-validation.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 365,
+      "unreviewedTranslations": 12667,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 7,
       "publicationPending": true
     }
   ]

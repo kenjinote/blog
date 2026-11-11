@@ -3645,6 +3645,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-030.json",
       "evidenceHash": "37f92b13b74c7bcf2f32cf168b7f2eb620bc8fcafff5c3803488d9e9db4d7613"
+    },
+    "post/囚人のジレンマ/index.ko.md": {
+      "source": "post/囚人のジレンマ/index.md",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "26addfec01d767a2639a1adc6ae316e882d09db10a6bca39b563fe9a172922a3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-030.json",
+      "evidenceHash": "b7a981677979e6ed92e6df1a60dddd8b03b5398d42471eb3d7ddeadb1bccbd4b"
     }
   }
 }
