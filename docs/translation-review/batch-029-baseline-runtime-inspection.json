@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-11-11T14:08:53.126548+09:00",
+  "article": "paradox-monty-hall-problem",
+  "language": "ja",
+  "sourceFrontmatterFlagsAbsent": true,
+  "renderedMermaidSources": 2,
+  "katexScriptIncluded": true,
+  "mermaidScriptIncluded": true,
+  "scope": "Actual baseline HTML inspection:missing per-article flags do not demonstrate missing libraries. Source/site/render-hook loading conditions supply scripts here. No execution or visual-browser certification;do not claim scripts missing or flag addition fixes broken runtime."
+}
