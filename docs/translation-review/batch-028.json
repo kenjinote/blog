@@ -46,6 +46,47 @@
         "Primary reading scope limited as documented;psychological experiments not replicated.",
         "Publication/live verification pending."
       ]
+    },
+    "post/モンティ・ホール問題/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/モンティ・ホール問題/index.md",
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "translationHash": "249946d7a1c07f6e4e587b412452a2c9ca6d706f5e6fb88bdca110d41ac314f0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full original Simplified Chinese metadata/body/diagrams and full revised six sections/table/18math/two diagrams against JA. Read final changed sentences explicitly. Preserve setup/history/cases/Bayes/intuition/information/million doors/life implications;correct fixed two wins each three games,host could not open C,invented100simulation counts and universal psychology/life claims. Specify every-game goat opening and switch offer,uniform car prior and unconditional versus label-conditional probability."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Check 先验概率/似然/后验概率/全概率公式,无条件胜率/条件概率,始终换门/不换,信息/观察机制 and host选择偏向 distinct from cognitive认知偏差. Replace awkward 初始选择中有车 with 最初选中的门后有车;replace 如果...时 overlap with explicit 进一步假设，当... rule. Keep door labelR and r!=1 clear. Distinguish 理论比例 from 实测的试验次数. AI,not native-speaker certification."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually check all18formal expressions and definitions:uniform placement,informed host/always-goat/always-offer;standard likelihood1/2,0,1 and evidence1/2/posteriors1/3,2/3. q0..1 has positive observation masses,both posterior formulas/weighted2/3/q1boundary. Uninformed independent B/C choice,observed B AND goat gives1/2 each. n>=3integer,r!=1,R-only observation,symmetric versus biased leave rules. Shared once101q/all3initial choices9pairs/1212weighted paths,uninformed18paths/six observations,many-door99closed forms supplement reading;not million-path simulation,general-policy or psychological proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Mermaid graph15edges checks all3car arrangements,including initial-A不换中奖/换门未中奖 against prose/table. Pie theoretical2:1 replaces measured67/33 claim. All18TeX/two diagram sources match decodedHTML;math/mermaid flags already true retained. Auxiliary program is distinct from article code. Script references do not certify browser KaTeX/Mermaid runtime or visual rendering."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primary PDFs Gill/Rosenthal retain documented reading scope;no original psychology experiment or vosSavant column certification. Two internal Bayes/LLN destinations use zh-cn and exist;four references match. Preserve effectiveSep10T00 date,asset2bytes/taxonomy/slug;one date and actualNov11lastmod/review. Canonical14hreflang13sidebar,multilingual1629pages/HTTPS2960HTML41XML pass. Previous17tests from JA/EN stage referenced,not rerun. Not full-site/native/browser/psychology/publication certification."
+        }
+      },
+      "summary": "Full Simplified Chinese original/revision comparison;host assumptions,conditional/unconditional probability,theoretical pie and natural condition wording corrected;publication pending.",
+      "languageSpecificFindings": "先验/似然/后验 and 无条件胜率/条件概率 clarified;host选择偏向 distinct from cognitive认知偏差. Fix 初始选择中有车 and 如果...时 constructions;no fixed2-of3guarantee or100次模拟 measurement. AI only.",
+      "validation": "docs/translation-review/batch-028-zh-cn-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "10other translations have not completed full-body review/revision at this stage.",
+        "Machine validation supplements the complete manual comparison;not a substitute for it.",
+        "Auxiliary finite arithmetic is not executable article code,financial advice,empirical choice evidence or universal proof.",
+        "Source and decodedHTML only;no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary-source reading scope is limited as documented;publication/live checks pending."
+      ]
     }
   },
   "stages": [
@@ -88,6 +129,47 @@
       "unreviewedTranslations": 12695,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "zh-cn"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "validation": "docs/translation-review/batch-028-zh-cn-validation.json",
+      "checks": "docs/translation-review/batch-028-zh-cn-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-028-zh-cn-ledger-validation.json",
+      "texEach": 18,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        15,
+        0
+      ],
+      "pieRatio": [
+        2,
+        1
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution."
+      },
+      "multilingualPages": 1629,
+      "httpsHtmlPages": 2960,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 338,
+      "unreviewedTranslations": 12694,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 10,
       "publicationPending": true
     }
   ],
