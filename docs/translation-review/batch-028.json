@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "date": "2026-11-11",
+  "reviewKind": "ai",
+  "reviewer": "Codex (AI)",
+  "article": "monty-hall-problem",
+  "sourceAudit": "docs/translation-review/batch-028-source-audit.json",
+  "sourceNotes": "docs/translation-review/batch-028-source-notes.md",
+  "reviews": {
+    "post/モンティ・ホール問題/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/モンティ・ホール問題/index.md",
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "translationHash": "4389936d2b8dc1251a9180f7934b5e499d4e1552efdaa83a7a0ed2ac12b7998a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "旧JA/ENの全メタデータ・本文・図を読み、改稿JA/ENの全6節・表・18式・2図も全文再読。最後の事象定義と番号範囲の変更文も明示確認。ゲーム設定・歴史・場合分け・Bayes・直感と情報・多扉・生活への示唆を維持。英語の初期当たり枝の勝敗逆転を修正。毎回の開示と変更提案、配置の一様事前を明示。無条件勝率と特定ラベルの条件付き確率、知らずに開ける観測機構を区別。未検証のIQ/抗議内訳/脳機構や人生成功率2倍の一般化、見かけの実測100回を除いた。"
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "stay/switchとmaintain/changeの役割、initial arrangement、prior/likelihood/posterior、unconditional versus conditional probability、informed/uninformed host、door-selection biasとhuman cognitive bias、deterministic/randomの区別を照合。host knowsということと選択が常に非ランダムという主張を分け、certain car only when posterior1で使用。theoretical probability ratioとempirical trial countsを区別し、R/r・car location C・event C_Aの型と範囲を両文で確認。"
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "全18TeXと本文の条件を手読照合。初期Aで常時変更が勝つことと初期ハズレが同値、三配置一様で2/3。標準の尤度1/2,0,1と証拠1/2、BayesのA1/3・C2/3。一般qのMB質量(1+q)/3とMC質量(2-q)/3はq0..1で正、両条件付き式と重み付き2/3、q1の例を確認。未知司会者のBかつヤギの尤度1/2,0,1/2で両1/2。n>=3整数・r!=1・Rのみの観測、一様残しと偏った残しの多扉式を確認。独立補助は全3初期選択を含む101q値/9組ずつ/1212重み経路、無知18経路と6観測、多扉99閉形式例。有限検査で一般戦略証明/百万経路実験/心理実験とはしない。"
+        },
+        "code": {
+          "status": "checked",
+          "note": "掲載実行プログラム0。Mermaid2ソース（graph15辺とpie辺0）を照合し、初期当たりAのStayWin/SwitchLose、他2配置の逆を図・表・本文で確認。pieの2対1は理論比で測定した100回の67/33ではない。source/decodedHTML18TeXと2図ソースが一致、既存math/mermaid trueを保持。補助列挙は記事プログラム実行と別、script参照はブラウザKaTeX/Mermaidの実描画・実行証明としない。"
+        },
+        "links": {
+          "status": "checked",
+          "note": "Gill2010とRosenthal2005/2008の抽出全文実読範囲はsource-notes参照、原著心理実験やvosSavant本文を読んだとしない。BayesとLLNはenの存在する行先、計4参照を検査。実効公開Sep10T00を保持して重複date除去、実日Nov11lastmod、旧slug/分類/画像2点バイト保持。canonical14hreflang13切替を検査。29束で多言語1629ページ/HTTPS2960HTML41XML、既存17テスト成功。全サイト・母語話者・実ブラウザ・心理・公開確認とは区別。"
+        }
+      },
+      "summary": "Full JA/English comparison:correct reversed initial-win diagram;explicit host/model assumptions;separate unconditional/conditional and informed/uninformed cases;theoretical pie and dates preserved.",
+      "validation": "docs/translation-review/batch-028-ja-en-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "Other11translations not full-body reviewed or revised.",
+        "Finite rational auxiliary checks supplement manual reading,not universal-policy proof or article-program execution.",
+        "Source/decodedHTML only,no browser visual/KaTeX/Mermaid runtime certification.",
+        "Primary reading scope limited as documented;psychological experiments not replicated.",
+        "Publication/live verification pending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "ja",
+        "en"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "d4010672affece625b3a46d94b900854a807af9154d0ed62f76df079a00a1c2e",
+      "validation": "docs/translation-review/batch-028-ja-en-validation.json",
+      "checks": "docs/translation-review/batch-028-ja-en-checks.json",
+      "texEach": 18,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        15,
+        0
+      ],
+      "pieRatio": [
+        2,
+        1
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "biasedHostValues": 101,
+        "initialChoiceCarPairsEach": 9,
+        "weightedHostPathsIncludingZeroWeights": 1212,
+        "uninformedElementaryPaths": 18,
+        "uninformedGoatPaths": 12,
+        "uninformedLabeledGoatObservations": 6,
+        "manyDoorFormulaCases": 99,
+        "scope": "Once per invocation,not per language. Rational enumeration across all3initial choices independently checks source-audit fixed-A results. Finite checks/closed forms,not million-path simulation,general-policy proof,psychological experiment or article-program execution."
+      },
+      "multilingualPages": 1629,
+      "httpsHtmlPages": 2960,
+      "httpsXmlFiles": 41,
+      "unitTestsRerun": 17,
+      "reviewedTranslationsTotal": 337,
+      "unreviewedTranslations": 12695,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    }
+  ],
+  "scope": "Chronological stages supersede earlier pending counts;registered review entries immutable. Full article goal and remaining11languages/publication unfinished."
+}

@@ -1,9 +1,7 @@
 ---
-title: 'Monty Hall Problem: The Trap of Probability Theory that Betrays Intuition and its Complete Resolution using Bayesian Inference'
-date: "2026-09-24T19:44:38+09:00"
+title: "Monty Hall: host rules and conditional probability"
 slug: 'monty-hall-problem'
-description: 'A TV show game where you choose a winning prize from 3 doors. Should you change your choice after the host opens a losing door? We thoroughly explain the "Monty Hall Problem", which caused a huge controversy involving mathematicians worldwide, from the perspectives of probability theory, Bayesian inference, and cognitive psychology.'
-date: '2026-09-10T00:00:00+09:00'
+description: "When does switching win with probability 2/3? Separate Bayes' theorem, biased and uninformed hosts, and a million doors, with diagrams of theoretical probabilities."
 image: 'img/monty_hall.jpg'
 math: true
 mermaid: true
@@ -12,164 +10,196 @@ tags:
   - 'Paradox'
   - 'Bayes Theorem'
   - 'Statistics'
+date: "2026-09-10T00:00:00+09:00"
+lastmod: "2026-11-11"
 ---
 
-## 1. The Stage is a TV Quiz Show: What Would You Do?
+## 1. Three doors and the rules to specify first
 
-In 1990, the following question was submitted by a reader to the column "Ask Marilyn" in the American news magazine *Parade*.
+One car, two goats. After you choose A from three closed doors A, B and C, the host opens another door and shows a goat. Should you switch to the remaining door?
 
-> You are a contestant on a TV game show. In front of you are **3 doors (A, B, C)**.
-> Behind one door is a **new car (the prize)**, and behind the remaining two doors are **goats (the blanks)**.
-> 
-> 1. First, you choose **Door A**.
-> 2. Then, the host, Monty Hall, who knows what is behind each door, opens **Door B**, which has a goat.
-> 3. Monty says to you, **"You may now change your choice to Door C if you like. What will you do?"**
-> 
-> So, **should you change your door?**
+The Monty Hall problem prompted debate after appearing in the “Ask Marilyn” column in *Parade* in 1990. [Gill's paper](https://pub.math.leidenuniv.nl/~gillrd/montyhall3.pdf) discusses its history and different formulations; [Rosenthal's paper](https://probability.ca/jeff/writing/montyfall.pdf) examines variants of the host's rules. Here we use the following explicit model.
 
-Intuitively, it seems: "The remaining doors are A and C. Since the new car is completely random between the two, the probability of winning is $\frac{1}{2}$ (50%) for each. So it doesn't matter whether you change or not."
+1. The car is equally likely to be behind each door. You choose A without using information about its location.
+2. The host knows what is behind the doors and opens neither A nor the car's door.
+3. Every time, the host opens one unchosen goat door and offers a switch to the remaining unchosen door.
+4. If A has the car, leaving two goat doors available, the host chooses B or C with probability 1/2 each.
 
-However, columnist Marilyn vos Savant (recognized by the Guinness Book of Records as having the highest IQ) replied, **"You should change. If you change, your probability of winning doubles."**
+Equal probabilities are an assumption about the car's placement, rather than a conclusion from not knowing where it is. Write C_A, C_B and C_C for the events that the car is at A, B and C respectively.
 
-This answer caused a sensation across the United States, bringing in a storm of harsh criticism with about 10,000 letters of protest (about 1,000 of which were from scholars with PhDs in mathematics), saying things like "You do not understand the basics of probability" and "That's female logic."
-However, to get straight to the conclusion, **Marilyn's answer was mathematically entirely correct**.
+$$
+\Pr(C_A)=\Pr(C_B)=\Pr(C_C)=\frac13
+$$
 
----
+Under these rules, a strategy of always switching wins with probability 2/3; always staying wins with probability 1/3. After observing that the host opened B, the conditional probability that C has the car is also 2/3. **An overall strategy's winning probability and a probability conditional on a particular door being opened are distinct calculations.**
 
-## 2. The Gap Between Intuition and Mathematics: Branching Probabilities in Mermaid
+## 2. Switching wins in two of the three initial arrangements
 
-Why does our intuition create the illusion that it is "$\frac{1}{2}$"?
-First, let's visualize all the patterns of the game.
+Before conditioning on the label of the opened door, separate the possibilities by the car's initial location.
+
+| Car location (each with probability 1/3) | Door the host opens | Stay | Switch |
+| --- | --- | --- | --- |
+| A | B or C | Win | Lose |
+| B | C | Lose | Win |
+| C | B | Lose | Win |
+
+Switching wins exactly when the initial choice was a goat. This follows because the host always removes a goat and offers a switch.
+
+$$
+\Pr(\mathrm{stay\ wins})=\frac13,\qquad\Pr(\mathrm{switch\ wins})=\frac23
+$$
 
 ```mermaid
 graph TD
-    Start["Game Start"] --> CarA["Car is behind Door A (Prob. 1/3)"]
-    Start --> CarB["Car is behind Door B (Prob. 1/3)"]
-    Start --> CarC["Car is behind Door C (Prob. 1/3)"]
-
-    CarA --> PickA1["You pick Door A"]
-    CarB --> PickA2["You pick Door A"]
-    CarC --> PickA3["You pick Door A"]
-
-    PickA1 --> HostB_or_C["Host opens B or C"]
-    PickA2 --> HostC["Host must open C"]
-    PickA3 --> HostB["Host must open B"]
-
-    HostB_or_C --> Stay1["Stay: Lose..."]
-    HostB_or_C --> Switch1["Switch: Win!"]
-
-    HostC --> Stay2["Stay: Lose..."]
-    HostC --> Switch2["Switch: Win!"]
-
-    HostB --> Stay3["Stay: Lose..."]
-    HostB --> Switch3["Switch: Win!"]
-
-    style Switch2 fill:#bbf,stroke:#333,stroke-width:2px
-    style Switch3 fill:#bbf,stroke:#333,stroke-width:2px
-    style Stay1 fill:#f99,stroke:#333,stroke-width:2px
+    Start["Game starts"] --> CarA["Car at A (probability 1/3)"]
+    Start --> CarB["Car at B (probability 1/3)"]
+    Start --> CarC["Car at C (probability 1/3)"]
+    CarA --> PickA1["Choose A"]
+    CarB --> PickA2["Choose A"]
+    CarC --> PickA3["Choose A"]
+    PickA1 --> HostB_or_C["Open B or C with probability 1/2 each"]
+    PickA2 --> HostC["Open C"]
+    PickA3 --> HostB["Open B"]
+    HostB_or_C --> Stay1["Stay: Win"]
+    HostB_or_C --> Switch1["Switch: Lose"]
+    HostC --> Stay2["Stay: Lose"]
+    HostC --> Switch2["Switch: Win"]
+    HostB --> Stay3["Stay: Lose"]
+    HostB --> Switch3["Switch: Win"]
 ```
 
-Assuming you chose "Door A", the following three scenarios occur with equal probability ($\frac{1}{3}$).
+The value 2/3 is a probability in this model, not a guarantee of exactly two wins in every three games. The relationship between probabilities and empirical win rates in independent repetitions connects to the [law of large numbers](https://kenji.blog/en/p/law-of-large-numbers/).
 
-1. **Scenario 1 (Car is A):** The host opens either B or C, both of which have goats. If you change your door, you **lose**.
-2. **Scenario 2 (Car is B):** The host can only open C, which has a goat. If you change your door, you **win**.
-3. **Scenario 3 (Car is C):** The host can only open B, which has a goat. If you change your door, you **win**.
+## 3. Bayes' theorem after the host opens B
 
-In other words, in 2 out of 3 times (Scenarios 2 and 3), you are in a state where **"you will definitely win if you change doors"**.
-Therefore, the win rate when you change doors is $\frac{2}{3}$, which is **double** the win rate of $\frac{1}{3}$ when you do not change.
+Let C_A, C_B and C_C be the events that the car is at A, B and C respectively, and let M_B be the event that the host opens B. The rules give these likelihoods:
 
----
+$$
+\Pr(M_B\mid C_A)=\frac12,\qquad\Pr(M_B\mid C_B)=0,\qquad\Pr(M_B\mid C_C)=1
+$$
 
-## 3. Strict Proof Using [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/)
+We want probabilities conditional on the information that B was opened. [Bayes' theorem](https://kenji.blog/en/p/bayes-theorem/) combines these likelihoods with the prior probabilities.
 
-To strictly solve this problem mathematically, we use "[Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/)" to calculate conditional probabilities.
+$$
+\Pr(C_i\mid M_B)=\frac{\Pr(M_B\mid C_i)\Pr(C_i)}{\sum_{j\in\{A,B,C\}}\Pr(M_B\mid C_j)\Pr(C_j)}
+$$
 
-$$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
+By the law of total probability, the probability of opening B is
 
-Here, we define the events as follows:
-- $C_A, C_B, C_C$ : The events that the new car is behind doors A, B, and C, respectively. The prior probabilities are $P(C_A) = P(C_B) = P(C_C) = \frac{1}{3}$
-- Suppose you initially selected **Door A**.
-- $M_B$ : The event that the host opens **Door B**, which has a goat.
+$$
+\Pr(M_B)=\frac12\cdot\frac13+0\cdot\frac13+1\cdot\frac13=\frac12
+$$
 
-What we want to find is "the probability that the new car is behind Door C given that the host opened Door B", i.e., the posterior probability $P(C_C|M_B)$.
+The probability that the original door A has the car is therefore
 
-First, let's consider the probability $P(M_B|C_X)$ that the host opens Door B depending on where the new car is.
+$$
+\Pr(C_A\mid M_B)=\frac{(1/2)(1/3)}{1/2}=\frac13
+$$
 
-1. **When the new car is behind Door A ($C_A$)**
-   The host can open either B or C randomly.
-   $$ P(M_B|C_A) = \frac{1}{2} $$
+and the probability that the switching destination C has the car is
 
-2. **When the new car is behind Door B ($C_B$)**
-   The host cannot open the door with the new car, so the probability of opening B is zero.
-   $$ P(M_B|C_B) = 0 $$
+$$
+\Pr(C_C\mid M_B)=\frac{1\cdot(1/3)}{1/2}=\frac23
+$$
 
-3. **When the new car is behind Door C ($C_C$)**
-   The host cannot open A (which you picked) or C (where the new car is), so they must inevitably open B.
-   $$ P(M_B|C_C) = 1 $$
+Merely seeing A and C still closed does not establish equal probabilities. We used the fact that the chance of opening B depends on the car's location.
 
-Next, we find the total probability $P(M_B)$ that the host opens Door B using the "Law of Total Probability".
+## 4. Testing intuition: the host's information and door-selection rule
 
-$$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
-$$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
+The intuition “two remain, so each has half the probability” ignores how they remained. Conversely, knowing the car's location does not make every host decision deterministic. The host in Section 1 still chooses randomly between B and C when A has the car. Nor does leaving C closed establish that the host could not have opened it: if A has the car, opening C was also possible.
 
-Finally, we apply [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/) to calculate the posterior probabilities for Door A and Door C.
+### 4.1. A preference between the two goat doors
 
-**Probability that the new car is behind Door A (if you stay):**
-$$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$
+Keep the other rules, but change the probability of opening B when A has the car to q.
 
-**Probability that the new car is behind Door C (if you switch):**
-$$ P(C_C|M_B) = \frac{P(M_B|C_C) P(C_C)}{P(M_B)} = \frac{1 \times \frac{1}{3}}{\frac{1}{2}} = \frac{2}{3} $$
+$$
+q=\Pr(M_B\mid C_A),\qquad0\le q\le1
+$$
 
-The mathematical proof also clearly demonstrates that **"changing doors doubles your probability of winning (2/3)"**.
+Then
 
----
+$$
+\Pr(M_B)=\frac{1+q}{3}
+$$
 
-## 4. Cognitive Bias: The Value of Information as "Conditioning"
+so the probabilities after B is opened are
 
-Why did even many genius mathematicians intuitively get this problem wrong?
-The answer lies in the "equiprobability bias" and the "failure to update information" built into the human brain.
+$$
+\Pr(C_A\mid M_B)=\frac{q}{1+q},\qquad\Pr(C_C\mid M_B)=\frac1{1+q}
+$$
 
-### 4.1. Equiprobability Bias
-When presented with unknown options, humans have a tendency to unconsciously assign that "the probabilities of the remaining options are always equal."
-The moment we see two doors remaining, our brain automatically labels them as "$50\%$ : $50\%$".
+Similarly, if M_C is the event that the host opens C,
 
-### 4.2. The Information of the Host's "Intent"
-The biggest reason intuition goes wrong is overlooking the fact that **the host's actions are not random**.
-If the rule was "the host opens a door randomly without knowing where the car is, and it just happened to be a goat" (known as the Monty Fall problem), then the probabilities for Door A and Door C would both be $\frac{1}{2}$.
+$$
+\Pr(M_C)=\frac{2-q}{3}
+$$
 
-However, in the actual Monty Hall problem, the host operates under the following strict constraints:
-1. They cannot open the door chosen by the contestant.
-2. They cannot open the door with the new car.
+$$
+\Pr(C_A\mid M_C)=\frac{1-q}{2-q},\qquad\Pr(C_B\mid M_C)=\frac1{2-q}
+$$
 
-Because of these constraints, the very act of the host "opening Door B" gives us **massive information about Door C**. It contains the unspoken message, "I couldn't open Door C (because the new car is there)."
+For example, with q equal to 1, observing B opened leaves A and C equally likely. Observing C opened instead makes B certain to have the car. Nevertheless, averaging over which door was opened, the always-switch strategy's winning probability remains
 
----
+$$
+\Pr(M_B)\Pr(C_C\mid M_B)+\Pr(M_C)\Pr(C_B\mid M_C)=\frac23
+$$
 
-## 5. Correcting Intuition with an Extreme Example
+To calculate probabilities after a particular observation, include the host's preference between door labels in the model.
 
-If you're still not convinced, try increasing the number of doors to **1,000,000**.
+### 4.2. Opening a door without knowing its contents
 
-1. You pick **Door 1** out of 1,000,000 doors. (Probability of winning is $\frac{1}{1,000,000}$)
-2. The host, who knows everything, opens **all 999,998 doors** with goats behind them out of the remaining 999,999 doors.
-3. The only doors closed are "Door 1" which you picked, and "Door 777,777" which the host deliberately left closed.
+Consider a different game: the host does not know where the car is and chooses B or C with probability 1/2 each, independently of the car's location. This rule can reveal the car. Now suppose we observe that the host opened B and revealed a goat.
 
-Now, do you change?
-In this case, unless you believe you pulled off a "one in a million" miracle right at the start, you should change. Realistically, it should be intuitively clear that the probability of the new car being behind **"the single door the host absolutely could not open"** is $\frac{999,999}{1,000,000}$.
+Let U_B be the event that this host opens B, and G the event that the opened door reveals a goat. Then
 
-The Monty Hall problem (with 3 doors) is simply a scaled-down phenomenon of this "1,000,000 doors" scenario.
+$$
+\Pr(U_B\cap G\mid C_A)=\frac12,\qquad\Pr(U_B\cap G\mid C_B)=0,\qquad\Pr(U_B\cap G\mid C_C)=\frac12
+$$
+
+Equal priors and Bayes' theorem give
+
+$$
+\Pr(C_A\mid U_B\cap G)=\Pr(C_C\mid U_B\cap G)=\frac12
+$$
+
+“Always revealing a goat” and “happening to reveal a goat” describe different observation mechanisms. An explanation of human psychology and a probability calculation under specified rules are separate questions.
+
+## 5. A million doors still requires a clear conditioning event
+
+Number n doors from 1 to n, with the car's location C uniform and the initial choice fixed at 1. Every time, the informed host opens n−2 unchosen goat doors and offers a switch to the single remaining unchosen door R. Here n is an integer at least 3.
+
+$$
+\Pr(C=1)=\frac1n,\qquad\Pr(C=R)=\frac{n-1}{n}
+$$
+
+With a million doors, the unconditional probability of winning by always switching is 999999/1000000. The same reasoning applies: switching wins whenever the initial choice was a goat.
+
+Now condition only on the remaining label R. If, whenever the initial choice has the car, the host chooses R uniformly among the other n−1 doors, then for a particular r different from 1,
+
+$$
+\Pr(C=r\mid R=r)=\frac{1/n}{(1/n)+(1/n)(1/(n-1))}=\frac{n-1}{n}
+$$
+
+Under this symmetric rule, observing that door 777777 was left closed out of a million still gives the switching destination a probability of 999999/1000000.
+
+However, if the host always leaves that same label r whenever the initial choice has the car, then after observing that label remaining,
+
+$$
+\Pr(C=r\mid R=r)=\frac{1/n}{(1/n)+(1/n)}=\frac12
+$$
+
+The overall always-switch winning probability can remain high while the probability after observing a particular label changes. Information such as the order in which doors were opened is not included in this conditioning on R alone.
+
+The next diagram partitions initial arrangements in the three-door model of Section 1 by which strategy wins. The values 2 and 1 represent a theoretical probability ratio, not measured trial counts.
 
 ```mermaid
-pie title Effect of Switching Doors (100 Simulations)
-    "Win by switching (approx. 66.7%)" : 67
-    "Win by staying (approx. 33.3%)" : 33
+pie title Winning strategy by initial arrangement (theoretical ratio)
+    "Switch wins (2/3)" : 2
+    "Stay wins (1/3)" : 1
 ```
 
-## 6. Conclusion: Life and Business Lessons from Probability Theory
+## 6. Check assumptions and information before changing a choice
 
-The Monty Hall problem goes beyond a mere quiz and teaches us important lessons.
+The lesson is not that changing choices doubles success in every situation. Winning probabilities depend on the car's placement, the host's knowledge, the opening rule and the rule for offering a switch.
 
-1. **Intuition is often wrong**: The human brain has not evolved to intuitively process complex conditional probabilities. In important decision-making, relying solely on intuition is dangerous.
-2. **Update probabilities with new information (Bayesian updating)**: When situations change and new information (such as which door the host opened) is provided, the key to success is whether you can flexibly update your probabilities and strategies without clinging to existing beliefs.
-
-The small decision to "change your door" just might double the probability of getting a "new car" in your life.
-
+In business and everyday life, new information can help us revisit assumptions and update decisions. Real costs, preferences and ways of collecting information still need their own models; they cannot simply be equated with three doors.

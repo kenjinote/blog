@@ -1,0 +1,26 @@
+{
+  "draftedAt": "2026-11-11T12:52:36.958656+09:00",
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/モンティ・ホール問題/index.md",
+      "originalSha256": "406efd6f9642b4134a28eb41333c1c56365f9f57054b12f7f4d71e87e0f2f5c6",
+      "draftSha256": "30faa58deb5e5245fc44a4f22a88acab7a1995fd9fc3f8e362d706755d1d686e"
+    },
+    {
+      "language": "en",
+      "path": "content/post/モンティ・ホール問題/index.en.md",
+      "originalSha256": "29c4b16723528ff34732b12c46cde0a9718a91fe1e92f37cff73842cbc0b726f",
+      "draftSha256": "b7f71f1936452aaaa89d9a6b6479a2edf38ed863ca14a9d99051ff318ac42b7a"
+    }
+  ],
+  "texEach": 18,
+  "diagramsEach": 2,
+  "graphEdges": 15,
+  "pieRatio": [
+    2,
+    1
+  ],
+  "reviewedTranslationsAdded": 0,
+  "scope": "JA/EN full rewrite after original full reading;pending revised full reread/validation/ledger. Other11translations unreviewed. No publication/native/browser/psychological certification."
+}
