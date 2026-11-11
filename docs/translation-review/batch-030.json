@@ -283,6 +283,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/囚人のジレンマ/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-11",
+      "reviewer": "Codex (AI)",
+      "source": "post/囚人のジレンマ/index.md",
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "translationHash": "3b532807c58632ac4d4dcb6106fe971237f5637ecba29796c0488670f797bf48",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all original and revised German metadata,six sections,matrix and both full diagrams against frozen Japanese. Matched fictional simultaneous own-utility game,pure Pareto CC/CD/DC versus CCsum maximum,unilateral Nash deviation,finite common-knowledge backward induction,infinite conditionalgrim equilibrium and previous-round TFT. Preserved all three application topics without claiming universal economic,environmental or health outcomes."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared Auszahlung/Nutzen versus Haftzeit,strict dominance,strikt dominant,reine/gemischte Strategien,Pareto-Effizienz,Nash-Gleichgewicht versus teilspielperfektes Gleichgewicht,Rückwärtsinduktion,gemeinsames Wissen(common knowledge),Diskontfaktor,Tit for Tat and Grim Trigger. Original Yen was correct and retained. Negative utility does not mean negative imprisonment and zero years does not imply Freispruch. Previous/current/nextRunde kept distinct."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all nine identical TeX and four payoff cells,T0>R-1>P-5>S-10,efficient pure CC/CD/DC,CCsum-2 versus others-10,strict dominance and mixed-belief advantage5-4p>=1. Own/opponent payoff arguments explicit;infinite perfect-monitoring0<=delta<1 yieldsgrim1/5,not TFT theorem or MITdifferenttable. Auxiliary four profiles,101beliefs2players,102discounts612delays/two8round traces once;not general or empirical proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Zero executable article programs. Read two complete six-edge Mermaid sources:conditionalone-shot incentives andt=1,simultaneousplay,observe roundt,choose roundt+1 and incrementt on both branches. Removed repentance shortcut. Exact graphsource/topology/decodedHTMLmath and library presence checked;flags already true. No browser,visual,KaTeX/Mermaid execution or tournament reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed two irrelevant links from ordinary German Zustand to state-management-history-redux-context-recoil-zustand;they did not explain game states. Final reference set is exactly the two primary sources,matching Japanese/present in preview;documented reading scope retained. Preserved slug,image hash,taxonomy,both date lines/effectiveSep10T03 and actualNov11lastmod.14hreflang13sidebar,31bundles1736pages/HTTPS3157HTML41XML passed. Prior17tests not rerun;other4prose/publication pending."
+        }
+      },
+      "summary": "Full German review removing unrelated Zustand links and clarifying efficiency,equilibrium and repeated-game conditions.",
+      "languageSpecificFindings": "Original German linked Zustand twice to an unrelated state-management library article;removed both. Retained correct Yen,distinguished Auszahlung/Nutzen from Haftzeit and zero sentence from Freispruch. Replaced unweigerlich human behavior,überwältigender universal TFT interpretation and longrelationship guarantee. Polished Der Wert1/5 and both-player Grim wording before first validation.",
+      "validation": "docs/translation-review/batch-030-de-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "4 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0 and empirical tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -592,6 +632,50 @@
       "unreviewedTranslations": 12665,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 5,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-11",
+      "languagesRead": [
+        "de"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "48910271e0dbaa369da1ceda711a4e3fca6e28d530174a683bca45178d8b501f",
+      "validation": "docs/translation-review/batch-030-de-validation.json",
+      "checks": "docs/translation-review/batch-030-de-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-030-de-ledger-validation.json",
+      "texEach": 9,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "mixedBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "delayedDeviationCases": 612,
+        "tftTraces": 2,
+        "roundsEach": 8,
+        "scope": "Once per invocation. Exact finite auxiliary arithmetic/traces, not article programs, empirical tournament reproduction, browser execution, all-strategy or real-world proof. General strict dominance and SPE argument separately read in prose."
+      },
+      "actualPreviewBundles": 31,
+      "multilingualPages": 1736,
+      "httpsHtmlPages": 3157,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 368,
+      "unreviewedTranslations": 12664,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 4,
       "publicationPending": true
     }
   ]
