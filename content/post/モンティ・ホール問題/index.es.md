@@ -1,9 +1,7 @@
 ---
-title: 'El problema de Monty Hall: Una trampa para la intuición y su solución completa mediante inferencia bayesiana'
-date: "2026-09-24T19:44:38+09:00"
+title: "Monty Hall: reglas del presentador y probabilidad condicional"
 slug: 'monty-hall-problem'
-description: 'Un juego de televisión donde eliges un premio entre 3 puertas. Después de que el presentador abre una puerta perdedora, ¿deberías cambiar tu elección? Analizamos en profundidad el "problema de Monty Hall", que generó un gran debate mundial entre los matemáticos, desde las perspectivas de la teoría de la probabilidad, la inferencia bayesiana y la psicología cognitiva.'
-date: '2026-09-10T00:00:00+09:00'
+description: "¿Cuándo cambiar de puerta da una probabilidad de ganar de 2/3? Reglas del presentador, Bayes y un millón de puertas, con diagramas teóricos."
 image: 'img/monty_hall.jpg'
 math: true
 mermaid: true
@@ -12,165 +10,196 @@ tags:
   - 'Paradoja'
   - 'Teorema de Bayes'
   - 'Estadística'
+date: "2026-09-10T00:00:00+09:00"
+lastmod: "2026-11-11"
 ---
 
-## 1. El escenario es un concurso de televisión: ¿Qué harías tú?
+## 1. Tres puertas y las reglas que hay que fijar primero
 
-En 1990, en la columna "Ask Marilyn" (Pregúntale a Marilyn) de la revista de noticias estadounidense *Parade*, un lector envió la siguiente pregunta:
+Un coche y dos cabras. Eliges A entre tres puertas cerradas, A, B y C. Después, el presentador abre otra puerta y muestra una cabra. ¿Conviene cambiar a la puerta que queda?
 
-> Eres un concursante en un programa de televisión. Frente a ti hay **3 puertas (A, B, C)**.
-> Detrás de una de las puertas hay **un coche nuevo (premio)**, y detrás de las otras dos hay **cabras (perdedoras)**.
-> 
-> 1. Primero, tú eliges la **Puerta A**.
-> 2. Entonces, Monty Hall, el presentador que sabe detrás de qué puerta está el coche, abre la **Puerta B**, que revela una cabra.
-> 3. Monty te dice: **"Ahora puedes cambiar a la Puerta C. ¿Qué haces?"**
-> 
-> Y bien, ¿ **deberías cambiar de puerta**?
+El problema de Monty Hall suscitó debate tras aparecer en la columna «Ask Marilyn» de *Parade* en 1990. [El artículo de Gill](https://pub.math.leidenuniv.nl/~gillrd/montyhall3.pdf) trata su historia y distintas formulaciones; [el de Rosenthal](https://probability.ca/jeff/writing/montyfall.pdf) analiza variantes de las reglas del presentador. Aquí utilizamos el siguiente modelo explícito.
 
-Intuitivamente, podrías pensar: "Quedan dos puertas, A y C. Dado que el coche está en una de ellas de forma completamente aleatoria, la probabilidad de ganar en ambas es de $\frac{1}{2}$ (50%). Así que da lo mismo si cambio o no".
+1. El coche tiene la misma probabilidad de estar detrás de cada puerta. Eliges A sin utilizar información sobre su ubicación.
+2. El presentador conoce el contenido de las puertas y no abre ni A ni la puerta del coche.
+3. En cada partida abre una puerta no elegida que contiene una cabra y siempre ofrece cambiar a la otra puerta no elegida que sigue cerrada.
+4. Si el coche está en A, quedan dos puertas con cabra: el presentador elige abrir B o C con probabilidad 1/2 cada una.
 
-Sin embargo, la columnista Marilyn vos Savant (reconocida en el Libro Guinness de los Récords por tener el coeficiente intelectual más alto) respondió: **"Deberías cambiar. Si cambias, tu probabilidad de ganar se duplica"**.
+La equiprobabilidad es un supuesto sobre la colocación del coche, no una conclusión de ignorar dónde está. Denotamos por C_A, C_B y C_C los sucesos de que el coche esté en A, B y C, respectivamente.
 
-Esta respuesta causó sensación en todo el país y provocó una avalancha de unas 10.000 cartas de protesta (entre ellas unas 1.000 de académicos con doctorado en matemáticas). Fueron bombardeados con duras críticas como "No entiendes lo básico de la probabilidad" y "Lógica de mujeres".
-Pero, en conclusión, **la respuesta de Marilyn era matemáticamente, de manera absoluta, correcta**.
+$$
+\Pr(C_A)=\Pr(C_B)=\Pr(C_C)=\frac13
+$$
 
----
+Bajo estas reglas, la estrategia de cambiar siempre gana con probabilidad 2/3 y la de mantener siempre la elección inicial, con probabilidad 1/3. Tras observar que el presentador ha abierto B, la probabilidad condicional de que C contenga el coche también es 2/3. **La probabilidad global de ganar con una estrategia y la probabilidad condicionada a que se abra una puerta concreta son cálculos distintos.**
 
-## 2. La brecha entre la intuición y las matemáticas: Visualizando las ramas de probabilidad con Mermaid
+## 2. Cambiar gana en dos de las tres disposiciones iniciales
 
-¿Por qué nuestra intuición nos engaña haciéndonos creer que es "$\frac{1}{2}$"?
-Primero, visualicemos todos los patrones del juego.
+Sin condicionar todavía a qué puerta se ha abierto, separamos los casos según la ubicación inicial del coche.
+
+| Ubicación del coche (cada caso con probabilidad 1/3) | Puerta que abre el presentador | Mantener | Cambiar |
+| --- | --- | --- | --- |
+| A | B o C | Ganas | Pierdes |
+| B | C | Pierdes | Ganas |
+| C | B | Pierdes | Ganas |
+
+Cambiar gana si y solo si al principio elegiste una puerta con cabra. Esto ocurre porque el presentador siempre descarta una cabra y ofrece el cambio.
+
+$$
+\Pr(\mathrm{stay\ wins})=\frac13,\qquad\Pr(\mathrm{switch\ wins})=\frac23
+$$
 
 ```mermaid
 graph TD
-    Start["Inicio del juego"] --> CarA["El coche está en la Puerta A (probabilidad 1/3)"]
-    Start --> CarB["El coche está en la Puerta B (probabilidad 1/3)"]
-    Start --> CarC["El coche está en la Puerta C (probabilidad 1/3)"]
-
-    CarA --> PickA1["Eliges la Puerta A"]
-    CarB --> PickA2["Eliges la Puerta A"]
-    CarC --> PickA3["Eliges la Puerta A"]
-
-    PickA1 --> HostB_or_C["El presentador abre B o C"]
-    PickA2 --> HostC["El presentador abre C obligatoriamente"]
-    PickA3 --> HostB["El presentador abre B obligatoriamente"]
-
-    HostB_or_C --> Stay1["No cambias: ¡Premio!"]
-    HostB_or_C --> Switch1["Cambias: Pierdes..."]
-
-    HostC --> Stay2["No cambias: Pierdes..."]
-    HostC --> Switch2["Cambias: ¡Premio!"]
-
-    HostB --> Stay3["No cambias: Pierdes..."]
-    HostB --> Switch3["Cambias: ¡Premio!"]
-
-    style Switch2 fill:#bbf,stroke:#333,stroke-width:2px
-    style Switch3 fill:#bbf,stroke:#333,stroke-width:2px
-    style Stay1 fill:#f99,stroke:#333,stroke-width:2px
+    Start["Empieza el juego"] --> CarA["Coche en A (probabilidad 1/3)"]
+    Start --> CarB["Coche en B (probabilidad 1/3)"]
+    Start --> CarC["Coche en C (probabilidad 1/3)"]
+    CarA --> PickA1["Eliges A"]
+    CarB --> PickA2["Eliges A"]
+    CarC --> PickA3["Eliges A"]
+    PickA1 --> HostB_or_C["Abre B o C con probabilidad 1/2 cada una"]
+    PickA2 --> HostC["Abre C"]
+    PickA3 --> HostB["Abre B"]
+    HostB_or_C --> Stay1["Mantener: Ganas"]
+    HostB_or_C --> Switch1["Cambiar: Pierdes"]
+    HostC --> Stay2["Mantener: Pierdes"]
+    HostC --> Switch2["Cambiar: Ganas"]
+    HostB --> Stay3["Mantener: Pierdes"]
+    HostB --> Switch3["Cambiar: Ganas"]
 ```
 
-Si asumimos que has elegido la "Puerta A", ocurrirán los siguientes tres escenarios con igual probabilidad ($\frac{1}{3}$).
+El valor 2/3 es una probabilidad del modelo, no una garantía de ganar exactamente dos de cada tres partidas. La relación entre las probabilidades y las frecuencias relativas de victoria en repeticiones independientes conecta con la [ley de los grandes números](https://kenji.blog/es/p/law-of-large-numbers/).
 
-1. **Escenario 1 (El coche está en A):** El presentador abre B o C, donde hay una cabra. Si cambias de puerta, **pierdes**.
-2. **Escenario 2 (El coche está en B):** El presentador solo puede abrir C, donde hay una cabra. Si cambias de puerta, **ganas**.
-3. **Escenario 3 (El coche está en C):** El presentador solo puede abrir B, donde hay una cabra. Si cambias de puerta, **ganas**.
+## 3. El teorema de Bayes después de abrir B
 
-En otras palabras, en 2 de las 3 veces (Escenarios 2 y 3), **"si cambias de puerta, ganas seguro"**.
-Por lo tanto, la probabilidad de ganar si cambias de puerta es de $\frac{2}{3}$, que es el **doble** de la probabilidad de $\frac{1}{3}$ de ganar si no cambias.
+C_A, C_B y C_C son los sucesos de que el coche esté en A, B y C; M_B es el suceso de que el presentador abra B. Las reglas dan estas verosimilitudes:
 
----
+$$
+\Pr(M_B\mid C_A)=\frac12,\qquad\Pr(M_B\mid C_B)=0,\qquad\Pr(M_B\mid C_C)=1
+$$
 
-## 3. Demostración rigurosa mediante el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/)
+Buscamos probabilidades condicionadas a la información de que B se ha abierto. El [teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) combina estas verosimilitudes con las probabilidades a priori.
 
-Para resolver estrictamente este problema de forma matemática, utilizamos el "[Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/)", que calcula la probabilidad condicional.
+$$
+\Pr(C_i\mid M_B)=\frac{\Pr(M_B\mid C_i)\Pr(C_i)}{\sum_{j\in\{A,B,C\}}\Pr(M_B\mid C_j)\Pr(C_j)}
+$$
 
-$$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
+Por la ley de la probabilidad total, la probabilidad de abrir B es
 
-Aquí, definimos los eventos de la siguiente manera:
-- $C_A, C_B, C_C$ : Los eventos donde el coche está en la Puerta A, B y C respectivamente. Las probabilidades a priori son $P(C_A) = P(C_B) = P(C_C) = \frac{1}{3}$.
-- Supongamos que eliges inicialmente la **Puerta A**.
-- $M_B$ : El evento en el que el presentador abre la **Puerta B** donde hay una cabra.
+$$
+\Pr(M_B)=\frac12\cdot\frac13+0\cdot\frac13+1\cdot\frac13=\frac12
+$$
 
-Lo que queremos averiguar es "la probabilidad de que el coche esté en la Puerta C, dado que el presentador ha abierto la Puerta B", es decir, la probabilidad a posteriori $P(C_C|M_B)$.
+Por tanto, la probabilidad de que el coche esté en la puerta original A es
 
-Primero, consideramos la probabilidad de que el presentador abra la puerta B dependiendo de dónde esté el coche, $P(M_B|C_X)$.
+$$
+\Pr(C_A\mid M_B)=\frac{(1/2)(1/3)}{1/2}=\frac13
+$$
 
-1. **Si el coche está en la Puerta A ($C_A$)**
-   El presentador puede abrir B o C al azar.
-   $$ P(M_B|C_A) = \frac{1}{2} $$
+y la de que esté en C, la puerta a la que cambiarías, es
 
-2. **Si el coche está en la Puerta B ($C_B$)**
-   El presentador no puede abrir la puerta con el coche, por lo que la probabilidad de abrir B es cero.
-   $$ P(M_B|C_B) = 0 $$
+$$
+\Pr(C_C\mid M_B)=\frac{1\cdot(1/3)}{1/2}=\frac23
+$$
 
-3. **Si el coche está en la Puerta C ($C_C$)**
-   El presentador no puede abrir A (la que elegiste) ni C (donde está el coche), así que inevitablemente tiene que abrir B.
-   $$ P(M_B|C_C) = 1 $$
+Ver que A y C siguen cerradas no basta para establecer que sean equiprobables. El cálculo utiliza que la probabilidad de abrir B depende de dónde está el coche.
 
-A continuación, calculamos la probabilidad total de que el presentador abra la puerta B, $P(M_B)$, usando el "Teorema de la probabilidad total".
+## 4. Poner a prueba la intuición: información y reglas del presentador
 
-$$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
-$$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
+La intuición «quedan dos, así que cada una tiene la mitad de probabilidad» pasa por alto cómo han quedado. A la inversa, conocer la ubicación del coche no convierte todas las decisiones del presentador en deterministas. En la sección 1 sigue eligiendo al azar entre B y C cuando el coche está en A. Dejar C cerrada tampoco demuestra que fuera imposible abrirla: si el coche está en A, abrir C también estaba permitido.
 
-Finalmente, aplicamos el [teorema de Bayes](/es/p/bayes-theorem/) para calcular las probabilidades a posteriori para la Puerta A y la Puerta C.
+### 4.1. Preferencia entre las dos puertas con cabra
 
-**Probabilidad de que el coche esté en la Puerta A (si no cambias):**
-$$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$
+Mantenemos las demás reglas y solo cambiamos a q la probabilidad de abrir B cuando el coche está en A.
 
-**Probabilidad de que el coche esté en la Puerta C (si cambias):**
-$$ P(C_C|M_B) = \frac{P(M_B|C_C) P(C_C)}{P(M_B)} = \frac{1 \times \frac{1}{3}}{\frac{1}{2}} = \frac{2}{3} $$
+$$
+q=\Pr(M_B\mid C_A),\qquad0\le q\le1
+$$
 
-La demostración matemática también muestra claramente que **"cambiar de puerta duplica tus posibilidades de ganar (2/3)"**.
+Entonces
 
----
+$$
+\Pr(M_B)=\frac{1+q}{3}
+$$
 
-## 4. Sesgo cognitivo: El valor de la información del "condicionamiento"
+de modo que las probabilidades después de abrir B son
 
-¿Por qué incluso muchos matemáticos geniales se equivocan intuitivamente en este problema?
-Se debe al "sesgo de equiprobabilidad" y al "fallo en la actualización de la información" integrados en el cerebro humano.
+$$
+\Pr(C_A\mid M_B)=\frac{q}{1+q},\qquad\Pr(C_C\mid M_B)=\frac1{1+q}
+$$
 
-### 4.1. Sesgo de equiprobabilidad (Equiprobability Bias)
-Los humanos tienden inconscientemente a asignar que "la probabilidad de las opciones restantes es siempre igual" cuando se les presentan opciones desconocidas.
-En el momento en que vemos que quedan dos puertas, nuestro cerebro las etiqueta automáticamente como "$50\%$ : $50\%$".
+Análogamente, si M_C es el suceso de que el presentador abra C,
 
-### 4.2. La información de la "intención" del presentador
-La principal razón por la que nuestra intuición falla es ignorar el hecho de que **las acciones del presentador no son aleatorias**.
-Si la regla fuera que el presentador "abre una puerta al azar sin saber dónde está el coche y da la casualidad de que es una cabra" (conocido como el problema de Monty Fall), la probabilidad para la Puerta A y la Puerta C sería de $\frac{1}{2}$ para ambas.
+$$
+\Pr(M_C)=\frac{2-q}{3}
+$$
 
-Sin embargo, en el problema real de Monty Hall, el presentador actúa bajo las siguientes estrictas restricciones:
-1. No puede abrir la puerta que eligió el concursante.
-2. No puede abrir la puerta donde está el coche.
+$$
+\Pr(C_A\mid M_C)=\frac{1-q}{2-q},\qquad\Pr(C_B\mid M_C)=\frac1{2-q}
+$$
 
-Debido a estas restricciones, el acto del presentador de "abrir la puerta B" en sí mismo nos da una **información enorme sobre la Puerta C**. Es un mensaje tácito de: "No pude abrir la puerta C (porque allí está el coche)".
+Por ejemplo, con q igual a 1, observar que B se ha abierto deja A y C con probabilidad 1/2 cada una. En cambio, observar que se ha abierto C permite concluir que el coche está en B con certeza. Aun así, al promediar según qué puerta se ha abierto, la probabilidad de ganar cambiando siempre sigue siendo
 
----
+$$
+\Pr(M_B)\Pr(C_C\mid M_B)+\Pr(M_C)\Pr(C_B\mid M_C)=\frac23
+$$
 
-## 5. Corrigiendo la intuición con un ejemplo extremo
+Para calcular probabilidades después de una observación concreta, hay que incluir en el modelo la preferencia del presentador por una u otra puerta.
 
-Si aún no estás convencido, intentemos aumentar el número de puertas a **1 millón**.
+### 4.2. Abrir sin conocer el contenido
 
-1. Tú eliges la **Puerta 1** entre 1 millón de puertas. (La probabilidad de acertar es $\frac{1}{1,000,000}$)
-2. El presentador, que lo sabe todo, **abre 999.998 puertas** con cabras de las 999.999 restantes.
-3. Las únicas puertas cerradas son la "Puerta 1" que tú elegiste y la "Puerta 777.777" que el presentador dejó a propósito.
+Consideremos otro juego: el presentador no sabe dónde está el coche y elige abrir B o C con probabilidad 1/2 cada una, independientemente de la ubicación del coche. Esta regla puede revelar el coche. Ahora observamos que ha abierto B y ha mostrado una cabra.
 
-Ahora, ¿cambias?
-En este caso, a menos que creas que lograste el milagro de "uno en un millón" en tu primera elección, no deberías mantenerla. Probablemente puedas entender intuitivamente que la probabilidad de que el coche esté en **"la única puerta que el presentador no pudo abrir bajo ningún concepto"** es de $\frac{999,999}{1,000,000}$.
+Sea U_B el suceso de que este presentador abra B, y G el de que la puerta abierta revele una cabra. Entonces
 
-El problema de Monty Hall (con 3 puertas) es simplemente este mismo fenómeno reducido a la escala de "1 millón de puertas".
+$$
+\Pr(U_B\cap G\mid C_A)=\frac12,\qquad\Pr(U_B\cap G\mid C_B)=0,\qquad\Pr(U_B\cap G\mid C_C)=\frac12
+$$
+
+Con probabilidades a priori iguales y el teorema de Bayes obtenemos
+
+$$
+\Pr(C_A\mid U_B\cap G)=\Pr(C_C\mid U_B\cap G)=\frac12
+$$
+
+«Revelar siempre una cabra» y «revelar una cabra por casualidad» describen mecanismos de observación distintos. Explicar la psicología humana y calcular probabilidades bajo unas reglas dadas son cuestiones diferentes.
+
+## 5. Un millón de puertas también exige precisar la condición
+
+Numeramos n puertas del 1 al n. La ubicación C del coche se distribuye uniformemente entre ellas y la elección inicial se fija en 1. En cada partida, el presentador informado abre n−2 puertas no elegidas que contienen cabras y ofrece cambiar a la única puerta no elegida que queda cerrada, R. Aquí n es un entero mayor o igual que 3.
+
+$$
+\Pr(C=1)=\frac1n,\qquad\Pr(C=R)=\frac{n-1}{n}
+$$
+
+Con un millón de puertas, la probabilidad incondicional de ganar cambiando siempre es 999999/1000000. Se aplica el mismo razonamiento: cambiar gana cuando la elección inicial era una puerta con cabra.
+
+Calculemos ahora probabilidades condicionadas únicamente al número R de la puerta que queda cerrada. Supongamos además que, cuando la puerta elegida inicialmente contiene el coche, el presentador elige R uniformemente entre las otras n−1 puertas. Para un número concreto r distinto de 1, esto da
+
+$$
+\Pr(C=r\mid R=r)=\frac{1/n}{(1/n)+(1/n)(1/(n-1))}=\frac{n-1}{n}
+$$
+
+Con esta regla simétrica, observar que ha quedado cerrada la puerta 777777 de un millón sigue dando una probabilidad de 999999/1000000 de ganar al cambiar a ella.
+
+Sin embargo, si el presentador deja siempre ese mismo número r cuando la puerta elegida inicialmente contiene el coche, entonces, después de observar que queda esa puerta,
+
+$$
+\Pr(C=r\mid R=r)=\frac{1/n}{(1/n)+(1/n)}=\frac12
+$$
+
+La probabilidad global de ganar cambiando siempre puede seguir siendo alta, mientras que la probabilidad tras observar un número concreto cambia. No se incluye información adicional, como el orden de apertura, en este condicionamiento basado solo en R.
+
+El siguiente diagrama divide las disposiciones iniciales del modelo de tres puertas de la sección 1 según qué estrategia gana. Los valores 2 y 1 representan una proporción teórica de probabilidades, no cantidades de ensayos observados.
 
 ```mermaid
-pie title Efecto de cambiar de puerta (Simulación de 100 veces)
-    "Ganas cambiando (aprox. 66.7%)" : 67
-    "Ganas sin cambiar (aprox. 33.3%)" : 33
+pie title Estrategia ganadora según la disposición inicial (proporción teórica)
+    "Cambiar gana (2/3)" : 2
+    "Mantener gana (1/3)" : 1
 ```
 
-## 6. Conclusión: Lecciones para los negocios y la vida de la teoría de la probabilidad
+## 6. Revisar los supuestos y la información antes de cambiar
 
-El problema de Monty Hall va más allá de ser un simple concurso y nos enseña valiosas lecciones.
+La lección no es que cambiar de elección duplique el éxito en cualquier situación. Las probabilidades de ganar dependen de cómo se coloca el coche, del conocimiento del presentador, de la regla de apertura y de la regla para ofrecer el cambio.
 
-1. **La intuición a menudo se equivoca**: El cerebro humano no ha evolucionado para procesar intuitivamente probabilidades condicionales complejas. Es peligroso basarse solo en la intuición para tomar decisiones importantes.
-2. **Actualizar probabilidades con nueva información (Actualización bayesiana)**: Cuando la situación cambia y se dispone de nueva información (como qué puerta abrió el presentador), la clave del éxito está en la capacidad de actualizar tus probabilidades y estrategias de forma flexible, sin aferrarte a tus ideas preconcebidas.
-
-La pequeña decisión de "cambiar de puerta" puede duplicar tus posibilidades de conseguir el "coche nuevo" en tu vida.
-
-
+En los negocios y la vida cotidiana, la nueva información puede ayudar a revisar supuestos y actualizar decisiones. Los costes, las preferencias y las formas de recopilar información necesitan sus propios modelos; no pueden equipararse sin más a tres puertas.
