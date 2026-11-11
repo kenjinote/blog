@@ -49,3 +49,7 @@ Read old and revised full bodies,table and diagrams against Japanese. Corrected�
 ## Portuguese original reading — 2026-11-11
 
 Complete original metadata/body/table/two diagrams read in two bounded chunks;original hash unchanged against source audit. No revised body exists and no review was registered. Identified goats as os perdedores,positive/negative-person versus disease-status confusion,and model/psychological/business generalizations requiring alignment with revised Japanese. Next action is manual rewrite and full revised reread,then proof/ledger. Other6translation originals remain unread;Portuguese itself unreviewed in ledger. CurrentAI353/unreviewed12679/human0.
+
+## Portuguese full revision and review — 2026-11-11
+
+Following the preserved original-reading receipt,manually rewrote and completely reread Portuguese against Japanese. Corrected cabras(os perdedores),pessoas positivas/negativas versus disease status,and unsupported brain/business-success generalizations. Aligned verossimilhanças,a priori/a posteriori,sensibilidade/especificidade,expected counts with decimal commas and common utilidade units.15TeX,13/5edge diagrams,3primary/two localized refs,date/image/taxonomy and30bundle1680pages3052HTML41XML passed. Prior17tests referenced,not rerun. AI1added,total354/unreviewed12678/human0;prior353ledger/fiveexisting batch029reviews unchanged. Other6translation bodies unread;publication pending.

@@ -1,227 +1,209 @@
 ---
-title: "A Divergência Entre Intuição e Probabilidade: Explorando as Profundezas do Problema de Monty Hall"
+title: "Intuição e probabilidade: pressupostos de Monty Hall e psicologia"
 date: "2026-09-24T19:44:38+09:00"
-description: "O principal exemplo da teoria das probabilidades que desafia a intuição: o \"Problema de Monty Hall\". Por que a intuição humana diverge tanto da probabilidade? Da prova matemática ao contexto psicológico, explicaremos o paradoxo por completo."
+description: "Diferencie as regras do apresentador, a probabilidade condicional e a evidência psicológica. Um milhão de portas, falsos positivos hipotéticos e custos da troca."
 slug: "paradox-monty-hall-problem"
 categories: ["science"]
 tags: ["probability", "monty-hall-problem", "mathematics"]
 image: "eyecatch.jpg"
+math: true
+mermaid: true
+lastmod: "2026-11-11"
 ---
 
-# Introdução: A Armadilha em que Nossa Intuição Cai e o Mundo da Probabilidade
+## 1. Definir as regras antes de examinar a intuição
 
-Em nossa vida cotidiana, a "intuição" atua como uma ferramenta de tomada de decisão incrivelmente poderosa. A habilidade de julgar instantaneamente uma situação e escolher uma ação com base em regras empíricas e heurísticas é uma dádiva evolutiva adquirida para ajudar a humanidade a sobreviver em ambientes naturais hostis. No entanto, esse excelente sistema intuitivo tem uma fraqueza: sob certas condições, pode causar erros fatais. O exemplo mais notável disso ocorre quando nos deparamos com problemas envolvendo "probabilidade".
+Você escolhe uma de três portas. O apresentador abre outra para mostrar uma cabra e pergunta se você quer trocar para a porta restante. O [problema de Monty Hall](https://kenji.blog/pt/p/monty-hall-problem/) ilustra por que o número de opções restantes, por si só, não determina suas probabilidades. [O artigo de Gill](https://pub.math.leidenuniv.nl/~gillrd/montyhall3.pdf) examina a história do problema, incluindo a discussão de 1990 na coluna “Ask Marilyn” da revista *Parade*, e diferentes formulações matemáticas.
 
-A teoria das probabilidades é uma estrutura matemática para avaliar quantitativamente eventos incertos, mas suas conclusões muitas vezes entram em conflito severo com nossa intuição. Esse fenômeno tem sido amplamente estudado nos campos da psicologia, economia comportamental e educação matemática como "viés cognitivo" ou "divergência entre intuição e lógica".
+Primeiro, vamos explicitar o modelo usado neste artigo.
 
-Neste artigo, abordaremos o paradoxo mais famoso que simboliza essa divergência entre intuição e probabilidade: o "Problema de Monty Hall". Apesar de sua aparente simplicidade, este problema provocou grandes debates envolvendo renomados matemáticos e cientistas de todo o mundo. Através da pergunta "Por que caímos em uma armadilha probabilística tão simples?", exploraremos profunda e exaustivamente as limitações da estrutura cognitiva humana e a importância do pensamento lógico.
+1. Atrás das portas A, B e C há um carro e duas cabras. A posição do carro tem distribuição uniforme entre as três portas. Você escolhe A inicialmente, sem usar informações sobre essa posição.
+2. O apresentador sabe onde está o carro e não abre A nem a porta com o carro.
+3. Em toda partida, abre uma porta não escolhida com uma cabra e sempre oferece a troca para a outra porta não escolhida que continua fechada.
+4. Quando o carro está atrás de A, abre B ou C com probabilidade 1/2 para cada uma.
 
-## Capítulo 1: O Que é o Problema de Monty Hall?
+Probabilidades iguais são uma hipótese sobre a posição do carro, e não uma consequência de desconhecê-la. Denotamos por C_A, C_B e C_C os eventos de o carro estar atrás de A, B e C, respectivamente.
 
-[O Problema de Monty Hall](/pt/p/monty-hall-problem/) é um paradoxo probabilístico que leva o nome de Monty Hall, o apresentador do antigo programa de televisão americano *Let's Make a Deal*. O problema tornou-se amplamente conhecido do público após ser apresentado em 1990 na coluna "Ask Marilyn" da revista de notícias *Parade*.
+$$
+\Pr(C_A)=\Pr(C_B)=\Pr(C_C)=\frac13
+$$
 
-### Configuração do Problema
+Nesse modelo, a estratégia de sempre trocar vence com probabilidade 2/3. No entanto, é preciso distinguir a probabilidade global de vitória de uma estratégia da probabilidade condicional após uma observação específica, como B ter sido aberta. As regras do apresentador importam para que os dois cálculos deem 2/3 aqui.
 
-Imagine que você é um participante em um programa de auditório na TV. À sua frente, há três portas fechadas (Porta A, Porta B e Porta C).
+A matemática permite identificar o que falta no raciocínio “restam duas, então cada uma tem metade da probabilidade”. Por que uma pessoa dá essa resposta ou hesita em trocar é outra pergunta, que exige pesquisa psicológica.
 
-1. Atrás de uma das portas há um "carro novo" (o prêmio).
-2. Atrás das outras duas portas há "cabras" (os perdedores).
-3. Se você acertar o carro novo, pode ficar com ele.
+## 2. Análise de casos e um milhão de portas
 
-As regras e o andamento do jogo são os seguintes:
+### Separar os casos pela posição inicial
 
-1. Primeiro, você escolhe uma das três portas (vamos assumir que você escolheu a **Porta A**).
-2. O apresentador do programa, Monty, sabe o que há atrás de cada porta.
-3. Das duas portas que você não escolheu (Porta B e Porta C), Monty **sempre abre uma que tem uma cabra**. (Por exemplo, se houver uma cabra na Porta B, ele abre a Porta B).
-4. Então, Monty pergunta a você:
-   **"Você gostaria de trocar para a Porta C? Quer mudar de ideia?"**
+Vamos separar os casos pela posição inicial do carro, ainda sem condicionar ao nome da porta aberta.
 
-Aqui está o problema:
-**Você deve mudar sua escolha? Ou deve manter sua escolha inicial (Porta A)? Qual tem a maior probabilidade de ganhar o carro novo?**
+| Posição do carro, cada uma com probabilidade 1/3 | Porta que o apresentador abre | Manter A | Trocar |
+| --- | --- | --- | --- |
+| A | B ou C | Ganha | Perde |
+| B | C | Perde | Ganha |
+| C | B | Perde | Ganha |
 
-### A Resposta Intuitiva
+Como o apresentador sempre elimina uma porta com cabra e oferece a troca, trocar vence exatamente quando a porta escolhida inicialmente tinha uma cabra.
 
-Quando questionadas sobre esse problema, muitas pessoas raciocinam da seguinte forma:
-
-"Existem três portas, e uma (a da cabra) foi aberta. Restam apenas duas: a porta que escolhi (Porta A) e a outra porta fechada (Porta C). Como o carro novo está atrás de uma delas, a probabilidade deve ser de 50% (1/2) para cada uma. Portanto, a chance de ganhar é a mesma, mudando ou não a escolha, então não há necessidade de mudar."
-
-Essa resposta intuitiva é muito convincente, e uma esmagadora maioria (cerca de 85% ou mais, dependendo da pesquisa) responde que "a probabilidade não muda mesmo se eu mudar a escolha (1/2)".
-
-No entanto, **a resposta matematicamente correta é "você deve mudar a escolha"**. Se você mudar sua escolha, a probabilidade de ganhar o carro novo salta para **2/3 (cerca de 66,7%)**, que é o dobro da probabilidade de **1/3 (cerca de 33,3%)** se você mantiver sua escolha inicial.
-
-Quando essa resposta foi apresentada por Marilyn vos Savant (uma mulher que na época tinha o QI mais alto do mundo segundo o Guinness Book), ela recebeu cerca de 10.000 cartas de objeção de todo os Estados Unidos. Entre elas, havia cerca de 1.000 cartas de matemáticos e cientistas com doutorado, dirigindo-lhe duras críticas como "Você não entende nada de matemática" e "Isso é uma ilusão ilógica de mulher".
-
-Por que tantos intelectuais erraram? O próximo capítulo desvendará a prova matemática.
-
-## Capítulo 2: A Verdade da Probabilidade e a Prova Matemática
-
-Por que a probabilidade que intuitivamente parece "1/2" se torna "2/3 se você mudar a escolha"? Para entender isso, precisamos reexaminar o problema por meio de várias abordagens diferentes.
-
-### Abordagem de Prova 1: Enumerando Todos os Padrões (Pensamento em Diagrama de Árvore)
-
-O método mais confiável e fácil de entender é listar todos os padrões possíveis e calcular as probabilidades.
-Como a porta atrás da qual está o carro novo é escolhida aleatoriamente, os três casos a seguir ocorrem com 1/3 de probabilidade cada:
-
-- Caso 1: O carro novo está na "Porta A"
-- Caso 2: O carro novo está na "Porta B"
-- Caso 3: O carro novo está na "Porta C"
-
-Supondo que você escolheu a **Porta A** inicialmente, vamos ver os resultados de "manter a escolha" e "mudar a escolha" em cada caso.
-
-| Caso | Posição do Carro | Sua Escolha | Porta que o Apresentador Abre | Se Mantiver a Escolha | Se Mudar a Escolha |
-|---|---|---|---|---|---|
-| 1 (1/3) | Porta A | Porta A | B ou C (Cabra) | **Ganha o Carro** (Win) | Cabra (Lose) |
-| 2 (1/3) | Porta B | Porta A | Porta C (Cabra) | Cabra (Lose) | **Ganha o Carro** (Win) |
-| 3 (1/3) | Porta C | Porta A | Porta B (Cabra) | Cabra (Lose) | **Ganha o Carro** (Win) |
-
-Como a tabela deixa claro, você só ganha o carro novo no Caso 1 (probabilidade 1/3) se "manter a escolha". Por outro lado, há dois padrões (Caso 2 e Caso 3) em que você ganha o carro novo se "mudar a escolha", resultando em uma probabilidade total de 2/3.
-Em outras palavras, não passa de uma comparação entre a **"probabilidade de escolher a resposta certa desde o início (1/3)"** e a **"probabilidade de escolher a resposta errada no início (2/3)"**. Como o apresentador elimina uma opção errada para você, a má sorte de "escolher a resposta errada no início" se transforma estruturalmente na boa sorte de "transformar-se garantidamente em um acerto" ao mudar a escolha.
-
-### Abordagem de Prova 2: Teoria da Informação e um Modelo Extremo
-
-Se a intuição atrapalha com 3 portas, aumentar drasticamente o número de portas facilita a compreensão.
-
-Imagine que "existem 1 milhão de portas".
-1. Você escolhe uma porta (Porta Número 1). Neste momento, a probabilidade de acerto é 1/1.000.000.
-2. Monty, o apresentador, sabe a resposta. Das 999.999 portas restantes, ele abre todas as 999.998 portas que têm cabras.
-3. As únicas portas fechadas são a "Porta 1" que você escolheu, e a "Porta 777.777" que Monty deixou fechada.
-
-Neste momento, o que você acha?
-É óbvio qual probabilidade é maior: "a probabilidade de a Porta 1 que escolhi primeiro ser a correta por acaso (1/1.000.000)" ou "a probabilidade de eu ter errado, e Monty ter evitado intencionalmente a Porta 777.777 correta, abrindo todas as outras (999.999/1.000.000)".
-Naturalmente, você mudaria para a Porta 777.777. Mesmo no caso de 3 portas, a estrutura matemática essencial é exatamente a mesma.
-
-### Abordagem de Prova 3: Diagrama de Transição de Estado usando Mermaid
-
-Para aprofundar a compreensão visual, vamos representar o fluxo do jogo com um fluxograma.
+$$
+\Pr(\mathrm{stay\ wins})=\frac13,\qquad\Pr(\mathrm{switch\ wins})=\frac23
+$$
 
 ```mermaid
 flowchart TD
-    Start["Início do Jogo"] --> Choose["Jogador escolhe uma porta"]
-    Choose -- "probabilidade 1/3" --> ChooseCar["Escolhe a porta vencedora"]
-    Choose -- "probabilidade 2/3" --> ChooseGoat["Escolhe a porta perdedora"]
-    
-    ChooseCar --> MontyOpensGoat1["Apresentador abre uma perdedora restante (uma de duas)"]
-    ChooseGoat --> MontyOpensGoat2["Apresentador abre a perdedora restante (a única confirmada)"]
-    
-    MontyOpensGoat1 --> Stay1["Não muda a escolha"]
-    MontyOpensGoat1 --> Switch1["Muda a escolha"]
-    
-    MontyOpensGoat2 --> Stay2["Não muda a escolha"]
-    MontyOpensGoat2 --> Switch2["Muda a escolha"]
-    
-    Stay1 -- "resultado" --> Win1["Ganha o Carro (Win)"]
-    Switch1 -- "resultado" --> Lose1["Cabra (Lose)"]
-    
-    Stay2 -- "resultado" --> Lose2["Cabra (Lose)"]
-    Switch2 -- "resultado" --> Win2["Ganha o Carro (Win)"]
+    Start["Início do jogo"] --> Choose["Escolher a primeira porta"]
+    Choose -- "Probabilidade 1/3" --> ChooseCar["Escolher inicialmente o carro"]
+    Choose -- "Probabilidade 2/3" --> ChooseGoat["Escolher inicialmente uma cabra"]
+    ChooseCar --> MontyOpensGoat1["Abrir uma das duas portas restantes com cabras"]
+    ChooseGoat --> MontyOpensGoat2["Abrir a única porta restante com cabra"]
+    MontyOpensGoat1 --> Stay1["Manter"]
+    MontyOpensGoat1 --> Switch1["Trocar"]
+    MontyOpensGoat2 --> Stay2["Manter"]
+    MontyOpensGoat2 --> Switch2["Trocar"]
+    Stay1 --> Win1["Carro: Ganha"]
+    Switch1 --> Lose1["Cabra: Perde"]
+    Stay2 --> Lose2["Cabra: Perde"]
+    Switch2 --> Win2["Carro: Ganha"]
 ```
 
-Deste diagrama, pode-se ver que **se você tomar a ação de "mudar a escolha" a partir do estado de "escolher a porta perdedora inicialmente (probabilidade 2/3)", você chegará a "Ganhar o Carro" com 100% de probabilidade**. Por outro lado, se você mudar a escolha a partir do estado de escolher a porta vencedora inicialmente (probabilidade 1/3), você certamente ganhará uma cabra.
-Portanto, a taxa de vitória esperada para a estratégia de mudar a escolha é 2/3 × 100% = 2/3.
+São probabilidades do modelo, não uma garantia de exatamente duas vitórias a cada três partidas. O diagrama mostra ramificações teóricas, não resultados experimentais.
 
-## Capítulo 3: Solução Rigorosa pelo Teorema de Bayes
+### Mais portas também exigem especificar a observação
 
-[O Problema de Monty Hall](/pt/p/monty-hall-problem/) pode ser resolvido de forma matemática mais rigorosa usando o "[Teorema de Bayes](/pt/p/bayes-theorem/)" (Bayes' theorem) para calcular probabilidades condicionais. A inferência bayesiana é uma ferramenta poderosa que mostra como atualizar a probabilidade anterior (probabilidade a priori) quando novas informações (evidências) são obtidas (probabilidade a posteriori).
+Seja n um inteiro maior ou igual a 3, com portas numeradas de 1 a n. A posição C do carro é uniforme e a escolha inicial é 1. Em toda partida, o apresentador abre n−2 portas não escolhidas com cabras e oferece a troca para a única porta não escolhida restante, R. As probabilidades globais são:
 
-Definimos os eventos da seguinte forma:
-- $C_i$ : O evento de o carro novo estar na porta $i$ ($i \in \{A, B, C\}$)
-- $M_j$ : O evento de Monty abrir a porta $j$ ($j \in \{A, B, C\}$)
+$$
+\Pr(C=1)=\frac1n,\qquad\Pr(C=R)=\frac{n-1}{n}
+$$
 
-Vamos assumir que o jogador escolheu a "Porta A" primeiro.
-A probabilidade a priori, sem nenhuma informação sobre qual porta tem o carro novo, é equiprovável:
-$P(C_A) = 1/3$
-$P(C_B) = 1/3$
-$P(C_C) = 1/3$
+Com um milhão de portas, a estratégia de sempre trocar vence com probabilidade 999999/1000000.
 
-Agora, suponha que Monty abriu a "Porta B". Depois de obter essa informação, calculamos a probabilidade de o carro novo estar na Porta A (probabilidade a posteriori $P(C_A|M_B)$) e a probabilidade de estar na Porta C (probabilidade a posteriori $P(C_C|M_B)$).
+Para usar a informação de que R tem um número específico r, precisamos de mais uma regra. Aqui, r é um dos números de 2 a n. Suponha que, sempre que a porta inicial tiver o carro, o apresentador escolha R uniformemente entre as outras n−1 portas. Então:
 
-As regras de comportamento de Monty (probabilidade condicional $P(M_B|C_i)$) são as seguintes:
-1. Se o carro novo estiver na Porta A ($C_A$), Monty abre B ou C aleatoriamente, então $P(M_B|C_A) = 1/2$
-2. Se o carro novo estiver na Porta B ($C_B$), Monty nunca poderá abrir B, então $P(M_B|C_B) = 0$
-3. Se o carro novo estiver na Porta C ($C_C$), Monty não pode abrir C, e não pode abrir A porque o jogador a escolheu. Portanto, ele é forçado a abrir B, logo $P(M_B|C_C) = 1$
+$$
+\Pr(C=r\mid R=r)=\frac{1/n}{(1/n)+(1/n)(1/(n-1))}=\frac{n-1}{n}
+$$
 
-A fórmula do [Teorema de Bayes](/pt/p/bayes-theorem/) é:
-$P(C_i|M_B) = \frac{P(M_B|C_i) P(C_i)}{P(M_B)}$
+Sob essa regra simétrica, observar que a porta 777777 ficou fechada entre um milhão de portas dá a mesma probabilidade alta. Mas, se o apresentador sempre deixar esse mesmo número fixo r quando a porta inicial tiver o carro, então:
 
-Vamos calcular o denominador $P(M_B)$ (a probabilidade total de Monty abrir a Porta B) (Teorema da Probabilidade Total).
-$P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C)$
-$P(M_B) = (1/2 \times 1/3) + (0 \times 1/3) + (1 \times 1/3) = 1/6 + 0 + 1/3 = 1/2$
+$$
+\Pr(C=r\mid R=r)=\frac{1/n}{(1/n)+(1/n)}=\frac12
+$$
 
-Agora, vamos calcular as probabilidades a posteriori.
+Trocar pode ser vantajoso globalmente, enquanto a probabilidade após observar um número específico muda. Esses cálculos condicionam apenas a R, sem informações adicionais como a ordem de abertura. Sem verificar as regras, o exemplo não justifica dizer que a porta restante quase certamente tem o carro.
 
-**Probabilidade de o carro novo estar na Porta A (manter a escolha):**
-$P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{(1/2) \times (1/3)}{1/2} = 1/3$
+## 3. Aplicar o teorema de Bayes após uma observação
 
-**Probabilidade de o carro novo estar na Porta C (mudar a escolha):**
-$P(C_C|M_B) = \frac{P(M_B|C_C) P(C_C)}{P(M_B)} = \frac{1 \times (1/3)}{1/2} = 2/3$
+Voltando ao modelo de três portas, seja M_B o evento de o apresentador abrir B. As regras da seção 1 dão as seguintes verossimilhanças:
 
-Assim, usando o [Teorema de Bayes](/pt/p/bayes-theorem/), está matematicamente comprovado que a probabilidade salta para 2/3 na Porta C porque a probabilidade é atualizada pela nova informação (Monty abrindo a Porta B).
+$$
+\Pr(M_B\mid C_A)=\frac12,\qquad\Pr(M_B\mid C_B)=0,\qquad\Pr(M_B\mid C_C)=1
+$$
 
-## Capítulo 4: Por Que a Intuição Humana Falha? (Fatores Psicológicos e Cognitivos)
+O [teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) fornece:
 
-Não importa quantas vezes a prova matemática lhes seja mostrada, muitas pessoas ainda sentem: "Eu ainda não consigo aceitar" ou "Parece que fui enganado". Por que o cérebro humano é tão vulnerável a este problema? Pesquisas em psicologia e economia comportamental revelaram que vários vieses cognitivos sérios estão envolvidos.
+$$
+\Pr(C_i\mid M_B)=\frac{\Pr(M_B\mid C_i)\Pr(C_i)}{\sum_{j\in\{A,B,C\}}\Pr(M_B\mid C_j)\Pr(C_j)}
+$$
 
-### 1. Viés de Equiprobabilidade (Equiprobability Bias)
+Pela lei da probabilidade total, o denominador é:
 
-Os humanos têm uma forte tendência a assumir inconscientemente que, em eventos aleatórios e situações incertas, "se houver opções disponíveis, todas as suas probabilidades devem ser iguais".
-No problema de Monty Hall, duas opções, "Porta A" e "Porta C", são finalmente deixadas. No momento em que essa informação visual e situacional de "duas opções" é inserida no cérebro, uma heurística poderosa de "como há duas, a probabilidade é 1/2 para cada" é acionada.
-Nosso cérebro separa e ignora a "informação assimétrica" do histórico passado (havia três inicialmente e Monty abriu intencionalmente uma porta com cabra) da "situação atual".
+$$
+\Pr(M_B)=\frac12\cdot\frac13+0\cdot\frac13+1\cdot\frac13=\frac12
+$$
 
-### 2. Má Interpretação de Causalidade e "Intenção"
+Portanto, a probabilidade a posteriori de o carro estar atrás da porta original A é:
 
-Tentamos entender as relações de causa e efeito de forma linear.
-Isso é semelhante à "falácia do apostador" (Gambler's fallacy), onde se pensa "o preto deve sair em breve" depois que o vermelho sai 5 vezes seguidas na roleta, mas no Problema de Monty Hall, pelo contrário, subestimamos a "atualização da informação".
+$$
+\Pr(C_A\mid M_B)=\frac{(1/2)(1/3)}{1/2}=\frac13
+$$
 
-O que é importante é que **"Monty, o apresentador, não está abrindo as portas aleatoriamente"**.
-Se o apresentador não soubesse nada, abrisse uma porta aleatoriamente, e "acontecesse de ser uma cabra", então a probabilidade das duas portas restantes seria realmente 1/2 (isso é chamado de "problema do apresentador ignorante").
-No entanto, Monty tem uma forte restrição (intenção) de "sempre abrir uma cabra". A intuição humana não consegue processar corretamente essa "assimetria de informação devido a uma escolha intencional", e nossos olhos só conseguem focar no fato físico de que "uma porta apenas foi removida".
+E a probabilidade a posteriori de o carro estar atrás de C, a porta para a qual você trocaria, é:
 
-### 3. Viés de Status Quo (Status Quo Bias) e Evitação do Arrependimento
+$$
+\Pr(C_C\mid M_B)=\frac{1\cdot(1/3)}{1/2}=\frac23
+$$
 
-Da perspectiva da economia comportamental, o "viés de status quo" tem um grande impacto.
-Os seres humanos são criaturas que sentem que o dano psicológico do arrependimento quando tomam uma atitude e falham (erro de comissão) é maior que o arrependimento quando falham por inação (erro de omissão).
+O evento de o carro estar atrás de C tinha probabilidade 1/3 antes de condicionarmos a M_B. Essa probabilidade passar a 2/3 após a observação e a explicação “trocar vence quando a escolha inicial estava errada” são perspectivas diferentes do mesmo modelo.
 
-Imagine "E se eu mudasse minha escolha e a primeira porta estivesse certa?". Você seria atormentado por um arrependimento intenso, pensando: "Eu não deveria ter mudado!". Por outro lado, se você disser "Errei sem mudar a escolha", é mais fácil desistir e pensar "Bem, não teve jeito, não tive sorte".
-Dessa forma, o mecanismo de defesa emocional de "querer minimizar o arrependimento" entra em ação, criando uma distorção cognitiva de "é o mesmo mudando ou não (eu quero acreditar nisso)" e, finalmente, faz você escolher "manter (Stay)".
+Vamos mudar apenas para q a probabilidade de abrir B quando o carro está atrás de A, mantendo as demais regras. Então:
+
+$$
+q=\Pr(M_B\mid C_A),\quad0\le q\le1,\qquad\Pr(C_C\mid M_B)=\frac1{1+q}
+$$
+
+Por exemplo, com q igual a 1, A e C são equiprováveis depois de B ser aberta. Mesmo que o apresentador saiba onde está o carro, sua preferência entre portas com cabras importa para as probabilidades condicionais.
+
+Agora considere outro modelo: o apresentador não sabe a posição do carro e escolhe B ou C com probabilidade 1/2 para cada uma, independentemente dessa posição. Isso pode revelar o carro. Seja U_B o evento de esse apresentador abrir B, e G o evento de a porta aberta mostrar uma cabra. Após observar tanto que B foi aberta quanto que havia uma cabra atrás dela:
+
+$$
+\Pr(C_A\mid U_B\cap G)=\Pr(C_C\mid U_B\cap G)=\frac12
+$$
+
+Sempre mostrar uma cabra e mostrar uma cabra por acaso são mecanismos de observação diferentes. [O artigo de Rosenthal](https://probability.ca/jeff/writing/montyfall.pdf) também examina variantes do comportamento do apresentador.
+
+## 4. Separar hipóteses psicológicas de erros matemáticos
+
+### Examinar a inferência de probabilidades iguais
+
+Tratar as opções restantes como equiprováveis é discutido na psicologia em termos como heurística de equiprobabilidade. Entretanto, podemos verificar que “duas portas, então metade para cada uma” não corresponde ao modelo da seção 1 sem fazer uma afirmação causal sobre o cérebro. O cálculo precisa incluir o processo que deixou essas portas fechadas.
+
+### Separar o conhecimento do apresentador do mecanismo de abertura
+
+Dizer apenas que “o apresentador não abre ao acaso” é impreciso. Um apresentador informado ainda pode escolher aleatoriamente entre B e C quando o carro está atrás de A. Deixar C fechada também não significa que ele não pudesse abri-la porque ela tinha o carro: se o carro estivesse atrás de A, abrir C seria possível. Precisamos de uma regra de seleção específica, não apenas de uma suposição sobre a intenção.
+
+### Hesitação e arrependimento antecipado
+
+Entender uma probabilidade e escolher uma ação são questões diferentes. Podemos imaginar o sentimento “eu me arrependeria de trocar e perder”, mas isso não explica o comportamento de todas as pessoas. Afirmar que manter o status quo ou evitar o arrependimento são mecanismos cerebrais universais exige evidências empíricas adequadas.
+
+[Mazur e Kahlbaugh (2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3435463/) compararam escolhas repetidas de pombos, universitários e crianças em idade pré-escolar. Nas condições de probabilidade padrão, houve grandes diferenças individuais. Em condições com maior probabilidade de recompensa ao trocar, universitários e pombos trocaram mais. Os autores discutiram a dificuldade de distinguir probabilidades de recompensa em tarefas repetidas. Essas tarefas diferem de responder uma única vez a um problema verbal e não estabelecem que todos errem por viés de status quo.
+
+O próximo diagrama é um procedimento para organizar o raciocínio. Ele não representa causas psicológicas estabelecidas empiricamente.
 
 ```mermaid
 flowchart LR
-    Situation["Forçado a fazer uma escolha"] --> Feeling["Sentimento de não querer se arrepender"]
-    Feeling --> Bias1["Viés de status quo"]
-    Feeling --> Bias2["Viés de equiprobabilidade (ilusão de 1/2)"]
-    Bias1 --> Conclusion["Não mudar a escolha (Stay)"]
-    Bias2 --> Conclusion
+    Situation["É preciso escolher"] --> Rules["Verificar as regras"]
+    Rules --> Observation["Identificar a informação observada"]
+    Observation --> Posterior["Calcular probabilidades condicionais"]
+    Posterior --> Utility["Considerar o valor e os custos da troca"]
+    Utility --> Decision["Decidir"]
 ```
 
-## Capítulo 5: Lições do Paradoxo na Vida Cotidiana
+## 5. Aplicações precisam de modelos próprios
 
-[O Problema de Monty Hall](/pt/p/monty-hall-problem/) é mais do que apenas um quiz ou um quebra-cabeça matemático. A lição que este paradoxo ensina tem valor universal que pode ser aplicado a vários campos, como vida cotidiana, negócios, medicina e desenvolvimento de IA.
+### Um teste hipotético e falsos positivos
 
-### O Conflito Entre Dados e Intuição (O Problema dos Falsos Positivos na Medicina)
+Sensibilidade e especificidade, por si sós, não determinam a probabilidade após um resultado positivo. Como exemplo aritmético, suponha uma probabilidade a priori de doença p de 1/10000, sensibilidade s de 99% e especificidade t de 99%. A sensibilidade é a probabilidade de um resultado positivo dada a presença da doença; a especificidade é a probabilidade de um resultado negativo dada a ausência da doença.
 
-A interpretação da "precisão do teste" no campo médico também é um exemplo típico em que a intuição e as probabilidades bayesianas divergem.
-Por exemplo, suponha que exista uma "doença intratável que afeta 1 em cada 10.000 pessoas", e a precisão de seu teste é de "99% (identifica corretamente 99% das pessoas positivas como positivas, e 99% das pessoas negativas como negativas)".
-Se você fizer este teste e der "positivo", qual é a probabilidade de você realmente ter essa doença intratável?
+$$
+p=\frac1{10000},\qquad s=\frac{99}{100},\qquad t=\frac{99}{100}
+$$
 
-Intuitivamente, você pode se desesperar, pensando, "A precisão é de 99%, então a probabilidade de eu estar doente também deve ser de 99%".
-No entanto, calculado pelo [Teorema de Bayes](/pt/p/bayes-theorem/), a probabilidade real de ter a doença é de **menos de 1% (cerca de 0,98%)**. Como 1% (cerca de 100 pessoas) da esmagadora maioria de "pessoas saudáveis (9.999 pessoas)" se tornam "falsos positivos", pacientes reais (quase 1) são uma pequena minoria no grupo de pessoas com teste positivo.
+Seja D o evento de a doença estar presente, e + um resultado positivo. Então:
 
-Essa diferença esmagadora entre avaliações probabilísticas intuitivas (99%) e verdades matemáticas (1%) carrega o risco de causar pânico desnecessário e decisões médicas incorretas. Entender [o Problema de Monty Hall](/pt/p/monty-hall-problem/) é o primeiro passo para adquirir o letramento de avaliar corretamente essa "assimetria de informação e probabilidades a priori".
+$$
+\Pr(D\mid +)=\frac{sp}{sp+(1-t)(1-p)}=\frac{0.000099}{0.000099+0.009999}=\frac1{102}\approx0.009804
+$$
 
-### O Valor da Informação na Estratégia de Negócios
+Isso corresponde a aproximadamente 0,98%. Em uma população hipotética de 10000 pessoas, as contagens esperadas são 0,99 verdadeiros positivos e 99,99 falsos positivos. As contagens são fracionárias porque são valores esperados, não pacientes observados.
 
-Nos negócios, os movimentos dos concorrentes e a resposta do mercado são exatamente como a "porta que Monty abriu".
-Suponha que sua empresa escolha uma certa estratégia (Porta A). Mais tarde, novas informações entram, como mudanças no ambiente de mercado e falhas da concorrência (uma porta com cabra se abrindo).
-Neste momento, você deve "persistir na estratégia original a qualquer custo (viés de status quo)" ou "avaliar bayesianamente as novas informações e pivotar (mudar) a estratégia"? Isso pode ser interpretado como uma lição de que empresas capazes de mudar flexivelmente suas estratégias podem ter uma maior probabilidade de sucesso (2/3) no longo prazo. É importante não ficar preso a custos afundados (sunk costs) e sempre tomar decisões com base em "probabilidades a posteriori".
+O exemplo decorre das três probabilidades supostas. Ele não atribui uma probabilidade de 0,98% a um teste real ou a uma pessoa específica. Distinguir a presença ou ausência de doença de um resultado positivo ou negativo também é essencial para interpretar a fórmula.
 
-## Conclusão: Inteligência é a Coragem de "Duvidar da Sua Intuição"
+### Estratégia empresarial e critérios além da probabilidade de vencer
 
-A razão pela qual [o Problema de Monty Hall](/pt/p/monty-hall-problem/) é tão fascinante e aterrorizante é porque destaca perfeitamente as "limitações da inteligência humana". Até mesmo especialistas com doutorado foram enganados por suas intuições iniciais e reagiram emocionalmente contra a prova correta.
+As reações do mercado podem motivar uma revisão da estratégia. Porém, o mercado não necessariamente elimina uma opção malsucedida segundo uma regra conhecida, e uma mudança de estratégia não passa a ter probabilidade de sucesso de 2/3. A concorrência e a coleta de informações precisam de modelos próprios.
 
-Vivemos confiando na poderosa arma da "intuição" que adquirimos ao longo da evolução. No entanto, em uma sociedade moderna que está se tornando cada vez mais complexa e inundada de dados, devemos estar cientes de que essa mesma intuição às vezes pode nos levar a armadilhas.
+Mesmo dentro do jogo, sejam u_car e u_goat as utilidades de um carro e de uma cabra, e k o custo da troca, medido nas mesmas unidades de utilidade. Usando as probabilidades da seção 1, a diferença de utilidade esperada é:
 
-[O Problema de Monty Hall](/pt/p/monty-hall-problem/) transmite uma mensagem importante para nós.
-Isto é, **"A importância de parar e repensar usando ferramentas de lógica e matemática, em vez de confiar cegamente na própria intuição"**. Requer humildade intelectual e coragem para atualizar as próprias suposições, a fim de aceitar uma verdade que, à primeira vista, vai contra a intuição.
+$$
+\mathrm{EU}(\mathrm{switch})-\mathrm{EU}(\mathrm{stay})=\frac{u_{\mathrm{car}}-u_{\mathrm{goat}}}{3}-k
+$$
 
-Da próxima vez que você for forçado a fazer uma escolha importante na vida e tiver novas informações (uma porta aberta) em mãos, por favor, lembre-se deste Problema de Monty Hall. Essa informação mudou a probabilidade? Você está preso pelo viés de status quo?
-A decisão logicamente derivada de "mudar a escolha" pode trazer um carro novo bem diante dos seus olhos.
+Maximizar a probabilidade de obter o carro e maximizar o valor após os custos são objetivos distintos. Uma decisão real exige examinar o valor das opções, os custos da mudança e como a informação foi obtida.
+
+## 6. Conclusão: verificar os pressupostos da intuição e do cálculo
+
+O problema de Monty Hall permite praticar como especificar o mecanismo que produz uma observação, em vez de atribuir probabilidades contando opções. A matemática fornece conclusões dentro de um modelo definido. A psicologia examina empiricamente como as pessoas compreendem, aprendem e escolhem.
+
+Ao receber uma informação, identifique o que foi observado, quais regras geraram essa observação e o que você quer maximizar. Esse procedimento pode ajudar, mas não é uma regra geral de que mudar uma escolha sempre duplica o sucesso.
