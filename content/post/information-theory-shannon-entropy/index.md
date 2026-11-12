@@ -1,7 +1,7 @@
 ---
-title: "情報理論とシャノンのエントロピー：データ圧縮と通信の限界を探る"
+title: "情報理論とシャノンエントロピー：圧縮・通信の限界と前提"
 date: "2026-09-24T19:44:38+09:00"
-description: "クロード・シャノンが提唱した情報理論の基礎から、エントロピーの概念、データ圧縮の限界、そして現代通信への応用までを詳細に解説します。"
+description: "自己情報量、記号と列のエントロピー、ハフマン符号の境界条件、通信路容量の単位と仮定を、Python例とともに確認します。"
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
@@ -12,191 +12,268 @@ tags:
   - entropy
   - data-compression
   - math
+math: true
+mermaid: true
+lastmod: "2026-11-12"
 ---
 
-## 1. はじめに：情報とは何か？
+## 1. 情報の意味と、選択の不確実性を分ける
 
-私たちが日常的に口にする「情報」という言葉ですが、科学的に「情報」を定義しようとすると非常に困難を伴います。ニュース、友人からのメッセージ、DNAの塩基配列、あるいは宇宙から届く電波など、これらすべては情報を含んでいます。しかし、これらを数学的に共通の枠組みで扱うためには、客観的で定量的な指標が必要です。
+ニュース、友人のメッセージ、DNAの配列、宇宙からの電波は、いずれも情報を運びます。しかし、内容の重要性と、送るために必要なビット数は同じものではありません。
 
-この壮大な課題に挑み、現代のデジタル社会の礎を築いたのが、数学者であり工学者でもある クロード・シャノン（Claude Shannon） です。彼が1948年に発表した論文「通信の数学的理論（A Mathematical Theory of Communication）」は、 **情報理論** （Information Theory）という全く新しい学問分野を単独で創設したと言っても過言ではありません。
+Claude Shannonの1948年の論文は、意味の評価を通信の工学的問題から切り離し、確率に基づいて圧縮と通信の限界を論じました。[同論文の再録版](https://wucj.lab.westlake.edu.cn/Others/shannon1948.pdf)の冒頭では、NyquistとHartleyの先行研究にも言及しています。ここでは、情報量、エントロピー、可逆圧縮、雑音のある通信を順に区別します。
 
-本記事では、シャノンがどのようにして「情報」を数学的に定義したのか、そしてその中心的な概念である **シャノンのエントロピー** が、データ圧縮や通信技術においてどのような意味を持つのかについて、徹底的に深掘りしていきます。
+## 2. 通信のモデル
 
-## 2. コミュニケーションの一般モデル
-
-シャノンは情報の意味（セマンティクス）を一旦切り離し、情報の「伝達」そのものに焦点を当てました。彼が提唱した通信システムの一般モデルは、以下のMermaid図のように表されます。
+情報源がメッセージを作り、送信機が信号に変え、通信路を通り、受信機がメッセージを復元して宛先へ届ける、というモデルです。
 
 ```mermaid
 graph LR
-    A["情報源<br>Information Source"] --> B["送信機<br>Transmitter"]
-    B -->|送信信号| C(("通信路<br>Channel"))
-    C -->|受信信号| D["受信機<br>Receiver"]
-    D --> E["宛先<br>Destination"]
-    N["雑音源<br>Noise Source"] -.-> C
+    A["情報源"] --> B["送信機"]
+    B -->|"送信信号"| C(("通信路"))
+    C -->|"受信信号"| D["受信機"]
+    D --> E["宛先"]
+    N["雑音源"] -.-> C
 ```
 
-このモデルにおいて、通信の最大の課題は **「雑音（ノイズ）が存在する通信路を通して、いかにして正確かつ効率的にメッセージを伝送するか」** という点に集約されます。
+情報源符号化は、データの統計構造を利用して冗長性を減らす処理です。一方、通信路符号化は、雑音に対処するために適切な冗長性を加えます。どちらも符号化ですが、目的を区別します。
 
-## 3. 情報量の数学的定義
+## 3. 自己情報量
 
-情報理論における最も基本的な問いは、「ある事象が起こったことを知ったとき、私たちはどれだけの情報を得たのか？」というものです。
-
-シャノンは、情報の量を「驚きの度合い」として捉えました。
-- **よく起こること（確率が高い事象）** が起きても、驚きは少なく、得られる情報量は小さい。
-- **めったに起こらないこと（確率が低い事象）** が起きると、驚きは大きく、得られる情報量は大きい。
-
-事象 $ x $ が起こる確率を $ P(x) $ としたとき、その事象が持っている **自己情報量** （Self-Information） $ I(x) $ は以下のように定義されます。
+確率P(x)が正である事象xについて、自己情報量I(x)を次で定義します。対数の底が2なら単位はビットです。
 
 $$
-I(x) = - \log_2 P(x) = \log_2 \frac{1}{P(x)}
+I(x)=-\log_2P(x)=\log_2\frac1{P(x)},\qquad 0<P(x)\le1
 $$
 
-対数の底に $ 2 $ を用いる場合、情報量の単位は **ビット** （bit）となります。たとえば、表と裏が等確率（$ P = 0.5 $）で出るコインを投げて表が出たという事象の情報量は、
+確率が小さい事象ほど、この数値は大きくなります。ただし、心理的な驚きや内容の価値を測っているわけではありません。確率0の事象に有限の自己情報量を割り当てる式ではなく、確率モデルの範囲を明示して使います。
+
+公平なコインで表が出る事象なら、次の通りです。
 
 $$
-I(\text{表}) = - \log_2(0.5) = 1 \text{ bit}
+I=-\log_2(1/2)=1\ \mathrm{bit}
 $$
 
-となります。これは「1ビットの情報」の直感的な理解とも一致します。
+## 4. エントロピーは自己情報量の期待値
 
-## 4. シャノンのエントロピー
-
-自己情報量は個々の事象に対する情報量ですが、情報源全体から平均的にどれだけの情報が発生しているかを知るにはどうすればよいでしょうか。
-
-ここで登場するのが **エントロピー** （Entropy）です。情報源 $ X $ が $ n $ 個の異なる記号 $ x_1, x_2, \dots, x_n $ を確率 $ P(x_1), P(x_2), \dots, P(x_n) $ で発生させるとき、情報源 $ X $ のエントロピー $ H(X) $ は、自己情報量の期待値として定義されます。
+有限のm種類の記号を発生する確率変数Xについて、p_i=P(X=x_i)とします。各p_iは非負で合計1です。シャノンエントロピーは自己情報量の期待値です。
 
 $$
-H(X) = - \sum_{i=1}^{n} P(x_i) \log_2 P(x_i)
+H(X)=\mathbb E[I(X)]=-\sum_{i=1}^{m}p_i\log_2p_i,\qquad \sum_{i=1}^{m}p_i=1
 $$
 
-（ただし、 $ P(x_i) = 0 $ の場合は $ 0 \log_2 0 = 0 $ とみなします）
+確率0の項は、極限に対応する約束として0log₂0=0とします。単位は1記号当たりのビットです。固定したm種類の範囲では、次が成り立ちます。
 
-### エントロピーの直感的な意味
-エントロピー $ H(X) $ は、情報源が持つ **不確実性** の度合いを表します。
-- どの記号が出るか全く予測できない（すべての確率が均等）とき、エントロピーは最大になります。
-- 常に同じ記号が出る（ある確率が $ 1 $ で他が $ 0 $ ）とき、不確実性はなくなり、エントロピーは $ 0 $ になります。
+$$
+0\le H(X)\le\log_2m
+$$
 
-以下のPythonコードで、コインの表が出る確率 $ p $ を変化させたときのエントロピーの変化を計算してみましょう。
+最大は一様分布で、最小は1種類だけが確率1で出る場合です。「最大の不確実性」は、この確率モデルと利用可能な情報の下での評価です。暗号学的な予測困難性や、相手が追加情報を持たないことまで保証しません。
+
+表が出る確率をpとする二値エントロピーは次の式です。端点では同じ0log0の約束を使います。
+
+$$
+h_2(p)=-p\log_2p-(1-p)\log_2(1-p),\qquad 0\le p\le1
+$$
+
+次のPython例は有限のスカラー確率を受け取り、範囲外を拒否します。グラフの描画にはMatplotlibが必要です。
 
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
+import math
+
 
 def binary_entropy(p):
+    if not math.isfinite(p) or not 0 <= p <= 1:
+        raise ValueError("p must be finite and between 0 and 1")
     if p == 0 or p == 1:
-        return 0
-    return -p * np.log2(p) - (1 - p) * np.log2(1 - p)
+        return 0.0
+    return -p * math.log2(p) - (1 - p) * math.log2(1 - p)
 
-probabilities = np.linspace(0, 1, 100)
-entropies = [binary_entropy(p) for p in probabilities]
 
-plt.plot(probabilities, entropies)
-plt.title('Binary Entropy Function')
-plt.xlabel('Probability of heads (p)')
-plt.ylabel('Entropy H(X) in bits')
-plt.grid(True)
-plt.show()
+if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+
+    probabilities = [i / 100 for i in range(101)]
+    entropies = [binary_entropy(p) for p in probabilities]
+    plt.plot(probabilities, entropies)
+    plt.title("Binary entropy")
+    plt.xlabel("Probability of heads (p)")
+    plt.ylabel("Entropy (bits per symbol)")
+    plt.grid(True)
+    plt.show()
 ```
 
-この[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)を描画すると、$ p = 0.5 $ のときにエントロピーが最大値 $ 1 $ となり、完全に予測不可能な状態であることがわかります。
+p=0とp=1では0、p=0.5では最大の1ビットです。曲線は左右対称です。
 
-## 5. 情報源符号化定理：データ圧縮の限界
+## 5. 情報源符号化：何の平均を、どの条件で比べるか
 
-エントロピーは単なる抽象的な概念ではありません。シャノンは、このエントロピーが **データ圧縮の絶対的な限界** を定めていることを証明しました。これが **情報源符号化定理** （シャノンの第一定理）です。
-
-定理の主張は非常にシンプルです。
-**「いかなる可逆圧縮アルゴリズムを用いても、情報源から発生するデータの平均符号長を、その情報源のエントロピー $ H(X) $ より小さくすることはできない。」**
+有限の記号集合に、連結しても一意に復号できる二進符号を割り当てます。符号語の長さをℓ_iとすると、平均符号長Lと下限は次の通りです。接頭語符号は、どの符号語も別の符号語の先頭にならない、一意復号可能な符号の一種です。
 
 $$
-L \ge H(X)
+L=\sum_i p_i\ell_i,\qquad L\ge H(X)
 $$
-（ $ L $ は平均符号長）
 
-つまり、エントロピーは「情報そのものが持っている本質的なサイズ」を示しており、どんなに優れたZIPやgzipなどのアルゴリズムを開発しても、この限界の壁を越えて圧縮することは数学的に不可能であることを意味しています。
+これは指定した分布に対する期待値の主張です。個々のファイルが必ずこの長さ以上になるという意味ではありません。また、単一記号の周辺分布だけで、相関のある長い列の圧縮限界を決めることもできません。
 
-### ハフマン符号 (Huffman Coding)
-エントロピーの限界に近づくための具体的な手法として、シャノンの共同研究者であったファノのアイデアを発展させ、デビッド・ハフマンが考案したのが **ハフマン符号** です。
+### ハフマン符号と条件付きの最適性
 
-出現確率の高い記号には短いビット列を、出現確率の低い記号には長いビット列を割り当てることで、全体の平均符号長を最小化します。以下はPythonによる簡単なハフマン符号の構築例です。
+[David Huffmanの1952年の論文](https://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf)は、与えられた確率に対して平均長を最小にする接頭語符号の構成を扱います。二進の場合は、最小の重みを持つ2つを併合し、その重みの和を戻す操作を繰り返します。同じ重みがある場合、最適な符号表が一つとは限りません。
+
+正の確率を持つ記号が2種類以上なら、最適な二進接頭語符号の平均長L_Hは次の範囲に入ります。
+
+$$
+H(X)\le L_{\mathrm H}<H(X)+1
+$$
+
+これは、既知の重みで1記号ずつ符号化するクラスでの最適性です。あらゆる圧縮方式の最適性ではありません。独立同分布で非退化な記号をn個まとめ、適切な接頭語符号を作ると、1記号当たりの平均長を次の範囲まで近づけられます。L_nはn記号のブロック全体の平均ビット数です。
+
+$$
+H(X)\le\frac{L_n}{n}<H(X)+\frac1n
+$$
+
+相関がある場合は、ブロックの同時エントロピーを使います。定常な有限アルファベット情報源のエントロピー率は次の極限で定義されます。
+
+$$
+\overline H=\lim_{n\to\infty}\frac{H(X_1,\ldots,X_n)}{n}
+$$
+
+例えば最初に公平な1ビットZを選び、既知の長さnの間ずっと同じ値を繰り返すモデルなら、次の通りです。
+
+$$
+P(Z=0)=P(Z=1)=\frac12,\qquad X_i=Z,\qquad H(X_i)=1,\qquad H(X_1,\ldots,X_n)=1
+$$
+
+各位置の周辺エントロピーは1ビットですが、復号側がnとこのモデルを知っていれば、ブロック全体はZの1ビットで表せます。これは単一記号のエントロピーと列全体の情報量を混同しないための例です。実際のZIPやgzipにはヘッダー、モデル、履歴、バイト境界などの条件があり、1文字の頻度だけから限界を断定できません。
+
+### 空入力と単一記号にも対応するPython例
+
+次の例は、Pythonの文字単位で頻度を数え、木を共有して符号化・復号します。同じ頻度なら入力の並びに依存しないようにし、呼び出しごとに新しい符号表を作ります。空文字列には空の木と空のペイロードを使います。
 
 ```python
 import heapq
 from collections import Counter
+from itertools import count
+
 
 class Node:
-    def __init__(self, char, freq):
+    def __init__(self, char=None, left=None, right=None):
         self.char = char
-        self.freq = freq
-        self.left = None
-        self.right = None
+        self.left = left
+        self.right = right
 
-    def __lt__(self, other):
-        return self.freq < other.freq
 
 def build_huffman_tree(text):
-    frequency = Counter(text)
-    heap = [Node(char, freq) for char, freq in frequency.items()]
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+    order = count()
+    heap = [(freq, next(order), Node(char))
+            for char, freq in sorted(Counter(text).items())]
     heapq.heapify(heap)
-
+    if not heap:
+        return None
     while len(heap) > 1:
-        left = heapq.heappop(heap)
-        right = heapq.heappop(heap)
-        merged = Node(None, left.freq + right.freq)
-        merged.left = left
-        merged.right = right
-        heapq.heappush(heap, merged)
+        freq_left, _, left = heapq.heappop(heap)
+        freq_right, _, right = heapq.heappop(heap)
+        parent = Node(left=left, right=right)
+        heapq.heappush(heap, (freq_left + freq_right, next(order), parent))
+    return heap[0][2]
 
-    return heap[0]
 
-def generate_huffman_codes(node, prefix="", codebook={}):
-    if node is not None:
+def generate_huffman_codes(root):
+    codes = {}
+    stack = [] if root is None else [(root, "")]
+    while stack:
+        node, prefix = stack.pop()
         if node.char is not None:
-            codebook[node.char] = prefix
-        generate_huffman_codes(node.left, prefix + "0", codebook)
-        generate_huffman_codes(node.right, prefix + "1", codebook)
-    return codebook
+            codes[node.char] = prefix or "0"
+        else:
+            stack.append((node.right, prefix + "1"))
+            stack.append((node.left, prefix + "0"))
+    return codes
 
-# サンプルテキスト
-text = "shannon_entropy_and_information_theory"
-tree_root = build_huffman_tree(text)
-codes = generate_huffman_codes(tree_root)
 
-print("Huffman Codes:")
-for char, code in sorted(codes.items()):
-    print(f"'{char}': {code}")
+def encode(text, codes):
+    try:
+        return "".join(codes[char] for char in text)
+    except KeyError as exc:
+        raise ValueError("symbol missing from codebook") from exc
+
+
+def decode(bits, root):
+    if any(bit not in "01" for bit in bits):
+        raise ValueError("payload must contain only 0 and 1")
+    if root is None:
+        if bits:
+            raise ValueError("nonempty payload with an empty tree")
+        return ""
+    if root.char is not None:
+        if "1" in bits:
+            raise ValueError("single-symbol code uses only 0")
+        return root.char * len(bits)
+    result = []
+    node = root
+    for bit in bits:
+        node = node.left if bit == "0" else node.right
+        if node.char is not None:
+            result.append(node.char)
+            node = root
+    if node is not root:
+        raise ValueError("truncated codeword")
+    return "".join(result)
+
+
+if __name__ == "__main__":
+    text = "shannon_entropy_and_information_theory"
+    root = build_huffman_tree(text)
+    codes = generate_huffman_codes(root)
+    payload = encode(text, codes)
+    print("Huffman codes:")
+    for char, code in sorted(codes.items()):
+        print(f"{char!r}: {code}")
+    print("Logical payload bits:", len(payload))
+    print("Round trip:", decode(payload, root) == text)
 ```
 
-## 6. 通信路符号化定理：誤りなく通信する限界
+この例では単一記号に空でない符号0を割り当て、個数をペイロード長で表します。その場合はH=0、L=1なので、上の厳密な上界L_H<H+1をこの実装の単一記号ケースに適用しません。個数を別途共有して空符号を許す設計とは約束が異なります。
 
-データ圧縮の限界を示したシャノンは、次に「ノイズのある通信路」に挑みました。ノイズがあるとデータの一部が反転したり失われたりします。これに対処するために、我々はデータに **冗長性** を付加してエラーを訂正できるようにします（誤り訂正符号）。
+decodeに渡す木はbuild_huffman_treeが作ったものを使います。不正な文字や途中で切れた符号語は拒否しますが、別の有効な符号列に変わる破損をすべて検出・訂正する仕組みではありません。文字数はUnicodeの符号位置単位で、書記素数やUTF-8バイト数とは異なります。
 
-しかし、冗長性を加えれば加えるほど、実際に送れる情報の実質的な速度（レート）は下がってしまいます。では、ノイズのある環境下で、どのくらいの速度で、どの程度正確に情報を送れるのでしょうか？
+ペイロードは0と1からなるPython文字列であり、ビットを詰めたファイル形式ではありません。表示するLogical payload bitsは論理的な長さで、Pythonオブジェクトのメモリ量ではありません。木の伝達・保存、ファイル終端、ヘッダーの費用も含めていないため、この例だけでファイル全体の圧縮率を示したことにはなりません。
 
-この問いに対する答えが **通信路符号化定理** （シャノンの第二定理）です。
+## 6. 通信路符号化：小さい誤り確率と有限長の無誤りは別
 
-シャノンは、通信路には固有の **通信路容量** （Channel Capacity） $ C $ が存在することを証明しました。そして、驚くべきことに次のように主張しました。
-
-**「情報伝送速度 $ R $ が通信路容量 $ C $ より小さい（ $ R < C $ ）ならば、適切な符号化を行うことで、誤り率をいくらでもゼロに近づけることができる。」**
-
-通信路容量 $ C $ を計算する代表的な公式として、白色ガウス雑音（AWGN）通信路に関するシャノン・ハートレーの定理があります。
+ここではまず、各利用で同じ遷移確率を持ち、過去に依存しない有限の離散無記憶通信路を考えます。入力をU、出力をVとし、通信路容量は入力分布を変えたときの相互情報量の最大値です。単位は1利用当たりのビットです。
 
 $$
-C = B \log_2 \left( 1 + \frac{S}{N} \right)
+C=\max_{P_U}I(U;V),\qquad I(U;V)=H(U)-H(U\mid V)
 $$
 
-ここで、
-- $ C $ : 通信路容量 (bits per second)
-- $ B $ : 帯域幅 (Hz)
-- $ S $ : 信号電力 (Watt)
-- $ N $ : 雑音電力 (Watt)
-- $ \frac{S}{N} $ : SN比 (Signal-to-Noise Ratio)
+M個のメッセージをn回の通信路利用で送る符号のレートは次のように表せます。
 
-この定理は、現代のWi-Fi、5Gモバイル通信、衛星通信など、あらゆるデジタル通信システムの設計において、到達可能な理論的限界（シャノンリミット）を示す道しるべとなっています。
+$$
+R=\frac{\log_2 M}{n}\quad(\mathrm{bits/use})
+$$
 
-## 7. おわりに
+このモデルでR<Cなら、ブロック長を大きくして、復号の誤り確率を任意に小さくする符号を選べます。有限の長さなら必ず誤り0になる、特定の符号を使えば自動的に達成する、という約束ではありません。逆に容量を超える一定のレートでは、同じ仮定の下で誤り確率を0へ近づけることはできません。1秒当たりの値と比べるには、通信路の利用回数毎秒もそろえる必要があります。
 
-クロード・シャノンが構築した情報理論は、「情報」という形のないものを数学的に厳密に定義し、デジタル時代への扉を開きました。 **シャノンのエントロピー** は単なる抽象的な概念にとどまらず、データ圧縮アルゴリズムの絶対的な限界を示し、通信路容量は私たちが日々利用するインターネットや無線通信の進化の方向性を決定づけました。
+### 帯域と電力を制約したAWGN通信路
 
-私たちがスマートフォンで動画をストリーミングでき、遠く離れた探査機から宇宙の鮮明な画像を受信できるのは、情報理論という確固たる数学的基盤が存在するからです。エントロピーの概念は現在、物理学の熱力学エントロピーとの関連性が議論されたり、機械学習（交差エントロピー誤差など）において重要な役割を果たしたりと、さらに広い分野へと波及し続けています。
+帯域幅B Hz、平均信号電力S、帯域内の総雑音電力Nを使う、独立な加法性白色ガウス雑音のモデルでは、平均電力制約の下で次の容量になります。B>0、S≥0、N>0とします。
 
-データの性質を根本から理解し、その限界を知ることは、未来のより高度な情報通信システムを設計する上で、依然として最も重要なアプローチであり続けるでしょう。
+$$
+C=B\log_2\left(1+\frac SN\right)\quad(\mathrm{bits/s})
+$$
+
+このCの単位はビット毎秒です。SとNは同じ電力単位で測り、S/Nは線形比を使います。dBの数値をそのまま代入しません。例えばB=1 MHz、線形比S/N=15なら、次の理論値です。
+
+$$
+10^6\log_2(1+15)=4\times10^6\ \mathrm{bits/s}
+$$
+
+これは実際のWi-Fiや携帯通信の速度測定ではありません。変調、利用可能な入力、遅延、有限長、フェージングや干渉、プロトコルのオーバーヘッドなど、モデルとの違いを確認して適用します。
+
+## 7. 情報理論を使うときの問い
+
+情報理論は、圧縮で減らす冗長性と、通信の信頼性のために加える冗長性を区別しながら、それぞれの限界を調べる枠組みです。動画配信や衛星通信にも基礎を与えますが、一つの式だけで実際の方式全体の性能が決まるわけではありません。
+
+機械学習の交差エントロピーは予測分布にも依存し、情報源そのもののエントロピーと同一ではありません。熱力学エントロピーとの形式的な関係を扱う場合も、物理モデルと単位を区別します。何を確率変数とし、何を既知とし、どのコストを数えるかを明確にすることが、モデルを役立てる出発点です。

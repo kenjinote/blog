@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T09:53:03.566227+09:00",
+  "allPassed": true,
+  "prototypeSha256": {
+    "entropy_plot_program.py": "5841dd9a65da699b76137cb8d022e807e022eed2f0f7a859ddbe360c632dce35",
+    "entropy_huffman_program.py": "1de958a50b5f565f3c832934c79fbcb57636b1f7a2bc55a2833324d6d2d7826c"
+  },
+  "pythonVersion": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "binaryEntropyValidPoints": 1001,
+  "binaryEntropyInvalidPointsRejected": 5,
+  "exhaustiveAbcRoundTripsLength0through6": 1093,
+  "unicodeRoundTrips": 6,
+  "repeatedCallNoStaleCodebook": true,
+  "equalFrequenciesDeterministicAcrossInputOrder": true,
+  "nonStringBuildInputsRejected": 4,
+  "invalidOrTruncatedPayloadCasesRejected": 6,
+  "unknownSymbolRejected": true,
+  "independentFullBinaryTreeShapeOptimalProfiles": 1360,
+  "optimalProfileScope": "2through5symbols,eachpositiveintegerweight1through4;allfullbinaryleafdepthmultisets,assignlargestweightstoshortestdepths. Finite independent oracle,not all-input optimalityproof.",
+  "singleSymbolConvention": "Nonempty0code,L=1,H=0;strictL<H+1notclaimedforthisimplementationcase.",
+  "sampleStdout": "Huffman codes:\n'_': 001\n'a': 1011\n'd': 01110\n'e': 0001\n'f': 01111\n'h': 0100\n'i': 0101\n'm': 10100\n'n': 111\n'o': 100\n'p': 10101\n'r': 1100\n's': 0000\n't': 1101\n'y': 0110\nLogical payload bits: 140\nRound trip: True\n",
+  "plot": {
+    "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-prototype-plot.png",
+    "sha256": "da51287a79462f2044a4d6bdee16c0092ed0f907d9ebe07891d9b1148f841ec2",
+    "points": 101,
+    "peakAtHalf": true,
+    "warnings": [
+      "FigureCanvasAgg is non-interactive, and thus cannot be shown"
+    ],
+    "visuallyInspected": false
+  },
+  "scope": "Standalone manual prototypes,not yet inserted into article;article programs executed0atthisstage. No revised-body,translation,ledger,payloadfileformat,serialization,errorcorrection or all-input certification.",
+  "reviewedTranslationsAdded": 0
+}

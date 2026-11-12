@@ -1,7 +1,7 @@
 ---
-title: "Information Theory and Shannon Entropy: Exploring the Limits of Data Compression and Communication"
+title: "Information theory and Shannon entropy: compression and channel limits"
 date: "2026-09-24T19:44:38+09:00"
-description: "A detailed explanation of the basics of information theory proposed by Claude Shannon, the concept of entropy, the limits of data compression, and its application to modern communications."
+description: "Distinguish self-information, symbol entropy, entropy rate, Huffman coding conventions and channel capacity using explicit assumptions and Python examples."
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
@@ -12,191 +12,268 @@ tags:
   - entropy
   - data-compression
   - math
+math: true
+mermaid: true
+lastmod: "2026-11-12"
 ---
 
-## 1. Introduction: What is Information?
+## 1. Separate meaning from uncertainty about a choice
 
-Although we casually use the word "information" on a daily basis, it is extremely difficult to define "information" scientifically. News, messages from friends, DNA base sequences, or radio waves arriving from space, all of these contain information. However, in order to handle them within a common mathematical framework, an objective and quantitative measure is necessary.
+News, messages from friends, DNA sequences and radio signals from space all carry information. But the importance of their content and the number of bits required to send them are different quantities.
 
-It was Claude Shannon, a mathematician and engineer, who tackled this grand challenge and laid the foundation for modern digital society. It is no exaggeration to say that his 1948 paper "A Mathematical Theory of Communication" single-handedly founded the entirely new academic field of **Information Theory**.
+Claude Shannon's 1948 paper separated the evaluation of meaning from the engineering problem of communication and studied compression and communication limits using probability. Its introduction, available in this [reprint](https://wucj.lab.westlake.edu.cn/Others/shannon1948.pdf), also credits earlier work by Nyquist and Hartley. We will distinguish self-information, entropy, lossless compression and communication with noise.
 
-In this article, we will thoroughly delve into how Shannon mathematically defined "information", and what its central concept, **Shannon Entropy**, means for data compression and communication technology.
+## 2. A model of communication
 
-## 2. General Model of Communication
-
-Shannon temporarily set aside the meaning (semantics) of information and focused on the "transmission" of information itself. The general model of a communication system he proposed is represented as the Mermaid diagram below.
+An information source produces a message, a transmitter converts it to a signal, the signal passes through a channel, and a receiver reconstructs the message for its destination.
 
 ```mermaid
 graph LR
-    A["Information Source"] --> B["Transmitter"]
-    B -->|"Transmitted Signal"| C(("Channel"))
-    C -->|"Received Signal"| D["Receiver"]
+    A["Information source"] --> B["Transmitter"]
+    B -->|"Transmitted signal"| C(("Channel"))
+    C -->|"Received signal"| D["Receiver"]
     D --> E["Destination"]
-    N["Noise Source"] -.-> C
+    N["Noise source"] -.-> C
 ```
 
-In this model, the greatest challenge of communication boils down to the point of **"how to transmit messages accurately and efficiently through a channel where noise is present"**.
+Source coding uses statistical structure to reduce redundancy. Channel coding instead adds suitable redundancy to combat noise. Both are coding, but their purposes differ.
 
-## 3. Mathematical Definition of Information Quantity
+## 3. Self-information
 
-The most fundamental question in information theory is, "How much information did we gain when we learned that a certain event occurred?"
-
-Shannon considered the quantity of information as the "degree of surprise".
-- Even if **something that happens often (an event with a high probability)** occurs, the surprise is small, and the amount of information gained is small.
-- If **something that rarely happens (an event with a low probability)** occurs, the surprise is large, and the amount of information gained is large.
-
-When the probability of an event $ x $ occurring is $ P(x) $, the **Self-Information** $ I(x) $ that the event possesses is defined as follows:
+For an event x with positive probability P(x), define its self-information I(x) as follows. Base-2 logarithms give units of bits.
 
 $$
-I(x) = - \log_2 P(x) = \log_2 \frac{1}{P(x)}
+I(x)=-\log_2P(x)=\log_2\frac1{P(x)},\qquad 0<P(x)\le1
 $$
 
-When $ 2 $ is used as the base of the logarithm, the unit of information quantity is the **bit**. For example, the information quantity of the event that a coin, which has an equal probability for heads and tails ($ P = 0.5 $), is flipped and lands on heads is,
+Less probable events receive larger values. This does not measure psychological surprise or the value of the content. It does not assign finite self-information to an event of probability zero; the probability model and domain matter.
+
+For heads from a fair coin:
 
 $$
-I(\text{Heads}) = - \log_2(0.5) = 1 \text{ bit}
+I=-\log_2(1/2)=1\ \mathrm{bit}
 $$
 
-This also matches our intuitive understanding of "1 bit of information".
+## 4. Entropy is expected self-information
 
-## 4. Shannon Entropy
-
-Self-information is the amount of information for an individual event, but how can we know how much information is generated on average from the entire information source?
-
-This is where **Entropy** comes into play. When an information source $ X $ generates $ n $ different symbols $ x_1, x_2, \dots, x_n $ with probabilities $ P(x_1), P(x_2), \dots, P(x_n) $, the entropy $ H(X) $ of the information source $ X $ is defined as the expected value of self-information.
+Let X take values in a finite alphabet of m symbols, with p_i=P(X=x_i). Probabilities are nonnegative and sum to one. Shannon entropy is expected self-information.
 
 $$
-H(X) = - \sum_{i=1}^{n} P(x_i) \log_2 P(x_i)
+H(X)=\mathbb E[I(X)]=-\sum_{i=1}^{m}p_i\log_2p_i,\qquad \sum_{i=1}^{m}p_i=1
 $$
 
-(However, when $ P(x_i) = 0 $, it is considered as $ 0 \log_2 0 = 0 $)
+For a zero-probability term, use the limiting convention 0log₂0=0. Units are bits per symbol. For a fixed alphabet of m symbols:
 
-### Intuitive Meaning of Entropy
-Entropy $ H(X) $ represents the degree of **uncertainty** that an information source has.
-- When it is completely unpredictable which symbol will appear (all probabilities are equal), entropy is maximized.
-- When the same symbol always appears (a certain probability is $ 1 $ and the others are $ 0 $), there is no uncertainty, and the entropy becomes $ 0 $.
+$$
+0\le H(X)\le\log_2m
+$$
 
-Let's calculate the change in entropy when the probability $ p $ of a coin landing on heads is varied, using the following Python code.
+The maximum occurs at the uniform distribution; the minimum occurs when one symbol has probability one. Maximum uncertainty is an assessment under this probability model and the information available. It does not establish cryptographic unpredictability or guarantee that another party lacks extra information.
+
+If heads has probability p, binary entropy is the following function. The same zero-term convention applies at the endpoints.
+
+$$
+h_2(p)=-p\log_2p-(1-p)\log_2(1-p),\qquad 0\le p\le1
+$$
+
+This Python example accepts a finite scalar probability and rejects values outside the domain. Drawing the plot requires Matplotlib.
 
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
+import math
+
 
 def binary_entropy(p):
+    if not math.isfinite(p) or not 0 <= p <= 1:
+        raise ValueError("p must be finite and between 0 and 1")
     if p == 0 or p == 1:
-        return 0
-    return -p * np.log2(p) - (1 - p) * np.log2(1 - p)
+        return 0.0
+    return -p * math.log2(p) - (1 - p) * math.log2(1 - p)
 
-probabilities = np.linspace(0, 1, 100)
-entropies = [binary_entropy(p) for p in probabilities]
 
-plt.plot(probabilities, entropies)
-plt.title('Binary Entropy Function')
-plt.xlabel('Probability of heads (p)')
-plt.ylabel('Entropy H(X) in bits')
-plt.grid(True)
-plt.show()
+if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+
+    probabilities = [i / 100 for i in range(101)]
+    entropies = [binary_entropy(p) for p in probabilities]
+    plt.plot(probabilities, entropies)
+    plt.title("Binary entropy")
+    plt.xlabel("Probability of heads (p)")
+    plt.ylabel("Entropy (bits per symbol)")
+    plt.grid(True)
+    plt.show()
 ```
 
-When this graph is drawn, it can be seen that the entropy reaches its maximum value of $ 1 $ when $ p = 0.5 $, which is a state of complete unpredictability.
+The value is zero at p=0 and p=1, and reaches its maximum of one bit at p=0.5. The curve is symmetric.
 
-## 5. Source Coding Theorem: The Limits of Data Compression
+## 5. Source coding: which average, under which assumptions?
 
-Entropy is not just an abstract concept. Shannon proved that this entropy defines the **absolute limit of data compression**. This is the **Source Coding Theorem** (Shannon's first theorem).
-
-The claim of the theorem is very simple.
-**"No matter what lossless compression algorithm is used, the average code length of the data generated from an information source cannot be smaller than the entropy $ H(X) $ of that information source."**
+Assign binary codewords to a finite alphabet so that concatenated codewords can be uniquely decoded. If symbol i has codeword length ℓ_i, the expected length L satisfies the following bound. A prefix code is a uniquely decodable code in which no codeword is the beginning of another.
 
 $$
-L \ge H(X)
+L=\sum_i p_i\ell_i,\qquad L\ge H(X)
 $$
-( $ L $ is the average code length)
 
-In other words, entropy indicates the "essential size that the information itself possesses", meaning that no matter how excellent an algorithm like ZIP or gzip is developed, it is mathematically impossible to compress beyond the wall of this limit.
+This is an expectation under a specified distribution. It does not mean that each individual file must be at least this long. Nor can one determine the compression limit for a correlated sequence from its single-symbol marginal distribution alone.
 
-### Huffman Coding
-As a specific method to approach the limit of entropy, **Huffman Coding** was devised by David Huffman, who developed the idea of Fano, Shannon's collaborator.
+### Huffman coding and conditional optimality
 
-By assigning short bit strings to symbols with high occurrence probabilities and long bit strings to symbols with low occurrence probabilities, the overall average code length is minimized. Below is an example of constructing a simple Huffman code in Python.
+[David Huffman's 1952 paper](https://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf) constructs prefix codes minimizing expected length for given probabilities. In the binary case, repeatedly combine the two smallest weights and return their sum to the collection. Ties can produce different optimal codebooks.
+
+With at least two positive-probability symbols, the optimal binary prefix code's expected length L_H lies in this range:
+
+$$
+H(X)\le L_{\mathrm H}<H(X)+1
+$$
+
+This is optimality within symbol-by-symbol coding with known weights, not among all compression methods. For a nondegenerate independent, identically distributed source, grouping n symbols and choosing a suitable prefix code gives the following per-symbol range. L_n is the expected number of bits for the whole n-symbol block.
+
+$$
+H(X)\le\frac{L_n}{n}<H(X)+\frac1n
+$$
+
+With dependencies, use the block's joint entropy. For a stationary finite-alphabet source, the entropy rate is defined by this limit:
+
+$$
+\overline H=\lim_{n\to\infty}\frac{H(X_1,\ldots,X_n)}{n}
+$$
+
+For example, choose one fair bit Z initially, then repeat its value throughout a known block length n. In this model:
+
+$$
+P(Z=0)=P(Z=1)=\frac12,\qquad X_i=Z,\qquad H(X_i)=1,\qquad H(X_1,\ldots,X_n)=1
+$$
+
+Each position has marginal entropy one bit, but a decoder knowing n and this model can represent the whole block with Z's one bit. This distinguishes single-symbol entropy from information in a sequence. ZIP and gzip also involve headers, models, history and byte boundaries; their limits cannot be inferred from single-character frequencies alone.
+
+### A Python example covering empty and single-symbol inputs
+
+This example counts Python characters and uses a shared tree to encode and decode. Equal frequencies are handled independently of input order, and each call creates a fresh codebook. An empty string uses an empty tree and payload.
 
 ```python
 import heapq
 from collections import Counter
+from itertools import count
+
 
 class Node:
-    def __init__(self, char, freq):
+    def __init__(self, char=None, left=None, right=None):
         self.char = char
-        self.freq = freq
-        self.left = None
-        self.right = None
+        self.left = left
+        self.right = right
 
-    def __lt__(self, other):
-        return self.freq < other.freq
 
 def build_huffman_tree(text):
-    frequency = Counter(text)
-    heap = [Node(char, freq) for char, freq in frequency.items()]
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+    order = count()
+    heap = [(freq, next(order), Node(char))
+            for char, freq in sorted(Counter(text).items())]
     heapq.heapify(heap)
-
+    if not heap:
+        return None
     while len(heap) > 1:
-        left = heapq.heappop(heap)
-        right = heapq.heappop(heap)
-        merged = Node(None, left.freq + right.freq)
-        merged.left = left
-        merged.right = right
-        heapq.heappush(heap, merged)
+        freq_left, _, left = heapq.heappop(heap)
+        freq_right, _, right = heapq.heappop(heap)
+        parent = Node(left=left, right=right)
+        heapq.heappush(heap, (freq_left + freq_right, next(order), parent))
+    return heap[0][2]
 
-    return heap[0]
 
-def generate_huffman_codes(node, prefix="", codebook={}):
-    if node is not None:
+def generate_huffman_codes(root):
+    codes = {}
+    stack = [] if root is None else [(root, "")]
+    while stack:
+        node, prefix = stack.pop()
         if node.char is not None:
-            codebook[node.char] = prefix
-        generate_huffman_codes(node.left, prefix + "0", codebook)
-        generate_huffman_codes(node.right, prefix + "1", codebook)
-    return codebook
+            codes[node.char] = prefix or "0"
+        else:
+            stack.append((node.right, prefix + "1"))
+            stack.append((node.left, prefix + "0"))
+    return codes
 
-# Sample text
-text = "shannon_entropy_and_information_theory"
-tree_root = build_huffman_tree(text)
-codes = generate_huffman_codes(tree_root)
 
-print("Huffman Codes:")
-for char, code in sorted(codes.items()):
-    print(f"'{char}': {code}")
+def encode(text, codes):
+    try:
+        return "".join(codes[char] for char in text)
+    except KeyError as exc:
+        raise ValueError("symbol missing from codebook") from exc
+
+
+def decode(bits, root):
+    if any(bit not in "01" for bit in bits):
+        raise ValueError("payload must contain only 0 and 1")
+    if root is None:
+        if bits:
+            raise ValueError("nonempty payload with an empty tree")
+        return ""
+    if root.char is not None:
+        if "1" in bits:
+            raise ValueError("single-symbol code uses only 0")
+        return root.char * len(bits)
+    result = []
+    node = root
+    for bit in bits:
+        node = node.left if bit == "0" else node.right
+        if node.char is not None:
+            result.append(node.char)
+            node = root
+    if node is not root:
+        raise ValueError("truncated codeword")
+    return "".join(result)
+
+
+if __name__ == "__main__":
+    text = "shannon_entropy_and_information_theory"
+    root = build_huffman_tree(text)
+    codes = generate_huffman_codes(root)
+    payload = encode(text, codes)
+    print("Huffman codes:")
+    for char, code in sorted(codes.items()):
+        print(f"{char!r}: {code}")
+    print("Logical payload bits:", len(payload))
+    print("Round trip:", decode(payload, root) == text)
 ```
 
-## 6. Channel Coding Theorem: The Limit of Error-Free Communication
+For a single symbol, this example assigns the nonempty code 0 and represents the repetition count through payload length. Then H=0 and L=1, so the strict upper bound L_H<H+1 above does not apply to this implementation's single-symbol case. A design allowing an empty code and sharing the count separately uses a different convention.
 
-Having shown the limits of data compression, Shannon next tackled "noisy channels". When noise is present, parts of the data are inverted or lost. To cope with this, we add **redundancy** to the data so that errors can be corrected (error-correcting codes).
+Pass decode a tree created by build_huffman_tree. It rejects invalid characters and truncated codewords, but does not detect or correct every corruption that changes a payload into another valid code sequence. Characters here are Unicode code points, not grapheme clusters or UTF-8 bytes.
 
-However, the more redundancy is added, the lower the effective speed (rate) of information that can actually be sent. So, in a noisy environment, at what speed and how accurately can information be sent?
+The payload is a Python string of zeros and ones, not a bit-packed file format. Logical payload bits measures logical length, not Python object memory. It excludes the cost of storing or transmitting the tree, framing and headers, so this example alone does not establish whole-file compression ratios.
 
-The answer to this question is the **Channel Coding Theorem** (Shannon's second theorem).
+## 6. Channel coding: small error probability versus finite zero error
 
-Shannon proved that each channel has a specific **Channel Capacity** $ C $. And, surprisingly, he claimed the following.
-
-**"If the information transmission rate $ R $ is less than the channel capacity $ C $ ( $ R < C $ ), it is possible to bring the error rate as close to zero as desired by performing appropriate coding."**
-
-A representative formula for calculating the channel capacity $ C $ is the Shannon-Hartley theorem regarding the Additive White Gaussian Noise (AWGN) channel.
+First consider a finite discrete memoryless channel: each use has the same transition probabilities and does not depend on the past. Let U be its input and V its output. Capacity is the maximum mutual information over input distributions, in bits per channel use.
 
 $$
-C = B \log_2 \left( 1 + \frac{S}{N} \right)
+C=\max_{P_U}I(U;V),\qquad I(U;V)=H(U)-H(U\mid V)
 $$
 
-Here,
-- $ C $ : Channel Capacity (bits per second)
-- $ B $ : Bandwidth (Hz)
-- $ S $ : Signal Power (Watt)
-- $ N $ : Noise Power (Watt)
-- $ \frac{S}{N} $ : Signal-to-Noise Ratio (SNR)
+A code sending M messages through n channel uses has rate:
 
-This theorem serves as a guidepost indicating the attainable theoretical limit (Shannon limit) in the design of all digital communication systems, such as modern Wi-Fi, 5G mobile communications, and satellite communications.
+$$
+R=\frac{\log_2 M}{n}\quad(\mathrm{bits/use})
+$$
 
-## 7. Conclusion
+In this model, if R<C, codes can be selected with arbitrarily small decoding error probability as block length increases. This does not promise exactly zero errors at finite length or automatic achievement by a particular code. At a fixed rate above capacity, error probability cannot approach zero under the same assumptions. Comparing per-second quantities also requires a consistent number of channel uses per second.
 
-Information theory constructed by Claude Shannon mathematically and rigorously defined the intangible concept of "information" and opened the door to the digital age. **Shannon Entropy** goes beyond a mere abstract concept, showing the absolute limit of data compression algorithms, and channel capacity has determined the direction of evolution of the Internet and wireless communications that we use daily.
+### A bandwidth- and power-constrained AWGN channel
 
-The reason we can stream videos on our smartphones and receive clear images of space from distant probes is because the solid mathematical foundation of information theory exists. The concept of entropy is now spreading to even wider fields, such as being discussed in relation to thermodynamic entropy in physics and playing an important role in machine learning (e.g., cross-entropy loss).
+For independent additive white Gaussian noise, bandwidth B Hz, average signal power S and total noise power N within the band, the average-power-constrained capacity is as follows. Assume B>0, S≥0 and N>0.
 
-Fundamentally understanding the nature of data and knowing its limits will continue to remain the most important approach in designing more advanced information and communication systems of the future.
+$$
+C=B\log_2\left(1+\frac SN\right)\quad(\mathrm{bits/s})
+$$
+
+Here C is in bits per second. Measure S and N in the same power units and use their linear ratio, not the numerical value in dB. For example, B=1 MHz and linear S/N=15 give this theoretical value:
+
+$$
+10^6\log_2(1+15)=4\times10^6\ \mathrm{bits/s}
+$$
+
+This is not a measurement of Wi-Fi or cellular throughput. Modulation, allowed inputs, delay, finite lengths, fading, interference and protocol overhead can differ from the model and must be checked when applying it.
+
+## 7. Questions to ask when using information theory
+
+Information theory provides a framework for studying limits while distinguishing the redundancy removed by compression from that added for communication reliability. It underpins video streaming and satellite communications, but one formula does not determine the performance of an entire practical system.
+
+Cross-entropy in machine learning also depends on the prediction distribution and is not identical to the source's entropy. When considering formal connections with thermodynamic entropy, distinguish physical models and units. The starting point is to specify the random variables, what is known and which costs are counted.

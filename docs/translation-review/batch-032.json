@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "article": "information-theory-shannon-entropy",
+  "sourceAudit": "docs/translation-review/batch-032-source-audit.json",
+  "sourceNotes": "docs/translation-review/batch-032-source-notes.md",
+  "reviews": {
+    "post/information-theory-shannon-entropy/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/information-theory-shannon-entropy/index.md",
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "translationHash": "964ae4f77e36b04c8fcde80fdf264a98677bb3c4916aa26277e037779a6f1ffe",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and actual revised JA/EN metadata,seven sections,one full diagram andboth fullPythonprograms in boundedchunks. Preserved communication,selfinformation,entropy,sourcecoding,Huffman,channel/AWGN andmodernapplications. Corrected singlehanded historicalclaim,universal per-file/marginalentropy bound,unqualified Huffmanoptimality and finitezeroerror reading. Added explicit correlatedblock and sharedcount assumptions,physical/modelcost limits."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared selfinformation versus entropy,sourcecoding versus channelcoding,prefix versus uniquelydecodable,single-symbol marginal versus jointblock/entropy rate,expectedlength versus individualfile,symbol/codepoint versus grapheme/UTF8byte,logicalbitcount versus Pythonmemory/serializedformat. Kept finiteDMC bits/use distinct from AWGN bits/s,linearSNR versus dB,nonempty0 singleton convention versus externallysharedcount/emptycode. English matches Japanese conditions andexceptions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared14identicalTeX:positiveprobability domain,0log0 convention,finitealphabetmax,expectedlength lowerbound,Huffmanupperbound only2positive-symbol case,iidnondegenerateblockbound,stationaryentropyrate,constantZ correlatedblock Hjoint1 versus marginal1,DMCmaxmutualinformation/rate,averagepowerAWGN and4Mbps linearSNR15. Singleton implementation H0L1 explicitly excluded from strictH+1claim. Finite1001binarypoints/1360smalloptimalprofiles each,oneAWGN and4correlatedexamples,not generalproof/physicalsimulation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read both complete extracted actualPythonprograms inJA/EN;executed2 perversion plus standalone mains. Each:1001entropypoints/5invalidrejections,1093abc roundtrips+6Unicode,4nonstringrejections,6invalid/truncatedpayloads,unknownsymbol,repeatedcall freshdictionary,equalfrequencydeterminism,and1360independentfullbinarytreeshapeoptimalprofiles. Old emptyheap/singleton/framing/defaultdict defects reproduced separately. PNG prototype visuallyread and actualJA/EN plots exactbyteSHA match;Agg GUIwarning retained. No arbitraryexternaltree/codebook,allcorruptiondetection,errorcorrection,serializedformat or all-input certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primarypaper URLs match actualHTML;reading scope documented separately,Huffmanfull4scannedpages,Shannonselectedtext and7visualpages,notwholeShannonpaper. Removed onlyJA erroneous chart-to-graphsearch link;ENdidnothaveit. Bothrawdatelines preserved,effectiveSep21T02:45:54+09:00,actualNov12lastmod,slug/imagehash/taxonomy unchanged.14hreflang13sidebar and33bundle1853multilingualpages/3371HTTPSHTML41XML passed;17existingtests rerun. Other11bodies/publication pending."
+        }
+      },
+      "summary": "Full English entropy/sourcecoding/channel comparison and actual Huffman boundary/roundtrip verification.",
+      "languageSpecificFindings": "English preserved secondround-equivalent themes without importing findings from earliercooperation article. Clarified sourceversuschannelcoding,expectedlength versus eachfile,conditionaloptimality,Unicodecodepoint/logicalbit counts and singletonH0L1 exception. Old English has no chart/graph mislink;JAonly removal recorded accurately. Mainprograms identical acrossJA/EN withlocalprose anddiagramlabels.",
+      "validation": "docs/translation-review/batch-032-ja-en-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "Other11translation bodies remainunreviewed atthisstage.",
+        "Finiteoracle cases,not all-input proof,completefileformat or practicalnetworkbenchmark.",
+        "PNGvisual review only,no browser/KaTeX/Mermaid/nativeGUI certification.",
+        "Primary reading scope partialforShannon andseparatelyrecorded;publication andwholegoalpending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "ja",
+        "en"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "validation": "docs/translation-review/batch-032-ja-en-validation.json",
+      "checks": "docs/translation-review/batch-032-ja-en-checks.json",
+      "plotReview": "docs/translation-review/batch-032-ja-en-plot-review.json",
+      "texEach": 14,
+      "diagramsEach": 1,
+      "diagramSolidEdges": 4,
+      "diagramDottedEdges": 1,
+      "articleProgramsExecutedEach": 2,
+      "actualPreviewBundles": 33,
+      "multilingualPages": 1853,
+      "httpsHtmlPages": 3371,
+      "httpsXmlFiles": 41,
+      "unitTestsRerun": 17,
+      "reviewedTranslationsTotal": 385,
+      "unreviewedTranslations": 12647,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    }
+  ]
+}

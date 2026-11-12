@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "draftedAt": "2026-11-12T09:57:29.182122+09:00",
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/information-theory-shannon-entropy/index.md",
+      "originalSha256": "74d3e10d0371e98b32d7f4cce11e4baca36e4d12d85c4acfa55beef881b0c2fa",
+      "draftSha256": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "texExpressions": 14,
+      "diagrams": 1,
+      "diagramSolidEdges": 4,
+      "diagramDottedEdges": 1,
+      "pythonBlocks": 2
+    },
+    {
+      "language": "en",
+      "path": "content/post/information-theory-shannon-entropy/index.en.md",
+      "originalSha256": "bbde81179a33b2c48f7a72809bcb4819ce8f3d419a590d405e75de6d912e8f23",
+      "draftSha256": "964ae4f77e36b04c8fcde80fdf264a98677bb3c4916aa26277e037779a6f1ffe",
+      "texExpressions": 14,
+      "diagrams": 1,
+      "diagramSolidEdges": 4,
+      "diagramDottedEdges": 1,
+      "pythonBlocks": 2
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "scope": "Manual JA/EN draft after complete original reading and documented primary scope. Full actual revised reread,article-extracted execution,HTML/plot checks and ledger certification remain pending."
+}

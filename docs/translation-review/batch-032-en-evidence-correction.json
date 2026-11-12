@@ -1,0 +1,10 @@
+{
+  "correctedAt": "2026-11-12T10:04:16.171718+09:00",
+  "initialEvidence": "docs/translation-review/batch-032.json",
+  "currentEvidence": "docs/translation-review/batch-032-r2.json",
+  "priorEntryRetained": true,
+  "priorOtherLedgerEntriesUnchanged": 384,
+  "recordStdout": "Recorded ai review: post/information-theory-shannon-entropy/index.en.md\n",
+  "ledgerStdout": "{\"current\": 385, \"unreviewed\": 12647}\n",
+  "scope": "Administrative supplementary finding correction only;no article edits,prose recertification or extra translation counted."
+}

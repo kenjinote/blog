@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-11-12T10:02:43.687386+09:00",
+  "reviewer": "Codex (AI)",
+  "imageActuallyViewed": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-prototype-plot.png",
+  "imageSha256": "da51287a79462f2044a4d6bdee16c0092ed0f907d9ebe07891d9b1148f841ec2",
+  "inspection": "Read actual plotted title,axis labels,bits per symbol units,symmetric curve,zero endpoints and peak1 atp0.5;no clipping or missing labels observed.",
+  "articlePlotOutputsExactByteMatch": [
+    "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\entropy-code-batch-032-ja-en-validation-ja\\binary-entropy.png",
+    "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\entropy-code-batch-032-ja-en-validation-en\\binary-entropy.png"
+  ],
+  "scope": "Static PNG visually inspected and actualJA/EN rendered PNG hashes match. Not browser or native GUI display certification."
+}
