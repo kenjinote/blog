@@ -443,6 +443,46 @@
         "Actualplot PNG matches priorinspectedimage;no browser/KaTeX/Mermaid/nativeGUI certification.",
         "Primary reading scope separatelydocumented;publication andwholegoalpending."
       ]
+    },
+    "post/information-theory-shannon-entropy/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/information-theory-shannon-entropy/index.md",
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "translationHash": "449388fa7d7c70a3ec9b7d74f743a704ba6daccf08bf8032c54bab5e9044af80",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full old and actual revised Arabic metadata, seven sections, full communication graph and both complete Python blocks against frozen Japanese; reread final nondegenerate/stationary/capacity clarifications. Corrected singlehanded history, individual-file entropy barrier, unqualified Huffman optimality and finite-zero-error reading. Matched known-n constantZ example, expectation, singleton convention, source/channel redundancy and practical system/file costs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared المعلومات الذاتية/القيمة المتوقعة, المصدر/القناة, الشفرة البادئية/فك الترميز على نحو وحيد, الهامشية/المشتركة/معدل الإنتروبيا, ساكن إحصائيًا/عديمة الذاكرة, نقاط ترميز/عناقيد كتابية/بايتات and الحمولة versus memory. Corrected original طاقة (energy) for watt quantities to قدرة (power), with average signal power and total in-band noise power explicit. Defined stationarity by joint-law time-shift invariance; nondegenerate iid means at least two positive symbols. Original English plot/sample retained and labels glossed. Noise additive/input-independent, M possible messages and linear SNR versus dB distinguished."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read14 exact display formulas and conditions: positiveP/zeroentropyterm, finitealphabetmax/binaryentropy, expectedprefix/unique-decodablelength lower, two-positive-symbol strictHuffmanupper, iidnondegenerateblockbound, stationaryentropyrate, constantZknownn/marginal1/joint1, finiteDMCcapacity/rate and average-powerAWGN4Mbps. SingletonH0L1 exception explicit.45LTR bidi spans preserve inline expressions and critical inequalities in source/generatedHTML. Numeric finite oracles not claimed as general proof or measured network performance."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read and executed actual two corrected programs and main blocks. Passed1001valid/5invalidprobabilities,1093abcroundtrips+6Unicode including Arabic+emoji, freshcodebooks, deterministicties, malformed/truncated/unknownsymbol/nonstringrejections and1360independenttreeprofiles. Original English sample retained:140logicalbits roundtriptrue; no originalArabic sample invented. ActualplotPNG matches prior visually inspected image, Aggwarning retained. FirstRTLcheck failed because raw Markdown TeX less-than signs were fed to HTMLParser; failure preserved. R2 parses matched bdi spans and validates original counts; same article/HTML and429snapshots rechecked. LinkedCSS explicitly preserves math/pre/highlight LTR in RTL page. No browser/KaTeX/Mermaid/native/all-input certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primarypaper references matchHTML; separately documented primary reading scope retained without new full-paper claims. OriginalArabicplottext had no unrelated link. Bothrawdates/effectiveSep21, slug,imagehash/taxonomy preserved with actualNov12lastmod. Article14hreflang13sidebar,45exactLTRbdi,HTMLlangar/dirrtl and actual linkedlocalstylesheet rules checked. R2selected+33bundle1853pages/3371HTTPSHTML41XML pass; initialsuccessfulbuild and failedchecks preserved/reused honestly. Existing17tests refer to priorJAEN success,notrerun. All12translations now fullbody compared; finalassembly/publication/wholegoal pending."
+        }
+      },
+      "summary": "Full Arabic entropy and coding review correcting power terminology and checking static RTL/LTR preservation with actual program execution.",
+      "languageSpecificFindings": "Corrected energy طاقة versus power قدرة in watt-based signal/noise quantities. Clarified marginal/joint/entropy rate, stationarity/memoryless, prefix/unique decoding and codepoint/grapheme/byte.45LTR bdi spans and critical comparisons preserved in generated HTML; linked math/code CSS verified statically. Original English sample/plot retained and glossed. Initial RTL-parser failure retained; R2verification on unchanged source/build passes. No visual browser/native certification.",
+      "validation": "docs/translation-review/batch-032-ar-r2-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "0 other translation bodies remainunreviewed atthisstage.",
+        "Finiteoracle cases,not all-input proof,serializedfileformat,errorcorrection or practicalnetworkbenchmark.",
+        "Actualplot PNG matches priorinspectedimage;no browser/KaTeX/Mermaid/nativeGUI certification.",
+        "Primary reading scope separatelydocumented;publication andwholegoalpending."
+      ]
     }
   },
   "stages": [
@@ -1094,6 +1134,67 @@
       "unreviewedTranslations": 12637,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 1,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "ar"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "validation": "docs/translation-review/batch-032-ar-r2-validation.json",
+      "checks": "docs/translation-review/batch-032-ar-r2-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-032-ar-ledger-validation.json",
+      "texEach": 14,
+      "diagramsEach": 1,
+      "diagramSolidEdges": 4,
+      "diagramDottedEdges": 1,
+      "articleProgramsExecutedEach": 2,
+      "codeValidation": {
+        "language": "ar",
+        "articleProgramsExecuted": 2,
+        "extractedProgramSha256": [
+          "5841dd9a65da699b76137cb8d022e807e022eed2f0f7a859ddbe360c632dce35",
+          "1de958a50b5f565f3c832934c79fbcb57636b1f7a2bc55a2833324d6d2d7826c"
+        ],
+        "pythonVersion": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "binaryEntropyValidPoints": 1001,
+        "binaryEntropyInvalidPointsRejected": 5,
+        "exhaustiveAbcRoundTripsLength0through6": 1093,
+        "unicodeRoundTrips": 6,
+        "localizedOriginalExampleRoundTrips": [],
+        "repeatedCallNoStaleCodebook": true,
+        "equalFrequenciesDeterministicAcrossInputOrder": true,
+        "nonStringBuildInputsRejected": 4,
+        "invalidOrTruncatedPayloadCasesRejected": 6,
+        "unknownSymbolRejected": true,
+        "independentFullBinaryTreeShapeOptimalProfiles": 1360,
+        "optimalProfileScope": "2through5symbols,eachpositiveintegerweight1through4;allfullbinaryleafdepthmultisets,largestweightstoshortestdepths. Finite independent oracle,not all-input proof.",
+        "singleSymbolConvention": "Nonempty0code,L=1,H=0;strictL<H+1notclaimedforthisimplementationcase.",
+        "sampleStdout": "Huffman codes:\n'_': 001\n'a': 1011\n'd': 01110\n'e': 0001\n'f': 01111\n'h': 0100\n'i': 0101\n'm': 10100\n'n': 111\n'o': 100\n'p': 10101\n'r': 1100\n's': 0000\n't': 1101\n'y': 0110\nLogical payload bits: 140\nRound trip: True\n",
+        "plot": {
+          "path": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\entropy-code-batch-032-ar-r2-validation-ar\\binary-entropy.png",
+          "sha256": "da51287a79462f2044a4d6bdee16c0092ed0f907d9ebe07891d9b1148f841ec2",
+          "points": 101,
+          "peakAtHalf": true,
+          "warnings": [
+            "FigureCanvasAgg is non-interactive, and thus cannot be shown"
+          ],
+          "visuallyInspectedByThisCode": false
+        },
+        "scope": "Actual article-extracted standalone programs plus finite oracles. No serialized-file format,errorcorrection,all-input proof or native/browser/ledger certification."
+      },
+      "plotExactMatchTo": "docs/translation-review/batch-032-ja-en-plot-review.json",
+      "actualPreviewBundles": 33,
+      "multilingualPages": 1853,
+      "httpsHtmlPages": 3371,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 396,
+      "unreviewedTranslations": 12636,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 0,
       "publicationPending": true
     }
   ],

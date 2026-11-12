@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "checkedAt": "2026-11-12T20:53:20.108264+09:00",
+  "allPassed": true,
+  "actualPreviewBundles": 33,
+  "sourceSnapshotsExact": 429,
+  "existingTestsPreviouslyPassedNotRerun": 17,
+  "results": [
+    {
+      "command": [
+        "docs/translation-review/verify_batch_032.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-entropy-ar",
+        "--languages",
+        "ar",
+        "--output",
+        "docs/translation-review/batch-032-ar-r2-validation.json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"passed\": true, \"versions\": 1, \"texEach\": 14, \"programsEach\": 2, \"roundTripsEach\": 1093, \"optimalProfilesEach\": 1360}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-entropy-ar"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1853 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-entropy-ar"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 3371, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    }
+  ],
+  "reusesSuccessfulBuild": "docs/translation-review/batch-032-ar-build.json",
+  "initialAttemptPreserved": "docs/translation-review/batch-032-ar-checks.json",
+  "reason": "Initial RTL verifier fed raw Markdown TeX with less-than signs to HTMLParser; it consumed prose as tags and failed bdi nesting. Fixed by parsing only explicitly matched source bdi spans, with original start/end counts checked. Article source and generated HTML unchanged; all429source snapshots rechecked.",
+  "verifierSha256": "baa8517de912a23d349624b4349e68a462117193d89d39b3a328530a4b9c3cb5",
+  "scope": "Static RTL/source/HTML/CSS and actual programs in existing33bundle preview,not fullsite/browser/publication."
+}

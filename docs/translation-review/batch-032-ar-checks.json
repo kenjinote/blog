@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T20:52:05.039932+09:00",
+  "allPassed": false,
+  "actualPreviewBundles": 33,
+  "sourceSnapshotsExact": 429,
+  "existingTestsPreviouslyPassedNotRerun": 17,
+  "results": [
+    {
+      "command": [
+        "docs/translation-review/verify_batch_032.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-entropy-ar",
+        "--languages",
+        "ar",
+        "--output",
+        "docs/translation-review/batch-032-ar-validation.json"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\work\\kenji.blog\\docs\\translation-review\\verify_batch_032.py\", line 93, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"C:\\work\\kenji.blog\\docs\\translation-review\\verify_batch_032.py\", line 87, in main\n    if lang=='ar':versions[-1]['arabicStaticDirection']=arabic_direction(text,html,args.site)\n                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\work\\kenji.blog\\docs\\translation-review\\verify_batch_032.py\", line 36, in arabic_direction\n    source=BidiValues();source.feed(text);page=BidiValues();page.feed(html)\n                        ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kenjinote\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\html\\parser.py\", line 168, in feed\n    self.goahead(0)\n  File \"C:\\Users\\kenjinote\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\html\\parser.py\", line 262, in goahead\n    k = self.parse_endtag(i)\n        ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kenjinote\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\html\\parser.py\", line 521, in parse_endtag\n    self.handle_endtag(tag)\n  File \"C:\\work\\kenji.blog\\docs\\translation-review\\verify_batch_032.py\", line 33, in handle_endtag\n    if tag=='bdi':assert self.active;self.active=False\n                         ^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-entropy-ar"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1853 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-entropy-ar"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 3371, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "33-bundle preview,not full site;existing warnings retained. No browser or publication certification."
+}
