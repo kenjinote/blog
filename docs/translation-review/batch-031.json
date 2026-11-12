@@ -1087,5 +1087,35 @@
       "otherTranslationsUnreviewed": 0,
       "publicationPending": true
     }
-  ]
+  ],
+  "finalAssembly": {
+    "checkedAt": "2026-11-12T09:36:07.261227+09:00",
+    "validation": "docs/translation-review/batch-031-final-validation.json",
+    "checks": "docs/translation-review/batch-031-final-checks.json",
+    "allOriginalAndTranslationBodiesRead": true,
+    "languages": 13,
+    "texExpressions": 130,
+    "diagrams": 26,
+    "graphEdges": 156,
+    "referencesEach": 5,
+    "referenceKindsEach": {
+      "researchPrimary": 2,
+      "officialTeaching": 2,
+      "localizedInternal": 1
+    },
+    "articlePrograms": 0,
+    "unitTestsPassed": 17,
+    "actualPreviewBundles": 32,
+    "multilingualPages": 1800,
+    "httpsHtmlPages": 3277,
+    "httpsXmlFiles": 41,
+    "reviewedTranslationsTotal": 384,
+    "unreviewedTranslations": 12648,
+    "humanReviews": 0,
+    "arabicStaticDirection": "docs/translation-review/batch-031-ar-direction.json",
+    "publicationProbePreparation": "docs/translation-review/batch-031-probe-preparation.json",
+    "publicationProbeLocalCheck": "docs/translation-review/batch-031-probe-local-structure.json",
+    "publicationPending": true,
+    "scope": "All13 complete bodies manually read/compared,12AI entries immutable.32bundle source/decodedHTML checks,not fullsite/native/browser/biologicaldata/population/tournament certification. Local416+3pass with HTML-only newline normalization;432file reads including13GIF,HTTP0. Actual live verification waits matchingCI build/deploy success."
+  }
 }
