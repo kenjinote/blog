@@ -1,148 +1,170 @@
 ---
-title: "【Gefangenendilemma】Wie die Spieltheorie die Grenzen menschlicher Rationalität und Kooperation aufdeckt"
-description: "Das Gefangenendilemma, ein repräsentatives Paradoxon der Spieltheorie. Eine gründliche Erklärung des Mechanismus, durch den rationale individuelle Entscheidungen zum schlechtesten Gesamtergebnis führen, mit Anwendungen in Wirtschaft, internationaler Politik und Biologie. Wir untersuchen die Bedingungen für unsere Kooperation, einschließlich der Tit-for-Tat-Strategie und der evolutionären Spieltheorie."
+title: "Gefangenendilemma und Evolution der Kooperation: Bedingungen und Tierbeobachtungen"
+description: "Einmalige Anreize, Pareto-Effizienz, Wiederholung und Begegnungen innerhalb von Gruppen unterscheiden: Kooperation, Fledermäuse und Honigbienen."
 slug: "paradox-prisoners-dilemma"
 categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
+math: true
+mermaid: true
+lastmod: "2026-11-12"
 ---
 
-# Das Gefangenendilemma (Prisoner's Dilemma): Das ultimative Paradoxon der Spieltheorie
+Kooperation kann für beide besser sein, obwohl jeder einen Anreiz haben kann, davon abzuweichen. Das [Gefangenendilemma](https://kenji.blog/de/p/prisoners-dilemma/) untersucht diesen Konflikt anhand festgelegter Auszahlungen und Handlungsmöglichkeiten. Es ist kein Gesetz, wonach Menschen immer defektieren oder kooperative Gruppen zwangsläufig überleben.
 
-"Warum verraten wir einander, obwohl wir wissen, dass alles gut gehen würde, wenn wir zusammenarbeiten?"
+Zur Geschichte beschreiben die [Kursunterlagen der Cornell University](https://www.cs.cornell.edu/~rafael/networks-html/chapter1.html) die Arbeiten von Merrill Flood und Melvin Dresher im Jahr 1950 sowie Albert Tuckers Darstellung durch eine Geschichte über Gefangene. Hier unterscheiden wir einmalige Anreize, wiederholte Strategien, evolutionäre Modelle und Tierbeobachtungen.
 
-Auf diese grundlegende Frage gibt das **"[Gefangenendilemma](/de/p/prisoners-dilemma/) (Prisoner's Dilemma)"** in der Spieltheorie die klarste und zugleich grausamste Antwort aus Sicht von Mathematik und Logik. In den 1950er Jahren von Merrill Flood und Melvin Dresher erdacht und von Albert W. Tucker in die heutige "Gefangenengeschichte" formuliert, hat dieses Konzept einen enormen Einfluss auf alles von Wirtschaft und Politikwissenschaft bis hin zu Psychologie und Evolutionsbiologie gehabt.
+## 1. Fiktive Haftzeiten in Auszahlungen übersetzen
 
-In diesem Artikel werden wir das "[Gefangenendilemma](/de/p/prisoners-dilemma/)" sehr detailliert untersuchen, von den grundlegenden Mechanismen über Fachkonzepte wie das Nash-Gleichgewicht und die Pareto-Optimalität bis hin zu konkreten Beispielen in der realen Welt und der Evolution von Kooperation in "wiederholten Spielen".
+Zwei Verdächtige A und B können sich nicht absprechen und wählen gleichzeitig Schweigen C (Kooperation miteinander) oder Gestehen D (Abweichen von dieser Kooperation). Im fiktiven Szenario stehen die folgenden Haftzeiten fest. Es beschreibt weder tatsächliche Ermittlungsregeln oder strafprozessuale Absprachen noch eine Regel, wonach ein Geständnis zum Freispruch führt.
 
----
+| A / B | C: Schweigen | D: Gestehen |
+| --- | --- | --- |
+| C: Schweigen | A: 1 Jahr, B: 1 Jahr | A: 10 Jahre, B: 0 Jahre |
+| D: Gestehen | A: 0 Jahre, B: 10 Jahre | A: 5 Jahre, B: 5 Jahre |
 
-## 1. Das Grundszenario des Gefangenendilemmas
+Jeder möchte ausschließlich die eigene Haftzeit verkürzen; Freundschaft, Ansehen und Schuldgefühle gehen nicht als zusätzlicher Nutzen ein. Als Auszahlung u_i verwenden wir die negative Haftdauer y_i. Eine negative Auszahlung bedeutet keine negative Haftzeit. T ist die eigene Auszahlung, wenn nur man selbst D wählt; R bei beiderseitigem C, P bei beiderseitigem D und S, wenn nur man selbst C wählt.
 
-Schauen wir uns zunächst das berühmte Szenario an, das Tucker entworfen hat.
+$$
+u_i=-y_i,\quad y_i\in\{0,1,5,10\},\qquad T=0>R=-1>P=-5>S=-10
+$$
 
-Zwei Komplizen (Gefangener A und Gefangener B) werden wegen eines schweren Verbrechens festgenommen. Die Polizei hat jedoch keine stichhaltigen Beweise und kann sie ohne Geständnis nur für ein geringes Vergehen (z. B. 1 Jahr Gefängnis) anklagen.
-Daher isoliert die Polizei die beiden in getrennten Verhörräumen und bietet jedem von ihnen folgenden Deal an:
-
-1. **Wenn beide schweigen (Kooperation)**: Aus Mangel an Beweisen erhalten beide **1 Jahr Gefängnis**.
-2. **Wenn einer gesteht (Verrat) und der andere schweigt**: Derjenige, der gesteht, wird als Gegenleistung für die Kooperation **freigesprochen (freigelassen)**, während derjenige, der schweigt, wegen eines schweren Verbrechens zu **10 Jahren Gefängnis** verurteilt wird.
-3. **Wenn beide gestehen (Verrat)**: Beide werden schuldig gesprochen, aber aufgrund mildernder Umstände zu **5 Jahren Gefängnis** verurteilt.
-
-Gefangener A und Gefangener B können sich nicht absprechen. Ohne zu wissen, welche Entscheidung der andere treffen wird, muss jeder wählen zwischen "schweigen (mit dem anderen kooperieren)" und "gestehen (den anderen verraten)".
-
-### Visualisierung des Entscheidungsmechanismus
-
-Das folgende Flussdiagramm zeigt die Konsequenzen aus der Perspektive von Gefangener A.
+Das Diagramm zählt Kombinationen gleichzeitig gewählter Handlungen auf. A beobachtet nicht erst Bs Handlung, um dann zu entscheiden.
 
 ```mermaid
 graph TD
-    A["Wahl von Gefangener A"]
-    B["Schweigen (Kooperation)"]
-    C["Gestehen (Verrat)"]
-    A --> B
-    A --> C
-    B -- "Gefangener B: Schweigt" --> D["A: 1 Jahr, B: 1 Jahr"]
-    B -- "Gefangener B: Gesteht" --> E["A: 10 Jahre, B: Frei"]
-    C -- "Gefangener B: Schweigt" --> F["A: Frei, B: 10 Jahre"]
-    C -- "Gefangener B: Gesteht" --> G["A: 5 Jahre, B: 5 Jahre"]
+    Start["Kombinationen gleichzeitiger Handlungen"] --> AC["A wählt C"]
+    Start --> AD["A wählt D"]
+    AC -->|"B wählt C"| CC["A: 1 Jahr, B: 1 Jahr"]
+    AC -->|"B wählt D"| CD["A: 10 Jahre, B: 0 Jahre"]
+    AD -->|"B wählt C"| DC["A: 0 Jahre, B: 10 Jahre"]
+    AD -->|"B wählt D"| DD["A: 5 Jahre, B: 5 Jahre"]
 ```
 
----
+## 2. Dominanz, Nash-Gleichgewicht und Pareto-Effizienz
 
-## 2. Die Tragödie rationaler Entscheidungen: Das Nash-Gleichgewicht
+Bei u_i bezeichnet das erste Argument die eigene Handlung und das zweite die des anderen Spielers. Unabhängig davon, ob der andere C oder D wählt, ist die eigene Auszahlung bei D höher.
 
-Verfolgen wir den rationalen Denkprozess zur Maximierung der eigenen Interessen (Reduzierung der Haftstrafe) aus der Sicht von Gefangener A. Wir unterscheiden Fälle danach, was Gefangener B wählt.
+$$
+u_i(D,C)=0>-1=u_i(C,C),\qquad u_i(D,D)=-5>-10=u_i(C,D)
+$$
 
-- **Fall 1: Wenn Gefangener B "schweigt"**
-  - Wenn A "schweigt", 1 Jahr Gefängnis.
-  - Wenn A "gesteht", frei.
-  - **Fazit**: Frei ist besser als 1 Jahr, also ist "Gestehen" vorteilhafter.
+D ist damit eine **streng dominante Strategie**. Wird dem gegnerischen C die Wahrscheinlichkeit q zugeordnet, ist auch die Differenz der erwarteten Auszahlungen positiv. Dieses q unterscheidet sich von der später verwendeten Wahrscheinlichkeit p für Begegnungen innerhalb einer Gruppe.
 
-- **Fall 2: Wenn Gefangener B "gesteht"**
-  - Wenn A "schweigt", 10 Jahre Gefängnis.
-  - Wenn A "gesteht", 5 Jahre Gefängnis.
-  - **Fazit**: 5 Jahre ist besser als 10 Jahre, also ist "Gestehen" vorteilhafter.
+$$
+\begin{aligned}0&\le q\le1,\\\mathrm{EU}(D)&=-5+5q,\\\mathrm{EU}(C)&=-10+9q,\\\mathrm{EU}(D)-\mathrm{EU}(C)&=5-4q\ge1.\end{aligned}
+$$
 
-Erstaunlicherweise ist es für Gefangenen A immer vorteilhafter, "Gestehen (Verrat)" zu wählen, egal was Gefangener B tut. Eine solche Strategie, die unabhängig von der Strategie des Gegners immer optimal ist, wird als **"dominante Strategie"** bezeichnet.
-Gefangener B befindet sich in genau der gleichen Situation, und wenn er auf die gleiche Weise rational denkt, ist "gestehen" auch für ihn die dominante Strategie.
+Maximieren beide anhand dieser Tabelle ihren eigenen erwarteten Nutzen, wählen sie DD. Da D gegenüber reinen wie gemischten gegnerischen Strategien streng dominiert, ist DD das einzige Nash-Gleichgewicht. Ein **Nash-Gleichgewicht** ist ein Strategieprofil, in dem kein Spieler durch Änderung nur der eigenen Strategie seine Auszahlung erhöhen kann, solange die andere Strategie festbleibt. Eine gemeinsame Änderung kann das Ergebnis dennoch verbessern.
 
-Infolgedessen wählen beide "gestehen" und **beide werden zu 5 Jahren Gefängnis verurteilt**. In der Spieltheorie wird dieser Zustand als **"Nash-Gleichgewicht"** bezeichnet (ein Zustand, in dem kein Spieler durch einseitige Änderung seiner Strategie einen Vorteil erzielen kann).
+Ein Ergebnis ist **Pareto-effizient (Pareto-optimal)**, wenn kein anderes erreichbares Ergebnis mindestens einen Spieler besserstellt, ohne jemanden schlechterzustellen. Unter den reinen Handlungsprofilen der Tabelle sind CC, CD und DC effizient. DD ist es nicht: Der Wechsel zu CC verbessert beide Auszahlungen. Damit ist nicht die gesamte effiziente Auszahlungsmenge beschrieben, wenn Zufallsauswahlen zwischen Ergebnissen zulässig sind.
 
-### Abweichung von der Pareto-Optimalität
+Davon getrennt hat CC die höchste Summe, wenn die numerischen Auszahlungen gleich gewichtet addiert werden. Effizienzdefinition und Summenkriterium sind unterschiedliche Bewertungen.
 
-Hier entsteht das Dilemma. Ist das Ergebnis "beide 5 Jahre Gefängnis" das insgesamt beste Ergebnis?
-Nein. Wenn sie einander vertraut hätten und beide geschwiegen hätten, wären sie mit "beide 1 Jahr Gefängnis" davongekommen.
+$$
+(u_1+u_2)(CC)=-2,\qquad(u_1+u_2)(CD)=(u_1+u_2)(DC)=(u_1+u_2)(DD)=-10
+$$
 
-Der Zustand, in dem der Gesamtnutzen (in diesem Fall die geringste Gesamthaftzeit) maximiert wird, also "ein Zustand, in dem der Nutzen von niemandem erhöht werden kann, ohne dass jemand anderes Nachteile erleidet", wird als **"Pareto-Optimalität"** bezeichnet. Der Kern des Gefangenendilemmas liegt darin, dass **"die rationale individuelle Entscheidung (Nash-Gleichgewicht) nicht mit der optimalen Gesamtlösung (Pareto-Optimalität) übereinstimmt"**.
+Dies analysiert Anreize in einem festgelegten Auszahlungsmodell. Es beweist weder universelle menschliche Motive noch unvermeidbares gesellschaftliches Unglück.
 
----
+## 3. Anwendungen anhand von Auszahlungen und Institutionen prüfen
 
-## 3. Das Gefangenendilemma in der realen Welt
+### Preiswettbewerb
 
-Dieses Dilemma ist nicht nur eine Denksportaufgabe. Es tritt täglich in unseren sozialen Strukturen, wirtschaftlichen Aktivitäten und sogar in den Beziehungen zwischen Nationen auf.
+Das Modell kann manchmal als Analogie für den Anreiz dienen, den Rivalen zu unterbieten, um mehr zu verkaufen, während beiderseitige Preissenkungen die Margen verringern. Nachfrage, Kosten, Qualität und Markteintritt verändern aber die Auszahlungen; Unterbieten garantiert kein Monopol. Die Summe der Unternehmensgewinne unterscheidet sich zudem von der gesellschaftlichen Wohlfahrt einschließlich der Verbraucher.
 
-### Preiskampf in der Wirtschaft
-Angenommen, Unternehmen A und Unternehmen B verkaufen ähnliche Produkte. Wenn beide hohe Preise beibehalten (Kooperation), erzielen beide hohe Gewinne. Wenn jedoch einer den anderen unterbietet (Verrat), monopolisiert er den Markt und macht riesige Gewinne. Infolgedessen beginnen beide mit einem Preiskampf, der die Gewinne schmälert.
+### Umwelt und gemeinsame Ressourcen
 
-### Umweltprobleme (Tragödie der Allmende)
-Auch die Reduzierung von Treibhausgasen ist ein Gefangenendilemma zwischen Staaten. Wenn alle Länder sich bemühen (Kooperation), kann die globale Erwärmung verhindert werden. Wenn jedoch ein Land seine Umweltvorschriften lockert, während andere sich bemühen (Verrat), kann dieses Land allein Wirtschaftswachstum genießen. Infolgedessen versuchen alle Länder auszuscheren, und die Umwelt als Ganzes verschlechtert sich.
+Wenn der Nutzen von Emissionsminderungen geteilt wird, jeder Akteur jedoch Kosten trägt, lassen sich Anreize zum Trittbrettfahren auf den Anstrengungen anderer untersuchen. In der Realität gibt es aber mehrere Staaten, asymmetrische Schäden und Kosten, Abkommen und Überwachung. Diese Zweipersonentabelle bestimmt weder Klimaergebnisse noch das Wirtschaftswachstum einzelner Länder. Auch Probleme gemeinsamer Ressourcen sind nicht alle dasselbe Zweipersonenspiel.
 
 ### Wettrüsten
-Das Wettrüsten mit Atomwaffen zwischen den Vereinigten Staaten und der Sowjetunion während des Kalten Krieges ist ein klassisches Beispiel. Wenn beide abrüsten (Kooperation), werden Frieden und wirtschaftlicher Spielraum erreicht. Aber wenn der eine abrüstet, während der andere bewaffnet ist, ist die Nation in Gefahr (entspricht 10 Jahren Gefängnis). Daher waren beide gezwungen, weiter aufzurüsten (Verrat).
 
----
+Modelle vereinfachter Anreize zur Abrüstung und zum Beibehalten von Waffen werden auch zur Betrachtung des nuklearen Wettrüstens zwischen den USA und der Sowjetunion im Kalten Krieg verwendet. Tatsächliche Fähigkeiten, Informationen, Verifikation und Bündnisse spielen eine Rolle. Die Tabelle beweist keine historische Zwangsläufigkeit, wonach einseitige Abrüstung gegenüber einem bewaffneten Rivalen immer die nationale Existenz bedroht und nur Aufrüstung zulässt.
 
-## 4. Wiederholte Spiele und die "Tit for Tat"-Strategie
+## 4. Wiederholung und Tit for Tat
 
-In einem einmaligen [Gefangenendilemma](/de/p/prisoners-dilemma/) war "Verrat" die rationale Wahl. In der realen Gesellschaft ist es jedoch üblich, mehrfach mit derselben Partei zu interagieren. In der Spieltheorie wird dies als **"wiederholtes [Gefangenendilemma](/de/p/prisoners-dilemma/) (Iterated Prisoner's Dilemma)"** bezeichnet.
+Bei fortgesetzten Beziehungen können zukünftige Reaktionen auf heutiges Handeln die Auszahlungen verändern. Wiederholung garantiert jedoch keine Kooperation. Wird dasselbe Stufenspiel eine bekannte, feste und endliche Zahl von Malen wiederholt, sind die Verläufe beobachtbar und sind Struktur und Rationalität gemeinsames Wissen, ergibt Rückwärtsinduktion ab der letzten Runde ein teilspielperfektes Gleichgewicht mit DD in jeder Runde. Die [MIT-Unterlagen](https://www.ocw.mit.edu/courses/14-15j-networks-spring-2018/pages/lecture-and-recitation-notes/recitation-10-notes/) behandeln ebenfalls den Unterschied zwischen endlicher und unendlicher Wiederholung; ihre numerischen Auszahlungen unterscheiden sich von unseren.
 
-In den 1980er Jahren lud der Politikwissenschaftler Robert Axelrod Computerprogramme von Experten weltweit zu einem Turnier ein, um herauszufinden, welche Strategie im wiederholten [Gefangenendilemma](/de/p/prisoners-dilemma/) die stärkste ist.
+**Tit for Tat (TFT)** wählt zuerst C und kopiert danach die vorherige Handlung des Gegners. a_i,t bezeichnet die eigene Handlung in Runde t, j den anderen Spieler.
 
-Das Ergebnis war, dass die einfachste Strategie, die die höchste Punktzahl erreichte, die von Anatol Rapoport eingereichte **"Tit for Tat-Strategie (Wie du mir, so ich dir)"** war.
-
-### Algorithmus der Tit for Tat-Strategie
+$$
+a_{i,1}=C,\qquad a_{i,t}=a_{j,t-1}\quad(t\ge2)
+$$
 
 ```mermaid
-graph LR
-    A["Tit for Tat Strategie"]
-    B["Kooperation beim ersten Mal"]
-    C["Gegner hat zuvor kooperiert"]
-    D["Gegner hat zuvor verraten"]
-    E["Kooperieren"]
-    F["Verraten"]
-    A --> B
-    C --> E
-    D --> F
+graph TD
+    Start["t=1: Eigene erste Handlung auf C setzen"] --> Play["Beide spielen Runde t gleichzeitig"]
+    Play --> Observe["Gegnerische Handlung aus Runde t beobachten"]
+    Observe -->|"Gegner wählte C"| NextC["Eigene Handlung für Runde t+1 auf C setzen"]
+    Observe -->|"Gegner wählte D"| NextD["Eigene Handlung für Runde t+1 auf D setzen"]
+    NextC -->|"t um 1 erhöhen"| Play
+    NextD -->|"t um 1 erhöhen"| Play
 ```
 
-Die Regel dieser Strategie ist erstaunlich einfach.
-1. In der ersten Runde wird immer "kooperiert".
-2. Ab der zweiten Runde **ahmt man exakt die Aktion des Gegners aus der vorherigen Runde nach** (wenn der Gegner kooperiert hat, kooperieren; wenn er verraten hat, verraten).
+Nach Kooperation wie nach Defektion wird die nächste Runde gespielt, bevor ihr Ergebnis beobachtet wird. Die Strategie sieht weder die aktuelle gegnerische Handlung voraus noch beobachtet sie innere Reue.
 
-Warum war diese Strategie so stark? Axelrod analysierte vier gemeinsame Merkmale starker Strategien.
-1. **Nett (Nice)**: Niemals als Erster verraten.
-2. **Vergeltend (Retaliating)**: Wenn der Gegner verrät, immer sofort bestrafen (zurückverraten).
-3. **Nachsichtig (Forgiving)**: Wenn der Gegner umdenkt und zur Kooperation zurückkehrt, den vergangenen Verrat vergessen und sofort wieder kooperieren.
-4. **Klar (Clear)**: Die Absicht ist für den Gegner leicht verständlich, sodass er sicher Kooperation wählen kann.
+Der [Aufsatz von Axelrod und Hamilton aus dem Jahr 1981](https://public.websites.umich.edu/~axe/research/Axelrod%20and%20Hamilton%20EC%201981.pdf) berichtet, dass die von Anatol Rapoport eingereichte TFT in beiden Programmturnieren Axelrods die höchste durchschnittliche Punktzahl erzielte. Die dortigen Auszahlungen T=5, R=3, P=1 und S=0 unterscheiden sich von unserer Haftzeittabelle. TFT defektiert nicht zuerst, reagiert auf gegnerische Defektion und kehrt in der Runde nach der Rückkehr des Gegners zur Kooperation ebenfalls zurück. Die Regel ist zudem kurz. Daraus folgt keine Überlegenheit gegenüber allen Gegnern, Wertungen, Zeithorizonten oder Fehlerbedingungen.
 
-Diese Entdeckung legt die Möglichkeit nahe, dass "Moral" und "Vertrauen" in der menschlichen Gesellschaft nicht bloße Emotionen sind, sondern durch mathematische und evolutionäre Rationalität gestützt werden.
+Selbst zwischen zwei TFT-Spielern kann ein Handlungsfehler mit CD anschließend DC, dann wieder CD hervorrufen und abwechselnde Defektion aufrechterhalten. Turnierpunkte, Gleichgewicht, biologische Evolution und moralisch wünschenswertes Handeln sind unterschiedliche Fragen.
 
----
+## 5. Evolution der Kooperation: Gruppenstruktur und Tierbeobachtungen
 
-## 5. Die Entstehung von Kooperation in der Evolutionsbiologie
+### Wann eine kleine kooperative Gruppe im Vorteil sein kann
 
-Der Erfolg des Gefangenendilemmas und der "Tit for Tat"-Strategie hatte auch enorme Auswirkungen auf die Evolutionsbiologie (evolutionäre Spieltheorie). Wie in Richard Dawkins' "Das egoistische Gen" dargestellt, geht es in der Natur um das Überleben des Stärkeren, sodass Organismen ihr Überleben und ihre Fortpflanzung priorisieren (verraten) sollten. Dennoch ist die Natur voll von "altruistischem Verhalten (Kooperation)", wie das Blutteilen von Vampirfledermäusen und das Sozialverhalten von Honigbienen.
+Ein evolutionäres Spiel muss festlegen, wem Individuen mit bestimmten Verhaltensregeln begegnen und wie sich ihre Leistung auf nachfolgende Generationen auswirkt. Überleben oder Fortpflanzung zu priorisieren ist keine Anweisung, unter allen Umständen D zu wählen.
 
-In Evolutionssimulationen wurde bewiesen, dass wenn eine kleine Gruppe von "Tit for Tat"-Strategen in eine Population eingebracht wird, in der alle "verraten", die "Tit for Tat"-Gruppe miteinander kooperiert, hohe Gewinne erzielt und die "Verräter"-Gruppe allmählich verdrängt. Das heißt, im langfristigen Überlebenskampf wird die Gruppe, die kooperieren kann, der endgültige Gewinner sein.
+Wann kann eine kleine TFT-Gruppe in einer ansonsten ALLD nutzenden Population besser abschneiden? Betrachten wir ein einfaches Modell diskontierter Punktzahlen: Die Gegner bleiben fest, die Handlungen erfolgen wiederholt und gleichzeitig, Fehler treten nicht auf, und δ gewichtet die Zukunft. ALLD wählt in jeder Runde D. V(X,Y) ist die diskontierte Punktzahl von Strategie X gegen Y.
 
-## 6. Fazit: Wie man das Dilemma überwindet
+$$
+\begin{aligned}0&\le\delta<1,\\V(\mathrm{TFT},\mathrm{TFT})&=\frac{-1}{1-\delta},\\V(\mathrm{TFT},\mathrm{ALLD})&=-10-\frac{5\delta}{1-\delta},\\V(\mathrm{ALLD},\mathrm{ALLD})&=\frac{-5}{1-\delta}.\end{aligned}
+$$
 
-Das [Gefangenendilemma](/de/p/prisoners-dilemma/) lehrt uns die harte Realität, dass am Ende alle verlieren, wenn wir unsere Eigeninteressen zu sehr verfolgen. Gleichzeitig zeigen Untersuchungen zu wiederholten Spielen jedoch, dass wir kooperative Beziehungen aufbauen können, wenn wir kontinuierliche Beziehungen und ein angemessenes Feedback-System haben.
+Ein Mitglied einer seltenen TFT-Gruppe treffe mit Wahrscheinlichkeit p auf einen anderen TFT-Spieler und ansonsten auf ALLD. Verglichen wird mit ansässigen Spielern, die fast nur ALLD begegnen, im Grenzfall eines vernachlässigbar kleinen Gruppenanteils. p ist hier der TFT-Anteil unter den Gegnern eines TFT-Spielers, nicht die Häufigkeit von TFT in der gesamten Population.
 
-Um das [Gefangenendilemma](/de/p/prisoners-dilemma/) in der realen Gesellschaft zu überwinden, sind folgende Ansätze erforderlich:
-- **Änderung von Regeln (Rechtsstaatlichkeit)**: Institutionalisierung von Strafen für Verrat, um die Vorteile zu beseitigen. (Beispiel: Kartellrecht und Umweltsteuern)
-- **Sicherstellung von Kommunikation**: Gelegenheiten bieten, um die Absichten des anderen zu bestätigen und Vertrauen aufzubauen.
-- **Betonung langfristiger Beziehungen**: Bewusstsein für die Zukunft schaffen: "Wenn du dieses Mal verrätst, gibt es keine zukünftigen Transaktionen mehr."
+$$
+\begin{aligned}V_{\mathrm{cluster}}&=pV(\mathrm{TFT},\mathrm{TFT})+(1-p)V(\mathrm{TFT},\mathrm{ALLD}),\\V_{\mathrm{cluster}}-V(\mathrm{ALLD},\mathrm{ALLD})&=\frac{p(9-5\delta)-5(1-\delta)}{1-\delta}.\end{aligned}
+$$
 
-Die Spieltheorie mag wie eine kalte Welt des Kalküls erscheinen, aber wenn man in ihren Abgrund blickt, gelangt man zu einer sehr menschlichen und warmen Wahrheit darüber, "warum Menschen kooperieren sollten".
+Die Bedingung für eine strikt höhere Punktzahl als die ALLD-Referenz lautet:
+
+$$
+0\le p\le1,\qquad V_{\mathrm{cluster}}>V(\mathrm{ALLD},\mathrm{ALLD})\quad\Longleftrightarrow\quad p>\frac{5(1-\delta)}{9-5\delta}
+$$
+
+Bei δ=0,9 muss beispielsweise die Wahrscheinlichkeit einer Begegnung innerhalb der Gruppe folgende Bedingung erfüllen:
+
+$$
+\delta=\frac9{10}\quad\Longrightarrow\quad p>\frac{5(1-9/10)}{9-5(9/10)}=\frac19
+$$
+
+| p | Erwartete diskontierte Punktzahl von TFT | Referenz ALLD gegen ALLD | Vergleich |
+| --- | --- | --- | --- |
+| 0 | -55 | -50 | Niedriger |
+| 1/20 | -52,75 | -50 | Niedriger |
+| 1/9 | -50 | -50 | Gleich |
+| 1/5 | -46 | -50 | Höher |
+
+Insbesondere gilt für jedes δ, wenn TFT keinem anderen TFT begegnet:
+
+$$
+p=0\quad\Longrightarrow\quad V_{\mathrm{cluster}}-V(\mathrm{ALLD},\mathrm{ALLD})=-5<0
+$$
+
+Ein langer Zeithorizont allein garantiert isolierter TFT daher keinen Vorteil. Diese Rechnung vergleicht Punktzahlen, die negativ sein dürfen, keine Fortpflanzungs- oder Überlebensraten. Ohne Regeln für die Aktualisierung der Population lässt sich weder endgültige Verdrängung noch die Fixierung einer Strategie beweisen. Auch der Aufsatz von 1981 knüpft das anfängliche Entstehen der Kooperation an Kontakte innerhalb der Gruppe und an Fortsetzung.
+
+### Fledermäuse und Bienen nicht mit derselben Strategie gleichsetzen
+
+Die [Studie von Carter und Wilkinson aus dem Jahr 2013](https://science.umd.edu/faculty/wilkinson/Carter%26Wilk_PRSB13.pdf) führte Fastenversuche mit 20 Vampirfledermäusen in Gefangenschaft durch. Sie berichtete Zusammenhänge zwischen der von einem Partner erhaltenen und der ihm gegebenen Nahrung sowie dauerhafte soziale Beziehungen. Diese Korrelation allein beweist weder, dass der Nahrungserhalt die nächste Spende verursacht, noch, dass Fledermäuse TFT ausführen.
+
+Auch das Sozialverhalten von Honigbienen ist nicht automatisch TFT. Axelrod und Hamilton besprechen die Selbstaufopferung von Arbeiterinnen als Beispiel für Vorteile durch Verwandtschaft. Verwandtschaft, wechselseitige Vorteile, individuelle Wiedererkennung und Kontaktstruktur müssen getrennt untersucht werden. Biologische Fitness darf ebenso wenig einfach mit menschlicher Moral oder Vertrauen gleichgesetzt werden.
+
+## 6. Mechanismen betrachten, die Kooperation stützen
+
+Das Gefangenendilemma benennt Fälle, in denen individuelle Anreize bei festgelegten Auszahlungen ein für beide erwünschtes Ergebnis nicht stützen. Bei Überlegungen zur Kooperation ist zu prüfen:
+
+- **Auszahlungen und Handlungsmöglichkeiten**: Verändern Sanktionen, Kostenteilung oder Belohnungen tatsächlich den Vergleich zwischen Handlungen? Institutionelle Wirkungen und rechtliche Bedingungen sind für jede reale Anwendung gesondert zu untersuchen.
+- **Beobachtung und Zusagen**: Wie zuverlässig lassen sich Handlungen feststellen und wie verbindlich sind Versprechen und Reaktionen? Verändert ein Gespräch weder Auszahlungen noch Optionen eines einmaligen Spiels, bleibt D streng dominant.
+- **Zeithorizont und Begegnungen**: Wie stark zählt die Zukunft, wie endet die Beziehung, wem begegnet man erneut und wie werden Fehler behandelt?
+
+Ein kooperatives Gleichgewicht oder günstige Punktzahlbedingungen sind nicht dasselbe wie tatsächlich gewählte und etablierte Kooperation. Modelle helfen, ihre konkreten Voraussetzungen zu prüfen; sie beweisen den Wert von Vertrauen nicht bedingungslos.
