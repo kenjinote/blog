@@ -163,6 +163,46 @@
         "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
         "Batch033publication andwholegoal pending;032closure is separately recorded."
       ]
+    },
+    "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "translationHash": "080d960a2e63ffbd0ab48f867af8e9072f5f4497f61f3cf78ab80ad700d5cfbb",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original Korean metadata,four sections,six displayformulas,two entireMermaid diagrams andperformance table;read full actual revised metadata,sixsections,29formulas,both diagrams,BWT andarchitecture tables against frozenJapanese. Rereadfourpolishedsentences. Restored omittedcounting/Kraft/KLproof,Huffmanmerge,arithmeticinterval/rANSinverse/tANSstates,BWTinverse,NLL andengineering themes. Corrected arbitraryH+1upper,per-file/arithmeticNHconfusion,universalperformance andprediction/minimumactualfile claims. Wholearticleprograms0."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared 무손실/손실,부호화/복호화,단사/전단사,자기 정보량/기댓값,접두 부호/유일 복호 가능,정규화된 Q/정준 허프만,주변/결합엔트로피 and엔트로피율,독립동일분포/정상정보원,페이로드/전체파일,정규화/재정규화,비트/바이트/MiB/MB. BWT행/열/센티널 andLFprioroccurrences consistent. Replaced awkwardsingle-child/rounding/backreference wording with 자식이 하나뿐인 가지,정수 길이로 인한 손실,이전 데이터 참조. Originalpropernames andnormalizedKL identity valid;noEnglish-onlyQdefectassigned."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared29sharedTeX andassumptions: fixedE/uniformn/counting1<=c<=n,Kraftleafcount/normalizedQKL,positive-support/singletonconvention,constructedShannonandoptimalH+1upper,nondegenerateiidblocks/dependentjoint/stationaryrate,Huffmansiblingmerge/.99binaryentropy. Original69times comparison referredonlycommon-symbolsurprisal,notdistributionaverage;revisedfullbinaryexampleH=.080793,L1,ratio12.4. Clarifiedarithmeticpositiveconditionalintervals/sufficientK/expectedH+2,rANSinverse/tANSLintegerstates,LFzero-based,NLLbase/mean andserialIO. Retainedearlierfiniteevidence andselected4forwardcopy/NLL/entropy/3IO/c100auxiliarychecks,notgeneralproof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Neither old nor revised Korean body has executable articleprograms. Read bothcompleteMermaid sources andinlineexamples;actualHTML matches8+6edgesandJA topology,includingbzip2preBWTRLE. All7BWTrows,std::vector<int>,banana$,annb$aa andsentinel surviveinlinecode/HTML;literalcode dollar excludedfrommathcounting. ClarifiedLZforwardgrowingcopyversusgenericmemcpy/snapshot,flag/model/headercosts,ANSstack/contextorder. Auxiliaryscriptsnotarticleprogramruns orcompletecompressor/benchmark/LLMexperiment;no browser/KaTeX/Mermaid/nativecertification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Elevenprimary/officialreferencesmatchsourceandactualHTML,withpreviouslydocumentedselectedprimaryreadinglimits,notnewfullpapers/codefilesread. OldKoreanbodyhadnoexternalreferencesorunrelatedmislink;noneinvented. OriginalOct14T12rawdate,slug,imagehashandlocalizedtaxonomy retained,Nov12actual lastmod/mermaidflag.34bundle442snapshots/1918multilingualpages/3488HTTPSHTML41XML and14hreflang13sidebar checks pass.17tests refer toearlierJAENsuccess,notrerun. Sevenother033translationsandpublicationpending;032closedseparately."
+        }
+      },
+      "summary": "Complete Korean lossless-compression review restoring proofs and distinguishing symbol information, expected length and total output cost.",
+      "languageSpecificFindings": "Restored foursection/sixformula summarytoall6themes29math. Replaced69timescommon-symbolsurprisal framing withcorrect12.4average-length-to-entropy binaryexample;fixedper-sequenceNH equality andperfectconvergence/universalspeed claims. OriginalnormalizedKLidentity consistent butH+1implicationoverbroad. Clarified Koreanprefix/uniquedecoding,normalized/canonical/renormalized terminology,BWT행/열 andbackreferences. No oldc100example ormislinkinvented.",
+      "validation": "docs/translation-review/batch-033-ko-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "7 other translation bodies remain unreviewed at this stage.",
+        "Article programs0;independentfiniteauxiliarychecks not generalproof,fullcompressor,benchmark orLLMexperimentalreproduction.",
+        "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
+        "Batch033publication andwholegoal pending;032closure is separately recorded."
+      ]
     }
   },
   "stages": [
@@ -397,6 +437,74 @@
       "unreviewedTranslations": 12632,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 8,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "ko"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "validation": "docs/translation-review/batch-033-ko-validation.json",
+      "checks": "docs/translation-review/batch-033-ko-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-033-ko-ledger-validation.json",
+      "texEach": 29,
+      "diagramsEach": 2,
+      "diagramEdgesEach": [
+        8,
+        6
+      ],
+      "articleProgramsEach": 0,
+      "auxiliaryChecks": {
+        "lzForwardCopyExamples": 4,
+        "nllBaseAndAveragingExample": true,
+        "binaryEntropyAt099": 0.08079313589591118,
+        "ioModelExamples": [
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 200000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.0075
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 1000000000,
+            "decodedBytesPerSecond": 10000000,
+            "rawSeconds": 0.001,
+            "serialCompressedSeconds": 0.10025
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 1000000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 100000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.02
+          }
+        ],
+        "largeCountingExample": {
+          "c": 100,
+          "requiresNAtLeast": 100,
+          "strictFractionUpperBound": 1.5777218104420236e-30,
+          "scope": "Fixedinjectiveencoder,uniformnbitinput;notallcompressorssimultaneously."
+        },
+        "scope": "Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor."
+      },
+      "priorIndependentAuxiliaryChecks": "docs/translation-review/batch-033-original-math-probe.json",
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 34,
+      "multilingualPages": 1918,
+      "httpsHtmlPages": 3488,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 401,
+      "unreviewedTranslations": 12631,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 7,
       "publicationPending": true
     }
   ],
