@@ -1,7 +1,7 @@
 ---
-title: "信息论与香农熵：探索数据压缩与通信的极限"
+title: "信息论与香农熵：压缩和通信极限的前提"
 date: "2026-09-24T19:44:38+09:00"
-description: "从克劳德·香农提出的信息论基础出发，详细讲解熵的概念、数据压缩的极限，以及其在现代通信中的应用。"
+description: "区分自信息量、符号熵与熵率，检验哈夫曼编码的边界条件、信道容量的单位和假设，并提供Python例子。"
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
@@ -11,191 +11,268 @@ tags:
   - 熵
   - 数据压缩
   - 数学
+math: true
+mermaid: true
+lastmod: "2026-11-12"
 ---
 
-## 1. 引言：什么是信息？
+## 1. 区分信息的含义与选择的不确定性
 
-我们在日常生活中经常会提到“信息”这个词，但要科学地定义“信息”却非常困难。新闻、朋友发来的消息、DNA的碱基序列，或者是从宇宙传来的无线电波，所有这些都包含信息。然而，为了能在数学上使用一个共同的框架来处理它们，我们需要一个客观且定量的指标。
+新闻、朋友的消息、DNA序列和来自宇宙的无线电信号都承载信息。但内容的重要性与发送它所需的比特数，并不是同一个量。
 
-挑战这个宏大课题，并为现代数字社会奠定基础的，是数学家兼工程师克劳德·香农（Claude Shannon）。他在1948年发表的论文《通信的数学理论》（A Mathematical Theory of Communication），毫不夸张地说，单枪匹马地开创了 **信息论** （Information Theory）这个全新的学科领域。
+Claude Shannon在1948年的论文中，把含义的评价与通信的工程问题分开，用概率研究压缩和通信的极限。[这份重印版](https://wucj.lab.westlake.edu.cn/Others/shannon1948.pdf)的开头也提到了Nyquist和Hartley的先行工作。下面区分自信息量、熵、无损压缩和有噪声的通信。
 
-本文将深入探讨香农是如何在数学上定义“信息”的，以及其核心概念 **香农熵** （Shannon Entropy）在数据压缩和通信技术中具有怎样的意义。
+## 2. 通信模型
 
-## 2. 通信的一般模型
-
-香农暂时剥离了信息的含义（语义），而将焦点放在信息的“传递”本身。他提出的通信系统一般模型，可以用以下的Mermaid图来表示。
+信源生成消息，发送器将其变成信号，信号经过信道，接收器重建消息并交给目的地。
 
 ```mermaid
 graph LR
-    A["信息源<br>Information Source"] --> B["发送器<br>Transmitter"]
-    B -->|"发送信号"| C(("信道<br>Channel"))
-    C -->|"接收信号"| D["接收器<br>Receiver"]
-    D --> E["目的地<br>Destination"]
-    N["噪声源<br>Noise Source"] -.-> C
+    A["信源"] --> B["发送器"]
+    B -->|"发送信号"| C(("信道"))
+    C -->|"接收信号"| D["接收器"]
+    D --> E["目的地"]
+    N["噪声源"] -.-> C
 ```
 
-在这个模型中，通信最大的挑战集中在 **“如何通过存在噪声的信道，准确且高效地传输消息”** 这一点上。
+信源编码利用数据的统计结构减少冗余。信道编码则加入适当的冗余来应对噪声。二者都叫编码，但目的不同。
 
-## 3. 信息量的数学定义
+## 3. 自信息量
 
-信息论中最基本的问题是：“当我们知道某个事件发生时，我们获得了多少信息？”
-
-香农将信息的量视为“惊讶的程度”。
-- 当 **经常发生的事情（概率高的事件）** 发生时，惊讶程度低，获得的信息量小。
-- 当 **罕见发生的事情（概率低的事件）** 发生时，惊讶程度高，获得的信息量大。
-
-假设事件 $ x $ 发生的概率为 $ P(x) $ ，那么该事件所包含的 **自信息量** （Self-Information） $ I(x) $ 定义如下。
+对于概率P(x)为正的事件x，自信息量I(x)定义如下。以2为对数底时，单位是比特。
 
 $$
-I(x) = - \log_2 P(x) = \log_2 \frac{1}{P(x)}
+I(x)=-\log_2P(x)=\log_2\frac1{P(x)},\qquad 0<P(x)\le1
 $$
 
-如果对数的底数为 $ 2 $ ，则信息量的单位为 **比特** （bit）。例如，抛掷一枚正反面等概率（ $ P = 0.5 $ ）的硬币，出现正面这一事件的信息量为：
+事件越不常见，这个数值越大。但它不测量心理上的惊讶或内容的价值。该式并不为概率0的事件赋予有限的自信息量，使用时需要明确概率模型和定义域。
+
+公平硬币出现正面这一事件对应：
 
 $$
-I(\text{正面}) = - \log_2(0.5) = 1 \text{ bit}
+I=-\log_2(1/2)=1\ \mathrm{bit}
 $$
 
-这与“1比特信息”的直观理解也是一致的。
+## 4. 熵是自信息量的期望
 
-## 4. 香农熵
-
-自信息量是针对单个事件的信息量，但是我们如何知道从整个信息源平均产生了多少信息呢？
-
-这时候登场的就是 **熵** （Entropy）。当信息源 $ X $ 以概率 $ P(x_1), P(x_2), \dots, P(x_n) $ 产生 $ n $ 个不同的符号 $ x_1, x_2, \dots, x_n $ 时，信息源 $ X $ 的熵 $ H(X) $ 定义为自信息量的期望值。
+设随机变量X取有限字母表中的m种符号，p_i=P(X=x_i)。各概率非负且总和为1。香农熵是自信息量的期望。
 
 $$
-H(X) = - \sum_{i=1}^{n} P(x_i) \log_2 P(x_i)
+H(X)=\mathbb E[I(X)]=-\sum_{i=1}^{m}p_i\log_2p_i,\qquad \sum_{i=1}^{m}p_i=1
 $$
 
-（但是，当 $ P(x_i) = 0 $ 时，认为 $ 0 \log_2 0 = 0 $ ）
+对概率0的项，采用与极限相符的约定0log₂0=0。单位是每符号比特数。在固定的m种符号范围内：
 
-### 熵的直观含义
-熵 $ H(X) $ 表示信息源所具有的 **不确定性** 程度。
-- 当完全无法预测会出现哪个符号（所有概率均等）时，熵达到最大。
-- 当总是出现同一个符号（某个概率为 $ 1 $ 且其他为 $ 0 $ ）时，不确定性消失，熵为 $ 0 $ 。
+$$
+0\le H(X)\le\log_2m
+$$
 
-下面我们用Python代码，计算一下当硬币出现正面的概率 $ p $ 变化时，熵的变化情况。
+均匀分布达到最大值；只有一种符号的概率为1时达到最小值。“不确定性最大”依赖这个概率模型及可用信息，并不保证密码学上的不可预测性，也不保证另一方没有额外信息。
+
+若出现正面的概率为p，二元熵函数如下。端点同样采用零概率项的约定。
+
+$$
+h_2(p)=-p\log_2p-(1-p)\log_2(1-p),\qquad 0\le p\le1
+$$
+
+下面的Python例子接受有限的标量概率，拒绝定义域以外的值。绘图需要Matplotlib。
 
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
+import math
+
 
 def binary_entropy(p):
+    if not math.isfinite(p) or not 0 <= p <= 1:
+        raise ValueError("p must be finite and between 0 and 1")
     if p == 0 or p == 1:
-        return 0
-    return -p * np.log2(p) - (1 - p) * np.log2(1 - p)
+        return 0.0
+    return -p * math.log2(p) - (1 - p) * math.log2(1 - p)
 
-probabilities = np.linspace(0, 1, 100)
-entropies = [binary_entropy(p) for p in probabilities]
 
-plt.plot(probabilities, entropies)
-plt.title('Binary Entropy Function')
-plt.xlabel('Probability of heads (p)')
-plt.ylabel('Entropy H(X) in bits')
-plt.grid(True)
-plt.show()
+if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+
+    probabilities = [i / 100 for i in range(101)]
+    entropies = [binary_entropy(p) for p in probabilities]
+    plt.plot(probabilities, entropies)
+    plt.title("Binary entropy")
+    plt.xlabel("Probability of heads (p)")
+    plt.ylabel("Entropy (bits per symbol)")
+    plt.grid(True)
+    plt.show()
 ```
 
-绘制出这个图表后，我们可以发现当 $ p = 0.5 $ 时，熵达到最大值 $ 1 $ ，此时处于完全不可预测的状态。
+p=0或p=1时为0，p=0.5时达到最大值1比特，曲线左右对称。
 
-## 5. 信源编码定理：数据压缩的极限
+## 5. 信源编码：比较哪一种平均值，有什么条件
 
-熵并不仅仅是一个抽象概念。香农证明了，这个熵决定了 **数据压缩的绝对极限** 。这就是 **信源编码定理** （香农第一定理）。
-
-该定理的推论非常简单。
-**“无论使用任何无损压缩算法，都无法使信息源产生数据的平均码长小于该信息源的熵 $ H(X) $ 。”**
+为有限符号集合分配二进制码字，要求码字连接后仍能唯一译码。若符号i的码长为ℓ_i，平均码长L满足下式。前缀码是一类可唯一译码的编码，其中任何码字都不是另一码字的开头。
 
 $$
-L \ge H(X)
+L=\sum_i p_i\ell_i,\qquad L\ge H(X)
 $$
-（ $ L $ 为平均码长）
 
-也就是说，熵代表了“信息本身所固有的本质大小”，这意味着无论开发出多么优秀的ZIP或gzip等算法，在数学上都不可能突破这个极限壁垒进行压缩。
+这是针对指定分布的期望值结论，不是说每个文件都必须至少这么长。仅凭单个符号的边缘分布，也不能确定相关序列的压缩极限。
 
-### 哈夫曼编码 (Huffman Coding)
-为了接近熵的极限，作为具体的方法，香农的共同研究者法诺的想法被发展起来，大卫·哈夫曼发明了 **哈夫曼编码** 。
+### 哈夫曼编码的条件性最优
 
-通过为出现概率高的符号分配较短的比特串，为出现概率低的符号分配较长的比特串，来最小化整体的平均码长。以下是使用Python构建简单的哈夫曼编码的示例。
+[David Huffman在1952年的论文](https://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf)研究了在给定概率下使平均码长最小的前缀码。二进制情形下，反复合并权重最小的两项，并把权重之和放回集合。存在相同权重时，最优码表不一定唯一。
+
+当至少两种符号具有正概率时，最优二进制前缀码的平均长度L_H满足：
+
+$$
+H(X)\le L_{\mathrm H}<H(X)+1
+$$
+
+这里的最优性限于已知权重、逐符号编码的类别，不是所有压缩方法中的最优。对非退化的独立同分布信源，将n个符号组成一块并选择适当的前缀码，可以达到下列每符号范围。L_n是整个n符号块的平均比特数。
+
+$$
+H(X)\le\frac{L_n}{n}<H(X)+\frac1n
+$$
+
+存在依赖时，需要使用块的联合熵。平稳的有限字母表信源的熵率由下列极限定义：
+
+$$
+\overline H=\lim_{n\to\infty}\frac{H(X_1,\ldots,X_n)}{n}
+$$
+
+例如，开始时选择一个公平比特Z，然后在已知长度n内始终重复这个值。在此模型中：
+
+$$
+P(Z=0)=P(Z=1)=\frac12,\qquad X_i=Z,\qquad H(X_i)=1,\qquad H(X_1,\ldots,X_n)=1
+$$
+
+每个位置的边缘熵是1比特，但译码方知道n和这个模型时，可以用Z的1比特表示整块。这说明单个符号的熵与序列整体的信息量不同。实际ZIP和gzip还有头部、模型、历史和字节边界等条件，不能仅凭单字符频率断言其极限。
+
+### 处理空输入和单一符号的Python例子
+
+下面的例子按Python字符统计频率，使用共享的树进行编码和译码。相同频率的处理不依赖输入顺序，每次调用都会建立新的码表。空字符串使用空树和空载荷。
 
 ```python
 import heapq
 from collections import Counter
+from itertools import count
+
 
 class Node:
-    def __init__(self, char, freq):
+    def __init__(self, char=None, left=None, right=None):
         self.char = char
-        self.freq = freq
-        self.left = None
-        self.right = None
+        self.left = left
+        self.right = right
 
-    def __lt__(self, other):
-        return self.freq < other.freq
 
 def build_huffman_tree(text):
-    frequency = Counter(text)
-    heap = [Node(char, freq) for char, freq in frequency.items()]
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+    order = count()
+    heap = [(freq, next(order), Node(char))
+            for char, freq in sorted(Counter(text).items())]
     heapq.heapify(heap)
-
+    if not heap:
+        return None
     while len(heap) > 1:
-        left = heapq.heappop(heap)
-        right = heapq.heappop(heap)
-        merged = Node(None, left.freq + right.freq)
-        merged.left = left
-        merged.right = right
-        heapq.heappush(heap, merged)
+        freq_left, _, left = heapq.heappop(heap)
+        freq_right, _, right = heapq.heappop(heap)
+        parent = Node(left=left, right=right)
+        heapq.heappush(heap, (freq_left + freq_right, next(order), parent))
+    return heap[0][2]
 
-    return heap[0]
 
-def generate_huffman_codes(node, prefix="", codebook={}):
-    if node is not None:
+def generate_huffman_codes(root):
+    codes = {}
+    stack = [] if root is None else [(root, "")]
+    while stack:
+        node, prefix = stack.pop()
         if node.char is not None:
-            codebook[node.char] = prefix
-        generate_huffman_codes(node.left, prefix + "0", codebook)
-        generate_huffman_codes(node.right, prefix + "1", codebook)
-    return codebook
+            codes[node.char] = prefix or "0"
+        else:
+            stack.append((node.right, prefix + "1"))
+            stack.append((node.left, prefix + "0"))
+    return codes
 
-# 示例文本
-text = "shannon_entropy_and_information_theory"
-tree_root = build_huffman_tree(text)
-codes = generate_huffman_codes(tree_root)
 
-print("Huffman Codes:")
-for char, code in sorted(codes.items()):
-    print(f"'{char}': {code}")
+def encode(text, codes):
+    try:
+        return "".join(codes[char] for char in text)
+    except KeyError as exc:
+        raise ValueError("symbol missing from codebook") from exc
+
+
+def decode(bits, root):
+    if any(bit not in "01" for bit in bits):
+        raise ValueError("payload must contain only 0 and 1")
+    if root is None:
+        if bits:
+            raise ValueError("nonempty payload with an empty tree")
+        return ""
+    if root.char is not None:
+        if "1" in bits:
+            raise ValueError("single-symbol code uses only 0")
+        return root.char * len(bits)
+    result = []
+    node = root
+    for bit in bits:
+        node = node.left if bit == "0" else node.right
+        if node.char is not None:
+            result.append(node.char)
+            node = root
+    if node is not root:
+        raise ValueError("truncated codeword")
+    return "".join(result)
+
+
+if __name__ == "__main__":
+    text = "shannon_entropy_and_information_theory"
+    root = build_huffman_tree(text)
+    codes = generate_huffman_codes(root)
+    payload = encode(text, codes)
+    print("Huffman codes:")
+    for char, code in sorted(codes.items()):
+        print(f"{char!r}: {code}")
+    print("Logical payload bits:", len(payload))
+    print("Round trip:", decode(payload, root) == text)
 ```
 
-## 6. 信道编码定理：无差错通信的极限
+本例给单一符号分配非空码0，用载荷长度表示重复次数。此时H=0、L=1，所以不把上面的严格上界L_H<H+1应用于这个实现的单一符号情形。允许空码、另行共享次数的设计采用了不同约定。
 
-展示了数据压缩极限的香农，接下来挑战了“存在噪声的信道”。如果存在噪声，数据的一部分就会翻转或丢失。为了应对这个问题，我们在数据中加入 **冗余性** 以便能够纠正错误（纠错码）。
+传给decode的树应由build_huffman_tree生成。它会拒绝非法字符和被截断的码字，但不能检测或纠正所有把载荷变成另一合法码序列的损坏。这里的字符数按Unicode码点计算，不是字素簇数或UTF-8字节数。
 
-然而，加入的冗余性越多，实际能够发送的信息的实质速度（速率）就会越低。那么，在存在噪声的环境下，我们能以多快的速度，以及多高的准确率发送信息呢？
+载荷是由0和1组成的Python字符串，不是按位打包的文件格式。Logical payload bits表示逻辑长度，不是Python对象的内存大小。它没有包含保存或传输树、消息定界和头部的成本，因此不能仅用这个例子给出完整文件的压缩率。
 
-对这个问题的回答就是 **信道编码定理** （香农第二定理）。
+## 6. 信道编码：小错误概率不等于有限长度零错误
 
-香农证明了信道存在固有的 **信道容量** （Channel Capacity） $ C $ 。令人惊讶的是，他提出了如下主张：
-
-**“如果信息传输速率 $ R $ 小于信道容量 $ C $ （ $ R < C $ ），那么通过进行适当的编码，可以使错误率无限接近于零。”**
-
-计算信道容量 $ C $ 的代表性公式，是关于加性高斯白噪声（AWGN）信道的香农-哈特利定理。
+先考虑有限离散无记忆信道：每次使用具有相同的转移概率，不依赖过去。用U表示输入、V表示输出，信道容量是对输入分布取最大值的互信息，单位为每次信道使用的比特数。
 
 $$
-C = B \log_2 \left( 1 + \frac{S}{N} \right)
+C=\max_{P_U}I(U;V),\qquad I(U;V)=H(U)-H(U\mid V)
 $$
 
-在这里，
-- $ C $ : 信道容量 (bits per second)
-- $ B $ : 带宽 (Hz)
-- $ S $ : 信号功率 (Watt)
-- $ N $ : 噪声功率 (Watt)
-- $ \frac{S}{N} $ : 信噪比 (Signal-to-Noise Ratio)
+用n次信道使用发送M种消息的编码，其码率为：
 
-这一定理在现代Wi-Fi、5G移动通信、卫星通信等所有数字通信系统的设计中，成为了指明可达到的理论极限（香农极限）的灯塔。
+$$
+R=\frac{\log_2 M}{n}\quad(\mathrm{bits/use})
+$$
 
-## 7. 结语
+在这个模型中，R<C时，随着码块长度增大，可以选择使译码错误概率任意小的编码。这不保证有限长度下错误必定为0，也不保证某个具体编码会自动达到极限。反之，在相同假设下，以固定的超容量码率传输，错误概率不能趋于0。比较每秒的量时，还需要统一每秒的信道使用次数。
 
-克劳德·香农构建的信息论，将“信息”这个无形的东西在数学上进行了严格的定义，推开了数字时代的大门。 **香农熵** 并不仅仅停留在抽象概念上，它指出了数据压缩算法的绝对极限，而信道容量决定了我们日常使用的互联网和无线通信演进的方向。
+### 带宽和功率受限的AWGN信道
 
-我们在智能手机上可以流式传输视频，或者从遥远的探测器接收清晰的宇宙图像，正是因为有着信息论这个坚实的数学基础。熵的概念现在还在物理学的热力学熵的关系上被讨论，或者在机器学习（如交叉熵误差等）中扮演着重要角色，并持续波及更广泛的领域。
+采用噪声与输入信号独立的加性高斯白噪声模型，设带宽为B Hz，平均信号功率为S，带宽内的总噪声功率为N。在平均功率约束下，容量如下，假设B>0、S≥0、N>0。
 
-从根本上理解数据的性质，并了解其极限，在设计未来更高级的信息通信系统时，依然将是最为重要的方法。
+$$
+C=B\log_2\left(1+\frac SN\right)\quad(\mathrm{bits/s})
+$$
+
+这里C的单位是比特每秒。S和N采用相同的功率单位，S/N使用线性比值，不能直接代入dB数值。例如B=1 MHz、线性S/N=15时，理论值为：
+
+$$
+10^6\log_2(1+15)=4\times10^6\ \mathrm{bits/s}
+$$
+
+这不是Wi-Fi或蜂窝通信吞吐量的实测。应用时需要检查调制、允许的输入、时延、有限码长、衰落、干扰和协议开销等与模型的差异。
+
+## 7. 使用信息论时要问的问题
+
+信息论提供了研究极限的框架，区分压缩要减少的冗余与通信为提高可靠性而加入的冗余。它也为视频流传输和卫星通信提供基础，但单个公式不能决定实际系统整体的性能。
+
+机器学习中的交叉熵还依赖预测分布，并不等同于信源自身的熵。讨论它与热力学熵在形式上的联系时，也要区分物理模型和单位。明确随机变量是什么、哪些信息已知、计算哪些成本，是使用模型的起点。

@@ -43,6 +43,46 @@
         "PNGvisual review only,no browser/KaTeX/Mermaid/nativeGUI certification.",
         "Primary reading scope partialforShannon andseparatelyrecorded;publication andwholegoalpending."
       ]
+    },
+    "post/information-theory-shannon-entropy/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/information-theory-shannon-entropy/index.md",
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "translationHash": "dddec08c7faef364595c1ac1e14155c62686624cafa06e0607bf89788ac1ea68",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and actual revised SimplifiedChinese metadata,sevensections,one fullcommunicationdiagram andboth completePythonblocks in boundedchunks against frozenJapanese. Preserved communication,selfinformation,entropy,sourcecoding,Huffman,channel/AWGN andapplications. Corrected singlehandedhistory,universal marginal/per-file bound,unqualifiedoptimality and finitezeroerror implication. Matched correlatedconstantZ block and sharedknownlength assumptions,model/header costs and singletonexception."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared 信源 versus 信道,自信息量/期望/不确定性,边缘熵 versus 联合熵/熵率,平均码长,唯一译码 versus 前缀码,平稳 versus 无记忆,码点 versus 字素簇/UTF8字节,and逻辑载荷 versus 按位打包/内存/文件大小. 保留哈夫曼 as valid SimplifiedChinese name. Beforefirstproof clarified AWGN 噪声与输入信号独立 and reread changed sentence,matching intended independent-noise model;no new primarysource scope or exclusive terminologyauthority claim."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared14identicalTeX:positivePdomain,0log0 convention,finitealphabetmax,binaryentropy,expectedlength lowerbound,Huffmanstrictupper only2positivesymbols,iidnondegenerateblockbound,stationaryentropyrate,constantZ jointentropy1 versus marginal1,DMCmutualinformation/rate and averagepowerAWGN4Mbps withlinearSNR15. Singletonnonempty0code H0L1 excludedfromstrictH+1. Actualfinite1001probabilitypoints,1360smalloptimalweightprofiles,oneAWGN/fourcorrelatedexamples support checks,not general/physicalproof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read both full actualextracted Python programs and executed2standalone blocks/mains. 1001valid/5invalidprobabilities,1093abcroundtrips+6Unicode,4nonstringbuildrejections,6invalid/truncatedpayloads,unknownsymbol,freshdictionary andfrequency-tie determinism passed. Independentfullbinarytreedepthoracle1360profiles matchesweightedlength;not all-inputproof. ActualplotPNG SHA matches previouslyvisuallyinspected plot;AggGUIwarning retained. CompleteHTMLcode exact. Sharedgeneratedtree only,no arbitrarytree/fileformat/errorcorrection/browser certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primarypaperURLs match actualHTML,documented readinglimits retained(Huffmanfull4pages,Shannonselectedtext/7visualpages). OriginalChinese chart sentence had no graphsearchlink;do not claim removal there,only earlierJA correction. Bothrawdatelines/effectiveSep21T02:45:54+09:00,slug,imagehash,taxonomy retained,actualNov12lastmod.14hreflang13sidebar and33bundle1853multilingualpages/3371HTTPSHTML41XML passed;17priortests referenced notrerun. Other10translationbodies/publication pending."
+        }
+      },
+      "summary": "Full Simplified Chinese entropy/sourcecoding/channel review with actual Huffman execution and explicit probability conventions.",
+      "languageSpecificFindings": "Clarified 信源/信道,边缘/联合熵/熵率,唯一译码/前缀码,平稳/无记忆,码点/字素簇/字节,and logicalpayload versus serializedfile costs. Explicit noise-input independence,linearSNR versus dB and bits/use versus bits/s. Removed unsupported singlehandedhistorical and universalcompression implications. Chineseoriginal has no chart-to-graphsearch link,no copiedlinkremoval finding. All14math andcomplete2programs read,includingH0L1 exception.",
+      "validation": "docs/translation-review/batch-032-zh-cn-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "10 other translation bodies remainunreviewed atthisstage.",
+        "Finiteoracle cases,not all-input proof,serializedfileformat,errorcorrection or practicalnetworkbenchmark.",
+        "Actualplot PNG matches priorinspectedimage;no browser/KaTeX/Mermaid/nativeGUI certification.",
+        "Primary reading scope separatelydocumented;publication andwholegoalpending."
+      ]
     }
   },
   "stages": [
@@ -71,6 +111,66 @@
       "unreviewedTranslations": 12647,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "zh-cn"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "validation": "docs/translation-review/batch-032-zh-cn-validation.json",
+      "checks": "docs/translation-review/batch-032-zh-cn-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-032-zh-cn-ledger-validation.json",
+      "texEach": 14,
+      "diagramsEach": 1,
+      "diagramSolidEdges": 4,
+      "diagramDottedEdges": 1,
+      "articleProgramsExecutedEach": 2,
+      "codeValidation": {
+        "language": "zh-cn",
+        "articleProgramsExecuted": 2,
+        "extractedProgramSha256": [
+          "5841dd9a65da699b76137cb8d022e807e022eed2f0f7a859ddbe360c632dce35",
+          "1de958a50b5f565f3c832934c79fbcb57636b1f7a2bc55a2833324d6d2d7826c"
+        ],
+        "pythonVersion": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "binaryEntropyValidPoints": 1001,
+        "binaryEntropyInvalidPointsRejected": 5,
+        "exhaustiveAbcRoundTripsLength0through6": 1093,
+        "unicodeRoundTrips": 6,
+        "repeatedCallNoStaleCodebook": true,
+        "equalFrequenciesDeterministicAcrossInputOrder": true,
+        "nonStringBuildInputsRejected": 4,
+        "invalidOrTruncatedPayloadCasesRejected": 6,
+        "unknownSymbolRejected": true,
+        "independentFullBinaryTreeShapeOptimalProfiles": 1360,
+        "optimalProfileScope": "2through5symbols,eachpositiveintegerweight1through4;allfullbinaryleafdepthmultisets,largestweightstoshortestdepths. Finite independent oracle,not all-input proof.",
+        "singleSymbolConvention": "Nonempty0code,L=1,H=0;strictL<H+1notclaimedforthisimplementationcase.",
+        "sampleStdout": "Huffman codes:\n'_': 001\n'a': 1011\n'd': 01110\n'e': 0001\n'f': 01111\n'h': 0100\n'i': 0101\n'm': 10100\n'n': 111\n'o': 100\n'p': 10101\n'r': 1100\n's': 0000\n't': 1101\n'y': 0110\nLogical payload bits: 140\nRound trip: True\n",
+        "plot": {
+          "path": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\entropy-code-batch-032-zh-cn-validation-zh-cn\\binary-entropy.png",
+          "sha256": "da51287a79462f2044a4d6bdee16c0092ed0f907d9ebe07891d9b1148f841ec2",
+          "points": 101,
+          "peakAtHalf": true,
+          "warnings": [
+            "FigureCanvasAgg is non-interactive, and thus cannot be shown"
+          ],
+          "visuallyInspectedByThisCode": false
+        },
+        "scope": "Actual article-extracted standalone programs plus finite oracles. No serialized-file format,errorcorrection,all-input proof or native/browser/ledger certification."
+      },
+      "plotExactMatchTo": "docs/translation-review/batch-032-ja-en-plot-review.json",
+      "actualPreviewBundles": 33,
+      "multilingualPages": 1853,
+      "httpsHtmlPages": 3371,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 386,
+      "unreviewedTranslations": 12646,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 10,
       "publicationPending": true
     }
   ],
