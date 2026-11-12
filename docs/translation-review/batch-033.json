@@ -203,6 +203,46 @@
         "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
         "Batch033publication andwholegoal pending;032closure is separately recorded."
       ]
+    },
+    "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "translationHash": "3f7d7d139ed55dc7da152d1d1fa727fa68a48d0323f5301adb3c78601f904113",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full oldPortuguese metadata,four sections,sixdisplayformulas,two fullMermaid sources andperformance table;read full actual revised sixsections,29formulas,both graphs,BWT andarchitecture tables against frozenJapanese. Reread grammar,carryandgrowingcopy edits. Restored counting/Kraft/KLproof,Huffmanmerge,arithmeticinterval,rANSinverse/tANSstates,BWTinverse,NLL andengineeringthemes. Corrected arbitraryH+1upper,per-fileabsolutephysicalbound,idealpredictionlength asactualminimumfile andunsupportedperformance/intelligenceclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared compressao sem perdas/com perdas,injetora/bijecao,autoinformacao/esperanca,comprimento medio,codeprefix versusunicamente decodificavel,normalizacao/canonico/renormalizacao,entropia marginal/conjunta/taxa,independentesidenticamentedistribuidos/estacionarios,carga util/arquivo inteiro,bit/byte/MiB/MB,distancia/comprimento,linha/coluna/sentinela. Brazilianlocalizedtaxonomy retained. Clarifiedcarrywithvai-um,range codingwithEnglishparenthesisandstaticinitialcopyversusgrowingoutput;correctedpassiveverb reinsertgrammar. OriginalnormalizedKLidentity valid,noEnglishspecificQdefectattributed."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read29sharedTeX withdomains: fixedE/uniformn/counting1<=c<=n,Kraftleafbudget/normalizedQ/KLidentity,positive-support/singleton convention,constructedShannonceil/optimalH+1,iidblocks/dependentjoint/stationaryrate,Huffmanmerge/.99binaryentropy,arithmeticpositiveinterval/conditionalproduct/sufficientcontaineddyadicK/expectedH+2,rANSpositivefrequencies/exactinverse,tANSclosedintegerLstates,LFzero-basedpriorrank,NLLnaturalbaseandmean,serialIOassumptions. Prior136counting510swap1093BWT650rANSprofiles511rationalchecks retained;selected4forwardcopy/NLL/entropy/3IO/c100auxiliarychecks notgeneralproof orbenchmark. OldPThadnoc100example,noneinvented."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original andrevisedPortuguese executablearticleprograms0. Read bothwholeMermaidgraphs andinlineexamples;actualHTML hasJA-identicaltopology8+6edges,includingbzip2preBWTRLE,all7BWTrows,std::vector<int>,banana$,annb$aa andliteral sentinel. Dollarinlinecode excludedfrommathcount. LZgrowingoverlap versusgenericmemcpy/staticcopy,flags/model/table/headercosts andANSstack/contextorder explicit. Auxiliaryscriptsnotarticleprogramruns,fullcompressor/benchmark/LLMexperiment;no browser/KaTeX/Mermaid/nativecertification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Elevenprimary/officialreferenceURLs matchsourceandactualHTML;previouslydocumentedselectedprimaryreadinglimits retained,notnewfullpaper/file reading. OldPTbodyhadnoexternalreferences orunrelatedmislink,noneinvented. Oct14T12rawdate,slug,imagehash/localizedtaxonomy preserved,actualNov12lastmodandmermaidflag.34bundle442sourcesnapshots/1918multilingualpages/3488HTTPSHTML41XML and14hreflang13sidebar checks pass.17tests referencepriorJAENsuccess,notrerun. Sixother033translationsandpublicationpending;032closure separate."
+        }
+      },
+      "summary": "Complete Portuguese lossless-compression review restoring derivations and separating ideal payload, expected length and total file cost.",
+      "languageSpecificFindings": "Restored abbreviatedfoursection/sixformula originalto6themes29formulas. FixedarbitrarycodeH+1upper andabsolutefilelimits,replacedunmeasuredperformancefigures andprediction-to-minimumactualfile claim. OriginalnormalizedKLidentity retainedasvalid. ComparedPortugueseautoinformacao,comprimentomedio,carga util,normalizacao/renormalizacao,linhas/colunas;carry/vai-um andrange coding disambiguated. No oldc100example ornonexistentmislink claimed.",
+      "validation": "docs/translation-review/batch-033-pt-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "6 other translation bodies remain unreviewed at this stage.",
+        "Article programs0;independentfiniteauxiliarychecks not generalproof,fullcompressor,benchmark orLLMexperimentalreproduction.",
+        "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
+        "Batch033publication andwholegoal pending;032closure is separately recorded."
+      ]
     }
   },
   "stages": [
@@ -505,6 +545,74 @@
       "unreviewedTranslations": 12631,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 7,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "pt"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "validation": "docs/translation-review/batch-033-pt-validation.json",
+      "checks": "docs/translation-review/batch-033-pt-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-033-pt-ledger-validation.json",
+      "texEach": 29,
+      "diagramsEach": 2,
+      "diagramEdgesEach": [
+        8,
+        6
+      ],
+      "articleProgramsEach": 0,
+      "auxiliaryChecks": {
+        "lzForwardCopyExamples": 4,
+        "nllBaseAndAveragingExample": true,
+        "binaryEntropyAt099": 0.08079313589591118,
+        "ioModelExamples": [
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 200000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.0075
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 1000000000,
+            "decodedBytesPerSecond": 10000000,
+            "rawSeconds": 0.001,
+            "serialCompressedSeconds": 0.10025
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 1000000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 100000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.02
+          }
+        ],
+        "largeCountingExample": {
+          "c": 100,
+          "requiresNAtLeast": 100,
+          "strictFractionUpperBound": 1.5777218104420236e-30,
+          "scope": "Fixedinjectiveencoder,uniformnbitinput;notallcompressorssimultaneously."
+        },
+        "scope": "Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor."
+      },
+      "priorIndependentAuxiliaryChecks": "docs/translation-review/batch-033-original-math-probe.json",
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 34,
+      "multilingualPages": 1918,
+      "httpsHtmlPages": 3488,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 402,
+      "unreviewedTranslations": 12630,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 6,
       "publicationPending": true
     }
   ],
