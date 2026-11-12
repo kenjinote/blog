@@ -123,6 +123,46 @@
         "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
         "Batch033publication andwholegoal pending;032closure is separately recorded."
       ]
+    },
+    "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "translationHash": "921be35f252e8f60490b2c43c4c30f989ea4e0b6601aeff0680d09d48fb0e562",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete old Spanish metadata,four sections,six displayformulas,two fullMermaid diagrams andperformance table;read full actual revised metadata,six sections,29formulas,two graphs,BWT andarchitecture tables against frozenJapanese andprevious English comparison. Restored complete counting/Kraft/KLproof,Huffmanmerge,arithmeticinterval,rANSinverse/tANSstates,BWTinverse,NLL andengineering sections. Corrected arbitrarycode upperbound,per-file/expectedlength confusion anduniversalperformance/intelligence claims. Reread finalcomparison sentence aftergrammar polish."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared compresion sin perdida/con perdida,inyectiva,autoinformacion versus semanticimportance,entropia marginal/conjunta/tasa,independientes e identicamente distribuidos versus estacionarios,codigo prefijo/univocamente decodificable,normalizacion versus Huffman canonico,carga util versus totalfile,renormalizacion,byte/bit/MiB/MB,distancia/longitud,filas/columnas andcentinela. Preserved valid Shannon/Huffman andoldfixedcompressor heading;oldnormalizedKL identity itself was consistent,noEnglish-specificnormalization defect assigned. Decimalcommas inprose andsharedTeX decimalpoints retain samevalues."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared29sharedTeX anddomains: fixedE/uniformnbit/counting c1throughn,Kraftleafcount/normalizedQ/KLidentity,positive-support/singletonconvention,constructedShannon/optimalH+1upper,iidblock/dependentjoint/stationaryrate,Huffmanmerge and.99binaryentropy,arithmeticpositiveinterval/product/containeddyadic sufficientK andexpectedH+2,rANSpositivefrequencies/exactinverse,tANSclosedintegerLstates,LFzero-basedrank,NLLnaturalbase/mean andserialIOmodel. Earlierindependent136counting510swap1093BWT650rANSprofiles511rationalinterval checks retained;selectedauxiliary4forwardcopies,NLL/entropy/3IOexamples/c100numericbound notgeneralproof orbenchmark. Spanish oldbody hadnoc100example,noneinvented."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Both original andrevisedSpanish havezeroexecutablearticleprograms;read bothcompleteMermaid graphs andinlineexamples. ActualHTML preserves8+6edgesmatchingJA topology,bzip2RLEbeforeBWT,all7BWTrows,std::vector<int>,banana$,annb$aa andliteral sentinel. Inlinecode dollar excludedfrommathcounting. LZoverlappingcopy distinguished fromgenericmemcpy orsnapshotcopy;flags/model/table/headercosts explicit. Auxiliarymathscripts are notarticlecodeexecution,fullcompressor orLLMexperimentalreproduction. No browser/KaTeX/Mermaidexecution ornativecertification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All11primary/officialreferenceURLs matchfrozenJapanese andactualHTML;earlierdocumentedprimaryreadinglimits apply,notnewfullpaper/file reading. OldSpanish bodyhadnoexternalreference orunrelatedmislink,noneinvented. PreservedoriginalOct14T12rawdate,slug,imagehash andlocalizedtaxonomy;actualNov12lastmodandmermaidflag.34bundle442snapshots/1918multilingualpages/3488HTTPSHTML41XML and14hreflang13sidebar pass.17existingtests refer topriorJAENsuccess,notrerun. Eightother033translationsand033publicationpending;032closureseparate."
+        }
+      },
+      "summary": "Complete Spanish lossless-compression review restoring full derivations, expected-length conditions and implementation costs with decoded-HTML verification.",
+      "languageSpecificFindings": "Original Spanish foursection/sixformula summary omittedderivations andengineeringthemes. Corrected implicationfromKLlowerbound toarbitrarycode H+1upper;replaced absolutophysical/per-filelimits andunsupportedratios/speeds withspecifiedcode/distribution/measurementconditions. OldnormalizedKLformula andheadingalreadyvalid. Clarified carga util,renormalizacion,entropiamarginal/conjunta/tasa,decimalseparators andBWTfilas/columnas. No oldc100sample ornonexistentmislink claimed.",
+      "validation": "docs/translation-review/batch-033-es-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "8 other translation bodies remain unreviewed at this stage.",
+        "Article programs0;independentfiniteauxiliarychecks not generalproof,fullcompressor,benchmark orLLMexperimentalreproduction.",
+        "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
+        "Batch033publication andwholegoal pending;032closure is separately recorded."
+      ]
     }
   },
   "stages": [
@@ -289,6 +329,74 @@
       "unreviewedTranslations": 12633,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 9,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "es"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "validation": "docs/translation-review/batch-033-es-validation.json",
+      "checks": "docs/translation-review/batch-033-es-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-033-es-ledger-validation.json",
+      "texEach": 29,
+      "diagramsEach": 2,
+      "diagramEdgesEach": [
+        8,
+        6
+      ],
+      "articleProgramsEach": 0,
+      "auxiliaryChecks": {
+        "lzForwardCopyExamples": 4,
+        "nllBaseAndAveragingExample": true,
+        "binaryEntropyAt099": 0.08079313589591118,
+        "ioModelExamples": [
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 200000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.0075
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 1000000000,
+            "decodedBytesPerSecond": 10000000,
+            "rawSeconds": 0.001,
+            "serialCompressedSeconds": 0.10025
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 1000000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 100000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.02
+          }
+        ],
+        "largeCountingExample": {
+          "c": 100,
+          "requiresNAtLeast": 100,
+          "strictFractionUpperBound": 1.5777218104420236e-30,
+          "scope": "Fixedinjectiveencoder,uniformnbitinput;notallcompressorssimultaneously."
+        },
+        "scope": "Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor."
+      },
+      "priorIndependentAuxiliaryChecks": "docs/translation-review/batch-033-original-math-probe.json",
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 34,
+      "multilingualPages": 1918,
+      "httpsHtmlPages": 3488,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 400,
+      "unreviewedTranslations": 12632,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 8,
       "publicationPending": true
     }
   ],
