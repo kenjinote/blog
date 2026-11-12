@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-11-12T09:32:06.640707+09:00",
+  "allPassed": true,
+  "arabicLangAndRtlAnd12LtrNumbers": "verified by batch-031-ar-validation.json",
+  "actualLinkedStylesheetRules": [
+    {
+      "linkedStylesheet": "/scss/style.min.053be3a5f0163a09f569d953d9f2378f640c0b40dc9454bd891db75e1e15e946.css",
+      "sha256": "053be3a5f0163a09f569d953d9f2378f640c0b40dc9454bd891db75e1e15e946",
+      "properties": {
+        "direction": "ltr",
+        "unicode-bidi": "isolate",
+        "display": "inline-block"
+      }
+    }
+  ],
+  "scope": "Static source/generatedHTML/actual linkedCSS only. No browser visual or KaTeX runtime certification."
+}

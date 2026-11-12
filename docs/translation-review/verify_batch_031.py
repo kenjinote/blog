@@ -3,6 +3,7 @@ from pathlib import Path
 from fractions import Fraction as F
 from datetime import datetime,timezone,timedelta
 from html import unescape
+from html.parser import HTMLParser
 import argparse,hashlib,importlib.util,json,re,subprocess,itertools
 ROOT=Path(__file__).resolve().parents[2];D=ROOT/'docs/translation-review'
 spec=importlib.util.spec_from_file_location('shared',D/'verify_batch_028.py')
@@ -87,6 +88,20 @@ def main():
         assert '"datePublished":"'+v['datePublished']+'"' in html and '"dateModified":"'+dates[lang] in html
         assert 'katex.min.js' in html and 'mermaid' in html and json.loads(re.search(r'^title: (.*)$',h,re.M)[1]) in unescape(html)
         for number in ('-55','-50','-46','1/20','1/9','1/5'):assert number in html
+        if lang=='ar':
+            expected=['0','-55','-50','1/20','-52.75','-50','1/9','-50','-50','1/5','-46','-50']
+            assert re.findall(r'<bdi dir="ltr">([^<]+)</bdi>',text)==expected
+            class BidiNumbers(HTMLParser):
+                def __init__(self):super().__init__();self.active=False;self.values=[]
+                def handle_starttag(self,tag,attrs):
+                    if tag=='bdi':
+                        assert dict(attrs).get('dir')=='ltr';self.active=True;self.values.append('')
+                def handle_data(self,data):
+                    if self.active:self.values[-1]+=data
+                def handle_endtag(self,tag):
+                    if tag=='bdi':self.active=False
+            numbers=BidiNumbers();numbers.feed(html);assert numbers.values==expected
+            assert re.search(r'<html\b[^>]*\blang=ar\b[^>]*\bdir=rtl\b',html)
         for asset in audit['assets']:assert hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest()==asset['sha256']
         versions.append({'language':lang,'path':v['path'],'sha256':shared.digest(p),'sourceSha256':shared.digest(source),'texExpressions':10,'diagrams':2,'diagramEdges':[6,6],'articleExecutablePrograms':0,'references':5,'datePublished':v['datePublished'],'dateModified':dates[lang],'passed':True})
     doc={'version':1,'checkedAt':datetime.now(timezone(timedelta(hours=9))).isoformat(),'allPassed':True,'versions':versions,'sharedAuxiliaryChecks':auxiliary(),'sourceAuditSha256':hashlib.sha256(audit_path.read_bytes()).hexdigest(),'reviewedTranslationsAdded':0,'limitations':['Selected source/decodedHTML/finite arithmetic,not automatic prose approval or ledger entry.','No browser/native speaker,tournament reproduction or biological data reanalysis.','Baseline libraries already present;flags document requirements. Other translations/publication pending;whole goal active.']}

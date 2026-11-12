@@ -444,6 +444,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/paradox-prisoners-dilemma/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-prisoners-dilemma/index.md",
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "translationHash": "82bbf4121f771122ef7694ebc37635c4c2b103f1fc5c6ef225981e6dfc626699",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full old and revised Arabic metadata,introduction,sixsections,two revisedtables and bothdiagram sources against frozenJapanese. Preserved history,price/environment/arms,repetition,evolution,bat/bee and institutions. Corrected fictionalacquittal,Pareto versus totalutility,automatic groupvictory and moral inference. Matched rareclusterresidentlimit,score versus fixation,and empiricalassociation not causalTFT."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared عوائد/منفعة versus مدة السجن,مهيمنة بصرامة,Nash versus توازن تام في الألعاب الفرعية,الاستقراء العكسي,كفاءة باريتو,نقاط مخصومة versus اللياقة البيولوجية. Distinguished مجموعة from جماعة سكانية,matchingp from beliefq and prevalence. Explicit TFT definition;old واحدة بواحدة not certified as erroneous. Beforeproof polished suspectlabel spacing,p-relativeclause,strategyprofile توليفة and conditionintro,and reread fourchanged sentences. No exclusive Arabic terminologyauthority claim."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read tenidenticalTeX and bothtables,own/opponentargumentorder,T0>R-1>P-5>S-10,5-4q>=1,pureefficientCC/CD/DC versus sumCC-2. Checked threediscountedstrategyvalues,rareclusterbaseline,p>5(1-delta)/(9-5delta),delta0.9 threshold1/9,rows-55/-52.75/-50/-46 versus-50,and isolatedloss5. Each of12numericentries in scoretable has bdi dirltr includingfractions/negativevalues;source and decodedHTML order verified. Auxiliaryfinite arithmetic/traces once,not general/empirical/populationproof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executablearticleprograms. Read two complete six-edge Mermaid sources,simultaneousjointoutcomes not sequentialobservation,and TFTfirstC/play/observe/nextchoice withbothbranches increasingt. Originalsecondroundtiming alreadycorrect. Corrected غير الخصم رأيه/internalstate to observedprioraction,next-roundresponse anderroralternation. Exact topology,HTMLmath,Arabiclang/RTL and12LTRnumbers checked. Separately read actuallinkedCSS with KaTeX directionltr/unicodebidiisolate;receipt batch-031-ar-direction.json. Static only,no browservisual/runtime/tournament/biologicalcode reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched fourexternalreferences(two primaryresearchpapers,two officialteaching sources) plus localizedar internalarticle. Establishedsource readinglimits retained,20fastedbats notwholecolony,association notcausalTFT. OriginalSep24T15date,slug,taxonomy,imagehash preserved;actualNov12lastmod. Selectedproof and1800multilingualpages/3277HTTPSHTML41XML passed;17priortests referenced notrerun atthisstage. Othertranslationbodies0pending withinthisbundle;finalassembly/publication andwholegoal pending."
+        }
+      },
+      "summary": "Full Arabic cooperation/evolution review with conditional evidence and12numeric LTR isolations.",
+      "languageSpecificFindings": "Corrected بريء/براءة inference and mandatory finalgroupwinner. Distinguished payoff/utility,sentence,Nash/subgameperfect,Paretoefficiency,discountedscore and fitness. TFT follows observedpreviousaction not changeofmind. Kept Arabicplayerlabels unambiguous and isolated12scoretablevalues includingminus signs/fractions. ActuallinkedCSS preserves KaTeXLTR statically. Originalpriceexample no currencyamount,no currencyerror claimed.",
+      "validation": "docs/translation-review/batch-031-ar-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "0 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0,population-update simulation,biological data reanalysis and tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -995,6 +1035,56 @@
       "unreviewedTranslations": 12649,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 1,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "ar"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "validation": "docs/translation-review/batch-031-ar-validation.json",
+      "checks": "docs/translation-review/batch-031-ar-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-031-ar-ledger-validation.json",
+      "texEach": 10,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "cooperationBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "deterministicStrategyPairs": 3,
+        "roundsEach": 8,
+        "discountedPrefixPlusExactTailCases": 306,
+        "clusterMatchingCases": 10605,
+        "isolatedTftDifference": "-5",
+        "exampleDelta": "9/10",
+        "exampleMatchingThreshold": "1/9",
+        "numericTableCases": 4,
+        "tftErrorTraceRounds": 8,
+        "scope": "Once per invocation,finite exact auxiliary arithmetic and traces. Not article programs,population-update simulation,ESS/SPE/all-strategy proof,biological data reanalysis or tournament reproduction. Rare-cluster resident baseline and negative score meaning read separately in prose."
+      },
+      "actualPreviewBundles": 32,
+      "multilingualPages": 1800,
+      "httpsHtmlPages": 3277,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 384,
+      "unreviewedTranslations": 12648,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 0,
       "publicationPending": true
     }
   ]
