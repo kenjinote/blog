@@ -403,6 +403,46 @@
         "Actualplot PNG matches priorinspectedimage;no browser/KaTeX/Mermaid/nativeGUI certification.",
         "Primary reading scope separatelydocumented;publication andwholegoalpending."
       ]
+    },
+    "post/information-theory-shannon-entropy/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/information-theory-shannon-entropy/index.md",
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "translationHash": "0b20c91f09e155a8e826f24323521524c1b3626131369b87e6b66117eb42fca1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full old and actual revised Russian metadata, all seven sections, complete graph and both complete Python programs against frozen Japanese; reread final shared-tree wording. Preserved themes/examples while correcting singlehanded history, unqualified per-file/marginal entropy compression bounds, Huffman optimality and finite zero-error reading. Matched known-length constantZ example, expectation, singleton convention, source/channel redundancy and practical system costs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared собственная информация/математическое ожидание, источник/канал, префиксный/однозначно декодируемый, маргинальная/совместная энтропия/скорость энтропии, стационарный/без памяти, кодовые точки/графемные кластеры/байты and полезная нагрузка/object memory. Corrected original B bandwidth wording пропускная способность(Hz) to ширина полосы B Гц, distinct from capacityC bits/s. Retained valid Шеннон/Хаффман and original English sample/plot with Russian gloss. M possible messages, independent additive noise, mean power/in-band noise and linear SNR versus dB explicit."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read14 matching TeX and surrounding conditions: positive probability self-information, zero entropy terms, fixed finite alphabet and binary entropy; expected code length, Huffman strict upper only two positive symbols; nondegenerate iid block bound, stationary entropy rate, knownnconstantZ marginal1/joint1; finite DMC capacity/rate, average-power AWGN and theoretical4Mbps. SingletonH0L1 exception stated; units bits/symbol/use/second distinguished. Finite oracle/numeric checks do not certify universal proof or measured network throughput."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read and executed both actual corrected article programs and main blocks. Passed1001valid/5invalid probabilities,1093abcroundtrips+6Unicode, separate codebooks, input-order-independent ties, invalid/truncated/unknown-symbol/nonstring rejections and1360 independent optimal-tree profiles. OriginalEnglish sample retained:140logicalbits roundtriptrue, no Russian-original localized sample invented. ActualplotPNG SHA matches prior visually inspected image; Aggwarning retained. No arbitrary external-tree, serialization, all-input, universal error-detection or browser/KaTeX/Mermaid certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primary paper references match source/HTML; earlier documented primary reading scope retained without new paper-body reading claims. OriginalRussian chart discussion had no unrelated link. Both raw dates/effectiveSep21, slug,imagehash and localized taxonomy preserved; actualNov12lastmod. Article14hreflang13sidebar and33bundle1853pages/3371HTTPSHTML41XML pass. Existing17tests referenced from earlierJAENrun,notrerun. Arabic body and batch publication remain pending."
+        }
+      },
+      "summary": "Full Russian entropy and coding review correcting bandwidth versus capacity terminology and verifying actual programs.",
+      "languageSpecificFindings": "Corrected B in Hz from пропускная способность to ширина полосы, keeping C capacity distinct. Compared marginal/joint/entropy-rate, stationary/memoryless, prefix/unique decoding, codepoint/grapheme/byte and logical payload/memory. Original English plot/sample retained and explained, no invented localized example or link removal. Explicit known-length correlations, singleton convention, possible messages, average-power independent-noise and linear-SNR assumptions.",
+      "validation": "docs/translation-review/batch-032-ru-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "1 other translation bodies remainunreviewed atthisstage.",
+        "Finiteoracle cases,not all-input proof,serializedfileformat,errorcorrection or practicalnetworkbenchmark.",
+        "Actualplot PNG matches priorinspectedimage;no browser/KaTeX/Mermaid/nativeGUI certification.",
+        "Primary reading scope separatelydocumented;publication andwholegoalpending."
+      ]
     }
   },
   "stages": [
@@ -993,6 +1033,67 @@
       "unreviewedTranslations": 12638,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 2,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "ru"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "validation": "docs/translation-review/batch-032-ru-validation.json",
+      "checks": "docs/translation-review/batch-032-ru-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-032-ru-ledger-validation.json",
+      "texEach": 14,
+      "diagramsEach": 1,
+      "diagramSolidEdges": 4,
+      "diagramDottedEdges": 1,
+      "articleProgramsExecutedEach": 2,
+      "codeValidation": {
+        "language": "ru",
+        "articleProgramsExecuted": 2,
+        "extractedProgramSha256": [
+          "5841dd9a65da699b76137cb8d022e807e022eed2f0f7a859ddbe360c632dce35",
+          "1de958a50b5f565f3c832934c79fbcb57636b1f7a2bc55a2833324d6d2d7826c"
+        ],
+        "pythonVersion": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "binaryEntropyValidPoints": 1001,
+        "binaryEntropyInvalidPointsRejected": 5,
+        "exhaustiveAbcRoundTripsLength0through6": 1093,
+        "unicodeRoundTrips": 6,
+        "localizedOriginalExampleRoundTrips": [],
+        "repeatedCallNoStaleCodebook": true,
+        "equalFrequenciesDeterministicAcrossInputOrder": true,
+        "nonStringBuildInputsRejected": 4,
+        "invalidOrTruncatedPayloadCasesRejected": 6,
+        "unknownSymbolRejected": true,
+        "independentFullBinaryTreeShapeOptimalProfiles": 1360,
+        "optimalProfileScope": "2through5symbols,eachpositiveintegerweight1through4;allfullbinaryleafdepthmultisets,largestweightstoshortestdepths. Finite independent oracle,not all-input proof.",
+        "singleSymbolConvention": "Nonempty0code,L=1,H=0;strictL<H+1notclaimedforthisimplementationcase.",
+        "sampleStdout": "Huffman codes:\n'_': 001\n'a': 1011\n'd': 01110\n'e': 0001\n'f': 01111\n'h': 0100\n'i': 0101\n'm': 10100\n'n': 111\n'o': 100\n'p': 10101\n'r': 1100\n's': 0000\n't': 1101\n'y': 0110\nLogical payload bits: 140\nRound trip: True\n",
+        "plot": {
+          "path": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\entropy-code-batch-032-ru-validation-ru\\binary-entropy.png",
+          "sha256": "da51287a79462f2044a4d6bdee16c0092ed0f907d9ebe07891d9b1148f841ec2",
+          "points": 101,
+          "peakAtHalf": true,
+          "warnings": [
+            "FigureCanvasAgg is non-interactive, and thus cannot be shown"
+          ],
+          "visuallyInspectedByThisCode": false
+        },
+        "scope": "Actual article-extracted standalone programs plus finite oracles. No serialized-file format,errorcorrection,all-input proof or native/browser/ledger certification."
+      },
+      "plotExactMatchTo": "docs/translation-review/batch-032-ja-en-plot-review.json",
+      "actualPreviewBundles": 33,
+      "multilingualPages": 1853,
+      "httpsHtmlPages": 3371,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 395,
+      "unreviewedTranslations": 12637,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 1,
       "publicationPending": true
     }
   ],
