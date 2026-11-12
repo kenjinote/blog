@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T21:02:24.717102+09:00",
+  "baselineCommit": "c66791499a11172f0d32e34ca8453d10c28b56ac",
+  "article": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+  "baselineSite": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-lossless-baseline",
+  "actualPreviewBundles": 34,
+  "versions": {
+    "ar": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ar.md",
+      "sha256": "7ac91caf058934e8102b6818e2d64e17609fa85dee9ac94599e882e4efde0bc7",
+      "utf8BytesNormalizedLf": 11902,
+      "lines": 105,
+      "canonical": "https://kenji.blog/ar/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. مبدأ برج الحمام: لماذا يستحيل وجود خوارزمية ضغط شاملة تصغّر جميع الملفات؟",
+        "## 2. نظرية شانون لترميز المصدر والإنتروبيا: الحد الفيزيائي المطلق",
+        "## 3. ثلاثة أجيال من الترميز الإنتروبي: هوفمان، والترميز الحسابي، وأنظمة ANS",
+        "## 4. الضغط المعجمي والتحويلات: LZ77 وDEFLATE وBWT و«الضغط هو التنبؤ»"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 12,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.de.md",
+      "sha256": "98d6c8cf202e1a14483e43555016a2707615ac10fb8ed2b76374de5b668ad665",
+      "utf8BytesNormalizedLf": 11434,
+      "lines": 107,
+      "canonical": "https://kenji.blog/de/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. Das Schubfachprinzip: Warum es keinen universellen Kompressor geben kann, der jede Datei verkleinert",
+        "## 2. Shannons Quellencodierungstheorem und die Entropie: Die physikalische Grenze der Kompression",
+        "## 3. Drei Generationen der Entropiecodierung: Huffman, Arithmetische Codierung und ANS",
+        "## 4. Wörterbuch-Kompression und Transformationen: LZ77, DEFLATE, BWT und „Kompression als Vorhersage“"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 12,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.en.md",
+      "sha256": "51054551f55138b56d300500fbd925c93f83a6e2c9b4bd23b62ca4ef28c25fc8",
+      "utf8BytesNormalizedLf": 53167,
+      "lines": 388,
+      "canonical": "https://kenji.blog/en/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. The Pigeonhole Principle and the Impossibility of Universal Compression: Why No Algorithm Can Shrink Every File",
+        "## 2. Claude Shannon's 1948 Information Theory and the Noiseless Source Coding Theorem",
+        "## 3. The Three Generations of Statistical Entropy Coding: Huffman, Arithmetic Coding, and ANS",
+        "## 4. Dictionary & Transform-Based Compression: Stripping Sequential Context and Repetition (LZ77, LZ78/LZW, BWT, PPM, and LLMs)",
+        "## 5. The Pareto Frontier of Speed, Memory, and Compression Ratio: Engineering Trade-Offs in Practice",
+        "## 6. Conclusion: The Mathematical Unity of Information, Order, and Intelligence"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 54,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.es.md",
+      "sha256": "b9076a0bb6fff058d25f33db84d7b31148f6d84c3c230cf19734b7c8ab441dba",
+      "utf8BytesNormalizedLf": 9954,
+      "lines": 105,
+      "canonical": "https://kenji.blog/es/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. El principio del palomar: por qué no puede existir un compresor universal que reduzca todos los archivos",
+        "## 2. El teorema de codificación de fuentes de Shannon y la entropía: el límite físico absoluto",
+        "## 3. Tres generaciones de codificación entrópica: Huffman, Codificación Aritmética y ANS",
+        "## 4. Compresión por diccionario y transformaciones: LZ77, DEFLATE, BWT y «Comprimir es predecir»"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 12,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.fr.md",
+      "sha256": "1db28cb814d675b75f486331f2c4cb1f2ef2be17249a113e2a9fab704e2512bd",
+      "utf8BytesNormalizedLf": 10126,
+      "lines": 107,
+      "canonical": "https://kenji.blog/fr/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. Le principe des tiroirs : pourquoi aucun algorithme ne peut compresser tous les fichiers",
+        "## 2. Le théorème du codage de source de Shannon et l’entropie : la limite absolue",
+        "## 3. Trois générations de codage entropique : Huffman, Codage Arithmétique et ANS",
+        "## 4. Compression par dictionnaire et transformations : LZ77, DEFLATE, BWT et « Compresser c’est prédire »"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 12,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.hi.md",
+      "sha256": "f5a95c0ef5c77386fa389e4675a795ea453d9056c8d95699be09a9d974ad2dd7",
+      "utf8BytesNormalizedLf": 17875,
+      "lines": 105,
+      "canonical": "https://kenji.blog/hi/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. कबूतरखाना सिद्धांत (Pigeonhole Principle): क्यों कोई भी एल्गोरिदम हर फ़ाइल को छोटा नहीं कर सकता?",
+        "## 2. शैनन का स्रोत कोडिंग प्रमेय और सूचना एन्ट्रॉपी: संपीड़न की भौतिक सीमा",
+        "## 3. एन्ट्रॉपी कोडिंग की तीन पीढ़ियाँ: हफ़मैन, अंकगणितीय कोडिंग और ANS",
+        "## 4. शब्दकोश संपीड़न और रूपांतरण: LZ77, DEFLATE, BWT और \"संपीड़न ही पूर्वानुमान है\""
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 12,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.id.md",
+      "sha256": "049c82bc279b699c5d50dd372adcbadf1f57306f2ec3fe23992447c8ea8669d5",
+      "utf8BytesNormalizedLf": 9413,
+      "lines": 105,
+      "canonical": "https://kenji.blog/id/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. Prinsip Sarang Merpati: Mengapa Tidak Ada Kompresor Universal yang Bisa Mengecilkan Semua Berkas",
+        "## 2. Teorema Pengodean Sumber Shannon dan Entropi: Batas Fisik Absolut",
+        "## 3. Tiga Generasi Pengodean Entropi: Huffman, Pengodean Aritmetika, dan ANS",
+        "## 4. Kompresi Kamus dan Transformasi: LZ77, DEFLATE, BWT, dan \"Kompresi adalah Prediksi\""
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 12,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "sha256": "7359f6f99009c462768809cfca775c7709afc1e4de52cc5381b55015371cf9af",
+      "utf8BytesNormalizedLf": 69152,
+      "lines": 434,
+      "canonical": "https://kenji.blog/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. 鳩の巣原理が暴く「万能圧縮の不可能性」——なぜすべてのファイルを縮めるアルゴリズムは存在し得ないのか",
+        "## 2. クロード・シャノンの情報理論と情報源符号化定理（1948年）——情報が持つ「究極の限界重量」",
+        "## 3. エントロピー符号化の三世代進化——ハフマン符号・算術符号・非対称記数法（ANS）",
+        "## 4. 辞書式圧縮と変換技法——文脈・繰り返し構造をどう剥がすか（LZ77, LZ78/LZW, BWT, PPM）",
+        "## 5. 速度・メモリ・圧縮率のパレート境界（Pareto Frontier）——実務におけるアルゴリズム選択の物理学",
+        "## 6. まとめ：可逆圧縮が映し出す「情報・秩序・知能」の本質"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 66,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ko.md",
+      "sha256": "86dcf5fe8828fb1bc3deee91375b95e88fe813d82325d8212f2941cca0945c9b",
+      "utf8BytesNormalizedLf": 11907,
+      "lines": 107,
+      "canonical": "https://kenji.blog/ko/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. 비둘기집 원리의 철칙: 왜 '모든 파일을 줄이는' 만능 무손실 압축기는 존재할 수 없는가?",
+        "## 2. 섀넌의 정보원 부호화 정리와 엔트로피: 가역 압축의 절대적 물리 한계",
+        "## 3. 통계적 엔트로피 부호화의 3세대 진화: 허프만, 산술 부호화, 그리고 ANS",
+        "## 4. 사전 압축과 변환: LZ77, DEFLATE, BWT, 그리고 '압축은 곧 예측이다'"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 12,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.pt.md",
+      "sha256": "4e453810b05672d0134b4c140d785a4ae923fe5fbaa710b826b7960e67d0aa21",
+      "utf8BytesNormalizedLf": 9767,
+      "lines": 105,
+      "canonical": "https://kenji.blog/pt/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. O princípio da casa dos pombos: por que não existe um compressor universal capaz de encolher todos os arquivos",
+        "## 2. O teorema da codificação de fonte de Shannon e a entropia: o limite físico absoluto",
+        "## 3. Três gerações de codificação de entropia: Huffman, Codificação Aritmética e ANS",
+        "## 4. Compressão por dicionário e transformações: LZ77, DEFLATE, BWT e «Comprimir é prever»"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 12,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ru.md",
+      "sha256": "2bc80bff5e7e69847af17c95d33aded2175b56d9112a666204a838a750aa3809",
+      "utf8BytesNormalizedLf": 14306,
+      "lines": 105,
+      "canonical": "https://kenji.blog/ru/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. Принцип Дирихле: почему не существует универсального архиватора, способного уменьшить любой файл",
+        "## 2. Теорема Шеннона о кодировании источника и информационная энтропия",
+        "## 3. Три поколения энтропийного кодирования: Хаффман, арифметическое кодирование и ANS",
+        "## 4. Словарное сжатие и преобразования: LZ77, DEFLATE, BWT и «Сжатие как предсказание»"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 12,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.zh-cn.md",
+      "sha256": "14fc51655f6e0cdec032865fba634a581826e0ee8fd83f2066e37e6400238b0d",
+      "utf8BytesNormalizedLf": 13966,
+      "lines": 130,
+      "canonical": "https://kenji.blog/zh-cn/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. 鸽巢原理的铁律：为什么不存在“能把所有文件都变小”的万能无损压缩算法？",
+        "## 2. 香农信源编码定理与信息熵：可逆压缩的绝对物理极限",
+        "## 3. 统计熵编码的三代演进：霍夫曼树、算术编码与非对称数系（ANS）",
+        "## 4. 字典压缩与上下文变换：LZ77、DEFLATE、BWT 与“压缩即预测”"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 18,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.zh-tw.md",
+      "sha256": "1c57b886c8d405ee530419f386e9ad8ff806f9178a0a4b23cfd50b61cb5593d4",
+      "utf8BytesNormalizedLf": 14033,
+      "lines": 130,
+      "canonical": "https://kenji.blog/zh-tw/p/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/",
+      "slug": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "headerDateLines": [
+        "date: \"2026-10-14T12:00:00+09:00\""
+      ],
+      "mathFlag": [
+        "math: true"
+      ],
+      "mermaidFlag": [],
+      "h2Headings": [
+        "## 1. 鴿籠原理的鐵律：為什麼不存在「能把所有檔案都變小」的萬能無損壓縮演算法？",
+        "## 2. 香農信源編碼定理與資訊熵：可逆壓縮的絕對物理極限",
+        "## 3. 統計熵編碼的三代演進：霍夫曼樹、算術編碼與非對稱數系（ANS）",
+        "## 4. 字典壓縮與上下文轉換：LZ77、DEFLATE、BWT 與「壓縮即預測」"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 18,
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    }
+  },
+  "assets": [
+    {
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/eyecatch.jpg",
+      "sha256": "1920481b00c959748374485c921f51c3656a652e387f8d530117207f81d76d51"
+    }
+  ],
+  "manualReadingScope": "JA andEN complete old metadata,six numbered sections,all equations/tables andtwoMermaid diagrams read. No executable program blocks in those two. Other11 metadata/structure inventory only,not bodies read. No revised body yet and no ledger entries added.",
+  "initialFindings": [
+    "JA fixed-compressor counting bound is incorrectly extended to every possible algorithm;EN says fixed in one sentence but overstates completely incompressible and repeats unqualified conclusion. Distinguish quantifiers andKolmogorovdescription costs.",
+    "Unqualified claimed compressionpercentages/speeds/RAM and ranking lack hardware/version/level/corpus commands. No benchmark has been reproduced. MB example actuallyusesMiB;JAASCII8bit claim incorrect.",
+    "Sourcecoding blockbound needs iid/nondegenerate conditions andzero-probability/singleton conventions;JAblockparagraph omitted independence whileEN has it. ENKLprose silentlychanges normalizedQ=2^-ell/Z into unnormalized2^-ell and double-counts slack.",
+    "Arithmetic idealpayload<information+2 excludesmodel,count/framing,precision/header overhead;not whole-file guarantee orexactLtotal=NLL. Conditional predictive model and reversible tokenization/sharedmodels required. Prediction-compression relation is not proof of intelligence/understanding or all commercial modeltrainingobjectives.",
+    "tANS half-open stateinterval[L,2L-1) containsL-1 integerstates,notL;must distinguish[L,2L) fromclosed[L,2L-1]. rANSbijection isnot zero-overhead serializedformat/singlecycleguarantee.",
+    "LZ overlapping matches cannot generically be implemented bymemcpy orsnapshotmemmove. LZSSflags canexpand unmatched data;fixedwindows donot automaticallygiveallsource universality.",
+    "Zstd literalHuffman canuse1or4streams andraw/RLE alternatives;sequenceFSEstates notsame as4-wayHuffmanstreams. Claimsaboutexactequaldecompressionspeed needmeasurement.",
+    "BWTtablebanana$ needsreproduction;payloadpermutation preserveslength butprimaryindex/sentinel costcounted. O(N) inverse assumesappropriatealphabetcounting/rankstorage. JA diagramcontainsChinese紧凑;Transformerwronglyclassifiedasrecurrent.",
+    "Huffmanoptimumconditionedonweights/prefixclass;single-symbolzero-codeconvention andlongcodefallbacks contradictuniversalmin1bit/one-tablelookup claims. Historicalanecdotes/softwareadoption/currentclaims requireprimarysources orqualifiedremoval."
+  ],
+  "primaryReadingToDate": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8878.html",
+      "scope": "Intro0-84 and returned selectedfind excerpts around223-382,440-478,495,635-690 read;not completeRFC. Source explicitly allows1or4literalstreams. Futureexactsectionreading pending."
+    },
+    {
+      "url": "https://arxiv.org/abs/1311.2540",
+      "scope": "Metadata/abstract/submissionhistory returned0-72 read. Paper24pages NOT read;formulas/proofs pending."
+    },
+    {
+      "url": "https://arxiv.org/abs/2309.10668",
+      "scope": "Metadata/abstract/submissionhistory returned0-89 read. Paperbody NOT read;experimentalassumptions/overhead pending."
+    },
+    {
+      "evidence": "docs/translation-review/batch-032-source-notes.md",
+      "scope": "EarlierShannon/Huffmanselectedtext andactualPDFvisualreading retained as separately scoped evidence;notnewfullpaperreading."
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "currentAiTranslations": 396,
+  "unreviewedTranslations": 12636,
+  "humanReviews": 0,
+  "limitations": [
+    "Pre-audit only;no article rewritten/review certified.",
+    "Other11 bodies unreviewed. Baselineinventory isnot translationapproval.",
+    "No benchmarks,LLMexperiments,completecompressor,security/browser/native certification.",
+    "Publication032run43213662116attempt1 pendingmatching build/deploy andlive429article+3tag checks;notrestarted."
+  ]
+}

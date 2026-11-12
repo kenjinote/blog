@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T21:03:29.782368+09:00",
+  "allPassed": true,
+  "countingCases": 136,
+  "countingCaseScope": "n1through16,c1throughn,exactfinitegeometriccounts;not exhaustiveallinjectivecompressors",
+  "fileSpecificSwapEncoderExamples": 510,
+  "quantifierCounterexample": "For each chosen nonempty x use a different fixed injective swap E_x interchanging x and empty,otherwiseidentity. Every chosen x compresses under its own E_x but emptyexpands;decoderdescription/sharedalgorithmcost isnot included. This refutes movingforallx outsideforallE;not a universalcompressor orKolmogorovcomplexityproof.",
+  "tansIntervalIntegerCounts": [
+    {
+      "L": 2,
+      "oldHalfOpenIntegerStates": 1,
+      "correctHalfOpenIntegerStates": 2
+    },
+    {
+      "L": 4,
+      "oldHalfOpenIntegerStates": 3,
+      "correctHalfOpenIntegerStates": 4
+    },
+    {
+      "L": 1024,
+      "oldHalfOpenIntegerStates": 1023,
+      "correctHalfOpenIntegerStates": 1024
+    },
+    {
+      "L": 4096,
+      "oldHalfOpenIntegerStates": 4095,
+      "correctHalfOpenIntegerStates": 4096
+    }
+  ],
+  "bwtRoundTripsWithUniqueSentinel": 1093,
+  "bananaExample": {
+    "lastColumn": "annb$aa",
+    "primaryIndex": 4,
+    "sortedRows": [
+      "$banana",
+      "a$banan",
+      "ana$ban",
+      "anana$b",
+      "banana$",
+      "na$bana",
+      "nana$ba"
+    ]
+  },
+  "ransFrequencyProfiles": 650,
+  "ransStateSymbolRoundTrips": 308096,
+  "ransStateInverseChecks": 166400,
+  "ransScope": "PositivecompositionsofM2,4,8,16 over1through4symbols;statex0through127 andencodedstatey0through255. Formula-bijectionfinitechecks,notrenormalizedbitstream/serializedANScompressor.",
+  "exactRationalArithmeticIntervalExamples": 511,
+  "arithmeticScope": "FixedbinarymodelP0=1/3,P1=2/3,allstringslength0through8,knownlengthandmodel;dyadiccontainedintervalexists. No precision/framing/modelcost orcompleteencoder/decoder implementation.",
+  "englishKlCounterexample": {
+    "P": [
+      0.5,
+      0.5
+    ],
+    "lengths": [
+      2,
+      2
+    ],
+    "Z": 0.5,
+    "normalizedQ": [
+      0.5,
+      0.5
+    ],
+    "L": 2,
+    "H": 1,
+    "normalizedKL": 0,
+    "slackBits": 1,
+    "wrongUnnormalizedQExpression": 1,
+    "wrongDoubleCountedTotal": 3
+  },
+  "byteUnitExample": {
+    "oneMiBBits": 8388608,
+    "oneDecimalMBBits": 8000000
+  },
+  "exampleAsciiLengths": {
+    "std::vector<int>": 16,
+    "content/post/index": 18
+  },
+  "articleExecutablePrograms": 0,
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Independentfiniteauxiliarychecks derivedfromreadJAENoldmath,notexecutionofnonexistentarticleprograms.",
+    "Notfullmathematicalproof,nobenchmarks/LLMexperiments/thirdpartycompressorimplementation.",
+    "Noarticlecorrectionsorreviewledgerrecords added;other11translationbodiesunread."
+  ]
+}
