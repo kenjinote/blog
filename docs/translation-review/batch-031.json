@@ -404,6 +404,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/paradox-prisoners-dilemma/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-prisoners-dilemma/index.md",
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "translationHash": "063bb6d5b654bcd94d641ba9c9a75b0e746c0963ad834dea29a3898445b3b6e5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full old and revised Russian metadata,introduction,sixsections,two revisedtables and bothdiagram sources against frozenJapanese. Preserved history,price/environment/arms,TFT,evolution,bat/bee and institutions. Corrected fictional legalacquittal,Pareto versus totalutility,unconditional groupvictory and moral inference. Matched rarecluster residentlimit and empiricalassociation rather than causalTFT or fixation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared выигрыш/полезность versus срок,строго доминирующая,Nash versus совершенное в подыграх,обратная индукция,эффективность по Парето,дисконтированные баллы versus биологическая приспособленность fitness. Distinguished группа from популяция,matchingp from beliefq and wholepopulationfrequency. Uses explicit TFT;old Око за око is not falsely certified as a terminology error. No exclusive Russian terminology authority claim."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read tenidenticalTeX and both tables,own/opponentargumentorder,T0>R-1>P-5>S-10,strict5-4q>=1,pureefficientCC/CD/DC versus sumCC-2. Checked threediscountedvalues,rareclusterresidentbaseline,p>5(1-delta)/(9-5delta),delta0,9 threshold1/9,fourrows-55/-52,75/-50/-46 versus-50 and isolatedloss5. Decimalcomma matches source-52.75;negative scores not reproduction/survivalrates. Auxiliaryfinite arithmetic/traces once,not populationdynamics or empirical/generalproof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executablearticleprograms. Read complete six-edge Mermaid sources,simultaneous jointoutcomes not sequentialobservedchoice,and TFTfirstC/play/observe/nextchoice withbothbranches incrementingt. Original secondroundonward alreadycorrect and retained. Replaced исправился/internal repentance with observedpreviousaction,next-roundresponse andCD/DCerroralternation. Exact topology,decodedHTMLmath and existinglibrarieschecked,no browservisual/KaTeX/Mermaidruntime/tournament/biologicalcode reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched fourexternalreferences(two primaryresearchpapers,two officialteaching sources) and localizedru internalarticle. Source readinglimits retained,20fastedbats notwholecolony,correlation notcausalTFT. OriginalSep24T15date,slug,taxonomy,imagehash unchanged;actualNov12lastmod. Selectedproof and1800multilingualpages/3277HTTPSHTML41XML passed;17priortests referenced notrerun. Oneothertranslation/publication pending."
+        }
+      },
+      "summary": "Full Russian cooperation/evolution comparison distinguishing discounted scores,fitness and conditional establishment.",
+      "languageSpecificFindings": "Corrected свобода оправдание legalinference,unconditional finalgroupwinners and law-of-jungle interpretation. Matched payoff/utility,sentence,subgameperfect,Pareto,discountedscore and biologicalfitness. TFT acts on observedpreviousaction,not исправился internalstate. Decimalcomma-52,75 and allnumericrows checked. No originalcurrencyamount,no currencyerror claimed;secondroundtiming alreadycorrect.",
+      "validation": "docs/translation-review/batch-031-ru-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "1 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0,population-update simulation,biological data reanalysis and tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -905,6 +945,56 @@
       "unreviewedTranslations": 12650,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 2,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "ru"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "validation": "docs/translation-review/batch-031-ru-validation.json",
+      "checks": "docs/translation-review/batch-031-ru-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-031-ru-ledger-validation.json",
+      "texEach": 10,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "cooperationBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "deterministicStrategyPairs": 3,
+        "roundsEach": 8,
+        "discountedPrefixPlusExactTailCases": 306,
+        "clusterMatchingCases": 10605,
+        "isolatedTftDifference": "-5",
+        "exampleDelta": "9/10",
+        "exampleMatchingThreshold": "1/9",
+        "numericTableCases": 4,
+        "tftErrorTraceRounds": 8,
+        "scope": "Once per invocation,finite exact auxiliary arithmetic and traces. Not article programs,population-update simulation,ESS/SPE/all-strategy proof,biological data reanalysis or tournament reproduction. Rare-cluster resident baseline and negative score meaning read separately in prose."
+      },
+      "actualPreviewBundles": 32,
+      "multilingualPages": 1800,
+      "httpsHtmlPages": 3277,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 383,
+      "unreviewedTranslations": 12649,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 1,
       "publicationPending": true
     }
   ]
