@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T09:12:50.101571+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "pt",
+      "path": "content/post/paradox-prisoners-dilemma/index.pt.md",
+      "sha256": "7d948b5dc8f81e53b9c7dc8bd6804177c960cea87078f5396e333bed33703e06",
+      "sourceSha256": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "texExpressions": 10,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 5,
+      "datePublished": "2026-09-24T15:00:00+09:00",
+      "dateModified": "2026-11-12",
+      "passed": true
+    }
+  ],
+  "sharedAuxiliaryChecks": {
+    "pureProfiles": 4,
+    "paretoEfficientPureProfiles": [
+      "CC",
+      "CD",
+      "DC"
+    ],
+    "uniquePureNash": "DD",
+    "cooperationBeliefValues": 101,
+    "playersEach": 2,
+    "discountValues": 102,
+    "deterministicStrategyPairs": 3,
+    "roundsEach": 8,
+    "discountedPrefixPlusExactTailCases": 306,
+    "clusterMatchingCases": 10605,
+    "isolatedTftDifference": "-5",
+    "exampleDelta": "9/10",
+    "exampleMatchingThreshold": "1/9",
+    "numericTableCases": 4,
+    "tftErrorTraceRounds": 8,
+    "scope": "Once per invocation,finite exact auxiliary arithmetic and traces. Not article programs,population-update simulation,ESS/SPE/all-strategy proof,biological data reanalysis or tournament reproduction. Rare-cluster resident baseline and negative score meaning read separately in prose."
+  },
+  "sourceAuditSha256": "d8e308d273b4ff6eaaae15d96e59cd3d8aa7fae4c4c6f69f739c549dece5327f",
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source/decodedHTML/finite arithmetic,not automatic prose approval or ledger entry.",
+    "No browser/native speaker,tournament reproduction or biological data reanalysis.",
+    "Baseline libraries already present;flags document requirements. Other translations/publication pending;whole goal active."
+  ]
+}

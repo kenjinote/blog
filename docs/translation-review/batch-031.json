@@ -204,6 +204,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/paradox-prisoners-dilemma/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-prisoners-dilemma/index.md",
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "translationHash": "7d948b5dc8f81e53b9c7dc8bd6804177c960cea87078f5396e333bed33703e06",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original and revised Portuguese metadata,introduction,sixsections,two tables and bothdiagram sources against frozen Japanese. Retained history,price/environment/arms applications,repetition,evolution,bat/bee and institutional mechanisms. Corrected fictional legal absolution,Pareto versus totalbenefit,unconditional human/groupwinners and moral inference. Rarecluster resident baseline and correlation versus causalTFT match source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared pagamentos/utilidade versus penas,estrategia estritamente dominante,equilibrio de Nash versus perfeito em subjogos,inducao retroativa,eficiencia/otimo de Pareto,pontuacao descontada versus aptidao biologica. Distinguished grupo from populacao,opponent matching p from belief q and prevalence. Uses explicit Tit for Tat with behavioral definition;old Retaliacao is descriptive rather than a certified terminology error. Removed an unnecessary added alternative name beforefirstproof and reread final sentence."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read ten identical TeX and both tables,own/opponent ordering,T0>R-1>P-5>S-10,5-4q>=1,pure efficientCC/CD/DC versus sumCC-2. Checked three discounted values,rarecluster advantage,p>5(1-delta)/(9-5delta),delta0,9 threshold1/9,table -55/-52,75/-50/-46 versus-50,and isolatedloss5. Decimalcomma deliberately equals source -52.75;TeX unchanged. Auxiliary arithmetic/traces once,not populationupdate simulation or general/empirical proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read complete six-edge diagrams:simultaneous jointoutcomes not sequentialobservation,and TFTfirstC/play/observe/nextchoice withbothbranches increasingt. Compared current/previous/next rounds,erroralternation,and observedaction instead of internal repentance. Exact topology,decodedHTMLmath and libraries checked;baseline alreadyincludedlibraries. No browservisual,KaTeX/Mermaid runtime,tournament or biologicalcode reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Four external references(two primaryresearchpapers,two officialteaching sources) and localizedpt internalarticle match. Primary reading limits unchanged,bat20fastedsubjects nottotalcolony,association notcausalTFT. OriginalSep24T15date,slug,taxonomy,imagehash retained;actualNov12lastmod. Selectedproof and1800multilingualpages/3277HTTPSHTML41XML passed;17priortests referenced notrerun. Sixothertranslations/publication pending."
+        }
+      },
+      "summary": "Full Portuguese cooperation/evolution review with conditional matching and biological fitness distinctions.",
+      "languageSpecificFindings": "Corrected absolvido/libertado inference and mandatory final groupvictory. Clarified pagamentos/utilidade,efficient versus totals,and pontuacao descontada versus aptidao biologica. TFT next-round action follows observed prioraction;not immediate repentance or universal beststrategy. Read decimalcomma-52,75 andalltablevalues. Originalprice analogy has no currencyamount,no currencyerror claimed.",
+      "validation": "docs/translation-review/batch-031-pt-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "6 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0,population-update simulation,biological data reanalysis and tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -455,6 +495,56 @@
       "unreviewedTranslations": 12655,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 7,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "pt"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "validation": "docs/translation-review/batch-031-pt-validation.json",
+      "checks": "docs/translation-review/batch-031-pt-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-031-pt-ledger-validation.json",
+      "texEach": 10,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "cooperationBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "deterministicStrategyPairs": 3,
+        "roundsEach": 8,
+        "discountedPrefixPlusExactTailCases": 306,
+        "clusterMatchingCases": 10605,
+        "isolatedTftDifference": "-5",
+        "exampleDelta": "9/10",
+        "exampleMatchingThreshold": "1/9",
+        "numericTableCases": 4,
+        "tftErrorTraceRounds": 8,
+        "scope": "Once per invocation,finite exact auxiliary arithmetic and traces. Not article programs,population-update simulation,ESS/SPE/all-strategy proof,biological data reanalysis or tournament reproduction. Rare-cluster resident baseline and negative score meaning read separately in prose."
+      },
+      "actualPreviewBundles": 32,
+      "multilingualPages": 1800,
+      "httpsHtmlPages": 3277,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 378,
+      "unreviewedTranslations": 12654,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 6,
       "publicationPending": true
     }
   ]
