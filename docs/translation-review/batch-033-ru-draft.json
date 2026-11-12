@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "draftedAt": "2026-11-12T22:24:22.794755+09:00",
+  "language": "ru",
+  "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ru.md",
+  "originalSha256": "2bc80bff5e7e69847af17c95d33aded2175b56d9112a666204a838a750aa3809",
+  "draftSha256": "11573491cd279c9acd987abd7b935809d3323afcda0579ef3ef9c6bcb09bf6fe",
+  "displayMathPairs": 29,
+  "diagrams": 2,
+  "articlePrograms": 0,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Manual draft after original fullbody reading. Actual revisedbody reread and checks/AIreviewledger/publication pending. FrozenJapanese source matches current033review hashes."
+}
