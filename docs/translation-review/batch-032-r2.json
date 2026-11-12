@@ -1236,8 +1236,9 @@
     "initialArabicVerifierFailurePreserved": "docs/translation-review/batch-032-ar-checks.json",
     "publicationProbePreparation": "docs/translation-review/batch-032-probe-preparation.json",
     "publicationProbeLocalCheck": "docs/translation-review/batch-032-probe-local-structure.json",
-    "publicationPending": true,
-    "scope": "All13 complete old/revised bodies read and compared,12AI entries immutable;initial032ENrecord retained and currentR2evidence correction documented. Fresh33bundle source/decodedHTML and26actualprograms with finite oracles,not fullsite/native/browser/all-input proof/serializedfile/errorcorrector/physicalnetwork certification. Actualplots match previously visually inspected bytes. TW original sample8codepoints24logicalbits andID35codepoints126logicalbits roundtrip. Arabic45LTRexpressions/RTL/linkedCSS statically checked. Local429article+3tag checks pass,445file reads incl13GIF,HTTP0,HTML-only newline normalization. Actual live verification waits matchingCI build/deploy success."
+    "publicationPending": false,
+    "scope": "All13 complete old/revised bodies read and compared,12AI entries immutable;initial032ENrecord retained and currentR2evidence correction documented. Fresh33bundle source/decodedHTML and26actualprograms with finite oracles,not fullsite/native/browser/all-input proof/serializedfile/errorcorrector/physicalnetwork certification. Actualplots match previously visually inspected bytes. TW original sample8codepoints24logicalbits andID35codepoints126logicalbits roundtrip. Arabic45LTRexpressions/RTL/linkedCSS statically checked. Local429article+3tag checks pass,445file reads incl13GIF,HTTP0,HTML-only newline normalization. Matching CI and live verification completed as recorded in publicationCheckpoints.",
+    "publicationVerifiedBy": "docs/translation-review/publication-032.json"
   },
   "publicationDispatch": {
     "version": 1,
@@ -1276,5 +1277,35 @@
         ]
       }
     ]
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-11-12T21:30:15.240968+09:00",
+      "ciRun": 43213662116,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43213662116",
+      "deployedCommit": "f8ca0959a65b09d561783a6e6e9db1ff0d196536",
+      "runAttempt": 1,
+      "ciCompletion": "docs/translation-review/batch-032-ci-completion.json",
+      "proof": "docs/translation-review/publication-032.json",
+      "pages": 429,
+      "passed": 429,
+      "failed": 0,
+      "translations": 396,
+      "japaneseSources": 33,
+      "mathVersions": 234,
+      "texExpressions": 10416,
+      "entropyVersions": 13,
+      "entropyTeX": 182,
+      "entropyDiagramSources": 13,
+      "entropyGraphEdges": 65,
+      "entropyArticlePythonBlocksExact": 26,
+      "additionalHindiTaxonomyPages": 3,
+      "additionalHindiTaxonomyPassed": 3,
+      "httpPageProbeAttempts": 1,
+      "httpPageRetries": 0,
+      "buildCompletedAt": "2026-11-12T12:24:24Z",
+      "deployCompletedAt": "2026-11-12T12:27:06Z",
+      "scope": "Combined001through032 live429articleURLs+3Hindi tags passed firstHTTP after matchinghead/attempt/build/deploysuccess. Newentropy13 exactmath/completePython/diagram/refs/title/date/canonical/language/hreflang/sidebar,localizedTWandIDexample preservation,Arabic45LTRspans/RTL,GermanirrelevantZustandlinkabsent. Prior416articlechecks retained. StaticHTMLalias,notHTTP301/browsernavigation. Local26programs executed earlier with finiteoracles;not remoteexecution/fullcompressor/physicalnetwork/native/browser/fullsite certification. LocalcurrentAI397includesunpublished033English;published396distinct."
+    }
+  ]
 }

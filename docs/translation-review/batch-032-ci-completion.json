@@ -1,0 +1,167 @@
+{
+  "checkedAt": "2026-11-12T21:27:36.2170174+09:00",
+  "ciRun": 43213662116,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43213662116",
+  "deployedCommit": "f8ca0959a65b09d561783a6e6e9db1ff0d196536",
+  "runAttempt": 1,
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-12T11:58:01Z",
+  "updated_at": "2026-11-12T12:27:06Z",
+  "sourceApi": "https://api.github.com/repos/kenjinote/blog/actions/runs/43213662116",
+  "jobs": [
+    {
+      "id": 131167343172,
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-12T11:58:05Z",
+      "completed_at": "2026-11-12T12:24:24Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T11:58:06Z",
+          "completed_at": "2026-11-12T11:58:08Z"
+        },
+        {
+          "name": "Install Hugo CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T11:58:08Z",
+          "completed_at": "2026-11-12T11:58:10Z"
+        },
+        {
+          "name": "Install Dart Sass",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T11:58:10Z",
+          "completed_at": "2026-11-12T11:58:14Z"
+        },
+        {
+          "name": "Checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T11:58:14Z",
+          "completed_at": "2026-11-12T11:59:26Z"
+        },
+        {
+          "name": "Setup Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T11:59:26Z",
+          "completed_at": "2026-11-12T11:59:26Z"
+        },
+        {
+          "name": "Install Node.js dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T11:59:26Z",
+          "completed_at": "2026-11-12T11:59:27Z"
+        },
+        {
+          "name": "Validate translation review records and generate queue",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T11:59:27Z",
+          "completed_at": "2026-11-12T11:59:29Z"
+        },
+        {
+          "name": "Save translation review queue",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T11:59:29Z",
+          "completed_at": "2026-11-12T11:59:31Z"
+        },
+        {
+          "name": "Build with Hugo",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T11:59:31Z",
+          "completed_at": "2026-11-12T12:18:45Z"
+        },
+        {
+          "name": "Verify multilingual pages",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T12:18:45Z",
+          "completed_at": "2026-11-12T12:20:11Z"
+        },
+        {
+          "name": "Build search index",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T12:20:11Z",
+          "completed_at": "2026-11-12T12:21:52Z"
+        },
+        {
+          "name": "Verify search index",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T12:21:52Z",
+          "completed_at": "2026-11-12T12:21:55Z"
+        },
+        {
+          "name": "Verify HTTPS publication URLs",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T12:21:55Z",
+          "completed_at": "2026-11-12T12:22:35Z"
+        },
+        {
+          "name": "Upload artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T12:22:35Z",
+          "completed_at": "2026-11-12T12:24:21Z"
+        },
+        {
+          "name": "Post Checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T12:24:21Z",
+          "completed_at": "2026-11-12T12:24:21Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T12:24:21Z",
+          "completed_at": "2026-11-12T12:24:21Z"
+        }
+      ]
+    },
+    {
+      "id": 131180652651,
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-12T12:24:29Z",
+      "completed_at": "2026-11-12T12:27:06Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T12:24:30Z",
+          "completed_at": "2026-11-12T12:24:31Z"
+        },
+        {
+          "name": "Deploy to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T12:24:31Z",
+          "completed_at": "2026-11-12T12:27:04Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-12T12:27:04Z",
+          "completed_at": "2026-11-12T12:27:04Z"
+        }
+      ]
+    }
+  ]
+}
