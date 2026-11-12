@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "readAt": "2026-11-12T21:28:57.940951+09:00",
+  "reviewer": "Codex (AI)",
+  "language": "zh-cn",
+  "originalPath": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.zh-cn.md",
+  "originalSha256": "14fc51655f6e0cdec032865fba634a581826e0ee8fd83f2066e37e6400238b0d",
+  "fullOriginalBodyRead": true,
+  "lines": 130,
+  "revisedBodyExists": false,
+  "revisedBodyRead": false,
+  "reviewedTranslationsAdded": 0,
+  "findings": [
+    "Read complete metadata,all4numberedsections,9displayformulas,bothcompleteMermaid diagrams andperformance table. No articleexecutableprograms. Fullbody restoration to6source themes pending.",
+    "OriginalKLdisplay uses normalizedQ andslack consistently;do notcopyEnglish unnormalizedQ finding toChinese. UpperH+1bound needsoptimalcode not arbitraryL,positive-support/singleton conventions.",
+    "Countingexampleusesc100and2^-99 approximately1.57e-30;numericexamplevalid underfixedencoder/uniformNbitconditions,whichneedexplicitquantifiers. Not allalgorithms/absoluteincompressibility.",
+    "Arithmetic displayequatesactualtotalbits withchosenK andapproximateNH forindividualfile;idealmodel/count/precision/framing costs andexpectations mustbe distinguished. ANSonecycle/exactsameentropy/universalzstdsuperiority claims needqualification.",
+    "TheChineseLZdiagram calls(distance,length) a三元组 althoughitcontains2components;correcttopair. BWTinverse/table,rANSexactinverse,fullKraft/KLproof,LLMcost/modelsharing andengineeringconditions omitted relative toJapanesethemes.",
+    "Simplifiedbody contains僅 and當 variants;polishscriptconsistency without treating propernames霍夫曼/香农aserrors. No originalexternalreferenceURLs inbody;newprimaryreferencesneedfullprosecomparison."
+  ],
+  "scope": "Manualoldbodyreading record only. No revisedChinese body,sourcehashapproval orledgerentry. Other10languageoldbodies stillunread inbatch033;Englishregistered separately. Publication032beingprobed separately."
+}
