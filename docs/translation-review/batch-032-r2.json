@@ -1209,5 +1209,34 @@
       "sourceAndTranslationUnchanged": true,
       "validationRerun": false
     }
-  ]
+  ],
+  "finalAssembly": {
+    "checkedAt": "2026-11-12T20:57:42.693532+09:00",
+    "validation": "docs/translation-review/batch-032-final-validation.json",
+    "checks": "docs/translation-review/batch-032-final-checks.json",
+    "allOriginalAndTranslationBodiesRead": true,
+    "languages": 13,
+    "texExpressions": 182,
+    "diagrams": 13,
+    "graphEdges": 65,
+    "referencesEach": 2,
+    "referenceKindsEach": {
+      "researchPrimary": 2
+    },
+    "articlePrograms": 26,
+    "unitTestsPassed": 17,
+    "actualPreviewBundles": 33,
+    "multilingualPages": 1853,
+    "httpsHtmlPages": 3371,
+    "httpsXmlFiles": 41,
+    "reviewedTranslationsTotal": 396,
+    "unreviewedTranslations": 12636,
+    "humanReviews": 0,
+    "arabicStaticDirection": "docs/translation-review/batch-032-ar-r2-validation.json",
+    "initialArabicVerifierFailurePreserved": "docs/translation-review/batch-032-ar-checks.json",
+    "publicationProbePreparation": "docs/translation-review/batch-032-probe-preparation.json",
+    "publicationProbeLocalCheck": "docs/translation-review/batch-032-probe-local-structure.json",
+    "publicationPending": true,
+    "scope": "All13 complete old/revised bodies read and compared,12AI entries immutable;initial032ENrecord retained and currentR2evidence correction documented. Fresh33bundle source/decodedHTML and26actualprograms with finite oracles,not fullsite/native/browser/all-input proof/serializedfile/errorcorrector/physicalnetwork certification. Actualplots match previously visually inspected bytes. TW original sample8codepoints24logicalbits andID35codepoints126logicalbits roundtrip. Arabic45LTRexpressions/RTL/linkedCSS statically checked. Local429article+3tag checks pass,445file reads incl13GIF,HTTP0,HTML-only newline normalization. Actual live verification waits matchingCI build/deploy success."
+  }
 }
