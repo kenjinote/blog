@@ -60,7 +60,8 @@ def auxiliary():
     for U,C,vio,vdec in [(10**6,250000,10**8,2*10**8),(10**6,250000,10**9,10**7),(10**6,10**6,10**8,10**8)]:
         raw=U/vio;compressed=C/vio+U/vdec;io.append({'inputBytes':U,'compressedBytes':C,'ioBytesPerSecond':vio,'decodedBytesPerSecond':vdec,'rawSeconds':raw,'serialCompressedSeconds':compressed})
     assert io[0]['serialCompressedSeconds']<io[0]['rawSeconds'] and all(v['serialCompressedSeconds']>v['rawSeconds'] for v in io[1:])
-    return {'lzForwardCopyExamples':4,'nllBaseAndAveragingExample':True,'binaryEntropyAt099':entropy,'ioModelExamples':io,'scope':'Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor.'}
+    large_bound=2.0**(-99);assert math.isclose(large_bound,1.58e-30,rel_tol=.002)
+    return {'lzForwardCopyExamples':4,'nllBaseAndAveragingExample':True,'binaryEntropyAt099':entropy,'ioModelExamples':io,'largeCountingExample':{'c':100,'requiresNAtLeast':100,'strictFractionUpperBound':large_bound,'scope':'Fixedinjectiveencoder,uniformnbitinput;notallcompressorssimultaneously.'},'scope':'Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor.'}
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('site',type=Path);ap.add_argument('--languages',nargs='+',required=True);ap.add_argument('--output',type=Path,required=True);ap.add_argument('--expected-modified',action='append',default=[])
@@ -98,6 +99,9 @@ def main():
         assert json.loads(re.search(r'^title: (.*)$',header,re.M)[1]) in unescape(page) and 'katex.min.js' in page and 'mermaid' in page
         for asset in audit['assets']:assert hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest()==asset['sha256']
         versions.append({'language':lang,'path':v['path'],'sha256':shared.digest(p),'sourceSha256':shared.digest(source),'texExpressions':29,'diagrams':2,'diagramEdges':[8,6],'articleExecutablePrograms':0,'references':11,'literalDollarAndAngleBracketCodePreserved':True,'bwtTableAll7RowsExact':True,'datePublished':v['datePublished'],'dateModified':dates[lang],'passed':True})
+        if lang=='zh-cn':
+            assert all(value in ''.join(article.all) for value in ['c=100','n≥100','2^(-99)','1.58×10^(-30)'])
+            versions[-1]['originalC100CountingExamplePreservedWithConditions']=True
     doc={'version':1,'checkedAt':datetime.now(timezone(timedelta(hours=9))).isoformat(),'allPassed':True,'versions':versions,'priorIndependentAuxiliaryChecks':'docs/translation-review/batch-033-original-math-probe.json','auxiliaryChecks':auxiliary(),'reviewedTranslationsAdded':0,'limitations':['Selected source/decodedHTML checks only;not prose approval or review ledger certification.','No executable articleprograms;independent finite auxiliary experiments are separately scoped.','Not browser/KaTeX/Mermaid execution or native-language/full-site/benchmarks/completecompressor certification.','Draft source can still change until reviewed translations registered;source hash recorded per actualcheck.']}
     args.output.write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps({'passed':True,'versions':len(versions),'texEach':29,'graphEdges':[8,6],'referencesEach':11,'articlePrograms':0}))
 
