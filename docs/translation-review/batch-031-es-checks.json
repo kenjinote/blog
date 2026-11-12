@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T09:07:19.622528+09:00",
+  "allPassed": true,
+  "actualPreviewBundles": 32,
+  "sourceSnapshotsExact": 416,
+  "existingTestsPreviouslyPassedNotRerun": 17,
+  "results": [
+    {
+      "command": [
+        "docs/translation-review/verify_batch_031.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-cooperation-es",
+        "--languages",
+        "es",
+        "--output",
+        "docs/translation-review/batch-031-es-validation.json"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"passed\": true, \"versions\": 1, \"texEach\": 10, \"edgesEach\": [6, 6], \"auxiliary\": {\"pureProfiles\": 4, \"paretoEfficientPureProfiles\": [\"CC\", \"CD\", \"DC\"], \"uniquePureNash\": \"DD\", \"cooperationBeliefValues\": 101, \"playersEach\": 2, \"discountValues\": 102, \"deterministicStrategyPairs\": 3, \"roundsEach\": 8, \"discountedPrefixPlusExactTailCases\": 306, \"clusterMatchingCases\": 10605, \"isolatedTftDifference\": \"-5\", \"exampleDelta\": \"9/10\", \"exampleMatchingThreshold\": \"1/9\", \"numericTableCases\": 4, \"tftErrorTraceRounds\": 8, \"scope\": \"Once per invocation,finite exact auxiliary arithmetic and traces. Not article programs,population-update simulation,ESS/SPE/all-strategy proof,biological data reanalysis or tournament reproduction. Rare-cluster resident baseline and negative score meaning read separately in prose.\"}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-cooperation-es"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1800 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-cooperation-es"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 3277, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "32-bundle preview,not full site;existing warnings retained. No browser or publication certification."
+}

@@ -124,6 +124,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/paradox-prisoners-dilemma/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-prisoners-dilemma/index.md",
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "translationHash": "e436cead2edca3b04ebedc5cffc99d2f0c8cfa5c7d395f7c026fac5277b48bf9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full original and revised Spanish metadata,introduction,six sections,two revised tables and both diagrams against frozen Japanese. Retained history,price/environment/arms-race applications,TFT,evolution,bat/bee and cooperation mechanisms while correcting Pareto versus summed utility,fictional acquittal claims,universal incentives and automatic invasion/fixation. Rare-cluster limit and biological association agree with source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared pagos/utilidad versus condenas,estrategia estrictamente dominante,equilibrio de Nash versus equilibrio perfecto en subjuegos,induccion hacia atras,eficiencia/optimo de Pareto,puntuacion descontada versus aptitud biologica fitness. Tit for Tat/toma y daca names are retained as variants,not treated as an old mistranslation. Distinguished small grupo from poblacion,emparejamiento p from belief q and population frequency. No currency amount or error in original price section."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read ten identical TeX expressions and both tables:own/opponent order,T0>R-1>P-5>S-10,5-4q>=1,pureefficientCC/CD/DC and sumCC-2 versusothers-10. Checked discounted TFTpair scores,rarecluster resident baseline,p>5(1-delta)/(9-5delta),delta0,9 threshold1/9 and rows -55/-52,75/-50/-46 relative-50. Spanish comma -52,75 equals source-52.75;TeX preserves mathematical notation. IsolatedTFT loss5 and auxiliary checks are not population simulation or general proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read both complete Mermaid sources with six edges each,simultaneous combinations not sequential observation,and TFT firstC/play/observe/nextchoice loop advancing both branches. Previous/current/next rounds and error-inducedCD/DC alternation match. Exact topology/source/decodedHTML math and library inclusion checked;baseline libraries already present. No browser visual,KaTeX/Mermaid runtime,tournament or biological code reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Four external references(two research papers,two official teaching sources) plus localized es internal prisonerarticle match. Primary reading limits retained,including20fasted bats versus totalcolony and association not immediateTFT causation. Original Sep24T15 date,slug,imagehash,taxonomy unchanged;actualNov12 lastmod. Selected proof and1800 multilingual pages/3277 HTTPS HTML/41XML passed;17previous tests referenced not rerun. Eightother translationbodies and publication pending."
+        }
+      },
+      "summary": "Complete Spanish cooperation/evolution comparison with conditional score model and scoped animal evidence.",
+      "languageSpecificFindings": "Corrected fiction presented as police fact and libre absuelto inference. Separated Pareto efficiency from totalpayoffmaximum,and performance from ultimate groupvictory. Retained TFT naming variants while grounding next-round response in observed action rather than changed attitude. Spanish decimalcomma in scoretable is deliberate and manually checked. Fitness is aptitud biologica,not negative discounted score.",
+      "validation": "docs/translation-review/batch-031-es-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "8 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0,population-update simulation,biological data reanalysis and tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -275,6 +315,56 @@
       "unreviewedTranslations": 12657,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 9,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "es"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "validation": "docs/translation-review/batch-031-es-validation.json",
+      "checks": "docs/translation-review/batch-031-es-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-031-es-ledger-validation.json",
+      "texEach": 10,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "cooperationBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "deterministicStrategyPairs": 3,
+        "roundsEach": 8,
+        "discountedPrefixPlusExactTailCases": 306,
+        "clusterMatchingCases": 10605,
+        "isolatedTftDifference": "-5",
+        "exampleDelta": "9/10",
+        "exampleMatchingThreshold": "1/9",
+        "numericTableCases": 4,
+        "tftErrorTraceRounds": 8,
+        "scope": "Once per invocation,finite exact auxiliary arithmetic and traces. Not article programs,population-update simulation,ESS/SPE/all-strategy proof,biological data reanalysis or tournament reproduction. Rare-cluster resident baseline and negative score meaning read separately in prose."
+      },
+      "actualPreviewBundles": 32,
+      "multilingualPages": 1800,
+      "httpsHtmlPages": 3277,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 376,
+      "unreviewedTranslations": 12656,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 8,
       "publicationPending": true
     }
   ]
