@@ -1,7 +1,7 @@
 ---
-title: "Théorie de l'information et entropie de Shannon : Explorer les limites de la compression de données et des communications"
+title: "Théorie de l'information et entropie de Shannon : limites de la compression et de la communication"
 date: "2026-09-24T19:44:38+09:00"
-description: "De la base de la théorie de l'information proposée par Claude Shannon jusqu'au concept d'entropie, les limites de la compression de données et les applications aux communications modernes sont expliquées en détail."
+description: "Information propre, entropie et taux d'entropie ; limites du codage de source et de canal, avec hypothèses explicites et exemples Python de codage et décodage de Huffman."
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
@@ -11,191 +11,268 @@ tags:
   - entropie
   - compression-de-donnees
   - mathematiques
+math: true
+mermaid: true
+lastmod: "2026-11-12"
 ---
 
-## 1. Introduction : Qu'est-ce que l'information ?
+## 1. Distinguer le sens et l'incertitude d'un choix
 
-Bien que nous utilisions le mot "information" tous les jours, essayer de définir l'"information" de manière scientifique s'avère extrêmement difficile. Les actualités, les messages d'amis, les séquences de bases de l'ADN ou même les ondes radio provenant de l'espace, tout cela contient de l'information. Cependant, pour les traiter dans un cadre mathématique commun, il est nécessaire de disposer d'un indicateur objectif et quantitatif.
+Les actualités, les messages d'amis, les séquences d'ADN et les signaux radio venus de l'espace véhiculent de l'information. Mais l'importance du contenu et le nombre de bits nécessaires pour le transmettre sont deux grandeurs différentes.
 
-Celui qui a relevé ce défi colossal et posé les bases de la société numérique moderne est le mathématicien et ingénieur Claude Shannon. Il n'est pas exagéré de dire que son article publié en 1948, "Une théorie mathématique de la communication" (A Mathematical Theory of Communication), a fondé à lui seul un domaine d'étude entièrement nouveau : la **théorie de l'information** (Information Theory).
+Dans son article de 1948, Claude Shannon a séparé l'évaluation du sens du problème technique de la communication, puis étudié les limites de la compression et de la transmission à l'aide des probabilités. L'introduction, disponible dans cette [réimpression](https://wucj.lab.westlake.edu.cn/Others/shannon1948.pdf), reconnaît aussi les travaux antérieurs de Nyquist et Hartley. Nous distinguerons information propre, entropie, compression sans perte et communication en présence de bruit.
 
-Dans cet article, nous allons examiner en profondeur comment Shannon a défini mathématiquement l'"information", et la signification de son concept central, l' **entropie de Shannon**, dans la compression de données et les technologies de communication.
+## 2. Un modèle de communication
 
-## 2. Modèle général de communication
-
-Shannon a délibérément mis de côté le sens de l'information (la sémantique) pour se concentrer sur la "transmission" elle-même. Le modèle général d'un système de communication qu'il a proposé est représenté dans le diagramme Mermaid suivant.
+Une source d'information produit un message, un émetteur le transforme en signal, le signal traverse un canal, puis un récepteur reconstitue le message pour son destinataire.
 
 ```mermaid
 graph LR
-    A["Source d'information<br>Information Source"] --> B["Émetteur<br>Transmitter"]
-    B -->|"Signal émis"| C(("Canal<br>Channel"))
-    C -->|"Signal reçu"| D["Récepteur<br>Receiver"]
-    D --> E["Destination<br>Destination"]
-    N["Source de bruit<br>Noise Source"] -.-> C
+    A["Source d'information"] --> B["Émetteur"]
+    B -->|"Signal émis"| C(("Canal"))
+    C -->|"Signal reçu"| D["Récepteur"]
+    D --> E["Destinataire"]
+    N["Source de bruit"] -.-> C
 ```
 
-Dans ce modèle, le plus grand défi de la communication se résume à : **"Comment transmettre un message de manière précise et efficace à travers un canal en présence de bruit"**.
+Le codage de source exploite la structure statistique pour réduire la redondance. Le codage de canal ajoute au contraire une redondance adaptée pour combattre le bruit. Ce sont deux formes de codage, dont les objectifs diffèrent.
 
-## 3. Définition mathématique de la quantité d'information
+## 3. Information propre
 
-La question la plus fondamentale de la théorie de l'information est : "Quelle quantité d'information avons-nous obtenue en apprenant qu'un événement s'est produit ?"
-
-Shannon a considéré la quantité d'information comme le "degré de surprise".
-- Lorsqu'un **événement fréquent (de forte probabilité)** se produit, la surprise est faible et la quantité d'information obtenue est petite.
-- Lorsqu'un **événement rare (de faible probabilité)** se produit, la surprise est grande et la quantité d'information obtenue est importante.
-
-Si la probabilité d'occurrence d'un événement $ x $ est $ P(x) $, la **quantité d'information propre** (Self-Information) $ I(x) $ contenue dans cet événement est définie comme suit :
+Pour un événement x de probabilité strictement positive P(x), on définit son information propre I(x) comme suit. Le logarithme en base 2 donne une mesure en bits.
 
 $$
-I(x) = - \log_2 P(x) = \log_2 \frac{1}{P(x)}
+I(x)=-\log_2P(x)=\log_2\frac1{P(x)},\qquad 0<P(x)\le1
 $$
 
-Lorsque la base du logarithme est $ 2 $, l'unité de la quantité d'information est le **bit** (bit). Par exemple, la quantité d'information de l'événement où une pièce, dont les côtés sont équiprobables ($ P = 0.5 $), tombe sur face est :
+Les événements moins probables reçoivent des valeurs plus élevées. Cette grandeur ne mesure ni la surprise psychologique ni la valeur du contenu. La définition n'attribue pas une information propre finie à un événement de probabilité nulle : le modèle probabiliste et le domaine doivent être précisés.
+
+Pour le résultat face d'une pièce équilibrée :
 
 $$
-I(\text{face}) = - \log_2(0.5) = 1 \text{ bit}
+I=-\log_2(1/2)=1\ \mathrm{bit}
 $$
 
-Cela correspond également à la compréhension intuitive d'"1 bit d'information".
+## 4. L'entropie est l'espérance de l'information propre
 
-## 4. L'entropie de Shannon
-
-Bien que la quantité d'information propre concerne des événements individuels, comment pouvons-nous savoir combien d'information est générée en moyenne par l'ensemble de la source d'information ?
-
-C'est ici qu'intervient l' **entropie** (Entropy). Lorsqu'une source d'information $ X $ génère $ n $ symboles différents $ x_1, x_2, \dots, x_n $ avec les probabilités $ P(x_1), P(x_2), \dots, P(x_n) $, l'entropie $ H(X) $ de la source d'information $ X $ est définie comme l'espérance de la quantité d'information propre.
+Soit X une variable prenant ses valeurs dans un alphabet fini de m symboles, avec p_i=P(X=x_i). Les probabilités sont positives ou nulles et leur somme vaut un. L'entropie de Shannon est l'espérance de l'information propre.
 
 $$
-H(X) = - \sum_{i=1}^{n} P(x_i) \log_2 P(x_i)
+H(X)=\mathbb E[I(X)]=-\sum_{i=1}^{m}p_i\log_2p_i,\qquad \sum_{i=1}^{m}p_i=1
 $$
 
-(Toutefois, si $ P(x_i) = 0 $, on considère que $ 0 \log_2 0 = 0 $)
+Pour les termes de probabilité nulle, on utilise la convention par passage à la limite 0log₂0=0. L'unité est le bit par symbole. Pour un alphabet fixé de m symboles :
 
-### Signification intuitive de l'entropie
-L'entropie $ H(X) $ représente le degré d' **incertitude** de la source d'information.
-- Lorsque le symbole qui va apparaître est totalement imprévisible (toutes les probabilités sont égales), l'entropie est maximale.
-- Lorsque le même symbole apparaît toujours (une probabilité est de $ 1 $ et les autres de $ 0 $), il n'y a plus d'incertitude et l'entropie est de $ 0 $.
+$$
+0\le H(X)\le\log_2m
+$$
 
-Avec le code Python suivant, calculons l'évolution de l'entropie en fonction de la variation de la probabilité $ p $ d'obtenir face avec une pièce.
+Le maximum est atteint pour la loi uniforme ; le minimum, lorsqu'un symbole a une probabilité égale à un. Cette incertitude maximale s'évalue dans le modèle probabiliste et compte tenu des informations disponibles. Elle n'établit pas une imprévisibilité cryptographique et ne garantit pas qu'un tiers ne possède aucune information supplémentaire.
+
+Si la probabilité d'obtenir face vaut p, l'entropie binaire est donnée par la fonction suivante. Aux extrémités, on applique la même convention pour les termes de probabilité nulle.
+
+$$
+h_2(p)=-p\log_2p-(1-p)\log_2(1-p),\qquad 0\le p\le1
+$$
+
+Cet exemple Python accepte une probabilité scalaire finie et rejette les valeurs hors du domaine. Le tracé nécessite Matplotlib.
 
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
+import math
+
 
 def binary_entropy(p):
+    if not math.isfinite(p) or not 0 <= p <= 1:
+        raise ValueError("p must be finite and between 0 and 1")
     if p == 0 or p == 1:
-        return 0
-    return -p * np.log2(p) - (1 - p) * np.log2(1 - p)
+        return 0.0
+    return -p * math.log2(p) - (1 - p) * math.log2(1 - p)
 
-probabilities = np.linspace(0, 1, 100)
-entropies = [binary_entropy(p) for p in probabilities]
 
-plt.plot(probabilities, entropies)
-plt.title("Fonction d'entropie binaire")
-plt.xlabel("Probabilité d'obtenir face (p)")
-plt.ylabel("Entropie H(X) en bits")
-plt.grid(True)
-plt.show()
+if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+
+    probabilities = [i / 100 for i in range(101)]
+    entropies = [binary_entropy(p) for p in probabilities]
+    plt.plot(probabilities, entropies)
+    plt.title("Binary entropy")
+    plt.xlabel("Probability of heads (p)")
+    plt.ylabel("Entropy (bits per symbol)")
+    plt.grid(True)
+    plt.show()
 ```
 
-Le tracé de ce graphique montre que l'entropie atteint sa valeur maximale de $ 1 $ lorsque $ p = 0.5 $, ce qui indique un état complètement imprévisible.
+La valeur est nulle pour p=0 et p=1 et atteint son maximum d'un bit pour p=0.5. La courbe est symétrique. Les libellés anglais désignent l'entropie binaire, la probabilité d'obtenir face et l'entropie en bits par symbole.
 
-## 5. Théorème du codage de source : Les limites de la compression de données
+## 5. Codage de source : quelle moyenne, sous quelles hypothèses ?
 
-L'entropie n'est pas qu'un concept abstrait. Shannon a prouvé que cette entropie définit la **limite absolue de la compression de données**. C'est le **théorème du codage de source** (le premier théorème de Shannon).
-
-L'énoncé du théorème est très simple.
-**"Quel que soit l'algorithme de compression sans perte utilisé, la longueur moyenne du code des données générées par une source d'information ne peut être inférieure à l'entropie $ H(X) $ de cette source."**
+Attribuons des mots de code binaires aux symboles d'un alphabet fini de manière que leur concaténation puisse être décodée de façon unique. Si le mot associé au symbole i a une longueur ℓ_i, la longueur moyenne L satisfait la borne ci-dessous. Un code préfixe est un code à décodage unique dans lequel aucun mot de code n'est le début d'un autre.
 
 $$
-L \ge H(X)
+L=\sum_i p_i\ell_i,\qquad L\ge H(X)
 $$
-(où $ L $ est la longueur moyenne du code)
 
-En d'autres termes, l'entropie indique la "taille intrinsèque de l'information elle-même", ce qui signifie que même en développant d'excellents algorithmes comme ZIP ou gzip, il est mathématiquement impossible de compresser au-delà de cette limite.
+Il s'agit d'une espérance sous une loi spécifiée. Cela ne signifie pas que chaque fichier individuel doit avoir au moins cette longueur. On ne peut pas non plus déterminer la limite de compression d'une séquence corrélée à partir de la seule loi marginale d'un symbole.
 
-### Codage de Huffman (Huffman Coding)
-En tant que méthode concrète pour s'approcher de la limite de l'entropie, David Huffman, en développant une idée de Fano, collaborateur de Shannon, a inventé le **codage de Huffman**.
+### Codage de Huffman et conditions d'optimalité
 
-En attribuant des séquences de bits courtes aux symboles ayant une probabilité d'apparition élevée, et des séquences longues aux symboles ayant une faible probabilité, la longueur moyenne du code global est minimisée. Voici un exemple simple de construction d'un code de Huffman en Python.
+L'[article de David Huffman de 1952](https://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf) construit des codes préfixes minimisant la longueur moyenne pour des probabilités données. Dans le cas binaire, on regroupe à chaque étape les deux plus petits poids et on réintroduit leur somme dans l'ensemble. Des égalités de poids peuvent conduire à plusieurs codes optimaux.
+
+Avec au moins deux symboles de probabilité strictement positive, la longueur moyenne L_H du code préfixe binaire optimal se situe dans cet intervalle :
+
+$$
+H(X)\le L_{\mathrm H}<H(X)+1
+$$
+
+Cette optimalité concerne le codage symbole par symbole avec des poids connus, et non l'ensemble des méthodes de compression. Pour une source non dégénérée de symboles indépendants et de même loi, regrouper n symboles et choisir un code préfixe adapté donne l'encadrement par symbole suivant. L_n est le nombre moyen de bits pour le bloc entier de n symboles.
+
+$$
+H(X)\le\frac{L_n}{n}<H(X)+\frac1n
+$$
+
+En présence de dépendances, on utilise l'entropie conjointe du bloc. Pour une source stationnaire à alphabet fini, le taux d'entropie est défini par cette limite :
+
+$$
+\overline H=\lim_{n\to\infty}\frac{H(X_1,\ldots,X_n)}{n}
+$$
+
+Par exemple, choisissons au départ un bit équiprobable Z, puis répétons sa valeur sur tout un bloc de longueur connue n. Dans ce modèle :
+
+$$
+P(Z=0)=P(Z=1)=\frac12,\qquad X_i=Z,\qquad H(X_i)=1,\qquad H(X_1,\ldots,X_n)=1
+$$
+
+Chaque position a une entropie marginale d'un bit, mais un décodeur connaissant n et ce modèle peut représenter tout le bloc par le seul bit Z. Cela distingue l'entropie d'un symbole de l'information contenue dans une séquence. ZIP et gzip font aussi intervenir en-têtes, modèles, historique et frontières d'octets ; leurs limites ne se déduisent pas des seules fréquences de caractères isolés.
+
+### Un exemple Python traitant les entrées vides et à un seul symbole
+
+L'exemple compte les caractères Python et utilise un arbre partagé pour coder et décoder. Les fréquences égales sont traitées indépendamment de l'ordre d'entrée, et chaque appel crée un nouveau dictionnaire de codes. Une chaîne vide utilise un arbre vide et une charge utile vide.
 
 ```python
 import heapq
 from collections import Counter
+from itertools import count
+
 
 class Node:
-    def __init__(self, char, freq):
+    def __init__(self, char=None, left=None, right=None):
         self.char = char
-        self.freq = freq
-        self.left = None
-        self.right = None
+        self.left = left
+        self.right = right
 
-    def __lt__(self, other):
-        return self.freq < other.freq
 
 def build_huffman_tree(text):
-    frequency = Counter(text)
-    heap = [Node(char, freq) for char, freq in frequency.items()]
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+    order = count()
+    heap = [(freq, next(order), Node(char))
+            for char, freq in sorted(Counter(text).items())]
     heapq.heapify(heap)
-
+    if not heap:
+        return None
     while len(heap) > 1:
-        left = heapq.heappop(heap)
-        right = heapq.heappop(heap)
-        merged = Node(None, left.freq + right.freq)
-        merged.left = left
-        merged.right = right
-        heapq.heappush(heap, merged)
+        freq_left, _, left = heapq.heappop(heap)
+        freq_right, _, right = heapq.heappop(heap)
+        parent = Node(left=left, right=right)
+        heapq.heappush(heap, (freq_left + freq_right, next(order), parent))
+    return heap[0][2]
 
-    return heap[0]
 
-def generate_huffman_codes(node, prefix="", codebook={}):
-    if node is not None:
+def generate_huffman_codes(root):
+    codes = {}
+    stack = [] if root is None else [(root, "")]
+    while stack:
+        node, prefix = stack.pop()
         if node.char is not None:
-            codebook[node.char] = prefix
-        generate_huffman_codes(node.left, prefix + "0", codebook)
-        generate_huffman_codes(node.right, prefix + "1", codebook)
-    return codebook
+            codes[node.char] = prefix or "0"
+        else:
+            stack.append((node.right, prefix + "1"))
+            stack.append((node.left, prefix + "0"))
+    return codes
 
-# Texte d'exemple
-text = "shannon_entropy_and_information_theory"
-tree_root = build_huffman_tree(text)
-codes = generate_huffman_codes(tree_root)
 
-print("Codes de Huffman :")
-for char, code in sorted(codes.items()):
-    print(f"'{char}': {code}")
+def encode(text, codes):
+    try:
+        return "".join(codes[char] for char in text)
+    except KeyError as exc:
+        raise ValueError("symbol missing from codebook") from exc
+
+
+def decode(bits, root):
+    if any(bit not in "01" for bit in bits):
+        raise ValueError("payload must contain only 0 and 1")
+    if root is None:
+        if bits:
+            raise ValueError("nonempty payload with an empty tree")
+        return ""
+    if root.char is not None:
+        if "1" in bits:
+            raise ValueError("single-symbol code uses only 0")
+        return root.char * len(bits)
+    result = []
+    node = root
+    for bit in bits:
+        node = node.left if bit == "0" else node.right
+        if node.char is not None:
+            result.append(node.char)
+            node = root
+    if node is not root:
+        raise ValueError("truncated codeword")
+    return "".join(result)
+
+
+if __name__ == "__main__":
+    text = "shannon_entropy_and_information_theory"
+    root = build_huffman_tree(text)
+    codes = generate_huffman_codes(root)
+    payload = encode(text, codes)
+    print("Huffman codes:")
+    for char, code in sorted(codes.items()):
+        print(f"{char!r}: {code}")
+    print("Logical payload bits:", len(payload))
+    print("Round trip:", decode(payload, root) == text)
 ```
 
-## 6. Théorème du codage de canal : Les limites de la communication sans erreur
+Pour un seul symbole, cet exemple attribue le code non vide 0 et représente le nombre de répétitions par la longueur de la charge utile. On a alors H=0 et L=1 : la borne supérieure stricte L_H<H+1 ci-dessus ne s'applique donc pas au cas à un seul symbole de cette implémentation. Autoriser un code vide et partager séparément le nombre de répétitions relève d'une autre convention.
 
-Après avoir défini les limites de la compression de données, Shannon s'est attaqué au "canal avec bruit". En présence de bruit, une partie des données peut être inversée ou perdue. Pour y remédier, nous ajoutons de la **redondance** aux données afin de pouvoir corriger les erreurs (code correcteur d'erreurs).
+Il faut fournir à decode un arbre créé par build_huffman_tree. La fonction rejette les caractères invalides et les mots de code tronqués, mais ne détecte ni ne corrige toutes les altérations transformant la charge utile en une autre séquence de codes valide. Les caractères sont ici des points de code Unicode, et non des groupes de graphèmes ni des octets UTF-8.
 
-Cependant, plus nous ajoutons de redondance, plus la vitesse effective (le débit) de l'information transmise diminue. Dès lors, dans un environnement bruyant, à quelle vitesse et avec quelle précision peut-on transmettre des informations ?
+La charge utile est une chaîne Python de zéros et de uns, pas un format de fichier où les bits sont compactés. Logical payload bits mesure sa longueur logique, pas la mémoire occupée par l'objet Python. Le coût du stockage ou de la transmission de l'arbre, du délimitage et des en-têtes est exclu ; cet exemple seul ne démontre donc pas un taux de compression pour un fichier complet.
 
-La réponse à cette question est le **théorème du codage de canal** (le deuxième théorème de Shannon).
+## 6. Codage de canal : faible probabilité d'erreur et erreur nulle à longueur finie
 
-Shannon a prouvé que tout canal possède une **capacité de canal** (Channel Capacity) $ C $ intrinsèque. Et, de manière surprenante, il a affirmé ce qui suit :
-
-**"Si le taux de transmission de l'information $ R $ est inférieur à la capacité du canal $ C $ ( $ R < C $ ), alors, en utilisant un codage approprié, il est possible de réduire le taux d'erreur de manière arbitrairement proche de zéro."**
-
-Le théorème de Shannon-Hartley pour le canal à bruit blanc gaussien additif (AWGN) est la formule représentative pour calculer la capacité de canal $ C $.
+Considérons d'abord un canal discret sans mémoire à alphabets finis : chaque utilisation suit les mêmes probabilités de transition et ne dépend pas du passé. Notons U son entrée et V sa sortie. La capacité est le maximum de l'information mutuelle sur les lois d'entrée, en bits par utilisation du canal.
 
 $$
-C = B \log_2 \left( 1 + \frac{S}{N} \right)
+C=\max_{P_U}I(U;V),\qquad I(U;V)=H(U)-H(U\mid V)
 $$
 
-Où :
-- $ C $ : Capacité de canal (bits par seconde)
-- $ B $ : Bande passante (Hz)
-- $ S $ : Puissance du signal (Watt)
-- $ N $ : Puissance du bruit (Watt)
-- $ \frac{S}{N} $ : Rapport signal sur bruit (Signal-to-Noise Ratio)
+Un code permettant de choisir parmi M messages possibles avec n utilisations du canal a pour débit :
 
-Ce théorème sert de guide en indiquant la limite théorique atteignable (la limite de Shannon) dans la conception de tous les systèmes de communication numérique modernes, tels que le Wi-Fi, les communications mobiles 5G et les communications par satellite.
+$$
+R=\frac{\log_2 M}{n}\quad(\mathrm{bits/use})
+$$
 
-## 7. Conclusion
+Dans ce modèle, si R<C, on peut choisir des codes dont la probabilité d'erreur de décodage devient arbitrairement petite lorsque la longueur des blocs augmente. Cela ne promet pas exactement zéro erreur à longueur finie, ni qu'un code particulier atteindra automatiquement cette limite. À un débit fixé au-dessus de la capacité, la probabilité d'erreur ne peut pas tendre vers zéro sous les mêmes hypothèses. Comparer des grandeurs par seconde exige aussi de tenir compte d'un nombre cohérent d'utilisations du canal par seconde.
 
-La théorie de l'information, construite par Claude Shannon, a défini rigoureusement l'"information" d'un point de vue mathématique, ouvrant ainsi la voie à l'ère numérique. L' **entropie de Shannon** ne se limite pas à un concept abstrait ; elle fixe la limite absolue des algorithmes de compression de données, et la capacité de canal a déterminé l'orientation de l'évolution d'Internet et des communications sans fil que nous utilisons quotidiennement.
+### Un canal AWGN sous contraintes de bande et de puissance
 
-Si nous pouvons diffuser des vidéos sur nos smartphones et recevoir des images nettes de l'univers depuis des sondes lointaines, c'est parce qu'il existe une base mathématique solide appelée théorie de l'information. Aujourd'hui, le concept d'entropie continue de s'étendre à des domaines encore plus vastes, ses liens avec l'entropie thermodynamique en physique étant débattus, et il joue un rôle majeur dans l'apprentissage automatique (comme avec l'entropie croisée).
+Pour un bruit blanc gaussien additif indépendant du signal d'entrée, une bande passante B Hz, une puissance moyenne du signal S et une puissance totale de bruit N dans cette bande, la capacité sous contrainte de puissance moyenne est la suivante. On suppose B>0, S≥0 et N>0.
 
-Comprendre fondamentalement la nature des données et connaître leurs limites restera certainement l'approche la plus cruciale pour concevoir les systèmes d'information et de communication avancés de demain.
+$$
+C=B\log_2\left(1+\frac SN\right)\quad(\mathrm{bits/s})
+$$
+
+C s'exprime en bits par seconde. Mesurez S et N dans les mêmes unités de puissance et utilisez leur rapport linéaire, pas la valeur numérique en dB. Par exemple, B=1 MHz et S/N=15 en échelle linéaire donnent cette valeur théorique :
+
+$$
+10^6\log_2(1+15)=4\times10^6\ \mathrm{bits/s}
+$$
+
+Il ne s'agit pas d'une mesure du débit d'un réseau Wi-Fi ou cellulaire. Modulation, entrées autorisées, délai, longueurs finies, évanouissement, interférences et surcoût des protocoles peuvent différer du modèle et doivent être examinés lors de son application.
+
+## 7. Questions à poser pour appliquer la théorie de l'information
+
+La théorie de l'information fournit un cadre pour étudier les limites tout en distinguant la redondance supprimée par la compression de celle ajoutée pour fiabiliser la communication. Elle fonde notamment la diffusion vidéo et les communications par satellite, mais une formule ne détermine pas les performances de tout un système réel.
+
+L'entropie croisée en apprentissage automatique dépend aussi de la loi de prédiction et n'est pas identique à l'entropie de la source. Lorsque l'on considère des liens formels avec l'entropie thermodynamique, il faut distinguer les modèles physiques et les unités. Le point de départ consiste à préciser les variables aléatoires, les connaissances disponibles et les coûts comptabilisés.

@@ -243,6 +243,46 @@
         "Actualplot PNG matches priorinspectedimage;no browser/KaTeX/Mermaid/nativeGUI certification.",
         "Primary reading scope separatelydocumented;publication andwholegoalpending."
       ]
+    },
+    "post/information-theory-shannon-entropy/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/information-theory-shannon-entropy/index.md",
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "translationHash": "bd9fb4ce59c6aea905c8d49dfb500e6dd9870e6134075debcf81f166e2941f73",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full old and actual revised French metadata, all seven sections, complete diagram and both complete Python programs against frozen Japanese, reread small final terminology edit before recording. Preserved communication/self-information/entropy/coding/applications progression, corrected singlehanded history and universal individual-file compression assertions, and distinguished conditional Huffman optimality, known-length correlated blocks and asymptotic channel reliability from finite zero error."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared information propre/espérance, source/canal, code préfixe/code à décodage unique, entropie marginale/conjointe/taux d'entropie, stationnaire/sans mémoire, points de code/groupes de graphèmes/octets and charge utile/object memory. Replaced ambiguous uniquement décodable with à décodage unique. Explained shared English plot labels in French; old French plot labels carried the same meanings, and original Huffman sample was already English. M means possible messages; additive noise independent of input, average power and linear SNR are explicit."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read 14 matching TeX formulas and surrounding conditions: positive P/zero entropy convention, fixed finite alphabet, binary entropy, expected code length and lower bound, Huffman strict upper bound with at least two positive symbols, iid nondegenerate blocks, stationary entropy rate and constant-Z known-length example, finite DMC capacity/rate, AWGN power/bandwidth/units and theoretical 4Mbps. H0 L1 singleton exception explicit. Finite numerical/oracle checks not claimed as general mathematical proof, all channel models or measured throughput."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read and executed both complete article-extracted corrected Python programs and main blocks. Passed 1001 valid/5 invalid probability cases, 1093 exhaustive abc roundtrips plus 6 Unicode cases, fresh codebooks and input-order-independent ties, malformed/truncated payload and nonstring/unknown-symbol checks, 1360 independent optimal tree-depth profiles. Existing English sample returns 140 logical bits and roundtrip true. Actual plot bytes match previously visually inspected PNG; Agg noninteractive warning retained. No French-specific sample invented; no arbitrary external-tree, full-file serialization, universal corruption detection or browser certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Both primary references match source and generated HTML; earlier documented primary reading scope retained without claiming additional full-paper reading. Old French graph discussion had no unrelated graph-search link. Both raw dates/effective Sep21 publication, localized taxonomy, slug and image hash preserved, actual Nov12 lastmod. Passed selected 14 hreflang/13 sidebar and 33-bundle 1853-page multilingual/3371 HTML41 XML HTTPS checks. Existing 17 tests refer to prior JA/EN run, not rerun. Remaining five translations and publication pending."
+        }
+      },
+      "summary": "Full French entropy and coding review, clarifying unique decodability and channel assumptions with actual program execution.",
+      "languageSpecificFindings": "Clarified code à décodage unique, espérance versus individual-file length, entropie marginale/conjointe/taux, stationnaire versus sans mémoire, point de code/grapheme/octet and charge utile versus memory. French plot label meanings explained beside shared English-labelled program; original English Huffman sample retained. Explicit M possible messages, singleton exception, input-independent additive noise and linear SNR; no invented link or localized example findings.",
+      "validation": "docs/translation-review/batch-032-fr-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "5 other translation bodies remainunreviewed atthisstage.",
+        "Finiteoracle cases,not all-input proof,serializedfileformat,errorcorrection or practicalnetworkbenchmark.",
+        "Actualplot PNG matches priorinspectedimage;no browser/KaTeX/Mermaid/nativeGUI certification.",
+        "Primary reading scope separatelydocumented;publication andwholegoalpending."
+      ]
     }
   },
   "stages": [
@@ -582,6 +622,67 @@
       "unreviewedTranslations": 12642,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 6,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "fr"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "validation": "docs/translation-review/batch-032-fr-validation.json",
+      "checks": "docs/translation-review/batch-032-fr-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-032-fr-ledger-validation.json",
+      "texEach": 14,
+      "diagramsEach": 1,
+      "diagramSolidEdges": 4,
+      "diagramDottedEdges": 1,
+      "articleProgramsExecutedEach": 2,
+      "codeValidation": {
+        "language": "fr",
+        "articleProgramsExecuted": 2,
+        "extractedProgramSha256": [
+          "5841dd9a65da699b76137cb8d022e807e022eed2f0f7a859ddbe360c632dce35",
+          "1de958a50b5f565f3c832934c79fbcb57636b1f7a2bc55a2833324d6d2d7826c"
+        ],
+        "pythonVersion": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "binaryEntropyValidPoints": 1001,
+        "binaryEntropyInvalidPointsRejected": 5,
+        "exhaustiveAbcRoundTripsLength0through6": 1093,
+        "unicodeRoundTrips": 6,
+        "localizedOriginalExampleRoundTrips": [],
+        "repeatedCallNoStaleCodebook": true,
+        "equalFrequenciesDeterministicAcrossInputOrder": true,
+        "nonStringBuildInputsRejected": 4,
+        "invalidOrTruncatedPayloadCasesRejected": 6,
+        "unknownSymbolRejected": true,
+        "independentFullBinaryTreeShapeOptimalProfiles": 1360,
+        "optimalProfileScope": "2through5symbols,eachpositiveintegerweight1through4;allfullbinaryleafdepthmultisets,largestweightstoshortestdepths. Finite independent oracle,not all-input proof.",
+        "singleSymbolConvention": "Nonempty0code,L=1,H=0;strictL<H+1notclaimedforthisimplementationcase.",
+        "sampleStdout": "Huffman codes:\n'_': 001\n'a': 1011\n'd': 01110\n'e': 0001\n'f': 01111\n'h': 0100\n'i': 0101\n'm': 10100\n'n': 111\n'o': 100\n'p': 10101\n'r': 1100\n's': 0000\n't': 1101\n'y': 0110\nLogical payload bits: 140\nRound trip: True\n",
+        "plot": {
+          "path": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\entropy-code-batch-032-fr-validation-fr\\binary-entropy.png",
+          "sha256": "da51287a79462f2044a4d6bdee16c0092ed0f907d9ebe07891d9b1148f841ec2",
+          "points": 101,
+          "peakAtHalf": true,
+          "warnings": [
+            "FigureCanvasAgg is non-interactive, and thus cannot be shown"
+          ],
+          "visuallyInspectedByThisCode": false
+        },
+        "scope": "Actual article-extracted standalone programs plus finite oracles. No serialized-file format,errorcorrection,all-input proof or native/browser/ledger certification."
+      },
+      "plotExactMatchTo": "docs/translation-review/batch-032-ja-en-plot-review.json",
+      "actualPreviewBundles": 33,
+      "multilingualPages": 1853,
+      "httpsHtmlPages": 3371,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 391,
+      "unreviewedTranslations": 12641,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 5,
       "publicationPending": true
     }
   ],
