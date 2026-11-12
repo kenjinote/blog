@@ -3865,6 +3865,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-032-r2.json",
       "evidenceHash": "fd5730f0fb8cdb85a95ff6081ef20e77f14a0c97cb694af76e2636cd772e47f0"
+    },
+    "post/information-theory-shannon-entropy/index.zh-tw.md": {
+      "source": "post/information-theory-shannon-entropy/index.md",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "translationHash": "b608d1ff12362de19ed5917657d01726390f1fc6581997ecac0e5c70c905079e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-032-r2.json",
+      "evidenceHash": "0b1c30097fc08414a9031fa8a4bac47680c429b29c9fb248fbc84927f6ae86a2"
     }
   }
 }
