@@ -84,6 +84,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/paradox-prisoners-dilemma/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-prisoners-dilemma/index.md",
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "translationHash": "899e43593d68fb5af8279a9f5a2735cba19f5d56237998f561c32b4386ae7729",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete old and revised Traditional Chinese metadata,introduction,six sections,two revised tables and both diagram sources against frozen Japanese. Preserved historical,price,environment,ColdWar,TFT,bat/bee and institutional themes while separating fictional sentencing,individual incentives,Pareto efficiency,sum maximum,finite repetition and conditional rare-cluster performance. No automatic survival or fixation claim remains."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked 報酬/效用 versus 刑期,嚴格優勢策略,納許均衡,子賽局完美均衡,逆向歸納,折現 and以牙還牙. Old 柏瑞圖最適 is a legitimate variant,not a mistranslation;revised 柏雷多效率 includes English. Distinguished 小群體 from 族群,matching p from belief q and population prevalence,negative 得分 from 適存度 fitness and reproductive/survival rates. THU search snippet only;page request timed out,not full-page evidence."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all ten identical TeX expressions and both tables,including own/opponent argument order,T0>R-1>P-5>S-10,strict advantage5-4q>=1,efficient pureCC/CD/DC versus sumCC-2. Verified three discounted strategy values,rare-cluster resident limit,p>5(1-delta)/(9-5delta),delta9/10 threshold1/9,table -55/-52.75/-50/-46 against baseline-50,and isolated loss5. Finite auxiliary arithmetic/traces passed once;not general proof,population dynamics or empirical simulation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read both full Mermaid sources with six edges each:simultaneous joint-outcome enumeration rather than sequential observation,and TFT firstC then play/observe/nextaction with both branches advancing t. Compared previous,current,next rounds and error alternation in prose. Exact topology,decoded HTML math and library presence passed;baseline libraries already existed. No browser visual,KaTeX/Mermaid runtime,tournament or biological code certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched all four external references(two primary research papers,two official teaching sources) and one localized zh-tw internal article. Source reading limits remain documented;bat twenty fasted individuals is not total colony and correlation is not immediate TFT causation. Preserved Sep24T15 published date,slug,taxonomy,image hash;actual Nov12 lastmod. Selected proof and 1800 multilingual pages/3277 HTTPS HTML/41XML passed. Earlier17tests referenced,not rerun;publication and nine other translations pending."
+        }
+      },
+      "summary": "Full Traditional Chinese cooperation/evolution review with conditional matching and biological evidence.",
+      "languageSpecificFindings": "Clarified lost action-label distinctions and zero years versus acquittal. Used consistent Traditional Chinese payoff,equilibrium,discount and fitness terminology;old Pareto variant accepted. Distinguished small cooperative cluster from population and conditional score advantage from fixation. Read all numerical rows,formula roles and six-edge TFT loop. Original price example had no currency amount,no currency error claimed.",
+      "validation": "docs/translation-review/batch-031-zh-tw-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "9 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0,population-update simulation,biological data reanalysis and tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -185,6 +225,56 @@
       "unreviewedTranslations": 12658,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 10,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "zh-tw"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "validation": "docs/translation-review/batch-031-zh-tw-validation.json",
+      "checks": "docs/translation-review/batch-031-zh-tw-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-031-zh-tw-ledger-validation.json",
+      "texEach": 10,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "cooperationBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "deterministicStrategyPairs": 3,
+        "roundsEach": 8,
+        "discountedPrefixPlusExactTailCases": 306,
+        "clusterMatchingCases": 10605,
+        "isolatedTftDifference": "-5",
+        "exampleDelta": "9/10",
+        "exampleMatchingThreshold": "1/9",
+        "numericTableCases": 4,
+        "tftErrorTraceRounds": 8,
+        "scope": "Once per invocation,finite exact auxiliary arithmetic and traces. Not article programs,population-update simulation,ESS/SPE/all-strategy proof,biological data reanalysis or tournament reproduction. Rare-cluster resident baseline and negative score meaning read separately in prose."
+      },
+      "actualPreviewBundles": 32,
+      "multilingualPages": 1800,
+      "httpsHtmlPages": 3277,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 375,
+      "unreviewedTranslations": 12657,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 9,
       "publicationPending": true
     }
   ]
