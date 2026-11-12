@@ -283,6 +283,46 @@
         "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
         "Batch033publication andwholegoal pending;032closure is separately recorded."
       ]
+    },
+    "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "translationHash": "ca70d00648cd617ab4cd4f983e0fc8672eb589ab82a6f5cf9a5f7f1709310d19",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete originalGerman metadata,four sections,sixdisplayformulas,twoMermaidgraphs andperformance table;read full actualrevisedmetadata,sixsections,29formulas,both graphs,BWT andarchitecture tables against frozenJapanese. Rereadfourpolishedpassages. Restored counting/Kraft/KLproof,Huffmanmerge,arithmeticinterval,rANSinverse/tANSstates,BWTinverse,NLLandengineering. Corrected universal/per-filelimits,arbitraryH+1upper,individualsequenceNH andidealpredictioninformation as exactactualfilesize. PreservedvalidGermanoriginalc100/1MB/12.5byteexample withconditions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared injektiv versusBijektion,verlustfrei/verlustbehaftet,Informationsgehalt/Eigeninformation/Erwartungswert,mittlereCodelange,Präfixcode/eindeutigdecodierbar,normalisiert/kanonisch/Renormalisierung,marginal/gemeinsam/Entropierate,iid/stationär,Nutzdatenlänge/gesamteDateikosten,Bit/Byte/MiB/MB. GermanDezimalcomma andthousandsseparator consistentinprose,sharedTeX unchanged. BWTZeile/Spalte/Sentinel andLFpriorrank precise. Replacedawkwarddouble-negativeflagcostsentenceandfixedcaseending;generalmessage notonlytext. OriginalnormalizedKLidentityvalid,noEnglish-specificQdefectassigned."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read29sharedTeXanddomains: fixedE/uniformn/counting1<=c<=n,Kraftleafbudget/normalizedQKL,positive-support/singleton,constructedShannonceil/optimalH+1,nondegenerateiidblocks/dependentjoint/stationaryrate,Huffmanmerge/.99binaryentropy. Original69timescomparisonwascommon-symbolsurprisal,notaverage;revisedbinaryH=.080793,L1,ratio12.4. PreservedGerman c100,n>=100,strict2^-99andcorrectrounded1.58e-30,decimal1MB8millionbits/100bits12.5byteswithbyteformatcaveat. Clarifiedarithmeticpositiveconditionalinterval/sufficientK/expectedH+2,rANSinverse/tANSLstates,LF,NLLbase/mean,serialIO. Finiteauxchecksnotgeneralproof/benchmark."
+        },
+        "code": {
+          "status": "checked",
+          "note": "OldandrevisedGerman executablearticleprograms0. ReadbothcompleteMermaidgraphs andinlineexamples;actualHTMLmatches8+6edgesJA topology,bzip2preBWTRLE,all7BWTrows,std::vector<int>,banana$,annb$aa andsentinel. Inlinecode dollar excludedmathcount. German-specificverifierbranch additionallychecksretainedc100conditions/decimalcomma/1MB8millionbits/12.5ByteactualHTMLwithoutrewritingpriorlanguage receipts. Auxiliary4forwardcopy/NLL/entropy/3IO/c100checks retainedalongsideearlierindependentfiniteprobe,notarticleprogramruns/fullcompressor/LLMexperiment/browser/nativecertification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Elevenprimary/officialreferenceURLs matchfrozenJAandactualHTML;documentedselectedprimaryreadinglimits retained,notnewwholepaper/file reading. OldGermanbodyhadnoexternalreferencesorunrelatedmislink,noneinvented. Oct14T12rawdate,slug,imagehashandlocalizedtaxonomy preserved;actualNov12lastmodandmermaidflag.34bundle442snapshots/1918multilingualpages/3488HTTPSHTML41XML and14hreflang13sidebar pass.17existingtests referenceearlierJAENsuccess,notrerun. Fourother033translationsandpublicationpending;032closureseparate."
+        }
+      },
+      "summary": "Complete German lossless-compression review restoring proofs and retaining the conditioned c100 example with exact decoded-HTML checks.",
+      "languageSpecificFindings": "Restoredfoursection/sixformula summaryto6themes29math. KeptGermanoriginalc100/decimal1MB/12.5Byteexample,addedfixedencoder/uniformnbit/n>=100conditionsandrounded2^-99to1.58e-30. Distinguished69timescommon-symbolinformationfrom12.4averagebinaryentropycomparison. Fixedexactpredictionloss-to-filesizeclaim,arbitrarycodeH+1upper anduniversalphysical/performanceoverclaims. OriginalnormalizedKLidentityvalid;no nonexistentmislinkclaimed.",
+      "validation": "docs/translation-review/batch-033-de-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "4 other translation bodies remain unreviewed at this stage.",
+        "Article programs0;independentfiniteauxiliarychecks not generalproof,fullcompressor,benchmark orLLMexperimentalreproduction.",
+        "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
+        "Batch033publication andwholegoal pending;032closure is separately recorded."
+      ]
     }
   },
   "stages": [
@@ -721,6 +761,74 @@
       "unreviewedTranslations": 12629,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 5,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "de"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "validation": "docs/translation-review/batch-033-de-validation.json",
+      "checks": "docs/translation-review/batch-033-de-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-033-de-ledger-validation.json",
+      "texEach": 29,
+      "diagramsEach": 2,
+      "diagramEdgesEach": [
+        8,
+        6
+      ],
+      "articleProgramsEach": 0,
+      "auxiliaryChecks": {
+        "lzForwardCopyExamples": 4,
+        "nllBaseAndAveragingExample": true,
+        "binaryEntropyAt099": 0.08079313589591118,
+        "ioModelExamples": [
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 200000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.0075
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 1000000000,
+            "decodedBytesPerSecond": 10000000,
+            "rawSeconds": 0.001,
+            "serialCompressedSeconds": 0.10025
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 1000000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 100000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.02
+          }
+        ],
+        "largeCountingExample": {
+          "c": 100,
+          "requiresNAtLeast": 100,
+          "strictFractionUpperBound": 1.5777218104420236e-30,
+          "scope": "Fixedinjectiveencoder,uniformnbitinput;notallcompressorssimultaneously."
+        },
+        "scope": "Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor."
+      },
+      "priorIndependentAuxiliaryChecks": "docs/translation-review/batch-033-original-math-probe.json",
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 34,
+      "multilingualPages": 1918,
+      "httpsHtmlPages": 3488,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 404,
+      "unreviewedTranslations": 12628,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 4,
       "publicationPending": true
     }
   ],
