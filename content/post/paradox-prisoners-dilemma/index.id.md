@@ -1,148 +1,170 @@
 ---
-title: "【Dilema Tahanan】Bagaimana Teori Permainan Mengungkap Batas Rasionalitas dan Kerja Sama Manusia"
-description: "Dilema Tahanan, paradoks perwakilan dari teori permainan. Penjelasan menyeluruh tentang mekanisme di mana pilihan rasional individu menyebabkan hasil terburuk bagi keseluruhan, dengan aplikasi dalam bisnis, politik internasional, dan biologi. Menjelajahi kondisi bagi kita untuk bekerja sama, termasuk strategi tit-for-tat dan teori permainan evolusioner."
+title: "Dilema tahanan dan evolusi kerja sama: kondisi model dan bukti hewan"
+description: "Bedakan insentif satu interaksi, efisiensi Pareto, strategi berulang, dan pertemuan dalam kelompok untuk menelaah kerja sama, kelelawar, dan lebah."
 slug: "paradox-prisoners-dilemma"
 categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
+math: true
+mermaid: true
+lastmod: "2026-11-12"
 ---
 
-# Dilema Tahanan (Prisoner's Dilemma): Paradoks Utama dari Teori Permainan
+Kerja sama dapat lebih baik bagi kedua pemain, tetapi masing-masing tetap dapat memiliki insentif untuk meninggalkannya. [Dilema tahanan](https://kenji.blog/id/p/prisoners-dilemma/) menganalisis konflik ini dengan pilihan dan imbalan yang ditetapkan. Ini bukan hukum bahwa manusia pasti berkhianat atau kelompok kooperatif pasti bertahan hidup.
 
-"Mengapa kita saling mengkhianati ketika kita tahu segalanya akan berjalan lancar jika kita bekerja sama?"
+Tentang sejarahnya, [catatan kuliah Cornell](https://www.cs.cornell.edu/~rafael/networks-html/chapter1.html) menjelaskan penelitian Merrill Flood dan Melvin Dresher pada 1950 serta penjelasan Albert Tucker melalui cerita tahanan. Di sini kita membedakan insentif satu interaksi, strategi berulang, model evolusi, dan pengamatan hewan.
 
-Menanggapi pertanyaan mendasar ini, **"[Dilema Tahanan](/id/p/prisoners-dilemma/) (Prisoner's Dilemma)"** dalam teori permainan memberikan jawaban paling jelas dan paling kejam dari perspektif matematika dan logika. Diciptakan oleh Merrill Flood dan Melvin Dresher pada 1950-an, dan diformulasikan sebagai "cerita tahanan" saat ini oleh Albert W. Tucker, konsep ini telah berdampak besar pada segala hal mulai dari ekonomi dan ilmu politik hingga psikologi dan biologi evolusioner.
+## 1. Mengubah masa hukuman fiktif menjadi imbalan
 
-Dalam artikel ini, kita akan membahas "[Dilema Tahanan](/id/p/prisoners-dilemma/)" dengan sangat rinci, dari mekanisme dasar hingga konsep khusus seperti ekuilibrium Nash dan optimalitas Pareto, serta contoh spesifik di dunia nyata dan evolusi kerja sama dalam "permainan berulang".
+Anggap dua tersangka, A dan B, tidak dapat berunding dan secara bersamaan memilih diam C (bekerja sama satu sama lain) atau mengaku D (meninggalkan kerja sama itu). Dalam situasi fiktif ini, masa hukuman berikut berlaku dengan pasti. Ini bukan penjelasan aturan penyelidikan atau kesepakatan pengakuan bersalah yang nyata, dan tidak menyatakan bahwa mengaku berarti dibebaskan dari tuduhan.
 
----
+| A / B | C: diam | D: mengaku |
+| --- | --- | --- |
+| C: diam | A: 1 tahun, B: 1 tahun | A: 10 tahun, B: 0 tahun |
+| D: mengaku | A: 0 tahun, B: 10 tahun | A: 5 tahun, B: 5 tahun |
 
-## 1. Skenario Dasar Dilema Tahanan
+Setiap orang hanya ingin memperpendek masa hukumannya sendiri; persahabatan, reputasi, dan rasa bersalah tidak menambah utilitas. Imbalan u_i adalah negatif dari masa hukuman y_i. Imbalan negatif tidak berarti masa hukuman negatif. T adalah imbalan Anda jika hanya Anda memilih D; R jika keduanya C; P jika keduanya D; dan S jika hanya Anda memilih C.
 
-Pertama, mari kita tinjau skenario terkenal yang dirancang oleh Tucker.
+$$
+u_i=-y_i,\quad y_i\in\{0,1,5,10\},\qquad T=0>R=-1>P=-5>S=-10
+$$
 
-Dua kaki tangan (Tahanan A dan Tahanan B) ditangkap atas dugaan kejahatan berat. Namun, polisi tidak memiliki bukti kuat dan hanya dapat mendakwa mereka dengan pelanggaran ringan (misalnya, 1 tahun penjara) tanpa pengakuan dari keduanya.
-Oleh karena itu, polisi mengisolasi keduanya di ruang interogasi terpisah dan menawarkan kesepakatan pembelaan kepada masing-masing dari mereka:
-
-1. **Jika keduanya tetap diam (bekerja sama)**: Karena kurangnya bukti, keduanya mendapat hukuman **1 tahun penjara**.
-2. **Jika satu mengaku (berkhianat) dan yang lain tetap diam**: Pihak yang mengaku akan **dibebaskan (bebas)** sebagai imbalan kerja sama, sedangkan pihak yang tetap diam akan didakwa dengan kejahatan berat dan menerima hukuman **10 tahun penjara**.
-3. **Jika keduanya mengaku (berkhianat)**: Keduanya dinyatakan bersalah, tetapi dengan keadaan yang meringankan mendapat hukuman **5 tahun penjara**.
-
-Tahanan A dan Tahanan B tidak dapat berkonsultasi satu sama lain. Tanpa mengetahui pilihan apa yang akan diambil pihak lain, masing-masing harus memilih antara "tetap diam (bekerja sama dengan pihak lain)" atau "mengaku (mengkhianati pihak lain)".
-
-### Memvisualisasikan Mekanisme Keputusan
-
-Bagan alur di bawah ini menunjukkan konsekuensi dari perspektif Tahanan A.
+Diagram ini mencantumkan kombinasi tindakan yang dipilih bersamaan. A tidak mengamati tindakan B terlebih dahulu sebelum memilih.
 
 ```mermaid
 graph TD
-    A["Pilihan Tahanan A"]
-    B["Tetap diam (Kerja sama)"]
-    C["Mengaku (Pengkhianatan)"]
-    A --> B
-    A --> C
-    B -- "Tahanan B: Tetap diam" --> D["A: 1 tahun, B: 1 tahun"]
-    B -- "Tahanan B: Mengaku" --> E["A: 10 tahun, B: Bebas"]
-    C -- "Tahanan B: Tetap diam" --> F["A: Bebas, B: 10 tahun"]
-    C -- "Tahanan B: Mengaku" --> G["A: 5 tahun, B: 5 tahun"]
+    Start["Kombinasi tindakan yang dipilih bersamaan"] --> AC["A memilih C"]
+    Start --> AD["A memilih D"]
+    AC -->|"B memilih C"| CC["A: 1 tahun, B: 1 tahun"]
+    AC -->|"B memilih D"| CD["A: 10 tahun, B: 0 tahun"]
+    AD -->|"B memilih C"| DC["A: 0 tahun, B: 10 tahun"]
+    AD -->|"B memilih D"| DD["A: 5 tahun, B: 5 tahun"]
 ```
 
----
+## 2. Dominasi, ekuilibrium Nash, dan efisiensi Pareto
 
-## 2. Tragedi yang Disebabkan oleh Keputusan Rasional: Ekuilibrium Nash
+Dalam u_i, argumen pertama adalah tindakan sendiri dan argumen kedua tindakan pemain lain. Baik pemain lain memilih C maupun D, imbalan sendiri lebih tinggi dengan D.
 
-Mari kita telusuri proses pemikiran rasional untuk memaksimalkan kepentingan Tahanan A sendiri (mengurangi hukuman). Kita bagi kasus berdasarkan apa yang dipilih Tahanan B.
+$$
+u_i(D,C)=0>-1=u_i(C,C),\qquad u_i(D,D)=-5>-10=u_i(C,D)
+$$
 
-- **Kasus 1: Jika Tahanan B memilih "Tetap diam"**
-  - Jika A "Tetap diam", 1 tahun penjara.
-  - Jika A "Mengaku", bebas.
-  - **Kesimpulan**: Bebas lebih baik daripada 1 tahun, jadi "Mengaku" lebih menguntungkan.
+Karena itu D adalah **strategi dominan ketat (strictly dominant strategy)**. Jika peluang pemain lain memilih C dinilai sebesar q, selisih imbalan harapan juga positif. q ini berbeda dari peluang p untuk bertemu TFT lain di dalam kelompok yang digunakan nanti.
 
-- **Kasus 2: Jika Tahanan B memilih "Mengaku"**
-  - Jika A "Tetap diam", 10 tahun penjara.
-  - Jika A "Mengaku", 5 tahun penjara.
-  - **Kesimpulan**: 5 tahun lebih baik daripada 10 tahun, jadi "Mengaku" lebih menguntungkan.
+$$
+\begin{aligned}0&\le q\le1,\\\mathrm{EU}(D)&=-5+5q,\\\mathrm{EU}(C)&=-10+9q,\\\mathrm{EU}(D)-\mathrm{EU}(C)&=5-4q\ge1.\end{aligned}
+$$
 
-Yang mengejutkan, tidak peduli apa yang dilakukan Tahanan B, selalu lebih menguntungkan bagi Tahanan A untuk memilih "Mengaku (berkhianat)". Strategi ini yang selalu optimal terlepas dari strategi lawan disebut **"Strategi Dominan"**.
-Tahanan B juga berada dalam situasi yang sama persis, dan jika ia berpikir rasional dengan cara yang sama, "mengaku" juga merupakan strategi dominannya.
+Jika keduanya memaksimalkan utilitas harapannya sendiri berdasarkan tabel ini, mereka memilih DD. Karena D mendominasi C secara ketat terhadap strategi lawan yang murni maupun campuran, DD adalah satu-satunya ekuilibrium Nash. **Ekuilibrium Nash** adalah profil strategi di mana tidak ada pemain yang dapat meningkatkan imbalannya dengan mengubah strateginya sendiri saja sementara strategi lawan tetap. Ini tidak berarti perubahan bersama tidak dapat memperbaiki hasil.
 
-Akibatnya, keduanya saling memilih "mengaku" dan **keduanya dijatuhi hukuman 5 tahun penjara**. Dalam teori permainan, keadaan ini disebut **"Ekuilibrium Nash"** (keadaan di mana tidak ada pemain yang dapat memperoleh keuntungan jika hanya dia yang mengubah strateginya).
+Suatu hasil **efisien Pareto (optimal Pareto)** jika tidak ada hasil layak lain yang meningkatkan imbalan setidaknya satu pemain tanpa mengurangi imbalan siapa pun. Di antara profil tindakan murni pada tabel, CC, CD, dan DC efisien; DD tidak, karena berpindah ke CC meningkatkan imbalan keduanya. Daftar ini tidak mencakup seluruh himpunan imbalan efisien jika pemilihan acak di antara hasil diizinkan.
 
-### Divergensi dari Optimalitas Pareto
+Secara terpisah, penjumlahan imbalan numerik dengan bobot sama memberi CC total tertinggi. Definisi efisiensi dan kriteria penjumlahan ini berbeda.
 
-Di sinilah muncul dilema. Apakah hasil "keduanya 5 tahun penjara" merupakan hasil terbaik secara keseluruhan?
-Tidak. Jika mereka saling percaya dan keduanya tetap diam, mereka hanya akan mendapat "keduanya 1 tahun penjara".
+$$
+(u_1+u_2)(CC)=-2,\qquad(u_1+u_2)(CD)=(u_1+u_2)(DC)=(u_1+u_2)(DD)=-10
+$$
 
-Keadaan di mana keuntungan keseluruhan (dalam hal ini total masa hukuman) dimaksimalkan, yaitu "keadaan di mana tidak mungkin meningkatkan keuntungan seseorang tanpa mengurangi keuntungan orang lain", disebut **"Optimalitas Pareto"**. Inti dari [Dilema Tahanan](/id/p/prisoners-dilemma/) terletak pada kenyataan bahwa **"pilihan rasional individu (ekuilibrium Nash) tidak selaras dengan solusi optimal keseluruhan (optimalitas Pareto)"**.
+Ini adalah analisis insentif dalam model dengan imbalan tertentu, bukan bukti tentang semua motif manusia atau kemalangan sosial yang tak terelakkan.
 
----
+## 3. Memeriksa penerapan melalui imbalan dan institusi
 
-## 3. Dilema Tahanan di Dunia Nyata
+### Persaingan harga
 
-Dilema ini bukan sekadar latihan otak. Ini terjadi setiap hari dalam struktur sosial kita, kegiatan ekonomi, dan bahkan dalam hubungan antarnegara.
+Model ini kadang dapat menjadi analogi bagi insentif menurunkan harga di bawah pesaing untuk meningkatkan penjualan, sekaligus menyusutnya margin jika keduanya menurunkan harga. Namun, permintaan, biaya, kualitas, dan masuknya pelaku baru mengubah imbalan; harga lebih rendah tidak menjamin monopoli. Jumlah laba perusahaan juga berbeda dari kesejahteraan sosial yang mencakup konsumen.
 
-### Persaingan Harga dalam Ekonomi
-Misalkan Perusahaan A dan Perusahaan B menjual produk yang serupa. Jika keduanya mempertahankan harga tinggi (kerja sama), keduanya akan mendapat untung besar. Namun, jika salah satu pihak memotong harga untuk mengalahkan yang lain (pengkhianatan), ia akan memonopoli pasar dan meraup untung besar. Akibatnya, kedua belah pihak bersaing memotong harga, jatuh ke dalam "perang harga" yang menggerus keuntungan.
+### Lingkungan dan sumber daya bersama
 
-### Masalah Lingkungan (Tragedi Kepemilikan Bersama)
-Pengurangan gas rumah kaca juga merupakan dilema tahanan antarnegara. Jika semua negara berupaya mengurangi (kerja sama), pemanasan global dapat dicegah. Namun, jika suatu negara melonggarkan peraturan lingkungan saat negara lain berupaya (pengkhianatan), negara itu dapat menikmati pertumbuhan ekonomi sendiri. Akibatnya, semua negara berusaha mendahului, sehingga lingkungan keseluruhan memburuk.
+Ketika manfaat pengurangan emisi dibagi bersama tetapi setiap pihak menanggung biaya, kita dapat menelaah insentif menikmati upaya pihak lain tanpa ikut berkontribusi. Namun, dunia nyata memiliki banyak negara, kerugian dan biaya yang tidak simetris, perjanjian, serta pemantauan. Tabel dua pemain ini tidak menentukan hasil iklim atau pertumbuhan ekonomi setiap negara. Masalah sumber daya bersama pun tidak semuanya merupakan permainan dua pemain yang sama.
 
-### Perlombaan Senjata
-Perlombaan pengembangan senjata nuklir antara Amerika Serikat dan Uni Soviet selama Perang Dingin adalah contoh klasik. Jika keduanya melucuti senjata (kerja sama), perdamaian dan kelonggaran ekonomi akan tercapai, tetapi jika satu melucuti saat pihak lain bersenjata, negara akan terancam (setara 10 tahun penjara). Oleh karena itu, keduanya terpaksa terus meningkatkan persenjataan (pengkhianatan).
+### Perlombaan senjata
 
----
+Model yang menyederhanakan insentif melucuti atau mempertahankan senjata juga digunakan untuk memikirkan perlombaan nuklir AS dan Uni Soviet pada Perang Dingin. Kemampuan nyata, informasi, verifikasi, dan aliansi penting. Tabel ini tidak membuktikan keniscayaan sejarah bahwa pelucutan sepihak menghadapi lawan bersenjata selalu mengancam kelangsungan negara sehingga menambah senjata merupakan satu-satunya pilihan.
 
-## 4. Permainan Berulang dan Strategi "Tit for Tat"
+## 4. Pengulangan dan strategi Tit for Tat
 
-Dalam [dilema tahanan](/id/p/prisoners-dilemma/) satu kali, "berkhianat" adalah pilihan rasional. Namun, dalam masyarakat nyata, umum untuk berinteraksi dengan pihak yang sama berkali-kali. Dalam teori permainan, ini disebut **"[Dilema Tahanan](/id/p/prisoners-dilemma/) Berulang (Iterated Prisoner's Dilemma)"**.
+Ketika hubungan berlanjut, tanggapan di masa depan terhadap tindakan sekarang dapat mengubah imbalan. Namun, pengulangan tidak menjamin kerja sama. Jika permainan tahap yang sama diulang dalam jumlah yang diketahui, tetap, dan terbatas, riwayat dapat diamati, serta struktur dan rasionalitas menjadi pengetahuan bersama, induksi mundur dari putaran terakhir menghasilkan ekuilibrium sempurna subpermainan dengan DD pada setiap putaran. [Catatan MIT](https://www.ocw.mit.edu/courses/14-15j-networks-spring-2018/pages/lecture-and-recitation-notes/recitation-10-notes/) juga membahas perbedaan pengulangan terbatas dan tak terbatas; imbalan numeriknya berbeda dari artikel ini.
 
-Pada 1980-an, ilmuwan politik Robert Axelrod mengundang program komputer dari para ahli di seluruh dunia untuk mengadakan turnamen demi mencari tahu strategi apa yang terkuat dalam [dilema tahanan](/id/p/prisoners-dilemma/) berulang.
+**Tit for Tat (TFT)** memilih C pada awalnya, lalu mulai putaran kedua meniru tindakan lawan pada putaran sebelumnya. a_i,t adalah tindakan Anda pada putaran t, dan j menyatakan pemain lain.
 
-Hasilnya, program yang paling sederhana dan meraih skor tertinggi adalah **"Strategi Tit for Tat"** yang diajukan oleh Anatol Rapoport.
-
-### Algoritma Strategi Tit for Tat
+$$
+a_{i,1}=C,\qquad a_{i,t}=a_{j,t-1}\quad(t\ge2)
+$$
 
 ```mermaid
-graph LR
-    A["Strategi Tit for Tat"]
-    B["Kerja sama pada awal"]
-    C["Lawan bekerja sama sebelumnya"]
-    D["Lawan berkhianat sebelumnya"]
-    E["Bekerja sama"]
-    F["Berkhianat"]
-    A --> B
-    C --> E
-    D --> F
+graph TD
+    Start["t=1: tetapkan tindakan pertama sendiri ke C"] --> Play["Keduanya memainkan putaran t bersamaan"]
+    Play --> Observe["Amati tindakan lawan pada putaran t"]
+    Observe -->|"Lawan memilih C"| NextC["Tetapkan tindakan sendiri pada putaran t+1 ke C"]
+    Observe -->|"Lawan memilih D"| NextD["Tetapkan tindakan sendiri pada putaran t+1 ke D"]
+    NextC -->|"Tambahkan 1 pada t"| Play
+    NextD -->|"Tambahkan 1 pada t"| Play
 ```
 
-Aturan strategi ini sangat sederhana.
-1. Pada giliran pertama, selalu "bekerja sama".
-2. Dari giliran kedua dan seterusnya, **tiru persis tindakan yang diambil lawan pada giliran sebelumnya** (jika lawan bekerja sama, maka kerja sama; jika berkhianat, berkhianat).
+Setelah bekerja sama maupun menyimpang, putaran berikutnya dimainkan sebelum hasilnya diamati. Strategi ini tidak mengetahui tindakan lawan saat ini terlebih dahulu, atau mengamati penyesalan dalam pikirannya.
 
-Mengapa strategi ini kuat? Axelrod menganalisis empat karakteristik umum pada strategi yang kuat.
-1. **Baik hati (Nice)**: Tidak akan pernah berkhianat terlebih dahulu.
-2. **Membalas (Retaliating)**: Jika lawan berkhianat, selalu hukum dengan segera (balas mengkhianati).
-3. **Pemaaf (Forgiving)**: Jika lawan berubah pikiran dan kembali bekerja sama, lupakan pengkhianatan lalu dan segera kembali bekerja sama.
-4. **Jelas (Clear)**: Niatnya mudah dipahami lawan, sehingga lawan merasa aman memilih kerja sama.
+[Artikel Axelrod dan Hamilton tahun 1981](https://public.websites.umich.edu/~axe/research/Axelrod%20and%20Hamilton%20EC%201981.pdf) melaporkan bahwa TFT yang diajukan Anatol Rapoport memperoleh skor rata-rata tertinggi dalam kedua turnamen program Axelrod. Imbalan T=5, R=3, P=1, dan S=0 di sana berbeda dari tabel masa hukuman kita. TFT tidak lebih dulu meninggalkan kerja sama, menanggapi penyimpangan lawan, dan kembali bekerja sama pada putaran setelah lawan melakukannya. Aturannya juga ringkas. Ini tidak menjadikannya strategi terbaik untuk setiap lawan, sistem skor, jangka waktu, atau kondisi kesalahan.
 
-Penemuan ini menunjukkan kemungkinan bahwa "moralitas" dan "kepercayaan" dalam masyarakat manusia tidak sekadar sentimen emosional, melainkan didukung oleh rasionalitas matematis dan evolusioner.
+Bahkan antara dua pemain TFT, kesalahan tindakan yang menghasilkan CD dapat diikuti DC, lalu CD, sehingga penyimpangan bergantian terus terjadi. Skor turnamen, ekuilibrium, evolusi biologis, dan perilaku yang diinginkan secara moral adalah pertanyaan yang berbeda.
 
----
+## 5. Evolusi kerja sama: struktur kelompok dan bukti dari hewan
 
-## 5. Munculnya Kerja Sama dalam Biologi Evolusioner
+### Kapan kelompok kooperatif kecil dapat unggul
 
-Keberhasilan [Dilema Tahanan](/id/p/prisoners-dilemma/) dan "strategi tit for tat" berdampak besar pada biologi evolusioner (teori permainan evolusioner). Seperti dalam "Gen Egois" karya Richard Dawkins, alam adalah tentang kelangsungan hidup yang terkuat, sehingga organisme seharusnya mengutamakan kelangsungan hidup dan reproduksinya (berkhianat). Meski demikian, alam dipenuhi dengan "perilaku altruistik (kerja sama)", seperti kelelawar vampir yang berbagi darah dan sifat sosial lebah madu.
+Permainan evolusioner perlu menetapkan siapa bertemu siapa di antara individu dengan aturan perilaku tertentu, serta bagaimana kinerja memengaruhi generasi berikutnya. Mengutamakan kelangsungan hidup atau reproduksi tidak sama dengan perintah memilih D dalam setiap situasi.
 
-Dalam simulasi evolusi, ketika sejumlah kecil kelompok "tit for tat" dimasukkan ke dalam populasi di mana semua orang "berkhianat", telah terbukti bahwa kelompok "tit for tat" akan bekerja sama satu sama lain untuk meraih keuntungan tinggi dan secara bertahap menyingkirkan kelompok "pengkhianat". Artinya, dalam kompetisi bertahan hidup jangka panjang, kelompok yang dapat bekerja sama lah yang akan menjadi pemenang akhir.
+Kapan kelompok kecil TFT dapat berkinerja lebih baik dalam populasi yang selebihnya memakai ALLD? Pertimbangkan model sederhana skor terdiskonto: lawan tetap, tindakan dilakukan berulang dan bersamaan, tidak ada kesalahan, dan δ memberi bobot pada masa depan. ALLD memilih D setiap putaran. V(X,Y) adalah skor terdiskonto strategi X melawan Y.
 
-## 6. Kesimpulan: Bagaimana Mengatasi Dilema
+$$
+\begin{aligned}0&\le\delta<1,\\V(\mathrm{TFT},\mathrm{TFT})&=\frac{-1}{1-\delta},\\V(\mathrm{TFT},\mathrm{ALLD})&=-10-\frac{5\delta}{1-\delta},\\V(\mathrm{ALLD},\mathrm{ALLD})&=\frac{-5}{1-\delta}.\end{aligned}
+$$
 
-[Dilema Tahanan](/id/p/prisoners-dilemma/) mengajarkan kenyataan pahit bahwa jika kita mengejar kepentingan diri terlalu jauh, pada akhirnya semua orang akan rugi. Namun pada saat yang sama, seperti ditunjukkan oleh penelitian tentang permainan berulang, kita dapat membangun hubungan kerja sama jika kita memiliki hubungan berkelanjutan dan sistem umpan balik yang tepat.
+Anggap anggota kelompok TFT yang langka bertemu TFT lain dengan peluang p dan selain itu bertemu ALLD. Perbandingan dilakukan dalam limit ketika proporsi kelompok dapat diabaikan, sehingga penghuni ALLD yang sudah ada hampir hanya bertemu ALLD. p adalah proporsi lawan TFT dalam pertemuan seorang pemain TFT, bukan frekuensi TFT di seluruh populasi.
 
-Untuk mengatasi [Dilema Tahanan](/id/p/prisoners-dilemma/) di dunia nyata, diperlukan pendekatan berikut.
-- **Perubahan Aturan (Aturan Hukum)**: Melembagakan hukuman terhadap pengkhianatan untuk menghilangkan keuntungannya. (Contoh: Undang-undang antimonopoli dan pajak lingkungan)
-- **Memastikan Komunikasi**: Memberikan peluang untuk mengonfirmasi niat satu sama lain dan membangun hubungan saling percaya.
-- **Menekankan Hubungan Jangka Panjang**: Membuat orang sadar akan dampak di masa depan, yaitu "jika Anda berkhianat kali ini, tidak akan ada transaksi lagi ke depannya."
+$$
+\begin{aligned}V_{\mathrm{cluster}}&=pV(\mathrm{TFT},\mathrm{TFT})+(1-p)V(\mathrm{TFT},\mathrm{ALLD}),\\V_{\mathrm{cluster}}-V(\mathrm{ALLD},\mathrm{ALLD})&=\frac{p(9-5\delta)-5(1-\delta)}{1-\delta}.\end{aligned}
+$$
 
-Teori permainan mungkin tampak seperti dunia kalkulasi yang dingin, tetapi saat melihat ke dalam jurangnya, kita tiba pada kebenaran yang sangat manusiawi dan hangat tentang "mengapa manusia harus bekerja sama."
+Syarat untuk memperoleh skor yang secara ketat lebih tinggi daripada acuan ALLD adalah:
+
+$$
+0\le p\le1,\qquad V_{\mathrm{cluster}}>V(\mathrm{ALLD},\mathrm{ALLD})\quad\Longleftrightarrow\quad p>\frac{5(1-\delta)}{9-5\delta}
+$$
+
+Misalnya, ketika δ=0,9, peluang pertemuan di dalam kelompok harus memenuhi:
+
+$$
+\delta=\frac9{10}\quad\Longrightarrow\quad p>\frac{5(1-9/10)}{9-5(9/10)}=\frac19
+$$
+
+| p | Skor terdiskonto harapan TFT | Acuan ALLD melawan ALLD | Perbandingan |
+| --- | --- | --- | --- |
+| 0 | -55 | -50 | Lebih rendah |
+| 1/20 | -52,75 | -50 | Lebih rendah |
+| 1/9 | -50 | -50 | Sama |
+| 1/5 | -46 | -50 | Lebih tinggi |
+
+Khususnya, jika TFT tidak pernah bertemu TFT lain, untuk setiap δ berlaku:
+
+$$
+p=0\quad\Longrightarrow\quad V_{\mathrm{cluster}}-V(\mathrm{ALLD},\mathrm{ALLD})=-5<0
+$$
+
+Jadi, jangka waktu panjang saja tidak menjamin keunggulan TFT yang terisolasi. Perhitungan ini membandingkan skor yang boleh bernilai negatif, bukan tingkat reproduksi atau kelangsungan hidup. Tanpa aturan pembaruan populasi, kita tidak dapat membuktikan penyingkiran akhir atau fiksasi suatu strategi. Artikel tahun 1981 juga memberi syarat kontak di dalam kelompok dan kelanjutan bagi terbentuknya kerja sama pada awalnya.
+
+### Tidak menyamakan kelelawar dan lebah dengan satu strategi
+
+[Studi Carter dan Wilkinson tahun 2013](https://science.umd.edu/faculty/wilkinson/Carter%26Wilk_PRSB13.pdf) melakukan uji puasa pada 20 kelelawar vampir dalam penangkaran. Studi itu melaporkan hubungan antara makanan yang diterima dari pasangan interaksi dan makanan yang diberikan kepadanya, serta hubungan sosial yang bertahan lama. Korelasi saja tidak membuktikan bahwa penerimaan makanan menyebabkan pemberian berikutnya atau kelelawar menjalankan TFT.
+
+Sifat sosial lebah madu juga tidak otomatis sama dengan TFT. Axelrod dan Hamilton membahas pengorbanan lebah pekerja sebagai contoh untuk mempertimbangkan manfaat melalui kekerabatan. Kekerabatan, manfaat timbal balik, pengenalan individu, dan struktur interaksi memerlukan penelitian terpisah. Kebugaran biologis (fitness) tidak dapat begitu saja disamakan dengan moralitas atau kepercayaan manusia.
+
+## 6. Memikirkan mekanisme yang menopang kerja sama
+
+Dilema tahanan menunjukkan keadaan ketika insentif individu, dengan imbalan yang ditetapkan, tidak menopang hasil yang diinginkan kedua pihak. Untuk memikirkan kerja sama, periksa:
+
+- **Imbalan dan pilihan**: Apakah sanksi, pembagian biaya, atau hadiah benar-benar mengubah perbandingan tindakan? Efek institusional dan kondisi hukum perlu diteliti pada setiap penerapan nyata.
+- **Pengamatan dan komitmen**: Seberapa andal tindakan dapat dipastikan, dan seberapa mengikat janji serta tanggapan? Jika percakapan tidak mengubah imbalan atau pilihan permainan satu interaksi, D tetap dominan secara ketat.
+- **Jangka waktu dan pertemuan**: Seberapa besar bobot masa depan, bagaimana hubungan berakhir, siapa yang ditemui lagi, dan bagaimana kesalahan ditangani?
+
+Adanya ekuilibrium kooperatif atau kondisi skor yang menguntungkan berbeda dari kerja sama yang benar-benar dipilih dan menjadi mapan. Model membantu memeriksa asumsi konkret yang menopangnya; model tidak membuktikan nilai kepercayaan tanpa syarat.

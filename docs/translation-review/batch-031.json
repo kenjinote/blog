@@ -364,6 +364,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/paradox-prisoners-dilemma/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-prisoners-dilemma/index.md",
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "translationHash": "fb6a68b36919b30b80f343b772cbd2ce7ebb7b752b85ba61054d1c91ec7d13fe",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete old and revised Indonesian metadata,introduction,sixsections,two revisedtables and both diagrams against frozen Japanese. Preserved history,price/environment/arms,repetition,evolution,bat/bee and institutions. Corrected fictional legalrelease,Pareto versus sum,unconditional groupvictory and moral inference. Original totalmasa hukuman dimaksimalkan could reverse sentence minimization;revised explicitly negates sentence into payoff. Conditional rarecluster and biological association agree."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared imbalan/utilitas versus masahukuman,dominanketat withEnglishanchor,ekuilibriumNash versus sempurnasubpermainan,induksimundur,efisiensiPareto,skorterdiskonto versus kebugaranbiologis. Distinguished kelompok from populasi,matchingp from beliefq/frequency. Beforefirstproof changed draft anggota kelompok lain to TFT lain di dalam kelompok,avoiding anothergroup versus anothermember ambiguity,and reread finalsentence. No exclusive Indonesian termstandard claim."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read tenidenticalTeX and bothtables,own/opponent order,T0>R-1>P-5>S-10,5-4q>=1,pureefficientCC/CD/DC versus sumCC-2. Checked threediscounted values,rareclusterresident baseline,p>5(1-delta)/(9-5delta),delta0,9 threshold1/9,rows-55/-52,75/-50/-46 versus-50 and isolatedloss5. Decimalcomma deliberately matches source-52.75. Negative scores not reproduction/survival rates. Auxiliaryfinite arithmetic/traces once,not dynamics or general/empirical proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executablearticleprograms. Read bothsix-edge Mermaid sources,simultaneousjointoutcomes not sequentialobservation,and TFTfirstC/play/observe/nextchoice withbothbranches advancingt. Original fromsecondround timing alreadycorrect and retained,not claimed as originalerror. Corrected changedmind/berubahpikiran emphasis to observedprioraction,next-roundresponse andCD/DC erroralternation. Exact topology,decodedHTMLmath and librarieschecked,no browser/runtime/tournament/biologicalcode reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Matched fourexternalreferences(two primaryresearchpapers,two officialteaching sources) and localizedid internalarticle. Sourcereadinglimits unchanged,20fastedbats nottotalcolony,correlation notcausalTFT. Preserved Sep24T15date,slug,taxonomy,imagehash,actualNov12lastmod. Selectedproof and1800multilingualpages/3277HTTPSHTML41XML passed;17priortests referenced notrerun. Twoothertranslations/publication pending."
+        }
+      },
+      "summary": "Full Indonesian cooperation review distinguishing sentence minimization,within-group matching and conditional evolution.",
+      "languageSpecificFindings": "Corrected original maximizedtotalprisonsentence implication using explicit negativepayoff. Clarified anotherTFTwithincluster rather than anothergroup member in draft. Matched payoff/utility,strictdominance,subgameperfect,discountedscore and biologicalfitness. Retained originalcorrect secondround timing;not copied Hindi-specific finding. Originalpriceexample has nocurrencyamount,no currencyerror claimed.",
+      "validation": "docs/translation-review/batch-031-id-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "2 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0,population-update simulation,biological data reanalysis and tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -815,6 +855,56 @@
       "unreviewedTranslations": 12651,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 3,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "id"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "validation": "docs/translation-review/batch-031-id-validation.json",
+      "checks": "docs/translation-review/batch-031-id-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-031-id-ledger-validation.json",
+      "texEach": 10,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "cooperationBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "deterministicStrategyPairs": 3,
+        "roundsEach": 8,
+        "discountedPrefixPlusExactTailCases": 306,
+        "clusterMatchingCases": 10605,
+        "isolatedTftDifference": "-5",
+        "exampleDelta": "9/10",
+        "exampleMatchingThreshold": "1/9",
+        "numericTableCases": 4,
+        "tftErrorTraceRounds": 8,
+        "scope": "Once per invocation,finite exact auxiliary arithmetic and traces. Not article programs,population-update simulation,ESS/SPE/all-strategy proof,biological data reanalysis or tournament reproduction. Rare-cluster resident baseline and negative score meaning read separately in prose."
+      },
+      "actualPreviewBundles": 32,
+      "multilingualPages": 1800,
+      "httpsHtmlPages": 3277,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 382,
+      "unreviewedTranslations": 12650,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 2,
       "publicationPending": true
     }
   ]
