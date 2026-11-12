@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "article": "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+  "sourceAudit": "docs/translation-review/batch-033-source-audit.json",
+  "sourceNotes": "docs/translation-review/batch-033-source-notes.md",
+  "reviews": {
+    "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "translationHash": "7fb58863c1f274804f28f5db013e79960174cd7094454698b9fbe855a90a631a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full original Japanese434lines/English388lines and both actual revised complete metadata,six sections,29displayformulas,two diagrams,BWT andarchitecture tables. Reread final quantifier heading,optimalHuffman condition,positiveprobability assumption,code literals andretainedEnglish example. Preserved counting/Kraft/KL proof,Huffmanmerge,arithmeticinterval,rANSinverse,tANS,LZ/BWT/context/LLM andengineering themes. Corrected fixed-encoder quantifiers,universal per-file limits,idealpayload versus entirefile cost,exactNLL equality and intelligence/benchmark overclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared injective versus bijective,lossless versus lossy,prefix versus uniquelydecodable,normalizedQ versus raw2^-length,expectation versus individualfile,marginal/joint/entropy rate,iid versus stationary,naturallog versus base2/meanNLL,integerstate versus serializedbitstream,MiB versus MB,ASCII7bit versus byte. English retained content/post/index18byte/distance412 example beside shared std::vector<int>16byte/distance200 example. Corrected EN heading to no compressor can shorten everyfile,not everyfile is incompressible. Format/tool/level,modelsharing and tokenization/precision costs aligned."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared29identicalTeX with domains: D(E(x)),fixedEcounting c1throughn,Kraftfiniteleafproof,normalizedQ/KLidentity,Shannonceil andnondegenerateiidblockbounds,stationaryrate,Huffmansiblingmerge/skewedbinaryentropy,positivearithmeticinterval/product/containeddyadicK sufficientbound andexpectedH+2,rANSpositivefrequencies/inverse,tANSclosedintegerLstates,LFzero-basedrank,NLLbase/average andserialIOmodel. Original136counting/510swap/1093BWT/650rANSprofiles308096roundtrips166400inverse/511rationalinterval finite evidence retained. New4forwardcopy/NLL/entropy/3IO examples pass,not generalproof/benchmark."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Neither old nor revised JA/EN has executable article programs: code review covers both complete Mermaid sources and inline technical examples. Newgraphs8+6edges,including actualbzip2preBWT RLE,matchHTML. Actual std::vector<int>,literal dollar/sentinel,annb$aa andall7BWT table rows survive code/HTML parsing;mathchecker excludes inlinecode literals. Independent mathematical scripts are auxiliary,not invented article-program runs. Read selected officialbzip2sourcefunctions andLZMAencoder excerpts withoutcompiling/executingthem. No fullcompressor/LLMexperiments/browser/native certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Eleven primarypaper/officialformat/manual/source references match source andHTML;actual reading scopes recorded separately,notallpapers/filesread. Preserved originalOct14T12date,slug,imagehash and localizedtaxonomy;actualNov12lastmod,explicitmermaidflag documents requirement.14hreflang13sidebar and34bundle1918multilingualpages/3488HTTPSHTML41XML pass;17existingtests rerun. Other11bodies remainunread andnoapprovalinferredfrombuild. Batch032matchingCI stillpending;new033publicationnotstarted."
+        }
+      },
+      "summary": "Complete English lossless-compression comparison, normalized probability and implementation conditions, with finite mathematical and decoded-HTML verification.",
+      "languageSpecificFindings": "English source had normalizedQ formula but unnormalizedQ prose; corrected without double-counting Kraftslack. Preserved English18byte content/post/index example. Quantifier heading explicit,no universal incompressibility;retained iidcondition andaddedcorrelatedentropy-rate distinction. Whole-fileNLL equality,universal speeds/levelindependence,memcpyoverlap andone-cycleANS claims corrected.",
+      "validation": "docs/translation-review/batch-033-ja-en-validation.json",
+      "limitations": [
+        "AI review,not human/native speaker certification.",
+        "Other11translationbodies unreviewed;none approved by structure inventory/build.",
+        "Article programs0;auxiliaryfinitechecks not generalproof,completecompressor,benchmark orLLMexperimentalreproduction.",
+        "Primaryreading selected;no fullpaper/sourcecode orbrowser/KaTeX/Mermaid execution certification.",
+        "Batch033publication andwholegoal pending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "ja",
+        "en"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "validation": "docs/translation-review/batch-033-ja-en-validation.json",
+      "checks": "docs/translation-review/batch-033-ja-en-checks.json",
+      "texEach": 29,
+      "diagramsEach": 2,
+      "diagramEdgesEach": [
+        8,
+        6
+      ],
+      "articleProgramsEach": 0,
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 34,
+      "multilingualPages": 1918,
+      "httpsHtmlPages": 3488,
+      "httpsXmlFiles": 41,
+      "unitTestsRerun": 17,
+      "reviewedTranslationsTotal": 397,
+      "unreviewedTranslations": 12635,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    }
+  ],
+  "limitations": [
+    "Historicalsourceaudit anddraftreceipts retained,not overwritten by finalreview.",
+    "Only JA/EN fully read;othersinventoryonly.",
+    "No native/browser/benchmarks/serializedcompressor/LLMexperimentalcertification.",
+    "Newbatchpublication pending;prior032CI trackedseparately."
+  ]
+}

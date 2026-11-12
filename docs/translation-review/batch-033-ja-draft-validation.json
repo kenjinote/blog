@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T21:18:04.400204+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "sha256": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "sourceSha256": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "texExpressions": 29,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "literalDollarAndAngleBracketCodePreserved": true,
+      "bwtTableAll7RowsExact": true,
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "dateModified": "2026-11-12",
+      "passed": true
+    }
+  ],
+  "priorIndependentAuxiliaryChecks": "docs/translation-review/batch-033-original-math-probe.json",
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source/decodedHTML checks only;not prose approval or review ledger certification.",
+    "No executable articleprograms;independent finite auxiliary experiments are separately scoped.",
+    "Not browser/KaTeX/Mermaid execution or native-language/full-site/benchmarks/completecompressor certification.",
+    "Draft source can still change until reviewed translations registered;source hash recorded per actualcheck."
+  ]
+}
