@@ -363,6 +363,46 @@
         "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
         "Batch033publication andwholegoal pending;032closure is separately recorded."
       ]
+    },
+    "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "translationHash": "68651cedea504dd5444cf878b9f57c6b98983d9acfaf6b6f748dd15b1d72b73b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full originalIndonesian metadata,four sections,sixdisplayformulas,two entireMermaidgraphs andperformance table;read full actualrevisedmetadata,sixsections,29formulas,bothgraphs,BWT andarchitecture tables againstfrozenJapanese. Rereadtwofinalpolishedsentences. Restored counting/Kraft/KLproof,Huffmanmerge,arithmeticinterval,rANSinverse/tANSstates,BWTinverse,NLLandengineeringthemes. CorrectedarbitraryH+1upper,unconditionalper-file/physicalbounds,idealprediction asminimumactualfilesize anduniversalperformance/intelligenceclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "RemovedactualRussianwordстрогоfromcountingparagraphandThaiwordตามfromANStransitionprose;revisedIndonesiananddecodedHTML containneitherCyrillicnorThai. Compared nirrugi/berugi,injektif/bijeksi,informasi diri/nilaiharapan,panjangrata-rata,bebasprefiks/decodabilityunik,ternormalisasi/kanonis/renormalisasi,marginal/joint/lajuentropi,independenberdistribusiidentik/seragam/stasioner,muatanideal/berkaslengkap,bit/byte/MiB/MB. BWTbaris/kolom/penanda andLFpriorrankconsistent. CorrectedIOspeedwordingtomeasureonlyv_dec inoriginalbytesandclearinitialratio sentence."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read29sharedTeX anddomains: fixedE/uniformn/counting1<=c<=n,Kraftleafbudget/normalizedQKL,positive-support/singleton,constructedShannonceil/optimalH+1upper,nondegenerateiidblock/dependentjoint/stationaryrate,Huffmanmerge/.99binaryentropy,arithmeticpositiveinterval/conditionalproduct/containeddyadicsufficientK/expectedH+2,rANSpositivefrequencies/exactinverse,tANSclosedintegerLstates,LFzero-basedpriorrank,NLLnaturallogandmean,serialIOconditions. OriginalnormalizedKLidentityvalid,noEnglishspecificQdefectassigned. Earlierfiniteevidence andselected4forwardcopy/NLL/entropy/3IO/c100auxiliarychecksnotgeneralproof/benchmark. No oldIDc100exampleinvented."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Original andrevisedIndonesian executablearticleprograms0. ReadbothcompleteMermaidgraphs andinlineexamples;actualHTMLconfirms8+6edgesJA topology,bzip2RLEbeforeBWT,all7BWTrows,std::vector<int>,banana$,annb$aa andsentinel. Literalcode dollar excludedmathcount. AddedselectedIDcheckthatbaselinetexthasactualRussian/ThaiintrusionsandcurrentMD/articleHTMLhavenoneofthoseUnicodeblocks;earlierreceiptsunchanged. LZgrowingcopy,flags/model/table/headercosts,ANSstack/contextorder aligned. Auxiliaryscriptsnotarticleprogramruns/fullcompressor/LLMexperiment/browser/nativecertification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Elevenprimary/officialreferenceURLs matchsourceandactualHTML;earlierdocumentedselectedprimaryreadinglimits retained,notnewfullpaper/file reading. OldIDbodyhadnoexternalreferencesorunrelatedmislink,noneinvented. OriginalOct14T12rawdate,slug,imagehashandlocalizedtaxonomy retained,actualNov12lastmodandmermaidflag.34bundle442snapshots/1918multilingualpages/3488HTTPSHTML41XML and14hreflang13sidebar pass.17existingtests referencepriorJAENsuccess,notrerun. Twoother033translationsandpublicationpending;032closure separate."
+        }
+      },
+      "summary": "Complete Indonesian lossless-compression review removing Russian and Thai intrusions and restoring full coding proofs and costs.",
+      "languageSpecificFindings": "CorrectedactualforeignlanguageintrusionsRussianстрогоandThaiตาม,verifiedtheirbaselinepresenceandabsenceofCyrillic/Thai incurrentMDandarticleHTML. Restoredfoursection/sixformula summaryto6themes29math. Clarifiedinjektif/bijeksi,normalisasi/kanonis/renormalisasi,bebasprefiks/unik,baris/kolom,ideallength/wholefile,IOversusoriginal-byte-decodingrate. OriginalnormalizedKLidentityvalid;no oldc100example ornonexistentmislink claimed.",
+      "validation": "docs/translation-review/batch-033-id-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "2 other translation bodies remain unreviewed at this stage.",
+        "Article programs0;independentfiniteauxiliarychecks not generalproof,fullcompressor,benchmark orLLMexperimentalreproduction.",
+        "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
+        "Batch033publication andwholegoal pending;032closure is separately recorded."
+      ]
     }
   },
   "stages": [
@@ -937,6 +977,74 @@
       "unreviewedTranslations": 12627,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 3,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "id"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "validation": "docs/translation-review/batch-033-id-validation.json",
+      "checks": "docs/translation-review/batch-033-id-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-033-id-ledger-validation.json",
+      "texEach": 29,
+      "diagramsEach": 2,
+      "diagramEdgesEach": [
+        8,
+        6
+      ],
+      "articleProgramsEach": 0,
+      "auxiliaryChecks": {
+        "lzForwardCopyExamples": 4,
+        "nllBaseAndAveragingExample": true,
+        "binaryEntropyAt099": 0.08079313589591118,
+        "ioModelExamples": [
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 200000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.0075
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 1000000000,
+            "decodedBytesPerSecond": 10000000,
+            "rawSeconds": 0.001,
+            "serialCompressedSeconds": 0.10025
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 1000000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 100000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.02
+          }
+        ],
+        "largeCountingExample": {
+          "c": 100,
+          "requiresNAtLeast": 100,
+          "strictFractionUpperBound": 1.5777218104420236e-30,
+          "scope": "Fixedinjectiveencoder,uniformnbitinput;notallcompressorssimultaneously."
+        },
+        "scope": "Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor."
+      },
+      "priorIndependentAuxiliaryChecks": "docs/translation-review/batch-033-original-math-probe.json",
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 34,
+      "multilingualPages": 1918,
+      "httpsHtmlPages": 3488,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 406,
+      "unreviewedTranslations": 12626,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 2,
       "publicationPending": true
     }
   ],

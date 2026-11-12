@@ -106,6 +106,10 @@ def main():
             assert all(value in ''.join(article.all) for value in ['c=100','n≥100','2^(-99)','1,58×10^(-30)','1 MB','n=8.000.000','12,5 Byte'])
             versions[-1]['originalC100CountingExamplePreservedWithConditions']=True
             versions[-1]['decimalMegabyteAndBitByteExamplesPreserved']=True
+        if lang=='id':
+            assert 'строго' in original and 'ตาม' in original
+            assert not re.search(r'[\u0400-\u052f\u0e00-\u0e7f]',text+''.join(article.all))
+            versions[-1]['originalRussianAndThaiIntrusionsRemoved']=True
     doc={'version':1,'checkedAt':datetime.now(timezone(timedelta(hours=9))).isoformat(),'allPassed':True,'versions':versions,'priorIndependentAuxiliaryChecks':'docs/translation-review/batch-033-original-math-probe.json','auxiliaryChecks':auxiliary(),'reviewedTranslationsAdded':0,'limitations':['Selected source/decodedHTML checks only;not prose approval or review ledger certification.','No executable articleprograms;independent finite auxiliary experiments are separately scoped.','Not browser/KaTeX/Mermaid execution or native-language/full-site/benchmarks/completecompressor certification.','Draft source can still change until reviewed translations registered;source hash recorded per actualcheck.']}
     args.output.write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps({'passed':True,'versions':len(versions),'texEach':29,'graphEdges':[8,6],'referencesEach':11,'articlePrograms':0}))
 
