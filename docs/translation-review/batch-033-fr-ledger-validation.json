@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-11-12T22:06:04.504366+09:00",
+  "recordStdout": "Recorded ai review: post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.fr.md\n",
+  "ledgerStdout": "{\"current\": 403, \"unreviewed\": 12629}\n",
+  "priorEntriesUnchanged": 402,
+  "humanReviews": 0,
+  "scope": "Only fullbody-compared translation added;allpriorledger/evidence entries immutable,publication033pending."
+}

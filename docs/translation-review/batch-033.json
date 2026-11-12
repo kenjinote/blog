@@ -243,6 +243,46 @@
         "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
         "Batch033publication andwholegoal pending;032closure is separately recorded."
       ]
+    },
+    "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "translationHash": "f3b83bb6f1ae71d643f37dabf595cf31cb8920ef91e13db689fb93b97b874882",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete oldFrench metadata,four sections,sixdisplayformulas,twofullMermaidgraphs andperformance table;read actualfull revisedmetadata,sixsections,29formulas,both graphs,BWT andarchitecture tables against frozenJapanese. Reread finalfourterminology/grammarpolishes. Restored counting/Kraft/KLproof,Huffmanmerge,arithmeticinterval,rANSinverse/tANSstates,BWTinverse,NLL/engineeringthemes. Corrected arbitraryH+1upper,unconditionalindividualfilelimits,idealpayload/totalfileconfusion anduniversalperformance/intelligenceclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Originalinjective parentheticalbiunivoque couldsuggestbijection;revisedrequirementpreciselyinjective,whileexplicitrANSstatebijectionseparate. Compared information propre/esperance,longueur moyenne,codeprefix/decodageunique,normalisation/canonique/renormalisation,entropiemarginale/conjointe/taux,iid/stationnaire,chargeutile/fichierentier,bit/octet/MiB-mebioctet/MB-Mo-megaoctet. BWTligne/colonne/sentinelle andrankstrictlybeforeindexconsistent. Clarified nonnegativeKLwithpositiveounulle,range coding/retainedcarryterminology. OldnormalizedKLidentityvalid,noEnglishspecificQdefectassigned."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared29sharedTeX anddomains: fixedE/uniformn/counting1<=c<=n,Kraftleafcount/normalizedQKL,positivesupport/singleton,Shannonceil/optimalH+1upper,nondegenerateiidblocks/dependentjoint/stationaryrate,Huffmanmerge/.99binaryentropy,positivearithmeticinterval/conditionalproduct/containeddyadicsufficientK/expectedH+2,rANSpositivefrequency/exactinverse,tANSclosedintegerLstates,LFzero-basedpriorrank,NLLnaturallogandmean,serialIOassumptions. Earlierfinite136counts510swaps1093BWT650rANSprofiles511rationalchecks retained;selected4forwardcopy/NLL/entropy/3IO/c100auxiliarychecks notgeneralproof orbenchmark. OldFRhadnoc100sample,noneinvented."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Old andrevisedFrench executablearticleprograms0. Read bothentireMermaidgraphs andinlineexamples;actualHTML confirms8+6edgesJA topology,bzip2RLEbeforeBWT,all7BWTrows,std::vector<int>,banana$,annb$aa andliteral sentinel. Inlinecode dollar excludedfrommathcounts. LZgrowingoutput/overlap distinguished fromgenericmemcpy orstaticsnapshot,flag/model/table/headercosts explicit,ANSstack/contextorder aligned. Auxiliaryscriptsnotarticleprogramruns/fullcompressor/benchmark/LLMexperimentalreproduction. No browser/KaTeX/Mermaid/nativecertification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Elevenprimary/officialreferenceURLs matchfrozenJAandactualHTML;previouslydocumentedselectedprimaryreadinglimits retained,notnewfullpaper/file reading. OldFrenchbodyhadnoexternalreferencesorunrelatedmislink,noneinvented. Oct14T12rawdate,slug,imagehash andlocalizedtaxonomy preserved,actualNov12lastmodandmermaidflag.34bundle442snapshots/1918multilingualpages/3488HTTPSHTML41XML and14hreflang13sidebar pass.17tests referpriorJAENsuccess,notrerun. Fiveother033translationsandpublicationpending;032closure separate."
+        }
+      },
+      "summary": "Complete French lossless-compression review restoring derivations, precise injectivity and byte units, with decoded-HTML verification.",
+      "languageSpecificFindings": "Restoredfoursection/sixformula summaryto6themes29math. Removedambiguousbiunivoqueparentheticalfrominjectivityrequirement,clarifiedoctet/MiB/MB-Mo. CorrectedarbitrarycodeH+1upper andidealcompressionrate asunconditionalfilelimit;BWTposition/sentinelcostandLLMmodelcostexplicit. OriginalnormalizedKLidentityvalid;nooldc100example ornonexistentmislinkclaimed. Decodageunique,nonnegativeKL wordingandmixedgenderheadingpolished.",
+      "validation": "docs/translation-review/batch-033-fr-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "5 other translation bodies remain unreviewed at this stage.",
+        "Article programs0;independentfiniteauxiliarychecks not generalproof,fullcompressor,benchmark orLLMexperimentalreproduction.",
+        "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
+        "Batch033publication andwholegoal pending;032closure is separately recorded."
+      ]
     }
   },
   "stages": [
@@ -613,6 +653,74 @@
       "unreviewedTranslations": 12630,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 6,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "fr"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "validation": "docs/translation-review/batch-033-fr-validation.json",
+      "checks": "docs/translation-review/batch-033-fr-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-033-fr-ledger-validation.json",
+      "texEach": 29,
+      "diagramsEach": 2,
+      "diagramEdgesEach": [
+        8,
+        6
+      ],
+      "articleProgramsEach": 0,
+      "auxiliaryChecks": {
+        "lzForwardCopyExamples": 4,
+        "nllBaseAndAveragingExample": true,
+        "binaryEntropyAt099": 0.08079313589591118,
+        "ioModelExamples": [
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 200000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.0075
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 1000000000,
+            "decodedBytesPerSecond": 10000000,
+            "rawSeconds": 0.001,
+            "serialCompressedSeconds": 0.10025
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 1000000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 100000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.02
+          }
+        ],
+        "largeCountingExample": {
+          "c": 100,
+          "requiresNAtLeast": 100,
+          "strictFractionUpperBound": 1.5777218104420236e-30,
+          "scope": "Fixedinjectiveencoder,uniformnbitinput;notallcompressorssimultaneously."
+        },
+        "scope": "Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor."
+      },
+      "priorIndependentAuxiliaryChecks": "docs/translation-review/batch-033-original-math-probe.json",
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 34,
+      "multilingualPages": 1918,
+      "httpsHtmlPages": 3488,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 403,
+      "unreviewedTranslations": 12629,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 5,
       "publicationPending": true
     }
   ],

@@ -4025,6 +4025,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-033.json",
       "evidenceHash": "26ebbbb0c4a342d82274ab0549da870ee1631c665f61643e0263141cf7aaffab"
+    },
+    "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.fr.md": {
+      "source": "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "translationHash": "f3b83bb6f1ae71d643f37dabf595cf31cb8920ef91e13db689fb93b97b874882",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-033.json",
+      "evidenceHash": "1e062bbd5a9e8ed8d5b7e2797326150749229b515e054f3f98608111b3cda755"
     }
   }
 }

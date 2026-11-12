@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T22:05:10.934242+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "fr",
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.fr.md",
+      "sha256": "f3b83bb6f1ae71d643f37dabf595cf31cb8920ef91e13db689fb93b97b874882",
+      "sourceSha256": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "texExpressions": 29,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "literalDollarAndAngleBracketCodePreserved": true,
+      "bwtTableAll7RowsExact": true,
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "dateModified": "2026-11-12",
+      "passed": true
+    }
+  ],
+  "priorIndependentAuxiliaryChecks": "docs/translation-review/batch-033-original-math-probe.json",
+  "auxiliaryChecks": {
+    "lzForwardCopyExamples": 4,
+    "nllBaseAndAveragingExample": true,
+    "binaryEntropyAt099": 0.08079313589591118,
+    "ioModelExamples": [
+      {
+        "inputBytes": 1000000,
+        "compressedBytes": 250000,
+        "ioBytesPerSecond": 100000000,
+        "decodedBytesPerSecond": 200000000,
+        "rawSeconds": 0.01,
+        "serialCompressedSeconds": 0.0075
+      },
+      {
+        "inputBytes": 1000000,
+        "compressedBytes": 250000,
+        "ioBytesPerSecond": 1000000000,
+        "decodedBytesPerSecond": 10000000,
+        "rawSeconds": 0.001,
+        "serialCompressedSeconds": 0.10025
+      },
+      {
+        "inputBytes": 1000000,
+        "compressedBytes": 1000000,
+        "ioBytesPerSecond": 100000000,
+        "decodedBytesPerSecond": 100000000,
+        "rawSeconds": 0.01,
+        "serialCompressedSeconds": 0.02
+      }
+    ],
+    "largeCountingExample": {
+      "c": 100,
+      "requiresNAtLeast": 100,
+      "strictFractionUpperBound": 1.5777218104420236e-30,
+      "scope": "Fixedinjectiveencoder,uniformnbitinput;notallcompressorssimultaneously."
+    },
+    "scope": "Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor."
+  },
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source/decodedHTML checks only;not prose approval or review ledger certification.",
+    "No executable articleprograms;independent finite auxiliary experiments are separately scoped.",
+    "Not browser/KaTeX/Mermaid execution or native-language/full-site/benchmarks/completecompressor certification.",
+    "Draft source can still change until reviewed translations registered;source hash recorded per actualcheck."
+  ]
+}
