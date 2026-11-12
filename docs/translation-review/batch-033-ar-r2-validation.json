@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T22:33:38.843798+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ar",
+      "path": "content/post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ar.md",
+      "sha256": "5d4164c382d63a5fb2f538e76f22b53da250ac647d5df0024d3c496e9b29c278",
+      "sourceSha256": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "texExpressions": 29,
+      "diagrams": 2,
+      "diagramEdges": [
+        8,
+        6
+      ],
+      "articleExecutablePrograms": 0,
+      "references": 11,
+      "literalDollarAndAngleBracketCodePreserved": true,
+      "bwtTableAll7RowsExact": true,
+      "datePublished": "2026-10-14T12:00:00+09:00",
+      "dateModified": "2026-11-12",
+      "passed": true,
+      "arabicStaticDirection": {
+        "rtlHtml": true,
+        "ltrBidiValues": 113,
+        "sourceAndHtmlBidiExact": true,
+        "criticalComparisonsAndLiteralCodePreserved": true,
+        "linkedLocalStylesheetsRead": [
+          "scss/style.min.053be3a5f0163a09f569d953d9f2378f640c0b40dc9454bd891db75e1e15e946.css"
+        ],
+        "mathAndCodeLtrCss": true,
+        "scope": "Static source/HTML/linkedCSS only;not browser/KaTeX/Mermaid execution or visual guarantee."
+      }
+    }
+  ],
+  "priorIndependentAuxiliaryChecks": "docs/translation-review/batch-033-original-math-probe.json",
+  "auxiliaryChecks": {
+    "lzForwardCopyExamples": 4,
+    "nllBaseAndAveragingExample": true,
+    "binaryEntropyAt099": 0.08079313589591118,
+    "ioModelExamples": [
+      {
+        "inputBytes": 1000000,
+        "compressedBytes": 250000,
+        "ioBytesPerSecond": 100000000,
+        "decodedBytesPerSecond": 200000000,
+        "rawSeconds": 0.01,
+        "serialCompressedSeconds": 0.0075
+      },
+      {
+        "inputBytes": 1000000,
+        "compressedBytes": 250000,
+        "ioBytesPerSecond": 1000000000,
+        "decodedBytesPerSecond": 10000000,
+        "rawSeconds": 0.001,
+        "serialCompressedSeconds": 0.10025
+      },
+      {
+        "inputBytes": 1000000,
+        "compressedBytes": 1000000,
+        "ioBytesPerSecond": 100000000,
+        "decodedBytesPerSecond": 100000000,
+        "rawSeconds": 0.01,
+        "serialCompressedSeconds": 0.02
+      }
+    ],
+    "largeCountingExample": {
+      "c": 100,
+      "requiresNAtLeast": 100,
+      "strictFractionUpperBound": 1.5777218104420236e-30,
+      "scope": "Fixedinjectiveencoder,uniformnbitinput;notallcompressorssimultaneously."
+    },
+    "scope": "Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor."
+  },
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source/decodedHTML checks only;not prose approval or review ledger certification.",
+    "No executable articleprograms;independent finite auxiliary experiments are separately scoped.",
+    "Not browser/KaTeX/Mermaid execution or native-language/full-site/benchmarks/completecompressor certification.",
+    "Draft source can still change until reviewed translations registered;source hash recorded per actualcheck."
+  ]
+}

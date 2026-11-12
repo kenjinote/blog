@@ -443,6 +443,46 @@
         "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
         "Batch033publication andwholegoal pending;032closure is separately recorded."
       ]
+    },
+    "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "translationHash": "5d4164c382d63a5fb2f538e76f22b53da250ac647d5df0024d3c496e9b29c278",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete oldArabic metadata,four sections,sixdisplayformulas,twoentireMermaidgraphs andperformance table;read fullactualrevisedmetadata,sixsections,29formulas,bothgraphs,BWT andarchitecture tables againstfrozenJapanese. Rereadfinaldisjointsubtree/BWTexplicitLtoF/accessgranularity/ellipsissentences. Restored counting/Kraft/KLproof,Huffmanmerge,arithmeticinterval,rANSinverse/tANSstates,BWTinverse,NLLandengineering. CorrectedarbitraryH+1upper,per-fileabsolutebounds,idealpredictionasminimumactualfilesize anduniversalperformance/intelligenceclaims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared الضغطغيرالفاقد/الفاقد,دالةمتباينة/تقابل,المعلوماتالذاتية/القيمةالمتوقعة,متوسطالطول,خالمنالبادئات/فكوحيد,التطبيع/هوفمانالقانونيcanonical/إعادةالتطبيع,الهامشية/المشتركة/معدلالإنتروبيا,مستقلةمتطابقةالتوزيع/منتظمة/مستقرةإحصائيا,الحمولة/الملفكله,بت/بايت/MiB/MB. BWTالصف/العمود/علامةالحراسةandLFpriorrankaligned;explicitLsortedtoF avoidsambiguouslast/formerpronouns. Accessgranularitytranslatedunit-size,notarithmeticprecision. OriginalnormalizedKLidentityvalid,noEnglishspecificQdefectassigned."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read29sharedTeXanddomains: fixedE/uniformn/counting1<=c<=n,Kraftdisjointleafcount/normalizedQKL,positivesupport/singleton,constructedShannonceil/optimalH+1upper,nondegenerateiidblocks/dependentjoint/stationaryrate,Huffmanmerge/.99binaryentropy,positivearithmeticinterval/conditionalproduct/containeddyadicsufficientK/expectedH+2,rANSpositivefreq/exactinverse,tANSclosedintegerLstates,LFzero-basedpriorrank,NLLnaturalbase/meanandserialIOconditions. Priorfiniteevidence andselected4forwardcopy/NLL/entropy/3IO/c100auxiliarychecksnotgeneralproof/benchmark. No oldARc100exampleinvented. SharedTeXunalteredbyLTRwrappers."
+        },
+        "code": {
+          "status": "checked",
+          "note": "OldandrevisedArabic executablearticleprograms0. ReadbothcompleteMermaidgraphs/inlineexamples;actualHTMLconfirms8+6edgesJA topology,bzip2preBWTRLE,all7BWTrows,std::vector<int>,banana$,annb$aa andsentinel.113sourceLTRbdi valuesexactlymatchHTML,includinginlinecodeandcriticalcomparisons/stateintervals;RTLhtmlandactual linkedCSSmath/pre/highlightLTR checked. InitialcheckfailedoneASCIIellipsisrenderedUnicodebyHugo;initialbuild/checksretained,sourceexplicitUnicodeellipsisreread,freshR2buildpasseswithoutgenericnormalization. Auxiliaryscriptsnotarticleprogramruns/fullcompressor/LLMexperiment/browser/nativecertification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Elevenprimary/officialreferenceURLsmatchsourceandactualHTML;earlierdocumentedselectedprimaryreadinglimits retained,notnewfullpaper/file reading. OldArabicbodyhadnoexternalreferencesorunrelatedmislink,noneinvented. OriginalOct14T12rawdate,slug,imagehashandlocalizedtaxonomy retained,actualNov12lastmodandmermaidflag.34bundle442snapshots/1918multilingualpages/3488HTTPSHTML41XML and14hreflang13sidebar passR2.17tests referencepriorJAENsuccess,notrerunhere. All12translationsnowfullbodycompared;finalassembly/publicationandwholegoalpending,032closureseparate."
+        }
+      },
+      "summary": "Complete Arabic lossless-compression review restoring derivations and statically verifying 113 left-to-right spans, code and RTL styles.",
+      "languageSpecificFindings": "Restoredfoursection/sixformula summaryto6themes29math. Added113LTRisolationsincludingcomparisons/intervals/literalcode;RTLhtmlandlinkedmath/pre/highlightCSSverified. CorrectedBWTambiguouscolumnpronounsusingexplicitLtoFandaccessgranularitywording. Initialoneellipsisexactmatchfailurepreserved;sourceUnicodeellipsisandfreshR2pass. Clarifiednormalized/canonical/renormalizedandpayload/filecost. OriginalnormalizedKLidentityvalid;no nonexistentmislinkoroldc100sampleclaimed.",
+      "validation": "docs/translation-review/batch-033-ar-r2-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "0 other translation bodies remain unreviewed at this stage.",
+        "Article programs0;independentfiniteauxiliarychecks not generalproof,fullcompressor,benchmark orLLMexperimentalreproduction.",
+        "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
+        "Batch033publication andwholegoal pending;032closure is separately recorded."
+      ]
     }
   },
   "stages": [
@@ -1153,6 +1193,74 @@
       "unreviewedTranslations": 12625,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 1,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "ar"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "validation": "docs/translation-review/batch-033-ar-r2-validation.json",
+      "checks": "docs/translation-review/batch-033-ar-r2-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-033-ar-r2-ledger-validation.json",
+      "texEach": 29,
+      "diagramsEach": 2,
+      "diagramEdgesEach": [
+        8,
+        6
+      ],
+      "articleProgramsEach": 0,
+      "auxiliaryChecks": {
+        "lzForwardCopyExamples": 4,
+        "nllBaseAndAveragingExample": true,
+        "binaryEntropyAt099": 0.08079313589591118,
+        "ioModelExamples": [
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 200000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.0075
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 1000000000,
+            "decodedBytesPerSecond": 10000000,
+            "rawSeconds": 0.001,
+            "serialCompressedSeconds": 0.10025
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 1000000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 100000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.02
+          }
+        ],
+        "largeCountingExample": {
+          "c": 100,
+          "requiresNAtLeast": 100,
+          "strictFractionUpperBound": 1.5777218104420236e-30,
+          "scope": "Fixedinjectiveencoder,uniformnbitinput;notallcompressorssimultaneously."
+        },
+        "scope": "Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor."
+      },
+      "priorIndependentAuxiliaryChecks": "docs/translation-review/batch-033-original-math-probe.json",
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 34,
+      "multilingualPages": 1918,
+      "httpsHtmlPages": 3488,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 408,
+      "unreviewedTranslations": 12624,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 0,
       "publicationPending": true
     }
   ],

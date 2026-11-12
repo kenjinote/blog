@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T22:31:45.847120+09:00",
+  "allPassed": false,
+  "actualPreviewBundles": 34,
+  "sourceSnapshotsExact": 442,
+  "results": [
+    {
+      "command": [
+        "docs/translation-review/verify_batch_033.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-lossless-ar",
+        "--languages",
+        "ar",
+        "--expected-modified",
+        "ar=2026-11-12",
+        "--output",
+        "docs/translation-review/batch-033-ar-validation.json"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\work\\kenji.blog\\docs\\translation-review\\verify_batch_033.py\", line 148, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"C:\\work\\kenji.blog\\docs\\translation-review\\verify_batch_033.py\", line 144, in main\n    if lang=='ar':versions[-1]['arabicStaticDirection']=arabic_direction(text,page,args.site)\n                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\work\\kenji.blog\\docs\\translation-review\\verify_batch_033.py\", line 57, in arabic_direction\n    assert len(values)>=80 and page.values==values and page.rtl and not page.active\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "command": [
+        "scripts/check_multilingual.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-lossless-ar"
+      ],
+      "exitCode": 0,
+      "stdout": "Multilingual verified: 1918 pages; unique, reciprocal hreflang and matching sidebar URLs\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/check_https_urls.py",
+        "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-lossless-ar"
+      ],
+      "exitCode": 0,
+      "stdout": "HTTPS publication URLs verified: {'html': 3488, 'xml': 41, 'search': 0}\n",
+      "stderr": ""
+    }
+  ],
+  "existingTestsPreviouslyPassedNotRerun": 17,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Selected source/decodedHTML/finiteauxiliarychecks plus34bundle preview. No prose/ledger/browser/fullsite/publication certification. Existing17tests refer to priorJAEN success,not rerun."
+}

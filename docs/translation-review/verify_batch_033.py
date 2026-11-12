@@ -3,6 +3,7 @@ from pathlib import Path
 from datetime import datetime,timezone,timedelta
 from html.parser import HTMLParser
 from html import unescape
+from urllib.parse import urlsplit
 import argparse,hashlib,importlib.util,json,re,subprocess,math
 ROOT=Path(__file__).resolve().parents[2];D=ROOT/'docs/translation-review'
 spec=importlib.util.spec_from_file_location('shared',D/'verify_batch_028.py');shared=importlib.util.module_from_spec(spec);spec.loader.exec_module(shared)
@@ -33,6 +34,36 @@ class Article(HTMLParser):
         if tag=='code':assert self.active_code;self.active_code=False
         if tag in ('pre','code'):self.skip-=1;assert self.skip>=0
         if tag=='section':self.depth-=1
+
+class BidiValues(HTMLParser):
+    def __init__(self):super().__init__();self.active=False;self.values=[];self.styles=[];self.rtl=False
+    def handle_starttag(self,tag,attrs):
+        a=dict(attrs)
+        if tag=='html':self.rtl=a.get('lang')=='ar' and a.get('dir')=='rtl'
+        if tag=='link' and a.get('rel')=='stylesheet':self.styles.append(a['href'])
+        if tag=='bdi':
+            assert not self.active and a.get('dir')=='ltr';self.active=True;self.values.append('')
+    def handle_data(self,data):
+        if self.active:self.values[-1]+=data
+    def handle_endtag(self,tag):
+        if tag=='bdi':assert self.active;self.active=False
+
+def arabic_direction(text,html,site):
+    # Inspect raw source spans; parsing TeX or literal <int> as HTML loses data.
+    inner=re.findall(r'<bdi dir="ltr">(.*?)</bdi>',text,re.S)
+    assert len(inner)==text.count('<bdi ')==text.count('</bdi>')
+    values=[unescape(v[1:-1] if v.startswith(TICK) and v.endswith(TICK) else v) for v in inner]
+    page=BidiValues();page.feed(html)
+    assert len(values)>=80 and page.values==values and page.rtl and not page.active
+    assert {'n≥1','1≤c≤n','c=11','H+1','P(0)=0.99','x=0','[L,2L)','[L,2L−1)','std::vector<int>','banana$','annb$aa','C/U','v_io','v_dec'}<=set(values)
+    paths=[site/urlsplit(href).path.lstrip('/') for href in page.styles]
+    paths=[p for p in paths if p.is_file()];assert paths
+    css='\n'.join(p.read_text(encoding='utf-8') for p in paths)
+    rtl=r'\[dir=[\"\x27]?rtl[\"\x27]?\]'
+    for selector in [r'\.katex',r'\.article-content pre',r'\.article-content \.highlight']:
+        assert re.search(rtl+r'\s*'+selector+r'\s*\{[^}]*direction:\s*ltr(?:;|})',css)
+    assert re.search(rtl+r'\s*\.katex\s*\{[^}]*unicode-bidi:\s*isolate',css)
+    return {'rtlHtml':True,'ltrBidiValues':len(values),'sourceAndHtmlBidiExact':True,'criticalComparisonsAndLiteralCodePreserved':True,'linkedLocalStylesheetsRead':[p.relative_to(site).as_posix() for p in paths],'mathAndCodeLtrCss':True,'scope':'Static source/HTML/linkedCSS only;not browser/KaTeX/Mermaid execution or visual guarantee.'}
 
 def source_math(text):
     text=shared.strip(text)
@@ -110,6 +141,7 @@ def main():
             assert 'строго' in original and 'ตาม' in original
             assert not re.search(r'[\u0400-\u052f\u0e00-\u0e7f]',text+''.join(article.all))
             versions[-1]['originalRussianAndThaiIntrusionsRemoved']=True
+        if lang=='ar':versions[-1]['arabicStaticDirection']=arabic_direction(text,page,args.site)
     doc={'version':1,'checkedAt':datetime.now(timezone(timedelta(hours=9))).isoformat(),'allPassed':True,'versions':versions,'priorIndependentAuxiliaryChecks':'docs/translation-review/batch-033-original-math-probe.json','auxiliaryChecks':auxiliary(),'reviewedTranslationsAdded':0,'limitations':['Selected source/decodedHTML checks only;not prose approval or review ledger certification.','No executable articleprograms;independent finite auxiliary experiments are separately scoped.','Not browser/KaTeX/Mermaid execution or native-language/full-site/benchmarks/completecompressor certification.','Draft source can still change until reviewed translations registered;source hash recorded per actualcheck.']}
     args.output.write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps({'passed':True,'versions':len(versions),'texEach':29,'graphEdges':[8,6],'referencesEach':11,'articlePrograms':0}))
 
