@@ -324,6 +324,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/paradox-prisoners-dilemma/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-prisoners-dilemma/index.md",
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "translationHash": "ebb931276332d4e78921fd52d3a1fd45c4de86ebba5cd2e46271981f23075c02",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full old and revised Hindi metadata,introduction,sixsections,two revisedtables and bothdiagram sources against frozenJapanese. Preserved historical,price/environment/arms,TFT,evolution,bat/bee and institutional themes. Corrected fictional acquittal,Pareto versus aggregateutility,unconditional groupvictory and moral inference. Old Pareto example could read as escaping the one-year sentence;revised table consistently states one year. Rarecluster limit and association-versus-causation agree."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared प्रतिफल/उपयोगिता versus सजा,strictlydominant with explicit English,नैश संतुलन versus उपखेल-पूर्ण संतुलन,backwardinduction,पारेटो दक्षता,छूटित स्कोर discountedscore versus जैविक फिटनेस. Distinguished समूह from आबादी,p opponentmatching from qbelief and prevalence. Old प्रभावी may mean merely effective;revised explicit strictdominance definition avoids ambiguity without claiming a unique Hindi terminology standard. Sharedresources clarified instead of literal सामान्य की त्रासदी."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read ten identicalTeX and both tables,own/opponent arguments,T0>R-1>P-5>S-10,5-4q>=1,pureefficientCC/CD/DC versus sumCC-2. Checked three discounted TFTpair values,rareclusterbaseline,p>5(1-delta)/(9-5delta),delta0.9 threshold1/9,rows -55/-52.75/-50/-46 versus-50 and isolatedloss5. Negative scores not reproduction/survival rates. Auxiliaryfinite arithmetic/traces once,not generalproof,population dynamics or empirical reproduction."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read bothsix-edge Mermaid sources,simultaneousoutcomes not sequentialobservedchoice,and TFTfirstC/play/observe/nextaction withbothbranches incrementingt. Old दूसरे टर्न के बाद से could defer copying until aftersecondturn;explicitly secondroundonward matches formula t>=2. Corrected internal मन बदल लेता framing to observedpreviousaction,next-round response andCD/DCerrortrace. Polished actionnotation sentence and reread beforeproof. No browser/runtime/tournament/biologicalcode certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Four external references(two primaryresearchpapers,two officialteaching sources) plus localizedhi internalarticle match. Established source readinglimits retained,20fasted bats notwholecolony and correlation notcausalTFT. OriginalSep24T15date,slug,taxonomy,imagehash preserved;actualNov12lastmod. Selectedproof and1800multilingualpages/3277HTTPSHTML41XML passed;17priortests referenced notrerun. Threeothertranslations/publication remain pending."
+        }
+      },
+      "summary": "Full Hindi cooperation/evolution review correcting second-round TFT timing and conditional biological interpretation.",
+      "languageSpecificFindings": "Corrected मुक्त बरी inference and mandatory finalgroupvictory. Explicit secondround TFTstart removes aftersecondturn ambiguity. Distinguished payoff/utility,sentence,strictdominance,Paretoefficiency,discountedscore and fitness with English anchors where useful;no exclusive terminology authority claim. Sharedresources wording clarified. Originalprice analogy no currencyamount,no currencyerror claimed. Legalpolicyexamples replaced by conditional institutional checks,not legaladvice.",
+      "validation": "docs/translation-review/batch-031-hi-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "3 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0,population-update simulation,biological data reanalysis and tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -725,6 +765,56 @@
       "unreviewedTranslations": 12652,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 4,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "hi"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "validation": "docs/translation-review/batch-031-hi-validation.json",
+      "checks": "docs/translation-review/batch-031-hi-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-031-hi-ledger-validation.json",
+      "texEach": 10,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "cooperationBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "deterministicStrategyPairs": 3,
+        "roundsEach": 8,
+        "discountedPrefixPlusExactTailCases": 306,
+        "clusterMatchingCases": 10605,
+        "isolatedTftDifference": "-5",
+        "exampleDelta": "9/10",
+        "exampleMatchingThreshold": "1/9",
+        "numericTableCases": 4,
+        "tftErrorTraceRounds": 8,
+        "scope": "Once per invocation,finite exact auxiliary arithmetic and traces. Not article programs,population-update simulation,ESS/SPE/all-strategy proof,biological data reanalysis or tournament reproduction. Rare-cluster resident baseline and negative score meaning read separately in prose."
+      },
+      "actualPreviewBundles": 32,
+      "multilingualPages": 1800,
+      "httpsHtmlPages": 3277,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 381,
+      "unreviewedTranslations": 12651,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 3,
       "publicationPending": true
     }
   ]
