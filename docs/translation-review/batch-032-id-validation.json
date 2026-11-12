@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T20:44:48.914766+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "id",
+      "path": "content/post/information-theory-shannon-entropy/index.id.md",
+      "sha256": "48830c650e01e02666dc2df84e2bc872d41bfea89bba7304f4b337cde27435ab",
+      "sourceSha256": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "texExpressions": 14,
+      "diagrams": 1,
+      "diagramSolidEdges": 4,
+      "diagramDottedEdges": 1,
+      "articleExecutablePrograms": 2,
+      "references": 2,
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "dateModified": "2026-11-12",
+      "passed": true
+    }
+  ],
+  "programRuns": [
+    {
+      "language": "id",
+      "articleProgramsExecuted": 2,
+      "extractedProgramSha256": [
+        "5841dd9a65da699b76137cb8d022e807e022eed2f0f7a859ddbe360c632dce35",
+        "1de958a50b5f565f3c832934c79fbcb57636b1f7a2bc55a2833324d6d2d7826c"
+      ],
+      "pythonVersion": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "binaryEntropyValidPoints": 1001,
+      "binaryEntropyInvalidPointsRejected": 5,
+      "exhaustiveAbcRoundTripsLength0through6": 1093,
+      "unicodeRoundTrips": 6,
+      "localizedOriginalExampleRoundTrips": [
+        {
+          "text": "entropi_shannon_dan_teori_informasi",
+          "codePoints": 35,
+          "logicalPayloadBits": 126,
+          "roundTrip": true
+        }
+      ],
+      "repeatedCallNoStaleCodebook": true,
+      "equalFrequenciesDeterministicAcrossInputOrder": true,
+      "nonStringBuildInputsRejected": 4,
+      "invalidOrTruncatedPayloadCasesRejected": 6,
+      "unknownSymbolRejected": true,
+      "independentFullBinaryTreeShapeOptimalProfiles": 1360,
+      "optimalProfileScope": "2through5symbols,eachpositiveintegerweight1through4;allfullbinaryleafdepthmultisets,largestweightstoshortestdepths. Finite independent oracle,not all-input proof.",
+      "singleSymbolConvention": "Nonempty0code,L=1,H=0;strictL<H+1notclaimedforthisimplementationcase.",
+      "sampleStdout": "Huffman codes:\n'_': 001\n'a': 1011\n'd': 01110\n'e': 0001\n'f': 01111\n'h': 0100\n'i': 0101\n'm': 10100\n'n': 111\n'o': 100\n'p': 10101\n'r': 1100\n's': 0000\n't': 1101\n'y': 0110\nLogical payload bits: 140\nRound trip: True\n",
+      "plot": {
+        "path": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\entropy-code-batch-032-id-validation-id\\binary-entropy.png",
+        "sha256": "da51287a79462f2044a4d6bdee16c0092ed0f907d9ebe07891d9b1148f841ec2",
+        "points": 101,
+        "peakAtHalf": true,
+        "warnings": [
+          "FigureCanvasAgg is non-interactive, and thus cannot be shown"
+        ],
+        "visuallyInspectedByThisCode": false
+      },
+      "scope": "Actual article-extracted standalone programs plus finite oracles. No serialized-file format,errorcorrection,all-input proof or native/browser/ledger certification."
+    }
+  ],
+  "sharedAuxiliaryChecks": {
+    "awgnExamples": 1,
+    "awgnCapacityBitsPerSecond": 4000000,
+    "linearSnr": 15,
+    "correlatedSourceExamples": [
+      {
+        "n": 1,
+        "marginalEntropy": 1,
+        "jointBlockEntropy": 1,
+        "knownLengthBlockCodeBits": 1,
+        "bitsPerSourceSymbol": 1.0
+      },
+      {
+        "n": 2,
+        "marginalEntropy": 1,
+        "jointBlockEntropy": 1,
+        "knownLengthBlockCodeBits": 1,
+        "bitsPerSourceSymbol": 0.5
+      },
+      {
+        "n": 8,
+        "marginalEntropy": 1,
+        "jointBlockEntropy": 1,
+        "knownLengthBlockCodeBits": 1,
+        "bitsPerSourceSymbol": 0.125
+      },
+      {
+        "n": 64,
+        "marginalEntropy": 1,
+        "jointBlockEntropy": 1,
+        "knownLengthBlockCodeBits": 1,
+        "bitsPerSourceSymbol": 0.015625
+      }
+    ],
+    "scope": "Finite mathematical examples,not physical channel simulation or practical compression benchmark."
+  },
+  "sourceAuditSha256": "949cbda6fd241a9308abfe9d58eabe27e9dfb78894ec1f280f58c3dd476b5773",
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Selected source/HTML/actualPython with finite oracle,not prose/ledger approval.",
+    "No native speaker or browser/KaTeX/Mermaid execution. Plot needs separate visual inspection or exact-byte match to inspected image.",
+    "Not complete serialized compressor,errorcorrecting code,all-input proof or modern network benchmark.",
+    "Other translations/publication and whole goal pending."
+  ]
+}

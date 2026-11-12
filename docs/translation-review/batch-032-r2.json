@@ -363,6 +363,46 @@
         "Actualplot PNG matches priorinspectedimage;no browser/KaTeX/Mermaid/nativeGUI certification.",
         "Primary reading scope separatelydocumented;publication andwholegoalpending."
       ]
+    },
+    "post/information-theory-shannon-entropy/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/information-theory-shannon-entropy/index.md",
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "translationHash": "48830c650e01e02666dc2df84e2bc872d41bfea89bba7304f4b337cde27435ab",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete old and actual revised Indonesian metadata, seven sections, complete communication diagram and both complete Python programs against frozen Japanese. Preserved article themes and localized example, corrected singlehanded history, individual-file absolute entropy claims, unqualified optimality and finite-zero-error reading. Matched expectation, correlated known-length constant-Z block, singleton exception, source versus channel redundancy and practical overhead distinctions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared informasi diri/nilai harapan, sumber/saluran, kode prefiks/didekode secara unik, entropi marginal/gabungan/laju entropi, stasioner/tanpa memori, titik kode/gugus grafem/byte and muatan versus object memory. Removed confusing original kepala(angka) equivalence and consistently used sisi kepala. Replaced literal kehilangan lintas-entropi phrasing with entropi silang and stated dependence on prediction distribution. English plot labels glossed with original Indonesian meanings. Independent identically distributed, M possible messages, input-independent additive noise, mean power and linear SNR remain explicit."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all14 identical display formulas and domains: positive probability self-information, zero entropy terms, fixed alphabet maximum, binary entropy, expected prefix/unique-decodable length lower bound, Huffman strict upper only two positive symbols, nondegenerate iid blocks, stationary entropy rate, constantZ knownn/marginal1/joint1, finite DMC capacity/rate, average-power AWGN and4Mbps example. Singleton H0L1 exception and bits/symbol/use/second distinctions aligned. Finite oracles are not claimed as universal proof or physical network measurements."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read and executed both actual article programs/mains. Passed1001valid/5invalid probabilities,1093abc roundtrips+6Unicode, fresh codebooks, deterministic tied weights, malformed/truncated/unknown-symbol/nonstring rejection and1360 independent optimal-tree profiles. Preserved old entropi_shannon_dan_teori_informasi as prose substitution and added actual execution:35codepoints126logicalbits roundtrip true with prefix-free and expectedlength bound checks. Common English main sample140bits roundtriptrue. Extended checker only with this localized case and unchanged prior TW case, prior receipts retained. ActualPNG matches prior visually inspected image; Aggwarning retained. No serializedfile/errorcorrection/browser/all-input certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Two primary references match generated HTML; earlier documented primary source reading scope retained without new full-paper reading claim. Original Indonesian plot discussion had no unrelated graph/search link. Both raw date lines/effectiveSep21 publication, slug,imagehash and localized taxonomy preserved; actualNov12lastmod. Selected14hreflang13sidebar and33bundle1853pages/3371HTTPSHTML41XML checks pass. Existing17tests referenced from priorJAEN,notrerun. Other two translations and publication pending."
+        }
+      },
+      "summary": "Full Indonesian entropy and coding review preserving and executing the original localized sample.",
+      "languageSpecificFindings": "Original Indonesian Huffman phrase preserved as substitution and executed:35codepoints126logicalbits successful roundtrip. Explained English plot labels in Indonesian. Clarified informasi diri/nilai harapan, marginal/gabungan/laju, stasioner/tanpa memori, muatan/memory, kepala versus angka and entropi silang. No invented localized-original English sample or removed chart link; explicit model conditions and singleton exception retained.",
+      "validation": "docs/translation-review/batch-032-id-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "2 other translation bodies remainunreviewed atthisstage.",
+        "Finiteoracle cases,not all-input proof,serializedfileformat,errorcorrection or practicalnetworkbenchmark.",
+        "Actualplot PNG matches priorinspectedimage;no browser/KaTeX/Mermaid/nativeGUI certification.",
+        "Primary reading scope separatelydocumented;publication andwholegoalpending."
+      ]
     }
   },
   "stages": [
@@ -885,6 +925,74 @@
       "unreviewedTranslations": 12639,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 3,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "id"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "validation": "docs/translation-review/batch-032-id-validation.json",
+      "checks": "docs/translation-review/batch-032-id-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-032-id-ledger-validation.json",
+      "texEach": 14,
+      "diagramsEach": 1,
+      "diagramSolidEdges": 4,
+      "diagramDottedEdges": 1,
+      "articleProgramsExecutedEach": 2,
+      "codeValidation": {
+        "language": "id",
+        "articleProgramsExecuted": 2,
+        "extractedProgramSha256": [
+          "5841dd9a65da699b76137cb8d022e807e022eed2f0f7a859ddbe360c632dce35",
+          "1de958a50b5f565f3c832934c79fbcb57636b1f7a2bc55a2833324d6d2d7826c"
+        ],
+        "pythonVersion": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "binaryEntropyValidPoints": 1001,
+        "binaryEntropyInvalidPointsRejected": 5,
+        "exhaustiveAbcRoundTripsLength0through6": 1093,
+        "unicodeRoundTrips": 6,
+        "localizedOriginalExampleRoundTrips": [
+          {
+            "text": "entropi_shannon_dan_teori_informasi",
+            "codePoints": 35,
+            "logicalPayloadBits": 126,
+            "roundTrip": true
+          }
+        ],
+        "repeatedCallNoStaleCodebook": true,
+        "equalFrequenciesDeterministicAcrossInputOrder": true,
+        "nonStringBuildInputsRejected": 4,
+        "invalidOrTruncatedPayloadCasesRejected": 6,
+        "unknownSymbolRejected": true,
+        "independentFullBinaryTreeShapeOptimalProfiles": 1360,
+        "optimalProfileScope": "2through5symbols,eachpositiveintegerweight1through4;allfullbinaryleafdepthmultisets,largestweightstoshortestdepths. Finite independent oracle,not all-input proof.",
+        "singleSymbolConvention": "Nonempty0code,L=1,H=0;strictL<H+1notclaimedforthisimplementationcase.",
+        "sampleStdout": "Huffman codes:\n'_': 001\n'a': 1011\n'd': 01110\n'e': 0001\n'f': 01111\n'h': 0100\n'i': 0101\n'm': 10100\n'n': 111\n'o': 100\n'p': 10101\n'r': 1100\n's': 0000\n't': 1101\n'y': 0110\nLogical payload bits: 140\nRound trip: True\n",
+        "plot": {
+          "path": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\entropy-code-batch-032-id-validation-id\\binary-entropy.png",
+          "sha256": "da51287a79462f2044a4d6bdee16c0092ed0f907d9ebe07891d9b1148f841ec2",
+          "points": 101,
+          "peakAtHalf": true,
+          "warnings": [
+            "FigureCanvasAgg is non-interactive, and thus cannot be shown"
+          ],
+          "visuallyInspectedByThisCode": false
+        },
+        "scope": "Actual article-extracted standalone programs plus finite oracles. No serialized-file format,errorcorrection,all-input proof or native/browser/ledger certification."
+      },
+      "plotExactMatchTo": "docs/translation-review/batch-032-ja-en-plot-review.json",
+      "actualPreviewBundles": 33,
+      "multilingualPages": 1853,
+      "httpsHtmlPages": 3371,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 394,
+      "unreviewedTranslations": 12638,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 2,
       "publicationPending": true
     }
   ],

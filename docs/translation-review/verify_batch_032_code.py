@@ -40,9 +40,14 @@ def verify(text,lang,scratch):
     for text_value in unicode_cases:
         tree=build(text_value);assert decode(encode(text_value,codes_for(tree)),tree)==text_value
     localized_examples=[]
-    for text_value in {'zh-tw':['夏農熵與資訊理論']}.get(lang,[]):
-        tree=build(text_value);payload=encode(text_value,codes_for(tree));assert decode(payload,tree)==text_value
-        assert len(text_value)==len(set(text_value))==8 and len(payload)==24
+    for text_value in {'zh-tw':['夏農熵與資訊理論'],'id':['entropi_shannon_dan_teori_informasi']}.get(lang,[]):
+        tree=build(text_value);local_codes=codes_for(tree);payload=encode(text_value,local_codes);assert decode(payload,tree)==text_value
+        assert all(not y.startswith(x) for a,x in local_codes.items() for c,y in local_codes.items() if a!=c)
+        if lang=='zh-tw':assert len(text_value)==len(set(text_value))==8 and len(payload)==24
+        if lang=='id':
+            assert len(text_value)==35
+            local_h=-sum((text_value.count(c)/len(text_value))*math.log2(text_value.count(c)/len(text_value)) for c in set(text_value))
+            assert local_h<=len(payload)/len(text_value)<local_h+1
         localized_examples.append({'text':text_value,'codePoints':len(text_value),'logicalPayloadBits':len(payload),'roundTrip':True})
     first=codes_for(build('ab'));second=codes_for(build('cd'))
     assert first is not second and set(second)==set('cd') and set(first)==set('ab')

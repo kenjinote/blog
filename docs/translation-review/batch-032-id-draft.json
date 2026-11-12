@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "draftedAt": "2026-11-12T10:43:20.296342+09:00",
+  "language": "id",
+  "path": "content/post/information-theory-shannon-entropy/index.id.md",
+  "originalSha256": "f6b8fbf185faae314e8820fcbcaf3ed85a5f95a102bc8ecd544cb1b854c5736a",
+  "draftSha256": "48830c650e01e02666dc2df84e2bc872d41bfea89bba7304f4b337cde27435ab",
+  "texExpressions": 14,
+  "diagrams": 1,
+  "diagramSolidEdges": 4,
+  "diagramDottedEdges": 1,
+  "pythonBlocks": 2,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Manual draft after old fullbody reading. Pending actualrevised reread,articleexecution/HTMLchecks andAIledger. Current evidence root batch-032-r2.json;initial032artifact preserved."
+}

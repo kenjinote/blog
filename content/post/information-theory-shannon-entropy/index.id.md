@@ -1,7 +1,7 @@
 ---
-title: "Teori Informasi dan Entropi Shannon: Mengeksplorasi Batasan Kompresi Data dan Komunikasi"
+title: "Teori informasi dan entropi Shannon: batas kompresi dan komunikasi"
 date: "2026-09-24T19:44:38+09:00"
-description: "Penjelasan mendetail mulai dari dasar teori informasi yang diusulkan oleh Claude Shannon, konsep entropi, batasan kompresi data, hingga aplikasinya dalam komunikasi modern."
+description: "Informasi diri, entropi dan laju entropi; batas pengodean sumber dan saluran dengan asumsi eksplisit serta contoh Python pengodean dan pendekodean Huffman."
 slug: information-theory-shannon-entropy
 date: 2026-09-21T02:45:54+09:00
 image: eyecatch.jpg
@@ -11,192 +11,270 @@ tags:
   - entropi
   - kompresi-data
   - matematika
+math: true
+mermaid: true
+lastmod: "2026-11-12"
 ---
 
-## 1. Pendahuluan: Apa itu Informasi?
+## 1. Membedakan makna dan ketidakpastian suatu pilihan
 
-Kata "informasi" adalah sesuatu yang sering kita ucapkan sehari-hari, namun mencoba mendefinisikannya secara ilmiah akan sangat sulit. Berita, pesan dari teman, urutan basa DNA, atau bahkan gelombang radio dari luar angkasa, semuanya mengandung informasi. Namun, untuk menangani semua ini dalam kerangka matematika yang sama, diperlukan sebuah metrik yang objektif dan kuantitatif.
+Berita, pesan dari teman, urutan DNA, dan sinyal radio dari luar angkasa membawa informasi. Namun, pentingnya isi dan jumlah bit yang diperlukan untuk mengirimkannya merupakan dua besaran berbeda.
 
-Sosok yang menghadapi tantangan besar ini dan meletakkan dasar bagi masyarakat digital modern adalah seorang matematikawan dan insinyur, Claude Shannon. Tidak berlebihan untuk mengatakan bahwa makalahnya pada tahun 1948 yang berjudul "Teori Matematika Komunikasi (A Mathematical Theory of Communication)" secara tunggal mendirikan bidang studi yang sama sekali baru, yaitu **Teori Informasi** (Information Theory).
+Dalam makalahnya tahun 1948, Claude Shannon memisahkan penilaian makna dari persoalan rekayasa komunikasi dan mengkaji batas kompresi serta komunikasi menggunakan probabilitas. Pendahuluannya, yang tersedia dalam [cetak ulang ini](https://wucj.lab.westlake.edu.cn/Others/shannon1948.pdf), juga mengakui karya terdahulu Nyquist dan Hartley. Kita akan membedakan informasi diri, entropi, kompresi tanpa kehilangan data, dan komunikasi dengan derau.
 
-Pada artikel ini, kita akan menggali lebih dalam tentang bagaimana Shannon mendefinisikan "informasi" secara matematis, dan apa arti dari konsep utamanya, yaitu **Entropi Shannon**, dalam teknologi kompresi data dan komunikasi.
+## 2. Model komunikasi
 
-## 2. Model Umum Komunikasi
-
-Shannon untuk sementara mengesampingkan makna (semantik) dari informasi dan memusatkan perhatian pada "transmisi" informasi itu sendiri. Model umum sistem komunikasi yang ia usulkan dapat direpresentasikan oleh diagram Mermaid berikut.
+Sumber informasi menghasilkan pesan, pemancar mengubahnya menjadi sinyal, sinyal melewati saluran, lalu penerima merekonstruksi pesan untuk tujuannya.
 
 ```mermaid
 graph LR
-    A["Sumber Informasi<br>Information Source"] --> B["Pemancar<br>Transmitter"]
-    B -->|"Sinyal Transmisi"| C(("Saluran Komunikasi<br>Channel"))
-    C -->|"Sinyal Penerimaan"| D["Penerima<br>Receiver"]
-    D --> E["Tujuan<br>Destination"]
-    N["Sumber Kebisingan<br>Noise Source"] -.-> C
+    A["Sumber informasi"] --> B["Pemancar"]
+    B -->|"Sinyal terkirim"| C(("Saluran"))
+    C -->|"Sinyal diterima"| D["Penerima"]
+    D --> E["Tujuan"]
+    N["Sumber derau"] -.-> C
 ```
 
-Dalam model ini, tantangan terbesar dari komunikasi dapat diringkas pada poin **"bagaimana mengirimkan pesan secara akurat dan efisien melalui saluran komunikasi yang terdapat kebisingan (noise)"**.
+Pengodean sumber memanfaatkan struktur statistik untuk mengurangi redundansi. Pengodean saluran justru menambahkan redundansi yang sesuai untuk menghadapi derau. Keduanya merupakan pengodean, tetapi tujuannya berbeda.
 
-## 3. Definisi Matematis dari Jumlah Informasi
+## 3. Informasi diri
 
-Pertanyaan paling mendasar dalam teori informasi adalah, "Berapa banyak informasi yang kita dapatkan ketika kita mengetahui bahwa suatu peristiwa telah terjadi?"
-
-Shannon menganggap jumlah informasi sebagai "tingkat kejutan".
-- Ketika **peristiwa yang sering terjadi (probabilitas tinggi)** terjadi, kejutannya kecil, dan jumlah informasi yang diperoleh sedikit.
-- Ketika **peristiwa yang jarang terjadi (probabilitas rendah)** terjadi, kejutannya besar, dan jumlah informasi yang diperoleh banyak.
-
-Jika probabilitas terjadinya peristiwa $ x $ adalah $ P(x) $, maka **informasi mandiri** (Self-Information) $ I(x) $ yang dimiliki oleh peristiwa tersebut didefinisikan sebagai berikut.
+Untuk peristiwa x dengan probabilitas positif P(x), informasi diri I(x) didefinisikan sebagai berikut. Logaritma berbasis 2 memberikan satuan bit.
 
 $$
-I(x) = - \log_2 P(x) = \log_2 \frac{1}{P(x)}
+I(x)=-\log_2P(x)=\log_2\frac1{P(x)},\qquad 0<P(x)\le1
 $$
 
-Jika basis logaritma yang digunakan adalah $ 2 $, satuan dari jumlah informasi menjadi **bit**. Sebagai contoh, informasi dari peristiwa munculnya sisi kepala (angka) ketika melempar koin dengan probabilitas yang sama antara kepala dan ekor ($ P = 0.5 $) adalah,
+Peristiwa yang lebih kecil probabilitasnya memperoleh nilai lebih besar. Ini tidak mengukur kejutan psikologis atau nilai isi pesan. Definisi ini tidak memberikan informasi diri berhingga kepada peristiwa berprobabilitas nol; model probabilitas dan domainnya perlu diperhatikan.
+
+Untuk hasil sisi kepala pada koin yang adil:
 
 $$
-I(\text{Kepala}) = - \log_2(0.5) = 1 \text{ bit}
+I=-\log_2(1/2)=1\ \mathrm{bit}
 $$
 
-Ini selaras dengan pemahaman intuitif tentang "informasi 1 bit".
+## 4. Entropi adalah nilai harapan informasi diri
 
-## 4. Entropi Shannon
-
-Informasi mandiri adalah jumlah informasi untuk setiap peristiwa individu, tetapi bagaimana kita bisa mengetahui rata-rata jumlah informasi yang dihasilkan oleh seluruh sumber informasi?
-
-Di sinilah **Entropi** (Entropy) berperan. Ketika sumber informasi $ X $ menghasilkan $ n $ simbol yang berbeda $ x_1, x_2, \dots, x_n $ dengan probabilitas $ P(x_1), P(x_2), \dots, P(x_n) $, entropi $ H(X) $ dari sumber informasi $ X $ didefinisikan sebagai nilai harapan (ekspektasi) dari informasi mandiri.
+Misalkan X mengambil nilai dalam alfabet berhingga yang terdiri atas m simbol, dengan p_i=P(X=x_i). Probabilitasnya tidak negatif dan berjumlah satu. Entropi Shannon adalah nilai harapan informasi diri.
 
 $$
-H(X) = - \sum_{i=1}^{n} P(x_i) \log_2 P(x_i)
+H(X)=\mathbb E[I(X)]=-\sum_{i=1}^{m}p_i\log_2p_i,\qquad \sum_{i=1}^{m}p_i=1
 $$
 
-(Namun, jika $ P(x_i) = 0 $, diasumsikan bahwa $ 0 \log_2 0 = 0 $)
+Untuk suku berprobabilitas nol, gunakan konvensi berdasarkan limit 0log₂0=0. Satuannya bit per simbol. Untuk alfabet tetap berisi m simbol:
 
-### Makna Intuitif dari Entropi
-Entropi $ H(X) $ merepresentasikan tingkat **ketidakpastian** yang dimiliki oleh sumber informasi.
-- Ketika sama sekali tidak dapat diprediksi simbol mana yang akan muncul (semua probabilitas merata), entropi mencapai nilai maksimum.
-- Ketika simbol yang sama selalu muncul (suatu probabilitas bernilai $ 1 $ dan yang lainnya $ 0 $), ketidakpastian hilang, dan entropi menjadi $ 0 $.
+$$
+0\le H(X)\le\log_2m
+$$
 
-Mari kita hitung perubahan entropi ketika mengubah probabilitas $ p $ munculnya kepala dari sebuah koin dengan kode Python berikut.
+Nilai maksimum tercapai pada distribusi seragam; minimum tercapai ketika satu simbol berprobabilitas satu. Ketidakpastian maksimum ini merupakan penilaian menurut model probabilitas dan informasi yang tersedia. Ini tidak membuktikan ketakterdugaan kriptografis atau menjamin bahwa pihak lain tidak memiliki informasi tambahan.
+
+Jika probabilitas sisi kepala adalah p, entropi biner diberikan oleh fungsi berikut. Pada kedua titik ujung, konvensi suku berprobabilitas nol yang sama berlaku.
+
+$$
+h_2(p)=-p\log_2p-(1-p)\log_2(1-p),\qquad 0\le p\le1
+$$
+
+Contoh Python ini menerima probabilitas skalar berhingga dan menolak nilai di luar domain. Matplotlib diperlukan untuk menggambar grafik.
 
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
+import math
+
 
 def binary_entropy(p):
+    if not math.isfinite(p) or not 0 <= p <= 1:
+        raise ValueError("p must be finite and between 0 and 1")
     if p == 0 or p == 1:
-        return 0
-    return -p * np.log2(p) - (1 - p) * np.log2(1 - p)
+        return 0.0
+    return -p * math.log2(p) - (1 - p) * math.log2(1 - p)
 
-probabilities = np.linspace(0, 1, 100)
-entropies = [binary_entropy(p) for p in probabilities]
 
-plt.plot(probabilities, entropies)
-plt.title('Fungsi Entropi Biner')
-plt.xlabel('Probabilitas kepala (p)')
-plt.ylabel('Entropi H(X) dalam bit')
-plt.grid(True)
-plt.show()
+if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+
+    probabilities = [i / 100 for i in range(101)]
+    entropies = [binary_entropy(p) for p in probabilities]
+    plt.plot(probabilities, entropies)
+    plt.title("Binary entropy")
+    plt.xlabel("Probability of heads (p)")
+    plt.ylabel("Entropy (bits per symbol)")
+    plt.grid(True)
+    plt.show()
 ```
 
-Saat menggambar grafik ini, dapat dilihat bahwa ketika $ p = 0.5 $, entropi mencapai nilai maksimum $ 1 $, yang menandakan keadaan yang sama sekali tidak dapat diprediksi.
+Nilainya nol pada p=0 dan p=1, serta mencapai maksimum satu bit pada p=0.5. Kurvanya simetris. Label berbahasa Inggris menyatakan fungsi entropi biner, probabilitas sisi kepala, dan entropi dalam bit per simbol.
 
-## 5. Teorema Pengkodean Sumber: Batasan Kompresi Data
+## 5. Pengodean sumber: rata-rata apa dan dengan asumsi apa?
 
-Entropi bukanlah sekadar konsep abstrak. Shannon membuktikan bahwa entropi ini menentukan **batas absolut dari kompresi data**. Inilah **Teorema Pengkodean Sumber** (Teorema Pertama Shannon).
-
-Pernyataan teoremanya sangat sederhana.
-**"Apapun algoritma kompresi lossless yang digunakan, panjang kode rata-rata dari data yang dihasilkan oleh sumber informasi tidak bisa lebih kecil dari entropi $ H(X) $ sumber informasi tersebut."**
+Berikan kata kode biner kepada simbol dalam alfabet berhingga sehingga gabungan kata-katanya dapat didekode secara unik. Jika panjang kata kode simbol i adalah ℓ_i, panjang harapan L memenuhi batas berikut. Kode prefiks adalah kode yang dapat didekode secara unik dan tidak memiliki kata kode yang menjadi awalan kata kode lain.
 
 $$
-L \ge H(X)
+L=\sum_i p_i\ell_i,\qquad L\ge H(X)
 $$
 
-( $ L $ adalah panjang kode rata-rata)
+Ini adalah nilai harapan menurut distribusi tertentu. Artinya bukan setiap berkas individual harus memiliki panjang sekurang-kurangnya sebesar itu. Batas kompresi urutan berkorelasi juga tidak dapat ditentukan hanya dari distribusi marginal satu simbol.
 
-Artinya, entropi menunjukkan "ukuran esensial yang dimiliki informasi itu sendiri", dan tidak peduli seberapa hebat algoritma seperti ZIP atau gzip yang dikembangkan, secara matematis mustahil untuk melampaui batas kompresi ini.
+### Pengodean Huffman dan syarat optimalitasnya
 
-### Kode Huffman (Huffman Coding)
-Sebagai metode konkret untuk mendekati batas entropi, David Huffman mengembangkan ide Fano (rekan peneliti Shannon), yang kemudian dikenal sebagai **Kode Huffman**.
+[Makalah David Huffman tahun 1952](https://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf) membangun kode prefiks yang meminimalkan panjang harapan untuk probabilitas yang diberikan. Pada kasus biner, dua bobot terkecil digabungkan berulang kali dan jumlahnya dikembalikan ke kumpulan. Bobot yang sama dapat menghasilkan beberapa buku kode optimal yang berbeda.
 
-Dengan menetapkan urutan bit pendek untuk simbol dengan probabilitas kemunculan tinggi, dan urutan bit panjang untuk simbol dengan probabilitas kemunculan rendah, rata-rata panjang kode secara keseluruhan diminimalkan. Berikut adalah contoh sederhana pembentukan kode Huffman menggunakan Python.
+Dengan sedikitnya dua simbol berprobabilitas positif, panjang harapan L_H untuk kode prefiks biner optimal berada dalam rentang ini:
+
+$$
+H(X)\le L_{\mathrm H}<H(X)+1
+$$
+
+Optimalitas ini berlaku dalam pengodean simbol demi simbol dengan bobot diketahui, bukan di antara semua metode kompresi. Untuk sumber tak degenerat dengan simbol-simbol independen dan berdistribusi identik, mengelompokkan n simbol dan memilih kode prefiks yang sesuai memberikan rentang per simbol berikut. L_n adalah jumlah bit harapan untuk seluruh blok n simbol.
+
+$$
+H(X)\le\frac{L_n}{n}<H(X)+\frac1n
+$$
+
+Jika ada ketergantungan, gunakan entropi gabungan blok. Untuk sumber stasioner dengan alfabet berhingga, laju entropi didefinisikan melalui limit ini:
+
+$$
+\overline H=\lim_{n\to\infty}\frac{H(X_1,\ldots,X_n)}{n}
+$$
+
+Sebagai contoh, pilih satu bit Z yang berpeluang sama untuk nol dan satu di awal, lalu ulangi nilainya sepanjang blok dengan panjang n yang diketahui. Dalam model ini:
+
+$$
+P(Z=0)=P(Z=1)=\frac12,\qquad X_i=Z,\qquad H(X_i)=1,\qquad H(X_1,\ldots,X_n)=1
+$$
+
+Setiap posisi mempunyai entropi marginal satu bit, tetapi dekoder yang mengetahui n dan model ini dapat merepresentasikan seluruh blok dengan satu bit Z. Ini membedakan entropi satu simbol dari informasi dalam suatu urutan. ZIP dan gzip juga melibatkan header, model, riwayat, dan batas byte; batasnya tidak dapat disimpulkan hanya dari frekuensi karakter individual.
+
+### Contoh Python yang menangani masukan kosong dan satu simbol
+
+Contoh ini menghitung karakter Python serta memakai pohon bersama untuk mengodekan dan mendekodekan. Frekuensi yang sama ditangani tanpa bergantung pada urutan masukan, dan setiap pemanggilan membuat buku kode baru. String kosong memakai pohon dan muatan kosong.
 
 ```python
 import heapq
 from collections import Counter
+from itertools import count
+
 
 class Node:
-    def __init__(self, char, freq):
+    def __init__(self, char=None, left=None, right=None):
         self.char = char
-        self.freq = freq
-        self.left = None
-        self.right = None
+        self.left = left
+        self.right = right
 
-    def __lt__(self, other):
-        return self.freq < other.freq
 
 def build_huffman_tree(text):
-    frequency = Counter(text)
-    heap = [Node(char, freq) for char, freq in frequency.items()]
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+    order = count()
+    heap = [(freq, next(order), Node(char))
+            for char, freq in sorted(Counter(text).items())]
     heapq.heapify(heap)
-
+    if not heap:
+        return None
     while len(heap) > 1:
-        left = heapq.heappop(heap)
-        right = heapq.heappop(heap)
-        merged = Node(None, left.freq + right.freq)
-        merged.left = left
-        merged.right = right
-        heapq.heappush(heap, merged)
+        freq_left, _, left = heapq.heappop(heap)
+        freq_right, _, right = heapq.heappop(heap)
+        parent = Node(left=left, right=right)
+        heapq.heappush(heap, (freq_left + freq_right, next(order), parent))
+    return heap[0][2]
 
-    return heap[0]
 
-def generate_huffman_codes(node, prefix="", codebook={}):
-    if node is not None:
+def generate_huffman_codes(root):
+    codes = {}
+    stack = [] if root is None else [(root, "")]
+    while stack:
+        node, prefix = stack.pop()
         if node.char is not None:
-            codebook[node.char] = prefix
-        generate_huffman_codes(node.left, prefix + "0", codebook)
-        generate_huffman_codes(node.right, prefix + "1", codebook)
-    return codebook
+            codes[node.char] = prefix or "0"
+        else:
+            stack.append((node.right, prefix + "1"))
+            stack.append((node.left, prefix + "0"))
+    return codes
 
-# Teks sampel
-text = "entropi_shannon_dan_teori_informasi"
-tree_root = build_huffman_tree(text)
-codes = generate_huffman_codes(tree_root)
 
-print("Kode Huffman:")
-for char, code in sorted(codes.items()):
-    print(f"'{char}': {code}")
+def encode(text, codes):
+    try:
+        return "".join(codes[char] for char in text)
+    except KeyError as exc:
+        raise ValueError("symbol missing from codebook") from exc
+
+
+def decode(bits, root):
+    if any(bit not in "01" for bit in bits):
+        raise ValueError("payload must contain only 0 and 1")
+    if root is None:
+        if bits:
+            raise ValueError("nonempty payload with an empty tree")
+        return ""
+    if root.char is not None:
+        if "1" in bits:
+            raise ValueError("single-symbol code uses only 0")
+        return root.char * len(bits)
+    result = []
+    node = root
+    for bit in bits:
+        node = node.left if bit == "0" else node.right
+        if node.char is not None:
+            result.append(node.char)
+            node = root
+    if node is not root:
+        raise ValueError("truncated codeword")
+    return "".join(result)
+
+
+if __name__ == "__main__":
+    text = "shannon_entropy_and_information_theory"
+    root = build_huffman_tree(text)
+    codes = generate_huffman_codes(root)
+    payload = encode(text, codes)
+    print("Huffman codes:")
+    for char, code in sorted(codes.items()):
+        print(f"{char!r}: {code}")
+    print("Logical payload bits:", len(payload))
+    print("Round trip:", decode(payload, root) == text)
 ```
 
-## 6. Teorema Pengkodean Saluran: Batasan Komunikasi Tanpa Kesalahan
+Anda juga dapat mengganti teks contoh dengan entropi_shannon_dan_teori_informasi untuk mencoba frasa berbahasa Indonesia dengan prosedur pengodean dan pendekodean yang sama.
 
-Setelah menunjukkan batasan kompresi data, Shannon kemudian menghadapi "saluran komunikasi dengan kebisingan". Adanya kebisingan menyebabkan sebagian data terbalik atau hilang. Untuk mengatasi hal ini, kita menambahkan **redundansi** pada data agar kesalahan dapat diperbaiki (kode koreksi kesalahan).
+Untuk satu simbol, contoh ini memberikan kode tidak kosong 0 dan menyatakan jumlah pengulangan melalui panjang muatan. Saat itu H=0 dan L=1, sehingga batas atas ketat L_H<H+1 di atas tidak berlaku untuk kasus satu simbol pada implementasi ini. Mengizinkan kode kosong dan membagikan jumlah pengulangan secara terpisah merupakan konvensi lain.
 
-Namun, semakin banyak redundansi yang ditambahkan, semakin menurun pula kecepatan efektif (laju) transmisi informasi yang dapat dikirimkan. Lalu, dalam lingkungan yang bising, seberapa cepat dan seberapa akurat kita dapat mengirimkan informasi?
+Berikan pohon hasil build_huffman_tree kepada decode. Fungsi ini menolak karakter tidak valid dan kata kode terpotong, tetapi tidak mendeteksi atau memperbaiki setiap kerusakan yang mengubah muatan menjadi urutan kode valid lain. Karakter di sini adalah titik kode Unicode, bukan gugus grafem atau byte UTF-8.
 
-Jawaban dari pertanyaan ini adalah **Teorema Pengkodean Saluran** (Teorema Kedua Shannon).
+Muatan adalah string Python berisi nol dan satu, bukan format berkas dengan bit yang dipadatkan. Logical payload bits mengukur panjang logis, bukan memori objek Python. Biaya menyimpan atau mengirim pohon, pembingkaian, dan header tidak dihitung; contoh ini saja tidak membuktikan rasio kompresi seluruh berkas.
 
-Shannon membuktikan bahwa setiap saluran komunikasi memiliki **Kapasitas Saluran** (Channel Capacity) $ C $ yang spesifik. Dan yang mengejutkan, ia menyatakan hal berikut:
+## 6. Pengodean saluran: probabilitas galat kecil dan nol galat pada panjang berhingga
 
-**"Jika kecepatan transmisi informasi $ R $ lebih kecil dari kapasitas saluran $ C $ ( $ R < C $ ), maka dengan melakukan pengkodean yang tepat, tingkat kesalahan dapat didekatkan ke angka nol sejauh mungkin."**
-
-Sebagai rumus representatif untuk menghitung kapasitas saluran $ C $, terdapat Teorema Shannon-Hartley terkait saluran bising Gauss putih (AWGN).
+Pertama, tinjau saluran diskret tanpa memori dengan alfabet berhingga: setiap penggunaan memiliki probabilitas transisi yang sama dan tidak bergantung pada masa lalu. Misalkan masukannya U dan keluarannya V. Kapasitas adalah maksimum informasi bersama atas distribusi masukan, dalam bit per penggunaan saluran.
 
 $$
-C = B \log_2 \left( 1 + \frac{S}{N} \right)
+C=\max_{P_U}I(U;V),\qquad I(U;V)=H(U)-H(U\mid V)
 $$
 
-Di mana,
-- $ C $ : Kapasitas saluran (bit per detik)
-- $ B $ : Lebar pita (Hz)
-- $ S $ : Daya sinyal (Watt)
-- $ N $ : Daya kebisingan (Watt)
-- $ \frac{S}{N} $ : Rasio Sinyal terhadap Kebisingan (Signal-to-Noise Ratio)
+Kode yang mengirimkan satu dari M pesan yang mungkin melalui n penggunaan saluran mempunyai laju:
 
-Teorema ini menjadi penunjuk jalan yang menunjukkan batas teoretis yang dapat dicapai (Batas Shannon) dalam desain semua sistem komunikasi digital modern, seperti Wi-Fi, komunikasi seluler 5G, dan komunikasi satelit.
+$$
+R=\frac{\log_2 M}{n}\quad(\mathrm{bits/use})
+$$
 
-## 7. Penutup
+Dalam model ini, jika R<C, kode dapat dipilih sehingga probabilitas galat pendekodean menjadi sekecil yang diinginkan ketika panjang blok meningkat. Ini tidak menjanjikan tepat nol galat pada panjang berhingga atau pencapaian otomatis oleh kode tertentu. Pada laju tetap di atas kapasitas, probabilitas galat tidak dapat mendekati nol dengan asumsi yang sama. Perbandingan besaran per detik juga memerlukan jumlah penggunaan saluran per detik yang konsisten.
 
-Teori informasi yang dibangun oleh Claude Shannon mendefinisikan "informasi" yang tidak berwujud secara matematis dan ketat, serta membuka pintu menuju era digital. **Entropi Shannon** tidak hanya sekadar konsep abstrak, melainkan juga menunjukkan batas absolut dari algoritma kompresi data, dan kapasitas saluran telah menentukan arah evolusi internet dan komunikasi nirkabel yang kita gunakan setiap hari.
+### Saluran AWGN dengan batasan lebar pita dan daya
 
-Alasan mengapa kita dapat melakukan streaming video di ponsel cerdas dan menerima gambar alam semesta yang jelas dari pesawat ruang angkasa yang jauh adalah karena adanya fondasi matematis yang kuat bernama teori informasi. Saat ini, konsep entropi terus menyebar ke bidang yang lebih luas, seperti perdebatan tentang hubungannya dengan entropi termodinamika dalam fisika, dan peran pentingnya dalam pembelajaran mesin (seperti kehilangan lintas-entropi) dan lain-lain.
+Untuk derau Gaussian putih aditif yang independen dari sinyal masukan, lebar pita B Hz, daya sinyal rata-rata S, dan total daya derau N dalam pita tersebut, kapasitas dengan batasan daya rata-rata adalah sebagai berikut. Anggap B>0, S≥0, dan N>0.
 
-Memahami sifat dasar dari data dan mengetahui batasannya akan terus menjadi pendekatan yang paling penting dalam merancang sistem komunikasi informasi yang lebih maju di masa depan.
+$$
+C=B\log_2\left(1+\frac SN\right)\quad(\mathrm{bits/s})
+$$
+
+Satuan C adalah bit per detik. Ukur S dan N dalam satuan daya yang sama dan gunakan rasio linearnya, bukan nilai numerik dalam dB. Misalnya, B=1 MHz dan S/N=15 dalam skala linear menghasilkan nilai teoretis berikut:
+
+$$
+10^6\log_2(1+15)=4\times10^6\ \mathrm{bits/s}
+$$
+
+Ini bukan pengukuran laju data Wi-Fi atau jaringan seluler. Modulasi, masukan yang diizinkan, penundaan, panjang berhingga, fading, interferensi, dan overhead protokol dapat berbeda dari model dan perlu ditinjau saat menerapkannya.
+
+## 7. Pertanyaan saat menggunakan teori informasi
+
+Teori informasi menyediakan kerangka untuk mempelajari batas sambil membedakan redundansi yang dihilangkan oleh kompresi dari redundansi yang ditambahkan untuk keandalan komunikasi. Teori ini mendasari streaming video dan komunikasi satelit, tetapi satu rumus tidak menentukan kinerja seluruh sistem nyata.
+
+Entropi silang dalam pembelajaran mesin juga bergantung pada distribusi prediksi dan tidak identik dengan entropi sumber. Ketika meninjau hubungan formal dengan entropi termodinamika, bedakan model fisik dan satuannya. Titik awalnya adalah menentukan variabel acak, apa yang diketahui, dan biaya apa yang dihitung.
