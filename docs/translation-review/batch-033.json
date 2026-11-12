@@ -1269,5 +1269,32 @@
     "Only JA/EN fully read;othersinventoryonly.",
     "No native/browser/benchmarks/serializedcompressor/LLMexperimentalcertification.",
     "Newbatchpublication pending;prior032CI trackedseparately."
-  ]
+  ],
+  "finalAssembly": {
+    "checkedAt": "2026-11-12T22:37:59.095107+09:00",
+    "validation": "docs/translation-review/batch-033-final-validation.json",
+    "checks": "docs/translation-review/batch-033-final-checks.json",
+    "allOriginalAndTranslationBodiesRead": true,
+    "languages": 13,
+    "texExpressions": 377,
+    "diagrams": 26,
+    "graphEdges": 182,
+    "referencesEach": 11,
+    "articlePrograms": 0,
+    "unitTestsPassed": 17,
+    "actualPreviewBundles": 34,
+    "sourceSnapshotsExact": 442,
+    "multilingualPages": 1918,
+    "httpsHtmlPages": 3488,
+    "httpsXmlFiles": 41,
+    "reviewedTranslationsTotal": 408,
+    "unreviewedTranslations": 12624,
+    "humanReviews": 0,
+    "arabicStaticDirection": "docs/translation-review/batch-033-ar-r2-validation.json",
+    "initialArabicVerifierFailurePreserved": "docs/translation-review/batch-033-ar-checks.json",
+    "publicationProbePreparation": "docs/translation-review/batch-033-probe-preparation.json",
+    "publicationProbeLocalCheck": "docs/translation-review/batch-033-probe-local-structure.json",
+    "publicationPending": true,
+    "scope": "All13completeold/revisedbodiesreadand12AIimmutableentries.29exactsharedTeXeach,2completegraphs8+6edges,7BWTrows/literalcode/11primary-officialreferences. Fixedencoder/probability/codeclass/positive-support/iid/stationary/precision/modelsharingconditions explicit. Independentfinite136counting510swap1093BWT650rANSprofiles308096roundtrips166400encodedinverse511rationalinterval andselectedcopy/NLL/IOexamples,notarticleprogramexecution/fullcompressor/benchmark/LLMexperimentalreproduction. OriginalEN18byteexample/CN-TW-DEc100examples preservedwithconditions;DEdecimalMB/bitbyte/roundedboundcorrected. IDRussian/Thaiintrusionsremoved. Arabic113exactLTRsourceHTMLvalues/RTL/linkedCSSstaticallychecked;initialellipsisrenderingfailurepreserved,explicitUnicodeellipsis andfreshR2pass. Fresh34bundle1918multilingualpages/3488HTTPSHTML41XML and17tests pass,existingpartialpreviewwarningsretained. Local442articles+3tags,458filereadsincl13GIF/HTTP0,HTML-onlynewlinenormalization;prior429checksretained. LiveverificationwaitsmatchingCIbuild/deploysuccess;notnative/browser/fullsite/all-inputproof certification."
+  }
 }
