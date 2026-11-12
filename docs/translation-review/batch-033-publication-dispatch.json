@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "observedAt": "2026-11-12T22:39:13.8643183+09:00",
+  "deployedCommitExpected": "d7988f5d5e76a0b7e4b74997220fc218b3ddfae3",
+  "ciRun": 43229194255,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43229194255",
+  "runAttempt": 1,
+  "statusAtDispatch": "in_progress",
+  "conclusionAtDispatch": null,
+  "pagesPlanned": 442,
+  "translationsPlanned": 408,
+  "japaneseSourcesPlanned": 34,
+  "mathVersionsPlanned": 247,
+  "texExpressionsPlanned": 10793,
+  "losslessVersionsPlanned": 13,
+  "losslessTeXPlanned": 377,
+  "losslessDiagramsPlanned": 26,
+  "losslessArticlePrograms": 0,
+  "additionalHindiTaxonomyUrlsPlanned": 3,
+  "publicationPending": true,
+  "scope": "Ordinary push after fetch zero incoming/17 outgoing including final assembly. Matching run/head/attempt observed. Live442article+3tag checks wait matching build/deploy success. Local442+3pass/458reads/HTTP0;prior429checks retained.",
+  "proof": "docs/translation-review/batch-033-publication-dispatch.json",
+  "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_408.py",
+  "probeSha256": "4b9bb7b3238a92488f50d8687f37773fef7d0a8a04eaee5c33f1c0edf9668bc4",
+  "probePreparation": "docs/translation-review/batch-033-probe-preparation.json",
+  "probeLocalCheck": "docs/translation-review/batch-033-probe-local-structure.json",
+  "jobsObserved": [
+    {
+      "name": "build",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-11-12T13:39:11Z",
+      "activeSteps": []
+    }
+  ]
+}
