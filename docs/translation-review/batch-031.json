@@ -1115,8 +1115,9 @@
     "arabicStaticDirection": "docs/translation-review/batch-031-ar-direction.json",
     "publicationProbePreparation": "docs/translation-review/batch-031-probe-preparation.json",
     "publicationProbeLocalCheck": "docs/translation-review/batch-031-probe-local-structure.json",
-    "publicationPending": true,
-    "scope": "All13 complete bodies manually read/compared,12AI entries immutable.32bundle source/decodedHTML checks,not fullsite/native/browser/biologicaldata/population/tournament certification. Local416+3pass with HTML-only newline normalization;432file reads including13GIF,HTTP0. Actual live verification waits matchingCI build/deploy success."
+    "publicationPending": false,
+    "scope": "All13 complete bodies manually read/compared,12AI entries immutable.32bundle source/decodedHTML checks,not fullsite/native/browser/biologicaldata/population/tournament certification. Local416+3pass with HTML-only newline normalization;432file reads including13GIF,HTTP0. Matching CI and live verification completed as recorded in publicationCheckpoints.",
+    "publicationVerifiedBy": "docs/translation-review/publication-031.json"
   },
   "publicationDispatch": {
     "version": 1,
@@ -1154,5 +1155,32 @@
         ]
       }
     ]
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-11-12T10:08:00.217559+09:00",
+      "ciRun": 43128517431,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43128517431",
+      "deployedCommit": "b53e62415c5faf480827621e47cd727dba1032ce",
+      "runAttempt": 1,
+      "ciCompletion": "docs/translation-review/batch-031-ci-completion.json",
+      "proof": "docs/translation-review/publication-031.json",
+      "pages": 416,
+      "passed": 416,
+      "failed": 0,
+      "translations": 384,
+      "japaneseSources": 32,
+      "mathVersions": 221,
+      "texExpressions": 10234,
+      "cooperationVersions": 13,
+      "cooperationTeX": 130,
+      "cooperationDiagramSources": 26,
+      "cooperationGraphEdges": 156,
+      "additionalHindiTaxonomyPages": 3,
+      "additionalHindiTaxonomyPassed": 3,
+      "httpPageProbeAttempts": 1,
+      "httpPageRetries": 0,
+      "scope": "Combined001through031 live416articleURLs plus3Hindi tags passed initialHTTPattempt after matchinghead/attempt/build/deploysuccess. New13 exactmath/diagrams/refs/title/date/numericrows/canonical/language/hreflang/sidebar andArabic12LTRvalues/RTL;prior403articlechecks retained. StaticHTML aliases,not HTTP301/browsernavigation. Not fullsite/native/browser/population/tournament/biologicaldata certification. LocalcurrentAI385includesunpublished032English and is distinct frompublished384."
+    }
+  ]
 }
