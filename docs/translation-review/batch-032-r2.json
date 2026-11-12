@@ -323,6 +323,46 @@
         "Actualplot PNG matches priorinspectedimage;no browser/KaTeX/Mermaid/nativeGUI certification.",
         "Primary reading scope separatelydocumented;publication andwholegoalpending."
       ]
+    },
+    "post/information-theory-shannon-entropy/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/information-theory-shannon-entropy/index.md",
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "translationHash": "aad2a0704735a8befbe981342bdbc388c0eecd864e8976d178cad23f5cef9e7a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full old and actual revised Hindi metadata, all seven sections, full diagram and both full actual Python blocks against frozen Japanese. Reread final iid/stationarity clarifications. Preserved examples and purposes while correcting singlehanded history, absolute individual-file entropy compression limit, unqualified Huffman optimality and finite zero-error interpretation. Lossless source compression separated from noisy-channel reliability; known-n constant-Z joint entropy and practical model/file costs aligned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared स्व-सूचना/प्रत्याशित मान, स्रोत/चैनल, उपसर्ग कोड/अद्वितीय डिकोडिंग, सीमांत/संयुक्त एन्ट्रापी/एन्ट्रापी दर, स्थिरstationary/स्मृतिरहितmemoryless, कोड बिंदु/ग्रैफीम समूह/बाइट and पेलोड versus memory. Used हानिरहित for lossless, explicit एक ही प्रायिकता वितरण for identically distributed rather than ambiguous equal/uniform wording; stationary means time-shift-invariant joint distribution, not constant symbols. Claude spelling क्लॉड accompanied by Latin name, valid एन्ट्रापी/हफमैन retained. Existing English plot labels/sample retained with Hindi gloss."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all 14 source-identical TeX with positive-P/zero-term conventions, finite alphabet bounds and binary entropy; expected-length lower bound; strict Huffman upper only with two positive symbols; independent identically distributed nondegenerate block bound; stationary entropy rate; constant-Z marginal1/joint1 known-length example; finite DMC max mutual information and M possible messages; AWGN average-power/in-band-noise/linear-SNR assumptions and 4Mbps. Singleton H0 L1 exception explicit. Finite checks do not establish general/all-channel proof or practical measured throughput."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read and executed both actual corrected article programs and main blocks. Passed 1001 valid/5 invalid probabilities, 1093 exhaustive abc roundtrips plus 6 Unicode cases, fresh dictionaries and deterministic frequency ties, invalid/truncated payload and unknown-symbol/nonstring checks, 1360 independent full-tree optimal weight profiles. Original sample already English and retained, giving 140 logical bits and roundtrip true. Unicode test suite includes Hindi text; no separate original Hindi example invented. Actual PNG SHA matches prior visually inspected plot, Agg warning retained. No arbitrary external-tree/all-input/serialization/error-correction/browser certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Both primary references match generated HTML; previously documented primary reading scope retained, no new full-paper reading asserted. Original Hindi plot text had no unrelated chart/search link. Preserved both raw date lines/effective Sep21 publication, slug, image hash and taxonomy; actual Nov12 lastmod. Selected article 14 hreflang13 sidebar and preview33bundles1853pages/3371HTTPS HTML41XML checks pass. Existing17tests referenced from earlierJAEN run, not rerun. Otherthree translation bodies and publication remain pending."
+        }
+      },
+      "summary": "Full Hindi entropy and coding review with unambiguous identical-distribution and stationarity explanations and actual program execution.",
+      "languageSpecificFindings": "Distinguished हानिरहित compression from zero-error communication, identically distributed from uniform, stationary joint laws from fixed symbol output, and कोड बिंदु/ग्रैफीम समूह/बाइट. Claude Latin name retained beside क्लॉड; original English sample and label meanings retained. Explicit known-length correlated sequence, singleton code convention, possible messages and average-power linear-SNR assumptions. No invented localized sample or chart-link removal.",
+      "validation": "docs/translation-review/batch-032-hi-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "3 other translation bodies remainunreviewed atthisstage.",
+        "Finiteoracle cases,not all-input proof,serializedfileformat,errorcorrection or practicalnetworkbenchmark.",
+        "Actualplot PNG matches priorinspectedimage;no browser/KaTeX/Mermaid/nativeGUI certification.",
+        "Primary reading scope separatelydocumented;publication andwholegoalpending."
+      ]
     }
   },
   "stages": [
@@ -784,6 +824,67 @@
       "unreviewedTranslations": 12640,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 4,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "hi"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "ac9eef4bcb6a6778342c4fd753bfa6b9adb8da6ff55ee99b9683c5728af52af0",
+      "validation": "docs/translation-review/batch-032-hi-validation.json",
+      "checks": "docs/translation-review/batch-032-hi-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-032-hi-ledger-validation.json",
+      "texEach": 14,
+      "diagramsEach": 1,
+      "diagramSolidEdges": 4,
+      "diagramDottedEdges": 1,
+      "articleProgramsExecutedEach": 2,
+      "codeValidation": {
+        "language": "hi",
+        "articleProgramsExecuted": 2,
+        "extractedProgramSha256": [
+          "5841dd9a65da699b76137cb8d022e807e022eed2f0f7a859ddbe360c632dce35",
+          "1de958a50b5f565f3c832934c79fbcb57636b1f7a2bc55a2833324d6d2d7826c"
+        ],
+        "pythonVersion": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "binaryEntropyValidPoints": 1001,
+        "binaryEntropyInvalidPointsRejected": 5,
+        "exhaustiveAbcRoundTripsLength0through6": 1093,
+        "unicodeRoundTrips": 6,
+        "localizedOriginalExampleRoundTrips": [],
+        "repeatedCallNoStaleCodebook": true,
+        "equalFrequenciesDeterministicAcrossInputOrder": true,
+        "nonStringBuildInputsRejected": 4,
+        "invalidOrTruncatedPayloadCasesRejected": 6,
+        "unknownSymbolRejected": true,
+        "independentFullBinaryTreeShapeOptimalProfiles": 1360,
+        "optimalProfileScope": "2through5symbols,eachpositiveintegerweight1through4;allfullbinaryleafdepthmultisets,largestweightstoshortestdepths. Finite independent oracle,not all-input proof.",
+        "singleSymbolConvention": "Nonempty0code,L=1,H=0;strictL<H+1notclaimedforthisimplementationcase.",
+        "sampleStdout": "Huffman codes:\n'_': 001\n'a': 1011\n'd': 01110\n'e': 0001\n'f': 01111\n'h': 0100\n'i': 0101\n'm': 10100\n'n': 111\n'o': 100\n'p': 10101\n'r': 1100\n's': 0000\n't': 1101\n'y': 0110\nLogical payload bits: 140\nRound trip: True\n",
+        "plot": {
+          "path": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\entropy-code-batch-032-hi-validation-hi\\binary-entropy.png",
+          "sha256": "da51287a79462f2044a4d6bdee16c0092ed0f907d9ebe07891d9b1148f841ec2",
+          "points": 101,
+          "peakAtHalf": true,
+          "warnings": [
+            "FigureCanvasAgg is non-interactive, and thus cannot be shown"
+          ],
+          "visuallyInspectedByThisCode": false
+        },
+        "scope": "Actual article-extracted standalone programs plus finite oracles. No serialized-file format,errorcorrection,all-input proof or native/browser/ledger certification."
+      },
+      "plotExactMatchTo": "docs/translation-review/batch-032-ja-en-plot-review.json",
+      "actualPreviewBundles": 33,
+      "multilingualPages": 1853,
+      "httpsHtmlPages": 3371,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 393,
+      "unreviewedTranslations": 12639,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 3,
       "publicationPending": true
     }
   ],
