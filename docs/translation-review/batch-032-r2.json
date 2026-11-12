@@ -1238,5 +1238,43 @@
     "publicationProbeLocalCheck": "docs/translation-review/batch-032-probe-local-structure.json",
     "publicationPending": true,
     "scope": "All13 complete old/revised bodies read and compared,12AI entries immutable;initial032ENrecord retained and currentR2evidence correction documented. Fresh33bundle source/decodedHTML and26actualprograms with finite oracles,not fullsite/native/browser/all-input proof/serializedfile/errorcorrector/physicalnetwork certification. Actualplots match previously visually inspected bytes. TW original sample8codepoints24logicalbits andID35codepoints126logicalbits roundtrip. Arabic45LTRexpressions/RTL/linkedCSS statically checked. Local429article+3tag checks pass,445file reads incl13GIF,HTTP0,HTML-only newline normalization. Actual live verification waits matchingCI build/deploy success."
+  },
+  "publicationDispatch": {
+    "version": 1,
+    "observedAt": "2026-11-12T20:58:48.9283094+09:00",
+    "deployedCommitExpected": "f8ca0959a65b09d561783a6e6e9db1ff0d196536",
+    "ciRun": 43213662116,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43213662116",
+    "runAttempt": 1,
+    "statusAtDispatch": "in_progress",
+    "conclusionAtDispatch": null,
+    "pagesPlanned": 429,
+    "translationsPlanned": 396,
+    "japaneseSourcesPlanned": 33,
+    "mathVersionsPlanned": 234,
+    "texExpressionsPlanned": 10416,
+    "entropyVersionsPlanned": 13,
+    "entropyTeXPlanned": 182,
+    "entropyDiagramsPlanned": 13,
+    "entropyProgramsExecutedLocally": 26,
+    "additionalHindiTaxonomyUrlsPlanned": 3,
+    "publicationPending": true,
+    "scope": "Ordinary push after fetch zero incoming/16 outgoing including final assembly. Matching run/head/attempt observed. Live429article+3tag checks wait matching build/deploy success. Localfirst429+3pass/445reads/HTTP0;prior416checks retained.",
+    "proof": "docs/translation-review/batch-032-publication-dispatch.json",
+    "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_396.py",
+    "probeSha256": "5076335749008e1f5531bb0a4797d8ed2e6aff4ff037f7a07226dc3a3230aeb3",
+    "probePreparation": "docs/translation-review/batch-032-probe-preparation.json",
+    "probeLocalCheck": "docs/translation-review/batch-032-probe-local-structure.json",
+    "jobsObserved": [
+      {
+        "name": "build",
+        "status": "in_progress",
+        "conclusion": null,
+        "started_at": "2026-11-12T11:58:05Z",
+        "activeSteps": [
+          "Checkout"
+        ]
+      }
+    ]
   }
 }
