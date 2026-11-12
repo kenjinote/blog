@@ -164,6 +164,46 @@
         "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
         "Primary reading scope documented separately;publication pending;whole goal active."
       ]
+    },
+    "post/paradox-prisoners-dilemma/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/paradox-prisoners-dilemma/index.md",
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "translationHash": "593dab25356af2c41389b5f6c0bcb68917ea27b52f975736666001ae948b543e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full old and revised Korean metadata,introduction,sixsections,two tables and both diagram sources against frozen Japanese. Preserved historical,market/environment/arms-race,repetition,evolution,bat/bee and institutional themes. Corrected fictional sentence zero versus acquittal,Pareto versus sum,universal defection/groupvictory and moral inference. Matched rarecluster resident limit and empirical association rather than causal TFT."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared 보수/기대효용 versus 형량,엄격한 우월 전략,내쉬 균형 versus 부분게임 완전균형,역진귀납,파레토 효율성,할인 점수 versus 생물학적 적합도. Distinguish 소집단 from 개체군 and matching p from belief q and prevalence. Before firstproof changed drafted 짝짓기 to 상대 매칭 in both occurrences to avoid biological mating inference;model concerns game opponents. Read both corrected sentences separately. Old 우월전략 wording itself is valid,not falsely called error."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read ten identical TeX and both tables,including own/opponent arguments,T0>R-1>P-5>S-10,5-4q>=1,efficientpureCC/CD/DC versus sumCC-2. Checked three discounted strategy scores,matching advantage,p>5(1-delta)/(9-5delta),delta0.9 threshold1/9,four rows -55/-52.75/-50/-46 versus baseline-50 and isolatedTFT loss5. Rarepopulation and negative score assumptions retained. Auxiliary arithmetic/traces once,not a population update model or empirical/general proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Read both complete six-edge Mermaid sources:simultaneous joint outcomes,not observed sequential choice,and TFT firstC/play/observe/nextchoice with bothbranches advancing t. Corrected 마음을 고쳐먹고 framing to action observed in previousround,not internal repentance or same-round foreknowledge. Compared TFT error alternation. Exact topology,decodedHTMLmath and library presence checked,no browser/KaTeX/Mermaid runtime,tournament or biological code reproduction."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Four external references(two researchprimary papers,two officialteaching sources) plus localized ko internal article match. Preserve established primary reading limits,20fasted bats not totalcolony,association not immediate TFT causation. Original Sep24T15 date,slug,taxonomy,imagehash unchanged,Nov12lastmod. Selected proof and1800 multilingualpages/3277 HTTPS HTML/41XML passed;earlier17tests referenced not rerun. Seven other translations and publication remain pending."
+        }
+      },
+      "summary": "Full Korean cooperation/evolution review distinguishing opponent matching,fitness and observed TFT responses.",
+      "languageSpecificFindings": "Replaced 무죄/석방 legal inference with explicit fictional0years and removed mandatory groupvictory. Distinguished small group versus population and discounted score versus fitness. Polished draft 상대 매칭 to avoid reproductive mating ambiguity. TFT responds next round to observed action,not 마음을 고쳐먹고. Original price section has no numeric currency,no currency error claimed.",
+      "validation": "docs/translation-review/batch-031-ko-validation.json",
+      "limitations": [
+        "AI,not human/native-speaker certification.",
+        "7 other translation bodies remain unreviewed at this stage.",
+        "Finite auxiliary arithmetic/traces separate from article programs0,population-update simulation,biological data reanalysis and tournament reproduction.",
+        "Source/decodedHTML only;no browser visual or KaTeX/Mermaid execution.",
+        "Primary reading scope documented separately;publication pending;whole goal active."
+      ]
     }
   },
   "stages": [
@@ -365,6 +405,56 @@
       "unreviewedTranslations": 12656,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 8,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "ko"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "f255a488a9224ed7b603f90e91d88cf0c59498cae0b42dcaf7651a6b52ab9e04",
+      "validation": "docs/translation-review/batch-031-ko-validation.json",
+      "checks": "docs/translation-review/batch-031-ko-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-031-ko-ledger-validation.json",
+      "texEach": 10,
+      "diagramsEach": 2,
+      "diagramEdges": [
+        6,
+        6
+      ],
+      "articleProgramsExecuted": 0,
+      "sharedAuxiliaryChecks": {
+        "pureProfiles": 4,
+        "paretoEfficientPureProfiles": [
+          "CC",
+          "CD",
+          "DC"
+        ],
+        "uniquePureNash": "DD",
+        "cooperationBeliefValues": 101,
+        "playersEach": 2,
+        "discountValues": 102,
+        "deterministicStrategyPairs": 3,
+        "roundsEach": 8,
+        "discountedPrefixPlusExactTailCases": 306,
+        "clusterMatchingCases": 10605,
+        "isolatedTftDifference": "-5",
+        "exampleDelta": "9/10",
+        "exampleMatchingThreshold": "1/9",
+        "numericTableCases": 4,
+        "tftErrorTraceRounds": 8,
+        "scope": "Once per invocation,finite exact auxiliary arithmetic and traces. Not article programs,population-update simulation,ESS/SPE/all-strategy proof,biological data reanalysis or tournament reproduction. Rare-cluster resident baseline and negative score meaning read separately in prose."
+      },
+      "actualPreviewBundles": 32,
+      "multilingualPages": 1800,
+      "httpsHtmlPages": 3277,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 377,
+      "unreviewedTranslations": 12655,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 7,
       "publicationPending": true
     }
   ]
