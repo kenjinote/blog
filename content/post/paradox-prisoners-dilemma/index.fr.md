@@ -1,148 +1,170 @@
 ---
-title: "[Le dilemme du prisonnier] La théorie des jeux révèle les limites de la rationalité humaine et de la coopération"
-description: "Le paradoxe représentatif de la théorie des jeux, le \"dilemme du prisonnier\". Une explication approfondie de la façon dont le choix rationnel d'un individu conduit au pire résultat pour l'ensemble, avec des applications dans les affaires, la politique internationale et la biologie. Nous explorons les conditions de notre coopération en abordant la stratégie du tac au tac et la théorie des jeux évolutionniste."
+title: "Dilemme du prisonnier et évolution de la coopération : conditions et observations"
+description: "Distinguer incitations, efficacité de Pareto, stratégies répétées et rencontres au sein des groupes pour étudier la coopération, les chauves-souris et les abeilles."
 slug: "paradox-prisoners-dilemma"
 categories: ["philosophy"]
 tags: ["game-theory", "prisoners-dilemma", "strategy"]
 image: "eyecatch.jpg"
 date: "2026-09-24T15:00:00+09:00"
+math: true
+mermaid: true
+lastmod: "2026-11-12"
 ---
 
-# Le dilemme du prisonnier (Prisoner's Dilemma) : Le paradoxe ultime posé par la théorie des jeux
+La coopération peut être préférable pour les deux participants, alors que chacun peut avoir intérêt à s'en écarter. Le [dilemme du prisonnier](https://kenji.blog/fr/p/prisoners-dilemma/) analyse ce conflit à partir d'actions et de gains définis. Ce n'est pas une loi selon laquelle les humains doivent trahir ou les groupes coopératifs doivent survivre.
 
-"Pourquoi nous trahissons-nous les uns les autres alors que nous savons que nous réussirions mieux en coopérant ?"
+Concernant son histoire, les [notes d'un cours de Cornell](https://www.cs.cornell.edu/~rafael/networks-html/chapter1.html) présentent les travaux de Merrill Flood et Melvin Dresher en 1950 et l'explication d'Albert Tucker sous la forme d'une histoire de prisonniers. Nous distinguerons ici les incitations d'une interaction unique, les stratégies répétées, les modèles évolutifs et les observations animales.
 
-À cette question fondamentale, la réponse la plus claire et la plus cruelle, du point de vue des mathématiques et de la logique, est le **« dilemme du prisonnier » (Prisoner's Dilemma)** dans la théorie des jeux. Conçu dans les années 1950 par Merrill Flood et Melvin Dresher, et formalisé par Albert W. Tucker sous sa forme actuelle de « l'histoire du prisonnier », ce concept a eu une influence majeure dans des domaines allant de l'économie et des sciences politiques à la psychologie et la biologie de l'évolution.
+## 1. Transformer des peines fictives en gains
 
-Dans cet article, nous allons explorer en détail ce « dilemme du prisonnier », de ses mécanismes fondamentaux à des concepts spécialisés tels que l'équilibre de Nash et l'optimum de Pareto, en passant par des exemples concrets du monde réel et l'évolution de la coopération dans les « jeux répétés ».
+Supposons que deux suspects, A et B, ne puissent pas se concerter et choisissent simultanément le silence C (coopérer entre eux) ou les aveux D (s'écarter de cette coopération). Dans cette situation fictive, les peines suivantes sont certaines. Il ne s'agit pas d'une description des règles réelles d'enquête ou de négociation pénale, ni d'une affirmation selon laquelle avouer entraîne un acquittement.
 
----
+| A / B | C : silence | D : aveux |
+| --- | --- | --- |
+| C : silence | A : 1 an, B : 1 an | A : 10 ans, B : 0 an |
+| D : aveux | A : 0 an, B : 10 ans | A : 5 ans, B : 5 ans |
 
-## 1. Le scénario de base du dilemme du prisonnier
+Chacun souhaite uniquement réduire sa propre peine ; l'amitié, la réputation et la culpabilité n'ajoutent aucune utilité. Le gain u_i est l'opposé de la durée de peine y_i. Un gain négatif ne signifie pas une peine négative. T est votre gain lorsque vous seul choisissez D ; R, lorsque les deux choisissent C ; P, lorsque les deux choisissent D ; et S, lorsque vous seul choisissez C.
 
-Commençons par examiner le célèbre scénario conçu par Tucker.
+$$
+u_i=-y_i,\quad y_i\in\{0,1,5,10\},\qquad T=0>R=-1>P=-5>S=-10
+$$
 
-Deux complices (le Prisonnier A et le Prisonnier B) ont été arrêtés pour un crime grave. Cependant, la police n'a pas de preuves décisives et ne peut les poursuivre que pour un délit mineur (par exemple, 1 an de prison) sans leurs aveux.
-La police isole alors les deux hommes dans des salles d'interrogatoire séparées et propose à chacun le marché suivant :
-
-1. **Si les deux gardent le silence (coopération)** : Par manque de preuves, les deux purgent **1 an de prison**.
-2. **Si l'un avoue (trahison) et que l'autre garde le silence** : Celui qui avoue est **acquitté (libéré)** en récompense de sa coopération à l'enquête, tandis que celui qui garde le silence est condamné pour crime grave à **10 ans de prison**.
-3. **Si les deux avouent (trahison)** : Les deux sont reconnus coupables, mais bénéficient de circonstances atténuantes, écopant de **5 ans de prison**.
-
-Le Prisonnier A et le Prisonnier B ne peuvent pas se concerter. Sans savoir ce que l'autre va choisir, chacun doit décider de « garder le silence (coopérer avec l'autre) » ou d'« avouer (trahir l'autre) ».
-
-### Comprendre le mécanisme de décision avec un diagramme
-
-L'organigramme suivant montre les différentes issues possibles du point de vue du Prisonnier A.
+Le diagramme énumère les combinaisons d'actions choisies simultanément. Il ne permet pas à A d'observer l'action de B avant de choisir.
 
 ```mermaid
 graph TD
-    A["Choix du Prisonnier A"]
-    B["Silence, Coopération"]
-    C["Aveux, Trahison"]
-    A --> B
-    A --> C
-    B -- "Prisonnier B: Silence" --> D["A: 1 an, B: 1 an"]
-    B -- "Prisonnier B: Aveux" --> E["A: 10 ans, B: Acquitté"]
-    C -- "Prisonnier B: Silence" --> F["A: Acquitté, B: 10 ans"]
-    C -- "Prisonnier B: Aveux" --> G["A: 5 ans, B: 5 ans"]
+    Start["Combinaisons d'actions simultanées"] --> AC["A choisit C"]
+    Start --> AD["A choisit D"]
+    AC -->|"B choisit C"| CC["A : 1 an, B : 1 an"]
+    AC -->|"B choisit D"| CD["A : 10 ans, B : 0 an"]
+    AD -->|"B choisit C"| DC["A : 0 an, B : 10 ans"]
+    AD -->|"B choisit D"| DD["A : 5 ans, B : 5 ans"]
 ```
 
----
+## 2. Dominance, équilibre de Nash et efficacité de Pareto
 
-## 2. La tragédie du choix rationnel : L'équilibre de Nash
+Dans u_i, le premier argument représente votre action et le second celle de l'autre joueur. Que l'autre choisisse C ou D, votre gain est supérieur en choisissant D.
 
-Mettez-vous à la place du Prisonnier A et suivez le processus de réflexion rationnelle visant à maximiser son propre intérêt (minimiser la peine de prison). Nous séparons les cas selon le choix de l'autre (Prisonnier B).
+$$
+u_i(D,C)=0>-1=u_i(C,C),\qquad u_i(D,D)=-5>-10=u_i(C,D)
+$$
 
-- **Cas 1 : Si le Prisonnier B choisit le « Silence »**
-  - Si je choisis aussi le « Silence », c'est 1 an de prison.
-  - Si j'« avoue », je suis acquitté.
-  - **Conclusion** : L'acquittement vaut mieux qu'un an, il est donc plus avantageux d'« avouer ».
+C'est une **stratégie strictement dominante**. Si vous attribuez une probabilité q au choix de C par l'autre, la différence de gains espérés est également positive. Ce q est distinct de la probabilité p de rencontrer un autre membre du groupe, utilisée plus loin.
 
-- **Cas 2 : Si le Prisonnier B choisit les « Aveux »**
-  - Si je choisis le « Silence », c'est 10 ans de prison.
-  - Si j'« avoue », c'est 5 ans de prison.
-  - **Conclusion** : 5 ans valent mieux que 10 ans, il est donc plus avantageux d'« avouer ».
+$$
+\begin{aligned}0&\le q\le1,\\\mathrm{EU}(D)&=-5+5q,\\\mathrm{EU}(C)&=-10+9q,\\\mathrm{EU}(D)-\mathrm{EU}(C)&=5-4q\ge1.\end{aligned}
+$$
 
-Étonnamment, quoi que fasse le Prisonnier B, il est toujours plus avantageux pour le Prisonnier A de choisir d'« avouer (trahir) ». Une stratégie qui est toujours la meilleure pour soi, quelle que soit la stratégie de l'autre, est appelée **« stratégie dominante »**.
-Le Prisonnier B se trouve exactement dans la même situation. S'il réfléchit de manière tout aussi rationnelle, « avouer » devient également sa stratégie dominante.
+Si les deux maximisent leur propre utilité espérée avec ce tableau, ils choisissent DD. Comme D domine strictement C face aux stratégies pures comme mixtes de l'autre, DD est l'unique équilibre de Nash. Un **équilibre de Nash** est un profil de stratégies dans lequel aucun joueur ne peut augmenter son gain en changeant seulement sa propre stratégie, celle de l'autre restant fixe. Cela n'exclut pas qu'un changement conjoint améliore le résultat.
 
-En conséquence, les deux choisissent de s'« avouer », ce qui aboutit à **5 ans de prison pour les deux**. Dans la théorie des jeux, cet état est appelé **« équilibre de Nash »** (une situation où aucun joueur ne peut tirer profit d'un changement de stratégie tant que les autres joueurs gardent la leur inchangée).
+Un résultat est **efficace au sens de Pareto (optimal au sens de Pareto)** si aucun autre résultat réalisable n'améliore le gain d'au moins un joueur sans réduire celui de quelqu'un d'autre. Parmi les profils d'actions pures du tableau, CC, CD et DC sont efficaces. DD ne l'est pas : passer à CC améliore les gains des deux joueurs. Cette liste n'énumère pas tout l'ensemble des gains efficaces si l'on autorise des tirages au sort entre résultats.
 
-### Divergence avec l'optimum de Pareto
+Séparément, si l'on additionne les gains numériques avec des poids égaux, CC donne le total le plus élevé. La définition de l'efficacité et ce critère de somme sont différents.
 
-C'est ici que le dilemme survient. Le résultat auquel ils sont parvenus, « 5 ans de prison pour chacun », est-il le meilleur résultat globalement ?
-Non. S'ils s'étaient fait confiance et avaient tous deux choisi le « Silence », ils n'auraient écopé que d'« 1 an de prison chacun ».
+$$
+(u_1+u_2)(CC)=-2,\qquad(u_1+u_2)(CD)=(u_1+u_2)(DC)=(u_1+u_2)(DD)=-10
+$$
 
-L'état dans lequel le bénéfice total (dans ce cas, la somme minimale des peines de prison) est maximisé, c'est-à-dire « un état où il est impossible d'améliorer la situation d'une personne sans détériorer celle d'une autre », est appelé **« optimum de Pareto »**. Le cœur du dilemme du prisonnier réside dans le fait que **« le choix individuel rationnel (l'équilibre de Nash) ne coïncide pas avec la solution optimale globale (l'optimum de Pareto) »**.
+Il s'agit d'une analyse des incitations dans un modèle aux gains spécifiés, pas d'une preuve sur toutes les motivations humaines ou sur un malheur social inévitable.
 
----
+## 3. Examiner les applications à travers les gains et les institutions
 
-## 3. Le dilemme du prisonnier dans le monde réel
+### Concurrence par les prix
 
-Ce dilemme n'est pas qu'un simple exercice mental. Il se produit quotidiennement dans nos structures sociales, nos activités économiques, et même dans les relations internationales.
+Le modèle peut parfois servir d'analogie pour l'incitation à vendre moins cher que son rival afin d'accroître ses ventes, ainsi que pour la réduction des marges lorsque les deux baissent leurs prix. Mais la demande, les coûts, la qualité et l'entrée sur le marché modifient les gains ; baisser les prix ne garantit pas un monopole. La somme des profits des entreprises diffère aussi du bien-être social incluant les consommateurs.
 
-### La concurrence par les prix en économie
-Supposons que les entreprises A et B vendent des produits similaires. Si les deux maintiennent des prix élevés (coopération), les deux réaliseront des profits élevés. Cependant, si l'une des deux double l'autre en baissant ses prix (trahison), elle monopolisera le marché et fera d'énormes profits. En conséquence, les deux s'engagent dans une guerre des prix, aboutissant à une « concurrence par les prix (guerre des prix) » où chacune réduit ses marges.
+### Environnement et ressources partagées
 
-### Les problèmes environnementaux (La tragédie des biens communs)
-La réduction des gaz à effet de serre est également un dilemme du prisonnier entre les nations. Si tous les pays font des efforts de réduction (coopération), nous pouvons prévenir le réchauffement climatique. Cependant, si un seul pays assouplit ses réglementations environnementales pendant que les autres font des efforts (trahison), ce pays seul bénéficiera de la croissance économique. Par conséquent, chaque pays tente de prendre l'avantage, ce qui dégrade l'environnement global.
+Lorsque les bénéfices d'une réduction des émissions sont partagés mais que chacun en supporte les coûts, on peut examiner l'incitation à profiter des efforts d'autrui sans contribuer. Toutefois, il existe plusieurs pays, des dommages et coûts asymétriques, des accords et une surveillance. Ce tableau à deux joueurs ne détermine pas à lui seul les conséquences climatiques ou la croissance économique de chaque pays. Les problèmes de ressources partagées ne correspondent pas tous au même jeu à deux participants.
 
-### La course aux armements
-La course au développement d'armes nucléaires entre les États-Unis et l'Union soviétique pendant la guerre froide en est un exemple typique. Si les deux camps désarment (coopération), ils gagnent en paix et en ressources économiques. Mais si l'un désarme pendant que l'autre reste armé, il fait face à une crise de survie nationale (équivalent aux 10 ans de prison). Les deux camps ont donc été forcés de poursuivre la course aux armements (trahison).
+### Course aux armements
 
----
+Des modèles simplifiant les incitations au désarmement et au maintien des armes sont également utilisés pour réfléchir à la course nucléaire entre les États-Unis et l'Union soviétique pendant la guerre froide. Les capacités réelles, l'information, la vérification et les alliances comptent. Le tableau ne démontre pas une nécessité historique selon laquelle un désarmement unilatéral face à un rival armé menace toujours la survie nationale et impose l'armement comme seule option.
 
-## 4. Jeux répétés et la stratégie du « Tac au Tac » (Tit for Tat)
+## 4. Répétition et stratégie Tit for Tat
 
-Dans un dilemme du prisonnier unique, la « trahison » était le choix rationnel. Cependant, dans le monde réel, il est courant d'interagir à plusieurs reprises avec la même personne. La théorie des jeux appelle cela un **« jeu répété » (Iterated Prisoner's Dilemma)**.
+Lorsqu'une relation se poursuit, les réponses futures aux actions présentes peuvent modifier les gains. Mais la répétition ne garantit pas la coopération. Si le même jeu élémentaire se répète un nombre connu, fixe et fini de fois, que les historiques sont observables et que la structure et la rationalité sont de connaissance commune, l'induction à rebours depuis la dernière période donne un équilibre parfait en sous-jeux avec DD à chaque période. Les [notes du MIT](https://www.ocw.mit.edu/courses/14-15j-networks-spring-2018/pages/lecture-and-recitation-notes/recitation-10-notes/) traitent aussi de la différence entre répétition finie et infinie ; leurs gains numériques diffèrent de ceux de cet article.
 
-Dans les années 1980, le politologue Robert Axelrod a organisé un tournoi en sollicitant des programmes informatiques auprès d'experts du monde entier, pour déterminer quelle stratégie était la plus forte dans un dilemme du prisonnier répété.
+**Tit for Tat (TFT)** choisit C au départ, puis copie l'action précédente de l'adversaire. a_i,t est votre action à la période t, et j désigne l'autre joueur.
 
-Le résultat fut que la stratégie la plus simple, qui a obtenu le meilleur score, a été la stratégie du **« Tac au Tac » (Tit for Tat)** proposée par Anatol Rapoport.
-
-### L'algorithme de la stratégie du Tac au Tac
+$$
+a_{i,1}=C,\qquad a_{i,t}=a_{j,t-1}\quad(t\ge2)
+$$
 
 ```mermaid
-graph LR
-    A["Stratégie Tit for Tat"]
-    B["Coopérer au premier tour"]
-    C["L'autre a coopéré au tour précédent"]
-    D["L'autre a trahi au tour précédent"]
-    E["Coopérer"]
-    F["Trahir"]
-    A --> B
-    C --> E
-    D --> F
+graph TD
+    Start["t=1 : fixer votre première action à C"] --> Play["Les deux jouent simultanément la période t"]
+    Play --> Observe["Observer l'action de l'autre à la période t"]
+    Observe -->|"L'autre a choisi C"| NextC["Fixer votre action de la période t+1 à C"]
+    Observe -->|"L'autre a choisi D"| NextD["Fixer votre action de la période t+1 à D"]
+    NextC -->|"Augmenter t de 1"| Play
+    NextD -->|"Augmenter t de 1"| Play
 ```
 
-Les règles de cette stratégie sont étonnamment simples :
-1. Le premier tour, choisissez toujours de « coopérer ».
-2. À partir du deuxième tour, **imitez exactement l'action de l'autre joueur au tour précédent** (s'il a coopéré, coopérez ; s'il a trahi, trahissez).
+Après une coopération comme après une défection, la période suivante est jouée avant que son résultat soit observé. La stratégie n'anticipe pas l'action actuelle de l'autre et n'observe pas un état intérieur de repentir.
 
-Pourquoi cette stratégie était-elle si forte ? Axelrod a analysé quatre caractéristiques communes aux stratégies fortes :
-1. **Gentillesse (Nice)** : Ne jamais être le premier à trahir.
-2. **Représailles (Retaliating)** : Si l'autre trahit, punissez-le immédiatement (rendez la pareille).
-3. **Pardon (Forgiving)** : Si l'autre change d'attitude et recommence à coopérer, oubliez les trahisons passées et coopérez à nouveau.
-4. **Clarté (Clear)** : Vos intentions sont faciles à comprendre, permettant à l'autre de choisir la coopération en toute confiance.
+L'[article d'Axelrod et Hamilton de 1981](https://public.websites.umich.edu/~axe/research/Axelrod%20and%20Hamilton%20EC%201981.pdf) rapporte que TFT, soumise par Anatol Rapoport, a obtenu le meilleur score moyen dans les deux tournois de programmes d'Axelrod. Les gains T=5, R=3, P=1 et S=0 de ces tournois diffèrent de notre tableau de peines. TFT ne fait pas défection en premier, répond à la défection adverse et reprend la coopération à la période suivant celle où l'autre la reprend. Sa règle est aussi concise. Cela ne la rend pas meilleure face à tous les adversaires, systèmes de score, horizons ou risques d'erreur.
 
-Cette découverte suggère que la « moralité » et la « confiance » dans la société humaine pourraient ne pas être de simples émotions, mais reposer sur une rationalité mathématique et évolutive.
+Même entre deux joueurs TFT, une erreur d'action produisant CD peut être suivie de DC, puis de CD, entretenant une alternance de défections. Les scores de tournoi, l'équilibre, l'évolution biologique et une conduite moralement souhaitable sont des questions distinctes.
 
----
+## 5. Évolution de la coopération : structure des groupes et observations animales
 
-## 5. L'émergence de la coopération dans la biologie de l'évolution
+### Quand un petit groupe coopératif peut être avantagé
 
-[Le dilemme du prisonnier](/fr/p/prisoners-dilemma/) et le succès de la stratégie du « tac au tac » ont également eu un impact profond sur la biologie de l'évolution (théorie des jeux évolutionniste). Comme l'illustre « Le Gène égoïste » de Richard Dawkins, le monde naturel obéit à la loi du plus fort, et chaque organisme devrait donner la priorité à sa propre survie et reproduction (trahison). Malgré cela, le monde naturel regorge de comportements altruistes (coopération), tels que le partage de sang chez les chauves-souris vampires ou la socialité des abeilles.
+Un jeu évolutif doit préciser qui rencontre qui parmi les individus suivant certaines règles de comportement, et comment leurs performances affectent les générations suivantes. Donner la priorité à la survie ou à la reproduction n'équivaut pas à une instruction de choisir D dans toute situation.
 
-Dans les simulations évolutives, il a été prouvé que si un petit groupe de « tac au tac » est introduit dans une société où tout le monde « trahit », le groupe tac au tac coopère entre eux pour obtenir des avantages élevés, et élimine progressivement le groupe des traîtres. Autrement dit, dans la lutte pour la survie à long terme, les groupes capables de coopérer sont les vainqueurs ultimes.
+Quand un petit groupe TFT peut-il faire mieux dans une population utilisant sinon ALLD ? Considérons un modèle simple de scores actualisés : les adversaires restent fixes, les actions sont simultanées et répétées, il n'y a pas d'erreur et δ pondère le futur. ALLD choisit D à chaque période. V(X,Y) est le score actualisé de la stratégie X face à Y.
 
-## 6. Conclusion : Comment surmonter le dilemme
+$$
+\begin{aligned}0&\le\delta<1,\\V(\mathrm{TFT},\mathrm{TFT})&=\frac{-1}{1-\delta},\\V(\mathrm{TFT},\mathrm{ALLD})&=-10-\frac{5\delta}{1-\delta},\\V(\mathrm{ALLD},\mathrm{ALLD})&=\frac{-5}{1-\delta}.\end{aligned}
+$$
 
-[Le dilemme du prisonnier](/fr/p/prisoners-dilemma/) nous enseigne la dure réalité que si nous poursuivons excessivement notre propre intérêt, tout le monde finit par y perdre. Mais en même temps, comme le montrent les études sur les jeux répétés, nous pouvons établir des relations de coopération s'il existe des interactions continues et des mécanismes de retour d'information appropriés.
+Supposons qu'un membre d'un groupe TFT rare rencontre un autre TFT avec une probabilité p et, sinon, un ALLD. On le compare à des résidents rencontrant presque exclusivement ALLD, à la limite où le groupe représente une fraction négligeable de la population. Ici p est la proportion d'adversaires TFT dans les rencontres d'un joueur TFT, pas la fréquence de TFT dans toute la population.
 
-Pour résoudre [le dilemme du prisonnier](/fr/p/prisoners-dilemma/) dans le monde réel, des approches telles que les suivantes sont nécessaires :
-- **Changement de règles (État de droit)** : Institutionnaliser les sanctions pour les trahisons, éliminant ainsi les avantages de la trahison. (ex. : lois antitrust, taxes environnementales)
-- **Garantir la communication** : Créer des opportunités pour confirmer les intentions de chacun et bâtir la confiance.
-- **Mettre l'accent sur les relations à long terme** : Faire prendre conscience de l'ombre de l'avenir : « Si je trahis cette fois, il n'y aura plus de transactions à l'avenir. »
+$$
+\begin{aligned}V_{\mathrm{cluster}}&=pV(\mathrm{TFT},\mathrm{TFT})+(1-p)V(\mathrm{TFT},\mathrm{ALLD}),\\V_{\mathrm{cluster}}-V(\mathrm{ALLD},\mathrm{ALLD})&=\frac{p(9-5\delta)-5(1-\delta)}{1-\delta}.\end{aligned}
+$$
 
-La théorie des jeux peut ressembler à un monde de calculs froids, mais lorsqu'on regarde dans ses abysses, on aboutit à une vérité très humaine et chaleureuse sur « pourquoi les gens devraient coopérer ».
+La condition pour dépasser strictement le score de référence ALLD est :
+
+$$
+0\le p\le1,\qquad V_{\mathrm{cluster}}>V(\mathrm{ALLD},\mathrm{ALLD})\quad\Longleftrightarrow\quad p>\frac{5(1-\delta)}{9-5\delta}
+$$
+
+Par exemple, avec δ=0,9, la probabilité de rencontre au sein du groupe doit satisfaire :
+
+$$
+\delta=\frac9{10}\quad\Longrightarrow\quad p>\frac{5(1-9/10)}{9-5(9/10)}=\frac19
+$$
+
+| p | Score actualisé espéré de TFT | Référence ALLD face à ALLD | Comparaison |
+| --- | --- | --- | --- |
+| 0 | -55 | -50 | Inférieur |
+| 1/20 | -52,75 | -50 | Inférieur |
+| 1/9 | -50 | -50 | Égal |
+| 1/5 | -46 | -50 | Supérieur |
+
+En particulier, si TFT ne rencontre jamais un autre TFT, pour tout δ on obtient :
+
+$$
+p=0\quad\Longrightarrow\quad V_{\mathrm{cluster}}-V(\mathrm{ALLD},\mathrm{ALLD})=-5<0
+$$
+
+Ainsi, un horizon long ne suffit pas à garantir un avantage à TFT isolée. Ce calcul compare des scores pouvant être négatifs, pas des taux de reproduction ou de survie. Sans règles de mise à jour de la population, il ne prouve ni élimination finale ni fixation d'une stratégie. L'article de 1981 conditionne lui aussi l'établissement initial de la coopération aux contacts au sein du groupe et à la continuité.
+
+### Ne pas assimiler chauves-souris et abeilles à une même stratégie
+
+L'[étude de Carter et Wilkinson de 2013](https://science.umd.edu/faculty/wilkinson/Carter%26Wilk_PRSB13.pdf) a réalisé des essais de jeûne sur 20 chauves-souris vampires en captivité et rapporté des associations entre la nourriture reçue d'un partenaire et celle donnée à ce partenaire, ainsi que des relations sociales durables. Cette corrélation seule ne prouve pas que recevoir de la nourriture cause le don suivant ni que les chauves-souris exécutent TFT.
+
+La socialité des abeilles n'équivaut pas non plus automatiquement à TFT. Axelrod et Hamilton discutent du sacrifice des ouvrières comme exemple pour considérer les bénéfices liés à la parenté. La parenté, les bénéfices réciproques, la reconnaissance individuelle et la structure des interactions nécessitent des investigations distinctes. La valeur sélective biologique (fitness) ne peut pas être simplement assimilée à la moralité ou à la confiance humaines.
+
+## 6. Réfléchir aux mécanismes qui soutiennent la coopération
+
+Le dilemme du prisonnier identifie des situations où, pour des gains définis, les incitations individuelles ne soutiennent pas un résultat souhaitable pour les deux participants. Pour réfléchir à la coopération, examinez :
+
+- **Gains et choix** : Les sanctions, le partage des coûts ou les récompenses changent-ils réellement la comparaison entre actions ? Les effets institutionnels et les conditions juridiques doivent être étudiés pour chaque application réelle.
+- **Observation et engagements** : Dans quelle mesure peut-on vérifier les actions, et quelle est la force contraignante des promesses et des réponses ? Si la conversation ne modifie ni les gains ni les choix d'un jeu à interaction unique, D reste strictement dominante.
+- **Horizon et rencontres** : Quel poids donner au futur, comment la relation finit-elle, qui rencontre-t-on de nouveau et comment traite-t-on les erreurs ?
+
+L'existence d'un équilibre coopératif ou de conditions favorables de score diffère du fait que la coopération soit effectivement choisie et s'établisse. Les modèles aident à examiner les hypothèses concrètes qui la soutiennent ; ils ne prouvent pas inconditionnellement la valeur de la confiance.
