@@ -83,6 +83,46 @@
         "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
         "Batch033publication andwholegoal pending;032closure is separately recorded."
       ]
+    },
+    "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-12",
+      "reviewer": "Codex (AI)",
+      "source": "post/lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans/index.ja.md",
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "translationHash": "2ed2ef876fce16b60b1fbd443a8f03eb027f0460f101b9f25c7166d2f7c023f6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete old130-line TraditionalChinese metadata,four sections,nine displayformulas,two complete Mermaid diagrams andperformance table;read actual full revised sixsections,29formulas,both graphs,BWT andarchitecture tables against frozenJapanese. Reread normalization/column terminology edits. Restored omitted counting/Kraft/KLproof,Huffmanmerge,arithmeticinterval,rANSinverse/tANSstate,BWTinverse,LLMmodelcost andengineering explanation. Corrected fixed-encoder quantifiers,per-file lowerbound andidealpayload/totalfile confusion,universal speed/intelligence claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared 位元/位元組,資訊源/符號模型,自資訊量/期望值,前綴碼/唯一解碼,正規化分布/正準霍夫曼碼,邊際/聯合熵/熵率,獨立同分布/平穩,酬載/檔案總成本 and碼表/字典. Kept valid 香農/霍夫曼 names;regionalwording includes 記憶體/雜湊/執行緒/快取,negative loglikelihood負對數概似 and重新正規化. BWTrow列號 andcolumn首欄/末欄 consistent. Corrected originaldistance-length三元組 totwo-component二元組. OldnormalizedKLdisplay was consistent;noEnglish-specificQerror assigned."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read29 exactTeX andsurroundingdomains: reconstruction/fixedEcounting,c1throughn,Kraftfiniteleafbudget/normalizedKLidentity,positive-support/singleton convention,Shannonceil/optimalupper/nondegenerateiidblockbound,stationaryentropyrate,Huffmanmerge/skewedentropy,positivearithmeticinterval/conditionalproduct/containeddyadicKsufficient/H+2expectedbound,rANSinverse/tANSLstates,zero-basedLF,NLLbaseandmean andserialIOmodel. Preserved originalc100 withfixedE/uniformnbit/n>=100 and2^-99 about1.58e-30. Finiteauxiliarychecks/earlier136counts510swaps1093BWT650rANSprofiles511rationalcases notuniversalproof orbenchmark."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Old and revised TraditionalChinese article executableprograms0. Read both entireMermaid sources andinlineexamples;8+6edges/labels align withsource topology andactualHTML,including bzip2preBWT RLE. BWT7rows,std::vector<int>,banana$,annb$aa literalcode preserved;dollars excludedfrommath extraction. Auxiliary4forwardcopies,NLL/entropy/3IOexamples andc100numericbound pass;no articlePythonrun invented. Checker additionallycoversactualTWc100prose without rewriting earlierCNreceipt. No thirdpartycodeexecution/fullcompressor/LLMexperiment/browser/KaTeX/Mermaid/native certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Eleven primary/official references matchsource andHTML;earlierprimaryreadinglimits retained,notnewfullpaper/codebody reading claim. OriginalTWbody had noexternalreferences orunrelatedlink,so no inventedremoval. Oct14T12publication,slug,imagehash/localizedtaxonomy preserved,actualNov12lastmod.14hreflang13sidebar and34bundle442source snapshots/1918multilingualpages/3488HTTPSHTML41XML pass.17tests refer topriorJAENsuccess,notrerun. Other9translationbodies/new033publication pending;032alreadyclosed separately."
+        }
+      },
+      "summary": "Complete Traditional Chinese lossless-compression review restoring full derivations and regional terminology with decoded-HTML checks.",
+      "languageSpecificFindings": "Restored abbreviatedfour-section/nine-formula text toall6themes29formulas. Corrected distance-length三元組 to二元組,consistentBWT列號/首欄/末欄,正規化/重新正規化,位元/位元組,記憶體/快取/執行緒 and酬載/filecost. OriginalnormalizedKL andpropernames retained asvalid. Originalc100example preserved withfixedE/uniformnbit/n>=100 assumptions. No nonexistentexternalmislink orEnglish-specificnormalization defect claimed.",
+      "validation": "docs/translation-review/batch-033-zh-tw-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "9 other translation bodies remain unreviewed at this stage.",
+        "Article programs0;independentfiniteauxiliarychecks not generalproof,fullcompressor,benchmark orLLMexperimentalreproduction.",
+        "Primaryreading selected and separately documented;no browser/KaTeX/Mermaid/native certification.",
+        "Batch033publication andwholegoal pending;032closure is separately recorded."
+      ]
     }
   },
   "stages": [
@@ -181,6 +221,74 @@
       "unreviewedTranslations": 12634,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 10,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-12",
+      "languagesRead": [
+        "zh-tw"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "830b9256629f6aa3b9f596c3f8d871dad4b88b7d5e79fd818cd7a13a2e414b31",
+      "validation": "docs/translation-review/batch-033-zh-tw-validation.json",
+      "checks": "docs/translation-review/batch-033-zh-tw-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-033-zh-tw-ledger-validation.json",
+      "texEach": 29,
+      "diagramsEach": 2,
+      "diagramEdgesEach": [
+        8,
+        6
+      ],
+      "articleProgramsEach": 0,
+      "auxiliaryChecks": {
+        "lzForwardCopyExamples": 4,
+        "nllBaseAndAveragingExample": true,
+        "binaryEntropyAt099": 0.08079313589591118,
+        "ioModelExamples": [
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 200000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.0075
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 250000,
+            "ioBytesPerSecond": 1000000000,
+            "decodedBytesPerSecond": 10000000,
+            "rawSeconds": 0.001,
+            "serialCompressedSeconds": 0.10025
+          },
+          {
+            "inputBytes": 1000000,
+            "compressedBytes": 1000000,
+            "ioBytesPerSecond": 100000000,
+            "decodedBytesPerSecond": 100000000,
+            "rawSeconds": 0.01,
+            "serialCompressedSeconds": 0.02
+          }
+        ],
+        "largeCountingExample": {
+          "c": 100,
+          "requiresNAtLeast": 100,
+          "strictFractionUpperBound": 1.5777218104420236e-30,
+          "scope": "Fixedinjectiveencoder,uniformnbitinput;notallcompressorssimultaneously."
+        },
+        "scope": "Finite auxiliary arithmetic/copy checks,not article-program execution,benchmark or full compressor."
+      },
+      "priorIndependentAuxiliaryChecks": "docs/translation-review/batch-033-original-math-probe.json",
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 34,
+      "multilingualPages": 1918,
+      "httpsHtmlPages": 3488,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "reviewedTranslationsTotal": 399,
+      "unreviewedTranslations": 12633,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 9,
       "publicationPending": true
     }
   ],

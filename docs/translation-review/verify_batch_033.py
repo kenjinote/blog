@@ -99,7 +99,7 @@ def main():
         assert json.loads(re.search(r'^title: (.*)$',header,re.M)[1]) in unescape(page) and 'katex.min.js' in page and 'mermaid' in page
         for asset in audit['assets']:assert hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest()==asset['sha256']
         versions.append({'language':lang,'path':v['path'],'sha256':shared.digest(p),'sourceSha256':shared.digest(source),'texExpressions':29,'diagrams':2,'diagramEdges':[8,6],'articleExecutablePrograms':0,'references':11,'literalDollarAndAngleBracketCodePreserved':True,'bwtTableAll7RowsExact':True,'datePublished':v['datePublished'],'dateModified':dates[lang],'passed':True})
-        if lang=='zh-cn':
+        if lang in ('zh-cn','zh-tw'):
             assert all(value in ''.join(article.all) for value in ['c=100','n≥100','2^(-99)','1.58×10^(-30)'])
             versions[-1]['originalC100CountingExamplePreservedWithConditions']=True
     doc={'version':1,'checkedAt':datetime.now(timezone(timedelta(hours=9))).isoformat(),'allPassed':True,'versions':versions,'priorIndependentAuxiliaryChecks':'docs/translation-review/batch-033-original-math-probe.json','auxiliaryChecks':auxiliary(),'reviewedTranslationsAdded':0,'limitations':['Selected source/decodedHTML checks only;not prose approval or review ledger certification.','No executable articleprograms;independent finite auxiliary experiments are separately scoped.','Not browser/KaTeX/Mermaid execution or native-language/full-site/benchmarks/completecompressor certification.','Draft source can still change until reviewed translations registered;source hash recorded per actualcheck.']}
