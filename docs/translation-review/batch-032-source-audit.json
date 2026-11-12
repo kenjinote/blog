@@ -1,0 +1,416 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T09:40:35.411502+09:00",
+  "baselineCommit": "f4114ca1bfe0ded787c1e0e4b64478be1c80b31a",
+  "article": "information-theory-shannon-entropy",
+  "baselineSite": "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-entropy-baseline",
+  "actualPreviewBundles": 33,
+  "versions": {
+    "ar": {
+      "path": "content/post/information-theory-shannon-entropy/index.ar.md",
+      "sha256": "e6ec14cefa34904766b3fe8a18bfd92e741dcdb95d1ef8b203fe804d26e0c00c",
+      "canonical": "https://kenji.blog/ar/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/information-theory-shannon-entropy/index.de.md",
+      "sha256": "3f62dbd9f2ddf4287e69e6bf111082edabf4c0230bf3259f15103e6bde26660e",
+      "canonical": "https://kenji.blog/de/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/information-theory-shannon-entropy/index.en.md",
+      "sha256": "bbde81179a33b2c48f7a72809bcb4819ce8f3d419a590d405e75de6d912e8f23",
+      "canonical": "https://kenji.blog/en/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/information-theory-shannon-entropy/index.es.md",
+      "sha256": "a83be0257f95e4a4261d8568dc267b199ba5cdf56641c331dd6552847f482384",
+      "canonical": "https://kenji.blog/es/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/information-theory-shannon-entropy/index.fr.md",
+      "sha256": "ad01e9f8f901b948dc218b27d757153c176d3a152a813d6675a6ee47d80300e0",
+      "canonical": "https://kenji.blog/fr/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/information-theory-shannon-entropy/index.hi.md",
+      "sha256": "706b8e737792da320e74f14e51fd299cd613c33fc3ad059f30bba166e3cd1f76",
+      "canonical": "https://kenji.blog/hi/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/information-theory-shannon-entropy/index.id.md",
+      "sha256": "f6b8fbf185faae314e8820fcbcaf3ed85a5f95a102bc8ecd544cb1b854c5736a",
+      "canonical": "https://kenji.blog/id/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": false,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/information-theory-shannon-entropy/index.ko.md",
+      "sha256": "f4d531e755e249369fc7d90997e2fe885b4977035b64902c66d70974af18468a",
+      "canonical": "https://kenji.blog/ko/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/information-theory-shannon-entropy/index.md",
+      "sha256": "74d3e10d0371e98b32d7f4cce11e4baca36e4d12d85c4acfa55beef881b0c2fa",
+      "canonical": "https://kenji.blog/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": true,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/information-theory-shannon-entropy/index.pt.md",
+      "sha256": "ab1ffa23bf2c6bed8ea361379272af2b72da77da69edb44652f91316aa33486f",
+      "canonical": "https://kenji.blog/pt/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/information-theory-shannon-entropy/index.ru.md",
+      "sha256": "3e2aeae676101eb43158d9fbc2ff6bc368f24362b9d5062e5bb45cc0a30d6346",
+      "canonical": "https://kenji.blog/ru/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/information-theory-shannon-entropy/index.zh-cn.md",
+      "sha256": "6fbecc2581071cb0a486483185a1d775d13fdbb93e49a18902bbbe844b6c1b75",
+      "canonical": "https://kenji.blog/zh-cn/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/information-theory-shannon-entropy/index.zh-tw.md",
+      "sha256": "64b773c1b7c677b800b5f55f8da682eff9a0cf1800a82c5c5dee04823daa24e3",
+      "canonical": "https://kenji.blog/zh-tw/p/information-theory-shannon-entropy/",
+      "slug": "information-theory-shannon-entropy",
+      "datePublished": "2026-09-21T02:45:54+09:00",
+      "headerDateLines": [
+        "date: \"2026-09-24T19:44:38+09:00\"",
+        "date: 2026-09-21T02:45:54+09:00"
+      ],
+      "mathFlag": [],
+      "mermaidFlag": [],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python"
+      ],
+      "baselineMathLibraryIncluded": true,
+      "baselineMermaidIncluded": true,
+      "fullOriginalMetadataBodyCodeAndDiagramRead": false,
+      "reviewed": false
+    }
+  },
+  "assets": [
+    {
+      "path": "content/post/information-theory-shannon-entropy/eyecatch.jpg",
+      "sha256": "60c388a540fb35f04ff0ebf96ea4b2139da3aa2872b4d5e90086f1e890424eca"
+    }
+  ],
+  "originalCodeReproduction": "docs/translation-review/batch-032-original-code-probe.json",
+  "runtimePackages": {
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.2"
+  },
+  "manualFindings": [
+    "JA/EN full original metadata,seven numbered sections,one Mermaid and both completePythonblocks read. Other11 inventory only.",
+    "Preserve both raw date lines and actual effective Sep21T02:45:54+09:00 date;do not replace with firstSep24date merely to clean metadata.",
+    "JA graph/chart link points to unrelated graph-data-structure article;EN has no corresponding link.",
+    "Compression bound needs uniquelydecodable/prefixcode assumptions,expected versus individualfile length,blockcoding and entropy rate for dependent sources. Single-symbol marginal entropy is not a universal ZIP/gzip lowerbound for correlateddata.",
+    "Fixed alphabet maximumuncertainty is not proof that outcomes cannot be guessed or cryptographicunpredictability.",
+    "Sourcecredit should acknowledge predecessors,not singlehanded founding claim. Huffman optimality is within binaryprefixcodes withgivenweights,not arbitrary compressors or freecodebookoverhead.",
+    "Old code emptyheap raisesIndexError,single-symbol code empty and unframed repetition length ambiguous;mutabledefault leaks staleentries across calls. Domaininvalid binary probabilities returnNaN/warnings rather than reject.",
+    "Channel theorem needs memoryless/constraint assumptions,rateunits and asymptotic blocklength/error not guaranteed finite zeroerror. AWGN requires band/power/noise conventions and linearSNR,notdB directsubstitution."
+  ],
+  "primaryReadingToDate": [
+    {
+      "url": "https://wucj.lab.westlake.edu.cn/Others/shannon1948.pdf",
+      "scope": "54page authorpaper1949reprint;extracted0-362read only,introduction/channelmodel/earlysourceexamples. Rest unread;not fullpaper certification."
+    },
+    {
+      "url": "https://pure.mpg.de/pubman/item/item_2383162_7/component/file_2456979/Shannon_1948_Mathematical.pdf",
+      "scope": "Open inaccessible;searchsnippet only,not bodyread."
+    },
+    {
+      "url": "https://www.cse.iitd.ac.in/~pkalra/siv864/huffman_1952.pdf",
+      "scope": "Open timeout;not paperbodyread."
+    },
+    {
+      "url": "https://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf",
+      "scope": "Original4pagepaper opens but extractedonly5headinglines. Screenshots requested for4pages but images not exposed to model;NO visual/fullbodyreading claim. Searchexcerpt only,primaryreading pending."
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "currentAiTranslations": 384,
+  "unreviewedTranslations": 12648,
+  "humanReviews": 0,
+  "limitations": [
+    "Pre-audit only,no rewrite/ledger certification.",
+    "Only JA/EN original full bodies read;no revisedbodies exist.",
+    "Finite old-code reproduction,not revised tests or all-input proof;plotAgg generated but not visuallyinspected.",
+    "Publication031run43128517431attempt1 pending matching build/deploy andlive416article+3tag checks.",
+    "No native/browser/security/currentsoftware recommendation certification."
+  ],
+  "primaryReadingStages": [
+    {
+      "checkedAt": "2026-11-12T09:49:23.133254+09:00",
+      "sourceNotes": "docs/translation-review/batch-032-source-notes.md",
+      "huffmanFull4ScannedPagesActuallyViewed": true,
+      "huffmanSha256": "e15818feb9ce9874dbe44073edd85da29fee08a96bc576fe4572211784d8842e",
+      "shannonSha256": "806154914b5dadbdb3f2cbb4fd841768023e9f7dfbdb926b1ad39e7cab782680",
+      "shannonVisualPagesActuallyViewed": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        39,
+        40
+      ],
+      "shannonWholePaperRead": false,
+      "renderedImagesActuallyViewed": [
+        {
+          "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-primary-pdfs\\huffman-1.png",
+          "sha256": "f368c8e0da3eb798a75659b0144a7e5b52822559911da95aa190ebdfe1433ca7"
+        },
+        {
+          "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-primary-pdfs\\huffman-2.png",
+          "sha256": "531999e1a98414af35c3838affec1580fd6be418feb9fabf0649e6cf74328c9c"
+        },
+        {
+          "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-primary-pdfs\\huffman-3.png",
+          "sha256": "03676ebdd58dd5fad1b5b14c8d3e6552b7ef418c399daec37e465a4de7864184"
+        },
+        {
+          "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-primary-pdfs\\huffman-4.png",
+          "sha256": "bcf088670c6497018c585be238bc4a2b34a6d493ed02b4237378802c82782da6"
+        },
+        {
+          "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-primary-pdfs\\shannon-mupdf-10.png",
+          "sha256": "d7ae8f5354ed8d60d9e0b6dea4d9f90d617cbf942683bef4e1e6b8b1b2dca98c"
+        },
+        {
+          "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-primary-pdfs\\shannon-mupdf-11.png",
+          "sha256": "6e9cd47ac507f46b4c3c52508a8aa8b65c6f6d433a80a7f554da0e9dda08eca0"
+        },
+        {
+          "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-primary-pdfs\\shannon-mupdf-12.png",
+          "sha256": "c7dbae2c3d0ee7533e499c59e80314afb47920eb24540f4c62273942ec2552bc"
+        },
+        {
+          "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-primary-pdfs\\shannon-mupdf-13.png",
+          "sha256": "4f03090ff0ad728740ecae98978a06cf76740c0a88538f2a4d78df3d95939be8"
+        },
+        {
+          "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-primary-pdfs\\shannon-mupdf-14.png",
+          "sha256": "84c594974c4beb4ae423894e1f24026ddf737d0bc8d4fad2a9f1ff8435caeab4"
+        },
+        {
+          "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-primary-pdfs\\shannon-mupdf-39.png",
+          "sha256": "c47b455d8bd290bc5b9cf9ede982a4095d9c2c2b97a82d76cf841e6b3b1ddcb7"
+        },
+        {
+          "path": "C:\\Users\\kenjinote\\.codex\\tmp\\entropy-primary-pdfs\\shannon-mupdf-40.png",
+          "sha256": "6afb7d628d20453e1a6530fd2690e01241aa918d6a50759e79f2bf5365d72f0a"
+        }
+      ],
+      "firstShannonPopplerAttempt": "page10 Sigma/infinity substitution defect;retained and not accepted as exact formula evidence",
+      "shannonSecondRenderer": "MuPDF2.1;correct Sigma/minus/infinity verified on selected7pages",
+      "articleFilesChanged": 0,
+      "reviewedTranslationsAdded": 0,
+      "scope": "Preliminary selected primary reading,not rewritten article/prose/AI ledger or all numerical historicaltable entries independently validated. Initial failed access/screenshot mechanisms retained chronologically."
+    }
+  ]
+}

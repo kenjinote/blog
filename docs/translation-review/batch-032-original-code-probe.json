@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-12T09:39:31.178225+09:00",
+  "results": {
+    "ja": {
+      "sourceSha256": "74d3e10d0371e98b32d7f4cce11e4baca36e4d12d85c4acfa55beef881b0c2fa",
+      "articlePythonBlocksExecuted": 2,
+      "sampleStdout": [
+        "",
+        "Huffman Codes:\n'_': 1111\n'a': 1100\n'd': 01111\n'e': 10011\n'f': 01101\n'h': 1000\n'i': 0100\n'm': 01100\n'n': 00\n'o': 101\n'p': 10010\n'r': 1101\n's': 01110\n't': 1110\n'y': 0101\n"
+      ],
+      "invalidBinaryEntropyInputs": [
+        {
+          "input": "-0.1",
+          "output": "np.float64(nan)",
+          "warnings": [
+            "invalid value encountered in log2"
+          ]
+        },
+        {
+          "input": "1.1",
+          "output": "np.float64(nan)",
+          "warnings": [
+            "invalid value encountered in log2"
+          ]
+        },
+        {
+          "input": "nan",
+          "output": "np.float64(nan)",
+          "warnings": []
+        },
+        {
+          "input": "inf",
+          "output": "np.float64(nan)",
+          "warnings": [
+            "invalid value encountered in log2"
+          ]
+        }
+      ],
+      "emptyHuffmanInput": {
+        "exception": "IndexError",
+        "message": "list index out of range"
+      },
+      "singleSymbolCodes": {
+        "a": ""
+      },
+      "indistinguishableConcatenations": {
+        "a": "",
+        "aa": ""
+      },
+      "sequentialFreshTrees": {
+        "first": {
+          "b": "0",
+          "a": "1"
+        },
+        "second": {
+          "b": "0",
+          "a": "1",
+          "d": "0",
+          "c": "1"
+        },
+        "staleSymbols": [
+          "a",
+          "b"
+        ]
+      },
+      "plotBackend": "Agg;plotgeneratedbutnotvisuallyinspected",
+      "scope": "Actual old complete blocks run separately;finite edgecases,not all-input proof or revised-code validation."
+    },
+    "en": {
+      "sourceSha256": "bbde81179a33b2c48f7a72809bcb4819ce8f3d419a590d405e75de6d912e8f23",
+      "articlePythonBlocksExecuted": 2,
+      "sampleStdout": [
+        "",
+        "Huffman Codes:\n'_': 1111\n'a': 1100\n'd': 01111\n'e': 10011\n'f': 01101\n'h': 1000\n'i': 0100\n'm': 01100\n'n': 00\n'o': 101\n'p': 10010\n'r': 1101\n's': 01110\n't': 1110\n'y': 0101\n"
+      ],
+      "invalidBinaryEntropyInputs": [
+        {
+          "input": "-0.1",
+          "output": "np.float64(nan)",
+          "warnings": [
+            "invalid value encountered in log2"
+          ]
+        },
+        {
+          "input": "1.1",
+          "output": "np.float64(nan)",
+          "warnings": [
+            "invalid value encountered in log2"
+          ]
+        },
+        {
+          "input": "nan",
+          "output": "np.float64(nan)",
+          "warnings": []
+        },
+        {
+          "input": "inf",
+          "output": "np.float64(nan)",
+          "warnings": [
+            "invalid value encountered in log2"
+          ]
+        }
+      ],
+      "emptyHuffmanInput": {
+        "exception": "IndexError",
+        "message": "list index out of range"
+      },
+      "singleSymbolCodes": {
+        "a": ""
+      },
+      "indistinguishableConcatenations": {
+        "a": "",
+        "aa": ""
+      },
+      "sequentialFreshTrees": {
+        "first": {
+          "b": "0",
+          "a": "1"
+        },
+        "second": {
+          "b": "0",
+          "a": "1",
+          "d": "0",
+          "c": "1"
+        },
+        "staleSymbols": [
+          "a",
+          "b"
+        ]
+      },
+      "plotBackend": "Agg;plotgeneratedbutnotvisuallyinspected",
+      "scope": "Actual old complete blocks run separately;finite edgecases,not all-input proof or revised-code validation."
+    }
+  },
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original JA/EN reproduction only. Full original bodies read;no rewrite/AIledger certification. Other11 bodies unreviewed."
+}

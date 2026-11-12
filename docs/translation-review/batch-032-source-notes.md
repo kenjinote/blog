@@ -1,0 +1,49 @@
+# Batch032 — Information theory and Shannon entropy: preliminary evidence
+
+2026-11-12 JST. Codex (AI). Whole-site goal active. No rewrite or review entry yet. Batch031 publication run43128517431 attempt1 is still running against b53e62415c5faf480827621e47cd727dba1032ce;live416article+3tag verification must wait matching build/deploy success.
+
+## Complete originals actually read
+
+Read Japanese and English metadata,all seven numbered sections,the complete communication diagram and both complete Python blocks in first100/remainder chunks. Other11 translations only inventory/hash/header/fence/HTML checks. Fresh33-bundle baseline records all13 actual effective published dates2026-09-21T02:45:54+09:00. Preserve both raw date lines,including firstSep24 line and effective secondSep21 line. Do not silently replace public date with the first value. All13 baseline HTML already include math/Mermaid libraries despite absent explicit flags. One eyecatch asset unchanged.
+
+Japanese chart link incorrectly points to graph-data-structure article;English has no matching link. Need distinguish chart from mathematical graph. Intro attributes creation single-handedly to Shannon,where primary introduction explicitly credits Nyquist/Hartley. Preserve contribution without excluding predecessors.
+
+## Actual old-code reproduction
+
+Evidence:batch-032-original-code-probe.json. Ran both complete Python blocks separately for JA and EN. Matplotlib uses Agg;plot generated but NOT visually inspected. Warning that Agg cannot show a GUI is retained,not a sample-code failure.
+
+- Sample Huffman construction prints codes successfully.
+- Empty input raises IndexError at heap[0].
+- A single-symbol source produces empty code;without an independently supplied symbol count,concatenations of different repetition lengths are indistinguishable. This does not prove empty code is mathematically invalid when framing/count is known.
+- Mutable default codebook leaks symbols across sequential different input trees;second codebook retains a and b after constructing only c and d. Distinct new symbols can inherit duplicate codewords from stale entries.
+- Invalid scalar binary probabilities-0.1,1.1,NaN,infinity returnNaN,with log warnings in some cases,instead of rejecting the input. Function should document scalar domain and handle endpoints.
+
+These are finite old-code probes,not corrected-code tests,all-input proof or compressed-file implementation certification. If the replacement uses one nonempty bit for a single-symbol alphabet,document H=0/L=1 convention;do not claim strict L<H+1 for that special case. Codebook/framing and actual bit packing must not be treated as free standalone file compression.
+
+## Primary papers: reading limits and rendered checks
+
+Shannon author paper,1949 book reprint hosted by Westlake lab:
+https://wucj.lab.westlake.edu.cn/Others/shannon1948.pdf
+
+- 54PDFpages. Initial extracted0–362 read;later426–873 and1085–1464 read,including entropy/conditional and source entropy-rate definitions,noiseless/noisy capacity statements and memoryless-channel special case. Additional find excerpts around1861–1885,2141–2341,2386–2402 and2696–2803 were returned/read,but intervening/remaining paper is NOT a full-body review. Do not claim full original proof,appendices or all examples independently certified.
+- Initial text extraction drops mathematical minus signs and misrenders symbols. Poppler120dpi PNG of page10 showed Sigma as black bullets and infinity as a degree-like symbol. These defective outputs are retained under local temporary folder and are not accepted as exact mathematical visual evidence.
+- Used PDF skill read-only,then a separate MuPDF2.1 rendering after installing it in the isolated review venv. Rendered and actually viewed complete pages10,11,12,13,14,39,40. Correct Sigma/minus/infinity glyphs visible. Read uncertainty axioms,negative entropy sign,binary curve,chain rule,conditional entropy,source per-symbol/per-second distinction,block limits and white-noise average-power capacity. Only these seven pages visually certified;rest remains extracted/selected or unread.
+- Source SHA256806154914b5dadbdb3f2cbb4fd841768023e9f7dfbdb926b1ad39e7cab782680. Local:C:/Users/kenjinote/.codex/tmp/entropy-primary-pdfs/shannon1948-reprint.pdf. MuPDF images shannon-mupdf-10..14,39..40.png;initial Poppler images have different filenames and are not overwritten.
+- Historical roughly50percent English redundancy and clinical/modern technology implications are not being adopted as current measured claims. The book reprint date is1949;article history can cite the underlying1948 paper without calling this file an original1948 issue scan.
+
+Huffman1952 author paper:
+https://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf
+
+- Four scanned pages1098–1101. Web text extraction returned only five heading lines;web screenshot requests returned references but no images exposed to model. No body-read claim from those failed mechanisms.
+- Downloaded public PDF,rendered allfour pages with Poppler150dpi and ACTUALLY viewed huffman-1.png through huffman-4.png. Full body,footnotes,tablesI–III and acknowledgments read. Binary case combines two least probable messages,uses composite probability,reorders,and assigns branch digits. Equal-probability ties can give different codes with equal average length. D-ary generalization and its first-combination arity distinguished from binary case.
+- Scope:minimum average codeword length for specified finite message probabilities and instantaneous/prefix restriction,not arbitrary compressor,fileheaders,unknown probabilities or a biological/empirical claim. Paper explicitly contrasts Shannon/Fano constructions and acknowledges Fano;no unsupported biographical assignment narrative needed.
+- All table headings and examples visually inspected,not every historical table numerical entry independently recalculated. No full reproduction of D-ary algorithm claimed.
+- Local:C:/Users/kenjinote/.codex/tmp/entropy-primary-pdfs/huffman1952.pdf. No changed PDF or deliverable authored.
+
+Access failures retained:MaxPlanck Shannon URL inaccessible through web;IITDelhi Huffman timeout. Harvard corrected1948 reprint https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf opened:55pages,only returned introduction0–169 read. Do not substitute its page numbers for Westlake54page reprint or claim whole Harvard paper read. Search snippets/discovered URLs not used as full-body evidence. References listed in papers were not automatically read.
+
+## Work still required
+
+Revise JA/EN and all12translations honestly after primary scope is sufficient. Define self-information for positive probability and0log0 convention for entropy. Keep finite alphabet,units and probabilistic uncertainty separate from cryptographic unpredictability. Distinguish expected code length from each individual file,unique decoding/prefix restrictions,independent symbols versus dependent-source entropy rate,and practical headers/model costs. Channel theorem needs model/constraint and rate units,large-block/small-error interpretation versus finite exact zero error;AWGN formula needs average power,bandwidth,total noise and linearSNR conventions. Preserve communication/source coding/Huffman/channel/modern-applications themes rather than removing hard content.
+
+Future code tests should cover empty/single-symbol/sequential calls,round trips,invalid or truncated payloads,prefix condition and small independent optimal-length checks. A single-symbol nonempty-code convention needs its own entropy-bound exception. Plot needs numerical and visual verification. No rewritten body,corrected program,translation or ledger evidence is certified at this stage. AI current384/unreviewed12,648/human0 unchanged.
