@@ -45,6 +45,46 @@
         "Primary reading limited to documented selected pages/abstracts;no entire papers/standard or browser/KaTeX/Mermaid runtime certification.",
         "Batch034publication andwholegoal remain pending."
       ]
+    },
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-13",
+      "reviewer": "Codex (AI)",
+      "source": "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "translationHash": "bb22d6c92e699f6ca2a5e815e17965fb4b5cbdb9d4330c4467d6313659607974",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read complete original SimplifiedChinese metadata,all7chapters,12display equations,2complete Mermaid graphs,comparison table and entire Python. Read actual revised body1–315,316–615,616–850 including8chapters,47display equations,4graphs,comparison table,whole revised code and displayed output;read subsequent terminology/QR-layer/branch-label patch and markup-only emphasis fix separately. Compared all8Japanese themes against frozen source. Restored omitted capacity derivations,distance/erasure proofs,binary-order H,RS interpolation/cyclic/Forney conventions,LDPCgraph/LLR/update formulas,Polar conditions,applications andarchitecture trade-offs. Corrected always-positive capacity/QRarea/power units/spacecraft route/universal noiseless andproduct-performance assertions without treating short structural equivalence as full review."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared 校验子(syndrome,also valid old伴随式),擦除(known location),未知位置错误 rather than randomly distributed errors,码字/符号/字节 andQR8bitcodeword versus entire n-symbolRSword,编码速率bits/use versus bits/s,下确界/positive-efficiency bound,有限域/素域GF257 versus GF256,本原元/不可约多项式,系统矩阵 versus binary column order,求值/循环/短缩,MDSminimumdistance versus universal optimality,soft LLR/extrinsic information,对称容量 versus generalC,逐次消除SC versus列表SCL(listfactorL). Preserved valid Chinese 汉明/里德-所罗门/钱氏搜索 names,addedEnglish identifiers for clarity. Corrected zero-based index2 to third bit;preserved original length5 repetition and Hamming1011/syndrome011/nonadjacent1,6,13 examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared47core display blocks with their domains and three translated annotation types,plus all258inline/displayTeX against actualHTML. Read BSC entropy/capacity andn3/repetition-tail derivations,AWGNinput/power/noise units/positiveeta bound/ln2wideband infimum,distance t<=floor andallpattern2t+e<d,Hammingballcount/perfectexamples/GH=0/syndrome membership,finitefieldrootcount/Singleton/Lagrange/RSn<=q versus cyclicq-1,specifiedj=1S(z)/locator/recurrence/Forney,LDPCrank/LLR/tanh/extrinsic equations/edgeanditeration complexity,andPolaruniforminput/frozenvalues/finiteN/SC-SCL. OldChinese only namedForney,with no explicit extraXformula,so the English-specific factor error is not attributed to it;the revised convention is supplied in full. Prior candidate/Japanese/English finite checks retained with scopes,not rerun or presented as all-input proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Ran original Chinese program unchanged:demo exits0 and prints recovery,but direct actualGF256.inv(0)returns1;255nonzero inverse cases pass. Originalradius3RSsteps raiseStopIteration for tested0/1/2errors,recover3,returnwrongmessagefor4. CN hasno displayedoutputblock,so no invented stdout-mismatch finding. Read actual revised GF256 program,byte-identical to verified candidate,with rank-aware rectangular solving,degrees0..t,Q/Edivision,degree/remainder/re-encoding/distance checks and beyond-radius miscorrection example. Executed extracted revised program;complete stdout equals new displayed output andHTML. Actualzero inverse rejected;8finite alpha-point cases(two patterns,0..3errors)recover. Existing65536products/full65536wordcodebook256receivedvectors/3828single-error/144seeded/24invalid evidence referenced,not rerun. Four actual completeMermaid graphs/31edges match source topology/HTML. InitialCNbold punctuation causedliteralstars/cross-span emphasis;33spans converted to explicitstrong with reversible markup-only identity,criticalSC/SCL/locator labels now explicitHTML,all224prosefragments retained. No full QR/hardware/LDPC/Polar implementation or speed claim."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Ten primary/official references match frozenJapanese anddecodedHTML;actual earlier selective primarypage/abstract scopes remain in source notes,no newly claimed fullpaper reading. OriginalCN hasnoexternalreference list,no unrelated brokenlink removal claimed. OriginalOct18T08publication,slug,imagehash andChinese taxonomy preserved;actualNov13lastmod/mermaidflag recorded.14hreflang/13sidebar destinations andselected35bundle455exactsource snapshots/1983multilingualpages/3616HTTPSHTML41XML pass. Initialfailedemphasisreceipt/draft/helper preserved,newR2passes afteractualsourcefix without weakeningcomparison. SourceandregisteredEnglishhashes/evidence unchanged.17existingunit tests reference previous successfulJAENrun,notrerunforCN. Other10translationbodies and034publication remainpending."
+        }
+      },
+      "summary": "Complete Simplified Chinese error-correcting-code review restoring omitted derivations and correcting educational decoding and CJK emphasis.",
+      "languageSpecificFindings": "OldCNassertedstrictlypositivecapacity,QR30percentarea/10ms,systematicmatrixsyndromenumericposition,universalhardware/limits,andSCLwithoutL;correctedwithdomains. OldcodealreadyGF256,notGF257;itsinv0bugconfirmedandfixed. OldCNhasnodisplayedoutputandnoexplicitForneyextraXformula,soneitherENspecificfindingassigned. Restored7to8themes,12to47displayblocks,2to4graphs;preservedlength5repetition,Hamming1011/index2thirdbit,alpha-point1/6/13case. DistinguishedQR8bitcodewordfromwholeRSword. CorrectedCJKemphasiswith33explicitstrongspans,SC/SCL terminology andRBERwording;initialrenderingfailureanddraftpreserved.",
+      "validation": "docs/translation-review/batch-034-zh-cn-r2-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "10 other translation bodies remain unread/unreviewed.",
+        "Finite educational code/math checks,not all-input theorem proofs,real hardware/spacecraft,full QR/LDPC/Polar software or benchmarks.",
+        "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
+        "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
+      ]
     }
   },
   "stages": [
@@ -87,6 +127,42 @@
       "unreviewedTranslations": 12623,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-13",
+      "languagesRead": [
+        "zh-cn"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "validation": "docs/translation-review/batch-034-zh-cn-r2-validation.json",
+      "checks": "docs/translation-review/batch-034-zh-cn-r2-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-034-zh-cn-ledger-validation.json",
+      "texExpressions": 258,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagramsEach": 4,
+      "diagramEdgesEach": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "articleExecutableProgramsEach": 1,
+      "proseFragmentsPreserved": 224,
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 35,
+      "sourceSnapshotsExact": 455,
+      "multilingualPages": 1983,
+      "httpsHtmlPages": 3616,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-034-ja-en-checks-r2.json",
+      "reviewedTranslationsTotal": 410,
+      "unreviewedTranslations": 12622,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 10,
       "publicationPending": true
     }
   ],

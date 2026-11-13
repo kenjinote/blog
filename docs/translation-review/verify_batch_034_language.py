@@ -1,0 +1,103 @@
+"""One read/revised language's static/finite checks; no automatic semantic approval."""
+from pathlib import Path
+from datetime import datetime,timezone,timedelta
+from collections import Counter
+from html import unescape
+import hashlib,importlib.util,json,re,subprocess,sys
+ROOT=Path(__file__).resolve().parents[2];D=ROOT/'docs/translation-review';FENCE=chr(96)*3
+spec=importlib.util.spec_from_file_location('eccpair',D/'verify_batch_034_ja_en.py');pair=importlib.util.module_from_spec(spec);spec.loader.exec_module(pair)
+shared=pair.shared
+ANNOTATIONS={'zh-cn':{'だが同時に':'但同时','2元符号では ':'对于二元码：',' の位':' 位'}}
+
+def main():
+    site=Path(sys.argv[1]);lang=sys.argv[2];out=Path(sys.argv[3]);assert not out.exists() and lang in ANNOTATIONS
+    audit=json.loads((D/'batch-034-source-audit.json').read_text(encoding='utf-8'))
+    reviews=json.loads((D/'batch-034.json').read_text(encoding='utf-8'))
+    source=ROOT/audit['versions']['ja']['path'];ja=source.read_text(encoding='utf-8')
+    source_hash=shared.shared.digest(source);assert source_hash==reviews['frozenSourceHash']
+    prior={}
+    for key,entry in reviews['reviews'].items():
+        assert entry['sourceHash']==source_hash and shared.shared.digest(ROOT/'content'/key)==entry['translationHash']
+        prior[key]=entry['translationHash']
+    urls={}
+    for language,entry in audit['versions'].items():
+        t=(ROOT/entry['path']).read_text(encoding='utf-8')
+        slug=json.loads(re.search(r'^slug: (.*)$',t,re.M)[1])
+        urls[language]='https://kenji.blog/'+('' if language=='ja' else language+'/')+'p/'+slug+'/'
+    entry=audit['versions'][lang];p=ROOT/entry['path'];text=p.read_text(encoding='utf-8')
+    original=subprocess.run(['git','show',audit['baselineCommit']+':'+entry['path']],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',check=True).stdout
+    assert hashlib.sha256(original.encode()).hexdigest()==entry['sha256']
+    for key in ('date','slug','image','draft'):
+        assert re.findall('^'+key+':.*$',text,re.M)==re.findall('^'+key+':.*$',original,re.M)
+    assert shared.shared.taxonomy(text)==shared.shared.taxonomy(original)
+    assert re.findall(r'^## (\d+)\.',text,re.M)==list(map(str,range(1,9)))
+    assert 'lastmod: "2026-11-13"' in text and 'mermaid: true' in text
+    core=[m[1].strip() for m in re.finditer(r'\$\$(.*?)\$\$',ja,re.S)];assert len(core)==47
+    translated=[]
+    for tex in core:
+        for a,b in ANNOTATIONS[lang].items():tex=tex.replace(a,b)
+        translated.append(tex)
+    actual=[m[1].strip() for m in re.finditer(r'\$\$(.*?)\$\$',text,re.S)]
+    assert Counter(actual)==Counter(translated) and len(actual)==47
+    refs=set(re.findall(r'\]\((https://[^)]+)\)',ja));assert len(refs)==10 and set(re.findall(r'\]\((https://[^)]+)\)',text))==refs
+    graphs=shared.shared.graphs(text);assert len(graphs)==4
+    shape=lambda g:re.sub(r'"[^"\n]*"','""',g)
+    assert list(map(shape,graphs))==list(map(shape,shared.shared.graphs(ja)))
+    code=re.search('^'+FENCE+r'python\n(.*?)^'+FENCE,text,re.M|re.S)[1]
+    shown=re.search('^'+FENCE+r'text\n(.*?)^'+FENCE,text,re.M|re.S)[1]
+    assert code.rstrip()==(D/'ecc034_revised_code.py').read_text(encoding='utf-8').rstrip()
+    run=subprocess.run([sys.executable,'-c',code],capture_output=True,text=True,encoding='utf-8')
+    assert run.returncode==0 and run.stdout==shown
+    ns={'__name__':'article_extra_probe'};exec(compile(code,str(p),'exec'),ns)
+    inverse_rejected=False
+    try:ns['gf_inv'](0)
+    except ZeroDivisionError:inverse_rejected=True
+    assert inverse_rejected
+    payload=list(b'VOYAGER-1');points=[ns['gf_pow'](2,i) for i in range(15)];cw=ns['rs_encode'](payload,points)
+    cases=[]
+    for pattern in ('initial','scattered'):
+        indices=[0,1,2] if pattern=='initial' else [1,6,13]
+        for count in range(4):
+            r=cw.copy()
+            for index,magnitude in list(zip(indices,[255,165,60]))[:count]:r[index]^=magnitude
+            assert ns['rs_decode'](r,points,9,3)==payload;cases.append(dict(pattern=pattern,errors=count))
+    html=(site/urls[lang].removeprefix('https://kenji.blog/')/'index.html').read_text(encoding='utf-8')
+    a=shared.Article();a.feed(html);tex=shared.source_math(text)
+    assert shared.shared.render.expressions(''.join(a.math))==tex
+    assert all(g.strip() in unescape(html) for g in graphs) and code in a.codes and shown in a.codes
+    assert refs<=set(a.links) and len([row for row in a.rows if len(row)==4])==6
+    nav=shared.shared.PageParser();nav.feed(html.split('</aside>',1)[0]+'</aside>')
+    assert nav.canonical==urls[lang] and nav.language==lang and nav.alternates==dict(urls,**{'x-default':urls['ja']}) and nav.options==urls
+    header=text.split('---',2)[1];published=json.loads(re.search(r'^date: (.*)$',header,re.M)[1])
+    assert '"datePublished":"'+published+'"' in html and '"dateModified":"2026-11-13' in html
+    assert json.loads(re.search(r'^title: (.*)$',header,re.M)[1]) in unescape(html)
+    fragments=pair.prose_fragments(text,html)
+    if lang=='zh-cn':
+        assert not re.search(r'[\u3040-\u30ff]',text)
+        assert '**' not in ''.join(a.math)
+        for label in ['逐次消除译码（SC）','逐次消除列表译码（SCL）','错误值：','校验子：']:
+            assert '<strong>'+label+'</strong>' in html
+        assert all(v in ''.join(a.all) for v in ['校验子','擦除','逐次消除','8比特码字','整个RS码字','[1,0,1,1]','[0,1,1]','[1,6,13]'])
+        assert '0\\mapsto00000' in text and '1\\mapsto11111' in text
+        probe=json.loads((D/'batch-034-zh-cn-original-code-probe.json').read_text(encoding='utf-8'))
+        assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
+    for asset in audit['assets']:assert hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest()==asset['sha256']
+    v=dict(language=lang,path=entry['path'],sha256=shared.shared.digest(p),sourceSha256=source_hash,
+        originalSha256=entry['sha256'],texExpressions=sum(tex.values()),displayMath=47,coreDisplayBlocks=47,
+        diagrams=4,diagramEdges=[10,7,9,5],references=10,articleExecutablePrograms=1,
+        executableCodeSha256=hashlib.sha256(code.rstrip().encode()).hexdigest(),programExitCode=run.returncode,
+        stdout=run.stdout,stderr=run.stderr,displayedOutputExact=True,codeAndOutputHtmlExact=True,mathHtmlExact=True,
+        proseFragmentsPreserved=fragments,zeroInverseRejected=True,oldEvaluationPointCases=cases,
+        datesTaxonomyImageAndNavigationPassed=True,passed=True)
+    doc=dict(version=1,checkedAt=datetime.now(timezone(timedelta(hours=9))).isoformat(),allPassed=True,versions=[v],
+        frozenSourceUnchanged=True,priorRegisteredTranslationHashesUnchanged=prior,
+        priorCandidateFiniteEvidence='docs/translation-review/batch-034-candidate-code-validation.json',
+        priorJapaneseArithmeticEvidence='docs/translation-review/batch-034-ja-validation-r4.json',
+        priorEnglishAuxiliaryEvidence='docs/translation-review/batch-034-ja-en-validation-r2.json',
+        reviewedTranslationsAdded=0,publicationPending=True,
+        limitations=['One selected static/finite check,not semantic approval; actual original/revised full reading is separately recorded.',
+        'Prior registered source/translation hashes unchanged; earlier full checks referenced,not rerun.',
+        'No native-speaker/browser/KaTeX/Mermaid execution,whole-site,hardware,all-input,full QR/LDPC/Polar or benchmark certification.'])
+    out.write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    print(json.dumps({k:v[k] for k in ('language','texExpressions','displayMath','diagrams','proseFragmentsPreserved','passed')}))
+if __name__=='__main__':main()
