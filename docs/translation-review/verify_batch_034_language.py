@@ -7,7 +7,8 @@ import hashlib,importlib.util,json,re,subprocess,sys
 ROOT=Path(__file__).resolve().parents[2];D=ROOT/'docs/translation-review';FENCE=chr(96)*3
 spec=importlib.util.spec_from_file_location('eccpair',D/'verify_batch_034_ja_en.py');pair=importlib.util.module_from_spec(spec);spec.loader.exec_module(pair)
 shared=pair.shared
-ANNOTATIONS={'zh-cn':{'だが同時に':'但同时','2元符号では ':'对于二元码：',' の位':' 位'}}
+ANNOTATIONS={'zh-cn':{'だが同時に':'但同时','2元符号では ':'对于二元码：',' の位':' 位'},
+             'zh-tw':{'だが同時に':'但同時','2元符号では ':'對二元碼：',' の位':' 位'}}
 
 def main():
     site=Path(sys.argv[1]);lang=sys.argv[2];out=Path(sys.argv[3]);assert not out.exists() and lang in ANNOTATIONS
@@ -80,6 +81,14 @@ def main():
         assert all(v in ''.join(a.all) for v in ['校验子','擦除','逐次消除','8比特码字','整个RS码字','[1,0,1,1]','[0,1,1]','[1,6,13]'])
         assert '0\\mapsto00000' in text and '1\\mapsto11111' in text
         probe=json.loads((D/'batch-034-zh-cn-original-code-probe.json').read_text(encoding='utf-8'))
+        assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
+    if lang=='zh-tw':
+        assert not re.search(r'[\u3040-\u30ff]',text) and '**' not in ''.join(a.math)
+        for label in ['逐次消除解碼（SC）','逐次消除清單解碼（SCL）','錯誤值：','伴隨式：','直欄（column）','橫列（row）']:
+            assert '<strong>'+label+'</strong>' in html
+        assert all(v in ''.join(a.all) for v in ['位元組','抹除','航海家','夏農','摺積碼','內插','概似比','整個RS碼字','[1,0,1,1]','[0,1,1]','[1,6,13]'])
+        assert '0\\mapsto00000' in text and '1\\mapsto11111' in text
+        probe=json.loads((D/'batch-034-zh-tw-original-code-probe.json').read_text(encoding='utf-8'))
         assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
     for asset in audit['assets']:assert hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest()==asset['sha256']
     v=dict(language=lang,path=entry['path'],sha256=shared.shared.digest(p),sourceSha256=source_hash,

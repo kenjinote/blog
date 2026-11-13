@@ -85,6 +85,46 @@
         "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
         "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
       ]
+    },
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-13",
+      "reviewer": "Codex (AI)",
+      "source": "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "translationHash": "b476e7257a9f97ce8234fd00ea14332d7a229b2c6b82cfafba52eaa571d08e94",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read original TraditionalChinese complete262line metadata,7chapters,12display formulas,2entire diagrams,comparison table andallPython. Read actual revised1–315,316–615,616–852,including8chapters,47display formulas,4graphs,table,entirecode andoutput;read final four prose edits separately. Compared all8frozenJapanese themes,restoring omitted derivations,distance/erasure proofs,binary-Hconstruction,interpolation/cyclic/Forney definitions,LDPCgraph/LLR/updates,Polar assumptions,applications andcode-selection architecture. Corrected unqualified positivecapacity,QR30percentarea/10ms,power conversion/spacecraft route,finite versus asymptotic/universal noiseless/hardware/adoption/error-floor claims. New material is a complete thematic translation,not a character-conversion certificate or a shortened summary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Preserved valid regional 夏農/航海家/漢明/里德-所羅門/伽羅瓦體/抹除/摺積碼 andused 位元/位元組,通道/頻寬/雜訊,內插,同位檢查,對數概似比,信念傳播,酬載/中繼資料,調變,清單/逐次消除SC-SCL. Defined 直欄(column) and橫列(row) consistently in H/G,syndrome lookup andTanner graph;didnot assume oldTaiwan行mustmean mainlandrow or assign an unproven row/column mistranslation. Clarified ambiguous 同位元檢查/冗餘同位元組 wording as parity/checkbits versus redundantbytes. Matched finite-field symbol versusQR8bitcodeword versus entireRSword,rateunits,bound/infimum,symmetriccapacity,frozenvalues,SC/SCLlistfactor,finite-dimensionalrank versus polynomialdegree,andzero-basedindex2asthirdbit."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared47shared displayblocks with onlyJapanese annotation translations andall258TeX in actualdecodedHTML. Read repetitionn3andgeneraloddn/binomialtail/BSCcapacity,AWGNpower/noisedensity/rateunits/positiveeta bound/ln2infimum,distance/erasure/allpatternquantifiers/Hammingballpacking/GHorthogonality/zero-syndromemembership,finitefieldrootbound/Singleton/Lagrange andevaluationn<=q versus cyclicq-1/shortening,explicitj=1S(z)/locatorrecurrence/Forney,andLDPCrank/LLR/tanh/extrinsic/edgeiteration/Polaruniforminput/finiteN/frozenvalue/SC-SCLconditions. OriginalTWonlynamedForney without an explicit extraXformula,so that EN-specific factor error was not attributed to it. Original random-error label now distinguishes unknownposition from a required randomdistribution. Prior finite candidate/Japanese/English mathematical checks referenced with scopes,not rerun or represented as general proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed original TW programunchanged:exit0,fullstdoutsaved. ActualGF256.inv(0)returns1while255nonzeroinversecasespass;oldfixedradius3linear reconstructionraisesStopIterationontested0/1/2errors,recovers3,returnswrongmessagefor4. TWalreadyusesGF256,notGF257;no displayedtextoutputblockexists,so no inventedwrong-outputclaim. Readactual revised completebyte-identicalcandidatecode with0..tdegree trials,rank-aware rectangularsolving,Q/Eremainder/degreechecks,re-encoding/distancevalidation,andexplicitbeyondradiusmiscorrectionexample. Extractedprogramsubprocessstdout matchesdisplayedsourceandHTML;zeroinverserejected,8alpha-point cases(initial/scattered,0..3errors)recover. Earlier65536fieldproducts/full65536wordcodebook256receivedvectors/3828single-error/144seeded/24invalidcasesreferenced,not rerun. Readall4completeMermaidgraphs/31edges andverifiedtopology/HTML. ExplicitstrongtagsusedfromdrafttocounterknownCJKpunctuationemphasisissue;criticalSC/SCL,syndrome,errorvalue andcolumn/row wrapperspass,222prosefragmentsretained. No full QR/hardware/spacecraft/LDPC/Polar implementation or speed certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Ten primary/official references equal frozenJAandactualHTML;selective earlier page/abstract reading scopes retained,no new whole-paper/standard claim. OldTWhasnoexternalreference listandno unrelated mislink removalisclaimed. OriginalOct18T08publication,slug,imagehashandTaiwan taxonomy preserved;actualNov13lastmod andexplicitmermaidflag.14hreflang/13sidebar and35bundle455source snapshots/1983multilingualpages/3616HTTPSHTML41XMLpassonfirstTWbuild. SourceandpriorEN/CNhashes unchanged;17existingunit testsreferencepriorJAENR2success,not rerunforTWcontent. Other9bodiesand034publicationremainpending."
+        }
+      },
+      "summary": "Complete Traditional Chinese error-correcting-code review with regional terminology, explicit matrix directions and verified educational GF256 decoder.",
+      "languageSpecificFindings": "Retained 夏農/航海家/有限體/抹除/摺積碼 andclarifiedparityversusbytewording. Definedcolumn直欄/row橫列 ratherthanlabelingTaiwan行/列conventionincorrect. Restored7to8themes,12to47displayblocks,2to4graphs. Preservedlength5repetition,Hamming1011/syndrome011 andalpha-point1/6/13case. ConfirmedoldGF256inv0andunderradiusfailure;no displayed-outputorForneyextraXerrorinvented. DistinguishedQR8bitcodeword/wholeRSword,finiteasymptoticguaranteesandSC/SCLlistcost. Usedexplicitstrongmarkupininitialdraft,verifiedoutputwithoutaTWretry;finalpolishclarifiedgroupingbits,RAIDparity,beliefpropagationvariantandchainrule.",
+      "validation": "docs/translation-review/batch-034-zh-tw-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "9 other translation bodies remain unread/unreviewed.",
+        "Finite educational code/math checks,not all-input theorem proofs,real hardware/spacecraft,full QR/LDPC/Polar software or benchmarks.",
+        "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
+        "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
+      ]
     }
   },
   "stages": [
@@ -163,6 +203,42 @@
       "unreviewedTranslations": 12622,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 10,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-13",
+      "languagesRead": [
+        "zh-tw"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "validation": "docs/translation-review/batch-034-zh-tw-validation.json",
+      "checks": "docs/translation-review/batch-034-zh-tw-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-034-zh-tw-ledger-validation.json",
+      "texExpressions": 258,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagramsEach": 4,
+      "diagramEdgesEach": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "articleExecutableProgramsEach": 1,
+      "proseFragmentsPreserved": 222,
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 35,
+      "sourceSnapshotsExact": 455,
+      "multilingualPages": 1983,
+      "httpsHtmlPages": 3616,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-034-ja-en-checks-r2.json",
+      "reviewedTranslationsTotal": 411,
+      "unreviewedTranslations": 12621,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 9,
       "publicationPending": true
     }
   ],
