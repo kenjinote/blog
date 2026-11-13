@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T17:41:02.325208+09:00",
+  "sourceSha256": "368b468f84ce3ca93f96e78fa7f6731be837a2e6e728cf78e1d167d5c76b2b54",
+  "fragmentsChecked": 371,
+  "missing": [],
+  "allPassed": true,
+  "source": "Japanese prose outside metadata/fenced code/math, split at math and table cells, fragments at least12non-whitespace characters.",
+  "limitation": "Static output-retention guard, not semantic approval, browser layout, whole-prose token equality or translation review."
+}

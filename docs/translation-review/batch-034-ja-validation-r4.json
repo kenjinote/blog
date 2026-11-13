@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T17:42:53.267783+09:00",
+  "allPassed": true,
+  "sourcePath": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+  "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+  "originalSha256": "e709cf1874fbd1e320c04c0f22535537b35959fb843096289d13759261f81019",
+  "sourceRead": "Complete revised JA lines1–250,251–500,501–end; later small metadata/definition/reference patch read separately.",
+  "texExpressions": 435,
+  "diagrams": 4,
+  "diagramEdges": [
+    10,
+    7,
+    9,
+    5
+  ],
+  "references": 10,
+  "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+  "candidateExact": true,
+  "articleCodeExecution": {
+    "exitCode": 0,
+    "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+    "stderr": "",
+    "displayedOutputExact": true
+  },
+  "exactSourceHtmlMath": true,
+  "exactGraphs": true,
+  "exactHtmlCodeAndOutput": true,
+  "titleDateNavigationAndAssetsPreserved": true,
+  "auxiliary": {
+    "repetition": [
+      {
+        "n": 3,
+        "probability": "149/500000",
+        "patterns": 8
+      },
+      {
+        "n": 5,
+        "probability": "49253/5000000000",
+        "patterns": 32
+      },
+      {
+        "n": 7,
+        "probability": "1708349/5000000000000",
+        "patterns": 128
+      }
+    ],
+    "bscEntropyAtPointOne": 0.4689955935892812,
+    "bscCapacity": 0.5310044064107188,
+    "awgnWidebandLinearLimit": 0.6931471805599453,
+    "awgnWidebandDbLimit": -1.591745389548616,
+    "positiveEfficiencyBounds": [
+      1.0,
+      0.8284271247461901,
+      0.7177346253629315,
+      0.695555005671881,
+      0.6933874625806324
+    ],
+    "wattsToAttowatts": 100,
+    "burstByteSymbolsByOffset": [
+      16,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "bpskLlrCases": 24,
+    "primitiveElementOrder": 255,
+    "multiErrorForneyMagnitudes": 320,
+    "multiErrorForneyPatterns": 128,
+    "becPolarConservationCases": 5,
+    "scope": "Finite arithmetic/model checks;not all-input execution,hardware,full QR,LDPC/Polar implementations or performance measurements."
+  },
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "limitations": [
+    "Japanese working draft only;not translation approval or frozen source yet.",
+    "Other 12 translations remain old; original EN has been read, other11 bodies unread.",
+    "No browser/KaTeX/Mermaid runtime, full site, native-language review, hardware or benchmark certification."
+  ]
+}

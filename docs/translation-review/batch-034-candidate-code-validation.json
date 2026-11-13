@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T17:19:50.515659+09:00",
+  "candidatePath": "C:\\Users\\kenjinote\\.codex\\tmp\\ecc034_revised_code.py",
+  "candidateSha256": "d4ecbfc27981bac2007a906966e924e943acbe99cf934b0577175778228f0e30",
+  "allPassed": true,
+  "fieldProductPairs": 65536,
+  "nonzeroInverses": 255,
+  "hammingCases": 128,
+  "hammingMinimumDistance": 3,
+  "independentRsCodebookWords": 65536,
+  "rsCodebookParameters": {
+    "n": 4,
+    "k": 2,
+    "q": 256,
+    "distance": 3
+  },
+  "fullCodebookReceivedVectors": 256,
+  "oracleAccepted": 104,
+  "oracleRejected": 152,
+  "allSingleErrorMagnitudesAndPositionsCases": 3828,
+  "seededRadiusCases": 144,
+  "rankDeficientConsistentAndInconsistentSystems": 2,
+  "invalidCases": 24,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Unpublishedcandidatecodeonly. Independentcarrylessfieldoracle/full65536worddegree<2codebookoracle for256receivedvectors,finiteposition/magnitude/seededcases,notall-inputproof,completeQRformat/hardware/spacecraftimplementation/benchmark. Articlebodyandtranslationreviewpending."
+}
