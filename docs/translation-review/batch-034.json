@@ -939,7 +939,7 @@
       "publicationPending": true
     }
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "finalAssembly": {
     "checkedAt": "2026-11-13T23:03:15.404245+09:00",
     "validation": "docs/translation-review/batch-034-final-r3-validation.json",
@@ -969,8 +969,9 @@
       "docs/translation-review/batch-034-final-initial-failure.json",
       "docs/translation-review/batch-034-final-r2-failure.json"
     ],
-    "publicationPending": true,
-    "scope": "All13 original/revised article bodies read,12 immutable AI entries. Fresh R3 includes existing Hindi taxonomy frontmatter; first directed-only graph count assertion and R2 omitted preview tag aliases retained as harness/assembly failures. Exact source/code/output/math/prose and static Arabic16LTR/RTL/CSS. Prior independent finite evidence referenced, not rerun or all-input/full QR/LDPC/Polar/hardware/benchmark certification. Local455articles+3tags pass,471filesystem reads/HTTP0. Live verification awaits matching CI build/deploy success; goal remains active."
+    "publicationPending": false,
+    "scope": "All13 original/revised article bodies read,12 immutable AI entries. Fresh R3 includes existing Hindi taxonomy frontmatter; first directed-only graph count assertion and R2 omitted preview tag aliases retained as harness/assembly failures. Exact source/code/output/math/prose and static Arabic16LTR/RTL/CSS. Prior independent finite evidence referenced, not rerun or all-input/full QR/LDPC/Polar/hardware/benchmark certification. Local455articles+3tags pass,471filesystem reads/HTTP0. Live verification awaits matching CI build/deploy success; goal remains active.",
+    "publicationVerifiedBy": "docs/translation-review/publication-034.json"
   },
   "publicationDispatch": {
     "version": 1,
@@ -1003,5 +1004,38 @@
       }
     ],
     "scope": "Ordinary push after fetch zero incoming/18 outgoing; matching head/run observed. Live455article+3tag checks await build/deploy success. Local455+3pass/471reads/HTTP0; prior442checks retained."
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-11-13T23:23:19.660358+09:00",
+      "ciRun": 43439178526,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43439178526",
+      "deployedCommit": "2739fdd698dab528d8ca5b047b1e126be8c180f2",
+      "runAttempt": 1,
+      "ciCompletion": "docs/translation-review/batch-034-ci-completion.json",
+      "proof": "docs/translation-review/publication-034.json",
+      "pages": 455,
+      "passed": 455,
+      "failed": 0,
+      "translations": 420,
+      "japaneseSources": 35,
+      "mathVersions": 260,
+      "texExpressions": 14315,
+      "eccVersions": 13,
+      "eccTeX": 3522,
+      "eccDiagrams": 52,
+      "eccGraphEdges": 403,
+      "eccReferencesEach": 10,
+      "eccArticlePrograms": 13,
+      "eccProseFragments": 3918,
+      "arabicEccLtrValues": 16,
+      "additionalHindiTaxonomyPages": 3,
+      "additionalHindiTaxonomyPassed": 3,
+      "httpPageProbeAttempts": 1,
+      "httpPageRetries": 0,
+      "buildCompletedAt": "2026-11-13T14:20:17Z",
+      "deployCompletedAt": "2026-11-13T14:22:00Z",
+      "scope": "Actual first live455article+3Hindi tag checks after matching CI head/attempt/build/deploy success. Prior442 article checks retained; new13 ECC versions exact math/graphs/references/full reviewed program and displayed output/prose/table/title/dates/navigation, Arabic16 LTR and RTL. Program execution local only. No native-speaker/browser/fullsite/full QR-LDPC-Polar/hardware/all-input/benchmark certification. Whole goal remains active."
+    }
+  ]
 }
