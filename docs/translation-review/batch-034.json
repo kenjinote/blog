@@ -365,6 +365,46 @@
         "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
         "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
       ]
+    },
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-13",
+      "reviewer": "Codex (AI)",
+      "source": "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "translationHash": "d24cbcb50afabe4a8c361506784f81391194bac32dcbf5d8f6a808d034fb7f45",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "ReadcompleteoriginalIndonesian240line metadata,7chapters,8displayequations,2entiregraphs,comparison tableandallPythonbeforeediting.Readactualrevised1–315,316–615,616–852including8themes,47displayequations,4fullgraphs,table,allcodeandactualoutput;readfivefinalproseeditsseparately.RestoredallfrozenJapanese themesandderivations:channel/BSC/AWGN,distance/erasure/packing/Hammingmatrices,finitefield/Singleton/Lagrange/cyclicForney,LDPC/Polar,applicationsandarchitecture.Correctedoriginalabsoluteperfectrecovery,QRarbitrary30percentarea/10ms,bothVoyagersfourplanets/currentdistance/power/10^-16Wconversion,positivecapacity/unqualifiedhardware/adoption/limitclaims.Removedunqualified6GIoTclaimwithoutunresearchednewadoptionclaims.Fullthematictranslation,notanabbreviatedsummaryorsemanticapprovalinferredfromstructurematching."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "UsedIndonesianmedan hingga/Galoiswithalgebraicfinitefielddefinition,polinomialtak tereduksi,unsurprimitif,penghapusan(erasure)forknownmissingposition,sindrom,matrikspemeriksaparitas,kolomcolumn/barisrow,konvolusional/perantaian/interleaving,keputusanlunak/keras,rasio log-likelihood,propagasikepercayaan,bitbeku,pembatalanberurutanSCanddengandaftarSCL.Definedrankasperingkatmatriks,distinctfrompolynomialderajat/koefisien;monikhasleadingcoefficient1.Erasuredoesnotshiftremainingcoordinatesastextdeletiondoes.Unknownpositionerrorsneednotbeprobabilisticallyrandom.Changednewdraftmembulatkan(rounding)toliteralharddecisionwording;clarifiedequalityatboundsanddefisiensiperingkatintwoplaces.Notassignedthesenewdraftfindingsasoldtranslationerrors.DistinguishedQR8bitwordfromwholeRSword,rateunits,symmetriccapacity,finite/asymptoticandlistfactor.DecimalcommasuseTeX{,};fullnumericreversecheckretainsvalues."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manuallycompared47sharedcoreblockswithlocalizedJapaneseannotationsandbit/channeluse/secondunits;decimalcommaconversionreversestoexactpreconversionTeX,then47blockCounterandallsourceTeXinactualdecodedHTMLmustmatchexactly.Replacedambiguousoriginalp in(0,0,5)with0<p<1/2.Readn3/generaloddn/retainedn5repetition,BSCentropy/capacity,nonnegativeDMCcapacityandinputconstraints,AWGNpower/noisedensity/rateunits/positiveeta/ln2infimum,distanceallpatternquantifiers/erasures/packing/GHorthogonality/zero-syndromemembership,RSrootcount/Singleton/Lagrange/evaluationn<=qversuscyclicq-1/shortening,explicitj=1S(z)/locatorrecurrence/Forney,LDPCrank/LLR/extrinsic/O(IE),Polaruniforminput/frozenvalues/finiteN/SC-SCLfactor.OldHsyndromeindexstatementconditionalonbinarycolumnorder;noinventedunconditionalmatrixerror.OldonlynamesForneywithoutexplicitextraXformula;notassignedENfactorerror.Earlierfinitecandidate/JA/ENevidencereferenced,notrerunorgeneralproofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "ExecutedunmodifiedoriginalIndonesianprogrambeforeediting:exit0/fullstdoutsaved;actualGF256.inv(0)=1,255nonzeroinversespass,fixedradius3reconstructionthrowsStopIterationontested0/1/2errors,recovers3andreturnswrongmessageon4.OriginalalreadyGF256,notGF257,andhasnodisplayedoutputblock;noinventedwrongdisplayedstdoutclaim.ReadentireactualrevisedsharededucationalGF256codewithbytevalidation,zero-inverserejection,0..tlocatortrials,rankawarerectangularsolver,Q/Eremainder/degree/reencode/distancerule,Hammingcolumnlookup,andbeyondradiusmiscorrection.Newextractedprogramstdoutmatchessource/HTML;zeroinverserejectedand8oldalpha-pointinitial/scattered0..3casesrecover.Earlier65536products/full65536wordcodebook/256receivedvectors/3828singleerror/144seeded/24invalidfinitechecksreferenced,notrerun.Readall4graphs31edges,tableandoutput.Explicitstrongmarkupusedfromdraft.ScriptcontaminationcheckexcludesJapanese/CJK/Cyrillic/Arabic/Devanagarileakage,withouttreatingdefinedEnglishtechnicalnamesaserrors.NofullQR/LDPC/Polar/hardware/spacecraftsoftwareorbenchmarkcertification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Tenofficial/primaryreferencesmatchfrozenJAandactualHTML;earlierselectedpage/abstractscopesretained,nonewcompletepaper/standardreadclaim.OriginalIDhasnoexternalreferencelist,sono unrelatedmislinkremovalclaim.OriginalOct18T08date,slug,imagehash,taxonomypreserved;Nov13lastmodandmermaidflag.Fresh35bundle455exactsnapshotpreviewchecks1983multilingualpages,3616HTTPSHTML41XML,canonical14hreflang13sidebar,andallmath/code/output/graph/prosecontent.Prior17unittestsreferenceJAENR2success,notrerunforcontent-onlyIndonesian.FrozenJAandpriorEN/CN/TW/ES/KO/PT/FR/DE/HIhashesunchanged;remaining2translationsunreviewed,034publicationandwholegoalpending."
+        }
+      },
+      "summary": "Complete Indonesian error-correcting-code review with explicit erasure/medan-hingga/rank terminology and verified educational GF256 decoder.",
+      "languageSpecificFindings": "Restored7to8themes,8to47displayblocks,2to4graphs.Usedpenghapusan(erasure)/medanhingga/sindrom/peringkatandSC-SCLwithlistcost.Defineserasureasfixedknownmissingpositionwithoutcoordinatedeletionorautomaticrandomdistribution.DifferentiatedQR8bitwordfromwholeRSword,degreeversusrank,andalgorithmictimeversustransmissionspeed.Clarifiedambiguousdecimal-commaintervalas0<p<1/2andpreservednumericvaluesviareversibleTeX{,}conversion.Keptn5repetition,Hamming1011/syndrome011/thirdbitindex2andoldalpha-pointscattered1/6/13case.ReproducedoldGF256inv0andunderradiusfailurewithoutassigningGF257/displayedoutput/explicitForneyextraXerrors.Fivefinalproseeditsclarifyboundequality,harddecisionratherthanrounding,andrankdeficiency.Removedunqualified6GIoTclaim.",
+      "validation": "docs/translation-review/batch-034-id-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "2 other translations remain unreviewed; reading status is recorded separately.",
+        "Finite educational code/math checks,not all-input theorem proofs,real hardware/spacecraft,full QR/LDPC/Polar software or benchmarks.",
+        "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
+        "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
+      ]
     }
   },
   "stages": [
@@ -708,6 +748,42 @@
       "unreviewedTranslations": 12615,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 3,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-13",
+      "languagesRead": [
+        "id"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "validation": "docs/translation-review/batch-034-id-validation.json",
+      "checks": "docs/translation-review/batch-034-id-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-034-id-ledger-validation.json",
+      "texExpressions": 255,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagramsEach": 4,
+      "diagramEdgesEach": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "articleExecutableProgramsEach": 1,
+      "proseFragmentsPreserved": 319,
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 35,
+      "sourceSnapshotsExact": 455,
+      "multilingualPages": 1983,
+      "httpsHtmlPages": 3616,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-034-ja-en-checks-r2.json",
+      "reviewedTranslationsTotal": 418,
+      "unreviewedTranslations": 12614,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 2,
       "publicationPending": true
     }
   ],

@@ -14,7 +14,8 @@ ANNOTATIONS={'zh-cn':{'だが同時に':'但同时','2元符号では ':'对于�
              'pt':{'だが同時に':'mas simultaneamente','2元符号では ':'para códigos binários: ',' の位':' posição','bits / channel use':'bits / uso do canal','bits / second':'bits / segundo'},
              'fr':{'だが同時に':'mais simultanément','2元符号では ':'pour les codes binaires : ',' の位':' position','bits / channel use':'bits / utilisation du canal','bits / second':'bits / seconde'},
              'de':{'だが同時に':'doch gleichzeitig','2元符号では ':'für binäre Codes: ',' の位':' Stelle','bits / channel use':'Bit / Kanalnutzung','bits / second':'Bit / Sekunde'},
-             'hi':{'だが同時に':'लेकिन साथ ही','2元符号では ':'द्विआधारी कोड के लिए: ',' の位':' का स्थान','bits / channel use':'बिट / चैनल उपयोग','bits / second':'बिट / सेकंड',' bits':' बिट'}}
+             'hi':{'だが同時に':'लेकिन साथ ही','2元符号では ':'द्विआधारी कोड के लिए: ',' の位':' का स्थान','bits / channel use':'बिट / चैनल उपयोग','bits / second':'बिट / सेकंड',' bits':' बिट'},
+             'id':{'だが同時に':'tetapi sekaligus','2元符号では ':'untuk kode biner: ',' の位':' posisi','bits / channel use':'bit / penggunaan kanal','bits / second':'bit / detik',' bits':' bit'}}
 
 def main():
     site=Path(sys.argv[1]);lang=sys.argv[2];out=Path(sys.argv[3]);assert not out.exists() and lang in ANNOTATIONS
@@ -43,7 +44,7 @@ def main():
     translated=[]
     for tex in core:
         for a,b in ANNOTATIONS[lang].items():tex=tex.replace(a,b)
-        if lang in ('es','pt','fr','de'):
+        if lang in ('es','pt','fr','de','id'):
             # Decimal-comma typography must preserve every numeric token's value.
             before=tex
             tex=re.sub(r'(\d+)\.(\d+)',r'\1{,}\2',tex)
@@ -160,6 +161,16 @@ def main():
         assert 'Check -- "हाँ" --> Done' in graphs[1]
         assert 'गुणात्मक' not in text and 'आसन्निक' not in text and 'अतिरिक्त पढ़ाई' not in text
         probe=json.loads((D/'batch-034-hi-original-code-probe.json').read_text(encoding='utf-8'))
+        assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
+    if lang=='id':
+        assert not re.search(r'[\u3040-\u30ff\u3400-\u9fff\u0400-\u04ff\u0600-\u06ff\u0900-\u097f]',text)
+        for label in ['sindrom','Nilai kesalahan:','pembatalan berurutan (SC, successive cancellation)','pembatalan berurutan dengan daftar (SCL)']:
+            assert '<strong>'+label+'</strong>' in html
+        assert all(v in ''.join(a.all) for v in ['Penghapusan (erasure)','medan hingga','peringkat matriks','defisiensi peringkat','[1,0,1,1]','[0,1,1]','[1,6,13]'])
+        assert '0\\mapsto00000' in text and '1\\mapsto11111' in text and '0<p<1/2' in text
+        assert 'Check -- "Ya" --> Done' in graphs[1]
+        assert 'membulatkan pengamatan' not in text
+        probe=json.loads((D/'batch-034-id-original-code-probe.json').read_text(encoding='utf-8'))
         assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
     for asset in audit['assets']:assert hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest()==asset['sha256']
     v=dict(language=lang,path=entry['path'],sha256=shared.shared.digest(p),sourceSha256=source_hash,
