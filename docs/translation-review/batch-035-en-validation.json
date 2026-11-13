@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:47:34.525172+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+      "sha256": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "sourceSha256": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "originalSha256": "a304b83d4ec1c1308065a4c32f0535fe1c1924609cd714bd688098ff319173be",
+      "texExpressions": 224,
+      "displayMath": 38,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "mathHtmlExact": true,
+      "pseudocodeHtmlExact": true,
+      "proseFragmentsPreserved": 224,
+      "strongSpansPreserved": 22,
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "englishBerry11WordsAndPairDistanceExamplePreserved": false,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.en.md",
+      "sha256": "0819c990de12f88e7ed711c0a589a33cad4e6e4c65b3c9ddaa6fd3060a88f06c",
+      "sourceSha256": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "originalSha256": "a429c7ca5b6788467a2eeb9cadba7da876dfc8a510679d61e148adf05d499464",
+      "texExpressions": 219,
+      "displayMath": 39,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "mathHtmlExact": true,
+      "pseudocodeHtmlExact": true,
+      "proseFragmentsPreserved": 281,
+      "strongSpansPreserved": 21,
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "englishBerry11WordsAndPairDistanceExamplePreserved": true,
+      "passed": true
+    }
+  ],
+  "sourceFrozenUnchanged": true,
+  "other11MechanicalRepairsUnchanged": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "priorFiniteEvidence": [
+    "docs/translation-review/batch-035-original-finite-probe.json",
+    "docs/translation-review/batch-035-ja-auxiliary.json"
+  ],
+  "scope": "Selected JA/EN static source/HTML consistency, not automatic semantic approval. Prior finite evidence and17unit tests referenced,not rerun. Original/revised full reading separately recorded. No executable article programs, K/Omega oracle,theorem proof,real LLM/corpus/NCD experiments,browser/KaTeX/Mermaid execution,native/full-site/publication certification."
+}
