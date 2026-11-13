@@ -4125,6 +4125,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-034.json",
       "evidenceHash": "5684897c06557d415fe1bcc32f12e2af191a8e765bf53d072e5b533c0f712847"
+    },
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ko.md": {
+      "source": "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "reviewedAt": "2026-11-13",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "translationHash": "7cba0f14142481880b017f7abd70d1bfc6e3d0268fbf1813c6a49b43b1f69da1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-034.json",
+      "evidenceHash": "d37368ad244c41275c3a44f1c57674938b4c4fed03c0d3f7c353d78738246c12"
     }
   }
 }

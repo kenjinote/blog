@@ -9,7 +9,8 @@ spec=importlib.util.spec_from_file_location('eccpair',D/'verify_batch_034_ja_en.
 shared=pair.shared
 ANNOTATIONS={'zh-cn':{'だが同時に':'但同时','2元符号では ':'对于二元码：',' の位':' 位'},
              'zh-tw':{'だが同時に':'但同時','2元符号では ':'對二元碼：',' の位':' 位'},
-             'es':{'だが同時に':'pero a la vez','2元符号では ':'para códigos binarios: ',' の位':' posición','bits / channel use':'bits / uso de canal','bits / second':'bits / segundo'}}
+             'es':{'だが同時に':'pero a la vez','2元符号では ':'para códigos binarios: ',' の位':' posición','bits / channel use':'bits / uso de canal','bits / second':'bits / segundo'},
+             'ko':{'だが同時に':'그러나 동시에','2元符号では ':'이진 부호에서는 ',' の位':' 자리','bits / channel use':'비트 / 채널 사용','bits / second':'비트 / 초'}}
 
 def main():
     site=Path(sys.argv[1]);lang=sys.argv[2];out=Path(sys.argv[3]);assert not out.exists() and lang in ANNOTATIONS
@@ -105,6 +106,15 @@ def main():
         assert '0\\mapsto00000' in text and '1\\mapsto11111' in text
         assert 'Check -- "Sí" --> Done' in graphs[1]
         probe=json.loads((D/'batch-034-es-original-code-probe.json').read_text(encoding='utf-8'))
+        assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
+    if lang=='ko':
+        assert not re.search(r'[\u3040-\u30ff\u3400-\u9fff]',text)
+        for label in ['신드롬','오류값:','순차 제거 복호(SC)','순차 제거 리스트 복호(SCL)']:
+            assert '<strong>'+label+'</strong>' in html
+        assert all(v in ''.join(a.all) for v in ['소실','유한체','연판정','랭크 부족','이진 자릿수 순서를 뒤집는 순열','[1,0,1,1]','[0,1,1]','[1,6,13]'])
+        assert '0\\mapsto00000' in text and '1\\mapsto11111' in text
+        assert 'Check -- "예" --> Done' in graphs[1]
+        probe=json.loads((D/'batch-034-ko-original-code-probe.json').read_text(encoding='utf-8'))
         assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
     for asset in audit['assets']:assert hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest()==asset['sha256']
     v=dict(language=lang,path=entry['path'],sha256=shared.shared.digest(p),sourceSha256=source_hash,

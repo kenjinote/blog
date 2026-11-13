@@ -165,6 +165,46 @@
         "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
         "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
       ]
+    },
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-13",
+      "reviewer": "Codex (AI)",
+      "source": "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "translationHash": "7cba0f14142481880b017f7abd70d1bfc6e3d0268fbf1813c6a49b43b1f69da1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read entire original Korean metadata,7chapters,9displayequations,2fullgraphs,comparison table andallPython whileSpanishR2ran;read actualrevised1–315,316–615,616–852 including8themes,47displayequations,4fullgraphs,table,allcodeandactualoutput. Readfourfinalprose editsseparately. ComparedallfrozenJapanese themes,including fullBSC/AWGN,distance/erasures/packing/Hammingmatrices,finitefield/interpolation/Singleton/cyclicForney,LDPC/Polar,applicationsandarchitecture. Corrected oldbothVoyagersfourplanets,dateddistance/powerpresentedasconstant,10^-16Wconversion,QRarbitrary30percentarea/10ms,universalperfectrecovery/adoption/limit claims. Restoredsourceexplanations ratherthanpreserving an abbreviated7chapter summary;no semanticapproval inferredfrommathmatching."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used Korean 오류 정정 부호,부호어,심볼,소실,유한체/갈루아 체,기약다항식,원시 원소,패리티 검사,신드롬,길쌈/연접/인터리빙,연판정/경판정,로그 우도비,신뢰 전파,동결 비트,순차 제거 SCand리스트 SCL. Columns열androws행 consistentwithHsyndromecolumnlookupandTannergraph. ClarifiedQR8bitcodewordversuswholeRSword,knownposition소실versusunknownpositionerror,unitsperuseversuspersecond,symmetriccapacityversusmaxcapacity,finite/asymptoticandSC-SCLlistfactor. Finalpolishuses랭크 부족forrankdeficiencyratherthanambiguous계수,anddefinesbitreversal asreversingbinarydigits ofindices ratherthancomplementingbitvalues. Theseareclarifications ofnewdraft,not inventedfailuresattributedtotheoldtext."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manuallycompared47sharedcoreblockswithJapaneseannotation/unittranslations;allsourceTeXandactualdecodedHTMLmustmatchexactly. Readn3/generaloddn/retainedn5repetition,BSCentropy/capacity,AWGNpower/noisedensity/positiveeta/ln2infimum,nonnegativeDMCcapacityandinputconstraints,distanceallpatternquantifiers/erasures/packing/GHorthogonality/zero-syndromemembership,RSrootcount/Singleton/Lagrange/evaluationn<=qversuscyclicq-1/shortening,explicitj=1S(z)/locatorrecurrence/Forney,LDPCrank/LLR/extrinsic/edgeiteration,Polaruniforminput/frozenvalues/finiteN/SC-SCLcomplexity. Correctedoldnamingofrootboundasfundamentaltheoremusingfactortheorem,withoutclaimingtherootbounditselfwasfalse. OriginalKOonlynamedForneyandhadnoexplicitextraXformula;notassignedEN-specificformulaerror. Earlierfinitecandidate/JA/ENevidencereferenced,notrerunorclaimedgeneralproof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed unmodifiedoriginalKoreanprogrambeforeediting:exit0/fullstdoutsaved;actualGF256.inv(0)=1,255nonzeroinversespass,fixedradius3reconstructionthrowsStopIterationontested0/1/2errors,recovers3,andreturnswrongmessageon4. OriginalalreadyGF256,notGF257,andhasnodisplayedoutputblock;noinventedwrongoutputfinding. Readcompleteactualrevisedsharededucationalcode:bytevalidation,zero-inverserejection,0..tlocatortrials,rankaware rectangularsolver,Q/Eremainder/degree/reencode/distancerule,Hamminglookup,andexplicitbeyondradiusmiscorrection. Newextractedprogramstdoutmatchessource/HTML;zero-inverserejectedand8oldalpha-pointinitial/scattered0..3casesrecover. Earlier65536products/full65536wordcodebook/256receivedvectors/3828singleerror/144seeded/24invalidfinitechecksscope retained,notrerun. Readall4graphs31edges,tableandoutput;nohardware/fullQR/LDPC/Polarimplementation orbenchmarkcertification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Tenofficial/primaryreferencesmatchfrozenJAandactualHTML;earlierselectedpage/abstractreadingscopesretained,nonewcompletepaper/standardreadclaimed. OriginalKOhasnoexternalreferencelist,sono unrelatedmislinkremovalclaimed. OriginalOct18T08publication,taxonomy,slug,imagehashpreserved;Nov13lastmodandmermaidflag. Fresh35bundle455exactsnapshotpreviewchecks1983multilingualpages,3616HTTPSHTML41XML,canonical14hreflang13sidebar,allmath/code/output/graphs/prose. Prior17unittestsreferenceJAENR2success,notrerunforthiscontent-onlylanguage. FrozenJAandpriorEN/CN/TW/EShashesunchanged;remaining7translationsunreviewedand034publication/wholegoalpending."
+        }
+      },
+      "summary": "Complete Korean error-correcting-code review with explicit matrix conventions, bit-reversal/rank terminology and verified educational GF256 decoder.",
+      "languageSpecificFindings": "Restored7to8themes,9to47displayequations,2to4graphs. Preserved소실/유한체/길쌈/연판정/신드롬anddefinedSCversusSCLlistfactor. Clarifiedindexbit-reversalversusbitcomplementandmatrix랭크versuspolynomial계수. Keptn5repetition,Hamming1011/syndrome011/zero-basedindex2,andoldalpha-pointscattered1/6/13example. ReproducedoldGF256inv0andunderradiusfailurewithoutassigningJA/ENGF257/displayed-output/explicitextraXerrors. ExactstrongmarkupusedfromdraftbecauseofknownCJKpresentationissue;nofailingKoreanbuildclaiminvented.",
+      "validation": "docs/translation-review/batch-034-ko-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "7 other translations remain unreviewed; reading status is recorded separately.",
+        "Finite educational code/math checks,not all-input theorem proofs,real hardware/spacecraft,full QR/LDPC/Polar software or benchmarks.",
+        "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
+        "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
+      ]
     }
   },
   "stages": [
@@ -315,6 +355,42 @@
       "unreviewedTranslations": 12620,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 8,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-13",
+      "languagesRead": [
+        "ko"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "validation": "docs/translation-review/batch-034-ko-validation.json",
+      "checks": "docs/translation-review/batch-034-ko-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-034-ko-ledger-validation.json",
+      "texExpressions": 255,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagramsEach": 4,
+      "diagramEdgesEach": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "articleExecutableProgramsEach": 1,
+      "proseFragmentsPreserved": 245,
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 35,
+      "sourceSnapshotsExact": 455,
+      "multilingualPages": 1983,
+      "httpsHtmlPages": 3616,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-034-ja-en-checks-r2.json",
+      "reviewedTranslationsTotal": 413,
+      "unreviewedTranslations": 12619,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 7,
       "publicationPending": true
     }
   ],
