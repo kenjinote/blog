@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:37:38.247853+09:00",
+  "versions": [
+    {
+      "language": "ar",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ar.md",
+      "originalSha256": "686e8b0954f5d00f13e4b3db897ef9259572087a55b9d2ca4a4d02497dc0b022",
+      "repairedSha256": "048b5c5d1f3c0e9c6b5566d3309a02a65602a0b707fb3fbb524193320d71a570",
+      "changes": [
+        {
+          "damaged": "\u0007pprox",
+          "restored": "\\approx",
+          "occurrences": 3
+        },
+        {
+          "damaged": "\frac",
+          "restored": "\\frac",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\text",
+          "restored": "\\text",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\theta",
+          "restored": "\\theta",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\to",
+          "restored": "\\to",
+          "occurrences": 1
+        }
+      ],
+      "reviewedTranslationsAdded": 0
+    },
+    {
+      "language": "de",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.de.md",
+      "originalSha256": "6119aae7c354bab41fb9113424cf8b25d597c775e899e610425de5ca86154b99",
+      "repairedSha256": "faf65813dfa031805e4b662b97f12418c0b8748521cff7bf37c8b521ddae2c7d",
+      "changes": [
+        {
+          "damaged": "\u0007pprox",
+          "restored": "\\approx",
+          "occurrences": 3
+        },
+        {
+          "damaged": "\frac",
+          "restored": "\\frac",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\text",
+          "restored": "\\text",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\theta",
+          "restored": "\\theta",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\to",
+          "restored": "\\to",
+          "occurrences": 2
+        }
+      ],
+      "reviewedTranslationsAdded": 0
+    },
+    {
+      "language": "es",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.es.md",
+      "originalSha256": "6d54652c2289cfe38bbb15d731aa5df8ed542f6dca1824eeccd245ba6be19d52",
+      "repairedSha256": "ea55d846300a97927db5ed9b5d0decf409acdb897d9c889f4bf7c7556ab3be16",
+      "changes": [
+        {
+          "damaged": "\u0007pprox",
+          "restored": "\\approx",
+          "occurrences": 3
+        },
+        {
+          "damaged": "\frac",
+          "restored": "\\frac",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\text",
+          "restored": "\\text",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\theta",
+          "restored": "\\theta",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\to",
+          "restored": "\\to",
+          "occurrences": 1
+        }
+      ],
+      "reviewedTranslationsAdded": 0
+    },
+    {
+      "language": "fr",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.fr.md",
+      "originalSha256": "db12857360f5e19d4ce8efd034e84ed79172e50306a5bc26d722afb7fc04a108",
+      "repairedSha256": "6959c71a517eecd0eed0196023e2dc1ff9b849b57922da0c1a18affe9ae11d33",
+      "changes": [
+        {
+          "damaged": "\u0007pprox",
+          "restored": "\\approx",
+          "occurrences": 3
+        },
+        {
+          "damaged": "\frac",
+          "restored": "\\frac",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\text",
+          "restored": "\\text",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\theta",
+          "restored": "\\theta",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\to",
+          "restored": "\\to",
+          "occurrences": 1
+        }
+      ],
+      "reviewedTranslationsAdded": 0
+    },
+    {
+      "language": "hi",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.hi.md",
+      "originalSha256": "ce155960040ab2120e2949270d968761d4bdcf341fcf95b56cacaa59324f8560",
+      "repairedSha256": "e2beec05eb77c4e077087459491e342ff441efe04880ca7f5cb3bf9f5a9e6bc5",
+      "changes": [
+        {
+          "damaged": "\u0007pprox",
+          "restored": "\\approx",
+          "occurrences": 3
+        },
+        {
+          "damaged": "\frac",
+          "restored": "\\frac",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\text",
+          "restored": "\\text",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\theta",
+          "restored": "\\theta",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\to",
+          "restored": "\\to",
+          "occurrences": 1
+        }
+      ],
+      "reviewedTranslationsAdded": 0
+    },
+    {
+      "language": "id",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.id.md",
+      "originalSha256": "f89eb2030513dbfbe4b43199eb35ea82288a07f02960ebbe0e8134471944f64c",
+      "repairedSha256": "30b167cb0a36a2f059e8202ae2dbfa6ccb041d9dae4049b9382479f7f9424100",
+      "changes": [
+        {
+          "damaged": "\u0007pprox",
+          "restored": "\\approx",
+          "occurrences": 3
+        },
+        {
+          "damaged": "\frac",
+          "restored": "\\frac",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\text",
+          "restored": "\\text",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\theta",
+          "restored": "\\theta",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\to",
+          "restored": "\\to",
+          "occurrences": 1
+        }
+      ],
+      "reviewedTranslationsAdded": 0
+    },
+    {
+      "language": "ko",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ko.md",
+      "originalSha256": "eb1a437a392ab8218e9e2680b2d59894c4fbfdf1655eb0ba8aafa54d315ed0af",
+      "repairedSha256": "faf63ab04ebc7a2d05baeb36ba731fa2bf177f05fa0cab1bcf7963948b4ffa3f",
+      "changes": [
+        {
+          "damaged": "\u0007pprox",
+          "restored": "\\approx",
+          "occurrences": 4
+        },
+        {
+          "damaged": "\frac",
+          "restored": "\\frac",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\text",
+          "restored": "\\text",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\theta",
+          "restored": "\\theta",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\to",
+          "restored": "\\to",
+          "occurrences": 2
+        }
+      ],
+      "reviewedTranslationsAdded": 0
+    },
+    {
+      "language": "pt",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.pt.md",
+      "originalSha256": "5c938b931988c4078fd7e087c42cf5396eef42c5052325e7914d697174fdfd70",
+      "repairedSha256": "59733214aff86e079e5b4ee488d91543d1241e006e5b6cfb62cb7d4d142d9479",
+      "changes": [
+        {
+          "damaged": "\u0007pprox",
+          "restored": "\\approx",
+          "occurrences": 3
+        },
+        {
+          "damaged": "\frac",
+          "restored": "\\frac",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\text",
+          "restored": "\\text",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\theta",
+          "restored": "\\theta",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\to",
+          "restored": "\\to",
+          "occurrences": 1
+        }
+      ],
+      "reviewedTranslationsAdded": 0
+    },
+    {
+      "language": "ru",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ru.md",
+      "originalSha256": "d6c08a70f02227c57bc41f53c6e746fa9626671ca797b18975726d77e18079a6",
+      "repairedSha256": "ada523341c26c7a5015b0c01a3370da41b7685c40b1a7609a603a8be6e2f5983",
+      "changes": [
+        {
+          "damaged": "\u0007pprox",
+          "restored": "\\approx",
+          "occurrences": 3
+        },
+        {
+          "damaged": "\frac",
+          "restored": "\\frac",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\text",
+          "restored": "\\text",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\theta",
+          "restored": "\\theta",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\to",
+          "restored": "\\to",
+          "occurrences": 1
+        }
+      ],
+      "reviewedTranslationsAdded": 0
+    },
+    {
+      "language": "zh-cn",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.zh-cn.md",
+      "originalSha256": "96933786a64b88b413225e9959fa0647227e56b2badbc937e8db451936ecfceb",
+      "repairedSha256": "f8310606029cebb9638060c0e3dd4fefcfdf48e46e816b3b27396ad6eaba29a4",
+      "changes": [
+        {
+          "damaged": "\u0007pprox",
+          "restored": "\\approx",
+          "occurrences": 4
+        },
+        {
+          "damaged": "\frac",
+          "restored": "\\frac",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\text",
+          "restored": "\\text",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\theta",
+          "restored": "\\theta",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\to",
+          "restored": "\\to",
+          "occurrences": 2
+        }
+      ],
+      "reviewedTranslationsAdded": 0
+    },
+    {
+      "language": "zh-tw",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.zh-tw.md",
+      "originalSha256": "41c21f39dc73714f4909b9543d96a6478906de4a85125f1ee88d6d9e991d9b96",
+      "repairedSha256": "1b1e712dbcd308b8f745cdee493ccf15ceae10ec7bb1e591d55c3d841e21dc1f",
+      "changes": [
+        {
+          "damaged": "\u0007pprox",
+          "restored": "\\approx",
+          "occurrences": 4
+        },
+        {
+          "damaged": "\frac",
+          "restored": "\\frac",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\text",
+          "restored": "\\text",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\theta",
+          "restored": "\\theta",
+          "occurrences": 2
+        },
+        {
+          "damaged": "\to",
+          "restored": "\\to",
+          "occurrences": 2
+        }
+      ],
+      "reviewedTranslationsAdded": 0
+    }
+  ],
+  "repairedCommands": 117,
+  "originalFullBodiesPreviouslyRead": true,
+  "changedEscapeContextsRead": true,
+  "otherTextAndMetadataUnchanged": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Restore only BEL+pprox, form-feed+rac and TAB+ext/heta/o to TeX escapes after full original reading and explicit context inspection. Does not approve meanings, full formulas, translations, HTML or publication. Original hashes/audit preserved; semantic rewrites remain pending."
+}

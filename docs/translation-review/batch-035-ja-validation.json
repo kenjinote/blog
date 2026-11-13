@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:36:04.716857+09:00",
+  "allPassed": true,
+  "language": "ja",
+  "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+  "sourceSha256": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+  "originalSha256": "a304b83d4ec1c1308065a4c32f0535fe1c1924609cd714bd688098ff319173be",
+  "texExpressions": 224,
+  "displayMath": 38,
+  "diagrams": 2,
+  "diagramEdges": [
+    6,
+    5
+  ],
+  "references": 8,
+  "pseudocodeBlocks": 2,
+  "articleExecutablePrograms": 0,
+  "pseudocodeHtmlExact": true,
+  "mathHtmlExact": true,
+  "proseFragmentsPreserved": 224,
+  "tableHeaderAndDataRows": 12,
+  "all22StrongSpansPreserved": true,
+  "datesTaxonomyImageAndNavigationPassed": true,
+  "other12OriginalTranslationHashesUnchanged": true,
+  "auxiliary": "docs/translation-review/batch-035-ja-auxiliary.json",
+  "priorFiniteEvidence": "docs/translation-review/batch-035-original-finite-probe.json",
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Selected Japanese static HTML and prior finite arithmetic/coding evidence, not semantic approval of translations. Full original/revised reading separately recorded. No C/K/Omega oracle, theorem certification, complete compressor/LLM/corpus experiment, native review, browser/KaTeX/Mermaid execution, full-site or publication certification."
+}

@@ -1,0 +1,93 @@
+{
+  "xmlParseFailures": [
+    {
+      "path": "ar/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 200"
+    },
+    {
+      "path": "de/index.xml",
+      "error": "not well-formed (invalid token): line 1215, column 196"
+    },
+    {
+      "path": "es/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 212"
+    },
+    {
+      "path": "fr/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 212"
+    },
+    {
+      "path": "hi/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 210"
+    },
+    {
+      "path": "id/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 202"
+    },
+    {
+      "path": "ko/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 169"
+    },
+    {
+      "path": "pt/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 204"
+    },
+    {
+      "path": "ru/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 227"
+    },
+    {
+      "path": "zh-cn/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 148"
+    },
+    {
+      "path": "zh-tw/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 148"
+    },
+    {
+      "path": "ar/post/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 200"
+    },
+    {
+      "path": "de/post/index.xml",
+      "error": "not well-formed (invalid token): line 1215, column 196"
+    },
+    {
+      "path": "es/post/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 212"
+    },
+    {
+      "path": "fr/post/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 212"
+    },
+    {
+      "path": "hi/post/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 210"
+    },
+    {
+      "path": "id/post/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 202"
+    },
+    {
+      "path": "ko/post/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 169"
+    },
+    {
+      "path": "pt/post/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 204"
+    },
+    {
+      "path": "ru/post/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 227"
+    },
+    {
+      "path": "zh-cn/post/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 148"
+    },
+    {
+      "path": "zh-tw/post/index.xml",
+      "error": "not well-formed (invalid token): line 1214, column 148"
+    }
+  ],
+  "scope": "Actual initial preview XML parsing; source repairs separately recorded, not a successful rebuilt XML check."
+}

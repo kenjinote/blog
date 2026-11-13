@@ -1,0 +1,174 @@
+{
+  "gammaIntegers": 1023,
+  "gammaKraftMass": "1023/1024",
+  "gammaPrefixFreeAndDecoded": true,
+  "rationalHuffmanProfiles": 965,
+  "sfeFiniteProfileSymbols": 2445,
+  "sequentialDyadicCodes": [
+    {
+      "tokens": 1,
+      "sequences": 2,
+      "sumProbability": "1",
+      "prefixFree": true,
+      "allDyadicIntervalsContained": true,
+      "allCodewordRoundTripsExact": true,
+      "entropy": 0.9182958340544896
+    },
+    {
+      "tokens": 2,
+      "sequences": 4,
+      "sumProbability": "1",
+      "prefixFree": true,
+      "allDyadicIntervalsContained": true,
+      "allCodewordRoundTripsExact": true,
+      "entropy": 1.7295739585136223
+    },
+    {
+      "tokens": 3,
+      "sequences": 8,
+      "sumProbability": "1",
+      "prefixFree": true,
+      "allDyadicIntervalsContained": true,
+      "allCodewordRoundTripsExact": true,
+      "entropy": 2.5408520829727554
+    },
+    {
+      "tokens": 4,
+      "sequences": 16,
+      "sumProbability": "1",
+      "prefixFree": true,
+      "allDyadicIntervalsContained": true,
+      "allCodewordRoundTripsExact": true,
+      "entropy": 3.352130207431888
+    },
+    {
+      "tokens": 5,
+      "sequences": 32,
+      "sumProbability": "1",
+      "prefixFree": true,
+      "allDyadicIntervalsContained": true,
+      "allCodewordRoundTripsExact": true,
+      "entropy": 4.163408331891021
+    },
+    {
+      "tokens": 6,
+      "sequences": 64,
+      "sumProbability": "1",
+      "prefixFree": true,
+      "allDyadicIntervalsContained": true,
+      "allCodewordRoundTripsExact": true,
+      "entropy": 4.974686456350154
+    },
+    {
+      "tokens": 7,
+      "sequences": 128,
+      "sumProbability": "1",
+      "prefixFree": true,
+      "allDyadicIntervalsContained": true,
+      "allCodewordRoundTripsExact": true,
+      "entropy": 5.785964580809287
+    },
+    {
+      "tokens": 8,
+      "sequences": 256,
+      "sumProbability": "1",
+      "prefixFree": true,
+      "allDyadicIntervalsContained": true,
+      "allCodewordRoundTripsExact": true,
+      "entropy": 6.597242705268419
+    },
+    {
+      "tokens": 9,
+      "sequences": 512,
+      "sumProbability": "1",
+      "prefixFree": true,
+      "allDyadicIntervalsContained": true,
+      "allCodewordRoundTripsExact": true,
+      "entropy": 7.408520829727553
+    }
+  ],
+  "sequentialCodewordRoundTrips": 1022,
+  "omegaResidualIllustrations": [
+    {
+      "bits": 1,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 2,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 3,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 4,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 5,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 6,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 7,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 8,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 9,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 10,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 11,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 12,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 13,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 14,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 15,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    },
+    {
+      "bits": 16,
+      "strictCrossingResidualBoundPassed": true,
+      "equalityAtLowerEndpointAlsoSufficient": true
+    }
+  ],
+  "scope": "Finite exact rational/dyadic codes and selected inequalities. SFE construction is an auxiliary, not an article program or production arithmetic coder. No actual C/K, shortest program, optimal machine, Omega value, ML/Brudno theorem, corpus/LLM, NCD universality or benchmark computed/proved."
+}
