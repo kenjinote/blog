@@ -4,7 +4,7 @@ from datetime import datetime,timezone,timedelta
 import copy,hashlib,json,subprocess,sys
 root=Path(__file__).resolve().parents[2];d=root/'docs/translation-review'
 lang,notes_path,stem=sys.argv[1:4]
-assert (lang,stem) in [('zh-cn','batch-034-zh-cn-r2'),('zh-tw','batch-034-zh-tw'),('es','batch-034-es-r2'),('ko','batch-034-ko'),('pt','batch-034-pt')]
+assert (lang,stem) in [('zh-cn','batch-034-zh-cn-r2'),('zh-tw','batch-034-zh-tw'),('es','batch-034-es-r2'),('ko','batch-034-ko'),('pt','batch-034-pt'),('fr','batch-034-fr')]
 notes=json.loads(Path(notes_path).read_text(encoding='utf-8'))
 assert notes['allOriginalAndRevisedBodiesRead'] and set(notes['checks'])=={'meaning','terminology','mathematics','code','links'}
 assert all(len(v)>60 for v in notes['checks'].values())
