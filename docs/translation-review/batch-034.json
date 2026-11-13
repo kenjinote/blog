@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "article": "error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory",
+  "sourceAudit": "docs/translation-review/batch-034-source-audit.json",
+  "sourceNotes": "docs/translation-review/batch-034-source-notes.md",
+  "sourceFrozenForFollowingTranslations": true,
+  "frozenSourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+  "reviews": {
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-13",
+      "reviewer": "Codex (AI)",
+      "source": "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "translationHash": "88cbf21db2e8ea26add38d3ff0b2ba4cda320056467c269a980ca5b3e20aceb4",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read actual complete original JA/EN including all8sections,4Mermaid diagrams,mathematical derivations/comparison tables,entire Python and displayed outputs. Reread current old EN lines1–170,171–435,436–end and actual revised EN1–330,331–660,661–898 plus final editorial patch. Compared against complete revised JA, whose unchanged LFhash matches prior R4. Retained all8themes and added JA applications/perfect-code scope omitted in oldEN. Corrected guaranteed-radius versus asymptotic reliability,QR codewords versus arbitrary area,spacecraft history/power units,noise/input constraints,and unqualified universal architecture/performance claims. Preserved useful EN-specific proof and examples rather than replacing them with a shortened summary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Compared error versus known-position erasure,codeword/symbol/byte versus image area,code rate bits/use versus information rate bits/s,received Eb/N0 versus S/N,infimum versus positive-efficiency bound,systematic H versus binary column ordering,evaluation message coefficients versus cyclic codeword coefficients,prime GF257 versus extension GF256,rank versus row count,intrinsic/equal-prior/extrinsic LLR,symmetric capacity I(W) versus optimized C,SC versus list-dependent SCL. Retained English Hamming message1011/syndrome011,nonadjacent indices1/6/13,primitive-power example,and corrected Vandermonde independence wording from scalar coordinates to matrix columns."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read and compared all47shared display blocks,with only three Japanese annotation translations,plus eight EN display additions: natural-log Chernoff bound,asymptotic typical-set counting heuristic,triangle inequality,byte polynomial,Vandermonde determinant,characteristic2formal derivative,and two polarization limits with0<delta<1. Corrected arbitrary radius to t<=floor((d-1)/2),zero syndrome interpretation,Forney extraX for explicitly j=1 syndrome convention,AWGN ln2 as wideband infimum,LDPC k=n-rankH/iteration and cycle limits,and finite versus asymptotic Polar guarantees. English finite auxiliary checks784Chernoff model cases,100independent GF256Vandermonde determinants,2^500approximation,99.94percent sparse example,alpha^8 andHamming example pass. Earlier independent320multi-errorForney magnitudes/65025one-errorcounterexamples retained;finite evidence is not a theorem proof or hardware benchmark."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read both complete old JA/EN implementations,whose failures and mismatched displayed outputs remain preserved. Read actual revised full GF256code in both bodies and ran each extracted program as a standalone subprocess;exit0/stdout exactly match displayed output and decodedHTML. Rank-aware rectangular Gaussian solving,degrees0..t,Q/Edivision/remainder/degree validation,re-encoding/distance verification,and explicit beyond-radius miscorrection example reviewed. Shared actual code supports zero/fewer-than-t errors and zero evaluation point;byte validation and evaluation code versus full QR format distinguished. Existing independent65536fieldproducts/255inverses/full65536wordn4k2codebook against256receivedvectors/3828single-error cases/144seededcases/24invalidcases referenced byte-identical candidate. Newly exercised oldENalpha-power evaluation points and0–3oforiginalindices1,6,13;codeword matches old actual stdout,not its wrong displayed output. Four complete Mermaid graphs/31edges andcomparison table retained. No full QR/spacecraft/LDPC/Polar implementation,performance or all-input execution claim."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Ten primary/official references match JA/source and actualHTML;their limited actual page/abstract reading scopes remain in source notes,not full-paper certification. OriginalEN had no external reference list and no invented broken-link removal is claimed. Publication date2026-10-18T08:00:00+09:00,slug,imagehash andEnglish taxonomy preserved;actualNov13lastmod andexplicitmermaidflag. Current source/HTML272ENand435JATeX,all47coreblocks,8graphs62edges,allcode/output and324EN/371JAprosefragments verified. First prose check failed on Hugo smart apostrophes;initial receipt/helper retained,only prose apostrophes normalized in successful freshR2,math/code remain exact.35bundle455snapshot/1983multilingualpage/3616HTTPSHTML41XML and17unit tests pass. Publication034pending;other11bodies unread."
+        }
+      },
+      "summary": "Complete English error-correcting-code comparison with corrected guarantees,convention-specific algebra,and executed educational GF256 decoder.",
+      "languageSpecificFindings": "OldENalreadyallowednonnegativecapacity;didnotassignJapanesealways-positivewordingtothisversion. Corrected capacityfromnoisealone,exactdisjointtypicalballpacking,systematicHsyndromenumberinterpretation,Vandermondescalarindependence,extraXForneywithitsownexplicitS(z),unqualified0.0045dB/allSSD/allcontrolclaims,anddisplayedstdoutmismatch. Retained Chernoff/natural-log condition,2^500example,Hamming1011,GFzero-divisor16x16/alpha8,Vandermonde/derivative/polar-limits,99.94percentexamplewithrankcondition,andoldalpha-pointnonadjacenterrorcase. Shared newdemo usesbytepoints1..15andexplains changedcodeword.",
+      "validation": "docs/translation-review/batch-034-ja-en-validation-r2.json",
+      "limitations": [
+        "AI review,not human or native-speaker certification.",
+        "Other11translation bodies remain unread andunreviewed.",
+        "Finite arithmetic and execution evidence,not all-input theorem proof,real hardware/spacecraft tests,full QR/LDPC/Polar software or speed benchmarks.",
+        "Primary reading limited to documented selected pages/abstracts;no entire papers/standard or browser/KaTeX/Mermaid runtime certification.",
+        "Batch034publication andwholegoal remain pending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-11-13",
+      "languagesRead": [
+        "ja",
+        "en"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "validation": "docs/translation-review/batch-034-ja-en-validation-r2.json",
+      "checks": "docs/translation-review/batch-034-ja-en-checks-r2.json",
+      "ledgerValidation": "docs/translation-review/batch-034-en-ledger-validation.json",
+      "sourceFrozenForFollowingTranslations": true,
+      "texExpressions": {
+        "ja": 435,
+        "en": 272
+      },
+      "displayMath": {
+        "ja": 47,
+        "en": 55
+      },
+      "sharedCoreDisplayBlocks": 47,
+      "diagramsEach": 4,
+      "diagramEdgesEach": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "articleExecutableProgramsEach": 1,
+      "actualPreviewBundles": 35,
+      "sourceSnapshotsExact": 455,
+      "multilingualPages": 1983,
+      "httpsHtmlPages": 3616,
+      "httpsXmlFiles": 41,
+      "existingTestsRerun": 17,
+      "reviewedTranslationsTotal": 409,
+      "unreviewedTranslations": 12623,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 11,
+      "publicationPending": true
+    }
+  ],
+  "publicationPending": true
+}

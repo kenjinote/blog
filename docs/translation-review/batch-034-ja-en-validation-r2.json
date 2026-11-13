@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T17:56:07.504982+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ja",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "sha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "e709cf1874fbd1e320c04c0f22535537b35959fb843096289d13759261f81019",
+      "texExpressions": 435,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 371,
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.en.md",
+      "sha256": "88cbf21db2e8ea26add38d3ff0b2ba4cda320056467c269a980ca5b3e20aceb4",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "3c333021c507af286f79c8d621ed4e1f8aa580bb2bfa839c4a4b986a8973a576",
+      "texExpressions": 272,
+      "displayMath": 55,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 324,
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    }
+  ],
+  "auxiliaryChecks": {
+    "chernoffModelCases": 784,
+    "exponentialCodebookExample": true,
+    "regularLdpcZerosPercent": 99.94,
+    "hammingMessage": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "hammingCodeword": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "hammingSyndrome": [
+      0,
+      1,
+      1
+    ],
+    "primitiveEighthPower": 29,
+    "originalEnglishEvaluationPoints": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      29,
+      58,
+      116,
+      232,
+      205,
+      135,
+      19
+    ],
+    "originalEnglishActualCodeword": [
+      77,
+      162,
+      64,
+      217,
+      68,
+      152,
+      48,
+      138,
+      209,
+      123,
+      74,
+      82,
+      244,
+      157,
+      21
+    ],
+    "oldEnglishZeroThroughThreeErrorPatterns": [
+      {
+        "errors": 0,
+        "received": [
+          77,
+          162,
+          64,
+          217,
+          68,
+          152,
+          48,
+          138,
+          209,
+          123,
+          74,
+          82,
+          244,
+          157,
+          21
+        ],
+        "recovered": [
+          86,
+          79,
+          89,
+          65,
+          71,
+          69,
+          82,
+          45,
+          49
+        ]
+      },
+      {
+        "errors": 1,
+        "received": [
+          77,
+          93,
+          64,
+          217,
+          68,
+          152,
+          48,
+          138,
+          209,
+          123,
+          74,
+          82,
+          244,
+          157,
+          21
+        ],
+        "recovered": [
+          86,
+          79,
+          89,
+          65,
+          71,
+          69,
+          82,
+          45,
+          49
+        ]
+      },
+      {
+        "errors": 2,
+        "received": [
+          77,
+          93,
+          64,
+          217,
+          68,
+          152,
+          149,
+          138,
+          209,
+          123,
+          74,
+          82,
+          244,
+          157,
+          21
+        ],
+        "recovered": [
+          86,
+          79,
+          89,
+          65,
+          71,
+          69,
+          82,
+          45,
+          49
+        ]
+      },
+      {
+        "errors": 3,
+        "received": [
+          77,
+          93,
+          64,
+          217,
+          68,
+          152,
+          149,
+          138,
+          209,
+          123,
+          74,
+          82,
+          244,
+          161,
+          21
+        ],
+        "recovered": [
+          86,
+          79,
+          89,
+          65,
+          71,
+          69,
+          82,
+          45,
+          49
+        ]
+      }
+    ],
+    "independentVandermondeDeterminants": 100,
+    "scope": "Finite auxiliary arithmetic and decoder cases, not hardware measurements, asymptotic theorem proofs or full QR/LDPC/Polar implementations."
+  },
+  "priorCandidateFiniteEvidence": "docs/translation-review/batch-034-candidate-code-validation.json",
+  "priorJapaneseArithmeticEvidence": "docs/translation-review/batch-034-ja-validation-r4.json",
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "limitations": [
+    "Static source/HTML and finite arithmetic; full original/revised semantic reading is recorded separately.",
+    "Only JA and EN covered; other11translation bodies remain unread.",
+    "No browser/KaTeX/Mermaid execution, native-language, full-site, real hardware, benchmark or complete QR/LDPC/Polar implementation certification."
+  ]
+}
