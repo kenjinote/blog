@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "article": "kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness",
+  "sourceAudit": "docs/translation-review/batch-035-source-audit.json",
+  "reviews": {},
+  "stages": [
+    {
+      "checkedAt": "2026-11-13T23:07:53.108104+09:00",
+      "stage": "Original JA and EN full reading; preliminary investigation only",
+      "languagesRead": [
+        "ja",
+        "en"
+      ],
+      "otherTranslationBodiesRead": false,
+      "reviewedTranslationsAdded": 0,
+      "sourceRevisionPending": true,
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-11-13T23:14:28.794219+09:00",
+      "stage": "Original simplified/traditional Chinese full reading",
+      "languagesRead": [
+        "zh-cn",
+        "zh-tw"
+      ],
+      "reading": "docs/translation-review/batch-035-cn-tw-original-reading.json",
+      "otherUnreadTranslationLanguages": [
+        "es",
+        "ko",
+        "pt",
+        "fr",
+        "de",
+        "hi",
+        "id",
+        "ru",
+        "ar"
+      ],
+      "reviewedTranslationsAdded": 0,
+      "sourceRevisionPending": true,
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-11-13T23:15:18.984071+09:00",
+      "stage": "Original Spanish/Korean full reading",
+      "languagesRead": [
+        "es",
+        "ko"
+      ],
+      "reading": "docs/translation-review/batch-035-es-ko-original-reading.json",
+      "otherUnreadTranslationLanguages": [
+        "pt",
+        "fr",
+        "de",
+        "hi",
+        "id",
+        "ru",
+        "ar"
+      ],
+      "reviewedTranslationsAdded": 0,
+      "sourceRevisionPending": true,
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-11-13T23:16:10.847744+09:00",
+      "stage": "Original Portuguese/French full reading",
+      "languagesRead": [
+        "pt",
+        "fr"
+      ],
+      "reading": "docs/translation-review/batch-035-pt-fr-original-reading.json",
+      "otherUnreadTranslationLanguages": [
+        "de",
+        "hi",
+        "id",
+        "ru",
+        "ar"
+      ],
+      "reviewedTranslationsAdded": 0,
+      "sourceRevisionPending": true,
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-11-13T23:17:04.123471+09:00",
+      "stage": "Original German/Hindi full reading",
+      "languagesRead": [
+        "de",
+        "hi"
+      ],
+      "reading": "docs/translation-review/batch-035-de-hi-original-reading.json",
+      "otherUnreadTranslationLanguages": [
+        "id",
+        "ru",
+        "ar"
+      ],
+      "reviewedTranslationsAdded": 0,
+      "sourceRevisionPending": true,
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-11-13T23:18:04.720017+09:00",
+      "stage": "Original Indonesian/Russian/Arabic full reading; all13 originals now read",
+      "languagesRead": [
+        "id",
+        "ru",
+        "ar"
+      ],
+      "reading": "docs/translation-review/batch-035-id-ru-ar-original-reading.json",
+      "allOriginalBodiesRead": true,
+      "revisedBodiesRead": false,
+      "otherUnreadTranslationLanguages": [],
+      "reviewedTranslationsAdded": 0,
+      "sourceRevisionPending": true,
+      "publicationPending": true
+    },
+    {
+      "checkedAt": "2026-11-13T23:19:13.856355+09:00",
+      "stage": "Original asset visual inspection and unchanged-source inventory",
+      "allOriginalBodiesRead": true,
+      "revisedBodiesRead": false,
+      "all13OriginalHashesUnchanged": true,
+      "assetVisualDescription": "Conceptual split composition: ordered golden geometric/fractal lines on the left, irregular colored glass-like shards on the right, against a star-like background. No readable theorem/formula, measured randomness evidence, real coin experiment or machine/coding certification.",
+      "assetUnchanged": true,
+      "reviewedTranslationsAdded": 0,
+      "sourceRevisionPending": true,
+      "publicationPending": true
+    }
+  ],
+  "publicationPending": true,
+  "scope": "Next article initial audit only;420 existing translations retained. Do not infer semantic approval from inventory."
+}

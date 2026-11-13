@@ -1,0 +1,1024 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:08:40.542452+09:00",
+  "originalHashes": {
+    "ja": "a304b83d4ec1c1308065a4c32f0535fe1c1924609cd714bd688098ff319173be",
+    "en": "a429c7ca5b6788467a2eeb9cadba7da876dfc8a510679d61e148adf05d499464"
+  },
+  "countingCases": [
+    {
+      "n": 0,
+      "c": 0,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 1,
+      "c": 0,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 1,
+      "c": 1,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 2
+    },
+    {
+      "n": 2,
+      "c": 0,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 2,
+      "c": 1,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 3
+    },
+    {
+      "n": 2,
+      "c": 2,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 4
+    },
+    {
+      "n": 3,
+      "c": 0,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 3,
+      "c": 1,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 5
+    },
+    {
+      "n": 3,
+      "c": 2,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 7
+    },
+    {
+      "n": 3,
+      "c": 3,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 8
+    },
+    {
+      "n": 4,
+      "c": 0,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 4,
+      "c": 1,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 9
+    },
+    {
+      "n": 4,
+      "c": 2,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 13
+    },
+    {
+      "n": 4,
+      "c": 3,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 15
+    },
+    {
+      "n": 4,
+      "c": 4,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 16
+    },
+    {
+      "n": 5,
+      "c": 0,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 5,
+      "c": 1,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 17
+    },
+    {
+      "n": 5,
+      "c": 2,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 25
+    },
+    {
+      "n": 5,
+      "c": 3,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 29
+    },
+    {
+      "n": 5,
+      "c": 4,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 31
+    },
+    {
+      "n": 5,
+      "c": 5,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 32
+    },
+    {
+      "n": 6,
+      "c": 0,
+      "shortPrograms": 63,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 6,
+      "c": 1,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 33
+    },
+    {
+      "n": 6,
+      "c": 2,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 49
+    },
+    {
+      "n": 6,
+      "c": 3,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 57
+    },
+    {
+      "n": 6,
+      "c": 4,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 61
+    },
+    {
+      "n": 6,
+      "c": 5,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 63
+    },
+    {
+      "n": 6,
+      "c": 6,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 64
+    },
+    {
+      "n": 7,
+      "c": 0,
+      "shortPrograms": 127,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 7,
+      "c": 1,
+      "shortPrograms": 63,
+      "incompressibleCountLowerBound": 65
+    },
+    {
+      "n": 7,
+      "c": 2,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 97
+    },
+    {
+      "n": 7,
+      "c": 3,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 113
+    },
+    {
+      "n": 7,
+      "c": 4,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 121
+    },
+    {
+      "n": 7,
+      "c": 5,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 125
+    },
+    {
+      "n": 7,
+      "c": 6,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 127
+    },
+    {
+      "n": 7,
+      "c": 7,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 128
+    },
+    {
+      "n": 8,
+      "c": 0,
+      "shortPrograms": 255,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 8,
+      "c": 1,
+      "shortPrograms": 127,
+      "incompressibleCountLowerBound": 129
+    },
+    {
+      "n": 8,
+      "c": 2,
+      "shortPrograms": 63,
+      "incompressibleCountLowerBound": 193
+    },
+    {
+      "n": 8,
+      "c": 3,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 225
+    },
+    {
+      "n": 8,
+      "c": 4,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 241
+    },
+    {
+      "n": 8,
+      "c": 5,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 249
+    },
+    {
+      "n": 8,
+      "c": 6,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 253
+    },
+    {
+      "n": 8,
+      "c": 7,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 255
+    },
+    {
+      "n": 8,
+      "c": 8,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 256
+    },
+    {
+      "n": 9,
+      "c": 0,
+      "shortPrograms": 511,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 9,
+      "c": 1,
+      "shortPrograms": 255,
+      "incompressibleCountLowerBound": 257
+    },
+    {
+      "n": 9,
+      "c": 2,
+      "shortPrograms": 127,
+      "incompressibleCountLowerBound": 385
+    },
+    {
+      "n": 9,
+      "c": 3,
+      "shortPrograms": 63,
+      "incompressibleCountLowerBound": 449
+    },
+    {
+      "n": 9,
+      "c": 4,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 481
+    },
+    {
+      "n": 9,
+      "c": 5,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 497
+    },
+    {
+      "n": 9,
+      "c": 6,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 505
+    },
+    {
+      "n": 9,
+      "c": 7,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 509
+    },
+    {
+      "n": 9,
+      "c": 8,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 511
+    },
+    {
+      "n": 9,
+      "c": 9,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 512
+    },
+    {
+      "n": 10,
+      "c": 0,
+      "shortPrograms": 1023,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 10,
+      "c": 1,
+      "shortPrograms": 511,
+      "incompressibleCountLowerBound": 513
+    },
+    {
+      "n": 10,
+      "c": 2,
+      "shortPrograms": 255,
+      "incompressibleCountLowerBound": 769
+    },
+    {
+      "n": 10,
+      "c": 3,
+      "shortPrograms": 127,
+      "incompressibleCountLowerBound": 897
+    },
+    {
+      "n": 10,
+      "c": 4,
+      "shortPrograms": 63,
+      "incompressibleCountLowerBound": 961
+    },
+    {
+      "n": 10,
+      "c": 5,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 993
+    },
+    {
+      "n": 10,
+      "c": 6,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 1009
+    },
+    {
+      "n": 10,
+      "c": 7,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 1017
+    },
+    {
+      "n": 10,
+      "c": 8,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 1021
+    },
+    {
+      "n": 10,
+      "c": 9,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 1023
+    },
+    {
+      "n": 10,
+      "c": 10,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 1024
+    },
+    {
+      "n": 11,
+      "c": 0,
+      "shortPrograms": 2047,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 11,
+      "c": 1,
+      "shortPrograms": 1023,
+      "incompressibleCountLowerBound": 1025
+    },
+    {
+      "n": 11,
+      "c": 2,
+      "shortPrograms": 511,
+      "incompressibleCountLowerBound": 1537
+    },
+    {
+      "n": 11,
+      "c": 3,
+      "shortPrograms": 255,
+      "incompressibleCountLowerBound": 1793
+    },
+    {
+      "n": 11,
+      "c": 4,
+      "shortPrograms": 127,
+      "incompressibleCountLowerBound": 1921
+    },
+    {
+      "n": 11,
+      "c": 5,
+      "shortPrograms": 63,
+      "incompressibleCountLowerBound": 1985
+    },
+    {
+      "n": 11,
+      "c": 6,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 2017
+    },
+    {
+      "n": 11,
+      "c": 7,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 2033
+    },
+    {
+      "n": 11,
+      "c": 8,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 2041
+    },
+    {
+      "n": 11,
+      "c": 9,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 2045
+    },
+    {
+      "n": 11,
+      "c": 10,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 2047
+    },
+    {
+      "n": 11,
+      "c": 11,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 2048
+    },
+    {
+      "n": 12,
+      "c": 0,
+      "shortPrograms": 4095,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 12,
+      "c": 1,
+      "shortPrograms": 2047,
+      "incompressibleCountLowerBound": 2049
+    },
+    {
+      "n": 12,
+      "c": 2,
+      "shortPrograms": 1023,
+      "incompressibleCountLowerBound": 3073
+    },
+    {
+      "n": 12,
+      "c": 3,
+      "shortPrograms": 511,
+      "incompressibleCountLowerBound": 3585
+    },
+    {
+      "n": 12,
+      "c": 4,
+      "shortPrograms": 255,
+      "incompressibleCountLowerBound": 3841
+    },
+    {
+      "n": 12,
+      "c": 5,
+      "shortPrograms": 127,
+      "incompressibleCountLowerBound": 3969
+    },
+    {
+      "n": 12,
+      "c": 6,
+      "shortPrograms": 63,
+      "incompressibleCountLowerBound": 4033
+    },
+    {
+      "n": 12,
+      "c": 7,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 4065
+    },
+    {
+      "n": 12,
+      "c": 8,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 4081
+    },
+    {
+      "n": 12,
+      "c": 9,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 4089
+    },
+    {
+      "n": 12,
+      "c": 10,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 4093
+    },
+    {
+      "n": 12,
+      "c": 11,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 4095
+    },
+    {
+      "n": 12,
+      "c": 12,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 4096
+    },
+    {
+      "n": 13,
+      "c": 0,
+      "shortPrograms": 8191,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 13,
+      "c": 1,
+      "shortPrograms": 4095,
+      "incompressibleCountLowerBound": 4097
+    },
+    {
+      "n": 13,
+      "c": 2,
+      "shortPrograms": 2047,
+      "incompressibleCountLowerBound": 6145
+    },
+    {
+      "n": 13,
+      "c": 3,
+      "shortPrograms": 1023,
+      "incompressibleCountLowerBound": 7169
+    },
+    {
+      "n": 13,
+      "c": 4,
+      "shortPrograms": 511,
+      "incompressibleCountLowerBound": 7681
+    },
+    {
+      "n": 13,
+      "c": 5,
+      "shortPrograms": 255,
+      "incompressibleCountLowerBound": 7937
+    },
+    {
+      "n": 13,
+      "c": 6,
+      "shortPrograms": 127,
+      "incompressibleCountLowerBound": 8065
+    },
+    {
+      "n": 13,
+      "c": 7,
+      "shortPrograms": 63,
+      "incompressibleCountLowerBound": 8129
+    },
+    {
+      "n": 13,
+      "c": 8,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 8161
+    },
+    {
+      "n": 13,
+      "c": 9,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 8177
+    },
+    {
+      "n": 13,
+      "c": 10,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 8185
+    },
+    {
+      "n": 13,
+      "c": 11,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 8189
+    },
+    {
+      "n": 13,
+      "c": 12,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 8191
+    },
+    {
+      "n": 13,
+      "c": 13,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 8192
+    },
+    {
+      "n": 14,
+      "c": 0,
+      "shortPrograms": 16383,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 14,
+      "c": 1,
+      "shortPrograms": 8191,
+      "incompressibleCountLowerBound": 8193
+    },
+    {
+      "n": 14,
+      "c": 2,
+      "shortPrograms": 4095,
+      "incompressibleCountLowerBound": 12289
+    },
+    {
+      "n": 14,
+      "c": 3,
+      "shortPrograms": 2047,
+      "incompressibleCountLowerBound": 14337
+    },
+    {
+      "n": 14,
+      "c": 4,
+      "shortPrograms": 1023,
+      "incompressibleCountLowerBound": 15361
+    },
+    {
+      "n": 14,
+      "c": 5,
+      "shortPrograms": 511,
+      "incompressibleCountLowerBound": 15873
+    },
+    {
+      "n": 14,
+      "c": 6,
+      "shortPrograms": 255,
+      "incompressibleCountLowerBound": 16129
+    },
+    {
+      "n": 14,
+      "c": 7,
+      "shortPrograms": 127,
+      "incompressibleCountLowerBound": 16257
+    },
+    {
+      "n": 14,
+      "c": 8,
+      "shortPrograms": 63,
+      "incompressibleCountLowerBound": 16321
+    },
+    {
+      "n": 14,
+      "c": 9,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 16353
+    },
+    {
+      "n": 14,
+      "c": 10,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 16369
+    },
+    {
+      "n": 14,
+      "c": 11,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 16377
+    },
+    {
+      "n": 14,
+      "c": 12,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 16381
+    },
+    {
+      "n": 14,
+      "c": 13,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 16383
+    },
+    {
+      "n": 14,
+      "c": 14,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 16384
+    },
+    {
+      "n": 15,
+      "c": 0,
+      "shortPrograms": 32767,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 15,
+      "c": 1,
+      "shortPrograms": 16383,
+      "incompressibleCountLowerBound": 16385
+    },
+    {
+      "n": 15,
+      "c": 2,
+      "shortPrograms": 8191,
+      "incompressibleCountLowerBound": 24577
+    },
+    {
+      "n": 15,
+      "c": 3,
+      "shortPrograms": 4095,
+      "incompressibleCountLowerBound": 28673
+    },
+    {
+      "n": 15,
+      "c": 4,
+      "shortPrograms": 2047,
+      "incompressibleCountLowerBound": 30721
+    },
+    {
+      "n": 15,
+      "c": 5,
+      "shortPrograms": 1023,
+      "incompressibleCountLowerBound": 31745
+    },
+    {
+      "n": 15,
+      "c": 6,
+      "shortPrograms": 511,
+      "incompressibleCountLowerBound": 32257
+    },
+    {
+      "n": 15,
+      "c": 7,
+      "shortPrograms": 255,
+      "incompressibleCountLowerBound": 32513
+    },
+    {
+      "n": 15,
+      "c": 8,
+      "shortPrograms": 127,
+      "incompressibleCountLowerBound": 32641
+    },
+    {
+      "n": 15,
+      "c": 9,
+      "shortPrograms": 63,
+      "incompressibleCountLowerBound": 32705
+    },
+    {
+      "n": 15,
+      "c": 10,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 32737
+    },
+    {
+      "n": 15,
+      "c": 11,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 32753
+    },
+    {
+      "n": 15,
+      "c": 12,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 32761
+    },
+    {
+      "n": 15,
+      "c": 13,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 32765
+    },
+    {
+      "n": 15,
+      "c": 14,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 32767
+    },
+    {
+      "n": 15,
+      "c": 15,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 32768
+    },
+    {
+      "n": 16,
+      "c": 0,
+      "shortPrograms": 65535,
+      "incompressibleCountLowerBound": 1
+    },
+    {
+      "n": 16,
+      "c": 1,
+      "shortPrograms": 32767,
+      "incompressibleCountLowerBound": 32769
+    },
+    {
+      "n": 16,
+      "c": 2,
+      "shortPrograms": 16383,
+      "incompressibleCountLowerBound": 49153
+    },
+    {
+      "n": 16,
+      "c": 3,
+      "shortPrograms": 8191,
+      "incompressibleCountLowerBound": 57345
+    },
+    {
+      "n": 16,
+      "c": 4,
+      "shortPrograms": 4095,
+      "incompressibleCountLowerBound": 61441
+    },
+    {
+      "n": 16,
+      "c": 5,
+      "shortPrograms": 2047,
+      "incompressibleCountLowerBound": 63489
+    },
+    {
+      "n": 16,
+      "c": 6,
+      "shortPrograms": 1023,
+      "incompressibleCountLowerBound": 64513
+    },
+    {
+      "n": 16,
+      "c": 7,
+      "shortPrograms": 511,
+      "incompressibleCountLowerBound": 65025
+    },
+    {
+      "n": 16,
+      "c": 8,
+      "shortPrograms": 255,
+      "incompressibleCountLowerBound": 65281
+    },
+    {
+      "n": 16,
+      "c": 9,
+      "shortPrograms": 127,
+      "incompressibleCountLowerBound": 65409
+    },
+    {
+      "n": 16,
+      "c": 10,
+      "shortPrograms": 63,
+      "incompressibleCountLowerBound": 65473
+    },
+    {
+      "n": 16,
+      "c": 11,
+      "shortPrograms": 31,
+      "incompressibleCountLowerBound": 65505
+    },
+    {
+      "n": 16,
+      "c": 12,
+      "shortPrograms": 15,
+      "incompressibleCountLowerBound": 65521
+    },
+    {
+      "n": 16,
+      "c": 13,
+      "shortPrograms": 7,
+      "incompressibleCountLowerBound": 65529
+    },
+    {
+      "n": 16,
+      "c": 14,
+      "shortPrograms": 3,
+      "incompressibleCountLowerBound": 65533
+    },
+    {
+      "n": 16,
+      "c": 15,
+      "shortPrograms": 1,
+      "incompressibleCountLowerBound": 65535
+    },
+    {
+      "n": 16,
+      "c": 16,
+      "shortPrograms": 0,
+      "incompressibleCountLowerBound": 65536
+    }
+  ],
+  "unrestrictedCGreaterThanNCounterexamples": [
+    {
+      "n": 0,
+      "c": 1,
+      "claimedLowerBound": "3/2",
+      "totalStrings": 1
+    },
+    {
+      "n": 1,
+      "c": 2,
+      "claimedLowerBound": "5/2",
+      "totalStrings": 2
+    },
+    {
+      "n": 2,
+      "c": 3,
+      "claimedLowerBound": "9/2",
+      "totalStrings": 4
+    },
+    {
+      "n": 5,
+      "c": 8,
+      "claimedLowerBound": "263/8",
+      "totalStrings": 32
+    }
+  ],
+  "storage": {
+    "abstractBits": 1000000,
+    "packedBytes": 125000,
+    "asciiUtf8Bytes": 1000000,
+    "scope": "Packed abstract bits versus one-byte ASCII characters; Python/container overhead not measured."
+  },
+  "berryPhrases": {
+    "japanese": "30文字未満の日本語では定義できない最小の正の整数",
+    "japaneseUnicodeCodePoints": 25,
+    "originalJapaneseClaim": 24,
+    "japaneseClaimMatches": false,
+    "english": "The smallest positive integer not definable in under twenty English words",
+    "englishWhitespaceWords": 11,
+    "englishClaimMatches": true
+  },
+  "gzipSameFileNcd": {
+    "inputBytes": 65536,
+    "seed": 3501,
+    "compressedXBytes": 65574,
+    "compressedXXBytes": 131130,
+    "ratio": "3642/3643",
+    "approx": 0.9997255009607466,
+    "roundTripExact": true,
+    "scope": "One chosen deterministic input/profile and finite-window gzip. No claim of computing K/NID, all compressors, general metric proof or performance benchmark."
+  },
+  "prefixIntegerCodingSubsequence": [
+    {
+      "nDescription": "2**16",
+      "binaryLengthOfN": 17,
+      "prefixGammaLengthOfExponent": 9,
+      "scope": "Fixed program can reconstruct n=2**m from gamma(m); fixed interpreter overhead not measured."
+    },
+    {
+      "nDescription": "2**32",
+      "binaryLengthOfN": 33,
+      "prefixGammaLengthOfExponent": 11,
+      "scope": "Fixed program can reconstruct n=2**m from gamma(m); fixed interpreter overhead not measured."
+    },
+    {
+      "nDescription": "2**64",
+      "binaryLengthOfN": 65,
+      "prefixGammaLengthOfExponent": 13,
+      "scope": "Fixed program can reconstruct n=2**m from gamma(m); fixed interpreter overhead not measured."
+    },
+    {
+      "nDescription": "2**128",
+      "binaryLengthOfN": 129,
+      "prefixGammaLengthOfExponent": 15,
+      "scope": "Fixed program can reconstruct n=2**m from gamma(m); fixed interpreter overhead not measured."
+    },
+    {
+      "nDescription": "2**256",
+      "binaryLengthOfN": 257,
+      "prefixGammaLengthOfExponent": 17,
+      "scope": "Fixed program can reconstruct n=2**m from gamma(m); fixed interpreter overhead not measured."
+    },
+    {
+      "nDescription": "2**1024",
+      "binaryLengthOfN": 1025,
+      "prefixGammaLengthOfExponent": 21,
+      "scope": "Fixed program can reconstruct n=2**m from gamma(m); fixed interpreter overhead not measured."
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "passed": true,
+  "limitations": [
+    "No Kolmogorov complexity or halting oracle implemented/computed.",
+    "Finite arithmetic and selected codec examples; no theorem proof, actual million-coin experiment or complete pi-normality test.",
+    "Only original JA/EN full bodies read; other11 bodies unread. No source revision,translation approval,build or publication certification."
+  ]
+}

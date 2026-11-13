@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:18:04.720017+09:00",
+  "languages": {
+    "id": {
+      "originalSha256": "f89eb2030513dbfbe4b43199eb35ea82288a07f02960ebbe0e8134471944f64c",
+      "fullOriginalBodyRead": true,
+      "lines": 111,
+      "c0ControlCharacters": [
+        {
+          "codepoint": "U+0007",
+          "count": 3
+        },
+        {
+          "codepoint": "U+000C",
+          "count": 2
+        }
+      ],
+      "tabCharacters": 5,
+      "berryPhrase": "bilangan bulat positif terkecil yang tidak dapat didefinisikan dalam kurang dari dua puluh kata",
+      "berryWhitespaceWords": 14,
+      "berryClaimedWords": 15,
+      "berryCountMatches": false,
+      "thaiIntrusion": true,
+      "reviewedTranslationsAdded": 0
+    },
+    "ru": {
+      "originalSha256": "d6c08a70f02227c57bc41f53c6e746fa9626671ca797b18975726d77e18079a6",
+      "fullOriginalBodyRead": true,
+      "lines": 111,
+      "c0ControlCharacters": [
+        {
+          "codepoint": "U+0007",
+          "count": 3
+        },
+        {
+          "codepoint": "U+000C",
+          "count": 2
+        }
+      ],
+      "tabCharacters": 5,
+      "berryPhrase": "наименьшее натуральное число, которое нельзя описать менее чем двадцатью словами",
+      "berryWhitespaceWords": 10,
+      "berryClaimedWords": 12,
+      "berryCountMatches": false,
+      "thaiIntrusion": false,
+      "reviewedTranslationsAdded": 0
+    },
+    "ar": {
+      "originalSha256": "686e8b0954f5d00f13e4b3db897ef9259572087a55b9d2ca4a4d02497dc0b022",
+      "fullOriginalBodyRead": true,
+      "lines": 111,
+      "c0ControlCharacters": [
+        {
+          "codepoint": "U+0007",
+          "count": 3
+        },
+        {
+          "codepoint": "U+000C",
+          "count": 2
+        }
+      ],
+      "tabCharacters": 5,
+      "berryPhrase": "أصغر عدد صحيح موجب لا يمكن تعريفه بأقل من عشرين كلمة",
+      "berryWhitespaceWords": 11,
+      "berryClaimedWords": 11,
+      "berryCountMatches": true,
+      "thaiIntrusion": false,
+      "reviewedTranslationsAdded": 0
+    }
+  },
+  "scope": "Original ID/RU/AR111 lines each actually read, metadata/four chapters/equations/two full graphs/table/tail. No revision,approval or publication."
+}

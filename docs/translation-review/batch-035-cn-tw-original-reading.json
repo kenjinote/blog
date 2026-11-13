@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:14:28.794219+09:00",
+  "languages": {
+    "zh-cn": {
+      "originalSha256": "96933786a64b88b413225e9959fa0647227e56b2badbc937e8db451936ecfceb",
+      "fullOriginalBodyRead": true,
+      "lines": 111,
+      "c0ControlCharacters": [
+        {
+          "codepoint": "U+0007",
+          "count": 4
+        },
+        {
+          "codepoint": "U+000C",
+          "count": 2
+        }
+      ],
+      "tabCharacters": 6,
+      "berryPhrase": "不能用少于二十个汉字定义的最大正整数",
+      "berryPhraseCodePoints": 18,
+      "originalClaimedCharacters": 14,
+      "berryClaimMatches": false,
+      "koreanNameIntrusion": true,
+      "fractionalPiExampleStartsWithIntegerBits": true,
+      "reviewedTranslationsAdded": 0
+    },
+    "zh-tw": {
+      "originalSha256": "41c21f39dc73714f4909b9543d96a6478906de4a85125f1ee88d6d9e991d9b96",
+      "fullOriginalBodyRead": true,
+      "lines": 111,
+      "c0ControlCharacters": [
+        {
+          "codepoint": "U+0007",
+          "count": 4
+        },
+        {
+          "codepoint": "U+000C",
+          "count": 2
+        }
+      ],
+      "tabCharacters": 6,
+      "berryPhrase": "不能用少於二十個漢字定義的最大正整數",
+      "berryPhraseCodePoints": 18,
+      "originalClaimedCharacters": 14,
+      "berryClaimMatches": false,
+      "koreanNameIntrusion": false,
+      "fractionalPiExampleStartsWithIntegerBits": true,
+      "reviewedTranslationsAdded": 0
+    }
+  },
+  "scope": "Full original CN/TW111lines each actually read; original bytes counted, no revision or approval. Initial audit retained immutable."
+}

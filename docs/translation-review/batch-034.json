@@ -971,5 +971,37 @@
     ],
     "publicationPending": true,
     "scope": "All13 original/revised article bodies read,12 immutable AI entries. Fresh R3 includes existing Hindi taxonomy frontmatter; first directed-only graph count assertion and R2 omitted preview tag aliases retained as harness/assembly failures. Exact source/code/output/math/prose and static Arabic16LTR/RTL/CSS. Prior independent finite evidence referenced, not rerun or all-input/full QR/LDPC/Polar/hardware/benchmark certification. Local455articles+3tags pass,471filesystem reads/HTTP0. Live verification awaits matching CI build/deploy success; goal remains active."
+  },
+  "publicationDispatch": {
+    "version": 1,
+    "observedAt": "2026-11-13T23:04:20.985251+09:00",
+    "deployedCommitExpected": "2739fdd698dab528d8ca5b047b1e126be8c180f2",
+    "ciRun": 43439178526,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43439178526",
+    "runAttempt": 1,
+    "statusAtDispatch": "in_progress",
+    "conclusionAtDispatch": null,
+    "pagesPlanned": 455,
+    "translationsPlanned": 420,
+    "japaneseSourcesPlanned": 35,
+    "mathVersionsPlanned": 260,
+    "texExpressionsPlanned": 14315,
+    "additionalHindiTaxonomyUrlsPlanned": 3,
+    "publicationPending": true,
+    "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_420.py",
+    "probeSha256": "8060a7eb6d156e5405de70c9a7aaff22a7b7fa619ceb53eb4d6745d0e63182f2",
+    "jobsObserved": [
+      {
+        "name": "build",
+        "status": "in_progress",
+        "conclusion": null,
+        "started_at": "2026-11-13T14:03:47Z",
+        "completed_at": null,
+        "activeSteps": [
+          "Checkout"
+        ]
+      }
+    ],
+    "scope": "Ordinary push after fetch zero incoming/18 outgoing; matching head/run observed. Live455article+3tag checks await build/deploy success. Local455+3pass/471reads/HTTP0; prior442checks retained."
   }
 }

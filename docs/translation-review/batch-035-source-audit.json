@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:07:53.108104+09:00",
+  "baselineCommit": "2739fdd698dab528d8ca5b047b1e126be8c180f2",
+  "article": "kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness",
+  "versions": {
+    "ar": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ar.md",
+      "sha256": "686e8b0954f5d00f13e4b3db897ef9259572087a55b9d2ca4a4d02497dc0b022",
+      "lines": 111,
+      "utf8BytesNormalizedLf": 15795,
+      "h2Headings": [
+        "## مقدمة: لغز السلاسل الثلاث ذات المليون بت — النقطة العمياء في نظرية شانون",
+        "## 1. تعقيد كولموغوروف $K(x)$ ومبرهنة اللاتغير لآلة تورينغ الكونية",
+        "## 2. جوهر العشوائية: مبدأ برج الحمام، عدم القابلية للضغط، وعشوائية مارتن-لوف",
+        "## 3. مفارقة بيري، عدم قابلية $K(x)$ للحساب، ثابت تشايتين $\\Omega$، والذكاء الاصطناعي الحديث"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 10,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.de.md",
+      "sha256": "6119aae7c354bab41fb9113424cf8b25d597c775e899e610425de5ca86154b99",
+      "lines": 111,
+      "utf8BytesNormalizedLf": 12410,
+      "h2Headings": [
+        "## Einleitung: Das Rätsel dreier Ein-Millionen-Bit-Strings — Der blinde Fleck der Shannon-Informationstheorie",
+        "## 1. Die Kolmogorow-Komplexität $K(x)$ und der Invarianzsatz für universelle Turingmaschinen",
+        "## 2. Das Wesen des Zufalls: Schubfachprinzip, Inkompressibilität und Martin-Löf-Zufälligkeit",
+        "## 3. Das Berry-Paradoxon, die Unberechenbarkeit von $K(x)$, Chaitins $\\Omega$ und moderne KI"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 10,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.en.md",
+      "sha256": "a429c7ca5b6788467a2eeb9cadba7da876dfc8a510679d61e148adf05d499464",
+      "lines": 537,
+      "utf8BytesNormalizedLf": 61273,
+      "h2Headings": [
+        "## 1. Three 1,000,000-Bit Strings and the Paradox of Intuition",
+        "## 2. The Scope and Limits of Shannon Information Theory: From Ensemble Distributions to Individual Objects",
+        "## 3. Rigorous Definition of Kolmogorov Complexity and the Invariance Theorem",
+        "## 4. The True Nature of Randomness: The Pigeonhole Principle, Incompressibility, and Martin-Löf Randomness",
+        "## 5. The Abyss of Uncomputability: Berry's Paradox, the Halting Problem, Chaitin's Incompleteness Theorem, and $\\Omega$",
+        "## 6. From Uncomputable Ideal to Practical Science: Shannon Bridges, Solomonoff Induction, MDL, NCD, and Modern AI (LLMs)",
+        "## 7. Conclusion: To Understand Is to Compress"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 94,
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.es.md",
+      "sha256": "6d54652c2289cfe38bbb15d731aa5df8ed542f6dca1824eeccd245ba6be19d52",
+      "lines": 111,
+      "utf8BytesNormalizedLf": 12514,
+      "h2Headings": [
+        "## Introducción: El enigma de las tres cadenas de un millón de bits — El punto ciego de la teoría de Shannon",
+        "## 1. La complejidad de Kolmogórov $K(x)$ y el teorema de invariancia",
+        "## 2. La esencia del azar: Principio del palomar, incompresibilidad y aleatoriedad de Martin-Löf",
+        "## 3. Paradoja de Berry, incomputabilidad de $K(x)$, constante $\\Omega$ de Chaitin e IA moderna"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 10,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.fr.md",
+      "sha256": "db12857360f5e19d4ce8efd034e84ed79172e50306a5bc26d722afb7fc04a108",
+      "lines": 111,
+      "utf8BytesNormalizedLf": 12748,
+      "h2Headings": [
+        "## Introduction : L'énigme des trois chaînes d'un million de bits — L'angle mort de la théorie de Shannon",
+        "## 1. La complexité de Kolmogorov $K(x)$ et le théorème d'invariance",
+        "## 2. L'essence du hasard : Principe des tiroirs, incompressibilité et aléatoire de Martin-Löf",
+        "## 3. Paradoxe de Berry, incomputabilité de $K(x)$, constante $\\Omega$ de Chaitin et IA moderne"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 10,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.hi.md",
+      "sha256": "ce155960040ab2120e2949270d968761d4bdcf341fcf95b56cacaa59324f8560",
+      "lines": 111,
+      "utf8BytesNormalizedLf": 24175,
+      "h2Headings": [
+        "## प्रस्तावना: दस लाख बिट वाली तीन स्ट्रिंग्स की पहेली — शैनन सूचना सिद्धांत का अंधबिंदु",
+        "## 1. कोलमोगोरोव जटिलता $K(x)$ और सार्वभौमिक ट्यूरिंग मशीन का निश्चरता प्रमेय",
+        "## 2. यादृच्छिकता का स्वरूप: कपोत-कोष्ठ सिद्धांत, असंपीड्यता और मार्टिन-लोफ यादृच्छिकता",
+        "## 3. बेरी विरोधाभास, $K(x)$ की अकलनीयता, चैतिन का स्थिरांक $\\Omega$ और आधुनिक AI"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 10,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.id.md",
+      "sha256": "f89eb2030513dbfbe4b43199eb35ea82288a07f02960ebbe0e8134471944f64c",
+      "lines": 111,
+      "utf8BytesNormalizedLf": 12406,
+      "h2Headings": [
+        "## Pendahuluan: Teka-teki Tiga String Satu Juta Bit — Titik Buta Teori Informasi Shannon",
+        "## 1. Kompleksitas Kolmogorov $K(x)$ dan Teorema Invariansi Mesin Turing Universal",
+        "## 2. Hakikat Keacakan: Prinsip Sarang Merpati, Ketakterkompresian, dan Keacakan Martin-Löf",
+        "## 3. Paradoks Berry, Ketakterkomputasian $K(x)$, Konstanta $\\Omega$ Chaitin, dan AI Modern"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 10,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+      "sha256": "a304b83d4ec1c1308065a4c32f0535fe1c1924609cd714bd688098ff319173be",
+      "lines": 569,
+      "utf8BytesNormalizedLf": 77239,
+      "h2Headings": [
+        "## 1. 3つの「100万ビットの文字列」と直感のパラドックス",
+        "## 2. シャノン情報理論の射程と限界——「集合の確率」から「個別の対象」へ",
+        "## 3. コルモゴロフ複雑性の厳密な定義と普遍性定理（不変性定理）",
+        "## 4. ランダムの正体——鳩の巣原理・非圧縮性・マルティン＝レーフのランダム性",
+        "## 5. 計算不可能性の深淵——ベリーのパラドックス・停止問題・チャイティンの不完全性定理と $\\Omega$",
+        "## 6. 計算不可能な理想から実用科学へ——シャノン理論との架け橋・MDL原理・NCD・現代AI（LLM）の本質",
+        "## 7. おわりに——「理解する」とは「圧縮する」ことである"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "python",
+        "python",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 90,
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ko.md",
+      "sha256": "eb1a437a392ab8218e9e2680b2d59894c4fbfdf1655eb0ba8aafa54d315ed0af",
+      "lines": 111,
+      "utf8BytesNormalizedLf": 14906,
+      "h2Headings": [
+        "## 서론: 백만 비트짜리 세 문자열의 수수께끼 — 섀넌 정보이론의 사각지대",
+        "## 1. 콜모고로프 복잡성 $K(x)$와 보편 튜링 기계의 불변성 정리",
+        "## 2. 무작위성의 정체: 비둘기집 원리, 비압축성과 마르틴-뢰프 무작위성",
+        "## 3. 베리 역설, 계산 불가능성과 차이틴 정지 확률 $\\Omega$, 그리고 현대 AI 압축 법칙"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 10,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.pt.md",
+      "sha256": "5c938b931988c4078fd7e087c42cf5396eef42c5052325e7914d697174fdfd70",
+      "lines": 111,
+      "utf8BytesNormalizedLf": 12362,
+      "h2Headings": [
+        "## Introdução: O Enigma das Três Strings de Um Milhão de Bits — O Ponto Cego da Teoria de Shannon",
+        "## 1. A Complexidade de Kolmogorov $K(x)$ e o Teorema da Invariância",
+        "## 2. A Essência do Acaso: Princípio da Casa dos Pombos, Incompressibilidade e Aleatoriedade de Martin-Löf",
+        "## 3. Paradoxo de Berry, Incomputabilidade de $K(x)$, Constante $\\Omega$ de Chaitin e IA Moderna"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 10,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ru.md",
+      "sha256": "d6c08a70f02227c57bc41f53c6e746fa9626671ca797b18975726d77e18079a6",
+      "lines": 111,
+      "utf8BytesNormalizedLf": 18595,
+      "h2Headings": [
+        "## Введение: Загадка трёх строк длиной в миллион бит — Слепое пятно теории информации Шеннона",
+        "## 1. Колмогоровская сложность $K(x)$ и теорема об инвариантности",
+        "## 2. Природа случайности: принцип Дирихле, несжимаемость и случайность по Мартин-Лёфу",
+        "## 3. Парадокс Берри, невычислимость $K(x)$, константа Хайтина $\\Omega$ и современный ИИ"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 10,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.zh-cn.md",
+      "sha256": "96933786a64b88b413225e9959fa0647227e56b2badbc937e8db451936ecfceb",
+      "lines": 111,
+      "utf8BytesNormalizedLf": 13136,
+      "h2Headings": [
+        "## 引言：三个一百万比特字符串的谜题——香农信息论的盲区",
+        "## 1. 柯尔莫哥洛夫复杂性 $K(x)$ 与普适图灵机的不变性定理",
+        "## 2. 随机性的正体：鸽巢原理、不可压缩性与马丁-洛夫随机",
+        "## 3. 贝里悖论、不可计算性与蔡廷停机概率 $\\Omega$ 及现代 AI 压缩律"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 10,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.zh-tw.md",
+      "sha256": "41c21f39dc73714f4909b9543d96a6478906de4a85125f1ee88d6d9e991d9b96",
+      "lines": 111,
+      "utf8BytesNormalizedLf": 13091,
+      "h2Headings": [
+        "## 引言：三個一百萬位元字串的謎題——香農資訊理論的盲區",
+        "## 1. 柯爾莫哥洛夫複雜性 $K(x)$ 與通用圖靈機的不變性定理",
+        "## 2. 隨機性的正體：鴿巢原理、不可壓縮性與馬丁-洛夫隨機",
+        "## 3. 貝里悖論、不可計算性與蔡廷停機機率 $\\Omega$ 及現代 AI 壓縮律"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid"
+      ],
+      "displayMathDelimiters": 10,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    }
+  },
+  "assets": [
+    {
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/eyecatch.jpg",
+      "bytes": 1059833,
+      "sha256": "781704f813430931889120a1a172ba0ef41bd5b299b347c4f14091e189b2721c",
+      "visuallyRead": false
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "scope": "Initial original-source inventory. JA full original1–240,241–475,476–end and EN1–220,221–460,461–end actually read. Other11 bodies unread. No revision,translation approval,build or publication certification."
+}

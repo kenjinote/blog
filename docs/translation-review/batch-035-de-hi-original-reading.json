@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:17:04.123471+09:00",
+  "languages": {
+    "de": {
+      "originalSha256": "6119aae7c354bab41fb9113424cf8b25d597c775e899e610425de5ca86154b99",
+      "fullOriginalBodyRead": true,
+      "lines": 111,
+      "c0ControlCharacters": [
+        {
+          "codepoint": "U+0007",
+          "count": 3
+        },
+        {
+          "codepoint": "U+000C",
+          "count": 2
+        }
+      ],
+      "tabCharacters": 6,
+      "berryPhrase": "Die kleinste positive ganze Zahl, die sich nicht mit weniger als zwanzig Wörtern beschreiben lässt",
+      "berryWhitespaceWords": 15,
+      "berryClaimedWords": 15,
+      "berryCountMatches": true,
+      "reviewedTranslationsAdded": 0
+    },
+    "hi": {
+      "originalSha256": "ce155960040ab2120e2949270d968761d4bdcf341fcf95b56cacaa59324f8560",
+      "fullOriginalBodyRead": true,
+      "lines": 111,
+      "c0ControlCharacters": [
+        {
+          "codepoint": "U+0007",
+          "count": 3
+        },
+        {
+          "codepoint": "U+000C",
+          "count": 2
+        }
+      ],
+      "tabCharacters": 5,
+      "berryPhrase": "वह सबसे छोटा धनात्मक पूर्णांक जिसे बीस से कम शब्दों में परिभाषित नहीं किया जा सकता",
+      "berryWhitespaceWords": 16,
+      "berryClaimedWords": 14,
+      "berryCountMatches": false,
+      "reviewedTranslationsAdded": 0
+    }
+  },
+  "scope": "Original DE/HI111 lines each actually read, metadata/four chapters/equations/two full graphs/table/tail. No revision,approval or publication."
+}

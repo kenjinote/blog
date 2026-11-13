@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:15:18.984071+09:00",
+  "languages": {
+    "es": {
+      "originalSha256": "6d54652c2289cfe38bbb15d731aa5df8ed542f6dca1824eeccd245ba6be19d52",
+      "fullOriginalBodyRead": true,
+      "lines": 111,
+      "c0ControlCharacters": [
+        {
+          "codepoint": "U+0007",
+          "count": 3
+        },
+        {
+          "codepoint": "U+000C",
+          "count": 2
+        }
+      ],
+      "tabCharacters": 5,
+      "berryPhrase": "el menor entero positivo que no puede definirse en menos de veinte palabras",
+      "berryWhitespaceWords": 13,
+      "berryCountScope": "ES claim14; KO says about10, so do not assign ES count error to KO.",
+      "reviewedTranslationsAdded": 0
+    },
+    "ko": {
+      "originalSha256": "eb1a437a392ab8218e9e2680b2d59894c4fbfdf1655eb0ba8aafa54d315ed0af",
+      "fullOriginalBodyRead": true,
+      "lines": 111,
+      "c0ControlCharacters": [
+        {
+          "codepoint": "U+0007",
+          "count": 4
+        },
+        {
+          "codepoint": "U+000C",
+          "count": 2
+        }
+      ],
+      "tabCharacters": 6,
+      "berryPhrase": "스무 단어 미만으로 정의할 수 없는 가장 작은 양의 정수",
+      "berryWhitespaceWords": 10,
+      "berryCountScope": "ES claim14; KO says about10, so do not assign ES count error to KO.",
+      "reviewedTranslationsAdded": 0
+    }
+  },
+  "scope": "Original ES/KO111 lines each actually read, metadata/four chapters/equations/two full graphs/table/tail. No revision,approval or publication."
+}

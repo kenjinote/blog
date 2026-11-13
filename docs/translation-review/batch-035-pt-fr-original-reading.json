@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:16:10.847744+09:00",
+  "languages": {
+    "pt": {
+      "originalSha256": "5c938b931988c4078fd7e087c42cf5396eef42c5052325e7914d697174fdfd70",
+      "fullOriginalBodyRead": true,
+      "lines": 111,
+      "c0ControlCharacters": [
+        {
+          "codepoint": "U+0007",
+          "count": 3
+        },
+        {
+          "codepoint": "U+000C",
+          "count": 2
+        }
+      ],
+      "tabCharacters": 5,
+      "berryPhrase": "o menor inteiro positivo que não pode ser definido em menos de vinte palavras",
+      "berryWhitespaceWords": 14,
+      "berryClaimedWords": 15,
+      "berryCountMatches": false,
+      "reviewedTranslationsAdded": 0
+    },
+    "fr": {
+      "originalSha256": "db12857360f5e19d4ce8efd034e84ed79172e50306a5bc26d722afb7fc04a108",
+      "fullOriginalBodyRead": true,
+      "lines": 111,
+      "c0ControlCharacters": [
+        {
+          "codepoint": "U+0007",
+          "count": 3
+        },
+        {
+          "codepoint": "U+000C",
+          "count": 2
+        }
+      ],
+      "tabCharacters": 5,
+      "berryPhrase": "le plus petit entier positif non définissable en moins de vingt mots",
+      "berryWhitespaceWords": 12,
+      "berryClaimedWords": 14,
+      "berryCountMatches": false,
+      "reviewedTranslationsAdded": 0
+    }
+  },
+  "scope": "Original PT/FR111 lines each actually read, metadata/four chapters/equations/two full graphs/table/tail. No revision,approval or publication."
+}
