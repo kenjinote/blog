@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "allPassed": false,
+  "stage": "Hindi taxonomy alias assertion after article checks and 17 tests passed",
+  "error": "FileNotFoundError: fresh preview copied post bundles but omitted existing content/tags Hindi alias frontmatter",
+  "articleContentChanged": false,
+  "passedBeforeFailure": [
+    "13 article static/code checks",
+    "1983 multilingual pages",
+    "3616 HTTPS HTML/41XML",
+    "17 unit tests",
+    "ledger420/12612"
+  ],
+  "scope": "Preview assembly omission, not a missing production alias. Initial/R2 helpers/builds/language outputs retained."
+}

@@ -1,0 +1,757 @@
+{
+  "version": 1,
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "en",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.en.md",
+      "sha256": "88cbf21db2e8ea26add38d3ff0b2ba4cda320056467c269a980ca5b3e20aceb4",
+      "texExpressions": 272,
+      "displayMath": 55,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "proseFragmentsPreserved": 324,
+      "passed": true
+    },
+    {
+      "language": "ja",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "sha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "texExpressions": 435,
+      "displayMath": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "proseFragmentsPreserved": 371,
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.zh-cn.md",
+      "sha256": "bb22d6c92e699f6ca2a5e815e17965fb4b5cbdb9d4330c4467d6313659607974",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "fa74c2128c90da01d086dd897cf2eb3f7e2474c3b425f45b1b4d171e36653a19",
+      "texExpressions": 258,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 224,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.zh-tw.md",
+      "sha256": "b476e7257a9f97ce8234fd00ea14332d7a229b2c6b82cfafba52eaa571d08e94",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "a3f51c0b0013fd9f5cdc3980b9496f7e1dfe21f6843b05ba9bb56f18709defd7",
+      "texExpressions": 258,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 222,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.es.md",
+      "sha256": "70fb6781b4cae885dafb4ff7036416b1763d5c7ffab7860083b73320740e2131",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "0ca348ac5a91dd386be07771f7eb7143c27bd8d4a865e13fe12c9e826ac30a69",
+      "texExpressions": 255,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 322,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ko.md",
+      "sha256": "7cba0f14142481880b017f7abd70d1bfc6e3d0268fbf1813c6a49b43b1f69da1",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "589424e413ff463a5ac08566df27df1153e03d4576fda301fb70aa498e0faa67",
+      "texExpressions": 255,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 245,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.pt.md",
+      "sha256": "d577a7e458d181b4b8855b29127ed09c175494f4bbc6e02f03b23d4b7bfba7ee",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "e6ecce303c95227263cae24041c669a4a8dbf5659a463a920b8509e32422ab5a",
+      "texExpressions": 255,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 318,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.fr.md",
+      "sha256": "066bc9ff0e85b89fdb3e476bd88b6f6abf6ccc233339b4d6380145449aae627c",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "57e2bb079b40e629d575429c3ec6785bcb4a13c200f807b61413d8e07852fb5a",
+      "texExpressions": 256,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 327,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    },
+    {
+      "language": "de",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.de.md",
+      "sha256": "24053df6f66e2cbb6a110d22ad58d1ca2b1c2b25ec04328801444f69d5d17f34",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "723d27c7a53e5bc74eccc73715f8a96e8948160950ba0b7def5637ce43478f4e",
+      "texExpressions": 255,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 324,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.hi.md",
+      "sha256": "13a8fa6b8973734bfd1d7a7aac578693e5c567a4f39359bc7777d4bc2d92af2b",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "0f6a79597f9b538ecfa4df8a46c46148b509675f035f31ad2a2009b2451ae33d",
+      "texExpressions": 257,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 307,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.id.md",
+      "sha256": "d24cbcb50afabe4a8c361506784f81391194bac32dcbf5d8f6a808d034fb7f45",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "8d65ed2b0e97b7e1bee3881f42d63539f1a986a42fa472d2faaabdd6682bf830",
+      "texExpressions": 255,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 319,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ru.md",
+      "sha256": "908ca118a58b089ff9cdbb9f24ab31d221b1b77c3c9ea3cc7c332c37463b9299",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "46a799cdf5b4b56e58ceaea3edf1c4febdcba8690edba4a411aba63d7f0f8014",
+      "texExpressions": 256,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 315,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ar.md",
+      "sha256": "e0a7bceebb8850b25b18edf369a175990b9568d1ebe6f267739fee3e14158683",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "f551e98b99e1d4198ad2ea1879d93372044df877a3e2df16004e888d46cf7095",
+      "texExpressions": 255,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 300,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true,
+      "arabicDirection": {
+        "htmlLang": "ar",
+        "htmlDirection": "rtl",
+        "inlineCodeIsolates": 16,
+        "sourceAndHtmlIsolatesExact": true,
+        "compiledCssMathAndCodeLtr": true,
+        "compiledCssMathUnicodeIsolate": true,
+        "scope": "Static generated HTML and linked compiled CSS; no visual/browser/KaTeX/Mermaid runtime certification."
+      }
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true
+}

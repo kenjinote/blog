@@ -939,5 +939,37 @@
       "publicationPending": true
     }
   ],
-  "publicationPending": true
+  "publicationPending": true,
+  "finalAssembly": {
+    "checkedAt": "2026-11-13T23:03:15.404245+09:00",
+    "validation": "docs/translation-review/batch-034-final-r3-validation.json",
+    "checks": "docs/translation-review/batch-034-final-r3-checks.json",
+    "allOriginalAndTranslationBodiesRead": true,
+    "languages": 13,
+    "texExpressions": 3522,
+    "coreDisplayBlocksEach": 47,
+    "diagrams": 52,
+    "graphEdges": 403,
+    "referencesEach": 10,
+    "articlePrograms": 13,
+    "proseFragmentsPreserved": 3918,
+    "unitTestsPassed": 17,
+    "actualPreviewBundles": 35,
+    "sourceSnapshotsExact": 455,
+    "additionalTaxonomyFrontmatterPreserved": true,
+    "multilingualPages": 1983,
+    "httpsHtmlPages": 3618,
+    "httpsXmlFiles": 41,
+    "reviewedTranslationsTotal": 420,
+    "unreviewedTranslations": 12612,
+    "humanReviews": 0,
+    "publicationProbePreparation": "docs/translation-review/batch-034-probe-preparation.json",
+    "publicationProbeLocalCheck": "docs/translation-review/batch-034-probe-local-structure.json",
+    "preservedAssemblyFailures": [
+      "docs/translation-review/batch-034-final-initial-failure.json",
+      "docs/translation-review/batch-034-final-r2-failure.json"
+    ],
+    "publicationPending": true,
+    "scope": "All13 original/revised article bodies read,12 immutable AI entries. Fresh R3 includes existing Hindi taxonomy frontmatter; first directed-only graph count assertion and R2 omitted preview tag aliases retained as harness/assembly failures. Exact source/code/output/math/prose and static Arabic16LTR/RTL/CSS. Prior independent finite evidence referenced, not rerun or all-input/full QR/LDPC/Polar/hardware/benchmark certification. Local455articles+3tags pass,471filesystem reads/HTTP0. Live verification awaits matching CI build/deploy success; goal remains active."
+  }
 }

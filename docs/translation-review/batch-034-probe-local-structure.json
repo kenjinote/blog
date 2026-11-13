@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:02:33.623529+09:00",
+  "helper": "C:\\Users\\kenjinote\\.codex\\tmp\\verify_review_publication_420.py",
+  "helperSha256": "8060a7eb6d156e5405de70c9a7aaff22a7b7fa619ceb53eb4d6745d0e63182f2",
+  "articlePages": 455,
+  "articlePassed": 455,
+  "taxonomyPages": 3,
+  "taxonomyPassed": 3,
+  "allPassed": true,
+  "htmlLineEndingsNormalized": true,
+  "fileReads": 471,
+  "httpRequests": 0,
+  "failures": [],
+  "scope": "First034 local attempt. Carries prior030R2 HTML-only CRLF normalization;binary GIF bytes unchanged. Actual helper check/check_tag against fresh35bundle generated files using filesystem-only urlopen stub.455article cases and3Hindi tag cases plus13GIF reads. Retains prior442articlechecks. No liveHTTP/status/CI/browser certification."
+}

@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "allPassed": false,
+  "stage": "JA graph edge assertion before language checks",
+  "error": "AssertionError: directed-only count omitted nine undirected LDPC --- edges",
+  "articleContentChanged": false,
+  "scope": "Harness assertion error; initial build and helper retained. No semantic approval or publication."
+}

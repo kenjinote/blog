@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T23:00:27.963317+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ru",
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ru.md",
+      "sha256": "908ca118a58b089ff9cdbb9f24ab31d221b1b77c3c9ea3cc7c332c37463b9299",
+      "sourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "originalSha256": "46a799cdf5b4b56e58ceaea3edf1c4febdcba8690edba4a411aba63d7f0f8014",
+      "texExpressions": 256,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagrams": 4,
+      "diagramEdges": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "references": 10,
+      "articleExecutablePrograms": 1,
+      "executableCodeSha256": "048b0b0186712a32504bf33950f51ba231ef35e0f7156efc34579df4e12887b4",
+      "programExitCode": 0,
+      "stdout": "Hamming no-error/single-error cases: 128\nGF(256) evaluation codeword: [77, 162, 167, 64, 87, 173, 26, 217, 215, 33, 189, 173, 212, 41, 124]\nRS corrupted symbols: 0 recovered: VOYAGER-1\nRS corrupted symbols: 1 recovered: VOYAGER-1\nRS corrupted symbols: 2 recovered: VOYAGER-1\nRS corrupted symbols: 3 recovered: VOYAGER-1\nBeyond-radius example returns another nearby codeword: True\n",
+      "stderr": "",
+      "displayedOutputExact": true,
+      "codeAndOutputHtmlExact": true,
+      "mathHtmlExact": true,
+      "proseFragmentsPreserved": 315,
+      "zeroInverseRejected": true,
+      "oldEvaluationPointCases": [
+        {
+          "pattern": "initial",
+          "errors": 0
+        },
+        {
+          "pattern": "initial",
+          "errors": 1
+        },
+        {
+          "pattern": "initial",
+          "errors": 2
+        },
+        {
+          "pattern": "initial",
+          "errors": 3
+        },
+        {
+          "pattern": "scattered",
+          "errors": 0
+        },
+        {
+          "pattern": "scattered",
+          "errors": 1
+        },
+        {
+          "pattern": "scattered",
+          "errors": 2
+        },
+        {
+          "pattern": "scattered",
+          "errors": 3
+        }
+      ],
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "passed": true
+    }
+  ],
+  "frozenSourceUnchanged": true,
+  "priorRegisteredTranslationHashesUnchanged": {
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.en.md": "88cbf21db2e8ea26add38d3ff0b2ba4cda320056467c269a980ca5b3e20aceb4",
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.zh-cn.md": "bb22d6c92e699f6ca2a5e815e17965fb4b5cbdb9d4330c4467d6313659607974",
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.zh-tw.md": "b476e7257a9f97ce8234fd00ea14332d7a229b2c6b82cfafba52eaa571d08e94",
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.es.md": "70fb6781b4cae885dafb4ff7036416b1763d5c7ffab7860083b73320740e2131",
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ko.md": "7cba0f14142481880b017f7abd70d1bfc6e3d0268fbf1813c6a49b43b1f69da1",
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.pt.md": "d577a7e458d181b4b8855b29127ed09c175494f4bbc6e02f03b23d4b7bfba7ee",
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.fr.md": "066bc9ff0e85b89fdb3e476bd88b6f6abf6ccc233339b4d6380145449aae627c",
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.de.md": "24053df6f66e2cbb6a110d22ad58d1ca2b1c2b25ec04328801444f69d5d17f34",
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.hi.md": "13a8fa6b8973734bfd1d7a7aac578693e5c567a4f39359bc7777d4bc2d92af2b",
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.id.md": "d24cbcb50afabe4a8c361506784f81391194bac32dcbf5d8f6a808d034fb7f45",
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ru.md": "908ca118a58b089ff9cdbb9f24ab31d221b1b77c3c9ea3cc7c332c37463b9299",
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ar.md": "e0a7bceebb8850b25b18edf369a175990b9568d1ebe6f267739fee3e14158683"
+  },
+  "priorCandidateFiniteEvidence": "docs/translation-review/batch-034-candidate-code-validation.json",
+  "priorJapaneseArithmeticEvidence": "docs/translation-review/batch-034-ja-validation-r4.json",
+  "priorEnglishAuxiliaryEvidence": "docs/translation-review/batch-034-ja-en-validation-r2.json",
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "limitations": [
+    "One selected static/finite check,not semantic approval; actual original/revised full reading is separately recorded.",
+    "Prior registered source/translation hashes unchanged; earlier full checks referenced,not rerun.",
+    "No native-speaker/browser/KaTeX/Mermaid execution,whole-site,hardware,all-input,full QR/LDPC/Polar or benchmark certification."
+  ]
+}
