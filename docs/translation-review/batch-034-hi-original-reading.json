@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T22:18:03.433236+09:00",
+  "language": "hi",
+  "reviewer": "Codex (AI)",
+  "stage": "original full reading and finite reproduction, not completed translation review",
+  "originalPath": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.hi.md",
+  "originalSha256": "0f6a79597f9b538ecfa4df8a46c46148b509675f035f31ad2a2009b2451ae33d",
+  "frozenJapaneseSourceSha256": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+  "allOriginalBodyRead": true,
+  "originalLines": 240,
+  "originalChapters": 7,
+  "originalDisplayEquations": 8,
+  "originalDiagrams": 2,
+  "originalExecutablePrograms": 1,
+  "revisedBodyWritten": false,
+  "revisedBodyRead": false,
+  "reviewedTranslationsAdded": 0,
+  "humanReviewsAdded": 0,
+  "findings": [
+    "Description explicitly assigns Neptune images to Voyager1;correct route is Voyager1Jupiter/SaturnandVoyager2continuesUranus/Neptune,peralready documentedprimaryreading.",
+    "Bothmissions/currentdistance/currentpower,10^-16W=0.1aWconversion,QRarbitrary30percentarea/10msandabsolutezeroerrorclaimsrequirecorrection.",
+    "Allmemorylesschannelspositivecapacity,inputconstraints,AWGNwidebandversusuniversalphysicalconstant,finite/asymptoticandsymmetriccapacity,SC-SCLlistfactorandallhardware/adoptionclaimsscopesneedcorrection.",
+    "ExistingHindiमिटावcanserveerasures;defineknownpositionlossversusunknownpositionerror,andfinitefieldपरिमितक्षेत्रwithalgebraicmeaning.Matrixस्तंभcolumnandपंक्तिrowmustremainconsistentwithsyndromelookup.",
+    "OriginalGF256alreadyuses0x11D;unmodifiedprogramexit0,inv0returns1,255nonzeroinversespass,fixedradius3selected0..2StopIteration,3recovers,4returnswrongmessage.",
+    "OriginalhasnodisplayedoutputblockandnoexplicitextraXForneyformula;donotassignJA/ENspecificGF257/output/factorfindingstoHindi.",
+    "Originalp in(0,0.5)isunambiguousdotdecimal;donotassignSpanish/FrenchdecimalintervalfindingtoHindi.",
+    "OriginalHammingsyndromepositionstatementisconditionalonbinarycolumnorder;newexplanationmustdistinguishsystematicmatrixlookupwithoutinventinganonexistentunconditionalstatement.",
+    "Oldlength5heading/Hamming1011/syndrome011/zero-basedindex2andalpha-pointscattered1/6/13examplesmustremainexplained.",
+    "Originalhasnoexternalreferencelist;frozencorrectedJAhas10scopedreferencesand47coredisplayequations/4graphs/8themes,whichmustallbetranslated/read."
+  ],
+  "codeProbe": "docs/translation-review/batch-034-hi-original-code-probe.json",
+  "nextAction": "Author full Hindi8theme revision with47localizeddisplayequations,allgraphs/table/sharededucationalcode/output/references;readactualrevisedbodycompletely,validatefreshHTMLandfinitecases,thenrecordonlyifpassed.",
+  "limitations": [
+    "Original reading and selected finite reproduction only;no Hindi semantic approval, revised content/build check, native-speaker/browser/runtime/hardware/full-paper certification.",
+    "Prior Japanese/primary reading scopes retained;no new external research or full-paper reading claimed.",
+    "Four translations remain unreviewed:Hindioriginalnowread;Indonesian,Russian,Arabicbodiesnotread.B034publicationandwholegoalpending."
+  ]
+}

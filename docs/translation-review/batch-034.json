@@ -620,6 +620,19 @@
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 4,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-13",
+      "language": "hi",
+      "scope": "Original full reading and selected code reproduction only",
+      "evidence": "docs/translation-review/batch-034-hi-original-reading.json",
+      "originalBodyRead": true,
+      "revisedBodyWritten": false,
+      "revisedBodyRead": false,
+      "reviewedTranslationsAdded": 0,
+      "reviewedTranslationsTotal": 416,
+      "unreviewedTranslations": 12616,
+      "publicationPending": true
     }
   ],
   "publicationPending": true
