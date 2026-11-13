@@ -1294,8 +1294,9 @@
     "initialArabicVerifierFailurePreserved": "docs/translation-review/batch-033-ar-checks.json",
     "publicationProbePreparation": "docs/translation-review/batch-033-probe-preparation.json",
     "publicationProbeLocalCheck": "docs/translation-review/batch-033-probe-local-structure.json",
-    "publicationPending": true,
-    "scope": "All13completeold/revisedbodiesreadand12AIimmutableentries.29exactsharedTeXeach,2completegraphs8+6edges,7BWTrows/literalcode/11primary-officialreferences. Fixedencoder/probability/codeclass/positive-support/iid/stationary/precision/modelsharingconditions explicit. Independentfinite136counting510swap1093BWT650rANSprofiles308096roundtrips166400encodedinverse511rationalinterval andselectedcopy/NLL/IOexamples,notarticleprogramexecution/fullcompressor/benchmark/LLMexperimentalreproduction. OriginalEN18byteexample/CN-TW-DEc100examples preservedwithconditions;DEdecimalMB/bitbyte/roundedboundcorrected. IDRussian/Thaiintrusionsremoved. Arabic113exactLTRsourceHTMLvalues/RTL/linkedCSSstaticallychecked;initialellipsisrenderingfailurepreserved,explicitUnicodeellipsis andfreshR2pass. Fresh34bundle1918multilingualpages/3488HTTPSHTML41XML and17tests pass,existingpartialpreviewwarningsretained. Local442articles+3tags,458filereadsincl13GIF/HTTP0,HTML-onlynewlinenormalization;prior429checksretained. LiveverificationwaitsmatchingCIbuild/deploysuccess;notnative/browser/fullsite/all-inputproof certification."
+    "publicationPending": false,
+    "scope": "All13completeold/revisedbodiesreadand12AIimmutableentries.29exactsharedTeXeach,2completegraphs8+6edges,7BWTrows/literalcode/11primary-officialreferences. Fixedencoder/probability/codeclass/positive-support/iid/stationary/precision/modelsharingconditions explicit. Independentfinite136counting510swap1093BWT650rANSprofiles308096roundtrips166400encodedinverse511rationalinterval andselectedcopy/NLL/IOexamples,notarticleprogramexecution/fullcompressor/benchmark/LLMexperimentalreproduction. OriginalEN18byteexample/CN-TW-DEc100examples preservedwithconditions;DEdecimalMB/bitbyte/roundedboundcorrected. IDRussian/Thaiintrusionsremoved. Arabic113exactLTRsourceHTMLvalues/RTL/linkedCSSstaticallychecked;initialellipsisrenderingfailurepreserved,explicitUnicodeellipsis andfreshR2pass. Fresh34bundle1918multilingualpages/3488HTTPSHTML41XML and17tests pass,existingpartialpreviewwarningsretained. Local442articles+3tags,458filereadsincl13GIF/HTTP0,HTML-onlynewlinenormalization;prior429checksretained. MatchingCIandliveverificationcompletedinpublicationCheckpoints;notnative/browser/fullsite/all-inputproof certification.",
+    "publicationVerifiedBy": "docs/translation-review/publication-033.json"
   },
   "publicationDispatch": {
     "version": 1,
@@ -1332,5 +1333,37 @@
         "activeSteps": []
       }
     ]
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-11-13T17:11:51.508323+09:00",
+      "ciRun": 43229194255,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43229194255",
+      "deployedCommit": "d7988f5d5e76a0b7e4b74997220fc218b3ddfae3",
+      "runAttempt": 1,
+      "ciCompletion": "docs/translation-review/batch-033-ci-completion.json",
+      "proof": "docs/translation-review/publication-033.json",
+      "pages": 442,
+      "passed": 442,
+      "failed": 0,
+      "translations": 408,
+      "japaneseSources": 34,
+      "mathVersions": 247,
+      "texExpressions": 10793,
+      "losslessVersions": 13,
+      "losslessTeX": 377,
+      "losslessDiagrams": 26,
+      "losslessGraphEdges": 182,
+      "losslessReferencesEach": 11,
+      "losslessArticlePrograms": 0,
+      "arabicLosslessLtrValues": 113,
+      "additionalHindiTaxonomyPages": 3,
+      "additionalHindiTaxonomyPassed": 3,
+      "httpPageProbeAttempts": 1,
+      "httpPageRetries": 0,
+      "buildCompletedAt": "2026-11-12T14:00:47Z",
+      "deployCompletedAt": "2026-11-12T14:03:30Z",
+      "scope": "Combined001through033 live442articleURLs+3Hindi tags passedfirstHTTP after matchinghead/attempt/build/deploysuccess. Newlossless13 exactmath/2graphs/7BWTrows/11refs/inlinecode/title/dates/canonical/language/hreflang/sidebar. EN18byteexample/CN-TW-DEc100/DEdecimalMBbitbyte/IDforeignintrusionsremoved/Arabic113exactLTRvaluesandRTL. Prior429articlechecksretained. StaticHTMLaliasnotHTTP301/browsernavigation. Articleprograms0,auxiliaryfinitechecksseparatelyscoped. No remoteprogram/native/browser/fullsite/completeECC-or-compressor/benchmarkcertification. Published408translations34JA;034pre-auditadds0."
+    }
+  ]
 }
