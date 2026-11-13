@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import datetime,timezone,timedelta
 import hashlib,json,os,shutil,subprocess,sys
 root=Path(__file__).resolve().parents[2];d=root/'docs/translation-review'
-lang=sys.argv[1];assert lang in ('zh-cn','zh-tw','es','ko','pt','fr','de')
+lang=sys.argv[1];assert lang in ('zh-cn','zh-tw','es','ko','pt','fr','de','hi')
 base=Path(os.environ['TEMP'])/'kenji-priority-review-20261024'
 content=base/('content-35-bundles-ecc-'+lang);site=base/('public-ecc-'+lang);stem='batch-034-'+lang
 assert not content.exists() and not site.exists() and not (d/(stem+'-checks.json')).exists()

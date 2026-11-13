@@ -325,6 +325,46 @@
         "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
         "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
       ]
+    },
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-13",
+      "reviewer": "Codex (AI)",
+      "source": "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "translationHash": "13a8fa6b8973734bfd1d7a7aac578693e5c567a4f39359bc7777d4bc2d92af2b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Priororiginal-readingstageactuallyreadall240Hindi lines,metadata,7chapters,8displayequations,2fullgraphs,tableandallPython;thatimmutableauditandprobearepreserved.Readactualrevised1–315,316–615,616–852including8themes,47displayequations,4entiregraphs,table,allcodeandactualoutput.Readfinal10replacementclasses(11occurrences)separately.RestoredallfrozenJapanese themesandderivations:channel/BSC/AWGN,distance/erasure/packing/Hammingmatrices,finitefield/Singleton/Lagrange/cyclicForney,LDPC/Polar,applicationsandarchitecture.CorrectedHindi-specificdescriptionassigningNeptuneimagestoVoyager1,plusbothfourplanets/currentdistance/power/10^-16Wconversion,QRarbitrary30percentarea/10ms,absoluteperfectrecovery,positivecapacity/unqualifiedhardware/adoption/limitclaims.No shortenedsummaryorsemanticapprovalinferredfromstructurematching."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "UsedHindiमिटावforknownpositionerasure,परिमित क्षेत्रwithfinitefieldalgebraicdefinition,प्रतीक/बाइट/बिट,गुणांक,बहुपदडिग्रीversusमैट्रिक्सरैंक,पैरिटी-जाँच,स्तंभcolumn/पंक्तिrow,सिंड्रोम,कन्वोल्यूशनल/इंटरलीविंग,सॉफ्ट/हार्डनिर्णय,लॉग-लाइकलीहुडअनुपात,बिलीफप्रोपेगेशन,फ़्रोज़नमान,क्रमिकनिरस्तीकरणSCandसूचीसहितSCL.Finalrevisedreadingcorrectednewdraftगुणात्मक(qualitative)toगुणनात्मक(multiplicative)intwoplaces;notanoldHindierrorclaim.Definedirreducible/systematic,amplitudeversuscodedimension,linearrecurrencerelationversusiteration,andreadoperationversusstudywording.Replacedapproximation-proneआसन्निकwordingwithasymptotic explicitlyasblocklengthtendingtoinfinity.DistinguishedQR8bitwordfromwholeRSword,rateunits,symmetriccapacity,finite/asymptoticandlistfactor.OldHindiunambiguousdotdecimalretained;allunittextandannotationslocalizedincludingstandalonebitunit."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manuallycompared47sharedcoreblockswithlocalizedJapaneseannotationsandbit/channel-use/secondunits;exact47blockCounterandallsourceTeXinactualdecodedHTMLmustmatch.No decimalconversionforHindi.Readn3/generaloddn/retainedn5repetition,BSCentropy/capacity,nonnegativeDMCcapacityandinputconstraints,AWGNpower/noisedensity/rateunits/positiveeta/ln2infimum,distanceallpatternquantifiers/erasures/packing/GHorthogonality/zero-syndromemembership,RSrootbound/Singleton/Lagrange/evaluationn<=qversuscyclicq-1/shortening,explicitj=1S(z)/locatorrecurrence/Forney,LDPCrank/LLR/extrinsic/O(IE),Polaruniforminput/frozenvalues/finiteN/SC-SCLfactor.Oldp in(0,0.5)alreadyunambiguousandoldHsyndromeindexstatementconditionalonbinarycolumnorder;noinventedintervalorunconditionalmatrixmistranslation.OldonlynamesForneywithoutexplicitextraXformula;notassignedENfactorerror.Earlierfinitecandidate/JA/ENevidencereferenced,notrerunorgeneralproofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "UnmodifiedoriginalHindiprogramwasactuallyrunbeforeeditingandimmutableprobe retained:exit0/fullstdout,GF256.inv(0)=1,255nonzeroinversespass,fixedradius3reconstructionthrowsStopIterationontested0/1/2errors,recovers3andreturnswrongmessageon4.OriginalalreadyGF256,notGF257,andhasnodisplayedoutputblock;noinventedwrongdisplayedstdoutfinding.ReadentireactualrevisedsharededucationalGF256codewithbytevalidation,zero-inverserejection,0..tlocatortrials,rankawarerectangularsolver,Q/Eremainder/degree/reencode/distancerule,Hammingcolumnlookup,andbeyondradiusmiscorrection.Newextractedprogramstdoutmatchessource/HTML;zeroinverserejectedand8oldalpha-pointinitial/scattered0..3casesrecover.Earlier65536products/full65536wordcodebook/256receivedvectors/3828singleerror/144seeded/24invalidfinitechecksreferenced,notrerun.Readall4graphs31edges,tableandoutput.Explicitstrongmarkupusedfromdraft;noHindiemphasisfailureclaimed.NofullQR/LDPC/Polar/hardware/spacecraftsoftwareorbenchmarkcertification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Tenofficial/primaryreferencesmatchfrozenJAandactualHTML;earlierselectedpage/abstractscopesretained,nonewcompletepaper/standardreadclaim.OriginalHindihasnoexternalreferencelist,sono unrelatedmislinkremovalclaim.OriginalOct18T08date,slug,imagehash,taxonomypreserved;Nov13lastmodandmermaidflag.Fresh35bundle455exactsnapshotpreviewchecks1983multilingualpages,3616HTTPSHTML41XML,canonical14hreflang13sidebar,andallmath/code/output/graph/prosecontent.Prior17unittestsreferenceJAENR2success,notrerunforcontent-onlyHindi.FrozenJAandpriorEN/CN/TW/ES/KO/PT/FR/DEhashesunchanged;remaining3translationsunreviewed,034publicationandwholegoalpending."
+        }
+      },
+      "summary": "Complete Hindi error-correcting-code review with corrected Voyager attribution, precise finite-field/erasure terminology and verified educational GF256 decoder.",
+      "languageSpecificFindings": "Restored7to8themes,8to47displayblocks,2to4graphs.FixedexplicitVoyager1Neptuneattributionindescription.Usedमिटाव/परिमितक्षेत्र/गुणांक/डिग्री/रैंक/स्तंभ/पंक्तिandSC-SCLwithlistcost.Correctednewdraftmultiplicativetermtoगुणनात्मकintwoplaces,explicitlydefinedamplitudeversusdimension,asymptoticlimitversusapproximation,andreadoperationsversusstudy.NotassignedthoseeditingfindingstooldHindi.Dotdecimaldomainwasalreadyunambiguousandbinarycolumn-orderstatementalreadyconditional.Keptn5repetition,Hamming1011/syndrome011/thirdbitindex2andoldalpha-pointscattered1/6/13case.ReproducedoldGF256inv0andunderradiusfailurewithoutassigningGF257/displayedoutput/explicitForneyextraXerrors.Removedunqualified6GIoTclaim.",
+      "validation": "docs/translation-review/batch-034-hi-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "3 other translations remain unreviewed; reading status is recorded separately.",
+        "Finite educational code/math checks,not all-input theorem proofs,real hardware/spacecraft,full QR/LDPC/Polar software or benchmarks.",
+        "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
+        "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
+      ]
     }
   },
   "stages": [
@@ -632,6 +672,42 @@
       "reviewedTranslationsAdded": 0,
       "reviewedTranslationsTotal": 416,
       "unreviewedTranslations": 12616,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-13",
+      "languagesRead": [
+        "hi"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "validation": "docs/translation-review/batch-034-hi-validation.json",
+      "checks": "docs/translation-review/batch-034-hi-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-034-hi-ledger-validation.json",
+      "texExpressions": 257,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagramsEach": 4,
+      "diagramEdgesEach": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "articleExecutableProgramsEach": 1,
+      "proseFragmentsPreserved": 307,
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 35,
+      "sourceSnapshotsExact": 455,
+      "multilingualPages": 1983,
+      "httpsHtmlPages": 3616,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-034-ja-en-checks-r2.json",
+      "reviewedTranslationsTotal": 417,
+      "unreviewedTranslations": 12615,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 3,
       "publicationPending": true
     }
   ],
