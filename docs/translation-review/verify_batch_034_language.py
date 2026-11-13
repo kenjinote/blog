@@ -10,7 +10,8 @@ shared=pair.shared
 ANNOTATIONS={'zh-cn':{'だが同時に':'但同时','2元符号では ':'对于二元码：',' の位':' 位'},
              'zh-tw':{'だが同時に':'但同時','2元符号では ':'對二元碼：',' の位':' 位'},
              'es':{'だが同時に':'pero a la vez','2元符号では ':'para códigos binarios: ',' の位':' posición','bits / channel use':'bits / uso de canal','bits / second':'bits / segundo'},
-             'ko':{'だが同時に':'그러나 동시에','2元符号では ':'이진 부호에서는 ',' の位':' 자리','bits / channel use':'비트 / 채널 사용','bits / second':'비트 / 초'}}
+             'ko':{'だが同時に':'그러나 동시에','2元符号では ':'이진 부호에서는 ',' の位':' 자리','bits / channel use':'비트 / 채널 사용','bits / second':'비트 / 초'},
+             'pt':{'だが同時に':'mas simultaneamente','2元符号では ':'para códigos binários: ',' の位':' posição','bits / channel use':'bits / uso do canal','bits / second':'bits / segundo'}}
 
 def main():
     site=Path(sys.argv[1]);lang=sys.argv[2];out=Path(sys.argv[3]);assert not out.exists() and lang in ANNOTATIONS
@@ -39,7 +40,7 @@ def main():
     translated=[]
     for tex in core:
         for a,b in ANNOTATIONS[lang].items():tex=tex.replace(a,b)
-        if lang=='es':
+        if lang in ('es','pt'):
             # Decimal-comma typography must preserve every numeric token's value.
             before=tex
             tex=re.sub(r'(\d+)\.(\d+)',r'\1{,}\2',tex)
@@ -115,6 +116,16 @@ def main():
         assert '0\\mapsto00000' in text and '1\\mapsto11111' in text
         assert 'Check -- "예" --> Done' in graphs[1]
         probe=json.loads((D/'batch-034-ko-original-code-probe.json').read_text(encoding='utf-8'))
+        assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
+    if lang=='pt':
+        assert not re.search(r'[\u3040-\u30ff\u3400-\u9fff]',text)
+        for label in ['síndrome','Valores dos erros:','cancelamento sucessivo (SC)','cancelamento sucessivo com lista (SCL)']:
+            assert '<strong>'+label+'</strong>' in html
+        assert '0<p<1/2' in text and r'p\in(0,0,5)' not in text
+        assert all(v in ''.join(a.all) for v in ['apagamentos','corpo finito','posto da matriz','[1,0,1,1]','[0,1,1]','[1,6,13]'])
+        assert '0\\mapsto00000' in text and '1\\mapsto11111' in text
+        assert 'Check -- "Sim" --> Done' in graphs[1]
+        probe=json.loads((D/'batch-034-pt-original-code-probe.json').read_text(encoding='utf-8'))
         assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
     for asset in audit['assets']:assert hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest()==asset['sha256']
     v=dict(language=lang,path=entry['path'],sha256=shared.shared.digest(p),sourceSha256=source_hash,
