@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T17:13:40.459485+09:00",
+  "originalEnSourceSha256": "3c333021c507af286f79c8d621ed4e1f8aa580bb2bfa839c4a4b986a8973a576",
+  "singleErrorPairsChecked": 65025,
+  "originalExtraXFormulaWrongPairs": 64770,
+  "correctedFormulaMatches": 65025,
+  "witness": {
+    "X": 2,
+    "Y": 3,
+    "S1": 6,
+    "omega": 6,
+    "lambdaDerivative": 2,
+    "originalExtraXResult": 6,
+    "withoutExtraXResult": 3
+  },
+  "reason": "OriginalENexplicitS(z)=sum_{j=1}^{2t}S_j*z^(j-1),S_j=Y*X^j. Foroneerror,Lambda=1-X*z,Omega=YX. Then-YX/(-X)=Y;extraXyieldsXY. Characteristic2negativeequalspositive. Otherfirst-root/syndromeconventionscanlegitimatelychangeXfactor;claimonlythisarticleexplicitconvention.",
+  "initialAuxiliaryFailureRetained": "docs/translation-review/probe_batch_034_forney_initial.py",
+  "initialFailure": "Assertion expected65535 pairs;actual255*255=65025. Correctedonlyexpectedcasecount;allGFcomputationsand64770mismatchesunchanged. Initialfailedscriptpreserved.",
+  "reviewedTranslationsAdded": 0,
+  "scope": "IndependentfinitealgebraicwitnessbasedonarticledefinitionsusingoriginalGF256arithmetic,notexecutionofarevisedRSdecoder orcompleteproof/QRimplementation/benchmark."
+}

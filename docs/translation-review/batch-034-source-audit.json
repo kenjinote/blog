@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T17:10:50.752067+09:00",
+  "baselineCommit": "907d59a0367cfa1e3d33e52e7879c59dacc4d0e4",
+  "article": "error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory",
+  "versions": {
+    "ar": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ar.md",
+      "sha256": "f551e98b99e1d4198ad2ea1879d93372044df877a3e2df16004e888d46cf7095",
+      "lines": 240,
+      "utf8BytesNormalizedLf": 20775,
+      "h2Headings": [
+        "## 1. مقدمة: معجزتان هندسيتان يوميتان لإحياء المعلومات الرقمية",
+        "## 2. ثورة كلود شانون (1948) ومبرهنة ترميز القناة المشوشة",
+        "## 3. الاختراق الهندسي لريتشارد هامينغ (1950): مسافة هامينغ والكود التام $[7, 4, 3]$",
+        "## 4. تحفة ريد وسولومون (1960): أكواد ريد-سولومون على حقول غالوا $\\mathbb{F}_{2^m}$",
+        "## 5. الاقتراب من حد شانون: أكواد LDPC (1962) وTurbo (1993) والأكواد القطبية Polar (2009)",
+        "## 6. تطبيق بايثون الكامل: كود هامينغ $(7,4)$ وريد-سولومون على $\\text{GF}(2^8)$",
+        "## 7. خاتمة"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "python"
+      ],
+      "displayMathDelimiters": 16,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "de": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.de.md",
+      "sha256": "723d27c7a53e5bc74eccc73715f8a96e8948160950ba0b7def5637ce43478f4e",
+      "lines": 247,
+      "utf8BytesNormalizedLf": 18937,
+      "h2Headings": [
+        "## 1. Einleitung: Zwei alltägliche und doch wundersame Meisterleistungen der Datenrekonstruktion",
+        "## 2. Claude Shannons Revolution von 1948 und das Kanalcodierungstheorem",
+        "## 3. Richard Hammings geometrischer Durchbruch (1950): Hamming-Distanz und der $[7, 4, 3]$-Code",
+        "## 4. Reed und Solomons Meisterwerk (1960): Reed-Solomon-Codes über Galois-Feldern $\\mathbb{F}_{2^m}$",
+        "## 5. Annäherung an das Shannon-Limit: LDPC-Codes (1962), Turbo-Codes (1993) und Polar-Codes (2009)",
+        "## 6. Vollständige Python-Implementierung: Hamming $(7,4)$ & $\\text{GF}(2^8)$ Reed-Solomon",
+        "## 7. Fazit"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "python"
+      ],
+      "displayMathDelimiters": 20,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "en": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.en.md",
+      "sha256": "3c333021c507af286f79c8d621ed4e1f8aa580bb2bfa839c4a4b986a8973a576",
+      "lines": 660,
+      "utf8BytesNormalizedLf": 63715,
+      "h2Headings": [
+        "## 1. Introduction: Two Everyday-Yet-Miraculous Feats of Information Resurrection",
+        "## 2. Claude Shannon's 1948 Revolution and the Noisy-Channel Coding Theorem",
+        "## 3. Richard Hamming's 1950 Geometric Breakthrough: Hamming Distance and the $[7, 4, 3]$ Perfect Code",
+        "## 4. Irving Reed & Gustave Solomon's 1960 Masterpiece: Reed-Solomon (RS) Codes over Galois Fields $\\mathbb{F}_{2^m}$",
+        "## 5. Approaching the Shannon Limit: Gallager's LDPC Codes (1962), Turbo Codes (1993), and Arıkan's Polar Codes (2009)",
+        "## 6. Complete Python Implementation: Hamming $(7,4)$ Syndrome Decoder and Galois Field $\\text{GF}(2^8)$ Reed-Solomon Engine",
+        "## 7. Deep Architectural Analysis: Why Modern Infrastructure Uses Both RS and LDPC/Polar Codes",
+        "## 8. Conclusion: Triumph over Entropy"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "mermaid",
+        "mermaid",
+        "python",
+        "text"
+      ],
+      "displayMathDelimiters": 100,
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "es": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.es.md",
+      "sha256": "0ca348ac5a91dd386be07771f7eb7143c27bd8d4a865e13fe12c9e826ac30a69",
+      "lines": 240,
+      "utf8BytesNormalizedLf": 17527,
+      "h2Headings": [
+        "## 1. Introducción: Dos milagros cotidianos de resurrección de la información",
+        "## 2. La revolución de Claude Shannon (1948) y el teorema de codificación de canal ruidoso",
+        "## 3. El avance geométrico de Richard Hamming (1950): distancia de Hamming y el código $[7, 4, 3]$",
+        "## 4. La obra maestra de Reed y Solomon (1960): códigos Reed-Solomon sobre cuerpos de Galois $\\mathbb{F}_{2^m}$",
+        "## 5. Rozando el límite de Shannon: códigos LDPC (1962), Turbo (1993) y Polares (2009)",
+        "## 6. Implementación completa en Python: Hamming $(7,4)$ y Reed-Solomon en $\\text{GF}(2^8)$",
+        "## 7. Conclusión"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "python"
+      ],
+      "displayMathDelimiters": 16,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "fr": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.fr.md",
+      "sha256": "57e2bb079b40e629d575429c3ec6785bcb4a13c200f807b61413d8e07852fb5a",
+      "lines": 240,
+      "utf8BytesNormalizedLf": 17480,
+      "h2Headings": [
+        "## 1. Introduction : Deux miracles quotidiens de résurrection de l'information",
+        "## 2. La révolution de Claude Shannon (1948) et le théorème du codage de canal",
+        "## 3. La percée géométrique de Richard Hamming (1950) : distance de Hamming et code parfait $[7, 4, 3]$",
+        "## 4. Le chef-d'œuvre de Reed et Solomon (1960) : codes de Reed-Solomon sur les corps de Galois $\\mathbb{F}_{2^m}$",
+        "## 5. Atteindre la limite de Shannon : codes LDPC (1962), Turbo (1993) et Polaires (2009)",
+        "## 6. Implémentation Python complète : Hamming $(7,4)$ et Reed-Solomon sur $\\text{GF}(2^8)$",
+        "## 7. Conclusion"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "python"
+      ],
+      "displayMathDelimiters": 16,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "hi": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.hi.md",
+      "sha256": "0f6a79597f9b538ecfa4df8a46c46148b509675f035f31ad2a2009b2451ae33d",
+      "lines": 240,
+      "utf8BytesNormalizedLf": 27113,
+      "h2Headings": [
+        "## 1. परिचय: सूचना पुनर्प्राप्ति के दो दैनिक किंतु अद्भुत इंजीनियरिंग चमत्कार",
+        "## 2. क्लॉड शैनन की 1948 की क्रांति और नॉइज़ी-चैनल कोडिंग प्रमेय",
+        "## 3. रिचर्ड हैमिंग की 1950 की ज्यामितीय क्रांति: हैमिंग दूरी और $[7, 4, 3]$ परफेक्ट कोड",
+        "## 4. रीड और सोलोमन की 1960 की उत्कृष्ट कृति: गैलोइस फील्ड $\\mathbb{F}_{2^m}$ पर रीड-सोलोमन (RS) कोड",
+        "## 5. शैनन सीमा के करीब: LDPC कोड (1962), टर्बो कोड (1993) और पोलर कोड (2009)",
+        "## 6. संपूर्ण Python कार्यान्वयन: हैमिंग $(7,4)$ और $\\text{GF}(2^8)$ रीड-सोलोमन",
+        "## 7. निष्कर्ष"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "python"
+      ],
+      "displayMathDelimiters": 16,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "id": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.id.md",
+      "sha256": "8d65ed2b0e97b7e1bee3881f42d63539f1a986a42fa472d2faaabdd6682bf830",
+      "lines": 240,
+      "utf8BytesNormalizedLf": 16954,
+      "h2Headings": [
+        "## 1. Pendahuluan: Dua Keajaiban Rekonstruksi Informasi dalam Kehidupan Sehari-hari",
+        "## 2. Revolusi Claude Shannon (1948) dan Teorema Pengkodean Kanal Berderau",
+        "## 3. Terobosan Geometris Richard Hamming (1950): Jarak Hamming dan Kode Sempurna $[7, 4, 3]$",
+        "## 4. Mahakarya Reed dan Solomon (1960): Kode Reed-Solomon di atas Medan Galois $\\mathbb{F}_{2^m}$",
+        "## 5. Mendekati Batas Shannon: Kode LDPC (1962), Turbo (1993), dan Polar (2009)",
+        "## 6. Implementasi Lengkap Python: Hamming $(7,4)$ dan Reed-Solomon di $\\text{GF}(2^8)$",
+        "## 7. Kesimpulan"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "python"
+      ],
+      "displayMathDelimiters": 16,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ja": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "sha256": "e709cf1874fbd1e320c04c0f22535537b35959fb843096289d13759261f81019",
+      "lines": 664,
+      "utf8BytesNormalizedLf": 76905,
+      "h2Headings": [
+        "## 1. 導入：2つの日常的かつ驚異的な「情報復元の奇跡」",
+        "## 2. クロード・シャノンの1948年革命と「通信路符号化定理」",
+        "## 3. リチャード・ハミングの1950年の幾何学的突破：ハミング距離と $[7, 4, 3]$ 完全符号",
+        "## 4. リードとソロモンの1960年の最高傑作：ガロア体 $\\mathbb{F}_{2^m}$ 上のリード＝ソロモン（RS）符号",
+        "## 5. シャノン限界への肉薄：LDPC符号・ターボ符号・Polar符号",
+        "## 6. Pythonによる実装検証：ハミング $(7,4)$ 符号とガロア体リード＝ソロモン符号",
+        "## 7. 深掘り考察：なぜ現代の5GやSSDは「RS符号」から「LDPC・Polar符号」へ移行したのか？",
+        "## 8. まとめ：ノイズに満ちた物理宇宙で「完全な情報」を紡ぐ数学の力"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "mermaid",
+        "mermaid",
+        "python",
+        "text"
+      ],
+      "displayMathDelimiters": 86,
+      "fullOriginalMetadataBodyAndDiagramsRead": true,
+      "reviewed": false
+    },
+    "ko": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ko.md",
+      "sha256": "589424e413ff463a5ac08566df27df1153e03d4576fda301fb70aa498e0faa67",
+      "lines": 248,
+      "utf8BytesNormalizedLf": 21060,
+      "h2Headings": [
+        "## 1. 도입: 직관을 뛰어넘는 두 가지 '정보 복원'의 기적",
+        "## 2. 클로드 섀넌의 1948년 혁명과 '잡음 채널 부호화 정리'",
+        "## 3. 리처드 해밍의 1950년 기하학적 돌파: 해밍 거리와 $[7, 4, 3]$ 완전 부호",
+        "## 4. 리드와 솔로몬의 1960년 걸작: 갈루아 체 $\\mathbb{F}_{2^m}$ 위의 리드-솔로몬(RS) 부호",
+        "## 5. 섀넌 한계에의 도달: LDPC 부호(1962), 터보 부호(1993), 그리고 폴라 부호(2009)",
+        "## 6. Python 구현 검증: 해밍 $(7,4)$ 부호 및 갈루아 체 $\\text{GF}(2^8)$ 리드-솔로몬 복호기",
+        "## 7. 결론"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "python"
+      ],
+      "displayMathDelimiters": 18,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "pt": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.pt.md",
+      "sha256": "e6ecce303c95227263cae24041c669a4a8dbf5659a463a920b8509e32422ab5a",
+      "lines": 240,
+      "utf8BytesNormalizedLf": 17242,
+      "h2Headings": [
+        "## 1. Introdução: Dois milagres cotidianos de ressurreição da informação",
+        "## 2. A revolução de Claude Shannon (1948) e o teorema de codificação de canal ruidoso",
+        "## 3. O avanço geométrico de Richard Hamming (1950): distância de Hamming e o código $[7, 4, 3]$",
+        "## 4. A obra-prima de Reed e Solomon (1960): códigos Reed-Solomon sobre corpos de Galois $\\mathbb{F}_{2^m}$",
+        "## 5. Aproximando-se do limite de Shannon: códigos LDPC (1962), Turbo (1993) e Polares (2009)",
+        "## 6. Implementação completa em Python: Hamming $(7,4)$ e Reed-Solomon em $\\text{GF}(2^8)$",
+        "## 7. Conclusão"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "python"
+      ],
+      "displayMathDelimiters": 16,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "ru": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ru.md",
+      "sha256": "46a799cdf5b4b56e58ceaea3edf1c4febdcba8690edba4a411aba63d7f0f8014",
+      "lines": 240,
+      "utf8BytesNormalizedLf": 23784,
+      "h2Headings": [
+        "## 1. Введение: два повседневных и одновременно невероятных чуда восстановления информации",
+        "## 2. Революция Клода Шеннона (1948) и теорема о кодировании для канала с шумом",
+        "## 3. Геометрический прорыв Ричарда Хэмминга (1950): расстояние Хэмминга и код $[7, 4, 3]$",
+        "## 4. Шедевр Рида и Соломона (1960): коды Рида — Соломона над полями Галуа $\\mathbb{F}_{2^m}$",
+        "## 5. Вплотную к пределу Шеннона: LDPC-коды (1962), турбо-коды (1993) и полярные коды (2009)",
+        "## 6. Полная реализация на Python: код Хэмминга $(7,4)$ и Рида — Соломона над $\\text{GF}(2^8)$",
+        "## 7. Заключение"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "python"
+      ],
+      "displayMathDelimiters": 16,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-cn": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.zh-cn.md",
+      "sha256": "fa74c2128c90da01d086dd897cf2eb3f7e2474c3b425f45b1b4d171e36653a19",
+      "lines": 262,
+      "utf8BytesNormalizedLf": 21459,
+      "h2Headings": [
+        "## 1. 引言：两个看似违背直觉的“信息复活”工程奇迹",
+        "## 2. 克劳德·香农的1948年革命与“有噪信道编码定理”",
+        "## 3. 理查德·汉明的1950年几何突破：汉明距离与 $[7, 4, 3]$ 完美码",
+        "## 4. 里德与所罗门的1960年杰作：伽罗瓦域 $\\mathbb{F}_{2^m}$ 上的里德-所罗门（RS）码",
+        "## 5. 逼近香农极限：LDPC码（1962）、Turbo码（1993）与极化码 Polar Codes（2009）",
+        "## 6. Python 完整实战验证：汉明 $(7,4)$ 码与伽罗瓦域 $\\text{GF}(2^8)$ 里德-所罗门译码器",
+        "## 7. 结语"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "python"
+      ],
+      "displayMathDelimiters": 24,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    },
+    "zh-tw": {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.zh-tw.md",
+      "sha256": "a3f51c0b0013fd9f5cdc3980b9496f7e1dfe21f6843b05ba9bb56f18709defd7",
+      "lines": 262,
+      "utf8BytesNormalizedLf": 21468,
+      "h2Headings": [
+        "## 1. 引言：兩個看似違背直覺的「資訊復活」工程奇蹟",
+        "## 2. 克勞德·夏農的1948年革命與「有噪通道編碼定理」",
+        "## 3. 理查·漢明的1950年幾何突破：漢明距離與 $[7, 4, 3]$ 完美碼",
+        "## 4. 里德與所羅門的1960年傑作：伽羅瓦體 $\\mathbb{F}_{2^m}$ 上的里德-所羅門（RS）碼",
+        "## 5. 逼近夏農極限：LDPC碼（1962）、Turbo碼（1993）與極化碼 Polar Codes（2009）",
+        "## 6. Python 完整實戰驗證：漢明 $(7,4)$ 碼與伽羅瓦體 $\\text{GF}(2^8)$ 里德-所羅門解碼器",
+        "## 7. 結語"
+      ],
+      "fenceLanguages": [
+        "mermaid",
+        "mermaid",
+        "python"
+      ],
+      "displayMathDelimiters": 24,
+      "fullOriginalMetadataBodyAndDiagramsRead": false,
+      "reviewed": false
+    }
+  },
+  "assets": [
+    {
+      "path": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/eyecatch.jpg",
+      "sha256": "dc0e3df389a9c4fff0f5444e567cd923ee1f2aed03d3bf8792e78246832d3743"
+    }
+  ],
+  "manualReadingScope": "JAandEN completeoriginalmetadata,all8sections/equations/4Mermaidgraphs/Pythonprogram/displayedoutput/comparisontablesread. Other11bodiesnotread;structureinventoryonly. No revisedbody orreviewrecord yet.",
+  "reviewedTranslationsAdded": 0,
+  "currentAiTranslations": 408,
+  "unreviewedTranslations": 12624,
+  "humanReviews": 0,
+  "initialFindings": [
+    "10^-16W equals100aW,not0.1aW;receivedpower/23Wdistance/imagehistoryneedprimaryverification. Voyager1and2notbothallplanetflybys.",
+    "QRerrorcorrectionpercentagesarenotunconditionalimagearea/logocoverage/10msguarantees;functionalpatterns/blockdistribution/unknownerrorsversuserasuresmatter.",
+    "JAeverymemorylesschannelstrictlypositivecapacityfalse;ENnonnegativecorrectbutcapacitynotnoisealone,continuouschannelinputconstraintsandunitsmustbespecified. Asymptoticallysmallerrornotfinitezeroerror;AWGNln2infimumnotuniverseconstant/equalitywithpositiverate.",
+    "JA2t+1<=d iff t=floor((d-1)/2) shouldboundt,notarbitraryt equality. Mixederror/erasureguaranteesquantifiedoverallpatterns,notallreceivedwordsuniquelydecodableexactlyunderbound.",
+    "JAperfectcodeclassificationovergeneralallcodesandVoyagerbinary/ternaryGolayclaimsneedverification;ENomitsparagraph. Zero syndromeiscodewordmembership,notproofnochannelerrors.",
+    "Hbinarysyndromenumberonlyforbinarycolumnorder;systematicHrequireslookup. GeneralHammingcomputationalcomplexitynotuniversallyO1;SECDEDnoteveryECCDRAMarchitecture.",
+    "RSrootboundisfactor-theoremoverfield,notFundamentalTheoremofAlgebra. Evaluationn<=qversuscyclicn=q-1/shortened,QRrootindexconventionsmustseparate. JAsection4.5omittedEN.",
+    "ForneyformulaextraXfactorappearsinconsistentwithENexplicitS(x)=sumS_j*x^(j-1),jstarts1;reproduceandverifyprimary.",
+    "JAactualcodeGF257butENGF256;notdirecttranslationofsameprogram;captions/proseclaimdifferentfields. FixedtGaussianeliminationassumesuniquefullranksquarematrix,likelyfailsfewerthantradius. Actualrunsandboundarycasesseparatelyrecorded.",
+    "JAcode3of15symbols=20percent,not30percent;nonadjacentdamagedindicesnotcontiguousburst. GF257evaluationsarenotallbytes. NoQ/Edivisionorpostdecodereencoding/distanceverification.",
+    "Sparsitydoesnotguaranteenosmallcycles;LDPCdimensionn-rankHnotn-numberrowsunlessindependent. LLR2y/sigma2requiresequallylikelyBPSK. LDPCthreshold0.0045dBisnotuniversalultimate-1.59norfiniteperformanceguarantee.",
+    "PolarI(W)uniforminput=symmetriccapacity,notgeneralasymmetriccapacity;finiteNnotexactcapacity/zeroerrorfloor. SCversusSCLlistfactor/5GshortUCIexceptions/productadoptionclaimsmustverify."
+  ],
+  "primaryReadingToDate": [],
+  "originalCodeProbe": "docs/translation-review/batch-034-original-code-probe.json",
+  "limitations": [
+    "Pre-audit only;other11bodiesnotread,nobodycertified.",
+    "No current034primarysourcebodyreadyet;initialsourceconcernsarenotallconfirmedfacts.",
+    "No rewrittenarticle/completecompressor-or-ECCimplementation/benchmark/browser/nativecertification.",
+    "033matchingCI43229194255successverified;live442article+3tagprobecurrentlyrunning,separatelyrecorded."
+  ]
+}

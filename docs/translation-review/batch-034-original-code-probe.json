@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T17:10:50.752067+09:00",
+  "actualOriginalProgramsRun": 2,
+  "results": [
+    {
+      "language": "ja",
+      "sourceSha256": "e709cf1874fbd1e320c04c0f22535537b35959fb843096289d13759261f81019",
+      "codeSha256": "987659ed5015c926c53f5d8275016886646fb51350e975760b367e3d008018e4",
+      "actualProgramExitCode": 0,
+      "actualStdout": "=== [1] Hamming (7,4) Code Verification ===\nOriginal 4-bit Message : [1, 0, 1, 1]\nEncoded 7-bit Codeword : [1, 0, 1, 1, 0, 1, 0]\nReceived (bit 2 flipped): [1, 0, 0, 1, 0, 1, 0]\nSyndrome Vector s      : [0, 1, 1] -> Matches Column 2\nCorrected Codeword     : [1, 0, 1, 1, 0, 1, 0]\nDecoded 4-bit Message  : [1, 0, 1, 1] (Success: True)\n\n=== [2] Reed-Solomon [n=15, k=9, d_min=7] Code Verification ===\nOriginal Message (k=9) : 'VOYAGER-1' -> [86, 79, 89, 65, 71, 69, 82, 45, 49]\nRS Encoded (n=15 syms) : [121, 3, 74, 211, 216, 125, 86, 91, 225, 160, 84, 236, 194, 212, 84]\nCorrupted Received     : [121, 3, 250, 211, 216, 125, 86, 13, 225, 160, 84, 236, 99, 212, 84] (Errors at idx 2, 7, 12)\nDetected Corrupted Symbol Indices (E(x_i) = 0): [2, 7, 12]\nRecovered Coefficients : [86, 79, 89, 65, 71, 69, 82, 45, 49]\nRecovered Text         : 'VOYAGER-1' (Exact Match: True)\n",
+      "actualStderr": "",
+      "displayedTextOutput": "=== [1] Hamming (7,4) Code Verification ===\nOriginal 4-bit Message : [1, 0, 1, 1]\nEncoded 7-bit Codeword : [1, 0, 1, 1, 0, 1, 0]\nReceived (bit 2 flipped): [1, 0, 0, 1, 0, 1, 0]\nSyndrome Vector s      : [0, 1, 1] -> Matches Column 2\nCorrected Codeword     : [1, 0, 1, 1, 0, 1, 0]\nDecoded 4-bit Message  : [1, 0, 1, 1] (Success: True)\n\n=== [2] Reed-Solomon [n=15, k=9, d_min=7] Code Verification ===\nOriginal Message (k=9) : 'VOYAGER-1' -> [86, 79, 89, 65, 71, 69, 82, 45, 49]\nRS Encoded (n=15 syms) : [121, 90, 219, 107, 16, 179, 102, 232, 92, 211, 213, 181, 144, 15, 68]\nCorrupted Received     : [121, 90, 250, 107, 16, 179, 102, 13, 92, 211, 213, 181, 99, 15, 68] (Errors at idx 2, 7, 12)\nDetected Corrupted Symbol Indices (E(x_i) = 0): [2, 7, 12]\nRecovered Coefficients : [86, 79, 89, 65, 71, 69, 82, 45, 49]\nRecovered Text         : 'VOYAGER-1' (Exact Match: True)\n",
+      "displayedOutputMatchesActual": false,
+      "finiteField": "GF(257)",
+      "byteCoefficientExampleProducesNonByteSymbol": {
+        "message": [
+          255,
+          1
+        ],
+        "point": 1,
+        "value": 256
+      },
+      "fixedRadiusErrorCases": [
+        {
+          "actualErrors": 0,
+          "exception": "IndexError",
+          "message": "list index out of range"
+        },
+        {
+          "actualErrors": 1,
+          "exception": "IndexError",
+          "message": "list index out of range"
+        },
+        {
+          "actualErrors": 2,
+          "exception": "IndexError",
+          "message": "list index out of range"
+        },
+        {
+          "actualErrors": 3,
+          "result": [
+            86,
+            79,
+            89,
+            65,
+            71,
+            69,
+            82,
+            45,
+            49
+          ],
+          "matches": true
+        },
+        {
+          "actualErrors": 4,
+          "result": [
+            28,
+            98,
+            99,
+            242,
+            95,
+            174,
+            204,
+            5,
+            205
+          ],
+          "matches": false
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "sourceSha256": "3c333021c507af286f79c8d621ed4e1f8aa580bb2bfa839c4a4b986a8973a576",
+      "codeSha256": "3ba96a00fd7d390b71e46ec5f92005792a60c5cd7415b74de1c85e0430632083",
+      "actualProgramExitCode": 0,
+      "actualStdout": "=== [1] Hamming [7, 4, 3] Code over GF(2) ===\n4-bit Message m        : [1, 0, 1, 1]\n7-bit Codeword c = mG  : [1, 0, 1, 1, 0, 1, 0]\nReceived y (idx 2 flip): [1, 0, 0, 1, 0, 1, 0]\nSyndrome s = H y^T     : [0, 1, 1] -> Matches column index 2\nCorrected Codeword     : [1, 0, 1, 1, 0, 1, 0]\nDecoded Message        : [1, 0, 1, 1] (Bit-Exact: True)\n\n=== [2] Reed-Solomon [n=15, k=9, d_min=7] Code over GF(2^8) ===\nOriginal Payload (k=9) : 'VOYAGER-1' -> [86, 79, 89, 65, 71, 69, 82, 45, 49]\nGF(2^8) RS Codeword    : [77, 162, 64, 217, 68, 152, 48, 138, 209, 123, 74, 82, 244, 157, 21]\nCorrupted Received     : [77, 93, 64, 217, 68, 152, 149, 138, 209, 123, 74, 82, 244, 161, 21] (Destroyed indices: [1, 6, 13])\nAlgebraically Located Error Indices (E(x_i)=0): [1, 6, 13]\nRecovered Coefficients : [86, 79, 89, 65, 71, 69, 82, 45, 49]\nRecovered String       : 'VOYAGER-1' (100% Match: True)\n",
+      "actualStderr": "",
+      "displayedTextOutput": "=== [1] Hamming [7, 4, 3] Code over GF(2) ===\n4-bit Message m        : [1, 0, 1, 1]\n7-bit Codeword c = mG  : [1, 0, 1, 1, 0, 1, 0]\nReceived y (idx 2 flip): [1, 0, 0, 1, 0, 1, 0]\nSyndrome s = H y^T     : [0, 1, 1] -> Matches column index 2\nCorrected Codeword     : [1, 0, 1, 1, 0, 1, 0]\nDecoded Message        : [1, 0, 1, 1] (Bit-Exact: True)\n\n=== [2] Reed-Solomon [n=15, k=9, d_min=7] Code over GF(2^8) ===\nOriginal Payload (k=9) : 'VOYAGER-1' -> [86, 79, 89, 65, 71, 69, 82, 45, 49]\nGF(2^8) RS Codeword    : [90, 206, 134, 152, 232, 6, 204, 198, 250, 20, 108, 195, 192, 240, 199]\nCorrupted Received     : [90, 49, 134, 152, 232, 6, 105, 198, 250, 20, 108, 195, 192, 204, 199] (Destroyed indices: [1, 6, 13])\nAlgebraically Located Error Indices (E(x_i)=0): [1, 6, 13]\nRecovered Coefficients : [86, 79, 89, 65, 71, 69, 82, 45, 49]\nRecovered String       : 'VOYAGER-1' (100% Match: True)\n",
+      "displayedOutputMatchesActual": false,
+      "finiteField": "GF(2^8),polynomial0x11D",
+      "fixedRadiusLinearSolveCases": [
+        {
+          "actualErrors": 0,
+          "exception": "StopIteration",
+          "message": ""
+        },
+        {
+          "actualErrors": 1,
+          "exception": "StopIteration",
+          "message": ""
+        },
+        {
+          "actualErrors": 2,
+          "exception": "StopIteration",
+          "message": ""
+        },
+        {
+          "actualErrors": 3,
+          "result": [
+            86,
+            79,
+            89,
+            65,
+            71,
+            69,
+            82,
+            45,
+            49
+          ],
+          "matches": true
+        },
+        {
+          "actualErrors": 4,
+          "result": [
+            35,
+            14,
+            221,
+            159,
+            171,
+            126,
+            234,
+            144,
+            140
+          ],
+          "matches": false
+        }
+      ],
+      "independentByteMultiplicationPairs": 65536,
+      "inverseCases": 255
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "scope": "OriginalJA/ENcompletePythonprogramrunandfiniteboundary/fieldoraclechecks;notrevisedcode/proseapproval,allinputproof,QRdecoder/spacecraftimplementation/benchmark."
+}
