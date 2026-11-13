@@ -12,7 +12,8 @@ ANNOTATIONS={'zh-cn':{'だが同時に':'但同时','2元符号では ':'对于�
              'es':{'だが同時に':'pero a la vez','2元符号では ':'para códigos binarios: ',' の位':' posición','bits / channel use':'bits / uso de canal','bits / second':'bits / segundo'},
              'ko':{'だが同時に':'그러나 동시에','2元符号では ':'이진 부호에서는 ',' の位':' 자리','bits / channel use':'비트 / 채널 사용','bits / second':'비트 / 초'},
              'pt':{'だが同時に':'mas simultaneamente','2元符号では ':'para códigos binários: ',' の位':' posição','bits / channel use':'bits / uso do canal','bits / second':'bits / segundo'},
-             'fr':{'だが同時に':'mais simultanément','2元符号では ':'pour les codes binaires : ',' の位':' position','bits / channel use':'bits / utilisation du canal','bits / second':'bits / seconde'}}
+             'fr':{'だが同時に':'mais simultanément','2元符号では ':'pour les codes binaires : ',' の位':' position','bits / channel use':'bits / utilisation du canal','bits / second':'bits / seconde'},
+             'de':{'だが同時に':'doch gleichzeitig','2元符号では ':'für binäre Codes: ',' の位':' Stelle','bits / channel use':'Bit / Kanalnutzung','bits / second':'Bit / Sekunde'}}
 
 def main():
     site=Path(sys.argv[1]);lang=sys.argv[2];out=Path(sys.argv[3]);assert not out.exists() and lang in ANNOTATIONS
@@ -41,7 +42,7 @@ def main():
     translated=[]
     for tex in core:
         for a,b in ANNOTATIONS[lang].items():tex=tex.replace(a,b)
-        if lang in ('es','pt','fr'):
+        if lang in ('es','pt','fr','de'):
             # Decimal-comma typography must preserve every numeric token's value.
             before=tex
             tex=re.sub(r'(\d+)\.(\d+)',r'\1{,}\2',tex)
@@ -139,6 +140,15 @@ def main():
         assert '0\\mapsto00000' in text and '1\\mapsto11111' in text
         assert 'Check -- "Oui" --> Done' in graphs[1]
         probe=json.loads((D/'batch-034-fr-original-code-probe.json').read_text(encoding='utf-8'))
+        assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
+    if lang=='de':
+        assert not re.search(r'[\u3040-\u30ff\u3400-\u9fff]',text)
+        for label in ['Syndrom','Fehlerwerte:','Successive Cancellation (SC)','Successive Cancellation List (SCL)']:
+            assert '<strong>'+label+'</strong>' in html
+        assert all(v in ''.join(a.all) for v in ['Auslöschungen','endlichen Körper','Matrixrang','Leitkoeffizient 1','[1,0,1,1]','[0,1,1]','[1,6,13]'])
+        assert '0\\mapsto00000' in text and '1\\mapsto11111' in text and '0<p<1/2' in text
+        assert 'Check -- "Ja" --> Done' in graphs[1]
+        probe=json.loads((D/'batch-034-de-original-code-probe.json').read_text(encoding='utf-8'))
         assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
     for asset in audit['assets']:assert hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest()==asset['sha256']
     v=dict(language=lang,path=entry['path'],sha256=shared.shared.digest(p),sourceSha256=source_hash,
