@@ -125,6 +125,46 @@
         "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
         "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
       ]
+    },
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-13",
+      "reviewer": "Codex (AI)",
+      "source": "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "translationHash": "70fb6781b4cae885dafb4ff7036416b1763d5c7ffab7860083b73320740e2131",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original240line Spanish metadata,7chapters,8display formulas,2full diagrams,table andentirePython beforeediting;revisited original opening125lines to check language-specific claims. Read actual revised1–315,316–615,616–852 including8themes,47display formulas,4full diagrams,table,entireprogram andactualoutput;read final modulo256 spacing patch separately. Compared every frozenJA theme:channel/BSC/AWGN,distance/erasures/packing/Hammingmatrices,finitefield/Singleton/interpolation/cyclicForney,LDPC/Polar,applications andarchitecture. Removed absolute perfectrecovery,QRarbitrary30percentarea/10ms,Voyagerbothfourplanets/currentdistance/hardwareuniversality claims;corrected10^-16Wto100aW. The result is a full thematic translation,not a short summary or a structural-test semantic certificate."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used Spanish cuerpo finito/cuerpo de Galois,polinomio irreducible,borrado forknownmissingposition,error forunknowncorruption,síndrome,matriz de control de paridad,razón logarítmica de verosimilitud,propagación de creencias,cancelación sucesiva(SC) andcancelación sucesiva con lista(SCL). Distinguished bit/byte/field symbol/QR8bitcodeword/entireRSword,rate per channel use versus per second,polynomialdegree versus matrixrank,symmetriccapacity versus maximizedcapacity,andfixedfinite versus asymptoticguarantees. Columnas/filas remain consistent for H syndrome lookup andTannergraph. Explicitstrongmarkup preserves technical labels. Decimal commas use TeX{,} while list/matrix indices remain commas;language-domain notation now0<p<1/2."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually read47core displayequations with Spanish annotation/unit replacements anddecimal-comma typography. Checker reverses every decimal {,} to dot andasserts exactpreconversionTeX,thenrequires exact47blockCounter andallsourceTeXin decodedHTML. Corrected ambiguous originalp in(0,0,5)domain with0<p<1/2,andoriginaleverychannelC>0 claim with nonnegative capacity andinputconstraints. Read repetitionn3/generaloddn/length5example,BSCentropy,AWGNpositiveeta/ln2infimum,distanceallpatterns/erasures/packing/GHorthogonality/zero-syndromemembership,RSrootbound/Singleton/Lagrange/n<=qversuscyclicq-1/shortening,explicitj=1S(z)/locatorrecurrence/Forney,LDPCrank/LLR/extrinsicupdates/O(IE),Polaruniforminput/frozenvalues/finiteN/SC-SCLfactor. OriginalESonlynamesForney without an explicitextraXformula;not assigned EN's formula error. Earlier finite candidate/JA/EN evidence referenced,not rerun or general theorem proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed unmodified originalSpanish program beforeediting:exit0/fullstdout saved;GF256.inv(0)=1,255nonzeroinversespass,fixedradius3 reconstructionthrowsStopIteration ontested0/1/2errors,recovers3,and returnswrongmessageon4. OriginalalreadyGF256andhasnodisplayedoutputblock;no GF257 or wrongdisplayedstdout claiminvented. Read complete revisedsharedGF256code includingvalidation,rankaware rectangularsolver,0..tlocator trials,Q/Eremainder/degree,reencode/distancerule,Hammingcolumnlookup andbeyondradiusmiscorrection. Actual extracted program's subprocessstdout mustequal displayedsource/HTML;directzero-inverse rejection and8oldalpha-point(initial/scattered,0..3errors) caseschecked. Prior65536products/full65536wordcodebook/256restrictedreceivedvectors/3828singleerror/144seeded/24invalid checksreferenced,not rerun. Read fourgraphs/31edges,table andoutput. No full QR,LDPC/Polar/hardware/spacecraftimplementation or benchmark certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Ten official/primary references matchfrozenJAandactualHTML;earlier selectivepage/abstract scopes retained,nonew completepaper/standardreadclaimed. OldSpanishhasnoexternalreferencelist,sono unrelatedbadlink removalclaim. Preserved originalOct18T08date,slug,image/taxonomy;actualNov13lastmod andmermaidflag. Fresh35bundle455snapshot preview checks1983multilingualpages,3616HTTPSHTML41XML,canonical/14hreflang/13sidebar,allmath/code/output/graph/prose retention. Earlier17tests reference successfulJAENR2,notrerunforthiscontent-onlylanguage. FrozenJA/priorEN-CN-TWhashes unchanged. Other8translationsremainunreviewed;theKoreanoriginalwasfullyreadwhileESchecksran,butitsrevisedbodyhasnotbeenwritten/read;034publication andwholegoalpending."
+        }
+      },
+      "summary": "Complete Spanish error-correcting-code review with clarified probability domain, value-preserving decimal commas and verified educational GF256 decoder.",
+      "languageSpecificFindings": "Replaced ambiguous decimal-comma interval with0<p<1/2;retained Spanish decimal commas as TeX{,} with reversible numeric-value check. Restored7to8themes,8to47displayblocks,2to4graphs. Preservedlength5repetition,Hamming1011/syndrome011/zero-basedindex2 andoldalpha-pointscattered1/6/13case. Usedborrado/cuerpo finito/síndrome/cancelación sucesiva SC-SCL,distinguishingQR8bitwordfromwholeRSword andfinite/asymptoticclaims. ReproducedactualoldGF256inv0andunderradiusfailurewithoutinventingGF257,displayedoutputorForneyextraXerrors. Readfinalmodulo256spacingpatch. Firstcheckstoppedononeannotationtrailing-spaceexpectedvaluemismatch,notlostprose/math;numericequalityandHTMLcomparisonsremainexact. Initialhelper/build/checkreceipts preserved;freshR2used.",
+      "validation": "docs/translation-review/batch-034-es-r2-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "8 other translations remain unreviewed; reading status is recorded separately.",
+        "Finite educational code/math checks,not all-input theorem proofs,real hardware/spacecraft,full QR/LDPC/Polar software or benchmarks.",
+        "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
+        "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
+      ]
     }
   },
   "stages": [
@@ -239,6 +279,42 @@
       "unreviewedTranslations": 12621,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 9,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-13",
+      "languagesRead": [
+        "es"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "validation": "docs/translation-review/batch-034-es-r2-validation.json",
+      "checks": "docs/translation-review/batch-034-es-r2-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-034-es-ledger-validation.json",
+      "texExpressions": 255,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagramsEach": 4,
+      "diagramEdgesEach": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "articleExecutableProgramsEach": 1,
+      "proseFragmentsPreserved": 322,
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 35,
+      "sourceSnapshotsExact": 455,
+      "multilingualPages": 1983,
+      "httpsHtmlPages": 3616,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-034-ja-en-checks-r2.json",
+      "reviewedTranslationsTotal": 412,
+      "unreviewedTranslations": 12620,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 8,
       "publicationPending": true
     }
   ],

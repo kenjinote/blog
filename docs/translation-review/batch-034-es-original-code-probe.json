@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T18:31:20.890369+09:00",
+  "originalSourcePath": "content/post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.es.md",
+  "originalSourceSha256": "0ca348ac5a91dd386be07771f7eb7143c27bd8d4a865e13fe12c9e826ac30a69",
+  "originalCodeSha256": "91b39cdafb55f5705a7015aeaa79b5a019e9b43db59740a45028024f17b0c780",
+  "actualProgramExitCode": 0,
+  "actualStdout": "[Hamming (7,4)] Syndrome=[0, 1, 1] -> Flipped idx=2, Recovered=True\n[RS(15,9) over GF(2^8)] Located Errors=[1, 6, 13], Recovered='VOYAGER-1'\n",
+  "actualStderr": "",
+  "displayedOutputBlocks": 0,
+  "zeroInverseReturned": 1,
+  "nonzeroInverseCases": 255,
+  "fixedRadiusCases": [
+    {
+      "errors": 0,
+      "exception": "StopIteration",
+      "message": ""
+    },
+    {
+      "errors": 1,
+      "exception": "StopIteration",
+      "message": ""
+    },
+    {
+      "errors": 2,
+      "exception": "StopIteration",
+      "message": ""
+    },
+    {
+      "errors": 3,
+      "recovered": [
+        86,
+        79,
+        89,
+        65,
+        71,
+        69,
+        82,
+        45,
+        49
+      ],
+      "matches": true
+    },
+    {
+      "errors": 4,
+      "recovered": [
+        35,
+        14,
+        221,
+        159,
+        171,
+        126,
+        234,
+        144,
+        140
+      ],
+      "matches": false
+    }
+  ],
+  "fullOriginalBodyRead": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Unmodified original ES program run; direct GF class calls/RS linear reconstruction follow the original steps for selected inputs. No new Hamming decoder API invented, no displayed-output mismatch claim because ES has no output block. Not full QR/hardware/all-input or prose approval."
+}

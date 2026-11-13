@@ -4,7 +4,7 @@ from datetime import datetime,timezone,timedelta
 import copy,hashlib,json,subprocess,sys
 root=Path(__file__).resolve().parents[2];d=root/'docs/translation-review'
 lang,notes_path,stem=sys.argv[1:4]
-assert (lang,stem) in [('zh-cn','batch-034-zh-cn-r2'),('zh-tw','batch-034-zh-tw')]
+assert (lang,stem) in [('zh-cn','batch-034-zh-cn-r2'),('zh-tw','batch-034-zh-tw'),('es','batch-034-es-r2')]
 notes=json.loads(Path(notes_path).read_text(encoding='utf-8'))
 assert notes['allOriginalAndRevisedBodiesRead'] and set(notes['checks'])=={'meaning','terminology','mathematics','code','links'}
 assert all(len(v)>60 for v in notes['checks'].values())
@@ -27,7 +27,7 @@ total=len(prior)+1;other=11-len(old)
 entry=dict(reviewKind='ai',reviewedAt=today,reviewer='Codex (AI)',source=source,sourceHash=v['sourceSha256'],translationHash=v['sha256'],
  checks={k:dict(status='checked',note=n) for k,n in notes['checks'].items()},summary=notes['summary'],
  languageSpecificFindings=notes['languageSpecificFindings'],validation='docs/translation-review/'+stem+'-validation.json',
- limitations=['AI review,not human/native-speaker certification.',str(other)+' other translation bodies remain unread/unreviewed.',
+ limitations=['AI review,not human/native-speaker certification.',str(other)+' other translations remain unreviewed; reading status is recorded separately.',
  'Finite educational code/math checks,not all-input theorem proofs,real hardware/spacecraft,full QR/LDPC/Polar software or benchmarks.',
  'Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.',
  'Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language.'])
