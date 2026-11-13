@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13T22:44:23.135347+09:00",
+  "recordStdout": "Recorded ai review: post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ru.md\n",
+  "ledgerStdout": "{\"current\": 419, \"unreviewed\": 12613}\n",
+  "priorEntriesUnchanged": 418,
+  "priorBatchEvidenceEntriesUnchanged": 10,
+  "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+  "translationHash": "908ca118a58b089ff9cdbb9f24ab31d221b1b77c3c9ea3cc7c332c37463b9299",
+  "newAiReviews": 1,
+  "humanReviews": 0,
+  "scope": "Only the fully read selected translation added;priorledger/evidenceentries unchanged,publicationpending."
+}
