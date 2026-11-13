@@ -16,7 +16,8 @@ ANNOTATIONS={'zh-cn':{'だが同時に':'但同时','2元符号では ':'对于�
              'de':{'だが同時に':'doch gleichzeitig','2元符号では ':'für binäre Codes: ',' の位':' Stelle','bits / channel use':'Bit / Kanalnutzung','bits / second':'Bit / Sekunde'},
              'hi':{'だが同時に':'लेकिन साथ ही','2元符号では ':'द्विआधारी कोड के लिए: ',' の位':' का स्थान','bits / channel use':'बिट / चैनल उपयोग','bits / second':'बिट / सेकंड',' bits':' बिट'},
              'id':{'だが同時に':'tetapi sekaligus','2元符号では ':'untuk kode biner: ',' の位':' posisi','bits / channel use':'bit / penggunaan kanal','bits / second':'bit / detik',' bits':' bit'},
-             'ru':{'だが同時に':'но одновременно','2元符号では ':'для двоичных кодов: ',' の位':' разряд','bits / channel use':'бит / использование канала','bits / second':'бит / секунду',' bits':' бит',r'\text{dB}':r'\text{дБ}'}}
+             'ru':{'だが同時に':'но одновременно','2元符号では ':'для двоичных кодов: ',' の位':' разряд','bits / channel use':'бит / использование канала','bits / second':'бит / секунду',' bits':' бит',r'\text{dB}':r'\text{дБ}'},
+             'ar':{'だが同時に':'لكن في الوقت نفسه','2元符号では ':'للكود الثنائي: ',' の位':' خانة','bits / channel use':'بت / استخدام للقناة','bits / second':'بت / ثانية',' bits':' بت'}}
 
 def main():
     site=Path(sys.argv[1]);lang=sys.argv[2];out=Path(sys.argv[3]);assert not out.exists() and lang in ANNOTATIONS
@@ -182,6 +183,34 @@ def main():
         assert 'Check -- "Да" --> Done' in graphs[1]
         probe=json.loads((D/'batch-034-ru-original-code-probe.json').read_text(encoding='utf-8'))
         assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
+
+    if lang=='ar':
+        assert not re.search(r'[\u3040-\u30ff\u3400-\u9fff\u0400-\u04ff\u0900-\u097f]',text)
+        for label in ['المتلازمة','قيم الأخطاء:','الإلغاء المتتابع (SC)','الإلغاء المتتابع القائمي (SCL)']:
+            assert '<strong>'+label+'</strong>' in html
+        assert all(v in ''.join(a.all) for v in ['المحو','حقل منته','الرتبة','بمطال إشارة يساوي 1','[1,0,1,1]','[0,1,1]','[1,6,13]'])
+        assert 'فك التشفير' not in text
+        assert 'Check -- "نعم" --> Done' in graphs[1]
+        probe=json.loads((D/'batch-034-ar-original-code-probe.json').read_text(encoding='utf-8'))
+        assert probe['originalSourceSha256']==entry['sha256'] and probe['zeroInverseReturned']==1 and probe['displayedOutputBlocks']==0
+        inner=re.findall(r'<bdi dir="ltr">(.*?)</bdi>',text,re.S)
+        assert len(inner)==text.count('<bdi ')==text.count('</bdi>')==16
+        tick=chr(96)
+        values=[unescape(v[1:-1] if v.startswith(tick) and v.endswith(tick) else v) for v in inner]
+        page=shared.BidiValues();page.feed(html)
+        assert page.values==values and page.rtl and not page.active
+        assert {'000','011','101','110','111','[1,0,1,1]','[1,0,1,1,0,1,0]','[0,1,1]','0x11D','0x02','rs_encode','rs_decode','[1,6,13]','1..15'}==set(values)
+        paths=[site/shared.urlsplit(href).path.lstrip('/') for href in page.styles]
+        paths=[p for p in paths if p.is_file()];assert paths
+        css='\n'.join(p.read_text(encoding='utf-8') for p in paths)
+        rtl=r'\[dir=[\"\x27]?rtl[\"\x27]?\]'
+        for selector in [r'\.katex',r'\.article-content pre',r'\.article-content \.highlight']:
+            assert re.search(rtl+r'\s*'+selector+r'\s*\{[^}]*direction:\s*ltr(?:;|})',css)
+        assert re.search(rtl+r'\s*\.katex\s*\{[^}]*unicode-bidi:\s*isolate',css)
+        direction=dict(htmlLang='ar',htmlDirection='rtl',inlineCodeIsolates=len(values),sourceAndHtmlIsolatesExact=True,
+            compiledCssMathAndCodeLtr=True,compiledCssMathUnicodeIsolate=True,
+            scope='Static generated HTML and linked compiled CSS; no visual/browser/KaTeX/Mermaid runtime certification.')
+
     for asset in audit['assets']:assert hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest()==asset['sha256']
     v=dict(language=lang,path=entry['path'],sha256=shared.shared.digest(p),sourceSha256=source_hash,
         originalSha256=entry['sha256'],texExpressions=sum(tex.values()),displayMath=47,coreDisplayBlocks=47,
@@ -190,6 +219,7 @@ def main():
         stdout=run.stdout,stderr=run.stderr,displayedOutputExact=True,codeAndOutputHtmlExact=True,mathHtmlExact=True,
         proseFragmentsPreserved=fragments,zeroInverseRejected=True,oldEvaluationPointCases=cases,
         datesTaxonomyImageAndNavigationPassed=True,passed=True)
+    if lang=='ar':v['arabicDirection']=direction
     doc=dict(version=1,checkedAt=datetime.now(timezone(timedelta(hours=9))).isoformat(),allPassed=True,versions=[v],
         frozenSourceUnchanged=True,priorRegisteredTranslationHashesUnchanged=prior,
         priorCandidateFiniteEvidence='docs/translation-review/batch-034-candidate-code-validation.json',

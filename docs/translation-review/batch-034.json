@@ -445,6 +445,46 @@
         "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
         "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
       ]
+    },
+    "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-13",
+      "reviewer": "Codex (AI)",
+      "source": "post/error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory/index.ja.md",
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "translationHash": "e0a7bceebb8850b25b18edf369a175990b9568d1ebe6f267739fee3e14158683",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all 240 lines of original Arabic including metadata, seven chapters, eight display equations, two full diagrams, comparison table and entire Python before editing. Read actual revised lines 1–315, 316–615 and 616–852, covering all eight themes, 47 display equations, four diagrams, entire program, real output and references; read seven final replacement classes (eight occurrences) separately. Compared with frozen Japanese discussion of repetition, BSC/AWGN, distance and erasures, Hamming matrices, fields/RS, LDPC/Polar and applications. Corrected unconditional recovery, QR arbitrary damaged area/speed, Voyager planetary trajectory/current measurements/power conversion, and unqualified adoption/hardware claims. Full thematic comparison, not semantic approval inferred from automated structure."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Corrected original فك التشفير (decryption) to فك الترميز (decoding), without implying cryptographic secrecy. Used حقل منته, متلازمة, محو for known missing positions, تشذير, قرارات لينة, رتبة versus polynomial درجة, عمود versus صف, and الإلغاء المتتابع SC / الإلغاء المتتابع القائمي SCL. Distinguished channel capacity سعة from signal amplitude مطال; final polish explicitly says characteristic 2 and clarifies Gaussian elimination applications, primitive powers enumeration and index-reversal convention. Distinguished QR eight-bit codewords from an entire RS codeword, symmetric capacity from maximized capacity, and finite performance from asymptotic thresholds. Inline bit strings and API names use explicit LTR bdi isolation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Manually compared all 47 frozen Japanese core display equations with Arabic annotations and bit/channel-use/second units; kept decimal dots and dB consistently. Automated source block Counter and every source TeX expression must equal decoded generated HTML. Read repetition bounds, entropy/capacity and input constraints, AWGN noise/power/rate and ln2 infimum, all-pattern distance/erasure quantifiers, Hamming orthogonality and zero-syndrome membership, root count/Singleton/Lagrange, evaluation n<=q versus cyclic q-1, explicit j=1 syndrome/locator/Forney conventions, rank/LLR/extrinsic O(IE), uniform-input polarization and SC/SCL list factor. Old dot-decimal interval and conditional binary-column Hamming statement were already valid; did not invent decimal-comma or unconditional column-order errors. No explicit old extra-X Forney expression. Prior finite candidate/JA/EN checks referenced, not rerun or treated as general theorem proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Executed unchanged original Arabic code before editing: exit zero and full stdout retained; zero inverse wrongly returns 1, all 255 nonzero inverses pass; fixed t=3 reconstruction throws StopIteration on tested zero/one/two errors, recovers three and returns the wrong message on four. Original already GF256 with no displayed output block; no invented GF257 or displayed-stdout finding. Read entire revised shared byte-validated GF256 educational program, rank-aware solver, locator degrees 0..t, quotient/remainder/degree/re-encoding distance rules, Hamming column matching and explicit beyond-radius miscorrection. Fresh extracted execution matches source and HTML stdout exactly; zero inverse rejected and eight alpha-point initial/scattered 0..3 cases pass. Four graph topologies/31 edges and table retained. Static Arabic lang/rtl, all 16 bdi values and linked compiled CSS LTR/isolation rules checked; no visual browser or KaTeX/Mermaid execution claim."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Ten references match frozen Japanese and generated HTML. Earlier selected pages/abstracts and their limits remain documented; no new whole-paper/standard reading claimed. Original publication timestamp, slug, taxonomy and image hash retained, lastmod November 13 and Mermaid enabled. Fresh 35-bundle preview contains 455 exact source snapshots; 1983 multilingual pages and 3616 HTTPS HTML/41 XML pass with canonical, 14 hreflang and 13 sidebar URLs. All 255 TeX expressions and 300 prose fragments preserved. Prior 17 unit-test success referenced, not rerun for this content-only language. Frozen Japanese and all 11 prior registered translation hashes unchanged. All 12 translations now locally read, but assembled publication, matching CI/live verification and the full-article goal remain pending."
+        }
+      },
+      "summary": "Complete Arabic error-correcting-code comparison, precise decoding/field/erasure terms and verified educational GF256 code with static RTL isolation.",
+      "languageSpecificFindings": "Replaced cryptographic decryption wording with decoding; distinguished amplitude مطال from capacity سعة, polynomial degree from matrix rank, known erasures from unknown errors, and SC from SCL. Expanded seven chapters/eight displays/two graphs to all eight themes/47 displays/four graphs. Read final grammar/characteristic-2/primitive-power/index convention edits. Preserved valid original dot-decimal interval and conditional binary-column statement. Reproduced original GF256 zero-inverse and under-radius failures without assigning other languages' GF257/displayed-output/explicit extra-X issues. All 16 inline Latin/bit/API strings isolated LTR; generated Arabic RTL HTML and linked compiled CSS verified statically, not visually.",
+      "validation": "docs/translation-review/batch-034-ar-validation.json",
+      "limitations": [
+        "AI review,not human/native-speaker certification.",
+        "0 other translations remain unreviewed; reading status is recorded separately.",
+        "Finite educational code/math checks,not all-input theorem proofs,real hardware/spacecraft,full QR/LDPC/Polar software or benchmarks.",
+        "Primary reading limited to separately documented selected pages/abstracts,no new full-paper/browser/KaTeX/Mermaid runtime certification.",
+        "Batch034publication andwholegoal pending;earlier17unit tests referenced,not rerun for this language."
+      ]
     }
   },
   "stages": [
@@ -860,6 +900,42 @@
       "unreviewedTranslations": 12613,
       "humanReviews": 0,
       "otherTranslationsUnreviewed": 1,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-13",
+      "languagesRead": [
+        "ar"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "sourceHash": "371d428b34995ba3dcbb39f9aa0e35db27a6bdda9a92840815fc1c9b690041da",
+      "validation": "docs/translation-review/batch-034-ar-validation.json",
+      "checks": "docs/translation-review/batch-034-ar-checks.json",
+      "ledgerValidation": "docs/translation-review/batch-034-ar-ledger-validation.json",
+      "texExpressions": 255,
+      "displayMath": 47,
+      "coreDisplayBlocks": 47,
+      "diagramsEach": 4,
+      "diagramEdgesEach": [
+        10,
+        7,
+        9,
+        5
+      ],
+      "articleExecutableProgramsEach": 1,
+      "proseFragmentsPreserved": 300,
+      "sourceFrozenForFollowingTranslations": true,
+      "actualPreviewBundles": 35,
+      "sourceSnapshotsExact": 455,
+      "multilingualPages": 1983,
+      "httpsHtmlPages": 3616,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-034-ja-en-checks-r2.json",
+      "reviewedTranslationsTotal": 420,
+      "unreviewedTranslations": 12612,
+      "humanReviews": 0,
+      "otherTranslationsUnreviewed": 0,
       "publicationPending": true
     }
   ],
