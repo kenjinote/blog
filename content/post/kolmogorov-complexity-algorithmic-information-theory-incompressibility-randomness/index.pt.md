@@ -37,24 +37,111 @@ flowchart TD
 
 ---
 
-## 1. A Complexidade de Kolmogorov $K(x)$ e o Teorema da Invariância
+## 1. Programas mínimos, complexidade simples e complexidade prefixa
 
-Dada uma máquina de Turing universal $U$ (ou qualquer linguagem de programação Turing-completa como C ou Python), a <strong>complexidade de Kolmogorov</strong> $K_U(x)$ de uma string binária $x \in \{0,1\}^*$ é definida como o comprimento em bits $|p|$ do menor programa $p$ que, executado em $U$, imprime $x$ e para. Para satisfazer a desigualdade de Kraft $\sum 2^{-|p|} \le 1$, a teoria moderna adota a <strong>complexidade livre de prefixos (complexidade de Levin-Chaitin)</strong> $K(x)$, na qual nenhum programa válido é prefixo de outro.
+### 1.1 Duas convenções que precisam ser distinguidas
 
-Olhando para as nossas três strings de um milhão de bits através da lente de $K(x)$, o mistério se desfaz imediatamente:
-- Para $S_1$, basta o minúsculo programa `print("01" * 500000)`. Como só precisamos codificar em binário o contador de loop $n/2$, temos $K(S_1) = O(\log_2 n) \approx 20$ bits: é uma string <strong>algoritmicamente trivial</strong>.
-- Para $S_2$ (os primeiros $n$ bits de $\pi$), embora pareça ruído aleatório, um pequeno programa de poucas centenas de bytes implementando uma fórmula de Machin ou o algoritmo BBP calcula $S_2$ com exatidão. Logo, também vale $K(S_2) = O(\log_2 n)$! Isso revela uma verdade central da filosofia da ciência: <strong>uma lei da natureza nada mais é do que uma compressão algorítmica extrema de dados empíricos.</strong>
-- Para $S_3$, a afirmação correta é probabilística: lançamentos independentes de uma moeda justa podem produzir, por acaso, uma string simples. O argumento de contagem mostra que resultados que admitem descrições muito mais curtas são raros, mas não garante alta complexidade para cada resultado. Para uma string de comprimento $n$, a reprodução literal dá $C(x)\le n+O(1)$ para a complexidade simples; para a complexidade livre de prefixos, vale $K(x)\le n+K(n)+O(1)$, ou $K(x\mid n)\le n+O(1)$ se o comprimento for fornecido gratuitamente.
-
-Mas $K_U(x)$ não dependeria arbitrariamente da linguagem de programação $U$ escolhida? O <strong>Teorema da Invariância de Kolmogorov</strong> prova que não: para quaisquer duas máquinas universais $U_1$ e $U_2$, existe uma constante $c_{12}$ que depende apenas de $U_1$ e $U_2$ (sendo <strong>totalmente independente de $x$</strong>) tal que $|K_{U_1}(x) - K_{U_2}(x)| \le c_{12}$. A prova é cristalina: $c_{12}$ é simplesmente o tamanho fixo em bits de um <strong>interpretador (ou compilador cruzado)</strong> escrito em $U_1$ que simula $U_2$! Quando o tamanho dos dados $n \to \infty$, esse custo fixo torna-se desprezível.
+Seja $\{0,1\}^*$ o conjunto das strings binárias finitas, e $|p|$ o comprimento de um programa em bits. Para uma máquina parcialmente computável $A$, a expressão $A(p)=x$ significa que a máquina para em tempo finito e produz exatamente $x$.
 
 $$
-H(X) = -\sum_{x \in \mathcal{X}} P(X = x) \log_2 P(X = x)
+C_A(x)=\min\{|p|:A(p)=x\}
 $$
 
+Se não houver tal programa, adotamos o valor $\infty$. Quando uma entrada auxiliar $y$ é fornecida gratuitamente, definimos:
+
 $$
-K_U(x) = \min_{p \in \{0,1\}^*} \Big\{ |p| \;\Big|\; U(p) = x \Big\}, \qquad \Big| K_{U_1}(x) - K_{U_2}(x) \Big| \le c_{12}
+C_A(x\mid y)=\min\{|p|:A(p,y)=x\}
 $$
+
+Saber previamente o comprimento ou um dicionário não tem o mesmo custo que incluí-los na descrição.
+
+Na <strong>complexidade prefixa $K$</strong>, o conjunto dos programas que param é livre de prefixos: nenhum deles é prefixo próprio de outro. Essa restrição permite aplicar a desigualdade de Kraft.
+
+$$
+K_U(x)=\min\{|p|:U(p)=x\},\qquad
+\sum_{p\in\operatorname{dom}U}2^{-|p|}\le1
+$$
+
+Na versão condicional, o domínio de parada deve ser livre de prefixos para cada entrada auxiliar fixa $y$. Um programa autodelimitado não é simplesmente um código-fonte ao qual acrescentamos um parêntese de fechamento.
+
+Fixaremos máquinas de referência aditivamente ótimas nas classes correspondentes a $C$ e $K$. A optimalidade será explicitada abaixo.
+
+### 1.2 Concatenação e custos de delimitação
+
+Ao concatenar programas simples, precisamos informar onde termina cada parte. Para uma codificação computável fixa de pares ordenados, uma cota possível é:
+
+$$
+C(x,y)\le C(x)+C(y)
++2\log_2\bigl(\min\{C(x),C(y)\}+2\bigr)+O(1)
+$$
+
+Programas autodelimitados podem ser concatenados e interpretados. Com descrições condicionais, temos:
+
+$$
+K(x,y)\le K(x)+K(y\mid x)+O(1)
+\le K(x)+K(y)+O(1)
+$$
+
+As duas convenções de complexidade se relacionam por:
+
+$$
+C(x)\le K(x)+O(1),\qquad
+K(x)\le C(x)+2\log_2(C(x)+2)+O(1)
+$$
+
+Aqui $O(1)$ significa uma constante independente do objeto $x$, e não uma medição de custo zero ou de poucos bits.
+
+### 1.3 O que o teorema da invariância realmente garante
+
+Para $C$, escolhemos uma máquina ótima na classe das máquinas simples; para $K$, na classe das máquinas livres de prefixos. Se “universal” significar apenas capacidade de simulação, é necessário exigir também a propriedade de preservar comprimentos com sobrecusto aditivo constante.
+
+Para qualquer máquina livre de prefixos $A$, existe uma constante $c_A$, independente de $x$, tal que:
+
+$$
+K_U(x)\le K_A(x)+c_A
+$$
+
+A construção antepõe ao programa $p$ uma etiqueta autodelimitada fixa $s_A$ que identifica a máquina $A$. A máquina de referência simula $A(p)$. Se $A(p)=x$, essa simulação produz $x$ com comprimento $|p|+|s_A|$ mais um custo fixo; o programa mínimo não pode ser maior. É possível construir uma máquina ótima dessa maneira. Há um argumento correspondente para a complexidade simples dentro de sua classe.
+
+Aplicando a desigualdade nos dois sentidos entre máquinas aditivamente ótimas, obtemos:
+
+$$
+|K_{U_1}(x)-K_{U_2}(x)|\le c_{12}
+$$
+
+A constante precisa cobrir os dois custos de simulação. Não devemos identificar apenas o tamanho de um interpretador em uma direção com uma cota para a diferença absoluta.
+
+Uma máquina especializada pode imprimir uma string particular de um milhão de bits com uma instrução curta. O custo de descrever e simular essa máquina entra na constante. Portanto, a invariância <strong>não elimina a dependência da máquina para objetos finitos</strong>. A contribuição relativa de uma constante dividida por $n$ tende a zero quando $n\to\infty$, mas isso não revela o comprimento mínimo exato de qualquer string específica. Também não se deve identificar uma CPU real de memória finita com uma máquina matemática que admite armazenamento ilimitado.
+
+### 1.4 Alternância, dígitos de pi e resultados de uma moeda
+
+Identifiquemos $n$ com uma representação binária fixa. Seja $s(n)$ a string alternante de comprimento $n$, ou os primeiros $n$ bits da parte fracionária de $\pi$. Podemos calcular $s(n)$ a partir de $n$ e recuperar $n$ pelo comprimento da string. Essas transformações nos dois sentidos dão:
+
+$$
+K(s(n))=K(n)+O(1),\qquad K(s(n)\mid n)=O(1)
+$$
+
+Se a posição final é fornecida gratuitamente, basta um gerador de comprimento constante. Caso contrário, devemos descrever também $n$. Por exemplo, para $n\ge2$, uma codificação autodelimitada de inteiros fornece:
+
+$$
+K(n)\le \log_2 n+2\log_2\log_2 n+O(1)=O(\log n)
+$$
+
+Isso não significa que $K(n)=\log_2n+O(1)$ para todos os inteiros. Se $n=2^m$, uma descrição curta do expoente $m$ permite reconstruir $n$. Tampouco a notação assintótica mede um programa real como tendo exatamente vinte bits ou algumas centenas de bytes.
+
+Para a string $S_3$ obtida de lançamentos independentes de uma moeda justa, a conclusão é probabilística. Resultados simples podem ocorrer; não há garantia de alta complexidade para cada realização. Para uma string $x$ de comprimento $n$, a reprodução literal dá:
+
+$$
+C(x)\le n+O(1),\qquad K(x\mid n)\le n+O(1)
+$$
+
+Sem fornecer o comprimento, uma descrição prefixa precisa delimitá-lo:
+
+$$
+K(x)\le n+K(n)+O(1)
+$$
+
+Não pode existir uma cota uniforme $K(x)\le |x|+O(1)$ para todas as strings: em cada comprimento $n$, a soma $\sum_{|x|=n}2^{-K(x)}$ teria a mesma cota inferior positiva, e somar sobre todos os comprimentos violaria Kraft.
 
 ---
 

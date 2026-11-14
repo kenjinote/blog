@@ -615,10 +615,17 @@
       "translationHash": "bd349959c99f009b7d2662af658e9209fe92cc074d5ad8af49dbf5ed01d02c10",
       "reviewedTranslationsAdded": 0,
       "publicationPending": true
+    },
+    {
+      "stage": "Portuguese section1 rewritten and read; full review pending",
+      "evidence": "docs/translation-review/batch-035-pt-section1-revision.json",
+      "translationHash": "0ab8208f43d8132202b393dc05e1e1fd20164a22e51a17543e5dbd94b2dd230a",
+      "reviewedTranslationsAdded": 0,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 originals read. Frozen JA and EN/CN/TW/ES/KO full revisions read;5AI reviews registered. PT has three intermediate prose corrections; full revision and HTML checks pending. Other6 only mechanical repairs. Seven translations semantically unapproved; publication and whole goal pending.",
+  "scope": "All13 originals read;5AI translations registered. Portuguese intermediate corrections and full section1 revision read; introduction, graphs, remaining sections and HTML validation pending. Other6 only mechanical repairs. Seven translations unapproved; publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }
