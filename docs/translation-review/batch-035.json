@@ -488,6 +488,53 @@
         "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for Russian.",
         "Batch035 publication and the complete all-article goal remain pending."
       ]
+    },
+    "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-15",
+      "reviewer": "Codex (AI)",
+      "source": "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "4ce6a9e3b26b4a8233168c45271b4928bf1a2549850868c8f5ecee4dfbfd94ce",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Original111 lines fully read and revised542 lines actually read across successive ranges. Prior chapters1–5 verified unchanged against committed read version before final direction markup. Corrected guaranteed coin complexity, Shannon-frequency/normality simplification, simulation-only universality, fixed proof margins and compression-forces-causal-world-model claims. Preserved point-mass and stationary ergodic examples with conditions. Original Omega overbroad same-size equivalence replaced by one-way same-machine bounded-halting consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Original Arabic Berry smallest-positive-integer phrase contains11words and already claims11; retained. Original Hutter name correct. Distinguished ordinary C and prefix K, self-information and entropy, semantic soundness, likelihood and conditional complexity, discrete semimeasure m_U and monotone M. Corrected draft direction of replacing prefix K by plain C in Levin–Schnorr and clarified fixed machine wording. Final code-length wording says lengths determined according to probabilities, not proportional to them."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All38source display blocks retained with Arabic ML annotation;216TeX expressions preserved in actual HTML. Packed bit sizes and fractional pi corrected; optimality both directions, conditional prefix domains, K(n), literal bounds and Kraft; counting boundaries/strict savings and ML common constant. Shortlex, impossible ComputeK, sound-theory unbounded numeric search; Omega left-c.e., residual bound and same-machine condition, strict crossing sufficient without claiming equality erroneous. Computable-distribution entropy bound distinct from ergodic rate without computability requirement. MDL, NID/NCD and LLM ideal coding/metadata limits checked."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Both text pseudocodes fully read and exactly retained in HTML; no executable article program. Both Arabic Mermaid diagrams retain source IDs and6+5edges. Seven inline code values explicitly isolated LTR with bdi, matching source and HTML; RTL page and linked compiled CSS math/code LTR with math unicode isolation verified. These are static checks, not browser/KaTeX/Mermaid runtime or visual certification. Prior finite probes and17JA R2tests referenced, not rerun."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All8author/primary reference URLs match frozenJA and actual HTML. Research scope remains documented selected pages/abstracts/returned passages, not new fetching or full-paper reading. Original title/date/slug/image/taxonomy preserved, lastmodNovember15. Current36bundle preview468post+1taxonomy exact; canonical14hreflang13sidebar targets,2035multilingual pages,HTTPS3709HTML41XML pass. FrozenJA and11prior approved translations unchanged. No native/human/full-site/publication certification."
+        }
+      },
+      "summary": "Arabic original and full revised body read, meaning/math/code/references corrected;7inline LTR isolates and static RTL/CSS checked. AI review November15; batch assembly/publication pending.",
+      "languageSpecificFindings": [
+        "Original Berry eleven-word count and smallest-positive-integer meaning already correct; retained.",
+        "Fractional pi included integer11; corrected.",
+        "Original Omega equivalence overbroad; replaced with one-way same-machine consequence.",
+        "Original Hutter name correct; no name error assigned.",
+        "Final draft fixes clarify C-for-K substitution, fixing machine, probability-dependent code lengths;7inline code isolates added."
+      ],
+      "validation": "docs/translation-review/batch-035-ar-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "All12 translations now have individual semantic reviews; prior117 mechanical repairs were not counted as semantic approval.",
+        "Two proof pseudocodes, zero executable article programs. No true C/K/Omega oracle, general theorem or full compressor/LLM/corpus/benchmark certification.",
+        "Primary research restricted to documented selected pages/abstracts/returned passages, not full-paper reading or experimental reproduction.",
+        "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for Arabic.",
+        "Batch035 publication and the complete all-article goal remain pending."
+      ]
     }
   },
   "stages": [
@@ -1270,10 +1317,59 @@
       "translationHash": "e88fa3e0bceec009418822a597d7bc35e8d3e8180600eb4cd5b88002501fb541",
       "reviewedTranslationsAdded": 0,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-15",
+      "stage": "Full Arabic original/revised semantic comparison and static validation",
+      "languagesRead": [
+        "ar"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "revisedReadingRanges": [
+        "Original111 lines fully reread before chapter revisions",
+        "1–210",
+        "211–286",
+        "287–396",
+        "397–542",
+        "three front wording corrections and final probability-length wording plus seven bdi contexts; chapters1–5 unchanged checked against committed read version"
+      ],
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "4ce6a9e3b26b4a8233168c45271b4928bf1a2549850868c8f5ecee4dfbfd94ce",
+      "validation": "docs/translation-review/batch-035-ar-validation.json",
+      "checks": "docs/translation-review/batch-035-ar-checks.json",
+      "reading": "docs/translation-review/batch-035-ar-reading-notes.json",
+      "ledgerValidation": "docs/translation-review/batch-035-ar-ledger-validation.json",
+      "texExpressions": 216,
+      "displayMath": 38,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 267,
+      "strongSpans": 21,
+      "actualPreviewBundles": 36,
+      "postSnapshotsExact": 468,
+      "taxonomySnapshotsExact": 1,
+      "multilingualPages": 2035,
+      "httpsHtmlPages": 3709,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-035-ja-r2-checks.json",
+      "reviewedTranslationsAdded": 1,
+      "reviewedTranslationsTotal": 432,
+      "unreviewedTranslations": 12600,
+      "humanReviews": 0,
+      "otherTranslationsSemanticallyUnreviewed": 0,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original bodies read;11AI translations registered. Arabic chapters1–5 revised and read; applications/conclusion/references and final whole-file/HTML/RTL checks pending. No Arabic approval. Publication and whole goal pending.",
+  "scope": "All13 original and revised bodies read;12AI translations registered with frozen Japanese. Prior431 entries unchanged. Complete batch assembly, publication and whole all-article goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }

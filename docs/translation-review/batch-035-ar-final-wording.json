@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-15T02:05:08.055203+09:00",
+  "previousSha256": "cb641136cac9a778abafc408144eb8d2e16e6241aa2c7cc6b75769132f03f481",
+  "sha256": "4ce6a9e3b26b4a8233168c45271b4928bf1a2549850868c8f5ecee4dfbfd94ce",
+  "wordingCorrection": {
+    "شفرة خالية من البوادئ تتناسب أطوالها مع الاحتمالات": "شفرة خالية من البوادئ تُحدَّد أطوالها وفق الاحتمالات"
+  },
+  "inlineCodeIsolates": [
+    "01",
+    "0",
+    "1",
+    "0010010000111111...",
+    "01",
+    "ComputeK",
+    "ComputeK"
+  ],
+  "chapters1To5UnchangedBeforeDirectionMarkup": true,
+  "scope": "Read actual applications397–end; earlier chapters1–5 unchanged from fully read committed version. Clarified code lengths determined by probabilities, not proportional to probabilities. Explicit LTR bdi for each inline code; block pseudocode unchanged. Final HTML validation pending."
+}

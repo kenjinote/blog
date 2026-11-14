@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-15T02:05:14.795440+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ar",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ar.md",
+      "sha256": "4ce6a9e3b26b4a8233168c45271b4928bf1a2549850868c8f5ecee4dfbfd94ce",
+      "sourceSha256": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "originalSha256": "686e8b0954f5d00f13e4b3db897ef9259572087a55b9d2ca4a4d02497dc0b022",
+      "texExpressions": 216,
+      "displayMath": 38,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "mathHtmlExact": true,
+      "pseudocodeHtmlExact": true,
+      "proseFragmentsPreserved": 267,
+      "strongSpansPreserved": 21,
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "arabicRtlAndCompiledCssPassed": true,
+      "inlineCodeIsolates": 7,
+      "arabicBerry11WordsRetainedAndConditionsChecked": true,
+      "passed": true
+    }
+  ],
+  "sourceFrozenUnchanged": true,
+  "priorElevenReviewsUnchanged": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "priorFiniteEvidence": [
+    "docs/translation-review/batch-035-original-finite-probe.json",
+    "docs/translation-review/batch-035-ja-auxiliary.json"
+  ],
+  "scope": "Selected Arabic static source/HTML consistency, not automatic semantic approval. Prior finite evidence and17unit tests referenced,not rerun. Original/revised full reading separately recorded. No executable article programs, K/Omega oracle,theorem proof,real LLM/corpus/NCD experiments,browser/KaTeX/Mermaid execution,native/full-site/publication certification."
+}

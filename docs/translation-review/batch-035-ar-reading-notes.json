@@ -1,0 +1,27 @@
+{
+  "allOriginalAndRevisedBodiesRead": true,
+  "revisedReadingRanges": [
+    "Original111 lines fully reread before chapter revisions",
+    "1–210",
+    "211–286",
+    "287–396",
+    "397–542",
+    "three front wording corrections and final probability-length wording plus seven bdi contexts; chapters1–5 unchanged checked against committed read version"
+  ],
+  "checks": {
+    "meaning": "Original111 lines fully read and revised542 lines actually read across successive ranges. Prior chapters1–5 verified unchanged against committed read version before final direction markup. Corrected guaranteed coin complexity, Shannon-frequency/normality simplification, simulation-only universality, fixed proof margins and compression-forces-causal-world-model claims. Preserved point-mass and stationary ergodic examples with conditions. Original Omega overbroad same-size equivalence replaced by one-way same-machine bounded-halting consequence.",
+    "terminology": "Original Arabic Berry smallest-positive-integer phrase contains11words and already claims11; retained. Original Hutter name correct. Distinguished ordinary C and prefix K, self-information and entropy, semantic soundness, likelihood and conditional complexity, discrete semimeasure m_U and monotone M. Corrected draft direction of replacing prefix K by plain C in Levin–Schnorr and clarified fixed machine wording. Final code-length wording says lengths determined according to probabilities, not proportional to them.",
+    "mathematics": "All38source display blocks retained with Arabic ML annotation;216TeX expressions preserved in actual HTML. Packed bit sizes and fractional pi corrected; optimality both directions, conditional prefix domains, K(n), literal bounds and Kraft; counting boundaries/strict savings and ML common constant. Shortlex, impossible ComputeK, sound-theory unbounded numeric search; Omega left-c.e., residual bound and same-machine condition, strict crossing sufficient without claiming equality erroneous. Computable-distribution entropy bound distinct from ergodic rate without computability requirement. MDL, NID/NCD and LLM ideal coding/metadata limits checked.",
+    "code": "Both text pseudocodes fully read and exactly retained in HTML; no executable article program. Both Arabic Mermaid diagrams retain source IDs and6+5edges. Seven inline code values explicitly isolated LTR with bdi, matching source and HTML; RTL page and linked compiled CSS math/code LTR with math unicode isolation verified. These are static checks, not browser/KaTeX/Mermaid runtime or visual certification. Prior finite probes and17JA R2tests referenced, not rerun.",
+    "links": "All8author/primary reference URLs match frozenJA and actual HTML. Research scope remains documented selected pages/abstracts/returned passages, not new fetching or full-paper reading. Original title/date/slug/image/taxonomy preserved, lastmodNovember15. Current36bundle preview468post+1taxonomy exact; canonical14hreflang13sidebar targets,2035multilingual pages,HTTPS3709HTML41XML pass. FrozenJA and11prior approved translations unchanged. No native/human/full-site/publication certification."
+  },
+  "summary": "Arabic original and full revised body read, meaning/math/code/references corrected;7inline LTR isolates and static RTL/CSS checked. AI review November15; batch assembly/publication pending.",
+  "languageSpecificFindings": [
+    "Original Berry eleven-word count and smallest-positive-integer meaning already correct; retained.",
+    "Fractional pi included integer11; corrected.",
+    "Original Omega equivalence overbroad; replaced with one-way same-machine consequence.",
+    "Original Hutter name correct; no name error assigned.",
+    "Final draft fixes clarify C-for-K substitution, fixing machine, probability-dependent code lengths;7inline code isolates added."
+  ],
+  "goalNote": "元から正しいBerry例11語を維持。π整数部混入とΩ同値性などの過大主張を修正。右横書き本文と7箇所のコード方向分離、数式・コード用CSSを静的確認。"
+}
