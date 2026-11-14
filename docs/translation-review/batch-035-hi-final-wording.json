@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-11-14T20:51:04.633334+09:00",
+  "beforeSha256": "24c9763202a3e473c9690e33c061677a0d0ba6d4c5fe73394e8ca34b48cecec8",
+  "afterSha256": "446f03172edc2f03d9c6311669bcebca8fd125c5e885a4efb020821f06994e7c",
+  "replacements": [
+    {
+      "before": "यह आसन्न संकेतन",
+      "after": "यह आसन्न (asymptotic) संकेतन"
+    },
+    {
+      "before": "परिमित वर्णमाला पर स्थिर एर्गोडिक प्रक्रियाओं",
+      "after": "परिमित वर्णमाला पर स्थिर (stationary) एर्गोडिक प्रक्रियाओं"
+    },
+    {
+      "before": "बेरी विरोधाभास, अकलनीयता, चैतिन नियतांक",
+      "after": "बेरी विरोधाभास, असंगणनीयता, चैतिन नियतांक"
+    }
+  ],
+  "scope": "Three final terminology clarifications read after full542line actual-file reading; not approval."
+}

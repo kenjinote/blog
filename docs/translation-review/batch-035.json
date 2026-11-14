@@ -347,6 +347,53 @@
         "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for German.",
         "Batch035 publication and the complete all-article goal remain pending."
       ]
+    },
+    "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-14",
+      "reviewer": "Codex (AI)",
+      "source": "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "446f03172edc2f03d9c6311669bcebca8fd125c5e885a4efb020821f06994e7c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Original111-line Hindi text actually reread in prior staged revision, including metadata, both diagrams, table and tail. Current old tail reread before replacement. All final542lines actually read1–280/281–542, followed by three final terminology clarifications. Compared against frozen Japanese. Corrected physical-experiment implication, fractional-pi integer11, guaranteed coin complexity, Shannon/normality oversimplification, simulation-only invariance, fixed proof margins, overbroad Omega same-size equivalence and compression-forces-causal-world-model claims. Original Omega prose incorrectly says summing program lengths despite weighted formula; corrected to sum of halting weights. Preserved valid point-mass entropy-zero and stationary ergodic rate examples under proper conditions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used संगणनीय/असंगणनीय for computable/uncomputable, distinct from गणनीय countability; साधारण C versus उपसर्ग K; स्व-सूचना versus एन्ट्रॉपी; अर्थगत शुद्धता (soundness); likelihood distinct from conditional complexity; विविक्त अर्ध-माप m_U versus sequential M. Preserved original smallest-positive-integer Berry meaning and correct Hutter/BBP names. Original phrase has16 whitespace words, not claimed14. Proper-prefix wording and left-c.e. approximation explained. Final clarifications add asymptotic/stationary English terms and align description computability wording. Both original English diagrams translated."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All38 source display expressions preserved with Hindi Martin-Löf annotation;217TeX expressions match actual HTML. Packed125000bytes versus1000000 character bytes, per-y prefix domains, additive optimality in both directions, endpoint K(n) costs, literalC/Kconditional/Kunconditional bounds and Kraft obstruction. Counting n/c endpoints and strict more-than-c savings; effective open ML tests with common constant, weaker computable randomness. Shortlex Berry proof, sound-theory numerical lower-bound search, Omega left-c.e. and one-way same-machine bounded halting consequence; strict crossing sufficient without claiming equality fails. Conditional computable-distribution entropy bounds versus finite-alphabet stationary ergodic Brudno without computable-measure requirement. MDL model cost, NCD assumptions/finite-window example and ideal LLM code overhead/metadata distinguished."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Both text proof pseudocodes Berry(m) and SearchProof(r) fully read and exactly preserved in HTML, zero executable article programs. ComputeK is explicitly an impossible general oracle assumption. Two Hindi Mermaid graphs have source IDs and6+5edges. Intermediate reading/repair stages remain historical evidence, not automatic approval. Existing finite probes and17JA R2unit tests referenced, not rerun. No true C/K/Omega computation, new benchmark, browser/KaTeX/Mermaid execution or compressor/LLM experiment certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All8 primary or author-hosted reference URLs match frozen Japanese and actual generated HTML. Primary-source reading remains documented selected pages/abstracts/returned passages; no new fetch, whole-paper reading, current Hutter terms or experimental reproduction claimed. Original title/date/slug/image/taxonomy preserved; lastmod2026-11-14 and Mermaid enabled. Fresh36bundle preview uses persisted469snapshot manifest for slugs and current468post+1taxonomy copies. Canonical,14hreflang and13sidebar targets checked; multilingual/HTTPS/ledger common checks required before registration. FrozenJA and prior8approved translations unchanged. No human/native/full-site/publication certification."
+        }
+      },
+      "summary": "Full Hindi semantic revision and actual whole-file reading completed after staged chapters1–4 work; source and HTML checks distinct from reading. Publication pending.",
+      "languageSpecificFindings": [
+        "Berry phrase has16 whitespace words rather than claimed14; smallest-positive-integer meaning already correct.",
+        "Original description implies actual physical coin data collected; revised as illustrative model.",
+        "Original Omega prose says sum of program lengths; corrected to halting weights.",
+        "Original same-size Omega equivalence narrowed to documented one-way same-machine consequence.",
+        "Original Hutter and BBP names correct; no foreign-language defects assigned."
+      ],
+      "validation": "docs/translation-review/batch-035-hi-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Other3 original bodies have been read but their semantic revisions remain pending; the prior117 escape repairs across11 languages are not semantic approval.",
+        "Two proof pseudocodes, zero executable article programs. No true C/K/Omega oracle, general theorem or full compressor/LLM/corpus/benchmark certification.",
+        "Primary research restricted to documented selected pages/abstracts/returned passages, not full-paper reading or experimental reproduction.",
+        "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for Hindi.",
+        "Batch035 publication and the complete all-article goal remain pending."
+      ]
     }
   },
   "stages": [
@@ -947,10 +994,56 @@
       "translationHash": "451e1392551dbcf0a792fbaa2d069c44d2e3fa8a020435ee7020693337b306dd",
       "reviewedTranslationsAdded": 0,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-14",
+      "stage": "Full Hindi original/revised semantic comparison and static validation",
+      "languagesRead": [
+        "hi"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "revisedReadingRanges": [
+        "1–280",
+        "281–542",
+        "three final terminology clarifications"
+      ],
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "446f03172edc2f03d9c6311669bcebca8fd125c5e885a4efb020821f06994e7c",
+      "validation": "docs/translation-review/batch-035-hi-validation.json",
+      "checks": "docs/translation-review/batch-035-hi-checks.json",
+      "reading": "docs/translation-review/batch-035-hi-reading-notes.json",
+      "ledgerValidation": "docs/translation-review/batch-035-hi-ledger-validation.json",
+      "texExpressions": 217,
+      "displayMath": 38,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 271,
+      "strongSpans": 22,
+      "actualPreviewBundles": 36,
+      "postSnapshotsExact": 468,
+      "taxonomySnapshotsExact": 1,
+      "multilingualPages": 2035,
+      "httpsHtmlPages": 3709,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-035-ja-r2-checks.json",
+      "reviewedTranslationsAdded": 1,
+      "reviewedTranslationsTotal": 429,
+      "unreviewedTranslations": 12603,
+      "humanReviews": 0,
+      "otherTranslationsSemanticallyUnreviewed": 3,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original bodies read;8AI translations registered. Hindi chapters1–4 revised and read; later proof/application/conclusion/references and final whole-file/HTML checks pending. Other3 only mechanical repairs. Four translations unapproved; publication and whole goal pending.",
+  "scope": "All13 original bodies read. Frozen Japanese, English, simplified Chinese, traditional Chinese, Spanish, Korean, Portuguese, French, German and Hindi full revisions read;9AI reviews registered. Other3 only mechanical escape repairs, not full revised semantic review. Prior428 entries unchanged. Publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }

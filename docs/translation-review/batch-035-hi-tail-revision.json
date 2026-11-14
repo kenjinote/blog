@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-11-14T20:50:27.676576+09:00",
+  "previousSha256": "451e1392551dbcf0a792fbaa2d069c44d2e3fa8a020435ee7020693337b306dd",
+  "revisedSha256": "24c9763202a3e473c9690e33c061677a0d0ba6d4c5fe73394e8ca34b48cecec8",
+  "lines": 542,
+  "displayBlocksAdded": 16,
+  "scope": "Chapters5–7 and8references assembled; two proof pseudocodes and corrected proof graph added. Proper-prefix wording clarified in chapter3; left-c.e. terminology simplified in draft. Final whole-file reading and HTML validation pending, not approval.",
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true
+}
