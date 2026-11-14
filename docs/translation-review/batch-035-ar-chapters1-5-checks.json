@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-15T02:02:21.080267+09:00",
+  "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+  "intermediateTranslationHash": "e88fa3e0bceec009418822a597d7bc35e8d3e8180600eb4cd5b88002501fb541",
+  "chaptersRead": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "proofReadingRange": "287–396 actual saved output",
+  "displayBlocksExact": 28,
+  "diagrams": 2,
+  "diagramEdges": [
+    6,
+    5
+  ],
+  "pseudocodeBlocks": 2,
+  "approvedTranslationsUnchanged": 11,
+  "priorLedger": "{\"current\": 431, \"unreviewed\": 12601}",
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Arabic chapters1–5 actual saved text read with prior3 contextual wording fixes. Source consistency only. Applications/conclusion/references, full revised whole-file/HTML/RTL review and publication pending."
+}

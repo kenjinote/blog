@@ -1256,10 +1256,24 @@
       "humanReviews": 0,
       "otherTranslationsSemanticallyUnreviewed": 1,
       "publicationPending": true
+    },
+    {
+      "stage": "Arabic front revision; full review pending",
+      "evidence": "docs/translation-review/batch-035-ar-front-revision.json",
+      "translationHash": "c79ddaa04a6a7f5c721f5a0f24b25e180ac10f129b7a18da076e67a0ee9bb1f8",
+      "reviewedTranslationsAdded": 0,
+      "publicationPending": true
+    },
+    {
+      "stage": "Arabic proof revision; full review pending",
+      "evidence": "docs/translation-review/batch-035-ar-proof-revision.json",
+      "translationHash": "e88fa3e0bceec009418822a597d7bc35e8d3e8180600eb4cd5b88002501fb541",
+      "reviewedTranslationsAdded": 0,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original bodies read;11AI translations registered with frozen JA. Russian full revision completed. Arabic only mechanical escape repairs, not revised semantic approval. Prior430 entries unchanged. Batch publication and whole goal pending.",
+  "scope": "All13 original bodies read;11AI translations registered. Arabic chapters1–5 revised and read; applications/conclusion/references and final whole-file/HTML/RTL checks pending. No Arabic approval. Publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }

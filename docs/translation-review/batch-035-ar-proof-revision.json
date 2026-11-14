@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-15T02:01:34.664183+09:00",
+  "previousSha256": "aaa04d03a713bcaed31bf40bb295dac63c00c9469e833f0f7b519970087757d5",
+  "intermediateSha256": "e88fa3e0bceec009418822a597d7bc35e8d3e8180600eb4cd5b88002501fb541",
+  "displayBlocksMatched": 6,
+  "pseudocodeBlocks": 2,
+  "proofGraphEdges": 5,
+  "scope": "Arabic proof chapter revised. Original correct11-word Berry retained; overly broad same-size Omega equivalence replaced by same-machine implication with optimality/residual conditions. Applications/conclusion/references and final whole-file/HTML/RTL review pending; no approval.",
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true
+}

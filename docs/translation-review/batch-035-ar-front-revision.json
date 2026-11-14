@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-15T01:59:59.972913+09:00",
+  "previousSha256": "048b5c5d1f3c0e9c6b5566d3309a02a65602a0b707fb3fbb524193320d71a570",
+  "intermediateSha256": "c79ddaa04a6a7f5c721f5a0f24b25e180ac10f129b7a18da076e67a0ee9bb1f8",
+  "displayBlocksMatched": 22,
+  "firstGraphEdges": 6,
+  "berryWords": 11,
+  "scope": "Arabic chapters1–4 revised. Original Berry eleven-word count already correct and preserved. Old incorrect proof graph removed pending corrected chapter5. Proof/applications/conclusion/references and final whole-file/HTML/RTL review pending; no approval.",
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true
+}

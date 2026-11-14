@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-15T02:00:39.084500+09:00",
+  "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+  "previousIntermediateHash": "c79ddaa04a6a7f5c721f5a0f24b25e180ac10f129b7a18da076e67a0ee9bb1f8",
+  "intermediateTranslationHash": "aaa04d03a713bcaed31bf40bb295dac63c00c9469e833f0f7b519970087757d5",
+  "chaptersRead": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "readingRanges": [
+    "1–210",
+    "211–286"
+  ],
+  "displayBlocksExact": 22,
+  "firstGraphEdges": 6,
+  "approvedTranslationsUnchanged": 11,
+  "berryWords": 11,
+  "wordingCorrections": {
+    "تشـايتين": "تشايتين",
+    "ولا يمكن استبدال التعقيد العادي $C$ بـ$K$ هنا مباشرةً.": "ولا يمكن إحلال التعقيد العادي $C$ محل $K$ هنا مباشرةً.",
+    "سنثبت لكل من $C$ و$K$ آلة مثلى حتى ثابت جمعي ضمن فئتها.": "نختار ونثبّت لكل من $C$ و$K$ آلة مثلى حتى ثابت جمعي ضمن فئتها."
+  },
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Actual saved Arabic chapters1–4 fully read. Corrected draft substitution direction C for K, clarified fixing machine, removed decorative name elongation. Original Berry count correct and retained. Source checks only; proof/applications and final whole-file/HTML/RTL review pending."
+}
