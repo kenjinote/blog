@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-14T20:43:18.956370+09:00",
+  "beforeSha256": "f5ddeee00712ab25a1c4e68ba2570544b2a8e559447ae49bec301294c9190bb7",
+  "afterSha256": "95272db461bec5155c489ea8b4df9e69f8e0566753f79d580459cf7705e75594",
+  "replacements": [
+    {
+      "before": "erfüllt die optimale mittlere Codelänge:",
+      "after": "erfüllt die optimale mittlere Codelänge die Ungleichung:"
+    },
+    {
+      "before": "kann auch probabilistische Vorhersage und Codierung diese Regel nutzen.",
+      "after": "können auch probabilistische Vorhersage und Codierung diese Regel nutzen."
+    },
+    {
+      "before": "Programme können nicht halten oder dieselbe Ausgabe erzeugen;",
+      "after": "Manche Programme halten nicht oder erzeugen dieselbe Ausgabe;"
+    },
+    {
+      "before": "Falls $A(p)=x$, erzeugt dieses Programm $x$ mit Länge $|p|+|s_A|$ zuzüglich eines festen Aufwands.",
+      "after": "Falls $A(p)=x$, gibt das Simulationsprogramm $x$ aus und hat die Länge $|p|+|s_A|$ zuzüglich eines festen Aufwands."
+    },
+    {
+      "before": "Dieser Ratensatz benötigt nicht",
+      "after": "Dieser Satz über die Entropierate benötigt nicht"
+    },
+    {
+      "before": "eines theoretischen normal compressor wie",
+      "after": "eines theoretischen normalen Kompressors (normal compressor) wie"
+    }
+  ],
+  "scope": "Six contextual final wording fixes read after full542-line actual-file reading; not approval."
+}

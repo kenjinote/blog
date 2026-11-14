@@ -300,6 +300,53 @@
         "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for French.",
         "Batch035 publication and the complete all-article goal remain pending."
       ]
+    },
+    "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-14",
+      "reviewer": "Codex (AI)",
+      "source": "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "95272db461bec5155c489ea8b4df9e69f8e0566753f79d580459cf7705e75594",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Original111-line German text fully reread, including metadata, diagrams, table and tail; prior DE/HI original receipt preserved. Revised542 lines actually read1–280/281–542, with six final contextual wording edits separately read. Compared against frozen Japanese. Corrected guaranteed complexity of every coin outcome, oversimplified Shannon/finite-frequency claims, simulation-only invariance and the assertion that interpreter overhead disappears completely: only its ratio to length vanishes. Original Omega implication correctly runs from known bits to bounded-length halting; retained direction and added same-machine/optimality/proof conditions. Preserved valid point-mass entropy-zero and stationary ergodic rate examples."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished einfache Komplexität C and Präfixkomplexität K, Selbstinformation and Entropie, empirische Entropie nullter Ordnung versus model-dependent prediction, semantische Korrektheit versus mere consistency, Likelihood versus conditional complexity, discrete Halbmaß m_U versus sequential M. Original Berry phrase correctly has15 words and specifies the smallest positive integer; preserved both. Original Hutter name correct. Original English graph labels translated. Six final edits fix German grammar, clarify nonhalting candidates, identify program rather than output length and improve rate-theorem/normal-compressor wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All38 frozen source display blocks retained with German Martin-Löf annotation;217 TeX expressions match HTML. Correct fractional pi excludes integer11; packed125000bytes distinguished from1000000 character bytes. Added plain/prefix/conditional definitions, fixed-y Kraft domains, two-direction additive optimality and endpoint K(n) costs. Strict more-than-c savings with n/c endpoints, effective ML tests with same constant. Shortlex Berry proof and sound theory unbounded numeric lower-bound search replace fixed margins. Omega left-c.e./same-machine one-way decision proof; strict crossing is sufficient, equality not called erroneous. Computable-distribution conditional entropy bounds versus finite-alphabet ergodic rate without measure-computability assumption; MDL total costs, NCD practical limits and ideal LLM overhead distinguished."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Two text proof pseudocodes Berry(m) and SearchProof(r) fully read and exactly preserved in HTML; zero executable article programs. ComputeK explicitly impossible as a general procedure. Two German Mermaid diagrams preserve source IDs and6+5edges; proof graph says inequality cannot hold for all r. Existing finite probes and17 JA R2tests referenced, not rerun. No true C/K/Omega computation, new benchmark, browser/KaTeX/Mermaid execution or full compressor/LLM certification claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All8 primary or author-hosted URLs match frozen Japanese and actual HTML. Prior documented selected pages/abstracts/returned passages remain the research scope; no new reference fetch/full-paper reading/current Hutter terms claim. Original title/date/slug/image/taxonomy retained, lastmod2026-11-14 and Mermaid enabled. Fresh36bundle preview derives slugs from persisted469snapshot manifest and copies current468post+1taxonomy sources. Canonical,14hreflang and13sidebar targets checked. Common multilingual/HTTPS/ledger results required before registration. Prior7translation approvals and frozenJA unchanged. No human/native/full-site/publication certification."
+        }
+      },
+      "summary": "Full German semantic revision and actual full reading completed; original correct15word Berry example and Omega implication preserved. Static validation separate from reading. Publication pending.",
+      "languageSpecificFindings": [
+        "Original Berry phrase has15 whitespace words and original15word claim is correct; retained.",
+        "Fractional pi prefix included integer11 and was corrected.",
+        "Interpreter overhead does not disappear absolutely; only the normalized constant tends to zero.",
+        "Original Omega statement has correct implication direction, retained with same-machine scope.",
+        "Original Hutter name correct; no cross-language name defect assigned."
+      ],
+      "validation": "docs/translation-review/batch-035-de-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Other4 original bodies have been read but their semantic revisions remain pending; the prior117 escape repairs across11 languages are not semantic approval.",
+        "Two proof pseudocodes, zero executable article programs. No true C/K/Omega oracle, general theorem or full compressor/LLM/corpus/benchmark certification.",
+        "Primary research restricted to documented selected pages/abstracts/returned passages, not full-paper reading or experimental reproduction.",
+        "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for German.",
+        "Batch035 publication and the complete all-article goal remain pending."
+      ]
     }
   },
   "stages": [
@@ -840,10 +887,56 @@
       "humanReviews": 0,
       "otherTranslationsSemanticallyUnreviewed": 5,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-14",
+      "stage": "Full German original/revised semantic comparison and static validation",
+      "languagesRead": [
+        "de"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "revisedReadingRanges": [
+        "1–280",
+        "281–542",
+        "six final contextual wording replacements"
+      ],
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "95272db461bec5155c489ea8b4df9e69f8e0566753f79d580459cf7705e75594",
+      "validation": "docs/translation-review/batch-035-de-validation.json",
+      "checks": "docs/translation-review/batch-035-de-checks.json",
+      "reading": "docs/translation-review/batch-035-de-reading-notes.json",
+      "ledgerValidation": "docs/translation-review/batch-035-de-ledger-validation.json",
+      "texExpressions": 217,
+      "displayMath": 38,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 286,
+      "strongSpans": 22,
+      "actualPreviewBundles": 36,
+      "postSnapshotsExact": 468,
+      "taxonomySnapshotsExact": 1,
+      "multilingualPages": 2035,
+      "httpsHtmlPages": 3709,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-035-ja-r2-checks.json",
+      "reviewedTranslationsAdded": 1,
+      "reviewedTranslationsTotal": 428,
+      "unreviewedTranslations": 12604,
+      "humanReviews": 0,
+      "otherTranslationsSemanticallyUnreviewed": 4,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original bodies read. Frozen Japanese, English, simplified Chinese, traditional Chinese, Spanish, Korean, Portuguese and French full revisions read;7AI reviews registered. Other5 only mechanical escape repairs, not full revised semantic review. Prior426 entries unchanged. Publication and whole goal pending.",
+  "scope": "All13 original bodies read. Frozen Japanese, English, simplified Chinese, traditional Chinese, Spanish, Korean, Portuguese, French and German full revisions read;8AI reviews registered. Other4 only mechanical escape repairs, not full revised semantic review. Prior427 entries unchanged. Publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }
