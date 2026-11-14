@@ -630,10 +630,20 @@
       "displayBlocksMatched": 5,
       "reviewedTranslationsAdded": 0,
       "publicationPending": true
+    },
+    {
+      "stage": "Portuguese proof chapter revised and read; full review pending",
+      "evidence": "docs/translation-review/batch-035-pt-section3-revision.json",
+      "translationHash": "989e86185294c389198e66f2abb7232b136186eba3439285dbeef706afc3a63a",
+      "displayBlocksMatched": 6,
+      "pseudocodeBlocks": 2,
+      "proofDiagramEdges": 5,
+      "reviewedTranslationsAdded": 0,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 originals read;5AI translations registered. Portuguese sections1/2 revised and read; introduction, diagrams, proof/application chapters, references and whole HTML verification pending. Other6 only mechanical repairs. Seven translations unapproved; publication and whole goal pending.",
+  "scope": "All13 originals read;5AI translations registered. Portuguese sections1/2/3 revised and read; introduction/first graph, application chapter, conclusion/references and full HTML checks pending. Other6 only mechanical repairs. Seven translations unapproved; publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }

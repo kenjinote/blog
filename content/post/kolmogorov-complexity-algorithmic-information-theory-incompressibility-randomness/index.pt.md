@@ -205,13 +205,117 @@ A sequência computável dos dígitos de $\pi$ não é aleatória no sentido de 
 
 ---
 
-## 3. Paradoxo de Berry, Incomputabilidade de $K(x)$, Constante $\Omega$ de Chaitin e IA Moderna
+## 3. Incomputabilidade, limites da demonstração e probabilidade de parada
 
-Se $K(x)$ é tão poderosa, podemos escrever um compressor definitivo que receba qualquer string $x$ e calcule exatamente $K(x)$? A resposta é um <strong>não absoluto: a função $K(x)$ é incomputável!</strong>
+### 3.1 Aproximação por cima sem critério geral de conclusão
 
-Essa impossibilidade decorre do clássico <strong>Paradoxo de Berry</strong> (“o menor inteiro positivo que não pode ser definido em menos de vinte palavras” — frase com quatorze palavras separadas por espaços; a ambiguidade de “definido” exige um argumento formal separado). Gregory Chaitin formalizou isso da seguinte maneira: suponha que exista uma sub-rotina `ComputeK(x)` de tamanho fixo $L$ bits que calcule $K(x)$. Construímos então um programa principal $Q$ que enumera todas as strings $s$ em ordem lexicográfica, chama `ComputeK(s)` e imprime a primeira string $s^*$ que satisfaz $K(s^*) > L + 10000$. O comprimento total do programa $Q$ é de apenas $L + O(1)$ bits, mas ele consegue imprimir $s^*$! Pela definição de $K(s^*)$ como o comprimento do menor programa que gera $s^*$, deve valer $K(s^*) \le |Q| < L + 10000$, contradizendo diretamente $K(s^*) > L + 10000$! Daqui decorre o <strong>Teorema da Incompletude de Chaitin</strong>: nenhum sistema axiomático formal de complexidade $C$ bits pode provar que uma string específica satisfaz $K(x) > C + O(1)$.
+Podemos executar os programas candidatos em paralelo intercalado, dando alguns passos a cada um. O menor comprimento encontrado entre os programas que produzem $x$ fornece uma aproximação superior:
 
-Chaitin também condensou a probabilidade de parada de uma máquina universal livre de prefixos no lendário <strong>número Ômega $\Omega = \sum_{U(p)\text{ para}} 2^{-|p|}$</strong>. Embora $\Omega \in (0,1)$ seja perfeitamente definido, ele é <strong>totalmente incomputável e algoritmicamente aleatório</strong> ($K(\Omega_{1:n}) \ge n - O(1)$): conhecer os primeiros $n$ bits de $\Omega$ equivaleria a resolver o problema da parada de Turing para todos os programas de tamanho até $n$!
+$$
+K_t(x)\searrow K(x)\qquad(t\to\infty)
+$$
+
+Começamos com uma cota finita computável obtida por reprodução literal. Como as cotas são inteiras, para cada $x$ fixo elas acabam atingindo o valor verdadeiro e permanecem nele. Porém, não há um procedimento geral que reconheça esse momento para todas as entradas. Um programa mais curto que ainda não parou pode produzir $x$ posteriormente.
+
+### 3.2 Um argumento do tipo Berry
+
+A expressão “o menor inteiro positivo que não pode ser definido em menos de vinte palavras” tem quatorze palavras separadas por espaços. O exemplo já usa corretamente o menor inteiro positivo. Como “definido” é ambíguo em linguagem natural, a frase não constitui por si só uma demonstração formal. Transferimos a ideia para procedimentos computáveis.
+
+Suponha que um procedimento `ComputeK` retorne o verdadeiro $K(x)$ e pare para toda string $x$. O seguinte <strong>pseudocódigo</strong> usa essa hipótese impossível; não é um calculador implementado de complexidade.
+
+```text
+Berry(m):
+    Enumerar todas as strings binárias x por comprimento 0,1,2,... e, no mesmo comprimento, em ordem lexicográfica:
+        if ComputeK(x) >= m:
+            Produzir x e parar
+```
+
+A ordem usada é shortlex: primeiro o comprimento, depois a ordem lexicográfica. A ordem lexicográfica comum, sozinha, não fornece a enumeração de todas as strings finitas necessária aqui.
+
+A contagem mostra que a complexidade não é limitada. Sob a hipótese, a busca termina para cada $m$ e produz $x_m$ com $K(x_m)\ge m$. Entretanto, bastam um programa fixo e uma descrição autodelimitada de $m$ para gerar essa saída.
+
+$$
+m\le K(x_m)\le K(m)+c
+\le \log_2m+2\log_2\log_2m+c'
+$$
+
+A última cota vale para $m\ge2$. Para constantes fixas e $m$ suficientemente grande, surge uma contradição; portanto, `ComputeK` não existe. Não é necessário afirmar, sem medir os custos da máquina, que uma margem fixa de 10.000 bits sempre bastaria.
+
+### 3.3 Incompletude de Chaitin
+
+Fixemos a máquina de referência e uma teoria $T$ efetivamente axiomatizável que possa expressar cotas de complexidade de strings concretas. Supomos a <strong>correção semântica</strong> das cotas inferiores que ela demonstra: essas afirmações são verdadeiras.
+
+Existe então um limiar $b_T$ tal que $T$ não pode demonstrar “$K(x)>b_T$” para nenhuma string concreta $x$.
+
+O núcleo do argumento é supor que as cotas numéricas demonstráveis não sejam limitadas. Para qualquer entrada $r$, poderíamos enumerar todos os teoremas e encontrar um da forma “$K(x)>m$”, com um número concreto $m\ge r$.
+
+```text
+SearchProof(r):
+    Enumerar efetivamente todos os teoremas de T:
+        if um teorema afirma "K(x) > m" para uma string concreta x e um inteiro m, com m >= r:
+            Produzir x e parar
+```
+
+A correção garante que a saída $x_r$ tem complexidade maior que $r$. Mas o código fixo do procedimento já pode incluir o enumerador de teoremas de $T$, de modo que:
+
+$$
+r<K(x_r)\le K(r)+c_T=O(\log r)+c_T
+$$
+
+Isso é impossível para $r$ suficientemente grande. Logo, as cotas numéricas demonstráveis são limitadas.
+
+```mermaid
+flowchart TD
+    subgraph FormalSystem["Máquina fixa e teoria T correta para cotas inferiores"]
+        Axioms["Enumerador efetivo de teoremas de T"]
+        Enumerator["Gerar todos os teoremas sucessivamente"]
+        Axioms --> Enumerator
+    end
+    subgraph ContradictionLoop["Supor cotas demonstráveis não limitadas"]
+        Target["Buscar teorema K(x) > m com m >= r"]
+        Output["Produzir a string concreta x_r encontrada"]
+        Clash["r < K(x_r) <= K(r) + c_T não vale para todo r"]
+    end
+    Enumerator --> Target --> Output --> Clash
+    Clash --> Conclusion["Há um limiar para cotas demonstráveis de strings concretas"]
+```
+
+O limiar depende da máquina, da teoria e da representação. Não estamos medindo um limite universal de ZFC em 20.000 ou 50.000 bits. Quando o comprimento $n$ excede suficientemente o limiar, a contagem mostra que muitas strings realmente têm complexidade superior a ele; ainda assim, demonstrar essa cota para uma string específica pode estar além da teoria.
+
+O resultado conecta a incompletude de Gödel à descrição algorítmica. Não é uma lei geral de “conservação da informação” que proíba deduzir teoremas longos ou numerosos de axiomas curtos. Ao acrescentar axiomas, obtemos outra teoria, com outra constante.
+
+### 3.4 A probabilidade de parada depende da máquina
+
+Para uma máquina ótima livre de prefixos $U$, a probabilidade de uma sequência infinita de bits independentes e equiprováveis começar por um programa que para é:
+
+$$
+\Omega_U=\sum_{p\in\operatorname{dom}U}2^{-|p|}
+$$
+
+Os cilindros dos programas que param são disjuntos, justificando a interpretação probabilística. Kraft dá $\Omega_U\le1$. Com a optimalidade e as demais condições indicadas, $\Omega_U$ é também um real incomputável, aleatório no sentido de Martin-Löf, e $0<\Omega_U<1$. Todas essas propriedades não valem para uma máquina arbitrária apenas por ela ser livre de prefixos.
+
+Enumerar programas que param produz somas parciais crescentes por baixo. Assim, $\Omega_U$ é um <strong>real computavelmente enumerável pela esquerda (left-c.e.)</strong>. Não existe uma função computável que informe quando a aproximação garante cada precisão solicitada.
+
+Suponha conhecidos exatamente os primeiros $N$ bits fracionários e seja $a$ o extremo inferior binário correspondente. Como $\Omega_U$ não tem expansão binária terminante:
+
+$$
+a=\frac{\lfloor2^N\Omega_U\rfloor}{2^N},
+\qquad a<\Omega_U<a+2^{-N}
+$$
+
+Executamos os programas de forma intercalada até a soma parcial dos pesos de parada $q_s$ <strong>ultrapassar</strong> $a$. Nesse momento:
+
+$$
+0\le\Omega_U-q_s<2^{-N}
+$$
+
+Um programa ainda não enumerado de comprimento no máximo $N$, se parasse mais tarde, acrescentaria pelo menos $2^{-N}$, contradizendo a cota da massa restante. Portanto, esses bits permitem decidir a parada de todas as entradas de comprimento no máximo $N$ da <strong>mesma máquina</strong>.
+
+Isso não significa que alguns milhares de bits fixos decidam infinitas proposições matemáticas arbitrárias. Ao codificar buscas de contraexemplos como problemas de parada, importam a máquina, o comprimento do programa e a forma lógica da proposição. Calcular alguns bits em condições especiais também não fornece um algoritmo para toda a expansão.
+
+---
+
+## 4. Aplicações e relações com a informação e a inteligência
 
 Na engenharia e na inteligência artificial modernas, limites superiores computáveis de $K(x)$ impulsionam tecnologias essenciais:
 1. <strong>Ponte com a Entropia de Shannon</strong>: Para processos estacionários ergódicos, a esperança $\frac{1}{n}\mathbb{E}[K(X_{1:n})]$ converge para a taxa de entropia de Shannon $H(X)$.
