@@ -1,0 +1,97 @@
+{
+  "automaticDraftOnly": "OpenCC0.1.7 s2twp from approved CN used only as an initial draft, not semantic approval. Entire resulting authoritative548lines read, then all following contextual corrections read.",
+  "initialDraftSha256": "c4faee3f617677a47d914e3d5edfdd79ec4663b057a0dfb36784f58d85699f4c",
+  "changes": [
+    {
+      "before": "二進位制",
+      "after": "二進位",
+      "occurrences": 15
+    },
+    {
+      "before": "十進位制",
+      "after": "十進位",
+      "occurrences": 1
+    },
+    {
+      "before": "字首",
+      "after": "前綴",
+      "occurrences": 30
+    },
+    {
+      "before": "正常數",
+      "after": "正的常數",
+      "occurrences": 1
+    },
+    {
+      "before": "連線",
+      "after": "串接",
+      "occurrences": 3
+    },
+    {
+      "before": "虛擬碼",
+      "after": "擬似碼",
+      "occurrences": 1
+    },
+    {
+      "before": "匯出長定理",
+      "after": "導出長定理",
+      "occurrences": 1
+    },
+    {
+      "before": "有限或可數支援",
+      "after": "有限或可數的支撐集",
+      "occurrences": 1
+    },
+    {
+      "before": "計數支援的",
+      "after": "計數支持的",
+      "occurrences": 1
+    },
+    {
+      "before": "裡薩寧",
+      "after": "Rissanen",
+      "occurrences": 1
+    },
+    {
+      "before": "貝葉斯",
+      "after": "貝氏",
+      "occurrences": 2
+    },
+    {
+      "before": "似然",
+      "after": "概似",
+      "occurrences": 3
+    },
+    {
+      "before": "壓縮聚類",
+      "after": "壓縮分群",
+      "occurrences": 1
+    },
+    {
+      "before": "系統發育樹",
+      "after": "演化樹",
+      "occurrences": 1
+    },
+    {
+      "before": "規範化丟掉",
+      "after": "正規化丟掉",
+      "occurrences": 1
+    },
+    {
+      "before": "“",
+      "after": "「",
+      "occurrences": 15
+    },
+    {
+      "before": "”",
+      "after": "」",
+      "occurrences": 15
+    },
+    {
+      "before": "generic 串, excluding 字串/串接",
+      "after": "字串",
+      "occurrences": 44
+    }
+  ],
+  "reviewedTranslationsAdded": 0
+}

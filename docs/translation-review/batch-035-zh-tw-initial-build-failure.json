@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-14T10:29:52.583475+09:00",
+  "command": "build_batch_035_zh_tw.py",
+  "failure": "Prebuild assertion: old temporary 35-bundle directory currently has only8 bundles; adding selected article gives9, not36. No new content copy/Hugo/checks executed.",
+  "observedTemporaryDirectories": {
+    "content-35-bundles-ecc-final-r3/post": [
+      "error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory",
+      "information-theory-shannon-entropy",
+      "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "paradox-monty-hall-problem",
+      "paradox-prisoners-dilemma",
+      "サンクトペテルブルクのパラドックス",
+      "モンティ・ホール問題",
+      "囚人のジレンマ"
+    ],
+    "content-36-bundles-kolm-zh-cn/post": [
+      "error-correcting-codes-hamming-reed-solomon-ldpc-shannon-capacity-information-theory",
+      "information-theory-shannon-entropy",
+      "kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness",
+      "lossless-data-compression-shannon-entropy-huffman-lz77-arithmetic-coding-ans",
+      "paradox-monty-hall-problem",
+      "paradox-prisoners-dilemma",
+      "サンクトペテルブルクのパラドックス",
+      "モンティ・ホール問題",
+      "囚人のジレンマ"
+    ]
+  },
+  "authoritativeSnapshotManifest": "batch-035-zh-cn-checks.json",
+  "scope": "Observed temporary-directory incompleteness; cause not established. Does not invalidate the earlier recorded36-bundle snapshot and completed checks."
+}

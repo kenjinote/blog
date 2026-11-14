@@ -84,6 +84,47 @@
         "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for simplified Chinese.",
         "Batch035 publication and the complete all-article goal remain pending."
       ]
+    },
+    "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-14",
+      "reviewer": "Codex (AI)",
+      "source": "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "a18eaa2e38ceec12fb26541fb99adb84c4efc7a9990da23e680b9c704199399b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the original traditional Chinese111-line body with all metadata, graphs, table, mathematical and concluding passages; reread its mechanically repaired version this turn. Reread frozen Japanese544lines in two full ranges. Read the entire actual revised548-line traditional Chinese version initially in ranges1–280/281–548 and again all548final lines after contextual corrections. Compared all seven source themes: storage, source/model dependence, ordinary and prefix description costs, optimal-machine invariance, counting/ML tests, uncomputability/incompleteness/Omega, entropy rates, semimeasures, MDL/NID/NCD and language-model coding. Preserve the valid point-mass entropy-zero example while counting the model cost, and preserve stationary ergodic rate convergence under finite-alphabet conditions. Correct the largest-undefinable-integer mistranslation and guaranteed complexity for every coin outcome. The revised text is a full treatment, not a condensed summary or approval of an automatic conversion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Initial draft used OpenCC0.1.7 s2twp on the already reviewed simplified Chinese body, followed by full source comparison and contextual editing. Conversion alone was not review. Use Taiwan-oriented 程式/位元/位元組/二進位/機率/資訊/後設資料, and consistent 前綴/自我定界/健全性/概似/貝氏/正規化 terminology with definitions. Correct draft-specific semantic conversion mistakes: program concatenation 連線 became 串接, countable distribution support 支援 became 支撐集, and deriving theorems 匯出 became 導出; these were draft defects, not wrongly assigned to the original. Explain 健全性 as truth of the proved numerical complexity bounds. Replace the original 隨機種源 and inappropriate BBP滴定 description with information-source/model and digit-generation explanations. Original 馬庫斯·胡特 was already Chinese and correct; do not assign the simplified-Chinese Hangul intrusion to this language."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All38 display blocks equal frozen Japanese core formulas with only the ML annotation translated into traditional Chinese. All220 inline/display TeX expressions match generated HTML. Read exact n/c counting domains, strict versus at-least savings, K(n) endpoint/self-delimiting length costs, ordinary C versus prefix K bounds, ML uniformly enumerable open sets and one constant for all prefixes, shortlex Berry search and unbounded sound-theory Chaitin proof search. Correct the Chinese Berry phrase maximum to minimum and fourteen to18 actual Han characters, explaining why the remaining undefined set has no largest member. For Omega use an optimal prefix machine, non-dyadic first-N-bit lower endpoint and strict crossing as a sufficient condition, with the consequence limited to same-machine inputs of length<=N; no fabricated claim that equality would fail. Distinguish finite-entropy computable-distribution expected conditional bounds from the stationary ergodic entropy-rate limit, which does not require measure computability. Keep m_U and M distinct, allow pair-encoding/NID errors, and include model/metadata/tokenization overhead in predictive coding. Prior finite evidence reused, not rerun or promoted to C/K/Omega computation, general theorem proof or full compressor/LLM experiment."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read both complete Berry(m) and SearchProof(r) abstract text pseudocodes, both translated Mermaid diagrams and both tables. Berry assumes an impossible total ComputeK, enumerates all strings by length then lexicographic order, and carries integer-parameter cost. SearchProof effectively enumerates a sound theory and looks for numerical m>=r. No executable article programs exist or were run. Static HTML preserves all pseudocode, two graphs with6+5edges, twelve table header/data rows,220TeX,188prose fragments and21strong spans. No C0/tab or kana/Hangul/Cyrillic/Arabic/Devanagari/Thai intrusion remains. Read the final contextual edits and entire final548lines; automatic draft conversion and syntactic checks are separate from this actual reading. The already documented finite counting/gamma/Huffman/SFE/sequential-code and rational residual illustrations remain auxiliary evidence, not real Omega, physical coin experiments, browser execution, corpus benchmarks or general proofs."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All eight primary or author-hosted references match frozen Japanese and are present in actual HTML; primary-reading scope remains the previously recorded selected pages/abstracts/returned passages. No new whole-paper reading, experimental reproduction or current Hutter Prize/quote/corpus-size claim. Preserve original title/date/slug/image/taxonomy; enable Mermaid and actual November14lastmod. Initial build helper stopped at its prebuild36-bundle assertion because the old temporary directory currently contained only8 bundles; this failure and observed directory names are retained separately, with no cause invented. Recovery reconstructs all36 slugs from the persisted successful CN469snapshot manifest and freshly copies current authoritative sources. That fresh build passes468post+1taxonomy snapshot equality, selected TW validation,2035multilingual pages, HTTPS3709HTML41XML and existing ledger check. Prior17JA R2tests are referenced, not rerun. Canonical14hreflang and13sidebar targets pass; frozen Japanese, approved EN/CN and other9mechanical versions remain unchanged. Publication and whole goal remain pending."
+        }
+      },
+      "summary": "Full traditional Chinese Kolmogorov complexity review, with corrected Berry minimum/count and pi fraction, exact probability/proof assumptions and contextually reviewed Taiwan terminology.",
+      "languageSpecificFindings": "Original Berry phrase says 最大正整數 and claims十四漢字, but actually has18 Han characters; corrected to最小正整數 and18. Original fractional pi example includes integer11 bits; corrected to0010010000111111. Original 隨機種源 and BBP滴定 are inappropriate mathematical terms; revised with source/model and digit-generation explanations without inventing measured code sizes. Original Chinese Hutter name is correct and no Hangul intrusion is assigned to TW. Retained valid entropy-zero point distribution and stationary ergodic limiting examples with model/finite-alphabet conditions. Automatic draft conversion was followed by actual full reading and corrections to concatenation, support, deduction, prefix and regional terminology; those new draft mistakes are explicitly distinct from original errors.",
+      "validation": "docs/translation-review/batch-035-zh-tw-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Other9 original bodies have been read but their semantic revisions remain pending; the prior117 escape repairs across11 languages are not semantic approval.",
+        "Two proof pseudocodes, zero executable article programs. No true C/K/Omega oracle, general theorem or full compressor/LLM/corpus/benchmark certification.",
+        "Primary research restricted to documented selected pages/abstracts/returned passages, not full-paper reading or experimental reproduction.",
+        "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for traditional Chinese.",
+        "Batch035 publication and the complete all-article goal remain pending."
+      ]
     }
   },
   "stages": [
@@ -345,10 +386,57 @@
       "humanReviews": 0,
       "otherTranslationsSemanticallyUnreviewed": 10,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-14",
+      "stage": "Full traditional Chinese original/revised semantic comparison and static validation",
+      "languagesRead": [
+        "zh-tw"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "revisedReadingRanges": [
+        "1–280",
+        "281–548",
+        "all contextual replacements",
+        "final complete548lines"
+      ],
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "a18eaa2e38ceec12fb26541fb99adb84c4efc7a9990da23e680b9c704199399b",
+      "validation": "docs/translation-review/batch-035-zh-tw-validation.json",
+      "checks": "docs/translation-review/batch-035-zh-tw-checks.json",
+      "reading": "docs/translation-review/batch-035-zh-tw-reading-notes.json",
+      "ledgerValidation": "docs/translation-review/batch-035-zh-tw-ledger-validation.json",
+      "texExpressions": 220,
+      "displayMath": 38,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 188,
+      "strongSpans": 21,
+      "actualPreviewBundles": 36,
+      "postSnapshotsExact": 468,
+      "taxonomySnapshotsExact": 1,
+      "multilingualPages": 2035,
+      "httpsHtmlPages": 3709,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-035-ja-r2-checks.json",
+      "reviewedTranslationsAdded": 1,
+      "reviewedTranslationsTotal": 423,
+      "unreviewedTranslations": 12609,
+      "humanReviews": 0,
+      "otherTranslationsSemanticallyUnreviewed": 9,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original bodies read. Frozen Japanese, English and simplified Chinese full revisions read;2AI reviews registered. Other10 only mechanical escape repairs, not full revised semantic review. Prior421 entries unchanged. Publication and whole goal pending.",
+  "scope": "All13 original bodies read. Frozen Japanese, English, simplified and traditional Chinese full revisions read;3AI reviews registered. Other9 only mechanical escape repairs, not full revised semantic review. Prior422 entries unchanged. Publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }

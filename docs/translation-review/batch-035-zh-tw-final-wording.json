@@ -1,0 +1,25 @@
+{
+  "changes": [
+    {
+      "before": "前 $n$ 個二進位位",
+      "after": "前 $n$ 個位元",
+      "occurrences": 1
+    },
+    {
+      "before": "未透過這個檢驗",
+      "after": "未通過這個檢驗",
+      "occurrences": 1
+    },
+    {
+      "before": "透過所有檢驗",
+      "after": "通過所有檢驗",
+      "occurrences": 1
+    },
+    {
+      "before": "自資訊",
+      "after": "自資訊量",
+      "occurrences": 4
+    }
+  ],
+  "scope": "All final replacements read in context before validation; no registered review yet."
+}

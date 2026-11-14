@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-14T10:30:01.671012+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "zh-tw",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.zh-tw.md",
+      "sha256": "a18eaa2e38ceec12fb26541fb99adb84c4efc7a9990da23e680b9c704199399b",
+      "sourceSha256": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "originalSha256": "41c21f39dc73714f4909b9543d96a6478906de4a85125f1ee88d6d9e991d9b96",
+      "texExpressions": 220,
+      "displayMath": 38,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "mathHtmlExact": true,
+      "pseudocodeHtmlExact": true,
+      "proseFragmentsPreserved": 188,
+      "strongSpansPreserved": 21,
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "chineseBerry18CharactersAndPointMassExamplePreserved": true,
+      "passed": true
+    }
+  ],
+  "sourceFrozenUnchanged": true,
+  "other9MechanicalRepairsUnchanged": true,
+  "priorEnglishAndSimplifiedChineseReviewsUnchanged": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "priorFiniteEvidence": [
+    "docs/translation-review/batch-035-original-finite-probe.json",
+    "docs/translation-review/batch-035-ja-auxiliary.json"
+  ],
+  "scope": "Selected traditional Chinese static source/HTML consistency, not automatic semantic approval. Prior finite evidence and17unit tests referenced,not rerun. Original/revised full reading separately recorded. No executable article programs, K/Omega oracle,theorem proof,real LLM/corpus/NCD experiments,browser/KaTeX/Mermaid execution,native/full-site/publication certification."
+}
