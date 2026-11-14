@@ -1,0 +1,24 @@
+{
+  "allOriginalAndRevisedBodiesRead": true,
+  "revisedReadingRanges": [
+    "1–98 (assembled introduction output)",
+    "99–115",
+    "115–324",
+    "325–544"
+  ],
+  "checks": {
+    "meaning": "Original111 lines read in prior PT/FR receipt and reread during Portuguese revision. All final544 lines read through assembled introduction output and ranges99–115,115–324,325–544. Compared against frozen Japanese. Corrected guaranteed coin complexity, overbroad Shannon dismissal, simulation-only invariance and finite-machine independence, fixed proof margins, overbroad Omega equivalence and compression-implies-causality. Preserved valid point-mass entropy-zero and stationary ergodic examples with conditions.",
+    "terminology": "Distinguished complexidade simples C from complexidade prefixa K, autoinformação from entropia and empirical frequency, correção semântica from mere consistency, verossimilhança from conditional algorithmic complexity, discrete semimedida m_U from sequential M. Original Portuguese correctly says algoritmo BBP and names Hutter; no Chinese spigot or foreign-name defect assigned. Replaced English graph labels with Portuguese.",
+    "mathematics": "All38 source display expressions preserved with translated Martin-Löf annotation;219 total TeX expressions match actual HTML. Correct fractional pi excluding integer11; packed125000 bytes versus1000000 character bytes; strict more-than-c savings with endpoint domains, fixed common ML constant, per-y prefix domain, additive optimality both ways, endpoint K(n) costs and Kraft obstruction. Berry phrase has14 words not original15, smallest already correct. Shortlex/unbounded numerical sound-theory searches; left-c.e. Omega same-machine one-way consequence. Strict crossing sufficient, equality not claimed erroneous. Computable distribution conditional entropy bounds, finite-alphabet stationary ergodic Brudno without computable-measure assumption; model/metadata costs and practical NCD limitations.",
+    "code": "Two text proof pseudocodes Berry(m) and SearchProof(r), both fully read and exactly preserved in HTML; zero executable article programs. ComputeK is explicitly an impossible hypothesis. Two Portuguese Mermaid graphs preserve source IDs and6+5 edges. Existing finite probes and17 JA R2 tests referenced, not rerun; no true C/K/Omega computation, browser Mermaid/KaTeX execution or LLM/compressor benchmark claim.",
+    "links": "All8 primary or author-hosted URLs match frozen Japanese and rendered HTML; primary-reading limitations remain selected documented passages/abstracts/pages, not whole papers or new fetches. Original title/date/slug/image/taxonomy preserved; lastmod2026-11-14 and Mermaid enabled. Fresh36-bundle static preview uses persisted469snapshot manifest, current468post plus1taxonomy copies. Multilingual2035 and HTTPS3709HTML41XML pass; canonical,14hreflang and13sidebar targets checked. Prior5 approved translations and frozen Japanese unchanged; no native/human/full-site/publication certification."
+  },
+  "summary": "Full Portuguese semantic revision and actual full reading completed; source and HTML checks separate from reading evidence. Publication pending.",
+  "languageSpecificFindings": [
+    "Berry phrase has14 whitespace words, not15; smallest-positive-integer wording was already correct.",
+    "Original fractional pi example included integer11; corrected.",
+    "Original BBP and Hutter names were correct; no defects from other languages transferred.",
+    "English graph labels replaced; guaranteed complexity and Shannon-frequency oversimplification removed."
+  ],
+  "goalNote": "Berry例は最小の正整数という元の正しい意味を保ち15語→14語へ訂正。πの整数部混入、シャノン理論の過小評価、最適性・停止確率・圧縮と因果理解の過大主張を修正。"
+}

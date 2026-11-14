@@ -13,33 +13,92 @@ tags:
   - "Mathematics"
   - "Computer Science"
 math: true
+mermaid: true
 draft: false
 lastmod: "2026-11-14"
 ---
-## Introdução: O Enigma das Três Strings de Um Milhão de Bits — O Ponto Cego da Teoria de Shannon
 
-Imagine que você tem diante de si três strings binárias com exatamente $1.000.000$ de bits cada uma:
-- A primeira string $S_1$ é a repetição quinhentas mil vezes de `01`: `01010101...01`.
-- A segunda string $S_2$ contém o primeiro milhão de dígitos binários após a vírgula do número $\pi$: `0010010000111111...`.
-- A terceira string $S_3$ é a sequência obtida ao lançar um milhão de vezes uma moeda honesta (cara = `1`, coroa = `0`).
+## 1. Três sequências de um milhão de bits
 
-Qual dessas três strings contém mais “informação”? Qual é a mais “complexa” e qual é verdadeiramente “aleatória”?
-Se buscarmos a resposta na <strong>teoria clássica da informação de Claude Shannon (1948)</strong>, esbarraremos em uma limitação surpreendente: a entropia de Shannon $H(X) = -\sum P(x)\log_2 P(x)$ mede a incerteza média de uma <strong>distribuição de probabilidade (um conjunto ou *ensemble*)</strong>, mas nada diz sobre a complexidade intrínseca de um <strong>objeto individual específico $x$</strong>! No modelo de lançamentos de uma moeda justa, a sequência perfeitamente periódica $S_1$ e a sequência caótica $S_3$ têm exatamente a mesma probabilidade $2^{-1.000.000}$; e para a constante determinística $\pi$ ($S_2$), sua distribuição é pontual com entropia $0$, embora a frequência estatística de seus bits passe em todos os testes de pseudoaleatoriedade!
+Considere três sequências binárias de comprimento $n=1{,}000{,}000$:
 
-Para dar um fundamento matemático rigoroso à complexidade e à aleatoriedade de um objeto individual, Ray Solomonoff (1960), <strong>Andrey Kolmogorov (1965)</strong> e Gregory Chaitin (1966) criaram independentemente a <strong>Teoria Algorítmica da Informação (AIT)</strong>. Seu insight central é profundo: <strong>a verdadeira complexidade de um objeto não se mede pela quantidade de caracteres que ele possui, mas pelo comprimento do menor programa de computador capaz de gerá-lo!</strong>
+1. $S_1$: a repetição de `01` quinhentas mil vezes.
+2. $S_2$: o primeiro milhão de bits da expansão binária da <strong>parte fracionária</strong> de $\pi$.
+3. $S_3$: um resultado do modelo de um milhão de lançamentos independentes de uma moeda justa.
 
-```mermaid
-flowchart TD
-    S1["String S1: 010101...01 (1M bits)"] -->|"Short Loop Program"| K1["K(S1) = O(log n) bits (Highly Compressible)"]
-    S2["String S2: Binary Digits of Pi (1M bits)"] -->|"Spigot Algorithm"| K2["K(S2) = O(log n) bits (Deterministic Law)"]
-    S3["String S3: Fair Coin Flips (1M bits)"] -->|"No Pattern / Hardcoded"| K3["K(S3) >= n - O(1) bits (Algorithmically Random)"]
-```
+Armazenadas com os bits compactados, todas ocupam 125.000 bytes, ou 125 kB. Se cada `0` e `1` for salvo como um caractere ASCII ou UTF-8, serão um milhão de bytes. Cabeçalhos e estruturas de gerenciamento exigem espaço adicional.
+
+A representação binária de $\pi$ é $11.0010010000111111\ldots{}_2$. Portanto, $S_2$ começa com `0010010000111111...`, excluindo a parte inteira. Esses exemplos são ilustrativos; não representam um experimento físico de um milhão de lançamentos realizado para este artigo.
+
+Uma instrução de repetição gera $S_1$, e algoritmos de cálculo de dígitos geram $S_2$. Já $S_3$ não precisa ser complexa: uma moeda pode produzir, por acaso, apenas zeros. A afirmação correta é probabilística: <strong>fixado o modelo de computação, poucos resultados admitem descrições muito mais curtas que seu comprimento</strong>.
+
+No modelo de moeda justa e independente, qualquer sequência específica de comprimento $n$ tem a mesma probabilidade, inclusive uma sequência alternada ou um prefixo de $\pi$:
+
+$$
+P(X=x)=2^{-n},\qquad x\in\{0,1\}^n
+$$
+
+Como distinguir a existência de regras curtas de geração entre resultados igualmente prováveis? A <strong>teoria algorítmica da informação (AIT)</strong>, desenvolvida por Solomonoff, Kolmogorov, Chaitin e outros desde a década de 1960, usa o comprimento do menor programa que produz a sequência e para.
 
 ---
 
-## 1. Programas mínimos, complexidade simples e complexidade prefixa
+## 2. Informação de Shannon e sequências individuais
 
-### 1.1 Duas convenções que precisam ser distinguidas
+### 2.1 Autoinformação, entropia e codificação
+
+Para uma distribuição discreta $P$, a autoinformação de um resultado com $P(x)>0$ e sua média, a entropia, são quantidades distintas. Usaremos logaritmos de base 2 e unidades em bits.
+
+$$
+I_P(x)=-\log_2P(x),\qquad
+H(P)=-\sum_xP(x)\log_2P(x)
+$$
+
+Na soma, convencionamos $0\log_2 0=0$. A autoinformação de um resultado de probabilidade zero é infinita.
+
+Para codificar um símbolo de um alfabeto finito com um código binário prefixo, o comprimento médio ótimo satisfaz:
+
+$$
+H(P)\le L_{\mathrm{opt}}<H(P)+1
+$$
+
+Isso não significa que cada palavra-código tenha comprimento igual à entropia. Ao agrupar $r$ símbolos independentes e identicamente distribuídos, a margem de arredondamento por símbolo diminui:
+
+$$
+H(P)\le \frac{L_{\mathrm{opt},r}}{r}<H(P)+\frac1r
+$$
+
+Fontes com dependência exigem considerar distribuições de blocos ou a taxa de entropia. Códigos de Huffman e codificação aritmética também precisam ser entendidos em relação ao modelo e à distinção entre valores individuais e médios.
+
+### 2.2 Escolha do modelo e frequências empíricas
+
+O valor $-\log_2P(x)$ depende do modelo $P$, não apenas de $x$. Sob a distribuição de uma moeda justa, até a sequência alternada tem um milhão de bits de autoinformação. Uma distribuição pontual que produz exclusivamente essa sequência tem entropia zero. Porém, <strong>o custo de comunicar o próprio modelo não se torna zero</strong>.
+
+Se observarmos apenas frequências de bits individuais, a repetição de `01` apresenta metade de zeros e metade de uns. Sua entropia empírica de ordem zero é:
+
+$$
+\widehat H_0((01)^{n/2})
+=-\tfrac12\log_2\tfrac12-\tfrac12\log_2\tfrac12=1
+$$
+
+Um modelo que prevê o próximo bit a partir do anterior consegue captar a regularidade. Entre os blocos sobrepostos de comprimento $k$ da sequência alternada, há no máximo dois tipos. Sua entropia empírica é, portanto, no máximo 1 bit por bloco, ou $1/k$ por bit. Não se deve confundir a entropia do bloco inteiro com o valor por bit.
+
+A normalidade de $\pi$, propriedade segundo a qual todos os blocos de cada comprimento fixo aparecem com frequências iguais no limite, não foi demonstrada. Testes finitos de frequência ou uma aparência irregular não a provam. Mesmo a normalidade seria compatível com uma sequência computável. Se o modelo permite calcular os dígitos, a previsão e a codificação baseadas em probabilidades podem aproveitar essa regra.
+
+AIT não invalida a teoria de Shannon. <strong>O comprimento de código relativo a um modelo probabilístico e o comprimento de descrição de um objeto em uma máquina fixa respondem a perguntas diferentes.</strong>
+
+| Aspecto | Informação de Shannon | Comprimento algorítmico de descrição |
+| :--- | :--- | :--- |
+| Objeto | Distribuição e resultados sob esse modelo | Sequência finita produzida por uma máquina fixa |
+| Referência | Modelo probabilístico e regras de codificação | Máquina, codificação dos programas e entrada auxiliar |
+| Quantidades | $I_P(x)$, $H(P)$ e taxa de entropia | Complexidade simples $C(x)$ e prefixa $K(x)$ |
+| Limitações | Descrever o modelo tem um custo separado | Constantes dependentes da máquina e incomputabilidade |
+| Tratamento de $\pi$ | Depende do modelo escolhido | É possível descrever a regra dos dígitos e onde parar |
+
+---
+
+## 3. Programas mínimos, complexidade simples e complexidade prefixa
+
+### 3.1 Duas convenções que precisam ser distinguidas
 
 Seja $\{0,1\}^*$ o conjunto das strings binárias finitas, e $|p|$ o comprimento de um programa em bits. Para uma máquina parcialmente computável $A$, a expressão $A(p)=x$ significa que a máquina para em tempo finito e produz exatamente $x$.
 
@@ -66,7 +125,7 @@ Na versão condicional, o domínio de parada deve ser livre de prefixos para cad
 
 Fixaremos máquinas de referência aditivamente ótimas nas classes correspondentes a $C$ e $K$. A optimalidade será explicitada abaixo.
 
-### 1.2 Concatenação e custos de delimitação
+### 3.2 Concatenação e custos de delimitação
 
 Ao concatenar programas simples, precisamos informar onde termina cada parte. Para uma codificação computável fixa de pares ordenados, uma cota possível é:
 
@@ -91,7 +150,7 @@ $$
 
 Aqui $O(1)$ significa uma constante independente do objeto $x$, e não uma medição de custo zero ou de poucos bits.
 
-### 1.3 O que o teorema da invariância realmente garante
+### 3.3 O que o teorema da invariância realmente garante
 
 Para $C$, escolhemos uma máquina ótima na classe das máquinas simples; para $K$, na classe das máquinas livres de prefixos. Se “universal” significar apenas capacidade de simulação, é necessário exigir também a propriedade de preservar comprimentos com sobrecusto aditivo constante.
 
@@ -113,7 +172,7 @@ A constante precisa cobrir os dois custos de simulação. Não devemos identific
 
 Uma máquina especializada pode imprimir uma string particular de um milhão de bits com uma instrução curta. O custo de descrever e simular essa máquina entra na constante. Portanto, a invariância <strong>não elimina a dependência da máquina para objetos finitos</strong>. A contribuição relativa de uma constante dividida por $n$ tende a zero quando $n\to\infty$, mas isso não revela o comprimento mínimo exato de qualquer string específica. Também não se deve identificar uma CPU real de memória finita com uma máquina matemática que admite armazenamento ilimitado.
 
-### 1.4 Alternância, dígitos de pi e resultados de uma moeda
+### 3.4 Alternância, dígitos de pi e resultados de uma moeda
 
 Identifiquemos $n$ com uma representação binária fixa. Seja $s(n)$ a string alternante de comprimento $n$, ou os primeiros $n$ bits da parte fracionária de $\pi$. Podemos calcular $s(n)$ a partir de $n$ e recuperar $n$ pelo comprimento da string. Essas transformações nos dois sentidos dão:
 
@@ -145,9 +204,31 @@ Não pode existir uma cota uniforme $K(x)\le |x|+O(1)$ para todas as strings: em
 
 ---
 
-## 2. Incompressibilidade finita e aleatoriedade de sequências infinitas
+```mermaid
+flowchart TD
+    subgraph InputStrings["Três tipos de sequência de comprimento n"]
+        S1["S1: prefixo da sequência alternada"]
+        S2["S2: prefixo binário da parte fracionária de π"]
+        S3["S3: resultado de moeda justa e independente"]
+    end
+    subgraph Descriptions["Descrições em uma máquina ótima fixa"]
+        P1["Procedimento fixo de alternância e descrição de n"]
+        P2["Procedimento fixo para os dígitos de π e descrição de n"]
+        P3["A descrição mínima varia conforme o resultado"]
+    end
+    subgraph Results["Propriedades e alcance das garantias"]
+        K1["K(S1) = K(n) + O(1)"]
+        K2["K(S2) = K(n) + O(1)"]
+        K3["Resultados com descrições muito curtas têm baixa probabilidade"]
+    end
+    S1 --> P1 --> K1
+    S2 --> P2 --> K2
+    S3 --> P3 --> K3
+```
 
-### 2.1 O argumento exato de contagem
+## 4. Incompressibilidade finita e aleatoriedade de sequências infinitas
+
+### 4.1 O argumento exato de contagem
 
 Sejam inteiros $n\ge0$ e $0\le c\le n$. Existem $2^n$ strings binárias de comprimento $n$. O número de programas binários de comprimento estritamente menor que $n-c$ é:
 
@@ -177,7 +258,7 @@ O mesmo argumento funciona para $K(x\mid n)$ quando a condição $n$ é fixa. Po
 
 Um compressor reversível que encurtasse todos os arquivos contrariaria essa contagem. Compressores reais exploram regularidades de determinados dados. A proporção obtida sob a distribuição uniforme de todas as strings não é automaticamente a frequência de dados estruturados na natureza ou na produção humana.
 
-### 2.2 Testes de Martin-Löf
+### 4.2 Testes de Martin-Löf
 
 A impossibilidade de encurtar uma string finita por uma quantidade especificada e a aleatoriedade de uma sequência infinita são definições distintas. No espaço das sequências binárias infinitas, usamos a medida $\mu$ da moeda justa. O conjunto cilíndrico $[w]$ contém as sequências que começam pela string finita $w$ e tem medida $2^{-|w|}$.
 
@@ -205,9 +286,9 @@ A sequência computável dos dígitos de $\pi$ não é aleatória no sentido de 
 
 ---
 
-## 3. Incomputabilidade, limites da demonstração e probabilidade de parada
+## 5. Incomputabilidade, limites da demonstração e probabilidade de parada
 
-### 3.1 Aproximação por cima sem critério geral de conclusão
+### 5.1 Aproximação por cima sem critério geral de conclusão
 
 Podemos executar os programas candidatos em paralelo intercalado, dando alguns passos a cada um. O menor comprimento encontrado entre os programas que produzem $x$ fornece uma aproximação superior:
 
@@ -217,9 +298,9 @@ $$
 
 Começamos com uma cota finita computável obtida por reprodução literal. Como as cotas são inteiras, para cada $x$ fixo elas acabam atingindo o valor verdadeiro e permanecem nele. Porém, não há um procedimento geral que reconheça esse momento para todas as entradas. Um programa mais curto que ainda não parou pode produzir $x$ posteriormente.
 
-### 3.2 Um argumento do tipo Berry
+### 5.2 Um argumento do tipo Berry
 
-A expressão “o menor inteiro positivo que não pode ser definido em menos de vinte palavras” tem quatorze palavras separadas por espaços. O exemplo já usa corretamente o menor inteiro positivo. Como “definido” é ambíguo em linguagem natural, a frase não constitui por si só uma demonstração formal. Transferimos a ideia para procedimentos computáveis.
+A expressão “o menor inteiro positivo que não pode ser definido em menos de vinte palavras” tem quatorze palavras separadas por espaços. Como “definido” é ambíguo em linguagem natural, a frase não constitui por si só uma demonstração formal. Transferimos a ideia para procedimentos computáveis.
 
 Suponha que um procedimento `ComputeK` retorne o verdadeiro $K(x)$ e pare para toda string $x$. O seguinte <strong>pseudocódigo</strong> usa essa hipótese impossível; não é um calculador implementado de complexidade.
 
@@ -241,7 +322,7 @@ $$
 
 A última cota vale para $m\ge2$. Para constantes fixas e $m$ suficientemente grande, surge uma contradição; portanto, `ComputeK` não existe. Não é necessário afirmar, sem medir os custos da máquina, que uma margem fixa de 10.000 bits sempre bastaria.
 
-### 3.3 Incompletude de Chaitin
+### 5.3 Incompletude de Chaitin
 
 Fixemos a máquina de referência e uma teoria $T$ efetivamente axiomatizável que possa expressar cotas de complexidade de strings concretas. Supomos a <strong>correção semântica</strong> das cotas inferiores que ela demonstra: essas afirmações são verdadeiras.
 
@@ -284,7 +365,7 @@ O limiar depende da máquina, da teoria e da representação. Não estamos medin
 
 O resultado conecta a incompletude de Gödel à descrição algorítmica. Não é uma lei geral de “conservação da informação” que proíba deduzir teoremas longos ou numerosos de axiomas curtos. Ao acrescentar axiomas, obtemos outra teoria, com outra constante.
 
-### 3.4 A probabilidade de parada depende da máquina
+### 5.4 A probabilidade de parada depende da máquina
 
 Para uma máquina ótima livre de prefixos $U$, a probabilidade de uma sequência infinita de bits independentes e equiprováveis começar por um programa que para é:
 
@@ -315,21 +396,149 @@ Isso não significa que alguns milhares de bits fixos decidam infinitas proposi�
 
 ---
 
-## 4. Aplicações e relações com a informação e a inteligência
+## 6. Entropia, MDL, NCD e inteligência artificial
 
-Na engenharia e na inteligência artificial modernas, limites superiores computáveis de $K(x)$ impulsionam tecnologias essenciais:
-1. <strong>Ponte com a Entropia de Shannon</strong>: Para processos estacionários ergódicos, a esperança $\frac{1}{n}\mathbb{E}[K(X_{1:n})]$ converge para a taxa de entropia de Shannon $H(X)$.
-2. <strong>Indução Universal de Solomonoff e Comprimento Mínimo de Descrição (MDL)</strong>: A Navalha de Ockham é formalizada pela distribuição a priori universal $P_M(x) \propto 2^{-K(x)}$.
-3. <strong>Distância de Compressão Normalizada (NCD)</strong>: Aproximando $K(x)$ com compressores reais (`zstd`, `lzma`, `gzip`), a fórmula $\text{NCD}(x,y) = \frac{C(xy) - \min(C(x),C(y))}{\max(C(x),C(y))}$ constrói árvores filogenéticas e agrupa malwares sem engenharia de atributos.
-4. <strong>Grandes Modelos de Linguagem (LLMs): Compressão é Inteligência</strong>: Como apontaram Marcus Hutter (Hutter Prize) e Ilya Sutskever, minimizar a perda de entropia cruzada $-\sum \log_2 P_\theta(x_t \mid x_{<t})$ de um Transformer autorregressivo é, via codificação aritmética, <strong>estritamente equivalente a buscar a compressão sem perdas ótima dos dados</strong>. Para comprimir ao máximo o texto humano, o modelo é forçado a internalizar a gramática, o raciocínio lógico e um modelo causal do mundo.
+### 6.1 Comprimento médio de descrição e taxa de entropia
 
-| Dimensão / Conceito | Entropia de Shannon $H(X)$ | Complexidade de Kolmogorov $K(x)$ | Aproximações Modernas (MDL / LLM / NCD) |
-| :--- | :--- | :--- | :--- |
-| <strong>Objeto Medido</strong> | Distribuição de probabilidade (*Ensemble*) | <strong>Objeto ou string individual $x$</strong> | Arquivos reais, genomas, corpus de texto |
-| <strong>Julgamento sobre $10^6$ bits de $\pi$</strong> | Constante determinística ($H=0$); frequências uniformes | $K(\pi_{1:n}) = O(\log n)$ (muito simples graças ao algoritmo) | Codificação aritmética e redes neurais |
-| <strong>Computabilidade</strong> | Exatamente computável se $P(X)$ for conhecida | <strong>Estritamente incomputável</strong> (problema da parada) | Limites superiores via `zstd`/LZMA ou Transformer $P_\theta$ |
-| <strong>Teoremas e Filosofia</strong> | Teorema da codificação de fonte | Teorema da invariância, incompletude de Chaitin, $\Omega$ | Navalha de Ockham, “Compressão = Predição = Inteligência” |
+Seja $P$ uma distribuição discreta computável sobre strings finitas, especificada por um procedimento finito $d_P$. Quando $d_P$ é compartilhado como entrada auxiliar gratuita e $H(P)<\infty$, temos:
 
 $$
-P_M(x) = \sum_{p:\, U(p)=x} 2^{-|p|} \approx 2^{-K(x)}, \qquad \text{NCD}(x, y) = \frac{C(xy) - \min\{C(x), C(y)\}}{\max\{C(x), C(y)\}}
+H(P)\le\mathbb E_{X\sim P}[K(X\mid d_P)]\le H(P)+c
 $$
+
+O suporte pode ser finito ou enumerável, e as probabilidades devem ser calculáveis uniformemente até a precisão solicitada. A constante $c$ inclui o custo de um decodificador fixo; não se afirma igualdade numérica exata.
+
+A cota inferior resulta de aplicar Kraft às descrições prefixas mínimas sob a condição fixa $d_P$ e usar o argumento do comprimento médio de código. Para a superior, construímos um código prefixo segundo as probabilidades compartilhadas e o decodificamos com um procedimento fixo. Sem compartilhar a distribuição, seu custo de descrição também deve ser contado. Uma distribuição arbitrária ser “conhecida” não garante que sua entropia possa sempre ser calculada exatamente em tempo finito.
+
+Um resultado distinto, do tipo Brudno, vale para <strong>processos estacionários ergódicos sobre um alfabeto finito</strong>. Se $h$ é a taxa de entropia em bits por símbolo, então, para quase toda sequência de amostras:
+
+$$
+\lim_{n\to\infty}\frac{K(X_{1:n})}{n}=h
+$$
+
+Também $\mathbb E[K(X_{1:n})]/n\to h$. Uma codificação literal das sequências de $n$ símbolos fornece uma cota linear uniforme, permitindo passar da convergência quase certa à convergência das médias. A diferença de ordem logarítmica entre complexidade simples e prefixa desaparece ao dividir por $n$. Não é necessário impor a esse teorema de taxa a computabilidade da medida exigida na desigualdade condicional anterior.
+
+### 6.2 Semimedida universal discreta e previsão de Solomonoff
+
+Para uma máquina prefixa ótima que produz uma saída finita e para, definimos a probabilidade de produzir exatamente $x$ e parar:
+
+$$
+m_U(x)=\sum_{p:U(p)=x}2^{-|p|}
+$$
+
+A massa total é no máximo um, portanto trata-se de uma <strong>semimedida</strong>, semicomputável inferiormente. O teorema da codificação relaciona essa semimedida universal discreta à complexidade prefixa:
+
+$$
+-\log_2m_U(x)=K_U(x)+O(1),
+\qquad m_U(x)=\Theta(2^{-K_U(x)})
+$$
+
+A previsão sequencial de Solomonoff, por outro lado, usa uma máquina monótona e uma semimedida $M(x)$ para a probabilidade de a saída <strong>começar por $x$</strong>. A máquina não precisa parar nesse ponto, e vale $M(x)\ge M(x0)+M(x1)$. Não podemos identificar o objeto discreto $m_U$ com o objeto sequencial $M$ e transferir sem condições o mesmo teorema da codificação.
+
+A preferência por descrições curtas está relacionada à navalha de Ockham. Isso não significa que uma hipótese curta tenha necessariamente maior probabilidade depois de observar os dados: a verossimilhança também importa.
+
+### 6.3 Seleção bayesiana e comprimento mínimo de descrição
+
+Atribuímos a cada modelo $H$ um comprimento efetivo de descrição prefixa $L(H)$ e uma probabilidade a priori proporcional ao peso de seu código. A fórmula de Bayes dá:
+
+$$
+-\log_2P(H\mid D)
+=L(H)-\log_2P(D\mid H)+\mathrm{const}
+$$
+
+A constante aditiva não depende de $H$. Nessa escolha particular, maximizar a probabilidade posterior corresponde a minimizar o lado direito. Em geral, porém, não podemos substituir sempre $-\log_2P(D\mid H)$ por $K(D\mid H)$.
+
+O <strong>princípio do comprimento mínimo de descrição (MDL)</strong> compara o custo conjunto do modelo e dos dados codificados com ele.
+
+$$
+\widehat H=\arg\min_{H\in\mathcal H}
+\{L(H)+L(D\mid H)\}
+$$
+
+Um modelo simples demais pode deixar um código longo para os dados; um modelo que memoriza tudo pode ter uma descrição própria muito longa. Eliminar resíduos por memorização não é o mesmo que reduzir o comprimento total. O MDL de Rissanen é um princípio prático de seleção estatística, não uma garantia de descobrir qualquer lei natural ou relação causal verdadeira.
+
+### 6.4 Distância ideal e compressores reais
+
+Para denominador positivo, a <strong>distância de informação normalizada (NID)</strong> ideal é definida por:
+
+$$
+\operatorname{NID}(x,y)=
+\frac{\max\{K(x\mid y),K(y\mid x)\}}
+{\max\{K(x),K(y)\}}
+$$
+
+Ela também se relaciona a expressões com a descrição do par $K(x,y)$, admitindo erros aditivos e normalizados apropriados. A concatenação sem delimitadores $xy$ não equivale exatamente a uma codificação que permita recuperar unicamente os dois componentes do par.
+
+Escrevamos $Z$ para o comprimento da saída de um compressor real, distinguindo-o da complexidade simples $C$. A <strong>distância de compressão normalizada (NCD)</strong> é:
+
+$$
+\operatorname{NCD}_Z(x,y)=
+\frac{Z(xy)-\min\{Z(x),Z(y)\}}
+{\max\{Z(x),Z(y)\}}
+$$
+
+Se o compressor consegue reutilizar estruturas comuns, arquivos semelhantes devem ter valores pequenos. Quando não consegue, o valor tende a ficar próximo de um.
+
+Compressores reais têm cabeçalhos, janelas de dicionário, blocos, configurações e efeitos de ordem. Nem todo compressor satisfaz, para toda entrada, a idempotência, monotonicidade, simetria e distributividade exigidas pelo conceito teórico de normal compressor. Mesmo arquivos idênticos podem não satisfazer $Z(xx)\approx Z(x)$. Para arquivos finitos, a NCD não garante exatamente os axiomas de uma distância nem valores sempre entre zero e um.
+
+Uma verificação auxiliar concatenou uma string fixa de 65.536 bytes consigo mesma. Com gzip e sua janela finita, a NCD do arquivo consigo mesmo ficou próxima de 0,9997. Isso não refuta a NID ideal: mostra uma limitação da aproximação prática.
+
+Cilibrasi, Vitányi e colaboradores investigaram agrupamento por compressão de genomas, linguagens e música. Evitar atributos projetados manualmente tem vantagens, mas o método continua dependendo da codificação, da representação dos arquivos e do compressor. Não há garantia de reconstruir corretamente qualquer árvore filogenética.
+
+### 6.5 Previsão de modelos de linguagem e comprimento de código
+
+Para uma sequência de tokens $D=x_{1:T}$ e um modelo autorregressivo fixo, o comprimento ideal associado às previsões é:
+
+$$
+\mathcal L_\theta(D)=
+-\sum_{t=1}^T\log_2p_\theta(x_t\mid x_{<t})
+$$
+
+Com logaritmos naturais, a unidade é o nat; dividimos por $\ln2$ para obter bits. Trata-se da log-verossimilhança negativa sobre dados finitos, cuja média por token é usada como perda de entropia cruzada.
+
+Para resultados de probabilidade positiva, compartilhando o modelo e o comprimento da sequência, uma codificação aritmética ideal ou construção relacionada permite uma descrição prefixa de comprimento no máximo $\lceil\mathcal L_\theta(D)\rceil+2$. Nem toda implementação ocupa exatamente “perda mais dois bits”: precisão finita, terminação, arredondamento e delimitação de quadros têm custos.
+
+Sejam $L_{\mathrm{model}}$ e $L_{\mathrm{meta}}$ os comprimentos efetivos das descrições autodelimitadas do modelo e dos metadados necessários. Com um decodificador fixo:
+
+$$
+K(D)\le L_{\mathrm{model}}+L_{\mathrm{meta}}
++\lceil\mathcal L_\theta(D)\rceil+O(1)
+$$
+
+Os metadados incluem, conforme necessário, comprimento da sequência, vocabulário e especificação de uma tokenização reversível. Se a normalização elimina espaços ou caracteres originais, não podemos recuperá-los sem informação adicional.
+
+Reduzir a perda de um modelo compartilhado de tamanho fixo reduz o comprimento de código dos dados. Se o tamanho do modelo também varia, precisamos comparar o custo total. Minimizar apenas a perda de treinamento não é o mesmo problema que minimizar um objetivo MDL de duas partes.
+
+A perspectiva sobre compressão e inteligência representada pelo AIXI e pelo Hutter Prize de Marcus Hutter motiva essas conexões. Mas AIXI é um modelo ideal incomputável, não um Transformer real. O trabalho de Delétang e colaboradores sobre compressão com modelos de linguagem também investiga a correspondência entre previsão e compressão.
+
+Prever corretamente o nome do culpado em um romance policial encurta o código desse nome. A melhora pode vir do raciocínio, mas também de memorização, vieses lexicais ou dados repetidos. Comprimir textos de treinamento não demonstra que o modelo adquiriu necessariamente um modelo causal do mundo, raciocínio correto, capacidade de generalização ou inteligência artificial geral.
+
+| Teoria ou princípio | Correspondência prática | Distinção necessária |
+| :--- | :--- | :--- |
+| $K(x)$, $K(x\mid y)$ | Descrições com decodificador e contexto compartilhado | O comprimento real não é necessariamente mínimo |
+| Semimedida discreta $m_U$ | Modelos que favorecem descrições curtas | Saída com parada versus previsão sequencial $M$ |
+| MDL | Custo do modelo mais código dos dados | Verossimilhança versus complexidade condicional |
+| NID e NCD | Similaridade e agrupamento por compressão | Janela, representação, ordem e comprimento finito |
+| Modelos de linguagem e codificação aritmética | Probabilidade prevista e comprimento | Modelo compartilhado, custo total autossuficiente e avaliação de inteligência |
+
+---
+
+## 7. Conclusão: o que a compressão explica?
+
+Mesmo com um milhão de bits, a alternância e os prefixos de $\pi$ têm geradores curtos. Descrever a posição final custa algo diferente de recebê-la gratuitamente como condição. Resultados de uma moeda apresentam incompressibilidade com alta probabilidade por contagem, sem garantia individual.
+
+A invariância controla diferenças constantes entre máquinas ótimas. O argumento de Berry mostra que o comprimento mínimo verdadeiro é incomputável em geral. Chaitin e $\Omega_U$ tornam mais precisos os limites da demonstração e da computação. Não fornecem uma avaliação de qualquer objeto finito independente de máquinas e hipóteses.
+
+MDL, NCD e comprimentos de código de modelos de linguagem conectam o ideal à prática. A compressão ajuda a estudar regularidades e modelos compartilhados, mas sua taxa não substitui uma definição completa de compreensão ou inteligência.
+
+
+### Referências
+
+- [Shen: Algorithmic Information Theory and Kolmogorov Complexity](https://www.lirmm.fr/~ashen/uppsala-notes.pdf) — Complexidade simples e prefixa, decodificadores ótimos, incomputabilidade e teorema de codificação.
+- [Rute: Computable randomness and betting for computable probability spaces](https://arxiv.org/html/1203.5535v4) — Diferença entre aleatoriedade computável e testes de Martin-Löf.
+- [Tadaki: Chaitin Ω numbers and halting problems](https://arxiv.org/abs/0904.1149) — Probabilidade de parada de máquinas ótimas e problemas de parada para entradas de comprimento limitado.
+- [Chazottes: Entropy in Dynamical Systems & Ergodic Theory](https://www.claymath.org/wp-content/uploads/2023/04/Chazottes-rev.pdf) — Slide 50: teorema de Brudno para partições finitas.
+- [Cilibrasi e Vitányi: Clustering by Compression](https://arxiv.org/html/cs/0312044v2) — Hipóteses de compressor normal e NCD.
+- [Delétang et al.: Language Modeling Is Compression](https://arxiv.org/abs/2309.10668) — Estudo da relação entre previsão e compressão.
+- [Hutter: Universal Algorithmic Intelligence](https://www.hutter1.net/ai/aixigentle.htm) — O ideal AIXI, que combina indução universal e decisão, e suas limitações computacionais.
+- [Bailey et al.: An Empirical Approach to the Normality of Pi](https://www.davidhbailey.com/dhbpapers/normality-digits-pi.pdf) — Diferença entre testes empíricos de dígitos e uma demonstração de normalidade.
