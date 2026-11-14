@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-14T20:46:34.083353+09:00",
+  "previousSha256": "e2beec05eb77c4e077087459491e342ff441efe04880ca7f5cb3bf9f5a9e6bc5",
+  "intermediateSha256": "cabd4012346e8737141db9df3c7a396cc054f8a78449643e5cd4aca932c7dc0d",
+  "frontDisplayBlocksMatched": 15,
+  "firstDiagramEdges": 6,
+  "berryWords": 16,
+  "scope": "Chapters1–3 revised; draft computability vocabulary changed to संगणनीय to avoid confusion with countability. First graph corrected and translated; original Berry14word claim corrected to16 while smallest-positive-integer meaning preserved. Original later chapters only renumbered and remain semantically pending. No full article approval or HTML claim.",
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true
+}

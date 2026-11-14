@@ -933,10 +933,24 @@
       "humanReviews": 0,
       "otherTranslationsSemanticallyUnreviewed": 4,
       "publicationPending": true
+    },
+    {
+      "stage": "Hindi front semantic revision, full review pending",
+      "evidence": "docs/translation-review/batch-035-hi-front-revision.json",
+      "translationHash": "cabd4012346e8737141db9df3c7a396cc054f8a78449643e5cd4aca932c7dc0d",
+      "reviewedTranslationsAdded": 0,
+      "publicationPending": true
+    },
+    {
+      "stage": "Hindi section4 semantic revision, full review pending",
+      "evidence": "docs/translation-review/batch-035-hi-section4-revision.json",
+      "translationHash": "451e1392551dbcf0a792fbaa2d069c44d2e3fa8a020435ee7020693337b306dd",
+      "reviewedTranslationsAdded": 0,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original bodies read. Frozen Japanese, English, simplified Chinese, traditional Chinese, Spanish, Korean, Portuguese, French and German full revisions read;8AI reviews registered. Other4 only mechanical escape repairs, not full revised semantic review. Prior427 entries unchanged. Publication and whole goal pending.",
+  "scope": "All13 original bodies read;8AI translations registered. Hindi chapters1–4 revised and read; later proof/application/conclusion/references and final whole-file/HTML checks pending. Other3 only mechanical repairs. Four translations unapproved; publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }
