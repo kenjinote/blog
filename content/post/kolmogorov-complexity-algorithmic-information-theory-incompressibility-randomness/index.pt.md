@@ -145,29 +145,63 @@ Não pode existir uma cota uniforme $K(x)\le |x|+O(1)$ para todas as strings: em
 
 ---
 
-## 2. A Essência do Acaso: Princípio da Casa dos Pombos, Incompressibilidade e Aleatoriedade de Martin-Löf
+## 2. Incompressibilidade finita e aleatoriedade de sequências infinitas
 
-Antes de Kolmogorov, a teoria das probabilidades não conseguia explicar por que `0000000000` não é aleatório enquanto `0110100110` parece ser. A Teoria Algorítmica da Informação fornece a primeira definição rigorosa do acaso individual: <strong>aleatoriedade é incompressibilidade — a ausência total de regularidade algorítmica!</strong>
+### 2.1 O argumento exato de contagem
 
-Mais surpreendente ainda, usando o elementar <strong>Princípio da Casa dos Pombos (Pigeonhole Principle)</strong>, podemos provar em duas linhas que <strong>quase todas as strings binárias são algoritmicamente aleatórias (incompressíveis)</strong>:
-Existem exatamente $2^n$ strings binárias de comprimento $n$. Quantos programas binários existem com comprimento estritamente menor que $n - c$ bits? Somando o número de programas de comprimentos $0, 1, \dots, n-c-1$, obtemos no total $\sum_{i=0}^{n-c-1} 2^i = 2^{n-c} - 1$ programas possíveis. Como cada programa produz no máximo uma saída, <strong>no máximo $2^{n-c} - 1$ strings de comprimento $n$ podem ser comprimidas em mais de $c$ bits</strong> ($K(x) < n - c$)!
-Em outras palavras, a fração de strings de comprimento $n$ que admitem compressão de pelo menos $c$ bits é estritamente menor que $2^{-c}$. Tomando $c = 20$, mais de $99,9999\,\%$ de todas as strings não podem ser encurtadas nem mesmo em $20$ bits por nenhum algoritmo concebível! Per Martin-Löf provou em 1966 que uma sequência binária infinita passa em todos os testes estatísticos computáveis de aleatoriedade (<strong>aleatoriedade de Martin-Löf</strong>) se e somente se todos os seus prefixos $x_{1:n}$ forem incompressíveis ($K(x_{1:n}) \ge n - O(1)$).
+Sejam inteiros $n\ge0$ e $0\le c\le n$. Existem $2^n$ strings binárias de comprimento $n$. O número de programas binários de comprimento estritamente menor que $n-c$ é:
 
 $$
-\sum_{i=0}^{n-c-1} 2^i = 2^{n-c} - 1 \implies \mathbb{P}_{x \sim \text{Unif}(\{0,1\}^n)}\big( K(x) < n - c \big) < \frac{2^{n-c}}{2^n} = 2^{-c}
+\sum_{j=0}^{n-c-1}2^j=2^{n-c}-1
 $$
 
+Quando $c=n$, a soma vazia vale zero. Cada programa que para produz no máximo uma string. Assim, a quantidade de strings de comprimento $n$ com $C(x)<n-c$ não pode ultrapassar essa contagem, e portanto:
+
 $$
-\Omega = \sum_{p:\, U(p)\text{ halts}} 2^{-|p|} \in (0, 1), \qquad K(\Omega_{1:n}) \ge n - O(1)
+\#\{x\in\{0,1\}^n:C(x)\ge n-c\}
+\ge2^n-2^{n-c}+1
 $$
 
-```mermaid
-flowchart TD
-    A["Assume Program P_K Computes K(x)"] --> B["Construct Program Q of Length L = |Q|"]
-    B --> C["Q Searches Lexicographically for First String s with K(s) > L + 1000"]
-    C --> D["Q Outputs s, so by Definition K(s) <= |Q| = L"]
-    D --> E["Contradiction: L + 1000 < K(s) <= L (Berry Paradox / Uncomputability)"]
-```
+Programas que não param ou que repetem a mesma saída podem tornar o número de saídas distintas ainda menor. Se $c>n$, então $n-c<0$ e todas as strings satisfazem trivialmente $C(x)\ge n-c$. Não se deve estender a fórmula da soma geométrica diretamente a esse domínio.
+
+Sob a distribuição uniforme das strings de comprimento $n$, correspondente a lançamentos independentes de uma moeda justa:
+
+$$
+P\{C(X)<n-c\}
+\le\frac{2^{n-c}-1}{2^n}<2^{-c}
+$$
+
+Para $c=0$, existe pelo menos uma string de cada comprimento com $C(x)\ge n$. Para $c=1$, mais da metade das strings não admite redução de <strong>mais de</strong> um bit. Para $c=10$ e $c=20$, as cotas inferiores $1-2^{-c}$ para a proporção que não admite economia superior a 10 ou 20 bits são aproximadamente 99,902% e 99,999905%. Isso não exclui uma economia de exatamente $c$ bits.
+
+O mesmo argumento funciona para $K(x\mid n)$ quando a condição $n$ é fixa. Portanto, os resultados da moeda exigem, com alta probabilidade, descrições próximas do próprio comprimento. Não há garantia para cada realização individual.
+
+Um compressor reversível que encurtasse todos os arquivos contrariaria essa contagem. Compressores reais exploram regularidades de determinados dados. A proporção obtida sob a distribuição uniforme de todas as strings não é automaticamente a frequência de dados estruturados na natureza ou na produção humana.
+
+### 2.2 Testes de Martin-Löf
+
+A impossibilidade de encurtar uma string finita por uma quantidade especificada e a aleatoriedade de uma sequência infinita são definições distintas. No espaço das sequências binárias infinitas, usamos a medida $\mu$ da moeda justa. O conjunto cilíndrico $[w]$ contém as sequências que começam pela string finita $w$ e tem medida $2^{-|w|}$.
+
+Um <strong>teste de Martin-Löf</strong> é uma sequência de conjuntos abertos $V_j$, enumeráveis computavelmente de maneira uniforme como uniões de cilindros de prefixos finitos, que satisfaz:
+
+$$
+\mu(V_j)\le2^{-j},\qquad j=1,2,\ldots
+$$
+
+Se $\omega\in\bigcap_jV_j$, a sequência falha nesse teste. Ela é aleatória no sentido de Martin-Löf quando não pertence ao conjunto de falha de nenhum teste desse tipo. Isso não proíbe que algum padrão finito raro apareça. Há uma quantidade enumerável de testes efetivos, cada conjunto de falha tem medida zero, e o conjunto das sequências que passam em todos os testes tem medida um.
+
+O teorema de Levin–Schnorr caracteriza essa propriedade usando a complexidade <strong>prefixa</strong> ótima:
+
+$$
+\omega\text{ é aleatória no sentido de Martin-Löf}
+\iff
+\exists c\ \forall n\quad K(\omega_{1:n})\ge n-c
+$$
+
+É essencial que <strong>a mesma constante $c$</strong> funcione para todos os comprimentos $n$. Não podemos simplesmente trocar $K$ pela complexidade simples $C$ nessa equivalência.
+
+As regras de seleção de von Mises e Church fazem parte dessa história, mas mudar as condições de efetividade dos testes ou das estratégias de aposta produz noções diferentes. Em particular, a aleatoriedade computável, definida pela impossibilidade de uma martingala computável obter capital ilimitado, é mais fraca que a aleatoriedade de Martin-Löf.
+
+A sequência computável dos dígitos de $\pi$ não é aleatória no sentido de Martin-Löf. Normalidade e aleatoriedade algorítmica também não são sinônimos: uma expansão pode ser computável e normal, e testes de frequência finitos não demonstram normalidade.
 
 ---
 

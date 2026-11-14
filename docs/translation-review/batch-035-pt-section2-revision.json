@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-14T15:01:48.820522+09:00",
+  "previousSha256": "0ab8208f43d8132202b393dc05e1e1fd20164a22e51a17543e5dbd94b2dd230a",
+  "intermediateSha256": "1ec6afcd20022cbbffb3d2b58dbdd3319c06a3e03ddf06800f541a8b053e4e12",
+  "scope": "Section2 replaced with exact n/c counting, strict savings, uniform probability scope, effective ML tests and Levin-Schnorr prefix characterization. Old defective Berry diagram removed here; complete corrected proof diagram must be supplied in section3 revision.",
+  "remaining": [
+    "Introduction and first diagram",
+    "Berry/Chaitin/Omega proof chapter and replacement proof diagram",
+    "Entropy/semimeasures/MDL/NCD/LLM chapter, conclusion and references",
+    "Whole revised reading and HTML checks"
+  ],
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true
+}
