@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-11-14T20:56:25.187332+09:00",
+  "beforeSha256": "97bb277638a35cc4dd67324a4a24246e0855754d994ded5d1d8331306cf6c372",
+  "afterSha256": "47d1c475de2b4305b408d86b0dbe1110d49b0da00fb58c47a567e6394285b071",
+  "replacements": [
+    {
+      "before": "Jika $A(p)=x$, program simulasi menghasilkan $x$ dengan panjang $|p|+|s_A|$ ditambah biaya tetap.",
+      "after": "Jika $A(p)=x$, program simulasi menghasilkan $x$; panjang program tersebut adalah $|p|+|s_A|$ ditambah biaya tetap."
+    },
+    {
+      "before": "Ada terhitung banyak uji efektif, masing-masing dengan himpunan kegagalan berukuran nol;",
+      "after": "Jumlah uji efektif paling banyak terhitung, dan masing-masing memiliki himpunan kegagalan berukuran nol;"
+    },
+    {
+      "before": "Dukungannya boleh berhingga atau terhitung;",
+      "after": "Himpunan pendukung distribusi boleh berhingga atau terhitung;"
+    }
+  ],
+  "scope": "Three final contextual wording edits read after actual542line full reading; not approval."
+}
