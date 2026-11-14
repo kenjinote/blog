@@ -1,0 +1,13 @@
+{
+  "changes": [
+    {
+      "before": "la frase tiene trece, no veinte.",
+      "after": "la frase tiene trece: menos de veinte."
+    },
+    {
+      "before": "Asignemos a cada modelo $H$ una longitud prefija real de descripción $L(H)$",
+      "after": "Asignemos a cada modelo $H$ una longitud efectiva de descripción prefija $L(H)$"
+    }
+  ],
+  "scope": "Read both final replacements in context before validation: Berry threshold wording and actual versus real-valued code length."
+}

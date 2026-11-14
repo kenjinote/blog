@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-14T10:39:04.476038+09:00",
+  "recordStdout": "Recorded ai review: post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.es.md\n",
+  "ledgerStdout": "{\"current\": 424, \"unreviewed\": 12608}\n",
+  "priorEntriesUnchanged": 423,
+  "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+  "translationHash": "cadb361e9ba4df4f96239c1afa25b6831d10611abcbdfc2366eaa3200779f878",
+  "newAiReviews": 1,
+  "humanReviews": 0,
+  "scope": "Only fully read/revised ES added; frozen JA and prior423 entries unchanged. Publication pending."
+}

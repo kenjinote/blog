@@ -125,6 +125,47 @@
         "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for traditional Chinese.",
         "Batch035 publication and the complete all-article goal remain pending."
       ]
+    },
+    "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-14",
+      "reviewer": "Codex (AI)",
+      "source": "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "cadb361e9ba4df4f96239c1afa25b6831d10611abcbdfc2366eaa3200779f878",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the original Spanish111-line article in the prior original-reading stage and the current mechanically restored111lines in full this turn. Read actual revised546lines in complete ranges1–280 and281–546, then both final wording replacements in context. Compared every frozen Japanese theme: packed bits versus character storage, model dependence of self-information, ordinary/prefix complexity and optimal-machine invariance, endpoint costs, counting and infinite ML randomness, uncomputability/Chaitin/Omega, entropy rates, semimeasures, MDL, NID/NCD and predictive coding. Preserve the valid distribution-puntual entropy-zero example with explicit cost of sharing the model, and the valid stationary ergodic limiting relation with finite-alphabet conditions. Replace claims that every physical coin outcome has no shorter description, that Shannon cannot exploit computational rules, and that compression necessarily acquires a causal world model. Full source treatment restored, not reduced to a brief summary."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguish complejidad simple C from complejidad prefija K; libre de prefijos means no halted program is a proper prefix of another and applies per fixed auxiliary input in the conditional case. Use aditivamente óptima, autodelimitado, autoinformación, entropía empírica and tasa de entropía consistently. Distinguish normalidad from computability/ML randomness, aleatoriedad computable from ML randomness, and corrección semántica of true proved lower bounds from mere consistency. Explain real enumerable computablemente por la izquierda/left-c.e., módulo de convergencia, semicomputability and the distinct discrete m_U versus sequential M. Use verosimilitud for likelihood and separate it from conditional K; practical output length Z avoids a collision with simple C. Both diagrams are fully Spanish except mathematical identifiers and standard technical names. Final wording avoids confusing actual code length with real-valued length."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All38 shared display blocks match frozen Japanese except the translated ML annotation; all218 source TeX expressions match decoded actual HTML. Read K(s(n))=K(n)+O1 and conditional endpoint cost, ordinary/prefix literal bounds and Kraft obstruction to uniform K<=n+O1, count n>=0 and0<=c<=n including empty sums/c>n, and strict savings greater than c rather than at least c. Read one ML deficiency constant for every n and effective open-test definition. Preserve the Spanish smallest-positive-integer Berry phrase, correcting its claimed14 words to13 whitespace words; no Chinese maximum-integer error is assigned to Spanish. Shortlex and unbounded numerical-bound proof search avoid unmeasured fixed10000bit constants and require true proved lower bounds. Optimal-machine Omega gives a one-way same-machine length-N halting consequence with strict crossing as a sufficient condition; no false claim that equality would fail. Computable finite-entropy distribution bounds differ from finite-alphabet stationary ergodic Brudno limits, which do not require computability of the measure. Pair encoding/error allowances, practical finite-window NCD, bits/nats and model/metadata/invertible-tokenization costs are explicit. Prior finite evidence reused, not rerun or promoted to real C/K/Omega computations or universal proofs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read both full text proof pseudocodes, both complete Mermaid graphs and both tables. Berry assumes an impossible total ComputeK and enumerates all binary strings by increasing length and within-length lexicographic order; SearchProof effectively enumerates a sound theory and searches numerical m>=r. Zero executable article programs exist or were run. HTML preserves all pseudocode, both graphs6+5edges, twelve three-column header/data rows,218TeX,287prose fragments and21strong spans. No C0/tab or CJK/kana/Hangul/Cyrillic/Arabic/Devanagari/Thai intrusion remains. Original diagrams were English; their complete revised labels are Spanish. Prior counting, integer code, Huffman/SFE/sequential-code and rational residual illustrations are auxiliary evidence, not real Omega, physical coin experiments, full compressors, LLM/corpus experiments, benchmarks or general theorem certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All eight primary/author-hosted references match frozen Japanese and occur in generated HTML. No new reference fetch or paper reading is claimed: prior documented selected pages, abstracts and returned passages remain the primary-reading scope. Do not claim current Hutter Prize terms, corpus sizes or unverified quotes. Original title/publication date/slug/image/taxonomy remain unchanged; Mermaid enabled and actual editing lastmod November14. Fresh36-bundle production preview derives slugs from the persisted prior469snapshot manifest and copies current authoritative files, avoiding reliance on an incomplete old temporary directory. It passes468post+1taxonomy source equality, selected Spanish validation,2035multilingual pages, HTTPS3709HTML41XML and existing ledger check. Canonical14hreflang and13sidebar targets match. Prior17JA R2unit tests are referenced, not rerun. Frozen Japanese, approved EN/CN/TW and other8mechanically repaired versions remain unchanged. Local static evidence does not certify browser/KaTeX/Mermaid execution, native/human review, full site or publication."
+        }
+      },
+      "summary": "Full Spanish Kolmogorov complexity review with corrected13-word Berry count, fractional pi, ordinary/prefix and randomness/proof conditions, and verified source-to-HTML content.",
+      "languageSpecificFindings": "Original smallest-positive-integer wording is already correct; preserve it. Its phrase actually has13 whitespace-separated words although the original says14. Original fractional pi example includes integer11bits; corrected to0010010000111111. Original text alternates more-than-c and at-least-c savings, claims high complexity for every coin realization, overstates simulation-only machine invariance, uses unmeasured program sizes/fixed10000bit proof margins and overstates the Omega finite-bit equivalence. Correct with explicit domains, optimality, soundness and one-way same-machine consequence. Retain valid point-distribution entropy-zero and stationary ergodic rate examples under their proper model/finite-alphabet conditions. Replace English graph labels with Spanish. No Hangul or largest-integer error is invented for this language. Two final wording edits clarify thirteen is below twenty and effective rather than real-valued prefix-description length.",
+      "validation": "docs/translation-review/batch-035-es-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Other8 original bodies have been read but their semantic revisions remain pending; the prior117 escape repairs across11 languages are not semantic approval.",
+        "Two proof pseudocodes, zero executable article programs. No true C/K/Omega oracle, general theorem or full compressor/LLM/corpus/benchmark certification.",
+        "Primary research restricted to documented selected pages/abstracts/returned passages, not full-paper reading or experimental reproduction.",
+        "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for Spanish.",
+        "Batch035 publication and the complete all-article goal remain pending."
+      ]
     }
   },
   "stages": [
@@ -433,10 +474,56 @@
       "humanReviews": 0,
       "otherTranslationsSemanticallyUnreviewed": 9,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-14",
+      "stage": "Full Spanish original/revised semantic comparison and static validation",
+      "languagesRead": [
+        "es"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "revisedReadingRanges": [
+        "1–280",
+        "281–546",
+        "two final wording replacements"
+      ],
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "cadb361e9ba4df4f96239c1afa25b6831d10611abcbdfc2366eaa3200779f878",
+      "validation": "docs/translation-review/batch-035-es-validation.json",
+      "checks": "docs/translation-review/batch-035-es-checks.json",
+      "reading": "docs/translation-review/batch-035-es-reading-notes.json",
+      "ledgerValidation": "docs/translation-review/batch-035-es-ledger-validation.json",
+      "texExpressions": 218,
+      "displayMath": 38,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 287,
+      "strongSpans": 21,
+      "actualPreviewBundles": 36,
+      "postSnapshotsExact": 468,
+      "taxonomySnapshotsExact": 1,
+      "multilingualPages": 2035,
+      "httpsHtmlPages": 3709,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-035-ja-r2-checks.json",
+      "reviewedTranslationsAdded": 1,
+      "reviewedTranslationsTotal": 424,
+      "unreviewedTranslations": 12608,
+      "humanReviews": 0,
+      "otherTranslationsSemanticallyUnreviewed": 8,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original bodies read. Frozen Japanese, English, simplified and traditional Chinese full revisions read;3AI reviews registered. Other9 only mechanical escape repairs, not full revised semantic review. Prior422 entries unchanged. Publication and whole goal pending.",
+  "scope": "All13 original bodies read. Frozen Japanese, English, simplified Chinese, traditional Chinese and Spanish full revisions read;4AI reviews registered. Other8 only mechanical escape repairs, not full revised semantic review. Prior423 entries unchanged. Publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }
