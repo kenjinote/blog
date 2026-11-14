@@ -1133,10 +1133,24 @@
       "humanReviews": 0,
       "otherTranslationsSemanticallyUnreviewed": 2,
       "publicationPending": true
+    },
+    {
+      "stage": "Russian front revision; full review pending",
+      "evidence": "docs/translation-review/batch-035-ru-front-revision.json",
+      "translationHash": "7c67c75cc50ec530f1c94ae61576663eb4a6d7bb934f2a59332f7494e4554cf6",
+      "reviewedTranslationsAdded": 0,
+      "publicationPending": true
+    },
+    {
+      "stage": "Russian section4 revision; full review pending",
+      "evidence": "docs/translation-review/batch-035-ru-section4-revision.json",
+      "translationHash": "41939f3d9d6cb48fafc21a476733cd4e44b2405ee237f96d58fac76f7d6b0529",
+      "reviewedTranslationsAdded": 0,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original bodies read. Frozen Japanese, English, simplified Chinese, traditional Chinese, Spanish, Korean, Portuguese, French, German, Hindi and Indonesian full revisions read;10AI reviews registered. Other2 only mechanical escape repairs, not full revised semantic review. Prior429 entries unchanged. Publication and whole goal pending.",
+  "scope": "All13 original bodies read;10AI translations registered. Russian chapters1–4 revised and read; proof/application/conclusion/references and final whole-file/HTML checks pending. Arabic only mechanical repairs. Two translations unapproved; publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }

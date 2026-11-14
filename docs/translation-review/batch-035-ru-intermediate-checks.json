@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-11-15T01:50:44.076449+09:00",
+  "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+  "intermediateTranslationHash": "41939f3d9d6cb48fafc21a476733cd4e44b2405ee237f96d58fac76f7d6b0529",
+  "chaptersRead": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "displayBlocksExact": 22,
+  "firstGraphEdges": 6,
+  "approvedTranslationsUnchanged": 10,
+  "berryWords": 10,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Actual replacement chapters1–3 and4 fully read from returned output. Source checks only, not whole-file semantic/HTML approval. Later proof/application/conclusion/references remain pending."
+}

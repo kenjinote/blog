@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-15T01:49:43.204727+09:00",
+  "previousSha256": "ada523341c26c7a5015b0c01a3370da41b7685c40b1a7609a603a8be6e2f5983",
+  "intermediateSha256": "7c67c75cc50ec530f1c94ae61576663eb4a6d7bb934f2a59332f7494e4554cf6",
+  "frontDisplayBlocksMatched": 15,
+  "firstGraphEdges": 6,
+  "berryWords": 10,
+  "scope": "Russian chapters1–3 rewritten and first graph translated. Berry12word claim corrected to10 in otherwise pending original later proof chapter. Subsequent counting/proof/application/conclusion/references and final whole-file/HTML review remain pending; no approval.",
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true
+}
