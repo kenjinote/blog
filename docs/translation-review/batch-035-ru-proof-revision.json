@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-15T01:52:08.245758+09:00",
+  "previousSha256": "41939f3d9d6cb48fafc21a476733cd4e44b2405ee237f96d58fac76f7d6b0529",
+  "intermediateSha256": "0dad9bea5ff9d128c681066cdf3c7b5f7449eb7d2737506d552f864f5a5222ad",
+  "displayBlocksMatched": 6,
+  "pseudocodeBlocks": 2,
+  "proofGraphEdges": 5,
+  "scope": "Russian proof chapter rewritten; original correct one-way Omega implication preserved with same-machine/optimality conditions. Applications/conclusion/references and final whole-file/HTML review pending; no approval.",
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true
+}

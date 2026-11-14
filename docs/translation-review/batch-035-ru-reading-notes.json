@@ -1,0 +1,26 @@
+{
+  "allOriginalAndRevisedBodiesRead": true,
+  "revisedReadingRanges": [
+    "1–210",
+    "211–285",
+    "proof chapter286–395 read after retrieving saved file; earlier truncated output not counted",
+    "396–542",
+    "two final Solomonoff spelling replacements"
+  ],
+  "checks": {
+    "meaning": "Original111 lines fully reread during previous front-revision stage; revised542 lines actually read in returned file output across listed ranges. Compared with frozen Japanese. Corrected guaranteed coin complexity, frequency/normality simplification, simulation-only invariance, fixed proof margins and forced causal-world-model claims. Preserved correct point-mass and stationary ergodic examples under conditions. Original Russian Omega implication was already one-way: direction retained, with machine and optimality conditions, not reported as an equivalence error.",
+    "terminology": "Distinguished ordinary C and prefix K, self-information and entropy, semantic soundness and consistency, discrete semimeasure m_U and monotone sequential M. Berry phrase contains ten whitespace words rather than original twelve; smallest-natural-number meaning retained. Original Hutter name correct. Both graph labels translated. Final two edits unify Solomonoff spelling as Соломоноффа with introduction; computability, prefix-free programs and left-c.e. clarified.",
+    "mathematics": "All38 source display formulas retained with Russian ML annotation;216TeX expressions preserved in generated HTML. Checked packed bits versus characters, fractional pi, prefix domains for each fixed condition, additive optimality in both directions, endpoint K(n), Kraft and literal bounds. Counting endpoints and strict savings, uniform effective ML tests with single constant. Shortlex Berry and sound-theory unbounded lower-bound proofs. Omega residual and same-machine bounded halting; strict crossing sufficient, equality not claimed wrong. Computable-distribution entropy bound distinct from finite-alphabet ergodic rate without extra computability assumption; MDL, NCD window limitations, LLM units and full model/metadata costs.",
+    "code": "Both text pseudocodes Berry(m) and SearchProof(r) actually read and preserved exactly in HTML. ComputeK explicitly impossible as a general procedure; zero executable article programs. Two Russian Mermaid diagrams retain source IDs and6+5edges. Existing finite probes and17JA R2tests referenced, not rerun. No actual K/Omega computation, new compressor/LLM experiment, browser/KaTeX/Mermaid execution or general theorem certification.",
+    "links": "All8 reference URLs match frozen Japanese and actual HTML. Prior source-reading scopes remain selected pages/abstracts/returned passages; no new fetching/full-paper or current-prize-term claim. Original title/date/slug/image/taxonomy preserved; lastmod2026-11-15. Fresh36bundle preview uses persisted469snapshot manifest/current468post+1taxonomy. Canonical14hreflang and13language options,2035multilingual pages and HTTPS3709HTML41XML pass. FrozenJA and10prior approved translations unchanged. No human/native/full-site/publication certification."
+  },
+  "summary": "Russian original and revised whole article compared; proof/application/conclusion and8references completed, static preview passed. AI review dated November15; publication pending.",
+  "languageSpecificFindings": [
+    "Original Berry example correctly means smallest natural number; ten whitespace words, not claimed twelve.",
+    "Original Omega implication direction already correct; retained with same-machine/optimality and proof conditions.",
+    "Original fractional pi contained integer11; corrected.",
+    "Correct original Hutter name retained; final Solomonoff transliteration unified.",
+    "No claim that original condensed article lacked all application themes; expanded and corrected existing themes."
+  ],
+  "goalNote": "Berry例を12語→10語へ訂正。元から正しいΩの含意の向きを維持し同一機械などの条件を補足。π整数部混入、固定した証明限界、圧縮から因果理解への過大主張を修正。"
+}

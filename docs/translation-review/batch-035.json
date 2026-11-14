@@ -441,6 +441,53 @@
         "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for Indonesian.",
         "Batch035 publication and the complete all-article goal remain pending."
       ]
+    },
+    "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-15",
+      "reviewer": "Codex (AI)",
+      "source": "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "33ff56595ba1ffbc3ba79fdf0fd427c1ee473a67efc4b80cde667c9d01d8217f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Original111 lines fully reread during previous front-revision stage; revised542 lines actually read in returned file output across listed ranges. Compared with frozen Japanese. Corrected guaranteed coin complexity, frequency/normality simplification, simulation-only invariance, fixed proof margins and forced causal-world-model claims. Preserved correct point-mass and stationary ergodic examples under conditions. Original Russian Omega implication was already one-way: direction retained, with machine and optimality conditions, not reported as an equivalence error."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished ordinary C and prefix K, self-information and entropy, semantic soundness and consistency, discrete semimeasure m_U and monotone sequential M. Berry phrase contains ten whitespace words rather than original twelve; smallest-natural-number meaning retained. Original Hutter name correct. Both graph labels translated. Final two edits unify Solomonoff spelling as Соломоноффа with introduction; computability, prefix-free programs and left-c.e. clarified."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All38 source display formulas retained with Russian ML annotation;216TeX expressions preserved in generated HTML. Checked packed bits versus characters, fractional pi, prefix domains for each fixed condition, additive optimality in both directions, endpoint K(n), Kraft and literal bounds. Counting endpoints and strict savings, uniform effective ML tests with single constant. Shortlex Berry and sound-theory unbounded lower-bound proofs. Omega residual and same-machine bounded halting; strict crossing sufficient, equality not claimed wrong. Computable-distribution entropy bound distinct from finite-alphabet ergodic rate without extra computability assumption; MDL, NCD window limitations, LLM units and full model/metadata costs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Both text pseudocodes Berry(m) and SearchProof(r) actually read and preserved exactly in HTML. ComputeK explicitly impossible as a general procedure; zero executable article programs. Two Russian Mermaid diagrams retain source IDs and6+5edges. Existing finite probes and17JA R2tests referenced, not rerun. No actual K/Omega computation, new compressor/LLM experiment, browser/KaTeX/Mermaid execution or general theorem certification."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All8 reference URLs match frozen Japanese and actual HTML. Prior source-reading scopes remain selected pages/abstracts/returned passages; no new fetching/full-paper or current-prize-term claim. Original title/date/slug/image/taxonomy preserved; lastmod2026-11-15. Fresh36bundle preview uses persisted469snapshot manifest/current468post+1taxonomy. Canonical14hreflang and13language options,2035multilingual pages and HTTPS3709HTML41XML pass. FrozenJA and10prior approved translations unchanged. No human/native/full-site/publication certification."
+        }
+      },
+      "summary": "Russian original and revised whole article compared; proof/application/conclusion and8references completed, static preview passed. AI review dated November15; publication pending.",
+      "languageSpecificFindings": [
+        "Original Berry example correctly means smallest natural number; ten whitespace words, not claimed twelve.",
+        "Original Omega implication direction already correct; retained with same-machine/optimality and proof conditions.",
+        "Original fractional pi contained integer11; corrected.",
+        "Correct original Hutter name retained; final Solomonoff transliteration unified.",
+        "No claim that original condensed article lacked all application themes; expanded and corrected existing themes."
+      ],
+      "validation": "docs/translation-review/batch-035-ru-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Arabic original body has been read but its semantic revision remains pending; the prior117 escape repairs across11 languages are not semantic approval.",
+        "Two proof pseudocodes, zero executable article programs. No true C/K/Omega oracle, general theorem or full compressor/LLM/corpus/benchmark certification.",
+        "Primary research restricted to documented selected pages/abstracts/returned passages, not full-paper reading or experimental reproduction.",
+        "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for Russian.",
+        "Batch035 publication and the complete all-article goal remain pending."
+      ]
     }
   },
   "stages": [
@@ -1147,10 +1194,72 @@
       "translationHash": "41939f3d9d6cb48fafc21a476733cd4e44b2405ee237f96d58fac76f7d6b0529",
       "reviewedTranslationsAdded": 0,
       "publicationPending": true
+    },
+    {
+      "stage": "Russian proof revision; intermediate version not approval",
+      "evidence": "docs/translation-review/batch-035-ru-proof-revision.json",
+      "translationHash": "0dad9bea5ff9d128c681066cdf3c7b5f7449eb7d2737506d552f864f5a5222ad",
+      "reviewedTranslationsAdded": 0,
+      "publicationPending": true
+    },
+    {
+      "stage": "Russian applications revision; intermediate version not approval",
+      "evidence": "docs/translation-review/batch-035-ru-applications-revision.json",
+      "translationHash": "68b73cb20094efaf33ff6ab22d4e5464126b407fb0e6a1dc121c0585f31e3495",
+      "reviewedTranslationsAdded": 0,
+      "publicationPending": true
+    },
+    {
+      "date": "2026-11-15",
+      "stage": "Full Russian original/revised semantic comparison and static validation",
+      "languagesRead": [
+        "ru"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "revisedReadingRanges": [
+        "1–210",
+        "211–285",
+        "proof chapter286–395 read after retrieving saved file; earlier truncated output not counted",
+        "396–542",
+        "two final Solomonoff spelling replacements"
+      ],
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "33ff56595ba1ffbc3ba79fdf0fd427c1ee473a67efc4b80cde667c9d01d8217f",
+      "validation": "docs/translation-review/batch-035-ru-validation.json",
+      "checks": "docs/translation-review/batch-035-ru-checks.json",
+      "reading": "docs/translation-review/batch-035-ru-reading-notes.json",
+      "ledgerValidation": "docs/translation-review/batch-035-ru-ledger-validation.json",
+      "texExpressions": 216,
+      "displayMath": 38,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 280,
+      "strongSpans": 22,
+      "actualPreviewBundles": 36,
+      "postSnapshotsExact": 468,
+      "taxonomySnapshotsExact": 1,
+      "multilingualPages": 2035,
+      "httpsHtmlPages": 3709,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-035-ja-r2-checks.json",
+      "reviewedTranslationsAdded": 1,
+      "reviewedTranslationsTotal": 431,
+      "unreviewedTranslations": 12601,
+      "humanReviews": 0,
+      "otherTranslationsSemanticallyUnreviewed": 1,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original bodies read;10AI translations registered. Russian chapters1–4 revised and read; proof/application/conclusion/references and final whole-file/HTML checks pending. Arabic only mechanical repairs. Two translations unapproved; publication and whole goal pending.",
+  "scope": "All13 original bodies read;11AI translations registered with frozen JA. Russian full revision completed. Arabic only mechanical escape repairs, not revised semantic approval. Prior430 entries unchanged. Batch publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }

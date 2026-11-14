@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-15T01:56:30.259067+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ru",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ru.md",
+      "sha256": "33ff56595ba1ffbc3ba79fdf0fd427c1ee473a67efc4b80cde667c9d01d8217f",
+      "sourceSha256": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "originalSha256": "d6c08a70f02227c57bc41f53c6e746fa9626671ca797b18975726d77e18079a6",
+      "texExpressions": 216,
+      "displayMath": 38,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "mathHtmlExact": true,
+      "pseudocodeHtmlExact": true,
+      "proseFragmentsPreserved": 280,
+      "strongSpansPreserved": 22,
+      "datesTaxonomyImageAndNavigationPassed": true,
+      "russianBerry10WordsAndConditionsChecked": true,
+      "passed": true
+    }
+  ],
+  "sourceFrozenUnchanged": true,
+  "remainingArabicMechanicalRepairUnchanged": true,
+  "priorTenReviewsUnchanged": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "priorFiniteEvidence": [
+    "docs/translation-review/batch-035-original-finite-probe.json",
+    "docs/translation-review/batch-035-ja-auxiliary.json"
+  ],
+  "scope": "Selected Russian static source/HTML consistency, not automatic semantic approval. Prior finite evidence and17unit tests referenced,not rerun. Original/revised full reading separately recorded. No executable article programs, K/Omega oracle,theorem proof,real LLM/corpus/NCD experiments,browser/KaTeX/Mermaid execution,native/full-site/publication certification."
+}
