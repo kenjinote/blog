@@ -166,6 +166,47 @@
         "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for Spanish.",
         "Batch035 publication and the complete all-article goal remain pending."
       ]
+    },
+    "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-14",
+      "reviewer": "Codex (AI)",
+      "source": "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "8ca785e04240cf86e3448d4a92925496907912975435fb215555f7d59a65493d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read all111original Korean lines in the prior original-reading stage and reread all111currently mechanically restored lines this turn, not just matching formulas. Read all546actual revised lines in ranges1–280/281–546, then all three final contextual replacements. Compared all seven fixed Japanese themes: packed bits/characters, model-based information and empirical entropy, ordinary/prefix descriptions, optimal-machine invariance, counting/ML randomness, uncomputability/incompleteness/Omega, entropy rates, semimeasures, MDL/NID/NCD and predictive coding. Preserve the valid point-mass entropy-zero example while including communication of the model, and the valid stationary ergodic rate relation with finite-alphabet assumptions. Correct claims that every physical coin sequence has no compressible rule, that normality follows from finite frequency observations, and that predictive compression mathematically forces acquisition of a causal world model. This is a complete source-based revision, not a summary or approval of mechanical escape repair."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Use 일반 복잡성 C and 접두 복잡성 K with explicit prefix-free stopping-domain and proper-prefix definitions, separately for each fixed auxiliary input. Explain additive-optimal machines by constant description overhead, rather than simulation-only universality. Distinguish 자기정보량/엔트로피/경험적 엔트로피/엔트로피율, normality 정규성 from ML and computable randomness, and soundness 건전성 as truth of the proved lower-bound statements. Explain left-c.e. by increasing computable lower approximations and the absence of a computable precision-guarantee function. Use 준측도 with its definitions, distinguish discrete m_U from monotone sequential M, and likelihood 우도 from conditional K. Keep original Korean 마르쿠스 후터 name and the valid ten-spacing-unit Berry example; no Spanish fourteen-word error or Chinese largest-integer error is assigned to Korean. Final wording replaces ambiguous additive/countable terminology only in constants and errors, retaining correct countability terminology for sets."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All38 shared display blocks equal the fixed Japanese formulas except the translated ML annotation; all219source TeX expressions match generated HTML. Read K(n) endpoint and self-delimiting integer costs; K(s(n))=K(n)+O1 and conditional constant bound; ordinary/prefix literal bounds and Kraft obstruction to uniform K<=n+O1; count n>=0 and0<=c<=n, empty-sum/c>n cases, strict greater-than-c savings and rounded percentages. ML tests are uniformly computably enumerable unions of cylinders with measure bounds; one deficiency constant works for every prefix. Preserve the actual ten eojeol Berry phrase and identify whitespace counting instead of inventing an error. Shortlex and unbounded numerical lower-bound search avoid unsupported10000bit constants and require sound proved statements. Optimal prefix-machine Omega yields a one-way same-machine length-N halting consequence; strict endpoint crossing is sufficient and no false equality failure is claimed. Computable finite-entropy expected conditional bounds differ from stationary ergodic finite-alphabet Brudno rates, without imposing measure computability on the latter. NID pair encoding/error allowances, practical finite-window NCD, bits/nats and model/metadata/invertible-tokenization costs remain explicit. Prior finite examples reused, not actual K/Omega computations or universal proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read both entire text proof pseudocodes, both complete translated Mermaid graphs and both tables. Berry assumes impossible total ComputeK and enumerates all binary strings by length then lexicographic order; SearchProof effectively enumerates a sound theory and searches numerical m>=r. These are not implemented executable article programs; zero such programs exist or were run. Actual HTML preserves all pseudocode,2graphs with6+5edges,twelve three-column header/data rows,219TeX,218prose fragments and21strong spans. No C0/tab or CJK/kana/Cyrillic/Arabic/Devanagari/Thai intrusion remains; Korean Hangul is of course retained. English-only original graph labels are fully translated while identifiers and mathematical relations remain fixed. Previous finite counting/gamma/Huffman/SFE/sequential-code/rational-residual evidence is auxiliary, not a physical coin experiment, real Omega, complete compressor, LLM/corpus benchmark or general theorem proof."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All eight primary or author-hosted references match frozen Japanese and appear in actual generated HTML. Primary-reading scope remains the documented selected pages/abstracts/returned passages from preceding stages; no new whole-paper reading, reference fetching or experimental reproduction is claimed. No current Hutter Prize terms or unverified quotation/corpus-size claim. Preserve original title/date/slug/image/taxonomy and use actual editing lastmod November14 with Mermaid enabled. Fresh36-bundle production preview reconstructs slugs from the persisted prior successful469snapshot manifest and copies current authoritative sources. It passes468post+1taxonomy exact snapshot equality, selected Korean validation,2035multilingual pages, HTTPS3709HTML41XML and prior-ledger check. Canonical14hreflang and13sidebar targets match. Prior17JA R2unit tests referenced, not rerun. Frozen Japanese, approved EN/CN/TW/ES and other7mechanically restored versions unchanged. Static checks do not certify browser/KaTeX/Mermaid execution, native/human review, full site or publication."
+        }
+      },
+      "summary": "Full Korean Kolmogorov complexity review with preserved ten-eojeol Berry example, corrected pi fraction and explicit ordinary/prefix, randomness, proof and coding conditions.",
+      "languageSpecificFindings": "Original phrase 스무 단어 미만으로 정의할 수 없는 가장 작은 양의 정수 has10 whitespace-separated eojeol, and the original says about ten; preserve that correct example and clarify the counting convention. Original smallest-integer wording and Korean Hutter name are correct, with no foreign-name intrusion assigned. Correct the supposed fractional-pi prefix that includes integer11bits, counting savings stated as at-least rather than greater-than c, guaranteed complexity of each coin result, simulation-only invariance/one-way interpreter constant, unmeasured program sizes and10000bit proof margin, overbroad finite-bit Omega equivalence and compression-implies-causal-model claim. Preserve valid point-mass and stationary ergodic examples under model/finite-alphabet conditions. Original English graph labels translated fully. Three final edits distinguish additive constants/errors from countability, fix an object particle after K(x,y), and explain the convergence-modulus property without an ambiguous module term.",
+      "validation": "docs/translation-review/batch-035-ko-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Other7 original bodies have been read but their semantic revisions remain pending; the prior117 escape repairs across11 languages are not semantic approval.",
+        "Two proof pseudocodes, zero executable article programs. No true C/K/Omega oracle, general theorem or full compressor/LLM/corpus/benchmark certification.",
+        "Primary research restricted to documented selected pages/abstracts/returned passages, not full-paper reading or experimental reproduction.",
+        "Selected36-bundle static HTML; no browser/KaTeX/Mermaid execution or full-site certification. Prior17tests referenced, not rerun for Korean.",
+        "Batch035 publication and the complete all-article goal remain pending."
+      ]
     }
   },
   "stages": [
@@ -520,10 +561,56 @@
       "humanReviews": 0,
       "otherTranslationsSemanticallyUnreviewed": 8,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-14",
+      "stage": "Full Korean original/revised semantic comparison and static validation",
+      "languagesRead": [
+        "ko"
+      ],
+      "allOriginalAndRevisedBodiesRead": true,
+      "revisedReadingRanges": [
+        "1–280",
+        "281–546",
+        "three final contextual replacements"
+      ],
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "8ca785e04240cf86e3448d4a92925496907912975435fb215555f7d59a65493d",
+      "validation": "docs/translation-review/batch-035-ko-validation.json",
+      "checks": "docs/translation-review/batch-035-ko-checks.json",
+      "reading": "docs/translation-review/batch-035-ko-reading-notes.json",
+      "ledgerValidation": "docs/translation-review/batch-035-ko-ledger-validation.json",
+      "texExpressions": 219,
+      "displayMath": 38,
+      "coreDisplayBlocks": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 218,
+      "strongSpans": 21,
+      "actualPreviewBundles": 36,
+      "postSnapshotsExact": 468,
+      "taxonomySnapshotsExact": 1,
+      "multilingualPages": 2035,
+      "httpsHtmlPages": 3709,
+      "httpsXmlFiles": 41,
+      "existingTestsPreviouslyPassedNotRerun": 17,
+      "priorTests": "docs/translation-review/batch-035-ja-r2-checks.json",
+      "reviewedTranslationsAdded": 1,
+      "reviewedTranslationsTotal": 425,
+      "unreviewedTranslations": 12607,
+      "humanReviews": 0,
+      "otherTranslationsSemanticallyUnreviewed": 7,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original bodies read. Frozen Japanese, English, simplified Chinese, traditional Chinese and Spanish full revisions read;4AI reviews registered. Other8 only mechanical escape repairs, not full revised semantic review. Prior423 entries unchanged. Publication and whole goal pending.",
+  "scope": "All13 original bodies read. Frozen Japanese, English, simplified Chinese, traditional Chinese, Spanish and Korean full revisions read;5AI reviews registered. Other7 only mechanical escape repairs, not full revised semantic review. Prior424 entries unchanged. Publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }

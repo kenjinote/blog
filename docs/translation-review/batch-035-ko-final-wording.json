@@ -1,0 +1,17 @@
+{
+  "changes": [
+    {
+      "before": "가산 상수는 $H$에 의존하지 않습니다.",
+      "after": "더해지는 상수는 $H$에 의존하지 않습니다."
+    },
+    {
+      "before": "순서쌍 기술 $K(x,y)$을 사용하는 식과도 적절한 가산 오차와 정규화 오차를 허용하면 관련됩니다.",
+      "after": "순서쌍 기술 $K(x,y)$를 사용하는 식과도 적절한 덧셈 오차와 정규화 오차를 허용하면 관련됩니다."
+    },
+    {
+      "before": "각 정밀도에 언제 도달하는지 알려 주는 계산 가능한 수렴 모듈은 없습니다.",
+      "after": "각 정밀도를 언제 보장할 수 있는지 알려 주는 계산 가능한 함수는 없습니다."
+    }
+  ],
+  "scope": "Three contextual final replacements read; distinguish additive constants/errors from countable sets and explain convergence modulus without module ambiguity."
+}
