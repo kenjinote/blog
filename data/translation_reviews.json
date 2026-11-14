@@ -4265,6 +4265,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-035.json",
       "evidenceHash": "695951967cd0084261f0442854f0dbb504a332992e1936b90eb22a7666a52c10"
+    },
+    "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.fr.md": {
+      "source": "post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+      "reviewedAt": "2026-11-14",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "translationHash": "0566e9833a937982e3098326847c9cf96a12f0333d7575123e5bd038f2efef8a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-035.json",
+      "evidenceHash": "5a76b985b5ad30bf5f6c2454564cdd5877f466af59c76ad5e156fceacb4e38d2"
     }
   }
 }

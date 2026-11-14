@@ -1,0 +1,24 @@
+{
+  "allOriginalAndRevisedBodiesRead": true,
+  "revisedReadingRanges": [
+    "1–280",
+    "281–542",
+    "two final contextual wording replacements"
+  ],
+  "checks": {
+    "meaning": "Original111 lines fully reread from current mechanically repaired French file, including metadata, both graphs, table and tail; earlier original receipt remains. Revised542 lines actually read in ranges1–280 and281–542, followed by two final contextual replacements. Compared with frozen Japanese. Corrected guaranteed coin complexity, Shannon dismissal, finite frequency/normality overstatement, simulation-only invariance and finite-machine independence, fixed proof margins and compression-forces-causal-model claims. Original Omega implication already points from known bits to bounded halting decisions; preserved its correct direction and added same-machine/optimality/proof conditions, not an invented equivalence error. Preserved valid point-mass entropy-zero and stationary ergodic examples.",
+    "terminology": "Distinguished complexité simple C and complexité préfixe K, information propre and entropie, empirical bit frequency versus model dependence, correction sémantique versus consistency, vraisemblance versus conditional complexity, discrete semi-mesure m_U versus sequential M. Berry original smallest-positive-integer wording retained; original Hutter name correct. English graph labels translated fully. Final French wording clarified strict savings and graph quantifier scope: inequality cannot hold for all r, not impossible for every r.",
+    "mathematics": "All38 source display expressions preserved with French Martin-Löf annotation;218 TeX expressions match actual HTML. Fractional pi corrected to exclude integer11. Berry phrase has12 whitespace words, not original14. Added packed125000bytes versus1000000 character bytes; simple/prefix/conditional bounds, per-y Kraft, endpoint K(n) costs, optimality in both directions, n/c domains and strictly-greater-than-c savings. Effective ML tests/common constant; shortlex and sound theory/unbounded numeric proof search. Omega left-c.e. and same-machine finite-length halting consequence; strict crossing sufficient without claiming equality invalid. Conditional computable-distribution entropy bounds and finite-alphabet stationary ergodic Brudno without computable-measure requirement. MDL total costs, NCD assumptions and ideal LLM code overhead distinguished.",
+    "code": "Both proof pseudocodes Berry(m) and SearchProof(r) fully read and preserved in rendered HTML; zero executable article programs. ComputeK explicitly hypothetical/impossible. Two Mermaid diagrams preserve source graph IDs and6+5edges with French labels. Prior finite probes and17 JA R2 unit tests referenced, not rerun. No true C/K/Omega computation, new compressor/LLM benchmark or browser/KaTeX/Mermaid execution claimed.",
+    "links": "All8 primary or author-hosted reference URLs match frozen Japanese and actual generated HTML. Primary reading remains previously documented selected pages/abstracts/returned passages; no new fetch, whole-paper reading or current Hutter terms claimed. Original title/date/slug/image/taxonomy preserved, lastmod2026-11-14 and Mermaid enabled. Fresh36bundle preview reconstructs slugs from persisted469snapshot manifest and copies current468post+1taxonomy source snapshots. Canonical,14hreflang and13sidebar targets checked. Common multilingual/HTTPS/ledger validations required before recording; prior6 approvals and frozenJA unchanged. Static checks do not certify native/human review, full site or publication."
+  },
+  "summary": "Full French semantic revision and actual full reading completed, with distinct source/HTML validation evidence. Preserve already correct Omega implication. Publication pending.",
+  "languageSpecificFindings": [
+    "Berry phrase contains12 whitespace-separated words rather than14; original smallest-integer meaning retained.",
+    "Fractional pi prefix erroneously included integer11.",
+    "Original Omega implication was one-way and correct; no same-size equivalence error assigned.",
+    "Original Hutter name correct; no cross-language name intrusion assigned.",
+    "Final graph quantifier rephrased to say inequality cannot hold for all r."
+  ],
+  "goalNote": "Berry例の最小の正整数という正しい意味を保ち14語→12語へ訂正。π整数部混入、シャノン理論・最適性・圧縮と因果理解の過大主張を修正。Ωの元から正しい含意の向きは保ち同一機械という条件を補足。"
+}

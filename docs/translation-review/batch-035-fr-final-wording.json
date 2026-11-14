@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-14T20:38:03.464499+09:00",
+  "beforeSha256": "9540d0b2b95a59ab2b2ff6ea59cab64a216ce2c755269bc29cb7ca9d0e5d73ca",
+  "afterSha256": "0566e9833a937982e3098326847c9cf96a12f0333d7575123e5bd038f2efef8a",
+  "replacements": [
+    {
+      "before": "une économie de <strong>plus de</strong> un bit",
+      "after": "une économie <strong>strictement supérieure à</strong> un bit"
+    },
+    {
+      "before": "r < K(x_r) <= K(r) + c_T est impossible pour tout r",
+      "after": "r < K(x_r) <= K(r) + c_T ne peut pas valoir pour tous les r"
+    }
+  ],
+  "scope": "Two contextual final wording fixes read after full542-line actual-file reading; no review approval by this receipt."
+}
