@@ -1,0 +1,7 @@
+{
+  "exitCode": 2,
+  "stdout": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.zh-cn.md:549: new blank line at EOF.\n",
+  "stderr": "",
+  "assessment": "One trailing empty line only; no content or rendering failure. Kept the reviewed/registered exact hash unchanged.",
+  "receiptAttempt": "First receipt helper incorrectly expected exit1 and stopped before writes; actual Git exit2 now recorded."
+}
