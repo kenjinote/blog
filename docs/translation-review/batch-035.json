@@ -607,10 +607,18 @@
       "humanReviews": 0,
       "otherTranslationsSemanticallyUnreviewed": 7,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-14",
+      "stage": "Portuguese intermediate prose corrections, not approval",
+      "evidence": "docs/translation-review/batch-035-pt-intermediate-corrections.json",
+      "translationHash": "bd349959c99f009b7d2662af658e9209fe92cc074d5ad8af49dbf5ed01d02c10",
+      "reviewedTranslationsAdded": 0,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original bodies read. Frozen Japanese, English, simplified Chinese, traditional Chinese, Spanish and Korean full revisions read;5AI reviews registered. Other7 only mechanical escape repairs, not full revised semantic review. Prior424 entries unchanged. Publication and whole goal pending.",
+  "scope": "All13 originals read. Frozen JA and EN/CN/TW/ES/KO full revisions read;5AI reviews registered. PT has three intermediate prose corrections; full revision and HTML checks pending. Other6 only mechanical repairs. Seven translations semantically unapproved; publication and whole goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true
 }

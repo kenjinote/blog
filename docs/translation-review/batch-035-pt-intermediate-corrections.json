@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-11-14T10:53:21.919747+09:00",
+  "language": "pt",
+  "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.pt.md",
+  "previousRepairedSha256": "59733214aff86e079e5b4ee488d91543d1241e006e5b6cfb62cb7d4d142d9479",
+  "intermediateSha256": "bd349959c99f009b7d2662af658e9209fe92cc074d5ad8af49dbf5ed01d02c10",
+  "fullExisting111LinesRead": true,
+  "changes": [
+    {
+      "before": "1100100100001111110110...",
+      "after": "0010010000111111..."
+    },
+    {
+      "before": "frase que o define em quinze palavras!",
+      "after": "frase com quatorze palavras separadas por espaços; a ambiguidade de “definido” exige um argumento formal separado"
+    },
+    {
+      "before": "- Por outro lado, para a string $S_3$ gerada por lançamentos reais de moeda, não há nenhuma regra oculta capaz de resumi-la. O menor programa capaz de produzir $S_3$ precisa incorporar literalmente o milhão de bits (`print(\"1011001...\")`), resultando em $K(S_3) \\approx n + O(1) \\approx 1.000.000$ de bits!",
+      "after": "- Para $S_3$, a afirmação correta é probabilística: lançamentos independentes de uma moeda justa podem produzir, por acaso, uma string simples. O argumento de contagem mostra que resultados que admitem descrições muito mais curtas são raros, mas não garante alta complexidade para cada resultado. Para uma string de comprimento $n$, a reprodução literal dá $C(x)\\le n+O(1)$ para a complexidade simples; para a complexidade livre de prefixos, vale $K(x)\\le n+K(n)+O(1)$, ou $K(x\\mid n)\\le n+O(1)$ se o comprimento for fornecido gratuitamente."
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "fullRevisedSemanticReviewComplete": false,
+  "publicationPending": true,
+  "remaining": [
+    "Full seven-section revision/comparison and generated HTML validation pending.",
+    "Original English graphs still contain overstrong coin/complexity claims and must be revised.",
+    "Optimal-machine assumptions, ML tests, Chaitin soundness/shortlex, Omega implication, semimeasures, MDL/NCD and predictive coding remain to be revised."
+  ],
+  "nextStep": "Use intermediateSha256 as current PT guard, not old repairedSha256. No AI approval until full revised reading and validation."
+}

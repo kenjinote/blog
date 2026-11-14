@@ -14,12 +14,13 @@ tags:
   - "Computer Science"
 math: true
 draft: false
+lastmod: "2026-11-14"
 ---
 ## Introdução: O Enigma das Três Strings de Um Milhão de Bits — O Ponto Cego da Teoria de Shannon
 
 Imagine que você tem diante de si três strings binárias com exatamente $1.000.000$ de bits cada uma:
 - A primeira string $S_1$ é a repetição quinhentas mil vezes de `01`: `01010101...01`.
-- A segunda string $S_2$ contém o primeiro milhão de dígitos binários após a vírgula do número $\pi$: `1100100100001111110110...`.
+- A segunda string $S_2$ contém o primeiro milhão de dígitos binários após a vírgula do número $\pi$: `0010010000111111...`.
 - A terceira string $S_3$ é a sequência obtida ao lançar um milhão de vezes uma moeda honesta (cara = `1`, coroa = `0`).
 
 Qual dessas três strings contém mais “informação”? Qual é a mais “complexa” e qual é verdadeiramente “aleatória”?
@@ -43,7 +44,7 @@ Dada uma máquina de Turing universal $U$ (ou qualquer linguagem de programaçã
 Olhando para as nossas três strings de um milhão de bits através da lente de $K(x)$, o mistério se desfaz imediatamente:
 - Para $S_1$, basta o minúsculo programa `print("01" * 500000)`. Como só precisamos codificar em binário o contador de loop $n/2$, temos $K(S_1) = O(\log_2 n) \approx 20$ bits: é uma string <strong>algoritmicamente trivial</strong>.
 - Para $S_2$ (os primeiros $n$ bits de $\pi$), embora pareça ruído aleatório, um pequeno programa de poucas centenas de bytes implementando uma fórmula de Machin ou o algoritmo BBP calcula $S_2$ com exatidão. Logo, também vale $K(S_2) = O(\log_2 n)$! Isso revela uma verdade central da filosofia da ciência: <strong>uma lei da natureza nada mais é do que uma compressão algorítmica extrema de dados empíricos.</strong>
-- Por outro lado, para a string $S_3$ gerada por lançamentos reais de moeda, não há nenhuma regra oculta capaz de resumi-la. O menor programa capaz de produzir $S_3$ precisa incorporar literalmente o milhão de bits (`print("1011001...")`), resultando em $K(S_3) \approx n + O(1) \approx 1.000.000$ de bits!
+- Para $S_3$, a afirmação correta é probabilística: lançamentos independentes de uma moeda justa podem produzir, por acaso, uma string simples. O argumento de contagem mostra que resultados que admitem descrições muito mais curtas são raros, mas não garante alta complexidade para cada resultado. Para uma string de comprimento $n$, a reprodução literal dá $C(x)\le n+O(1)$ para a complexidade simples; para a complexidade livre de prefixos, vale $K(x)\le n+K(n)+O(1)$, ou $K(x\mid n)\le n+O(1)$ se o comprimento for fornecido gratuitamente.
 
 Mas $K_U(x)$ não dependeria arbitrariamente da linguagem de programação $U$ escolhida? O <strong>Teorema da Invariância de Kolmogorov</strong> prova que não: para quaisquer duas máquinas universais $U_1$ e $U_2$, existe uma constante $c_{12}$ que depende apenas de $U_1$ e $U_2$ (sendo <strong>totalmente independente de $x$</strong>) tal que $|K_{U_1}(x) - K_{U_2}(x)| \le c_{12}$. A prova é cristalina: $c_{12}$ é simplesmente o tamanho fixo em bits de um <strong>interpretador (ou compilador cruzado)</strong> escrito em $U_1$ que simula $U_2$! Quando o tamanho dos dados $n \to \infty$, esse custo fixo torna-se desprezível.
 
@@ -87,7 +88,7 @@ flowchart TD
 
 Se $K(x)$ é tão poderosa, podemos escrever um compressor definitivo que receba qualquer string $x$ e calcule exatamente $K(x)$? A resposta é um <strong>não absoluto: a função $K(x)$ é incomputável!</strong>
 
-Essa impossibilidade decorre do clássico <strong>Paradoxo de Berry</strong> (“o menor inteiro positivo que não pode ser definido em menos de vinte palavras” — frase que o define em quinze palavras!). Gregory Chaitin formalizou isso da seguinte maneira: suponha que exista uma sub-rotina `ComputeK(x)` de tamanho fixo $L$ bits que calcule $K(x)$. Construímos então um programa principal $Q$ que enumera todas as strings $s$ em ordem lexicográfica, chama `ComputeK(s)` e imprime a primeira string $s^*$ que satisfaz $K(s^*) > L + 10000$. O comprimento total do programa $Q$ é de apenas $L + O(1)$ bits, mas ele consegue imprimir $s^*$! Pela definição de $K(s^*)$ como o comprimento do menor programa que gera $s^*$, deve valer $K(s^*) \le |Q| < L + 10000$, contradizendo diretamente $K(s^*) > L + 10000$! Daqui decorre o <strong>Teorema da Incompletude de Chaitin</strong>: nenhum sistema axiomático formal de complexidade $C$ bits pode provar que uma string específica satisfaz $K(x) > C + O(1)$.
+Essa impossibilidade decorre do clássico <strong>Paradoxo de Berry</strong> (“o menor inteiro positivo que não pode ser definido em menos de vinte palavras” — frase com quatorze palavras separadas por espaços; a ambiguidade de “definido” exige um argumento formal separado). Gregory Chaitin formalizou isso da seguinte maneira: suponha que exista uma sub-rotina `ComputeK(x)` de tamanho fixo $L$ bits que calcule $K(x)$. Construímos então um programa principal $Q$ que enumera todas as strings $s$ em ordem lexicográfica, chama `ComputeK(s)` e imprime a primeira string $s^*$ que satisfaz $K(s^*) > L + 10000$. O comprimento total do programa $Q$ é de apenas $L + O(1)$ bits, mas ele consegue imprimir $s^*$! Pela definição de $K(s^*)$ como o comprimento do menor programa que gera $s^*$, deve valer $K(s^*) \le |Q| < L + 10000$, contradizendo diretamente $K(s^*) > L + 10000$! Daqui decorre o <strong>Teorema da Incompletude de Chaitin</strong>: nenhum sistema axiomático formal de complexidade $C$ bits pode provar que uma string específica satisfaz $K(x) > C + O(1)$.
 
 Chaitin também condensou a probabilidade de parada de uma máquina universal livre de prefixos no lendário <strong>número Ômega $\Omega = \sum_{U(p)\text{ para}} 2^{-|p|}$</strong>. Embora $\Omega \in (0,1)$ seja perfeitamente definido, ele é <strong>totalmente incomputável e algoritmicamente aleatório</strong> ($K(\Omega_{1:n}) \ge n - O(1)$): conhecer os primeiros $n$ bits de $\Omega$ equivaleria a resolver o problema da parada de Turing para todos os programas de tamanho até $n$!
 
