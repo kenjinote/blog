@@ -1,198 +1,233 @@
 ---
 title: "Le problème de l'arrêt (Halting Problem) : Le programme ultime qu'il est impossible de créer"
-date: "2026-09-24T19:44:38+09:00"
+date: "2026-09-14T00:00:51+09:00"
 image: "eyecatch-v2.png"
-date: 2026-09-14T00:00:51+09:00
-description: "Nous expliquons le problème de l'arrêt, l'un des problèmes insolubles (et prouvé comme tel) les plus célèbres en informatique. Nous l'illustrons clairement à l'aide de la preuve par l'absurde, d'exemples concrets intuitifs, de formules mathématiques et de schémas."
+description: "Pourquoi aucun algorithme ne peut toujours décider correctement si un programme quelconque termine sur une entrée donnée : codage, diagonalisation, quantificateurs de Collatz, conditions du théorème de Rice et limites des analyses et des délais."
 categories: ["computer-science", "theory-of-computation"]
 tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]
 slug: "halting-problem"
+math: true
+mermaid: true
+lastmod: "2026-11-15"
 ---
 
-Lorsque l'on programme, il arrive d'être inquiet et de se demander : « Ce programme ne va-t-il pas finir en boucle infinie quelque part ? » S'il existait un **outil capable de déterminer avec certitude si n'importe quel programme finira par boucler à l'infini ou non**, le développement et le débogage deviendraient incroyablement plus simples.
+Lorsqu'un programme ne finit pas, on peut se demander s'il serait possible de savoir à l'avance qu'il terminera. On peut souvent démontrer la terminaison ou la non-terminaison de programmes particuliers. Mais il n'existe aucun algorithme qui <strong>termine lui-même et donne une réponse correcte pour tous les programmes et toutes leurs entrées</strong>.
 
-Cependant, dans le domaine de l'informatique, il a été mathématiquement prouvé qu'un tel outil de rêve est **« absolument impossible à créer »**. C'est le célèbre **« problème de l'arrêt ([Halting Problem](https://kenji.blog/fr/p/turing-machine-computability/)) »**.
+C'est l'<strong>indécidabilité du problème de l'arrêt</strong>. Il s'agit d'un résultat d'impossibilité démontré, et non d'une conjecture encore ouverte. Cela ne signifie pas qu'aucun cas particulier ne puisse être décidé.
 
-Cet article explique clairement, à l'aide d'exemples concrets intuitifs, de formules mathématiques (KaTeX) et de schémas (Mermaid), ce problème dont la solution a été prouvée par [Alan Turing](https://kenji.blog/fr/p/turing/) en 1936.
+Nous considérons un modèle de calcul déterministe, régi par un algorithme fini ordinaire, dont la mémoire peut croître selon les besoins. L'arrêt d'une machine réelle dû à une batterie vide, à l'interruption forcée d'un processus ou à un manque de mémoire se distingue de l'arrêt dans ce modèle mathématique.
 
-## Qu'est-ce que le problème de l'arrêt ?
+## 1. Fixer l'entrée autant que le programme
 
-Le problème de l'arrêt désigne la question suivante :
+Notons $\langle P\rangle$ la description finie d'un programme $P$, et prenons pour entrée une chaîne finie $x$. Un simulateur universel peut lire cette description comme une donnée et reproduire le calcul de $P$ sur $x$.
 
-> Étant donné un programme informatique quelconque et son entrée, existe-t-il un algorithme général permettant de déterminer si ce programme va s'arrêter dans un temps fini (se terminer) ou s'il va continuer à s'exécuter éternellement (boucle infinie) ?
-
-Si cela était possible, nous devrions être capables d'implémenter la fonction suivante `Halt(P, I)` :
-
-```python
-def Halt(P, I):
-    """
-    Lorsqu'on donne l'entrée I au programme P,
-    renvoie true s'il s'arrête,
-    renvoie false s'il fait une boucle infinie.
-    """
-    # L'algorithme universel de rêve...
-```
-
-À première vue, on pourrait penser qu'il suffit de faire une analyse statique du code source ou d'en simuler l'exécution pour y parvenir. Regardons quelques exemples simples.
-
-### Exemples concrets intuitifs
-
-**Exemple 1 : Un programme qui s'arrête manifestement**
-
-```python
-def example1(x):
-    return x * 2
-```
-Ce programme `example1` renvoie une valeur numérique et s'arrête immédiatement, quelle que soit son entrée. Ainsi, `Halt(example1, input)` devrait valoir `true`.
-
-**Exemple 2 : Un programme qui boucle manifestement à l'infini**
-
-```python
-def example2(x):
-    while True:
-        pass
-```
-Ce programme `example2` ne sortira jamais de sa boucle. Ainsi, `Halt(example2, input)` devrait valoir `false`.
-
-**Exemple 3 : Un programme dont l'évaluation est difficile (la conjecture de Syracuse/Collatz)**
-
-```python
-def collatz(n):
-    while n > 1:
-        if n % 2 == 0:
-            n = n // 2
-        else:
-            n = 3 * n + 1
-```
-Cette fonction répète une opération sur un nombre donné : s'il est pair, elle le divise par deux ; s'il est impair, elle le multiplie par 3 et ajoute 1, et ce, jusqu'à ce qu'il devienne 1. Savoir si ce programme s'arrête pour tous les entiers positifs est un problème mathématique non résolu appelé la « conjecture de Collatz ». S'il existait une fonction `Halt` universelle, nous pourrions même résoudre des problèmes mathématiques non résolus simplement en passant le programme à cette fonction.
-
-## La preuve par l'absurde avec des formules
-
-Turing a utilisé la **« preuve par l'absurde (Proof by Contradiction) »** pour démontrer qu'une fonction `Halt` universelle n'existe pas. La preuve par l'absurde est une méthode de démonstration qui consiste à supposer qu'une certaine proposition est vraie, puis à montrer que cela conduit à une contradiction, ce qui permet de conclure que l'hypothèse de départ était fausse.
-
-Pour commencer la preuve, on suppose d'abord qu'il existe un algorithme de décision universel $H$. La fonction $H(P, I)$, qui reçoit le programme $P$ et son entrée $I$, est définie comme suit :
+Le problème de l'arrêt porte sur l'appartenance à l'ensemble suivant :
 
 $$
-H(P, I) =
+\mathrm{HALT}
+=\{\langle P,x\rangle : P(x)\text{ termine en temps fini}\}
+$$
+
+S'il existait un algorithme de décision total $H$, il renverrait en temps fini l'une des valeurs suivantes, pour toute description valide de programme et toute entrée :
+
+$$
+H(\langle P\rangle,x)=
 \begin{cases}
-\text{true} & (\text{si le programme } P \text{ s'arrête pour l'entrée } I) \\
-\text{false} & (\text{si le programme } P \text{ boucle à l'infini pour l'entrée } I)
+1 & P(x)\text{ termine}\\
+0 & P(x)\text{ ne termine pas}
 \end{cases}
 $$
 
-On suppose que cette fonction $H$ renverra toujours `true` ou `false` dans un temps fini pour n'importe quel programme et entrée.
+Nous exigeons <strong>à la fois que $H$ termine toujours et que sa réponse soit toujours correcte</strong>. Les chaînes qui ne sont pas des descriptions valides peuvent être traitées séparément par une vérification syntaxique.
 
-Ensuite, en utilisant le résultat de cette fonction $H$, nous créons un programme malveillant $D$ (Deceiver, le trompeur). Le programme $D$ prend un autre programme $X$ comme entrée et se comporte comme suit :
+Si un calcul termine, sa simulation finira par révéler son arrêt. L'ensemble des couples qui terminent est donc semi-décidable. Mais le temps déjà passé à attendre ne permet pas de savoir si un calcul toujours en cours finira à l'étape suivante ou continuera indéfiniment.
+
+On parle parfois de « boucle infinie » pour toute exécution qui ne termine pas, sans qu'elle répète nécessairement le même état. Un calcul qui incrémente sans cesse un compteur dans une mémoire non bornée peut avoir une configuration complète différente à chaque étape.
+
+## 2. Des exemples simples et des observations limitées en nombre d'étapes
+
+### Un exemple dont on peut expliquer la terminaison
+
+Voici un exemple Python exécutable qui n'accepte que les entiers du type intégré.
 
 ```python
-def D(X):
-    if H(X, X) == True:
-        while True:
-            pass  # boucle infinie
-    else:
-        return  # s'arrête
+def double_integer(x):
+    if type(x) is not int:
+        raise TypeError("x must be a built-in int")
+    return x * 2
+
+
+print(double_integer(3))
 ```
 
-Le comportement du programme $D(X)$ est le suivant :
-1. Il évalue avec $H(X, X)$ si le programme $X$ s'arrête lorsqu'on lui donne $X$ lui-même comme entrée.
-2. Si $H(X, X)$ est `true` (c'est-à-dire que $X(X)$ s'arrête), il entre exprès dans une **boucle infinie**.
-3. Si $H(X, X)$ est `false` (c'est-à-dire que $X(X)$ boucle à l'infini), il **s'arrête** exprès.
+Sa sortie est :
 
-Voici le cœur de la preuve. **Que se passera-t-il si l'on donne ce programme malveillant $D$ lui-même comme entrée à $D$ ?** En d'autres termes, nous allons considérer le comportement lorsque $D(D)$ est exécuté.
+```text
+6
+```
 
-Séparons la réflexion en différents cas.
+Pour tout entier fini en entrée, l'opération arithmétique idéalisée s'achève en temps fini. Cela ne signifie pas que le temps réel ou la mémoire utilisée soient indépendants de la taille de l'entrée. Nous limitons le type parce que des objets Python quelconques peuvent définir leur propre multiplication, et que multiplier une chaîne renvoie une chaîne, pas un nombre.
 
-### Cas 1 : Supposons que $D(D)$ s'arrête
+À l'inverse, ce <strong>pseudocode</strong> ne termine pas dans un modèle sans interruption externe :
 
-Si on suppose que $D(D)$ s'arrête, l'algorithme de décision $H(D, D)$ devrait renvoyer `true`.
-Cependant, en regardant la définition de $D$, si $H(D, D)$ est `true`, $D$ entre dans la boucle `while True` et se met à **boucler à l'infini**.
-Cela contredit l'hypothèse de départ selon laquelle « $D(D)$ s'arrête ».
+```text
+Forever(x):
+    repeat forever:
+        do nothing
+```
 
-### Cas 2 : Supposons que $D(D)$ boucle à l'infini
+On peut expliquer cette non-terminaison : le flot de contrôle n'atteint jamais de sortie. L'absence de décideur universel n'empêche pas de trancher de tels cas particuliers.
 
-Si on suppose que $D(D)$ boucle à l'infini, l'algorithme de décision $H(D, D)$ devrait renvoyer `false`.
-Cependant, en regardant la définition de $D$, si $H(D, D)$ est `false`, $D$ fait immédiatement un `return` et **s'arrête**.
-Cela contredit l'hypothèse de départ selon laquelle « $D(D)$ boucle à l'infini ».
+### Observer un nombre fini d'étapes de Collatz
 
-### Conclusion
+À partir d'un entier strictement positif $n$, on le divise par deux s'il est pair, ou on le multiplie par trois et on ajoute un s'il est impair, puis on répète l'opération. La conjecture de Collatz, aussi appelée conjecture de Syracuse, affirme que tout entier strictement positif finit par atteindre un.
 
-Peu importe la tournure que prennent les événements, une contradiction apparaît. Cette contradiction provient du fait que la première hypothèse, à savoir « l'existence d'un algorithme de décision universel $H$ », était fausse.
+Le programme suivant observe ce processus avec un nombre maximal d'étapes. <strong>Atteindre cette limite ne doit pas être interprété comme une preuve que le calcul sans limite ne terminera jamais.</strong>
 
-Il est par conséquent prouvé qu'**il n'existe pas d'algorithme universel capable de déterminer si un programme arbitraire s'arrêtera**.
+```python
+def collatz_bounded(n, max_steps):
+    if type(n) is not int or n < 1:
+        raise ValueError("n must be a positive built-in int")
+    if type(max_steps) is not int or max_steps < 0:
+        raise ValueError("max_steps must be a nonnegative built-in int")
 
-## Schéma : Le mécanisme de la contradiction
+    steps = 0
+    while n != 1 and steps < max_steps:
+        n = n // 2 if n % 2 == 0 else 3 * n + 1
+        steps += 1
+    status = "reached_one" if n == 1 else "step_limit"
+    return status, steps, n
 
-Illustrons la logique de cette preuve par l'absurde avec Mermaid.
+
+print(collatz_bounded(6, 8))
+print(collatz_bounded(6, 7))
+print(collatz_bounded(1, 0))
+```
+
+Sortie :
+
+```text
+('reached_one', 8, 1)
+('step_limit', 7, 2)
+('reached_one', 0, 1)
+```
+
+Ce programme d'observation termine lui-même après, au plus, le nombre fini d'itérations indiqué. La question de fond est de savoir si l'itération sans cette limite atteint un. Un nombre fini d'exemples favorables ne prouve pas l'affirmation pour tous les entiers strictement positifs. Les travaux de Tao apportent un résultat partiel important, mais n'établissent pas que toutes les orbites atteignent un.
+
+En notant $\mathrm{Col}$ l'application itérée, la conjecture prend la forme
+
+$$
+\forall n\ge1\ \exists t\ge0\quad \mathrm{Col}^{t}(n)=1
+$$
+
+Donner un $n$ particulier à l'hypothétique $H$ fournirait une réponse concernant <strong>cette seule entrée</strong>. La question de totalité « termine-t-il pour tous les $n$ ? » ne se confond pas directement avec une unique question ordinaire d'arrêt. On ne peut pas en conclure que soumettre un programme permettrait de décider n'importe quel énoncé mathématique.
+
+## 3. Un programme qui inverse la réponse
+
+Supposons qu'il existe un algorithme $H$ qui termine toujours et répond correctement pour toute description valide de programme et toute entrée.
+
+Un programme décrit par $s$ peut recevoir cette même description $s$ en entrée. Il s'agit simplement de traiter un programme comme une donnée, sans devoir y insérer un code source de longueur infinie.
+
+Sous cette hypothèse, construisons $D$ :
+
+```text
+D(s):
+    if s is not a valid program description:
+        halt
+    if H(s, s) == 1:
+        repeat forever:
+            do nothing
+    else:
+        halt
+```
+
+C'est un <strong>pseudocode de démonstration qui appelle l'hypothétique $H$</strong>, et non un décideur d'arrêt déjà implémenté. L'hypothèse selon laquelle $H$ est calculable et termine toujours permet de construire ce $D$ avec une description finie.
+
+Notons $d=\langle D\rangle$ la description de $D$, et considérons $D(d)$.
+
+| Réponse du décideur | Ce qu'elle impliquerait s'il était correct | Comportement défini pour $D(d)$ |
+| :--- | :--- | :--- |
+| $H(d,d)=1$ | $D(d)$ termine | Répéter indéfiniment |
+| $H(d,d)=0$ | $D(d)$ ne termine pas | Terminer immédiatement |
+
+Les deux réponses contredisent la correction du décideur. En abrégé,
+
+$$
+D(d)\text{ termine}
+\iff H(d,d)=0
+\iff D(d)\text{ ne termine pas}
+$$
+
+L'algorithme $H$ supposé total et correct n'existe donc pas.
+
+La conclusion n'est ni que tous les programmes autoréférentiels sont contradictoires, ni que la logique se brise. La contradiction réfute <strong>l'hypothèse de l'existence d'un décideur universel de l'arrêt</strong>.
+
+## 4. Suivre l'argument diagonal dans un schéma
 
 ```mermaid
-graph TD
-    subgraph "Machine de décision H"
-        H{"Résultat de H(X, X) ?"}
-    end
-
-    subgraph "Programme malveillant D"
-        START["Démarrer D"] --> H
-        H -->|"true (s'arrête)"| LOOP["Boucle infinie"]
-        H -->|"false (boucle à l'infini)"| HALT["S'arrête"]
-    end
-
-    %% Entrer D lui-même dans D
-    INPUT_D[/"Entrée : D"/] --> START
-    
-    %% Mise en évidence de la contradiction
-    LOOP -.->|"Contredit la décision de H (true) !"| FAIL_1(("Contradiction"))
-    HALT -.->|"Contredit la décision de H (false) !"| FAIL_2(("Contradiction"))
-    
-    style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
-    style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px
+flowchart TD
+    Input["d = description finie de D"] --> Run["Donner d en entrée à D"]
+    Run --> Test{"Réponse de H(d,d), supposé exister"}
+    Test -->|"1 : prédit la terminaison"| Loop["D(d) répète indéfiniment"]
+    Test -->|"0 : prédit la non-terminaison"| Stop["D(d) termine"]
+    Loop --> Wrong1["Contredit la correction de H"]
+    Stop --> Wrong2["Contredit la correction de H"]
+    Wrong1 --> Conclusion["Aucun H total et correct"]
+    Wrong2 --> Conclusion
 ```
 
-Comme le montre le schéma, dès l'instant où l'on donne $D$ lui-même en entrée, une boucle s'inverse où le résultat de la décision et l'action réelle entrent en contradiction (paradoxe), brisant ainsi la logique. Cela possède une structure très semblable au paradoxe du menteur avec sa fameuse phrase « Cette phrase est fausse ».
+C'est une construction diagonale : l'un des programmes que le décideur proposé prétend couvrir inverse sa réponse. Le rapprochement avec le paradoxe du menteur peut aider l'intuition, mais la démonstration repose sur le codage des descriptions et la construction effective des programmes.
 
-## L'histoire des ordinateurs et la machine de Turing
+## 5. L'article original de Turing et les modèles de calcul
 
-C'est en 1936, à une époque où les ordinateurs électroniques modernes n'existaient pas encore, qu'[Alan Turing](https://kenji.blog/fr/p/turing/) a soulevé et prouvé ce problème. Afin de définir mathématiquement et rigoureusement « qu'est-ce qu'un calcul ? », il a inventé une machine conceptuelle appelée **« la machine de Turing ([Turing Machine](https://kenji.blog/fr/p/turing-machine-computability/)) »**.
+L'article d'[Alan Turing](/fr/p/turing/) de 1936 établit des résultats d'indécidabilité au moyen de machines de calcul, de descriptions codées, d'une machine universelle et de la diagonalisation. La preuve à la manière de Python donnée ici ne figure pas telle quelle dans l'original.
 
-Une machine de Turing se compose d'un ruban infiniment long, d'une tête de lecture/écriture pour lire et écrire les informations sur le ruban, et d'un tableau de transition d'états gérant l'état de la machine. Il est admis que même les programmes modernes les plus complexes peuvent théoriquement être réduits à cette machine de Turing. C'est ce que l'on appelle la **« thèse de Church-Turing (Church-Turing Thesis) »**.
+Le texte original appelle circle-free une machine qui produit une infinité de chiffres, zéros ou uns, et circular une machine qui n'en produit qu'un nombre fini. Cette seconde catégorie comprend aussi bien les machines qui s'arrêtent que celles qui poursuivent d'autres opérations sans produire davantage de chiffres. Traduire ces termes simplement par « ne termine pas » et « termine » serait donc inexact. La section 8 traite aussi de l'impossibilité de décider en général si une machine imprimera un jour un symbole donné.
 
-Turing a tenté de tracer la limite entre « les problèmes calculables » et « les problèmes non calculables » à l'aide de ce modèle simple. Le problème de l'arrêt, qui est le représentant par excellence des problèmes indécidables, a été découvert comme le résultat de cette tentative.
+On peut relier l'apparition du symbole à l'arrêt en construisant une machine qui simule le calcul et ne s'arrête que lorsque ce symbole apparaît. Nous avons employé ici la formulation moderne habituelle : <strong>la terminaison d'un programme sur une entrée fixée</strong>.
 
-## Une profonde connexion avec les théorèmes d'incomplétude de Gödel
+Une [machine de Turing](/fr/p/turing-machine-computability/) est un modèle mathématique avec un ensemble fini de règles et un ruban utilisable selon les besoins. La thèse de Church–Turing affirme que la notion intuitive de « procédure effective exécutable mécaniquement » est capturée par cette calculabilité formelle. Elle se distingue des théorèmes d'équivalence entre modèles définis formellement. Ce n'est pas non plus une affirmation démontrée sans conditions sur tous les phénomènes physiques ou appareils réels.
 
-Le « paradoxe de l'autoréférence » qui sous-tend la preuve du problème de l'arrêt est intimement lié aux **« théorèmes d'incomplétude (Incompleteness Theorems) »** publiés par [Kurt Gödel](https://kenji.blog/fr/p/godel/) en 1931, juste avant Turing.
+## 6. Le lien avec l'incomplétude
 
-Le premier théorème d'incomplétude de Gödel stipule que « dans un système axiomatique suffisamment puissant comprenant l'arithmétique des nombres entiers, il existera toujours des propositions vraies qui ne peuvent être ni prouvées ni réfutées ». Pour prouver ce théorème, Gödel a construit mathématiquement une proposition autoréférentielle du type « Cette proposition est indémontrable ».
+Les [théorèmes d'incomplétude de Gödel](/fr/p/godels-incompleteness-theorems/) sont étroitement liés aux limites de la calculabilité. Leurs énoncés ne s'appliquent pas sans conditions à tout système axiomatique « suffisamment puissant » : l'axiomatisation effective, la capacité d'exprimer l'arithmétique, la cohérence et d'autres hypothèses comptent. Il faut aussi distinguer la vérité dans les entiers naturels standards de la démontrabilité dans une théorie.
 
-Le programme malveillant $D$ dans le problème de l'arrêt de Turing effectue une autoréférence sous la forme « boucle à l'infini si la machine d'évaluation $H$ décide qu'il s'arrête, et s'arrête si la machine décide qu'il boucle à l'infini ». En d'autres termes, on peut considérer le problème de l'arrêt comme la **version informatique du théorème d'incomplétude**. Ces deux grandes démonstrations exposant les limites de la logique partagent la structure d'un même paradoxe.
+Pour voir un lien avec l'arrêt, considérons une théorie dont les preuves peuvent être énumérées effectivement et qui <strong>ne démontre que des énoncés vrais</strong> sur la terminaison et la non-terminaison. Si elle pouvait démontrer l'une ou l'autre pour chaque programme et chaque entrée fixée, on pourrait chercher les deux sortes de preuves et renvoyer la réponse correspondant à la première trouvée.
 
-## Ce que signifie ce théorème aujourd'hui
+Cela contredirait l'indécidabilité du problème de l'arrêt. Même une telle théorie correcte ne peut donc pas trancher toutes les questions d'arrêt. Cette explication utilise l'hypothèse forte de correction sémantique ; elle ne donne ni les hypothèses les plus faibles de chaque théorème de Gödel, ni leur démonstration complète.
 
-Le fait que le problème de l'arrêt soit « indécidable (Undecidable) » revêt une très grande importance dans l'ingénierie logicielle contemporaine.
+## 7. Le théorème de Rice et l'analyse pratique
 
-### L'extension vers le théorème de Rice
+### Des propriétés non triviales des entrées et sorties
 
-Le problème de l'arrêt a évolué vers le **« théorème de Rice (Rice's Theorem) »**, qui est encore plus général. Le théorème de Rice stipule qu'« il n'existe pas d'algorithme général permettant de déterminer si un programme possède une propriété sémantique non triviale ».
+Le théorème de Rice établit un résultat général d'indécidabilité pour les <strong>propriétés extensionnelles non triviales</strong> de la fonction partielle calculée par un programme ou du langage qu'il reconnaît.
 
-Cela signifie qu'au-delà de savoir si un programme boucle à l'infini, des questions telles que les suivantes sont aussi généralement indécidables :
-- « Cette fonction renvoie-t-elle toujours 0 ? »
-- « Y a-t-il un bug spécifique dans ce programme ? »
-- « Ce système provoque-t-il un accès illégal à la mémoire ? »
+« Extensionnelle » signifie que des programmes représentant le même comportement d'entrée et de sortie ont la même réponse quant à la propriété. « Non triviale » signifie qu'il existe des objets calculables qui la possèdent et d'autres qui ne la possèdent pas.
 
-### Les compromis dans le monde pratique
+Par exemple, « termine et renvoie zéro pour toutes les entrées » est une propriété non triviale d'une fonction partielle. Elle diffère de « s'il termine, sa sortie est toujours zéro ». Un programme qui ne termine sur aucune entrée satisfait aussi cette dernière condition. Il ne faut donc pas laisser ambiguë la formule « renvoie toujours zéro ».
 
-Le fait qu'on « ne puisse généralement pas le résoudre » ne signifie pas pour autant que les ingénieurs logiciels ont baissé les bras.
-Les compilateurs modernes, les outils d'analyse de code statique ou les logiciels antivirus détectant les malwares offrent des avantages pratiques en faisant les compromis suivants :
+Certaines questions de syntaxe ou de représentation sont décidables, comme le nombre d'états écrits dans la description d'un programme. Le théorème de Rice ne s'applique pas non plus automatiquement à des propriétés d'étapes intermédiaires de l'exécution, par exemple un accès particulier à la mémoire. Pour établir l'indécidabilité d'un problème d'exécution, il faut préciser le modèle et fournir une réduction adaptée ou un autre argument.
 
-- **Heuristiques** : Abandon de la certitude à 100 %, on déduit à partir de schémas fréquents qu'il y a « probablement un bug » ou qu'il s'agit « probablement d'un comportement malveillant ».
-- **Langages restreints** : L'utilisation de langages non Turing-complet (où il est impossible d'écrire une boucle infinie) ou de systèmes de types pour garantir certaines sécurités.
-- **[Dépassement](/fr/p/hegel%E3%81%AEdialectique/) de délai (Timeout)** : Si le calcul n'est pas terminé après un certain temps, le traitement est forcé de s'interrompre (Timeout).
+### Distinguer garanties, réponses inconnues et délais
 
-## Résumé
+L'absence de décideur universel ne signifie pas que tous les outils d'analyse doivent se contenter de deviner.
 
-Dans cet article, nous avons expliqué le **problème de l'arrêt**, prouvé par Turing.
+- <strong>Analyse correcte mais incomplète</strong> : elle apporte des garanties lorsqu'elle peut prouver un résultat, et répond « inconnu » dans les autres cas. Un avertissement d'une analyse conservative peut ne pas correspondre à un défaut réel.
+- <strong>Langages ou domaines d'entrée restreints</strong> : ils peuvent employer des règles garantissant la terminaison ou une recherche exhaustive sur un domaine fini. Le simple fait qu'un langage ne soit pas Turing-complet ne garantit pas la terminaison de tous ses programmes.
+- <strong>Heuristiques et tests</strong> : ils trouvent des défauts possibles ou des contre-exemples utiles, sans constituer une garantie de complétude au-delà du domaine vérifié.
+- <strong>Délais maximaux</strong> : ils interrompent la consommation de ressources ; ils ne prouvent pas que le calcul continuerait indéfiniment en l'absence de limite.
 
-- Il n'existe aucun algorithme permettant de déterminer avec certitude si n'importe quel programme s'arrêtera dans un délai défini.
-- Si l'on suppose qu'une machine d'évaluation $H$ existe, un programme malveillant $D$ qui trahit le résultat de l'évaluation provoquera une contradiction (preuve par l'absurde).
-- Ce théorème montre la « limite logique » inhérente aux ordinateurs, et c'est la raison fondamentale pour laquelle les outils de développement logiciel d'aujourd'hui nécessitent des « conjectures » et des « compromis ».
+Dans un système déterministe fermé comportant un nombre fini de configurations complètes, représentables et dont les transitions sont calculables effectivement, on peut suivre l'exécution jusqu'à l'arrêt ou à la répétition d'une configuration. Cela établit la décidabilité mathématique, sans garantir une recherche exhaustive réalisable avec un temps ou une mémoire raisonnables. Le raisonnement ne se transpose pas directement à des systèmes avec des entrées non bornées, une interaction externe ou une mémoire croissante.
 
-C'est précisément parce qu'il est mathématiquement impossible de créer l'outil d'analyse de programme parfait que les tests et la conception par le programmeur lui-même restent aujourd'hui essentiels. N'oubliez pas, lorsque vous codez, d'utiliser votre propre tête pour envisager les possibilités de boucle infinie.
+## 8. Ce qui est impossible et ce qui reste possible
+
+Le résultat sur l'arrêt exclut un algorithme général qui termine toujours et choisit toujours la bonne réponse parmi deux possibilités, pour tout programme et toute entrée. « En temps fini » ne signifie pas ici « avant une borne d'étapes fixée à l'avance » : pour une borne finie donnée, on peut simuler ce nombre d'étapes.
+
+Les preuves de terminaison de programmes particuliers, les vérifications complètes sous des restrictions adaptées, les analyses correctes qui autorisent une réponse inconnue et les tests finis restent utiles et compatibles avec ce résultat. L'essentiel est de distinguer si la réponse d'un outil est une preuve, une observation, une supposition ou l'aveu qu'il ne sait pas.
+
+### Références
+
+- [Turing: On Computable Numbers, with an Application to the Entscheidungsproblem](https://theory.stanford.edu/~trevisan/cs172-07/turing36.pdf) — Copie universitaire de l'article original. La section 2 distingue les types de machines ; la section 8 traite de la diagonalisation et de l'apparition de symboles ; la section 9 interprète le calcul.
+- [MIT 6.045J: Mapping reducibility and Rice's theorem](https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/7aead2c728dd3d5a737d832811ef97e6_MIT6_045JS11_lec09.pdf) — Conditions du théorème de Rice et distinction entre propriétés des langages et propriétés structurelles ou opérationnelles des machines.
+- [Sinclair: The Church-Turing Thesis](https://people.eecs.berkeley.edu/~sinclair/cs172/n4.pdf) — La thèse reliant les procédures effectives intuitives aux modèles formels.
+- [Tao: Almost all orbits of the Collatz map attain almost bounded values](https://arxiv.org/abs/1909.03562) — Résultat partiel sur l'itération de Collatz, et non preuve que tous les entiers strictement positifs atteignent un.

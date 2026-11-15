@@ -249,6 +249,47 @@
         "Primary sources read only in documented selected sections/abstracts.",
         "Publication036 and complete all-article goal pending."
       ]
+    },
+    "post/halting-problem/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-15",
+      "reviewer": "Codex (AI)",
+      "source": "post/halting-problem/index.md",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "cefb64deff4c4594415de825798779f142f9dcf7ac1094dac3aeab4a84bc0403",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original French article and the entire saved revised file, comparing all eight Japanese chapters, introduction, examples, proof table, figure, conclusion and references. The original description already says insolubles and proved, rather than the proven-unsolved error in other languages; refined its scope without attributing that error to French. Corrected missing total-decider/fixed-input conditions, all-mathematics inference, logic-breakdown and guesses-only claims. Preserved the French Syracuse alias and added one explicit sentence correcting the original conclusion dans un délai défini: a specified finite step bound can be simulated, unlike unrestricted eventual termination."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used indécidabilité, algorithme de décision total, semi-décidable, description finie, configuration complète and propriétés extensionnelles non triviales. Distinguished cohérence from correction sémantique, fixed-step bounds from eventual finite-time termination, and timeout from proof of divergence. Retained the original localized conjecture de Syracuse alongside Collatz. Used strictement positif to exclude zero in French mathematical terminology. Removed programme malveillant framing from the diagonal proof and clarified that the universal-decider assumption, not logic, is refuted."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all32TeX expressions and four display equations. Normalized only text annotations in displays and checked exact equality with Japanese formula structure: encoded HALT pairs, total two-answer H, Collatz forall-positive-n exists-t, and diagonal iff chain. Read both cases in the three-row table, finite encoding/validity, self-application, effective construction, and sound proof-enumeration argument. Correctly distinguishes each fixed input from totality, finite-state decidability from practical feasibility, Rice extensional properties from syntax, and zero-output vacuity from total constant-zero functions. No general Collatz/theorem proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all original five Python-labelled blocks, then revised two executable Python blocks, their displayed outputs and two proof pseudocodes. Revised program hashes are exact matches to finite tested Japanese examples, including strict integer domain checks and step-limit boundaries. Generated HTML preserves six full code/text blocks, one diagram with eight correctly directed edges,15strong spans and84prose fragments. Never executed hypothetical H/D or the infinite Forever pseudocode. Kept the original cover file while switching to the reviewed text-free illustration; image-only edits do not approve other languages."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified four primary-source references and three French article links in source and actual generated HTML. Original title/slug/taxonomy preserved; duplicate date resolved to actual September14 effective publication, with November15 modification date. Checked canonical,14unique hreflang/13sidebar article targets and new cover reference.37bundle preview481article+1tag snapshots,2087multilingual pages,3801HTTPS HTML/41XML passed; prior17tests referenced, not rerun. Source research remains limited to documented selected primary sections/abstracts, not whole-paper review."
+        }
+      },
+      "summary": "Full French halting-problem review against frozen Japanese, including precise decision/proof conditions, executable examples and practical-analysis guarantees.",
+      "languageSpecificFindings": "Removed the unrelated Hegel dialectic link attached to Dépassement in the timeout bullet and the misleading Halting Problem link to the Turing-machine article. Corrected the final fixed-deadline formulation with an explicit finite-step simulation distinction. Retained Syracuse/Collatz naming; original insolubles et prouvé description was not mislabeled as an unsolved-error. Corrected unrestricted Python example, malicious-program/logic-break wording, incompleteness hypotheses, Rice operational overreach and non-Turing-complete termination claim.",
+      "validation": "docs/translation-review/batch-036-fr-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other5 original translation bodies remain unread and unapproved.",
+        "Finite Python tests are prior exact-code evidence, not a general Collatz/halting theorem.",
+        "Static37bundle preview, no browser KaTeX/Mermaid execution or fullsite certification.",
+        "Primary sources read only in documented selected sections/abstracts.",
+        "Publication036 and complete all-article goal pending."
+      ]
     }
   },
   "stages": [
@@ -310,8 +351,18 @@
       "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
       "reviewedTranslationsAdded": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-15",
+      "stage": "French original/revised whole-body comparison",
+      "validation": "docs/translation-review/batch-036-fr-validation.json",
+      "checks": "docs/translation-review/batch-036-fr-checks.json",
+      "translationHash": "cefb64deff4c4594415de825798779f142f9dcf7ac1094dac3aeab4a84bc0403",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "reviewedTranslationsAdded": 1,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and EN/CN/TW/ES/KO/PT whole revisions reviewed;6AI entries. Other6unread. Source frozen; publication/fullgoal pending."
+  "scope": "Japanese and EN/CN/TW/ES/KO/PT/FR whole revisions reviewed;7AI entries. Other5unread. Source frozen; publication/fullgoal pending."
 }
