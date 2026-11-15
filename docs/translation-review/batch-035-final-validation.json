@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-15T02:07:58.941219+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ar",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ar.md",
+      "sha256": "4ce6a9e3b26b4a8233168c45271b4928bf1a2549850868c8f5ecee4dfbfd94ce",
+      "texExpressions": 216,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 267,
+      "strongSpansPreserved": 21,
+      "passed": true
+    },
+    {
+      "language": "de",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.de.md",
+      "sha256": "95272db461bec5155c489ea8b4df9e69f8e0566753f79d580459cf7705e75594",
+      "texExpressions": 217,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 286,
+      "strongSpansPreserved": 22,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.en.md",
+      "sha256": "0819c990de12f88e7ed711c0a589a33cad4e6e4c65b3c9ddaa6fd3060a88f06c",
+      "texExpressions": 219,
+      "displayMath": 39,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 281,
+      "strongSpansPreserved": 21,
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.es.md",
+      "sha256": "cadb361e9ba4df4f96239c1afa25b6831d10611abcbdfc2366eaa3200779f878",
+      "texExpressions": 218,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 287,
+      "strongSpansPreserved": 21,
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.fr.md",
+      "sha256": "0566e9833a937982e3098326847c9cf96a12f0333d7575123e5bd038f2efef8a",
+      "texExpressions": 218,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 282,
+      "strongSpansPreserved": 22,
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.hi.md",
+      "sha256": "446f03172edc2f03d9c6311669bcebca8fd125c5e885a4efb020821f06994e7c",
+      "texExpressions": 217,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 271,
+      "strongSpansPreserved": 22,
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.id.md",
+      "sha256": "47d1c475de2b4305b408d86b0dbe1110d49b0da00fb58c47a567e6394285b071",
+      "texExpressions": 218,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 280,
+      "strongSpansPreserved": 22,
+      "passed": true
+    },
+    {
+      "language": "ja",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ja.md",
+      "sha256": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
+      "texExpressions": 224,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 224,
+      "strongSpansPreserved": 22,
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ko.md",
+      "sha256": "8ca785e04240cf86e3448d4a92925496907912975435fb215555f7d59a65493d",
+      "texExpressions": 219,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 218,
+      "strongSpansPreserved": 21,
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.pt.md",
+      "sha256": "19e5461360c148b82ee75c38ad310237e7c9d27dcd66e879fe1c42e460163c09",
+      "texExpressions": 219,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 287,
+      "strongSpansPreserved": 22,
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.ru.md",
+      "sha256": "33ff56595ba1ffbc3ba79fdf0fd427c1ee473a67efc4b80cde667c9d01d8217f",
+      "texExpressions": 216,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 280,
+      "strongSpansPreserved": 22,
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.zh-cn.md",
+      "sha256": "a6c72a3154b71f7c190f240d47dd2f71b195de073bb30d671c15a8b40b672ec5",
+      "texExpressions": 220,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 186,
+      "strongSpansPreserved": 21,
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "content/post/kolmogorov-complexity-algorithmic-information-theory-incompressibility-randomness/index.zh-tw.md",
+      "sha256": "a18eaa2e38ceec12fb26541fb99adb84c4efc7a9990da23e680b9c704199399b",
+      "texExpressions": 220,
+      "displayMath": 38,
+      "diagrams": 2,
+      "diagramEdges": [
+        6,
+        5
+      ],
+      "references": 8,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 0,
+      "proseFragmentsPreserved": 188,
+      "strongSpansPreserved": 21,
+      "passed": true
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "All13 exact reviewed versions in assembled36bundle static preview. Semantic reading remains separate; no browser/runtime/fullsite certification."
+}

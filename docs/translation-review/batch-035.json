@@ -1369,7 +1369,36 @@
     }
   ],
   "publicationPending": true,
-  "scope": "All13 original and revised bodies read;12AI translations registered with frozen Japanese. Prior431 entries unchanged. Complete batch assembly, publication and whole all-article goal pending.",
+  "scope": "All13 original/revised bodies read and12AI reviews registered. Final36bundle assembly and local468article+3tag probe pass; publication and whole all-article goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
-  "sourceFrozenForFollowingTranslations": true
+  "sourceFrozenForFollowingTranslations": true,
+  "finalAssembly": {
+    "checkedAt": "2026-11-15T10:05:39.603258+09:00",
+    "validation": "docs/translation-review/batch-035-final-validation.json",
+    "checks": "docs/translation-review/batch-035-final-checks.json",
+    "allOriginalAndTranslationBodiesRead": true,
+    "languages": 13,
+    "texExpressions": 2841,
+    "displayMath": 495,
+    "diagrams": 26,
+    "graphEdges": 143,
+    "referencesEach": 8,
+    "pseudocodeBlocks": 26,
+    "articleExecutablePrograms": 0,
+    "proseFragmentsPreserved": 3337,
+    "unitTestsPassed": 17,
+    "actualPreviewBundles": 36,
+    "postSnapshotsExact": 468,
+    "taxonomySnapshotsExact": 1,
+    "multilingualPages": 2035,
+    "httpsHtmlPages": 3709,
+    "httpsXmlFiles": 41,
+    "reviewedTranslationsTotal": 432,
+    "unreviewedTranslations": 12600,
+    "humanReviews": 0,
+    "publicationProbePreparation": "docs/translation-review/batch-035-probe-preparation.json",
+    "publicationProbeLocalCheck": "docs/translation-review/batch-035-probe-local-structure.json",
+    "publicationPending": true,
+    "scope": "All13 exact reviewed versions assembled; individual semantic evidence remains separate. Static math/prose/graphs/pseudocode/reference/table/navigation and Arabic7LTR/RTL/CSS pass.17tests rerun. Local468article+3tag probe pass/484file reads/HTTP0. No live/browser/native/fullsite certification; whole goal active."
+  }
 }
