@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-15T10:08:56.815358+09:00",
+  "article": "halting-problem",
+  "baselineCommit": "2c7a0f529d3696a96e163aba3eec45db0a053897",
+  "versions": {
+    "ar": {
+      "path": "content/post/halting-problem/index.ar.md",
+      "sha256": "069a71718014cad1833748f561a93d3b9c6c53a8d34d93ba9c1959f9e9602102",
+      "lines": 198,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": false
+    },
+    "de": {
+      "path": "content/post/halting-problem/index.de.md",
+      "sha256": "bcd703ee5e5bb1a4e4b9a1ef204a6ded774ce0ee1fdf62c1f21ae1e6c998785d",
+      "lines": 201,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": false
+    },
+    "en": {
+      "path": "content/post/halting-problem/index.en.md",
+      "sha256": "7d1850de98f9f331a77bfdda7c165ccbc057c0ee8a06f7379e17f047c53de78d",
+      "lines": 198,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": true
+    },
+    "es": {
+      "path": "content/post/halting-problem/index.es.md",
+      "sha256": "0568f3737dd4df7fa80ffcb4ed364055e8023c994adf92123211d8071553674b",
+      "lines": 198,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": false
+    },
+    "fr": {
+      "path": "content/post/halting-problem/index.fr.md",
+      "sha256": "646f2ffb5139ab256634f3f1941eec0cb0bdb460783420959e9f0b0621226495",
+      "lines": 198,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": false
+    },
+    "hi": {
+      "path": "content/post/halting-problem/index.hi.md",
+      "sha256": "f993387dbf8b504d04304bd6862404a1961f5417ff06c835fb24015ba6ae1b81",
+      "lines": 198,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": false
+    },
+    "id": {
+      "path": "content/post/halting-problem/index.id.md",
+      "sha256": "07331be4f531d22ab850c6a1e09e7831be260ae080038598cfbd43fd4b77b1b9",
+      "lines": 198,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": false
+    },
+    "ko": {
+      "path": "content/post/halting-problem/index.ko.md",
+      "sha256": "45833d6ec56e2458b18a90d0d449d3cfa91fa4352a16bf02fb2710aa30d0cdcb",
+      "lines": 198,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": false
+    },
+    "ja": {
+      "path": "content/post/halting-problem/index.md",
+      "sha256": "d56eaa63c876309ef2813b4f714bdbc23283d0a0fc0bf3fd2be72455558af292",
+      "lines": 199,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": true
+    },
+    "pt": {
+      "path": "content/post/halting-problem/index.pt.md",
+      "sha256": "811958e5f46f280eab066463f517aaed537b009f8953649c405744c4584e21bf",
+      "lines": 198,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": false
+    },
+    "ru": {
+      "path": "content/post/halting-problem/index.ru.md",
+      "sha256": "2d09f08e7244a98986ed9c9eb168f708f0d4cc98b9f769f6a5fdb801b6ade105",
+      "lines": 198,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": false
+    },
+    "zh-cn": {
+      "path": "content/post/halting-problem/index.zh-cn.md",
+      "sha256": "5eba3df9bf5be2ba230aa7574e7644e9130e0bfda0c95452ca27d78ab457aa52",
+      "lines": 198,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": false
+    },
+    "zh-tw": {
+      "path": "content/post/halting-problem/index.zh-tw.md",
+      "sha256": "434775402572ef3b839715114f1ab62e71ac9d20e9a62210afd9d2fe3e8f1211",
+      "lines": 198,
+      "dateFields": [
+        "\"2026-09-24T19:44:38+09:00\"",
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "pythonBlocks": 5,
+      "mermaidBlocks": 1,
+      "fullBodyRead": false
+    }
+  },
+  "assets": [
+    {
+      "path": "content/post/halting-problem/eyecatch.jpg",
+      "sha256": "ee9f7c03e007ebea609672a8e59e756cd57fa4b7b21045bc786dbe103151a494"
+    }
+  ],
+  "languagesFullyRead": [
+    "ja",
+    "en"
+  ],
+  "reviewedTranslationsAdded": 0,
+  "sourceModified": false,
+  "findings": [
+    "JA/EN descriptions call proven undecidability an unsolved problem.",
+    "Duplicate date keys: verify effective Hugo/live date before deduplicating.",
+    "Specify ideal deterministic unbounded computation, fixed input, total correct decider and finite program encodings for self-application.",
+    "Nontermination need not repeat a configuration; distinguish bounded finite-state systems.",
+    "Halt stub returns None; D assumes undefined H. Proof pseudocode must be separated from executable examples.",
+    "example1 does not always return number: string gives string; Python objects can override multiplication.",
+    "Collatz needs positive integer domain; zero/negative return silently. One fixed-input halt query does not directly decide all-input totality or every mathematical statement.",
+    "Church–Turing thesis connects intuitive effective procedure to formal computation; distinguish formal-model equivalence and physical claims.",
+    "Gödel needs effective axiomatization, arithmetic strength and consistency/soundness conditions; contradiction is in assumed H, not in logic.",
+    "Rice needs nontrivial extensional function/language property; arbitrary bug/memory-access properties need specific reductions.",
+    "Non-Turing-complete does not guarantee termination; timeout does not prove divergence; sound incomplete analyses can report unknown.",
+    "EN malicious misleading for diagonal construction; infinite loops verb grammar needs correction.",
+    "Halting-labelled links often target turing-machine article; correct semantic destinations. No external references originally."
+  ],
+  "primarySources": [
+    {
+      "url": "https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/7aead2c728dd3d5a737d832811ef97e6_MIT6_045JS11_lec09.pdf",
+      "scope": "Returned text32–50 and322–559 read: total/partial, Rice statement/proof and counterexamples. No page images/full-slide claim."
+    },
+    {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/cs172/n4.pdf",
+      "scope": "Returned first-page text0–17 read; rest unread. Effective procedure thesis not formal theorem."
+    },
+    {
+      "url": "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf",
+      "scope": "Returned selected section9 text499–627 read; sections2/8 focused reading and historical wording pending. Not full-paper reading."
+    },
+    {
+      "url": "https://arxiv.org/abs/1909.03562",
+      "scope": "Author/title/version metadata and search snippet only; full abstract/introduction pending. Page lists July2026v7; do not infer final proof status from old snippet."
+    }
+  ],
+  "finiteProbe": "docs/translation-review/batch-036-original-finite-probe.json",
+  "remaining": [
+    "Focused primary source reading/current Collatz verification",
+    "Actual effective date and rendering/asset inspection",
+    "Revise Japanese source",
+    "Read/revise all12translations and register only completed reviews",
+    "Build/publication after035 closure"
+  ],
+  "scope": "Preliminary JA/EN audit, no article modifications/approval. First audit helper call had JS backtick parse error before execution; corrected helper succeeds. Batch035 CI still pending."
+}

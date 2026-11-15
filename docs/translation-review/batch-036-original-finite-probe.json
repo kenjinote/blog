@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-15T10:08:56.815358+09:00",
+  "versions": [
+    {
+      "language": "ja",
+      "allFiveDefinitionsCompile": true,
+      "placeholderHaltReturnsNone": true,
+      "example1IntegerResult": 6,
+      "example1StringResult": "aa",
+      "collatzZeroAndNegativeReturnWithoutValidation": true,
+      "finiteCollatzInputs": [
+        1,
+        2,
+        3,
+        6,
+        27
+      ],
+      "infiniteLoopOrDiagonalCodeInvoked": false
+    },
+    {
+      "language": "en",
+      "allFiveDefinitionsCompile": true,
+      "placeholderHaltReturnsNone": true,
+      "example1IntegerResult": 6,
+      "example1StringResult": "aa",
+      "collatzZeroAndNegativeReturnWithoutValidation": true,
+      "finiteCollatzInputs": [
+        1,
+        2,
+        3,
+        6,
+        27
+      ],
+      "infiniteLoopOrDiagonalCodeInvoked": false
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "scope": "Finite behavior only, not halting oracle or Collatz theorem. example2 and D never invoked."
+}
