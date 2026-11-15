@@ -44,6 +44,47 @@
         "Primary papers read only in documented selected sections/abstracts.",
         "Batch036 publication and full all-article goal pending."
       ]
+    },
+    "post/halting-problem/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-15",
+      "reviewer": "Codex (AI)",
+      "source": "post/halting-problem/index.md",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "070b7f4d533089efa6d0427a569ac2a7e94ff4d9594be2d65c104001a522502a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Simplified Chinese article and the entire saved revised file, comparing all eight revised Japanese chapters, introduction, examples, proof table, figure and conclusion. Corrected the proven-unsolved description, missing fixed-input/total-decider conditions, claims that one halting query solves all mathematics, logic-collapse language, unrestricted incompleteness claim and guesses-only analysis conclusion. Original central topics retained, including concrete multiplication/nontermination/Collatz examples, historical discussion and practical relevance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 停机问题/不可判定性 rather than unresolved conjecture, 全域 for a decider defined on every valid input, 半可判定 for recognition, 完整配置 rather than merely a repeated state, and 对角线论证 rather than malicious-program framing. Distinguished 相容性 from the explicitly truth-preserving 可靠性 assumption, 非平凡外延性质 from operational memory events, and 限定步数/超时 from proofs of nontermination. Preserved recognizable Simplified Chinese terms 程序、输入、返回、内存、归约 and 考拉兹猜想."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all32TeX expressions and four display equations. Normalized only text annotations in displays and checked exact equality with Japanese formula structure: encoded HALT pairs, total two-answer H, Collatz forall-positive-n exists-t, and diagonal iff chain. Read both cases in the three-row table, finite encoding/validity, self-application, effective construction, and sound proof-enumeration argument. Correctly distinguishes each fixed input from totality, finite-state decidability from practical feasibility, Rice extensional properties from syntax, and zero-output vacuity from total constant-zero functions. No general Collatz/theorem proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all original five Python-labelled blocks, then revised two executable Python blocks, their displayed outputs and two proof pseudocodes. Revised program hashes are exact matches to finite tested Japanese examples, including strict integer domain checks and step-limit boundaries. Generated HTML preserves six full code/text blocks, one diagram with eight correctly directed edges,15strong spans and58prose fragments. Never executed hypothetical H/D or the infinite Forever pseudocode. Kept the original cover file while switching to the reviewed text-free illustration; image-only edits do not approve other languages."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified four primary-source references and three Simplified Chinese article links in source and actual generated HTML. Original title/slug/taxonomy preserved; duplicate date resolved to actual September14 effective publication, with November15 modification date. Checked canonical,14unique hreflang/13sidebar article targets and new cover reference.37bundle preview481article+1tag snapshots,2087multilingual pages,3801HTTPS HTML/41XML passed; prior17tests referenced, not rerun. Source research remains limited to documented selected primary sections/abstracts, not whole-paper review."
+        }
+      },
+      "summary": "Full Simplified Chinese halting-problem review against frozen Japanese, including precise decision/proof conditions, executable examples and practical-analysis guarantees.",
+      "languageSpecificFindings": "Corrected 未解决问题（已证明）, 恶意的程序 and 逻辑在此崩溃. Replaced unrestricted return-number example, all-mathematics claim, omitted incompleteness hypotheses and non-Turing-complete-implies-termination claim. Clarified total/partial zero output and reliable-but-incomplete analysis. Removed redundant self-link while retaining localized related articles.",
+      "validation": "docs/translation-review/batch-036-zh-cn-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other10 translations remain unapproved; Traditional Chinese original has now been read but not revised, other9original bodies unread.",
+        "Finite Python tests are prior exact-code evidence, not a general Collatz/halting theorem.",
+        "Static37bundle preview, no browser KaTeX/Mermaid execution or fullsite certification.",
+        "Primary sources read only in documented selected sections/abstracts.",
+        "Publication036 and complete all-article goal pending."
+      ]
     }
   },
   "stages": [
@@ -55,8 +96,18 @@
       "checks": "docs/translation-review/batch-036-en-checks.json",
       "reviewedTranslationsAdded": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-15",
+      "stage": "Simplified Chinese original/revised whole-body comparison",
+      "validation": "docs/translation-review/batch-036-zh-cn-validation.json",
+      "checks": "docs/translation-review/batch-036-zh-cn-checks.json",
+      "translationHash": "070b7f4d533089efa6d0427a569ac2a7e94ff4d9594be2d65c104001a522502a",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "reviewedTranslationsAdded": 1,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and English whole bodies reviewed; English1AI entry, other11unread. Source frozen after cover correction. No full-goal completion."
+  "scope": "Japanese, English and Simplified Chinese whole revisions reviewed; English/CN2AI entries. Traditional Chinese original fully read but not revised; other9unread. Source frozen; publication/fullgoal pending."
 }
