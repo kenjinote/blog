@@ -85,6 +85,47 @@
         "Primary sources read only in documented selected sections/abstracts.",
         "Publication036 and complete all-article goal pending."
       ]
+    },
+    "post/halting-problem/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-15",
+      "reviewer": "Codex (AI)",
+      "source": "post/halting-problem/index.md",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "8823100f840d1908433d09ba02e865782d7c1902df6ad51e1adf49b8a4942503",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Traditional Chinese article and the entire saved revised file, comparing all eight revised Japanese chapters, introduction, examples, proof table, figure and conclusion. Corrected the proven-unsolved description, missing fixed-input/total-decider conditions, claims that one halting query solves all mathematics, logic-collapse language, unrestricted incompleteness claim and guesses-only analysis conclusion. Original central topics retained, including concrete multiplication/nontermination/Collatz examples, historical discussion and practical relevance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used 停止性問題/不可判定性 rather than an unresolved conjecture, 全域 for a decider defined on every valid input, 半可判定 for recognition, 完整組態 for complete configurations and 對角線論證 for the proof. Distinguished 相容性 from truth-preserving 可靠性, 非平凡外延性質 from operational events, and 步數上限/逾時 from nontermination proofs. Used localized 程式、演算法、輸入、回傳、記憶體、物件、型別、字串、虛擬碼、歸約、邱奇 and 考拉茲 terminology rather than mechanically retaining Simplified Chinese wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all32TeX expressions and four display equations. Normalized only text annotations in displays and checked exact equality with Japanese formula structure: encoded HALT pairs, total two-answer H, Collatz forall-positive-n exists-t, and diagonal iff chain. Read both cases in the three-row table, finite encoding/validity, self-application, effective construction, and sound proof-enumeration argument. Correctly distinguishes each fixed input from totality, finite-state decidability from practical feasibility, Rice extensional properties from syntax, and zero-output vacuity from total constant-zero functions. No general Collatz/theorem proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all original five Python-labelled blocks, then revised two executable Python blocks, their displayed outputs and two proof pseudocodes. Revised program hashes are exact matches to finite tested Japanese examples, including strict integer domain checks and step-limit boundaries. Generated HTML preserves six full code/text blocks, one diagram with eight correctly directed edges,15strong spans and60prose fragments. Never executed hypothetical H/D or the infinite Forever pseudocode. Kept the original cover file while switching to the reviewed text-free illustration; image-only edits do not approve other languages."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified four primary-source references and three Traditional Chinese article links in source and actual generated HTML. Original title/slug/taxonomy preserved; duplicate date resolved to actual September14 effective publication, with November15 modification date. Checked canonical,14unique hreflang/13sidebar article targets and new cover reference.37bundle preview481article+1tag snapshots,2087multilingual pages,3801HTTPS HTML/41XML passed; prior17tests referenced, not rerun. Source research remains limited to documented selected primary sections/abstracts, not whole-paper review."
+        }
+      },
+      "summary": "Full Traditional Chinese halting-problem review against frozen Japanese, including precise decision/proof conditions, executable examples and practical-analysis guarantees.",
+      "languageSpecificFindings": "Corrected 未解決問題（已證明）, 惡意的程式 and 邏輯崩潰. Replaced unrestricted return-number example, all-mathematics claim, omitted incompleteness hypotheses and non-Turing-complete-implies-termination claim. Clarified total/partial zero output and reliable-but-incomplete analysis. Removed misleading 停止性問題 links to the Turing-machine article and redundant self-links while retaining properly labeled localized related articles.",
+      "validation": "docs/translation-review/batch-036-zh-tw-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other9 original translation bodies remain unread and unapproved.",
+        "Finite Python tests are prior exact-code evidence, not a general Collatz/halting theorem.",
+        "Static37bundle preview, no browser KaTeX/Mermaid execution or fullsite certification.",
+        "Primary sources read only in documented selected sections/abstracts.",
+        "Publication036 and complete all-article goal pending."
+      ]
     }
   },
   "stages": [
@@ -106,8 +147,18 @@
       "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
       "reviewedTranslationsAdded": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-15",
+      "stage": "Traditional Chinese original/revised whole-body comparison",
+      "validation": "docs/translation-review/batch-036-zh-tw-validation.json",
+      "checks": "docs/translation-review/batch-036-zh-tw-checks.json",
+      "translationHash": "8823100f840d1908433d09ba02e865782d7c1902df6ad51e1adf49b8a4942503",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "reviewedTranslationsAdded": 1,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese, English and Simplified Chinese whole revisions reviewed; English/CN2AI entries. Traditional Chinese original fully read but not revised; other9unread. Source frozen; publication/fullgoal pending."
+  "scope": "Japanese, English and both Chinese whole revisions reviewed; English/CN/TW3AI entries. Other9unread. Source frozen; publication/fullgoal pending."
 }
