@@ -167,6 +167,47 @@
         "Primary sources read only in documented selected sections/abstracts.",
         "Publication036 and complete all-article goal pending."
       ]
+    },
+    "post/halting-problem/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-15",
+      "reviewer": "Codex (AI)",
+      "source": "post/halting-problem/index.md",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "bbb6fe4ff8f609981c4f25e2e445664a907208a9f4b9eb493a0ff2fc7e021a72",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Korean article and the entire saved revised file, comparing all eight revised Japanese chapters, introduction, examples, proof table, figure and conclusion. Corrected the proven-unsolved description, missing fixed-input/total-decider conditions, claims that one halting query solves all mathematics, logic-collapse language, unrestricted incompleteness claim and guesses-only analysis conclusion. Original central topics retained, including concrete multiplication/nontermination/Collatz examples, historical discussion and practical relevance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished 결정 불가능성 from 미해결, 전역적 판정 with explicit definition on all valid inputs from a partial recognizer, 반결정 가능 from full decision, and 완전한 구성 from just a control state. Used 건전성 for the truth-preserving assumption and 무모순성 for consistency; separated 외연적 성질 from operational memory access, and 단계 수 제한 from 시간 초과. Retained standard Korean 정지 문제, 콜라츠 추측, 의사 코드, 처치–튜링 명제 and 라이스 정리 while removing anthropomorphic 짓궂은 프로그램 framing."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all32TeX expressions and four display equations. Normalized only text annotations in displays and checked exact equality with Japanese formula structure: encoded HALT pairs, total two-answer H, Collatz forall-positive-n exists-t, and diagonal iff chain. Read both cases in the three-row table, finite encoding/validity, self-application, effective construction, and sound proof-enumeration argument. Correctly distinguishes each fixed input from totality, finite-state decidability from practical feasibility, Rice extensional properties from syntax, and zero-output vacuity from total constant-zero functions. No general Collatz/theorem proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all original five Python-labelled blocks, then revised two executable Python blocks, their displayed outputs and two proof pseudocodes. Revised program hashes are exact matches to finite tested Japanese examples, including strict integer domain checks and step-limit boundaries. Generated HTML preserves six full code/text blocks, one diagram with eight correctly directed edges,15strong spans and65prose fragments. Never executed hypothetical H/D or the infinite Forever pseudocode. Kept the original cover file while switching to the reviewed text-free illustration; image-only edits do not approve other languages."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified four primary-source references and three Korean article links in source and actual generated HTML. Original title/slug/taxonomy preserved; duplicate date resolved to actual September14 effective publication, with November15 modification date. Checked canonical,14unique hreflang/13sidebar article targets and new cover reference.37bundle preview481article+1tag snapshots,2087multilingual pages,3801HTTPS HTML/41XML passed; prior17tests referenced, not rerun. Source research remains limited to documented selected primary sections/abstracts, not whole-paper review."
+        }
+      },
+      "summary": "Full Korean halting-problem review against frozen Japanese, including precise decision/proof conditions, executable examples and practical-analysis guarantees.",
+      "languageSpecificFindings": "Corrected 미해결 문제(증명됨), the literal mixed-language corruption 문제입니ek, and 논리가 파탄납니다. Replaced spaced Markdown emphasis delimiters with fifteen verified strong spans. Corrected unrestricted Python multiplication, all-mathematics implications, absent incompleteness assumptions, automatic Rice application, non-Turing-complete-implies-no-loop and guesses-only analysis claims. Removed duplicate author/self-links while preserving accurately labeled localized article references.",
+      "validation": "docs/translation-review/batch-036-ko-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other7 original translation bodies remain unread and unapproved.",
+        "Finite Python tests are prior exact-code evidence, not a general Collatz/halting theorem.",
+        "Static37bundle preview, no browser KaTeX/Mermaid execution or fullsite certification.",
+        "Primary sources read only in documented selected sections/abstracts.",
+        "Publication036 and complete all-article goal pending."
+      ]
     }
   },
   "stages": [
@@ -208,8 +249,18 @@
       "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
       "reviewedTranslationsAdded": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-15",
+      "stage": "Korean original/revised whole-body comparison",
+      "validation": "docs/translation-review/batch-036-ko-validation.json",
+      "checks": "docs/translation-review/batch-036-ko-checks.json",
+      "translationHash": "bbb6fe4ff8f609981c4f25e2e445664a907208a9f4b9eb493a0ff2fc7e021a72",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "reviewedTranslationsAdded": 1,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and EN/CN/TW/ES whole revisions reviewed;4AI entries. Other8unread. Source frozen; publication/fullgoal pending."
+  "scope": "Japanese and EN/CN/TW/ES/KO whole revisions reviewed;5AI entries. Other7unread. Source frozen; publication/fullgoal pending."
 }
