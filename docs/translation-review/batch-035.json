@@ -1400,5 +1400,37 @@
     "publicationProbeLocalCheck": "docs/translation-review/batch-035-probe-local-structure.json",
     "publicationPending": true,
     "scope": "All13 exact reviewed versions assembled; individual semantic evidence remains separate. Static math/prose/graphs/pseudocode/reference/table/navigation and Arabic7LTR/RTL/CSS pass.17tests rerun. Local468article+3tag probe pass/484file reads/HTTP0. No live/browser/native/fullsite certification; whole goal active."
+  },
+  "publicationDispatch": {
+    "version": 1,
+    "observedAt": "2026-11-15T10:06:29.401788+09:00",
+    "deployedCommitExpected": "5477149d4e7216e1cc2909d6d38cf2fe18754946",
+    "ciRun": 43661446242,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43661446242",
+    "runAttempt": 1,
+    "statusAtDispatch": "in_progress",
+    "conclusionAtDispatch": null,
+    "pagesPlanned": 468,
+    "translationsPlanned": 432,
+    "japaneseSourcesPlanned": 36,
+    "mathVersionsPlanned": 273,
+    "texExpressionsPlanned": 17156,
+    "additionalHindiTaxonomyUrlsPlanned": 3,
+    "publicationPending": true,
+    "probePrepared": "C:\\Users\\kenjinote\\.codex\\tmp\\verify_review_publication_432.py",
+    "probeSha256": "ede200fc241c5ba3c7067c871f4ca2d6f9bd9c2794ab312f1dcabd4980e23e95",
+    "jobsObserved": [
+      {
+        "name": "build",
+        "status": "in_progress",
+        "conclusion": null,
+        "started_at": "2026-11-15T01:06:07Z",
+        "completed_at": null,
+        "activeSteps": [
+          "Checkout"
+        ]
+      }
+    ],
+    "scope": "Ordinary push after fetch zero incoming/23 outgoing including final assembly. Matching head/run observed. Live468articles+3tags await matching successful build/deploy. Local468+3pass484reads/HTTP0;prior455cases retained."
   }
 }

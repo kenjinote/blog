@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "observedAt": "2026-11-15T10:06:29.401788+09:00",
+  "deployedCommitExpected": "5477149d4e7216e1cc2909d6d38cf2fe18754946",
+  "ciRun": 43661446242,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43661446242",
+  "runAttempt": 1,
+  "statusAtDispatch": "in_progress",
+  "conclusionAtDispatch": null,
+  "pagesPlanned": 468,
+  "translationsPlanned": 432,
+  "japaneseSourcesPlanned": 36,
+  "mathVersionsPlanned": 273,
+  "texExpressionsPlanned": 17156,
+  "additionalHindiTaxonomyUrlsPlanned": 3,
+  "publicationPending": true,
+  "probePrepared": "C:\\Users\\kenjinote\\.codex\\tmp\\verify_review_publication_432.py",
+  "probeSha256": "ede200fc241c5ba3c7067c871f4ca2d6f9bd9c2794ab312f1dcabd4980e23e95",
+  "jobsObserved": [
+    {
+      "name": "build",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-11-15T01:06:07Z",
+      "completed_at": null,
+      "activeSteps": [
+        "Checkout"
+      ]
+    }
+  ],
+  "scope": "Ordinary push after fetch zero incoming/23 outgoing including final assembly. Matching head/run observed. Live468articles+3tags await matching successful build/deploy. Local468+3pass484reads/HTTP0;prior455cases retained."
+}
