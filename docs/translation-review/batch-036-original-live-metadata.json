@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-15T10:10:45.843530+09:00",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/halting-problem/",
+      "http": 200,
+      "datePublished": [
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "dateModified": [
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "htmlSha256": "735d80e5a0397872bea73dc959faa0ce11c24cf5919af22bcc70020e42803e96"
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/halting-problem/",
+      "http": 200,
+      "datePublished": [
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "dateModified": [
+        "2026-09-14T00:00:51+09:00"
+      ],
+      "htmlSha256": "d7a03efafb4648ce36539070cc4c6371420baac3ad077ffc38ac18f0b57a7a66"
+    }
+  ],
+  "scope": "Current original JA/EN live metadata only, no translation approval or035 publication certification."
+}

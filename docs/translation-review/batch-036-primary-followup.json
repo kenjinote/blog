@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-15T10:11:09.688948+09:00",
+  "sources": [
+    {
+      "url": "https://theory.stanford.edu/~trevisan/cs172-07/turing36.pdf",
+      "sha256": "b8595521fa35b8f2b1810c78f64d10251cf673a7eda3e4308184114655808215",
+      "pdfPages": 16,
+      "textReadPdfPages": [
+        2,
+        7,
+        8
+      ],
+      "imagesViewedPdfPages": [
+        2,
+        7
+      ],
+      "scope": "University-hosted reformatted original paper. Section2 circular/circle-free definitions, section8 diagonal proof and ever-prints-symbol result, opening section9 read. Original printed pages233 and246–248 identified in text. Not full-paper or machine-table verification.",
+      "finding": "Circular includes stopping or continuing without further figure output; circle-free is infinite figure output, not simply nonhalting. Present modern fixed-input halting diagonal proof as a modern formulation; relate to original ever-prints-symbol problem by simulation."
+    },
+    {
+      "url": "https://arxiv.org/abs/1909.03562",
+      "scope": "Current abstract lines16–20 and version7 metadata read, not58page paper.",
+      "finding": "The statement is almost-all in logarithmic density with divergent bound f, not all trajectories reach1. This is a partial result; do not claim a proof of full Collatz conjecture."
+    },
+    {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/cs172/n4.pdf",
+      "scope": "Prior opening lines0–17 retained. Later web open failed; rest not claimed read."
+    }
+  ],
+  "retrievalIssues": [
+    "Virginia direct TLS certificate expired; no verification bypass used.",
+    "Web screenshot result did not expose inspectable image blocks; not counted as visual review.",
+    "Stanford alternate is16pages not36; first rendering script using Virginia indices failed after one unneeded page. Correct indices inventory/read/render then completed; only PDFpages2and7 images viewed."
+  ],
+  "effectiveDateEvidence": "docs/translation-review/batch-036-original-live-metadata.json",
+  "effectiveDateDecision": "Actual JA/EN public datePublished and dateModified are2026-09-14T00:00:51+09:00. Preserve that publication timestamp when removing duplicate date, rather than later quotedSeptember24 field. Other language live dates still unverified.",
+  "reviewedTranslationsAdded": 0,
+  "scope": "Additional source/metadata evidence only. Article files unchanged. Batch035 CI remains separate."
+}
