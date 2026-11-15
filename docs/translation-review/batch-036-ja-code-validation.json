@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-11-15T10:14:02.882071+09:00",
+  "sourceSha256": "c4b6ec1217af1b2d56ba4bb7ac6637971e164175ea00e237c6506d6a77d9b819",
+  "draftSha256": "f687f7d06d789d94336ba23fe5399017a411229d17563b00e3cd0fe49479a1b6",
+  "sourceWholeBodyRead": true,
+  "finalWording": "Chapter2 heading uses step bound rather than time bound.",
+  "pythonPrograms": [
+    {
+      "codeSha256": "9303c14efb41dae25a7c3266578b4b647387964b9c97ae239a4e2d040f72573c",
+      "exitCode": 0,
+      "stdout": "6\n",
+      "displayedOutputExact": true
+    },
+    {
+      "codeSha256": "60dc4f52246b10dcaa76e5575ca34cc5b291f2d98bc96d7401ada99ca5dd86f3",
+      "exitCode": 0,
+      "stdout": "('reached_one', 8, 1)\n('step_limit', 7, 2)\n('reached_one', 0, 1)\n",
+      "displayedOutputExact": true
+    }
+  ],
+  "invalidCollatzInputsRejected": 9,
+  "invalidDoubleInputsRejected": 4,
+  "knownSixTrajectoryLimitsChecked": 12,
+  "boundaries27Checked": [
+    110,
+    111
+  ],
+  "zeroStepAtOneChecked": true,
+  "pseudocodeBlocks": 2,
+  "pseudocodeExecuted": false,
+  "scope": "Actual saved Japanese full body read; finite executable example validation only, not Collatz theorem or universal halting decision. HTML and all translations pending.",
+  "reviewedTranslationsAdded": 0
+}
