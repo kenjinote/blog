@@ -1,198 +1,233 @@
 ---
 title: "El Problema de la Parada (Halting Problem): El programa definitivo que jamás se podrá crear"
-date: "2026-09-24T19:44:38+09:00"
+date: "2026-09-14T00:00:51+09:00"
 image: "eyecatch-v2.png"
-date: 2026-09-14T00:00:51+09:00
-description: "Explicamos uno de los problemas no resueltos (demostrados) más famosos de la informática, el Problema de la Parada. Lo explicamos de manera fácil con demostraciones por reducción al absurdo, ejemplos intuitivos, fórmulas y diagramas."
+description: "Por qué ningún algoritmo puede decidir siempre correctamente si un programa arbitrario termina con una entrada dada: codificaciones, diagonalización, cuantificadores de Collatz, condiciones del teorema de Rice y límites del análisis y de los tiempos de espera."
 categories: ["computer-science", "theory-of-computation"]
 tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]
 slug: "halting-problem"
+math: true
+mermaid: true
+lastmod: "2026-11-15"
 ---
 
-Cuando programamos, a veces nos preocupamos: "¿Habrá entrado este programa en un bucle infinito en algún lugar?". Si existiera una **herramienta que determinara con certeza si cualquier programa dado va a entrar en un bucle infinito**, el desarrollo y la depuración serían drásticamente más fáciles.
+Cuando un programa no acaba, es natural preguntarse si podríamos saber de antemano que terminará. A menudo podemos demostrar la terminación o la no terminación de programas concretos. Sin embargo, no existe un algoritmo que <strong>termine él mismo y responda correctamente para todos los programas y sus entradas</strong>.
 
-Sin embargo, en el campo de la informática, está matemáticamente demostrado que crear tal herramienta soñada es **"absolutamente imposible"**. Este es el famoso **"Problema de la Parada" ([Halting Problem](https://kenji.blog/es/p/turing-machine-computability/))**.
+Esta es la <strong>indecidibilidad del problema de la parada</strong>. Es un resultado de imposibilidad demostrado, no una conjetura pendiente de resolver. Tampoco significa que no podamos decidir nada acerca de ningún programa concreto.
 
-En este artículo, explicaremos de forma clara este problema, demostrado en 1936 por [Alan Turing](https://kenji.blog/es/p/turing/), utilizando ejemplos intuitivos, fórmulas (KaTeX) y diagramas (Mermaid).
+Trabajaremos con un modelo de cálculo determinista, regido por un algoritmo finito ordinario y con memoria que puede crecer según sea necesario. Que una máquina real se apague por falta de batería, que se fuerce el cierre de un proceso o que se agote la memoria no equivale a la parada en este modelo matemático.
 
-## ¿Qué es el Problema de la Parada?
+## 1. Hay que fijar la entrada, además del programa
 
-El Problema de la Parada se refiere a la siguiente cuestión:
+Escribimos $\langle P\rangle$ para la descripción finita del programa $P$, y tomamos como entrada una cadena finita $x$. Un simulador universal puede leer esa descripción como datos y reproducir el cálculo de $P$ sobre $x$.
 
-> Dado un programa de ordenador arbitrario y su entrada, ¿existe un algoritmo general para determinar si ese programa terminará (se detendrá) en un tiempo finito o seguirá ejecutándose para siempre (entrará en un bucle infinito)?
-
-Si esto fuera posible, deberíamos poder implementar una función como `Halt(P, I)`.
-
-```python
-def Halt(P, I):
-    """
-    Cuando se da una entrada I al programa P,
-    devuelve true si se detiene,
-    devuelve false si entra en un bucle infinito.
-    """
-    # El algoritmo universal soñado...
-```
-
-A simple vista, parece que podría crearse haciendo un análisis estático del código fuente o simulando su ejecución. Veamos unos ejemplos simples.
-
-### Ejemplos intuitivos
-
-**Ejemplo 1: Un programa que claramente se detiene**
-
-```python
-def example1(x):
-    return x * 2
-```
-Este programa `example1` devuelve un número y se detiene inmediatamente, sea cual sea la entrada. Por lo tanto, `Halt(example1, input)` debería ser `true`.
-
-**Ejemplo 2: Un programa que claramente entra en bucle infinito**
-
-```python
-def example2(x):
-    while True:
-        pass
-```
-Este programa `example2` nunca saldrá del bucle para siempre. Por lo tanto, `Halt(example2, input)` debería ser `false`.
-
-**Ejemplo 3: Un programa difícil de juzgar (Conjetura de Collatz)**
-
-```python
-def collatz(n):
-    while n > 1:
-        if n % 2 == 0:
-            n = n // 2
-        else:
-            n = 3 * n + 1
-```
-Esta función repite la operación de dividir el número por la mitad si es par, o triplicarlo y sumarle 1 si es impar, hasta que se convierte en 1. Si este programa se detiene para todos los números enteros positivos es un problema matemático sin resolver conocido como la "Conjetura de Collatz". Si existiera una función `Halt` universal, podríamos resolver incluso problemas matemáticos no resueltos simplemente pasándole el programa.
-
-## Fórmulas y demostración por reducción al absurdo
-
-Turing demostró que no existe una función universal `Halt` utilizando la **"Reducción al absurdo" (Proof by Contradiction)**. La reducción al absurdo es un método de demostración que muestra que asumir que una proposición es cierta lleva a una contradicción, concluyendo que la suposición original era incorrecta.
-
-Para comenzar la demostración, primero asumimos que existe un algoritmo de evaluación universal $H$. La función $H(P, I)$ que recibe el programa $P$ y su entrada $I$, se define de la siguiente manera:
+El problema de la parada pregunta por la pertenencia al siguiente conjunto:
 
 $$
-H(P, I) =
+\mathrm{HALT}
+=\{\langle P,x\rangle : P(x)\text{ termina en tiempo finito}\}
+$$
+
+Si existiera un algoritmo de decisión total $H$, devolvería en tiempo finito uno de estos valores para cada descripción válida de programa y cada entrada:
+
+$$
+H(\langle P\rangle,x)=
 \begin{cases}
-\text{true} & (\text{Si el programa } P \text{ se detiene con la entrada } I) \\
-\text{false} & (\text{Si el programa } P \text{ entra en bucle infinito con la entrada } I)
+1 & P(x)\text{ termina}\\
+0 & P(x)\text{ no termina}
 \end{cases}
 $$
 
-Asumimos que este $H$ siempre devuelve `true` o `false` en tiempo finito para cualquier programa y entrada.
+Exigimos <strong>tanto que $H$ termine siempre como que su respuesta sea siempre correcta</strong>. Las cadenas que no sean descripciones válidas pueden tratarse por separado mediante una comprobación sintáctica.
 
-A continuación, utilizando el resultado de este $H$, creamos un programa malintencionado $D$ (Deceiver, el que engaña). El programa $D$ recibe otro programa $X$ como entrada y se comporta de la siguiente manera:
+Si un cálculo termina, la simulación continuada acabará revelando su final. En este sentido, el conjunto de pares que terminan es semidecidible. Pero el tiempo que llevamos esperando no basta para saber si un cálculo aún en curso acabará en el siguiente paso o continuará para siempre.
+
+A veces se llama «bucle infinito» a toda ejecución que no termina, aunque no tiene por qué repetirse el mismo estado. Un cálculo que incrementa continuamente un contador en una memoria sin cota puede tener una configuración completa distinta en cada paso.
+
+## 2. Ejemplos sencillos y observaciones con un límite de pasos
+
+### Un ejemplo cuya terminación podemos explicar
+
+El siguiente ejemplo ejecutable de Python solo acepta enteros del tipo incorporado.
 
 ```python
-def D(X):
-    if H(X, X) == True:
-        while True:
-            pass  # Entra en bucle infinito
-    else:
-        return  # Se detiene
+def double_integer(x):
+    if type(x) is not int:
+        raise TypeError("x must be a built-in int")
+    return x * 2
+
+
+print(double_integer(3))
 ```
 
-El comportamiento del programa $D(X)$ es el siguiente:
-1. Evalúa con $H(X, X)$ si el programa $X$ se detiene cuando se le da $X$ mismo como entrada.
-2. Si $H(X, X)$ es `true` (es decir, $X(X)$ se detiene), $D$ **entra a propósito en un bucle infinito**.
-3. Si $H(X, X)$ es `false` (es decir, $X(X)$ entra en bucle infinito), $D$ **se detiene a propósito**.
+Su salida es:
 
-Aquí está el núcleo de la demostración. **¿Qué pasaría si le damos a este programa malintencionado $D$ a sí mismo como entrada?** En otras palabras, consideramos el comportamiento cuando se ejecuta $D(D)$.
+```text
+6
+```
 
-Considerémoslo analizando los casos.
+Para cualquier entero finito de entrada, la operación aritmética idealizada acaba en tiempo finito. Esto no significa que el tiempo real o el uso de memoria sean independientes del tamaño de la entrada. Restringimos el tipo porque los objetos arbitrarios de Python pueden definir su propia multiplicación, y multiplicar una cadena devuelve una cadena, no un número.
 
-### Caso 1: Asumimos que $D(D)$ se detiene
+En cambio, este <strong>pseudocódigo</strong> no termina en un modelo sin interrupciones externas:
 
-Si asumimos que $D(D)$ se detiene, el algoritmo de evaluación $H(D, D)$ debería devolver `true`.
-Sin embargo, mirando la definición de $D$, si $H(D, D)$ es `true`, $D$ entra en el `while True` y **entra en un bucle infinito**.
-Esto contradice la premisa de que "$D(D)$ se detiene".
+```text
+Forever(x):
+    repeat forever:
+        do nothing
+```
 
-### Caso 2: Asumimos que $D(D)$ entra en bucle infinito
+Podemos explicar la no terminación porque el flujo de control nunca alcanza una salida. La ausencia de un decisor universal no impide decidir ejemplos particulares como este.
 
-Si asumimos que $D(D)$ entra en un bucle infinito, el algoritmo de evaluación $H(D, D)$ debería devolver `false`.
-Sin embargo, mirando la definición de $D$, si $H(D, D)$ es `false`, $D$ ejecuta inmediatamente el `return` y **se detiene**.
-Esto contradice la premisa de que "$D(D)$ entra en un bucle infinito".
+### Observar un número finito de pasos de Collatz
 
-### Conclusión
+Partiendo de un entero positivo $n$, se divide por dos si es par y se multiplica por tres y se suma uno si es impar, repitiendo la operación. La conjetura de Collatz afirma que todos los enteros positivos acaban llegando a uno.
 
-En ambos casos, hemos llegado a una contradicción. Esta contradicción surgió porque la suposición inicial de que "existe un algoritmo de evaluación universal $H$" era incorrecta.
+El siguiente programa observa ese proceso hasta un número máximo de pasos. <strong>Alcanzar el límite de pasos no debe interpretarse como una prueba de que el cálculo sin límite nunca terminará.</strong>
 
-Por lo tanto, se ha demostrado que **no existe un algoritmo universal que determine si un programa arbitrario se detendrá**.
+```python
+def collatz_bounded(n, max_steps):
+    if type(n) is not int or n < 1:
+        raise ValueError("n must be a positive built-in int")
+    if type(max_steps) is not int or max_steps < 0:
+        raise ValueError("max_steps must be a nonnegative built-in int")
 
-## Diagrama: El mecanismo de la contradicción
+    steps = 0
+    while n != 1 and steps < max_steps:
+        n = n // 2 if n % 2 == 0 else 3 * n + 1
+        steps += 1
+    status = "reached_one" if n == 1 else "step_limit"
+    return status, steps, n
 
-Vamos a ilustrar la lógica de esta reducción al absurdo utilizando Mermaid.
+
+print(collatz_bounded(6, 8))
+print(collatz_bounded(6, 7))
+print(collatz_bounded(1, 0))
+```
+
+Salida:
+
+```text
+('reached_one', 8, 1)
+('step_limit', 7, 2)
+('reached_one', 0, 1)
+```
+
+Este programa de observación termina tras ejecutar, como máximo, el número finito de iteraciones indicado. La cuestión de fondo es si la iteración sin ese límite llega a uno. Un número finito de ejemplos favorables no demuestra la afirmación para todos los enteros positivos. La investigación de Tao aporta un importante resultado parcial, pero no demuestra que todas las órbitas lleguen a uno.
+
+Si llamamos $\mathrm{Col}$ a la aplicación iterada, la conjetura tiene la forma
+
+$$
+\forall n\ge1\ \exists t\ge0\quad \mathrm{Col}^{t}(n)=1
+$$
+
+Pasar un $n$ concreto al hipotético $H$ daría una respuesta sobre <strong>esa única entrada</strong>. La pregunta de totalidad «¿termina para todos los $n$?» no es directamente la misma que una única consulta ordinaria de parada. No debemos concluir que entregar un programa permitiría decidir cualquier afirmación matemática.
+
+## 3. Un programa que invierte la respuesta
+
+Supongamos que existe un algoritmo $H$ que siempre termina y responde correctamente para toda descripción válida de programa y toda entrada.
+
+Un programa descrito por $s$ puede recibir esa misma descripción $s$ como entrada. Solo estamos tratando un programa como datos; no hace falta insertar un código fuente de longitud infinita.
+
+Bajo esta hipótesis, construimos $D$:
+
+```text
+D(s):
+    if s is not a valid program description:
+        halt
+    if H(s, s) == 1:
+        repeat forever:
+            do nothing
+    else:
+        halt
+```
+
+Se trata de <strong>pseudocódigo para la demostración que llama al hipotético $H$</strong>, no de un decisor de parada ya implementado. La hipótesis de que $H$ es computable y siempre termina permite construir este $D$ con una descripción finita.
+
+Sea $d=\langle D\rangle$ la descripción de $D$, y consideremos $D(d)$.
+
+| Respuesta del decisor | Lo que implicaría si fuera correcto | Comportamiento definido para $D(d)$ |
+| :--- | :--- | :--- |
+| $H(d,d)=1$ | $D(d)$ termina | Repetir para siempre |
+| $H(d,d)=0$ | $D(d)$ no termina | Terminar inmediatamente |
+
+Ambas respuestas contradicen la corrección. En forma abreviada,
+
+$$
+D(d)\text{ termina}
+\iff H(d,d)=0
+\iff D(d)\text{ no termina}
+$$
+
+Por tanto, el supuesto $H$ total y correcto no existe.
+
+La conclusión no es que todos los programas autorreferenciales sean contradictorios ni que la lógica colapse. La contradicción refuta <strong>la hipótesis de que existe un decisor universal de parada</strong>.
+
+## 4. Seguir el argumento diagonal en un diagrama
 
 ```mermaid
-graph TD
-    subgraph "Evaluador H"
-        H{"¿Resultado de H(X, X)?"}
-    end
-
-    subgraph "Programa malintencionado D"
-        START["Iniciar D"] --> H
-        H -->|"true (se detiene)"| LOOP["Bucle infinito"]
-        H -->|"false (entra en bucle infinito)"| HALT["Detenerse"]
-    end
-
-    %% Ingresar D en sí mismo
-    INPUT_D[/"Entrada: D"/] --> START
-    
-    %% Destacar contradicción
-    LOOP -.->|"¡Contradicción con H(true)!"| FAIL_1(("Contradicción"))
-    HALT -.->|"¡Contradicción con H(false)!"| FAIL_2(("Contradicción"))
-    
-    style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
-    style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px
+flowchart TD
+    Input["d = descripción finita de D"] --> Run["Dar d como entrada a D"]
+    Run --> Test{"Respuesta del supuesto H(d,d)"}
+    Test -->|"1: predice terminación"| Loop["D(d) repite para siempre"]
+    Test -->|"0: predice no terminación"| Stop["D(d) termina"]
+    Loop --> Wrong1["Contradice la corrección de H"]
+    Stop --> Wrong2["Contradice la corrección de H"]
+    Wrong1 --> Conclusion["No existe un H total y correcto"]
+    Wrong2 --> Conclusion
 ```
 
-Como se puede ver en el diagrama, en el momento en que se da $D$ a sí mismo como entrada, se produce un bucle en el que el resultado de la evaluación y la acción real se invierten (una paradoja), y la lógica colapsa. Tiene una estructura muy similar a la Paradoja del Mentiroso: "Esta oración es falsa".
+Esta es una construcción diagonal: uno de los propios programas que pretende abarcar el decisor invierte su respuesta. El parecido con la paradoja del mentiroso puede ayudar a la intuición, pero la demostración se apoya en la codificación de las descripciones y en la construcción efectiva de programas.
 
-## La historia de la informática y la máquina de Turing
+## 5. El artículo original de Turing y los modelos de cálculo
 
-[Alan Turing](https://kenji.blog/es/p/turing/) planteó y demostró este problema en 1936, una época en la que los ordenadores electrónicos modernos (computadoras) aún no existían. Para definir matemáticamente y de manera estricta "¿qué es el cálculo?", inventó una máquina virtual llamada **"Máquina de Turing" ([Turing Machine](https://kenji.blog/es/p/turing-machine-computability/))**.
+El artículo de [Alan Turing](/es/p/turing/) de 1936 mostró resultados de indecidibilidad mediante máquinas de cálculo, descripciones codificadas, una máquina universal y diagonalización. La demostración con aspecto de Python de este artículo no aparece literalmente así en el original.
 
-La Máquina de Turing consta de una cinta infinita, un cabezal que lee y escribe información en la cinta, y una tabla de transición de estados que gestiona el estado de la máquina. Se sabe que por muy complejo que sea un programa moderno, en teoría se puede reducir a esta Máquina de Turing. A esto se le llama la **"Tesis de Church-Turing" (Church-Turing Thesis)**.
+El texto original llama circle-free a una máquina que produce infinitas cifras, ceros o unos, y circular a una que produce solo un número finito de esas cifras. La segunda categoría incluye tanto máquinas que se detienen como máquinas que siguen realizando otras operaciones sin producir más cifras. Por tanto, traducir estos términos simplemente como «no termina» y «termina» sería inexacto. La sección 8 también trata la imposibilidad de decidir en general si una máquina llegará a imprimir un símbolo determinado.
 
-Turing intentó trazar la línea entre los "problemas computables" y los "problemas no computables" utilizando este modelo simple. El resultado de este descubrimiento es el Problema de la Parada, el representante por excelencia de los problemas indecidibles.
+Podemos relacionar la aparición del símbolo con la parada construyendo una máquina que simule el cálculo y termine únicamente cuando aparezca ese símbolo. Aquí usamos la formulación moderna habitual: <strong>la terminación de un programa con una entrada fija</strong>.
 
-## Profunda relación con el Teorema de Incompletitud de Gödel
+Una [máquina de Turing](/es/p/turing-machine-computability/) es un modelo matemático con reglas finitas y una cinta utilizable según sea necesario. La tesis de Church–Turing sostiene que la noción intuitiva de «procedimiento efectivo ejecutable mecánicamente» queda capturada por esta computabilidad formal. Se distingue de los teoremas de equivalencia entre modelos definidos formalmente. Tampoco es una afirmación demostrada sin condiciones sobre cualquier fenómeno físico o dispositivo real.
 
-La "paradoja de autorreferencia" que subyace en la demostración del Problema de la Parada tiene una profunda conexión con los **"Teoremas de Incompletitud" (Incompleteness Theorems)** publicados por [Kurt Gödel](https://kenji.blog/es/p/godel/) en 1931, poco antes de Turing.
+## 6. La relación con la incompletitud
 
-El Primer Teorema de Incompletitud de Gödel establece que "en cualquier sistema axiomático lo suficientemente poderoso como para incluir la teoría de números naturales, siempre habrá proposiciones verdaderas que no pueden ser probadas ni refutadas dentro del sistema". Gödel construyó matemáticamente una proposición autorreferencial como "Esta proposición no puede ser probada" al demostrar este teorema.
+Los [teoremas de incompletitud de Gödel](/es/p/godels-incompleteness-theorems/) guardan una estrecha relación con los límites de la computabilidad. Sus afirmaciones no se aplican sin condiciones a cualquier sistema axiomático «suficientemente potente»: importan la axiomatización efectiva, la capacidad de expresar aritmética, la consistencia y otras hipótesis. También hay que distinguir la verdad en los números naturales estándar de la demostrabilidad dentro de una teoría.
 
-El programa malintencionado $D$ en el Problema de la Parada de Turing hace una autorreferencia de la forma: "si la máquina $H$ dictamina que se detiene, entonces entra en un bucle infinito, y si dictamina que entra en un bucle infinito, entonces se detiene". En otras palabras, el Problema de la Parada también puede interpretarse como la **versión programática del Teorema de Incompletitud** en el escenario de la informática. Estas dos grandes demostraciones que muestran los límites de la lógica comparten la misma estructura paradójica.
+Una forma de ver la relación con la parada consiste en considerar una teoría cuyas demostraciones se puedan enumerar efectivamente y que <strong>solo demuestre afirmaciones verdaderas</strong> sobre terminación y no terminación. Si pudiera demostrar una de ambas para cada programa y entrada fija, podríamos buscar las dos clases de demostraciones y devolver la respuesta correspondiente a la primera encontrada.
 
-## Lo que este teorema significa hoy
+Eso contradiría la indecidibilidad del problema de la parada. Ni siquiera una teoría así de correcta puede resolver todas las preguntas de parada. Aquí usamos la hipótesis fuerte de corrección semántica; esta explicación no enuncia las hipótesis más débiles de cada teorema de Gödel ni constituye una demostración completa de ellos.
 
-El hecho de que el Problema de la Parada sea "indecidible (Undecidable)" tiene implicaciones muy importantes en la ingeniería de software actual.
+## 7. El teorema de Rice y el análisis práctico
 
-### Extensión al Teorema de Rice
+### Propiedades no triviales de la entrada y la salida
 
-El Problema de la Parada evolucionó hacia un teorema aún más general, el **"Teorema de Rice" (Rice's Theorem)**. El teorema de Rice establece que "no existe un algoritmo general para determinar si un programa tiene propiedades semánticas no triviales".
+El teorema de Rice establece un resultado general de indecidibilidad para las <strong>propiedades extensionales no triviales</strong> de la función parcial que calcula un programa o del lenguaje que reconoce.
 
-En otras palabras, no solo si entrará en un bucle infinito, sino también se sabe que preguntas como las siguientes son generalmente indecidibles:
-- "¿Esta función devuelve siempre 0?"
-- "¿Existe un error (bug) específico en este programa?"
-- "¿Este sistema causará un acceso a memoria inválido?"
+«Extensional» significa que dos programas que representan el mismo comportamiento de entrada y salida coinciden en si tienen la propiedad. «No trivial» significa que hay objetos computables que la tienen y otros que no.
 
-### Compromisos en el mundo práctico
+Por ejemplo, «termina y devuelve cero para todas las entradas» es una propiedad no trivial de una función parcial. No es lo mismo que «si termina, su salida siempre es cero». Un programa que no termina con ninguna entrada también cumple esta última condición. Por eso, no conviene dejar ambigua la expresión «siempre devuelve cero».
 
-El hecho de que "generalmente no se puede resolver" no significa que los ingenieros de software se hayan rendido.
-Los compiladores modernos, las herramientas de análisis de código estático y los programas antivirus que detectan malware ofrecen beneficios prácticos haciendo los siguientes compromisos:
+Hay ejemplos decidibles si solo se examina la sintaxis o la representación, como el número de estados escritos en una descripción de programa. El teorema de Rice tampoco se aplica automáticamente a propiedades de pasos intermedios de ejecución, como un acceso concreto a memoria. Para demostrar la indecidibilidad de un problema sobre la ejecución hay que precisar el modelo y aportar una reducción apropiada u otro argumento.
 
-- **Heurísticas**: Se renuncia al 100% de certeza y se infiere, a partir de patrones comunes, que "probablemente sea un bug" o "probablemente sea un comportamiento malicioso".
-- **Lenguajes restringidos**: Al utilizar lenguajes o sistemas de tipos restringidos que no son Turing completos (donde no se pueden escribir bucles infinitos en primer lugar), se garantizan ciertas seguridades.
-- **Tiempos de espera (Timeout)**: Si no termina de calcular en un tiempo determinado, se detiene forzosamente el proceso por un "timeout".
+### Distinguir garantías, respuestas desconocidas y tiempos límite
 
-## Resumen
+Que no exista un decisor universal no significa que todas las herramientas de análisis solo puedan hacer conjeturas.
 
-En este artículo, hemos explicado el **Problema de la Parada** demostrado por Turing.
+- <strong>Análisis correcto pero incompleto</strong>: ofrece garantías cuando puede demostrar un resultado y responde «desconocido» en los demás casos. Una advertencia de un análisis conservador puede no corresponder a un defecto real.
+- <strong>Lenguajes o dominios de entrada restringidos</strong>: pueden usar reglas que garanticen la terminación o búsquedas exhaustivas en dominios finitos. El mero hecho de que un lenguaje no sea Turing completo no garantiza que todos sus programas terminen.
+- <strong>Heurísticas y pruebas</strong>: encuentran posibles defectos o contraejemplos útiles, pero no deben confundirse con una garantía de completitud más allá del ámbito comprobado.
+- <strong>Límites de tiempo</strong>: interrumpen el consumo de recursos; no demuestran que el cálculo continuaría para siempre sin ese límite.
 
-- No existe un algoritmo que determine de manera fiable si un programa arbitrario se detendrá en un tiempo finito.
-- Si asumimos que existe una máquina evaluadora $H$, un programa malicioso $D$ que traiciona el resultado de la evaluación generará una contradicción (reducción al absurdo).
-- Este teorema muestra las "limitaciones lógicas" de las computadoras, y es la razón fundamental por la cual las modernas herramientas de desarrollo de software necesitan recurrir a "suposiciones" y "compromisos".
+En un sistema determinista cerrado con un número finito de configuraciones completas, que puedan representarse y cuyos pasos puedan calcularse efectivamente, podemos seguir la ejecución hasta que termine o repita una configuración. Esto establece decidibilidad matemática, no que la búsqueda exhaustiva quepa en límites prácticos de tiempo o memoria. No se traslada directamente a sistemas con entradas sin cota, interacción externa o memoria que puede crecer.
 
-Es precisamente porque no se puede crear matemáticamente la herramienta de análisis de programas perfecta, que el diseño y las pruebas realizadas por los propios programadores siguen siendo tan importantes hoy en día. Al escribir código, no olvides pensar con tu propia cabeza en la posibilidad de bucles infinitos.
+## 8. Qué es imposible y qué sigue siendo posible
+
+El resultado sobre la parada descarta un algoritmo general que siempre termine y siempre elija la respuesta correcta entre dos opciones para cualquier programa y entrada.
+
+Las demostraciones de terminación de programas particulares, las comprobaciones completas bajo restricciones adecuadas, los análisis correctos que admiten respuestas desconocidas y las pruebas finitas siguen siendo útiles y compatibles con este resultado. Lo esencial es distinguir si la respuesta de una herramienta es una demostración, una observación, una conjetura o el reconocimiento de que no se conoce la respuesta.
+
+### Referencias
+
+- [Turing: On Computable Numbers, with an Application to the Entscheidungsproblem](https://theory.stanford.edu/~trevisan/cs172-07/turing36.pdf) — Copia del artículo original alojada por una universidad. La sección 2 distingue tipos de máquinas; la sección 8 trata la diagonalización y la aparición de símbolos; la sección 9 interpreta el cálculo.
+- [MIT 6.045J: Mapping reducibility and Rice's theorem](https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/7aead2c728dd3d5a737d832811ef97e6_MIT6_045JS11_lec09.pdf) — Condiciones del teorema de Rice y distinción entre propiedades de lenguajes y propiedades estructurales u operacionales de máquinas.
+- [Sinclair: The Church-Turing Thesis](https://people.eecs.berkeley.edu/~sinclair/cs172/n4.pdf) — La tesis que conecta los procedimientos efectivos intuitivos con los modelos formales.
+- [Tao: Almost all orbits of the Collatz map attain almost bounded values](https://arxiv.org/abs/1909.03562) — Resultado parcial sobre la iteración de Collatz, no una demostración de que todos los enteros positivos llegan a uno.

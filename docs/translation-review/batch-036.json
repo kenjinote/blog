@@ -126,6 +126,47 @@
         "Primary sources read only in documented selected sections/abstracts.",
         "Publication036 and complete all-article goal pending."
       ]
+    },
+    "post/halting-problem/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-15",
+      "reviewer": "Codex (AI)",
+      "source": "post/halting-problem/index.md",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "76f40c4802d733283a30c8365446b9c040dd64fe4fca547c869486ddb88fa197",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original Spanish article and the entire saved revised file, comparing all eight revised Japanese chapters, introduction, examples, proof table, figure and conclusion. Corrected the proven-unsolved description, missing fixed-input/total-decider conditions, claims that one halting query solves all mathematics, logic-collapse language, unrestricted incompleteness claim and guesses-only analysis conclusion. Original central topics retained, including concrete multiplication/nontermination/Collatz examples, historical discussion and practical relevance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used problema de la parada and indecidibilidad for the proved decision limit, algoritmo de decisión total rather than an unspecified evaluador, semidecidible for recognition and configuración completa for full configurations. Distinguished consistencia from the explicit truth-preserving corrección semántica hypothesis; propiedades extensionales no triviales from intermediate execution events; and límite de pasos from límite de tiempo. Used programa, entrada, devuelve, pseudocódigo and reducción consistently. Removed malintencionado/malicioso from the diagonal proof and explained that the assumed universal decider, rather than logic itself, is refuted."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all32TeX expressions and four display equations. Normalized only text annotations in displays and checked exact equality with Japanese formula structure: encoded HALT pairs, total two-answer H, Collatz forall-positive-n exists-t, and diagonal iff chain. Read both cases in the three-row table, finite encoding/validity, self-application, effective construction, and sound proof-enumeration argument. Correctly distinguishes each fixed input from totality, finite-state decidability from practical feasibility, Rice extensional properties from syntax, and zero-output vacuity from total constant-zero functions. No general Collatz/theorem proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all original five Python-labelled blocks, then revised two executable Python blocks, their displayed outputs and two proof pseudocodes. Revised program hashes are exact matches to finite tested Japanese examples, including strict integer domain checks and step-limit boundaries. Generated HTML preserves six full code/text blocks, one diagram with eight correctly directed edges,15strong spans and82prose fragments. Never executed hypothetical H/D or the infinite Forever pseudocode. Kept the original cover file while switching to the reviewed text-free illustration; image-only edits do not approve other languages."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified four primary-source references and three Spanish article links in source and actual generated HTML. Original title/slug/taxonomy preserved; duplicate date resolved to actual September14 effective publication, with November15 modification date. Checked canonical,14unique hreflang/13sidebar article targets and new cover reference.37bundle preview481article+1tag snapshots,2087multilingual pages,3801HTTPS HTML/41XML passed; prior17tests referenced, not rerun. Source research remains limited to documented selected primary sections/abstracts, not whole-paper review."
+        }
+      },
+      "summary": "Full Spanish halting-problem review against frozen Japanese, including precise decision/proof conditions, executable examples and practical-analysis guarantees.",
+      "languageSpecificFindings": "Corrected problemas no resueltos (demostrados), programa malintencionado/malicioso and la lógica colapsa. Replaced the awkward nunca saldrá del bucle para siempre and the unrestricted number-return claim with domain-qualified examples. Retained all original substantive themes while correcting all-mathematics, incompleteness, Rice, non-Turing-complete and guesses-only assertions. Removed the misleading Halting Problem link to the Turing-machine article, with three accurately labeled Spanish related-article links.",
+      "validation": "docs/translation-review/batch-036-es-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other8 original translation bodies remain unread and unapproved.",
+        "Finite Python tests are prior exact-code evidence, not a general Collatz/halting theorem.",
+        "Static37bundle preview, no browser KaTeX/Mermaid execution or fullsite certification.",
+        "Primary sources read only in documented selected sections/abstracts.",
+        "Publication036 and complete all-article goal pending."
+      ]
     }
   },
   "stages": [
@@ -157,8 +198,18 @@
       "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
       "reviewedTranslationsAdded": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-15",
+      "stage": "Spanish original/revised whole-body comparison",
+      "validation": "docs/translation-review/batch-036-es-validation.json",
+      "checks": "docs/translation-review/batch-036-es-checks.json",
+      "translationHash": "76f40c4802d733283a30c8365446b9c040dd64fe4fca547c869486ddb88fa197",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "reviewedTranslationsAdded": 1,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese, English and both Chinese whole revisions reviewed; English/CN/TW3AI entries. Other9unread. Source frozen; publication/fullgoal pending."
+  "scope": "Japanese and EN/CN/TW/ES whole revisions reviewed;4AI entries. Other8unread. Source frozen; publication/fullgoal pending."
 }
