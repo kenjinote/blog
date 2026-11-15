@@ -1368,7 +1368,7 @@
       "publicationPending": true
     }
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "scope": "All13 original/revised bodies read and12AI reviews registered. Final36bundle assembly and local468article+3tag probe pass; publication and whole all-article goal pending.",
   "frozenSourceHash": "c7c4b56ae79a864e3bfa4bf30fa1f73074087c50ccb5e3ec1a751ffcea46d2a6",
   "sourceFrozenForFollowingTranslations": true,
@@ -1398,8 +1398,9 @@
     "humanReviews": 0,
     "publicationProbePreparation": "docs/translation-review/batch-035-probe-preparation.json",
     "publicationProbeLocalCheck": "docs/translation-review/batch-035-probe-local-structure.json",
-    "publicationPending": true,
-    "scope": "All13 exact reviewed versions assembled; individual semantic evidence remains separate. Static math/prose/graphs/pseudocode/reference/table/navigation and Arabic7LTR/RTL/CSS pass.17tests rerun. Local468article+3tag probe pass/484file reads/HTTP0. No live/browser/native/fullsite certification; whole goal active."
+    "publicationPending": false,
+    "scope": "All13 exact reviewed versions assembled; individual semantic evidence remains separate. Static math/prose/graphs/pseudocode/reference/table/navigation and Arabic7LTR/RTL/CSS pass.17tests rerun. Local468article+3tag probe pass/484file reads/HTTP0. No live/browser/native/fullsite certification; whole goal active.",
+    "publicationVerifiedBy": "docs/translation-review/publication-035.json"
   },
   "publicationDispatch": {
     "version": 1,
@@ -1432,5 +1433,38 @@
       }
     ],
     "scope": "Ordinary push after fetch zero incoming/23 outgoing including final assembly. Matching head/run observed. Live468articles+3tags await matching successful build/deploy. Local468+3pass484reads/HTTP0;prior455cases retained."
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-11-15T16:40:12.130162+09:00",
+      "ciRun": 43661446242,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43661446242",
+      "deployedCommit": "5477149d4e7216e1cc2909d6d38cf2fe18754946",
+      "runAttempt": 1,
+      "ciCompletion": "docs/translation-review/batch-035-ci-completion.json",
+      "proof": "docs/translation-review/publication-035.json",
+      "pages": 468,
+      "passed": 468,
+      "failed": 0,
+      "translations": 432,
+      "japaneseSources": 36,
+      "mathVersions": 273,
+      "texExpressions": 17156,
+      "kolmogorovVersions": 13,
+      "kolmogorovTeX": 2841,
+      "kolmogorovDiagrams": 26,
+      "kolmogorovGraphEdges": 143,
+      "kolmogorovReferencesEach": 8,
+      "kolmogorovPseudocodeBlocks": 26,
+      "kolmogorovProseFragments": 3337,
+      "arabicKolmogorovLtrValues": 7,
+      "additionalHindiTaxonomyPages": 3,
+      "additionalHindiTaxonomyPassed": 3,
+      "httpPageProbeAttempts": 1,
+      "httpPageRetries": 0,
+      "buildCompletedAt": "2026-11-15T01:34:28Z",
+      "deployCompletedAt": "2026-11-15T01:35:55Z",
+      "scope": "Actual first live468articles+3Hindi tags after exact CI head/attempt/build/deploy success. Prior455checks retained. New13Kolmogorov versions exact math,graphs,references,pseudocodes,prose,tables,title,dates,navigation;Arabic7LTR/RTL. No native/browser/fullsite certification. Whole goal remains active."
+    }
+  ]
 }

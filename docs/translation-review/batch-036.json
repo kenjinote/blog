@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "article": "halting-problem",
+  "sourceAudit": "docs/translation-review/batch-036-source-audit.json",
+  "frozenSourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+  "reviews": {
+    "post/halting-problem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-15",
+      "reviewer": "Codex (AI)",
+      "source": "post/halting-problem/index.md",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "73da7bf52d9c1906716868d27fb10226f162b798ccb5d3881914cceac398ab4d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original English article and the complete saved revised English file, comparing all eight revised Japanese chapters, introduction, examples, conclusion and references. Corrected the proven-unsolved description, program/input quantification, the unsupported claim that one halting query settles all mathematics, logic-breakdown language, the unrestricted incompleteness claim and the claim that all useful analyses must guess. Retained the original themes and both elementary examples, made the Collatz example finitely observable, and clarified the Turing history and practical consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished undecidable from unsolved, total and correct deciders from partial recognition, nontermination from repeated complete configurations, encoded descriptions from programs as abstract objects, and diagonal construction from malicious software. Distinguished original circular/circle-free output conditions from modern halting, Church-Turing thesis from formal model equivalence, soundness from consistency, extensional function/language properties from operational memory events, and step limits from nontermination proofs."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared all four display equations and surrounding quantifiers to Japanese: HALT membership for a program/input pair; total H with two answers; positive-integer Collatz forall n exists t; and D(d) halts iff H(d,d)=0 iff D(d) does not halt. Checked both table cases and all eight diagram arrows. Read encoding validity, effective construction of D, semidecidability, finitely many complete configurations, and the sound effectively enumerable theory argument with its expressly stronger assumptions. Generated HTML preserves all31English TeX expressions, four displays and three table rows. No general Collatz proof or new theorem certification claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read both original/revised executable examples and both revised proof pseudocodes completely. Revised Python code and displayed outputs are byte-identical to the tested Japanese code: strict built-in integer doubling and bounded positive-integer Collatz. Exact code hashes match the finite evidence with9invalidCollatz inputs,4invaliddouble inputs,12known6trajectory limits,27limits110/111 and1with0steps. All six Python/text blocks match generated HTML. Hypothetical H and infinite Forever/D pseudocode were never executed. The new diagram has8correct branches, and the cover no longer contains contradictory pseudocode labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared all four primary references and three localized English article links with Japanese, preserving title, slug, taxonomy and the actual live September14 publication date while removing the duplicate September24 field. Confirmed November15 lastmod, new cover reference, canonical,14unique hreflang values and13article-preserving sidebar targets in generated HTML. Fresh37bundle preview has481article snapshots plus1tag,2087multilingual pages and3801HTTPS HTML/41XML. Selected primary-source reading scopes remain those in the audit/followup; do not claim full papers read. Prior17tests passed in035final and were not rerun for content-only work."
+        }
+      },
+      "summary": "Full English halting-problem review against revised Japanese, correcting the decision problem, proof conditions, historical terminology and practical analysis claims.",
+      "languageSpecificFindings": "Removed malicious program and logic breaks down wording, grammatically incorrect infinite loops used as a verb, misdirected Halting Problem links and unsupported guesses-only conclusion. All original major themes retained with precise conditions.",
+      "validation": "docs/translation-review/batch-036-en-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other11 original translation bodies have not yet been read; only cover references changed.",
+        "Finite Python cases do not prove Collatz or decide arbitrary halting.",
+        "Selected static HTML checks; no browser Mermaid/KaTeX execution or fullsite certification.",
+        "Primary papers read only in documented selected sections/abstracts.",
+        "Batch036 publication and full all-article goal pending."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-11-15",
+      "stage": "Japanese full revision and English original/revised full comparison",
+      "sourceValidation": "docs/translation-review/batch-036-ja-validation.json",
+      "translationValidation": "docs/translation-review/batch-036-en-validation.json",
+      "checks": "docs/translation-review/batch-036-en-checks.json",
+      "reviewedTranslationsAdded": 1,
+      "publicationPending": true
+    }
+  ],
+  "publicationPending": true,
+  "scope": "Japanese and English whole bodies reviewed; English1AI entry, other11unread. Source frozen after cover correction. No full-goal completion."
+}

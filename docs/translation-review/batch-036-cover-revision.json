@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-11-15T10:15:46.720133+09:00",
+  "tool": "built-in image_gen",
+  "originalPreserved": true,
+  "oldAsset": "content/post/halting-problem/eyecatch.jpg",
+  "newAsset": "content/post/halting-problem/eyecatch-v2.png",
+  "newAssetSha256": "95f9933f9fb3759e29e225cc1443de7e432537bbdefb6e0f5f7ef6cb56687ce4",
+  "newAssetBytes": 1785854,
+  "visualInspection": "Generated result viewed: dark retro machine and cyan infinity ribbon preserved; conflicting labels/arrows/pseudocode removed. Purely conceptual cover, not a proof diagram.",
+  "changes": [
+    {
+      "language": "ar",
+      "path": "content/post/halting-problem/index.ar.md",
+      "before": "069a71718014cad1833748f561a93d3b9c6c53a8d34d93ba9c1959f9e9602102",
+      "after": "095ba3f8b9233419befe184a65eb2e6011d3247daef107ee011b6fb0809607f7",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "de",
+      "path": "content/post/halting-problem/index.de.md",
+      "before": "bcd703ee5e5bb1a4e4b9a1ef204a6ded774ce0ee1fdf62c1f21ae1e6c998785d",
+      "after": "5c5b8c53f960f9808fafb023f056d8bb0a12a05b861b33856d9abbc3b574e08d",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "en",
+      "path": "content/post/halting-problem/index.en.md",
+      "before": "7d1850de98f9f331a77bfdda7c165ccbc057c0ee8a06f7379e17f047c53de78d",
+      "after": "404b7f46f793ede1c2093c22cad9edc9938d30257d7974d7643a1127123909d4",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "es",
+      "path": "content/post/halting-problem/index.es.md",
+      "before": "0568f3737dd4df7fa80ffcb4ed364055e8023c994adf92123211d8071553674b",
+      "after": "b7dffe1f6baae4afb1c5fe09abe70e06a864ac3cc58bc31ff651f59cec2d01d7",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "fr",
+      "path": "content/post/halting-problem/index.fr.md",
+      "before": "646f2ffb5139ab256634f3f1941eec0cb0bdb460783420959e9f0b0621226495",
+      "after": "e2a022454bec7381012147dbaf76463c59aeaae715c99e9ea0c5c0b59893ccb4",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "hi",
+      "path": "content/post/halting-problem/index.hi.md",
+      "before": "f993387dbf8b504d04304bd6862404a1961f5417ff06c835fb24015ba6ae1b81",
+      "after": "942cad7dfbce2471efa79c178b45f0d575e52bde5759260ee80c9f5fc8443886",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "id",
+      "path": "content/post/halting-problem/index.id.md",
+      "before": "07331be4f531d22ab850c6a1e09e7831be260ae080038598cfbd43fd4b77b1b9",
+      "after": "efe1d62c536cd31ea5ccc3b3dfd0dbc5d4d93777781800786bb25378ffc8cad9",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "ko",
+      "path": "content/post/halting-problem/index.ko.md",
+      "before": "45833d6ec56e2458b18a90d0d449d3cfa91fa4352a16bf02fb2710aa30d0cdcb",
+      "after": "463abe1e7f09a830b3df2fea981123e0326582ac08876a4e95b2a42f5f57bb2a",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "ja",
+      "path": "content/post/halting-problem/index.md",
+      "before": "c4b6ec1217af1b2d56ba4bb7ac6637971e164175ea00e237c6506d6a77d9b819",
+      "after": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "pt",
+      "path": "content/post/halting-problem/index.pt.md",
+      "before": "811958e5f46f280eab066463f517aaed537b009f8953649c405744c4584e21bf",
+      "after": "a5e20dec0f7d3d9b725a869fcb48b7ef79cd681317e0715c2430f6481656157f",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "ru",
+      "path": "content/post/halting-problem/index.ru.md",
+      "before": "2d09f08e7244a98986ed9c9eb168f708f0d4cc98b9f769f6a5fdb801b6ade105",
+      "after": "37157da3d5a65e8365a2382a281ff6e509c228621bcfe2d570f4be0ab36ba2f6",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "zh-cn",
+      "path": "content/post/halting-problem/index.zh-cn.md",
+      "before": "5eba3df9bf5be2ba230aa7574e7644e9130e0bfda0c95452ca27d78ab457aa52",
+      "after": "0dab7e3f4cc7e2eb05affcd33b2dd4b0184401b9d975b54ffa9980c49c3f8507",
+      "scope": "Image reference only; no translation semantic approval."
+    },
+    {
+      "language": "zh-tw",
+      "path": "content/post/halting-problem/index.zh-tw.md",
+      "before": "434775402572ef3b839715114f1ab62e71ac9d20e9a62210afd9d2fe3e8f1211",
+      "after": "b59d4235b3cd8dfb9e77ca3ee98b74b8f1a992a054cb0fe71d3a370ecc92960a",
+      "scope": "Image reference only; no translation semantic approval."
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "prompt": "Use case: precise-object-edit. Edit target: supplied halting-problem blog cover. Preserve the square composition, dark blue-gray retro computing machine, reels, tubes, glowing cyan infinity ribbon and restrained illustrative style. Remove ALL text, numbers, letters, labels, equations, arrows and flowchart/pseudocode markings everywhere, including tiny background binary digits, machine labels and every ribbon label. Fill those regions naturally with clean blank machine panels and continuous glowing ribbon surfaces. No text or symbols at all. The result is a purely conceptual text-free computing illustration, not a mathematical diagram. Preserve opaque background."
+}

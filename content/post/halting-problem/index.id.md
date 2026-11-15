@@ -1,7 +1,7 @@
 ---
 title: "Masalah Penghentian (Halting Problem): Program Terkuat yang Mustahil Dibuat"
 date: "2026-09-24T19:44:38+09:00"
-image: "eyecatch.jpg"
+image: "eyecatch-v2.png"
 date: 2026-09-14T00:00:51+09:00
 description: "Menjelaskan tentang Masalah Penghentian (Halting Problem), salah satu masalah tak terpecahkan yang paling terkenal (dan telah dibuktikan) dalam ilmu komputer. Penjelasan dibuat mudah dipahami menggunakan pembuktian melalui kontradiksi, contoh konkret yang intuitif, rumus matematika, dan diagram ilustrasi."
 categories: ["computer-science", "theory-of-computation"]

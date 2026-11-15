@@ -1,7 +1,7 @@
 ---
 title: "停止性問題（Halting Problem）：絶対に作れない最強のプログラム"
 date: "2026-09-14T00:00:51+09:00"
-image: "eyecatch.jpg"
+image: "eyecatch-v2.png"
 description: "任意のプログラムと入力の停止を必ず正しく判定するアルゴリズムが存在しない理由を、符号化と対角線論法から説明する。コラッツ予想の量化、ライスの定理の条件、タイムアウトと安全な解析の違いも整理する。"
 categories: ["computer-science", "theory-of-computation"]
 tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]

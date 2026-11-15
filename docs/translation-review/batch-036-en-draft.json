@@ -1,0 +1,10 @@
+{
+  "sourceSha256": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+  "translationSha256": "73da7bf52d9c1906716868d27fb10226f162b798ccb5d3881914cceac398ab4d",
+  "originalAndRevisedWholeBodyRead": true,
+  "language": "en",
+  "reviewer": "AI",
+  "reviewDate": "2026-11-15",
+  "scope": "Whole meaning, terminology, quantifiers, four displays, two executable programs and outputs, two proof pseudocodes, diagram branches, references and metadata compared against revised Japanese. Corrects unsolved/undecidable confusion, unrestricted Python types, Collatz quantification, malicious/logic-break wording, history/thesis, incompleteness hypotheses, Rice extensionality, sound analysis and timeout claims. HTML checks and ledger registration pending.",
+  "reviewedTranslationsAdded": 0
+}
