@@ -372,6 +372,47 @@
         "Primary sources read only in documented selected sections/abstracts.",
         "Publication036 and complete all-article goal pending."
       ]
+    },
+    "post/halting-problem/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-17",
+      "reviewer": "Codex (AI)",
+      "source": "post/halting-problem/index.md",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "8ac8fb3f139015463f4ce479ec594332bdf69e44069bc13b9f9352af1c900f5c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Hindi body in the prior turn; read the entire saved revised body in two nontruncated chunks in this turn. Compared all eight chapters to the frozen Japanese account. Corrected proven-unsolved description, attribution of modern KaTeX/Mermaid examples to the 1936 paper, universal-input inference for Collatz, logic-collapse conclusion, and unconditional incompleteness/analysis assertions. Preserved the original examples and historical/practical topics with explicit mathematical conditions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used anirneyata (अनिर्णेयता), semidecidable (अर्धनिर्णेय), total defined algorithm (सर्वत्र परिभाषित), complete configuration (पूरा विन्यास), and nontrivial extensional properties (गैर-तुच्छ विस्तारात्मक गुण). Distinguished consistency (संगति) and soundness (सत्य-संरक्षण), step limits and timeouts. Removed evil-program framing and the literal country/state phrasing. Read the corrected partial-function phrase गणना किए जाने वाले आंशिक फलन in the saved body."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all32 TeX expressions, four display formulas, the two diagonal cases and all diagram arrows. Exact Japanese display structure after normalization of text annotations only; encoded input pairs, fixed-input total correct H, forall-positive-n exists-t Collatz and diagonal iff chain preserved. Explicit finite descriptions, effective construction, sound proof enumeration, Rice extensional/nontrivial restrictions, vacuous conditional zero output, and finite closed deterministic configuration assumptions. No claim of a new general theorem or Collatz proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read the original five Python-labelled blocks and saved revised two executable examples, two outputs and two proof pseudocodes. Both Python hashes exactly match previously finite-tested Japanese code, including strict integer validation and bounded Collatz cases. Never executed hypothetical H/D or Forever. Generated static HTML preserves all six code/text blocks, one diagram with eight edges,15strong spans and78prose fragments. Browser math/diagram execution was not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked four primary references and three Hindi article links in source/generated HTML, original title/slug/taxonomy, effective September14 publication date and November17 modification. Canonical,14unique alternate links and13sidebar targets pass. Fresh37bundle preview481posts+1tag,2087multilingual pages and HTTPS checks; prior17tests referenced without rerun. Primary source reading remains limited to previously documented selected sections and abstract."
+        }
+      },
+      "summary": "Full Hindi halting-problem review against frozen Japanese, including precise decision/proof conditions, executable examples and practical-analysis guarantees.",
+      "languageSpecificFindings": "Original description अनसुलझी (प्रमाणित) confused proved undecidability with an unresolved question; introduction attached modern KaTeX/Mermaid examples to Turing1936. Replaced अनिर्णीत with defined अनिर्णेयता, दुष्ट framing with constructive diagonal reasoning and राज्य wording with precise configuration/model explanations. Clarified fixed-input totality, quantifiers, soundness and operational limits of Rice.",
+      "validation": "docs/translation-review/batch-036-hi-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other2 original translation bodies remain unread and unapproved.",
+        "Finite Python tests are prior exact-code evidence, not a general Collatz/halting theorem.",
+        "Static37bundle preview, no browser KaTeX/Mermaid execution or fullsite certification.",
+        "Primary sources read only in documented selected sections/abstracts.",
+        "Publication036 and complete all-article goal pending."
+      ]
     }
   },
   "stages": [
@@ -463,8 +504,18 @@
       "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
       "reviewedTranslationsAdded": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-17",
+      "stage": "Hindi original/revised whole-body comparison",
+      "validation": "docs/translation-review/batch-036-hi-validation.json",
+      "checks": "docs/translation-review/batch-036-hi-checks.json",
+      "translationHash": "8ac8fb3f139015463f4ce479ec594332bdf69e44069bc13b9f9352af1c900f5c",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "reviewedTranslationsAdded": 1,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and EN/CN/TW/ES/KO/PT/FR/DE/ID whole revisions reviewed;9AI entries. Other3unread. Source frozen; publication/fullgoal pending."
+  "scope": "Japanese and EN/CN/TW/ES/KO/PT/FR/DE/ID/HI whole revisions reviewed;10AI entries. Other2unread. Source frozen; publication/fullgoal pending."
 }
