@@ -413,6 +413,47 @@
         "Primary sources read only in documented selected sections/abstracts.",
         "Publication036 and complete all-article goal pending."
       ]
+    },
+    "post/halting-problem/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-17",
+      "reviewer": "Codex (AI)",
+      "source": "post/halting-problem/index.md",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "c0d63653b113e87427dd99c75a3b29cc9fa822699418fe67a1d856e42c451f12",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Russian body and frozen Japanese source, then the entire saved Russian revision in two nontruncated chunks. Compared all eight chapters, proof cases, examples, diagram, history, practical implications and references. Original proof already states H returns in finite time and correctly rejects its existence; retained these facts while correcting the later diagram prose saying logic collapses. Corrected unrestricted multiplication, universal-input Collatz inference, unconditional incompleteness, and guesses-only conclusions. Original introduction describes this article using KaTeX/Mermaid, not Turing using those tools; no such error attributed to Russian."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used алгоритмическая неразрешимость, полуразрешимо, всюду определённый решающий алгоритм, полная конфигурация and нетривиальные экстенсиональные свойства with definitions. Distinguished непротиворечивость from семантическая корректность (soundness). Replaced зловредная/Обманщик framing with constructive diagonal reasoning. Kept accepted Russian names Тьюринг, Чёрч, Гёдель, Райс, Коллатц. Clarified the awkward original доказанных проблем description without falsely claiming it said unsolved."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all32 TeX expressions and four displays, the two-case table and every diagram arrow. Exact Japanese display structure after normalizing only text annotations; encoded HALT, fixed-input total correct H, forall-n exists-t Collatz and diagonal iff chain preserved. Explicit finite valid encodings, effective construction, sound proof enumeration, Rice extensional/nontrivial conditions, vacuous zero-output condition and finite closed deterministic configuration restrictions. No new general theorem or Collatz proof claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read original five Python-labelled blocks and revised two executable examples, two outputs and two proof pseudocodes. Corrected the explicit claim that arbitrary Python inputs immediately return a number. Both revised program hashes match previously finite-tested Japanese examples exactly. Never executed hypothetical H/D or infinite Forever. Actual generated HTML preserves six code/text blocks, one graph with eight directed edges,15strong spans and84prose fragments. No browser math/diagram execution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Four primary references and three localized Russian links checked in source and actual static HTML; retained original title/slug/taxonomy. Deduplicated date to effective September14 publication, November17 modification. Canonical,14unique alternates and13sidebar article targets verified. Fresh37bundle preview481posts+1tag,2087multilingual pages and3801HTTPS HTML/41XML; prior17tests referenced not rerun. Primary research scope remains documented selected sections and abstract only."
+        }
+      },
+      "summary": "Full Russian halting-problem review against frozen Japanese, including precise decision/proof conditions, executable examples and practical-analysis guarantees.",
+      "languageSpecificFindings": "Original mathematical proof already required finite-time H and correctly rejected the existence assumption, while diagram prose incorrectly said logic collapses. Corrected the explicit arbitrary-input numeric return claim, Collatz all-input inference, missing incompleteness conditions and unconditional Rice bug/memory applications. Russian introduction correctly refers to this article using KaTeX/Mermaid; did not invent a historical attribution error. Replaced malicious-program framing and clarified the description.",
+      "validation": "docs/translation-review/batch-036-ru-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Arabic original translation body remains unread and unapproved.",
+        "Finite Python tests are prior exact-code evidence, not a general Collatz/halting theorem.",
+        "Static37bundle preview, no browser KaTeX/Mermaid execution or fullsite certification.",
+        "Primary sources read only in documented selected sections/abstracts.",
+        "Publication036 and complete all-article goal pending."
+      ]
     }
   },
   "stages": [
@@ -514,8 +555,18 @@
       "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
       "reviewedTranslationsAdded": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-17",
+      "stage": "Russian original/revised whole-body comparison",
+      "validation": "docs/translation-review/batch-036-ru-validation.json",
+      "checks": "docs/translation-review/batch-036-ru-checks.json",
+      "translationHash": "c0d63653b113e87427dd99c75a3b29cc9fa822699418fe67a1d856e42c451f12",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "reviewedTranslationsAdded": 1,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and EN/CN/TW/ES/KO/PT/FR/DE/ID/HI whole revisions reviewed;10AI entries. Other2unread. Source frozen; publication/fullgoal pending."
+  "scope": "Japanese and EN/CN/TW/ES/KO/PT/FR/DE/ID/HI/RU whole revisions reviewed;11AI entries. Arabic unread. Source frozen; publication/fullgoal pending."
 }

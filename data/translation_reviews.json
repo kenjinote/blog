@@ -4425,6 +4425,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-036.json",
       "evidenceHash": "c9fa8f29b64fddf239bc90c83bd629ac49cccbdbc7643b5b61de8af2f0a1f4de"
+    },
+    "post/halting-problem/index.ru.md": {
+      "source": "post/halting-problem/index.md",
+      "reviewedAt": "2026-11-17",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "c0d63653b113e87427dd99c75a3b29cc9fa822699418fe67a1d856e42c451f12",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-036.json",
+      "evidenceHash": "895dbe0ff406e6ebd789f351a65b9b05d24dda603ee3a4b7e6e4fe06bc392948"
     }
   }
 }
