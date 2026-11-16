@@ -1,198 +1,233 @@
 ---
 title: "Masalah Penghentian (Halting Problem): Program Terkuat yang Mustahil Dibuat"
-date: "2026-09-24T19:44:38+09:00"
+date: "2026-09-14T00:00:51+09:00"
 image: "eyecatch-v2.png"
-date: 2026-09-14T00:00:51+09:00
-description: "Menjelaskan tentang Masalah Penghentian (Halting Problem), salah satu masalah tak terpecahkan yang paling terkenal (dan telah dibuktikan) dalam ilmu komputer. Penjelasan dibuat mudah dipahami menggunakan pembuktian melalui kontradiksi, contoh konkret yang intuitif, rumus matematika, dan diagram ilustrasi."
+description: "Mengapa tidak ada algoritma yang selalu benar dalam memutuskan apakah program sembarang berhenti pada masukan tertentu: pengodean, diagonalisasi, kuantor Collatz, syarat teorema Rice, serta batas analisis dan batas waktu."
 categories: ["computer-science", "theory-of-computation"]
 tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]
 slug: "halting-problem"
+math: true
+mermaid: true
+lastmod: "2026-11-17"
 ---
 
-Saat melakukan pemrograman, kita kadang merasa cemas, "Apakah program ini akan terjebak dalam infinite loop di suatu tempat?" Jika ada **sebuah alat yang dapat secara pasti menentukan apakah program apa pun akan mengalami infinite loop**, maka pengembangan dan debugging akan menjadi jauh lebih mudah secara drastis.
+Ketika sebuah program tidak kunjung selesai, kita mungkin bertanya apakah kita dapat mengetahui sebelumnya bahwa program itu akan berakhir. Untuk program tertentu, kita sering dapat membuktikan bahwa program tersebut berhenti atau tidak berhenti. Namun, tidak ada algoritma yang <strong>untuk semua program dan masukannya selalu berhenti sendiri serta memberikan jawaban yang benar</strong>.
 
-Namun, di bidang ilmu komputer, telah dibuktikan secara matematis bahwa alat impian semacam itu **"mustahil dibuat"**. Inilah yang dikenal sebagai **"[Masalah Penghentian (Halting Problem)](https://kenji.blog/id/p/halting-problem/)"**.
+Inilah <strong>sifat tak dapat diputuskan dari masalah penghentian</strong>. Artinya, tidak ada algoritma pemutus umum seperti itu. Ini merupakan hasil ketidakmungkinan yang sudah dibuktikan, bukan konjektur yang belum terpecahkan. Hasil ini juga tidak berarti bahwa kita tidak dapat memutuskan satu pun kasus tertentu.
 
-Artikel ini akan menjelaskan masalah yang dibuktikan oleh [Alan Turing](https://kenji.blog/id/p/turing/) pada tahun 1936 ini dengan cara yang mudah dipahami, menggunakan contoh konkret yang intuitif, rumus matematika (KaTeX), dan diagram (Mermaid).
+Kita menggunakan model komputasi deterministik yang mengikuti algoritma berhingga biasa, dengan ruang penyimpanan yang dapat bertambah sesuai kebutuhan. Mesin nyata yang berhenti karena baterai habis, proses dihentikan paksa, atau memori habis berbeda dari penghentian dalam model matematika ini.
 
-## Apa itu Masalah Penghentian?
+## 1. Selain program, masukannya juga harus ditetapkan
 
-Masalah Penghentian merujuk pada masalah berikut:
+Tuliskan deskripsi berhingga program $P$ sebagai $\langle P\rangle$, dan ambil masukan berupa string berhingga $x$. Simulator universal dapat membaca deskripsi itu sebagai data dan menirukan komputasi $P$ pada $x$.
 
-> Diberikan sembarang program komputer beserta inputnya, apakah ada algoritma umum yang dapat menentukan apakah program tersebut akan selesai (berhenti) dalam waktu yang terbatas, atau akan terus berjalan selamanya (infinite loop)?
-
-Jika hal ini memungkinkan, maka fungsi `Halt(P, I)` seperti berikut seharusnya bisa diimplementasikan:
-
-```python
-def Halt(P, I):
-    """
-    Ketika program P diberikan input I,
-    mengembalikan true jika berhenti,
-    mengembalikan false jika terjadi infinite loop.
-    """
-    # Algoritma universal impian...
-```
-
-Sekilas, kita mungkin merasa bisa membuatnya dengan melakukan analisis statis pada kode sumber atau mensimulasikan eksekusinya. Mari kita lihat beberapa contoh sederhana.
-
-### Contoh Konkret yang Intuitif
-
-**Contoh 1: Program yang Jelas Berhenti**
-
-```python
-def example1(x):
-    return x * 2
-```
-Program `example1` ini akan segera mengembalikan nilai dan berhenti, apa pun inputnya. Oleh karena itu, `Halt(example1, input)` seharusnya bernilai `true`.
-
-**Contoh 2: Program yang Jelas Mengalami Infinite Loop**
-
-```python
-def example2(x):
-    while True:
-        pass
-```
-Program `example2` ini tidak akan pernah keluar dari proses perulangan selamanya. Oleh karena itu, `Halt(example2, input)` seharusnya bernilai `false`.
-
-**Contoh 3: Program yang Sulit Ditentukan (Konjektur Collatz)**
-
-```python
-def collatz(n):
-    while n > 1:
-        if n % 2 == 0:
-            n = n // 2
-        else:
-            n = 3 * n + 1
-```
-Fungsi ini mengambil angka yang diberikan; jika genap dibagi dua, jika ganjil dikalikan tiga ditambah satu, dan terus mengulangi operasi tersebut hingga angkanya menjadi 1. Apakah program ini akan berhenti untuk semua bilangan bulat positif masih menjadi masalah matematika yang belum terpecahkan yang disebut "Konjektur Collatz". Jika fungsi `Halt` yang universal itu ada, maka bahkan masalah matematika yang belum terpecahkan pun dapat diselesaikan hanya dengan meneruskannya ke program tersebut.
-
-## Pembuktian dengan Rumus Matematika dan Kontradiksi
-
-Turing menggunakan **"Pembuktian melalui Kontradiksi (Proof by Contradiction)"** untuk membuktikan bahwa fungsi `Halt` yang universal itu tidak ada. Pembuktian melalui kontradiksi adalah metode pembuktian yang menunjukkan bahwa jika kita mengasumsikan suatu proposisi bernilai benar, maka akan muncul kontradiksi, sehingga disimpulkan bahwa asumsi awal tersebut salah.
-
-Untuk memulai pembuktian, pertama-tama kita asumsikan bahwa algoritma penentu universal $H$ itu ada. Fungsi $H(P, I)$ yang menerima program $P$ dan inputnya $I$ didefinisikan sebagai berikut:
+Masalah penghentian menanyakan keanggotaan dalam himpunan berikut:
 
 $$
-H(P, I) =
+\mathrm{HALT}
+=\{\langle P,x\rangle : P(x)\text{ berhenti dalam waktu berhingga}\}
+$$
+
+Jika algoritma pemutus total $H$ ada, algoritma itu harus mengembalikan salah satu nilai berikut dalam waktu berhingga untuk setiap deskripsi program yang sah dan setiap masukan:
+
+$$
+H(\langle P\rangle,x)=
 \begin{cases}
-\text{true} & (\text{Jika program } P \text{ berhenti pada masukan } I) \\
-\text{false} & (\text{Jika program } P \text{ berulang tanpa batas pada masukan } I)
+1 & P(x)\text{ berhenti}\\
+0 & P(x)\text{ tidak berhenti}
 \end{cases}
 $$
 
-Diasumsikan bahwa $H$ ini akan selalu mengembalikan `true` atau `false` dalam waktu terbatas untuk program dan input apa pun.
+Kita mensyaratkan <strong>dua hal sekaligus: $H$ selalu berhenti dan jawabannya selalu benar</strong>. String yang bukan deskripsi program sah dapat ditangani secara terpisah melalui pemeriksaan sintaksis.
 
-Selanjutnya, dengan menggunakan hasil dari $H$ ini, kita akan membuat sebuah program licik $D$ (Deceiver, si penipu). Program $D$ menerima program lain $X$ sebagai input dan berperilaku sebagai berikut:
+Jika komputasi berhenti, simulasi yang terus dijalankan pada akhirnya akan menunjukkan penghentiannya. Dalam arti ini, himpunan pasangan yang berhenti dapat dikenali (semidecidable). Akan tetapi, lamanya kita sudah menunggu tidak menentukan apakah komputasi yang masih berjalan akan selesai pada langkah berikutnya atau berlanjut selamanya.
+
+Eksekusi yang tidak berhenti kadang disebut “perulangan tak berhingga”, tetapi tidak harus mengulangi keadaan yang sama. Komputasi yang terus menaikkan pencacah dalam memori tak berbatas dapat memiliki konfigurasi lengkap yang berbeda pada setiap langkah.
+
+## 2. Contoh sederhana dan pengamatan dengan batas langkah
+
+### Contoh yang penghentiannya dapat dijelaskan
+
+Contoh Python yang dapat dijalankan berikut hanya menerima bilangan bulat dari tipe bawaan.
 
 ```python
-def D(X):
-    if H(X, X) == True:
-        while True:
-            pass  # Infinite loop
-    else:
-        return  # Berhenti
+def double_integer(x):
+    if type(x) is not int:
+        raise TypeError("x must be a built-in int")
+    return x * 2
+
+
+print(double_integer(3))
 ```
 
-Cara kerja program $D(X)$ adalah sebagai berikut:
-1. Menentukan sifat penghentian dari program $X$ ketika diberikan $X$ itu sendiri sebagai input menggunakan $H(X, X)$.
-2. Jika $H(X, X)$ bernilai `true` (artinya $X(X)$ berhenti), maka ia dengan sengaja melakukan **infinite loop**.
-3. Jika $H(X, X)$ bernilai `false` (artinya $X(X)$ mengalami infinite loop), maka ia dengan sengaja **berhenti**.
+Keluarannya:
 
-Inilah inti dari pembuktian tersebut. **Apa yang akan terjadi jika kita memberikan program $D$ itu sendiri sebagai input kepada program $D$ yang licik ini?** Dengan kata lain, mari kita pertimbangkan perilaku ketika $D(D)$ dieksekusi.
+```text
+6
+```
 
-Mari kita bagi menjadi dua kasus dan memikirkannya.
+Untuk setiap bilangan bulat berhingga sebagai masukan, operasi bilangan bulat yang diidealkan selesai dalam waktu berhingga. Ini tidak berarti bahwa waktu nyata atau penggunaan memori tidak bergantung pada ukuran masukan. Tipe dibatasi karena objek Python sembarang dapat mendefinisikan perkaliannya sendiri, sedangkan perkalian string menghasilkan string, bukan angka.
 
-### Kasus 1: Mengasumsikan $D(D)$ berhenti
+Sebaliknya, <strong>pseudokode</strong> berikut tidak berhenti dalam model tanpa interupsi dari luar:
 
-Jika kita berasumsi bahwa $D(D)$ berhenti, maka algoritma penentu $H(D, D)$ seharusnya mengembalikan `true`.
-Namun, melihat pada definisi $D$, jika $H(D, D)$ bernilai `true`, maka $D$ akan masuk ke `while True` dan mengalami **infinite loop**.
-Hal ini bertentangan dengan asumsi awal bahwa "$D(D)$ berhenti".
+```text
+Forever(x):
+    repeat forever:
+        do nothing
+```
 
-### Kasus 2: Mengasumsikan $D(D)$ mengalami infinite loop
+Kita dapat menjelaskan mengapa program ini tidak berhenti: alur kendalinya tidak pernah mencapai jalan keluar. Ketiadaan pemutus universal tidak menghalangi kita memutuskan contoh khusus seperti ini.
 
-Jika kita berasumsi bahwa $D(D)$ mengalami infinite loop, maka algoritma penentu $H(D, D)$ seharusnya mengembalikan `false`.
-Namun, melihat pada definisi $D$, jika $H(D, D)$ bernilai `false`, maka $D$ akan segera melakukan `return` dan **berhenti**.
-Hal ini bertentangan dengan asumsi awal bahwa "$D(D)$ mengalami infinite loop".
+### Mengamati sejumlah berhingga langkah Collatz
 
-### Kesimpulan
+Mulai dari bilangan bulat positif $n$, bagi dua jika genap, atau kalikan tiga lalu tambahkan satu jika ganjil, dan ulangi operasi tersebut. Konjektur Collatz menyatakan bahwa setiap bilangan bulat positif akhirnya mencapai satu.
 
-Ke arah mana pun kita melangkah, sebuah kontradiksi akan terjadi. Kontradiksi ini muncul karena asumsi awal kita, yaitu "terdapat algoritma penentu universal $H$", adalah salah.
+Program berikut mengamati proses itu sampai jumlah langkah maksimum yang ditentukan. <strong>Mencapai batas langkah tidak boleh ditafsirkan sebagai bukti bahwa komputasi tanpa batas tersebut tidak akan pernah berhenti.</strong>
 
-Oleh karena itu, telah terbukti bahwa **tidak ada algoritma universal yang dapat menentukan sifat penghentian dari sembarang program**.
+```python
+def collatz_bounded(n, max_steps):
+    if type(n) is not int or n < 1:
+        raise ValueError("n must be a positive built-in int")
+    if type(max_steps) is not int or max_steps < 0:
+        raise ValueError("max_steps must be a nonnegative built-in int")
 
-## Diagram Ilustrasi: Mekanisme Kontradiksi
+    steps = 0
+    while n != 1 and steps < max_steps:
+        n = n // 2 if n % 2 == 0 else 3 * n + 1
+        steps += 1
+    status = "reached_one" if n == 1 else "step_limit"
+    return status, steps, n
 
-Mari kita ilustrasikan logika pembuktian melalui kontradiksi ini menggunakan diagram Mermaid.
+
+print(collatz_bounded(6, 8))
+print(collatz_bounded(6, 7))
+print(collatz_bounded(1, 0))
+```
+
+Keluaran:
+
+```text
+('reached_one', 8, 1)
+('step_limit', 7, 2)
+('reached_one', 0, 1)
+```
+
+Program pengamatan ini sendiri selesai setelah paling banyak sejumlah berhingga iterasi yang ditentukan. Pertanyaan sebenarnya adalah apakah iterasi tanpa batas langkah mencapai satu. Sejumlah berhingga contoh yang berhasil tidak membuktikan klaim untuk semua bilangan bulat positif. Penelitian Tao memberikan hasil parsial penting, tetapi tidak membuktikan bahwa semua orbit mencapai satu.
+
+Dengan menuliskan pemetaan yang diiterasikan sebagai $\mathrm{Col}$, bentuk konjekturnya adalah
+
+$$
+\forall n\ge1\ \exists t\ge0\quad \mathrm{Col}^{t}(n)=1
+$$
+
+Memberikan suatu $n$ tertentu kepada $H$ hipotetis akan menghasilkan jawaban mengenai <strong>satu masukan itu</strong>. Pertanyaan totalitas “Apakah program berhenti untuk semua $n$?” tidak langsung sama dengan satu pertanyaan penghentian biasa. Kita tidak boleh menyimpulkan bahwa menyerahkan satu program dapat memutuskan sembarang pernyataan matematika.
+
+## 3. Program yang membalik jawaban
+
+Anggap ada algoritma $H$ yang selalu berhenti dan menjawab dengan benar untuk setiap deskripsi program yang sah dan setiap masukan.
+
+Program yang dideskripsikan oleh $s$ dapat menerima deskripsi yang sama, yaitu $s$, sebagai masukan. Kita hanya memperlakukan program sebagai data, tanpa harus menyisipkan kode sumber yang panjangnya tak berhingga.
+
+Dengan asumsi ini, kita membangun $D$:
+
+```text
+D(s):
+    if s is not a valid program description:
+        halt
+    if H(s, s) == 1:
+        repeat forever:
+            do nothing
+    else:
+        halt
+```
+
+Ini adalah <strong>pseudokode pembuktian yang memanggil $H$ hipotetis</strong>, bukan pemutus penghentian yang sudah diimplementasikan. Asumsi bahwa $H$ dapat dikomputasi dan selalu berakhir memungkinkan kita membangun $D$ dengan deskripsi berhingga.
+
+Misalkan $d=\langle D\rangle$ adalah deskripsi $D$, lalu pertimbangkan $D(d)$.
+
+| Jawaban pemutus | Maknanya jika pemutus benar | Perilaku yang ditentukan oleh definisi $D(d)$ |
+| :--- | :--- | :--- |
+| $H(d,d)=1$ | $D(d)$ berhenti | Mengulang selamanya |
+| $H(d,d)=0$ | $D(d)$ tidak berhenti | Langsung berhenti |
+
+Kedua jawaban bertentangan dengan kebenaran pemutus. Secara ringkas,
+
+$$
+D(d)\text{ berhenti}
+\iff H(d,d)=0
+\iff D(d)\text{ tidak berhenti}
+$$
+
+Jadi, $H$ yang diasumsikan total dan benar itu tidak ada.
+
+Kesimpulannya bukan bahwa semua program yang merujuk diri sendiri bersifat kontradiktif, atau bahwa logika runtuh. Yang dibantah oleh kontradiksi adalah <strong>asumsi bahwa pemutus penghentian universal ada</strong>.
+
+## 4. Mengikuti argumen diagonal melalui diagram
 
 ```mermaid
-graph TD
-    subgraph "Mesin Penentu H"
-        H{"Apa hasil dari H(X, X)?"}
-    end
-
-    subgraph "Program Jahat D"
-        START["Mulai D"] --> H
-        H -->|"true (berhenti)"| LOOP["Infinite loop"]
-        H -->|"false (Loop tanpa batas)"| HALT["Berhenti"]
-    end
-
-    %% Memasukkan D ke dalam D itu sendiri
-    INPUT_D[/"Input: D"/] --> START
-    
-    %% Sorotan Kontradiksi
-    LOOP -.->|"Kontradiksi dengan penentuan H (true)!"| FAIL_1(("Kontradiksi"))
-    HALT -.->|"Keputusan H (false) dan Kontradiksi!"| FAIL_2(("Kontradiksi"))
-    
-    style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
-    style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px
+flowchart TD
+    Input["d = deskripsi berhingga D"] --> Run["Berikan d sebagai masukan D"]
+    Run --> Test{"Jawaban H(d,d) yang diasumsikan ada"}
+    Test -->|"1: memprediksi berhenti"| Loop["D(d) mengulang selamanya"]
+    Test -->|"0: memprediksi tidak berhenti"| Stop["D(d) berhenti"]
+    Loop --> Wrong1["Bertentangan dengan kebenaran H"]
+    Stop --> Wrong2["Bertentangan dengan kebenaran H"]
+    Wrong1 --> Conclusion["Tidak ada H yang total dan benar"]
+    Wrong2 --> Conclusion
 ```
 
-Seperti yang dapat dilihat dari diagram, pada saat $D$ itu sendiri diberikan sebagai input, muncul sebuah loop (paradoks) di mana hasil penentuan dan tindakan yang sebenarnya berbalik arah, sehingga logikanya menjadi runtuh. Struktur ini sangat mirip dengan Paradoks Pembohong yang berbunyi, "Kalimat ini adalah kebohongan".
+Ini merupakan konstruksi diagonal: salah satu program yang seharusnya dicakup oleh pemutus tersebut membalik jawabannya. Kemiripannya dengan paradoks pembohong dapat membantu intuisi, tetapi pembuktian bertumpu pada pengodean deskripsi dan kemampuan membangun program secara efektif.
 
-## Sejarah Komputer dan Mesin Turing
+## 5. Makalah asli Turing dan model komputasi
 
-[Alan Turing](https://kenji.blog/id/p/turing/) mengajukan dan membuktikan masalah ini pada tahun 1936, di era ketika komputer elektronik modern seperti sekarang belum ada. Untuk mendefinisikan secara matematis dan ketat "apa itu komputasi?", ia merancang sebuah mesin virtual yang disebut **"Mesin Turing ([Turing Machine](https://kenji.blog/id/p/turing-machine-computability/))"**.
+Makalah [Alan Turing](/id/p/turing/) tahun 1936 menunjukkan sifat tak dapat diputuskan melalui mesin komputasi, deskripsi berkode, mesin universal, dan diagonalisasi. Namun, pembuktian bergaya Python dalam artikel ini tidak tercantum persis seperti itu dalam makalah aslinya.
 
-Mesin Turing terdiri dari sebuah pita yang tak terbatas panjangnya, sebuah head yang dapat membaca dan menulis informasi pada pita tersebut, serta tabel transisi status yang mengatur status mesin. Telah diketahui bahwa sekompleks apa pun program modern, secara teori program tersebut dapat disederhanakan ke dalam bentuk Mesin Turing. Hal ini disebut **"Tesis Church-Turing (Church-Turing Thesis)"**.
+Makalah asli menyebut mesin yang mengeluarkan tak berhingga banyak digit nol atau satu sebagai circle-free, dan mesin yang hanya mengeluarkan sejumlah berhingga digit tersebut sebagai circular. Kelompok kedua mencakup mesin yang berhenti maupun mesin yang terus melakukan operasi lain tanpa mengeluarkan digit lagi. Karena itu, menerjemahkannya hanya sebagai “tidak berhenti” dan “berhenti” tidak tepat. Bagian 8 juga membahas ketidakmungkinan memutuskan secara umum apakah mesin akan mencetak simbol tertentu pada suatu saat.
 
-Turing mencoba menarik garis batas antara "masalah yang dapat dihitung" dan "masalah yang tidak dapat dihitung" menggunakan model sederhana ini. Hasil penemuannya adalah Masalah Penghentian, yang merupakan representasi utama dari masalah-masalah yang tak dapat diputuskan (undecidable problems).
+Kita dapat menghubungkan kemunculan simbol dengan penghentian dengan membangun mesin yang menyimulasikan komputasi dan berhenti hanya jika simbol itu muncul. Di sini kita menggunakan rumusan modern yang lazim: <strong>penghentian program pada masukan yang tetap</strong>.
 
-## Hubungan Erat dengan [Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/)
+[Mesin Turing](/id/p/turing-machine-computability/) adalah model matematika dengan aturan berhingga dan pita yang dapat digunakan sesuai kebutuhan. Tesis Church–Turing menyatakan bahwa gagasan intuitif tentang “prosedur efektif yang dapat dijalankan secara mekanis” dicakup oleh komputabilitas formal semacam ini. Tesis tersebut berbeda dari teorema kesetaraan antara model yang didefinisikan secara formal. Ia juga bukan klaim yang telah dibuktikan tanpa syarat tentang semua fenomena fisik atau perangkat nyata.
 
-"Paradoks rujukan diri" yang menjadi akar pembuktian Masalah Penghentian memiliki kaitan yang sangat erat dengan **"Teorema Ketidaklengkapan (Incompleteness Theorems)"** yang dikemukakan oleh [Kurt Gödel](https://kenji.blog/id/p/godel/) pada tahun 1931, beberapa waktu sebelum Turing.
+## 6. Hubungan dengan ketidaklengkapan
 
-Teorema Ketidaklengkapan Pertama Gödel menyatakan bahwa, "Dalam sistem aksioma mana pun yang cukup kuat untuk mencakup aritmatika bilangan asli, pasti akan selalu ada proposisi benar yang tidak dapat dibuktikan maupun dibantah." Saat membuktikan teorema ini, Gödel menyusun proposisi rujukan diri secara matematis yang menyatakan, "Proposisi ini tidak dapat dibuktikan."
+[Teorema ketidaklengkapan Gödel](/id/p/godels-incompleteness-theorems/) berkaitan erat dengan batas komputabilitas. Namun, pernyataannya tidak berlaku tanpa syarat untuk setiap sistem aksioma yang “cukup kuat”. Aksiomatisasi efektif, kemampuan menyatakan aritmetika, konsistensi, dan asumsi lainnya penting. Kebenaran pada bilangan asli standar juga harus dibedakan dari keterbuktian dalam suatu teori.
 
-Program licik $D$ dalam Masalah Penghentian Turing melakukan rujukan diri dalam bentuk, "Jika mesin penentu $H$ memutuskan bahwa ia berhenti, maka lakukan infinite loop; namun jika mesin memutuskan ia mengalami infinite loop, maka berhentilah." Dengan kata lain, Masalah Penghentian dapat ditafsirkan sebagai **versi pemrograman dari Teorema Ketidaklengkapan** di panggung ilmu komputer. Dua pembuktian agung yang menunjukkan batas-batas logika ini menggunakan struktur paradoks yang sama.
+Salah satu cara melihat kaitannya dengan penghentian adalah mempertimbangkan teori yang bukti-buktinya dapat dienumerasi secara efektif dan yang <strong>hanya membuktikan pernyataan benar</strong> tentang berhenti atau tidak berhenti. Jika teori itu dapat membuktikan salah satunya untuk setiap program dan masukan tetap, kita dapat mencari kedua jenis bukti lalu memberikan jawaban sesuai bukti pertama yang ditemukan.
 
-## Makna Teorema Ini di Era Modern
+Hal itu bertentangan dengan sifat tak dapat diputuskan dari masalah penghentian. Jadi, bahkan teori yang benar secara semantik seperti itu tidak dapat menjawab semua pertanyaan penghentian. Penjelasan ini menggunakan asumsi kuat berupa kebenaran semantik (soundness). Ini bukan pernyataan tentang asumsi terlemah setiap teorema Gödel ataupun pembuktian lengkapnya.
 
-Fakta bahwa Masalah Penghentian bersifat "Tak Dapat Diputuskan (Undecidable)" membawa makna yang sangat penting, bahkan dalam rekayasa perangkat lunak modern.
+## 7. Teorema Rice dan analisis praktis
 
-### Perluasan ke Teorema Rice
+### Sifat masukan-keluaran yang tidak trivial
 
-Masalah Penghentian berkembang lebih jauh menjadi **"Teorema Rice (Rice's Theorem)"** yang lebih umum. Teorema Rice menyatakan bahwa, "Tidak ada algoritma umum yang dapat menentukan apakah suatu program memiliki sifat semantik yang tidak sepele (non-trivial)."
+Teorema Rice memberikan hasil umum tentang sifat tak dapat diputuskan untuk <strong>sifat ekstensional yang tidak trivial</strong> dari fungsi parsial yang dihitung program atau bahasa yang dikenali program.
 
-Singkatnya, bukan hanya soal apakah program akan mengalami infinite loop atau tidak, tetapi pertanyaan-pertanyaan berikut ini pada umumnya juga terbukti tidak dapat diputuskan:
-- "Apakah fungsi ini akan selalu mengembalikan nilai 0?"
-- "Apakah terdapat bug tertentu di dalam program ini?"
-- "Apakah sistem ini akan menyebabkan akses memori yang tidak sah?"
+“Ekstensional” berarti program yang memiliki perilaku masukan-keluaran sama juga sepakat mengenai sifat tersebut. “Tidak trivial” berarti ada objek yang dapat dikomputasi yang memiliki sifat itu dan ada yang tidak.
 
-### Kompromi di Dunia Praktis
+Sebagai contoh, “berhenti dan mengembalikan nol untuk semua masukan” adalah sifat tidak trivial dari fungsi parsial. Ini berbeda dari “jika berhenti, keluarannya selalu nol”. Program yang tidak berhenti pada masukan mana pun juga memenuhi kondisi kedua. Karena itu, ungkapan “selalu mengembalikan nol” tidak boleh dibiarkan ambigu.
 
-Hanya karena "secara umum tidak dapat dipecahkan", bukan berarti para insinyur perangkat lunak menyerah begitu saja.
-Kompiler modern, alat analisis kode statis, perangkat software antivirus pendeteksi malware, dan sejenisnya, memberikan manfaat praktis dengan melakukan kompromi-kompromi berikut:
+Ada pertanyaan tentang sintaksis atau representasi yang dapat diputuskan, misalnya jumlah keadaan yang dituliskan dalam deskripsi program. Teorema Rice juga tidak otomatis berlaku pada sifat langkah perantara eksekusi, seperti akses memori tertentu. Untuk membuktikan bahwa suatu masalah eksekusi tidak dapat diputuskan, modelnya harus ditetapkan dan reduksi yang tepat atau argumen lain harus diberikan.
 
-- **Heuristik**: Melepas kepastian 100%, lalu menyimpulkan "kemungkinan ini bug" atau "kemungkinan ini perilaku jahat" dari pola-pola yang sering muncul.
-- **Bahasa yang Dibatasi**: Menjamin tingkat keamanan tertentu dengan menggunakan bahasa atau sistem tipe yang tidak Turing-complete (contoh: di mana infinite loop sama sekali tidak bisa ditulis).
-- **Waktu Habis (Timeout)**: Jika komputasi tidak kunjung selesai setelah kurun waktu tertentu, maka eksekusi akan dihentikan secara paksa sebagai "timeout".
+### Membedakan jaminan, jawaban tidak diketahui, dan batas waktu
 
-## Kesimpulan
+Tidak adanya pemutus universal bukan berarti semua alat analisis hanya dapat menebak.
 
-Artikel ini telah menjelaskan **Masalah Penghentian** yang dibuktikan oleh Turing.
+- <strong>Analisis yang benar tetapi tidak lengkap</strong>: memberikan jaminan ketika hasil dapat dibuktikan, dan menjawab “tidak diketahui” untuk kasus lainnya. Peringatan dari analisis konservatif belum tentu menunjukkan cacat nyata.
+- <strong>Bahasa atau ranah masukan yang dibatasi</strong>: dapat memakai aturan yang menjamin terminasi atau pencarian menyeluruh pada ranah berhingga. Sekadar tidak lengkap secara Turing tidak menjamin bahwa semua program akan berhenti.
+- <strong>Heuristik dan pengujian</strong>: mencari dugaan cacat atau contoh penyangkal yang berguna, tetapi tidak menjamin kelengkapan di luar lingkup yang diperiksa.
+- <strong>Batas waktu</strong>: menghentikan penggunaan sumber daya, bukan membuktikan bahwa komputasi akan terus berjalan selamanya jika batasnya dihapus.
 
-- Tidak ada algoritma yang dapat memastikan apakah sembarang program akan berhenti dalam waktu terbatas.
-- Jika kita mengasumsikan adanya mesin penentu $H$, maka akan timbul kontradiksi yang disebabkan oleh program licik $D$ yang berlawanan dengan hasil penentuan tersebut (Pembuktian melalui Kontradiksi).
-- Teorema ini menunjukkan "batas-batas logika" yang dimiliki komputer, dan menjadi alasan mendasar mengapa alat pengembangan perangkat lunak modern masih membutuhkan "asumsi" dan "kompromi".
+Dalam sistem deterministik tertutup dengan sejumlah berhingga konfigurasi lengkap yang representasi dan transisinya dapat ditangani secara efektif, kita dapat mengikuti eksekusi sampai berhenti atau mengunjungi konfigurasi yang sudah pernah ditemui. Ini menunjukkan bahwa masalah tersebut dapat diputuskan secara matematis, bukan jaminan bahwa pencarian menyeluruh praktis dilakukan dalam batas waktu atau memori nyata. Argumen itu tidak langsung berlaku untuk sistem dengan masukan tak berbatas, interaksi eksternal, atau memori yang dapat bertambah.
 
-Karena alat analisis program yang sempurna secara matematis tidak mungkin dibuat, itulah sebabnya pengujian dan perancangan oleh pemrogram itu sendiri tetap menjadi sangat krusial hingga hari ini. Saat Anda menulis kode, jangan lupa untuk selalu menggunakan pikiran Anda sendiri guna mengantisipasi kemungkinan terjadinya infinite loop.
+## 8. Apa yang mustahil dan apa yang tetap dapat dilakukan
+
+Hasil tentang penghentian meniadakan algoritma umum yang, untuk sembarang program dan masukan, selalu berakhir dan selalu memilih jawaban yang benar dari dua kemungkinan.
+
+Pembuktian terminasi untuk program tertentu, pemeriksaan lengkap di bawah pembatasan yang sesuai, analisis yang benar tetapi mengizinkan jawaban “tidak diketahui”, dan pengujian berhingga tetap berguna serta tidak bertentangan dengan hasil ini. Yang penting adalah membedakan apakah jawaban alat merupakan “bukti”, “pengamatan”, “dugaan”, atau “tidak diketahui”.
+
+### Referensi
+
+- [Turing: On Computable Numbers, with an Application to the Entscheidungsproblem](https://theory.stanford.edu/~trevisan/cs172-07/turing36.pdf) — Salinan makalah asli yang disediakan universitas. Bagian 2 membedakan jenis mesin; bagian 8 membahas diagonalisasi dan kemunculan simbol; bagian 9 menafsirkan komputasi.
+- [MIT 6.045J: Mapping reducibility and Rice's theorem](https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/7aead2c728dd3d5a737d832811ef97e6_MIT6_045JS11_lec09.pdf) — Syarat teorema Rice serta perbedaan antara sifat bahasa dan sifat struktural atau operasional mesin.
+- [Sinclair: The Church-Turing Thesis](https://people.eecs.berkeley.edu/~sinclair/cs172/n4.pdf) — Tesis yang menghubungkan prosedur efektif intuitif dengan model formal.
+- [Tao: Almost all orbits of the Collatz map attain almost bounded values](https://arxiv.org/abs/1909.03562) — Hasil parsial tentang iterasi Collatz, bukan bukti bahwa semua bilangan bulat positif mencapai satu.
