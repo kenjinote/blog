@@ -616,8 +616,18 @@
       "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
       "reviewedTranslationsAdded": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-17",
+      "stage": "All13 final assembly",
+      "checks": "docs/translation-review/batch-036-final-checks.json",
+      "validation": "docs/translation-review/batch-036-final-validation.json",
+      "versions": 13,
+      "texExpressions": 415,
+      "proseFragments": 989,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and EN/CN/TW/ES/KO/PT/FR/DE/ID/HI/RU/AR whole revisions reviewed;12AI entries. All13 original/revised bodies read. Source frozen; publication/fullgoal pending."
+  "scope": "Japanese and all12 translations fully read and registered. Consolidated37bundle static preview passed for all13 halting versions,415TeX and989prose fragments. Publication/live checks and all-article goal remain pending."
 }

@@ -1,0 +1,231 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-17T01:14:52.829629+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ar",
+      "path": "content/post/halting-problem/index.ar.md",
+      "sha256": "d66249c7b0862c38d784f1dbc7e43ce4417bdd747a4bff6be3973177ab2a6b83",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 78,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "de",
+      "path": "content/post/halting-problem/index.de.md",
+      "sha256": "ed7452c5421d93ff2a9ff7ae341b6e8e5ff35c4a23e35ba86c4e1528da59270c",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 85,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "en",
+      "path": "content/post/halting-problem/index.en.md",
+      "sha256": "73da7bf52d9c1906716868d27fb10226f162b798ccb5d3881914cceac398ab4d",
+      "texExpressions": 31,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 84,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "es",
+      "path": "content/post/halting-problem/index.es.md",
+      "sha256": "76f40c4802d733283a30c8365446b9c040dd64fe4fca547c869486ddb88fa197",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 82,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "path": "content/post/halting-problem/index.fr.md",
+      "sha256": "cefb64deff4c4594415de825798779f142f9dcf7ac1094dac3aeab4a84bc0403",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 84,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "path": "content/post/halting-problem/index.hi.md",
+      "sha256": "8ac8fb3f139015463f4ce479ec594332bdf69e44069bc13b9f9352af1c900f5c",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 78,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "id",
+      "path": "content/post/halting-problem/index.id.md",
+      "sha256": "6475763903fbace2774268fb1bea61f2c66c2e8df432be651a126a00f8d6e009",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 85,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "path": "content/post/halting-problem/index.ko.md",
+      "sha256": "bbb6fe4ff8f609981c4f25e2e445664a907208a9f4b9eb493a0ff2fc7e021a72",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 65,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "ja",
+      "path": "content/post/halting-problem/index.md",
+      "sha256": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 63,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "path": "content/post/halting-problem/index.pt.md",
+      "sha256": "8a82df66867a61d61af91bc3e654f92ce447e64d2dc0bb640e0ff075a1483639",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 83,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "path": "content/post/halting-problem/index.ru.md",
+      "sha256": "c0d63653b113e87427dd99c75a3b29cc9fa822699418fe67a1d856e42c451f12",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 84,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "path": "content/post/halting-problem/index.zh-cn.md",
+      "sha256": "070b7f4d533089efa6d0427a569ac2a7e94ff4d9594be2d65c104001a522502a",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 58,
+      "strongSpansPreserved": 15,
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "path": "content/post/halting-problem/index.zh-tw.md",
+      "sha256": "8823100f840d1908433d09ba02e865782d7c1902df6ad51e1adf49b8a4942503",
+      "texExpressions": 32,
+      "displayMath": 4,
+      "diagrams": 1,
+      "diagramEdges": [
+        8
+      ],
+      "references": 4,
+      "pseudocodeBlocks": 2,
+      "articleExecutablePrograms": 2,
+      "proseFragmentsPreserved": 60,
+      "strongSpansPreserved": 15,
+      "passed": true
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "All13 exact reviewed versions in assembled37bundle static preview. Semantic reading remains separate; no browser/runtime/fullsite certification."
+}
