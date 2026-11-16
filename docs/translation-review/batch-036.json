@@ -454,6 +454,47 @@
         "Primary sources read only in documented selected sections/abstracts.",
         "Publication036 and complete all-article goal pending."
       ]
+    },
+    "post/halting-problem/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-17",
+      "reviewer": "Codex (AI)",
+      "source": "post/halting-problem/index.md",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "d66249c7b0862c38d784f1dbc7e43ce4417bdd747a4bff6be3973177ab2a6b83",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the entire original Arabic body, then the entire saved revision in two nontruncated chunks; separately read the final arbitrary-object wording correction. Compared every chapter with the frozen Japanese original. Corrected description conflating unsolved with proved undecidability, unrestricted multiplication, Collatz universal-input inference, diagram logic-collapse, unconditional incompleteness and guesses-only analysis conclusion. Original proof already requires finite-time H and rejects its existence; preserved these facts. Original introduction describes this article using modern tools, not Turing using them."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used عدم القابلية للتقرير خوارزمياً, خوارزمية تقرير كلية, قابلة لشبه التقرير, تهيئة كاملة and الخصائص الامتدادية غير التافهة with definitions. Distinguished الاتساق from السلامة الدلالية (soundness), step limits from timeouts. Replaced malicious/deceiver framing with constructive diagonal reasoning. Replaced initial draft random-object wording العشوائية with غير المقيدة بهذا النوع to accurately mean arbitrary unrestricted Python objects; reread the final sentence."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read32TeX expressions, four displays, both table cases and eight diagram arrows. Display formulas exactly equal Japanese structure after normalization of localized text annotations only. Preserved encoded HALT pairs, total correct H, forall-n exists-t Collatz and diagonal iff chain. Included valid finite descriptions, effective construction, sound proof enumeration, Rice extensional/nontrivial conditions, vacuous conditional zero output, and finite closed deterministic configuration restrictions. No theorem/Collatz proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read original five Python-labelled blocks and revised two executable examples, two outputs and two proof pseudocodes. Explicit arbitrary-input numeric-return claim corrected. Both Python hashes exactly match previously finite-tested Japanese programs. Never executed hypothetical H/D or infinite Forever. Static HTML preserves six code/text blocks, one graph/eight edges,15strong spans and78prose fragments. Arabic RTL document and compiled CSS LTR isolation for KaTeX/pre/highlight verified; no inline code isolates needed because there are no inline code spans. No browser execution or visual rendering claim."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed original misleading Halting Problem link targeting the Turing-machine article and duplicate author links; retained three accurately labelled Arabic references to Turing, Turing machines and incompleteness. Four primary references checked against generated HTML. Original title/slug/taxonomy preserved, duplicate date resolved to effective September14 publication and November17 modification. Canonical/14unique alternates/13sidebar targets verified. Fresh37bundle preview481posts+1tag,2087multilingual pages,HTTPS3801HTML/41XML passed; prior17tests referenced not rerun. Research remains selected primary sections/abstract only."
+        }
+      },
+      "summary": "Full Arabic halting-problem review against frozen Japanese, including precise decision/proof conditions, executable examples and practical-analysis guarantees.",
+      "languageSpecificFindings": "Corrected explicit unsolved/proven-unresolvable conflation and misleading Halting Problem link to Turing-machine page. Original proof already requires H to return in finite time and rejects its existence; only later diagram prose says logic collapses. Replaced malicious/deceiver framing, corrected arbitrary-input numeric return, theorem conditions and guesses-only conclusion. Arabic modern-tools introduction refers to this article, so no false historical attribution finding. Corrected arbitrary-object draft wording and verified RTL/LTR CSS statically.",
+      "validation": "docs/translation-review/batch-036-ar-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "All12 translations now read; consolidated final validation and publication remain pending.",
+        "Finite Python tests are prior exact-code evidence, not a general Collatz/halting theorem.",
+        "Static37bundle preview, no browser KaTeX/Mermaid execution or fullsite certification.",
+        "Primary sources read only in documented selected sections/abstracts.",
+        "Publication036 and complete all-article goal pending."
+      ]
     }
   },
   "stages": [
@@ -565,8 +606,18 @@
       "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
       "reviewedTranslationsAdded": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-17",
+      "stage": "Arabic original/revised whole-body comparison",
+      "validation": "docs/translation-review/batch-036-ar-validation.json",
+      "checks": "docs/translation-review/batch-036-ar-checks.json",
+      "translationHash": "d66249c7b0862c38d784f1dbc7e43ce4417bdd747a4bff6be3973177ab2a6b83",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "reviewedTranslationsAdded": 1,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and EN/CN/TW/ES/KO/PT/FR/DE/ID/HI/RU whole revisions reviewed;11AI entries. Arabic unread. Source frozen; publication/fullgoal pending."
+  "scope": "Japanese and EN/CN/TW/ES/KO/PT/FR/DE/ID/HI/RU/AR whole revisions reviewed;12AI entries. All13 original/revised bodies read. Source frozen; publication/fullgoal pending."
 }

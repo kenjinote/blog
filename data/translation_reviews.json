@@ -4435,6 +4435,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-036.json",
       "evidenceHash": "895dbe0ff406e6ebd789f351a65b9b05d24dda603ee3a4b7e6e4fe06bc392948"
+    },
+    "post/halting-problem/index.ar.md": {
+      "source": "post/halting-problem/index.md",
+      "reviewedAt": "2026-11-17",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "d66249c7b0862c38d784f1dbc7e43ce4417bdd747a4bff6be3973177ab2a6b83",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-036.json",
+      "evidenceHash": "18c60b28453bb815d8da64c8eef73e472c4387e1717c278366a3aa619559530d"
     }
   }
 }

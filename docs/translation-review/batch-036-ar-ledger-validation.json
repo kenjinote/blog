@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-17T01:13:58.553701+09:00",
+  "recordStdout": "Recorded ai review: post/halting-problem/index.ar.md\n",
+  "ledgerStdout": "{\"current\": 444, \"unreviewed\": 12588}\n",
+  "priorEntriesUnchanged": 443,
+  "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+  "translationHash": "d66249c7b0862c38d784f1dbc7e43ce4417bdd747a4bff6be3973177ab2a6b83",
+  "newAiReviews": 1,
+  "humanReviews": 0,
+  "publicationPending": true
+}
