@@ -1,9 +1,8 @@
 ---
 title: "Das Halteproblem (Halting Problem): Das stärkste Programm, das absolut unmöglich zu erschaffen ist"
-date: "2026-09-24T19:44:38+09:00"
+date: "2026-09-14T00:00:51+09:00"
 image: "eyecatch-v2.png"
-date: 2026-09-14T00:00:51+09:00
-description: "Wir erklären das Halteproblem, eines der berühmtesten ungelösten (aber als unlösbar bewiesenen) Probleme in der Informatik. Eine leicht verständliche Erklärung mit einem Beweis durch Widerspruch, intuitiven Beispielen, mathematischen Formeln und Diagrammen."
+description: "Warum kein Algorithmus für jedes Programm und jede Eingabe stets korrekt entscheiden kann, ob die Berechnung hält: Kodierung, Diagonalisierung, Quantoren der Collatz-Vermutung, Voraussetzungen des Satzes von Rice und Grenzen von Analyse und Zeitlimits."
 categories: ["computer-science", "theory-of-computation"]
 tags:
   - "Halting Problem"
@@ -11,191 +10,228 @@ tags:
   - "Algorithm"
   - "Mathematics"
 slug: "halting-problem"
+math: true
+mermaid: true
+lastmod: "2026-11-17"
 ---
 
-Beim Programmieren macht man sich oft Sorgen: „Könnte dieses Programm irgendwo in eine Endlosschleife geraten?“ Wenn es ein **Tool gäbe, das zuverlässig bestimmen könnte, ob ein beliebiges Programm in eine Endlosschleife gerät**, würde das die Entwicklung und das Debugging drastisch vereinfachen.
+Wenn ein Programm nicht fertig wird, liegt die Frage nahe, ob sich seine Terminierung schon vor der Ausführung feststellen ließe. Für einzelne Programme können wir oft beweisen, dass sie terminieren oder nicht terminieren. Es gibt jedoch keinen Algorithmus, der <strong>für alle Programme und Eingaben selbst terminiert und stets die richtige Antwort liefert</strong>.
 
-In der Informatik ist jedoch mathematisch bewiesen, dass ein solches Traum-Tool **„absolut unmöglich zu erschaffen“** ist. Dies ist das berühmte **„[Halteproblem](https://kenji.blog/de/p/turing-machine-computability/)“** ([Halting Problem](https://kenji.blog/de/p/turing-machine-computability/)).
+Das ist die <strong>Unentscheidbarkeit des Halteproblems</strong>. Sie ist ein bewiesenes Unmöglichkeitsergebnis, keine noch offene Vermutung. Daraus folgt nicht, dass sich kein einziger konkreter Fall entscheiden ließe.
 
-In diesem Artikel erklären wir dieses Problem, das 1936 von [Alan Turing](https://kenji.blog/de/p/turing/) bewiesen wurde, verständlich anhand von intuitiven Beispielen, mathematischen Formeln (KaTeX) und Diagrammen (Mermaid).
+Wir betrachten ein deterministisches Rechenmodell mit einem gewöhnlichen endlichen Algorithmus und einem Speicher, der bei Bedarf wachsen kann. Dass ein reales Gerät wegen eines leeren Akkus, eines erzwungenen Prozessabbruchs oder Speichermangels stoppt, ist vom Halten in diesem mathematischen Modell zu unterscheiden.
 
-## Was ist das [Halteproblem](https://kenji.blog/de/p/turing-machine-computability/)?
+## 1. Neben dem Programm muss auch die Eingabe feststehen
 
-Das Halteproblem bezieht sich auf folgende Frage:
+Die endliche Beschreibung eines Programms $P$ schreiben wir als $\langle P\rangle$; die Eingabe $x$ ist eine endliche Zeichenfolge. Ein universeller Simulator kann diese Beschreibung als Daten lesen und die Berechnung von $P$ mit $x$ nachvollziehen.
 
-> Gibt es einen allgemeinen Algorithmus, der für ein beliebiges Computerprogramm und dessen Eingabe bestimmt, ob das Programm nach einer endlichen Zeit beendet wird (hält) oder ob es ewig weiterläuft (in einer Endlosschleife feststeckt)?
-
-Wäre dies möglich, so müsste sich eine Funktion `Halt(P, I)` wie folgt implementieren lassen:
-
-```python
-def Halt(P, I):
-    """
-    Gibt true zurück, wenn das Programm P mit der Eingabe I anhält.
-    Gibt false zurück, wenn es in eine Endlosschleife gerät.
-    """
-    # Der Traum eines universellen Algorithmus...
-```
-
-Auf den ersten Blick könnte man meinen, dies ließe sich durch statische Code-Analyse oder durch Simulieren der Ausführung erreichen. Schauen wir uns einfache Beispiele an.
-
-### Intuitive Beispiele
-
-**Beispiel 1: Ein Programm, das offensichtlich anhält**
-
-```python
-def example1(x):
-    return x * 2
-```
-Dieses Programm `example1` gibt unabhängig von der Eingabe sofort eine Zahl zurück und hält an. Daher sollte `Halt(example1, input)` den Wert `true` zurückgeben.
-
-**Beispiel 2: Ein Programm, das offensichtlich in eine Endlosschleife gerät**
-
-```python
-def example2(x):
-    while True:
-        pass
-```
-Dieses Programm `example2` wird die Schleife niemals verlassen. Daher sollte `Halt(example2, input)` den Wert `false` zurückgeben.
-
-**Beispiel 3: Ein Programm, das schwer zu beurteilen ist (Collatz-Problem)**
-
-```python
-def collatz(n):
-    while n > 1:
-        if n % 2 == 0:
-            n = n // 2
-        else:
-            n = 3 * n + 1
-```
-Diese Funktion wiederholt den Vorgang, eine gerade Zahl zu halbieren oder eine ungerade Zahl zu verdreifachen und eins zu addieren, bis das Ergebnis 1 ist. Ob dieses Programm für jede positive ganze Zahl anhält, ist ein ungelöstes mathematisches Problem, das als "Collatz-Problem" oder "Collatz-Vermutung" bekannt ist. Gäbe es eine universelle `Halt`-Funktion, ließe sich selbst solch ein ungelöstes mathematisches Problem einfach dadurch lösen, dass man das Programm an die Funktion übergibt.
-
-## Beweis durch Widerspruch mit mathematischen Formeln
-
-Turing bewies die Nichtexistenz einer universellen `Halt`-Funktion mithilfe eines **Beweises durch Widerspruch** (Proof by Contradiction). Bei dieser Beweismethode nimmt man an, dass eine bestimmte Aussage wahr ist, und zeigt, dass diese Annahme zu einem logischen Widerspruch führt. Daraus folgert man, dass die ursprüngliche Annahme falsch gewesen sein muss.
-
-Um den Beweis zu beginnen, nehmen wir zunächst an, dass es einen universellen Entscheidungsalgorithmus $H$ gibt. Die Funktion $H(P, I)$, die das Programm $P$ und dessen Eingabe $I$ empfängt, ist wie folgt definiert:
+Das Halteproblem fragt nach der Zugehörigkeit zur Menge
 
 $$
-H(P, I) =
+\mathrm{HALT}
+=\{\langle P,x\rangle : P(x)\text{ hält nach endlich vielen Schritten}\}
+$$
+
+Gäbe es einen totalen Entscheidungsalgorithmus $H$, müsste er für jede gültige Programmbeschreibung und jede Eingabe in endlicher Zeit einen der folgenden Werte liefern:
+
+$$
+H(\langle P\rangle,x)=
 \begin{cases}
-\text{true} & (\text{wenn Programm } P \text{ mit Eingabe } I \text{ anhält}) \\
-\text{false} & (\text{wenn Programm } P \text{ mit Eingabe } I \text{ in einer Endlosschleife läuft})
+1 & P(x)\text{ hält}\\
+0 & P(x)\text{ hält nicht}
 \end{cases}
 $$
 
-Wir nehmen an, dass dieses $H$ für jedes beliebige Programm und jede Eingabe nach einer endlichen Zeit garantiert `true` oder `false` zurückgibt.
+Wir verlangen <strong>sowohl, dass $H$ immer terminiert, als auch, dass seine Antwort immer richtig ist</strong>. Zeichenfolgen, die keine gültige Beschreibung darstellen, lassen sich durch eine Syntaxprüfung gesondert behandeln.
 
-Als Nächstes nutzen wir das Ergebnis dieses $H$, um ein böswilliges Programm $D$ (Deceiver, der Täuscher) zu erstellen. Das Programm $D$ nimmt ein anderes Programm $X$ als Eingabe und verhält sich wie folgt:
+Wenn eine Berechnung hält, wird eine fortgesetzte Simulation dieses Ende irgendwann zeigen. Die Menge der haltenden Paare ist in diesem Sinne semientscheidbar. Allein aus der bisherigen Wartezeit folgt aber nicht, ob eine noch laufende Berechnung im nächsten Schritt endet oder unendlich weiterläuft.
+
+Nichtterminierung wird manchmal als „Endlosschleife“ bezeichnet, obwohl dabei nicht zwingend derselbe Zustand wiederkehrt. Eine Berechnung, die in einem unbeschränkten Speicher fortlaufend einen Zähler erhöht, kann bei jedem Schritt eine andere vollständige Konfiguration haben.
+
+## 2. Einfache Beispiele und Beobachtungen mit einer Schrittgrenze
+
+### Ein Beispiel mit erklärbarer Terminierung
+
+Das folgende ausführbare Python-Beispiel akzeptiert nur ganze Zahlen des eingebauten Typs.
 
 ```python
-def D(X):
-    if H(X, X) == True:
-        while True:
-            pass  # Endlosschleife
-    else:
-        return  # Anhalten
+def double_integer(x):
+    if type(x) is not int:
+        raise TypeError("x must be a built-in int")
+    return x * 2
+
+
+print(double_integer(3))
 ```
 
-Das Verhalten des Programms $D(X)$ ist wie folgt:
-1. Es verwendet $H(X, X)$, um zu überprüfen, ob das Programm $X$ anhält, wenn man ihm sich selbst ($X$) als Eingabe übergibt.
-2. Wenn $H(X, X)$ den Wert `true` zurückgibt (d. h. $X(X)$ hält an), geht $D$ absichtlich in eine **Endlosschleife**.
-3. Wenn $H(X, X)$ den Wert `false` zurückgibt (d. h. $X(X)$ läuft in einer Endlosschleife), **hält** $D$ absichtlich an.
+Die Ausgabe lautet:
 
-Jetzt kommt der Kern des Beweises. **Was passiert, wenn wir diesem böswilligen Programm $D$ als Eingabe sich selbst, also $D$, übergeben?** Wir betrachten das Verhalten, wenn $D(D)$ ausgeführt wird.
+```text
+6
+```
 
-Lassen Sie uns die Fälle durchgehen.
+Für jede endliche ganze Zahl als Eingabe endet die idealisierte Ganzzahloperation in endlicher Zeit. Das bedeutet nicht, dass die tatsächliche Laufzeit oder der Speicherbedarf von der Eingabegröße unabhängig wären. Die Typbeschränkung ist nötig, weil beliebige Python-Objekte ihre Multiplikation selbst definieren können und die Multiplikation einer Zeichenfolge eine Zeichenfolge statt einer Zahl liefert.
 
-### Fall 1: Annahme, dass $D(D)$ anhält
+Dagegen hält dieser <strong>Pseudocode</strong> in einem Modell ohne äußere Unterbrechung nicht an:
 
-Wenn wir annehmen, dass $D(D)$ anhält, sollte der Entscheidungsalgorithmus $H(D, D)$ den Wert `true` zurückgeben.
-Betrachtet man jedoch die Definition von $D$, so gerät $D$ in eine `while True`-**Endlosschleife**, wenn $H(D, D)$ `true` ist.
-Dies widerspricht der Annahme, dass „$D(D)$ anhält“.
+```text
+Forever(x):
+    repeat forever:
+        do nothing
+```
 
-### Fall 2: Annahme, dass $D(D)$ in einer Endlosschleife läuft
+Die Nichtterminierung lässt sich erklären, weil der Kontrollfluss keinen Ausgang erreicht. Dass es keinen universellen Entscheider gibt, verhindert also nicht die Entscheidung solcher Einzelfälle.
 
-Wenn wir annehmen, dass $D(D)$ in einer Endlosschleife läuft, sollte der Entscheidungsalgorithmus $H(D, D)$ den Wert `false` zurückgeben.
-Betrachtet man jedoch die Definition von $D$, so führt $D$ sofort ein `return` aus und **hält an**, wenn $H(D, D)$ `false` ist.
-Dies widerspricht der Annahme, dass „$D(D)$ in einer Endlosschleife läuft“.
+### Endlich viele Collatz-Schritte beobachten
 
-### Schlussfolgerung
+Ausgehend von einer positiven ganzen Zahl $n$ halbiert man sie, wenn sie gerade ist, oder verdreifacht sie und addiert eins, wenn sie ungerade ist. Dies wird wiederholt. Die Collatz-Vermutung besagt, dass jede positive ganze Zahl irgendwann eins erreicht.
 
-In beiden Fällen entsteht ein Widerspruch. Dieser Widerspruch ist entstanden, weil unsere anfängliche Annahme, dass „ein universeller Entscheidungsalgorithmus $H$ existiert“, falsch war.
+Das folgende Programm beobachtet den Vorgang bis zu einer festgelegten Höchstzahl von Schritten. <strong>Das Erreichen der Schrittgrenze darf nicht als Beweis dafür gelten, dass die unbeschränkte Berechnung niemals hält.</strong>
 
-Daher ist bewiesen, dass **es keinen universellen Algorithmus gibt, der für ein beliebiges Programm bestimmt, ob es anhält**.
+```python
+def collatz_bounded(n, max_steps):
+    if type(n) is not int or n < 1:
+        raise ValueError("n must be a positive built-in int")
+    if type(max_steps) is not int or max_steps < 0:
+        raise ValueError("max_steps must be a nonnegative built-in int")
 
-## Diagramm: Die Mechanik des Widerspruchs
+    steps = 0
+    while n != 1 and steps < max_steps:
+        n = n // 2 if n % 2 == 0 else 3 * n + 1
+        steps += 1
+    status = "reached_one" if n == 1 else "step_limit"
+    return status, steps, n
 
-Lassen Sie uns die Logik dieses Beweises durch Widerspruch mithilfe von Mermaid visualisieren.
+
+print(collatz_bounded(6, 8))
+print(collatz_bounded(6, 7))
+print(collatz_bounded(1, 0))
+```
+
+Ausgabe:
+
+```text
+('reached_one', 8, 1)
+('step_limit', 7, 2)
+('reached_one', 0, 1)
+```
+
+Dieses Beobachtungsprogramm selbst endet nach höchstens der angegebenen endlichen Zahl von Iterationen. Die eigentliche Frage ist, ob die Iteration ohne Schrittgrenze eins erreicht. Endlich viele erfolgreiche Beispiele beweisen die Aussage nicht für alle positiven ganzen Zahlen. Taos Forschung liefert ein wichtiges Teilergebnis, aber keinen Beweis dafür, dass alle Bahnen eins erreichen.
+
+Schreiben wir $\mathrm{Col}$ für die iterierte Abbildung, hat die Vermutung die Form
+
+$$
+\forall n\ge1\ \exists t\ge0\quad \mathrm{Col}^{t}(n)=1
+$$
+
+Würde man dem hypothetischen $H$ ein bestimmtes $n$ übergeben, erhielte man eine Antwort für <strong>diese eine Eingabe</strong>. Die Totalitätsfrage „Hält das Programm für alle $n$?“ ist nicht unmittelbar dasselbe wie eine einzige gewöhnliche Halteanfrage. Daraus darf man nicht folgern, dass die Übergabe eines Programms jede beliebige mathematische Aussage entscheiden könnte.
+
+## 3. Ein Programm, das die Antwort umkehrt
+
+Nehmen wir an, es gebe einen Algorithmus $H$, der stets terminiert und für jede gültige Programmbeschreibung und jede Eingabe richtig antwortet.
+
+Ein durch $s$ beschriebenes Programm kann dieselbe Beschreibung $s$ als Eingabe erhalten. Dabei wird ein Programm lediglich als Daten behandelt; ein unendlich langer Quelltext muss nicht eingebettet werden.
+
+Unter dieser Annahme konstruieren wir $D$:
+
+```text
+D(s):
+    if s is not a valid program description:
+        halt
+    if H(s, s) == 1:
+        repeat forever:
+            do nothing
+    else:
+        halt
+```
+
+Dies ist <strong>Beweispseudocode, der das hypothetische $H$ aufruft</strong>, kein bereits implementierter Halteentscheider. Weil wir annehmen, dass $H$ berechenbar ist und stets terminiert, können wir dieses $D$ mit einer endlichen Beschreibung konstruieren.
+
+Sei $d=\langle D\rangle$ die Beschreibung von $D$. Betrachten wir $D(d)$.
+
+| Antwort des Entscheiders | Bedeutung bei einem korrekten Entscheider | Durch die Definition festgelegtes Verhalten von $D(d)$ |
+| :--- | :--- | :--- |
+| $H(d,d)=1$ | $D(d)$ hält | Unendlich wiederholen |
+| $H(d,d)=0$ | $D(d)$ hält nicht | Sofort halten |
+
+Beide Antworten widersprechen der Korrektheit. Kurz geschrieben:
+
+$$
+D(d)\text{ hält}
+\iff H(d,d)=0
+\iff D(d)\text{ hält nicht}
+$$
+
+Das angenommene totale und korrekte $H$ existiert daher nicht.
+
+Die Schlussfolgerung lautet weder, dass alle selbstreferenziellen Programme widersprüchlich sind, noch, dass die Logik zerbricht. Widerlegt wird <strong>die Annahme, dass ein universeller Halteentscheider existiert</strong>.
+
+## 4. Das Diagonalargument im Diagramm
 
 ```mermaid
-graph TD
-    subgraph "Entscheidungsmaschine H"
-        H{"Was ist das Ergebnis\nvon H(X, X)?"}
-    end
-
-    subgraph "Böswilliges Programm D"
-        START["Starte D"] --> H
-        H -->|"true (Hält an)"| LOOP["Endlosschleife"]
-        H -->|"false (Endlosschleife)"| HALT["Hält an"]
-    end
-
-    %% D selbst als Eingabe an D übergeben
-    INPUT_D[/"Eingabe: D"/] --> START
-    
-    %% Hervorhebung des Widerspruchs
-    LOOP -.->|"Widerspricht H's Entscheidung (true)!"| FAIL_1(("Widerspruch"))
-    HALT -.->|"Widerspricht H's Entscheidung (false)!"| FAIL_2(("Widerspruch"))
-    
-    style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
-    style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px
+flowchart TD
+    Input["d = endliche Beschreibung von D"] --> Run["D erhält d als Eingabe"]
+    Run --> Test{"Antwort des angenommenen H(d,d)"}
+    Test -->|"1: sagt Halten voraus"| Loop["D(d) wiederholt unendlich"]
+    Test -->|"0: sagt Nichthalten voraus"| Stop["D(d) hält"]
+    Loop --> Wrong1["Widerspricht der Korrektheit von H"]
+    Stop --> Wrong2["Widerspricht der Korrektheit von H"]
+    Wrong1 --> Conclusion["Kein totales und korrektes H existiert"]
+    Wrong2 --> Conclusion
 ```
 
-Wie das Diagramm zeigt, entsteht in dem Moment, in dem $D$ sich selbst als Eingabe erhält, eine Schleife der Inversion zwischen Entscheidung und tatsächlicher Handlung (ein Paradoxon), woran die Logik zerbricht. Es hat eine Struktur, die dem Lügner-Paradoxon („Dieser Satz ist eine Lüge“) sehr ähnlich ist.
+Dies ist eine Diagonalkonstruktion: Eines der Programme, die der vorgeschlagene Entscheider erfassen soll, kehrt dessen Antwort um. Die Ähnlichkeit mit dem Lügnerparadoxon kann die Intuition unterstützen. Den Beweis tragen jedoch die Kodierung der Beschreibungen und die effektive Konstruktion von Programmen.
 
-## Die Geschichte des Computers und die Turingmaschine
+## 5. Turings Originalarbeit und Rechenmodelle
 
-Als [Alan Turing](https://kenji.blog/de/p/turing/) dieses Problem 1936 aufwarf und bewies, gab es noch keine elektronischen Rechenmaschinen (Computer) wie heute. Um die Frage „Was ist Berechnung?“ mathematisch exakt zu definieren, erfand er eine fiktive Maschine, die **„Turingmaschine“** ([Turing Machine](https://kenji.blog/de/p/turing-machine-computability/)).
+[Alan Turings](/de/p/turing/) Arbeit von 1936 zeigte Unentscheidbarkeit mithilfe von Rechenmaschinen, kodierten Beschreibungen, einer universellen Maschine und Diagonalisierung. Der hier verwendete Beweis in einer Python-ähnlichen Form steht nicht wörtlich so im Original.
 
-Eine Turingmaschine besteht aus einem unendlich langen Band, einem Schreib-Lese-Kopf, der Informationen auf dem Band liest und schreibt, und einer [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangstabelle, die den Zustand der Maschine verwaltet. Es ist bekannt, dass selbst die komplexesten modernen Programme theoretisch auf diese Turingmaschine reduziert werden können. Dies wird als **„Church-Turing-These“** (Church-Turing Thesis) bezeichnet.
+Die Originalarbeit nennt eine Maschine circle-free, wenn sie unendlich viele Ziffern, Nullen oder Einsen, ausgibt, und circular, wenn sie nur endlich viele solcher Ziffern ausgibt. Zur zweiten Kategorie gehören sowohl haltende Maschinen als auch Maschinen, die mit anderen Operationen fortfahren, ohne weitere Ziffern auszugeben. Diese Begriffe einfach mit „hält nicht“ und „hält“ zu übersetzen, wäre deshalb falsch. Abschnitt 8 behandelt auch die Unmöglichkeit, allgemein zu entscheiden, ob eine Maschine irgendwann ein bestimmtes Zeichen ausgibt.
 
-Turing nutzte dieses einfache Modell, um zu versuchen, eine Grenze zwischen „berechenbaren Problemen“ und „unberechenbaren Problemen“ zu ziehen. Das [Halteproblem](https://kenji.blog/de/p/turing-machine-computability/), als Paradebeispiel für ein unentscheidbares Problem, war das Resultat dieser Entdeckung.
+Man kann die Zeichenausgabe mit dem Halten verknüpfen, indem man eine Maschine konstruiert, die die Berechnung simuliert und nur dann hält, wenn das Zeichen erscheint. Hier verwenden wir die heute übliche Formulierung: <strong>das Halten eines Programms bei einer festen Eingabe</strong>.
 
-## Tiefe Verbindung zu [Gödels Unvollständigkeitssätze](https://kenji.blog/de/p/godels-incompleteness-theorems/)n
+Eine [Turingmaschine](/de/p/turing-machine-computability/) ist ein mathematisches Modell mit endlich vielen Regeln und einem nach Bedarf nutzbaren Band. Die Church–Turing-These besagt, dass der intuitive Begriff eines „mechanisch ausführbaren effektiven Verfahrens“ durch eine solche formale Berechenbarkeit erfasst wird. Sie ist von Äquivalenzsätzen zwischen formal definierten Modellen zu unterscheiden. Sie ist auch keine bedingungslos bewiesene Aussage über sämtliche physikalischen Vorgänge oder realen Geräte.
 
-Das „Paradoxon der Selbstreferenz“, das dem Beweis des [Halteproblem](https://kenji.blog/de/p/turing-machine-computability/)s zugrunde liegt, hat eine tiefe Verbindung zu den **„Unvollständigkeitssätzen“** (Incompleteness Theorems), die [Kurt Gödel](https://kenji.blog/de/p/godel/) kurz vor Turing im Jahr 1931 veröffentlichte.
+## 6. Der Zusammenhang mit Unvollständigkeit
 
-Gödels Erster Unvollständigkeitssatz besagt: „In jedem hinreichend starken Axiomensystem, das die Zahlentheorie umfasst, gibt es immer wahre Aussagen, die weder bewiesen noch widerlegt werden können.“ Um dieses Theorem zu beweisen, konstruierte Gödel mathematisch eine selbstreferenzielle Aussage der Form „Diese Aussage ist nicht beweisbar“.
+[Gödels Unvollständigkeitssätze](/de/p/godels-incompleteness-theorems/) hängen eng mit den Grenzen der Berechenbarkeit zusammen. Sie sind aber keine voraussetzungslosen Aussagen über jedes „hinreichend starke Axiomensystem“. Effektive Axiomatisierung, die Stärke zur Darstellung von Arithmetik, Widerspruchsfreiheit und weitere Annahmen sind wichtig. Wahrheit in den Standardnaturzahlen ist außerdem von Beweisbarkeit innerhalb einer Theorie zu unterscheiden.
 
-Das böswillige Programm $D$ in Turings [Halteproblem](https://kenji.blog/de/p/turing-machine-computability/) nutzt Selbstreferenz in der Form: „Wenn die Entscheidungsmaschine $H$ feststellt, dass es anhält, geht es in eine Endlosschleife; wenn sie feststellt, dass es in eine Endlosschleife geht, hält es an.“ Das Halteproblem kann somit als die **Programmier-Version des Unvollständigkeitssatzes** auf der Bühne der Informatik interpretiert werden. Diese beiden großen Beweise, die die Grenzen der Logik aufzeigen, teilen dieselbe paradoxe Struktur.
+Ein Zugang zum Zusammenhang mit dem Halteproblem ist eine Theorie, deren Beweise effektiv aufgezählt werden können und die über Halten und Nichthalten <strong>nur wahre Aussagen beweist</strong>. Könnte sie für jedes Programm und jede feste Eingabe entweder Halten oder Nichthalten beweisen, ließen sich beide Arten von Beweisen suchen und beim ersten gefundenen Beweis die entsprechende Antwort ausgeben.
 
-## Welche Bedeutung dieses Theorem heute hat
+Das würde der Unentscheidbarkeit des Halteproblems widersprechen. Selbst eine solche korrekte Theorie kann daher nicht alle Haltefragen entscheiden. Diese Erklärung verwendet die starke Voraussetzung semantischer Korrektheit. Sie gibt weder die schwächsten Voraussetzungen der einzelnen Sätze Gödels noch deren vollständige Beweise an.
 
-Die Tatsache, dass das Halteproblem „unentscheidbar“ (Undecidable) ist, hat auch in der modernen Softwaretechnik eine enorme Bedeutung.
+## 7. Der Satz von Rice und praktische Analyse
 
-### Erweiterung zum Satz von Rice
+### Nichttriviale Eigenschaften des Eingabe-Ausgabe-Verhaltens
 
-Das Halteproblem wurde zu dem noch allgemeineren **„Satz von Rice“** (Rice's Theorem) erweitert. Der Satz von Rice besagt, dass „es keinen allgemeinen Algorithmus gibt, der entscheidet, ob ein Programm eine nicht-triviale semantische Eigenschaft besitzt“.
+Der Satz von Rice liefert ein allgemeines Unentscheidbarkeitsergebnis für <strong>nichttriviale extensionale Eigenschaften</strong> der von einem Programm berechneten partiellen Funktion oder der von ihm erkannten Sprache.
 
-Das bedeutet, dass nicht nur die Frage, ob ein Programm in eine Endlosschleife gerät, unentscheidbar ist, sondern im Allgemeinen auch Fragen wie die folgenden:
-- „Gibt diese Funktion immer 0 zurück?“
-- „Gibt es in diesem Programm einen bestimmten Bug?“
-- „Verursacht dieses System einen ungültigen Speicherzugriff?“
+„Extensional“ bedeutet, dass Programme mit demselben Eingabe-Ausgabe-Verhalten hinsichtlich der Eigenschaft übereinstimmen. „Nichttrivial“ bedeutet, dass es sowohl berechenbare Objekte mit dieser Eigenschaft als auch solche ohne sie gibt.
 
-### Kompromisse in der Praxis
+Zum Beispiel ist „hält für jede Eingabe und gibt null zurück“ eine nichttriviale Eigenschaft einer partiellen Funktion. Sie unterscheidet sich von „wenn das Programm hält, ist seine Ausgabe immer null“. Die zweite Bedingung erfüllt auch ein Programm, das bei keiner Eingabe hält. Deshalb sollte „gibt immer null zurück“ nicht mehrdeutig bleiben.
 
-Nur weil es „im Allgemeinen nicht lösbar“ ist, bedeutet das nicht, dass Softwareentwickler aufgegeben haben.
-Moderne Compiler, statische Code-Analyse-Tools, Antivirensoftware, die Malware erkennt usw., bieten durch die folgenden Kompromisse praktische Vorteile:
+Manche Fragen über Syntax oder Darstellung sind entscheidbar, etwa nach der Anzahl der in einer Programmbeschreibung aufgeführten Zustände. Der Satz von Rice gilt auch nicht automatisch für Eigenschaften von Zwischenschritten der Ausführung, etwa einen bestimmten Speicherzugriff. Um die Unentscheidbarkeit eines Ausführungsproblems zu zeigen, muss man das Modell festlegen und eine geeignete Reduktion oder ein anderes Argument angeben.
 
-- **Heuristiken**: Man gibt die 100%ige Sicherheit auf und schließt aus häufigen Mustern auf „wahrscheinlich ein Bug“ oder „wahrscheinlich ein böswilliges Verhalten“.
-- **Eingeschränkte Sprachen**: Durch die Verwendung nicht-Turing-vollständiger, eingeschränkter Sprachen oder Typsysteme (in denen Endlosschleifen gar nicht geschrieben werden können) wird eine bestimmte Sicherheit garantiert.
-- **Timeouts**: Wenn die Berechnung nach einer bestimmten Zeit nicht abgeschlossen ist, wird der Prozess als „Timeout“ erzwungenermaßen beendet.
+### Garantien, unbekannte Antworten und Zeitlimits unterscheiden
 
-## Fazit
+Dass kein universeller Entscheider existiert, bedeutet nicht, dass alle Analysewerkzeuge nur Vermutungen anstellen können.
 
-In diesem Artikel haben wir das von Turing bewiesene **Halteproblem** erklärt.
+- <strong>Korrekte, aber unvollständige Analyse</strong>: Sie liefert Garantien, wo sie etwas beweisen kann, und antwortet sonst mit „unbekannt“. Eine Warnung einer konservativen Analyse muss keinem tatsächlichen Fehler entsprechen.
+- <strong>Eingeschränkte Sprachen oder Eingabebereiche</strong>: Sie können terminierungssichernde Regeln oder vollständige Suche in endlichen Bereichen verwenden. Allein die fehlende Turingvollständigkeit garantiert nicht, dass sämtliche Programme terminieren.
+- <strong>Heuristiken und Tests</strong>: Sie finden nützliche Fehlerkandidaten oder Gegenbeispiele, sind aber keine Vollständigkeitsgarantie über den untersuchten Bereich hinaus.
+- <strong>Zeitlimits</strong>: Sie begrenzen den Ressourcenverbrauch. Sie beweisen nicht, dass die Berechnung ohne diese Grenze unendlich weiterlaufen würde.
 
-- Es gibt keinen Algorithmus, der zuverlässig bestimmt, ob ein beliebiges Programm in einer endlichen Zeit anhält.
-- Wenn man annimmt, dass eine Entscheidungsmaschine $H$ existiert, wird durch das böswillige Programm $D$, das die Entscheidung hintergeht, ein Widerspruch erzeugt (Beweis durch Widerspruch).
-- Dieses Theorem zeigt die „logischen Grenzen“ von Computern auf und ist der fundamentale Grund, warum moderne Softwareentwicklungstools „Vermutungen“ und „Kompromisse“ benötigen.
+Bei einem geschlossenen deterministischen System mit endlich vielen vollständigen Konfigurationen, die sich einschließlich ihrer Übergänge effektiv behandeln lassen, kann man die Ausführung verfolgen, bis sie hält oder eine bereits besuchte Konfiguration wiederkehrt. Das zeigt mathematische Entscheidbarkeit, garantiert aber keine vollständige Suche mit realistischem Zeit- oder Speicheraufwand. Es lässt sich nicht unverändert auf Systeme mit unbeschränkten Eingaben, äußerer Interaktion oder wachsendem Speicher übertragen.
 
-Gerade weil es mathematisch unmöglich ist, ein perfektes Programm-Analyse-Tool zu erstellen, bleiben Tests und Architekturentwürfe durch Programmierer bis heute so wichtig. Wenn Sie programmieren, sollten Sie nie vergessen, selbst über die Möglichkeit von Endlosschleifen nachzudenken.
+## 8. Was unmöglich ist und was möglich bleibt
+
+Das Halteproblem schließt einen allgemeinen Algorithmus aus, der für jedes Programm und jede Eingabe stets terminiert und immer die richtige von zwei Antworten gibt.
+
+Terminierungsbeweise für einzelne Programme, vollständige Prüfungen unter geeigneten Einschränkungen, korrekte Analysen mit der Antwort „unbekannt“ und endliche Tests bleiben mit diesem Ergebnis vereinbar und nützlich. Entscheidend ist, ob die Antwort eines Werkzeugs ein Beweis, eine Beobachtung, eine Vermutung oder ein Eingeständnis fehlenden Wissens ist.
+
+### Literatur
+
+- [Turing: On Computable Numbers, with an Application to the Entscheidungsproblem](https://theory.stanford.edu/~trevisan/cs172-07/turing36.pdf) — Universitär bereitgestellte Fassung der Originalarbeit. Abschnitt 2 unterscheidet Maschinenarten; Abschnitt 8 behandelt Diagonalisierung und Zeichenausgabe; Abschnitt 9 interpretiert das Rechnen.
+- [MIT 6.045J: Mapping reducibility and Rice's theorem](https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/7aead2c728dd3d5a737d832811ef97e6_MIT6_045JS11_lec09.pdf) — Voraussetzungen des Satzes von Rice und die Unterscheidung zwischen Spracheigenschaften und strukturellen oder operationalen Eigenschaften von Maschinen.
+- [Sinclair: The Church-Turing Thesis](https://people.eecs.berkeley.edu/~sinclair/cs172/n4.pdf) — Die These als Verbindung zwischen intuitiven effektiven Verfahren und formalen Modellen.
+- [Tao: Almost all orbits of the Collatz map attain almost bounded values](https://arxiv.org/abs/1909.03562) — Teilergebnis zur Collatz-Iteration, kein Beweis dafür, dass alle positiven ganzen Zahlen eins erreichen.

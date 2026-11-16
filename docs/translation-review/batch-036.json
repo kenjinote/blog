@@ -290,6 +290,47 @@
         "Primary sources read only in documented selected sections/abstracts.",
         "Publication036 and complete all-article goal pending."
       ]
+    },
+    "post/halting-problem/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-17",
+      "reviewer": "Codex (AI)",
+      "source": "post/halting-problem/index.md",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "translationHash": "ed7452c5421d93ff2a9ff7ae341b6e8e5ff35c4a23e35ba86c4e1528da59270c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete original German article and the entire saved revised file, comparing all eight Japanese chapters, introduction, examples, proof table, diagram, conclusion and references. Corrected ungelöst/als unlösbar bewiesen confusion, missing fixed-input/total-decider conditions, the inference that one Collatz query settles all inputs, logic-breakdown and guesses-only claims. Retained all substantive original themes. Distinguished original circular/circle-free from modern halting, a thesis from formal equivalence, and incompleteness hypotheses from the explicitly stronger sound proof-enumeration argument."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used Unentscheidbarkeit rather than an ungelöst conjecture, totaler Entscheidungsalgorithmus for a terminating correct decider, semientscheidbar for recognition and vollständige Konfiguration for the whole machine configuration. Distinguished Widerspruchsfreiheit from semantische Korrektheit, nontrivial extensionale Eigenschaften from intermediate execution events, and Schrittgrenze from Zeitlimit. Replaced böswillig/Deceiver framing with an effective Diagonalkonstruktion. Kept standard Halteproblem, Collatz-Vermutung, Church-Turing-These, Satz von Rice and Gödels Unvollständigkeitssätze terminology, repairing inflected link fragments."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Read all32TeX expressions and four display equations. Normalized only text annotations in displays and checked exact equality with Japanese formula structure: encoded HALT pairs, total two-answer H, Collatz forall-positive-n exists-t, and diagonal iff chain. Read both cases in the three-row table, finite encoding/validity, self-application, effective construction, and sound proof-enumeration argument. Correctly distinguishes each fixed input from totality, finite-state decidability from practical feasibility, Rice extensional properties from syntax, and zero-output vacuity from total constant-zero functions. No general Collatz/theorem proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read all original five Python-labelled blocks, then revised two executable Python blocks, their displayed outputs and two proof pseudocodes. Revised program hashes are exact matches to finite tested Japanese examples, including strict integer domain checks and step-limit boundaries. Generated HTML preserves six full code/text blocks, one diagram with eight correctly directed edges,15strong spans and85prose fragments. Never executed hypothetical H/D or the infinite Forever pseudocode. Kept the original cover file while switching to the reviewed text-free illustration; image-only edits do not approve other languages."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified four primary-source references and three German article links in source and actual generated HTML. Original title/slug/taxonomy preserved; duplicate date resolved to actual September14 effective publication, with November17 modification date. Checked canonical,14unique hreflang/13sidebar article targets and new cover reference.37bundle preview481article+1tag snapshots,2087multilingual pages,3801HTTPS HTML/41XML passed; prior17tests referenced, not rerun. Source research remains limited to documented selected primary sections/abstracts, not whole-paper review."
+        }
+      },
+      "summary": "Full German halting-problem review against frozen Japanese, including precise decision/proof conditions, executable examples and practical-analysis guarantees.",
+      "languageSpecificFindings": "Removed the irrelevant Zustand library link embedded in Zustandsübergangstabelle and Halteproblem links that pointed to the Turing-machine article. Repaired awkward inflected heading/link fragments and böswilliges Programm/logik zerbricht framing. Corrected universal Python multiplication, Collatz quantification, omitted incompleteness assumptions, Rice operational overreach and non-Turing-complete-implies-termination. Preserved original title, slug and multiline tag metadata; effective September14 date retained and actual November17 review/modification recorded.",
+      "validation": "docs/translation-review/batch-036-de-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other4 original translation bodies remain unread and unapproved.",
+        "Finite Python tests are prior exact-code evidence, not a general Collatz/halting theorem.",
+        "Static37bundle preview, no browser KaTeX/Mermaid execution or fullsite certification.",
+        "Primary sources read only in documented selected sections/abstracts.",
+        "Publication036 and complete all-article goal pending."
+      ]
     }
   },
   "stages": [
@@ -361,8 +402,18 @@
       "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
       "reviewedTranslationsAdded": 1,
       "publicationPending": true
+    },
+    {
+      "date": "2026-11-17",
+      "stage": "German original/revised whole-body comparison",
+      "validation": "docs/translation-review/batch-036-de-validation.json",
+      "checks": "docs/translation-review/batch-036-de-checks.json",
+      "translationHash": "ed7452c5421d93ff2a9ff7ae341b6e8e5ff35c4a23e35ba86c4e1528da59270c",
+      "sourceHash": "f1bf0e00141cb7eaa340cfff0e324438f46f502ea121836c64d8a232ac536782",
+      "reviewedTranslationsAdded": 1,
+      "publicationPending": true
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and EN/CN/TW/ES/KO/PT/FR whole revisions reviewed;7AI entries. Other5unread. Source frozen; publication/fullgoal pending."
+  "scope": "Japanese and EN/CN/TW/ES/KO/PT/FR/DE whole revisions reviewed;8AI entries. Other4unread. Source frozen; publication/fullgoal pending."
 }
