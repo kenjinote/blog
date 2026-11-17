@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-17",
+  "path": "content/post/godels-incompleteness-theorems/index.zh-cn.md",
+  "sha256": "cb33a6b37abd60a255f7ff863dc1b097c8be5acb9ddd42444c09a3d8986e7b93",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Absolute unprovability framing and missing effective axiomatization.",
+    "Consistency conflated with soundness; human superiority implied without conditions.",
+    "Repeated zero assigned codes2and5; unique factorization incorrectly said to cover every natural number.",
+    "CAP and Turing-machine links misdirected; duplicate publication date.",
+    "Second theorem extended to any system and justified with liar analogy; real-number theory insufficiently qualified."
+  ],
+  "revised": false,
+  "reviewedTranslationsAdded": 0
+}
