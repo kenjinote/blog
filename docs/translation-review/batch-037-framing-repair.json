@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-11-17T10:12:39.680613+09:00",
+  "path": "content/post/godels-incompleteness-theorems/index.md",
+  "beforeSha256": "93935609531485a801b37d6fcc8466ee46d4fe8259c8095f6f94e802830a3fb9",
+  "afterSha256": "3fc15a4431e12fc235042235230cf0ebeacb31ad368e6843a20ea27c1b5b5153",
+  "changes": [
+    "Title/intro/conclusion now consistently state theory-relative unprovability.",
+    "Removed claim that mathematical correctness itself was overturned, absolute unprovability and unsupported claims about mathematicians work ending.",
+    "Explained that stronger axioms may settle prior independent statements while effective consistent arithmetic extensions remain incomplete.",
+    "No inference of human superiority or blanket AI limit from theorem alone."
+  ],
+  "evidence": "Previously documented Open Logic chapter5 and UCLA selected text on effective axiomatization and theory-relative proof; no new historical claims introduced.",
+  "remaining": "Middle sections and complete references/metadata/build need completion. All12translations unread.",
+  "reviewedTranslationsAdded": 0
+}
