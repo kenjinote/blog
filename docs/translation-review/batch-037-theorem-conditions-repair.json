@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-11-17T10:10:44.068470+09:00",
+  "path": "content/post/godels-incompleteness-theorems/index.md",
+  "beforeSha256": "c19409fddf6f09bd0c739108f2e09fd4816914530d09de1a9be1961cb2379441",
+  "afterSha256": "6ba25c718b538a61c35853e11bf4fe70669764efcfb6f8d3d65f90a570e61775",
+  "source": "https://ic.openlogicproject.org/ic-screen.pdf",
+  "sourceScope": "Open Logic Project Incompleteness and Computability; returned front matter and chapter5 summary lines4460–4484 only used for this repair. Whole329page book not reviewed. Later find calls timed out; no results inferred.",
+  "repairs": [
+    "Added effective axiomatization to theorem hypotheses.",
+    "First statement names Rosser form with consistency and independence; source-relative not absolute unprovability.",
+    "Second statement restricted to effective consistent PA extensions and standard proof predicate.",
+    "Removed universal any-system inference and clarified that liar analogy is not proof; distinguished consistency/soundness."
+  ],
+  "limitations": [
+    "Partial source revision, not completed Japanese review.",
+    "Historical paragraphs, first-proof details, truth/provability diagram, title/conclusion, geometry examples and full references still need revision/checking.",
+    "12 translations unread; no new approval or build/publication claim."
+  ],
+  "reviewedTranslationsAdded": 0
+}
