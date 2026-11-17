@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-17T18:52:10.284375+09:00",
+  "allPassed": true,
+  "language": "es",
+  "sourceSha256": "65db3abf4f3a40931553c941ef77d936a3dcb37f5de514f2354207ec377cc44f",
+  "texExpressions": 34,
+  "displayMath": 2,
+  "diagrams": 4,
+  "diagramEdges": [
+    3,
+    5,
+    4,
+    4
+  ],
+  "executablePrograms": 0,
+  "proseFragmentsPreserved": 78,
+  "strongSpans": 6,
+  "externalReferences": 4,
+  "internalReferences": 3,
+  "datesTitleNavigationCoverPassed": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Spanish static source/HTML match; original/revised fully read.8translations unread; Spanish registration pending. No browser KaTeX/Mermaid execution, fullsite/publication or theorem-proof certification."
+}

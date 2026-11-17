@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-17",
+  "path": "content/post/godels-incompleteness-theorems/index.es.md",
+  "sha256": "626dc3c73233cb2e20af06a6dce4461c99321a1e152ab464bf3109bea85a040a",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Repeated Hilbert links disrupt prose and heading.",
+    "Absolute unprovability and no-system-not-mad analogy overstate the result; missing effective axiomatization and soundness qualifications.",
+    "Same zero assigned different codes; every natural number incorrectly included in unique factorization claim.",
+    "Physical computation framing, unqualified real-number theory and human superiority implication.",
+    "CAP and Turing-machine mislinks; duplicated publication date; concluding sentence fragment and viaje sin retorno shift the meaning."
+  ],
+  "reviewedTranslationsAdded": 0
+}
