@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-17",
+  "path": "content/post/godels-incompleteness-theorems/index.ko.md",
+  "sha256": "4fafedf4f953a1895ce4bc9fcaf461a253fbbec5ddcbcfe61503a05256f7c87b",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Broken spaced bold delimiters throughout.",
+    "괴델 수화 and 수법/바꿔치기 obscure legitimate numbering and arithmetization; Korean-sentence phrasing over-literal.",
+    "Missing effective axiomatization, consistency/soundness distinction and derivability conditions; absolute unprovability and human superiority framing.",
+    "Same zero assigned codes2and5; factorization claim includes all naturals.",
+    "CAP and Turing-machine mislinks; duplicate date, physical-computation model and unqualified real-number theory."
+  ],
+  "reviewedTranslationsAdded": 0
+}

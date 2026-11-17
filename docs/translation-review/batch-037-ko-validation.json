@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-17T18:55:04.836148+09:00",
+  "allPassed": true,
+  "language": "ko",
+  "sourceSha256": "807878a8d613a30560c4226290db321d8e1026fa28c1e1845d65bb24859fc905",
+  "texExpressions": 34,
+  "displayMath": 2,
+  "diagrams": 4,
+  "diagramEdges": [
+    3,
+    5,
+    4,
+    4
+  ],
+  "executablePrograms": 0,
+  "proseFragmentsPreserved": 69,
+  "strongSpans": 6,
+  "externalReferences": 4,
+  "internalReferences": 3,
+  "datesTitleNavigationCoverPassed": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Korean static source/HTML match; original/revised fully read.7translations unread; Korean registration pending. No browser KaTeX/Mermaid execution, fullsite/publication or theorem-proof certification."
+}

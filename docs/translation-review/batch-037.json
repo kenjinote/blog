@@ -162,6 +162,46 @@
         "Selected primary-source excerpts only; no full-paper review or theorem certification.",
         "Batch037 publication and all-article goal remain pending."
       ]
+    },
+    "post/godels-incompleteness-theorems/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-17",
+      "reviewer": "Codex (AI)",
+      "source": "post/godels-incompleteness-theorems/index.md",
+      "sourceHash": "4768e83cb5bc16d0753c3b460e0e81a0de8df159e4b2e0638aa3a73ddff8d777",
+      "translationHash": "807878a8d613a30560c4226290db321d8e1026fa28c1e1845d65bb24859fc905",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Original and saved revised Korean whole bodies read and compared with the whole revised Japanese source: introduction, eight chapters, conclusion and references. Replaced absolute unprovability with theory-relative unprovability; restored effective axiomatization and sufficient PA-extension assumptions; distinguished consistency, soundness, completeness and decidability. Clarified Hilbert program, stronger theories and limits of human/AI conclusions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished 무모순성 from 건전성 and 구문적 완전성. Used 괴델 번호화 and 부호화 rather than unclear 괴델 수화, and checked 고정점 보조정리, 귀납법 공리 도식, 증명 가능성 술어, 유도 가능성 조건, 실폐체, 양화사 제거, 계산 가능성 and 계산 복잡도. Distinguished ordinary consistency from omega-consistency and sufficient PA-extension assumptions from weakest possible assumptions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared fixed-point and consistency displays exactly with Japanese. Read the finite-proof contradiction argument and external truth argument, explicitly separating failure to prove G from failure to refute G under consistency alone. Checked symbol coding 2,3,2 and positional primes 2,3,5 giving 2700. Qualified real closed fields by first-order language and halting argument by soundness. Static HTML preserves 34 TeX expressions, two displays and all four graphs with 3,5,4,4 edges. No new theorem or full proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable programs occur in this article. Read all four Mermaid sources and translated labels, compared graph structure with Japanese and checked preservation in HTML. Browser Mermaid execution was not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Four external references match Japanese; three article links use Korean routes for Hilbert, Godel and halting-problem. Removed unrelated CAP consistency and Turing-machine targets. Static checks cover title, actual September14 publication date, November17 lastmod, cover, canonical, unique reciprocal hreflang and article-preserving sidebar. Fresh38bundle preview:494posts+1tag,2139 multilingual pages,3898HTTPS HTML and41XML. Primary-source reading limited to previously documented excerpts."
+        }
+      },
+      "summary": "Full Korean comparison with corrected Japanese incompleteness article, including theorem conditions, terminology, coding, diagrams and references.",
+      "languageSpecificFindings": "Repaired spaced bold delimiters with six explicit strong spans. Removed 수법/바꿔치기 suggesting a trick, the literal Korean-sentence framing and claims of absolute unprovability. Distinguished symbol codes from positional primes and corrected the 0 code duplication. Replaced physical-machine and unlimited human/AI claims with stated hypotheses; corrected CAP and halting links. Read complete original and saved revised body against Japanese.",
+      "validation": "docs/translation-review/batch-037-ko-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Other7 original translation bodies remain unread.",
+        "Static HTML only; no browser KaTeX/Mermaid execution.",
+        "Selected primary-source excerpts only; no full-paper review or theorem certification.",
+        "Batch037 publication and all-article goal remain pending."
+      ]
     }
   },
   "stages": [
@@ -213,8 +253,14 @@
       "stage": "Spanish whole original/revised comparison and static HTML validation",
       "validation": "docs/translation-review/batch-037-es-validation.json",
       "reviewedTranslationsAdded": 1
+    },
+    {
+      "date": "2026-11-17",
+      "stage": "Korean whole original/revised comparison and static HTML validation",
+      "validation": "docs/translation-review/batch-037-ko-validation.json",
+      "reviewedTranslationsAdded": 1
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese, English, both Chinese and Spanish whole bodies reviewed;4AI records, other8unread. Static preview passed. Publication037 and full goal pending."
+  "scope": "Japanese, English, both Chinese, Spanish and Korean whole bodies reviewed;5AI records, other7unread. Static preview passed. Publication037 and full goal pending."
 }
