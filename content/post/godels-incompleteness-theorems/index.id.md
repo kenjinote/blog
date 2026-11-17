@@ -1,160 +1,171 @@
 ---
-title: "Teorema Ketidaklengkapan Gödel: Bukti Matematis dari 'Kebenaran yang Sama Sekali Tidak Dapat Dibuktikan'"
-date: "2026-09-24T19:44:38+09:00"
+title: "Teorema ketidaklengkapan Gödel: kebenaran dan keterbuktian dalam suatu teori"
+date: "2026-09-14T00:00:51+09:00"
 image: "eyecatch-v2.png"
-date: 2026-09-14T00:00:51+09:00
-description: "Menjelaskan tentang teorema bersejarah yang menunjukkan batas matematika, yaitu Teorema Ketidaklengkapan Gödel, mengenai maknanya dan mekanisme pembuktiannya dengan cara yang mudah dipahami disertai contoh konkret dan ilustrasi."
+description: "Syarat ketidaklengkapan, konsistensi dan kesahihan semantik, serta ketakterbuktian relatif terhadap teori: penomoran Gödel, titik tetap, teorema kedua, dan masalah penghentian."
 categories: ["mathematics", "computer-science"]
 tags:
   - Logika
   - Gödel
   - Teorema Ketidaklengkapan
 slug: "godels-incompleteness-theorems"
+math: true
+mermaid: true
+lastmod: "2026-11-17"
 ---
 
-"Matematika itu mutlak benar"──Setiap orang mungkin pernah berpikir seperti itu setidaknya sekali. Namun, sebuah makalah yang diterbitkan pada tahun 1931 oleh matematikawan muda [Kurt Gödel](https://kenji.blog/id/p/godel/) menjungkirbalikkan akal sehat tersebut dari akarnya. Itulah **[Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/)**.
+Jika kita memilih satu sistem aksioma lalu menyusun bukti menurut aturan mekanis, dapatkah kita menjawab semua pertanyaan tentang bilangan asli? Teorema ketidaklengkapan Gödel menunjukkan bahwa teori yang memenuhi syarat tertentu tidak dapat memberikan penyelesaian selengkap itu.
 
-Dalam artikel ini, kami akan menjelaskan secara menyeluruh tentang teorema mengejutkan bahwa "kebenaran yang sama sekali tidak dapat dibuktikan" itu ada, mulai dari maknanya hingga mekanisme pembuktiannya dengan menyertakan contoh konkret dan ilustrasi.
+Hal terpenting adalah memperjelas <strong>dalam teori mana suatu kalimat tidak dapat dibuktikan</strong>. Hasil ini tidak mengatakan bahwa ada kebenaran yang mustahil dibuktikan dengan pilihan aksioma apa pun. Kita akan membedakan konsistensi, kesahihan semantik, dan aksiomatisasi efektif sambil membahas pengodean, referensi diri, serta cakupan teorema.
 
 ---
 
-## 1. Latar Belakang: Program [Hilbert](https://kenji.blog/id/p/hilbert/) dan Krisis Matematika
+## 1. Program Hilbert dan tiga pertanyaan berbeda
 
-Dari akhir abad ke-19 hingga awal abad ke-20, dunia matematika menghadapi "paradoks teori himpunan (seperti Paradoks Russell)", dan fondasinya goyah. Orang yang bangkit untuk menyelamatkan "krisis matematika" ini adalah otoritas tertinggi dalam dunia matematika saat itu, [David Hilbert](https://kenji.blog/id/p/hilbert/).
+Untuk memperkuat landasan matematika, [David Hilbert](/id/p/hilbert/) dan tokoh lain mengusulkan program untuk mendeskripsikan matematika melalui sistem aksioma formal dan membuktikan konsistensinya dengan metode finiter. Memformalkan matematika dan mempelajari buktinya dari luar sistem merupakan dua pekerjaan berbeda. Menggambarkan program ini hanya sebagai “sistem yang menjamin segala sesuatu tentang dirinya dari dalam” tidaklah tepat.
 
-[Hilbert](https://kenji.blog/id/p/hilbert/) mencoba menyimbolkan sepenuhnya semua penalaran matematika dan merekonstruksi matematika hanya dengan aturan mekanis. "Program [Hilbert](https://kenji.blog/id/p/hilbert/)" yang ia advokasikan bertujuan untuk membuktikan tiga sifat berikut dalam sistem formal (Formal System) matematika:
+Tiga sifat berikut juga perlu dibedakan.
 
-1. **Konsistensi** ([Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)): Tidak ada kontradiksi (di mana suatu proposisi $P$ dan negasinya $\neg P$ keduanya terbukti) di dalam sistem.
-2. **Kelengkapan** (Completeness): Setiap proposisi matematika harus dapat dibuktikan sebagai benar atau salah di dalam sistem tersebut.
-3. **Keputusan** (Decidability): Jika diberikan proposisi sembarang, ada prosedur mekanis untuk menentukan apakah itu dapat dibuktikan atau tidak.
+- <strong>Konsistensi</strong>: teori tidak membuktikan sekaligus suatu kalimat $A$ dan negasinya $\neg A$.
+- <strong>Kelengkapan teori</strong>: untuk setiap kalimat $A$ dalam bahasanya, teori membuktikan $A$ atau $\neg A$. Ini adalah kelengkapan sintaktis.
+- <strong>Keterputusan</strong>: algoritma yang selalu berhenti dapat menentukan apakah suatu kalimat yang diberikan merupakan teorema dari teori tersebut.
 
-[Hilbert](https://kenji.blog/id/p/hilbert/) meninggalkan kata-kata terkenal, "Kita harus tahu, kita akan tahu (Wir müssen wissen. Wir werden wissen.)", dan ia percaya tanpa ragu bahwa matematika akan menjadi kastil logika sempurna yang dapat menyelesaikan segalanya.
+Kelengkapan berbeda dari kesahihan semantik, yang menyatakan bahwa semua teorema benar dalam interpretasi yang dimaksud. Teorema kelengkapan logika orde pertama juga berbeda maknanya dari kelengkapan suatu teori aritmatika tertentu.
+
+```mermaid
+flowchart TD
+    Math["Memformalkan matematika"] --> Theory["Menetapkan aksioma dan aturan inferensi"]
+    Theory --> Proof["Memperlakukan bukti berhingga sebagai objek matematika"]
+    Proof --> Goal["Mencari bukti konsistensi dengan metode finiter"]
+```
+
+## 2. Sistem formal dan aritmatika Peano
+
+Sistem formal menetapkan simbol, aturan pembentukan rumus, aksioma, dan aturan inferensi. Pemeriksaan sintaktis apakah suatu bukti berhingga mengikuti aturan dapat dipisahkan dari pertanyaan semantik apakah suatu rumus benar dalam suatu interpretasi. Bahwa pemeriksaan bukti tidak memerlukan penafsiran makna bukan berarti makna tidak penting dalam matematika.
+
+Contoh yang umum adalah aritmatika Peano orde pertama (PA). Teori ini membahas nol, penerus, penjumlahan, dan perkalian bilangan asli, serta mencakup skema aksioma induksi. Dalam pembahasan ini, bilangan asli mencakup nol. Bahkan $1+1=2$ merupakan kalimat yang diturunkan dari aksioma dan aturan tersebut.
+
+Agar mudah diikuti, kita terutama mempertimbangkan teori yang dapat diaksiomatisasi secara efektif dan memuat PA sebagai syarat yang cukup. Ini bukan syarat paling lemah: ada bentuk teorema pertama yang berlaku atas aritmatika yang lebih lemah.
+
+## 3. Teorema ketidaklengkapan pertama: kalimat yang tidak diselesaikan oleh teori
+
+Kita menyatakan hasil ketidaklengkapan [Kurt Gödel](/id/p/godel/) dalam bentuk berikut, yang mencakup penyempurnaan Rosser.
+
+> Setiap teori yang konsisten, dapat diaksiomatisasi secara efektif, dan memuat PA memiliki kalimat aritmatika yang tidak dapat dibuktikan maupun disangkal di dalam teori itu.
+
+“Dapat diaksiomatisasi secara efektif” berarti aksioma dan bukti dapat dienumerasi dengan prosedur mekanis. Ketakterbuktian bersifat relatif terhadap teori yang dipilih. Ini tidak berarti kalimat tersebut harus tetap tidak dapat dibuktikan dalam teori lain dengan aksioma tambahan. Kebenaran dalam bilangan asli standar harus dibedakan dari keterbuktian dalam teori yang tetap.
+
+Untuk menggambarkan himpunan kalimat yang dapat dibuktikan sebagai bagian dari himpunan kalimat yang benar dalam bilangan asli standar, diperlukan asumsi yang lebih kuat, yaitu <strong>kesahihan semantik</strong>. Konsistensi hanya meniadakan pembuktian sekaligus suatu kalimat dan negasinya; konsistensi saja tidak menjadikan semua teorema benar dalam bilangan asli standar.
+
+```mermaid
+flowchart TD
+    T["Perluasan T dari PA dengan aksiomatisasi efektif"] --> C["Asumsikan T konsisten"]
+    C --> R["Ada kalimat aritmatika yang tidak dapat dibuktikan maupun disangkal dalam T"]
+    T --> S["Tambahkan asumsi kesahihan untuk bilangan asli standar"]
+    S --> Truth["Semua teorema T benar dalam bilangan asli standar"]
+    Truth --> Gap["Tetap ada kalimat aritmatika benar tanpa bukti dalam T"]
+```
+
+### Membangun referensi diri secara aritmetis, bukan kontradiksi
+
+Kemiripannya dengan kalimat pembohong “Kalimat ini salah” dapat membantu intuisi. Namun, konstruksi Gödel tidak memasukkan kontradiksi ke dalam matematika. Konstruksi itu mengodekan kalimat dan bukti sebagai bilangan, lalu menyatakan <strong>keterbuktian dalam teori tertentu</strong> melalui aritmatika.
+
+Misalkan teorinya adalah $T$, dan $\operatorname{Prov}_T(y)$ adalah predikat keterbuktian yang lazim, yang menyatakan bahwa kalimat berkode $y$ memiliki bukti dalam $T$. Notasi $\ulcorner G_T\urcorner$ menyatakan numeral untuk kode kalimat $G_T$. Lemma titik tetap memungkinkan kita membangun kalimat yang memenuhi ekuivalensi berikut, yang dapat dibuktikan oleh teori:
+
+$$
+T\vdash G_T\leftrightarrow\neg\operatorname{Prov}_T(\ulcorner G_T\urcorner)
+$$
+
+Di sini $T\vdash A$ berarti bahwa $T$ membuktikan $A$. Konstruksi ini memakai pengodean dan substitusi, bukan langsung menjadikan kalimat bahasa sehari-hari sebagai aksioma.
+
+Jika $T$ memiliki bukti untuk $G_T$, keberadaan bukti berhingga itu juga dapat dinyatakan dalam aritmatika, sehingga $T$ akan membuktikan $\operatorname{Prov}_T(\ulcorner G_T\urcorner)$. Namun, ekuivalensi di atas bersama $G_T$ juga menghasilkan negasinya. Jadi, jika $T$ konsisten, teori itu tidak dapat membuktikan $G_T$.
+
+Dalam bilangan asli standar, predikat keterbuktian yang lazim menggambarkan dengan benar bukti berhingga yang benar-benar ada. Dengan menggunakan fakta ini, ketiadaan bukti menunjukkan bahwa $G_T$ benar dalam bilangan asli standar. Argumen eksternal ini memuat asumsi bahwa $T$ konsisten. Ini tidak berarti manusia dapat secara otomatis mengenali konsistensi teori apa pun.
+
+Argumen ini saja tidak membolehkan kita menyimpulkan dari konsistensi semata bahwa teori yang sama juga tidak dapat membuktikan negasi $G_T$. Misalnya, kesahihan semantik meniadakan pembuktian negasi kalimat benar $G_T$. Bukti independensi asli Gödel memakai $\omega$-konsistensi; Rosser membangun kalimat berbeda untuk memperoleh ketakterbuktian dan ketakterbantahan hanya dari konsistensi biasa.
+
+## 4. Penomoran Gödel: mengodekan rangkaian simbol dan bukti sebagai bilangan
+
+Penomoran Gödel memberikan kode bilangan asli kepada simbol, rumus, dan rangkaian bukti berhingga. Sebagai contoh pembelajaran, kita memberi bilangan bulat positif yang sama kepada setiap kemunculan simbol yang sama, sedangkan posisi yang berbeda dalam rangkaian diberi bilangan prima berbeda. Ini bukan reproduksi persis penomoran dalam makalah aslinya.
+
+Berikan kode 2 kepada simbol “0” dan kode 3 kepada “=”. Rangkaian “0=0” memiliki urutan kode 2, 3, 2. Memangkatkan bilangan prima posisi 2, 3, 5 dengan eksponen tersebut lalu mengalikannya menghasilkan 2700. Keunikan faktorisasi prima untuk bilangan bulat paling sedikit dua memungkinkan kita memulihkan urutan kode semula dalam contoh ini.
 
 ```mermaid
 graph TD
-    subgraph "Gagasan Program Hilbert"
-        A["Sistem Aksioma (Premis yang jelas)"] -->|"Aturan inferensi yang ketat"| B["Semua proposisi matematika yang benar"]
-        A -->|"Pembuktian di dalam sistem"| C["Jaminan atas konsistensinya sendiri"]
+    subgraph "Mekanisme penomoran Gödel"
+        S1["Simbol '0'"] -->|"Tetapkan"| N1["Kode simbol 2"]
+        S2["Simbol '='"] -->|"Tetapkan"| N2["Kode simbol 3"]
+        S3["Simbol '0'"] -->|"Tetapkan"| N3["Kode simbol 2"]
+        F["Rangkaian '0=0'"] -->|"Prima posisi 2,3,5 dipangkatkan dengan kode simbol 2,3,2"| GN["Bilangan Gödel: 2^2 * 3^3 * 5^2 = 2700"]
     end
 ```
 
-## 2. Sistem Formal dan Aritmatika Peano
+Yang penting bukan menghasilkan bilangan raksasa, melainkan memperlakukan sintaksis, substitusi, dan pemeriksaan bukti berhingga sebagai relasi antarbilangan. Misalnya, bedakan relasi “bilangan $p$ mengodekan bukti bagi kalimat berkode $q$” dari keterbuktian, yaitu pernyataan bahwa ada $p$ seperti itu.
 
-Untuk memahami teorema Gödel, mari kita bahas terlebih dahulu tentang "sistem formal" dan "aritmatika dasar".
+Memeriksa satu calon bukti berhingga berbeda dari memutuskan bahwa tidak ada bukti sama sekali. Pengodean saja tidak menjadikan semua pertanyaan tentang keterbuktian dapat diputuskan.
 
-Sistem formal adalah serangkaian string (simbol) yang telah ditentukan sebelumnya dan aturan (aturan inferensi) untuk memanipulasinya. "Makna" tidak diperlukan di sana, dan matematika dipandang sebagai permainan transformasi simbol semata.
+## 5. Teorema ketidaklengkapan kedua: membuktikan konsistensi di dalam teori
 
-Teorema Gödel menargetkan sistem yang mencakup "penjumlahan dan perkalian bilangan asli". Contoh perwakilannya adalah sistem aksioma yang disebut **Aritmatika Peano** (Peano Arithmetic, PA). Dalam aritmatika Peano, kita mulai dengan aturan dasar (aksioma) seperti "0 adalah bilangan asli" dan "Untuk bilangan asli tertentu $x$, ada angka berikutnya $S(x)$".
+Kita juga menjelaskan teorema ketidaklengkapan kedua dengan syarat cukup berikut.
 
-Misalnya, fakta yang diketahui semua orang bahwa " $1 + 1 = 2$ " hanyalah sebuah "teorema" yang diturunkan secara mekanis melalui manipulasi simbol dalam sistem formal Aritmatika Peano.
+> Perluasan PA yang konsisten dan dapat diaksiomatisasi secara efektif tidak dapat membuktikan di dalam dirinya sendiri konsistensinya yang dinyatakan dengan predikat keterbuktian yang lazim.
 
-[Hilbert](https://kenji.blog/id/p/hilbert/) berpikir bahwa dengan memperbesar sistem formal ini, suatu hari nanti ia dapat mencakup seluruh kebenaran matematis.
+Sebagai contoh, pilih $0=1$ sebagai kontradiksi dan nyatakan konsistensi sebagai berikut:
 
-## 3. Kejutan Teorema Ketidaklengkapan Pertama: Proposisi "Benar tetapi Tidak Dapat Dibuktikan"
+$$
+\operatorname{Con}(T)
+\equiv\neg\operatorname{Prov}_T(\ulcorner 0=1\urcorner)
+$$
 
-Namun pada tahun 1931, [Kurt Gödel](https://kenji.blog/id/p/godel/), yang saat itu baru berusia 25 tahun, menerbitkan sebuah makalah yang menghancurkan impian [Hilbert](https://kenji.blog/id/p/hilbert/). Itulah **Teorema Ketidaklengkapan Pertama**.
+Ini merupakan kalimat aritmatika yang menyatakan bahwa $T$ tidak memiliki bukti kontradiksi. Memberi nama “konsistensi” kepada sembarang rumus tidak menghasilkan kesimpulan yang sama: formalisasi predikat keterbuktian dan syarat-syarat derivabilitasnya penting.
 
-> **Teorema Ketidaklengkapan Pertama**
-> Dalam setiap sistem formal yang konsisten yang mencakup Aritmatika Peano, selalu ada proposisi yang benar tetapi tidak dapat dibuktikan dalam sistem tersebut.
+Analogi seseorang yang berkata “Saya tidak pernah berbohong” dapat mengajak kita mempertanyakan dasar suatu bukti. Namun, analogi itu bukan bukti teorema kedua. Fakta bahwa teori yang tidak konsisten dapat membuktikan segalanya juga tidak dengan sendirinya menunjukkan ketakterbuktian dalam teori yang konsisten.
 
-Teorema ini menunjukkan bahwa "kebenaran" dan "dapat dibuktikan" adalah hal yang sama sekali berbeda. Mustahil untuk menangkap seluruh kebenaran dunia matematika dengan "mesin" yang disebut sistem formal.
+Konsistensi di sini berbeda dari kesahihan semantik, yaitu bahwa setiap teorema benar dalam interpretasi yang dimaksud. Hasil tersebut tidak meniadakan kemungkinan membuktikan konsistensi teori awal dalam teori yang lebih kuat. Hasil ini juga tidak berlaku tanpa syarat untuk manusia, organisasi, atau semua sistem perangkat lunak.
+
+## 6. Kesalahpahaman dan cakupan hasil
+
+### Matematika tidak runtuh
+
+Ketidaklengkapan bukan negasi dari konsistensi. Hasilnya mengatakan bahwa teori yang tetap tidak menyelesaikan sebagian kalimat. Ketika menambahkan aksioma, kita perlu mempertimbangkan alasan memilihnya dan menelaah hal-hal seperti konsistensi teori perluasan. Menambahkan aksioma tidak otomatis menghilangkan semua kesulitan.
+
+### Teorema ini tidak membuktikan bahwa manusia melampaui mesin
+
+Bahkan argumen eksternal bahwa kalimat Gödel benar mengandaikan syarat seperti konsistensi teorinya. Teorema tersebut tidak mengatakan bahwa manusia dapat memastikan asumsi itu untuk teori apa pun. Argumen filosofis tentang akal manusia atau AI perlu dibedakan dari kesimpulan matematis yang dinyatakan di sini.
+
+### Tidak semua teori tidak lengkap
+
+Bahasa, aksioma, efektivitas, dan kekuatan untuk menyatakan aritmatika menentukan cakupannya. Misalnya, teori orde pertama medan tertutup real, yang membahas bilangan real menggunakan nol, satu, penjumlahan, perkalian, dan urutan, lengkap serta dapat diputuskan. Eliminasi kuantor memberikan jalan untuk memutuskan kalimat-kalimatnya.
+
+Ini tidak berarti semua matematika yang melibatkan bilangan real, fungsi sembarang, atau himpunan dapat diselesaikan secara otomatis. Ini juga tidak memberikan hasil yang sama untuk aritmatika bilangan asli. Pernyataan “geometri Euklides lengkap” juga harus menyebutkan formalisasi dan bahasa yang digunakan.
+
+## 7. Hubungan dengan masalah penghentian
+
+[Masalah penghentian](/id/p/halting-problem/) menyatakan bahwa tidak ada algoritma universal yang selalu berhenti dan menjawab dengan benar apakah sembarang program berhenti pada masukan tertentu. Model Turing bersifat matematis; ini bukan sekadar mengganti sistem formal dengan mesin fisik.
+
+Salah satu cara melihat hubungannya adalah mempertimbangkan teori yang buktinya dapat dienumerasi secara mekanis dan hanya membuktikan pernyataan benar tentang berhenti maupun tidak berhenti. Jika teori itu dapat membuktikan berhenti atau tidak berhenti untuk setiap program dan masukan, kita dapat mengenumerasi bukti lalu mengembalikan jawaban yang buktinya ditemukan, sehingga masalah penghentian dapat diputuskan.
 
 ```mermaid
-graph LR
-    subgraph "Kesenjangan antara Kebenaran dan Dapat Dibuktikan"
-        A["Himpunan proposisi yang benar"]
-        B["Himpunan proposisi yang dapat dibuktikan"]
-        B -.->|"Termasuk sepenuhnya"| A
-        C["Proposisi yang benar tetapi tidak dapat dibuktikan (Ketidaklengkapan)"]
-        A -->|"Pasti ada"| C
-    end
+flowchart TD
+    T["Teori dengan bukti yang dapat dienumerasi dan hanya pernyataan penghentian yang benar"] --> A["Asumsikan teori menyelesaikan berhenti atau tidak berhenti untuk setiap program dan masukan"]
+    A --> Search["Cari kedua jenis bukti dan kembalikan jawaban pertama yang terbukti"]
+    Search --> H["Diperoleh pemutus universal masalah penghentian"]
+    H --> No["Bertentangan dengan ketakterputusan masalah penghentian"]
 ```
 
-### Terjemahan Matematis Paradoks Pembohong
+Penjelasan ini memakai asumsi kuat berupa kesahihan semantik tentang penghentian. Ini bukan pernyataan syarat paling lemah maupun bukti lengkap untuk masing-masing teorema Gödel. Komputabilitas juga perlu dibedakan dari kompleksitas, yang mempelajari waktu dan memori yang diperlukan untuk komputasi.
 
-Inti dari pembuktian Gödel terletak pada penciptaan "paradoks referensi diri" dalam sistem formal matematika.
+## 8. Kesimpulan: nyatakan teori dan asumsinya
 
-Ingatlah "Paradoks Pembohong" yang dikenal sejak zaman Yunani kuno.
-"Kalimat ini adalah kebohongan"
-Jika kalimat ini benar, isinya menjadi "kebohongan". Jika itu kebohongan, isinya menjadi "benar".
+Teorema ketidaklengkapan menjelaskan batas pembuktian dalam teori yang tetap dan memenuhi syarat tertentu. Teori aritmatika yang konsisten, dapat diaksiomatisasi secara efektif, dan cukup kuat memiliki kalimat yang tidak dapat dibuktikan maupun disangkal di dalamnya. Dengan syarat yang cukup, teori itu juga tidak dapat membuktikan konsistensinya sendiri dalam formalisasi yang lazim.
 
-Gödel membawa logika serupa ini ke dalam matematika dan membangun proposisi $G$ berikut dengan rumus.
+Kalimat yang tidak diselesaikan oleh suatu teori mungkin menjadi dapat dibuktikan setelah aksioma baru ditambahkan. Namun, jika teori perluasan masih memenuhi syarat yang sama, teori itu juga tidak lengkap. Mempertimbangkan himpunan semua kebenaran aritmatika berbeda dari memberikan aksiomatisasi yang dapat dienumerasi secara mekanis untuk himpunan itu.
 
-**Proposisi $G$**: "Proposisi $G$ ini tidak dapat dibuktikan dalam sistem ini"
+Keruntuhan matematika, keunggulan manusia atas mesin, dan batas menyeluruh untuk semua AI tidak mengikuti dari teorema-teorema ini saja. Pertanyaan yang perlu diajukan adalah teori mana yang dipilih, asumsi apa yang digunakan, dan apakah kebenaran dibedakan dari keterbuktian.
 
-Misalkan sistem formal dapat membuktikan proposisi $G$ ini. Itu berarti sistem telah membuktikan proposisi yang mengklaim "tidak dapat dibuktikan", dan sistem tersebut menjadi kontradiksi. Jika kita berdiri pada premis utama bahwa ia "konsisten", sistem tidak akan pernah bisa membuktikan proposisi $G$.
+### Referensi
 
-Nah, dari sinilah keajaiban Gödel. Proposisi $G$ tidak dapat dibuktikan dalam sistem. Akan tetapi, proposisi $G$ adalah kalimat yang persis mengklaim "tidak dapat dibuktikan". Karena kondisinya persis seperti yang diklaimnya, dari sudut pandang eksternal, kita dapat menyimpulkan bahwa proposisi $G$ adalah **benar**.
-
-Dengan demikian, lahirlah proposisi yang "benar tetapi tidak dapat dibuktikan".
-
-## 4. Penomoran Gödel: Ide Jenius Mengubah Rumus menjadi Angka
-
-Bagaimana kita bisa mengekspresikan kalimat bahasa seperti "Proposisi ini tidak dapat dibuktikan" dalam Aritmatika Peano yang hanya memiliki penjumlahan dan perkalian? Di sinilah Gödel menemukan metode yang disebut **Penomoran Gödel** (Gödel numbering).
-
-Gödel menetapkan angka unik (bilangan prima) untuk semua simbol yang digunakan dalam rumus (seperti $\neg$, $\vee$, $\exists$, $0$, $=$). Kemudian, dengan menggunakan keunikan faktorisasi prima (sifat bahwa bilangan asli apa pun dapat difaktorkan ke dalam perkalian bilangan prima hanya dalam satu cara), ia mengubah rangkaian rumus menjadi satu bilangan asli raksasa.
-
-```mermaid
-graph TD
-    subgraph "Mekanisme Penomoran Gödel"
-        S1["Simbol '0'"] -->|"Alokasi"| N1["Bilangan prima 2"]
-        S2["Simbol '='"] -->|"Alokasi"| N2["Bilangan prima 3"]
-        S3["Simbol '0'"] -->|"Alokasi"| N3["Bilangan prima 5"]
-        F["Rumus '0=0'"] -->|"Pangkatkan dan kalikan"| GN["Angka Gödel: 2^2 * 3^3 * 5^2 = 2700"]
-    end
-```
-
-Metode ini memungkinkan untuk mengubah seluruh "proses pembuktian", seperti "rumus $A$ adalah bukti dari rumus $B$", menjadi sekadar masalah aritmatika tentang sifat-sifat bilangan raksasa (misalnya apakah suatu bilangan dapat dibagi oleh bilangan lain).
-
-Dengan kata lain, bahasa untuk matematika berbicara tentang "buktinya sendiri" (merujuk pada diri sendiri) telah disembunyikan di dalam sifat bilangan asli. Ini adalah ide yang persis sama dengan bagaimana komputer modern mengkodekan semua gambar dan program ke dalam "rangkaian angka 0 dan 1" untuk memprosesnya, dan Gödel telah mencapai konsep ini jauh sebelum komputer lahir.
-
-## 5. Teorema Ketidaklengkapan Kedua: Keputusasaan karena Tidak Dapat Membuktikan Kebenarannya Sendiri
-
-Teorema Ketidaklengkapan Pertama saja telah mengguncang dunia matematika, namun makalah Gödel berisi kesimpulan yang lebih menakutkan. Itulah **Teorema Ketidaklengkapan Kedua**.
-
-> **Teorema Ketidaklengkapan Kedua**
-> Sistem formal apa pun yang konsisten dan mencakup Aritmatika Peano tidak dapat membuktikan konsistensinya sendiri di dalam sistem tersebut.
-
-[Hilbert](https://kenji.blog/id/p/hilbert/) mencoba membuktikan bahwa matematika konsisten dengan menggunakan kekuatan matematika itu sendiri (Tugas paling penting dari Program [Hilbert](https://kenji.blog/id/p/hilbert/)). Namun, Teorema Ketidaklengkapan Kedua mengumumkan bahwa "tidak ada sistem yang dapat membuktikan dengan kekuatannya sendiri bahwa ia tidak gila (tidak ada kontradiksi)".
-
-Untuk memahami ini secara intuitif, mari berpikir sebagai berikut.
-Misalkan seseorang mengklaim "Saya tidak pernah berbohong!". Namun, kita tidak dapat membuktikan bahwa "orang ini bukan pembohong" hanya berdasarkan kata-katanya saja. Sebab, jika ia seorang pembohong, pernyataan "Saya tidak pernah berbohong" itu sendiri mungkin sebuah kebohongan.
-
-Hal ini sama untuk matematika, meskipun sistem aksioma tertentu dapat menurunkan rumus "Saya konsisten ( $Con(F)$ )" sendiri, jika sistem tersebut sudah berkontradiksi, semua proposisi (baik benar maupun salah) akan dapat dibuktikan, sehingga pembuktian "Saya konsisten" tidak memiliki nilai sama sekali.
-
-Teorema Ketidaklengkapan Kedua menunjukkan batasan definitif bahwa mustahil bagi matematika untuk membuktikan "kepastian mutlak" di dalam matematika itu sendiri.
-
-## 6. Kesalahpahaman Umum tentang Teorema Ketidaklengkapan
-
-Karena namanya yang dramatis, [Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/) sering kali disalahgunakan dalam konteks filsafat, ideologi, dan okultisme. Di sini, mari kita luruskan kesalahpahaman yang paling umum.
-
-- **Kesalahpahaman 1: "Matematika telah runtuh"**
-  - **Fakta**: Teorema Ketidaklengkapan tidak berarti kehancuran matematika. Sebaliknya, ia mengklarifikasi sifat logika formal bahwa "kebenaran keseluruhan tidak dapat ditangkap hanya oleh sistem aksioma tunggal yang tetap". Matematikawan terus mengembangkan penelitian dengan menciptakan sistem yang lebih kuat melalui penambahan aksioma baru sesuai kebutuhan (seperti "Aksioma Pilihan" atau "Aksioma Kardinal Besar").
-- **Kesalahpahaman 2: "Akal budi manusia memiliki batasan"**
-  - **Fakta**: Batasan yang ditunjukkan oleh teorema ini adalah tentang "sistem (sistem formal) yang mengikuti aturan mekanis yang telah ditentukan sebelumnya". Dalam Teorema Ketidaklengkapan Pertama, kita bisa melihat bahwa proposisi $G$ adalah "benar" dari sudut pandang luar. Beberapa ahli (seperti Roger Penrose) menganggap ini sebagai bukti bahwa akal budi manusia memiliki kemampuan untuk memahami "makna (semantik)" yang melampaui sistem formal mekanis.
-- **Kesalahpahaman 3: "Ada hal yang tidak bisa dibuktikan apa pun itu"**
-  - **Fakta**: Teorema Ketidaklengkapan hanya berlaku pada sistem yang cukup kompleks, yang mencakup "penjumlahan dan perkalian bilangan asli (Aritmatika Peano)". Misalnya, "Geometri [Euclide](https://kenji.blog/p/euclid/)an" atau "Teori Orde Pertama dari Bilangan Real" sepenuhnya lengkap, dan semua proposisi yang benar di sana dapat dibuktikan. Ketidaklengkapan hanya terjadi ketika subjeknya memiliki struktur yang cukup kompleks (struktur yang memungkinkan referensi ke diri sendiri).
-
-## 7. Tongkat Estafet ke Mesin Turing: Fajar Ilmu Komputer
-
-Dampak dari teorema Gödel tidak terbatas pada batas matematika. Pada tahun 1936, matematikawan Inggris [Alan Turing](https://kenji.blog/id/p/turing/) mengganti konsep "sistem formal" Gödel dengan proses komputasi fisik, dan merancang model komputer virtual yang disebut "Mesin Turing".
-
-Turing menerapkan [Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/) ke dalam dunia komputer dan membuktikan bahwa "tidak ada algoritma universal untuk menentukan sebelumnya apakah program komputer mana pun akan berjalan selamanya tanpa akhir atau tidak". Inilah **Masalah Penghentian** ([Halting Problem](https://kenji.blog/id/p/turing-machine-computability/)) yang terkenal.
-
-```mermaid
-graph TD
-    subgraph "Silsilah dari Matematika ke Ilmu Komputer"
-        Godel["Gödel (1931)<br/>Teorema Ketidaklengkapan"] -->|"Eksistensi proposisi yang tak dapat dibuktikan"| Turing["Turing (1936)<br/>Masalah Penghentian"]
-        Turing -->|"Eksistensi masalah yang tak dapat dikomputasi"| Computer["Ilmu Komputer Modern<br/>(Teori Kompleksitas Komputasi・Batas AI)"]
-    end
-```
-
-Batasan matematika berupa "ada kebenaran yang tidak bisa dibuktikan" dengan indah berubah wujud menjadi batasan komputer berupa "ada masalah yang tidak bisa dihitung", dan terus hidup sebagai dasar dari teori pemrograman dan algoritma modern.
-
-## 8. Kesimpulan: Perjalanan Panjang yang Tiada Akhir untuk "Mengetahui"
-
-"Mesin matematika sempurna yang dapat membuktikan segalanya secara otomatis" yang diimpikan oleh [David Hilbert](https://kenji.blog/id/p/hilbert/) hancur menjadi ilusi karena [Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/). Namun, itu sama sekali tidak berarti kekalahan matematika.
-
-Jika matematika bisa sepenuhnya diotomatisasi, pekerjaan seorang matematikawan akan menjadi sekadar tugas biasa dan suatu hari akan berakhir. Akan tetapi, keberadaan "proposisi yang tidak dapat dibuktikan tetapi benar" yang ditunjukkan Gödel membuktikan bahwa alam semesta matematika jauh lebih kaya dan memiliki kedalaman yang tidak akan pernah habis dibandingkan yang bisa kita bayangkan.
-
-[Kurt Gödel](https://kenji.blog/id/p/godel/) telah **membuktikan** eksistensi "kebenaran yang sama sekali tidak dapat dibuktikan" melalui matematika itu sendiri, yang merupakan logika paling ketat. Teorema ketidaklengkapannya mengajarkan kita bahwa pencarian manusia untuk "mengetahui" adalah perjalanan tiada akhir yang akan berlangsung selamanya.
+- [Open Logic Project: Incompleteness and Computability](https://ic.openlogicproject.org/ic-screen.pdf) — buku tentang pengodean, titik tetap, hasil Gödel dan Rosser, serta syarat predikat keterbuktian.
+- [UCLA: Incompleteness and Undecidability](https://www.math.ucla.edu/~dam/220b.1.11w/220notes4.pdf) — aritmetisasi simbol dan bukti; membedakan teorema pertama yang memakai kesahihan semantik dari bentuk Rosser.
+- [Richard Zach: The Practice of Finitism](https://arxiv.org/abs/math/0102189) — penelitian tentang aksiomatisasi dan bukti konsistensi finiter dalam program Hilbert.
+- [Jindřich Zapletal: Elements of Set Theory](https://people.clas.ufl.edu/zapletal/files/notesset.pdf) — bahasa orde pertama medan tertutup real dan eliminasi kuantor; lihat Teorema 6.3.12 pada Bagian 6.3.

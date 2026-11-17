@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-17T23:52:26.178250+09:00",
+  "allPassed": true,
+  "language": "id",
+  "sourceSha256": "1b599e209a9992206759dc5a5896ed03f985d4a9cea6988e791347862ff076c1",
+  "texExpressions": 34,
+  "displayMath": 2,
+  "diagrams": 4,
+  "diagramEdges": [
+    3,
+    5,
+    4,
+    4
+  ],
+  "executablePrograms": 0,
+  "proseFragmentsPreserved": 80,
+  "strongSpans": 6,
+  "externalReferences": 4,
+  "internalReferences": 3,
+  "datesTitleNavigationCoverPassed": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Indonesian static source/HTML match; original/revised fully read.3translations unread; Indonesian registration pending. No browser KaTeX/Mermaid execution, fullsite/publication or theorem-proof certification."
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-17",
+  "path": "content/post/godels-incompleteness-theorems/index.id.md",
+  "sha256": "23ea03c01371970271c1aee2d5e20df3c6e407ae49f2d2cba103c6221c6b121e",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Keputusan means decision, not decidability; next-number example says bilangan tertentu instead of universal quantification.",
+    "Split Euclidean link targets Japanese page; repeated Hilbert/selflinks and CAP/halting mislinks.",
+    "Missing effective axiomatization, soundness and derivability conditions; absolute unprovability and human superiority claims.",
+    "Same zero assigned2and5; factorization over all naturals; angka/bilangan confusion.",
+    "Unqualified real theory, physical computation and universal self-consistency analogy; duplicate date."
+  ],
+  "reviewedTranslationsAdded": 0
+}
