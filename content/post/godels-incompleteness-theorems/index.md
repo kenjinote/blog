@@ -1,7 +1,7 @@
 ---
 title: "ゲーデルの不完全性定理：真理と、理論内での証明可能性の違い"
 date: "2026-09-14T00:00:51+09:00"
-image: "eyecatch.jpg"
+image: "eyecatch-v2.png"
 description: "不完全性定理の条件、無矛盾性と健全性、理論に相対的な証明不能を解説。ゲーデル数化、固定点、第二定理、停止性問題との関係を区別して示します。"
 categories: ["mathematics", "computer-science"]
 tags:

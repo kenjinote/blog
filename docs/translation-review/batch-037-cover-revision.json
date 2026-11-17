@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-11-17T10:17:41.329268+09:00",
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Edit target: the supplied square blog cover for an article on Godel incompleteness. Preserve its cosmic galaxy background, luminous blue and warm gold jigsaw puzzle pieces, central incomplete puzzle with a missing piece, composition, depth and lighting. Remove EVERY letter, word, numeral, mathematical symbol, equation and pseudo-text from every puzzle piece and the entire image. Fill those areas naturally with the existing galaxy and puzzle surface textures. No replacement labels or text anywhere. Keep the image square and opaque. This is a decorative illustration, not a mathematical diagram.",
+  "generatedPath": "C:\\Users\\kenjinote\\.codex\\generated_images\\01a162ce-b49c-7d80-8ef4-9d817fe123e1\\exec-631633f6-a6c5-4c99-8af8-02fda3eb1bac.png",
+  "originalAsset": "content/post/godels-incompleteness-theorems/eyecatch.jpg",
+  "originalAssetSha256": "55e7ec54eb2288085bcd98adf49a8674f0cf6bb86b48e29e60175ef30e993d6c",
+  "newAsset": "content/post/godels-incompleteness-theorems/eyecatch-v2.png",
+  "newAssetSha256": "b334a6342ef1288b6072ed9b644031511e4b9bf8ec4b9dbcc0a62f19f0239e78",
+  "bytes": 2754995,
+  "changes": [
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.ar.md",
+      "before": "8ae779333ddcd43535bdd1b43ab262f6275f9a1fbd63e32e31a1afda91b968d4",
+      "after": "818fed0280f5c82e08d736d12ceb93b60877a57bafb02293902f88071da333c2"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.de.md",
+      "before": "c68d4df89025a7461d702e05572301b84c3385d3227c571dd8422eaca2d8723d",
+      "after": "35c651dc448c3f1da639ccbabf5db1ea9a9670937eecc4e12d6da142a7d544db"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.en.md",
+      "before": "437f3923156952cbea1bf76daf4c98f7797205eed15b438c53ca991d0f0de045",
+      "after": "7999fe0844bc3330e697a646576b7c10857b81ff79fd2c8608de62e9dc577378"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.es.md",
+      "before": "261ce4ed21aebd272a9b36a2b779a03fb8200b6430a7557528b4b6318746ae2a",
+      "after": "626dc3c73233cb2e20af06a6dce4461c99321a1e152ab464bf3109bea85a040a"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.fr.md",
+      "before": "4e0321ba3a023a1483523a2136e3884a503b5885efc986f5cd105d91567417e3",
+      "after": "68d1cd5408b92348f8d176bc9b3d8688e655435fe9d415a723038a5068abdd8c"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.hi.md",
+      "before": "bd0a80cd0bbbc1ef0beaf75ac1fe23be2c4597a4efcbd09c184cca317b98da49",
+      "after": "9cdb5d05f6ec7a46c6406267c2f72eb7d483501cb445f1d18d826c2dc10bdafb"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.id.md",
+      "before": "20edfb4885f889b212c024b371849f0024e1056dc05c7ba84fccbcdb96b2ed85",
+      "after": "23ea03c01371970271c1aee2d5e20df3c6e407ae49f2d2cba103c6221c6b121e"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.ko.md",
+      "before": "2f6d89ab8c1cc5b6ccdb262a9eb4e2d7c97e561e18ad3d6fb815f293e5df4a55",
+      "after": "4fafedf4f953a1895ce4bc9fcaf461a253fbbec5ddcbcfe61503a05256f7c87b"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.md",
+      "before": "2499050e601b98d9c589442b741f6f150541804abad5c7344b282341f406f3c8",
+      "after": "4768e83cb5bc16d0753c3b460e0e81a0de8df159e4b2e0638aa3a73ddff8d777"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.pt.md",
+      "before": "79105e1e1ee09ac66bc124f2ab4f8a16688777e5aa1ef2c5ed125ed56af444f0",
+      "after": "bdf46ba585d918bdca311953cfc31d212cda4003134ca72053eb714376ac6739"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.ru.md",
+      "before": "b900aa008f7fd176b7cdf02d9968e5dd28fdd777bddebd6f8770fcc5ceab0c69",
+      "after": "ea2d360c5a927bad5c44b8093def861db0a8bc6c25868419d737fc9d00e4fa7c"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.zh-cn.md",
+      "before": "2ba0b267b64d385f10ef1fc3e09da5e45959f5845657e2b020c3616bc48afaf5",
+      "after": "cb33a6b37abd60a255f7ff863dc1b097c8be5acb9ddd42444c09a3d8986e7b93"
+    },
+    {
+      "path": "content/post/godels-incompleteness-theorems/index.zh-tw.md",
+      "before": "445c87ffbdc2e814ce9de1643817df4b1dc0d0d394dfb28a1f7f1122b8091174",
+      "after": "42fe20ad7acf5952fedca794f1874cbc0363ec20096e49028f7e818a2b949cd2"
+    }
+  ],
+  "visualReview": "Original and generated images actually viewed. New square opaque image retains cosmic puzzle and missing piece; all visible pseudo-math/text removed.",
+  "reviewedTranslationsAdded": 0,
+  "scope": "Image references only in12unread translations; not semantic translation approval. Full source validation and publication pending."
+}

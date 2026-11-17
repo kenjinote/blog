@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "article": "godels-incompleteness-theorems",
+  "frozenSourceHash": "4768e83cb5bc16d0753c3b460e0e81a0de8df159e4b2e0638aa3a73ddff8d777",
+  "reviews": {},
+  "stages": [
+    {
+      "date": "2026-11-17",
+      "stage": "Japanese original and complete saved revision read",
+      "source": "content/post/godels-incompleteness-theorems/index.md",
+      "diagrams": 4,
+      "diagramEdges": [
+        3,
+        5,
+        4,
+        4
+      ],
+      "displayMath": 2,
+      "articleExecutablePrograms": 0,
+      "externalReferences": 4,
+      "internalReferences": 3,
+      "cover": "docs/translation-review/batch-037-cover-revision.json",
+      "reviewedTranslationsAdded": 0
+    }
+  ],
+  "publicationPending": true,
+  "scope": "Original Japanese and complete consolidated Japanese revision actually read. Cover original/generated viewed. Source selected-primary evidence documented in037repair receipts. All12translations unread; generated HTML verification pending; no semantic approval inferred from image-only metadata changes."
+}

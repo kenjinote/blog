@@ -1,7 +1,7 @@
 ---
 title: "Teoremas de la incompletitud de Gödel: La demostración matemática de las \"verdades que nunca podrán ser demostradas\""
 date: "2026-09-24T19:44:38+09:00"
-image: "eyecatch.jpg"
+image: "eyecatch-v2.png"
 date: 2026-09-14T00:00:51+09:00
 description: "Explicamos de forma clara y comprensible el histórico Teorema de Incompletitud de Gödel, que evidenció los límites de las matemáticas. Utilizaremos ejemplos y diagramas para detallar su significado y su mecanismo de prueba."
 categories: ["mathematics", "computer-science"]
