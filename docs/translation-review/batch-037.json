@@ -202,6 +202,46 @@
         "Selected primary-source excerpts only; no full-paper review or theorem certification.",
         "Batch037 publication and all-article goal remain pending."
       ]
+    },
+    "post/godels-incompleteness-theorems/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-17",
+      "reviewer": "Codex (AI)",
+      "source": "post/godels-incompleteness-theorems/index.md",
+      "sourceHash": "4768e83cb5bc16d0753c3b460e0e81a0de8df159e4b2e0638aa3a73ddff8d777",
+      "translationHash": "a061bff28269ddec120de1b38296fdf72f6f4c8f7e68ebc3109c4637cef6ac4b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Original and saved revised Portuguese whole bodies read and compared with the whole revised Japanese source: introduction, eight chapters, conclusion and references. Replaced absolute unprovability with theory-relative unprovability; restored effective axiomatization and sufficient PA-extension assumptions; distinguished consistency, soundness, completeness and decidability. Clarified Hilbert program, stronger theories and limits of human/AI conclusions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used demonstravel/indemonstravel rather than provavel/improvavel, distinguishing proof from probability. Distinguished consistencia from correcao semantica, completude sintatica from first-order logical completeness, and computabilidade from complexidade. Checked lema do ponto fixo, esquema de axiomas de inducao, condicoes de derivabilidade, corpos reais fechados and eliminacao de quantificadores. Article retains Portuguese diacritics and European Portuguese paragem/facto/seccao usage."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared fixed-point and consistency displays exactly with Japanese. Read the finite-proof contradiction argument and external truth argument, explicitly separating failure to prove G from failure to refute G under consistency alone. Checked symbol coding 2,3,2 and positional primes 2,3,5 giving 2700. Qualified real closed fields by first-order language and halting argument by soundness. Static HTML preserves 34 TeX expressions, two displays and all four graphs with 3,5,4,4 edges. No new theorem or full proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable programs occur in this article. Read all four Mermaid sources and translated labels, compared graph structure with Japanese and checked preservation in HTML. Browser Mermaid execution was not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Four external references match Japanese; three article links use Portuguese routes for Hilbert, Godel and halting-problem. Removed unrelated CAP consistency and Turing-machine targets. Static checks cover title, actual September14 publication date, November17 lastmod, cover, canonical, unique reciprocal hreflang and article-preserving sidebar. Fresh38bundle preview:494posts+1tag,2139 multilingual pages,3898HTTPS HTML and41XML. Primary-source reading limited to previously documented excerpts."
+        }
+      },
+      "summary": "Full Portuguese comparison with corrected Japanese incompleteness article, including theorem conditions, terminology, coding, diagrams and references.",
+      "languageSpecificFindings": "Corrected improvavel/provaveis in heading, graphs and conclusion, avoiding probability readings and agreement errors. Removed split Euclidiana link and repeated Hilbert links. Replaced absolute unprovability and unqualified claims about all systems with theorem-relative hypotheses. Corrected symbol code duplication, natural-number factorization scope and CAP/halting mislinks. Read complete original and saved revised body against Japanese.",
+      "validation": "docs/translation-review/batch-037-pt-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Other6 original translation bodies remain unread.",
+        "Static HTML only; no browser KaTeX/Mermaid execution.",
+        "Selected primary-source excerpts only; no full-paper review or theorem certification.",
+        "Batch037 publication and all-article goal remain pending."
+      ]
     }
   },
   "stages": [
@@ -259,8 +299,14 @@
       "stage": "Korean whole original/revised comparison and static HTML validation",
       "validation": "docs/translation-review/batch-037-ko-validation.json",
       "reviewedTranslationsAdded": 1
+    },
+    {
+      "date": "2026-11-17",
+      "stage": "Portuguese whole original/revised comparison and static HTML validation",
+      "validation": "docs/translation-review/batch-037-pt-validation.json",
+      "reviewedTranslationsAdded": 1
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese, English, both Chinese, Spanish and Korean whole bodies reviewed;5AI records, other7unread. Static preview passed. Publication037 and full goal pending."
+  "scope": "Japanese, English, both Chinese, Spanish, Korean and Portuguese whole bodies reviewed;6AI records, other6unread. Static preview passed. Publication037 and full goal pending."
 }

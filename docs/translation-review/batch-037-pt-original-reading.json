@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-17",
+  "path": "content/post/godels-incompleteness-theorems/index.pt.md",
+  "sha256": "bdf46ba585d918bdca311953cfc31d212cda4003134ca72053eb714376ac6739",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Improvavel/provaveis used for unprovable/provable in heading, diagrams and conclusion, suggesting probability instead of demonstrability.",
+    "Euclid link splits Euclidiana; repeated Hilbert links clutter heading/prose.",
+    "Missing effectiveness/soundness and second-theorem predicate conditions; absolute unprovability, broad real-number/human/machine claims.",
+    "Zero gets two codes, prime factorization claimed for all naturals.",
+    "CAP and Turing-machine mislinks; duplicate date; grammatical disagreement proposicoes improvavel."
+  ],
+  "reviewedTranslationsAdded": 0
+}
