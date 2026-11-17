@@ -4445,6 +4445,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-036.json",
       "evidenceHash": "18c60b28453bb815d8da64c8eef73e472c4387e1717c278366a3aa619559530d"
+    },
+    "post/godels-incompleteness-theorems/index.en.md": {
+      "source": "post/godels-incompleteness-theorems/index.md",
+      "reviewedAt": "2026-11-17",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4768e83cb5bc16d0753c3b460e0e81a0de8df159e4b2e0638aa3a73ddff8d777",
+      "translationHash": "4cc373b94aea7ba0b39417bf4381c22883e055eca6a6dbe34ded4ff1796ca1a6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-037.json",
+      "evidenceHash": "7d36cd3a24744c9c78fd94a26ede2ca47257821a3ba31878888e9e6ed2eecfa1"
     }
   }
 }

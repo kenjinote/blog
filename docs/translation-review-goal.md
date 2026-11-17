@@ -33,7 +33,7 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 優先記事の36翻訳について、2026-10-24のAI校閲として根拠と原文・翻訳のハッシュを記録。人による確認は0件。
 - 中心極限定理は全13版のPython例を実行し、数式とコード構造も照合。セキュリティ記事のCSP・HTML例は全13版で一致。Unicodeのバイト列は実際の変換で確認。
 - 根拠: `docs/translation-review/batch-001.json`、`batch-002.json`。各バッチの `*-validation.json` に補助検査を保存。
-- 全記事の編集キュー13,032行のうち、AI校閲済み444、未校閲12,588。未確認の翻訳を校閲済みにはしない。
+- 全記事の編集キュー13,032行のうち、AI校閲済み445、未校閲12,587。未確認の翻訳を校閲済みにはしない。
 - 大数の法則は原文と12翻訳すべての本文全体を校閲し、バッチ003に記録。全13版のコード実行・数式比較・ローカルビルドを通過。
 - 大数の法則の12翻訳を含む公開CI（run 40000689502）は成功。バッチ001〜003の48翻訳と日本語原文4記事の計52公開ページで、更新本文・canonical・言語・hreflang・サイドバーを確認済み（`publication-002-003.json`）。
 - コーシーは原文と12翻訳すべての本文全体を校閲し、バッチ004に記録。積分定理・積分公式・シュワルツの不等式の条件、歴史年表、各言語の数学用語と誤リンクを訂正。全13版の数式・年表・リンク・ローカルビルドを検査済み。公開CI run 40003002739 は成功し、バッチ001〜004の60翻訳と原文5記事の計65公開URLで修正本文・canonical・言語・hreflang・サイドバーを確認済み（`publication-004.json`）。
@@ -800,3 +800,5 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 2026-11-17 停止問題13版の統合静的検査成功。415TeX・52表示式・13図104辺・989本文断片・全コードと参照先を校閲済み版と照合。37束481記事＋タグ1のビルド、多言語2087ページ、HTTPS3801HTML41XML検査成功。AI444件の記録は変更せず。公開後検査・全記事goalは継続。
 
 2026-11-17 Batch036 publication closed after exact CI43992951343 attempt1/head159f7f81ba89e5940d4b1d965b34fa1fb6108057 success. Actual481article+3Hindi tag HTTP checks passed first attempt; new13halting versions415TeX/13graphs104edges/989prose fragments,4external3internal refs and6code/text blocks each; ArabicRTL. Original12review entries and dispatch preserved. AI444/unreviewed12588/human0. Full goal active.
+
+- 2026-11-17 ゲーデルの不完全性定理の英語旧稿・改稿を日本語原文全体と照合し、AI校閲1件を登録（累計445／未確認12,587／人0）。定理の条件、無矛盾性と健全性、理論に相対的な証明不能、符号化と誤リンクを修正。英語34TeX・2表示式・4図16辺・77本文断片、38束494記事＋タグ1の静的検査を通過。他11言語と公開確認は未完了。

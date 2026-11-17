@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-17T18:43:27.537605+09:00",
+  "recordStdout": "Recorded ai review: post/godels-incompleteness-theorems/index.en.md\n",
+  "ledgerStdout": "{\"current\": 445, \"unreviewed\": 12587}\n",
+  "priorEntriesUnchanged": 444,
+  "sourceHash": "4768e83cb5bc16d0753c3b460e0e81a0de8df159e4b2e0638aa3a73ddff8d777",
+  "translationHash": "4cc373b94aea7ba0b39417bf4381c22883e055eca6a6dbe34ded4ff1796ca1a6",
+  "newAiReviews": 1,
+  "humanReviews": 0,
+  "publicationPending": true
+}
