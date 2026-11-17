@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-17",
+  "path": "content/post/godels-incompleteness-theorems/index.de.md",
+  "sha256": "35c651dc448c3f1da639ccbabf5db1ea9a9670937eecc4e12d6da142a7d544db",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "German-or-Japanese sentence leftover; awkward Godels Papier and Ziel terminology.",
+    "Repeated linked Hilbert compounds/genitives, self-links and doubled Halteproblem links.",
+    "Missing effective axiomatization, soundness and derivability qualifications; absolute unprovability and universal self-proof claims.",
+    "Same zero assigned codes2and5; factorization for every natural number.",
+    "Physical process, unqualified real-number theory and human superiority claims; CAP and Turing-machine mislinks; duplicate date."
+  ],
+  "reviewedTranslationsAdded": 0
+}

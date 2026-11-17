@@ -1,160 +1,171 @@
 ---
-title: "Gödels Unvollständigkeitssätze: Der mathematische Beweis für „absolut unbeweisbare Wahrheiten“"
-date: "2026-09-24T19:44:38+09:00"
+title: "Gödels Unvollständigkeitssätze: Wahrheit und Beweisbarkeit innerhalb einer Theorie"
+date: "2026-09-14T00:00:51+09:00"
 image: "eyecatch-v2.png"
-date: 2026-09-14T00:00:51+09:00
-description: "Eine verständliche Erklärung der historischen „Unvollständigkeitssätze“ von Gödel, die die Grenzen der Mathematik aufzeigten. Mit konkreten Beispielen und Diagrammen erklären wir die Bedeutung und die Mechanismen des Beweises."
+description: "Die Voraussetzungen der Unvollständigkeit, Widerspruchsfreiheit und semantische Korrektheit sowie theoriebezogene Unbeweisbarkeit: Gödelnummerierung, Fixpunkte, zweiter Satz und Halteproblem."
 categories: ["mathematics", "computer-science"]
 tags:
   - "Logic"
   - "Gödel"
   - "Incompleteness Theorem"
 slug: "godels-incompleteness-theorems"
+math: true
+mermaid: true
+lastmod: "2026-11-17"
 ---
 
-„Mathematik ist absolut korrekt“ ── Jeder hat wahrscheinlich schon einmal so gedacht. Aber eine von dem jungen Mathematiker [Kurt Gödel](https://kenji.blog/de/p/godel/) im Jahr 1931 veröffentlichte Arbeit hat diesen gesunden Menschenverstand grundlegend erschüttert. Dies sind **[Gödels Unvollständigkeitssätze](https://kenji.blog/de/p/godels-incompleteness-theorems/)**.
+Können wir alle Fragen über natürliche Zahlen beantworten, wenn wir ein Axiomensystem wählen und nach mechanischen Regeln Beweise aufbauen? Gödels Unvollständigkeitssätze zeigen, dass Theorien, die bestimmte Voraussetzungen erfüllen, keine solche vollständige Lösung liefern können.
 
-In diesem Artikel werden wir dieses schockierende Theorem, das besagt, dass es „absolut unbeweisbare Wahrheiten“ gibt, hinsichtlich seiner Bedeutung und der Funktionsweise seines Beweises mit konkreten Beispielen und Diagrammen ausführlich erklären.
+Entscheidend ist, <strong>in welcher Theorie eine Aussage nicht beweisbar ist</strong>. Das Ergebnis besagt nicht, dass es Wahrheiten gibt, die unabhängig von jeder Wahl der Axiome unbeweisbar bleiben. Wir unterscheiden Widerspruchsfreiheit, semantische Korrektheit und effektive Axiomatisierung und betrachten dabei Kodierung, Selbstbezug und den Geltungsbereich der Sätze.
 
 ---
 
-## 1. Hintergrund: Das [Hilbert](https://kenji.blog/de/p/hilbert/)-Programm und die Krise der Mathematik
+## 1. Hilberts Programm und drei verschiedene Fragen
 
-Vom späten 19. bis zum frühen 20. Jahrhundert sah sich die mathematische Welt mit den „Paradoxien der Mengenlehre (z. B. dem Russellschen Paradoxon)“ konfrontiert, was ihre Grundlagen erschütterte. [David Hilbert](https://kenji.blog/de/p/hilbert/), die höchste Autorität der damaligen mathematischen Welt, stand auf, um diese „Krise der Mathematik“ zu lösen.
+Um die Grundlagen der Mathematik zu sichern, verfolgten [David Hilbert](/de/p/hilbert/) und andere das Programm, Mathematik durch formale Axiomensysteme zu beschreiben und deren Widerspruchsfreiheit mit finiten Methoden zu beweisen. Die Formalisierung der Mathematik und die Untersuchung ihrer Beweise von außen sind verschiedene Aufgaben. Die Beschreibung „Ein System garantiert von innen alles über sich selbst“ gibt dieses Programm nicht angemessen wieder.
 
-[Hilbert](https://kenji.blog/de/p/hilbert/) versuchte, alle mathematischen Schlussfolgerungen vollständig zu symbolisieren und die Mathematik nur durch mechanische Regeln neu aufzubauen. Das von ihm vorgeschlagene „[Hilbert](https://kenji.blog/de/p/hilbert/)-Programm“ zielte darauf ab, in einem formalen System der Mathematik die folgenden drei Eigenschaften zu beweisen:
+Auch die folgenden drei Eigenschaften sind zu unterscheiden.
 
-1. **Widerspruchsfreiheit** ([Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)): Es gibt keine Widersprüche im System (d. h. eine Aussage $P$ und ihre Verneinung $\neg P$ werden nicht beide bewiesen).
-2. **Vollständigkeit** (Completeness): Jede mathematische Aussage kann innerhalb des Systems zwingend entweder als wahr oder falsch bewiesen werden.
-3. **Entscheidbarkeit** (Decidability): Für jede gegebene Aussage gibt es ein mechanisches Verfahren, um zu bestimmen, ob sie beweisbar ist oder nicht.
+- <strong>Widerspruchsfreiheit</strong>: Die Theorie beweist nicht sowohl eine Aussage $A$ als auch ihre Negation $\neg A$.
+- <strong>Vollständigkeit einer Theorie</strong>: Für jede Aussage $A$ ihrer Sprache beweist die Theorie $A$ oder $\neg A$. Gemeint ist syntaktische Vollständigkeit.
+- <strong>Entscheidbarkeit</strong>: Ein stets terminierender Algorithmus kann feststellen, ob eine vorgelegte Aussage ein Theorem der Theorie ist.
 
-[Hilbert](https://kenji.blog/de/p/hilbert/) hinterließ den berühmten Satz „Wir müssen wissen. Wir werden wissen.“ und glaubte fest daran, dass die Mathematik ein Schloss perfekter Logik werden könnte, das alles lösen kann.
+Vollständigkeit unterscheidet sich von semantischer Korrektheit, nach der alle Theoreme in der beabsichtigten Interpretation wahr sind. Auch der Vollständigkeitssatz der Logik erster Stufe bedeutet etwas anderes als die Vollständigkeit einer bestimmten arithmetischen Theorie.
 
 ```mermaid
-graph TD
-    subgraph "Konzept des Hilbert-Programms"
-        A["Axiomensystem (offensichtliche Prämissen)"] -->|"Strikte Schlussfolgerungsregeln"| B["Alle wahren mathematischen Aussagen"]
-        A -->|"Beweis innerhalb des Systems"| C["Garantie der eigenen Widerspruchsfreiheit"]
-    end
+flowchart TD
+    Math["Mathematik formalisieren"] --> Theory["Axiome und Schlussregeln festlegen"]
+    Theory --> Proof["Endliche Beweise als mathematische Objekte behandeln"]
+    Proof --> Goal["Widerspruchsfreiheit mit finiten Methoden beweisen"]
 ```
 
 ## 2. Formale Systeme und Peano-Arithmetik
 
-Um Gödels Theorem zu verstehen, wollen wir zunächst „formale Systeme“ und „grundlegende Arithmetik“ betrachten.
+Ein formales System legt Symbole, Regeln zur Bildung von Formeln, Axiome und Schlussregeln fest. Die syntaktische Prüfung, ob ein endlicher Beweis den Regeln folgt, lässt sich von der semantischen Frage trennen, ob eine Formel in einer Interpretation wahr ist. Dass die Beweisprüfung keine Betrachtung der Bedeutung erfordert, heißt nicht, dass Bedeutung für die Mathematik unwichtig wäre.
 
-Ein formales System ist ein Satz von vordefinierten Zeichenfolgen (Symbolen) und Puzzle-Regeln (Schlussfolgerungsregeln) zu ihrer Manipulation. Dort ist keine „Bedeutung“ erforderlich, die Mathematik wird als reines Symbol-Transformationsspiel betrachtet.
+Ein übliches Beispiel ist die Peano-Arithmetik erster Stufe (PA). Sie behandelt Null, Nachfolger, Addition und Multiplikation natürlicher Zahlen und enthält ein Induktionsaxiomenschema. Auch $1+1=2$ ist eine Aussage, die aus diesen Axiomen und Regeln hergeleitet wird.
 
-Das Ziel von Gödels Theorem ist ein System, das „die Addition und Multiplikation natürlicher Zahlen“ einschließt. Ein repräsentatives Beispiel ist das Axiomensystem namens **Peano-Arithmetik** (PA). Die Peano-Arithmetik beginnt mit grundlegenden Regeln (Axiomen) wie „0 ist eine natürliche Zahl“ oder „Zu jeder natürlichen Zahl $x$ gibt es einen Nachfolger $S(x)$“.
+Zur übersichtlichen Darstellung betrachten wir hauptsächlich effektiv axiomatisierte Theorien, die PA enthalten, als hinreichenden Rahmen. Das sind nicht die schwächsten möglichen Voraussetzungen: Formen des ersten Satzes gelten auch über schwächeren arithmetischen Theorien.
 
-Zum Beispiel ist die allseits bekannte Tatsache „ $1 + 1 = 2$ “ innerhalb des formalen Systems der Peano-Arithmetik nur ein „Theorem“, das durch Manipulation von Symbolen mechanisch abgeleitet wird.
+## 3. Der erste Unvollständigkeitssatz: Aussagen, die eine Theorie nicht klärt
 
-[Hilbert](https://kenji.blog/de/p/hilbert/) dachte, dass wenn man solche formalen Systeme vergrößert, man irgendwann alle mathematischen Wahrheiten abdecken könnte.
+Wir formulieren [Kurt Gödels](/de/p/godel/) Unvollständigkeitsergebnis in der folgenden Form, die Rossers Verbesserung einbezieht.
 
-## 3. Der Schock des Ersten Unvollständigkeitssatzes: Aussagen, die „wahr, aber nicht beweisbar“ sind
+> Jede widerspruchsfreie, effektiv axiomatisierte Theorie, die PA enthält, besitzt eine arithmetische Aussage, die sie weder beweisen noch widerlegen kann.
 
-Aber 1931 veröffentlichte der damals erst 25-jährige [Kurt Gödel](https://kenji.blog/de/p/godel/) eine Arbeit, die [Hilbert](https://kenji.blog/de/p/hilbert/)s Traum zunichtemachte. Das ist der **Erste Unvollständigkeitssatz**.
+„Effektiv axiomatisiert“ bedeutet, dass sich Axiome und Beweise durch ein mechanisches Verfahren aufzählen lassen. Unbeweisbarkeit bezieht sich auf die gewählte Theorie. Sie bedeutet nicht, dass die Aussage auch in einer anderen Theorie mit zusätzlichen Axiomen unbeweisbar bleiben muss. Wahrheit in den natürlichen Standardzahlen und Beweisbarkeit in einer festen Theorie sind zu unterscheiden.
 
-> **Erster Unvollständigkeitssatz**
-> In jedem widerspruchsfreien formalen System, das stark genug ist (um die Peano-Arithmetik zu enthalten), gibt es immer Aussagen, die wahr sind, aber innerhalb dieses Systems nicht bewiesen werden können.
-
-Dieses Theorem zeigte, dass „Wahrheit“ und „Beweisbarkeit“ zwei völlig unterschiedliche Dinge sind. Es war unmöglich, alle Wahrheiten der mathematischen Welt mit der „Maschine“ des formalen Systems einzufangen.
+Um die Menge beweisbarer Aussagen als Teilmenge der in den natürlichen Standardzahlen wahren Aussagen darzustellen, benötigen wir die stärkere Voraussetzung der <strong>semantischen Korrektheit</strong>. Widerspruchsfreiheit schließt lediglich aus, eine Aussage und ihre Negation zu beweisen. Sie allein macht nicht jedes Theorem in den natürlichen Standardzahlen wahr.
 
 ```mermaid
-graph LR
-    subgraph "Die Diskrepanz zwischen Wahrheit und Beweisbarkeit"
-        A["Menge der wahren Aussagen"]
-        B["Menge der beweisbaren Aussagen"]
-        B -.->|"Vollständig enthalten"| A
-        C["Aussagen, die wahr, aber unbeweisbar sind (Unvollständigkeit)"]
-        A -->|"Existieren immer"| C
-    end
+flowchart TD
+    T["Effektiv axiomatisierte Erweiterung T von PA"] --> C["T sei widerspruchsfrei"]
+    C --> R["Eine arithmetische Aussage ist in T weder beweisbar noch widerlegbar"]
+    T --> S["Zusätzlich semantische Korrektheit für die natürlichen Standardzahlen"]
+    S --> Truth["Alle Theoreme von T sind in den natürlichen Standardzahlen wahr"]
+    Truth --> Gap["Dennoch gibt es eine wahre arithmetische Aussage ohne Beweis in T"]
 ```
 
-### Die mathematische Übersetzung des Lügner-Paradoxons
+### Selbstbezug als Arithmetik konstruieren, nicht als Widerspruch
 
-Der Kern von Gödels Beweis liegt darin, in das formale System der Mathematik ein „Paradoxon der Selbstreferenz“ einzubauen.
+Die Ähnlichkeit mit dem Lügnersatz „Dieser Satz ist falsch“ kann die Anschauung unterstützen. Gödels Konstruktion führt aber keinen Widerspruch in die Mathematik ein. Sie kodiert Aussagen und Beweise durch Zahlen und drückt die <strong>Beweisbarkeit in einer bestimmten Theorie</strong> arithmetisch aus.
 
-Erinnern Sie sich an das seit dem antiken Griechenland bekannte „Lügner-Paradoxon“.
-„Dieser Satz ist eine Lüge.“
-Wenn dieser Satz wahr ist, ist der Inhalt eine „Lüge“. Wenn er eine Lüge ist, ist der Inhalt „wahr“.
+Die Theorie sei $T$, und $\operatorname{Prov}_T(y)$ sei das übliche Beweisbarkeitsprädikat, das ausdrückt, dass die Aussage mit dem Code $y$ einen Beweis in $T$ besitzt. $\ulcorner G_T\urcorner$ bezeichnet das Numeral für den Code der Aussage $G_T$. Mit dem Fixpunktlemma lässt sich eine Aussage konstruieren, für die die Theorie folgende Äquivalenz beweist:
 
-Gödel brachte eine ähnliche Logik in die Mathematik ein und konstruierte eine Aussage $G$ durch mathematische Formeln wie folgt:
+$$
+T\vdash G_T\leftrightarrow\neg\operatorname{Prov}_T(\ulcorner G_T\urcorner)
+$$
 
-**Aussage $G$**: „Diese Aussage $G$ ist in diesem System nicht beweisbar.“
+Dabei bedeutet $T\vdash A$, dass $T$ die Aussage $A$ beweist. Diese Konstruktion verwendet Kodierung und Substitution, statt einfach einen natürlichsprachlichen Satz als Axiom anzunehmen.
 
-Nehmen wir an, das formale System könnte diese Aussage $G$ beweisen. Das würde bedeuten, dass es eine Aussage bewiesen hätte, die behauptet „nicht beweisbar“ zu sein, womit das System widersprüchlich wäre. Wenn man unter der Prämisse steht, dass es „widerspruchsfrei“ ist, kann das System die Aussage $G$ niemals beweisen.
+Hätte $T$ einen Beweis von $G_T$, ließe sich die Existenz dieses endlichen Beweises auch arithmetisch ausdrücken. Daher würde $T$ die Aussage $\operatorname{Prov}_T(\ulcorner G_T\urcorner)$ beweisen. Aus der angezeigten Äquivalenz und $G_T$ folgte jedoch auch ihre Negation. Ist $T$ widerspruchsfrei, kann sie $G_T$ also nicht beweisen.
 
-Nun, hier beginnt Gödels Magie. Aussage $G$ konnte innerhalb des Systems nicht bewiesen werden. Aber Aussage $G$ ist genau der Satz, der behauptet, er sei „nicht beweisbar“. Da es sich genau so verhält, wie es behauptet, kann man aus einer äußeren Perspektive schlussfolgern, dass Aussage $G$ **wahr** ist.
+In den natürlichen Standardzahlen beschreibt das übliche Beweisbarkeitsprädikat die tatsächlich vorhandenen endlichen Beweise korrekt. Mithilfe dieser Tatsache folgt aus dem Fehlen eines Beweises, dass $G_T$ in den natürlichen Standardzahlen wahr ist. Dieses externe Argument enthält die Annahme, dass $T$ widerspruchsfrei ist. Es besagt nicht, dass Menschen die Widerspruchsfreiheit jeder beliebigen Theorie automatisch erkennen können.
 
-So wurde eine Aussage geboren, die „wahr ist, obwohl sie nicht bewiesen werden kann“.
+Aus diesem Argument allein darf man nicht schließen, dass bloße Widerspruchsfreiheit auch einen Beweis der Negation desselben $G_T$ ausschließt. Semantische Korrektheit schließt beispielsweise aus, die Negation der wahren Aussage $G_T$ zu beweisen. Gödels ursprünglicher Unabhängigkeitsbeweis verwendete $\omega$-Widerspruchsfreiheit. Rosser konstruierte eine andere Aussage und erhielt Unbeweisbarkeit und Unwiderlegbarkeit allein aus gewöhnlicher Widerspruchsfreiheit.
 
-## 4. Gödelisierung: Die geniale Idee, Formeln in Zahlen zu übersetzen
+## 4. Gödelnummerierung: Zeichenfolgen und Beweise durch Zahlen kodieren
 
-Wie drückt man einen deutschen (oder japanischen) Satz wie „Diese Aussage ist nicht beweisbar“ in der Peano-Arithmetik aus, die nur Addition und Multiplikation hat? Hier erfand Gödel die Methode der **Gödelnummerierung** (Gödel numbering).
+Die Gödelnummerierung ordnet Symbolen, Formeln und endlichen Beweisfolgen natürliche Zahlen als Codes zu. In unserem Lehrbeispiel erhält jedes Vorkommen desselben Symbols dieselbe positive ganze Zahl, während unterschiedlichen Positionen einer Zeichenfolge unterschiedliche Primzahlen zugeordnet werden. Dies ist keine wörtliche Wiedergabe der Nummerierung aus der ursprünglichen Arbeit.
 
-Gödel wies jedem in Formeln verwendeten Symbol ($\neg$, $\vee$, $\exists$, $0$, $=$ usw.) eine eindeutige Zahl (Primzahl) zu. Dann nutzte er die Eindeutigkeit der Primfaktorzerlegung (die Eigenschaft, dass jede natürliche Zahl auf genau eine Weise in ein Produkt von Primzahlen zerlegt werden kann), um die Zeichenfolge einer Formel in eine riesige natürliche Zahl zu übersetzen.
+Das Symbol „0“ erhalte den Code 2 und „=“ den Code 3. Die Zeichenfolge „0=0“ hat damit die Codefolge 2, 3, 2. Werden die Positionsprimzahlen 2, 3, 5 mit diesen Exponenten potenziert und die Ergebnisse multipliziert, ergibt sich 2700. Die Eindeutigkeit der Primfaktorzerlegung für ganze Zahlen ab zwei ermöglicht in diesem Beispiel die Wiederherstellung der ursprünglichen Codefolge.
 
 ```mermaid
 graph TD
-    subgraph "Der Mechanismus der Gödelnummerierung"
-        S1["Symbol '0'"] -->|"Zuweisung"| N1["Primzahl 2"]
-        S2["Symbol '='"] -->|"Zuweisung"| N2["Primzahl 3"]
-        S3["Symbol '0'"] -->|"Zuweisung"| N3["Primzahl 5"]
-        F["Formel '0=0'"] -->|"Potenzieren und multiplizieren"| GN["Gödelnummer: 2^2 * 3^3 * 5^2 = 2700"]
+    subgraph "Mechanismus der Gödelnummerierung"
+        S1["Symbol '0'"] -->|"Zuordnen"| N1["Symbolcode 2"]
+        S2["Symbol '='"] -->|"Zuordnen"| N2["Symbolcode 3"]
+        S3["Symbol '0'"] -->|"Zuordnen"| N3["Symbolcode 2"]
+        F["Zeichenfolge '0=0'"] -->|"Positionsprimzahlen 2,3,5 mit Symbolcodes 2,3,2 potenzieren"| GN["Gödelnummer: 2^2 * 3^3 * 5^2 = 2700"]
     end
 ```
 
-Mit dieser Methode kann sogar der gesamte „Beweisprozess“ wie „Formel $A$ ist ein Beweis für Formel $B$“ in ein reines Arithmetikproblem (Eigenschaften großer Zahlen, z.B. ob eine Zahl durch eine andere teilbar ist) umgewandelt werden.
+Wichtig ist nicht die Erzeugung riesiger Zahlen, sondern dass sich Syntax, Substitution und die Prüfung endlicher Beweise als Beziehungen zwischen Zahlen behandeln lassen. Beispielsweise ist die Beziehung „Die Zahl $p$ kodiert einen Beweis der Aussage mit dem Code $q$“ von der Beweisbarkeit zu unterscheiden, die die Existenz eines solchen $p$ behauptet.
 
-Das bedeutet, dass er eine Sprache, in der die Mathematik über „ihren eigenen Beweis“ sprechen kann (Selbstreferenz), in den Eigenschaften der natürlichen Zahlen versteckte. Das ist die gleiche Idee wie bei modernen Computern, die Bilder und Programme in „Folgen von 0- und 1-Zahlen“ kodieren und verarbeiten. Gödel erreichte dieses Konzept lange vor der Erfindung von Computern.
+Einen endlichen Beweiskandidaten zu prüfen ist etwas anderes, als zu entscheiden, dass überhaupt kein Beweis existiert. Kodierung allein macht nicht alle Fragen der Beweisbarkeit entscheidbar.
 
-## 5. Der Zweite Unvollständigkeitssatz: Die Verzweiflung, die eigene Richtigkeit nicht beweisen zu können
+## 5. Der zweite Unvollständigkeitssatz: Widerspruchsfreiheit innerhalb einer Theorie beweisen
 
-Der Erste Unvollständigkeitssatz allein erschütterte bereits die mathematische Welt, aber Gödels Papier enthielt eine noch erschreckendere Schlussfolgerung. Dies ist der **Zweite Unvollständigkeitssatz**.
+Auch den zweiten Unvollständigkeitssatz erläutern wir unter folgenden hinreichenden Voraussetzungen.
 
-> **Zweiter Unvollständigkeitssatz**
-> Ein widerspruchsfreies formales System (das stark genug ist) kann seine eigene Widerspruchsfreiheit nicht innerhalb des Systems beweisen.
+> Eine widerspruchsfreie, effektiv axiomatisierte Erweiterung von PA kann ihre eigene Widerspruchsfreiheit, ausgedrückt mit dem üblichen Beweisbarkeitsprädikat, nicht innerhalb ihrer selbst beweisen.
 
-[Hilbert](https://kenji.blog/de/p/hilbert/) hatte versucht zu beweisen, dass die Mathematik widerspruchsfrei ist, indem er die Mittel der Mathematik selbst nutzte (die wichtigste Aufgabe des [Hilbert](https://kenji.blog/de/p/hilbert/)-Programms). Aber der Zweite Unvollständigkeitssatz deklarierte: „Kein System kann durch seine eigene Kraft beweisen, dass es nicht verrückt (widersprüchlich) ist.“
+Wählen wir etwa $0=1$ als Widerspruch und drücken die Widerspruchsfreiheit so aus:
 
-Um dies intuitiv zu verstehen, denken wir so:
-Wenn jemand behauptet: „Ich lüge nie!“. Aber wir können nicht allein auf der Grundlage seiner Worte beweisen, dass „diese Person kein Lügner ist“. Denn wenn diese Person ein Lügner wäre, könnte die Aussage „Ich lüge nie“ selbst eine Lüge sein.
+$$
+\operatorname{Con}(T)
+\equiv\neg\operatorname{Prov}_T(\ulcorner 0=1\urcorner)
+$$
 
-Das gilt auch für die Mathematik: Selbst wenn ein Axiomensystem die Formel „Ich bin widerspruchsfrei ( $Con(F)$ )“ selbst ableiten könnte, hätte dieser Beweis keinen Wert, wenn das System bereits widersprüchlich wäre, da dann alle Aussagen (ob richtig oder falsch) bewiesen werden könnten.
+Dies ist eine arithmetische Aussage, nach der $T$ keinen Beweis eines Widerspruchs besitzt. Einer beliebigen Formel den Namen „Widerspruchsfreiheit“ zu geben, liefert nicht dasselbe Ergebnis. Die Formalisierung des Beweisbarkeitsprädikats und seine Ableitbarkeitsbedingungen sind wesentlich.
 
-Der Zweite Unvollständigkeitssatz zeigte die entscheidende Grenze auf, dass es unmöglich ist, die „absolute Gewissheit“ der Mathematik innerhalb der Mathematik selbst zu beweisen.
+Die Analogie zu einer Person, die behauptet „Ich lüge nie“, kann Fragen nach der Grundlage eines Beweises anregen. Sie ist kein Beweis des zweiten Satzes. Auch die Tatsache, dass eine widersprüchliche Theorie alles beweist, zeigt für sich genommen noch keine Unbeweisbarkeit in einer widerspruchsfreien Theorie.
 
-## 6. Häufige Missverständnisse über die Unvollständigkeitssätze
+Widerspruchsfreiheit ist hier von semantischer Korrektheit zu unterscheiden, also davon, dass jedes Theorem in der beabsichtigten Interpretation wahr ist. Das Ergebnis schließt nicht aus, die Widerspruchsfreiheit der ursprünglichen Theorie in einer stärkeren Theorie zu beweisen. Es gilt auch nicht ohne Voraussetzungen für Menschen, Organisationen oder sämtliche Softwaresysteme.
 
-[Gödels Unvollständigkeitssätze](https://kenji.blog/de/p/godels-incompleteness-theorems/) werden aufgrund ihres dramatischen Namens oft fälschlicherweise in philosophischen, weltanschaulichen oder okkulten Kontexten verwendet. Hier klären wir typische Missverständnisse auf.
+## 6. Missverständnisse und Geltungsbereich
 
-- **Missverständnis 1: „Die Mathematik ist zusammengebrochen“**
-  - **Fakt**: Die Unvollständigkeitssätze bedeuten nicht den Zusammenbruch der Mathematik. Sie offenbarten vielmehr die Natur der formalen Logik, dass „ein bestimmtes fixes Axiomensystem allein nicht alle Wahrheiten erfassen kann“. Mathematiker haben neue, mächtigere Systeme geschaffen und die Forschung weiterentwickelt, indem sie bei Bedarf neue Axiome hinzufügten (z. B. das Auswahlaxiom oder Axiome über große Kardinalzahlen).
-- **Missverständnis 2: „Die menschliche Vernunft hat Grenzen“**
-  - **Fakt**: Das Theorem zeigt die Grenzen für „ein System, das im Voraus festgelegten mechanischen Regeln folgt (formales System)“. Beim Ersten Unvollständigkeitssatz konnten wir aus einer äußeren Perspektive erkennen, dass Aussage $G$ „wahr“ ist. Einige Gelehrte (wie Roger Penrose) interpretieren dies als Beweis dafür, dass die menschliche Vernunft die Fähigkeit hat, eine „Bedeutung (Semantik)“ zu verstehen, die über mechanische formale Systeme hinausgeht.
-- **Missverständnis 3: „Es gibt für alles Dinge, die man nicht beweisen kann“**
-  - **Fakt**: Die Unvollständigkeitssätze gelten nur für ausreichend komplexe Systeme, die die „Addition und Multiplikation natürlicher Zahlen (Peano-Arithmetik)“ enthalten. Beispielsweise sind die euklidische Geometrie oder die elementare Theorie der reellen Zahlen vollständig, und alle wahren Aussagen sind beweisbar. Unvollständigkeit tritt nur dann auf, wenn das Ziel eine ausreichend komplexe Struktur hat (eine Struktur, die Selbstreferenz ermöglicht).
+### Die Mathematik ist nicht zusammengebrochen
 
-## 7. Die Übergabe an die Turingmaschine: Der Beginn der Informatik
+Unvollständigkeit ist nicht die Verneinung von Widerspruchsfreiheit. Sie besagt, dass eine feste Theorie manche Aussagen offenlässt. Fügt man Axiome hinzu, muss man die Gründe für ihre Wahl und Fragen wie die Widerspruchsfreiheit der Erweiterung prüfen. Zusätzliche Axiome beseitigen nicht automatisch alle Schwierigkeiten.
 
-Die Auswirkungen von Gödels Theorem beschränkten sich nicht auf die Mathematik. 1936 übertrug der britische Mathematiker [Alan Turing](https://kenji.blog/de/p/turing/) Gödels Konzept des „formalen Systems“ auf physische Rechenprozesse und erdachte ein virtuelles Computermodell namens „Turingmaschine“.
+### Der Satz beweist keine Überlegenheit des Menschen über Maschinen
 
-Turing wandte Gödels Unvollständigkeitssatz auf die Welt der Computer an und bewies: „Es gibt keinen universellen Algorithmus, der im Voraus bestimmen kann, ob ein Computerprogramm jemals anhalten wird.“ Dies ist das berühmte **[Halteproblem](https://kenji.blog/de/p/turing-machine-computability/)** ([Halting Problem](https://kenji.blog/de/p/turing-machine-computability/)).
+Selbst das externe Argument für die Wahrheit einer Gödel-Aussage setzt Bedingungen wie die Widerspruchsfreiheit der Theorie voraus. Der Satz besagt nicht, dass Menschen diese Voraussetzungen für jede Theorie überprüfen können. Philosophische Argumente über menschliche Vernunft oder KI sind von den hier dargestellten mathematischen Folgerungen zu trennen.
+
+### Nicht jede Theorie ist unvollständig
+
+Sprache, Axiome, Effektivität und die Stärke zur Darstellung von Arithmetik sind entscheidend. Beispielsweise ist die Theorie erster Stufe der reell abgeschlossenen Körper, die reelle Zahlen mit Null, Eins, Addition, Multiplikation und Ordnung behandelt, vollständig und entscheidbar. Quantorenelimination bietet einen Weg zur Entscheidung ihrer Aussagen.
+
+Das bedeutet nicht, dass sich sämtliche Mathematik über reelle Zahlen mit beliebigen Funktionen oder Mengen automatisch lösen lässt. Es liefert auch nicht dasselbe Ergebnis für die Arithmetik natürlicher Zahlen. Auch die Behauptung „Die euklidische Geometrie ist vollständig“ erfordert die Angabe der Formalisierung und der Sprache.
+
+## 7. Der Zusammenhang mit dem Halteproblem
+
+Das [Halteproblem](/de/p/halting-problem/) besagt, dass es keinen universellen Algorithmus gibt, der stets terminiert und korrekt beantwortet, ob ein beliebiges Programm bei einer gegebenen Eingabe anhält. Turings Modell ist mathematisch. Es handelt sich nicht einfach darum, ein formales System durch eine physische Maschine zu ersetzen.
+
+Ein möglicher Zugang zum Zusammenhang betrachtet eine Theorie, deren Beweise mechanisch aufzählbar sind und die nur wahre Aussagen über Halten und Nichthalten beweist. Könnte sie für jedes Programm und jede Eingabe Halten oder Nichthalten beweisen, könnten wir die Beweise aufzählen und die Antwort zurückgeben, für die wir einen Beweis finden. Damit wäre das Halteproblem entscheidbar.
 
 ```mermaid
-graph TD
-    subgraph "Stammbaum von der Mathematik zur Informatik"
-        Godel["Gödel (1931)<br/>Unvollständigkeitssatz"] -->|"Existenz unbeweisbarer Aussagen"| Turing["Turing (1936)<br/>Halteproblem"]
-        Turing -->|"Existenz unberechenbarer Probleme"| Computer["Moderne Informatik<br/>(Komplexitätstheorie / Grenzen der KI)"]
-    end
+flowchart TD
+    T["Theorie mit aufzählbaren Beweisen und nur wahren Aussagen zum Halten"] --> A["Sie kläre Halten oder Nichthalten für jedes Programm und jede Eingabe"]
+    A --> Search["Beide Arten von Beweisen suchen und die zuerst bewiesene Antwort ausgeben"]
+    Search --> H["Dies ergäbe einen universellen Entscheider für das Halteproblem"]
+    H --> No["Widerspruch zur Unentscheidbarkeit des Halteproblems"]
 ```
 
-Die Grenze der Mathematik, dass es „unbeweisbare Wahrheiten“ gibt, verwandelte sich auf brillante Weise in die Computergrenze der „unberechenbaren Probleme“ und lebt heute als Grundlage der modernen Programmier- und Algorithmentheorie weiter.
+Diese Erklärung verwendet die starke Voraussetzung semantischer Korrektheit hinsichtlich des Haltens. Sie gibt weder die schwächsten Voraussetzungen noch einen vollständigen Beweis der einzelnen Gödel-Sätze an. Berechenbarkeit ist außerdem von Komplexität zu unterscheiden, die den benötigten Zeit- und Speicheraufwand untersucht.
 
-## 8. Fazit: Die unendliche Reise des „Wissens“
+## 8. Fazit: Theorie und Voraussetzungen benennen
 
-[David Hilbert](https://kenji.blog/de/p/hilbert/)s Traum von einer „perfekten mathematischen Maschine, die alles automatisch beweisen kann“ wurde durch [Gödels Unvollständigkeitssätze](https://kenji.blog/de/p/godels-incompleteness-theorems/) zerstört. Aber das bedeutete keineswegs eine Niederlage der Mathematik.
+Die Unvollständigkeitssätze beschreiben Grenzen von Beweisen in einer festen Theorie unter bestimmten Voraussetzungen. Eine widerspruchsfreie, effektiv axiomatisierte arithmetische Theorie der erforderlichen Stärke besitzt Aussagen, die sie weder beweisen noch widerlegen kann. Unter hinreichenden Bedingungen kann sie außerdem ihre eigene Widerspruchsfreiheit in der üblichen Formalisierung nicht beweisen.
 
-Wenn Mathematik vollständig mechanisierbar wäre, wäre die Arbeit von Mathematikern bloße Routine geworden und hätte irgendwann geendet. Die von Gödel aufgezeigte Existenz von „Aussagen, die unbeweisbar, aber wahr sind“, bewies jedoch, dass das Universum der Mathematik weitaus reicher ist und eine unerschöpfliche Tiefe besitzt, als wir uns vorstellen konnten.
+Eine in einer Theorie offene Aussage kann nach dem Hinzufügen neuer Axiome beweisbar werden. Erfüllt die Erweiterung weiterhin dieselben Voraussetzungen, ist aber auch sie unvollständig. Die Menge aller arithmetischen Wahrheiten zu betrachten ist etwas anderes, als eine mechanisch aufzählbare Axiomatisierung dieser Menge anzugeben.
 
-[Kurt Gödel](https://kenji.blog/de/p/godel/) bewies die Existenz „absolut unbeweisbarer Wahrheiten“ durch das präziseste Mittel der Logik: die Mathematik selbst. Seine Unvollständigkeitssätze lehren uns, dass die menschliche Suche nach Wissen eine unendliche Reise ist.
+Ein Zusammenbruch der Mathematik, eine Überlegenheit des Menschen über Maschinen oder pauschale Grenzen aller KI folgen nicht allein aus diesen Sätzen. Zu prüfen ist, welche Theorie gewählt wurde, welche Voraussetzungen gelten und ob Wahrheit von Beweisbarkeit unterschieden wird.
+
+### Literatur
+
+- [Open Logic Project: Incompleteness and Computability](https://ic.openlogicproject.org/ic-screen.pdf) — Lehrbuch zu Kodierung, Fixpunkten, den Ergebnissen von Gödel und Rosser sowie den Bedingungen an Beweisbarkeitsprädikate.
+- [UCLA: Incompleteness and Undecidability](https://www.math.ucla.edu/~dam/220b.1.11w/220notes4.pdf) — Arithmetisierung von Symbolen und Beweisen; unterscheidet den ersten Satz unter semantischer Korrektheit von Rossers Form.
+- [Richard Zach: The Practice of Finitism](https://arxiv.org/abs/math/0102189) — Forschung zu Axiomatisierung und finiten Widerspruchsfreiheitsbeweisen in Hilberts Programm.
+- [Jindřich Zapletal: Elements of Set Theory](https://people.clas.ufl.edu/zapletal/files/notesset.pdf) — Sprache erster Stufe reell abgeschlossener Körper und Quantorenelimination; siehe Satz 6.3.12 in Abschnitt 6.3.

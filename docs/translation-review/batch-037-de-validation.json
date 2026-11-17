@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-17T23:49:36.198131+09:00",
+  "allPassed": true,
+  "language": "de",
+  "sourceSha256": "2d3300589a36fa621e6f91b442c1be7ca85990551aa47007e2fd161c65856175",
+  "texExpressions": 34,
+  "displayMath": 2,
+  "diagrams": 4,
+  "diagramEdges": [
+    3,
+    5,
+    4,
+    4
+  ],
+  "executablePrograms": 0,
+  "proseFragmentsPreserved": 80,
+  "strongSpans": 6,
+  "externalReferences": 4,
+  "internalReferences": 3,
+  "datesTitleNavigationCoverPassed": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "German static source/HTML match; original/revised fully read.4translations unread; German registration pending. No browser KaTeX/Mermaid execution, fullsite/publication or theorem-proof certification."
+}
