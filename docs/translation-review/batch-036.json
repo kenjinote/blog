@@ -629,5 +629,34 @@
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and all12 translations fully read and registered. Consolidated37bundle static preview passed for all13 halting versions,415TeX and989prose fragments. Publication/live checks and all-article goal remain pending."
+  "scope": "Japanese and all12 translations fully read and registered. Consolidated37bundle static preview passed for all13 halting versions,415TeX and989prose fragments. Publication/live checks and all-article goal remain pending.",
+  "publicationDispatch": {
+    "version": 1,
+    "observedAt": "2026-11-17T10:06:41.292147+09:00",
+    "deployedCommitExpected": "159f7f81ba89e5940d4b1d965b34fa1fb6108057",
+    "ciRun": 43992951343,
+    "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43992951343",
+    "runAttempt": 1,
+    "statusAtDispatch": "in_progress",
+    "conclusionAtDispatch": null,
+    "pagesPlanned": 481,
+    "translationsPlanned": 444,
+    "japaneseSourcesPlanned": 37,
+    "mathVersionsPlanned": 286,
+    "texExpressionsPlanned": 17571,
+    "additionalHindiTaxonomyUrlsPlanned": 3,
+    "publicationPending": true,
+    "probePrepared": "C:\\Users\\kenjinote\\.codex\\tmp\\verify_review_publication_444.py",
+    "probeSha256": "a712c101f6a0dd111f579f2684863d8b7433ce1ef896f1b1e945d97f5e73c143",
+    "jobsObserved": [
+      {
+        "name": "build",
+        "status": "in_progress",
+        "conclusion": null,
+        "started_at": "2026-11-17T01:06:20Z",
+        "completed_at": null
+      }
+    ],
+    "scope": "Ordinary push after fetch zero incoming and19 outgoing commits including probe receipts. Matching SHA/run observed. Local481article+3tag checks passed; live verification waits for successful build/deploy. gh unavailable; public GitHub API used."
+  }
 }
