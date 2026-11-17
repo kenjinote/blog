@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-17T23:46:43.511652+09:00",
+  "allPassed": true,
+  "language": "fr",
+  "sourceSha256": "c8944bb6959a29ce580d8ac18efe5613c0baa7e4e9c8316c0e671f187275a48c",
+  "texExpressions": 34,
+  "displayMath": 2,
+  "diagrams": 4,
+  "diagramEdges": [
+    3,
+    5,
+    4,
+    4
+  ],
+  "executablePrograms": 0,
+  "proseFragmentsPreserved": 79,
+  "strongSpans": 6,
+  "externalReferences": 4,
+  "internalReferences": 3,
+  "datesTitleNavigationCoverPassed": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "French static source/HTML match; original/revised fully read.5translations unread; French registration pending. No browser KaTeX/Mermaid execution, fullsite/publication or theorem-proof certification."
+}

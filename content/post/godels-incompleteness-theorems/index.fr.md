@@ -1,160 +1,171 @@
 ---
-title: "Théorèmes d'incomplétude de Gödel : la preuve mathématique des « vérités absolument indémontrables »"
-date: "2026-09-24T19:44:38+09:00"
+title: "Théorèmes d'incomplétude de Gödel : vérité et démontrabilité dans une théorie"
+date: "2026-09-14T00:00:51+09:00"
 image: "eyecatch-v2.png"
-date: 2026-09-14T00:00:51+09:00
-description: "Une explication claire du théorème d'incomplétude de Gödel, un théorème historique démontrant les limites des mathématiques, ainsi que de sa signification et de ses mécanismes de preuve, le tout illustré par des exemples concrets et des schémas."
+description: "Les hypothèses de l'incomplétude, la cohérence et la correction sémantique, et l'indémontrabilité relative à une théorie : codage de Gödel, points fixes, second théorème et problème de l'arrêt."
 categories: ["mathematics", "computer-science"]
 tags:
   - Logique
   - Gödel
   - Théorèmes d'incomplétude
 slug: "godels-incompleteness-theorems"
+math: true
+mermaid: true
+lastmod: "2026-11-17"
 ---
 
-« Les mathématiques sont absolument exactes » — tout le monde l'a probablement pensé au moins une fois. Pourtant, en 1931, un article publié par le jeune mathématicien [Kurt Gödel](https://kenji.blog/fr/p/godel/) a fondamentalement bouleversé ce bon sens. Ce sont les **théorèmes d'incomplétude de Gödel**.
+Si nous choisissons un ensemble d'axiomes et construisons des démonstrations selon des règles mécaniques, pouvons-nous répondre à toutes les questions sur les entiers naturels ? Les théorèmes d'incomplétude de Gödel montrent que les théories satisfaisant certaines conditions ne peuvent pas fournir une telle solution complète.
 
-Dans cet article, nous allons expliquer de manière approfondie et claire la signification de ce théorème troublant qui affirme qu'il existe « des vérités qui ne peuvent absolument pas être prouvées », ainsi que les mécanismes de sa démonstration, à grand renfort d'exemples concrets et de schémas.
+L'essentiel est de préciser <strong>dans quelle théorie un énoncé ne peut pas être démontré</strong>. Le résultat n'affirme pas qu'il existe des vérités indémontrables quels que soient les axiomes utilisés. Nous distinguerons cohérence, correction sémantique et axiomatisation effective en examinant le codage, l'autoréférence et la portée des théorèmes.
 
 ---
 
-## 1. Contexte : Le programme de [Hilbert](https://kenji.blog/fr/p/hilbert/) et la crise des fondements des mathématiques
+## 1. Le programme de Hilbert et trois questions différentes
 
-De la fin du 19ème siècle au début du 20ème siècle, le monde des mathématiques était confronté aux « paradoxes de la théorie des ensembles (comme le paradoxe de Russell) » ; les fondations de la discipline en étaient ébranlées. C'est [David Hilbert](https://kenji.blog/fr/p/hilbert/), l'autorité suprême des mathématiques à l'époque, qui s'est levé pour sauver les mathématiques de cette crise.
+Pour donner des bases solides aux mathématiques, [David Hilbert](/fr/p/hilbert/) et d'autres ont proposé de les décrire par des systèmes axiomatiques formels et d'en démontrer la cohérence par des méthodes finitaires. Formaliser les mathématiques et étudier leurs démonstrations depuis l'extérieur du système sont deux tâches différentes. Réduire ce programme à « un système garantissant tout sur lui-même depuis son intérieur » n'est pas exact.
 
-[Hilbert](https://kenji.blog/fr/p/hilbert/) a tenté de symboliser intégralement tous les raisonnements mathématiques, dans l'espoir de reconstruire les mathématiques en n'utilisant que des règles mécaniques. L'objectif de son « Programme de [Hilbert](https://kenji.blog/fr/p/hilbert/) » était de prouver que, dans un système formel mathématique, les trois propriétés suivantes étaient réunies :
+Il faut également distinguer trois propriétés.
 
-1. **La cohérence** ([Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/)) : Le fait qu'il n'existe aucune contradiction au sein du système (c'est-à-dire qu'une proposition $P$ et sa négation $\neg P$ ne puissent pas être prouvées toutes les deux).
-2. **La complétude** (Completeness) : Le fait que toute proposition mathématique puisse toujours être prouvée au sein de ce système, soit comme vraie, soit comme fausse.
-3. **La décidabilité** (Decidability) : Le fait qu'il existe une procédure mécanique permettant de déterminer, pour toute proposition donnée, si elle est prouvable ou non.
+- <strong>Cohérence</strong> : la théorie ne démontre pas à la fois un énoncé $A$ et sa négation $\neg A$.
+- <strong>Complétude d'une théorie</strong> : pour chaque énoncé $A$ de son langage, la théorie démontre $A$ ou $\neg A$. Il s'agit de la complétude syntaxique.
+- <strong>Décidabilité</strong> : un algorithme qui termine toujours peut déterminer si un énoncé donné est un théorème de la théorie.
 
-[Hilbert](https://kenji.blog/fr/p/hilbert/), à qui l'on doit la célèbre phrase « Nous devons savoir. Nous saurons. (Wir müssen wissen. Wir werden wissen.) », croyait fermement que les mathématiques deviendraient un château de logique parfait, capable de tout résoudre.
+La complétude diffère de la correction sémantique, qui exige que tous les théorèmes soient vrais dans l'interprétation visée. Le théorème de complétude de la logique du premier ordre ne signifie pas non plus la même chose que la complétude d'une théorie arithmétique particulière.
+
+```mermaid
+flowchart TD
+    Math["Formaliser les mathématiques"] --> Theory["Préciser les axiomes et les règles d'inférence"]
+    Theory --> Proof["Traiter les démonstrations finies comme des objets mathématiques"]
+    Proof --> Goal["Chercher une preuve de cohérence par des méthodes finitaires"]
+```
+
+## 2. Systèmes formels et arithmétique de Peano
+
+Un système formel précise les symboles, les règles de formation des formules, les axiomes et les règles d'inférence. Vérifier syntaxiquement qu'une démonstration finie respecte les règles peut être séparé de la question sémantique de savoir si une formule est vraie dans une interprétation. Dire que la vérification d'une démonstration n'exige pas de prendre en compte le sens ne signifie pas que le sens soit sans importance en mathématiques.
+
+Un exemple classique est l'arithmétique de Peano du premier ordre (PA). Elle traite de zéro, du successeur, de l'addition et de la multiplication des entiers naturels, et comprend un schéma d'axiomes de récurrence. Même $1+1=2$ est un énoncé dérivé de ces axiomes et règles.
+
+Pour simplifier l'exposé, nous considérerons principalement les théories effectivement axiomatisées contenant PA, comme cadre suffisant. Ce ne sont pas les hypothèses les plus faibles possibles : certaines formes du premier théorème s'appliquent à des arithmétiques plus faibles.
+
+## 3. Le premier théorème d'incomplétude : des énoncés qu'une théorie ne tranche pas
+
+Nous présentons le résultat d'incomplétude de [Kurt Gödel](/fr/p/godel/) sous la forme suivante, qui intègre l'amélioration de Rosser.
+
+> Toute théorie cohérente, effectivement axiomatisée et contenant PA possède un énoncé arithmétique qu'elle ne peut ni démontrer ni réfuter.
+
+« Effectivement axiomatisée » signifie que ses axiomes et ses démonstrations peuvent être énumérés par un procédé mécanique. L'indémontrabilité est relative à la théorie choisie. Elle ne signifie pas que l'énoncé doive rester indémontrable dans une autre théorie munie d'axiomes supplémentaires. Il faut distinguer la vérité dans les entiers naturels standard de la démontrabilité dans une théorie fixée.
+
+Pour représenter l'ensemble des énoncés démontrables comme un sous-ensemble des énoncés vrais dans les entiers naturels standard, il faut l'hypothèse plus forte de <strong>correction sémantique</strong>. La cohérence exclut seulement de démontrer un énoncé et sa négation ; à elle seule, elle ne rend pas tous les théorèmes vrais dans les entiers naturels standard.
+
+```mermaid
+flowchart TD
+    T["Extension T de PA effectivement axiomatisée"] --> C["On suppose T cohérente"]
+    C --> R["Un énoncé arithmétique n'est ni démontrable ni réfutable dans T"]
+    T --> S["On suppose aussi la correction pour les entiers naturels standard"]
+    S --> Truth["Tout théorème de T est vrai dans les entiers naturels standard"]
+    Truth --> Gap["Il reste un énoncé arithmétique vrai sans preuve dans T"]
+```
+
+### Construire une autoréférence arithmétique, pas une contradiction
+
+La ressemblance avec la phrase du menteur « Cette phrase est fausse » peut aider l'intuition. Mais la construction de Gödel n'introduit pas de contradiction dans les mathématiques. Elle code les énoncés et les démonstrations par des nombres et exprime arithmétiquement la <strong>démontrabilité dans une théorie particulière</strong>.
+
+Soit $T$ la théorie et soit $\operatorname{Prov}_T(y)$ le prédicat usuel de démontrabilité, exprimant que l'énoncé de code $y$ possède une démonstration dans $T$. La notation $\ulcorner G_T\urcorner$ désigne le numéral représentant le code de l'énoncé $G_T$. Le lemme du point fixe permet de construire un énoncé pour lequel la théorie démontre l'équivalence suivante :
+
+$$
+T\vdash G_T\leftrightarrow\neg\operatorname{Prov}_T(\ulcorner G_T\urcorner)
+$$
+
+Ici, $T\vdash A$ signifie que $T$ démontre $A$. Cette construction utilise le codage et la substitution, plutôt que d'adopter directement une phrase du langage naturel comme axiome.
+
+Si $T$ possédait une démonstration de $G_T$, l'existence de cette démonstration finie pourrait elle-même être exprimée en arithmétique, et $T$ démontrerait $\operatorname{Prov}_T(\ulcorner G_T\urcorner)$. Mais l'équivalence affichée, jointe à $G_T$, donnerait aussi sa négation. Ainsi, si $T$ est cohérente, elle ne peut pas démontrer $G_T$.
+
+Dans les entiers naturels standard, le prédicat usuel de démontrabilité décrit correctement les démonstrations finies qui existent réellement. En utilisant ce fait, l'absence de démonstration permet de conclure que $G_T$ est vrai dans les entiers naturels standard. Cet argument externe inclut l'hypothèse que $T$ est cohérente. Il ne signifie pas que les humains puissent reconnaître automatiquement la cohérence de n'importe quelle théorie.
+
+Cet argument seul ne permet pas de déduire de la simple cohérence que la même théorie ne peut pas non plus démontrer la négation de $G_T$. Par exemple, la correction sémantique exclut de démontrer la négation de l'énoncé vrai $G_T$. La preuve originale d'indépendance de Gödel utilisait l'$\omega$-cohérence ; Rosser a construit un autre énoncé pour obtenir l'indémontrabilité et l'irréfutabilité à partir de la seule cohérence ordinaire.
+
+## 4. Numérotation de Gödel : coder les chaînes et les démonstrations par des nombres
+
+La numérotation de Gödel attribue des codes entiers naturels aux symboles, aux formules et aux suites finies constituant des démonstrations. Dans notre exemple pédagogique, chaque occurrence d'un même symbole reçoit le même entier strictement positif, tandis que les positions d'une chaîne reçoivent des nombres premiers différents. Ce n'est pas une reproduction littérale de la numérotation de l'article original.
+
+Attribuons le code 2 au symbole « 0 » et le code 3 à « = ». La chaîne « 0=0 » possède alors la suite de codes 2, 3, 2. Élever les nombres premiers de position 2, 3, 5 à ces exposants, puis les multiplier, donne 2700. L'unicité de la décomposition en facteurs premiers des entiers supérieurs ou égaux à deux permet de retrouver la suite initiale dans cet exemple.
 
 ```mermaid
 graph TD
-    subgraph "Le projet du programme de Hilbert"
-        A["Système d'axiomes (Prémisses évidentes)"] -->|"Règles d'inférence strictes"| B["Toutes les propositions mathématiques vraies"]
-        A -->|"Preuve au sein du système"| C["Garantie de sa propre cohérence"]
+    subgraph "Mécanisme de la numérotation de Gödel"
+        S1["Symbole '0'"] -->|"Attribuer"| N1["Code du symbole 2"]
+        S2["Symbole '='"] -->|"Attribuer"| N2["Code du symbole 3"]
+        S3["Symbole '0'"] -->|"Attribuer"| N3["Code du symbole 2"]
+        F["Chaîne '0=0'"] -->|"Premiers de position 2,3,5 élevés aux codes 2,3,2"| GN["Nombre de Gödel: 2^2 * 3^3 * 5^2 = 2700"]
     end
 ```
 
-## 2. Le système formel et l'arithmétique de Peano
+L'important n'est pas de produire des nombres énormes, mais de traiter la syntaxe, la substitution et la vérification des démonstrations finies comme des relations entre nombres. Il faut par exemple distinguer la relation « le nombre $p$ code une démonstration de l'énoncé de code $q$ » de la démontrabilité, qui affirme qu'un tel $p$ existe.
 
-Afin de bien comprendre les théorèmes de Gödel, examinons d'abord ce que l'on entend par « système formel » et « arithmétique de base ».
+Vérifier un candidat fini à une démonstration diffère de décider qu'aucune démonstration n'existe. Le codage seul ne rend pas décidables toutes les questions de démontrabilité.
 
-Un système formel est un ensemble de chaînes de caractères (symboles) prédéfinies et de règles (règles d'inférence) pour les manipuler, un peu comme un jeu de puzzle. Aucun « sens » n'y est requis ; les mathématiques n'y sont vues que comme un jeu de transformation de symboles.
+## 5. Le second théorème d'incomplétude : démontrer la cohérence dans une théorie
 
-Les théorèmes de Gödel s'appliquent à des systèmes qui incluent « l'addition et la multiplication des nombres entiers naturels ». L'exemple le plus représentatif est le système d'axiomes de l'**arithmétique de Peano** (Peano Arithmetic, PA). L'arithmétique de Peano part de règles (axiomes) très fondamentales telles que : « 0 est un entier naturel », « pour tout entier naturel $x$, il existe un successeur $S(x)$ ».
+Nous expliquons également le second théorème d'incomplétude sous les hypothèses suffisantes suivantes.
 
-Par exemple, le fait que tout le monde connaît, « $1 + 1 = 2$ », n'est, à l'intérieur du système formel de l'arithmétique de Peano, qu'un seul « théorème » dérivé mécaniquement par la manipulation de symboles.
+> Une extension de PA cohérente et effectivement axiomatisée ne peut pas démontrer en son sein sa propre cohérence exprimée à l'aide du prédicat usuel de démontrabilité.
 
-[Hilbert](https://kenji.blog/fr/p/hilbert/) pensait qu'en agrandissant ce type de système formel, on finirait un jour par pouvoir couvrir toutes les vérités mathématiques possibles.
+Choisissons par exemple $0=1$ comme contradiction et exprimons la cohérence ainsi :
 
-## 3. Le choc du premier théorème d'incomplétude : une proposition « Vraie mais indémontrable »
+$$
+\operatorname{Con}(T)
+\equiv\neg\operatorname{Prov}_T(\ulcorner 0=1\urcorner)
+$$
 
-Cependant, en 1931, [Kurt Gödel](https://kenji.blog/fr/p/godel/), alors âgé de 25 ans seulement, publia un article qui pulvérisa les rêves de [Hilbert](https://kenji.blog/fr/p/hilbert/). Il s'agissait du **premier théorème d'incomplétude**.
+Il s'agit d'un énoncé arithmétique affirmant que $T$ ne possède pas de démonstration d'une contradiction. Donner le nom « cohérence » à une formule arbitraire ne produit pas le même résultat : la formalisation du prédicat de démontrabilité et ses conditions de dérivabilité sont importantes.
 
-> **Premier théorème d'incomplétude**
-> Dans tout système formel cohérent (non contradictoire) contenant l'arithmétique de Peano, il existera toujours une proposition qui est vraie, mais qui ne peut être prouvée à l'intérieur de ce système.
+L'analogie d'une personne affirmant « Je ne mens jamais » peut inciter à s'interroger sur les fondements d'une preuve. Elle ne constitue pas une démonstration du second théorème. Le fait qu'une théorie incohérente démontre tout n'établit pas non plus, à lui seul, l'indémontrabilité dans une théorie cohérente.
 
-Ce théorème a montré que la « vérité » et la « démontrabilité » sont des concepts totalement différents. Dans la « machine » qu'est un système formel, il est tout bonnement impossible d'attraper toutes les vérités de l'univers mathématique.
+La cohérence se distingue ici de la correction sémantique, c'est-à-dire du fait que chaque théorème est vrai dans l'interprétation visée. Le résultat n'exclut pas de démontrer la cohérence de la théorie initiale dans une théorie plus forte. Il ne s'applique pas non plus sans conditions aux personnes, aux organisations ou à tous les systèmes logiciels.
+
+## 6. Malentendus et portée du résultat
+
+### Les mathématiques ne se sont pas effondrées
+
+L'incomplétude n'est pas la négation de la cohérence. Elle affirme qu'une théorie fixée laisse certains énoncés en suspens. Lorsqu'on ajoute des axiomes, il faut examiner les raisons de ce choix et des questions comme la cohérence de l'extension. Ajouter des axiomes ne supprime pas automatiquement toutes les difficultés.
+
+### Le théorème ne démontre pas que les humains dépassent les machines
+
+Même l'argument externe établissant la vérité d'un énoncé de Gödel suppose des conditions comme la cohérence de la théorie. Le théorème n'affirme pas que les humains puissent vérifier ces hypothèses pour n'importe quelle théorie. Les arguments philosophiques sur la raison humaine ou l'IA doivent être distingués des conclusions mathématiques présentées ici.
+
+### Toutes les théories ne sont pas incomplètes
+
+Le langage, les axiomes, l'effectivité et la capacité à exprimer l'arithmétique comptent. Par exemple, la théorie du premier ordre des corps réels clos, qui décrit les réels à l'aide de zéro, un, l'addition, la multiplication et l'ordre, est complète et décidable. L'élimination des quantificateurs fournit une voie pour décider ses énoncés.
+
+Cela ne signifie pas que toutes les mathématiques faisant intervenir des réels, des fonctions arbitraires ou des ensembles puissent être résolues automatiquement. Cela ne donne pas non plus le même résultat pour l'arithmétique des entiers naturels. Affirmer que « la géométrie euclidienne est complète » exige également de préciser la formalisation et le langage.
+
+## 7. Le lien avec le problème de l'arrêt
+
+Le [problème de l'arrêt](/fr/p/halting-problem/) établit qu'il n'existe pas d'algorithme universel qui termine toujours et réponde correctement à la question de savoir si un programme quelconque s'arrête sur une entrée donnée. Le modèle de Turing est mathématique ; il ne s'agit pas simplement de remplacer un système formel par une machine physique.
+
+Une façon de comprendre le lien consiste à considérer une théorie dont les démonstrations peuvent être énumérées mécaniquement et qui ne démontre que des affirmations vraies sur l'arrêt et le non-arrêt. Si elle démontrait l'arrêt ou le non-arrêt pour chaque programme et chaque entrée, nous pourrions énumérer les démonstrations et renvoyer la réponse dont nous aurions trouvé une preuve, décidant ainsi le problème de l'arrêt.
 
 ```mermaid
-graph LR
-    subgraph "Le décalage entre la vérité et la démontrabilité"
-        A["Ensemble des propositions vraies"]
-        B["Ensemble des propositions démontrables"]
-        B -.->|"Entièrement inclus"| A
-        C["Propositions vraies mais indémontrables (Incomplétude)"]
-        A -->|"Existent obligatoirement"| C
-    end
+flowchart TD
+    T["Théorie à preuves énumérables ne démontrant que des faits vrais sur l'arrêt"] --> A["On suppose qu'elle tranche arrêt ou non-arrêt pour tout programme et toute entrée"]
+    A --> Search["Chercher les deux types de preuve et renvoyer la première réponse démontrée"]
+    Search --> H["On obtiendrait un décideur universel de l'arrêt"]
+    H --> No["Contradiction avec l'indécidabilité du problème de l'arrêt"]
 ```
 
-### La traduction mathématique du paradoxe du menteur
+Cette explication utilise l'hypothèse forte de correction sémantique concernant l'arrêt. Elle n'énonce pas les hypothèses les plus faibles et ne constitue pas une démonstration complète de chacun des théorèmes de Gödel. Il faut aussi distinguer la calculabilité de la complexité, qui étudie le temps et la mémoire nécessaires au calcul.
 
-Le cœur de la preuve de Gödel réside dans l'introduction du « paradoxe de l'autoréférence » au sein d'un système formel mathématique.
+## 8. Conclusion : préciser la théorie et les hypothèses
 
-Rappelez-vous le « paradoxe du menteur », connu depuis la Grèce antique.
-« Cette phrase est un mensonge. »
-Si cette phrase est vraie, alors son contenu est un « mensonge » (donc fausse). Si elle est un mensonge (fausse), alors son contenu est « vrai ».
+Les théorèmes d'incomplétude décrivent les limites des démonstrations dans une théorie fixée satisfaisant certaines conditions. Une théorie arithmétique cohérente, effectivement axiomatisée et suffisamment forte possède des énoncés qu'elle ne peut ni démontrer ni réfuter. Sous des conditions suffisantes, elle ne peut pas non plus démontrer sa propre cohérence dans la formalisation usuelle.
 
-Gödel a transposé une logique similaire en mathématiques, en formulant mathématiquement une proposition $G$ comme suit :
+Un énoncé laissé en suspens dans une théorie peut devenir démontrable après l'ajout de nouveaux axiomes. Mais si l'extension satisfait encore les mêmes conditions, elle est elle aussi incomplète. Considérer l'ensemble de toutes les vérités arithmétiques diffère de fournir une axiomatisation mécaniquement énumérable de cet ensemble.
 
-**Proposition $G$** : « Cette proposition $G$ ne peut pas être prouvée à l'intérieur de ce système. »
+L'effondrement des mathématiques, la supériorité humaine sur les machines et des limites générales imposées à toute IA ne découlent pas de ces seuls théorèmes. Il faut se demander quelle théorie a été choisie, quelles hypothèses sont faites et si l'on distingue la vérité de la démontrabilité.
 
-Que se passerait-il si le système formel parvenait à prouver cette proposition $G$ ? Cela reviendrait à dire qu'il a prouvé une proposition déclarant qu'elle « ne peut pas être prouvée », ce qui contredirait le système lui-même. Si l'on part du postulat absolu que le système est « cohérent » (sans contradiction), alors ce système ne pourra **jamais** prouver la proposition $G$.
+### Références
 
-Et c'est ici qu'intervient la magie de Gödel. La proposition $G$ n'a pas pu être prouvée au sein du système. Or, la proposition $G$ déclare précisément qu'elle « ne peut pas être prouvée ». Puisque la proposition décrit très exactement la réalité de son état, d'un point de vue extérieur au système, on ne peut que conclure que la proposition $G$ est **vraie**.
-
-C'est ainsi qu'est née une proposition « vraie bien qu'elle ne puisse pas être prouvée ».
-
-## 4. La numérotation de Gödel : l'idée de génie pour convertir les formules en nombres
-
-Mais comment diable exprimer en japonais « cette proposition ne peut pas être prouvée » au sein de l'arithmétique de Peano, qui ne comporte que des additions et des multiplications ? C'est là que Gödel a inventé la **numérotation de Gödel** (Gödel numbering).
-
-Gödel a attribué un numéro unique (un nombre premier) à chaque symbole utilisé dans une formule (comme $\neg$, $\vee$, $\exists$, $0$, $=$, etc.). Ensuite, en exploitant l'unicité de la décomposition en facteurs premiers (la propriété selon laquelle tout entier naturel peut être décomposé de manière unique en un produit de nombres premiers), il a transformé une chaîne de caractères (une formule) en un gigantesque entier naturel unique.
-
-```mermaid
-graph TD
-    subgraph "Le mécanisme de la numérotation de Gödel"
-        S1["Symbole '0'"] -->|"Attribution"| N1["Nombre premier 2"]
-        S2["Symbole '='"] -->|"Attribution"| N2["Nombre premier 3"]
-        S3["Symbole '0'"] -->|"Attribution"| N3["Nombre premier 5"]
-        F["Formule '0=0'"] -->|"On met en puissance puis on multiplie"| GN["Nombre de Gödel: 2^2 * 3^3 * 5^2 = 2700"]
-    end
-```
-
-Grâce à cette méthode, l'ensemble du processus de preuve (tel que « la formule $A$ est une preuve de la formule $B$ ») peut être maquillé en un simple problème d'arithmétique lié aux propriétés de nombres gigantesques (comme savoir si un nombre est divisible par un autre).
-
-En résumé, il a dissimulé le langage permettant aux mathématiques de parler de leur « propre preuve » (autoréférence) dans les propriétés des entiers naturels. Il s'agit du même concept selon lequel les ordinateurs modernes encodent et traitent des images ou des programmes comme des « suites de chiffres 0 et 1 ». Gödel a atteint ce concept bien avant la naissance même de l'ordinateur.
-
-## 5. Le deuxième théorème d'incomplétude : l'impossibilité désespérante de prouver sa propre validité
-
-Le premier théorème d'incomplétude suffisait à secouer la communauté mathématique, mais l'article de Gödel contenait une conclusion encore plus effrayante. Il s'agit du **deuxième théorème d'incomplétude**.
-
-> **Deuxième théorème d'incomplétude**
-> Aucun système formel cohérent contenant l'arithmétique de Peano ne peut prouver sa propre cohérence à l'intérieur de ce même système.
-
-[Hilbert](https://kenji.blog/fr/p/hilbert/) essayait de prouver que les mathématiques n'avaient aucune contradiction en se servant de la force des mathématiques elles-mêmes (le défi principal du programme de [Hilbert](https://kenji.blog/fr/p/hilbert/)). Or, le deuxième théorème d'incomplétude déclare brutalement : « Aucun système ne peut utiliser sa propre force pour prouver qu'il n'est pas fou (qu'il ne se contredit pas). »
-
-Pour comprendre cela intuitivement, imaginons la situation suivante.
-Si quelqu'un dit : « Je ne dis absolument jamais de mensonge ! ». Nous ne pouvons cependant pas nous fier à ses seules paroles pour prouver qu'il n'est pas un menteur. En effet, si cette personne est un menteur, alors sa déclaration « Je ne dis absolument jamais de mensonge » pourrait elle-même être un mensonge.
-
-Il en va de même pour les mathématiques. Si un système d'axiomes parvenait à dériver par lui-même une formule affirmant « Je suis cohérent ($Con(F)$) », si ce système est déjà incohérent (contradictoire), il pourrait alors prouver n'importe quelle proposition (qu'elle soit vraie ou complètement fausse). La preuve de l'affirmation « Je suis cohérent » n'aurait donc absolument aucune valeur.
-
-Le deuxième théorème d'incomplétude a établi une limite définitive : il est impossible pour les mathématiques de s'auto-prouver leur propre « certitude absolue » à l'intérieur même des mathématiques.
-
-## 6. Erreurs courantes concernant les théorèmes d'incomplétude
-
-En raison de leur nom dramatique, les théorèmes d'incomplétude de Gödel sont souvent mal interprétés dans des contextes philosophiques, idéologiques ou occultes. Dissipons ici quelques-uns des malentendus les plus courants.
-
-- **Idée fausse 1 : "Les mathématiques se sont effondrées"**
-  - **La réalité** : Le théorème d'incomplétude ne signifie en aucun cas l'effondrement des mathématiques. Il a simplement mis en évidence une propriété de la logique formelle : « on ne peut pas saisir toutes les vérités en utilisant seulement un système d'axiomes figé ». Les mathématiciens continuent de développer la discipline en ajoutant de nouveaux axiomes au besoin (comme « l'axiome du choix » ou des « axiomes de grands cardinaux ») pour créer des systèmes plus puissants.
-- **Idée fausse 2 : "La rationalité humaine a ses limites"**
-  - **La réalité** : Les limites indiquées par le théorème ne concernent que les « systèmes qui suivent des règles mécaniques préétablies (les systèmes formels) ». Dans le premier théorème, nous (humains), depuis notre point de vue extérieur, avons pu comprendre que la proposition $G$ était « vraie ». Certains savants (comme Roger Penrose) interprètent cela comme la preuve que la rationalité humaine possède une capacité de compréhension du « sens (sémantique) » qui dépasse le système mécanique formel.
-- **Idée fausse 3 : "Il y a des choses qui ne peuvent être prouvées en toutes circonstances"**
-  - **La réalité** : Les théorèmes d'incomplétude ne s'appliquent qu'à des systèmes suffisamment complexes contenant au moins « l'addition et la multiplication des nombres entiers naturels (l'arithmétique de Peano) ». Par exemple, la « géométrie d'[Euclide](https://kenji.blog/p/euclid/) » ou la « théorie du premier ordre des nombres réels » sont complètes, et toutes leurs propositions vraies peuvent être prouvées. L'incomplétude n'apparaît que lorsqu'un système possède une structure suffisamment complexe pour permettre l'autoréférence.
-
-## 7. Passage de témoin à la machine de Turing : L'aube de l'informatique
-
-L'impact du théorème de Gödel n'est pas resté confiné au monde mathématique. En 1936, le mathématicien britannique [Alan Turing](https://kenji.blog/fr/p/turing/) a remplacé le concept de « système formel » de Gödel par un processus de calcul physique et a conçu un modèle informatique virtuel appelé « la machine de Turing ».
-
-Turing a appliqué le théorème d'incomplétude de Gödel au domaine informatique et a prouvé que « pour n'importe quel programme informatique, il n'existe pas d'algorithme universel permettant de déterminer à l'avance si le calcul finira un jour par s'arrêter ou non ». C'est le fameux **problème de l'arrêt ([Halting Problem](https://kenji.blog/fr/p/turing-machine-computability/))**.
-
-```mermaid
-graph TD
-    subgraph "De la généalogie des mathématiques à l'informatique"
-        Godel["Gödel (1931)<br/>Théorèmes d'incomplétude"] -->|"Existence de propositions indémontrables"| Turing["Turing (1936)<br/>Problème de l'arrêt"]
-        Turing -->|"Existence de problèmes incalculables"| Computer["Informatique moderne<br/>(Théorie de la complexité, limites de l'IA)"]
-    end
-```
-
-La limite mathématique selon laquelle « certaines vérités ne peuvent être prouvées » s'est ainsi transformée en la limite informatique stipulant que « certains problèmes ne peuvent pas être calculés ». Elle continue de vivre aujourd'hui en tant que fondement théorique de la programmation et des algorithmes.
-
-## 8. Conclusion : L'interminable voyage vers le « Savoir »
-
-« La machine mathématique parfaite, capable de tout prouver automatiquement », dont rêvait tant [David Hilbert](https://kenji.blog/fr/p/hilbert/), s'est évanouie en mirage avec le théorème d'incomplétude de Gödel. Toutefois, cela ne représente absolument pas une défaite pour les mathématiques.
-
-Si les mathématiques avaient pu être entièrement automatisées, le travail du mathématicien se serait réduit à de simples manipulations et aurait fini par atteindre une conclusion définitive. Mais l'existence de « propositions vraies mais indémontrables », révélée par Gödel, prouve que l'univers mathématique est infiniment plus riche et plus insondable que nous ne l'avions jamais imaginé.
-
-[Kurt Gödel](https://kenji.blog/fr/p/godel/) est celui qui a **prouvé** l'existence des « vérités absolument indémontrables » en se servant de l'outil logique le plus rigoureux qui soit : les mathématiques elles-mêmes. Ses théorèmes d'incomplétude continuent de nous rappeler que la quête de la connaissance de l'humanité est un long voyage, sans fin ni limite.
+- [Open Logic Project: Incompleteness and Computability](https://ic.openlogicproject.org/ic-screen.pdf) — manuel sur le codage, les points fixes, les résultats de Gödel et Rosser et les conditions des prédicats de démontrabilité.
+- [UCLA: Incompleteness and Undecidability](https://www.math.ucla.edu/~dam/220b.1.11w/220notes4.pdf) — arithmétisation des symboles et des démonstrations, distinguant le premier théorème fondé sur la correction sémantique de la forme de Rosser.
+- [Richard Zach: The Practice of Finitism](https://arxiv.org/abs/math/0102189) — recherche sur l'axiomatisation et les preuves finitaires de cohérence dans le programme de Hilbert.
+- [Jindřich Zapletal: Elements of Set Theory](https://people.clas.ufl.edu/zapletal/files/notesset.pdf) — langage du premier ordre des corps réels clos et élimination des quantificateurs ; voir le théorème 6.3.12 de la section 6.3.

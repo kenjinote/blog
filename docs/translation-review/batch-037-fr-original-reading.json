@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-17",
+  "path": "content/post/godels-incompleteness-theorems/index.fr.md",
+  "sha256": "68d1cd5408b92348f8d176bc9b3d8688e655435fe9d415a723038a5068abdd8c",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Literal en japonais remains in French; maquille implies disguise rather than legitimate arithmetization.",
+    "Euclide link goes to Japanese page; CAP and Turing-machine links misdirected; repeated Hilbert links.",
+    "Missing effectiveness/soundness/derivability conditions and absolute unprovability framing.",
+    "Two zero occurrences assigned codes2and5; prime factorization claim includes all naturals.",
+    "Physical model, unqualified real-number theory, human superiority and universal self-consistency claims; duplicate date."
+  ],
+  "reviewedTranslationsAdded": 0
+}
