@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-17",
+  "path": "content/post/godels-incompleteness-theorems/index.hi.md",
+  "sha256": "9cdb5d05f6ec7a46c6406267c2f72eb7d483501cb445f1d18d826c2dc10bdafb",
+  "originalBodyFullyRead": true,
+  "readingScope": "Whole160lines read; truncated first output supplemented by lines77to123.",
+  "findings": [
+    "Premises mistranslated as परिसर (premises/building grounds); theorem gender and proposition terminology awkward.",
+    "अप्रमाणित suggests unproved rather than unprovable; absolute truth conflated with theory-relative unprovability.",
+    "Japanese-or-Hindi sentence leftover; split Euclidean label and Japanese Euclide link; duplicated person links and CAP mislink.",
+    "Missing effectiveness/soundness/derivability, same zero different codes and unrestricted factorization claim.",
+    "Physical-machine/unqualified reals/human claims; duplicate date. Existing halting link is correct and will be preserved as localized relative path."
+  ],
+  "reviewedTranslationsAdded": 0
+}

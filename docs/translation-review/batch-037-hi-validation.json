@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-17T23:55:35.078440+09:00",
+  "allPassed": true,
+  "language": "hi",
+  "sourceSha256": "4eb6a209dd6e0e96204d9bd0621c7b3436a809262012046f71d24e3b0278791f",
+  "texExpressions": 34,
+  "displayMath": 2,
+  "diagrams": 4,
+  "diagramEdges": [
+    3,
+    5,
+    4,
+    4
+  ],
+  "executablePrograms": 0,
+  "proseFragmentsPreserved": 75,
+  "strongSpans": 6,
+  "externalReferences": 4,
+  "internalReferences": 3,
+  "datesTitleNavigationCoverPassed": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Hindi static source/HTML match; original/revised fully read.2translations unread; Hindi registration pending. No browser KaTeX/Mermaid execution, fullsite/publication or theorem-proof certification."
+}
