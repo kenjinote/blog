@@ -798,3 +798,5 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 2026-11-17 停止問題のアラビア語版を全文照合し1件登録。32TeX・4表示式・1図8辺・6コード/text・78本文断片・15強調・4外部3内部参照とRTL/LTR CSSを静的HTMLで確認。37束検査成功。当該記事の全12翻訳登録、AI444／未確認12,588／人0。統合最終検査・公開・全記事goal継続。
 
 - 2026-11-17 停止問題13版の統合静的検査成功。415TeX・52表示式・13図104辺・989本文断片・全コードと参照先を校閲済み版と照合。37束481記事＋タグ1のビルド、多言語2087ページ、HTTPS3801HTML41XML検査成功。AI444件の記録は変更せず。公開後検査・全記事goalは継続。
+
+2026-11-17 Batch036 publication closed after exact CI43992951343 attempt1/head159f7f81ba89e5940d4b1d965b34fa1fb6108057 success. Actual481article+3Hindi tag HTTP checks passed first attempt; new13halting versions415TeX/13graphs104edges/989prose fragments,4external3internal refs and6code/text blocks each; ArabicRTL. Original12review entries and dispatch preserved. AI444/unreviewed12588/human0. Full goal active.

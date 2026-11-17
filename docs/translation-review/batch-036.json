@@ -628,7 +628,7 @@
       "publicationPending": true
     }
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "scope": "Japanese and all12 translations fully read and registered. Consolidated37bundle static preview passed for all13 halting versions,415TeX and989prose fragments. Publication/live checks and all-article goal remain pending.",
   "publicationDispatch": {
     "version": 1,
@@ -658,5 +658,39 @@
       }
     ],
     "scope": "Ordinary push after fetch zero incoming and19 outgoing commits including probe receipts. Matching SHA/run observed. Local481article+3tag checks passed; live verification waits for successful build/deploy. gh unavailable; public GitHub API used."
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-11-17T18:38:01.466670+09:00",
+      "ciRun": 43992951343,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43992951343",
+      "deployedCommit": "159f7f81ba89e5940d4b1d965b34fa1fb6108057",
+      "runAttempt": 1,
+      "ciCompletion": "docs/translation-review/batch-036-ci-completion.json",
+      "proof": "docs/translation-review/publication-036.json",
+      "pages": 481,
+      "passed": 481,
+      "failed": 0,
+      "translations": 444,
+      "japaneseSources": 37,
+      "mathVersions": 286,
+      "texExpressions": 17571,
+      "haltingVersions": 13,
+      "haltingTeX": 415,
+      "haltingDiagrams": 13,
+      "haltingGraphEdges": 104,
+      "haltingExternalReferencesEach": 4,
+      "haltingInternalReferencesEach": 3,
+      "haltingCodeTextBlocks": 78,
+      "haltingProseFragments": 989,
+      "additionalHindiTaxonomyPages": 3,
+      "additionalHindiTaxonomyPassed": 3,
+      "httpPageProbeAttempts": 1,
+      "httpPageRetries": 0,
+      "buildCompletedAt": "2026-11-17T01:33:16Z",
+      "deployCompletedAt": "2026-11-17T01:35:12Z",
+      "scope": "Actual first live481articles+3Hindi tags after exact CI head/attempt/build/deploy success. Prior468checks retained. New13halting versions exact math,graphs,references,code/text blocks,prose,tables,title,dates,navigation,cover reference;ArabicRTL. No native/browser/fullsite certification. Whole goal remains active."
+    }
+  ],
+  "publicationVerifiedBy": "docs/translation-review/publication-036.json"
 }

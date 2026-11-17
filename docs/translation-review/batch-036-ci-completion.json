@@ -1,0 +1,25 @@
+{
+  "observedAt": "2026-11-17T18:36:53.739948+09:00",
+  "ciRun": 43992951343,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/43992951343",
+  "deployedCommit": "159f7f81ba89e5940d4b1d965b34fa1fb6108057",
+  "runAttempt": 1,
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-17T01:06:20Z",
+      "completed_at": "2026-11-17T01:33:16Z"
+    },
+    {
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-17T01:33:21Z",
+      "completed_at": "2026-11-17T01:35:12Z"
+    }
+  ]
+}

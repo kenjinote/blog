@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-17T18:36:21.021692+09:00",
+  "allPassed": true,
+  "language": "ja",
+  "sourceSha256": "4768e83cb5bc16d0753c3b460e0e81a0de8df159e4b2e0638aa3a73ddff8d777",
+  "texExpressions": 35,
+  "displayMath": 2,
+  "diagrams": 4,
+  "diagramEdges": [
+    3,
+    5,
+    4,
+    4
+  ],
+  "executablePrograms": 0,
+  "proseFragmentsPreserved": 69,
+  "strongSpans": 6,
+  "externalReferences": 4,
+  "internalReferences": 3,
+  "datesTitleNavigationCoverPassed": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Japanese static source/HTML match only; original/revised bodies read separately.12translations unread. No browser KaTeX/Mermaid execution, fullsite/publication or theorem-proof certification."
+}

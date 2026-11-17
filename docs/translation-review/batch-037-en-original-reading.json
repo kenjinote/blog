@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-17",
+  "path": "content/post/godels-incompleteness-theorems/index.en.md",
+  "sha256": "7999fe0844bc3330e697a646576b7c10857b81ff79fd2c8608de62e9dc577378",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "English prose retains Japanese sentence wording.",
+    "Euclide fragment link targets Japanese Euclid page.",
+    "Consistency links to CAP theorem and Halting Problem to Turing-machine page.",
+    "Original repeats missing effective-axiomatization and soundness qualifications, fixed-symbol-code inconsistency, absolute-unprovability framing and overly broad human/machine assertions."
+  ],
+  "revised": false,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original English full reading only; revision/comparison/HTML validation/approval pending."
+}

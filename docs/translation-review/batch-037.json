@@ -21,8 +21,15 @@
       "internalReferences": 3,
       "cover": "docs/translation-review/batch-037-cover-revision.json",
       "reviewedTranslationsAdded": 0
+    },
+    {
+      "date": "2026-11-17",
+      "stage": "Japanese static HTML validated",
+      "validation": "docs/translation-review/batch-037-ja-validation.json",
+      "checks": "docs/translation-review/batch-037-ja-checks.json",
+      "reviewedTranslationsAdded": 0
     }
   ],
   "publicationPending": true,
-  "scope": "Original Japanese and complete consolidated Japanese revision actually read. Cover original/generated viewed. Source selected-primary evidence documented in037repair receipts. All12translations unread; generated HTML verification pending; no semantic approval inferred from image-only metadata changes."
+  "scope": "Japanese original/revised whole bodies read and fresh38bundle static preview passed:35TeX/2displays/4graphs16edges/69prose/6strong/4external3internal references. All12translations unread; no automatic semantic approval. Publication037/fullgoal pending."
 }
