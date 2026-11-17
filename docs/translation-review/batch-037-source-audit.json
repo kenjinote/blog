@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-17T10:08:09.514353+09:00",
+  "article": "godels-incompleteness-theorems",
+  "baselineCommit": "6c72f992092ef42eb3147957a79425680dc84270",
+  "versions": {
+    "ar": {
+      "path": "content/post/godels-incompleteness-theorems/index.ar.md",
+      "sha256": "8ae779333ddcd43535bdd1b43ab262f6275f9a1fbd63e32e31a1afda91b968d4",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    },
+    "de": {
+      "path": "content/post/godels-incompleteness-theorems/index.de.md",
+      "sha256": "c68d4df89025a7461d702e05572301b84c3385d3227c571dd8422eaca2d8723d",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    },
+    "en": {
+      "path": "content/post/godels-incompleteness-theorems/index.en.md",
+      "sha256": "437f3923156952cbea1bf76daf4c98f7797205eed15b438c53ca991d0f0de045",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    },
+    "es": {
+      "path": "content/post/godels-incompleteness-theorems/index.es.md",
+      "sha256": "261ce4ed21aebd272a9b36a2b779a03fb8200b6430a7557528b4b6318746ae2a",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    },
+    "fr": {
+      "path": "content/post/godels-incompleteness-theorems/index.fr.md",
+      "sha256": "4e0321ba3a023a1483523a2136e3884a503b5885efc986f5cd105d91567417e3",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    },
+    "hi": {
+      "path": "content/post/godels-incompleteness-theorems/index.hi.md",
+      "sha256": "bd0a80cd0bbbc1ef0beaf75ac1fe23be2c4597a4efcbd09c184cca317b98da49",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    },
+    "id": {
+      "path": "content/post/godels-incompleteness-theorems/index.id.md",
+      "sha256": "20edfb4885f889b212c024b371849f0024e1056dc05c7ba84fccbcdb96b2ed85",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    },
+    "ko": {
+      "path": "content/post/godels-incompleteness-theorems/index.ko.md",
+      "sha256": "2f6d89ab8c1cc5b6ccdb262a9eb4e2d7c97e561e18ad3d6fb815f293e5df4a55",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    },
+    "ja": {
+      "path": "content/post/godels-incompleteness-theorems/index.md",
+      "sha256": "cf70e3c2166b00cf59e44ac280ecb5bf8be778a92bef217ba4dae3e3a238e127",
+      "lines": 161,
+      "originalBodyFullyRead": true,
+      "translationApproved": false
+    },
+    "pt": {
+      "path": "content/post/godels-incompleteness-theorems/index.pt.md",
+      "sha256": "79105e1e1ee09ac66bc124f2ab4f8a16688777e5aa1ef2c5ed125ed56af444f0",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    },
+    "ru": {
+      "path": "content/post/godels-incompleteness-theorems/index.ru.md",
+      "sha256": "b900aa008f7fd176b7cdf02d9968e5dd28fdd777bddebd6f8770fcc5ceab0c69",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    },
+    "zh-cn": {
+      "path": "content/post/godels-incompleteness-theorems/index.zh-cn.md",
+      "sha256": "2ba0b267b64d385f10ef1fc3e09da5e45959f5845657e2b020c3616bc48afaf5",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    },
+    "zh-tw": {
+      "path": "content/post/godels-incompleteness-theorems/index.zh-tw.md",
+      "sha256": "445c87ffbdc2e814ce9de1643817df4b1dc0d0d394dfb28a1f7f1122b8091174",
+      "lines": 160,
+      "originalBodyFullyRead": false,
+      "translationApproved": false
+    }
+  },
+  "assets": [
+    {
+      "path": "content/post/godels-incompleteness-theorems/eyecatch.jpg",
+      "sha256": "55e7ec54eb2288085bcd98adf49a8674f0cf6bb86b48e29e60175ef30e993d6c"
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "findingsPendingPrimarySourceReview": [
+    "Japanese whole body read in two chunks; translations not read.",
+    "Consistency link targets CAP/distributed-systems article, not mathematical consistency.",
+    "Halting Problem label targets Turing-machine article instead of halting-problem.",
+    "Numbering diagram assigns symbol0 to2 and5 while formula uses exponent2 at both positions; 2**2 * 3**3 * 5**2 equals2700 correctly.",
+    "Review effective axiomatization, consistency versus soundness, theory-relative unprovability, first/second incompleteness hypotheses and provability formalization.",
+    "Review broad Euclidean geometry/first-order reals completeness wording, Hilbert historical programme and human-versus-machine claims."
+  ],
+  "scope": "Original-state inventory and Japanese reading only. No primary-source verification of theorem/history claims yet, no source edits, no translation review or publication approval."
+}
