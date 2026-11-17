@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-17T10:15:54.502300+09:00",
+  "path": "content/post/godels-incompleteness-theorems/index.md",
+  "beforeSha256": "07e090757322663d40a01ea9b7304746df156ec35ffdf437001a453a76832365",
+  "afterSha256": "2499050e601b98d9c589442b741f6f150541804abad5c7344b282341f406f3c8",
+  "metadata": "Actual public JSON-LD September14 publication preserved; duplicate removed; math/mermaid enabled; November17 modification.",
+  "changes": [
+    "Replaced exaggerated1931/age framing with explicitly named Rosser formulation.",
+    "Separated finite proof checking and existential provability; clarified instructional encoding2700.",
+    "Second theorem now gives standard consistency formula and limits of liar analogy.",
+    "Added four references with selected reading scope documented in earlier receipts."
+  ],
+  "cover": "Original image actually viewed: malformed mathematical text including meta-level T-turnstile-G equivalence; replacement pending.",
+  "remaining": "Full revised source reading, cover replacement and generated HTML checks pending; all12translations unread.",
+  "reviewedTranslationsAdded": 0
+}
