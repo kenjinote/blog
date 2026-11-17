@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-11-17T10:11:45.173153+09:00",
+  "path": "content/post/godels-incompleteness-theorems/index.md",
+  "beforeSha256": "6ba25c718b538a61c35853e11bf4fe70669764efcfb6f8d3d65f90a570e61775",
+  "afterSha256": "93935609531485a801b37d6fcc8466ee46d4fe8259c8095f6f94e802830a3fb9",
+  "source": "https://ic.openlogicproject.org/ic-screen.pdf",
+  "additionalSource": "https://www.math.ucla.edu/~dam/220b.1.11w/220notes4.pdf",
+  "sourceScope": "Previously read selected text only: Open Logic chapter5 summary4460–4484; UCLA coding/fixed-point/effective proof predicates and first theorem text0–343 plus Rosser4C.4 excerpt. Not full books or rendered pages.",
+  "changes": [
+    "Replaced unjustified theorem-subset-of-truth diagram with explicitly conditional consistency and soundness branches.",
+    "Expanded fixed-point explanation with normal provability predicate, theory-relative derivability and finite proof arithmetization.",
+    "Distinguished unprovability of G from unprovability of its negation, omega-consistency and Rosser alternative.",
+    "Explicitly conditioned external truth reasoning on consistency; no human omniscience inference."
+  ],
+  "reviewedTranslationsAdded": 0,
+  "remaining": "Other source sections/title/conclusion/history/examples require completion; all12translations unread. No build or publication approval."
+}
