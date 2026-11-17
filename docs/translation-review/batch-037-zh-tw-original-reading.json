@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-17",
+  "path": "content/post/godels-incompleteness-theorems/index.zh-tw.md",
+  "sha256": "42fe20ad7acf5952fedca794f1874cbc0363ec20096e49028f7e818a2b949cd2",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Consistency bullet parenthesis omits cannot and literally says sentence/negation simultaneously proven.",
+    "Uses 偷換 for legitimate arithmetization, suggesting illicit substitution.",
+    "Concluding phrase 擁取之不盡 is malformed.",
+    "Absolute unprovability, missing effectiveness/soundness qualifications, duplicate zero codes and overbroad real-number/human/machine claims inherited.",
+    "CAP and Turing-machine links misdirected; duplicate date."
+  ],
+  "revised": false,
+  "reviewedTranslationsAdded": 0
+}

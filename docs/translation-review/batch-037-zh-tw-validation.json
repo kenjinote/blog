@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-17T18:49:06.080453+09:00",
+  "allPassed": true,
+  "language": "zh-tw",
+  "sourceSha256": "9b959dda04cc6163152bf99b2097b1b8bf768c6d28ef70832d6decf61cf8af69",
+  "texExpressions": 34,
+  "displayMath": 2,
+  "diagrams": 4,
+  "diagramEdges": [
+    3,
+    5,
+    4,
+    4
+  ],
+  "executablePrograms": 0,
+  "proseFragmentsPreserved": 62,
+  "strongSpans": 6,
+  "externalReferences": 4,
+  "internalReferences": 3,
+  "datesTitleNavigationCoverPassed": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Traditional Chinese static source/HTML match; original/revised fully read.9translations unread; Traditional Chinese registration pending. No browser KaTeX/Mermaid execution, fullsite/publication or theorem-proof certification."
+}

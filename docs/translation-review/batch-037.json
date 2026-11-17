@@ -42,6 +42,86 @@
         "Selected primary-source excerpts only; no full-paper review or theorem certification.",
         "Batch037 publication and all-article goal remain pending."
       ]
+    },
+    "post/godels-incompleteness-theorems/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-17",
+      "reviewer": "Codex (AI)",
+      "source": "post/godels-incompleteness-theorems/index.md",
+      "sourceHash": "4768e83cb5bc16d0753c3b460e0e81a0de8df159e4b2e0638aa3a73ddff8d777",
+      "translationHash": "a923c5cc07e3c70618c84ad65cf4936c18527f6e34193802325bbb141517dd5c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Original and saved revised Simplified Chinese whole bodies read and compared with the whole revised Japanese source: introduction, eight chapters, conclusion and references. Replaced absolute unprovability with theory-relative unprovability; restored effective axiomatization and sufficient PA-extension assumptions; distinguished consistency, soundness, completeness and decidability. Clarified Hilbert program, stronger theories and limits of human/AI conclusions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked syntax/semantics, first-order PA and induction schema, effectively enumerable axioms/proofs, standard natural numbers, fixed-point lemma, provability predicate, derivability conditions, omega-consistency and Rosser improvement. Used 一致性 for consistency, 可靠性 for soundness, 不动点 for fixed point, 归纳公理模式 for induction schema and 实闭域 for real closed fields. Distinguished finite proof checking from existential proof search."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared fixed-point and consistency displays exactly with Japanese. Read the finite-proof contradiction argument and external truth argument, explicitly separating failure to prove G from failure to refute G under consistency alone. Checked symbol coding 2,3,2 and positional primes 2,3,5 giving 2700. Qualified real closed fields by first-order language and halting argument by soundness. Static HTML preserves 34 TeX expressions, two displays and all four graphs with 3,5,4,4 edges. No new theorem or full proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable programs occur in this article. Read all four Mermaid sources and translated labels, compared graph structure with Japanese and checked preservation in HTML. Browser Mermaid execution was not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Four external references match Japanese; three article links use Simplified Chinese routes for Hilbert, Godel and halting-problem. Removed unrelated CAP consistency and Turing-machine targets. Static checks cover title, actual September14 publication date, November17 lastmod, cover, canonical, unique reciprocal hreflang and article-preserving sidebar. Fresh38bundle preview:494posts+1tag,2139 multilingual pages,3898HTTPS HTML and41XML. Primary-source reading limited to previously documented excerpts."
+        }
+      },
+      "summary": "Full Simplified Chinese comparison with corrected Japanese incompleteness article, including theorem conditions, terminology, coding, diagrams and references.",
+      "languageSpecificFindings": "Removed sensational 绝望 and 发疯 framing, corrected the claim of unique factorization for every natural number to integers at least2, distinguished symbol codes from positional primes, and corrected the CAP and Turing-machine links. Added Rosser and derivability qualifications in Simplified Chinese.",
+      "validation": "docs/translation-review/batch-037-zh-cn-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Other10 translations are not yet reviewed against the revised source; Traditional Chinese original has been read.",
+        "Static HTML only; no browser KaTeX/Mermaid execution.",
+        "Selected primary-source excerpts only; no full-paper review or theorem certification.",
+        "Batch037 publication and all-article goal remain pending."
+      ]
+    },
+    "post/godels-incompleteness-theorems/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-17",
+      "reviewer": "Codex (AI)",
+      "source": "post/godels-incompleteness-theorems/index.md",
+      "sourceHash": "4768e83cb5bc16d0753c3b460e0e81a0de8df159e4b2e0638aa3a73ddff8d777",
+      "translationHash": "9b959dda04cc6163152bf99b2097b1b8bf768c6d28ef70832d6decf61cf8af69",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Original and saved revised Traditional Chinese whole bodies read and compared with the whole revised Japanese source: introduction, eight chapters, conclusion and references. Replaced absolute unprovability with theory-relative unprovability; restored effective axiomatization and sufficient PA-extension assumptions; distinguished consistency, soundness, completeness and decidability. Clarified Hilbert program, stronger theories and limits of human/AI conclusions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked syntax/semantics, first-order PA and induction schema, effectively enumerable axioms/proofs, standard natural numbers, fixed-point lemma, provability predicate, derivability conditions, omega-consistency and Rosser improvement. Used 一致性 for consistency, 健全性 for soundness, 固定點 for fixed point, 歸納公理模式 and 實閉體; retained regional 字串, 程式, 演算法, 記憶體, 質數. Distinguished finite proof checking from existential proof search."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared fixed-point and consistency displays exactly with Japanese. Read the finite-proof contradiction argument and external truth argument, explicitly separating failure to prove G from failure to refute G under consistency alone. Checked symbol coding 2,3,2 and positional primes 2,3,5 giving 2700. Qualified real closed fields by first-order language and halting argument by soundness. Static HTML preserves 34 TeX expressions, two displays and all four graphs with 3,5,4,4 edges. No new theorem or full proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable programs occur in this article. Read all four Mermaid sources and translated labels, compared graph structure with Japanese and checked preservation in HTML. Browser Mermaid execution was not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Four external references match Japanese; three article links use Traditional Chinese routes for Hilbert, Godel and halting-problem. Removed unrelated CAP consistency and Turing-machine targets. Static checks cover title, actual September14 publication date, November17 lastmod, cover, canonical, unique reciprocal hreflang and article-preserving sidebar. Fresh38bundle preview:494posts+1tag,2139 multilingual pages,3898HTTPS HTML and41XML. Primary-source reading limited to previously documented excerpts."
+        }
+      },
+      "summary": "Full Traditional Chinese comparison with corrected Japanese incompleteness article, including theorem conditions, terminology, coding, diagrams and references.",
+      "languageSpecificFindings": "Original consistency parenthesis lacked negation; now explicitly says the theory cannot prove both. Removed 偷換 suggesting illegitimate arithmetization and malformed 擁取之不盡. Draft conversion assisted by OpenCC s2twp, then complete draft and saved final body read against Japanese; corrected conversion errors 推匯出 and 擴充套件, localized 健全性/固定點/實閉體/函數/質數/計畫 and quotation marks. Corrected the CAP and Turing-machine links.",
+      "validation": "docs/translation-review/batch-037-zh-tw-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Other9 original translation bodies remain unread.",
+        "Static HTML only; no browser KaTeX/Mermaid execution.",
+        "Selected primary-source excerpts only; no full-paper review or theorem certification.",
+        "Batch037 publication and all-article goal remain pending."
+      ]
     }
   },
   "stages": [
@@ -75,8 +155,20 @@
       "stage": "English whole original/revised comparison and static HTML validation",
       "validation": "docs/translation-review/batch-037-en-validation.json",
       "reviewedTranslationsAdded": 1
+    },
+    {
+      "date": "2026-11-17",
+      "stage": "Simplified Chinese whole original/revised comparison and static HTML validation",
+      "validation": "docs/translation-review/batch-037-zh-cn-validation.json",
+      "reviewedTranslationsAdded": 1
+    },
+    {
+      "date": "2026-11-17",
+      "stage": "Traditional Chinese whole original/revised comparison and static HTML validation",
+      "validation": "docs/translation-review/batch-037-zh-tw-validation.json",
+      "reviewedTranslationsAdded": 1
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and English whole bodies reviewed; English1AI record, other11unread. Static preview passed. Publication037 and full goal pending."
+  "scope": "Japanese, English and both Chinese whole bodies reviewed;3AI records, other9unread. Static preview passed. Publication037 and full goal pending."
 }
