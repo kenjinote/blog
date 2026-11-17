@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-11-17T10:09:31.027344+09:00",
+  "path": "content/post/godels-incompleteness-theorems/index.md",
+  "beforeSha256": "cf70e3c2166b00cf59e44ac280ecb5bf8be778a92bef217ba4dae3e3a238e127",
+  "afterSha256": "c19409fddf6f09bd0c739108f2e09fd4816914530d09de1a9be1961cb2379441",
+  "limitedEdits": [
+    "Removed mathematical consistency link to CAP theorem.",
+    "Halting Problem now links to reviewed halting-problem article.",
+    "Separated position primes from fixed symbol codes; repeated0 has code2 both times.",
+    "Marked prime-exponent example as instructional, not original1931 numbering; restricted unique prime factorization statement to integers>=2."
+  ],
+  "finiteArithmetic": {
+    "symbolCodes": [
+      2,
+      3,
+      2
+    ],
+    "positionPrimes": [
+      2,
+      3,
+      5
+    ],
+    "product": 2700
+  },
+  "primaryReading": {
+    "url": "https://www.math.ucla.edu/~dam/220b.1.11w/220notes4.pdf",
+    "readScope": "Returned text lines0–343 covering coding, semantic fixed point, effective axiomatization, sound first theorem; find excerpts for4C.4,4C.8 and provability. Not all43pages or rendered PDF reviewed.",
+    "finding": "Coding has fixed symbol numbers and finite sequences. Effective axiomatization matters; distinguish soundness and consistency. Second-theorem generality/formalization needs further cross-check before rewriting.",
+    "failedSources": [
+      "Chicago Razborov PDF web502 twice",
+      "CMU Avigad URL inaccessible"
+    ]
+  },
+  "reviewedTranslationsAdded": 0,
+  "limitations": [
+    "Partial source repair only; theorem/history prose still under review.",
+    "All12translation bodies unread.",
+    "No build, browser or publication verification for037.",
+    "Batch036 deployment still separately pending."
+  ]
+}
