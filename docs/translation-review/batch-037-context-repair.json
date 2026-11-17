@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-17T10:14:22.997466+09:00",
+  "path": "content/post/godels-incompleteness-theorems/index.md",
+  "beforeSha256": "3fc15a4431e12fc235042235230cf0ebeacb31ad368e6843a20ea27c1b5b5153",
+  "afterSha256": "07e090757322663d40a01ea9b7304746df156ec35ffdf437001a453a76832365",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/math/0102189",
+      "scope": "Abstract lines16–19 only;44page paper unread.",
+      "use": "Formal axiomatization and finitistic consistency proofs as two pillars."
+    },
+    {
+      "url": "https://people.clas.ufl.edu/zapletal/files/notesset.pdf",
+      "scope": "find excerpts especially5.2.3/5.2.8/6.3 introduction/6.3.12;98page notes not fully read.",
+      "use": "Specified ordered-field language and completeness/decidability. Nearby quadratic example has apparent plus-sign error and omitted leading coefficient conditions; not used."
+    },
+    {
+      "url": "https://users.cs.duke.edu/~bdonald/papers/2RCF-all.pdf",
+      "scope": "403; no fulltext evidence used."
+    }
+  ],
+  "changes": [
+    "Revised sections1/2/6/7, preserving their historical/formal/practical themes while removing unconditional claims.",
+    "Distinguished consistency, theory completeness, logical completeness, decidability and soundness.",
+    "Specified PA as sufficient rather than minimal strength; real closed-field language restricted.",
+    "Replaced one-way historical inevitability/AI diagram with conditional proof-enumeration argument."
+  ],
+  "remaining": "Re-read revised whole Japanese source; finish section3/4/5 editorial consistency, references/date metadata, image and build. All12translations unread.",
+  "reviewedTranslationsAdded": 0
+}
