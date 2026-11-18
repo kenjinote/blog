@@ -582,7 +582,7 @@
       "reviewedTranslationsAdded": 1
     }
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "scope": "Japanese and all12translations fully reviewed;12AI records. All13 current revisions pass static math,graphs,prose,dates,links,navigation,cover and ledger hash checks. Publication037 and whole goal pending.",
   "finalValidation": "docs/translation-review/batch-037-final-validation.json",
   "finalChecks": "docs/translation-review/batch-037-final-checks.json",
@@ -614,5 +614,38 @@
       }
     ],
     "scope": "Normal push after zero incoming commits. Exact head/run observed. Local checks passed, live probe pending successful build/deploy."
-  }
+  },
+  "publicationCheckpoints": [
+    {
+      "checkedAt": "2026-11-19T08:53:59.296982+09:00",
+      "ciRun": 44346405983,
+      "ciUrl": "https://github.com/kenjinote/blog/actions/runs/44346405983",
+      "deployedCommit": "cea4d1c10ea98216e657db13ad16a7f125efee32",
+      "runAttempt": 1,
+      "ciCompletion": "docs/translation-review/batch-037-ci-completion.json",
+      "proof": "docs/translation-review/publication-037.json",
+      "pages": 494,
+      "passed": 494,
+      "failed": 0,
+      "translationsPublishedAndVerified": 456,
+      "japaneseSourcesPublishedAndVerified": 38,
+      "currentLedgerAiReviews": 458,
+      "notYetPublishedReviews": 2,
+      "mathVersions": 299,
+      "texExpressions": 18014,
+      "godelVersions": 13,
+      "godelTeX": 443,
+      "godelDiagrams": 52,
+      "godelGraphEdges": 208,
+      "godelProseFragments": 968,
+      "additionalHindiTaxonomyPages": 3,
+      "additionalHindiTaxonomyPassed": 3,
+      "httpPageProbeAttempts": 1,
+      "httpPageRetries": 0,
+      "buildCompletedAt": "2026-11-18T16:42:29Z",
+      "deployCompletedAt": "2026-11-18T16:46:50Z",
+      "scope": "Exact CI head/build/deploy success followed by live494articles+3Hindi tags. All13Godel revisions exact math/graphs/prose/links/dates/cover/navigation and ArabicRTL. Prior481article checks retained. Batch038 JA/EN/CN local changes are not part of this publication. Static HTTP only; no browser/native/fullsite certification. Whole goal active."
+    }
+  ],
+  "publicationVerifiedBy": "docs/translation-review/publication-037.json"
 }

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-19",
+  "path": "content/post/cantors-diagonal-argument/index.zh-cn.md",
+  "sha256": "7c8bbd76e62723d07a8a6ca978b8d36bb8380d6f99e92f3ed55e59b1d92c0d3e",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Shared unconditional aleph1 identification and missing ZFC consistency premise.",
+    "错开对角线 suggests shifting rather than changing each diagonal digit; 新数字 conflates digit and real number.",
+    "Decimal uniqueness and arbitrary noncomputable enumeration insufficiently explained; rational enumeration omitted.",
+    "Repeated name links, linked heading and math heading need same TOC fixes as Japanese."
+  ],
+  "reviewedTranslationsAdded": 0
+}

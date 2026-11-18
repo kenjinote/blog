@@ -42,6 +42,46 @@
         "Selected primary teaching material only; no full forcing proof review.",
         "Batch038 publication pending; all-article goal active."
       ]
+    },
+    "post/cantors-diagonal-argument/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-19",
+      "reviewer": "Codex (AI)",
+      "source": "post/cantors-diagonal-argument/index.md",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "f01f993df5fef07a15e4f6d2b95b0d46b32e97688dbfb0d4b8b27cecb017067c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read full original and saved revised Simplified Chinese and compared all sections with frozen revised Japanese. Corrected unconditional aleph1 identification and restored ZFC consistency hypothesis. Added rational enumeration, canonical decimal convention, arbitrary noncomputable sequence explanation, strict-cardinality comparison and relative consistency."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked 势, 基数, 单射, 双射, 可数无限, 不可数, 幂集, 连续统假设 and 相对相容性. Replaced 错开对角线 with changing each diagonal digit, distinguishing 数字 from 实数. Final CH lead-in and graph comment reread after correction."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All nine displays match Japanese exactly; localized if explanation retained in prose.56TeX expressions,9displays,2graphs8edges,52prose fragments and18strong spans preserved in HTML. Ten digit cases validate finite illustration only, not theorem proof. No executable programs."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Read two Mermaid diagrams and checked topology and HTML source preservation. No executable article programs or browser graph execution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three primary teaching references and six localized article targets checked; duplicate name links removed and heading links/math cleaned for TOC. Dates,title,cover,canonical,14alternates and13sidebar targets passed.39bundle preview507posts+1tag,2218multilingual pages,4046HTML/41XML HTTPS."
+        }
+      },
+      "summary": "Full Simplified Chinese comparison of corrected Cantor diagonal argument and continuum hypothesis conditions.",
+      "languageSpecificFindings": "Original/revised full bodies read; corrected shifting-diagonal wording, digit/number distinction, CH premise and vague enumeration. Final relative-consistency sentence lead-in and graph comment corrected and read.",
+      "validation": "docs/translation-review/batch-038-zh-cn-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other10translations remain unread.",
+        "No browser KaTeX/Mermaid or formal theorem certification.",
+        "Selected primary teaching sources only.",
+        "Batch038 publication pending; whole goal active."
+      ]
     }
   },
   "stages": [
@@ -50,8 +90,14 @@
       "stage": "Japanese and English whole-body comparison, source correction and39bundle static validation",
       "reviewedTranslationsAdded": 1,
       "validation": "docs/translation-review/batch-038-ja-en-r3-validation.json"
+    },
+    {
+      "date": "2026-11-19",
+      "stage": "Simplified Chinese whole-body comparison and static validation",
+      "reviewedTranslationsAdded": 1,
+      "validation": "docs/translation-review/batch-038-zh-cn-validation.json"
     }
   ],
   "publicationPending": true,
-  "scope": "JA and EN whole original/revised bodies reviewed;1AI entry;11translations unread. Local static checks passed; publication038 pending."
+  "scope": "Japanese and2translations fully read;2AI records;10translations unread. Static preview passed; publication038 pending."
 }
