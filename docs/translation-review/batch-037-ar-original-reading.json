@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-19",
+  "path": "content/post/godels-incompleteness-theorems/index.ar.md",
+  "sha256": "818fed0280f5c82e08d736d12ceb93b60877a57bafb02293902f88071da333c2",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Absolute never-provable truth, omitted effective axiomatization and consistency/soundness distinction.",
+    "الصلاحية الذاتية conflates own correctness with consistency; liar analogy presented as explanation of second theorem without limits.",
+    "Different codes for the same zero and unique prime factorization incorrectly stated for every natural.",
+    "Unqualified real-number theory and human superiority; physical computation instead of mathematical model.",
+    "CAP link for logical consistency and Turing-machine link for halting problem; duplicate dates and self-links."
+  ],
+  "reviewedTranslationsAdded": 0
+}

@@ -1,0 +1,125 @@
+{
+  "checkedAt": "2026-11-19T01:21:30.757174+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ar",
+      "sha256": "96e9ca012655bf2f4fec3e938a3d81e5e38e06b88b025540e610bd5ebdb597ef",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 76,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "de",
+      "sha256": "2d3300589a36fa621e6f91b442c1be7ca85990551aa47007e2fd161c65856175",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 80,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "en",
+      "sha256": "4cc373b94aea7ba0b39417bf4381c22883e055eca6a6dbe34ded4ff1796ca1a6",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 77,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "es",
+      "sha256": "65db3abf4f3a40931553c941ef77d936a3dcb37f5de514f2354207ec377cc44f",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 78,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "fr",
+      "sha256": "c8944bb6959a29ce580d8ac18efe5613c0baa7e4e9c8316c0e671f187275a48c",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 79,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "hi",
+      "sha256": "4eb6a209dd6e0e96204d9bd0621c7b3436a809262012046f71d24e3b0278791f",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 75,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "id",
+      "sha256": "1b599e209a9992206759dc5a5896ed03f985d4a9cea6988e791347862ff076c1",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 80,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "ko",
+      "sha256": "807878a8d613a30560c4226290db321d8e1026fa28c1e1845d65bb24859fc905",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 69,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "ja",
+      "sha256": "4768e83cb5bc16d0753c3b460e0e81a0de8df159e4b2e0638aa3a73ddff8d777",
+      "texExpressions": 35,
+      "proseFragmentsPreserved": 69,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "pt",
+      "sha256": "a061bff28269ddec120de1b38296fdf72f6f4c8f7e68ebc3109c4637cef6ac4b",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 80,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "ru",
+      "sha256": "f4371b008aca40a86a432ebb3abcbcb798a766b0762b32cbd13ced5ac215f967",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 81,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "zh-cn",
+      "sha256": "a923c5cc07e3c70618c84ad65cf4936c18527f6e34193802325bbb141517dd5c",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 62,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    },
+    {
+      "language": "zh-tw",
+      "sha256": "9b959dda04cc6163152bf99b2097b1b8bf768c6d28ef70832d6decf61cf8af69",
+      "texExpressions": 34,
+      "proseFragmentsPreserved": 62,
+      "diagrams": 4,
+      "diagramEdges": 16,
+      "allPassed": true
+    }
+  ],
+  "publicationPending": true,
+  "scope": "Final static validation of all13 exact reviewed revisions and ledger hashes. No browser/native/fullsite certification."
+}

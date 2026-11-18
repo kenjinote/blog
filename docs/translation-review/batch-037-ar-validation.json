@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-19T01:19:57.418591+09:00",
+  "allPassed": true,
+  "language": "ar",
+  "sourceSha256": "96e9ca012655bf2f4fec3e938a3d81e5e38e06b88b025540e610bd5ebdb597ef",
+  "texExpressions": 34,
+  "displayMath": 2,
+  "diagrams": 4,
+  "diagramEdges": [
+    3,
+    5,
+    4,
+    4
+  ],
+  "executablePrograms": 0,
+  "proseFragmentsPreserved": 76,
+  "strongSpans": 6,
+  "externalReferences": 4,
+  "internalReferences": 3,
+  "datesTitleNavigationCoverPassed": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Arabic static source/HTML match; original/revised fully read. All12 translations read; Arabic registration pending. No browser KaTeX/Mermaid execution, fullsite/publication or theorem-proof certification."
+}
