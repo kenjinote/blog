@@ -3,7 +3,7 @@ title: "कैंटर का विकर्ण तर्क (Cantor's Diagona
 description: "अनंत में भी 'आकार' का अंतर होता है। जॉर्ज कैंटर द्वारा प्रस्तावित 'विकर्ण तर्क' का उपयोग करके, वास्तविक संख्याओं की गणनीयता (cardinality) प्राकृतिक या परिमेय संख्याओं की गणनीयता से वास्तव में बड़ी होने को सिद्ध करने की प्रक्रिया का विस्तार से वर्णन किया गया है।"
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
-image: "eyecatch.jpg"
+image: "eyecatch-v2.png"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "विकर्ण तर्क", "अनंत", "गणित", "प्रमाण"]
 ---

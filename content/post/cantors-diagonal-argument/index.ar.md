@@ -3,7 +3,7 @@ title: "حجة كانتور القطرية (Cantor's Diagonal Argument) - إثب
 description: "هناك أحجام مختلفة لللانهاية. نشرح بالتفصيل عملية إثبات أن أصالة الأعداد الحقيقية أكبر بصدق من أصالة الأعداد الطبيعية والكسرية، باستخدام \"الحجة القطرية\" التي اقترحها جورج كانتور."
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
-image: "eyecatch.jpg"
+image: "eyecatch-v2.png"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "الحجة القطرية", "اللانهاية", "رياضيات", "إثبات"]
 ---

@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-19",
+  "originalAsset": "content/post/cantors-diagonal-argument/eyecatch.jpg",
+  "newAsset": "content/post/cantors-diagonal-argument/eyecatch-v2.png",
+  "newAssetSha256": "79ae517e309a91b2f927fedc0d7f9b414e01f90b60730ecd33d174078905def9",
+  "generatedSource": "C:\\Users\\kenjinote\\.codex\\generated_images\\01a162ce-b49c-7d80-8ef4-9d817fe123e1\\exec-34cf0ed4-d0c5-4383-9580-40047e1c75da.png",
+  "originalAndGeneratedViewed": true,
+  "reason": "Original mixes binary sequences with real-number proof and inaccurate subscripts. New opaque text-free city/grid illustration removes all purported mathematical statements. Exact proof remains in article.",
+  "changes": [
+    {
+      "path": "content/post/cantors-diagonal-argument/index.ar.md",
+      "before": "015567e2c70548af988f41631d2c6d0dab2a1f37f4a8b5fba0f9ca618f1b4fc3",
+      "after": "bf859b171a4721ac911c119f3c14d4cfcfb5c7b7e8d5576429ef5a509dcd6487"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.de.md",
+      "before": "6ec83d6f91b069943c8101980602940276d3e251e7c36b4c1673f001c86840da",
+      "after": "f386ebac05180cf449748b265761106934b2c19f861db9c2772c10d51458a398"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.en.md",
+      "before": "e06b6e8643e9d9acccf814d04c3b70b5e1273537cfc7701d8aeb4ebfbff09a9a",
+      "after": "91a1da7b67f13862b3dd7396938cc65b1233aa01716cd62c12a36093e9af7930"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.es.md",
+      "before": "2ac035591ae347871c2d42277d8dc4e1250a99b86c288b7be8d57084a71244d6",
+      "after": "15f755155c415d4eba0188a01b5ef21db243814f58778b945a31098af4f9911e"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.fr.md",
+      "before": "f7920ab81610ff68f41cc7c9078a44b3ed5c6be2c670b10891fc37a42864cef7",
+      "after": "412109d3102bac24c2889d97f639d130b35a220ebb119b29f3e4abaa63e17844"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.hi.md",
+      "before": "e295f21e607c38fbb1c6777726a97aacfca93dbd5e615b7e1a006c64cd9089d7",
+      "after": "60307f1d67e4f0d6d977a07acbfaade81e84c5d6d81aecc3b8939a3106804934"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.id.md",
+      "before": "3b4da234be46264f6df8d7d58af13c866125c45c568541366d5e63017eb3bd80",
+      "after": "8c1c3752e5b1959ac33ab804ff792f63021464475c20423e12bf53a42ba3864c"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.ko.md",
+      "before": "cd59723b401adcd4ad4968f2b97600433f359c6399dfe517d5faeaa93de02e4f",
+      "after": "e72e4246de668fc815a810954c0e106a8f380aaf233713ae8b90ad8cb08985e4"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.md",
+      "before": "241579b379da8cab0769dd2feb9a8ee4a96eb5c92c606b2ef808e161515832c0",
+      "after": "1fd9921f487437bf9048c286dabaef1d37fdaa16c1c1c6a81750ffaea95c513c"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.pt.md",
+      "before": "9dd07f0c0c2a05534ba525f045de3030e121db1d64a7c858f4e959087442d9bd",
+      "after": "cf5922afe20e45336876ecabb08d38852cae2a03d1399ec192f8d36b99b804bb"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.ru.md",
+      "before": "d2dc4f224a3ff898209feb6590ac114ebfbf218aa6049aa206a2ba239b48bb0d",
+      "after": "e1a7a712e8f79682fd10baaf115ed69031514f30a9f8fd7f052e45031690f879"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.zh-cn.md",
+      "before": "ecd03972aa60473cf245436aa04040702fa3214ed2b02b0c6e4b2491099783b4",
+      "after": "7c8bbd76e62723d07a8a6ca978b8d36bb8380d6f99e92f3ed55e59b1d92c0d3e"
+    },
+    {
+      "path": "content/post/cantors-diagonal-argument/index.zh-tw.md",
+      "before": "ddf2dc8692db03ec2cecdf6cd6f3acc14db1137df98333f9a817753a7a6682f3",
+      "after": "e90e18f3fa300d820b0e4192f6cab570dd419c0ac259d1c3ebc0b68eed874451"
+    }
+  ],
+  "reviewedTranslationsAdded": 0,
+  "scope": "Cover-reference edits only for11unread translations; not semantic approval."
+}

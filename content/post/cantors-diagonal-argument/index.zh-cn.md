@@ -3,7 +3,7 @@ title: "康托尔的对角线论证 (Cantor's Diagonal Argument) - 证明实数�
 description: "无限也有“大小”之分。本文将详细讲解如何使用格奥尔格·康托尔提出的“对角线论证”来证明实数的势真正大于自然数和有理数的势。"
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
-image: "eyecatch.jpg"
+image: "eyecatch-v2.png"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "对角线论证", "无限", "数学", "证明"]
 ---

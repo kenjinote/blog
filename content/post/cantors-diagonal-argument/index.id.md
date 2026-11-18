@@ -3,7 +3,7 @@ title: "Argumen Diagonal Cantor (Cantor's Diagonal Argument) - Bukti Bahwa Bilan
 description: "Terdapat perbedaan 'ukuran' dalam ketakterhinggaan. Kami akan menjelaskan secara detail proses pembuktian bahwa kardinalitas bilangan real benar-benar lebih besar daripada kardinalitas bilangan asli dan rasional, menggunakan 'Argumen Diagonal' yang diajukan oleh Georg Cantor."
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
-image: "eyecatch.jpg"
+image: "eyecatch-v2.png"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Argumen Diagonal", "Ketakterhinggaan", "Matematika", "Bukti"]
 ---

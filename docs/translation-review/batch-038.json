@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "article": "cantors-diagonal-argument",
+  "frozenSourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+  "reviews": {
+    "post/cantors-diagonal-argument/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-19",
+      "reviewer": "Codex (AI)",
+      "source": "post/cantors-diagonal-argument/index.md",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "cde2efec3d6cbeffa08e18d278355157f940442cc747fabac464da24425975d7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Whole original and saved revised JA/EN read. Corrected unconditional continuum=aleph1 claim, restored ZFC consistency premise for CH independence, explained relative consistency, decimal uniqueness and arbitrary/noncomputable enumeration. Added rational enumeration and distinguished cardinality from length/density."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked cardinality, injection, bijection, countably infinite, uncountable, power set, least uncountable cardinal, continuum hypothesis and relative consistency. Summary now describes changing diagonal digits, not shifting a diagonal."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Nine displays exactly match Japanese; ten finite digit-rule cases checked as illustrations, not a proof of uncountability or CH. Saved HTML preserves55EN/56JA TeX expressions, including restored x sentence omitted before blank-line fix. No formal theorem certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Both Mermaid graph sources read and topology matched, edges5and3. Exact source preserved in HTML; browser execution not checked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three primary teaching references and six localized article targets preserved. Removed duplicate JA name links, added EN halting link. Static checks cover dates, titles, unique reciprocal hreflang and article-preserving sidebar; removed nested header links and math lost in TOC. New text-free cover viewed; original retained.39bundle preview507posts+1taxonomy,2218multilingual pages,4046HTML/41XML HTTPS."
+        }
+      },
+      "summary": "Full English comparison of corrected Cantor diagonal argument, including CH assumptions and decimal proof.",
+      "languageSpecificFindings": "English shared incorrect aleph1 identification with Japanese; restored consistency hypothesis and avoided computability restriction. Corrected vague summary and added missing halting hyperlink. Full bodies reread; subsequent localized-link/strong/summary/heading and paragraph-separator changes inspected and statically validated.",
+      "validation": "docs/translation-review/batch-038-ja-en-r3-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Other11translations unread; cover-reference changes do not approve their text.",
+        "No browser KaTeX/Mermaid execution or formal proof certification.",
+        "Selected primary teaching material only; no full forcing proof review.",
+        "Batch038 publication pending; all-article goal active."
+      ]
+    }
+  },
+  "stages": [
+    {
+      "date": "2026-11-19",
+      "stage": "Japanese and English whole-body comparison, source correction and39bundle static validation",
+      "reviewedTranslationsAdded": 1,
+      "validation": "docs/translation-review/batch-038-ja-en-r3-validation.json"
+    }
+  ],
+  "publicationPending": true,
+  "scope": "JA and EN whole original/revised bodies reviewed;1AI entry;11translations unread. Local static checks passed; publication038 pending."
+}

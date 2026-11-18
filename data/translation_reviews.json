@@ -4565,6 +4565,16 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-037.json",
       "evidenceHash": "fdd6b6af2812bb6e6be1a9a9ff2f69eb0b78aa22ab6e6199baee5cd1d1193be8"
+    },
+    "post/cantors-diagonal-argument/index.en.md": {
+      "source": "post/cantors-diagonal-argument/index.md",
+      "reviewedAt": "2026-11-19",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "cde2efec3d6cbeffa08e18d278355157f940442cc747fabac464da24425975d7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-038.json",
+      "evidenceHash": "6e9a4b4fa6f6673ab31001825cebfc705ce7ff9241afbf8ca983d380d7180389"
     }
   }
 }

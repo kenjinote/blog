@@ -3,7 +3,7 @@ title: "Cantors Diagonalargument - Ein Beweis, dass es „überwältigend mehr�
 description: "Unendlichkeiten können unterschiedliche „Größen“ haben. Wir erklären detailliert den Beweis, dass die Mächtigkeit der reellen Zahlen echt größer ist als die der natürlichen oder rationalen Zahlen, mithilfe des von Georg Cantor entwickelten „Diagonalarguments“."
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
-image: "eyecatch.jpg"
+image: "eyecatch-v2.png"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Diagonalargument", "Unendlichkeit", "Mathematik", "Beweis"]
 ---

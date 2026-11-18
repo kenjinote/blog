@@ -12,3 +12,7 @@ Article: cantors-diagonal-argument. Japanese and English originals read fully; h
 ## Planned corrections, not yet applied
 
 Use continuum cardinality 2^aleph0 (or c), reserve equality with aleph1 for CH. State ZFC consistency condition for independence. Explain decimal uniqueness and non-algorithmic meaning of an arbitrary enumeration. Add brief rational enumeration argument and precise strict-cardinality comparison. Preserve actual publication date and existing slugs/taxonomy. Inspect cover and static rendering before recording any translation as reviewed.
+
+## Applied JA/EN corrections and validation
+
+2026-11-19: Whole revised JA and EN reread, followed by focused review of summary, heading and paragraph changes. CH equality separated from theorem and consistency assumption restored. Added rational enumeration, canonical decimal expansion and arbitrary-list explanation. Text-free cover generated and viewed; all13references updated,11bodies still unread. First static check revealed missing x sentence immediately before display, fixed by blank paragraph separator; heading math/links removed to repair TOC. R3 source preserves56JA/55EN TeX,9displays each,2graphs8edges,58JA/73EN prose fragments and18strong spans. Prose-only normalization accepts Hugo smart double quotes; TeX comparisons remain exact. English ledger registered457; publication pending. Earlier failure receipts retained.
