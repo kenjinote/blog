@@ -402,6 +402,46 @@
         "Selected primary-source excerpts only; no full-paper review or theorem certification.",
         "Batch037 publication and all-article goal remain pending."
       ]
+    },
+    "post/godels-incompleteness-theorems/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-19",
+      "reviewer": "Codex (AI)",
+      "source": "post/godels-incompleteness-theorems/index.md",
+      "sourceHash": "4768e83cb5bc16d0753c3b460e0e81a0de8df159e4b2e0638aa3a73ddff8d777",
+      "translationHash": "f4371b008aca40a86a432ebb3abcbcb798a766b0762b32cbd13ced5ac215f967",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Original and saved revised Russian whole bodies read and compared with the whole revised Japanese source: introduction, eight chapters, conclusion and references. Replaced absolute unprovability with theory-relative unprovability; restored effective axiomatization and sufficient PA-extension assumptions; distinguished consistency, soundness, completeness and decidability. Clarified Hilbert program, stronger theories and limits of human/AI conclusions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Distinguished непротиворечивость, семантическая корректность, синтаксическая полнота and разрешимость. Checked эффективная аксиоматизация, схема аксиом индукции, лемма о неподвижной точке, предикат доказуемости, условия выводимости, вещественно замкнутые поля and элиминация кванторов. Distinguished вычислимость from сложность and ordinary consistency from omega-consistency; explicitly included zero in natural numbers."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared fixed-point and consistency displays exactly with Japanese. Read the finite-proof contradiction argument and external truth argument, explicitly separating failure to prove G from failure to refute G under consistency alone. Checked symbol coding 2,3,2 and positional primes 2,3,5 giving 2700. Qualified real closed fields by first-order language and halting argument by soundness. Static HTML preserves 34 TeX expressions, two displays and all four graphs with 3,5,4,4 edges. No new theorem or full proof certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable programs occur in this article. Read all four Mermaid sources and translated labels, compared graph structure with Japanese and checked preservation in HTML. Browser Mermaid execution was not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Four external references match Japanese; three article links use Russian routes for Hilbert, Godel and halting-problem. Removed unrelated CAP consistency and Turing-machine targets. Static checks cover title, actual September14 publication date, November19 lastmod, cover, canonical, unique reciprocal hreflang and article-preserving sidebar. Fresh38bundle preview:494posts+1tag,2139 multilingual pages,3898HTTPS HTML and41XML. Primary-source reading limited to previously documented excerpts."
+        }
+      },
+      "summary": "Full Russian comparison with corrected Japanese incompleteness article, including theorem conditions, terminology, coding, diagrams and references.",
+      "languageSpecificFindings": "Read entire original and saved revised Russian; subsequently read final changed coding sentence and graph label. Removed literal здравый смысл and самодоказать phrasing and absolute-unprovability framing. Distinguished own correctness from consistency, fixed same-zero codes and factorization domain, clarified finite formula sequences constituting proofs. Corrected CAP and Turing-machine targets and removed self-links. Final punctuation and lastmod updated November19; original reading receipt remains November17.",
+      "validation": "docs/translation-review/batch-037-ru-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Arabic original body remains unread.",
+        "Static HTML only; no browser KaTeX/Mermaid execution.",
+        "Selected primary-source excerpts only; no full-paper review or theorem certification.",
+        "Batch037 publication and all-article goal remain pending."
+      ]
     }
   },
   "stages": [
@@ -489,8 +529,14 @@
       "stage": "Hindi whole original/revised comparison and static HTML validation",
       "validation": "docs/translation-review/batch-037-hi-validation.json",
       "reviewedTranslationsAdded": 1
+    },
+    {
+      "date": "2026-11-19",
+      "stage": "Russian whole original/revised comparison and static HTML validation",
+      "validation": "docs/translation-review/batch-037-ru-validation.json",
+      "reviewedTranslationsAdded": 1
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and10translations whole bodies reviewed;10AI records, Russian and Arabic2unread. Static preview passed. Publication037 and full goal pending."
+  "scope": "Japanese and11translations whole bodies reviewed;11AI records, Arabic unread. Static preview passed. Publication037 and full goal pending."
 }

@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-19T01:14:46.100284+09:00",
+  "allPassed": true,
+  "language": "ru",
+  "sourceSha256": "f4371b008aca40a86a432ebb3abcbcb798a766b0762b32cbd13ced5ac215f967",
+  "texExpressions": 34,
+  "displayMath": 2,
+  "diagrams": 4,
+  "diagramEdges": [
+    3,
+    5,
+    4,
+    4
+  ],
+  "executablePrograms": 0,
+  "proseFragmentsPreserved": 81,
+  "strongSpans": 6,
+  "externalReferences": 4,
+  "internalReferences": 3,
+  "datesTitleNavigationCoverPassed": true,
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Russian static source/HTML match; original/revised fully read.1translation unread; Russian registration pending. No browser KaTeX/Mermaid execution, fullsite/publication or theorem-proof certification."
+}

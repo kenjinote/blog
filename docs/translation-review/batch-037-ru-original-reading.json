@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-17",
+  "path": "content/post/godels-incompleteness-theorems/index.ru.md",
+  "sha256": "ea2d360c5a927bad5c44b8093def861db0a8bc6c25868419d737fc9d00e4fa7c",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Absolute unprovability and own correctness conflated with consistency; omitted effectiveness and soundness.",
+    "Russian calques such as перевернула этот здравый смысл and самодоказать obscure meaning.",
+    "Same zero different codes; factorization stated for all naturals.",
+    "Physical computation, unqualified first-order real theory and human superiority claims.",
+    "CAP and Turing-machine mislinks, self-links and duplicate date."
+  ],
+  "reviewedTranslationsAdded": 0
+}
