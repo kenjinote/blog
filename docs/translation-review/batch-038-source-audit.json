@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-19",
+  "article": "cantors-diagonal-argument",
+  "versions": {
+    "ar": {
+      "path": "content/post/cantors-diagonal-argument/index.ar.md",
+      "sha256": "015567e2c70548af988f41631d2c6d0dab2a1f37f4a8b5fba0f9ca618f1b4fc3",
+      "originalBodyFullyRead": false
+    },
+    "de": {
+      "path": "content/post/cantors-diagonal-argument/index.de.md",
+      "sha256": "6ec83d6f91b069943c8101980602940276d3e251e7c36b4c1673f001c86840da",
+      "originalBodyFullyRead": false
+    },
+    "en": {
+      "path": "content/post/cantors-diagonal-argument/index.en.md",
+      "sha256": "a0aa20d428fc33b496b585ec3eee9410f3f14fc242391f4529f31856dbe85508",
+      "originalBodyFullyRead": true
+    },
+    "es": {
+      "path": "content/post/cantors-diagonal-argument/index.es.md",
+      "sha256": "2ac035591ae347871c2d42277d8dc4e1250a99b86c288b7be8d57084a71244d6",
+      "originalBodyFullyRead": false
+    },
+    "fr": {
+      "path": "content/post/cantors-diagonal-argument/index.fr.md",
+      "sha256": "f7920ab81610ff68f41cc7c9078a44b3ed5c6be2c670b10891fc37a42864cef7",
+      "originalBodyFullyRead": false
+    },
+    "hi": {
+      "path": "content/post/cantors-diagonal-argument/index.hi.md",
+      "sha256": "e295f21e607c38fbb1c6777726a97aacfca93dbd5e615b7e1a006c64cd9089d7",
+      "originalBodyFullyRead": false
+    },
+    "id": {
+      "path": "content/post/cantors-diagonal-argument/index.id.md",
+      "sha256": "3b4da234be46264f6df8d7d58af13c866125c45c568541366d5e63017eb3bd80",
+      "originalBodyFullyRead": false
+    },
+    "ko": {
+      "path": "content/post/cantors-diagonal-argument/index.ko.md",
+      "sha256": "cd59723b401adcd4ad4968f2b97600433f359c6399dfe517d5faeaa93de02e4f",
+      "originalBodyFullyRead": false
+    },
+    "ja": {
+      "path": "content/post/cantors-diagonal-argument/index.md",
+      "sha256": "8c7cd826f65bb2ae888989b2b88d9fff88a094d119002c73b73a4c545cdff2e3",
+      "originalBodyFullyRead": true
+    },
+    "pt": {
+      "path": "content/post/cantors-diagonal-argument/index.pt.md",
+      "sha256": "9dd07f0c0c2a05534ba525f045de3030e121db1d64a7c858f4e959087442d9bd",
+      "originalBodyFullyRead": false
+    },
+    "ru": {
+      "path": "content/post/cantors-diagonal-argument/index.ru.md",
+      "sha256": "d2dc4f224a3ff898209feb6590ac114ebfbf218aa6049aa206a2ba239b48bb0d",
+      "originalBodyFullyRead": false
+    },
+    "zh-cn": {
+      "path": "content/post/cantors-diagonal-argument/index.zh-cn.md",
+      "sha256": "ecd03972aa60473cf245436aa04040702fa3214ed2b02b0c6e4b2491099783b4",
+      "originalBodyFullyRead": false
+    },
+    "zh-tw": {
+      "path": "content/post/cantors-diagonal-argument/index.zh-tw.md",
+      "sha256": "ddf2dc8692db03ec2cecdf6cd6f3acc14db1137df98333f9a817753a7a6682f3",
+      "originalBodyFullyRead": false
+    }
+  },
+  "assets": [
+    {
+      "path": "content/post/cantors-diagonal-argument/eyecatch.jpg",
+      "sha256": "675fd57764fe1a9ced48dd456841467a5dba9aafabb8d4bdac3edecbdf8bbd8a"
+    }
+  ],
+  "findings": [
+    "JA and EN identify continuum cardinality with aleph1 without assuming CH.",
+    "Independence from ZFC omits consistency assumption.",
+    "Decimal 1/2 construction is valid; explain uniqueness and choose expansions not eventually9 before digit comparison.",
+    "Make rational enumeration explicit and distinguish arbitrary mathematical list from computable enumeration.",
+    "English summary lacks halting-problem hyperlink; consolidate repeated localized links.",
+    "Math and Mermaid frontmatter flags absent; inspect rendered output before approval."
+  ],
+  "reviewedTranslationsAdded": 0,
+  "publicationPending": true,
+  "scope": "Original JA and EN fully read in bounded parts; other11translations unread; no revisions or ledger approval yet. Current batch037 deployment still pending."
+}

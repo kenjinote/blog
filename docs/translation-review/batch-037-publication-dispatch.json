@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "observedAt": "2026-11-19T01:22:38.312247+09:00",
+  "deployedCommitExpected": "cea4d1c10ea98216e657db13ad16a7f125efee32",
+  "ciRun": 44346405983,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/44346405983",
+  "runAttempt": 1,
+  "statusAtDispatch": "in_progress",
+  "conclusionAtDispatch": null,
+  "pagesPlanned": 494,
+  "translationsPlanned": 456,
+  "japaneseSourcesPlanned": 38,
+  "mathVersionsPlanned": 299,
+  "texExpressionsPlanned": 18014,
+  "additionalHindiTaxonomyUrlsPlanned": 3,
+  "publicationPending": true,
+  "probePrepared": "C:/Users/kenjinote/.codex/tmp/verify_review_publication_456.py",
+  "probeSha256": "7e8b489306af829fba2027640526bba7a692a203704f91ec03fb487704effbbf",
+  "jobsObserved": [
+    {
+      "name": "build",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-11-18T16:22:10Z",
+      "completed_at": null
+    }
+  ],
+  "scope": "Normal push after zero incoming commits. Exact head/run observed. Local checks passed, live probe pending successful build/deploy."
+}
