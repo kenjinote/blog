@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-19",
+  "path": "content/post/cantors-diagonal-argument/index.zh-tw.md",
+  "sha256": "e90e18f3fa300d820b0e4192f6cab570dd419c0ac259d1c3ebc0b68eed874451",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Shared unconditional aleph1 equality and omitted ZFC consistency premise.",
+    "每個位數 and 第n個數字 conflate decimal position, digit and listed real; 錯開對角線 suggests shifting.",
+    "圖labels 新實數x的元素 should describe digits, not set elements.",
+    "Missing halting-problem link; duplicate links, math/linked headings and paragraph-before-display issue.",
+    "可數無限 used as though a cardinal name; improve definition with aleph0."
+  ],
+  "reviewedTranslationsAdded": 0
+}
