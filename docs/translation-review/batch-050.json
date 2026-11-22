@@ -12,7 +12,7 @@
     "The official documentation says renderer.unsafe defaults to false, allows raw HTML in Markdown when true, and is unsafe unless the content is under the site owner’s control.",
     "Restored the original publication date 2023-01-17 and removed the duplicate future date."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/HUGOでHTMLタグを使う/index.en.md": {
       "reviewKind": "ai",
@@ -446,5 +446,11 @@
         "No security audit of readers’ individual sites or contributed content was performed."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-050.json",
+    "ciRun": 45074983340,
+    "deployedCommit": "678b3742fa732a5ea84e363786eb0cf06cebf1ed",
+    "allPassed": true
   }
 }

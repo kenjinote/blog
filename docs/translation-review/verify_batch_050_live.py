@@ -96,7 +96,8 @@ except urllib.error.HTTPError as error:
     if '<span class="h4 color-fg-default">Success</span>' not in ci_page or args.commit[:7] not in ci_page:
         raise SystemExit('GitHub run page does not confirm success for the specified commit')
 
-slug = metadata('ja')['slug']
+# Hugo normalizes explicit URL slugs to lowercase when generating the route.
+slug = metadata('ja')['slug'].lower()
 ja_url = 'https://kenji.blog/p/' + quote(slug, safe='') + '/'
 request = urllib.request.Request(ja_url, headers={'User-Agent': 'kenji.blog-translation-review/1.0'})
 with urllib.request.urlopen(request, timeout=30) as response:
@@ -118,6 +119,7 @@ for lang in LANGS:
         page = Page()
         page.feed(raw)
         visible = unescape(' '.join(page.text))
+        compact = re.sub(r'\s+', '', visible)
         checks = {
             'http200': response.status == 200,
             'canonical': page.canonical == [url],
@@ -127,7 +129,7 @@ for lang in LANGS:
             'description': len(page.descriptions) == 1 and unescape(page.descriptions[0]) == meta['description'],
             'originalDate': '2023-01-17' in raw,
             'lastmod': '2026-11-23' in raw,
-            'yamlTomlJsonExamples': all(term in visible for term in ('markup', 'goldmark', 'renderer', 'unsafe: true', '[markup.goldmark.renderer]', '"unsafe": true')),
+            'yamlTomlJsonExamples': all(term in compact for term in ('markup', 'goldmark', 'renderer', 'unsafe:true', '[markup.goldmark.renderer]', '"unsafe":true')),
             'defaultFalse': 'false' in visible,
             'securityWarning': WARNINGS[lang].lower() in visible.lower(),
             'officialReferences': all(source in page.links for source in SOURCES),
