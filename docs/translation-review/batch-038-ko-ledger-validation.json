@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-22T23:18:40.165235+09:00",
+  "recordStdout": "Recorded ai review: post/cantors-diagonal-argument/index.ko.md\n",
+  "ledgerStdout": "{\"current\": 461, \"unreviewed\": 12571}\n",
+  "priorEntriesUnchanged": 460,
+  "newAiReviews": 1,
+  "humanReviews": 0,
+  "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+  "translationHash": "30415d6851b0c512ff43a915d88c6759e3a1b42f89517e0c67bbf57acbbfc052",
+  "publicationPending": true
+}

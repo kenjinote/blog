@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-22",
+  "path": "content/post/cantors-diagonal-argument/index.ko.md",
+  "sha256": "e72e4246de668fc815a810954c0e106a8f380aaf233713ae8b90ad8cb08985e4",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Shared incorrect continuum cardinality=aleph1 and missing ZFC consistency premise.",
+    "농도 is nonstandard for cardinality; distinguish bijection/injection and enumerability.",
+    "Decimal expansion uniqueness, rational enumeration and noncomputable sequence conditions omitted.",
+    "Diagonal shifting wording, duplicate linked names, math/linked headings and missing bibliography."
+  ]
+}

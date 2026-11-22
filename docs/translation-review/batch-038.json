@@ -162,6 +162,46 @@
         "Selected mathematical teaching sources only.",
         "Batch038 publication pending; whole goal remains active."
       ]
+    },
+    "post/cantors-diagonal-argument/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "source": "post/cantors-diagonal-argument/index.md",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "30415d6851b0c512ff43a915d88c6759e3a1b42f89517e0c67bbf57acbbfc052",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read whole Korean original and revised article against frozen Japanese. Corrected continuum cardinality and consistency premise, relative consistency, decimal uniqueness, rationals and arbitrary sequences. Replaced exaggerated abundance claim with strict cardinality."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Standardized 기수 for cardinality; distinguished 전단사, 단사, 가산/비가산 and 멱집합. Clarified decimal 자리/숫자 and changed diagonal shifting to changing each digit."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Nine displays structurally match Japanese; Korean conditional 만약 normalized against source if.55TeX,9displays,2graphs8edges,55prose fragments and18strong spans preserved. Ten digit cases are finite sanity checks only, not formal theorem proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article code. Read both Mermaid diagrams and checked topology/source preservation in static HTML; browser rendering not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three primary teaching references, six localized article targets; removed duplicate names and added references. Corrected headers to avoid math/links in TOC. Dates,title,cover,canonical,14hreflang,13sidebar verified. 39-bundle static preview507posts+tag,2218 multilingual pages,4046 HTML/41 XML HTTPS."
+        }
+      },
+      "summary": "Full Korean comparison of corrected diagonal proof and continuum hypothesis conditions.",
+      "languageSpecificFindings": "Replaced nonstandard 농도 usage with 기수; clarified decimal-place terminology; corrected diagonal-shifting wording, unconditional aleph1 claim and CH consistency premise. Entire Korean article read.",
+      "validation": "docs/translation-review/batch-038-ko-r3-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Seven other translations unread.",
+        "No browser KaTeX/Mermaid or formal theorem certification.",
+        "Selected teaching references only; no forcing proof audit.",
+        "Batch038 publication pending; whole goal active."
+      ]
     }
   },
   "stages": [
@@ -188,8 +228,14 @@
       "stage": "Spanish whole-body comparison and static validation",
       "reviewedTranslationsAdded": 1,
       "validation": "docs/translation-review/batch-038-es-r6-validation.json"
+    },
+    {
+      "date": "2026-11-22",
+      "stage": "Korean whole-body comparison and static validation",
+      "reviewedTranslationsAdded": 1,
+      "validation": "docs/translation-review/batch-038-ko-r3-validation.json"
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and4translations fully read;4AI records;8translations unread. Static preview passed; publication038 pending."
+  "scope": "Japanese and6translations fully read;6AI records;7translations unread. Static preview passed; publication038 pending."
 }
