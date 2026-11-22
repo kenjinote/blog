@@ -882,3 +882,5 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 2026-11-23 Batch047: FizzBuzz記事を日本語原文＋12翻訳で全文照合。Git初版から公開日を2025-04-18へ復元し、全版の重複dateと余分な空行を整理。独語の無関係なZustandリンク、仏語タイトルの誤った「文章執筆」表現、葡語見出し・結論を修正。FizzBuzzの3/5/15倍数条件と2種類のPython例を確認し、26コードブロックすべてをAST構文解析（実行なし）。AI校閲台帳はcurrent 576、未確認12,456、人確認0。Batch047記録は`docs/translation-review/batch-047.json`。CI・公開確認と全記事goalは継続。
 
 - 2026-11-23 Batch046公開確認完了。CI run 45065046319／commit `59a9debf43d30b967bc3d7ce40625396175c0902` 成功。探索アルゴリズム記事の原文＋12翻訳すべてでHTTP 200・canonical・言語/RTL・タイトル・lastmod・コード・Python公式リンク・誤リンク除去・hreflang先の検査を通過。
+
+- 2026-11-23 Batch048: 「落ち着いたジャズ」記事を日本語原文＋12翻訳で全文照合。同一YouTube埋込IDを確認し、oEmbed HTTP 200で動画メタデータを照合。集中力・生産性向上や疲労回復を断定するSEO説明を削除し、視聴内容と用途に沿うタイトル・説明・字幕前文へ修正。既存公開日2022-09-08を保持して重複日を除去し、lastmod設定。AI校閲台帳 current 588、未確認12,444、人確認0。AI校閲のみ。Batch048の記録は`docs/translation-review/batch-048.json`。Batch047公開確認および全記事goal継続。

@@ -1,13 +1,17 @@
 ---
-title: 'Idéal pour se détendre : Liste de lecture recommandée de jazz calme'
-date: "2026-09-24T19:44:38+09:00"
-slug: "落ち着いたJazz"
+title: "Une playlist de jazz doux pour se détendre"
 date: 2022-09-08T17:40:26+09:00
+lastmod: 2026-11-23
+slug: "落ち着いたJazz"
 tags: ["Jazz", "Musique"]
 draft: false
 image: "images/img.webp"
 categories: ["lifestyle-miscellaneous"]
-description: 'Nous vous présentons une liste de lecture recommandée de « jazz calme », idéale pour la musique de fond pendant les études ou le travail, et pour les moments de détente. C''est une sélection musicale avec une musique douce et agréable pour apaiser la fatigue quotidienne et augmenter la concentration et la productivité.'
+description: "Cette vidéo propose une playlist de jazz doux à écouter en travaillant, en étudiant ou pendant une pause."
 ---
+
 **Playlist de Jazz Calme**
+
+À écouter en musique de fond pendant le travail ou une pause.
+
 {{<youtube hOJ76cZEt08>}}

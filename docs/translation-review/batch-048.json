@@ -1,0 +1,448 @@
+{
+  "version": 1,
+  "article": "落ち着いたジャズ",
+  "frozenSourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+  "reviewedAt": "2026-11-23",
+  "reviews": {
+    "post/落ち着いたジャズ/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "7e9d17f3ec5172dfcf201ee08e764dbebddf7a0f6edcf6cbd87f9cf7c70b3092",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    },
+    "post/落ち着いたジャズ/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "160cc9c9c0ac140e4db52821dbc8c75df95c6ef698fa701fa588f8fe886aa128",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    },
+    "post/落ち着いたジャズ/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "a9b496e0b71d361ad875ea9bb069c7f0139c9d94e273b2e016a24271d3b72473",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    },
+    "post/落ち着いたジャズ/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "0e35759a948c45a0b60dd0be9134b5696ee928b464d44efca6a6ab108e014717",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    },
+    "post/落ち着いたジャズ/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "e758bfbe2ef45d1bc67778d9ec1c9b479a9c04027de4da69bfbbe3eeb5da113c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    },
+    "post/落ち着いたジャズ/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "da5ccaf1a96775a28ec3490c02949690968997f7821a28b7302b058e0c1fdf59",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    },
+    "post/落ち着いたジャズ/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "69c58166f169ac426a367117a0ebd3472c334e7211625f909b6d856fc2b57de3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    },
+    "post/落ち着いたジャズ/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "724d26f282a71c50666b43a2824dc755ea6adc1addf44cd3f36bc1c93e580690",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    },
+    "post/落ち着いたジャズ/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "eb18b0a8f922bedba214160bb9e82a46e2a9a9574a578d0982d55200b0a1f2e5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    },
+    "post/落ち着いたジャズ/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "e6102e52c91990f5d743e8839eb7a752ec9902750a8e260966ccf7f5c5f6bafd",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    },
+    "post/落ち着いたジャズ/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "544ce3bb56edb5faa75ea043784319037086def8029005874a3ffb8b86cdfec3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    },
+    "post/落ち着いたジャズ/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/落ち着いたジャズ/index.md",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "22fc150e67dafc9a33a46fbd4ecf23411d9d2e0fae26b7afcb476fbb7075e706",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the localized title, description, caption, and scope with the Japanese source: this is one calm-jazz playlist video offered for listening during study, work, or breaks. Removed unsupported claims that it heals fatigue or improves concentration/productivity."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for calm jazz, playlist/video, background listening, work, study, relaxation, and breaks; improved the English title and natural localized descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas, calculations, or quantitative claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article has no executable code. Its only embedded media is the same YouTube player shortcode in every language."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all 13 versions embed the same video ID hOJ76cZEt08. YouTube oEmbed returned HTTP 200 and identifies the video as relaxing jazz/piano background music; no other inline links are present."
+        }
+      },
+      "summary": "Reviewed the complete short article in this language against the Japanese source. Replaced exaggerated claims about music improving productivity, corrected translated title/description wording, restored the previously retained 2022 publication date, normalized metadata, and added a concise listening-context caption.",
+      "languageSpecificFindings": "Title, description, and one-sentence caption were reviewed in the localized language; AI proofreading only.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "The video metadata was checked through YouTube oEmbed, but the full audio, captions, and licensing were not independently reviewed."
+      ]
+    }
+  },
+  "primarySources": [
+    {
+      "title": "YouTube oEmbed metadata for video hOJ76cZEt08",
+      "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DhOJ76cZEt08&format=json",
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "scope": "Japanese source and all 12 translations; full available title, description, caption, embedded media identity, metadata, and wording reviewed."
+}

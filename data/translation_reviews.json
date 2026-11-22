@@ -5765,6 +5765,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-047.json",
       "evidenceHash": "17a4d751bf49e34222e77c1c65042e0e9ba65b3580d978541cec08913e293397"
+    },
+    "post/落ち着いたジャズ/index.en.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "7e9d17f3ec5172dfcf201ee08e764dbebddf7a0f6edcf6cbd87f9cf7c70b3092",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "88740a3db36fc6a306326dcee80ae161c703a72851aedbf42ddc9b2aa5628dd0"
+    },
+    "post/落ち着いたジャズ/index.zh-cn.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "160cc9c9c0ac140e4db52821dbc8c75df95c6ef698fa701fa588f8fe886aa128",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "171fa712908fe79520de8facccc3cdc8b4fdedf55add42c3074caaea82cf89e3"
+    },
+    "post/落ち着いたジャズ/index.es.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "a9b496e0b71d361ad875ea9bb069c7f0139c9d94e273b2e016a24271d3b72473",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "03f9755138a8083ef794525044130f564d3a8799111f6a1e9aa7d8f40025d71c"
+    },
+    "post/落ち着いたジャズ/index.ko.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "0e35759a948c45a0b60dd0be9134b5696ee928b464d44efca6a6ab108e014717",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "fbe474943f1eb4b892baf3a4674753c4eb3c26728f3283b41ba433c7784d4876"
+    },
+    "post/落ち着いたジャズ/index.pt.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "e758bfbe2ef45d1bc67778d9ec1c9b479a9c04027de4da69bfbbe3eeb5da113c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "14c29d37bc27d7b55ae5f0b565e99879bd5414b9bf8e2fa4c19f069da77f18eb"
+    },
+    "post/落ち着いたジャズ/index.zh-tw.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "da5ccaf1a96775a28ec3490c02949690968997f7821a28b7302b058e0c1fdf59",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "5acf4a462bd6aaa453ab082c937a3342e65c3c74db2373ddecb35531b591220f"
+    },
+    "post/落ち着いたジャズ/index.hi.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "69c58166f169ac426a367117a0ebd3472c334e7211625f909b6d856fc2b57de3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "db7a4081c9300e1b17d22a2383276b4f2dd4f125c79efc5f59df34684ab5fd2e"
+    },
+    "post/落ち着いたジャズ/index.fr.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "724d26f282a71c50666b43a2824dc755ea6adc1addf44cd3f36bc1c93e580690",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "57aebe8df87cccd59ec4bdd53776c39301ef076b8d5b68c511d60d8bc2b1324d"
+    },
+    "post/落ち着いたジャズ/index.de.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "eb18b0a8f922bedba214160bb9e82a46e2a9a9574a578d0982d55200b0a1f2e5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "1f1a550e155aee0a2864655d644d75a5cbebecd060be4691e97293770d2de965"
+    },
+    "post/落ち着いたジャズ/index.ar.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "e6102e52c91990f5d743e8839eb7a752ec9902750a8e260966ccf7f5c5f6bafd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "956c208b4e3532813ca297e5484b1659827f1d1c2a1d704f442b23e0153e01c1"
+    },
+    "post/落ち着いたジャズ/index.ru.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "544ce3bb56edb5faa75ea043784319037086def8029005874a3ffb8b86cdfec3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "76ca211a5f41b9d3b72466e8a26275563079e0ba9de6dd85d5b255eaecc210be"
+    },
+    "post/落ち着いたジャズ/index.id.md": {
+      "source": "post/落ち着いたジャズ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "60d5e69f9abc294fdf79b805f55d380497e9f682d990dd6b3a21b564eb93bf1f",
+      "translationHash": "22fc150e67dafc9a33a46fbd4ecf23411d9d2e0fae26b7afcb476fbb7075e706",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-048.json",
+      "evidenceHash": "bdaf136a50ca187ab08e631cae6a3531e51c3d43a8b9c229251822a5b338a7bf"
     }
   }
 }
