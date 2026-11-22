@@ -1,6 +1,7 @@
 ---
 title: "Kann Schall Gegenstände schweben lassen? Die Physik der akustischen Levitation"
 date: 2026-10-14T01:00:00+09:00
+lastmod: 2026-11-23
 slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
@@ -15,25 +16,19 @@ tags:
   - "Berührungslose Manipulation"
 ---
 
-Mitten im freien Raum eines modernen Forschungslabors schwebt ein einzelner Wassertropfen regungslos in der Luft – vollkommen kugelförmig, als befände er sich in der Schwerelosigkeit des Weltalls. Direkt daneben verharren kleine lebende Insekten, elektronische Mikrochips oder lebende biologische Zellen, gehalten von unsichtbaren Kräften. Sie bewegen sich auf Befehl durch den dreidimensionalen Raum, drehen sich um die eigene Achse und verschmelzen mit schwebenden chemischen Reagenzien zu einer berührungslosen Reaktion.
+Akustische Levitation hält Tropfen oder kleine Partikel mit einem starken Schallfeld ohne Kontakt zu einer festen Oberfläche. Sie hebt die Schwerkraft nicht auf; akustische Kräfte können das Gewicht nur unter material- und geräteabhängigen Bedingungen ausgleichen.
 
-Selbst diamagnetische Stoffe wie Wasser, Holz oder Kunststoffe, die auf gewöhnliche Magnetfelder nicht reagieren, lassen sich so stabil in der Schwebe halten. Diese Technologie, die den Traktorstrahl der Science-Fiction Realität werden lässt, heißt <strong>akustische Levitation (Acoustic Levitation)</strong>.
-
-Alltägliche Schallwellen sind schwache Druckschwankungen der Luft. Im Ultraschallbereich (über 20 kHz) jedoch, wenn kohärente [Interferenzstrukturen](/de/p/physics-noise-cancelling/) in Form von <strong>stehenden Wellen (Standing Waves)</strong> erzeugt werden, entfaltet der Schall gewaltige mechanische Kräfte: die <strong>akustische Strahlungskraft (Acoustic Radiation Force)</strong>.
+Der Beitrag behandelt stehende Wellen, Strahlungskräfte, das Gor’kov-Potenzial für kleine Kugeln, Phased Arrays, Tropfenverformung und ausgewählte Anwendungen. Ergebnisse sind bedingungsabhängig; ein einzelner Druck- oder Größenwert ist keine allgemeine Grenze.
 
 ---
 
 ## 1. Warum Schall Kräfte ausübt: Nichtlineare Akustik
 
-In der klassischen linearen Akustik ist der zeitliche Mittelwert des Schalldrucks einer harmonischen Welle $p(t) = P_0 \sin(\omega t)$ exakt null:
-$$\langle p \rangle = \frac{1}{T} \int_0^T P_0 \sin(\omega t) dt = 0$$
-Ebenso ist die mittlere Schallschnelle $\langle \mathbf{v} \rangle = \mathbf{0}$. Nach linearer Theorie könnte Schall niemals eine anhaltende Kraft auf einen Körper ausüben.
+In der linearen Akustik ist der Schalldruck eine kleine periodische Abweichung vom statischen Umgebungsdruck. Für eine Sinuswelle mit Amplitude $P_0$ und Kreisfrequenz $\omega$ ist der Mittelwert der Druckschwankung über eine Periode null:
 
-Die reale Kraftwirkung beruht auf <strong>hydrodynamischen Nichtlinearitäten zweiter Ordnung</strong>. In den Euler-Gleichungen ist der konvektive Beschleunigungsterm $(\mathbf{v} \cdot \nabla) \mathbf{v}$ quadratisch. Bildet man den zeitlichen Mittelwert des Impulsflusstensors:
-$$\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$$
-verschwinden die linearen Terme, doch die quadratischen Größen $\langle \rho v_i v_j \rangle$ und $\langle (\rho')^2 \rangle$ bleiben als <strong>positive Gleichdruck-Größen (DC-Kräfte)</strong> erhalten. Wie eine Diode Wechselstrom gleichrichtet, wandelt die Nichtlinearität des Fluids die hochfrequente Schwingung in einen kontinuierlichen <strong>akustischen Strahlungsdruck</strong> um.
+$$p(t)=P_0\sin(\omega t),\qquad \langle p\rangle=0$$
 
----
+Daraus folgt nicht, dass die gesamte zeitgemittelte Kraft auf einen Körper null ist. Dafür müssen Effekte zweiter Ordnung, Streuung und die räumliche Struktur des Schallfelds berücksichtigt werden. Es gibt keinen universellen dB-Wert, ab dem diese Effekte stets maßgeblich sind.
 
 ## 2. Stehende Wellen und die Geometrie der Schallfalle
 
@@ -59,31 +54,31 @@ mit den Kontrastfaktoren:
 - $f_1 = 1 - \frac{\kappa_p}{\kappa_0}$ (Monopol-Kompression)
 - $f_2 = \frac{2(\rho_p - \rho_0)}{2\rho_p + \rho_0}$ (Dipol-Translation)
 
-Da Festkörper und Flüssigkeiten in Luft viel dichter ($\rho_p \gg \rho_0$) und inkompressibler ($\kappa_p \ll \kappa_0$) als Luft sind, gilt exakt $f_1 \approx 1$ und $f_2 \approx 1$.
+Da Festkörper und Flüssigkeiten in Luft viel dichter ($\rho_p \gg \rho_0$) und inkompressibler ($\kappa_p \ll \kappa_0$) als Luft sind, gilt näherungsweise $f_1 \approx 1$ und $f_2 \approx 1$.
 In einer 1D-Welle wirkt auf das Partikel die Rückstellkraft:
-$$F_z(z) = -\frac{\partial U}{\partial z} = V_p \left( \frac{5}{6} \right) \frac{k P_0^2}{\rho_0 c_0^2} \sin(2 k z)$$
+$$F_z(z) = -\frac{\partial U}{\partial z} = V_p \left( \frac{5}{2} \right) \frac{k P_0^2}{\rho_0 c_0^2} \sin(2 k z)$$
+(Dabei ist $P_0$ die Spitzendruckamplitude jeder Teilwelle; außerdem gilt hier $f_1=f_2=1$. Der Koeffizient folgt durch Ableitung des Potenzials. Bei Effektivwerten wird er anders geschrieben. Die Näherung setzt eine kleine Kugel und eine ideale Flüssigkeit voraus; reale Abweichungen hängen von Partikel und Schallfeld ab.)
 
-Unter Schwerkraftwirkung sinkt das Teilchen knapp unter den <strong>Druckknoten</strong>, wo die nach oben gerichtete Strahlungskraft das Gewicht $m g$ exakt kompensiert.
-
----
-
-## 4. Phased Arrays und 3D-Traktorstrahlen
-
-Klassische Resonatoren mit Reflektoren erlauben keine dynamische Bewegung. Moderne <strong>Ultraschall-Phased-Arrays</strong> steuern Hunderte von $40\,\text{kHz}$-Wandlern über FPGA-Chips mikrosekundengenau an. Durch Interferenz entstehen freie 3D-Fallen:
-- <strong>Twin Trap</strong>: Zwei gegenphasige Schallkeulen klemmen Partikel wie eine Pinzette ein;
-- <strong>Vortex Trap</strong>: Ein helikales Schallfeld überträgt Bahndrehimpuls (OAM) und versetzt Teilchen in Rotation;
-- <strong>Bottle Beam</strong>: Ein vollständig geschlossener Schallkäfig ermöglicht den berührungslosen 3D-Transport ohne Reflektorplatte.
+Bei nach oben gerichteter $+z$-Achse und positivem akustischem Kontrast kann die Schwerkraft die vertikale Gleichgewichtslage unter den Druckknoten verschieben. Das eindimensionale Modell weist keine seitliche Stabilität nach.
 
 ---
+
+## 4. Ultraschall-Phased-Arrays
+
+Eine Studie zeigte mit einem einseitigen Ultraschall-Array das Einfangen, Verschieben und Drehen von Partikeln unter bestimmten Versuchsbedingungen [Marzo et al., 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/). Phased Arrays formen das Schallfeld durch Interferenz. Die erreichbaren Bewegungen hängen von Geometrie, Partikel und Steuerung ab; daraus folgt weder eine beliebige Bewegung aller Objekte noch ein universeller Traktorstrahl.
 
 ## 5. Physikalische Grenzen: Zerstäubung und Dichte
 
-1. <strong>Größenlimit</strong>: Rayleigh-Bedingung ($2R \lesssim \lambda / 2$). Bei $40\,\text{kHz}$ ($\lambda \approx 8{,}6\,\text{mm}$) liegt das Maximum bei $3 \sim 4\,\text{mm}$.
-2. <strong>Akustische Stoßwellen</strong>: Um Schwermetalle wie Gold oder Wolfram zu levitieren, sind Schalldrücke $>165\,\text{dB}$ nötig. Dabei steilt die Schallwelle zu Stoßwellen auf, und turbulente Strömungen zerstören die Falle.
-3. <strong>Tropfenzerstäubung</strong>: Wassertropfen verformen sich durch den Strahlungsdruck zu flachen Scheiben. Übersteigt die <strong>akustische Weber-Zahl</strong> $We_a = \frac{P_0^2 R}{\rho_0 c_0^2 \gamma}$ den Grenzwert von ca. 3,6, reißt die Oberflächenspannung und der Tropfen explodiert in feinsten Nebel (<strong>akustische Zerstäubung</strong>).
-
----
+Gor’kovs Näherung setzt eine Kugel voraus, die viel kleiner als die Wellenlänge ist ($kR\ll1$); dies ist eine Modellbedingung, keine allgemeine Obergrenze. Die levitierbare Größe hängt von Objekt, Schallfeld und Gerät ab. Auch Tropfenverformung und Zerfall hängen von Flüssigkeit, Größe und Betriebsbedingungen ab; eine universelle kritische Weber-Zahl gibt es nicht.
 
 ## 6. Anwendungen und Fazit
 
-Von der <strong>behälterfreien Proteinkristallisation</strong> in der Pharmazie über das kontaktlose Sortieren von Krebszellen in mikrofluidischen Chips bis hin zu <strong>Mid-Air-Haptics</strong> (fühlbare virtuelle Tasten im Raum): Die akustische Levitation beweist, wie aus reinen Druckwellen greifbare mechanische Werkzeuge der Zukunft werden.
+Die Forschung untersucht Partikelfallen und -bewegung, kontaktlose Tropfenbearbeitung, akustische Mikrofluidik und Mid-Air-Haptik. Ergebnisse hängen von Probe, Gerät und Bedingungen ab. Wandkontakt zu vermeiden verhindert weder Verdunstung noch Erwärmung oder Wechselwirkungen mit dem Gas und garantiert keine Schadensfreiheit für Zellen.
+
+## Quellen
+
+
+- L. P. Gor’kov, “On the forces acting on a small particle in an acoustical field in an ideal fluid” (1962). [Paper](https://cir.nii.ac.jp/crid/1570291226443959680)
+- A. Marzo et al., “Holographic acoustic elements for manipulation of levitated objects” (2015). [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/)
+- E. Cancino-Jaque et al., “On the dynamics of a big drop in acoustic levitation” (2023). [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC10716583/)
+- S. K. Saroj and R. M. Thaokar, “Atomisation of an acoustically levitated droplet” (2024). [Paper](https://doi.org/10.1017/jfm.2024.523)

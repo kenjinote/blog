@@ -1,6 +1,7 @@
 ---
 title: "用聲音能讓物體懸浮起來嗎：聲學懸浮與無形之力的物理學"
 date: 2026-10-14T01:00:00+09:00
+lastmod: 2026-11-23
 slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
@@ -15,53 +16,19 @@ tags:
   - "非接觸操控"
 ---
 
-在現代化實驗室空無一物的空氣中，一滴純淨的水滴靜靜懸浮在半空中，既無物理支撐，也無細線懸掛，呈現出近乎完美的幾何球體。在它身旁，微小的活體昆蟲、電子元器件、甚至是單個生物細胞，如同被無形的提線木偶絲線牽引著，在三維空間中自由平移、旋轉，甚至在空中與另一滴試劑碰撞融合，發生精準的微量化學反應。
+聲懸浮利用強聲場，使液滴或小顆粒在不接觸固體表面的情況下保持懸浮。它並不消除重力；聲力只能在取決於材料與裝置的條件下平衡物體重量。
 
-即便對於水、塑料、木材等完全不具備鐵磁性的抗磁性物質，這項技術同樣能讓它們對抗重力、穩穩浮起。這一將科幻小說中的「反重力」與「牽引光束（Tractor Beam）」變為現實前沿物理的傑出技術，正是<strong>聲學懸浮（Acoustic Levitation，簡稱聲懸浮）</strong>。
-
-在日常生活中，人類耳朵聽到的聲音不過是空氣介質極度微弱的縱波擾動，其壓力變化僅在微帕斯卡量級，微弱到只能輕微震動耳膜。然而，當我們將聲波頻率提升至人類聽覺極限之外的超聲波波段（幾十千赫茲以上），並通過[聲波干涉](/zh-tw/p/physics-noise-cancelling/)構建出特殊的「駐波（Standing Wave）」結構時，聲波便展現出驚人的宏觀機械力——<strong>聲輻射力（Acoustic Radiation Force）</strong>。
-
-本文將帶領讀者深入非線性聲學與聲流控學的核心：從線性聲學佯謬到二次非線性效應如何將交變聲波整流為直流推力；從蘇聯天才理論物理學家列夫·戈爾科夫（Lev Gor'kov）推導出的優雅聲輻射勢函數，到超聲相控陣打造的3D全息聲學牽引光束；從液滴在強聲場中的破裂與霧化極限，到無容器藥物晶體生長及太空微重力模擬的前沿應用。
+本文介紹駐波、聲輻射力、小球的戈爾科夫勢、相控陣、液滴形變和若干研究應用。具體結果不構成普遍的壓力或尺寸上限。
 
 ---
 
 ## 一、 聲音為何具有力量：線性聲學的極限與非線性整流
 
-### 1.1 線性聲學佯謬：為什麼時間平均聲壓嚴格為零？
+在線性聲學中，聲壓是靜態壓力周圍的小幅週期擾動。振幅為 $P_0$、角頻率為 $\omega$ 的正弦聲壓擾動，其週期平均值為零：
 
-經典物理學入門教程中的「線性聲學（Linear Acoustics）」假設聲擾動極其微小。一列角頻率為 $\omega$、聲壓振幅為 $P_0$ 的單色簡諧波：
-$$p(t) = P_0 \sin(\omega t)$$
+$$p(t)=P_0\sin(\omega t),\qquad \langle p\rangle=0$$
 
-在完整的一個振動週期 $T$ 內計算時間平均聲壓 $\langle p \rangle$ 時，正半週期的正壓壓縮與負半週期的負壓稀疏嚴格對稱抵消：
-$$\langle p \rangle = \frac{1}{T} \int_0^T P_0 \sin(\omega t) dt = 0$$
-
-同樣，介質分子的平均振動速度也恆等於零：$\langle \mathbf{v} \rangle = \mathbf{0}$。如果線性聲學是全部真相，那麼聲波施加在物體上的淨力在時間平均意義下永遠為零：前半微秒聲波將物體向前推，後半微秒就會以完全相同的力量將其拉回，物體絕無可能被穩定托起。
-
-```mermaid
-flowchart TD
-    subgraph AcousticParadox ["聲學理論跨越：線性到非線性"]
-        Linear["線性聲學 (微小振幅假設)<br>p(t) = P_0 sin(ωt)<br>時間平均推力 ⟨F⟩ = 0<br>無法實現宏觀懸浮"]
-        Nonlinear["非線性聲學 (有限振幅效應)<br>動量通量二階非線性張量<br>⟨Π⟩ = ⟨p + ρ v²⟩ ≠ 0<br>產生直流穩態聲輻射力 (成功懸浮)"]
-    end
-    Linear -- "超聲強聲強 (>150 dB)" --> Nonlinear
-```
-
-### 1.2 二次非線性流體效應與聲輻射壓
-
-突破這一理論困境的關鍵在於流體動力學的<strong>有限振幅非線性效應</strong>。
-無粘性流體的嚴格歐拉方程為：
-$$\rho \left( \frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) = -\nabla p$$
-
-方程左側的[對流項](/zh-tw/p/navier-stokes-equations/) $(\mathbf{v} \cdot \nabla) \mathbf{v}$ 是流體速度 $\mathbf{v}$ 的<strong>二次非線性項</strong>。在普通談話的微弱聲波中，該項極小可忽略；但在聲壓級超過 $150 \sim 165\,\text{dB}$ 的高能超聲場中，二次項便佔據了顯著地位。
-
-流體中的總動量通量密度張量為：
-$$\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$$
-
-對動量通量進行時間平均時，一階線性振盪相互抵消，但速度平方項 $\langle \rho v_i v_j \rangle$ 與密度漲落平方項 $\langle (\rho')^2 \rangle$ <strong>作為正定物理量在平均後依然留存</strong>！
-
-正如二極管將交流電整流為直流電一樣，流體本身的非線性機制將高頻交流聲學振動「整流」為了穩定的宏觀單向推力——<strong>聲輻射壓（Acoustic Radiation Pressure）</strong>。
-
----
+這不代表物體所受總平均力為零。計算時仍須考慮二階效應、散射及聲場的空間結構；不存在單一普遍的 dB 閾值可決定這些效應何時重要。
 
 ## 二、 駐波場與一維聲學陷阱的物理幾何
 
@@ -107,57 +74,29 @@ $$U = 2 \pi R^3 \left[ \frac{\langle p^2 \rangle}{3 \rho_0 c_0^2} f_1 - \frac{\r
 $$f_1 \approx 1, \quad f_2 \approx 1$$
 
 將一維駐波代入後，可得作用在微粒上的垂直恢復力：
-$$F_z(z) = -\frac{\partial U}{\partial z} = V_p \left( \frac{5}{6} \right) \frac{k P_0^2}{\rho_0 c_0^2} \sin(2 k z)$$
+$$F_z(z) = -\frac{\partial U}{\partial z} = V_p \left( \frac{5}{2} \right) \frac{k P_0^2}{\rho_0 c_0^2} \sin(2 k z)$$
+(此處 $P_0$ 是每個行波的峰值聲壓振幅，並假設 $f_1=f_2=1$。此係數由上方的勢函數微分而得；若採用均方根振幅，係數寫法會改變。此式假設小球與理想流體；實際偏差取決於粒子與聲場。)
 
-當重力 $F_g = \rho_p V_p g$ 向下拉扯物體時，微粒會穩定在<strong>聲壓節面稍下方</strong>的平衡點 $z_{\text{eq}}$ 處，使向上的聲輻射力恰好與重力平衡。在微擾下，聲勢阱如同胡克彈簧一樣提供強大的線性恢復力，將物體死死鎖在空中。
-
----
-
-## 四、 超聲相控陣與3D全息聲學牽引光束
-
-傳統的單軸聲懸浮器依賴反射板，陷阱位置固定無法移動。2015年，英國布里斯托大學團隊開創了<strong>超聲相控陣（Ultrasonic Phased Array）</strong>技術。
-
-通過將數百個微型超聲換能器（常用 $40\,\text{kHz}$）排布為陣列，利用FPGA高速芯片以微秒級精度獨立調制每個換能器的發射相位 $\phi_j$。通過惠更斯原理在空中干涉合成任意形態的三維聲場：
-1. <strong>攣生陷阱（Twin Trap）</strong>：合成一對反相位的聲壓瓣，在中心形成一處夾緊顆粒的「聲鑷」；
-2. <strong>渦旋陷阱（Vortex Trap）</strong>：波前呈螺旋狀旋轉，攜帶軌道角動量（OAM），不僅能捕獲顆粒，還能在空中施加扭矩使其高速自轉；
-3. <strong>瓶狀光束（Bottle Beam）</strong>：形成一個由高聲壓包圍的空心無聲球殼籠，實現真正的單側發射、全向三維立體操控。
-
-```mermaid
-graph TD
-    subgraph PhasedArrayFrontier ["相控陣全息聲學陷阱技術"]
-        Controller["FPGA數位微秒控制"] --> Transducers["數百個獨立超聲換能器陣列"]
-        Transducers --> Superposition["空間全息波前干涉疊加"]
-        Superposition --> Twin["雙瓣聲鑷 (Twin Trap)"]
-        Superposition --> Vortex["螺旋聲渦旋 (Vortex Trap)"]
-        Superposition --> Bottle["全閉合聲學瓶 (Bottle Beam)"]
-    end
-```
+若 $+z$ 軸朝上且聲學對比因子為正，重力可使垂直平衡位置偏到聲壓節面下方。這個一維模型不能證明橫向穩定性。
 
 ---
+
+## 四、 超聲相控陣
+
+一項研究在特定實驗條件下展示了單側超音波陣列對粒子的捕捉、平移與旋轉 [Marzo 等，2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/)。相控陣透過干涉塑造聲場。可實現的運動取決於裝置幾何、樣品與控制方式；這不表示任意物體都能自由移動，也不代表存在通用牽引光束。
 
 ## 五、 聲懸浮的物理限制：尺寸與液滴破裂
 
-聲懸浮具有由波動與流體力學決定的剛性物理邊界：
-1. <strong>尺寸上限（瑞利判據）</strong>：微粒直徑必須滿足 $2R \lesssim \lambda / 2$。對於 $40\,\text{kHz}$ 超聲波（波長約 $8.6\,\text{mm}$），可穩定懸浮的物體最大直徑約為 $3 \sim 4\,\text{mm}$。超過此尺寸，散射波嚴重破壞原駐波結構；
-2. <strong>聲學激波極限</strong>：浮起高密度重金屬（如金或鎢）需要極高聲壓（$>165\,\text{dB}$），但空氣劇烈非線性會導致聲波波形畸變為<strong>聲激波（Acoustic Shock Waves）</strong>，伴隨產生的強烈湍流聲流會將物體吹出陷阱；
-3. <strong>液滴形變與霧化破壞</strong>：懸浮液體受上下壓力壓縮而變扁呈扁球形（薄餅狀）。當<strong>聲學韋伯數 $We_a = \frac{P_0^2 R}{\rho_0 c_0^2 \gamma}$</strong> 超過臨界值（$\approx 3.6$）時，表面張力無法抗衡聲壓，液滴將發生劇烈的「氣囊破裂（Bag Breakup）」，瞬間炸裂為數百顆微米級霧滴（<strong>聲霧化</strong>）。
-
----
+戈爾科夫近似假設球體遠小於波長（$kR\ll1$）；這是模型條件，不是可懸浮物體的普遍尺寸上限。液滴形變與破裂也取決於液體、尺寸及裝置條件，沒有適用於所有系統的統一臨界聲學韋伯數。
 
 ## 六、 最前沿的應用領域
 
-| 領域 | 核心技術 | 聲學懸浮帶來的顛覆性優勢 |
-|---|---|---|
-| <strong>結構生物與製藥</strong> | 無容器蛋白質結晶、非晶態藥物篩選 | $100\%$ 消除器皿壁面的異相成核與化學雜質浸出 |
-| <strong>微流控與生化合成</strong> | 空中微液滴反應器 (Lab-on-a-Drop) | 零掛壁損失，無需移液管的毫微升液體非接觸融合 |
-| <strong>生物醫學工程</strong> | 微通道內聲泳分選稀有循環腫瘤細胞 (CTC) | 無標記、物理剪切極低、保持細胞原生活性 |
-| <strong>先進冶金材料</strong> | 超高熔點合金深過冷凝固 (Ti, Zr) | 杜絕熔融金屬與坩堝反應，製造極高純度非晶金屬 |
-| <strong>交互與顯示</strong> | 空中觸覺反饋 (Mid-Air Haptics)、三維容積顯示 | 無需穿戴設備即可在虛空中觸摸到真實按鈕力反饋 |
+顆粒操控、無接觸液滴處理、聲微流體與空中觸覺仍是研究中的應用。結果取決於樣品、設備及條件。避免接觸容器壁無法消除蒸發、聲致加熱或與周圍氣體的交互作用，也不能保證細胞不受影響。
 
----
+## 參考文獻
 
-## 七、 結論：無形之波重塑物質世界
 
-聲波，本質上是物質微觀振動的時空傳播。
-
-當非線性聲學與現代數位全息算法相遇，微弱的聲音昇華為了能夠抓取微粒、托舉水滴、重組物質的「無形巨手」。從戈爾科夫勢的嚴謹數學，到太空艙內的微重力模擬，聲懸浮向人類展現了經典物理學在現代工程中綻放出的無與倫比的深邃與優美。
+- L. P. Gor’kov, “On the forces acting on a small particle in an acoustical field in an ideal fluid” (1962). [Paper](https://cir.nii.ac.jp/crid/1570291226443959680)
+- A. Marzo et al., “Holographic acoustic elements for manipulation of levitated objects” (2015). [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/)
+- E. Cancino-Jaque et al., “On the dynamics of a big drop in acoustic levitation” (2023). [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC10716583/)
+- S. K. Saroj and R. M. Thaokar, “Atomisation of an acoustically levitated droplet” (2024). [Paper](https://doi.org/10.1017/jfm.2024.523)

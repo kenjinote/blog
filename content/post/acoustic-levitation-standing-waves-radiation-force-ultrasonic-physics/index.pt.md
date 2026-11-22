@@ -1,6 +1,7 @@
 ---
 title: "O som pode fazer objetos levitarem? A física da levitação acústica"
 date: 2026-10-14T01:00:00+09:00
+lastmod: 2026-11-23
 slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
@@ -15,21 +16,19 @@ tags:
   - "Manipulação sem contato"
 ---
 
-No ar livre de um laboratório moderno, uma única gota de água permanece suspensa e imóvel, formando uma esfera perfeita como se estivesse em microgravidade no espaço. Ao seu lado, circuitos eletrônicos, insetos vivos ou células biológicas flutuam sem contato físico, sendo manobrados em três dimensões por forças invisíveis e combinando-se no ar para reações químicas sem recipientes.
+A levitação acústica usa um campo sonoro intenso para sustentar gotas ou partículas pequenas sem contato com uma superfície sólida. Ela não elimina a gravidade: forças acústicas só equilibram o peso em condições que dependem do material e do aparelho.
 
-Mesmo materiais diamagnéticos como água, madeira ou plásticos podem ser suspensos contra a gravidade. Essa tecnologia fascinante, que traduz os raios tratores da ficção científica em realidade, é a <strong>levitação acústica (Acoustic Levitation)</strong>.
-
-Os sons usuais são meras vibrações de pressão. Contudo, ao ingressar no regime do ultrassom (> 20 kHz) e produzir padrões de <strong>ondas estacionárias (Standing Waves)</strong>, o som manifesta uma força mecânica permanente: a <strong>força de radiação acústica</strong>.
+O artigo apresenta ondas estacionárias, força de radiação, o potencial de Gor’kov para esferas pequenas, matrizes em fase, deformação de gotas e algumas aplicações de pesquisa. Os resultados não definem um limite universal de pressão ou tamanho.
 
 ---
 
 ## 1. Origem da força: Acústica não linear
 
-Na acústica linear, a média temporal da pressão de uma onda harmônica $p(t) = P_0 \sin(\omega t)$ é estritamente nula: $\langle p \rangle = 0$, assim como a velocidade média das partículas $\langle \mathbf{v} \rangle = \mathbf{0}$.
+Na acústica linear, a pressão sonora é uma pequena perturbação periódica em torno da pressão estática. Para uma senoide de amplitude $P_0$ e frequência angular $\omega$, a média da perturbação ao longo de um período é nula:
 
-A sustentação mecânica decorre de <strong>efeitos hidrodinâmicos não lineares de segunda ordem</strong>. Na equação de [Euler](/pt/p/euler/), a [aceleração convectiva](/pt/p/navier-stokes-equations/) $(\mathbf{v} \cdot \nabla) \mathbf{v}$ é quadrática. Ao tomar a média temporal do tensor de fluxo de momento $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$, os termos lineares se anulam, mas os termos quadráticos $\langle \rho v^2 \rangle$ e $\langle (\rho')^2 \rangle$ persistem como uma força contínua unidirecional: a <strong>pressão de radiação acústica</strong>.
+$$p(t)=P_0\sin(\omega t),\qquad \langle p\rangle=0$$
 
----
+Isso não implica que a força total média sobre um objeto seja nula. O cálculo considera efeitos de segunda ordem, espalhamento e a estrutura espacial do campo; não existe um limiar universal em dB que determine quando esses efeitos importam.
 
 ## 2. Ondas estacionárias e armadilhas acústicas
 
@@ -53,29 +52,29 @@ $$U = 2 \pi R^3 \left[ \frac{\langle p^2 \rangle}{3 \rho_0 c_0^2} f_1 - \frac{\r
 
 com $f_1 = 1 - \frac{\kappa_p}{\kappa_0}$ e $f_2 = \frac{2(\rho_p - \rho_0)}{2\rho_p + \rho_0}$. Para partículas sólidas ou líquidas no ar, $\rho_p \gg \rho_0$ e $\kappa_p \ll \kappa_0$, resultando em $f_1 \approx 1$ e $f_2 \approx 1$.
 A força vertical em uma onda 1D é:
-$$F_z(z) = V_p \left( \frac{5}{6} \right) \frac{k P_0^2}{\rho_0 c_0^2} \sin(2 k z)$$
+$$F_z(z) = V_p \left( \frac{5}{2} \right) \frac{k P_0^2}{\rho_0 c_0^2} \sin(2 k z)$$
+(Aqui, $P_0$ é a amplitude de pressão de pico de cada onda e supõe-se $f_1=f_2=1$. O coeficiente vem da derivada do potencial; sua forma muda ao usar o valor eficaz. A expressão supõe uma esfera pequena e um fluido ideal; os desvios reais dependem da partícula e do campo.)
 
-Com a gravidade, a partícula encontra estabilidade logo abaixo do <strong>nó de pressão</strong>, onde a força de radiação compensa exatamente o seu peso.
-
----
-
-## 4. Matrizes em Fase (Phased Arrays) e Feixes Tratores 3D
-
-As <strong>matrizes de ultrassom em fase</strong> controladas por FPGA modulam a emissão de centenas de transdutores a $40\,\text{kHz}$, permitindo gerar armadilhas tridimensionais sem refletores físicos:
-- <strong>Twin Trap</strong>: pinça acústica de feixe duplo para aprisionar amostras;
-- <strong>Vortex Trap</strong>: onda helicoidal com momento angular orbital para rotacionar objetos;
-- <strong>Bottle Beam</strong>: gaiola acústica tridimensional fechada para transporte espacial livre.
+Se o eixo $+z$ aponta para cima e o contraste acústico é positivo, a gravidade pode deslocar o equilíbrio vertical para baixo do nó de pressão. Este modelo unidimensional não demonstra estabilidade lateral.
 
 ---
+
+## 4. Matrizes em fase ultrassônicas
+
+Um estudo demonstrou captura, translação e rotação de partículas com uma matriz ultrassônica de um só lado em condições experimentais específicas [Marzo et al., 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/). As matrizes em fase moldam campos sonoros por interferência. Os movimentos possíveis dependem da geometria, da amostra e do controle; isso não significa que qualquer objeto possa ser movido livremente nem que exista um feixe trator universal.
 
 ## 5. Limites físicos: Dimensão e atomização
 
-- <strong>Limite de tamanho</strong>: imposto pelo regime de Rayleigh ($2R \lesssim \lambda / 2$), cerca de $3 \sim 4\,\text{mm}$ a $40\,\text{kHz}$.
-- <strong>Ondas de choque acústicas</strong>: pressões acima de $165\,\text{dB}$ provocam choque acústico e correntes turbulentas que desestabilizam o aprisionamento.
-- <strong>Atomização de gotas</strong>: o achatamento acústico deforma as gotas de líquido. Caso o número de Weber acústico $We_a = \frac{P_0^2 R}{\rho_0 c_0^2 \gamma}$ ultrapasse $\sim 3{,}6$, a tensão superficial se rompe e a gota se pulveriza em microgotículas.
-
----
+A aproximação de Gor’kov supõe uma esfera muito menor que o comprimento de onda ($kR\ll1$); essa é uma condição do modelo, não um limite universal. O tamanho levitável depende do objeto, do campo e do aparelho. A deformação e a ruptura de gotas também variam com o líquido e as condições; não há um número de Weber crítico universal.
 
 ## 6. Aplicações e conclusão
 
-A levitação acústica viabiliza a <strong>cristalização de fármacos sem recipientes</strong>, a <strong>separação celular não invasiva</strong> e <strong>sistemas hápticos no ar</strong> (botões virtuais táteis sem luvas), demonstrando a extraordinária capacidade de controlar a matéria através do som.
+A pesquisa estuda a manipulação de partículas, o manuseio de gotas sem contato, a microfluídica acústica e a háptica no ar. Os resultados dependem da amostra, do aparelho e das condições. Evitar a parede não elimina evaporação, aquecimento ou interação com o gás, nem garante ausência de efeitos nas células.
+
+## Referências
+
+
+- L. P. Gor’kov, “On the forces acting on a small particle in an acoustical field in an ideal fluid” (1962). [Paper](https://cir.nii.ac.jp/crid/1570291226443959680)
+- A. Marzo et al., “Holographic acoustic elements for manipulation of levitated objects” (2015). [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/)
+- E. Cancino-Jaque et al., “On the dynamics of a big drop in acoustic levitation” (2023). [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC10716583/)
+- S. K. Saroj and R. M. Thaokar, “Atomisation of an acoustically levitated droplet” (2024). [Paper](https://doi.org/10.1017/jfm.2024.523)

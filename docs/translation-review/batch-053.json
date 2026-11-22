@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "article": "Acoustic levitation: standing waves, radiation force and ultrasonic physics",
+  "frozenSourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://cir.nii.ac.jp/crid/1570291226443959680",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10716583/",
+    "https://doi.org/10.1017/jfm.2024.523",
+    "https://www.jstage.jst.go.jp/article/ast/21/3/21_3_145/_pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6680761/"
+  ],
+  "findings": [
+    "The article incorrectly inferred zero net force from zero cycle-mean first-order pressure and stated a universal sound-level threshold for second-order effects.",
+    "The 1D standing-wave force coefficient was corrected from 5/6 to 5/2 under the explicitly stated peak-pressure and f1=f2=1 assumptions.",
+    "The equilibrium equation includes air buoyancy through effective weight (rho_p-rho_0)V_p g, with the rho_p >> rho_0 approximation identified.",
+    "Gor’kov’s Rayleigh small-sphere condition is a model applicability assumption, not a universal maximum levitatable size; large-drop and atomization results depend on experimental conditions.",
+    "Unsupported universal phased-array capabilities, droplet breakup thresholds, sound-level limits, and no-harm/no-contamination implications were removed or qualified.",
+    "The review compares the complete Japanese article with all twelve translations, including formulas, diagrams where present, terminology, bibliography and claims."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "4a2aa9b3a20cc7cae69509d587c3adf54dbcc65cfede73b20119db1159a0b44e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the translated Mermaid diagram and its claims; there is no runnable program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "271042f79559f0f3ab90b60ce24cfdc0075d316260d8049c9d20069b2c51e71e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the translated Mermaid diagram and its claims; there is no runnable program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "3275de6f921bd03251a069a5ce162b371e94de0a3919614ab7de02d65d77ae26",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No runnable program code or fenced diagrams appear in this translation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "45bb631ac3c7ac338ea77fd8e0f20655ac1584004f48c8b77fd4efbda055594e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the translated Mermaid diagram and its claims; there is no runnable program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "4e98baa8c2ab38908b7da9199ec86f7238a6112dc5ced21c2363c873972eda8f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No runnable program code or fenced diagrams appear in this translation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "190b216311ec9644fde55927f77a7b7f192dba23aaf16ffa9305d20e62743e02",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked the translated Mermaid diagram and its claims; there is no runnable program code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "7f346d2acf19b01413ba8c79cd36f312a5c85dc398affc6c8f8ebd2021aa7dcc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No runnable program code or fenced diagrams appear in this translation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "58e0cd055dddcfa66538112dbb155354dd3a35e1d63d790dabaa1dd2c4469d66",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No runnable program code or fenced diagrams appear in this translation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "bc9d2de49e2999bb6956ed8cb6480401dd60af8ef5487a445548a8a736df7f5b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No runnable program code or fenced diagrams appear in this translation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "0dd7f5683f6153ddfe9a4ef49ba97fb63ef6a30b9015218144e5c0774b26e129",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No runnable program code or fenced diagrams appear in this translation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "8684c5e2e33cbb31465f89985bc0eccad1218517b46efe815aeb6c208d7385af",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No runnable program code or fenced diagrams appear in this translation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "ef290d3979736024cead33bd76763d1b784175bf74c42dda4264cd093a378475",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete article against Japanese: first-order pressure versus mean force, standing-wave node/antinode geometry, Gor’kov assumptions and force derivation, phased-array evidence, size limits, sound-level qualifications, droplet deformation, applications and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acoustic radiation force/pressure, pressure and velocity nodes, Rayleigh regime, Gor’kov potential, phased arrays, droplet breakup and sound-pressure levels; unsupported absolute wording was replaced with condition-specific wording."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Re-derived the 1D standing-wave potential and vertical force under the stated peak-pressure and f1=f2=1 assumptions; corrected coefficient to 5/2, checked RMS caveat, buoyancy-adjusted weight, coordinate direction and limits of a 1D stability claim."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No runnable program code or fenced diagrams appear in this translation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the bibliography links and matching destinations for Gor’kov (1962), Marzo et al. (2015), Cancino-Jaque et al. (2023), and Saroj & Thaokar (2024)."
+        }
+      },
+      "summary": "Reviewed the complete translation against the Japanese source, corrected unsupported claims about acoustic forces, phased-array manipulation and universal limits, clarified model assumptions and equilibrium interpretation, and checked cited sources.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Cited experiments and models were checked against the named publications but were not independently replicated.",
+        "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
+      ]
+    }
+  }
+}

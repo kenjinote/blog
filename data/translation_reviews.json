@@ -6365,6 +6365,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-052.json",
       "evidenceHash": "0367e3d5cfdd906920c887263b969850d67d4ed3d38d027f5a0deefbdb9cb69c"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.en.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "4a2aa9b3a20cc7cae69509d587c3adf54dbcc65cfede73b20119db1159a0b44e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "11910b50942982f560bb1f98a7f77455dd4e658e8347d10a26069edfe8bedff5"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.zh-cn.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "271042f79559f0f3ab90b60ce24cfdc0075d316260d8049c9d20069b2c51e71e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "1f0a4a5f3bd712ccadbd8a6778e50bf65eb4522fc7091bfecfd629187d9cd285"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.es.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "3275de6f921bd03251a069a5ce162b371e94de0a3919614ab7de02d65d77ae26",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "9d5e08c6c5d2b10913791d18170cc98980f737dbb99b37454e24a376e4f4848a"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ko.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "45bb631ac3c7ac338ea77fd8e0f20655ac1584004f48c8b77fd4efbda055594e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "89ae07e6c62c19f80b0ab3672ea44b24748a71bebd92e361d063b4f0553edfa9"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.pt.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "4e98baa8c2ab38908b7da9199ec86f7238a6112dc5ced21c2363c873972eda8f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "53e77517e3629269acedfc311e7ecbef3a4373a9b0755f55b0f58802d30699f9"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.zh-tw.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "190b216311ec9644fde55927f77a7b7f192dba23aaf16ffa9305d20e62743e02",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "ff5dd7820eeb79a28569e106183f1092e6120e439625bdf30dc42bc5ce39e8ba"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.hi.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "7f346d2acf19b01413ba8c79cd36f312a5c85dc398affc6c8f8ebd2021aa7dcc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "1d2d8191c5e95823b5127921940606b9fedabc8b490ddd6144061846d0c28852"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.fr.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "58e0cd055dddcfa66538112dbb155354dd3a35e1d63d790dabaa1dd2c4469d66",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "7521f7ed3696a4fbc91adefca5e282ee6f5394c7ec16f972fde4c729137bb2d3"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.de.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "bc9d2de49e2999bb6956ed8cb6480401dd60af8ef5487a445548a8a736df7f5b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "01f6f891c3984af4c30cb99386fc9e739e43e3c8a630f53853bf75766087ec38"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ar.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "0dd7f5683f6153ddfe9a4ef49ba97fb63ef6a30b9015218144e5c0774b26e129",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "1f8d028d4a712bdc582f3ec4f488c1e9a99883d03bad8807631b61824578959c"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ru.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "8684c5e2e33cbb31465f89985bc0eccad1218517b46efe815aeb6c208d7385af",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "dff171dcc761a1d9152cc3f7b19890028e0796c199d31823a2a176238559b349"
+    },
+    "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.id.md": {
+      "source": "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "edd4925382fd8b64bd441a3a49834dd9448635bc6eb41950e451ccb4137865ba",
+      "translationHash": "ef290d3979736024cead33bd76763d1b784175bf74c42dda4264cd093a378475",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-053.json",
+      "evidenceHash": "471b2ce4711b9cba8b075764bb409f773886c063c5c85bad126b6a9d5edc77e2"
     }
   }
 }

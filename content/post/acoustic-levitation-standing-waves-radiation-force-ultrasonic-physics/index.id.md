@@ -1,6 +1,7 @@
 ---
 title: "Bisakah Suara Membuat Benda Melayang? Fisika Levitas Akustik dan Kekuatan Tak Kasat Mata"
 date: 2026-10-14T01:00:00+09:00
+lastmod: 2026-11-23
 slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
@@ -15,21 +16,19 @@ tags:
   - "Manipulasi Tanpa Kontak"
 ---
 
-Di udara terbuka laboratorium penelitian modern, setetes air murni melayang diam tanpa penyangga maupun tali, mempertahankan bentuk bola sempurna layaknya berada di gravitasi nol antariksa. Tepat di sampingnya, komponen elektronik mikro, serangga hidup, atau sel biologis melayang di ruang hampa, bergerak lincah ke segala arah dan menyatu dengan reagen lain untuk memicu reaksi kimia tanpa wadah.
+Levitasi akustik memakai medan suara kuat untuk menahan tetesan atau partikel kecil tanpa menyentuh permukaan padat. Teknik ini tidak menghilangkan gravitasi; gaya akustik hanya dapat menyeimbangkan berat dalam kondisi yang bergantung pada bahan dan perangkat.
 
-Bahkan zat non-magnetik seperti air, kayu, atau plastik dapat melayang stabil melawan gravitasi. Teknologi mengagumkan yang mengubah fiksi ilmiah "traktor beam" menjadi kenyataan ini disebut <strong>levitasi akustik (Acoustic Levitation)</strong>.
-
-Suara yang biasa kita dengar hanyalah getaran tekanan udara yang sangat lemah. Namun, ketika frekuensi ditingkatkan ke ranah ultrasonik (> 20 kHz) dan membentuk pola <strong>gelombang berdiri (Standing Waves)</strong>, suara menghasilkan gaya mekanik nyata: <strong>gaya radiasi akustik (Acoustic Radiation Force)</strong>.
+Artikel ini membahas gelombang berdiri, gaya radiasi akustik, potensial Gor’kov untuk bola kecil, phased array, perubahan bentuk tetesan, dan beberapa aplikasi riset. Hasilnya bergantung pada kondisi, bukan batas tekanan atau ukuran yang universal.
 
 ---
 
 ## 1. Mengapa Suara Menghasilkan Gaya: Akustik Non-linear
 
-Dalam akustik linear, rata-rata waktu dari tekanan gelombang harmonik $p(t) = P_0 \sin(\omega t)$ adalah tepat nol: $\langle p \rangle = 0$. Kecepatan partikel rata-rata juga nol: $\langle \mathbf{v} \rangle = \mathbf{0}$. Secara teori linear, suara tidak akan pernah bisa menopang berat benda.
+Dalam akustik linear, tekanan suara adalah gangguan periodik kecil terhadap tekanan statis. Untuk gelombang sinus beramplitudo $P_0$ dan frekuensi sudut $\omega$, rata-rata gangguan tekanan selama satu periode adalah nol:
 
-Gaya angkat nyata lahir dari <strong>efek hidrodinamika non-linear orde kedua</strong>. Pada persamaan Euler, [percepatan konvektif](/id/p/navier-stokes-equations/) $(\mathbf{v} \cdot \nabla) \mathbf{v}$ bersifat kuadratis. Ketika merata-ratakan tensor fluks momentum $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$, suku-suku linear saling meniadakan, tetapi suku kuadrat $\langle \rho v^2 \rangle$ dan $\langle (\rho')^2 \rangle$ bertahan sebagai gaya dorong searah yang konstan: <strong>tekanan radiasi akustik</strong>.
+$$p(t)=P_0\sin(\omega t),\qquad \langle p\rangle=0$$
 
----
+Ini tidak berarti gaya rata-rata total pada benda juga nol. Perhitungannya harus mencakup efek orde kedua, hamburan, dan struktur spasial medan suara; tidak ada satu ambang dB universal yang menentukan kapan efek tersebut penting.
 
 ## 2. Gelombang Berdiri dan Perangkap Akustik
 
@@ -54,29 +53,29 @@ $$U = 2 \pi R^3 \left[ \frac{\langle p^2 \rangle}{3 \rho_0 c_0^2} f_1 - \frac{\r
 dengan faktor kontras $f_1 = 1 - \frac{\kappa_p}{\kappa_0}$ dan $f_2 = \frac{2(\rho_p - \rho_0)}{2\rho_p + \rho_0}$.
 Untuk benda padat atau cair di udara, $\rho_p \gg \rho_0$ dan $\kappa_p \ll \kappa_0$, sehingga $f_1 \approx 1$ dan $f_2 \approx 1$.
 Gaya vertikal dalam gelombang 1D adalah:
-$$F_z(z) = V_p \left( \frac{5}{6} \right) \frac{k P_0^2}{\rho_0 c_0^2} \sin(2 k z)$$
+$$F_z(z) = V_p \left( \frac{5}{2} \right) \frac{k P_0^2}{\rho_0 c_0^2} \sin(2 k z)$$
+(Di sini $P_0$ adalah amplitudo tekanan puncak tiap gelombang dan digunakan asumsi $f_1=f_2=1$. Koefisien diperoleh dengan menurunkan potensial di atas; bentuknya berubah jika memakai nilai RMS. Persamaan ini mengasumsikan bola kecil dan fluida ideal; penyimpangan nyata bergantung pada partikel dan medan suara.)
 
-Akibat gravitasi, partikel mengendap stabil tepat di bawah <strong>simpul tekanan</strong>, di mana gaya dorong akustik mengimbangi berat partikel secara sempurna.
-
----
-
-## 4. Ultrasonic Phased Array dan Traktor Beam 3D
-
-Teknologi <strong>ultrasonic phased array</strong> dengan kendali FPGA memodulasi fase ratusan transduser $40\,\text{kHz}$ dalam hitungan mikrodetik, menciptakan perangkap 3D tanpa pemantul fisik:
-- <strong>Twin Trap</strong>: pinset akustik dua lobus untuk menjepit partikel mikro;
-- <strong>Vortex Trap</strong>: gelombang heliks berputar dengan momentum sudut orbital untuk memutar partikel;
-- <strong>Bottle Beam</strong>: sangkar akustik bulat tertutup untuk membawa objek secara bebas di udara.
+Jika sumbu $+z$ mengarah ke atas dan kontras akustiknya positif, gravitasi dapat menggeser keseimbangan vertikal ke bawah simpul tekanan. Model 1D ini tidak membuktikan kestabilan lateral.
 
 ---
+
+## 4. Phased array ultrasonik
+
+Sebuah penelitian menunjukkan penjebakan, pemindahan, dan rotasi partikel dengan array ultrasonik satu sisi dalam kondisi eksperimen tertentu [Marzo et al., 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/). Phased array membentuk medan suara melalui interferensi. Gerakan yang dapat dicapai bergantung pada geometri, sampel, dan kendali; hasil itu tidak berarti semua benda dapat digerakkan sesuka hati atau ada berkas traktor universal.
 
 ## 5. Batasan Fisika: Ukuran dan Atomisasi Tetesan
 
-- <strong>Batas ukuran partikel</strong>: Syarat Rayleigh ($2R \lesssim \lambda / 2$) membatasi diameter maksimum sekitar $3 \sim 4\,\text{mm}$ pada frekuensi $40\,\text{kHz}$ ($\lambda \approx 8{,}6\,\text{mm}$).
-- <strong>Gelombang kejut akustik</strong>: Mengangkat logam berat membutuhkan tekanan $>165\,\text{dB}$ yang memicu gelombang kejut dan arus turbulen perusak perangkap.
-- <strong>Atomisasi tetesan</strong>: Tekanan akustik meratakan tetesan air menjadi pipih. Jika <strong>angka Weber akustik</strong> $We_a = \frac{P_0^2 R}{\rho_0 c_0^2 \gamma}$ melampaui ambang kritis ($\sim 3{,}6$), tegangan permukaan kalah dan tetesan meledak menjadi kabut mikrometer (<strong>atomisasi akustik</strong>).
-
----
+Pendekatan Gor’kov mengasumsikan bola jauh lebih kecil daripada panjang gelombang ($kR\ll1$); ini syarat model, bukan batas ukuran universal. Ukuran yang dapat dilayangkan bergantung pada objek, medan, dan perangkat. Deformasi serta pecahnya tetesan juga bergantung pada cairan dan kondisi; tidak ada satu angka Weber kritis yang berlaku universal.
 
 ## 6. Aplikasi dan Kesimpulan
 
-Levitasi akustik diterapkan pada <strong>kristalisasi protein farmasi tanpa wadah</strong>, <strong>pemilahan sel kanker dalam mikrofluida</strong>, serta <strong>haptik udara (Mid-Air Haptics)</strong> yang memungkinkan sensasi sentuhan virtual tanpa sarung tangan. Suara tak kasat mata kini telah bertransformasi menjadi tangan mekanis masa depan.
+Riset mencakup manipulasi partikel, penanganan tetesan tanpa kontak, mikrofluida akustik, dan haptik di udara. Hasil bergantung pada sampel, perangkat, dan kondisi operasi. Menghindari dinding wadah tidak menghilangkan penguapan, pemanasan, atau interaksi dengan gas dan tidak menjamin sel bebas dari dampak.
+
+## Referensi
+
+
+- L. P. Gor’kov, “On the forces acting on a small particle in an acoustical field in an ideal fluid” (1962). [Paper](https://cir.nii.ac.jp/crid/1570291226443959680)
+- A. Marzo et al., “Holographic acoustic elements for manipulation of levitated objects” (2015). [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/)
+- E. Cancino-Jaque et al., “On the dynamics of a big drop in acoustic levitation” (2023). [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC10716583/)
+- S. K. Saroj and R. M. Thaokar, “Atomisation of an acoustically levitated droplet” (2024). [Paper](https://doi.org/10.1017/jfm.2024.523)

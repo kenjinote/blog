@@ -1,6 +1,7 @@
 ---
 title: "Le son peut-il faire léviter des objets ? La physique de la lévitation acoustique"
 date: 2026-10-14T01:00:00+09:00
+lastmod: 2026-11-23
 slug: "acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics"
 image: "eyecatch.jpg"
 math: true
@@ -15,21 +16,19 @@ tags:
   - "Manipulation sans contact"
 ---
 
-Au milieu d'un laboratoire de pointe, une goutte d'eau flotte immobile dans l'air libre, sphère parfaite défiant la gravité sans aucun support matériel. À ses côtés, des composants électroniques, de petits insectes ou des cellules vivantes sont suspendus, déplacés avec précision dans l'espace en trois dimensions et fusionnés en plein vol pour déclencher des réactions chimiques sans récipient.
+La lévitation acoustique utilise un champ sonore intense pour maintenir des gouttes ou de petites particules sans contact avec une surface solide. Elle n’annule pas la gravité : les forces acoustiques ne peuvent équilibrer le poids que dans des conditions dépendant du matériau et de l’appareil.
 
-Même des corps diamagnétiques comme l'eau, le bois ou les matières plastiques peuvent être suspendus de manière stable. Cette technologie concrétisant le « rayon tracteur » de la science-fiction s'appelle la <strong>lévitation acoustique (Acoustic Levitation)</strong>.
-
-Les sons audibles ordinaires ne sont que d'infimes oscillations de pression. Mais lorsque la fréquence franchit le seuil des ultrasons (> 20 kHz) et que des [interférences](/fr/p/physics-noise-cancelling/) créent des <strong>ondes stationnaires</strong>, le son engendre une force mécanique macroscopique permanente : la <strong>force de radiation acoustique</strong>.
+L’article présente les ondes stationnaires, la force de rayonnement, le potentiel de Gor’kov pour les petites sphères, les réseaux phasés, la déformation des gouttes et quelques applications de recherche. Les résultats ne définissent pas une limite universelle de pression ou de taille.
 
 ---
 
 ## 1. Origine de la force : L'acoustique non linéaire
 
-En acoustique linéaire, la moyenne temporelle de la pression d'une onde harmonique $p(t) = P_0 \sin(\omega t)$ est rigoureusement nulle : $\langle p \rangle = 0$. Il en est de même pour la vitesse des particules $\langle \mathbf{v} \rangle = \mathbf{0}$.
+En acoustique linéaire, la pression acoustique est une petite perturbation périodique autour de la pression statique. Pour une sinusoïde d’amplitude $P_0$ et de pulsation $\omega$, la moyenne de cette perturbation sur une période est nulle :
 
-La force de sustentation découle des <strong>non-linéarités hydrodynamiques du second ordre</strong>. Dans l'équation d'Euler, le [terme d'accélération convective](/fr/p/navier-stokes-equations/) $(\mathbf{v} \cdot \nabla) \mathbf{v}$ est quadratique. En moyennant le tenseur de flux d'impulsion $\Pi_{ij} = p \delta_{ij} + \rho v_i v_j$, les termes linéaires oscillants s'annulent, mais les termes quadratiques $\langle \rho v^2 \rangle$ et $\langle (\rho')^2 \rangle$ subsistent sous la forme d'une composante continue : la <strong>pression de radiation acoustique</strong>.
+$$p(t)=P_0\sin(\omega t),\qquad \langle p\rangle=0$$
 
----
+Cela ne signifie pas que la force totale moyenne sur un objet est nulle. Son calcul inclut les effets du second ordre, la diffusion et la structure spatiale du champ ; aucun seuil universel en dB ne détermine à lui seul leur importance.
 
 ## 2. Ondes stationnaires et pièges acoustiques
 
@@ -54,29 +53,29 @@ $$U = 2 \pi R^3 \left[ \frac{\langle p^2 \rangle}{3 \rho_0 c_0^2} f_1 - \frac{\r
 avec $f_1 = 1 - \frac{\kappa_p}{\kappa_0}$ et $f_2 = \frac{2(\rho_p - \rho_0)}{2\rho_p + \rho_0}$.
 Pour un solide ou un liquide dans l'air, $\rho_p \gg \rho_0$ et $\kappa_p \ll \kappa_0$, d'où $f_1 \approx 1$ et $f_2 \approx 1$.
 La force verticale dans une onde 1D s'écrit :
-$$F_z(z) = V_p \left( \frac{5}{6} \right) \frac{k P_0^2}{\rho_0 c_0^2} \sin(2 k z)$$
+$$F_z(z) = V_p \left( \frac{5}{2} \right) \frac{k P_0^2}{\rho_0 c_0^2} \sin(2 k z)$$
+(Ici, $P_0$ est l’amplitude de crête de chaque onde et l’on suppose $f_1=f_2=1$. Le coefficient se déduit en dérivant le potentiel ; son écriture change avec une convention en valeur efficace. Cette expression suppose une petite sphère et un fluide idéal ; les écarts réels dépendent de la particule et du champ.)
 
-Sous l'effet de la pesanteur, la particule se stabilise légèrement sous le <strong>nœud de pression</strong>, là où la poussée acoustique équilibre son poids.
-
----
-
-## 4. Réseaux phasés ultrasonores et rayons tracteurs 3D
-
-Grâce aux <strong>réseaux de transducteurs phasés (Phased Arrays)</strong> pilotés par FPGA, la phase de centaines d'émetteurs ultrasonores ($40\,\text{kHz}$) est modulée à la microseconde pour sculpter des pièges 3D mobiles :
-- <strong>Twin Trap</strong> : piège à double lobe formant une pince acoustique ;
-- <strong>Vortex Trap</strong> : onde hélicoïdale transmettant un moment cinétique orbital ;
-- <strong>Bottle Beam</strong> : cage acoustique sphérique fermée permettant la lévitation sans réflecteur.
+Si l’axe $+z$ est orienté vers le haut et si le contraste acoustique est positif, la gravité peut décaler l’équilibre vertical sous le nœud de pression. Ce modèle unidimensionnel ne démontre pas la stabilité latérale.
 
 ---
+
+## 4. Réseaux phasés ultrasonores
+
+Une étude a montré la capture, le déplacement et la rotation de particules au moyen d’un réseau ultrasonore placé d’un seul côté, dans des conditions expérimentales précises [Marzo et al., 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/). Les réseaux phasés façonnent le champ sonore par interférence. Les mouvements réalisables dépendent de la géométrie, de l’échantillon et du pilotage ; cela ne signifie pas que tout objet peut être déplacé librement ni qu’un rayon tracteur universel existe.
 
 ## 5. Limites physiques et atomisation
 
-- <strong>Taille maximale</strong> : limitée par le régime de Rayleigh ($2R \lesssim \lambda / 2$), soit environ $3 \sim 4\,\text{mm}$ à $40\,\text{kHz}$.
-- <strong>Chocs acoustiques</strong> : à plus de $165\,\text{dB}$, la distorsion non linéaire engendre des ondes de choc et des courants de streaming turbulents qui éjectent les particules.
-- <strong>Atomisation des gouttes</strong> : la pression aplatit les gouttes liquides. Si le nombre de Weber acoustique $We_a = \frac{P_0^2 R}{\rho_0 c_0^2 \gamma}$ dépasse le seuil critique ($\sim 3{,}6$), la goutte se déchire instantanément en un brouillard micrométrique.
-
----
+L’approximation de Gor’kov suppose une sphère très petite devant la longueur d’onde ($kR\ll1$) ; c’est une condition du modèle, pas une limite universelle. La taille lévitable dépend de l’objet, du champ et de l’appareil. La déformation et la rupture des gouttes dépendent aussi du liquide et des conditions ; il n’existe pas de nombre de Weber critique universel.
 
 ## 6. Applications et conclusion
 
-La lévitation acoustique révolutionne la <strong>cristallisation de protéines pharmaceutiques sans contact</strong>, le <strong>tri cellulaire non invasif</strong> et l'<strong>haptique aérienne</strong> (boutons virtuels tactiles sans gants). Elle illustre avec élégance comment l'énergie des ondes sonores peut manipuler la matière.
+La recherche porte sur la manipulation de particules, les gouttes sans contact, la microfluidique acoustique et l’haptique aérienne. Les résultats dépendent de l’échantillon, du dispositif et des conditions. Éviter les parois n’élimine ni l’évaporation, ni l’échauffement, ni les interactions avec le gaz et ne garantit pas l’absence d’effet sur les cellules.
+
+## Références
+
+
+- L. P. Gor’kov, “On the forces acting on a small particle in an acoustical field in an ideal fluid” (1962). [Paper](https://cir.nii.ac.jp/crid/1570291226443959680)
+- A. Marzo et al., “Holographic acoustic elements for manipulation of levitated objects” (2015). [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/)
+- E. Cancino-Jaque et al., “On the dynamics of a big drop in acoustic levitation” (2023). [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC10716583/)
+- S. K. Saroj and R. M. Thaokar, “Atomisation of an acoustically levitated droplet” (2024). [Paper](https://doi.org/10.1017/jfm.2024.523)
