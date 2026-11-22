@@ -1,8 +1,8 @@
 ---
-title: '编程入门的敲门砖“FizzBuzz问题”是什么？讲解Python的写法'
-date: "2026-09-24T19:44:38+09:00"
-slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
+lastmod: 2026-11-23
+title: '编程入门的敲门砖“FizzBuzz问题”是什么？讲解Python的写法'
+slug: "FizzBuzz"
 tags: ["FizzBuzz", "Python", "算法"]
 draft: false
 image: "eyecatch.jpg"
@@ -117,4 +117,3 @@ for i in range(1, 101):
 代码是人类写的。正因为是人类，所以会有忘记的时候，也会有紧张的时候。只要能接受这一点，一点点前进就足够了。
 
 那么，今天也轻松地写代码吧。
-

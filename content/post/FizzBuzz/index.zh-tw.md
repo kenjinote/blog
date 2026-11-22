@@ -1,8 +1,8 @@
 ---
-title: '程式設計的入門磚「FizzBuzz問題」是什麼？Python寫法解說'
-date: "2026-09-24T19:44:38+09:00"
-slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
+lastmod: 2026-11-23
+title: '程式設計的入門磚「FizzBuzz問題」是什麼？Python寫法解說'
+slug: "FizzBuzz"
 tags: ["FizzBuzz", "Python", "演算法"]
 draft: false
 image: "eyecatch.jpg"
@@ -117,4 +117,3 @@ for i in range(1, 101):
 程式碼是人類寫的。既然是人類，就有忘記的時候，也有緊張的時候。一邊接受這些，一邊慢慢前進，我想這樣就足夠了。
 
 那麼，今天也輕鬆地寫程式碼吧。
-

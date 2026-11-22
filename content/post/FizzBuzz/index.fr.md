@@ -1,8 +1,8 @@
 ---
-title: 'Qu''est-ce que le « test de FizzBuzz », la porte d''entrée de la programmation ? Explication de la méthode de rédaction en Python'
-date: "2026-09-24T19:44:38+09:00"
-slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
+lastmod: 2026-11-23
+title: 'Qu''est-ce que le « test de FizzBuzz », la porte d''entrée de la programmation ? Explication de la façon de coder en Python'
+slug: "FizzBuzz"
 tags: ["FizzBuzz", "Python", "Algorithme"]
 draft: false
 image: "eyecatch.jpg"
@@ -117,4 +117,3 @@ Ne vous précipitez pas, avançons lentement.
 Le code est écrit par des humains. En tant qu'humains, il nous arrive d'oublier des choses et d'être nerveux. En acceptant cela, je pense qu'il suffit de pouvoir avancer petit à petit.
 
 Alors, écrivons du code de manière détendue aujourd'hui aussi.
-

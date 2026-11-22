@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "article": "FizzBuzz問題",
+  "frozenSourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+  "reviewedAt": "2026-11-23",
+  "reviews": {
+    "post/FizzBuzz/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "1ffe965cb6567ec0e657bfba7058c8e800f31de09c9cc90161ce63de993bfe50",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    },
+    "post/FizzBuzz/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "235dbb177817bf0c821718e7f282a4fc66111c2723bfc446ec89208951288bcb",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    },
+    "post/FizzBuzz/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "0125db536ad0411329a678215b4b8857bb1b82484ded6e98a4d130308e60f87c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    },
+    "post/FizzBuzz/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "acf4b8c3f8125005dd251622d10488078f8bbe0b85fa247a413b71bab1872d00",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    },
+    "post/FizzBuzz/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "9baeae2d4c7152c9bf09c8e654f6bae237f412ece73d4538054e88de5e096c9a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    },
+    "post/FizzBuzz/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "2ad9c792024fc6d74e830e6013c2cf315eaf9d43f2219959c42e2642d28facc9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    },
+    "post/FizzBuzz/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "999b77d95346aedf5a1b600b2d5ab627a4caf85483af4d780bd7ee768805cc1b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    },
+    "post/FizzBuzz/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "e2c2785c7dea5bf7e100a82f68ffbd45bfb3df31c62a4c9f9dc738902c4cbc64",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    },
+    "post/FizzBuzz/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "05c49c1dd1da9357246d1a108336bbcff29d5f6aab3c516a0ae7d06f01464658",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    },
+    "post/FizzBuzz/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "37824ba30e0d1a0186a3e6c2f07f48f6ec00a8ba9dc1406cf8ce674517839321",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    },
+    "post/FizzBuzz/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "e41d927dc3a576fe6e8911046b3e3775904ead8a7842bb3073d7ccc703fd63c0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    },
+    "post/FizzBuzz/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/FizzBuzz/index.md",
+      "sourceHash": "79d97ff1f8cbba6a16978906fa5d63d92781a2e89b3be4f0aae215a1bc4e2950",
+      "translationHash": "601d2912da432c4d1d70c8b005285e4d7e07f5d196d7fa4695a5fa20ac42bbfe",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized essay with the Japanese source, including the definition and 1–100 rules, divisibility by 3/5/15, interview context, distinction between coding ability and performance under pressure, practice, and the two approaches."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized wording for FizzBuzz, modulo/remainder, multiples, conditionals, interview, and the distinction between ability and temporary state; corrected clear title/heading/link issues where found."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified that multiples of 15 are tested before 3 and 5 in the first example and that the independent divisibility checks concatenate Fizz/Buzz correctly, including the shared multiple case. No separate displayed equations or empirical claims are made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both complete Python examples in all 12 translations with the Japanese source. All 26 blocks parse with Python AST; the two localized code blocks match the source exactly. Code was not executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Markdown links in the article bundle; removed the unrelated German link from the everyday word for a mental state to an unrelated Zustand JS library article. The remaining versions contain no inline links."
+        }
+      },
+      "summary": "Reviewed the complete Japanese source and localized essay. Restored the original publication date, removed duplicate date metadata and excess blank lines, corrected French title wording, Portuguese conclusion wording, and removed an unrelated German internal link.",
+      "languageSpecificFindings": "Reviewed the full localized prose, headings, description, and code against the Japanese original; this is AI proofreading and has not been certified by a native speaker.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Python examples were syntax-parsed but not executed.",
+        "Interview prevalence is presented as the author’s observation, not as a quantified or independently researched claim."
+      ]
+    }
+  },
+  "scope": "Japanese source and all 12 translations; full essay meaning, localized terminology, divisibility logic, code, metadata, and links reviewed."
+}

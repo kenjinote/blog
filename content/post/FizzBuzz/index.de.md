@@ -1,8 +1,8 @@
 ---
-title: 'Was ist das „FizzBuzz-Problem“, das Tor zum Programmieren? Eine Erklärung, wie man es in Python schreibt'
-date: "2026-09-24T19:44:38+09:00"
-slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
+lastmod: 2026-11-23
+title: 'Was ist das „FizzBuzz-Problem“, das Tor zum Programmieren? Eine Erklärung, wie man es in Python schreibt'
+slug: "FizzBuzz"
 tags: ["FizzBuzz", "Python", "Algorithmus"]
 draft: false
 image: "eyecatch.jpg"
@@ -50,7 +50,7 @@ Können wir wirklich behaupten, dass „FizzBuzz nicht schreiben können = nicht
 
 ---
 
-### Es geht nicht um das Können, sondern darum, ob man den „[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)“ dafür hat
+### Es geht nicht um das Können, sondern darum, ob man den „Zustand“ dafür hat
 
 Es stimmt, dass FizzBuzz das Verständnis von Syntax und grundlegendem logischem Denken erfordert. Daher ist es nachvollziehbar, dass es zur „Überprüfung der Grundlagen“ verwendet wird.
 
@@ -117,4 +117,3 @@ Keine Eile, lass uns langsam vorankommen.
 Code wird von Menschen geschrieben. Weil wir Menschen sind, vergessen wir manchmal Dinge und sind nervös. Wenn wir das akzeptieren, reicht es meiner Meinung nach aus, wenn wir Stück für Stück vorankommen können.
 
 Lass uns also auch heute wieder ganz entspannt Code schreiben.
-

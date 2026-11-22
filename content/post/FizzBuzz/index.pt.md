@@ -1,8 +1,8 @@
 ---
-title: 'O que é o Desafio ''FizzBuzz''? Uma Introdução à Programação e Como Codificar em Python'
-date: "2026-09-24T19:44:38+09:00"
-slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
+lastmod: 2026-11-23
+title: 'O que é o Desafio ''FizzBuzz''? Uma Introdução à Programação e Como Codificar em Python'
+slug: "FizzBuzz"
 tags: ["FizzBuzz", "Python", "Algoritmo"]
 draft: false
 image: "eyecatch.jpg"
@@ -106,9 +106,9 @@ Em outras palavras, o FizzBuzz não trata apenas de "se você conseguiu fazer", 
 
 ---
 
-### Por tanto
+### Conclusão
 
-Acho que não devemos atribuir muito significado excessivo a se você consegue ou não fazer o FizzBuzz.
+Acho que não devemos dar importância excessiva a conseguir ou não resolver o FizzBuzz.
 
 Mesmo que você não tenha conseguido escrever, pode ser apenas que "você não estava se sentindo bem agora", e muitas vezes você conseguirá se pensar com cuidado mais tarde.
 
@@ -117,4 +117,3 @@ Não se apresse, vamos avançar devagar.
 O código é escrito por humanos. Porque somos humanos, às vezes esquecemos coisas e ficamos nervosos. Aceitando isso, acho que basta se pudermos avançar pouco a pouco.
 
 Então, vamos escrever o código de maneira descontraída hoje.
-

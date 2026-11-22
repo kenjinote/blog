@@ -1,8 +1,8 @@
 ---
-title: 'Apa Itu ''Masalah FizzBuzz'', Gerbang Masuk Pemrograman? Penjelasan Cara Menulisnya dengan Python'
-date: "2026-09-24T19:44:38+09:00"
-slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
+lastmod: 2026-11-23
+title: 'Apa Itu ''Masalah FizzBuzz'', Gerbang Masuk Pemrograman? Penjelasan Cara Menulisnya dengan Python'
+slug: "FizzBuzz"
 tags: ["FizzBuzz", "Python", "Algoritma"]
 draft: false
 image: "eyecatch.jpg"
@@ -117,4 +117,3 @@ Jangan terburu-buru, mari kita jalani pelan-pelan.
 Kode ditulis oleh manusia. Karena kita manusia, terkadang kita melupakan sesuatu, dan terkadang kita merasa gugup. Saya pikir cukup untuk menerima hal itu dan bergerak maju sedikit demi sedikit.
 
 Baiklah, mari bersantai dan menulis beberapa kode hari ini.
-

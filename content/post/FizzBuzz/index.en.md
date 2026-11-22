@@ -1,8 +1,8 @@
 ---
-title: 'What is the Programming Gateway ''FizzBuzz Problem''? Explaining How to Write it in Python'
-date: "2026-09-24T19:44:38+09:00"
-slug: "FizzBuzz"
 date: 2025-04-18T00:58:11+09:00
+lastmod: 2026-11-23
+title: 'What is the Programming Gateway ''FizzBuzz Problem''? Explaining How to Write it in Python'
+slug: "FizzBuzz"
 tags: ["FizzBuzz", "Python", "Algorithm"]
 draft: false
 image: "eyecatch.jpg"
@@ -117,4 +117,3 @@ Let's not rush and proceed slowly.
 Code is written by humans. Because we're human, there are times when we forget things or get nervous. I think it's enough if we can accept that and move forward little by little.
 
 Well then, let's take it easy and write some code today too.
-
