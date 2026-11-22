@@ -558,6 +558,13 @@
       "reviewedTranslationsAdded": 1
     }
   ],
-  "publicationPending": true,
-  "scope": "All12 translations fully read and registered against the Japanese source;0 translations unread. Static preview passed; publication038 pending."
+  "publicationPending": false,
+  "scope": "All12 translations fully read and registered against the Japanese source;0 translations unread. Final 39-bundle static preview and integration validation passed. CI and post-deploy HTTP verification for all13 article pages passed; all-article goal remains active.",
+  "publication": {
+    "record": "docs/translation-review/publication-038.json",
+    "ciRun": 45036548974,
+    "deployedCommit": "8f996185460fe11880fab93e57476ae6aa9df853",
+    "livePagesChecked": 13,
+    "allPassed": true
+  }
 }
