@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-22T23:21:34.554076+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "pt",
+      "sha256": "a02cda1e307c68d5162de24f1759dff4b847e237d4bab1180f151cb87506ca73",
+      "texExpressions": 56,
+      "displayMath": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        5,
+        3
+      ],
+      "proseFragmentsPreserved": 78,
+      "strongSpans": 0,
+      "externalReferences": 3,
+      "internalReferences": 6,
+      "allPassed": true
+    }
+  ],
+  "digitRuleCases": [
+    {
+      "original": 0,
+      "replacement": 1
+    },
+    {
+      "original": 1,
+      "replacement": 2
+    },
+    {
+      "original": 2,
+      "replacement": 1
+    },
+    {
+      "original": 3,
+      "replacement": 1
+    },
+    {
+      "original": 4,
+      "replacement": 1
+    },
+    {
+      "original": 5,
+      "replacement": 1
+    },
+    {
+      "original": 6,
+      "replacement": 1
+    },
+    {
+      "original": 7,
+      "replacement": 1
+    },
+    {
+      "original": 8,
+      "replacement": 1
+    },
+    {
+      "original": 9,
+      "replacement": 1
+    }
+  ],
+  "publicationPending": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original/revised Spanish fully read against frozen Japanese; static HTML checks and ten finite digit cases only. No executable article code; no browser KaTeX/Mermaid, fullsite, human/native or theorem certification. Other6translations unread; PT registration pending."
+}

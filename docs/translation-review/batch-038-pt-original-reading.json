@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-22",
+  "path": "content/post/cantors-diagonal-argument/index.pt.md",
+  "sha256": "cf5922afe20e45336876ecabb08d38852cae2a03d1399ec192f8d36b99b804bb",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Shared aleph1 equality claim and omitted consistency assumption for CH independence.",
+    "Bad internal links to unrelated diagonalization/Jordan article; duplicate link targets.",
+    "Missing rational enumeration and uniqueness of decimal representations; no distinction arbitrary sequence vs computable enumeration.",
+    "Exaggerated abundance phrases and diagonal-shifting summary."
+  ]
+}

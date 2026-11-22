@@ -202,6 +202,46 @@
         "Selected teaching references only; no forcing proof audit.",
         "Batch038 publication pending; whole goal active."
       ]
+    },
+    "post/cantors-diagonal-argument/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "source": "post/cantors-diagonal-argument/index.md",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "a02cda1e307c68d5162de24f1759dff4b847e237d4bab1180f151cb87506ca73",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Whole original and revised Portuguese read against Japanese. Corrected continuum cardinality and ZFC consistency premise, relative consistency, decimal uniqueness and arbitrary sequence conditions; added rational enumeration. Replaced vague abundance comparison with strict cardinality."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked cardinalidade, bijeção, injeção, enumerável, não enumerável, conjunto das partes, hipótese do contínuo and consistência relativa. Clarified algarismo/casa decimal and changed diagonal shifting to altering each diagonal digit."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Nine displays structurally match Japanese; localized se condition normalized to source if.56TeX,9displays,2graphs8edges,78prose fragments. Ten digit cases are finite sanity checks only, not theorem proof. Bold spans were lost during Markdown normalization and are not claimed as checked/preserved."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Both Mermaid graphs read and topology/source preservation checked in static HTML; browser rendering not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three primary teaching references, six localized article targets. Removed wrong link to unrelated diagonalization/Jordan article and added references. Date,title,cover,canonical,14hreflang,13sidebar checked.39bundle preview507posts+tag,2218multilingual pages,4046HTML/41XML HTTPS."
+        }
+      },
+      "summary": "Full Portuguese comparison of corrected Cantor diagonal proof and continuum hypothesis assumptions.",
+      "languageSpecificFindings": "Removed unrelated diagonalization/Jordan link; corrected exaggerated cardinality wording and missing CH consistency assumption. Added rational enumeration and decimal uniqueness; entire original and revised article read.",
+      "validation": "docs/translation-review/batch-038-pt-r6-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Six other translations unread.",
+        "No browser KaTeX/Mermaid or formal theorem certification.",
+        "Selected math teaching sources only.",
+        "Batch038 publication pending; whole goal active."
+      ]
     }
   },
   "stages": [
@@ -234,8 +274,14 @@
       "stage": "Korean whole-body comparison and static validation",
       "reviewedTranslationsAdded": 1,
       "validation": "docs/translation-review/batch-038-ko-r3-validation.json"
+    },
+    {
+      "date": "2026-11-22",
+      "stage": "Portuguese whole-body comparison and static validation",
+      "reviewedTranslationsAdded": 1,
+      "validation": "docs/translation-review/batch-038-pt-r6-validation.json"
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and6translations fully read;6AI records;7translations unread. Static preview passed; publication038 pending."
+  "scope": "Japanese and7translations fully read;7AI records;6translations unread. Static preview passed; publication038 pending."
 }
