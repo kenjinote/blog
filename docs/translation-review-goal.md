@@ -880,3 +880,5 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 2026-11-23 Batch045公開確認完了。CI run 45061700015／commit `c51a8d2316cf27f7b982dee9c41d8f6193259c1c` 成功。Pixel復元ガイドの原文＋12翻訳の公開13ページでHTTP・canonical・言語・RTL・日付・Update/Reinstall区別・Fastboot手順・公式リンク・hreflang検査を通過。
 
 - 2026-11-23 Batch047: FizzBuzz記事を日本語原文＋12翻訳で全文照合。Git初版から公開日を2025-04-18へ復元し、全版の重複dateと余分な空行を整理。独語の無関係なZustandリンク、仏語タイトルの誤った「文章執筆」表現、葡語見出し・結論を修正。FizzBuzzの3/5/15倍数条件と2種類のPython例を確認し、26コードブロックすべてをAST構文解析（実行なし）。AI校閲台帳はcurrent 576、未確認12,456、人確認0。Batch047記録は`docs/translation-review/batch-047.json`。CI・公開確認と全記事goalは継続。
+
+- 2026-11-23 Batch046公開確認完了。CI run 45065046319／commit `59a9debf43d30b967bc3d7ce40625396175c0902` 成功。探索アルゴリズム記事の原文＋12翻訳すべてでHTTP 200・canonical・言語/RTL・タイトル・lastmod・コード・Python公式リンク・誤リンク除去・hreflang先の検査を通過。

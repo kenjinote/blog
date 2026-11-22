@@ -473,7 +473,7 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "scope": "Japanese source and all 12 translations; complete article meaning, terminology, complexity statements, code/diagram blocks, metadata, and links were reviewed.",
   "validation": "docs/translation-review/batch-046-preview-validation.json",
   "localPreviewPassed": true,
@@ -484,5 +484,11 @@
     "Formal proofs and runtime performance measurements are outside this introductory article review.",
     "Local production preview has not yet completed; live deployment verification remains pending."
   ],
-  "previewSummary": "Production Hugo build completed in 606.5 seconds; all 13 language pages passed local route, title, canonical, language/RTL, Python doc link, corrected caveat, code rendering, and hreflang target checks."
+  "previewSummary": "Production Hugo build completed in 606.5 seconds; all 13 language pages passed local route, title, canonical, language/RTL, Python doc link, corrected caveat, code rendering, and hreflang target checks.",
+  "publication": {
+    "record": "docs/translation-review/publication-046.json",
+    "ciRun": 45065046319,
+    "deployedCommit": "59a9debf43d30b967bc3d7ce40625396175c0902",
+    "allPassed": true
+  }
 }
