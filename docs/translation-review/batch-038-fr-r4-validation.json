@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-22T23:32:10.944055+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "fr",
+      "sha256": "7b596a9540fd645dcb96c3a8d2d094b602518101a9c7d49fb9944d3bae567b8d",
+      "texExpressions": 59,
+      "displayMath": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        5,
+        3
+      ],
+      "proseFragmentsPreserved": 76,
+      "strongSpans": 16,
+      "externalReferences": 3,
+      "internalReferences": 6,
+      "allPassed": true
+    }
+  ],
+  "digitRuleCases": [
+    {
+      "original": 0,
+      "replacement": 1
+    },
+    {
+      "original": 1,
+      "replacement": 2
+    },
+    {
+      "original": 2,
+      "replacement": 1
+    },
+    {
+      "original": 3,
+      "replacement": 1
+    },
+    {
+      "original": 4,
+      "replacement": 1
+    },
+    {
+      "original": 5,
+      "replacement": 1
+    },
+    {
+      "original": 6,
+      "replacement": 1
+    },
+    {
+      "original": 7,
+      "replacement": 1
+    },
+    {
+      "original": 8,
+      "replacement": 1
+    },
+    {
+      "original": 9,
+      "replacement": 1
+    }
+  ],
+  "publicationPending": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original/revised French fully read against frozen Japanese; static HTML checks and ten finite digit cases only. No executable article code; no browser KaTeX/Mermaid, fullsite, human/native or theorem certification. Other5translations unread; French registration pending."
+}

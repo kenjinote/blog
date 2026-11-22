@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-22",
+  "path": "content/post/cantors-diagonal-argument/index.fr.md",
+  "sha256": "412109d3102bac24c2889d97f639d130b35a220ebb119b29f3e4abaa63e17844",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "The source conflates the continuum with aleph-one and omits the consistency premise for CH independence.",
+    "The article overstates the size comparison, omits an enumeration of the rationals, and does not distinguish an arbitrary sequence from a computable listing.",
+    "Decimal expansions need a canonical convention to make digitwise equality meaningful.",
+    "The continuum heading repeats a link and contains math in the heading; the article lacks references."
+  ]
+}

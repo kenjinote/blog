@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-22",
+  "path": "content/post/cantors-diagonal-argument/index.ar.md",
+  "sha256": "bf859b171a4721ac911c119f3c14d4cfcfb5c7b7e8d5576429ef5a509dcd6487",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Overstates cardinality and has no rational enumeration.",
+    "Does not distinguish arbitrary listings from computable sequences or canonical decimal expansions.",
+    "Conflates continuum with aleph-one and omits the consistency assumption for CH independence.",
+    "Uses opaque cardinality terminology, duplicate links, and an unrelated Turing page; no references."
+  ]
+}

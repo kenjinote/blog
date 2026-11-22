@@ -4625,6 +4625,66 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-038.json",
       "evidenceHash": "3aed5ff5665bddc6354d55b2ae652c1de6cecd1c50849e2bdc0e407d7258ce5f"
+    },
+    "post/cantors-diagonal-argument/index.fr.md": {
+      "source": "post/cantors-diagonal-argument/index.md",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "7b596a9540fd645dcb96c3a8d2d094b602518101a9c7d49fb9944d3bae567b8d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-038.json",
+      "evidenceHash": "ab8e18c21faeb5f9e03509fa4575cfdef5acd9a64632dc708dce868b7c56d818"
+    },
+    "post/cantors-diagonal-argument/index.de.md": {
+      "source": "post/cantors-diagonal-argument/index.md",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "289e51fa826094ae4bb43ee397a9bc5a76f91382b8d526f4820fa91aeea8d0e5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-038.json",
+      "evidenceHash": "8b762097eaeee757d69e0052462f4c07fa78af42cd6877b0e810b76b8d6b9185"
+    },
+    "post/cantors-diagonal-argument/index.hi.md": {
+      "source": "post/cantors-diagonal-argument/index.md",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "dcddc89a0cc5a47e67d09e52fb3e9d7281a15f25e81fb20a5949365cc90217ec",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-038.json",
+      "evidenceHash": "0922fdacc9d737512b9e4d237413a56b53d5d8737405b99efec1d1ac790e581b"
+    },
+    "post/cantors-diagonal-argument/index.id.md": {
+      "source": "post/cantors-diagonal-argument/index.md",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "1c7d7a1ccd40c3d2d75c56a462b78c5755217f26cb709016469fe02d9599d87a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-038.json",
+      "evidenceHash": "56cc643e518af56a43289bc01b52d55a470330637643548fa6c824d13c8b29f1"
+    },
+    "post/cantors-diagonal-argument/index.ar.md": {
+      "source": "post/cantors-diagonal-argument/index.md",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "fa109427b2236806bf2ca6773ce0a2c8783ca0a8063c66140197154c8d38bcac",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-038.json",
+      "evidenceHash": "3622e367ab1bbb66c3e9bb0cbd3634d2d6c69291df866552a8e7b24b2fb72859"
+    },
+    "post/cantors-diagonal-argument/index.ru.md": {
+      "source": "post/cantors-diagonal-argument/index.md",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "709116b93d29912bb4df85173d07665b8c1eb15f2792da88ef18e3cff4eceb1e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-038.json",
+      "evidenceHash": "e0b23b44f16997bea913461c5c8bf07830d5d243d1021d83184b2bc3d7157eba"
     }
   }
 }

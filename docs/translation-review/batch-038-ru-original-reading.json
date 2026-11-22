@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-22",
+  "path": "content/post/cantors-diagonal-argument/index.ru.md",
+  "sha256": "e1a7a712e8f79682fd10baaf115ed69031514f30a9f8fd7f052e45031690f879",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Overstates size difference and omits enumeration of rationals.",
+    "Does not clarify arbitrary versus computable lists or canonical decimal expansions.",
+    "Incorrectly identifies continuum with aleph-one and omits consistency premise for CH independence.",
+    "Duplicate/self links and lack of source references."
+  ]
+}

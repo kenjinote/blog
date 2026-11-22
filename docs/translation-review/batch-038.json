@@ -242,6 +242,246 @@
         "Selected math teaching sources only.",
         "Batch038 publication pending; whole goal active."
       ]
+    },
+    "post/cantors-diagonal-argument/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "source": "post/cantors-diagonal-argument/index.md",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "7b596a9540fd645dcb96c3a8d2d094b602518101a9c7d49fb9944d3bae567b8d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete French original and revised article against the frozen, revised Japanese source. Corrected the false continuum=aleph-one identification, restored the consistency premise for CH independence and the relative-consistency distinction, added the rational enumeration, clarified that diagonalization defeats any sequence rather than only an algorithmically computable list, and stated the strict cardinality comparison precisely."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked cardinalité, bijection, injection, dénombrable/non dénombrable, ensemble des parties, hypothèse du continu, cohérence and indépendance. Replaced inflated “écrasamment plus” wording and diagonal-shifting language; distinguished decimal digits from real numbers."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked all nine displayed equations against Japanese, normalizing localized si/if only. The static HTML contains 59 TeX expressions, nine displays, and both diagrams with 5 and 3 edges. Added a canonical decimal convention excluding eventually-9 expansions; the constructed digits 1/2 preserve uniqueness. Ten finite digit-rule cases were sanity-checked only, not treated as a proof. No theorem certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article code. Read both Mermaid diagrams, checked topology and text preservation in static HTML. Browser Mermaid/KaTeX execution was not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed duplicate continuum-hypothesis links and the math/link-bearing heading, repaired localized internal routes, added halting and incompleteness article links plus three teaching references. Static checks passed title, publication/modified dates, cover, canonical, reciprocal hreflang, sidebar language routes, and 76 preserved prose fragments. Fresh 39-bundle preview:507 posts+1 taxonomy, 2218 multilingual pages, 4046 HTTPS HTML and 41 XML URLs."
+        }
+      },
+      "summary": "Full French comparison of the corrected Cantor diagonal article, including cardinality, canonical decimal expansions, rational enumeration, and continuum-hypothesis assumptions.",
+      "languageSpecificFindings": "Replaced “écrasamment plus” and the incorrect aleph-one identification; explained arbitrary sequences, unique decimal representation, rational enumeration, injections and relative consistency. Removed duplicate/broken internal links and added bibliography. Full original and revised bodies were read.",
+      "validation": "docs/translation-review/batch-038-fr-r4-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Five other translations remain unread.",
+        "Static HTML only; no browser KaTeX/Mermaid execution or formal theorem certification.",
+        "Primary teaching sources were consulted only to the selected extent documented in batch-038-source-notes.md.",
+        "Batch038 publication and whole-blog review remain pending."
+      ]
+    },
+    "post/cantors-diagonal-argument/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "source": "post/cantors-diagonal-argument/index.md",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "289e51fa826094ae4bb43ee397a9bc5a76f91382b8d526f4820fa91aeea8d0e5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete German original and revised article against the frozen revised Japanese source. Corrected the continuum/aleph-one conflation, restored the consistency premise and relative-consistency account for CH independence, added an enumeration of rationals, explained arbitrary sequences rather than only computable listings, and replaced exaggerated cardinality wording with the injection/bijection comparison."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Mächtigkeit, Bijektion, Injektion, abzählbar, überabzählbar, Potenzmenge, Kontinuumshypothese, Widerspruchsfreiheit and Unabhängigkeit. Replaced the “overwhelmingly more” phrase and diagonal-shifting summary."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All nine displayed formulas match Japanese after normalizing the localized wenn/if conditional. Static HTML preserves 59 TeX expressions, nine displays, and both diagrams with 5 and 3 edges. Added a canonical decimal convention excluding eventually-9 expansions and checked the digit rule for all ten finite inputs as an illustration only. No theorem certification."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article code. Read both Mermaid diagrams and checked topology/source preservation in static HTML. Browser Mermaid/KaTeX execution was not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self and duplicate links and the unrelated Turing-machine page; added appropriate German routes and three primary teaching references. Static checks passed title, publication/modified dates, cover, canonical, reciprocal hreflang, sidebar language routes, and 77 preserved prose fragments. Fresh 39-bundle preview:507 posts+1 taxonomy, 2218 multilingual pages, 4046 HTTPS HTML and 41 XML URLs."
+        }
+      },
+      "summary": "Full German comparison of the corrected Cantor diagonal argument, including decimal representation, countability, and continuum-hypothesis assumptions.",
+      "languageSpecificFindings": "Improved idiomatic German for cardinality and bijection, removed exaggerated size claims, arbitrary-list limitation, incorrect continuum equality and missing consistency condition. Fixed Turing/self links, removed duplicate heading links and added references. Full original and revised bodies read.",
+      "validation": "docs/translation-review/batch-038-de-r2-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Four other translations remain unread.",
+        "Static HTML only; no browser KaTeX/Mermaid execution or formal theorem certification.",
+        "Primary teaching sources were consulted only to the selected extent documented in batch-038-source-notes.md.",
+        "Batch038 publication and whole-blog review remain pending."
+      ]
+    },
+    "post/cantors-diagonal-argument/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "source": "post/cantors-diagonal-argument/index.md",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "dcddc89a0cc5a47e67d09e52fb3e9d7281a15f25e81fb20a5949365cc90217ec",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Hindi original and revised article against the frozen Japanese source. Corrected the cardinality/countability conflation, the malformed bijection term, the exaggerated size claims, the omitted rational enumeration, canonical decimal conventions and arbitrary-sequence scope. Fixed the continuum/aleph-one claim and the missing consistency assumption and relative-consistency distinction for CH."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Used समुच्चय का आकार (cardinality), गणन संख्या (cardinal number), गणनीय अनंत (countably infinite), अगणनीय (uncountable), and एकैकी आच्छादन (bijection). The Commission for Scientific and Technical Terminology glossary maps cardinal number to गणन संख्या and bijection to एकैकी आच्छादन; a Hindi mathematics textbook describes cardinality as the number of set elements. Sources and scope are documented in batch-038-source-notes.md."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Nine displayed formulas structurally match Japanese after normalizing localized यदि/if. Static HTML preserves 60 TeX expressions, nine displays, and two diagrams with 5 and 3 edges. Added a canonical decimal expansion convention and clarified the interval-to-reals cardinality inference. Ten finite digit-rule cases checked only as illustration, not theorem proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article code. Read both Mermaid diagrams and checked topology/source preservation in static HTML; browser Mermaid/KaTeX execution was not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed duplicate Cantor/continuum/Gödel links, corrected German/Arabic-era-style unrelated targets to Hindi routes, added correct halting and Gödel links plus three teaching references. Static checks passed title, dates, cover, canonical, reciprocal hreflang, sidebar routes and 80 prose fragments. Fresh39-bundle preview:507 posts+1 taxonomy,2218 multilingual pages,4046 HTTPS HTML and41 XML URLs."
+        }
+      },
+      "summary": "Full Hindi comparison of Cantor’s diagonal argument with corrected terminology for cardinality and bijection, and precise decimal and continuum-hypothesis explanations.",
+      "languageSpecificFindings": "Corrected cardinality translated as countability, malformed bijection wording, wrong English duplicate links, inflated abundance claims and the false continuum=aleph-one implication. Added natural-language enumeration of rationals, arbitrary sequence scope, decimal uniqueness, relative consistency and bibliography. Full original and revised bodies read.",
+      "validation": "docs/translation-review/batch-038-hi-r4-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Three other translations remain unread.",
+        "Static HTML only; no browser KaTeX/Mermaid execution or formal theorem certification.",
+        "Selected mathematical teaching sources were read only to the scopes documented in batch-038-source-notes.md.",
+        "Batch038 publication and whole-blog review remain pending."
+      ]
+    },
+    "post/cantors-diagonal-argument/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "source": "post/cantors-diagonal-argument/index.md",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "1c7d7a1ccd40c3d2d75c56a462b78c5755217f26cb709016469fe02d9599d87a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Indonesian original and revised article against the frozen Japanese source. Corrected the exaggerated cardinality claim, added an explicit enumeration of rationals, explained canonical decimal expansions, and clarified that the diagonal argument rules out every exhaustive sequence, not only computable listings. Corrected the continuum/aleph-one distinction and the consistency premise and relative-consistency account for CH."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked kardinalitas, bijeksi, injeksi, terhitung, tak terhitung, himpunan kuasa, Hipotesis Kontinum, konsisten and independen. Replaced “jauh lebih banyak” and diagonal-shifting language with precise cardinality terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All nine displayed formulas match Japanese after normalizing the localized jika/if condition. Static HTML preserves 59 TeX expressions, nine displays, and both diagrams with 5 and 3 edges. Added the non-eventually-9 decimal convention and relative-consistency qualification. Ten digit cases were checked only as finite illustration, not theorem proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article code. Read both Mermaid diagrams and checked topology and source preservation in static HTML; browser graph and KaTeX execution were not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed duplicate continuum links and the unrelated Turing-machine route; repaired localized Cantor, Gödel, halting and incompleteness links and added three teaching references. Static checks passed title, publication/modified dates, cover, canonical, reciprocal hreflang, sidebar routes and 78 prose fragments. Fresh39-bundle preview:507 posts+1 taxonomy,2218 multilingual pages,4046 HTTPS HTML and41 XML URLs."
+        }
+      },
+      "summary": "Full Indonesian comparison of Cantor’s diagonal argument with corrected countability, decimal representation, and continuum-hypothesis assumptions.",
+      "languageSpecificFindings": "Removed inflated cardinality phrases and links to unrelated or duplicate pages; added a rational enumeration and references. Corrected the aleph-one conflation, relative-consistency assumptions, decimal uniqueness and arbitrary sequence explanation. Full original and revised bodies read.",
+      "validation": "docs/translation-review/batch-038-id-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "Two other translations remain unread.",
+        "Static HTML only; no browser KaTeX/Mermaid execution or formal theorem certification.",
+        "Selected mathematical teaching sources were consulted only to the scopes documented in batch-038-source-notes.md.",
+        "Batch038 publication and whole-blog review remain pending."
+      ]
+    },
+    "post/cantors-diagonal-argument/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "source": "post/cantors-diagonal-argument/index.md",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "fa109427b2236806bf2ca6773ce0a2c8783ca0a8063c66140197154c8d38bcac",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Arabic original and revised article against the frozen Japanese source. Replaced the inflated comparison with precise cardinality statements; added enumeration of rationals and the arbitrary-sequence scope; defined a canonical decimal convention; corrected the continuum/aleph-one conflation and restored the consistency premise and relative-consistency account for CH."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Replaced opaque الأصالة with accessible حجم المجموعة (cardinality), and clarified التقابل واحد لواحد (bijection), الدالة المتباينة (injection), قابلة للعد and غير قابلة للعد. KSU lecture notes use قدرة المجموعة for cardinality and distinguish countability; Doha Institute Arabica defines cardinal number by number of elements. Sources and scope are documented in batch-038-source-notes.md."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All nine displayed formulas match Japanese after normalizing the localized إذا كان/if condition. Static HTML preserves 60 TeX expressions, nine displays, and both diagrams with 5 and 3 edges. Added canonical decimal uniqueness, clarified the interval-to-real-set inference and CH consistency premise. Ten digit-rule cases were checked only as finite illustrations, not theorem proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article code. Read both Mermaid diagrams and checked topology/source preservation in static HTML. The generated page retains Arabic lang and RTL direction. Browser graph and KaTeX execution were not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed duplicate Cantor/Gödel/continuum links and replaced the unrelated Turing article with the correct halting-problem route; added incompleteness links and three teaching references. Static checks passed title, publication/modified dates, cover, canonical, reciprocal hreflang, sidebar routes and 75 prose fragments. Fresh39-bundle preview:507 posts+1 taxonomy,2218 multilingual pages,4046 HTTPS HTML and41 XML URLs."
+        }
+      },
+      "summary": "Full Arabic comparison of Cantor’s diagonal argument with clearer cardinality language and corrected decimal and continuum-hypothesis explanations.",
+      "languageSpecificFindings": "Replaced الأصالة with accessible set-size wording, removed duplicate links and fixed the irrelevant Turing route. Added rational enumeration, arbitrary-sequence scope, decimal uniqueness, relative consistency and sources. Full original and revised bodies read.",
+      "validation": "docs/translation-review/batch-038-ar-r4-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "One other translation remains unread.",
+        "Static HTML only; RTL metadata checked but no browser KaTeX/Mermaid execution or formal theorem certification.",
+        "Selected math sources support terminology and proof scope only as documented in batch-038-source-notes.md.",
+        "Batch038 publication and whole-blog review remain pending."
+      ]
+    },
+    "post/cantors-diagonal-argument/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "source": "post/cantors-diagonal-argument/index.md",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "709116b93d29912bb4df85173d07665b8c1eb15f2792da88ef18e3cff4eceb1e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Russian original and revised article against the frozen Japanese source. Replaced the exaggerated comparison with strict cardinality language, added a rational enumeration, explained canonical decimal representations and clarified that diagonalization rules out every exhaustive sequence, not only computable ones. Corrected continuum=aleph-one and added the consistency premise and relative-consistency results for CH."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked мощность, биекция, инъекция, счётное-бесконечное, несчётное, множество подмножеств, континуум-гипотеза and непротиворечивость. Distinguished countably infinite from merely countable and corrected the diagonal-shifting summary."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All nine displayed equations match Japanese after normalizing localized если/if. Static HTML preserves 60 TeX expressions, nine displays, and both diagrams with 5 and 3 edges. Added the convention excluding eventually-9 expansions and clarified why interval uncountability implies real-set uncountability. Ten finite digit cases checked only as illustration, not theorem proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article code. Read both Mermaid diagrams and checked topology/source preservation in static HTML. Browser KaTeX/Mermaid execution was not tested."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Removed self/duplicate links and wrong Turing target; added correct Russian halting and Gödel incompleteness routes and three teaching sources. Static checks passed title, dates, cover, canonical, reciprocal hreflang, sidebar routes and 76 prose fragments. Fresh39-bundle preview:507 posts+1 taxonomy,2218 multilingual pages,4046 HTTPS HTML and41 XML URLs."
+        }
+      },
+      "summary": "Full Russian comparison of Cantor’s diagonal proof, countability, decimal conventions and the continuum hypothesis.",
+      "languageSpecificFindings": "Removed overstated “подавляюще больше”, corrected countable terminology, added rational enumeration and arbitrary-list scope, restored CH consistency conditions, and removed duplicate or unrelated links. Full original and revised bodies read.",
+      "validation": "docs/translation-review/batch-038-ru-validation.json",
+      "limitations": [
+        "AI review, not human or native-speaker certification.",
+        "All translations of this article are now read; reviews of other articles remain pending.",
+        "Static HTML only; no browser KaTeX/Mermaid execution or formal theorem certification.",
+        "Selected primary mathematical sources were consulted only to the scopes documented in batch-038-source-notes.md.",
+        "Batch038 publication and whole-blog review remain pending."
+      ]
     }
   },
   "stages": [
@@ -280,8 +520,44 @@
       "stage": "Portuguese whole-body comparison and static validation",
       "reviewedTranslationsAdded": 1,
       "validation": "docs/translation-review/batch-038-pt-r6-validation.json"
+    },
+    {
+      "date": "2026-11-22",
+      "stage": "French whole-body comparison and static validation",
+      "validation": "docs/translation-review/batch-038-fr-r4-validation.json",
+      "reviewedTranslationsAdded": 1
+    },
+    {
+      "date": "2026-11-22",
+      "stage": "German whole-body comparison and static validation",
+      "validation": "docs/translation-review/batch-038-de-r2-validation.json",
+      "reviewedTranslationsAdded": 1
+    },
+    {
+      "date": "2026-11-22",
+      "stage": "Hindi whole-body comparison, terminology research and static validation",
+      "validation": "docs/translation-review/batch-038-hi-r4-validation.json",
+      "reviewedTranslationsAdded": 1
+    },
+    {
+      "date": "2026-11-22",
+      "stage": "Indonesian whole-body comparison and static validation",
+      "validation": "docs/translation-review/batch-038-id-validation.json",
+      "reviewedTranslationsAdded": 1
+    },
+    {
+      "date": "2026-11-22",
+      "stage": "Arabic whole-body comparison, terminology research, RTL and static validation",
+      "validation": "docs/translation-review/batch-038-ar-r4-validation.json",
+      "reviewedTranslationsAdded": 1
+    },
+    {
+      "date": "2026-11-22",
+      "stage": "Russian whole-body comparison and static validation; all12 translations reviewed",
+      "validation": "docs/translation-review/batch-038-ru-validation.json",
+      "reviewedTranslationsAdded": 1
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and7translations fully read;7AI records;6translations unread. Static preview passed; publication038 pending."
+  "scope": "All12 translations fully read and registered against the Japanese source;0 translations unread. Static preview passed; publication038 pending."
 }

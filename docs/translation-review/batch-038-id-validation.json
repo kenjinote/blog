@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-22T23:48:29.410646+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "id",
+      "sha256": "1c7d7a1ccd40c3d2d75c56a462b78c5755217f26cb709016469fe02d9599d87a",
+      "texExpressions": 59,
+      "displayMath": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        5,
+        3
+      ],
+      "proseFragmentsPreserved": 78,
+      "strongSpans": 16,
+      "externalReferences": 3,
+      "internalReferences": 6,
+      "allPassed": true
+    }
+  ],
+  "digitRuleCases": [
+    {
+      "original": 0,
+      "replacement": 1
+    },
+    {
+      "original": 1,
+      "replacement": 2
+    },
+    {
+      "original": 2,
+      "replacement": 1
+    },
+    {
+      "original": 3,
+      "replacement": 1
+    },
+    {
+      "original": 4,
+      "replacement": 1
+    },
+    {
+      "original": 5,
+      "replacement": 1
+    },
+    {
+      "original": 6,
+      "replacement": 1
+    },
+    {
+      "original": 7,
+      "replacement": 1
+    },
+    {
+      "original": 8,
+      "replacement": 1
+    },
+    {
+      "original": 9,
+      "replacement": 1
+    }
+  ],
+  "publicationPending": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original/revised Indonesian fully read against frozen Japanese; static HTML checks and ten finite digit cases only. No executable article code; no browser KaTeX/Mermaid, fullsite, human/native or theorem certification. Other2translations unread; Indonesian registration pending."
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-22",
+  "path": "content/post/cantors-diagonal-argument/index.hi.md",
+  "sha256": "60307f1d67e4f0d6d977a07acbfaade81e84c5d6d81aecc3b8939a3106804934",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Cardinality is repeatedly mistranslated as countability (गणनीयता), and the bijection term is malformed.",
+    "Overstates cardinality and lacks an enumeration proof for rationals.",
+    "Omits canonical decimal representations and treats enumeration as a list without explaining arbitrary noncomputable sequences.",
+    "Conflates the continuum with aleph-one and omits the consistency assumption for CH independence.",
+    "Repeated/duplicate links and no references."
+  ]
+}

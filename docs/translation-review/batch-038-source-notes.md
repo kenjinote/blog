@@ -16,3 +16,15 @@ Use continuum cardinality 2^aleph0 (or c), reserve equality with aleph1 for CH. 
 ## Applied JA/EN corrections and validation
 
 2026-11-19: Whole revised JA and EN reread, followed by focused review of summary, heading and paragraph changes. CH equality separated from theorem and consistency assumption restored. Added rational enumeration, canonical decimal expansion and arbitrary-list explanation. Text-free cover generated and viewed; all13references updated,11bodies still unread. First static check revealed missing x sentence immediately before display, fixed by blank paragraph separator; heading math/links removed to repair TOC. R3 source preserves56JA/55EN TeX,9displays each,2graphs8edges,58JA/73EN prose fragments and18strong spans. Prose-only normalization accepts Hugo smart double quotes; TeX comparisons remain exact. English ledger registered457; publication pending. Earlier failure receipts retained.
+
+## Hindi mathematical terminology checked — 2026-11-22
+
+- भारत सरकार के वैज्ञानिक तथा तकनीकी शब्दावली आयोग के गणित शब्दकोश में “cardinal number” के लिए “गणन संख्या” और “bijection” के लिए “एकैकी आच्छादन” दिया गया है: [Commission for Scientific and Technical Terminology, Mathematics glossary](https://www.cstt.education.gov.in/sites/default/files/learners-glossary-mathematics-eng-hindi.pdf).
+- असम राज्य शैक्षिक अनुसंधान एवं प्रशिक्षण परिषद की हिंदी गणित पाठ्यपुस्तक समुच्चय के कार्डिनैलिटी को अवयवों की संख्या के रूप में स्पष्ट करती है: [SEBA, Advanced Mathematics (Hindi)](https://www.sebaonline.org/textbooks/class-10/Advanced%20Mathematics%20%28E%29_Naya_Ucha_Ganit_Class%20X.pdf).
+- These sources support terminology only; they were not used to certify the set-theoretic proof.
+
+## Arabic mathematical terminology checked — 2026-11-22
+
+- جامعة الملك سعود lecture notes use “قدرة المجموعة” for cardinality and distinguish countable sets from continuum-size sets: [KSU, definition of cardinality](https://faculty.ksu.edu.sa/sites/default/files/42lrydyt_dr_ml.pdf).
+- Doha Institute Arabica defines cardinal number as the measure of a set’s number of elements: [Arabica, cardinal number](https://arabica.dohainstitute.org/Pages/subset.aspx).
+- These sources support using accessible “حجم المجموعة” (set size) in the article; they were not used to certify the set-theoretic proof.

@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-22T23:43:00.284010+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "hi",
+      "sha256": "adea612203066f067eaae2f2d3e11e326d84e6c88726c00d79775b3c960f78a1",
+      "texExpressions": 59,
+      "displayMath": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        5,
+        3
+      ],
+      "proseFragmentsPreserved": 79,
+      "strongSpans": 13,
+      "externalReferences": 3,
+      "internalReferences": 6,
+      "allPassed": true
+    }
+  ],
+  "digitRuleCases": [
+    {
+      "original": 0,
+      "replacement": 1
+    },
+    {
+      "original": 1,
+      "replacement": 2
+    },
+    {
+      "original": 2,
+      "replacement": 1
+    },
+    {
+      "original": 3,
+      "replacement": 1
+    },
+    {
+      "original": 4,
+      "replacement": 1
+    },
+    {
+      "original": 5,
+      "replacement": 1
+    },
+    {
+      "original": 6,
+      "replacement": 1
+    },
+    {
+      "original": 7,
+      "replacement": 1
+    },
+    {
+      "original": 8,
+      "replacement": 1
+    },
+    {
+      "original": 9,
+      "replacement": 1
+    }
+  ],
+  "publicationPending": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original/revised Hindi fully read against frozen Japanese; static HTML checks and ten finite digit cases only. No executable article code; no browser KaTeX/Mermaid, fullsite, human/native or theorem certification. Other3translations unread; Hindi registration pending."
+}

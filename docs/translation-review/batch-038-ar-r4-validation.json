@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-22T23:55:37.429323+09:00",
+  "allPassed": true,
+  "versions": [
+    {
+      "language": "ar",
+      "sha256": "fa109427b2236806bf2ca6773ce0a2c8783ca0a8063c66140197154c8d38bcac",
+      "texExpressions": 60,
+      "displayMath": 9,
+      "diagrams": 2,
+      "diagramEdges": [
+        5,
+        3
+      ],
+      "proseFragmentsPreserved": 75,
+      "strongSpans": 15,
+      "externalReferences": 3,
+      "internalReferences": 6,
+      "allPassed": true
+    }
+  ],
+  "digitRuleCases": [
+    {
+      "original": 0,
+      "replacement": 1
+    },
+    {
+      "original": 1,
+      "replacement": 2
+    },
+    {
+      "original": 2,
+      "replacement": 1
+    },
+    {
+      "original": 3,
+      "replacement": 1
+    },
+    {
+      "original": 4,
+      "replacement": 1
+    },
+    {
+      "original": 5,
+      "replacement": 1
+    },
+    {
+      "original": 6,
+      "replacement": 1
+    },
+    {
+      "original": 7,
+      "replacement": 1
+    },
+    {
+      "original": 8,
+      "replacement": 1
+    },
+    {
+      "original": 9,
+      "replacement": 1
+    }
+  ],
+  "publicationPending": true,
+  "reviewedTranslationsAdded": 0,
+  "scope": "Original/revised Arabic fully read against frozen Japanese; static HTML checks and ten finite digit cases only. No executable article code; no browser KaTeX/Mermaid, fullsite, human/native or theorem certification. Other1translation unread; Arabic registration pending."
+}

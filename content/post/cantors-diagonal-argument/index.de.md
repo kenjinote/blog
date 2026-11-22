@@ -1,8 +1,11 @@
 ---
-title: "Cantors Diagonalargument - Ein Beweis, dass es „überwältigend mehr“ reelle als rationale Zahlen gibt"
+title: "Cantors Diagonalargument: Warum die reellen Zahlen überabzählbar sind"
 description: "Unendlichkeiten können unterschiedliche „Größen“ haben. Wir erklären detailliert den Beweis, dass die Mächtigkeit der reellen Zahlen echt größer ist als die der natürlichen oder rationalen Zahlen, mithilfe des von Georg Cantor entwickelten „Diagonalarguments“."
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
+lastmod: "2026-11-22"
+math: true
+mermaid: true
 image: "eyecatch-v2.png"
 categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Diagonalargument", "Unendlichkeit", "Mathematik", "Beweis"]
@@ -12,17 +15,17 @@ tags: ["Cantor", "Diagonalargument", "Unendlichkeit", "Mathematik", "Beweis"]
 
 Das Konzept der „Unendlichkeit“, wie wir es uns im Alltag vorstellen, bedeutet wörtlich, dass es „kein Ende gibt“. Da natürliche Zahlen ($1, 2, 3, \dots$) immer weitergezählt werden können, ist ihre Anzahl unendlich. Andererseits existieren reelle Zahlen (alle Punkte auf der Zahlengeraden) ebenfalls in unendlicher Anzahl.
 
-Intuitiv neigen wir zu der Annahme: „Unendlich ist unendlich, beides ist gleichermaßen endlos“, aber der Mathematiker des 19. Jahrhunderts, [Georg Cantor](https://kenji.blog/de/p/cantor/), bewies die erstaunliche Tatsache, dass **es bei Unendlichkeiten Größenunterschiede (Mächtigkeiten) gibt** .
+Intuitiv neigen wir zu der Annahme: „Unendlich ist unendlich, beides ist gleichermaßen endlos“, aber der Mathematiker des 19. Jahrhunderts, [Georg Cantor](/de/p/cantor/), zeigte, dass unendliche Mengen unterschiedliche Mächtigkeiten haben können.
 
-In diesem Artikel erklären wir detailliert, wie die Menge der reellen Zahlen „überwältigend größer“ als die Menge der natürlichen Zahlen ist, und zwar mithilfe einer von Cantor erdachten bahnbrechenden Beweismethode: dem **Diagonalargument (Diagonal Argument)** .
+In diesem Artikel zeigen wir mit Cantors Diagonalargument, warum die reellen Zahlen eine echt größere Mächtigkeit als die natürlichen Zahlen haben.
 
 ---
 
 ## Cantors Mengenlehre und „Mächtigkeit (Cardinality)“
 
-Cantor führte das Konzept der **Mächtigkeit (Cardinality)** ein, um die „Menge“ der Elemente in Mengen zu vergleichen. Bei einer endlichen Menge ist die Mächtigkeit einfach die Anzahl der Elemente. Aber wie vergleicht man die Größe unendlicher Mengen?
+Cantor führte den Begriff der <strong>Mächtigkeit</strong> ein, um Mengen anhand ihrer Elemente zu vergleichen. Bei einer endlichen Menge ist die Mächtigkeit einfach ihre Anzahl an Elementen. Doch wie vergleicht man unendliche Mengen?
 
-Cantor nutzte die Idee der **Bijektion (Bijection)** . Wenn eine Eins-zu-eins-Zuordnung (Bijektion) zwischen zwei Mengen $A$ und $B$ hergestellt werden kann, definierte er diese beiden Mengen als solche, die **„dieselbe Mächtigkeit haben“** .
+Cantor nutzte den Begriff der <strong>Bijektion</strong>. Gibt es zwischen zwei Mengen $A$ und $B$ eine Bijektion, so haben sie <strong>dieselbe Mächtigkeit</strong>.
 
 ### Haben natürliche und gerade Zahlen dieselbe Mächtigkeit?
 
@@ -46,7 +49,7 @@ graph LR
         N4("4")
         Ndots("...")
     end
-    
+
     subgraph "Gerade Zahlen (E)"
         E1("2")
         E2("4")
@@ -54,7 +57,7 @@ graph LR
         E4("8")
         Edots("...")
     end
-    
+
     N1 -->|"f(n)=2n"| E1
     N2 -->|"f(n)=2n"| E2
     N3 -->|"f(n)=2n"| E3
@@ -62,19 +65,19 @@ graph LR
     Ndots -->|"..."| Edots
 ```
 
-Auf diese Weise gibt es bei unendlichen Mengen die seltsame Eigenschaft, dass „ein Teil dieselbe Größe wie das Ganze hat“. Eine unendliche Menge, die in Eins-zu-eins-Zuordnung zu den natürlichen Zahlen steht, wird als **abzählbar unendlich (Countably infinite)** bezeichnet oder man sagt, sie hat die Mächtigkeit **Aleph-Null ($\aleph_0$)** .
+Auf diese Weise gibt es bei unendlichen Mengen die seltsame Eigenschaft, dass „ein Teil dieselbe Größe wie das Ganze hat“. Eine Menge heißt <strong>abzählbar unendlich</strong>, wenn es eine Bijektion zwischen ihr und den natürlichen Zahlen gibt; dann hat sie die Mächtigkeit <strong>$\aleph_0$</strong>.
 
-Erstaunlicherweise wurde bewiesen, dass Brüche bzw. rationale Zahlen ($\mathbb{Q}$) ebenfalls dieselbe Mächtigkeit wie die natürlichen Zahlen haben (abzählbar unendlich sind).
+Auch die rationalen Zahlen ($\mathbb{Q}$) sind abzählbar. Wir ordnen die positiven Brüche nach der Summe aus positivem Zähler und positivem Nenner und überspringen bereits aufgeführte Werte. Jeder Bruch erscheint nach endlich vielen Schritten. Ergänzt man 0 und verschachtelt anschließend die positiven und negativen Brüche, erhält man eine Aufzählung aller rationalen Zahlen und damit eine Bijektion zu den natürlichen Zahlen.
 
 ---
 
-## Reelle Zahlen sind „unzählbar“: Cantors Satz
+## Reelle Zahlen sind überabzählbar: Cantors Diagonalargument
 
-Natürliche Zahlen, gerade Zahlen und rationale Zahlen können alle „nacheinander aufgezählt“ werden. Aber lassen sich auch die **reellen Zahlen ($\mathbb{R}$)** , die alle Punkte auf der Zahlengeraden darstellen, in eine Eins-zu-eins-Zuordnung zu den natürlichen Zahlen bringen?
+Natürliche Zahlen, gerade Zahlen und rationale Zahlen können alle „nacheinander aufgezählt“ werden. Aber lassen sich auch die <strong>reellen Zahlen ($\mathbb{R}$)</strong> , die alle Punkte auf der Zahlengeraden darstellen, in eine Eins-zu-eins-Zuordnung zu den natürlichen Zahlen bringen?
 
-Cantors Antwort war **„Nein“** . Er zeigte, dass die reellen Zahlen eine echt größere Mächtigkeit als die natürlichen Zahlen haben, das heißt, sie sind **überabzählbar unendlich (Uncountably infinite)** .
+Cantors Antwort war <strong>„Nein“</strong>. Er zeigte, dass die reellen Zahlen eine echt größere Mächtigkeit als die natürlichen Zahlen haben: Sie sind <strong>überabzählbar</strong>.
 
-Für diesen Beweis wurde das **Diagonalargument** verwendet, das als einer der schönsten Beweise in der Geschichte der Mathematik gilt.
+Für diesen Beweis wurde das <strong>Diagonalargument</strong> verwendet, das als einer der schönsten Beweise in der Geschichte der Mathematik gilt.
 
 ---
 
@@ -84,10 +87,9 @@ Hier betrachten wir nicht alle reellen Zahlen, sondern beschränken uns auf die 
 
 ### Annahme durch Widerspruchsbeweis
 
-Der Beweis verwendet einen **Widerspruchsbeweis (Proof by contradiction)** .
-Zuerst nehmen wir an: „Alle reellen Zahlen zwischen 0 und 1 können in eine Eins-zu-eins-Zuordnung zu den natürlichen Zahlen gebracht werden (= man kann sie als Liste aufzählen)“.
+Der Beweis erfolgt durch <strong>Widerspruch</strong>. Eine Liste ist hier eine mathematische Folge mit Indizes aus den natürlichen Zahlen; wir setzen keinen Algorithmus voraus, der ihre Glieder berechnet. Das Argument schließt jede vollständige Aufzählung aus, nicht nur berechenbare Folgen.
 
-Das bedeutet, wir nehmen an, dass wir alle reellen Zahlen zwischen 0 und 1 als unendliche Dezimalbrüche darstellen und sie wie folgt als 1., 2. ... auflisten können.
+Um mehrdeutige Dezimaldarstellungen zu vermeiden, wählen wir stets die Darstellung, die nicht ab einer Stelle nur noch aus Neunen besteht. Für dieselbe reelle Zahl $0{,}5000\dots=0{,}4999\dots$ wählen wir also die erste Darstellung. Nehmen wir an, alle Zahlen des Intervalls ließen sich so auflisten:
 
 $$
 r_1 = 0 . \mathbf{d_{11}} d_{12} d_{13} d_{14} \dots
@@ -102,13 +104,14 @@ $$
 \vdots
 $$
 
-Hier steht $d_{ij}$ für die Ziffer (0 bis 9) an der $j$-ten Dezimalstelle der $i$-ten reellen Zahl.
+Hier bezeichnet $d_{ij}$ die $j$-te Nachkommastelle (eine Ziffer von 0 bis 9) der $i$-ten reellen Zahl in der Liste.
 
-### Konstruktion einer neuen reellen Zahl $x$
+### Konstruktion einer neuen reellen Zahl
 
-Cantor zeigte, wie man aus dieser „Liste, die alle reellen Zahlen umfassen sollte“, eine **neue reelle Zahl $x$, die definitiv nicht auf der Liste steht** , erschaffen kann.
+Aus dieser „Liste, die alle reellen Zahlen enthalten soll“, konstruierte Cantor eine <strong>neue reelle Zahl $x$, die nicht auf der Liste steht</strong>.
 
 Wir konstruieren die neue reelle Zahl $x$ wie folgt:
+
 $$
 x = 0 . x_1 x_2 x_3 x_4 \dots
 $$
@@ -116,13 +119,13 @@ $$
 Die Ziffer $x_n$ an jeder Stelle wird basierend auf der Ziffer $d_{nn}$ an der $n$-ten Dezimalstelle (der Ziffer auf der Diagonale) der $n$-ten Zahl in der Liste bestimmt. Die Regel ist sehr einfach.
 
 $$
-x_n = \begin{cases} 
+x_n = \begin{cases}
 1 & \text{wenn } d_{nn} \neq 1 \\
-2 & \text{wenn } d_{nn} = 1 
+2 & \text{wenn } d_{nn} = 1
 \end{cases}
 $$
 
-Das heißt, wenn die diagonale Ziffer $d_{nn}$ nicht 1 ist, setzen wir $x_n$ auf 1; wenn sie 1 ist, setzen wir sie auf 2. (* Wir verwenden nur 1 und 2, um das Problem von periodischen Dezimalbrüchen mit fortlaufenden Neunen zu vermeiden.)
+Das heißt: Ist die Diagonalziffer $d_{nn}$ nicht 1, wählen wir $x_n=1$; ist sie 1, wählen wir $x_n=2$. Damit unterscheidet sich die gewählte Ziffer immer von $d_{nn}$. Da die Dezimalstellen von $x$ nur 1 oder 2 sind, endet seine Darstellung nicht mit unendlich vielen Neunen und ist nach unserer Konvention eindeutig.
 
 ```mermaid
 graph TD
@@ -132,13 +135,13 @@ graph TD
         D2("d_22")
         D3("d_33")
     end
-    
+
     subgraph "Elemente der neuen reellen Zahl x"
         X1("x_1 ≠ d_11")
         X2("x_2 ≠ d_22")
         X3("x_3 ≠ d_33")
     end
-    
+
     D1 -->|"Regel anwenden"| X1
     D2 -->|"Regel anwenden"| X2
     D3 -->|"Regel anwenden"| X3
@@ -150,37 +153,42 @@ Die neu konstruierte reelle Zahl $x$ ist eine reelle Zahl zwischen 0 und 1. Laut
 
 Wenn $x = r_k$ ist, müsste die Ziffer $x_k$ an der $k$-ten Dezimalstelle von $x$ gleich der Ziffer $d_{kk}$ an der $k$-ten Dezimalstelle von $r_k$ sein ($x_k = d_{kk}$).
 
-Aber durch die Definition von $x$ wurde **$x_k$ absichtlich so gewählt, dass es eine von $d_{kk}$ verschiedene Ziffer ist ($x_k \neq d_{kk}$)** .
+Aber durch die Definition von $x$ wurde <strong>$x_k$ absichtlich so gewählt, dass es eine von $d_{kk}$ verschiedene Ziffer ist ($x_k \neq d_{kk}$)</strong> .
 
 Dies ist ein Widerspruch. Folglich war die anfängliche Annahme, dass „alle reellen Zahlen aufgelistet werden können“, falsch.
 
-Als Schlussfolgerung wurde bewiesen, dass **die Menge der reellen Zahlen nicht in eine Eins-zu-eins-Zuordnung mit der Menge der natürlichen Zahlen gebracht werden kann und dass es „überwältigend mehr“ reelle Zahlen gibt (ihre Mächtigkeit ist echt größer)** .
+Folglich gibt es <strong>keine Bijektion</strong> zwischen den reellen und den natürlichen Zahlen. Die Inklusion der natürlichen Zahlen in die reellen Zahlen ist eine Injektion; daher ist die Mächtigkeit der reellen Zahlen echt größer. Dieser Vergleich betrifft weder die Länge noch die Dichte auf der Zahlengeraden.
 
 ---
 
-## Der Weg zur [Kontinuumshypothese (Continuum Hypothesis)](https://kenji.blog/de/p/continuum-hypothesis/)
+## Der Weg zur Kontinuumshypothese
 
-[Cantors Diagonalargument](https://kenji.blog/de/p/cantors-diagonal-argument/) zeigte, dass es „Hierarchien“ in der Unendlichkeit gibt.
-Wenn wir die Mächtigkeit der natürlichen Zahlen mit $\aleph_0$ und die der reellen Zahlen mit $\aleph_1$ oder $2^{\aleph_0}$ bezeichnen, gilt die folgende Beziehung:
+Cantors Diagonalargument zeigt, dass es in der Unendlichkeit verschiedene „Hierarchien“ gibt. Bezeichnen wir die Mächtigkeit der natürlichen Zahlen mit $\aleph_0$ und die der reellen Zahlen mit $\mathfrak{c}=2^{\aleph_0}$. Letztere ist auch die Mächtigkeit der Potenzmenge der natürlichen Zahlen. Ob $\mathfrak{c}$ dem kleinsten überabzählbaren Kardinal $\aleph_1$ entspricht, ist eine eigene Frage, die das Diagonalargument nicht beantwortet. Es gilt:
 
 $$
 \aleph_0 < 2^{\aleph_0}
 $$
 
-Hier stand Cantor vor einer großen Frage. **„Gibt es eine unendliche Menge mit einer Mächtigkeit zwischen $\aleph_0$ und $2^{\aleph_0}$ ?“**
+Damit stellte sich Cantor eine große Frage: <strong>„Gibt es eine unendliche Menge, deren Mächtigkeit zwischen $\aleph_0$ und $2^{\aleph_0}$ liegt?“</strong>
 
-Die Hypothese, dass „keine dazwischenliegende Mächtigkeit existiert“, wird als **[Kontinuumshypothese](/de/p/continuum-hypothesis/) ([Continuum Hypothesis](https://kenji.blog/de/p/continuum-hypothesis/), CH)** bezeichnet. Cantor widmete sein Leben diesem Beweis, konnte ihn aber nicht erbringen.
+Die Annahme, dass keine Zwischenmächtigkeit existiert, heißt <strong>[Kontinuumshypothese](/de/p/continuum-hypothesis/) (CH)</strong>. In ZFC ist sie gleichbedeutend mit $2^{\aleph_0}=\aleph_1$.
 
-Später wurde von [Kurt Gödel](https://kenji.blog/de/p/godel/) und Paul Cohen bewiesen, dass die [Kontinuumshypothese](/de/p/continuum-hypothesis/) **„in den aktuellen Axiomen der Mathematik (ZFC) weder bewiesen noch widerlegt werden kann (sie ist unabhängig)“** . Dies ist eine der tiefgreifendsten Entdeckungen der Mathematik des 20. Jahrhunderts.
+Später zeigten [Kurt Gödel](/de/p/godel/) und Paul Cohen, dass die Kontinuumshypothese <strong>von ZFC unabhängig ist, sofern ZFC widerspruchsfrei ist</strong>. Gödel wies die relative Widerspruchsfreiheit von ZFC zusammen mit CH nach, Cohen diejenige von ZFC zusammen mit der Negation von CH. Diese Ergebnisse beweisen nicht die Widerspruchsfreiheit von ZFC selbst und bedeuten nicht, dass CH zugleich wahr und falsch ist.
 
 ---
 
 ## Zusammenfassung
 
-[Cantors Diagonalargument](https://kenji.blog/de/p/cantors-diagonal-argument/) mag auf den ersten Blick wie ein einfaches Rätsel aussehen, aber dahinter verbirgt sich eine mächtige Logik, die sich der „Wahrheit der Unendlichkeit“ nähert.
+Cantors Diagonalargument wirkt auf den ersten Blick wie ein einfaches Rätsel, beruht aber auf einer wirkungsvollen Schlussweise über das Unendliche.
 
-1. Die Größe unendlicher Mengen lässt sich durch „Eins-zu-eins-Zuordnungen“ vergleichen.
+1. Bijektionen zeigen gleiche Mächtigkeit; Injektionen ermöglichen den Vergleich von Mächtigkeiten.
 2. Bis hin zu den rationalen Zahlen haben sie dieselbe Größe wie natürliche Zahlen (abzählbar unendlich).
-3. Durch das Argument, neue Zahlen durch Verschieben entlang der Diagonale zu bilden, wird bewiesen, dass es mehr reelle als natürliche Zahlen gibt (überabzählbar unendlich).
+3. Indem man jede Diagonalziffer ändert und so eine neue reelle Zahl konstruiert, beweist das Argument, dass die reellen Zahlen eine echt größere Mächtigkeit als die natürlichen Zahlen haben.
 
-Genau diese der Intuition widersprechende, aber absolut fehlerfreie Schönheit der Logik ist wohl der größte Reiz der Mathematik. Das Diagonalargument wurde später auch in Theorien angewandt, die den Kern der Informatik und der mathematischen Logik bilden, wie etwa beim [Halteproblem](https://kenji.blog/de/p/turing-machine-computability/) von [Alan Turing](https://kenji.blog/de/p/turing/) und beim Beweis von Gödels Unvollständigkeitssatz.
+Diese der Intuition widersprechende Schlussweise gehört zu den faszinierenden Seiten der Mathematik. Diagonalargumente finden sich auch in grundlegenden Ergebnissen der Informatik und mathematischen Logik, etwa im [Halteproblem von Alan Turing](/de/p/halting-problem/) und in den [Unvollständigkeitssätzen von Gödel](/de/p/godels-incompleteness-theorems/).
+
+## Literatur
+
+- [MIT OpenCourseWare: Cantors Diagonalargument](https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/14b6f97b86d7978a595e402cc54d08d8_YIZd23zGV3M.pdf)
+- [Jindřich Zapletal: Elements of Set Theory](https://people.clas.ufl.edu/zapletal/files/notesset.pdf)
+- [CMU: 21-602 Introduction to Set Theory I](https://www.math.cmu.edu/~bwsulliv/21602lecturenotes.pdf)
