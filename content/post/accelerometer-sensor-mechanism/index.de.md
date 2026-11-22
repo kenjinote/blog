@@ -1,91 +1,51 @@
 ---
-title: "Wie Beschleunigungssensoren funktionieren: Wie Ihr Smartphone seine Neigung erkennt"
-description: "Federn und Gewichte in einer Mikrowelt erfassen Bewegungen."
+title: "Wie Beschleunigungssensoren funktionieren: MEMS, Schwerkraft und Neigung"
+description: "So arbeiten MEMS-Beschleunigungssensoren mit einer beweglichen Prüfmasse und kapazitiver oder piezoresistiver Erfassung – einschließlich der Grenzen bei Schwerkraft und Bewegung."
 date: "2026-10-01T21:47:14+09:00"
-slug: accelerometer-sensor-mechanism
+lastmod: 2026-11-23
+slug: "accelerometer-sensor-mechanism"
 categories: ["technology", "hardware"]
 tags: ["tech", "sensor", "mems", "hardware"]
-image: eyecatch.jpg
+image: "eyecatch.jpg"
+draft: false
 ---
 
-# Die erstaunliche Mikrowelt der Beschleunigungssensoren
+## Was ein Beschleunigungssensor misst
 
-Im modernen Leben ist es kaum noch vorstellbar, einen Tag ohne Smartphone zu verbringen. Neigt man den Bildschirm zur Seite, wird das Video im Vollbildmodus angezeigt, Schritte werden automatisch gezählt und in Spielen lassen sich Charaktere durch bloßes Neigen des Geräts steuern. Hinter all diesen praktischen Funktionen verbirgt sich ein kleines elektronisches Bauteil namens "Beschleunigungssensor" (Accelerometer).
+Beschleunigung ist die Änderung der Geschwindigkeit pro Zeit. Das zweite Newtonsche Gesetz $F=ma$ verknüpft die resultierende Kraft $F$ auf eine Masse $m$ mit ihrer Beschleunigung $a$. Ein Beschleunigungssensor erfasst die **spezifische Kraft** an einer winzigen inneren Masse und gibt einen beschleunigungsbezogenen Wert aus. Achsenrichtung und Vorzeichen hängen vom jeweiligen Bauteil ab.
 
-In diesem Artikel wird im Detail erklärt, auf welchen physikalischen Gesetzen dieser Beschleunigungssensor basiert und welche Mikrostrukturen (MEMS) verwendet werden, um unsere Bewegungen zu erfassen.
+Die spezifische Kraft ist keine direkte Messung der Schwerkraft. Liegt ein Smartphone auf einem Tisch, wird es vom Tisch abgestützt; der Sensor zeigt daher ungefähr $1g$ an (die Normfallbeschleunigung beträgt $9{,}80665\,\mathrm{m/s^2}$). Im freien Fall fehlt die Stützkraft nahezu, und ein idealer Beschleunigungssensor zeigt annähernd $0g$.
 
-## Was ist Beschleunigung? Grundlagen der Physik
+## Neigung aus der Schwerkraft schätzen
 
-Um die Funktionsweise des Beschleunigungssensors zu verstehen, muss man zunächst die physikalische Größe "Beschleunigung" genau verstehen. Wie das Newtonsche Bewegungsgesetz $F = ma$ (Kraft = Masse × Beschleunigung) zeigt, entsteht eine Beschleunigung, wenn eine Kraft auf einen Körper ausgeübt wird.
+Bei einem ruhenden oder langsam bewegten Gerät lässt sich die Neigung aus der Projektion des Schwerkraftvektors auf die drei Achsen schätzen. Ein Beschleunigungssensor allein kann die Schwerkraft jedoch nicht von einer Beschleunigung durch die lineare Bewegung des Geräts unterscheiden. Beschleunigungen und Vibrationen während der Bewegung verfälschen daher die Neigungsschätzung. Smartphones können Beschleunigungsdaten mit Gyroskop und Filterung kombinieren, um die Orientierung zu schätzen. Die Genauigkeit hängt von Bewegung und Algorithmus ab.
 
-Der Beschleunigungssensor berechnet die Beschleunigung indirekt, indem er genau diese "auf den Körper ausgeübte Kraft (Trägheitskraft)" misst.
+## Prüfmasse und Federn in einem MEMS
 
-### Auch die Schwerkraft ist eine Art der Beschleunigung
+Viele MEMS-Beschleunigungssensoren hängen eine winzige **Prüfmasse** an federähnlichen Aufhängungen auf. Beschleunigt sich der Chip, verschiebt sich die Masse aufgrund ihrer Trägheit relativ zum Rahmen und verformt die Aufhängungen. Der Sensor wandelt diese relative Verschiebung in ein elektrisches Signal um; die integrierte Schaltung bereitet es auf und verarbeitet es. Reale Bauteile enthalten Dämpfung und komplexere Strukturen – „Masse an einer Feder“ ist ein Grundmodell.
 
-Solange wir uns auf der Erde befinden, sind wir stets einer nach unten gerichteten Erdbeschleunigung (1G) von etwa $9.8 \, \mathrm{m/s^2}$ ausgesetzt. Der Beschleunigungssensor in einem ruhenden Smartphone erfasst diese Schwerkraft ebenfalls ständig.
+## Verschiebung in ein Signal umwandeln
 
-Wenn das Smartphone geneigt wird, lässt sich die genaue "Neigung" des Geräts berechnen, indem ermittelt wird, wie sich dieser 1G-Schwerevektor auf die drei Achsen (X, Y, Z) des Sensors verteilt.
+### Kapazitive Erfassung
 
-## Die Revolution der MEMS-Technologie (Mikroelektromechanische Systeme)
+Kapazitive Sensoren erkennen die Änderung der Kapazität zwischen einem beweglichen Teil und festen Elektroden. Für einen idealen Plattenkondensator gilt $C=\varepsilon A/d$, wobei $\varepsilon$ die Permittivität, $A$ die Überlappungsfläche und $d$ den Abstand bezeichnet. MEMS verwenden auch Geometrien wie ineinandergreifende Kammfinger, bei denen sich durch die Bewegung Abstand oder Überlappung ändern kann. Eine spezielle Schaltung wandelt die winzige Kapazitätsänderung in ein Signal um; manche Bauteile liefern digitale Werte.
 
-Frühere Beschleunigungssensoren waren sehr groß und teuer und konnten nur in Trägheitsnavigationssystemen von Raketen oder Flugzeugen eingesetzt werden. Dank der Fortschritte in der Halbleiterfertigungstechnologie seit den 1980er Jahren entstand jedoch die "MEMS (Micro Electro Mechanical Systems)"-Technologie.
+### Piezoresistive Erfassung
 
-Mithilfe der MEMS-Technologie wurde es möglich, winzige "mechanische Strukturen (Federn und Gewichte)" und "elektronische Schaltungen" auf einem Siliziumwafer zu integrieren. Die Beschleunigungssensoren in heutigen Smartphones haben mechanische Strukturen, die feiner als ein menschliches Haar sind und in einen wenige Quadratmillimeter großen Chip geätzt wurden.
+Piezoresistive Sensoren erfassen eine Widerstandsänderung, wenn die Beschleunigung einen Balken oder eine andere Struktur verformt. Eine Brückenschaltung kann die Änderung in eine Spannung umwandeln. Dieses Prinzip wird bei manchen Prüfsensoren für starke Stoßbelastungen eingesetzt. Die geeignete Messmethode hängt unter anderem von Messbereich, Bandbreite, Temperatur und Leistungsaufnahme ab; eine allgemein beste Methode gibt es nicht.
 
-## Die Mikrostruktur im Inneren des Sensors: Gewicht und Feder
+## Anwendungen
 
-Wenn man die innere Struktur eines MEMS-Beschleunigungssensors vereinfacht betrachtet, ergibt sich folgendes Modell:
+Beschleunigungssensoren unterstützen die Bildschirmdrehung, Gesten- und Schrittzählung, Bewegungserfassung in Spielen und VR sowie die Lageregelung von Drohnen und anderen Geräten. Sie werden auch bei der Erkennung von Fahrzeugkollisionen eingesetzt. Über das Auslösen eines Airbags entscheidet jedoch ein für das jeweilige Fahrzeug validiertes Steuerungssystem, nicht ein einzelner Sensor. Schrittzahl und Schlafmerkmale sind softwarebasierte Schätzungen, die unter anderem Beschleunigungsdaten nutzen.
 
-```mermaid
-graph TD
-    A["Fixierter äußerer Rahmen (Gehäuse)"] -->|Innenraum| B["Winzige Feder (Spring)"]
-    B --> C["Bewegliche Masse (Proof Mass / Gewicht)"]
-    C -.->|Verschiebung durch Beschleunigung| D["Mechanismus zur Verschiebungserkennung"]
-```
+### Quellen
 
-Wenn sich das Gerät mit dem Sensor (z. B. ein Smartphone) bewegt, bewegt sich der fixierte äußere Rahmen mit. Die innere "bewegliche Masse (Gewicht)" versucht jedoch aufgrund des Trägheitsgesetzes an Ort und Stelle zu bleiben. Infolgedessen dehnt sich die "Feder", die das Gewicht stützt, oder zieht sich zusammen, und die Position des Gewichts verschiebt sich relativ zum äußeren Rahmen (Verschiebung).
+- [STMicroelectronics: Funktionsweise von MEMS-Sensoren](https://www.st.com/content/st_com/en/support/learning/essentials-and-insights/mems/how-does-a-mems-sensor-work.html)
+- [Analog Devices: Neigung mit einem Beschleunigungssensor messen](https://www.analog.com/en/resources/app-notes/an-1057.html)
+- [Bosch Sensortec: Sensorfusion](https://www.bosch-sensortec.com/en/software-tools/software/sensor-fusion-software-bsx)
+- [Analog Devices: Beschleunigungssensoren und kapazitive Erfassung](https://www.analog.com/en/resources/technical-articles/accelerometer-and-gyroscopes-sensors-operation-sensing-and-applications.html)
+- [Analog Devices: Beschleunigungssensoren bei der Kollisionserkennung](https://www.analog.com/en/resources/product-faqs/adxl213.html)
 
-Indem diese "winzige Verschiebung" als elektrisches Signal ausgelesen wird, wird die Beschleunigung gemessen.
+Ein Beschleunigungssensor liefert beschleunigungsbezogene Daten entlang seiner Sensorachsen. Neigung und Bewegungszustände werden von Software aus diesen Daten und oft weiteren Sensoren abgeleitet.
 
-## Der Mechanismus zur Umwandlung von Verschiebung in ein elektrisches Signal
-
-Bei MEMS-Beschleunigungssensoren gibt es hauptsächlich zwei Methoden, um die winzige Verschiebung des Gewichts in ein elektrisches Signal umzuwandeln.
-
-### 1. Kapazitives Verfahren (Capacitive)
-
-Das kapazitive Verfahren wird heute am häufigsten in Smartphones und Konsumgütern eingesetzt.
-
-Bei diesem Verfahren sind sowohl am festen Rahmen als auch am beweglichen Gewicht winzige, kammförmige Elektroden abwechselnd angeordnet. Der Spalt zwischen diesen beiden Elektroden wirkt als Kondensator (Kapazität).
-
-```mermaid
-graph LR
-    E1["Feste Elektrode (Fixed Electrode)"] ---|Winziger Spalt| E2["Bewegliche Elektrode (Movable Electrode)"]
-    E2 --> |Bewegung| E3["Änderung der Kapazität (C)"]
-```
-
-Wenn eine Beschleunigung auftritt und sich das Gewicht bewegt, ändert sich der Abstand zwischen den Elektroden. Da die Kapazität (C) eines Kondensators umgekehrt proportional zum Abstand zwischen den Elektroden ist, ändert eine Abstandsänderung die Kapazität. Diese extrem kleine Kapazitätsänderung wird von einem integrierten, dedizierten Verarbeitungsschaltkreis (ASIC) verstärkt und als digitales Signal (z. B. über Kommunikationsprotokolle wie I2C oder SPI) ausgegeben.
-
-Es zeichnet sich durch seine Unempfindlichkeit gegenüber Temperaturschwankungen und einen sehr geringen Stromverbrauch aus und ist damit ideal für batteriebetriebene mobile Geräte.
-
-### 2. Piezoresistives Verfahren (Piezoresistive)
-
-Das piezoresistive Verfahren misst die Verschiebung als eine Änderung des Widerstandswerts. Auf dem Balken (dem Federteil), der das bewegliche Gewicht stützt, wird ein Material mit piezoresistivem Effekt (ein Phänomen, bei dem sich der elektrische Widerstand ändert, wenn es durch Krafteinwirkung verformt wird) - meist dotiertes Silizium - platziert.
-
-Wenn sich das Gewicht aufgrund von Beschleunigung bewegt und sich der Balken verbiegt, ändert sich der Widerstandswert des Piezowiderstands durch diese Dehnung. Dies wird durch eine Wheatstone-Brückenschaltung oder Ähnliches erkannt und als Spannungsänderung ausgelesen.
-
-Dieses Verfahren wird häufig in Anwendungen eingesetzt, bei denen sehr starke Stöße (hohe G-Kräfte) sofort gemessen werden müssen, beispielsweise bei Crashtest-Dummys oder Airbags in Autos.
-
-## Anwendungen von Beschleunigungssensoren in der modernen Gesellschaft
-
-Beschleunigungssensoren werden nicht nur in Smartphones, sondern in allen Bereichen der Gesellschaft eingesetzt.
-
-1. **Airbagsysteme in Autos**: Sie erkennen die plötzliche negative Beschleunigung (Verzögerung) im Moment einer Autokollision und lösen den Airbag mit einer Präzision im Millisekundenbereich aus. Da es hier um Menschenleben geht, ist eine extrem hohe Zuverlässigkeit erforderlich.
-2. **Gamecontroller und VR-Headsets**: In Kombination mit Gyrosensoren (Winkelgeschwindigkeitssensoren) ermöglichen sie ein präzises Tracking dreidimensionaler Bewegungen im Raum.
-3. **Drohnen (UAV)**: Durch ständige Überwachung der Neigung des Fluggeräts und Feinabstimmung der Motorleistung wird eine stabile Steuerung erreicht, die ein exaktes Stillstehen in der Luft (Schwebeflug) ermöglicht.
-4. **Gesundheitsgeräte**: Smartwatches und Fitness-Tracker verwenden sie, um Schritte zu zählen oder das Umdrehen im Schlaf zu erkennen. In jüngerer Zeit haben sie sich zu lebensrettenden Technologien entwickelt, etwa mit Funktionen, die einen "Sturz" bei älteren Menschen erkennen und einen Notruf absetzen.
-
-## Fazit
-
-Hinter der Fähigkeit des Smartphones in unserer Hand zu wissen, "wie es geneigt ist", verbirgt sich die Kristallisation der Newtonschen Mechanik, der Halbleiter-Mikrofertigungstechnologie (MEMS) und hochmoderner Analog-Digital-Wandlerschaltungen.
-
-Winzige Federn und Gewichte, die in der Mikrowelt schwingen, unterstützen auch heute noch unser digitales Leben. Es ist wahrlich ein Wunder der modernen Technik, dass solch hochentwickelte Sensoren dank technologischer Fortschritte günstig in großen Mengen produziert werden und in die Hände von Menschen auf der ganzen Welt gelangen.
+[PCB Piezotronics: Piezoresistive shock accelerometers](https://www.pcb.com/sensors-for-test-measurement/accelerometers/piezoresistive-shock)

@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "article": "加速度センサーの仕組み",
+  "frozenSourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://www.st.com/content/st_com/en/support/learning/essentials-and-insights/mems/how-does-a-mems-sensor-work.html",
+    "https://www.analog.com/en/resources/app-notes/an-1057.html",
+    "https://www.bosch-sensortec.com/en/software-tools/software/sensor-fusion-software-bsx",
+    "https://www.analog.com/en/resources/technical-articles/accelerometer-and-gyroscopes-sensors-operation-sensing-and-applications.html",
+    "https://www.analog.com/en/resources/product-faqs/adxl213.html",
+    "https://www.pcb.com/sensors-for-test-measurement/accelerometers/piezoresistive-shock",
+    "https://www.pcb.com/sensors-for-test-measurement/accelerometers/piezoresistive-shock"
+  ],
+  "findings": [
+    "Clarified that an accelerometer responds to specific force: a supported stationary device reads about 1g, while ideal free fall is near 0g.",
+    "Added the limitation that accelerometer-only data cannot separate gravity from linear acceleration; tilt estimation assumes gravity is the dominant stimulus, and fusion algorithms may use gyroscope data.",
+    "Replaced the oversimplified claim that capacitance always changes inversely with electrode gap; the ideal parallel-plate equation is shown with a note that MEMS geometries can change gap or overlap area.",
+    "Qualified piezoresistive and automotive crash-sensing examples; clarified that airbag deployment is determined by a validated vehicle control system.",
+    "Removed unsupported historical and size claims and restored the single original publication date 2026-10-01."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/accelerometer-sensor-mechanism/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "4494084a97bc09a9f993f362910df24ec33e58879bd73b66f8d123b4678c1cc3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    },
+    "post/accelerometer-sensor-mechanism/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "122609522674ac9df5bc47acc34b095b81eae7c6bab91042e972a7c61a4bbccc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    },
+    "post/accelerometer-sensor-mechanism/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "a02dc97c5258a6e7f2cc1c3935f8f93410c388504d82956b292ce920e4eb9522",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    },
+    "post/accelerometer-sensor-mechanism/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "ee970f87efb6296772ebbbca9977a5f9d35cadc836b3e8ef671f120e1649f7e4",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    },
+    "post/accelerometer-sensor-mechanism/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "8811715182e72709bc66ff7160494239303d86fac1b36d62b061ec3d005740cd",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    },
+    "post/accelerometer-sensor-mechanism/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "7168d6a15a11d5c065d543deb7ec8cf6ddc3f4bdabb94f1c842a0215fd2f1db1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    },
+    "post/accelerometer-sensor-mechanism/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "7416f0008b1509e7db30236fcccbc9ca089a6f5ed149194fb6d9df13537b5ef4",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    },
+    "post/accelerometer-sensor-mechanism/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "fc446bc8b893080f74ed40ef204350af1531bac2348a7ac1731ab32f186eb99a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    },
+    "post/accelerometer-sensor-mechanism/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "0f42d4324caf9b1e3d3aa520d09c83d5ecb336d4e661251a9af04dc766654c1f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    },
+    "post/accelerometer-sensor-mechanism/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "9d8838f98ac6a741a6c83d4791b1e82275621f396fa834f62018664f6c0fc99d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    },
+    "post/accelerometer-sensor-mechanism/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "64d3d25a531904b7948bdda8a477a9a710d3f8e9b5548cc7dd5122049bf005c5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    },
+    "post/accelerometer-sensor-mechanism/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/accelerometer-sensor-mechanism/index.md",
+      "sourceHash": "37f3906ef0c806fbc002e174a096e2740b5961f7f177fe94fbdbdbfc1512f218",
+      "translationHash": "63417d3b2fef25bfb319d7a5a94d2d9fcad7d7bb3148dddb752b93dc24ec0c3a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized article with the Japanese source: specific-force interpretation, supported rest versus free fall, gravity-based tilt assumptions, proof-mass displacement, both sensing methods, application limits, and the references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for acceleration, specific force, proof mass, MEMS, damping, capacitance, permittivity, piezoresistive sensing, bridge circuit, gyroscope, and sensor fusion."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked F=ma, standard gravity g0=9.80665 m/s^2, the near-1g supported-rest and near-0g free-fall examples, and the ideal parallel-plate capacitance equation C=epsilon A/d. Clarified that motion and gravity cannot be separated by an accelerometer alone."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six manufacturer/application sources from STMicroelectronics, Analog Devices, Bosch Sensortec, and PCB Piezotronics for MEMS structure, tilt assumptions, sensor fusion, capacitive sensing, automotive crash sensing, and high-shock piezoresistive sensors."
+        }
+      },
+      "summary": "Corrected the gravity and tilt explanation, qualified the sensing models and application claims, and added manufacturer references across the translations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No physical teardown or laboratory measurement of a specific smartphone sensor was performed.",
+        "Automotive safety-system behavior varies by vehicle; this article does not replace manufacturer service documentation."
+      ]
+    }
+  }
+}

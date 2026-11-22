@@ -1,89 +1,51 @@
 ---
-title: "How Accelerometers Work: How Your Smartphone Knows Its Tilt"
-description: "Microscopic springs and weights sense motion."
+title: "How Accelerometers Work: MEMS, Gravity, Tilt, and Motion"
+description: "See how a MEMS accelerometer uses a suspended proof mass, capacitive or piezoresistive sensing, and why gravity and linear motion can be difficult to separate."
 date: "2026-10-01T21:47:14+09:00"
-slug: accelerometer-sensor-mechanism
+lastmod: 2026-11-23
+slug: "accelerometer-sensor-mechanism"
 categories: ["technology", "hardware"]
 tags: ["tech", "sensor", "mems", "hardware"]
-image: eyecatch.jpg
+image: "eyecatch.jpg"
+draft: false
 ---
 
-# The Amazing Microscopic World of Accelerometers
+## What an accelerometer measures
 
-In modern life, it's hard to imagine spending a day without a smartphone. Tilt the screen sideways, and videos go full-screen; it automatically counts your steps, and in games, you can control characters just by tilting the device. Behind these convenient features hides a tiny electronic component called an "Accelerometer."
+Acceleration is the rate of change of velocity. Newton’s second law, $F=ma$, relates the net force $F$ on a mass $m$ to its acceleration $a$. An accelerometer senses **specific force** acting on a tiny internal mass and reports a value corresponding to acceleration. Axis direction and sign conventions vary by device.
 
-In this article, we will explain in detail the physical laws this accelerometer is based on, and the micro-structures (MEMS) it uses to capture our movements.
+Specific force is not a direct measurement of gravity itself. A phone resting on a desk is supported by the desk, so its accelerometer reads roughly $1g$ (standard gravity is $9.80665\,\mathrm{m/s^2}$). In free fall, the supporting force is nearly absent and an ideal accelerometer approaches $0g$.
 
-## What is Acceleration? Basics of Physics
+## Estimating tilt from gravity
 
-To understand how an accelerometer works, we must first accurately understand the physical quantity called "acceleration." As shown by Newton's equation of motion $F = ma$ (Force = Mass × Acceleration), acceleration occurs when a force is applied to an object.
+When a device is stationary or moving slowly enough, tilt can be estimated from how the gravity vector projects onto its three axes. But an accelerometer alone cannot distinguish gravity from acceleration caused by the device’s linear motion. Acceleration and vibration while moving can therefore corrupt a tilt estimate. Phones and other devices may combine accelerometer data with a gyroscope and filtering to estimate orientation. Accuracy depends on motion and the algorithm.
 
-The accelerometer indirectly calculates acceleration by measuring exactly this "force applied to an object (inertial force)."
+## A MEMS proof mass and springs
 
-### Gravity is Also a Type of Acceleration
+Many MEMS accelerometers suspend a tiny **proof mass** from spring-like supports. When the chip accelerates, inertia makes the mass shift relative to the frame, deforming the supports. The sensor converts this relative displacement into an electrical signal; onboard circuitry conditions and processes it. Real devices include damping and more complex structures, so “a mass on a spring” is a basic model.
 
-As long as we are on Earth, we are constantly subjected to a downward gravitational acceleration (1G) of about $9.8 \, \mathrm{m/s^2}$. The accelerometer inside a resting smartphone also constantly senses this gravity.
-When the smartphone tilts, by calculating how this 1G gravity vector is distributed across the sensor's 3 axes (X, Y, Z), it can accurately determine the device's "tilt."
+## Turning displacement into a signal
 
-## The Revolution of MEMS (Micro Electro Mechanical Systems) Technology
+### Capacitive sensing
 
-Accelerometers of the past were very large and expensive, only installed in things like inertial navigation systems of rockets and aircraft. However, with the advancement of semiconductor manufacturing technology since the 1980s, "MEMS (Micro Electro Mechanical Systems)" technology was born.
+Capacitive sensors detect a change in capacitance between a moving structure and fixed electrodes. For an ideal parallel-plate capacitor, $C=\varepsilon A/d$, where $\varepsilon$ is permittivity, $A$ is the overlapping area, and $d$ is the gap. MEMS designs also use geometries such as interdigitated comb fingers, where motion can change the gap or overlap. A dedicated circuit converts the tiny capacitance change into a signal; some devices provide digital output.
 
-Using MEMS technology, it became possible to integrate microscopic "mechanical structures (springs and weights)" and "electronic circuits" onto a silicon wafer. The accelerometer in current smartphones has mechanical structures finer than a human hair engraved inside a chip just a few millimeters square.
+### Piezoresistive sensing
 
-## Micro-structure Inside the Sensor: Weights and Springs
+Piezoresistive sensors detect a change in electrical resistance when acceleration strains a beam or another structure. A bridge circuit can convert that change into a voltage. This approach is used in some test sensors for high-shock measurements. The best sensing method depends on range, bandwidth, temperature, power, and other requirements; there is no universal winner.
 
-Simplifying the internal structure of a MEMS accelerometer gives a model like the following.
+## Where accelerometers are used
 
-```mermaid
-graph TD
-    A["Fixed Outer Frame (Package)"] -->|Internal Space| B["Microscopic Spring"]
-    B --> C["Movable Mass (Proof Mass / Weight)"]
-    C -.->|Displacement due to acceleration| D["Displacement Detection Mechanism"]
-```
+Accelerometers contribute to screen rotation, gesture and step estimates, motion tracking in games and VR, and attitude control in drones and other equipment. They are also used in automotive crash sensing, but airbag deployment is decided by a vehicle-specific, validated control system—not by a sensor alone. Step counts and sleep features are software estimates based in part on acceleration data.
 
-When the device carrying the sensor (like a smartphone) moves, the fixed outer frame moves with it. However, the internal "weight (movable mass)" tries to stay in place due to the law of inertia. As a result, the "spring" supporting the weight expands and contracts, causing the position of the weight to shift relatively to the outer frame (displacement).
+### References
 
-By reading this "microscopic shift" as an electrical signal, acceleration is measured.
+- [STMicroelectronics: How MEMS sensors work](https://www.st.com/content/st_com/en/support/learning/essentials-and-insights/mems/how-does-a-mems-sensor-work.html)
+- [Analog Devices: Using an accelerometer for tilt](https://www.analog.com/en/resources/app-notes/an-1057.html)
+- [Bosch Sensortec: Sensor fusion](https://www.bosch-sensortec.com/en/software-tools/software/sensor-fusion-software-bsx)
+- [Analog Devices: Accelerometer sensing and capacitive detection](https://www.analog.com/en/resources/technical-articles/accelerometer-and-gyroscopes-sensors-operation-sensing-and-applications.html)
+- [Analog Devices: Accelerometers and automotive crash sensing](https://www.analog.com/en/resources/product-faqs/adxl213.html)
 
-## How Displacement is Converted into Electrical Signals
+An accelerometer measures acceleration-related data along its sensor axes. Tilt and motion states are inferred by software from that output, often together with other sensors.
 
-In a MEMS accelerometer, there are two main methods for converting the microscopic shift (displacement) of the weight into an electrical signal.
-
-### 1. Capacitive Method
-
-Currently, the capacitive method is the most widely used in smartphones and consumer devices.
-
-In this method, microscopic electrodes shaped like comb teeth are arranged alternately on both the fixed frame side and the movable weight side. The gap between these two electrodes acts as a capacitor.
-
-```mermaid
-graph LR
-    E1["Fixed Electrode"] ---|Microscopic Gap| E2["Movable Electrode"]
-    E2 --> |Movement| E3["Change in Capacitance (C)"]
-```
-
-When acceleration is applied and the weight moves, the distance between the electrodes changes. Since the capacitance (C) of a capacitor is inversely proportional to the distance between the electrodes, the capacitance changes as the distance changes. This extremely minute change in capacitance is amplified by a built-in dedicated processing circuit (ASIC) and output as a digital signal (for example, communication protocols like I2C or SPI).
-
-Because it is highly resistant to temperature changes and consumes very little power, it is ideal for battery-powered mobile devices.
-
-### 2. Piezoresistive Method
-
-The piezoresistive method is a method of reading displacement as a change in resistance value. A material with a piezoresistive effect (a phenomenon where electrical resistance changes when deformed by applied force), mainly doped silicon, is placed on the beam (the spring part) that supports the movable weight.
-
-When the weight moves due to acceleration and the beam bends, the strain causes the resistance value of the piezoresistor to change. This is detected by something like a Wheatstone bridge circuit and read as a change in voltage.
-
-This method is often used in applications where it is necessary to instantaneously measure extremely large impacts (high G), such as dummy dolls for crash tests and automobile airbags.
-
-## Applications of Accelerometers in Modern Society
-
-Accelerometers are active not only in smartphones but in all aspects of society.
-
-1. **Automobile Airbag Systems**: They detect the rapid negative acceleration (deceleration) at the moment a car crashes, and deploy the airbag with millisecond accuracy. Since human lives are involved here, extremely high reliability is required.
-2. **Game Controllers and VR Headsets**: By combining them with a gyro sensor (angular velocity sensor), they accurately track 3D movements in space.
-3. **Drones (UAV)**: By constantly monitoring the tilt of the aircraft and fine-tuning the motor output, they achieve stable control to hover perfectly in mid-air.
-4. **Healthcare Devices**: They are also used in smartwatches and fitness trackers to count steps and detect tossing and turning during sleep. Recently, they have also evolved as life-saving technology, such as the function to detect "falls" in the elderly and make emergency calls.
-
-## Conclusion
-
-Behind the fact that the smartphone in our hands knows "how it is tilted" lies the culmination of Newtonian mechanics, semiconductor microfabrication technology (MEMS), and advanced analog-to-digital conversion circuits.
-Microscopic springs and weights swaying in the micro-world are supporting our digital lives today as well. The fact that such advanced sensors are mass-produced cheaply and delivered into the hands of people all over the world due to technological progress can truly be called a miracle of modern engineering.
+[PCB Piezotronics: Piezoresistive shock accelerometers](https://www.pcb.com/sensors-for-test-measurement/accelerometers/piezoresistive-shock)
