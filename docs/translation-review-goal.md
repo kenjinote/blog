@@ -892,3 +892,5 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 2026-11-23 Batch049: 七草粥記事を原文＋12翻訳で全文校閲。七草一覧のみでレシピがない不整合を補い、1月7日の人日行事、2〜3人分の基本手順、食用市販セット、野草の誤食注意を追加。仏の座をコオニタビラコ（*Lapsanastrum apogonoides*）に統一、独仏の無関係なJavaリンクを除去。MAFF・環境省・料理出典・Kewを照合。重複日付除去、2024-01-06維持、lastmodとカテゴリを修正。AI校閲台帳 current 600、未確認12,432、人確認0。AIのみ、調理実地検証なし。Batch049記録は`docs/translation-review/batch-049.json`。Batch048公開確認と全記事goal継続。
 
 - 2026-11-23 Batch048公開確認完了。CI run 45069493913／commit `441dd14ac79d2b0c36170bc940728b5b27870853` のbuildとdeploy成功。ジャズ記事の原文＋12翻訳、公開13ページでHTTP 200・title・description・canonical・lang/RTL・2022年公開日・lastmod・同一動画ID・14件hreflang先の検査を通過。
+
+- 2026-11-23 Batch050: HugoのMarkdown内raw HTML設定記事を原文＋12翻訳で校閲。旧「config.toml」限定の手順と旧公式URLを更新し、現行のYAML/TOML/JSON例、`unsafe` の既定値 `false`、信頼できないMarkdownに対するセキュリティ境界を明記。公式Hugoのmarkup設定・security model資料を照合。13版全ての設定例3形式を構文解析し同じ設定値になることを検証。重複日付を除去し公開日2023-01-17を保持、lastmod設定。全13言語のHugo minify build成功（618.7秒）、生成された対象13ページで各形式・日付・公式リンクを検査。AI校閲台帳 current 612、未確認12,420、人確認0。AIのみ。Hugo全バージョン実行試験・外部投稿のセキュリティ監査・人手校閲は未実施。Batch050記録は`docs/translation-review/batch-050.json`。CI run 45072337119の完了およびBatch049公開確認を待ってから次のpushへ進む。

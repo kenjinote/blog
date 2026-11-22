@@ -1,20 +1,45 @@
 ---
-title: 'HugoでHTMLタグを有効にする方法（config.tomlの設定）'
-date: "2026-09-24T19:44:38+09:00"
+title: "HugoでMarkdown内のHTMLを有効にする方法"
+date: "2023-01-17T19:20:32+09:00"
+lastmod: 2026-11-23
 slug: "HUGOでHTMLタグを使う"
-date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: '静的サイトジェネレータHugoのMarkdown記事内でHTMLタグを直接記述して使用できるようにする方法を解説します。config.tomlにmarkup.goldmark.rendererのunsafe設定を追加するだけで完了します。'
+description: "Hugo Goldmarkの設定でMarkdown内の生HTMLを表示する方法を、YAML・TOML・JSONの例とセキュリティ上の注意とともに説明します。"
 ---
 
-HUGOのデフォルトでは記事中のHTMLタグの使用ができなくなっていますが、config.tomlに下記の記述をするとできるようになります。
+HugoのMarkdownレンダラーGoldmarkは、既定ではMarkdown内の生HTMLを出力しません。必要な場合は、サイト設定の `markup.goldmark.renderer.unsafe` を `true` にします。現在のHugoはYAML、TOML、JSONの設定ファイルに対応しています。たとえば `hugo.yaml` では次のように書けます。
+
+```yaml
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+```
+
+TOMLの `hugo.toml` では次のとおりです。
 
 ```toml
 [markup.goldmark.renderer]
-    unsafe = true
+  unsafe = true
 ```
 
-参考: [Configure Markup](https://gohugo.io/getting-started/configuration-markup)
+JSONの `hugo.json` では次のように設定します。
+
+```json
+{
+  "markup": {
+    "goldmark": {
+      "renderer": {
+        "unsafe": true
+      }
+    }
+  }
+}
+```
+
+既定値は `false` です。`unsafe: true` はMarkdown内の生HTMLをそのまま出力できるようにしますが、Hugoが想定するコンテンツの信頼境界を弱めます。信頼できない投稿者や外部入力のMarkdownを処理するサイトでは有効にしないでください。自分で管理し、内容を確認できるファイルだけを扱う場合に限り、影響を理解したうえで使用してください。複雑なレイアウトにはショートコードやHTML形式のコンテンツが適する場合もあります。
+
+参考: [Configure markup](https://gohugo.io/configuration/markup/) · [Hugoのセキュリティモデル](https://gohugo.io/about/security/)

@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "article": "HugoでMarkdown内のHTMLを有効にする方法",
+  "frozenSourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://gohugo.io/configuration/markup/",
+    "https://gohugo.io/about/security/"
+  ],
+  "findings": [
+    "The old article claimed that config.toml was the only configuration file and linked to a retired documentation route. The current Hugo project configuration is hugo.yaml.",
+    "The official documentation says renderer.unsafe defaults to false, allows raw HTML in Markdown when true, and is unsafe unless the content is under the site owner’s control.",
+    "Restored the original publication date 2023-01-17 and removed the duplicate future date."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/HUGOでHTMLタグを使う/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "d75c6137e047adb575b5f803f2c273de263134acc00a000e332961bfb8ae8bc7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    },
+    "post/HUGOでHTMLタグを使う/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "0b8ba0cb12b1143ead14742907d31e5237bfe2bd6c3d3a528cfea8403c29b5b0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    },
+    "post/HUGOでHTMLタグを使う/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "ca0c345e492cbf9bd065ba3bafac4ca337156d0241e01d28a76b9971b3d95f0a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    },
+    "post/HUGOでHTMLタグを使う/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "53e9129f7dc1b32e00c1e373caa87f2f7daaafd7a99f320e99d9fd021fe029d2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    },
+    "post/HUGOでHTMLタグを使う/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "73e9c46a11d753fae6dde4297c9035ead6e3c79d8e1f56f66a38057be287ac05",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    },
+    "post/HUGOでHTMLタグを使う/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "87db9b0e907af97f2b2306f529634890de626acd7527699dc9db37017d0f2004",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    },
+    "post/HUGOでHTMLタグを使う/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "50f45eba306a4ccdadb1180e00b945ccee2b75f35b2816062f61b79ba9552295",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    },
+    "post/HUGOでHTMLタグを使う/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "7806c1d3fa0ad95aff2b04d1c2e55a744795269589871150ad8edd301dc43344",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    },
+    "post/HUGOでHTMLタグを使う/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "4c3534f3aea4d074a94d864161a7a92aa74d0636f70259eefb9faf0b042cf8f8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    },
+    "post/HUGOでHTMLタグを使う/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "2c5b4c90d418d07b1014f6f3d839cedb7bd87c9de06994181fe0fe04565a6574",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    },
+    "post/HUGOでHTMLタグを使う/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "6ce0d6068a3890203488e4e84f02233be569741909a8c3e1545ceab81dd5114d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    },
+    "post/HUGOでHTMLタグを使う/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOでHTMLタグを使う/index.md",
+      "sourceHash": "f4ec507ee4f5cfb944ff3905e00e0b6afd6790a4ca46ca079b9bb49f6075c5c6",
+      "translationHash": "cac0956c37f1b016e42e0066bd64fb5979f8bd6858c0c782186fbc3ab9ccea65",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized article with the Japanese source: Goldmark raw-HTML behavior, the default false value, YAML/TOML/JSON key path and examples, the trust-boundary warning, untrusted-input exclusion, and alternatives for complex layouts."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, Goldmark, Markdown, raw HTML, renderer.unsafe, configuration-format, shortcode, and content-trust terminology for consistency; removed obsolete config.toml-only framing."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical formulas or quantitative claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed all YAML, TOML, and JSON examples in this translation and confirmed they produce the same markup.goldmark.renderer.unsafe=true configuration."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the current official Hugo markup and security documentation URLs, included in this translation."
+        }
+      },
+      "summary": "Updated the translation to reflect Hugo’s current configuration formats and documented trust boundary; restored the original 2023 publication date and set the review lastmod.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Examples were syntax-parsed but not run through every Hugo version or site configuration.",
+        "No security audit of readers’ individual sites or contributed content was performed."
+      ]
+    }
+  }
+}

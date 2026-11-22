@@ -1,20 +1,45 @@
 ---
-title: 'How to Enable HTML Tags in Hugo (config.toml Settings)'
-date: "2026-09-24T19:44:38+09:00"
+title: "Allow Raw HTML in Hugo Markdown"
+date: "2023-01-17T19:20:32+09:00"
+lastmod: 2026-11-23
 slug: "HUGOでHTMLタグを使う"
-date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'We explain how to enable directly writing and using HTML tags within the Markdown articles of the static site generator Hugo. It is completed simply by adding the unsafe setting of markup.goldmark.renderer to config.toml.'
+description: "Learn how to enable raw HTML in Hugo Markdown with YAML, TOML, and JSON examples, plus the security trade-off and when not to enable it."
 ---
 
-By default, HUGO does not allow the use of HTML tags in articles, but you can enable them by adding the following to your config.toml.
+Hugo’s Goldmark Markdown renderer does not render raw HTML by default. If you need it, set `markup.goldmark.renderer.unsafe` to `true` in your site configuration. Hugo supports YAML, TOML, and JSON configuration files. For example, in `hugo.yaml`:
+
+```yaml
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+```
+
+In `hugo.toml`:
 
 ```toml
 [markup.goldmark.renderer]
-    unsafe = true
+  unsafe = true
 ```
 
-Reference: [Configure Markup](https://gohugo.io/getting-started/configuration-markup)
+Or in `hugo.json`:
+
+```json
+{
+  "markup": {
+    "goldmark": {
+      "renderer": {
+        "unsafe": true
+      }
+    }
+  }
+}
+```
+
+The default is `false`. Setting `unsafe: true` allows raw HTML in Markdown to pass through, weakening Hugo’s content trust boundary. Do not enable it when the site processes Markdown from untrusted contributors or external input. Use it only when you control and review the content, and understand the implications. For complex layouts, a shortcode or an HTML content file may be a better fit.
+
+References: [Configure markup](https://gohugo.io/configuration/markup/) · [Hugo’s security model](https://gohugo.io/about/security/)

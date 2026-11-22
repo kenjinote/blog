@@ -1,20 +1,45 @@
 ---
-title: 'Как включить HTML-теги в Hugo (настройки config.toml)'
-date: "2026-09-24T19:44:38+09:00"
+title: "Разрешить необработанный HTML в Markdown Hugo"
+date: "2023-01-17T19:20:32+09:00"
+lastmod: 2026-11-23
 slug: "HUGOでHTMLタグを使う"
-date: 2023-01-17T19:20:32+09:00
 tags: ["HUGO", "HTML"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Объясняется, как разрешить прямое написание и использование HTML-тегов в статьях Markdown в генераторе статических сайтов Hugo. Достаточно добавить настройку unsafe для markup.goldmark.renderer в файл config.toml.'
+description: "Узнайте, как разрешить необработанный HTML в Markdown Hugo: примеры YAML, TOML и JSON, риски безопасности и случаи, когда эту настройку не следует включать."
 ---
 
-По умолчанию в HUGO запрещено использование HTML-тегов в статьях, но если добавить следующий код в config.toml, это станет возможным.
+По умолчанию Markdown-рендерер Goldmark в Hugo не выводит необработанный HTML. Если это необходимо, задайте `markup.goldmark.renderer.unsafe: true` в конфигурации сайта. Hugo поддерживает файлы конфигурации YAML, TOML и JSON. Например, в `hugo.yaml`:
+
+```yaml
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+```
+
+В `hugo.toml`:
 
 ```toml
 [markup.goldmark.renderer]
-    unsafe = true
+  unsafe = true
 ```
 
-Ссылка: [Configure Markup](https://gohugo.io/getting-started/configuration-markup)
+Или в `hugo.json`:
+
+```json
+{
+  "markup": {
+    "goldmark": {
+      "renderer": {
+        "unsafe": true
+      }
+    }
+  }
+}
+```
+
+Значение по умолчанию — `false`. Параметр `unsafe: true` разрешает необработанному HTML из Markdown попадать в результат и ослабляет границу доверия к содержимому в Hugo. Не включайте его, если сайт обрабатывает Markdown от ненадёжных авторов или из внешних источников. Используйте настройку только для содержимого, которое вы контролируете и проверяете, понимая последствия. Для сложной разметки лучше подойдут шорткод или HTML-файл содержимого.
+
+Справка: [Настройка разметки](https://gohugo.io/configuration/markup/) · [Модель безопасности Hugo](https://gohugo.io/about/security/)
