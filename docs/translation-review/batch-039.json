@@ -473,13 +473,21 @@
       ]
     }
   },
-  "publicationPending": true,
-  "scope": "Japanese source and all12 translations read in full, corrected, hashed and recorded as AI review. Fresh 40-bundle static production preview passed all13 article HTML checks, global multilingual and HTTPS checks. Publication and live verification pending.",
+  "publicationPending": false,
+  "scope": "Japanese source and all12 translations read in full, corrected, hashed and recorded as AI review. 40-bundle static preview, global multilingual/HTTPS checks, CI build/deploy and live verification of all13 article pages passed. Follow-up: reduce the 2.64GB Pages artifact to keep future deploys within size guidance; all-article goal remains active.",
   "validation": {
     "record": "docs/translation-review/batch-039-r2-validation.json",
     "checkedAt": "2026-11-23T00:53:29.160054+09:00",
     "previewBundles": 40,
     "articlePages": 13,
     "allPassed": true
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-039.json",
+    "ciRun": 45040908092,
+    "deployedCommit": "0c319752800584a2c679c654a45847ff8510b1d4",
+    "livePagesChecked": 13,
+    "allPassed": true,
+    "artifactWarningBytes": 2642431601
   }
 }

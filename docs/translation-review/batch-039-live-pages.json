@@ -1,0 +1,267 @@
+{
+  "checkedAt": "2026-11-23T01:30:03.166007+09:00",
+  "allPassed": true,
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/ag03%E3%83%8E%E3%82%A4%E3%82%BA%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:27:52 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/ag03noise%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:27:59 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/ag03%E5%99%AA%E9%9F%B3%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:27:49 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/ag03%E9%9B%9C%E8%A8%8A%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:28:03 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/ag03ruido%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:27:43 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/ag03%EB%85%B8%EC%9D%B4%EC%A6%88%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:28:00 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/ag03ru%C3%ADdo%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:27:53 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/ag03bruit%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:27:49 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/ag03rauschen%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:27:52 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/ag03%E0%A4%B6%E0%A5%8B%E0%A4%B0%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:27:53 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/ag03kebisingan%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:27:44 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/ag03%D8%B6%D9%88%D8%B6%D8%A7%D8%A1%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:27:45 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/ag03%D1%88%D1%83%D0%BC%E8%A7%A3%E6%B6%88%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 16:27:50 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "officialReferencesPresent": true,
+        "staleMercariAdRemoved": true,
+        "archivedFaqRemoved": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true
+      },
+      "passed": true
+    }
+  ],
+  "scope": "Post-deployment HTTPS/HTTP verification of Japanese original plus all12 revised AG03 translations. Checks status, final URL, canonical, language/Arabic RTL, title, four official sources, removed obsolete embeds and all14 hreflang destinations. No browser-rendering, hardware-driver execution or human/native-speaker certification."
+}
