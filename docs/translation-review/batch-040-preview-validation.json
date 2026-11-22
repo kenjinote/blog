@@ -1,209 +1,456 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-23T01:45:35.155779+09:00",
+  "checkedAt": "2026-11-23T02:30:55.827511+09:00",
   "passed": true,
-  "build": "Hugo production/minified static preview of the complete 13-page article bundle",
+  "build": "Hugo production/minified build of both complete article bundles (26 localized pages).",
   "pages": [
     {
+      "batch": "batch-040",
       "lang": "ja",
-      "path": "p\\aistablediffusionを使ってイラスト画像生成する方法\\index.html",
       "url": "https://kenji.blog/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "en",
-      "path": "en\\p\\aistablediffusionを使ってillustrationimage-generationする方法\\index.html",
       "url": "https://kenji.blog/en/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6illustrationimage-generation%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "zh-cn",
-      "path": "zh-cn\\p\\aistablediffusionを使って插画图像生成する方法\\index.html",
       "url": "https://kenji.blog/zh-cn/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%8F%92%E7%94%BB%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "zh-tw",
-      "path": "zh-tw\\p\\aistablediffusionを使って插畫圖片生成する方法\\index.html",
       "url": "https://kenji.blog/zh-tw/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%8F%92%E7%95%AB%E5%9C%96%E7%89%87%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "es",
-      "path": "es\\p\\aistablediffusionを使ってilustracióngeneración-de-imágenesする方法\\index.html",
       "url": "https://kenji.blog/es/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6ilustraci%C3%B3ngeneraci%C3%B3n-de-im%C3%A1genes%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "ko",
-      "path": "ko\\p\\aistablediffusionを使って일러스트이미지-생성する方法\\index.html",
       "url": "https://kenji.blog/ko/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%83%9D%EC%84%B1%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "pt",
-      "path": "pt\\p\\aistablediffusionを使ってilustraçãogeração-de-imagemする方法\\index.html",
       "url": "https://kenji.blog/pt/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6ilustra%C3%A7%C3%A3ogera%C3%A7%C3%A3o-de-imagem%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "fr",
-      "path": "fr\\p\\aistablediffusionを使ってillustrationgénération-dimagesする方法\\index.html",
       "url": "https://kenji.blog/fr/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6illustrationg%C3%A9n%C3%A9ration-dimages%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "de",
-      "path": "de\\p\\aistablediffusionを使ってillustrationbilderzeugungする方法\\index.html",
       "url": "https://kenji.blog/de/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6illustrationbilderzeugung%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "hi",
-      "path": "hi\\p\\aistablediffusionを使ってचित्रणछवि-निर्माणする方法\\index.html",
       "url": "https://kenji.blog/hi/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%A3%E0%A4%9B%E0%A4%B5%E0%A4%BF-%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A4%BE%E0%A4%A3%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "id",
-      "path": "id\\p\\aistablediffusionを使ってilustrasipembuatan-gambarする方法\\index.html",
       "url": "https://kenji.blog/id/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6ilustrasipembuatan-gambar%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "ar",
-      "path": "ar\\p\\aistablediffusionを使ってرسم-توضيحيتوليد-الصورする方法\\index.html",
       "url": "https://kenji.blog/ar/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%D8%B1%D8%B3%D9%85-%D8%AA%D9%88%D8%B6%D9%8A%D8%AD%D9%8A%D8%AA%D9%88%D9%84%D9%8A%D8%AF-%D8%A7%D9%84%D8%B5%D9%88%D8%B1%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
       },
       "passed": true
     },
     {
+      "batch": "batch-040",
       "lang": "ru",
-      "path": "ru\\p\\aistablediffusionを使ってиллюстрациягенерация-изображенийする方法\\index.html",
       "url": "https://kenji.blog/ru/p/aistablediffusion%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%D0%B8%D0%BB%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
       "checks": {
-        "langMatches": true,
-        "oneCanonical": true,
-        "fourPrimaryRefs": true,
-        "codeUpdated": true,
-        "dateMetadata": true,
-        "hreflangGroup": true,
-        "pathMatchesLang": true
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "currentPipeline": true,
+        "refs": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "ja",
+      "url": "https://kenji.blog/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "en",
+      "url": "https://kenji.blog/en/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "es",
+      "url": "https://kenji.blog/es/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "ko",
+      "url": "https://kenji.blog/ko/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "pt",
+      "url": "https://kenji.blog/pt/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "fr",
+      "url": "https://kenji.blog/fr/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "de",
+      "url": "https://kenji.blog/de/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "hi",
+      "url": "https://kenji.blog/hi/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "id",
+      "url": "https://kenji.blog/id/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "ar",
+      "url": "https://kenji.blog/ar/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
+      },
+      "passed": true
+    },
+    {
+      "batch": "batch-041",
+      "lang": "ru",
+      "url": "https://kenji.blog/ru/p/how-programmers-survive-in-ai-era/",
+      "checks": {
+        "lang": true,
+        "canonical": true,
+        "hreflang14": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "unvalidatedFormulas": true,
+        "noAutomationProbability": true,
+        "allThreeDiagrams": true,
+        "preservedPublishDate": true
       },
       "passed": true
     }
   ],
-  "scope": "All 13 language pages checked for language attribute, unique canonical, localized title, four primary references, updated pipeline and embedding code, lastmod, 14 hreflang tags, and locale-specific canonical path.",
   "limitations": [
-    "One-article bundle preview, not a full-site build.",
-    "Notebook code not executed in a live Google Colab GPU runtime.",
-    "Static HTML review only; no browser/device rendering or human/native-speaker review."
+    "Two-bundle preview, not a full-site build.",
+    "No browser/device visual rendering.",
+    "The Stable Diffusion notebook was not run in a live GPU runtime.",
+    "AI review only; no human/native-speaker certification."
   ]
 }

@@ -1,6 +1,7 @@
 ---
 title: "How Should Programmers Survive in the AI Era?"
 slug: "how-programmers-survive-in-ai-era"
+lastmod: "2026-11-23"
 date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
@@ -11,11 +12,7 @@ tags: ["Career", "AI", "Future", "Programming"]
 
 # [How Should Programmers Survive in the AI Era?](https://kenji.blog/en/p/how-programmers-survive-in-ai-era/) The End of Coding and the Dawn of a New Engineering
 
-As of 2026, the field of software development is undergoing a period of unprecedented and dramatic change. Until just a few years ago, the concept of "AI writing code" was limited to the role of an "auxiliary tool" for programmers, such as generating boilerplate code or auto-completing functions at best. However, due to the astonishing evolution of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs), the situation has been fundamentally overturned. Modern AI is not just a "smart typewriter," but has transformed into an "autonomous junior engineer" capable of autonomously assembling an entire system in an instant, from front-end to back-end logic, database schema design, and even building [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipelines, given a requirements definition document.
-
-In such an era, how should we "programmers" or "software engineers" survive? As the economic value of the act of "writing code" itself rapidly deflates, a "coder" who merely knows the syntax of a specific programming language and is familiar with the APIs of a specific framework is rapidly being weeded out from the market.
-
-In this article, we will examine the survival strategy for programmers in the AI era in extreme detail from technical, mathematical, and philosophical perspectives. This is not merely a career theory, but a redefinition of the academic discipline of software engineering itself.
+AI assistants and coding agents can help with tasks such as code generation, research, and testing. They do not reliably build an entire production-ready system from a specification alone; accuracy and completion time depend on the task, environment, and review. Effects on jobs and demand cannot be predicted uniformly.
 
 ---
 
@@ -48,9 +45,11 @@ The era where developers operated [pointers](/en/p/c-language-pointers-memory-ma
 Let's quantitatively evaluate the productivity improvement brought about by AI using a mathematical model.
 Individual productivity in traditional software development, $P_{traditional}$, could be modeled as a linear combination of an individual's skill level $S$, domain experience $E$, and tool efficiency $T$.
 
+> This equation is a conceptual sketch, not an empirically validated or calibrated model.
+
 $$ P_{traditional} = c_1 \cdot S + c_2 \cdot E + c_3 \cdot T $$
 
-However, in modern development utilizing AI, the capability of AI, $A(t)$, acts as a "powerful multiplier (Leverage)" that amplifies human capabilities. Because AI capabilities grow exponentially over time $t$ (an AI version of [Moore's Law](/en/p/business-moores-law/)), productivity in the AI era, $P_{AI}(t)$, can be expressed by the following equation:
+The following equation is hypothetical; it is not empirical evidence of exponential AI growth or its relationship to productivity, and it cannot be used for forecasts.
 
 $$ P_{AI}(t) = \alpha \cdot S_{core} \cdot e^{\beta \cdot A(t)} $$
 
@@ -60,7 +59,7 @@ Here, each variable means the following:
 *   $A(t)$: The absolute capability of the AI model at time $t$ (number of parameters, context window, reasoning ability)
 *   $\beta$: A coefficient indicating how effectively AI tools can be utilized (the quality of prompt engineering and the refinement of collaborative workflows with AI)
 
-The important insight derived from this formula is that **in a world where $A(t)$ increases exponentially, traditional skills such as mere typing speed or memorization of a specific language have extremely little impact on overall productivity.** Instead, the coefficient $\beta$ to multiply the exponential growth of AI, and $S_{core}$, which is the domain that AI cannot cover, become the dominant factors determining an engineer's market value.
+Because this is not a validated model, it cannot establish the relative productivity or market value of particular skills. Their value must be assessed in the actual job and organization.
 
 ---
 
@@ -69,6 +68,8 @@ The important insight derived from this formula is that **in a world where $A(t)
 So, what kind of tasks will be automated, and what tasks will remain in human hands?
 The probability that a certain task $T$ will be completely automated by AI, $P_{auto}(T)$, can be formulated as follows:
 
+> This equation is a conceptual sketch, not an empirically validated or calibrated model.
+
 $$ P_{auto}(T) = 1 - \exp\left(-\lambda \cdot \frac{\text{Predictability}(T)}{\text{Complexity}(T) \times \text{Context Dependency}(T)}\right) $$
 
 *   $\text{Predictability}(T)$: The predictability of the task (how much of a pattern exists in past data)
@@ -76,7 +77,7 @@ $$ P_{auto}(T) = 1 - \exp\left(-\lambda \cdot \frac{\text{Predictability}(T)}{\t
 *   $\text{Context Dependency}(T)$: The strength of "implicit context (domain-specific knowledge or human relationships)" that the task depends on
 *   $\lambda$: The rate of technological advancement of AI
 
-Tasks with high predictability and low context dependency, such as writing API routing logic or creating a simple CRUD screen, will have $P_{auto} \approx 1$ and be almost completely automated. On the other hand, tasks with extremely high context dependency, such as "how to safely integrate a new microservice with an existing legacy system" or "how to design an authentication flow that satisfies the legal department's requirements without compromising the user experience," are difficult to automate.
+The expression has no measured inputs or calibrated scales, so $P_{auto}$ is not an actual probability. Assess automation and its effects by measuring outcomes and verification costs on bounded tasks.
 
 ---
 
@@ -100,7 +101,7 @@ graph LR
     H["Ethical Judgement / Responsibility"] --> Sub2
 ```
 
-AI surpasses humans in "local optimization." There is no way humans can compete with the speed and accuracy of writing a single function, a single class, or a single module. However, AI is extremely vulnerable to "global optimization" and "Missing Context."
+AI can improve efficiency on narrow tasks with clear requirements and verification, but accuracy and time savings vary by task and setting. AI and human strengths are not fixed boundaries; in practice, roles depend on context, verification, and accountability.
 
 Future programmers must change their roles from "workers who write code" to "architects who orchestrate the countless components generated by AI." Having a bird's-eye view of the entire system, where to draw microservice boundaries, how to resolve the trade-off between availability and consistency in the CAP theorem according to the business context, and how to control technical debt. These are highly intellectual tasks that can only be done by humans who understand the big picture and business goals.
 
@@ -123,7 +124,7 @@ Vague instructions (prompts) can only produce vague and fragile systems. The abi
 
 ## 6. The Overwhelming Advantage of Domain Knowledge
 
-Because AI has trained on open-source code and public documents from around the world, it is well-versed in general web technologies and algorithms. However, there is data that AI cannot access. That is "your company's unique business rules" and "domain knowledge deeply rooted in a specific industry (medical, financial, manufacturing, etc.)."
+Training data and accessible information vary by AI service. A model does not automatically know a company’s internal information; access depends on integrations and permissions. When sharing business context, check confidentiality and access controls, and have a domain expert verify the output.
 
 For example, suppose you are developing an electronic medical record system at a medical startup. AI knows "how to create a tabular UI in React" and the "general data structure of HL7 FHIR." However, it has not learned the tacit knowledge of "in what order doctors at a specific department of Hospital A view patient data, and what kind of UI can minimize the risk of medical errors."
 
@@ -134,6 +135,8 @@ In a world where technology itself becomes commoditized (general-purpose), the t
 ## 7. The "Trolley Problem" of Software Development: Who Takes Responsibility?
 
 As reliance on AI increases, we face serious philosophical and ethical issues. This is the problem of "where responsibility lies" in software engineering.
+
+Legal responsibility depends on jurisdiction, contracts, roles, and applicable regulation. Do not assume one job title always bears sole responsibility; consult qualified legal and domain experts for high-risk uses.
 
 If the code autonomously generated by AI causes a serious bug in a production environment, resulting in hundreds of millions of yen in losses for a company, or causes a malfunction in a life-critical medical system, who will take the responsibility? The company that developed the AI model? Or the engineer who input the prompt? You cannot "fire" or "arrest" AI.
 
@@ -168,6 +171,8 @@ sequenceDiagram
 
 More than the skill of "writing," humans need to push their skills of "Code Reading & Auditing (reading quickly and instantly spotting logical flaws)" to the limit. The importance of [Test-Driven Development](/en/p/test-driven-development-tdd-bdd/) (TDD) has increased even further in the AI era. Before letting AI write code, the mainstream approach will be for a human or another AI to write strict test code, and then have AI modify the code until it passes those tests.
 
+TDD is one useful option, but it is not optimal for every task, and passing tests alone does not guarantee correctness. Validate AI-generated changes with small diffs, independent tests, code review, and security checks.
+
 ---
 
 ## 9. Concrete Survival Strategy: What You Should Learn Starting Tomorrow
@@ -189,3 +194,8 @@ The automation of programming by AI does not mean the "death" of the programmer 
 Historically, when automated looms appeared, and when spreadsheet software (Excel) appeared, pessimism about jobs disappearing was rampant. However, the reality is that the dramatic increase in productivity created new demands, and more advanced jobs were born. The same thing will happen in the software world. By making it possible to "build systems cheaply," software will penetrate into every area that had not been IT-enabled before due to cost constraints, and the problems (What) that engineers should solve will expand infinitely.
 
 We programmers are now given the chance to evolve from craftsmen who write code to "orchestra conductors" who direct the mighty intelligence of AI. Instead of staying on the shore out of fear of the technological wave, let's ride that wave early and set sail on a journey to create larger, more valuable systems. The AI era is the era when "engineering" in the truest sense begins.
+
+## Further reading
+
+- [Google DORA 2025 State of AI-assisted Software Development](https://research.google/pubs/dora-2025-state-of-ai-assisted-software-development-report/)
+- [METR randomized trial of AI tools on software tasks (2025)](https://arxiv.org/abs/2507.09089)

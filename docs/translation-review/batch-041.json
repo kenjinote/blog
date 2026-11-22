@@ -1,0 +1,490 @@
+{
+  "version": 1,
+  "article": "AI時代のプログラマーはどう生き残るべきか",
+  "frozenSourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+  "reviewedAt": "2026-11-23",
+  "reviews": {
+    "post/AI時代のプログラマーはどう生き残るべきか/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "3c6e48a93eb05101c8925a931fe01251fce3e3849f0e66fe02ffcf4b8ffcb283",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "13f398fd34528287f31f58cb08ff3d5d0581aa52f49f0788cade1664a05e27fb",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "43472c951a6e2aad71946be18f5042660ab60259947591322f7d4f3d25fae22f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "6bcc0835e09010e7ec8635698df7be70fc4f795ba2a23a2e5e106722afbd9bcf",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "40a3a70ce94e5b1e2e0920c800667b8b7268f99838d8b0693e215ae7b2dbdb03",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "57831b3b72f68d3e0d4b66c9605f7c07598bda0b5946475133ede2210405815d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "ce4067b3406084a057778e7478b2fb97a216c1b42af6151ab84e92bb68772a56",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "0c15428d64195713f41fd80218b399f69fa104ac75bc9fb593316fba797aca62",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "158ce8bcdb22af8da6448b60664e68181702b53798fbc81a3e1c3ed8d8d20319",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "34e98277f382d416cc64d73eaaad452223e00a1ea9bf4dfc9449fe969ec2e6cf",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "21df01acef9b6a9c04238e5bb00d037c8c7968306e0671c66cd555d56345d577",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "0e0216763b8fbf1c782cce7913428a15214754e214df8bcc8a49aaab78ee0a6e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the Japanese argument and localized replacement passages across the full article bundle. Reframed AI capability, job-market, and productivity statements as task-dependent opinions rather than established facts; aligned all language versions on the same caveats and practical advice."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized terminology for AI assistants and coding agents, software productivity, automation, codebase context, domain knowledge, legal accountability, review, and tests."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Marked both productivity and automation equations as illustrative, unvalidated sketches; removed the unsupported formula-derived market-value and near-certain automation conclusions. No numeric derivation is claimed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the three Mermaid diagrams as article illustrations; they were retained, not executed as software. Hugo static build is used to ensure the article pages render."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and verified the primary Google DORA 2025 report and METR 2025 randomized-trial references. Existing article links were retained; their full destination set was not re-audited in this pass."
+        }
+      },
+      "summary": "Revised the full article bundle’s framing of AI developer productivity, automation, internal data, legal accountability, testing, and job-demand predictions; added bounded primary research evidence.",
+      "languageSpecificFindings": "Localized the introduction, equation caveats, non-empirical conclusions, AI/human capability boundary, data access conditions, legal-responsibility caveat, testing recommendation, and employment uncertainty. Preserved the original article structure and technical illustrations.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The unchanged prose was not independently retranslated line by line; this pass focused on the complete argument structure and the revised claims across all localized versions.",
+        "The DORA report is survey/qualitative evidence; the METR trial covers 16 experienced contributors, 246 mature-repository tasks, and early-2025 tools. Neither supports universal claims about every developer or tool.",
+        "No legal advice is provided; accountability varies by jurisdiction, contract, role, and applicable regulation.",
+        "The full-site translation-review goal remains active."
+      ]
+    }
+  },
+  "primarySources": [
+    {
+      "title": "Google DORA 2025 State of AI-assisted Software Development Report",
+      "url": "https://research.google/pubs/dora-2025-state-of-ai-assisted-software-development-report/",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "METR randomized trial: Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity",
+      "url": "https://arxiv.org/abs/2507.09089",
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "publicationPending": true,
+  "scope": "Revised the full Japanese article and localized matching passages in all 12 language versions; marked conceptual formulas as unvalidated, removed unsupported mathematical deductions and deterministic automation predictions, qualified developer-role, company-data, legal-accountability, testing, and labor-demand claims, and added current primary research references. One-bundle static preview and publication checks pending."
+}

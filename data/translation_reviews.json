@@ -4925,6 +4925,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-040.json",
       "evidenceHash": "54846c85be7657b29fc32690408428e665d0395005a707084b2c69f34c18730b"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.en.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "3c6e48a93eb05101c8925a931fe01251fce3e3849f0e66fe02ffcf4b8ffcb283",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "8ba36ddc566e51eda6cce503e3e94c8209bcefbdd176c10c2a0ad9a31ee91910"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.zh-cn.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "13f398fd34528287f31f58cb08ff3d5d0581aa52f49f0788cade1664a05e27fb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "698484a5bf148ef88fa24c59d7abff0a87138574c647d861e8df7efd36fe9291"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.es.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "43472c951a6e2aad71946be18f5042660ab60259947591322f7d4f3d25fae22f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "63209672ee2e08a325327177f13e4331b8f6bf3a4e796a68e6d6824a095f2869"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.ko.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "6bcc0835e09010e7ec8635698df7be70fc4f795ba2a23a2e5e106722afbd9bcf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "bc566071435d2a08b42178a6298a8dabfa15bffe31baa8b40034b6a98fda88fa"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.pt.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "40a3a70ce94e5b1e2e0920c800667b8b7268f99838d8b0693e215ae7b2dbdb03",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "1f8fb52b8810d86b76b7ec021a3e2e7e22d0abf9f3dc1b1e931b6f39fa80c049"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.zh-tw.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "57831b3b72f68d3e0d4b66c9605f7c07598bda0b5946475133ede2210405815d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "4827ce5ec3b7648f5ca1d9ec0fdbb727edd7d4c8290de4e9b833fbd2a51b268c"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.hi.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "ce4067b3406084a057778e7478b2fb97a216c1b42af6151ab84e92bb68772a56",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "2486300ec1cdd35a8e732f68c60764663a6b9a6f9d8b281e3df80d2da598aa9d"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.fr.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "0c15428d64195713f41fd80218b399f69fa104ac75bc9fb593316fba797aca62",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "1423f066389729f7be32e3c43ae8233cdd9694ffaadc9ad50a38f58c0b11e822"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.de.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "158ce8bcdb22af8da6448b60664e68181702b53798fbc81a3e1c3ed8d8d20319",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "34dfa56e8ac123393da70e2103253a618847572b3e85f412885c906314331294"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.ar.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "34e98277f382d416cc64d73eaaad452223e00a1ea9bf4dfc9449fe969ec2e6cf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "58c5fad340547e1827c0ef33602be46085ecb395eadd837641e30329de9f4444"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.ru.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "21df01acef9b6a9c04238e5bb00d037c8c7968306e0671c66cd555d56345d577",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "5699ef49fc143247cc571309517d9b18147f3cf665823bb3f8ebba3f0d931dd4"
+    },
+    "post/AI時代のプログラマーはどう生き残るべきか/index.id.md": {
+      "source": "post/AI時代のプログラマーはどう生き残るべきか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0df465ddeb40cc41e9e58a38644d19e1c9a9083f6a7506a156a76cc56150a577",
+      "translationHash": "0e0216763b8fbf1c782cce7913428a15214754e214df8bcc8a49aaab78ee0a6e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-041.json",
+      "evidenceHash": "6b30ca37c3be537c897b60edb680365e6d5c2870069689e1ebc332e837c31414"
     }
   }
 }

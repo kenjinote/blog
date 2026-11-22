@@ -1,6 +1,7 @@
 ---
 title: '¿Cómo deberían sobrevivir los programadores en la era de la IA?'
 slug: "how-programmers-survive-in-ai-era"
+lastmod: "2026-11-23"
 date: "2026-09-11T15:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
@@ -11,11 +12,7 @@ tags: ["Career", "AI", "Future", "Programming"]
 
 # ¿Cómo deberían sobrevivir los programadores en la era de la IA? El fin de la codificación y el amanecer de una nueva ingeniería
 
-En la actualidad, en 2026, el campo del desarrollo de software se encuentra en un período de cambio sin precedentes. Hasta hace unos pocos años, el concepto de "la IA escribe código" se limitaba a su papel como "herramienta auxiliar" para los programadores, como la generación de código boilerplate (código repetitivo) y el autocompletado de funciones en el mejor de los casos. Sin embargo, con la asombrosa evolución de los grandes modelos de lenguaje ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)), la situación ha dado un vuelco radical. La IA moderna no es simplemente una "máquina de escribir inteligente", sino que se ha transformado en un "ingeniero junior autónomo" con la capacidad de ensamblar instantánea y autónomamente sistemas completos, desde el frontend hasta la lógica del backend, el diseño del esquema de la base de datos e incluso la construcción de pipelines de [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/), con solo proporcionarle un documento de definición de requisitos.
-
-En una era así, ¿cómo deberíamos sobrevivir nosotros los "programadores" e "ingenieros de software"? A medida que el valor económico del acto mismo de "escribir código" se deflacta rápidamente, los "codificadores" que simplemente conocen la sintaxis (gramática) de un lenguaje de programación específico y están familiarizados con las API de un framework en particular están siendo rápidamente eliminados del mercado.
-
-En este artículo, analizaremos con extremo detalle las estrategias de supervivencia para los programadores en la era de la IA desde perspectivas técnicas, matemáticas y filosóficas. Esto no es solo una teoría sobre la carrera profesional, sino una redefinición de la disciplina de la ingeniería de software en sí misma.
+Los asistentes y agentes de programación con IA pueden ayudar en tareas como generar código, investigar y probar. No construyen de forma fiable un sistema completo listo para producción a partir de una especificación; la precisión y el tiempo dependen de la tarea, el entorno y la revisión. No se puede predecir de forma uniforme su efecto en el empleo y la demanda.
 
 ---
 
@@ -48,9 +45,11 @@ La era en la que los desarrolladores manipulaban [punteros](/es/p/c-language-poi
 Evaluemos cuantitativamente el aumento de productividad que aporta la IA utilizando un modelo matemático.
 La productividad individual $P_{traditional}$ en el desarrollo de software tradicional podría modelarse como una combinación lineal del nivel de habilidad individual $S$, la experiencia en el dominio $E$ y la eficiencia de las herramientas $T$.
 
+> Esta ecuación es un esquema conceptual, no un modelo validado ni calibrado empíricamente.
+
 $$ P_{traditional} = c_1 \cdot S + c_2 \cdot E + c_3 \cdot T $$
 
-Sin embargo, en el desarrollo moderno impulsado por IA, la capacidad de la IA $A(t)$ actúa como un "poderoso multiplicador (Multiplier)" que amplifica la capacidad humana. Dado que las capacidades de la IA crecen exponencialmente (la versión de IA de [la Ley de Moore](/es/p/business-moores-law/)) a lo largo del tiempo $t$, la productividad en la era de la IA $P_{AI}(t)$ se puede expresar mediante la siguiente ecuación:
+La ecuación siguiente es hipotética; no constituye evidencia empírica del crecimiento exponencial de la IA ni de su relación con la productividad, y no sirve para hacer previsiones.
 
 $$ P_{AI}(t) = \alpha \cdot S_{core} \cdot e^{\beta \cdot A(t)} $$
 
@@ -60,7 +59,7 @@ Aquí, cada variable significa lo siguiente:
 *   $A(t)$: Capacidad absoluta de los modelos de IA (recuento de parámetros, ventana de contexto, capacidad de razonamiento) en el momento $t$
 *   $\beta$: Coeficiente que indica la eficacia con la que se pueden aprovechar las herramientas de IA (calidad de la ingeniería de prompts o sofisticación de los flujos de trabajo colaborativos con la IA)
 
-La visión clave derivada de esta fórmula es que **en un mundo donde $A(t)$ aumenta exponencialmente, el impacto de las habilidades tradicionales, como la velocidad de escritura pura o la memorización de un lenguaje específico, en la productividad general se vuelve minúsculo**. En cambio, el coeficiente $\beta$ para aprovechar el crecimiento exponencial de la IA, y $S_{core}$, el área que la IA no puede cubrir, se convierten en los factores dominantes que determinan el valor de mercado de un ingeniero.
+Al no ser un modelo validado, esta fórmula no permite establecer la productividad ni el valor de mercado de ciertas habilidades. Su valor debe evaluarse en cada trabajo y organización.
 
 ---
 
@@ -69,6 +68,8 @@ La visión clave derivada de esta fórmula es que **en un mundo donde $A(t)$ aum
 Entonces, ¿qué tipo de tareas se automatizarán y qué tipo de tareas quedarán en manos de los humanos?
 La probabilidad $P_{auto}(T)$ de que una tarea determinada $T$ sea completamente automatizada por IA se puede formular de la siguiente manera:
 
+> Esta ecuación es un esquema conceptual, no un modelo validado ni calibrado empíricamente.
+
 $$ P_{auto}(T) = 1 - \exp\left(-\lambda \cdot \frac{\text{Predictability}(T)}{\text{Complexity}(T) \times \text{Context Dependency}(T)}\right) $$
 
 *   $\text{Predictability}(T)$: Previsibilidad de la tarea (cuántos patrones existen en los datos históricos)
@@ -76,7 +77,7 @@ $$ P_{auto}(T) = 1 - \exp\left(-\lambda \cdot \frac{\text{Predictability}(T)}{\t
 *   $\text{Context Dependency}(T)$: La fuerza del "contexto implícito (conocimiento específico del dominio o relaciones humanas)" del que depende la tarea
 *   $\lambda$: Tasa de progreso tecnológico de la IA
 
-Las tareas que son altamente predecibles y poco dependientes del contexto, como escribir el procesamiento de enrutamiento de una API o crear una pantalla CRUD simple, tienen un $P_{auto} \approx 1$ y estarán casi completamente automatizadas. Por otro lado, las tareas con una dependencia del contexto extremadamente alta, como "¿cómo integramos de manera segura los sistemas heredados existentes con los nuevos [microservicios](/es/p/microservices-architecture-bff-api-gateway/)?" o "¿cómo diseñamos un flujo de autenticación que satisfaga las demandas del departamento legal sin comprometer la experiencia del usuario?", son difíciles de automatizar.
+La expresión carece de datos medidos y escalas calibradas, por lo que $P_{auto}$ no es una probabilidad real. Evalúa la automatización midiendo resultados y costes de verificación en tareas acotadas.
 
 ---
 
@@ -100,7 +101,7 @@ graph LR
     H["Juicio Ético / Responsabilidad"] --> Sub2
 ```
 
-La IA supera a los humanos en la "optimización local". Los humanos no tienen ninguna posibilidad contra la velocidad y precisión con la que se escribe una sola función, una sola clase o un solo módulo. Sin embargo, la IA es muy vulnerable a la "optimización global" y al "contexto faltante (Missing Context)".
+La IA puede mejorar la eficiencia en tareas acotadas, con requisitos y verificación claros, pero la precisión y el ahorro de tiempo varían según la tarea y el contexto. Las fortalezas humanas y de la IA no forman fronteras fijas; el reparto depende del contexto, la verificación y la responsabilidad.
 
 Los programadores del futuro deben cambiar su papel de "trabajadores que escriben código" a "arquitectos que orquestan innumerables componentes generados por IA". Tener una visión general del sistema completo, dónde trazar los límites de los [microservicios](/es/p/microservices-architecture-bff-api-gateway/), cómo resolver el compromiso entre disponibilidad y consistencia en el Teorema CAP para adaptarlo al contexto del negocio, y cómo controlar la deuda técnica. Estos son trabajos intelectuales de alto nivel que solo pueden ser realizados por humanos que comprenden el panorama general y los objetivos del negocio.
 
@@ -123,7 +124,7 @@ Las instrucciones vagas (prompts) solo generarán sistemas vagos y frágiles. La
 
 ## 6. La ventaja abrumadora del conocimiento del dominio (Domain Knowledge)
 
-Dado que la IA se ha entrenado en código fuente abierto y documentos públicos de todo el mundo, está bien versada en tecnologías y algoritmos web generales. Sin embargo, hay datos a los que la IA no puede acceder. Esas son las "reglas de negocio específicas de tu empresa" y el "conocimiento del dominio profundamente arraigado en una industria específica (médica, financiera, manufacturera, etc.)".
+Los datos de entrenamiento y la información accesible varían según el servicio de IA. Un modelo no conoce automáticamente la información interna de una empresa; el acceso depende de las integraciones y los permisos. Al compartir contexto empresarial, comprueba la confidencialidad y los controles de acceso, y haz que un experto del dominio revise el resultado.
 
 Por ejemplo, supongamos que estás desarrollando un sistema de historia clínica electrónica en una startup médica. La IA sabe "cómo crear una interfaz de usuario tabular en React" y "la estructura de datos general de HL7 FHIR". Sin embargo, no ha aprendido el conocimiento tácito de "en un departamento médico específico del Hospital A, en qué orden ven los médicos los datos de los pacientes, y qué tipo de interfaz de usuario minimizaría el riesgo de errores médicos".
 
@@ -134,6 +135,8 @@ En un mundo donde la tecnología misma se mercantiliza (se convierte en un bien 
 ## 7. El "Problema del Tranvía" en el desarrollo de software: ¿Quién asume la responsabilidad?
 
 A medida que aumenta nuestra dependencia de la IA, nos enfrentamos a graves problemas filosóficos y éticos. Este es el problema de "dónde recae la responsabilidad" en la ingeniería de software.
+
+La responsabilidad legal depende de la jurisdicción, los contratos, las funciones y la normativa aplicable. No debe suponerse que un cargo siempre asume toda la responsabilidad; en usos de alto riesgo, consulta a especialistas legales y del dominio.
 
 Si el código generado de forma autónoma por la IA causa un error grave en un entorno de producción, lo que resulta en millones de dólares en pérdidas para una empresa, o si causa un mal funcionamiento en un sistema médico que afecta vidas humanas, ¿quién asume la responsabilidad? ¿La empresa que desarrolló el modelo de IA? ¿O el ingeniero que ingresó el prompt? No se puede "despedir" ni "arrestar" a la IA.
 
@@ -168,6 +171,8 @@ sequenceDiagram
 
 Los humanos necesitan perfeccionar al máximo la habilidad de "lectura rápida y detección instantánea de fallas lógicas (Code Reading & Auditing)" incluso más que la habilidad de "escribir". La importancia del [Desarrollo Guiado por Pruebas](/es/p/test-driven-development-tdd-bdd/) (TDD) es aún mayor en la era de la IA. El enfoque principal será que un humano u otra IA escriba código de prueba estricto antes de dejar que la IA escriba el código, y luego haga que la IA corrija el código hasta que pase las pruebas.
 
+El TDD es una opción útil, pero no es óptimo para todas las tareas y superar las pruebas no garantiza por sí solo la corrección. Valida los cambios generados por IA con modificaciones pequeñas, pruebas independientes, revisión de código y controles de seguridad.
+
 ---
 
 ## 9. Estrategia de supervivencia concreta: Qué aprender a partir de mañana
@@ -189,3 +194,8 @@ La automatización de la programación por parte de la IA no significa la "muert
 A lo largo de la historia, cuando apareció el telar automático o cuando apareció el software de hojas de cálculo (Excel), se extendió el pesimismo de que los trabajos desaparecerían. Sin embargo, la realidad es que a medida que la productividad mejoró drásticamente, se creó nueva demanda y nacieron trabajos más sofisticados. Lo mismo sucederá en el mundo del software. A medida que se vuelva posible "construir sistemas a bajo costo", el software penetrará en todas las áreas que antes no estaban informatizadas debido a los altos costos, y los problemas (What) que los ingenieros tendrán que resolver se expandirán infinitamente.
 
 A nosotros, los programadores, se nos da ahora la oportunidad de evolucionar de artesanos que escriben código a "directores de orquesta" que comandan la poderosa inteligencia de la IA. En lugar de quedarnos en la orilla temerosos de la ola tecnológica, vamos a montarla rápidamente y zarpar hacia un viaje para crear sistemas más grandes y valiosos. La era de la IA es exactamente la era en la que comienza la "ingeniería" en su verdadero sentido.
+
+## Lecturas recomendadas
+
+- [Google DORA 2025 State of AI-assisted Software Development](https://research.google/pubs/dora-2025-state-of-ai-assisted-software-development-report/)
+- [METR randomized trial of AI tools on software tasks (2025)](https://arxiv.org/abs/2507.09089)
