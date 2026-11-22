@@ -1,73 +1,42 @@
 ---
-title: '[Perbaikan Bootloop] Langkah Resmi untuk Pemulihan dan Inisialisasi Perangkat Lunak Perangkat Google Pixel'
-date: "2026-09-24T19:44:38+09:00"
+title: "Cara Memperbarui atau Menginstal Ulang Perangkat Lunak Pixel dengan Alat Resmi Google"
 slug: "Android(Google Pixel)端末のPulihkan手順"
-date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "Pemulihan", "Pemecahan Masalah"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"
 categories: ["programming"]
-description: 'Apakah Anda kesulitan dengan error fatal seperti Google Pixel yang terus restart atau terhenti di logo? Kami menjelaskan secara menyeluruh dan mudah dipahami langkah-langkah pemulihan dan inisialisasi perangkat lunak yang aman dan pasti menggunakan alat perbaikan resmi, serta poin-poin penting sebelum melakukannya.'
+description: "Panduan alat resmi Pixel Update and Software Repair, perangkat yang didukung, perbedaan Update dan Reinstall, serta risiko kehilangan data."
+date: "2025-02-28T01:20:41+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 ---
 
-# Langkah-langkah Pemulihan Perangkat Android (Google Pixel)
+# Memperbarui atau Menginstal Ulang Perangkat Lunak Pixel dengan Alat Resmi Google
 
-Jika perangkat Google Pixel Anda mengalami masalah sistem yang parah seperti "berulang kali memulai ulang (bootloop)", "macet di layar logo", atau "kinerja menjadi sangat tidak stabil", Anda dapat menggunakan alat resmi Google **"Pixel Update and Software Repair"** untuk memulihkan (memperbaiki) perangkat lunak perangkat secara aman melalui browser.
+> **Peringatan data penting (diperiksa 23 November 2026):** Alat Google menyediakan **Update** dan **Reinstall**. Update dapat memasang perangkat lunak terbaru tanpa reset pabrik. Reinstall mengembalikan ponsel ke setelan pabrik dan menghapus data. Cadangkan data dan pastikan Anda mengetahui kredensial Akun Google. Bantuan Google saat ini mencantumkan Pixel 4a dan yang lebih baru, termasuk Fold, sebagai perangkat yang didukung. Periksa kompatibilitas terbaru dan ikuti petunjuk alat.
 
-Artikel ini menjelaskan langkah-langkah spesifik dan poin-poin yang perlu diperhatikan secara rinci.
+[Pixel Update and Software Repair](https://pixelrepair.withgoogle.com/) adalah alat resmi Google untuk memperbarui atau menginstal ulang perangkat lunak Pixel yang didukung. Alat ini tidak menjamin semua masalah boot loop atau gagal menyala akan teratasi. Sebelum reset, coba [langkah pemecahan masalah resmi](https://support.google.com/pixelphone/answer/4582729): mulai ulang, periksa pembaruan Android, gunakan Mode Aman, dan periksa penyimpanan.
 
----
+## 1. Periksa dukungan perangkat
 
-## 1. Mengakses Alat Pemulihan
+Buka [alat resmi](https://pixelrepair.withgoogle.com/) untuk melihat opsi yang tersedia. Dukungan bisa berbeda menurut model dan wilayah; ikuti petunjuk terbaru pada alat dan [Bantuan Google](https://support.google.com/pixelphone/answer/4596836).
 
-Pertama, akses halaman alat perbaikan resmi berikut dari browser (disarankan Google Chrome atau Microsoft Edge) di PC (Windows atau Mac) Anda.
+## 2. Persiapan
 
-🔗 **[Situs Resmi Pixel Update and Software Repair](https://pixelrepair.withgoogle.com/carrier_selection)**
+- Jika ponsel masih berfungsi, cadangkan data penting dan pastikan Anda mengetahui sandi Akun Google serta kunci layar.
+- Siapkan komputer dan kabel USB yang mendukung transfer data; sambungkan langsung bila memungkinkan.
+- Untuk reset pabrik, panduan umum Google menyarankan baterai minimal 70%. Ikuti persyaratan berbeda yang ditampilkan alat.
+- Jika Windows tidak mengenali ponsel, lihat petunjuk resmi Google untuk [driver USB](https://developer.android.com/studio/run/win-usb) bila diperlukan.
 
-> **※Perhatian※**
-> Saat Anda menjalankan proses pemulihan, data di perangkat (foto, aplikasi, kontak, dll.) mungkin akan **sepenuhnya dihapus (diinisialisasi)** . Jika perangkat masih dapat dioperasikan, pastikan untuk mencadangkannya ke Google Drive atau sejenisnya terlebih dahulu.
+## 3. Sambungkan dan ikuti petunjuk di layar
 
----
+1. Buka [Pixel Update and Software Repair](https://pixelrepair.withgoogle.com/) di komputer.
+2. Jika diminta, matikan ponsel. Petunjuk saat ini menyebutkan menahan tombol daya dan volume naik.
+3. Tahan tombol daya dan volume turun bersama-sama sekitar 3 detik untuk masuk ke Fastboot. Jika petunjuk model berbeda, ikuti layar.
+4. Sambungkan lewat USB, pilih **Connect device**, pilih ponsel yang benar, lalu izinkan koneksi browser setelah memeriksa namanya.
+5. Pilih **Update** atau **Reinstall**. Update mungkin mempertahankan data. Reinstall mereset ponsel dan menghapus data, jadi pilih hanya setelah mencadangkan. Jangan cabut kabel selama proses berjalan.
 
-## 2. Persiapan Sebelum Pemulihan
-
-Untuk memastikan proses berjalan lancar, siapkan hal-hal berikut.
-
-1. **Mengisi Baterai**
-   Jika daya mati di tengah jalan, perangkat berisiko menjadi "bata" (rusak total). Pastikan baterai terisi minimal 50%, atau lebih baik jika terisi penuh.
-2. **Menyiapkan Kabel USB Asli**
-   Sangat disarankan untuk menggunakan kabel USB-C asli yang disertakan dengan perangkat untuk memastikan transfer data yang stabil.
-3. **(Jika Perlu) Menginstal Driver**
-   Jika menggunakan PC Windows, perangkat mungkin tidak dikenali dengan benar. Dalam hal ini, silakan instal [Google USB Driver](https://developer.android.com/studio/run/win-usb?hl=id) .
-
----
-
-## 3. Langkah-langkah Pemulihan Spesifik
-
-Setelah persiapan selesai, ikuti petunjuk di layar untuk melanjutkan pemulihan.
-
-### Step 1: Memilih Operator dan Menghubungkan Perangkat
-Saat Anda membuka situs tersebut, layar untuk memilih operator seluler akan muncul. Jika perangkat Anda bebas SIM atau tidak terikat dengan operator tertentu, pilih "Lainnya (Other)" atau serupa.
-Setelah itu, hubungkan PC dan perangkat Pixel menggunakan kabel USB.
-
-### Step 2: Masuk ke Rescue Mode (Fastboot Mode)
-Ikuti petunjuk di layar, mulai dari perangkat yang dimatikan, **tekan dan tahan tombol Daya dan tombol Volume Turun secara bersamaan** untuk memulai mode Fastboot (layar dengan latar belakang hitam dan ikon Android yang sedang berbaring).
-
-### Step 3: Mengenali Perangkat di PC
-Saat Anda mengklik tombol "Hubungkan perangkat" di browser, pop-up browser akan terbuka dan perangkat Pixel yang terhubung akan ditampilkan dalam daftar. Pilih perangkat target dan izinkan koneksi.
-
-### Step 4: Mengunduh dan Menginstal Perangkat Lunak
-Setelah perangkat dikenali, versi sistem operasi Android (firmware) yang optimal akan dipilih secara otomatis. Saat Anda mengklik "Instal", perangkat lunak akan diunduh ke PC dan proses penulisan (flashing) ke perangkat akan segera dimulai.
-
-> ⚠️ **Peringatan:** Selama proses ini, **jangan pernah mencabut kabel USB atau mematikan PC Anda.**
-
-### Step 5: Selesai dan Pengaturan Awal
-Jika bilah kemajuan mencapai 100% dan pesan "Selesai" muncul, pemulihan berhasil. Perangkat akan secara otomatis memulai ulang dan menampilkan layar pengaturan awal (layar "Halo") yang sama seperti saat pembelian.
-
----
+Jika alat gagal tersambung atau ponsel tetap tidak menyala, jangan ulangi instalasi. Lihat [bantuan resmi Google untuk Pixel](https://support.google.com/pixelphone/answer/4596836).
 
 ## Kesimpulan
 
-Alat perbaikan resmi Google Pixel adalah alat yang sangat baik yang memungkinkan Anda untuk melakukan flashing ulang firmware secara aman hanya dengan beberapa klik di browser, tanpa harus menjalankan perintah khusus (adb atau fastboot) secara langsung.
-
-Sebelum membawa perangkat yang bermasalah ke toko, cobalah langkah-langkah ini, karena mungkin dapat menyelesaikan masalah dengan mudah. Silakan jadikan ini sebagai referensi.
+Periksa petunjuk terbaru alat sebelum bertindak. Update dan Reinstall berdampak berbeda pada data; Reinstall menghapusnya. Cadangkan data dan pastikan kredensial akun sebelum reset.

@@ -1,73 +1,42 @@
 ---
-title: '[Réparation de Bootloop] Procédure officielle de restauration logicielle et de réinitialisation pour les appareils Google Pixel'
-date: "2026-09-24T19:44:38+09:00"
+title: "Mettre à jour ou réinstaller le logiciel d’un Pixel avec l’outil officiel de Google"
 slug: "Android(Google Pixel)端末のRestauration手順"
-date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "Restauration", "Dépannage"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"
 categories: ["programming"]
-description: 'Rencontrez-vous des erreurs graves telles que votre Google Pixel qui redémarre en boucle ou qui reste bloqué sur le logo ? Nous expliquons de manière approfondie et claire la procédure de restauration logicielle et de réinitialisation sécurisée et fiable de votre appareil à l''aide de l''outil de réparation officiel, ainsi que les précautions importantes avant l''exécution.'
+description: "Découvrez l’outil officiel Pixel Update and Software Repair, les appareils compatibles, la différence entre Update et Reinstall et les risques de perte de données."
+date: "2025-02-28T01:20:41+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 ---
 
-# Procédure de Restauration pour les Appareils Android (Google Pixel)
+# Mettre à jour ou réinstaller le logiciel d’un Pixel avec l’outil officiel de Google
 
-Si votre appareil Google Pixel rencontre de graves problèmes système tels que des "redémarrages en boucle (bootloop)", un "blocage sur l'écran du logo" ou un "fonctionnement extrêmement instable", vous pouvez réparer (restaurer) le logiciel de l'appareil de manière sécurisée via votre navigateur en utilisant l'outil officiel **"Pixel Update and Software Repair"** fourni par Google.
+> **Avertissement concernant les données (vérifié le 23 novembre 2026) :** L’outil de Google propose **Update** et **Reinstall**. Une mise à jour peut installer le logiciel récent sans réinitialiser le téléphone. Reinstall rétablit les paramètres d’usine et efface les données. Effectuez une sauvegarde et vérifiez les identifiants du compte Google utilisé sur le téléphone. L’aide actuelle de Google indique que les Pixel 4a et modèles ultérieurs, y compris Fold, sont compatibles. Vérifiez l’éligibilité et les consignes de l’outil avant de commencer.
 
-Dans cet article, nous expliquerons en détail les procédures spécifiques et les points d'attention.
+[Pixel Update and Software Repair](https://pixelrepair.withgoogle.com/) est l’outil officiel de Google pour mettre à jour ou réinstaller le logiciel des Pixel compatibles. Il ne garantit pas de résoudre tous les redémarrages en boucle ou problèmes de démarrage. Avant une réinitialisation, essayez les [étapes de dépannage officielles](https://support.google.com/pixelphone/answer/4582729) : redémarrage, recherche de mises à jour Android, mode sans échec et vérification du stockage.
 
----
+## 1. Vérifier la compatibilité
 
-## 1. Accéder à l'outil de restauration
+Ouvrez l’[outil officiel](https://pixelrepair.withgoogle.com/) et vérifiez les opérations proposées. La compatibilité peut varier selon l’appareil et la région ; suivez les informations actuelles de l’outil et de l’[aide officielle Google](https://support.google.com/pixelphone/answer/4596836).
 
-Tout d'abord, depuis le navigateur de votre PC (Windows ou Mac) (Google Chrome ou Microsoft Edge recommandé), accédez à la page officielle de l'outil de réparation suivante :
+## 2. Se préparer
 
-🔗 **[Site officiel Pixel Update and Software Repair](https://pixelrepair.withgoogle.com/carrier_selection)**
+- Si le téléphone fonctionne encore, sauvegardez les données importantes et vérifiez le mot de passe du compte Google ainsi que le code de verrouillage.
+- Utilisez un ordinateur et un câble USB compatible avec le transfert de données ; branchez directement si possible.
+- Pour une réinitialisation d’usine, les consignes générales de Google recommandent une charge d’au moins 70 %. Suivez toute consigne différente de l’outil.
+- Si Windows ne reconnaît pas le téléphone, consultez au besoin la procédure officielle Google pour le [pilote USB](https://developer.android.com/studio/run/win-usb).
 
-> **※ Attention ※**
-> Lors de l'exécution du processus de restauration, les données de l'appareil (photos, applications, contacts, etc.) peuvent être **entièrement effacées (réinitialisées)** . Si l'appareil est encore utilisable, assurez-vous d'effectuer une sauvegarde sur Google Drive ou autre au préalable.
+## 3. Connecter et suivre les instructions à l’écran
 
----
+1. Ouvrez [Pixel Update and Software Repair](https://pixelrepair.withgoogle.com/) sur l’ordinateur.
+2. Si l’outil le demande, éteignez le téléphone. Les consignes actuelles indiquent de maintenir Marche/Arrêt et Volume haut.
+3. Maintenez Marche/Arrêt et Volume bas environ 3 secondes pour ouvrir le mode Fastboot. Si les indications diffèrent selon le modèle, suivez l’écran.
+4. Connectez par USB, cliquez sur **Connect device**, sélectionnez le bon téléphone et autorisez le navigateur après avoir vérifié son nom.
+5. Choisissez **Update** ou **Reinstall**. Update peut préserver les données. Reinstall réinitialise l’appareil et efface les données : choisissez cette option uniquement après une sauvegarde. Ne débranchez pas le câble pendant le traitement.
 
-## 2. Préparation avant la restauration
-
-Pour que le processus se déroule sans problème, préparez les éléments suivants :
-
-1. **Chargement de la batterie**
-   Si l'appareil s'éteint en cours de processus, il risque de se briquer (devenir complètement inutilisable). Assurez-vous d'avoir au moins 50 % de batterie, voire une charge complète.
-2. **Utilisation du câble USB d'origine**
-   Pour assurer un transfert de données stable, il est fortement recommandé d'utiliser le câble USB-C d'origine fourni avec l'appareil.
-3. **Installation des pilotes (si nécessaire)**
-   Si vous utilisez un PC Windows, l'appareil peut ne pas être reconnu correctement. Dans ce cas, veuillez installer les [Pilotes USB Google](https://developer.android.com/studio/run/win-usb?hl=fr).
-
----
-
-## 3. Étapes de restauration spécifiques
-
-Une fois prêt, suivez les instructions à l'écran pour procéder à la restauration.
-
-### Étape 1 : Sélection de l'opérateur et connexion de l'appareil
-Lors de l'ouverture du site, un écran de sélection de l'opérateur de téléphonie mobile s'affiche en premier. S'il s'agit d'un appareil débloqué ou sans restriction d'opérateur, sélectionnez "Autre (Other)", etc.
-Ensuite, connectez le PC et l'appareil Pixel à l'aide d'un câble USB.
-
-### Étape 2 : Mettre l'appareil en "Mode de Secours (Mode Fastboot)"
-Suivez les instructions à l'écran, et avec l'appareil éteint, **maintenez enfoncés simultanément le bouton d'alimentation et le bouton de réduction du volume** pour lancer le mode Fastboot (un écran noir avec un robot Android couché).
-
-### Étape 3 : Faire reconnaître l'appareil par le PC
-En cliquant sur le bouton "Connecter l'appareil" dans le navigateur, une fenêtre pop-up s'ouvrira avec la liste des appareils Pixel connectés. Sélectionnez l'appareil cible et autorisez la connexion.
-
-### Étape 4 : Téléchargement et installation du logiciel
-Une fois l'appareil reconnu, la version optimale du système d'exploitation Android (firmware) sera automatiquement sélectionnée. En cliquant sur "Installer", le logiciel sera téléchargé sur le PC, et l'écriture (flash) sur l'appareil commencera.
-
-> ⚠️ **Avertissement :** Pendant ce processus, **ne débranchez jamais le câble USB et n'éteignez pas le PC.**
-
-### Étape 5 : Achèvement et configuration initiale
-Lorsque la barre de progression atteint 100 % et que le message "Terminé" s'affiche, la restauration est réussie. L'appareil redémarrera automatiquement et l'écran de configuration initiale (l'écran "Bonjour"), identique à celui de l'achat, s'affichera.
-
----
+Si l’outil ne se connecte pas ou si le téléphone ne démarre toujours pas, ne répétez pas l’installation. Consultez l’[aide officielle Google pour Pixel](https://support.google.com/pixelphone/answer/4596836).
 
 ## Résumé
 
-L'outil de réparation officiel du Google Pixel est un excellent outil qui vous permet de flasher des firmwares en toute sécurité par de simples clics dans un navigateur, sans avoir à exécuter directement des commandes spéciales (adb ou fastboot).
-
-Avant d'apporter votre appareil dans une boutique en raison d'un dysfonctionnement, essayer cette procédure peut facilement résoudre le problème. N'hésitez pas à l'essayer.
+Consultez les consignes actuelles de l’outil et de Google avant d’agir. Update et Reinstall n’ont pas le même effet sur les données ; Reinstall les efface. Sauvegardez et vérifiez les identifiants avant toute réinitialisation.

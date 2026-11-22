@@ -1,0 +1,490 @@
+{
+  "version": 1,
+  "article": "Android(Google Pixel)端末の復元手順",
+  "frozenSourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+  "reviewedAt": "2026-11-23",
+  "reviews": {
+    "post/Android(Google Pixel)端末の復元手順/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "c8d6108830078e80d647d33875e851a6763521789cce4dbea45954419bd98046",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "6070ce6cddaf67aefb293e557621a5209ee7415a48dd270091616d46b1e88058",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "e987cf512916af6afa87917aa72a44d4190f0de05585145b77afa218727bc512",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "598eee5cb0b5f1657b87c82d96b800ddd59b9d5394551b8b612edec438e7fca0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "32b0c9def17918f4c3cfb8e7f4454fb89e7568477f8c0dd08e87ec8560595e6a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "335beff67fc0ee7a40b89e40790f416d1fc32542bdb84fb8692127b5ce74b8e9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "0492e9841457c1ca2eb84974de61496ef944e2511a950c0d164464cdd71464e9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "ccd9ff4f1338827e7bd6d2bc0bbc81cf846a24aa0f25d1a26bcd9a45616c8191",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "2190ecf1129e18856c662c50478fb843011dc4580aaa89f6c7c7a0c1e1e8db2e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "2283ea2d7f0e4ac2bc3e5e7cf1f36268e849c990f77bed266281e93028a82016",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "ea72d61913f401d02ebc3c838a578ed5495e685f960b2feca6c9172f62f9f275",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "7ba922fe1ce50516a177026c7b6e1bd848c7d08c79232bbe32a4b6d64d8001fe",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full guide with the corrected Japanese source. Rewrote the complete procedure to match current Google guidance, distinguishing an Update that may avoid a factory reset from Reinstall, which resets the phone and erases data. The supported-device scope, account/back-up preparation, Fastboot connection flow, and troubleshooting limits are localized."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and interface labels for Pixel Update and Software Repair, Update, Reinstall, Fastboot, USB data transfer, Google Account credentials, and factory reset."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The guide contains no mathematical formulas or research claims. The 70% charge recommendation is attributed to Google’s general factory-reset guidance."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains no executable code. The Power/Volume button combinations and browser connection steps are procedural UI instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official Google links for the repair tool, Pixel reset help, restart/crash troubleshooting, and Google USB driver instructions."
+        }
+      },
+      "summary": "Rewrote the localized recovery guide around Google’s current Update/Reinstall choices, explicitly warned that Reinstall erases data, and updated device support, preparation, Fastboot, USB, and troubleshooting guidance.",
+      "languageSpecificFindings": "Kept the official English UI labels in the localized instructions and translated the safety warnings and recovery steps. The localized prose was reviewed by AI and is not native-speaker certified.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "No physical Pixel device, browser connection, firmware update, or factory reset was performed.",
+        "Supported devices and the tool UI can change; readers are directed to the current official tool and help pages.",
+        "The all-article translation-review goal remains active."
+      ]
+    }
+  },
+  "primarySources": [
+    {
+      "title": "Google Pixel Update and Software Repair",
+      "url": "https://pixelrepair.withgoogle.com/",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Google Pixel factory reset help",
+      "url": "https://support.google.com/pixelphone/answer/4596836",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Google Pixel restart/crash troubleshooting",
+      "url": "https://support.google.com/pixelphone/answer/4582729",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Google USB Driver for Windows",
+      "url": "https://developer.android.com/studio/run/win-usb",
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "publicationPending": true,
+  "scope": "Updated the Japanese recovery article and rewrote all 12 translations against current official Google documentation. Clarifies Pixel 4a+ including Fold support; separates Update (may avoid factory reset) from Reinstall (factory reset and data erasure); corrects the live tool flow, Fastboot steps, general 70% reset charge guidance, backup/account preparation, and lower-risk troubleshooting. Full Hugo production build and 13-page static preview checks passed; no physical device testing.",
+  "validation": "docs/translation-review/batch-045-preview-validation.json",
+  "localPreviewPassed": true
+}

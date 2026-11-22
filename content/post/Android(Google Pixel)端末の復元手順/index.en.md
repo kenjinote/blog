@@ -1,73 +1,42 @@
 ---
-title: '[Bootloop Fix] Official Steps for Software Restoration and Initialization of Google Pixel Devices'
-date: "2026-09-24T19:44:38+09:00"
+title: "How to Update or Reinstall Pixel Software with Google's Official Tool"
 slug: "Android(Google Pixel)端末のRestore手順"
-date: 2025-02-28T01:20:41+09:00
 tags: ["Android", "Google Pixel", "Restore", "Troubleshooting"]
 draft: false
 image: "pixel_restore_eyecatch_1788588727945.webp"
 categories: ["programming"]
-description: 'Are you troubled by serious errors such as your Google Pixel repeatedly restarting or getting stuck on the logo? We thoroughly and clearly explain the official procedure for safe and reliable device software restoration and initialization using the official repair tool, as well as important precautions before execution.'
+description: "Use Google's Pixel Update and Software Repair tool, check supported devices, understand the difference between Update and Reinstall, and avoid accidental data loss."
+date: "2025-02-28T01:20:41+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 ---
 
-# Android (Google Pixel) Device Restoration Procedure
+# Update or Reinstall Pixel Software with Google's Official Tool
 
-If your Google Pixel device experiences severe system issues such as "repeatedly restarting (boot loop)," "stuck on the logo screen," or "extremely unstable operation," you can safely repair (restore) the device's software via a browser using the official **"Pixel Update and Software Repair"** tool provided by Google.
+> **Important data-loss note (checked November 23, 2026):** Google's tool offers **Update** and **Reinstall**. An update may install the latest software without a factory reset. Reinstall resets the phone and erases its data. Back up first and confirm the Google Account credentials used on the phone. Google's current help lists Pixel 4a and later, including Fold, as supported. Check current eligibility and the tool's on-screen instructions before proceeding.
 
-This article details the specific steps and precautions for this process.
+[Pixel Update and Software Repair](https://pixelrepair.withgoogle.com/) is Google's official tool to update or reinstall software on supported Pixel devices. It cannot guarantee that every boot loop or startup problem will be fixed. Before a reset, try Google's [official troubleshooting steps](https://support.google.com/pixelphone/answer/4582729), such as restarting, checking Android updates, using Safe Mode, and checking storage.
 
----
+## 1. Check device support
 
-## 1. Access the Restoration Tool
+Open the [official tool](https://pixelrepair.withgoogle.com/) and check the operations available for your device. Eligibility and options can vary by model and region; follow the tool and [Google Help](https://support.google.com/pixelphone/answer/4596836).
 
-First, from a browser (Google Chrome or Microsoft Edge recommended) on your PC (Windows or Mac), access the official repair tool page below.
+## 2. Prepare
 
-🔗 **[Pixel Update and Software Repair Official Site](https://pixelrepair.withgoogle.com/carrier_selection)**
+- If the phone works, back up important data and confirm the Google Account password and screen-lock credentials.
+- Use a computer and a USB cable that supports data transfer. Connect directly to the computer when possible.
+- For a factory reset, Google's general instructions recommend charging to at least 70%. Follow any different requirement shown by the tool.
+- If Windows does not recognize the phone, consult Google's official [USB driver instructions](https://developer.android.com/studio/run/win-usb) if needed.
 
-> **※ Note ※**
-> Executing the restoration process may **completely erase (initialize)** the data on your device (photos, apps, contacts, etc.). If the device is still operable, be sure to back up your data to Google Drive or elsewhere beforehand.
+## 3. Connect and follow the on-screen flow
 
----
+1. Open [Pixel Update and Software Repair](https://pixelrepair.withgoogle.com/) on your computer.
+2. If prompted, turn off the phone. The current tool instructions say to hold Power and Volume Up to turn it off.
+3. Hold Power and Volume Down together for about 3 seconds to enter Fastboot mode. Follow the screen if steps differ for your model.
+4. Connect the phone by USB, choose **Connect device**, select the correct phone, and approve the browser connection after checking its name.
+5. Choose **Update** or **Reinstall**. An update may preserve data. Reinstall is a factory reset that erases data, so choose it only after backing up. Do not disconnect the cable while the tool says the operation is in progress.
 
-## 2. Preparations for Restoration
-
-To ensure the process goes smoothly, make the following preparations:
-
-1. **Charge the Battery**
-   If the power turns off midway, the device could be bricked (completely broken). Charge it to at least 50%, or preferably fully charged.
-2. **Prepare a Genuine USB Cable**
-   To ensure stable data transfer, it is strongly recommended to use the genuine USB-C cable included with the device.
-3. **Install Drivers (If Necessary)**
-   When using a Windows PC, the device may not be recognized correctly. In that case, please install the [Google USB Driver](https://developer.android.com/studio/run/win-usb?hl=en).
-
----
-
-## 3. Specific Restoration Steps
-
-Once preparations are complete, follow the on-screen instructions to proceed with the restoration.
-
-### Step 1: Select Carrier and Connect the Device
-When you open the site, a screen to select your telecommunications carrier will appear. If you have a SIM-free version or are not tied to a carrier, select "Other".
-Then, connect your PC and Pixel device using a USB cable.
-
-### Step 2: Put the Device into "Rescue Mode (Fastboot Mode)"
-Following the on-screen instructions, from a powered-off state, **press and hold the "Power button" and "Volume Down button" simultaneously** to launch Fastboot mode (a screen with an Android mascot lying down on a black background).
-
-### Step 3: Recognize the Device on the PC
-Click the "Connect your phone" button on the browser, and a pop-up will open listing the connected Pixel devices. Select the target device and allow the connection.
-
-### Step 4: Download and Install Software
-Once the device is recognized, the optimal version of the Android OS (firmware) will automatically be selected. When you click "Install", the software will be downloaded to your PC, and it will begin writing (flashing) to the device.
-
-> ⚠️ **Warning:** During this process, ** absolutely do not unplug the USB cable or turn off the PC.**
-
-### Step 5: Completion and Initial Setup
-The restoration is successful when the progress bar reaches 100% and a completion message is displayed. The device will automatically restart and display the same initial setup screen ("Hello" screen) as when it was purchased.
-
----
+If the tool cannot connect or the phone still will not start, do not keep repeating installs. Follow Google's [official Pixel support instructions](https://support.google.com/pixelphone/answer/4596836).
 
 ## Summary
 
-The official Google Pixel repair tool is an extremely excellent tool that allows you to safely reflash the firmware with just a few clicks in the browser, without needing to directly run special commands (like adb or fastboot).
-
-Before taking a malfunctioning device to a repair shop, trying this procedure once might easily solve the problem. Please use this as a reference.
+Check the current tool and Google Help before acting. Update and Reinstall affect data differently; Reinstall erases it. Back up and confirm account credentials before a reset.

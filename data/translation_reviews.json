@@ -5405,6 +5405,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-044.json",
       "evidenceHash": "1075727a04caeb1cc2ee7b6abd1bad4c90f65acc5b04906b75fe7f2d9267e266"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.en.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "c8d6108830078e80d647d33875e851a6763521789cce4dbea45954419bd98046",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "0d2cebab6e8ce81e1ddc2197401976801ee9665886b60ecca59c02dbad647662"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.zh-cn.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "6070ce6cddaf67aefb293e557621a5209ee7415a48dd270091616d46b1e88058",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "fc21a77623dd7a6bab2861ac0e3e1a3a9b6ee6883d211046108dfe689d38c549"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.zh-tw.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "e987cf512916af6afa87917aa72a44d4190f0de05585145b77afa218727bc512",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "c4f0259e9dfd67197a2a6ff73cfbb9434c0cca889ed5b58b8c0da0bf335e2957"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.es.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "598eee5cb0b5f1657b87c82d96b800ddd59b9d5394551b8b612edec438e7fca0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "b82866f41a5c5e18de7a60f033f49efc3af31215a5351d923fc5b863258dd980"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.ko.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "32b0c9def17918f4c3cfb8e7f4454fb89e7568477f8c0dd08e87ec8560595e6a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "0d26b57eaad87d8285fa771f901296aa10e5d14f347ae65654bd1e806564260d"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.pt.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "335beff67fc0ee7a40b89e40790f416d1fc32542bdb84fb8692127b5ce74b8e9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "f39238369c84be8c06daa329b2dff50f13f693a858f79e71e39b407c7943a8b2"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.de.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "ccd9ff4f1338827e7bd6d2bc0bbc81cf846a24aa0f25d1a26bcd9a45616c8191",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "be80133a6347489fd14f6dc1bcd195d582f62899b5a65c5b84f41f1241aede0e"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.hi.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "2190ecf1129e18856c662c50478fb843011dc4580aaa89f6c7c7a0c1e1e8db2e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "7364d6da049bf41583899efb65df03094f4fe708966598bcaa16fb9cee6ce61b"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.id.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "2283ea2d7f0e4ac2bc3e5e7cf1f36268e849c990f77bed266281e93028a82016",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "a7c423141c00eb8263556ae176c1380589963547bd3e347738892196553505ae"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.ar.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "ea72d61913f401d02ebc3c838a578ed5495e685f960b2feca6c9172f62f9f275",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "8b0c7bc11c16d4772cb02c77f1fe47ca1db0e1fa6bde8d2cbbd1275b7448244f"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.ru.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "7ba922fe1ce50516a177026c7b6e1bd848c7d08c79232bbe32a4b6d64d8001fe",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "a118f2f734b06c56321549414c3b1e69411903c09fe4c927a685e63a50ee9e59"
+    },
+    "post/Android(Google Pixel)端末の復元手順/index.fr.md": {
+      "source": "post/Android(Google Pixel)端末の復元手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "fd497aba671a5c0399be953ecf61be027d6f3821f4ae814b3f485faada02a3a7",
+      "translationHash": "0492e9841457c1ca2eb84974de61496ef944e2511a950c0d164464cdd71464e9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-045.json",
+      "evidenceHash": "ddac65e8deb3d8594f34ea29c7bb1b76baf0e81a63c027ef5e3abbe2e6b92e91"
     }
   }
 }
