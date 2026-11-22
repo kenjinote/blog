@@ -2,6 +2,7 @@
 title: 'AI विकास में GPU मेमोरी की कमी को हल करने की तकनीकें (CPU ऑफलोडिंग आदि)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'LLM प्रशिक्षण और अनुमान मे�
 # परिचय: AI विकास और "VRAM की दीवार"
 
 हाल के वर्षों में, बड़े भाषा मॉडल ([LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/)) और डिफ्यूज़न मॉडल (Diffusion Models) जैसी जनरेटिव AI तकनीकों का तेजी से विकास हुआ है। हालाँकि, इन अत्याधुनिक AI मॉडलों को स्थानीय वातावरण में प्रशिक्षित (फाइन-ट्यूनिंग) करने या अनुमान (Inference) निष्पादित करते समय, कई डेवलपर्स और शोधकर्ताओं को जिस सबसे बड़ी भौतिक बाधा का सामना करना पड़ता है, वह है **"GPU मेमोरी (VRAM) की कमी"** ।
+
+> **23-11-2026 को जाँचा गया: फ़ॉर्मूले, मेमोरी अनुमान और कोड** — नीचे दिए फ़ॉर्मूले कुछ मान्यताओं पर आधारित अनुमान हैं, VRAM की गारंटी नहीं। क्वांटाइज़ेशन मेटाडेटा, KV cache, activations, अस्थायी कार्यक्षेत्र और सिस्टम के लिए अतिरिक्त मेमोरी रखें। FlashAttention मध्यवर्ती डेटा का भंडारण और मेमोरी ट्रैफ़िक घटाता है; आम तौर पर यह Attention की गणना जटिलता को $O(N^2)$ से $O(N)$ नहीं करता। PagedAttention मुख्यतः vLLM सर्विंग में उपयोग होता है। QLoRA पेपर में 48GB GPU पर 65B मॉडल fine-tune करने का परिणाम एक विशेष सेटअप का है; इसका अर्थ यह नहीं कि 70B मॉडल सामान्यतः 24GB में fine-tune हो सकता है। CPU, डिस्क या ZeRO offload डिवाइस मेमोरी के बदले host RAM, डेटा ट्रांसफ़र और अक्सर कम गति का उपयोग करते हैं। Unified memory भी क्षमता या compute की सीमाएँ नहीं हटाती। नवीनतम [Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference), [Transformers quantization](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes), [QLoRA paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html), [PagedAttention paper](https://arxiv.org/abs/2309.06180), [FlashAttention paper](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html), [DeepSpeed ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/) और [Apple specifications](https://www.apple.com/mac-studio/specs/) देखें। अनूदित लेख में बची पुरानी उत्पाद क्षमता, सभी पर लागू गति-वृद्धि या जटिलता संबंधी दावों के लिए यह सीमित सुधार और लिंक किए गए वर्तमान दस्तावेज़ मानें।
 
 [NVIDIA](/hi/p/history-of-nvidia/) [GeForce](/hi/p/history-of-nvidia/) RTX 4090 जैसे हाई-एंड कंज्यूमर GPU में भी अधिकतम 24GB VRAM होता है, जो Llama 3 70B जैसे विशाल मॉडलों को सीधे लोड करना असंभव बना देता है। डेटा सेंटर के लिए H100 (80GB) या B200 (192GB) बहुत महंगे हैं और व्यक्तियों या छोटी टीमों के लिए आसानी से उपलब्ध नहीं हैं। यदि इस "VRAM की दीवार (The Wall of VRAM)" को नहीं तोड़ा गया, तो अत्याधुनिक मॉडलों तक पहुँचना भी असंभव है।
 
@@ -230,14 +233,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# device_map="auto" के साथ, VRAM में फिट न होने वाले हिस्से को CPU RAM में ऑफलोड कर दिया जाता है
-# load_in_8bit=True से वजन को 8-बिट में क्वांटिज़्ड किया जाता है, जिससे मेमोरी और भी बचती है
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # यदि पर्याप्त नहीं है, तो इसे डिस्क (SSD) में भी ऑफलोड किया जा सकता है
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
 जब यह कोड निष्पादित होता है, तो पृष्ठभूमि में `accelerate` लाइब्रेरी सिस्टम के VRAM और CPU RAM की उपलब्ध क्षमता का विश्लेषण करती है और लेयर्स को सर्वोत्तम संभव तरीके से व्यवस्थित (Dispatch) करती है।
@@ -265,6 +268,7 @@ model = AutoModelForCausalLM.from_pretrained(
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```

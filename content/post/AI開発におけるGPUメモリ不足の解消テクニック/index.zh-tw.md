@@ -2,6 +2,7 @@
 title: 'AI開發中解決GPU記憶體不足的技巧（CPU卸載等）'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'VRAM（GPU記憶體）不足是LLM訓練和推論的最大障礙�
 # 前言：AI開發與「VRAM之壁」
 
 近年來，[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）和擴散模型（Diffusion Models）等生成式AI技術取得了飛速的發展。然而，當許多開發者和研究人員在本地環境中對這些最先進的AI模型進行訓練（微調）或推論（Inference）時，面臨了一個極其物理的障礙—— **「GPU記憶體（VRAM）不足」** 。
+
+> **2026年11月23日核對：公式、記憶體估算與程式碼** — 以下公式是在特定假設下的估算，不保證實際VRAM需求。還需為量化中繼資料、KV快取、活化值、暫存工作區與系統使用量預留空間。FlashAttention會減少中間結果的儲存與記憶體傳輸，一般不會把Attention本身的 $O(N^2)$ 計算複雜度變成 $O(N)$。PagedAttention主要用於vLLM服務情境。QLoRA論文中「48GB GPU微調65B模型」是特定設定的結果，並不表示70B模型通常能在24GB VRAM上微調。CPU、磁碟及ZeRO卸載是以主機RAM、資料傳輸和通常較低的速度換取裝置記憶體。統一記憶體也不會消除容量與運算能力的限制。請參考最新版[Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference)、[Transformers量化文件](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes)、[QLoRA論文](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html)、[PagedAttention論文](https://arxiv.org/abs/2309.06180)、[FlashAttention論文](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html)、[DeepSpeed ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/)與[Apple規格](https://www.apple.com/mac-studio/specs/)。 翻譯正文中殘留的舊產品容量、固定加速倍數或計算複雜度說法，也應以本註記的適用條件與連結中的現行文件為準。
 
 即使是[NVIDIA](/zh-tw/p/history-of-nvidia/) [GeForce](/zh-tw/p/history-of-nvidia/) RTX 4090等消費級高階GPU，其VRAM最大也只有24GB，根本無法直接載入像Llama 3 70B這樣巨大的模型。而資料中心級別的H100（80GB）或B200（192GB）等則非常昂貴，並非個人或小團隊能輕易使用。如果無法突破這道「VRAM之壁（The Wall of VRAM）」，就連接觸最先進模型的機會都沒有。
 
@@ -230,14 +233,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# 透過 device_map="auto"，無法裝入VRAM的部分會被卸載到CPU RAM
-# 透過 load_in_8bit=True 將權重進行8位元量化，進一步節省記憶體
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # 空間不足時甚至可以卸載到磁碟（SSD）
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
 執行這段程式碼時，背後的`accelerate`函式庫會分析系統的VRAM和CPU RAM的可用容量，並以最佳的方式配置（Dispatch）所有的層。
@@ -265,6 +268,7 @@ model = AutoModelForCausalLM.from_pretrained(
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```

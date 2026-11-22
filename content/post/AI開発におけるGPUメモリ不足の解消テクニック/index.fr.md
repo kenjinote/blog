@@ -2,6 +2,7 @@
 title: 'Techniques pour résoudre le manque de mémoire GPU dans le développement de l''IA (déchargement CPU, etc.)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'Le manque de VRAM (mémoire GPU) est le plus grand obstacle à l''
 # Introduction : Le développement de l'IA et le "Mur de la VRAM"
 
 Ces dernières années, les technologies d'IA générative telles que les [grands modèles de langage](/fr/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) et les modèles de diffusion (Diffusion Models) ont connu un développement rapide. Cependant, lors de l'apprentissage (fine-tuning) ou de l'exécution de l'inférence (Inference) de ces modèles d'IA de pointe dans un environnement local, de nombreux développeurs et chercheurs sont confrontés à un obstacle extrêmement physique : **le "manque de mémoire GPU (VRAM)"**.
+
+> **Vérifié le 23/11/2026 : formules, estimations mémoire et code** — Les formules ci-dessous sont des estimations fondées sur des hypothèses, pas des garanties de VRAM. Prévoyez de la mémoire pour les métadonnées de quantification, le KV cache, les activations, les espaces de travail temporaires et le système. FlashAttention réduit le stockage intermédiaire et les transferts mémoire ; en général, il ne fait pas passer la complexité de calcul d’Attention de $O(N^2)$ à $O(N)$. PagedAttention sert principalement à l’inférence avec vLLM. Le résultat de l’article QLoRA — ajuster un modèle 65B sur un GPU de 48GB — correspond à une configuration précise ; il ne signifie pas qu’un modèle 70B tient généralement sur 24GB. Le déport vers CPU, disque ou ZeRO échange la mémoire du GPU contre de la RAM hôte, des transferts et souvent une vitesse moindre. La mémoire unifiée ne supprime pas non plus les limites de capacité ou de calcul. Consultez la documentation actuelle d’[Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference), la [quantification Transformers](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes), l’[article QLoRA](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html), [PagedAttention](https://arxiv.org/abs/2309.06180), [FlashAttention](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html), [ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/) et les [spécifications Apple](https://www.apple.com/mac-studio/specs/). Les anciennes capacités de produits, les gains de vitesse généralisés et les affirmations de complexité encore présents dans le texte traduit sont remplacés par cette correction et la documentation actuelle liée.
 
 Même avec un GPU haut de gamme grand public comme le NVIDIA GeForce RTX 4090, la VRAM maximale est de 24 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), ce qui rend impossible le chargement d'un modèle gigantesque comme Llama 3 70B tel quel. Les GPU destinés aux centres de données tels que le H100 (80 Go) ou le B200 (192 Go) sont très coûteux et ne sont pas facilement accessibles aux individus ou aux petites équipes. Si l'on ne parvient pas à franchir ce "Mur de la VRAM (The Wall of VRAM)", il est même impossible de toucher aux modèles de pointe.
 
@@ -230,14 +233,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# Avec device_map="auto", ce qui ne rentre pas dans la VRAM est déchargé vers la RAM CPU
-# load_in_8bit=True quantifie les poids en 8 bits pour encore plus d'économies de mémoire
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # Si insuffisant, il est même possible de décharger sur disque (SSD)
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
 En exécutant ce code, la bibliothèque sous-jacente `accelerate` analyse la capacité libre de la VRAM du système et de la RAM du CPU, puis organise (Dispatch) le placement des couches de la manière la plus optimale.
@@ -265,6 +268,7 @@ Voici un exemple de fichier de configuration (JSON) pour activer le déchargemen
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```

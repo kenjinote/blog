@@ -2,6 +2,7 @@
 title: 'Методы решения проблемы нехватки памяти GPU при разработке ИИ (разгрузка CPU и т.д.)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'Нехватка VRAM (памяти GPU) является глав
 # Введение: Разработка ИИ и «Стена VRAM»
 
 В последние годы технологии генеративного ИИ, такие как большие языковые модели ([LLM](https://kenji.blog/ru/p/large-language-models-llm-transformer-prompt-engineering/)) и диффузионные модели (Diffusion Models), стремительно развиваются. Однако, когда разработчики и исследователи пытаются обучать (дообучать) или запускать инференс (Inference) этих передовых ИИ-моделей в локальной среде, они часто сталкиваются с **«нехваткой памяти GPU (VRAM)»** — крайне физическим препятствием.
+
+> **Проверено 23.11.2026: формулы, оценка памяти и код** — Формулы ниже дают оценку при заданных предположениях и не гарантируют требования к VRAM. Оставляйте память для метаданных квантования, KV-кэша, активаций, временных рабочих областей и системы. FlashAttention сокращает хранение промежуточных результатов и обмен с памятью; обычно он не меняет вычислительную сложность Attention с $O(N^2)$ на $O(N)$. PagedAttention применяется главным образом для обслуживания моделей в vLLM. Результат статьи QLoRA — настройка модели 65B на GPU 48GB — относится к конкретной конфигурации и не означает, что 70B обычно обучается на 24GB. Выгрузка на CPU, диск или ZeRO обменивает память устройства на RAM хоста, передачу данных и часто меньшую скорость. Unified memory также не устраняет ограничения ёмкости и вычислений. См. актуальную документацию [Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference), [квантования Transformers](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes), статью [QLoRA](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html), работы [PagedAttention](https://arxiv.org/abs/2309.06180) и [FlashAttention](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html), руководство [DeepSpeed ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/) и [спецификации Apple](https://www.apple.com/mac-studio/specs/). Старые значения ёмкости устройств, общие заявления об ускорении и утверждения о сложности в переводном тексте следует считать заменёнными этой оговоркой и актуальной документацией по ссылкам.
 
 Даже высокопроизводительные потребительские GPU, такие как NVIDIA [GeForce](/ru/p/history-of-nvidia/) RTX 4090, имеют максимум 24 ГБ VRAM, и загрузить такую огромную модель, как Llama 3 70B, целиком в нее совершенно невозможно. GPU для дата-центров, такие как H100 (80 ГБ) или B200 (192 ГБ), очень дороги и недоступны для частных лиц или небольших команд. Если не преодолеть эту «стену VRAM» (The Wall of VRAM), невозможно даже прикоснуться к самым передовым моделям.
 
@@ -230,14 +233,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# Благодаря device_map="auto", часть, не помещающаяся в VRAM, разгружается в CPU RAM
-# load_in_8bit=True квантует веса до 8 бит для еще большей экономии памяти
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # При нехватке места возможна разгрузка даже на диск (SSD)
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
 При выполнении этого кода стоящая за ним библиотека `accelerate` анализирует свободный объем VRAM и CPU RAM в системе и оптимально распределяет (Dispatch) слои.
@@ -265,6 +268,7 @@ model = AutoModelForCausalLM.from_pretrained(
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```

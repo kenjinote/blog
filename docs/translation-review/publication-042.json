@@ -1,0 +1,263 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T03:47:04.513383+09:00",
+  "ciRun": 45054715047,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45054715047",
+  "deployedCommit": "5b0c4b2afe1dc61e725b0c58a8bd45311f72d4ca",
+  "allPassed": true,
+  "scope": "Batch 042: Japanese article and all 12 translations. Live HTTP checks validate status, final URL, canonical, language, Arabic RTL, title, last modification, current correction note, official project links, and all 14 hreflang entries/targets.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:37 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:32 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:48 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:51 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:46 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:38 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:41 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:44 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:35 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:37 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:48 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:40 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/local-ai-image-generation-setup/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 18:43:34 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI review only; no human/native-speaker certification.",
+    "No GPU hardware or performance test.",
+    "Browser/device visual QA was not performed."
+  ]
+}

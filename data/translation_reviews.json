@@ -5165,6 +5165,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-042.json",
       "evidenceHash": "dfe8db86d2c4c1b5e4c1b4b9688ac9fc40665888af9c442542db26b021b41816"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.en.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "8d4b38d8bd936cddf827556084d7b776018d9b45335a9e62d70512da96b46d59",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "4e04c381525968a195ae83d871ff49f319da0e48c605a7ed54ab0eb1b68c9320"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.zh-cn.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "7e33aa596135be4fe00647c7e32a2afe2a9cc95394f6334674352a68fd7d05bf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "718f8ac72e467840c29b0ab3df7919d15a5d5872023d6fbad7a1ef8700bd61ef"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.zh-tw.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "e70f1761456e002fb19bbb26ff8d729689e05be2a9212d9019461b57633d02e3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "dc5d9e598d55cd7f3f5326da0eacd714840d693e40e38e8b5b773fe2064d7d00"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.es.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "848017b7102fd9a8933dff4a5eb8f8ea57b0b31e9d86d74b7133667bc5ad7dd7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "1de4a767f92c30acfa099727e417eb2dbd7113a78e79da8ebd59912dbb22c479"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.ko.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "06f7bb4e030eb12fc8ef5119ba9fc4ed76ee044a9e11873206c6da5c8d2540d2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "9c3bb950c9eb9e7b54079abeb022a5ad7f91ab42a2d91499e8d918908cb5539c"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.pt.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "17fd53dc9a76e6979a3f4cf96e05021a4e45cc2607f9877d7f41ff3ce556907a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "aa1724e3578e722b790aa01ee084cc3c10d0af6c0de2104f12040bdcacaf57cd"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.fr.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "93fd6f8948c6c7d8565a5cc20f1bb9c8853f6457e306ab22ffc5038fbabc8e9d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "c791af4f5b6f4b90c8dda2eb3ad49855f063b1eeaefc2806bc5762080edbc762"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.de.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "31c059fa3976dd292cfadcb5392f96e1476ea9325706b230f68c28ef70af1624",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "e6d966dbda01369be63cd8d85c787350b1fa537aadbba80d86d4af2ff2c2b863"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.hi.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "09f52a97d1e855673362ed38bd95c022ede886b02b184d4a2f4d240efdfffb1c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "14ea1c3d0dbfcdb58620dcf8db59d36794405efad0d32205f3b646cf918ede6a"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.id.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "e796eb28847e9feb14c65f45b8a29bc0bda7ad520516dc6db4cfb8624dd86cc6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "5371d4d115b3578424027d271aba6fb0eb5f75de36f185c1a21ed3f8fa975dd8"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.ar.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "178e2cb032f4c6df61479d7fca984eceb5c4c2a70b05516302d4eeb6ebcebf6c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "ca88239007b10c49cb9db0fdf75963a07e89c99c7fc748875ecf1dce4545808d"
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.ru.md": {
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "e954434f55e09f14d45aebf7fb88bd9ba09f14215848f2eff8c20e3fb29a5003",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-043.json",
+      "evidenceHash": "7804c8a5526e428e185601046ec3478f3fff9cdcc57395a5aae172590c1eaa83"
     }
   }
 }

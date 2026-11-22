@@ -2,6 +2,7 @@
 title: 'Técnicas de Resolução para Falta de Memória de GPU no Desenvolvimento de IA (CPU Offloading, etc.)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'A falta de VRAM (memória da GPU) é a maior barreira no treinamen
 # Introdução: Desenvolvimento de IA e a "Barreira da VRAM"
 
 Nos últimos anos, tecnologias de IA generativa, como Modelos de Linguagem de Grande Escala ([LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)) e Modelos de Difusão (Diffusion Models), têm alcançado um rápido desenvolvimento. No entanto, ao treinar (fine-tuning) ou executar inferência (Inference) desses modelos de IA de ponta em ambientes locais, muitos desenvolvedores e pesquisadores enfrentam uma barreira extremamente física: a **"falta de memória da GPU (VRAM)"**.
+
+> **Verificado em 23-11-2026: fórmulas, estimativas de memória e código** — As fórmulas abaixo são estimativas sob determinadas hipóteses, não garantias de VRAM. Reserve espaço para metadados de quantização, KV cache, ativações, áreas temporárias e o sistema. FlashAttention reduz armazenamento intermediário e tráfego de memória; em geral, não muda a complexidade de cálculo do Attention de $O(N^2)$ para $O(N)$. PagedAttention é usado principalmente para servir modelos com vLLM. O resultado do artigo QLoRA de ajustar um modelo 65B em uma GPU de 48GB corresponde a uma configuração específica; não significa que o ajuste de 70B normalmente caiba em 24GB. Offload para CPU, disco ou ZeRO troca memória do dispositivo por RAM do host, transferências e, muitas vezes, menor velocidade. Memória unificada também não elimina limites de capacidade ou computação. Consulte a documentação atual do [Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference), [quantização do Transformers](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes), o [artigo QLoRA](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html), [PagedAttention](https://arxiv.org/abs/2309.06180), [FlashAttention](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html), [ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/) e as [especificações da Apple](https://www.apple.com/mac-studio/specs/). Números antigos de capacidade, ganhos de velocidade universais e afirmações de complexidade que permaneçam no texto traduzido são substituídos por esta correção delimitada e pela documentação atual vinculada.
 
 Mesmo em GPUs de ponta para consumidores, como a NVIDIA [GeForce](/pt/p/history-of-nvidia/) RTX 4090, a VRAM é de no máximo 24 GB, o que torna completamente impossível carregar um modelo gigante como o Llama 3 70B em sua forma original. GPUs voltadas para data centers, como H100 (80GB) e B200 (192GB), são extremamente caras e não são algo que indivíduos ou pequenas equipes possam acessar facilmente. Se não conseguirmos superar essa "Barreira da VRAM (The Wall of VRAM)", não poderemos sequer tocar nos modelos mais avançados.
 
@@ -230,14 +233,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# Com device_map="auto", a parte que não couber na VRAM sofrerá offload para a CPU RAM
-# load_in_8bit=True quantiza os pesos para 8 bits, resultando em ainda mais economia de memória
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # Se houver falta de CPU RAM, pode sofrer offload até para o disco (SSD)
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
 Ao executar este código, a biblioteca `accelerate` em segundo plano analisa a capacidade ociosa do sistema (CPU RAM e VRAM) e organiza (Dispatch) as camadas da melhor maneira possível.
@@ -265,6 +268,7 @@ Exemplo de arquivo de configuração (JSON) para ativar o CPU offloading usando 
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```

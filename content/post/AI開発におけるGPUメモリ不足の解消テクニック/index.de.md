@@ -2,6 +2,7 @@
 title: 'Techniken zur Behebung von GPU-Speichermangel in der KI-Entwicklung (CPU-Offloading usw.)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'Der Mangel an VRAM (GPU-Speicher) ist das größte Hindernis beim 
 # Einführung: KI-Entwicklung und "Die VRAM-Wand"
 
 In den letzten Jahren hat die generative KI-Technologie, wie große Sprachmodelle (LLMs) und Diffusionsmodelle (Diffusion Models), rasante Fortschritte gemacht. Wenn jedoch Entwickler und Forscher versuchen, diese modernsten KI-Modelle in lokalen Umgebungen zu trainieren (Fine-Tuning) oder auszuführen (Inference), stoßen viele auf ein sehr physisches Hindernis: **"GPU-Speichermangel (VRAM)"**.
+
+> **Am 23.11.2026 geprüft: Formeln, Speicherabschätzungen und Code** — Die folgenden Formeln sind Schätzungen unter bestimmten Annahmen und keine Garantie für den VRAM-Bedarf. Planen Sie zusätzlichen Speicher für Quantisierungsmetadaten, KV-Cache, Aktivierungen, temporäre Arbeitsbereiche und das System ein. FlashAttention reduziert Zwischenspeicherung und Speichertransfers; die Rechenkomplexität von Attention sinkt dadurch im Allgemeinen nicht von $O(N^2)$ auf $O(N)$. PagedAttention wird vor allem beim Serving mit vLLM eingesetzt. Das QLoRA-Paper berichtet das Finetuning eines 65B-Modells auf einer 48-GB-GPU unter bestimmten Bedingungen; daraus folgt nicht, dass 70B-Finetuning generell auf 24 GB passt. CPU-, Datenträger- und ZeRO-Offload tauschen Gerätespeicher gegen Host-RAM, Transfers und häufig geringere Geschwindigkeit. Auch Unified Memory hebt Kapazitäts- oder Rechenlimits nicht auf. Beachten Sie die aktuelle Dokumentation zu [Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference), [Transformers-Quantisierung](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes), das [QLoRA-Paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html), [PagedAttention](https://arxiv.org/abs/2309.06180), [FlashAttention](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html), [ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/) und Apples [Spezifikationen](https://www.apple.com/mac-studio/specs/). Ältere Produktkapazitäten, pauschale Geschwindigkeitsgewinne und Komplexitätsaussagen im übersetzten Text werden durch diese eingeordnete Korrektur und die verlinkte aktuelle Dokumentation ersetzt.
 
 Selbst bei High-End-GPUs für Endverbraucher, wie der NVIDIA [GeForce](/de/p/history-of-nvidia/) RTX 4090, beträgt der maximale VRAM 24 GB, was es völlig unmöglich macht, ein riesiges Modell wie Llama 3 70B direkt zu laden. GPUs für Rechenzentren wie H100 (80 GB) oder B200 (192 GB) sind extrem teuer und für Einzelpersonen oder kleine Teams nicht leicht zugänglich. Wenn man diese "VRAM-Wand (The Wall of VRAM)" nicht durchbrechen kann, kann man modernste Modelle gar nicht erst berühren.
 
@@ -230,14 +233,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# Mit device_map="auto" wird alles, was nicht in den VRAM passt, in den CPU-RAM offloadet
-# Mit load_in_8bit=True werden die Gewichte auf 8-Bit quantisiert, um noch mehr Speicher zu sparen
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # Falls der Platz nicht ausreicht, kann sogar auf Festplatte (SSD) ausgelagert werden
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
 Wenn Sie diesen Code ausführen, analysiert die zugrunde liegende Bibliothek `accelerate` den freien Speicherplatz im VRAM des Systems und im CPU-RAM und ordnet die Schichten (Dispatch) auf die optimale Weise an.
@@ -265,6 +268,7 @@ Hier ist ein Beispiel für eine Konfigurationsdatei (JSON), um CPU-Offloading mi
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```

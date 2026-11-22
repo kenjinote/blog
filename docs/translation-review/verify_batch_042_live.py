@@ -61,7 +61,7 @@ parser.add_argument('--commit', required=True, help='Full deployed Git commit SH
 args = parser.parse_args()
 
 request = urllib.request.Request(
-    f'https://api.github.com/repos/kenjinote/kenji.blog/actions/runs/{args.ci_run}',
+    f'https://api.github.com/repos/kenjinote/blog/actions/runs/{args.ci_run}',
     headers={'User-Agent': 'kenji.blog-translation-review/1.0', 'Accept': 'application/vnd.github+json'},
 )
 with urllib.request.urlopen(request, timeout=30) as response:
@@ -114,7 +114,7 @@ receipt = {
     'version': 1,
     'checkedAt': datetime.now(timezone(timedelta(hours=9))).isoformat(),
     'ciRun': args.ci_run,
-    'ciUrl': f'https://github.com/kenjinote/kenji.blog/actions/runs/{args.ci_run}',
+    'ciUrl': f'https://github.com/kenjinote/blog/actions/runs/{args.ci_run}',
     'deployedCommit': args.commit,
     'allPassed': passed,
     'scope': 'Batch 042: Japanese article and all 12 translations. Live HTTP checks validate status, final URL, canonical, language, Arabic RTL, title, last modification, current correction note, official project links, and all 14 hreflang entries/targets.',

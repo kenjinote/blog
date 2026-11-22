@@ -2,6 +2,7 @@
 title: "Teknik Mengatasi Kekurangan Memori GPU dalam Pengembangan AI (CPU Offloading, dll.)"
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: "Kekurangan VRAM (memori GPU) yang menjadi hambatan terbesar dalam 
 # Pengantar: Pengembangan AI dan 'Tembok VRAM'
 
 Dalam beberapa tahun terakhir, teknologi AI generatif seperti [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) dan Diffusion Models telah mengalami perkembangan yang sangat pesat. Namun, ketika melatih (fine-tuning) atau menjalankan inferensi model-model AI mutakhir ini di lingkungan lokal, banyak pengembang dan peneliti menghadapi hambatan fisik yang sangat besar, yaitu **"kekurangan memori GPU (VRAM)"**.
+
+> **Diverifikasi pada 23-11-2026: rumus, perkiraan memori, dan kode** — Rumus di bawah adalah perkiraan dengan asumsi tertentu, bukan jaminan kebutuhan VRAM. Sisakan memori untuk metadata kuantisasi, KV cache, aktivasi, ruang kerja sementara, dan sistem. FlashAttention mengurangi penyimpanan perantara dan lalu lintas memori; umumnya tidak mengubah kompleksitas komputasi Attention dari $O(N^2)$ menjadi $O(N)$. PagedAttention terutama digunakan untuk serving dengan vLLM. Hasil paper QLoRA yang menyesuaikan model 65B pada satu GPU 48GB berlaku untuk konfigurasi tertentu; itu bukan bukti bahwa fine-tuning 70B biasanya muat pada 24GB. Offload ke CPU, disk, atau ZeRO menukar memori perangkat dengan RAM host, transfer data, dan sering kali kecepatan yang lebih rendah. Unified memory juga tidak menghapus batas kapasitas atau komputasi. Lihat dokumentasi terbaru [Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference), [kuantisasi Transformers](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes), [paper QLoRA](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html), [PagedAttention](https://arxiv.org/abs/2309.06180), [FlashAttention](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html), [ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/) dan [spesifikasi Apple](https://www.apple.com/mac-studio/specs/). Angka kapasitas produk lama, klaim peningkatan kecepatan yang berlaku umum, dan klaim kompleksitas yang masih tersisa di isi terjemahan digantikan oleh koreksi bersyarat ini dan dokumentasi terbaru yang ditautkan.
 
 Meskipun menggunakan GPU high-end untuk konsumen seperti NVIDIA [GeForce](/id/p/history-of-nvidia/) RTX 4090, VRAM maksimal yang tersedia hanyalah 24GB, sehingga mustahil untuk memuat model raksasa seperti Llama 3 70B secara langsung. GPU untuk data center seperti H100 (80GB) dan B200 (192GB) sangatlah mahal, dan tidak mudah dijangkau oleh individu atau tim skala kecil. Jika kita tidak dapat menembus 'Tembok VRAM (The Wall of VRAM)' ini, kita bahkan tidak akan bisa menyentuh model-model mutakhir tersebut.
 
@@ -230,14 +233,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# Menggunakan device_map="auto", bagian yang tidak muat dalam VRAM akan di-offload ke RAM CPU
-# load_in_8bit=True mengkuantisasi bobot dalam 8-bit untuk penghematan memori ekstra
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # Jika masih kurang, Anda bisa melakukan offload hingga ke disk (SSD)
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
 Saat kode ini dieksekusi, pustaka `accelerate` di baliknya akan menganalisis kapasitas VRAM dan RAM CPU yang tersedia, kemudian menempatkan (Dispatch) lapisan model dengan cara yang paling optimal.
@@ -265,6 +268,7 @@ Berikut adalah contoh file konfigurasi (JSON) untuk mengaktifkan CPU offloading 
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```

@@ -2,7 +2,7 @@
   "version": 1,
   "checkedAt": "2026-11-23T03:00:38.294357+09:00",
   "ciRun": 45049913673,
-  "ciUrl": "https://github.com/kenjinote/kenji.blog/actions/runs/45049913673",
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45049913673",
   "deployedCommit": "14e655cd6",
   "scope": "Batch041: Japanese AI-era programmer article and all 12 translations. Post-deploy HTTP checks validate all 13 pages, canonical, language, Arabic RTL, title, both primary research links, and the full 14-entry hreflang set.",
   "allPassed": true,

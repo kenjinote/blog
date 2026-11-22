@@ -2,6 +2,7 @@
 title: 'Técnicas de resolución para la escasez de memoria de GPU en el desarrollo de IA (Descarga de CPU, etc.)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'La escasez de VRAM (memoria de GPU) es la mayor barrera en el entr
 # Introducción: El desarrollo de IA y el "Muro de la VRAM"
 
 En los últimos años, tecnologías de IA generativa como los Grandes Modelos de Lenguaje ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)) y los Modelos de Difusión (Diffusion Models) han experimentado un rápido desarrollo. Sin embargo, al entrenar (ajuste fino / fine-tuning) o ejecutar la inferencia (Inference) de estos modelos de IA de vanguardia en entornos locales, muchos desarrolladores e investigadores se enfrentan a una barrera extremadamente física: **la falta de memoria de GPU (VRAM)**.
+
+> **Verificado el 23-11-2026: fórmulas, estimaciones de memoria y código** — Las fórmulas siguientes son estimaciones basadas en supuestos, no garantías de VRAM. Reserve espacio para metadatos de cuantización, KV cache, activaciones, áreas temporales y el sistema. FlashAttention reduce el almacenamiento intermedio y el tráfico de memoria; en general no cambia la complejidad de cálculo de Attention de $O(N^2)$ a $O(N)$. PagedAttention se usa principalmente para servir modelos con vLLM. El resultado del artículo QLoRA de ajustar un modelo 65B en una GPU de 48GB corresponde a una configuración concreta; no significa que el ajuste de 70B suela caber en 24GB. La descarga a CPU, disco o ZeRO cambia memoria del dispositivo por RAM anfitriona, transferencias y, a menudo, menor velocidad. La memoria unificada tampoco elimina los límites de capacidad o cómputo. Consulte la documentación actual de [Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference), [cuantización de Transformers](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes), el [artículo QLoRA](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html), [PagedAttention](https://arxiv.org/abs/2309.06180), [FlashAttention](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html), [ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/) y las [especificaciones de Apple](https://www.apple.com/mac-studio/specs/). Las cifras antiguas de capacidad, las mejoras de velocidad universales y las afirmaciones de complejidad que queden en el cuerpo traducido quedan sustituidas por esta corrección y la documentación actual enlazada.
 
 Incluso con las GPUs de gama alta para consumidores, como la NVIDIA [GeForce](/es/p/history-of-nvidia/) RTX 4090, la VRAM máxima es de 24 GB, lo que hace completamente imposible cargar directamente modelos gigantescos como Llama 3 70B. Las opciones orientadas a centros de datos, como la H100 (80 GB) o la B200 (192 GB), son extremadamente costosas y no están fácilmente al alcance de individuos o equipos pequeños. Si no se puede atravesar este "Muro de la VRAM (The Wall of VRAM)", ni siquiera será posible experimentar con los modelos más avanzados.
 
@@ -231,14 +234,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# Mediante device_map="auto", lo que no quepa en la VRAM se descarga en la RAM de la CPU
-# Con load_in_8bit=True, se cuantizan los pesos a 8 bits, permitiendo mayor ahorro de memoria
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # Si hace falta, es posible descargar incluso en disco (SSD)
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
 Al ejecutar este código, la librería `accelerate` en segundo plano analizará el espacio libre disponible en la VRAM del sistema y en la RAM de la CPU, acomodando (Dispatch) las capas de la forma más óptima.
@@ -266,6 +269,7 @@ A continuación, un ejemplo de un archivo de configuración (JSON) para activar 
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```

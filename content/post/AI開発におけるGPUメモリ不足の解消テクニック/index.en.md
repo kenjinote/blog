@@ -2,6 +2,7 @@
 title: "Techniques for Resolving GPU Memory Shortages in AI Development (CPU Offloading, etc.)"
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: "VRAM (GPU memory) shortage is the biggest barrier in LLM training 
 # Introduction: AI Development and "The Wall of VRAM"
 
 In recent years, generative AI technologies such as [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) and Diffusion Models have achieved rapid development. However, when trying to train (fine-tune) or perform inference with these cutting-edge AI models in a local environment, a very physical barrier that many developers and researchers face is the **"shortage of GPU memory (VRAM)"**.
+
+> **Checked on 2026-11-23 — formulas, memory estimates, and code:** The equations below are estimates under stated assumptions, not VRAM guarantees. Leave room for quantization metadata, KV cache, activations, temporary workspaces, and system use. FlashAttention reduces intermediate storage and memory traffic; it does not generally change attention's $O(N^2)$ compute complexity to $O(N)$. PagedAttention is primarily a vLLM serving technique. The QLoRA paper's 65B-on-48GB result uses a particular setup; it does not mean 70B fine-tuning generally fits in 24GB. CPU, disk, and ZeRO offload trade device memory for host RAM, data transfer, and often speed. Unified memory does not remove capacity or compute limits. See current [Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference), [Transformers quantization](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes), the [QLoRA paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html), [PagedAttention paper](https://arxiv.org/abs/2309.06180), [FlashAttention paper](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html), [DeepSpeed ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/), and [Apple specifications](https://www.apple.com/mac-studio/specs/). Any older product-capacity figures, blanket speedups, or complexity claims in the translated body are superseded by this scoped correction and the current linked documentation.
 
 Even a high-end consumer GPU like the NVIDIA [GeForce](/en/p/history-of-nvidia/) RTX 4090 has a maximum VRAM of 24GB, making it completely impossible to load a massive model like Llama 3 70B as it is. Data center GPUs like the H100 (80GB) or B200 (192GB) are extremely expensive and not easily accessible to individuals or small teams. If we cannot break through this "Wall of VRAM," we cannot even touch the most advanced models.
 
@@ -157,7 +160,7 @@ graph TD
     subgraph "Unified Memory Architecture (e.g. Apple Silicon)"
         A["CPU Cores"] <--> C["Shared Memory Controller"]
         B["GPU Cores / Neural Engine"] <--> C["Shared Memory Controller"]
-        C["Shared Memory Controller"] <--> D["Unified Memory Pool (e.g. 192GB)"]
+        C["Shared Memory Controller"] <--> D["Shared Unified Memory (capacity varies)"]
     end
 ```
 
@@ -230,14 +233,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# With device_map="auto", parts that don't fit into VRAM are offloaded to CPU RAM
-# load_in_8bit=True quantizes weights to 8-bit, saving even more memory
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # If even CPU RAM isn't enough, it can offload to disk (SSD)
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
 When you execute this code, the `accelerate` library behind the scenes analyzes the free capacity of the system's VRAM and CPU RAM, and dispatches the layers in the most optimal configuration.
@@ -265,6 +268,7 @@ This is an example of a configuration file (JSON) to enable CPU offloading with 
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```

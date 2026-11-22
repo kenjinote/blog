@@ -522,6 +522,12 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "publicationPending": true,
-  "scope": "Reviewed the complete Japanese article structure and all 12 translation versions for major claim alignment; localized and inserted a 2026 current-setup note in all versions. Revised the Japanese source to remove absolute GPU/RAM/storage thresholds, universal Python/CUDA setup advice, mandatory Manager/Tiled VAE claims, unsupported TensorRT speed multipliers, deterministic ControlNet promises, unsafe troubleshooting advice, and speculative future VRAM predictions. Older translated details are explicitly superseded by the localized note where they conflict. Full-site Hugo production build passed; a 13-page preview validated each language, canonical URL, full hreflang set, RTL, update note, and official project links. CI publication and post-deploy checks remain pending."
+  "publicationPending": false,
+  "scope": "Reviewed the complete Japanese article structure and all 12 translation versions for major claim alignment; localized and inserted a 2026 current-setup note in all versions. Revised the Japanese source to remove absolute GPU/RAM/storage thresholds, universal Python/CUDA setup advice, mandatory Manager/Tiled VAE claims, unsupported TensorRT speed multipliers, deterministic ControlNet promises, unsafe troubleshooting advice, and speculative future VRAM predictions. Older translated details are explicitly superseded by the localized note where they conflict. Full-site Hugo production build passed; a 13-page preview validated each language, canonical URL, full hreflang set, RTL, update note, and official project links. CI succeeded and all 13 live pages passed post-deploy checks.",
+  "publication": {
+    "record": "docs/translation-review/publication-042.json",
+    "ciRun": 45054715047,
+    "deployedCommit": "5b0c4b2afe1dc61e725b0c58a8bd45311f72d4ca",
+    "allPassed": true
+  }
 }

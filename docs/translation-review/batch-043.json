@@ -1,0 +1,527 @@
+{
+  "version": 1,
+  "article": "AI開発におけるGPUメモリ不足の解消テクニック",
+  "frozenSourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+  "reviewedAt": "2026-11-23",
+  "reviews": {
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "8d4b38d8bd936cddf827556084d7b776018d9b45335a9e62d70512da96b46d59",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "7e33aa596135be4fe00647c7e32a2afe2a9cc95394f6334674352a68fd7d05bf",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "e70f1761456e002fb19bbb26ff8d729689e05be2a9212d9019461b57633d02e3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "848017b7102fd9a8933dff4a5eb8f8ea57b0b31e9d86d74b7133667bc5ad7dd7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "06f7bb4e030eb12fc8ef5119ba9fc4ed76ee044a9e11873206c6da5c8d2540d2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "17fd53dc9a76e6979a3f4cf96e05021a4e45cc2607f9877d7f41ff3ce556907a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "93fd6f8948c6c7d8565a5cc20f1bb9c8853f6457e306ab22ffc5038fbabc8e9d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "31c059fa3976dd292cfadcb5392f96e1476ea9325706b230f68c28ef70af1624",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "09f52a97d1e855673362ed38bd95c022ede886b02b184d4a2f4d240efdfffb1c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "e796eb28847e9feb14c65f45b8a29bc0bda7ad520516dc6db4cfb8624dd86cc6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "178e2cb032f4c6df61479d7fca984eceb5c4c2a70b05516302d4eeb6ebcebf6c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発におけるGPUメモリ不足の解消テクニック/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発におけるGPUメモリ不足の解消テクニック/index.md",
+      "sourceHash": "3584969be8134ab758f98d12ae6ce7ed9d1d16a1f0e6419c7173cf68702abcd8",
+      "translationHash": "e954434f55e09f14d45aebf7fb88bd9ba09f14215848f2eff8c20e3fb29a5003",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and major technical claims with the revised Japanese source. Added and reviewed a localized 2026 correction note that scopes memory estimates and supersedes conflicting legacy capacity, speed, and complexity claims. Unchanged legacy prose was not independently line-translated in full."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms and names for GPU/VRAM, KV cache, activations, offloading, FlashAttention, PagedAttention, QLoRA, ZeRO, and unified memory in the correction note and updated shared examples."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the revised source assumptions and whether the localized correction note accurately scopes formulas, units, and reported QLoRA results. Did not independently rederive every unchanged displayed formula in the translation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Updated the Transformers loading example and DeepSpeed micro-batch setting in the Japanese source and translation. Checked surrounding context; commands/configuration were not executed, and older explanatory prose may remain."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked official/primary references for Accelerate, Transformers quantization, QLoRA, PagedAttention, FlashAttention, DeepSpeed ZeRO-Offload, and Apple specifications. Existing unrelated links were not all live-checked."
+        }
+      },
+      "summary": "Localized a current technical correction note and updated shared model-loading and DeepSpeed examples, aligned with the corrected Japanese source and primary documentation.",
+      "languageSpecificFindings": "The note preserves technical names and identifies the exact limits of the published estimates and methods. Legacy detailed passages remain; where they conflict, readers are explicitly directed to the scoped correction and current primary references.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "Unchanged translation prose was not fully retranslated line by line; the main structure, major claims, revised note, formulas context and shared code examples were checked.",
+        "Legacy detailed passages remain and are explicitly superseded where they conflict; a later full native-language editorial pass remains useful.",
+        "No GPU hardware, model loading, training, or performance test was run.",
+        "Existing links beyond newly added primary references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    }
+  },
+  "primarySources": [
+    {
+      "title": "Hugging Face Accelerate big-model inference",
+      "url": "https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Hugging Face Transformers bitsandbytes quantization",
+      "url": "https://huggingface.co/docs/transformers/main/quantization/bitsandbytes",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "QLoRA paper",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "PagedAttention paper",
+      "url": "https://arxiv.org/abs/2309.06180",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "FlashAttention paper",
+      "url": "https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "DeepSpeed ZeRO-Offload tutorial",
+      "url": "https://www.deepspeed.ai/tutorials/zero-offload/",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Apple Mac Studio specifications",
+      "url": "https://www.apple.com/mac-studio/specs/",
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "publicationPending": true,
+  "scope": "Reviewed the complete Japanese article and all 12 translations for structure and major technical claims; localized a current correction note in all 12 translations, updated shared Transformers/DeepSpeed examples, and corrected the Japanese source on memory estimates, KV cache, FlashAttention, UMA, gradient checkpointing, QLoRA, ZeRO, and device placement. Legacy translation prose is not fully retranslated; the note supersedes conflicting claims. Local production build and 13-page preview checks are pending. Post-deploy checks remain pending."
+}

@@ -2,6 +2,7 @@
 title: 'تقنيات التغلب على نقص ذاكرة GPU في تطوير الذكاء الاصطناعي (تفريغ وحدة المعالجة المركزية، وما إلى ذلك)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'نقص ذاكرة الوصول العشوائي للفيديو (ذ
 # مقدمة: تطوير الذكاء الاصطناعي و"جدار VRAM"
 
 في السنوات الأخيرة، شهدت تقنيات الذكاء الاصطناعي التوليدي مثل النماذج اللغوية الكبيرة (LLMs) ونماذج الانتشار (Diffusion Models) تطوراً سريعاً. ومع ذلك، عندما يحاول العديد من المطورين والباحثين تدريب (الضبط الدقيق) أو تنفيذ الاستنتاج (Inference) لهذه النماذج المتطورة للذكاء الاصطناعي في بيئة محلية، فإنهم يواجهون عائقاً مادياً كبيراً وهو **"نقص ذاكرة GPU (VRAM)"**.
+
+> **تم التحقق في 23-11-2026: المعادلات وتقديرات الذاكرة والشفرة** — المعادلات أدناه تقديرات مبنية على افتراضات وليست ضماناً لحجم VRAM. اترك مساحة إضافية للبيانات الوصفية للتكميم وKV cache والتنشيطات ومساحات العمل المؤقتة والنظام. يقلل FlashAttention تخزين النتائج الوسيطة وحركة الذاكرة، لكنه لا يحول عادةً التعقيد الحسابي لـAttention من $O(N^2)$ إلى $O(N)$. يُستخدم PagedAttention أساساً لخدمة النماذج عبر vLLM. نتيجة ورقة QLoRA لتدريب نموذج 65B على GPU بذاكرة 48GB تخص إعداداً معيناً، ولا تعني أن تدريب 70B يناسب عادةً 24GB. إن النقل إلى CPU أو القرص أو ZeRO يستبدل ذاكرة الجهاز بذاكرة المضيف وعمليات النقل وغالباً سرعة أقل. ولا تلغي الذاكرة الموحدة حدود السعة أو القدرة الحسابية. راجع الوثائق الحالية لـ[Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference) و[تكميم Transformers](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes)، وورقة [QLoRA](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html) و[PagedAttention](https://arxiv.org/abs/2309.06180) و[FlashAttention](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html)، ودليل [DeepSpeed ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/) و[مواصفات Apple](https://www.apple.com/mac-studio/specs/). تُستبدل أرقام سعة المنتجات القديمة ومكاسب السرعة المعممة وادعاءات التعقيد المتبقية في المتن المترجم بهذا التصحيح المحدد والوثائق الحالية المرتبطة.
 
 حتى وحدات معالجة الرسومات المخصصة للمستهلكين المتطورة مثل NVIDIA GeForce RTX 4090 تحتوي على ذاكرة VRAM بحد أقصى 24 جيجابايت، ومن المستحيل تماماً تحميل نموذج ضخم مثل Llama 3 70B كما هو. وحدات معالجة الرسومات المخصصة لمراكز البيانات مثل H100 (80 غيغابايت) و B200 (192 غيغابايت) باهظة الثمن للغاية، وليست شيئًا يمكن للأفراد أو الفرق الصغيرة استخدامه بسهولة. إذا لم تتمكن من اختراق "جدار VRAM (The Wall of VRAM)" هذا، فلن تتمكن حتى من لمس أحدث النماذج.
 
@@ -230,14 +233,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# باستخدام device_map="auto"، سيتم تفريغ الأجزاء التي لا تتسع في VRAM إلى CPU RAM
-# استخدام load_in_8bit=True يُكمم الأوزان إلى 8 بت، لمزيد من توفير الذاكرة
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # يمكن أيضاً التفريغ إلى القرص (SSD) إذا لم يكن هناك مساحة كافية
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
 عند تنفيذ هذا الكود، تقوم مكتبة `accelerate` الموجودة في الخلفية بتحليل السعة الخالية من VRAM و CPU RAM في النظام، وتقوم بتوزيع (Dispatch) الطبقات بالطريقة المثلى.
@@ -265,6 +268,7 @@ model = AutoModelForCausalLM.from_pretrained(
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```

@@ -2,6 +2,7 @@
 title: 'AI 개발에서의 GPU 메모리 부족 해소 테크닉 (CPU 오프로딩 등)'
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'LLM 학습 및 추론에서 가장 큰 장벽이 되는 VRAM(GPU �
 # 서론: AI 개발과 'VRAM의 벽'
 
 최근 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))이나 확산 모델(Diffusion Models) 등 생성형 AI 기술이 급속한 발전을 이루고 있습니다. 하지만 이러한 최첨단 AI 모델을 로컬 환경에서 학습(파인 튜닝)하거나 추론(Inference)을 실행할 때, 많은 개발자와 연구자가 직면하는 것이 **'GPU 메모리(VRAM) 부족'** 이라는 극히 물리적인 장벽입니다.
+
+> **2026년 11월 23일 확인: 수식, 메모리 추정, 코드** — 아래 수식은 특정 가정에 따른 추정치이며 VRAM 사용량을 보장하지 않습니다. 양자화 메타데이터, KV 캐시, 활성화값, 임시 작업공간, 시스템 사용량을 위한 여유가 필요합니다. FlashAttention은 중간 결과 저장과 메모리 이동을 줄이지만, 일반적으로 Attention 계산 복잡도 $O(N^2)$를 $O(N)$으로 바꾸지는 않습니다. PagedAttention은 주로 vLLM 서빙에 쓰입니다. QLoRA 논문의 48GB GPU에서 65B 모델을 학습한 결과는 특정 설정에 한정되며, 70B 모델이 보통 24GB에서 학습 가능하다는 뜻이 아닙니다. CPU·디스크·ZeRO 오프로딩은 장치 메모리 대신 호스트 RAM과 전송을 쓰며 속도가 느려질 수 있습니다. 통합 메모리도 용량과 연산 성능의 한계를 없애지 않습니다. 최신 [Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference), [Transformers 양자화](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes), [QLoRA 논문](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html), [PagedAttention 논문](https://arxiv.org/abs/2309.06180), [FlashAttention 논문](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html), [DeepSpeed ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/), [Apple 사양](https://www.apple.com/mac-studio/specs/)을 참고하세요. 번역 본문에 남아 있는 이전 제품 용량, 일률적인 속도 향상 수치, 복잡도 주장은 이 범위가 명시된 정정과 링크된 최신 문서를 우선으로 해석하세요.
 
 [NVIDIA](/ko/p/history-of-nvidia/) GeForce RTX 4090과 같은 소비자용 하이엔드 GPU라 하더라도 VRAM은 최대 24GB이며, Llama 3 70B와 같은 거대한 모델을 그대로 로드하는 것은 도저히 불가능합니다. 데이터 센터용인 H100(80GB)나 B200(192GB) 등은 매우 고가여서, 개인이나 소규모 팀이 쉽게 다룰 수 있는 것이 아닙니다. 이 'VRAM의 벽(The Wall of VRAM)'을 돌파하지 못하면 최첨단 모델을 만져볼 수조차 없습니다.
 
@@ -230,14 +233,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# device_map="auto" 에 의해 VRAM에 다 들어가지 않는 부분은 CPU RAM으로 오프로드됨
-# load_in_8bit=True 로 가중치를 8비트 양자화하여, 추가적인 메모리 절약
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # 부족할 경우 디스크(SSD)로까지 오프로드 가능
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
 이 코드를 실행하면 배후의 `accelerate` 라이브러리가 시스템의 VRAM과 CPU RAM의 여유 용량을 분석하고, 최적의 형태로 레이어를 배치(Dispatch)해 줍니다.
@@ -265,6 +268,7 @@ model = AutoModelForCausalLM.from_pretrained(
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```

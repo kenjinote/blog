@@ -2,6 +2,7 @@
 title: "AI開発におけるGPUメモリ不足の解消テクニック（CPUオフロードなど）"
 slug: "ai-gpu-vram-optimization-cpu-offloading"
 date: "2026-09-11T01:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -12,11 +13,13 @@ description: "LLMの学習や推論において最大の障壁となるVRAM（GP
 
 # はじめに：AI開発と「VRAMの壁」
 
-近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）や拡散モデル（Diffusion Models）などの生成AI技術が急速な発展を遂げています。しかし、これらの最先端のAIモデルをローカル環境で学習（ファインチューニング）したり、推論（Inference）を実行したりする際、多くの開発者や研究者が直面するのが **「GPUメモリ（VRAM）不足」** という極めて物理的な障壁です。
+近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（LLM）や拡散モデルなどの生成AI技術が急速に発展しています。ローカルでモデルを学習・推論するとき、重みだけでなくKVキャッシュ、中間活性、ワークスペース、バッチ数もGPUメモリを使います。このため、必要量はモデル・精度・系列長・バッチ数・実装により変わります。
 
-[NVIDIA](/p/history-of-nvidia/) GeForce RTX 4090などのコンシューマー向けハイエンドGPUであってもVRAMは最大24GBであり、Llama 3 70Bのような巨大なモデルをそのままロードすることは到底不可能です。データセンター向けのH100（80GB）やB200（192GB）などは非常に高価であり、個人や小規模なチームが手軽に扱えるものではありません。この「VRAMの壁（The Wall of VRAM）」を突破できなければ、最先端のモデルに触れることすらできません。
+> **2026年11月23日確認：式・必要容量・実装の注意** — 以下の容量式は条件を置いた概算で、VRAMの保証値ではありません。量子化メタデータ、KVキャッシュ、活性、一時領域、OSの使用量を見込んでください。FlashAttentionはAttentionの計算量そのものを $O(N)$ にする手法ではなく、中間行列の保存やメモリ転送を抑えます。PagedAttentionは主にvLLMのサービング向けです。QLoRA論文の「65Bを48GBで学習」は論文内の特定設定で、24GBで70Bが一般に学習できるという意味ではありません。CPU/ディスク/ZeROオフロードは容量と引き換えにRAM・通信・速度の制約があります。統合メモリも空き容量やGPU性能の制約をなくしません。最新版の[Accelerate](https://huggingface.co/docs/accelerate/main/concept_guides/big_model_inference)、[Transformers量子化](https://huggingface.co/docs/transformers/main/quantization/bitsandbytes)、[QLoRA論文](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html)、[PagedAttention論文](https://arxiv.org/abs/2309.06180)、[FlashAttention論文](https://proceedings.neurips.cc/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html)、[DeepSpeed ZeRO-Offload](https://www.deepspeed.ai/tutorials/zero-offload/)、[Apple仕様](https://www.apple.com/mac-studio/specs/)を参照してください。 翻訳本文に残る旧製品容量、固定速度倍率、計算量の説明も、この条件付き訂正とリンク先の現行資料を優先して読んでください。
 
-本記事では、このVRAM制限という物理的な制約をソフトウェアおよびハードウェアのアーキテクチャの工夫によって打破するための、高度なテクニックを推論と学習の両面から徹底的に解説します。CPUオフロード、KVキャッシュの最適化、勾配チェックポイント（Gradient Checkpointing）、そして最新の統合メモリ（Unified Memory）アーキテクチャまで、数式や図解を交えながら深掘りしていきましょう。この記事を読めば、VRAMの挙動を深く理解し、限られたリソースで巨大なモデルを扱うための実践的な知識が身につきます。
+必要なメモリを超えるモデルでも、量子化、複数GPUへの分割、CPU/ディスクオフロードで動かせる場合があります。ただし、速度、対応演算、品質、必要なホストRAMとストレージに制約が生じます。メーカー公称容量と、OSや他のプロセスを差し引いた実利用可能量も区別してください。
+
+この記事では、推論と学習における代表的なメモリ最適化を説明します。式は構成を理解するための概算です。ライブラリやモデルの版ごとの対応状況を確認し、実際のメモリ使用量と速度を測定してください。
 
 ---
 
@@ -34,7 +37,7 @@ AIモデルを構成するパラメータ（Weights）が消費する基本的�
 - **INT8 (8ビット整数):** 1 byte (量子化モデル)
 - **INT4 (4ビット整数量子化):** 0.5 bytes (GPTQ, AWQ, [GGUF](/p/llama-cpp-quantization-gguf/)などの極度な量子化)
 
-モデル全体のパラメータ数を $P$ とすると、重みそのものが占有するベースのメモリ量 $M_{weights}$ は以下の数式で表されます。
+モデル全体のパラメータ数を $P$、1パラメータあたりの格納サイズを $B$ bytes とすると、重みだけの理論的な下限は以下です。量子化メタデータ、アラインメント、一時バッファー、ランタイムのメモリは含みません。
 
 $$ M_{weights} = P \times B $$
 
@@ -42,14 +45,14 @@ $$ M_{weights} = P \times B $$
 
 $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \text{ bytes} \approx 16 \text{ GB} $$
 
-つまり、純粋にモデルの重みをGPUに載せるだけで16GBのVRAMを消費します。RTX 3060 (12GB) ではこの時点でOut of Memory (OOM) エラーが発生します。しかし、モデルをINT4に量子化すれば $8 \times 0.5 = 4 \text{ GB}$ となり、余裕でロード可能になります。
+この例では重みだけで約16GB（10進表記。16GiBとは異なります）を使うため、12GBのGPUにはそのまま収まりません。INT4の理論値は約4GBですが、実際の4-bit形式では量子化スケール等の追加領域が必要で、推論にはKVキャッシュや作業領域も要ります。搭載メモリ内で動くかは、モデル形式・実装・文脈長を含めて確認してください。
 
 ## 1.2 推論時のメモリ消費：KVキャッシュの増大
 
 [LLM](/p/large-language-models-llm-transformer-prompt-engineering/)の推論（特に自己回帰的なテキスト生成）において、重みと同じかそれ以上にVRAMを激しく圧迫するのが **KVキャッシュ（[Key-Value](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** です。
 [Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)アーキテクチャでは、過去に生成・処理したトークンの情報を再計算するのを防ぐため、各アテンション層でのKeyとValueのテンソルをVRAMにキャッシュし続けます。これにより計算速度（Compute）は向上しますが、コンテキスト長（入力プロンプト長＋生成長）が長くなるにつれて、メモリ消費量が線形に爆発的に増加します。
 
-1トークンを処理する際に消費されるKVキャッシュのメモリ量 $M_{kv\_token}$ は、モデルのアーキテクチャに基づいて以下の数式で厳密に計算されます。
+均一な層・ヘッド形状で、KとVを同じ精度で保持すると仮定した1トークンあたりのKVキャッシュ量 $M_{kv\_token}$ の概算は次のとおりです。実装によるパディング、スライディングウィンドウ、量子化メタデータ等は別途考慮します。
 
 $$ M_{kv\_token} = 2 \times N_{layers} \times N_{heads\_kv} \times D_{head} \times B $$
 
@@ -73,7 +76,7 @@ $$ M_{kv\_total} = M_{kv\_token} \times L_{seq} \times BatchSize $$
 
 $$ M_{kv\_total} = 2 \times 32 \times 32 \times 128 \times 2 \times 8192 \times 1 = 4,294,967,296 \text{ bytes} \approx 4 \text{ GB} $$
 
-もしコンテキストを32K（32768トークン）に伸ばした場合、KVキャッシュだけで約16GBを消費します。バッチサイズを4に増やせば64GBです。モデル自体のサイズよりも遥かに巨大なVRAMを要求するようになるのが推論時の大きな課題です。
+同じ仮定でコンテキストを32KにするとKVキャッシュは約16GiB、バッチサイズ4では約64GiBになります。これは構成を示す例であり、実際の使用量はモデルのKVヘッド数・精度・共有方式等で変わります。
 
 ## 1.3 学習時のメモリ消費：オプティマイザと勾配とアクティベーション
 
@@ -84,11 +87,11 @@ $$ M_{kv\_total} = 2 \times 32 \times 32 \times 128 \times 2 \times 8192 \times 
 3. **オプティマイザ状態 (Optimizer States):** AdamWなどの高機能なオプティマイザは、各パラメータに対して一次モーメント（Momentum）と二次モーメント（Variance）を保持します。学習の安定性を保つため、これらは通常FP32（4バイト）で保持されます。つまり、2つのモーメントで $4 + 4 = 8$ バイト/パラメータを消費します。
 4. **アクティベーション (Activations):** 逆伝播の勾配計算のために、順伝播時の各層の出力（中間状態）をメモリに保持しておく必要があります。これはバッチサイズやシーケンス長に強く依存し、非常に巨大になります。
 
-まとめると、標準的なAdamオプティマイザを使用した混合精度学習（Mixed Precision Training）では、1パラメータあたり **約16〜20バイト** （マスター重み4 + FP16重み2 + 勾配2 + オプティマイザ8 + α）のメモリが必要になります。
+例えばFP32マスター重み、FP16重みと勾配、FP32 Adamの2つのモーメントをすべて保持する構成なら、パラメータ関連だけで概ね16 bytes/parameterです。実装やオプティマイザが異なれば値も変わり、アクティベーションや一時領域は別に必要です。
 
 $$ M_{train\_param} \approx P \times 16 \text{ bytes} $$
 
-7B（70億パラメータ）モデルの学習には、パラメータ関連だけで $7B \times 16 = 112 \text{ GB}$、それにアクティベーションが加わり、なんと140GB以上のVRAMが必要になる計算です。これを24GBのVRAMで実行するには、次章以降で解説する強烈な最適化技術が不可欠です。
+この仮定で7Bモデルなら、重み・勾配・オプティマイザ状態の合計は約112GB（10進）に達し得ます。これは全モデルがGPUに常駐する標準的な学習例であり、特定のモデルや学習方式に必要なVRAMを示す固定値ではありません。
 
 ---
 
@@ -114,20 +117,20 @@ graph TD
 **メカニズムと課題:**
 [Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)モデルは層（レイヤー）が直列に積み重なった構造をしているため、ある層の計算が終わるまで次の層の計算は始まりません。これを利用し、GPUに収まる層（例：1層〜15層）だけをVRAMに常駐（ピン留め）させ、残りの層（16層〜32層）は大容量だが低速なCPU RAMに置いておきます。推論中、15層までの計算が終わると、16層目の重みをCPUからGPUへPCIeバス経由で転送（コピー）し、GPU上で計算を実行します。
 
-ただし、 **PCIeの帯域幅（Bandwidth）が強烈なボトルネック** となります。PCIe 4.0 x16の理論上の最大帯域幅は32GB/s（片方向）ですが、最新GPUのVRAM内部帯域幅（例えばRTX 4090のGDDR6Xは1008GB/s、H100のHBM3は3TB/s以上）と比較すると2桁も遅いため、CPUオフロードを多用すると推論速度（Tokens per Second）は劇的に低下します。
-速度低下を最小限に抑えるためには、可能な限り多くの層をGPUに載せ（GPU Layersの最大化）、オフロードする層を最小限にすることが実用上のポイントです。
+ただし、CPUとGPU間の転送帯域や遅延は制約になり、層の移動を頻繁に行う構成では推論速度が下がることがあります。実効帯域はPCIe世代・レーン数・プラットフォーム・転送方法で変わるため、理論値だけで速度を予測せず実測してください。
+速度とメモリの折り合いをつけるには、対象ランタイムの配置設定を調整し、実際のモデルと系列長で評価します。
 
 ## 2.2 KVキャッシュの量子化とPagedAttention
 
 推論時のVRAM消費の元凶であるKVキャッシュに対しても、二つの強力な最適化が行われています。
 
 **1. KVキャッシュ量子化（KV Cache Quantization）:**
-モデルの重みだけでなく、実行時に動的に生成されるKVキャッシュ自体をINT8やINT4、あるいはFP8に量子化してVRAMに保存する手法です。これにより、KVキャッシュのサイズを半分から4分の一に削減できます。最新の推論エンジン（vLLMやllama.cpp）ではこの機能が組み込まれており、精度劣化を最小限に抑えつつ大幅なVRAM節約を実現しています。
+対応する推論エンジンやモデルでは、KVキャッシュをFP8等の低精度形式で保持でき、理論上は格納量を減らせます。対応方式、精度への影響、速度は実装・ハードウェア・モデルにより異なり、必ず半分〜4分の1になるとは限りません。導入前に公式ドキュメントと実タスクで確認してください。
 
 **2. PagedAttention:**
-OSの仮想メモリの「ページング」の概念をKVキャッシュに適用したのが、vLLMという推論エンジンで導入された **PagedAttention** です。従来の推論エンジンでは、設定された最大シーケンス長に合わせて、あらかじめ連続したVRAM領域を確保（Pre-allocation）していました。このため、実際の入力が短い場合にはフラグメンテーション（断片化）や未使用メモリの無駄が生じ、VRAMの60%以上が浪費されることもありました。
+vLLMの **PagedAttention** は、OSのページ管理に着想を得てKVキャッシュをブロック単位で管理する方式です。vLLMの論文は特定の既存サービングシステムの評価で、予約や断片化によりKV領域の多くが未使用になる例を報告しています。その割合は実装やワークロードに固有で、すべての推論環境に当てはまる値ではありません。
 
-PagedAttentionはKVキャッシュを固定サイズのブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（ページ）に分割し、非連続な物理メモリ空間に分散して格納することを可能にします。これにより、メモリの無駄をほぼゼロ（内部フラグメンテーションのみに制限）にし、同じVRAM容量でもバッチサイズを大幅に引き上げることができます。
+vLLMはKVキャッシュを固定サイズのブロックに分割し、非連続な物理メモリへ割り当てます。これにより従来方式で起きる予約・断片化の無駄を大きく減らせますが、内部断片化がゼロになるわけではありません。この主な用途はLLMサービングであり、すべてのローカル推論UIの機能ではありません。
 
 ```mermaid
 graph LR
@@ -144,24 +147,24 @@ VRAM不足は、データを保存するメモリ量だけでなく、計算中�
 これを解決したのが **FlashAttention** （およびFlashAttention-2, 3）です。
 FlashAttentionは、GPUのハードウェアアーキテクチャ（巨大だが遅いHBMと、極小だが超高速なSRAMの階層構造）を意識したアルゴリズムです。タイル化（Tiling）と呼ばれる手法を用い、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ごとにデータをSRAMにロードしてアテンション計算を完結させることで、$N \times N$ の行列をHBM（VRAM）に書き出す処理を完全に回避します。
 
-これにより、アテンション層のメモリ複雑性は $O(N^2)$ から $O(N)$（シーケンス長に比例）へと劇的に低下し、コンテキスト長の制限が大幅に緩和されました。
+FlashAttentionは厳密なAttentionの計算結果を保ちながら、タイル化によってHBMへの読み書きを減らし、中間の $N \times N$ 行列をGPUメモリに丸ごと保存する必要をなくします。Attentionの計算量自体が一般に $O(N^2)$ から $O(N)$ へ変わるわけではありません。実装とGPUにより、メモリ使用量や速度の改善幅は異なります。
 
 ## 2.4 統合メモリ（Unified Memory）の台頭とApple Silicon
 
-PCアーキテクチャの根本からこの問題にアプローチしているのが、Apple Silicon（M1/M2/M3/M4シリーズのMaxやUltra）や、一部の最新APU（AMD Strix Pointなど）が採用している **統合メモリアーキテクチャ（Unified Memory Architecture: UMA）** です。
+PCアーキテクチャの別の選択肢が、Apple Siliconなどが採用する **統合メモリアーキテクチャ（Unified Memory Architecture: UMA）** です。製品ごとの上限や対応ソフトウェアは更新されるため、購入・構築前に公式仕様を確認してください。
 
-これらのアーキテクチャでは、マザーボード上のCPUとGPUが全く同じ物理メモリ（例えば最大192GBのLPDDR5）を共有します。そのため、「CPUからGPUへのPCIe経由の遅いデータ転送」という概念自体が物理的に存在しません。
+これらのアーキテクチャではCPUとGPUが物理メモリを共有し、別個のディスクリートGPU VRAMへのPCIeコピーを避けられる場合があります。ただし、メモリ帯域・GPU演算性能・アプリ対応は個別GPUと異なり、統合メモリの全容量をモデルが使えるわけでもありません。
 
 ```mermaid
 graph TD
     subgraph "Unified Memory Architecture (e.g. Apple Silicon)"
         A["CPU Cores"] <--> C["Shared Memory Controller"]
         B["GPU Cores / Neural Engine"] <--> C["Shared Memory Controller"]
-        C["Shared Memory Controller"] <--> D["Unified Memory Pool (e.g. 192GB)"]
+        C["Shared Memory Controller"] <--> D["Shared Unified Memory (capacity varies)"]
     end
 ```
 
-このアーキテクチャの最大の利点は、VRAMという明確な壁がなく、システムメモリのほぼ全域を巨大な[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)のロードにそのまま使用できる点です。192GBのユニファイドメモリを持つMac Studioであれば、70Bクラスやそれ以上の巨大モデル（例えばGrok-1など）を量子化なしで単体デバイスにロードし、高速に推論することが可能です。メモリアクセス帯域幅もM2 Ultraで800GB/sに達し、コンシューマー向けディスクリートGPUに匹敵する速度を誇ります。「メモリ容量」と「帯域幅」のジレンマをハードウェアレベルで解決する非常に強力なアプローチです。
+統合メモリは、モデルの重みとCPU/GPUが共有するメモリ容量を増やす選択肢です。モデル本体に加え、OS・実行環境・KVキャッシュ・アクティベーション用の余裕が必要です。モデルのロード可否だけから生成速度を推定することはできません。利用可能容量や帯域は機種・構成で異なるため、最新の[Apple仕様](https://www.apple.com/mac-studio/specs/)等を確認し、対象アプリで測定してください。
 
 ---
 
@@ -176,7 +179,7 @@ graph TD
 **勾配チェックポイント（Gradient Checkpointing / Activation Recomputation）** は、メモリ容量と計算時間（Compute）のトレードオフを利用した天才的なテクニックです。
 全ての中間出力をメモリに保存するのではなく、特定のレイヤー（チェックポイント）の出力だけを保存しておきます。バックプロパゲーション時にチェックポイントされていない中間の値が必要になったら、 **保存しておいた最寄りのチェックポイントから再度フォワードパスを計算（再計算）して値を復元** します。
 
-計算量は約20〜30%増加し、学習のトータル時間は長くなりますが、アクティベーションによるVRAM消費量を $O(N)$（$N$はレイヤー数）から $O(\sqrt{N})$ にまで劇的に削減できます。現在の大規模モデルの学習では、これが無ければ始まらないと言えるほど必須の設定項目です。
+チェックポイントの配置によっては、逆伝播で一部の順伝播を再実行するため、メモリを節約する代わりに計算時間が増えます。削減量と速度低下はモデル、チェックポイント間隔、バッチ・系列長、実装で変わります。固定の20〜30%や $O(\sqrt{N})$ を全方式共通の保証値とはみなさず、使用中の学習ライブラリの説明を確認してください。
 
 ## 3.2 LoRA と QLoRA (Low-Rank Adaptation)
 
@@ -190,13 +193,13 @@ $$ W_{adapted} = W_0 + \Delta W = W_0 + B A $$
 
 さらに、これを極限まで進化させたのが **QLoRA (Quantized LoRA)** です。
 QLoRAでは、ベースモデルの重み $W_0$ を4ビット（NF4: NormalFloat4形式）に極限まで量子化してVRAMにロードします。そして、LoRAの小さな行列 $A, B$ は計算精度を保つためBF16（16ビット）で学習させます。
-4ビット量子化によりベースモデルのVRAMサイズを元の4分の1にしつつ、 **Paged Optimizers** （ページドオプティマイザ）という技術を使用して、VRAMが枯渇しそうになった際にオプティマイザの状態を一時的にCPU RAMへ自動的に退避（オフロード）させます。これにより、24GB VRAM（RTX 4090等）の単一GPUでも、Llama 3 70Bのような超巨大モデルのファインチューニングが可能になりました。
+4-bit基底重みとLoRA、ページドオプティマイザを組み合わせる方法があります。QLoRA論文では、特定の設定で65Bモデルを48GBの単一GPU上で微調整した例を報告しています。これは24GB GPUで70Bモデルが一般に学習できるという意味ではありません。文脈長、バッチ、チェックポイント、GPU、実装等で必要量が変わるため、再現条件を確認してください。
 
 ## 3.3 DeepSpeed ZeRO と オフローディング
 
 複数のGPU（マルチGPU）を使用する環境において、単なるデータ並列化（Data Parallelism）ではVRAM問題は解決しません。各GPUがモデル全体のコピーを保持するため、個々のVRAM容量の限界は超えられないからです。
 
-Microsoftが開発した **DeepSpeed** ライブラリの **ZeRO (Zero Redundancy Optimizer)** は、モデルのパラメータ、勾配、オプティマイザ状態を複数のGPU間で徹底的に分割（シャード）する技術です。これにより、複数GPUのVRAMの「合計値」を1つの巨大なメモリプールのように扱うことができます。
+MicrosoftのDeepSpeedにある **ZeRO (Zero Redundancy Optimizer)** は、データ並列学習の重複状態を段階的にGPU間で分割する仕組みです。Stage 3でも各GPUに全状態を単純に複製せずに済みますが、GPUメモリが一つの物理プールになるわけではありません。通信・再構築・モデル対応などのコストがあります。
 
 ```mermaid
 graph TD
@@ -213,7 +216,7 @@ graph TD
 - **ZeRO Stage 2:** 勾配も各GPUに分割
 - **ZeRO Stage 3:** モデルのパラメータ（重み）自体も各GPUに分割
 
-さらに、 **ZeRO-Offload** という機能を使用すると、ZeROで分割したオプティマイザ状態や勾配の更新計算を、GPUではなく **CPUメモリにオフロード** してホストCPUで実行させることができます。これにより、GPU VRAMの負担を極限まで減らし、限られたGPU環境でも巨大モデルの学習が可能になります。計算をCPUで行い、結果をPCIe経由でGPUに戻すため学習速度は低下しますが、「メモリ不足で学習がクラッシュする」という最悪の事態を回避できます。
+ZeRO-Offloadは構成に応じてオプティマイザ状態・計算をCPUメモリ側へ移します。GPUメモリを節約できますが、ホストRAM、CPU処理、転送帯域を使い、学習速度が低下する場合があります。OOMを必ず防ぐものではなく、モデル・データ・ライブラリの条件を満たす必要があります。
 
 ---
 
@@ -230,17 +233,17 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "meta-llama/Llama-2-13b-hf"
 
-# device_map="auto" により、VRAMに入り切らない分はCPU RAMにオフロードされる
-# load_in_8bit=True で重みを8ビット量子化し、さらなるメモリ節約
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
+    dtype="auto",
     device_map="auto",
-    load_in_8bit=True,
-    offload_folder="offload_dir" # 足りない場合はディスク（SSD）にまでオフロード可能
+    max_memory={0: "10GiB", "cpu": "48GiB"},
+    offload_folder="offload_dir",
 )
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 ```
 
-このコードを実行すると、背後の`accelerate`ライブラリがシステムのVRAMとCPU RAMの空き容量を分析し、最適な形でレイヤーを配置（Dispatch）してくれます。
+このコードでは、`accelerate`がモデル配置を計画します。デバイスの空き容量、配置上限、モデル構造によって結果が変わり、自動配置が速度やメモリ効率の最適解とは限りません。
 
 ## 4.2 DeepSpeedのCPUオフロード設定 (ZeRO-2)
 
@@ -265,16 +268,17 @@ model = AutoModelForCausalLM.from_pretrained(
     "contiguous_gradients": true
   },
   "train_batch_size": 16,
+  "train_micro_batch_size_per_gpu": 4,
   "gradient_accumulation_steps": 4
 }
 ```
-この設定では、`offload_optimizer` を `"cpu"` に指定することで、VRAMを大量に消費するオプティマイザ（Adam等）の状態保持と更新計算をシステム側のCPUで実行させます。GPUのVRAMをモデルのフォワード/バックワード計算という最も重要なタスクに専念させることができます。`pin_memory: true` を設定することで、ページフォールトを防ぎ、CPU-GPU間のPCIe転送を可能な限り高速化しています。
+この1 GPU例では、`offload_optimizer`を`"cpu"`にしてオプティマイザ状態と更新をCPU側へ移します。一般に `train_batch_size = GPU数 × train_micro_batch_size_per_gpu × gradient_accumulation_steps` となるよう、GPU数に応じて設定を合わせます。`pin_memory: true`はページロックされたホストメモリを使用し転送を速める場合がありますが、ホストRAMを占有します。使用中のDeepSpeed版の設定仕様と実測を確認してください。
 
 ---
 
 # まとめ
 
-AI開発におけるGPUメモリ不足（Out of Memory）は、モデルの大規模化に伴い今後も開発者に付き纏う永遠の課題です。しかし、本記事で解説したようなハードウェア（アーキテクチャ）の深い理解と、ソフトウェア・アルゴリズム面での最適化テクニックを適切に組み合わせることで、一見不可能に思えるローカル環境での巨大モデルの推論・学習が可能になります。
+AI開発では、モデルやワークロードに応じてGPUメモリの制約に対処する必要があります。メモリ最適化は実行可能なモデルやバッチ数を広げる一方、精度・速度・互換性とのトレードオフがあります。使用するライブラリの現行仕様と実測値に基づいて組み合わせてください。
 
 **推論時における対策のまとめ：**
 1. **量子化 (INT4 / INT8 / FP8):** モデルそのもののサイズを劇的に圧縮し、VRAM占有量を削減する。
