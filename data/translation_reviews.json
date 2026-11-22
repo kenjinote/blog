@@ -5885,6 +5885,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-048.json",
       "evidenceHash": "bdaf136a50ca187ab08e631cae6a3531e51c3d43a8b9c229251822a5b338a7bf"
+    },
+    "post/七草粥のレシピ/index.en.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "cd4a091df50621099cce2fe6146e5627410acf001dff24763838096dc219e328",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "7a11176afb4e0774661363253f6f2762474b3fb1e7ab3d65cd655968e803969c"
+    },
+    "post/七草粥のレシピ/index.zh-cn.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "da08dda5bbfe9aef4f285f8688647ea359c32c4286095b5e2736a7aeeb6735dc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "8ac97222305a11301270ebad17367ac05c0727a851df2ef40414b0af155634c7"
+    },
+    "post/七草粥のレシピ/index.es.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "de36528805c8381ce78b3d3290f6c35ab40cd29adfac2f9922516bbb974ddff1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "cde375d6a2033dece98dea70ded86797199886ac6b61fe91be21e7a7fd8a05c0"
+    },
+    "post/七草粥のレシピ/index.ko.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "95dd7c6747c0d8c6d231c5f8ca10f5d4145f5cf2e6ade18df48a8486fdb0586a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "d5eeda98fe8afb68b73759cba96a1ce30fb0250c29e23837c509fc78fe3aaf14"
+    },
+    "post/七草粥のレシピ/index.pt.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "2bbeaf7c6cde82729e579cdbfc8c9f3da62dc47532fe0245082b7f09b7fdda6d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "c8fce2692003e334a0c88c17c4f43363f17017bdf2db2f4f9ea232cce6c8a602"
+    },
+    "post/七草粥のレシピ/index.zh-tw.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "046ad5f1128f8ae1d781c035062f7b6107fba092506057619132259997f876cc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "535e2e08686c62dab32e74055eabbf933e027a21a6e5ead9a8fb4f1da07d410c"
+    },
+    "post/七草粥のレシピ/index.hi.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "4a069bfd65f3f635fbd06030fee97968882e91f8abaf37ec955d5f7da333937d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "82dfad4d2d06b58b224a175b25554344890d10346cad04223f4018491af0c576"
+    },
+    "post/七草粥のレシピ/index.fr.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "b96eee36c9fc8c8de777649e70ae4bfe73b1febe815af8adaaddf3386c542a7b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "03c5ffe2a4d06406c30ef506996dabe55c6d148edc57abf749627721ba14417a"
+    },
+    "post/七草粥のレシピ/index.de.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "d1feb1768cb6ad13146cfc6e64ef938d274cbbbeb272c9a6484bb86eeae6f1b1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "5efbc49ca23ff5c7d601441081339eee29b03bd9b85d09451b7cfc8da33d3cdf"
+    },
+    "post/七草粥のレシピ/index.ar.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "54780c07881bbe7c43723046947e8365376a6bcfa7622f3c9bd2ea3cb217f9b3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "39e4fc0fa06a6b7215f10d04a6e1339697765ae3d5c58a212ee66d8d1baa8b00"
+    },
+    "post/七草粥のレシピ/index.ru.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "12fbd7b8d3ea64a06c9e6ba7607065df7a97d46280cfe3f0e1cb6ba198fd0e23",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "a8681bf62942db2b547f36d1bf8dda68387a60d1ba9b088ce338ab397c0ebb3f"
+    },
+    "post/七草粥のレシピ/index.id.md": {
+      "source": "post/七草粥のレシピ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "1ce9105b622c24ba97c043f79b1d68041bafd5c5553dbc4ee03b79fbd4b2723b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-049.json",
+      "evidenceHash": "1d241c81a5dfbc643b813c8aa7879adf195fbcaf8cc7ec4842c5a9e766842834"
     }
   }
 }

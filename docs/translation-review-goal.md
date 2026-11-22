@@ -886,3 +886,7 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 2026-11-23 Batch048: 「落ち着いたジャズ」記事を日本語原文＋12翻訳で全文照合。同一YouTube埋込IDを確認し、oEmbed HTTP 200で動画メタデータを照合。集中力・生産性向上や疲労回復を断定するSEO説明を削除し、視聴内容と用途に沿うタイトル・説明・字幕前文へ修正。既存公開日2022-09-08を保持して重複日を除去し、lastmod設定。AI校閲台帳 current 588、未確認12,444、人確認0。AI校閲のみ。Batch048の記録は`docs/translation-review/batch-048.json`。Batch047公開確認および全記事goal継続。
 
 - 2026-11-23 Batch047公開確認完了。CI run 45067194563／commit `5545a4b03fd4a42dc78bdde405e8d2deb5deb043` 成功。FizzBuzz記事の原文＋12翻訳の公開13ページでHTTP 200・タイトル・canonical・言語/RTL・原日付/更新日・コード表示・独語誤リンク除去・葡語見出し・hreflang先を確認。校閲台帳はcurrent 588、未確認12,444、人確認0。
+
+- 2026-11-23 Batch049: 七草粥記事を原文＋12翻訳で全文校閲。一覧のみでレシピがない不整合を解消し、1月7日の人日行事、2〜3人分の基本手順、食用市販セットの使用、野草の誤食注意を追加。仏の座をコオニタビラコ（*Lapsanastrum apogonoides*）に統一、独仏の誤Javaリンク除去、it-technologyカテゴリを生活カテゴリへ修正。MAFF・環境省・料理出典・Kewを照合。重複日付を除去し2024-01-06を保持、lastmod設定。AI校閲台帳 current 600、未確認12,432、人確認0。AI校閲のみ、調理実地検証なし。Batch049記録は`docs/translation-review/batch-049.json`。Batch048の公開確認と全記事goal継続。
+
+- 2026-11-23 Batch049: 七草粥記事を原文＋12翻訳で全文校閲。七草一覧のみでレシピがない不整合を補い、1月7日の人日行事、2〜3人分の基本手順、食用市販セット、野草の誤食注意を追加。仏の座をコオニタビラコ（*Lapsanastrum apogonoides*）に統一、独仏の無関係なJavaリンクを除去。MAFF・環境省・料理出典・Kewを照合。重複日付除去、2024-01-06維持、lastmodとカテゴリを修正。AI校閲台帳 current 600、未確認12,432、人確認0。AIのみ、調理実地検証なし。Batch049記録は`docs/translation-review/batch-049.json`。Batch048公開確認と全記事goal継続。

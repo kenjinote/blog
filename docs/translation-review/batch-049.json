@@ -1,0 +1,477 @@
+{
+  "version": 1,
+  "article": "春の七草・七草粥のレシピ",
+  "frozenSourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+  "reviewedAt": "2026-11-23",
+  "reviews": {
+    "post/七草粥のレシピ/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "cd4a091df50621099cce2fe6146e5627410acf001dff24763838096dc219e328",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    },
+    "post/七草粥のレシピ/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "da08dda5bbfe9aef4f285f8688647ea359c32c4286095b5e2736a7aeeb6735dc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    },
+    "post/七草粥のレシピ/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "de36528805c8381ce78b3d3290f6c35ab40cd29adfac2f9922516bbb974ddff1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    },
+    "post/七草粥のレシピ/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "95dd7c6747c0d8c6d231c5f8ca10f5d4145f5cf2e6ade18df48a8486fdb0586a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    },
+    "post/七草粥のレシピ/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "2bbeaf7c6cde82729e579cdbfc8c9f3da62dc47532fe0245082b7f09b7fdda6d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    },
+    "post/七草粥のレシピ/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "046ad5f1128f8ae1d781c035062f7b6107fba092506057619132259997f876cc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    },
+    "post/七草粥のレシピ/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "4a069bfd65f3f635fbd06030fee97968882e91f8abaf37ec955d5f7da333937d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    },
+    "post/七草粥のレシピ/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "b96eee36c9fc8c8de777649e70ae4bfe73b1febe815af8adaaddf3386c542a7b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    },
+    "post/七草粥のレシピ/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "d1feb1768cb6ad13146cfc6e64ef938d274cbbbeb272c9a6484bb86eeae6f1b1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    },
+    "post/七草粥のレシピ/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "54780c07881bbe7c43723046947e8365376a6bcfa7622f3c9bd2ea3cb217f9b3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    },
+    "post/七草粥のレシピ/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "12fbd7b8d3ea64a06c9e6ba7607065df7a97d46280cfe3f0e1cb6ba198fd0e23",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    },
+    "post/七草粥のレシピ/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/七草粥のレシピ/index.md",
+      "sourceHash": "5f700686dbedee72465b5e7c4c190e61b2cd6068fbfa34fd5cec6abeebd449b7",
+      "translationHash": "1ce9105b622c24ba97c043f79b1d68041bafd5c5553dbc4ee03b79fbd4b2723b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Reviewed the full localized article against the Japanese source, including the January 7 Jinjitsu custom, seven herb names, the complete 2–3 serving recipe, ingredient variation, the cultural wish for health, and the warning that this is not a disease treatment."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the names of the seven plants across scripts. Corrected Hotokenoza to ko-onitabirako and added the accepted botanical name Lapsanastrum apogonoides to avoid confusion with plants sharing the Japanese common name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas or quantitative research claims; recipe quantities and cooking times are culinary instructions cited to a recipe source."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official MAFF context, Ministry of the Environment plant identification and foraging caution, a Japanese recipe source for the rice/water ratio and method, and Kew POWO taxonomy. Removed unrelated German and French links to a Java programming article."
+        }
+      },
+      "summary": "Expanded the list-only article into a sourced, culturally contextualized basic recipe; corrected the Hotokenoza plant identity; removed unrelated links; corrected the technology category and duplicate publication date; added a wild-plant safety warning.",
+      "languageSpecificFindings": "Reviewed each localized title, herb list, recipe, safety note, and source labels. AI proofreading only.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The recipe was not cooked or taste-tested in a physical kitchen.",
+        "No wild plants were collected; readers are directed to food-labelled herb packs or qualified plant identification."
+      ]
+    }
+  },
+  "primarySources": [
+    {
+      "title": "MAFF: seasonal festivals, Jinjitsu, and the seven herbs (Japanese)",
+      "url": "https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/about/attach/pdf/index-52.pdf",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Ministry of the Environment: identifying the seven herbs and wild plant safety (Japanese)",
+      "url": "https://kinki.env.go.jp/blog/2025/01/page_00168.html",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Shirogohan.com: Nanakusa-gayu recipe and rice/water method (Japanese)",
+      "url": "https://www.sirogohan.com/recipe/nanakusa/",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Kew Plants of the World Online: Lapsanastrum apogonoides",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:981300-1/general-information",
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "scope": "Japanese source and all twelve translations; full cultural explanation, all seven herb names, recipe quantities and steps, safety, metadata, and references reviewed.",
+  "publicationPending": true,
+  "publicationScope": "All 13 live language pages after the next GitHub Pages deployment."
+}
