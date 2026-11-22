@@ -480,8 +480,14 @@
       "evidence": "git log -- content/post/AI開発の壁/index.md"
     }
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "scope": "Read the complete Japanese personal essay and all 12 translations. Corrected duplicate dates across all 13 versions, restored the original 2025-07-20 publication date, added a 2026-11-23 lastmod, localized context about the essay and its Mt. Fuji metaphor, refined translation titles/essay tags, corrected English bold markup, and replaced filename-based image alt text with localized descriptions. Full Hugo production build and 13-page static preview checks passed; live publication checks remain pending.",
   "validation": "docs/translation-review/batch-044-preview-validation.json",
-  "localPreviewPassed": true
+  "localPreviewPassed": true,
+  "publication": {
+    "record": "docs/translation-review/publication-044.json",
+    "ciRun": 45059168070,
+    "deployedCommit": "674cff99d5afe32ed9d445793f69cc85a0e30515",
+    "allPassed": true
+  }
 }

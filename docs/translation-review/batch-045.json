@@ -483,8 +483,14 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "scope": "Updated the Japanese recovery article and rewrote all 12 translations against current official Google documentation. Clarifies Pixel 4a+ including Fold support; separates Update (may avoid factory reset) from Reinstall (factory reset and data erasure); corrects the live tool flow, Fastboot steps, general 70% reset charge guidance, backup/account preparation, and lower-risk troubleshooting. Full Hugo production build and 13-page static preview checks passed; no physical device testing.",
   "validation": "docs/translation-review/batch-045-preview-validation.json",
-  "localPreviewPassed": true
+  "localPreviewPassed": true,
+  "publication": {
+    "record": "docs/translation-review/publication-045.json",
+    "ciRun": 45061700015,
+    "deployedCommit": "c51a8d2316cf27f7b982dee9c41d8f6193259c1c",
+    "allPassed": true
+  }
 }

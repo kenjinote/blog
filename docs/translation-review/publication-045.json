@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T05:13:30.400326+09:00",
+  "ciRun": 45061700015,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45061700015",
+  "deployedCommit": "c51a8d2316cf27f7b982dee9c41d8f6193259c1c",
+  "allPassed": true,
+  "scope": "Batch 045 Japanese Pixel recovery article and all 12 translations; live HTTP checks validate tool instructions, Update/Reinstall data distinction, source links, original date, title, canonical, language/RTL, and hreflang.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AE%E5%BE%A9%E5%85%83%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AErestore%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AE%E6%81%A2%E5%A4%8D%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AE%E9%82%84%E5%8E%9F%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AErestauraci%C3%B3n%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AE%EB%B3%B5%EC%9B%90%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AErestaura%C3%A7%C3%A3o%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AErestauration%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AEwiederherstellung%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AE%E0%A4%AA%E0%A5%81%E0%A4%A8%E0%A4%B0%E0%A5%8D%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%AA%E0%A4%A8%E0%A4%BE%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AEpulihkan%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AE%D8%A7%D8%B3%D8%AA%D8%B9%D8%A7%D8%AF%D8%A9%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/androidgoogle-pixel%E7%AB%AF%E6%9C%AB%E3%81%AE%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%E6%89%8B%E9%A0%86/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "lastmod": true,
+        "correctDate": true,
+        "dataDistinction": true,
+        "fastbootFlow": true,
+        "officialLinks": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "No physical Pixel device or firmware process was tested.",
+    "AI review only; no human/native-speaker certification.",
+    "Browser/device visual review was not performed."
+  ]
+}
