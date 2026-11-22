@@ -1,0 +1,18 @@
+{
+  "command": [
+    "hugo",
+    "--environment",
+    "production",
+    "--minify",
+    "--buildFuture",
+    "--baseURL",
+    "https://kenji.blog/",
+    "--contentDir",
+    "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\content-40-bundles-ag03-r2",
+    "--destination",
+    "C:\\Users\\KENJIN~1\\AppData\\Local\\Temp\\kenji-priority-review-20261024\\public-40-bundles-ag03-r2"
+  ],
+  "exitCode": 0,
+  "stdout": "Start building sites … \nhugo v0.139.0-dacef0df92a9a20072b4eaa42003e1a63ace8f41+extended windows/amd64 BuildDate=2024-11-18T16:17:45Z VendorInfo=gohugoio\n\nWARN  Search page not found. Create a page with layout: search.\nWARN  Archives page not found. Create a page with layout: archives.\nWARN  found no layout file for \"json\" for kind \"home\": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.\nWARN  Failed to get translated string for language \"pt\" and ID \"toggleMenu\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"darkMode\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"notFound.title\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"notFound.subtitle\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"footer.builtWith\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"footer.designedBy\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"widget.categoriesCloud.title\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"widget.tagCloud.title\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"list.section\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"list.page\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"article.readingTime\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"article.tableOfContents\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"article.lastUpdatedOn\": %!s(<nil>)\nWARN  Failed to get translated string for language \"pt\" and ID \"article.relatedContent\": %!s(<nil>)\n\n                   | JA  | EN  | ZH-CN | ES  | KO  | PT  | ZH-TW | HI  | FR  | DE  | AR  | RU  | ID   \n-------------------+-----+-----+-------+-----+-----+-----+-------+-----+-----+-----+-----+-----+------\n  Pages            | 181 | 173 |   180 | 177 | 181 | 178 |   181 | 182 | 182 | 177 | 184 | 181 | 182  \n  Paginator pages  |   8 |   7 |     8 |   8 |   8 |   8 |     8 |   8 |   8 |   8 |   8 |   8 |   8  \n  Non-page files   |  45 |  45 |    45 |  45 |  45 |  45 |    45 |  45 |  45 |  45 |  45 |  45 |  45  \n  Static files     |  22 |  22 |    22 |  22 |  22 |  22 |    22 |  22 |  22 |  22 |  22 |  22 |  22  \n  Processed images | 158 |   0 |     0 |   0 |   0 |   0 |     0 |   0 |   0 |   0 |   0 |   0 |   0  \n  Aliases          | 136 | 129 |   136 | 133 | 137 | 134 |   137 | 140 | 138 | 133 | 140 | 137 | 138  \n  Cleaned          |   0 |   0 |     0 |   0 |   0 |   0 |     0 |   0 |   0 |   0 |   0 |   0 |   0  \n\nTotal in 6005 ms\n",
+  "stderr": ""
+}

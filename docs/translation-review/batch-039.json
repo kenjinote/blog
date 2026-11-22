@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "article": "AG03ノイズ解消方法",
+  "frozenSourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+  "reviewedAt": "2026-11-23",
+  "reviews": {
+    "post/AG03ノイズ解消方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "83c0acf2433ec709a64c72f0ca49290116dd95578cd3e591814cd256b1b266da",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    },
+    "post/AG03ノイズ解消方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "6666167d4741637432d58ab7fa6cfc0ec90cc1c9037ee45ab9a02af8fa5b16c1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    },
+    "post/AG03ノイズ解消方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "e984ed4d7fe57dced21053d431050efd573bafc3e4552c1f0eda3f919b6fa27e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    },
+    "post/AG03ノイズ解消方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "1a682a3468f9e367a93c2ec35e545195d14f0151fb77f6f9ecd8fd6d1a025413",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    },
+    "post/AG03ノイズ解消方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "3f0e4162b1cd35b6984b22ae527271e8ee7716e8885f144ae339c51193300798",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    },
+    "post/AG03ノイズ解消方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "26a0d3076ecd3ac498c6bcd38f6a89e796f99701cb151eead3b92fdb73f39771",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    },
+    "post/AG03ノイズ解消方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "2f85b8f159ecdc362a44cb02265cff291b8a8406388495fbbc517702a26d9bec",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    },
+    "post/AG03ノイズ解消方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "1f7603d1b861e614422ab8885b98149f70c1c0f89c16131a1b6d536490a97d9c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    },
+    "post/AG03ノイズ解消方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "3d1bf431c37444d9607e87dacb8eb62737bbd7e695d3262de9f8b823d0996af8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    },
+    "post/AG03ノイズ解消方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "f6350764c650fcefbdf906473293292c4254f33926d529b020a0e9bd2b07c50d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    },
+    "post/AG03ノイズ解消方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "61b254005ba770911b5344326c7c2bb8c1e228b3635007ea5d672ad757df2b2a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    },
+    "post/AG03ノイズ解消方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "9427c43c5b81a8b51ecf85f4b51a73362eab76826254723ae1a59d5971034095",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and full revised translation. Narrowed the claimed result to this author's setup, distinguished anecdote from a guaranteed fix, and aligned troubleshooting steps and OS guidance with the cited official Yamaha material."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the localized names and roles of Yamaha Steinberg USB Driver, AG03/AG06, AG DSP Controller and AG Controller, plus Windows-on-Arm, macOS standard driver and Windows control-panel instructions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims, equations or numerical calculations occur in this article."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No article source code is included. Setup.exe and Control Panel are installer/UI labels; no driver was downloaded or executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the stale archived FAQ and Japan-only Mercari ad with four current official Yamaha support, driver, troubleshooting and specification references. Confirmed destinations and localized each explanation; linked source pages are Japanese."
+        }
+      },
+      "summary": "Full-article AI review and correction of the AG03 intermittent-noise account, driver reinstall guidance, current compatibility cautions, and official references.",
+      "languageSpecificFindings": "Read the complete original and revised localized text. Corrected the overconfident one-step/instant-fix promise and added model/OS matching, driver reinstall, Windows-on-Arm compatibility caveat, AG DSP Controller incompatibility and Mac standard-driver note. Removed the stale Mercari listing and archived-only reference.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The author's hardware result was not independently reproduced; driver installation was not performed.",
+        "The current driver version and compatibility were checked on 2026-11-23 and may change.",
+        "Static article review only; no browser/device runtime or hardware noise diagnosis was performed.",
+        "All-article translation-review goal remains active."
+      ]
+    }
+  },
+  "publicationPending": true,
+  "scope": "Japanese source and all12 translations read in full, corrected, hashed and recorded as AI review. Fresh 40-bundle static production preview passed all13 article HTML checks, global multilingual and HTTPS checks. Publication and live verification pending.",
+  "validation": {
+    "record": "docs/translation-review/batch-039-r2-validation.json",
+    "checkedAt": "2026-11-23T00:53:29.160054+09:00",
+    "previewBundles": 40,
+    "articlePages": 13,
+    "allPassed": true
+  }
+}

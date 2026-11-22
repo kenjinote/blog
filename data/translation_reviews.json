@@ -4685,6 +4685,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-038.json",
       "evidenceHash": "e0b23b44f16997bea913461c5c8bf07830d5d243d1021d83184b2bc3d7157eba"
+    },
+    "post/AG03ノイズ解消方法/index.en.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "83c0acf2433ec709a64c72f0ca49290116dd95578cd3e591814cd256b1b266da",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "b63cbdd14a4d60c335f1a63453f0203c74f430851ffc722448de89c57c6c758c"
+    },
+    "post/AG03ノイズ解消方法/index.zh-cn.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "6666167d4741637432d58ab7fa6cfc0ec90cc1c9037ee45ab9a02af8fa5b16c1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "d1f7f193c81546c4ca36706a8cd80fe5334f1b194122fac48f4389e269b39af3"
+    },
+    "post/AG03ノイズ解消方法/index.es.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "e984ed4d7fe57dced21053d431050efd573bafc3e4552c1f0eda3f919b6fa27e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "78c4ee2b4d79acae34c879fa28d0d14512f73f20d4933a6957bbf6a72006b549"
+    },
+    "post/AG03ノイズ解消方法/index.ko.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "1a682a3468f9e367a93c2ec35e545195d14f0151fb77f6f9ecd8fd6d1a025413",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "3d8051ba9fbfcafc41ad1467aa73dcd25745d3acfc9f482693560d2eea9fc56c"
+    },
+    "post/AG03ノイズ解消方法/index.pt.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "3f0e4162b1cd35b6984b22ae527271e8ee7716e8885f144ae339c51193300798",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "a0f2ffde53474b242e7d28742d4b4efc37983b190dad2fca25c6b233b2af8dd3"
+    },
+    "post/AG03ノイズ解消方法/index.zh-tw.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "26a0d3076ecd3ac498c6bcd38f6a89e796f99701cb151eead3b92fdb73f39771",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "33e398b9730cd77d1de700558845c70ec7eae818f258eeef37209473a0d9cf2f"
+    },
+    "post/AG03ノイズ解消方法/index.hi.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "2f85b8f159ecdc362a44cb02265cff291b8a8406388495fbbc517702a26d9bec",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "17b46a1e40f1672e047acd9ddb20f94c3dfb14d7b3b119f6108af6d9496a2600"
+    },
+    "post/AG03ノイズ解消方法/index.fr.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "1f7603d1b861e614422ab8885b98149f70c1c0f89c16131a1b6d536490a97d9c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "ebc5b04bd26b4f45564d7555b9e3505f103cb66935c099639ffd51648738add6"
+    },
+    "post/AG03ノイズ解消方法/index.de.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "3d1bf431c37444d9607e87dacb8eb62737bbd7e695d3262de9f8b823d0996af8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "f94d0f0426d692772e05d39a38b56e26dcad0dc47017eb4b9937c2d0833f42ad"
+    },
+    "post/AG03ノイズ解消方法/index.ar.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "f6350764c650fcefbdf906473293292c4254f33926d529b020a0e9bd2b07c50d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "7fbb7f67c084f8d20948cf8ac76191b6136bb20f81e1745fae04cc604ab4f287"
+    },
+    "post/AG03ノイズ解消方法/index.ru.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "61b254005ba770911b5344326c7c2bb8c1e228b3635007ea5d672ad757df2b2a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "ed4342501911b9ab1128c9032fe894389521694b7a67d3d41e2c338018652a60"
+    },
+    "post/AG03ノイズ解消方法/index.id.md": {
+      "source": "post/AG03ノイズ解消方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "20ec78204bdb449169ea9a5cbd162748d1622434a09d2dc6a732506bdc567256",
+      "translationHash": "9427c43c5b81a8b51ecf85f4b51a73362eab76826254723ae1a59d5971034095",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-039.json",
+      "evidenceHash": "e46e1db0ca35afcbb545bfec405ec7256ff5cf44a6d855a5e162155fca215d67"
     }
   }
 }

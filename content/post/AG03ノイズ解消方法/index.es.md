@@ -1,29 +1,39 @@
 ---
-
-
-title: '【Solución Inmediata】Pasos para actualizar el controlador y eliminar el ruido rasposo de la YAMAHA AG03'
-date: "2026-09-24T19:44:38+09:00"
+title: "Ruido en YAMAHA AG03: cómo me ayudó actualizar el controlador"
+date: "2023-03-18T01:17:10+09:00"
 slug: "AG03Ruido解消方法"
-date: 2023-03-18T01:17:10+09:00
+lastmod: "2026-11-23"
 tags: ["YAMAHA", "AG03", "Ruido"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
-description: '¿Te molesta ese ruido periódico "rasposo" que se produce mientras usas tu YAMAHA AG03? En este artículo te explicaremos claramente los pasos específicos para instalar/actualizar el controlador USB oficial y eliminar el ruido de una vez por todas. ¡Recuperemos un entorno de audio cómodo!'
+description: "Cuento cómo la actualización del controlador USB oficial de Yamaha detuvo el ruido intermitente en mi AG03 y resumo las recomendaciones de diagnóstico del fabricante. No es una solución garantizada: las causas dependen del ordenador y de la conexión."
 ---
 
+# Ruido en YAMAHA AG03: cómo me ayudó actualizar el controlador
 
+Al escuchar el audio del PC a través del monitor del AG03, oía un chasquido aproximadamente cada uno a tres minutos. En mi equipo, el problema desapareció después de actualizar Yamaha Steinberg USB Driver.
 
-# Cómo solucionar el ruido de la YAMAHA AG03
+Es una experiencia de mi configuración, no una garantía de que actualizar el controlador resuelva cualquier ruido. Yamaha señala que los cortes de audio y las desconexiones pueden depender del entorno de Windows, y propone comprobaciones adicionales.
 
-Al escuchar el sonido del PC a través del monitor de la AG03, se produce un ruido áspero periódicamente (una vez cada 1 a 3 minutos aproximadamente).
-Al investigar, parece que existe el siguiente método como contramedida para el ruido de la AG03:
+## Comprobar o reinstalar el controlador en Windows
 
-https://jp.yamaha.com/support/updates/yamaha_steinberg_usb_driver_for_win.html
+1. Abre la [página oficial de soporte del AG03](https://jp.yamaha.com/audio/streaming-gaming/products/mixers/ag/ag03/support.html) y confirma el software correspondiente al modelo exacto y a tu versión de Windows.
+2. Descarga la versión vigente y compatible desde la [página oficial de Yamaha Steinberg USB Driver](https://jp.yamaha.com/support/updates/yamaha_steinberg_usb_driver_for_win.html). A 23 de noviembre de 2026, la página mostraba la versión V2.1.12 para Windows. Las versiones y la compatibilidad cambian; vuelve a comprobarla al descargar.
+3. Si ya estaba instalado, Yamaha recomienda desinstalarlo y luego probar la instalación de nuevo. Mantén el AG03 conectado por USB durante la instalación. Extrae el ZIP, haz clic derecho en `Setup.exe` y elige **Ejecutar como administrador**.
+4. Tras instalarlo, comprueba la versión en el panel de control de Yamaha Steinberg USB Driver. En V2 o posterior, ábrelo desde **Inicio > Yamaha Steinberg USB Driver > Control Panel**.
 
-Al descargar e instalar el Yamaha Steinberg USB Driver desde el sitio anterior, el ruido se solucionó.
+La lista actual de dispositivos compatibles con Windows on Arm en la página de descarga no incluye el AG03. No des por hecho que funciona en Windows para Arm; consulta la información específica del producto. Yamaha también indica que AG DSP Controller no se puede usar con Yamaha Steinberg USB Driver V2.1.3 o posterior en AG03/AG06; en su lugar, usa AG Controller.
 
-<div style="background:#fff;width:120px;height:215px;box-sizing:border-box;border:1px solid #ccc;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;"><div style="line-height:0;"><img src="https://static.jp.mercari.com/assets/img/common/jp/logo_horizontal.webp" width="105"></div><a href="https://jp.mercari.com/item/m10570024971?afid=1916658352" style="width:100px;height:100px;background:#eee;" target="_self"><img src="https://ambassador-system.mercari.com/v1/i?id=m10570024971&svc=m" style="line-height:0;width:100px;height:100px;object-fit:contain;"/></a><div style="padding:12px 0;width:100%;text-align:center;"><a href="https://jp.mercari.com/item/m10570024971?afid=1916658352" style="width:100px;height:32px;background-color:#E32B36;border-radius:4px;line-height:14px;text-align:center;color:#fff;font-weight:bold;border:0;font-size:12px;display:inline-flex;justify-content:center;align-items:center;" target="_self">Comprar ahora</a></div></div>
+## En Mac
 
-# Referencia
-[https://web.archive.org/web/20201003230738/http://yamaha.custhelp.com/app/answers/detail/a_id/7202](https://web.archive.org/web/20201003230738/http://yamaha.custhelp.com/app/answers/detail/a_id/7202)
+Las [especificaciones del AG03 de Yamaha](https://jp.yamaha.com/audio/streaming-gaming/products/mixers/ag/ag03/specs.html) indican que macOS utiliza su controlador estándar, así que no hace falta instalar uno específico. Comprueba la compatibilidad actual del modelo y del sistema operativo en la web de soporte de Yamaha de tu región.
+
+Si el ruido continúa, consulta las [recomendaciones de resolución de problemas de Yamaha](https://jp.yamaha.com/business/audio/news/2022/defect.html) en vez de reinstalar el controlador repetidamente. Incluyen comprobaciones de Windows Update, energía y USB, gráficos, cables y equipos conectados. Yamaha considera avanzados los cambios de BIOS/UEFI; no los hagas sin entender las instrucciones.
+
+## Referencias
+
+- [Soporte y descargas oficiales de Yamaha AG03](https://jp.yamaha.com/audio/streaming-gaming/products/mixers/ag/ag03/support.html) (japonés)
+- [Yamaha Steinberg USB Driver para Windows](https://jp.yamaha.com/support/updates/yamaha_steinberg_usb_driver_for_win.html) (japonés)
+- [Resolución de problemas de Yamaha AG/ZG](https://jp.yamaha.com/business/audio/news/2022/defect.html) (japonés)
+- [Especificaciones de Yamaha AG03](https://jp.yamaha.com/audio/streaming-gaming/products/mixers/ag/ag03/specs.html) (japonés)
