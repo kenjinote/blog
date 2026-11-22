@@ -1,98 +1,53 @@
 ---
-title: "Conjectura ABC - O Desafio ao Super Problema da Teoria dos Números com a Teoria de Teichmüller Inter-Universal"
-date: "2026-09-24T19:44:38+09:00"
-description: "Um mergulho profundo na visão geral da Conjectura ABC e na abordagem revolucionária do Professor Shinichi Mochizuki com a Teoria de Teichmüller Inter-Universal (Teoria IUT)."
+title: "A Conjectura ABC e a IUT: uma prova reivindicada e um debate em aberto"
+date: "2026-09-14T13:00:00+09:00"
+lastmod: 2026-11-23
 slug: "abc-conjecture"
-date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
-tags: ["Conjectura ABC", "Teoria dos Números", "Teoria IUT", "Shinichi Mochizuki"]
+tags: ["ABC Conjecture", "Number Theory", "IUT Theory", "Shinichi Mochizuki"]
+draft: false
+description: "Uma introdução à conjectura ABC, à prova que Shinichi Mochizuki afirma obter com a IUT, à publicação na PRIMS e ao debate matemático ainda sem resolução."
 ---
 
-# Introdução: O que é a [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/)?
+## O que afirma a conjectura ABC
 
-No campo da teoria dos números, existem muitos problemas não resolvidos, mas entre eles, a **[Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/)** (ABC Conjecture) tem sido considerada especialmente importante. Esta conjectura foi formulada independentemente em 1985 por Joseph Oesterlé e David Masser.
+Sejam $a,b,c$ inteiros positivos coprimos dois a dois e tais que $a+b=c$. O **radical** de um inteiro positivo $n$ é o produto de seus divisores primos distintos:
 
-A [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) sugere uma relação profunda entre a adição e a multiplicação (fatoração em números primos) de números inteiros. Ela descreve as propriedades surpreendentes escondidas na equação aparentemente simples $a + b = c$.
+$$\operatorname{rad}(n)=\prod_{p\mid n}p$$
 
-## Definição rigorosa da [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/)
+Por exemplo, $\operatorname{rad}(2^3\cdot3^2)=6$. O radical ignora os expoentes dos fatores primos e, por isso, pode ser muito menor do que o próprio inteiro.
 
-Considere um conjunto de inteiros positivos coprimos $(a, b, c)$ que satisfaçam $a + b = c$. Aqui, definimos o **radical** (radical) de um inteiro $n$ como $\text{radical}(n)$. Este é o produto de fatores primos distintos de $n$.
+A conjectura ABC afirma que, para todo $\varepsilon>0$, existe uma constante $K_\varepsilon$ tal que todo triplo desse tipo satisfaz
 
-$$ \text{radical}(n) = \prod_{p | n} p $$
+$$c\le K_\varepsilon\operatorname{rad}(abc)^{1+\varepsilon}.$$
 
-A [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) afirma que para qualquer $\epsilon > 0$, existe apenas um número finito de conjuntos de inteiros positivos coprimos $(a, b, c)$ que satisfaçam a seguinte condição:
+A constante pode depender de $\varepsilon$. Joseph Oesterlé e David Masser formularam a conjectura em 1985. Ela expressa uma forte restrição entre a adição e a fatoração em primos; não é a regra simples de que fatores primos pequenos de $a$ e $b$ necessariamente forcem um fator primo grande em $c$.
 
-$$ c > \text{radical}(abc)^{1 + \epsilon} $$
+## A prova reivindicada por Mochizuki via IUT
 
-Esta desigualdade significa que se $a$ e $b$ possuem muitos fatores primos pequenos, a sua soma $c$ geralmente possuirá grandes fatores primos (ou seja, $\text{radical}(c)$ será grande). Ela demonstra que as duas operações mais fundamentais da matemática, adição e multiplicação, estão fortemente restritas uma pela outra.
+Em 2012, Shinichi Mochizuki, da Universidade de Kyoto, publicou trabalhos que apresentam a teoria de Teichmüller interuniversal (IUT) como um novo arcabouço para problemas de geometria diofantina, incluindo a conjectura ABC. A IUT é uma teoria muito técnica sobre objetos aritméticos, como curvas elípticas sobre corpos de números, e reúne ideias relacionadas à teoria de Teichmüller, à teoria de Hodge–Arakelov e à geometria anabeliana. Conceitos como teatros de Hodge e a rede log-teta são usados para comparar dados aritméticos entre estruturas. Resumi-la como “separar a adição e a multiplicação em universos distintos” seria enganoso.
 
-# O Surgimento da Teoria de Teichmüller Inter-Universal (Teoria IUT)
+Mochizuki afirma que a conjectura ABC decorre da IUT. Os quatro artigos passaram por um longo processo de avaliação e foram publicados em uma edição especial de 2021 de *Publications of the Research Institute for Mathematical Sciences* (PRIMS). A publicação é um fato importante, mas não estabelece por si só consenso matemático nem encerra a controvérsia.
 
-A prova da [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) tem intrigado matemáticos por muitos anos, mas em 2012, o Professor Shinichi Mochizuki da Universidade de Kyoto anunciou uma prova desta conjectura usando uma estrutura matemática inteiramente nova chamada **Teoria de Teichmüller Inter-Universal** (Inter-Universal Teichmüller Theory, abreviada como Teoria IUT).
+## O que continua em disputa
 
-A Teoria IUT reconstrói fundamentalmente a estrutura matemática convencional (teoria dos conjuntos e geometria algébrica padrão), e seu nível de dificuldade e originalidade causaram um grande impacto na comunidade matemática.
+Em um relatório de 2018, Peter Scholze e Jakob Stix argumentaram que existe uma lacuna em uma etapa central — a passagem do Teorema 3.11 ao Corolário 3.12 de IUT III, usada no caminho até a desigualdade ABC. Mochizuki rejeita a crítica por considerá-la baseada em uma interpretação equivocada da teoria e voltou a expor sua posição em um relatório de outubro de 2025. Este trecho resume as posições declaradas pelos autores; não verifica de forma independente a prova da IUT.
 
-## O Núcleo da Teoria IUT: Comunicação Inter-Universal
+Uma explicação cuidadosa distingue, portanto, três pontos: os artigos da IUT foram publicados na PRIMS; Mochizuki afirma que eles provam ABC; e a divergência dos matemáticos sobre o argumento central não foi resolvida. Não é adequado apresentar a conjectura ABC como um teorema amplamente estabelecido.
 
-A ideia mais inovadora da Teoria IUT é o conceito de transmissão de informações entre diferentes **universos matemáticos** (mathematical universes). Na matemática normal, tudo é feito dentro de um único universo fixo (um sistema axiomático ou modelo da teoria dos conjuntos), mas o Professor Mochizuki separou as estruturas de adição e multiplicação e as colocou em universos diferentes.
+## Relação com o Último Teorema de Fermat
 
-```mermaid
-graph TD
-    A("Universo A (adição e multiplicação intimamente ligadas)") -->|"Teatro de Hodge (Hodge Theater)"| B("Universo B (estrutura deformada)")
-    B -->|"Ligação Teta (Theta Link)"| C("Universo C (relações reconstruídas)")
-    C -->|"Ligação Log (Log Link)"| A
-```
+Se for verdadeira, a conjectura ABC implica o Último Teorema de Fermat: não há soluções inteiras positivas para $x^n+y^n=z^n$ quando $n\ge3$. Trata-se de uma consequência condicional, não de afirmar que o teorema de Fermat continua sem prova; Andrew Wiles e outros já o demonstraram.
 
-O diagrama acima ilustra de forma simplificada o conceito de transmissão de informações entre diferentes universos na Teoria IUT. Ao comparar e transmitir estruturas entre universos diferentes, ocorre um certo tipo de "distorção" ou "incerteza". A Teoria IUT fornece uma estrutura grandiosa para avaliar e quantificar com precisão essa incerteza.
+Suponha que existisse uma solução $x,y,z$ coprima dois a dois. Para todo inteiro positivo $k$, $(x^{nk},y^{nk},z^{nk})$ também seria um triplo de soma coprimo. Seu radical permaneceria constante, $\operatorname{rad}(x^{nk}y^{nk}z^{nk})=\operatorname{rad}(xyz)$, enquanto $z^{nk}$ cresceria sem limite. Assim, haveria infinitos triplos que violariam a cota ABC para qualquer $\varepsilon>0$ fixo, uma contradição.
 
-### Frobenioide e Teatro de Hodge
+## Referências
 
-Conceitos importantes que compõem a Teoria IUT incluem **Frobenioide** (Frobenioid) e o **Teatro de Hodge** (Hodge Theater). Estes são mecanismos para codificar geometricamente informações na teoria dos números através das ações de grupos de [Galois](https://kenji.blog/pt/p/galois/) absolutos e grupos fundamentais de corpos de números.
+- [Formulação padrão de ABC (Jordan S. Ellenberg)](https://arxiv.org/abs/math/9909098)
+- [Edição especial da PRIMS sobre IUT, 2021](https://ems.press/journals/prims/issues/1507)
+- [Relatório de Scholze e Stix (2018)](https://www.math.uni-bonn.de/people/scholze/WhyABCisStillaConjecture.pdf)
+- [Relatório de IUT de Mochizuki (outubro de 2025)](https://www.kurims.kyoto-u.ac.jp/~motizuki/IUT-report-2025-10.pdf)
+- [Panorama da IUT (Mochizuki, 2012)](https://www.kurims.kyoto-u.ac.jp/~motizuki/Panoramic%20Overview%20of%20Inter-universal%20Teichmuller%20Theory.pdf)
 
-$$ \Theta \text{-link} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F}^{\odot} $$
-
-A Ligação Teta ($\Theta$-link) desempenha o papel de transmitir informações específicas de monodromia (informações sobre os valores de funções teta) entre diferentes Teatros de Hodge. Ao contrário da estrutura convencional da teoria dos anéis (isomorfismos que preservam tanto a adição quanto a multiplicação), esta ligação preserva apenas parcialmente a estrutura multiplicativa enquanto destrói intencionalmente a estrutura aditiva para, em seguida, reconstruí-la.
-
-# Consequências Surpreendentes da [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/)
-
-Se a [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) for completamente provada (pela Teoria IUT ou por outros métodos), um grande número de teoremas importantes na teoria dos números será derivado de uma só vez. Vamos comparar isso com a **Conjectura de Mordell** (agora conhecida como Teorema de Faltings) e o **Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)** .
-
-## Aplicação ao Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)
-
-[O Último Teorema de Fermat](https://kenji.blog/pt/p/fermats-last-theorem/) afirma que para $n \ge 3$, não existe um conjunto de inteiros positivos $(x, y, z)$ que satisfaça $x^n + y^n = z^n$. Ele foi provado por [Andrew Wiles](https://kenji.blog/pt/p/wiles/) em 1995, mas uma matemática extremamente avançada e complexa foi utilizada.
-
-Se assumirmos que a [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) é verdadeira, surpreendentemente, o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) (pelo menos para $n$ suficientemente grande) pode ser provado em apenas algumas linhas.
-
-Seja $x^n + y^n = z^n$, e suponha que $(x, y, z)$ são coprimos. Aplicando a [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) para $a=x^n$, $b=y^n$, $c=z^n$,
-
-$$ z^n < \text{radical}(x^n y^n z^n)^{1+\epsilon} = \text{radical}(xyz)^{1+\epsilon} \le (xyz)^{1+\epsilon} < (z^3)^{1+\epsilon} $$
-
-Se tomarmos um $\epsilon$ suficientemente pequeno, quando $n$ é maior que $3(1+\epsilon)$ (ou seja, cerca de $n \ge 4$), esta desigualdade leva a uma contradição. Portanto, torna-se imediatamente claro que não há soluções quando $n$ é grande. Desta forma, a [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) funciona como uma poderosa **chave mestra** (master key) na teoria dos números.
-
-# Recepção e Debate da Teoria IUT na Comunidade Matemática
-
-Desde a publicação do artigo em 2012, a Teoria IUT tem sido objeto de intenso debate na comunidade matemática. A principal razão é que os novos conceitos e notações usados para construir a teoria são tão extensos que até mesmo especialistas em matemática existentes levam anos para compreendê-los.
-
-```mermaid
-sequenceDiagram
-    participant "Professor Shinichi Mochizuki" as M
-    participant "Comunidade Matemática (PRIMS)" as P
-    participant "Matemáticos Céticos" as S
-    
-    M->>P: "Submissão do artigo da Teoria IUT (2012)"
-    P->>P: "Longo processo de revisão por pares"
-    S-->>M: "Apresentação de dúvidas sobre a prova do Corolário 3.12"
-    M-->>S: "Refutação afirmando ser uma má interpretação da teoria"
-    P->>P: "Aceitação e publicação do artigo (2021)"
-```
-
-Alguns matemáticos proeminentes (como Peter Scholze e Jakob Stix) expressaram preocupações de que haja um salto na parte central da teoria (especialmente na prova do "Corolário 3.12"). Por outro lado, o Professor Mochizuki e pesquisadores próximos a ele argumentam que essas críticas são mal-entendidos causados pela tentativa de interpretar o paradigma fundamental da Teoria IUT (a comparação de estruturas através de universos) dentro de uma estrutura convencional.
-
-Em 2021, o artigo do Professor Mochizuki foi formalmente publicado na "PRIMS", uma revista especializada publicada pelo Instituto de Pesquisa em Ciências Matemáticas (RIMS) da Universidade de Kyoto. No entanto, um consenso completo dentro de toda a comunidade matemática não foi alcançado, e o diálogo sobre esta teoria ainda está em andamento.
-
-# Conclusão e Perspectivas Futuras
-
-A [Conjectura ABC](https://kenji.blog/pt/p/abc-conjecture/) e a Teoria de Teichmüller Inter-Universal são um dos maiores dramas da matemática do século XXI. A profundidade insondável dos conceitos mais simples aprendidos no ensino fundamental, a adição e a multiplicação, está agora mesmo testando os limites da inteligência humana.
-
-Resta saber se a Teoria IUT abrirá verdadeiramente novos horizontes na matemática ou se necessitará de modificações adicionais. Levará muito tempo e pesquisa por uma nova geração de matemáticos até que uma conclusão final seja alcançada. No entanto, a visão de **conectar diferentes universos matemáticos** proposta por esta teoria continuará, sem dúvida, a ser uma grande inspiração para o desenvolvimento futuro da matemática.
+Esta é uma breve introdução à conjectura e à controvérsia pública; não reconstrói nem avalia a prova da IUT.

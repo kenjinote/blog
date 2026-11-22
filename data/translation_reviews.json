@@ -6125,6 +6125,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-050.json",
       "evidenceHash": "001da1a425f860e783a285ae96af3225b183c56f050e1a066a2ab42ea39bf406"
+    },
+    "post/abc-conjecture/index.en.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "0d7ea413298cf2a4c3d5a6cd17104e3cdafa603b62d83065cc6f780f0de31f3a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "e5e4a462ef957c04583366f962e1891f961d155bd3079d20563401c4554edd00"
+    },
+    "post/abc-conjecture/index.zh-cn.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "6e61f4cf917432723ea50dc37f540aa808bd710980db57e7e50cb96515c43a36",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "035b251ff014f67baf5fc90ced4b2deb33b4a636c0a7155bf6ed1bb74abd5735"
+    },
+    "post/abc-conjecture/index.es.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "59f1d47886e83c72244e954acb3a6cad51216055beaa9d3457d4214c507b4539",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "205bec48c6afef1f175d4837bbd52128ea9b1d4cc4de24baa0349cb8c5d4834f"
+    },
+    "post/abc-conjecture/index.ko.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "6f572c5adb63254506b08382d67b5200af977705c23b6f6894b8813255796868",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "2533bfa0a0d0b1ad99d65f0155821d205271bdcd12ef7039fda3cdfcadb9449d"
+    },
+    "post/abc-conjecture/index.pt.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "3a7672d8051edf237a886f5823213ae08ad0f0533d5cab6b551befc5bbf58db5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "b1a6ce7596e7c4f12e674e1aaccb886ae743a087bd5b90708c3ac41cd72c9cf1"
+    },
+    "post/abc-conjecture/index.zh-tw.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "6566c9d848423f2b7bfbae372900650cde400cb573d0b394d9ccaaab395b758a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "ee25d8bfedd1f701f487f67451aa59fb6ca0afa954f3322db15c59d4355e91b6"
+    },
+    "post/abc-conjecture/index.hi.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "e719d0fb84f5361c62ace699fe138ef27097634bea790a2a505b7b960ee3a825",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "3e14a32a7b5e334e9a79978648ba9d8cd807edd546a9f1840002d6824b731230"
+    },
+    "post/abc-conjecture/index.fr.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "d75739e1efd1e2489ca20f7090df11055a201497e0932af9c6cdb3d68297e503",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "28d1cc71591e39cac5598460242a846969ca17bbf6c5bd4616b975825456f908"
+    },
+    "post/abc-conjecture/index.de.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "f15f3adcd012e3376fedaae5d444baaa17ed5cf1768eabaf47715606f62bfbd7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "20168af29554d0c0a01c0e4b490f3428a9d497331b83c57383a54a48c863a44f"
+    },
+    "post/abc-conjecture/index.ar.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "13e3b2e6c47f092737bc35104a54ae68f094edd5a4c7e645901588e75fdadd52",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "2e5c9c6167d40e5dd206c44ea2e3ade6008f2a9c68e2130dfb12a92212983e8d"
+    },
+    "post/abc-conjecture/index.ru.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "f126fc2a834bb98fe331167fd2fe02bb82b2a2f0c0fb1463f3a19f8b4c0b0c15",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "bb3523acc891511f6f26379bc780b3f712a8360c973edcea83a95a874d63fefb"
+    },
+    "post/abc-conjecture/index.id.md": {
+      "source": "post/abc-conjecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "a8a8fb29d26f96676b9e6a0e3b4aa699b012ba5a9bf069903bd8a12d04c6140a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-051.json",
+      "evidenceHash": "387ec4167345408bb48ac2b6739495fc18189c40192cccfcd77d275af9363595"
     }
   }
 }

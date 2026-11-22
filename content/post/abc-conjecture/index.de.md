@@ -1,96 +1,53 @@
 ---
-title: "Die ABC-Vermutung - Die Herausforderung für eines der schwierigsten Probleme der Zahlentheorie durch die Inter-universale Teichmüller-Theorie"
-date: "2026-09-24T19:44:38+09:00"
-description: "Ein tiefer Einblick in die ABC-Vermutung und den revolutionären Ansatz der Inter-universalen Teichmüller-Theorie (IUT-Theorie) von Professor Shinichi Mochizuki."
+title: "Die abc-Vermutung und IUT: ein beanspruchter Beweis und eine offene Debatte"
+date: "2026-09-14T13:00:00+09:00"
+lastmod: 2026-11-23
 slug: "abc-conjecture"
-date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
-tags: ["ABC-Vermutung", "Zahlentheorie", "IUT-Theorie", "Shinichi Mochizuki"]
+tags: ["ABC Conjecture", "Number Theory", "IUT Theory", "Shinichi Mochizuki"]
+draft: false
+description: "Ein Überblick über die abc-Vermutung, Mochizukis behaupteten Beweis mit IUT, die Veröffentlichung in PRIMS und die weiterhin ungelöste mathematische Kontroverse."
 ---
 
-# Einführung: Was ist die ABC-Vermutung?
+## Aussage der abc-Vermutung
 
-Im Bereich der Zahlentheorie gibt es viele ungelöste Probleme, aber eines, das als besonders wichtig erachtet wurde, ist die **ABC-Vermutung** (ABC Conjecture). Diese Vermutung wurde 1985 unabhängig voneinander von Joseph Oesterlé und David Masser formuliert.
+Seien $a,b,c$ paarweise teilerfremde positive ganze Zahlen mit $a+b=c$. Das **Radikal** einer positiven ganzen Zahl $n$ ist das Produkt ihrer verschiedenen Primteiler:
 
-[Die ABC-Vermutung](https://kenji.blog/de/p/abc-conjecture/) deutet auf eine tiefe Beziehung zwischen der Addition und der Multiplikation (Primfaktorzerlegung) von ganzen Zahlen hin. Auf den ersten Blick beschreibt sie eine erstaunliche Eigenschaft, die in der einfachen Gleichung $a + b = c$ verborgen ist.
+$$\operatorname{rad}(n)=\prod_{p\mid n}p$$
 
-## Die strenge Definition der ABC-Vermutung
+Zum Beispiel gilt $\operatorname{rad}(2^3\cdot3^2)=6$. Das Radikal ignoriert die Exponenten der Primfaktoren und kann daher deutlich kleiner als die Zahl selbst sein.
 
-Betrachten wir ein Tripel $(a, b, c)$ von teilerfremden positiven ganzen Zahlen, die $a + b = c$ erfüllen. Hier definieren wir das **Radikal** (Radical) einer ganzen Zahl $n$ als $\text{rad}(n)$. Dies ist das Produkt der paarweise verschiedenen Primfaktoren von $n$.
+Die abc-Vermutung besagt: Für jedes $\varepsilon>0$ gibt es eine Konstante $K_\varepsilon$, sodass für jedes solche Tripel
 
-$$ \text{rad}(n) = \prod_{p | n} p $$
+$$c\le K_\varepsilon\operatorname{rad}(abc)^{1+\varepsilon}$$
 
-[Die ABC-Vermutung](https://kenji.blog/de/p/abc-conjecture/) besagt, dass es für jedes $\epsilon > 0$ nur endlich viele teilerfremde Tripel $(a, b, c)$ positiver ganzer Zahlen gibt, die folgendes erfüllen:
+gilt. Die Konstante darf von $\varepsilon$ abhängen. Joseph Oesterlé und David Masser formulierten die Vermutung 1985. Sie beschreibt eine starke Einschränkung zwischen Addition und Primfaktorzerlegung; sie ist keine einfache Regel, nach der kleine Primfaktoren von $a$ und $b$ zwangsläufig einen großen Primfaktor von $c$ erzeugen.
 
-$$ c > \text{rad}(abc)^{1 + \epsilon} $$
+## Mochizukis behaupteter Beweis mit IUT
 
-Diese Ungleichung bedeutet, dass wenn $a$ und $b$ viele kleine Primfaktoren haben, ihre Summe $c$ normalerweise große Primfaktoren hat (das heißt, $\text{rad}(c)$ wird groß). Dies zeigt, dass Addition und Multiplikation, die zwei grundlegendsten Operationen der Mathematik, sich gegenseitig stark einschränken.
+2012 veröffentlichte Shinichi Mochizuki von der Universität Kyoto Arbeiten zur inter-universellen Teichmüller-Theorie (IUT) als neuem Rahmen für Probleme der diophantischen Geometrie, darunter die abc-Vermutung. IUT ist eine hoch technische Theorie über arithmetische Objekte wie elliptische Kurven über Zahlkörpern und verbindet Ideen aus der Teichmüller-Theorie, der Hodge-Arakelov-Theorie und der anabelschen Geometrie. Begriffe wie Hodge-Theater und Log-Theta-Gitter dienen dazu, arithmetische Daten zwischen Strukturen zu vergleichen. Eine bloße Beschreibung als „Addition und Multiplikation in getrennte Universen legen“ wäre irreführend.
 
-# Das Aufkommen der Inter-universalen Teichmüller-Theorie (IUT-Theorie)
+Mochizuki behauptet, dass die abc-Vermutung aus IUT folgt. Die vier Arbeiten durchliefen ein langes Begutachtungsverfahren und erschienen 2021 in einer Sonderausgabe von *Publications of the Research Institute for Mathematical Sciences* (PRIMS). Die Veröffentlichung ist ein wichtiger Fakt, beweist aber für sich allein weder einen Konsens in der Mathematik noch das Ende der Debatte.
 
-Der Beweis der ABC-Vermutung hat Mathematiker viele Jahre lang vor ein Rätsel gestellt, aber im Jahr 2012 veröffentlichte Professor Shinichi Mochizuki von der Universität Kyoto einen Beweis für diese Vermutung unter Verwendung eines völlig neuen mathematischen Rahmens namens **Inter-universale Teichmüller-Theorie** (Inter-Universal Teichmüller Theory, abgekürzt IUT-Theorie).
+## Was umstritten bleibt
 
-Die IUT-Theorie rekonstruiert grundlegend die herkömmlichen mathematischen Rahmenbedingungen (Mengenlehre und Standard-algebraische Geometrie) und löste aufgrund ihrer Komplexität und Neuartigkeit einen großen Schock in der mathematischen Gemeinschaft aus.
+Peter Scholze und Jakob Stix argumentierten 2018 in einem Bericht, dass ein entscheidender Schritt – der Übergang von Satz 3.11 zu Korollar 3.12 in IUT III, der auf dem Weg zur abc-Ungleichung verwendet wird – eine Lücke enthalte. Mochizuki weist die Kritik als Missverständnis der Theorie zurück und erläuterte seine Position erneut in einem Bericht vom Oktober 2025. Dieser Abschnitt fasst die erklärten Positionen der Autoren zusammen; er ist keine unabhängige Prüfung des IUT-Beweises.
 
-## Der Kern der IUT-Theorie: Kommunikation zwischen Universen
+Eine sorgfältige Darstellung unterscheidet daher drei Punkte: Die IUT-Arbeiten erschienen in PRIMS; Mochizuki beansprucht, damit abc zu beweisen; und die Meinungsverschiedenheit über das zentrale Argument ist unter Mathematikern nicht beigelegt. Es wäre irreführend, die abc-Vermutung als allgemein anerkannten Satz darzustellen.
 
-Die innovativste Idee der IUT-Theorie ist das Konzept der Informationsübertragung zwischen verschiedenen **mathematischen Universen** (mathematical universes). In der normalen Mathematik findet alles in einem einzigen festen Universum statt (Axiomensystem oder Modell der Mengenlehre), aber Professor Mochizuki trennte die Strukturen von Addition und Multiplikation und platzierte jede in ein anderes Universum.
+## Zusammenhang mit Fermats letztem Satz
 
-```mermaid
-graph TD
-    A("Universum A (Addition und Multiplikation eng verbunden)") -->|"Hodge-Theater (Hodge Theater)"| B("Universum B (Deformierte Struktur)")
-    B -->|"Theta-Link (Theta Link)"| C("Universum C (Rekonstruierte Beziehung)")
-    C -->|"Log-Link (Log Link)"| A
-```
+Aus der abc-Vermutung würde Fermats letzter Satz folgen: Für $n\ge3$ gibt es keine positiven ganzzahligen Lösungen von $x^n+y^n=z^n$. Das ist eine bedingte Folgerung und bedeutet nicht, dass Fermats Satz noch unbewiesen wäre; Andrew Wiles und andere haben ihn bereits bewiesen.
 
-Das obige Diagramm zeigt vereinfacht das Konzept der Informationsübertragung zwischen verschiedenen Universen in der IUT-Theorie. Beim Vergleichen und Übertragen von Strukturen zwischen verschiedenen Universen entsteht eine Art von "Verzerrung" oder "Unbestimmtheit". Die IUT-Theorie bietet einen großartigen Rahmen zur präzisen Bewertung und Quantifizierung dieser Unbestimmtheit.
+Angenommen, es gäbe eine paarweise teilerfremde Lösung $x,y,z$. Dann wäre für jede positive ganze Zahl $k$ auch $(x^{nk},y^{nk},z^{nk})$ ein teilerfremdes Additionstripel. Sein Radikal bliebe gleich, $\operatorname{rad}(x^{nk}y^{nk}z^{nk})=\operatorname{rad}(xyz)$, während $z^{nk}$ unbegrenzt wüchse. Damit gäbe es unendlich viele Tripel, die für jedes feste $\varepsilon>0$ die abc-Schranke verletzen – ein Widerspruch.
 
-### Frobenioide und Hodge-Theater
+## Quellen
 
-Als wichtige Konzepte, die die IUT-Theorie bilden, gibt es **Frobenioide** (Frobenioid) und **Hodge-Theater** (Hodge Theater). Diese sind Mechanismen zur geometrischen Codierung zahlentheoretischer Informationen durch die Wirkung der absoluten [Galois](https://kenji.blog/de/p/galois/)-Gruppe oder der Fundamentalgruppe von Zahlkörpern.
+- [Standardformulierung von abc (Jordan S. Ellenberg)](https://arxiv.org/abs/math/9909098)
+- [PRIMS-Sonderausgabe zu IUT von 2021](https://ems.press/journals/prims/issues/1507)
+- [Bericht von Scholze und Stix (2018)](https://www.math.uni-bonn.de/people/scholze/WhyABCisStillaConjecture.pdf)
+- [IUT-Bericht von Mochizuki (Oktober 2025)](https://www.kurims.kyoto-u.ac.jp/~motizuki/IUT-report-2025-10.pdf)
+- [Überblick über IUT (Mochizuki, 2012)](https://www.kurims.kyoto-u.ac.jp/~motizuki/Panoramic%20Overview%20of%20Inter-universal%20Teichmuller%20Theory.pdf)
 
-$$ \Theta \text{-Link} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F}^{\odot} $$
-
-Der Theta-Link ($\Theta$-Link) spielt die Rolle, spezifische Monodromie-Informationen (Informationen über den Wert der Theta-Funktion) zwischen verschiedenen Hodge-Theatern zu übertragen. Im Gegensatz zu herkömmlichen ringtheoretischen Strukturen (Isomorphismen, die sowohl Addition als auch Multiplikation erhalten) bewahrt dieser Link teilweise nur die multiplikative Struktur, "zerstört" absichtlich die additive Struktur und rekonstruiert sie dann.
-
-# Erstaunliche Konsequenzen, die sich aus der ABC-Vermutung ergeben
-
-Wenn die ABC-Vermutung (ob durch die IUT-Theorie oder auf andere Weise) vollständig bewiesen wird, würden viele wichtige zahlentheoretische Sätze auf einen Schlag abgeleitet werden. Vergleichen wir dies mit der **Mordell-Vermutung** (heute bekannt als der Satz von Faltings) oder **[Fermat](https://kenji.blog/de/p/fermat/)s letztem Satz** .
-
-## Anwendung auf [Fermat](https://kenji.blog/de/p/fermat/)s letzten Satz
-
-[Fermat](https://kenji.blog/de/p/fermat/)s letzter Satz besagt, dass es für $n \ge 3$ keine positiven ganzen Zahlen $(x, y, z)$ gibt, die $x^n + y^n = z^n$ erfüllen. Er wurde 1995 von [Andrew Wiles](https://kenji.blog/de/p/wiles/) bewiesen, aber es wurde eine sehr fortgeschrittene und komplexe Mathematik verwendet.
-
-Wenn wir annehmen, dass die ABC-Vermutung wahr ist, kann [Fermat](https://kenji.blog/de/p/fermat/)s letzter Satz (zumindest für hinreichend große $n$) erstaunlicherweise in nur wenigen Zeilen bewiesen werden.
-
-Nehmen wir $x^n + y^n = z^n$ an, wobei $(x, y, z)$ teilerfremd sind. Wenn wir die ABC-Vermutung auf $a=x^n$, $b=y^n$, $c=z^n$ anwenden, erhalten wir:
-
-$$ z^n < \text{rad}(x^n y^n z^n)^{1+\epsilon} = \text{rad}(xyz)^{1+\epsilon} \le (xyz)^{1+\epsilon} < (z^3)^{1+\epsilon} $$
-
-Wenn wir $\epsilon$ klein genug wählen, führt diese Ungleichung zu einem Widerspruch, wenn $n$ größer als $3(1+\epsilon)$ ist (also etwa $n \ge 4$). Daher wird sofort klar, dass für große $n$ keine Lösung existiert. Auf diese Weise fungiert die ABC-Vermutung als mächtiger **Meisterschlüssel** (master key) der Zahlentheorie.
-
-# Akzeptanz und Diskussion der IUT-Theorie in der mathematischen Gemeinschaft
-
-Seit der Veröffentlichung des Papiers im Jahr 2012 ist die IUT-Theorie Gegenstand heftiger Debatten in der mathematischen Gemeinschaft. Der Hauptgrund dafür ist, dass die neuen Konzepte und Notationen, die zum Aufbau der Theorie verwendet wurden, so umfangreich sind, dass selbst Experten der bestehenden Mathematik Jahre brauchen, um sie zu verstehen.
-
-```mermaid
-sequenceDiagram
-    participant "Professor Shinichi Mochizuki" as M
-    participant "Mathematische Gemeinschaft (PRIMS)" as P
-    participant "Skeptische Mathematiker" as S
-    
-    M->>P: "Einreichung des IUT-Theorie Papiers (2012)"
-    P->>P: "Jahrelanger Peer-Review-Prozess"
-    S-->>M: "Äußerung von Zweifeln am Beweis von Korollar 3.12"
-    M-->>S: "Gegenargument, dass die Theorie missverstanden wurde"
-    P->>P: "Annahme und Veröffentlichung des Papiers (2021)"
-```
-
-Einige prominente Mathematiker (wie Peter Scholze und Jakob Stix) äußerten Bedenken, dass es einen Sprung in dem Teil gibt, der den Kern der Theorie bildet (insbesondere im Beweis von "Korollar 3.12"). Andererseits entgegnen Professor Mochizuki und Forscher in seinem Umfeld, dass diese Kritik auf einem Missverständnis beruht, das durch den Versuch verursacht wird, das grundlegende Paradigma der IUT-Theorie (der Vergleich von Strukturen über Universen hinweg) im herkömmlichen Rahmen zu interpretieren.
-
-# Schlussfolgerung und Zukunftsperspektiven
-
-[Die ABC-Vermutung](https://kenji.blog/de/p/abc-conjecture/) und die Inter-universale Teichmüller-Theorie sind eines der größten Dramen in der Mathematik des 21. Jahrhunderts. Die unergründliche Tiefe der einfachsten Konzepte, Addition und Multiplikation, die man in der Grundschule lernt, testet gerade jetzt die Grenzen der menschlichen Intelligenz.
-
-Ob die IUT-Theorie wirklich einen neuen mathematischen Horizont eröffnet oder ob weitere Modifikationen erforderlich sind. Bis eine endgültige Schlussfolgerung gezogen ist, wird es wahrscheinlich noch viel Zeit und Forschung durch eine neue Generation von Mathematikern erfordern. Die Vision der **Verbindung verschiedener mathematischer Universen** , die diese Theorie aufgeworfen hat, wird jedoch zweifellos weiterhin eine große Inspiration für die zukünftige Entwicklung der Mathematik sein.
+Dies ist eine kurze Einführung in die Vermutung und die öffentlich ausgetragene Kontroverse, keine Rekonstruktion oder Bewertung des IUT-Beweises.

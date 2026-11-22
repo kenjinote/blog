@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "article": "ABC予想とIUT理論",
+  "frozenSourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://arxiv.org/abs/math/9909098",
+    "https://ems.press/journals/prims/issues/1507",
+    "https://www.math.uni-bonn.de/people/scholze/WhyABCisStillaConjecture.pdf",
+    "https://www.kurims.kyoto-u.ac.jp/~motizuki/IUT-report-2025-10.pdf",
+    "https://www.kurims.kyoto-u.ac.jp/~motizuki/Panoramic%20Overview%20of%20Inter-universal%20Teichmuller%20Theory.pdf"
+  ],
+  "findings": [
+    "Corrected the conjecture statement to c <= K_epsilon rad(abc)^(1+epsilon), with pairwise coprimality and the epsilon-dependent constant explicit.",
+    "Removed the inaccurate claim that IUT simply separates addition and multiplication into different universes; the short description now follows the author’s overview and PRIMS abstract.",
+    "Replaced the false Fermat inequality derivation. The conditional implication uses the infinitely many power triples from any hypothetical primitive Fermat solution, whose radical is fixed while c grows.",
+    "Distinguished Mochizuki’s claimed proof, the 2021 PRIMS publication, and the unresolved disagreement described in the 2018 Scholze–Stix report and Mochizuki’s 2025 response.",
+    "Removed the diagram that falsely portrayed a simple exchange between three invented mathematical universes, and removed repeated self-links.",
+    "Restored the original publication date 2026-09-14 and removed the duplicate 2026-09-24 date."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/abc-conjecture/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "0d7ea413298cf2a4c3d5a6cd17104e3cdafa603b62d83065cc6f780f0de31f3a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    },
+    "post/abc-conjecture/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "6e61f4cf917432723ea50dc37f540aa808bd710980db57e7e50cb96515c43a36",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    },
+    "post/abc-conjecture/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "59f1d47886e83c72244e954acb3a6cad51216055beaa9d3457d4214c507b4539",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    },
+    "post/abc-conjecture/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "6f572c5adb63254506b08382d67b5200af977705c23b6f6894b8813255796868",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    },
+    "post/abc-conjecture/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "3a7672d8051edf237a886f5823213ae08ad0f0533d5cab6b551befc5bbf58db5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    },
+    "post/abc-conjecture/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "6566c9d848423f2b7bfbae372900650cde400cb573d0b394d9ccaaab395b758a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    },
+    "post/abc-conjecture/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "e719d0fb84f5361c62ace699fe138ef27097634bea790a2a505b7b960ee3a825",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    },
+    "post/abc-conjecture/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "d75739e1efd1e2489ca20f7090df11055a201497e0932af9c6cdb3d68297e503",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    },
+    "post/abc-conjecture/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "f15f3adcd012e3376fedaae5d444baaa17ed5cf1768eabaf47715606f62bfbd7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    },
+    "post/abc-conjecture/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "13e3b2e6c47f092737bc35104a54ae68f094edd5a4c7e645901588e75fdadd52",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    },
+    "post/abc-conjecture/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "f126fc2a834bb98fe331167fd2fe02bb82b2a2f0c0fb1463f3a19f8b4c0b0c15",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    },
+    "post/abc-conjecture/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/abc-conjecture/index.md",
+      "sourceHash": "bc78d21547f8f929a2a84daf17b29cb42a0da019d8c19a1369013cfb10b87772",
+      "translationHash": "a8a8fb29d26f96676b9e6a0e3b4aa699b012ba5a9bf069903bd8a12d04c6140a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every localized section with the Japanese source: the conjecture statement and quantifiers, radical definition, IUT scope, publication-vs-proof distinction, the attributed Scholze–Stix criticism and Mochizuki response, and the conditional Fermat consequence."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for pairwise coprimality, radical, number field, Diophantine geometry, IUT, Hodge theaters, log-theta lattice, theorem/corollary, and conjecture status."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the standard ABC upper-bound form and its quantifiers. Corrected the earlier false inequality argument for Fermat: a hypothetical primitive solution yields infinitely many powered triples with fixed radical and unbounded c, contradicting ABC."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable source code or software instructions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five source links: Ellenberg’s mathematical note for a standard ABC formulation, the official PRIMS special-issue record, Scholze and Stix’s report, Mochizuki’s October 2025 response, and Mochizuki’s IUT overview."
+        }
+      },
+      "summary": "Replaced the misleading “separate universes” analogy, corrected the ABC formulation and Fermat implication, and distinguished publication of IUT papers from acceptance of the claimed proof.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "This review is not an expert reconstruction or independent verification of the IUT proof.",
+        "The report summarizes the named authors’ stated positions and is not a comprehensive survey of all mathematical opinions."
+      ]
+    }
+  }
+}

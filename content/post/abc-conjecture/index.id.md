@@ -1,98 +1,53 @@
 ---
-title: "Konjektur ABC - Tantangan Terhadap Soal Paling Sulit dalam Teori Bilangan melalui Teori Teichmüller Antar-Semesta"
-date: "2026-09-24T19:44:38+09:00"
-description: "Menggali lebih dalam tentang ringkasan Konjektur ABC dan pendekatan revolusioner oleh Profesor Shinichi Mochizuki melalui Teori Teichmüller Antar-Semesta (Teori IUT)."
+title: "Konjektur ABC dan IUT: Klaim Pembuktian dan Perdebatan yang Berlanjut"
+date: "2026-09-14T13:00:00+09:00"
+lastmod: 2026-11-23
 slug: "abc-conjecture"
-date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "science"]
-tags: ["Konjektur ABC", "Teori Bilangan", "Teori IUT", "Shinichi Mochizuki"]
+tags: ["ABC Conjecture", "Number Theory", "IUT Theory", "Shinichi Mochizuki"]
+draft: false
+description: "Pengantar tentang konjektur ABC, klaim pembuktian Shinichi Mochizuki melalui IUT, publikasinya di PRIMS, dan perdebatan matematika yang belum terselesaikan."
 ---
 
-# Pendahuluan: Apa itu [Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/)?
+## Pernyataan konjektur ABC
 
-Di bidang teori bilangan, ada banyak masalah yang belum terpecahkan, tetapi di antaranya yang paling dianggap penting adalah **[Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/)** (ABC Conjecture). Konjektur ini dirumuskan secara independen oleh Joseph Oesterlé dan David Masser pada tahun 1985.
+Misalkan $a,b,c$ adalah bilangan bulat positif yang saling koprima berpasangan dan memenuhi $a+b=c$. **Radikal** bilangan bulat positif $n$ adalah hasil kali semua pembagi primanya yang berbeda:
 
-[Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/) mengisyaratkan hubungan yang mendalam antara penjumlahan dan perkalian (faktorisasi prima) dari bilangan bulat. Secara sekilas, konjektur ini menyatakan sifat menakjubkan yang tersembunyi di balik persamaan sederhana $a + b = c$.
+$$\operatorname{rad}(n)=\prod_{p\mid n}p$$
 
-## Definisi Ketat dari [Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/)
+Sebagai contoh, $\operatorname{rad}(2^3\cdot3^2)=6$. Radikal mengabaikan pangkat faktor prima sehingga nilainya dapat jauh lebih kecil daripada bilangan itu sendiri.
 
-Pertimbangkan pasangan bilangan bulat positif koprima $(a, b, c)$ yang memenuhi $a + b = c$. Di sini, **radikal** (radical) dari bilangan bulat $n$ didefinisikan sebagai $\text{radikal}(n)$. Ini adalah produk dari faktor prima yang berbeda dari $n$.
+Konjektur ABC menyatakan bahwa untuk setiap $\varepsilon>0$ ada konstanta $K_\varepsilon$ sehingga setiap tripel seperti itu memenuhi
 
-$$ \text{radikal}(n) = \prod_{p | n} p $$
+$$c\le K_\varepsilon\operatorname{rad}(abc)^{1+\varepsilon}.$$
 
-[Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/) mengklaim bahwa, untuk setiap $\epsilon > 0$, hanya ada sejumlah terhingga dari pasangan bilangan bulat positif koprima $(a, b, c)$ yang memenuhi hal berikut:
+Konstanta tersebut boleh bergantung pada $\varepsilon$. Joseph Oesterlé dan David Masser merumuskan konjektur ini pada 1985. Konjektur ini menyatakan adanya batasan kuat antara penjumlahan dan faktorisasi prima; ini bukan aturan sederhana bahwa faktor prima kecil pada $a$ dan $b$ pasti memaksa $c$ memiliki faktor prima besar.
 
-$$ c > \text{radikal}(abc)^{1 + \epsilon} $$
+## Klaim pembuktian Mochizuki melalui IUT
 
-Ketidaksamaan ini berarti bahwa jika $a$ dan $b$ memiliki banyak faktor prima yang kecil, jumlahnya, $c$, biasanya memiliki faktor prima yang besar (yaitu, $\text{radikal}(c)$ menjadi besar). Ini menunjukkan bahwa dua operasi paling dasar dalam matematika, penjumlahan dan perkalian, saling membatasi dengan kuat.
+Pada 2012, Shinichi Mochizuki dari Universitas Kyoto menerbitkan makalah yang memperkenalkan teori Teichmüller antar-universal (IUT) sebagai kerangka baru untuk masalah geometri Diofantin, termasuk konjektur ABC. IUT adalah teori sangat teknis mengenai objek aritmetika seperti kurva eliptik di atas medan bilangan dan memadukan gagasan yang terkait dengan teori Teichmüller, teori Hodge–Arakelov, serta geometri anabelian. Istilah seperti teater Hodge dan kisi log-theta digunakan untuk membandingkan data aritmetika antarstruktur. Menyederhanakannya menjadi “memisahkan penjumlahan dan perkalian ke alam semesta berbeda” akan menyesatkan.
 
-# Kemunculan Teori Teichmüller Antar-Semesta (Teori IUT)
+Mochizuki mengklaim bahwa konjektur ABC mengikuti dari IUT. Keempat makalahnya melalui proses penelaahan yang panjang dan terbit dalam edisi khusus 2021 *Publications of the Research Institute for Mathematical Sciences* (PRIMS). Publikasi ini penting, tetapi tidak dengan sendirinya membuktikan adanya konsensus di kalangan matematikawan atau mengakhiri perdebatan.
 
-Pembuktian [Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/) telah membingungkan para matematikawan selama bertahun-tahun, tetapi pada tahun 2012, Profesor Shinichi Mochizuki dari Universitas Kyoto menerbitkan bukti dari konjektur ini menggunakan kerangka matematika yang sama sekali baru yang disebut **Teori Teichmüller Antar-Semesta** (Inter-Universal Teichmüller Theory, disingkat Teori IUT).
+## Pokok yang masih diperdebatkan
 
-Teori IUT secara mendasar merekonstruksi kerangka matematika konvensional (teori himpunan dan geometri aljabar standar), dan karena kompleksitas dan kebaruannya, teori ini memberikan kejutan besar bagi dunia matematika.
+Dalam laporan tahun 2018, Peter Scholze dan Jakob Stix berpendapat bahwa ada celah pada satu langkah kunci, yaitu peralihan dari Teorema 3.11 ke Korolari 3.12 dalam IUT III yang digunakan menuju pertidaksamaan ABC. Mochizuki menolak kritik itu karena menurutnya didasarkan pada kesalahpahaman terhadap teori, dan menguraikan kembali posisinya dalam laporan Oktober 2025. Bagian ini merangkum posisi yang dinyatakan para penulis; ini bukan verifikasi independen atas bukti IUT.
 
-## Inti dari Teori IUT: Komunikasi Antar-Semesta
+Karena itu, penjelasan yang cermat membedakan tiga hal: makalah IUT terbit di PRIMS; Mochizuki mengklaim makalah tersebut membuktikan ABC; dan perbedaan pendapat matematikawan mengenai argumen intinya belum terselesaikan. Tidak tepat menyebut konjektur ABC sebagai teorema yang telah diterima luas.
 
-Gagasan paling inovatif dari Teori IUT adalah konsep mentransmisikan informasi antara **semesta matematika** (mathematical universes) yang berbeda. Dalam matematika biasa, semuanya terjadi di dalam satu semesta yang tetap (sebuah sistem aksioma atau model teori himpunan), tetapi Profesor Mochizuki memisahkan struktur penjumlahan dan perkalian, serta menempatkan masing-masing ke dalam semesta yang berbeda.
+## Hubungan dengan Teorema Terakhir Fermat
 
-```mermaid
-graph TD
-    A("Semesta A (Penjumlahan dan perkalian terkait erat)") -->|"Teater Hodge (Hodge Theater)"| B("Semesta B (Struktur yang diubah)")
-    B -->|"Tautan Theta (Theta Link)"| C("Semesta C (Hubungan yang direkonstruksi)")
-    C -->|"Tautan Log (Log Link)"| A
-```
+Jika konjektur ABC benar, Teorema Terakhir Fermat akan mengikutinya: tidak ada solusi bilangan bulat positif untuk $x^n+y^n=z^n$ ketika $n\ge3$. Ini adalah implikasi bersyarat, bukan berarti teorema Fermat belum terbukti; Andrew Wiles dan lainnya telah membuktikannya.
 
-Gambar di atas secara sederhana menunjukkan konsep transmisi informasi antara semesta yang berbeda dalam Teori IUT. Saat membandingkan dan mentransmisikan struktur antar semesta yang berbeda, muncul semacam "distorsi" atau "ketidakpastian". Teori IUT menyediakan kerangka kerja yang megah untuk secara presisi mengevaluasi dan mengkuantifikasi ketidakpastian ini.
+Andaikan ada solusi $x,y,z$ yang saling koprima berpasangan. Untuk setiap bilangan bulat positif $k$, $(x^{nk},y^{nk},z^{nk})$ juga merupakan tripel penjumlahan yang saling koprima. Radikalnya tetap, $\operatorname{rad}(x^{nk}y^{nk}z^{nk})=\operatorname{rad}(xyz)$, sedangkan $z^{nk}$ tumbuh tanpa batas. Akibatnya, akan ada tak terhingga banyak tripel yang melanggar batas ABC untuk setiap $\varepsilon>0$ tetap—sebuah kontradiksi.
 
-### Frobenioid dan Teater Hodge
+## Rujukan
 
-Konsep-konsep penting yang menyusun Teori IUT meliputi **Frobenioid** (Frobenioid) dan **Teater Hodge** (Hodge Theater). Ini adalah mekanisme untuk menyandikan informasi teoretis bilangan secara geometris melalui tindakan grup [Galois](https://kenji.blog/id/p/galois/) absolut dan grup fundamental dari lapangan bilangan.
+- [Rumusan standar ABC (Jordan S. Ellenberg)](https://arxiv.org/abs/math/9909098)
+- [Edisi khusus PRIMS tentang IUT, 2021](https://ems.press/journals/prims/issues/1507)
+- [Laporan Scholze–Stix (2018)](https://www.math.uni-bonn.de/people/scholze/WhyABCisStillaConjecture.pdf)
+- [Laporan IUT Mochizuki (Oktober 2025)](https://www.kurims.kyoto-u.ac.jp/~motizuki/IUT-report-2025-10.pdf)
+- [Tinjauan umum IUT (Mochizuki, 2012)](https://www.kurims.kyoto-u.ac.jp/~motizuki/Panoramic%20Overview%20of%20Inter-universal%20Teichmuller%20Theory.pdf)
 
-$$ \Theta \text{-link} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F}^{\odot} $$
-
-Tautan theta ($\Theta$-link) berperan mentransmisikan informasi monodromi spesifik (informasi mengenai nilai fungsi theta) di antara Teater Hodge yang berbeda. Tidak seperti struktur teoretis cincin konvensional (isomorfisme yang mempertahankan baik penjumlahan maupun perkalian), tautan ini secara parsial mempertahankan hanya struktur perkalian sambil secara sengaja "menghancurkan" lalu merekonstruksi struktur penjumlahan.
-
-# Konsekuensi Mengejutkan dari [Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/)
-
-Jika [Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/) terbukti sepenuhnya (oleh Teori IUT atau metode lainnya), banyak teorema penting dalam teori bilangan akan segera diturunkan. Mari kita bandingkan ini dengan **Konjektur Mordell** (sekarang dikenal sebagai Teorema Faltings) dan **[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)**.
-
-## Aplikasi pada [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)
-
-[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) menyatakan bahwa tidak ada pasangan bilangan bulat positif $(x, y, z)$ yang memenuhi $x^n + y^n = z^n$ untuk $n \ge 3$. Itu dibuktikan oleh [Andrew Wiles](https://kenji.blog/id/p/wiles/) pada tahun 1995, tetapi menggunakan matematika yang sangat maju dan kompleks.
-
-Jika kita mengasumsikan [Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/) benar, secara mengejutkan, [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) (setidaknya untuk $n$ yang cukup besar) dapat dibuktikan hanya dalam beberapa baris.
-
-Misalkan $x^n + y^n = z^n$ dan $(x, y, z)$ adalah koprima. Menerapkan [Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/) ke $a=x^n$, $b=y^n$, $c=z^n$,
-
-$$ z^n < \text{radikal}(x^n y^n z^n)^{1+\epsilon} = \text{radikal}(xyz)^{1+\epsilon} \le (xyz)^{1+\epsilon} < (z^3)^{1+\epsilon} $$
-
-Jika $\epsilon$ diambil cukup kecil, dan ketika $n$ lebih besar dari $3(1+\epsilon)$ (yaitu, sekitar $n \ge 4$), ketidaksamaan ini menyebabkan kontradiksi. Oleh karena itu, kita dapat segera melihat bahwa tidak ada solusi ketika $n$ besar. Dengan cara ini, [Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/) bertindak sebagai **kunci master** (master key) yang kuat dalam teori bilangan.
-
-# Penerimaan dan Perdebatan Teori IUT di Dunia Matematika
-
-Sejak publikasi makalah tersebut pada tahun 2012, Teori IUT telah menjadi subjek perdebatan sengit di dunia matematika. Alasan utamanya adalah bahwa konsep dan notasi baru yang digunakan untuk membangun teori tersebut sangat banyak sehingga bahkan bagi para pakar matematika yang ada, dibutuhkan waktu bertahun-tahun untuk memahaminya.
-
-```mermaid
-sequenceDiagram
-    participant "Prof. Shinichi Mochizuki" as M
-    participant "Dunia Matematika (PRIMS)" as P
-    participant "Matematikawan Skeptis" as S
-    
-    M->>P: "Pengajuan Makalah Teori IUT (2012)"
-    P->>P: "Proses Tinjauan Sejawat yang Panjang"
-    S-->>M: "Pertanyaan Diajukan mengenai Bukti Korolari 3.12"
-    M-->>S: "Bantahan Bahwa Teori Telah Disalahartikan"
-    P->>P: "Penerimaan dan Publikasi Makalah (2021)"
-```
-
-Beberapa matematikawan terkemuka (seperti Peter Scholze dan Jakob Stix) menyatakan keprihatinan bahwa ada lompatan di bagian inti dari teori tersebut (terutama dalam bukti "Korolari 3.12"). Di sisi lain, Profesor Mochizuki dan para peneliti di sekitarnya berpendapat bahwa kritik ini didasarkan pada kesalahpahaman karena mencoba menafsirkan paradigma fundamental Teori IUT (perbandingan struktur lintas semesta) dalam kerangka kerja konvensional.
-
-Pada tahun 2021, makalah Profesor Mochizuki secara resmi diterbitkan di jurnal khusus "PRIMS" yang diterbitkan oleh Lembaga Penelitian Ilmu Matematika Universitas Kyoto (RIMS). Namun, konsensus lengkap dari seluruh komunitas matematika belum tercapai, dan dialog seputar teori ini masih berlanjut hari ini.
-
-# Kesimpulan dan Prospek Masa Depan
-
-[Konjektur ABC](https://kenji.blog/id/p/abc-conjecture/) dan Teori Teichmüller Antar-Semesta adalah salah satu drama terbesar dalam matematika abad ke-21. Kedalaman tak terduga dari konsep paling sederhana yang dipelajari di sekolah dasar, penjumlahan dan perkalian, kini menguji batas-batas kecerdasan manusia.
-
-Apakah Teori IUT akan benar-benar membuka cakrawala baru dalam matematika, atau akankah itu memerlukan revisi lebih lanjut? Akan memakan banyak waktu dan penelitian dari generasi baru matematikawan sebelum kesimpulan akhir dicapai. Namun, visi yang diajukan oleh teori ini, yaitu **menghubungkan semesta matematika yang berbeda**, tidak diragukan lagi akan terus memberikan inspirasi besar bagi perkembangan matematika di masa depan.
+Ini adalah pengantar singkat mengenai konjektur dan perdebatan publik, bukan rekonstruksi atau evaluasi bukti IUT.
