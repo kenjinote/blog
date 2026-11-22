@@ -485,6 +485,12 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "publicationPending": true,
-  "scope": "Revised the full Japanese article and localized matching passages in all 12 language versions; marked conceptual formulas as unvalidated, removed unsupported mathematical deductions and deterministic automation predictions, qualified developer-role, company-data, legal-accountability, testing, and labor-demand claims, and added current primary research references. One-bundle static preview and publication checks pending."
+  "publicationPending": false,
+  "scope": "Revised the full Japanese article and localized matching passages in all 12 language versions; marked conceptual formulas as unvalidated, removed unsupported mathematical deductions and deterministic automation predictions, qualified developer-role, company-data, legal-accountability, testing, and labor-demand claims, and added current primary research references. The one-bundle static preview passed; CI run 45049913673 succeeded and all 13 live pages passed post-deploy checks.",
+  "publication": {
+    "record": "docs/translation-review/publication-041.json",
+    "ciRun": 45049913673,
+    "deployedCommit": "14e655cd6",
+    "allPassed": true
+  }
 }

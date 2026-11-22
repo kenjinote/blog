@@ -5045,6 +5045,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-041.json",
       "evidenceHash": "6b30ca37c3be537c897b60edb680365e6d5c2870069689e1ebc332e837c31414"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.en.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "d89bb3d565af23b47ebc0d39d57954a18578bc51b46df53f006155eddc4a32bd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "d3b04e685b2563538350bca05766d08f879aeffede4ab929bf3b48a130ac7bb9"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-cn.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "1f50e2e092cde78845b3a1638f87d2d5f2ada130ca446cf096c503c0dfa430c5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "a19257e169c0b154059bbaca8aeaac8ca0d153dd31058725fa9745c3a1a58a97"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-tw.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "ed67fcc990e998f98e4974ab43d26786ae7ffafb302e68cdee4deef263294e28",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "edf6fb7f90462f0ddc1e042e490597ff5135b295c66f336d2ef3ebeae96d95ff"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.es.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "051073aff2d25bd9b6c3c432243523d14c48e53ea14411cbdbd07857356a77af",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "53d488771a2e7f54de0fb85b3e59f006e52b9c88adbf2e4e77ac4b08f203dc37"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.ko.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "f65eefaaba343cd973f34d8506f46ea37b8a7c5ccf0b167ec769fa659d53d6d0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "819db66461a0f8fb751e6182ae34495f502858f97bbe6369f4caa5d0859e7f8c"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.pt.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "5fa3186ef62de0015ccb8515229860c4937eabd6970b2d5134d3edde7497be49",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "c604efc5fc91832f2cb3198cd1633e7e778b100e48223da5108eab78fde1ce4e"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.fr.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "0b16e2859adcf74045e3872f61f43373419c0d8f4f9d43ea1f8461f0a4515255",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "53b497934146b4369cd8d37fad417edb4dd4af3fda99a5e4cfa00a689abb650b"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.de.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "d6d62aae413a6f5dd8566019a557b1e3fd86bcd06abe08c5725bc0fe9081d605",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "6997225b40ac615c1bca550efe2dd7bce7cd094bfa13820101c021ed4e258579"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.hi.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "ea6ea71db4a4a63d5759797e4f2d8af3c044c4579763e7e79dede6af7b95b481",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "8037dda8c8d77469492251e685df83cbdd85a5528c29c8e8ae7592a665a9801e"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.id.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "c5bb3bfa7346227041e737e34d4d4bcf6dd36abfb4f668a7bb19afd69dcfa384",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "35af4ea996e2bc01a0c3a39512ffcae2a92da2201b42019ecd96f861f5ee6892"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.ar.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "35dd5bf961ec4287e342318d1f25218764190e4b918e29359601d19c1b90ca91",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "b64cff42f8a78e4696f55467897e94774cc056fd35f07ca180197adeb6e12d1f"
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.ru.md": {
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "05aa8d32c00b975eb5808f9e74e99e2353c69ff7580d443bff1ec8f896763fda",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-042.json",
+      "evidenceHash": "dfe8db86d2c4c1b5e4c1b4b9688ac9fc40665888af9c442542db26b021b41816"
     }
   }
 }

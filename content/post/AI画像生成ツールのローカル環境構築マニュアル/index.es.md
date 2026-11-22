@@ -2,6 +2,7 @@
 title: 'Manual de Configuración de Entorno Local para Herramientas de Generación de Imágenes por IA (Stable Diffusion, etc.)'
 slug: "local-ai-image-generation-setup"
 date: "2026-09-11T19:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'Un manual completo para construir un entorno de generación de im�
 ## 1. Introducción: ¿Por qué generar imágenes por IA en un entorno local?
 
 La tecnología de generación de imágenes por IA ha experimentado una evolución explosiva desde que Stable Diffusion se convirtió en código abierto. Actualmente, los servicios comerciales basados en la nube como Midjourney, DALL-E 3 y Adobe Firefly también son muy potentes y fáciles de usar. Sin embargo, estos servicios tienen desventajas como restricciones en el contenido generado debido a los términos de servicio (por ejemplo, filtros NSFW), costos continuos debido a las suscripciones y la imposibilidad de controlar el proceso de generación en detalle.
+
+> **Actualización verificada el 23-11-2026:** Algunos pasos siguientes dependen de versiones concretas; si hay discrepancias, siga la documentación oficial enlazada. No existe un mínimo universal de VRAM, RAM o almacenamiento: depende del modelo, la precisión, la resolución, el tamaño del lote y las extensiones. ComfyUI Portable incluye Python y ofrece paquetes de Windows distintos para GPU NVIDIA, AMD e Intel; elija el correspondiente en la [guía oficial](https://docs.comfy.org/installation/comfyui_portable_windows). Python 3.10.6 indicado por [AUTOMATIC1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui) es un requisito específico de ese proyecto, no de todas las herramientas. Con paquetes precompilados de PyTorch normalmente no hace falta instalar CUDA Toolkit/cuDNN en todo el sistema. El [repositorio de Fooocus](https://github.com/lllyasviel/Fooocus) describe actualmente un soporte LTS limitado a correcciones de errores. ComfyUI Manager no es obligatorio; está en marcha la migración a [Comfy Registry](https://docs.comfy.org/registry/claim-my-node). Los parámetros de inicio y las mejoras de velocidad dependen del equipo: pruébelos por separado. La ejecución local aún puede conectarse a Internet para descargas o extensiones; compruebe la licencia y las condiciones de uso de cada modelo. ControlNet condiciona la generación, pero no garantiza una pose o composición exacta; safetensors por sí solo tampoco acredita el origen ni la licencia del archivo.
 
 Construir una herramienta de generación de imágenes por IA en un entorno local (su propio PC) tiene las siguientes ventajas abrumadoras:
 

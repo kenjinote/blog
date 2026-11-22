@@ -1,0 +1,263 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T03:00:38.294357+09:00",
+  "ciRun": 45049913673,
+  "ciUrl": "https://github.com/kenjinote/kenji.blog/actions/runs/45049913673",
+  "deployedCommit": "14e655cd6",
+  "scope": "Batch041: Japanese AI-era programmer article and all 12 translations. Post-deploy HTTP checks validate all 13 pages, canonical, language, Arabic RTL, title, both primary research links, and the full 14-entry hreflang set.",
+  "allPassed": true,
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:22 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:29 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:21 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:30 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:18 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:35 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:28 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:25 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:27 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:27 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:18 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:19 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/how-programmers-survive-in-ai-era/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 17:59:26 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrlMatches": true,
+        "canonicalMatches": true,
+        "languageMatches": true,
+        "arabicRtl": true,
+        "titlePresent": true,
+        "allLanguageTargetsMatch": true,
+        "hreflangCount14": true,
+        "primaryResearchReferences": true,
+        "recentUpdateVisible": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Static HTTP checks only; no browser/device rendering.",
+    "The DORA source is survey/qualitative evidence and the METR trial is narrow in participants, tasks, and tool vintage.",
+    "AI review only; no human/native-speaker certification."
+  ]
+}

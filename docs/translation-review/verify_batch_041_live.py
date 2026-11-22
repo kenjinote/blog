@@ -100,7 +100,7 @@ receipt = {
     "version": 1,
     "checkedAt": datetime.now(timezone(timedelta(hours=9))).isoformat(),
     "ciRun": RUN,
-    "ciUrl": f"https://github.com/kenjinote/blog/actions/runs/{RUN}",
+    "ciUrl": f"https://github.com/kenjinote/kenji.blog/actions/runs/{RUN}",
     "deployedCommit": COMMIT,
     "scope": "Batch041: Japanese AI-era programmer article and all 12 translations. Post-deploy HTTP checks validate all 13 pages, canonical, language, Arabic RTL, title, both primary research links, and the full 14-entry hreflang set.",
     "allPassed": len(records) == 13 and all(record["passed"] for record in records),

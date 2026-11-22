@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T03:19:01.659649+09:00",
+  "passed": true,
+  "build": "hugo --environment production --minify --destination %TEMP%/kenji-batch-042-preview",
+  "article": "AI画像生成ツールのローカル環境構築マニュアル",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/local-ai-image-generation-setup/",
+      "checks": {
+        "canonicalSingle": true,
+        "hreflangSet": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "officialLinks": true,
+        "articleContent": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Local production render only; no browser/device visual review.",
+    "No GPU installation or performance testing.",
+    "AI translation review only; no human/native-speaker certification."
+  ]
+}

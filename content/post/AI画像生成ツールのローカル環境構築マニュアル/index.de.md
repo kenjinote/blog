@@ -1,8 +1,8 @@
 ---
 title: 'Handbuch zur Einrichtung einer lokalen Umgebung für KI-Bildgenerierungs-Tools (Stable Diffusion, etc.)'
-date: "2026-09-24T19:44:38+09:00"
 slug: 'local-ai-image-generation-setup'
 date: '2026-09-11T19:00:00+09:00'
+lastmod: '2026-11-23T19:00:00+09:00'
 image: 'img/eyecatch.jpg'
 math: true
 mermaid: true
@@ -14,6 +14,8 @@ description: 'Ein umfassendes Handbuch zur Einrichtung von KI-Bildgenerierungs-T
 ## 1. Einführung: Warum KI-Bildgenerierung in einer lokalen Umgebung durchführen?
 
 Die Technologie der KI-Bildgenerierung hat seit der Open-Source-Veröffentlichung von Stable Diffusion eine explosive Entwicklung durchgemacht. Derzeit sind Cloud-basierte kommerzielle Dienste wie Midjourney, DALL-E 3 und Adobe Firefly ebenfalls sehr leistungsstark und benutzerfreundlich geworden. Diese Dienste haben jedoch Nachteile wie Einschränkungen bei den generierten Inhalten durch Nutzungsbedingungen (z. B. NSFW-Filter), laufende Kosten durch Abonnements und die Unmöglichkeit, den Generierungsprozess detailliert zu steuern.
+
+> **Am 23.11.2026 geprüfte Aktualisierung:** Einige der folgenden Schritte gelten für bestimmte Versionen. Bei Abweichungen ist die verlinkte offizielle Dokumentation maßgeblich. Es gibt keine allgemeingültigen Mindestwerte für VRAM, RAM oder Speicherplatz; der Bedarf hängt von Modell, Genauigkeit, Auflösung, Batchgröße und Erweiterungen ab. ComfyUI Portable enthält Python und bietet getrennte Windows-Pakete für NVIDIA-, AMD- und Intel-GPUs. Wählen Sie das passende Paket in der [offiziellen Anleitung](https://docs.comfy.org/installation/comfyui_portable_windows). Python 3.10.6 in der [AUTOMATIC1111-Anleitung](https://github.com/AUTOMATIC1111/stable-diffusion-webui) gilt nur für dieses Projekt und ist keine allgemeine Voraussetzung. Für vorgefertigte PyTorch-Pakete ist eine systemweite Installation von CUDA Toolkit/cuDNN normalerweise nicht nötig. Das [Fooocus-Repository](https://github.com/lllyasviel/Fooocus) beschreibt den aktuellen Status als eingeschränkten Langzeitsupport mit Fehlerkorrekturen. ComfyUI Manager ist nicht erforderlich; die Migration zur [Comfy Registry](https://docs.comfy.org/registry/claim-my-node) läuft. Startparameter und Geschwindigkeitsgewinne hängen vom System ab und sollten einzeln getestet werden. Auch lokale Installationen können für Downloads oder Erweiterungen eine Netzwerkverbindung nutzen; prüfen Sie Lizenz und Nutzungsbedingungen jedes Modells. ControlNet steuert die Generierung, garantiert aber weder eine exakte Pose noch ein exaktes Layout; das Safetensors-Format allein belegt weder Herkunft noch Lizenz der Datei.
 
 Der Aufbau eines KI-Bildgenerierungs-Tools in einer lokalen Umgebung (auf dem eigenen PC) bietet die folgenden überwältigenden Vorteile:
 

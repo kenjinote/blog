@@ -1,0 +1,527 @@
+{
+  "version": 1,
+  "article": "AI画像生成ツールのローカル環境構築マニュアル",
+  "frozenSourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+  "reviewedAt": "2026-11-23",
+  "reviews": {
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "d89bb3d565af23b47ebc0d39d57954a18578bc51b46df53f006155eddc4a32bd",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "1f50e2e092cde78845b3a1638f87d2d5f2ada130ca446cf096c503c0dfa430c5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "ed67fcc990e998f98e4974ab43d26786ae7ffafb302e68cdee4deef263294e28",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "051073aff2d25bd9b6c3c432243523d14c48e53ea14411cbdbd07857356a77af",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "f65eefaaba343cd973f34d8506f46ea37b8a7c5ccf0b167ec769fa659d53d6d0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "5fa3186ef62de0015ccb8515229860c4937eabd6970b2d5134d3edde7497be49",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "0b16e2859adcf74045e3872f61f43373419c0d8f4f9d43ea1f8461f0a4515255",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "d6d62aae413a6f5dd8566019a557b1e3fd86bcd06abe08c5725bc0fe9081d605",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "ea6ea71db4a4a63d5759797e4f2d8af3c044c4579763e7e79dede6af7b95b481",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "c5bb3bfa7346227041e737e34d4d4bcf6dd36abfb4f668a7bb19afd69dcfa384",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "35dd5bf961ec4287e342318d1f25218764190e4b918e29359601d19c1b90ca91",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI画像生成ツールのローカル環境構築マニュアル/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI画像生成ツールのローカル環境構築マニュアル/index.md",
+      "sourceHash": "6cadcc14d5bc2d93fc148be12f55b93f2056a0d208ad24589332cc954495b967",
+      "translationHash": "05aa8d32c00b975eb5808f9e74e99e2353c69ff7580d443bff1ec8f896763fda",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the article structure and claims with the Japanese source; localized the current-version correction note and checked it against the corresponding source guidance. Exact hardware and setup requirements are explicitly scoped to official, project-specific instructions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GPU/VRAM, Python, CUDA, ComfyUI Portable, AUTOMATIC1111, Fooocus LTS, Comfy Registry, ControlNet and safetensors in the updated note."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked that the diffusion equations and LoRA expressions remain structurally intact in the translation and source. This pass did not independently rederive every displayed formula."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked retained Mermaid diagrams and installation-command context. Commands were not executed; the correction note directs readers to current project documentation and warns that version-specific examples may be stale."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official ComfyUI, AUTOMATIC1111, Fooocus and Comfy Registry references. Existing unrelated internal/external links were not comprehensively re-audited."
+        }
+      },
+      "summary": "Added a localized current-version correction note aligned with the Japanese article and official project documentation; the Japanese source also revises unsupported hardware thresholds, setup assumptions, optimization claims, and ControlNet guarantees.",
+      "languageSpecificFindings": "Localized the update note and preserved technical names and links. Legacy translated paragraphs remain in place where the article contains older detailed examples; the note explicitly makes current official documentation authoritative where they conflict.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The complete unchanged prose was not independently retranslated line by line; the main claims, structure, mathematics, code examples and localized correction note were inspected.",
+        "The translated body still contains older detailed examples not fully rewritten in this batch; the localized note supersedes conflicting version-specific claims. A later native-language editorial pass remains useful.",
+        "No installation was run on a GPU machine; performance, compatibility, and safety were not hardware-tested.",
+        "Existing links beyond the newly added official project references were not all live-checked.",
+        "The all-article translation-review goal remains active."
+      ]
+    }
+  },
+  "primarySources": [
+    {
+      "title": "ComfyUI Portable for Windows",
+      "url": "https://docs.comfy.org/installation/comfyui_portable_windows",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Comfy Desktop for Windows",
+      "url": "https://docs.comfy.org/installation/desktop/windows",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Comfy Registry migration documentation",
+      "url": "https://docs.comfy.org/registry/claim-my-node",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "AUTOMATIC1111 Stable Diffusion WebUI official repository",
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "PyTorch Get Started Locally",
+      "url": "https://pytorch.org/get-started/locally/",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Fooocus official repository and project status",
+      "url": "https://github.com/lllyasviel/Fooocus",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "NVIDIA TensorRT extension for Stable Diffusion WebUI",
+      "url": "https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT",
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "publicationPending": true,
+  "scope": "Reviewed the complete Japanese article structure and all 12 translation versions for major claim alignment; localized and inserted a 2026 current-setup note in all versions. Revised the Japanese source to remove absolute GPU/RAM/storage thresholds, universal Python/CUDA setup advice, mandatory Manager/Tiled VAE claims, unsupported TensorRT speed multipliers, deterministic ControlNet promises, unsafe troubleshooting advice, and speculative future VRAM predictions. Older translated details are explicitly superseded by the localized note where they conflict. Full-site Hugo production build passed; a 13-page preview validated each language, canonical URL, full hreflang set, RTL, update note, and official project links. CI publication and post-deploy checks remain pending."
+}

@@ -2,6 +2,7 @@
 title: 'Panduan Penyiapan Lingkungan Lokal untuk Alat Pembuatan Gambar AI (Stable Diffusion, dll.)'
 slug: "local-ai-image-generation-setup"
 date: "2026-09-11T19:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'Panduan komprehensif untuk menyiapkan alat pembuatan gambar AI (St
 ## 1. Pendahuluan: Mengapa membuat gambar AI di lingkungan lokal?
 
 Teknologi pembuatan gambar AI telah mengalami evolusi eksplosif, dimulai dengan sumber terbuka Stable Diffusion. Saat ini, layanan komersial berbasis cloud seperti Midjourney, DALL-E 3, dan Adobe Firefly juga sangat kuat dan mudah digunakan. Namun, layanan tersebut memiliki kelemahan seperti pembatasan konten yang dihasilkan karena persyaratan layanan (filter NSFW, dll.), biaya berkelanjutan karena langganan, dan ketidakmampuan untuk mengontrol proses pembuatan secara mendetail.
+
+> **Pembaruan diverifikasi pada 23-11-2026:** Beberapa langkah di bawah bergantung pada versi tertentu; jika berbeda, ikuti dokumentasi resmi yang ditautkan. Tidak ada batas minimum VRAM, RAM, atau penyimpanan yang berlaku universal; kebutuhannya bergantung pada model, presisi, resolusi, ukuran batch, dan ekstensi. ComfyUI Portable menyertakan Python serta menyediakan paket Windows terpisah untuk GPU NVIDIA, AMD, dan Intel; pilih yang sesuai melalui [panduan resmi](https://docs.comfy.org/installation/comfyui_portable_windows). Python 3.10.6 dalam [petunjuk resmi AUTOMATIC1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui) khusus untuk proyek tersebut, bukan syarat semua alat. Paket PyTorch siap pakai biasanya tidak memerlukan pemasangan CUDA Toolkit/cuDNN secara global. [Repositori Fooocus](https://github.com/lllyasviel/Fooocus) menyebut statusnya sebagai dukungan LTS terbatas yang hanya mencakup perbaikan bug. ComfyUI Manager tidak wajib; migrasi ke [Comfy Registry](https://docs.comfy.org/registry/claim-my-node) sedang berlangsung. Opsi peluncuran dan peningkatan kecepatan bergantung pada sistem, jadi ukur satu per satu. Penggunaan lokal tetap dapat mengakses jaringan untuk unduhan atau ekstensi; periksa lisensi dan ketentuan penggunaan tiap model. ControlNet memberi kondisi pada generasi, tetapi tidak menjamin pose atau tata letak yang persis; format safetensors saja juga tidak membuktikan asal maupun lisensi file.
 
 Membangun alat pembuatan gambar AI di lingkungan lokal (PC Anda sendiri) memiliki keuntungan luar biasa berikut:
 

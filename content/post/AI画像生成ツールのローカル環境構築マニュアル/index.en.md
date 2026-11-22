@@ -2,6 +2,7 @@
 title: 'Local Environment Setup Manual for AI Image Generation Tools (Stable Diffusion, etc.)'
 slug: "local-ai-image-generation-setup"
 date: "2026-09-11T19:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'A comprehensive manual for setting up AI image generation tools (S
 ## 1. Introduction: Why perform AI image generation in a local environment?
 
 AI image generation technology has achieved explosive evolution, starting with the open-sourcing of Stable Diffusion. Currently, cloud-based commercial services like Midjourney, DALL-E 3, and Adobe Firefly are also extremely powerful and easy to use. However, these services have disadvantages such as restrictions on generated content due to terms of service (e.g., NSFW filters), ongoing subscription costs, and the inability to control the detailed generation process.
+
+> **Update checked on 2026-11-23:** Some instructions below are version-specific; when they conflict, follow the linked official documentation. There is no universal minimum for VRAM, RAM, or storage: requirements vary with the model, precision, resolution, batch size, and extensions. ComfyUI Portable bundles Python and offers separate Windows packages for NVIDIA, AMD, and Intel GPUs; choose the package that matches your hardware in the [official guide](https://docs.comfy.org/installation/comfyui_portable_windows). Python 3.10.6 in the [AUTOMATIC1111 instructions](https://github.com/AUTOMATIC1111/stable-diffusion-webui) is specific to that project, not a requirement for every tool. A system-wide CUDA Toolkit/cuDNN installation is usually unnecessary when using prebuilt PyTorch packages. The [Fooocus repository](https://github.com/lllyasviel/Fooocus) describes the project as limited long-term support with bug fixes only. ComfyUI Manager is not mandatory; migration to the [Comfy Registry](https://docs.comfy.org/registry/claim-my-node) is underway. Launch flags and speed gains depend on the setup, so benchmark options individually instead of enabling several together. Local execution can still make network requests for downloads or extensions; check each model’s license and usage terms. ControlNet conditioning does not guarantee an exact pose or layout, and the safetensors format alone does not establish a file’s provenance or license.
 
 Building AI image generation tools in a local environment (your own PC) has the following overwhelming advantages:
 

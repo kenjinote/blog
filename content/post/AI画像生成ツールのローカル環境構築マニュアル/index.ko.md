@@ -2,6 +2,7 @@
 title: 'AI 이미지 생성 툴(Stable Diffusion 등) 로컬 환경 구축 매뉴얼'
 slug: "local-ai-image-generation-setup"
 date: "2026-09-11T19:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: 'Windows 로컬 환경에서 AI 이미지 생성 툴(Stable Diffusi
 ## 1. 시작하며: 왜 로컬 환경에서 AI 이미지 생성을 해야 하는가?
 
 AI 이미지 생성 기술은 Stable Diffusion의 오픈소스화를 시작으로 폭발적인 진화를 거듭하고 있습니다. 현재 Midjourney나 DALL-E 3, Adobe Firefly와 같은 클라우드 기반의 상용 서비스도 매우 강력하고 사용하기 쉬워졌습니다. 하지만 이러한 서비스에는 이용 약관에 따른 생성 콘텐츠 제한(NSFW 필터 등), 구독에 의한 지속적인 비용, 그리고 상세한 생성 프로세스의 제어가 불가능하다는 단점이 존재합니다.
+
+> **2026년 11월 23일 확인한 업데이트:** 아래 일부 절차는 특정 버전에 한정됩니다. 내용이 다르면 링크한 공식 문서를 따르세요. VRAM·RAM·저장 공간의 보편적인 최소 기준은 없으며 모델, 정밀도, 해상도, 배치 크기, 확장 기능에 따라 달라집니다. ComfyUI Portable에는 Python이 포함되어 있고 Windows용 NVIDIA·AMD·Intel GPU 패키지가 따로 제공되므로 [공식 안내](https://docs.comfy.org/installation/comfyui_portable_windows)에서 하드웨어에 맞는 것을 선택하세요. [AUTOMATIC1111 공식 안내](https://github.com/AUTOMATIC1111/stable-diffusion-webui)의 Python 3.10.6은 해당 프로젝트 전용이며 모든 도구의 공통 요건이 아닙니다. 사전 빌드 PyTorch 패키지를 사용하는 경우 시스템 전체에 CUDA Toolkit/cuDNN을 설치할 필요는 대체로 없습니다. [Fooocus 저장소](https://github.com/lllyasviel/Fooocus)는 현재 버그 수정만 제공하는 제한적 장기 지원 상태라고 설명합니다. ComfyUI Manager는 필수가 아니며 [Comfy Registry](https://docs.comfy.org/registry/claim-my-node)로의 전환이 진행 중입니다. 실행 옵션과 속도 향상은 환경마다 다르므로 여러 옵션을 기본으로 함께 켜지 말고 각각 측정하세요. 로컬 실행 중에도 다운로드나 확장 기능이 네트워크에 접속할 수 있으며, 모델별 라이선스와 이용 조건을 확인해야 합니다. ControlNet 조건은 포즈나 구도가 정확히 일치함을 보장하지 않으며, safetensors 형식만으로 파일 출처나 라이선스가 확인되는 것도 아닙니다.
 
 로컬 환경(자신의 PC)에서 AI 이미지 생성 툴을 구축하는 것에는 다음과 같은 압도적인 장점이 있습니다.
 

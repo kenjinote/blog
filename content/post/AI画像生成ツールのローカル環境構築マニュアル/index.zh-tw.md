@@ -2,6 +2,7 @@
 title: 'AI圖像生成工具（Stable Diffusion等）的本機環境建置手冊'
 slug: "local-ai-image-generation-setup"
 date: "2026-09-11T19:00:00+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -13,6 +14,8 @@ description: '這是一份在Windows本機環境中建置AI圖像生成工具（
 ## 1. 前言：為什麼要在本機環境進行AI圖像生成？
 
 AI圖像生成技術以Stable Diffusion的開源為開端，實現了爆發性的進化。目前，Midjourney、DALL-E 3、Adobe Firefly等雲端商用服務也變得非常強大且易於使用。然而，這些服務存在著因使用條款對生成內容的限制（如NSFW過濾器）、訂閱制帶來的持續成本，以及無法詳細控制生成過程等缺點。
+
+> **2026年11月23日核對更新：** 下方部分步驟是針對特定版本；若有衝突，請以連結中的官方文件為準。VRAM、RAM與儲存空間沒有適用所有情況的固定最低需求，實際需求取決於模型、精度、解析度、批次大小與擴充套件。ComfyUI Portable內含Python，並提供適用於NVIDIA、AMD與Intel GPU的不同Windows套件；請在[官方指南](https://docs.comfy.org/installation/comfyui_portable_windows)選擇符合硬體的版本。[AUTOMATIC1111官方說明](https://github.com/AUTOMATIC1111/stable-diffusion-webui)中的Python 3.10.6僅適用於該專案，並非所有工具的共同需求。使用預先編譯的PyTorch套件時，通常不必在整個系統安裝CUDA Toolkit/cuDNN。[Fooocus儲存庫](https://github.com/lllyasviel/Fooocus)目前將專案狀態列為僅提供錯誤修正的有限長期支援。ComfyUI Manager不是必裝項目；專案正移轉至[Comfy Registry](https://docs.comfy.org/registry/claim-my-node)。啟動參數與加速幅度因環境而異，請逐項測試，不要預設同時啟用多個參數。本機執行仍可能因下載或擴充套件而連線；請分別確認模型的授權與使用條款。 ControlNet只能提供條件引導，無法保證姿勢或構圖完全一致；safetensors格式本身也無法證明檔案來源可信或授權合規。
 
 在本機環境（自己的PC）建置AI圖像生成工具，具有以下壓倒性的優勢。
 
