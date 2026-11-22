@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T08:39:36.909500+09:00",
+  "ciRun": 45082247630,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45082247630",
+  "deployedCommit": "01cb78c620dcd7f4acb2749dd569ff5008ac29dc",
+  "allPassed": true,
+  "scope": "Batch 053 acoustic-levitation Japanese source plus twelve translations; live HTTP validates title/description, canonical, language/RTL, dates, four primary references, corrected 5/2 force coefficient, absence of 5/6 and hreflang targets.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "bibliography": true,
+        "oldForceCoefficientAbsent": true,
+        "correctedForceCoefficientPresent": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI review only; no human/native-speaker certification.",
+    "No experimental replication or device-specific measurement was performed.",
+    "No rendered browser/device visual QA was performed."
+  ]
+}

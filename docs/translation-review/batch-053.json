@@ -19,7 +19,7 @@
     "Unsupported universal phased-array capabilities, droplet breakup thresholds, sound-level limits, and no-harm/no-contamination implications were removed or qualified.",
     "The review compares the complete Japanese article with all twelve translations, including formulas, diagrams where present, terminology, bibliography and claims."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/acoustic-levitation-standing-waves-radiation-force-ultrasonic-physics/index.en.md": {
       "reviewKind": "ai",
@@ -453,5 +453,11 @@
         "The Gor’kov derivation is limited to its stated small-sphere/ideal-fluid assumptions; practical stability and operating limits require system-specific measurement."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-053.json",
+    "ciRun": 45082247630,
+    "deployedCommit": "01cb78c620dcd7f4acb2749dd569ff5008ac29dc",
+    "allPassed": true
   }
 }

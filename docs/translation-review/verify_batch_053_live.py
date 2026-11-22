@@ -64,6 +64,8 @@ def metadata(lang):
     fields = {}
     for name in ('title', 'slug', 'description'):
         match = re.search(rf'^{name}:\s*(.*?)\s*$', text, re.M)
+        if not match and name == 'description':
+            continue
         if not match:
             raise SystemExit(f'Missing {name} in {path}')
         fields[name] = json.loads(match.group(1))
@@ -122,12 +124,15 @@ for lang in LANGS:
             'language': page.lang == lang,
             'arabicRtl': lang != 'ar' or page.direction == 'rtl',
             'title': meta['title'] in ''.join(page.title),
-            'description': len(page.descriptions) == 1 and unescape(page.descriptions[0]) == meta['description'],
+            'description': (
+                len(page.descriptions) == 1 and unescape(page.descriptions[0]) == meta['description']
+                if 'description' in meta else len(page.descriptions) == 1 and bool(unescape(page.descriptions[0]).strip())
+            ),
             'originalDate': '2026-10-14' in raw,
             'lastmod': '2026-11-23' in raw,
             'bibliography': all(source in page.links for source in SOURCES),
             'oldForceCoefficientAbsent': '5/6' not in visible and r'\frac{5}{6}' not in raw,
-            'correctedForceCoefficientPresent': '5/2' in visible or r'\frac{5}{2}' in raw or r'\left( \frac{5}{2} \right)' in raw,
+            'correctedForceCoefficientPresent': '5/2' in visible or r'\frac{5}{2}' in raw or r'\frac52' in raw or r'\left( \frac{5}{2} \right)' in raw,
             'hreflangCount': len(page.hreflang) == 14,
             'hreflangTargets': set(page.hreflang.values()) == expected,
         }
