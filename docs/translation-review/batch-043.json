@@ -522,6 +522,12 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "publicationPending": true,
-  "scope": "Reviewed the complete Japanese article and all 12 translations for structure and major technical claims; localized a current correction note in all 12 translations, updated shared Transformers/DeepSpeed examples, and corrected the Japanese source on memory estimates, KV cache, FlashAttention, UMA, gradient checkpointing, QLoRA, ZeRO, and device placement. Legacy translation prose is not fully retranslated; the note supersedes conflicting claims. Local production build and 13-page preview checks are pending. Post-deploy checks remain pending."
+  "publicationPending": false,
+  "scope": "Reviewed the complete Japanese article and all 12 translations for structure and major technical claims; localized a current correction note in all 12 translations, updated shared Transformers/DeepSpeed examples, and corrected the Japanese source on memory estimates, KV cache, FlashAttention, UMA, gradient checkpointing, QLoRA, ZeRO, and device placement. Legacy translation prose is not fully retranslated; the note supersedes conflicting claims. Local production build and 13-page preview checks are pending. CI succeeded and all 13 live pages passed post-deploy checks.",
+  "publication": {
+    "record": "docs/translation-review/publication-043.json",
+    "ciRun": 45057088625,
+    "deployedCommit": "2d2d49a7c2f21d3119459142250e6bc3af7b43eb",
+    "allPassed": true
+  }
 }

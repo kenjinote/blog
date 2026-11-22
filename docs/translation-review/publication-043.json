@@ -1,0 +1,276 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T04:24:36.154463+09:00",
+  "ciRun": 45057088625,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45057088625",
+  "deployedCommit": "2d2d49a7c2f21d3119459142250e6bc3af7b43eb",
+  "allPassed": true,
+  "scope": "Batch 043: Japanese GPU memory article and all 12 translations. Live HTTP checks cover status, final URL, canonical, language, Arabic RTL, title, lastmod, correction note, seven primary source links, updated code examples, and all 14 hreflang entries/targets.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:15:58 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:16:04 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:15:57 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:16:07 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:15:50 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:16:19 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:16:02 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:16:01 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:16:03 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:16:10 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:15:55 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:15:56 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/ai-gpu-vram-optimization-cpu-offloading/",
+      "status": 200,
+      "lastModified": "Sun, 22 Nov 2026 19:15:58 GMT",
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "fullHreflang": true,
+        "lastmod": true,
+        "correctionNote": true,
+        "primarySourceLinks": true,
+        "updatedCode": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI review only; no human/native-speaker certification.",
+    "No GPU model-loading, training, or performance tests.",
+    "Browser/device visual review was not performed."
+  ]
+}
