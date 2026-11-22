@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T05:09:57.635956+09:00",
+  "passed": true,
+  "build": "hugo --environment production --minify --destination %TEMP%/kenji-batch-046-preview",
+  "article": "探索アルゴリズム（線形、二分探索とハッシュテーブルの原理）",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/search-algorithms-linear-binary-hash-table-principles/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "pythonComplexityLink": true,
+        "oldWrongPointerLinkRemoved": true,
+        "codeRendered": true,
+        "correctedCaveat": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Local production render only; live deployment check pending.",
+    "Python examples were syntax-parsed but not executed or benchmarked.",
+    "AI translation review only; no human/native-speaker certification."
+  ]
+}

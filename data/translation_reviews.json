@@ -5525,6 +5525,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-045.json",
       "evidenceHash": "ddac65e8deb3d8594f34ea29c7bb1b76baf0e81a63c027ef5e3abbe2e6b92e91"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.en.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "b58b4f1bca4343aa0290c2686a88a75481d6a535c56a3ef6dd961791c2b4d4a2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "495ac0ec9aa51412515599aef047739eebd9da6a0e07cf5e3c88553dd9691f6e"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.zh-cn.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "353e183f619cbba5cd9135746ed2361a14c2f2f50fe14756647bce8f70f49966",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "ed77282cac6d329ba4a6da9e5a224efe2341fff55dff2c982524d626df9dcf15"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.es.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "af8942a0a60ca05d5315695296cb0530fed1c62a8fadc88ed1b400df76cce399",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "312440b76b1359c4a667f4a99a00e091bf1ebe0489fb7067533e1d91e80d5958"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.ko.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "a1c5ac487ed1cbf7f7688284c589104d9e7431dc7bf63df94601a12f868fbb06",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "420872446a24886a595eec77dc202a0018b221174ab7af1ee3f01e05a342e99f"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.pt.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "382008e757290abef45396c9f3c12136309ea83886255d749aec2402793f004b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "e1d7af9c9da9cd767cffd78d61b2a77fa18d73daa795dd41f1ee4a30188e6557"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.zh-tw.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "85c4ac29593f27c5c5ee55d92390dde1c7ff179c2a7614c7c9f32cb978e623e9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "48dc682a8b824462f6f2f5e4b896b197180371bf522d94cd1cca6d3fdb94e094"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.hi.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "07ea8c6ddeeee03a9e4e487a0cff5e65ce92c11f3673bbec8c1b4933a8b14208",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "fe9d7e340250e13494de00086213c2844360ea4428529738f147d21352fc5920"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.fr.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "ad0c6ea3ebce3b1042b455fa83fd3446c274cb7814d5c8f039bdd407fca561e9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "86d6263d340958f12ffa8972711934ca43d200ccbe6985a8b8878f077a610d95"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.de.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "109dff30f554c324a2bb9478cffa30b4c72c24aaf00f4188203f1217efd4ee5f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "f36af04cdd1e7d4e641a8d05f28ecdf247660f8716c02d9bb5c17a63c541275c"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.ar.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "2dc578a8d8b619ed002941e819225cbc7268f5b093814f25e72a14e5f7856a73",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "3a45c380e51f6cf4feb4a7e4d97bfe2c3e2414d371a2b4b6c88e42f002cfac24"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.ru.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "6a4ea00e667d218c428d7c91034247b579a4f54686803aca973a324ee6196ccc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "fedcbc54c85aace210759671d5886b56cab283905ad2a9acc2a100cf4800b8c4"
+    },
+    "post/search-algorithms-linear-binary-hash-table-principles/index.id.md": {
+      "source": "post/search-algorithms-linear-binary-hash-table-principles/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "79fa3f44e89ac328f19dc9a24182032a61c4fc47a207d92346eb8f59192fdd07",
+      "translationHash": "52f081df570d16637ea459cf46fbf6031aa08a9e9225049aad0cf585424b404d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-046.json",
+      "evidenceHash": "305ec05d22b8a4eefbd728ea456dc328c01f56ef61a8be26ecfa9984c66a9d87"
     }
   }
 }
