@@ -7,24 +7,18 @@
 
 
 
-title: 'El muro del desarrollo de IA era alto... La razón y la realidad de por qué "crear una aplicación es un infierno a partir del 80%"'
-date: "2026-09-24T19:44:38+09:00"
+title: "La barrera del desarrollo con IA: por qué el tramo final de crear una app puede volverse un infierno"
 slug: "AI開発のPared"
-date: 2025-07-20T21:52:42+09:00
-tags: ["IA", "Desarrollo", "Barrera", "Poema"]
+tags: ["IA", "Desarrollo", "Barrera", "Ensayo"]
 draft: false
 image: "img_1.webp"
 categories: ["ai-technology"]
 description: '¿Es cierta la era en la que "puedes crear fácilmente una aplicación con solo pedírselo a una IA"? Incluso si llegar al 80% es fácil con No-Code y código generado por IA, después te espera un infierno de ajustes finales y corrección de errores que hacen llorar a los humanos. Hablaremos sin tapujos sobre las verdaderas trampas del desarrollo de IA y la naturaleza del "muro" al que nos enfrentamos.'
+date: "2025-07-20T21:52:42+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 ---
 
-
-
-
-
-
-
-
+> **Sobre este ensayo (publicado el 20 de julio de 2025):** El texto refleja la experiencia personal y la opinión del autor sobre el desarrollo de aplicaciones con ayuda de IA. «La octava estación» es una metáfora basada en la ruta del monte Fuji; no es un resultado medido ni una predicción válida para todos los proyectos. Las herramientas de IA, las reglas de revisión de las plataformas y las capacidades de los servicios cambian: comprueba los requisitos actuales de las herramientas que utilices.
 
 # La barrera del desarrollo de IA
 
@@ -54,7 +48,7 @@ Desarrollar con IA es realmente fácil al principio.
 Aquí es donde te haces la ilusión de: "¿Acaso ya soy ingeniero?".
 Pero el verdadero infierno comienza a partir de aquí.
 
-![img.png](img.webp)
+![Ilustración de una persona en sandalias frente a obstáculos de escalabilidad, revisión de App Store, gestión de registros y control de versiones, con el monte Fuji al fondo.](img.webp)
 
 ---
 
@@ -125,4 +119,4 @@ Pero a partir de ahí empieza lo de verdad.
 Y, para cuando lleguemos a la cima,
 tal vez nos espere un futuro en el que nos preguntemos: "¿De verdad era necesario escalar la montaña?".
 
-![img_1.png](img_1.webp)
+![Ilustración de una persona que termina una aplicación en la cima del monte Fuji y otra que se detiene a pensar en la ladera.](img_1.webp)

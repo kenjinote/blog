@@ -866,3 +866,5 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 2026-11-23 Batch043: GPUメモリ記事の日本語原文と12翻訳を校閲。メモリ式・KVキャッシュ・FlashAttention・PagedAttention・UMA・gradient checkpointing・QLoRA・ZeROの適用範囲と断定を修正し、Hugging Face/論文/DeepSpeed/Apple一次資料を参照。全13版のコード例とDeepSpeed micro-batch設定を更新。各翻訳のAI校閲記録12件を版ハッシュ付きで登録。Hugo本番ビルド成功（13言語、約6分38秒）、対象13ページのcanonical/lang/RTL/hreflang/一次リンク/訂正注記/コード検査通過。AI528、未確認12,504、人確認0。旧翻訳本文の一部は全段落再翻訳せず残し、矛盾箇所は訂正注記で上書きする旨と校閲範囲を台帳に明記。CI・公開後確認は継続中。
 
 - 2026-11-23 Batch042公開確認完了。CI run 45054715047／commit 5b0c4b2afe1dc61e725b0c58a8bd45311f72d4ca成功、原文＋12翻訳の公開13 URLすべてHTTP 200・canonical・言語・RTL・更新日・一次リンク・14件hreflang先を確認。Batch043のCI公開・実HTTP確認は継続。
+
+- 2026-11-23 Batch044: AI開発体験談を日本語原文＋12翻訳で全文照合。Git履歴で原公開日2025-07-20を確認し、13版の重複日付を修正、lastmodを設定。個人の体験と一般化できる知見の範囲、富士山8合目の比喩を各言語で注記。翻訳タイトル/エッセイタグ、英語太字Markdown、13言語の画像代替テキストを改善。AI540、未確認12,492、人確認0。Hugo本番ビルド成功、対象13ページのcanonical/lang/RTL/公開日注記/画像代替テキスト/hreflang検査を通過。CI公開・実HTTP確認は継続中。

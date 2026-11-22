@@ -5285,6 +5285,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-043.json",
       "evidenceHash": "7804c8a5526e428e185601046ec3478f3fff9cdcc57395a5aae172590c1eaa83"
+    },
+    "post/AI開発の壁/index.en.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "545502778a58e641e4f7fe7d966ead7b1d2e69a3bef6b2806cfe8e52ddc75c65",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "5a9dfc7693cb9d2f9d4caf340e3d8b38b8ba3d01d48cc4a1b7cc6e4175d6b06b"
+    },
+    "post/AI開発の壁/index.zh-cn.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "b56c1e38273fc5d73d7e112dfa90937bae46fc463a77234958f760ab8e936a4f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "49025b2c0586ff6dd69e67715a6187f109a5a5aa4cf6ed066b08c22632387d33"
+    },
+    "post/AI開発の壁/index.zh-tw.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "df0905554f945b59030284b4e9a1000c63c87b05f0eb45a81e1bf191e180eba6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "a9b5b6358e85c11f134ac08f6b6b12d5690e4a0c6599fae640d95c76b946282a"
+    },
+    "post/AI開発の壁/index.es.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "07e366a082ab832951d9d13efd643db1fed76dbc7a3c9dab89b726d3998e1470",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "bb851b8fddb11fb11ddcbb529c237d22cf6bad387bc4b08e49851709a71fce80"
+    },
+    "post/AI開発の壁/index.ko.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "bc470ad22fbd53e759dd9144f0d0e720300bf431136d0149990a9f3acaf35a35",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "547ed025ff5793f1f908b667268c0c125d65b568a129fc43fda07c4107a0c981"
+    },
+    "post/AI開発の壁/index.pt.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "faba9475f5aff1f31b262806fcd17895b06602521f946591fdfd5fe14089f298",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "1f22776a38b578f38189079f363cdfc0967e4c99f3c71d667d2c610cb90aa20a"
+    },
+    "post/AI開発の壁/index.fr.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "c479dd1cc84489a1575f2a09783719a839c0b75c7625d517e9223249d144df2f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "c28c733b78f938f991f691975ca8c085c90e21f5e06213de2668df52fee9b8b9"
+    },
+    "post/AI開発の壁/index.de.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "2dd9bc17558be4c848e97c5a27a2a9e23369efacde1c9c54fb7a2d9275df0b10",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "04ab56967bdb2a2292e523c6f4b25774c35c4caa4318bdc1f9f63daa0b195603"
+    },
+    "post/AI開発の壁/index.id.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "284f68d7c32063fe242dc0eb5844bd64fcaf47012e67b9fbaf2082aa3a2b51e3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "4ab2bb37332f326156fe06caf2900cafe7f6c9f3b670cc720aea0ad8fe715def"
+    },
+    "post/AI開発の壁/index.ar.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "99da3af606cdf330a21cf94d0f7a2d746d56c834829db2a783217b8ea9408563",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "7e495419f8462e5ceab8b90ba651426b5a7208ed863d150aacd5e417df057625"
+    },
+    "post/AI開発の壁/index.ru.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "e109da6a725465efbccff97ca476c844d90295c1593b2b9c2dba2797ee268ee9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "25f678e5fe0d6fcf9bc9af15334a3c1cfce37fb39331e33119c0817befa26729"
+    },
+    "post/AI開発の壁/index.hi.md": {
+      "source": "post/AI開発の壁/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "35077383bc65b7388dd389e196cce67a9ee0b7de018b8355341513dd56ec9cd3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-044.json",
+      "evidenceHash": "1075727a04caeb1cc2ee7b6abd1bad4c90f65acc5b04906b75fe7f2d9267e266"
     }
   }
 }

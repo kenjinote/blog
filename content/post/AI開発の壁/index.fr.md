@@ -1,14 +1,16 @@
 ---
-title: 'Le mur du développement de l''IA était haut... Raisons et réalités pour lesquelles la création d''applications est « un enfer à partir du 8ème palier »'
-date: "2026-09-24T19:44:38+09:00"
+title: "Le mur du développement avec l’IA : pourquoi la dernière étape de création d’une application peut devenir un enfer"
 slug: "AI開発のMur"
-date: 2025-07-20T21:52:42+09:00
-tags: ["IA", "développement", "mur", "poème"]
+tags: ["IA", "Développement", "Obstacle", "Essai"]
 draft: false
 image: "img_1.webp"
 categories: ["ai-technology"]
 description: 'L''ère où l''on peut « facilement créer des applications en s''appuyant sur l''IA » est-elle réelle ? Même si le no-code ou le code généré par l''IA permettent d''atteindre facilement le 8ème palier, l''enfer des ajustements finaux et des corrections de bugs attend les humains par la suite. Nous parlons ouvertement des pièges réels du développement de l''IA et de la véritable nature du « mur » auquel nous sommes confrontés.'
+date: "2025-07-20T21:52:42+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 ---
+
+> **À propos de cet essai (publié le 20 juillet 2025) :** Ce texte reflète l’expérience personnelle et l’opinion de l’auteur sur le développement d’applications assisté par l’IA. La « huitième station » est une métaphore inspirée de l’ascension du mont Fuji ; ce n’est ni un résultat mesuré ni une prédiction valable pour tous les projets. Les outils d’IA, les règles d’examen des plateformes et les capacités des services évoluent : vérifiez les exigences actuelles des outils utilisés.
 
 # Le Mur du Développement de l'IA
 
@@ -38,7 +40,7 @@ Paiement ? L'API de Stripe peut se régler par un simple copier-coller.
 À ce stade, on se fait l'illusion : "Je suis ingénieur maintenant, non ?"
 Mais le véritable enfer commence ici.
 
-![img.png](img.webp)
+![Illustration d’une personne en sandales face à des obstacles de mise à l’échelle, d’examen de l’App Store, de gestion des journaux et des versions, avec le mont Fuji en arrière-plan.](img.webp)
 
 ---
 
@@ -109,4 +111,4 @@ Mais le vrai défi commence à partir de là.
 Et quand nous atteindrons le sommet,
 un avenir où nous nous demanderons "Avions-nous vraiment besoin de gravir la montagne ?" nous attendra peut-être.
 
-![img_1.png](img_1.webp)
+![Illustration d’une personne qui termine une application au sommet du mont Fuji et d’une autre qui s’arrête pour réfléchir sur le versant.](img_1.webp)

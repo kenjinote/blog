@@ -1,14 +1,16 @@
 ---
-title: 'Die Hürde bei der KI-Entwicklung war hoch... Warum die App-Erstellung „ab der 8. Station die Hölle“ ist und die Realität'
-date: "2026-09-24T19:44:38+09:00"
+title: "Die Hürde bei der KI-Entwicklung: Warum die letzte Etappe der App-Erstellung zur Hölle werden kann"
 slug: "AI開発のWand"
-date: 2025-07-20T21:52:42+09:00
-tags: ["KI", "Entwicklung", "Barriere", "Gedicht"]
+tags: ["KI", "Entwicklung", "Hürde", "Essay"]
 draft: false
 image: "img_1.webp"
 categories: ["ai-technology"]
 description: 'Ist die Ära von „Mit KI lassen sich Apps einfach erstellen“ wirklich wahr? Auch wenn man mit No-Code und KI-generiertem Code problemlos bis zur 8. Station kommt, wartet danach bei den finalen Anpassungen und der Fehlerbehebung eine Hölle, die Menschen zum Weinen bringt. Wir sprechen offen über die realen Fallstricke der KI-Entwicklung und die wahre Natur der „Hürden“, auf die man stößt.'
+date: "2025-07-20T21:52:42+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 ---
+
+> **Über diesen Essay (veröffentlicht am 20. Juli 2025):** Der Text schildert die persönliche Erfahrung und Meinung des Autors zur KI-gestützten App-Entwicklung. Die „achte Station“ ist eine Metapher aus der Besteigung des Fuji und weder ein gemessenes Ergebnis noch eine Vorhersage für jedes Projekt. KI-Werkzeuge, Prüfregeln der Plattformen und Dienstfunktionen ändern sich. Prüfen Sie daher die aktuellen Anforderungen der verwendeten Werkzeuge.
 
 # Die Barriere der KI-Entwicklung
 
@@ -38,7 +40,7 @@ Zahlung? Die Stripe-API lässt sich per Copy & Paste erledigen.
 Hier hat man die Illusion: "Bin ich jetzt ein Ingenieur?"
 Aber die wahre Hölle beginnt erst hier.
 
-![img.png](img.webp)
+![Illustration: Eine Person in Sandalen steht vor Hindernissen wie Skalierbarkeit, App-Store-Prüfung, Protokollierung und Versionsverwaltung; im Hintergrund ist der Fuji zu sehen.](img.webp)
 
 ---
 
@@ -109,4 +111,4 @@ Aber die wahre Herausforderung beginnt erst ab dort.
 Und wenn wir den Gipfel erreichen,
 könnte eine Zukunft auf uns warten, in der wir uns fragen: "Mussten wir den Berg wirklich besteigen?"
 
-![img_1.png](img_1.webp)
+![Illustration: Eine Person stellt auf dem Fuji-Gipfel eine App fertig, während eine andere am Hang nachdenklich innehält.](img_1.webp)

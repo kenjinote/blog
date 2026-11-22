@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T04:08:26.333231+09:00",
+  "passed": true,
+  "build": "hugo --environment production --minify --destination %TEMP%/kenji-batch-044-preview",
+  "article": "AI開発の壁",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/ai%E9%96%8B%E7%99%BA%E3%81%AE%E5%A3%81/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/ai%E9%96%8B%E7%99%BA%E3%81%AEwall/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/ai%E9%96%8B%E7%99%BA%E3%81%AE%E5%A2%99%E5%A3%81/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/ai%E9%96%8B%E7%99%BA%E3%81%AE%E7%89%86%E5%A3%81/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/ai%E9%96%8B%E7%99%BA%E3%81%AEpared/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/ai%E9%96%8B%E7%99%BA%E3%81%AE%EB%B2%BD/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/ai%E9%96%8B%E7%99%BA%E3%81%AEparede/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/ai%E9%96%8B%E7%99%BA%E3%81%AEmur/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/ai%E9%96%8B%E7%99%BA%E3%81%AEwand/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/ai%E9%96%8B%E7%99%BA%E3%81%AE%E0%A4%A6%E0%A5%80%E0%A4%B5%E0%A4%BE%E0%A4%B0/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/ai%E9%96%8B%E7%99%BA%E3%81%AEdinding/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/ai%E9%96%8B%E7%99%BA%E3%81%AE%D8%AC%D8%AF%D8%A7%D8%B1/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/ai%E9%96%8B%E7%99%BA%E3%81%AE%D1%81%D1%82%D0%B5%D0%BD%D0%B0/",
+      "checks": {
+        "canonicalSingle": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "datedContext": true,
+        "localizedImageAlt": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Local production render only; no browser/device visual review.",
+    "AI review only; no human/native-speaker certification."
+  ]
+}

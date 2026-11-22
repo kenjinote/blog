@@ -1,0 +1,487 @@
+{
+  "version": 1,
+  "article": "AI開発の壁",
+  "frozenSourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+  "reviewedAt": "2026-11-23",
+  "reviews": {
+    "post/AI開発の壁/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "545502778a58e641e4f7fe7d966ead7b1d2e69a3bef6b2806cfe8e52ddc75c65",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発の壁/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "b56c1e38273fc5d73d7e112dfa90937bae46fc463a77234958f760ab8e936a4f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発の壁/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "df0905554f945b59030284b4e9a1000c63c87b05f0eb45a81e1bf191e180eba6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発の壁/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "07e366a082ab832951d9d13efd643db1fed76dbc7a3c9dab89b726d3998e1470",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発の壁/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "bc470ad22fbd53e759dd9144f0d0e720300bf431136d0149990a9f3acaf35a35",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発の壁/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "faba9475f5aff1f31b262806fcd17895b06602521f946591fdfd5fe14089f298",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発の壁/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "c479dd1cc84489a1575f2a09783719a839c0b75c7625d517e9223249d144df2f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発の壁/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "2dd9bc17558be4c848e97c5a27a2a9e23369efacde1c9c54fb7a2d9275df0b10",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発の壁/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "35077383bc65b7388dd389e196cce67a9ee0b7de018b8355341513dd56ec9cd3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発の壁/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "284f68d7c32063fe242dc0eb5844bd64fcaf47012e67b9fbaf2082aa3a2b51e3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発の壁/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "99da3af606cdf330a21cf94d0f7a2d746d56c834829db2a783217b8ea9408563",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    },
+    "post/AI開発の壁/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI開発の壁/index.md",
+      "sourceHash": "027740cdac5236539d46f5a9cb89de9eb28c0455250b91af5a3c81e66d4c5799",
+      "translationHash": "e109da6a725465efbccff97ca476c844d90295c1593b2b9c2dba2797ee268ee9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese essay and all paragraphs in this translation; checked that the personal project narrative, eighth-station metaphor, final-adjustment examples, speculative paradox, and practical conclusion retain the source meaning. Added a localized note clarifying the publication date, Mt. Fuji metaphor, and opinion scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of AI-assisted development, no-code/low-code, vibe coding, UI, file I/O, database normalization, load testing, platform review, and the Mt. Fuji climbing metaphor. Localized two image descriptions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The essay contains no mathematical formulas or numerical research claims; 12×32 is an illustrative calculator example and is unchanged."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no executable code blocks or setup instructions; mentions of React, JSON, Stripe, and file I/O were checked as narrative examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked that both local image assets exist and that existing German and Arabic internal links point to the intended related topics. Existing internal destination pages were not all live-checked."
+        }
+      },
+      "summary": "Corrected duplicated publication dates, added the accurate original publication date and last-modified date, localized context for this dated personal essay, refined translated metadata, and added descriptive localized image alternatives.",
+      "languageSpecificFindings": "Reviewed natural wording for the Mt. Fuji eighth-station metaphor, localized the editorial context and image descriptions, and changed the genre tag from “poem” to its local equivalent for this prose essay.",
+      "limitations": [
+        "AI review only; no human/native-speaker certification.",
+        "This is a personal essay, not a benchmark or forecast; the context note makes the scope explicit.",
+        "Existing internal links were not all live-checked.",
+        "No rendered browser/device visual review was performed.",
+        "The all-article translation-review goal remains active."
+      ]
+    }
+  },
+  "provenance": [
+    {
+      "kind": "repository-history",
+      "detail": "The duplicate frontmatter dates were traced with git history: the original source date is 2025-07-20; the 2026-09-24 date was introduced by a bulk repair commit and remained duplicated after its revert.",
+      "evidence": "git log -- content/post/AI開発の壁/index.md"
+    }
+  ],
+  "publicationPending": true,
+  "scope": "Read the complete Japanese personal essay and all 12 translations. Corrected duplicate dates across all 13 versions, restored the original 2025-07-20 publication date, added a 2026-11-23 lastmod, localized context about the essay and its Mt. Fuji metaphor, refined translation titles/essay tags, corrected English bold markup, and replaced filename-based image alt text with localized descriptions. Full Hugo production build and 13-page static preview checks passed; live publication checks remain pending.",
+  "validation": "docs/translation-review/batch-044-preview-validation.json",
+  "localPreviewPassed": true
+}

@@ -1,14 +1,16 @@
 ---
-title: 'Dinding Pengembangan AI Ternyata Tinggi... Alasan dan Realitas Mengapa ''Neraka Dimulai dari Titik 80%'' dalam Pembuatan Aplikasi'
-date: "2026-09-24T19:44:38+09:00"
+title: "Tembok Pengembangan AI: Mengapa Tahap Akhir Membuat Aplikasi Bisa Terasa Seperti Neraka"
 slug: "AI開発のDinding"
-date: 2025-07-20T21:52:42+09:00
-tags: ["AI", "Pengembangan", "Tembok", "Puisi"]
+tags: ["AI", "Pengembangan", "Hambatan", "Esai"]
 draft: false
 image: "img_1.webp"
 categories: ["ai-technology"]
 description: 'Benarkah ini era ''membuat aplikasi itu mudah jika mengandalkan AI''? Meskipun mudah mencapai titik 80% dengan no-code atau kode hasil AI, neraka yang menyiksa manusia menunggu untuk penyesuaian akhir dan perbaikan bug setelahnya. Kami secara terbuka menceritakan jebakan nyata pengembangan AI dan wujud asli ''dinding'' yang dihadapi.'
+date: "2025-07-20T21:52:42+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 ---
+
+> **Tentang esai ini (diterbitkan 20 Juli 2025):** Tulisan ini mencerminkan pengalaman pribadi dan pendapat penulis tentang pengembangan aplikasi dengan bantuan AI. “Pos kedelapan” adalah metafora dari jalur pendakian Gunung Fuji, bukan hasil pengukuran atau prediksi yang berlaku untuk setiap proyek. Alat AI, aturan peninjauan platform, dan kemampuan layanan terus berubah; periksa persyaratan terbaru untuk alat yang Anda gunakan.
 
 # Tembok Pengembangan AI
 
@@ -38,7 +40,7 @@ Pembayaran? API Stripe cukup copy-paste.
 Di sini, Anda mulai berkhayal, "Apakah saya sudah menjadi seorang engineer?"
 Namun, neraka yang sesungguhnya baru saja dimulai.
 
-![img.png](img.webp)
+![Ilustrasi seseorang bersandal yang menghadapi hambatan skalabilitas, peninjauan App Store, pengelolaan log, dan pengelolaan versi, dengan Gunung Fuji di latar belakang.](img.webp)
 
 ---
 
@@ -109,4 +111,4 @@ Tapi dari situlah ujian sebenarnya dimulai.
 Dan mungkin, saat kita mencapai puncak, akan ada masa depan yang menunggu di mana kita bertanya,
 "Apakah kita benar-benar perlu mendaki gunung ini?"
 
-![img_1.png](img_1.webp)
+![Ilustrasi seseorang yang menyelesaikan aplikasi di puncak Gunung Fuji dan orang lain yang berhenti untuk berpikir di lereng.](img_1.webp)

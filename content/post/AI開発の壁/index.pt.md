@@ -1,14 +1,16 @@
 ---
-title: 'A Barreira do Desenvolvimento com IA Era Alta... O Motivo Pelo Qual a ''Reta Final'' da Criação de Apps é um Pesadelo'
-date: "2026-09-24T19:44:38+09:00"
+title: "A barreira do desenvolvimento com IA: por que a reta final de criar um aplicativo pode virar um pesadelo"
 slug: "AI開発のParede"
-date: 2025-07-20T21:52:42+09:00
-tags: ["IA", "desenvolvimento", "barreira", "poema"]
+tags: ["IA", "Desenvolvimento", "Barreira", "Ensaio"]
 draft: false
 image: "img_1.webp"
 categories: ["ai-technology"]
 description: 'A era de ''criar apps facilmente usando IA'' é real? Embora seja fácil chegar aos 80% do projeto com no-code ou código gerado por IA, o ajuste final e a correção de bugs podem ser um verdadeiro pesadelo. Falamos abertamente sobre as armadilhas reais do desenvolvimento com IA e a verdadeira natureza das ''barreiras'' enfrentadas.'
+date: "2025-07-20T21:52:42+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 ---
+
+> **Sobre este ensaio (publicado em 20 de julho de 2025):** O texto reflete a experiência pessoal e a opinião do autor sobre o desenvolvimento de aplicativos com assistência de IA. “A oitava estação” é uma metáfora baseada na rota de escalada do Monte Fuji; não é um resultado medido nem uma previsão aplicável a todos os projetos. Ferramentas de IA, regras de análise das plataformas e recursos dos serviços mudam; confira os requisitos atuais das ferramentas que você usa.
 
 # A Barreira do Desenvolvimento de IA
 
@@ -38,7 +40,7 @@ Pagamento? A API do Stripe pode ser resolvida com copiar e colar.
 Aqui, você tem a ilusão de que "Eu já sou um engenheiro, não sou?".
 Mas o verdadeiro inferno começa a partir daqui.
 
-![img.png](img.webp)
+![Ilustração de uma pessoa de sandálias diante de obstáculos de escalabilidade, análise da App Store, gerenciamento de registros e controle de versões, com o Monte Fuji ao fundo.](img.webp)
 
 ---
 
@@ -109,4 +111,4 @@ Mas o verdadeiro desafio começa a partir daí.
 E quando chegarmos ao topo,
 um futuro onde nos perguntaremos "Precisávamos mesmo escalar a montanha?" pode estar nos esperando.
 
-![img_1.png](img_1.webp)
+![Ilustração de uma pessoa que conclui um aplicativo no topo do Monte Fuji enquanto outra para para pensar na encosta.](img_1.webp)

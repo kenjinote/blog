@@ -1,14 +1,16 @@
 ---
-title: 'The Wall of AI Development Was High... The Reality and Why App Creation is ''Hell After the 8th Station'''
-date: "2026-09-24T19:44:38+09:00"
+title: "The Wall of AI Development: Why the Final Stretch of Building an App Can Feel Like Hell"
 slug: "AI開発のWall"
-date: 2025-07-20T21:52:42+09:00
-tags: ["AI", "Development", "Wall", "Poem"]
+tags: ["AI", "Development", "Wall", "Essay"]
 draft: false
 image: "img_1.webp"
 categories: ["ai-technology"]
 description: 'Is the era of ''making apps easily by asking AI'' real? Even if it''s a breeze up to the 8th station with no-code or AI-generated code, a human-crying hell of final adjustments and bug fixes awaited after that. We candidly talk about the real pitfalls of AI development and the true nature of the ''wall'' you face.'
+date: "2025-07-20T21:52:42+09:00"
+lastmod: "2026-11-23T19:00:00+09:00"
 ---
+
+> **About this essay (published July 20, 2025):** The article reflects the author's personal experience and opinion about AI-assisted app development. “The eighth station” is a Mt. Fuji climbing metaphor; it is not a measured result or a prediction that applies to every project. AI tools, platform review rules, and service capabilities change, so check current requirements for the tools you use.
 
 # The Wall of AI Development
 
@@ -38,7 +40,7 @@ Billing? Just copy-paste the Stripe API.
 Here, you get the illusion of "Am I an engineer now?".
 But the real hell begins from here.
 
-![img.png](img.webp)
+![Illustration of a person in sandals facing obstacles labeled scalability, App Store review, log management, and version management, with Mount Fuji behind them.](img.webp)
 
 ---
 
@@ -53,7 +55,7 @@ The reason is simple: "AI makes it look like it's done, but leaves the final adj
 * Rejected by Apple/Google review
 * (Almost) causes an uproar by violating legal requirements
 
-In other words, **AI is good at creating a prototype that looks like a finished product **, but ** finishing it into a product that actually works in the real world is still a human's job today**.
+In other words, **AI is good at creating prototypes that look finished**, but **turning one into a product that works in the real world still takes human work**.
 
 ---
 
@@ -103,4 +105,4 @@ But the real thing starts from there.
 
 And by the time we reach the summit, a future might be waiting where we ask ourselves, "Did we even need to climb the mountain?".
 
-![img_1.png](img_1.webp)
+![Illustration of one person finishing an app on Mount Fuji while another pauses on the slope.](img_1.webp)
