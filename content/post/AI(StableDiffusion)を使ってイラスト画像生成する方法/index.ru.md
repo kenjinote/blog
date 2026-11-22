@@ -1,20 +1,17 @@
 ---
-title: '【Бесплатно и очень просто】Как генерировать AI-иллюстрации с помощью Stable Diffusion! Пошаговое руководство для Google Colab'
-date: "2026-09-24T19:44:38+09:00"
+title: "Как создавать иллюстрации с помощью Stable Diffusion: руководство по Google Colab и важные замечания"
+lastmod: "2026-11-23"
 slug: "AI(StableDiffusion)を使ってИллюстрацияГенерация изображенийする方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "иллюстрация", "генерация изображений", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["programming", "image-generation"]
-description: 'Почему бы не создать иллюстрации на ваш вкус с помощью AI «Stable Diffusion», который может генерировать высококачественные изображения из введенного текста? Мы понятно объясним шаги, чтобы каждый мог легко начать генерацию AI-изображений, используя только Google Colab и бесплатный аккаунт.'
+description: "Пошаговое руководство по созданию иллюстраций с Stable Diffusion и Google Colab с замечаниями о доступности GPU и лицензии модели."
 ---
 
 # Что такое Stable diffusion
-Stable diffusion — это ИИ, генерирующий изображения на основе введенной текстовой информации, разработанный исследовательской группой Мюнхенского университета в Германии.
-Обучаясь на различных изображениях, он может создавать самые разные картинки, от фотореалистичных до иллюстраций.
-
-В этот раз я расскажу, как генерировать иллюстрации с использованием предварительно обученных данных Stable diffusion.
+Stable Diffusion — семейство моделей латентной диффузии, создающих изображения по условиям, например по тексту. К связанным исследованиям относится работа команды CompVis; среди авторов есть исследователи из Мюнхенского университета Людвига — Максимилиана.
 
 # Что понадобится
 
@@ -24,6 +21,12 @@ Stable diffusion — это ИИ, генерирующий изображени�
 
 # Процесс генерации
 
+В этом руководстве пример 2023 года обновлён для текущего API Diffusers. Colab не гарантирует бесплатный GPU; лимиты, типы GPU и доступность меняются. Если GPU не назначен, попробуйте позже или используйте другую доступную среду выполнения.
+
+Перед загрузкой весов прочитайте карточку модели и лицензию CreativeML OpenRAIL-M на Hugging Face. Соблюдайте ограничения на использование, условия распространения и местное законодательство. Лицензия не гарантирует законность результата или отсутствие прав третьих лиц.
+
+В этом примере `EasyNegative` — отдельно распространяемый embedding Textual Inversion. Следующий код загружает его до использования токена в запросе.
+
 1. Откройте https://colab.research.google.com
 2. В левом верхнем углу выберите `Файл` и нажмите `Создать блокнот`
 3. В меню `Редактировать` выберите `Настройки блокнота`
@@ -31,15 +34,19 @@ Stable diffusion — это ИИ, генерирующий изображени�
 ![img_2.png](img_2.webp)
 5. Вставьте следующий код и выполните его
 ```
-!pip install diffusers==0.8.0 transformers
+!pip install -U diffusers transformers accelerate
 ```
 6. Вставьте следующий код и выполните его
 ```
-from diffusers import StableDiffusionPipeline
+import torch
+from diffusers import DiffusionPipeline
+from huggingface_hub import hf_hub_download
 ```
 7. Вставьте следующий код и выполните его
 ```
-pipe = StableDiffusionPipeline.from_pretrained("gsdf/Counterfeit-V2.5")
+pipe = DiffusionPipeline.from_pretrained("gsdf/Counterfeit-V2.5", dtype=torch.float16)
+easynegative_path = hf_hub_download(repo_id="gsdf/EasyNegative", repo_type="dataset", filename="EasyNegative.safetensors")
+pipe.load_textual_inversion(easynegative_path, token="EasyNegative")
 pipe.to("cuda")
 ```
 8. Вставьте следующий код и выполните его
@@ -64,3 +71,8 @@ image
 
 - [https://huggingface.co/gsdf/Counterfeit-V2.5](https://huggingface.co/gsdf/Counterfeit-V2.5)
 - [Я попытался создать программу для генерации изображений с использованием искусственного интеллекта (ИИ) за 15 минут 【Живое программирование】](https://www.youtube.com/watch?v=l8-fVSM2PVQ)
+- [Google Colab FAQ: resource limits](https://research.google.com/colaboratory/faq.html)
+- [Diffusers: loading pipelines](https://huggingface.co/docs/diffusers/using-diffusers/loading)
+- [Stable Diffusion model card and license](https://huggingface.co/gsdf/Counterfeit-V2.5)
+- [CompVis: Stable Diffusion research and code](https://github.com/CompVis/stable-diffusion)
+- [EasyNegative textual-inversion embedding](https://huggingface.co/datasets/gsdf/EasyNegative)

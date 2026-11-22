@@ -1,20 +1,17 @@
 ---
-title: '【免费・超简单】使用Stable Diffusion生成式AI插画的方法！Google Colab步骤分析'
-date: "2026-09-24T19:44:38+09:00"
+title: "使用Stable Diffusion生成AI插画：Google Colab步骤与注意事项"
+lastmod: "2026-11-23"
 slug: "AI(StableDiffusion)を使って插画图像生成する方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "插画", "图片生成", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["programming", "image-generation"]
-description: '想不想尝试使用能根据输入的文字生成高质量图片的AI“Stable Diffusion”，创作出您喜欢的插画呢？本文将详细讲解仅需Google Colab和免费账号，任何人都能轻松开始AI图片生成的步骤。'
+description: "介绍使用Stable Diffusion和Google Colab生成插画的步骤，并说明GPU可用性与模型许可等注意事项。"
 ---
 
 # 什么是 Stable Diffusion
-Stable diffusion是由德国慕尼黑大学研究团队开发的，根据输入的文本信息生成图片的AI。
-通过让其学习各种图片，它可以生成从写实到插画的各种图片。
-
-这次，我将介绍如何使用Stable diffusion的预训练数据生成插画图片。
+Stable Diffusion是一类根据文本等条件生成图像的潜在扩散模型。相关研究包括CompVis团队的工作，作者中也有慕尼黑大学的研究人员。
 
 # 准备工作
 
@@ -24,6 +21,12 @@ Stable diffusion是由德国慕尼黑大学研究团队开发的，根据输入�
 
 # 生成步骤
 
+本文将2023年的示例更新为当前Diffusers API。Colab免费GPU并非始终可用；使用限制、GPU类型和运行时间会变化。如果没有分配GPU，请稍后重试或使用其他可用的运行环境。
+
+加载模型权重前，请阅读Hugging Face上的模型卡及CreativeML OpenRAIL-M许可证，并遵守其中的禁止用途、分发条款和使用地法律。该许可证不保证生成内容合法或不涉及第三方权利。
+
+本例中的`EasyNegative`是单独发布的Textual Inversion嵌入文件。下面的代码会先加载它，再在提示词中使用该标记。
+
 1. 打开 https://colab.research.google.com
 2. 选择左上角`文件`中的`新建笔记本`
 3. 选择`编辑`中的`笔记本设置`
@@ -31,15 +34,19 @@ Stable diffusion是由德国慕尼黑大学研究团队开发的，根据输入�
 ![img_2.png](img_2.webp)
 5. 粘贴并运行以下代码
 ```
-!pip install diffusers==0.8.0 transformers
+!pip install -U diffusers transformers accelerate
 ```
 6. 粘贴并运行以下代码
 ```
-from diffusers import StableDiffusionPipeline
+import torch
+from diffusers import DiffusionPipeline
+from huggingface_hub import hf_hub_download
 ```
 7. 粘贴并运行以下代码
 ```
-pipe = StableDiffusionPipeline.from_pretrained("gsdf/Counterfeit-V2.5")
+pipe = DiffusionPipeline.from_pretrained("gsdf/Counterfeit-V2.5", dtype=torch.float16)
+easynegative_path = hf_hub_download(repo_id="gsdf/EasyNegative", repo_type="dataset", filename="EasyNegative.safetensors")
+pipe.load_textual_inversion(easynegative_path, token="EasyNegative")
 pipe.to("cuda")
 ```
 8. 粘贴并运行以下代码
@@ -64,3 +71,8 @@ image
 
 - [https://huggingface.co/gsdf/Counterfeit-V2.5](https://huggingface.co/gsdf/Counterfeit-V2.5)
 - [花15分钟制作了使用人工智能（AI）的图片生成程序【实况编程】](https://www.youtube.com/watch?v=l8-fVSM2PVQ)
+- [Google Colab FAQ: resource limits](https://research.google.com/colaboratory/faq.html)
+- [Diffusers: loading pipelines](https://huggingface.co/docs/diffusers/using-diffusers/loading)
+- [Stable Diffusion model card and license](https://huggingface.co/gsdf/Counterfeit-V2.5)
+- [CompVis: Stable Diffusion research and code](https://github.com/CompVis/stable-diffusion)
+- [EasyNegative textual-inversion embedding](https://huggingface.co/datasets/gsdf/EasyNegative)

@@ -1,0 +1,511 @@
+{
+  "version": 1,
+  "article": "AI(StableDiffusion)を使ってイラスト画像生成する方法",
+  "frozenSourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+  "reviewedAt": "2026-11-23",
+  "reviews": {
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "12a8830cac3feafe0cb02488c38d6ad35d8e7d97bd7a33eacd7750abb57b6b71",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "791e021e963d480e255f059c9e6d9f214f8ff3cb43a5b86da4d4140f08b7a703",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "43bdc4396023b7531ba076f6b37284aae84280b5fe00d2d684571e33b0fc0326",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "6f07407dd7a5e10e9944ec3a02d6ddeab104a0b4e26254ca7fd0f32916b38c1b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "e1215a02605101e553241bfbf7f6f94f7d991e7180453ade58edc6f669cedd35",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "c86bbab19e4db3e10be44ce406e23fe565e5f234d81b699cca73d1043bbf1992",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "0f552f17363ddc483396ad38303ba5473d0ce8c2e9a5baaf23703c3ce3134915",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "907c9990d545fa905e5c06c1eb98248a71d42902d0d5f0a9c2920ef16dc51981",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "cbcd273ba0e08141947316364b155b48feb7999e8a3c725156cc703dc0888dda",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "d581a467e07ee1532cfb20edde315351eabb387cb2aa90969a1b700affcab348",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "56e013ba543aa8cbff1079b350579b8b78138a0c04a89b5c8fe16822b14a72a2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "0128b573fd0456e1f360a198ad33ca23b2e7f917f55424c9299e16e6417836ba",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this complete translation. Matched the revised setup sequence, GPU availability caveat, model attribution, and usage/license limitations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Stable Diffusion, latent diffusion, Google Colab, Diffusers, prompt, GPU, model card, license, and textual-inversion terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No equations, quantitative derivations, or numerical claims requiring calculation are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every code block with the Hugging Face model card and current Diffusers API pattern: current package install, DiffusionPipeline dtype, EasyNegative textual-inversion loading, CUDA placement, and prompt inference. Code was statically reviewed, not run in a live Colab GPU runtime."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added and checked primary references for Colab resource limits, Diffusers pipeline and textual-inversion APIs, the Counterfeit model card/license, EasyNegative embedding repository, and CompVis research/code."
+        }
+      },
+      "summary": "Full article review and translation alignment; corrected model attribution and modernized the Colab/Diffusers example with GPU availability, embedding setup, and model-license caveats.",
+      "languageSpecificFindings": "Read the complete localized article. Replaced the inaccurate single-university development claim, translated current Colab access and license caveats, aligned the code/API tokens, and retained the same prompt, figures, and article intent.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The notebook code was not executed in Google Colab or on a GPU; runtime/package compatibility may change.",
+        "Colab GPU access and model/dataset repositories can change; checked on 2026-11-23.",
+        "No legal opinion is given about model, training-data, or generated-image rights.",
+        "Full-site translation-review goal remains active."
+      ]
+    }
+  },
+  "publicationPending": true,
+  "scope": "Read and revised the complete Japanese article and all 12 translations; checked model attribution, current Colab GPU availability caveat, Diffusers pipeline and EasyNegative textual-inversion code, license notes, and primary references. The one-article production preview passed for all 13 localized pages. Notebook was not executed on Colab/GPU; publication/live checks pending.",
+  "primarySources": [
+    {
+      "title": "Google Colab FAQ — Resource Limits",
+      "url": "https://research.google.com/colaboratory/faq.html",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Hugging Face Diffusers — Loading Pipelines",
+      "url": "https://huggingface.co/docs/diffusers/using-diffusers/loading",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Hugging Face Diffusers — Textual Inversion Loader API",
+      "url": "https://huggingface.co/docs/diffusers/main/api/loaders",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "Counterfeit-V2.5 model card and license",
+      "url": "https://huggingface.co/gsdf/Counterfeit-V2.5",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "EasyNegative dataset and embedding files",
+      "url": "https://huggingface.co/datasets/gsdf/EasyNegative",
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "title": "CompVis Stable Diffusion project",
+      "url": "https://github.com/CompVis/stable-diffusion",
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "previewValidation": "docs/translation-review/batch-040-preview-validation.json"
+}

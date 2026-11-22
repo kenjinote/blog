@@ -1,20 +1,17 @@
 ---
-title: '【免費・超簡單】使用Stable Diffusion生成式AI插畫圖片的方法！Google Colab步驟解說'
-date: "2026-09-24T19:44:38+09:00"
+title: "使用 Stable Diffusion 生成 AI 插畫：Google Colab 步驟與注意事項"
+lastmod: "2026-11-23"
 slug: "AI(StableDiffusion)を使って插畫圖片生成する方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["AI", "Stable Diffusion", "插圖", "圖像生成", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["programming", "image-generation"]
-description: '想不想試試使用能從輸入文字生成高品質圖片的AI「Stable Diffusion」，來創作您喜歡的插畫呢？本文將為您清楚解說，只需透過Google Colab與免費帳號，任何人都能輕鬆開始生成式AI圖片的步驟。'
+description: "介紹使用 Stable Diffusion 和 Google Colab 生成插畫的步驟，並說明 GPU 可用性與模型授權等注意事項。"
 ---
 
 # 什麼是 Stable diffusion
-Stable diffusion 是由德國慕尼黑大學研究團隊開發的，一種根據輸入文字資訊生成圖像的 AI。
-透過讓它學習各種圖像，它可以生成從寫實照片到插圖等各式各樣的圖片。
-
-這次，我將介紹如何使用 Stable diffusion 的預訓練資料來生成插圖。
+Stable Diffusion 是一系列根據文字等條件生成圖像的潛在擴散模型。相關研究包含 CompVis 團隊的成果，作者也包括慕尼黑大學的研究人員。
 
 # 需要準備的東西
 
@@ -24,6 +21,12 @@ Stable diffusion 是由德國慕尼黑大學研究團隊開發的，一種根據
 
 # 生成步驟
 
+本文將 2023 年的範例更新為目前的 Diffusers API。Colab 免費 GPU 不保證隨時可用；使用限制、GPU 類型與執行時間都可能變動。若未取得 GPU，請稍後再試或改用其他可用的執行環境。
+
+載入模型權重前，請閱讀 Hugging Face 上的模型卡與 CreativeML OpenRAIL-M 授權，並遵守禁止用途、散布條款及所在地法律。該授權不保證生成內容合法或不涉及第三方權利。
+
+本範例的`EasyNegative`是另外提供的 Textual Inversion 嵌入檔。以下程式碼會先載入，再於提示詞中使用這個標記。
+
 1. 打開 https://colab.research.google.com
 2. 從左上角的 `檔案` 中選擇 `新增筆記本`
 3. 從 `編輯` 中選擇 `筆記本設定`
@@ -31,15 +34,19 @@ Stable diffusion 是由德國慕尼黑大學研究團隊開發的，一種根據
 ![img_2.png](img_2.webp)
 5. 貼上並執行以下程式碼
 ```
-!pip install diffusers==0.8.0 transformers
+!pip install -U diffusers transformers accelerate
 ```
 6. 貼上並執行以下程式碼
 ```
-from diffusers import StableDiffusionPipeline
+import torch
+from diffusers import DiffusionPipeline
+from huggingface_hub import hf_hub_download
 ```
 7. 貼上並執行以下程式碼
 ```
-pipe = StableDiffusionPipeline.from_pretrained("gsdf/Counterfeit-V2.5")
+pipe = DiffusionPipeline.from_pretrained("gsdf/Counterfeit-V2.5", dtype=torch.float16)
+easynegative_path = hf_hub_download(repo_id="gsdf/EasyNegative", repo_type="dataset", filename="EasyNegative.safetensors")
+pipe.load_textual_inversion(easynegative_path, token="EasyNegative")
 pipe.to("cuda")
 ```
 8. 貼上並執行以下程式碼
@@ -64,3 +71,8 @@ image
 
 - [https://huggingface.co/gsdf/Counterfeit-V2.5](https://huggingface.co/gsdf/Counterfeit-V2.5)
 - [花了15分鐘使用人工智慧（AI）製作了圖像生成程式【實況編程】](https://www.youtube.com/watch?v=l8-fVSM2PVQ)
+- [Google Colab FAQ: resource limits](https://research.google.com/colaboratory/faq.html)
+- [Diffusers: loading pipelines](https://huggingface.co/docs/diffusers/using-diffusers/loading)
+- [Stable Diffusion model card and license](https://huggingface.co/gsdf/Counterfeit-V2.5)
+- [CompVis: Stable Diffusion research and code](https://github.com/CompVis/stable-diffusion)
+- [EasyNegative textual-inversion embedding](https://huggingface.co/datasets/gsdf/EasyNegative)

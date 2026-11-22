@@ -4805,6 +4805,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-039.json",
       "evidenceHash": "e46e1db0ca35afcbb545bfec405ec7256ff5cf44a6d855a5e162155fca215d67"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.en.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "12a8830cac3feafe0cb02488c38d6ad35d8e7d97bd7a33eacd7750abb57b6b71",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "d2db8cb9455ecec77132c3ba522f8024498d8497ab4edee251974691fdfae2c9"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.zh-cn.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "791e021e963d480e255f059c9e6d9f214f8ff3cb43a5b86da4d4140f08b7a703",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "9d24d25e97f02bef617b92a7493f0f416b767b1e0697e2a046794c57760f2ee4"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.es.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "43bdc4396023b7531ba076f6b37284aae84280b5fe00d2d684571e33b0fc0326",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "f8f16adb44118d95d9d1ca4486782c42677ae806b8844e7602d99c970797e3cf"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ko.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "6f07407dd7a5e10e9944ec3a02d6ddeab104a0b4e26254ca7fd0f32916b38c1b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "c23cdc6cdd5e9da6d3b34d9d92803dd8bcdc633e2c138cfe4b698cace1918441"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.pt.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "e1215a02605101e553241bfbf7f6f94f7d991e7180453ade58edc6f669cedd35",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "fede7cad61b437fc7c21654b7f9ec69290fdbe09879b2f73a9b3af407e902103"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.zh-tw.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "c86bbab19e4db3e10be44ce406e23fe565e5f234d81b699cca73d1043bbf1992",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "a7ea45e0f8cd53ff8a1c590a32fe12f5e5985af0f7bcb43a4fcbb4c43197a890"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.hi.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "0f552f17363ddc483396ad38303ba5473d0ce8c2e9a5baaf23703c3ce3134915",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "b2aff956ec59560581e88d1717bc197b710517d2fbfa76c342d0ff42a3958b1a"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.fr.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "907c9990d545fa905e5c06c1eb98248a71d42902d0d5f0a9c2920ef16dc51981",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "faa1f8e1c8cc6f18a9f3c2981e9c11ba0f87481ca598f88cd01a739f993d343a"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.de.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "cbcd273ba0e08141947316364b155b48feb7999e8a3c725156cc703dc0888dda",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "4f65e582678842577d50bbb41ebb740341391647cc8bea87a1f07d3c59ff9c85"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ar.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "d581a467e07ee1532cfb20edde315351eabb387cb2aa90969a1b700affcab348",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "1951b5d41bb7e7d6a6c6586fbd54cacdb5b52519ea1189533969d7212e78d5d2"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.ru.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "56e013ba543aa8cbff1079b350579b8b78138a0c04a89b5c8fe16822b14a72a2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "2ffb21a1cf0deb948d9b4da20981761ac3c285d7565dea4aabcf9b93eaeb12b6"
+    },
+    "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.id.md": {
+      "source": "post/AI(StableDiffusion)を使ってイラスト画像生成する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "675441e70efd6bdf4f5abd502174bf81c7e8d9eeca564fc29130d5b79aa8098d",
+      "translationHash": "0128b573fd0456e1f360a198ad33ca23b2e7f917f55424c9299e16e6417836ba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-040.json",
+      "evidenceHash": "54846c85be7657b29fc32690408428e665d0395005a707084b2c69f34c18730b"
     }
   }
 }

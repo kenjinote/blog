@@ -1,20 +1,17 @@
 ---
-title: '[Kostenlos und super einfach] Wie man mit Stable Diffusion KI-Illustrationsbilder generiert! Anleitung für Google Colab'
-date: "2026-09-24T19:44:38+09:00"
+title: "KI-Illustrationen mit Stable Diffusion erstellen: Google-Colab-Anleitung und Hinweise"
+lastmod: "2026-11-23"
 slug: "AI(StableDiffusion)を使ってIllustrationBilderzeugungする方法"
 date: 2023-04-06T00:43:19+09:00
 tags: ["KI", "Stable Diffusion", "Illustration", "Bildgenerierung", "Google Colaboratory"]
 draft: false
 image: "img.webp"
 categories: ["programming", "image-generation"]
-description: 'Möchten Sie mit der KI „Stable Diffusion“, die aus eingegebenem Text hochwertige Bilder generieren kann, Ihre eigenen Illustrationen erstellen? Wir erklären verständlich die Schritte, mit denen jeder mithilfe von Google Colab und einem kostenlosen Konto ganz einfach mit der KI-Bilderstellung beginnen kann.'
+description: "Schritt-für-Schritt-Anleitung zum Erstellen von Illustrationen mit Stable Diffusion und Google Colab, einschließlich Hinweisen zur GPU-Verfügbarkeit und Modelllizenz."
 ---
 
 # Was ist Stable diffusion
-Stable diffusion ist eine KI, die von einem Forschungsteam der Universität München, Deutschland, entwickelt wurde und Bilder aus eingegebenen Textinformationen generiert.
-Indem sie mit verschiedenen Bildern trainiert wurde, kann sie eine Vielzahl von Bildern generieren, von Fotos bis hin zu Illustrationen.
-
-Dieses Mal werde ich vorstellen, wie man Illustrationsbilder mit den vortrainierten Daten von Stable diffusion generiert.
+Stable Diffusion ist eine Familie latenter Diffusionsmodelle, die Bilder anhand von Bedingungen wie Text erzeugt. Zu den einschlägigen Forschungsarbeiten gehört die Arbeit des CompVis-Teams, zu dessen Autoren Forschende der Ludwig-Maximilians-Universität München zählen.
 
 # Was Sie benötigen
 
@@ -24,6 +21,12 @@ Nur das
 
 # Generierungsverfahren
 
+Diese Anleitung aktualisiert ein Beispiel aus dem Jahr 2023 für die aktuelle Diffusers-API. Colab garantiert keine kostenlose GPU; Nutzungslimits, GPU-Typen und Verfügbarkeit ändern sich. Wird keine GPU zugewiesen, versuchen Sie es später erneut oder verwenden Sie eine andere verfügbare Laufzeitumgebung.
+
+Lesen Sie vor dem Laden der Modellgewichte die Modellkarte und die CreativeML OpenRAIL-M-Lizenz auf Hugging Face. Beachten Sie verbotene Nutzungen, Weitergabebedingungen und das örtliche Recht. Die Lizenz garantiert weder die Rechtmäßigkeit der Ergebnisse noch die Freiheit von Rechten Dritter.
+
+`EasyNegative` ist in diesem Beispiel ein separat bereitgestelltes Textual-Inversion-Embedding. Der folgende Code lädt es, bevor das Token im Prompt verwendet wird.
+
 1. Öffnen Sie https://colab.research.google.com
 2. Wählen Sie `Datei` oben links und dann `Neues Notebook`
 3. Wählen Sie `Bearbeiten` und dann `Notebook-Einstellungen`
@@ -31,15 +34,19 @@ Nur das
 ![img_2.png](img_2.webp)
 5. Fügen Sie den folgenden Code ein und führen Sie ihn aus
 ```
-!pip install diffusers==0.8.0 transformers
+!pip install -U diffusers transformers accelerate
 ```
 6. Fügen Sie den folgenden Code ein und führen Sie ihn aus
 ```
-from diffusers import StableDiffusionPipeline
+import torch
+from diffusers import DiffusionPipeline
+from huggingface_hub import hf_hub_download
 ```
 7. Fügen Sie den folgenden Code ein und führen Sie ihn aus
 ```
-pipe = StableDiffusionPipeline.from_pretrained("gsdf/Counterfeit-V2.5")
+pipe = DiffusionPipeline.from_pretrained("gsdf/Counterfeit-V2.5", dtype=torch.float16)
+easynegative_path = hf_hub_download(repo_id="gsdf/EasyNegative", repo_type="dataset", filename="EasyNegative.safetensors")
+pipe.load_textual_inversion(easynegative_path, token="EasyNegative")
 pipe.to("cuda")
 ```
 8. Fügen Sie den folgenden Code ein und führen Sie ihn aus
@@ -64,3 +71,8 @@ Der hier verwendete `Prompt` basiert auf dem `Prompt` von [https://huggingface.c
 
 - [https://huggingface.co/gsdf/Counterfeit-V2.5](https://huggingface.co/gsdf/Counterfeit-V2.5)
 - [Ich habe in 15 Minuten ein Bildgenerierungsprogramm mit Künstlicher Intelligenz (KI) erstellt 【Live-Programmierung】](https://www.youtube.com/watch?v=l8-fVSM2PVQ)
+- [Google Colab FAQ: resource limits](https://research.google.com/colaboratory/faq.html)
+- [Diffusers: loading pipelines](https://huggingface.co/docs/diffusers/using-diffusers/loading)
+- [Stable Diffusion model card and license](https://huggingface.co/gsdf/Counterfeit-V2.5)
+- [CompVis: Stable Diffusion research and code](https://github.com/CompVis/stable-diffusion)
+- [EasyNegative textual-inversion embedding](https://huggingface.co/datasets/gsdf/EasyNegative)
