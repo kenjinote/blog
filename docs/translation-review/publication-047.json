@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T05:58:52.539554+09:00",
+  "ciRun": 45067194563,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45067194563",
+  "deployedCommit": "5545a4b03fd4a42dc78bdde405e8d2deb5deb043",
+  "allPassed": true,
+  "scope": "Batch 047 FizzBuzz Japanese source plus twelve translations; live HTTP validates title, canonical, language/RTL, original publication and last-modified dates, rendered code, localized fixes, and hreflang targets.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/fizzbuzz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "lastmod": true,
+        "originalDate": true,
+        "codeRendered": true,
+        "badGermanLinkAbsent": true,
+        "portugueseConclusion": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI review only; no human/native-speaker certification.",
+    "Python examples were syntax-parsed but not executed.",
+    "No rendered browser/device visual QA was performed."
+  ]
+}

@@ -449,5 +449,12 @@
       ]
     }
   },
-  "scope": "Japanese source and all 12 translations; full essay meaning, localized terminology, divisibility logic, code, metadata, and links reviewed."
+  "scope": "Japanese source and all 12 translations; full essay meaning, localized terminology, divisibility logic, code, metadata, and links reviewed.",
+  "publicationPending": false,
+  "publication": {
+    "record": "docs/translation-review/publication-047.json",
+    "ciRun": 45067194563,
+    "deployedCommit": "5545a4b03fd4a42dc78bdde405e8d2deb5deb043",
+    "allPassed": true
+  }
 }

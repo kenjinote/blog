@@ -444,5 +444,7 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "scope": "Japanese source and all 12 translations; full available title, description, caption, embedded media identity, metadata, and wording reviewed."
+  "scope": "Japanese source and all 12 translations; full available title, description, caption, embedded media identity, metadata, and wording reviewed.",
+  "publicationPending": true,
+  "publicationScope": "All 13 live pages; pending the next Pages deployment."
 }

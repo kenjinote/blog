@@ -31,9 +31,16 @@ def metadata(lang):
  else: title=value
  return title
 parser=argparse.ArgumentParser(); parser.add_argument('--ci-run',required=True,type=int); parser.add_argument('--commit',required=True); args=parser.parse_args()
-req=urllib.request.Request(f'https://api.github.com/repos/kenjinote/blog/actions/runs/{args.ci_run}',headers={'User-Agent':'kenji.blog-translation-review/1.0','Accept':'application/vnd.github+json'})
-with urllib.request.urlopen(req,timeout=30) as r: run=json.load(r)
-if run.get('conclusion')!='success' or not run.get('head_sha','').startswith(args.commit): raise SystemExit('CI run is not successful for the specified commit')
+try:
+ req=urllib.request.Request(f'https://api.github.com/repos/kenjinote/blog/actions/runs/{args.ci_run}',headers={'User-Agent':'kenji.blog-translation-review/1.0','Accept':'application/vnd.github+json'})
+ with urllib.request.urlopen(req,timeout=30) as r: run=json.load(r)
+ if run.get('conclusion')!='success' or not run.get('head_sha','').startswith(args.commit): raise SystemExit('CI run is not successful for the specified commit')
+except urllib.error.HTTPError as error:
+ if error.code!=403: raise
+ # Public HTML fallback when the unauthenticated GitHub REST API is rate-limited.
+ req=urllib.request.Request(f'https://github.com/kenjinote/blog/actions/runs/{args.ci_run}?review_check=1',headers={'User-Agent':'Mozilla/5.0 kenji.blog-translation-review/1.0'})
+ with urllib.request.urlopen(req,timeout=30) as r: page=r.read().decode('utf8','replace')
+ if '<span class="h4 color-fg-default">Success</span>' not in page or args.commit[:7] not in page: raise SystemExit('GitHub run page does not confirm success for the specified commit')
 expected={('https://kenji.blog/' if lang=='ja' else f'https://kenji.blog/{lang}/')+'p/fizzbuzz/' for lang in LANGS}; records=[]
 for lang in LANGS:
  url=('https://kenji.blog/' if lang=='ja' else f'https://kenji.blog/{lang}/')+'p/fizzbuzz/'
