@@ -122,6 +122,46 @@
         "Selected primary teaching sources only.",
         "Batch038 publication pending; whole goal active."
       ]
+    },
+    "post/cantors-diagonal-argument/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-22",
+      "reviewer": "Codex (AI)",
+      "source": "post/cantors-diagonal-argument/index.md",
+      "sourceHash": "865ea9c98ff125979f4f5c8694c1a41b2468530b01ce5775f3f5eba4147dccf0",
+      "translationHash": "292b5e3b7a9ffcd4cf7aa1daf15df3e3a3cf281339b759ec7abdbcf6d6ee579c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Whole original and revised Spanish read against frozen Japanese. Corrected continuum cardinality and ZFC consistency premise, relative consistency; added rational enumeration, decimal uniqueness and arbitrary-sequence distinction. Replaced exaggerated abundance wording with strict cardinality."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked cardinalidad, biyección, inyección, numerable, no numerable, conjunto potencia, hipótesis del continuo and consistencia relativa. Clarified decimal cifra/posición and changed shifting diagonal to changing each diagonal digit."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Nine displays structurally match Japanese; Spanish conditional phrase si normalized against source if, while source math stays exact in HTML.55TeX,9displays,2graphs8edges,77prose fragments,18strong spans. Ten digit cases are finite illustration only, not theorem proof."
+        },
+        "code": {
+          "status": "checked",
+          "note": "No executable article programs. Both Mermaid diagrams read; topology and HTML source preservation passed; no browser graph execution."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Three primary teaching references plus five distinct localized destinations (Cantor, Gödel, CH, Turing, halting). Removed repeated name links, fixed headings and added bibliography. Date,title,cover,canonical,14hreflang,13sidebar passed.39bundle static preview507posts+tag,2218 multilingual pages,4046HTML/41XML HTTPS."
+        }
+      },
+      "summary": "Full Spanish comparison of corrected Cantor diagonal proof and continuum hypothesis assumptions.",
+      "languageSpecificFindings": "Removed duplicated Cantor/Turing links and repeated English names; clarified cardinality terminology, decimal digit construction and CH relative consistency. Entire Spanish original and revised body read.",
+      "validation": "docs/translation-review/batch-038-es-r6-validation.json",
+      "limitations": [
+        "AI review, not human/native-speaker certification.",
+        "Eight other translations remain unread.",
+        "No browser KaTeX/Mermaid or formal theorem certification.",
+        "Selected mathematical teaching sources only.",
+        "Batch038 publication pending; whole goal remains active."
+      ]
     }
   },
   "stages": [
@@ -142,8 +182,14 @@
       "stage": "Traditional Chinese whole-body comparison and static validation",
       "reviewedTranslationsAdded": 1,
       "validation": "docs/translation-review/batch-038-zh-tw-validation.json"
+    },
+    {
+      "date": "2026-11-22",
+      "stage": "Spanish whole-body comparison and static validation",
+      "reviewedTranslationsAdded": 1,
+      "validation": "docs/translation-review/batch-038-es-r6-validation.json"
     }
   ],
   "publicationPending": true,
-  "scope": "Japanese and3translations fully read;3AI records;9translations unread. Static preview passed; publication038 pending."
+  "scope": "Japanese and4translations fully read;4AI records;8translations unread. Static preview passed; publication038 pending."
 }

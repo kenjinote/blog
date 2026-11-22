@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-22",
+  "path": "content/post/cantors-diagonal-argument/index.es.md",
+  "sha256": "15f755155c415d4eba0188a01b5ef21db243814f58778b945a31098af4f9911e",
+  "originalBodyFullyRead": true,
+  "findings": [
+    "Shared incorrect identification continuum cardinality=aleph1 and omitted consistency premise for independence.",
+    "Abundance rhetoric abrumadoramente and verdaderamente obscure cardinality comparison.",
+    "Missing rational enumeration, decimal uniqueness convention, arbitrary sequence vs computable list distinction.",
+    "Duplicate Cantor/Turing name links; missing math flags; incomplete bibliography."
+  ]
+}
