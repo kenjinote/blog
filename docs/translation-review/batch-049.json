@@ -472,6 +472,12 @@
     }
   ],
   "scope": "Japanese source and all twelve translations; full cultural explanation, all seven herb names, recipe quantities and steps, safety, metadata, and references reviewed.",
-  "publicationPending": true,
-  "publicationScope": "All 13 live language pages after the next GitHub Pages deployment."
+  "publicationPending": false,
+  "publicationScope": "All 13 live language pages after the next GitHub Pages deployment.",
+  "publication": {
+    "record": "docs/translation-review/publication-049.json",
+    "ciRun": 45072337119,
+    "deployedCommit": "6545de4a862a203bee58b18e6de9375198ae4990",
+    "allPassed": true
+  }
 }

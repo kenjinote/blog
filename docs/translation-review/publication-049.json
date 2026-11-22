@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T06:57:00.139048+09:00",
+  "ciRun": 45072337119,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45072337119",
+  "deployedCommit": "6545de4a862a203bee58b18e6de9375198ae4990",
+  "allPassed": true,
+  "scope": "Batch 049 Nanakusa-gayu Japanese source plus twelve translations; live HTTP validates canonical, language/RTL, title, publication/update dates, botanical identity, recipe quantities, four source links, removed unrelated Java links, and hreflang targets.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/%E4%B8%83%E8%8D%89%E7%B2%A5%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "originalDate": true,
+        "lastmod": true,
+        "botanicalIdentity": true,
+        "recipeQuantities": true,
+        "sourceLinks": true,
+        "noJavaArticleLink": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI review only; no human/native-speaker certification.",
+    "The recipe was not cooked or taste-tested.",
+    "No rendered browser/device visual QA was performed."
+  ]
+}
