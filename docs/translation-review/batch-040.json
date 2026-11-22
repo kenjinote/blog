@@ -473,7 +473,7 @@
       ]
     }
   },
-  "publicationPending": true,
+  "publicationPending": false,
   "scope": "Read and revised the complete Japanese article and all 12 translations; checked model attribution, current Colab GPU availability caveat, Diffusers pipeline and EasyNegative textual-inversion code, license notes, and primary references. The one-article production preview passed for all 13 localized pages. Notebook was not executed on Colab/GPU; publication/live checks pending.",
   "primarySources": [
     {
@@ -507,5 +507,11 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "previewValidation": "docs/translation-review/batch-040-preview-validation.json"
+  "previewValidation": "docs/translation-review/batch-040-preview-validation.json",
+  "publication": {
+    "record": "docs/translation-review/publication-040.json",
+    "ciRun": 45045691515,
+    "deployedCommit": "06ff2e71f9892de96d69396623c44083258d047c",
+    "allPassed": true
+  }
 }

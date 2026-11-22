@@ -856,3 +856,7 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 - 2026-11-23 Batch038を公開確認済み。CI run 45036548974／commit `8f996185460fe11880fab93e57476ae6aa9df853` でHugo・多言語・検索インデックス・HTTPS検査とPagesデプロイが成功。対角線論法の原文＋全12翻訳の公開13ページでHTTP 200・canonical・lang・記事タイトル・全hreflang先を確認。全体AI468翻訳、未確認12,564、人確認0。全記事goalは継続。
 
 - 2026-11-23 AG03のノイズ対策記事を原文と全12翻訳で全文照合。断定的な「即解決」を筆者環境での体験へ限定し、Yamaha公式の現行ドライバー、AG03/AG DSP Controller互換性、Windows on Arm、Mac標準ドライバー、Windowsの複数の切り分け手順を反映。日付重複と古いMercari広告・アーカイブFAQを整理。40記事束の静的プレビュー・13ページ検査・多言語2283ページ・HTTPS 4165HTML/41XMLを通過。AI480、未確認12,552、人0。CI run 45040908092／commit `0c319752800584a2c679c654a45847ff8510b1d4` が成功し、原文＋12翻訳の公開13 URLで本文・canonical・言語・RTL・公式リンク・hreflangを確認済み。AI480、未確認12,552、人0。Pages artifactは2.64GBで1GBを超える警告が出たため、将来の公開リスクとして縮小が必要。全記事goalは継続。根拠と制約は `docs/translation-review/batch-039-source-notes.md` および `batch-039.json`。
+
+- 2026-11-23 Stable Diffusionチュートリアルを原文と12翻訳で更新。旧API例を現行Diffusersの`DiffusionPipeline`とEasyNegative読込例へ変更し、Google ColabのGPU提供条件・モデル帰属・ライセンス上の注意を明記。13ページ静的検査通過。CI run 45045691515／commit `06ff2e71f9892de96d69396623c44083258d047c` 成功後、13公開ページでHTTP 200・タイトル・コード・公式リンク・canonical・lang・hreflangを確認済み。
+
+- 2026-11-23 AI時代のプログラマー記事を原文と全12翻訳で校閲。未検証の生産性・自動化数式と断定的な雇用予測を撤回し、データアクセス・法的責任・テスト・需要予測の条件を明示。DORA 2025調査と対象が限定されたMETR試験を追加し、26ページのHugoプレビュー通過。CI run 45049913673／commit `14e655cd6` のPagesデプロイと公開13ページの確認は進行中。AI504、未確認12,528、人確認0。全記事goal継続。
