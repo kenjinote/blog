@@ -8,14 +8,14 @@
 
 
 title: '【Automatización】¡Publicar mensajes en Teams desde C++! Pasos de implementación con Graph API y WinHTTP'
-date: "2026-09-24T19:44:38+09:00"
 slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
 date: 2025-07-14T23:40:15+09:00
+lastmod: 2026-11-23
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: '¡Imprescindible para quienes desean implementar publicaciones automáticas de mensajes desde C++ a Microsoft Teams! Explicaremos de forma clara y paso a paso ejemplos de código C++ utilizando WinHTTP y Graph API, así como los pasos esenciales para registrar la aplicación en Azure y la autenticación de la API.'
+description: Ejemplo en C++ con WinHTTP para publicar en chats de Teams mediante Microsoft Graph. Explica permisos delegados, inicio de sesión con código de dispositivo y envío seguro de JSON UTF-8.
 ---
 
 
@@ -30,7 +30,7 @@ description: '¡Imprescindible para quienes desean implementar publicaciones aut
 
 ¿Quieres publicar mensajes automáticamente en el chat de Microsoft Teams?  
 Para eso puedes usar la **Microsoft Graph API**.  
-En este artículo, presentaremos un **ejemplo de código en C++ usando WinHTTP ** y los ** pasos de autenticación de la API necesarios**, paso a paso.
+En este artículo, presentaremos un **ejemplo de código en C++ usando WinHTTP** y los **pasos de autenticación de la API necesarios**, paso a paso.
 
 ---
 
@@ -40,18 +40,12 @@ En este artículo, presentaremos un **ejemplo de código en C++ usando WinHTTP *
 Primero, para usar la Microsoft Graph API, debes registrar una aplicación en Azure.
 
 1. Accede al [Azure Portal](https://portal.azure.com)
-2. Ve a "**Microsoft Entra ID **" > "**+ Agregar **" > "** Registros de aplicaciones **" > "** Nuevo registro**"
+2. Ve a "**Microsoft Entra ID**" > "**+ Agregar**" > "**Registros de aplicaciones**" > "**Nuevo registro**"
 3. Ingresa un nombre para la aplicación y haz clic en "Registrar"
 
 ### 2. Agregar permisos de API
 
-1. Ve al menú izquierdo "Permisos de API"
-2. En "**Microsoft [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) **" > "** Permisos delegados **" (o seleccionar permisos), busca los siguientes ámbitos (scopes) y haz clic en "** Actualizar permisos**" (o agregar permisos)
-
-- Chat.ReadWrite
-- User.Read
-
-> ※ Si deseas publicar en un canal, también necesitarás `ChannelMessage.Send`
+Para publicar mensajes normales, usa el permiso delegado mínimo `ChatMessage.Send`. `Chat.ReadBasic` solo se necesita para listar chats con `GET /me/chats`; estas llamadas no requieren `User.Read`. Para canales se usa `ChannelMessage.Send`. `Teamwork.Migrate.All`, como permiso de aplicación, se limita a migraciones.
 
 ### 3. Anotar el ID del cliente y el ID del inquilino (tenant)
 
@@ -60,136 +54,131 @@ Anota los siguientes dos valores que se muestran en la pestaña "Información ge
 - ID de la aplicación (cliente)
 - ID del directorio (inquilino)
 
-### 4. Crear un secreto de cliente
+### 4. Habilitar el flujo de cliente público
 
-1. Ve a la pestaña "Certificados y secretos"
-2. Selecciona "Nuevo secreto de cliente" > Establece una fecha de expiración y haz clic en "Agregar"
-3. **Asegúrate de copiar el valor mostrado (secreto) en este momento**, ya que no podrás verlo después
+1. En el registro de aplicaciones de Microsoft Entra, abre Autenticación > Configuración avanzada.
+2. Establece “Permitir flujos de cliente público” en Sí.
 
----
+El flujo de código de dispositivo no usa un secreto de cliente.
 
 ## 🔐 Obtener el token de acceso ([OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/)2)
 
-Para obtenerlo, usaremos el flujo `client_credentials`.  
-Ejecuta el siguiente comando con curl para obtener el token de acceso.
+El flujo de credenciales de cliente no sirve para publicaciones normales en chats. Usa acceso delegado en nombre de un usuario conectado. Una aplicación de línea de comandos puede registrarse como cliente público y usar el flujo de código de dispositivo. El ejemplo solo inicia el inicio de sesión; no implementa el intercambio completo del token. En producción, sigue la documentación oficial para consulta, renovación y almacenamiento en caché. No incluyas secretos de cliente en aplicaciones de escritorio. Añade `Chat.ReadBasic` al ámbito OAuth solo si usas el endpoint de lista de chats; incluye `offline_access` para solicitar un token de actualización.
 
-```bash
-curl -X POST ^
-  https://login.microsoftonline.com/{ID_del_inquilino}/oauth2/v2.0/token ^
-  -H "Content-Type: application/x-www-form-urlencoded" ^
-  -d "client_id={ID_del_cliente}" ^
-  -d "scope=https%3A%2F%2Fgraph.microsoft.com%2F.default" ^
-  -d "client_secret={Secreto_de_cliente}" ^
-  -d "grant_type=client_credentials"
-```
-
-### Ejemplo de respuesta
-
-```json
-{
-  "token_type":"Bearer",
-  "expires_in":3599,
-  "ext_expires_in":3599,
-  "access_token": "eyJ0eXAiOiJKV1QiLCJub... (omitido)"
+```powershell
+$tenantId = "<tenant-id>"
+$clientId = "<public-client-id>"
+$body = @{
+    client_id = $clientId
+    scope = "https://graph.microsoft.com/ChatMessage.Send offline_access"
 }
+$device = Invoke-RestMethod -Method Post -Uri "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/devicecode" -ContentType "application/x-www-form-urlencoded" -Body $body
+$device.message
 ```
 
-Usaremos este access_token para llamar a la Microsoft [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API.
+Esta solicitud obtiene un código de inicio de sesión, no un token de acceso. Tras la autenticación, consulta el extremo de tokens con el código de dispositivo siguiendo el flujo oficial. Pasa el token delegado de tu componente de autenticación a la función WinHTTP.
 
 ## 💬 Ejemplo en C++ para publicar en el chat de Teams
-Aquí mostramos un ejemplo en C++ que usa WinHTTP para publicar en el chat.
+Aquí mostramos un ejemplo en C++ que usa WinHTTP para publicar en el chat. Pasa un token delegado válido y el ID del chat; el texto del mensaje debe ser UTF-8 válido.
 
 ```cpp
 #include <windows.h>
 #include <winhttp.h>
-#include <iostream>
+#include <stdexcept>
 #include <string>
 
 #pragma comment(lib, "winhttp.lib")
 
-void PostToTeamsChat(const std::wstring& accessToken, const std::wstring& chatId, const std::wstring& message) {
-    HINTERNET hSession = WinHttpOpen(L"TeamsPoster/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
-                                     WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
-
-    HINTERNET hConnect = WinHttpConnect(hSession, L"graph.microsoft.com", INTERNET_DEFAULT_HTTPS_PORT, 0);
-
-    std::wstring endpoint = L"/v1.0/chats/" + chatId + L"/messages";
-    HINTERNET hRequest = WinHttpOpenRequest(hConnect, L"POST", endpoint.c_str(), NULL,
-                                            WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, WINHTTP_FLAG_SECURE);
-
-    std::wstring jsonBody = L"{\"body\": {\"content\": \"" + message + L"\"}}";
-    std::wstring headers = L"Authorization: Bearer " + accessToken + L"\r\nContent-Type: application/json\r\n";
-
-    BOOL bResult = WinHttpSendRequest(hRequest,
-                                      headers.c_str(), (DWORD)-1L,
-                                      (LPVOID)jsonBody.c_str(), (DWORD)(jsonBody.length() * sizeof(wchar_t)),
-                                      (DWORD)(jsonBody.length() * sizeof(wchar_t)), 0);
-
-    if (bResult)
-        WinHttpReceiveResponse(hRequest, NULL);
-
-    DWORD dwSize = 0;
-    WinHttpQueryDataAvailable(hRequest, &dwSize);
-
-    if (dwSize > 0) {
-        std::wstring response(dwSize / sizeof(wchar_t), 0);
-        DWORD dwDownloaded = 0;
-        WinHttpReadData(hRequest, &response[0], dwSize, &dwDownloaded);
-        std::wcout << L"Response: " << response << std::endl;
+class WinHttpHandle {
+public:
+    explicit WinHttpHandle(HINTERNET handle) : handle_(handle) {
+        if (!handle_) throw std::runtime_error("WinHTTP handle creation failed: " + std::to_string(GetLastError()));
     }
+    ~WinHttpHandle() { if (handle_) WinHttpCloseHandle(handle_); }
+    WinHttpHandle(const WinHttpHandle&) = delete;
+    WinHttpHandle& operator=(const WinHttpHandle&) = delete;
+    HINTERNET get() const { return handle_; }
+private:
+    HINTERNET handle_;
+};
 
-    WinHttpCloseHandle(hRequest);
-    WinHttpCloseHandle(hConnect);
-    WinHttpCloseHandle(hSession);
+void CheckWinHttp(BOOL ok) {
+    if (!ok) throw std::runtime_error("WinHTTP request failed: " + std::to_string(GetLastError()));
 }
 
-int main() {
-    std::wstring access;
-    std::wstring chatId = L"19:";
-    std::wstring message = L"Hello from C++!";
-    std::wcout << L"Enter your access token: ";
-    std::getline(std::wcin, access);
-    std::wcout << L"Enter chat ID: ";
-    std::getline(std::wcin, chatId);
-    PostToTeamsChat(access, chatId, message);
-    return 0;
+std::string EscapeJsonString(const std::string& utf8) {
+    static const char hex[] = "0123456789abcdef";
+    std::string out;
+    for (unsigned char ch : utf8) {
+        switch (ch) {
+        case '"': out += "\\\""; break;
+        case '\\': out += "\\\\"; break;
+        case '\b': out += "\\b"; break;
+        case '\f': out += "\\f"; break;
+        case '\n': out += "\\n"; break;
+        case '\r': out += "\\r"; break;
+        case '\t': out += "\\t"; break;
+        default:
+            if (ch < 0x20) {
+                out += "\\u00";
+                out += hex[ch >> 4];
+                out += hex[ch & 0x0f];
+            } else {
+                out += static_cast<char>(ch);
+            }
+        }
+    }
+    return out;
 }
+
+void PostToTeamsChat(const std::wstring& delegatedAccessToken,
+                     const std::wstring& chatId,
+                     const std::string& messageUtf8) {
+    WinHttpHandle session(WinHttpOpenW(L"TeamsPoster/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
+                                       WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0));
+    WinHttpHandle connection(WinHttpConnectW(session.get(), L"graph.microsoft.com",
+                                             INTERNET_DEFAULT_HTTPS_PORT, 0));
+    const std::wstring path = L"/v1.0/chats/" + chatId + L"/messages";
+    WinHttpHandle request(WinHttpOpenRequestW(connection.get(), L"POST", path.c_str(), nullptr,
+                                               WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES,
+                                               WINHTTP_FLAG_SECURE));
+
+    const std::string json = "{\"body\":{\"content\":\"" + EscapeJsonString(messageUtf8) + "\"}}";
+    const std::wstring headers = L"Authorization: Bearer " + delegatedAccessToken +
+                                 L"\r\nContent-Type: application/json; charset=utf-8\r\n";
+    const DWORD bodyBytes = static_cast<DWORD>(json.size());
+    CheckWinHttp(WinHttpSendRequestW(request.get(), headers.c_str(), static_cast<DWORD>(-1L),
+                                     const_cast<char*>(json.data()), bodyBytes, bodyBytes, 0));
+    CheckWinHttp(WinHttpReceiveResponse(request.get(), nullptr));
+
+    DWORD status = 0;
+    DWORD statusBytes = sizeof(status);
+    CheckWinHttp(WinHttpQueryHeadersW(request.get(),
+        WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER,
+        WINHTTP_HEADER_NAME_BY_INDEX, &status, &statusBytes, WINHTTP_NO_HEADER_INDEX));
+    if (status != 201) {
+        throw std::runtime_error("Microsoft Graph returned HTTP " + std::to_string(status));
+    }
+}
+
 ```
 
 ## 🔍 Cómo obtener el ID del chat
 
-El ID del chat se puede verificar con GET /v1.0/me/chats.
+`GET /me/chats` requiere el permiso delegado `Chat.ReadBasic`. Si la respuesta incluye `@odata.nextLink`, síguelo hasta recuperar todas las páginas.
 
-```
-curl -X GET ^
-  https://graph.microsoft.com/v1.0/me/chats ^
-  -H "Authorization: Bearer {access_token}" ^
-  -H "Content-Type: application/json"
-```
-
-### Ejemplo de respuesta
-
-```json
-{
-  "value": [
-    {
-      "id": "19:abc123xyz@thread.v2",
-      "topic": null,
-      "chatType": "oneOnOne"
-    }
-  ]
-}
+```powershell
+$headers = @{ Authorization = "Bearer $accessToken" }
+Invoke-RestMethod -Method Get -Uri 'https://graph.microsoft.com/v1.0/me/chats' -Headers $headers
 ```
 
 ## 📌 Puntos a tener en cuenta
+- No uses Teams como archivo de registro; envía solo mensajes que las personas vayan a leer.
 - Este ejemplo es una implementación mínima. En un entorno de producción:
   - Manejo de expiración de tokens
-  - Verificación del certificado HTTPS
   - Mejora en el manejo de errores
 - Para publicaciones en canales se usa teams/{team-id}/channels/{channel-id}/messages.
-- Para enviar archivos adjuntos, se requiere procesamiento multiparte o la API de [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Drive.
 
-## Resumen
 
 ## 📎 Resumen
 
@@ -200,13 +189,11 @@ curl -X GET ^
 | Token de acceso | Obtenido a través de [OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/)2 y usado para peticiones |
 | Implementación en C++ | Llama a la [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API utilizando WinHTTP |
 
-## 🚀 Próximos pasos
+## Documentación oficial
 
-Para ejemplos más avanzados, también es posible lo siguiente:
 
-* Publicación en canales de equipos (`/teams/{team-id}/channels/...`)
-* Publicación con archivos adjuntos
-* Cambio entre cuentas de bot o cuentas de usuario
-* Implementación completa en C++ incluyendo la obtención del token
-
-¡Si tienes alguna pregunta o sugerencia, no dudes en comentar!
+- [Send a message in a chat](https://learn.microsoft.com/en-us/graph/api/chat-post-messages?view=graph-rest-1.0)
+- [List chats and permissions](https://learn.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-1.0)
+- [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference)
+- [OAuth 2.0 device code flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-device-code)
+- [Send a channel message](https://learn.microsoft.com/en-us/graph/api/channel-post-messages?view=graph-rest-1.0)

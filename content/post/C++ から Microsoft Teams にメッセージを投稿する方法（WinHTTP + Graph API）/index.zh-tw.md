@@ -1,20 +1,20 @@
 ---
 title: '【自動化】從C++發送訊息到Teams！Graph API與WinHTTP的實作步驟'
-date: "2026-09-24T19:44:38+09:00"
 slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
 date: 2025-07-14T23:40:15+09:00
+lastmod: 2026-11-23
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: '想將從C++自動發送訊息到Microsoft Teams功能實作出來的朋友必看！本文將一步一步清楚解說使用WinHTTP與Graph API的C++程式碼具體範例，以及必備的Azure應用程式註冊與API驗證步驟。'
+description: 使用 C++ 與 WinHTTP 透過 Microsoft Graph 向 Teams 聊天室傳送訊息的範例，介紹委派權限、啟動裝置碼登入，以及安全傳送 UTF-8 JSON。
 ---
 
 # 如何從 C++ 向 Microsoft Teams 發佈訊息（WinHTTP + [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API）
 
 想自動發佈訊息到 Microsoft Teams 聊天室中嗎？  
 這時候可以使用的就是 **Microsoft Graph API** 。  
-在本文中，我們將透過步驟介紹 **使用 WinHTTP 的 C++ 程式碼範例 ** 以及 ** 必要的 API 認證步驟** 。
+在本文中，我們將透過步驟介紹 **使用 WinHTTP 的 C++ 程式碼範例** 以及 **必要的 API 認證步驟** 。
 
 ---
 
@@ -24,18 +24,12 @@ description: '想將從C++自動發送訊息到Microsoft Teams功能實作出來
 首先，要使用 Microsoft Graph API，必須在 Azure 註冊應用程式。
 
 1. 前往 [Azure Portal](https://portal.azure.com)
-2. **「Microsoft Entra ID」 ** > ** 「＋新增」 ** > ** 「應用程式註冊」 ** > ** 「新增註冊」**
+2. **「Microsoft Entra ID」** > **「＋新增」** > **「應用程式註冊」** > **「新增註冊」**
 3. 輸入任意應用程式名稱後點擊「註冊」
 
 ### 2. 新增 API 權限
 
-1. 前往左側選單的「API 權限」
-2. 在 **「Microsoft [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)」 ** > ** 「新增權限」 ** 中搜尋以下範圍，然後點擊 ** 「更新權限」**
-
-- Chat.ReadWrite
-- User.Read
-
-> ※ 若想要發佈到頻道，則還需要 `ChannelMessage.Send`
+一般聊天室發送應使用最低權限的委派權限 `ChatMessage.Send`。只有透過 `GET /me/chats` 列出既有聊天室時才需要 `Chat.ReadBasic`；這些呼叫不需要 `User.Read`。頻道發送使用委派權限 `ChannelMessage.Send`。應用程式權限 `Teamwork.Migrate.All` 僅限移轉用途。
 
 ### 3. 記下用戶端識別碼與租用戶識別碼
 
@@ -44,136 +38,131 @@ description: '想將從C++自動發送訊息到Microsoft Teams功能實作出來
 - 應用程式 (用戶端) 識別碼
 - 目錄 (租用戶) 識別碼
 
-### 4. 建立用戶端密碼
+### 4. 啟用公用用戶端流程
 
-1. 前往「憑證與密碼」索引標籤
-2. 點擊「新增用戶端密碼」 > 設定到期日後，點擊「新增」
-3. 顯示的值（密碼）請 **務必當下立刻記下**
+1. 在 Microsoft Entra 應用程式註冊中開啟「驗證」>「進階設定」。
+2. 將「允許公用用戶端流程」設為「是」。
 
----
+裝置碼流程不使用用戶端密碼。
 
 ## 🔐 取得存取權杖（[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)2）
 
-取得時我們使用 `client_credentials` 流程。  
-使用 curl 執行以下命令，以取得存取權杖。
+用戶端憑證流程不能用於一般聊天室發送。請以已登入使用者的委派存取方式呼叫。命令列應用程式可註冊為公用用戶端並使用裝置碼流程。以下範例只啟動登入流程，並未實作完整的權杖交換。正式環境請依官方流程處理輪詢、權杖更新與快取。不要將用戶端密碼嵌入桌面應用程式。只有在使用聊天室清單端點時才將 `Chat.ReadBasic` 加入 OAuth 範圍；如需要求更新權杖，請包含 `offline_access`。
 
-```bash
-curl -X POST ^
-  https://login.microsoftonline.com/{租用戶識別碼}/oauth2/v2.0/token ^
-  -H "Content-Type: application/x-www-form-urlencoded" ^
-  -d "client_id={用戶端識別碼}" ^
-  -d "scope=https%3A%2F%2Fgraph.microsoft.com%2F.default" ^
-  -d "client_secret={用戶端密碼}" ^
-  -d "grant_type=client_credentials"
-```
-
-### 回應範例
-
-```json
-{
-  "token_type":"Bearer",
-  "expires_in":3599,
-  "ext_expires_in":3599,
-  "access_token": "eyJ0eXAiOiJKV1QiLCJub...（省略）"
+```powershell
+$tenantId = "<tenant-id>"
+$clientId = "<public-client-id>"
+$body = @{
+    client_id = $clientId
+    scope = "https://graph.microsoft.com/ChatMessage.Send offline_access"
 }
+$device = Invoke-RestMethod -Method Post -Uri "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/devicecode" -ContentType "application/x-www-form-urlencoded" -Body $body
+$device.message
 ```
 
-使用此 access_token 來呼叫 Microsoft [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API。
+此要求取得的是登入代碼，不是存取權杖。使用者完成驗證後，請依官方流程使用裝置碼輪詢權杖端點。將驗證元件提供的委派存取權杖傳給 WinHTTP 函式。
 
 ## 💬 投稿到 Teams 聊天室的 C++ 範例
-這裡示範使用 WinHTTP 向聊天室發佈訊息的 C++ 範例。
+這裡示範使用 WinHTTP 向聊天室發佈訊息的 C++ 範例。 請傳入有效的委派存取權杖與聊天室 ID；訊息文字必須是有效的 UTF-8。
 
 ```cpp
 #include <windows.h>
 #include <winhttp.h>
-#include <iostream>
+#include <stdexcept>
 #include <string>
 
 #pragma comment(lib, "winhttp.lib")
 
-void PostToTeamsChat(const std::wstring& accessToken, const std::wstring& chatId, const std::wstring& message) {
-    HINTERNET hSession = WinHttpOpen(L"TeamsPoster/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
-                                     WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
-
-    HINTERNET hConnect = WinHttpConnect(hSession, L"graph.microsoft.com", INTERNET_DEFAULT_HTTPS_PORT, 0);
-
-    std::wstring endpoint = L"/v1.0/chats/" + chatId + L"/messages";
-    HINTERNET hRequest = WinHttpOpenRequest(hConnect, L"POST", endpoint.c_str(), NULL,
-                                            WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, WINHTTP_FLAG_SECURE);
-
-    std::wstring jsonBody = L"{\"body\": {\"content\": \"" + message + L"\"}}";
-    std::wstring headers = L"Authorization: Bearer " + accessToken + L"\r\nContent-Type: application/json\r\n";
-
-    BOOL bResult = WinHttpSendRequest(hRequest,
-                                      headers.c_str(), (DWORD)-1L,
-                                      (LPVOID)jsonBody.c_str(), (DWORD)(jsonBody.length() * sizeof(wchar_t)),
-                                      (DWORD)(jsonBody.length() * sizeof(wchar_t)), 0);
-
-    if (bResult)
-        WinHttpReceiveResponse(hRequest, NULL);
-
-    DWORD dwSize = 0;
-    WinHttpQueryDataAvailable(hRequest, &dwSize);
-
-    if (dwSize > 0) {
-        std::wstring response(dwSize / sizeof(wchar_t), 0);
-        DWORD dwDownloaded = 0;
-        WinHttpReadData(hRequest, &response[0], dwSize, &dwDownloaded);
-        std::wcout << L"Response: " << response << std::endl;
+class WinHttpHandle {
+public:
+    explicit WinHttpHandle(HINTERNET handle) : handle_(handle) {
+        if (!handle_) throw std::runtime_error("WinHTTP handle creation failed: " + std::to_string(GetLastError()));
     }
+    ~WinHttpHandle() { if (handle_) WinHttpCloseHandle(handle_); }
+    WinHttpHandle(const WinHttpHandle&) = delete;
+    WinHttpHandle& operator=(const WinHttpHandle&) = delete;
+    HINTERNET get() const { return handle_; }
+private:
+    HINTERNET handle_;
+};
 
-    WinHttpCloseHandle(hRequest);
-    WinHttpCloseHandle(hConnect);
-    WinHttpCloseHandle(hSession);
+void CheckWinHttp(BOOL ok) {
+    if (!ok) throw std::runtime_error("WinHTTP request failed: " + std::to_string(GetLastError()));
 }
 
-int main() {
-    std::wstring access;
-    std::wstring chatId = L"19:";
-    std::wstring message = L"Hello from C++!";
-    std::wcout << L"Enter your access token: ";
-    std::getline(std::wcin, access);
-    std::wcout << L"Enter chat ID: ";
-    std::getline(std::wcin, chatId);
-    PostToTeamsChat(access, chatId, message);
-    return 0;
-}
-```
-
-## 🔍 取得聊天室識別碼的方法
-
-聊天室識別碼可以透過 GET /v1.0/me/chats 來確認。
-
-```
-curl -X GET ^
-  https://graph.microsoft.com/v1.0/me/chats ^
-  -H "Authorization: Bearer {access_token}" ^
-  -H "Content-Type: application/json"
-```
-
-### 回應範例
-
-```json
-{
-  "value": [
-    {
-      "id": "19:abc123xyz@thread.v2",
-      "topic": null,
-      "chatType": "oneOnOne"
+std::string EscapeJsonString(const std::string& utf8) {
+    static const char hex[] = "0123456789abcdef";
+    std::string out;
+    for (unsigned char ch : utf8) {
+        switch (ch) {
+        case '"': out += "\\\""; break;
+        case '\\': out += "\\\\"; break;
+        case '\b': out += "\\b"; break;
+        case '\f': out += "\\f"; break;
+        case '\n': out += "\\n"; break;
+        case '\r': out += "\\r"; break;
+        case '\t': out += "\\t"; break;
+        default:
+            if (ch < 0x20) {
+                out += "\\u00";
+                out += hex[ch >> 4];
+                out += hex[ch & 0x0f];
+            } else {
+                out += static_cast<char>(ch);
+            }
+        }
     }
-  ]
+    return out;
 }
+
+void PostToTeamsChat(const std::wstring& delegatedAccessToken,
+                     const std::wstring& chatId,
+                     const std::string& messageUtf8) {
+    WinHttpHandle session(WinHttpOpenW(L"TeamsPoster/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
+                                       WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0));
+    WinHttpHandle connection(WinHttpConnectW(session.get(), L"graph.microsoft.com",
+                                             INTERNET_DEFAULT_HTTPS_PORT, 0));
+    const std::wstring path = L"/v1.0/chats/" + chatId + L"/messages";
+    WinHttpHandle request(WinHttpOpenRequestW(connection.get(), L"POST", path.c_str(), nullptr,
+                                               WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES,
+                                               WINHTTP_FLAG_SECURE));
+
+    const std::string json = "{\"body\":{\"content\":\"" + EscapeJsonString(messageUtf8) + "\"}}";
+    const std::wstring headers = L"Authorization: Bearer " + delegatedAccessToken +
+                                 L"\r\nContent-Type: application/json; charset=utf-8\r\n";
+    const DWORD bodyBytes = static_cast<DWORD>(json.size());
+    CheckWinHttp(WinHttpSendRequestW(request.get(), headers.c_str(), static_cast<DWORD>(-1L),
+                                     const_cast<char*>(json.data()), bodyBytes, bodyBytes, 0));
+    CheckWinHttp(WinHttpReceiveResponse(request.get(), nullptr));
+
+    DWORD status = 0;
+    DWORD statusBytes = sizeof(status);
+    CheckWinHttp(WinHttpQueryHeadersW(request.get(),
+        WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER,
+        WINHTTP_HEADER_NAME_BY_INDEX, &status, &statusBytes, WINHTTP_NO_HEADER_INDEX));
+    if (status != 201) {
+        throw std::runtime_error("Microsoft Graph returned HTTP " + std::to_string(status));
+    }
+}
+
+```
+
+## 🔍 取得聊天室 ID
+
+`GET /me/chats` 需要委派權限 `Chat.ReadBasic`。若回應包含 `@odata.nextLink`，請繼續要求該連結，直到取得所有分頁結果。
+
+```powershell
+$headers = @{ Authorization = "Bearer $accessToken" }
+Invoke-RestMethod -Method Get -Uri 'https://graph.microsoft.com/v1.0/me/chats' -Headers $headers
 ```
 
 ## 📌 注意事項
+- 不要將 Teams 當作記錄檔；只傳送人們會閱讀的訊息。
 - 此範例為最基本實作。在實際運用中：
   - 權杖過期處理
-  - HTTPS 憑證驗證
   - 錯誤處理的強化
 - 頻道發佈請使用 teams/{team-id}/channels/{channel-id}/messages 。
-- 傳送附件檔案需要多部分處理 (multipart) 或 [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Drive API。
 
-## 總結
 
 ## 📎 總結
 
@@ -184,14 +173,11 @@ curl -X GET ^
 | 存取權杖 | 透過 [OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)2 取得，並用於請求中 |
 | C++ 實作 | 使用 WinHTTP 呼叫 [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API |
 
-## 🚀 下一步
+## 官方文件
 
-作為更進階的範例，以下也是可行的：
 
-* 團隊頻道發佈 (`/teams/{team-id}/channels/...`)
-* 帶有附件檔案的發佈
-* 機器人帳號或使用者帳號的切換
-* 包含取得權杖在內的完整 C++ 實作
-
-如有任何需求，歡迎隨時留言！
-
+- [Send a message in a chat](https://learn.microsoft.com/en-us/graph/api/chat-post-messages?view=graph-rest-1.0)
+- [List chats and permissions](https://learn.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-1.0)
+- [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference)
+- [OAuth 2.0 device code flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-device-code)
+- [Send a channel message](https://learn.microsoft.com/en-us/graph/api/channel-post-messages?view=graph-rest-1.0)

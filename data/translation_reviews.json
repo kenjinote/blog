@@ -6485,6 +6485,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-053.json",
       "evidenceHash": "471b2ce4711b9cba8b075764bb409f773886c063c5c85bad126b6a9d5edc77e2"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.en.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "b2cbc38c6dd5327f70de765075258417204433fab845d23c4443955543738d61",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "e24f387e22713777d7caa65cec1d516ef4f5ea29489a872b30f9ca84067b7583"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.zh-cn.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "8c22f075a200e79592a06916dc2f9edf7966505368b6306a0b9ff43697ad13c1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "3ac82df729fc2880811de36e49ac458be78f75f72caaf544d2e44cccc7cc0cd0"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.es.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "d8fa558cf1f9f794bc8d17f8a47780510784939ed16200cf143d9e57514e8ac6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "22ac00365a53ae357b5f2983cfc63d61e6fc8840c6172acdd5d0cc8082d98db6"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.ko.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "675357a53a0f5ac0acabb9ec220473cf30bc4d584f2ad4f073f26810ae272f1f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "6cce5cd47299959da6444420a8fc02c2743d9b89e13e09d7d93b35f29c7a6b1c"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.pt.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "046f7d543eb355543b46dda94bfbf34d05beffe038aeba01f61a339baf662f93",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "faac2008ddc4dd6ed15bf28b7d887826a4120b3691942faa2cab2221a341dcdc"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.zh-tw.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "73a70cbf4c81d1480bf7d08e5496886174d77cfa3a79dee29e0f138e4a6a31e4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "62dacc4c01cf729a205c31434797c9bd8e352c2ea859db25b237ad6aceb103ad"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.hi.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "a231fc5ae68c52e1e97e40b2ce4f7ba51805927978b69ef861be57726d2b6ad2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "60c478b2689847a84249d6da55f7b5b4ad14e8db83f8954f8f2b2993f3bb2516"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.fr.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "449854809ef78e8ca534324d2dd38ac1ed39685375b81519eea5f17023026432",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "f50e0b200c06f96a7313787f6bec7f446bdc08ff0843d1695b51b366589544e2"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.de.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "48449f315c293fb95da1928b02d1c56a226474bff9b1b249ff9dece731c0408c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "5583899e30772b684b20cd363f940325ae1158ae59c33b194de3958ccb5b9ecb"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.ar.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "d5f104f358d47507f9a36f2acf925f4784c87c86f996731651d326add02b37b6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "96388d89edfbd60b9bd5272d0a53d663d48f69cd857fd8efc5c239f6bffcd176"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.ru.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "48d02378548f8022f1ac73a383be72e39fc533cd4e5784899df599e5fc16126f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "02ad48469c8ad19567ee9e5d936418b16e494ce84d627f32d0b3a7e7ed806b2f"
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.id.md": {
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "c7d2391f0e01d18262ccaa885e3755058a18751428cece5446d23d9dee57c642",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-054.json",
+      "evidenceHash": "582f60745ba068b414911b6da2e47ef7a66ad02c8e400fc0bf672df56b51408e"
     }
   }
 }

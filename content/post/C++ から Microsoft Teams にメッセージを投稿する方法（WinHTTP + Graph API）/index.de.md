@@ -1,13 +1,13 @@
 ---
 title: '[Automatisierung] Nachrichten von C++ an Teams posten! Implementierungsschritte für Graph API und WinHTTP'
-date: "2026-09-24T19:44:38+09:00"
 slug: "C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）"
 date: 2025-07-14T23:40:15+09:00
+lastmod: 2026-11-23
 tags: ["C++", "Microsoft Teams", "Graph API", "WinHTTP"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Ein Muss für alle, die eine automatische Nachrichtenübermittlung von C++ an Microsoft Teams implementieren möchten! Wir erklären Schritt für Schritt anhand konkreter C++-Codebeispiele mit WinHTTP und der Graph API sowie den obligatorischen Schritten zur App-Registrierung und API-Authentifizierung in Azure.'
+description: C++-Beispiel mit WinHTTP zum Senden von Teams-Chatnachrichten über Microsoft Graph. Mit delegierten Berechtigungen, Start der Gerätecode-Anmeldung und sicherem UTF-8-JSON.
 ---
 
 # Wie man Nachrichten von C++ an Microsoft Teams sendet (WinHTTP + [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API)
@@ -29,13 +29,7 @@ Um die Microsoft Graph API nutzen zu können, müssen Sie zunächst eine App in 
 
 ### 2. API-Berechtigungen hinzufügen
 
-1. Gehen Sie im linken Menü zu "API-Berechtigungen"
-2. Suchen Sie unter **"Microsoft [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)"** > **"Berechtigungen auswählen"** nach den folgenden Geltungsbereichen und klicken Sie auf **"Berechtigungen aktualisieren"**
-
-- Chat.ReadWrite
-- User.Read
-
-> ※ Wenn Sie in einem Kanal posten möchten, ist auch `ChannelMessage.Send` erforderlich
+Für normale Chatnachrichten ist die minimale delegierte Berechtigung `ChatMessage.Send` nötig. `Chat.ReadBasic` wird nur zum Auflisten vorhandener Chats mit `GET /me/chats` benötigt; `User.Read` ist für diese Aufrufe nicht erforderlich. Für Kanalnachrichten gilt `ChannelMessage.Send`. `Teamwork.Migrate.All` ist als Anwendungsberechtigung auf Migration beschränkt.
 
 ### 3. Client-ID und Mandanten-ID notieren
 
@@ -44,136 +38,131 @@ Notieren Sie sich die folgenden zwei Werte, die auf der Registerkarte "Übersich
 - Anwendungs-ID (Client-ID)
 - Verzeichnis-ID (Mandanten-ID)
 
-### 4. Einen geheimen Clientschlüssel erstellen
+### 4. Flow für öffentliche Clients aktivieren
 
-1. Gehen Sie zur Registerkarte "Zertifikate & Geheimnisse"
-2. "Neuer geheimer Clientschlüssel" > Legen Sie ein Ablaufdatum fest und klicken Sie auf "Hinzufügen"
-3. **Notieren Sie sich unbedingt sofort** den angezeigten Wert (Geheimnis)
+1. Öffnen Sie in der Microsoft-Entra-Appregistrierung „Authentifizierung“ > „Erweiterte Einstellungen“.
+2. Setzen Sie „Öffentliche Clientflows zulassen“ auf „Ja“.
 
----
+Der Gerätecode-Flow verwendet kein Clientgeheimnis.
 
 ## 🔐 Zugriffstoken abrufen ([OAuth](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/)2)
 
-Für den Abruf verwenden wir den Ablauf `client_credentials`.  
-Führen Sie den folgenden Befehl mit curl aus, um ein Zugriffstoken zu erhalten.
+Der Client-Credentials-Flow ist nicht für normale Chatnachrichten geeignet. Verwenden Sie delegierten Zugriff im Namen eines angemeldeten Benutzers. Eine Befehlszeilenanwendung kann als öffentlicher Client registriert werden und den Gerätecode-Flow nutzen. Das folgende Beispiel startet nur die Anmeldung, nicht den vollständigen Token-Austausch. Folgen Sie in der Produktion der offiziellen Anleitung für Abfragen, Erneuerung und Cache. Betten Sie kein Clientgeheimnis in eine Desktopanwendung ein. Fügen Sie `Chat.ReadBasic` nur dann zum OAuth-Bereich hinzu, wenn Sie den Chatlisten-Endpunkt verwenden; `offline_access` fordert ein Aktualisierungstoken an.
 
-```bash
-curl -X POST ^
-  https://login.microsoftonline.com/{Mandanten-ID}/oauth2/v2.0/token ^
-  -H "Content-Type: application/x-www-form-urlencoded" ^
-  -d "client_id={Client-ID}" ^
-  -d "scope=https%3A%2F%2Fgraph.microsoft.com%2F.default" ^
-  -d "client_secret={Geheimer-Clientschlüssel}" ^
-  -d "grant_type=client_credentials"
-```
-
-### Antwortbeispiel
-
-```json
-{
-  "token_type":"Bearer",
-  "expires_in":3599,
-  "ext_expires_in":3599,
-  "access_token": "eyJ0eXAiOiJKV1QiLCJub... (Ausgelassen)"
+```powershell
+$tenantId = "<tenant-id>"
+$clientId = "<public-client-id>"
+$body = @{
+    client_id = $clientId
+    scope = "https://graph.microsoft.com/ChatMessage.Send offline_access"
 }
+$device = Invoke-RestMethod -Method Post -Uri "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/devicecode" -ContentType "application/x-www-form-urlencoded" -Body $body
+$device.message
 ```
 
-Verwenden Sie dieses access_token, um die Microsoft [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API aufzurufen.
+Diese Anfrage liefert einen Anmeldecode, noch kein Zugriffstoken. Nach der Anmeldung muss der Token-Endpunkt gemäß dem offiziellen Ablauf mit dem Gerätecode abgefragt werden. Übergeben Sie das delegierte Token aus Ihrer Authentifizierungskomponente an die WinHTTP-Funktion.
 
 ## 💬 C++-Beispiel zum Posten im Teams-Chat
-Hier zeigen wir ein C++-Beispiel, das WinHTTP verwendet, um in einem Chat zu posten.
+Hier zeigen wir ein C++-Beispiel, das WinHTTP verwendet, um in einem Chat zu posten. Übergeben Sie ein gültiges delegiertes Zugriffstoken und eine Chat-ID; der Nachrichtentext muss gültiges UTF-8 sein.
 
 ```cpp
 #include <windows.h>
 #include <winhttp.h>
-#include <iostream>
+#include <stdexcept>
 #include <string>
 
 #pragma comment(lib, "winhttp.lib")
 
-void PostToTeamsChat(const std::wstring& accessToken, const std::wstring& chatId, const std::wstring& message) {
-    HINTERNET hSession = WinHttpOpen(L"TeamsPoster/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
-                                     WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
-
-    HINTERNET hConnect = WinHttpConnect(hSession, L"graph.microsoft.com", INTERNET_DEFAULT_HTTPS_PORT, 0);
-
-    std::wstring endpoint = L"/v1.0/chats/" + chatId + L"/messages";
-    HINTERNET hRequest = WinHttpOpenRequest(hConnect, L"POST", endpoint.c_str(), NULL,
-                                            WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, WINHTTP_FLAG_SECURE);
-
-    std::wstring jsonBody = L"{\"body\": {\"content\": \"" + message + L"\"}}";
-    std::wstring headers = L"Authorization: Bearer " + accessToken + L"\r\nContent-Type: application/json\r\n";
-
-    BOOL bResult = WinHttpSendRequest(hRequest,
-                                      headers.c_str(), (DWORD)-1L,
-                                      (LPVOID)jsonBody.c_str(), (DWORD)(jsonBody.length() * sizeof(wchar_t)),
-                                      (DWORD)(jsonBody.length() * sizeof(wchar_t)), 0);
-
-    if (bResult)
-        WinHttpReceiveResponse(hRequest, NULL);
-
-    DWORD dwSize = 0;
-    WinHttpQueryDataAvailable(hRequest, &dwSize);
-
-    if (dwSize > 0) {
-        std::wstring response(dwSize / sizeof(wchar_t), 0);
-        DWORD dwDownloaded = 0;
-        WinHttpReadData(hRequest, &response[0], dwSize, &dwDownloaded);
-        std::wcout << L"Response: " << response << std::endl;
+class WinHttpHandle {
+public:
+    explicit WinHttpHandle(HINTERNET handle) : handle_(handle) {
+        if (!handle_) throw std::runtime_error("WinHTTP handle creation failed: " + std::to_string(GetLastError()));
     }
+    ~WinHttpHandle() { if (handle_) WinHttpCloseHandle(handle_); }
+    WinHttpHandle(const WinHttpHandle&) = delete;
+    WinHttpHandle& operator=(const WinHttpHandle&) = delete;
+    HINTERNET get() const { return handle_; }
+private:
+    HINTERNET handle_;
+};
 
-    WinHttpCloseHandle(hRequest);
-    WinHttpCloseHandle(hConnect);
-    WinHttpCloseHandle(hSession);
+void CheckWinHttp(BOOL ok) {
+    if (!ok) throw std::runtime_error("WinHTTP request failed: " + std::to_string(GetLastError()));
 }
 
-int main() {
-    std::wstring access;
-    std::wstring chatId = L"19:";
-    std::wstring message = L"Hello from C++!";
-    std::wcout << L"Enter your access token: ";
-    std::getline(std::wcin, access);
-    std::wcout << L"Enter chat ID: ";
-    std::getline(std::wcin, chatId);
-    PostToTeamsChat(access, chatId, message);
-    return 0;
-}
-```
-
-## 🔍 So erhalten Sie die Chat-ID
-
-Die Chat-ID kann mit GET /v1.0/me/chats überprüft werden.
-
-```
-curl -X GET ^
-  https://graph.microsoft.com/v1.0/me/chats ^
-  -H "Authorization: Bearer {access_token}" ^
-  -H "Content-Type: application/json"
-```
-
-### Antwortbeispiel
-
-```json
-{
-  "value": [
-    {
-      "id": "19:abc123xyz@thread.v2",
-      "topic": null,
-      "chatType": "oneOnOne"
+std::string EscapeJsonString(const std::string& utf8) {
+    static const char hex[] = "0123456789abcdef";
+    std::string out;
+    for (unsigned char ch : utf8) {
+        switch (ch) {
+        case '"': out += "\\\""; break;
+        case '\\': out += "\\\\"; break;
+        case '\b': out += "\\b"; break;
+        case '\f': out += "\\f"; break;
+        case '\n': out += "\\n"; break;
+        case '\r': out += "\\r"; break;
+        case '\t': out += "\\t"; break;
+        default:
+            if (ch < 0x20) {
+                out += "\\u00";
+                out += hex[ch >> 4];
+                out += hex[ch & 0x0f];
+            } else {
+                out += static_cast<char>(ch);
+            }
+        }
     }
-  ]
+    return out;
 }
+
+void PostToTeamsChat(const std::wstring& delegatedAccessToken,
+                     const std::wstring& chatId,
+                     const std::string& messageUtf8) {
+    WinHttpHandle session(WinHttpOpenW(L"TeamsPoster/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
+                                       WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0));
+    WinHttpHandle connection(WinHttpConnectW(session.get(), L"graph.microsoft.com",
+                                             INTERNET_DEFAULT_HTTPS_PORT, 0));
+    const std::wstring path = L"/v1.0/chats/" + chatId + L"/messages";
+    WinHttpHandle request(WinHttpOpenRequestW(connection.get(), L"POST", path.c_str(), nullptr,
+                                               WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES,
+                                               WINHTTP_FLAG_SECURE));
+
+    const std::string json = "{\"body\":{\"content\":\"" + EscapeJsonString(messageUtf8) + "\"}}";
+    const std::wstring headers = L"Authorization: Bearer " + delegatedAccessToken +
+                                 L"\r\nContent-Type: application/json; charset=utf-8\r\n";
+    const DWORD bodyBytes = static_cast<DWORD>(json.size());
+    CheckWinHttp(WinHttpSendRequestW(request.get(), headers.c_str(), static_cast<DWORD>(-1L),
+                                     const_cast<char*>(json.data()), bodyBytes, bodyBytes, 0));
+    CheckWinHttp(WinHttpReceiveResponse(request.get(), nullptr));
+
+    DWORD status = 0;
+    DWORD statusBytes = sizeof(status);
+    CheckWinHttp(WinHttpQueryHeadersW(request.get(),
+        WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER,
+        WINHTTP_HEADER_NAME_BY_INDEX, &status, &statusBytes, WINHTTP_NO_HEADER_INDEX));
+    if (status != 201) {
+        throw std::runtime_error("Microsoft Graph returned HTTP " + std::to_string(status));
+    }
+}
+
+```
+
+## 🔍 Chat-ID abrufen
+
+Für `GET /me/chats` ist die delegierte Berechtigung `Chat.ReadBasic` nötig. Folgen Sie einer vorhandenen `@odata.nextLink`, bis alle Ergebnisse abgerufen wurden.
+
+```powershell
+$headers = @{ Authorization = "Bearer $accessToken" }
+Invoke-RestMethod -Method Get -Uri 'https://graph.microsoft.com/v1.0/me/chats' -Headers $headers
 ```
 
 ## 📌 Wichtige Hinweise
+- Verwenden Sie Teams nicht als Protokolldatei; senden Sie nur Nachrichten, die Menschen lesen sollen.
 - Dieses Beispiel ist eine Minimalimplementierung. Im produktiven Betrieb:
   - Behandlung des Token-Ablaufs
-  - Überprüfung des HTTPS-Zertifikats
   - Verbesserte Fehlerbehandlung
 - Für Kanalbeiträge verwenden Sie teams/{team-id}/channels/{channel-id}/messages.
-- Das Senden von Anhängen erfordert eine Multipart-Verarbeitung oder die [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Drive API.
 
-## Zusammenfassung
 
 ## 📎 Zusammenfassung
 
@@ -184,13 +173,11 @@ curl -X GET ^
 | Zugriffstoken | Wird über [OAuth](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/)2 abgerufen und für Anfragen verwendet |
 | C++-Implementierung | Ruft die [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API mithilfe von WinHTTP auf |
 
-## 🚀 Nächste Schritte
+## Offizielle Dokumentation
 
-Als fortgeschrittenere Beispiele sind auch folgende möglich:
 
-* In einen Teamkanal posten (`/teams/{team-id}/channels/...`)
-* Beiträge mit Anhängen
-* Zwischen Bot-Konten und Benutzerkonten wechseln
-* Vollständige C++-Implementierung einschließlich Token-Abruf
-
-Bitte zögern Sie nicht, einen Kommentar zu hinterlassen, wenn Sie Wünsche haben!
+- [Send a message in a chat](https://learn.microsoft.com/en-us/graph/api/chat-post-messages?view=graph-rest-1.0)
+- [List chats and permissions](https://learn.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-1.0)
+- [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference)
+- [OAuth 2.0 device code flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-device-code)
+- [Send a channel message](https://learn.microsoft.com/en-us/graph/api/channel-post-messages?view=graph-rest-1.0)

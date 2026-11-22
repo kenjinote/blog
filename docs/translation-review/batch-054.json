@@ -1,0 +1,467 @@
+{
+  "version": 1,
+  "article": "Post messages to Microsoft Teams from C++ with WinHTTP and Microsoft Graph",
+  "frozenSourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://learn.microsoft.com/en-us/graph/api/chat-post-messages?view=graph-rest-1.0",
+    "https://learn.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-1.0",
+    "https://learn.microsoft.com/en-us/graph/permissions-reference",
+    "https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-device-code",
+    "https://learn.microsoft.com/en-us/graph/api/channel-post-messages?view=graph-rest-1.0"
+  ],
+  "findings": [
+    "Replaced the unsupported client-credentials posting instructions with delegated ChatMessage.Send guidance; limited Chat.ReadBasic to listing chats and ChannelMessage.Send to channel posts; identified Teamwork.Migrate.All as migration-only.",
+    "Replaced the unsafe WinHTTP wide-string body with UTF-8 JSON bytes, JSON escaping, RAII handle cleanup, request error checks, and an HTTP 201 success check.",
+    "Made the device-code sample explicitly partial, added offline_access guidance for refresh tokens, and documented the optional Chat.ReadBasic scope.",
+    "Fixed duplicate date metadata while preserving the 2025-07-14 publication date, added lastmod and accurate localized descriptions, and removed unsupported attachment advice.",
+    "Compared the full Japanese article with all twelve translations, including setup, permissions, authentication, code, pagination, operational notes, summaries, terminology and references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "b2cbc38c6dd5327f70de765075258417204433fab845d23c4443955543738d61",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "8c22f075a200e79592a06916dc2f9edf7966505368b6306a0b9ff43697ad13c1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "d8fa558cf1f9f794bc8d17f8a47780510784939ed16200cf143d9e57514e8ac6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "675357a53a0f5ac0acabb9ec220473cf30bc4d584f2ad4f073f26810ae272f1f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "046f7d543eb355543b46dda94bfbf34d05beffe038aeba01f61a339baf662f93",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "73a70cbf4c81d1480bf7d08e5496886174d77cfa3a79dee29e0f138e4a6a31e4",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "a231fc5ae68c52e1e97e40b2ce4f7ba51805927978b69ef861be57726d2b6ad2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "449854809ef78e8ca534324d2dd38ac1ed39685375b81519eea5f17023026432",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "48449f315c293fb95da1928b02d1c56a226474bff9b1b249ff9dece731c0408c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "d5f104f358d47507f9a36f2acf925f4784c87c86f996731651d326add02b37b6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "48d02378548f8022f1ac73a383be72e39fc533cd4e5784899df599e5fc16126f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.md",
+      "sourceHash": "288cbeb59a88e97ae842599d205de4754b3f0ff24879f2ede7615094614c9bec",
+      "translationHash": "c7d2391f0e01d18262ccaa885e3755058a18751428cece5446d23d9dee57c642",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation against Japanese: app registration, delegated versus application permissions, device-code sign-in limits, token scope, chat ID retrieval and pagination, posting behavior, operational notes, summary and source-article claims."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for delegated access, client credentials, public clients, device-code flow, chat/channel messages, access/refresh tokens, UTF-8, and Microsoft Graph permission names."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the identical C++ sample and PowerShell examples across all 13 editions; reviewed WinHTTP handle cleanup, UTF-8 JSON bytes, JSON string escaping, HTTPS request construction, HTTP 201 check, and scope examples. The C++ sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the five official Microsoft Graph/Entra references for chat posting, chat listing, permissions, device-code flow, and channel posting; checked localized internal Graph/OAuth links and reciprocal language navigation."
+        }
+      },
+      "summary": "Reviewed the complete localized article against the Japanese source, corrected permissions and authentication guidance, repaired the shared C++/PowerShell examples, aligned operational notes and metadata, and checked official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ code was not compiled and no Microsoft 365 tenant/API integration was exercised.",
+        "The device-code sample intentionally starts sign-in but does not implement token polling, renewal, or caching; callers must supply an authorized delegated token and chat ID.",
+        "Hugo build and live publication verification remain pending for this batch."
+      ]
+    }
+  }
+}
