@@ -1,0 +1,276 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T06:28:37.549519+09:00",
+  "ciRun": 45069493913,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45069493913",
+  "deployedCommit": "441dd14ac79d2b0c36170bc940728b5b27870853",
+  "allPassed": true,
+  "scope": "Batch 048 calm-jazz article Japanese source plus twelve translations; live HTTP validates title, canonical, language/RTL, original publication and updated dates, embedded video identity, and hreflang targets.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9F%E3%82%B8%E3%83%A3%E3%82%BA/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9Fjazz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9F%E7%88%B5%E5%A3%AB%E4%B9%90/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9Fjazz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9F%EC%9E%AC%EC%A6%88/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9Fjazz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9F%E7%88%B5%E5%A3%AB%E6%A8%82/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9F%E0%A4%9C%E0%A5%88%E0%A4%9C%E0%A4%BC/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9Fjazz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9Fjazz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9F%D8%AC%D8%A7%D8%B2/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9F%D0%B4%D0%B6%D0%B0%D0%B7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9Fjazz/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "finalUrl": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "originalDate": true,
+        "videoEmbed": true,
+        "hreflangCount": true,
+        "hreflangTargets": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI review only; no human/native-speaker certification.",
+    "The full video audio, captions, and licensing were not independently reviewed.",
+    "No rendered browser/device visual QA was performed."
+  ]
+}

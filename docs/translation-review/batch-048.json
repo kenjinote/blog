@@ -445,6 +445,12 @@
     }
   ],
   "scope": "Japanese source and all 12 translations; full available title, description, caption, embedded media identity, metadata, and wording reviewed.",
-  "publicationPending": true,
-  "publicationScope": "All 13 live pages; pending the next Pages deployment."
+  "publicationPending": false,
+  "publicationScope": "All 13 live pages; pending the next Pages deployment.",
+  "publication": {
+    "record": "docs/translation-review/publication-048.json",
+    "ciRun": 45069493913,
+    "deployedCommit": "441dd14ac79d2b0c36170bc940728b5b27870853",
+    "allPassed": true
+  }
 }
