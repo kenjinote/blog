@@ -68,8 +68,8 @@ description: 'Представляем список UI-дизайнов «диа
 Это depency walker. Это инструмент, включенный в Windows SDK.
 ![img_13.png](img_13.webp)
 
-## resource hacker
-Это resource hacker. Это инструмент для редактирования и извлечения ресурсов из исполняемых файлов.
+## resource hacker or [Resource Cracker](https://www.pelock.com/products/resource-cracker)
+Это resource hacker or [Resource Cracker](https://www.pelock.com/products/resource-cracker). Это инструмент для редактирования и извлечения ресурсов из исполняемых файлов.
 ![img_14.png](img_14.webp)
 
 ## Microsoft Excel

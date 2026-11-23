@@ -68,8 +68,8 @@ C'est Spy++. C'est un outil inclus dans le SDK Windows.
 C'est dependency walker. C'est un outil inclus dans le SDK Windows.
 ![img_13.png](img_13.webp)
 
-## resource hacker
-C'est resource hacker. C'est un outil permettant d'éditer et d'extraire les ressources des fichiers exécutables.
+## resource hacker or [Resource Cracker](https://www.pelock.com/products/resource-cracker)
+C'est resource hacker or [Resource Cracker](https://www.pelock.com/products/resource-cracker). C'est un outil permettant d'éditer et d'extraire les ressources des fichiers exécutables.
 ![img_14.png](img_14.webp)
 
 ## Microsoft Excel
