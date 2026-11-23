@@ -1,47 +1,59 @@
 ---
-title: 'Windows पर CLI टेक्स्ट एडिटर nano को इंस्टॉल करने और पर्यावरण चर (Environment Variables) सेट करने का तरीका'
-date: "2026-09-24T19:44:38+09:00"
+title: 'Windows पर nano टेक्स्ट एडिटर इस्तेमाल करना: WSL और MSYS2'
 slug: "CLIटेक्स्ट एडिटरnanoをWindowsにइंस्टॉलする方法"
 date: 2024-03-31T18:09:32+09:00
+lastmod: "2026-11-23"
 tags: ["nano", "टेक्स्ट एडिटर"]
 draft: false
 image: "img_1.webp"
 categories: ["tools-development-environment"]
-description: 'हम बताएंगे कि Windows पर हल्के CLI टेक्स्ट एडिटर "nano" को कैसे इंस्टॉल करें और कमांड प्रॉम्प्ट से उपयोग करने के लिए पर्यावरण चर कैसे सेट करें। यह डाउनलोड से लेकर PATH सेटिंग और बुनियादी उपयोग तक सब कुछ कवर करता है。'
+description: 'Windows पर GNU nano इस्तेमाल करने के मौजूदा तरीके जानें: Linux वातावरण के लिए WSL या Windows डेवलपमेंट टूल के लिए MSYS2। इसमें बुनियादी शॉर्टकट भी शामिल हैं।'
 ---
 
-## nano.exe डाउनलोड करें
-https://sourceforge.net/projects/nano-for-windows/
 
-उपरोक्त लिंक खोलें, `Download` पर क्लिक करें और `GNU-Nano_Win32(static).zip` डाउनलोड करें।
-ज़िप फ़ाइल निकालें और `nano.exe` को किसी भी फ़ोल्डर में रखें।
-* जापानी इनपुट समर्थित नहीं है (31/03/2024 तक)।
+Windows पर GNU nano इस्तेमाल करने के कई तरीके हैं। पुरानी डाउनलोड साइटों पर उपलब्ध अलग `nano.exe` फ़ाइलों का स्रोत और रखरखाव सत्यापित करना कठिन हो सकता है, इसलिए यह मार्गदर्शिका दो रखरखाव वाले वितरण विकल्प बताती है।
 
-## पर्यावरण चर सेट करें
-कमांड प्रॉम्प्ट से `nano.exe` का उपयोग करने के लिए, आपको पर्यावरण चर (environment variables) सेट करने होंगे।
+## विकल्प 1: WSL में nano इस्तेमाल करें
 
-1. `Win कुंजी` + `R कुंजी` दबाएं, `sysdm.cpl` टाइप करें और `Enter कुंजी` दबाएं।
-2. सिस्टम गुण में `सिस्टम गुण` पर क्लिक करें।
-3. `पर्यावरण चर` पर क्लिक करें।
-4. `सिस्टम चर` के तहत `Path` चुनें और `संपादित करें` पर क्लिक करें।
-5. `नया` पर क्लिक करें और `nano.exe` का पथ (path) जोड़ें।
-6. सभी संवाद बॉक्स बंद करने के लिए `OK` पर क्लिक करें।
-7. कमांड प्रॉम्प्ट को पुनरारंभ करें, `nano` टाइप करें और जांचें कि यह चलता है या नहीं।
+यदि आपको Linux कमांड-लाइन टूल भी चाहिए, तो WSL चुनें। Windows 11 या Windows 10 संस्करण 2004 (बिल्ड 19041) या बाद के संस्करण में PowerShell को Administrator के रूप में खोलें और चलाएँ:
 
-## nano का उपयोग कैसे करें
+```powershell
+wsl --install
+```
 
-जब आप `nano` टाइप करते हैं और चलाते हैं, तो निम्न स्क्रीन प्रदर्शित होती है।
+रीस्टार्ट के बाद Ubuntu खोलें और Linux टर्मिनल में nano इंस्टॉल करें:
 
-![img_2.png](img_2.webp)
+```bash
+sudo apt update
+sudo apt install nano
+nano --version
+```
 
-शॉर्टकट का विवरण स्क्रीन के नीचे प्रदर्शित होता है।
+फ़ाइल खोलने के लिए `nano फ़ाइल-नाम` चलाएँ। Windows की C: ड्राइव WSL में `/mnt/c/` पर उपलब्ध है; उदाहरण: `nano /mnt/c/Users/आपका-नाम/notes.txt`। सेटअप और फ़ाइल एक्सेस के लिए [Microsoft की WSL इंस्टॉलेशन गाइड](https://learn.microsoft.com/en-us/windows/wsl/install) देखें।
 
-प्रतीकों के अर्थ इस प्रकार हैं:
+## विकल्प 2: MSYS2 से nano इस्तेमाल करें
 
-- `^` का मतलब `Ctrl` कुंजी है।
-- `M-` का मतलब `Alt` कुंजी है।
+यदि पूर्ण Linux वितरण नहीं चाहिए, लेकिन Unix-जैसे कमांड वाले Windows डेवलपमेंट टूल चाहिए, तो [MSYS2](https://www.msys2.org/) चुनें। [आधिकारिक इंस्टॉलर गाइड](https://www.msys2.org/docs/installer/) का पालन करके इंस्टॉल करें और “MSYS2 MSYS” टर्मिनल खोलें। GUI इंस्टॉलर के लिए 64-बिट Windows 10 संस्करण 1809 या बाद का, अथवा Windows Server 2019 आवश्यक है; अलग-अलग पैकेज की आवश्यकताएँ भिन्न हो सकती हैं ([समर्थित Windows संस्करण](https://www.msys2.org/docs/windows_support/) देखें)। पहले पैकेज डेटाबेस और इंस्टॉल किए गए पैकेज अपडेट करें। अपडेट टर्मिनल फिर से खोलने को कहे, तो उसे खोलकर nano इंस्टॉल करने से पहले अपडेट पूरा करें।
 
-सहेजने और बंद करने के लिए, `Ctrl` + `S` दबाएं, और फिर `Ctrl` + `X` दबाएं।
+```bash
+pacman -Suy
+pacman -S nano
+nano --version
+```
+
+पैकेज का नाम और इंस्टॉलेशन कमांड [MSYS2 nano पैकेज पेज](https://packages.msys2.org/packages/nano?variant=x86_64) पर उपलब्ध हैं। nano को MSYS2 टर्मिनल में चलाएँ। सामान्य Command Prompt या PowerShell से उपयोग के लिए PATH और रनटाइम वातावरण को अलग से कॉन्फ़िगर करना होगा; बिना सोचे MSYS2 का `/usr/bin` Windows PATH में जोड़ने की सलाह नहीं है।
+
+## बुनियादी शॉर्टकट
+
+`nano notes.txt` जैसा कमांड चलाएँ। स्क्रीन के नीचे शॉर्टकट दिखते हैं: `^` का अर्थ Ctrl और `M-` का अर्थ Meta (आमतौर पर Alt) है। फ़ाइल लिखने के लिए `Ctrl+O` दबाएँ, दिख रहे फ़ाइल नाम को Enter से स्वीकार करें और बाहर निकलने के लिए `Ctrl+X` दबाएँ। मौजूदा संस्करण वर्तमान बफ़र को `Ctrl+S` से भी सहेजते हैं। [GNU nano की आधिकारिक शॉर्टकट सूची](https://www.nano-editor.org/dist/latest/cheatsheet.html) देखें।
+
+nano अंतरराष्ट्रीयकरण और UTF-8 का समर्थन करता है, लेकिन जापानी इनपुट और प्रदर्शन टर्मिनल, फ़ॉन्ट, लोकेल और इनपुट विधि पर भी निर्भर करते हैं। WSL या MSYS2 में अक्षर बिगड़ें या जापानी टाइप न हो, तो टर्मिनल की UTF-8 और इनपुट विधि सेटिंग जाँचें।
 
 ## संदर्भ
+
 - [GNU nano](https://www.nano-editor.org/)
+- [GNU nano शॉर्टकट सूची](https://www.nano-editor.org/dist/latest/cheatsheet.html)
+- [Microsoft Learn: WSL इंस्टॉल करें](https://learn.microsoft.com/en-us/windows/wsl/install)
+- [MSYS2 इंस्टॉलर गाइड](https://www.msys2.org/docs/installer/)
+- [समर्थित Windows संस्करण](https://www.msys2.org/docs/windows_support/)
+- [MSYS2 nano पैकेज](https://packages.msys2.org/packages/nano?variant=x86_64)

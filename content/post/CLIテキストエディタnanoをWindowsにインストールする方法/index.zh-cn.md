@@ -1,47 +1,59 @@
 ---
-title: '在Windows上安装CLI文本编辑器nano及设置环境变量的方法'
-date: "2026-09-24T19:44:38+09:00"
+title: '在 Windows 上使用 nano 命令行文本编辑器：WSL 与 MSYS2'
 slug: "CLI文本编辑器nanoをWindowsに安装する方法"
 date: 2024-03-31T18:09:32+09:00
+lastmod: "2026-11-23"
 tags: ["nano", "文本编辑器"]
 draft: false
 image: "img_1.webp"
 categories: ["tools-development-environment"]
-description: '本文将讲解在Windows上安装轻量级CLI文本编辑器“nano”，并设置环境变量以便从命令提示符使用的步骤。内容涵盖从下载到PATH设置，以及基本使用方法。'
+description: '介绍在 Windows 上使用 GNU nano 的当前方法：通过 WSL 安装 Linux 环境，或通过 MSYS2 安装 Windows 开发工具，并说明基本快捷键。'
 ---
 
-## 下载nano.exe
-https://sourceforge.net/projects/nano-for-windows/
 
-打开上述链接，点击`Download`下载`GNU-Nano_Win32(static).zip`。
-解压zip文件，将`nano.exe`放置在任意文件夹中。
-※不支持日语输入。（截至 2024/03/31）
+在 Windows 上使用 GNU nano 有多种方法。旧下载站提供的独立 `nano.exe` 难以核实来源和维护状态，因此本文介绍两个仍在维护的发行渠道。
 
-## 设置环境变量
-为了从命令提示符使用`nano.exe`，需要设置环境变量。
+## 方法一：在 WSL 中使用
 
-1. 按下`Win键` + `R键`，输入`sysdm.cpl`，然后按`Enter键`。
-2. 点击`系统属性`中的`系统属性`。
-3. 点击`环境变量`。
-4. 选择`系统变量`中的`Path`，然后点击`编辑`。
-5. 点击`新建`，添加`nano.exe`的路径。
-6. 点击`确定`，关闭所有对话框。
-7. 重新启动命令提示符，输入`nano`，检查是否可以运行。
+如果还需要 Linux 命令行工具，可以选择 WSL。在 Windows 11 或 Windows 10 版本 2004（内部版本 19041）及更高版本中，以管理员身份打开 PowerShell 并运行：
 
-## nano的使用方法
+```powershell
+wsl --install
+```
 
-输入`nano`并运行后，将显示以下屏幕。
+重启后打开 Ubuntu，在 Linux 终端中安装 nano：
 
-![img_2.png](img_2.webp)
+```bash
+sudo apt update
+sudo apt install nano
+nano --version
+```
 
-屏幕底部显示快捷键的说明。
+使用 `nano 文件名` 打开文件。WSL 中的 Windows C 盘位于 `/mnt/c/`，例如：`nano /mnt/c/Users/用户名/notes.txt`。安装和文件访问方式请参阅 [Microsoft 的 WSL 安装指南](https://learn.microsoft.com/zh-cn/windows/wsl/install)。
 
-符号的含义如下：
+## 方法二：从 MSYS2 使用
 
-- `^` 代表 `Ctrl` 键。
-- `M-` 代表 `Alt` 键。
+如果不需要完整 Linux 发行版，只想使用 Windows 开发工具中的 Unix 风格命令行环境，可以选择 [MSYS2](https://www.msys2.org/)。按照[官方安装指南](https://www.msys2.org/docs/installer/)安装后，打开“MSYS2 MSYS”终端。 图形安装程序需要 64 位 Windows 10 1809 或更高版本，或 Windows Server 2019；各软件包的要求可能不同（参见[支持的 Windows 版本](https://www.msys2.org/docs/windows_support/)）。先更新软件包数据库和已安装的软件包。如果更新要求重启终端，请重新打开终端并完成更新后再安装 nano。
 
-要保存并关闭，请先按 `Ctrl` + `S`，然后再按 `Ctrl` + `X`。
+```bash
+pacman -Suy
+pacman -S nano
+nano --version
+```
 
-## 参考
+软件包名称和安装命令见 [MSYS2 nano 软件包页面](https://packages.msys2.org/packages/nano?variant=x86_64)。请在 MSYS2 终端内运行 nano。从普通命令提示符或 PowerShell 使用它还需要额外配置 PATH 和运行环境；不建议不加区分地将 MSYS2 的 `/usr/bin` 加入 Windows PATH。
+
+## 基本操作
+
+运行 `nano notes.txt` 等命令即可启动。屏幕底部会显示快捷键说明：`^` 表示 Ctrl，`M-` 表示 Meta（通常是 Alt）。按 `Ctrl+O` 写入文件，按 Enter 确认显示的文件名，再按 `Ctrl+X` 退出。当前版本也可以用 `Ctrl+S` 保存当前缓冲区。更多内容请查看 [GNU nano 官方快捷键表](https://www.nano-editor.org/dist/latest/cheatsheet.html)。
+
+nano 支持国际化和 UTF-8，但日文输入与显示还取决于终端、字体、区域设置和输入法。在 WSL 或 MSYS2 中遇到乱码或无法输入日文时，请检查终端的 UTF-8 和输入法配置。
+
+## 参考资料
+
 - [GNU nano](https://www.nano-editor.org/)
+- [GNU nano 官方快捷键表](https://www.nano-editor.org/dist/latest/cheatsheet.html)
+- [Microsoft Learn：安装 WSL](https://learn.microsoft.com/zh-cn/windows/wsl/install)
+- [MSYS2 官方安装指南](https://www.msys2.org/docs/installer/)
+- [支持的 Windows 版本](https://www.msys2.org/docs/windows_support/)
+- [MSYS2 nano 软件包](https://packages.msys2.org/packages/nano?variant=x86_64)

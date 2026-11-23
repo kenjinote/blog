@@ -15,7 +15,7 @@
     "Corrected WinHTTP from a C++ standard library to a Windows API, described UTF-8 JSON and serializer needs, preserved the original 2025-07-16 date, and added localized metadata and official references.",
     "Compared the complete Japanese article with all twelve translations, including the shared code and JSON payload, metadata, security notes, and internal/external references."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.en.md": {
       "reviewKind": "ai",
@@ -461,5 +461,11 @@
         "Hugo CI and live publication verification remain pending for this batch."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-059.json",
+    "ciRun": 45093799790,
+    "deployedCommit": "01ac5c175ff03822e4f55628ac78263d87760abe",
+    "allPassed": true
   }
 }

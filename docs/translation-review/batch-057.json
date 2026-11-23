@@ -17,7 +17,7 @@
     "Compared the complete Japanese post with all twelve translations, including mathematical notation, section structure, code fences, internal/external links, metadata, and localized correction notes.",
     "Preserved the 2026-09-11 publication date, added localized descriptions and lastmod 2026-11-23, and corrected the English title to reflect the actual article scope."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/C++で始める小規模AIモデルの開発手順/index.en.md": {
       "reviewKind": "ai",
@@ -463,5 +463,11 @@
         "Hugo CI and live publication verification remain pending for this batch."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-057.json",
+    "ciRun": 45093799790,
+    "deployedCommit": "01ac5c175ff03822e4f55628ac78263d87760abe",
+    "allPassed": true
   }
 }

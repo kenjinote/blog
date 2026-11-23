@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T10:44:06.373494+09:00",
+  "ciRun": 45093799790,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45093799790",
+  "deployedCommit": "01ac5c175ff03822e4f55628ac78263d87760abe",
+  "allPassed": true,
+  "scope": "Batch 057 Japanese source and twelve translations; live HTTP, metadata, canonical, language/RTL, reciprocal hreflang, corrected setup command, technical correction notes, and official links.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/cpp-small-ai-model-tinyllama-dev-guide/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "correctCli": true,
+        "ggufCaveats": true,
+        "limitedScope": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "llama.cpp build and model inference were not executed in this workspace."
+  ]
+}

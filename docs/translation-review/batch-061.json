@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "article": "Call the OpenAI Responses API from Windows Command Prompt with curl.exe",
+  "frozenSourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://developers.openai.com/api/docs/quickstart",
+    "https://developers.openai.com/api/docs/guides/text",
+    "https://developers.openai.com/api/reference/resources/responses/methods/create",
+    "https://developers.openai.com/api/docs/models",
+    "https://developers.openai.com/api/docs/pricing",
+    "https://developers.openai.com/api/docs/guides/production-best-practices",
+    "https://platform.openai.com/api-keys",
+    "https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform"
+  ],
+  "findings": [
+    "Replaced the older /v1/chat/completions and gpt-3.5-turbo example with the currently recommended /v1/responses request shape and a model ID linked to the live catalog.",
+    "Removed the inline API-key placeholder and put the credential in a user environment variable; the request body is a separate UTF-8 JSON file and contains no secret.",
+    "Corrected Windows cmd.exe quoting/continuation and uses curl.exe, with HTTP headers/status visible and a note that PowerShell syntax differs.",
+    "Explained the Responses JSON output structure, model/project availability, separate ChatGPT/API billing, 401/429 troubleshooting, current pricing, and usage limits using official OpenAI references.",
+    "Removed the duplicate date while preserving the original 2025-02-01 publication date, added lastmod/localized metadata, and compared the full Japanese article with all twelve translations."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/ChatGPT APIをcurlから呼び出す/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "65f4f8cba95b6bedf48295df8a4959a204cb53e19c3e3e895b188c1788643a0b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "6c4af8be516540c3017a8fa83a8c735dc8279eef3d35cdc2e51ab9c0919700c4",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "2299db6fb87d0d05b4be7d59765898cf12b4932bc21b06ea89c3f4eeb9c29a30",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "7a6cd3eac85bee1a5c4b0d2aed6b882dddfd4fdead02e128722cfe1f43835e2c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "1028ec41c6a083564cab04dc083e2918670c65724a20c8dbc816d1bb69477980",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "c1a65fa704848160180dc8678ce0fa620efe5a8d986ed284ca34c5db29ec1b90",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "fcf68214903ce25db3d0bb9cb74853abae18e6c5dff44b5b55d860c4cd0c6e79",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "d53b8cdca027ed14ae39fd0cbb711c3b82d8c46057b893506786375473a22a87",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "d8b1d5de1a9521ea479747577e3b9ea76085593ea33eb0d1006ecdaa1f91f0d1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "213379832388f9f0a02c987cc00e5eb949f51dc6f773e4a8e1e96947878021e6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "01a3ebc589f968843db0270319af8a7f55c9a1805f889b6d3ec58b8a1967b137",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "b3ac99042441123292905faf7f2d8f66780f2ec57f3486faba1e7456212e5507",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese: Responses API purpose, distinction between ChatGPT and API Platform, billing note, key setup, request JSON, cmd.exe command, response structure, error handling, usage controls, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for OpenAI API, Responses API, API Platform, API key, environment variable, project/model ID, HTTP status, JSON output, rate limit, credits, and input/output tokens."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared cmd.exe and JSON examples across editions: OPENAI_API_KEY presence check, Responses endpoint, Bearer header using the environment variable, curl.exe --include, caret continuations, UTF-8 request file, model, instructions, and input fields. The request was not executed and no API key or billable API request was used."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked OpenAI primary documentation for the Responses quickstart, text generation, create response schema, current model catalog, pricing, API-key security, key creation, and official billing guidance. The same English-language authoritative links are present in every edition."
+        }
+      },
+      "summary": "Replaced the obsolete Chat Completions/gpt-3.5-turbo snippet and inline placeholder key with the currently recommended Responses API, an environment-variable key flow, a UTF-8 JSON request file, current model guidance, response-shape explanation, billing separation, and error/usage notes.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The curl command was syntax-reviewed but not executed; no API key was used and no billable request was made.",
+        "Model IDs, access, and pricing can change; the article links to the live official catalog and pricing page, but project-specific availability and cost were not tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    }
+  }
+}

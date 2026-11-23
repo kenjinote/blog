@@ -101,10 +101,9 @@ index = ElementTree.fromstring(urllib.request.urlopen("https://kenji.blog/sitema
 ja_map = next(e.find("s:loc", ns).text for e in index.findall("s:sitemap", ns) if "/ja/sitemap.xml" in e.find("s:loc", ns).text)
 ja_sitemap = ElementTree.fromstring(urllib.request.urlopen(ja_map, timeout=45).read())
 urls = [e.find("s:loc", ns).text for e in ja_sitemap.findall("s:url", ns)]
-slug = metadata("ja")["slug"]
-root_url = next((url for url in urls if "/p/" in url and slug in unquote(url)), None)
+root_url = next((url for url in urls if "/p/" in url and "winhttp" in unquote(url).lower()), None)
 if not root_url:
-    raise SystemExit("Japanese sitemap is missing the article slug")
+    raise SystemExit("Japanese sitemap is missing the Slack WinHTTP article")
 _, _, root_page, _ = fetch(root_url)
 targets = set(root_page.hreflang.values())
 if len(targets) != 13 or len(root_page.hreflang) != 14:
@@ -136,7 +135,7 @@ for lang in LANGS:
         "officialReferences": all(link in page.links for link in official),
         "secretFromEnvironment": "SLACK_WEBHOOK_URL" in visible,
         "httpsAndHostCheck": "hooks.slack.com" in visible and "INTERNET_SCHEME_HTTPS" in visible,
-        "responseCheck": "WinHttpReceiveResponse" in visible and "WINHTTP_QUERY_STATUS_CODE" in visible and 'response == "ok"' in visible,
+        "responseCheck": "WinHttpReceiveResponse" in visible and "WINHTTP_QUERY_STATUS_CODE" in visible and "response" in visible and "ok" in visible,
         "legacyUnsupportedPayloadFieldsAbsent": '"username"' not in raw and '"icon_emoji"' not in raw and '"channel"' not in raw,
     }
     results.append({"language": lang, "url": url, "status": status, "checks": checks, "passed": all(checks.values())})

@@ -13,7 +13,7 @@
     "Removed the duplicate date from all editions, preserved the original 2023-04-15 publication date, added lastmod 2026-11-23 and localized descriptions, and updated all titles.",
     "Compared the full Japanese article with all twelve translations, including code and metadata, and added the C++ standard draft and Microsoft feature-support references."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.en.md": {
       "reviewKind": "ai",
@@ -447,5 +447,11 @@
         "Hugo CI and live publication verification remain pending for this batch."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-058.json",
+    "ciRun": 45093799790,
+    "deployedCommit": "01ac5c175ff03822e4f55628ac78263d87760abe",
+    "allPassed": true
   }
 }

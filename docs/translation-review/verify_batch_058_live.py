@@ -101,10 +101,9 @@ index = ElementTree.fromstring(urllib.request.urlopen("https://kenji.blog/sitema
 ja_map = next(e.find("s:loc", ns).text for e in index.findall("s:sitemap", ns) if "/ja/sitemap.xml" in e.find("s:loc", ns).text)
 ja_sitemap = ElementTree.fromstring(urllib.request.urlopen(ja_map, timeout=45).read())
 urls = [e.find("s:loc", ns).text for e in ja_sitemap.findall("s:url", ns)]
-slug = metadata("ja")["slug"]
-root_url = next((url for url in urls if "/p/" in url and slug in unquote(url)), None)
+root_url = next((url for url in urls if "/p/" in url and "現在時刻" in unquote(url)), None)
 if not root_url:
-    raise SystemExit(f"Japanese sitemap is missing article slug: {slug}")
+    raise SystemExit("Japanese sitemap is missing the current-time article")
 _, _, root_page, _ = fetch(root_url)
 targets = set(root_page.hreflang.values())
 if len(targets) != 13 or len(root_page.hreflang) != 14:
@@ -121,6 +120,14 @@ for lang in LANGS:
         raise SystemExit(f"Missing {lang} hreflang page")
     status, raw, page, visible = fetch(url)
     meta = metadata(lang)
+    code_compact = re.sub(r"\s+", "", visible)
+    library_terms = {
+        "ja": "標準ライブラリ", "en": "standard library", "zh-cn": "标准库",
+        "es": "biblioteca estándar", "ko": "표준 라이브러리", "pt": "bibliotecas padrão",
+        "zh-tw": "標準程式庫", "hi": "standard library", "fr": "bibliothèques standard",
+        "de": "Standardbibliothek", "ar": "المكتبات القياسية", "ru": "стандартными библиотеками",
+        "id": "standard library",
+    }
     checks = {
         "http200": status == 200,
         "canonical": page.canonical == [url],
@@ -133,8 +140,8 @@ for lang in LANGS:
         "hreflangCount": len(page.hreflang) == 14,
         "hreflangTargets": set(page.hreflang.values()) == targets,
         "authoritativeLinks": all(link in page.links for link in required_links),
-        "completeCode": all(token in visible for token in ("#include", "std::chrono::floor", "std::chrono::system_clock::now()", "std::format", "std::cout")),
-        "supportCaveat": "C++20" in visible and ("standard library" in visible.lower() or "標準ライブラリ" in visible or "标准库" in visible or "標準程式庫" in visible),
+        "completeCode": all(token in code_compact for token in ("#include", "std::chrono::floor<std::chrono::seconds>", "std::chrono::system_clock::now()", "std::format", "std::cout")),
+        "supportCaveat": "C++20" in visible and library_terms[lang].lower() in visible.lower(),
     }
     results.append({"language": lang, "url": url, "status": status, "checks": checks, "passed": all(checks.values())})
 

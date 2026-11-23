@@ -1,0 +1,288 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T10:45:53.783345+09:00",
+  "ciRun": 45093799790,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45093799790",
+  "deployedCommit": "01ac5c175ff03822e4f55628ac78263d87760abe",
+  "allPassed": true,
+  "scope": "Batch 058 Japanese source and twelve translations; live HTTP, title/description, publication metadata, canonical, language/RTL, reciprocal hreflang, complete code sample, support caveat, and authoritative links.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/c-%E3%81%A7%E7%8F%BE%E5%9C%A8%E6%99%82%E5%88%BB%E3%82%92iso8601%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "authoritativeLinks": true,
+        "completeCode": true,
+        "supportCaveat": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "C++ code was not compiled or run in this workspace."
+  ]
+}

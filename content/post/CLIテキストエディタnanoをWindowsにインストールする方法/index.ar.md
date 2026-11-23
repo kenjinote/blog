@@ -1,47 +1,59 @@
 ---
-title: 'كيفية تثبيت محرر النصوص الخفيف nano على Windows وإعداد متغيرات البيئة'
-date: "2026-09-24T19:44:38+09:00"
+title: 'استخدام محرر النصوص nano في Windows عبر WSL أو MSYS2'
 slug: "CLIمحرر نصوصnanoをWindowsにتثبيتする方法"
 date: 2024-03-31T18:09:32+09:00
+lastmod: "2026-11-23"
 tags: ["nano", "محرر نصوص"]
 draft: false
 image: "img_1.webp"
 categories: ["tools-development-environment"]
-description: 'نشرح خطوات تثبيت محرر النصوص الخفيف بواجهة سطر الأوامر (CLI) ''nano'' على Windows وإعداد متغيرات البيئة ليتم استخدامه من موجه الأوامر. يغطي الشرح كل شيء بدءًا من التنزيل وإعداد الـ PATH وصولاً إلى الاستخدام الأساسي.'
+description: 'طرق حديثة لاستخدام GNU nano في Windows: تثبيته داخل WSL للحصول على بيئة Linux، أو داخل MSYS2 لاستخدام أدوات تطوير Windows، مع شرح الاختصارات الأساسية.'
 ---
 
-## تنزيل nano.exe
-https://sourceforge.net/projects/nano-for-windows/
 
-افتح الرابط أعلاه وانقر على `Download` لتنزيل `GNU-Nano_Win32(static).zip`.
-قم بفك ضغط ملف zip وضع `nano.exe` في أي مجلد تريده.
-* لا يدعم الإدخال باللغة اليابانية. (اعتبارًا من 2024/03/31)
+توجد عدة طرق لاستخدام GNU nano في Windows. قد يصعب التحقق من مصدر ملفات `nano.exe` المنفردة في مواقع التنزيل القديمة ومن استمرار صيانتها، لذلك يعرض هذا الدليل طريقتين لهما قنوات توزيع مدعومة.
 
-## تعيين متغيرات البيئة
-لاستخدام `nano.exe` من موجه الأوامر، يجب عليك تعيين متغيرات البيئة.
+## الطريقة الأولى: استخدام nano داخل WSL
 
-1. اضغط على مفتاح `Win` + مفتاح `R`، واكتب `sysdm.cpl` ثم اضغط على مفتاح `Enter`.
-2. انقر على `خصائص النظام` (System Properties).
-3. انقر على `متغيرات البيئة` (Environment Variables).
-4. حدد `Path` تحت `متغيرات النظام` وانقر على `تعديل` (Edit).
-5. انقر على `جديد` (New) وأضف [مسار](/ar/p/windows-%E3%81%A7%D9%85%D8%B3%D8%A7%D8%B1%E3%81%AE%E9%80%9A%E3%81%A3%E3%81%9F%D9%85%D9%84%D9%81-%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95/) `nano.exe`.
-6. انقر على `OK` لإغلاق جميع مربعات الحوار.
-7. أعد تشغيل موجه الأوامر واكتب `nano` للتحقق مما إذا كان يعمل.
+اختر WSL إذا كنت تحتاج أيضًا إلى أدوات سطر أوامر Linux. في Windows 11 أو Windows 10 الإصدار 2004 (البنية 19041) أو أحدث، افتح PowerShell بصفة مسؤول وشغّل:
 
-## كيفية استخدام nano
+```powershell
+wsl --install
+```
 
-عند كتابة `nano` وتشغيله، ستظهر الشاشة التالية.
+بعد إعادة التشغيل، افتح Ubuntu وثبّت nano من طرفية Linux:
 
-![img_2.png](img_2.webp)
+```bash
+sudo apt update
+sudo apt install nano
+nano --version
+```
 
-يتم عرض تفسيرات الاختصارات أسفل الشاشة.
+افتح ملفًا بالأمر `nano filename`. يتوفر قرص Windows C: داخل WSL ضمن `/mnt/c/`، مثل `nano /mnt/c/Users/اسمك/notes.txt`. راجع [دليل Microsoft لتثبيت WSL](https://learn.microsoft.com/en-us/windows/wsl/install) لمعرفة الإعداد والوصول إلى الملفات.
 
-معاني الرموز هي كما يلي.
+## الطريقة الثانية: استخدام nano من MSYS2
 
-- `^` يمثل مفتاح `Ctrl`.
-- `M-` يمثل مفتاح `Alt`.
+إذا لم تكن بحاجة إلى توزيعة Linux كاملة وتريد أدوات تطوير بأوامر شبيهة بـ Unix، فاختر [MSYS2](https://www.msys2.org/). اتبع [دليل التثبيت الرسمي](https://www.msys2.org/docs/installer/) ثم افتح طرفية “MSYS2 MSYS”. يتطلب المثبّت الرسومي Windows 10 بنظام 64 بت، الإصدار 1809 أو أحدث، أو Windows Server 2019؛ وقد تختلف متطلبات الحزم الفردية (راجع [إصدارات Windows المدعومة](https://www.msys2.org/docs/windows_support/)). حدّث قاعدة بيانات الحزم والحزم المثبتة أولًا. إذا طلب التحديث إعادة تشغيل الطرفية، فأعد فتحها وأكمل التحديث قبل تثبيت nano.
 
-للحفظ والإغلاق، اضغط على `Ctrl` + `S` متبوعًا بـ `Ctrl` + `X`.
+```bash
+pacman -Suy
+pacman -S nano
+nano --version
+```
+
+يمكنك مراجعة اسم الحزمة وأمر التثبيت في [صفحة حزمة nano لدى MSYS2](https://packages.msys2.org/packages/nano?variant=x86_64). شغّل nano داخل طرفية MSYS2. ويتطلب تشغيله من موجه الأوامر أو PowerShell العادي إعداد PATH وبيئة التشغيل إضافيًا؛ ولا يُنصح بإضافة `/usr/bin` الخاص بـ MSYS2 إلى PATH في Windows دون تقييم.
+
+## الاختصارات الأساسية
+
+ابدأ بأمر مثل `nano notes.txt`. تظهر الاختصارات أسفل الشاشة: `^` تعني Ctrl و`M-` تعني Meta (وغالبًا Alt). اضغط `Ctrl+O` لكتابة الملف، ثم أكّد اسم الملف الظاهر باستخدام Enter، واضغط `Ctrl+X` للخروج. كما تحفظ الإصدارات الحالية المخزن المؤقت باستخدام `Ctrl+S`. راجع [قائمة اختصارات GNU nano الرسمية](https://www.nano-editor.org/dist/latest/cheatsheet.html).
+
+يدعم nano التدويل وUTF-8، لكن إدخال اليابانية وعرضها يعتمدان أيضًا على الطرفية والخطوط والإعدادات المحلية وطريقة الإدخال. إذا ظهرت رموز غير مقروءة أو تعذّر إدخال اليابانية في WSL أو MSYS2، فتحقق من إعداد UTF-8 وطريقة الإدخال في الطرفية.
 
 ## المراجع
+
 - [GNU nano](https://www.nano-editor.org/)
+- [قائمة اختصارات GNU nano](https://www.nano-editor.org/dist/latest/cheatsheet.html)
+- [Microsoft Learn: تثبيت WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+- [دليل تثبيت MSYS2](https://www.msys2.org/docs/installer/)
+- [إصدارات Windows المدعومة](https://www.msys2.org/docs/windows_support/)
+- [حزمة nano في MSYS2](https://packages.msys2.org/packages/nano?variant=x86_64)

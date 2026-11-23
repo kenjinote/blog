@@ -7205,6 +7205,246 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-059.json",
       "evidenceHash": "a7f76f780f92033a8cda7e7f61f59a6b960f8d814f30182673a051ca7237f421"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.en.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "1694f97546253707c90928f4c2fd08a6f52e586cbaea1ca0fd563ac417906483",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "89ef9c6e83efee5bfb7bdbd219103bf0f3585e37308d13f8d7307dcc58efdb3f"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.zh-cn.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "2447bd61d3ba37809c9599567c0b9ba0809b2c15657ab86aace5d379f26d656c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "87e369719ecb6673f6eb47a5868c78878cfeac1c3043807bb7ee901ee150201d"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.es.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "ae94e4e18ab98dfe5344100028ac02df16dcd7ee443db02559c2a654024b9949",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "3724031ef29e9c5aaef4a77fc19b37d9c2cc917037ea77729a8956314270cb98"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.ko.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "3b38ee833a44390132a1c5c1a30417fddc2a10e1d5fbd38bafd20488b0e1ec82",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "db7443c3366a65cef67f06b84f296157ec734871deab4e359888f283c6a21a3d"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.pt.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "fd6d8740ea41757d6368d599c68f4301330f7a262c2b08a049abf77f58d30785",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "2dbeed81942b88eb8b14f04f6c1a9143ecf00bc56fa342eeb488648c04c7e40b"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.zh-tw.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "22eaaf17121dfe905ac9cb12be93ea0f9e1e0c7624a5a7a8f3901576b1f207bf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "1faa008a86e724f6de5dab6e1e6860eef712128b7e5e72054e472a413de5da4e"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.hi.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "3b6e8a32d0fbdf5db51f403a3c63f5f3a1ed0217537d2750e42b66b788f80faf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "38338db16e5ab2c418bb43f882b409e78f8d56b6b51b34b9042eba39af3cddd2"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.fr.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "220917ee5ba4fa9c043d4253275dc4d4794f5179913086d7890cfc50cb04310c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "77910703352d70c00502496d6e092ad1f051cfd06c528e35b71652ab82b12a7a"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.de.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "c8e2fccb44a77027ce277d298c145423dc7ee57f4e314ba32847b971e5f26b5e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "97b3ee005556ca37fda92bdaaac0e47db91be93e833fefc5edd106a586410b6e"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.ar.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "e5decaf3d6d89cd06565a771743c7d45c55c86c676f994c20c1f16c52a0f0457",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "d326c98a557bceb504609dd19c795b68df696fcf42cdd539504c8dbbb2938e25"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.ru.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "e47538b1a26245b0ffbc84197e20c530f170710fbc4061ad706379ce536ab923",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "2d5158810a513547ac7cfbabf13e9e820b82ea9ff6a47659d57d046bbe105e17"
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.id.md": {
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "b7e1e3ebd956b35660056bd650b08ea8e9964fdff0650c845529559e6fd8670e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-060.json",
+      "evidenceHash": "cc26698f9ce0e9726409229b7b0a8cadcb4a90e0130e17921b787d987fc0bc18"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.en.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "65f4f8cba95b6bedf48295df8a4959a204cb53e19c3e3e895b188c1788643a0b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "f3e5a1abd7f9e0042d450d8dd391563d13ce438c7685b4accd38f5783429bb11"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.zh-cn.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "6c4af8be516540c3017a8fa83a8c735dc8279eef3d35cdc2e51ab9c0919700c4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "e8374b3c327e7980625aa166661ae0ce19c368a6a4e14ab67f98707db52efc5d"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.es.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "2299db6fb87d0d05b4be7d59765898cf12b4932bc21b06ea89c3f4eeb9c29a30",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "4de2b60b435abfb87f39be47566bbaefa0c4f35142a93a945de4498f3f6b9d6e"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.ko.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "7a6cd3eac85bee1a5c4b0d2aed6b882dddfd4fdead02e128722cfe1f43835e2c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "1456150351aba0e1388801d1b80dcbcb89b83bef22b8f50f196ab8b7c4d688b3"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.pt.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "1028ec41c6a083564cab04dc083e2918670c65724a20c8dbc816d1bb69477980",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "10dfe9c79f18c742518e4114ffc269db46768b6901ea03e176c9573fad5b4cff"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.zh-tw.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "c1a65fa704848160180dc8678ce0fa620efe5a8d986ed284ca34c5db29ec1b90",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "4758fc2807b01d4eed119c139fbed8fca943f2d402891ecaede8c66de8cea69d"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.hi.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "fcf68214903ce25db3d0bb9cb74853abae18e6c5dff44b5b55d860c4cd0c6e79",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "5be0d25fa9a281f7fa361b7c34875b8fdb0e8ed76e8a8dc74a0dfc35dbe13b53"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.fr.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "d53b8cdca027ed14ae39fd0cbb711c3b82d8c46057b893506786375473a22a87",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "ce44efea433d0703e829e146c62eeca989bf1423c3ce8de2d52e69b93e3c487f"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.de.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "d8b1d5de1a9521ea479747577e3b9ea76085593ea33eb0d1006ecdaa1f91f0d1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "c3af7759a26347eff44e3f3be81e9f211ef57478522b4ae94a2314605aae8e95"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.ar.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "213379832388f9f0a02c987cc00e5eb949f51dc6f773e4a8e1e96947878021e6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "99bd5122469b15c419800287467bec490ba3e8d6d41bf2927df6f6bcdaafb683"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.ru.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "01a3ebc589f968843db0270319af8a7f55c9a1805f889b6d3ec58b8a1967b137",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "71cf6f791c5cbab6de505fae54d78d946bf8fc69b69041bdfdad93fe7e44c9e5"
+    },
+    "post/ChatGPT APIをcurlから呼び出す/index.id.md": {
+      "source": "post/ChatGPT APIをcurlから呼び出す/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b26c1c5af19cfbbb30941ef4bfb5d3fd9aafec86482eb01ebe7b631deae66f16",
+      "translationHash": "b3ac99042441123292905faf7f2d8f66780f2ec57f3486faba1e7456212e5507",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-061.json",
+      "evidenceHash": "cbca3b389e08bec1c2b8019e742c5fdd660fa4579fdc239437784efe63e78f00"
     }
   }
 }

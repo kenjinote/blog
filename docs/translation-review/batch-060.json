@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "article": "How to use GNU nano on Windows with WSL or MSYS2",
+  "frozenSourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://www.nano-editor.org/dist/latest/cheatsheet.html",
+    "https://learn.microsoft.com/en-us/windows/wsl/install",
+    "https://www.msys2.org/docs/installer/",
+    "https://www.msys2.org/docs/updating/",
+    "https://www.msys2.org/docs/windows_support/",
+    "https://packages.msys2.org/packages/nano?variant=x86_64"
+  ],
+  "findings": [
+    "Removed the obsolete SourceForge single-binary download and manual PATH directions; documented WSL and MSYS2 as distinct maintained environments, including their Windows support prerequisites and official setup/package references.",
+    "Corrected the categorical claim that Japanese input is unsupported. GNU nano supports internationalization and UTF-8; actual input/display depends on terminal, font, locale, and input-method configuration.",
+    "Explained MSYS2 update/restart steps and that its nano package should be run in the MSYS2 terminal, not assumed to be a native Command Prompt or PowerShell executable.",
+    "Documented reliable Ctrl+O/Enter save and Ctrl+X exit controls, with current Ctrl+S behavior linked to the official nano cheat sheet; retained the original 2024-03-31 publication date, removed the duplicate date, and added lastmod/localized descriptions.",
+    "Compared the complete Japanese article with all twelve translations, including metadata, platform prerequisites, commands and paths, shortcuts, UTF-8/input caveats, and official references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "1694f97546253707c90928f4c2fd08a6f52e586cbaea1ca0fd563ac417906483",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "2447bd61d3ba37809c9599567c0b9ba0809b2c15657ab86aace5d379f26d656c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "ae94e4e18ab98dfe5344100028ac02df16dcd7ee443db02559c2a654024b9949",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "3b38ee833a44390132a1c5c1a30417fddc2a10e1d5fbd38bafd20488b0e1ec82",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "fd6d8740ea41757d6368d599c68f4301330f7a262c2b08a049abf77f58d30785",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "22eaaf17121dfe905ac9cb12be93ea0f9e1e0c7624a5a7a8f3901576b1f207bf",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "3b6e8a32d0fbdf5db51f403a3c63f5f3a1ed0217537d2750e42b66b788f80faf",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "220917ee5ba4fa9c043d4253275dc4d4794f5179913086d7890cfc50cb04310c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "c8e2fccb44a77027ce277d298c145423dc7ee57f4e314ba32847b971e5f26b5e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "e5decaf3d6d89cd06565a771743c7d45c55c86c676f994c20c1f16c52a0f0457",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "e47538b1a26245b0ffbc84197e20c530f170710fbc4061ad706379ce536ab923",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
+      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+      "translationHash": "b7e1e3ebd956b35660056bd650b08ea8e9964fdff0650c845529559e6fd8670e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full localized edition against Japanese: two installation routes, supported Windows versions, update/restart sequence, terminal scope, Windows file path, shortcuts, UTF-8/input caveats, metadata, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized use of GNU nano, WSL, Ubuntu, MSYS2 MSYS, package database, PATH, UTF-8, locale, IME/input method, Ctrl, and Meta/Alt."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared every shell command and path with the Japanese source and official installation references: wsl --install, apt update/install, pacman -Suy, pacman -S nano, nano --version, and example file paths. Commands were not executed on Windows/WSL/MSYS2."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+        }
+      },
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
+        "The historical screenshot is omitted from the revised article because it depicts the old standalone executable; retained asset files were not altered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    }
+  }
+}

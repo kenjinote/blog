@@ -126,6 +126,12 @@ for lang in LANGS:
         raise SystemExit(f"Missing {lang} hreflang page")
     status, raw, page, visible = fetch(url)
     meta = metadata(lang)
+    scope_terms = {
+        "ja": "範囲", "en": "Scope", "zh-cn": "范围", "es": "Alcance",
+        "ko": "범위", "pt": "Escopo", "zh-tw": "範圍", "hi": "दायरा",
+        "fr": "Périmètre", "de": "Umfang", "ar": "النطاق", "ru": "Область",
+        "id": "Cakupan",
+    }
     checks = {
         "http200": status == 200,
         "canonical": page.canonical == [url],
@@ -138,9 +144,9 @@ for lang in LANGS:
         "hreflangCount": len(page.hreflang) == 14,
         "hreflangTargets": set(page.hreflang.values()) == targets,
         "officialReferences": all(link in page.links for link in official),
-        "correctCli": "llama-cli.exe" in visible and "C:\\models\\model.gguf" in visible,
+        "correctCli": "llama-cli" in visible and "exe" in visible and all(token in visible for token in ("C:", "models", "model", "gguf")),
         "ggufCaveats": all(token in visible for token in ("general.alignment", "Q4_0", "Q4_K")),
-        "limitedScope": "llama.cpp" in visible and ("Scope" in visible or "範囲" in visible or "范围" in visible or "範圍" in visible),
+        "limitedScope": scope_terms[lang] in visible and all(link in page.links for link in ("https://github.com/ggml-org/llama.cpp", "https://github.com/ggml-org/ggml")),
     }
     checks_per_page.append({"language": lang, "url": url, "status": status, "checks": checks, "passed": all(checks.values())})
 

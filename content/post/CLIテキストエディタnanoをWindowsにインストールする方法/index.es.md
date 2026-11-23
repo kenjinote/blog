@@ -6,56 +6,61 @@
 
 
 
-title: 'Cómo instalar el editor de texto CLI nano en Windows y configurar variables de entorno'
-date: "2026-09-24T19:44:38+09:00"
+title: 'Cómo usar el editor de texto nano en Windows: WSL y MSYS2'
 slug: "CLIEditor de textonanoをWindowsにInstalaciónする方法"
 date: 2024-03-31T18:09:32+09:00
+lastmod: "2026-11-23"
 tags: ["nano", "editor de texto"]
 draft: false
 image: "img_1.webp"
 categories: ["tools-development-environment"]
-description: 'Te explicamos los pasos para instalar el ligero editor de texto de línea de comandos "nano" en Windows y configurar variables de entorno para usarlo desde el símbolo del sistema. Cubre desde la descarga hasta la configuración del PATH y su uso básico.'
+description: 'Métodos actuales para usar GNU nano en Windows: instálelo en WSL para disponer de Linux o en MSYS2 para usar herramientas de desarrollo de Windows. Incluye los atajos básicos.'
 ---
 
 
+Hay varias formas de usar GNU nano en Windows. Los archivos `nano.exe` independientes de sitios antiguos pueden tener un origen y un mantenimiento difíciles de verificar; por eso esta guía usa dos vías mantenidas.
 
+## Opción 1: Usar nano en WSL
 
+Elija WSL si también necesita herramientas de línea de comandos de Linux. En Windows 11 o Windows 10 versión 2004 (compilación 19041) o posterior, abra PowerShell como administrador y ejecute:
 
+```powershell
+wsl --install
+```
 
+Después de reiniciar, abra Ubuntu e instale nano en la terminal de Linux:
 
+```bash
+sudo apt update
+sudo apt install nano
+nano --version
+```
 
-## Descargar nano.exe
-https://sourceforge.net/projects/nano-for-windows/
+Abra un archivo con `nano nombre`. La unidad C: de Windows está disponible en `/mnt/c/` dentro de WSL; por ejemplo: `nano /mnt/c/Users/Nombre/notes.txt`. Consulte la [guía de instalación de WSL de Microsoft](https://learn.microsoft.com/es-es/windows/wsl/install) para conocer la configuración y el acceso a archivos.
 
-Abre el enlace de arriba, haz clic en `Download` y descarga `GNU-Nano_Win32(static).zip`.
-Descomprime el archivo zip y coloca `nano.exe` en la carpeta que desees.
-* La entrada en japonés no es compatible. (A partir del 31/03/2024)
+## Opción 2: Usar nano desde MSYS2
 
-## Configurar variables de entorno
-Para usar `nano.exe` desde el símbolo del sistema, necesitas configurar las variables de entorno.
+Si no necesita una distribución Linux completa y quiere herramientas de desarrollo con comandos de estilo Unix, elija [MSYS2](https://www.msys2.org/). Siga la [guía oficial del instalador](https://www.msys2.org/docs/installer/) y abra la terminal “MSYS2 MSYS”. El instalador gráfico requiere Windows de 64 bits 10 versión 1809 o posterior, o Windows Server 2019; los requisitos de cada paquete pueden variar (consulte las [versiones de Windows compatibles](https://www.msys2.org/docs/windows_support/)). Actualice primero la base de datos y los paquetes instalados. Si la actualización pide reiniciar la terminal, vuelva a abrirla y termine la actualización antes de instalar nano.
 
-1. Presiona la `tecla Win` + `tecla R`, escribe `sysdm.cpl` y presiona la `tecla Enter`.
-2. Haz clic en `Propiedades del sistema` en `Propiedades del sistema`.
-3. Haz clic en `Variables de entorno`.
-4. Selecciona `Path` en `Variables del sistema` y haz clic en `Editar`.
-5. Haz clic en `Nuevo` y agrega la ruta de `nano.exe`.
-6. Haz clic en `Aceptar` para cerrar todos los cuadros de diálogo.
-7. Reinicia el símbolo del sistema y verifica si puedes ejecutarlo escribiendo `nano`.
+```bash
+pacman -Suy
+pacman -S nano
+nano --version
+```
 
-## Cómo usar nano
+El nombre del paquete y el comando aparecen en la [página del paquete nano de MSYS2](https://packages.msys2.org/packages/nano?variant=x86_64). Ejecute nano dentro de una terminal MSYS2. Usarlo desde el Símbolo del sistema o PowerShell normales requiere configurar PATH y el entorno de ejecución; no se recomienda añadir `/usr/bin` de MSYS2 a PATH de Windows sin más.
 
-Cuando escribes `nano` y lo ejecutas, se muestra la siguiente pantalla.
+## Atajos básicos
 
-![img_2.png](img_2.webp)
+Inicie el editor con un comando como `nano notes.txt`. La leyenda de atajos aparece en la parte inferior: `^` significa Ctrl y `M-` significa Meta (normalmente Alt). Pulse `Ctrl+O` para escribir el archivo, confirme el nombre mostrado con Enter y pulse `Ctrl+X` para salir. Las versiones actuales también guardan el búfer con `Ctrl+S`. Consulte la [chuleta oficial de GNU nano](https://www.nano-editor.org/dist/latest/cheatsheet.html).
 
-Una descripción de los accesos directos se muestra en la parte inferior de la pantalla.
-
-El significado de los símbolos es el siguiente:
-
-- `^` representa la tecla `Ctrl`.
-- `M-` representa la tecla `Alt`.
-
-Para guardar y cerrar, presiona `Ctrl` + `S` y luego `Ctrl` + `X`.
+nano admite internacionalización y UTF-8, pero la escritura y visualización del japonés también dependen del terminal, las fuentes, la configuración regional y el método de entrada. Si aparecen caracteres ilegibles o no puede escribir japonés en WSL o MSYS2, compruebe la configuración UTF-8 y del método de entrada del terminal.
 
 ## Referencias
+
 - [GNU nano](https://www.nano-editor.org/)
+- [Chuleta de GNU nano](https://www.nano-editor.org/dist/latest/cheatsheet.html)
+- [Microsoft Learn: instalar WSL](https://learn.microsoft.com/es-es/windows/wsl/install)
+- [Guía del instalador de MSYS2](https://www.msys2.org/docs/installer/)
+- [Versiones de Windows compatibles](https://www.msys2.org/docs/windows_support/)
+- [Paquete nano de MSYS2](https://packages.msys2.org/packages/nano?variant=x86_64)
