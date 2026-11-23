@@ -20,7 +20,7 @@
   ],
   "validation": "docs/translation-review/validation-079.json",
   "scope": "Read the full Japanese source and all twelve complete translations. Compared Ranklet legacy shutdown, GA4 setup/permissions, widget publishing, Handlebars syntax, crawler behavior, terms and privacy with provider documentation.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.en.md": {
       "reviewKind": "ai",
@@ -454,5 +454,11 @@
         "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-079.json",
+    "ciRun": 45166641254,
+    "sourceCommit": "679d82851abc252f80726381ebc7cca62551abfb",
+    "allPassed": true
   }
 }
