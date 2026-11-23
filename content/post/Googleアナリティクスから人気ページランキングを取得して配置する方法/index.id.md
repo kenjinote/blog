@@ -1,165 +1,69 @@
 ---
-title: 'Cara Menampilkan Peringkat Artikel Populer Google Analytics dengan Ranklet'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google Analyticsから人気ページランキングを取得して配置する方法"
+title: 'Menampilkan peringkat halaman populer GA4 di Hugo dengan Ranklet4'
 date: 2023-04-10T20:26:57+09:00
+lastmod: 2026-11-23
+
+
+
+
+slug: "Google Analyticsから人気ページランキングを取得して配置する方法"
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Menjelaskan cara menggunakan ''Ranklet'', sebuah layanan yang dapat dengan mudah menampilkan peringkat halaman populer situs secara otomatis dengan menghubungkannya ke Google Analytics. Mengambil contoh blog HUGO, kami memperkenalkan langkah pengaturan dan cara menyesuaikan templat HTML/CSS.'
+description: 'Gunakan Ranklet4, penerus widget Ranklet lama untuk GA4, untuk menambahkan peringkat halaman populer ke Hugo. Panduan ini membahas migrasi, izin, template, dan pertimbangan layanan pihak ketiga.'
 ---
 
-## Pengantar
+# Menampilkan peringkat halaman populer GA4 di Hugo dengan Ranklet4
 
-Dengan menggunakan layanan bernama **Ranklet** , Anda dapat dengan mudah mendapatkan dan menempatkan peringkat halaman populer dari Google Analytics.
+Panduan lama menggunakan tampilan Google Analytics dan widget Ranklet lama. Layanan Ranklet tersebut dihentikan pada 2023. Ganti tag lama dengan tag baru dari Ranklet4, layanan terpisah untuk GA4. Baca [pemberitahuan migrasi resmi](https://docs.ranklet4.com/changes.html).
 
-Dalam artikel ini, saya akan menunjukkan cara menempatkannya di blog HUGO.
+Ranklet4 menggabungkan data laporan GA4 dan menayangkan peringkat sebagai widget JavaScript, termasuk di situs statis seperti Hugo. Menu dan paket dapat berubah; ikuti [tutorial resmi terkini](https://docs.ranklet4.com/tutorial.html).
 
-## Contoh Hasil
+## Sebelum mulai
 
-![img_1.png](img_1.webp)
+* Siapkan properti GA4 yang mencatat kunjungan situs.
+* Akun Google untuk masuk harus memiliki setidaknya peran **Viewer/Pembaca** di properti itu. Anda tidak harus memakai akun administrator.
+* Ranklet4 akan mendapat akses ke data Google Analytics. Persyaratannya memberikan lisensi luas untuk menggunakan, menyalin, mendistribusikan, membuat karya turunan, menampilkan, dan menjalankan data analitik; persyaratan itu juga mengizinkan penggunaan dan publikasi informasi statistik yang tidak mengidentifikasi seseorang. Sebelum menghubungkan, baca [persyaratan](https://docs.ranklet4.com/agreement.html) dan [kebijakan privasi](https://ranklet4.com/docs/privacy), serta pastikan Anda berhak membagikan data tersebut.
 
-## Persiapan
-- Google Analytics harus disiapkan di situs
+## Membuat dan menerbitkan peringkat
 
-## Langkah-langkah
+1. Masuk ke [Ranklet4](https://ranklet4.com/) dengan akun yang dapat melihat properti GA4 tujuan. Tinjau izin yang diminta sebelum menyetujuinya.
+2. Buat peringkat dan pilih properti GA4, rentang laporan, serta jumlah entri. Atur filter judul atau URL untuk mengecualikan halaman tertentu, seperti beranda.
+3. Jika perlu, atur penggantian teks judul dan periksa hasilnya di pratinjau.
+4. Pilih template dari galeri desain atau sesuaikan HTML/CSS. Template baru memakai Handlebars; lihat [panduan template](https://docs.ranklet4.com/template.html) untuk nama bidang dan sintaksnya.
+5. Simpan dan terbitkan, lalu salin tag yang dibuat di dasbor. Jangan gunakan kembali tag atau ID Ranklet lama.
 
-1. Akses **Ranklet**
-2. Klik **Sign in with Google** untuk masuk dengan akun Google (harus ditautkan ke akun Google Analytics)
-![img_2.png](img_2.webp)
+Contoh minimal template HTML. Lihat panduan resmi untuk bidang dan sintaks pengulangan yang didukung.
 
-Klik **Izinkan**
-
-3. Atur informasi dasar
-
-![img_3.png](img_3.webp)
-Saya telah mengaturnya seperti yang ditunjukkan di atas.
-
-- Pada **Google Analytics View** , pilih tampilan yang ingin Anda dapatkan peringkatnya.
-
-4. Atur penggantian teks
-
-![img_4.png](img_4.webp)
-Saya telah mengaturnya seperti yang ditunjukkan di atas.
-Ini diatur untuk menghapus ` | kenji.blog` dari judul halaman.
-
-5. Atur templat
-
-- HTML (angka peringkat disembunyikan)
-
-```
-<div class="ranklet ranklet-reset">
-    <table class="ranklet-table">
-        <tbody class="ranklet-pages">
-            {{#context.pages}}
-            <tr class="ranklet-page">
-                <td class="ranklet-image">
-                    {{#image}}
-                    <a href="{{url}}" class="ranklet-link">
-                        <img class="ranklet-img" src="{{image}}" />
-                    </a>
-                    {{/image}}
-                </td>
-                <td class="ranklet-meta">
-                    <div class="ranklet-title">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{title}}
-                        </a>
-                    </div>
-                    {{#description}}
-                    <div class="ranklet-description">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{description}}
-                        </a>
-                    </div>
-                    {{/description}}
-                </td>
-            </tr>
-            {{/context.pages}}
-        </tbody>
-    </table>
-</div>
+```handlebars
+<ol class="popular-pages">
+  {{#each rankings}}
+  <li><a href="{{url}}">{{title}}</a></li>
+  {{/each}}
+</ol>
 ```
 
-- CSS (ukuran font diubah, deskripsi akan ditampilkan dalam 3 baris)
+## Menambahkan ke Hugo
 
-```
-#ranklet-{{context.id}} {
-    .ranklet-reset { // リセット
-        table, tr, td, div, span {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-            line-height: 1;
-            box-sizing: border-box;
-        }
-    }
+1. Buat `layouts/partials/ranklet4.html` dan tempel tag peringkat persis seperti yang dibuat Ranklet4.
+2. Tambahkan pemanggilan partial Hugo ini ke layout tempat peringkat ingin ditampilkan, misalnya `layouts/_default/single.html` atau partial sidebar:
 
-    .ranklet-table {
-        border-collapse: separate;
-        border-spacing: 8px 24px;
-        width: 100%;
-        word-break: break-all;
-
-        td {
-            vertical-align: middle;
-        }
-
-        .ranklet-rank {
-            text-align: center;
-            font-size: 120%;
-        }
-
-        .ranklet-image {
-            text-align: center;
-            img {
-                max-width: 128px;
-                max-height: 128px;
-            }
-        }
-
-        .ranklet-meta {
-            .ranklet-title {
-                font-size: 20px;
-                line-height: 125%;
-            }
-
-            .ranklet-description {
-                font-size: 16px;
-                margin-top: 8px;
-                line-height: 125%;
-                display: -webkit-box;
-                overflow: hidden;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3; /* 行数 */
-            }
-        }
-    }
-}
+```go-html-template
+{{- partial "ranklet4.html" . }}
 ```
 
-- JavaScript tidak ada perubahan
+3. Pratinjau halaman secara lokal dan setelah diterbitkan pastikan widget dimuat melalui HTTPS. Widget bergantung pada JavaScript pihak ketiga; pertimbangkan kecepatan halaman, pemberitahuan privasi, dan kebijakan keamanan situs.
 
-6. Salin HTML dari publikasi di situs
+## Pembaruan dan migrasi
 
-![img_5.png](img_5.webp)
+Peringkat mengikuti laporan GA4 dan jadwal pembaruan Ranklet4, jadi kunjungan baru tidak langsung mengubah urutan. Frekuensi pembaruan, fitur paket, kredit, dan kebijakan iklan dapat berubah; lihat [paket terkini](https://docs.ranklet4.com/plan.html). Perayap Ranklet4 membaca informasi halaman publik; lihat [FAQ](https://docs.ranklet4.com/faq.html).
 
-Salin HTML yang ditampilkan
+## Referensi resmi
 
-7. Tempel ke templat HUGO
-
-- Buat `layouts/partials/ranklet.html` dan tempel HTML yang disalin
-```
-<div id="ranklet-11958"></div><script src="//widget.ranklet.com/v1/ranklet/s3/widgets/11958/widget.js"></script>
-```
-
-- Tempel kode di bawah ini pada baris sebelum `</footer>` di `layouts/_default/single.html`
-```
-{{- partial "ranklet.html" . }}
-```
-
-Itu saja. Peringkat akan ditampilkan di bagian bawah halaman ini seperti yang ditunjukkan di bawah ini.
+* [Tutorial resmi Ranklet4](https://docs.ranklet4.com/tutorial.html)
+* [Perubahan dari Ranklet lama](https://docs.ranklet4.com/changes.html)
+* [Panduan template Ranklet4](https://docs.ranklet4.com/template.html)
+* [FAQ Ranklet4](https://docs.ranklet4.com/faq.html)
+* [Persyaratan Ranklet4](https://docs.ranklet4.com/agreement.html)
+* [Kebijakan privasi Ranklet4](https://ranklet4.com/docs/privacy)

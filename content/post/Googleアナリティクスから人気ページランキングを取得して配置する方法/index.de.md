@@ -1,165 +1,69 @@
 ---
-title: 'Wie man mit Ranklet ein Ranking der beliebtesten Artikel aus Google Analytics anzeigt'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google Analyticsから人気ページランキングを取得して配置する方法"
+title: 'GA4-Ranking beliebter Seiten mit Ranklet4 in Hugo anzeigen'
 date: 2023-04-10T20:26:57+09:00
+lastmod: 2026-11-23
+
+
+
+
+slug: "Google Analyticsから人気ページランキングを取得して配置する方法"
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Wir erklären die Verwendung von „Ranklet“, einem Dienst, mit dem Sie in Verbindung mit Google Analytics ganz einfach ein automatisches Ranking der beliebtesten Seiten Ihrer Website anzeigen können. Am Beispiel eines HUGO-Blogs stellen wir die Einrichtungsschritte und die Anpassung von HTML/CSS-Vorlagen vor.'
+description: 'Mit Ranklet4, dem GA4-Nachfolger des eingestellten Ranklet-Widgets, zeigen Sie ein Ranking beliebter Seiten in Hugo an. Der Leitfaden behandelt Migration, Berechtigungen, Vorlagen und Hinweise zu externen Diensten.'
 ---
 
-## Einleitung
+# GA4-Ranking beliebter Seiten mit Ranklet4 in Hugo anzeigen
 
-Mit dem Dienst `Ranklet` können Sie ganz einfach ein Ranking beliebter Seiten aus Google Analytics abrufen und auf Ihrer Website einbinden.
+Die alte Anleitung verwendete Google-Analytics-Ansichten und ein altes Ranklet-Widget. Der frühere Ranklet-Dienst wurde 2023 eingestellt. Ersetzen Sie das alte Widget-Tag durch ein neues Ranklet4-Tag. Ranklet4 ist ein separater Dienst für GA4. Lesen Sie den [offiziellen Migrationshinweis](https://docs.ranklet4.com/changes.html).
 
-In diesem Artikel zeige ich Ihnen, wie Sie dieses Ranking in einem HUGO-Blog einbinden.
+Ranklet4 wertet GA4-Berichtsdaten aus und liefert das Ranking als JavaScript-Widget aus, auch für statische Websites wie Hugo. Menüs und Tarife können sich ändern; orientieren Sie sich am aktuellen [offiziellen Tutorial](https://docs.ranklet4.com/tutorial.html).
 
-## Vorschau
+## Vor dem Start
 
-![img_1.png](img_1.webp)
+* Richten Sie eine GA4-Property ein, die Besuche Ihrer Website erfasst.
+* Das verwendete Google-Konto braucht mindestens die Rolle **Betrachter** für diese Property. Ein Administratorkonto ist nicht erforderlich.
+* Ranklet4 erhält Zugriff auf Google-Analytics-Daten. Die Nutzungsbedingungen gewähren eine weitreichende Lizenz zur Nutzung, Vervielfältigung und Verbreitung der Analysedaten sowie zur Erstellung abgeleiteter Werke, deren Anzeige und Ausführung. Außerdem dürfen nicht personenbezogene statistische Informationen genutzt und veröffentlicht werden. Prüfen Sie die [Nutzungsbedingungen](https://docs.ranklet4.com/agreement.html), die [Datenschutzerklärung](https://ranklet4.com/docs/privacy) und Ihr Recht zur Datenweitergabe, bevor Sie die Verbindung herstellen.
 
-## Vorbereitung
-- Auf Ihrer Website muss Google Analytics eingerichtet sein.
+## Ranking erstellen und veröffentlichen
 
-## Schritte
+1. Melden Sie sich bei [Ranklet4](https://ranklet4.com/) mit einem Konto an, das die gewünschte GA4-Property ansehen darf. Prüfen Sie die angeforderten Berechtigungen, bevor Sie den Zugriff erlauben.
+2. Erstellen Sie ein Ranking und wählen Sie GA4-Property, Berichtszeitraum und Anzahl der Einträge. Filtern Sie Titel oder URLs, etwa um die Startseite auszuschließen.
+3. Richten Sie bei Bedarf eine Ersetzung von Titeltext ein. Prüfen Sie Titel und Ergebnisse in der Vorschau.
+4. Wählen Sie eine Vorlage aus der Designgalerie oder passen Sie HTML/CSS an. Neue Vorlagen verwenden Handlebars; Feldnamen und Syntax stehen im [Vorlagenleitfaden](https://docs.ranklet4.com/template.html).
+5. Speichern und veröffentlichen Sie das Ranking und kopieren Sie das im Dashboard erzeugte Tag. Verwenden Sie weder das alte Ranklet-Tag noch dessen ID weiter.
 
-1. Rufen Sie `Ranklet` auf.
-2. Klicken Sie auf `Sign in with Google` und melden Sie sich mit Ihrem Google-Konto an (dieses muss mit Ihrem Google Analytics-Konto verknüpft sein).
-![img_2.png](img_2.webp)
+Ein minimales HTML-Beispiel. Unterstützte Felder und Schleifensyntax finden Sie im offiziellen Leitfaden.
 
-Klicken Sie auf `Zulassen` (`許可`).
-
-3. Richten Sie die grundlegenden Informationen ein.
-
-![img_3.png](img_3.webp)
-Die Einstellungen wurden wie oben abgebildet vorgenommen.
-
-- Wählen Sie unter `Google Analytics-Ansicht` (`Google Analytics ビュー`) die Datenansicht aus, aus der Sie das Ranking abrufen möchten.
-
-4. Richten Sie die Textersetzung ein.
-
-![img_4.png](img_4.webp)
-Die Einstellungen wurden wie oben abgebildet vorgenommen.
-Dies ist so eingestellt, dass ` | kenji.blog` aus dem Seitentitel entfernt wird.
-
-5. Richten Sie die Vorlage ein.
-
-- HTML (Die Platzierungsnummern des Rankings wurden ausgeblendet)
-
-```html
-<div class="ranklet ranklet-reset">
-    <table class="ranklet-table">
-        <tbody class="ranklet-pages">
-            {{#context.pages}}
-            <tr class="ranklet-page">
-                <td class="ranklet-image">
-                    {{#image}}
-                    <a href="{{url}}" class="ranklet-link">
-                        <img class="ranklet-img" src="{{image}}" />
-                    </a>
-                    {{/image}}
-                </td>
-                <td class="ranklet-meta">
-                    <div class="ranklet-title">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{title}}
-                        </a>
-                    </div>
-                    {{#description}}
-                    <div class="ranklet-description">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{description}}
-                        </a>
-                    </div>
-                    {{/description}}
-                </td>
-            </tr>
-            {{/context.pages}}
-        </tbody>
-    </table>
-</div>
+```handlebars
+<ol class="popular-pages">
+  {{#each rankings}}
+  <li><a href="{{url}}">{{title}}</a></li>
+  {{/each}}
+</ol>
 ```
 
-- CSS (Schriftgröße geändert und die Beschreibung auf maximal 3 Zeilen begrenzt)
+## In Hugo einbinden
 
-```css
-#ranklet-{{context.id}} {
-    .ranklet-reset { // Reset
-        table, tr, td, div, span {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-            line-height: 1;
-            box-sizing: border-box;
-        }
-    }
+1. Erstellen Sie `layouts/partials/ranklet4.html` und fügen Sie das unveränderte, von Ranklet4 erzeugte Ranking-Tag ein.
+2. Fügen Sie den folgenden Hugo-Aufruf in das Layout ein, an dem das Ranking erscheinen soll, zum Beispiel in `layouts/_default/single.html` oder eine Seitenleisten-Partial:
 
-    .ranklet-table {
-        border-collapse: separate;
-        border-spacing: 8px 24px;
-        width: 100%;
-        word-break: break-all;
-
-        td {
-            vertical-align: middle;
-        }
-
-        .ranklet-rank {
-            text-align: center;
-            font-size: 120%;
-        }
-
-        .ranklet-image {
-            text-align: center;
-            img {
-                max-width: 128px;
-                max-height: 128px;
-            }
-        }
-
-        .ranklet-meta {
-            .ranklet-title {
-                font-size: 20px;
-                line-height: 125%;
-            }
-
-            .ranklet-description {
-                font-size: 16px;
-                margin-top: 8px;
-                line-height: 125%;
-                display: -webkit-box;
-                overflow: hidden;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3; /* Zeilenanzahl */
-            }
-        }
-    }
-}
+```go-html-template
+{{- partial "ranklet4.html" . }}
 ```
 
-- JavaScript bleibt unverändert
+3. Prüfen Sie die Seite lokal und nach der Veröffentlichung, ob das Widget über HTTPS geladen wird. Es nutzt Drittanbieter-JavaScript; beachten Sie Ladezeit, Datenschutzhinweise und Sicherheitsrichtlinien.
 
-6. Kopieren Sie den HTML-Code aus „Auf Website einbinden“ (`サイトへの掲載`)
+## Aktualisierung und Migration
 
-![img_5.png](img_5.webp)
+Das Ranking richtet sich nach GA4-Berichten und dem Aktualisierungszeitplan von Ranklet4; neue Besuche erscheinen nicht unbedingt sofort. Aktualisierungsfrequenz, Tarifmerkmale, Credits und Werberichtlinien können sich ändern. Prüfen Sie die [aktuellen Tarife](https://docs.ranklet4.com/plan.html). Der Crawler von Ranklet4 liest Informationen öffentlicher Seiten; Details stehen in den [FAQ](https://docs.ranklet4.com/faq.html).
 
-Kopieren Sie den angezeigten HTML-Code.
+## Offizielle Quellen
 
-7. In das HUGO-Template einfügen
-
-- Erstellen Sie `layouts/partials/ranklet.html` und fügen Sie den kopierten HTML-Code ein.
-```html
-<div id="ranklet-11958"></div><script src="//widget.ranklet.com/v1/ranklet/s3/widgets/11958/widget.js"></script>
-```
-
-- Fügen Sie den folgenden Code in der Zeile vor `</footer>` in `layouts/_default/single.html` ein.
-```html
-{{- partial "ranklet.html" . }}
-```
-
-Das ist alles. Damit wird das Ranking wie unten auf dieser Seite angezeigt.
+* [Ranklet4-Tutorial](https://docs.ranklet4.com/tutorial.html)
+* [Änderungen gegenüber dem alten Ranklet](https://docs.ranklet4.com/changes.html)
+* [Ranklet4-Vorlagenleitfaden](https://docs.ranklet4.com/template.html)
+* [Ranklet4-FAQ](https://docs.ranklet4.com/faq.html)
+* [Ranklet4-Nutzungsbedingungen](https://docs.ranklet4.com/agreement.html)
+* [Ranklet4-Datenschutzerklärung](https://ranklet4.com/docs/privacy)

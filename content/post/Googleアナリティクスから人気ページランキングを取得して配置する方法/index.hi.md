@@ -1,165 +1,69 @@
 ---
-title: 'Ranklet के साथ Google Analytics लोकप्रिय लेख रैंकिंग कैसे प्रदर्शित करें'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google एनालिटिक्सから人気ページランキングを取得して配置する方法"
+title: 'Ranklet4 से Hugo में GA4 लोकप्रिय पेज रैंकिंग दिखाएँ'
 date: 2023-04-10T20:26:57+09:00
+lastmod: 2026-11-23
+
+
+
+
+slug: "Google एनालिटिक्सから人気ページランキングを取得して配置する方法"
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'हम "Ranklet" सेवा के उपयोग की व्याख्या करेंगे, जो Google Analytics के साथ जुड़कर साइट के लोकप्रिय पृष्ठ रैंकिंग को आसानी से स्वचालित रूप से प्रदर्शित कर सकती है। HUGO ब्लॉग को एक उदाहरण के रूप में लेते हुए, हम सेटिंग प्रक्रिया और HTML/CSS टेम्प्लेट को अनुकूलित करने का तरीका पेश करेंगे。'
+description: 'बंद हो चुके Ranklet विजेट के GA4 उत्तराधिकारी Ranklet4 से Hugo में लोकप्रिय पेजों की रैंकिंग जोड़ें। यह मार्गदर्शिका माइग्रेशन, अनुमतियों, टेम्पलेट और तृतीय-पक्ष सेवा से जुड़े विचारों को समझाती है।'
 ---
 
-## परिचय
+# Ranklet4 से Hugo में GA4 लोकप्रिय पेज रैंकिंग दिखाएँ
 
-`Ranklet` नामक सेवा का उपयोग करके, आप Google Analytics से लोकप्रिय पेज रैंकिंग प्राप्त करके आसानी से प्रदर्शित कर सकते हैं।
+पुराने निर्देश Google Analytics के Views और पुराने Ranklet विजेट पर आधारित थे। पुरानी Ranklet सेवा 2023 में बंद हो गई। पुराने टैग को GA4 के लिए अलग सेवा Ranklet4 से मिले नए टैग से बदलें। [आधिकारिक माइग्रेशन सूचना](https://docs.ranklet4.com/changes.html) देखें।
 
-इस लेख में, मैं HUGO ब्लॉग में इसे प्रदर्शित करने का तरीका बताऊंगा।
+Ranklet4 GA4 रिपोर्ट डेटा एकत्र करके JavaScript विजेट के रूप में रैंकिंग दिखाता है; Hugo जैसी स्थिर साइटें भी इसका उपयोग कर सकती हैं। मेनू और प्लान बदल सकते हैं, इसलिए [आधिकारिक ट्यूटोरियल](https://docs.ranklet4.com/tutorial.html) देखें।
 
-## डेमो छवि
+## शुरू करने से पहले
 
-![img_1.png](img_1.webp)
+* साइट विज़िट दर्ज करने वाली GA4 प्रॉपर्टी उपलब्ध होनी चाहिए।
+* साइन-इन के लिए इस्तेमाल Google खाते को उस प्रॉपर्टी पर कम से कम **Viewer (दर्शक)** भूमिका चाहिए। एडमिन खाते की आवश्यकता नहीं है।
+* Ranklet4 को Google Analytics डेटा का एक्सेस मिलेगा। इसकी शर्तें डेटा के उपयोग, कॉपी, वितरण, व्युत्पन्न कार्य बनाने, दिखाने और चलाने के लिए व्यापक लाइसेंस देती हैं; ये ऐसी सांख्यिकीय जानकारी के उपयोग और प्रकाशन की भी अनुमति देती हैं जिससे किसी व्यक्ति की पहचान न हो। कनेक्ट करने से पहले [सेवा की शर्तें](https://docs.ranklet4.com/agreement.html) और [गोपनीयता नीति](https://ranklet4.com/docs/privacy) पढ़ें और पुष्टि करें कि आपको डेटा साझा करने का अधिकार है।
 
-## तैयारी
-- साइट पर Google Analytics सेटअप होना चाहिए
+## रैंकिंग बनाएँ और प्रकाशित करें
 
-## चरण
+1. लक्षित GA4 प्रॉपर्टी देखने योग्य खाते से [Ranklet4](https://ranklet4.com/) में साइन इन करें। अनुमति देने से पहले अनुरोधित एक्सेस देखें।
+2. नई रैंकिंग बनाएँ और GA4 प्रॉपर्टी, रिपोर्ट अवधि तथा दिखाई जाने वाली प्रविष्टियों की संख्या चुनें। ज़रूरत हो तो शीर्षक या URL फ़िल्टर से होम पेज हटाएँ।
+3. चाहें तो शीर्षक का टेक्स्ट बदलने का नियम बनाएँ और पूर्वावलोकन में परिणाम देखें।
+4. डिज़ाइन गैलरी से टेम्पलेट चुनें या HTML/CSS में बदलाव करें। नए टेम्पलेट Handlebars का उपयोग करते हैं; फ़ील्ड और सिंटैक्स के लिए [टेम्पलेट गाइड](https://docs.ranklet4.com/template.html) देखें।
+5. सहेजकर प्रकाशित करें और डैशबोर्ड द्वारा बनाए गए टैग को कॉपी करें। पुराने Ranklet का टैग या ID दोबारा न इस्तेमाल करें।
 
-1. `Ranklet` पर जाएं
-2. `Sign in with Google` पर क्लिक करें और Google खाते से लॉग इन करें (यह Google Analytics खाते से जुड़ा होना चाहिए)
-![img_2.png](img_2.webp)
+न्यूनतम HTML टेम्पलेट उदाहरण। समर्थित फ़ील्ड और लूप सिंटैक्स के लिए आधिकारिक गाइड देखें।
 
-`अनुमति दें` पर क्लिक करें
-
-3. बुनियादी जानकारी सेट करें
-
-![img_3.png](img_3.webp)
-मैंने इसे ऊपर दिखाए अनुसार कॉन्फ़िगर किया।
-
-- `Google Analytics View` में वह व्यू चुनें जिससे आप रैंकिंग प्राप्त करना चाहते हैं।
-
-4. टेक्स्ट प्रतिस्थापन सेट करें
-
-![img_4.png](img_4.webp)
-मैंने इसे ऊपर दिखाए अनुसार सेट किया।
-पेज शीर्षक से ` | kenji.blog` को हटाने के लिए इसे सेट किया गया है।
-
-5. टेम्प्लेट सेट करें
-
-- HTML (रैंकिंग संख्या को छिपा दिया गया है)
-
-```html
-<div class="ranklet ranklet-reset">
-    <table class="ranklet-table">
-        <tbody class="ranklet-pages">
-            {{#context.pages}}
-            <tr class="ranklet-page">
-                <td class="ranklet-image">
-                    {{#image}}
-                    <a href="{{url}}" class="ranklet-link">
-                        <img class="ranklet-img" src="{{image}}" />
-                    </a>
-                    {{/image}}
-                </td>
-                <td class="ranklet-meta">
-                    <div class="ranklet-title">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{title}}
-                        </a>
-                    </div>
-                    {{#description}}
-                    <div class="ranklet-description">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{description}}
-                        </a>
-                    </div>
-                    {{/description}}
-                </td>
-            </tr>
-            {{/context.pages}}
-        </tbody>
-    </table>
-</div>
+```handlebars
+<ol class="popular-pages">
+  {{#each rankings}}
+  <li><a href="{{url}}">{{title}}</a></li>
+  {{/each}}
+</ol>
 ```
 
-- CSS (फ़ॉन्ट आकार बदला और विवरण को 3 पंक्तियों में प्रदर्शित करने के लिए सेट किया)
+## Hugo में जोड़ें
 
-```css
-#ranklet-{{context.id}} {
-    .ranklet-reset { // रीसेट
-        table, tr, td, div, span {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-            line-height: 1;
-            box-sizing: border-box;
-        }
-    }
+1. `layouts/partials/ranklet4.html` बनाएँ और Ranklet4 द्वारा दिया गया पूरा रैंकिंग टैग उसमें पेस्ट करें।
+2. जहाँ रैंकिंग दिखानी हो उस लेआउट में यह Hugo partial call जोड़ें, जैसे `layouts/_default/single.html` या sidebar partial:
 
-    .ranklet-table {
-        border-collapse: separate;
-        border-spacing: 8px 24px;
-        width: 100%;
-        word-break: break-all;
-
-        td {
-            vertical-align: middle;
-        }
-
-        .ranklet-rank {
-            text-align: center;
-            font-size: 120%;
-        }
-
-        .ranklet-image {
-            text-align: center;
-            img {
-                max-width: 128px;
-                max-height: 128px;
-            }
-        }
-
-        .ranklet-meta {
-            .ranklet-title {
-                font-size: 20px;
-                line-height: 125%;
-            }
-
-            .ranklet-description {
-                font-size: 16px;
-                margin-top: 8px;
-                line-height: 125%;
-                display: -webkit-box;
-                overflow: hidden;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3; /* पंक्तियों की संख्या */
-            }
-        }
-    }
-}
+```go-html-template
+{{- partial "ranklet4.html" . }}
 ```
 
-- JavaScript में कोई बदलाव नहीं
+3. पेज को स्थानीय रूप से देखें और प्रकाशित होने के बाद पुष्टि करें कि विजेट HTTPS से लोड हो रहा है। यह तृतीय-पक्ष JavaScript पर निर्भर है; गति, गोपनीयता सूचना और साइट सुरक्षा नीति पर विचार करें।
 
-6. "साइट पर प्रकाशित करें" से HTML कॉपी करें
+## अपडेट और माइग्रेशन नोट
 
-![img_5.png](img_5.webp)
+रैंकिंग GA4 रिपोर्ट और Ranklet4 के अपडेट समय पर निर्भर है, इसलिए नई विज़िट के बाद क्रम तुरंत बदलना ज़रूरी नहीं। अपडेट आवृत्ति, प्लान सुविधाएँ, क्रेडिट और विज्ञापन नीति बदल सकती हैं; [मौजूदा प्लान](https://docs.ranklet4.com/plan.html) देखें। Ranklet4 क्रॉलर सार्वजनिक पेजों की जानकारी पढ़ता है; [FAQ](https://docs.ranklet4.com/faq.html) देखें।
 
-प्रदर्शित HTML को कॉपी करें
+## आधिकारिक संदर्भ
 
-7. HUGO टेम्प्लेट में पेस्ट करें
-
-- `layouts/partials/ranklet.html` बनाएं और कॉपी किए गए HTML को पेस्ट करें
-```html
-<div id="ranklet-11958"></div><script src="//widget.ranklet.com/v1/ranklet/s3/widgets/11958/widget.js"></script>
-```
-
-- `layouts/_default/single.html` में `</footer>` से पहले वाली पंक्ति पर नीचे दिया गया कोड पेस्ट करें
-```html
-{{- partial "ranklet.html" . }}
-```
-
-बस इतना ही। अब रैंकिंग इस पेज के नीचे दिखाए अनुसार प्रदर्शित होगी।
+* [Ranklet4 आधिकारिक ट्यूटोरियल](https://docs.ranklet4.com/tutorial.html)
+* [पुराने Ranklet से बदलाव](https://docs.ranklet4.com/changes.html)
+* [Ranklet4 टेम्पलेट गाइड](https://docs.ranklet4.com/template.html)
+* [Ranklet4 FAQ](https://docs.ranklet4.com/faq.html)
+* [Ranklet4 सेवा की शर्तें](https://docs.ranklet4.com/agreement.html)
+* [Ranklet4 गोपनीयता नीति](https://ranklet4.com/docs/privacy)

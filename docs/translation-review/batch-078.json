@@ -19,7 +19,7 @@
   ],
   "validation": "docs/translation-review/validation-078.json",
   "scope": "Read the full Japanese source and each of twelve complete translations. Checked current Google One/Google Play/Gemini cancellation routes, the narrowly scoped service-deletion path, billing period, and storage effects against official Google documentation.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Google One （Gemini）が解約できない時の対処方法/index.en.md": {
       "reviewKind": "ai",
@@ -453,5 +453,11 @@
         "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-078.json",
+    "ciRun": 45161376076,
+    "sourceCommit": "6afec22f4d27bc72fc745e66b802620e2736fa14",
+    "allPassed": true
   }
 }

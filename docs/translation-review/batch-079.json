@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "article": "Googleアナリティクスから人気ページランキングを取得して配置する方法",
+  "frozenSourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://docs.ranklet4.com/tutorial.html",
+    "https://docs.ranklet4.com/changes.html",
+    "https://docs.ranklet4.com/template.html",
+    "https://docs.ranklet4.com/faq.html",
+    "https://docs.ranklet4.com/agreement.html",
+    "https://ranklet4.com/docs/privacy",
+    "https://ranklet4.com/"
+  ],
+  "findings": [
+    "Removed the obsolete Universal Analytics View setup and old Ranklet embed; the provider documents that the legacy service ended in 2023 and directs users to Ranklet4.",
+    "Replaced the setup with GA4 property selection, the documented Viewer-or-higher permission, current ranking filters, Handlebars template guidance, and the exact generated widget-tag workflow.",
+    "Added Google/Hugo partial placement and preview steps, public-crawler scope, schedule caveats, and an explicit reminder to review Ranklet4's terms and privacy policy before sharing analytics data.",
+    "Preserved publication date 2023-04-10, removed the duplicate injected date, and set lastmod 2026-11-23 in all 13 editions."
+  ],
+  "validation": "docs/translation-review/validation-079.json",
+  "scope": "Read the full Japanese source and all twelve complete translations. Compared Ranklet legacy shutdown, GA4 setup/permissions, widget publishing, Handlebars syntax, crawler behavior, terms and privacy with provider documentation.",
+  "publicationPending": true,
+  "reviews": {
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "15578271337e0802f1d6a88628e3efadabb5baf07ae3629dc4546fdb94652747",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "b200a39370b4048f5bec6f81c1213840a7a8f979bb46aa914f40baae89798ef3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "df1ac63a16d661b2b038548d37e9a511a7bf746d8d443ccd9d2dd16fe41089bc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "8478d8e34786343973f85d1ce087dcd1fb5faab20f2481085ace441d819ae0bd",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "207844c939859ef1e14f9fb07f952acb04ef5ea8cf31cad844c6f1e259d70ebf",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "4e0e9047cb29fb35ffdcd4a46d4ab9dbbe1be5a2bd27de118aef082787bdaed3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "1536e0b7c988644370a9867c05a5473f68de298c46f11857081bd0524f65bd46",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "d470847e108b42c2c04e4ce33fdb4ef2a6f47ea14844984e9266f96c30301d73",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "3806b63c5e9596b9b056955279995f0dab5c676cd340ef9e174fb3ac1ea01a76",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "6ad27e996c8e94480039e75fd309c183a52b0560928e0218967bc87e15772383",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "4defb3a3f691c68f208321606be7365711161d43b923dd55e6a8b32ff29cacdc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "bed3e0b15911f651253ed3f99964e08aa6e75a5f7d57acf288279b99eb358840",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared the 2023 legacy-service shutdown, GA4 migration, minimum property access, consent and data-use terms, ranking configuration, publishing, Hugo embedding, refresh caveats, and crawler scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for Google Analytics 4/GA4, property, Viewer role, Ranklet4, legacy Ranklet, JavaScript widget, Handlebars template, Hugo partial, crawler, and privacy terms."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the Handlebars ranking-loop example and Hugo partial invocation for template syntax and consistency with the official Ranklet4 guide. No Ranklet account, analytics property, or production embed was configured."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the shutdown/migration, tutorial, template, FAQ, terms, privacy, and current service routes with Ranklet4's official documentation and site."
+        }
+      },
+      "summary": "Replaced the discontinued Universal Analytics-era Ranklet guide with current GA4 Ranklet4 setup for Hugo, including least-privileged access, third-party data-use terms, current Handlebars examples, a generated widget tag, and update/privacy caveats.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Ranklet4 account, GA4 property, authorization flow, or live widget was accessed or configured.",
+        "Ranklet4 features, menus, pricing, update frequency, and terms may change; check the current official pages before deployment."
+      ]
+    }
+  }
+}

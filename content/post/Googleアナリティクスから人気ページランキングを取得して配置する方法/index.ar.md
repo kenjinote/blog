@@ -1,165 +1,69 @@
 ---
-title: 'كيفية عرض ترتيب المقالات الشهيرة من إحصاءات Google باستخدام Ranklet'
-date: "2026-09-24T19:44:38+09:00"
-slug: "تحليلات جوجلから人気ページランキングを取得して配置する方法"
+title: 'عرض ترتيب صفحات GA4 الشائعة في Hugo باستخدام Ranklet4'
 date: 2023-04-10T20:26:57+09:00
+lastmod: 2026-11-23
+
+
+
+
+slug: "تحليلات جوجلから人気ページランキングを取得して配置する方法"
 tags: ["تحليلات جوجل", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'نشرح كيفية استخدام خدمة ''Ranklet'' التي تتيح لك بسهولة وبشكل تلقائي عرض ترتيب الصفحات الشهيرة لموقعك من خلال الربط مع Google Analytics. بأخذ مدونة HUGO كمثال، نقدم خطوات الإعداد وطرق تخصيص قوالب HTML/CSS.'
+description: 'استخدم Ranklet4، البديل المتوافق مع GA4 لأداة Ranklet المتوقفة، لإضافة ترتيب للصفحات الشائعة إلى Hugo. يشرح الدليل الانتقال والأذونات والقوالب واعتبارات الخدمات الخارجية.'
 ---
 
-## مقدمة
+# عرض ترتيب صفحات GA4 الشائعة في Hugo باستخدام Ranklet4
 
-باستخدام خدمة تسمى **Ranklet** ، يمكنك بسهولة الحصول على ترتيب الصفحات الشائعة من Google Analytics ووضعه.
+كانت التعليمات القديمة تستخدم طرق عرض Google Analytics وأداة Ranklet القديمة. توقفت خدمة Ranklet السابقة في عام 2023. استبدل العلامة القديمة بعلامة جديدة من Ranklet4، وهي خدمة مستقلة متوافقة مع GA4. راجع [إشعار الانتقال الرسمي](https://docs.ranklet4.com/changes.html).
 
-في هذه المقالة، سأوضح لك كيفية وضعه في مدونة HUGO.
+يجمع Ranklet4 بيانات تقارير GA4 ويعرض الترتيب كأداة JavaScript، بما في ذلك المواقع الثابتة مثل Hugo. قد تتغير القوائم والخطط؛ اتبع [الدليل الرسمي الحالي](https://docs.ranklet4.com/tutorial.html).
 
-## صورة للعمل
+## قبل البدء
 
-![img_1.png](img_1.webp)
+* تحتاج إلى موقع GA4 يسجل زيارات موقعك.
+* يجب أن يمتلك حساب Google المستخدم لتسجيل الدخول دور **مشاهد** على الأقل في الموقع. لا حاجة إلى حساب مشرف.
+* سيحصل Ranklet4 على إمكانية الوصول إلى بيانات Google Analytics. تمنح الشروط ترخيصاً واسعاً لاستخدام البيانات التحليلية ونسخها وتوزيعها وإنشاء أعمال مشتقة منها وعرضها وتشغيلها، كما تسمح باستخدام المعلومات الإحصائية التي لا تحدد هوية الأفراد ونشرها. قبل الربط، اقرأ [شروط الخدمة](https://docs.ranklet4.com/agreement.html) و[سياسة الخصوصية](https://ranklet4.com/docs/privacy) وتأكد من حقك في مشاركة هذه البيانات.
 
-## التحضير
-- يجب إعداد Google Analytics في الموقع
+## إنشاء الترتيب ونشره
 
-## الخطوات
+1. سجّل الدخول إلى [Ranklet4](https://ranklet4.com/) بحساب يمكنه عرض موقع GA4 المطلوب. راجع الأذونات المطلوبة قبل منحها.
+2. أنشئ ترتيباً وحدد موقع GA4 وفترة التقرير وعدد العناصر. أضف عوامل تصفية للعنوان أو الرابط لاستبعاد صفحات مثل الصفحة الرئيسية عند الحاجة.
+3. اضبط استبدال نص العناوين اختيارياً، ثم تحقق من النتائج في المعاينة.
+4. اختر قالباً من معرض التصميم أو خصص HTML/CSS. تستخدم القوالب الجديدة Handlebars؛ راجع [دليل القوالب](https://docs.ranklet4.com/template.html) لمعرفة الحقول والصياغة.
+5. احفظ الترتيب وانشره، ثم انسخ العلامة التي أنشأتها لوحة التحكم. لا تستخدم علامة أو معرّف Ranklet القديم.
 
-1. قم بالوصول إلى **Ranklet**
-2. انقر فوق **Sign in with Google** لتسجيل الدخول بحساب Google (يجب أن يكون مرتبطًا بحساب Google Analytics)
-![img_2.png](img_2.webp)
+مثال مبسط لقالب HTML. راجع الدليل الرسمي للحقول وصياغة التكرار المدعومة.
 
-انقر فوق **السماح**
-
-3. قم بتعيين المعلومات الأساسية
-
-![img_3.png](img_3.webp)
-لقد قمت بإعداده كما هو موضح أعلاه.
-
-- في **Google Analytics View** حدد العرض الذي تريد الحصول على الترتيب له.
-
-4. قم بتعيين استبدال النص
-
-![img_4.png](img_4.webp)
-لقد قمت بإعداده كما هو موضح أعلاه.
-تم تعيين هذا لإزالة ` | kenji.blog` من عنوان الصفحة.
-
-5. قم بتعيين القالب
-
-- HTML (تم إخفاء أرقام الترتيب)
-
-```
-<div class="ranklet ranklet-reset">
-    <table class="ranklet-table">
-        <tbody class="ranklet-pages">
-            {{#context.pages}}
-            <tr class="ranklet-page">
-                <td class="ranklet-image">
-                    {{#image}}
-                    <a href="{{url}}" class="ranklet-link">
-                        <img class="ranklet-img" src="{{image}}" />
-                    </a>
-                    {{/image}}
-                </td>
-                <td class="ranklet-meta">
-                    <div class="ranklet-title">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{title}}
-                        </a>
-                    </div>
-                    {{#description}}
-                    <div class="ranklet-description">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{description}}
-                        </a>
-                    </div>
-                    {{/description}}
-                </td>
-            </tr>
-            {{/context.pages}}
-        </tbody>
-    </table>
-</div>
+```handlebars
+<ol class="popular-pages">
+  {{#each rankings}}
+  <li><a href="{{url}}">{{title}}</a></li>
+  {{/each}}
+</ol>
 ```
 
-- CSS (تم تغيير حجم الخط، وسيتم عرض الوصف في 3 أسطر)
+## إضافته إلى Hugo
 
-```
-#ranklet-{{context.id}} {
-    .ranklet-reset { // リセット
-        table, tr, td, div, span {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-            line-height: 1;
-            box-sizing: border-box;
-        }
-    }
+1. أنشئ `layouts/partials/ranklet4.html` والصق علامة الترتيب الكاملة التي أنشأها Ranklet4.
+2. أضف استدعاء Hugo التالي إلى القالب الذي تريد عرض الترتيب فيه، مثل `layouts/_default/single.html` أو جزء الشريط الجانبي:
 
-    .ranklet-table {
-        border-collapse: separate;
-        border-spacing: 8px 24px;
-        width: 100%;
-        word-break: break-all;
-
-        td {
-            vertical-align: middle;
-        }
-
-        .ranklet-rank {
-            text-align: center;
-            font-size: 120%;
-        }
-
-        .ranklet-image {
-            text-align: center;
-            img {
-                max-width: 128px;
-                max-height: 128px;
-            }
-        }
-
-        .ranklet-meta {
-            .ranklet-title {
-                font-size: 20px;
-                line-height: 125%;
-            }
-
-            .ranklet-description {
-                font-size: 16px;
-                margin-top: 8px;
-                line-height: 125%;
-                display: -webkit-box;
-                overflow: hidden;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3; /* 行数 */
-            }
-        }
-    }
-}
+```go-html-template
+{{- partial "ranklet4.html" . }}
 ```
 
-- لم يتم تغيير JavaScript
+3. اعرض الصفحة محلياً، وبعد النشر تحقق من تحميل الأداة عبر HTTPS. فهي تعتمد على JavaScript تابع لجهة خارجية؛ راعِ سرعة الصفحة وإشعارات الخصوصية وسياسة أمان الموقع.
 
-6. انسخ HTML من النشر على الموقع
+## التحديث والانتقال
 
-![img_5.png](img_5.webp)
+يعتمد الترتيب على تقارير GA4 وجدول تحديث Ranklet4، لذلك قد لا تتغير النتائج فور حدوث زيارة. قد تتغير وتيرة التحديث وميزات الخطط والاعتمادات وسياسات الإعلانات؛ راجع [الخطة الحالية](https://docs.ranklet4.com/plan.html). يقرأ زاحف Ranklet4 معلومات الصفحات العامة؛ راجع [الأسئلة الشائعة](https://docs.ranklet4.com/faq.html).
 
-انسخ HTML المعروض
+## مراجع رسمية
 
-7. الصقه في قالب HUGO
-
-- قم بإنشاء `layouts/partials/ranklet.html` والصق HTML المنسوخ
-```
-<div id="ranklet-11958"></div><script src="//widget.ranklet.com/v1/ranklet/s3/widgets/11958/widget.js"></script>
-```
-
-- الصق الرمز أدناه في السطر الذي يسبق `</footer>` في `layouts/_default/single.html`
-```
-{{- partial "ranklet.html" . }}
-```
-
-هذا كل شيء. سيتم عرض الترتيب في أسفل هذه الصفحة كما هو موضح أدناه.
+* [البرنامج التعليمي الرسمي لـ Ranklet4](https://docs.ranklet4.com/tutorial.html)
+* [التغييرات عن Ranklet القديم](https://docs.ranklet4.com/changes.html)
+* [دليل قوالب Ranklet4](https://docs.ranklet4.com/template.html)
+* [الأسئلة الشائعة لـ Ranklet4](https://docs.ranklet4.com/faq.html)
+* [شروط Ranklet4](https://docs.ranklet4.com/agreement.html)
+* [سياسة خصوصية Ranklet4](https://ranklet4.com/docs/privacy)

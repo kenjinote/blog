@@ -1,165 +1,69 @@
 ---
-title: 'Comment afficher le classement des articles populaires de Google Analytics avec Ranklet'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google Analyticsから人気ページランキングを取得して配置する方法"
+title: 'Afficher dans Hugo un classement des pages GA4 avec Ranklet4'
 date: 2023-04-10T20:26:57+09:00
+lastmod: 2026-11-23
+
+
+
+
+slug: "Google Analyticsから人気ページランキングを取得して配置する方法"
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Nous expliquons comment utiliser « Ranklet », un service qui se synchronise avec Google Analytics et permet d''afficher automatiquement et facilement le classement des pages populaires de votre site. En prenant un blog HUGO comme exemple, nous présentons la procédure de configuration et les méthodes de personnalisation des modèles HTML/CSS.'
+description: 'Utilisez Ranklet4, successeur GA4 du widget Ranklet arrêté, pour afficher dans Hugo un classement des pages populaires. Ce guide présente la migration, les autorisations, les modèles et les précautions liées aux services tiers.'
 ---
 
-## Introduction
+# Afficher dans Hugo un classement des pages GA4 avec Ranklet4
 
-En utilisant un service appelé `Ranklet`, vous pouvez facilement récupérer le classement des pages populaires depuis Google Analytics et l'intégrer sur votre site.
+L'ancienne procédure utilisait les vues Google Analytics et l'ancien widget Ranklet. Ce service a pris fin en 2023. Remplacez son ancienne balise par une nouvelle balise Ranklet4, un service distinct compatible avec GA4. Consultez l'[avis officiel de migration](https://docs.ranklet4.com/changes.html).
 
-Dans cet article, nous allons vous présenter comment l'intégrer sur un blog HUGO.
+Ranklet4 agrège les données de rapports GA4 et diffuse le classement sous forme de widget JavaScript, y compris sur un site statique comme Hugo. Les menus et les offres peuvent évoluer ; suivez le [tutoriel officiel](https://docs.ranklet4.com/tutorial.html).
 
-## Aperçu du fonctionnement
+## Avant de commencer
 
-![img_1.png](img_1.webp)
+* Vous devez disposer d'une propriété GA4 qui enregistre les visites du site.
+* Le compte Google utilisé pour la connexion doit avoir au moins le rôle **Lecteur** sur cette propriété. Un compte administrateur n'est pas nécessaire.
+* Ranklet4 aura accès aux données Google Analytics. Les conditions accordent une licence étendue pour utiliser, copier, distribuer, créer des œuvres dérivées, afficher et exécuter ces données ; elles autorisent aussi l'utilisation et la publication de statistiques non identifiantes. Avant la connexion, lisez les [conditions](https://docs.ranklet4.com/agreement.html), la [politique de confidentialité](https://ranklet4.com/docs/privacy) et vérifiez que vous avez le droit de partager ces données.
 
-## Préparation
-- Avoir configuré Google Analytics sur votre site
+## Créer et publier un classement
 
-## Étapes
+1. Connectez-vous à [Ranklet4](https://ranklet4.com/) avec un compte pouvant consulter la propriété GA4 visée. Vérifiez les autorisations demandées avant de les accorder.
+2. Créez un classement, puis sélectionnez la propriété GA4, la période d'analyse et le nombre d'entrées. Ajoutez des filtres sur le titre ou l'URL pour exclure, par exemple, la page d'accueil.
+3. Si nécessaire, configurez le remplacement de texte des titres et vérifiez le résultat dans l'aperçu.
+4. Choisissez un modèle dans la galerie ou personnalisez le HTML/CSS. Les nouveaux modèles utilisent Handlebars ; consultez le [guide des modèles](https://docs.ranklet4.com/template.html) pour les champs et la syntaxe.
+5. Enregistrez et publiez le classement, puis copiez la balise générée dans l'interface. Ne réutilisez pas l'ancienne balise ou l'ancien identifiant Ranklet.
 
-1. Accédez à `Ranklet`
-2. Cliquez sur `Sign in with Google` pour vous connecter avec votre compte Google (celui-ci doit être associé à votre compte Google Analytics)
-![img_2.png](img_2.webp)
+Exemple minimal de modèle HTML. Consultez le guide officiel pour connaître les champs et la syntaxe de boucle pris en charge.
 
-Cliquez sur `Autoriser` (`許可`)
-
-3. Configurez les informations de base
-
-![img_3.png](img_3.webp)
-La configuration a été effectuée comme indiqué ci-dessus.
-
-- Dans `Vue Google Analytics` (`Google Analytics ビュー`), sélectionnez la vue dont vous souhaitez obtenir le classement.
-
-4. Configurez le remplacement de texte
-
-![img_4.png](img_4.webp)
-La configuration a été effectuée comme indiqué ci-dessus.
-Ce paramètre est défini pour supprimer ` | kenji.blog` du titre de la page.
-
-5. Configurez le modèle
-
-- HTML (les numéros de classement ont été masqués)
-
-```html
-<div class="ranklet ranklet-reset">
-    <table class="ranklet-table">
-        <tbody class="ranklet-pages">
-            {{#context.pages}}
-            <tr class="ranklet-page">
-                <td class="ranklet-image">
-                    {{#image}}
-                    <a href="{{url}}" class="ranklet-link">
-                        <img class="ranklet-img" src="{{image}}" />
-                    </a>
-                    {{/image}}
-                </td>
-                <td class="ranklet-meta">
-                    <div class="ranklet-title">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{title}}
-                        </a>
-                    </div>
-                    {{#description}}
-                    <div class="ranklet-description">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{description}}
-                        </a>
-                    </div>
-                    {{/description}}
-                </td>
-            </tr>
-            {{/context.pages}}
-        </tbody>
-    </table>
-</div>
+```handlebars
+<ol class="popular-pages">
+  {{#each rankings}}
+  <li><a href="{{url}}">{{title}}</a></li>
+  {{/each}}
+</ol>
 ```
 
-- CSS (la taille de police a été modifiée et la description s'affiche sur 3 lignes)
+## L'ajouter à Hugo
 
-```css
-#ranklet-{{context.id}} {
-    .ranklet-reset { // Réinitialisation
-        table, tr, td, div, span {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-            line-height: 1;
-            box-sizing: border-box;
-        }
-    }
+1. Créez `layouts/partials/ranklet4.html` et collez-y la balise exacte générée par Ranklet4.
+2. Ajoutez cet appel Hugo au modèle où vous voulez afficher le classement, par exemple dans `layouts/_default/single.html` ou un partial de barre latérale :
 
-    .ranklet-table {
-        border-collapse: separate;
-        border-spacing: 8px 24px;
-        width: 100%;
-        word-break: break-all;
-
-        td {
-            vertical-align: middle;
-        }
-
-        .ranklet-rank {
-            text-align: center;
-            font-size: 120%;
-        }
-
-        .ranklet-image {
-            text-align: center;
-            img {
-                max-width: 128px;
-                max-height: 128px;
-            }
-        }
-
-        .ranklet-meta {
-            .ranklet-title {
-                font-size: 20px;
-                line-height: 125%;
-            }
-
-            .ranklet-description {
-                font-size: 16px;
-                margin-top: 8px;
-                line-height: 125%;
-                display: -webkit-box;
-                overflow: hidden;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3; /* Nombre de lignes */
-            }
-        }
-    }
-}
+```go-html-template
+{{- partial "ranklet4.html" . }}
 ```
 
-- Aucun changement pour JavaScript
+3. Prévisualisez la page en local, puis vérifiez après publication que le widget se charge en HTTPS. Il dépend d'un JavaScript tiers : tenez compte du temps de chargement, des informations de confidentialité et de la sécurité du site.
 
-6. Copiez le code HTML depuis « Publier sur le site »
+## Actualisation et migration
 
-![img_5.png](img_5.webp)
+Le classement dépend des rapports GA4 et du calendrier de mise à jour Ranklet4 ; une visite ne modifie donc pas forcément le résultat immédiatement. La fréquence, les fonctions des offres, les crédits et les règles publicitaires peuvent changer. Consultez les [offres actuelles](https://docs.ranklet4.com/plan.html). Le robot Ranklet4 lit les informations des pages publiques ; voir la [FAQ](https://docs.ranklet4.com/faq.html).
 
-Copiez le code HTML affiché
+## Références officielles
 
-7. Collez-le dans le modèle HUGO
-
-- Créez `layouts/partials/ranklet.html` et collez-y le code HTML copié
-```html
-<div id="ranklet-11958"></div><script src="//widget.ranklet.com/v1/ranklet/s3/widgets/11958/widget.js"></script>
-```
-
-- Collez le code suivant sur la ligne précédant `</footer>` dans `layouts/_default/single.html`
-```html
-{{- partial "ranklet.html" . }}
-```
-
-C'est tout. Le classement s'affichera désormais comme au bas de cette page.
+* [Tutoriel officiel Ranklet4](https://docs.ranklet4.com/tutorial.html)
+* [Changements depuis l'ancien Ranklet](https://docs.ranklet4.com/changes.html)
+* [Guide des modèles Ranklet4](https://docs.ranklet4.com/template.html)
+* [FAQ Ranklet4](https://docs.ranklet4.com/faq.html)
+* [Conditions d'utilisation Ranklet4](https://docs.ranklet4.com/agreement.html)
+* [Politique de confidentialité Ranklet4](https://ranklet4.com/docs/privacy)

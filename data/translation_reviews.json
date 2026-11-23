@@ -9005,6 +9005,246 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-077.json",
       "evidenceHash": "52544a818909fcf28ec1a89a1e3246ea4d6344b5fcf9a52dec5a4f90c2815653"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.en.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "182fbe262a515df3e53fec389a9d9cde099a06e101f0b982a575ec1640461cb1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "89712a493257ccfe09ca67974c0bc91bf1324010005153a99bb895612296d872"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.de.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "bc7aab78edca768f112a78e4710d866fef6050e34194828cec3666ef53faaf57",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "f64f70ea3bcb49803b5c6f4ef5b6614dcc56092a5848fe91dabc5393f7c5a4f1"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.es.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "8703555822049352993a2e980c8945b6bda84aa9e9ea49418c5b35564fe76799",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "f6b8f61735644cbcc65a24f068abbda729f2ec00f90fad55229bdc36cba10729"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.fr.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "3206dfd3cfe910f0a93f497f39200b7d68f2ba202c869f1599ada4bb1bbea75c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "f3ad72e9f050e4183715287806ddb231090a14efb9be9846c814be5a27c8950e"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.pt.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "ab4763852df7a3c39b8ee259961ce63fbb794d787adf67a5229e2329033a6cd6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "0d214969ea60d5df95591bc797b6d32813ad027e405807dfc093664d23dbbd03"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.ru.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "a0cde8d86eedcdc358b50a813ebed3dc2f9551108913206088a2e7f9453913d5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "46a5864b890bf271fc20177543f702db203e4a15699d7f8eac651e12674ccc2f"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.id.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "82d5d018d7592261aa282f8b923e23f6fab6b0b0615174871680e4e7b8536ff3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "44b3a6a5b5c671976ac781bf326e1e7a04258b2b672e362f73b41b56a6a5e7e1"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.ko.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "b9449e1647d5fbebf62d44b8969a6e47b5005f55d26ade5f0f1a2ec501b9dd73",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "15f5cf76ed9625bc34fa35e8ec8d8dc0c0afe3bb05cbd235133c48cd83a6f7a5"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.zh-cn.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "6c4ba5af8304b507062794a479c2cc9ec617b36a96a038a2b86c4de35ef68a5f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "88f2e7eb0c990c4a1fa39d3cde1cfe0bb2c7127adccd1b36c21985ee3acec491"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.zh-tw.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "c2b2c5ec8a7f55ce69035c7d4110635e0464c6100e034a6f1132b0a365fbf493",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "f8d9a18d5808a09b980e4f9a4e3da4336fac8b51af34f8650a03a8dde2070bf5"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.hi.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "07945a0daf4a4a9293ec519d963f82e308dad4959f7359a91b3e1f7b70b95205",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "1c90cdc5eb3420f622a790c2c8d8ad4db9a407405b060357ff9bafa90d77b107"
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.ar.md": {
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "631c063e966e161aa6858e160db3163ff4b216efd75e0fd62963345dfc759fe3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-078.json",
+      "evidenceHash": "2dac1e632d55845ac6f1e63626df148497417ae58db491c9813a9a9094dbd80c"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.en.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "15578271337e0802f1d6a88628e3efadabb5baf07ae3629dc4546fdb94652747",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "d13ff6ef2cc53434799d83d7fd9a257506f7a9e2c07d9252397db26311ce9108"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.de.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "b200a39370b4048f5bec6f81c1213840a7a8f979bb46aa914f40baae89798ef3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "1366269dec442d0bcef690f9c702b51029414ed2639cfdf868fa34fe96a5b7e6"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.es.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "df1ac63a16d661b2b038548d37e9a511a7bf746d8d443ccd9d2dd16fe41089bc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "afdccf928151f210d9385fc6d1c968704487725bc8cabed0e5b79d5c171f0f15"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.fr.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "8478d8e34786343973f85d1ce087dcd1fb5faab20f2481085ace441d819ae0bd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "d7b73fb2d6863429d81a5d089c46598f6ba5ee64ec3b8de442d32f7dac29402d"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.pt.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "207844c939859ef1e14f9fb07f952acb04ef5ea8cf31cad844c6f1e259d70ebf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "80fec8d8821f0ea498583fb34c045a6e1aa42a135e5899530fca313c6a05c218"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.ru.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "4e0e9047cb29fb35ffdcd4a46d4ab9dbbe1be5a2bd27de118aef082787bdaed3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "e89fb16622d91cafae7c7c4044458256cd2c48d63c184dfbf952781648a19e93"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.id.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "1536e0b7c988644370a9867c05a5473f68de298c46f11857081bd0524f65bd46",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "a36c3f0978e1474235191f068ce1a20a4d468ad076fc6fdba7976664b2c0e901"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.ko.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "d470847e108b42c2c04e4ce33fdb4ef2a6f47ea14844984e9266f96c30301d73",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "31cdc71275e7e2f3e5415a07b4a01ae1100c0cae1ead8714433f222d25e409a6"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.zh-cn.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "3806b63c5e9596b9b056955279995f0dab5c676cd340ef9e174fb3ac1ea01a76",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "3ebf3d558e47d051068ce2ff1f320e098f072a420e73a8bc57a51c0fe6772cdb"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.zh-tw.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "6ad27e996c8e94480039e75fd309c183a52b0560928e0218967bc87e15772383",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "ea12e30333e15ef8ff747e6800c2a63de8e1c4f9b4091af96c2f2923e2d1e647"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.hi.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "4defb3a3f691c68f208321606be7365711161d43b923dd55e6a8b32ff29cacdc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "b63f9e23ca8b0b89bd34efc62463aedb72efb9fa2f1279c13f9a6859e7123106"
+    },
+    "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.ar.md": {
+      "source": "post/Googleアナリティクスから人気ページランキングを取得して配置する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "translationHash": "bed3e0b15911f651253ed3f99964e08aa6e75a5f7d57acf288279b99eb358840",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-079.json",
+      "evidenceHash": "6e08e452ec0c1499456a932ab1f8d7884ff3f02319109402b1b0c6685ed8c59f"
     }
   }
 }

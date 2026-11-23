@@ -1,165 +1,69 @@
 ---
-title: 'Как отобразить рейтинг популярных статей из Google Analytics с помощью Ranklet'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google Аналитикаから人気ページランキングを取得して配置する方法"
+title: 'Как показать рейтинг популярных страниц GA4 в Hugo с Ranklet4'
 date: 2023-04-10T20:26:57+09:00
+lastmod: 2026-11-23
+
+
+
+
+slug: "Google Аналитикаから人気ページランキングを取得して配置する方法"
 tags: ["Google Аналитика", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Объясняется, как использовать «Ranklet» — сервис, который легко и автоматически отображает рейтинг популярных страниц вашего сайта, интегрируясь с Google Analytics. На примере блога HUGO представлены шаги настройки и способы кастомизации шаблонов HTML/CSS.'
+description: 'Добавьте в Hugo рейтинг популярных страниц с помощью Ranklet4 — сервиса для GA4, пришедшего на смену закрытому виджету Ranklet. Рассмотрены перенос, разрешения, шаблоны и использование стороннего сервиса.'
 ---
 
-## Введение
+# Как показать рейтинг популярных страниц GA4 в Hugo с Ranklet4
 
-Используя сервис под названием **Ranklet** , вы можете легко получить и разместить рейтинг популярных страниц из Google Analytics.
+В старой инструкции использовались представления Google Analytics и виджет прежнего Ranklet. Этот сервис прекратил работу в 2023 году. Замените старый тег новым тегом Ranklet4 — отдельного сервиса, совместимого с GA4. См. [официальное уведомление о переходе](https://docs.ranklet4.com/changes.html).
 
-В этой статье я расскажу, как разместить его в блоге HUGO.
+Ranklet4 агрегирует данные отчетов GA4 и показывает рейтинг через виджет JavaScript, в том числе на статических сайтах вроде Hugo. Меню и тарифы могут меняться; ориентируйтесь на [официальное руководство](https://docs.ranklet4.com/tutorial.html).
 
-## Пример работы
+## Перед началом
 
-![img_1.png](img_1.webp)
+* Нужен ресурс GA4, который собирает посещения сайта.
+* У аккаунта Google для входа должна быть как минимум роль **Читатель** в этом ресурсе. Учетная запись администратора не требуется.
+* Ranklet4 получит доступ к данным Google Analytics. Условия предоставляют широкую лицензию на использование, копирование, распространение, создание производных материалов, отображение и исполнение аналитических данных; также разрешено использовать и публиковать статистику, не позволяющую установить личность. До подключения прочитайте [условия](https://docs.ranklet4.com/agreement.html) и [политику конфиденциальности](https://ranklet4.com/docs/privacy) и проверьте, вправе ли вы передавать эти данные.
 
-## Подготовка
-- Google Analytics должен быть настроен на сайте
+## Создание и публикация рейтинга
 
-## Шаги
+1. Войдите в [Ranklet4](https://ranklet4.com/) с аккаунтом, которому доступен целевой ресурс GA4. Перед предоставлением доступа проверьте запрашиваемые разрешения.
+2. Создайте рейтинг, выберите ресурс GA4, период отчета и число строк. Настройте фильтры по заголовку или URL, например исключите главную страницу.
+3. При необходимости настройте замену текста в заголовках и проверьте результат в предварительном просмотре.
+4. Выберите дизайн из галереи или измените шаблон HTML/CSS. Новые шаблоны используют Handlebars; поля и синтаксис см. в [руководстве по шаблонам](https://docs.ranklet4.com/template.html).
+5. Сохраните и опубликуйте рейтинг, затем скопируйте созданный в панели тег. Не используйте старый тег или идентификатор Ranklet повторно.
 
-1. Перейдите в **Ranklet**
-2. Нажмите **Sign in with Google** , чтобы войти с помощью учетной записи Google (должна быть привязана к учетной записи Google Analytics)
-![img_2.png](img_2.webp)
+Минимальный пример HTML-шаблона. Поддерживаемые поля и цикл указаны в официальном руководстве.
 
-Нажмите **Разрешить**
-
-3. Настройте основную информацию
-
-![img_3.png](img_3.webp)
-Я настроил, как показано выше.
-
-- В **Google Analytics View** выберите представление, для которого вы хотите получить рейтинг.
-
-4. Настройте замену текста
-
-![img_4.png](img_4.webp)
-Я настроил, как показано выше.
-Это настроено для удаления ` | kenji.blog` из заголовка страницы.
-
-5. Настройте шаблон
-
-- HTML (числа рейтинга скрыты)
-
-```
-<div class="ranklet ranklet-reset">
-    <table class="ranklet-table">
-        <tbody class="ranklet-pages">
-            {{#context.pages}}
-            <tr class="ranklet-page">
-                <td class="ranklet-image">
-                    {{#image}}
-                    <a href="{{url}}" class="ranklet-link">
-                        <img class="ranklet-img" src="{{image}}" />
-                    </a>
-                    {{/image}}
-                </td>
-                <td class="ranklet-meta">
-                    <div class="ranklet-title">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{title}}
-                        </a>
-                    </div>
-                    {{#description}}
-                    <div class="ranklet-description">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{description}}
-                        </a>
-                    </div>
-                    {{/description}}
-                </td>
-            </tr>
-            {{/context.pages}}
-        </tbody>
-    </table>
-</div>
+```handlebars
+<ol class="popular-pages">
+  {{#each rankings}}
+  <li><a href="{{url}}">{{title}}</a></li>
+  {{/each}}
+</ol>
 ```
 
-- CSS (изменен размер шрифта, описание будет отображаться в 3 строки)
+## Установка в Hugo
 
-```
-#ranklet-{{context.id}} {
-    .ranklet-reset { // リセット
-        table, tr, td, div, span {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-            line-height: 1;
-            box-sizing: border-box;
-        }
-    }
+1. Создайте файл `layouts/partials/ranklet4.html` и вставьте в него тег, созданный Ranklet4.
+2. Добавьте вызов partial в шаблон, где нужен рейтинг, например в `layouts/_default/single.html` или partial боковой панели:
 
-    .ranklet-table {
-        border-collapse: separate;
-        border-spacing: 8px 24px;
-        width: 100%;
-        word-break: break-all;
-
-        td {
-            vertical-align: middle;
-        }
-
-        .ranklet-rank {
-            text-align: center;
-            font-size: 120%;
-        }
-
-        .ranklet-image {
-            text-align: center;
-            img {
-                max-width: 128px;
-                max-height: 128px;
-            }
-        }
-
-        .ranklet-meta {
-            .ranklet-title {
-                font-size: 20px;
-                line-height: 125%;
-            }
-
-            .ranklet-description {
-                font-size: 16px;
-                margin-top: 8px;
-                line-height: 125%;
-                display: -webkit-box;
-                overflow: hidden;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3; /* 行数 */
-            }
-        }
-    }
-}
+```go-html-template
+{{- partial "ranklet4.html" . }}
 ```
 
-- JavaScript без изменений
+3. Проверьте страницу локально и после публикации убедитесь, что виджет загружается по HTTPS. Он использует сторонний JavaScript; учитывайте скорость, уведомление о конфиденциальности и политику безопасности сайта.
 
-6. Скопируйте HTML из публикации на сайте
+## Обновление и переход
 
-![img_5.png](img_5.webp)
+Рейтинг зависит от отчетов GA4 и расписания обновления Ranklet4, поэтому новый визит не обязательно сразу меняет порядок. Частота обновления, функции тарифов, кредиты и правила рекламы могут измениться; см. [действующие тарифы](https://docs.ranklet4.com/plan.html). Сканер Ranklet4 получает данные публичных страниц; подробности есть в [FAQ](https://docs.ranklet4.com/faq.html).
 
-Скопируйте отображаемый HTML
+## Официальные источники
 
-7. Вставьте в шаблон HUGO
-
-- Создайте `layouts/partials/ranklet.html` и вставьте скопированный HTML
-```
-<div id="ranklet-11958"></div><script src="//widget.ranklet.com/v1/ranklet/s3/widgets/11958/widget.js"></script>
-```
-
-- Вставьте приведенный ниже код в строку перед `</footer>` в `layouts/_default/single.html`
-```
-{{- partial "ranklet.html" . }}
-```
-
-На этом все. Рейтинг будет отображаться в нижней части этой страницы, как показано ниже.
+* [Официальное руководство Ranklet4](https://docs.ranklet4.com/tutorial.html)
+* [Изменения по сравнению со старым Ranklet](https://docs.ranklet4.com/changes.html)
+* [Руководство по шаблонам Ranklet4](https://docs.ranklet4.com/template.html)
+* [Вопросы и ответы Ranklet4](https://docs.ranklet4.com/faq.html)
+* [Условия Ranklet4](https://docs.ranklet4.com/agreement.html)
+* [Политика конфиденциальности Ranklet4](https://ranklet4.com/docs/privacy)

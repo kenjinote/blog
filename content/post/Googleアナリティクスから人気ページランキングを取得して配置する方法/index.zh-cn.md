@@ -1,165 +1,69 @@
 ---
-title: '使用Ranklet显示Google Analytics热门文章排行榜的方法'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google分析から人気ページランキングを取得して配置する方法"
+title: '使用 Ranklet4 在 Hugo 中显示 GA4 热门页面排名'
 date: 2023-04-10T20:26:57+09:00
+lastmod: 2026-11-23
+
+
+
+
+slug: "Google分析から人気ページランキングを取得して配置する方法"
 tags: ["Google Analytics", "Ranklet", "HUGO"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: '本文讲解如何使用可与Google Analytics关联，轻松自动显示网站热门页面排行榜的服务“Ranklet”。以HUGO博客为例，介绍设置步骤和HTML/CSS模板的自定义方法。'
+description: '使用面向 GA4、接替已停用 Ranklet 小组件的 Ranklet4，在 Hugo 中添加热门页面排名。本文介绍迁移、权限、模板以及使用第三方服务时的注意事项。'
 ---
 
-## 简介
+# 使用 Ranklet4 在 Hugo 中显示 GA4 热门页面排名
 
-使用名为 `Ranklet` 的服务，您可以从 Google Analytics 中获取热门页面排行榜并轻松进行配置。
+旧教程使用 Google Analytics 视图和旧版 Ranklet 小组件。旧 Ranklet 服务已于 2023 年结束。请将旧标签替换为 GA4 专用独立服务 Ranklet4 生成的新标签。请参阅[官方迁移说明](https://docs.ranklet4.com/changes.html)。
 
-本文将介绍如何在 HUGO 博客中进行配置。
+Ranklet4 汇总 GA4 报告数据，并通过 JavaScript 小组件提供排名，也支持 Hugo 等静态网站。菜单和方案可能变化，请以[官方教程](https://docs.ranklet4.com/tutorial.html)为准。
 
-## 运行效果
+## 开始前
 
-![img_1.png](img_1.webp)
+* 网站需要有记录访问数据的 GA4 媒体资源。
+* 用于登录的 Google 账号在该媒体资源中至少需要**查看者**权限，无需使用管理员账号。
+* Ranklet4 将获得 Google Analytics 数据访问权限。其条款授予广泛许可，可使用、复制、分发、创作衍生作品、展示和执行分析数据；条款还允许使用和发布无法识别个人身份的统计信息。连接前请阅读[服务条款](https://docs.ranklet4.com/agreement.html)和[隐私政策](https://ranklet4.com/docs/privacy)，并确认你有权共享这些数据。
 
-## 准备工作
-- 网站已设置 Google Analytics
+## 创建并发布排名
 
-## 步骤
+1. 使用可查看目标 GA4 媒体资源的账号登录 [Ranklet4](https://ranklet4.com/)。授权前请检查所请求的权限。
+2. 创建排名并选择 GA4 媒体资源、统计周期和显示数量。可按标题或 URL 设置筛选，例如排除首页。
+3. 按需设置标题文字替换，并在预览中确认标题和结果。
+4. 从设计库选择模板，或自定义 HTML/CSS。新模板使用 Handlebars；字段名和语法请查看[模板指南](https://docs.ranklet4.com/template.html)。
+5. 保存并发布，然后复制管理页面生成的排名标签。不要继续使用旧 Ranklet 标签或 ID。
 
-1. 访问 `Ranklet`
-2. 点击 `Sign in with Google`，使用 Google 账号登录（需与 Google Analytics 账号绑定）
-![img_2.png](img_2.webp)
+以下是最小 HTML 模板示例。支持的字段和循环语法请参阅官方指南。
 
-点击 `允许`
-
-3. 设置基本信息
-
-![img_3.png](img_3.webp)
-如上图所示进行了设置。
-
-- 在 `Google Analytics ビュー`（Google Analytics 视图）中，选择要获取排行榜的视图。
-
-4. 设置文本替换
-
-![img_4.png](img_4.webp)
-如上图所示进行了设置。
-设置目的是删除页面标题中的 ` | kenji.blog`。
-
-5. 设置模板
-
-- HTML（隐藏了排行榜的数字）
-
-```
-<div class="ranklet ranklet-reset">
-    <table class="ranklet-table">
-        <tbody class="ranklet-pages">
-            {{#context.pages}}
-            <tr class="ranklet-page">
-                <td class="ranklet-image">
-                    {{#image}}
-                    <a href="{{url}}" class="ranklet-link">
-                        <img class="ranklet-img" src="{{image}}" />
-                    </a>
-                    {{/image}}
-                </td>
-                <td class="ranklet-meta">
-                    <div class="ranklet-title">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{title}}
-                        </a>
-                    </div>
-                    {{#description}}
-                    <div class="ranklet-description">
-                        <a href="{{url}}" class="ranklet-link">
-                            {{description}}
-                        </a>
-                    </div>
-                    {{/description}}
-                </td>
-            </tr>
-            {{/context.pages}}
-        </tbody>
-    </table>
-</div>
+```handlebars
+<ol class="popular-pages">
+  {{#each rankings}}
+  <li><a href="{{url}}">{{title}}</a></li>
+  {{/each}}
+</ol>
 ```
 
-- CSS（更改了字体大小，使说明文字显示为3行）
+## 添加到 Hugo
 
-```
-#ranklet-{{context.id}} {
-    .ranklet-reset { // 重置
-        table, tr, td, div, span {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-            line-height: 1;
-            box-sizing: border-box;
-        }
-    }
+1. 创建 `layouts/partials/ranklet4.html`，粘贴 Ranklet4 生成的完整排名标签。
+2. 在要显示排名的布局中加入以下 Hugo 调用，例如 `layouts/_default/single.html` 或侧边栏 partial：
 
-    .ranklet-table {
-        border-collapse: separate;
-        border-spacing: 8px 24px;
-        width: 100%;
-        word-break: break-all;
-
-        td {
-            vertical-align: middle;
-        }
-
-        .ranklet-rank {
-            text-align: center;
-            font-size: 120%;
-        }
-
-        .ranklet-image {
-            text-align: center;
-            img {
-                max-width: 128px;
-                max-height: 128px;
-            }
-        }
-
-        .ranklet-meta {
-            .ranklet-title {
-                font-size: 20px;
-                line-height: 125%;
-            }
-
-            .ranklet-description {
-                font-size: 16px;
-                margin-top: 8px;
-                line-height: 125%;
-                display: -webkit-box;
-                overflow: hidden;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3; /* 行数 */
-            }
-        }
-    }
-}
+```go-html-template
+{{- partial "ranklet4.html" . }}
 ```
 
-- JavaScript 保持不变
+3. 在本地预览页面，发布后确认小组件通过 HTTPS 加载。它依赖第三方 JavaScript；请考虑页面速度、隐私声明和网站安全策略。
 
-6. 从网站发布中复制 HTML
+## 更新与迁移注意事项
 
-![img_5.png](img_5.webp)
+排名根据 GA4 报告和 Ranklet4 的更新计划刷新，因此访问发生后排名不一定立即变化。刷新频率、套餐功能、服务积分和广告政策可能会变，请查看[当前方案](https://docs.ranklet4.com/plan.html)。Ranklet4 爬虫会读取公开页面信息，详见[常见问题](https://docs.ranklet4.com/faq.html)。
 
-复制显示的 HTML
+## 官方资料
 
-7. 粘贴到 HUGO 模板中
-
-- 创建 `layouts/partials/ranklet.html`，并粘贴复制的 HTML
-```
-<div id="ranklet-11958"></div><script src="//widget.ranklet.com/v1/ranklet/s3/widgets/11958/widget.js"></script>
-```
-
-- 在 `layouts/_default/single.html` 中的 `</footer>` 前一行粘贴以下代码
-```
-{{- partial "ranklet.html" . }}
-```
-
-以上。这样，页面底部就会像下面这样显示排行榜了。
+* [Ranklet4 官方教程](https://docs.ranklet4.com/tutorial.html)
+* [与旧版 Ranklet 的变化](https://docs.ranklet4.com/changes.html)
+* [Ranklet4 模板指南](https://docs.ranklet4.com/template.html)
+* [Ranklet4 常见问题](https://docs.ranklet4.com/faq.html)
+* [Ranklet4 服务条款](https://docs.ranklet4.com/agreement.html)
+* [Ranklet4 隐私政策](https://ranklet4.com/docs/privacy)

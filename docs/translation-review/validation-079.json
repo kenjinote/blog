@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "article": "Googleアナリティクスから人気ページランキングを取得して配置する方法",
+  "checkedAt": "2026-11-23",
+  "editions": {
+    "index.md": {
+      "sha256": "148b5d5e5c06760b6637896fe6a21821478c6522e86554a8c0b4fdb27b9e10f3",
+      "bytes": 5641
+    },
+    "index.en.md": {
+      "sha256": "15578271337e0802f1d6a88628e3efadabb5baf07ae3629dc4546fdb94652747",
+      "bytes": 4240
+    },
+    "index.de.md": {
+      "sha256": "b200a39370b4048f5bec6f81c1213840a7a8f979bb46aa914f40baae89798ef3",
+      "bytes": 4727
+    },
+    "index.es.md": {
+      "sha256": "df1ac63a16d661b2b038548d37e9a511a7bf746d8d443ccd9d2dd16fe41089bc",
+      "bytes": 4608
+    },
+    "index.fr.md": {
+      "sha256": "8478d8e34786343973f85d1ce087dcd1fb5faab20f2481085ace441d819ae0bd",
+      "bytes": 4731
+    },
+    "index.pt.md": {
+      "sha256": "207844c939859ef1e14f9fb07f952acb04ef5ea8cf31cad844c6f1e259d70ebf",
+      "bytes": 4469
+    },
+    "index.ru.md": {
+      "sha256": "4e0e9047cb29fb35ffdcd4a46d4ab9dbbe1be5a2bd27de118aef082787bdaed3",
+      "bytes": 6694
+    },
+    "index.id.md": {
+      "sha256": "1536e0b7c988644370a9867c05a5473f68de298c46f11857081bd0524f65bd46",
+      "bytes": 4257
+    },
+    "index.ko.md": {
+      "sha256": "d470847e108b42c2c04e4ce33fdb4ef2a6f47ea14844984e9266f96c30301d73",
+      "bytes": 4749
+    },
+    "index.zh-cn.md": {
+      "sha256": "3806b63c5e9596b9b056955279995f0dab5c676cd340ef9e174fb3ac1ea01a76",
+      "bytes": 3868
+    },
+    "index.zh-tw.md": {
+      "sha256": "6ad27e996c8e94480039e75fd309c183a52b0560928e0218967bc87e15772383",
+      "bytes": 3846
+    },
+    "index.hi.md": {
+      "sha256": "4defb3a3f691c68f208321606be7365711161d43b923dd55e6a8b32ff29cacdc",
+      "bytes": 8046
+    },
+    "index.ar.md": {
+      "sha256": "bed3e0b15911f651253ed3f99964e08aa6e75a5f7d57acf288279b99eb358840",
+      "bytes": 5533
+    }
+  },
+  "criteria": [
+    "13 editions retain the 2023-04-10 publication date and have lastmod 2026-11-23.",
+    "Every edition links the official tutorial, migration notice, template guide, FAQ, terms, and privacy policy.",
+    "The legacy widget endpoint and Analytics View workflow are removed; all editions include GA4 property access, the Hugo partial, and Handlebars syntax.",
+    "All twelve translation hashes match their AI review evidence."
+  ],
+  "limitations": [
+    "Static content review; no Google account or Ranklet4 widget was configured.",
+    "No human or native-speaker review has been recorded."
+  ]
+}
