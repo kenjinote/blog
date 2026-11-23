@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "article": "Github Actionsで動的に変数を設定する",
+  "frozenSourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+    "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+    "https://cli.github.com/manual/gh_release_create",
+    "https://cli.github.com/manual/gh_auth_login",
+    "https://github.com/actions/checkout/releases",
+    "https://github.com/actions/create-release"
+  ],
+  "findings": [
+    "Preserved original publication date 2022-10-02, removed the conflicting injected date, and set lastmod to 2026-11-23 in all 13 editions.",
+    "Replaced the contradictory Linux/Bash runner and Windows PowerShell commands with a windows-latest runner and explicit PowerShell 7 (pwsh) steps.",
+    "Explained that GITHUB_ENV affects only later steps in the same job; use step/job outputs for cross-job data.",
+    "Replaced archived create-release/upload-release-asset actions with gh release create, GH_TOKEN, and contents: write. Added manual dispatch, version validation, and a built-asset check."
+  ],
+  "validation": "docs/translation-review/validation-075.json",
+  "scope": "Read the complete Japanese article and all twelve translations. Checked every localized workflow example, command/shell consistency, environment-file timing and scope, release permissions and asset assumptions, and current GitHub primary references.",
+  "publicationPending": true,
+  "reviews": {
+    "post/Github Actionsで動的に変数を設定する/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "fcd7d87fec5e60d734ce402ca2ce21fdb66dd2e8421167b45d1363196219db70",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    },
+    "post/Github Actionsで動的に変数を設定する/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "625cab8d092fbbe49a0b160e9c8d25c68e5a11506917169a438bdaebf9e1742b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    },
+    "post/Github Actionsで動的に変数を設定する/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "a84f3d551af722b3147a873450060833584be53f444ee4cf13503926d2529e26",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    },
+    "post/Github Actionsで動的に変数を設定する/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "0baa7dc43fa62b304a0d976c2611d45ed80871714fdc0cecba7b6a9e8f4801d9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    },
+    "post/Github Actionsで動的に変数を設定する/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "1d211814dbbf09a3cd96c22f648ace0645e60e4ef59345f2a70993d555870cfa",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    },
+    "post/Github Actionsで動的に変数を設定する/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "69efb94af9856d87fe63a216e85f97a3689c0839482a257169cd560b02850628",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    },
+    "post/Github Actionsで動的に変数を設定する/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "e494ed81fbf45e9d0c11261057297528646fb1722a396445ff17080069b03ee2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    },
+    "post/Github Actionsで動的に変数を設定する/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "6efb341dc1016f0c4ccbce6ec41c6ecda639989f2c0abe4bf4e629219031cafc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    },
+    "post/Github Actionsで動的に変数を設定する/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "fa0bda656c0da09f591280d6cf99eec37f4590a2ff98b018473180d442226332",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    },
+    "post/Github Actionsで動的に変数を設定する/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "41cb211375ec462e003ed61a0bd4671d2a7420f88b1282f37ca726523fbeffdb",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    },
+    "post/Github Actionsで動的に変数を設定する/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "22d4fff2197ac4f5566bf2cd19eaac85161ad69e1615868338be75861429c5b4",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    },
+    "post/Github Actionsで動的に変数を設定する/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "dc1d810b0c34abab76ec2480d2543a29d94b9eb300eb672dda831756ad3dac47",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared runner OS, PowerShell syntax, environment-file timing, same-job scope, release workflow, validation, and uploaded asset."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for runner, step/job, environment file, outputs, GitHub Release, tag, asset, permissions, and PowerShell."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the YAML and PowerShell workflow for windows-latest, pwsh, GITHUB_ENV append syntax, tag validation, asset existence, gh release create, GH_TOKEN, and contents: write. No workflow was executed against a repository."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official GitHub Actions workflow-command, context, job-output, GitHub CLI release/authentication, checkout release, and archived action documentation."
+        }
+      },
+      "summary": "Replaced the mixed Bash/PowerShell and obsolete release-action example with a Windows PowerShell 7 workflow that validates a manually supplied semantic version, writes values for later steps, verifies the built asset, and creates a release with GitHub CLI. Clarified that GITHUB_ENV is scoped to later steps in one job and cross-job values require outputs.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The example workflow was not executed in a GitHub repository, and no release or upload was created.",
+        "The sample expects an earlier build to produce dist/sample-tool.exe; repository-specific build steps and release policy must be adapted.",
+        "GitHub runner images and action versions can change; consult current official documentation."
+      ]
+    }
+  }
+}

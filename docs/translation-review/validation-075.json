@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "batch": 75,
+  "article": "content/content/post/Github Actionsで動的に変数を設定する",
+  "reviewedAt": "2026-11-23",
+  "files": {
+    "ar": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.ar.md",
+      "normalizedBytes": 3412,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "de": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.de.md",
+      "normalizedBytes": 3226,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "en": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.en.md",
+      "normalizedBytes": 3078,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "es": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.es.md",
+      "normalizedBytes": 3165,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "fr": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.fr.md",
+      "normalizedBytes": 3235,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "hi": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.hi.md",
+      "normalizedBytes": 3739,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "id": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.id.md",
+      "normalizedBytes": 3142,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "ko": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.ko.md",
+      "normalizedBytes": 3216,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "ja": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.md",
+      "normalizedBytes": 3306,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "pt": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.pt.md",
+      "normalizedBytes": 3145,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "ru": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.ru.md",
+      "normalizedBytes": 3561,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "zh-cn": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.zh-cn.md",
+      "normalizedBytes": 3060,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    },
+    "zh-tw": {
+      "path": "content/content/post/Github Actionsで動的に変数を設定する/index.zh-tw.md",
+      "normalizedBytes": 3054,
+      "date": "2022-10-02T02:33:35+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 3,
+      "codeBlocks": 1,
+      "referenceUrls": [
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+        "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+        "https://cli.github.com/manual/gh_release_create",
+        "https://cli.github.com/manual/gh_auth_login",
+        "https://github.com/actions/checkout/releases",
+        "https://github.com/actions/create-release"
+      ]
+    }
+  },
+  "sharedSourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+  "sharedReferenceUrls": [
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts",
+    "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+    "https://cli.github.com/manual/gh_release_create",
+    "https://cli.github.com/manual/gh_auth_login",
+    "https://github.com/actions/checkout/releases",
+    "https://github.com/actions/create-release"
+  ],
+  "allThirteenReviewed": true,
+  "commandsExecuted": [
+    "python scripts/test_multilingual.py",
+    "python scripts/test_math_rendering.py",
+    "python scripts/test_translation_reviews.py",
+    "python scripts/translation_reviews.py check",
+    "git diff --check"
+  ],
+  "humanOrNativeSpeakerReview": false,
+  "result": "passed"
+}

@@ -1,90 +1,58 @@
 ---
 title: 'GitHub Actionsで動的に環境変数を設定する方法【Windows環境】'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Github Actionsで動的に変数を設定する"
-date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
 categories: ["tools-development-environment"]
-description: 'GitHub Actionsのワークフロー内で動的に環境変数を設定する方法を解説します。Windows環境を例に「$env:GITHUB_ENV」へ書き込む手順や、後続のステップで変数を参照してリリース作成に活用する具体例を紹介。'
+date: "2022-10-02T02:33:35+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "GitHub ActionsのGITHUB_ENVで後続ステップへ値を渡す方法を、Windows PowerShellのGitHub Release例で説明します。"
 ---
 
-Github Actionsで動的に変数を設定するには、下記のように$env:GITHUB_ENVに追加書き込みすることで実現できます。
+# GitHub Actionsで動的に環境変数を設定する
 
-【Windowsの場合】
-```
-name: Rust
+GitHub Actionsでは、ステップから`GITHUB_ENV`環境ファイルへ値を書き込むと、同じジョブの後続ステップで参照できます。書き込んだステップ自身には反映されません。以下はWindows runner（PowerShell）から、手動実行でGitHub Releaseを作る例です。release用の実行ファイルは事前のbuildで`dist`に用意する想定です。
 
+## Windows runnerでGitHub Releaseを作成する例
+
+```yaml
+name: Create Release
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-
-env:
-  CARGO_TERM_COLOR: always
-
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Release tag, for example v1.2.3
+        required: true
+        type: string
+permissions:
+  contents: write
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  release:
+    runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Get Environment
-      run: |
-        echo 'VERSION=1.0.0' >> $GITHUB_ENV
-        echo 'NAME=1.0.0' >> $GITHUB_ENV
-    - name: Display Environment
-      run: |
-        echo $env:VERSION
-        echo $env:NAME
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ env.VERSION }}
-        release_name: ${{ env.VERSION }}
-        draft: false
-        prerelease: false
-    - name: Upload Release Asset
-      id: upload-release-asset 
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: ./target/release/${{ env.NAME }}.exe
-        asset_name: ${{ env.NAME }}.exe
-        asset_content_type: application/octet-stream
+      - uses: actions/checkout@v7
+      - name: Set release variables
+        shell: pwsh
+        env:
+          RELEASE_VERSION_INPUT: ${{ inputs.version }}
+        run: |
+          if ($env:RELEASE_VERSION_INPUT -notmatch '^v[0-9]+(\.[0-9]+){2}$') { throw 'Enter a tag such as v1.2.3' }
+          "RELEASE_VERSION=$env:RELEASE_VERSION_INPUT" >> $env:GITHUB_ENV
+          "ASSET_NAME=sample-tool" >> $env:GITHUB_ENV
+      - name: Check the built asset
+        shell: pwsh
+        run: |
+          if (-not (Test-Path ".\dist\$env:ASSET_NAME.exe")) { throw 'Build the executable in dist before creating the release' }
+      - name: Create release and upload asset
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$env:RELEASE_VERSION" ".\dist\$env:ASSET_NAME.exe" --target "$env:GITHUB_SHA" --title "$env:RELEASE_VERSION" --generate-notes
 ```
 
-【Linuxの場合】
-```
-name: Rust
+## GITHUB_ENVの適用範囲
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+PowerShell 7（`pwsh`）では`NAME=value`形式を`$env:GITHUB_ENV`へ追記します。LinuxのBashでは`printf 'NAME=value\n' >> "$GITHUB_ENV"`を使います。複数ジョブで値を渡す場合は`GITHUB_ENV`ではなくstep/job outputsを使います。詳しくは[ワークフローコマンド](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands)と[変数の受け渡し](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs)を参照してください。
 
-env:
-  CARGO_TERM_COLOR: always
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: Get Environment
-      run: |
-        echo 'VERSION=1.0.0' >> $GITHUB_ENV
-        echo 'NAME=hello' >> $GITHUB_ENV
-    - name: Display Environment
-      run: |
-        echo ${{ env.VERSION }}
-        echo ${{ env.NAME }}
-```
-
+Official references: [workflow contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts), [job outputs](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs), [gh release create](https://cli.github.com/manual/gh_release_create), [GitHub CLI authentication and GH_TOKEN](https://cli.github.com/manual/gh_auth_login), [checkout releases](https://github.com/actions/checkout/releases), and the [archived create-release action](https://github.com/actions/create-release).

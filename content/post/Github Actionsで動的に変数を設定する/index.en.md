@@ -1,89 +1,58 @@
 ---
 title: 'How to Dynamically Set Environment Variables in GitHub Actions [Windows Environment]'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Github Actionsで動的に変数を設定する"
-date: 2022-10-02T02:33:35+09:00
 tags: ["GitHub", "GitHub Actions", "git"]
 draft: false
 image: "img_1.webp"
 categories: ["tools-development-environment"]
-description: 'We explain how to dynamically set environment variables within GitHub Actions workflows. Taking the Windows environment as an example, we introduce the procedure to write to ''$env:GITHUB_ENV'' and specific examples of referencing the variables in subsequent steps to utilize them for release creation.'
+date: "2022-10-02T02:33:35+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "Set values for later GitHub Actions steps with GITHUB_ENV and create a release from a Windows PowerShell workflow."
 ---
 
-To dynamically set variables in Github Actions, you can achieve this by appending to `$GITHUB_ENV` as shown below.
+# Set dynamic environment variables in GitHub Actions
 
-[For Windows]
-```
-name: Rust
+In GitHub Actions, write a value to the `GITHUB_ENV` file to make it available to later steps in the same job. The step that writes the value cannot read the new value. This Windows PowerShell example creates a GitHub Release when manually dispatched. It assumes a previous build placed the executable in `dist`.
 
+## Create a GitHub Release on a Windows runner
+
+```yaml
+name: Create Release
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-
-env:
-  CARGO_TERM_COLOR: always
-
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Release tag, for example v1.2.3
+        required: true
+        type: string
+permissions:
+  contents: write
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  release:
+    runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Get Environment
-      run: |
-        echo 'VERSION=1.0.0' >> $GITHUB_ENV
-        echo 'NAME=1.0.0' >> $GITHUB_ENV
-    - name: Display Environment
-      run: |
-        echo $env:VERSION
-        echo $env:NAME
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ env.VERSION }}
-        release_name: ${{ env.VERSION }}
-        draft: false
-        prerelease: false
-    - name: Upload Release Asset
-      id: upload-release-asset 
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: ./target/release/${{ env.NAME }}.exe
-        asset_name: ${{ env.NAME }}.exe
-        asset_content_type: application/octet-stream
+      - uses: actions/checkout@v7
+      - name: Set release variables
+        shell: pwsh
+        env:
+          RELEASE_VERSION_INPUT: ${{ inputs.version }}
+        run: |
+          if ($env:RELEASE_VERSION_INPUT -notmatch '^v[0-9]+(\.[0-9]+){2}$') { throw 'Enter a tag such as v1.2.3' }
+          "RELEASE_VERSION=$env:RELEASE_VERSION_INPUT" >> $env:GITHUB_ENV
+          "ASSET_NAME=sample-tool" >> $env:GITHUB_ENV
+      - name: Check the built asset
+        shell: pwsh
+        run: |
+          if (-not (Test-Path ".\dist\$env:ASSET_NAME.exe")) { throw 'Build the executable in dist before creating the release' }
+      - name: Create release and upload asset
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$env:RELEASE_VERSION" ".\dist\$env:ASSET_NAME.exe" --target "$env:GITHUB_SHA" --title "$env:RELEASE_VERSION" --generate-notes
 ```
 
-[For Linux]
-```
-name: Rust
+## Scope of GITHUB_ENV
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+With PowerShell 7 (`pwsh`), append `NAME=value` to `$env:GITHUB_ENV`. On Linux Bash, use `printf 'NAME=value\n' >> "$GITHUB_ENV"`. `GITHUB_ENV` does not pass values between jobs; use step and job outputs for that. See [workflow commands](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands) and [job outputs](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs).
 
-env:
-  CARGO_TERM_COLOR: always
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: Get Environment
-      run: |
-        echo 'VERSION=1.0.0' >> $GITHUB_ENV
-        echo 'NAME=hello' >> $GITHUB_ENV
-    - name: Display Environment
-      run: |
-        echo ${{ env.VERSION }}
-        echo ${{ env.NAME }}
-```
+Official references: [workflow contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts), [job outputs](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs), [gh release create](https://cli.github.com/manual/gh_release_create), [GitHub CLI authentication and GH_TOKEN](https://cli.github.com/manual/gh_auth_login), [checkout releases](https://github.com/actions/checkout/releases), and the [archived create-release action](https://github.com/actions/create-release).
