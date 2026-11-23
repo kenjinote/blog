@@ -1,85 +1,64 @@
 ---
 title: 'Cara Menginstal Gemini CLI di Windows | Penjelasan Menyeluruh Mulai dari Node.js'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Gemini CLI を Windows 環境にInstalasiする方法"
-date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "Instalasi", "開発"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Penjelasan untuk pemula tentang cara menginstal ''Gemini CLI'', yang memungkinkan penggunaan AI generatif Google ''Gemini'' dari baris perintah, di lingkungan Windows. Memperkenalkan secara rinci mulai dari persiapan Node.js dan npm hingga langkah eksekusi di PowerShell.'
+date: "2025-07-13T23:49:56+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "Panduan memasang Gemini CLI di Windows dengan Node.js dan npm, termasuk penggunaan global atau sementara, autentikasi, PATH, dan persetujuan aman."
 ---
 
-# 【Untuk Pemula】Cara Menginstal Gemini CLI di Windows
+# Memasang dan menggunakan Gemini CLI di Windows
 
-"Gemini CLI" memungkinkan penggunaan AI generatif Google "Gemini" dari baris perintah.
-Dalam artikel ini, kami akan menjelaskan langkah-langkah untuk menginstal Gemini CLI di lingkungan Windows dengan cara yang semudah mungkin.
+Gemini CLI adalah alat baris perintah sumber terbuka untuk menggunakan Gemini dari terminal. Langkah berikut mengikuti panduan resmi saat ini; periksa [panduan instalasi](https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx) jika ada pembaruan.
 
----
+## 1. Menyiapkan Node.js dan npm
 
-## 1. Persiapan Awal: Menginstal Node.js dan npm
-
-Pertama, karena Gemini CLI berjalan di lingkungan yang disebut "Node.js", Anda harus menginstal yang berikut ini sebelumnya:
-
-* **Node.js**
-* **npm (alat manajemen paket yang disertakan dengan Node.js)**
-* **npx (alat eksekusi perintah yang disertakan dalam npm)**
-
-Silakan unduh Node.js versi Windows dari situs web resmi berikut (versi LTS disarankan):
-
-👉 [Situs Resmi Node.js](https://nodejs.org/)
-
-Setelah instalasi selesai, mari kita periksa apakah sudah terinstal dengan benar menggunakan perintah berikut.
+Gemini CLI memerlukan Node.js 20.0.0 atau lebih baru. Dokumentasi resmi merekomendasikan Windows 11 24H2 atau yang lebih baru, mendukung PowerShell, dan memerlukan koneksi internet. Unduh installer LTS Windows dari [situs Node.js](https://nodejs.org/en/download/).
 
 ```powershell
-node -v
-npm -v
+node --version
+npm --version
 ```
 
----
+## 2. Memasang Gemini CLI dengan npm
 
-## 2. Memulai PowerShell
+Untuk penggunaan rutin, pasang paket secara global:
 
-Untuk menggunakan Gemini CLI di Windows, biasanya menggunakan PowerShell.
-Ketik "PowerShell" dari menu Start dan jalankan.
+```powershell
+npm install -g @google/gemini-cli
+```
 
----
+```powershell
+gemini --version
+gemini
+```
 
-## 3. Menginstal Gemini CLI
+Jika `gemini` tidak ditemukan, jalankan `npm config get prefix`, tambahkan folder itu ke `PATH`, buka PowerShell baru, lalu periksa dengan `Get-Command gemini`. Lihat [dokumentasi npm](https://docs.npmjs.com/cli/v11/configuring-npm/folders/).
 
-Salin dan tempel perintah berikut ke PowerShell untuk menjalankannya:
+## 3. Peluncuran pertama dan autentikasi
 
-```bash
+Jalankan `gemini` di PowerShell dan ikuti petunjuk autentikasi saat pertama kali. Opsi yang didokumentasikan mencakup akun Google, kunci Gemini API, dan Vertex AI. Ketersediaan, harga, kuota, dan ketentuan bergantung pada akun dan layanan; lihat [panduan autentikasi](https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx). Jangan masukkan kunci API ke prompt atau repositori publik.
+
+```powershell
+gemini
+```
+
+Gunakan `gemini --help` untuk melihat perintah, lalu ketik `/quit` untuk keluar dari sesi interaktif.
+
+## 4. Menjalankan sekali tanpa instalasi global
+
+Untuk menjalankan sekali, gunakan `npx`; perintah tidak dipasang permanen sehingga harus dijalankan lagi pada sesi berikutnya. Gemini CLI dapat membaca dan mengubah file serta menjalankan perintah shell. Gunakan pada proyek tepercaya dan periksa permintaan konfirmasi sebelum menyetujui tindakan. Lihat [panduan alat dan keamanan](https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md).
+
+```powershell
 npx @google/gemini-cli
 ```
 
-Perintah ini untuk sementara mengeksekusi paket Gemini CLI yang dirilis oleh Google.
-Jika perlu, Anda mungkin diminta untuk melakukan pengaturan awal atau login.
+## 5. Ringkasan
 
-※ Ini mungkin memakan waktu beberapa menit saat pertama kali. Jika terjadi kesalahan, periksa kembali Node.js dan lingkungan jaringan Anda.
-
----
-
-## 4. Instalasi Selesai! Apa Selanjutnya
-
-Sekarang, Gemini CLI telah diinstal di Windows.
-Mulai sekarang, dengan menggunakan Gemini dari baris perintah, berbagai operasi seperti pembuatan teks dan penyelesaian kode dapat dilakukan.
-
-Jika Anda ingin memeriksa dokumentasi resmi atau bantuan, Anda juga dapat menggunakan perintah berikut.
-
-```bash
-npx @google/gemini-cli --help
-```
-
----
-
-## Kesimpulan
-
-Mari kita ulas langkah-langkah untuk memperkenalkan Gemini CLI ke Windows.
-
-1. Instal Node.js dan npm
-2. Mulai PowerShell
-3. Jalankan `npx @google/gemini-cli`
-
-Persiapan selesai!
-Jika Anda ingin menggunakan AI generatif secara lokal, silakan coba tantangan ini dengan mengacu pada langkah-langkah ini.
+1. Siapkan Node.js 20 atau lebih baru.
+2. Untuk penggunaan rutin, pasang global dengan npm.
+3. Jalankan `gemini` dan autentikasi.
+4. Untuk eksekusi sementara, gunakan `npx`. Periksa panduan resmi untuk persyaratan dan ketentuan terbaru.

@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "batch": 73,
+  "article": "content/content/post/Gemini CLI を Windows 環境にインストールする方法",
+  "reviewedAt": "2026-11-23",
+  "files": {
+    "ja": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "normalizedBytes": 3366,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "en": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.en.md",
+      "normalizedBytes": 2853,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "zh-cn": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.zh-cn.md",
+      "normalizedBytes": 2693,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "es": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.es.md",
+      "normalizedBytes": 3004,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "ko": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.ko.md",
+      "normalizedBytes": 3101,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "pt": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.pt.md",
+      "normalizedBytes": 2908,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "zh-tw": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.zh-tw.md",
+      "normalizedBytes": 2687,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "hi": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.hi.md",
+      "normalizedBytes": 4931,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "fr": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.fr.md",
+      "normalizedBytes": 3162,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "de": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.de.md",
+      "normalizedBytes": 3162,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "ar": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.ar.md",
+      "normalizedBytes": 3654,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "ru": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.ru.md",
+      "normalizedBytes": 4380,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    },
+    "id": {
+      "path": "content/post/Gemini CLI を Windows 環境にインストールする方法/index.id.md",
+      "normalizedBytes": 2969,
+      "date": "2025-07-13T23:49:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 5,
+      "codeBlocks": 5,
+      "referenceUrls": [
+        "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+        "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+        "https://nodejs.org/en/download/"
+      ]
+    }
+  },
+  "sharedSourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+  "sharedReferenceUrls": [
+    "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+    "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+    "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+    "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+    "https://nodejs.org/en/download/"
+  ],
+  "allThirteenReviewed": true,
+  "commandsExecuted": false,
+  "humanOrNativeSpeakerReview": false,
+  "result": "passed"
+}

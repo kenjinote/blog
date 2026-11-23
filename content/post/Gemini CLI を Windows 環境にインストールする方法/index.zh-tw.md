@@ -1,85 +1,64 @@
 ---
 title: '在Windows上安裝Gemini CLI的方法｜從Node.js徹底解說'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Gemini CLI を Windows 環境に安裝する方法"
-date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "安裝", "開發"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: '為初學者解說如何在Windows環境中安裝能從命令列使用Google生成式AI「Gemini」的「Gemini CLI」。詳細介紹從準備Node.js與npm，到在PowerShell中執行的步驟。'
+date: "2025-07-13T23:49:56+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "說明在 Windows 使用 Node.js 與 npm 安裝 Gemini CLI，包含全域或臨時執行、驗證、PATH 檢查與安全核准。"
 ---
 
-# 【初學者指南】如何在 Windows 上安裝 Gemini CLI
+# 在 Windows 上安裝並使用 Gemini CLI
 
-「Gemini CLI」讓您可以從命令列使用 Google 的生成式 AI「Gemini」。
-本文將盡可能以淺顯易懂的方式，為您解說在 Windows 環境中安裝 Gemini CLI 的步驟。
+Gemini CLI 是開放原始碼命令列工具，可在終端機使用 Gemini。以下步驟依據目前官方文件；如有更新，請參閱[官方安裝指南](https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx)。
 
----
+## 1. 準備 Node.js 與 npm
 
-## 1. 事前準備：安裝 Node.js 和 npm
-
-首先，由於 Gemini CLI 運行在名為「Node.js」的環境上，因此您必須先安裝以下項目：
-
-* **Node.js** 
-* **npm (Node.js 附帶的套件管理工具)** 
-* **npx (npm 包含的指令執行工具)** 
-
-請從以下官方網站下載 Windows 版本的 Node.js (推薦使用 LTS 版本)：
-
-👉 [Node.js 官方網站](https://nodejs.org/)
-
-安裝完成後，請使用以下命令確認是否安裝正確。
+Gemini CLI 需要 Node.js 20.0.0 或更新版本。官方文件建議 Windows 11 24H2 或更新版本，支援 PowerShell，並需要網際網路連線。請從[Node.js 官方網站](https://nodejs.org/en/download/)下載 Windows LTS 安裝程式。
 
 ```powershell
-node -v
-npm -v
+node --version
+npm --version
 ```
 
----
+## 2. 使用 npm 安裝 Gemini CLI
 
-## 2. 啟動 PowerShell
+若要長期使用，請全域安裝套件：
 
-在 Windows 上使用 Gemini CLI 時，通常會使用 PowerShell 進行操作。
-請從開始選單輸入「PowerShell」並啟動。
+```powershell
+npm install -g @google/gemini-cli
+```
 
----
+```powershell
+gemini --version
+gemini
+```
 
-## 3. 安裝 Gemini CLI
+若找不到 `gemini`，執行 `npm config get prefix`，將該資料夾加入 Windows `PATH`，重新開啟 PowerShell，再用 `Get-Command gemini` 確認。參閱[npm 文件](https://docs.npmjs.com/cli/v11/configuring-npm/folders/)。
 
-將以下命令複製並貼上到 PowerShell 中執行：
+## 3. 首次啟動與驗證
 
-```bash
+在 PowerShell 啟動 `gemini`，並依首次啟動提示完成驗證。文件列出的選項包括 Google 帳戶、Gemini API 金鑰與 Vertex AI。可用性、價格、配額和條款依帳戶及服務而異，請參閱[驗證指南](https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx)。請勿將 API 金鑰寫入提示詞或公開儲存庫。
+
+```powershell
+gemini
+```
+
+使用 `gemini --help` 查看命令；在互動工作階段輸入 `/quit` 離開。
+
+## 4. 不做全域安裝，直接執行一次
+
+若只執行一次，可使用 `npx`；這不會永久安裝命令，下次仍要再次執行。Gemini CLI 可讀取、修改檔案並執行 shell 命令。請在可信任的專案使用，核准前先檢查確認提示。參閱[工具與安全說明](https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md)。
+
+```powershell
 npx @google/gemini-cli
 ```
 
-這個命令用於暫時執行 Google 發布的 Gemini CLI 套件。
-如有需要，可能會要求您進行初始設定或登入。
+## 5. 總結
 
-※ 第一次可能會花費幾分鐘。如果出現錯誤，請重新檢查您的 Node.js 或網路環境。
-
----
-
-## 4. 安裝完成！接下來要做的事
-
-至此，Gemini CLI 已經安裝在您的 Windows 上了。
-今後，您可以從命令列使用 Gemini 進行文本生成、程式碼補全等各種操作。
-
-如果您想查看官方文件或說明，也可以使用以下指令：
-
-```bash
-npx @google/gemini-cli --help
-```
-
----
-
-## 總結
-
-讓我們回顧一下在 Windows 上安裝 Gemini CLI 的步驟：
-
-1. 安裝 Node.js 和 npm
-2. 啟動 PowerShell
-3. 執行 `npx @google/gemini-cli`
-
-這樣就準備完成了！
-如果您想在本地使用生成式 AI，請務必參考這些步驟來挑戰看看。
+1. 準備 Node.js 20 或更新版本。
+2. 長期使用時透過 npm 全域安裝。
+3. 啟動 `gemini` 並完成驗證。
+4. 臨時執行時使用 `npx`。最新需求與條款請以官方指南為準。

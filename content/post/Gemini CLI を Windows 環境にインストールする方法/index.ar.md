@@ -1,85 +1,64 @@
 ---
 title: 'كيفية تثبيت Gemini CLI على Windows | شرح مفصل من إعداد Node.js'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Gemini CLI を Windows 環境にتثبيتする方法"
-date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "تثبيت", "開発"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'شرح للمبتدئين حول كيفية تثبيت ''Gemini CLI'' في بيئة Windows، والذي يتيح لك استخدام الذكاء الاصطناعي التوليدي من جوجل ''Gemini'' عبر سطر الأوامر. نقدم تفاصيل شاملة بدءًا من إعداد Node.js و npm وصولاً إلى خطوات التشغيل في PowerShell.'
+date: "2025-07-13T23:49:56+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "دليل تثبيت Gemini CLI على Windows باستخدام Node.js وnpm، مع التشغيل العام أو المؤقت والمصادقة وفحص PATH والموافقات الآمنة."
 ---
 
-# 【للمبتدئين】كيفية تثبيت Gemini CLI على Windows
+# تثبيت Gemini CLI واستخدامه على Windows
 
-"[Gemini](/ar/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84/) CLI" الذي يتيح استخدام الذكاء الاصطناعي التوليدي من Google "[Gemini](/ar/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84/)" من سطر الأوامر.
-في هذا المقال، سنشرح خطوات تثبيت [Gemini](/ar/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84/) CLI في بيئة Windows بأبسط طريقة ممكنة.
+Gemini CLI أداة مفتوحة المصدر لسطر الأوامر تتيح استخدام Gemini من الطرفية. تتبع الخطوات الإرشادات الرسمية الحالية؛ راجع [دليل التثبيت الرسمي](https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx) لأي تحديثات.
 
----
+## 1. إعداد Node.js وnpm
 
-## 1. التحضير المسبق: تثبيت Node.js و npm
-
-أولاً، نظراً لأن [Gemini](/ar/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84/) CLI يعمل في بيئة تسمى "Node.js"، يجب تثبيت ما يلي مسبقاً:
-
-* **Node.js**
-* **npm (أداة إدارة الحزم المرفقة مع Node.js)**
-* **npx (أداة تنفيذ الأوامر المضمنة في npm)**
-
-يرجى تنزيل إصدار Windows من Node.js من الموقع الرسمي التالي (نوصي بإصدار LTS):
-
-👉 [موقع Node.js الرسمي](https://nodejs.org/)
-
-بعد اكتمال التثبيت، دعنا نتحقق مما إذا كان التثبيت صحيحاً باستخدام الأوامر التالية.
+يتطلب Gemini CLI إصدار Node.js 20.0.0 أو أحدث. توصي الوثائق الرسمية بـ Windows 11 24H2 أو أحدث، وتدعم PowerShell وتتطلب اتصالًا بالإنترنت. نزّل مثبت LTS لنظام Windows من [موقع Node.js](https://nodejs.org/en/download/).
 
 ```powershell
-node -v
-npm -v
+node --version
+npm --version
 ```
 
----
+## 2. تثبيت Gemini CLI عبر npm
 
-## 2. تشغيل PowerShell
+للاستخدام المتكرر، ثبّت الحزمة تثبيتًا عامًا:
 
-لاستخدام [Gemini](/ar/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84/) CLI على Windows، من الشائع العمل باستخدام PowerShell.
-قم بتشغيله بكتابة "PowerShell" من قائمة ابدأ.
+```powershell
+npm install -g @google/gemini-cli
+```
 
----
+```powershell
+gemini --version
+gemini
+```
 
-## 3. تثبيت Gemini CLI
+إذا لم يُعثر على `gemini`، نفّذ `npm config get prefix`، وأضف المجلد إلى `PATH` في Windows، ثم افتح نافذة PowerShell جديدة وتحقق باستخدام `Get-Command gemini`. راجع [وثائق npm](https://docs.npmjs.com/cli/v11/configuring-npm/folders/).
 
-انسخ والصق الأمر التالي في PowerShell لتشغيله:
+## 3. التشغيل الأول والمصادقة
 
-```bash
+شغّل `gemini` في PowerShell واتبع خطوات المصادقة عند أول تشغيل. تشمل الخيارات الموثقة حساب Google ومفتاح Gemini API وVertex AI. يختلف التوفر والسعر والحصص والشروط بحسب الحساب والخدمة؛ راجع [دليل المصادقة](https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx). تعامل مع مفاتيح API كأسرار ولا تضعها في المطالبات أو المستودعات العامة.
+
+```powershell
+gemini
+```
+
+استخدم `gemini --help` لعرض الأوامر، وأدخل `/quit` لإنهاء الجلسة التفاعلية.
+
+## 4. التشغيل مرة واحدة دون تثبيت عام
+
+للتشغيل مرة واحدة، استخدم `npx`؛ فهذا لا يثبت الأمر بصورة دائمة، لذا شغّل الأمر مجددًا في الجلسات التالية. يمكن لـ Gemini CLI قراءة الملفات وتعديلها وتنفيذ أوامر shell. استخدمه في مشروع موثوق وراجع طلبات التأكيد قبل الموافقة. راجع [دليل الأدوات والأمان](https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md).
+
+```powershell
 npx @google/gemini-cli
 ```
 
-هذا الأمر مخصص للتشغيل المؤقت لحزمة [Gemini](/ar/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84/) CLI التي أصدرتها Google.
-قد يُطلب منك إجراء الإعدادات الأولية أو تسجيل الدخول إذا لزم الأمر.
+## 5. الخلاصة
 
-※ قد يستغرق الأمر بضع دقائق في المرة الأولى. في حالة حدوث خطأ، يرجى إعادة التحقق من Node.js وبيئة الشبكة.
-
----
-
-## 4. اكتمل التثبيت! الخطوة التالية
-
-بذلك، تم تثبيت [Gemini](/ar/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84/) CLI على Windows.
-من الآن فصاعداً، من خلال استخدام [Gemini](/ar/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84/) من سطر الأوامر، ستكون العديد من العمليات مثل إنشاء النصوص وإكمال التعليمات البرمجية ممكنة.
-
-إذا كنت ترغب في التحقق من الوثائق الرسمية أو المساعدة، يمكنك أيضاً الاستفادة من أوامر مثل:
-
-```bash
-npx @google/gemini-cli --help
-```
-
----
-
-## الخلاصة
-
-دعونا نراجع خطوات تقديم [Gemini](/ar/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84/) CLI إلى Windows.
-
-1. تثبيت Node.js و npm
-2. تشغيل PowerShell
-3. تنفيذ `npx @google/gemini-cli`
-
-الآن أصبح كل شيء جاهزاً!
-إذا كنت ترغب في استخدام الذكاء الاصطناعي التوليدي محلياً، فيرجى تجربة هذه الخطوات.
+1. جهّز Node.js 20 أو أحدث.
+2. للاستخدام المتكرر، ثبّت الحزمة عالميًا عبر npm.
+3. شغّل `gemini` وأكمل المصادقة.
+4. للتشغيل المؤقت، استخدم `npx`. راجع الوثائق الرسمية للاطلاع على المتطلبات والشروط الحالية.

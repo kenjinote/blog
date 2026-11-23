@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "article": "WindowsにGemini CLIをインストールする方法",
+  "frozenSourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://docs.npmjs.com/cli/v11/configuring-npm/folders/",
+    "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx",
+    "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx",
+    "https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md",
+    "https://nodejs.org/en/download/"
+  ],
+  "findings": [
+    "Removed duplicate/conflicting publication-date metadata across all editions, preserved the original 2025-07-13 publication date, and set lastmod to 2026-11-23.",
+    "Updated requirements from the current official guide: Node.js 20.0.0+, Windows 11 24H2+ as the recommended environment, PowerShell, and internet access.",
+    "Replaced the misleading npx-as-install procedure with the persistent npm global install flow and explained npx as an on-demand, non-global alternative.",
+    "Added first-run authentication choices and caveats for account-dependent availability, quotas, pricing and terms; documented global npm PATH troubleshooting and approval safety for file/shell tools."
+  ],
+  "validation": "docs/translation-review/validation-073.json",
+  "scope": "Read the complete Japanese article and all twelve translations. Compared setup commands, requirements, authentication, npx/global behavior, Windows PATH notes, and tool-security statements with current official primary documentation.",
+  "publicationPending": true,
+  "reviews": {
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "14b0dbc07c79eec22f47071aed6a64d42bd3cb97d33792ef6f48bfeb16d3a9bd",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "97f18bdfa3bd1d765aec634b3c8871ebbc93e9bd7432c3d8bdb847fff83a9535",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "b7695d6fe6ebb62371230d2cd9382d789c004c99ca6c56d3d7c2f27a8501bfcd",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "c211fe7dd2610d12276571513b24002fa662db3adb1ddbc15880a73de0e27c5f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "5851c55899390712a0869dc7056bdcbd21717cbc30e33a4ba21a81e22ce5edbe",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "1769f3271df85f827c3ddabff3880429fda7c932e345d8efe540d97f23183751",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "b05a07bd6b94d91e524d58aac4effcc069feb583f86c3681a6a22ea4037a1ff8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "6568a297d03bcf06907b54ae79ab627b95ad6ff742bdb866008c9fe0588b60b6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "101583ac1d99aa88e4ca7512bc291b9a62ddff74a68faefb2c259f4e20fa9d71",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "4baa3ce86f787c29910b0327587a8ba30102a7a22420f0801ea3684ff3e67acc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "b0da2dc40fffb060ffc511b9a994dc575b6c6bbf1c9bb767248d520545e71bb7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "9eef49b4c8624c69851b2a2c13b4cf2a505149acacd074b55bc951036c6ce086",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and full localized edition. Matched Windows setup, Node/npm prerequisites, persistent global installation, one-off npx execution, first-run authentication, PATH troubleshooting, and usage flow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gemini CLI, Node.js/npm, global install versus on-demand execution, PowerShell, PATH, Google-account/API-key/Vertex AI authentication, and tool approvals."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed all PowerShell commands and code fences against the official Gemini CLI and npm documentation. Commands were not executed; installing the CLI would modify the local environment and authentication requires user credentials."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the linked official Gemini CLI installation, authentication and tools guides, Node.js downloads page, and npm global folder/PATH documentation."
+        }
+      },
+      "summary": "Updated the complete article and translation to distinguish npm global installation from a one-off npx run, specify the current Node.js requirement and recommended Windows environment, explain first-run authentication and npm PATH troubleshooting, and add safe approval guidance.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No Windows installation, Node.js/npm command, Gemini CLI session, Google sign-in, API request, or Vertex AI request was executed.",
+        "Official documentation can change; readers are directed to the current primary guides."
+      ]
+    }
+  }
+}

@@ -1,85 +1,64 @@
 ---
 title: 'How to Install Gemini CLI on Windows | Thorough Explanation from Node.js'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Gemini CLI を Windows 環境にInstallする方法"
-date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "install", "development"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'A beginner-friendly explanation on how to install the ''Gemini CLI'', which allows you to use Google''s generative AI ''Gemini'' from the command line, on a Windows environment. We detail the procedure from Node.js and npm preparation to execution in PowerShell.'
+date: "2025-07-13T23:49:56+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "Install Gemini CLI on Windows with Node.js and npm, including global and one-off use, authentication, PATH checks, and safe tool approvals."
 ---
 
-# [For Beginners] How to Install Gemini CLI on Windows
+# Install and use Gemini CLI on Windows
 
-"[Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI" allows you to use Google's generative AI "[Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/)" from the command line.
-In this article, we will explain the steps to install [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI in a Windows environment as easily as possible.
+Gemini CLI is an open-source command-line tool for using Gemini from a terminal. These steps follow the current official guidance; check the [installation guide](https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx) for changes.
 
----
+## 1. Prepare Node.js and npm
 
-## 1. Preparation: Install Node.js and npm
-
-First, since [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI runs on an environment called "Node.js", you need to have the following installed:
-
-* **Node.js**
-* **npm (Package management tool included with Node.js)**
-* **npx (Command execution tool included with npm)**
-
-Please download the Windows version of Node.js from the official website below (the LTS version is recommended):
-
-👉 [Node.js Official Website](https://nodejs.org/)
-
-Once the installation is complete, let's verify if it was installed correctly with the following commands.
+Gemini CLI requires Node.js 20.0.0 or later. The official documentation recommends Windows 11 24H2 or later, supports PowerShell, and requires internet access. Download the Windows LTS installer from the [Node.js website](https://nodejs.org/en/download/).
 
 ```powershell
-node -v
-npm -v
+node --version
+npm --version
 ```
 
----
+## 2. Install Gemini CLI with npm
 
-## 2. Launch PowerShell
+For ongoing use, install the package globally:
 
-To use [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI on Windows, it is common to operate it using PowerShell.
-Type "PowerShell" in the Start menu to launch it.
+```powershell
+npm install -g @google/gemini-cli
+```
 
----
+```powershell
+gemini --version
+gemini
+```
 
-## 3. Install Gemini CLI
+If `gemini` is not found, run `npm config get prefix`, ensure that folder is on Windows `PATH`, open a new PowerShell window, and check with `Get-Command gemini`. See [npm’s documentation](https://docs.npmjs.com/cli/v11/configuring-npm/folders/).
 
-Copy and paste the following command into PowerShell and execute it:
+## 3. First launch and authentication
 
-```bash
+Start `gemini` in PowerShell and follow the first-run authentication prompts. Documented options include a Google account, a Gemini API key, and Vertex AI. Availability, pricing, quotas, and terms depend on the account and service; see the [authentication guide](https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx). Treat API keys as secrets; never put them in prompts or public repositories.
+
+```powershell
+gemini
+```
+
+Use `gemini --help` for the command list; enter `/quit` to leave the interactive session.
+
+## 4. Run once without a global install
+
+For a one-off run, use `npx`; this does not permanently install the command, so run it again next time. Gemini CLI can read and edit files in the working folder and run shell commands. Use a project you trust and review each confirmation prompt before approving changes or commands. See [tools and security](https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md).
+
+```powershell
 npx @google/gemini-cli
 ```
 
-This command temporarily executes the [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI package published by Google.
-You may be prompted for initial setup or login if necessary.
+## 5. Summary
 
-* Note: It may take a few minutes the first time. If you encounter an error, please double-check your Node.js or network environment.
-
----
-
-## 4. Installation Complete! What to do next
-
-Now, [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI has been installed on Windows.
-From now on, you will be able to perform various operations using [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) from the command line, such as text generation and code completion.
-
-If you want to check the official documentation or help, you can also utilize commands like the following.
-
-```bash
-npx @google/gemini-cli --help
-```
-
----
-
-## Conclusion
-
-Let's review the steps to introduce [Gemini](/en/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AEworkaround/) CLI to Windows.
-
-1. Install Node.js and npm
-2. Launch PowerShell
-3. Execute `npx @google/gemini-cli`
-
-Now you're all set!
-If you want to use generative AI locally, please give it a try using these steps as a reference.
+1. Prepare Node.js 20 or later.
+2. For ongoing use, install globally with npm.
+3. Start `gemini` and authenticate.
+4. For a one-off run, use `npx`. Check the official guides for current requirements and terms.

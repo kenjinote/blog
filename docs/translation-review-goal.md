@@ -949,4 +949,6 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 
 - 2026-11-23 Batch072: GNFS素因数分解記事の日本語原文＋12翻訳を全文照合。RSA/GNFSの範囲とL記法のヒューリスティック計算量を修正し、証明済み下界や実時間として扱わないよう明記。RSA-2048古典演算数・量子ゲート数の根拠のない断定を除去し、2021/2025年の量子資源見積もりを前提別に記載。行列の核の表現、ドイツ語数式、英語見出しリンクを修正し、13版でGNFSの5段階Mermaidフローを確認。多言語10テスト、数式1テスト、台帳6テスト、静的13版検査、`git diff --check`成功。CI run 45134659603（commit `0cf78cb5156a79874cb4c3d1db7e5adffa919250`）成功後、13公開ページ・相互hreflangを確認し、12翻訳のCodex (AI)校閲を台帳へ反映。公開レシート`docs/translation-review/publication-072.json`、証跡`docs/translation-review/batch-072.json`、検証`docs/translation-review/validation-072.json`。AIのみ、ネイティブ話者校閲・形式証明・暗号実装/量子回路実行・ブラウザーでの視覚確認なし。全記事goalを継続。
 
+- 2026-11-23 Batch073: Gemini CLI Windows導入記事を日本語原文＋12翻訳で改訂。重複していたdateを整理し、原公開日2025-07-13を維持。公式要件Node.js 20.0.0以上、npmのグローバル導入とnpxの一時実行、初回認証、Windowsのnpm PATH確認、ファイル/シェル操作の承認上の注意を反映。Google Gemini CLI・Node.js・npm公式資料を照合。多言語10テスト、数式1テスト、台帳6テスト、13版の静的検査、`git diff --check`成功。証跡`docs/translation-review/batch-073.json`、検証`docs/translation-review/validation-073.json`。公開pending。AIのみ、Windows端末での実インストール・CLI認証・API実行およびネイティブ話者校閲なし。全記事goalを継続。
+
 - 台帳集計（B072反映後）：current 840、未確認12,192、人確認0。全記事・全翻訳言語のgoalは継続。

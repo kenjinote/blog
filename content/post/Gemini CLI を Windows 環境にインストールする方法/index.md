@@ -1,85 +1,64 @@
 ---
 title: 'WindowsにGemini CLIをインストールする方法｜Node.jsから徹底解説'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Gemini CLI を Windows 環境にインストールする方法"
-date: 2025-07-13T23:49:56+09:00
 tags: ["Gemini", "CLI", "Windows", "インストール", "開発"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
-description: 'Googleの生成AI「Gemini」をコマンドラインから使える「Gemini CLI」をWindows環境にインストールする方法を初心者向けに解説。Node.jsやnpmの準備からPowerShellでの実行手順まで詳しく紹介します。'
+date: "2025-07-13T23:49:56+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "WindowsでGemini CLIを使うためのNode.js要件、npmのグローバル導入と一時実行、初回認証、PATH確認、安全な承認手順を解説します。"
 ---
 
-# 【初心者向け】WindowsにGemini CLIをインストールする方法
+# WindowsにGemini CLIをインストールして使う
 
-Googleの生成AI「Gemini」をコマンドラインから使えるようにする「Gemini CLI」。
-この記事では、Windows環境にGemini CLIをインストールする手順を、できるだけわかりやすく解説します。
+Gemini CLIは、Geminiをターミナルから利用するオープンソースのコマンドラインツールです。以下は公式の現行手順です。条件は更新されるため、[公式インストールガイド](https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx)も確認してください。
 
----
+## 1. Node.jsとnpmを準備する
 
-## 1. 事前準備：Node.jsとnpmをインストール
-
-まず、Gemini CLIは「Node.js」という環境上で動作するため、以下のものをインストールしておく必要があります。
-
-* **Node.js**
-* **npm（Node.jsに付属するパッケージ管理ツール）**
-* **npx（npmに含まれるコマンド実行ツール）**
-
-以下の公式サイトから、Windows版のNode.jsをダウンロードしてください（LTS版がおすすめです）：
-
-👉 [Node.js公式サイト](https://nodejs.org/)
-
-インストールが完了したら、次のコマンドで正しくインストールされたか確認しましょう。
+Gemini CLIにはNode.js 20.0.0以上が必要です。公式の推奨環境はWindows 11 24H2以降で、PowerShellとインターネット接続を使います。[Node.js公式サイト](https://nodejs.org/en/download/)からWindows用LTS版を入手します。
 
 ```powershell
-node -v
-npm -v
+node --version
+npm --version
 ```
 
----
+## 2. npmでGemini CLIをインストールする
 
-## 2. PowerShellを起動する
+継続利用する場合はグローバルインストールします。
 
-WindowsでGemini CLIを使うには、PowerShellを使って操作するのが一般的です。
-スタートメニューから「PowerShell」と入力して起動してください。
+```powershell
+npm install -g @google/gemini-cli
+```
 
----
+```powershell
+gemini --version
+gemini
+```
 
-## 3. Gemini CLIをインストールする
+`gemini`が見つからない場合は`npm config get prefix`で場所を確認し、そのフォルダーがWindowsのPATHに含まれることを確かめて新しいPowerShellを開きます。`Get-Command gemini`で確認できます。[npmの説明](https://docs.npmjs.com/cli/v11/configuring-npm/folders/)
 
-以下のコマンドをPowerShellにコピー＆ペーストして実行します：
+## 3. 初回起動と認証
 
-```bash
+PowerShellで`gemini`を起動すると初回認証の案内が表示されます。Googleアカウント、Gemini APIキー、Vertex AIなどの方法があり、利用可否・料金・割当量はアカウントやサービスで異なります。[認証ガイド](https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/authentication.mdx)。APIキーは秘密情報として扱い、プロンプトや公開リポジトリに書かないでください。
+
+```powershell
+gemini
+```
+
+コマンドの一覧は`gemini --help`で確認できます。対話画面は`/quit`で終了します。
+
+## 4. インストールせずに一度だけ実行する
+
+一時的に試す場合は`npx`で実行できます。これは恒久インストールではなく、次回もコマンドを実行します。Gemini CLIは作業フォルダーのファイルを読み書きし、シェルコマンドを実行できます。信頼できるプロジェクトで使い、承認前に変更内容やコマンドを確認してください。[ツールと安全機能](https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/tools.md)。
+
+```powershell
 npx @google/gemini-cli
 ```
 
-このコマンドは、Googleが公開しているGemini CLIパッケージを一時的に実行するためのものです。
-必要に応じて初期設定やログインが求められることもあります。
+## 5. まとめ
 
-※ 初回は数分かかることがあります。エラーが出た場合は、Node.jsやネットワーク環境を再確認してみてください。
-
----
-
-## 4. インストール完了！次にやること
-
-これで、Windows上にGemini CLIがインストールされました。
-今後は、コマンドラインからGeminiを使って、テキスト生成やコード補完など、さまざまな操作が可能になります。
-
-公式ドキュメントやヘルプを確認したい場合は、以下のようなコマンドも活用できます。
-
-```bash
-npx @google/gemini-cli --help
-```
-
----
-
-## まとめ
-
-WindowsにGemini CLIを導入する手順をおさらいします。
-
-1. Node.jsとnpmをインストール
-2. PowerShellを起動
-3. `npx @google/gemini-cli` を実行
-
-これで準備完了です！
-生成AIをローカルから使いたい方は、ぜひこの手順を参考にチャレンジしてみてください。
+1. Node.js 20以上を準備します。
+2. 継続利用にはnpmでグローバルインストールします。
+3. `gemini`を起動して認証します。
+4. 一時実行には`npx`を使います。公式ガイドで最新の要件と利用条件を確認してください。
