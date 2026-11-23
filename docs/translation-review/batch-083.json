@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "batch": 83,
+  "article": "central-limit-theorem",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+  "sources": [
+    "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations. Compared assumptions, claims, formulas, proof outline, standard-error interpretation, counterexample, simulation code, Mermaid diagram, and localized links against the source and MIT 18.05 course material.",
+  "findings": [
+    "The basic i.i.d. CLT assumptions and convergence statement are consistent across all editions.",
+    "All four displayed formula blocks match after localized prose inside the equation is removed; Python logic and Mermaid graph structure match.",
+    "Corrected two Indonesian wording issues in the proof lead-in and the fourfold-sample-size standard-error explanation.",
+    "No other meaning, terminology, mathematical, code, or reference discrepancies requiring correction were found."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/central-limit-theorem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "9ee3c9b5b6154e45bd3204003e570d7f51712ac6c53962ffb97d8dc6f92d3dab",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    },
+    "post/central-limit-theorem/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "40361bde0d7e7aba54af1854fc54f44a0212149a122f94475c9da570c920e417",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    },
+    "post/central-limit-theorem/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "64e134b9af8f0013956af7d4e70458da7c667da82dc783d41d5aedf77232852f",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    },
+    "post/central-limit-theorem/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "5eca0197a049c0e3a30f34ae2bfc474b4527d4fd99d102d82b081a7239e7eec0",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    },
+    "post/central-limit-theorem/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "6780be2eff03914ec325a79200e1e7a20ae6a8d708e589a59bb4da1f8334341b",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    },
+    "post/central-limit-theorem/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "5297d66bedc924d8154f60d37c9c4686fb4b595a57c99eafc6c09a0c30e8afc3",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    },
+    "post/central-limit-theorem/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "516b6359c4dd8857a421e5f2e89f383ed47af8ea5e54c5f28b298b43285f1820",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    },
+    "post/central-limit-theorem/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "c1ee76a9f43182c474524fb21164f94a9818b14cb63b085e007b15d75be508d7",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    },
+    "post/central-limit-theorem/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "8aebed4e4725b75dd27bffbfea8d4061f6d6ce6c8e149eadbdf7235b24a48006",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    },
+    "post/central-limit-theorem/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "10184f9c1dd117fff22482b5888e956c14a6cae487bb5553dc1a9f078cf0e6d7",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    },
+    "post/central-limit-theorem/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "f3d675f49280c3e6717077e7017d8276b96e3e4f56dc965796394fdbe2a3e9a3",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    },
+    "post/central-limit-theorem/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "e8f4a39dba35b7c16cf7a7c278b273bafd37af64a1720850165d9b0a8ff10df6",
+      "summary": "Compared the complete localized article with the Japanese source: theorem assumptions and scope, dice example, equations, characteristic-function proof, standard error, Cauchy counterexample, translated code/diagram, and localized references. Corrected two Indonesian phrasing issues without changing mathematical meaning.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Theorem scope (i.i.d., finite mean, finite positive variance), what converges, use cases, and caveats match the Japanese article."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "CLT, standard normal, variance, standard error, characteristic function, moment-generating function, and Levy continuity theorem are used consistently."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "All four displayed equations match after excluding localized explanatory text; the standard error scales as 1/sqrt(n), and the Cauchy example is correctly excluded."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Mermaid graph structure and executable Python simulation logic match the Japanese source; code comments and labels are localized."
+        },
+        "links": {
+          "status": "checked",
+          "note": "MIT 18.05 primary course PDF and four internal references use the intended language-specific routes."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Python simulation was not executed and rendered diagrams were not visually certified."
+      ]
+    }
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "batch": 85,
+  "article": "000_テンプレート",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+  "sources": [],
+  "scope": "Read the complete Japanese draft and all twelve complete translations. Compared metadata, title and description meaning, localized labels, Markdown formatting, placeholder code fence, external links, and draft status.",
+  "findings": [
+    "The Japanese H1 contained a typo (プログタイトル); corrected it to ブログタイトル.",
+    "All thirteen editions contained duplicate date keys with conflicting values. Removed the accidental 2026-09-24 duplicate and retained the original 2022-01-01 date; recorded the review date in lastmod.",
+    "All translations preserve the same heading, lists, emphasis, table, links, quotation, horizontal rule, and two video URLs.",
+    "The fenced PowerShell block contains only a comment placeholder, so it is not presented as executable guidance.",
+    "This remains a draft and is not published by the production site."
+  ],
+  "publicationPending": false,
+  "publicationStatus": "draft excluded from production",
+  "reviews": {
+    "post/000_テンプレート/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "47885cde7384efc5808046df16572f66aadfb906f05d9891f661c20cf3166fe9",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    },
+    "post/000_テンプレート/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "2d3999646f8062df11424aef987790faa81bc591cada78c296614fb0520f1cd7",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    },
+    "post/000_テンプレート/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "0274ad804a53b22f0f8b0e6f04ae4d310da4e8fe2e13ae22df1f33a34e48ba7a",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    },
+    "post/000_テンプレート/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "417b0446a379f1216f268ed130cef829e8e4d709adad1adc2886d532b7026eb8",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    },
+    "post/000_テンプレート/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "9821c72962cbfa7d1748dbfc9b3956ea19980dc3013788b963fd39e3614a0ddc",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    },
+    "post/000_テンプレート/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "74e8077ff6e6e42181afa9d1e5162189dbbcd9d7aee1f145357dfe3712f4cd67",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    },
+    "post/000_テンプレート/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "8e87f8bf2fbb00cb16957e2f3ac93af1968d87d7787bb8fc311c8cd5221d2cec",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    },
+    "post/000_テンプレート/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "b506b5e5c049f35f8769b8cfd69ad5821ca39377f921e41864d65761f421ce70",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    },
+    "post/000_テンプレート/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "fa64569b34f192a38440a2c12c409de288a34b22286aceba556ff68a48c40052",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    },
+    "post/000_テンプレート/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "578e6184b461d9d473b9e7b52232ca96acc36e9ba25fa24c830d9d21f149e051",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    },
+    "post/000_テンプレート/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "7efa6cc5d7ed0d35f55802946c4a168a8b0d552e388f219afceb9fb83a9b62ab",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    },
+    "post/000_テンプレート/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/000_テンプレート/index.md",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "fe3b4e1bde4eed042b4c34a9aa0e277185b4b65a854c7cdf89bd934291a42123",
+      "summary": "Compared this complete localized template draft with Japanese: metadata, Markdown syntax examples, placeholders, links, and SEO-related description. Corrected the Japanese heading typo and removed the duplicate date field from all editions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The title and localized descriptions identify this as a reusable article-writing template; examples and placeholders align with the Japanese draft."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Localized labels for headings, lists, code blocks, links, quotations, and SEO describe the same template elements."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The template contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The shell-fenced PowerShell placeholder is present in every edition; it is intentionally illustrative and is not an executable article example."
+        },
+        "links": {
+          "status": "checked",
+          "note": "The Google link and two YouTube URLs match the Japanese template in all translations."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "This article is marked draft:true and is excluded from production publication."
+      ]
+    }
+  }
+}

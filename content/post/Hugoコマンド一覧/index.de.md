@@ -1,8 +1,8 @@
 ---
 title: 'Hugo CLI Installation und eine Liste häufig verwendeter grundlegender Befehle'
-date: "2026-09-24T19:44:38+09:00"
 slug: "HugoBefehl一覧"
 date: 2024-05-31T01:36:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["hugo", "befehle"]
 draft: false
 image: "img.webp"
@@ -35,18 +35,18 @@ Hugo bietet verschiedene Befehle. Im Folgenden sind die am häufigsten verwendet
 ## Eine neue Website erstellen
 
 ```bash
-hugo new site <site-name>
+hugo new project <site-name>
 ```
 
-Befehl zum Erstellen einer neuen Website. Geben Sie unter `<site-name>` den Namen der Website an.
+Erstellt eine neue Website mit dem angegebenen Namen.
 
 ## Einen neuen Artikel erstellen
 
 ```bash
-hugo new <artikelname>.md
+hugo new content posts/<post-name>.md
 ```
 
-Befehl zum Erstellen eines neuen Artikels. Geben Sie unter `<artikelname>` den Namen des Artikels an.
+Erstellt eine neue Inhaltsdatei am angegebenen Pfad.
 
 ## Den Server starten
 
@@ -70,7 +70,7 @@ Befehl zum Erstellen (Builden) der Website. HTML-Dateien werden im Verzeichnis `
 hugo deploy
 ```
 
-Befehl zur Bereitstellung der Website. Die Einstellungen für das Bereitstellungsziel werden in der Datei `config.toml` vorgenommen.
+Dieser Befehl stellt die Website bei unterstützten Cloud-Speicheranbietern bereit. Konfigurieren Sie ein Ziel im Abschnitt `deployment` und melden Sie sich mit der CLI des Anbieters an. Der Befehl ist nicht für beliebige Webhoster wie GitHub Pages gedacht. Ab Hugo v0.159.2 ist dafür die Deploy-Edition erforderlich.
 
 ## Artikelliste anzeigen
 
@@ -78,7 +78,7 @@ Befehl zur Bereitstellung der Website. Die Einstellungen für das Bereitstellung
 hugo list all
 ```
 
-Befehl zum Anzeigen der Artikelliste.
+Listet alle Inhalte auf, einschließlich Entwürfen, zukünftigen und abgelaufenen Inhalten.
 
 ## Konfiguration überprüfen
 
@@ -86,7 +86,7 @@ Befehl zum Anzeigen der Artikelliste.
 hugo config
 ```
 
-Befehl zur Überprüfung der Konfiguration.
+Zeigt sowohl Standardwerte als auch die für die Website festgelegten Einstellungen an.
 
 ## Hilfe anzeigen
 
@@ -102,9 +102,14 @@ Befehl zur Anzeige der Hilfe.
 hugo version
 ```
 
-Befehl zur Anzeige der Version.
+Zeigt die Hugo-Version und Informationen zur Laufzeitumgebung an.
+
 
 Dies ist die Liste der Hugo-Befehle. Da es viele weitere Befehle gibt, konsultieren Sie bitte die offizielle Dokumentation.
 
 # Referenz
-- [Offizielle Hugo Dokumentation](https://gohugo.io/documentation/)
+- [Projekt erstellen](https://gohugo.io/commands/hugo_new_project/)
+- [Inhalte erstellen](https://gohugo.io/commands/hugo_new_content/)
+- [Bereitstellen](https://gohugo.io/commands/hugo_deploy/)
+- [Alle Inhalte auflisten](https://gohugo.io/commands/hugo_list_all/)
+- [Installation unter macOS](https://gohugo.io/installation/macos/)

@@ -1,8 +1,8 @@
 ---
 title: 'Hugo CLI Installation and List of Frequently Used Basic Commands'
-date: "2026-09-24T19:44:38+09:00"
 slug: "HugoCommand一覧"
 date: 2024-05-31T01:36:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["hugo", "command"]
 draft: false
 image: "img.webp"
@@ -35,18 +35,18 @@ Hugo provides various commands. Below is a summary of commonly used commands.
 ## Create a new site
 
 ```bash
-hugo new site <site-name>
+hugo new project <site-name>
 ```
 
-Command to create a new site. Specify the name of the site in `<site-name>`.
+Creates a new site using the name you provide.
 
 ## Create a new post
 
 ```bash
-hugo new <post-name>.md
+hugo new content posts/<post-name>.md
 ```
 
-Command to create a new post. Specify the name of the post in `<post-name>`.
+Creates a new content file at the specified path.
 
 ## Start the server
 
@@ -70,7 +70,7 @@ Command to build the site. HTML files will be generated in the `public` director
 hugo deploy
 ```
 
-Command to deploy the site. Deployment settings are configured in the `config.toml` file.
+This command deploys to supported cloud storage providers. Configure a target in the `deployment` section of the site configuration and authenticate with the provider's CLI. It is not a general-purpose command for web hosts such as GitHub Pages. Hugo v0.159.2 and later require the Deploy edition.
 
 ## List all posts
 
@@ -78,7 +78,7 @@ Command to deploy the site. Deployment settings are configured in the `config.to
 hugo list all
 ```
 
-Command to display a list of all posts.
+Lists all content, including drafts, future-dated items, and expired content.
 
 ## Check configuration
 
@@ -86,7 +86,7 @@ Command to display a list of all posts.
 hugo config
 ```
 
-Command to check the configuration.
+Displays both default settings and the settings configured for the site.
 
 ## Display help
 
@@ -102,9 +102,14 @@ Command to display help information.
 hugo version
 ```
 
-Command to display the version.
+Displays the Hugo version and environment information.
+
 
 That concludes the Hugo command list. There are many other commands available, so please refer to the official documentation for more details.
 
 # References
-- [Hugo Official Documentation](https://gohugo.io/documentation/)
+- [Create a project](https://gohugo.io/commands/hugo_new_project/)
+- [Create content](https://gohugo.io/commands/hugo_new_content/)
+- [Deploy](https://gohugo.io/commands/hugo_deploy/)
+- [List all content](https://gohugo.io/commands/hugo_list_all/)
+- [Install on macOS](https://gohugo.io/installation/macos/)

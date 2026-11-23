@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "batch": 82,
+  "verifiedAt": "2026-11-24T00:31:14+09:00",
+  "ciRun": 45198958976,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45198958976",
+  "sourceCommit": "7fe7815c7f20b0bd4d85161ba1552700316a7a11",
+  "deployment": "success",
+  "pagesVerified": 13,
+  "allPassed": true,
+  "checks": [
+    "13 live pages with HTTP 200, canonical, language/RTL, title/description, and reciprocal hreflang",
+    "seven official Hugo documentation links and shortcode/version/privacy examples",
+    "original publication date, lastmod, and built-in versus custom Flickr guidance"
+  ],
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8Bshort%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%E7%9F%AD%E8%B7%AF%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8Bcorto%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%EC%87%BC%ED%8A%B8%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8Bcurto%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%E7%9F%AD%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%E0%A4%B6%E0%A5%89%E0%A4%B0%E0%A5%8D%E0%A4%9F%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8Bcourt%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8Bshort%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%D9%82%D8%B5%D9%8A%D8%B1%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%D0%BA%D0%BE%D1%80%D0%BE%D1%82%D0%BA%D0%B8%D0%B9%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/hugo%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8Bpendek%E3%82%B3%E3%83%BC%E3%83%89/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "shortcodeExamples": true,
+        "privacyAndCustomShortcodeGuidance": true,
+        "sourceReviewContent": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "Examples were compared with official documentation but were not executed for every Hugo version."
+  ]
+}

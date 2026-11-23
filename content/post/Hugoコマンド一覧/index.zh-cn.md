@@ -1,8 +1,8 @@
 ---
 title: 'Hugo CLI的安装与常用基本命令一览'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Hugo命令一覧"
 date: 2024-05-31T01:36:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["hugo", "命令"]
 draft: false
 image: "img.webp"
@@ -35,18 +35,18 @@ Hugo 提供了各种各样的命令。下面总结了常用的命令。
 ## 创建新网站
 
 ```bash
-hugo new site <网站名>
+hugo new project <site-name>
 ```
 
-这是创建新网站的命令。`<网站名>`请指定网站的名称。
+使用指定的名称创建新网站。
 
 ## 创建新文章
 
 ```bash
-hugo new <文章名>.md
+hugo new content posts/<post-name>.md
 ```
 
-这是创建新文章的命令。`<文章名>`请指定文章的名称。
+在指定路径创建新的内容文件。
 
 ## 启动服务器
 
@@ -70,7 +70,7 @@ hugo
 hugo deploy
 ```
 
-这是部署网站的命令。部署目标可以在 `config.toml` 文件中配置。
+此命令用于将网站部署到受支持的云存储服务。请在站点配置的 `deployment` 部分设置目标，并通过服务商的 CLI 完成身份验证。它不是适用于 GitHub Pages 等任意网站托管服务的通用部署命令。Hugo v0.159.2 及更高版本需要 Deploy 版本。
 
 ## 显示文章列表
 
@@ -78,7 +78,7 @@ hugo deploy
 hugo list all
 ```
 
-这是显示文章列表的命令。
+列出所有内容，包括草稿、发布日期在未来的内容和已过期内容。
 
 ## 确认配置
 
@@ -86,7 +86,7 @@ hugo list all
 hugo config
 ```
 
-这是确认配置的命令。
+显示默认设置以及站点自定义的设置。
 
 ## 显示帮助
 
@@ -102,9 +102,14 @@ hugo help
 hugo version
 ```
 
-这是显示版本的命令。
+显示 Hugo 版本和运行环境信息。
+
 
 以上就是 Hugo 的命令一览。除此之外，还有很多其他命令，请参考官方文档。
 
 # 参考
-- [Hugo 官方文档](https://gohugo.io/documentation/)
+- [创建项目](https://gohugo.io/commands/hugo_new_project/)
+- [创建内容](https://gohugo.io/commands/hugo_new_content/)
+- [部署](https://gohugo.io/commands/hugo_deploy/)
+- [列出所有内容](https://gohugo.io/commands/hugo_list_all/)
+- [在 macOS 上安装](https://gohugo.io/installation/macos/)

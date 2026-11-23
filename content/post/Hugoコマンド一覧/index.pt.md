@@ -1,8 +1,8 @@
 ---
 title: 'Instalação do Hugo CLI e a Lista de Comandos Básicos Mais Usados'
-date: "2026-09-24T19:44:38+09:00"
 slug: "HugoComando一覧"
 date: 2024-05-31T01:36:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["hugo", "comandos"]
 draft: false
 image: "img.webp"
@@ -35,18 +35,18 @@ O Hugo oferece vários comandos. Abaixo estão resumidos os comandos usados com 
 ## Criar um novo site
 
 ```bash
-hugo new site <nome-do-site>
+hugo new project <site-name>
 ```
 
-Comando para criar um novo site. Em `<nome-do-site>`, especifique o nome do site.
+Cria um novo site com o nome informado.
 
 ## Criar um novo artigo
 
 ```bash
-hugo new <nome-do-artigo>.md
+hugo new content posts/<post-name>.md
 ```
 
-Comando para criar um novo artigo. Em `<nome-do-artigo>`, especifique o nome do artigo.
+Cria um novo arquivo de conteúdo no caminho especificado.
 
 ## Iniciar o servidor
 
@@ -70,7 +70,7 @@ Comando para compilar o site. Arquivos HTML serão gerados no diretório `public
 hugo deploy
 ```
 
-Comando para fazer o deploy do site. As configurações do destino de deploy são feitas no arquivo `config.toml`.
+Este comando publica o site em provedores de armazenamento na nuvem compatíveis. Configure um destino na seção `deployment` e autentique-se pela CLI do provedor. Ele não é um comando genérico para qualquer hospedagem, como o GitHub Pages. Hugo v0.159.2 e versões posteriores exigem a edição Deploy.
 
 ## Exibir a lista de artigos
 
@@ -78,7 +78,7 @@ Comando para fazer o deploy do site. As configurações do destino de deploy sã
 hugo list all
 ```
 
-Comando para exibir a lista de artigos.
+Lista todo o conteúdo, incluindo rascunhos, conteúdo com data futura e conteúdo expirado.
 
 ## Verificar configurações
 
@@ -86,7 +86,7 @@ Comando para exibir a lista de artigos.
 hugo config
 ```
 
-Comando para verificar as configurações.
+Exibe as configurações padrão e as definidas para o site.
 
 ## Exibir ajuda
 
@@ -102,9 +102,14 @@ Comando para exibir a ajuda.
 hugo version
 ```
 
-Comando para exibir a versão.
+Exibe a versão do Hugo e as informações do ambiente.
+
 
 Essa é a lista de comandos do Hugo. Como existem muitos outros comandos disponíveis, consulte a documentação oficial.
 
 # Referência
-- [Documentação Oficial do Hugo](https://gohugo.io/documentation/)
+- [Criar um projeto](https://gohugo.io/commands/hugo_new_project/)
+- [Criar conteúdo](https://gohugo.io/commands/hugo_new_content/)
+- [Publicar](https://gohugo.io/commands/hugo_deploy/)
+- [Listar todo o conteúdo](https://gohugo.io/commands/hugo_list_all/)
+- [Instalar no macOS](https://gohugo.io/installation/macos/)

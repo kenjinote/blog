@@ -8,153 +8,153 @@
   "reviews": {
     "post/central-limit-theorem/index.en.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
       "translationHash": "9ee3c9b5b6154e45bd3204003e570d7f51712ac6c53962ffb97d8dc6f92d3dab",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "ecb740c131234d9d7658686a80b902d072d0b2c1d64ca9abc09042a09dd87fb3"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "5baf28c82dc0862e6b2123bb4130dc8d44c2c2b4c97507b2a3c74f77b58b1bee"
     },
     "post/central-limit-theorem/index.zh-cn.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
       "translationHash": "40361bde0d7e7aba54af1854fc54f44a0212149a122f94475c9da570c920e417",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "27b7ecc40f74021259480ba9b248f3f29beb96ffaac15a8f1f4bf88d4fb987ce"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "806275491ae0dc3bdab462264ef0f53afd1fc3612f2ff5e4ac19ce2ffe677ecc"
     },
     "post/central-limit-theorem/index.es.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
       "translationHash": "64e134b9af8f0013956af7d4e70458da7c667da82dc783d41d5aedf77232852f",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "431e1074d953105b0c0a0a5bef3ae56725812289873a2a567c1e2ec248a86f0b"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "3a0141019a1784d55eaef951de01a02a8ca8035c1bb2d85adc9884026798bbdf"
     },
     "post/central-limit-theorem/index.ko.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
       "translationHash": "5eca0197a049c0e3a30f34ae2bfc474b4527d4fd99d102d82b081a7239e7eec0",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "f4fe2a758f07b42e3b574c42f5a9fa190fd9c75b97ad79b8e62e8bbde40722e6"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "21535bebef086340d486730906a7bbfdd00ebc976484a6fe25b5a2ac9ae9d36e"
     },
     "post/central-limit-theorem/index.pt.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
       "translationHash": "6780be2eff03914ec325a79200e1e7a20ae6a8d708e589a59bb4da1f8334341b",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "6455f1033fd4e6d6290b872c8047f940283b43e1af5609abf36636a3fab12d31"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "eef53867511786b5071a8e85458572f512bc5465784905fc6a847ad41f02f096"
     },
     "post/central-limit-theorem/index.zh-tw.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
       "translationHash": "5297d66bedc924d8154f60d37c9c4686fb4b595a57c99eafc6c09a0c30e8afc3",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "e1d43f1b2eb07054413fc0ca3f53d2fc5fc43d4be62bae5e2982cc19553fd6d3"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "b94f5c69085e7ab5e7dfd065bb95828337fd31e28da98c50156e44b0f7521a44"
     },
     "post/central-limit-theorem/index.hi.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
       "translationHash": "516b6359c4dd8857a421e5f2e89f383ed47af8ea5e54c5f28b298b43285f1820",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "1bd0623d02a7948cf72bf71f744cde1b79680ea1b592655dbc5b40eeb130ce30"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "3f09c700448e7ea1fcd1cbc53050a55ca522d067e5176262a88f766614ea72c2"
     },
     "post/central-limit-theorem/index.fr.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
       "translationHash": "c1ee76a9f43182c474524fb21164f94a9818b14cb63b085e007b15d75be508d7",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "2096f2bcb6d36729592ea40b895c467d32ee937e42bdf30aaa3bf35c1f2ddb35"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "ebf1e4da29f47310cdba9972915bfcf7bfd32a8f30ac2cccce8a4bc9654f2872"
     },
     "post/central-limit-theorem/index.de.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
       "translationHash": "8aebed4e4725b75dd27bffbfea8d4061f6d6ce6c8e149eadbdf7235b24a48006",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "9ac710c1097e416a60fc1d9a91fbaff10fafcc1502050b8264cb7830e5371b9e"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "384c2840e657e1508aedfba03c0c29853f0fd6451e171e44d0d93e20b7d32948"
     },
     "post/central-limit-theorem/index.ar.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
       "translationHash": "10184f9c1dd117fff22482b5888e956c14a6cae487bb5553dc1a9f078cf0e6d7",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "ab415e092ca8fc1bed8977fa5e5dac8f7968bf0bfb2665376d43db0aacf54c78"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "33d5c43fec009c75d1d0507a0bc3920540f81a36a2f70149ff151ff2c4229330"
     },
     "post/central-limit-theorem/index.ru.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
       "translationHash": "f3d675f49280c3e6717077e7017d8276b96e3e4f56dc965796394fdbe2a3e9a3",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "3f41a049661416b8413ca265c7cb2e3cc515bdfc6b802cb8e7fa4fd01375dae1"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "c0769f38f8b980d7951da0ab2e70a00f7cbe615cfb9951493f88ad774d5121c9"
     },
     "post/central-limit-theorem/index.id.md": {
       "source": "post/central-limit-theorem/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
-      "translationHash": "2da5bec813d0e3fa6f71de6c05997e3776b89cbc735f1fb20eaba5d2e9c88e10",
+      "translationHash": "e8f4a39dba35b7c16cf7a7c278b273bafd37af64a1720850165d9b0a8ff10df6",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-064.json",
-      "evidenceHash": "117b36b926c352657383b6b272426c134a4b761bb49a01cdfe7fe9800b93e15f"
+      "evidence": "docs/translation-review/batch-083.json",
+      "evidenceHash": "1eb2b48b01a1888bf8d5884238a78b8cf776d195c2e4ed6a261b2d4c11f9d405"
     },
     "post/cross-site-scripting-xss-csrf-security/index.en.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "c085fefe7a7410a1a1d742972633336efd2a92d26ddad99324f10c3cc2f3561a",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "dfef1bdb9904edb2661e08b0bbbb0f007150edde03effdb7a528b71a6a2e3096"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "588a902e4745916328881a9fe819ae7d74d13c63ae5f717bc3ad32ab83db386e"
     },
     "post/cross-site-scripting-xss-csrf-security/index.zh-cn.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "cf3b43313460446fe5cdf1635a965ddc0886aefdcfdeab4af8fc5c1cbf50bf52",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "d15c54a98be7e74f1065339ffcd742eb7f7af2d6fbf4135480efec31ea5f7ee6"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "dc04ff80ad41c6355d73ce43c6183c2c9c151c53ce0d7a7edf60109a3e50a721"
     },
     "post/cross-site-scripting-xss-csrf-security/index.zh-tw.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "d71f10bb8b3563e055c3c752962075fb3ac578957e12114db018b3b3025a099c",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "e51762791cbad0a565293b67f1cfdaf5071fdbc1e4e238788bc1376e52072450"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "d631d1b302e1958216e65700d9cb40d9b71c2911ce39721127fb9cdd03a0364b"
     },
     "post/history-of-unicode-encoding/index.en.md": {
       "source": "post/history-of-unicode-encoding/index.md",
@@ -188,93 +188,93 @@
     },
     "post/cross-site-scripting-xss-csrf-security/index.es.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "71f262c3ccadfaf3bbfc367c32a55fdc50ef6c3b727627ecb3bf73b70268774e",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "57f84c3b7da44139c0b79d224140771cf3c3b1172a7af39a7c790aaf050ca88f"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "d6316206a4c78b5fccbce45aae8415131c29ae3fe2a13b3dabbe66e6d5469794"
     },
     "post/cross-site-scripting-xss-csrf-security/index.ko.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "ca2f91433635c3b000f1bad32b81ae4fdcf7a010d14537612a1da4436fd30029",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "6a7df86d614f5ad88f037d98ea460b157b9a776a75750a700b2fbcae3cc6f92f"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "a62215eaa578b3a21cb071f3fb950107fc69c0ff56803349b686a1fb33e54fe8"
     },
     "post/cross-site-scripting-xss-csrf-security/index.pt.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "f6fcbf3f5860c04d912d706d790f37e365a22ddb89d6a49fc61ecbd65a8e6338",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "2b3672d3646f00fa53ea4c78be35120294a7475b370475b4f40459fa60236621"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "20cc4b926bd6d932b8d871fad996c4c316e7917cbfd1bcc807a31964f0884e5c"
     },
     "post/cross-site-scripting-xss-csrf-security/index.hi.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "769ad711c78f5fce998d1edeacc1725ae5058b75d97a31e2da28db9aa741b873",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "acb20a66e87d5a9040d8176e044ee00b631b814ac61a7f4f06b0bc3088e9f6ba"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "b9e11f8939c201d52b8b60f40bcd83899233b81807aaa89f341a12095edf9b36"
     },
     "post/cross-site-scripting-xss-csrf-security/index.fr.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "31478a0f110f619dbbb8486a41d94b047cddbc8e8ea946dc38c699772f5a2d22",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "9797500049be017caf2380fff2e386ba298ab25e6072fbe49c45014d9ee76b32"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "a8537aa361b9c7795338a84c8fc3f08298897d54533e099345fb088462eb69cb"
     },
     "post/cross-site-scripting-xss-csrf-security/index.de.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "4402b8996b1d962194adcfa157df3463652326f33400f255e373e86fe8254868",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "bac33361785317c76b100777d2a16a46a49277a8875bac2364c2fedd228b3965"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "4e502d884373317375c959b813df38c24bd3567d4b37905690aba601a6393011"
     },
     "post/cross-site-scripting-xss-csrf-security/index.ar.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "96878509a92878346568202812abccf3591d1b8194c9913ee0f50af591683097",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "ced2d7d7e28af225a7e9c3ea35b7fb470459d9db081eed2c3095d66a855e1524"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "8540f2e119298d4ee401b0548bc4344ff286a1d2b828743cdca3529ad801d2fc"
     },
     "post/cross-site-scripting-xss-csrf-security/index.ru.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "a7a95ac7db04c1295c0ad0bf645aadf6158926b40e4c90cee44b10dc4f9aceb3",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "c48aaa0da4ba1b2d739f1884684fe09a7b1f67ab92b31f80c259bafa141bfda2"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "fbfe665052f4a8b6f2b61f031d794a0f8fc2e648311a1f4e631fb29a6f012661"
     },
     "post/cross-site-scripting-xss-csrf-security/index.id.md": {
       "source": "post/cross-site-scripting-xss-csrf-security/index.md",
-      "reviewedAt": "2026-11-23",
+      "reviewedAt": "2026-11-24",
       "reviewer": "Codex (AI)",
       "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
       "translationHash": "9265ca20aaaa6e000fd38ef6289eb47918815bf07a2c9dae4e6be2c67040dad2",
       "reviewKind": "ai",
-      "evidence": "docs/translation-review/batch-065.json",
-      "evidenceHash": "a456a1c124f3fb949e788f80883e11bf4ba3eb1d201ad2f91aa407d3ba66310b"
+      "evidence": "docs/translation-review/batch-084.json",
+      "evidenceHash": "01ca7028e9c9017aa03ce4885838e3d6171cd3250a404f610b18e6da8ce27e9f"
     },
     "post/history-of-unicode-encoding/index.es.md": {
       "source": "post/history-of-unicode-encoding/index.md",
@@ -9605,6 +9605,246 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-082.json",
       "evidenceHash": "d270805071a2142d9dfbeea2ea7c22dd2953a66fd6641dda675f649ddf9b184d"
+    },
+    "post/000_テンプレート/index.ar.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "47885cde7384efc5808046df16572f66aadfb906f05d9891f661c20cf3166fe9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "e7d8240c862fdfa7acc80742a618c2d599552c62f681c51d9d72d71ae103d47a"
+    },
+    "post/000_テンプレート/index.de.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "2d3999646f8062df11424aef987790faa81bc591cada78c296614fb0520f1cd7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "a6a8d5b4985d905a30bf520550cefbb70f0059daeab4529f5f16976d98359932"
+    },
+    "post/000_テンプレート/index.en.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "0274ad804a53b22f0f8b0e6f04ae4d310da4e8fe2e13ae22df1f33a34e48ba7a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "be15b4655a76f9d2a46a07b4bd7a808759cac6b604b4d1ef203561a38fd38063"
+    },
+    "post/000_テンプレート/index.es.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "417b0446a379f1216f268ed130cef829e8e4d709adad1adc2886d532b7026eb8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "4f84c58462b129a1cb3ad430729b1b6fc639146c3261fac8fd8788caba618fe4"
+    },
+    "post/000_テンプレート/index.fr.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "9821c72962cbfa7d1748dbfc9b3956ea19980dc3013788b963fd39e3614a0ddc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "ebafb199230ecd5908d2105dcb566fa252837c37ce163415102a8af150828c6f"
+    },
+    "post/000_テンプレート/index.hi.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "74e8077ff6e6e42181afa9d1e5162189dbbcd9d7aee1f145357dfe3712f4cd67",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "7c4cc81bc2fbb7085af7456d20238d924f9a34a2c6909a19e831f0a7208deb8f"
+    },
+    "post/000_テンプレート/index.id.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "8e87f8bf2fbb00cb16957e2f3ac93af1968d87d7787bb8fc311c8cd5221d2cec",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "67987624a44f85ad83a8f56104d1d9ad53f456afdea46ad4245e1953fb545bae"
+    },
+    "post/000_テンプレート/index.ko.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "b506b5e5c049f35f8769b8cfd69ad5821ca39377f921e41864d65761f421ce70",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "e67599f5275be9ad0c6b5d6158d42804691a1168bb909ace4ed70dd9fefe56b9"
+    },
+    "post/000_テンプレート/index.pt.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "fa64569b34f192a38440a2c12c409de288a34b22286aceba556ff68a48c40052",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "f42c5a89eceeffd6224ec864046c4f07441234ded4697a429cc2a3e185481938"
+    },
+    "post/000_テンプレート/index.ru.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "578e6184b461d9d473b9e7b52232ca96acc36e9ba25fa24c830d9d21f149e051",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "d9b4e645ecc8e45eb2796627fccf3cc3094dd36bb39ddc3417c76449c9124a6e"
+    },
+    "post/000_テンプレート/index.zh-cn.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "7efa6cc5d7ed0d35f55802946c4a168a8b0d552e388f219afceb9fb83a9b62ab",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "f1c87eb0d18ea66786b1ff2b21da7fe6743f9aff998d88c8892970326f2e028f"
+    },
+    "post/000_テンプレート/index.zh-tw.md": {
+      "source": "post/000_テンプレート/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "006dcba08d1e8bba04a9cc428bab6d826cffdf61d24174750a0679db16bcd566",
+      "translationHash": "fe3b4e1bde4eed042b4c34a9aa0e277185b4b65a854c7cdf89bd934291a42123",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-085.json",
+      "evidenceHash": "48ba607fae8ec968532956dc223c7baee943ac75cd008091f8cf4dbe8bb0744c"
+    },
+    "post/Hugoコマンド一覧/index.ar.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "e0b753b573c0c5db63e62df53f2cb24e5d3a342303d7090744bcbdfa47b6c4f5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "06ee652f4823f9cbc03f598da09cbd189e7bfcf79ce5be1f8b6ac350200fa748"
+    },
+    "post/Hugoコマンド一覧/index.de.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "baa0fed91b0ddbbe60514ca98c8d5aace4182e5908cb74d14d971b352d86bb1c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "d3877c45e3dd1038621d63e8e46454181a5bbfad3e516671dd275188ec9965f3"
+    },
+    "post/Hugoコマンド一覧/index.en.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "f7e12260538eb61aa149624b274d0d4c552346d2ab5e047fc4bad9e6539cb4c3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "5406fe188ec6aaeff97b0d18e4e1b711761cb46f632627382c52d1f1381fe874"
+    },
+    "post/Hugoコマンド一覧/index.es.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "3fc8188a394d1210eacaafa2d3e8b3e21223273673cfa3298c95f6eaca410226",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "8ccb2ee715c173d00985425656f4269e6f77910add8138b5309f4d6ad5eea2d1"
+    },
+    "post/Hugoコマンド一覧/index.fr.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "b7f900c9f5fc405a9626ba53e315d9baf3cbe6d361e44a6c01cdd1b283a7f017",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "2f824ff9b6f13f0716695184845d48d68e3806f21fc3789b3036f3ed5712b5d2"
+    },
+    "post/Hugoコマンド一覧/index.hi.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "be1e91e2a2dc694555992eec3e7715de7ed1cf8cc4e548f7282d1f6906d517ed",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "f5a2564b6c2d82517c84b3fe8fc5d037baeeedaa03ea144e8a1509c88d990aaa"
+    },
+    "post/Hugoコマンド一覧/index.id.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "4d9e5b49a47642c6304d7e2f38c601bc241a2aad118c44af4355140a023737e8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "d51f5a9e391a9a333de510276332fd62882ff90eac26ddbf109e681866f097d9"
+    },
+    "post/Hugoコマンド一覧/index.ko.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "d2bf8fb9b93c2e5ebb83cb19914cbce68ab9fa558369b65b09cda13bcc320451",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "fe8a419c75366b754343c1d4dabb008e5e9e4528f92b5b76543341aae5c20121"
+    },
+    "post/Hugoコマンド一覧/index.pt.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "624106eff615a27ed79c3102c4b539e078fdc44816ecc417cdbf983e3fd13145",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "d80315efc9965ed60dd9279c952aa85b5f2e62f9f71984190b0b4a17c22852ac"
+    },
+    "post/Hugoコマンド一覧/index.ru.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "cb5238700408580cb8a2b098783581438bdc1a1dcb72ad97285b3d0afbfcd8b3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "140960cf993b76362c60f0e275f8a13dd721b4af7787e16e172f46dbc47e8206"
+    },
+    "post/Hugoコマンド一覧/index.zh-cn.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "20b03b397e27c7481fb103f9c7ad8f0e29fd1f30c73b6a8a1089fd9d45f421f0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "2051cfd65e76383cc7ccd7bf65c4408a0c7834644444cc2a82d76838b7e3620a"
+    },
+    "post/Hugoコマンド一覧/index.zh-tw.md": {
+      "source": "post/Hugoコマンド一覧/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "40cf76b989fc9c7f67c4e9fa5762f9e760832d101838737f23f3472f7df68180",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-086.json",
+      "evidenceHash": "eb727abdc7f049f484e7ff711849bd9b723bf81ca6f310b31f2b34b715adaa8e"
     }
   }
 }

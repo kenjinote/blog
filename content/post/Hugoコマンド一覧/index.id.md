@@ -1,8 +1,8 @@
 ---
 title: 'Instalasi Hugo CLI dan Daftar Perintah Dasar yang Sering Digunakan'
-date: "2026-09-24T19:44:38+09:00"
 slug: "HugoPerintah一覧"
 date: 2024-05-31T01:36:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["hugo", "perintah"]
 draft: false
 image: "img.webp"
@@ -35,18 +35,18 @@ Hugo menyediakan berbagai perintah. Berikut ini adalah ringkasan perintah yang s
 ## Membuat situs baru
 
 ```bash
-hugo new site <Nama Situs>
+hugo new project <site-name>
 ```
 
-Perintah untuk membuat situs baru. Tentukan nama situs pada `<Nama Situs>`.
+Membuat situs baru dengan nama yang Anda tentukan.
 
 ## Membuat artikel baru
 
 ```bash
-hugo new <Nama Artikel>.md
+hugo new content posts/<post-name>.md
 ```
 
-Perintah untuk membuat artikel baru. Tentukan nama artikel pada `<Nama Artikel>`.
+Membuat file konten baru pada path yang ditentukan.
 
 ## Memulai server
 
@@ -70,7 +70,7 @@ Perintah untuk membangun situs. File HTML akan dihasilkan di direktori `public`.
 hugo deploy
 ```
 
-Perintah untuk men-deploy situs. Pengaturan deploy dikonfigurasi dalam file `config.toml`.
+Perintah ini men-deploy situs ke penyedia penyimpanan cloud yang didukung. Atur target di bagian `deployment` pada konfigurasi situs dan autentikasi melalui CLI penyedia. Perintah ini bukan perintah umum untuk semua hosting web seperti GitHub Pages. Hugo v0.159.2 dan versi lebih baru memerlukan edisi Deploy.
 
 ## Menampilkan daftar artikel
 
@@ -78,7 +78,7 @@ Perintah untuk men-deploy situs. Pengaturan deploy dikonfigurasi dalam file `con
 hugo list all
 ```
 
-Perintah untuk menampilkan daftar artikel.
+Menampilkan semua konten, termasuk draf, konten bertanggal mendatang, dan konten kedaluwarsa.
 
 ## Memeriksa konfigurasi
 
@@ -86,7 +86,7 @@ Perintah untuk menampilkan daftar artikel.
 hugo config
 ```
 
-Perintah untuk memeriksa konfigurasi.
+Menampilkan pengaturan default dan pengaturan yang dikonfigurasi untuk situs.
 
 ## Menampilkan bantuan
 
@@ -102,9 +102,14 @@ Perintah untuk menampilkan bantuan.
 hugo version
 ```
 
-Perintah untuk menampilkan versi.
+Menampilkan versi Hugo dan informasi lingkungan.
+
 
 Demikianlah daftar perintah Hugo. Ada banyak perintah lain yang tersedia, jadi silakan merujuk ke dokumentasi resmi.
 
 # Referensi
-- [Dokumentasi Resmi Hugo](https://gohugo.io/documentation/)
+- [Membuat proyek](https://gohugo.io/commands/hugo_new_project/)
+- [Membuat konten](https://gohugo.io/commands/hugo_new_content/)
+- [Deploy](https://gohugo.io/commands/hugo_deploy/)
+- [Menampilkan semua konten](https://gohugo.io/commands/hugo_list_all/)
+- [Instalasi di macOS](https://gohugo.io/installation/macos/)

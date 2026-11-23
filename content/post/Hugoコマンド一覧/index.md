@@ -1,8 +1,8 @@
 ---
 title: 'Hugo CLIのインストールとよく使う基本コマンド一覧'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Hugoコマンド一覧"
 date: 2024-05-31T01:36:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["hugo", "コマンド"]
 draft: false
 image: "img.webp"
@@ -35,18 +35,18 @@ Hugo には、様々なコマンドが用意されています。以下に、よ
 ## 新しいサイトを作成する
 
 ```bash
-hugo new site <サイト名>
+hugo new project <site-name>
 ```
 
-新しいサイトを作成するコマンドです。`<サイト名>`には、サイトの名前を指定します。
+指定した名前の新しいサイトを作成します。
 
 ## 新しい記事を作成する
 
 ```bash
-hugo new <記事名>.md
+hugo new content posts/<post-name>.md
 ```
 
-新しい記事を作成するコマンドです。`<記事名>`には、記事の名前を指定します。
+指定したパスに新しいコンテンツファイルを作成します。
 
 ## サーバーを起動する
 
@@ -70,7 +70,7 @@ hugo
 hugo deploy
 ```
 
-サイトをデプロイするコマンドです。デプロイ先の設定は、`config.toml`ファイルで行います。
+クラウドストレージへのデプロイ機能です。デプロイ先は設定ファイルの `deployment` セクションで指定し、クラウド事業者のCLIで認証します。一般的なWebホスティングやGitHub Pages向けの汎用コマンドではありません。Hugo 0.159.2以降ではDeployエディションが必要です。
 
 ## 記事一覧を表示する
 
@@ -78,7 +78,7 @@ hugo deploy
 hugo list all
 ```
 
-記事一覧を表示するコマンドです。
+下書き、公開予定日が未来の記事、期限切れの記事も含めて、すべてのコンテンツを表示します。
 
 ## 設定の確認
 
@@ -86,7 +86,7 @@ hugo list all
 hugo config
 ```
 
-設定を確認するコマンドです。
+既定値とサイトで指定した設定を表示します。
 
 ## ヘルプを表示する
 
@@ -102,9 +102,14 @@ hugo help
 hugo version
 ```
 
-バージョンを表示するコマンドです。
+Hugoのバージョンと実行環境の情報を表示します。
+
 
 以上が、Hugo のコマンド一覧です。他にも、様々なコマンドが用意されていますので、公式ドキュメントを参照してください。
 
 # 参考
-- [Hugo 公式ドキュメント](https://gohugo.io/documentation/)
+- [新しいプロジェクト](https://gohugo.io/commands/hugo_new_project/)
+- [新しいコンテンツ](https://gohugo.io/commands/hugo_new_content/)
+- [デプロイ](https://gohugo.io/commands/hugo_deploy/)
+- [すべてのコンテンツ](https://gohugo.io/commands/hugo_list_all/)
+- [macOSへのインストール](https://gohugo.io/installation/macos/)

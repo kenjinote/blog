@@ -1,8 +1,8 @@
 ---
 title: 'Installation de la CLI Hugo et liste des commandes de base fréquemment utilisées'
-date: "2026-09-24T19:44:38+09:00"
 slug: "HugoCommande一覧"
 date: 2024-05-31T01:36:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["hugo", "commandes"]
 draft: false
 image: "img.webp"
@@ -35,18 +35,18 @@ Hugo propose diverses commandes. Les commandes fréquemment utilisées sont rés
 ## Créer un nouveau site
 
 ```bash
-hugo new site <nom-du-site>
+hugo new project <site-name>
 ```
 
-Commande pour créer un nouveau site. Dans `<nom-du-site>`, spécifiez le nom du site.
+Crée un nouveau site avec le nom indiqué.
 
 ## Créer un nouvel article
 
 ```bash
-hugo new <nom-de-l'article>.md
+hugo new content posts/<post-name>.md
 ```
 
-Commande pour créer un nouvel article. Dans `<nom-de-l'article>`, spécifiez le nom de l'article.
+Crée un nouveau fichier de contenu au chemin indiqué.
 
 ## Démarrer le serveur
 
@@ -70,7 +70,7 @@ Commande pour construire le site. Les fichiers HTML seront générés dans le r�
 hugo deploy
 ```
 
-Commande pour déployer le site. Les paramètres de destination du déploiement sont configurés dans le fichier `config.toml`.
+Cette commande déploie le site vers les fournisseurs de stockage cloud pris en charge. Configurez une cible dans la section `deployment` et authentifiez-vous avec l’interface en ligne de commande du fournisseur. Ce n’est pas une commande générique pour tout hébergement web, comme GitHub Pages. Hugo v0.159.2 et les versions ultérieures nécessitent l’édition Deploy.
 
 ## Afficher la liste des articles
 
@@ -78,7 +78,7 @@ Commande pour déployer le site. Les paramètres de destination du déploiement 
 hugo list all
 ```
 
-Commande pour afficher la liste des articles.
+Affiche tout le contenu, y compris les brouillons, les contenus à date future et les contenus expirés.
 
 ## Vérifier la configuration
 
@@ -86,7 +86,7 @@ Commande pour afficher la liste des articles.
 hugo config
 ```
 
-Commande pour vérifier la configuration.
+Affiche les paramètres par défaut et ceux définis pour le site.
 
 ## Afficher l'aide
 
@@ -102,9 +102,14 @@ Commande pour afficher l'aide.
 hugo version
 ```
 
-Commande pour afficher la version.
+Affiche la version de Hugo et les informations sur l’environnement.
+
 
 Ceci est la liste des commandes Hugo. Comme il existe de nombreuses autres commandes disponibles, veuillez vous référer à la documentation officielle.
 
 # Référence
-- [Documentation Officielle Hugo](https://gohugo.io/documentation/)
+- [Créer un projet](https://gohugo.io/commands/hugo_new_project/)
+- [Créer du contenu](https://gohugo.io/commands/hugo_new_content/)
+- [Déployer](https://gohugo.io/commands/hugo_deploy/)
+- [Lister tout le contenu](https://gohugo.io/commands/hugo_list_all/)
+- [Installer sur macOS](https://gohugo.io/installation/macos/)

@@ -2,7 +2,7 @@
 title: "Teorema limit pusat: syarat dan pendekatan normal untuk rata-rata sampel"
 description: "Penjelasan terperinci tentang Teorema Limit Pusat, salah satu teorema paling penting dalam statistik, dari pemahaman intuitif hingga bukti matematika dan simulasi dengan Python."
 date: 2026-09-14T13:20:38+09:00
-lastmod: 2026-11-23T02:00:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Teorema Limit Pusat", "Probabilitas", "Ilmu Data", "Python"]
@@ -109,7 +109,7 @@ Kesalahan pengukuran dan banyak sumber derau alami dapat dimodelkan sebagai juml
 
 ## 6. Lebih Mendalam: Pendekatan Pembuktian
 
-Fungsi karakteristik dan [ekspansi Taylor](/id/p/taylor-and-maclaurin-series/) digunakan untuk pembuktian yang ketat untuk Teorema Limit Pusat. Berikut ini ringkasannya.
+Fungsi karakteristik dan [ekspansi Taylor](/id/p/taylor-and-maclaurin-series/) digunakan dalam pembuktian ketat Teorema Limit Pusat. Berikut ringkasannya.
 
 Menggunakan fungsi karakteristik $\phi_X(t) = E[e^{itX}]$, fungsi karakteristik dari jumlah variabel acak independen adalah hasil kali dari masing-masing fungsi karakteristiknya. Ketika kita menghitung fungsi karakteristik dari variabel terstandarisasi $Z$ dan mengambil batas saat $n \to \infty$, itu dapat terbukti konvergen ke $e^{-t^2/2}$, yang merupakan fungsi karakteristik dari distribusi normal standar. Ini menunjukkan bahwa distribusi variabel terstandarisasi konvergen ke distribusi normal standar.
 
@@ -135,7 +135,7 @@ $$
 E[\bar X_n]=\mu,\qquad \operatorname{Var}(\bar X_n)=\frac{\sigma^2}{n},\qquad \operatorname{SE}(\bar X_n)=\frac{\sigma}{\sqrt n}.
 $$
 
-Melipatgandakan ukuran sampel menjadi empat kali lipat akan mengurangi setengah galat baku. [Hukum bilangan besar](/id/p/law-of-large-numbers/) menyatakan bahwa rata-rata sampel mendekati $\mu$, dan Teorema Limit Pusat menggambarkan bentuk distribusi dengan mengalikan fluktuasi di sekitarnya dengan $\sqrt{n}$.
+Jika ukuran sampel menjadi empat kali lebih besar, galat baku turun menjadi setengahnya. [Hukum bilangan besar](/id/p/law-of-large-numbers/) menyatakan bahwa rata-rata sampel mendekati $\mu$, dan Teorema Limit Pusat menggambarkan bentuk distribusi dengan mengalikan fluktuasi di sekitarnya dengan $\sqrt{n}$.
 
 ### Lampiran 4: Bukti Tambahan Menggunakan Fungsi Karakteristik
 

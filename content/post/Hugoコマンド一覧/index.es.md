@@ -1,30 +1,14 @@
 ---
-
-
-
-
-
-
-
-
 title: 'Instalación de la CLI de Hugo y lista de comandos básicos más usados'
-date: "2026-09-24T19:44:38+09:00"
 slug: "HugoComando一覧"
 date: 2024-05-31T01:36:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["hugo", "comandos"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
 description: 'Presentamos cómo instalar la CLI de Hugo, un rápido generador de sitios estáticos, y una lista de comandos básicos que usarás frecuentemente al gestionar tu blog. Explicamos las operaciones que los principiantes en Hugo deben memorizar: crear un sitio nuevo, escribir artículos, iniciar el servidor local, hacer la build, etc.'
 ---
-
-
-
-
-
-
-
-
 
 # ¿Qué es Hugo?
 
@@ -51,18 +35,18 @@ Hugo ofrece varios comandos. A continuación, se resumen los comandos más utili
 ## Crear un nuevo sitio
 
 ```bash
-hugo new site <nombre del sitio>
+hugo new project <site-name>
 ```
 
-Comando para crear un nuevo sitio. Especifica el nombre del sitio en `<nombre del sitio>`.
+Crea un sitio nuevo con el nombre que indiques.
 
 ## Crear un nuevo artículo
 
 ```bash
-hugo new <nombre del artículo>.md
+hugo new content posts/<post-name>.md
 ```
 
-Comando para crear un nuevo artículo. Especifica el nombre del artículo en `<nombre del artículo>`.
+Crea un archivo de contenido en la ruta especificada.
 
 ## Iniciar el servidor
 
@@ -86,7 +70,7 @@ Comando para construir el sitio. Los archivos HTML se generan en el directorio `
 hugo deploy
 ```
 
-Comando para desplegar el sitio. La configuración del destino de despliegue se realiza en el archivo `config.toml`.
+Este comando despliega el sitio en proveedores compatibles de almacenamiento en la nube. Configura el destino en la sección `deployment` y autentícate con la CLI del proveedor. No es un comando genérico para cualquier alojamiento web, como GitHub Pages. Hugo v0.159.2 y posteriores requieren la edición Deploy.
 
 ## Mostrar la lista de artículos
 
@@ -94,7 +78,7 @@ Comando para desplegar el sitio. La configuración del destino de despliegue se 
 hugo list all
 ```
 
-Comando para mostrar la lista de artículos.
+Muestra todo el contenido, incluidos borradores, contenido con fecha futura y contenido vencido.
 
 ## Confirmar la configuración
 
@@ -102,7 +86,7 @@ Comando para mostrar la lista de artículos.
 hugo config
 ```
 
-Comando para confirmar la configuración.
+Muestra tanto los valores predeterminados como la configuración definida para el sitio.
 
 ## Mostrar la ayuda
 
@@ -118,9 +102,14 @@ Comando para mostrar la ayuda.
 hugo version
 ```
 
-Comando para mostrar la versión.
+Muestra la versión de Hugo y la información del entorno.
+
 
 Esta ha sido la lista de comandos de Hugo. Hay muchos otros comandos disponibles, así que consulta la documentación oficial.
 
 # Referencia
-- [Documentación oficial de Hugo](https://gohugo.io/documentation/)
+- [Crear un proyecto](https://gohugo.io/commands/hugo_new_project/)
+- [Crear contenido](https://gohugo.io/commands/hugo_new_content/)
+- [Desplegar](https://gohugo.io/commands/hugo_deploy/)
+- [Listar todo el contenido](https://gohugo.io/commands/hugo_list_all/)
+- [Instalar en macOS](https://gohugo.io/installation/macos/)

@@ -1,0 +1,445 @@
+{
+  "version": 1,
+  "batch": 86,
+  "article": "Hugoコマンド一覧",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+  "sources": [
+    "https://gohugo.io/commands/hugo_new_project/",
+    "https://gohugo.io/commands/hugo_new_content/",
+    "https://gohugo.io/commands/hugo_deploy/",
+    "https://gohugo.io/commands/hugo_list_all/",
+    "https://gohugo.io/installation/macos/"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations. Compared install example, CLI commands, shell syntax, output paths, deployment configuration and edition requirements, metadata, localized terminology, and direct official references.",
+  "findings": [
+    "Updated site creation to the current `hugo new project` CLI syntax and explicitly explained the older `hugo new site` examples.",
+    "Updated article creation to `hugo new content posts/<post-name>.md` and clarified its project-root path.",
+    "Corrected the misleading generic deploy description: `hugo deploy` targets supported cloud storage, uses a deployment target and provider authentication, and is not a general command for GitHub Pages; Hugo v0.159.2+ requires the Deploy edition.",
+    "Clarified that `hugo list all` includes drafts, future-dated and expired content, and that `hugo config` displays defaults as well as project configuration.",
+    "Replaced conflicting duplicate `date` metadata with one preserved 2024-05-31 date and a review `lastmod`; added direct official references in all languages."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Hugoコマンド一覧/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "e0b753b573c0c5db63e62df53f2cb24e5d3a342303d7090744bcbdfa47b6c4f5",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    },
+    "post/Hugoコマンド一覧/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "baa0fed91b0ddbbe60514ca98c8d5aace4182e5908cb74d14d971b352d86bb1c",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    },
+    "post/Hugoコマンド一覧/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "f7e12260538eb61aa149624b274d0d4c552346d2ab5e047fc4bad9e6539cb4c3",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    },
+    "post/Hugoコマンド一覧/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "3fc8188a394d1210eacaafa2d3e8b3e21223273673cfa3298c95f6eaca410226",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    },
+    "post/Hugoコマンド一覧/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "b7f900c9f5fc405a9626ba53e315d9baf3cbe6d361e44a6c01cdd1b283a7f017",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    },
+    "post/Hugoコマンド一覧/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "be1e91e2a2dc694555992eec3e7715de7ed1cf8cc4e548f7282d1f6906d517ed",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    },
+    "post/Hugoコマンド一覧/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "4d9e5b49a47642c6304d7e2f38c601bc241a2aad118c44af4355140a023737e8",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    },
+    "post/Hugoコマンド一覧/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "d2bf8fb9b93c2e5ebb83cb19914cbce68ab9fa558369b65b09cda13bcc320451",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    },
+    "post/Hugoコマンド一覧/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "624106eff615a27ed79c3102c4b539e078fdc44816ecc417cdbf983e3fd13145",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    },
+    "post/Hugoコマンド一覧/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "cb5238700408580cb8a2b098783581438bdc1a1dcb72ad97285b3d0afbfcd8b3",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    },
+    "post/Hugoコマンド一覧/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "20b03b397e27c7481fb103f9c7ad8f0e29fd1f30c73b6a8a1089fd9d45f421f0",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    },
+    "post/Hugoコマンド一覧/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Hugoコマンド一覧/index.md",
+      "sourceHash": "0e12c8b24d731b1296dcba831a31d74ef5bd44cab2f9f1a402fc82147f0c997f",
+      "translationHash": "40cf76b989fc9c7f67c4e9fa5762f9e760832d101838737f23f3472f7df68180",
+      "summary": "Read the complete Japanese article and all twelve translations. Compared installation context, site/content creation commands, local server, build output, deploy target and version requirements, list/config/version behavior, localized descriptions, metadata, and official references against current Hugo documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "The article now distinguishes current project/content commands, local development, build output, cloud-storage deployment, and ordinary hosting deployments consistently across editions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Hugo CLI, project, content, deployment target, Deploy edition, and cloud-storage terms were compared in all localized sections."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "All ten shell examples now match exactly across all thirteen editions; the project and content command syntax follows current Hugo CLI documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All five direct Hugo official references are live and identical across translations; localized internal Go-language links point to matching language paths."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
+      ]
+    }
+  }
+}

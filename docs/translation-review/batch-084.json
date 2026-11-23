@@ -1,0 +1,447 @@
+{
+  "version": 1,
+  "batch": 84,
+  "article": "cross-site-scripting-xss-csrf-security",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+  "sources": [
+    "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html",
+    "https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations. Compared taxonomy, threats, output encoding/CSP/HttpOnly, CSRF assumptions and token patterns, SameSite scope and limitations, code examples, diagram, and references with official OWASP cheat sheets and MDN.",
+  "findings": [
+    "All editions preserve the distinction between executing script in the same-origin browser context (XSS) and inducing cookie-authenticated cross-site requests (CSRF).",
+    "The article limits the form attack to a SameSite=None; Secure scenario without token or Origin checks and notes that browser third-party-cookie controls can block it.",
+    "The naive Double Submit equality check is identified as insufficient when cookie injection is possible; the signed, session-bound HMAC form is recommended.",
+    "CSP is explicitly an additional layer; SameSite and HttpOnly are not presented as substitutes for application-level protections.",
+    "All snippets, diagram structure, and six official references match across languages; no material translation discrepancy requiring correction was found."
+  ],
+  "publicationPending": false,
+  "publicationStatus": "Re-review only; no source or translation content changed, so no deployment was required.",
+  "reviews": {
+    "post/cross-site-scripting-xss-csrf-security/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "c085fefe7a7410a1a1d742972633336efd2a92d26ddad99324f10c3cc2f3561a",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "cf3b43313460446fe5cdf1635a965ddc0886aefdcfdeab4af8fc5c1cbf50bf52",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "71f262c3ccadfaf3bbfc367c32a55fdc50ef6c3b727627ecb3bf73b70268774e",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "ca2f91433635c3b000f1bad32b81ae4fdcf7a010d14537612a1da4436fd30029",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "f6fcbf3f5860c04d912d706d790f37e365a22ddb89d6a49fc61ecbd65a8e6338",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "d71f10bb8b3563e055c3c752962075fb3ac578957e12114db018b3b3025a099c",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "769ad711c78f5fce998d1edeacc1725ae5058b75d97a31e2da28db9aa741b873",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "31478a0f110f619dbbb8486a41d94b047cddbc8e8ea946dc38c699772f5a2d22",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "4402b8996b1d962194adcfa157df3463652326f33400f255e373e86fe8254868",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "96878509a92878346568202812abccf3591d1b8194c9913ee0f50af591683097",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "a7a95ac7db04c1295c0ad0bf645aadf6158926b40e4c90cee44b10dc4f9aceb3",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "9265ca20aaaa6e000fd38ef6289eb47918815bf07a2c9dae4e6be2c67040dad2",
+      "summary": "Compared the complete localized article with Japanese and current OWASP/MDN guidance: XSS categories and impact, output encoding/CSP/HttpOnly, cookie sending conditions, CSRF tokens and signed double-submit, SameSite scope and limitations, examples, and references.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "XSS and CSRF mechanisms are distinguished; browser cookie conditions, origin/same-site scope, mitigations, and their limitations match the Japanese source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Stored, reflected, and DOM-based XSS; output encoding; CSP; HttpOnly; CSRF token; HMAC; Origin; and SameSite terminology remain distinct."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The CSP header and reserved-domain CSRF form are identical to Japanese; Mermaid graph structure is preserved with localized labels."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All six OWASP and MDN references are present and match the primary/current guidance cited in the article."
+        }
+      },
+      "limitations": [
+        "AI-assisted editorial review; no human or native-speaker certification.",
+        "Illustrative attack examples and policy snippets were not executed in an application."
+      ]
+    }
+  }
+}

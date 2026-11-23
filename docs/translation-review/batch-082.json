@@ -21,7 +21,7 @@
     "Added current embedded-shortcode references and provider privacy settings, including YouTube privacyEnhanced and X simple mode.",
     "Restored the original 2022-09-11 publication date and set lastmod 2026-11-23 across all editions."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/HUGOで使えるショートコード/index.en.md": {
       "reviewKind": "ai",
@@ -443,5 +443,11 @@
         "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-082.json",
+    "ciRun": 45198958976,
+    "sourceCommit": "7fe7815c7f20b0bd4d85161ba1552700316a7a11",
+    "allPassed": true
   }
 }

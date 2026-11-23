@@ -1,8 +1,8 @@
 ---
 title: '[Complete Guide] Blog Article Creation Template! SEO-Friendly Heading Structure and Writing Tips'
-date: "2026-09-24T19:44:38+09:00"
 slug: "000_Template"
 date: 2022-01-01T00:00:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["Tag 1", "Tag 2"]
 draft: true
 categories: ["it-technology"]
