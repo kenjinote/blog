@@ -1,20 +1,27 @@
 ---
 title: 'إعلان عن طلب رعاية GitHub | طلب دعم التطوير'
-date: "2026-09-24T19:44:38+09:00"
 slug: "GitHubراعي募集"
-date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "راعي"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'في هذا المشروع، نحن نبحث عن رعاة على GitHub. سيتم استخدام الأموال التي نحصل عليها بعناية كنفقات نشاط لتقديم برامج أفضل، مثل تطوير أدوات مفيدة والحصول على شهادات توقيع التعليمات البرمجية.'
+date: "2023-01-17T18:13:56+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "كيفية دعم تطوير kenjinote المستقل عبر GitHub Sponsors، مع توضيح الاستخدام المقصود والشروط الحالية."
 ---
 
-# البحث عن رعاة على GitHub
-سأكون سعيداً إذا أصبحت راعياً على GitHub من خلال الزر أدناه.
+# دعم التطوير عبر GitHub Sponsors
 
-<iframe src="https://github.com/sponsors/kenjinote/button" title="Sponsor kenjinote" height="35" width="116" style="border: 0;"></iframe>
+يمكنك دعم المطوّر المستقل kenjinote عبر GitHub Sponsors. الدعم اختياري.
 
-سأستخدمه في تطوير الأدوات وغيرها.
+## كيفية استخدام الدعم
 
-سأبذل قصارى جهدي حتى أتمكن من الحصول على شهادة توقيع الرمز!
+يُراد من الدعم المساهمة في تطوير الأدوات وصيانتها وتغطية التكاليف المرتبطة بالمشروع. الحصول على شهادات توقيع للرموز هدف مستقبلي، وليس ميزة أو موعدًا مضمونًا.
+
+## طريقة الدعم
+
+يعرض [ملف GitHub Sponsors](https://github.com/sponsors/kenjinote) المبالغ المتاحة وأي مزايا مدرجة حاليًا. تختلف الدفعات والفوترة والمعاملة الضريبية حسب الحساب والمنطقة وشروط GitHub الحالية؛ راجع [الإرشادات الرسمية للرسوم والضرائب](https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes) قبل الدعم.
+
+[ادعم kenjinote عبر GitHub Sponsors](https://github.com/sponsors/kenjinote)
+
+شكرًا لتفكيرك في دعم عملي.

@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "batch": 74,
+  "article": "content/content/post/GitHubスポンサー募集",
+  "reviewedAt": "2026-11-23",
+  "files": {
+    "ja": {
+      "path": "content/post/GitHubスポンサー募集/index.md",
+      "normalizedBytes": 1468,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "en": {
+      "path": "content/post/GitHubスポンサー募集/index.en.md",
+      "normalizedBytes": 1335,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "zh-cn": {
+      "path": "content/post/GitHubスポンサー募集/index.zh-cn.md",
+      "normalizedBytes": 1220,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "es": {
+      "path": "content/post/GitHubスポンサー募集/index.es.md",
+      "normalizedBytes": 1479,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "ko": {
+      "path": "content/post/GitHubスポンサー募集/index.ko.md",
+      "normalizedBytes": 1474,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "pt": {
+      "path": "content/post/GitHubスポンサー募集/index.pt.md",
+      "normalizedBytes": 1447,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "zh-tw": {
+      "path": "content/post/GitHubスポンサー募集/index.zh-tw.md",
+      "normalizedBytes": 1229,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "hi": {
+      "path": "content/post/GitHubスポンサー募集/index.hi.md",
+      "normalizedBytes": 2547,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "fr": {
+      "path": "content/post/GitHubスポンサー募集/index.fr.md",
+      "normalizedBytes": 1525,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "de": {
+      "path": "content/post/GitHubスポンサー募集/index.de.md",
+      "normalizedBytes": 1530,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "ar": {
+      "path": "content/post/GitHubスポンサー募集/index.ar.md",
+      "normalizedBytes": 1618,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "ru": {
+      "path": "content/post/GitHubスポンサー募集/index.ru.md",
+      "normalizedBytes": 2081,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    },
+    "id": {
+      "path": "content/post/GitHubスポンサー募集/index.id.md",
+      "normalizedBytes": 1422,
+      "date": "2023-01-17T18:13:56+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 2,
+      "iframes": 0,
+      "referenceUrls": [
+        "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+        "https://github.com/sponsors/kenjinote"
+      ]
+    }
+  },
+  "sharedSourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+  "sharedReferenceUrls": [
+    "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+    "https://github.com/sponsors/kenjinote"
+  ],
+  "sponsorProfileHttpChecked": true,
+  "embeddedIframeRemaining": false,
+  "allThirteenReviewed": true,
+  "humanOrNativeSpeakerReview": false,
+  "result": "passed"
+}

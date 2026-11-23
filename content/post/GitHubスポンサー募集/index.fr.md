@@ -1,20 +1,27 @@
 ---
 title: 'Annonce de recherche de sponsors GitHub | Demande de soutien au développement'
-date: "2026-09-24T19:44:38+09:00"
 slug: "GitHubSponsor募集"
-date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Sponsor"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Notre projet est à la recherche de sponsors GitHub. Les fonds qui nous seront confiés seront soigneusement utilisés comme frais de fonctionnement pour fournir de meilleurs logiciels, tels que le développement d''outils pratiques et l''acquisition de certificats de signature de code.'
+date: "2023-01-17T18:13:56+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "Comment soutenir le développement indépendant de kenjinote via GitHub Sponsors, avec des précisions sur l’utilisation prévue et les conditions actuelles."
 ---
 
-# Recherche de sponsors GitHub
-Je serais ravi si vous pouviez devenir sponsor GitHub via le bouton ci-dessous.
+# Soutenir le développement via GitHub Sponsors
 
-<iframe src="https://github.com/sponsors/kenjinote/button" title="Sponsor kenjinote" height="35" width="116" style="border: 0;"></iframe>
+Vous pouvez soutenir le développeur indépendant kenjinote via GitHub Sponsors. Le soutien est volontaire.
 
-Cela sera utilisé pour le développement d'outils, etc.
+## Utilisation du soutien
 
-Je veux faire de mon mieux jusqu'à ce que je puisse ajouter un certificat de signature de code !
+Les contributions aideront à financer le développement et la maintenance des outils ainsi que les frais associés au projet. L’obtention de certificats de signature de code est un objectif futur, et non une fonctionnalité ou une date promise.
+
+## Comment soutenir
+
+Le [profil GitHub Sponsors](https://github.com/sponsors/kenjinote) indique les montants actuellement proposés et les éventuels avantages. Le paiement, la facturation et le traitement fiscal dépendent du compte, de la région et des conditions actuelles de GitHub ; consultez les [informations officielles sur les frais et les impôts](https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes) avant de contribuer.
+
+[Soutenir kenjinote via GitHub Sponsors](https://github.com/sponsors/kenjinote)
+
+Merci d’envisager de soutenir mon travail.

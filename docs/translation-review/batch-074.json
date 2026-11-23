@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "article": "GitHubスポンサー募集",
+  "frozenSourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes",
+    "https://github.com/sponsors/kenjinote"
+  ],
+  "findings": [
+    "Preserved the original 2023-01-17 publication date, removed conflicting injected date metadata, and set lastmod to 2026-11-23 in all editions.",
+    "Replaced the cross-origin embedded Sponsor iframe with a direct, accessible GitHub Sponsors profile link in every locale.",
+    "Clarified that support is voluntary, intended for tool development/maintenance and related project costs, and that code signing is an aspiration without a promised feature or date.",
+    "Linked GitHub’s current fees/tax policy and directed sponsors to check currently available tiers and benefits on the profile."
+  ],
+  "validation": "docs/translation-review/validation-074.json",
+  "scope": "Read the full Japanese sponsorship notice and all twelve translations. Checked the public Sponsor profile, payment/tax statements, link targets, embedded content, and translated intent against current GitHub primary documentation.",
+  "publicationPending": true,
+  "reviews": {
+    "post/GitHubスポンサー募集/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "eed8e03183e01fcaf57f04c678285e49ea248cb48ac078429e19c3cbbad26f7f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    },
+    "post/GitHubスポンサー募集/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "aea5b2abe105e7d65ce843fd6bab1ec410c4b59f1705fd73fbd8bf8d3d58f35e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    },
+    "post/GitHubスポンサー募集/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "52c5f86eb3a6bb19bff1ea157827283f98805477929b5dc088cabbfc6e286ea8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    },
+    "post/GitHubスポンサー募集/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "6e345426a8d4e39a0e3063b6b0f68e02443414a34deff8bb27ba4815b57308ae",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    },
+    "post/GitHubスポンサー募集/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "3d128200abe53d5fe259632f231f22444d345bf906c2a56cad5d1c550ea2cfe5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    },
+    "post/GitHubスポンサー募集/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "71a579b270295ac7f335f5fe90c9098e9f94c8d6c9b42d95ee54b4150e0995f0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    },
+    "post/GitHubスポンサー募集/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "520b31392be5c25ab434b27ce84a9ae4706ee9f475a762e701b82ff37750b05a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    },
+    "post/GitHubスポンサー募集/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "fd4df7604fb7359966317fcb3d44a2d476876aec7f79855dcc57addbf20214ab",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    },
+    "post/GitHubスポンサー募集/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "928e8fb50c4ebc1cb7d0ffed13a44472e4388636a55555d7a5d834127044f1c0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    },
+    "post/GitHubスポンサー募集/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "98c51f0924fe214ae66f2eff3ab7275b36ee031f9c0c8592eff39b4e0962c147",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    },
+    "post/GitHubスポンサー募集/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "02546b1bc51b3a3b8b8914cd6255f2bd854472d0782c9a77a52d6386d0c02e2d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    },
+    "post/GitHubスポンサー募集/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GitHubスポンサー募集/index.md",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "d585a9cdec7a14f085b87cf823fb2a6e55cc88acdac3e5a4c35595dd4428c161",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared the voluntary sponsorship request, intended support for tool development/maintenance, code-signing certificate as an aspiration only, and the direct profile call to action."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for GitHub Sponsors, independent developer, voluntary support, currently displayed tiers/benefits, billing and tax treatment."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical content or quantitative performance claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable embed; the prior cross-origin iframe was removed in favor of a direct accessible profile link."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the public GitHub Sponsors profile is available and checked GitHub’s official fees/tax documentation and profile-sharing guidance."
+        }
+      },
+      "summary": "Rewrote the sponsorship notice in all 13 editions, removed the embedded cross-origin iframe, added a direct localized link to the public Sponsors profile, explained the intended use of support, and clarified that code-signing certificates are only a future goal. Pointed readers to current GitHub billing and tax terms.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Did not access the account dashboard or verify private payout settings, sponsorship tiers, sponsor counts, or tax status; the public profile is the source for current choices and benefits.",
+        "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
+      ]
+    }
+  }
+}

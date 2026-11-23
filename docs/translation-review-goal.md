@@ -951,4 +951,6 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 
 - 2026-11-23 Batch073: Gemini CLI Windows導入記事を日本語原文＋12翻訳で改訂。重複していたdateを整理し、原公開日2025-07-13を維持。公式要件Node.js 20.0.0以上、npmのグローバル導入とnpxの一時実行、初回認証、Windowsのnpm PATH確認、ファイル/シェル操作の承認上の注意を反映。Google Gemini CLI・Node.js・npm公式資料を照合。多言語10テスト、数式1テスト、台帳6テスト、13版の静的検査、`git diff --check`成功。証跡`docs/translation-review/batch-073.json`、検証`docs/translation-review/validation-073.json`。公開pending。AIのみ、Windows端末での実インストール・CLI認証・API実行およびネイティブ話者校閲なし。全記事goalを継続。
 
+- 2026-11-23 Batch074: GitHub Sponsors案内を日本語原文＋12翻訳で改訂。原公開日2023-01-17を保持して重複dateを整理。外部iframeの代わりに、13言語それぞれの直接プロフィールリンクを配置。支援の任意性、開発・保守費への利用予定、コード署名証明書は未確定の将来目標であること、金額/決済/税務条件をGitHubで確認する旨を反映。GitHub公式プロフィール・料金/税務資料を照合。多言語10テスト、数式1テスト、台帳6テスト、13版の静的検査、`git diff --check`成功。証跡`docs/translation-review/batch-074.json`、検証`docs/translation-review/validation-074.json`。公開pending。AIのみ、ネイティブ話者校閲・アカウント管理画面や非公開支払設定の確認なし。全記事goalを継続。
+
 - 台帳集計（B072反映後）：current 840、未確認12,192、人確認0。全記事・全翻訳言語のgoalは継続。

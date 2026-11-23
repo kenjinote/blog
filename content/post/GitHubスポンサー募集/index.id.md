@@ -1,20 +1,27 @@
 ---
 title: 'Pengumuman Pencarian Sponsor GitHub | Permintaan Dukungan Pengembangan'
-date: "2026-09-24T19:44:38+09:00"
 slug: "GitHubSponsor募集"
-date: 2023-01-17T18:13:56+09:00
 tags: ["GitHub", "Sponsor"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Proyek kami sedang mencari sponsor GitHub. Dana dukungan yang Anda berikan akan kami manfaatkan dengan saksama sebagai biaya aktivitas untuk menyediakan perangkat lunak yang lebih baik, seperti pengembangan alat yang berguna dan perolehan sertifikat code signing.'
+date: "2023-01-17T18:13:56+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "Cara mendukung pengembangan independen kenjinote melalui GitHub Sponsors, termasuk tujuan penggunaan dana dan ketentuan saat ini."
 ---
 
-# Mencari Sponsor GitHub
-Saya akan sangat senang jika Anda bisa menjadi sponsor GitHub saya melalui tombol di bawah ini.
+# Mendukung pengembangan melalui GitHub Sponsors
 
-<iframe src="https://github.com/sponsors/kenjinote/button" title="Sponsor kenjinote" height="35" width="116" style="border: 0;"></iframe>
+Anda dapat mendukung pengembang independen kenjinote melalui GitHub Sponsors. Dukungan ini bersifat sukarela.
 
-Dana ini akan digunakan untuk pengembangan alat dan keperluan lainnya.
+## Penggunaan dukungan
 
-Saya akan berusaha keras hingga dapat memiliki Sertifikat Penandatanganan Kode!
+Dukungan tersebut direncanakan untuk membantu pengembangan dan pemeliharaan alat serta biaya proyek terkait. Memperoleh sertifikat penandatanganan kode adalah tujuan di masa depan, bukan fitur atau tanggal rilis yang dijanjikan.
+
+## Cara mendukung
+
+Jumlah yang tersedia dan manfaat yang tercantum dapat dilihat di [profil GitHub Sponsors](https://github.com/sponsors/kenjinote). Pembayaran, penagihan, dan perlakuan pajak bergantung pada akun, wilayah, serta ketentuan GitHub saat ini; baca [panduan resmi biaya dan pajak](https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes) sebelum memberi dukungan.
+
+[Dukung kenjinote di GitHub Sponsors](https://github.com/sponsors/kenjinote)
+
+Terima kasih telah mempertimbangkan untuk mendukung karya saya.
