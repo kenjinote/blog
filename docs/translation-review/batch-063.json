@@ -1,0 +1,480 @@
+{
+  "version": 1,
+  "article": "Choosing GitHub Copilot and local coding models by data boundaries and measured task requirements",
+  "frozenSourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://docs.github.com/en/copilot/how-tos/manage-your-account/manage-policies",
+    "https://docs.github.com/en/copilot/reference/ai-models/model-hosting",
+    "https://docs.continue.dev/guides/running-continue-without-internet",
+    "https://docs.ollama.com/api/introduction",
+    "https://docs.continue.dev/customize/model-providers/top-level/ollama",
+    "https://ollama.com/library"
+  ],
+  "findings": [
+    "Removed stale Llama 3/CodeLlama/older Copilot recommendations and unsupported blanket cloud-versus-local security/performance claims; directs readers to live model catalogs and test-on-hardware guidance.",
+    "Corrected GitHub Copilot data handling by distinguishing individual plans, which may use interactions for training with an opt-out, from Business/Enterprise customer data, which GitHub says is not used for training without customer authorization; linked current policy and model-hosting docs.",
+    "Clarified local inference versus fully offline operation, including extension telemetry and pre-downloads, and distinguished Ollama localhost API from its hosted cloud endpoint.",
+    "Added task/data classification, routing examples, task-specific evaluation, total cost including local hardware and review, current Ollama/Continue configuration, least privilege, human approval, and prompt-injection caution.",
+    "Preserved original publication date 2026-09-11, added localized lastmod/descriptions, and compared Japanese with all twelve complete translations."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "fa07529f7c53c746ec3bc9088e421ca51e6d15e6a1892e2ffd76025154de098f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "a1fe5bcefaa20cb2bc1ae3996ef33bbee9dfa595a586ab40d13da78c1b035296",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "fc83db011967b82b351fb0ddf25f8c7e902fa33464dfff3e262ca20a63f28067",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "95d9ba06dda9b835632a9bdd535212dbe14be7744a3bdfdd28fffd2e04f7c63f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "5ed0415270aeeb531c7b2a44c60a4c25e0b3d73d1795fb061a954ae9d75a9879",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "46c588c1554caba5dc678fdc6442c15b9587921760b71739992b2deabbbafec4",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "cce050dcb09d25cc6e4d563f24a7872043c37b2f1b9bcd0cbe631989a8104799",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "528ae6818e913a025abc8033d1211b8ef8b1f819ccef0b15702d70b483207382",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "91825ffde1576a5c49111bb78f260841035824ac68c238497eed2f7eb4906b0c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "0743b7aa66a53e908165a9111e196c39dd25f6c339855e5d5f9785ddb29c2439",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "ae523e3d22da3bf290fe6f4d9b4db729401c83196ff233459445c8df6beebf46",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "fed59a2fa617d4ec3a439040c2f6cc7c297511e9f5967434649f234b057a68be",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: cloud versus local processing paths, individual and organization Copilot policy distinction, Ollama local versus hosted endpoints, data classification, task routing examples, evaluation procedure, cost/hardware factors, Continue/Ollama setup, permissions, injection risks, and publication/update scope."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for cloud and local inference, repository context, model hosting, telemetry, endpoint, data classification, retention, token/context length, quantization, GPU/VRAM, Ollama, Continue, tool calling, prompt injection, and human approval."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical formulas, derivations, or numerical performance estimates."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the same shell placeholder command and Continue YAML configuration across all editions: exact model tag/ID must be supplied by the reader, local API base is localhost, provider is ollama, and chat role is configured. Commands were reviewed against primary docs but not executed; no model was downloaded or API invoked."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified the common link set points to primary GitHub Copilot policy/model hosting, Continue offline/Ollama configuration, Ollama API, and Ollama model library documentation. Reachability and plan-specific organizational policy were not tested for each reader."
+        }
+      },
+      "summary": "Replaced blanket cloud/local security and stale model recommendations with task-based routing, plan-specific Copilot data policy, explicit distinction between local and hosted Ollama APIs, verified offline prerequisites, current Continue configuration, and evaluation of quality, latency, cost, and hardware.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Ollama and Continue installation, model download, inference, IDE integration, and offline network behavior were not tested on this machine.",
+        "Current model availability, licenses, performance, hardware requirements, and service policies can change; recheck provider documentation and organizational rules.",
+        "No codebase benchmark, performance measurement, or security audit was performed.",
+        "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
+      ]
+    }
+  }
+}

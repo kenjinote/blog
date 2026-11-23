@@ -7565,6 +7565,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-062.json",
       "evidenceHash": "ba1842618afe716d959593e9d79c4733abe7a7d3bd527e3c1164f6b446b25283"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.en.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "fa07529f7c53c746ec3bc9088e421ca51e6d15e6a1892e2ffd76025154de098f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "3eb03931e92cb6169066ad90627489cc78fd8cc15b3879f7c61f65041917968c"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.zh-cn.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "a1fe5bcefaa20cb2bc1ae3996ef33bbee9dfa595a586ab40d13da78c1b035296",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "527e1a134237c809161e06b6d6175cbb26e4ede3bfbadb0ee3ab847691135d54"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.es.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "fc83db011967b82b351fb0ddf25f8c7e902fa33464dfff3e262ca20a63f28067",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "a28da3c7b002f7fb89093f5cdbe6e91067a53ac3b38fd12094c662c337a8afd7"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.ko.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "95d9ba06dda9b835632a9bdd535212dbe14be7744a3bdfdd28fffd2e04f7c63f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "da9bbb432be3079341611223a6b84ac5c62b0fc8b8f16c839a65fa9ea4ae08cd"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.pt.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "5ed0415270aeeb531c7b2a44c60a4c25e0b3d73d1795fb061a954ae9d75a9879",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "9c30aca420d614c645cfd9e4edd9ddb2ac417bed65f5e5e76b9d6d913a897855"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.zh-tw.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "46c588c1554caba5dc678fdc6442c15b9587921760b71739992b2deabbbafec4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "f97a35cb6ace9d29381d2645d6a8872e6fd66742001dffc4b70ea095563618d3"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.hi.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "cce050dcb09d25cc6e4d563f24a7872043c37b2f1b9bcd0cbe631989a8104799",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "b8e30a5ba0c7c7c5b283fa1ffc016dcb8d68e4022a21bc992f7cf388aea6caea"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.fr.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "528ae6818e913a025abc8033d1211b8ef8b1f819ccef0b15702d70b483207382",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "cb86b5bf2e6beef5fb9de3060050d761565203895ac29b813f7c42788303f516"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.de.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "91825ffde1576a5c49111bb78f260841035824ac68c238497eed2f7eb4906b0c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "0491925aa11f43799212b835e0fd684500e8d1fe684328c6ff8bef3d83d48370"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.ar.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "0743b7aa66a53e908165a9111e196c39dd25f6c339855e5d5f9785ddb29c2439",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "49a7a0987e9ffe73ef78bd5778b2b7bff2ec21fb56bd556382c664d8d348b7f9"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.ru.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "ae523e3d22da3bf290fe6f4d9b4db729401c83196ff233459445c8df6beebf46",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "45ba4c4fe4cba5f07860d19ec98149630ba491e6ad7a18bfa329dff1e41ee14d"
+    },
+    "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.id.md": {
+      "source": "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dbbc4832be2e11f460fc0a756211fd94c1e450bfa637dc3c9d9af6f276ba7ded",
+      "translationHash": "fed59a2fa617d4ec3a439040c2f6cc7c297511e9f5967434649f234b057a68be",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-063.json",
+      "evidenceHash": "c2d03e931d287a6737a489ec66f2dfae3f89765236cdcdf9af1be5ae65e73bde"
     }
   }
 }
