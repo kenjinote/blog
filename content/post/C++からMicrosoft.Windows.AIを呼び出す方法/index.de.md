@@ -1,22 +1,18 @@
 ---
-title: '[Mit Beispiel] Wie man Windows.AI von C++ aus aufruft und ONNX-Modelle ausführt'
-date: "2026-09-24T19:44:38+09:00"
+title: '[Veraltete API] ONNX-Modell mit Windows ML aus C++ laden'
+lastmod: "2026-11-23T09:00:00+09:00"
 slug: "C++からMicrosoft.Windows.AIを呼び出す方法"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Nutzen Sie das Windows-Standard Windows ML für den Zugriff auf KI-Funktionen! Wir erklären verständlich und mit Beispielcode die konkreten Schritte zum Aufrufen von „Microsoft.Windows.AI“ aus einer C++-Umgebung einer Win32-App und zum Ausführen von KI-Modellen im ONNX-Format.'
+description: 'So laden Sie mit C++/WinRT und der veralteten Windows-ML-API für Windows 10 Version 1809 und höher ein ONNX-Modell. Der Artikel grenzt die aktuelle API ab und erklärt die modellabhängige Eingabebindung für Inferenz.'
 ---
 
-# 🎯 Aufruf von `Microsoft.Windows.AI` aus C++ [Mit Beispielcode]
+# 🎯 Ein ONNX-Modell mit der veralteten Windows-ML-API aus C++ laden
 
-Seit Windows 10 verfügt Windows standardmäßig über eine **Laufzeitumgebung, die KI-Modelle im ONNX-Format ausführen kann**. Das ist **Windows ML (Windows.AI.MachineLearning)**.
-
-In diesem Artikel wird konkret mit **Beispielcode** erklärt, wie Sie `Microsoft.Windows.AI.MachineLearning` aus **C++ (Win32-App-Basis)** aufrufen können.
-
----
+> **Geltungsbereich: veraltete API.** Dieser Artikel verwendet die mit Windows 10 Version 1809 eingeführte API `Windows.AI.MachineLearning`. Sie wurde durch die aktuellen Windows-ML-APIs [abgelöst](https://learn.microsoft.com/en-us/windows/ai/windows-ml/api-reference). Verwenden Sie für neue Apps Microsofts [aktuellen Einstieg in Windows ML](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/get-started). Der folgende Code lädt nur ein Modell und führt keine Inferenz aus. Ein vollständiges Beispiel finden Sie im [C++-Desktop-Tutorial von Microsoft](https://learn.microsoft.com/en-us/windows/ai/windows-ml/get-started-desktop).
 
 ## ✅ Vorbereitung
 
@@ -24,116 +20,91 @@ In diesem Artikel wird konkret mit **Beispielcode** erklärt, wie Sie `Microsoft
 
 * Windows 10 (1809+) oder Windows 11
 * Visual Studio 2019 oder neuer (Community-Edition ist in Ordnung)
-* C++/WinRT-Unterstützung (`Microsoft.Windows.CppWinRT`)
+* C++/WinRT-Integration für das ältere Windows SDK
 * Windows SDK 10.0.17763.0 oder höher
 
 ---
 
 ## ✅ Projektstruktur
 
-Erstellen Sie in Visual Studio ein Projekt mit der folgenden Struktur:
-
-* Typ: C++ Windows Desktop-Anwendung (Leeres Projekt)
-* Subsystem: Windows (`WinMain`)
-* Fügen Sie das folgende Paket über NuGet hinzu:
-
-  ```
-  Microsoft.Windows.CppWinRT
-  ```
+Für diese alte API benötigen Sie Windows 10 Version 1809 (Build 17763) oder höher, ein passendes Windows SDK, Visual Studio mit C++-Desktopentwicklung und C++/WinRT. Verwechseln Sie Pakete der aktuellen Windows-ML-API nicht mit Abhängigkeiten dieser alten API. Aktuelle Pakete und Bereitstellungsanforderungen stehen im [Bereitstellungshandbuch](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/distributing-your-app).
 
 ---
 
 ## ✅ Beispielcode
 
-Das Folgende ist ein Minimalbeispiel, das `WinMain` verwendet und die Win32-API mit `Windows.AI.MachineLearning` kombiniert.
-
-> ※ Gehen Sie davon aus, dass das verwendete ONNX-Modell `model.onnx` ist, und legen Sie es im selben Ordner wie die ausführbare Datei ab.
+> Dies prüft nur das Laden des Modells. ONNX-Modelle haben jeweils eigene Eingabenamen, -typen und -formen. Ohne Bindung erforderlicher Eingaben führt `EvaluateAsync` im Allgemeinen keine Inferenz aus.
 
 ### `main.cpp`
+
+Geben Sie den tatsächlichen absoluten Pfad zu `model.onnx` an. Ein relativer Pfad kann sich auf das aktuelle Arbeitsverzeichnis beziehen, das nicht zwingend dem Verzeichnis der ausführbaren Datei entspricht.
 
 ```cpp
 #include <windows.h>
 #include <winrt/Windows.AI.MachineLearning.h>
 #include <winrt/Windows.Storage.h>
 
-#pragma comment(lib, "windowsapp") // Für WinRT-Verknüpfung
+#pragma comment(lib, "windowsapp")
 
 using namespace winrt;
 using namespace Windows::AI::MachineLearning;
 using namespace Windows::Storage;
 
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
+int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
-    // WinRT-Initialisierung (MTA oder STA ist in Ordnung)
     winrt::init_apartment();
 
     try {
-        // Modelldatei laden
-        auto modelFile = StorageFile::GetFileFromPathAsync(L"model.onnx").get();
+        // Replace this with the absolute path to your ONNX model.
+        constexpr wchar_t modelPath[] = L"C:\\path\\to\\model.onnx";
+        auto modelFile = StorageFile::GetFileFromPathAsync(modelPath).get();
         LearningModel model = LearningModel::LoadFromStorageFileAsync(modelFile).get();
 
-        // Sitzung erstellen
-        LearningModelSession session(model);
-        LearningModelBinding binding(session);
-
-        // Modellein- und -ausgabe (hier vorübergehend leere Eingabe)
-        // In der Praxis ist eine Bindung z.B. mit TensorFloat erforderlich
-
-        // Inferenz ausführen
-        auto result = session.EvaluateAsync(binding, L"").get();
-
-        MessageBox(nullptr, L"Inferenz abgeschlossen", L"Windows ML (C++)", MB_OK);
+        MessageBoxW(nullptr, L"Model loaded", L"Legacy Windows ML", MB_OK);
     }
     catch (winrt::hresult_error const& ex) {
-        MessageBox(nullptr, ex.message().c_str(), L"Fehler", MB_ICONERROR);
+        MessageBoxW(nullptr, ex.message().c_str(), L"Error", MB_OK | MB_ICONERROR);
+        return static_cast<int>(ex.code().value);
     }
 
     return 0;
 }
 ```
 
----
+## ✅ Ergänzung: Beispiel für die Bindung von Modelleingaben
 
-## ✅ Ergänzung: Wie man Eingabe- und Ausgabe-Tensoren angibt
-
-Je nach Modell ist es erforderlich, vor der Inferenz **Tensoren zu erstellen und zu binden**.
-
-Beispiel:
+Das folgende Fragment zeigt das Muster für eine Eingabebindung. Passen Sie `data_0`, Typ, Form und Werte an das Modell an. Allein ist dies kein vollständiges Programm, das ein Modell lädt und Inferenzergebnisse liefert.
 
 ```cpp
-// 1D-Float-Array in Tensor umwandeln
-std::vector<float> inputData = {0.5f, 0.3f, 0.2f};
-std::vector<int64_t> shape = {1, 3}; // Form: [1, 3]
+#include <cstdint>
+#include <vector>
+#include <winrt/Windows.AI.MachineLearning.h>
 
-auto tensor = TensorFloat::CreateFromArray(shape, inputData);
+using namespace Windows::AI::MachineLearning;
 
-// Eingabebindung (muss mit dem Eingabenamen des Modells übereinstimmen)
-binding.Bind(L"input_0", tensor);
+void RunWithInput(LearningModel const& model)
+{
+    LearningModelSession session{model};
+    LearningModelBinding binding{session};
+
+    // Example only: replace the feature name, type, shape, and values for your model.
+    std::vector<float> inputData{0.5f, 0.3f, 0.2f};
+    std::vector<int64_t> shape{1, 3};
+    TensorFloat tensor = TensorFloat::CreateFromArray(shape, inputData);
+    binding.Bind(L"data_0", tensor);
+
+    auto result = session.Evaluate(binding, L"example");
+    // Read result.Outputs() using the output feature name and type defined by the model.
+}
 ```
 
-Die Ausgabe kann auf ähnliche Weise mit `result.Outputs().Lookup(L"output_0")` abgerufen werden.
+Auch Ausgabenamen und -typen sind modellspezifisch. Prüfen Sie die ONNX-Eingaben und -Ausgaben etwa mit Netron und binden Sie passende Werte.
 
----
-
-## ✅ Hinweise zum Debuggen
-
-* Wenn die Modelldatei nicht im Ausführungsordner vorhanden ist, wird eine `FileNotFoundException` ausgelöst.
-* Wenn die Eingabe-/Ausgabenamen nicht übereinstimmen, tritt ein `invalid_argument`-Fehler auf.
-* Die genauen IO-Spezifikationen des Modells können mit Tools wie [Netron](https://netron.app) überprüft werden.
-
----
+[Microsoft Learn: TensorFloat::CreateFromArray](https://learn.microsoft.com/en-us/uwp/api/windows.ai.machinelearning.tensorfloat.createfromarray?view=winrt-28000) documents the API used in the binding fragment.
 
 ## ✅ Zusammenfassung
 
-| Element | Inhalt |
-| ----- | ---------------------------------- |
-| Verwendete API | Windows.AI.MachineLearning (WinRT) |
-| Sprache | C++ (Win32-Basis) |
-| Empfohlene Methode | Über C++/WinRT-Header |
-| Vorteile | ONNX-Modelle laufen nativ, GPU-Unterstützung ist ebenfalls möglich |
-| Vorsicht | Achten Sie auf die Eingabenamen des Modells und die Tensorformen |
-
----
+Dieses Beispiel zeigt nur das Laden eines Modells mit der alten API `Windows.AI.MachineLearning`. Es garantiert weder GPU-Ausführung noch erfolgreiche Inferenz mit einem bestimmten Modell. Verwenden Sie für neue Entwicklungen die aktuellen Windows-ML-APIs und prüfen Sie Paket- und Betriebssystemanforderungen im offiziellen Leitfaden.
 
 ## ✅ Alternative: Für diejenigen, die WinRT nicht verwenden möchten
 
@@ -144,6 +115,4 @@ Die Ausgabe kann auf ähnliche Weise mit `result.Outputs().Lookup(L"output_0")` 
 
 ## 📌 Fazit
 
-Windows ML (Microsoft.Windows.AI) ist eine leistungsstarke KI-Inferenz-Engine, die robust von C++ aus verwendet werden kann. Wenn Sie native Inferenzen auf Windows benötigen, probieren Sie es aus.
-
-Wenn Sie konkrete Beispiele für die Erstellung von ONNX-Modellen und das Tensor-Binding wünschen, wird dies in einem kommenden Artikel behandelt!
+Dieses Beispiel zeigt nur das Laden eines Modells mit der alten API `Windows.AI.MachineLearning`. Es garantiert weder GPU-Ausführung noch erfolgreiche Inferenz mit einem bestimmten Modell. Verwenden Sie für neue Entwicklungen die aktuellen Windows-ML-APIs und prüfen Sie Paket- und Betriebssystemanforderungen im offiziellen Leitfaden.

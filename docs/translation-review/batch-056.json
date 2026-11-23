@@ -1,0 +1,467 @@
+{
+  "version": 1,
+  "article": "Load an ONNX model from C++ with the legacy Windows ML API",
+  "frozenSourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows/ai/windows-ml/api-reference",
+    "https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/get-started",
+    "https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/distributing-your-app",
+    "https://learn.microsoft.com/en-us/windows/ai/windows-ml/get-started-desktop",
+    "https://learn.microsoft.com/en-us/uwp/api/windows.ai.machinelearning.tensorfloat.createfromarray?view=winrt-28000"
+  ],
+  "findings": [
+    "Marked Windows.AI.MachineLearning as the legacy API shipped in 2018 and superseded by the Windows App SDK Microsoft.Windows.AI.MachineLearning APIs; linked the current getting-started and deployment guides without presenting the old sample as current setup.",
+    "Removed the false claim that an empty LearningModelBinding completes inference. The primary sample now only verifies loading from an explicit absolute model path; the separate TensorFloat example explains model-specific input feature names, data, shapes, and outputs.",
+    "Replaced the incomplete free-floating tensor fragment with a scoped C++/WinRT function that constructs a session and binding, binds a placeholder input, and evaluates; the placeholder requirements are stated in every edition.",
+    "Removed duplicate date metadata while preserving the 2025-07-19 publication date, added lastmod and localized descriptions, corrected the fragmented Japanese Netron link, and replaced broad GPU-success claims with bounded wording.",
+    "Compared the full Japanese article with all twelve translations, including metadata, prerequisites, legacy/current terminology, code blocks, model path and inference limitations."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "e6ef5a89fed595e5040558520f8a89537328cb288c4e373d653be3db837b2095",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "fdfe446df8c45e56102d4cbf9d1dbae379155e14b4b6528659d92fd90ffa8974",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "00fe4e124e99ab16d2dfbd8b56a6ef2f67577bc00c889dc447c588ec1c64bc35",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "c5f26b42bc904dbdd2461dd7ca5bebec8c903481997536443a62fdf544d91935",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "df008f9077fce321c616277dc6adb8146c14c4fa038a03fa6fbb4d1866613870",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "081f5491abe81083ce6f4a66b97be1779c522b03c975cdd3dc26a03880809290",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "14571a7a18196a6c00c2c2bb9c8f3dff77ab0586c5f5d0f0ef4ce7ab8cddc1f0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "ed01a77ed3ff33766d4684d9c2492cab19f8aceb10c4a1a8240523880fef1226",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "0a30e48fe5475270347a785e32e1a5657560dbe034603f90dc3185778ae5e234",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "9264a46e27a4603de9538b476273050b430bd560744301d729d7b28909a3f4b9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "89a43d38f9629baafeedf49b3d55a67084f0b54c1d3c83f1905f39e26668b78f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "41a66b1fbb912ab4491e9e3da3171cd98ce06fc7e1ad92466e83c7a046fab455",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including the API lifecycle warning, Windows version scope, project prerequisites, model path, the distinction between loading and inference, input binding, output caveats, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows ML versus Windows.AI.MachineLearning and Microsoft.Windows.AI.MachineLearning, legacy/superseded API language, C++/WinRT, ONNX, feature binding, tensor type/shape, inference, and GPU claims across the editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared C++/WinRT model-loading sample and model-specific TensorFloat binding/evaluation fragment across all thirteen editions. The empty-binding inference claim was removed; path semantics and placeholder input/output names are stated. The code was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Microsoft Learn references for the legacy API's supersession, current Windows ML setup/deployment, the complete legacy C++ inference tutorial, and TensorFloat::CreateFromArray; checked localized Netron links and internal navigation."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, marked the Windows.AI.MachineLearning namespace as a superseded legacy API, separated model loading from actual inference, corrected path and binding guidance, and aligned the C++ examples and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/WinRT code was not compiled or run, and the sample ONNX model was not exercised.",
+        "The input feature name, data type, tensor shape, values, and output feature remain model-specific placeholders.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    }
+  }
+}

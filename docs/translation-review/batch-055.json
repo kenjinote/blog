@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "article": "Run Windows PowerShell 5.1 from C++ through a C++/CLI DLL",
+  "frozenSourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://learn.microsoft.com/en-us/powershell/scripting/dev-cross-plat/choosing-the-right-nuget-package?view=powershell-7.4",
+    "https://learn.microsoft.com/en-us/powershell/scripting/developer/hosting/windows-powershell-host-quickstart?view=powershell-7.6",
+    "https://learn.microsoft.com/en-us/powershell/scripting/developer/hosting/adding-and-invoking-commands?view=powershell-7.6",
+    "https://learn.microsoft.com/en-us/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp?view=msvc-170",
+    "https://learn.microsoft.com/en-us/dotnet/core/porting/cpp-cli",
+    "https://www.nuget.org/packages/Microsoft.PowerShell.5.ReferenceAssemblies/"
+  ],
+  "findings": [
+    "Narrowed the example to Windows PowerShell 5.1 on .NET Framework 4.7.2 or later; removed the incompatible blanket advice to use System.Management.Automation 5.x or 7.x and replaced it with Microsoft.PowerShell.5.ReferenceAssemblies 1.1.0.",
+    "Clarified that the caller enables /clr and is mixed-mode; both projects must match the .NET Framework target, build configuration, and x86/x64 architecture. Removed the hard-coded Debug DLL #using path in favor of the Visual Studio project reference.",
+    "Added deterministic PowerShell object disposal, checks for HadErrors and the error stream, and security guidance that AddScript executes code with the application's user permissions.",
+    "Explained that PowerShell 7 requires a separate matching .NET host or pwsh child process; fixed duplicate dates, preserved the 2025-04-16 publication date, added lastmod and localized descriptions, and cited Microsoft sources.",
+    "Compared the full Japanese article with all twelve translations, including all code blocks, setup, runtime constraints, security notes, summary structure, and references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "4ed05973d69df30b61902bbb6e00822083b14bbfbf947db1aa0fd790126059ad",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "da705c846e8bc49ffc4a0a4073f60c59d5bc233b35c4fda9bfd75c1d48b1e132",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "94324946bdd7c862c4546750d78918360d4547e8893dfe524c793cc15fc47798",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "1d074fbe0eead0d94dd2188210f51ecacbf56e05de108142ec9a54d4f82185f5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "bff6b09c364642997f4a602f5fbbc426a02d43ada1da4a9602d3c38f7e61f74c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "06a9d7fb19146262d573ae3ad9448b42320545773dc1be3cdb979da0f7920a89",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "7e09109bb1ebaef99f0ce19e471cb3e34a8ceed512aaaec72d0d2f51278790b2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "6cb8ff96a6da4666b6f73cdab9df015ed61ec73e1f71dbe0473662ab59176e1c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "c2fab24a01af219b07fb85095bdb5114e8f22214b754e4d97372b11472b85d09",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "0b4587eb2bf015ab7844e771ff30fb69a4f08548463b37f0686324053908fcf5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "514bbf94719835ab427c8eafb7c664b0b57eddbbb95c1d8d26fa5c2cb03cc82f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "6e4a4b9ab6d17d3e822a1a47dad63d02127dcce0f26619c12b377995f819309a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: project creation, target framework, PowerShell package selection, managed wrapper, caller reference, /clr implications, sample output/errors, runtime version limits, and security caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Windows PowerShell 5.1 versus PowerShell 7, .NET Framework versus modern .NET, C++/CLI, mixed-mode caller, reference assemblies, Runspace, pipeline, and permission context across the localized prose."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared identical C++/CLI implementation and caller examples across all 13 editions; reviewed AddScript/Invoke use, HadErrors and error stream handling, finally-based disposal, project-reference usage, and absence of the Debug-only DLL path. The sample was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Microsoft documentation for PowerShell package/runtime choices, hosting and invoking commands, C++/CLI setup, and C++/CLI-to-.NET constraints, plus the Windows PowerShell 5.1 reference-assembly package link."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the PowerShell/.NET target mismatch, clarified the mixed-mode caller and runtime boundary, improved error handling and disposal, and added script-safety guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++/CLI sample was not compiled; Visual Studio C++/CLI toolchain was not available in this workspace.",
+        "No Windows PowerShell 5.1 runtime execution or PowerShell 7 integration was tested.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    }
+  }
+}

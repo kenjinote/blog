@@ -6605,6 +6605,246 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-054.json",
       "evidenceHash": "582f60745ba068b414911b6da2e47ef7a66ad02c8e400fc0bf672df56b51408e"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.en.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "4ed05973d69df30b61902bbb6e00822083b14bbfbf947db1aa0fd790126059ad",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "a6d456dc1c2dde84899703fac7b68329a237ac5d118da8f758d7caca164902ef"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.zh-cn.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "da705c846e8bc49ffc4a0a4073f60c59d5bc233b35c4fda9bfd75c1d48b1e132",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "eefe1548d4fe01bfb897c17bf57a1e96ea7ea0ae905ded16942875acc8b332cc"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.es.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "94324946bdd7c862c4546750d78918360d4547e8893dfe524c793cc15fc47798",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "c91a18c58802c690a46ef08bd182bdb445bccd22d48652fbc93f1382f95ed78a"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.ko.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "1d074fbe0eead0d94dd2188210f51ecacbf56e05de108142ec9a54d4f82185f5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "a4ddae24b38f9d3a9dc528ec1d112c34482657a33fd75bd4fcf07cadf99283a0"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.pt.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "bff6b09c364642997f4a602f5fbbc426a02d43ada1da4a9602d3c38f7e61f74c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "d117312f7466755159b2df9d130a40aff270f8e7df603079f9c016b165551e70"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.zh-tw.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "06a9d7fb19146262d573ae3ad9448b42320545773dc1be3cdb979da0f7920a89",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "3cac49d2e7404c0d19eeecad5eb8bafc8d0ebb0751eccdfb03bc935c6d42b1b0"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.hi.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "7e09109bb1ebaef99f0ce19e471cb3e34a8ceed512aaaec72d0d2f51278790b2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "d9b8e35c3252abe44eeb80cf9f6fa3604d02ba0663067b4119f7a6be77609738"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.fr.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "6cb8ff96a6da4666b6f73cdab9df015ed61ec73e1f71dbe0473662ab59176e1c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "3c4f3e94fc3dfe303a3f3717ac0456c068d2132fc706e7611bdbd38bb3473865"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.de.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "c2fab24a01af219b07fb85095bdb5114e8f22214b754e4d97372b11472b85d09",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "78da868998695a8e21be26e1056db20794448ba422103ef3f9012f31a81876df"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.ar.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "0b4587eb2bf015ab7844e771ff30fb69a4f08548463b37f0686324053908fcf5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "73ed95a73aec18456eecb2999e55666f161b14526da6cd702179cd2c69cd80e6"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.ru.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "514bbf94719835ab427c8eafb7c664b0b57eddbbb95c1d8d26fa5c2cb03cc82f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "cb9bbacc65525ad3648d97421de19c788eb7f83c3725af3839b17119568580c6"
+    },
+    "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.id.md": {
+      "source": "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9b0e4d57b4d8aeb144d80491c78da44c58a42e7b6b098ed9ffdba885c8330648",
+      "translationHash": "6e4a4b9ab6d17d3e822a1a47dad63d02127dcce0f26619c12b377995f819309a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-055.json",
+      "evidenceHash": "69fd039adb9e07f7321bb260f76cf084d893b0e5049e914847ea00062be28c8c"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.en.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "e6ef5a89fed595e5040558520f8a89537328cb288c4e373d653be3db837b2095",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "ec5d3dc8cd32433e594d4fdb057cfac2e9a3669e8b01ffb201713264a207b6ea"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.zh-cn.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "fdfe446df8c45e56102d4cbf9d1dbae379155e14b4b6528659d92fd90ffa8974",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "50f86d6ca9d11a7a0a3d2da75eb5e8e153e5126154be3092f9199758904f6883"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.es.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "00fe4e124e99ab16d2dfbd8b56a6ef2f67577bc00c889dc447c588ec1c64bc35",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "294d0fc94dbf9cacf00a09a2677a9791f407408469cd8634cfdb94cd14d5e5aa"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.ko.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "c5f26b42bc904dbdd2461dd7ca5bebec8c903481997536443a62fdf544d91935",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "402ab36d0ca6375f31f8a9f38a8921a05a036e52a28871024065d5ca70717703"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.pt.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "df008f9077fce321c616277dc6adb8146c14c4fa038a03fa6fbb4d1866613870",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "d78c92e45338d14578a2befeb11eecf23cffe8083e1c0c2b632bbf41df01458b"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.zh-tw.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "081f5491abe81083ce6f4a66b97be1779c522b03c975cdd3dc26a03880809290",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "108ac552179ec8917d7a76957ef517b55bb0396290c3474f266040ce05fd0d6d"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.hi.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "14571a7a18196a6c00c2c2bb9c8f3dff77ab0586c5f5d0f0ef4ce7ab8cddc1f0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "cf4e6f214e568abef6c10eb885998ff4f9afd1073ab7a8a068b29b0d49a15f64"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.fr.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "ed01a77ed3ff33766d4684d9c2492cab19f8aceb10c4a1a8240523880fef1226",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "2554ee993de54e397f53db474106d315e2ce064bf168c342da34ba7a04f6b10e"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.de.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "0a30e48fe5475270347a785e32e1a5657560dbe034603f90dc3185778ae5e234",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "0e6c80f7d697497b5b24813b915dd164eb89774eb79f1ca08d47c524c023f678"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.ar.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "9264a46e27a4603de9538b476273050b430bd560744301d729d7b28909a3f4b9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "45ef9defabf8d70c535d8d8537af376f24d13b86d374fa1ef84ab1eef982a3ef"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.ru.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "89a43d38f9629baafeedf49b3d55a67084f0b54c1d3c83f1905f39e26668b78f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "1b93ad6cb36b72b1cc4df5533e1d506ffaee79c125d9ef75f98dac366c44b3f4"
+    },
+    "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.id.md": {
+      "source": "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6bdeaccd98c53ea29e678cb90a6f12c190ea47f7911961d32751b7bfb04fd61d",
+      "translationHash": "41a66b1fbb912ab4491e9e3da3171cd98ce06fc7e1ad92466e83c7a046fab455",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-056.json",
+      "evidenceHash": "2b7fc3983f4452d56b16e2306768b97862632ad56f4d68072ffb3a139221f157"
     }
   }
 }

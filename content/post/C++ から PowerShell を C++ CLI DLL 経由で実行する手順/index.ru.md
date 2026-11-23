@@ -1,13 +1,13 @@
 ---
 title: '【VS2022】Выполнение PowerShell из C++! Процедура интеграции через C++/CLI DLL'
-date: "2026-09-24T19:44:38+09:00"
 slug: "C++ から PowerShell を C++ CLI DLL 経由で実行する手順"
 date: 2025-04-16T01:58:03+09:00
+lastmod: 2026-11-23
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Ищете способ вызова и выполнения скриптов PowerShell из нативного C++? Мы подробно объясним конкретные шаги реализации для создания wrapper DLL с помощью C++/CLI в среде Visual Studio 2022 и обеспечения бесперебойной системной интеграции.'
+description: 'Как разместить Windows PowerShell 5.1 в DLL C++/CLI в Visual Studio 2022: подходящая версия .NET Framework, эталонные сборки, ограничения среды и безопасность скриптов.'
 ---
 
 # 🎯 Шаги по запуску PowerShell из C++ через C++/CLI DLL (Visual Studio 2022 / C++)
@@ -17,7 +17,7 @@ description: 'Ищете способ вызова и выполнения ск�
 ### 🔹 ① Обертка CLI DLL (C++/CLI)
 Предоставляет функциональность для выполнения скриптов PowerShell.
 
-### 🔹 ② Вызывающая сторона Native C++
+### 🔹 ② Вызывающая программа C++ с включённым /clr
 Вызывает CLI DLL для запуска скриптов PowerShell.
 
 ---
@@ -35,8 +35,8 @@ description: 'Ищете способ вызова и выполнения ск�
 ### 2. Добавление пакета NuGet
 
 1. Щелкните правой кнопкой мыши проект → [Управление пакетами NuGet]
-2. Найдите и установите `System.Management.Automation`  
-   (версия 5.x или 7.x)
+2. Добавьте NuGet-пакет `Microsoft.PowerShell.5.ReferenceAssemblies` версии 1.1.0. Он содержит эталонные сборки Windows PowerShell 5.1.
+
 
 ---
 
@@ -60,30 +60,37 @@ namespace PowerShellWrapper {
 #### PowerShellWrapper.cpp
 
 ```cpp
-#include "PowerShellWrapper.h"
-using namespace System;
-using namespace System::Management::Automation;
-using namespace System::Collections::ObjectModel;
-
 String^ PowerShellWrapper::PowerShellExecutor::Execute(String^ script)
 {
     PowerShell^ ps = PowerShell::Create();
-    ps->AddScript(script);
-    Collection<PSObject^>^ results = ps->Invoke();
-
-    System::Text::StringBuilder^ sb = gcnew System::Text::StringBuilder();
-    for each (PSObject^ result in results)
+    try
     {
-        sb->AppendLine(result->ToString());
-    }
+        ps->AddScript(script);
+        Collection<PSObject^>^ results = ps->Invoke();
+        if (ps->HadErrors)
+        {
+            String^ message = "PowerShell reported an error.";
+            if (ps->Streams->Error->Count > 0)
+                message = ps->Streams->Error[0]->ToString();
+            throw gcnew InvalidOperationException(message);
+        }
 
-    return sb->ToString();
+        System::Text::StringBuilder^ sb = gcnew System::Text::StringBuilder();
+        for each (PSObject^ result in results)
+            sb->AppendLine(result->ToString());
+
+        return sb->ToString();
+    }
+    finally
+    {
+        delete ps;
+    }
 }
 ```
 
 ---
 
-## 🔧 Шаг 2: Вызов со стороны Native C++
+## 🔧 Шаг 2: создать вызывающую программу с включённым /clr
 
 ### 1. Создание проекта консольного приложения C++
 - Имя: `NativeApp`
@@ -99,7 +106,6 @@ String^ PowerShellWrapper::PowerShellExecutor::Execute(String^ script)
 
 ```cpp
 #using <System.dll>
-#using "..\\PowerShellWrapper\\Debug\\PowerShellWrapper.dll"
 
 using namespace System;
 using namespace PowerShellWrapper;
@@ -127,7 +133,26 @@ int main()
 Solution
 ├── PowerShellWrapper (C++/CLI DLL)
 │   └── PowerShellExecutor
-├── NativeApp (C++ EXE)
+├── NativeApp (C++ EXE, /clr)
     └── main.cpp → Вызов DLL
 ```
----
+
+## ⚠️ Примечания о среде выполнения и безопасности
+
+На целевом компьютере Windows должны быть доступны Windows PowerShell 5.1 и совместимая версия .NET Framework.
+
+Пример предназначен для Windows PowerShell 5.1 и .NET Framework 4.7.2 или новее. Установите «C++/CLI support for v143 build tools» в Visual Studio Installer и выберите соответствующую целевую платформу.
+
+Этот пример не работает с PowerShell 7. Для него создайте отдельный хост с той же целевой средой .NET или запускайте `pwsh` как дочерний процесс. Проекты C++/CLI для современного .NET собираются в DLL.
+
+`AddScript` выполняет переданную строку как код. Не добавляйте к ней недоверенный ввод. Для пользовательских значений используйте фиксированные команды с параметрами и рассмотрите ограниченную среду Runspace. Скрипты выполняются с правами пользователя приложения. В этом примере используется среда Runspace по умолчанию.
+
+
+Для обоих проектов выберите одинаковые целевую версию .NET Framework, конфигурацию (Debug/Release) и архитектуру (x86/x64). При включённом `/clr` вызывающая программа работает в смешанном режиме, а не только как нативное приложение.
+## Официальная документация
+- [Choosing the right PowerShell NuGet package](https://learn.microsoft.com/en-us/powershell/scripting/dev-cross-plat/choosing-the-right-nuget-package?view=powershell-7.4)
+- [Windows PowerShell Host Quickstart](https://learn.microsoft.com/en-us/powershell/scripting/developer/hosting/windows-powershell-host-quickstart?view=powershell-7.6)
+- [Adding and invoking commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/hosting/adding-and-invoking-commands?view=powershell-7.6)
+- [C++/CLI programming in .NET](https://learn.microsoft.com/en-us/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp?view=msvc-170)
+- [Porting C++/CLI projects to .NET](https://learn.microsoft.com/en-us/dotnet/core/porting/cpp-cli)
+- [Microsoft.PowerShell.5.ReferenceAssemblies](https://www.nuget.org/packages/Microsoft.PowerShell.5.ReferenceAssemblies/)

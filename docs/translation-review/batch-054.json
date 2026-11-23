@@ -17,7 +17,7 @@
     "Fixed duplicate date metadata while preserving the 2025-07-14 publication date, added lastmod and accurate localized descriptions, and removed unsupported attachment advice.",
     "Compared the full Japanese article with all twelve translations, including setup, permissions, authentication, code, pagination, operational notes, summaries, terminology and references."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）/index.en.md": {
       "reviewKind": "ai",
@@ -463,5 +463,11 @@
         "Hugo build and live publication verification remain pending for this batch."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-054.json",
+    "ciRun": 45084961495,
+    "deployedCommit": "cbdaade2a567aa89ab270ff2dde8c0c55124db64",
+    "allPassed": true
   }
 }

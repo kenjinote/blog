@@ -1,13 +1,13 @@
 ---
 title: '[VS2022] Executando PowerShell via C++! Passos para Integração com C++/CLI DLL'
-date: "2026-09-24T19:44:38+09:00"
 slug: "C++ から PowerShell を C++ CLI DLL 経由で実行する手順"
 date: 2025-04-16T01:58:03+09:00
+lastmod: 2026-11-23
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Procurando como chamar e executar scripts do PowerShell a partir do C++ nativo? Detalhamos os passos práticos para criar uma DLL wrapper com C++/CLI no ambiente Visual Studio 2022, permitindo uma integração de sistemas perfeita.'
+description: 'Como hospedar o Windows PowerShell 5.1 em uma DLL C++/CLI no Visual Studio 2022: .NET Framework compatível, assemblies de referência, limites de execução e segurança de scripts.'
 ---
 
 # 🎯 Passos para Executar o PowerShell a partir de C++ via DLL C++/CLI (Visual Studio 2022 / C++)
@@ -17,7 +17,7 @@ description: 'Procurando como chamar e executar scripts do PowerShell a partir d
 ### 🔹 ① DLL Wrapper CLI (C++/CLI)
 Fornece a funcionalidade para executar scripts do PowerShell.
 
-### 🔹 ② Chamador Nativo C++
+### 🔹 ② Chamador C++ com /clr habilitado
 Chama a DLL CLI para executar o script do PowerShell.
 
 ---
@@ -35,8 +35,8 @@ Chama a DLL CLI para executar o script do PowerShell.
 ### 2. Adicionar o Pacote NuGet
 
 1. Clique com o botão direito no projeto → [Gerenciar Pacotes NuGet]
-2. Pesquise e instale `System.Management.Automation`  
-   (Versão 5.x ou 7.x)
+2. Adicione o pacote NuGet `Microsoft.PowerShell.5.ReferenceAssemblies`, versão 1.1.0. Ele fornece os assemblies de referência do Windows PowerShell 5.1.
+
 
 ---
 
@@ -60,30 +60,37 @@ namespace PowerShellWrapper {
 #### PowerShellWrapper.cpp
 
 ```cpp
-#include "PowerShellWrapper.h"
-using namespace System;
-using namespace System::Management::Automation;
-using namespace System::Collections::ObjectModel;
-
 String^ PowerShellWrapper::PowerShellExecutor::Execute(String^ script)
 {
     PowerShell^ ps = PowerShell::Create();
-    ps->AddScript(script);
-    Collection<PSObject^>^ results = ps->Invoke();
-
-    System::Text::StringBuilder^ sb = gcnew System::Text::StringBuilder();
-    for each (PSObject^ result in results)
+    try
     {
-        sb->AppendLine(result->ToString());
-    }
+        ps->AddScript(script);
+        Collection<PSObject^>^ results = ps->Invoke();
+        if (ps->HadErrors)
+        {
+            String^ message = "PowerShell reported an error.";
+            if (ps->Streams->Error->Count > 0)
+                message = ps->Streams->Error[0]->ToString();
+            throw gcnew InvalidOperationException(message);
+        }
 
-    return sb->ToString();
+        System::Text::StringBuilder^ sb = gcnew System::Text::StringBuilder();
+        for each (PSObject^ result in results)
+            sb->AppendLine(result->ToString());
+
+        return sb->ToString();
+    }
+    finally
+    {
+        delete ps;
+    }
 }
 ```
 
 ---
 
-## 🔧 Passo 2: Chamando a partir do C++ Nativo
+## 🔧 Etapa 2: criar o chamador com /clr habilitado
 
 ### 1. Criar o Projeto de Aplicativo de Console C++
 - Nome: `NativeApp`
@@ -99,7 +106,6 @@ String^ PowerShellWrapper::PowerShellExecutor::Execute(String^ script)
 
 ```cpp
 #using <System.dll>
-#using "..\\PowerShellWrapper\\Debug\\PowerShellWrapper.dll"
 
 using namespace System;
 using namespace PowerShellWrapper;
@@ -127,7 +133,26 @@ int main()
 Solution
 ├── PowerShellWrapper (C++/CLI DLL)
 │   └── PowerShellExecutor
-├── NativeApp (C++ EXE)
+├── NativeApp (C++ EXE, /clr)
     └── main.cpp → Chamada de DLL
 ```
----
+
+## ⚠️ Observações sobre runtime e segurança
+
+O computador Windows de destino deve ter Windows PowerShell 5.1 e um .NET Framework compatível disponíveis.
+
+Este exemplo usa Windows PowerShell 5.1 e .NET Framework 4.7.2 ou posterior. Instale “C++/CLI support for v143 build tools” no Visual Studio Installer e selecione o framework de destino correspondente.
+
+Este exemplo não funciona com PowerShell 7. Para isso, projete um host separado que use o mesmo runtime do .NET ou inicie `pwsh` como processo filho. Projetos C++/CLI para .NET moderno são compilados como DLL.
+
+`AddScript` executa a cadeia como código. Nunca concatene entrada não confiável. Para valores do usuário, prefira comandos fixos com parâmetros e considere um runspace restrito. Os scripts usam as permissões do usuário do aplicativo. Este exemplo usa o runspace padrão.
+
+
+Compile os dois projetos com o mesmo destino do .NET Framework, configuração (Debug/Release) e arquitetura (x86/x64). Ao habilitar `/clr`, o chamador torna-se um executável de modo misto, não apenas nativo.
+## Documentação oficial
+- [Choosing the right PowerShell NuGet package](https://learn.microsoft.com/en-us/powershell/scripting/dev-cross-plat/choosing-the-right-nuget-package?view=powershell-7.4)
+- [Windows PowerShell Host Quickstart](https://learn.microsoft.com/en-us/powershell/scripting/developer/hosting/windows-powershell-host-quickstart?view=powershell-7.6)
+- [Adding and invoking commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/hosting/adding-and-invoking-commands?view=powershell-7.6)
+- [C++/CLI programming in .NET](https://learn.microsoft.com/en-us/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp?view=msvc-170)
+- [Porting C++/CLI projects to .NET](https://learn.microsoft.com/en-us/dotnet/core/porting/cpp-cli)
+- [Microsoft.PowerShell.5.ReferenceAssemblies](https://www.nuget.org/packages/Microsoft.PowerShell.5.ReferenceAssemblies/)

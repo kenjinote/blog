@@ -1,13 +1,13 @@
 ---
 title: '【VS2022】C++ से PowerShell चलाएं! C++/CLI DLL के माध्यम से एकीकरण प्रक्रिया'
-date: "2026-09-24T19:44:38+09:00"
 slug: "C++ から PowerShell を C++ CLI DLL 経由で実行する手順"
 date: 2025-04-16T01:58:03+09:00
+lastmod: 2026-11-23
 tags: ["C++", "PowerShell", "C++/CLI", "DLL"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'क्या आप मूल C++ से PowerShell स्क्रिप्ट को कॉल करने और निष्पादित करने का तरीका ढूंढ रहे हैं? हम Visual Studio 2022 वातावरण में C++/CLI रैपर DLL बनाने और सुचारू सिस्टम एकीकरण प्राप्त करने के लिए विशिष्ट कार्यान्वयन चरणों की पूरी तरह से व्याख्या करेंगे。'
+description: 'Visual Studio 2022 में C++/CLI DLL से Windows PowerShell 5.1 चलाने की विधि; उपयुक्त .NET Framework, reference assemblies, runtime सीमाएँ और script सुरक्षा।'
 ---
 
 # 🎯 C++ से C++/CLI DLL के माध्यम से PowerShell को निष्पादित करने के चरण (Visual Studio 2022 / C++)
@@ -17,7 +17,7 @@ description: 'क्या आप मूल C++ से PowerShell स्क्�
 ### 🔹 ① CLI रैपर DLL (C++/CLI)
 PowerShell स्क्रिप्ट को निष्पादित करने की कार्यक्षमता प्रदान करता है।
 
-### 🔹 ② नेटिव C++ कॉलर
+### 🔹 ② /clr सक्षम वाला C++ कॉलर
 PowerShell स्क्रिप्ट चलाने के लिए CLI DLL को कॉल करता है।
 
 ---
@@ -35,8 +35,8 @@ PowerShell स्क्रिप्ट चलाने के लिए CLI DLL 
 ### 2. NuGet पैकेज जोड़ें
 
 1. प्रोजेक्ट पर राइट-क्लिक करें → [NuGet पैकेज प्रबंधित करें]
-2. `System.Management.Automation` खोजें और स्थापित करें  
-   (संस्करण 5.x या 7.x)
+2. `Microsoft.PowerShell.5.ReferenceAssemblies` NuGet पैकेज का संस्करण 1.1.0 जोड़ें। यह Windows PowerShell 5.1 के reference assemblies देता है।
+
 
 ---
 
@@ -60,30 +60,37 @@ namespace PowerShellWrapper {
 #### PowerShellWrapper.cpp
 
 ```cpp
-#include "PowerShellWrapper.h"
-using namespace System;
-using namespace System::Management::Automation;
-using namespace System::Collections::ObjectModel;
-
 String^ PowerShellWrapper::PowerShellExecutor::Execute(String^ script)
 {
     PowerShell^ ps = PowerShell::Create();
-    ps->AddScript(script);
-    Collection<PSObject^>^ results = ps->Invoke();
-
-    System::Text::StringBuilder^ sb = gcnew System::Text::StringBuilder();
-    for each (PSObject^ result in results)
+    try
     {
-        sb->AppendLine(result->ToString());
-    }
+        ps->AddScript(script);
+        Collection<PSObject^>^ results = ps->Invoke();
+        if (ps->HadErrors)
+        {
+            String^ message = "PowerShell reported an error.";
+            if (ps->Streams->Error->Count > 0)
+                message = ps->Streams->Error[0]->ToString();
+            throw gcnew InvalidOperationException(message);
+        }
 
-    return sb->ToString();
+        System::Text::StringBuilder^ sb = gcnew System::Text::StringBuilder();
+        for each (PSObject^ result in results)
+            sb->AppendLine(result->ToString());
+
+        return sb->ToString();
+    }
+    finally
+    {
+        delete ps;
+    }
 }
 ```
 
 ---
 
-## 🔧 चरण 2: नेटिव C++ से कॉल करना
+## 🔧 चरण 2: /clr सक्षम करके कॉलर बनाएँ
 
 ### 1. C++ कंसोल ऐप प्रोजेक्ट बनाना
 - नाम: `NativeApp`
@@ -99,7 +106,6 @@ String^ PowerShellWrapper::PowerShellExecutor::Execute(String^ script)
 
 ```cpp
 #using <System.dll>
-#using "..\\PowerShellWrapper\\Debug\\PowerShellWrapper.dll"
 
 using namespace System;
 using namespace PowerShellWrapper;
@@ -127,7 +133,26 @@ int main()
 Solution
 ├── PowerShellWrapper (C++/CLI DLL)
 │   └── PowerShellExecutor
-├── NativeApp (C++ EXE)
+├── NativeApp (C++ EXE, /clr)
     └── main.cpp → DLL कॉल
 ```
----
+
+## ⚠️ Runtime और सुरक्षा संबंधी बातें
+
+लक्ष्य Windows मशीन पर Windows PowerShell 5.1 और संगत .NET Framework उपलब्ध होना चाहिए।
+
+यह उदाहरण Windows PowerShell 5.1 और .NET Framework 4.7.2 या बाद के संस्करण के लिए है। Visual Studio Installer में “C++/CLI support for v143 build tools” इंस्टॉल करें और वही target framework चुनें।
+
+यह उदाहरण PowerShell 7 के साथ नहीं चलता। उसके लिए उसी .NET runtime को लक्ष्य करने वाला अलग host बनाएँ या `pwsh` को child process के रूप में चलाएँ। आधुनिक .NET के C++/CLI प्रोजेक्ट DLL बनाते हैं।
+
+`AddScript` दी गई string को code की तरह चलाता है। अविश्वसनीय input को उसमें न जोड़ें। उपयोगकर्ता के मानों के लिए fixed commands और parameters लें तथा सीमित runspace पर विचार करें। Script ऐप चलाने वाले उपयोगकर्ता के अधिकारों से चलता है। यह उदाहरण default Runspace का उपयोग करता है।
+
+
+दोनों प्रोजेक्ट में एक ही .NET Framework target, configuration (Debug/Release) और platform architecture (x86/x64) रखें। `/clr` सक्षम करने पर caller mixed-mode executable बनता है, केवल native executable नहीं।
+## आधिकारिक दस्तावेज़
+- [Choosing the right PowerShell NuGet package](https://learn.microsoft.com/en-us/powershell/scripting/dev-cross-plat/choosing-the-right-nuget-package?view=powershell-7.4)
+- [Windows PowerShell Host Quickstart](https://learn.microsoft.com/en-us/powershell/scripting/developer/hosting/windows-powershell-host-quickstart?view=powershell-7.6)
+- [Adding and invoking commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/hosting/adding-and-invoking-commands?view=powershell-7.6)
+- [C++/CLI programming in .NET](https://learn.microsoft.com/en-us/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp?view=msvc-170)
+- [Porting C++/CLI projects to .NET](https://learn.microsoft.com/en-us/dotnet/core/porting/cpp-cli)
+- [Microsoft.PowerShell.5.ReferenceAssemblies](https://www.nuget.org/packages/Microsoft.PowerShell.5.ReferenceAssemblies/)

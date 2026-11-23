@@ -1,22 +1,18 @@
 ---
-title: '【附示例】从C++调用Windows.AI并执行ONNX模型的方法'
-date: "2026-09-24T19:44:38+09:00"
+title: '[旧版 API] 使用 Windows ML 从 C++ 加载 ONNX 模型'
+lastmod: "2026-11-23T09:00:00+09:00"
 slug: "C++からMicrosoft.Windows.AIを呼び出す方法"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: '利用Windows自带的Windows ML访问AI功能！本文将附带示例代码，简单明了地讲解如何从Win32应用的C++环境调用“Microsoft.Windows.AI”，并执行ONNX格式的AI模型的具体步骤。'
+description: '介绍如何使用适用于 Windows 10 version 1809 及更高版本的旧版 Windows ML API，通过 C++/WinRT 加载 ONNX 模型，并说明它与当前 API 的区别以及推理所需的模型专属输入绑定。'
 ---
 
-# 🎯 如何从 C++ 调用 `Microsoft.Windows.AI`【附示例代码】
+# 🎯 使用旧版 Windows ML API 从 C++ 加载 ONNX 模型
 
-自 Windows 10 起，Windows 标准配备了 **可以运行 ONNX 格式 AI 模型的运行时 ** 。这就是 ** Windows ML (Windows.AI.MachineLearning)** 。
-
-本文将 **通过示例代码详细讲解 ** 如何从 ** C++（基于 Win32 应用程序）** 调用 `Microsoft.Windows.AI.MachineLearning`。
-
----
+> **适用范围：旧版 API。** 本文使用 Windows 10 version 1809 引入的 `Windows.AI.MachineLearning` API。该 API 已由[当前 Windows ML API 取代](https://learn.microsoft.com/en-us/windows/ai/windows-ml/api-reference)。新应用请参阅 Microsoft 的[当前 Windows ML 入门指南](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/get-started)。下面的代码只加载模型，不执行推理。完整推理示例请参阅 Microsoft 的 [C++ 桌面应用教程](https://learn.microsoft.com/en-us/windows/ai/windows-ml/get-started-desktop)。
 
 ## ✅ 准备篇
 
@@ -24,116 +20,91 @@ description: '利用Windows自带的Windows ML访问AI功能！本文将附带�
 
 * Windows 10 (1809+) 或 Windows 11
 * Visual Studio 2019 及以上版本（Community 版即可）
-* C++/WinRT 支持 (`Microsoft.Windows.CppWinRT`)
+* 适用于旧版 Windows SDK 的 C++/WinRT 集成
 * Windows SDK 10.0.17763.0 及以上
 
 ---
 
 ## ✅ 项目配置
 
-在 Visual Studio 中创建一个如下配置的项目。
-
-* 类型：C++ Windows 桌面应用程序（空项目）
-* 子系统：Windows（`WinMain`）
-* 通过 NuGet 添加以下包
-
-  ```
-  Microsoft.Windows.CppWinRT
-  ```
+使用此旧版 API 需要 Windows 10 version 1809（build 17763）或更高版本、兼容的 Windows SDK、安装了 C++ 桌面开发工作负载的 Visual Studio，以及 C++/WinRT。请勿将当前 Windows ML 的包误认为此旧版 API 的依赖项。当前 API 的包和部署要求请查看[部署指南](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/distributing-your-app)。
 
 ---
 
 ## ✅ 示例代码
 
-以下是使用 `WinMain` 结合 Win32 API 和 `Windows.AI.MachineLearning` 的最小配置示例。
-
-> ※ 假设使用的 ONNX 模型为 `model.onnx`，请将其放置在与可执行文件相同的文件夹中。
+> 这只是模型加载检查。不同 ONNX 模型的输入名称、类型和形状各不相同；未绑定必需输入时调用 `EvaluateAsync` 通常无法执行推理。
 
 ### `main.cpp`
+
+请将 `model.onnx` 设置为实际绝对路径。相对路径可能相对于当前工作目录解析，而当前工作目录不一定是可执行文件所在目录。
 
 ```cpp
 #include <windows.h>
 #include <winrt/Windows.AI.MachineLearning.h>
 #include <winrt/Windows.Storage.h>
 
-#pragma comment(lib, "windowsapp") // 用于 WinRT 链接
+#pragma comment(lib, "windowsapp")
 
 using namespace winrt;
 using namespace Windows::AI::MachineLearning;
 using namespace Windows::Storage;
 
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
+int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
-    // WinRT 初始化（MTA 或 STA 均可）
     winrt::init_apartment();
 
     try {
-        // 加载模型文件
-        auto modelFile = StorageFile::GetFileFromPathAsync(L"model.onnx").get();
+        // Replace this with the absolute path to your ONNX model.
+        constexpr wchar_t modelPath[] = L"C:\\path\\to\\model.onnx";
+        auto modelFile = StorageFile::GetFileFromPathAsync(modelPath).get();
         LearningModel model = LearningModel::LoadFromStorageFileAsync(modelFile).get();
 
-        // 创建会话
-        LearningModelSession session(model);
-        LearningModelBinding binding(session);
-
-        // 模型的输入输出（这里暂时为空输入）
-        // 实际上需要使用 TensorFloat 等进行绑定
-
-        // 执行推理
-        auto result = session.EvaluateAsync(binding, L"").get();
-
-        MessageBox(nullptr, L"推理已完成", L"Windows ML (C++)", MB_OK);
+        MessageBoxW(nullptr, L"Model loaded", L"Legacy Windows ML", MB_OK);
     }
     catch (winrt::hresult_error const& ex) {
-        MessageBox(nullptr, ex.message().c_str(), L"错误", MB_ICONERROR);
+        MessageBoxW(nullptr, ex.message().c_str(), L"Error", MB_OK | MB_ICONERROR);
+        return static_cast<int>(ex.code().value);
     }
 
     return 0;
 }
 ```
 
----
+## ✅ 补充：绑定模型输入示例
 
-## ✅ 补充：输入与输出 Tensor 的指定方法
-
-根据模型的不同，在推理前可能需要 **创建并绑定 Tensor** 。
-
-示例：
+下面的代码片段展示输入绑定的写法。请根据模型调整 `data_0`、类型、形状和值。仅凭此片段无法构成加载模型并返回推理结果的完整程序。
 
 ```cpp
-// 将一维 float 数组转换为 Tensor
-std::vector<float> inputData = {0.5f, 0.3f, 0.2f};
-std::vector<int64_t> shape = {1, 3}; // 形状：[1, 3]
+#include <cstdint>
+#include <vector>
+#include <winrt/Windows.AI.MachineLearning.h>
 
-auto tensor = TensorFloat::CreateFromArray(shape, inputData);
+using namespace Windows::AI::MachineLearning;
 
-// 输入绑定（与模型的输入名一致）
-binding.Bind(L"input_0", tensor);
+void RunWithInput(LearningModel const& model)
+{
+    LearningModelSession session{model};
+    LearningModelBinding binding{session};
+
+    // Example only: replace the feature name, type, shape, and values for your model.
+    std::vector<float> inputData{0.5f, 0.3f, 0.2f};
+    std::vector<int64_t> shape{1, 3};
+    TensorFloat tensor = TensorFloat::CreateFromArray(shape, inputData);
+    binding.Bind(L"data_0", tensor);
+
+    auto result = session.Evaluate(binding, L"example");
+    // Read result.Outputs() using the output feature name and type defined by the model.
+}
 ```
 
-输出也一样，可以通过 `result.Outputs().Lookup(L"output_0")` 获取。
+输出名称和类型也因模型而异。请使用 Netron 等工具检查 ONNX 的输入和输出，并绑定匹配的值。
 
----
-
-## ✅ 调试注意事项
-
-* 如果模型文件不在运行文件夹中，会抛出 `FileNotFoundException`。
-* 如果输入输出名称不匹配，会导致 `invalid_argument` 错误。
-* 模型的准确 I/O 规范可以使用 [Netron](https://netron.app) 等工具确认。
-
----
+[Microsoft Learn: TensorFloat::CreateFromArray](https://learn.microsoft.com/en-us/uwp/api/windows.ai.machinelearning.tensorfloat.createfromarray?view=winrt-28000) documents the API used in the binding fragment.
 
 ## ✅ 总结
 
-| 项目 | 内容 |
-| --- | --- |
-| 使用API | Windows.AI.MachineLearning (WinRT) |
-| 语言 | C++（基于 Win32） |
-| 推荐方法 | 通过 C++/WinRT 头文件 |
-| 优点 | 原生运行 ONNX 模型，也支持 GPU |
-| 注意 | 注意模型的输入名称和 Tensor 形状 |
-
----
+此示例仅展示使用旧版 `Windows.AI.MachineLearning` API 加载模型，不保证 GPU 执行，也不保证特定模型的推理成功。新项目应选择当前 Windows ML API，并通过官方指南确认包和操作系统要求。
 
 ## ✅ 替代方案：写给不想使用 WinRT 的人
 
@@ -144,7 +115,4 @@ binding.Bind(L"input_0", tensor);
 
 ## 📌 结语
 
-Windows ML (Microsoft.Windows.AI) 是一款强大的 AI 推理引擎，即使在 C++ 中也能很好地使用。如果您需要在 Windows 原生环境中进行推理，请务必尝试一下。
-
-如果您需要创建 ONNX 模型或 Tensor 绑定的具体示例，我们将会在后续文章中进行讲解！
-
+此示例仅展示使用旧版 `Windows.AI.MachineLearning` API 加载模型，不保证 GPU 执行，也不保证特定模型的推理成功。新项目应选择当前 Windows ML API，并通过官方指南确认包和操作系统要求。

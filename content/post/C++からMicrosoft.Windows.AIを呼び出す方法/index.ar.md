@@ -1,22 +1,18 @@
 ---
-title: '【مع أمثلة】كيفية استدعاء Windows.AI من C++ وتشغيل نماذج ONNX'
-date: "2026-09-24T19:44:38+09:00"
+title: '[واجهة قديمة] تحميل نموذج ONNX من C++ باستخدام Windows ML'
+lastmod: "2026-11-23T09:00:00+09:00"
 slug: "C++からMicrosoft.Windows.AIを呼び出す方法"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'الوصول إلى ميزات الذكاء الاصطناعي باستخدام Windows ML المدمج في نظام Windows! نشرح بطريقة سهلة الفهم مع نماذج برمجية الخطوات المحددة لاستدعاء ''Microsoft.Windows.AI'' من بيئة C++ لتطبيقات Win32 وتشغيل نماذج الذكاء الاصطناعي بتنسيق ONNX.'
+description: 'تعرّف على تحميل نموذج ONNX من C++/WinRT باستخدام واجهة Windows ML القديمة في Windows 10 الإصدار 1809 وما بعده، وعلى اختلافها عن الواجهة الحالية وضرورة ربط مدخلات خاصة بكل نموذج لإجراء الاستدلال.'
 ---
 
-# 🎯 كيفية استدعاء `Microsoft.Windows.AI` من C++ [مع نموذج كود]
+# 🎯 تحميل نموذج ONNX من C++ باستخدام واجهة Windows ML القديمة
 
-بدءًا من نظام التشغيل Windows 10، يأتي Windows مزودًا بـ **وقت تشغيل يمكنه تنفيذ نماذج الذكاء الاصطناعي بتنسيق ONNX** بشكل قياسي. هذا هو **Windows ML (Windows.AI.MachineLearning)**.
-
-في هذه المقالة، سنشرح بالتفصيل كيفية استدعاء `Microsoft.Windows.AI.MachineLearning` من **C++ (تطبيق Win32 الأساسي)** مع ** نموذج كود**.
-
----
+> **النطاق: واجهة قديمة.** تستخدم هذه المقالة واجهة `Windows.AI.MachineLearning` التي ظهرت مع Windows 10 الإصدار 1809. وقد [استُبدلت بواجهات Windows ML الحالية](https://learn.microsoft.com/en-us/windows/ai/windows-ml/api-reference). للتطبيقات الجديدة، اتبع [دليل البدء الحالي لـ Windows ML من Microsoft](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/get-started). يحمّل الكود أدناه النموذج فقط ولا ينفذ الاستدلال. لمثال كامل، راجع [دليل Microsoft لتطبيقات C++ المكتبية](https://learn.microsoft.com/en-us/windows/ai/windows-ml/get-started-desktop).
 
 ## ✅ التحضير
 
@@ -24,116 +20,91 @@ description: 'الوصول إلى ميزات الذكاء الاصطناعي ب�
 
 * Windows 10 (1809+) أو Windows 11
 * Visual Studio 2019 أو أحدث (إصدار Community مناسب)
-* دعم C++/WinRT (`Microsoft.Windows.CppWinRT`)
+* تكامل C++/WinRT مع Windows SDK القديم
 * Windows SDK 10.0.17763.0 أو أحدث
 
 ---
 
 ## ✅ هيكل المشروع
 
-قم بإنشاء مشروع بالهيكل التالي في Visual Studio.
-
-* النوع: تطبيق سطح مكتب Windows C++ (مشروع فارغ)
-* النظام الفرعي: Windows (`WinMain`)
-* أضف الحزم التالية عبر NuGet
-
-  ```
-  Microsoft.Windows.CppWinRT
-  ```
+تتطلب هذه الواجهة القديمة Windows 10 الإصدار 1809 (البنية 17763) أو أحدث، وWindows SDK متوافقاً، وVisual Studio مع أدوات تطوير C++ المكتبية، وC++/WinRT. لا تخلط بين حزم Windows ML الحالية وتبعيات هذه الواجهة القديمة. راجع [دليل النشر](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/distributing-your-app) لمعرفة الحزم والمتطلبات الحالية.
 
 ---
 
 ## ✅ نموذج الكود
 
-فيما يلي حد أدنى لنموذج يجمع بين Win32 API و `Windows.AI.MachineLearning` باستخدام `WinMain`.
-
-> ※ نموذج ONNX المستخدم هو `model.onnx`، يرجى وضعه في نفس المجلد مع الملف القابل للتنفيذ.
+> هذا اختبار لتحميل النموذج فقط. تختلف أسماء المدخلات وأنواعها وأشكالها بين نماذج ONNX؛ واستدعاء `EvaluateAsync` من دون ربط المدخلات المطلوبة لا ينفذ الاستدلال عادةً.
 
 ### `main.cpp`
+
+حدّد المسار المطلق الفعلي للملف `model.onnx`. قد يُفسَّر المسار النسبي انطلاقاً من مجلد العمل الحالي، وليس بالضرورة من مجلد الملف التنفيذي.
 
 ```cpp
 #include <windows.h>
 #include <winrt/Windows.AI.MachineLearning.h>
 #include <winrt/Windows.Storage.h>
 
-#pragma comment(lib, "windowsapp") // لربط WinRT
+#pragma comment(lib, "windowsapp")
 
 using namespace winrt;
 using namespace Windows::AI::MachineLearning;
 using namespace Windows::Storage;
 
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
+int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
-    // تهيئة WinRT (MTA أو STA)
     winrt::init_apartment();
 
     try {
-        // تحميل ملف النموذج
-        auto modelFile = StorageFile::GetFileFromPathAsync(L"model.onnx").get();
+        // Replace this with the absolute path to your ONNX model.
+        constexpr wchar_t modelPath[] = L"C:\\path\\to\\model.onnx";
+        auto modelFile = StorageFile::GetFileFromPathAsync(modelPath).get();
         LearningModel model = LearningModel::LoadFromStorageFileAsync(modelFile).get();
 
-        // إنشاء جلسة
-        LearningModelSession session(model);
-        LearningModelBinding binding(session);
-
-        // إدخال/إخراج النموذج (إدخال فارغ مؤقتًا هنا)
-        // في الواقع، مطلوب الربط باستخدام TensorFloat وما إلى ذلك.
-
-        // تنفيذ الاستدلال
-        auto result = session.EvaluateAsync(binding, L"").get();
-
-        MessageBox(nullptr, L"اكتمل الاستدلال", L"Windows ML (C++)", MB_OK);
+        MessageBoxW(nullptr, L"Model loaded", L"Legacy Windows ML", MB_OK);
     }
     catch (winrt::hresult_error const& ex) {
-        MessageBox(nullptr, ex.message().c_str(), L"خطأ", MB_ICONERROR);
+        MessageBoxW(nullptr, ex.message().c_str(), L"Error", MB_OK | MB_ICONERROR);
+        return static_cast<int>(ex.code().value);
     }
 
     return 0;
 }
 ```
 
----
+## ✅ ملحق: مثال على ربط مدخلات النموذج
 
-## ✅ ملحق: كيفية تحديد Tensor الإدخال/الإخراج
-
-اعتمادًا على النموذج، قد تحتاج إلى **إنشاء وربط Tensor** قبل الاستدلال.
-
-مثال:
+يوضح المقتطف التالي نمط ربط أحد المدخلات. عدّل `data_0` والنوع والشكل والقيم وفق النموذج. لا يشكل هذا المقتطف وحده برنامجاً كاملاً يحمّل النموذج ويعيد نتائج الاستدلال.
 
 ```cpp
-// تحويل مصفوفة float أحادية البعد إلى Tensor
-std::vector<float> inputData = {0.5f, 0.3f, 0.2f};
-std::vector<int64_t> shape = {1, 3}; // الشكل: [1, 3]
+#include <cstdint>
+#include <vector>
+#include <winrt/Windows.AI.MachineLearning.h>
 
-auto tensor = TensorFloat::CreateFromArray(shape, inputData);
+using namespace Windows::AI::MachineLearning;
 
-// ربط الإدخال (يتطابق مع اسم إدخال النموذج)
-binding.Bind(L"input_0", tensor);
+void RunWithInput(LearningModel const& model)
+{
+    LearningModelSession session{model};
+    LearningModelBinding binding{session};
+
+    // Example only: replace the feature name, type, shape, and values for your model.
+    std::vector<float> inputData{0.5f, 0.3f, 0.2f};
+    std::vector<int64_t> shape{1, 3};
+    TensorFloat tensor = TensorFloat::CreateFromArray(shape, inputData);
+    binding.Bind(L"data_0", tensor);
+
+    auto result = session.Evaluate(binding, L"example");
+    // Read result.Outputs() using the output feature name and type defined by the model.
+}
 ```
 
-وبالمثل، يمكن الحصول على الإخراج باستخدام `result.Outputs().Lookup(L"output_0")`.
+تعتمد أسماء المخرجات وأنواعها أيضاً على النموذج. افحص مدخلات ONNX ومخرجاته بأداة مثل Netron، ثم اربط قيماً متوافقة.
 
----
-
-## ✅ ملاحظات التصحيح
-
-* إذا لم يكن ملف النموذج موجودًا في مجلد التنفيذ، فسيتم إلقاء `FileNotFoundException`.
-* إذا لم تتطابق أسماء الإدخال/الإخراج، فسيحدث خطأ `invalid_argument`.
-* يمكن التحقق من مواصفات الإدخال/الإخراج الدقيقة للنموذج باستخدام أدوات مثل [Netron](https://netron.app).
-
----
+[Microsoft Learn: TensorFloat::CreateFromArray](https://learn.microsoft.com/en-us/uwp/api/windows.ai.machinelearning.tensorfloat.createfromarray?view=winrt-28000) documents the API used in the binding fragment.
 
 ## ✅ الخلاصة
 
-| العنصر | المحتوى |
-| ----- | ---------------------------------- |
-| واجهة برمجة التطبيقات المستخدمة | Windows.AI.MachineLearning (WinRT) |
-| اللغة | C++ (Win32) |
-| الطريقة الموصى بها | عبر ترويسة C++/WinRT |
-| المزايا | يعمل نموذج ONNX بشكل أصلي، ويدعم وحدة معالجة الرسومات أيضًا |
-| تنبيه | انتبه لاسم إدخال النموذج وشكل Tensor |
-
----
+يوضح هذا المثال تحميل النموذج فقط باستخدام الواجهة القديمة `Windows.AI.MachineLearning`. ولا يضمن التشغيل على GPU أو نجاح الاستدلال لنموذج معين. في التطوير الجديد، اختر واجهات Windows ML الحالية وتحقق من متطلبات الحزم ونظام التشغيل في الدليل الرسمي.
 
 ## ✅ بديل: لأولئك الذين لا يرغبون في استخدام WinRT
 
@@ -144,7 +115,4 @@ binding.Bind(L"input_0", tensor);
 
 ## 📌 الخاتمة
 
-Windows ML (Microsoft.Windows.AI) هو محرك استدلال ذكاء اصطناعي قوي يمكن استخدامه بشكل جيد حتى من C++. إذا كنت بحاجة إلى الاستدلال الأصلي على Windows، يرجى تجربته.
-
-سيتم شرح أمثلة محددة لإنشاء نماذج ONNX وربط Tensor في مقال تكميلي!
-
+يوضح هذا المثال تحميل النموذج فقط باستخدام الواجهة القديمة `Windows.AI.MachineLearning`. ولا يضمن التشغيل على GPU أو نجاح الاستدلال لنموذج معين. في التطوير الجديد، اختر واجهات Windows ML الحالية وتحقق من متطلبات الحزم ونظام التشغيل في الدليل الرسمي.

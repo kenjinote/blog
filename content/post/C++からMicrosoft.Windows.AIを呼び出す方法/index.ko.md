@@ -1,21 +1,13 @@
 ---
-
-
-
-
-
-
-
-
-title: '【샘플 포함】 C++에서 Windows.AI를 호출하여 ONNX 모델을 실행하는 방법'
-date: "2026-09-24T19:44:38+09:00"
+title: '[레거시 API] Windows ML로 C++에서 ONNX 모델 로드하기'
+lastmod: "2026-11-23T09:00:00+09:00"
 slug: "C++からMicrosoft.Windows.AIを呼び出す方法"
 date: 2025-07-19T10:03:51+09:00
 tags: ["C++", "Microsoft.Windows.AI", "Win32 API"]
 draft: false
 image: "img.webp"
 categories: ["tools-development-environment"]
-description: 'Windows 표준의 Windows ML을 활용하여 AI 기능에 액세스! Win32 앱의 C++ 환경에서 ''Microsoft.Windows.AI''를 호출하고, ONNX 형식의 AI 모델을 실행하는 구체적인 절차를 샘플 코드와 함께 알기 쉽게 해설합니다.'
+description: 'Windows 10 버전 1809 이상용 레거시 Windows ML API를 사용해 C++/WinRT에서 ONNX 모델을 로드하는 방법을 설명합니다. 현행 API와의 차이 및 추론에 필요한 모델별 입력 바인딩도 다룹니다.'
 ---
 
 
@@ -26,13 +18,9 @@ description: 'Windows 표준의 Windows ML을 활용하여 AI 기능에 액세�
 
 
 
-# 🎯 C++에서 `Microsoft.Windows.AI`를 호출하는 방법【샘플 코드 포함】
+# 🎯 레거시 Windows ML API로 C++에서 ONNX 모델 로드하기
 
-Windows 10 이후, Windows에는 기본적으로 **ONNX 형식의 AI 모델을 실행할 수 있는 런타임 ** 이 탑재되어 있습니다. 그것이 바로 ** Windows ML (Windows.AI.MachineLearning)** 입니다.
-
-이 글에서는 **C++(Win32 앱 기반)** 에서 `Microsoft.Windows.AI.MachineLearning`을 호출하는 방법을 ** 샘플 코드와 함께 구체적으로 설명** 합니다.
-
----
+> **범위: 레거시 API.** 이 문서는 Windows 10 버전 1809와 함께 도입된 `Windows.AI.MachineLearning` API를 사용합니다. 이 API는 [현행 Windows ML API로 대체되었습니다](https://learn.microsoft.com/en-us/windows/ai/windows-ml/api-reference). 새 앱은 Microsoft의 [현행 Windows ML 시작 가이드](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/get-started)를 따르세요. 아래 코드는 모델만 로드하며 추론을 실행하지 않습니다. 전체 추론 예제는 Microsoft의 [C++ 데스크톱 튜토리얼](https://learn.microsoft.com/en-us/windows/ai/windows-ml/get-started-desktop)을 참고하세요.
 
 ## ✅ 준비편
 
@@ -40,116 +28,91 @@ Windows 10 이후, Windows에는 기본적으로 **ONNX 형식의 AI 모델을 �
 
 * Windows 10 (1809+) 또는 Windows 11
 * Visual Studio 2019 이후 (Community 버전 가능)
-* C++/WinRT 지원 (`Microsoft.Windows.CppWinRT`)
+* 레거시 Windows SDK용 C++/WinRT 통합
 * Windows SDK 10.0.17763.0 이상
 
 ---
 
 ## ✅ 프로젝트 구성
 
-Visual Studio에서 다음과 같은 구성의 프로젝트를 만듭니다.
-
-* 유형: C++ Windows 데스크톱 애플리케이션(빈 프로젝트)
-* 하위 시스템: Windows (`WinMain`)
-* NuGet에서 다음 패키지를 추가
-
-  ```
-  Microsoft.Windows.CppWinRT
-  ```
+이 레거시 API를 사용하려면 Windows 10 버전 1809(build 17763) 이상, 호환되는 Windows SDK, C++ 데스크톱 워크로드가 설치된 Visual Studio, C++/WinRT가 필요합니다. 현행 Windows ML 패키지를 이 레거시 API의 종속성으로 혼동하지 마세요. 현행 패키지와 배포 요건은 [배포 가이드](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/distributing-your-app)를 확인하세요.
 
 ---
 
 ## ✅ 샘플 코드
 
-다음은 `WinMain`을 사용하여 Win32 API와 `Windows.AI.MachineLearning`을 조합한 최소 구성의 샘플입니다.
-
-> ※ 사용할 ONNX 모델은 `model.onnx`로 하고, 실행 파일과 같은 폴더에 배치해 주세요.
+> 이 코드는 모델 로드만 확인합니다. ONNX 모델마다 입력 이름·형식·모양이 다르므로 필수 입력을 바인딩하지 않은 `EvaluateAsync` 호출은 일반적으로 추론을 수행하지 못합니다.
 
 ### `main.cpp`
+
+`model.onnx`에 실제 절대 경로를 지정하세요. 상대 경로는 실행 파일 폴더가 아니라 현재 작업 디렉터리를 기준으로 해석될 수 있습니다.
 
 ```cpp
 #include <windows.h>
 #include <winrt/Windows.AI.MachineLearning.h>
 #include <winrt/Windows.Storage.h>
 
-#pragma comment(lib, "windowsapp") // WinRT 링크용
+#pragma comment(lib, "windowsapp")
 
 using namespace winrt;
 using namespace Windows::AI::MachineLearning;
 using namespace Windows::Storage;
 
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
+int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
-    // WinRT 초기화 (MTA든 STA든 상관없음)
     winrt::init_apartment();
 
     try {
-        // 모델 파일을 읽어오기
-        auto modelFile = StorageFile::GetFileFromPathAsync(L"model.onnx").get();
+        // Replace this with the absolute path to your ONNX model.
+        constexpr wchar_t modelPath[] = L"C:\\path\\to\\model.onnx";
+        auto modelFile = StorageFile::GetFileFromPathAsync(modelPath).get();
         LearningModel model = LearningModel::LoadFromStorageFileAsync(modelFile).get();
 
-        // 세션 생성
-        LearningModelSession session(model);
-        LearningModelBinding binding(session);
-
-        // 모델의 입출력 (여기서는 임시로 빈 입력)
-        // 실제로는 TensorFloat 등으로 바인딩이 필요합니다.
-
-        // 추론 실행
-        auto result = session.EvaluateAsync(binding, L"").get();
-
-        MessageBox(nullptr, L"추론이 완료되었습니다", L"Windows ML (C++)", MB_OK);
+        MessageBoxW(nullptr, L"Model loaded", L"Legacy Windows ML", MB_OK);
     }
     catch (winrt::hresult_error const& ex) {
-        MessageBox(nullptr, ex.message().c_str(), L"에러", MB_ICONERROR);
+        MessageBoxW(nullptr, ex.message().c_str(), L"Error", MB_OK | MB_ICONERROR);
+        return static_cast<int>(ex.code().value);
     }
 
     return 0;
 }
 ```
 
----
+## ✅ 보충: 모델 입력 바인딩 예제
 
-## ✅ 보충: 입력 및 출력 Tensor 지정 방법
-
-모델에 따라 추론 전에 **Tensor의 생성 및 바인딩** 이 필요할 수 있습니다.
-
-예:
+다음은 입력 바인딩의 형태를 보여 주는 조각입니다. `data_0`, 형식, 모양, 값은 모델에 맞게 바꾸세요. 이것만으로 모델을 로드하고 추론 결과를 반환하는 완전한 프로그램이 되지는 않습니다.
 
 ```cpp
-// 1차원 float 배열을 Tensor로 변환
-std::vector<float> inputData = {0.5f, 0.3f, 0.2f};
-std::vector<int64_t> shape = {1, 3}; // 형태: [1, 3]
+#include <cstdint>
+#include <vector>
+#include <winrt/Windows.AI.MachineLearning.h>
 
-auto tensor = TensorFloat::CreateFromArray(shape, inputData);
+using namespace Windows::AI::MachineLearning;
 
-// 입력 바인딩 (모델의 입력 이름에 맞춤)
-binding.Bind(L"input_0", tensor);
+void RunWithInput(LearningModel const& model)
+{
+    LearningModelSession session{model};
+    LearningModelBinding binding{session};
+
+    // Example only: replace the feature name, type, shape, and values for your model.
+    std::vector<float> inputData{0.5f, 0.3f, 0.2f};
+    std::vector<int64_t> shape{1, 3};
+    TensorFloat tensor = TensorFloat::CreateFromArray(shape, inputData);
+    binding.Bind(L"data_0", tensor);
+
+    auto result = session.Evaluate(binding, L"example");
+    // Read result.Outputs() using the output feature name and type defined by the model.
+}
 ```
 
-출력도 마찬가지로 `result.Outputs().Lookup(L"output_0")`으로 얻을 수 있습니다.
+출력 이름과 형식도 모델마다 다릅니다. Netron 같은 도구로 ONNX 입출력을 확인하고 모델에 맞는 값을 바인딩하세요.
 
----
-
-## ✅ 디버깅 시 주의사항
-
-* 모델 파일이 실행 폴더에 존재하지 않으면 `FileNotFoundException`이 발생합니다.
-* 입출력 이름이 일치하지 않으면 `invalid_argument` 에러가 발생합니다.
-* 모델의 정확한 IO 사양은 [Netron](https://netron.app) 등의 도구로 확인 가능합니다.
-
----
+[Microsoft Learn: TensorFloat::CreateFromArray](https://learn.microsoft.com/en-us/uwp/api/windows.ai.machinelearning.tensorfloat.createfromarray?view=winrt-28000) documents the API used in the binding fragment.
 
 ## ✅ 요약
 
-| 항목 | 내용 |
-| --- | --- |
-| 사용 API | Windows.AI.MachineLearning (WinRT) |
-| 언어 | C++ (Win32 기반) |
-| 권장 방식 | C++/WinRT 헤더 경유 |
-| 장점 | ONNX 모델이 네이티브로 동작, GPU 지원도 가능 |
-| 주의 | 모델의 입력 이름과 Tensor 형태에 주의 |
-
----
+이 예제는 레거시 `Windows.AI.MachineLearning` API를 사용한 모델 로드만 보여 줍니다. GPU 실행이나 특정 모델의 추론 성공을 보장하지 않습니다. 새 개발에서는 현행 Windows ML API를 선택하고 공식 가이드에서 패키지와 OS 요건을 확인하세요.
 
 ## ✅ 대안: WinRT를 사용하고 싶지 않은 분들을 위해
 
@@ -160,6 +123,4 @@ binding.Bind(L"input_0", tensor);
 
 ## 📌 마무리
 
-Windows ML (Microsoft.Windows.AI)은 C++에서도 확실하게 사용할 수 있는 강력한 AI 추론 엔진입니다. Windows 네이티브에서의 추론이 필요하신 분들은 꼭 시도해 보시길 바랍니다.
-
-ONNX 모델 생성이나 Tensor 바인딩의 구체적인 예시가 필요하신 분들을 위해 후속 기사에서 설명할 예정입니다!
+이 예제는 레거시 `Windows.AI.MachineLearning` API를 사용한 모델 로드만 보여 줍니다. GPU 실행이나 특정 모델의 추론 성공을 보장하지 않습니다. 새 개발에서는 현행 Windows ML API를 선택하고 공식 가이드에서 패키지와 OS 요건을 확인하세요.
