@@ -1,39 +1,59 @@
 ---
-title: 'Como Enviar E-mails do Gmail Usando o Comando curl'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Gmailをcurlから送る"
-date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: 'Explicamos como enviar e-mails via conta do Gmail através da ferramenta de linha de comando ''curl''. Detalhamos desde o processo para obter uma Senha de App do Google, até as opções do comando curl e a criação e envio do arquivo do corpo do e-mail.'
+title: "Enviar e-mail do Gmail com curl"
+date: "2025-02-27T02:13:31+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "Envie e-mail pelo SMTP do Gmail com curl: senha de app, TLS, arquivo RFC 5322 e comandos para Bash e Windows PowerShell."
 ---
 
-# Enviar Gmail com curl
+O curl pode se conectar ao SMTP do Gmail e enviar um arquivo de mensagem preparado. Isso não é a API do Gmail. O Google geralmente recomenda OAuth 2.0; o exemplo é para um teste manual com uma conta que possa usar senha de app.
 
-## 1. Obter uma senha de aplicativo
-https://myaccount.google.com/apppasswords
-Clique no link acima e insira o nome do aplicativo.
-Salve a senha gerada.
+## Escolher a autenticação
 
-## 2. Enviar email com o comando curl
-Execute o seguinte comando.
+Não use a senha normal da Conta do Google no SMTP. Prefira OAuth 2.0 quando o aplicativo oferecer suporte. Para um teste manual, uma senha de app pode funcionar se a verificação em duas etapas estiver ativada. Crie-a em [Senhas de app da Conta do Google](https://myaccount.google.com/apppasswords). A opção não está disponível para todas as contas; políticas da organização ou configurações de segurança podem ocultá-la. O Google não recomenda senhas de app para a maioria dos usos. Revogue-a quando não precisar mais.
 
-No exemplo abaixo, o conteúdo do email está escrito em mail.txt.
+## Criar o arquivo da mensagem
 
-```mail.txt
-From: from@gmail.com
-To: to@gmail.com
-Subject: Email de teste
-Content-Type: text/plain; charset="UTF-8"
+No envio por SMTP, o curl não compõe nem converte a mensagem. O arquivo precisa conter cabeçalhos e corpo no formato RFC 5322. O exemplo usa endereços ASCII. Mantenha o cabeçalho `From` alinhado à conta Gmail usada na autenticação. Um assunto com caracteres não ASCII requer codificação MIME.
 
-Este é um email de teste.
+Salve esta mensagem como `mail.txt`.
+
+```text
+From: sender@gmail.com
+To: recipient@example.com
+Subject: Test message
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This is a test message sent with curl.
 ```
 
-Crie o arquivo acima e execute o seguinte comando.
+## Enviar com curl
+
+Este exemplo usa TLS implícito na porta 465. Como `--user` contém apenas o nome de usuário, o curl solicita a senha; digite a senha de app nesse prompt. Para a porta 587, use `smtp://smtp.gmail.com:587` com `--ssl-reqd` para solicitar STARTTLS.
+
+### Bash, zsh, Linux e macOS
 
 ```bash
-curl --url "smtps://smtp.gmail.com:465" --ssl-reqd --mail-from "from@gmail.com" --mail-rcpt "to@gmail.com" --user "from@gmail.com:xxxxxxxxxxxxxxxx" --upload-file mail.txt
+curl --url "smtps://smtp.gmail.com:465" \
+  --mail-from "sender@gmail.com" \
+  --mail-rcpt "recipient@example.com" \
+  --user "sender@gmail.com" \
+  --upload-file mail.txt
 ```
-※ Substitua xxxxxxxxxxxxxxxx pela sua senha de aplicativo.
+
+### Windows PowerShell
+
+```powershell
+curl.exe --url "smtps://smtp.gmail.com:465" --mail-from "sender@gmail.com" --mail-rcpt "recipient@example.com" --user "sender@gmail.com" --upload-file "mail.txt"
+```
+
+## Proteger as credenciais
+
+Não coloque a senha de app na linha de comando, arquivo de mensagem, histórico do shell, repositório ou log. Use o prompt de senha do curl. Proteja também o arquivo se contiver informações pessoais ou confidenciais.
+
+Documentação oficial: [Gmail SMTP settings and OAuth support](https://developers.google.com/workspace/gmail/imap/imap-smtp), [Google app passwords](https://support.google.com/accounts/answer/185833), [Gmail OAuth 2.0 for SMTP](https://developers.google.com/workspace/gmail/imap/xoauth2-protocol), and the [curl manual for --user and --upload-file](https://curl.se/docs/manpage.html).

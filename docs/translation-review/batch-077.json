@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "article": "Gmailをcurlから送る",
+  "frozenSourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+    "https://support.google.com/accounts/answer/185833",
+    "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+    "https://curl.se/docs/manpage.html"
+  ],
+  "findings": [
+    "Preserved original publication date 2025-02-27, removed the conflicting injected date, and set lastmod 2026-11-23 in all editions.",
+    "Clarified that the example uses Gmail SMTP rather than the Gmail API and that OAuth 2.0 is preferred when supported.",
+    "Documented app-password prerequisites and availability caveats; replaced inline password placeholders with curl’s interactive password prompt.",
+    "Added an RFC 5322 message file, Bash and Windows PowerShell commands, implicit TLS on port 465, STARTTLS on port 587, sender-address consistency, and credential-handling guidance."
+  ],
+  "validation": "docs/translation-review/validation-077.json",
+  "scope": "Read the full Japanese article and all twelve translations. Compared Gmail SMTP endpoint/ports and OAuth support, app-password policy, curl prompt behavior and SMTP upload format with official primary docs.",
+  "publicationPending": true,
+  "reviews": {
+    "post/Gmailをcurlから送る/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "17b35882139327ad85e0d7ea9e7edf4b677c3ee21b47a1e236b7683a7dc9ea9e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    },
+    "post/Gmailをcurlから送る/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "ba740f1a4a1d13aba0f50788ff01679b43fc0bfc48bbd8e4bfa8ce56fea48e96",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    },
+    "post/Gmailをcurlから送る/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "4dd4aed0ca6f7f1d159251d590ac21c7492ca5c1a3dce59cdf8d4428d74f2c2b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    },
+    "post/Gmailをcurlから送る/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "d1138cf4fcd69471d09f70612be1c537344244e5182c904a8179a60f485c8d0a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    },
+    "post/Gmailをcurlから送る/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "c89da3ef7305c2a7ea237bb07f66217c8e8e35bb3ec9b25b67e38df9bee4204b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    },
+    "post/Gmailをcurlから送る/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "2a1ebb39813058670f459ce6973804349a898bc6aced465c16d24794a2225558",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    },
+    "post/Gmailをcurlから送る/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "11e8af5fafd26c1fdfd63e487c8f1e32e96e1785994b327c1447fd5a23f3301f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    },
+    "post/Gmailをcurlから送る/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "7f0bcf0b3f30bc570fe1beef377502ec947ac2658730073f6f21cd545b33c9e6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    },
+    "post/Gmailをcurlから送る/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "1a51bd1ac219b15e6c3985f692b77ba6b35bddef948ab7f18d036d39621190ee",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    },
+    "post/Gmailをcurlから送る/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "28ebe0dafbaec37b8717f20d5aaa8bf13a32c43a4fb23ec948448ba3d2c6a5c6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    },
+    "post/Gmailをcurlから送る/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "92234f88896a2bf714b08fd978122240df13e1d64e21d070ae1603855fd05e95",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    },
+    "post/Gmailをcurlから送る/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Gmailをcurlから送る/index.md",
+      "sourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+      "translationHash": "6c34d01773a4a4c1496bf54faef1dc332abda1f5ba148b705f53d6df110a27ae",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared SMTP setup, authentication caveats, account eligibility, message formatting, sender identity, TLS mode, password prompting, and credential-safety guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for Gmail SMTP, app password, 2-Step Verification, OAuth 2.0, RFC 5322, MIME encoding, implicit TLS, STARTTLS, envelope sender, and recipient."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the RFC 5322 message example and Bash/PowerShell curl commands, including username-only --user prompting, implicit TLS on port 465, and STARTTLS on port 587. No email was sent and no credentials were entered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official Google Gmail SMTP/OAuth documentation, Google Account app-password help, Gmail SMTP XOAUTH2 reference, and the curl manual for authentication prompts and SMTP message uploads."
+        }
+      },
+      "summary": "Rewrote the article to distinguish Gmail SMTP from the Gmail API, explain OAuth as the preferred authentication option and app-password eligibility, upload a correctly formatted message file, support Bash and Windows PowerShell, use curl’s password prompt, and explain port 465 implicit TLS versus port 587 STARTTLS. Added credential-handling guidance and official references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No curl command was executed, no app password was created, and no email was sent.",
+        "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
+      ]
+    }
+  }
+}

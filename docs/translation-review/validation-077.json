@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "batch": 77,
+  "article": "content/content/post/Gmailをcurlから送る",
+  "reviewedAt": "2026-11-23",
+  "files": {
+    "ar": {
+      "path": "content/content/post/Gmailをcurlから送る/index.ar.md",
+      "normalizedBytes": 3750,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "de": {
+      "path": "content/content/post/Gmailをcurlから送る/index.de.md",
+      "normalizedBytes": 3284,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "en": {
+      "path": "content/content/post/Gmailをcurlから送る/index.en.md",
+      "normalizedBytes": 3031,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "es": {
+      "path": "content/content/post/Gmailをcurlから送る/index.es.md",
+      "normalizedBytes": 3236,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "fr": {
+      "path": "content/content/post/Gmailをcurlから送る/index.fr.md",
+      "normalizedBytes": 3348,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "hi": {
+      "path": "content/content/post/Gmailをcurlから送る/index.hi.md",
+      "normalizedBytes": 4783,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "id": {
+      "path": "content/content/post/Gmailをcurlから送る/index.id.md",
+      "normalizedBytes": 2998,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "ko": {
+      "path": "content/content/post/Gmailをcurlから送る/index.ko.md",
+      "normalizedBytes": 3415,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "ja": {
+      "path": "content/content/post/Gmailをcurlから送る/index.md",
+      "normalizedBytes": 3666,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "pt": {
+      "path": "content/content/post/Gmailをcurlから送る/index.pt.md",
+      "normalizedBytes": 3057,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "ru": {
+      "path": "content/content/post/Gmailをcurlから送る/index.ru.md",
+      "normalizedBytes": 4387,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "zh-cn": {
+      "path": "content/content/post/Gmailをcurlから送る/index.zh-cn.md",
+      "normalizedBytes": 2897,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    },
+    "zh-tw": {
+      "path": "content/content/post/Gmailをcurlから送る/index.zh-tw.md",
+      "normalizedBytes": 2895,
+      "date": "2025-02-27T02:13:31+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 3,
+      "referenceUrls": [
+        "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+        "https://support.google.com/accounts/answer/185833",
+        "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+        "https://curl.se/docs/manpage.html"
+      ]
+    }
+  },
+  "sharedSourceHash": "c3b7a93877ed4a3a4ee0bb25d7e624def119ea77f6b0c8a42d82d85e23bd4692",
+  "sharedReferenceUrls": [
+    "https://developers.google.com/workspace/gmail/imap/imap-smtp",
+    "https://support.google.com/accounts/answer/185833",
+    "https://developers.google.com/workspace/gmail/imap/xoauth2-protocol",
+    "https://curl.se/docs/manpage.html"
+  ],
+  "allThirteenReviewed": true,
+  "commandsExecuted": [
+    "python scripts/test_multilingual.py",
+    "python scripts/test_math_rendering.py",
+    "python scripts/test_translation_reviews.py",
+    "python scripts/translation_reviews.py check",
+    "git diff --check",
+    "custom 13-edition content, auth-prompt, TLS, MIME, reference, and date assertions"
+  ],
+  "humanOrNativeSpeakerReview": false,
+  "result": "passed"
+}

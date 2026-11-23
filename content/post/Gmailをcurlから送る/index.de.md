@@ -1,39 +1,59 @@
 ---
-title: 'Wie man E-Mails über Gmail mit dem curl-Befehl sendet'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Gmailをcurlから送る"
-date: 2025-02-27T02:13:31+09:00
 tags: ["gmail", "curl"]
 draft: false
 image: "img.webp"
 categories: ["ai-technology"]
-description: 'Wir erklären, wie man E-Mails über ein Gmail-Konto mit dem Kommandozeilentool „curl“ sendet. Wir stellen detailliert die Schritte zum Abrufen eines Google-App-Passworts bis zur Angabe von curl-Optionen sowie zur Erstellung der E-Mail-Textdatei und zum Senden-Befehl vor.'
+title: "E-Mails aus Gmail mit curl senden"
+date: "2025-02-27T02:13:31+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "E-Mail über Gmail SMTP mit curl senden: Anwendungs-Passwort, TLS, RFC-5322-Nachrichtendatei sowie Befehle für Bash und Windows PowerShell."
 ---
 
-# Gmail mit curl senden
+curl kann sich mit Gmail SMTP verbinden und eine vorbereitete Nachrichtendatei hochladen. Dies ist nicht die Gmail API. Google empfiehlt generell OAuth 2.0; das Beispiel eignet sich für einen manuellen Test mit einem Konto, das ein Anwendungs-Passwort verwenden darf.
 
-## 1. App-Passwort abrufen
-https://myaccount.google.com/apppasswords
-Klicken Sie auf den obigen Link und geben Sie den App-Namen ein.
-Speichern Sie das generierte Passwort.
+## Authentifizierung auswählen
 
-## 2. E-Mail mit dem curl-Befehl senden
-Führen Sie den folgenden Befehl aus.
+Verwenden Sie für SMTP niemals Ihr normales Google-Kontopasswort. Bevorzugen Sie OAuth 2.0, wenn Ihre Anwendung es unterstützt. Für einen manuellen Test kann ein Anwendungs-Passwort funktionieren, sofern die Bestätigung in zwei Schritten aktiviert ist. Erstellen Sie es unter [Google-Konto: App-Passwörter](https://myaccount.google.com/apppasswords). Die Option ist nicht für jedes Konto verfügbar; Organisationsrichtlinien oder Sicherheitseinstellungen können sie ausblenden. Google empfiehlt Anwendungs-Passwörter für die meisten Zwecke nicht. Widerrufen Sie es, wenn Sie es nicht mehr benötigen.
 
-Im folgenden Beispiel wird der E-Mail-Inhalt in mail.txt geschrieben.
+## Nachrichtendatei erstellen
 
-```mail.txt
-From: from@gmail.com
-To: to@gmail.com
-Subject: Test-E-Mail
-Content-Type: text/plain; charset="UTF-8"
+Bei SMTP-Uploads erstellt oder konvertiert curl die Nachricht nicht. Die Datei muss Kopfzeilen und Textkörper im RFC-5322-Format enthalten. Das Beispiel verwendet ASCII-Adressen. Der `From`-Header sollte zum authentifizierten Gmail-Konto passen. Ein Betreff mit Nicht-ASCII-Zeichen benötigt MIME-Kodierung.
 
-Dies ist eine Test-E-Mail.
+Speichern Sie diese Nachricht als `mail.txt`.
+
+```text
+From: sender@gmail.com
+To: recipient@example.com
+Subject: Test message
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This is a test message sent with curl.
 ```
 
-Erstellen Sie die obige Datei und führen Sie den folgenden Befehl aus.
+## Mit curl senden
+
+Das Beispiel verwendet implizites TLS auf Port 465. Da `--user` nur den Benutzernamen enthält, fragt curl nach dem Passwort; geben Sie dort das Anwendungs-Passwort ein. Für Port 587 verwenden Sie `smtp://smtp.gmail.com:587` und `--ssl-reqd`, um STARTTLS anzufordern.
+
+### Bash, zsh, Linux und macOS
 
 ```bash
-curl --url "smtps://smtp.gmail.com:465" --ssl-reqd --mail-from "from@gmail.com" --mail-rcpt "to@gmail.com" --user "from@gmail.com:xxxxxxxxxxxxxxxx" --upload-file mail.txt
+curl --url "smtps://smtp.gmail.com:465" \
+  --mail-from "sender@gmail.com" \
+  --mail-rcpt "recipient@example.com" \
+  --user "sender@gmail.com" \
+  --upload-file mail.txt
 ```
-※ Bitte ersetzen Sie xxxxxxxxxxxxxxxx durch Ihr App-Passwort.
+
+### Windows PowerShell
+
+```powershell
+curl.exe --url "smtps://smtp.gmail.com:465" --mail-from "sender@gmail.com" --mail-rcpt "recipient@example.com" --user "sender@gmail.com" --upload-file "mail.txt"
+```
+
+## Zugangsdaten schützen
+
+Schreiben Sie das Anwendungs-Passwort nicht in die Befehlszeile, Nachrichtendatei, Shell-Historie, ein Repository oder ein Protokoll. Verwenden Sie die Passwortabfrage von curl. Schützen Sie auch die Nachrichtendatei, wenn sie persönliche oder vertrauliche Daten enthält.
+
+Offizielle Dokumentation: [Gmail SMTP settings and OAuth support](https://developers.google.com/workspace/gmail/imap/imap-smtp), [Google app passwords](https://support.google.com/accounts/answer/185833), [Gmail OAuth 2.0 for SMTP](https://developers.google.com/workspace/gmail/imap/xoauth2-protocol), and the [curl manual for --user and --upload-file](https://curl.se/docs/manpage.html).
