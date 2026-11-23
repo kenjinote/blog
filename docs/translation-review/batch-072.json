@@ -21,7 +21,7 @@
   ],
   "validation": "docs/translation-review/validation-072.json",
   "scope": "Read the complete Japanese article and all twelve translations. Compared technical meaning, terminology, formulas, diagrams, links and claims against primary and academic sources; validated multilingual structure and math rendering.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/GNFSを超えるアルゴリズムは存在するのか/index.en.md": {
       "reviewKind": "ai",
@@ -455,5 +455,6 @@
         "No full browser visual review of the rendered article was performed."
       ]
     }
-  }
+  },
+  "publicationReceipt": "docs/translation-review/publication-072.json"
 }

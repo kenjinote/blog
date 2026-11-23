@@ -8285,6 +8285,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-071.json",
       "evidenceHash": "875c998aaed0701ba812fab85d0605d277ec61525f06f98213d12345f5df92ce"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.en.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "bf3f672304bd62adeed6201bddc35eb4d8553c279c0bbe8ee899542e84c86236",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "fc764cdc24cd8fd60770c5555ae8c4caff3864a7af1bcf833e37bd04d53dbf22"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.zh-cn.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "eddc10c62e1a1d5933593604e85f819809e19580b8f2503d0138c47d89edf39d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "39bbea57f90a2285e174fd528fa7cfde8f8856f4a90d96759651cdbc5a6d062e"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.es.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "bfc257e43eab9d4a0065e4cdacc1b22f22cbf024af5c96b14a45b8531d8964bb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "8c11eebf844ecd0f1db7c4bf6e09ba236794ed05aec6b65ac2679c8c3e789ef3"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.ko.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "6e0eaafa033329480bb6d7be1bf49a21579f178e94f5bca4369305da4371f2bd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "6e5e796e811b7dd7fb08645acc0df38d6c70552293ae3e53be03663476de4c40"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.pt.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "f7f0dae4953e8d6798a4a37a245d53f1abf23afc8a6be498a9722c7b90c222cc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "4357fe6d4035125c64cbc91993cd9f9b6318e753f7ec7991ed5f1b8685da0545"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.zh-tw.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "4b840f2d37c6d0b04cf5f33f00522e17b5617c23ea0623e6d5c90ee6a0407bfa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "bc4ee697c70a57a9d3f37cc4f10b36ca2fd765b5542d16b65e210aad9aeca39b"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.hi.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "3fd655f511093f6d56483587b8bfdc398f6918a3597ec8e3d526a02440ea2241",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "0547575562808521293d0af02a73a454a6730d124ac31ceca90442dd791f4eb3"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.fr.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "c64d78670704e470585a7c62a8314265ccbc712e93a8a22666950055d4853c1f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "474fb52fba2b4203cfa505ef4d68e8a79ed3133918d6b270186cdecf8bafa20d"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.de.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "353b5933780386b1929479bfe8f190dcdf5036bec3d3d01e7eb49528c4293422",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "4a5fcdf62e5a687d66ec6d4e8e230e0c35db9fe420e7371a270e73f48aa9b7cf"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.ar.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "afdc0d27a5a64c565b868b034f54cdc5f71d8df136ca668a4633c53ca7601b2f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "4b602b137bffd20ab2f30f7b137e49513083d8bc38f16ffcc0b65050d8eb815d"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.ru.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "daf9a9320375dc9e2fa1e3984cad5193224a581436da908b9963805ac8cda414",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "2e34396b14aad045e47756f566d13a66573aefb7a02b6fcc1754f1218ac861fc"
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.id.md": {
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "cb856d5ad76980615770914872a99319c6ca2d12d5aa447439fb4d939af803ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-072.json",
+      "evidenceHash": "5b89bfbb3875459f39add286614b4379298e1cc2a3f285ece42c427cab84f9ac"
     }
   }
 }

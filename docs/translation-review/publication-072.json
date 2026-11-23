@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "batch": 72,
+  "article": "GNFSを超えるアルゴリズムは存在するのか",
+  "verifiedAt": "2026-11-23",
+  "ciRun": 45134659603,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45134659603",
+  "sourceCommit": "0cf78cb5156a79874cb4c3d1db7e5adffa919250",
+  "deployment": "success",
+  "pagesVerified": 13,
+  "checks": [
+    "HTTP 200",
+    "canonical URL",
+    "html lang and Arabic RTL",
+    "non-empty title and description",
+    "14 hreflang alternates including x-default are unique and reciprocal",
+    "2021 and 2025 quantum resource-estimate source links",
+    "lastmod 2026-11-23",
+    "obsolete left-nullspace wording absent"
+  ],
+  "result": "passed"
+}

@@ -947,6 +947,6 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 
 - 2026-11-23 Batch071公開確認・台帳反映完了。GitHub上のGIF録画ツールのREADME・ソース・Windowsプロジェクト設定・MITライセンス・Release掲載を確認し、日本語＋12翻訳の13公開ページでHTTP 200、canonical、言語/RTL、タイトル/description、相互hreflang、Release/ソース/ライセンスリンクを確認。現行Releaseの`GIFScreenRecorder.exe`掲載を確認。Codex (AI)として12翻訳を台帳記録。公開レシート`docs/translation-review/publication-071.json`、証跡`docs/translation-review/batch-071.json`、検証`docs/translation-review/validation-071.json`。実行ファイルは取得・実行・スキャンしておらず、安全性の断定なし。人/ネイティブ話者校閲なし。
 
-- 2026-11-23 Batch072: GNFS素因数分解記事の日本語原文＋12翻訳を全文照合。RSA/GNFSの範囲とL記法のヒューリスティック計算量を修正し、証明済み下界や実時間として扱わないよう明記。RSA-2048古典演算数・量子ゲート数の根拠のない断定を除去し、2021/2025年の量子資源見積もりを前提別に記載。行列の核の表現、ドイツ語数式、英語見出しリンクを修正し、13版でGNFSの5段階Mermaidフローを確認。多言語10テスト、数式1テスト、台帳6テスト、静的13版検査、`git diff --check`成功。証跡`docs/translation-review/batch-072.json`と`validation-072.json`を作成。公開pending。AIのみ、ネイティブ話者校閲・形式証明・暗号実装/量子回路実行・ブラウザーでの視覚確認なし。全記事goalを継続。
+- 2026-11-23 Batch072: GNFS素因数分解記事の日本語原文＋12翻訳を全文照合。RSA/GNFSの範囲とL記法のヒューリスティック計算量を修正し、証明済み下界や実時間として扱わないよう明記。RSA-2048古典演算数・量子ゲート数の根拠のない断定を除去し、2021/2025年の量子資源見積もりを前提別に記載。行列の核の表現、ドイツ語数式、英語見出しリンクを修正し、13版でGNFSの5段階Mermaidフローを確認。多言語10テスト、数式1テスト、台帳6テスト、静的13版検査、`git diff --check`成功。CI run 45134659603（commit `0cf78cb5156a79874cb4c3d1db7e5adffa919250`）成功後、13公開ページ・相互hreflangを確認し、12翻訳のCodex (AI)校閲を台帳へ反映。公開レシート`docs/translation-review/publication-072.json`、証跡`docs/translation-review/batch-072.json`、検証`docs/translation-review/validation-072.json`。AIのみ、ネイティブ話者校閲・形式証明・暗号実装/量子回路実行・ブラウザーでの視覚確認なし。全記事goalを継続。
 
-- 台帳集計（B070/B071反映後）：current 828、未確認12,204、人確認0。全記事・全翻訳言語のgoalは継続。
+- 台帳集計（B072反映後）：current 840、未確認12,192、人確認0。全記事・全翻訳言語のgoalは継続。
