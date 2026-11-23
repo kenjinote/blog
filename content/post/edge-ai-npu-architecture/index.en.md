@@ -2,6 +2,7 @@
 title: "Edge AI and NPU (Neural Processing Unit) Architecture"
 description: "Explains the evolution of Edge AI and NPU, hardware that accelerates inference on-device without relying on the cloud, differences from CPU/GPU, and optimization technologies."
 date: 2026-09-27T13:55:41+09:00
+lastmod: 2026-11-23
 slug: edge-ai-npu-architecture
 categories: ["technology", "software-development"]
 tags: ["tech", "ai", "hardware", "edge-computing", "npu"]
@@ -12,44 +13,37 @@ image: eyecatch.jpg
 
 In recent years, with the rapid development of artificial intelligence (AI) technology, AI is now being utilized in every aspect of our lives. The initial AI boom was driven by the overwhelming computing resources of massive data centers in the cloud. However, that paradigm is currently reaching a major turning point: the rise of "Edge AI" and the dedicated hardware "NPU (Neural Processing Unit)" that supports it.
 
-In this article, we will delve deep into the structural challenges of Cloud AI, the necessity for Edge AI, and how NPUs achieve incredible inference speeds and power efficiency. We will also explore its architecture, concrete examples, and model optimization technologies.
+This article explains the tradeoffs between cloud and on-device inference, examples of NPU designs, and model optimization methods. Because effects on performance and privacy are not universal, it also describes how to evaluate them for a specific device and use case.
 
 ## 1. Limitations of Cloud AI and the Rise of Edge AI
 
 The conventional approach of performing AI inference on the cloud side has several structural challenges.
 
 ### The Latency Problem
-In applications that require instantaneous decision-making, such as self-driving cars, industrial robots, and real-time voice translation, network communication delay (latency) becomes a fatal issue. A delay of tens to hundreds of milliseconds between sending data to the cloud and receiving the processed results could lead to serious accidents or a degraded user experience.
+Cloud round-trip time varies with network route, distance, congestion, and server processing; tens to hundreds of milliseconds is not a universal value. On-device inference can avoid waiting for the network and may help when response deadlines are strict, but inference and input/output still take time. Measure end-to-end latency on the target device and model. Safety-critical systems such as vehicles also need safeguards beyond a single AI prediction.
 
 ### Privacy and Security
-Smartphones and smart home devices constantly capture highly private user information through cameras and microphones. Continuously sending this raw data to the cloud increases the risk of information leaks and privacy violations. By using Edge AI, data is processed directly within the device (at the edge), and only the results are output or transmitted, making it highly advantageous from a privacy protection perspective.
+On-device inference can avoid sending raw images or audio off the device, reducing the data transmitted in some designs. It does not guarantee privacy or security: apps may still send outputs, logs, or diagnostics, and the device itself needs access controls, encryption, and updates. Check what each app and service stores and transmits.
 
 ### Communication Costs and Bandwidth
 Sending all high-resolution video streams and massive amounts of sensor data to the cloud significantly strains network bandwidth and inflates communication costs. Pre-processing the data on the edge side and sending only necessary information to the cloud can drastically reduce the load on the network infrastructure.
 
-To solve these challenges, there naturally arose a demand for "Edge AI," which runs AI models directly on the frontlines (the edge) where data is generated. However, unlike cloud servers, edge devices have strict constraints on battery capacity, heat dissipation, and physical size. This is where the highly efficient processor specialized for AI processing, the "NPU," makes its entrance.
+Depending on the use case, inference can run in the cloud, on a device, or across both. On-device processing is one way to reduce network delay or traffic, but devices have power, thermal, and memory limits. Which compute units are used, including an NPU, depends on the model and runtime.
 
 ## 2. What is an NPU (Neural Processing Unit)?
 
-An NPU (Neural Processing Unit) is a hardware accelerator specially designed to execute deep learning and other neural network processing (inference and training) at extremely high speeds and low power consumption.
+NPU is a broad term for dedicated or integrated hardware that accelerates neural-network operations. Many products target inference, but support for training and specific operators varies by product. Actual capabilities also depend on the runtime, drivers, and model.
 
 ### Differences Between CPU, GPU, and NPU
 
-To understand the evolution of hardware in AI processing, it's necessary to organize the differences in roles and architectures among CPU, GPU, and NPU.
+A CPU is commonly used for general control and sequential work, a GPU for parallel workloads, and an NPU to accelerate the neural-network operations it supports. Capabilities differ by product and runtimes may distribute work across processors. An NPU is not always faster or more efficient than a GPU: results depend on the model, operators, precision, batch size, runtime, data transfers, and power or thermal limits. Benchmark the same end-to-end workload on the target device; peak TOPS alone does not predict application speed.
 
-*   **CPU (Central Processing Unit)**:
-    Excels at general-purpose arithmetic processing. It can flexibly handle diverse tasks such as complex conditional branching and OS control. However, because its core count is limited, it is unsuited for massive parallel computations like neural networks.
-*   **GPU (Graphics Processing Unit)**:
-    Originally equipped with thousands of small-scale cores for graphics rendering, it excels at massive parallel processing of simple calculations. It sparked the AI boom and remains the undisputed star for model training on the cloud side. However, it consumes a large amount of power, presenting challenges in terms of battery and heat dissipation for continuous operation on edge devices like mobile terminals.
-*   **NPU (Neural Processing Unit)**:
-    A dedicated processor whose entire architecture is optimized for neural network calculations (especially matrix multiply-accumulate operations). While sacrificing some versatility, it delivers processing efficiency (TOPS/W: operations per watt) far exceeding that of GPUs for inference of specific AI models.
+## 3. NPU Architecture and Factors Affecting Performance
 
-## 3. NPU Architecture: Why is it Fast and Highly Efficient?
-
-The secret behind the NPU's incredible performance lies in its internal architecture.
+NPU performance and efficiency depend not only on internal design but also on the model, software, data movement, and power or thermal limits. This section introduces some common design considerations.
 
 ### Integration of MAC (Multiply-Accumulate) Units
-The vast majority of neural network processing consists of "Multiply-Accumulate (MAC)" operations, which multiply input data by weights and add them up. NPUs adopt structures called "Systolic Arrays" or "Tensor Cores," where massive numbers (thousands to tens of thousands) of these MAC units are laid out. By passing data through the array like a bucket brigade, it reduces wasteful access to registers and dramatically increases the amount of computation per clock cycle.
+Neural networks often use multiply-accumulate (MAC) operations, so some NPUs include specialized arithmetic units and dataflows. Designs vary: a systolic array is one approach, while “Tensor Core” is a product-specific name. Not every NPU uses the same structure or exposes a comparable unit count. The diagram below is a simplified concept, not a description of every NPU.
 
 ```mermaid
 graph TD
@@ -61,50 +55,49 @@ graph TD
 ```
 
 ### Memory Hierarchy Optimization (Minimization of Data Movement)
-The component that consumes the most power in a processor is actually not the "computation" itself, but the "data reading and writing from memory (data movement)." The power consumed when fetching data from DRAM can reach tens to hundreds of times that of the calculation within the ALU (Arithmetic Logic Unit).
-NPUs adopt an architecture that incorporates massive SRAM (on-chip memory) within the chip, retaining neural network weights and intermediate data inside the chip as much as possible. Furthermore, instead of writing data back to main memory (DRAM) between layers, it streams directly into the arithmetic units of the next layer, completely eliminating the overhead of data movement.
+Data movement can affect accelerator power and performance, but there is no single energy ratio that applies to every chip and workload. On-chip memory capacity, reuse, model shape, and runtime all matter. Weights and intermediate results do not always fit on-chip, and transfers to DRAM may still occur between layers. Profile the model on the target hardware and measure data movement as part of end-to-end performance.
 
 ## 4. Real-World NPU Architecture Examples
 
 Currently, various NPUs are being developed and installed in smartphones and PCs.
 
 ### Apple Neural Engine (ANE)
-Starting with the A11 Bionic chip, the Neural Engine is the source of competitiveness for iPhones and Macs (M series). It handles Face ID facial recognition, photographic semantic segmentation, and Siri's on-device voice recognition at high speed in the background, consuming almost no battery. The latest M3 and A17 Pro chips boast computational performance of tens of trillions of operations per second (TOPS).
+Apple Core ML can use compute units such as the CPU, GPU, and Neural Engine depending on the model and device. Placement and performance are workload-specific; use Xcode performance analysis and measurements on the target device. Peak TOPS for one chip generation does not establish the speed of another model or app. [Core ML performance analysis](https://developer.apple.com/documentation/coreml/analyzing-a-core-ml-model-s-performance-in-xcode) · [compute units](https://developer.apple.com/documentation/coreml/mlcomputeunits)
 
-### Google Tensor Processing Unit (TPU)
-While Google is known for its massive TPUs for the cloud, it deploys the "Google Tensor" chip—which integrates an NPU inheriting the lineage of the "Edge TPU"—for Pixel smartphones. It specializes in running Google's advanced AI models on the edge, such as computational photography for cameras (Magic Eraser and Night Sight) and real-time transcription.
+### Google Tensor (Pixel SoCs)
+Google Tensor is a family of SoCs for Pixel devices. Google Cloud TPU and Edge TPU (the Coral product family) are separate product lines; their names alone do not establish a direct design lineage. On-device features vary by generation, model, operating system, and app, so check documentation for the specific device and feature. [Google's Pixel 11 announcement (Tensor G6)](https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/) · [Coral Edge TPU documentation](https://coral.ai/docs/)
 
 ### Qualcomm Hexagon NPU
-The Hexagon DSP/NPU is integrated into Snapdragon SoCs, which are found in many Android smartphones. By integrating scalar, vector, and tensor operations, and closely coordinating with the camera ISP and sensor hub, it optimizes the overall AI performance of the device. Recently, powerful NPUs have also been included in Snapdragon X Elite processors for Windows PCs, driving the realization of AI PCs (Copilot+ PCs).
+Qualcomm describes Hexagon as an NPU with scalar, vector, and tensor accelerators and shared memory. The Qualcomm AI Engine combines it with other processors, including CPUs and GPUs. Supported operations and actual performance vary by SoC, software stack, and model; compare measurements on the target configuration rather than product names or peak TOPS. [Hexagon NPU](https://www.qualcomm.com/processors/hexagon) · [Qualcomm AI Engine](https://www.qualcomm.com/processors/ai-engine)
 
 ## 5. Software and Optimization Technologies Supporting Edge AI
 
-Even with excellent NPU hardware, massive AI models for the cloud cannot run directly on the edge as they are. "Model optimization technologies" are essential to unlock the hardware's potential.
+Large models may exceed a device's memory or power budget. Quantization, pruning, and distillation are options to evaluate, but their hardware support, effect on accuracy, and measured performance must be checked.
 
 ### Quantization
-A technology that reduces the weights and computational precision of AI models from the standard 32-bit floating point (FP32) to 16-bit (FP16), 8-bit integer (INT8), or even 4-bit (INT4). This shrinks the model size down to a fraction and saves memory bandwidth. Most NPUs are hardware-optimized for INT8 or INT4 operations, so quantization dramatically improves inference speed. Techniques such as PTQ (Post-Training Quantization) and QAT (Quantization-Aware Training) are used to minimize accuracy degradation.
+Quantization changes the numerical representation of weights or operations, for example from FP32 to FP16 or INT8. It can reduce weight storage and data transfer, but model size and inference speed do not necessarily improve by the same ratio. Results depend on supported formats, operators, runtime, and hardware, and accuracy can change. After PTQ or QAT, measure accuracy on representative inputs and end-to-end performance on the target device. [Core ML model compression](https://developer.apple.com/documentation/coreml/reducing-the-size-of-your-core-ml-app) · [ONNX Runtime quantization](https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html)
 
 ### Pruning
-A technique that identifies "low-importance weights (values close to zero)" in a neural network that have little impact on the inference results, and removes them (fixes them to zero) from the network. This increases the sparsity of the model, reducing computational complexity and model size.
+Pruning removes or zeros selected weights to create a sparse model. Dense kernels may still compute with zero-valued weights, so sparsity alone does not guarantee a smaller file or faster inference. Storage savings require a suitable sparse representation; speedups require compatible sparse operators, runtime, and hardware. Evaluate accuracy and measured performance together.
 
 ### Knowledge Distillation
-A method in which a lightweight model (student model) is trained to mimic the behavior of a high-performance but massive model (teacher model). Because the student model is trained to imitate the output probability distribution of the teacher model, it can achieve higher accuracy than training a small model independently, while keeping its size small enough to run on edge devices.
+Knowledge distillation trains a student model using outputs or other signals from a teacher model. It can help a smaller model under size or accuracy constraints, but does not guarantee higher accuracy than training that small model independently. Compare methods on the task and data that matter.
 
 ## 6. The Future and Prospects of Edge AI
 
-Currently, Large Language Models (LLMs) like ChatGPT are taking the world by storm, but their inference still requires massive GPU clusters in the cloud. However, technological advancements are trying to bring even LLMs to the edge (Edge LLMs, SLMs: Small Language Models).
+Some large language models run in the cloud because of their compute and memory requirements, while smaller quantized or distilled models can run on some devices. Feasibility, latency, accuracy, and power use depend on the model and device, so evaluate the intended workload.
 
 Looking ahead, we can expect the following trends:
 
 *   **Hybrid AI**:
-    A hybrid approach will become mainstream, where everyday light inference (text summarization, speech recognition, simple image generation, etc.) is processed instantly by the NPU on the edge device, while offloading to the cloud only when more advanced and complex inference is required.
-*   **Expansion to Diverse Edge Devices**:
-    Beyond smartphones and PCs, minuscule NPUs (AI for microcontrollers) will be embedded in surveillance cameras, drones, wearable devices, and even IoT sensors themselves, endowing all "things" with intelligence.
-*   **NPU Standardization and Ecosystems**:
-    To overcome the current situation where different hardware requires different optimization, frameworks like ONNX, OpenVINO, TensorFlow Lite, and PyTorch ExecuTorch are evolving, advancing an environment where developers can "write once, run optimally on any NPU."
+    A design can choose between on-device and cloud processing based on response deadlines, connectivity, data handling, cost, and model capability. Avoid assuming every task belongs on one side; make the choice from requirements and measurements.
+*   **Use Across Different Edge Devices**:
+    Cameras, vehicles, wearables, and sensors may use small models or accelerators for selected tasks. Whether deployment makes sense depends on power, cost, connectivity, model, and update requirements; not every IoT device needs an NPU.
+*   **Execution Providers and Portability**:
+    Frameworks such as ONNX Runtime use execution providers to assign supported operators or subgraphs to hardware. Unsupported operations may run elsewhere, so check which parts execute on the accelerator and test accuracy and end-to-end speed for each model. “Write once, run optimally on any NPU” is not guaranteed. [ONNX Runtime Execution Providers](https://onnxruntime.ai/docs/execution-providers/)
 
 ## Conclusion
 
-The evolution of Edge AI and NPUs has transformed AI from something belonging only to select researchers and cloud infrastructure into a "fundamental feature" of every device in our hands. This architecture, which eliminates latency, protects privacy, and dramatically improves power efficiency, is one of the most important technologies that will drive computing in the next decade.
+Edge AI and NPUs expand the option to run inference on a device. Avoiding a network round trip, sending less raw data, or changing power and bandwidth use can be useful, but improvements in latency, privacy, and energy efficiency are not automatic. Measure the complete setup—use case, model, device, and software—and weigh it against cloud inference.
 
 For software engineers and AI developers, not only the skills to handle massive models in the cloud, but also the knowledge of "how to implement and optimize AI within limited resources by leveraging hardware (NPU) characteristics," will become increasingly important in the future.

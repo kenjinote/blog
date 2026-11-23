@@ -1,0 +1,493 @@
+{
+  "version": 1,
+  "article": "Edge AI and NPU architecture: tradeoffs, designs, and model optimization",
+  "frozenSourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://developer.apple.com/documentation/coreml/analyzing-a-core-ml-model-s-performance-in-xcode",
+    "https://developer.apple.com/documentation/coreml/mlcomputeunits",
+    "https://developer.apple.com/documentation/coreml/reducing-the-size-of-your-core-ml-app",
+    "https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html",
+    "https://onnxruntime.ai/docs/execution-providers/",
+    "https://www.qualcomm.com/processors/hexagon",
+    "https://www.qualcomm.com/processors/ai-engine",
+    "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/",
+    "https://coral.ai/docs/"
+  ],
+  "findings": [
+    "Read the full Japanese article and all twelve translations; preserved the original publication date and set lastmod to 2026-11-23 in every edition.",
+    "Reframed cloud latency as route-, load-, and server-dependent, required end-to-end measurement, and warned against relying on one AI prediction for safety-critical control.",
+    "Clarified that on-device processing can reduce raw-data transmission but does not guarantee privacy or security; corrected NPU capability and GPU/NPU comparison claims.",
+    "Removed universal MAC-array, Tensor Core, SRAM, and DRAM-energy claims; qualified product examples, corrected the Google Tensor/Edge TPU relationship, and removed stale Apple and Snapdragon performance claims.",
+    "Explained that quantization, pruning, distillation, and execution-provider portability have model-, runtime-, and hardware-dependent effects; no speed, accuracy, or universal-optimum guarantee is made.",
+    "Aligned the single Mermaid dataflow diagram across all thirteen editions and checked all nine official source URLs for HTTP 200."
+  ],
+  "validation": "docs/translation-review/validation-067.json",
+  "scope": "Complete Japanese source and twelve translations. Meaning, terminology, product distinctions, optimization limits, links, and one Mermaid diagram checked. AI review only; publication is still pending.",
+  "publicationPending": true,
+  "reviews": {
+    "post/edge-ai-npu-architecture/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "9bee00966d9b2670bdaa3e6a6038b09271e15573175bdf8ed7b6b02d950ec6e3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    },
+    "post/edge-ai-npu-architecture/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "fc1fabd449faf629247411c961017813f795e3954947c1b78ec77cb4d478a66b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    },
+    "post/edge-ai-npu-architecture/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "65f6b92bad91f304f2aa4689f4faa83d3730433c6bb3860289b9d2305697833c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    },
+    "post/edge-ai-npu-architecture/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "30f97964ca1bf15328b524d7871821f6941f9c730f7f4bc7607cae1f3ba3c260",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    },
+    "post/edge-ai-npu-architecture/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "6c26a351258371b848bb0e62867656246511a8c39cb57379ea2e9d3656a9c021",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    },
+    "post/edge-ai-npu-architecture/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "d4cd5f9c769b79b91f6c24494e15ea7a45162b179b905e8349c99890d6953bf8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    },
+    "post/edge-ai-npu-architecture/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "555696a0bea3d14bdaa6157c09987c63b92676f83554a0361a82c8147683051c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    },
+    "post/edge-ai-npu-architecture/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "868187ef0e54328c7025a7930125adffd4a98ae2750cb3f003e0f0e3c015006c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    },
+    "post/edge-ai-npu-architecture/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "3e67318624c720532e6687f61607c4e3675b8c6491f21ceab9c45d8ac1e97492",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    },
+    "post/edge-ai-npu-architecture/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "2d05edfbba7fc447f5a41935746fb0af7dea5a1cdce89755b6f4c5adffa9383d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    },
+    "post/edge-ai-npu-architecture/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "70d7199047707de565997551118da341d1b18477423689d9d7282a01c6796f46",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    },
+    "post/edge-ai-npu-architecture/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "43cf04f058296dee1ffba845532d745aac19434437bec57670add6b0854e60cc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source: cloud/on-device choice and variable end-to-end latency; privacy/security limits of local processing; NPU inference/training and operator support; heterogeneous CPU/GPU/NPU execution and benchmark conditions; architecture and data-movement tradeoffs; Apple Core ML, Google Tensor versus Cloud/Edge TPU, and Qualcomm examples; quantization, pruning, and distillation caveats; hybrid deployment, portability, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized usage of edge/on-device/cloud inference, accelerator/NPU, CPU/GPU, MAC, systolic array, product-specific Tensor Core, TOPS, runtime/execution provider, quantization, sparsity/pruning, and knowledge distillation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical formulas, derivations, or numeric performance claims remain. TOPS appears as a peak-throughput label whose limits are explicitly explained."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the one Mermaid MAC/dataflow diagram in all thirteen editions: node and edge identifiers match. There is no executable article code; the diagram was checked structurally but not rendered or visually inspected."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same nine primary-source URLs: Apple Core ML performance analysis, compute units and model compression; ONNX Runtime quantization and Execution Providers; Qualcomm Hexagon and AI Engine; Google Pixel Tensor G6 announcement; and Coral Edge TPU documentation. Each URL returned HTTP 200 during this review."
+        }
+      },
+      "summary": "Corrected overgeneralized claims about cloud latency, local privacy, NPU/GPU efficiency, universal NPU training, memory architecture, product lineage, quantization/pruning/distillation outcomes, and one-write portability; added current primary references and aligned all sections with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+        "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+        "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+        "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+      ]
+    }
+  },
+  "limitations": [
+    "AI review only; no human or native-speaker certification.",
+    "No NPU model was run or benchmarked on physical devices; end-to-end performance is guidance for readers to measure on their own target hardware.",
+    "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
+    "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
+    "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
+  ]
+}

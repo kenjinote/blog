@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T12:38:12.327836+09:00",
+  "allPassed": true,
+  "editions": {
+    "ja": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "en": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "9bee00966d9b2670bdaa3e6a6038b09271e15573175bdf8ed7b6b02d950ec6e3",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "zh-cn": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "fc1fabd449faf629247411c961017813f795e3954947c1b78ec77cb4d478a66b",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "es": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "65f6b92bad91f304f2aa4689f4faa83d3730433c6bb3860289b9d2305697833c",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "ko": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "30f97964ca1bf15328b524d7871821f6941f9c730f7f4bc7607cae1f3ba3c260",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "pt": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "6c26a351258371b848bb0e62867656246511a8c39cb57379ea2e9d3656a9c021",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "zh-tw": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "d4cd5f9c769b79b91f6c24494e15ea7a45162b179b905e8349c99890d6953bf8",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "hi": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "555696a0bea3d14bdaa6157c09987c63b92676f83554a0361a82c8147683051c",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "fr": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "868187ef0e54328c7025a7930125adffd4a98ae2750cb3f003e0f0e3c015006c",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "de": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "3e67318624c720532e6687f61607c4e3675b8c6491f21ceab9c45d8ac1e97492",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "ar": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "2d05edfbba7fc447f5a41935746fb0af7dea5a1cdce89755b6f4c5adffa9383d",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "ru": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "70d7199047707de565997551118da341d1b18477423689d9d7282a01c6796f46",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    },
+    "id": {
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "43cf04f058296dee1ffba845532d745aac19434437bec57670add6b0854e60cc",
+      "h2": 7,
+      "h3": 12,
+      "mermaidBlocks": 1,
+      "mermaidEdges": 5,
+      "officialLinks": 9,
+      "futureBullets": 3,
+      "lastmod": "2026-11-23"
+    }
+  },
+  "sharedMermaidEdges": [
+    [
+      "DataInput",
+      "MAC_Array"
+    ],
+    [
+      "WeightInput",
+      "MAC_Array"
+    ],
+    [
+      "MAC_Array",
+      "Accumulator"
+    ],
+    [
+      "Accumulator",
+      "ActivationFunc"
+    ],
+    [
+      "ActivationFunc",
+      "Output"
+    ]
+  ],
+  "officialLinks": {
+    "https://developer.apple.com/documentation/coreml/analyzing-a-core-ml-model-s-performance-in-xcode": "HTTP 200",
+    "https://developer.apple.com/documentation/coreml/mlcomputeunits": "HTTP 200",
+    "https://developer.apple.com/documentation/coreml/reducing-the-size-of-your-core-ml-app": "HTTP 200",
+    "https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html": "HTTP 200",
+    "https://onnxruntime.ai/docs/execution-providers/": "HTTP 200",
+    "https://www.qualcomm.com/processors/hexagon": "HTTP 200",
+    "https://www.qualcomm.com/processors/ai-engine": "HTTP 200",
+    "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/": "HTTP 200",
+    "https://coral.ai/docs/": "HTTP 200"
+  },
+  "tests": {
+    "python scripts/test_multilingual.py": "passed: 10 tests; 19 pages",
+    "python scripts/test_translation_reviews.py": "passed: 6 tests",
+    "python scripts/test_math_rendering.py": "passed: 1 test",
+    "git diff --check": "passed; only Git LF-to-CRLF normalization warnings were reported"
+  },
+  "limitations": [
+    "No local Hugo full build or rendered-page visual inspection.",
+    "No device inference or performance benchmark; no executable article code is present.",
+    "CI deployment and thirteen live-page checks remain pending."
+  ]
+}

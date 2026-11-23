@@ -2,6 +2,7 @@
 title: "Arsitektur Edge AI dan NPU (Neural Processing Unit)"
 description: "Menjelaskan evolusi Edge AI dan NPU sebagai perangkat keras yang mempercepat inferensi di dalam perangkat tanpa bergantung pada komputasi awan (cloud), perbedaan dengan CPU/GPU, dan teknologi optimasi."
 date: 2026-09-27T13:55:41+09:00
+lastmod: 2026-11-23
 slug: edge-ai-npu-architecture
 categories: ["technology", "software-development"]
 tags: ["tech", "ai", "hardware", "edge-computing", "npu"]
@@ -12,44 +13,37 @@ image: eyecatch.jpg
 
 Dalam beberapa tahun terakhir, dengan perkembangan pesat teknologi kecerdasan buatan (AI), AI telah dimanfaatkan di setiap aspek kehidupan kita. Yang mendorong ledakan AI awal adalah sumber daya komputasi yang luar biasa dari pusat data raksasa yang berada di komputasi awan (cloud). Namun saat ini, paradigma tersebut sedang menghadapi titik balik yang besar. Yaitu munculnya "Edge AI" dan perangkat keras khusus yang mendukungnya, "NPU (Neural Processing Unit)".
 
-Dalam artikel ini, kita akan membahas secara mendalam dari tantangan yang dihadapi cloud AI hingga perlunya Edge AI, dan bagaimana NPU mewujudkan kecepatan inferensi dan penghematan daya yang luar biasa, beserta arsitekturnya, contoh konkret, dan teknologi optimasi model.
+Artikel ini menjelaskan kelebihan dan batasan inferensi cloud dan di perangkat, contoh desain NPU, serta metode optimasi model. Dampaknya pada kinerja dan privasi tidak selalu sama, jadi artikel ini juga membahas cara mengevaluasinya untuk perangkat dan penggunaan tertentu.
 
 ## 1. Batasan Cloud AI dan Munculnya Edge AI
 
 Pendekatan konvensional yang melakukan inferensi AI di sisi cloud memiliki beberapa tantangan struktural.
 
 ### Masalah Latensi (Keterlambatan)
-Pada aplikasi yang membutuhkan penilaian instan seperti mobil otonom, robot industri, atau terjemahan suara waktu nyata (real-time), keterlambatan komunikasi (latensi) melalui jaringan menjadi masalah yang fatal. Keterlambatan puluhan hingga ratusan milidetik antara mengirim data ke cloud dan menerima hasil pemrosesan dapat menyebabkan kecelakaan fatal atau penurunan pengalaman pengguna.
+Waktu pulang-pergi ke cloud bergantung pada rute dan jarak jaringan, kepadatan lalu lintas, serta pemrosesan server; puluhan hingga ratusan milidetik bukan nilai universal. Inferensi di perangkat dapat menghindari menunggu jaringan dan membantu saat tenggat respons ketat, tetapi inferensi lokal serta input/output tetap memerlukan waktu. Ukur latensi end-to-end dengan model dan perangkat sasaran. Sistem yang kritis terhadap keselamatan, seperti kendaraan, juga memerlukan pengamanan di luar satu prediksi AI.
 
 ### Privasi dan Keamanan
-Ponsel pintar (smartphone) dan perangkat rumah pintar terus-menerus mengambil informasi pengguna yang sangat pribadi melalui kamera dan mikrofon. Terus mengirimkan data mentah ini ke cloud akan meningkatkan risiko kebocoran informasi dan pelanggaran privasi. Jika menggunakan Edge AI, data diproses di dalam perangkat (edge) dan hanya mengirimkan atau mengeluarkan hasilnya saja, yang mana sangat menguntungkan dari perspektif perlindungan privasi.
+Inferensi lokal dapat mencegah gambar atau audio mentah dikirim keluar perangkat dan mengurangi data yang dikirim pada beberapa desain. Namun, hal ini tidak menjamin privasi atau keamanan: aplikasi masih dapat mengirim keluaran, log, atau diagnostik, dan perangkat tetap memerlukan kontrol akses, enkripsi, serta pembaruan. Periksa apa yang disimpan dan dikirim oleh setiap aplikasi dan layanan.
 
 ### Biaya Komunikasi dan Bandwidth
 Mengirimkan semua streaming video beresolusi tinggi dan data sensor yang sangat besar ke cloud akan sangat menekan bandwidth jaringan dan membuat biaya komunikasi membengkak. Dengan melakukan pra-pemrosesan data di sisi edge dan hanya mengirimkan informasi yang diperlukan ke cloud, beban pada infrastruktur jaringan dapat dikurangi secara signifikan.
 
-Untuk menyelesaikan masalah-masalah ini, "Edge AI" yang menjalankan model AI secara langsung di lokasi di mana data dihasilkan (edge) secara tak terelakkan menjadi sangat dibutuhkan. Namun, berbeda dengan server cloud, perangkat edge memiliki batasan yang ketat pada kapasitas baterai, pembuangan panas, dan ukuran fisik. Di sinilah muncul "NPU", sebuah prosesor berefisiensi tinggi yang dikhususkan untuk pemrosesan AI.
+Bergantung pada kasus penggunaan, inferensi dapat berjalan di cloud, di perangkat, atau di keduanya. Pemrosesan lokal dapat mengurangi latensi jaringan atau lalu lintas, tetapi perangkat memiliki batas daya, panas, dan memori. Unit komputasi yang digunakan, termasuk NPU, bergantung pada model dan runtime.
 
 ## 2. Apa itu NPU (Neural Processing Unit)?
 
-NPU (Neural Processing Unit) adalah akselerator perangkat keras (hardware accelerator) yang dirancang secara khusus untuk mengeksekusi pemrosesan jaringan saraf tiruan (neural network) seperti deep learning (untuk inferensi dan pelatihan) dengan sangat cepat dan konsumsi daya yang rendah.
+NPU adalah istilah umum untuk perangkat keras khusus atau terintegrasi yang mempercepat operasi jaringan saraf. Banyak produk ditujukan untuk inferensi, tetapi dukungan pelatihan dan operator tertentu berbeda-beda. Kemampuan nyata juga bergantung pada runtime, driver, dan model.
 
 ### Perbedaan CPU, GPU, dan NPU
 
-Untuk memahami evolusi perangkat keras dalam pemrosesan AI, kita perlu menyusun perbedaan peran dan arsitektur dari CPU, GPU, dan NPU.
+CPU umumnya menangani kendali umum dan pekerjaan berurutan, GPU untuk beban paralel, dan NPU untuk mempercepat operasi jaringan saraf yang didukungnya. Kemampuan berbeda antarproduk dan runtime dapat membagi pekerjaan ke beberapa prosesor. NPU tidak selalu lebih cepat atau efisien daripada GPU; hasilnya bergantung pada model, operator, presisi, ukuran batch, runtime, pemindahan data, serta batas daya atau suhu. Ukur beban kerja end-to-end yang sama pada perangkat sasaran; TOPS puncak saja tidak menunjukkan kecepatan aplikasi.
 
-*   **CPU (Central Processing Unit)**:
-    Unggul dalam pemrosesan komputasi tujuan umum (general-purpose). Dapat menangani berbagai macam tugas dengan fleksibel, seperti percabangan kondisi yang kompleks dan kontrol OS, tetapi karena jumlah intinya (core) terbatas, prosesor ini tidak cocok untuk perhitungan paralel masif seperti jaringan saraf.
-*   **GPU (Graphics Processing Unit)**:
-    Awalnya dilengkapi dengan ribuan inti berskala kecil untuk rendering gambar, dan unggul dalam pemrosesan komputasi paralel super untuk perhitungan sederhana. Merupakan pemicu ledakan AI, dan hingga saat ini masih menjadi aktor utama yang mendominasi dalam pelatihan (training) model di sisi cloud. Namun, konsumsi dayanya besar, dan terdapat tantangan dari segi baterai dan pembuangan panas jika dijalankan secara terus-menerus pada perangkat edge seperti perangkat seluler.
-*   **NPU (Neural Processing Unit)**:
-    Prosesor khusus yang seluruh arsitekturnya dioptimalkan untuk perhitungan jaringan saraf (terutama operasi perkalian dan penjumlahan matriks). Sebagai gantinya dengan mengorbankan fleksibilitas (general-purpose) sampai tingkat tertentu, prosesor ini menghasilkan efisiensi pemrosesan (TOPS/W: jumlah operasi per 1 Watt) yang melebihi GPU dalam inferensi (inference) model AI tertentu.
+## 3. Arsitektur NPU dan Faktor yang Memengaruhi Kinerja
 
-## 3. Arsitektur NPU: Mengapa Begitu Cepat dan Efisien?
-
-Rahasia NPU dapat menunjukkan performa yang luar biasa terletak pada arsitektur internalnya.
+Kinerja dan efisiensi NPU tidak hanya bergantung pada desain internal, tetapi juga pada model, perangkat lunak, perpindahan data, serta batas daya dan suhu. Bagian ini memperkenalkan beberapa pertimbangan desain umum.
 
 ### Akumulasi Unit MAC (Multiply-Accumulate)
-Sebagian besar pemrosesan jaringan saraf adalah "operasi perkalian dan penjumlahan (MAC)", yaitu mengalikan data input dengan bobot (weight) dan kemudian menjumlahkannya. NPU mengadopsi struktur yang disebut "Systolic Array" atau "Tensor Core", di mana sejumlah besar unit MAC ini (ribuan hingga puluhan ribu) disusun secara rapat. Data mengalir di dalam array layaknya estafet ember (bucket brigade), mengurangi akses sia-sia ke register dan secara dramatis meningkatkan jumlah komputasi per siklus clock.
+Jaringan saraf sering memakai operasi MAC, sehingga sebagian NPU memiliki unit aritmetika dan alur data khusus. Desain berbeda-beda; array sistolik adalah salah satu pendekatan, sedangkan “Tensor Core” nama produk tertentu. Tidak semua NPU memiliki struktur atau jumlah unit sama. Diagram ini hanya konsep sederhana.
 
 ```mermaid
 graph TD
@@ -61,50 +55,49 @@ graph TD
 ```
 
 ### Optimasi Hierarki Memori (Meminimalkan Perpindahan Data)
-Hal yang paling banyak mengonsumsi daya dalam sebuah prosesor sebenarnya bukanlah "perhitungan" itu sendiri, melainkan "membaca dan menulis data dari memori (perpindahan data)". Konsumsi daya saat mengambil data dari DRAM mencapai puluhan hingga ratusan kali lipat dibandingkan dengan perhitungan pada ALU (unit aritmetika dan logika).
-NPU mengambil arsitektur yang melengkapi SRAM raksasa (on-chip memory) di dalam chip dan mempertahankan bobot serta data menengah jaringan saraf di dalam chip semaksimal mungkin. Selain itu, alih-alih menulis kembali data antar lapisan (layer) ke memori utama (DRAM), NPU mengalirkannya langsung ke unit komputasi lapisan berikutnya, yang secara drastis mengurangi overhead perpindahan data.
+Perpindahan data dapat memengaruhi daya dan kinerja, tetapi tidak ada rasio energi yang berlaku untuk semua chip dan beban kerja. Memori on-chip, model, serta runtime berpengaruh; data antara dapat dikirim ke DRAM. Profilkan pada perangkat sasaran dan ukur kinerja lengkap termasuk transfer.
 
 ## 4. Contoh Nyata Arsitektur NPU di Dunia Nyata
 
 Saat ini, berbagai NPU sedang dikembangkan dan dipasang pada ponsel pintar dan PC.
 
 ### Apple Neural Engine (ANE)
-Neural Engine, yang mulai disematkan oleh Apple sejak chip A11 Bionic dan menjadi sumber daya saing iPhone dan Mac (M-series). Prosesor ini memproses pengenalan wajah Face ID, segmentasi semantik foto, dan pengenalan suara pada perangkat (on-device) Siri dengan kecepatan tinggi di latar belakang dengan nyaris tanpa mengonsumsi baterai. Pada chip M3 dan A17 Pro terbaru, prosesor ini membanggakan performa komputasi hingga puluhan triliun operasi per detik (TOPS).
+Apple Core ML dapat memakai CPU, GPU, atau Neural Engine menurut model dan perangkat. Periksa pembagian kerja dengan Xcode dan ukur di perangkat sasaran; TOPS puncak satu chip tidak menunjukkan kecepatan aplikasi lain. [Analisis kinerja Core ML](https://developer.apple.com/documentation/coreml/analyzing-a-core-ml-model-s-performance-in-xcode) · [unit komputasi](https://developer.apple.com/documentation/coreml/mlcomputeunits)
 
-### Google Tensor Processing Unit (TPU)
-Google dikenal dengan TPU raksasanya untuk cloud, tetapi untuk ponsel pintar Pixel, mereka menggelar chip "Google Tensor" yang mengintegrasikan NPU yang mewarisi silsilah "Edge TPU". Chip ini difokuskan pada menjalankan model AI canggih Google di edge, seperti fotografi komputasional pada kamera (Magic Eraser dan mode Night Sight) serta transkripsi waktu nyata.
+### Google Tensor (SoC Pixel)
+Google Tensor adalah keluarga SoC untuk Pixel. Google Cloud TPU dan Edge TPU (Coral) merupakan lini produk terpisah; namanya tidak membuktikan hubungan desain langsung. Fitur bergantung pada generasi, model, OS, dan aplikasi. [Pengumuman Pixel 11 Google (Tensor G6)](https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/) · [Dokumentasi Coral Edge TPU](https://coral.ai/docs/)
 
 ### Qualcomm Hexagon NPU
-Hexagon DSP/NPU yang terintegrasi pada SoC Snapdragon digunakan di banyak ponsel pintar Android. Prosesor ini mengoptimalkan performa AI seluruh perangkat dengan mengintegrasikan komputasi skalar, vektor, dan tensor, serta bekerja sama erat dengan ISP kamera dan hub sensor. Baru-baru ini, prosesor PC untuk Windows, Snapdragon X Elite, juga telah dilengkapi dengan NPU yang kuat, mendorong perwujudan AI PC (Copilot+ PC).
+Qualcomm Hexagon memiliki akselerator skalar, vektor, dan tensor serta memori bersama; Qualcomm AI Engine memadukannya dengan prosesor lain seperti CPU dan GPU. Dukungan operasi dan kinerja berbeda menurut SoC, perangkat lunak, dan model. Ukur konfigurasi sasaran. [Hexagon](https://www.qualcomm.com/processors/hexagon) · [AI Engine](https://www.qualcomm.com/processors/ai-engine)
 
 ## 5. Perangkat Lunak dan Teknologi Optimasi yang Mendukung Edge AI
 
-Meskipun memiliki perangkat keras NPU yang luar biasa, tidak mungkin untuk langsung menjalankan model AI berukuran raksasa yang diperuntukkan bagi cloud di perangkat edge. "Teknologi optimasi model" sangat diperlukan untuk mengeluarkan potensi penuh dari perangkat keras.
+Model besar dapat melampaui batas memori atau daya perangkat. Kuantisasi, pruning, dan distilasi dapat dipertimbangkan, tetapi dukungan perangkat keras, dampak akurasi, dan kinerja terukur perlu diperiksa.
 
 ### Kuantisasi (Quantization)
-Teknologi untuk mengurangi bobot dan presisi komputasi model AI dari standar floating-point 32-bit (FP32) menjadi 16-bit (FP16), integer 8-bit (INT8), atau bahkan 4-bit (INT4). Dengan ini, ukuran model dapat menyusut menjadi sebagian kecil dari aslinya dan menghemat bandwidth memori. Sebagian besar NPU dioptimalkan pada tingkat perangkat keras untuk operasi INT8 atau INT4, dan kuantisasi secara dramatis meningkatkan kecepatan inferensi. Untuk meminimalkan degradasi akurasi, metode seperti PTQ (Post-Training Quantization) dan QAT (Quantization-Aware Training) digunakan.
+Kuantisasi mengubah representasi numerik, misalnya FP32 ke FP16 atau INT8. Penyimpanan bobot dapat berkurang, tetapi ukuran model dan kecepatan tidak selalu membaik dengan rasio sama; dukungan dan akurasi berpengaruh. Setelah PTQ/QAT, ukur masukan representatif pada perangkat sasaran. [Kompresi Core ML](https://developer.apple.com/documentation/coreml/reducing-the-size-of-your-core-ml-app) · [ONNX Runtime](https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html)
 
 ### Pemangkasan (Pruning)
-Teknologi untuk mengidentifikasi "bobot dengan tingkat kepentingan rendah (nilai mendekati nol)" di dalam jaringan saraf yang hampir tidak mempengaruhi hasil inferensi, lalu menghapusnya dari jaringan (ditetapkan menjadi nol). Dengan ini, sparsitas (ketersebaran) model meningkat, mengurangi beban komputasi dan ukuran model.
+Pruning menghapus atau menolkan bobot tertentu. Kernel dense dapat tetap menghitung bobot nol, sehingga sparsity tidak menjamin berkas lebih kecil atau inferensi lebih cepat. Diperlukan format sparse, operator, runtime, dan hardware yang sesuai. Ukur akurasi dan kinerja.
 
 ### Penyulingan Pengetahuan (Knowledge Distillation)
-Sebuah metode yang membuat model berkinerja tinggi namun berukuran raksasa (model guru) untuk melatih perilakunya ke model yang ringan (model murid). Karena model murid dilatih untuk meniru distribusi probabilitas output dari model guru, model tersebut dapat mencapai akurasi yang lebih tinggi dibandingkan melatih model kecil secara mandiri, sekaligus dapat menjaga ukurannya agar bisa dijalankan pada perangkat edge.
+Knowledge distillation melatih student menggunakan keluaran atau sinyal teacher. Ini dapat membantu model kecil, tetapi tidak menjamin akurasi lebih baik daripada pelatihan mandiri. Bandingkan pada tugas dan data sebenarnya.
 
 ## 6. Masa Depan dan Prospek Edge AI
 
-Saat ini, Model Bahasa Besar (Large Language Models/LLM) seperti ChatGPT sedang mendominasi dunia, namun inferensinya masih memerlukan klaster GPU raksasa di cloud. Namun, evolusi teknologi mencoba membawa bahkan LLM ke edge (Edge LLM, SLM: Small Language Model).
+Sebagian model bahasa besar berjalan di cloud karena kebutuhan komputasi dan memorinya, sedangkan beberapa perangkat dapat menjalankan model lebih kecil yang dikuantisasi atau didistilasi. Kelayakan, latensi, akurasi, dan daya bergantung pada model serta perangkat; evaluasi beban kerja yang dituju.
 
 Ke depannya, tren berikut ini dapat diperkirakan:
 
-*   **Hybrid AI (AI Hibrida)**:
-    Pendekatan hibrida akan menjadi arus utama, di mana inferensi ringan sehari-hari (meringkas teks, pengenalan suara, pembuatan gambar sederhana, dll.) diproses secara instan oleh NPU perangkat edge, dan hanya dipindah (offload) ke cloud jika diperlukan inferensi yang lebih canggih dan kompleks.
-*   **Meluas ke Berbagai Perangkat Edge**:
-    Tidak hanya pada ponsel pintar dan PC, NPU ultra-kecil (AI untuk mikrokontroler) juga akan disematkan pada kamera pengawas, drone, perangkat yang dapat dikenakan (wearable device), dan bahkan pada sensor IoT itu sendiri, membuat setiap benda memiliki "kecerdasan".
-*   **Standardisasi dan Ekosistem NPU**:
-    Untuk memecahkan kondisi saat ini di mana setiap perangkat keras memerlukan optimasi yang berbeda, kerangka kerja (framework) seperti ONNX, OpenVINO, TensorFlow Lite, dan PyTorch ExecuTorch terus berkembang, memajukan penyediaan lingkungan bagi pengembang sehingga "sekali ditulis, dapat berjalan optimal di NPU mana pun".
+*   **Hybrid AI**:
+    Pemrosesan di perangkat atau cloud dapat dipilih berdasarkan tenggat respons, konektivitas, pengelolaan data, biaya, dan kemampuan model. Jangan menganggap semua tugas harus berada di satu sisi; tentukan pilihan dari kebutuhan dan hasil pengukuran.
+*   **Penggunaan pada beragam perangkat edge**:
+    Kamera, kendaraan, perangkat wearable, dan sensor dapat memakai model kecil atau akselerator untuk tugas tertentu. Kelayakannya bergantung pada daya, biaya, konektivitas, model, dan kebutuhan pembaruan; tidak semua perangkat IoT memerlukan NPU.
+*   **Execution Provider dan portabilitas**:
+    Execution provider ONNX Runtime menempatkan operator atau subgraf yang didukung pada hardware; bagian yang tidak didukung dapat berjalan di prosesor lain. Periksa akselerasi dan kinerja lengkap tiap model. Tidak ada jaminan optimal pada semua NPU. [Execution Providers](https://onnxruntime.ai/docs/execution-providers/)
 
 ## Penutup
 
-Evolusi Edge AI dan NPU telah mengubah AI dari yang dulunya hanya milik sebagian peneliti dan infrastruktur cloud, menjadi "fungsi dasar" dari setiap perangkat yang ada di tangan kita. Arsitektur yang mewujudkan penghapusan latensi, perlindungan privasi, dan peningkatan dramatis pada efisiensi daya ini, adalah salah satu teknologi terpenting yang akan mendorong komputasi pada dekade berikutnya.
+Edge AI dan NPU memperluas pilihan inferensi di perangkat. Mengurangi waktu tunggu jaringan, data mentah, atau energi mungkin berguna, tetapi manfaat latensi, privasi, dan efisiensi tidak otomatis. Ukur penggunaan, model, perangkat, dan perangkat lunak secara menyeluruh lalu bandingkan dengan cloud.
 
 Bagi insinyur perangkat lunak dan pengembang AI, tidak hanya keterampilan menangani model raksasa di cloud, tetapi pengetahuan tentang "bagaimana mengimplementasikan dan mengoptimalkan AI dalam sumber daya yang terbatas dengan memanfaatkan karakteristik perangkat keras (NPU)" akan menjadi semakin penting di masa mendatang.

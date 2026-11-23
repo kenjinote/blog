@@ -2,6 +2,7 @@
 title: "Edge AI y la arquitectura NPU (Neural Processing Unit)"
 description: "Explicamos la evolución del Edge AI y las NPU, el hardware que acelera la inferencia dentro de los dispositivos sin depender de la nube, así como sus diferencias con las CPU/GPU y las técnicas de optimización."
 date: 2026-09-27T13:55:41+09:00
+lastmod: 2026-11-23
 slug: edge-ai-npu-architecture
 categories: ["technology", "software-development"]
 tags: ["tech", "ai", "hardware", "edge-computing", "npu"]
@@ -12,44 +13,37 @@ image: eyecatch.jpg
 
 En los últimos años, con el rápido desarrollo de la tecnología de Inteligencia Artificial (IA), esta se ha comenzado a utilizar en todos los aspectos de nuestra vida. Lo que impulsó el auge inicial de la IA fueron los abrumadores recursos informáticos de los enormes centros de datos en la nube. Sin embargo, en la actualidad, ese paradigma se encuentra en un gran punto de inflexión con el surgimiento de "Edge AI" (IA en el borde) y el hardware dedicado que lo soporta, la "NPU" (Unidad de Procesamiento Neuronal).
 
-En este artículo, exploraremos en profundidad los desafíos de la IA en la nube y la necesidad de Edge AI, y cómo las NPU logran increíbles velocidades de inferencia y ahorro de energía. Explicaremos su arquitectura, ejemplos específicos y técnicas de optimización de modelos.
+Este artículo explica las ventajas y limitaciones de la inferencia en la nube y en el dispositivo, algunos diseños de NPU y métodos de optimización. Como los efectos sobre el rendimiento y la privacidad no son universales, también describe cómo evaluarlos según el dispositivo y el uso.
 
 ## 1. Los límites de la IA en la nube y el surgimiento del Edge AI
 
 El enfoque tradicional de realizar la inferencia de IA en el lado de la nube presenta varios desafíos estructurales.
 
 ### El problema de la latencia (retraso)
-En aplicaciones que requieren decisiones instantáneas, como los vehículos autónomos, los robots industriales o la traducción de voz en tiempo real, el retraso en la comunicación (latencia) a través de la red es un problema fatal. Un retraso de decenas o cientos de milisegundos para enviar datos a la nube y recibir el resultado del procesamiento puede provocar accidentes graves o una mala experiencia para el usuario.
+El tiempo de ida y vuelta a la nube depende de la ruta y la distancia de red, la congestión y el procesamiento del servidor; decenas o cientos de milisegundos no es un valor universal. La inferencia en el dispositivo puede evitar la espera de la red y ayudar cuando hay plazos estrictos, pero la inferencia y la entrada/salida locales también consumen tiempo. Mida la latencia de extremo a extremo con el modelo y el dispositivo objetivo. Los sistemas críticos para la seguridad, como los vehículos, necesitan protecciones adicionales a una sola predicción de IA.
 
 ### Privacidad y seguridad
-Los teléfonos inteligentes y los dispositivos domésticos inteligentes recopilan constantemente información muy privada de los usuarios a través de cámaras y micrófonos. Enviar continuamente estos datos en bruto a la nube aumenta el riesgo de fugas de información y violaciones a la privacidad. Con Edge AI, los datos se procesan dentro del dispositivo (borde) y solo se genera o envía el resultado, lo que resulta muy ventajoso desde el punto de vista de la protección de la privacidad.
+La inferencia local puede evitar enviar imágenes o audio sin procesar fuera del dispositivo y reducir los datos transmitidos en algunos diseños. No garantiza privacidad ni seguridad: las aplicaciones aún pueden enviar resultados, registros o diagnósticos, y el dispositivo necesita controles de acceso, cifrado y actualizaciones. Compruebe qué guarda y transmite cada aplicación y servicio.
 
 ### Costos de comunicación y ancho de banda
 Enviar transmisiones de video de alta resolución y enormes cantidades de datos de sensores a la nube satura significativamente el ancho de banda de la red y dispara los costos de comunicación. Al preprocesar los datos en el borde y enviar solo la información necesaria a la nube, se puede reducir drásticamente la carga sobre la infraestructura de red.
 
-Para resolver estos problemas, el "Edge AI", que ejecuta modelos de IA directamente en el lugar donde se generan los datos (el borde), se ha convertido en una necesidad. Sin embargo, a diferencia de los servidores en la nube, los dispositivos de borde tienen estrictas limitaciones en cuanto a capacidad de batería, disipación de calor y tamaño físico. Es aquí donde entran en juego las "NPU", procesadores de alta eficiencia especializados en el procesamiento de IA.
+Según el caso de uso, la inferencia puede ejecutarse en la nube, en el dispositivo o en ambos. El procesamiento local es una opción para reducir la latencia de red o el tráfico, pero los dispositivos tienen límites de energía, temperatura y memoria. Las unidades de cómputo usadas, incluida la NPU, dependen del modelo y del entorno de ejecución.
 
 ## 2. ¿Qué es una NPU (Neural Processing Unit)?
 
-Una NPU (Unidad de Procesamiento Neuronal) es un acelerador de hardware diseñado específicamente para ejecutar el procesamiento de redes neuronales (inferencia y entrenamiento), como el aprendizaje profundo, a velocidades extremadamente altas y con un bajo consumo de energía.
+NPU es un término general para el hardware dedicado o integrado que acelera operaciones de redes neuronales. Muchos productos se orientan a la inferencia, pero la compatibilidad con el entrenamiento y con operadores concretos varía. Las capacidades reales también dependen del entorno de ejecución, los controladores y el modelo.
 
 ### Diferencias entre CPU, GPU y NPU
 
-Para comprender la evolución del hardware en el procesamiento de IA, es necesario aclarar los roles y las diferencias de arquitectura entre las CPU, GPU y NPU.
+La CPU suele encargarse del control general y el trabajo secuencial; la GPU, de cargas paralelas; y la NPU, de acelerar las operaciones de redes neuronales que admite. Las capacidades varían según el producto y el entorno de ejecución puede repartir el trabajo entre procesadores. Una NPU no siempre es más rápida ni eficiente que una GPU: depende del modelo, los operadores, la precisión, el tamaño del lote, el entorno de ejecución, las transferencias y los límites de potencia o temperatura. Compare la misma carga completa en el dispositivo objetivo; el TOPS máximo no predice por sí solo la velocidad de la aplicación.
 
-*   **CPU (Central Processing Unit)**:
-    Se destaca en el procesamiento de operaciones de propósito general. Puede manejar de manera flexible diversas tareas, como ramificaciones condicionales complejas y el control del sistema operativo (OS), pero debido a su número limitado de núcleos, no es adecuada para cálculos paralelos masivos como los requeridos por las redes neuronales.
-*   **GPU (Graphics Processing Unit)**:
-    Originalmente equipada con miles de núcleos pequeños para renderizar imágenes, sobresale en el procesamiento paralelo masivo de cálculos simples. Fue el catalizador del auge de la IA y sigue siendo el actor dominante para el entrenamiento de modelos en la nube. Sin embargo, consume mucha energía, lo que plantea desafíos en términos de batería y disipación de calor para funcionar constantemente en dispositivos de borde como los teléfonos móviles.
-*   **NPU (Neural Processing Unit)**:
-    Es un procesador dedicado cuya arquitectura completa está optimizada para los cálculos de redes neuronales (especialmente las operaciones de multiplicación-acumulación de matrices). A cambio de sacrificar en parte su versatilidad, logra una eficiencia de procesamiento (TOPS/W: operaciones por vatio) superior a la de una GPU en la inferencia de modelos de IA específicos.
+## 3. Arquitectura de las NPU y factores que afectan al rendimiento
 
-## 3. Arquitectura de las NPU: ¿Por qué son tan rápidas y eficientes?
-
-El secreto del asombroso rendimiento de las NPU reside en su arquitectura interna.
+El rendimiento y la eficiencia de una NPU dependen de su diseño interno, pero también del modelo, el software, el movimiento de datos y los límites de potencia y temperatura. Esta sección presenta algunos factores de diseño comunes.
 
 ### Integración de unidades MAC (Multiply-Accumulate)
-La mayor parte del procesamiento en una red neuronal consiste en "operaciones de multiplicación-acumulación (MAC)", donde los datos de entrada se multiplican por los pesos (Weight) y luego se suman. Las NPU emplean estructuras llamadas "Arreglo Sistólico" (Systolic Array) o "Núcleos Tensoriales" (Tensor Cores), donde se empaquetan enormes cantidades de estas unidades MAC (miles o decenas de miles). Al hacer que los datos fluyan a través del arreglo como en una cadena humana, se reducen los accesos innecesarios a los registros y se aumenta drásticamente el volumen de cálculo por ciclo de reloj.
+Las redes neuronales suelen usar operaciones de multiplicación-acumulación (MAC), por lo que algunas NPU incluyen unidades aritméticas y flujos de datos especializados. Los diseños varían: un arreglo sistólico es una opción y «Tensor Core» es un nombre específico de ciertos productos. No todas las NPU tienen la misma estructura ni una cantidad de unidades comparable. El diagrama siguiente es un concepto simplificado, no una descripción de todas las NPU.
 
 ```mermaid
 graph TD
@@ -61,50 +55,49 @@ graph TD
 ```
 
 ### Optimización de la jerarquía de memoria (minimización del movimiento de datos)
-Lo que consume más energía en un procesador no es el "cálculo" en sí, sino "la lectura y escritura de datos desde la memoria (movimiento de datos)". El consumo de energía para recuperar datos de la DRAM es entre decenas y cientos de veces mayor que el cálculo en la ALU (unidad aritmética lógica).
-Las NPU adoptan una arquitectura que incluye una enorme SRAM (memoria en el chip) para mantener los pesos y los datos intermedios de las redes neuronales tanto como sea posible dentro del propio chip. Además, los datos entre capas no se reescriben en la memoria principal (DRAM), sino que se envían directamente a las unidades de cálculo de la siguiente capa, lo que reduce radicalmente la sobrecarga del movimiento de datos.
+El movimiento de datos puede afectar al consumo y al rendimiento del acelerador, pero no hay una proporción energética única válida para todos los chips y cargas de trabajo. Influyen la memoria integrada, la reutilización de datos, el modelo y el entorno de ejecución. Los pesos y resultados intermedios no siempre caben en el chip, y puede haber transferencias a DRAM entre capas. Analice el modelo en el hardware objetivo y mida también esos movimientos como parte del rendimiento total.
 
 ## 4. Ejemplos de arquitecturas NPU en el mundo real
 
 Actualmente, se desarrollan e integran diversas NPU en teléfonos inteligentes y computadoras personales.
 
 ### Apple Neural Engine (ANE)
-Apple comenzó a integrarlo a partir del chip A11 Bionic, y el Neural Engine es la fuente de competitividad de los iPhone y las Mac (serie M). Realiza el reconocimiento facial de Face ID, la segmentación semántica de fotografías y el reconocimiento de voz en el dispositivo de Siri a alta velocidad en segundo plano, consumiendo casi nada de batería. En los últimos chips M3 y A17 Pro, presume de una capacidad de rendimiento de decenas de billones de operaciones por segundo (TOPS).
+Apple Core ML puede usar unidades de cómputo como CPU, GPU y Neural Engine según el modelo y el dispositivo. La asignación y el rendimiento dependen de la carga; analícelos con Xcode y mida en el dispositivo objetivo. El TOPS máximo de una generación de chips no determina la velocidad de otra aplicación o modelo. [Análisis de rendimiento de Core ML](https://developer.apple.com/documentation/coreml/analyzing-a-core-ml-model-s-performance-in-xcode) · [unidades de cómputo](https://developer.apple.com/documentation/coreml/mlcomputeunits)
 
-### Google Tensor Processing Unit (TPU)
-Google es conocido por sus gigantescas TPU orientadas a la nube, pero para los teléfonos inteligentes Pixel, ha desplegado los chips "Google Tensor" que integran una NPU heredera del linaje de la "Edge TPU". Se especializan en ejecutar los modelos avanzados de IA de Google en el borde, como la fotografía computacional de la cámara (Borrador Mágico y Modo Visión Nocturna) y la transcripción en tiempo real.
+### Google Tensor (SoC de Pixel)
+Google Tensor es una familia de SoC para dispositivos Pixel. Google Cloud TPU y Edge TPU (la familia de productos Coral) son líneas de producto distintas; sus nombres no demuestran por sí solos una relación directa de diseño. Las funciones locales varían según la generación, el modelo, el sistema operativo y la aplicación. Consulte la documentación del dispositivo y la función concretos. [Anuncio de Pixel 11 de Google (Tensor G6)](https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/) · [Documentación de Coral Edge TPU](https://coral.ai/docs/)
 
 ### Qualcomm Hexagon NPU
-El DSP/NPU Hexagon está incorporado en los SoC Snapdragon que se encuentran en muchos teléfonos inteligentes Android. Al integrar operaciones escalares, vectoriales y tensoriales, y colaborar estrechamente con el ISP de la cámara y el hub de sensores, optimiza el rendimiento general de la IA del dispositivo. Recientemente, el procesador Snapdragon X Elite para PC con Windows también incorpora una potente NPU, impulsando la realización de las "AI PC" (Copilot+ PC).
+Qualcomm describe Hexagon como una NPU con aceleradores escalares, vectoriales y tensoriales, y memoria compartida. Qualcomm AI Engine la combina con otros procesadores, incluidas CPU y GPU. Las operaciones compatibles y el rendimiento real varían según el SoC, el software y el modelo; compare mediciones en la configuración objetivo, no solo el nombre del producto o los TOPS máximos. [Hexagon NPU](https://www.qualcomm.com/processors/hexagon) · [Qualcomm AI Engine](https://www.qualcomm.com/processors/ai-engine)
 
 ## 5. Software y tecnologías de optimización que sostienen Edge AI
 
-Incluso con un excelente hardware NPU, no se pueden ejecutar enormes modelos de IA diseñados para la nube directamente en el borde. Las "tecnologías de optimización de modelos" son indispensables para aprovechar el potencial del hardware.
+Los modelos grandes pueden superar la memoria o el presupuesto energético de un dispositivo. La cuantización, la poda y la destilación son opciones que se deben evaluar, comprobando la compatibilidad del hardware, el efecto en la precisión y el rendimiento medido.
 
 ### Cuantización (Quantization)
-Es una tecnología que reduce los pesos y la precisión del cálculo de los modelos de IA del estándar de punto flotante de 32 bits (FP32) a 16 bits (FP16), enteros de 8 bits (INT8) o incluso de 4 bits (INT4). Esto reduce el tamaño del modelo a una fracción y ahorra ancho de banda de memoria. La mayoría de las NPU están optimizadas a nivel de hardware para operaciones INT8 o INT4, por lo que la cuantización mejora dramáticamente la velocidad de inferencia. Para minimizar la degradación de la precisión, se utilizan técnicas como PTQ (Cuantización posterior al entrenamiento) y QAT (Entrenamiento consciente de la cuantización).
+La cuantización cambia la representación numérica de los pesos o las operaciones, por ejemplo de FP32 a FP16 o INT8. Puede reducir el almacenamiento de pesos y las transferencias, pero el tamaño del modelo y la velocidad de inferencia no mejoran necesariamente en la misma proporción. El resultado depende de los formatos, operadores, entorno de ejecución y hardware compatibles, y puede cambiar la precisión. Tras aplicar PTQ o QAT, mida la precisión con entradas representativas y el rendimiento completo en el dispositivo objetivo. [Compresión de modelos Core ML](https://developer.apple.com/documentation/coreml/reducing-the-size-of-your-core-ml-app) · [cuantización de ONNX Runtime](https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html)
 
 ### Poda (Pruning)
-Es una tecnología que identifica los "pesos de baja importancia (valores cercanos a cero)" dentro de una red neuronal que casi no afectan el resultado de la inferencia, y los elimina (los fija en cero) de la red. Esto aumenta la dispersión (sparsity) del modelo y reduce la cantidad de cálculos y el tamaño del modelo.
+La poda elimina o pone a cero ciertos pesos para crear un modelo disperso. Los kernels densos pueden seguir calculando con pesos cuyo valor es cero, por lo que la dispersión por sí sola no garantiza un archivo menor ni una inferencia más rápida. Para ahorrar almacenamiento se necesita una representación dispersa adecuada; para acelerar, operadores, entorno de ejecución y hardware compatibles. Evalúe conjuntamente la precisión y el rendimiento medido.
 
 ### Destilación de conocimiento (Knowledge Distillation)
-Es un método donde el comportamiento de un modelo enorme pero de alto rendimiento (modelo profesor) se enseña a un modelo ligero (modelo estudiante). Dado que el modelo estudiante se entrena para imitar la distribución de probabilidad de salida del modelo profesor, puede alcanzar una mayor precisión que si se entrenara un modelo pequeño de forma aislada, manteniendo un tamaño que permite su ejecución en dispositivos de borde.
+La destilación de conocimiento entrena un modelo alumno con salidas u otras señales de un modelo profesor. Puede ayudar a un modelo pequeño sujeto a límites de tamaño o precisión, pero no garantiza superar la precisión de entrenarlo de forma independiente. Compare los métodos con los datos y la tarea relevantes.
 
 ## 6. El futuro de Edge AI y perspectivas
 
-Actualmente, los Modelos de Lenguaje Grande (LLM) como ChatGPT están tomando el mundo por asalto, pero su inferencia todavía requiere de los gigantescos clústeres de GPU en la nube. Sin embargo, la evolución tecnológica está intentando llevar incluso los LLM al borde (Edge LLM, SLM: Small Language Model).
+Algunos modelos de lenguaje grandes se ejecutan en la nube por sus necesidades de cálculo y memoria, mientras que ciertos dispositivos pueden ejecutar modelos más pequeños cuantizados o destilados. La viabilidad, latencia, precisión y consumo dependen del modelo y del dispositivo; evalúe la carga prevista.
 
 En el futuro, se esperan las siguientes tendencias:
 
-*   **Hybrid AI (IA Híbrida)**:
-    Se volverá dominante un enfoque híbrido en el que las inferencias ligeras cotidianas (resumen de textos, reconocimiento de voz, generación de imágenes simples, etc.) se procesen instantáneamente en las NPU de los dispositivos de borde, y solo se delegue a la nube cuando se requieran inferencias más avanzadas y complejas.
-*   **Expansión a diversos dispositivos de borde**:
-    NPU diminutas (IA para microcontroladores) se integrarán no solo en teléfonos inteligentes y PC, sino también en cámaras de vigilancia, drones, dispositivos portátiles (wearables) y en los propios sensores IoT, dando a todo tipo de objetos su propia "inteligencia".
-*   **Estandarización de las NPU y su ecosistema**:
-    Para romper con la situación actual donde se necesita una optimización diferente para cada hardware, están evolucionando frameworks como ONNX, OpenVINO, TensorFlow Lite y PyTorch ExecuTorch, avanzando en un entorno donde los desarrolladores puedan "escribir una vez y ejecutar de manera óptima en cualquier NPU".
+*   **IA híbrida (Hybrid AI)**:
+    El diseño puede elegir entre el dispositivo y la nube según los plazos de respuesta, la conectividad, el tratamiento de datos, el coste y la capacidad del modelo. No presuponga que todas las tareas deban ejecutarse en un solo lugar; decídalo según los requisitos y las mediciones.
+*   **Uso en distintos dispositivos de borde**:
+    Cámaras, vehículos, wearables y sensores pueden usar modelos pequeños o aceleradores para tareas concretas. La conveniencia depende de la energía, el coste, la conectividad, el modelo y los requisitos de actualización; no todos los dispositivos IoT necesitan una NPU.
+*   **Proveedores de ejecución y portabilidad**:
+    Entornos como ONNX Runtime usan proveedores de ejecución para asignar operadores o subgrafos compatibles al hardware. Las operaciones no compatibles pueden ejecutarse en otro procesador; compruebe qué partes usan el acelerador y mida la precisión y el rendimiento completo de cada modelo. No se garantiza «escribir una vez y ejecutar de forma óptima en cualquier NPU». [Proveedores de ejecución de ONNX Runtime](https://onnxruntime.ai/docs/execution-providers/)
 
 ## Conclusión
 
-La evolución de Edge AI y las NPU ha transformado a la IA, de ser algo exclusivo de un grupo de investigadores y de la infraestructura de la nube, a ser una "función básica" en todos los dispositivos que tenemos a nuestro alcance. Esta arquitectura, que resuelve la latencia, protege la privacidad y logra mejoras drásticas en la eficiencia energética, es una de las tecnologías más importantes que impulsarán la computación en la próxima década.
+Edge AI y las NPU amplían la posibilidad de ejecutar inferencias en el dispositivo. Evitar una ida y vuelta por la red, enviar menos datos sin procesar o ajustar el consumo de energía y ancho de banda puede ser útil, pero las mejoras de latencia, privacidad y eficiencia energética no son automáticas. Mida la configuración completa —uso, modelo, dispositivo y software— y compárela con la inferencia en la nube.
 
 Para los ingenieros de software y los desarrolladores de IA, además de las habilidades para manejar modelos masivos en la nube, el conocimiento sobre "cómo implementar y optimizar la IA aprovechando las características del hardware (NPU) con recursos limitados" será cada vez más importante en el futuro.

@@ -7685,6 +7685,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-063.json",
       "evidenceHash": "c2d03e931d287a6737a489ec66f2dfae3f89765236cdcdf9af1be5ae65e73bde"
+    },
+    "post/edge-ai-npu-architecture/index.en.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "9bee00966d9b2670bdaa3e6a6038b09271e15573175bdf8ed7b6b02d950ec6e3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "7749d86c97c066e499bbecaf8f40bdfee7c03ac4e0a89fbfbc474aa0429d7dff"
+    },
+    "post/edge-ai-npu-architecture/index.zh-cn.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "fc1fabd449faf629247411c961017813f795e3954947c1b78ec77cb4d478a66b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "c0b7166254a1dc6326823d68cc708338fb5f4cbd39f888732c09dcadee912792"
+    },
+    "post/edge-ai-npu-architecture/index.es.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "65f6b92bad91f304f2aa4689f4faa83d3730433c6bb3860289b9d2305697833c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "515ad374fade7e107cf4d706372909e7b9341324f9e04ddab28aa09331ca17c6"
+    },
+    "post/edge-ai-npu-architecture/index.ko.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "30f97964ca1bf15328b524d7871821f6941f9c730f7f4bc7607cae1f3ba3c260",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "14bf3db458da64f19917197d76955821805d23a89830db32cdc90f79dfe9b6c7"
+    },
+    "post/edge-ai-npu-architecture/index.pt.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "6c26a351258371b848bb0e62867656246511a8c39cb57379ea2e9d3656a9c021",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "3feefdeb207ccff30bbf38b3dc6e18bd56d73d4c1d050dd2940e4e2e1c9e73f4"
+    },
+    "post/edge-ai-npu-architecture/index.zh-tw.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "d4cd5f9c769b79b91f6c24494e15ea7a45162b179b905e8349c99890d6953bf8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "40434ebc00cd5b3a1bafdd08aa48165c7a129dc22f123b156b8e643d45e1ba7e"
+    },
+    "post/edge-ai-npu-architecture/index.hi.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "555696a0bea3d14bdaa6157c09987c63b92676f83554a0361a82c8147683051c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "e60851c9afa622b8ed1f7a46cd22733c5074778f1fc74017d9488ba647fd25f9"
+    },
+    "post/edge-ai-npu-architecture/index.fr.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "868187ef0e54328c7025a7930125adffd4a98ae2750cb3f003e0f0e3c015006c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "243e54a61901f893bd03e94b37e674640d35e3876c2971d323009785fd8b3138"
+    },
+    "post/edge-ai-npu-architecture/index.de.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "3e67318624c720532e6687f61607c4e3675b8c6491f21ceab9c45d8ac1e97492",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "7ac3d8945d2fbc8e8be02fdb9c9f7e73d456e3992fca4a14254b67db033b3be1"
+    },
+    "post/edge-ai-npu-architecture/index.ar.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "2d05edfbba7fc447f5a41935746fb0af7dea5a1cdce89755b6f4c5adffa9383d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "535093d47c5a452f7f4c1570f8d12ad09f9b8bdca95002ed4b14a5b9574b0a91"
+    },
+    "post/edge-ai-npu-architecture/index.ru.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "70d7199047707de565997551118da341d1b18477423689d9d7282a01c6796f46",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "f180cd5f0625d3591f28bee4e3aef7137baeab6457764948f96b777cfd54e807"
+    },
+    "post/edge-ai-npu-architecture/index.id.md": {
+      "source": "post/edge-ai-npu-architecture/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0e32470aa55935347c6dd92e53c98b0e15ae9ca21047cce6c682e2d41595b890",
+      "translationHash": "43cf04f058296dee1ffba845532d745aac19434437bec57670add6b0854e60cc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-067.json",
+      "evidenceHash": "bccf5eecec8ecc447e7402ed1393b2e8c780e1ba4050650272a5d41b39785d89"
     }
   }
 }
