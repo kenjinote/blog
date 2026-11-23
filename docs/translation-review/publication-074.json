@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "batch": 74,
+  "article": "GitHubスポンサー募集",
+  "verifiedAt": "2026-11-23",
+  "ciRun": 45141672819,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45141672819",
+  "sourceCommit": "8e79bbd2ab7b66511b72693c69a2ea6e857a3c17",
+  "deployment": "success",
+  "pagesVerified": 13,
+  "checks": [
+    "HTTP 200 for all 13 editions",
+    "canonical URL and lang metadata; Arabic page is RTL",
+    "14 unique hreflang labels including x-default, with identical reciprocal maps across all 13 editions",
+    "title and description present; lastmod 2026-11-23",
+    "direct GitHub Sponsors profile link present; no embedded iframe"
+  ],
+  "result": "passed"
+}

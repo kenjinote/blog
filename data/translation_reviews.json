@@ -8405,6 +8405,366 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-072.json",
       "evidenceHash": "5b89bfbb3875459f39add286614b4379298e1cc2a3f285ece42c427cab84f9ac"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.en.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "14b0dbc07c79eec22f47071aed6a64d42bd3cb97d33792ef6f48bfeb16d3a9bd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "aff230887b1a00d65e0944f7f4d78e988ba1501b15a612fa7912dcb231cde23f"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.zh-cn.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "97f18bdfa3bd1d765aec634b3c8871ebbc93e9bd7432c3d8bdb847fff83a9535",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "119171ec076609c1c9ec2491cb58e7c7253c9cd1bd494df7892dac73073815ad"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.es.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "b7695d6fe6ebb62371230d2cd9382d789c004c99ca6c56d3d7c2f27a8501bfcd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "4b7f241a69769370bbe3e14e83c7a3a21bfbf6aa5adab2b05b0d79713991c49c"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.ko.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "c211fe7dd2610d12276571513b24002fa662db3adb1ddbc15880a73de0e27c5f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "f5af9fea29a208b2434ce660dfbe4c702dc52608130cd44edcf4f6c4bee4307f"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.pt.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "5851c55899390712a0869dc7056bdcbd21717cbc30e33a4ba21a81e22ce5edbe",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "df9683320a5cc243d4b38a4e5da85780e6c1cb50f506cd8524469b5e8109dcea"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.zh-tw.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "1769f3271df85f827c3ddabff3880429fda7c932e345d8efe540d97f23183751",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "f1ca34b827500bd8acbf69beb696005ef9b194d37acb55fd7d3095492da8ac38"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.hi.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "b05a07bd6b94d91e524d58aac4effcc069feb583f86c3681a6a22ea4037a1ff8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "159c9b429b87deb29bf685430db4a8b2f8743b5332f90475bf52843cbe69c6ee"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.fr.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "6568a297d03bcf06907b54ae79ab627b95ad6ff742bdb866008c9fe0588b60b6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "c3596fdf4f0a09a2e27abf7ef459df2be213df558394194c46b8d6a5dc724d20"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.de.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "101583ac1d99aa88e4ca7512bc291b9a62ddff74a68faefb2c259f4e20fa9d71",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "43bc840aadf956fa8a0d86d48629fc9a5e37ff200cfdf49486dc8912d22f6952"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.ar.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "4baa3ce86f787c29910b0327587a8ba30102a7a22420f0801ea3684ff3e67acc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "140c25441201061c86d33d0934317b18ee67fd35d62d87cf1e6ffb3c2e3a57b3"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.ru.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "b0da2dc40fffb060ffc511b9a994dc575b6c6bbf1c9bb767248d520545e71bb7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "105171fe6479ff349a63d01f612c8499f31e06c3f30f9670ef42e4fa66e88c98"
+    },
+    "post/Gemini CLI を Windows 環境にインストールする方法/index.id.md": {
+      "source": "post/Gemini CLI を Windows 環境にインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "0b44a84968bc873bebdec9a2c07edabb48d0c413665a67c13931c0f0303f60a1",
+      "translationHash": "9eef49b4c8624c69851b2a2c13b4cf2a505149acacd074b55bc951036c6ce086",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-073.json",
+      "evidenceHash": "90ee6ee312cc6a484484b4bc62ccce74d2a12c06388a1ad7b65d10cce45e875d"
+    },
+    "post/GitHubスポンサー募集/index.en.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "eed8e03183e01fcaf57f04c678285e49ea248cb48ac078429e19c3cbbad26f7f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "bdbe80a1ce4166d870e51525e4a76a9696eb552e74451b7a36d20073c1951804"
+    },
+    "post/GitHubスポンサー募集/index.zh-cn.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "aea5b2abe105e7d65ce843fd6bab1ec410c4b59f1705fd73fbd8bf8d3d58f35e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "5a384dcc0fc6f3d16479c3df71863fc4c295ba5549f8a669f9e20565496edd30"
+    },
+    "post/GitHubスポンサー募集/index.es.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "52c5f86eb3a6bb19bff1ea157827283f98805477929b5dc088cabbfc6e286ea8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "fc730b625be15c8dd1bc5d629dbfec92dccb415ed1679af76e32941329c22ffe"
+    },
+    "post/GitHubスポンサー募集/index.ko.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "6e345426a8d4e39a0e3063b6b0f68e02443414a34deff8bb27ba4815b57308ae",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "4dd3948cbcf282b5243560b648b4be731c9809362693075eecd633f0812bef17"
+    },
+    "post/GitHubスポンサー募集/index.pt.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "3d128200abe53d5fe259632f231f22444d345bf906c2a56cad5d1c550ea2cfe5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "164b844dc8308f504602eaa458298c74a87e86f17c149ab0b0fade7a2c66cea3"
+    },
+    "post/GitHubスポンサー募集/index.zh-tw.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "71a579b270295ac7f335f5fe90c9098e9f94c8d6c9b42d95ee54b4150e0995f0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "88ba87423a27b1d32659bd1c78af5bb29635451095f7751699bdfc41d34ea6d7"
+    },
+    "post/GitHubスポンサー募集/index.hi.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "520b31392be5c25ab434b27ce84a9ae4706ee9f475a762e701b82ff37750b05a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "a11c5b2e51a502c4c69d8f363bddeb95eb75751a9e25f2b5f0738b3310fa47c6"
+    },
+    "post/GitHubスポンサー募集/index.fr.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "fd4df7604fb7359966317fcb3d44a2d476876aec7f79855dcc57addbf20214ab",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "c9b5ffe075a70b6e76a52507d7e77ed4892bb6f614fe7f446252a8e540f30d9b"
+    },
+    "post/GitHubスポンサー募集/index.de.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "928e8fb50c4ebc1cb7d0ffed13a44472e4388636a55555d7a5d834127044f1c0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "46e6c46945e71b21c1776f616348858c4c0429b4f9282f89c9281c32f567db56"
+    },
+    "post/GitHubスポンサー募集/index.ar.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "98c51f0924fe214ae66f2eff3ab7275b36ee031f9c0c8592eff39b4e0962c147",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "d05acac4e771df82f9f78d718c3a10f485d8c075fe6f5ad6b6b740fbaf855069"
+    },
+    "post/GitHubスポンサー募集/index.ru.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "02546b1bc51b3a3b8b8914cd6255f2bd854472d0782c9a77a52d6386d0c02e2d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "54f299dca5398ac2eaf439f94d097bd5fab4903a1e7a1bee11454601fc60f192"
+    },
+    "post/GitHubスポンサー募集/index.id.md": {
+      "source": "post/GitHubスポンサー募集/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "83db7e12716bc08d0d57d09e8dbbb53383ec700348205763c1236c6fd1f73f5b",
+      "translationHash": "d585a9cdec7a14f085b87cf823fb2a6e55cc88acdac3e5a4c35595dd4428c161",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-074.json",
+      "evidenceHash": "686c46ab4d4c7497980c2929075ca0c535b1f7e39699afbcdca83aca364f8158"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.ar.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "fcd7d87fec5e60d734ce402ca2ce21fdb66dd2e8421167b45d1363196219db70",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "a3f4d14a813e39e98ae5d522a204ec7af1f81b7d1ab2f3b9ffef3f1a127c16cf"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.de.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "625cab8d092fbbe49a0b160e9c8d25c68e5a11506917169a438bdaebf9e1742b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "c22f2ed2fa1f441015f14ac6894943db8a6c530efb8e17168b0dc2812672592f"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.en.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "a84f3d551af722b3147a873450060833584be53f444ee4cf13503926d2529e26",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "48a7a246a4a610e0f76aeccfad06f6a627f85600361350528f56e282d0ccbbb2"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.es.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "0baa7dc43fa62b304a0d976c2611d45ed80871714fdc0cecba7b6a9e8f4801d9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "0ead3a954ab51d36f856c7f99d0766f1e0920d8ac24588635c71ff0aae1e1914"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.fr.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "1d211814dbbf09a3cd96c22f648ace0645e60e4ef59345f2a70993d555870cfa",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "d77e41994f6245989083efede74e73fe902b8e092b0adf721d1d70f68d521b78"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.hi.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "69efb94af9856d87fe63a216e85f97a3689c0839482a257169cd560b02850628",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "49e8843c52784ce2622ca609dd7f3ef33fa516c25bbb9964aebc6b8fa83447be"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.id.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "e494ed81fbf45e9d0c11261057297528646fb1722a396445ff17080069b03ee2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "d12230ecde6f6b04967a502e96af5ab279cfce04a8d0c9134f3690cc7bd8e6d1"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.ko.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "6efb341dc1016f0c4ccbce6ec41c6ecda639989f2c0abe4bf4e629219031cafc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "c22b72fbb90d4d022eef1c4325c7e6b90b076b66018002fa864d8c1f8a013432"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.pt.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "fa0bda656c0da09f591280d6cf99eec37f4590a2ff98b018473180d442226332",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "7327f50fcac9b0778f7f0ed9b49d9dcfc75033e2db85dd2fa3705c79c46c7ddf"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.ru.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "41cb211375ec462e003ed61a0bd4671d2a7420f88b1282f37ca726523fbeffdb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "2dd8656d28362baa89e8db29dd59442f4df31223815bf84762fc6896084e86b3"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.zh-cn.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "22d4fff2197ac4f5566bf2cd19eaac85161ad69e1615868338be75861429c5b4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "695f5e5001fe6dc6cdbfef7f1e55b64a5c29484b722ecc25ef5e1f35fe213f5f"
+    },
+    "post/Github Actionsで動的に変数を設定する/index.zh-tw.md": {
+      "source": "post/Github Actionsで動的に変数を設定する/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "e2baeaef13560f639dd6fc25e487e39a610f39600e19ec41ac2584c8a019606d",
+      "translationHash": "dc1d810b0c34abab76ec2480d2543a29d94b9eb300eb672dda831756ad3dac47",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-075.json",
+      "evidenceHash": "89e293c34cb59f181a75a1466d6d774aa031478d497a1ced8489adf3570b99f5"
     }
   }
 }

@@ -20,7 +20,7 @@
   ],
   "validation": "docs/translation-review/validation-075.json",
   "scope": "Read the complete Japanese article and all twelve translations. Checked every localized workflow example, command/shell consistency, environment-file timing and scope, release permissions and asset assumptions, and current GitHub primary references.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Github Actionsで動的に変数を設定する/index.ar.md": {
       "reviewKind": "ai",
@@ -466,5 +466,6 @@
         "GitHub runner images and action versions can change; consult current official documentation."
       ]
     }
-  }
+  },
+  "publicationReceipt": "docs/translation-review/publication-075.json"
 }

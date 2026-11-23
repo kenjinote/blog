@@ -15,7 +15,7 @@
   ],
   "validation": "docs/translation-review/validation-074.json",
   "scope": "Read the full Japanese sponsorship notice and all twelve translations. Checked the public Sponsor profile, payment/tax statements, link targets, embedded content, and translated intent against current GitHub primary documentation.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/GitHubスポンサー募集/index.en.md": {
       "reviewKind": "ai",
@@ -449,5 +449,6 @@
         "No claim is made that sponsorships are tax-deductible or guarantee a particular feature or delivery date."
       ]
     }
-  }
+  },
+  "publicationReceipt": "docs/translation-review/publication-074.json"
 }

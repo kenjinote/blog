@@ -18,7 +18,7 @@
   ],
   "validation": "docs/translation-review/validation-073.json",
   "scope": "Read the complete Japanese article and all twelve translations. Compared setup commands, requirements, authentication, npx/global behavior, Windows PATH notes, and tool-security statements with current official primary documentation.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Gemini CLI を Windows 環境にインストールする方法/index.en.md": {
       "reviewKind": "ai",
@@ -452,5 +452,6 @@
         "Official documentation can change; readers are directed to the current primary guides."
       ]
     }
-  }
+  },
+  "publicationReceipt": "docs/translation-review/publication-073.json"
 }
