@@ -1,7 +1,9 @@
 ---
 title: 'O Futuro da Edge AI e Abordagens de Implementação para Dispositivos IoT'
+description: "Visão prática de Edge AI, hardware NPU, compressão de modelos, ONNX Runtime, aprendizagem federada e limites de implantação em IoT."
 slug: "edge-ai-future-iot-implementation"
 date: "2026-09-11T05:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -51,18 +53,18 @@ Como pode ser visto neste diagrama, na arquitetura da Edge AI, o loop desde a fo
 Vamos formular a diferença de latência entre a borda e a nuvem. O tempo até a conclusão da inferência de todo o sistema, $T_{total}$, é expresso da seguinte forma.
 
 **No caso da Cloud AI:**
-$$ T_{total} = T_{network\_up} + T_{cloud\_compute} + T_{network\_down} $$
+$$ T_{total} = T_{pre} + T_{up} + T_{queue} + T_{compute} + T_{down} + T_{post} $$
 
-Aqui, o tempo de upload na rede $T_{network\_up}$ depende da seguinte fórmula:
-$$ T_{network\_up} = \frac{D}{B} + RTT $$
-($D$: Tamanho dos dados enviados, $B$: Largura de banda da rede, $RTT$: Tempo de ida e volta)
+Os componentes aproximados de transferência de envio e retorno em um sentido são:
+$$ T_{up} \approx L_{up} + \frac{D}{B_{up}}, \quad T_{down} \approx L_{down} + \frac{R}{B_{down}} $$
+Aqui, $D$ e $R$ são os tamanhos dos dados enviados e recebidos; $B_{up}$ e $B_{down}$ são as larguras de banda efetivas; e $L_{up}$ e $L_{down}$ são as latências unidirecionais de propagação/conexão. O RTT mede ida e volta, portanto não conte a mesma latência duas vezes. O modelo não inclui filas, retransmissões, sobrecarga de protocolo nem processamento local.
 
-Quando o tamanho dos dados $D$ é grande (como imagens de alta resolução ou dados de vibração contínuos) ou em ambientes onde a largura de banda $B$ é estreita, o $T_{network\_up}$ aumenta dramaticamente e se torna o gargalo, não importa o quão rápida seja a velocidade de inferência da própria IA, $T_{cloud\_compute}$.
+Um volume grande de dados ou uma largura de banda efetiva baixa pode tornar a comunicação o gargalo. Meça todo o caminho da resposta, em vez de inferir a latência apenas por esse termo.
 
 **No caso da Edge AI:**
-$$ T_{total} \approx T_{edge\_compute} $$
+$$ T_{total} = T_{pre} + T_{local\_transfer} + T_{inference} + T_{post} $$
 
-Como a Edge AI não envolve transferência pela rede, $T_{network\_up}$ e $T_{network\_down}$ tornam-se quase zero (apenas transferência do barramento local). Como a capacidade de computação dos dispositivos de borda é inferior à da nuvem, muitas vezes temos $T_{edge\_compute} > T_{cloud\_compute}$, mas como a latência da rede e a incerteza da comunicação podem ser eliminadas, o $T_{total}$ geral é mantido estavelmente baixo.
+Um caminho local elimina apenas a ida e volta à nuvem; transferências e processamento locais continuam, e esse caminho pode não ser mais rápido que o caminho na nuvem.
 
 ---
 
@@ -120,8 +122,8 @@ Onde $N_{zero}$ é o número de pesos zerados e $N_{total}$ é o número total d
 - **Poda Não Estruturada (Unstructured Pruning)**: Método que zera pesos individuais de forma independente. A esparsidade torna-se alta, mas a matriz de pesos apenas se torna uma matriz esparsa (Sparse Matrix), e em CPUs/GPUs comuns o padrão de acesso à memória torna-se irregular, portanto a aceleração esperada pode não ser obtida.
 - **Poda Estruturada (Structured Pruning / Channel Pruning)**: Método que remove inteiramente filtros ou canais das camadas convolucionais. Como a própria dimensão da rede é reduzida, melhorias claras na velocidade de inferência (Speedup) e na redução de memória são obtidas em qualquer hardware.
 
-A taxa de melhoria na velocidade de inferência, $S_{speedup}$, é aproximadamente proporcional à taxa de redução de canal $c$ ($0 < c < 1$) da seguinte maneira (com base na redução do número de operações MAC).
-$$ S_{speedup} \propto \frac{1}{(1 - c)^2} $$
+Em uma convolução, a proporção ideal de operações MAC ao manter frações dos canais de entrada e saída é:
+$$ \frac{MAC_{new}}{MAC_{old}} \approx (1-c_{in})(1-c_{out}) $$
 (*Como o custo computacional das operações de convolução é proporcional ao produto do número de canais de entrada e de saída*)
 
 ---
@@ -199,9 +201,9 @@ graph TD
     E2 -->|"2. Treinamento Local em Dados Privados"| E2
     E3 -->|"2. Treinamento Local em Dados Privados"| E3
     
-    E1 -->|"3. Enviar Apenas as Atualizações de Pesos"| C
-    E2 -->|"3. Enviar Apenas as Atualizações de Pesos"| C
-    E3 -->|"3. Enviar Apenas as Atualizações de Pesos"| C
+    E1 -->|"3. Enviar atualização local do modelo"| C
+    E2 -->|"3. Enviar atualização local do modelo"| C
+    E3 -->|"3. Enviar atualização local do modelo"| C
     
     C -->|"4. Agregar Pesos (FedAvg)"| C
 ```
@@ -267,3 +269,18 @@ Na linha de frente da IoT, onde o mundo físico se funde com o mundo digital, a 
 
 
 
+
+
+## Notas de implementação e fontes primárias
+
+As equações de latência são modelos simplificados. O tempo de ida e volta (RTT) já inclui os dois sentidos; não o some à latência unidirecional sem definir a medição. Inclua filas, retransmissões, pré e pós-processamento e transferências locais, e meça de ponta a ponta no sistema-alvo. Executar na borda não significa automaticamente menor latência.
+
+O exemplo FP32 para INT8 conta apenas o armazenamento dos pesos. A memória em execução também inclui ativações, áreas de trabalho, entradas e, em modelos generativos, um cache KV. Quantização e poda podem alterar precisão, consumo e velocidade; TOPS/W e contagens MAC ideais não são benchmarks de aplicação. Meça o modelo e a carga de trabalho reais. O Raspberry Pi AI Kit não é mais produzido; para novos projetos, a Raspberry Pi recomenda AI HAT+ ou AI HAT+ 2. Modelos para Coral Edge TPU precisam atender aos requisitos do compilador e dos operadores.
+
+O ONNX Runtime pode distribuir nós ou subgrafos entre diferentes Execution Providers. Operações não suportadas podem ser executadas por outro provider, como a CPU. Informar o nome de um provider não garante aceleração do grafo inteiro nem desempenho ideal.
+
+O aprendizado federado mantém os dados de treinamento distribuídos, mas gradientes ou atualizações compartilhados ainda podem revelar informações. Ele, por si só, não garante privacidade. Avalie agregação segura, privacidade diferencial, controles de acesso, registros e o modelo de ameaças. O FedAvg calcula a média dos pesos treinados localmente (ou agrega diferenças em relação ao modelo global); não garante o mesmo resultado do treinamento centralizado.
+
+Os exemplos industriais e médicos são ilustrativos. Ações relacionadas à segurança exigem salvaguardas independentes e validação. Inferência no dispositivo, por si só, não comprova validade clínica nem conformidade com HIPAA, leis de privacidade ou regras para dispositivos médicos; isso depende do uso pretendido e da jurisdição.
+
+Fontes: [Documentação Raspberry Pi AI HAT](https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html), [Documentação Coral](https://coral.ai/docs/), [Arquitetura do ONNX Runtime](https://onnxruntime.ai/docs/reference/high-level-design.html), [NIST: ataques à privacidade em aprendizado federado](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning), [FDA: software como dispositivo médico](https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd), [Otimização de modelos TensorFlow](https://www.tensorflow.org/model_optimization/guide).

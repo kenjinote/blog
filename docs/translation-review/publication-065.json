@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T13:12:33.127819+09:00",
+  "ciRun": 45107388251,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45107388251",
+  "deployedCommit": "03dfaaaf334a4325b57df885aba452561c0ccb12",
+  "allPassed": true,
+  "scope": "Batch 065 Japanese source and twelve translations; live HTTP, metadata, canonical, language/RTL, reciprocal hreflang, six OWASP/MDN references, third-party-cookie assumption, CSP example, and nonce/hash guidance.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/cross-site-scripting-xss-csrf-security/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "thirdPartyCookieAssumption": true,
+        "cspExample": true,
+        "nonceOrHashGuidance": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+    "Exploit examples and Mermaid diagrams were not executed or visually rendered."
+  ]
+}

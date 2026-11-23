@@ -1,7 +1,9 @@
 ---
 title: 'Masa Depan Edge AI dan Pendekatan Implementasi pada Perangkat IoT'
+description: "Tinjauan praktis tentang Edge AI, perangkat keras NPU, kompresi model, ONNX Runtime, pembelajaran federatif, dan batas penerapannya di IoT."
 slug: "edge-ai-future-iot-implementation"
 date: "2026-09-11T05:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -51,18 +53,18 @@ Seperti yang dapat dilihat dari diagram ini, dalam arsitektur Edge AI, putaran d
 Mari kita merumuskan perbedaan latensi antara edge dan cloud. Waktu hingga inferensi keseluruhan sistem selesai, $T_{total}$, dinyatakan sebagai berikut:
 
 **Dalam kasus Cloud AI:**
-$$ T_{total} = T_{network\_up} + T_{cloud\_compute} + T_{network\_down} $$
+$$ T_{total} = T_{pre} + T_{up} + T_{queue} + T_{compute} + T_{down} + T_{post} $$
 
-Di sini, waktu unggah jaringan $T_{network\_up}$ bergantung pada persamaan berikut:
-$$ T_{network\_up} = \frac{D}{B} + RTT $$
-($D$: Ukuran data yang dikirim, $B$: Bandwidth jaringan, $RTT$: Round Trip Time)
+Komponen transfer uplink dan downlink satu arah dapat diperkirakan sebagai berikut:
+$$ T_{up} \approx L_{up} + \frac{D}{B_{up}}, \quad T_{down} \approx L_{down} + \frac{R}{B_{down}} $$
+Di sini $D$ dan $R$ adalah ukuran payload yang dikirim dan diterima; $B_{up}$ dan $B_{down}$ adalah bandwidth efektif; dan $L_{up}$ dan $L_{down}$ adalah latensi propagasi/koneksi satu arah. RTT mencakup perjalanan pulang-pergi, jadi jangan menghitung latensi yang sama dua kali. Model ini belum mencakup antrean, percobaan ulang, overhead protokol, dan pemrosesan lokal.
 
-Ketika ukuran data $D$ besar (seperti gambar resolusi tinggi atau data getaran kontinu) atau di lingkungan di mana bandwidth $B$ sempit, $T_{network\_up}$ akan meningkat drastis, dan tidak peduli seberapa cepat kecepatan inferensi AI itu sendiri $T_{cloud\_compute}$, ia akan menjadi leher botol (bottleneck).
+Payload besar atau bandwidth efektif yang rendah dapat menjadikan komunikasi sebagai bottleneck. Ukur seluruh jalur respons, bukan hanya menyimpulkan latensi dari suku ini.
 
 **Dalam kasus Edge AI:**
-$$ T_{total} \approx T_{edge\_compute} $$
+$$ T_{total} = T_{pre} + T_{local\_transfer} + T_{inference} + T_{post} $$
 
-Dalam Edge AI, karena tidak melibatkan transfer jaringan, $T_{network\_up}$ dan $T_{network\_down}$ menjadi hampir nol (hanya transfer bus lokal). Meskipun kemampuan komputasi perangkat edge lebih rendah daripada cloud, sehingga sering kali $T_{edge\_compute} > T_{cloud\_compute}$, karena penundaan jaringan dan ketidakpastian komunikasi dapat dihilangkan, $T_{total}$ keseluruhan dapat dipertahankan stabil dan rendah.
+Jalur lokal hanya menghilangkan perjalanan bolak-balik ke cloud; transfer dan pemrosesan lokal tetap ada, dan jalur ini belum tentu lebih cepat daripada jalur cloud.
 
 ---
 
@@ -120,8 +122,8 @@ Di mana $N_{zero}$ adalah jumlah bobot yang dijadikan nol, dan $N_{total}$ adala
 - **Pemangkasan Tidak Terstruktur (Unstructured Pruning)**: Metode di mana setiap bobot secara independen dijadikan nol. Meskipun sparsity menjadi tinggi, matriks bobot hanya menjadi matriks jarang (Sparse Matrix), dan pada CPU/GPU umum, pola akses memori menjadi tidak beraturan, sehingga percepatan yang diharapkan mungkin tidak tercapai.
 - **Pemangkasan Terstruktur (Structured Pruning / Channel Pruning)**: Metode yang menghapus seluruh filter atau saluran (channel) dari lapisan konvolusi. Karena dimensi jaringan itu sendiri menyusut, peningkatan kecepatan inferensi yang jelas (Speedup) dan efek pengurangan memori dapat dicapai pada perangkat keras apa pun.
 
-Tingkat peningkatan kecepatan inferensi $S_{speedup}$ secara kasar sebanding dengan tingkat pengurangan saluran $c$ ($0 < c < 1$) sebagai berikut (berdasarkan pengurangan jumlah operasi MAC):
-$$ S_{speedup} \propto \frac{1}{(1 - c)^2} $$
+Untuk konvolusi, rasio jumlah MAC ideal setelah mempertahankan sebagian kanal masukan dan keluaran adalah:
+$$ \frac{MAC_{new}}{MAC_{old}} \approx (1-c_{in})(1-c_{out}) $$
 (*Karena kompleksitas komputasi operasi konvolusi sebanding dengan perkalian jumlah saluran input dan saluran output)
 
 ---
@@ -199,9 +201,9 @@ graph TD
     E2 -->|"2. Pelatihan Lokal pada Data Pribadi"| E2
     E3 -->|"2. Pelatihan Lokal pada Data Pribadi"| E3
     
-    E1 -->|"3. Hanya Kirim Pembaruan Bobot"| C
-    E2 -->|"3. Hanya Kirim Pembaruan Bobot"| C
-    E3 -->|"3. Hanya Kirim Pembaruan Bobot"| C
+    E1 -->|"3. Kirim pembaruan model lokal"| C
+    E2 -->|"3. Kirim pembaruan model lokal"| C
+    E3 -->|"3. Kirim pembaruan model lokal"| C
     
     C -->|"4. Agregasi Bobot (FedAvg)"| C
 ```
@@ -267,3 +269,18 @@ Di garis depan IoT tempat dunia fisik dan dunia digital menyatu, Edge AI tidak d
 
 
 
+
+
+## Catatan implementasi dan sumber primer
+
+Persamaan latensi di atas adalah model sederhana. Round-trip time (RTT) sudah mencakup perjalanan pergi-pulang; jangan menambahkannya ke latensi satu arah tanpa menjelaskan pengukurannya. Sertakan antrean, percobaan ulang, prapemrosesan, pascapemrosesan, dan transfer lokal, lalu ukur dari ujung ke ujung pada sistem sasaran. Pemrosesan di perangkat edge tidak otomatis lebih cepat.
+
+Contoh FP32 ke INT8 hanya menghitung penyimpanan bobot. Memori saat berjalan juga mencakup aktivasi, ruang kerja, input, dan (untuk model generatif) cache KV. Kuantisasi dan pruning dapat mengubah akurasi, daya, dan kecepatan; TOPS/W serta hitungan MAC ideal bukan tolok ukur aplikasi. Ukur model dan beban kerja sebenarnya. Raspberry Pi AI Kit tidak lagi diproduksi; untuk desain baru Raspberry Pi merekomendasikan AI HAT+ atau AI HAT+ 2. Model Coral Edge TPU harus memenuhi persyaratan compiler dan operator.
+
+ONNX Runtime dapat membagi node atau subgraf ke Execution Provider yang berbeda. Operasi yang tidak didukung dapat dijalankan oleh provider lain, misalnya CPU. Menentukan nama provider tidak menjamin seluruh graf dipercepat atau kinerja optimal.
+
+Federated learning menjaga data pelatihan tetap tersebar, tetapi gradien atau pembaruan model yang dibagikan tetap dapat mengungkap informasi. Metode ini sendiri tidak menjamin privasi. Evaluasi agregasi aman, differential privacy, kontrol akses, pencatatan, dan model ancaman. FedAvg merata-ratakan bobot model yang dilatih secara lokal (atau mengagregasi delta relatif terhadap model global); hasilnya tidak dijamin sama dengan pelatihan terpusat.
+
+Contoh industri dan medis hanya ilustrasi. Tindakan yang berdampak pada keselamatan memerlukan pengaman independen dan validasi. Inferensi di perangkat saja tidak membuktikan validitas klinis atau kepatuhan pada HIPAA, undang-undang privasi, maupun regulasi perangkat medis; semuanya bergantung pada tujuan penggunaan dan yurisdiksi.
+
+Sumber: [Dokumentasi Raspberry Pi AI HAT](https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html), [Dokumentasi Coral](https://coral.ai/docs/), [Arsitektur ONNX Runtime](https://onnxruntime.ai/docs/reference/high-level-design.html), [NIST: serangan privasi pada federated learning](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning), [FDA: Software as a Medical Device](https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd), [Optimisasi model TensorFlow](https://www.tensorflow.org/model_optimization/guide).

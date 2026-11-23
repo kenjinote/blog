@@ -18,7 +18,7 @@
     "Added shared OWASP DOM-XSS and CSP guidance and MDN CSRF/Set-Cookie references in all thirteen editions; preserved the existing OWASP XSS and CSRF citations.",
     "Compared the complete Japanese article with all twelve translations; preserved original publication dates and updated lastmod."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/cross-site-scripting-xss-csrf-security/index.en.md": {
       "reviewKind": "ai",
@@ -464,5 +464,11 @@
         "Mermaid rendering and visual output were not tested."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-065.json",
+    "ciRun": 45107388251,
+    "deployedCommit": "03dfaaaf334a4325b57df885aba452561c0ccb12",
+    "allPassed": true
   }
 }

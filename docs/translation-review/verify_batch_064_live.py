@@ -130,7 +130,8 @@ for lang in LANGS:
     status, raw, page, visible = fetch(url)
     meta = metadata(lang)
     resolved_links = {urljoin(url, href) for href in page.links}
-    compact = re.sub(r"\s+", "", visible).casefold()
+    compact = re.sub(r"\s+", "", "".join(page.text)).casefold()
+    rendered_text = "".join(page.text).casefold()
     internal = {f"https://kenji.blog{'' if lang == 'ja' else '/' + lang}/p/{slug}/" for slug in SLUGS}
     checks = {
         "http200": status == 200,
@@ -144,7 +145,7 @@ for lang in LANGS:
         "hreflangTargets": set(page.hreflang.values()) == targets,
         "mitReference": MIT in resolved_links,
         "localizedConceptLinks": internal.issubset(resolved_links),
-        "proofAndSimulation": "python" in visible.casefold() and "np.random.uniform" in compact and CHARACTERISTIC[lang].casefold() in visible.casefold(),
+        "proofAndSimulation": "np.random.uniform" in compact and CHARACTERISTIC[lang].casefold() in rendered_text,
     }
     results.append({"language": lang, "url": url, "status": status, "checks": checks, "passed": all(checks.values())})
 

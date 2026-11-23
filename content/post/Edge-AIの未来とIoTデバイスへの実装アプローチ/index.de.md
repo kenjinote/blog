@@ -1,7 +1,9 @@
 ---
 title: 'Die Zukunft von Edge-AI und Implementierungsansätze für IoT-Geräte'
+description: "Ein Überblick zu Edge AI, NPU-Hardware, Modellkomprimierung, ONNX Runtime, föderiertem Lernen und Grenzen beim Einsatz in IoT-Systemen."
 slug: "edge-ai-future-iot-implementation"
 date: "2026-09-11T05:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -51,18 +53,18 @@ Wie aus diesem Diagramm ersichtlich ist, ist in der Edge-AI-Architektur die Schl
 Lassen Sie uns den Unterschied in der Latenz zwischen Edge und Cloud formulieren. Die Gesamtzeit bis zum Abschluss der Systeminferenz $T_{total}$ wird wie folgt ausgedrückt:
 
 **Bei Cloud-AI:**
-$$ T_{total} = T_{network\_up} + T_{cloud\_compute} + T_{network\_down} $$
+$$ T_{total} = T_{pre} + T_{up} + T_{queue} + T_{compute} + T_{down} + T_{post} $$
 
-Hier hängt die Netzwerk-Upload-Zeit $T_{network\_up}$ von der folgenden Gleichung ab:
-$$ T_{network\_up} = \frac{D}{B} + RTT $$
-($D$: zu übertragende Datengröße, $B$: Netzwerkbandbreite, $RTT$: Round Trip Time)
+Die Übertragungsanteile für den einfachen Hin- und Rückweg lassen sich näherungsweise so angeben:
+$$ T_{up} \approx L_{up} + \frac{D}{B_{up}}, \quad T_{down} \approx L_{down} + \frac{R}{B_{down}} $$
+Hier sind $D$ und $R$ die gesendeten und zurückgegebenen Datenmengen, $B_{up}$ und $B_{down}$ die effektiven Bandbreiten sowie $L_{up}$ und $L_{down}$ die Einweg-Übertragungs-/Verbindungsverzögerungen. Die RTT ist ein Hin- und Rückwegmaß und darf nicht doppelt gezählt werden. Warteschlangen, Wiederholungen, Protokollaufwand und lokale Verarbeitung sind nicht enthalten.
 
-Wenn die Datengröße $D$ groß ist (hochauflösende Bilder, kontinuierliche Vibrationsdaten usw.) oder die Bandbreite $B$ schmal ist, steigt $T_{network\_up}$ dramatisch an und wird zum Engpass, egal wie schnell die Inferenzgeschwindigkeit der KI selbst $T_{cloud\_compute}$ ist.
+Große Datenmengen oder geringe effektive Bandbreiten können die Kommunikation zum Engpass machen. Messen Sie den gesamten Antwortpfad, statt die Latenz aus diesem Term allein abzuleiten.
 
 **Bei Edge-AI:**
-$$ T_{total} \approx T_{edge\_compute} $$
+$$ T_{total} = T_{pre} + T_{local\_transfer} + T_{inference} + T_{post} $$
 
-Da Edge-AI keine Netzwerkübertragung beinhaltet, gehen $T_{network\_up}$ und $T_{network\_down}$ gegen Null (nur lokale Busübertragung). Obwohl die Rechenleistung des Edge-Geräts der der Cloud unterlegen ist und oft $T_{edge\_compute} > T_{cloud\_compute}$ gilt, bleibt das gesamte $T_{total}$ stabil niedrig, da Netzwerkverzögerungen und Kommunikationsunsicherheiten beseitigt werden können.
+Ein lokaler Pfad vermeidet nur den Umweg über die Cloud; lokale Übertragung und Verarbeitung bleiben bestehen, und der Pfad muss nicht schneller sein als die Cloud-Variante.
 
 ---
 
@@ -120,8 +122,8 @@ Hier ist $N_{zero}$ die Anzahl der auf Null gesetzten Gewichte und $N_{total}$ d
 - **Unstrukturiertes Pruning (Unstructured Pruning)**: Eine Methode, bei der einzelne Gewichte unabhängig voneinander auf Null gesetzt werden. Die Sparsity ist hoch, aber da die Gewichtsmatrix nur zu einer spärlichen Matrix (Sparse Matrix) wird und die Speicherzugriffsmuster auf Standard-CPUs/GPUs unregelmäßig werden, wird die erwartete Beschleunigung möglicherweise nicht erreicht.
 - **Strukturiertes Pruning (Structured Pruning / Channel Pruning)**: Eine Methode, bei der ganze Filter oder Kanäle der Faltungsschicht gelöscht werden. Da die Dimension des Netzwerks selbst reduziert wird, kann auf jeder Hardware eine deutliche Verbesserung der Inferenzgeschwindigkeit (Speedup) und der Speicherreduzierung erzielt werden.
 
-Die Rate der Inferenzgeschwindigkeitsverbesserung $S_{speedup}$ verhält sich bei einer Kanalreduktionsrate $c$ ($0 < c < 1$) grob proportional wie folgt (basierend auf der Reduzierung der Anzahl von MAC-Operationen).
-$$ S_{speedup} \propto \frac{1}{(1 - c)^2} $$
+Bei Faltungen lautet das ideale Verhältnis der MAC-Anzahl nach Beibehaltung von Anteilen der Ein- und Ausgabekanäle:
+$$ \frac{MAC_{new}}{MAC_{old}} \approx (1-c_{in})(1-c_{out}) $$
 (※Da die Rechenkomplexität der Faltungsoperation proportional zum Produkt aus der Anzahl der Eingangskanäle und Ausgangskanäle ist)
 
 ---
@@ -199,9 +201,9 @@ graph TD
     E2 -->|"2. Lokales Training mit privaten Daten"| E2
     E3 -->|"2. Lokales Training mit privaten Daten"| E3
     
-    E1 -->|"3. Nur Gewichtsaktualisierungen senden"| C
-    E2 -->|"3. Nur Gewichtsaktualisierungen senden"| C
-    E3 -->|"3. Nur Gewichtsaktualisierungen senden"| C
+    E1 -->|"3. Lokales Modellupdate senden"| C
+    E2 -->|"3. Lokales Modellupdate senden"| C
+    E3 -->|"3. Lokales Modellupdate senden"| C
     
     C -->|"4. Gewichte aggregieren (FedAvg)"| C
 ```
@@ -267,3 +269,18 @@ An vorderster Front des IoT, wo physische und digitale Welten verschmelzen, wird
 
 
 
+
+
+## Hinweise zur Umsetzung und Primärquellen
+
+Die Latenzgleichungen sind vereinfachte Modelle. Die Round-Trip-Time (RTT) umfasst bereits einen Hin- und Rückweg; sie darf nicht ohne klare Definition zusätzlich zur Einweglatenz addiert werden. Warteschlangen, Wiederholungen, Vor- und Nachverarbeitung sowie lokale Transfers gehören in eine Ende-zu-Ende-Messung auf dem Zielsystem. Edge-Ausführung ist nicht automatisch schneller.
+
+Das FP32-zu-INT8-Beispiel zählt nur den Speicherbedarf der Gewichte. Zur Laufzeit kommen Aktivierungen, Arbeitsbereiche, Ein- und Ausgaben sowie bei generativen Modellen ein KV-Cache hinzu. Quantisierung und Pruning können Genauigkeit, Leistung und Energiebedarf verändern; TOPS/W und ideale MAC-Zahlen sind keine Anwendungsbenchmarks. Das Raspberry Pi AI Kit wird nicht mehr produziert; für neue Designs empfiehlt Raspberry Pi AI HAT+ oder AI HAT+ 2. Coral-Edge-TPU-Modelle müssen Compiler- und Operatoranforderungen erfüllen.
+
+ONNX Runtime kann Knoten oder Teilgraphen verschiedenen Execution Providern zuweisen. Nicht unterstützte Operationen können auf einen anderen Provider wie die CPU zurückfallen. Ein Providername garantiert weder Beschleunigung des ganzen Graphen noch optimale Leistung.
+
+Beim föderierten Lernen bleiben Trainingsdaten zwar verteilt, doch geteilte Gradienten oder Modellupdates können weiterhin Informationen offenlegen. Das Verfahren allein garantiert keinen Datenschutz. Bewerten Sie sichere Aggregation, Differential Privacy, Zugriffskontrollen, Protokollierung und das Bedrohungsmodell. FedAvg mittelt lokal trainierte Modellgewichte (oder aggregiert Deltas relativ zum globalen Modell); es garantiert nicht dasselbe Ergebnis wie zentrales Training.
+
+Die Beispiele zu Industrie und Medizin sind illustrativ. Sicherheitsrelevante Aktionen erfordern unabhängige Schutzmechanismen und Validierung. On-Device-Inferenz allein belegt weder klinische Validität noch die Einhaltung von HIPAA, Datenschutzgesetzen oder Medizinprodukterecht; maßgeblich sind Zweckbestimmung und Rechtsraum.
+
+Quellen: [Raspberry Pi AI HAT-Dokumentation](https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html), [Coral-Dokumentation](https://coral.ai/docs/), [ONNX Runtime-Architektur](https://onnxruntime.ai/docs/reference/high-level-design.html), [NIST: Datenschutzangriffe auf föderiertes Lernen](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning), [FDA: Software als Medizinprodukt](https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd), [TensorFlow-Modelloptimierung](https://www.tensorflow.org/model_optimization/guide).

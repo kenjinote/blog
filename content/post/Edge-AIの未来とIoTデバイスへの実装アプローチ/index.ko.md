@@ -1,7 +1,9 @@
 ---
 title: 'Edge AI의 미래와 IoT 디바이스 구현 접근법'
+description: "Edge AI, NPU 하드웨어, 모델 압축, ONNX Runtime, 연합 학습 및 IoT 배포 시 고려할 한계를 설명합니다."
 slug: "edge-ai-future-iot-implementation"
 date: "2026-09-11T05:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -51,18 +53,18 @@ graph TD
 에지와 클라우드에서의 레이턴시 차이를 정식화해 보겠습니다. 시스템 전체의 추론 완료까지 걸리는 시간 $T_{total}$은 다음과 같이 표현됩니다.
 
 **클라우드 AI의 경우:**
-$$ T_{total} = T_{network\_up} + T_{cloud\_compute} + T_{network\_down} $$
+$$ T_{total} = T_{pre} + T_{up} + T_{queue} + T_{compute} + T_{down} + T_{post} $$
 
-여기서 네트워크 업로드 시간 $T_{network\_up}$은 다음 식에 의존합니다.
-$$ T_{network\_up} = \frac{D}{B} + RTT $$
-($D$: 전송하는 데이터 크기, $B$: 네트워크 대역폭, $RTT$: 왕복 지연 시간)
+단순화한 단방향 업로드·다운로드 전송 시간은 다음과 같이 근사할 수 있습니다.
+$$ T_{up} \approx L_{up} + \frac{D}{B_{up}}, \quad T_{down} \approx L_{down} + \frac{R}{B_{down}} $$
+여기서 $D$와 $R$은 전송 및 반환 데이터 크기, $B_{up}$과 $B_{down}$은 유효 대역폭, $L_{up}$과 $L_{down}$은 단방향 전파/연결 지연입니다. RTT는 왕복 지표이므로 같은 지연을 두 번 계산하지 마세요. 대기열, 재전송, 프로토콜 오버헤드, 로컬 처리는 이 모델에서 제외됩니다.
 
-데이터 크기 $D$가 크거나(고해상도 이미지나 연속적인 진동 데이터 등) 대역폭 $B$가 좁은 환경에서는 $T_{network\_up}$이 극적으로 증가하여, AI 자체의 추론 속도 $T_{cloud\_compute}$가 아무리 빠르더라도 병목 현상이 발생합니다.
+전송량이 크거나 유효 대역폭이 낮으면 통신이 병목이 될 수 있습니다. 이 항만으로 지연을 추정하지 말고 전체 응답 경로를 측정하세요.
 
 **Edge AI의 경우:**
-$$ T_{total} \approx T_{edge\_compute} $$
+$$ T_{total} = T_{pre} + T_{local\_transfer} + T_{inference} + T_{post} $$
 
-Edge AI에서는 네트워크 전송이 수반되지 않으므로 $T_{network\_up}$과 $T_{network\_down}$은 거의 0(로컬 버스 전송만 발생)이 됩니다. 에지 디바이스의 컴퓨팅 능력은 클라우드에 비해 떨어지기 때문에 $T_{edge\_compute} > T_{cloud\_compute}$가 되는 경우가 많지만, 네트워크의 지연과 통신의 불확실성을 배제할 수 있으므로 종합적인 $T_{total}$은 안정적으로 낮게 유지됩니다.
+로컬 경로는 클라우드 왕복만 없앨 뿐 로컬 전송과 처리는 남아 있으며, 클라우드 경로보다 빠르다는 보장은 없습니다.
 
 ---
 
@@ -120,8 +122,8 @@ $$ \text{Sparsity} (S) = \frac{N_{zero}}{N_{total}} \times 100 \text{ (\%)} $$
 - **비구조화 가지치기 (Unstructured Pruning)**: 개별 가중치를 독립적으로 0으로 만드는 기법. Sparsity는 높아지지만 가중치 행렬이 희소 행렬(Sparse Matrix)이 될 뿐이므로, 일반적인 CPU/GPU에서는 메모리 접근 패턴이 불규칙해져 기대만큼의 속도 향상을 얻지 못할 수 있습니다.
 - **구조화 가지치기 (Structured Pruning / Channel Pruning)**: 합성곱 층의 필터나 채널을 통째로 삭제하는 기법. 신경망의 차원 자체가 축소되기 때문에 어떤 하드웨어 상에서도 명확한 추론 속도 향상(Speedup)과 메모리 절감 효과를 얻을 수 있습니다.
 
-추론 속도 향상률 $S_{speedup}$은 채널 축소율 $c$ ($0 < c < 1$)에 대해 대략 다음과 같이 비례합니다(MAC 연산 횟수 감소에 기반).
-$$ S_{speedup} \propto \frac{1}{(1 - c)^2} $$
+합성곱에서 입력 및 출력 채널을 각각 일부 유지할 때 이상적인 MAC 연산량 비율은 다음과 같습니다.
+$$ \frac{MAC_{new}}{MAC_{old}} \approx (1-c_{in})(1-c_{out}) $$
 (※ 합성곱 연산의 계산량은 입력 채널 수와 출력 채널 수의 곱에 비례하기 때문)
 
 ---
@@ -199,9 +201,9 @@ graph TD
     E2 -->|"2. 프라이빗 데이터를 이용한 로컬 학습"| E2
     E3 -->|"2. 프라이빗 데이터를 이용한 로컬 학습"| E3
     
-    E1 -->|"3. 가중치 업데이트만 전송"| C
-    E2 -->|"3. 가중치 업데이트만 전송"| C
-    E3 -->|"3. 가중치 업데이트만 전송"| C
+    E1 -->|"3. 로컬 모델 업데이트 전송"| C
+    E2 -->|"3. 로컬 모델 업데이트 전송"| C
+    E3 -->|"3. 로컬 모델 업데이트 전송"| C
     
     C -->|"4. 가중치 집계 (FedAvg)"| C
 ```
@@ -268,3 +270,18 @@ Edge AI는 단순한 '클라우드의 보완 기술'이라는 위치에서 벗�
 
 
 
+
+
+## 구현 시 유의사항과 1차 자료
+
+지연 시간 식은 단순화한 모델입니다. 왕복 시간(RTT)에는 송신과 응답이 모두 포함되므로 측정 정의 없이 단방향 지연에 다시 더하면 안 됩니다. 대기열, 재전송, 전·후처리, 로컬 전송을 포함해 대상 시스템의 종단 간 지연을 측정하세요. 엣지에서 실행한다고 항상 더 빨라지는 것은 아닙니다.
+
+FP32에서 INT8로 바꾸는 예시는 가중치 저장 공간만 계산합니다. 실행 중 메모리에는 활성값, 작업 공간, 입력, 생성형 모델의 KV 캐시도 포함됩니다. 양자화와 가지치기는 정확도, 전력, 속도에 영향을 줄 수 있습니다. TOPS/W와 이론적 MAC 수는 애플리케이션 벤치마크가 아니므로 실제 모델과 작업 부하를 측정하세요. Raspberry Pi AI Kit는 생산이 중단되었으며, 새 설계에는 AI HAT+ 또는 AI HAT+ 2를 권장합니다. Coral Edge TPU 모델은 컴파일러와 지원 연산자 조건을 충족해야 합니다.
+
+ONNX Runtime은 노드나 하위 그래프를 여러 Execution Provider에 나누어 할당할 수 있습니다. 지원되지 않는 연산은 CPU 등 다른 provider로 넘어갈 수 있습니다. provider 이름을 지정해도 전체 그래프의 가속이나 최적 성능이 보장되지는 않습니다.
+
+연합 학습은 학습 데이터를 분산된 채로 유지하지만, 공유된 그래디언트나 모델 업데이트로 정보가 노출될 수 있습니다. 이것만으로 개인정보 보호가 보장되지는 않습니다. 보안 집계, 차등 개인정보 보호, 접근 제어, 로그, 위협 모델을 평가하세요. FedAvg는 로컬 학습 모델 가중치를 평균 내거나 전역 모델 기준의 차이를 집계합니다. 중앙 집중식 학습과 같은 결과를 보장하지 않습니다.
+
+산업 및 의료 사례는 예시입니다. 안전 관련 동작에는 독립적인 안전장치와 검증이 필요합니다. 기기 내 추론만으로 임상적 유효성이나 HIPAA, 개인정보 법률, 의료기기 규정 준수가 입증되지는 않습니다. 적용 요건은 사용 목적과 관할 지역에 따라 달라집니다.
+
+자료: [Raspberry Pi AI HAT 문서](https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html), [Coral 문서](https://coral.ai/docs/), [ONNX Runtime 아키텍처](https://onnxruntime.ai/docs/reference/high-level-design.html), [NIST: 연합 학습의 개인정보 공격](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning), [FDA: 의료기기 소프트웨어](https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd), [TensorFlow 모델 최적화](https://www.tensorflow.org/model_optimization/guide).

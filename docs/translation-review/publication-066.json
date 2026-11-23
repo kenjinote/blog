@@ -1,0 +1,288 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T13:12:40.675701+09:00",
+  "ciRun": 45107388251,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45107388251",
+  "deployedCommit": "03dfaaaf334a4325b57df885aba452561c0ccb12",
+  "allPassed": true,
+  "scope": "Batch 066 Japanese source and twelve translations; live HTTP, metadata, canonical, language/RTL, reciprocal hreflang, six Unicode/MDN/IETF references, Unicode code-space, emoji history, and JavaScript code-unit example.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/history-of-unicode-encoding/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "primaryReferences": true,
+        "codeSpace": true,
+        "emojiHistory": true,
+        "codeUnitExample": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "Mermaid diagrams were structurally checked but not rendered or visually inspected."
+  ]
+}

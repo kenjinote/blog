@@ -1,7 +1,9 @@
 ---
 title: "Edge AI的未來與IoT裝置的實作方法"
+description: "介紹 Edge AI、NPU 硬體、模型壓縮、ONNX Runtime、聯邦學習，以及 IoT 部署時的限制。"
 slug: "edge-ai-future-iot-implementation"
 date: "2026-09-11T05:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -51,18 +53,18 @@ graph TD
 讓我們將邊緣與雲端在延遲上的差異公式化。整個系統完成推論所需的時間 $T_{total}$ 可以表示如下。
 
 **雲端AI的情況:**
-$$ T_{total} = T_{network\_up} + T_{cloud\_compute} + T_{network\_down} $$
+$$ T_{total} = T_{pre} + T_{up} + T_{queue} + T_{compute} + T_{down} + T_{post} $$
 
-這裡的網路上傳時間 $T_{network\_up}$ 依賴於以下公式。
-$$ T_{network\_up} = \frac{D}{B} + RTT $$
-($D$: 傳送的數據大小, $B$: 網路頻寬, $RTT$: 往返時間)
+上行與下行的單向傳輸時間可簡化估算如下：
+$$ T_{up} \approx L_{up} + \frac{D}{B_{up}}, \quad T_{down} \approx L_{down} + \frac{R}{B_{down}} $$
+其中，$D$ 與 $R$ 分別是送出與返回的資料量，$B_{up}$ 與 $B_{down}$ 是有效頻寬，$L_{up}$ 與 $L_{down}$ 是單向傳播／連線延遲。RTT 是往返時間，不要重複計算同一段延遲。此模型未納入排隊、重試、協定負荷與本機處理。
 
-當數據大小 $D$ 很大（如高解析度影像或連續的震動數據等），或者在頻寬 $B$ 較窄的環境中，$T_{network\_up}$ 會急遽增加，此時無論AI本身的推論速度 $T_{cloud\_compute}$ 有多快，都會成為瓶頸。
+資料量大或有效頻寬低時，通訊可能成為主要瓶頸。應測量完整的回應路徑，不要只從這一項推斷延遲。
 
 **Edge AI的情況:**
-$$ T_{total} \approx T_{edge\_compute} $$
+$$ T_{total} = T_{pre} + T_{local\_transfer} + T_{inference} + T_{post} $$
 
-因為Edge AI不涉及網路傳輸，所以 $T_{network\_up}$ 和 $T_{network\_down}$ 幾乎為零（僅有本機匯流排的傳輸）。雖然邊緣裝置的運算能力不如雲端，使得 $T_{edge\_compute} > T_{cloud\_compute}$ 的情況很常見，但因為排除了網路延遲和通訊的不確定性，整體的 $T_{total}$ 能穩定保持在較低的水準。
+本機路徑只省去雲端往返；本機傳輸與處理仍然存在，而且不一定比雲端路徑更快。
 
 ---
 
@@ -120,8 +122,8 @@ $$ \text{Sparsity} (S) = \frac{N_{zero}}{N_{total}} \times 100 \text{ (\%)} $$
 - **非結構化剪枝 (Unstructured Pruning)**: 獨立將個別權重歸零的手法。雖然Sparsity會變高，但權重矩陣只是變成稀疏矩陣（Sparse Matrix），在一般的CPU/GPU上由於記憶體存取模式變得不規則，有時無法獲得預期的加速效果。
 - **結構化剪枝 (Structured Pruning / Channel Pruning)**: 將卷積層的濾波器或通道整個刪除的手法。因為網路的維度本身被縮小了，所以在任何硬體上都能獲得明確的推論速度提升（Speedup）與記憶體縮減效果。
 
-推論速度的提升率 $S_{speedup}$，相對於通道縮減率 $c$（$0 < c < 1$），大致成以下比例（基於MAC運算次數的減少）。
-$$ S_{speedup} \propto \frac{1}{(1 - c)^2} $$
+對於卷積，保留一定比例的輸入與輸出通道後，理想的 MAC 運算量比例如下：
+$$ \frac{MAC_{new}}{MAC_{old}} \approx (1-c_{in})(1-c_{out}) $$
 （※因為卷積運算的計算量與輸入通道數和輸出通道數的乘積成正比）
 
 ---
@@ -199,9 +201,9 @@ graph TD
     E2 -->|"2. 對私有數據進行本機訓練"| E2
     E3 -->|"2. 對私有數據進行本機訓練"| E3
     
-    E1 -->|"3. 僅傳送權重更新"| C
-    E2 -->|"3. 僅傳送權重更新"| C
-    E3 -->|"3. 僅傳送權重更新"| C
+    E1 -->|"3. 傳送本機模型更新"| C
+    E2 -->|"3. 傳送本機模型更新"| C
+    E3 -->|"3. 傳送本機模型更新"| C
     
     C -->|"4. 聚合權重 (FedAvg)"| C
 ```
@@ -268,3 +270,18 @@ Edge AI已經從單純的「雲端輔助技術」，進化成為決定IoT系統�
 
 
 
+
+
+## 實作注意事項與一手資料
+
+上述延遲公式是簡化模型。往返時間（RTT）已包含去程與回程；未定義測量方式時，不要再把它加到單向延遲。應將排隊、重試、前後處理及本機傳輸納入，並在目標系統測量端到端延遲。在邊緣執行不代表一定更快。
+
+FP32 轉 INT8 的範例只計算權重儲存量。執行時記憶體還包括啟動值、工作區、輸入，以及生成式模型的 KV 快取。量化與剪枝可能影響精度、功耗及速度；TOPS/W 與理論 MAC 數不是應用程式效能測試。請測量實際模型與工作負載。Raspberry Pi AI Kit 已停產；Raspberry Pi 建議新設計採用 AI HAT+ 或 AI HAT+ 2。Coral Edge TPU 模型必須符合編譯器與運算子支援條件。
+
+ONNX Runtime 可將不同節點或子圖分派給不同 Execution Provider。不支援的運算可能回退到 CPU 等其他 provider。指定 provider 名稱不保證整個計算圖都會加速或達到最佳效能。
+
+聯邦學習讓訓練資料維持分散，但分享的梯度或模型更新仍可能洩漏資訊。它本身無法保證隱私。請評估安全聚合、差分隱私、存取控制、日誌與威脅模型。FedAvg 對本機訓練後的模型權重取平均（或聚合相對於全域模型的差值）；它不保證與集中式訓練有相同結果。
+
+工業與醫療案例僅供說明。涉及安全的控制需要獨立安全機制與驗證。僅在裝置上推論並不能證明臨床有效性，也不會自動符合 HIPAA、隱私法或醫療器材規範；要求取決於預期用途與司法管轄區。
+
+資料：[Raspberry Pi AI HAT 文件](https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html)、[Coral 文件](https://coral.ai/docs/)、[ONNX Runtime 架構](https://onnxruntime.ai/docs/reference/high-level-design.html)、[NIST：聯邦學習中的隱私攻擊](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning)、[FDA：醫療器材軟體](https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd)、[TensorFlow 模型最佳化](https://www.tensorflow.org/model_optimization/guide)。

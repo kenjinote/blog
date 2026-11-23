@@ -17,7 +17,7 @@
     "Added primary/current references for Unicode Emoji UTS #51, Unicode text segmentation UAX #29, and IETF RFC 3629, while preserving the Unicode FAQ and Rob Pike history source.",
     "Compared Japanese with all twelve translations, verified the numeric code-space/byte examples and Mermaid graph structures, and updated lastmod."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/history-of-unicode-encoding/index.en.md": {
       "reviewKind": "ai",
@@ -451,5 +451,11 @@
         "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-066.json",
+    "ciRun": 45107388251,
+    "deployedCommit": "03dfaaaf334a4325b57df885aba452561c0ccb12",
+    "allPassed": true
   }
 }

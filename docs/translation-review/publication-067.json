@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T13:09:37.018314+09:00",
+  "ciRun": 45107388251,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45107388251",
+  "deployedCommit": "03dfaaaf334a4325b57df885aba452561c0ccb12",
+  "allPassed": true,
+  "scope": "Batch 067 Japanese source and twelve translations; thirteen live pages checked for HTTP status, canonical, language/RTL, title, description, source references, reciprocal hreflang, and article text.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/edge-ai-npu-architecture/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "sourceLinks": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "articleText": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "No device model inference or performance benchmark was performed.",
+    "Mermaid structure was checked in source but the diagram was not visually inspected."
+  ]
+}

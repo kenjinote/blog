@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "batch": "068",
+  "checkedAt": "2026-11-23",
+  "allStaticChecksPassed": true,
+  "languages": {
+    "ja": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "en": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "zh-cn": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "es": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "ko": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "pt": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "zh-tw": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "hi": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "fr": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "de": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "ar": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "ru": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    },
+    "id": {
+      "h2": 10,
+      "h3": 8,
+      "fencedBlocks": 3,
+      "pythonAstParsed": true,
+      "mermaidBlocks": 2,
+      "mermaidEdges": 6,
+      "displayEquations": 10,
+      "primarySources": 6
+    }
+  },
+  "commonPrimarySources": [
+    "https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html",
+    "https://coral.ai/docs/",
+    "https://onnxruntime.ai/docs/reference/high-level-design.html",
+    "https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning",
+    "https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd",
+    "https://www.tensorflow.org/model_optimization/guide"
+  ],
+  "sourceAccessNotes": [
+    {
+      "url": "https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html",
+      "verified": "Official documentation opened with web tool; direct urllib returned HTTP 403."
+    },
+    {
+      "url": "https://coral.ai/docs/",
+      "verified": "HTTP 200 and official documentation opened."
+    },
+    {
+      "url": "https://onnxruntime.ai/docs/reference/high-level-design.html",
+      "verified": "HTTP 200 and official documentation opened."
+    },
+    {
+      "url": "https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning",
+      "verified": "Official NIST page opened with web tool; direct urllib had a local certificate-verification error."
+    },
+    {
+      "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd",
+      "verified": "FDA page opened with web tool; direct urllib returned HTTP 404 in this environment."
+    },
+    {
+      "url": "https://www.tensorflow.org/model_optimization/guide",
+      "verified": "HTTP 200 and official documentation opened."
+    }
+  ],
+  "tests": [
+    {
+      "command": "python scripts/test_multilingual.py",
+      "result": "passed: 10 tests; 19 pages"
+    },
+    {
+      "command": "python scripts/test_translation_reviews.py",
+      "result": "passed: 6 tests"
+    },
+    {
+      "command": "python scripts/test_math_rendering.py",
+      "result": "passed: 1 test"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    }
+  ],
+  "limitations": [
+    "AI review only; no human or native-speaker certification.",
+    "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+    "Mermaid structures were checked but not rendered or visually inspected.",
+    "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+    "No medical, industrial-safety, privacy, or regulatory audit was performed."
+  ],
+  "publicationPending": true
+}

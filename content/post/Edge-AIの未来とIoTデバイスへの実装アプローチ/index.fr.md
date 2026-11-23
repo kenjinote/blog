@@ -1,7 +1,9 @@
 ---
 title: "L'avenir de l'Edge AI et les approches d'implémentation pour les appareils IoT"
+description: "Présentation de l’Edge AI, du matériel NPU, de la compression des modèles, d’ONNX Runtime, de l’apprentissage fédéré et de leurs limites en IoT."
 slug: "edge-ai-future-iot-implementation"
 date: "2026-09-11T05:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -51,18 +53,18 @@ Comme on peut le voir sur ce diagramme, dans l'architecture de l'Edge AI, la bou
 Formulons la différence de latence entre l'edge et le cloud. Le temps total jusqu'à l'achèvement de l'inférence du système complet $T_{total}$ s'exprime comme suit :
 
 **Dans le cas de l'IA Cloud :**
-$$ T_{total} = T_{network\_up} + T_{cloud\_compute} + T_{network\_down} $$
+$$ T_{total} = T_{pre} + T_{up} + T_{queue} + T_{compute} + T_{down} + T_{post} $$
 
-Où le temps de téléchargement réseau $T_{network\_up}$ dépend de la formule suivante :
-$$ T_{network\_up} = \frac{D}{B} + RTT $$
-($D$ : taille des données transmises, $B$ : bande passante du réseau, $RTT$ : Round Trip Time ou temps d'aller-retour)
+Les composantes approximatives de transfert montant et descendant à sens unique sont :
+$$ T_{up} \approx L_{up} + \frac{D}{B_{up}}, \quad T_{down} \approx L_{down} + \frac{R}{B_{down}} $$
+Ici, $D$ et $R$ désignent les volumes envoyés et reçus, $B_{up}$ et $B_{down}$ les débits effectifs, et $L_{up}$ et $L_{down}$ les délais de propagation/connexion à sens unique. Le RTT mesure un aller-retour : ne comptez pas deux fois le même délai. Le modèle omet les files d’attente, retransmissions, surcharges de protocole et traitements locaux.
 
-Lorsque la taille des données $D$ est grande (comme des images à haute résolution ou des données de vibration continues) ou que la bande passante $B$ est étroite, $T_{network\_up}$ augmente de manière drastique et devient un goulot d'étranglement, quelle que soit la vitesse de l'inférence de l'IA elle-même $T_{cloud\_compute}$.
+Un volume élevé ou un débit effectif faible peut rendre la communication dominante. Mesurez tout le parcours de réponse au lieu de déduire la latence de ce seul terme.
 
 **Dans le cas de l'Edge AI :**
-$$ T_{total} \approx T_{edge\_compute} $$
+$$ T_{total} = T_{pre} + T_{local\_transfer} + T_{inference} + T_{post} $$
 
-Dans l'Edge AI, n'impliquant pas de transfert réseau, $T_{network\_up}$ et $T_{network\_down}$ sont presque nuls (uniquement le transfert du bus local). Étant donné que la capacité de calcul de l'appareil edge est inférieure à celle du cloud, il arrive souvent que $T_{edge\_compute} > T_{cloud\_compute}$, mais comme les retards du réseau et les incertitudes de communication peuvent être éliminés, le temps total global $T_{total}$ est maintenu de manière stable à un niveau bas.
+Un parcours local évite seulement l’aller-retour vers le cloud ; le transfert et le traitement locaux subsistent, et ce parcours n’est pas forcément plus rapide que la solution cloud.
 
 ---
 
@@ -120,8 +122,8 @@ Ici, $N_{zero}$ est le nombre de poids mis à zéro et $N_{total}$ est le nombre
 - **Élagage non structuré (Unstructured Pruning)** : Une méthode qui met à zéro les poids individuels de manière indépendante. La Sparsity est élevée, mais comme la matrice des poids devient simplement une matrice creuse (Sparse Matrix), les CPU/GPU généraux peuvent avoir des schémas d'accès mémoire irréguliers, ce qui peut ne pas donner l'accélération attendue.
 - **Élagage structuré (Structured Pruning / Channel Pruning)** : Une méthode qui supprime des filtres ou des canaux entiers d'une couche convolutive. Puisque la dimension du réseau elle-même est réduite, on obtient une amélioration évidente de la vitesse d'inférence (Speedup) et un effet de réduction de mémoire sur n'importe quel matériel.
 
-Le taux d'amélioration de la vitesse d'inférence $S_{speedup}$ est à peu près proportionnel au taux de réduction des canaux $c$ ($0 < c < 1$) selon la formule suivante (basée sur la diminution du nombre d'opérations MAC).
-$$ S_{speedup} \propto \frac{1}{(1 - c)^2} $$
+Pour une convolution, le rapport idéal du nombre de MAC après conservation de fractions des canaux d’entrée et de sortie est :
+$$ \frac{MAC_{new}}{MAC_{old}} \approx (1-c_{in})(1-c_{out}) $$
 (※La complexité de l'opération de convolution étant proportionnelle au produit du nombre de canaux d'entrée et du nombre de canaux de sortie)
 
 ---
@@ -199,9 +201,9 @@ graph TD
     E2 -->|"2. Entraînement Local sur Données Privées"| E2
     E3 -->|"2. Entraînement Local sur Données Privées"| E3
     
-    E1 -->|"3. Envoyer Uniquement les Mises à Jour des Poids"| C
-    E2 -->|"3. Envoyer Uniquement les Mises à Jour des Poids"| C
-    E3 -->|"3. Envoyer Uniquement les Mises à Jour des Poids"| C
+    E1 -->|"3. Envoyer la mise à jour locale du modèle"| C
+    E2 -->|"3. Envoyer la mise à jour locale du modèle"| C
+    E3 -->|"3. Envoyer la mise à jour locale du modèle"| C
     
     C -->|"4. Agréger les Poids (FedAvg)"| C
 ```
@@ -267,3 +269,18 @@ De plus, grâce à des approches d'apprentissage distribué comme le Federated L
 
 
 
+
+
+## Notes de mise en œuvre et sources primaires
+
+Les équations de latence sont des modèles simplifiés. Le temps aller-retour (RTT) couvre déjà les deux sens ; il ne faut pas l’ajouter à une latence à sens unique sans préciser la mesure. Incluez les files d’attente, retransmissions, prétraitements, post-traitements et transferts locaux, puis mesurez le parcours complet sur le système cible. L’exécution en périphérie n’est pas automatiquement plus rapide.
+
+L’exemple FP32 vers INT8 ne compte que le stockage des poids. La mémoire d’exécution comprend aussi les activations, espaces de travail, entrées et, pour les modèles génératifs, un cache KV. La quantification et l’élagage peuvent modifier la précision, la consommation et la vitesse ; TOPS/W et les nombres MAC théoriques ne sont pas des mesures applicatives. Le Raspberry Pi AI Kit n’est plus produit ; Raspberry Pi recommande AI HAT+ ou AI HAT+ 2 pour les nouveaux projets. Les modèles Coral Edge TPU doivent respecter les exigences du compilateur et des opérateurs.
+
+ONNX Runtime peut répartir des nœuds ou sous-graphes entre plusieurs Execution Providers. Les opérations non prises en charge peuvent être exécutées par un autre fournisseur, par exemple le CPU. Le nom d’un fournisseur ne garantit ni l’accélération de tout le graphe ni des performances optimales.
+
+L’apprentissage fédéré garde les données d’entraînement distribuées, mais les gradients ou mises à jour partagés peuvent encore révéler des informations. Il ne garantit pas à lui seul la confidentialité. Évaluez l’agrégation sécurisée, la confidentialité différentielle, les contrôles d’accès, les journaux et le modèle de menace. FedAvg calcule une moyenne de modèles entraînés localement (ou agrège les écarts par rapport au modèle global) ; il ne garantit pas le même résultat qu’un entraînement centralisé.
+
+Les exemples industriels et médicaux sont illustratifs. Les actions liées à la sécurité exigent des protections indépendantes et une validation. L’inférence sur l’appareil ne suffit pas à établir une validité clinique ni la conformité à HIPAA, aux lois sur la vie privée ou à la réglementation des dispositifs médicaux ; cela dépend de l’usage prévu et du pays.
+
+Sources : [Documentation Raspberry Pi AI HAT](https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html), [Documentation Coral](https://coral.ai/docs/), [Architecture d’ONNX Runtime](https://onnxruntime.ai/docs/reference/high-level-design.html), [NIST : attaques contre la confidentialité en apprentissage fédéré](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning), [FDA : logiciel dispositif médical](https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd), [Optimisation des modèles TensorFlow](https://www.tensorflow.org/model_optimization/guide).

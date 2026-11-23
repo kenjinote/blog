@@ -1,7 +1,9 @@
 ---
 title: 'The Future of Edge AI and Implementation Approaches for IoT Devices'
+description: "A practical overview of edge AI, NPU hardware, model compression, ONNX Runtime, federated learning, and deployment limits for IoT systems."
 slug: "edge-ai-future-iot-implementation"
 date: "2026-09-11T05:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -51,18 +53,18 @@ As can be seen from this diagram, in the Edge AI architecture, the loop from the
 Let's formulate the difference in latency between the edge and the cloud. The time $T_{total}$ until the inference of the entire system is completed is expressed as follows.
 
 **For Cloud AI:**
-$$ T_{total} = T_{network\_up} + T_{cloud\_compute} + T_{network\_down} $$
+$$ T_{total} = T_{pre} + T_{up} + T_{queue} + T_{compute} + T_{down} + T_{post} $$
 
-Here, the network upload time $T_{network\_up}$ depends on the following formula:
-$$ T_{network\_up} = \frac{D}{B} + RTT $$
-($D$: Data size to transmit, $B$: Network bandwidth, $RTT$: Round Trip Time)
+Approximate the one-way uplink and downlink transfer components as:
+$$ T_{up} \approx L_{up} + \frac{D}{B_{up}}, \quad T_{down} \approx L_{down} + \frac{R}{B_{down}} $$
+Here, $D$ and $R$ are the transmitted and returned payload sizes; $B_{up}$ and $B_{down}$ are effective bandwidths; and $L_{up}$ and $L_{down}$ are one-way propagation/connection delays. RTT is a round-trip measure, so do not count the same delay twice. The model omits queues, retries, protocol overhead, and local processing.
 
-If the data size $D$ is large (such as high-resolution images or continuous vibration data), or if the bandwidth $B$ is narrow, $T_{network\_up}$ increases dramatically, becoming a bottleneck no matter how fast the AI inference speed $T_{cloud\_compute}$ itself is.
+A large payload or low effective bandwidth can make communication dominant. Measure the full response path rather than infer latency from this term alone.
 
 **For Edge AI:**
-$$ T_{total} \approx T_{edge\_compute} $$
+$$ T_{total} = T_{pre} + T_{local\_transfer} + T_{inference} + T_{post} $$
 
-Since Edge AI does not involve network transfers, $T_{network\_up}$ and $T_{network\_down}$ become nearly zero (only local bus transfers). Because the computing power of edge devices is inferior to that of the cloud, it is often the case that $T_{edge\_compute} > T_{cloud\_compute}$. However, by eliminating network delays and communication uncertainty, the overall $T_{total}$ is kept stably low.
+A local path removes the cloud round trip only; it still includes local transfer and processing, and it may not be faster than the cloud path.
 
 ---
 
@@ -120,8 +122,8 @@ Here, $N_{zero}$ is the number of weights set to zero, and $N_{total}$ is the to
 - **Unstructured Pruning**: A technique to set individual weights to zero independently. While sparsity becomes high, the weight matrix simply becomes a Sparse Matrix. Since memory access patterns become irregular on typical CPUs/GPUs, it may not achieve the expected speedup.
 - **Structured Pruning (Channel Pruning)**: A technique to remove entire filters or channels of convolutional layers. Because the dimensions of the network themselves are reduced, clear inference speedups and memory reduction effects can be achieved on any hardware.
 
-The speedup ratio $S_{speedup}$ is roughly proportional to the channel reduction rate $c$ ($0 < c < 1$) as follows (based on the reduction in MAC operations):
-$$ S_{speedup} \propto \frac{1}{(1 - c)^2} $$
+For convolution, the ideal MAC-count ratio after retaining fractions of the input and output channels is:
+$$ \frac{MAC_{new}}{MAC_{old}} \approx (1-c_{in})(1-c_{out}) $$
 (*This is because the computational complexity of convolution operations is proportional to the product of the number of input channels and output channels.)
 
 ---
@@ -199,9 +201,9 @@ graph TD
     E2 -->|"2. Local Training on Private Data"| E2
     E3 -->|"2. Local Training on Private Data"| E3
     
-    E1 -->|"3. Send Weight Updates Only"| C
-    E2 -->|"3. Send Weight Updates Only"| C
-    E3 -->|"3. Send Weight Updates Only"| C
+    E1 -->|"3. Send Local Model Update"| C
+    E2 -->|"3. Send Local Model Update"| C
+    E3 -->|"3. Send Local Model Update"| C
     
     C -->|"4. Aggregate Weights (FedAvg)"| C
 ```
@@ -267,3 +269,18 @@ At the forefront of IoT, where the physical and digital worlds merge, Edge AI wi
 
 
 
+
+
+## Implementation notes and primary sources
+
+The latency equations are simplified accounting models. Round-trip time (RTT) already covers a round trip; do not add it to one-way latency without defining the measurement. Include queues, retries, preprocessing, postprocessing, and local transfers, then measure end-to-end latency on the target system. Edge execution does not automatically have lower latency.
+
+The FP32-to-INT8 size example counts weight storage only. Runtime memory also includes activations, workspaces, inputs, and (for generative models) a KV cache. Quantization and pruning can change accuracy, power, and speed; TOPS/W and ideal MAC counts are not application benchmarks. Measure the actual model and workload. The Raspberry Pi AI Kit is no longer in production; Raspberry Pi recommends AI HAT+ or AI HAT+ 2 for new designs. Coral Edge TPU models must meet the compiler and operator requirements.
+
+ONNX Runtime can assign different graph nodes or subgraphs to different Execution Providers, with unsupported operations falling back to another provider such as CPU. A provider name does not guarantee full-graph acceleration or optimal performance.
+
+Federated learning keeps training data distributed by design, but shared gradients or model updates can still reveal information. It does not by itself guarantee privacy. Assess secure aggregation, differential privacy, access controls, logging, and the relevant threat model. FedAvg averages locally trained model weights (or aggregates deltas relative to the global model); it does not guarantee the same result as centralized training.
+
+Industrial control and medical examples are illustrative. Safety-related actions need independent safeguards and validation. On-device inference alone does not establish clinical validity or compliance with HIPAA, privacy laws, or medical-device regulations; requirements depend on intended use and jurisdiction.
+
+Sources: [Raspberry Pi AI HAT documentation](https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html), [Coral documentation](https://coral.ai/docs/), [ONNX Runtime architecture](https://onnxruntime.ai/docs/reference/high-level-design.html), [NIST: privacy attacks in federated learning](https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning), [FDA: Software as a Medical Device](https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd), [TensorFlow model optimization](https://www.tensorflow.org/model_optimization/guide).

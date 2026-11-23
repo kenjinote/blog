@@ -7,6 +7,7 @@ from xml.etree import ElementTree
 import argparse
 import json
 import re
+import time
 import urllib.error
 import urllib.request
 
@@ -126,7 +127,14 @@ for lang in LANGS:
     url = next((u for u in targets if (lang == "ja" and re.search(r"https://kenji\.blog/p/", u)) or (lang != "ja" and f"/{lang}/p/" in u)), None)
     if not url:
         raise SystemExit(f"Missing {lang} hreflang page")
-    status, raw, page, visible = fetch(url)
+    for attempt in range(3):
+        try:
+            status, raw, page, visible = fetch(url)
+            break
+        except urllib.error.HTTPError as error:
+            if error.code != 503 or attempt == 2:
+                raise
+            time.sleep(2 ** attempt)
     meta = metadata(lang)
     checks = {
         "http200": status == 200,
@@ -139,9 +147,9 @@ for lang in LANGS:
         "hreflangCount": len(page.hreflang) == 14,
         "hreflangTargets": set(page.hreflang.values()) == targets,
         "primaryReferences": all(ref in page.links for ref in REFERENCES),
-        "codeSpace": "U+10FFFF" in visible and "1114112" in re.sub(r"\D", "", visible),
-        "emojiHistory": all(value in visible for value in ("722", "114", "608")),
-        "codeUnitExample": '"😂".length' in visible,
+        "codeSpace": "U+10FFFF" in "".join(page.text) and "1114112" in re.sub(r"\D", "", "".join(page.text)),
+        "emojiHistory": all(value in "".join(page.text) for value in ("722", "114", "608")),
+        "codeUnitExample": '"😂".length' in "".join(page.text),
     }
     results.append({"language": lang, "url": url, "status": status, "checks": checks, "passed": all(checks.values())})
 

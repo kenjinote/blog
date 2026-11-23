@@ -7805,6 +7805,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-067.json",
       "evidenceHash": "bccf5eecec8ecc447e7402ed1393b2e8c780e1ba4050650272a5d41b39785d89"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.en.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "3c52b473e79a60b8cafb3c128ed24bd8407662cba21da67d50d8b1e6e55ba9af",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "be6b8a8053450b7d581e3aefaa0322fda77fd21cff04119e9d5675e6fc08bb0d"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.zh-cn.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "a732ea7814014f13bf8638e1a511a57e8bfefaa6a9e7c35be2a6444a83ceb8ad",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "09777f92e8d7e2d72a9032e9aa4347d31848f08004f8bf9098af7ed7f9f89dc8"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.es.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "28cadd77bb45497759ed8028b5949ea37d345b7bc03dc054863b1f00fdb6ee0b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "d63866c820d7f6c1691815413b038bb9985968dc15b5b19eda542c5e2fd35586"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.ko.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "a3822df01ad50e9dde40dc5e70420a8b201cd85248430f5a63a0458d0330f841",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "15e9360e8aa781a33320edc41cfd60b8577bda536b4a618ac7ab0810d6445aeb"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.pt.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "36d4d5fb1bfc41c6dc1afe273b40a3596b98ad0657e35aa0096e54d29b3f307f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "6140a35044c54e35be6cce74d174a4994461facd9b1fadd1dad6dc4cf956af94"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.zh-tw.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "c5cdfd4f03cc8d84712996ca80f295023a4ec1fa1ec8f551a8d2cf69709ed445",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "1d8fbc05520abcf73849ff6b2eeef2fbb6448aa65b2fb98e6eb930060a11acf7"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.hi.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "cea94aef07660ce4e5620a624e16647737989891b871f34f22b056df3e85d88f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "f0123daadb15652223af1a8cdaca322d026a7afcb9828f5f0b1a83ffc05ca414"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.fr.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "dfc9464d8cab566c2cf0cf925eaa1b334f61ecb7079d76538c0a390cfe9e6ea6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "b7de11eabb739111363b922b76704821c9991c0b262a5d99a4aaf1fda2f2d40e"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.de.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "f5f09ea1f166712d52b529ce017529f7e357522c694ee75e82684622095da78f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "abc38821cdde31fa8bad650b1c3d9ef466c7fcc2d52a5d8f431d00336e2007b7"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.ar.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "f97dbd95f48c0c910e85ce826154e5371312ac2c6ad795b150984bdc291a6a58",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "fdbe2b3f31b65e031109bd5770c3591b41d53ebc412d05037893ef41d141bcc8"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.ru.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "8fc6cadf7c4069949bcb0d28dc2c94ceb9d2b3f9f3edfcd89e0fd0961f418065",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "5dc7508f67c649ee55be00a7809797a4b68f8cf31a37c8264a85c8d58eef861e"
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.id.md": {
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "cba15703add8e1e790388695f4650709455f8f7deddc57df641087e4b97efdc3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-068.json",
+      "evidenceHash": "b8354eb04d5c111cb13616fb2dea3ca1d489cded9e3228c7e27a99aa3bf27aa7"
     }
   }
 }

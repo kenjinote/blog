@@ -24,7 +24,7 @@
   ],
   "validation": "docs/translation-review/validation-067.json",
   "scope": "Complete Japanese source and twelve translations. Meaning, terminology, product distinctions, optimization limits, links, and one Mermaid diagram checked. AI review only; publication is still pending.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/edge-ai-npu-architecture/index.en.md": {
       "reviewKind": "ai",
@@ -489,5 +489,11 @@
     "The Mermaid diagram was structurally compared but not rendered or visually inspected.",
     "No local Hugo full build was run; run the repository CI build and verify all thirteen rendered pages after deployment.",
     "Vendor product capabilities and documentation can change; model, runtime, hardware, and OS compatibility should be rechecked for a concrete deployment."
-  ]
+  ],
+  "publication": {
+    "record": "docs/translation-review/publication-067.json",
+    "ciRun": 45107388251,
+    "deployedCommit": "03dfaaaf334a4325b57df885aba452561c0ccb12",
+    "allPassed": true
+  }
 }

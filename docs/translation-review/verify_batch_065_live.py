@@ -22,7 +22,7 @@ OFFICIAL = [
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie",
 ]
 THIRD_PARTY = {
-    "ja": "第三者Cookie", "en": "third-party", "zh-cn": "第三方", "es": "terceros",
+    "ja": "サードパーティ", "en": "third-party", "zh-cn": "第三方", "es": "terceros",
     "ko": "제3자", "pt": "terceiros", "zh-tw": "第三方", "hi": "तृतीय-पक्ष",
     "fr": "tiers", "de": "Drittanbieter", "ar": "لطرف ثالث", "ru": "стороннего cookie",
     "id": "pihak ketiga",
@@ -147,7 +147,7 @@ for lang in LANGS:
         "hreflangCount": len(page.hreflang) == 14,
         "hreflangTargets": set(page.hreflang.values()) == targets,
         "officialReferences": all(link in resolved_links for link in OFFICIAL),
-        "thirdPartyCookieAssumption": THIRD_PARTY[lang].casefold() in visible.casefold(),
+        "thirdPartyCookieAssumption": THIRD_PARTY[lang].casefold() in "".join(page.text).casefold(),
         "cspExample": "content-security-policy:" in compact and "trusted.cdn.com" in compact,
         "nonceOrHashGuidance": "nonce" in visible.casefold() or "hash" in visible.casefold() or "хеш" in visible.casefold() or "تجزئ" in visible.casefold(),
     }

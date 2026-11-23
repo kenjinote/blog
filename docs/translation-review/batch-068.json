@@ -1,0 +1,490 @@
+{
+  "version": 1,
+  "article": "Edge AIの未来とIoTデバイスへの実装アプローチ",
+  "frozenSourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html",
+    "https://coral.ai/docs/",
+    "https://onnxruntime.ai/docs/reference/high-level-design.html",
+    "https://www.nist.gov/blogs/cybersecurity-insights/privacy-attacks-federated-learning",
+    "https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd",
+    "https://www.tensorflow.org/model_optimization/guide"
+  ],
+  "findings": [
+    "Replaced the upload formula that added RTT to one-way transfer time with separate uplink/downlink terms, queueing, processing, and an end-to-end measurement caveat.",
+    "Updated Coral and Raspberry Pi product guidance; the Raspberry Pi AI Kit is discontinued, newer AI HAT variants have different accelerator/precision specifications, and TOPS values are not app benchmarks.",
+    "Limited the FP32-to-INT8 memory equation to weight storage and qualified quantization/pruning effects by model, runtime, hardware, accuracy, and measured workload.",
+    "Explained ONNX Runtime Execution Provider graph/subgraph assignment and possible fallback rather than promising whole-model optimal acceleration.",
+    "Corrected federated-learning claims: model updates can reveal information; FedAvg aggregates local model weights or deltas and does not itself guarantee privacy or centralized-training equivalence.",
+    "Qualified industrial control, agricultural automation, medical-device validity, HIPAA, and regulatory claims; added six common primary-source links across all language editions."
+  ],
+  "validation": "docs/translation-review/validation-068.json",
+  "scope": "Full Japanese source and twelve translations. Meaning, terminology, equations, Python example, Mermaid structures, and references checked; localized implementation notes added in every translation.",
+  "publicationPending": true,
+  "reviews": {
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "3c52b473e79a60b8cafb3c128ed24bd8407662cba21da67d50d8b1e6e55ba9af",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "a732ea7814014f13bf8638e1a511a57e8bfefaa6a9e7c35be2a6444a83ceb8ad",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "28cadd77bb45497759ed8028b5949ea37d345b7bc03dc054863b1f00fdb6ee0b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "a3822df01ad50e9dde40dc5e70420a8b201cd85248430f5a63a0458d0330f841",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "36d4d5fb1bfc41c6dc1afe273b40a3596b98ad0657e35aa0096e54d29b3f307f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "c5cdfd4f03cc8d84712996ca80f295023a4ec1fa1ec8f551a8d2cf69709ed445",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "cea94aef07660ce4e5620a624e16647737989891b871f34f22b056df3e85d88f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "dfc9464d8cab566c2cf0cf925eaa1b334f61ecb7079d76538c0a390cfe9e6ea6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "f5f09ea1f166712d52b529ce017529f7e357522c694ee75e82684622095da78f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "f97dbd95f48c0c910e85ce826154e5371312ac2c6ad795b150984bdc291a6a58",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "8fc6cadf7c4069949bcb0d28dc2c94ceb9d2b3f9f3edfcd89e0fd0961f418065",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    },
+    "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.md",
+      "sourceHash": "6f964520036569d97452cf86826f0503de197376a69147065cc82eeacd8c8409",
+      "translationHash": "cba15703add8e1e790388695f4650709455f8f7deddc57df641087e4b97efdc3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete edition. Corrected absolute claims about guaranteed latency, privacy, model feasibility, model compression, and safety; added localized implementation qualifications."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Edge AI, NPU/TPU, Coral Edge TPU, Raspberry Pi AI Kit/AI HAT, TOPS/W, quantization, pruning, ONNX Runtime Execution Providers, federated learning, and medical-device terms against the source and official documentation."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Aligned the cloud/edge latency accounting equations and uplink/downlink terms across all thirteen editions; replaced a general pruning speedup claim with an ideal MAC-count ratio and clarified the FedAvg model-weight average and privacy limits."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed the Python example in all thirteen editions with Python AST and checked the inference calls, input example, and both Mermaid graphs' edge structure. Code was not executed and diagrams were not rendered."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed six primary-source links are present in every edition: Raspberry Pi AI HAT documentation, Coral documentation, ONNX Runtime graph architecture, NIST federated-learning privacy attacks, FDA medical-device software, and TensorFlow model optimization. Official sources were opened during review; some direct local HTTP checks were blocked or failed TLS."
+        }
+      },
+      "summary": "Compared the entire edition against the Japanese source and applied localized corrections/implementation notes for latency accounting, current accelerator status, model memory and optimization limits, ONNX Runtime graph assignment, federated-learning privacy/FedAvg, and medical/safety claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+        "Mermaid structures were checked but not rendered or visually inspected.",
+        "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+        "No medical, industrial-safety, privacy, or regulatory audit was performed."
+      ]
+    }
+  },
+  "limitations": [
+    "AI review only; no human or native-speaker certification.",
+    "The ONNX Runtime example was syntax-parsed but not executed; no model/device benchmark or power measurement was performed.",
+    "Mermaid structures were checked but not rendered or visually inspected.",
+    "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
+    "No medical, industrial-safety, privacy, or regulatory audit was performed."
+  ]
+}
