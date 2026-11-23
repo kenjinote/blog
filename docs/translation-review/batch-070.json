@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "article": "Excelカレンダーテンプレート（日本の祝日対応）",
+  "frozenSourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://support.microsoft.com/en-us/excel/functions/webservice-function",
+    "https://excelapi.org/en/docs/datetime/holiday-list/",
+    "https://excelapi.org/docs/datetime/holiday/"
+  ],
+  "findings": [
+    "Removed the duplicated injected 2026 date from all 13 editions, preserving original publication date 2024-05-01 and recording 2026-11-23 as lastmod.",
+    "Inspected XLSX formulas: Japanese holiday dates and names are retrieved through Excel WEBSERVICE from third-party ExcelAPI. Replaced all embedded http://api.excelapi.org URLs with HTTPS.",
+    "Added locale-specific compatibility notes explaining internet/external-service dependency and Microsoft’s documented limitation that WEBSERVICE does not return results in Excel for Mac.",
+    "Checked the 200 formula cells overall: 100 holiday-list and 100 holiday-name WEBSERVICE formulas (shared formula ranges expanded), plus calendar date formulas. Confirmed all 12 translations, localized references, and workbook target. No recalculation or live API request was made."
+  ],
+  "validation": "docs/translation-review/validation-070.json",
+  "scope": "Read the full Japanese article and all twelve available translations and inspected XLSX formulas. Compared meaning, terminology, date metadata, links, endpoints, and calendar formulas. Editions are intentionally concise.",
+  "publicationPending": true,
+  "reviews": {
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "99ead364316610793105ab7fca476e10d5ba050ca3fb69490c094da0678542b8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "b0badfc6b58afeb6bf9bfabb564fd0945ca776a78c3cd5f11c199ecefeb6719a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "575a4a3ebfda33fd526980821bc9152115b1d4f060a18f31b3737df06cbe9c0e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "d3dcb518ea4e342641604eebd42379650a5889131865e7000cf5e4a3926fc266",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "2758f4e4d4a7d0ad29ec113920c2db1862ad10f64ef85b647cd82195768012de",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "1476518e5b62d2612dd7f4914bb6c1219765aa87ced0ca3352cff56ce15244e2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "0977e19ab9037754cc29dfe1e10c032b5ddcf30b8374d69b397e58256852a763",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "55b563ae213611c0f1065919d28f816792a33b2a5422bcfa72b80851440fb79c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "f370955f119ad3b72d9f158ef0d66ea6ce5e83c6e82f1feb4960ff960f2ca9a3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "63ca05064a751eedca3a0799913732a03a46199211f689299b0347ed4482af03",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "a583116b64a4bf62c056d670a0374ea927bd501427c00ba6aa8aa23c84a4af04",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+      "translationHash": "a49ff335d97086ce68535421320aaa382903b458a59a264e8fdd05d6f7c7136a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this full localized edition. Checked title, description, instructions, downloadable workbook, Japanese-holiday scope, and compatibility/data-source note for equivalent meaning."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked locale terminology for Excel calendar/template, Japanese holidays, year/month inputs, WEBSERVICE, Windows, Excel for Mac, external API, and download."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical derivation appears. Inspected date and holiday formulas structurally in workbook XML; spreadsheet recalculation was not performed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Inspected the workbook shared-formula ranges, including 100 holiday-list and 100 holiday-name WEBSERVICE formula cells. Upgraded their embedded API URLs from HTTP to HTTPS. Did not execute formulas in Excel."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+        }
+      },
+      "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Workbook formulas were inspected statically; no Excel/LibreOffice calculation or live API retrieval was performed.",
+        "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
+      ]
+    }
+  }
+}

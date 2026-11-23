@@ -1,8 +1,8 @@
 ---
 title: '【免费下载】支持节假日自动显示的Excel日历模板'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Excelの日历模板（休日対応版）"
 date: 2024-05-01T00:15:57+09:00
+lastmod: 2026-11-23
 tags: ["Excel", "日历", "模板", "节假日"]
 draft: false
 image: "img.webp"
@@ -16,3 +16,7 @@ description: '我们免费提供一款实用的Excel日历模板，只需输入�
 
 请下载使用。
 [日历.xlsx](カレンダー.xlsx)
+
+## 兼容性与数据来源
+
+更改年份时，此模板会通过 Excel 的 `WEBSERVICE` 函数从第三方 ExcelAPI 服务获取日本节假日。使用时需要联网，能否获取数据及数据更新取决于该服务是否可用。Microsoft 说明此函数依赖 Windows 功能，因此在 Excel for Mac 中不会返回结果。请参阅 Microsoft 的 [WEBSERVICE 函数说明](https://support.microsoft.com/en-us/excel/functions/webservice-function)和[节假日列表 API 文档](https://excelapi.org/en/docs/datetime/holiday-list/)。

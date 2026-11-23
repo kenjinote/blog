@@ -1,8 +1,8 @@
 ---
 title: '【تنزيل مجاني】قالب تقويم Excel يدعم العرض التلقائي للعطلات الرسمية'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Excelのتقويمقالب（休日対応版）"
 date: 2024-05-01T00:15:57+09:00
+lastmod: 2026-11-23
 tags: ["Excel", "تقويم", "قالب", "عطلة"]
 draft: false
 image: "img.webp"
@@ -16,3 +16,7 @@ description: 'نقدم تنزيلًا مجانيًا لقالب تقويم Excel
 
 يرجى تنزيله واستخدامه.
 [التقويم.xlsx](カレンダー.xlsx)
+
+## التوافق ومصدر البيانات
+
+عند تغيير السنة، يجلب هذا القالب العطلات اليابانية باستخدام دالة `WEBSERVICE` في Excel عبر خدمة ExcelAPI خارجية. يتطلب ذلك اتصالًا بالإنترنت، ويعتمد جلب البيانات وتحديثها على توفر الخدمة. توضح Microsoft أن هذه الدالة تعتمد على ميزات Windows، ولذلك لا تعرض نتائج في Excel for Mac. راجع [توثيق Microsoft لدالة WEBSERVICE](https://support.microsoft.com/en-us/excel/functions/webservice-function) و[توثيق واجهة قائمة العطلات](https://excelapi.org/en/docs/datetime/holiday-list/).

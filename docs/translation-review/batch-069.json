@@ -32,7 +32,7 @@
   ],
   "validation": "docs/translation-review/validation-069.json",
   "scope": "Full Japanese source and all twelve translations. Compared complete available editions for meaning, terminology, applicable mathematics, code, and links. Non-English editions are intentionally concise and do not reproduce every derivation/subheading one-to-one.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.en.md": {
       "reviewKind": "ai",
@@ -490,5 +490,11 @@
         "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-069.json",
+    "ciRun": 45120588984,
+    "deployedCommit": "9071c32a49b8cd670dee4a078a9d0fe458fd3652",
+    "allPassed": true
   }
 }

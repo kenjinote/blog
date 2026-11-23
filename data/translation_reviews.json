@@ -7925,6 +7925,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-068.json",
       "evidenceHash": "b8354eb04d5c111cb13616fb2dea3ca1d489cded9e3228c7e27a99aa3bf27aa7"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.en.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "0ae3532d38a500d04fee85fccd4804751ec314bb5a5d63e9ad05894b0c396eb7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "3f5a210e3bfb312e062082d00ba9fb689839df920372c2241b6d103c735d5cf8"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.zh-cn.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "91aa057e3226adf73ce999c3038cbc8771d6da2d6385405744f6a1de3f9b7d0c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "8e297a236f2cec777bcfc9f5a2f14dc9e2018bbd5b09395c488709855e61b68b"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.es.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "0dc7707b80b97f491eecb8f04b403b9387396474462df38e3a0dcaf0772eb33b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "fffae65166b48eff989b6d8a66eeba4839a45ad4e67a932c198a4cb7ac9cb072"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ko.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "100a0486c281ff56210c5b342c4c61578ea403a24f3eeaa4fe09e6707c95212e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "017105c1bc3948bfd1b5f5fab114f0e9084d27100c888fc4aa26c3ae554aaca4"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.pt.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "0ad9671d496278432139d22a82eed7f96844820f3538604ac3098902eee83c79",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "2226f98e09f900cb79b891a2476b7f1684c7f2f68b7bec0f9ce9d766090112f9"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.zh-tw.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "0e7380e3aca614f6ffadfe059fa6201c693a943c82e3e8d569fcd295b7f1ca81",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "9e2e32e15cca5ef60fb85d9bcc1e4c8867a43d51ffddd9cef0ee0f25e6c5c7e9"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.hi.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "5752570fe1ed93ecd378fe224ea3b689784a08aba8ca911618191ea7dd0b41b1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "65c40881a2051168b2971e20ac4d3cf8aedfd8eb1594c508951e7205202b798c"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.fr.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "554e5cca15b4f24d1449133cff329a97dab3c43aae1f972f0ab8becaac99bec1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "cc5482e8140862968e7667f6b61161c58638a76f81babdcd6abfea3cea3cb621"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.de.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "432cd33fa4a1a304eabf5daca520f4e9bce119f8e97b9ab19484fd7e42a9bcab",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "be3c860b30060b60c806e4f724b4f62cedd0c5f52fe5882fc752d94c22a50293"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ar.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "363667a87dd5c9d10f1d0f5b052312576fce70efe29047a906342650c78338e2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "e9f31d9c4fac1af31f5b3bc2d6acfd0307359e074c14605b7d19ba1e79d0543f"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ru.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "66b4cbebcebc96859edd634dcea6d153e192712d8265c3a1776ae25d86bd49ae",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "7b0bcdc954357a7741b083cc5d147dae417f894963404a96b93dade80603deb0"
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.id.md": {
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "913f65086794222c30c37f3d2e6818c96bb855a8d037b7cc1bf136b637ed3143",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-069.json",
+      "evidenceHash": "86106cf7a15375f1f926bfde5e7f21f77aa1ce535eca7632ab7cc7c55014485b"
     }
   }
 }

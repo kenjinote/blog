@@ -1,8 +1,8 @@
 ---
 title: '[Téléchargement Gratuit] Modèle de calendrier Excel avec affichage automatique des jours fériés'
-date: "2026-09-24T19:44:38+09:00"
 slug: "ExcelのCalendrierModèle（休日対応版）"
 date: 2024-05-01T00:15:57+09:00
+lastmod: 2026-11-23
 tags: ["Excel", "Calendrier", "Modèle", "Jours Fériés"]
 draft: false
 image: "img.webp"
@@ -16,3 +16,7 @@ J'ai créé un modèle Excel où, en entrant l'année et le mois, les jours fér
 
 N'hésitez pas à le télécharger et à l'utiliser.
 [Calendrier.xlsx](カレンダー.xlsx)
+
+## Compatibilité et source des données
+
+Lorsque vous changez l’année, ce modèle récupère les jours fériés japonais au moyen de la fonction Excel `WEBSERVICE` et du service externe ExcelAPI. Une connexion Internet est nécessaire ; la récupération et les mises à jour dépendent de la disponibilité de ce service. Microsoft précise que cette fonction repose sur des fonctionnalités de Windows et ne renvoie aucun résultat dans Excel pour Mac. Consultez la [documentation Microsoft sur WEBSERVICE](https://support.microsoft.com/en-us/excel/functions/webservice-function) et la [documentation de l’API des jours fériés](https://excelapi.org/en/docs/datetime/holiday-list/).

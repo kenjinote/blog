@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "batch": 70,
+  "article": "content/post/Excelのカレンダーテンプレート（休日対応版）",
+  "reviewedAt": "2026-11-23",
+  "files": {
+    "ja": {
+      "bytes": 1683,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/ja-jp/office/webservice-%E9%96%A2%E6%95%B0-0546a35a-ecc6-4739-aed7-c0b7ce1562c4"
+      ]
+    },
+    "en": {
+      "bytes": 1418,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    },
+    "zh-cn": {
+      "bytes": 1264,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    },
+    "es": {
+      "bytes": 1552,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    },
+    "ko": {
+      "bytes": 1537,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    },
+    "pt": {
+      "bytes": 1472,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    },
+    "zh-tw": {
+      "bytes": 1285,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    },
+    "hi": {
+      "bytes": 2968,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    },
+    "fr": {
+      "bytes": 1665,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    },
+    "de": {
+      "bytes": 1546,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    },
+    "ar": {
+      "bytes": 1800,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    },
+    "ru": {
+      "bytes": 2202,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    },
+    "id": {
+      "bytes": 1460,
+      "date": "2024-05-01T00:15:57+09:00",
+      "lastmod": "2026-11-23",
+      "headings": 2,
+      "referenceUrls": [
+        "https://excelapi.org/en/docs/datetime/holiday-list/",
+        "https://support.microsoft.com/en-us/excel/functions/webservice-function"
+      ]
+    }
+  },
+  "referencesConceptuallyMatched": true,
+  "workbook": {
+    "sheets": [
+      "カレンダー",
+      "休日リスト"
+    ],
+    "formulaCount": 200,
+    "holidayListFormulaCount": 100,
+    "holidayNameFormulaCount": 100,
+    "allServiceFormulaUrlsHttps": true,
+    "calculationPerformed": false,
+    "externalRequestFormulaCount": 200
+  },
+  "result": "passed",
+  "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25"
+}

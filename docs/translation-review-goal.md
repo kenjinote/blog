@@ -940,4 +940,7 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 
 
 
-- 2026-11-23 Batch069 MPC記事（校閲・修正完了、公開検査待ち）：日本語＋12言語版の全文を照合し、脅威モデル・出力漏えい・BGW閾値・Beaver/SPDZ前処理・OT生成前提・ガーブルド回路の性能断定、医療データ法規とデンマークオークションの断定を修正。OTの歴史をRabin 1981とEven–Goldreich–Lempel 1985に区別し、Yao 1982、BGW、SPDZ等の一次資料を追加。全13版の章1–9、lastmod、16参照URL集合、同一Pythonコードを検査。コードはAST解析・実行し合計2,550、平均850.00、母分散3,266.67を確認。多言語10テスト、翻訳台帳6テスト、数式1テスト、静的検査とdiff check成功。短縮翻訳は詳細導出が一対一ではないことを証跡に明記。AI校閲のみ、人・ネイティブ校閲、実分散MPC実装、図の視覚確認なし。台帳は公開後確認完了まで未変更（current 792、未確認12,240、人確認0）。証跡`docs/translation-review/batch-069.json`、検証`docs/translation-review/validation-069.json`。CI・公開後確認待ち。全記事goal継続。
+
+- 2026-11-23 Batch069公開確認・台帳反映完了。CI run 45120588984／commit `9071c32a49b8cd670dee4a078a9d0fe458fd3652` 成功。MPC記事の日本語＋12翻訳すべてでHTTP 200、canonical、lang/RTL、タイトル/description、16参照、hreflang、本文、コード表示を確認。公開レシート`docs/translation-review/publication-069.json`。12翻訳をCodex (AI)として台帳記録。台帳 current 804、未確認12,228、人確認0。
+
+- 2026-11-23 Batch070: Excelカレンダーテンプレートの日本語原文＋12翻訳と配布XLSXを全文照合。13版の誤った重複公開日を除き、原公開日2024-05-01を復元、lastmodを2026-11-23に設定。Excel WEBSERVICEによる外部祝日取得がWindows依存でMac版Excelでは動作しない点と、ネット接続/API稼働依存を13言語で案内。ブック内の200数式セルを静的点検し、外部API URLをHTTPSに統一。多言語10テスト、翻訳台帳6テスト、JSON証跡と12レビューのソース/翻訳ハッシュ検査成功。AIのみ、Excel再計算・ライブAPI取得・人/ネイティブ話者校閲なし。証跡`docs/translation-review/batch-070.json`、検証`docs/translation-review/validation-070.json`。台帳登録と公開CI・公開後確認待ち。全記事goal継続。
