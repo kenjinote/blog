@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "batch": 69,
+  "articleBundle": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits",
+  "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+  "languageOrder": [
+    "ja",
+    "en",
+    "zh-cn",
+    "es",
+    "ko",
+    "pt",
+    "zh-tw",
+    "hi",
+    "fr",
+    "de",
+    "ar",
+    "ru",
+    "id"
+  ],
+  "allThirteenFilesPresent": true,
+  "topLevelSectionsOneThroughNinePresent": true,
+  "pythonCodeHash": "ba122a8ac4b3bbbf427b7c03ac5200890a9a6ed0e856b9039fba77c5f3d2e55b",
+  "pythonAstParsedAndExecutedAllLocales": true,
+  "expectedExampleOutputs": {
+    "sum": 2550,
+    "mean": 850.0,
+    "populationVariance": 3266.6666666666665
+  },
+  "commonReferenceURLs": [
+    "https://crypto.stanford.edu/pbc/notes/crypto/ot.html",
+    "https://doi.org/10.1007/S00145-015-9214-4",
+    "https://doi.org/10.1109/SFCS.1982.38",
+    "https://doi.org/10.1145/3705004",
+    "https://encrypto.de/papers/KS08XOR.pdf",
+    "https://eprint.iacr.org/2005/187.pdf",
+    "https://eprint.iacr.org/2020/492",
+    "https://luca-giuzzi.unibs.it/corsi/Support/papers-cryptography/SigningContracts.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5990440/",
+    "https://research.google/pubs/practical-secure-aggregation-for-federated-learning-on-user-held-data/",
+    "https://security.googleblog.com/2019/12/better-password-protections-in-chrome.html",
+    "https://support.apple.com/guide/security/password-monitoring-sec78e79fc3b/web",
+    "https://thebwwc.org/wage-gap-studies",
+    "https://www.acsu.buffalo.edu/~mblanton/cse715/sugar-beet-auction.pdf",
+    "https://www.cs.virginia.edu/~evans/pubs/ec2015/halfgates.pdf",
+    "https://www.usenix.org/conference/usenixsecurity23/presentation/kwong"
+  ],
+  "commonReferenceCount": 16,
+  "referenceSetsIdentical": true,
+  "localeMetrics": {
+    "ja": {
+      "characters": 50592,
+      "h2": 10,
+      "h3": 19,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 3,
+      "displayEquations": 13,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "en": {
+      "characters": 67926,
+      "h2": 10,
+      "h3": 18,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 3,
+      "displayEquations": 12,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "zh-cn": {
+      "characters": 17524,
+      "h2": 10,
+      "h3": 4,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 2,
+      "displayEquations": 4,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "es": {
+      "characters": 24661,
+      "h2": 10,
+      "h3": 4,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 2,
+      "displayEquations": 4,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "ko": {
+      "characters": 19045,
+      "h2": 10,
+      "h3": 4,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 2,
+      "displayEquations": 4,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "pt": {
+      "characters": 24318,
+      "h2": 10,
+      "h3": 4,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 2,
+      "displayEquations": 4,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "zh-tw": {
+      "characters": 17525,
+      "h2": 10,
+      "h3": 4,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 2,
+      "displayEquations": 4,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "hi": {
+      "characters": 23350,
+      "h2": 10,
+      "h3": 4,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 2,
+      "displayEquations": 4,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "fr": {
+      "characters": 25071,
+      "h2": 10,
+      "h3": 4,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 2,
+      "displayEquations": 4,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "de": {
+      "characters": 24322,
+      "h2": 10,
+      "h3": 4,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 2,
+      "displayEquations": 4,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "ar": {
+      "characters": 21755,
+      "h2": 10,
+      "h3": 4,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 2,
+      "displayEquations": 4,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "ru": {
+      "characters": 24150,
+      "h2": 10,
+      "h3": 4,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 2,
+      "displayEquations": 4,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    },
+    "id": {
+      "characters": 24201,
+      "h2": 10,
+      "h3": 4,
+      "pythonBlocks": 1,
+      "pythonAstParsed": true,
+      "pythonExecuted": true,
+      "mermaidBlocks": 2,
+      "displayEquations": 4,
+      "primarySources": 16,
+      "publicationDate": "2026-10-18",
+      "lastmod": "2026-11-23"
+    }
+  },
+  "checks": [
+    {
+      "command": "python scripts/test_multilingual.py",
+      "result": "passed: 10 tests; 19 pages"
+    },
+    {
+      "command": "python scripts/test_translation_reviews.py",
+      "result": "passed: 6 tests"
+    },
+    {
+      "command": "python scripts/test_math_rendering.py",
+      "result": "passed: 1 test"
+    },
+    {
+      "command": "python docs/translation-review/verify_batch_069_static.py",
+      "result": "passed: all 13 article editions, common links, dates, Python AST and outputs"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed (Git emitted only LF-to-CRLF advisory notices)"
+    }
+  ],
+  "limitations": [
+    "AI review only; no human or native-speaker certification.",
+    "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+    "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+    "Mermaid graphs were structurally read in source but not rendered or visually inspected locally; final published pages will be checked after CI deployment.",
+    "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+  ],
+  "publicationPending": true
+}

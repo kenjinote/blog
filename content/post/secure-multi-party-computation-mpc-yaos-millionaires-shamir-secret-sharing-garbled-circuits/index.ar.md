@@ -1,8 +1,9 @@
 ---
-title: "كيف يمكن لعدة أطراف حساب المجموع والترتيب دون كشف بت واحد: الحوسبة الآمنة متعددة الأطراف (MPC)ومسألة المليونيرات لياو"
-description: "دراسة رياضية معمقة للحوسبة الآمنة متعددة الأطراف (MPC): من مشاركة السر الجمعية ومسألة المليونيرات لأندرو ياو إلى مشاركة السر العتبية (t, n) لشامير عبر استيفاء لاغرانج، وثلاثيات الضرب لبيفر، والنقل الغافل (OT)، والدوائر المشوشة (Garbled Circuits)، وتطبيقاتها في الطب والمالية."
+title: "كيف تحسب الأطراف معًا دون كشف المدخلات الخاصة: MPC ومسألة المليونيرات لياو"
+description: "شرح MPC ومشاركة الأسرار لشامير وBGW وSPDZ وثلاثيات بيفر والنقل الغافل والدوائر المشوشة، مع مقارنتها بـFHE وبراهين المعرفة الصفرية وTEE وأمثلة وحدود التطبيق."
 slug: "secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits"
 date: "2026-10-18T08:00:00+09:00"
+lastmod: "2026-11-23"
 image: "eyecatch.jpg"
 categories:
   - "علوم الحاسوب والتشفير"
@@ -16,14 +17,17 @@ math: true
 draft: false
 ---
 
-«ترغب عدة مستشفيات بحثية في دمج التسلسلات الجينومية لمرضى السرطان لإجراء دراسة ارتباط جينومي إحصائية (GWAS)، لكن قوانين الخصوصية (GDPR / HIPAA) تحظر تماماً خروج بايت واحد من بيانات المرضى الخام خارج جدران المستشفى.»
+«ترغب عدة مستشفيات في تحليل جينومات المرضى معًا، مع الالتزام بالمتطلبات القانونية والتعاقدية والأخلاقية السارية على معالجة هذه البيانات».
 «تريد بنوك تجارية متنافسة تتبع شبكات غسيل الأموال العابرة للبنوك بشكل مشترك دون الكشف عن قوائم عملائها أو مخططات معاملاتها الداخلية لبعضها البعض.»
 
-للوهلة الأولى، يبدو هذا مطلباً مستحيلاً منطقياً: لحساب أي دالة $f(x_1, x_2, \dots, x_n)$، ألا يجب أن يقوم <strong>طرف ثالث موثوق (Trusted Third Party - TTP)</strong> بجمع كل المدخلات السرية $x_i$ كنص واضح أولاً؟ غير أن علم التشفير الحديث أثبت في أواخر الثمانينيات مبرهنة مذهلة: <strong>حتى في غياب أي طرف ثالث موثوق، يمكن لأطراف لا يثق بعضهم ببعض أن يحسبوا معاً أي دالة قابلة للحساب $f(x_1, \dots, x_n)$ بحيث يعرف الجميع النتيجة الصحيحة دون أن يتعلم أي طرف بتاً واحداً إضافياً عن المدخل السري $x_i$ لأي طرف آخر.</strong>
+للوهلة الأولى، يبدو هذا مطلباً مستحيلاً منطقياً: لحساب أي دالة $f(x_1, x_2, \dots, x_n)$، ألا يجب أن يقوم <strong>طرف ثالث موثوق (Trusted Third Party - TTP)</strong> بجمع كل المدخلات السرية $x_i$ كنص واضح أولاً؟ غير أن علم التشفير الحديث أثبت في أواخر الثمانينيات مبرهنة مذهلة: <strong>ضمن نموذج خصم وافتراضات تشفيرية محددة، يمكن للأطراف حساب دالة مع الحد من المعلومات الإضافية التي تكشفها البروتوكولات، باستثناء ما تسمح به المدخلات والمخرجات.</strong>
 
-يُعرف هذا المجال باسم <strong>الحوسبة الآمنة متعددة الأطراف (Secure Multi-Party Computation - MPC)</strong>. في هذا المقال ننطلق من تجربتين فكريتين كلاسيكيتين لنشتق المحركين الرياضيين الأساسيين لـ MPC: <strong>مشاركة السر العتبية $(t, n)$ لآدي شامير (استيفاء لاغرانج، بروتوكول BGW، وثلاثيات بيفر)</strong>، ومنهج الدوائر المنطقية عبر <strong>النقل الغافل ($\text{OT}_1^2$) لرابين والدوائر المشوشة (Garbled Circuits) لياو</strong>.
+يُعرف هذا المجال باسم <strong>الحوسبة الآمنة متعددة الأطراف (Secure Multi-Party Computation - MPC)</strong>. في هذا المقال ننطلق من تجربتين فكريتين كلاسيكيتين لنشتق المحركين الرياضيين الأساسيين لـ MPC: <strong>مشاركة السر العتبية $(t, n)$ لآدي شامير (استيفاء لاغرانج، بروتوكول BGW، وثلاثيات بيفر)</strong>، ومنهج الدوائر المنطقية عبر <strong>النقل الغافل (OT) والدوائر المشوشة (Garbled Circuits) لياو</strong>.
 
 ---
+
+
+**كيفية فهم ضمانات الأمان:** لا تنطبق عبارات مثل «لا يُكشف السر» إلا ضمن نموذج الخصم وتعريف الأمان والافتراضات التشفيرية المحددة. ويُقيّم عادةً التسرب الإضافي عما يمكن استنتاجه من المدخلات والمخرجات المسموح بها؛ أما الاستدلال من النتائج والتنفيذ والتشغيل والتوافر والقنوات الجانبية فتحتاج إلى تحليل منفصل.
 
 ## 1. تجربتان فكريتان مدهشتان: «متوسط الرواتب بلا مدير» و«مسألة المليونيرات لياو»
 
@@ -34,6 +38,8 @@ draft: false
 1. <strong>القناع العشوائي والهمسة الأولى ($A \to B$)</strong>: يتفق الثلاثة على معيار عددي عام كبير $M$ (مثلاً $M = 10^9$). يختار المهندس $A$ سراً عدداً عشوائياً منتظماً $r \xleftarrow{\$} \mathbb{Z}_M$، ويجمعه مع راتبه $x_A$، ثم يهمس فقط بالقيمة $s_1 = (x_A + r) \bmod M$ للمهندس $B$. وبما أن $r$ موزع بانتظام في $\mathbb{Z}_M$، فإن $s_1$ موزع بانتظام تام أيضاً بغض النظر عن قيمة $x_A$: وبموجب مبرهنة شانون للسرية التامة، فإن المعلومات المتبادلة تساوي صفراً ($I(X_A; S_1) = 0$). لا يتعلم $B$ حرفياً <strong>أي بت</strong> عن $x_A$.
 2. <strong>الجمع المتسلسل ($B \to C \to A$)</strong>: يضيف $B$ راتبه $x_B$ ويهمس بالقيمة $s_2 = (x_A + x_B + r) \bmod M$ إلى $C$؛ ثم يضيف $C$ راتبه $x_C$ ويعيد $s_3 = (x_A + x_B + x_C + r) \bmod M$ إلى $A$.
 3. <strong>إزالة القناع وإعلان المتوسط</strong>: يطرح $A$ رقمه العشوائي $r$ بمعيار $M$، فيحصل على المجموع الدقيق $S = x_A + x_B + x_C$ ويعلن المتوسط $\bar{x} = S / 3$.
+
+> **حدود مثال الهمس:** هذا مثال تعليمي وليس بروتوكول MPC آمناً. يفترض قنوات خاصة بين الجيران، والتزام المشاركين، وعدم تواطئهم. فمثلاً، إذا تبادل بوب وكارول ما لديهما، فيمكنهما مع المجموع المعلن استعادة مدخل أليس. يتطلب الاستخدام الفعلي بروتوكولاً مثبت الأمان وفق نموذج التهديد المقصود. ويجب أن يكون $M$ أكبر من مجموع المدخلات لتجنب الالتفاف المعياري.
 
 > [!NOTE]
 > <strong>لماذا نحتاج إلى 3 مشاركين على الأقل ($n \ge 3$)؟</strong>
@@ -94,9 +100,11 @@ $$[x \cdot y] = [w] + d \cdot [v] + e \cdot [u] + d \cdot e \pmod p$$
 
 ---
 
-## 4. المحرك الثاني: النقل الغافل ($\text{OT}_1^2$) لرابين والدوائر المشوشة (Garbled Circuits) لياو
+**تعتمد عتبات التحمل على نموذج الخصم:** في BGW الكلاسيكي، يمكن للنموذج السلبي (المشارك الصادق لكن الفضولي) تحمّل $c < n/2$؛ أما الأمن المعلوماتي ضد المشاركين الخبيثين فيتطلب عادةً $c < n/3$ مع افتراضات اتصال مناسبة. ثلاثية Beaver وحدها لا تحدد حدّ التحمل أو تضمن الأمان النشط.
 
-للمقارنات الثنائية ($x > y$)، ينفذ منهج الدوائر المنطقية التقييم في عدد ثابت $O(1)$ من جولات الاتصال:
+## 4. المحرك الثاني: النقل الغافل (OT) والدوائر المشوشة لياو
+
+في بعض البنى، يمكن تقييم بوابات الدائرة دون اتصال لكل بوابة بعد نقل المدخلات؛ لكن عدد جولات الاتصال الكلي يعتمد على بروتوكول OT والإعداد المستخدم.
 
 ```mermaid
 flowchart TD
@@ -118,25 +126,35 @@ flowchart TD
     end
 ```
 
-بفضل <strong>النقل الغافل 1-من-2 ($\text{OT}_1^2$) لمايكل رابين</strong>، يحصل بوب على المفتاح $k_b^y$ الموافق لبته السري $y$ دون أن تعرف أليس $y$. وقد أدت التحسينات الثلاثة الحديثة — <strong>Point-and-Permute</strong> (بتات اللون تشير مباشرة إلى الصف المطلوب فك تشفيره)، و<strong>Free-XOR</strong> ($k_i^1 = k_i^0 \oplus \Delta$ يجعل جميع بوابات `XOR` بلا نصوص مشفرة وبلا عمليات AES)، و<strong>Half-Gates</strong> (تقليص كل بوابة `AND` إلى نصين مشفرين فقط) — إلى تسريع الدوائر المشوشة بأكثر من $1000$ ضعف.
+يحدد <strong>Point-and-Permute</strong> الصف المطلوب فك تشفيره، ويتجنب <strong>Free-XOR</strong> تمويه بوابات XOR، وتقلل <strong>Half-Gates</strong> الاتصال اللازم لبوابات AND. يعتمد التحسن على الدائرة والتنفيذ والأجهزة والشبكة، ولا يوجد معامل تسريع ثابت ينطبق على الجميع.
 
 ---
 
 ## 5. تطبيق كامل بلغة Python: مشاركة شامير وثلاثيات بيفر على الحقل $\mathbb{F}_p$
 
+يوضح المثال أيضاً تربيع كل راتب باستخدام ثلاثية Beaver جديدة، ثم فتح المجموع ومجموع المربعات لحساب المتوسط والتباين السكاني. تُفتح هذه المخرجات للطرف الذي يعيد بناءها؛ فالمثال محاكاة تعليمية في عملية واحدة.
+
 ```python
 import secrets
 from typing import List, Tuple
 
-PRIME = (1 << 61) - 1  # عدد ميرسين الأولي بطول 61 بت p = 2^61 - 1
+# 61-bit Mersenne prime p = 2^61 - 1 for our prime finite field F_p
+PRIME = (1 << 61) - 1
 
 def mod_inv(a: int, p: int = PRIME) -> int:
+    # Modular inverse in F_p via Extended Euclidean Algorithm (Python 3.8+ pow(a, -1, p))
     return pow(a % p, -1, p)
 
 def shamir_share(secret: int, t: int, n: int, p: int = PRIME) -> List[Tuple[int, int]]:
+    # Shamir's (t, n) Threshold Secret Sharing:
+    # Samples a random degree-(t-1) polynomial P(x) with P(0) = secret and evaluates it at x = 1..n.
+    assert 1 <= t <= n < p, "Threshold t and party count n must satisfy 1 <= t <= n < p"
+    # P(x) = s + a_1 * x + a_2 * x^2 + ... + a_{t-1} * x^{t-1} (mod p)
     coeffs = [secret % p] + [secrets.randbelow(p) for _ in range(t - 1)]
+
     shares = []
     for i in range(1, n + 1):
+        # Evaluate P(i) using Horner's method
         y = 0
         for c in reversed(coeffs):
             y = (y * i + c) % p
@@ -144,50 +162,103 @@ def shamir_share(secret: int, t: int, n: int, p: int = PRIME) -> List[Tuple[int,
     return shares
 
 def lagrange_reconstruct(shares: List[Tuple[int, int]], p: int = PRIME) -> int:
+    # Reconstructs P(0) = s from any subset of >= t shares using Lagrange Polynomial Interpolation:
+    # s = sum_{i in T} y_i * prod_{j in T, j != i} (-x_j) / (x_i - x_j) (mod p)
     secret = 0
     k = len(shares)
     for i in range(k):
         xi, yi = shares[i]
-        num, den = 1, 1
+        num = 1
+        den = 1
         for j in range(k):
-            if i != j:
-                xj, _ = shares[j]
-                num = (num * (-xj)) % p
-                den = (den * (xi - xj)) % p
-        secret = (secret + yi * num * mod_inv(den, p)) % p
+            if i == j:
+                continue
+            xj, _ = shares[j]
+            num = (num * (-xj)) % p
+            den = (den * (xi - xj)) % p
+        lambda_i = (num * mod_inv(den, p)) % p
+        secret = (secret + yi * lambda_i) % p
     return secret
 
-def mpc_add(sa, sb, p=PRIME):
-    return [(xa, (ya + yb) % p) for (xa, ya), (_, yb) in zip(sa, sb)]
+def mpc_add(shares_a: List[Tuple[int, int]], shares_b: List[Tuple[int, int]], p: int = PRIME) -> List[Tuple[int, int]]:
+    # Local homomorphic addition [a] + [b] = [a + b] (Zero communication)
+    return [(xa, (ya + yb) % p) for (xa, ya), (xb, yb) in zip(shares_a, shares_b)]
 
-def mpc_sub(sa, sb, p=PRIME):
-    return [(xa, (ya - yb) % p) for (xa, ya), (_, yb) in zip(sa, sb)]
+def mpc_sub(shares_a: List[Tuple[int, int]], shares_b: List[Tuple[int, int]], p: int = PRIME) -> List[Tuple[int, int]]:
+    # Local homomorphic subtraction [a] - [b] = [a - b] (Zero communication)
+    return [(xa, (ya - yb) % p) for (xa, ya), (xb, yb) in zip(shares_a, shares_b)]
 
-def mpc_scalar_mul(c, sa, p=PRIME):
-    return [(xa, (c * ya) % p) for xa, ya in sa]
+def mpc_scalar_mul(scalar: int, shares_a: List[Tuple[int, int]], p: int = PRIME) -> List[Tuple[int, int]]:
+    # Local multiplication by a public scalar c * [a] = [c * a] (Zero communication)
+    return [(xa, (scalar * ya) % p) for xa, ya in shares_a]
 
-def mpc_add_const(c, sa, p=PRIME):
-    return [(xa, (ya + c) % p) for xa, ya in sa]
+def mpc_add_constant(const: int, shares_a: List[Tuple[int, int]], p: int = PRIME) -> List[Tuple[int, int]]:
+    # Adding a public constant [a] + c = [a + c] shifts P(x) by +c at every evaluation point
+    return [(xa, (ya + const) % p) for xa, ya in shares_a]
 
 def generate_beaver_triple(t: int, n: int, p: int = PRIME):
-    u, v = secrets.randbelow(p), secrets.randbelow(p)
-    return shamir_share(u, t, n, p), shamir_share(v, t, n, p), shamir_share((u * v) % p, t, n, p)
+    # Offline Preprocessing Phase: Generates a shared random multiplication triple ([u], [v], [w = u * v])
+    u = secrets.randbelow(p)
+    v = secrets.randbelow(p)
+    w = (u * v) % p
+    return shamir_share(u, t, n, p), shamir_share(v, t, n, p), shamir_share(w, t, n, p)
 
-def mpc_beaver_mul(sx, sy, triple, t: int, p: int = PRIME):
-    su, sv, sw = triple
-    d = lagrange_reconstruct(mpc_sub(sx, su, p)[:t], p)
-    e = lagrange_reconstruct(mpc_sub(sy, sv, p)[:t], p)
-    res = mpc_add(mpc_add(sw, mpc_scalar_mul(d, sv, p), p), mpc_scalar_mul(e, su, p), p)
-    return mpc_add_const((d * e) % p, res, p)
+def mpc_beaver_mul(
+    shares_x: List[Tuple[int, int]],
+    shares_y: List[Tuple[int, int]],
+    triple: Tuple[List[Tuple[int, int]], List[Tuple[int, int]], List[Tuple[int, int]]],
+    t: int,
+    p: int = PRIME
+) -> List[Tuple[int, int]]:
+    # Online Phase: Evaluates [x * y] using a Beaver Multiplication Triple ([u], [v], [w]):
+    # 1. Locally compute [d] = [x] - [u] and [e] = [y] - [v]
+    # 2. Open masked differences; security depends on fresh, valid, single-use triples and the threat model
+    # 3. Locally compute the linear combination [x * y] = [w] + d * [v] + e * [u] + d * e
+    shares_u, shares_v, shares_w = triple
+    shares_d = mpc_sub(shares_x, shares_u, p)
+    shares_e = mpc_sub(shares_y, shares_v, p)
+
+    # Open the masked differences d = x - u and e = y - v using t shares
+    d = lagrange_reconstruct(shares_d[:t], p)
+    e = lagrange_reconstruct(shares_e[:t], p)
+
+    # Linear combination to obtain degree-(t-1) shares of [x * y]
+    term1 = shares_w
+    term2 = mpc_scalar_mul(d, shares_v, p)
+    term3 = mpc_scalar_mul(e, shares_u, p)
+    res = mpc_add(mpc_add(term1, term2, p), term3, p)
+    res = mpc_add_constant((d * e) % p, res, p)
+    return res
 
 if __name__ == "__main__":
+    # 5 MPC servers (n = 5) with reconstruction threshold t = 3 (any 2 servers learn 0 bits)
     t, n = 3, 5
-    salaries = [85000, 92000, 78000]
-    shared = [shamir_share(s, t, n) for s in salaries]
-    total_shares = shared[0]
-    for s in shared[1:]:
-        total_shares = mpc_add(total_shares, s)
-    print("إجمالي الرواتب المستعاد:", lagrange_reconstruct(total_shares[:t]))
+    salaries = [850, 920, 780]  # Example salary units
+
+    # Each engineer splits their secret salary across the 5 servers
+    shared_salaries = [shamir_share(s, t, n) for s in salaries]
+
+    # 1. Compute the sum of salaries locally with zero inter-server communication
+    sum_shares = shared_salaries[0]
+    for s_share in shared_salaries[1:]:
+        sum_shares = mpc_add(sum_shares, s_share)
+
+    # Reconstruct the total from any 3 servers (e.g., servers 1, 3, and 5)
+    subset_3 = [sum_shares[0], sum_shares[2], sum_shares[4]]
+    total_salary = lagrange_reconstruct(subset_3)
+    mean_salary = total_salary / len(salaries)
+    print(f"Reconstructed total (units): {total_salary:,} (mean: {mean_salary:,.2f})")
+
+    # 2. Compute the sum of squares S_2 = x_A^2 + x_B^2 + x_C^2 using Beaver Multiplication Triples
+    sq_sum_shares = shamir_share(0, t, n)
+    for s_share in shared_salaries:
+        triple = generate_beaver_triple(t, n)
+        sq_share = mpc_beaver_mul(s_share, s_share, triple, t)
+        sq_sum_shares = mpc_add(sq_sum_shares, sq_share)
+
+    total_sq = lagrange_reconstruct(sq_sum_shares[:t])
+    variance = (total_sq / len(salaries)) - (mean_salary ** 2)
+    print(f"Reconstructed sum of squares: {total_sq:,} (population variance: {variance:,.2f})")
 ```
 
 ---
@@ -197,7 +268,44 @@ if __name__ == "__main__":
 | المعيار | الحوسبة متعددة الأطراف (MPC) | التشفير المتماثل بالكامل (FHE) | إثباتات المعرفة الصفرية (ZKP) | بيئة التنفيذ الموثوقة (TEE) |
 | :--- | :--- | :--- | :--- | :--- |
 | <strong>المشكلة الأساسية</strong> | <strong>حساب مشترك</strong> على مدخلات سرية موزعة $x_1, \dots, x_n$ | <strong>حساب أعمى على خادم واحد</strong> فوق النصوص المشفرة $\text{Enc}(x) \mapsto \text{Enc}(f(x))$ | <strong>إثبات أن سراً $w$ يعرفه المُثبِت مسبقاً</strong> يحقق $f(x, w)=1$ | <strong>تنفيذ معزول عتادياً</strong> كنص واضح داخل جيب محمي في المعالج (Enclave) |
-| <strong>عنق الزجاجة</strong> | حسابات المعالج خفيفة جداً، لكنها <strong>تتطلب اتصالاً شبكياً لكل طبقة ضرب</strong> | جولة اتصال واحدة، لكن <strong>حسابات المعالج أبطأ بـ $10^3$ إلى $10^5$ مرة</strong> | تحقق فوري، وتوليد الإثبات مكلف حسابياً (MSM / FFT) | سرعة تقارب السرعة الأصلية، لكن ذاكرة الجيب محدودة |
-| <strong>نموذج الثقة</strong> | <strong>عدم التواطؤ</strong> (أقل من $t$ خوادم تتواطأ) | <strong>صعوبة مسائل الشبكات الرياضية (RLWE)</strong> | <strong>السلامة الرياضية</strong> (لا يدمج وحده أسرار عدة أطراف) | <strong>الثقة بمصنّع المعالج (Intel/AMD)</strong>؛ عرضة لهجمات القنوات الجانبية |
+| <strong>عنق الزجاجة</strong> | تتباين كلفة الاتصال باختلاف البروتوكول وعمق الدائرة والشبكة | تتباين كلفة الحساب والاتصال باختلاف المخطط والعتاد؛ لا توجد نسبة تباطؤ عامة ثابتة | تختلف كلفة الإثبات والتحقق باختلاف النظام والبيان | تختلف السرعة والذاكرة الآمنة باختلاف المنصة والحمل |
+| <strong>نموذج الثقة</strong> | يتحدد أمان MPC بعتبة التواطؤ ونموذج الخصم الخاص بالبروتوكول؛ كما يجب تقييم تسرب المخرجات والتوافر والإنصاف منفصلة. | <strong>صعوبة مسائل الشبكات الرياضية (RLWE)</strong> | <strong>السلامة الرياضية</strong> (لا يدمج وحده أسرار عدة أطراف) | <strong>الثقة بمصنّع المعالج (Intel/AMD)</strong>؛ عرضة لهجمات القنوات الجانبية |
 
-من <strong>المزاد الدنماركي المزدوج لحصص بنجر السكر عام 2008</strong> إلى <strong>دراسة فجوة الأجور في مدينة بوسطن (BWWC)</strong>، و<strong>فحص تسرب كلمات المرور في Google Chrome وApple iCloud (تقاطع المجموعات الخاص PSI)</strong>، و<strong>الدراسات الجينومية المشتركة بين المستشفيات (Secure GWAS)</strong>، وصولاً إلى <strong>محافظ العملات المشفرة المعتمدة على توقيع العتبة MPC (مثل Fireblocks وCoinbase)</strong>، تستبدل تقنية MPC اليوم الثقة المؤسسية الهشة باليقين الرياضي الصارم.
+تشمل الأمثلة تطبيقات ودراسات في مزادات البنجر بالدنمارك، وقياس فجوة الأجور في بوسطن، وفحوص كلمات المرور المسربة، وأبحاث الجينوم، والتوقيعات الموزعة. تختلف درجة النشر الفعلي والنموذج الأمني والمخاطر المتبقية بين هذه الحالات؛ ولا تستبدل MPC الثقة المؤسسية بيقين مطلق.
+
+## 7. تقنيات PET أخرى وحدودها
+
+ملاحظة تاريخية: يختلف OT الذي اقترحه رابن عام 1981 (يتلقى المستقبل الرسالة باحتمال 1/2) عن وظيفة OT واحد من اثنين التي صاغها Even وGoldreich وLempel عام 1985.
+يوزّع MPC المدخلات، وتعتمد ضماناته على البروتوكول ونموذج الخصم. يتيح FHE الحساب على النصوص المشفرة، لكنه لا يتحقق تلقائيًا من صحة الحساب ولا يمنع تسرب المعلومات من النتائج. تثبت براهين المعرفة الصفرية عبارة دون كشف الشاهد، لكنها لا تحل محل الحساب المشترك. وتعالج TEE النص الصريح في عتاد محمي، ما يتطلب الثقة بالعتاد والتصديق. يمكن الجمع بين التقنيات، وتختلف الكلفة والضمانات حسب الاستخدام.
+
+## 8. أمثلة
+استخدم مزاد الشمندر السكري الدنماركي عام 2008 نظام MPC بثلاثة أطراف؛ ويذكر البحث نحو 1,200 مدخل وحسابًا استغرق قرابة 30 دقيقة ونقل نحو 25,000 طن من حقوق الإنتاج. ينشر BWWC وجامعة بوسطن تقارير فجوات الأجور كل عامين؛ وذكر BWWC أن تقرير 2023 شمل 103 أصحاب عمل و165,000 موظف بدوام كامل. توثّق Google Chrome وApple فحوص كلمات مرور مختلفة قائمة على PSI. وأبلغ بحث USENIX لعام 2023 عن قنوات جانبية في تنفيذ Chrome المدروس. أُثبتت GWAS باستخدام MPC في أبحاث، لكن النتائج قد تكشف معلومات. تخفي Secure Aggregation المساهمات الفردية ولا تزيل كل مخاطر الاستدلال. وللتوقيعات العتبية وتحديث الحصص شروط بروتوكول وتشغيل.
+
+## 9. الخلاصة
+يقلل MPC الحاجة إلى تجميع البيانات المكشوفة، لكنه لا يزيل تسرب المعلومات عبر النتائج أو المخاطر التشغيلية والقانونية ومخاطر التوافر. وتعتمد ضماناته على نموذج الخصم والافتراضات التشفيرية والتنفيذ والتشغيل.
+
+**نطاق مثال الشيفرة:** هذا المثال بلغة Python محاكاة تعليمية داخل عملية واحدة لمشاركة الأسرار والحساب على حقل منتهٍ. وليس نظام MPC شبكيًا يحتفظ فيه كل طرف بحصته فقط. لا يتضمن التحقق من المشاركين الخبيثين، أو المصادقة والنقل الآمن، أو المعالجة المسبقة الموثوقة، أو ضبط نطاق المدخلات والتجاوز الحسابي. القيم التي تستعيدها `lagrange_reconstruct` تُكشف للطرف الذي يستعيدها. لا تستخدم المثال لحماية بيانات أو أصول حقيقية.
+
+
+## Sources
+
+- [Rabin, “How to Exchange Secrets with Oblivious Transfer” (1981)](https://eprint.iacr.org/2005/187.pdf)
+- [Even, Goldreich, and Lempel, “A Randomized Protocol for Signing Contracts” (1985)](https://luca-giuzzi.unibs.it/corsi/Support/papers-cryptography/SigningContracts.pdf)
+
+- [Bogetoft et al., “Secure Multiparty Computation Goes Live” (2009)](https://www.acsu.buffalo.edu/~mblanton/cse715/sugar-beet-auction.pdf)
+- [Boston Women’s Workforce Council: Wage Gap Studies](https://thebwwc.org/wage-gap-studies)
+- [Google: Better password protections in Chrome](https://security.googleblog.com/2019/12/better-password-protections-in-chrome.html)
+- [Apple Platform Security: Password Monitoring](https://support.apple.com/guide/security/password-monitoring-sec78e79fc3b/web)
+- [Kwong et al., USENIX Security 2023: Chrome password-check side channels](https://www.usenix.org/conference/usenixsecurity23/presentation/kwong)
+- [Cho et al., “Secure genome-wide association analysis using multiparty computation” (2018)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5990440/)
+- [Bonawitz et al., Google Research: Practical Secure Aggregation](https://research.google/pubs/practical-secure-aggregation-for-federated-learning-on-user-held-data/)
+- [Canetti et al., “UC Non-Interactive, Proactive, Threshold ECDSA” (2020)](https://eprint.iacr.org/2020/492)
+- [Kumar et al., “Understanding Information Disclosure from Secure Computation Output” (2025)](https://doi.org/10.1145/3705004)
+- [Kolesnikov and Schneider, “Improved Garbled Circuit: Free XOR Gates and Applications” (2008)](https://encrypto.de/papers/KS08XOR.pdf)
+- [Zahur, Rosulek, and Evans, “Two Halves Make a Whole: Reducing Data Transfer in Garbled Circuits using Half Gates” (2015)](https://www.cs.virginia.edu/~evans/pubs/ec2015/halfgates.pdf)
+
+- [Stanford University cryptography notes: Oblivious Transfer](https://crypto.stanford.edu/pbc/notes/crypto/ot.html)
+
+- [A Full Proof of the BGW Protocol for Perfectly Secure MPC](https://doi.org/10.1007/S00145-015-9214-4)
+
+- [Yao, “Protocols for Secure Computations” (FOCS 1982)](https://doi.org/10.1109/SFCS.1982.38)

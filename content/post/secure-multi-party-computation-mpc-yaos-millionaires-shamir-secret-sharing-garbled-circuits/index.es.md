@@ -1,8 +1,9 @@
 ---
-title: "Cómo calcular sumas y clasificaciones entre varios sin revelar ni un solo bit: Computación Multiparte Segura (MPC) y el problema de los millonarios de Yao"
-description: "Análisis matemático profundo de la Computación Multiparte Segura (MPC): desde la compartición aditiva de secretos y el problema de los millonarios de Andrew Yao hasta el esquema de umbral (t, n) de Shamir mediante interpolación de Lagrange, tripletas de Beaver, transferencia inconsciente (OT), circuitos garbled y aplicaciones reales."
+title: "Cómo calcular en conjunto sin revelar las entradas privadas: MPC y el problema de los millonarios de Yao"
+description: "Explicación de MPC, el reparto de secretos de Shamir, BGW, SPDZ, tripletas de Beaver, OT y circuitos garbled; incluye comparaciones con FHE, pruebas de conocimiento cero y TEE, ejemplos y límites."
 slug: "secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits"
 date: "2026-10-18T08:00:00+09:00"
+lastmod: "2026-11-23"
 image: "eyecatch.jpg"
 categories:
   - "Ciencias de la Computación y Criptografía"
@@ -16,14 +17,17 @@ math: true
 draft: false
 ---
 
-«Varios hospitales oncológicos desean combinar las secuencias genómicas de sus pacientes para realizar un estudio estadístico de asociación (GWAS), pero las leyes de privacidad (RGPD / HIPAA) prohíben estrictamente que un solo byte de datos clínicos salga de cada hospital».
+«Varios hospitales quieren analizar conjuntamente genomas de pacientes y deben respetar los requisitos legales, contractuales y éticos aplicables al tratamiento de esos datos».
 «Bancos comerciales competidores quieren rastrear conjuntamente redes de lavado de dinero interbancario sin revelar jamás sus listas de clientes ni sus grafos de transacciones internas».
 
-A primera vista, esto parece lógicamente imposible: para evaluar una función $f(x_1, x_2, \dots, x_n)$, ¿no es imprescindible que un <strong>tercero de confianza (Trusted Third Party, TTP)</strong> reúna primero todas las entradas $x_i$ en texto plano? Sin embargo, a finales de los años ochenta, la criptografía moderna demostró un teorema extraordinario: <strong>incluso sin ningún tercero de confianza, múltiples participantes que desconfían entre sí pueden evaluar conjuntamente cualquier función computable $f(x_1, \dots, x_n)$ de modo que todos conozcan el resultado exacto sin que nadie descubra ni un solo bit adicional sobre la entrada secreta $x_i$ de los demás.</strong>
+A primera vista, esto parece lógicamente imposible: para evaluar una función $f(x_1, x_2, \dots, x_n)$, ¿no es imprescindible que un <strong>tercero de confianza (Trusted Third Party, TTP)</strong> reúna primero todas las entradas $x_i$ en texto plano? Sin embargo, a finales de los años ochenta, la criptografía moderna demostró un teorema extraordinario: <strong>Bajo un modelo de adversario y supuestos criptográficos explícitos, los participantes pueden calcular conjuntamente una función; la definición de seguridad limita la divulgación adicional más allá de lo que ya permiten inferir las entradas y salidas autorizadas.</strong>
 
-Esta disciplina se denomina <strong>Computación Multiparte Segura (Secure Multi-Party Computation, MPC)</strong>. En este artículo partimos de dos experimentos mentales clásicos para deducir los dos motores matemáticos fundamentales de MPC: la <strong>compartición de secretos por umbral $(t, n)$ de Adi Shamir (interpolación de Lagrange, protocolo BGW y tripletas de Beaver)</strong> y el enfoque de circuitos booleanos mediante la <strong>transferencia inconsciente ($\text{OT}_1^2$) de Rabin y los circuitos cifrados (Garbled Circuits) de Yao</strong>.
+Esta disciplina se denomina <strong>Computación Multiparte Segura (Secure Multi-Party Computation, MPC)</strong>. En este artículo partimos de dos experimentos mentales clásicos para deducir los dos motores matemáticos fundamentales de MPC: la <strong>compartición de secretos por umbral $(t, n)$ de Adi Shamir (interpolación de Lagrange, protocolo BGW y tripletas de Beaver)</strong> y el enfoque de circuitos booleanos mediante la <strong>transferencia inconsciente (OT) y los circuitos cifrados (Garbled Circuits) de Yao</strong>.
 
 ---
+
+
+**Cómo interpretar las garantías:** Las afirmaciones de que un secreto «no se revela» solo valen para el modelo de adversario, la definición de seguridad y los supuestos criptográficos indicados. Normalmente se evalúa la fuga adicional a la información deducible de entradas y salidas permitidas; las inferencias desde los resultados, la implementación, la operación, la disponibilidad y los canales laterales requieren un análisis aparte.
 
 ## 1. Dos experimentos mentales paradójicos: «El salario medio sin jefe» y «El problema de los millonarios de Yao»
 
@@ -34,6 +38,8 @@ Tres ingenieros $A, B$ y $C$ quieren conocer su <strong>salario anual medio $\ba
 1. <strong>Máscara aleatoria y primer susurro ($A \to B$)</strong>: Los tres acuerdan un módulo público grande $M$ (por ejemplo, $M = 10^9$). El ingeniero $A$ elige en secreto un número aleatorio uniforme $r \xleftarrow{\$} \mathbb{Z}_M$, le suma su salario $x_A$ y susurra únicamente $s_1 = (x_A + r) \bmod M$ a $B$. Como $r$ es uniforme en $\mathbb{Z}_M$, $s_1$ también está perfectamente distribuido de forma uniforme sin importar cuánto gane $A$: por el teorema de Shannon sobre la libreta de un solo uso, la información mutua es $I(X_A; S_1) = 0$. $B$ aprende literalmente <strong>cero bits</strong> sobre $x_A$.
 2. <strong>Sumas sucesivas ($B \to C \to A$)</strong>: $B$ suma su propio salario $x_B$ y susurra $s_2 = (x_A + x_B + r) \bmod M$ a $C$; $C$ suma $x_C$ y entrega $s_3 = (x_A + x_B + x_C + r) \bmod M$ de vuelta a $A$.
 3. <strong>Eliminación de la máscara</strong>: $A$ resta su número aleatorio $r$ módulo $M$, obtiene la suma exacta $S = x_A + x_B + x_C$ y anuncia el promedio $\bar{x} = S / 3$.
+
+> **Límite de este ejemplo de susurros:** Es una ilustración didáctica, no un protocolo MPC seguro. Supone canales privados entre vecinos, comportamiento honesto y ausencia de colusión. Por ejemplo, si Bob y Carol comparten lo que observan, pueden combinarlo con la suma publicada y recuperar la entrada de Alice. Un uso real requiere un protocolo demostrado seguro para el modelo de amenaza previsto. Además, $M$ debe superar la suma de las entradas para evitar el desbordamiento modular.
 
 > [!NOTE]
 > <strong>¿Por qué se necesitan al menos 3 participantes ($n \ge 3$)?</strong>
@@ -94,9 +100,11 @@ $$[x \cdot y] = [w] + d \cdot [v] + e \cdot [u] + d \cdot e \pmod p$$
 
 ---
 
-## 4. Motor 2: Transferencia inconsciente ($\text{OT}_1^2$) de Rabin y circuitos garbled de Yao
+**Los umbrales dependen del modelo de adversario:** El BGW clásico tolera $c < n/2$ corrupciones en el modelo pasivo (honesto pero curioso); la seguridad de información frente a participantes maliciosos suele requerir $c < n/3$ y supuestos de comunicación adecuados. Una tripleta de Beaver por sí sola no fija el umbral ni aporta seguridad activa.
 
-Para comparaciones binarias ($x > y$), el enfoque de circuitos booleanos opera en un número constante $O(1)$ de rondas:
+## 4. Motor 2: Transferencia inconsciente (OT) y circuitos garbled de Yao
+
+En algunas construcciones, la evaluación de las puertas se realiza localmente tras transferir las entradas; el número total de rondas de comunicación depende del protocolo OT y de su configuración.
 
 ```mermaid
 flowchart TD
@@ -118,25 +126,35 @@ flowchart TD
     end
 ```
 
-Mediante la <strong>transferencia inconsciente 1-de-2 ($\text{OT}_1^2$) de Michael Rabin</strong>, Bob obtiene únicamente la clave $k_b^y$ correspondiente a su bit secreto $y$ sin que Alice descubra $y$. Las tres optimizaciones modernas —<strong>Point-and-Permute</strong> (bits de color que señalan directamente la única fila a descifrar), <strong>Free-XOR</strong> ($k_i^1 = k_i^0 \oplus \Delta$, que hace que todas las compuertas `XOR` requieran cero textos cifrados y cero operaciones AES) y <strong>Half-Gates</strong> (que reduce cada compuerta `AND` a solo 2 textos cifrados)— aceleraron los circuitos garbled más de $1000$ veces.
+<strong>Point-and-Permute</strong> identifica la fila que se debe descifrar, <strong>Free-XOR</strong> evita garblear las compuertas XOR y <strong>Half-Gates</strong> reducen la comunicación de las compuertas AND. La mejora depende del circuito, la implementación, el hardware y la red; no existe un factor de aceleración universal.
 
 ---
 
 ## 5. Implementación completa en Python: Shamir Secret Sharing y tripletas de Beaver sobre $\mathbb{F}_p$
 
+El ejemplo también eleva cada salario al cuadrado con una nueva tripleta de Beaver y revela la suma y la suma de cuadrados para calcular la media y la varianza poblacional. Estos resultados se abren a quien los reconstruye; es una simulación educativa en un solo proceso.
+
 ```python
 import secrets
 from typing import List, Tuple
 
-PRIME = (1 << 61) - 1  # Primo de Mersenne de 61 bits p = 2^61 - 1
+# 61-bit Mersenne prime p = 2^61 - 1 for our prime finite field F_p
+PRIME = (1 << 61) - 1
 
 def mod_inv(a: int, p: int = PRIME) -> int:
+    # Modular inverse in F_p via Extended Euclidean Algorithm (Python 3.8+ pow(a, -1, p))
     return pow(a % p, -1, p)
 
 def shamir_share(secret: int, t: int, n: int, p: int = PRIME) -> List[Tuple[int, int]]:
+    # Shamir's (t, n) Threshold Secret Sharing:
+    # Samples a random degree-(t-1) polynomial P(x) with P(0) = secret and evaluates it at x = 1..n.
+    assert 1 <= t <= n < p, "Threshold t and party count n must satisfy 1 <= t <= n < p"
+    # P(x) = s + a_1 * x + a_2 * x^2 + ... + a_{t-1} * x^{t-1} (mod p)
     coeffs = [secret % p] + [secrets.randbelow(p) for _ in range(t - 1)]
+
     shares = []
     for i in range(1, n + 1):
+        # Evaluate P(i) using Horner's method
         y = 0
         for c in reversed(coeffs):
             y = (y * i + c) % p
@@ -144,50 +162,103 @@ def shamir_share(secret: int, t: int, n: int, p: int = PRIME) -> List[Tuple[int,
     return shares
 
 def lagrange_reconstruct(shares: List[Tuple[int, int]], p: int = PRIME) -> int:
+    # Reconstructs P(0) = s from any subset of >= t shares using Lagrange Polynomial Interpolation:
+    # s = sum_{i in T} y_i * prod_{j in T, j != i} (-x_j) / (x_i - x_j) (mod p)
     secret = 0
     k = len(shares)
     for i in range(k):
         xi, yi = shares[i]
-        num, den = 1, 1
+        num = 1
+        den = 1
         for j in range(k):
-            if i != j:
-                xj, _ = shares[j]
-                num = (num * (-xj)) % p
-                den = (den * (xi - xj)) % p
-        secret = (secret + yi * num * mod_inv(den, p)) % p
+            if i == j:
+                continue
+            xj, _ = shares[j]
+            num = (num * (-xj)) % p
+            den = (den * (xi - xj)) % p
+        lambda_i = (num * mod_inv(den, p)) % p
+        secret = (secret + yi * lambda_i) % p
     return secret
 
-def mpc_add(sa, sb, p=PRIME):
-    return [(xa, (ya + yb) % p) for (xa, ya), (_, yb) in zip(sa, sb)]
+def mpc_add(shares_a: List[Tuple[int, int]], shares_b: List[Tuple[int, int]], p: int = PRIME) -> List[Tuple[int, int]]:
+    # Local homomorphic addition [a] + [b] = [a + b] (Zero communication)
+    return [(xa, (ya + yb) % p) for (xa, ya), (xb, yb) in zip(shares_a, shares_b)]
 
-def mpc_sub(sa, sb, p=PRIME):
-    return [(xa, (ya - yb) % p) for (xa, ya), (_, yb) in zip(sa, sb)]
+def mpc_sub(shares_a: List[Tuple[int, int]], shares_b: List[Tuple[int, int]], p: int = PRIME) -> List[Tuple[int, int]]:
+    # Local homomorphic subtraction [a] - [b] = [a - b] (Zero communication)
+    return [(xa, (ya - yb) % p) for (xa, ya), (xb, yb) in zip(shares_a, shares_b)]
 
-def mpc_scalar_mul(c, sa, p=PRIME):
-    return [(xa, (c * ya) % p) for xa, ya in sa]
+def mpc_scalar_mul(scalar: int, shares_a: List[Tuple[int, int]], p: int = PRIME) -> List[Tuple[int, int]]:
+    # Local multiplication by a public scalar c * [a] = [c * a] (Zero communication)
+    return [(xa, (scalar * ya) % p) for xa, ya in shares_a]
 
-def mpc_add_const(c, sa, p=PRIME):
-    return [(xa, (ya + c) % p) for xa, ya in sa]
+def mpc_add_constant(const: int, shares_a: List[Tuple[int, int]], p: int = PRIME) -> List[Tuple[int, int]]:
+    # Adding a public constant [a] + c = [a + c] shifts P(x) by +c at every evaluation point
+    return [(xa, (ya + const) % p) for xa, ya in shares_a]
 
 def generate_beaver_triple(t: int, n: int, p: int = PRIME):
-    u, v = secrets.randbelow(p), secrets.randbelow(p)
-    return shamir_share(u, t, n, p), shamir_share(v, t, n, p), shamir_share((u * v) % p, t, n, p)
+    # Offline Preprocessing Phase: Generates a shared random multiplication triple ([u], [v], [w = u * v])
+    u = secrets.randbelow(p)
+    v = secrets.randbelow(p)
+    w = (u * v) % p
+    return shamir_share(u, t, n, p), shamir_share(v, t, n, p), shamir_share(w, t, n, p)
 
-def mpc_beaver_mul(sx, sy, triple, t: int, p: int = PRIME):
-    su, sv, sw = triple
-    d = lagrange_reconstruct(mpc_sub(sx, su, p)[:t], p)
-    e = lagrange_reconstruct(mpc_sub(sy, sv, p)[:t], p)
-    res = mpc_add(mpc_add(sw, mpc_scalar_mul(d, sv, p), p), mpc_scalar_mul(e, su, p), p)
-    return mpc_add_const((d * e) % p, res, p)
+def mpc_beaver_mul(
+    shares_x: List[Tuple[int, int]],
+    shares_y: List[Tuple[int, int]],
+    triple: Tuple[List[Tuple[int, int]], List[Tuple[int, int]], List[Tuple[int, int]]],
+    t: int,
+    p: int = PRIME
+) -> List[Tuple[int, int]]:
+    # Online Phase: Evaluates [x * y] using a Beaver Multiplication Triple ([u], [v], [w]):
+    # 1. Locally compute [d] = [x] - [u] and [e] = [y] - [v]
+    # 2. Open masked differences; security depends on fresh, valid, single-use triples and the threat model
+    # 3. Locally compute the linear combination [x * y] = [w] + d * [v] + e * [u] + d * e
+    shares_u, shares_v, shares_w = triple
+    shares_d = mpc_sub(shares_x, shares_u, p)
+    shares_e = mpc_sub(shares_y, shares_v, p)
+
+    # Open the masked differences d = x - u and e = y - v using t shares
+    d = lagrange_reconstruct(shares_d[:t], p)
+    e = lagrange_reconstruct(shares_e[:t], p)
+
+    # Linear combination to obtain degree-(t-1) shares of [x * y]
+    term1 = shares_w
+    term2 = mpc_scalar_mul(d, shares_v, p)
+    term3 = mpc_scalar_mul(e, shares_u, p)
+    res = mpc_add(mpc_add(term1, term2, p), term3, p)
+    res = mpc_add_constant((d * e) % p, res, p)
+    return res
 
 if __name__ == "__main__":
+    # 5 MPC servers (n = 5) with reconstruction threshold t = 3 (any 2 servers learn 0 bits)
     t, n = 3, 5
-    salaries = [85000, 92000, 78000]
-    shared = [shamir_share(s, t, n) for s in salaries]
-    total_shares = shared[0]
-    for s in shared[1:]:
-        total_shares = mpc_add(total_shares, s)
-    print("Suma salarial total reconstruida:", lagrange_reconstruct(total_shares[:t]))
+    salaries = [850, 920, 780]  # Example salary units
+
+    # Each engineer splits their secret salary across the 5 servers
+    shared_salaries = [shamir_share(s, t, n) for s in salaries]
+
+    # 1. Compute the sum of salaries locally with zero inter-server communication
+    sum_shares = shared_salaries[0]
+    for s_share in shared_salaries[1:]:
+        sum_shares = mpc_add(sum_shares, s_share)
+
+    # Reconstruct the total from any 3 servers (e.g., servers 1, 3, and 5)
+    subset_3 = [sum_shares[0], sum_shares[2], sum_shares[4]]
+    total_salary = lagrange_reconstruct(subset_3)
+    mean_salary = total_salary / len(salaries)
+    print(f"Reconstructed total (units): {total_salary:,} (mean: {mean_salary:,.2f})")
+
+    # 2. Compute the sum of squares S_2 = x_A^2 + x_B^2 + x_C^2 using Beaver Multiplication Triples
+    sq_sum_shares = shamir_share(0, t, n)
+    for s_share in shared_salaries:
+        triple = generate_beaver_triple(t, n)
+        sq_share = mpc_beaver_mul(s_share, s_share, triple, t)
+        sq_sum_shares = mpc_add(sq_sum_shares, sq_share)
+
+    total_sq = lagrange_reconstruct(sq_sum_shares[:t])
+    variance = (total_sq / len(salaries)) - (mean_salary ** 2)
+    print(f"Reconstructed sum of squares: {total_sq:,} (population variance: {variance:,.2f})")
 ```
 
 ---
@@ -197,7 +268,44 @@ if __name__ == "__main__":
 | Criterio | Computación Multiparte Segura (MPC) | Cifrado Totalmente Homomórfico (FHE) | Pruebas de Conocimiento Cero (ZKP) | Entorno de Ejecución Confiable (TEE) |
 | :--- | :--- | :--- | :--- | :--- |
 | <strong>Problema central</strong> | <strong>Cálculo conjunto</strong> sobre entradas privadas distribuidas $x_1, \dots, x_n$ | <strong>Cálculo ciego en un servidor</strong> sobre textos cifrados $\text{Enc}(x) \mapsto \text{Enc}(f(x))$ | <strong>Demostrar que un secreto $w$ ya conocido</strong> por el probador cumple $f(x, w)=1$ | <strong>Ejecución aislada por hardware</strong> en texto plano dentro de un enclave de CPU |
-| <strong>Cuello de botella</strong> | CPU ultraligera, pero requiere <strong>comunicación en red por capa multiplicativa</strong> | Solo 1 viaje de red, pero <strong>cálculo de CPU $10^3$ a $10^5$ veces más lento</strong> | Verificación instantánea, generación de prueba costosa (MSM / FFT) | Velocidad casi nativa, pero memoria de enclave limitada |
-| <strong>Modelo de confianza</strong> | <strong>Supuesto de no colusión</strong> (menos de $t$ servidores coluden) | <strong>Dureza criptográfica en retículos (RLWE)</strong> | <strong>Solidez matemática</strong> (no combina por sí solo secretos de múltiples partes) | <strong>Confianza en el fabricante (Intel/AMD)</strong>; vulnerable a ataques de canal lateral |
+| <strong>Cuello de botella</strong> | El coste de comunicación depende del protocolo, la profundidad del circuito y la red | El coste de cómputo y comunicación depende del esquema, el circuito y el hardware; no existe un factor de lentitud universal | El coste de probar y verificar depende del sistema y del enunciado | El rendimiento y la memoria protegida dependen de la plataforma y la carga |
+| <strong>Modelo de confianza</strong> | La seguridad de MPC depende del umbral y del modelo de adversario del protocolo; las fugas por resultados, la disponibilidad y la equidad requieren análisis aparte. | <strong>Dureza criptográfica en retículos (RLWE)</strong> | <strong>Solidez matemática</strong> (no combina por sí solo secretos de múltiples partes) | <strong>Confianza en el fabricante (Intel/AMD)</strong>; vulnerable a ataques de canal lateral |
 
-Desde la histórica <strong>subasta doble de remolacha azucarera en Dinamarca en 2008</strong> hasta el <strong>estudio de brecha salarial de Boston (BWWC)</strong>, la <strong>verificación de contraseñas filtradas en Google Chrome y Apple iCloud (Private Set Intersection, PSI)</strong>, los <strong>estudios genómicos interhospitalarios (Secure GWAS)</strong> y las <strong>billeteras criptográficas MPC por umbral (Fireblocks, Coinbase)</strong>, la MPC está reemplazando la confianza institucional por certeza matemática.
+Entre los ejemplos estudiados o desplegados figuran la subasta danesa de remolacha azucarera, la medición de la brecha salarial de Boston, las comprobaciones de contraseñas, la investigación genómica y las firmas distribuidas. El grado de despliegue, el modelo de seguridad y los riesgos restantes varían; MPC no sustituye la confianza institucional por una certeza absoluta.
+
+## 7. Otras PET y sus límites
+
+Nota histórica: el OT de Rabin de 1981 (recepción con probabilidad 1/2) es distinto de la funcionalidad OT 1-de-2 formulada por Even, Goldreich y Lempel en 1985.
+MPC distribuye las entradas y sus garantías dependen del protocolo y del modelo de adversario. FHE permite calcular sobre datos cifrados, pero no verifica automáticamente el cálculo ni evita fugas desde los resultados. Las pruebas de conocimiento cero demuestran afirmaciones sin revelar el testigo, pero no sustituyen el cálculo conjunto. Una TEE procesa texto claro en hardware protegido y exige confiar en este y en la atestación. Se pueden combinar técnicas; costes y garantías dependen del caso.
+
+## 8. Ejemplos
+La subasta danesa de remolacha de 2008 usó MPC entre tres partes; el artículo informa de unas 1.200 entradas, alrededor de 30 minutos de cálculo y 25.000 toneladas de derechos transferidos. BWWC y Boston University publican brechas salariales cada dos años; BWWC indica 103 empleadores y 165.000 trabajadores a tiempo completo en 2023. Google Chrome y Apple documentan comprobaciones de contraseñas distintas basadas en PSI. Un estudio de USENIX de 2023 informó de canales laterales en la implementación de Chrome analizada. GWAS con MPC se ha demostrado en investigación, aunque sus resultados pueden revelar información. Secure Aggregation oculta aportaciones individuales, pero no todo riesgo de inferencia. Las firmas de umbral y la renovación proactiva dependen del protocolo y de las condiciones operativas.
+
+## 9. Conclusión
+MPC reduce la centralización de datos en claro, pero no elimina las fugas desde resultados ni los riesgos operativos, legales o de disponibilidad. Sus garantías dependen del modelo de adversario, los supuestos criptográficos, la implementación y la operación.
+
+**Alcance del ejemplo de código:** Este código Python es una simulación educativa, en un solo proceso, del reparto de secretos y los cálculos en un cuerpo finito. No es un sistema MPC en red donde cada participante conserva únicamente sus propias partes. No implementa controles frente a participantes maliciosos, autenticación ni transporte seguro, preprocesamiento confiable ni límites de entrada y desbordamiento. Los valores reconstruidos por `lagrange_reconstruct` se revelan a quien los reconstruye. No use este ejemplo para proteger datos o activos reales.
+
+
+## Sources
+
+- [Rabin, “How to Exchange Secrets with Oblivious Transfer” (1981)](https://eprint.iacr.org/2005/187.pdf)
+- [Even, Goldreich, and Lempel, “A Randomized Protocol for Signing Contracts” (1985)](https://luca-giuzzi.unibs.it/corsi/Support/papers-cryptography/SigningContracts.pdf)
+
+- [Bogetoft et al., “Secure Multiparty Computation Goes Live” (2009)](https://www.acsu.buffalo.edu/~mblanton/cse715/sugar-beet-auction.pdf)
+- [Boston Women’s Workforce Council: Wage Gap Studies](https://thebwwc.org/wage-gap-studies)
+- [Google: Better password protections in Chrome](https://security.googleblog.com/2019/12/better-password-protections-in-chrome.html)
+- [Apple Platform Security: Password Monitoring](https://support.apple.com/guide/security/password-monitoring-sec78e79fc3b/web)
+- [Kwong et al., USENIX Security 2023: Chrome password-check side channels](https://www.usenix.org/conference/usenixsecurity23/presentation/kwong)
+- [Cho et al., “Secure genome-wide association analysis using multiparty computation” (2018)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5990440/)
+- [Bonawitz et al., Google Research: Practical Secure Aggregation](https://research.google/pubs/practical-secure-aggregation-for-federated-learning-on-user-held-data/)
+- [Canetti et al., “UC Non-Interactive, Proactive, Threshold ECDSA” (2020)](https://eprint.iacr.org/2020/492)
+- [Kumar et al., “Understanding Information Disclosure from Secure Computation Output” (2025)](https://doi.org/10.1145/3705004)
+- [Kolesnikov and Schneider, “Improved Garbled Circuit: Free XOR Gates and Applications” (2008)](https://encrypto.de/papers/KS08XOR.pdf)
+- [Zahur, Rosulek, and Evans, “Two Halves Make a Whole: Reducing Data Transfer in Garbled Circuits using Half Gates” (2015)](https://www.cs.virginia.edu/~evans/pubs/ec2015/halfgates.pdf)
+
+- [Stanford University cryptography notes: Oblivious Transfer](https://crypto.stanford.edu/pbc/notes/crypto/ot.html)
+
+- [A Full Proof of the BGW Protocol for Perfectly Secure MPC](https://doi.org/10.1007/S00145-015-9214-4)
+
+- [Yao, “Protocols for Secure Computations” (FOCS 1982)](https://doi.org/10.1109/SFCS.1982.38)

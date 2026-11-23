@@ -21,7 +21,7 @@
   ],
   "validation": "docs/translation-review/validation-068.json",
   "scope": "Full Japanese source and twelve translations. Meaning, terminology, equations, Python example, Mermaid structures, and references checked; localized implementation notes added in every translation.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Edge-AIの未来とIoTデバイスへの実装アプローチ/index.en.md": {
       "reviewKind": "ai",
@@ -486,5 +486,11 @@
     "Mermaid structures were checked but not rendered or visually inspected.",
     "Direct urllib access to some official pages encountered anti-bot, TLS, or HTTP errors; the official pages were inspected with the web browser tool. Recheck vendor documentation for a concrete deployment.",
     "No medical, industrial-safety, privacy, or regulatory audit was performed."
-  ]
+  ],
+  "publication": {
+    "record": "docs/translation-review/publication-068.json",
+    "ciRun": 45113197164,
+    "deployedCommit": "e03751b3b531c2f603a51b9606a03809182b742e",
+    "allPassed": true
+  }
 }

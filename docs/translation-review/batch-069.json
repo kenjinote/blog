@@ -1,0 +1,494 @@
+{
+  "version": 1,
+  "article": "秘密計算（MPC）とヤオの億万長者問題",
+  "frozenSourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://crypto.stanford.edu/pbc/notes/crypto/ot.html",
+    "https://doi.org/10.1007/S00145-015-9214-4",
+    "https://doi.org/10.1109/SFCS.1982.38",
+    "https://doi.org/10.1145/3705004",
+    "https://encrypto.de/papers/KS08XOR.pdf",
+    "https://eprint.iacr.org/2005/187.pdf",
+    "https://eprint.iacr.org/2020/492",
+    "https://luca-giuzzi.unibs.it/corsi/Support/papers-cryptography/SigningContracts.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5990440/",
+    "https://research.google/pubs/practical-secure-aggregation-for-federated-learning-on-user-held-data/",
+    "https://security.googleblog.com/2019/12/better-password-protections-in-chrome.html",
+    "https://support.apple.com/guide/security/password-monitoring-sec78e79fc3b/web",
+    "https://thebwwc.org/wage-gap-studies",
+    "https://www.acsu.buffalo.edu/~mblanton/cse715/sugar-beet-auction.pdf",
+    "https://www.cs.virginia.edu/~evans/pubs/ec2015/halfgates.pdf",
+    "https://www.usenix.org/conference/usenixsecurity23/presentation/kwong"
+  ],
+  "findings": [
+    "Reframed MPC privacy as a protocol-specific guarantee under an explicit adversary model, security definition, allowed inputs/outputs, and cryptographic assumptions; explained output inference, collusion, implementation, availability, and fairness limits.",
+    "Corrected BGW passive and malicious corruption thresholds in all locales and stated that Beaver triples alone do not determine a corruption threshold or provide active security.",
+    "Repaired the Bellare–Micali OT sketch: a party-known exponent cannot generate the challenge, message privacy depends on group/hash assumptions, and the formula is an educational sketch rather than an implementation specification. Distinguished Rabin OT (1981) from Even–Goldreich–Lempel 1-out-of-2 OT (1985).",
+    "Qualified garbled-circuit processing and Free-XOR cost claims, SPDZ dishonest-majority claims, and Beaver preprocessing claims; removed universal speed and certainty assertions.",
+    "Corrected the Danish auction superlative and removed unsupported claims that servers could never collude; scoped healthcare data-sharing language to applicable law, contracts, ethics, and institutional policy.",
+    "Aligned the complete Python example across all 13 editions. Each version parses and executes with matching outputs: total 2,550, mean 850.00, and population variance 3,266.67.",
+    "Added common primary-source references for Yao (1982), BGW, SPDZ, and OT; all 13 editions now share the same 16-reference URL set."
+  ],
+  "validation": "docs/translation-review/validation-069.json",
+  "scope": "Full Japanese source and all twelve translations. Compared complete available editions for meaning, terminology, applicable mathematics, code, and links. Non-English editions are intentionally concise and do not reproduce every derivation/subheading one-to-one.",
+  "publicationPending": true,
+  "reviews": {
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "0ae3532d38a500d04fee85fccd4804751ec314bb5a5d63e9ad05894b0c396eb7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full en edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: How parties jointly compute without revealing private inputs: MPC and Yao’s Millionaires’ Problem.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "91aa057e3226adf73ce999c3038cbc8771d6da2d6385405744f6a1de3f9b7d0c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full zh-cn edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: 如何在不公开私有输入的情况下协同计算：MPC与姚氏百万富翁问题.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "0dc7707b80b97f491eecb8f04b403b9387396474462df38e3a0dcaf0772eb33b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full es edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: Cómo calcular en conjunto sin revelar las entradas privadas: MPC y el problema de los millonarios de Yao.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "100a0486c281ff56210c5b342c4c61578ea403a24f3eeaa4fe09e6707c95212e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full ko edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: 개인 입력을 공개하지 않고 함께 계산하는 방법: MPC와 야오의 백만장자 문제.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "0ad9671d496278432139d22a82eed7f96844820f3538604ac3098902eee83c79",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full pt edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: Como calcular em conjunto sem revelar entradas privadas: MPC e o problema dos milionários de Yao.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "0e7380e3aca614f6ffadfe059fa6201c693a943c82e3e8d569fcd295b7f1ca81",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full zh-tw edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: 如何在不公開私有輸入的情況下協同計算：MPC與姚氏百萬富翁問題.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "5752570fe1ed93ecd378fe224ea3b689784a08aba8ca911618191ea7dd0b41b1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full hi edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: निजी इनपुट उजागर किए बिना मिलकर गणना: MPC और याओ की करोड़पति समस्या.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "554e5cca15b4f24d1449133cff329a97dab3c43aae1f972f0ab8becaac99bec1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full fr edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: Calculer ensemble sans révéler les entrées privées : MPC et le problème des millionnaires de Yao.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "432cd33fa4a1a304eabf5daca520f4e9bce119f8e97b9ab19484fd7e42a9bcab",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full de edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: Wie Parteien gemeinsam rechnen, ohne private Eingaben offenzulegen: MPC und Yaos Millionärsproblem.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "363667a87dd5c9d10f1d0f5b052312576fce70efe29047a906342650c78338e2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full ar edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: كيف تحسب الأطراف معًا دون كشف المدخلات الخاصة: MPC ومسألة المليونيرات لياو.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "66b4cbebcebc96859edd634dcea6d153e192712d8265c3a1776ae25d86bd49ae",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full ru edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: Как совместно вычислять, не раскрывая частные входные данные: MPC и задача миллионеров Яо.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    },
+    "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/secure-multi-party-computation-mpc-yaos-millionaires-shamir-secret-sharing-garbled-circuits/index.ja.md",
+      "sourceHash": "4cc4d09614a7b923f4651438eb90ff81c7d3ed8e365dd97ddd94cf44818d9792",
+      "translationHash": "913f65086794222c30c37f3d2e6818c96bb855a8d037b7cc1bf136b637ed3143",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and this entire localized edition, comparing its sections and claims. Corrected security scope, output leakage, threat-model assumptions, and overstatements in applications. This locale condenses some derivations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked MPC, ideal/real simulation, Shamir sharing, BGW thresholds, Beaver triples, SPDZ, OT, garbled circuits, PETs, PSI, Secure Aggregation, and threshold signatures."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the applicable formulas and statements for field arithmetic, thresholds, Beaver multiplication, outputs, and variance. The localized concise edition summarizes several derivations rather than reproducing every Japanese/English equation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Parsed and executed this edition’s common Python sample. It computes total 2,550, mean 850.00, and population variance 3,266.67; this remains a single-process teaching simulation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified this edition has the same 16-link reference set, including Rabin OT, Even-Goldreich-Lempel, Yao FOCS 1982, BGW proof, SPDZ, secure aggregation, and garbled-circuit sources. Key primary sources were checked during the review."
+        }
+      },
+      "summary": "Compared the full id edition with the Japanese source and applied localized corrections for security assumptions, output leakage, BGW and Beaver thresholds, OT history/assumptions, performance claims, and application evidence. Confirmed title: Menghitung bersama tanpa mengungkap input pribadi: MPC dan masalah jutawan Yao.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The non-English editions are concise localized versions; detailed derivations and subheadings are not line-for-line identical to the Japanese and English editions.",
+        "The Python block is an educational single-process simulation, not a distributed MPC implementation; no production deployment or malicious-party protocol was implemented.",
+        "Mermaid graphs were structurally read in source but not rendered or visually inspected locally.",
+        "This review is not an independent cryptographic proof, security audit, or legal/compliance assessment."
+      ]
+    }
+  }
+}
