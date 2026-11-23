@@ -1,0 +1,483 @@
+{
+  "version": 1,
+  "article": "Choosing OpenAI, Gemini, and Claude APIs using current official catalogs and task-specific evaluation",
+  "frozenSourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://developers.openai.com/api/docs/models",
+    "https://developers.openai.com/api/docs/pricing",
+    "https://developers.openai.com/api/docs/guides/your-data",
+    "https://ai.google.dev/gemini-api/docs/models",
+    "https://ai.google.dev/gemini-api/docs/pricing",
+    "https://ai.google.dev/gemini-api/docs/usage-policies",
+    "https://platform.claude.com/docs/en/about-claude/models/overview",
+    "https://platform.claude.com/docs/en/about-claude/pricing",
+    "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention"
+  ],
+  "findings": [
+    "Removed stale 2024/2026 snapshot claims, obsolete model IDs, blanket provider winners, unsupported quality/latency assertions, and old SDK examples; model catalogs and pricing pages now carry volatile details.",
+    "Added a reproducible evaluation workflow with matched inputs and settings, task-specific scoring, multiple runs, gradual rollout, and explicit benchmark comparability caveats.",
+    "Added latency (TTFT and tail percentiles), per-task cost, retries, caching/batch eligibility, tool authorization, RAG/context tradeoffs, and operational considerations without claiming benchmark results.",
+    "Corrected the blanket claim that API data is never retained or used: directs readers to product/tier/feature/contract-specific provider documentation and distinguishes cloud-provider data processing paths.",
+    "Preserved original publication date 2026-09-11, added localized lastmod/descriptions, and compared Japanese source with all twelve complete language editions."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "d75aa53ad42b79808f38dcab93b5d112678cb610ad006ac56c343881a5e96b2d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "2f14d4afffd0b7ec8dee34cfcec23e3ea7cacb78a1e35165a1bf0d763c3f43df",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "45988ff609ebf44b41cf1f6af0d51e87c02bde24ab13ee1b278f49fdb914dc8c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "11cb46eee459fd6099cad2ca67883a8b84ea1e26902efbcf4b8424149962bd03",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "e90f7df485d2a9f5339caad4d06a87df1d72993149bf44d2b7e29fbaddeafb3e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "595d2108f29e910587c19ef469beb1de04b969f5153ab6e5bb03d224803a95c9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "d395a9852f55c7001d1dab923495a436b2c67ae1e53110ec4cabf430cfc22dfe",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "9c7b1d9f6feed04777221025e65880dacd5e55ff3bd4e3072cba24f7789ad63a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "766bada667bd997e0b0f415f960f471e152201d93c1296dbe53e221207a70eac",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "94143d266087b578696976a196b5d730907bed62259d24b3aaa84714c81dd13d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "9d309103ca7b3894916a4e7969953540e437a5883a707c13621c2a21f5b05503",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "006ba9101abb758101374989903f2b201535ef5d87a3372779b1e0e94a165a15",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese article: API versus consumer products, official model catalogs, task-specific evaluation, benchmark limitations, latency/cost/operations, provider features, RAG versus context, data handling, security checks, selection process, scope, and update date."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for API, model catalog and ID, endpoint, evaluation set, benchmark, token/TTFT/p95, prompt caching, batch processing, SDK, tool call, RAG, data processor, retention, and zero data retention."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The revised article contains no mathematical derivation, formula, or numerical comparison; it avoids unsupported fixed benchmark and price claims."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The revised article has no source-code examples or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared the official OpenAI, Gemini, and Claude model-catalog, pricing, and data-policy links across all editions; all links target provider primary documentation. Link reachability and project-specific terms were not tested here."
+        }
+      },
+      "summary": "Replaced obsolete fixed model rankings, model names, pricing/performance claims, and dated SDK examples with a reproducible provider-neutral method for comparing current models on the reader’s own task, while aligning all sections and official references with the Japanese source.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No provider API calls, benchmark runs, load tests, implementation, or production measurement were performed.",
+        "Model availability, pricing, feature support, and data terms are dynamic; confirm the linked current documentation and applicable contract at implementation time.",
+        "This editorial comparison is not legal or security certification.",
+        "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
+      ]
+    }
+  }
+}

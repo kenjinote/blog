@@ -7445,6 +7445,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-061.json",
       "evidenceHash": "cbca3b389e08bec1c2b8019e742c5fdd660fa4579fdc239437784efe63e78f00"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.en.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "d75aa53ad42b79808f38dcab93b5d112678cb610ad006ac56c343881a5e96b2d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "ec95c525af7cb83252d46f04c27fdeead1f1f4566f0d20b79565f6a6448e4d7f"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.zh-cn.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "2f14d4afffd0b7ec8dee34cfcec23e3ea7cacb78a1e35165a1bf0d763c3f43df",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "b76e5771ecfef1214797b05d36ba89480dd91597894b8df254f17f6401455c06"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.es.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "45988ff609ebf44b41cf1f6af0d51e87c02bde24ab13ee1b278f49fdb914dc8c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "e2566240148adc9770a04f5df160084f7448d1cae6d744cef69259528418b5be"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.ko.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "11cb46eee459fd6099cad2ca67883a8b84ea1e26902efbcf4b8424149962bd03",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "1baf1d3c5a4b1a35c1f7bfda1e14e5f7d29064718f4527ee41e0088f8d796089"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.pt.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "e90f7df485d2a9f5339caad4d06a87df1d72993149bf44d2b7e29fbaddeafb3e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "de8e2ffc055b109ad729ffebd309dba129332684807d790ac3edc43c818df430"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.zh-tw.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "595d2108f29e910587c19ef469beb1de04b969f5153ab6e5bb03d224803a95c9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "f2036b6c9a4fab954ab2f5455f383e413f477f34a99ff7c5927dbee30950896d"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.hi.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "d395a9852f55c7001d1dab923495a436b2c67ae1e53110ec4cabf430cfc22dfe",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "29f5b22bd098efad0051dc0d92b300b3e105d9ebb66c9034bd52c1ea739b912f"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.fr.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "9c7b1d9f6feed04777221025e65880dacd5e55ff3bd4e3072cba24f7789ad63a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "f01c9b6326c9a43008bd8fa0d36acb44bd96b6df4316d5760516ca1e23225043"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.de.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "766bada667bd997e0b0f415f960f471e152201d93c1296dbe53e221207a70eac",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "be2b8c60871a12d87c97b87aa24c51c70335867229fea594fe6f95ae5dd50d93"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.ar.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "94143d266087b578696976a196b5d730907bed62259d24b3aaa84714c81dd13d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "3ecb89ab3f61d73fc2e7c56d193d481e3ef157d042b2ff0b9f3d7f9a50964b6a"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.ru.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "9d309103ca7b3894916a4e7969953540e437a5883a707c13621c2a21f5b05503",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "cbdfe6f43015000a6ca7c460364e25587d6d6037ef32f75be338cd9b2d2edc45"
+    },
+    "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.id.md": {
+      "source": "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "56809ec0a08ff5aebad42df7689b21fbccc3682ad6d9a88ec2ab8fee18525b58",
+      "translationHash": "006ba9101abb758101374989903f2b201535ef5d87a3372779b1e0e94a165a15",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-062.json",
+      "evidenceHash": "ba1842618afe716d959593e9d79c4733abe7a7d3bd527e3c1164f6b446b25283"
     }
   }
 }
