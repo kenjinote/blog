@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "batch": 76,
+  "article": "Githubリポジトリにカスタムドメインを設定する方法",
+  "verifiedAt": "2026-11-23",
+  "ciRun": 45147140727,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45147140727",
+  "sourceCommit": "3823870a5e14e1d8deb8cd22d4e747b7aa995aec",
+  "deployment": "success",
+  "pagesVerified": 13,
+  "checks": [
+    "HTTP 200 on all 13 localized pages",
+    "canonical, language metadata, Arabic RTL, and reciprocal 14-label hreflang maps including x-default",
+    "non-empty titles and descriptions; lastmod 2026-11-23",
+    "all GitHub Pages IPv4 A and IPv6 AAAA addresses in the DNS table",
+    "all five official GitHub Pages documentation links in every edition",
+    "Resolve-DnsName and dig commands in the published article",
+    "old Onamae.com walkthrough and affiliate tracking links absent"
+  ],
+  "result": "passed"
+}

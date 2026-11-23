@@ -8765,6 +8765,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-075.json",
       "evidenceHash": "89e293c34cb59f181a75a1466d6d774aa031478d497a1ced8489adf3570b99f5"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.ar.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "a313d1197038f0c3d0916e2e8d13cbb54a54414fb63c0370c577a06fce84ab3a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "e89b67e1973b4fb09f9f281291e110bf5f68a0fde6efd895fde99f62bf9d205f"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.de.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "30ec81410d1342d95595d418e74b1e8b635ab093e27ca42e1c4957f75e917fb3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "67a169096b9518330fd9df2ef1e1fc11c16fffd76db2d20af7429d91710457da"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.en.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "9342d276d461f31cc88fb03f6041ace288c46bd080c2d28bbf97911e805b2a3d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "b224146878c8ba8cb9536464c0d19ee3e841d476ebb0c776925ad786190e38b7"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.es.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "1fa6a6193231e800c333adeceac35f297cf315aa78744473e6096c8feedf2568",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "df01debad4d1c47dd87ad405586d12fd0294325a8b00a13c8ceba63b9ddc661f"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.fr.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "3f00305e415778087105697fd43442ab29e0d795e404e88d36285909ce0cdbae",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "6982b06680b41b6dde1aaf8b12412e993bd3f9ef2eed95e473127a07b6da6082"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.hi.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "6ad09c0cf09d34fbe5139bf3afd8c7f2bb13c34f59ee702e271d6d1489deb72e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "79137639a014b714f69678b179c0bdd06f3395605131543841fff6cb615d4608"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.id.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "f64c4e440c9a94e034ed6c5f876bbd9d4465eaab3a6f3aed5c48baf4978b5ecc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "27dc029e83cc98eba600301c8584ba3ea37f920394a3a78f022f86a3c29965a1"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.ko.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "e2f743c3f0edc219f62fa793520c460f30269a12f3162462e5efd4f09fc7dad5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "430d1c8ce19e9e7cd1bf62075944c0c419af9d25a27fa06793c0171d38528f04"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.pt.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "f00fed4fcca42c0b6943c10a0e17184012c459c2bf9aea9741e577e24c1b037d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "05b3441290b068687e0ddc1f59a02b176176b67e507d2ffb719401d31b876321"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.ru.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "e240224997fffa54fc112333204287c649780cc9bfb7e9b63fcc2a9054e85fb0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "6dab35926722899a7e019fba4df1f0ea4e2aeee3eab97f24efd0590d657aad88"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.zh-cn.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "8f01b0a463f71069cb98d19b1c58efa46a5a7e1c04ddf4aa2fcd66c65638738a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "fcf4e450ec13a327fd8748e6098950e92024694b83142266c1bb7d5c37d1ba77"
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.zh-tw.md": {
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "85e62a8e39f62ecb7c48658853b1aef0b36b599d3fea60bc932c6e7f228ac7ae",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-076.json",
+      "evidenceHash": "65460a462b6b7e93edd62ef798a3bf90d97b5dcb7d670b74adb49707254367ba"
     }
   }
 }

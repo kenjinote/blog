@@ -18,7 +18,7 @@
   ],
   "validation": "docs/translation-review/validation-076.json",
   "scope": "Read the full Japanese article and all twelve translations. Checked current official GitHub Pages guidance, domain security, DNS records and addresses, verification order, propagation, HTTPS, and publishing workflow notes.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Githubリポジトリにカスタムドメインを設定する方法/index.ar.md": {
       "reviewKind": "ai",
@@ -452,5 +452,6 @@
         "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
       ]
     }
-  }
+  },
+  "publicationReceipt": "docs/translation-review/publication-076.json"
 }
