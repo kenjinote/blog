@@ -13,7 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 ## Pendahuluan
@@ -54,7 +54,7 @@ Jika XSS berhasil, skrip penyerang akan dijalankan di browser pengguna dengan or
 1.  **Pembajakan sesi (Session Hijacking):** Jika cookie autentikasi tidak memiliki `HttpOnly`, penyerang dapat mencuri ID sesinya melalui `document.cookie`. Bahkan dengan `HttpOnly`, XSS masih dapat mengirim permintaan terautentikasi atas nama pengguna.
 2.  **Mengeksekusi Operasi Tanpa Izin:** Menjalankan operasi sewenang-wenang dalam aplikasi (mengubah kata sandi, mentransfer uang, mengirim pesan, dll.) di latar belakang dengan hak istimewa pengguna.
 3.  **Phishing:** Menggambar formulir login palsu di DOM untuk mencuri informasi autentikasi pengguna secara langsung.
-4.  **Distribusi Malware:** Mengalihkan browser pengguna ke exploit kit untuk menginfeksi PC dengan malware.
+4.  **Distribusi Malware:** Dalam kampanye yang juga mengeksploitasi kerentanan browser yang belum ditambal, pengalihan ke konten berbahaya dapat turut menyebabkan infeksi malware.
 
 ### Langkah Pertahanan Modern Terhadap XSS
 
@@ -68,7 +68,7 @@ CSP adalah mekanisme pertahanan yang sangat kuat terhadap XSS yang menggunakan h
 ```http
 Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com;
 ```
-Dengan ini, bahkan jika penyerang berhasil menyuntikkan skrip sebaris `<script>alert(1)</script>`, eksekusinya akan diblokir oleh CSP.
+Ini adalah contoh sederhana dengan daftar host yang diizinkan. CSP merupakan lapisan pertahanan tambahan, bukan pengganti pengodean output sesuai konteks, API DOM yang aman, atau sanitasi HTML. Untuk produksi, utamakan kebijakan ketat berbasis nonce atau hash jika memungkinkan, dan batasi host tepercaya dengan cermat.
 
 #### 3. Pemanfaatan Atribut HttpOnly Cookie
 Dengan menambahkan atribut `HttpOnly` ke Cookie yang menyimpan ID sesi, Cookie tersebut tidak dapat diakses dari JavaScript (misalnya, `document.cookie`). Walaupun hal ini tidak mencegah terjadinya XSS itu sendiri, ini merupakan langkah mitigasi penting yang secara drastis mengurangi risiko pembajakan sesi karena XSS.
@@ -88,6 +88,7 @@ Browser melampirkan cookie secara otomatis jika syarat pengirimannya terpenuhi, 
 **Skenario serangan:**
 
 Contoh pembelajaran ini mengasumsikan aplikasi yang rentan: cookie autentikasinya mengizinkan pengiriman lintas situs dengan `SameSite=None; Secure`, tanpa validasi token CSRF maupun pemeriksaan Origin. `bank.example` dan `attacker.invalid` adalah domain cadangan untuk contoh yang berada di situs berbeda.
+Contoh ini juga mengasumsikan bahwa pengaturan dan fitur privasi browser pengguna mengizinkan pengiriman cookie lintas situs (pihak ketiga) ini.
 1.  Pengguna login ke situs bank (`bank.example`) dan menerima Cookie sesi.
 2.  Pengguna membuka situs jebakan penyerang (`attacker.invalid`) di tab lain.
 3.  Situs jebakan dilengkapi dengan formulir tersembunyi dan skrip pengiriman otomatis seperti berikut:
@@ -159,3 +160,7 @@ Penting bagi pengembang untuk tidak terlalu percaya pada fitur keamanan yang dis
 
 - [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+- [OWASP: DOM based XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+- [OWASP: Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
+- [MDN: Cross-site request forgery (CSRF)](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF)
+- [MDN: Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)

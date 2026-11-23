@@ -18,7 +18,7 @@
     "Added task/data classification, routing examples, task-specific evaluation, total cost including local hardware and review, current Ollama/Continue configuration, least privilege, human approval, and prompt-injection caution.",
     "Preserved original publication date 2026-09-11, added localized lastmod/descriptions, and compared Japanese with all twelve complete translations."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/CopilotとローカルAIの使い分けで開発効率を爆上げする/index.en.md": {
       "reviewKind": "ai",
@@ -476,5 +476,11 @@
         "The revised pages are not live-verified yet; add a publication receipt after successful CI deployment and checks of all thirteen pages."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-063.json",
+    "ciRun": 45100922483,
+    "deployedCommit": "e9954273fd738e59b95b58dd86fbfd87a068bda6",
+    "allPassed": true
   }
 }

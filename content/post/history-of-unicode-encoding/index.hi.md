@@ -6,7 +6,7 @@ categories: ["history", "biography"]
 tags: ["tech", "history", "unicode", "character-encoding"]
 image: "eyecatch.jpg"
 slug: "history-of-unicode-encoding"
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 # यूनिकोड का इतिहास: मोजिबाके (Mojibake) के खिलाफ लड़ाई ने दुनिया भर के वर्णों को कैसे एकजुट किया
@@ -66,9 +66,10 @@ UTF-8 की डिज़ाइन को कंप्यूटर विज्�
 
 ## 5. सरोगेट पेयर समस्या और इमोजी (Emoji) का उदय
 
-UTF-16 पूरक तल के एक कोड पॉइंट को दो 16-बिट कोड यूनिट के जोड़े, यानी सरोगेट पेयर, से दर्शाता है। JavaScript स्ट्रिंग की `length` UTF-16 कोड यूनिट गिनती है; इसलिए `"😂".length` का मान 2 है। यह विनिर्देश के अनुरूप है, लेकिन इसे दिखाई देने वाले वर्णों की गिनती मानने से बग हो सकते हैं। ZWJ इमोजी अनुक्रमों में कोड पॉइंट की संख्या भी दिखाई देने वाले वर्णों की संख्या से अलग हो सकती है।
+UTF-16 पूरक तल के एक कोड पॉइंट को दो 16-बिट कोड यूनिट के जोड़े, यानी सरोगेट पेयर, से दर्शाता है। JavaScript स्ट्रिंग की [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) UTF-16 कोड यूनिट गिनती है; इसलिए `"😂".length` का मान 2 है। यह विनिर्देश के अनुरूप है, लेकिन इसे दिखाई देने वाले वर्णों की गिनती मानने से बग हो सकते हैं। ZWJ इमोजी अनुक्रमों में कोड पॉइंट की संख्या भी दिखाई देने वाले वर्णों की संख्या से अलग हो सकती है।
+उपयोगकर्ता को एक इकाई के रूप में दिखाई देने वाला पाठ अक्सर Unicode के [पाठ-विभाजन नियमों](https://unicode.org/reports/tr29/) के अनुसार ग्रैफीम क्लस्टर से दर्शाया जाता है। ZWJ इमोजी अनुक्रम में कई कोड पॉइंट हो सकते हैं, फिर भी वह एक विस्तारित ग्रैफीम क्लस्टर बन सकता है।
 
-2010 में जारी यूनिकोड 6.0 ने जापानी मोबाइल ऑपरेटरों Docomo, au और SoftBank में उपयोग होने वाले अनेक इमोजी जोड़े। इमोजी की तरह इस्तेमाल होने वाले कुछ प्रतीक पहले के संस्करणों में ही एन्कोड थे; सभी इमोजी पहली बार 6.0 में नहीं आए।
+Unicode जापानी मोबाइल ऑपरेटरों द्वारा उपयोग किए गए 722 इमोजी वर्णों का एक समूह परिभाषित करता है। इनमें से 114 Unicode 5.2 या उससे पहले ही एन्कोड हो चुके थे; शेष 608 को 2010 में Unicode 6.0 में जोड़ा गया।
 
 इमोजी की शुरुआत के साथ, यूनिकोड "वर्णों" की सीमा को पार कर गया और भावनाओं और अवधारणाओं को संप्रेषित करने वाली एक सार्वभौमिक दृश्य भाषा (visual language) में विकसित हो गया। इसके अलावा, आधुनिक विविधता (diversity) को दर्शाने के लिए स्किन टोन बदलने (Skin Tone Modifier) और कई इमोजी को जोड़कर एक नया इमोजी बनाने के तंत्र (ZWJ: Zero Width Joiner) जैसे जटिल विनिर्देश भी एक के बाद एक जोड़े गए हैं।
 
@@ -90,3 +91,7 @@ graph TD
 
 - [Unicode FAQ: UTF-8, UTF-16, UTF-32 & BOM](https://www.unicode.org/faq/utf_bom.html)
 - [Rob Pike: UTF-8 history](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt)
+- [Unicode Technical Standard #51: Unicode Emoji](https://unicode.org/reports/tr51/)
+- [Unicode Standard Annex #29: Unicode Text Segmentation](https://unicode.org/reports/tr29/)
+- [IETF RFC 3629: UTF-8](https://www.rfc-editor.org/rfc/rfc3629.html)
+- [MDN: String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)

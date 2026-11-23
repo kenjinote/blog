@@ -2,7 +2,7 @@
 title: "Théorème central limite : conditions et approximation normale de la moyenne empirique"
 description: "Une explication détaillée du Théorème Central Limite, l'un des théorèmes les plus importants en statistiques, de la compréhension intuitive à la preuve mathématique et la simulation avec Python."
 date: 2026-09-14T13:20:38+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Théorème Central Limite", "Probabilités", "Science des Données", "Python"]
@@ -105,13 +105,13 @@ Lorsque les conditions du TCL sont remplies et que l’échantillon est suffisam
 Lorsque nous déduisons quelque chose à partir des données, comme dans les sondages d'opinion, le contrôle qualité ou les tests A/B, une grande partie du raisonnement repose sur le Théorème Central Limite.
 
 ### 5.2 Accumulation des Erreurs
-Les erreurs de mesure et de nombreux bruits naturels peuvent être modélisés comme des sommes de petits facteurs indépendants ; une approximation normale peut alors être adaptée. La loi normale est aussi appelée loi gaussienne.
+Les erreurs de mesure et de nombreux bruits naturels peuvent être modélisés comme des sommes de petits facteurs. Une approximation normale peut être adaptée si des hypothèses telles que l’indépendance et une variance finie sont plausibles. La loi normale est aussi appelée [loi gaussienne](/fr/p/gauss/).
 
 ## 6. Pour Aller Plus Loin : Approche de la Preuve
 
-Les fonctions caractéristiques et le développement de Taylor sont utilisés pour une preuve stricte du Théorème Central Limite. En voici un bref aperçu.
+Les fonctions caractéristiques et le [développement de Taylor](/fr/p/taylor-and-maclaurin-series/) sont utilisés pour une preuve stricte du Théorème Central Limite. En voici un bref aperçu.
 
-En utilisant la fonction caractéristique $\phi_X(t) = E[e^{itX}]$, la fonction caractéristique de la somme de variables aléatoires indépendantes est le produit de leurs fonctions caractéristiques respectives. Lorsque nous calculons la fonction caractéristique de la variable standardisée $Z$ et prenons la limite pour $n \to \infty$, on peut montrer qu'elle converge vers $e^{-t^2/2}$, qui est la fonction caractéristique de la distribution normale standard. Cela prouve que la distribution elle-même converge vers une distribution normale.
+En utilisant la fonction caractéristique $\phi_X(t) = E[e^{itX}]$, la fonction caractéristique de la somme de variables aléatoires indépendantes est le produit de leurs fonctions caractéristiques respectives. Lorsque nous calculons la fonction caractéristique de la variable standardisée $Z$ et prenons la limite pour $n \to \infty$, on peut montrer qu'elle converge vers $e^{-t^2/2}$, qui est la fonction caractéristique de la distribution normale standard. Cela montre que la distribution de la variable standardisée converge vers la loi normale standard.
 
 ## 7. Conclusion
 

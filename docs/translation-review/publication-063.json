@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-23T12:07:17.303457+09:00",
+  "ciRun": 45100922483,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45100922483",
+  "deployedCommit": "e9954273fd738e59b95b58dd86fbfd87a068bda6",
+  "allPassed": true,
+  "scope": "Batch 063 Japanese source and twelve translations; live HTTP, metadata, canonical, language/RTL, reciprocal hreflang, Copilot data-policy references, local and cloud Ollama endpoints, and Continue configuration.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/hybrid-ai-development-workflow/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "originalDate": true,
+        "lastmod": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "cloudAndLocalPaths": true,
+        "setupExample": true,
+        "noStaleModelSnapshot": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "Ollama was not installed or run; no provider API calls, performance benchmarks, or security audit were performed."
+  ]
+}

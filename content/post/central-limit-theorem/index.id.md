@@ -2,7 +2,7 @@
 title: "Teorema limit pusat: syarat dan pendekatan normal untuk rata-rata sampel"
 description: "Penjelasan terperinci tentang Teorema Limit Pusat, salah satu teorema paling penting dalam statistik, dari pemahaman intuitif hingga bukti matematika dan simulasi dengan Python."
 date: 2026-09-14T13:20:38+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Teorema Limit Pusat", "Probabilitas", "Ilmu Data", "Python"]
@@ -105,13 +105,13 @@ Jika syarat CLT terpenuhi dan ukuran sampel cukup besar, pendekatan normal untuk
 Saat kita menyimpulkan sesuatu dari data, seperti dalam jajak pendapat, kontrol kualitas, atau pengujian A/B, sebagian besar dasar pemikirannya bergantung pada Teorema Limit Pusat.
 
 ### 5.2 Akumulasi Kesalahan
-Kesalahan pengukuran dan banyak sumber derau alami dapat dimodelkan sebagai jumlah faktor-faktor kecil yang independen, sehingga pendekatan normal mungkin sesuai. Distribusi normal juga disebut distribusi Gaussian.
+Kesalahan pengukuran dan banyak sumber derau alami dapat dimodelkan sebagai jumlah faktor-faktor kecil. Pendekatan normal mungkin sesuai jika asumsi seperti independensi dan varians berhingga masuk akal. Distribusi normal juga disebut [distribusi Gaussian](/id/p/gauss/).
 
 ## 6. Lebih Mendalam: Pendekatan Pembuktian
 
-Fungsi karakteristik dan ekspansi Taylor digunakan untuk pembuktian yang ketat untuk Teorema Limit Pusat. Berikut ini ringkasannya.
+Fungsi karakteristik dan [ekspansi Taylor](/id/p/taylor-and-maclaurin-series/) digunakan untuk pembuktian yang ketat untuk Teorema Limit Pusat. Berikut ini ringkasannya.
 
-Menggunakan fungsi karakteristik $\phi_X(t) = E[e^{itX}]$, fungsi karakteristik dari jumlah variabel acak independen adalah hasil kali dari masing-masing fungsi karakteristiknya. Ketika kita menghitung fungsi karakteristik dari variabel terstandarisasi $Z$ dan mengambil batas saat $n \to \infty$, itu dapat terbukti konvergen ke $e^{-t^2/2}$, yang merupakan fungsi karakteristik dari distribusi normal standar. Hal ini membuktikan bahwa distribusinya sendiri konvergen ke distribusi normal.
+Menggunakan fungsi karakteristik $\phi_X(t) = E[e^{itX}]$, fungsi karakteristik dari jumlah variabel acak independen adalah hasil kali dari masing-masing fungsi karakteristiknya. Ketika kita menghitung fungsi karakteristik dari variabel terstandarisasi $Z$ dan mengambil batas saat $n \to \infty$, itu dapat terbukti konvergen ke $e^{-t^2/2}$, yang merupakan fungsi karakteristik dari distribusi normal standar. Ini menunjukkan bahwa distribusi variabel terstandarisasi konvergen ke distribusi normal standar.
 
 ## 7. Kesimpulan
 

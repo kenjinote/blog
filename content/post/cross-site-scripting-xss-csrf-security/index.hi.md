@@ -13,7 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 ## परिचय
@@ -54,7 +54,7 @@ DOM-आधारित XSS तब होता है जब क्लाइं�
 1.  **सत्र अपहरण (Session Hijacking):** यदि प्रमाणीकरण Cookie में `HttpOnly` नहीं है, तो हमलावर `document.cookie` से सत्र ID चुरा सकता है। `HttpOnly` होने पर भी XSS उपयोगकर्ता की ओर से प्रमाणित अनुरोध भेज सकता है।
 2.  **अनधिकृत कार्यों का निष्पादन:** उपयोगकर्ता के अधिकार के साथ, एप्लिकेशन के भीतर कोई भी मनमाना कार्य (पासवर्ड बदलना, पैसे भेजना, संदेश भेजना आदि) बैकग्राउंड में निष्पादित किया जाता है।
 3.  **फिशिंग (Phishing):** DOM पर एक नकली लॉगिन फॉर्म बनाकर उपयोगकर्ता की प्रमाणीकरण जानकारी सीधे चुरा ली जाती है।
-4.  **मैलवेयर वितरण:** उपयोगकर्ता के ब्राउज़र को एक्सप्लॉइट किट पर रीडायरेक्ट करके पीसी को मैलवेयर से संक्रमित किया जाता है।
+4.  **मैलवेयर वितरण:** ऐसे अभियानों में जो ब्राउज़र की अनपैच्ड कमजोरियों का भी फायदा उठाते हैं, दुर्भावनापूर्ण सामग्री पर रीडायरेक्ट करना मैलवेयर संक्रमण का कारण बन सकता है।
 
 ### XSS के खिलाफ आधुनिक सुरक्षा उपाय
 
@@ -68,7 +68,7 @@ CSP, XSS के खिलाफ एक बहुत ही शक्तिशा
 ```http
 Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com;
 ```
-इससे, भले ही कोई हमलावर इनलाइन स्क्रिप्ट `<script>alert(1)</script>` को इंजेक्ट करने में सफल हो जाए, CSP द्वारा इसका निष्पादन रोक दिया जाएगा।
+यह अनुमत होस्ट की सूची वाला एक सरल उदाहरण है। CSP, संदर्भ के अनुसार आउटपुट एन्कोडिंग, सुरक्षित DOM API या HTML सैनिटाइजेशन का विकल्प नहीं, बल्कि अतिरिक्त रक्षा-परत है। उत्पादन में जहाँ व्यावहारिक हो, nonce या hash वाली सख्त नीति अपनाएँ और विश्वसनीय होस्ट को सावधानी से सीमित करें।
 
 #### 3. HttpOnly Cookie विशेषता का उपयोग
 सत्र ID आदि को संग्रहीत करने वाली Cookie में `HttpOnly` विशेषता जोड़कर, JavaScript (जैसे `document.cookie`) से उस Cookie तक पहुंच को रोका जा सकता है। यह XSS की घटना को स्वयं नहीं रोकता है, लेकिन यह एक महत्वपूर्ण शमन उपाय है जो XSS के कारण सत्र अपहरण के जोखिम को काफी कम कर देता है।
@@ -88,6 +88,7 @@ Cookie भेजने की शर्तें पूरी होने प�
 **हमले का परिदृश्य:**
 
 यह शैक्षिक उदाहरण एक असुरक्षित एप्लिकेशन मानता है: प्रमाणीकरण Cookie `SameSite=None; Secure` के साथ क्रॉस-साइट भेजी जा सकती है, और CSRF टोकन या Origin की जाँच नहीं होती। `bank.example` और `attacker.invalid` अलग-अलग साइटों के आरक्षित उदाहरण डोमेन हैं।
+यह उदाहरण यह भी मानता है कि उपयोगकर्ता के ब्राउज़र की सेटिंग और गोपनीयता सुविधाएँ इस क्रॉस-साइट (तृतीय-पक्ष) Cookie को भेजने की अनुमति देती हैं।
 1.  उपयोगकर्ता बैंक साइट (`bank.example`) में लॉग इन करता है और एक सत्र Cookie प्राप्त करता है।
 2.  उपयोगकर्ता एक अलग टैब में हमलावर की ट्रैप साइट (`attacker.invalid`) देखता है।
 3.  ट्रैप साइट में निम्नलिखित जैसा एक छिपा हुआ फॉर्म और एक स्वचालित ट्रांसमिशन स्क्रिप्ट है:
@@ -159,3 +160,7 @@ graph TD
 
 - [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+- [OWASP: DOM based XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+- [OWASP: Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
+- [MDN: Cross-site request forgery (CSRF)](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF)
+- [MDN: Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)

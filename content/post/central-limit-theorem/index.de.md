@@ -2,7 +2,7 @@
 title: "Zentraler Grenzwertsatz: Bedingungen und Normalapproximation des Stichprobenmittelwerts"
 description: "Eine detaillierte Erklärung des zentralen Grenzwertsatzes, eines der wichtigsten Theoreme der Statistik, vom intuitiven Verständnis über den mathematischen Beweis bis hin zur Simulation mit Python."
 date: 2026-09-14T13:20:38+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Zentraler Grenzwertsatz", "Wahrscheinlichkeit", "Datenwissenschaft", "Python"]
@@ -105,13 +105,13 @@ Sind die Voraussetzungen erfüllt und ist der Stichprobenumfang hinreichend gro�
 Wenn wir aus Daten etwas ableiten, wie bei Meinungsumfragen, Qualitätskontrolle oder A/B-Tests, beruht ein Großteil der Argumentation auf dem zentralen Grenzwertsatz.
 
 ### 5.2 Akkumulation von Fehlern
-Messfehler und viele natürliche Rauschquellen lassen sich als Summen kleiner unabhängiger Einflüsse modellieren, sodass eine Normalapproximation geeignet sein kann. Die Normalverteilung wird auch Gauß-Verteilung genannt.
+Messfehler und viele natürliche Rauschquellen lassen sich als Summen kleiner Einflüsse modellieren. Eine Normalapproximation kann geeignet sein, wenn Annahmen wie Unabhängigkeit und endliche Varianz plausibel sind. Die Normalverteilung wird auch [Gauß-Verteilung](/de/p/gauss/) genannt.
 
 ## 6. Vertiefung: Ansatz für den Beweis
 
-Für einen strengen Beweis des zentralen Grenzwertsatzes werden charakteristische Funktionen und die Taylor-Entwicklung verwendet. Hier ein kurzer Überblick.
+Für einen strengen Beweis des zentralen Grenzwertsatzes werden charakteristische Funktionen und die [Taylor-Entwicklung](/de/p/taylor-and-maclaurin-series/) verwendet. Hier ein kurzer Überblick.
 
-Unter Verwendung der charakteristischen Funktion $\phi_X(t) = E[e^{itX}]$ ist die charakteristische Funktion der Summe unabhängiger Zufallsvariablen das Produkt ihrer jeweiligen charakteristischen Funktionen. Wenn wir die charakteristische Funktion der standardisierten Variablen $Z$ berechnen und den Grenzwert für $n \to \infty$ nehmen, kann gezeigt werden, dass sie gegen die charakteristische Funktion der Standardnormalverteilung $e^{-t^2/2}$ konvergiert. Dies beweist, dass die Verteilung selbst gegen eine Normalverteilung konvergiert.
+Unter Verwendung der charakteristischen Funktion $\phi_X(t) = E[e^{itX}]$ ist die charakteristische Funktion der Summe unabhängiger Zufallsvariablen das Produkt ihrer jeweiligen charakteristischen Funktionen. Wenn wir die charakteristische Funktion der standardisierten Variablen $Z$ berechnen und den Grenzwert für $n \to \infty$ nehmen, kann gezeigt werden, dass sie gegen die charakteristische Funktion der Standardnormalverteilung $e^{-t^2/2}$ konvergiert. Damit ist gezeigt, dass die Verteilung der standardisierten Variablen gegen die Standardnormalverteilung konvergiert.
 
 ## 7. Fazit
 

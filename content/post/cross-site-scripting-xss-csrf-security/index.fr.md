@@ -13,7 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 ## Introduction
@@ -54,7 +54,7 @@ Lorsqu'un XSS réussit, le script de l'attaquant s'exécute sur le navigateur de
 1.  **Détournement de session (Session Hijacking) :** Si un cookie d’authentification ne possède pas `HttpOnly`, l’attaquant peut voler son identifiant de session via `document.cookie`. Même avec `HttpOnly`, le XSS peut encore envoyer des requêtes authentifiées au nom de l’utilisateur.
 2.  **Exécution d'opérations non autorisées :** Fait exécuter en arrière-plan n'importe quelle opération dans l'application (changement de mot de passe, transfert d'argent, envoi de messages, etc.) avec les privilèges de l'utilisateur.
 3.  **Hameçonnage (Phishing) :** Dessine un faux formulaire de connexion sur le DOM pour voler directement les informations d'authentification de l'utilisateur.
-4.  **Distribution de logiciels malveillants :** Redirige le navigateur de l'utilisateur vers un kit d'exploitation (exploit kit) et infecte le PC avec des logiciels malveillants.
+4.  **Distribution de logiciels malveillants :** Dans les campagnes qui exploitent aussi des vulnérabilités non corrigées du navigateur, une redirection vers un contenu malveillant peut contribuer à une infection.
 
 ### Mesures de défense modernes contre le XSS
 
@@ -68,7 +68,7 @@ La CSP est un mécanisme de défense très puissant contre le XSS, définissant 
 ```http
 Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com;
 ```
-Ainsi, même si un attaquant réussit à injecter un script en ligne `<script>alert(1)</script>`, son exécution sera bloquée par la CSP.
+Cet exemple simplifié utilise une liste d’hôtes autorisés. La CSP est une couche de défense supplémentaire, et non un substitut à l’encodage de sortie adapté au contexte, aux API DOM sûres ou à la désinfection HTML. En production, privilégiez si possible une politique stricte fondée sur des nonces ou des hachages, et limitez soigneusement les hôtes de confiance.
 
 #### 3. Utilisation de l'attribut de Cookie HttpOnly
 En ajoutant l'attribut `HttpOnly` aux cookies qui stockent des éléments comme les ID de session, il devient impossible pour le JavaScript (ex: `document.cookie`) d'accéder à ce cookie. Cela n'empêche pas l'occurrence du XSS lui-même, mais c'est une mesure d'atténuation importante qui réduit considérablement le risque de détournement de session par le XSS.
@@ -88,6 +88,7 @@ Le navigateur joint automatiquement les cookies lorsque leurs conditions d’env
 **Scénario d’attaque :**
 
 Cet exemple pédagogique suppose une application vulnérable : le cookie d’authentification autorise l’envoi intersite avec `SameSite=None; Secure`, sans validation de jeton CSRF ni contrôle d’Origin. `bank.example` et `attacker.invalid` sont des domaines réservés appartenant à des sites distincts.
+L’exemple suppose également que les paramètres et fonctions de confidentialité du navigateur autorisent l’envoi de ce cookie intersite (tiers).
 1.  L'utilisateur se connecte au site de la banque (`bank.example`) et reçoit un cookie de session.
 2.  L'utilisateur visite le site piège de l'attaquant (`attacker.invalid`) dans un autre onglet.
 3.  Le site piège est configuré avec un formulaire caché et un script d'envoi automatique comme suit :
@@ -159,3 +160,7 @@ Il est important que les développeurs ne fassent pas aveuglément confiance aux
 
 - [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+- [OWASP: DOM based XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+- [OWASP: Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
+- [MDN: Cross-site request forgery (CSRF)](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF)
+- [MDN: Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)

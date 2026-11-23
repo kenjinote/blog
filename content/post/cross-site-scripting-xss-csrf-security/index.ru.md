@@ -13,7 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 ## Введение
@@ -54,7 +54,7 @@ DOM-based XSS возникает, когда клиентский JavaScript о�
 1.  **Перехват сеанса:** Если у аутентификационного cookie нет `HttpOnly`, злоумышленник может украсть идентификатор сеанса через `document.cookie`. Даже при наличии `HttpOnly` XSS способен отправлять аутентифицированные запросы от имени пользователя.
 2.  **Выполнение несанкционированных операций:** Выполнение произвольных операций в приложении (изменение пароля, денежный перевод, отправка сообщений и т. д.) в фоновом режиме от имени пользователя.
 3.  **Фишинг:** Отрисовка поддельной формы входа в DOM и прямая кража учетных данных пользователя.
-4.  **Распространение вредоносного ПО:** Перенаправление браузера пользователя на набор эксплойтов, заражая компьютер вредоносным ПО.
+4.  **Распространение вредоносного ПО:** В кампаниях, которые также используют неисправленные уязвимости браузера, перенаправление на вредоносный контент может способствовать заражению устройства.
 
 ### Современные меры защиты от XSS
 
@@ -68,7 +68,7 @@ CSP — это очень мощный механизм защиты от XSS, �
 ```http
 Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com;
 ```
-Таким образом, даже если злоумышленнику удастся внедрить встроенный скрипт `<script>alert(1)</script>`, его выполнение будет заблокировано CSP.
+Это упрощённый пример со списком разрешённых хостов. CSP — дополнительный уровень защиты, а не замена контекстному кодированию вывода, безопасным DOM API или очистке HTML. В production по возможности используйте строгую политику на основе nonce или хешей и тщательно ограничивайте список доверенных хостов.
 
 #### 3. Использование атрибута HttpOnly для Cookie
 Добавление атрибута `HttpOnly` к файлам cookie, в которых хранятся идентификаторы сеансов, предотвращает доступ к ним из JavaScript (например, `document.cookie`). Хотя это не предотвращает само возникновение XSS, это важная мера смягчения последствий, значительно снижающая риск перехвата сеанса через XSS.
@@ -88,6 +88,7 @@ CSRF — это атака, при которой злоумышленник з�
 **Сценарий атаки:**
 
 Этот учебный пример предполагает уязвимое приложение: аутентификационный cookie допускает межсайтовую отправку с `SameSite=None; Secure`, а проверки CSRF-токена и Origin отсутствуют. `bank.example` и `attacker.invalid` — зарезервированные домены разных сайтов.
+В примере также предполагается, что настройки и функции конфиденциальности браузера пользователя разрешают отправку этого межсайтового cookie (стороннего cookie).
 1.  Пользователь входит на сайт банка (`bank.example`) и получает сеансовый файл cookie.
 2.  Пользователь в другой вкладке просматривает сайт-ловушку злоумышленника (`attacker.invalid`).
 3.  На сайте-ловушке размещена скрытая форма и скрипт для автоматической отправки, как показано ниже.
@@ -159,3 +160,7 @@ graph TD
 
 - [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+- [OWASP: DOM based XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+- [OWASP: Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
+- [MDN: Cross-site request forgery (CSRF)](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF)
+- [MDN: Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)

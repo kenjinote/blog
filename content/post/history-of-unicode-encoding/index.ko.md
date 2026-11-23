@@ -6,7 +6,7 @@ categories: ["history", "biography"]
 tags: ["tech", "history", "unicode", "character-encoding"]
 image: "eyecatch.jpg"
 slug: "history-of-unicode-encoding"
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 # 유니코드의 역사: 글자 깨짐과의 전쟁은 어떻게 세계의 문자를 통일했는가
@@ -66,9 +66,10 @@ UTF-8의 설계는 컴퓨터 과학 역사상 가장 아름다운 해킹 중 하
 
 ## 5. 서로게이트 페어 문제와 이모지(Emoji)의 새벽
 
-UTF-16은 보충 평면의 코드 포인트 하나를 16비트 코드 유닛 두 개로 표현하며, 이를 서로게이트 페어라고 합니다. JavaScript 문자열의 `length`는 UTF-16 코드 유닛을 세므로 `"😂".length`는 2입니다. 이는 명세에 맞는 결과이며, 눈에 보이는 문자 수라고 가정하면 버그가 생길 수 있습니다. ZWJ 이모지 시퀀스에서는 코드 포인트 수도 보이는 문자 수와 다를 수 있습니다.
+UTF-16은 보충 평면의 코드 포인트 하나를 16비트 코드 유닛 두 개로 표현하며, 이를 서로게이트 페어라고 합니다. JavaScript 문자열의 [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)는 UTF-16 코드 유닛을 세므로 `"😂".length`는 2입니다. 이는 명세에 맞는 결과이며, 눈에 보이는 문자 수라고 가정하면 버그가 생길 수 있습니다. ZWJ 이모지 시퀀스에서는 코드 포인트 수도 보이는 문자 수와 다를 수 있습니다.
+사용자가 하나로 인식하는 텍스트 단위는 Unicode의 [텍스트 분할 규칙](https://unicode.org/reports/tr29/)에 따른 그래핌 클러스터로 나타내는 경우가 많습니다. ZWJ 이모지 시퀀스는 코드 포인트 여러 개로 이루어져도 하나의 확장 그래핌 클러스터가 될 수 있습니다.
 
-2010년에 발표된 유니코드 6.0은 일본 통신사 도코모, au, 소프트뱅크에서 사용하던 많은 이모지를 추가했습니다. 이모지로 쓰이는 일부 기호는 이전 버전에도 있었으므로 모든 이모지가 6.0에서 처음 채택된 것은 아닙니다.
+Unicode는 일본 이동통신사에서 사용하던 이모지 문자 722개의 집합을 정의합니다. 이 가운데 114개는 Unicode 5.2 이전에 이미 인코딩되었고, 나머지 608개는 2010년 Unicode 6.0에 추가되었습니다.
 
 이모지의 도입으로 유니코드는 단순한 '문자'의 틀을 넘어, 감정과 개념을 전달하는 세계 공통의 시각 언어로 진화했습니다. 나아가 피부색 변경(Skin Tone Modifier)이나 여러 이모지를 결합하여 하나의 이모지를 만드는 구조(ZWJ: Zero Width Joiner) 등, 현대의 다양성(Diversity)을 반영하기 위한 복잡한 사양도 차례차례 추가되고 있습니다.
 
@@ -90,3 +91,7 @@ graph TD
 
 - [Unicode FAQ: UTF-8, UTF-16, UTF-32 & BOM](https://www.unicode.org/faq/utf_bom.html)
 - [Rob Pike: UTF-8 history](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt)
+- [Unicode Technical Standard #51: Unicode Emoji](https://unicode.org/reports/tr51/)
+- [Unicode Standard Annex #29: Unicode Text Segmentation](https://unicode.org/reports/tr29/)
+- [IETF RFC 3629: UTF-8](https://www.rfc-editor.org/rfc/rfc3629.html)
+- [MDN: String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)

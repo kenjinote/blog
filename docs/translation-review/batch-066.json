@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "article": "History of Unicode and character encodings: ASCII, UTF-8, UTF-16, and emoji",
+  "frozenSourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://www.unicode.org/faq/utf_bom.html",
+    "https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt",
+    "https://unicode.org/reports/tr51/",
+    "https://unicode.org/reports/tr29/",
+    "https://www.rfc-editor.org/rfc/rfc3629.html",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length"
+  ],
+  "findings": [
+    "Made the difference between UTF-16 code units, Unicode code points, and user-perceived extended grapheme clusters explicit; linked Unicode UAX #29 and MDN String.length.",
+    "Replaced a vague statement about Japanese carrier emoji with the Unicode-defined 722-character set: 114 were already encoded in Unicode 5.2 or earlier and 608 were added in Unicode 6.0 in 2010.",
+    "Added primary/current references for Unicode Emoji UTS #51, Unicode text segmentation UAX #29, and IETF RFC 3629, while preserving the Unicode FAQ and Rob Pike history source.",
+    "Compared Japanese with all twelve translations, verified the numeric code-space/byte examples and Mermaid graph structures, and updated lastmod."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/history-of-unicode-encoding/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "3668878100cae8a1a1b85afd63a9d47f70715120753acff39109867a9131e057",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    },
+    "post/history-of-unicode-encoding/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "ae00e97d7df06d8315e5f32c76f5a40abc321ea770d4bdaaea527764273cd1e3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    },
+    "post/history-of-unicode-encoding/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "da3f91791445137bc6017ac527dad09bd63ca8377cc496f887fdd14d983dada8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    },
+    "post/history-of-unicode-encoding/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "45fb5c6b993004381c884b8622fd8c7a67fe9931ccf0f6114e531423f1bef4ab",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    },
+    "post/history-of-unicode-encoding/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "368dbfba1919a69b56fd8a401c166f96a7f9f072d94f276252a18017b2378f9c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    },
+    "post/history-of-unicode-encoding/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "6e07f82f8d41153d9ab04bc3480138255498664f414f9f95918a27dec95284ca",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    },
+    "post/history-of-unicode-encoding/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "8e193fb349c7b23ee245c47e5fc3f9c6ac63ad6d46eabe5838f02b2ce0035e92",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    },
+    "post/history-of-unicode-encoding/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "da66eb5d3a39523229c64f75c3a08e41896ceeaac1d50fd8c3259ce4094815ef",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    },
+    "post/history-of-unicode-encoding/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "20f679bf99fb8f88b2a90a467a9813cb2dbd37a22402fc9d033e5c4129843e24",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    },
+    "post/history-of-unicode-encoding/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "510c3ca3a199a1ded2b030751b822d039b7a601de28e5794801441ef83f86715",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    },
+    "post/history-of-unicode-encoding/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "04180ecf270c3ae1c6dd26fe20420ccf953af218c51850ac2879b40eaf66f8d7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    },
+    "post/history-of-unicode-encoding/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/history-of-unicode-encoding/index.md",
+      "sourceHash": "189e520a5bc0d003cbb80cade44dc0625034260a85595fefdf370311a5196d4c",
+      "translationHash": "6ddf2611a49c651cd5b58d5cae2df5b06276a6a471dd3e6657c0171c72457e52",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: ASCII and its scope, legacy encoding differences and the Shift_JIS/Windows-1252 byte example, Unicode code-space versus assigned characters, UCS-2/UTF-16/UTF-8 distinctions, NUL and C-string caveat, UTF-8 ASCII compatibility/variable width/self-synchronization, surrogate pairs and JavaScript length, grapheme clusters/ZWJ sequences, and emoji standardization history."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized distinctions among character, code point, code unit, byte, encoding, Unicode scalar/code space, surrogate pair, grapheme cluster, UTF-8 synchronization, ZWJ, and emoji sequence."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or calculation beyond code-space counts, which were checked as exact hexadecimal/decimal conversions and against Unicode documentation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared both Mermaid diagrams for matching graph node/edge structure and verified the Shift_JIS example bytes and output text across editions. No code or diagram renderer was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified six shared references: Unicode UTF FAQ, Rob Pike UTF-8 history, Unicode Emoji UTS #51, Unicode Text Segmentation UAX #29, IETF RFC 3629, and MDN String.length. Added the four standards/API references and contextual links in every translation. External reachability is not claimed beyond the documentation checks."
+        }
+      },
+      "summary": "Clarified the difference between UTF-16 code units, Unicode code points, and user-perceived grapheme clusters; linked JavaScript length behavior and current Unicode segmentation/emoji and UTF-8 standards; recorded the exact Japanese-carrier emoji additions to Unicode 6.0.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "Historical claims were checked against cited standards and Rob Pike’s first-person account, not independently archival-researched.",
+        "Mermaid diagrams were structurally checked but not rendered or visually reviewed."
+      ]
+    }
+  }
+}

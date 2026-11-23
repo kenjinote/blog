@@ -6,7 +6,7 @@ categories: ["history", "biography"]
 tags: ["tech", "history", "unicode", "character-encoding"]
 image: "eyecatch.jpg"
 slug: "history-of-unicode-encoding"
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 # Unicodeの歴史：文字化けとの戦いはいかに世界の文字を統一したか
@@ -66,9 +66,10 @@ UTF-8の設計は、コンピュータサイエンス史上最も美しいハッ
 
 ## 5. サロゲートペア問題と絵文字（Emoji）の夜明け
 
-UTF-16では、補助平面の1コードポイントを2つの16ビットコード単位の組で表します。これが「サロゲートペア（代用対）」です。JavaScriptの文字列の`length`はUTF-16コード単位の数なので、`"😂".length`は2になります。これは仕様どおりの結果ですが、見た目の文字数と同じだと仮定すると不具合につながります。ZWJによる絵文字列では、コードポイント数と見た目の文字数も異なる場合があります。
+UTF-16では、補助平面の1コードポイントを2つの16ビットコード単位の組で表します。これが「サロゲートペア（代用対）」です。JavaScriptの文字列の[`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)はUTF-16コード単位の数なので、`"😂".length`は2になります。これは仕様どおりの結果ですが、見た目の文字数と同じだと仮定すると不具合につながります。ZWJによる絵文字列では、コードポイント数と見た目の文字数も異なる場合があります。
+人が一文字として扱うまとまりは、Unicodeの[書記素クラスタ（grapheme cluster）](https://unicode.org/reports/tr29/)として表現されます。ZWJ絵文字シーケンスは複数のコードポイントから成っていても、1つの拡張書記素クラスタになることがあります。
 
-そして2010年のUnicode 6.0では、日本の携帯電話キャリア（ドコモ、au、ソフトバンク）で使われていた多くの **絵文字（Emoji）** が追加されました。以前から符号化されていた、絵文字として使われる記号もあるため、すべての絵文字が6.0で初めて採用されたわけではありません。
+日本の携帯キャリアが使っていた絵文字の集合として、Unicodeは722文字の集合を定義しています。そのうち114文字はUnicode 5.2以前に符号化済みで、残る608文字が2010年にUnicode 6.0へ追加されました。
 
 絵文字の導入により、Unicodeは単なる「文字」の枠を超え、感情や概念を伝える世界共通の視覚言語へと進化しました。さらに、肌の色の変更（Skin Tone Modifier）や、複数の絵文字を結合して一つの絵文字を作る仕組み（ZWJ: Zero Width Joiner）など、現代の多様性（ダイバーシティ）を反映するための複雑な仕様も次々と追加されています。
 
@@ -90,3 +91,7 @@ ASCIIの128個の符号位置から、世界の多様な文字を共通の体系
 
 - [Unicode FAQ: UTF-8, UTF-16, UTF-32 & BOM](https://www.unicode.org/faq/utf_bom.html)
 - [Rob Pike: UTF-8 history](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt)
+- [Unicode Technical Standard #51: Unicode Emoji](https://unicode.org/reports/tr51/)
+- [Unicode Standard Annex #29: Unicode Text Segmentation](https://unicode.org/reports/tr29/)
+- [IETF RFC 3629: UTF-8](https://www.rfc-editor.org/rfc/rfc3629.html)
+- [MDN: String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)

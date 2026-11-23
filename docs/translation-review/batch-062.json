@@ -21,7 +21,7 @@
     "Corrected the blanket claim that API data is never retained or used: directs readers to product/tier/feature/contract-specific provider documentation and distinguishes cloud-provider data processing paths.",
     "Preserved original publication date 2026-09-11, added localized lastmod/descriptions, and compared Japanese source with all twelve complete language editions."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/ChatGPT・Gemini・ClaudeのAPI徹底比較/index.en.md": {
       "reviewKind": "ai",
@@ -479,5 +479,11 @@
         "The revised pages are not yet live-verified; publication receipt will be added after CI deployment and checks of all thirteen public pages."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-062.json",
+    "ciRun": 45100922483,
+    "deployedCommit": "e9954273fd738e59b95b58dd86fbfd87a068bda6",
+    "allPassed": true
   }
 }

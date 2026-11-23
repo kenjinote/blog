@@ -6,7 +6,7 @@ categories: ["history", "biography"]
 tags: ["tech", "history", "unicode", "character-encoding"]
 image: "eyecatch.jpg"
 slug: "history-of-unicode-encoding"
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 # Sejarah Unicode: Bagaimana Perjuangan Melawan Mojibake Menyatukan Karakter di Seluruh Dunia
@@ -66,9 +66,10 @@ Sifat-sifat ini membantu UTF-8 digunakan secara luas di web modern.
 
 ## 5. Masalah Surrogate Pair dan Fajar Emoji
 
-UTF-16 mewakili satu titik kode pada bidang tambahan menggunakan dua unit kode 16-bit, yang disebut surrogate pair. Properti `length` pada string JavaScript menghitung unit kode UTF-16, sehingga `"😂".length` bernilai 2. Hasil ini sesuai spesifikasi; menganggapnya sebagai jumlah karakter yang terlihat dapat menyebabkan bug. Pada urutan emoji ZWJ, jumlah titik kode juga dapat berbeda dari jumlah karakter yang terlihat.
+UTF-16 mewakili satu titik kode pada bidang tambahan menggunakan dua unit kode 16-bit, yang disebut surrogate pair. Properti [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) pada string JavaScript menghitung unit kode UTF-16, sehingga `"😂".length` bernilai 2. Hasil ini sesuai spesifikasi; menganggapnya sebagai jumlah karakter yang terlihat dapat menyebabkan bug. Pada urutan emoji ZWJ, jumlah titik kode juga dapat berbeda dari jumlah karakter yang terlihat.
+Satuan teks yang dirasakan pengguna sering direpresentasikan sebagai klaster grafem menurut [aturan segmentasi teks Unicode](https://unicode.org/reports/tr29/). Urutan emoji ZWJ dapat berisi beberapa titik kode, tetapi tetap membentuk satu klaster grafem diperluas.
 
-Unicode 6.0, dirilis pada 2010, menambahkan banyak emoji yang digunakan operator seluler Jepang Docomo, au, dan SoftBank. Beberapa simbol yang dipakai sebagai emoji sudah dikodekan dalam versi sebelumnya, sehingga tidak semua emoji pertama kali masuk pada versi 6.0.
+Unicode mendefinisikan satu himpunan berisi 722 karakter emoji yang digunakan oleh operator seluler Jepang. Sebanyak 114 di antaranya telah dikodekan di Unicode 5.2 atau versi sebelumnya; 608 sisanya ditambahkan ke Unicode 6.0 pada 2010.
 
 Dengan hadirnya Emoji, Unicode berevolusi melampaui kerangka "karakter" menjadi bahasa visual universal untuk menyampaikan emosi dan konsep. Selain itu, spesifikasi yang kompleks juga terus ditambahkan untuk merepresentasikan keragaman (diversitas) modern, seperti pengubah warna kulit (Skin Tone Modifier) dan mekanisme untuk menggabungkan beberapa emoji menjadi satu emoji (ZWJ: Zero Width Joiner).
 
@@ -90,3 +91,7 @@ Di balik emoji "😂" yang kita kirimkan dengan santai, tersembunyi drama "perju
 
 - [Unicode FAQ: UTF-8, UTF-16, UTF-32 & BOM](https://www.unicode.org/faq/utf_bom.html)
 - [Rob Pike: UTF-8 history](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt)
+- [Unicode Technical Standard #51: Unicode Emoji](https://unicode.org/reports/tr51/)
+- [Unicode Standard Annex #29: Unicode Text Segmentation](https://unicode.org/reports/tr29/)
+- [IETF RFC 3629: UTF-8](https://www.rfc-editor.org/rfc/rfc3629.html)
+- [MDN: String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)

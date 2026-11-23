@@ -13,7 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 ## Introdução
@@ -54,7 +54,7 @@ Quando o XSS é bem-sucedido, o script do invasor é executado no navegador do u
 1.  **Sequestro de sessão (Session Hijacking):** Se um cookie de autenticação não tiver `HttpOnly`, o invasor poderá roubar seu ID de sessão por meio de `document.cookie`. Mesmo com `HttpOnly`, o XSS ainda pode enviar requisições autenticadas em nome do usuário.
 2.  **Execução de ações não autorizadas:** Faz com que qualquer operação dentro da aplicação (mudança de senha, transferência de dinheiro, envio de mensagens, etc.) seja executada em segundo plano com as permissões do usuário.
 3.  **Phishing:** Renderiza um formulário de login falso no DOM para roubar as credenciais do usuário diretamente.
-4.  **Distribuição de malware:** Redireciona o navegador do usuário para kits de exploração, infectando o PC com malware.
+4.  **Distribuição de malware:** Em campanhas que também exploram vulnerabilidades não corrigidas do navegador, redirecionamentos para conteúdo malicioso podem contribuir para uma infecção por malware.
 
 ### Defesas modernas contra XSS
 
@@ -68,7 +68,7 @@ O CSP é um mecanismo de defesa muito poderoso contra XSS, definindo no cabeçal
 ```http
 Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com;
 ```
-Com isso, mesmo que um invasor consiga injetar um script inline `<script>alert(1)</script>`, sua execução será bloqueada pelo CSP.
+Este é um exemplo simplificado com uma lista de hosts permitidos. CSP é uma camada adicional de defesa, não substitui codificação de saída adequada ao contexto, APIs DOM seguras nem sanitização de HTML. Em produção, prefira, quando viável, uma política estrita com nonces ou hashes e limite cuidadosamente os hosts confiáveis.
 
 #### 3. Utilização do atributo Cookie HttpOnly
 Ao adicionar o atributo `HttpOnly` a cookies que armazenam IDs de sessão, etc., esses cookies não poderão ser acessados a partir do JavaScript (ex: `document.cookie`). Isso não impede que o XSS em si ocorra, mas é uma medida de mitigação importante que reduz significativamente o risco de sequestro de sessão por meio de XSS.
@@ -88,6 +88,7 @@ O navegador anexa cookies automaticamente quando suas condições de envio são 
 **Cenário de ataque:**
 
 Este exemplo didático pressupõe uma aplicação vulnerável: o cookie de autenticação permite envio entre sites com `SameSite=None; Secure`, e não há validação de tokens CSRF nem verificações de Origin. `bank.example` e `attacker.invalid` são domínios reservados de sites distintos.
+O exemplo também pressupõe que as configurações e os recursos de privacidade do navegador do usuário permitem o envio deste cookie entre sites (de terceiros).
 1.  O usuário faz login no site do banco (`bank.example`) e recebe um cookie de sessão.
 2.  O usuário navega para o site armadilha do invasor (`attacker.invalid`) em outra guia.
 3.  O site armadilha possui um formulário oculto e um script de envio automático configurado como este:
@@ -159,3 +160,7 @@ Portanto, para garantir a segurança de uma aplicação Web, é necessária a co
 
 - [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+- [OWASP: DOM based XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+- [OWASP: Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
+- [MDN: Cross-site request forgery (CSRF)](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF)
+- [MDN: Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)

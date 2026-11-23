@@ -6,7 +6,7 @@ categories: ["history", "biography"]
 tags: ["tech", "history", "unicode", "character-encoding"]
 image: "eyecatch.jpg"
 slug: "history-of-unicode-encoding"
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 # Unicode的历史：与乱码的战争是如何统一世界文字的
@@ -66,9 +66,10 @@ UTF-8的设计被誉为计算机科学史上最优美的Hack之一。
 
 ## 5. 代理对问题与Emoji的黎明
 
-UTF-16用一对16位代码单元（代理对）表示补充平面的一个码点。JavaScript字符串的 `length` 计算UTF-16代码单元，因此 `"😂".length` 为2。这符合规范；将其误认为可见字符数才可能导致错误。对ZWJ表情序列，码点数也可能与可见字符数不同。
+UTF-16用一对16位代码单元（代理对）表示补充平面的一个码点。JavaScript字符串的 [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) 计算UTF-16代码单元，因此 `"😂".length` 为2。这符合规范；将其误认为可见字符数才可能导致错误。对ZWJ表情序列，码点数也可能与可见字符数不同。
+用户感知的一个文本单元通常可按Unicode的[文本分段规则](https://unicode.org/reports/tr29/)表示为一个字素簇。ZWJ Emoji序列可以包含多个码点，同时组成一个扩展字素簇。
 
-2010年发布的Unicode 6.0加入了许多日本移动运营商（Docomo、au、SoftBank）使用的表情符号。一些后来用作表情的符号早已被编码，因此并非所有表情都首次出现在6.0中。
+Unicode定义了一个包含722个日本移动运营商所用Emoji字符的集合。其中114个已在Unicode 5.2或更早版本中编码；其余608个于2010年加入Unicode 6.0。
 
 Emoji的引入，让Unicode超越了单纯“文字”的范畴，进化为传达情感和概念的世界通用视觉语言。此外，为了反映现代的多样性，它还陆续添加了复杂的规范，如改变肤色（Skin Tone Modifier），以及将多个Emoji结合成一个Emoji的机制（ZWJ: Zero Width Joiner）等。
 
@@ -90,3 +91,7 @@ Unicode标准收录了古埃及圣书体、楔形文字、少数语言文字和�
 
 - [Unicode FAQ: UTF-8, UTF-16, UTF-32 & BOM](https://www.unicode.org/faq/utf_bom.html)
 - [Rob Pike: UTF-8 history](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt)
+- [Unicode Technical Standard #51: Unicode Emoji](https://unicode.org/reports/tr51/)
+- [Unicode Standard Annex #29: Unicode Text Segmentation](https://unicode.org/reports/tr29/)
+- [IETF RFC 3629: UTF-8](https://www.rfc-editor.org/rfc/rfc3629.html)
+- [MDN: String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)

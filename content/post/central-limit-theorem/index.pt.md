@@ -2,7 +2,7 @@
 title: "Teorema do limite central: condições e aproximação normal da média amostral"
 description: "Uma explicação detalhada do Teorema do Limite Central, um dos teoremas mais importantes na estatística, desde a compreensão intuitiva até a prova matemática e a simulação usando Python."
 date: 2026-09-14T13:20:38+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Teorema do Limite Central", "Probabilidade", "Ciência de Dados", "Python"]
@@ -105,13 +105,13 @@ A importância do TLC está em permitir, quando suas condições são satisfeita
 Quando inferimos algo dos dados, como em pesquisas de opinião, controle de qualidade ou testes A/B, grande parte do raciocínio baseia-se no Teorema do Limite Central.
 
 ### 5.2 Acúmulo de Erros
-Os erros de medição e muitos tipos de ruído natural podem ser modelados como somas de pequenos fatores independentes, de modo que uma aproximação normal pode ser adequada. A distribuição normal também é chamada de distribuição gaussiana.
+Os erros de medição e muitos tipos de ruído natural podem ser modelados como somas de pequenos fatores. Uma aproximação normal pode ser adequada quando hipóteses como independência e variância finita são plausíveis. A distribuição normal também é chamada de [distribuição gaussiana](/pt/p/gauss/).
 
 ## 6. Aprofundando: Abordagem para a Prova
 
-Funções características e expansão de Taylor são usadas para uma prova estrita do Teorema do Limite Central. Aqui está um breve resumo.
+Funções características e [expansão de Taylor](/pt/p/taylor-and-maclaurin-series/) são usadas para uma prova estrita do Teorema do Limite Central. Aqui está um breve resumo.
 
-Usando a função característica $\phi_X(t) = E[e^{itX}]$, a função característica da soma de variáveis aleatórias independentes é o produto de suas respectivas funções características. Quando calculamos a função característica da variável padronizada $Z$ e tomamos o limite quando $n \to \infty$, pode-se provar que converge para $e^{-t^2/2}$, que é a função característica da distribuição normal padrão. Isso prova que a própria distribuição converge para uma distribuição normal.
+Usando a função característica $\phi_X(t) = E[e^{itX}]$, a função característica da soma de variáveis aleatórias independentes é o produto de suas respectivas funções características. Quando calculamos a função característica da variável padronizada $Z$ e tomamos o limite quando $n \to \infty$, pode-se provar que converge para $e^{-t^2/2}$, que é a função característica da distribuição normal padrão. Isso mostra que a distribuição da variável padronizada converge para a distribuição normal padrão.
 
 ## 7. Conclusão
 

@@ -13,7 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 ## Einführung
@@ -54,7 +54,7 @@ Wenn XSS erfolgreich ist, wird das Skript des Angreifers im Browser des Benutzer
 1.  **Session Hijacking:** Fehlt einem Authentifizierungs-Cookie `HttpOnly`, kann ein Angreifer dessen Session-ID über `document.cookie` stehlen. Auch mit `HttpOnly` kann XSS weiterhin authentifizierte Anfragen im Namen des Benutzers senden.
 2.  **Ausführung unbefugter Aktionen:** Beliebige Aktionen innerhalb der Anwendung (Passwortänderung, Geldüberweisung, Nachrichtenversand usw.) im Hintergrund mit den Rechten des Benutzers ausführen lassen.
 3.  **Phishing:** Rendern eines gefälschten Anmeldeformulars im DOM, um direkt die Anmeldeinformationen des Benutzers zu stehlen.
-4.  **Verbreitung von Malware:** Den Browser des Benutzers zu einem Exploit-Kit umleiten und den PC mit Malware infizieren.
+4.  **Verbreitung von Malware:** Bei Angriffskampagnen, die zusätzlich ungepatchte Browser-Schwachstellen ausnutzen, kann eine Weiterleitung zu schädlichen Inhalten zu einer Malware-Infektion beitragen.
 
 ### Moderne Verteidigungsmaßnahmen gegen XSS
 
@@ -68,7 +68,7 @@ CSP ist ein sehr starker Abwehrmechanismus gegen XSS, der eine Whitelist der Res
 ```http
 Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com;
 ```
-Dadurch wird selbst dann, wenn ein Angreifer erfolgreich ein Inline-Skript wie `<script>alert(1)</script>` injiziert, die Ausführung durch CSP blockiert.
+Dies ist ein vereinfachtes Beispiel mit einer Host-Allowlist. CSP ist eine zusätzliche Schutzschicht und kein Ersatz für kontextgerechte Ausgabekodierung, sichere DOM-APIs oder HTML-Sanitizing. Verwenden Sie in der Produktion nach Möglichkeit eine strenge Richtlinie mit Nonces oder Hashes und begrenzen Sie vertrauenswürdige Hosts sorgfältig.
 
 #### 3. Nutzung des HttpOnly Cookie-Attributs
 Durch das Hinzufügen des `HttpOnly`-Attributs zu Cookies, die Session-IDs etc. speichern, können diese Cookies nicht mehr aus JavaScript (z.B. `document.cookie`) aufgerufen werden. Dies verhindert nicht das Auftreten von XSS an sich, ist aber eine wichtige Schadensbegrenzungsmaßnahme, die das Risiko von Session Hijacking durch XSS erheblich verringert.
@@ -88,6 +88,7 @@ Browser hängen Cookies automatisch an, wenn deren Sendebedingungen erfüllt sin
 **Angriffsszenario:**
 
 Dieses Lehrbeispiel setzt eine verwundbare Anwendung voraus: Das Authentifizierungs-Cookie erlaubt mit `SameSite=None; Secure` das Senden zwischen Websites, und weder CSRF-Token noch Origin werden geprüft. `bank.example` und `attacker.invalid` sind reservierte Domains verschiedener Sites.
+Das Beispiel setzt außerdem voraus, dass Browser-Einstellungen und Datenschutzfunktionen des Benutzers das Senden dieses Cross-Site- (Drittanbieter-)Cookies erlauben.
 1.  Der Benutzer loggt sich auf der Bank-Website (`bank.example`) ein und erhält ein Session-Cookie.
 2.  Der Benutzer besucht in einem anderen Tab die manipulierte Website des Angreifers (`attacker.invalid`).
 3.  Die manipulierte Website enthält ein verstecktes Formular und ein Skript zur automatischen Übermittlung, wie im Folgenden dargestellt:
@@ -159,3 +160,7 @@ Es ist wichtig, dass Entwickler sich nicht blind auf die von Frameworks bereitge
 
 - [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+- [OWASP: DOM based XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+- [OWASP: Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
+- [MDN: Cross-site request forgery (CSRF)](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF)
+- [MDN: Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)

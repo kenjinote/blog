@@ -13,7 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 ## مقدمة
@@ -54,7 +54,7 @@ XSS هي تقنية هجوم يقوم فيها المهاجم بحقن نصوص 
 1.  **اختطاف الجلسة (Session Hijacking):** إذا كانت Cookie المصادقة تفتقر إلى `HttpOnly`، فقد يسرق المهاجم معرف الجلسة عبر `document.cookie`. حتى مع `HttpOnly`، يمكن لـ XSS إرسال طلبات مصادق عليها باسم المستخدم.
 2.  **تنفيذ عمليات غير مصرح بها:** تنفيذ أي عملية في التطبيق (مثل تغيير كلمة المرور، تحويل الأموال، إرسال رسائل) في الخلفية بصلاحيات المستخدم.
 3.  **التصيد الاحتيالي (Phishing):** رسم نموذج تسجيل دخول مزيف على DOM لسرقة بيانات اعتماد المستخدم مباشرة.
-4.  **توزيع البرامج الضارة:** إعادة توجيه متصفح المستخدم إلى مجموعة استغلال (Exploit Kit) وإصابة جهاز الكمبيوتر ببرامج ضارة.
+4.  **توزيع البرامج الضارة:** في الحملات التي تستغل أيضاً ثغرات متصفح غير مرقعة، قد تؤدي إعادة التوجيه إلى محتوى ضار إلى الإصابة ببرامج ضارة.
 
 ### استراتيجيات الدفاع الحديثة ضد XSS
 
@@ -68,7 +68,7 @@ CSP هو آلية دفاع قوية جدا ضد XSS، حيث يحدد قائمة
 ```http
 Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com;
 ```
-بفضل هذا، حتى لو تمكن المهاجم من حقن نص برمجي مضمن `<script>alert(1)</script>`، فسيتم حظر تنفيذه بواسطة CSP.
+هذا مثال مبسّط يستخدم قائمة سماح للمضيفين. CSP طبقة دفاع إضافية، وليست بديلاً عن ترميز المخرجات حسب السياق أو واجهات DOM الآمنة أو تنقية HTML. في بيئة الإنتاج، يُفضّل استخدام سياسة صارمة قائمة على nonce أو التجزئات متى كان ذلك عملياً، مع تقييد المضيفين الموثوقين بعناية.
 
 #### 3. استخدام سمة HttpOnly للـ Cookie
 من خلال إضافة سمة `HttpOnly` إلى الـ Cookie التي تخزن معرفات الجلسة وغيرها، لن تتمكن JavaScript (مثل `document.cookie`) من الوصول إلى تلك الـ Cookie. هذا لا يمنع حدوث XSS بحد ذاته، ولكنه إجراء تخفيف مهم يقلل بشكل كبير من خطر اختطاف الجلسة بسبب XSS.
@@ -88,6 +88,7 @@ CSRF هو هجوم يوجه فيه المهاجم المستخدم إلى موق
 **سيناريو الهجوم:**
 
 يفترض هذا المثال التعليمي تطبيقاً ضعيف الحماية: تسمح Cookie المصادقة بالإرسال عبر المواقع باستخدام `SameSite=None; Secure`، ولا يجري التحقق من رمز CSRF أو من Origin. النطاقان `bank.example` و`attacker.invalid` محجوزان للأمثلة وينتميان إلى موقعين مختلفين.
+يفترض المثال أيضاً أن إعدادات المتصفح وميزات الخصوصية لدى المستخدم تسمح بإرسال ملف Cookie هذا عبر المواقع (بوصفه ملفاً لطرف ثالث).
 1.  يسجل المستخدم الدخول إلى موقع البنك (`bank.example`) ويتلقى Cookie الجلسة.
 2.  يتصفح المستخدم موقع فخ المهاجم (`attacker.invalid`) في علامة تبويب أخرى.
 3.  يحتوي موقع الفخ على نموذج مخفي ونص برمجي للإرسال التلقائي كما يلي:
@@ -159,3 +160,7 @@ XSS و CSRF هما ثغرتان مختلفتان، ولكن **إذا كان XSS 
 
 - [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+- [OWASP: DOM based XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+- [OWASP: Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
+- [MDN: Cross-site request forgery (CSRF)](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF)
+- [MDN: Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)

@@ -19,7 +19,7 @@
     "Compared the complete Japanese article with all twelve translations, including metadata, platform prerequisites, commands and paths, shortcuts, UTF-8/input caveats, and official references.",
     "Added a localized link to the official MSYS2 update/restart guide in all language editions."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.en.md": {
       "reviewKind": "ai",
@@ -465,5 +465,11 @@
         "Hugo CI and live publication verification remain pending for this batch."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-060.json",
+    "ciRun": 45100922483,
+    "deployedCommit": "e9954273fd738e59b95b58dd86fbfd87a068bda6",
+    "allPassed": true
   }
 }

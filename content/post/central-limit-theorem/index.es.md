@@ -2,7 +2,7 @@
 title: "Teorema del límite central: condiciones y aproximación normal de la media muestral"
 description: "Una explicación detallada del Teorema del Límite Central, uno de los teoremas más importantes en estadística, desde la comprensión intuitiva hasta la demostración matemática y la simulación con Python."
 date: 2026-09-14T13:20:38+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Teorema del Límite Central", "Probabilidad", "Ciencia de Datos", "Python"]
@@ -105,13 +105,13 @@ La importancia del TLC radica en que, cuando se cumplen sus condiciones y la mue
 Cuando inferimos algo de los datos, como en encuestas de opinión, control de calidad o pruebas A/B, gran parte del razonamiento se basa en el Teorema del Límite Central.
 
 ### 5.2 Acumulación de Errores
-Los errores de medición y muchos tipos de ruido natural pueden modelarse como sumas de pequeños factores independientes, por lo que una aproximación normal puede ser adecuada. La distribución normal también se denomina distribución gaussiana.
+Los errores de medición y muchos tipos de ruido natural pueden modelarse como sumas de pequeños factores. Una aproximación normal puede ser adecuada si son razonables supuestos como la independencia y una varianza finita. La distribución normal también se denomina [distribución gaussiana](/es/p/gauss/).
 
 ## 6. Profundizando: Enfoque para la Demostración
 
-Para una demostración estricta del Teorema del Límite Central se utilizan funciones características y la expansión de Taylor. Aquí presentamos un breve resumen.
+Para una demostración estricta del Teorema del Límite Central se utilizan funciones características y la [expansión de Taylor](/es/p/taylor-and-maclaurin-series/). Aquí presentamos un breve resumen.
 
-Usando la función característica $\phi_X(t) = E[e^{itX}]$, la función característica de la suma de variables aleatorias independientes es el producto de sus respectivas funciones características. Al calcular la función característica de la variable estandarizada $Z$ y tomar el límite a medida que $n \to \infty$, se puede demostrar que converge a la función característica de la distribución normal estándar $e^{-t^2/2}$. Esto demuestra que la distribución misma converge a una distribución normal.
+Usando la función característica $\phi_X(t) = E[e^{itX}]$, la función característica de la suma de variables aleatorias independientes es el producto de sus respectivas funciones características. Al calcular la función característica de la variable estandarizada $Z$ y tomar el límite a medida que $n \to \infty$, se puede demostrar que converge a la función característica de la distribución normal estándar $e^{-t^2/2}$. Esto muestra que la distribución de la variable estandarizada converge a la distribución normal estándar.
 
 ## 7. Conclusión
 

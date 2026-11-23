@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "article": "XSS and CSRF: attack models and layered defenses",
+  "frozenSourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html",
+    "https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie"
+  ],
+  "findings": [
+    "Reframed the exploit-kit statement so XSS redirection is not presented as sufficient by itself to infect a computer; the example now notes that malware delivery also depends on exploitable browser vulnerabilities.",
+    "Clarified that the CSP host-allowlist snippet is simplified and that CSP is an additional layer, not a replacement for context-aware encoding, safe DOM APIs, or HTML sanitization; recommends nonce/hash-based strict policies where practical.",
+    "Made the CSRF scenario explicitly assume browser/profile permission to send cross-site third-party cookies, in addition to SameSite=None; Secure and missing server-side checks.",
+    "Added shared OWASP DOM-XSS and CSP guidance and MDN CSRF/Set-Cookie references in all thirteen editions; preserved the existing OWASP XSS and CSRF citations.",
+    "Compared the complete Japanese article with all twelve translations; preserved original publication dates and updated lastmod."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/cross-site-scripting-xss-csrf-security/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "c085fefe7a7410a1a1d742972633336efd2a92d26ddad99324f10c3cc2f3561a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "cf3b43313460446fe5cdf1635a965ddc0886aefdcfdeab4af8fc5c1cbf50bf52",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "71f262c3ccadfaf3bbfc367c32a55fdc50ef6c3b727627ecb3bf73b70268774e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "ca2f91433635c3b000f1bad32b81ae4fdcf7a010d14537612a1da4436fd30029",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "f6fcbf3f5860c04d912d706d790f37e365a22ddb89d6a49fc61ecbd65a8e6338",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "d71f10bb8b3563e055c3c752962075fb3ac578957e12114db018b3b3025a099c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "769ad711c78f5fce998d1edeacc1725ae5058b75d97a31e2da28db9aa741b873",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "31478a0f110f619dbbb8486a41d94b047cddbc8e8ea946dc38c699772f5a2d22",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "4402b8996b1d962194adcfa157df3463652326f33400f255e373e86fe8254868",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "96878509a92878346568202812abccf3591d1b8194c9913ee0f50af591683097",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "a7a95ac7db04c1295c0ad0bf645aadf6158926b40e4c90cee44b10dc4f9aceb3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    },
+    "post/cross-site-scripting-xss-csrf-security/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/cross-site-scripting-xss-csrf-security/index.md",
+      "sourceHash": "784d6d68ead52aaa2e8194504a807e233bbb5b191fa2784c1b5c15b3d4c2944e",
+      "translationHash": "9265ca20aaaa6e000fd38ef6289eb47918815bf07a2c9dae4e6be2c67040dad2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with Japanese: stored/reflected/DOM-based XSS and their overlap; attacker-controlled sources and dangerous sinks; impact limits; contextual output encoding, framework escape hatches, CSP, HttpOnly; the CSRF threat model; synchronizer token, signed double-submit, Origin and SameSite controls; same-site versus same-origin; and the XSS/CSRF relationship."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for XSS/CSRF, DOM source/sink, same-origin policy, site/origin boundaries, output encoding/escaping, sanitization, CSP, nonce/hash, HttpOnly/Secure/SameSite cookies, CSRF token, Origin, and HMAC-signed double-submit."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "This article contains no mathematical claims or formulas requiring a mathematics review."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the CSP header example and the localized Mermaid attack-flow diagram for structure and meaning. The explanatory cross-site form example was compared as text. No browser exploit, application endpoint, or policy was executed; no Mermaid rendering integration test was run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked six shared primary references across all editions: OWASP XSS prevention, CSRF prevention, DOM-based XSS, CSP, and MDN CSRF and Set-Cookie documentation. Added the four missing OWASP/MDN references in every translation. Reachability beyond the cited web lookup and per-browser behavior are not certified."
+        }
+      },
+      "summary": "Clarified CSP as defense in depth with nonce/hash-oriented strict policy guidance, qualified the malware infection scenario, stated the browser-level third-party-cookie assumption in the CSRF example, and added primary OWASP/MDN references to every localized edition.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No live application penetration test, browser compatibility matrix, CSP deployment, or CSRF-token implementation was tested.",
+        "The exploit examples are illustrative and were not executed.",
+        "Mermaid rendering and visual output were not tested."
+      ]
+    }
+  }
+}

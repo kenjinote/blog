@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "article": "Central Limit Theorem: assumptions, sampling distributions, simulation, and proof",
+  "frozenSourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://math.mit.edu/~dav/05.dir/class6-prep.pdf"
+  ],
+  "findings": [
+    "Compared the Japanese original and all twelve translations across nine top-level sections, four display equations, and the localized Python simulation.",
+    "Clarified in all thirteen editions that a normal approximation for accumulated noise depends on plausible assumptions such as independence and finite variance; it is not automatic for every noise source.",
+    "Made the proof conclusion explicitly refer to convergence of the standardized variable to the standard normal distribution.",
+    "Added missing localized Gaussian and Taylor/Maclaurin links and filled missing Cauchy links; retained Law of Large Numbers and MIT 18.05 references.",
+    "Preserved publication dates and updated lastmod to 2026-11-23."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/central-limit-theorem/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "9ee3c9b5b6154e45bd3204003e570d7f51712ac6c53962ffb97d8dc6f92d3dab",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    },
+    "post/central-limit-theorem/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "40361bde0d7e7aba54af1854fc54f44a0212149a122f94475c9da570c920e417",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    },
+    "post/central-limit-theorem/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "64e134b9af8f0013956af7d4e70458da7c667da82dc783d41d5aedf77232852f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    },
+    "post/central-limit-theorem/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "5eca0197a049c0e3a30f34ae2bfc474b4527d4fd99d102d82b081a7239e7eec0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    },
+    "post/central-limit-theorem/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "6780be2eff03914ec325a79200e1e7a20ae6a8d708e589a59bb4da1f8334341b",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    },
+    "post/central-limit-theorem/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "5297d66bedc924d8154f60d37c9c4686fb4b595a57c99eafc6c09a0c30e8afc3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    },
+    "post/central-limit-theorem/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "516b6359c4dd8857a421e5f2e89f383ed47af8ea5e54c5f28b298b43285f1820",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    },
+    "post/central-limit-theorem/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "c1ee76a9f43182c474524fb21164f94a9818b14cb63b085e007b15d75be508d7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    },
+    "post/central-limit-theorem/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "8aebed4e4725b75dd27bffbfea8d4061f6d6ce6c8e149eadbdf7235b24a48006",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    },
+    "post/central-limit-theorem/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "10184f9c1dd117fff22482b5888e956c14a6cae487bb5553dc1a9f078cf0e6d7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    },
+    "post/central-limit-theorem/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "f3d675f49280c3e6717077e7017d8276b96e3e4f56dc965796394fdbe2a3e9a3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    },
+    "post/central-limit-theorem/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/central-limit-theorem/index.md",
+      "sourceHash": "a31fec87d03bcaa8047c756a0bd8dc1e6060809b3d0f21ea30d8f06487d1962f",
+      "translationHash": "2da5bec813d0e3fa6f71de6c05997e3776b89cbc735f1fb20eaba5d2e9c88e10",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese original: iid finite-mean/positive-finite-variance assumptions, standardized sample-mean limit, distinction from the raw population distribution, dice illustration, simulation, standard error, characteristic-function proof, Cauchy/dependence counterexamples, the n>=30 caveat, and non-iid extensions."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized probability/statistics terms including iid, expectation, variance, standardization, sampling distribution, standard error, characteristic function, convergence in distribution, Gaussian/normal distribution, Cauchy, Lindeberg, and Lyapunov."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the theorem statement, normalization by sigma/sqrt(n), variance and standard-error identities, four display-math blocks, and characteristic-function limit against the Japanese version and MIT 18.05 notes. Mathematical notation and theorem assumptions are substantively aligned."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the single Python simulation block in every edition; its executable tokens match the Japanese version after stripping localized comments/whitespace. Parsed every block with Python AST. The simulation was not executed, so plotted output/runtime behavior is not certified."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the localized internal links to Gaussian, Taylor/Maclaurin, Cauchy, and Law of Large Numbers pages where applicable, plus the shared MIT 18.05 PDF. Added missing translated internal links for Gaussian and Taylor concepts and filled the missing Cauchy links. HTTP reachability is deferred to the post-deploy verifier."
+        }
+      },
+      "summary": "Reviewed the full translation against the Japanese source, clarified when the normal approximation to accumulated noise is justified, explicitly identified the standardized-variable limit in the proof, and aligned links to localized prerequisite/explanatory articles.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The Python simulation was parsed but not executed; no plotted output was inspected.",
+        "The mathematical proof was checked for internal consistency and against MIT 18.05 notes, but not independently peer-reviewed by a mathematician.",
+        "External reference reachability and live rendered page behavior are pending the CI deployment and post-deployment checks."
+      ]
+    }
+  }
+}

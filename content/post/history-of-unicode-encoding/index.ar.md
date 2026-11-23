@@ -6,7 +6,7 @@ categories: ["history", "biography"]
 tags: ["tech", "history", "unicode", "character-encoding"]
 image: "eyecatch.jpg"
 slug: "history-of-unicode-encoding"
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 # تاريخ اليونيكود: كيف وحدت المعركة ضد تشوه الرموز أحرف العالم
@@ -66,9 +66,10 @@ graph TD
 
 ## 5. مشكلة الأزواج البديلة وفجر الإيموجي (Emoji)
 
-يمثل UTF-16 نقطة ترميز في مستوى تكميلي بوحدتي ترميز من 16 بتاً، تسمّيان زوجاً بديلاً. تحسب الخاصية `length` في سلاسل JavaScript وحدات ترميز UTF-16، ولذلك فإن `"😂".length` تساوي 2. هذه نتيجة مطابقة للمواصفة، لكن افتراض أنها تحسب المحارف المرئية قد يسبب أخطاء. وفي تسلسلات الإيموجي التي تتضمن ZWJ قد يختلف أيضاً عدد نقاط الترميز عن عدد المحارف المرئية.
+يمثل UTF-16 نقطة ترميز في مستوى تكميلي بوحدتي ترميز من 16 بتاً، تسمّيان زوجاً بديلاً. تحسب الخاصية [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) في سلاسل JavaScript وحدات ترميز UTF-16، ولذلك فإن `"😂".length` تساوي 2. هذه نتيجة مطابقة للمواصفة، لكن افتراض أنها تحسب المحارف المرئية قد يسبب أخطاء. وفي تسلسلات الإيموجي التي تتضمن ZWJ قد يختلف أيضاً عدد نقاط الترميز عن عدد المحارف المرئية.
+غالباً ما تُمثّل وحدة النص التي يدركها المستخدم بعنقود محارف وفق [قواعد تقسيم النص في Unicode](https://unicode.org/reports/tr29/). وقد تتكون سلسلة إيموجي تستخدم ZWJ من نقاط ترميز متعددة، لكنها تشكل عنقود محارف ممتداً واحداً.
 
-أضاف Unicode 6.0، الصادر عام 2010، كثيراً من الإيموجي المستخدمة لدى مشغلي الهواتف اليابانيين Docomo وau وSoftBank. وكانت بعض الرموز المستخدمة كإيموجي مرمّزة في إصدارات أقدم، لذلك لم تظهر كل الإيموجي لأول مرة في الإصدار 6.0.
+يحدد Unicode مجموعة من 722 رمزاً تعبيرياً استخدمتها شركات الاتصالات اليابانية. كان 114 منها مشفراً بالفعل في Unicode 5.2 أو إصدار أقدم، وأضيفت الرموز الـ608 المتبقية إلى Unicode 6.0 عام 2010.
 
 مع إدخال الإيموجي، تجاوز اليونيكود كونه مجرد "أحرف" وتطور إلى لغة بصرية عالمية تنقل المشاعر والمفاهيم. بالإضافة إلى ذلك، تم تباعاً إضافة مواصفات معقدة لتعكس التنوع الحديث، مثل القدرة على تغيير لون البشرة (Skin Tone Modifier)، وآلية الجمع بين عدة رموز تعبيرية لإنشاء رمز واحد (ZWJ: Zero Width Joiner).
 
@@ -90,3 +91,7 @@ graph TD
 
 - [Unicode FAQ: UTF-8, UTF-16, UTF-32 & BOM](https://www.unicode.org/faq/utf_bom.html)
 - [Rob Pike: UTF-8 history](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt)
+- [Unicode Technical Standard #51: Unicode Emoji](https://unicode.org/reports/tr51/)
+- [Unicode Standard Annex #29: Unicode Text Segmentation](https://unicode.org/reports/tr29/)
+- [IETF RFC 3629: UTF-8](https://www.rfc-editor.org/rfc/rfc3629.html)
+- [MDN: String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)

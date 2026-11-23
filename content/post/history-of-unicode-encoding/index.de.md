@@ -6,7 +6,7 @@ categories: ["history", "biography"]
 tags: ["tech", "history", "unicode", "character-encoding"]
 image: "eyecatch.jpg"
 slug: "history-of-unicode-encoding"
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 # Die Geschichte von Unicode: Wie der Kampf gegen Zeichensalat die Schriften der Welt vereinte
@@ -66,9 +66,10 @@ Diese Eigenschaften haben zur weiten Verbreitung von UTF-8 im heutigen Web beige
 
 ## 5. Das Problem der Surrogate Pairs und die Dämmerung der Emojis
 
-UTF-16 stellt einen Codepunkt einer ergänzenden Ebene mit zwei 16-Bit-Codeeinheiten dar, einem Surrogatpaar. Die JavaScript-Eigenschaft `length` zählt UTF-16-Codeeinheiten; deshalb ist `"😂".length` gleich 2. Das entspricht der Spezifikation. Fehler entstehen, wenn dieser Wert als Anzahl sichtbarer Zeichen interpretiert wird. Bei ZWJ-Emoji-Sequenzen kann auch die Codepunktzahl von der Zahl sichtbarer Zeichen abweichen.
+UTF-16 stellt einen Codepunkt einer ergänzenden Ebene mit zwei 16-Bit-Codeeinheiten dar, einem Surrogatpaar. Die JavaScript-Eigenschaft [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) zählt UTF-16-Codeeinheiten; deshalb ist `"😂".length` gleich 2. Das entspricht der Spezifikation. Fehler entstehen, wenn dieser Wert als Anzahl sichtbarer Zeichen interpretiert wird. Bei ZWJ-Emoji-Sequenzen kann auch die Codepunktzahl von der Zahl sichtbarer Zeichen abweichen.
+Eine vom Benutzer wahrgenommene Texteinheit wird häufig als Graphemcluster gemäß den Unicode-[Regeln zur Textsegmentierung](https://unicode.org/reports/tr29/) behandelt. Eine ZWJ-Emoji-Sequenz kann aus mehreren Codepoints bestehen und dennoch einen erweiterten Graphemcluster bilden.
 
-Unicode 6.0, veröffentlicht 2010, fügte viele Emojis der japanischen Mobilfunkanbieter Docomo, au und SoftBank hinzu. Einige als Emoji verwendete Symbole waren bereits früher kodiert; nicht jedes Emoji wurde erstmals in Version 6.0 aufgenommen.
+Unicode definiert eine Menge von 722 Emoji-Zeichen, die von japanischen Mobilfunkanbietern verwendet wurden. Davon waren 114 bereits in Unicode 5.2 oder früher kodiert; die übrigen 608 wurden 2010 mit Unicode 6.0 hinzugefügt.
 
 Mit der Einführung von Emojis ging Unicode über den bloßen Rahmen von „Zeichen“ hinaus und entwickelte sich zu einer universellen visuellen Sprache, um Emotionen und Konzepte zu vermitteln. Darüber hinaus wurden nach und nach komplexe Spezifikationen hinzugefügt, um die heutige Vielfalt (Diversity) widerzuspiegeln, wie etwa Modifikatoren für die Hautfarbe (Skin Tone Modifier) oder die Möglichkeit, mehrere Emojis zu einem einzigen zu kombinieren (ZWJ: Zero Width Joiner).
 
@@ -90,3 +91,7 @@ Hinter dem „😂“, das wir so beiläufig versenden, verbirgt sich das jahrze
 
 - [Unicode FAQ: UTF-8, UTF-16, UTF-32 & BOM](https://www.unicode.org/faq/utf_bom.html)
 - [Rob Pike: UTF-8 history](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt)
+- [Unicode Technical Standard #51: Unicode Emoji](https://unicode.org/reports/tr51/)
+- [Unicode Standard Annex #29: Unicode Text Segmentation](https://unicode.org/reports/tr29/)
+- [IETF RFC 3629: UTF-8](https://www.rfc-editor.org/rfc/rfc3629.html)
+- [MDN: String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)

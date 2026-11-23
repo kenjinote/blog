@@ -6,7 +6,7 @@ image: "eyecatch.jpg"
 categories: ["mathematics", "statistics"]
 tags: ["Central Limit Theorem", "Probability", "Data Science", "Python"]
 slug: "central-limit-theorem"
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 ## 1. Introduction
@@ -105,13 +105,13 @@ The Central Limit Theorem is important because, when its conditions hold and the
 When we infer something from data, such as in public opinion polls, quality control, or A/B testing, much of the rationale relies on the Central Limit Theorem.
 
 ### 5.2 Accumulation of Errors
-Measurement errors and many natural sources of noise can be modeled as sums of many small, independent factors, so a normal approximation may be appropriate. The normal distribution is also called the Gaussian distribution.
+Measurement errors and many natural sources of noise can be modeled as sums of many small factors; a normal approximation may be appropriate when assumptions such as independence and finite variance are reasonable. The normal distribution is also called the [Gaussian distribution](/en/p/gauss/).
 
 ## 6. Going Deeper: Approach to the Proof
 
-Characteristic functions and Taylor expansion are used for a strict proof of the Central Limit Theorem. Here is a brief overview.
+Characteristic functions and [Taylor expansion](/en/p/taylor-and-maclaurin-series/) are used for a strict proof of the Central Limit Theorem. Here is a brief overview.
 
-Using the characteristic function $\phi_X(t) = E[e^{itX}]$, the characteristic function of the sum of independent random variables is the product of their respective characteristic functions. When we calculate the characteristic function of the standardized variable $Z$ and take the limit as $n \to \infty$, it can be shown to converge to $e^{-t^2/2}$, which is the characteristic function of the standard normal distribution. This proves that the distribution itself converges to a normal distribution.
+Using the characteristic function $\phi_X(t) = E[e^{itX}]$, the characteristic function of the sum of independent random variables is the product of their respective characteristic functions. When we calculate the characteristic function of the standardized variable $Z$ and take the limit as $n \to \infty$, it can be shown to converge to $e^{-t^2/2}$, which is the characteristic function of the standard normal distribution. This shows that the distribution of the standardized variable converges to the standard normal distribution.
 
 ## 7. Conclusion
 

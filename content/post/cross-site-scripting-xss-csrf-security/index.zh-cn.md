@@ -13,7 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 ## 引言
@@ -54,7 +54,7 @@ XSS可以按数据如何被存储或反射，以及在哪里被不安全地解�
 1.  **会话劫持 (Session Hijacking):** 如果身份验证Cookie未设置 `HttpOnly`，攻击者可能通过 `document.cookie` 窃取会话ID。即使设置了 `HttpOnly`，XSS仍可能以用户身份发送已认证的请求。
 2.  **执行未授权操作:** 利用用户的权限，在后台执行应用程序内的任意操作（更改密码、转账、发送消息等）。
 3.  **网络钓鱼:** 在DOM上渲染虚假的登录表单，直接窃取用户的身份验证信息。
-4.  **分发恶意软件:** 将用户的浏览器重定向到漏洞利用工具包，使PC感染恶意软件。
+4.  **恶意软件传播：**在同时利用未修复浏览器漏洞的攻击活动中，将用户重定向到恶意内容可能导致设备感染恶意软件。
 
 ### 针对XSS的现代防御策略
 
@@ -68,7 +68,7 @@ CSP通过HTTP响应头限制浏览器可以加载和执行的资源，是防御X
 ```http
 Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com;
 ```
-这样一来，即使攻击者成功注入了内联脚本 `<script>alert(1)</script>`，CSP也会阻止其执行。
+这是使用主机白名单的简化示例。CSP是额外的纵深防御层，不能替代根据上下文进行的输出编码、安全的DOM API或HTML净化。生产环境中应尽可能优先采用基于nonce或哈希的严格策略，并谨慎限制可信主机。
 
 #### 3. 利用HttpOnly Cookie属性
 通过为存储会话ID等的Cookie添加 `HttpOnly` 属性，JavaScript (例如: `document.cookie`) 就无法访问该Cookie。这虽然不能防止XSS本身的发生，但它是一个大大降低因XSS导致会话劫持风险的重要缓解措施。
@@ -88,6 +88,7 @@ XSS是“在浏览器内执行恶意脚本”，而CSRF则是“滥用浏览器�
 **攻击场景:**
 
 此教学示例假设应用存在漏洞：身份验证Cookie允许通过 `SameSite=None; Secure` 跨站发送，且应用既不验证CSRF Token，也不检查Origin。`bank.example` 与 `attacker.invalid` 是属于不同站点的保留示例域名。
+本例还假设用户的浏览器设置和隐私功能允许发送此跨站（第三方）Cookie。
 1.  用户登录银行网站 (`bank.example`)，并接收到会话Cookie。
 2.  用户在另一个标签页中浏览了攻击者的陷阱网站 (`attacker.invalid`)。
 3.  陷阱网站中设置了如下的隐藏表单和自动发送脚本。
@@ -159,3 +160,7 @@ XSS和CSRF是不同的漏洞，但是**如果存在XSS，几乎所有的CSRF对�
 
 - [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+- [OWASP: DOM based XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+- [OWASP: Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
+- [MDN: Cross-site request forgery (CSRF)](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF)
+- [MDN: Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)

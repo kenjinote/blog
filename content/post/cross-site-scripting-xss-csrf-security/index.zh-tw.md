@@ -13,7 +13,7 @@ tags:
   - web-security
 image: eyecatch.jpg
 date: 2026-09-27T23:49:42+09:00
-lastmod: 2026-10-24T02:00:00+09:00
+lastmod: 2026-11-23T02:00:00+09:00
 ---
 
 ## 前言
@@ -54,7 +54,7 @@ DOM-based XSS 發生於用戶端JavaScript透過不安全的接收點處理不�
 1.  **Session Hijacking（工作階段劫持）：** 若驗證Cookie未設定 `HttpOnly`，攻擊者可能透過 `document.cookie` 竊取Session ID。即使設定了 `HttpOnly`，XSS仍可能以使用者身分發送已驗證的請求。
 2.  **執行未經授權的操作：** 以使用者的權限，在背景執行應用程式內的任意操作（如修改密碼、匯款、發送訊息等）。
 3.  **網路釣魚：** 在 DOM 上繪製假的登入表單，直接竊取使用者的驗證資訊。
-4.  **散佈惡意軟體：** 將使用者的瀏覽器重新導向到漏洞利用套件 (Exploit Kit)，使電腦感染惡意軟體。
+4.  **散佈惡意軟體：**在同時利用未修補瀏覽器漏洞的攻擊活動中，將使用者重新導向至惡意內容可能導致裝置感染惡意軟體。
 
 ### 針對 XSS 的現代防禦策略
 
@@ -68,7 +68,7 @@ CSP 是一種針對 XSS 非常強大的防禦機制，它在 HTTP 標頭中定�
 ```http
 Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com;
 ```
-藉此，即使攻擊者成功注入了內嵌指令碼 `<script>alert(1)</script>`，也會被 CSP 阻擋而無法執行。
+這是使用主機白名單的簡化範例。CSP是額外的縱深防禦層，不能取代依情境進行的輸出編碼、安全的DOM API或HTML淨化。正式環境中應盡可能優先採用以nonce或雜湊為基礎的嚴格政策，並謹慎限制可信任的主機。
 
 #### 3. 善用 HttpOnly Cookie 屬性
 為儲存 Session ID 等資訊的 Cookie 加上 `HttpOnly` 屬性後，就無法透過 JavaScript（例如：`document.cookie`）存取該 Cookie。雖然這無法防止 XSS 本身的發生，但它是大幅降低因 XSS 導致的 Session Hijacking 風險的重要緩解措施。
@@ -88,6 +88,7 @@ CSRF 是一種攻擊手法，攻擊者會將使用者誘導至陷阱網站，並
 **攻擊情境：**
 
 此教學範例假設應用程式存在漏洞：驗證Cookie允許透過 `SameSite=None; Secure` 跨站傳送，且應用程式既不驗證CSRF Token，也不檢查Origin。`bank.example` 與 `attacker.invalid` 是分屬不同站點的保留範例網域。
+本例也假設使用者的瀏覽器設定與隱私功能允許傳送此跨站（第三方）Cookie。
 1.  使用者登入銀行網站 (`bank.example`) 並取得 Session Cookie。
 2.  使用者在另一個分頁瀏覽了攻擊者的陷阱網站 (`attacker.invalid`)。
 3.  陷阱網站中被植入了以下隱藏表單和自動發送指令碼。
@@ -159,3 +160,7 @@ graph TD
 
 - [OWASP: XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [OWASP: CSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+- [OWASP: DOM based XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+- [OWASP: Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
+- [MDN: Cross-site request forgery (CSRF)](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF)
+- [MDN: Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)
