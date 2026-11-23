@@ -1,0 +1,465 @@
+{
+  "version": 1,
+  "article": "Post to Slack safely with an Incoming Webhook from C++ (WinHTTP)",
+  "frozenSourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://api.slack.com/messaging/webhooks",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpcrackurl",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpsendrequest"
+  ],
+  "findings": [
+    "Clarified that an Incoming Webhook URL is a secret credential, moved it out of source code to the SLACK_WEBHOOK_URL environment variable, and restricts the sample to HTTPS and hooks.slack.com.",
+    "Replaced the leaking/incomplete WinHTTP example with RAII handles and checks for every request stage, HTTP 200, and Slack's plain-text `ok` response.",
+    "Removed channel, username, and icon overrides from payload examples because Slack Incoming Webhooks do not support overriding those installation settings; pointed readers to chat.postMessage with chat:write for other operations.",
+    "Corrected WinHTTP from a C++ standard library to a Windows API, described UTF-8 JSON and serializer needs, preserved the original 2025-07-16 date, and added localized metadata and official references.",
+    "Compared the complete Japanese article with all twelve translations, including the shared code and JSON payload, metadata, security notes, and internal/external references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "ebb8d52accb8ddc7bcd83d614db9d430ee197e6c2c3a899c85c0a129c2c6b11e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "5820c9abea26328a3797aa8a91c1d6bead146be6c12c0030ffe0168e48a2c3ac",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "85c9d0e0ef98bf1ef19492e305f2f9dd27704190e557f5b4b217a36886e25941",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "3fd2cfdb772d6f597079d09bfaa50c19f7513ca38a6d67b540106bc4d54d8cd9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "ad8f22fd219467cfcdc36b6c228f212bcc09d21bd103d34261df90e9dd5db308",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "1a44af8bf535863577d1a242705279ffeb6136a2a70a5a941ffae7dcac51d25f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "137207379e9c9d691e5e84f56ed08c74c9cba1dcb9049cae0bd84509c1d37012",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "84335709899d3880fac3c61ea1aa689e33f53945d449798135d542c486198968",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "767cb2c27a47394afb4b8e6b5b36bf91e0e50ebc11846f66ad8a7b0bd99300e7",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "b5c83c106d00d89cd7e58d6b1e1fd68967e34a6b92c23bff4a66bc2573c92c28",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "142d6257cb209f1f5e059f56997d614455d527c330ce67332ea5a59af52a6d27",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "2ec80dfdff8c0eadd2c4655531a556cd3fd0ef3cd41fe638b69efb6bb6adb9ee",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full translation with Japanese, including Incoming Webhook setup, secret handling, Windows API scope, request lifecycle, JSON payload, response result, limitations, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Incoming Webhooks versus the Web API, webhook URL as a secret credential, HTTPS, WinHTTP/Win32, UTF-8, JSON serialization, `chat:write`, and `chat.postMessage` terminology across editions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivations or numerical calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the shared synchronous C++/WinHTTP example for URL parsing and HTTPS/host restriction, environment-variable secret input, RAII handle cleanup, byte lengths, send/receive errors, HTTP status, and Slack's `ok` body. It was not compiled or run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked Slack's official Incoming Webhooks behavior and Microsoft Learn references for WinHttpCrackUrl and WinHttpSendRequest; these references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the complete translation against Japanese, corrected the WinHTTP classification, replaced the incomplete/leaking code with a checked RAII example, protected webhook credentials, and corrected unsupported webhook customization claims.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The WinHTTP C++ sample was not compiled or run; no Slack workspace message was sent.",
+        "The example targets standard Slack webhook hostnames and a synchronous desktop application; GovSlack and asynchronous use are not covered.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    }
+  }
+}

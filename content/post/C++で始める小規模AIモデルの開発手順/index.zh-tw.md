@@ -1,33 +1,25 @@
 ---
-title: '使用C++開發小規模AI模型（如TinyLLaMA）的步驟指南'
+title: "用 C++ 開始執行小型 LLM：TinyLlama、llama.cpp 與 ggml"
 slug: "cpp-small-ai-model-tinyllama-dev-guide"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
-description: '本文詳細解說如何使用C++與ggml，在本地環境中針對如TinyLLaMA等小規模AI模型進行推論的開發步驟與內部架構。內容涵蓋記憶體映射、張量運算以及SIMD最佳化。'
+description: "透過 C++ 執行 TinyLlama 等小型 LLM 的實用入門，涵蓋 llama.cpp 建置、GGUF、量化、KV 快取與推論架構。"
 ---
 
-# 使用C++開發小規模AI模型（如TinyLLaMA）的步驟指南
+# 用 C++ 開始執行小型 LLM：TinyLlama、llama.cpp 與 ggml
 
-近年來，在本地環境中執行[大型語言模型](/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的關注度急遽上升。特別是像 TinyLLaMA（1.1B參數）這樣的小規模模型，即使在資源受限的邊緣裝置或一般筆記型電腦（包含 Windows 環境）上，也能以實用的速度進行推論。雖然使用 Python 和 PyTorch 進行開發是目前的主流，但若要追求極致的效能與記憶體節省，結合 C++ 與基於 C 語言的張量函式庫「ggml」已成為業界的標準。
+> **範圍與更正：** 本文介紹推論架構，以及如何建置持續維護的 [llama.cpp](https://github.com/ggml-org/llama.cpp)，並非從零完整實作該專案。llama.cpp 以 [ggml](https://github.com/ggml-org/ggml) 為基礎。記憶體與速度數值只是估算，會受模型、量化、上下文長度、硬體及建置方式影響。mmap 會依需求載入頁面，不保證整個流程零複製，也不代表不使用實體記憶體。舊 CMake 範例無法組成可執行的 ggml 應用程式，已改為官方建置步驟。
 
-本文將提供非常詳細的開發步驟，解說如何從零開始建構（或深入理解現有 llama.cpp 的內部結構）一個使用 C++ 載入 TinyLLaMA 並進行文字生成的推論引擎。
-
----
+> **實作補充與更正：** GGUF 張量位移遵循 `general.alignment`（未指定時預設為32位元組），並非一律固定為32或64位元組。Q4_0每個區塊包含32個值，Q4_K則包含256個值。11億參數模型僅FP16權重約需2.2GB（2.05GiB）；簡單以4位元估算約為0.55GB。量化中繼資料、GGUF 容器、執行階段工作區與 KV 快取都會增加實際檔案及記憶體需求。ggml/llama.cpp的記憶體配置與KV快取策略會依版本、後端和設定而異，不能假設推論期間完全不配置記憶體，也不能假設一定預先配置最大上下文。TinyLlama 1.1B Chat設定為32個Query head及4個Key/Value head；張量形狀與運算應符合模型設定及執行環境。 第3至8節為概念說明，並非可直接複製執行的自訂引擎實作步驟。GQA不一定需要明確複製KV張量；實際運算與張量形狀取決於執行環境。請使用模型專屬的分詞器、特殊標記及聊天範本。GGUF是廣泛使用的格式之一，不代表適用於所有模型與執行環境的最佳格式。強制指定AVX2等指令集前，請確認CPU支援，並遵循官方建置指南中的後端選項。
 
 ## 1. 為什麼選擇C++與ggml？
 
-在 AI 的訓練階段，擁有高靈活性與豐富生態系的 Python 佔有絕對的優勢。然而，在部署與「推論（Inference）」階段，基於以下理由，C++ 成為了強大的選擇：
-
-1. **減少額外負擔（Overhead）**: 可以完全消除 Python 的全域直譯器鎖（GIL）以及執行時期的額外負擔。
-2. **記憶體效率與 Arena 分配（Arena Allocation）**: 由於可以手動控制記憶體的配置與釋放，能防止垃圾回收（[Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）所造成無法預測的效能突波。
-3. **直接存取硬體**: 能夠直接呼叫 AVX-512、AVX2、ARM NEON 等 SIMD 內建函式（Intrinsics），將 CPU 的運算能力發揮到極致。
-4. **排除依賴關係**: ggml 是一個零依賴（Zero dependencies）的 C/C++ 函式庫，只要有編譯器，即使在 Windows 的 MSVC 環境下也能輕鬆編譯。
-
----
+Python 提供豐富的訓練與實驗生態。C/C++ 適合原生應用程式整合、部署與執行階段控制。C++ 並非在所有設定中都必然較快；實際效能取決於模型、後端與硬體。
 
 ## 2. 架構全貌
 
@@ -207,40 +199,21 @@ ggml 並非將整個張量統一進行量子化，而是以「區塊（Block）�
 
 ## 9. 建立C++專案（Windows / PowerShell 環境）
 
-```cmake
-cmake_minimum_required(VERSION 3.14)
-project(TinyLLaMACpp)
+安裝包含 C++ 桌面開發工作負載的 Visual Studio 2022 和 CMake，再依照 [llama.cpp 官方建置指南](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md)建置儲存庫。這會建置既有推論執行環境，不會產生完整的自訂推論引擎。
 
-set(CMAKE_CXX_STANDARD 17)
-
-# 針對 Windows (MSVC) 的最佳化與 AVX2 旗標設定
-if(MSVC)
-    add_compile_options(/O2 /arch:AVX2 /fp:fast)
-    add_link_options(/STACK:8388608)
-else()
-    add_compile_options(-O3 -march=native -ffast-math)
-endif()
-
-add_library(ggml OBJECT ggml/ggml.c ggml/ggml-alloc.c)
-target_compile_definitions(ggml PRIVATE GGML_USE_AVX2 GGML_USE_F16C GGML_USE_FMA)
-
-add_executable(main main.cpp)
-target_link_libraries(main ggml)
-```
-
-PowerShell 中的編譯指令範例：
 ```powershell
-mkdir build
-cd build
-cmake .. -G "Visual Studio 17 2022" -A x64
-cmake --build . --config Release
+git clone https://github.com/ggml-org/llama.cpp
+Set-Location llama.cpp
+cmake -B build
+cmake --build build --config Release
 ```
 
----
+另行取得與 llama.cpp 相容的 GGUF 模型，並確認授權與來源。[TinyLlama 模型卡與設定](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)可供參考。請將下方路徑改成實際本機檔案，並確認聊天範本與量化類型。
+
+```powershell
+.\build\bin\Release\llama-cli.exe -m "C:\models\model.gguf"
+```
 
 ## 10. 總結
 
-使用 C++ 與 ggml 從零開始實作如 TinyLLaMA 這類小規模 AI 模型的推論引擎，是揭開深度學習黑盒子、並學習低階硬體控制之美的絕佳機會。讓我們一邊充分體會利用記憶體映射進行的零拷貝載入、SIMD 最佳化、建構 KV Cache 等系統程式設計的精髓，一邊開拓邊緣 AI（Edge AI）的未來吧。
-
-
-
+首次以 C++ 在本機執行 LLM，建議建置持續維護的 llama.cpp 並執行相容的 GGUF 模型。直接以 ggml 撰寫引擎是另一項專案，還需處理模型專屬分詞器、運算子、權重格式、KV 快取、後端及驗證。

@@ -1,16 +1,18 @@
 ---
-title: '【WinHTTP】從C++（Win32 API）透過Webhook發送訊息到Slack的方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "[WinHTTP] 使用 C++ 透過 Incoming Webhook 安全地發送訊息至 Slack"
+date: "2025-07-16T19:42:56+09:00"
+lastmod: "2026-11-23"
 slug: "C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】"
-date: 2025-07-16T19:42:56+09:00
 tags: ["C++", "Win32 API", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: '獻給不使用Node.js或Python，偏要用「C++ × Win32 API × WinHTTP」自動發文到Slack的您！本文將淺顯易懂地解說如何活用Incoming Webhooks，從C++透過POST請求發送訊息的具體步驟。'
+description: "Slack Incoming Webhook 的 WinHTTP C++ 範例，說明秘密 URL、HTTPS、JSON、回應檢查，以及 Webhook 無法覆寫的欄位。"
 ---
 
 # 使用 C++（Win32 API + WinHTTP）發送訊息至 Slack 的方法【支援 Webhook】
+
+> **行為與安全：** Incoming Webhook URL含有秘密憑證。請勿提交至程式碼儲存庫；應存放於環境變數或秘密管理服務。Webhook會發送至安裝時選擇的頻道，無法透過負載更改頻道、使用者名稱或圖示。如需指定其他目的地或操作訊息，請使用具備必要權限（通常為`chat:write`）的Slack應用程式與`chat.postMessage`。WinHTTP是Windows API。以下是同步範例；請傳送UTF-8 JSON，動態訊息文字請使用JSON序列化器。
 
 想要從 C++ 發送訊息到 Slack。
 在 Node.js 或 Python 中這很常見，但使用「C++ × Win32 API × WinHTTP」來做的情況應該很少見吧。
@@ -52,7 +54,7 @@ description: '獻給不使用Node.js或Python，偏要用「C++ × Win32 API × 
 ### 使用技術
 
 * Win32 API
-* WinHTTP（標準函式庫）
+* WinHTTP（Windows API）
 * JSON 格式訊息
 
 ### 範例程式碼（發佈至 Slack）
@@ -61,87 +63,89 @@ description: '獻給不使用Node.js或Python，偏要用「C++ × Win32 API × 
 #include <windows.h>
 #include <winhttp.h>
 #include <iostream>
+#include <string>
 
 #pragma comment(lib, "winhttp.lib")
 
-bool PostToSlack(const std::wstring& webhookUrl, const std::string& messageJson) {
-    // 解析 URL
-    URL_COMPONENTS urlComp{};
-    wchar_t hostName[256];
-    wchar_t urlPath[1024];
+struct InternetHandle {
+    HINTERNET value{};
+    explicit InternetHandle(HINTERNET h) : value(h) {}
+    ~InternetHandle() { if (value) WinHttpCloseHandle(value); }
+    InternetHandle(const InternetHandle&) = delete;
+    InternetHandle& operator=(const InternetHandle&) = delete;
+};
 
-    urlComp.dwStructSize = sizeof(urlComp);
-    urlComp.lpszHostName = hostName;
-    urlComp.dwHostNameLength = _countof(hostName);
-    urlComp.lpszUrlPath = urlPath;
-    urlComp.dwUrlPathLength = _countof(urlPath);
+bool PostToSlack(const std::wstring& webhookUrl, const std::string& bodyUtf8) {
+    URL_COMPONENTS parts{};
+    parts.dwStructSize = sizeof(parts);
+    parts.dwSchemeLength = parts.dwHostNameLength = DWORD(-1);
+    parts.dwUrlPathLength = parts.dwExtraInfoLength = DWORD(-1);
+    if (!WinHttpCrackUrl(webhookUrl.c_str(), 0, 0, &parts) ||
+        parts.nScheme != INTERNET_SCHEME_HTTPS) return false;
 
-    if (!WinHttpCrackUrl(webhookUrl.c_str(), 0, 0, &urlComp)) {
-        std::wcerr << L"URL 解析失敗\n";
-        return false;
+    const std::wstring host(parts.lpszHostName, parts.dwHostNameLength);
+    if (host != L"hooks.slack.com") return false;
+    std::wstring path(parts.lpszUrlPath, parts.dwUrlPathLength);
+    if (parts.dwExtraInfoLength)
+        path.append(parts.lpszExtraInfo, parts.dwExtraInfoLength);
+    if (bodyUtf8.size() > MAXDWORD) return false;
+
+    InternetHandle session(WinHttpOpen(L"SlackPoster/1.0",
+        WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, WINHTTP_NO_PROXY_NAME,
+        WINHTTP_NO_PROXY_BYPASS, 0));
+    if (!session.value) return false;
+    InternetHandle connection(WinHttpConnect(session.value, host.c_str(), parts.nPort, 0));
+    if (!connection.value) return false;
+    InternetHandle request(WinHttpOpenRequest(connection.value, L"POST", path.c_str(),
+        nullptr, WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, WINHTTP_FLAG_SECURE));
+    if (!request.value) return false;
+
+    const wchar_t* headers = L"Content-Type: application/json; charset=utf-8\r\n";
+    const DWORD bodySize = static_cast<DWORD>(bodyUtf8.size());
+    if (!WinHttpSendRequest(request.value, headers, DWORD(-1),
+        bodyUtf8.empty() ? WINHTTP_NO_REQUEST_DATA : const_cast<char*>(bodyUtf8.data()),
+        bodySize, bodySize, 0) || !WinHttpReceiveResponse(request.value, nullptr)) return false;
+
+    DWORD status = 0, statusSize = sizeof(status);
+    if (!WinHttpQueryHeaders(request.value,
+        WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER,
+        WINHTTP_HEADER_NAME_BY_INDEX, &status, &statusSize, WINHTTP_NO_HEADER_INDEX) ||
+        status != 200) return false;
+
+    std::string response;
+    for (;;) {
+        DWORD available = 0;
+        if (!WinHttpQueryDataAvailable(request.value, &available)) return false;
+        if (!available) break;
+        const size_t oldSize = response.size();
+        response.resize(oldSize + available);
+        DWORD bytesRead = 0;
+        if (!WinHttpReadData(request.value, response.data() + oldSize, available, &bytesRead)) return false;
+        response.resize(oldSize + bytesRead);
     }
-
-    // HTTP 階段與連線
-    HINTERNET hSession = WinHttpOpen(L"SlackPoster/1.0",
-                                     WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
-                                     WINHTTP_NO_PROXY_NAME,
-                                     WINHTTP_NO_PROXY_BYPASS, 0);
-    HINTERNET hConnect = WinHttpConnect(hSession, hostName, urlComp.nPort, 0);
-    HINTERNET hRequest = WinHttpOpenRequest(hConnect, L"POST", urlPath,
-                                            NULL, WINHTTP_NO_REFERER,
-                                            WINHTTP_DEFAULT_ACCEPT_TYPES,
-                                            WINHTTP_FLAG_SECURE);
-
-    std::wstring headers = L"Content-Type: application/json\r\n";
-    BOOL result = WinHttpSendRequest(hRequest,
-                                     headers.c_str(),
-                                     -1,
-                                     (LPVOID)messageJson.c_str(),
-                                     messageJson.length(),
-                                     messageJson.length(),
-                                     0);
-
-    if (!result) {
-        std::cerr << "發送請求失敗\n";
-        return false;
-    }
-
-    WinHttpReceiveResponse(hRequest, NULL);
-
-    DWORD statusCode = 0;
-    DWORD size = sizeof(statusCode);
-    WinHttpQueryHeaders(hRequest,
-                        WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER,
-                        WINHTTP_HEADER_NAME_BY_INDEX,
-                        &statusCode, &size, WINHTTP_NO_HEADER_INDEX);
-
-    // 釋放資源
-    WinHttpCloseHandle(hRequest);
-    WinHttpCloseHandle(hConnect);
-    WinHttpCloseHandle(hSession);
-
-    return (statusCode == 200);
+    return response == "ok";
 }
 
 int main() {
-    std::wstring webhookUrl = L"https://hooks.slack.com/services/xxx/yyy/zzz"; // 請替換成自己的 Webhook
-
-    std::string message = R"({
-        "text": "Hello from C++ :rocket:",
-        "username": "C++ Bot",
-        "icon_emoji": ":robot_face:"
-    })";
-
-    if (PostToSlack(webhookUrl, message)) {
-        std::cout << "發布成功！\n";
-    } else {
-        std::cerr << "發布失敗。\n";
+    wchar_t webhookBuffer[512]{};
+    const DWORD bufferCount = static_cast<DWORD>(
+        sizeof(webhookBuffer) / sizeof(webhookBuffer[0]));
+    const DWORD chars = GetEnvironmentVariableW(
+        L"SLACK_WEBHOOK_URL", webhookBuffer, bufferCount);
+    if (chars == 0 || chars >= bufferCount) {
+        std::cerr << "Set SLACK_WEBHOOK_URL to the webhook URL.\n";
+        return 1;
     }
-
+    const std::wstring webhookUrl(webhookBuffer, chars);
+    const std::string bodyUtf8 = R"({"text":"Hello from C++ :rocket:"})";
+    if (!PostToSlack(webhookUrl, bodyUtf8)) {
+        std::cerr << "Slack webhook request failed.\n";
+        return 1;
+    }
+    std::cout << "Slack accepted the message.\n";
     return 0;
 }
 ```
-
 ---
 
 ## 🧪 自訂 JSON 訊息
@@ -149,14 +153,8 @@ int main() {
 在 Slack 的 Webhook 中，可以包含以下參數：
 
 ```json
-{
-  "text": "通知內容",
-  "username": "Bot 名稱",
-  "icon_emoji": ":rocket:",
-  "channel": "#任意頻道名稱"
-}
+{"text":"Hello, world."}
 ```
-
 ---
 
 ## 📌 補充事項
@@ -172,7 +170,7 @@ int main() {
 在 Slack 中會這樣顯示：
 
 ```
-[C++ Bot]
+[Slack app identity configured for this webhook]
 Hello from C++ :rocket:
 ```
 
@@ -200,3 +198,9 @@ Hello from C++ :rocket:
 *  **使用 Slack App + [OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)2 進行靈活的 API 操作** 
 
 等，為您介紹更進一步的 Slack 整合！
+
+## 參考資料
+
+- [Slack Incoming Webhooks](https://api.slack.com/messaging/webhooks)
+- [WinHttpCrackUrl](https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpcrackurl)
+- [WinHttpSendRequest](https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpsendrequest)

@@ -1,33 +1,25 @@
 ---
-title: 'Panduan Pengembangan Model AI Skala Kecil (seperti TinyLLaMA) Menggunakan C++'
+title: "Memulai Inferensi LLM Kecil dengan C++: TinyLlama, llama.cpp, dan ggml"
 slug: "cpp-small-ai-model-tinyllama-dev-guide"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
-description: 'Menjelaskan langkah-langkah pengembangan terperinci dan arsitektur internal untuk menginferensi model AI skala kecil seperti TinyLLaMA di lingkungan lokal menggunakan C++ dan ggml. Mencakup pemetaan memori, operasi tensor, dan optimisasi SIMD.'
+description: "Panduan praktis menjalankan LLM kecil seperti TinyLlama dari C++. Membahas build llama.cpp, GGUF, kuantisasi, KV cache, dan arsitektur inferensi."
 ---
 
-# Panduan Pengembangan Model AI Skala Kecil (seperti TinyLLaMA) Menggunakan C++
+# Memulai Inferensi LLM Kecil dengan C++: TinyLlama, llama.cpp, dan ggml
 
-Baru-baru ini, minat terhadap eksekusi model bahasa besar ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) di lingkungan lokal telah meningkat secara pesat. Secara khusus, model berskala kecil seperti TinyLLaMA (1.1B parameter) dapat diinferensi dengan kecepatan praktis bahkan pada perangkat edge dengan sumber daya terbatas atau laptop umum (termasuk lingkungan Windows). Sementara pengembangan menggunakan Python dan PyTorch adalah arus utama, ketika mengejar kinerja dan efisiensi memori terbaik, kombinasi C++ dan pustaka tensor berbasis C, "ggml", telah menjadi standar de facto.
+> **Cakupan dan koreksi:** Ini adalah pengantar arsitektur inferensi dan cara membangun proyek terpelihara [llama.cpp](https://github.com/ggml-org/llama.cpp), bukan implementasi lengkap dari nol. llama.cpp dibangun di atas [ggml](https://github.com/ggml-org/ggml). Angka memori dan kecepatan adalah perkiraan yang bergantung pada model, kuantisasi, konteks, perangkat keras, dan build. mmap memuat halaman saat dibutuhkan; ini tidak menjamin pemrosesan zero-copy menyeluruh atau meniadakan penggunaan memori fisik. Contoh CMake lama tidak membentuk aplikasi ggml yang berfungsi dan telah diganti dengan prosedur resmi.
 
-Artikel ini akan menjelaskan secara rinci prosedur pengembangan (atau pemahaman mendalam tentang struktur internal llama.cpp yang sudah ada) untuk membangun mesin inferensi dari awal guna memuat TinyLLaMA dan melakukan pembuatan teks menggunakan C++.
-
----
+> **Catatan implementasi (koreksi untuk uraian di bawah):** Offset tensor GGUF mengikuti `general.alignment` (default 32 byte jika tidak dicantumkan); nilainya tidak selalu 32 atau 64 byte. Q4_0 menyimpan blok 32 nilai, sedangkan Q4_K memakai blok 256 nilai. Untuk 1,1 miliar parameter, bobot FP16 saja sekitar 2,2 GB (2,05 GiB); perkiraan sederhana 4-bit sekitar 0,55 GB. Metadata kuantisasi, overhead GGUF, ruang kerja runtime, dan KV cache menambah kebutuhan file dan RAM sebenarnya. Strategi alokasi dan KV cache ggml/llama.cpp berbeda menurut versi, backend, dan pengaturan; jangan menganggap inferensi bebas alokasi atau selalu mencadangkan seluruh konteks maksimum. Konfigurasi TinyLlama 1.1B Chat memakai 32 query head dan 4 key/value head; sesuaikan bentuk tensor dan operasi dengan konfigurasi model serta runtime. Bagian 3–8 bersifat konseptual, bukan petunjuk salin-tempel untuk membuat engine kustom yang berfungsi. GQA tidak selalu memerlukan replikasi tensor KV secara eksplisit; operasi dan bentuk tensor bergantung pada runtime. Gunakan tokenizer, token khusus, dan template chat milik model. GGUF adalah format yang banyak digunakan, bukan format terbaik secara universal untuk setiap model dan runtime. Sebelum memaksa set instruksi seperti AVX2, periksa dukungan CPU dan ikuti opsi backend pada panduan build resmi.
 
 ## 1. Mengapa C++ dan ggml?
 
-Dalam tahap pelatihan AI, Python sangat diuntungkan dengan fleksibilitas dan ekosistemnya yang kaya. Namun, dalam fase penerapan dan "Inferensi", C++ menjadi pilihan yang kuat karena alasan berikut:
-
-1. **Pengurangan Overhead**: Global Interpreter [Lock](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/) (GIL) Python dan overhead runtime dapat dihilangkan sepenuhnya.
-2. **Efisiensi Memori dan Alokasi Arena**: Karena alokasi dan dealokasi memori dapat dikontrol secara manual, lonjakan yang tidak dapat diprediksi akibat *garbage collection* dapat dicegah.
-3. **Akses Langsung ke Perangkat Keras**: Dapat langsung memanggil fungsi bawaan SIMD (Intrinsics) seperti AVX-512, AVX2, dan ARM NEON untuk memaksimalkan kemampuan komputasi CPU.
-4. **Tanpa Dependensi**: ggml adalah pustaka C/C++ dengan nol dependensi (Zero dependencies), yang dapat dengan mudah dibangun bahkan di lingkungan MSVC di Windows asalkan ada kompilator.
-
----
+Python memiliki ekosistem luas untuk pelatihan dan eksperimen. C dan C++ berguna untuk integrasi aplikasi native, distribusi, dan kendali runtime. C++ tidak selalu otomatis lebih cepat; kinerja terukur bergantung pada model, backend, dan perangkat keras.
 
 ## 2. Gambaran Keseluruhan Arsitektur
 
@@ -207,39 +199,21 @@ Dari logit yang dikeluarkan dari LM Head, probabilitas diskalakan menggunakan pa
 
 ## 9. Mempersiapkan Proyek C++ (Lingkungan Windows / PowerShell)
 
-```cmake
-cmake_minimum_required(VERSION 3.14)
-project(TinyLLaMACpp)
+Pasang Visual Studio 2022 dengan workload desktop C++ serta CMake, lalu build repositori mengikuti [panduan build resmi llama.cpp](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md). Langkah ini membangun runtime inferensi yang sudah ada, bukan engine kustom yang lengkap.
 
-set(CMAKE_CXX_STANDARD 17)
-
-# Pengaturan Optimisasi dan bendera AVX2 untuk Windows (MSVC)
-if(MSVC)
-    add_compile_options(/O2 /arch:AVX2 /fp:fast)
-    add_link_options(/STACK:8388608)
-else()
-    add_compile_options(-O3 -march=native -ffast-math)
-endif()
-
-add_library(ggml OBJECT ggml/ggml.c ggml/ggml-alloc.c)
-target_compile_definitions(ggml PRIVATE GGML_USE_AVX2 GGML_USE_F16C GGML_USE_FMA)
-
-add_executable(main main.cpp)
-target_link_libraries(main ggml)
-```
-
-Contoh perintah pembuatan (build) di PowerShell:
 ```powershell
-mkdir build
-cd build
-cmake .. -G "Visual Studio 17 2022" -A x64
-cmake --build . --config Release
+git clone https://github.com/ggml-org/llama.cpp
+Set-Location llama.cpp
+cmake -B build
+cmake --build build --config Release
 ```
 
----
+Dapatkan file model GGUF yang kompatibel dengan llama.cpp secara terpisah dan periksa lisensi serta sumbernya. [Kartu model dan konfigurasi TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) dapat dijadikan referensi. Ganti path berikut dengan file lokal Anda, lalu periksa template chat dan jenis kuantisasinya.
+
+```powershell
+.\build\bin\Release\llama-cli.exe -m "C:\models\model.gguf"
+```
 
 ## 10. Kesimpulan
 
-Membangun mesin inferensi dari awal untuk model AI berskala kecil seperti TinyLLaMA menggunakan C++ dan ggml adalah kesempatan bagus untuk mengungkap kotak hitam (*black box*) pembelajaran mendalam dan mempelajari keindahan kontrol perangkat keras tingkat rendah. Mari kita membuka masa depan Edge AI sambil menikmati sepenuhnya esensi pemrograman sistem, seperti pemuatan *zero-copy* menggunakan pemetaan memori, optimisasi SIMD, dan pembangunan tembolok KV.
-
-
+Untuk percobaan pertama menjalankan LLM lokal dari C++, build proyek llama.cpp yang terpelihara dan gunakan model GGUF yang kompatibel. Membuat engine langsung di atas ggml adalah proyek terpisah yang harus menangani tokenisasi, operator, format bobot, KV cache, backend, dan pengujian khusus model.

@@ -6845,6 +6845,366 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-056.json",
       "evidenceHash": "2b7fc3983f4452d56b16e2306768b97862632ad56f4d68072ffb3a139221f157"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.en.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "70627887811bfe49c42235bf396f450d6f15dfa769fcbbaa69654a55a471e6f2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "4e3a144e023af69e66c7ccf8d97c1d9d9364f117043058d8c6976554febabeb4"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.zh-cn.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "a118c47aba39cba0806bcf3493206ba7ac12a5dc98a41efb2ae82f4118c530c8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "2c0b7362771677d76d2fcb8397312bb05f8637f495e9fe098f4f75e4cf5eb3b5"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.es.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "f7d64fdb4e90c38054bdfae368f18401a32b19b35d8ca4a163db5edc698a86ed",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "8eca10ee0e44f1f0b6c541c3ec83297cc1cf0c801206aec7ad5e8dab35c003a0"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.ko.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "d6f4fa5f0ac02bfa77ae3623a8e2d75255efcdffd596d9b3007785545fab3471",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "f416a3c5131b7e2037eff9f4b9e1388c934cdf7f411976f71adc1cf32b7021e4"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.pt.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "1516d5944f6b0fa2432fe7704d1d71bdba6a6d17a7645b3a78dd735cf3fbc640",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "6cdb1445ea4f4f4cf823722d2c336abda65b9b4e53c6b775fc6b379b4c12b3cf"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.zh-tw.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "31618ac74cd33442f5fbda5f64efa0233b70fa75c735e8d26ecafc5b7f9e4418",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "72de437a00a143f97b3c09ae9dec612a0ac96a14b6f4714c059fd39104af39c7"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.hi.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "df7d3a7b7df3bff30e95f571fd696e3a668a17216d07cc57c5cb62a996f20205",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "04ba4a0cf2039357cedd604918b0fade9f1bac97b410120248c8e9a6bd46de36"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.fr.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "a9a2ca5d4df3dbb50008903efb7d4566cb2927b73820cecdad6b60945ac921b0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "0d46b2581738fee8f5219bfda1038158c4c2d1b520d57447edaa64ce1954f674"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.de.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "293d9539080cf151f4c1bdbef4eb0cfd2b7ab044a7d00b7a656c15f55d285388",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "843444b8396f05398770c03b20d856cbdd191de2d69e2657dea5173773c3f427"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.ar.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "55dbfc6268ffcc8455a3f2aaf03dca0a746b39aab3aaf47ec2b6a93d453e3c66",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "31088b8428ef8346e39eefe3333f25a23763d55f82b554322496a3900d904d90"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.ru.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "b9ed6bf4723640f40d665c43887f1eb7df3b984ad62593d9b8b477ba229cad1d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "9c177d65304199402aefe4a3b5b44adf1a764729a66b791c4b3ebcaf616f2aab"
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.id.md": {
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "a918a3b0141e01ec00b9fd351b9e6ab560129a0916fc270e5f47fff8ce8d6c41",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-057.json",
+      "evidenceHash": "fd513f81cbc180b12be8ddc892156ab80d409c120d810a939a99b4b24eab617a"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.en.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "127d103aa2650726c947b07bcf07b4264a4a905cc414a2ad809e8a50433614ca",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "15f996f890894320e11575bb21c0bba6b1dd5ad8eb84f4d0106481fe939c2e76"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.zh-cn.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "b7b0eee657065471dd5a53e73c1df84f1562dd360426ff0016b43b3b06ade20a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "1956984f6e61246b3568450a8063eef8e7293ba89af102dfced3e0e39f8176f2"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.es.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "38807c21638cb02649d3eeca059c6a2a45cb9586f97aa5fadeb9d1d1579b45ab",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "0ff28ad8226fef6adaaa4d016586d9d67ba2da03abc99781efb9e96a43190bf8"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.ko.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "b7c808047d4aeaa61db77715e57b624e6c9c8cc03ecbd05f67295b0dc352b4f2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "84cfcdfd4975a92eac6ad41149c93e17beff14a407538142e90d8ac70ce708de"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.pt.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "0c2eea162c4e39e2f3c222ce2d0232ba665dbf9ce344d4d11c381f81410d4f65",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "35b1f454290387ee0f6832a22a2233a2802fb3a99d6b7d69829b65efcd006be8"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.zh-tw.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "7c13815999c603aa5d607a57b598fba13387416b60bde4200d9b2107f34ebf8e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "c64ab25a19f332507fc7bd5ed7c0353bc968fecbf862ad761395b805d9cf84a7"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.hi.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "c8c1bdc6416699544332705c8cee26209a8b6f0379de80e0576230a907826c88",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "588711d1406dd92bd3d6b66e8bdd2de4c922d3d6634abedcf9a3e5db0ce53332"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.fr.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "b582c048d313416c06985b2b5926202864809b90e97adbe5ebfc87cb826f604a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "30de4bbbe0bcd0250ceb63075515113f1d1077e739f97c4938c44bd19ff5c61b"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.de.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "ac876424a3803bd0c11752da3c550a1eef7b60d99eaf18f2a7c3623c1bc5803c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "0e3c56dd14a1ef21ab78ff8de593cbab885bf2335f4ce504fcd3b265e829713a"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.ar.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "e8fe6bb512fd6133a49d3703afb3f7609d2378b974937e9710a0f0d3d40b4fbb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "245307cc5e0bf0989f01480d3a2994942395bcca2843fad3524d2cd54a351f89"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.ru.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "6e6e378df2f3e65483ba5b8c0d1bb5aeffa5c80bb739185d736bbc16b59d6397",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "5c6d860f95b0cd595959f4ba42b2925c4cc5d5bcd9f4bfc00009af76f7ff8b84"
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.id.md": {
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "076bc5a65245865c6b1c272aaf2f33805bfbdc2b98eca8d5824faeda5c342ad9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-058.json",
+      "evidenceHash": "9c03b0dc6ac6456939da566a4b3e5bc711d70287c92666eeec18231c4bb2f338"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.en.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "ebb8d52accb8ddc7bcd83d614db9d430ee197e6c2c3a899c85c0a129c2c6b11e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "8b8cd7a8de772e30da87dde981813a61c870ab352a8d60e6bf5668e71780dd4e"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.zh-cn.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "5820c9abea26328a3797aa8a91c1d6bead146be6c12c0030ffe0168e48a2c3ac",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "23b0ccc3799d7ad73b51995c3c93d8952ad053b0b7d46d2e0e0eae50787f001b"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.es.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "85c9d0e0ef98bf1ef19492e305f2f9dd27704190e557f5b4b217a36886e25941",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "80b41afb78b37f8ec44848f45bb9576d39b7d14e49d47d0515cadaacc0b1a9c9"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.ko.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "3fd2cfdb772d6f597079d09bfaa50c19f7513ca38a6d67b540106bc4d54d8cd9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "7ef2c6f73a91ffa22ae3cf7c6e4b40e1737af21dbed8be0a466d915bbe1dc1af"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.pt.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "ad8f22fd219467cfcdc36b6c228f212bcc09d21bd103d34261df90e9dd5db308",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "9dada7a241785420c0839fba4feba5dd46bc6f5bc3887a7ccf2293aea5fb8dea"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.zh-tw.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "1a44af8bf535863577d1a242705279ffeb6136a2a70a5a941ffae7dcac51d25f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "a7d7b3e6b2d852800835d70158fcdbbc49278608c44af49c7453c7779a5e6b63"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.hi.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "137207379e9c9d691e5e84f56ed08c74c9cba1dcb9049cae0bd84509c1d37012",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "02fc164cfb65e5f6d3e43fc93dc48a7797bd32c5bfe4b8b0e5a4d58237487308"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.fr.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "84335709899d3880fac3c61ea1aa689e33f53945d449798135d542c486198968",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "66c7fe4e947afad6ccb2771eb23a48592b72145d59a5fd94102e06e6ae9e3226"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.de.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "767cb2c27a47394afb4b8e6b5b36bf91e0e50ebc11846f66ad8a7b0bd99300e7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "e1a60bea47580614869ed2556a4c83968ce6122a9ce0edb7a2b06162fa6e58da"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.ar.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "b5c83c106d00d89cd7e58d6b1e1fd68967e34a6b92c23bff4a66bc2573c92c28",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "49ed29662d4d428aaaae2024bdd76dac4f1f2653ab702d10c94d891fd3ada844"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.ru.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "142d6257cb209f1f5e059f56997d614455d527c330ce67332ea5a59af52a6d27",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "e10c64f0c8af5816c417249aa9c9f4395dee4836a5147b37d937909993cb7267"
+    },
+    "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.id.md": {
+      "source": "post/C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "7365ba9f49b4eb208085e4be6821e3fe9b3a17f74a6e86488da29f929c4c4b49",
+      "translationHash": "2ec80dfdff8c0eadd2c4655531a556cd3fd0ef3cd41fe638b69efb6bb6adb9ee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-059.json",
+      "evidenceHash": "a7f76f780f92033a8cda7e7f61f59a6b960f8d814f30182673a051ca7237f421"
     }
   }
 }

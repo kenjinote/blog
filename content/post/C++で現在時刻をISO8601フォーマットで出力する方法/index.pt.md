@@ -1,13 +1,13 @@
 ---
-title: '[C++20] Exemplo de Código Simples para Imprimir a Hora Atual no Formato ISO8601 (UTC)'
-date: "2026-09-24T19:44:38+09:00"
+title: "[C++20] Formate a hora atual como UTC ISO 8601 com std::chrono e std::format"
+date: "2023-04-15T19:35:27+09:00"
+lastmod: "2026-11-23"
 slug: "C++で現在時刻をISO8601フォーマットで出力する方法"
-date: 2023-04-15T19:35:27+09:00
 tags: ["C++", "Data e Hora", "ISO8601"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Imperdível para engenheiros que desejam exibir a hora atual no padrão mundial ISO8601 usando C++! Neste artigo, apresentamos um código de exemplo claro e inteligente para converter a hora atual usando `std::format` e a biblioteca `chrono` no C++20.'
+description: "Exemplo completo em C++20 que formata a hora atual como UTC ISO 8601 com std::chrono e std::format, com observações sobre o suporte da biblioteca padrão."
 ---
 
 ### Pré-requisitos
@@ -16,15 +16,25 @@ description: 'Imperdível para engenheiros que desejam exibir a hora atual no pa
 
 ### Código
 
-```
+O exemplo mostra UTC com precisão de segundos, por exemplo `2026-11-23T00:00:00Z`.
+
+```cpp
 #include <chrono>
 #include <format>
+#include <iostream>
+#include <string>
 
-std::string datetime = std::format("{:%FT%TZ}", system_clock::now());
+int main() {
+    const auto now = std::chrono::floor<std::chrono::seconds>(
+        std::chrono::system_clock::now());
+    const std::string datetime = std::format("{:%FT%TZ}", now);
+    std::cout << datetime << '\n';
+}
 ```
 
-É assim que você imprime a hora atual no formato ISO 8601 em C++.
+> `%F` formata a data e `%T`, a hora. `T` e `Z` na string de formato são caracteres literais; o instante de `system_clock` é formatado como UTC. Frações de segundo podem aparecer se a precisão do instante for inferior a um segundo. A formatação de chrono é um recurso da biblioteca C++20, mas o suporte varia entre bibliotecas padrão. Verifique o suporte do compilador e da biblioteca usados.
 
 ### Referências
 
-- [std::format](https://eel.is/c++draft/time.format)
+- [C++ standard draft: chrono formatting](https://eel.is/c++draft/time.format)
+- [Microsoft C++ language conformance and feature support](https://learn.microsoft.com/en-us/cpp/overview/visual-cpp-language-conformance?view=msvc-170)

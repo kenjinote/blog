@@ -1,13 +1,13 @@
 ---
-title: '【C++20】以ISO8601格式（UTC）输出当前时间的简单代码示例'
-date: "2026-09-24T19:44:38+09:00"
+title: "[C++20] 使用 std::chrono 和 std::format 将当前时间输出为 UTC ISO 8601 格式"
+date: "2023-04-15T19:35:27+09:00"
+lastmod: "2026-11-23"
 slug: "C++で現在時刻をISO8601フォーマットで出力する方法"
-date: 2023-04-15T19:35:27+09:00
 tags: ["C++", "日期时间", "ISO8601"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: '想用C++将当前时间输出为世界标准的ISO8601格式的工程师必看！本文将易懂地介绍如何利用C++20的std::format和chrono库，智能且简洁地进行当前时间格式转换的代码示例。'
+description: "完整的 C++20 示例：使用 std::chrono 和 std::format 将当前时间输出为 UTC ISO 8601 格式，并说明标准库支持情况。"
 ---
 
 ### 前提条件
@@ -16,15 +16,25 @@ description: '想用C++将当前时间输出为世界标准的ISO8601格式的�
 
 ### 代码
 
+此示例以秒为精度输出UTC，例如`2026-11-23T00:00:00Z`。
+
 ```cpp
 #include <chrono>
 #include <format>
+#include <iostream>
+#include <string>
 
-std::string datetime = std::format("{:%FT%TZ}", system_clock::now());
+int main() {
+    const auto now = std::chrono::floor<std::chrono::seconds>(
+        std::chrono::system_clock::now());
+    const std::string datetime = std::format("{:%FT%TZ}", now);
+    std::cout << datetime << '\n';
+}
 ```
 
-以上就是如何在C++中以ISO8601格式输出当前时间的方法。
+> `%F`用于格式化日期，`%T`用于格式化时间。格式字符串中的`T`和`Z`是字面字符；`system_clock`时间点会按UTC格式化。如果时间点精度小于一秒，输出可能包含小数秒。chrono格式化属于C++20标准库功能，但不同标准库的实现进度不同。请确认所用编译器和标准库的支持情况。
 
 ### 参考
 
-- [std::format](https://eel.is/c++draft/time.format)
+- [C++ standard draft: chrono formatting](https://eel.is/c++draft/time.format)
+- [Microsoft C++ language conformance and feature support](https://learn.microsoft.com/en-us/cpp/overview/visual-cpp-language-conformance?view=msvc-170)

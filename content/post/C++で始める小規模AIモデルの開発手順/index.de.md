@@ -1,33 +1,25 @@
 ---
-title: 'Entwicklungsschritte für kleine KI-Modelle (wie TinyLLaMA) mit C++'
+title: "Kleine LLMs mit C++ ausführen: Einstieg mit TinyLlama, llama.cpp und ggml"
 slug: "cpp-small-ai-model-tinyllama-dev-guide"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
-description: 'Detaillierte Entwicklungsschritte und interne Architektur für die Inferenz von kleinen KI-Modellen wie TinyLLaMA in einer lokalen Umgebung mit C++ und ggml. Umfasst Memory Mapping, Tensoroperationen und SIMD-Optimierung.'
+description: "Praktischer Einstieg in die C++-Inferenz kleiner LLMs wie TinyLlama. Behandelt werden der llama.cpp-Build, GGUF, Quantisierung, KV-Cache und die Inferenzarchitektur."
 ---
 
-# Entwicklungsschritte für kleine KI-Modelle (wie TinyLLaMA) mit C++
+# Kleine LLMs mit C++ ausführen: Einstieg mit TinyLlama, llama.cpp und ggml
 
-In den letzten Jahren ist das Interesse an der Ausführung von [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) in lokalen Umgebungen rasant gestiegen. Insbesondere kleine Modelle wie TinyLLaMA (1,1B Parameter) können selbst auf Edge-Geräten mit begrenzten Ressourcen oder herkömmlichen Laptops (einschließlich Windows-Umgebungen) mit praktischer Geschwindigkeit für Inferenzen genutzt werden. Während die Entwicklung hauptsächlich mit Python und PyTorch erfolgt, ist die Kombination aus C++ und „ggml“, einer C-basierten Tensor-Bibliothek, zum De-facto-Standard geworden, wenn es darum geht, die ultimative Leistung und Speichereffizienz zu erreichen.
+> **Umfang und Korrekturen:** Dies ist eine Einführung in die Inferenzarchitektur und den Build des gepflegten Projekts [llama.cpp](https://github.com/ggml-org/llama.cpp), keine vollständige Neuimplementierung. llama.cpp basiert auf [ggml](https://github.com/ggml-org/ggml). Speicher- und Geschwindigkeitswerte sind Schätzungen und hängen von Modell, Quantisierung, Kontextlänge, Hardware und Build ab. mmap lädt Seiten bei Bedarf; es garantiert weder durchgängiges Zero-Copy noch den Verzicht auf physischen Speicher. Das frühere CMake-Beispiel verknüpfte keine funktionsfähigen ggml-Quellen und wurde durch den offiziellen Build-Ablauf ersetzt.
 
-In diesem Artikel werden wir die detaillierten Entwicklungsschritte erläutern, um eine Inferenz-Engine von Grund auf aufzubauen (oder die interne Struktur der bestehenden llama.cpp tiefgehend zu verstehen), mit der TinyLLaMA in C++ geladen und Text generiert wird.
-
----
+> **Hinweise zur Implementierung (Ergänzungen und Korrekturen):** GGUF-Tensoroffsets richten sich nach `general.alignment` (standardmäßig 32 Byte, wenn der Wert fehlt); 32 oder 64 Byte sind nicht universell festgelegt. Q4_0 speichert Blöcke mit 32 Werten, Q4_K Blöcke mit 256. Bei 1,1 Milliarden Parametern benötigen allein FP16-Gewichte etwa 2,2 GB (2,05 GiB); eine einfache 4-Bit-Schätzung beträgt etwa 0,55 GB. Quantisierungsmetadaten, GGUF-Overhead, Laufzeitarbeitsbereich und KV-Cache erhöhen den tatsächlichen Speicherbedarf. Allokation und KV-Cache in ggml/llama.cpp hängen von Version, Backend und Einstellungen ab; allokationsfreie Inferenz oder eine Vorabreservierung des gesamten Kontextes darf nicht vorausgesetzt werden. TinyLlama 1.1B Chat verwendet laut Konfiguration 32 Query-Heads und 4 Key/Value-Heads. Tensorformen und Operationen müssen zur Modellkonfiguration und Laufzeit passen. Die Abschnitte 3–8 sind konzeptionell und keine direkt ausführbare Anleitung für eine eigene Engine. GQA erfordert nicht grundsätzlich eine explizite Replikation der KV-Tensoren; Operationen und Tensorformen hängen von der Laufzeit ab. Verwenden Sie den Tokenizer, die Spezialtokens und das Chat-Template des jeweiligen Modells. GGUF ist ein weit verbreitetes Format, aber nicht für jedes Modell und jede Laufzeit universell das beste. Prüfen Sie vor einer festen Vorgabe wie AVX2 die CPU-Unterstützung und richten Sie sich nach den Backend-Optionen der offiziellen Build-Anleitung.
 
 ## 1. Warum C++ und ggml?
 
-In der Trainingsphase von KI ist Python mit seiner Flexibilität und seinem umfangreichen Ökosystem überwältigend im Vorteil. In der Bereitstellungs- oder „Inferenz“-Phase wird C++ jedoch aus den folgenden Gründen zu einer leistungsstarken Option.
-
-1. **Reduzierung von Overhead**: Das Global Interpreter [Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) (GIL) von Python und der Runtime-Overhead können vollständig eliminiert werden.
-2. **Speichereffizienz und Arena-Allokation**: Da die Zuweisung und Freigabe von Speicher manuell gesteuert werden können, lassen sich unvorhersehbare Spitzen (Spikes) durch die [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) verhindern.
-3. **Direkter Zugriff auf die Hardware**: SIMD-Intrinsics wie AVX-512, AVX2 und ARM NEON können direkt aufgerufen werden, um die Rechenleistung der CPU zu maximieren.
-4. **Keine Abhängigkeiten**: ggml ist eine C/C++-Bibliothek ohne Abhängigkeiten (Zero dependencies) und kann problemlos auf Windows-Umgebungen mit MSVC kompiliert werden, solange ein Compiler vorhanden ist.
-
----
+Python bietet ein umfangreiches Ökosystem für Training und Experimente. C und C++ eignen sich für die Integration in native Anwendungen, die Bereitstellung und die Kontrolle der Laufzeit. C++ ist nicht in jeder Konfiguration automatisch schneller; die gemessene Leistung hängt von Modell, Backend und Hardware ab.
 
 ## 2. Gesamtbild der Architektur
 
@@ -207,39 +199,21 @@ Die vom LM Head ausgegebenen Logits werden mithilfe des Temperature-Parameters s
 
 ## 9. Aufbau eines C++-Projekts (Windows / PowerShell-Umgebung)
 
-```cmake
-cmake_minimum_required(VERSION 3.14)
-project(TinyLLaMACpp)
+Installieren Sie Visual Studio 2022 mit der C++-Desktopentwicklung und CMake. Bauen Sie das Repository gemäß der [offiziellen llama.cpp-Bauanleitung](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md). Damit wird eine vorhandene Inferenzlaufzeit erstellt, keine vollständige eigene Inferenz-Engine.
 
-set(CMAKE_CXX_STANDARD 17)
-
-# Optimierungs- und AVX2-Flags für Windows (MSVC)
-if(MSVC)
-    add_compile_options(/O2 /arch:AVX2 /fp:fast)
-    add_link_options(/STACK:8388608)
-else()
-    add_compile_options(-O3 -march=native -ffast-math)
-endif()
-
-add_library(ggml OBJECT ggml/ggml.c ggml/ggml-alloc.c)
-target_compile_definitions(ggml PRIVATE GGML_USE_AVX2 GGML_USE_F16C GGML_USE_FMA)
-
-add_executable(main main.cpp)
-target_link_libraries(main ggml)
-```
-
-Beispiel für einen Build-Befehl in PowerShell:
 ```powershell
-mkdir build
-cd build
-cmake .. -G "Visual Studio 17 2022" -A x64
-cmake --build . --config Release
+git clone https://github.com/ggml-org/llama.cpp
+Set-Location llama.cpp
+cmake -B build
+cmake --build build --config Release
 ```
 
----
+Laden Sie zusätzlich ein mit llama.cpp kompatibles GGUF-Modell herunter und prüfen Sie Lizenz und Quelle. Die [TinyLlama-Modellkarte und -Konfiguration](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) dienen als Referenz. Ersetzen Sie den folgenden Pfad durch Ihre lokale Datei und prüfen Sie Chat-Template sowie Quantisierungstyp.
+
+```powershell
+.\build\bin\Release\llama-cli.exe -m "C:\models\model.gguf"
+```
 
 ## 10. Zusammenfassung
 
-Die Implementierung einer Inferenz-Engine für kleine KI-Modelle wie TinyLLaMA von Grund auf mit C++ und ggml ist eine hervorragende Gelegenheit, die Blackbox des Deep Learning zu entschlüsseln und die Schönheit der Low-Level-Hardwaresteuerung kennenzulernen. Durch den Einsatz von Zero-Copy-Laden mithilfe von Memory Mapping, SIMD-Optimierung und dem Aufbau von KV-Caches können Sie das Wesentliche der Systemprogrammierung in vollen Zügen genießen und gleichzeitig die Zukunft der Edge-KI mitgestalten.
-
-
+Für den ersten lokalen LLM-Lauf mit C++ empfiehlt sich der gepflegte llama.cpp-Build mit einem kompatiblen GGUF-Modell. Eine eigene Engine auf Basis von ggml ist ein separates Projekt und muss modellspezifische Tokenisierung, Operatoren, Gewichtsformate, KV-Cache, Backends und Tests berücksichtigen.

@@ -1,33 +1,25 @@
 ---
-title: 'C++로 시작하는 소규모 AI 모델(TinyLLaMA 등) 개발 절차'
+title: "C++로 소규모 LLM 추론 시작하기: TinyLlama, llama.cpp, ggml"
 slug: "cpp-small-ai-model-tinyllama-dev-guide"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
-description: 'C++와 ggml을 사용하여 TinyLLaMA와 같은 소규모 AI 모델을 로컬 환경에서 추론하기 위한 상세한 개발 절차와 내부 아키텍처를 해설합니다. 메모리 매핑, 텐서 연산, SIMD 최적화까지 망라.'
+description: "TinyLlama 같은 소규모 LLM을 C++에서 실행하는 실용적인 입문입니다. llama.cpp 빌드, GGUF, 양자화, KV 캐시와 추론 구조를 설명합니다."
 ---
 
-# C++로 시작하는 소규모 AI 모델(TinyLLaMA 등) 개발 절차
+# C++로 소규모 LLM 추론 시작하기: TinyLlama, llama.cpp, ggml
 
-최근 [대규모 언어 모델](/ko/p/large-language-models-llm-transformer-prompt-engineering/)([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))을 로컬 환경에서 실행하는 것에 대한 관심이 급속히 높아지고 있습니다. 특히 TinyLLaMA(1.1B 파라미터)와 같은 소규모 모델은 제한된 리소스의 엣지 디바이스나 일반적인 노트북(Windows 환경 포함)에서도 실용적인 속도로 추론이 가능합니다. Python과 PyTorch를 이용한 개발이 주류인 반면, 궁극의 퍼포먼스와 메모리 절약을 추구할 경우 C++와 C언어 기반의 텐서 라이브러리인 'ggml'의 조합이 사실상의 표준이 되고 있습니다.
+> **범위와 정정:** 이 글은 추론 구조와 유지 관리되는 [llama.cpp](https://github.com/ggml-org/llama.cpp)의 빌드를 소개합니다. llama.cpp를 처음부터 완전히 재구현하는 안내가 아닙니다. llama.cpp는 [ggml](https://github.com/ggml-org/ggml)을 기반으로 합니다. 메모리와 속도 수치는 모델, 양자화, 컨텍스트 길이, 하드웨어, 빌드에 따라 달라지는 추정치입니다. mmap은 필요한 페이지를 읽을 뿐, 전체 처리 과정의 zero-copy나 물리 메모리 불필요를 보장하지 않습니다. 기존 CMake 예제는 작동하는 ggml 앱을 구성하지 못해 공식 빌드 절차로 교체했습니다.
 
-본 기사에서는 C++를 사용하여 TinyLLaMA를 로드하고, 텍스트 생성을 수행하기 위한 추론 엔진을 제로부터 구축(혹은 기존 llama.cpp의 내부 구조를 깊이 이해)하기 위한 매우 상세한 개발 절차를 해설합니다.
-
----
+> **구현 관련 보충 및 정정:** GGUF 텐서 오프셋은 `general.alignment`을 따르며(생략 시 기본값 32바이트), 항상 32 또는 64바이트인 것은 아닙니다. Q4_0은 값 32개, Q4_K는 값 256개 단위의 블록을 사용합니다. 11억 파라미터의 FP16 가중치만 약 2.2GB(2.05GiB)이며 단순 4비트 계산은 약 0.55GB입니다. 양자화 메타데이터, GGUF 오버헤드, 런타임 작업 공간, KV 캐시 때문에 실제 파일 및 RAM 요구량은 더 커집니다. ggml/llama.cpp의 할당 및 KV 캐시 방식은 버전·백엔드·설정에 따라 달라지므로 추론 중 할당이 전혀 없거나 최대 컨텍스트 전체를 항상 사전 할당한다고 가정하면 안 됩니다. TinyLlama 1.1B Chat 설정은 Query head 32개와 Key/Value head 4개입니다. 텐서 형태와 연산은 모델 설정 및 런타임에 맞춰야 합니다. 3~8절은 개념 설명이며 그대로 복사해 작동하는 자체 엔진을 만들 수 있는 절차가 아닙니다. GQA에서 KV 텐서를 명시적으로 복제하는 작업이 항상 필요한 것은 아니며, 연산과 텐서 형태는 런타임에 따라 다릅니다. 모델에 맞는 토크나이저, 특수 토큰, 채팅 템플릿을 사용하세요. GGUF는 널리 쓰이는 형식 중 하나이지 모든 모델과 런타임에서 항상 최선인 형식은 아닙니다. AVX2 같은 명령어 집합을 강제하기 전에 CPU 지원을 확인하고 공식 빌드의 백엔드 옵션을 따르세요.
 
 ## 1. 왜 C++와 ggml인가?
 
-AI 학습 단계에서는 유연성과 풍부한 생태계를 가진 Python이 압도적으로 유리합니다. 하지만 배포나 '추론(Inference)' 단계에서는 다음과 같은 이유로 C++가 강력한 선택지가 됩니다.
-
-1. **오버헤드 감소**: Python의 글로벌 인터프리터 락(GIL)이나 런타임 오버헤드를 완전히 배제할 수 있습니다.
-2. **메모리 효율과 아레나 할당**: 메모리 확보 및 해제를 수동으로 제어할 수 있으므로 가비지 컬렉션으로 인한 예측 불가능한 스파이크를 방지할 수 있습니다.
-3. **하드웨어 직접 접근**: AVX-512, AVX2, ARM NEON 등 SIMD 내장 함수(Intrinsics)를 직접 호출하여 CPU의 연산 능력을 극한까지 끌어올릴 수 있습니다.
-4. **의존성 배제**: ggml은 의존성이 전혀 없는(Zero dependencies) C/C++ 라이브러리이며 컴파일러만 있다면 Windows의 MSVC 환경에서도 쉽게 빌드할 수 있습니다.
-
----
+Python은 학습과 실험을 위한 풍부한 생태계를 제공합니다. C와 C++는 네이티브 앱 통합, 배포, 런타임 제어에 유용합니다. 모든 구성에서 C++가 자동으로 더 빠른 것은 아니며, 실제 성능은 모델·백엔드·하드웨어에 좌우됩니다.
 
 ## 2. 아키텍처의 전체 구조
 
@@ -207,40 +199,21 @@ LM Head에서 출력되는 로짓(logit)에서는 Temperature 파라미터를 �
 
 ## 9. C++ 프로젝트 시작 (Windows / PowerShell 환경)
 
-```cmake
-cmake_minimum_required(VERSION 3.14)
-project(TinyLLaMACpp)
+C++ 데스크톱 워크로드가 포함된 Visual Studio 2022와 CMake를 준비하고, [llama.cpp 공식 빌드 가이드](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md)에 따라 저장소를 빌드하세요. 이는 기존 추론 런타임을 빌드하는 절차이며 완성된 자체 추론 엔진을 만들지는 않습니다.
 
-set(CMAKE_CXX_STANDARD 17)
-
-# Windows (MSVC)를 위한 최적화 및 AVX2 플래그 설정
-if(MSVC)
-    add_compile_options(/O2 /arch:AVX2 /fp:fast)
-    add_link_options(/STACK:8388608)
-else()
-    add_compile_options(-O3 -march=native -ffast-math)
-endif()
-
-add_library(ggml OBJECT ggml/ggml.c ggml/ggml-alloc.c)
-target_compile_definitions(ggml PRIVATE GGML_USE_AVX2 GGML_USE_F16C GGML_USE_FMA)
-
-add_executable(main main.cpp)
-target_link_libraries(main ggml)
-```
-
-PowerShell에서의 빌드 명령어 예시:
 ```powershell
-mkdir build
-cd build
-cmake .. -G "Visual Studio 17 2022" -A x64
-cmake --build . --config Release
+git clone https://github.com/ggml-org/llama.cpp
+Set-Location llama.cpp
+cmake -B build
+cmake --build build --config Release
 ```
 
----
+llama.cpp와 호환되는 GGUF 모델을 별도로 구하고 라이선스와 출처를 확인하세요. [TinyLlama 모델 카드와 설정](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)을 참고할 수 있습니다. 아래 경로는 로컬 파일로 바꾸고 채팅 템플릿과 양자화 유형을 확인하세요.
+
+```powershell
+.\build\bin\Release\llama-cli.exe -m "C:\models\model.gguf"
+```
 
 ## 10. 요약
 
-C++와 ggml을 사용하여 TinyLLaMA와 같은 소규모 AI 모델의 추론 엔진을 제로부터 구현하는 것은 딥러닝의 블랙박스를 파헤치고 저수준 하드웨어 제어의 아름다움을 배울 수 있는 절호의 기회입니다. 메모리 매핑을 이용한 제로 카피 로드, SIMD 최적화, KV 캐시 구축 등 시스템 프로그래밍의 정수를 마음껏 맛보며 엣지 AI의 미래를 개척해 봅시다.
-
-
-
+C++에서 로컬 LLM을 처음 실행할 때는 유지 관리되는 llama.cpp를 빌드하고 호환 GGUF 모델을 실행하는 방법이 현실적입니다. ggml 위에 엔진을 직접 만드는 것은 모델별 토크나이저, 연산자, 가중치 형식, KV 캐시, 백엔드, 검증까지 필요한 별도 프로젝트입니다.

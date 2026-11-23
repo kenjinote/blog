@@ -1,0 +1,451 @@
+{
+  "version": 1,
+  "article": "Format the Current Time as UTC ISO 8601 with std::chrono and std::format",
+  "frozenSourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://eel.is/c++draft/time.format",
+    "https://learn.microsoft.com/en-us/cpp/overview/visual-cpp-language-conformance?view=msvc-170"
+  ],
+  "findings": [
+    "Replaced the incomplete snippet with a complete program including chrono, format, iostream, and string headers, fully qualified chrono names, whole-second flooring, and console output.",
+    "Explained the %F/%T chrono format fields and literal T/Z suffix, and bounded the C++20 feature claim because standard-library implementation support varies by toolchain version.",
+    "Removed the duplicate date from all editions, preserved the original 2023-04-15 publication date, added lastmod 2026-11-23 and localized descriptions, and updated all titles.",
+    "Compared the full Japanese article with all twelve translations, including code and metadata, and added the C++ standard draft and Microsoft feature-support references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "127d103aa2650726c947b07bcf07b4264a4a905cc414a2ad809e8a50433614ca",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "b7b0eee657065471dd5a53e73c1df84f1562dd360426ff0016b43b3b06ade20a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "38807c21638cb02649d3eeca059c6a2a45cb9586f97aa5fadeb9d1d1579b45ab",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "b7c808047d4aeaa61db77715e57b624e6c9c8cc03ecbd05f67295b0dc352b4f2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "0c2eea162c4e39e2f3c222ce2d0232ba665dbf9ce344d4d11c381f81410d4f65",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "7c13815999c603aa5d607a57b598fba13387416b60bde4200d9b2107f34ebf8e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "c8c1bdc6416699544332705c8cee26209a8b6f0379de80e0576230a907826c88",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "b582c048d313416c06985b2b5926202864809b90e97adbe5ebfc87cb826f604a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "ac876424a3803bd0c11752da3c550a1eef7b60d99eaf18f2a7c3623c1bc5803c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "e8fe6bb512fd6133a49d3703afb3f7609d2378b974937e9710a0f0d3d40b4fbb",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "6e6e378df2f3e65483ba5b8c0d1bb5aeffa5c80bb739185d736bbc16b59d6397",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で現在時刻をISO8601フォーマットで出力する方法/index.md",
+      "sourceHash": "f22641fc289a58790aeff03dccccc92378cf377cd3e5597a3b425016f241c9e7",
+      "translationHash": "076bc5a65245865c6b1c272aaf2f33805bfbdc2b98eca8d5824faeda5c342ad9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete translation with Japanese: prerequisites, UTC semantics, date/time format fields, example output, implementation-support caveat, and references."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked C++20, std::chrono, system_clock, time_point, std::format, chrono-format-spec, UTC, ISO 8601, and compiler/standard-library terminology in the localized text."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical derivation or numerical calculation."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked a complete C++20 program with required headers, fully qualified chrono names, second-precision floor, UTC formatting, and output. It was not compiled or run in this workspace."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the C++ standard draft for chrono formatting and Microsoft Learn's C++ language conformance/features page; both references appear in all editions."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese, fixed duplicate publication metadata, completed and corrected the C++20 code sample, clarified UTC formatting and library implementation support, and added authoritative references.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The code was not compiled or run; chrono-format support depends on the selected standard library and version.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    }
+  }
+}

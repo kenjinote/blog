@@ -1,0 +1,467 @@
+{
+  "version": 1,
+  "article": "Getting Started with Small LLM Inference in C++: TinyLlama, llama.cpp, and ggml",
+  "frozenSourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://github.com/ggml-org/llama.cpp/blob/master/README.md",
+    "https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md",
+    "https://github.com/ggml-org/ggml/blob/master/docs/gguf.md",
+    "https://github.com/ggml-org/ggml",
+    "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+  ],
+  "findings": [
+    "Reframed the post as an introduction to maintained llama.cpp and its ggml foundation; removed unsupported promises that C++ is categorically faster, mmap is end-to-end zero-copy, or a from-scratch inference engine is delivered.",
+    "Replaced the invalid CMake fragment with the upstream Windows-compatible CMake build steps and corrected the multi-configuration CLI executable/model path. Clarified the model, license, chat-template, and quantization prerequisites.",
+    "Corrected GGUF alignment, Q4_0 versus Q4_K block sizes, TinyLlama parameter-memory estimates, GQA head configuration, allocation/KV-cache variability, and model-specific tokenizer guidance in all thirteen editions.",
+    "Compared the complete Japanese post with all twelve translations, including mathematical notation, section structure, code fences, internal/external links, metadata, and localized correction notes.",
+    "Preserved the 2026-09-11 publication date, added localized descriptions and lastmod 2026-11-23, and corrected the English title to reflect the actual article scope."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/C++で始める小規模AIモデルの開発手順/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "70627887811bfe49c42235bf396f450d6f15dfa769fcbbaa69654a55a471e6f2",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "a118c47aba39cba0806bcf3493206ba7ac12a5dc98a41efb2ae82f4118c530c8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "f7d64fdb4e90c38054bdfae368f18401a32b19b35d8ca4a163db5edc698a86ed",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "d6f4fa5f0ac02bfa77ae3623a8e2d75255efcdffd596d9b3007785545fab3471",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "1516d5944f6b0fa2432fe7704d1d71bdba6a6d17a7645b3a78dd735cf3fbc640",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "31618ac74cd33442f5fbda5f64efa0233b70fa75c735e8d26ecafc5b7f9e4418",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "df7d3a7b7df3bff30e95f571fd696e3a668a17216d07cc57c5cb62a996f20205",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "a9a2ca5d4df3dbb50008903efb7d4566cb2927b73820cecdad6b60945ac921b0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "293d9539080cf151f4c1bdbef4eb0cfd2b7ab044a7d00b7a656c15f55d285388",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "55dbfc6268ffcc8455a3f2aaf03dca0a746b39aab3aaf47ec2b6a93d453e3c66",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "b9ed6bf4723640f40d665c43887f1eb7df3b984ad62593d9b8b477ba229cad1d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    },
+    "post/C++で始める小規模AIモデルの開発手順/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/C++で始める小規模AIモデルの開発手順/index.md",
+      "sourceHash": "181a5351ac87aa4ba629b0ab1184ac982c1daae7c80695e6f0cebe1914b7d9ca",
+      "translationHash": "a918a3b0141e01ec00b9fd351b9e6ab560129a0916fc270e5f47fff8ce8d6c41",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete localized edition with Japanese, including scope, inference pipeline, model format, architecture, memory mapping, quantization, KV cache, tokenizer, build procedure, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked LLM, llama.cpp, ggml, GGUF, mmap, GQA, RMSNorm, RoPE, SwiGLU, Q4_0/Q4_K, KV cache, tokenizer, and localized technical wording across the editions."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Compared the RMSNorm, RoPE, attention, SwiGLU, and quantization explanations and notation; added caveats for approximate parameter-memory estimates and the model-specific 32-query-head/4-KV-head configuration."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Removed the non-buildable source-file CMake skeleton and replaced it with official llama.cpp CMake commands and a corrected Windows CLI path. The commands were reviewed but not executed, and no custom inference engine is claimed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked official llama.cpp build documentation, the ggml/llama.cpp project references, GGUF specification, TinyLlama model card/configuration, and translated internal links."
+        }
+      },
+      "summary": "Reviewed the full translation against Japanese and corrected the scope, unsupported implementation claims, GGUF alignment and quantization descriptions, model memory estimates, GQA/KV-cache caveats, tokenizer guidance, Windows build commands, and metadata.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The C++ project build and model inference were not executed in this workspace.",
+        "Memory and runtime behavior remain model-, version-, backend-, and hardware-dependent; the article now states these limits.",
+        "Hugo CI and live publication verification remain pending for this batch."
+      ]
+    }
+  }
+}

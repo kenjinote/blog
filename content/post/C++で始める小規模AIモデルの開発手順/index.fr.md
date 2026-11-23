@@ -1,33 +1,25 @@
 ---
-title: "Procédure de développement de petits modèles d'IA (TinyLLaMA, etc.) avec C++"
+title: "Débuter l’inférence de petits LLM en C++ : TinyLlama, llama.cpp et ggml"
 slug: "cpp-small-ai-model-tinyllama-dev-guide"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
-description: "Nous expliquons en détail la procédure de développement et l'architecture interne pour l'inférence de petits modèles d'IA tels que TinyLLaMA dans un environnement local à l'aide de C++ et ggml. Couvre le mappage mémoire, les opérations tensorielles et l'optimisation SIMD."
+description: "Une introduction pratique à l’exécution en C++ de petits LLM comme TinyLlama : compilation de llama.cpp, GGUF, quantification, cache KV et architecture d’inférence."
 ---
 
-# [Procédure de développement de petits modèles d'IA (TinyLLaMA, etc.) avec C++](https://kenji.blog/fr/p/cpp-small-ai-model-tinyllama-dev-guide/)
+# Débuter l’inférence de petits LLM en C++ : TinyLlama, llama.cpp et ggml
 
-Ces dernières années, l'intérêt pour l'exécution locale de [grands modèles de langage](/fr/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) a augmenté rapidement. En particulier, les petits modèles tels que TinyLLaMA (1,1B paramètres) peuvent effectuer des inférences à une vitesse pratique même sur des appareils périphériques aux ressources limitées ou des PC portables standards (y compris les environnements Windows). Bien que le développement utilisant Python et PyTorch soit courant, lorsqu'il s'agit d'atteindre des performances et une efficacité mémoire ultimes, la combinaison du C++ et de « ggml », une bibliothèque de tenseurs basée sur le langage C, est devenue la norme de facto.
+> **Périmètre et corrections :** cet article présente l’architecture d’inférence et la compilation du projet maintenu [llama.cpp](https://github.com/ggml-org/llama.cpp) ; il ne fournit pas une réimplémentation complète. llama.cpp repose sur [ggml](https://github.com/ggml-org/ggml). Les chiffres de mémoire et de vitesse sont des estimations qui dépendent du modèle, de la quantification, du contexte, du matériel et de la compilation. mmap charge les pages à la demande ; il ne garantit pas un traitement sans copie de bout en bout ni l’absence d’utilisation de mémoire physique. L’ancien exemple CMake ne constituait pas une application ggml fonctionnelle et a été remplacé par la procédure officielle.
 
-Cet article explique en détail la procédure de développement pour construire un moteur d'inférence à partir de zéro (ou comprendre en profondeur l'architecture interne du llama.cpp existant) afin de charger TinyLLaMA et de générer du texte en utilisant C++.
-
----
+> **Notes d’implémentation (précisions sur le texte) :** les offsets des tenseurs GGUF suivent `general.alignment` (32 octets par défaut si la valeur est absente) ; l’alignement n’est pas toujours de 32 ou 64 octets. Q4_0 regroupe 32 valeurs et Q4_K, 256. Pour 1,1 milliard de paramètres, les poids FP16 seuls représentent environ 2,2 Go (2,05 Gio) ; une estimation simple en 4 bits donne environ 0,55 Go. Les métadonnées de quantification, le conteneur GGUF, l’espace de travail et le cache KV augmentent les besoins réels. L’allocation et le cache KV de ggml/llama.cpp varient selon la version, le backend et les réglages : il ne faut présumer ni une inférence sans allocation ni la réservation systématique du contexte maximal. TinyLlama 1.1B Chat est configuré avec 32 têtes Query et 4 têtes Key/Value ; adaptez formes et opérations au modèle et au runtime. Les sections 3 à 8 sont conceptuelles et ne constituent pas des instructions prêtes à copier pour créer un moteur fonctionnel. GQA n’exige pas systématiquement la réplication explicite des tenseurs KV ; les opérations et formes dépendent du runtime. Utilisez le tokenizer, les tokens spéciaux et le modèle de conversation propres au modèle. GGUF est un format répandu, mais pas universellement optimal pour tous les modèles et runtimes. Avant d’imposer AVX2 ou un autre jeu d’instructions, vérifiez la prise en charge par le processeur et suivez les options de backend du guide officiel.
 
 ## 1. Pourquoi C++ et ggml ?
 
-Dans la phase d'apprentissage de l'IA, Python, avec sa flexibilité et son écosystème riche, a un avantage écrasant. Cependant, dans les phases de déploiement ou d'« inférence (Inference) », C++ devient un choix puissant pour les raisons suivantes.
-
-1. **Réduction des surcoûts** : Le Global Interpreter [Lock](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/) (GIL) de Python et les surcoûts d'exécution peuvent être complètement éliminés.
-2. **Efficacité de la mémoire et allocation d'arène** : L'allocation et la libération de la mémoire pouvant être contrôlées manuellement, les pics imprévisibles causés par le ramasse-miettes (garbage collection) sont évités.
-3. **Accès direct au matériel** : Il est possible d'appeler directement des fonctions intrinsèques SIMD (Intrinsics) telles que AVX-512, AVX2 et ARM NEON, exploitant ainsi la puissance de calcul du processeur à son maximum.
-4. **Élimination des dépendances** : ggml est une bibliothèque C/C++ sans aucune dépendance (Zero dependencies), et peut être facilement compilée même dans un environnement MSVC sous Windows tant qu'il y a un compilateur.
-
----
+Python dispose d’un vaste écosystème pour l’entraînement et l’expérimentation. C et C++ sont utiles pour intégrer des modèles dans des applications natives, les déployer et contrôler l’exécution. C++ n’est pas toujours plus rapide par défaut : les performances mesurées dépendent du modèle, du backend et du matériel.
 
 ## 2. Vue d'ensemble de l'architecture
 
@@ -207,39 +199,21 @@ Traite la chaîne d'entrée sous forme d'une séquence d'octets UTF-8 et la comp
 
 ## 9. Lancement d'un projet C++ (Environnement Windows / PowerShell)
 
-```cmake
-cmake_minimum_required(VERSION 3.14)
-project(TinyLLaMACpp)
+Installez Visual Studio 2022 avec la charge de travail C++ pour ordinateur de bureau et CMake, puis compilez le dépôt selon le [guide officiel de compilation de llama.cpp](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md). Cette procédure construit un runtime existant, pas un moteur d’inférence complet personnalisé.
 
-set(CMAKE_CXX_STANDARD 17)
-
-# Optimisation pour Windows (MSVC) et configuration du flag AVX2
-if(MSVC)
-    add_compile_options(/O2 /arch:AVX2 /fp:fast)
-    add_link_options(/STACK:8388608)
-else()
-    add_compile_options(-O3 -march=native -ffast-math)
-endif()
-
-add_library(ggml OBJECT ggml/ggml.c ggml/ggml-alloc.c)
-target_compile_definitions(ggml PRIVATE GGML_USE_AVX2 GGML_USE_F16C GGML_USE_FMA)
-
-add_executable(main main.cpp)
-target_link_libraries(main ggml)
-```
-
-Exemple de commande de build dans PowerShell :
 ```powershell
-mkdir build
-cd build
-cmake .. -G "Visual Studio 17 2022" -A x64
-cmake --build . --config Release
+git clone https://github.com/ggml-org/llama.cpp
+Set-Location llama.cpp
+cmake -B build
+cmake --build build --config Release
 ```
 
----
+Procurez-vous séparément un modèle GGUF compatible avec llama.cpp et vérifiez sa licence et sa provenance. La [fiche et la configuration de TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) sont des références utiles. Remplacez le chemin ci-dessous par celui de votre fichier local et vérifiez son modèle de conversation et son type de quantification.
+
+```powershell
+.\build\bin\Release\llama-cli.exe -m "C:\models\model.gguf"
+```
 
 ## 10. Conclusion
 
-Implémenter à partir de zéro un moteur d'inférence pour un petit modèle d'IA comme TinyLLaMA en utilisant C++ et ggml est une excellente occasion de révéler la boîte noire de l'apprentissage profond et d'apprendre la beauté du contrôle matériel de bas niveau. Tout en profitant pleinement de l'essence de la programmation système, telle que le chargement zéro copie à l'aide du mappage mémoire, l'optimisation SIMD et la construction du cache KV, ouvrons la voie à l'avenir de l'IA périphérique (Edge AI).
-
-
+Pour une première exécution locale d’un LLM en C++, compilez le projet maintenu llama.cpp et exécutez un modèle GGUF compatible. Créer un moteur directement sur ggml est un autre projet qui doit gérer la tokenisation, les opérateurs, les poids, le cache KV, les backends et la validation propres au modèle.

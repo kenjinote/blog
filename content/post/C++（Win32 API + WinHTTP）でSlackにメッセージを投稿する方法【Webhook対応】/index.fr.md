@@ -1,16 +1,18 @@
 ---
-title: '[WinHTTP] Comment publier des messages sur Slack via Webhook depuis C++ (Win32 API)'
-date: "2026-09-24T19:44:38+09:00"
+title: "[WinHTTP] Publier dans Slack en toute sécurité avec un Incoming Webhook en C++"
+date: "2025-07-16T19:42:56+09:00"
+lastmod: "2026-11-23"
 slug: "C++（Win32 API + WinHTTP）でSlackにメッセージを投稿する方法【Webhook対応】"
-date: 2025-07-16T19:42:56+09:00
 tags: ["C++", "API Win32", "WinHTTP", "Slack", "Webhook"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Pour ceux qui préfèrent utiliser « C++ × Win32 API × WinHTTP » plutôt que Node.js ou Python pour poster automatiquement sur Slack ! Nous expliquons clairement les étapes spécifiques pour envoyer des messages via des requêtes POST depuis C++ en utilisant les Incoming Webhooks.'
+description: "Exemple C++ avec WinHTTP pour les Incoming Webhooks Slack : protection de l’URL secrète, HTTPS, JSON, vérification de la réponse et champs que le webhook ne permet pas de remplacer."
 ---
 
 # Comment publier un message sur Slack en C++ (API Win32 + WinHTTP) 【Support Webhook】
+
+> **Fonctionnement et sécurité :** l’URL d’un Incoming Webhook contient un secret d’authentification. Ne l’ajoutez pas au dépôt de code ; stockez-la dans une variable d’environnement ou un coffre de secrets. Le webhook publie dans le canal choisi lors de l’installation ; le payload ne peut pas modifier le canal, le nom d’utilisateur ni l’icône. Pour choisir librement une destination ou agir sur les messages, utilisez une application Slack avec l’autorisation nécessaire (généralement `chat:write`) et `chat.postMessage`. WinHTTP est une API Windows. L’exemple est synchrone ; envoyez du JSON UTF-8 et utilisez un sérialiseur JSON pour les textes dynamiques.
 
 Je veux publier un message sur Slack depuis le C++.
 C'est très courant en Node.js ou en Python, mais les cas d'utilisation de « C++ × API Win32 × WinHTTP » sont rares.
@@ -52,7 +54,7 @@ Cette URL fonctionne comme une clé API.
 ### Technologies utilisées
 
 * API Win32
-* WinHTTP (bibliothèque standard)
+* WinHTTP (API Windows)
 * Message au format JSON
 
 ### Code d'exemple (Publication sur Slack)
@@ -61,87 +63,89 @@ Cette URL fonctionne comme une clé API.
 #include <windows.h>
 #include <winhttp.h>
 #include <iostream>
+#include <string>
 
 #pragma comment(lib, "winhttp.lib")
 
-bool PostToSlack(const std::wstring& webhookUrl, const std::string& messageJson) {
-    // Décomposition de l'URL
-    URL_COMPONENTS urlComp{};
-    wchar_t hostName[256];
-    wchar_t urlPath[1024];
+struct InternetHandle {
+    HINTERNET value{};
+    explicit InternetHandle(HINTERNET h) : value(h) {}
+    ~InternetHandle() { if (value) WinHttpCloseHandle(value); }
+    InternetHandle(const InternetHandle&) = delete;
+    InternetHandle& operator=(const InternetHandle&) = delete;
+};
 
-    urlComp.dwStructSize = sizeof(urlComp);
-    urlComp.lpszHostName = hostName;
-    urlComp.dwHostNameLength = _countof(hostName);
-    urlComp.lpszUrlPath = urlPath;
-    urlComp.dwUrlPathLength = _countof(urlPath);
+bool PostToSlack(const std::wstring& webhookUrl, const std::string& bodyUtf8) {
+    URL_COMPONENTS parts{};
+    parts.dwStructSize = sizeof(parts);
+    parts.dwSchemeLength = parts.dwHostNameLength = DWORD(-1);
+    parts.dwUrlPathLength = parts.dwExtraInfoLength = DWORD(-1);
+    if (!WinHttpCrackUrl(webhookUrl.c_str(), 0, 0, &parts) ||
+        parts.nScheme != INTERNET_SCHEME_HTTPS) return false;
 
-    if (!WinHttpCrackUrl(webhookUrl.c_str(), 0, 0, &urlComp)) {
-        std::wcerr << L"Échec de la décomposition de l'URL\n";
-        return false;
+    const std::wstring host(parts.lpszHostName, parts.dwHostNameLength);
+    if (host != L"hooks.slack.com") return false;
+    std::wstring path(parts.lpszUrlPath, parts.dwUrlPathLength);
+    if (parts.dwExtraInfoLength)
+        path.append(parts.lpszExtraInfo, parts.dwExtraInfoLength);
+    if (bodyUtf8.size() > MAXDWORD) return false;
+
+    InternetHandle session(WinHttpOpen(L"SlackPoster/1.0",
+        WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, WINHTTP_NO_PROXY_NAME,
+        WINHTTP_NO_PROXY_BYPASS, 0));
+    if (!session.value) return false;
+    InternetHandle connection(WinHttpConnect(session.value, host.c_str(), parts.nPort, 0));
+    if (!connection.value) return false;
+    InternetHandle request(WinHttpOpenRequest(connection.value, L"POST", path.c_str(),
+        nullptr, WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, WINHTTP_FLAG_SECURE));
+    if (!request.value) return false;
+
+    const wchar_t* headers = L"Content-Type: application/json; charset=utf-8\r\n";
+    const DWORD bodySize = static_cast<DWORD>(bodyUtf8.size());
+    if (!WinHttpSendRequest(request.value, headers, DWORD(-1),
+        bodyUtf8.empty() ? WINHTTP_NO_REQUEST_DATA : const_cast<char*>(bodyUtf8.data()),
+        bodySize, bodySize, 0) || !WinHttpReceiveResponse(request.value, nullptr)) return false;
+
+    DWORD status = 0, statusSize = sizeof(status);
+    if (!WinHttpQueryHeaders(request.value,
+        WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER,
+        WINHTTP_HEADER_NAME_BY_INDEX, &status, &statusSize, WINHTTP_NO_HEADER_INDEX) ||
+        status != 200) return false;
+
+    std::string response;
+    for (;;) {
+        DWORD available = 0;
+        if (!WinHttpQueryDataAvailable(request.value, &available)) return false;
+        if (!available) break;
+        const size_t oldSize = response.size();
+        response.resize(oldSize + available);
+        DWORD bytesRead = 0;
+        if (!WinHttpReadData(request.value, response.data() + oldSize, available, &bytesRead)) return false;
+        response.resize(oldSize + bytesRead);
     }
-
-    // Session HTTP et connexion
-    HINTERNET hSession = WinHttpOpen(L"SlackPoster/1.0",
-                                     WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
-                                     WINHTTP_NO_PROXY_NAME,
-                                     WINHTTP_NO_PROXY_BYPASS, 0);
-    HINTERNET hConnect = WinHttpConnect(hSession, hostName, urlComp.nPort, 0);
-    HINTERNET hRequest = WinHttpOpenRequest(hConnect, L"POST", urlPath,
-                                            NULL, WINHTTP_NO_REFERER,
-                                            WINHTTP_DEFAULT_ACCEPT_TYPES,
-                                            WINHTTP_FLAG_SECURE);
-
-    std::wstring headers = L"Content-Type: application/json\r\n";
-    BOOL result = WinHttpSendRequest(hRequest,
-                                     headers.c_str(),
-                                     -1,
-                                     (LPVOID)messageJson.c_str(),
-                                     messageJson.length(),
-                                     messageJson.length(),
-                                     0);
-
-    if (!result) {
-        std::cerr << "Échec de la requête d'envoi\n";
-        return false;
-    }
-
-    WinHttpReceiveResponse(hRequest, NULL);
-
-    DWORD statusCode = 0;
-    DWORD size = sizeof(statusCode);
-    WinHttpQueryHeaders(hRequest,
-                        WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER,
-                        WINHTTP_HEADER_NAME_BY_INDEX,
-                        &statusCode, &size, WINHTTP_NO_HEADER_INDEX);
-
-    // Libération des ressources
-    WinHttpCloseHandle(hRequest);
-    WinHttpCloseHandle(hConnect);
-    WinHttpCloseHandle(hSession);
-
-    return (statusCode == 200);
+    return response == "ok";
 }
 
 int main() {
-    std::wstring webhookUrl = L"https://hooks.slack.com/services/xxx/yyy/zzz"; // Remplacez par votre Webhook
-
-    std::string message = R"({
-        "text": "Hello from C++ :rocket:",
-        "username": "C++ Bot",
-        "icon_emoji": ":robot_face:"
-    })";
-
-    if (PostToSlack(webhookUrl, message)) {
-        std::cout << "Publication réussie !\n";
-    } else {
-        std::cerr << "Échec de la publication.\n";
+    wchar_t webhookBuffer[512]{};
+    const DWORD bufferCount = static_cast<DWORD>(
+        sizeof(webhookBuffer) / sizeof(webhookBuffer[0]));
+    const DWORD chars = GetEnvironmentVariableW(
+        L"SLACK_WEBHOOK_URL", webhookBuffer, bufferCount);
+    if (chars == 0 || chars >= bufferCount) {
+        std::cerr << "Set SLACK_WEBHOOK_URL to the webhook URL.\n";
+        return 1;
     }
-
+    const std::wstring webhookUrl(webhookBuffer, chars);
+    const std::string bodyUtf8 = R"({"text":"Hello from C++ :rocket:"})";
+    if (!PostToSlack(webhookUrl, bodyUtf8)) {
+        std::cerr << "Slack webhook request failed.\n";
+        return 1;
+    }
+    std::cout << "Slack accepted the message.\n";
     return 0;
 }
 ```
-
 ---
 
 ## 🧪 Personnalisation du message JSON
@@ -149,14 +153,8 @@ int main() {
 Dans les Webhooks de Slack, vous pouvez inclure les paramètres suivants :
 
 ```json
-{
-  "text": "Contenu de la notification",
-  "username": "Nom du bot",
-  "icon_emoji": ":rocket:",
-  "channel": "#Nom du canal souhaité"
-}
+{"text":"Hello, world."}
 ```
-
 ---
 
 ## 📌 Remarques supplémentaires
@@ -172,7 +170,7 @@ Dans les Webhooks de Slack, vous pouvez inclure les paramètres suivants :
 Cela s'affichera ainsi sur Slack :
 
 ```
-[C++ Bot]
+[Slack app identity configured for this webhook]
 Hello from C++ :rocket:
 ```
 
@@ -200,3 +198,9 @@ Si vous êtes intéressé, la prochaine fois :
 * **Manipulation flexible de l'API avec Slack App + [OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/)2**
 
 Je peux également présenter une intégration Slack un peu plus avancée !
+
+## Références
+
+- [Slack Incoming Webhooks](https://api.slack.com/messaging/webhooks)
+- [WinHttpCrackUrl](https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpcrackurl)
+- [WinHttpSendRequest](https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpsendrequest)

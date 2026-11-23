@@ -1,33 +1,25 @@
 ---
-title: "C++で始める小規模AIモデル（TinyLLaMAなど）の開発手順"
+title: "C++で小規模LLM推論を始める：TinyLlama・llama.cpp・ggml"
 slug: "cpp-small-ai-model-tinyllama-dev-guide"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
-description: 'C++とggmlを用いて、TinyLLaMAのような小規模AIモデルをローカル環境で推論するための詳細な開発手順と内部アーキテクチャを解説します。メモリマッピング、テンソル演算、SIMD最適化まで網羅。'
+description: "TinyLlamaなどの小規模LLMをC++で動かすための現実的な入門です。llama.cppのビルド、GGUF、量子化、KVキャッシュ、推論アーキテクチャを解説します。"
 ---
 
-# [C++で始める小規模AIモデル（TinyLLaMAなど）の開発手順](https://kenji.blog/p/cpp-small-ai-model-tinyllama-dev-guide/)
+# C++で小規模LLM推論を始める：TinyLlama・llama.cpp・ggml
 
-近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](/p/large-language-models-llm-transformer-prompt-engineering/)）のローカル環境での実行に対する関心が急速に高まっています。特に、TinyLLaMA（1.1Bパラメータ）のような小規模モデルは、限られたリソースのエッジデバイスや一般的なノートPC（Windows環境を含む）上でも実用的な速度で推論が可能です。PythonとPyTorchを用いた開発が主流である一方で、究極のパフォーマンスと省メモリ性を追求する場合、C++と[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ベースのテンソルライブラリである「ggml」の組み合わせがデファクトスタンダードとなっています。
+> **この記事の範囲と訂正**：これはllama.cppをゼロから再実装する完全な手順ではなく、推論の仕組みを理解し、保守されている[llama.cpp](https://github.com/ggml-org/llama.cpp)をビルドして試すための入門です。llama.cppは[ggml](https://github.com/ggml-org/ggml)を基盤にしています。メモリ・速度の数値は概算で、モデル、量子化、コンテキスト長、ハードウェア、ビルドに左右されます。mmapはオンデマンドのページ読込であり、処理全体のゼロコピーや物理メモリ不要を保証しません。下記の構成例は実在しないggmlソースを直結するため、公式CMake手順に置き換えました。
 
-本記事では、C++を用いてTinyLLaMAをロードし、テキスト生成を行うための推論エンジンをゼロから構築（あるいは既存のllama.cppの内部構造を深く理解）するための非常に詳細な開発手順を解説します。
-
----
+> **実装上の注意（本文の補足）**：GGUFのテンソル配置は `general.alignment`（省略時の既定値は32バイト）に従い、32/64バイトのどちらかに固定されるわけではありません。Q4_0は32値、Q4_Kは256値単位のブロック形式です。1.1BパラメータのFP16重みは理論上約2.2GB（約2.05GiB）、4bitの単純換算は約0.55GBですが、量子化メタデータ、GGUF、実行時ワーク領域、KVキャッシュなどが加わるため、実ファイルや必要RAMは増えます。ggml/llama.cppのメモリ確保やKVキャッシュの方式はバージョン・バックエンド・設定で異なり、推論中に確保がない、最大コンテキスト分を常に事前確保する、といった一般化はできません。TinyLlama 1.1B Chatの設定例は32個のQuery headと4個のKey/Value headです。形状や演算はモデル設定とランタイムに合わせてください。 セクション3～8は概念図であり、そのまま動く独自エンジンの実装手順ではありません。GQAで明示的なKV複製が常に必要とは限らず、演算とテンソル形状はランタイムに従います。トークナイザー、特殊トークン、チャットテンプレートもモデル固有のものを使ってください。GGUFは広く使われる形式の一つで、すべてのモデルやランタイムで唯一最適な形式という意味ではありません。AVX2などの命令セットを固定指定する場合はCPU対応を確認し、公式ビルドのバックエンド選択に従ってください。
 
 ## 1. なぜC++とggmlなのか？
 
-AIの学習段階においては、柔軟性と豊富なエコシステムを持つPythonが圧倒的に有利です。しかし、デプロイや「推論（Inference）」のフェーズにおいては、以下の理由からC++が強力な選択肢となります。
-
-1. **オーバーヘッドの削減**: Pythonのグローバルインタプリタ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（GIL）やランタイムのオーバーヘッドを完全に排除できます。
-2. **メモリ効率とアリーナアロケーション**: メモリの確保と解放をマニュアルで制御できるため、[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)による予測不能なスパイクを防げます。
-3. **ハードウェアへの直接アクセス**: AVX-512、AVX2、ARM NEONなどのSIMD組み込み関数（Intrinsics）を直接呼び出し、CPUの演算能力を極限まで引き出せます。
-4. **依存関係の排除**: ggmlは依存関係ゼロ（Zero dependencies）のC/C++ライブラリであり、コンパイラさえあればWindows上のMSVC環境でも容易にビルド可能です。
-
----
+Pythonは学習・実験向けの豊富なライブラリを備え、C/C++はネイティブアプリへの組み込み、配布、ランタイム制御に役立ちます。単純にC++の方が常に高速とは限らず、実測はモデル・バックエンド・ハードウェアに依存します。
 
 ## 2. アーキテクチャの全体像
 
@@ -207,40 +199,21 @@ LM Headから出力されるロジットからは、Temperatureパラメータ�
 
 ## 9. C++プロジェクトの立ち上げ（Windows / PowerShell 環境）
 
-```cmake
-cmake_minimum_required(VERSION 3.14)
-project(TinyLLaMACpp)
+Visual Studio 2022のC++デスクトップ開発環境とCMakeを用意し、[llama.cpp公式ビルドガイド](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md)に沿ってリポジトリをビルドします。これは動作する既存の推論ランタイムを構築する手順で、独自の推論エンジンを完成させるものではありません。
 
-set(CMAKE_CXX_STANDARD 17)
-
-# Windows (MSVC) 向けの最適化とAVX2フラグの設定
-if(MSVC)
-    add_compile_options(/O2 /arch:AVX2 /fp:fast)
-    add_link_options(/STACK:8388608)
-else()
-    add_compile_options(-O3 -march=native -ffast-math)
-endif()
-
-add_library(ggml OBJECT ggml/ggml.c ggml/ggml-alloc.c)
-target_compile_definitions(ggml PRIVATE GGML_USE_AVX2 GGML_USE_F16C GGML_USE_FMA)
-
-add_executable(main main.cpp)
-target_link_libraries(main ggml)
-```
-
-PowerShellでのビルドコマンド例：
 ```powershell
-mkdir build
-cd build
-cmake .. -G "Visual Studio 17 2022" -A x64
-cmake --build . --config Release
+git clone https://github.com/ggml-org/llama.cpp
+Set-Location llama.cpp
+cmake -B build
+cmake --build build --config Release
 ```
 
----
+別途、llama.cppと互換性のあるGGUFモデルを入手し、利用条件と配布元を確認してください。TinyLlamaのモデル設定は[モデルカードと設定](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)を参照できます。以下のパスは手元のファイルに置き換えてください。モデルのチャットテンプレートと量子化方式も確認します。
+
+```powershell
+.\build\bin\Release\llama-cli.exe -m "C:\models\model.gguf"
+```
 
 ## 10. まとめ
 
-C++とggmlを用いてTinyLLaMAのような小規模AIモデルの推論エンジンをゼロから実装することは、深層学習のブラックボックスを暴き、低レベルのハードウェア制御の美しさを学ぶ絶好の機会です。メモリマッピングを利用したゼロコピー・ロード、SIMD最適化、KVキャッシュの構築など、システムプログラミングのエッセンスを存分に味わいながら、エッジAIの未来を切り拓いていきましょう。
-
-
-
+C++でローカルLLMを試す場合、まず保守されているllama.cppをビルドし、互換GGUFモデルを実行するのが現実的です。ggmlの内部APIやモデル実装をゼロから組み立てる場合は、モデル固有のトークナイザー、演算子、重み形式、KVキャッシュ、バックエンド対応まで別途実装・検証が必要です。

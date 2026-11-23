@@ -1,33 +1,25 @@
 ---
-title: 'Guía de desarrollo de modelos de IA a pequeña escala (como TinyLLaMA) con C++'
+title: "Primeros pasos con la inferencia de LLM pequeños en C++: TinyLlama, llama.cpp y ggml"
 slug: "cpp-small-ai-model-tinyllama-dev-guide"
 date: "2026-09-11T14:00:00+09:00"
+lastmod: "2026-11-23"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["ai", "llm", "cpp", "programming"]
 tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
-description: 'Explicación detallada del proceso de desarrollo y la arquitectura interna para la inferencia de modelos de IA a pequeña escala como TinyLLaMA en entornos locales, utilizando C++ y ggml. Cubre el mapeo de memoria, operaciones tensoriales y optimización SIMD.'
+description: "Guía práctica para ejecutar en C++ modelos LLM pequeños como TinyLlama. Incluye la compilación de llama.cpp, GGUF, cuantización, caché KV y arquitectura de inferencia."
 ---
 
-# Guía de desarrollo de modelos de IA a pequeña escala (como TinyLLaMA) con C++
+# Primeros pasos con la inferencia de LLM pequeños en C++: TinyLlama, llama.cpp y ggml
 
-En los últimos años, el interés por ejecutar grandes modelos de lenguaje ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)) en entornos locales ha crecido rápidamente. Especialmente, los modelos pequeños como TinyLLaMA (1.1B parámetros) pueden realizar inferencias a velocidades prácticas incluso en dispositivos periféricos (edge devices) con recursos limitados o computadoras portátiles comunes (incluyendo entornos Windows). Mientras que el desarrollo con Python y PyTorch es la corriente principal, cuando se busca el rendimiento máximo y la eficiencia de memoria, la combinación de C++ y "ggml", una biblioteca de tensores basada en C, se ha convertido en el estándar de facto.
+> **Alcance y correcciones:** Esta es una introducción a la arquitectura de inferencia y a la compilación del proyecto mantenido [llama.cpp](https://github.com/ggml-org/llama.cpp), no una implementación completa desde cero. llama.cpp se basa en [ggml](https://github.com/ggml-org/ggml). Las cifras de memoria y velocidad son estimaciones que dependen del modelo, la cuantización, el contexto, el hardware y la compilación. mmap carga páginas bajo demanda; no garantiza cero copias de principio a fin ni elimina el uso de memoria física. El ejemplo CMake anterior no enlazaba fuentes ggml que formasen una aplicación funcional y se ha sustituido por el proceso oficial.
 
-En este artículo, explicaremos en gran detalle el proceso de desarrollo para construir un motor de inferencia desde cero (o comprender profundamente la estructura interna del existente llama.cpp) para cargar TinyLLaMA y generar texto usando C++.
-
----
+> **Notas de implementación (aclaraciones al texto):** Los offsets de tensores GGUF siguen `general.alignment` (32 bytes por defecto si se omite); no existe una alineación universal de 32 o 64 bytes. Q4_0 agrupa 32 valores y Q4_K, 256. Para 1,1 mil millones de parámetros, solo los pesos FP16 ocupan unos 2,2 GB (2,05 GiB); el cálculo simple de 4 bits da unos 0,55 GB. Los metadatos de cuantización, el contenedor GGUF, el espacio de trabajo y la caché KV aumentan el tamaño real y la RAM necesaria. La asignación de memoria y la caché KV de ggml/llama.cpp dependen de la versión, el backend y la configuración; no se debe suponer que la inferencia no asigna memoria o que reserva siempre todo el contexto máximo. TinyLlama 1.1B Chat configura 32 cabezas Query y 4 cabezas Key/Value; adapta formas y operaciones a la configuración del modelo y al runtime. Las secciones 3–8 son conceptuales, no instrucciones copiables para crear un motor propio funcional. GQA no requiere siempre replicar explícitamente los tensores KV; las operaciones y formas dependen del runtime. Usa el tokenizador, los tokens especiales y la plantilla de chat del modelo. GGUF es un formato extendido, no el mejor universal para todos los modelos y runtimes. Antes de forzar instrucciones como AVX2, comprueba que la CPU las admite y sigue las opciones de backend de la guía oficial.
 
 ## 1. ¿Por qué C++ y ggml?
 
-En la fase de entrenamiento de IA, Python tiene una ventaja abrumadora debido a su flexibilidad y rico ecosistema. Sin embargo, en las fases de despliegue e "Inferencia", C++ se convierte en una opción poderosa por las siguientes razones:
-
-1. **Reducción de sobrecarga**: Se puede eliminar por completo la sobrecarga del entorno de ejecución y del Global Interpreter [Lock](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) (GIL) de Python.
-2. **Eficiencia de memoria y asignación por arenas**: Al poder controlar manualmente la asignación y liberación de memoria, se evitan los picos impredecibles causados por el recolector de basura.
-3. **Acceso directo al hardware**: Se pueden invocar directamente funciones intrínsecas SIMD como AVX-512, AVX2 y ARM NEON para maximizar la capacidad de procesamiento de la CPU.
-4. **Eliminación de dependencias**: ggml es una biblioteca C/C++ sin dependencias (Zero dependencies), y se puede compilar fácilmente incluso en un entorno MSVC en Windows siempre que haya un compilador.
-
----
+Python ofrece un amplio ecosistema para entrenar y experimentar. C y C++ son útiles para integrar modelos en aplicaciones nativas, distribuirlas y controlar el runtime. C++ no siempre es más rápido por defecto; el rendimiento medido depende del modelo, el backend y el hardware.
 
 ## 2. Visión general de la arquitectura
 
@@ -207,39 +199,21 @@ A partir de los logits generados por el LM Head, se escalan las probabilidades u
 
 ## 9. Inicio del proyecto en C++ (Entorno Windows / PowerShell)
 
-```cmake
-cmake_minimum_required(VERSION 3.14)
-project(TinyLLaMACpp)
+Instala Visual Studio 2022 con la carga de trabajo de escritorio en C++ y CMake; después compila el repositorio siguiendo la [guía oficial de compilación de llama.cpp](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md). Esto compila un runtime de inferencia existente, no un motor completo propio.
 
-set(CMAKE_CXX_STANDARD 17)
-
-# Configuración de banderas de optimización y AVX2 para Windows (MSVC)
-if(MSVC)
-    add_compile_options(/O2 /arch:AVX2 /fp:fast)
-    add_link_options(/STACK:8388608)
-else()
-    add_compile_options(-O3 -march=native -ffast-math)
-endif()
-
-add_library(ggml OBJECT ggml/ggml.c ggml/ggml-alloc.c)
-target_compile_definitions(ggml PRIVATE GGML_USE_AVX2 GGML_USE_F16C GGML_USE_FMA)
-
-add_executable(main main.cpp)
-target_link_libraries(main ggml)
-```
-
-Ejemplo de comando de compilación en PowerShell:
 ```powershell
-mkdir build
-cd build
-cmake .. -G "Visual Studio 17 2022" -A x64
-cmake --build . --config Release
+git clone https://github.com/ggml-org/llama.cpp
+Set-Location llama.cpp
+cmake -B build
+cmake --build build --config Release
 ```
 
----
+Obtén por separado un modelo GGUF compatible con llama.cpp y comprueba su licencia y procedencia. La [tarjeta y configuración de TinyLlama](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) sirven de referencia. Sustituye la ruta siguiente por la de tu archivo local y comprueba su plantilla de chat y tipo de cuantización.
+
+```powershell
+.\build\bin\Release\llama-cli.exe -m "C:\models\model.gguf"
+```
 
 ## 10. Resumen
 
-Implementar desde cero un motor de inferencia para modelos de IA pequeños como TinyLLaMA usando C++ y ggml es una excelente oportunidad para descubrir la caja negra del aprendizaje profundo y aprender la belleza del control de hardware de bajo nivel. Disfrutemos plenamente de la esencia de la programación de sistemas, como la carga con copia cero mediante mapeo de memoria, la optimización SIMD y la construcción de la caché KV, mientras abrimos camino hacia el futuro de la IA periférica ([Edge AI](/es/p/edge-ai-future-iot-implementation/)).
-
-
+Para la primera ejecución local de un LLM desde C++, compila el proyecto mantenido llama.cpp y ejecuta un modelo GGUF compatible. Crear un motor directamente sobre ggml es otro proyecto: requiere manejar la tokenización, los operadores, el formato de pesos, la caché KV, los backends y las pruebas específicas del modelo.

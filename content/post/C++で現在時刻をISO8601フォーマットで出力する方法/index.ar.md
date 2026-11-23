@@ -1,13 +1,13 @@
 ---
-title: '【C++20】أمثلة برمجية بسيطة لطباعة الوقت الحالي بتنسيق ISO8601 (UTC)'
-date: "2026-09-24T19:44:38+09:00"
+title: "[C++20] تنسيق الوقت الحالي بتوقيت UTC وفق ISO 8601 باستخدام std::chrono وstd::format"
+date: "2023-04-15T19:35:27+09:00"
+lastmod: "2026-11-23"
 slug: "C++で現在時刻をISO8601フォーマットで出力する方法"
-date: 2023-04-15T19:35:27+09:00
 tags: ["C++", "الوقت", "ISO8601"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'إلى المهندسين الذين يرغبون في طباعة الوقت الحالي بتنسيق ISO8601 القياسي العالمي في C++! تقدم هذه المقالة أمثلة برمجية واضحة وموجزة تستفيد من مكتبات std::format و chrono في C++20 لتحويل تنسيق الوقت بذكاء وبساطة.'
+description: "مثال كامل بلغة C++20 لتنسيق الوقت الحالي بتوقيت UTC وفق ISO 8601 باستخدام std::chrono وstd::format، مع ملاحظات حول دعم المكتبات القياسية."
 ---
 
 ### المتطلبات الأساسية
@@ -16,15 +16,25 @@ description: 'إلى المهندسين الذين يرغبون في طباعة 
 
 ### الشفرة
 
-```
+يعرض المثال توقيت UTC بدقة ثانية واحدة، مثل `2026-11-23T00:00:00Z`.
+
+```cpp
 #include <chrono>
 #include <format>
+#include <iostream>
+#include <string>
 
-std::string datetime = std::format("{:%FT%TZ}", system_clock::now());
+int main() {
+    const auto now = std::chrono::floor<std::chrono::seconds>(
+        std::chrono::system_clock::now());
+    const std::string datetime = std::format("{:%FT%TZ}", now);
+    std::cout << datetime << '\n';
+}
 ```
 
-هذه كانت طريقة إخراج الوقت الحالي بتنسيق ISO8601 في C++.
+> ينسّق `%F` التاريخ و`%T` الوقت. الحرفان `T` و`Z` في سلسلة التنسيق حرفيان؛ وتُنسّق نقطة `system_clock` الزمنية بتوقيت UTC. قد تظهر أجزاء من الثانية إذا كانت دقة نقطة الزمن أدق من الثانية. تنسيق chrono ميزة في مكتبة C++20، لكن مستوى الدعم يختلف بين المكتبات القياسية. تحقق من دعم المترجم والمكتبة اللذين تستخدمهما.
 
 ### مراجع
 
-- [std::format](https://eel.is/c++draft/time.format)
+- [C++ standard draft: chrono formatting](https://eel.is/c++draft/time.format)
+- [Microsoft C++ language conformance and feature support](https://learn.microsoft.com/en-us/cpp/overview/visual-cpp-language-conformance?view=msvc-170)
