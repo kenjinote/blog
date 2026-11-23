@@ -9,7 +9,7 @@ tags: ["HTML", "reveal.js", "Presentación"]
 draft: false
 image: "img.webp"
 categories: ["programming"]
-description: 'Explicamos la instalación y el uso básico de "reveal.js", una herramienta que te permite crear presentaciones de forma intuitiva usando HTML y Markdown. Compatible con animaciones y exportación a PDF, te mostraremos cómo aprovecharla en sintonía con sistemas de control de versiones como Git.'
+description: 'Explicamos la instalación y el uso básico de reveal.js, una herramienta que te permite crear presentaciones de forma intuitiva usando HTML y Markdown. Compatible con animaciones y exportación a PDF, te mostraremos cómo aprovecharla en sintonía con sistemas de control de versiones como Git.'
 ---
 
 

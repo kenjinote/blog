@@ -70,7 +70,8 @@ for lang in LANGS:
       "http200":status==200,"canonical":page.canonical==[url],"language":page.lang.lower()==lang,"arabicRtl":lang!="ar" or page.direction=="rtl",
       "title":title in "".join(page.titles),"description":len(page.descriptions)==1 and page.descriptions[0].strip()==description,
       "hreflangCount":len(page.hreflang)==14,"hreflangTargets":set(page.hreflang.values())==targets,"officialReferences":all(x in page.links for x in OFFICIAL),
-      "setupAndMarkdown":all(x in compact for x in ["data-markdown","data-template","reveal.js.git","npm install","npm start","localhost:8000"]),
+      # Hugo syntax highlighting can split shell words into separate HTML spans.
+      "setupAndMarkdown":all(x in compact for x in ["data-markdown","data-template","reveal.js.git","npminstall","npmstart","localhost:8000"]),
       "featuresAndExports":all(x in compact for x in ["fragment","print-pdf","aside","notes"]),"oldQiitaReferencesRemoved":"qiita.com/" not in html,
       "originalAndUpdatedDates":yaml_value(md,"date").startswith("2023-04-06") and yaml_value(md,"lastmod")=="2026-11-23"}
     results.append({"language":lang,"url":url,"status":status,"checks":checks,"passed":all(checks.values())})
