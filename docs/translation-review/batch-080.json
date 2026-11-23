@@ -19,7 +19,7 @@
     "Preserved the original 2022-09-10 publication date from Git history, removed the injected duplicate date, and set lastmod 2026-11-23 across all 13 editions."
   ],
   "scope": "Read the entire Japanese source and all twelve complete translations. Compared each edition for meaning, localized Go terminology, command/code parity, links, metadata and outdated claims against current Go primary documentation.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Goをインストールする方法/index.en.md": {
       "reviewKind": "ai",
@@ -441,5 +441,11 @@
         "No installation was performed on each operating system or CPU architecture."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-080.json",
+    "ciRun": 45174001567,
+    "sourceCommit": "a265462c5",
+    "allPassed": true
   }
 }

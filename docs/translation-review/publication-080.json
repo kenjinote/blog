@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "batch": 80,
+  "verifiedAt": "2026-11-23T21:53:41+09:00",
+  "ciRun": 45174001567,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45174001567",
+  "sourceCommit": "a265462c5",
+  "deployment": "success",
+  "pagesVerified": 13,
+  "allPassed": true,
+  "checks": [
+    "HTTP 200, canonical, language/RTL, title/description, reciprocal 14-label hreflang on all 13 editions",
+    "official Go installation, getting-started, version management, FAQ, and Playground links",
+    "module initialization, run/build instructions, Hello World code/output, and removal of the obsolete Japanese documentation link"
+  ],
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/go%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/go%E3%82%92install%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/go%E3%82%92%E5%AE%89%E8%A3%85%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/go%E3%82%92instalaci%C3%B3n%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/go%E3%82%92%EC%84%A4%EC%B9%98%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/go%E3%82%92instala%C3%A7%C3%A3o%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/go%E3%82%92%E5%AE%89%E8%A3%9D%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/go%E3%82%92%E0%A4%87%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%89%E0%A4%B2%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/go%E3%82%92installation%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/go%E3%82%92installation%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/go%E3%82%92%D8%AA%D8%AB%D8%A8%D9%8A%D8%AA%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/go%E3%82%92%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/go%E3%82%92instalasi%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialGoReferences": true,
+        "moduleAndRunCommands": true,
+        "helloWorldCodeAndOutput": true,
+        "obsoleteJapaneseDocsRemoved": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "The Go toolchain was not installed in the review environment, so the sample was checked against the official tutorial but not run locally."
+  ]
+}
