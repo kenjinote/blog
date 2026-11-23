@@ -41,6 +41,8 @@ pacman -S nano
 nano --version
 ```
 
+Lihat [panduan pembaruan resmi MSYS2](https://www.msys2.org/docs/updating/) untuk mengetahui alur pembaruan dan mulai ulang.
+
 Nama paket dan perintah instalasi tersedia di [halaman paket nano MSYS2](https://packages.msys2.org/packages/nano?variant=x86_64). Jalankan nano di terminal MSYS2. Penggunaan dari Command Prompt atau PowerShell biasa memerlukan konfigurasi PATH dan lingkungan runtime tambahan; jangan langsung menambahkan `/usr/bin` MSYS2 ke PATH Windows tanpa mempertimbangkan dampaknya.
 
 ## Pintasan dasar

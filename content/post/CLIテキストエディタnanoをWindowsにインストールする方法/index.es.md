@@ -48,6 +48,8 @@ pacman -S nano
 nano --version
 ```
 
+Consulta la [guía oficial de actualización de MSYS2](https://www.msys2.org/docs/updating/) para conocer el proceso de actualización y reinicio.
+
 El nombre del paquete y el comando aparecen en la [página del paquete nano de MSYS2](https://packages.msys2.org/packages/nano?variant=x86_64). Ejecute nano dentro de una terminal MSYS2. Usarlo desde el Símbolo del sistema o PowerShell normales requiere configurar PATH y el entorno de ejecución; no se recomienda añadir `/usr/bin` de MSYS2 a PATH de Windows sin más.
 
 ## Atajos básicos

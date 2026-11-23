@@ -40,6 +40,8 @@ pacman -S nano
 nano --version
 ```
 
+更新や再起動が必要になる場合の流れは、[MSYS2の公式更新ガイド](https://www.msys2.org/docs/updating/)を参照してください。
+
 パッケージ名とインストールコマンドは [MSYS2 の nano パッケージ情報](https://packages.msys2.org/packages/nano?variant=x86_64)で確認できます。nano は MSYS2 の端末内で実行してください。通常のコマンドプロンプトや PowerShell から使うには PATH や実行環境を別途整える必要があり、MSYS2 の `/usr/bin` を安易に Windows の PATH に追加する方法は勧めません。
 
 ## 基本操作

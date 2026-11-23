@@ -1,7 +1,7 @@
 {
   "version": 1,
   "article": "How to use GNU nano on Windows with WSL or MSYS2",
-  "frozenSourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
+  "frozenSourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
   "reviewedAt": "2026-11-23",
   "sources": [
     "https://www.nano-editor.org/dist/latest/cheatsheet.html",
@@ -16,7 +16,8 @@
     "Corrected the categorical claim that Japanese input is unsupported. GNU nano supports internationalization and UTF-8; actual input/display depends on terminal, font, locale, and input-method configuration.",
     "Explained MSYS2 update/restart steps and that its nano package should be run in the MSYS2 terminal, not assumed to be a native Command Prompt or PowerShell executable.",
     "Documented reliable Ctrl+O/Enter save and Ctrl+X exit controls, with current Ctrl+S behavior linked to the official nano cheat sheet; retained the original 2024-03-31 publication date, removed the duplicate date, and added lastmod/localized descriptions.",
-    "Compared the complete Japanese article with all twelve translations, including metadata, platform prerequisites, commands and paths, shortcuts, UTF-8/input caveats, and official references."
+    "Compared the complete Japanese article with all twelve translations, including metadata, platform prerequisites, commands and paths, shortcuts, UTF-8/input caveats, and official references.",
+    "Added a localized link to the official MSYS2 update/restart guide in all language editions."
   ],
   "publicationPending": true,
   "reviews": {
@@ -25,8 +26,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "1694f97546253707c90928f4c2fd08a6f52e586cbaea1ca0fd563ac417906483",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "c9b205b33c2baadd7934dcf7a7fecb289033957c3498236a7684b2ba68c82e45",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -46,10 +47,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
@@ -62,8 +63,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "2447bd61d3ba37809c9599567c0b9ba0809b2c15657ab86aace5d379f26d656c",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "4a87c1050e3689e4234c7ad7b5208bb0908f9000f35b346b0b83aa45a727da83",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -83,10 +84,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
@@ -99,8 +100,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "ae94e4e18ab98dfe5344100028ac02df16dcd7ee443db02559c2a654024b9949",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "000dd6f0035cedd8ee11a8e0a8c841af05923463e57fd93560bf4d82d946a9d1",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -120,10 +121,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
@@ -136,8 +137,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "3b38ee833a44390132a1c5c1a30417fddc2a10e1d5fbd38bafd20488b0e1ec82",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "d23c07c70dc96724eddbe64f1d5ca66e28f1ffd98342a8da2d42fae71fcc2db5",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -157,10 +158,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
@@ -173,8 +174,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "fd6d8740ea41757d6368d599c68f4301330f7a262c2b08a049abf77f58d30785",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "4a56b531b35708ccb84483c30e7dcdb4a5bc14a25cac15d18dbb501a03599098",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -194,10 +195,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
@@ -210,8 +211,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "22eaaf17121dfe905ac9cb12be93ea0f9e1e0c7624a5a7a8f3901576b1f207bf",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "66fb5e96dcb9c0dcf48331fd96e8e02f0525c92d4fb1dfa1bf4edb63da38fb44",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -231,10 +232,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
@@ -247,8 +248,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "3b6e8a32d0fbdf5db51f403a3c63f5f3a1ed0217537d2750e42b66b788f80faf",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "02d3b09af97cdfb8c59f426a86ed5220c6c0c2ab2feb916c7b9daf67b353b294",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -268,10 +269,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
@@ -284,8 +285,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "220917ee5ba4fa9c043d4253275dc4d4794f5179913086d7890cfc50cb04310c",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "3733dd09c84ee8c97f6fab156fcd759c6a316e9f6ce9ea3dcf3031c7732b9ec1",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -305,10 +306,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
@@ -321,8 +322,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "c8e2fccb44a77027ce277d298c145423dc7ee57f4e314ba32847b971e5f26b5e",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "4b8c31f2f3b5e91c656a623aa6a874f2d8354b12a9bd3aadc16086d944a90e8f",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -342,10 +343,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
@@ -358,8 +359,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "e5decaf3d6d89cd06565a771743c7d45c55c86c676f994c20c1f16c52a0f0457",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "ee62ab13df770ef1560f545b875da5bc253780b820ba3161cff27d2ee668dbcd",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -379,10 +380,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
@@ -395,8 +396,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "e47538b1a26245b0ffbc84197e20c530f170710fbc4061ad706379ce536ab923",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "54509641766d36aef34bf81fde41bb6e56f29d672dc38833675c696f0124211a",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -416,10 +417,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",
@@ -432,8 +433,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/CLIテキストエディタnanoをWindowsにインストールする方法/index.md",
-      "sourceHash": "6da4d72286e21ac52da4c97b386acd0a83b0a35b0f3b151821b90a0cb7a17ed2",
-      "translationHash": "b7e1e3ebd956b35660056bd650b08ea8e9964fdff0650c845529559e6fd8670e",
+      "sourceHash": "bb92ffd39ad5e93290c017243d314d73731102ee05ab7a6a6d59822a5018c6c9",
+      "translationHash": "15b05d394f9f288b7f147a8ef0db89ecdc0943e4eb857be3ba094ef8d6584503",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -453,10 +454,10 @@
         },
         "links": {
           "status": "checked",
-          "note": "Checked the official GNU nano shortcut sheet, Microsoft Learn WSL installation guidance, the MSYS2 installer instructions, and the MSYS2 nano package record; all translations retain the corresponding official references."
+          "note": "Checked the GNU nano manual/cheat sheet, Microsoft WSL installation guide, MSYS2 installer, Windows support and update guides, and nano package information. The article links to the official update/restart procedure in all language editions."
         }
       },
-      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article.",
+      "summary": "Replaced the stale standalone SourceForge binary workflow with maintained WSL and MSYS2 installation routes; corrected the unsupported Japanese-input limitation, clarified package updates and terminal boundaries, and aligned all twelve localized editions with the complete Japanese article. Added a localized direct link to the official MSYS2 update and restart guide.",
       "limitations": [
         "AI review only; no human or native-speaker certification.",
         "Installation commands were not executed on Windows, WSL, or MSYS2; environment-specific input and font behavior was not tested.",

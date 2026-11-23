@@ -41,6 +41,8 @@ pacman -S nano
 nano --version
 ```
 
+راجع [دليل تحديث MSYS2 الرسمي](https://www.msys2.org/docs/updating/) لمعرفة خطوات التحديث وإعادة التشغيل.
+
 يمكنك مراجعة اسم الحزمة وأمر التثبيت في [صفحة حزمة nano لدى MSYS2](https://packages.msys2.org/packages/nano?variant=x86_64). شغّل nano داخل طرفية MSYS2. ويتطلب تشغيله من موجه الأوامر أو PowerShell العادي إعداد PATH وبيئة التشغيل إضافيًا؛ ولا يُنصح بإضافة `/usr/bin` الخاص بـ MSYS2 إلى PATH في Windows دون تقييم.
 
 ## الاختصارات الأساسية

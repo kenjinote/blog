@@ -41,6 +41,8 @@ pacman -S nano
 nano --version
 ```
 
+更新與重新啟動流程請參閱 [MSYS2 官方更新指南](https://www.msys2.org/docs/updating/)。
+
 套件名稱與安裝命令可在 [MSYS2 nano 套件頁面](https://packages.msys2.org/packages/nano?variant=x86_64)查詢。請在 MSYS2 終端機內執行 nano。若要從一般命令提示字元或 PowerShell 使用，還需要額外設定 PATH 和執行環境；不建議未經評估便將 MSYS2 的 `/usr/bin` 加入 Windows PATH。
 
 ## 基本操作

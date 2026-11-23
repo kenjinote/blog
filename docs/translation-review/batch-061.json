@@ -20,7 +20,7 @@
     "Explained the Responses JSON output structure, model/project availability, separate ChatGPT/API billing, 401/429 troubleshooting, current pricing, and usage limits using official OpenAI references.",
     "Removed the duplicate date while preserving the original 2025-02-01 publication date, added lastmod/localized metadata, and compared the full Japanese article with all twelve translations."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/ChatGPT APIをcurlから呼び出す/index.en.md": {
       "reviewKind": "ai",
@@ -466,5 +466,11 @@
         "Hugo CI and live publication verification remain pending for this batch."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-061.json",
+    "ciRun": 45097350486,
+    "deployedCommit": "2abe39d62710dd5f3b4786e5797538807806c7a3",
+    "allPassed": true
   }
 }

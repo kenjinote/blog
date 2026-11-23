@@ -75,7 +75,12 @@ def metadata(lang):
         if not match:
             raise SystemExit(f"Missing {field} in {path}")
         value = match.group(1)
-        values[field] = json.loads(value) if value.startswith('"') else value.strip("'")
+        if value.startswith('"'):
+            values[field] = json.loads(value)
+        elif value.startswith("'") and value.endswith("'"):
+            values[field] = value[1:-1].replace("''", "'")
+        else:
+            values[field] = value
     return values
 
 

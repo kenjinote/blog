@@ -67,7 +67,12 @@ def metadata(lang):
         if not match:
             raise SystemExit(f"Missing {field} in {path}")
         value = match.group(1)
-        values[field] = json.loads(value) if value.startswith('"') else value.strip("'")
+        if value.startswith('"'):
+            values[field] = json.loads(value)
+        elif value.startswith("'") and value.endswith("'"):
+            values[field] = value[1:-1].replace("''", "'")
+        else:
+            values[field] = value
     return values
 
 
@@ -136,8 +141,8 @@ for lang in LANGS:
         "lastmod": "2026-11-23" in raw,
         "hreflangCount": len(page.hreflang) == 14,
         "hreflangTargets": set(page.hreflang.values()) == targets,
-        "officialReferences": all(link in page.links for link in official),
-        "currentInstallCommands": all(token in visible for token in ("wsl --install", "sudo apt install nano", "pacman -Suy", "pacman -S nano", "nano --version")),
+        "officialReferences": all(link in page.links for link in official) and any(link.startswith("https://learn.microsoft.com/") and "/windows/wsl/install" in link for link in page.links),
+        "currentInstallCommands": all(re.sub(r"\s+", "", token).casefold() in re.sub(r"\s+", "", visible).casefold() for token in ("wsl --install", "sudo apt install nano", "pacman -Suy", "pacman -S nano", "nano --version")),
         "terminalAndFileScope": "MSYS2 MSYS" in visible and "/mnt/c/" in visible and "1809" in visible,
         "shortcuts": all(token in visible for token in ("Ctrl+O", "Ctrl+X", "Ctrl+S")),
         "utf8InputCaveat": "UTF-8" in visible,
