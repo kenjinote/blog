@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "article": "Google One （Gemini）が解約できない時の対処方法",
+  "frozenSourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://support.google.com/googleone/answer/9056360",
+    "https://support.google.com/googleplay/answer/7018481",
+    "https://support.google.com/gemini/answer/14517446?hl=ja",
+    "https://myaccount.google.com/deleteservices",
+    "https://gemini.google/jp/subscriptions/?hl=ja"
+  ],
+  "findings": [
+    "Removed the blanket one-month trial and JPY 2,900 price claim; Google's current Japanese plan display and help center show that offers and terms must be checked for the subscriber's account and region.",
+    "Explained cancellation by original signup and billing provider: Google One, Google Play, Apple App Store, carrier/other provider, or family plan manager.",
+    "Corrected the claim that the official cancellation page may fail; limited service deletion to Google's documented special cases such as a non-transferable subscription during a service switch.",
+    "Added confirmation-status and billing-period checks plus the storage and service restrictions that may follow loss of paid storage.",
+    "Preserved the original publication date 2025-09-27, removed duplicate injected dates, and set lastmod 2026-11-23 in all 13 editions."
+  ],
+  "validation": "docs/translation-review/validation-078.json",
+  "scope": "Read the full Japanese source and each of twelve complete translations. Checked current Google One/Google Play/Gemini cancellation routes, the narrowly scoped service-deletion path, billing period, and storage effects against official Google documentation.",
+  "publicationPending": true,
+  "reviews": {
+    "post/Google One （Gemini）が解約できない時の対処方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "182fbe262a515df3e53fec389a9d9cde099a06e101f0b982a575ec1640461cb1",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "bc7aab78edca768f112a78e4710d866fef6050e34194828cec3666ef53faaf57",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "8703555822049352993a2e980c8945b6bda84aa9e9ea49418c5b35564fe76799",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "3206dfd3cfe910f0a93f497f39200b7d68f2ba202c869f1599ada4bb1bbea75c",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "ab4763852df7a3c39b8ee259961ce63fbb794d787adf67a5229e2329033a6cd6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "a0cde8d86eedcdc358b50a813ebed3dc2f9551108913206088a2e7f9453913d5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "82d5d018d7592261aa282f8b923e23f6fab6b0b0615174871680e4e7b8536ff3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "b9449e1647d5fbebf62d44b8969a6e47b5005f55d26ade5f0f1a2ec501b9dd73",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "6c4ba5af8304b507062794a479c2cc9ec617b36a96a038a2b86c4de35ef68a5f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "c2b2c5ec8a7f55ce69035c7d4110635e0464c6100e034a6f1132b0a365fbf493",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "07945a0daf4a4a9293ec519d963f82e308dad4959f7359a91b3e1f7b70b95205",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    },
+    "post/Google One （Gemini）が解約できない時の対処方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Google One （Gemini）が解約できない時の対処方法/index.md",
+      "sourceHash": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "translationHash": "631c063e966e161aa6858e160db3163ff4b216efd75e0fd62963345dfc759fe3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese source and localized article. Compared eligibility and variability caveats, account and billing-provider selection, cancellation paths, the limited service-deletion scenario, cancellation status, billing period, and storage consequences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed localized terminology for Google One membership, Google AI plan, Gemini, free trial, renewal, billing provider, family group manager, service deletion, storage allowance, and cancellation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are included. The 15 GB free storage reference is a product allowance, not a calculation."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code or executable commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Compared Google One cancellation, Google Play cancellation, Gemini subscription management, and Google One service-deletion guidance with Google's official help pages. The linked routes and limits are explained in context."
+        }
+      },
+      "summary": "Replaced outdated trial and fixed-price assertions with current account-specific guidance, routed cancellation by signup and billing provider, limited the Google service-deletion route to documented cases, and explained post-cancellation storage effects.",
+      "limitations": [
+        "AI review only; no human or native-speaker confirmation.",
+        "No account-specific subscription, payment, cancellation, or refund status was accessed.",
+        "Plan names, prices, trial eligibility, menus, and storage rules may vary by region and account; check the current account and official help pages."
+      ]
+    }
+  }
+}

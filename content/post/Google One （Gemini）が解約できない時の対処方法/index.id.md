@@ -1,62 +1,51 @@
 ---
-title: 'Tidak Bisa Membatalkan Berlangganan Google One (Gemini)? Penjelasan Cara Berhenti yang Benar'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google One （Gemini）が解約できない時のPenanggulangan"
+title: 'Cara Membatalkan Paket Google One dengan Google AI atau Gemini'
 date: 2025-09-27T10:02:59+09:00
+lastmod: 2026-11-23
+
+
+
+slug: "Google One （Gemini）が解約できない時のPenanggulangan"
 tags: ["Google One", "Gemini", "Pembatalan", "Solusi"]
 draft: false
 image: "img.webp"
-description: 'Menjelaskan prosedur pembatalan yang benar untuk mencegah keanggotaan Google One seharga 2.900 yen/bulan berlanjut secara otomatis setelah uji coba gratis Gemini 1 bulan berakhir. Jika Anda pusing karena ''tidak bisa membatalkan'', silakan rujuk cara berhenti di artikel ini.'
 categories: ["programming"]
+description: 'Pelajari cara membatalkan paket Google One yang mencakup Google AI atau Gemini sesuai tempat Anda berlangganan. Temukan akun dan penyedia tagihan yang tepat serta pahami dampaknya pada penyimpanan.'
 ---
 
-# [Perhatian] Apakah Anda akan ditagih setelah uji coba gratis Gemini berakhir? Ringkasan cara membatalkan
+# Cara Membatalkan Paket Google One dengan Google AI atau Gemini
 
-Saat Anda mencoba mencoba layanan AI Google "Gemini", ada ** uji coba gratis 1 bulan ** yang disediakan di awal.
-Saya pikir banyak orang mendaftar dengan berpikir, "Jika gratis, saya akan mencobanya untuk saat ini", tetapi ada hal yang perlu diperhatikan di sini.
+Fitur Gemini berbayar mungkin disertakan dalam keanggotaan Google One, seperti paket Google AI. Ketersediaan dan durasi uji coba gratis, harga, serta tanggal perpanjangan bergantung pada penawaran dan wilayah. Periksa detail langganan di Akun Google Anda, bukan harga atau ketentuan uji coba dari artikel lama.
 
----
+Tempat membatalkan bergantung pada tempat Anda berlangganan: Google One, Google Play, Apple App Store, operator seluler, atau penyedia lain. Periksa langkah berikut secara berurutan untuk memastikan Anda tidak memakai akun atau layanan tagihan yang keliru.
 
-## Apa yang terjadi saat uji coba gratis berakhir?
+## 1. Temukan akun dan penyedia tagihan
 
-Setelah masa uji coba berakhir, Anda akan secara otomatis ditagih ** 2.900 yen per bulan ** .
-Ini terkait dengan langganan yang disebut "Keanggotaan Google One", dan ini adalah mekanisme yang beralih ke penagihan berkelanjutan jika Anda tidak melakukan apa-apa secara khusus.
+Periksa email konfirmasi atau tanda terima untuk mengetahui Akun Google yang dipakai dan penyedia yang menagih. Jika memiliki beberapa akun, ganti akun di Google One atau Google Play. Jika pengelola grup keluarga membeli paket, anggota lain mungkin tidak melihat kontrol pengelolaan langganan.
 
----
+## 2. Batalkan melalui layanan tempat Anda berlangganan
 
-## Jika Anda membatalkan, Anda tidak akan ditagih, tetapi...
+* **Google One:** Buka [Google One](https://one.google.com/) dengan akun pembelian, buka Setelan, lalu pilih **Batalkan keanggotaan**. Di Gemini, buka Setelan, pilih **Kelola langganan**, lalu lanjutkan ke setelan Google One.
+* **Google Play:** Buka [langganan Google Play](https://play.google.com/store/account/subscriptions), pilih paket, lalu pilih **Batalkan langganan**. Menghapus aplikasi tidak membatalkan langganan.
+* **Apple App Store:** Di iPhone atau iPad, buka Pengaturan, ketuk nama Anda, lalu **Langganan** dan batalkan paket Google One.
+* **Operator atau penyedia lain:** Batalkan melalui akun atau dukungan penyedia tersebut. Untuk paket keluarga, hubungi pengelolanya.
 
-Tentu saja, tidak akan ada biaya jika Anda membatalkan selama masa uji coba.
-Halaman penjelasan resmi juga berisi "Cara membatalkan keanggotaan Google One".
+Lihat petunjuk resmi untuk [membatalkan Google One](https://support.google.com/googleone/answer/9056360) dan [membatalkan langganan Google Play](https://support.google.com/googleplay/answer/7018481). Nama menu dapat berbeda menurut perangkat, wilayah, dan cara penagihan.
 
-👉 [Batalkan keanggotaan Google One (Resmi)](https://support.google.com/googleone/answer/9056360)
+## Jika opsi pembatalan tidak ditemukan
 
-Namun, ketika saya benar-benar mencoba mengaksesnya, saya menemukan diri saya dalam situasi di mana "entah kenapa saya tidak bisa membatalkannya...".
-Saya bingung dan berpikir, "Eh, dari mana saya harus menghentikannya?"
+Masuk dengan akun pada tanda terima dan periksa toko atau penyedia yang mengelola paket. Status seperti **Sudah dibatalkan** atau tanggal berakhir dapat berarti perpanjangan telah dihentikan. Jika belum jelas, periksa email konfirmasi dan status langganan, atau hubungi penyedia tagihan.
 
----
+[Halaman penghapusan layanan Akun Google](https://myaccount.google.com/deleteservices) bukan pilihan pertama sebagai pengganti pembatalan biasa. Google menjelaskan penghapusan layanan Google One untuk situasi tertentu, misalnya ketika beralih layanan dan langganan tidak dapat dipindahkan secara langsung. Baca penjelasan yang tampil dan jangan samakan pembatalan keanggotaan dengan penghapusan layanan.
 
-## Klik di sini untuk cara pembatalan yang benar!
+## Setelah membatalkan
 
-Sebagai hasil dari mencari berbagai hal, halaman berikut adalah tempat saya benar-benar dapat membatalkannya.
+Biasanya, manfaat tetap tersedia sampai akhir periode tagihan yang telah dibayar. Periksa email konfirmasi dan halaman langganan untuk memastikan perpanjangan berhenti dan tanggal berakhirnya.
 
-👉 [Akun Google – Hapus layanan](https://myaccount.google.com/deleteservices)
+Setelah penyimpanan tambahan Google One berakhir, akun yang melebihi penyimpanan gratis (biasanya 15 GB) mungkin tidak dapat mengirim atau menerima Gmail, mengunggah atau menyinkronkan file Drive, serta mencadangkan foto di Google Foto. Periksa penggunaan penyimpanan sebelum membatalkan dan hapus file jika perlu.
 
-Dari sini, pilih "Google One" dan hapus untuk menyelesaikan pembatalan.
+## Referensi resmi
 
----
-
-## Ringkasan
-
-* Uji coba gratis Gemini adalah 1 bulan
-* Setelah selesai, Anda akan secara otomatis ditagih ** 2.900 yen per bulan **
-* Pembatalan mungkin tidak dapat dilakukan dari halaman penjelasan resmi
-* Anda benar-benar dapat membatalkan dari ** "halaman penghapusan layanan" **
-
-Jika Anda berpikir, "Tidak apa-apa karena ini adalah uji coba gratis", Anda akan ditagih sebelum Anda menyadarinya, jadi berhati-hatilah!
-
----
-
-👉 Jika Anda membaca artikel ini, Anda mungkin saat ini sedang kesulitan dan bertanya-tanya "Dari mana saya membatalkan?" Untuk saat ini, silakan periksa tautan di atas.
-
----
+* [Membatalkan keanggotaan Google One](https://support.google.com/googleone/answer/9056360)
+* [Membatalkan langganan Google Play](https://support.google.com/googleplay/answer/7018481)
+* [Mengelola paket Google AI di Gemini](https://support.google.com/gemini/answer/14517446?hl=id)

@@ -1,62 +1,51 @@
 ---
-title: 'Können Sie Google One (Gemini) nicht kündigen? Erklärung der korrekten Stornierungsmethode'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google One （Gemini）が解約できない時のLösung"
+title: 'Google One mit Google AI oder Gemini kündigen'
 date: 2025-09-27T10:02:59+09:00
+lastmod: 2026-11-23
+
+
+
+slug: "Google One （Gemini）が解約できない時のLösung"
 tags: ["Google One", "Gemini", "Kündigung", "Fehlerbehebung"]
 draft: false
 image: "img.webp"
-description: 'Wir erklären die korrekten Kündigungsschritte, um zu verhindern, dass die Google One-Mitgliedschaft für 2.900 Yen pro Monat nach dem 1-monatigen kostenlosen Testzeitraum von Gemini automatisch verlängert wird. Wenn Sie Probleme bei der Kündigung haben, beziehen Sie sich bitte auf die Abmeldemethode in diesem Artikel.'
 categories: ["programming"]
+description: 'So kündigen Sie einen Google-One-Tarif mit Google AI oder Gemini beim richtigen Anbieter. Finden Sie das Abrechnungskonto, prüfen Sie fehlende Kündigungsoptionen und erfahren Sie, was danach mit dem Speicher passiert.'
 ---
 
-# [Achtung] Wird man nach der kostenlosen Testphase von Gemini zur Kasse gebeten? Eine Zusammenfassung zur Kündigung
+# Google One mit Google AI oder Gemini kündigen
 
-Wenn Sie den KI-Dienst „Gemini“ von Google ausprobieren möchten, steht Ihnen zunächst ein **kostenloser einmonatiger Testzeitraum** zur Verfügung.
-Viele Leute melden sich wahrscheinlich an und denken sich: „Wenn es kostenlos ist, werde ich es einfach mal ausprobieren“, aber es gibt hier einen Punkt, auf den Sie achten sollten.
+Kostenpflichtige Gemini-Funktionen können in einer Google-One-Mitgliedschaft wie einem Google-AI-Tarif enthalten sein. Ob es einen kostenlosen Testzeitraum gibt, wie lange er dauert, welcher Preis gilt und wann verlängert wird, hängt vom Angebot und der Region ab. Prüfen Sie die Angaben in Ihrem Google-Konto, statt sich auf ältere Preise oder Testbedingungen zu verlassen.
 
----
+Wo Sie kündigen, hängt davon ab, wo Sie das Abo abgeschlossen haben: Google One, Google Play, Apple App Store, Mobilfunkanbieter oder ein anderer Anbieter. Prüfen Sie der Reihe nach Konto und Abrechnungsstelle.
 
-## Was passiert, wenn die kostenlose Testphase endet?
+## 1. Konto und Abrechnungsstelle ermitteln
 
-Nach Ablauf der Testphase werden Ihnen automatisch **2.900 Yen pro Monat** in Rechnung gestellt.
-Dies ist an das Abonnement namens „Google One-Mitgliedschaft“ gekoppelt, das automatisch in eine fortlaufende Abrechnung übergeht, wenn Sie nichts unternehmen.
+Prüfen Sie die Bestätigungs-E-Mail oder Rechnung auf das verwendete Google-Konto und den Rechnungsaussteller. Bei mehreren Google-Konten wechseln Sie das Konto in Google One oder Google Play. Hat die Familiengruppenverwaltung den Tarif abgeschlossen, sehen andere Mitglieder möglicherweise keine Verwaltungsoptionen.
 
----
+## 2. Beim Abschlussanbieter kündigen
 
-## Wenn Sie kündigen, werden Ihnen keine Kosten in Rechnung gestellt, aber...
+* **Google One:** Öffnen Sie [Google One](https://one.google.com/) mit dem kaufenden Konto, gehen Sie zu den Einstellungen und wählen Sie **Mitgliedschaft kündigen**. In Gemini öffnen Sie die Einstellungen, wählen **Abos verwalten** und wechseln zu den Google-One-Einstellungen.
+* **Google Play:** Öffnen Sie [Google Play-Abos](https://play.google.com/store/account/subscriptions), wählen Sie den Tarif und dann **Abo kündigen**. Das Deinstallieren einer App kündigt kein Abo.
+* **Apple App Store:** Öffnen Sie auf iPhone oder iPad die Einstellungen, tippen Sie auf Ihren Namen und dann auf **Abonnements**. Kündigen Sie dort Google One.
+* **Mobilfunkanbieter oder anderer Anbieter:** Kündigen Sie im Kundenkonto oder beim Support dieses Anbieters. Bei einem Familientarif wenden Sie sich an die verwaltende Person.
 
-Natürlich fallen keine Gebühren an, wenn Sie während der Testphase kündigen.
-Auf der offiziellen Erklärungsseite steht auch „So kündigen Sie Ihre Google One-Mitgliedschaft“.
+Details finden Sie in Googles [Anleitung zur Kündigung von Google One](https://support.google.com/googleone/answer/9056360) und [Anleitung zu Google-Play-Abos](https://support.google.com/googleplay/answer/7018481). Bezeichnungen und Menüs unterscheiden sich je nach Gerät, Region und Abrechnung.
 
-👉 [Google One-Mitgliedschaft kündigen (Offiziell)](https://support.google.com/googleone/answer/9056360)
+## Wenn die Kündigungsoption fehlt
 
-Wenn Sie jedoch tatsächlich darauf zugreifen, befinden Sie sich in einer Situation, in der Sie „aus irgendeinem Grund nicht kündigen können“.
-Ich war verwirrt und fragte mich: „Äh, wo kann ich das stoppen?“.
+Melden Sie sich mit dem Konto aus der Kaufbestätigung an und prüfen Sie, welcher Store oder Anbieter das Abo verwaltet. Ein Status wie **Bereits gekündigt** oder ein Enddatum kann bedeuten, dass die Verlängerung schon gestoppt ist. Prüfen Sie im Zweifel die Bestätigungsmail und den Abo-Status oder wenden Sie sich an den Rechnungsaussteller.
 
----
+Die [Seite zum Löschen eines Google-Dienstes](https://myaccount.google.com/deleteservices) ist kein erster Ersatz für die normale Kündigung. Google beschreibt das Löschen des Google-One-Dienstes für besondere Fälle, etwa wenn Sie den Anbieter wechseln und das Abo nicht direkt übertragen werden kann. Lesen Sie den angezeigten Hinweis und verwechseln Sie die Kündigung der Mitgliedschaft nicht mit dem Löschen eines Dienstes.
 
-## Die richtige Methode zur Kündigung finden Sie hier!
+## Nach der Kündigung
 
-Nach verschiedenen Recherchen konnte ich es tatsächlich über die folgende Seite kündigen.
+In der Regel bleiben Vorteile bis zum Ende des bereits bezahlten Abrechnungszeitraums verfügbar. Prüfen Sie in der Bestätigungsmail und auf der Abo-Seite, dass die Verlängerung gestoppt wurde und welches Enddatum gilt.
 
-👉 [Google-Konto – Dienste löschen](https://myaccount.google.com/deleteservices)
+Fällt zusätzlicher Google-One-Speicher weg, können Konten oberhalb des kostenlosen Speicherplatzes (meist 15 GB) Gmail-Nachrichten nicht mehr senden oder empfangen, Drive-Dateien nicht hochladen oder synchronisieren und Google-Fotos nicht sichern. Prüfen Sie vorher die Speicherbelegung und löschen Sie bei Bedarf Dateien.
 
-Wenn Sie von hier aus „Google One“ auswählen und löschen, ist die Kündigung abgeschlossen.
+## Offizielle Quellen
 
----
-
-## Zusammenfassung
-
-* Die kostenlose Testphase von Gemini beträgt 1 Monat
-* Nach dem Ende werden automatisch **2.900 Yen pro Monat** abgerechnet
-* Die Kündigung über die offizielle Erklärungsseite ist möglicherweise nicht möglich
-* Sie können tatsächlich über die Seite **„Dienste löschen“** kündigen
-
-Wenn Sie denken, „Es ist eine kostenlose Testphase, also ist es in Ordnung“, könnten Sie unwissentlich zur Kasse gebeten werden, seien Sie also vorsichtig!
-
----
-
-👉 Leute, die diesen Artikel lesen, haben vielleicht gerade jetzt Probleme und fragen sich: „Wo kündige ich?“. Bitte schauen Sie sich vorerst den obigen Link an.
-
----
+* [Google-One-Mitgliedschaft kündigen](https://support.google.com/googleone/answer/9056360)
+* [Google-Play-Abo kündigen](https://support.google.com/googleplay/answer/7018481)
+* [Google-AI-Tarif in Gemini verwalten](https://support.google.com/gemini/answer/14517446?hl=de)

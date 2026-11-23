@@ -1,78 +1,59 @@
 ---
-
-
-
-
-
-
-
-
-title: 'Google One(Gemini)을 해지할 수 없다? 올바른 탈퇴 방법 해설'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google One （Gemini）が解約できない時の대처 방법"
+title: 'Google AI 또는 Gemini가 포함된 Google One 요금제 해지 방법'
 date: 2025-09-27T10:02:59+09:00
+lastmod: 2026-11-23
+
+
+
+
+
+
+
+
+
+
+
+slug: "Google One （Gemini）が解約できない時の대처 방법"
 tags: ["Google One", "Gemini", "해지", "대처 방법"]
 draft: false
 image: "img.webp"
-description: 'Gemini의 1개월 무료 체험 종료 후 월 2,900엔의 Google One 멤버십이 자동 연장되는 것을 막기 위한 올바른 해지 절차를 해설합니다. ''해지할 수 없다''고 고민하시는 분들은 본 기사의 탈퇴 방법을 참고해 주세요.'
 categories: ["programming"]
+description: '가입한 경로에 따라 Google AI 또는 Gemini가 포함된 Google One 요금제를 해지하는 방법을 설명합니다. 결제 계정과 제공업체를 확인하고, 해지 메뉴가 보이지 않을 때와 저장용량 영향을 알아보세요.'
 ---
 
+# Google AI 또는 Gemini가 포함된 Google One 요금제 해지 방법
 
+유료 Gemini 기능은 Google AI 요금제와 같은 Google One 멤버십에 포함될 수 있습니다. 무료 체험 제공 여부와 기간, 가격, 갱신일은 가입한 혜택과 지역에 따라 다릅니다. 오래된 글의 가격이나 체험 조건을 기준으로 삼지 말고 Google 계정에서 구독 정보를 확인하세요.
 
+해지 위치는 Google One, Google Play, Apple App Store, 이동통신사 등 가입 경로에 따라 다릅니다. 잘못된 계정이나 결제 서비스를 확인하는 일이 없도록 다음 순서로 살펴보세요.
 
+## 1. 계정과 결제 제공업체 확인
 
+가입 확인 이메일이나 영수증에서 구매에 사용한 Google 계정과 결제 업체를 확인합니다. Google 계정이 여러 개라면 Google One 또는 Google Play에서 계정을 전환하세요. 가족 그룹 관리자가 요금제를 가입했다면 다른 구성원에게 관리 메뉴가 표시되지 않을 수 있습니다.
 
+## 2. 가입한 서비스에서 해지
 
+* **Google One:** 구매 계정으로 [Google One](https://one.google.com/)을 열고 설정에서 **멤버십 취소**를 선택합니다. Gemini에서는 설정의 **구독 관리**를 누른 다음 Google One 설정으로 이동합니다.
+* **Google Play:** [Google Play 정기 결제](https://play.google.com/store/account/subscriptions)를 열고 요금제를 선택한 뒤 **구독 취소**를 누릅니다. 앱을 삭제해도 구독은 취소되지 않습니다.
+* **Apple App Store:** iPhone 또는 iPad에서 설정을 열고 이름을 탭한 다음 **구독**에서 Google One 요금제를 해지합니다.
+* **통신사 또는 다른 제공업체:** 해당 업체의 계정 페이지나 고객 지원에서 해지합니다. 가족 요금제라면 관리 담당자에게 문의하세요.
 
+자세한 내용은 Google의 [Google One 해지 안내](https://support.google.com/googleone/answer/9056360)와 [Google Play 구독 해지 안내](https://support.google.com/googleplay/answer/7018481)를 참고하세요. 메뉴 이름과 위치는 기기, 지역, 결제 방식에 따라 다를 수 있습니다.
 
-# 【주의】Gemini의 무료 체험이 끝나면 청구된다? 해지 방법 정리
+## 해지 메뉴가 보이지 않는 경우
 
-Google의 AI 서비스 「Gemini」를 사용해 보려 하면, 가장 먼저 **1개월 무료 체험** 이 준비되어 있습니다.
-「무료라면 일단 시도해 볼까」하고 등록하는 사람도 많을 텐데, 여기서 주의할 점이 있습니다.
+영수증에 표시된 계정으로 로그인했는지, 어떤 스토어나 제공업체가 요금제를 관리하는지 확인합니다. **이미 취소됨** 상태나 종료 날짜가 표시되면 갱신이 이미 중지되었을 수 있습니다. 확실하지 않으면 확인 이메일과 구독 상태를 확인하거나 결제 업체에 문의하세요.
 
----
+[Google 계정 서비스 삭제 페이지](https://myaccount.google.com/deleteservices)는 일반 해지의 첫 번째 대체 경로가 아닙니다. Google은 다른 서비스로 전환할 때 정기 결제를 직접 이전할 수 없는 경우 등 특정 상황에서 Google One 서비스를 삭제하는 방법을 안내합니다. 표시되는 설명을 읽고 멤버십 해지와 서비스 삭제를 혼동하지 마세요.
 
-## 무료 체험이 끝나면 어떻게 되나?
+## 해지한 뒤 확인할 내용
 
-체험 기간이 종료되면, 자동으로 **월 2,900엔** 이 청구됩니다.
-이것은 「Google One 멤버십」이라는 구독에 연결되어 있어서, 특별히 아무것도 하지 않으면 계속 과금으로 넘어가는 구조입니다.
+일반적으로 이미 결제한 기간이 끝날 때까지 혜택을 이용할 수 있습니다. 확인 이메일과 구독 화면에서 갱신이 중지되었는지, 종료 날짜가 언제인지 확인하세요.
 
----
+Google One 추가 저장용량이 종료된 뒤 무료 저장용량(보통 15GB)을 초과해 사용 중이면 Gmail 송수신, Drive 파일 업로드·동기화, Google 포토 백업이 제한될 수 있습니다. 해지 전에 사용량을 확인하고 필요하면 파일을 정리하세요.
 
-## 해지하면 청구되지 않지만…
+## 공식 자료
 
-물론, 체험 중에 해지하면 요금은 발생하지 않습니다.
-공식 해설 페이지에도 「Google One 멤버십을 해지하는 방법」이 나와 있습니다.
-
-👉 [Google One 멤버십을 해지하기(공식)](https://support.google.com/googleone/answer/9056360)
-
-하지만, 실제로 접속해 보면 「어째선지 해지가 되지 않는」 상황에….
-「어, 어디서 멈춰야 하지?」라고 혼란스러웠습니다.
-
----
-
-## 올바른 해지 방법은 이쪽!
-
-여러 가지로 조사한 결과, 실제로 해지할 수 있었던 것은 다음 페이지부터였습니다.
-
-👉 [Google 계정 – 서비스 삭제](https://myaccount.google.com/deleteservices)
-
-여기서 「Google One」을 선택하고 삭제하면, 해지가 완료됩니다.
-
----
-
-## 정리
-
-* Gemini의 무료 체험은 1개월
-* 종료 후에는 자동으로 **월 2,900엔** 이 과금된다
-* 해지는 공식 설명 페이지에서는 할 수 없는 경우가 있다
-* 실제로 해지할 수 있는 곳은 **「서비스의 삭제」 페이지**
-
-「무료 체험이니까 괜찮다」고 생각하고 있으면, 눈치채지 못하는 사이에 과금되어 버리므로 주의해 주세요!
-
----
-
-👉 이 기사를 읽고 있는 사람은, 어쩌면 지금 바로 「해지 어디서?」라며 곤란해하고 있을지도 모릅니다. 우선 위의 링크에서 체크해 보세요.
-
----
+* [Google One 멤버십 해지](https://support.google.com/googleone/answer/9056360)
+* [Google Play 구독 해지](https://support.google.com/googleplay/answer/7018481)
+* [Gemini 앱에서 Google AI 요금제 관리](https://support.google.com/gemini/answer/14517446?hl=ko)

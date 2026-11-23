@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "batch": 77,
+  "verifiedAt": "2026-11-23T19:59:14+09:00",
+  "ciRun": 45153841716,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45153841716",
+  "sourceCommit": "5b6aee860dfe08f212cd00683c30f9c95e73f3ba",
+  "deployment": "success",
+  "pagesVerified": 13,
+  "allPassed": true,
+  "checks": [
+    "HTTP 200, canonical, language/RTL, title/description and reciprocal 14-label hreflang on all 13 editions",
+    "Gmail SMTP ports 465 and 587, RFC 5322 message format, Bash and Windows curl commands",
+    "Four official Google and curl references",
+    "No inline app-password placeholder"
+  ],
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/gmail%E3%82%92curl%E3%81%8B%E3%82%89%E9%80%81%E3%82%8B/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "smtpPorts": true,
+        "messageFormat": true,
+        "bashAndWindowsExamples": true,
+        "allOfficialReferences": true,
+        "noInlineSecretPlaceholder": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "No email was sent and no credentials or account settings were used."
+  ]
+}

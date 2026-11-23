@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "article": "Google One （Gemini）が解約できない時の対処方法",
+  "checkedAt": "2026-11-23",
+  "editions": {
+    "index.md": {
+      "sha256": "b399a8ef50f50a8dc032ad5a9433bbbf3963a496ec93ff1a7397ccfe41e1fe13",
+      "bytes": 5167
+    },
+    "index.en.md": {
+      "sha256": "182fbe262a515df3e53fec389a9d9cde099a06e101f0b982a575ec1640461cb1",
+      "bytes": 4086
+    },
+    "index.de.md": {
+      "sha256": "bc7aab78edca768f112a78e4710d866fef6050e34194828cec3666ef53faaf57",
+      "bytes": 4473
+    },
+    "index.es.md": {
+      "sha256": "8703555822049352993a2e980c8945b6bda84aa9e9ea49418c5b35564fe76799",
+      "bytes": 4480
+    },
+    "index.fr.md": {
+      "sha256": "3206dfd3cfe910f0a93f497f39200b7d68f2ba202c869f1599ada4bb1bbea75c",
+      "bytes": 4662
+    },
+    "index.pt.md": {
+      "sha256": "ab4763852df7a3c39b8ee259961ce63fbb794d787adf67a5229e2329033a6cd6",
+      "bytes": 4384
+    },
+    "index.ru.md": {
+      "sha256": "a0cde8d86eedcdc358b50a813ebed3dc2f9551108913206088a2e7f9453913d5",
+      "bytes": 6541
+    },
+    "index.id.md": {
+      "sha256": "82d5d018d7592261aa282f8b923e23f6fab6b0b0615174871680e4e7b8536ff3",
+      "bytes": 4146
+    },
+    "index.ko.md": {
+      "sha256": "b9449e1647d5fbebf62d44b8969a6e47b5005f55d26ade5f0f1a2ec501b9dd73",
+      "bytes": 4540
+    },
+    "index.zh-cn.md": {
+      "sha256": "6c4ba5af8304b507062794a479c2cc9ec617b36a96a038a2b86c4de35ef68a5f",
+      "bytes": 3745
+    },
+    "index.zh-tw.md": {
+      "sha256": "c2b2c5ec8a7f55ce69035c7d4110635e0464c6100e034a6f1132b0a365fbf493",
+      "bytes": 3735
+    },
+    "index.hi.md": {
+      "sha256": "07945a0daf4a4a9293ec519d963f82e308dad4959f7359a91b3e1f7b70b95205",
+      "bytes": 8079
+    },
+    "index.ar.md": {
+      "sha256": "631c063e966e161aa6858e160db3163ff4b216efd75e0fd62963345dfc759fe3",
+      "bytes": 5546
+    }
+  },
+  "criteria": [
+    "13 language editions retain one original date and include lastmod 2026-11-23.",
+    "Each translation follows the same cancellation workflow and includes three official Google help links, no fixed trial duration or price claim, and localized guidance for signup channel, missing controls, service deletion, and post-cancellation storage.",
+    "All twelve translation hashes match the review evidence."
+  ],
+  "limitations": [
+    "Static content review; no account-specific billing flow was exercised.",
+    "No human or native-speaker review has been recorded."
+  ]
+}

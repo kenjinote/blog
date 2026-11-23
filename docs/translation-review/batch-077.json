@@ -17,7 +17,7 @@
   ],
   "validation": "docs/translation-review/validation-077.json",
   "scope": "Read the full Japanese article and all twelve translations. Compared Gmail SMTP endpoint/ports and OAuth support, app-password policy, curl prompt behavior and SMTP upload format with official primary docs.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Gmailをcurlから送る/index.ar.md": {
       "reviewKind": "ai",
@@ -451,5 +451,11 @@
         "Gmail account policies, availability of app passwords, and sending limits can vary; check current Google account and service guidance."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-077.json",
+    "ciRun": 45153841716,
+    "sourceCommit": "5b6aee860dfe08f212cd00683c30f9c95e73f3ba",
+    "allPassed": true
   }
 }

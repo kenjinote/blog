@@ -1,62 +1,51 @@
 ---
-title: 'Google One（Gemini）无法取消？正确的退订方法分析'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google One （Gemini）が解約できない時の处理方法"
+title: '如何取消包含 Google AI 或 Gemini 的 Google One 套餐'
 date: 2025-09-27T10:02:59+09:00
+lastmod: 2026-11-23
+
+
+
+slug: "Google One （Gemini）が解約できない時の处理方法"
 tags: ["Google One", "Gemini", "取消", "解决方法"]
 draft: false
 image: "img.webp"
-description: '本文讲解如何防止Gemini 1个月免费体验结束后自动续期每月2,900日元的Google One会员，并提供正确的取消步骤。如果您正为“无法取消”而烦恼，请参考本文的退订方法。'
 categories: ["programming"]
+description: '根据订阅渠道，了解如何取消包含 Google AI 或 Gemini 的 Google One 套餐。确认正确的账号和扣费方，排查找不到取消选项的原因，并了解取消后存储空间的变化。'
 ---
 
-# 【注意】Gemini 免费体验结束后会被收费？取消订阅方法汇总
+# 如何取消包含 Google AI 或 Gemini 的 Google One 套餐
 
-当尝试使用 Google 的 AI 服务“Gemini”时，一开始会提供 **1 个月的免费体验** 。
-很多人可能会觉得“既然免费就先试一下吧”而进行注册，但这里需要注意。
+Gemini 付费功能可能包含在 Google One 会员中，例如 Google AI 套餐。是否提供免费试用、试用时长、价格和续订日期取决于具体优惠和地区。请在 Google 账号的订阅页面核对信息，不要依赖旧文章中的价格或试用条件。
 
----
+取消入口取决于订阅渠道：Google One、Google Play、Apple App Store、移动运营商或其他服务商。请按以下顺序检查，排除账号或扣费平台不正确的情况。
 
-## 免费体验结束后会怎样？
+## 1. 确认账号和扣费方
 
-体验期结束后，系统会自动收取 **每月 2,900 日元** 。
-这与名为“Google One 会员资格”的订阅绑定，如果不采取任何操作，就会自动转为持续计费。
+查看订阅确认邮件或收据，确认购买套餐所用的 Google 账号和扣费服务商。如果有多个 Google 账号，请在 Google One 或 Google Play 中切换账号。如果套餐由家庭群组管理员购买，其他成员可能看不到管理选项。
 
----
+## 2. 在订阅渠道取消
 
-## 虽然取消订阅就不会被收费，但是……
+* **Google One：** 使用购买套餐的账号打开 [Google One](https://one.google.com/)，进入设置并选择**取消会员资格**。在 Gemini 中可打开设置，选择**管理订阅**，再转到 Google One 设置。
+* **Google Play：** 打开[Google Play 订阅](https://play.google.com/store/account/subscriptions)，选择套餐并点按**取消订阅**。卸载应用不会取消订阅。
+* **Apple App Store：** 在 iPhone 或 iPad 上打开“设置”，点按姓名，再进入**订阅**取消 Google One 套餐。
+* **运营商或其他服务商：** 在该服务商的账号页面或通过客服取消。家庭套餐请联系管理该套餐的人。
 
-当然，如果在体验期间取消订阅，就不会产生费用。
-官方说明页面上也介绍了“取消 Google One 会员资格的方法”。
+详细步骤请参阅 Google 的[取消 Google One 会员资格说明](https://support.google.com/googleone/answer/9056360)和[取消 Google Play 订阅说明](https://support.google.com/googleplay/answer/7018481)。菜单名称和位置可能因设备、地区和付款方式而异。
 
-👉 [取消 Google One 会员资格（官方）](https://support.google.com/googleone/answer/9056360)
+## 找不到取消选项时
 
-然而，实际访问时却遇到了“不知为何无法取消”的情况……。
-让人感到困惑：“哎，到底从哪里才能停止订阅呢？”
+请使用收据上显示的账号登录，并确认套餐由哪个商店或服务商管理。若显示**已取消**或到期日期，续订可能已经停止。如不确定，请检查确认邮件和订阅状态，或联系扣费方。
 
----
+[Google 账号服务删除页面](https://myaccount.google.com/deleteservices)不是常规取消订阅的首选替代入口。Google 将删除 Google One 服务的步骤用于特定情况，例如更换服务且无法直接转移订阅。请阅读页面提示，不要将取消会员资格与删除服务混为一谈。
 
-## 正确的取消方法在这里！
+## 取消后
 
-经过各种调查，实际能够成功取消订阅的是以下页面。
+通常，已付费的会员权益会保留到当前结算周期结束。请在确认邮件和订阅页面中确认续订已停止，并查看到期日期。
 
-👉 [Google 账号 – 删除服务](https://myaccount.google.com/deleteservices)
+Google One 额外存储空间到期后，如果账号使用量超过免费额度（通常为 15 GB），Gmail 收发邮件、Drive 上传或同步文件、Google 相册备份等功能可能受到限制。取消前请检查存储用量，必要时清理文件。
 
-从这里选择“Google One”并将其删除，即可完成取消订阅。
+## 官方资料
 
----
-
-## 总结
-
-* Gemini 的免费体验为 1 个月
-* 结束后会自动收取 **每月 2,900 日元** 的费用
-* 有时无法从官方说明页面取消订阅
-* 真正能够取消订阅的是 **“删除服务”页面**
-
-如果抱有“反正是免费体验没关系”的想法，可能会在不知不觉中被扣费，请务必注意！
-
----
-
-👉 正在阅读这篇文章的人，或许现在正因为“从哪里取消？”而感到困扰。总之请先点击上面的链接查看一下吧。
-
-
+* [取消 Google One 会员资格](https://support.google.com/googleone/answer/9056360)
+* [取消 Google Play 订阅](https://support.google.com/googleplay/answer/7018481)
+* [在 Gemini 中管理 Google AI 套餐](https://support.google.com/gemini/answer/14517446?hl=zh-CN)

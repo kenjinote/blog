@@ -1,62 +1,51 @@
 ---
-title: 'Impossible de résilier Google One (Gemini) ? Explication de la méthode d''annulation correcte'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google One （Gemini）が解約できない時のSolution"
+title: 'Résilier un forfait Google One avec Google AI ou Gemini'
 date: 2025-09-27T10:02:59+09:00
+lastmod: 2026-11-23
+
+
+
+slug: "Google One （Gemini）が解約できない時のSolution"
 tags: ["Google One", "Gemini", "Annulation", "Solution"]
 draft: false
 image: "img.webp"
-description: 'Nous expliquons la procédure d''annulation correcte pour éviter que l''abonnement à Google One à 2 900 yens par mois ne soit automatiquement reconduit après la fin de la période d''essai gratuit d''un mois de Gemini. Si vous rencontrez des difficultés à résilier, veuillez consulter la méthode d''annulation présentée dans cet article.'
 categories: ["programming"]
+description: 'Découvrez comment résilier un forfait Google One incluant Google AI ou Gemini selon le service auquel vous vous êtes abonné. Identifiez le compte et le fournisseur de facturation, puis vérifiez les effets sur votre espace de stockage.'
 ---
 
-# [Attention] Serez-vous facturé après la fin de l'essai gratuit de Gemini ? Résumé de la procédure d'annulation
+# Résilier un forfait Google One avec Google AI ou Gemini
 
-Lorsque vous essayez d'utiliser le service d'IA de Google « Gemini », un **essai gratuit d'un mois** est proposé au début.
-De nombreuses personnes s'inscrivent en pensant « Puisque c'est gratuit, je vais l'essayer pour l'instant », mais il y a un point auquel il faut faire attention ici.
+Certaines fonctionnalités payantes de Gemini peuvent être incluses dans un abonnement Google One, comme un forfait Google AI. L'existence et la durée d'un essai gratuit, le prix et la date de renouvellement dépendent de l'offre et de la région. Consultez les informations de votre compte Google au lieu de vous fier aux anciens prix ou conditions d'essai.
 
----
+La résiliation dépend du service utilisé pour souscrire : Google One, Google Play, l'App Store d'Apple, un opérateur ou un autre fournisseur. Vérifiez ces éléments dans l'ordre pour écarter une erreur de compte ou de facturation.
 
-## Que se passe-t-il à la fin de l'essai gratuit ?
+## 1. Identifier le compte et le fournisseur de facturation
 
-À la fin de la période d'essai, un montant de **2 900 yens par mois** vous sera automatiquement facturé.
-Ceci est lié à un abonnement appelé « Abonnement Google One », et si vous ne faites rien, cela passera à une facturation continue.
+Consultez l'e-mail de confirmation ou le reçu pour retrouver le compte Google utilisé et le fournisseur qui vous facture. Si vous avez plusieurs comptes, changez de compte dans Google One ou Google Play. Si le responsable d'un groupe familial a souscrit le forfait, les autres membres ne disposent pas toujours des commandes de gestion.
 
----
+## 2. Résilier auprès du service utilisé lors de la souscription
 
-## Si vous annulez, vous ne serez pas facturé, mais...
+* **Google One :** Ouvrez [Google One](https://one.google.com/) avec le compte acheteur, accédez aux paramètres et choisissez **Résilier l'abonnement**. Dans Gemini, ouvrez les paramètres, sélectionnez **Gérer les abonnements**, puis accédez aux paramètres Google One.
+* **Google Play :** Ouvrez [les abonnements Google Play](https://play.google.com/store/account/subscriptions), sélectionnez le forfait et choisissez **Résilier l'abonnement**. Désinstaller une application ne résilie pas un abonnement.
+* **App Store d'Apple :** Sur iPhone ou iPad, ouvrez Réglages, touchez votre nom, puis **Abonnements** et résiliez le forfait Google One.
+* **Opérateur ou autre fournisseur :** Résiliez depuis l'espace client ou auprès du service d'assistance de ce fournisseur. Pour un forfait familial, contactez la personne qui le gère.
 
-Bien sûr, si vous annulez pendant la période d'essai, aucuns frais ne vous seront facturés.
-La page d'explication officielle indique également « Comment annuler l'abonnement Google One ».
+Consultez les consignes officielles pour [résilier Google One](https://support.google.com/googleone/answer/9056360) et [résilier un abonnement Google Play](https://support.google.com/googleplay/answer/7018481). Les intitulés et menus peuvent varier selon l'appareil, la région et la facturation.
 
-👉 [Annuler l'abonnement Google One (officiel)](https://support.google.com/googleone/answer/9056360)
+## Si l'option de résiliation est introuvable
 
-Cependant, lorsque j'y ai réellement accédé, je me suis retrouvé dans une situation où « pour une raison quelconque, je ne peux pas annuler ».
-J'étais confus en me disant « Eh, à partir d'où dois-je l'arrêter ? ».
+Connectez-vous au compte indiqué sur le reçu et vérifiez quelle boutique ou quel fournisseur gère le forfait. Un état **Déjà résilié** ou une date de fin peut indiquer que le renouvellement est déjà arrêté. En cas de doute, consultez l'e-mail de confirmation et l'état de l'abonnement, ou contactez le fournisseur de facturation.
 
----
+La [page de suppression d'un service Google](https://myaccount.google.com/deleteservices) ne doit pas remplacer en premier lieu la résiliation habituelle. Google décrit la suppression du service Google One dans des cas particuliers, par exemple lors d'un changement de service si le transfert direct de l'abonnement est impossible. Lisez les informations affichées et ne confondez pas résiliation de l'abonnement et suppression d'un service.
 
-## Voici la bonne façon d'annuler !
+## Après la résiliation
 
-Après diverses recherches, la page à partir de laquelle j'ai pu réellement annuler était la suivante.
+En général, les avantages restent disponibles jusqu'à la fin de la période déjà payée. Vérifiez dans l'e-mail de confirmation et sur la page des abonnements que le renouvellement est arrêté et relevez la date de fin.
 
-👉 [Compte Google – Supprimer des services](https://myaccount.google.com/deleteservices)
+À la fin du stockage Google One supplémentaire, les comptes dépassant l'espace gratuit (généralement 15 Go) peuvent ne plus pouvoir envoyer ou recevoir des messages Gmail, importer ou synchroniser des fichiers Drive ni sauvegarder des photos dans Google Photos. Vérifiez l'espace utilisé avant la résiliation et libérez des fichiers si nécessaire.
 
-Si vous sélectionnez « Google One » à partir d'ici et que vous le supprimez, l'annulation sera terminée.
+## Sources officielles
 
----
-
-## Résumé
-
-* L'essai gratuit de Gemini dure 1 mois
-* Après la fin, **2 900 yens par mois** seront automatiquement facturés
-* Dans certains cas, l'annulation ne peut pas être effectuée à partir de la page d'explication officielle
-* Vous pouvez réellement annuler sur la page **« Suppression de services »**
-
-Si vous pensez « C'est bon parce que c'est un essai gratuit », vous pourriez être facturé sans vous en rendre compte, alors soyez prudent !
-
----
-
-👉 Si vous lisez cet article, vous pourriez vous demander en ce moment même « Où puis-je annuler ? ». Veuillez vérifier le lien ci-dessus pour l'instant.
-
----
+* [Résilier un abonnement Google One](https://support.google.com/googleone/answer/9056360)
+* [Résilier un abonnement Google Play](https://support.google.com/googleplay/answer/7018481)
+* [Gérer un forfait Google AI dans Gemini](https://support.google.com/gemini/answer/14517446?hl=fr)

@@ -1,62 +1,51 @@
 ---
-title: 'Não Consegue Cancelar o Google One (Gemini)? Saiba Como Desativar Corretamente'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Google One （Gemini）が解約できない時のSolução"
+title: 'Como cancelar um plano do Google One com Google AI ou Gemini'
 date: 2025-09-27T10:02:59+09:00
+lastmod: 2026-11-23
+
+
+
+slug: "Google One （Gemini）が解約できない時のSolução"
 tags: ["Google One", "Gemini", "cancelamento", "solução"]
 draft: false
 image: "img.webp"
-description: 'Explicamos o passo a passo adequado para cancelar a associação ao Google One de 2.900 ienes/mês e evitar renovações automáticas após o fim do teste gratuito de 1 mês do Gemini. Se estiver com problemas para cancelar, consulte as instruções deste artigo.'
 categories: ["programming"]
+description: 'Saiba como cancelar um plano do Google One com Google AI ou Gemini conforme o local da assinatura. Identifique a conta e o provedor de cobrança e entenda o que acontece com o armazenamento após o cancelamento.'
 ---
 
-# [Aviso] Serei cobrado quando o teste gratuito do Gemini terminar? Resumo de como cancelar
+# Como cancelar um plano do Google One com Google AI ou Gemini
 
-Quando você tenta experimentar o serviço de IA do Google "Gemini", primeiro é oferecido um **teste gratuito de 1 mês** .
-Muitas pessoas podem pensar "Se é gratuito, vou tentar por enquanto" e se registrar, mas há um ponto de atenção aqui.
+Alguns recursos pagos do Gemini podem fazer parte de uma assinatura do Google One, como um plano Google AI. A disponibilidade e duração de uma avaliação gratuita, o preço e a data de renovação dependem da oferta e da região. Confira os dados na sua Conta do Google em vez de confiar em preços ou condições antigos.
 
----
+O local do cancelamento depende de onde você assinou: Google One, Google Play, App Store da Apple, operadora ou outro provedor. Verifique os itens abaixo para descartar o uso da conta ou do serviço de cobrança errado.
 
-## O que acontece quando o teste gratuito termina?
+## 1. Identifique a conta e quem faz a cobrança
 
-Quando o período de teste termina, uma cobrança de **2.900 ienes por mês** é feita automaticamente.
-Isso está vinculado a uma assinatura chamada "Assinatura do Google One" e, se você não fizer nada em particular, o sistema fará a transição para faturamento contínuo.
+Confira o e-mail de confirmação ou recibo para identificar a Conta do Google usada na compra e o provedor de cobrança. Se você usa várias contas, alterne entre elas no Google One ou Google Play. Se o administrador de um grupo familiar assinou o plano, os outros integrantes talvez não tenham acesso aos controles de gerenciamento.
 
----
+## 2. Cancele no serviço usado para assinar
 
-## Se você cancelar, não será cobrado, mas...
+* **Google One:** Abra o [Google One](https://one.google.com/) com a conta da compra, acesse Configurações e escolha **Cancelar assinatura**. No Gemini, abra Configurações, selecione **Gerenciar assinaturas** e continue nas configurações do Google One.
+* **Google Play:** Acesse [assinaturas do Google Play](https://play.google.com/store/account/subscriptions), selecione o plano e toque em **Cancelar assinatura**. Desinstalar um app não cancela a assinatura.
+* **App Store da Apple:** No iPhone ou iPad, abra Ajustes, toque no seu nome e em **Assinaturas**; cancele o plano do Google One.
+* **Operadora ou outro provedor:** Cancele na conta ou no suporte desse provedor. Em um plano familiar, fale com a pessoa que o administra.
 
-Claro, se você cancelar durante o período de teste, nenhuma taxa será gerada.
-A página de explicação oficial também mostra "Como cancelar a assinatura do Google One".
+Consulte as instruções oficiais para [cancelar o Google One](https://support.google.com/googleone/answer/9056360) e [cancelar assinaturas do Google Play](https://support.google.com/googleplay/answer/7018481). Os nomes dos menus variam conforme o dispositivo, a região e a forma de cobrança.
 
-👉 [Cancelar a assinatura do Google One (oficial)](https://support.google.com/googleone/answer/9056360)
+## Se a opção de cancelamento não aparecer
 
-No entanto, quando você realmente acessa, você se depara com a situação de "Por algum motivo, não consigo cancelar...".
-Fiquei confuso pensando: "Ué, por onde devo cancelar?".
+Faça login com a conta que aparece no recibo e confira qual loja ou provedor gerencia o plano. Um status como **Já cancelada** ou uma data de término pode indicar que a renovação já foi interrompida. Se não tiver certeza, confira o e-mail de confirmação e o status da assinatura ou fale com o provedor de cobrança.
 
----
+A [página para excluir um serviço da Conta do Google](https://myaccount.google.com/deleteservices) não deve ser a primeira opção no lugar do cancelamento normal. O Google indica a exclusão do serviço Google One em situações específicas, como ao mudar de serviço quando não é possível transferir a assinatura diretamente. Leia a explicação exibida e não confunda o cancelamento da assinatura com a exclusão de um serviço.
 
-## O método de cancelamento correto está aqui!
+## Depois do cancelamento
 
-Após várias pesquisas, a página da qual eu consegui realmente cancelar foi a seguinte.
+Em geral, os benefícios continuam disponíveis até o fim do período já pago. Confira no e-mail de confirmação e na página de assinaturas se a renovação foi interrompida e qual é a data de término.
 
-👉 [Conta do Google – Excluir serviços](https://myaccount.google.com/deleteservices)
+Quando o armazenamento adicional do Google One terminar, contas acima do espaço gratuito (normalmente 15 GB) poderão ter restrições para enviar ou receber mensagens no Gmail, enviar ou sincronizar arquivos no Drive e fazer backup no Google Fotos. Confira o uso do armazenamento antes de cancelar e libere arquivos se necessário.
 
-A partir daqui, se você selecionar "Google One" e excluí-lo, o cancelamento será concluído.
+## Referências oficiais
 
----
-
-## Resumo
-
-* O teste gratuito do Gemini dura 1 mês
-* Após o término, uma taxa de **2.900 ienes por mês** será cobrada automaticamente
-* O cancelamento pode não ser possível pela página de explicação oficial
-* Você pode realmente cancelar pela página **"Excluir serviços"** 
-
-Se você pensar "Tudo bem porque é um teste gratuito", você pode ser cobrado sem perceber, então tome cuidado!
-
----
-
-👉 Se você está lendo este artigo, talvez esteja tendo problemas agora, pensando: "De onde eu cancelo?". De qualquer forma, verifique através do link acima.
-
----
+* [Cancelar uma assinatura do Google One](https://support.google.com/googleone/answer/9056360)
+* [Cancelar uma assinatura do Google Play](https://support.google.com/googleplay/answer/7018481)
+* [Gerenciar um plano Google AI no Gemini](https://support.google.com/gemini/answer/14517446?hl=pt)
