@@ -1,8 +1,8 @@
 ---
 title: '简单！GIF动画屏幕录制工具的使用及下载方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "GIFアニメ画面録画工具"
 date: 2024-02-08T01:23:01+09:00
+lastmod: 2026-11-23
 tags: ["工具", "屏幕录制", "GIF"]
 draft: false
 image: "img.webp"
@@ -28,3 +28,7 @@ description: '介绍一款可录制电脑屏幕操作并转换为GIF动画的免
 
 ## 源代码
 [GitHub](https://github.com/kenjinote/GifScreenRecorder)
+
+## 兼容性与隐私
+
+此工具面向 Windows，可将屏幕录制保存为 GIF 动画，但不录制音频。录制前请检查所选区域是否包含个人信息，分享前也请检查生成的 GIF。请从项目的 [GitHub Releases](https://github.com/kenjinote/GifScreenRecorder/releases) 下载可执行文件。源代码以 [MIT License](https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT) 发布。

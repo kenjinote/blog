@@ -16,7 +16,7 @@ description: '연도와 월을 입력하기만 하면 해당 월의 일본 공�
 연도와 월을 입력하면 해당 월 달력의 공휴일이 표시되는 Excel 템플릿을 만들었습니다.
 
 다운로드하여 사용해 주세요.
-[カレンダー.xlsx](カレンダー.xlsx)
+[カレンダー.xlsx](/downloads/excel-japan-holidays-calendar.xlsx)
 
 ## 호환성 및 데이터 출처
 

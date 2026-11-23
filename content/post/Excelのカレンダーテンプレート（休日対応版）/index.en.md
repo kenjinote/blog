@@ -15,7 +15,7 @@ description: 'We distribute for free a convenient Excel calendar template that a
 I made an Excel template that automatically displays the holidays for a given month when you enter the year and month.
 
 Please download and use it.
-[Calendar.xlsx](カレンダー.xlsx)
+[Calendar.xlsx](/downloads/excel-japan-holidays-calendar.xlsx)
 
 ## Compatibility and data source
 

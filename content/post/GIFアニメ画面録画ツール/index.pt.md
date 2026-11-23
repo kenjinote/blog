@@ -1,8 +1,8 @@
 ---
 title: 'Fácil! Como Usar e Baixar Ferramentas de Gravação de Tela em GIF Animado'
-date: "2026-09-24T19:44:38+09:00"
 slug: "GIFアニメ画面録画Ferramenta"
 date: 2024-02-08T01:23:01+09:00
+lastmod: 2026-11-23
 tags: ["Ferramenta", "Gravação de tela", "GIF"]
 draft: false
 image: "img.webp"
@@ -17,9 +17,9 @@ Com esta ferramenta, você pode gravar operações na tela e compartilhá-las em
 ## Como usar
 1. Inicie a ferramenta
 2. Especifique a área a ser gravada. Se não for especificada, a tela inteira será gravada.
-2. Pressione o botão de gravar
-3. Pressione o botão de parar gravação
-4. O GIF animado será gerado no mesmo local do arquivo executável
+3. Pressione o botão de gravar
+4. Pressione o botão de parar gravação
+5. O GIF animado será gerado no mesmo local do arquivo executável
 
 ## Download
 [Download](https://github.com/kenjinote/GifScreenRecorder/releases)
@@ -28,3 +28,7 @@ Abra o link acima, clique no link `GIFScreenRecorder.exe` para baixar o arquivo 
 
 ## Código-fonte
 [GitHub](https://github.com/kenjinote/GifScreenRecorder)
+
+## Compatibilidade e privacidade
+
+Esta ferramenta destina-se ao Windows e guarda as gravações do ecrã como GIF animados; não grava áudio. Antes de gravar, verifique se a área selecionada mostra informações privadas e reveja o GIF antes de o partilhar. Transfira o executável nas [versões do projeto no GitHub](https://github.com/kenjinote/GifScreenRecorder/releases). O código-fonte é publicado sob a [licença MIT](https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT).

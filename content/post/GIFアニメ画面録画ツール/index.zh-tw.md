@@ -1,8 +1,8 @@
 ---
 title: '超簡單！GIF動畫螢幕錄影工具的使用與下載方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "GIFアニメ画面録画工具"
 date: 2024-02-08T01:23:01+09:00
+lastmod: 2026-11-23
 tags: ["工具", "螢幕錄影", "GIF"]
 draft: false
 image: "img.webp"
@@ -17,9 +17,9 @@ description: '介紹可錄製電腦畫面操作並轉換為GIF動畫的免費工
 ## 使用方法
 1. 啟動工具
 2. 指定要錄製的範圍。如果未指定，將錄製整個螢幕。
-2. 按下錄影按鈕
-3. 按下停止錄影按鈕
-4. GIF動畫將輸出在與執行檔相同的位置
+3. 按下錄影按鈕
+4. 按下停止錄影按鈕
+5. GIF動畫將輸出在與執行檔相同的位置
 
 ## 下載
 [下載](https://github.com/kenjinote/GifScreenRecorder/releases)
@@ -28,3 +28,7 @@ description: '介紹可錄製電腦畫面操作並轉換為GIF動畫的免費工
 
 ## 原始碼
 [GitHub](https://github.com/kenjinote/GifScreenRecorder)
+
+## 相容性與隱私
+
+此工具適用於 Windows，並將螢幕錄影儲存為 GIF 動畫；不會錄製音訊。錄影前請確認選取範圍沒有顯示個人資料，分享前也請先檢查產生的 GIF。請從專案的 [GitHub Releases](https://github.com/kenjinote/GifScreenRecorder/releases) 下載執行檔。原始碼以 [MIT License](https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT) 公開。

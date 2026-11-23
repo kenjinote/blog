@@ -943,4 +943,7 @@ kenji.blog の全記事・全翻訳言語を対象に、優先指定の3記事�
 
 - 2026-11-23 Batch069公開確認・台帳反映完了。CI run 45120588984／commit `9071c32a49b8cd670dee4a078a9d0fe458fd3652` 成功。MPC記事の日本語＋12翻訳すべてでHTTP 200、canonical、lang/RTL、タイトル/description、16参照、hreflang、本文、コード表示を確認。公開レシート`docs/translation-review/publication-069.json`。12翻訳をCodex (AI)として台帳記録。台帳 current 804、未確認12,228、人確認0。
 
-- 2026-11-23 Batch070: Excelカレンダーテンプレートの日本語原文＋12翻訳と配布XLSXを全文照合。13版の誤った重複公開日を除き、原公開日2024-05-01を復元、lastmodを2026-11-23に設定。Excel WEBSERVICEによる外部祝日取得がWindows依存でMac版Excelでは動作しない点と、ネット接続/API稼働依存を13言語で案内。ブック内の200数式セルを静的点検し、外部API URLをHTTPSに統一。多言語10テスト、翻訳台帳6テスト、JSON証跡と12レビューのソース/翻訳ハッシュ検査成功。AIのみ、Excel再計算・ライブAPI取得・人/ネイティブ話者校閲なし。証跡`docs/translation-review/batch-070.json`、検証`docs/translation-review/validation-070.json`。台帳登録と公開CI・公開後確認待ち。全記事goal継続。
+- 2026-11-23 Batch070: Excelカレンダーテンプレートの日本語原文＋12翻訳と配布XLSXを全文照合。13版の誤った重複公開日を除き、原公開日2024-05-01を復元、lastmodを2026-11-23に設定。Excel WEBSERVICEによる外部祝日取得がWindows依存でMac版Excelでは動作しない点と、ネット接続/API稼働依存を13言語で案内。ブック内の200数式セルを静的点検し、外部API URLをHTTPSに統一。初回の公開検査で翻訳12ページの相対XLSXリンクが404と判明したため、共通のstaticダウンロード先へ13版すべてを変更。多言語10テスト、翻訳台帳6テスト、JSON証跡と12レビューのソース/翻訳ハッシュ検査成功。AIのみ、Excel再計算・ライブAPI取得・人/ネイティブ話者校閲なし。証跡`docs/translation-review/batch-070.json`、検証`docs/translation-review/validation-070.json`。台帳登録と公開CI・公開後確認待ち。全記事goal継続。
+
+
+- 2026-11-23 Batch071: GIF画面録画ツールの日本語原文＋12翻訳を全文照合。重複公開日を除き原公開日2024-02-08を復元、lastmodを記録。手順番号の重複と日本語の誤記を修正。Windows向け・音声録音なし、個人情報を含む画面/共有前GIFの確認を各言語に追加。プロジェクトREADME/C++ソース/Windows project/license/Releaseを参照し、exeの実行・マルウェア検査なしを明記。多言語10テスト、台帳6テスト、12件の証跡ハッシュ検査成功。AIのみ、人/ネイティブ話者校閲なし。証跡`docs/translation-review/batch-071.json`、検証`docs/translation-review/validation-071.json`。CI・公開後確認と台帳記録待ち。

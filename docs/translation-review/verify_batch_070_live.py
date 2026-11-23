@@ -114,8 +114,8 @@ if not ja_map:
 with urllib.request.urlopen(ja_map, timeout=45) as response:
     ja_sitemap = ET.fromstring(response.read())
 all_urls = [e.find("s:loc", NS).text for e in ja_sitemap.findall("s:url", NS)]
-ja_slug = yaml_value(CONTENT / "index.md", "slug")
-ja_url = next((u for u in all_urls if f"/p/{ja_slug}/" in unquote(u)), None)
+ja_slug = re.sub(r"[()（）]", "", yaml_value(CONTENT / "index.md", "slug")).casefold()
+ja_url = next((u for u in all_urls if f"/p/{ja_slug}/" in unquote(u).casefold()), None)
 if not ja_url:
     raise SystemExit("Japanese sitemap is missing the article")
 _, root_raw = fetch(ja_url)
@@ -137,7 +137,7 @@ for lang in LANGS:
     title = yaml_value(md, "title")
     description = yaml_value(md, "description")
     all_langs = set(LANGS) | {"x-default"}
-    download = next((urljoin(article_url, href) for href in page.links if unquote(href).endswith("カレンダー.xlsx")), None)
+    download = next((urljoin(article_url, href) for href in page.links if unquote(href).endswith("excel-japan-holidays-calendar.xlsx")), None)
     checks = {
         "http200": status == 200,
         "canonical": page.canonical == [article_url],

@@ -15,7 +15,7 @@ description: 'Nous distribuons gratuitement un modèle de calendrier Excel prati
 J'ai créé un modèle Excel où, en entrant l'année et le mois, les jours fériés de ce mois s'affichent sur le calendrier.
 
 N'hésitez pas à le télécharger et à l'utiliser.
-[Calendrier.xlsx](カレンダー.xlsx)
+[Calendrier.xlsx](/downloads/excel-japan-holidays-calendar.xlsx)
 
 ## Compatibilité et source des données
 

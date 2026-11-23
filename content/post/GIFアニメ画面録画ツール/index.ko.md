@@ -1,28 +1,15 @@
 ---
 
-
-
-
-
-
-
 title: '간단! GIF 애니메이션 화면 녹화 도구의 사용법 및 다운로드 방법'
-date: "2026-09-24T19:44:38+09:00"
 slug: "GIFアニメ画面録画도구"
 date: 2024-02-08T01:23:01+09:00
+lastmod: 2026-11-23
 tags: ["도구", "화면 녹화", "GIF"]
 draft: false
 image: "img.webp"
 categories: ["it-technology"]
 description: 'PC의 화면 조작을 녹화하여 GIF 애니메이션으로 변환할 수 있는 무료 도구의 소개 및 다운로드 방법입니다. Microsoft Teams 등의 커뮤니케이션 도구에서 공유하기에 편리합니다. 조작 범위 지정부터 녹화 절차까지 알기 쉽게 해설합니다.'
 ---
-
-
-
-
-
-
-
 
 # GIF 애니메이션 화면 녹화 도구
 화면을 녹화하여 GIF 애니메이션으로 만드는 도구를 만들었습니다.
@@ -31,9 +18,9 @@ description: 'PC의 화면 조작을 녹화하여 GIF 애니메이션으로 변�
 ## 사용법
 1. 도구를 실행합니다.
 2. 녹화할 범위를 지정합니다. 지정하지 않을 경우, 화면 전체가 녹화됩니다.
-2. 녹화 버튼을 누릅니다.
-3. 녹화 종료 버튼을 누릅니다.
-4. 실행 파일과 같은 위치에 GIF 애니메이션이 출력됩니다.
+3. 녹화 버튼을 누릅니다.
+4. 녹화 종료 버튼을 누릅니다.
+5. 실행 파일과 같은 위치에 GIF 애니메이션이 출력됩니다.
 
 ## 다운로드
 [다운로드](https://github.com/kenjinote/GifScreenRecorder/releases)
@@ -42,3 +29,7 @@ description: 'PC의 화면 조작을 녹화하여 GIF 애니메이션으로 변�
 
 ## 소스 코드
 [GitHub](https://github.com/kenjinote/GifScreenRecorder)
+
+## 호환성 및 개인정보 보호
+
+이 도구는 Windows용이며 화면 녹화를 GIF 애니메이션으로 저장합니다. 오디오는 녹음하지 않습니다. 녹화하기 전에 선택 영역에 개인정보가 표시되는지 확인하고, GIF를 공유하기 전에 결과물을 살펴보세요. 실행 파일은 프로젝트의 [GitHub Releases](https://github.com/kenjinote/GifScreenRecorder/releases)에서 다운로드하세요. 소스 코드는 [MIT License](https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT)에 따라 공개되어 있습니다.

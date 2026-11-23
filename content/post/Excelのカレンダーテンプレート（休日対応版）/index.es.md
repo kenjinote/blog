@@ -16,7 +16,7 @@ description: 'Distribuimos de forma gratuita una útil plantilla de calendario e
 He creado una plantilla de Excel que, al introducir el año y el mes, muestra los días festivos en el calendario de ese mes.
 
 Descárgala y utilízala.
-[Calendario.xlsx](カレンダー.xlsx)
+[Calendario.xlsx](/downloads/excel-japan-holidays-calendar.xlsx)
 
 ## Compatibilidad y fuente de datos
 

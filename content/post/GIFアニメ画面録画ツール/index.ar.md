@@ -1,8 +1,8 @@
 ---
 title: 'سهل جداً! كيفية استخدام وتنزيل أداة تسجيل الشاشة كرسوم متحركة GIF'
-date: "2026-09-24T19:44:38+09:00"
 slug: "GIFアニメ画面録画أداة"
 date: 2024-02-08T01:23:01+09:00
+lastmod: 2026-11-23
 tags: ["أدوات", "تسجيل الشاشة", "GIF"]
 draft: false
 image: "img.webp"
@@ -28,3 +28,7 @@ description: 'مقدمة وطريقة تنزيل أداة مجانية تتيح 
 
 ## الكود المصدري
 [GitHub](https://github.com/kenjinote/GifScreenRecorder)
+
+## التوافق والخصوصية
+
+هذه الأداة مخصصة لنظام Windows وتحفظ تسجيل الشاشة كرسوم متحركة بصيغة GIF، لكنها لا تسجل الصوت. قبل التسجيل، تحقق من أن المنطقة المحددة لا تعرض معلومات خاصة، وراجع ملف GIF قبل مشاركته. نزّل الملف التنفيذي من [إصدارات المشروع على GitHub](https://github.com/kenjinote/GifScreenRecorder/releases). الشفرة المصدرية منشورة بموجب [رخصة MIT](https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT).

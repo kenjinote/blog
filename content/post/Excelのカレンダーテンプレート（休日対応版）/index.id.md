@@ -15,7 +15,7 @@ description: 'Kami mendistribusikan secara gratis templat kalender Excel praktis
 Saya telah membuat templat Excel yang menampilkan hari libur di kalender untuk bulan tersebut saat Anda memasukkan tahun dan bulan.
 
 Silakan unduh dan gunakan.
-[Kalender.xlsx](カレンダー.xlsx)
+[Kalender.xlsx](/downloads/excel-japan-holidays-calendar.xlsx)
 
 ## Kompatibilitas dan sumber data
 

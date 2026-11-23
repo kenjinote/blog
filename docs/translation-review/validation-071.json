@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "batch": 71,
+  "article": "GIFアニメ画面録画ツール",
+  "reviewedAt": "2026-11-23",
+  "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+  "files": {
+    "ja": {
+      "normalizedBytes": 2050,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "en": {
+      "normalizedBytes": 1790,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "zh-cn": {
+      "normalizedBytes": 1564,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "es": {
+      "normalizedBytes": 2037,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "ko": {
+      "normalizedBytes": 2069,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "pt": {
+      "normalizedBytes": 1886,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "zh-tw": {
+      "normalizedBytes": 1564,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "hi": {
+      "normalizedBytes": 3881,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "fr": {
+      "normalizedBytes": 2124,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "de": {
+      "normalizedBytes": 2065,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "ar": {
+      "normalizedBytes": 2431,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "ru": {
+      "normalizedBytes": 2912,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    },
+    "id": {
+      "normalizedBytes": 1781,
+      "date": "2024-02-08T01:23:01+09:00",
+      "lastmod": "2026-11-23",
+      "orderedSteps": 5,
+      "referenceUrls": [
+        "https://github.com/kenjinote/GifScreenRecorder",
+        "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+        "https://github.com/kenjinote/GifScreenRecorder/releases"
+      ]
+    }
+  },
+  "sharedReferenceUrls": [
+    "https://github.com/kenjinote/GifScreenRecorder",
+    "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+    "https://github.com/kenjinote/GifScreenRecorder/releases"
+  ],
+  "repositorySourceReviewed": true,
+  "releasePageReviewed": true,
+  "binaryExecutedOrScanned": false,
+  "result": "passed"
+}

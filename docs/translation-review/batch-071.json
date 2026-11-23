@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "article": "GIFアニメ画面録画ツール",
+  "frozenSourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://github.com/kenjinote/GifScreenRecorder",
+    "https://github.com/kenjinote/GifScreenRecorder/blob/master/README.md",
+    "https://github.com/kenjinote/GifScreenRecorder/blob/master/Source.cpp",
+    "https://github.com/kenjinote/GifScreenRecorder/blob/master/GifScreenRecorder.vcxproj",
+    "https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT",
+    "https://github.com/kenjinote/GifScreenRecorder/releases"
+  ],
+  "findings": [
+    "Removed duplicate 2026-09-24 metadata from all editions, retained the original 2024-02-08 publication date, and set lastmod to 2026-11-23.",
+    "Fixed the Japanese typo and normalized the five ordered steps, including duplicate step numbers in several locales.",
+    "Clarified from the project README/source that this Windows tool outputs GIF animations and does not record audio; added guidance to check for private information before recording and review the GIF before sharing.",
+    "Confirmed the Releases page links GIFScreenRecorder.exe and the repository publishes source under MIT; localized compatibility/source notes and aligned all reference links.",
+    "No release binary was executed, scanned, or matched cryptographically to source; no malware or binary-integrity claim is made."
+  ],
+  "validation": "docs/translation-review/validation-071.json",
+  "scope": "Read the complete Japanese article and all twelve translations. Compared meaning, terminology, steps, output behavior, release/repository/license links, and source-backed product descriptions against the project README, C++ recording code, Windows project configuration, and current public release metadata.",
+  "publicationPending": true,
+  "reviews": {
+    "post/GIFアニメ画面録画ツール/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "d9785cca08198c956c7e65176370dea93e2a4da1cbe12e75c67cf90550a0cd0d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    },
+    "post/GIFアニメ画面録画ツール/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "27c5f91018ef61f6e9f44230cf16b01153a80e0ab01da4738df0177d3ecce8a8",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    },
+    "post/GIFアニメ画面録画ツール/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "886b6a2a753a850e778000c9389fa1dc0d59f0835094759454ba7354f8f6a548",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    },
+    "post/GIFアニメ画面録画ツール/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "eeff2a7261c8df41e45d9ae404fb88cde71fc745a0479ae9cb29cf9cd479b8c0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    },
+    "post/GIFアニメ画面録画ツール/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "52254b0881c815800053bc2838e148f2c43f0e2bcbe3ce5dc6f6eb6907d6b131",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    },
+    "post/GIFアニメ画面録画ツール/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "6d20ddd963265532d0f14f5ec4d5325b77c5eccd8bb320c918d7a8e615b5facc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    },
+    "post/GIFアニメ画面録画ツール/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "3685d29722ff9421669a9aeb26965c2417e6e59b30b51055621e8f031287b548",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    },
+    "post/GIFアニメ画面録画ツール/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "0d909e7fa5145ecef0a9b0332f5486abc4899ff1389dc9626078665a4a3266ca",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    },
+    "post/GIFアニメ画面録画ツール/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "eb2f8d787e7935a7e0b93ed174ebb31d35c7d5d4facfc5d5dd839524dc9649e6",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    },
+    "post/GIFアニメ画面録画ツール/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "758de69cd20d202fd593fe97d0ed9ab72f730a0395d4a61415b48691043c4fd9",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    },
+    "post/GIFアニメ画面録画ツール/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "21f53444868358ea963ebd927e37e214734fd5cde530e9002dd76ab303041bc5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    },
+    "post/GIFアニメ画面録画ツール/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "15bede1ec27c32cfb3474a99fafa7ae2b416a529a4ae23013df96d9fa094a256",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and this entire localized edition. Matched the purpose, recording-area selection, start/stop sequence, save location, release download instructions, Windows-only scope, no-audio limitation, and privacy guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terms for screen capture/recording, selected region, GIF animation, executable, Windows, no audio, personal information, GitHub Releases, and MIT source license."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article has no mathematical content or quantitative performance claim."
+        },
+        "code": {
+          "status": "checked",
+          "note": "There is no inline code sample. Compared user-facing app behavior with the project README, Windows C++ project configuration, and recording source; inspected the current release asset listing. The executable was not run, scanned, or independently matched to source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Confirmed all editions link to the same project repository, its Releases page, and the project MIT license file. The latest release page checked during this review lists the GIFScreenRecorder.exe asset."
+        }
+      },
+      "summary": "Compared the full localized article with the Japanese source and the project’s public README/source and release page. Corrected the duplicate injected publication date, preserved 2024-02-08, set 2026-11-23 as lastmod, fixed ordered-step numbering, and added a localized Windows/no-audio/privacy/license note.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "The release executable was not run, virus-scanned, code-signed, or independently reproduced from source.",
+        "No screen recording was performed to functionally verify capture behavior or image quality."
+      ]
+    }
+  }
+}

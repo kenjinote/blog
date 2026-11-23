@@ -15,7 +15,7 @@ description: '西暦年と月を入力するだけで、その月の日本の祝
 西暦年と月を入力すると、その月のカレンダーの祝日が表示されるExcelのテンプレートを作りました。
 
 ダウンロードしてお使いください。
-[カレンダー.xlsx](カレンダー.xlsx)
+[カレンダー.xlsx](/downloads/excel-japan-holidays-calendar.xlsx)
 
 ## 利用上の注意
 

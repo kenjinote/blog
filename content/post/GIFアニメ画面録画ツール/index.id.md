@@ -1,8 +1,8 @@
 ---
 title: 'Mudah! Cara Menggunakan dan Mengunduh Alat Perekam Layar Animasi GIF'
-date: "2026-09-24T19:44:38+09:00"
 slug: "GIFアニメ画面録画Alat"
 date: 2024-02-08T01:23:01+09:00
+lastmod: 2026-11-23
 tags: ["alat", "perekam layar", "GIF"]
 draft: false
 image: "img.webp"
@@ -28,3 +28,7 @@ Buka tautan di atas dan klik tautan `GIFScreenRecorder.exe` untuk mengunduh file
 
 ## Kode Sumber
 [GitHub](https://github.com/kenjinote/GifScreenRecorder)
+
+## Kompatibilitas dan privasi
+
+Alat ini ditujukan untuk Windows dan menyimpan rekaman layar sebagai GIF animasi; alat ini tidak merekam audio. Sebelum merekam, periksa apakah area yang dipilih menampilkan informasi pribadi, lalu tinjau GIF sebelum membagikannya. Unduh file executable dari [GitHub Releases proyek](https://github.com/kenjinote/GifScreenRecorder/releases). Kode sumber diterbitkan dengan [Lisensi MIT](https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT).

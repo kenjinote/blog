@@ -15,7 +15,7 @@ description: '我们免费提供一款实用的Excel日历模板，只需输入�
 我制作了一个Excel模板，输入年份和月份后，即可显示该月日历上的节假日。
 
 请下载使用。
-[日历.xlsx](カレンダー.xlsx)
+[日历.xlsx](/downloads/excel-japan-holidays-calendar.xlsx)
 
 ## 兼容性与数据来源
 

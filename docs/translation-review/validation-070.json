@@ -5,130 +5,143 @@
   "reviewedAt": "2026-11-23",
   "files": {
     "ja": {
-      "bytes": 1683,
+      "normalizedBytes": 1708,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/docs/datetime/holiday-list/",
         "https://support.microsoft.com/ja-jp/office/webservice-%E9%96%A2%E6%95%B0-0546a35a-ecc6-4739-aed7-c0b7ce1562c4"
       ]
     },
     "en": {
-      "bytes": 1418,
+      "normalizedBytes": 1443,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
       ]
     },
     "zh-cn": {
-      "bytes": 1264,
+      "normalizedBytes": 1289,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
       ]
     },
     "es": {
-      "bytes": 1552,
+      "normalizedBytes": 1577,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
       ]
     },
     "ko": {
-      "bytes": 1537,
+      "normalizedBytes": 1562,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
       ]
     },
     "pt": {
-      "bytes": 1472,
+      "normalizedBytes": 1497,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
       ]
     },
     "zh-tw": {
-      "bytes": 1285,
+      "normalizedBytes": 1310,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
       ]
     },
     "hi": {
-      "bytes": 2968,
+      "normalizedBytes": 2993,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
       ]
     },
     "fr": {
-      "bytes": 1665,
+      "normalizedBytes": 1690,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
       ]
     },
     "de": {
-      "bytes": 1546,
+      "normalizedBytes": 1571,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
       ]
     },
     "ar": {
-      "bytes": 1800,
+      "normalizedBytes": 1825,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
       ]
     },
     "ru": {
-      "bytes": 2202,
+      "normalizedBytes": 2227,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
       ]
     },
     "id": {
-      "bytes": 1460,
+      "normalizedBytes": 1485,
       "date": "2024-05-01T00:15:57+09:00",
       "lastmod": "2026-11-23",
       "headings": 2,
+      "downloadPath": "/downloads/excel-japan-holidays-calendar.xlsx",
       "referenceUrls": [
         "https://excelapi.org/en/docs/datetime/holiday-list/",
         "https://support.microsoft.com/en-us/excel/functions/webservice-function"
@@ -146,8 +159,14 @@
     "holidayNameFormulaCount": 100,
     "allServiceFormulaUrlsHttps": true,
     "calculationPerformed": false,
-    "externalRequestFormulaCount": 200
+    "externalRequestFormulaCount": 200,
+    "formulaUrlStringCount": 103
   },
   "result": "passed",
-  "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25"
+  "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+  "sharedDownloadAsset": {
+    "path": "static/downloads/excel-japan-holidays-calendar.xlsx",
+    "sha256": "3d56e4a29a9db840518b58b545cb17413acdd7773f6679bf8ed4133abed91e1c",
+    "linkedByAll13Editions": true
+  }
 }

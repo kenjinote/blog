@@ -15,7 +15,7 @@ description: 'Wir stellen kostenlos eine praktische Excel-Kalendervorlage zur Ve
 Ich habe eine Excel-Vorlage erstellt, bei der durch die Eingabe von Jahr und Monat die Feiertage dieses Monats im Kalender angezeigt werden.
 
 Laden Sie es gerne herunter und nutzen Sie es.
-[Kalender.xlsx](カレンダー.xlsx)
+[Kalender.xlsx](/downloads/excel-japan-holidays-calendar.xlsx)
 
 ## Kompatibilität und Datenquelle
 

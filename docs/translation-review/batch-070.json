@@ -1,7 +1,7 @@
 {
   "version": 1,
   "article": "Excelカレンダーテンプレート（日本の祝日対応）",
-  "frozenSourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
+  "frozenSourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
   "reviewedAt": "2026-11-23",
   "sources": [
     "https://support.microsoft.com/en-us/excel/functions/webservice-function",
@@ -12,7 +12,8 @@
     "Removed the duplicated injected 2026 date from all 13 editions, preserving original publication date 2024-05-01 and recording 2026-11-23 as lastmod.",
     "Inspected XLSX formulas: Japanese holiday dates and names are retrieved through Excel WEBSERVICE from third-party ExcelAPI. Replaced all embedded http://api.excelapi.org URLs with HTTPS.",
     "Added locale-specific compatibility notes explaining internet/external-service dependency and Microsoft’s documented limitation that WEBSERVICE does not return results in Excel for Mac.",
-    "Checked the 200 formula cells overall: 100 holiday-list and 100 holiday-name WEBSERVICE formulas (shared formula ranges expanded), plus calendar date formulas. Confirmed all 12 translations, localized references, and workbook target. No recalculation or live API request was made."
+    "Checked the 200 formula cells overall: 100 holiday-list and 100 holiday-name WEBSERVICE formulas (shared formula ranges expanded), plus calendar date formulas. Confirmed all 12 translations, localized references, and workbook target. No recalculation or live API request was made.",
+    "Live verification found that the Japanese bundle served the relative workbook link but all twelve translated bundle URLs returned 404. Copied the XLSX to a shared static HTTPS path and changed all 13 article links to /downloads/excel-japan-holidays-calendar.xlsx; validation confirms a common target and matching asset hash."
   ],
   "validation": "docs/translation-review/validation-070.json",
   "scope": "Read the full Japanese article and all twelve available translations and inspected XLSX formulas. Compared meaning, terminology, date metadata, links, endpoints, and calendar formulas. Editions are intentionally concise.",
@@ -23,8 +24,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "99ead364316610793105ab7fca476e10d5ba050ca3fb69490c094da0678542b8",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "8886811ac58901ff4661193117afcb4078406d254c74ab9768a5a08a401a524a",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -44,7 +45,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
@@ -59,8 +60,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "b0badfc6b58afeb6bf9bfabb564fd0945ca776a78c3cd5f11c199ecefeb6719a",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "f6657d4d76e99e5802de444a66cf3f565dad1f4b3e9b3457b8c6dbe4341769bf",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -80,7 +81,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
@@ -95,8 +96,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "575a4a3ebfda33fd526980821bc9152115b1d4f060a18f31b3737df06cbe9c0e",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "09ca88420086d57460203999155306887809f841fff6e5663657ea083bdb85ba",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -116,7 +117,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
@@ -131,8 +132,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "d3dcb518ea4e342641604eebd42379650a5889131865e7000cf5e4a3926fc266",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "7c15f334f4d8d62892ac1e68c6215cf377236ee1bc949a2c7e2e4093eacd1ab1",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -152,7 +153,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
@@ -167,8 +168,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "2758f4e4d4a7d0ad29ec113920c2db1862ad10f64ef85b647cd82195768012de",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "2df1204f49f755ab79638ca008037073cc0f3877ad5f2570211bf83990257240",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -188,7 +189,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
@@ -203,8 +204,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "1476518e5b62d2612dd7f4914bb6c1219765aa87ced0ca3352cff56ce15244e2",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "b7ba4908f0e4d557985ea8e4108b1ac1d885090a77980f58d5bd1cc01192e03a",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -224,7 +225,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
@@ -239,8 +240,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "0977e19ab9037754cc29dfe1e10c032b5ddcf30b8374d69b397e58256852a763",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "6a8380d79a00c1d30570cc8d15239785f4023fa167ad46cc7813689b7a82faf9",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -260,7 +261,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
@@ -275,8 +276,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "55b563ae213611c0f1065919d28f816792a33b2a5422bcfa72b80851440fb79c",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "00eb75eb7fc2e051f42d51ec4c4123991dd090fa3343a30920e195c1a1d43137",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -296,7 +297,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
@@ -311,8 +312,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "f370955f119ad3b72d9f158ef0d66ea6ce5e83c6e82f1feb4960ff960f2ca9a3",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "5a072cfabe3f81994ef993d549b8215bf928f8c80c63112fc29d2916ee7713ad",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -332,7 +333,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
@@ -347,8 +348,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "63ca05064a751eedca3a0799913732a03a46199211f689299b0347ed4482af03",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "129b37930237bd9fee7f96a365855b37442464ad42b9b54b797d565052e8a099",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -368,7 +369,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
@@ -383,8 +384,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "a583116b64a4bf62c056d670a0374ea927bd501427c00ba6aa8aa23c84a4af04",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "b4170fb79d16b0defb16819a6f912049341caf18d69707fab5425dc0331b04e7",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -404,7 +405,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",
@@ -419,8 +420,8 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
-      "sourceHash": "675b255388e062713e0944f8f2fb8891cddd2819e7a475f610de2c051fe65b25",
-      "translationHash": "a49ff335d97086ce68535421320aaa382903b458a59a264e8fdd05d6f7c7136a",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "27a14c44cf8bc1d41f9a9f377c78e03c5d26b4105e579afbb169531b9e83a607",
       "checks": {
         "meaning": {
           "status": "checked",
@@ -440,7 +441,7 @@
         },
         "links": {
           "status": "checked",
-          "note": "Confirmed the workbook download target exists and this locale links to Microsoft WEBSERVICE guidance and ExcelAPI holiday API documentation corresponding to the workbook formulas."
+          "note": "Confirmed the shared static XLSX asset at /downloads/excel-japan-holidays-calendar.xlsx is linked from all locales, and checked the Microsoft WEBSERVICE and ExcelAPI documentation links."
         }
       },
       "summary": "Compared the complete localized edition with the Japanese source and workbook. Corrected duplicated publication date, retained 2024-05-01 as original date, set 2026-11-23 as lastmod, and added localized compatibility/data-source note. Updated XLSX external API formulas to HTTPS.",

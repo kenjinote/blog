@@ -1,8 +1,8 @@
 ---
 title: 'Easy! How to Use and Download a GIF Animation Screen Recording Tool'
-date: "2026-09-24T19:44:38+09:00"
 slug: "GIFアニメ画面録画Tool"
 date: 2024-02-08T01:23:01+09:00
+lastmod: 2026-11-23
 tags: ["Tool", "Screen Recording", "GIF"]
 draft: false
 image: "img.webp"
@@ -28,3 +28,7 @@ Open the link above and click the `GIFScreenRecorder.exe` link to download the e
 
 ## Source Code
 [GitHub](https://github.com/kenjinote/GifScreenRecorder)
+
+## Compatibility and privacy
+
+This tool is for Windows and saves screen recordings as animated GIFs; it does not record audio. Check the selected area for private information before recording, and review the GIF before sharing it. Download the executable from the project’s [GitHub Releases](https://github.com/kenjinote/GifScreenRecorder/releases). The source code is published under the [MIT License](https://github.com/kenjinote/GifScreenRecorder/blob/master/LICENSE.TXT).

@@ -15,7 +15,7 @@ description: '免費提供只要輸入年份與月份，即可自動顯示該月
 我製作了一個Excel範本，只要輸入年份和月份，就會顯示該月份日曆上的假日。
 
 歡迎下載使用。
-[日曆.xlsx](カレンダー.xlsx)
+[日曆.xlsx](/downloads/excel-japan-holidays-calendar.xlsx)
 
 ## 相容性與資料來源
 
