@@ -1,0 +1,447 @@
+{
+  "version": 1,
+  "batch": 82,
+  "article": "HUGOで使えるショートコード",
+  "reviewedAt": "2026-11-23",
+  "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+  "sources": [
+    "https://gohugo.io/content-management/shortcodes/",
+    "https://gohugo.io/shortcodes/",
+    "https://gohugo.io/shortcodes/youtube/",
+    "https://gohugo.io/shortcodes/x/",
+    "https://gohugo.io/shortcodes/instagram/",
+    "https://gohugo.io/shortcodes/vimeo/",
+    "https://gohugo.io/configuration/privacy/"
+  ],
+  "scope": "Read the complete Japanese source and all twelve complete translations. Compared shortcode names, argument syntax, version support, privacy behavior, metadata, and links with official Hugo documentation and the repository's pinned Hugo version.",
+  "findings": [
+    "Corrected the incorrect one-argument Twitter example: Hugo 0.139.0 requires named user and id parameters.",
+    "Documented that the x shortcode was added in Hugo 0.141.0 and that the repository's build remains pinned to 0.139.0.",
+    "Removed Flickr from the built-in list; it requires a theme, module, or custom template.",
+    "Added current embedded-shortcode references and provider privacy settings, including YouTube privacyEnhanced and X simple mode.",
+    "Restored the original 2022-09-11 publication date and set lastmod 2026-11-23 across all editions."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/HUGOで使えるショートコード/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "b99d2c12dd75b0858595f88416dc6fee506e6d80bc9901cc89a9b8d14f66d1ae",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    },
+    "post/HUGOで使えるショートコード/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "19e623176a30b54ea57c87ed0122ecac1fa22a84c87839afe7873a2156357ae9",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    },
+    "post/HUGOで使えるショートコード/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "d84b99c19a04b82c25d89608cb7415ba2640ade0215c8ef750a44abb0fc86ef0",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    },
+    "post/HUGOで使えるショートコード/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "e6ef0513e739483fef80b43d833e9c3bc5c1ad1c70b71842d0897cf7d9db1853",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    },
+    "post/HUGOで使えるショートコード/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "7344d779972e8eae8695c17e6b6839f800bdd95fb63518948e9cbc95ec3bf058",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    },
+    "post/HUGOで使えるショートコード/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "3499c7b82fef2d0de81a2607d8e8c46f29033e7d654d84c824c7df9b3ee06181",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    },
+    "post/HUGOで使えるショートコード/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "a35cd2ff832618499e3a3766473fbe75d52bfc5967baace4aa9fe05f6c22068f",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    },
+    "post/HUGOで使えるショートコード/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "2e52c1a2544f897c12f5a22cf4bf3933311d0def4a2a3323fd817e3d70e85b7f",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    },
+    "post/HUGOで使えるショートコード/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "f5b350302d2b7a8f61d6e3ccc6183b4131add16788ae9621c7b3260ced4b78a7",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    },
+    "post/HUGOで使えるショートコード/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "2e579c984bdee36523f0ce0aa929c57c59b10214f60bc7a9cf5d0c1cb532cbf9",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    },
+    "post/HUGOで使えるショートコード/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "072346ce8b74b2cf31ddb4b656dcf9a3dbdc66e2e25ab7c22e5c39efc8859169",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    },
+    "post/HUGOで使えるショートコード/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "be028a95f0b124ef545cc2b79439501d2fae158bcc45e342867d912e6e2eebd4",
+      "summary": "Compared the complete localized article with the Japanese source and official Hugo documentation. Corrected the built-in/custom distinction, version-specific X/Twitter shortcode names and arguments, removed the invalid Flickr example, and localized media privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full source and translation; checked built-in vs custom shortcodes, version caveats, provider behavior, and privacy explanations."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized Hugo, shortcode, embed, privacy, and version terminology throughout the article."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified YouTube, X, legacy Twitter, Instagram, Vimeo, privacy configuration, and escaped syntax against Hugo docs and v0.139.0 source."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the single broad reference with the official overview and provider-specific pages plus privacy documentation."
+        }
+      },
+      "limitations": [
+        "AI-assisted review only; no human or native-speaker proofreading is claimed.",
+        "Shortcodes were checked against the documentation and Hugo source; external providers were not contacted by a live article build."
+      ]
+    }
+  }
+}

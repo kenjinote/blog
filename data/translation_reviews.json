@@ -9485,6 +9485,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
       "evidenceHash": "793131ac633041c81717da63a953ebe2a3cf1bcbaf0e9557a27b987e49855aa4"
+    },
+    "post/HUGOで使えるショートコード/index.en.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "b99d2c12dd75b0858595f88416dc6fee506e6d80bc9901cc89a9b8d14f66d1ae",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "2bccad27fee443ae0dde494107b0a99836b9ed5f970da2471430dd4503901260"
+    },
+    "post/HUGOで使えるショートコード/index.zh-cn.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "19e623176a30b54ea57c87ed0122ecac1fa22a84c87839afe7873a2156357ae9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "a2c6f842d5aa860028df0bf57cb3f7ffcde4bc0fba664ba2b5eee275d36bad38"
+    },
+    "post/HUGOで使えるショートコード/index.es.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "d84b99c19a04b82c25d89608cb7415ba2640ade0215c8ef750a44abb0fc86ef0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "bd5ad57714284cc2a26ca503c9d7903593e2e9231e372ed8945d27652be18442"
+    },
+    "post/HUGOで使えるショートコード/index.ko.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "e6ef0513e739483fef80b43d833e9c3bc5c1ad1c70b71842d0897cf7d9db1853",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "ab35ac331c43b8fbca5cbdfd3418cc5e52dcfa3334eebeab6f48f60cb0fc2311"
+    },
+    "post/HUGOで使えるショートコード/index.pt.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "7344d779972e8eae8695c17e6b6839f800bdd95fb63518948e9cbc95ec3bf058",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "17442529079232bff2b639b0993e80304bbdb6d9dabed36fa4a419903932bb06"
+    },
+    "post/HUGOで使えるショートコード/index.zh-tw.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "3499c7b82fef2d0de81a2607d8e8c46f29033e7d654d84c824c7df9b3ee06181",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "44187475974f50939a828ed2768a2639d7ab4a311bdecf3ed668a28cf6f864de"
+    },
+    "post/HUGOで使えるショートコード/index.hi.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "a35cd2ff832618499e3a3766473fbe75d52bfc5967baace4aa9fe05f6c22068f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "eebc386852475282b4ce3e7cb372d42fa4553d116f8a4e94235995e15c5ba484"
+    },
+    "post/HUGOで使えるショートコード/index.fr.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "2e52c1a2544f897c12f5a22cf4bf3933311d0def4a2a3323fd817e3d70e85b7f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "9b670e83d06da48a6e54fb0cd96f606d2b831298f5f3b5963715ff5d694b954e"
+    },
+    "post/HUGOで使えるショートコード/index.de.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "f5b350302d2b7a8f61d6e3ccc6183b4131add16788ae9621c7b3260ced4b78a7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "6969cdee3a010c7a9b411a9dc977bb1e5a24253e7ae16b466bcdc57ee4611cdc"
+    },
+    "post/HUGOで使えるショートコード/index.ar.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "2e579c984bdee36523f0ce0aa929c57c59b10214f60bc7a9cf5d0c1cb532cbf9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "c12bd16c73a2a6fe0225ac44354590624fc24aec67f7ca8205e1c7f7bdc97746"
+    },
+    "post/HUGOで使えるショートコード/index.ru.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "072346ce8b74b2cf31ddb4b656dcf9a3dbdc66e2e25ab7c22e5c39efc8859169",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "90f559ae11ef70370cd93e47a6c030058cfe884f4ed1dd5d4f4dd63051a77c06"
+    },
+    "post/HUGOで使えるショートコード/index.id.md": {
+      "source": "post/HUGOで使えるショートコード/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3ab9300e546a23407016fa320022a9f84d4b91ab8bdd19b835985548fd6c5bdf",
+      "translationHash": "be028a95f0b124ef545cc2b79439501d2fae158bcc45e342867d912e6e2eebd4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-082.json",
+      "evidenceHash": "d270805071a2142d9dfbeea2ea7c22dd2953a66fd6641dda675f649ddf9b184d"
     }
   }
 }
