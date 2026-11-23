@@ -1,0 +1,445 @@
+{
+  "version": 1,
+  "batch": 80,
+  "article": "Goをインストールする方法",
+  "reviewedAt": "2026-11-23",
+  "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+  "priorSourceHash": "075c554ffd8a76e64120b057e090cf73ab3c930e92dcd38e894e62780499dabc",
+  "sources": [
+    "https://go.dev/doc/install",
+    "https://go.dev/doc/tutorial/getting-started",
+    "https://go.dev/doc/manage-install",
+    "https://go.dev/doc/faq",
+    "https://go.dev/play/"
+  ],
+  "findings": [
+    "Corrected the false claim that Go does not use pointers: Go supports pointers but deliberately has no pointer arithmetic.",
+    "Replaced outdated installer screenshots and obsolete Japanese-only documentation with current official installation, first-module tutorial, version-management, FAQ, and Playground references.",
+    "Replaced a standalone go run hello.go example with the official module-based flow: go mod init example/hello, go run ., and a clear note that executable names/extensions vary by OS.",
+    "Preserved the original 2022-09-10 publication date from Git history, removed the injected duplicate date, and set lastmod 2026-11-23 across all 13 editions."
+  ],
+  "scope": "Read the entire Japanese source and all twelve complete translations. Compared each edition for meaning, localized Go terminology, command/code parity, links, metadata and outdated claims against current Go primary documentation.",
+  "publicationPending": true,
+  "reviews": {
+    "post/Goをインストールする方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "493d77d634f58ec7527df82c6d325e44804cf6489160d105a1c56ed7dc517190",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    },
+    "post/Goをインストールする方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "4bfe1797802c3a8cf218c814900cd95f1e0932182fdf9986564c48ef40ca01d2",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    },
+    "post/Goをインストールする方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "966ca209df6647620c1067f2d4b0c81161fc967f9df938cbb9beb7d6860a6a02",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    },
+    "post/Goをインストールする方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "df03158052f85ad9a8313efe50cf8749221debbfaaa77c8fd74b7c39b578c815",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    },
+    "post/Goをインストールする方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "f308cd7bfa87be8acf867a555276285d1b16c4fc30b7110148a074e19b944f01",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    },
+    "post/Goをインストールする方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "5eb94566338e347fba0671495fbcae93ae93a3ac967f6b49cd903a95b56f445e",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    },
+    "post/Goをインストールする方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "76fd007a179d83cac855ca806615a7f24388a9e3662d399c47309d82f06ac76e",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    },
+    "post/Goをインストールする方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "3bef82f4df5cb6c476c99af687580c81e256e1a9c7edd5dd208a9fcd821456b1",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    },
+    "post/Goをインストールする方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "cb7a12f4a527d66a21d421bb86aee85ec58e84cf29842f12fac62ac8ed1b61b7",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    },
+    "post/Goをインストールする方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "4db90afe4ad9f1a57bbbb686842df8d9b89b3494b801c9451cc6d04b12113a66",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    },
+    "post/Goをインストールする方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "4d9d5d6a4aea3e4fdfef9308385c62ed3bec0d911ff767f78c8573960555066c",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    },
+    "post/Goをインストールする方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Goをインストールする方法/index.md",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "171f2e004e6b5916ffb82dd0dc215ba9bbece09ad9f15338ca5938a7001706fe",
+      "summary": "Compared the entire localized article with the corrected Japanese source. Confirmed the accurate pointer statement, current OS-specific official installation guidance, go version verification, module-based Hello World flow, executable naming caveat, and localized links to current Go primary documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the full Japanese source and this complete localized edition; verified that install, verification, module initialization, run/build behavior and the Go pointer correction retain the same scope and caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed the localized terms for static typing, compilation, pointer arithmetic, runtime/garbage collection, module, terminal, and executable."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the complete Go sample and shell command sequence; the localized article uses identical commands and output claims."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Verified that the edition uses the same official Go installation, getting-started tutorial, version-management, FAQ, and Playground sources."
+        }
+      },
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No installation was performed on each operating system or CPU architecture."
+      ]
+    }
+  }
+}

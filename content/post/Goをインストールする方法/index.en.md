@@ -1,43 +1,42 @@
 ---
-title: 'Go Language (Golang) Installation Steps and How to Execute Your First Program'
-date: "2026-09-24T19:44:38+09:00"
+title: "Install Go and Run Your First Program"
 slug: "GoをInstallする方法"
 date: 2022-09-10T00:48:17+09:00
+lastmod: 2026-11-23
+lastmod: 2026-11-23
+lastmod: 2026-11-23
 tags: ["Go", "Install"]
 draft: false
 image: "images/cover.webp"
 categories: ["programming"]
-description: 'A beginner-friendly explanation on how to install the programming language ''Go (Golang)'' developed by Google. From obtaining the installer to creating, compiling, and executing a Hello World program, it is ideal for a first introduction to the Go language.'
+description: "Install Go on Windows, macOS, or Linux, verify it with go version, create a module, and run a Hello World program."
 ---
-# Introduction
-[Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) is a relatively new programming language released by Google in 2009.
-The Go compiler, tools, and libraries are released as open source.
-Also, Go is a statically typed language like C and [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), but it does not use pointers in the same way C does.
 
-# How to Install
+# About Go
 
-[Install Go](https://go.dev/dl/)
+Go began at Google and is now developed as an open-source project. It is a statically typed, compiled language. Go supports pointers, but not pointer arithmetic. Its runtime includes a garbage collector.
 
-Installers for each platform are available from the site above.
+# Install Go
 
-Follow the instructions on the screen to proceed with the installation.
-![img.png](images/img.webp)
+Open the [official download and installation guide](https://go.dev/doc/install) and choose the instructions for your operating system (Windows, macOS, or Linux) and CPU architecture. Follow the official steps, then open a new terminal and run:
 
-![img_1.png](images/img_1.webp)
+```sh
+go version
+```
 
-![img_2.png](images/img_2.webp)
+If the command prints a version, the `go` command is available. When updating Go, follow the official replacement instructions instead of unpacking a new version over an existing installation. See [Managing Go installations](https://go.dev/doc/manage-install) for version management.
 
-![img_3.png](images/img_3.webp)
+# Run Hello, World
 
-![img_5.png](images/img_5.webp)
+Create a working directory and initialize a module inside it:
 
-![img_6.png](images/img_6.webp)
+```sh
+mkdir hello
+cd hello
+go mod init example/hello
+```
 
-Installation is complete. It's easy, isn't it?
-
-# First Program
-
-Save the following program as `hello.go`.
+Create `hello.go` in that directory and save this code:
 
 ```go
 package main
@@ -45,26 +44,22 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Hello World\n")
+    fmt.Println("Hello, World!")
 }
 ```
 
-If you execute `go run hello.go` from the command prompt or [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/), `Hello, world!` will be output.
+Run the program with:
 
-If you want to compile, executing `go build hello.go` will generate `hello.exe`.
-Executing `hello.exe` will output `Hello, world!`.
+```sh
+go run .
+```
 
-# You can also execute code on a web page
+It prints `Hello, World!`. To build an executable, run `go build`. The output name and extension depend on the operating system; Windows executables normally use `.exe`.
 
-[https://go.dev/play/](https://go.dev/play/)
+# Continue learning
 
-![img_7.png](images/img_7.webp)
+- [Official Go tutorial: Getting started](https://go.dev/doc/tutorial/getting-started)
+- [Go FAQ](https://go.dev/doc/faq)
+- [Go Playground](https://go.dev/play/) (try code in a browser)
 
-# Japanese Documentation
-
-[http://go.shibu.jp/](http://go.shibu.jp/)
-
-The explanations necessary for learning [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) are consolidated in the link above (Japanese translated version).
-Since technologies related to Go are open, the resources are rich enough that you don't even need to buy a physical textbook.
-
-Enjoy your Go life!
+The official introductory materials are primarily available in English.

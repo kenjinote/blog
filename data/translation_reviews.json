@@ -9245,6 +9245,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-079.json",
       "evidenceHash": "6e08e452ec0c1499456a932ab1f8d7884ff3f02319109402b1b0c6685ed8c59f"
+    },
+    "post/Goをインストールする方法/index.en.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "493d77d634f58ec7527df82c6d325e44804cf6489160d105a1c56ed7dc517190",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "d5500bde207f97e44c277076f738ff1503f7e64e80b71eead24ffa17585c9f33"
+    },
+    "post/Goをインストールする方法/index.zh-cn.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "4bfe1797802c3a8cf218c814900cd95f1e0932182fdf9986564c48ef40ca01d2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "5e2092b71a2f014b4d61dc7e380c8558358ce95210a6307f28c4ea572ba7fa93"
+    },
+    "post/Goをインストールする方法/index.es.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "966ca209df6647620c1067f2d4b0c81161fc967f9df938cbb9beb7d6860a6a02",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "490d1f4eec2ee8147ce5dec0c85e54271f5c4b6ac60151351ff8e4ffb08a2766"
+    },
+    "post/Goをインストールする方法/index.ko.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "df03158052f85ad9a8313efe50cf8749221debbfaaa77c8fd74b7c39b578c815",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "abe0ed96fcdcffc09119113b5ac67b1abb480bd6ca230819325651f2ce34cf41"
+    },
+    "post/Goをインストールする方法/index.pt.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "f308cd7bfa87be8acf867a555276285d1b16c4fc30b7110148a074e19b944f01",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "fb09928ec0a7aaad9c13dfbb650e5f898d133bf948ea2f52a2fe027221d02a3b"
+    },
+    "post/Goをインストールする方法/index.zh-tw.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "5eb94566338e347fba0671495fbcae93ae93a3ac967f6b49cd903a95b56f445e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "b1084e7271e48db469c428746cc005de52357eda3293fc3a305d4f50875fe79e"
+    },
+    "post/Goをインストールする方法/index.hi.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "76fd007a179d83cac855ca806615a7f24388a9e3662d399c47309d82f06ac76e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "9118bce505b0e444656e84ae954d189a2a8f0bb2a1bfc1858adfd95dda6d9545"
+    },
+    "post/Goをインストールする方法/index.fr.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "3bef82f4df5cb6c476c99af687580c81e256e1a9c7edd5dd208a9fcd821456b1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "314de6277472c6169aeb69e9722f315a84a1905d96e7203f5efa34f48d220d8e"
+    },
+    "post/Goをインストールする方法/index.de.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "cb7a12f4a527d66a21d421bb86aee85ec58e84cf29842f12fac62ac8ed1b61b7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "b804492a0bc4ee0f45d9efa5f769f7d49a66f621dfacd3876b7ba65d6e37216e"
+    },
+    "post/Goをインストールする方法/index.ar.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "4db90afe4ad9f1a57bbbb686842df8d9b89b3494b801c9451cc6d04b12113a66",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "b30796d697daedf2f072add041fe8f4d52e0b91978cf36e1c2a901f2128450ad"
+    },
+    "post/Goをインストールする方法/index.ru.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "4d9d5d6a4aea3e4fdfef9308385c62ed3bec0d911ff767f78c8573960555066c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "703668c6e0295f25ec784e8cd2288e8524d934f7890d43e0648242e985c8ea3d"
+    },
+    "post/Goをインストールする方法/index.id.md": {
+      "source": "post/Goをインストールする方法/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "32ebb3b10bbe9a643f405040bed14afe8c212b843bdaea211eacaab67bec882a",
+      "translationHash": "171f2e004e6b5916ffb82dd0dc215ba9bbece09ad9f15338ca5938a7001706fe",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-080.json",
+      "evidenceHash": "4a1db6c9807ea8dad6086c0a8247559ab88f3fc5a2b29799c5623022f5b1ad64"
     }
   }
 }

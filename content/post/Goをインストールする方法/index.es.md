@@ -1,47 +1,44 @@
 ---
 
 
-title: 'Pasos de instalación de Go (Golang) y cómo ejecutar tu primer programa'
-date: "2026-09-24T19:44:38+09:00"
+title: "Instalar Go y ejecutar tu primer programa"
 slug: "GoをInstalaciónする方法"
 date: 2022-09-10T00:48:17+09:00
+lastmod: 2026-11-23
+lastmod: 2026-11-23
+lastmod: 2026-11-23
 tags: ["Go","Instalación"]
 draft: false
 image: "images/cover.webp"
 categories: ["programming"]
-description: 'Explicamos para principiantes cómo instalar "Go (Golang)", un lenguaje de programación desarrollado por Google. Desde la obtención del instalador hasta la creación, compilación y ejecución de un programa Hello World. Ideal como introducción para tu primer contacto con Go.'
+description: "Instala Go en Windows, macOS o Linux, comprueba la instalación con go version, crea un módulo y ejecuta Hello World."
 ---
 
+# Acerca de Go
 
-# Introducción
-[Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) es un lenguaje de programación relativamente nuevo publicado por Google en 2009.
-El compilador, las herramientas y las bibliotecas de Go se publican como código abierto.
-Además, Go es un lenguaje de tipado estático como C y [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), pero es un lenguaje que no utiliza punteros como el lenguaje C.
+Go nació como un proyecto de Google y hoy se desarrolla como proyecto de código abierto. Es un lenguaje compilado y de tipado estático. Go admite punteros, pero no aritmética de punteros; su entorno de ejecución incluye un recolector de basura.
 
-# Método de instalación
+# Instalar Go
 
-[Instalar Go](https://go.dev/dl/)
+Abre la [guía oficial de descarga e instalación](https://go.dev/doc/install) y elige las instrucciones para tu sistema operativo (Windows, macOS o Linux) y arquitectura de CPU. Sigue los pasos oficiales y abre una terminal nueva para ejecutar:
 
-Desde el sitio anterior, se publican instaladores para cada plataforma.
+```sh
+go version
+```
 
-Siga la pantalla para proceder con la instalación.
-![img.png](images/img.webp)
+Si el comando muestra una versión, `go` está disponible. Al actualizar Go, sigue las instrucciones oficiales para sustituir la instalación anterior; no descomprimas una versión nueva encima de una instalación existente. Consulta [Administrar instalaciones de Go](https://go.dev/doc/manage-install) para gestionar versiones.
 
-![img_1.png](images/img_1.webp)
+# Ejecutar Hello, World
 
-![img_2.png](images/img_2.webp)
+Crea una carpeta de trabajo e inicializa un módulo dentro de ella:
 
-![img_3.png](images/img_3.webp)
+```sh
+mkdir hello
+cd hello
+go mod init example/hello
+```
 
-![img_5.png](images/img_5.webp)
-
-![img_6.png](images/img_6.webp)
-
-La instalación se ha completado. Es fácil, ¿verdad?
-
-# Primer programa
-
-Guarde el siguiente programa como `hello.go`.
+Crea `hello.go` en esa carpeta y guarda este código:
 
 ```go
 package main
@@ -49,26 +46,22 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Hello World\n")
+    fmt.Println("Hello, World!")
 }
 ```
 
-Al ejecutar `go run hello.go` desde el símbolo del sistema o la terminal, se mostrará `Hello, world!`.
+Ejecuta el programa así:
 
-Si desea compilarlo, al ejecutar `go build hello.go`, se generará `hello.exe`.
-Al ejecutar `hello.exe`, se mostrará `Hello, world!`.
+```sh
+go run .
+```
 
-# También puede ejecutar código en la página web
+Se mostrará `Hello, World!`. Para generar un ejecutable, ejecuta `go build`. El nombre y la extensión dependen del sistema operativo; en Windows normalmente se usa `.exe`.
 
-[https://go.dev/play/](https://go.dev/play/)
+# Sigue aprendiendo
 
-![img_7.png](images/img_7.webp)
+- [Tutorial oficial de Go: primeros pasos](https://go.dev/doc/tutorial/getting-started)
+- [Preguntas frecuentes de Go](https://go.dev/doc/faq)
+- [Go Playground](https://go.dev/play/) (prueba código en el navegador)
 
-# Documentación en japonés
-
-[http://go.shibu.jp/](http://go.shibu.jp/)
-
-Las explicaciones necesarias para aprender [Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) están concentradas en el enlace anterior (versión traducida al japonés).
-Dado que la tecnología relacionada con Go es abierta, es tan completa que no es necesario comprar textos en papel.
-
-¡Entonces, que disfrutes de tu vida con Go!
+Los materiales oficiales de introducción están disponibles principalmente en inglés.

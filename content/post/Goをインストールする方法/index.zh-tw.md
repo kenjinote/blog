@@ -1,43 +1,42 @@
 ---
-title: 'Go語言（Golang）的安裝步驟與首次程式執行方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "安裝 Go 並執行第一個程式"
 slug: "Goを安裝する方法"
 date: 2022-09-10T00:48:17+09:00
+lastmod: 2026-11-23
+lastmod: 2026-11-23
+lastmod: 2026-11-23
 tags: ["Go", "安裝"]
 draft: false
 image: "images/cover.webp"
 categories: ["programming"]
-description: '為初學者解說由Google開發的程式語言「Go（Golang）」的安裝方法。從取得安裝程式，到建立Hello World程式、編譯與執行步驟，是首次入門Go語言的最佳選擇。'
+description: "介紹如何在 Windows、macOS 或 Linux 安裝 Go，以 go version 確認安裝、建立模組並執行 Hello World。"
 ---
-# 簡介
-[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 是 Google 在 2009 年發布的一種相對較新的程式語言。
-Go 的編譯器、工具和函式庫都是開源的。
-此外，Go 是一種像 C 和 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 一樣的靜態型別語言，但它不像 C 語言那樣使用指標。
 
-# 安裝方法
+# 關於 Go
 
-[安裝 Go](https://go.dev/dl/)
+Go 最初由 Google 發起開發，目前以開源專案形式持續開發。它是靜態型別的編譯語言。Go 支援指標，但不支援指標運算；執行階段包含垃圾回收器。
 
-上述網站提供了各個平台的安裝程式。
+# 安裝 Go
 
-按照螢幕上的指示進行安裝。
-![img.png](images/img.webp)
+開啟[官方下載與安裝指南](https://go.dev/doc/install)，選擇符合作業系統（Windows、macOS 或 Linux）與 CPU 架構的步驟。依照官方說明完成安裝，再重新開啟終端機並執行：
 
-![img_1.png](images/img_1.webp)
+```sh
+go version
+```
 
-![img_2.png](images/img_2.webp)
+若命令顯示版本號，即可使用 `go` 命令。更新 Go 時，請依官方步驟替換舊安裝，不要將新版本直接解壓覆蓋到既有安裝目錄。版本管理方式請參閱[管理 Go 安裝](https://go.dev/doc/manage-install)。
 
-![img_3.png](images/img_3.webp)
+# 執行 Hello, World
 
-![img_5.png](images/img_5.webp)
+建立工作資料夾，並在其中初始化模組：
 
-![img_6.png](images/img_6.webp)
+```sh
+mkdir hello
+cd hello
+go mod init example/hello
+```
 
-安裝完成。很簡單吧。
-
-# 第一個程式
-
-將以下程式存為 `hello.go`。
+在該資料夾建立 `hello.go`，並儲存以下程式碼：
 
 ```go
 package main
@@ -45,26 +44,22 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Hello World\n")
+    fmt.Println("Hello, World!")
 }
 ```
 
-從命令提示字元或終端機執行 `go run hello.go` 時，將會輸出 `Hello, world!`。
+執行程式：
 
-如果要編譯，執行 `go build hello.go` 會產生 `hello.exe`。
-執行 `hello.exe` 時，將會輸出 `Hello, world!`。
+```sh
+go run .
+```
 
-# 您也可以在網頁上執行程式碼
+終端機會顯示 `Hello, World!`。若要建置執行檔，請執行 `go build`。輸出檔名與副檔名會依作業系統而異；Windows 通常使用 `.exe`。
 
-[https://go.dev/play/](https://go.dev/play/)
+# 繼續學習
 
-![img_7.png](images/img_7.webp)
+- [Go 官方入門教學](https://go.dev/doc/tutorial/getting-started)
+- [Go 常見問題](https://go.dev/doc/faq)
+- [Go Playground](https://go.dev/play/)（可在瀏覽器中試跑程式碼）
 
-# 日文文件
-
-[http://go.shibu.jp/](http://go.shibu.jp/)
-
-學習 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 所需的說明都集中在上面的連結中（日文翻譯版）。
-與 Go 相關的技術是開放的，內容非常豐富，幾乎不需要購買紙本教材。
-
-那麼，祝您有美好的 Go 生活！
+官方入門資料主要以英文提供。

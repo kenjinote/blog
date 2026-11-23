@@ -1,43 +1,42 @@
 ---
-title: 'خطوات تثبيت لغة Go (Golang) وطريقة تنفيذ البرنامج الأول'
-date: "2026-09-24T19:44:38+09:00"
+title: "تثبيت Go وتشغيل البرنامج الأول"
 slug: "Goをتثبيتする方法"
 date: 2022-09-10T00:48:17+09:00
+lastmod: 2026-11-23
+lastmod: 2026-11-23
+lastmod: 2026-11-23
 tags: ["Go","تثبيت"]
 draft: false
 image: "images/cover.webp"
 categories: ["programming"]
-description: 'نشرح للمبتدئين كيفية تثبيت لغة البرمجة ''Go (Golang)'' المطورة من قبل جوجل. مثالي كمقدمة أولى للغة Go، حيث يغطي العملية من الحصول على المثبت، إنشاء برنامج Hello World، تجميعه، وحتى خطوات التنفيذ.'
+description: "ثبّت Go على Windows أو macOS أو Linux، وتحقق منه بالأمر go version، ثم أنشئ وحدة وشغّل Hello World."
 ---
-# مقدمة
-[Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) هي لغة برمجة حديثة نسبيًا أصدرتها Google في عام 2009.
-إن المترجم والأدوات والمكتبات الخاصة بـ Go مفتوحة المصدر.
-بالإضافة إلى ذلك، Go هي لغة ذات كتابة ثابتة مثل C و [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)، ولكنها لا تستخدم المؤشرات مثل لغة C.
 
-# طريقة التثبيت
+# نبذة عن Go
 
-[تثبيت Go](https://go.dev/dl/)
+بدأ تطوير Go في Google، ويُطوَّر اليوم كمشروع مفتوح المصدر. إنها لغة مترجمة وذات أنواع ثابتة. تدعم Go المؤشرات، لكنها لا تدعم حساب المؤشرات؛ وتتضمن بيئة التشغيل جامعًا للذاكرة.
 
-المثبتات متاحة لكل منصة من الموقع أعلاه.
+# تثبيت Go
 
-اتبع التعليمات التي تظهر على الشاشة لمتابعة التثبيت.
-![img.png](images/img.webp)
+افتح [دليل التنزيل والتثبيت الرسمي](https://go.dev/doc/install) واختر التعليمات المناسبة لنظام التشغيل (Windows أو macOS أو Linux) ومعمارية المعالج. اتبع الخطوات الرسمية، ثم افتح نافذة طرفية جديدة ونفّذ:
 
-![img_1.png](images/img_1.webp)
+```sh
+go version
+```
 
-![img_2.png](images/img_2.webp)
+إذا عرض الأمر رقم إصدار، فهذا يعني أن الأمر `go` متاح. عند تحديث Go، اتبع تعليمات الاستبدال الرسمية ولا تفك ملفات إصدار جديد فوق تثبيت موجود. راجع [إدارة تثبيتات Go](https://go.dev/doc/manage-install) لإدارة عدة إصدارات.
 
-![img_3.png](images/img_3.webp)
+# تشغيل Hello, World
 
-![img_5.png](images/img_5.webp)
+أنشئ مجلد عمل وابدأ وحدة Go داخله:
 
-![img_6.png](images/img_6.webp)
+```sh
+mkdir hello
+cd hello
+go mod init example/hello
+```
 
-اكتمل التثبيت. إنه سهل، أليس كذلك؟
-
-# برنامجك الأول
-
-احفظ البرنامج التالي باسم `hello.go`.
+أنشئ الملف `hello.go` في المجلد نفسه واحفظ فيه:
 
 ```go
 package main
@@ -45,26 +44,22 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Hello World\n")
+    fmt.Println("Hello, World!")
 }
 ```
 
-عندما تقوم بتشغيل `go run hello.go` من موجه الأوامر أو الجهاز الطرفي، سيتم إخراج `Hello, world!`.
+شغّل البرنامج بالأمر:
 
-إذا كنت تريد التجميع، فإن تشغيل `go build hello.go` سيولد `hello.exe`.
-سيؤدي تشغيل `hello.exe` إلى إخراج `Hello, world!`.
+```sh
+go run .
+```
 
-# يمكنك أيضًا تشغيل التعليمات البرمجية على صفحة الويب
+ستظهر `Hello, World!` في الطرفية. لإنشاء ملف تنفيذي، نفّذ `go build`. يعتمد اسم الملف وامتداده على نظام التشغيل؛ ويكون الامتداد عادةً `.exe` في Windows.
 
-[https://go.dev/play/](https://go.dev/play/)
+# تابع التعلّم
 
-![img_7.png](images/img_7.webp)
+- [البرنامج التعليمي الرسمي لـ Go: البدء](https://go.dev/doc/tutorial/getting-started)
+- [الأسئلة الشائعة عن Go](https://go.dev/doc/faq)
+- [Go Playground](https://go.dev/play/) (لتجربة الشيفرة في المتصفح)
 
-# المستندات
-
-[http://go.shibu.jp/](http://go.shibu.jp/)
-
-التفسيرات اللازمة لتعلم [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) مجمعة في الرابط أعلاه.
-التقنيات المتعلقة بـ Go مفتوحة ومكتملة لدرجة أنك لست بحاجة إلى شراء نصوص ورقية.
-
-إذن، استمتع بحياتك مع Go!
+تتوفر مواد البدء الرسمية أساسًا باللغة الإنجليزية.

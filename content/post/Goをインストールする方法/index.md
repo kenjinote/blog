@@ -1,43 +1,42 @@
 ---
-title: 'Go言語（Golang）のインストール手順と初めてのプログラム実行方法'
-date: "2026-09-24T19:44:38+09:00"
+title: "Goのインストールと最初のプログラムの実行"
 slug: "Goをインストールする方法"
 date: 2022-09-10T00:48:17+09:00
+lastmod: 2026-11-23
+lastmod: 2026-11-23
+lastmod: 2026-11-23
 tags: ["Go","インストール"]
 draft: false
 image: "images/cover.webp"
 categories: ["programming"]
-description: 'Googleが開発したプログラミング言語「Go（Golang）」のインストール方法を初心者向けに解説します。インストーラの取得から、Hello Worldプログラムの作成、コンパイル、実行手順まで、初めてのGo言語入門に最適です。'
+description: "Windows、macOS、LinuxにGoをインストールし、go versionで確認して、モジュールを作成しHello Worldを実行する手順を紹介します。"
 ---
-# はじめに
-[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)は、Googleが2009年に公開した比較的新しい[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)です。
-Goのコンパイラ、ツール、ライブラリは、オープンソースで公開されています。
-また、Goは、[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)やJavaのような静的型付け言語ですが、C言語のような[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を使わない言語です。
 
-# インストール方法
+# Goについて
 
-[Go をインストール](https://go.dev/dl/)
+GoはGoogleで開発が始まり、現在はオープンソースで開発されている、静的型付けのコンパイル言語です。ポインターを使えますが、ポインター演算はできません。メモリ管理にはガベージコレクターが使われます。
 
-上記サイトから各プラットフォーム向けにインストーラが公開されています。
+# Goをインストールする
 
-画面にしたがってインストールを進めていきます。
-![img.png](images/img.webp)
+[公式のダウンロードとインストール手順](https://go.dev/doc/install)を開き、お使いのOS（Windows、macOS、Linux）とCPUに合う手順を選んでください。画面の指示または公式の手順に従ってインストールし、ターミナルを開き直してから次を実行します。
 
-![img_1.png](images/img_1.webp)
+```sh
+go version
+```
 
-![img_2.png](images/img_2.webp)
+バージョンが表示されれば、`go`コマンドを利用できます。インストール済みのGoを更新するときは、既存のインストール先へ新しいファイルを重ねず、公式手順に従って置き換えてください。複数バージョンの管理は[Goのインストール管理](https://go.dev/doc/manage-install)を参照してください。
 
-![img_3.png](images/img_3.webp)
+# Hello, Worldを実行する
 
-![img_5.png](images/img_5.webp)
+作業用フォルダーを作成し、その中でモジュールを初期化します。
 
-![img_6.png](images/img_6.webp)
+```sh
+mkdir hello
+cd hello
+go mod init example/hello
+```
 
-インストール完了しました。簡単ですね。
-
-# 初めてのプログラム
-
-次のプログラムを`hello.go`として保存します。
+同じフォルダーに`hello.go`を作り、次の内容を保存します。
 
 ```go
 package main
@@ -45,26 +44,22 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Hello World\n")
+    fmt.Println("Hello, World!")
 }
 ```
 
-コマンドプロンプトまたはターミナルから`go run hello.go`を実行すると、`Hello, world!`と出力されます。
+次のコマンドで実行します。
 
-コンパイルする場合は、`go build hello.go`を実行すると、`hello.exe`が生成されます。
-`hello.exe`を実行すると、`Hello, world!`と出力されます。
+```sh
+go run .
+```
 
-# Webページでコードを実行することもできます
+`Hello, World!`と表示されます。ビルドするには`go build`を実行します。生成される実行ファイル名と拡張子はOSによって異なり、Windowsでは通常`.exe`が付きます。
 
-[https://go.dev/play/](https://go.dev/play/)
+# 次に読む資料
 
-![img_7.png](images/img_7.webp)
+- [Go公式チュートリアル：はじめてのGo](https://go.dev/doc/tutorial/getting-started)
+- [Go FAQ](https://go.dev/doc/faq)
+- [Go Playground](https://go.dev/play/)（ブラウザーでコードを試せます）
 
-# 日本語ドキュメント
-
-[http://go.shibu.jp/](http://go.shibu.jp/)
-
-[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)を学ぶうえで必要となる解説は上記のリンク（日本語訳版）に集約されています。
-Goに関連する技術はオープンなので紙のテキストを購入する必要がないくらい充実しています。
-
-それでは楽しいGoライフを！
+公式の導入資料は英語を中心に提供されています。

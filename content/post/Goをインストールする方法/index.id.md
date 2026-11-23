@@ -1,43 +1,42 @@
 ---
-title: 'Langkah Instalasi Bahasa Go (Golang) dan Cara Menjalankan Program Pertama'
-date: "2026-09-24T19:44:38+09:00"
+title: "Menginstal Go dan Menjalankan Program Pertama"
 slug: "GoをInstalasiする方法"
 date: 2022-09-10T00:48:17+09:00
+lastmod: 2026-11-23
+lastmod: 2026-11-23
+lastmod: 2026-11-23
 tags: ["Go","instalasi"]
 draft: false
 image: "images/cover.webp"
 categories: ["programming"]
-description: 'Menjelaskan untuk pemula cara menginstal bahasa pemrograman ''Go (Golang)'' yang dikembangkan oleh Google. Sangat cocok sebagai pengantar bahasa Go pertama Anda, mulai dari mendapatkan installer, hingga langkah pembuatan program Hello World, kompilasi, dan penjalanan.'
+description: "Instal Go di Windows, macOS, atau Linux, verifikasi dengan go version, buat modul, lalu jalankan Hello World."
 ---
-# Pengantar
-[Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) adalah bahasa pemrograman yang relatif baru yang dirilis oleh Google pada tahun 2009.
-Kompiler, alat, dan pustaka Go bersifat sumber terbuka (open source).
-Selain itu, Go adalah bahasa dengan pengetikan statis seperti C dan [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), tetapi tidak menggunakan pointer seperti bahasa C.
 
-# Cara Instalasi
+# Tentang Go
 
-[Instal Go](https://go.dev/dl/)
+Go bermula di Google dan kini dikembangkan sebagai proyek sumber terbuka. Go adalah bahasa terkompilasi dengan tipe statis. Go mendukung pointer, tetapi tidak mendukung aritmetika pointer; runtime-nya mencakup garbage collector.
 
-Penginstal untuk setiap platform tersedia dari situs di atas.
+# Menginstal Go
 
-Ikuti petunjuk di layar untuk melanjutkan instalasi.
-![img.png](images/img.webp)
+Buka [panduan resmi untuk mengunduh dan menginstal](https://go.dev/doc/install), lalu pilih petunjuk sesuai sistem operasi (Windows, macOS, atau Linux) dan arsitektur CPU Anda. Ikuti langkah resmi, buka terminal baru, kemudian jalankan:
 
-![img_1.png](images/img_1.webp)
+```sh
+go version
+```
 
-![img_2.png](images/img_2.webp)
+Jika perintah menampilkan nomor versi, perintah `go` sudah tersedia. Saat memperbarui Go, ikuti petunjuk resmi untuk mengganti instalasi lama; jangan mengekstrak versi baru di atas instalasi yang sudah ada. Lihat [Mengelola instalasi Go](https://go.dev/doc/manage-install) untuk pengelolaan beberapa versi.
 
-![img_3.png](images/img_3.webp)
+# Menjalankan Hello, World
 
-![img_5.png](images/img_5.webp)
+Buat folder kerja dan inisialisasi modul di dalamnya:
 
-![img_6.png](images/img_6.webp)
+```sh
+mkdir hello
+cd hello
+go mod init example/hello
+```
 
-Instalasi selesai. Sangat mudah, bukan?
-
-# Program Pertama
-
-Simpan program berikut sebagai `hello.go`.
+Buat file `hello.go` di folder tersebut, lalu simpan kode berikut:
 
 ```go
 package main
@@ -45,26 +44,22 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Hello World\n")
+    fmt.Println("Hello, World!")
 }
 ```
 
-Ketika Anda menjalankan `go run hello.go` dari command prompt atau terminal, itu akan menghasilkan `Hello, world!`.
+Jalankan program dengan:
 
-Jika Anda ingin mengompilasi, menjalankan `go build hello.go` akan menghasilkan `hello.exe`.
-Menjalankan `hello.exe` akan menghasilkan `Hello, world!`.
+```sh
+go run .
+```
 
-# Anda juga dapat menjalankan kode di halaman web
+Terminal akan menampilkan `Hello, World!`. Untuk membuat file executable, jalankan `go build`. Nama dan ekstensi file bergantung pada sistem operasi; di Windows biasanya digunakan ekstensi `.exe`.
 
-[https://go.dev/play/](https://go.dev/play/)
+# Pelajari lebih lanjut
 
-![img_7.png](images/img_7.webp)
+- [Tutorial resmi Go: Memulai](https://go.dev/doc/tutorial/getting-started)
+- [FAQ Go](https://go.dev/doc/faq)
+- [Go Playground](https://go.dev/play/) (coba kode melalui browser)
 
-# Dokumentasi
-
-[http://go.shibu.jp/](http://go.shibu.jp/)
-
-Penjelasan yang diperlukan untuk mempelajari [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dirangkum pada tautan di atas.
-Teknologi yang terkait dengan Go sangat terbuka dan lengkap sehingga Anda tidak perlu membeli buku cetak.
-
-Jadi, nikmati hidup dengan Go!
+Materi pengantar resmi terutama tersedia dalam bahasa Inggris.

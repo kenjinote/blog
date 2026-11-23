@@ -1,43 +1,42 @@
 ---
-title: 'Installationsschritte für die Go-Sprache (Golang) und wie Sie Ihr erstes Programm ausführen'
-date: "2026-09-24T19:44:38+09:00"
+title: "Go installieren und das erste Programm ausführen"
 slug: "GoをInstallationする方法"
 date: 2022-09-10T00:48:17+09:00
+lastmod: 2026-11-23
+lastmod: 2026-11-23
+lastmod: 2026-11-23
 tags: ["Go", "Installation"]
 draft: false
 image: "images/cover.webp"
 categories: ["programming"]
-description: 'Wir erklären Anfängern, wie sie die von Google entwickelte Programmiersprache „Go (Golang)“ installieren. Vom Herunterladen des Installationsprogramms über das Erstellen eines Hello World-Programms bis hin zum Kompilieren und Ausführen ist dies perfekt für den Einstieg in die Go-Sprache.'
+description: "Installieren Sie Go unter Windows, macOS oder Linux, prüfen Sie die Installation mit go version, erstellen Sie ein Modul und führen Sie Hello World aus."
 ---
-# Einführung
-[Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) ist eine relativ neue Programmiersprache, die 2009 von Google veröffentlicht wurde.
-Der Compiler, die Werkzeuge und die Bibliotheken von Go sind Open Source.
-Darüber hinaus ist Go eine statisch typisierte Sprache wie C oder [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), aber sie verwendet keine Zeiger wie die C-Sprache.
 
-# Installationsmethode
+# Über Go
 
-[Go installieren](https://go.dev/dl/)
+Go wurde bei Google begonnen und wird heute als Open-Source-Projekt weiterentwickelt. Es ist eine statisch typisierte, kompilierte Sprache. Go unterstützt Zeiger, aber keine Zeigerarithmetik; die Laufzeit enthält eine Garbage Collection.
 
-Auf der obigen Website stehen Installationsprogramme für jede Plattform zur Verfügung.
+# Go installieren
 
-Befolgen Sie die Anweisungen auf dem Bildschirm, um mit der Installation fortzufahren.
-![img.png](images/img.webp)
+Öffnen Sie die [offizielle Anleitung zum Herunterladen und Installieren](https://go.dev/doc/install) und wählen Sie die Schritte für Ihr Betriebssystem (Windows, macOS oder Linux) und Ihre CPU-Architektur. Folgen Sie der offiziellen Anleitung, öffnen Sie anschließend ein neues Terminal und führen Sie Folgendes aus:
 
-![img_1.png](images/img_1.webp)
+```sh
+go version
+```
 
-![img_2.png](images/img_2.webp)
+Wenn der Befehl eine Versionsnummer ausgibt, ist `go` verfügbar. Folgen Sie beim Aktualisieren den offiziellen Anweisungen zum Ersetzen der vorhandenen Installation; entpacken Sie eine neue Version nicht über eine vorhandene Installation. Hinweise zur Versionsverwaltung finden Sie unter [Go-Installationen verwalten](https://go.dev/doc/manage-install).
 
-![img_3.png](images/img_3.webp)
+# Hello, World ausführen
 
-![img_5.png](images/img_5.webp)
+Erstellen Sie einen Arbeitsordner und initialisieren Sie darin ein Modul:
 
-![img_6.png](images/img_6.webp)
+```sh
+mkdir hello
+cd hello
+go mod init example/hello
+```
 
-Die Installation ist abgeschlossen. Einfach, oder?
-
-# Erstes Programm
-
-Speichern Sie das folgende Programm als `hello.go`.
+Erstellen Sie darin die Datei `hello.go` und speichern Sie diesen Code:
 
 ```go
 package main
@@ -45,26 +44,22 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Printf("Hello World\n")
+    fmt.Println("Hello, World!")
 }
 ```
 
-Wenn Sie `go run hello.go` über die Eingabeaufforderung oder das Terminal ausführen, wird `Hello, world!` ausgegeben.
+Führen Sie das Programm so aus:
 
-Beim Kompilieren wird durch Ausführen von `go build hello.go` die Datei `hello.exe` generiert.
-Wenn Sie `hello.exe` ausführen, wird `Hello, world!` ausgegeben.
+```sh
+go run .
+```
 
-# Sie können Code auch auf einer Webseite ausführen
+Die Ausgabe lautet `Hello, World!`. Mit `go build` erstellen Sie eine ausführbare Datei. Name und Erweiterung hängen vom Betriebssystem ab; unter Windows wird normalerweise `.exe` verwendet.
 
-[https://go.dev/play/](https://go.dev/play/)
+# Weiterlernen
 
-![img_7.png](images/img_7.webp)
+- [Offizielles Go-Tutorial: Erste Schritte](https://go.dev/doc/tutorial/getting-started)
+- [Go-FAQ](https://go.dev/doc/faq)
+- [Go Playground](https://go.dev/play/) (Code im Browser ausprobieren)
 
-# Japanische Dokumentation
-
-[http://go.shibu.jp/](http://go.shibu.jp/)
-
-Die Erklärungen, die zum Erlernen von [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) erforderlich sind, sind im obigen Link (japanische übersetzte Version) zusammengefasst.
-Die mit Go verbundene Technologie ist so offen und umfassend, dass fast keine Notwendigkeit besteht, gedruckte Texte zu kaufen.
-
-Dann, viel Spaß mit Go!
+Offizielle Einführungsmaterialien sind überwiegend auf Englisch verfügbar.
