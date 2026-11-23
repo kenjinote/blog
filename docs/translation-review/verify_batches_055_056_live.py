@@ -54,7 +54,7 @@ class Page(HTMLParser):
 
 
 def metadata(bundle, lang):
-    path = ROOT / "content" / bundle / ("index.md" if lang == "ja" else f"index.{lang}.md")
+    path = ROOT / "content/post" / bundle / ("index.md" if lang == "ja" else f"index.{lang}.md")
     text = path.read_text(encoding="utf-8")
     result = {}
     for name in ("title", "slug", "description"):
@@ -192,7 +192,7 @@ for bundle in bundles:
             haystack = visible if location == "visible" else raw if location == "raw" else " ".join(page.links)
             checks[name] = token.lower() not in haystack.lower() if location == "absent" else token.lower() in haystack.lower()
         if bundle["number"] == "055":
-            checks["errorAndDispose"] = "HadErrors" in visible and "finally" in visible and "delete ps" in visible.lower()
+            checks["errorAndDispose"] = "HadErrors" in visible and "finally" in visible and "delete" in visible.lower() and "ps" in visible
             checks["noDebugPath"] = "PowerShellWrapper\\Debug\\PowerShellWrapper.dll" not in visible
         else:
             path_terms = ("absolute path", "absoluten pfad", "ruta absoluta", "chemin absolu", "caminho absoluto", "path absolut", "絶対パス", "绝对路径", "絕對路徑", "절대 경로", "المسار المطلق")

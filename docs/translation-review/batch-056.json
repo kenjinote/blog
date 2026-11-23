@@ -17,7 +17,7 @@
     "Removed duplicate date metadata while preserving the 2025-07-19 publication date, added lastmod and localized descriptions, corrected the fragmented Japanese Netron link, and replaced broad GPU-success claims with bounded wording.",
     "Compared the full Japanese article with all twelve translations, including metadata, prerequisites, legacy/current terminology, code blocks, model path and inference limitations."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/C++からMicrosoft.Windows.AIを呼び出す方法/index.en.md": {
       "reviewKind": "ai",
@@ -463,5 +463,11 @@
         "Hugo CI and live publication verification remain pending for this batch."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-056.json",
+    "ciRun": 45089639623,
+    "deployedCommit": "b78b7498474e7df802b9d5e1e3a3992f0b7e3046",
+    "allPassed": true
   }
 }

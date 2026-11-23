@@ -18,7 +18,7 @@
     "Explained that PowerShell 7 requires a separate matching .NET host or pwsh child process; fixed duplicate dates, preserved the 2025-04-16 publication date, added lastmod and localized descriptions, and cited Microsoft sources.",
     "Compared the full Japanese article with all twelve translations, including all code blocks, setup, runtime constraints, security notes, summary structure, and references."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/C++ から PowerShell を C++ CLI DLL 経由で実行する手順/index.en.md": {
       "reviewKind": "ai",
@@ -464,5 +464,11 @@
         "Hugo CI and live publication verification remain pending for this batch."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-055.json",
+    "ciRun": 45089639623,
+    "deployedCommit": "b78b7498474e7df802b9d5e1e3a3992f0b7e3046",
+    "allPassed": true
   }
 }
