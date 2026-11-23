@@ -1,8 +1,8 @@
 ---
-title: 'Verwendung von reveal.js: Erstellen von Präsentationsmaterialien mit HTML und Markdown'
-date: "2026-09-24T19:44:38+09:00"
-slug: "HTMLでPräsentation資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
+lastmod: 2026-11-23
+title: 'Verwendung von reveal.js: Erstellen von Präsentationsmaterialien mit HTML und Markdown'
+slug: "HTMLでPräsentation資料を作る方法（reveal.js）"
 tags: ["HTML", "reveal.js", "Präsentation"]
 draft: false
 image: "img.webp"
@@ -39,7 +39,67 @@ Da die Quelle der Präsentation aus Text besteht, lässt sie sich außerdem prob
 
 Es scheint auch möglich zu sein, Präsentationsmaterialien im Markdown-Format zu erstellen.
 
-# Referenzen
+# Einfache Folien erstellen
 
-- [Lassen Sie uns in Zukunft reveal.js für Präsentationsmaterialien verwenden](https://qiita.com/Targityen/items/40ae4795e2cb77c1adc6)
-- [Liste der Markdown-Syntax-Beispiele](https://qiita.com/jkjoluvjlajelljicvjzojieoaid/items/01cd7ff819bc2e69b652)
+Am einfachsten ist es, das neueste ZIP des Basic Setup herunterzuladen, zu entpacken und `index.html` zu bearbeiten. Wie im folgenden HTML-Beispiel wird jede Folie in ein `<section>` eingeschlossen. Die Beispieldatei enthält bereits die benötigten Styles und den Initialisierungscode.
+
+```html
+<div class="reveal">
+  <div class="slides">
+    <section>Slide 1</section>
+    <section>Slide 2</section>
+    <section>Reveal this item <span class="fragment">when activated</span></section>
+  </div>
+</div>
+```
+
+# Folien in Markdown schreiben
+
+Mit dem enthaltenen Markdown-Plugin können Sie Markdown direkt in der HTML-Datei schreiben. Trennen Sie horizontale Folien mit `---` und fügen Sie das folgende Beispiel in `index.html` ein. Zum Laden einer externen Markdown-Datei ist ein lokaler Webserver erforderlich.
+
+```html
+<section data-markdown>
+  <textarea data-template>
+## Slide 1
+---
+## Slide 2
+  </textarea>
+</section>
+```
+
+# Entwicklungsumgebung
+
+Wenn Sie einen lokalen Server oder Werkzeuge für die Quellcodeentwicklung benötigen, verwenden Sie das offizielle Full Setup. Führen Sie die folgenden Befehle aus und öffnen Sie danach `http://localhost:8000` im Browser.
+
+```sh
+git clone https://github.com/hakimel/reveal.js.git
+cd reveal.js
+npm install
+npm start
+```
+
+# Als PDF exportieren
+
+Hängen Sie `?print-pdf` an die URL an. Wählen Sie im Druckdialog von Chrome oder Chromium Als PDF speichern, Querformat, keine Ränder und aktivierte Hintergrundgrafiken. Die offizielle Anleitung bestätigt Chrome und Chromium.
+
+# Referentennotizen
+
+Drücken Sie `S`, um die Referentenansicht in einem separaten Fenster zu öffnen. Notizen können Sie innerhalb von `<aside class="notes">` auf einer Folie einfügen. Lokal benötigt die Referentenansicht einen Webserver.
+
+```html
+<section>
+  <h2>Slide</h2>
+  <aside class="notes">Notes visible to the presenter only</aside>
+</section>
+```
+
+# Offizielle Dokumentation
+
+- [Installation](https://revealjs.com/installation/)
+- [Markup](https://revealjs.com/markup/)
+- [Markdown](https://revealjs.com/markdown/)
+- [Fragments](https://revealjs.com/fragments/)
+- [PDF export](https://revealjs.com/pdf-export/)
+- [Speaker view](https://revealjs.com/speaker-view/)
+
+スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。

@@ -1,8 +1,8 @@
 ---
-title: 'Cara Menggunakan reveal.js: Membuat Materi Presentasi dengan HTML dan Markdown'
-date: "2026-09-24T19:44:38+09:00"
-slug: "HTMLでPresentasi資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
+lastmod: 2026-11-23
+title: 'Cara Menggunakan reveal.js: Membuat Materi Presentasi dengan HTML dan Markdown'
+slug: "HTMLでPresentasi資料を作る方法（reveal.js）"
 tags: ["HTML", "reveal.js", "Presentasi"]
 draft: false
 image: "img.webp"
@@ -39,7 +39,67 @@ Selain itu, karena sumber presentasi adalah teks, maka mudah dikelola dengan sis
 
 Tampaknya Anda juga dapat membuat materi presentasi dalam format Markdown.
 
-# Referensi
+# Membuat slide dasar
 
-- [Mari gunakan reveal.js untuk presentasi di masa depan](https://qiita.com/Targityen/items/40ae4795e2cb77c1adc6)
-- [Daftar Contoh Sintaks Markdown](https://qiita.com/jkjoluvjlajelljicvjzojieoaid/items/01cd7ff819bc2e69b652)
+Cara termudah adalah mengunduh ZIP Basic Setup terbaru, mengekstraknya, lalu mengedit `index.html`. Seperti pada contoh HTML di bawah, tempatkan setiap slide di dalam `<section>`. Berkas contoh Basic Setup sudah menyertakan gaya dan kode inisialisasi yang diperlukan.
+
+```html
+<div class="reveal">
+  <div class="slides">
+    <section>Slide 1</section>
+    <section>Slide 2</section>
+    <section>Reveal this item <span class="fragment">when activated</span></section>
+  </div>
+</div>
+```
+
+# Menulis slide dengan Markdown
+
+Plugin Markdown yang disertakan memungkinkan Anda menulis Markdown di dalam berkas HTML. Pisahkan slide horizontal dengan `---` dan tambahkan contoh berikut ke `index.html`. Memuat berkas Markdown eksternal memerlukan server web lokal.
+
+```html
+<section data-markdown>
+  <textarea data-template>
+## Slide 1
+---
+## Slide 2
+  </textarea>
+</section>
+```
+
+# Penyiapan pengembangan
+
+Jika memerlukan server lokal atau alat pengembangan sumber, gunakan Full Setup resmi. Jalankan perintah berikut, lalu buka `http://localhost:8000` di browser.
+
+```sh
+git clone https://github.com/hakimel/reveal.js.git
+cd reveal.js
+npm install
+npm start
+```
+
+# Ekspor ke PDF
+
+Tambahkan `?print-pdf` di akhir URL. Di dialog cetak Chrome atau Chromium, pilih Simpan sebagai PDF, orientasi lanskap, tanpa margin, dan aktifkan grafik latar. Panduan resmi mengonfirmasi Chrome dan Chromium.
+
+# Catatan pembicara
+
+Tekan `S` untuk membuka tampilan pembicara di jendela terpisah. Tambahkan catatan di dalam `<aside class="notes">` pada slide. Tampilan pembicara lokal memerlukan server web.
+
+```html
+<section>
+  <h2>Slide</h2>
+  <aside class="notes">Notes visible to the presenter only</aside>
+</section>
+```
+
+# Dokumentasi resmi
+
+- [Installation](https://revealjs.com/installation/)
+- [Markup](https://revealjs.com/markup/)
+- [Markdown](https://revealjs.com/markdown/)
+- [Fragments](https://revealjs.com/fragments/)
+- [PDF export](https://revealjs.com/pdf-export/)
+- [Speaker view](https://revealjs.com/speaker-view/)
+
+スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。

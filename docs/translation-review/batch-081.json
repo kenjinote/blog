@@ -1,0 +1,445 @@
+{
+  "version": 1,
+  "batch": 81,
+  "article": "HTMLでプレゼン資料を作る方法（reveal.js）",
+  "reviewedAt": "2026-11-23",
+  "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+  "sources": [
+    "https://revealjs.com/installation/",
+    "https://revealjs.com/markup/",
+    "https://revealjs.com/markdown/",
+    "https://revealjs.com/fragments/",
+    "https://revealjs.com/pdf-export/",
+    "https://revealjs.com/speaker-view/"
+  ],
+  "scope": "Read the complete Japanese source and all twelve translations. Compared meaning, localized terminology, code, commands, links, metadata, and current claims against official reveal.js documentation.",
+  "findings": [
+    "Clarified that the official Basic Setup ZIP workflow remains supported and that Full Setup provides the local development server/tooling.",
+    "Added verified slide hierarchy, fragments, inline Markdown, external Markdown server requirement, local Full Setup commands, PDF printing steps, and speaker notes/view workflow.",
+    "Removed third-party Qiita references in favor of six official guides; added a reminder to review media rights and sensitive notes.",
+    "Restored the original 2023-04-06 publication date from Git history and set lastmod to 2026-11-23 across all editions."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "0b10267b12710b589d3b52068c47e975871a6cef6b4d60adf8669d5a3ffffd89",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    },
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "c2005f428b2787513494676c9e918f38b5230c52534e8be6e6743ba5c8ca20d0",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    },
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "7ecaf7bc3cfc8be09bc2dab6d0a212279f182bf303bf08a0f106f83eaf673d6c",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    },
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "f04d9a5a99c269539f97f9e7ee69c2dac052ff466632c39b5f4094e17cc31766",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    },
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "886494222863b5a7e2b89ca353564fd8cd92066aca825c5c006ec46ac78edf98",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    },
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "f1e6acd4cad86cce1fc81206a882b4d7ce09be6b024e18272ef42f5277d47445",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    },
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "6718a332aeda46c6e13688673e15eff234bec2a3f5be0ca5a4cfb252e523c5e6",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    },
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "e476295aaa09837738896ff3302f60e8185f04a1c453fb86d5690e8fa3ce2a10",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    },
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "be96c04c149e017c2cb6c13f064018924d2b315f2117b7404d00b45758a294f3",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    },
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "3cca84a40a0b347b7e780ae8862880c4c473f5f9fcd718cffc2a4c00bbb36eaa",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    },
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "3e47f668889129fd55042799acd33ed79cab1552faa5fb35959a12653468a22b",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    },
+    "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
+      "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
+      "translationHash": "e514c27acb35550cbabc0da4f93d78aae96f1eb2d066fc5907a30077a2e3fb4a",
+      "summary": "Read and compared the complete localized edition with the Japanese source; updated the complete practical workflow, examples, setup requirements, PDF and speaker-view instructions, official references, and publication metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full source and translation, including feature claims, setup choices, conditions, and usage caveats."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized presentation, slide, plugin, Markdown, speaker-view, and setup terminology in the complete edition."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulae."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared HTML hierarchy, fragment and Markdown examples, shell commands, local URL, and notes markup across editions."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced stale Qiita references with six current official reveal.js guides; verified their described behavior against those guides."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker proofreading is claimed.",
+        "The examples were checked against official documentation but not executed in every locale."
+      ]
+    }
+  }
+}

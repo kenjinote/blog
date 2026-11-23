@@ -1,8 +1,8 @@
 ---
-title: 'reveal.js使用教學：透過HTML與Markdown製作簡報資料'
-date: "2026-09-24T19:44:38+09:00"
-slug: "HTMLで簡報資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
+lastmod: 2026-11-23
+title: 'reveal.js使用教學：透過HTML與Markdown製作簡報資料'
+slug: "HTMLで簡報資料を作る方法（reveal.js）"
 tags: ["HTML", "reveal.js", "簡報"]
 draft: false
 image: "img.webp"
@@ -39,7 +39,67 @@ reveal.js 是一個使用 HTML 和 Markdown 的簡報製作工具，具有以下
 
 似乎也可以使用 Markdown 格式建立簡報資料。
 
-# 參考資料
+# 建立基本投影片
 
-- [未來的簡報資料就用 reveal.js 吧](https://qiita.com/Targityen/items/40ae4795e2cb77c1adc6)
-- [Markdown 語法範例列表](https://qiita.com/jkjoluvjlajelljicvjzojieoaid/items/01cd7ff819bc2e69b652)
+最簡單的方式是下載最新版 Basic Setup ZIP、解壓縮後編輯 `index.html`。如以下 HTML 範例所示，每張投影片都放在 `<section>` 中。Basic Setup 範例檔已包含所需的樣式與初始化程式碼。
+
+```html
+<div class="reveal">
+  <div class="slides">
+    <section>Slide 1</section>
+    <section>Slide 2</section>
+    <section>Reveal this item <span class="fragment">when activated</span></section>
+  </div>
+</div>
+```
+
+# 使用 Markdown 撰寫投影片
+
+內建的 Markdown 外掛可讓你直接在 HTML 檔中撰寫 Markdown。以 `---` 分隔水平投影片，並將以下範例加入 `index.html`。若要載入外部 Markdown 檔案，必須使用本機網頁伺服器。
+
+```html
+<section data-markdown>
+  <textarea data-template>
+## Slide 1
+---
+## Slide 2
+  </textarea>
+</section>
+```
+
+# 開發環境設定
+
+若需要本機伺服器或原始碼開發工具，請使用官方 Full Setup。執行下列命令後，在瀏覽器開啟 `http://localhost:8000`。
+
+```sh
+git clone https://github.com/hakimel/reveal.js.git
+cd reveal.js
+npm install
+npm start
+```
+
+# 匯出 PDF
+
+在網址結尾加上 `?print-pdf`。在 Chrome 或 Chromium 的列印畫面選擇另存為 PDF、橫向、無邊界，並啟用背景圖形。官方指南確認的瀏覽器為 Chrome 與 Chromium。
+
+# 講者備註
+
+按 `S` 可在另一個視窗開啟講者檢視。在投影片的 `<aside class="notes">` 中加入備註。本機使用講者檢視需要網頁伺服器。
+
+```html
+<section>
+  <h2>Slide</h2>
+  <aside class="notes">Notes visible to the presenter only</aside>
+</section>
+```
+
+# 官方文件
+
+- [Installation](https://revealjs.com/installation/)
+- [Markup](https://revealjs.com/markup/)
+- [Markdown](https://revealjs.com/markdown/)
+- [Fragments](https://revealjs.com/fragments/)
+- [PDF export](https://revealjs.com/pdf-export/)
+- [Speaker view](https://revealjs.com/speaker-view/)
+
+スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。

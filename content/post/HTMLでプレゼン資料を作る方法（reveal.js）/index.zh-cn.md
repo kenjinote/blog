@@ -1,8 +1,8 @@
 ---
-title: 'reveal.js使用教程：用HTML和Markdown制作演示文稿'
-date: "2026-09-24T19:44:38+09:00"
-slug: "HTMLで演示資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
+lastmod: 2026-11-23
+title: 'reveal.js使用教程：用HTML和Markdown制作演示文稿'
+slug: "HTMLで演示資料を作る方法（reveal.js）"
 tags: ["HTML", "reveal.js", "演示文稿"]
 draft: false
 image: "img.webp"
@@ -39,7 +39,67 @@ reveal.js 是一个使用 HTML 和 Markdown 的演示文稿制作工具，具有
 
 似乎还可以使用 Markdown 格式来创建演示资料。
 
-# 参考资料
+# 创建基本幻灯片
 
-- [今后的演示资料就用 reveal.js 吧](https://qiita.com/Targityen/items/40ae4795e2cb77c1adc6)
-- [Markdown 语法示例一览](https://qiita.com/jkjoluvjlajelljicvjzojieoaid/items/01cd7ff819bc2e69b652)
+Basic Setup 是最简单的方式：解压最新 ZIP 并编辑其中的 `index.html`。如下面的 HTML 示例所示，每张幻灯片放在一个 `<section>` 中。Basic Setup 的示例文件已包含样式和初始化代码。
+
+```html
+<div class="reveal">
+  <div class="slides">
+    <section>Slide 1</section>
+    <section>Slide 2</section>
+    <section>Reveal this item <span class="fragment">when activated</span></section>
+  </div>
+</div>
+```
+
+# 使用 Markdown 编写幻灯片
+
+内置的 Markdown 插件允许你直接在 HTML 文件中写 Markdown。使用 `---` 分隔横向幻灯片。将下面的示例加入 `index.html`。从外部文件加载 Markdown 需要本地 Web 服务器。
+
+```html
+<section data-markdown>
+  <textarea data-template>
+## Slide 1
+---
+## Slide 2
+  </textarea>
+</section>
+```
+
+# 开发环境
+
+如需本地服务器或源码开发工具，请使用官方 Full Setup。运行以下命令，然后在浏览器中打开 `http://localhost:8000`。
+
+```sh
+git clone https://github.com/hakimel/reveal.js.git
+cd reveal.js
+npm install
+npm start
+```
+
+# 导出为 PDF
+
+在网址末尾添加 `?print-pdf`。在 Chrome 或 Chromium 的打印界面选择“另存为 PDF”、横向、无边距并启用背景图形。官方指南确认支持 Chrome 和 Chromium。
+
+# 演讲者备注
+
+按 `S` 可在单独窗口打开演讲者视图。在幻灯片的 `<aside class="notes">` 中添加备注。本地使用演讲者视图需要 Web 服务器。
+
+```html
+<section>
+  <h2>Slide</h2>
+  <aside class="notes">Notes visible to the presenter only</aside>
+</section>
+```
+
+# 官方文档
+
+- [Installation](https://revealjs.com/installation/)
+- [Markup](https://revealjs.com/markup/)
+- [Markdown](https://revealjs.com/markdown/)
+- [Fragments](https://revealjs.com/fragments/)
+- [PDF export](https://revealjs.com/pdf-export/)
+- [Speaker view](https://revealjs.com/speaker-view/)
+
+スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。

@@ -1,8 +1,8 @@
 ---
-title: 'Как использовать reveal.js: Создание презентаций с помощью HTML и Markdown'
-date: "2026-09-24T19:44:38+09:00"
-slug: "HTMLでПрезентация資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
+lastmod: 2026-11-23
+title: 'Как использовать reveal.js: Создание презентаций с помощью HTML и Markdown'
+slug: "HTMLでПрезентация資料を作る方法（reveal.js）"
 tags: ["HTML", "reveal.js", "Презентация"]
 draft: false
 image: "img.webp"
@@ -39,7 +39,67 @@ reveal.js — это инструмент для создания презент
 
 Кажется, презентации также можно создавать в формате Markdown.
 
-# Ссылки
+# Создание простых слайдов
 
-- [Давайте использовать reveal.js для будущих презентаций](https://qiita.com/Targityen/items/40ae4795e2cb77c1adc6)
-- [Список примеров синтаксиса Markdown](https://qiita.com/jkjoluvjlajelljicvjzojieoaid/items/01cd7ff819bc2e69b652)
+Проще всего скачать последнюю ZIP-версию Basic Setup, распаковать её и отредактировать `index.html`. Как в примере HTML ниже, поместите каждый слайд в `<section>`. В демонстрационный файл Basic Setup уже включены нужные стили и код инициализации.
+
+```html
+<div class="reveal">
+  <div class="slides">
+    <section>Slide 1</section>
+    <section>Slide 2</section>
+    <section>Reveal this item <span class="fragment">when activated</span></section>
+  </div>
+</div>
+```
+
+# Слайды в формате Markdown
+
+Встроенный плагин Markdown позволяет писать Markdown прямо в HTML-файле. Разделяйте горизонтальные слайды с помощью `---` и добавьте пример ниже в `index.html`. Для загрузки внешнего файла Markdown нужен локальный веб-сервер.
+
+```html
+<section data-markdown>
+  <textarea data-template>
+## Slide 1
+---
+## Slide 2
+  </textarea>
+</section>
+```
+
+# Настройка разработки
+
+Если нужны локальный сервер или инструменты для разработки исходного кода, используйте официальный Full Setup. Выполните команды ниже, затем откройте в браузере `http://localhost:8000`.
+
+```sh
+git clone https://github.com/hakimel/reveal.js.git
+cd reveal.js
+npm install
+npm start
+```
+
+# Экспорт в PDF
+
+Добавьте `?print-pdf` в конец URL. В окне печати Chrome или Chromium выберите сохранение в PDF, альбомную ориентацию, отсутствие полей и включение фоновой графики. В официальном руководстве подтверждены Chrome и Chromium.
+
+# Заметки докладчика
+
+Нажмите `S`, чтобы открыть режим докладчика в отдельном окне. Добавляйте заметки в `<aside class="notes">` на слайде. Для локального режима докладчика нужен веб-сервер.
+
+```html
+<section>
+  <h2>Slide</h2>
+  <aside class="notes">Notes visible to the presenter only</aside>
+</section>
+```
+
+# Официальная документация
+
+- [Installation](https://revealjs.com/installation/)
+- [Markup](https://revealjs.com/markup/)
+- [Markdown](https://revealjs.com/markdown/)
+- [Fragments](https://revealjs.com/fragments/)
+- [PDF export](https://revealjs.com/pdf-export/)
+- [Speaker view](https://revealjs.com/speaker-view/)
+
+スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。

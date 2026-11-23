@@ -1,8 +1,8 @@
 ---
-title: 'Como Usar o reveal.js: Crie Apresentações com HTML e Markdown'
-date: "2026-09-24T19:44:38+09:00"
-slug: "HTMLでApresentação資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
+lastmod: 2026-11-23
+title: 'Como Usar o reveal.js: Crie Apresentações com HTML e Markdown'
+slug: "HTMLでApresentação資料を作る方法（reveal.js）"
 tags: ["HTML", "reveal.js", "Apresentação"]
 draft: false
 image: "img.webp"
@@ -39,7 +39,67 @@ Além disso, como a fonte da apresentação é texto, é fácil gerenciá-la com
 
 Também parece ser possível criar materiais de apresentação no formato Markdown.
 
-# Referências
+# Criar slides básicos
 
-- [Vamos usar reveal.js para materiais de apresentação no futuro](https://qiita.com/Targityen/items/40ae4795e2cb77c1adc6)
-- [Lista de exemplos de sintaxe Markdown](https://qiita.com/jkjoluvjlajelljicvjzojieoaid/items/01cd7ff819bc2e69b652)
+A opção mais simples é baixar o ZIP mais recente do Basic Setup, descompactá-lo e editar o `index.html`. Como no exemplo HTML abaixo, coloque cada slide dentro de um `<section>`. O arquivo de exemplo já contém os estilos e o código de inicialização necessários.
+
+```html
+<div class="reveal">
+  <div class="slides">
+    <section>Slide 1</section>
+    <section>Slide 2</section>
+    <section>Reveal this item <span class="fragment">when activated</span></section>
+  </div>
+</div>
+```
+
+# Escrever slides em Markdown
+
+O plugin Markdown incluído permite escrever Markdown dentro do arquivo HTML. Separe os slides horizontais com `---`. Adicione o exemplo abaixo ao `index.html`. Para carregar Markdown de um arquivo externo, é necessário um servidor web local.
+
+```html
+<section data-markdown>
+  <textarea data-template>
+## Slide 1
+---
+## Slide 2
+  </textarea>
+</section>
+```
+
+# Configuração de desenvolvimento
+
+Para usar um servidor local ou ferramentas de desenvolvimento do código-fonte, escolha o Full Setup oficial. Execute os comandos a seguir e abra `http://localhost:8000` no navegador.
+
+```sh
+git clone https://github.com/hakimel/reveal.js.git
+cd reveal.js
+npm install
+npm start
+```
+
+# Exportar para PDF
+
+Acrescente `?print-pdf` ao final da URL. No Chrome ou Chromium, escolha Salvar como PDF, orientação paisagem, sem margens e gráficos de fundo ativados. O guia oficial confirma Chrome e Chromium.
+
+# Notas do apresentador
+
+Pressione `S` para abrir a visão do apresentador em outra janela. Escreva as notas dentro de `<aside class="notes">` no slide. A visão local do apresentador requer um servidor web.
+
+```html
+<section>
+  <h2>Slide</h2>
+  <aside class="notes">Notes visible to the presenter only</aside>
+</section>
+```
+
+# Documentação oficial
+
+- [Installation](https://revealjs.com/installation/)
+- [Markup](https://revealjs.com/markup/)
+- [Markdown](https://revealjs.com/markdown/)
+- [Fragments](https://revealjs.com/fragments/)
+- [PDF export](https://revealjs.com/pdf-export/)
+- [Speaker view](https://revealjs.com/speaker-view/)
+
+スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。

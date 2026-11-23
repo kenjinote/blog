@@ -1,0 +1,106 @@
+{
+  "ja": {
+    "setup": "Basic Setupは最新版ZIPを解凍して`index.html`を編集する簡単な方法です。下のHTML例のように、各スライドを`<section>`で囲みます。Basic Setupの`index.html`には必要なスタイルと初期化コードが含まれています。",
+    "markdown": "同梱のMarkdownプラグインで、HTML内にMarkdownを書けます。`---`で横方向のスライドを分けます。次の例は`index.html`に追加します。外部Markdownファイルの読み込みにはローカルWebサーバーが必要です。",
+    "server": "ローカルWebサーバーやソース編集機能が必要な場合は、公式Full Setupを使います。次のコマンドを実行し、ブラウザーで`http://localhost:8000`を開きます。",
+    "pdf": "`?print-pdf`をURL末尾に付け、ChromeまたはChromiumの印刷画面でPDF保存、横向き、余白なし、背景グラフィック有効を選びます。公式に確認されているのはChromeとChromiumです。",
+    "notes": "発表者ビューは`S`キーで別ウィンドウに開きます。スライド内の`<aside class=\"notes\">`にノートを書けます。ローカルで使う場合はWebサーバーが必要です。",
+    "links": "公式ガイド"
+  },
+  "en": {
+    "setup": "Basic Setup is the easiest option: unzip the latest archive and edit its `index.html`. Wrap each slide in a `<section>` as in the HTML example below. The supplied Basic Setup file already includes the styles and initialization code.",
+    "markdown": "The bundled Markdown plugin lets you write Markdown inside the HTML file. Separate horizontal slides with `---`. Add the example below to `index.html`. Loading Markdown from an external file requires a local web server.",
+    "server": "For a local server or source-development tools, use the official Full Setup. Run these commands, then open `http://localhost:8000` in a browser.",
+    "pdf": "Append `?print-pdf` to the URL. In Chrome or Chromium, choose Save as PDF, landscape, no margins, and enable background graphics. The official guide confirms Chrome and Chromium.",
+    "notes": "Press `S` to open speaker view in a separate window. Add notes inside `<aside class=\"notes\">` on a slide. A local web server is required for local speaker view.",
+    "links": "Official guides"
+  },
+  "zh-cn": {
+    "setup": "Basic Setup 是最简单的方式：解压最新 ZIP 并编辑其中的 `index.html`。如下面的 HTML 示例所示，每张幻灯片放在一个 `<section>` 中。Basic Setup 的示例文件已包含样式和初始化代码。",
+    "markdown": "内置的 Markdown 插件允许你直接在 HTML 文件中写 Markdown。使用 `---` 分隔横向幻灯片。将下面的示例加入 `index.html`。从外部文件加载 Markdown 需要本地 Web 服务器。",
+    "server": "如需本地服务器或源码开发工具，请使用官方 Full Setup。运行以下命令，然后在浏览器中打开 `http://localhost:8000`。",
+    "pdf": "在网址末尾添加 `?print-pdf`。在 Chrome 或 Chromium 的打印界面选择“另存为 PDF”、横向、无边距并启用背景图形。官方指南确认支持 Chrome 和 Chromium。",
+    "notes": "按 `S` 可在单独窗口打开演讲者视图。在幻灯片的 `<aside class=\"notes\">` 中添加备注。本地使用演讲者视图需要 Web 服务器。",
+    "links": "官方指南"
+  },
+  "es": {
+    "setup": "Basic Setup es la opción más sencilla: descomprime el ZIP más reciente y edita su `index.html`. Como en el ejemplo HTML siguiente, cada diapositiva se coloca dentro de un `<section>`. El archivo de ejemplo ya incluye los estilos y el código de inicialización.",
+    "markdown": "El complemento Markdown incluido permite escribir Markdown dentro del archivo HTML. Separa las diapositivas horizontales con `---`. Añade el ejemplo siguiente a `index.html`. Cargar Markdown desde un archivo externo requiere un servidor web local.",
+    "server": "Para tener un servidor local o herramientas para desarrollar el código fuente, usa el Full Setup oficial. Ejecuta estos comandos y abre `http://localhost:8000` en el navegador.",
+    "pdf": "Añade `?print-pdf` al final de la URL. En Chrome o Chromium, elige Guardar como PDF, orientación horizontal, sin márgenes y activa los gráficos de fondo. La guía oficial confirma Chrome y Chromium.",
+    "notes": "Pulsa `S` para abrir la vista del presentador en otra ventana. Añade notas dentro de `<aside class=\"notes\">` en una diapositiva. La vista local necesita un servidor web.",
+    "links": "Guías oficiales"
+  },
+  "ko": {
+    "setup": "가장 간단한 방법은 최신 Basic Setup ZIP을 내려받아 압축을 풀고 `index.html`을 편집하는 것입니다. 아래 HTML 예시처럼 각 슬라이드를 `<section>`으로 감쌉니다. 샘플 파일에는 필요한 스타일과 초기화 코드가 들어 있습니다.",
+    "markdown": "포함된 Markdown 플러그인을 사용하면 HTML 파일 안에 Markdown을 작성할 수 있습니다. `---`로 가로 슬라이드를 나눕니다. 아래 예시를 `index.html`에 추가하세요. 외부 Markdown 파일을 불러오려면 로컬 웹 서버가 필요합니다.",
+    "server": "로컬 서버나 소스 개발 도구가 필요하면 공식 Full Setup을 사용하세요. 다음 명령을 실행한 뒤 브라우저에서 `http://localhost:8000`을 여세요.",
+    "pdf": "URL 끝에 `?print-pdf`를 추가합니다. Chrome 또는 Chromium의 인쇄 화면에서 PDF로 저장, 가로 방향, 여백 없음, 배경 그래픽 사용을 선택하세요. 공식 안내에서 확인된 브라우저는 Chrome과 Chromium입니다.",
+    "notes": "`S` 키를 누르면 별도 창에서 발표자 보기가 열립니다. 슬라이드의 `<aside class=\"notes\">` 안에 노트를 작성할 수 있습니다. 로컬 발표자 보기에는 웹 서버가 필요합니다.",
+    "links": "공식 문서"
+  },
+  "pt": {
+    "setup": "A opção mais simples é baixar o ZIP mais recente do Basic Setup, descompactá-lo e editar o `index.html`. Como no exemplo HTML abaixo, coloque cada slide dentro de um `<section>`. O arquivo de exemplo já contém os estilos e o código de inicialização necessários.",
+    "markdown": "O plugin Markdown incluído permite escrever Markdown dentro do arquivo HTML. Separe os slides horizontais com `---`. Adicione o exemplo abaixo ao `index.html`. Para carregar Markdown de um arquivo externo, é necessário um servidor web local.",
+    "server": "Para usar um servidor local ou ferramentas de desenvolvimento do código-fonte, escolha o Full Setup oficial. Execute os comandos a seguir e abra `http://localhost:8000` no navegador.",
+    "pdf": "Acrescente `?print-pdf` ao final da URL. No Chrome ou Chromium, escolha Salvar como PDF, orientação paisagem, sem margens e gráficos de fundo ativados. O guia oficial confirma Chrome e Chromium.",
+    "notes": "Pressione `S` para abrir a visão do apresentador em outra janela. Escreva as notas dentro de `<aside class=\"notes\">` no slide. A visão local do apresentador requer um servidor web.",
+    "links": "Guias oficiais"
+  },
+  "zh-tw": {
+    "setup": "最簡單的方式是下載最新版 Basic Setup ZIP、解壓縮後編輯 `index.html`。如以下 HTML 範例所示，每張投影片都放在 `<section>` 中。Basic Setup 範例檔已包含所需的樣式與初始化程式碼。",
+    "markdown": "內建的 Markdown 外掛可讓你直接在 HTML 檔中撰寫 Markdown。以 `---` 分隔水平投影片，並將以下範例加入 `index.html`。若要載入外部 Markdown 檔案，必須使用本機網頁伺服器。",
+    "server": "若需要本機伺服器或原始碼開發工具，請使用官方 Full Setup。執行下列命令後，在瀏覽器開啟 `http://localhost:8000`。",
+    "pdf": "在網址結尾加上 `?print-pdf`。在 Chrome 或 Chromium 的列印畫面選擇另存為 PDF、橫向、無邊界，並啟用背景圖形。官方指南確認的瀏覽器為 Chrome 與 Chromium。",
+    "notes": "按 `S` 可在另一個視窗開啟講者檢視。在投影片的 `<aside class=\"notes\">` 中加入備註。本機使用講者檢視需要網頁伺服器。",
+    "links": "官方指南"
+  },
+  "hi": {
+    "setup": "सबसे आसान तरीका नवीनतम Basic Setup ZIP डाउनलोड करना, उसे निकालना और `index.html` संपादित करना है। नीचे दिए HTML उदाहरण की तरह हर स्लाइड को `<section>` में रखें। Basic Setup की नमूना फ़ाइल में आवश्यक शैलियाँ और आरंभीकरण कोड पहले से शामिल हैं।",
+    "markdown": "साथ आने वाला Markdown प्लगइन HTML फ़ाइल में Markdown लिखने देता है। क्षैतिज स्लाइडों को `---` से अलग करें और नीचे का उदाहरण `index.html` में जोड़ें। बाहरी Markdown फ़ाइल लोड करने के लिए स्थानीय वेब सर्वर चाहिए।",
+    "server": "स्थानीय सर्वर या स्रोत-विकास टूल चाहिए तो आधिकारिक Full Setup चुनें। ये कमांड चलाएँ और फिर ब्राउज़र में `http://localhost:8000` खोलें।",
+    "pdf": "URL के अंत में `?print-pdf` जोड़ें। Chrome या Chromium के प्रिंट संवाद में PDF के रूप में सहेजें, लैंडस्केप, बिना मार्जिन और बैकग्राउंड ग्राफ़िक्स सक्षम करें। आधिकारिक मार्गदर्शिका Chrome और Chromium की पुष्टि करती है।",
+    "notes": "अलग विंडो में वक्ता दृश्य खोलने के लिए `S` दबाएँ। स्लाइड के `<aside class=\"notes\">` में नोट लिखें। स्थानीय वक्ता दृश्य के लिए वेब सर्वर आवश्यक है।",
+    "links": "आधिकारिक मार्गदर्शिकाएँ"
+  },
+  "fr": {
+    "setup": "La méthode la plus simple consiste à télécharger le ZIP Basic Setup le plus récent, à le décompresser et à modifier `index.html`. Comme dans l’exemple HTML ci-dessous, placez chaque diapositive dans un `<section>`. Le fichier fourni contient déjà les styles et le code d’initialisation nécessaires.",
+    "markdown": "Le plugin Markdown fourni permet d’écrire du Markdown dans le fichier HTML. Séparez les diapositives horizontales avec `---` et ajoutez l’exemple ci-dessous à `index.html`. Le chargement d’un fichier Markdown externe nécessite un serveur web local.",
+    "server": "Pour disposer d’un serveur local ou des outils de développement des sources, utilisez le Full Setup officiel. Exécutez les commandes suivantes, puis ouvrez `http://localhost:8000` dans un navigateur.",
+    "pdf": "Ajoutez `?print-pdf` à la fin de l’URL. Dans Chrome ou Chromium, choisissez l’enregistrement au format PDF, l’orientation paysage, aucune marge et les graphiques d’arrière-plan. Le guide officiel confirme Chrome et Chromium.",
+    "notes": "Appuyez sur `S` pour ouvrir la vue présentateur dans une fenêtre distincte. Ajoutez les notes dans `<aside class=\"notes\">` sur une diapositive. La vue présentateur en local nécessite un serveur web.",
+    "links": "Guides officiels"
+  },
+  "de": {
+    "setup": "Am einfachsten ist es, das neueste ZIP des Basic Setup herunterzuladen, zu entpacken und `index.html` zu bearbeiten. Wie im folgenden HTML-Beispiel wird jede Folie in ein `<section>` eingeschlossen. Die Beispieldatei enthält bereits die benötigten Styles und den Initialisierungscode.",
+    "markdown": "Mit dem enthaltenen Markdown-Plugin können Sie Markdown direkt in der HTML-Datei schreiben. Trennen Sie horizontale Folien mit `---` und fügen Sie das folgende Beispiel in `index.html` ein. Zum Laden einer externen Markdown-Datei ist ein lokaler Webserver erforderlich.",
+    "server": "Wenn Sie einen lokalen Server oder Werkzeuge für die Quellcodeentwicklung benötigen, verwenden Sie das offizielle Full Setup. Führen Sie die folgenden Befehle aus und öffnen Sie danach `http://localhost:8000` im Browser.",
+    "pdf": "Hängen Sie `?print-pdf` an die URL an. Wählen Sie im Druckdialog von Chrome oder Chromium Als PDF speichern, Querformat, keine Ränder und aktivierte Hintergrundgrafiken. Die offizielle Anleitung bestätigt Chrome und Chromium.",
+    "notes": "Drücken Sie `S`, um die Referentenansicht in einem separaten Fenster zu öffnen. Notizen können Sie innerhalb von `<aside class=\"notes\">` auf einer Folie einfügen. Lokal benötigt die Referentenansicht einen Webserver.",
+    "links": "Offizielle Anleitungen"
+  },
+  "ar": {
+    "setup": "أسهل طريقة هي تنزيل أحدث ملف ZIP من Basic Setup وفك ضغطه ثم تحرير `index.html`. كما في مثال HTML أدناه، ضع كل شريحة داخل `<section>`. يتضمن ملف Basic Setup التجريبي الأنماط وشيفرة التهيئة اللازمة.",
+    "markdown": "تتيح إضافة Markdown المرفقة كتابة Markdown داخل ملف HTML. افصل الشرائح الأفقية باستخدام `---` وأضف المثال أدناه إلى `index.html`. يتطلب تحميل ملف Markdown خارجي خادم ويب محليًا.",
+    "server": "إذا احتجت إلى خادم محلي أو أدوات تطوير المصدر، فاستخدم Full Setup الرسمي. نفّذ الأوامر التالية ثم افتح `http://localhost:8000` في المتصفح.",
+    "pdf": "أضف `?print-pdf` إلى نهاية عنوان URL. في نافذة الطباعة في Chrome أو Chromium اختر الحفظ بصيغة PDF، والاتجاه الأفقي، ومن دون هوامش، مع تفعيل رسومات الخلفية. يؤكد الدليل الرسمي Chrome وChromium.",
+    "notes": "اضغط `S` لفتح عرض المتحدث في نافذة منفصلة. أضف الملاحظات داخل `<aside class=\"notes\">` في الشريحة. يحتاج عرض المتحدث محليًا إلى خادم ويب.",
+    "links": "الأدلة الرسمية"
+  },
+  "ru": {
+    "setup": "Проще всего скачать последнюю ZIP-версию Basic Setup, распаковать её и отредактировать `index.html`. Как в примере HTML ниже, поместите каждый слайд в `<section>`. В демонстрационный файл Basic Setup уже включены нужные стили и код инициализации.",
+    "markdown": "Встроенный плагин Markdown позволяет писать Markdown прямо в HTML-файле. Разделяйте горизонтальные слайды с помощью `---` и добавьте пример ниже в `index.html`. Для загрузки внешнего файла Markdown нужен локальный веб-сервер.",
+    "server": "Если нужны локальный сервер или инструменты для разработки исходного кода, используйте официальный Full Setup. Выполните команды ниже, затем откройте в браузере `http://localhost:8000`.",
+    "pdf": "Добавьте `?print-pdf` в конец URL. В окне печати Chrome или Chromium выберите сохранение в PDF, альбомную ориентацию, отсутствие полей и включение фоновой графики. В официальном руководстве подтверждены Chrome и Chromium.",
+    "notes": "Нажмите `S`, чтобы открыть режим докладчика в отдельном окне. Добавляйте заметки в `<aside class=\"notes\">` на слайде. Для локального режима докладчика нужен веб-сервер.",
+    "links": "Официальные руководства"
+  },
+  "id": {
+    "setup": "Cara termudah adalah mengunduh ZIP Basic Setup terbaru, mengekstraknya, lalu mengedit `index.html`. Seperti pada contoh HTML di bawah, tempatkan setiap slide di dalam `<section>`. Berkas contoh Basic Setup sudah menyertakan gaya dan kode inisialisasi yang diperlukan.",
+    "markdown": "Plugin Markdown yang disertakan memungkinkan Anda menulis Markdown di dalam berkas HTML. Pisahkan slide horizontal dengan `---` dan tambahkan contoh berikut ke `index.html`. Memuat berkas Markdown eksternal memerlukan server web lokal.",
+    "server": "Jika memerlukan server lokal atau alat pengembangan sumber, gunakan Full Setup resmi. Jalankan perintah berikut, lalu buka `http://localhost:8000` di browser.",
+    "pdf": "Tambahkan `?print-pdf` di akhir URL. Di dialog cetak Chrome atau Chromium, pilih Simpan sebagai PDF, orientasi lanskap, tanpa margin, dan aktifkan grafik latar. Panduan resmi mengonfirmasi Chrome dan Chromium.",
+    "notes": "Tekan `S` untuk membuka tampilan pembicara di jendela terpisah. Tambahkan catatan di dalam `<aside class=\"notes\">` pada slide. Tampilan pembicara lokal memerlukan server web.",
+    "links": "Panduan resmi"
+  }
+}

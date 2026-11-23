@@ -1,11 +1,11 @@
 ---
+date: 2023-04-06T23:23:46+09:00
+lastmod: 2026-11-23
 
 
 
 title: 'reveal.js 사용법: HTML과 Markdown으로 프레젠테이션 자료 작성'
-date: "2026-09-24T19:44:38+09:00"
 slug: "HTMLで프레젠테이션資料を作る方法（reveal.js）"
-date: 2023-04-06T23:23:46+09:00
 tags: ["HTML", "reveal.js", "프레젠테이션"]
 draft: false
 image: "img.webp"
@@ -45,7 +45,67 @@ reveal.js는 HTML과 Markdown을 사용한 프레젠테이션 작성 도구로, 
 
 마크다운 형식으로 프레젠테이션 자료를 작성하는 것도 가능한 것 같습니다.
 
-# 참고
+# 기본 슬라이드 만들기
 
-- [앞으로 프레젠테이션 자료는 reveal.js를 사용하자](https://qiita.com/Targityen/items/40ae4795e2cb77c1adc6)
-- [Markdown 표기법 샘플 목록](https://qiita.com/jkjoluvjlajelljicvjzojieoaid/items/01cd7ff819bc2e69b652)
+가장 간단한 방법은 최신 Basic Setup ZIP을 내려받아 압축을 풀고 `index.html`을 편집하는 것입니다. 아래 HTML 예시처럼 각 슬라이드를 `<section>`으로 감쌉니다. 샘플 파일에는 필요한 스타일과 초기화 코드가 들어 있습니다.
+
+```html
+<div class="reveal">
+  <div class="slides">
+    <section>Slide 1</section>
+    <section>Slide 2</section>
+    <section>Reveal this item <span class="fragment">when activated</span></section>
+  </div>
+</div>
+```
+
+# Markdown으로 슬라이드 작성
+
+포함된 Markdown 플러그인을 사용하면 HTML 파일 안에 Markdown을 작성할 수 있습니다. `---`로 가로 슬라이드를 나눕니다. 아래 예시를 `index.html`에 추가하세요. 외부 Markdown 파일을 불러오려면 로컬 웹 서버가 필요합니다.
+
+```html
+<section data-markdown>
+  <textarea data-template>
+## Slide 1
+---
+## Slide 2
+  </textarea>
+</section>
+```
+
+# 개발 환경 설정
+
+로컬 서버나 소스 개발 도구가 필요하면 공식 Full Setup을 사용하세요. 다음 명령을 실행한 뒤 브라우저에서 `http://localhost:8000`을 여세요.
+
+```sh
+git clone https://github.com/hakimel/reveal.js.git
+cd reveal.js
+npm install
+npm start
+```
+
+# PDF로 내보내기
+
+URL 끝에 `?print-pdf`를 추가합니다. Chrome 또는 Chromium의 인쇄 화면에서 PDF로 저장, 가로 방향, 여백 없음, 배경 그래픽 사용을 선택하세요. 공식 안내에서 확인된 브라우저는 Chrome과 Chromium입니다.
+
+# 발표자 노트
+
+`S` 키를 누르면 별도 창에서 발표자 보기가 열립니다. 슬라이드의 `<aside class="notes">` 안에 노트를 작성할 수 있습니다. 로컬 발표자 보기에는 웹 서버가 필요합니다.
+
+```html
+<section>
+  <h2>Slide</h2>
+  <aside class="notes">Notes visible to the presenter only</aside>
+</section>
+```
+
+# 공식 문서
+
+- [Installation](https://revealjs.com/installation/)
+- [Markup](https://revealjs.com/markup/)
+- [Markdown](https://revealjs.com/markdown/)
+- [Fragments](https://revealjs.com/fragments/)
+- [PDF export](https://revealjs.com/pdf-export/)
+- [Speaker view](https://revealjs.com/speaker-view/)
+
+スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。

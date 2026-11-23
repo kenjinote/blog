@@ -1,8 +1,8 @@
 ---
-title: 'كيفية استخدام reveal.js: إنشاء عروض تقديمية باستخدام HTML و Markdown'
-date: "2026-09-24T19:44:38+09:00"
-slug: "HTMLでعرض تقديمي資料を作る方法（reveal.js）"
 date: 2023-04-06T23:23:46+09:00
+lastmod: 2026-11-23
+title: 'كيفية استخدام reveal.js: إنشاء عروض تقديمية باستخدام HTML و Markdown'
+slug: "HTMLでعرض تقديمي資料を作る方法（reveal.js）"
 tags: ["HTML", "reveal.js", "عرض تقديمي"]
 draft: false
 image: "img.webp"
@@ -39,7 +39,67 @@ description: 'نشرح تثبيت والاستخدام الأساسي لأداة
 
 يبدو أنه يمكنك أيضًا إنشاء عروض تقديمية بتنسيق Markdown.
 
-# المراجع
+# إنشاء شرائح أساسية
 
-- [لنستخدم reveal.js للعروض التقديمية المستقبلية](https://qiita.com/Targityen/items/40ae4795e2cb77c1adc6)
-- [قائمة أمثلة على صيغة Markdown](https://qiita.com/jkjoluvjlajelljicvjzojieoaid/items/01cd7ff819bc2e69b652)
+أسهل طريقة هي تنزيل أحدث ملف ZIP من Basic Setup وفك ضغطه ثم تحرير `index.html`. كما في مثال HTML أدناه، ضع كل شريحة داخل `<section>`. يتضمن ملف Basic Setup التجريبي الأنماط وشيفرة التهيئة اللازمة.
+
+```html
+<div class="reveal">
+  <div class="slides">
+    <section>Slide 1</section>
+    <section>Slide 2</section>
+    <section>Reveal this item <span class="fragment">when activated</span></section>
+  </div>
+</div>
+```
+
+# كتابة الشرائح بصيغة Markdown
+
+تتيح إضافة Markdown المرفقة كتابة Markdown داخل ملف HTML. افصل الشرائح الأفقية باستخدام `---` وأضف المثال أدناه إلى `index.html`. يتطلب تحميل ملف Markdown خارجي خادم ويب محليًا.
+
+```html
+<section data-markdown>
+  <textarea data-template>
+## Slide 1
+---
+## Slide 2
+  </textarea>
+</section>
+```
+
+# إعداد التطوير
+
+إذا احتجت إلى خادم محلي أو أدوات تطوير المصدر، فاستخدم Full Setup الرسمي. نفّذ الأوامر التالية ثم افتح `http://localhost:8000` في المتصفح.
+
+```sh
+git clone https://github.com/hakimel/reveal.js.git
+cd reveal.js
+npm install
+npm start
+```
+
+# التصدير إلى PDF
+
+أضف `?print-pdf` إلى نهاية عنوان URL. في نافذة الطباعة في Chrome أو Chromium اختر الحفظ بصيغة PDF، والاتجاه الأفقي، ومن دون هوامش، مع تفعيل رسومات الخلفية. يؤكد الدليل الرسمي Chrome وChromium.
+
+# ملاحظات المتحدث
+
+اضغط `S` لفتح عرض المتحدث في نافذة منفصلة. أضف الملاحظات داخل `<aside class="notes">` في الشريحة. يحتاج عرض المتحدث محليًا إلى خادم ويب.
+
+```html
+<section>
+  <h2>Slide</h2>
+  <aside class="notes">Notes visible to the presenter only</aside>
+</section>
+```
+
+# الوثائق الرسمية
+
+- [Installation](https://revealjs.com/installation/)
+- [Markup](https://revealjs.com/markup/)
+- [Markdown](https://revealjs.com/markdown/)
+- [Fragments](https://revealjs.com/fragments/)
+- [PDF export](https://revealjs.com/pdf-export/)
+- [Speaker view](https://revealjs.com/speaker-view/)
+
+スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。
