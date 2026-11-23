@@ -1,88 +1,55 @@
 ---
-title: 'Cara Mengatur Domain Kustom ke Repositori GitHub | Edisi Onamae.com'
-date: "2026-09-24T19:44:38+09:00"
+
 slug: "GithubRepositoriにカスタムDomainを設定する方法"
-date: 2022-09-13T01:16:40+09:00
 tags: ["Github","Domain"]
 draft: false
 image: "images/octocat.webp"
 categories: ["tools-development-environment"]
-description: 'Menjelaskan langkah-langkah mengatur domain kustom untuk repositori GitHub (GitHub Pages). Kali ini, kami memperkenalkan langkah spesifik dari menambahkan/mengubah A record DNS dari layar manajemen ''Onamae.com'' hingga mengintegrasikannya dengan GitHub.'
+title: "Mengatur domain kustom untuk GitHub Pages"
+date: "2022-09-13T01:16:40+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "Panduan verifikasi kepemilikan domain, pengaturan DNS, aktivasi HTTPS, serta perbedaan publikasi melalui branch dan GitHub Actions."
 ---
-Untuk mengatur domain kustom pada repositori Github, Anda perlu mengubah pengaturan DNS domain tersebut.
-Di sini, kami berasumsi bahwa Anda mengelola domain Anda menggunakan
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-untuk menjelaskan prosesnya.
-Pengaturan serupa juga dapat dilakukan dengan menulis ulang data A di pendaftar lain.
 
+GitHub Pages dapat menerbitkan situs repositori menggunakan domain milik Anda. Verifikasi domain melalui akun atau organisasi GitHub sebelum mengaturnya untuk mengurangi risiko pengambilalihan. Nama menu pengaturan GitHub dapat berubah.
 
+## Tambahkan domain ke GitHub Pages
 
+1. Verifikasi domain terlebih dahulu melalui akun yang mengelolanya. Lalu buka **Settings → Pages** pada repositori situs, masukkan domain di Custom domain, dan simpan. Tambahkan domain ke GitHub Pages sebelum mengubah DNS.
 
-## Mengubah Pengaturan DNS di Onamae.com
-Untuk mengubah pengaturan DNS domain, masuk ke panel manajemen
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">.
-Setelah masuk, buka layar manajemen domain.
-Setelah Anda berada di layar manajemen domain, ubah pengaturan DNS.
-Untuk mengubah pengaturan DNS, ikuti langkah-langkah berikut.
-1. Kunjungi https://www.onamae.com/ dan klik "Login Onamae.com Navi"
-2. Masukkan "ID Onamae (ID Anggota)" dan "Kata Sandi" lalu klik tombol login
-3. Klik "Pengaturan Server Nama"
-4. Klik "Pengaturan DNS Domain"
-5. Pilih domain yang ingin Anda atur dan klik "Berikutnya"
-6. Klik "Atur" di sebelah kanan "Gunakan pengaturan catatan DNS"
-7. Pilih A untuk TYPE, masukkan 3600 untuk TTL, dan "185.199.108.153" untuk VALUE, lalu klik "Tambah"
-8. Mirip dengan langkah 7, tambahkan juga "185.199.109.153", "185.199.110.153", dan "185.199.111.153"
-9. Di "Konfirmasi perubahan server nama untuk pengaturan catatan DNS", pastikan kotak dicentang dan klik "Lanjut ke layar pengaturan"
-10. Jika layar bertuliskan "Untuk mencegah perubahan pengaturan DNS yang tidak disengaja" muncul, klik "Jangan atur" (pilih sesuai kebutuhan)
-11. Periksa pengaturan dan klik "Atur"
-![img.png](images/img.webp)
-12. Ini melengkapi pengaturan DNS. Mungkin butuh hingga sekitar 72 jam agar pembaruan selesai.
-13. Jika perubahan tidak tercermin setelah 72 jam, silakan hubungi dukungan Onamae.com.
+## Atur record DNS
 
-Untuk memeriksa apakah pengaturan telah tercermin di lingkungan lokal Anda, silakan coba jalankan perintah berikut.
-Ganti `example.com` dengan domain yang ingin Anda periksa.
+2. Buat record yang sesuai di penyedia DNS. Untuk domain apex seperti `example.com`, gunakan empat record A berikut atau ALIAS/ANAME jika penyedia mendukungnya. Tambahkan AAAA bila ingin memakai IPv6. Untuk `www.example.com`, buat CNAME yang mengarah ke `OWNER.github.io` tanpa nama repositori. Atur kedua kelompok bila ingin memakai apex dan www. Periksa record bawaan yang bertentangan dan jangan gunakan DNS wildcard.
 
-### Untuk Linux dan Mac
+| Domain | Type | Name | Value |
+| --- | --- | --- | --- |
+| `example.com` | A | `@` | `185.199.108.153` |
+| `example.com` | A | `@` | `185.199.109.153` |
+| `example.com` | A | `@` | `185.199.110.153` |
+| `example.com` | A | `@` | `185.199.111.153` |
+| `example.com` | AAAA (optional) | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
+| `www.example.com` | CNAME | `www` | `OWNER.github.io` (without the repository name) |
+
+For an apex domain, an ALIAS/ANAME record pointing to `OWNER.github.io` is another option when your DNS provider supports it. Do not create a CNAME at the apex. Replace `OWNER` with the account or organization that owns the Pages site.
+
+## Periksa propagasi DNS
+
+Perubahan DNS dapat memerlukan waktu hingga 24 jam untuk menyebar. Ganti contoh dengan nama host Anda. Periksa record A untuk IPv4, AAAA untuk IPv6 bila disetel, dan CNAME www secara terpisah.
+
+```powershell
+Resolve-DnsName example.com -Type A
+Resolve-DnsName www.example.com -Type CNAME
+```
+
 ```bash
 dig example.com +noall +answer -t A
-```
-Jika hasilnya seperti berikut, pengaturan telah diterapkan.
-```bash
-example.com.              0       IN      A       185.199.108.153
-example.com.              0       IN      A       185.199.109.153
-example.com.              0       IN      A       185.199.110.153
-example.com.              0       IN      A       185.199.111.153
+dig www.example.com +noall +answer -t CNAME
 ```
 
-### Untuk Windows
-```bash
-nslookup -q=a example.com 8.8.8.8
-```
-Jika hasilnya seperti berikut, pengaturan telah diterapkan.
-```bash
-サーバー:  dns.google
-Address:  8.8.8.8
+## Aktifkan HTTPS dan periksa metode publikasi
 
-権限のない回答:
-名前:    example.com
-Addresses:  185.199.108.153
-          185.199.109.153
-          185.199.110.153
-          185.199.111.153
-```
-
-## Mengatur Domain Kustom di Repositori Github
-1. Buka halaman repositori dan klik Settings (Pengaturan)
-2. Klik Pages (Halaman)
-3. Jika Anda mempublikasikan sumber repositori apa adanya, pilih "Deploy from a branch" di bagian Source. Jika Anda membangun sumber seperti HUGO, pilih "[GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)".
-4. Pilih cabang yang akan dipublikasikan di bawah Branch dan klik Save (Simpan)
-5. Masukkan domain yang Anda peroleh di Custom domain (Domain kustom) dan klik Save.
-6. Jika perlu, centang kotak "Enforce HTTPS" untuk mengaktifkan dukungan HTTPS
+Setelah GitHub mengenali DNS dan menerbitkan sertifikat, aktifkan **Enforce HTTPS** di Settings → Pages. Opsi ini mungkin perlu waktu untuk tersedia. Publikasi dari branch menambahkan file CNAME di akar sumber publikasi saat domain disimpan. Alur publikasi GitHub Actions kustom tidak membuat file CNAME dan mengabaikan file yang sudah ada.
 
 
-[PR]
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HQGAP" rel="nofollow">
-<img border="0" width="468" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=231009310700&wid=003&eno=01&mid=s00000000018015072000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HQGAP" alt="">
+
+GitHubの公式資料： [About custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages), [Manage DNS and custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Verify a domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages), [HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https), and [troubleshooting](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages).

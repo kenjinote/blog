@@ -1,90 +1,55 @@
 ---
-title: '为GitHub仓库设置自定义域名的方法｜Onamae.com篇'
-date: "2026-09-24T19:44:38+09:00"
+
 slug: "Github仓库にカスタム域名を設定する方法"
-date: 2022-09-13T01:16:40+09:00
 tags: ["Github","域名"]
 draft: false
 image: "images/octocat.webp"
 categories: ["tools-development-environment"]
-description: '本文讲解为GitHub仓库（GitHub Pages）设置自定义域名的步骤。这次将介绍从“Onamae.com”的管理界面添加/修改DNS的A记录，并与GitHub关联的具体步骤。'
+title: "为 GitHub Pages 设置自定义域名"
+date: "2022-09-13T01:16:40+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "介绍如何验证域名所有权、配置 DNS 记录并为 GitHub Pages 启用 HTTPS，同时说明分支与 GitHub Actions 发布方式的差异。"
 ---
-要为 Github 仓库配置自定义域名，你需要修改域名的 DNS 设置。
-这里我们假设你是在
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">お名前.com</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-管理你的域名来进行说明。
-在其他注册商处，也可以通过重写 A 记录来进行类似的设置。
 
+GitHub Pages 可以使用自有域名发布仓库网站。为降低域名被接管的风险，请先在 GitHub 账户或组织中验证域名，再进行配置。GitHub 设置界面的名称可能会调整。
 
+## 在 GitHub Pages 添加域名
 
+1. 先使用管理该域名的账户完成验证。然后打开网站仓库的 **Settings → Pages**，在 Custom domain 中输入域名并保存。请先在 GitHub Pages 添加域名，再修改 DNS。
 
-## 在お名前.com中修改 DNS 设置
-要修改域名的 DNS 设置，请登录
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">お名前.com</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-的管理界面。
-登录后，进入域名管理界面。
-进入域名管理界面后，修改 DNS 设置。
-要修改 DNS 设置，请按照以下步骤操作：
-1. 访问 https://www.onamae.com/ 并点击“お名前.com Navi 登录”
-2. 输入“お名前ID（会员ID）”和“密码”，然后点击登录按钮
-3. 点击“名称服务器设置”
-4. 点击“域名的 DNS 设置”
-5. 选择要设置的域名，然后点击“下一步”
-6. 点击“使用 DNS 记录设置”右侧的“设置”
-7. 在 TYPE 中选择 A，在 TTL 中输入 3600，在 VALUE 中输入“185.199.108.153”，然后点击“添加”
-8. 按照与步骤 7 相同的方法，添加“185.199.109.153”、“185.199.110.153”和“185.199.111.153”
-9. 确认勾选了“DNS 记录设置用名称服务器更改确认”，然后点击“进入设置界面”
-10. 如果出现“为了防止意外的 DNS 设置更改”的界面，请点击“不设置”（可根据需要选择）
-11. 确认设置内容，然后点击“设置”
-![img.png](images/img.webp)
-12. 这样 DNS 设置就完成了。最多可能需要约 72 小时才能完成生效。
-13. 如果 72 小时后仍未生效，请尝试联系お名前.com的支持人员。
+## 配置 DNS 记录
 
-要在本地环境中确认设置是否已生效，请尝试运行以下命令。
-请将 `example.com` 替换为您要确认的域名。
+2. 在 DNS 服务商处创建对应记录。对于 `example.com` 这样的根域名，添加下面四条 A 记录；如果服务商支持，也可使用 ALIAS/ANAME。需要 IPv6 时可添加 AAAA。对于 `www.example.com`，创建指向 `OWNER.github.io` 的 CNAME，不要附加仓库名。若同时使用根域名和 www，请配置两组记录。检查冲突的默认记录，不要使用通配符 DNS。
 
-### 对于 Linux、Mac
+| Domain | Type | Name | Value |
+| --- | --- | --- | --- |
+| `example.com` | A | `@` | `185.199.108.153` |
+| `example.com` | A | `@` | `185.199.109.153` |
+| `example.com` | A | `@` | `185.199.110.153` |
+| `example.com` | A | `@` | `185.199.111.153` |
+| `example.com` | AAAA (optional) | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
+| `www.example.com` | CNAME | `www` | `OWNER.github.io` (without the repository name) |
+
+For an apex domain, an ALIAS/ANAME record pointing to `OWNER.github.io` is another option when your DNS provider supports it. Do not create a CNAME at the apex. Replace `OWNER` with the account or organization that owns the Pages site.
+
+## 检查 DNS 传播
+
+DNS 更新传播可能需要最多 24 小时。将示例替换为实际主机名，分别检查 IPv4 的 A 记录、已配置时的 IPv6 AAAA 记录，以及 www 的 CNAME。
+
+```powershell
+Resolve-DnsName example.com -Type A
+Resolve-DnsName www.example.com -Type CNAME
+```
+
 ```bash
 dig example.com +noall +answer -t A
-```
-如果结果如下所示，则说明设置已生效。
-```bash
-example.com.              0       IN      A       185.199.108.153
-example.com.              0       IN      A       185.199.109.153
-example.com.              0       IN      A       185.199.110.153
-example.com.              0       IN      A       185.199.111.153
+dig www.example.com +noall +answer -t CNAME
 ```
 
-### 对于 Windows
-```bash
-nslookup -q=a example.com 8.8.8.8
-```
-如果结果如下所示，则说明设置已生效。
-```bash
-服务器:  dns.google
-Address:  8.8.8.8
+## 启用 HTTPS 并确认发布方式
 
-非权威应答:
-名称:    example.com
-Addresses:  185.199.108.153
-          185.199.109.153
-          185.199.110.153
-          185.199.111.153
-```
-
-## 为 Github 仓库配置自定义域名
-1. 打开仓库页面，点击 Settings
-2. 点击 Pages
-3. 如果直接发布仓库源码，在 Source 中选择“Deploy from a branch”。如果需要编译源码（如 HUGO），则选择“[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)”。
-4. 在 Branch 中选择要发布的分支，然后点击 Save
-5. 在 Custom domain 中输入已获取的域名，然后点击 Save。
-6. 根据需要勾选“Enforce HTTPS”以启用 HTTPS 支持
+GitHub 识别 DNS 并签发证书后，在 Settings → Pages 中启用 **Enforce HTTPS**。该选项可能需要一段时间才会出现。从分支发布时，保存域名会在发布源根目录添加 CNAME 文件。自定义 GitHub Actions 发布流程不会创建 CNAME 文件，也会忽略已有文件。
 
 
-[PR]
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HQGAP" rel="nofollow">
-<img border="0" width="468" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=231009310700&wid=003&eno=01&mid=s00000000018015072000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HQGAP" alt="">
 
+GitHubの公式資料： [About custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages), [Manage DNS and custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Verify a domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages), [HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https), and [troubleshooting](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages).

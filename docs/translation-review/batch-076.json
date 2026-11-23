@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "article": "Githubリポジトリにカスタムドメインを設定する方法",
+  "frozenSourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+  ],
+  "findings": [
+    "Preserved the original 2022-09-13 date, removed the conflicting injected 2026 date, and set lastmod 2026-11-23 in all editions.",
+    "Replaced registrar-specific Onamae.com walkthrough and affiliate tracking pixels with provider-neutral GitHub Pages setup instructions.",
+    "Updated DNS propagation estimate from 72 hours to GitHub’s current up-to-24-hour guidance; added domain verification before setup and the order to register with Pages before changing DNS.",
+    "Added current apex A/optional AAAA and ALIAS/ANAME guidance, www CNAME target, wildcard-DNS caution, Windows/Linux DNS checks, HTTPS provisioning, and branch-versus-Actions CNAME behavior."
+  ],
+  "validation": "docs/translation-review/validation-076.json",
+  "scope": "Read the full Japanese article and all twelve translations. Checked current official GitHub Pages guidance, domain security, DNS records and addresses, verification order, propagation, HTTPS, and publishing workflow notes.",
+  "publicationPending": true,
+  "reviews": {
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "a313d1197038f0c3d0916e2e8d13cbb54a54414fb63c0370c577a06fce84ab3a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "30ec81410d1342d95595d418e74b1e8b635ab093e27ca42e1c4957f75e917fb3",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "9342d276d461f31cc88fb03f6041ace288c46bd080c2d28bbf97911e805b2a3d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "1fa6a6193231e800c333adeceac35f297cf315aa78744473e6096c8feedf2568",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "3f00305e415778087105697fd43442ab29e0d795e404e88d36285909ce0cdbae",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "6ad09c0cf09d34fbe5139bf3afd8c7f2bb13c34f59ee702e271d6d1489deb72e",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "f64c4e440c9a94e034ed6c5f876bbd9d4465eaab3a6f3aed5c48baf4978b5ecc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "e2f743c3f0edc219f62fa793520c460f30269a12f3162462e5efd4f09fc7dad5",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "f00fed4fcca42c0b6943c10a0e17184012c459c2bf9aea9741e577e24c1b037d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "e240224997fffa54fc112333204287c649780cc9bfb7e9b63fcc2a9054e85fb0",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "8f01b0a463f71069cb98d19b1c58efa46a5a7e1c04ddf4aa2fcd66c65638738a",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    },
+    "post/Githubリポジトリにカスタムドメインを設定する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "sourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+      "translationHash": "85e62a8e39f62ecb7c48658853b1aef0b36b599d3fea60bc932c6e7f228ac7ae",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and complete localized edition. Compared domain verification order, repository Pages setup, DNS record options, apex/www behavior, propagation guidance, HTTPS provisioning, and publishing-source differences."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for apex domain, A/AAAA/CNAME/ALIAS/ANAME records, DNS propagation, custom-domain verification, certificate provisioning, branch publishing, and GitHub Actions."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or calculations."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the DNS table and dig/Resolve-DnsName commands, all listed GitHub Pages IPv4 and IPv6 addresses, host placeholders, record types, and CNAME target. No DNS changes or commands against a real domain were performed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked five official GitHub Pages documents covering supported custom domains, DNS management, ownership verification, HTTPS, and troubleshooting."
+        }
+      },
+      "summary": "Replaced registrar-specific instructions and advertising pixels with provider-neutral GitHub Pages setup guidance. Added account/organization domain verification, configuring Pages before DNS, apex A/AAAA and ALIAS/ANAME options, www CNAME, no-wildcard advice, current 24-hour propagation guidance, HTTPS certificate timing, and branch versus Actions CNAME behavior.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No registrar account, repository Settings/Pages control, or DNS zone was accessed or changed; the steps were not tested with a live domain.",
+        "GitHub settings labels and DNS-provider interfaces can change; readers are linked to current official documentation."
+      ]
+    }
+  }
+}

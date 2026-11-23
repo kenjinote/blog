@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "batch": 76,
+  "article": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法",
+  "reviewedAt": "2026-11-23",
+  "files": {
+    "ar": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.ar.md",
+      "normalizedBytes": 4264,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "de": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.de.md",
+      "normalizedBytes": 4026,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "en": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.en.md",
+      "normalizedBytes": 3698,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "es": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.es.md",
+      "normalizedBytes": 3862,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "fr": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.fr.md",
+      "normalizedBytes": 3994,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "hi": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.hi.md",
+      "normalizedBytes": 5607,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "id": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.id.md",
+      "normalizedBytes": 3706,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "ko": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.ko.md",
+      "normalizedBytes": 4054,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "ja": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.md",
+      "normalizedBytes": 4254,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "pt": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.pt.md",
+      "normalizedBytes": 3804,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "ru": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.ru.md",
+      "normalizedBytes": 4858,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "zh-cn": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.zh-cn.md",
+      "normalizedBytes": 3593,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    },
+    "zh-tw": {
+      "path": "content/content/post/Githubリポジトリにカスタムドメインを設定する方法/index.zh-tw.md",
+      "normalizedBytes": 3577,
+      "date": "2022-09-13T01:16:40+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 4,
+      "codeBlocks": 2,
+      "referenceUrls": [
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+      ]
+    }
+  },
+  "sharedSourceHash": "9cd6dc798a00d9969fe75faf5b24f0f8bfa476086f265546182f1c130ed71a81",
+  "sharedReferenceUrls": [
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site",
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages",
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+    "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages"
+  ],
+  "allThirteenReviewed": true,
+  "commandsExecuted": [
+    "python scripts/test_multilingual.py",
+    "python scripts/test_math_rendering.py",
+    "python scripts/test_translation_reviews.py",
+    "python scripts/translation_reviews.py check",
+    "git diff --check",
+    "custom 13-edition content, DNS-value, date, source-link, section and obsolete-content assertions"
+  ],
+  "humanOrNativeSpeakerReview": false,
+  "result": "passed"
+}

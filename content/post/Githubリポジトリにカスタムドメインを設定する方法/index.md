@@ -1,91 +1,55 @@
 ---
-title: 'GitHubリポジトリにカスタムドメインを設定する方法｜お名前.com編'
-date: "2026-09-24T19:44:38+09:00"
+
 slug: "Githubリポジトリにカスタムドメインを設定する方法"
-date: 2022-09-13T01:16:40+09:00
 tags: ["Github","ドメイン"]
 draft: false
 image: "images/octocat.webp"
 categories: ["tools-development-environment"]
-description: 'GitHubリポジトリ（GitHub Pages）にカスタムドメインを設定する手順を解説します。今回は「お名前.com」の管理画面からDNSのAレコードを追加・変更し、GitHubと連携させるまでの具体的なステップを紹介します。'
+title: "GitHub Pagesにカスタムドメインを設定する方法"
+date: "2022-09-13T01:16:40+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "GitHub Pagesで独自ドメインを使う手順を、ドメイン検証、DNSのA・AAAA・CNAME設定、HTTPS、公開方式ごとの注意点とともに説明します。"
 ---
-Githubリポジトリにカスタムドメインを設定するには、ドメインのDNS設定を変更する必要があります。
-ここでは、
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">お名前.com</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-でドメインを管理していることを想定して説明します。
-他のレジストラでもAレコードを書き換えることで同様の設定が可能です。
 
+GitHub Pagesでは、リポジトリのサイトを独自ドメインで公開できます。DNSを変更する前にドメインをGitHubアカウントまたはOrganizationで検証し、ドメイン乗っ取りを防いでください。設定画面の名称はGitHubの更新で変わることがあります。
 
+## GitHub Pagesにドメインを登録する
 
+1. ドメインを所有者アカウントで検証した後、対象リポジトリの **Settings → Pages** を開き、Custom domain にドメインを入力して保存します。DNSを切り替える前にGitHub Pagesへ登録してください。
 
-## お名前.comでDNSの設定を変更する
-ドメインのDNSの設定を変更するには、
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">お名前.com</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-の管理画面にログインします。
-ログイン後、ドメインの管理画面に移動します。
-ドメインの管理画面に移動したら、DNS設定を変更します。
-DNS設定を変更するには、以下のように設定します。
-1. https://www.onamae.com/ にアクセスして「お名前.com Navi ログイン」をクリック
-2. 「お名前ID（会員ID）」と「パスワード」を入力してログインボタンをクリック
-3. 「ネームサーバーの設定」をクリック
-4. 「ドメインのDNS設定」をクリック
-5. 設定したいドメインを選択して「次へ」をクリック
-6. 「DNSレコード設定を利用する」の右の「設定する」をクリック
-7. TYPEにAを選択して、TTLに3600、VALUEに「185.199.108.153」と入力して「追加」をクリック
-8. 7.と同様に「185.199.109.153」「185.199.110.153」「185.199.111.153」についても追加する
-9. 「DNSレコード設定用ネームサーバー変更確認」でチェックがついていることを確認して「設定画面へ進む」をクリック
-10. 「意図しないDNS設定変更を防ぐために」という画面が表示されたら「設定しない」をクリック（必要に応じて選択してください）
-11. 設定内容を確認して「設定する」をクリック
-![img.png](images/img.webp)
-12. これでDNS設定は以上となります。反映完了まで最大72時間程度かかる場合があります。
-13. 72時間経っても反映されない場合は、お名前.comのサポートに問い合わせてみてください。
+## DNSレコードを設定する
 
-ローカルの環境で設定が反映されているか確認するには下記のコマンドを実行してみ見てください。
-`example.com`の部分は、確認したいドメインに置き換えてください。
+2. DNS事業者の管理画面で、ドメインの種類に合うレコードを設定します。apex（`example.com`）には下記4つのAレコード、または事業者が対応するALIAS/ANAMEを使います。IPv6を使う場合はAAAAも追加できます。`www.example.com`にはCNAMEを作り、リポジトリ名を含めず`OWNER.github.io`へ向けます。apexとwwwの両方を使う場合はそれぞれ設定します。競合する既定レコードを確認し、ワイルドカードDNSは使わないでください。
 
-### Linux、Macの場合
+| Domain | Type | Name | Value |
+| --- | --- | --- | --- |
+| `example.com` | A | `@` | `185.199.108.153` |
+| `example.com` | A | `@` | `185.199.109.153` |
+| `example.com` | A | `@` | `185.199.110.153` |
+| `example.com` | A | `@` | `185.199.111.153` |
+| `example.com` | AAAA (optional) | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
+| `www.example.com` | CNAME | `www` | `OWNER.github.io` (without the repository name) |
+
+For an apex domain, an ALIAS/ANAME record pointing to `OWNER.github.io` is another option when your DNS provider supports it. Do not create a CNAME at the apex. Replace `OWNER` with the account or organization that owns the Pages site.
+
+## DNSの反映を確認する
+
+DNS更新の反映には最大24時間かかることがあります。`example.com`と`www.example.com`を実際のホスト名に置き換えて確認します。AレコードはIPv4、必要ならAAAAでIPv6、wwwのCNAMEは別に確認してください。
+
+```powershell
+Resolve-DnsName example.com -Type A
+Resolve-DnsName www.example.com -Type CNAME
+```
+
 ```bash
 dig example.com +noall +answer -t A
-```
-結果が次のようになっていれば、設定が反映されています。
-```bash
-example.com.              0       IN      A       185.199.108.153
-example.com.              0       IN      A       185.199.109.153
-example.com.              0       IN      A       185.199.110.153
-example.com.              0       IN      A       185.199.111.153
+dig www.example.com +noall +answer -t CNAME
 ```
 
-### Windowsの場合
-```bash
-nslookup -q=a example.com 8.8.8.8
-```
-結果が次のようになっていれば、設定が反映されています。
-```bash
-サーバー:  dns.google
-Address:  8.8.8.8
+## HTTPSと公開方式を確認する
 
-権限のない回答:
-名前:    example.com
-Addresses:  185.199.108.153
-          185.199.109.153
-          185.199.110.153
-          185.199.111.153
-```
-
-## Githubリポジトリにカスタムドメインを設定する
-1. リポジトリのページを開き、Settingsをクリックする
-2. Pagesをクリックする
-3. リポジトリのソースをそのまま公開する場合は、Sourceで「Deploy from a branch」を選択する。HUGOなどソースをビルドする場合は「[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)」を選択する。
-4. Branchで公開するブランチを選択してSaveをクリックする
-5. Custom domainに取得したドメインを入力して、Saveをクリックする。
-6. 必要に応じて「Enforce HTTPS」にチェックを入れてHTTPS対応を行う
+DNSが正しく認識され、GitHub Pagesの証明書が発行されたら、Settings → Pagesで **Enforce HTTPS** を有効にします。利用可能になるまで時間がかかることがあります。ブランチ公開では保存時に公開元のルートへCNAMEファイルが追加されます。GitHub Actionsによるカスタム公開ではCNAMEファイルは作成されず、既存ファイルも無視されます。
 
 
-[PR]
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HQGAP" rel="nofollow">
-<img border="0" width="468" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=231009310700&wid=003&eno=01&mid=s00000000018015072000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HQGAP" alt="">
 
-
+公式ドキュメント： [カスタムドメインの概要](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages), [DNSとカスタムドメインの設定](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [ドメインの検証](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages), [HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https), and [トラブルシューティング](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages).

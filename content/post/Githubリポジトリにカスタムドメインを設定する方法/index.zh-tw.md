@@ -1,82 +1,55 @@
 ---
-title: '在GitHub儲存庫設定自訂網域的方法｜Onamae.com篇'
-date: "2026-09-24T19:44:38+09:00"
+
 slug: "Github儲存庫にカスタム網域を設定する方法"
-date: 2022-09-13T01:16:40+09:00
 tags: ["Github","網域"]
 draft: false
 image: "images/octocat.webp"
 categories: ["tools-development-environment"]
-description: '解說在GitHub儲存庫（GitHub Pages）設定自訂網域的步驟。本次將介紹從「Onamae.com」的管理畫面新增與變更DNS的A紀錄，並與GitHub連結的具體步驟。'
+title: "為 GitHub Pages 設定自訂網域"
+date: "2022-09-13T01:16:40+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "說明如何驗證網域所有權、設定 DNS 紀錄並為 GitHub Pages 啟用 HTTPS，也整理分支與 GitHub Actions 發佈方式的差異。"
 ---
-要為 Github 儲存庫設定自訂網域，您需要變更網域的 DNS 設定。
-在此，我們將假設您使用 <a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a> 管理您的網域。
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-您可以透過在其他註冊商處覆寫 A 記錄來進行類似的設定。
 
-## 在 Onamae.com 中變更 DNS 設定
-要變更網域的 DNS 設定，請登入 <a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a> 的管理畫面。
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-登入後，請前往網域管理畫面。
-進入網域管理畫面後，請變更 DNS 設定。
-要變更 DNS 設定，請按照以下步驟進行：
-1. 存取 https://www.onamae.com/ 並點擊「Onamae.com Navi 登入」
-2. 輸入您的「Onamae ID (會員 ID)」與「密碼」，然後點擊登入按鈕
-3. 點擊「名稱伺服器設定」
-4. 點擊「網域 DNS 設定」
-5. 選擇您想設定的網域，然後點擊「下一步」
-6. 點擊「使用 DNS 記錄設定」右側的「設定」
-7. 在 TYPE 選擇 A，在 TTL 輸入 3600，在 VALUE 輸入「185.199.108.153」，然後點擊「新增」
-8. 與步驟 7 相同，也為「185.199.109.153」、「185.199.110.153」和「185.199.111.153」進行新增
-9. 確認已勾選「DNS 記錄設定用名稱伺服器變更確認」，然後點擊「前往設定畫面」
-10. 如果出現「為了防止意外的 DNS 設定變更」畫面，請點擊「不設定」（請視需要選擇）
-11. 確認設定內容，然後點擊「設定」
-![img.png](images/img.webp)
-12. 這樣 DNS 設定就完成了。最多可能需要約 72 小時才能完成生效。
-13. 如果 72 小時後仍未生效，請嘗試聯絡 Onamae.com 的支援團隊。
+GitHub Pages 可使用自有網域發佈儲存庫網站。為降低網域遭接管的風險，請先在 GitHub 帳戶或組織驗證網域，再進行設定。GitHub 設定介面的名稱可能會調整。
 
-要確認設定是否已反映在您的本機環境中，請嘗試執行以下命令。
-請將 `example.com` 替換為您想確認的網域。
+## 在 GitHub Pages 加入網域
 
-### 適用於 Linux、Mac
+1. 先使用管理該網域的帳戶完成驗證。接著開啟網站儲存庫的 **Settings → Pages**，在 Custom domain 輸入網域並儲存。請先將網域加入 GitHub Pages，再變更 DNS。
+
+## 設定 DNS 紀錄
+
+2. 在 DNS 服務商建立對應紀錄。對於 `example.com` 這類根網域，新增下列四筆 A 紀錄；若服務商支援，也可使用 ALIAS/ANAME。需要 IPv6 時可新增 AAAA。對於 `www.example.com`，建立指向 `OWNER.github.io` 的 CNAME，不要加上儲存庫名稱。若同時使用根網域與 www，請設定兩組紀錄。檢查衝突的預設紀錄，不要使用萬用字元 DNS。
+
+| Domain | Type | Name | Value |
+| --- | --- | --- | --- |
+| `example.com` | A | `@` | `185.199.108.153` |
+| `example.com` | A | `@` | `185.199.109.153` |
+| `example.com` | A | `@` | `185.199.110.153` |
+| `example.com` | A | `@` | `185.199.111.153` |
+| `example.com` | AAAA (optional) | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
+| `www.example.com` | CNAME | `www` | `OWNER.github.io` (without the repository name) |
+
+For an apex domain, an ALIAS/ANAME record pointing to `OWNER.github.io` is another option when your DNS provider supports it. Do not create a CNAME at the apex. Replace `OWNER` with the account or organization that owns the Pages site.
+
+## 確認 DNS 傳播
+
+DNS 更新傳播可能需要最多 24 小時。將範例換成實際主機名稱，分別檢查 IPv4 的 A 紀錄、已設定時的 IPv6 AAAA 紀錄，以及 www 的 CNAME。
+
+```powershell
+Resolve-DnsName example.com -Type A
+Resolve-DnsName www.example.com -Type CNAME
+```
+
 ```bash
 dig example.com +noall +answer -t A
-```
-如果結果如下，則表示設定已反映。
-```bash
-example.com.              0       IN      A       185.199.108.153
-example.com.              0       IN      A       185.199.109.153
-example.com.              0       IN      A       185.199.110.153
-example.com.              0       IN      A       185.199.111.153
+dig www.example.com +noall +answer -t CNAME
 ```
 
-### 適用於 Windows
-```bash
-nslookup -q=a example.com 8.8.8.8
-```
-如果結果如下，則表示設定已反映。
-```bash
-伺服器:  dns.google
-Address:  8.8.8.8
+## 啟用 HTTPS 並確認發佈方式
 
-未授權的回答:
-名稱:    example.com
-Addresses:  185.199.108.153
-          185.199.109.153
-          185.199.110.153
-          185.199.111.153
-```
-
-## 在 Github 儲存庫中設定自訂網域
-1. 打開儲存庫頁面，然後點擊 Settings
-2. 點擊 Pages
-3. 如果您要直接發佈儲存庫的原始碼，請在 Source 中選擇「Deploy from a branch」。如果您要建置原始碼（如 HUGO），請選擇「[GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)」。
-4. 在 Branch 中選擇要發佈的分支，然後點擊 Save
-5. 在 Custom domain 中輸入您取得的網域，然後點擊 Save。
-6. 如果需要，請勾選「Enforce HTTPS」以啟用 HTTPS 支援
+GitHub 識別 DNS 並簽發憑證後，在 Settings → Pages 啟用 **Enforce HTTPS**。此選項可能需要時間才會出現。從分支發佈時，儲存網域會在發佈來源根目錄新增 CNAME 檔案。自訂 GitHub Actions 發佈流程不會建立 CNAME 檔案，也會忽略既有檔案。
 
 
-[PR]
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HQGAP" rel="nofollow">
-<img border="0" width="468" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=231009310700&wid=003&eno=01&mid=s00000000018015072000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HQGAP" alt="">
+
+GitHubの公式資料： [About custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages), [Manage DNS and custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Verify a domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages), [HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https), and [troubleshooting](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages).

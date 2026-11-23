@@ -1,88 +1,55 @@
 ---
-title: 'Как настроить пользовательский домен для репозитория GitHub | Выпуск о Onamae.com'
-date: "2026-09-24T19:44:38+09:00"
+
 slug: "GithubРепозиторийにカスタムДоменを設定する方法"
-date: 2022-09-13T01:16:40+09:00
 tags: ["Github","Домены"]
 draft: false
 image: "images/octocat.webp"
 categories: ["tools-development-environment"]
-description: 'Объясняется процедура настройки пользовательского домена для репозитория GitHub (GitHub Pages). В этот раз мы представим конкретные шаги от добавления и изменения A-записей DNS на панели управления «Onamae.com» до интеграции с GitHub.'
+title: "Настройка собственного домена для GitHub Pages"
+date: "2022-09-13T01:16:40+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "Настройка GitHub Pages с собственным доменом: проверка владения, DNS-записи, HTTPS и особенности публикации из ветки или через GitHub Actions."
 ---
-Чтобы настроить пользовательский домен для репозитория Github, вам необходимо изменить настройки DNS домена.
-Здесь мы предполагаем, что вы управляете своим доменом с помощью
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-для объяснения процесса.
-Аналогичные настройки можно выполнить, перезаписав записи A у других регистраторов.
 
+GitHub Pages позволяет публиковать сайт репозитория на собственном домене. Чтобы снизить риск перехвата, сначала подтвердите домен в аккаунте или организации GitHub. Названия пунктов в интерфейсе настроек могут измениться.
 
+## Добавьте домен в GitHub Pages
 
+1. Сначала подтвердите домен через аккаунт, который им управляет. Затем откройте в репозитории сайта **Settings → Pages**, укажите домен в поле Custom domain и сохраните. Добавьте домен в GitHub Pages до изменения DNS.
 
-## Изменение настроек DNS на Onamae.com
-Чтобы изменить настройки DNS домена, войдите в панель управления
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">.
-После входа перейдите на экран управления доменом.
-Перейдя на экран управления доменом, измените настройки DNS.
-Чтобы изменить настройки DNS, выполните следующие действия.
-1. Перейдите на https://www.onamae.com/ и нажмите «Вход в Onamae.com Navi»
-2. Введите «ID Onamae (ID участника)» и «Пароль» и нажмите кнопку входа
-3. Нажмите «Настройки сервера имен»
-4. Нажмите «Настройки DNS домена»
-5. Выберите домен, который хотите настроить, и нажмите «Далее»
-6. Нажмите «Настроить» справа от «Использовать настройку записи DNS»
-7. Выберите A для TYPE, введите 3600 для TTL и «185.199.108.153» для VALUE и нажмите «Добавить»
-8. Аналогично шагу 7, добавьте «185.199.109.153», «185.199.110.153» и «185.199.111.153»
-9. В разделе «Подтверждение изменения сервера имен для настройки записи DNS» убедитесь, что установлен флажок, и нажмите «Перейти к экрану настройки»
-10. Если появится экран с надписью «Для предотвращения непреднамеренных изменений настроек DNS», нажмите «Не настраивать» (выберите по необходимости)
-11. Проверьте настройки и нажмите «Настроить»
-![img.png](images/img.webp)
-12. На этом настройки DNS завершены. Для полного обновления может потребоваться до 72 часов.
-13. Если изменения не отобразятся через 72 часа, обратитесь в службу поддержки Onamae.com.
+## Настройте DNS-записи
 
-Чтобы проверить, применены ли настройки в вашей локальной среде, попробуйте выполнить следующую команду.
-Замените `example.com` на домен, который хотите проверить.
+2. Создайте подходящие записи у DNS-провайдера. Для корневого домена вроде `example.com` используйте четыре записи A ниже или ALIAS/ANAME, если провайдер их поддерживает. Для IPv6 можно добавить AAAA. Для `www.example.com` создайте CNAME на `OWNER.github.io` без имени репозитория. Настройте обе группы, если хотите использовать и корневой домен, и www. Проверьте конфликтующие записи по умолчанию и не используйте DNS с подстановочным знаком.
 
-### Для Linux и Mac
+| Domain | Type | Name | Value |
+| --- | --- | --- | --- |
+| `example.com` | A | `@` | `185.199.108.153` |
+| `example.com` | A | `@` | `185.199.109.153` |
+| `example.com` | A | `@` | `185.199.110.153` |
+| `example.com` | A | `@` | `185.199.111.153` |
+| `example.com` | AAAA (optional) | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
+| `www.example.com` | CNAME | `www` | `OWNER.github.io` (without the repository name) |
+
+For an apex domain, an ALIAS/ANAME record pointing to `OWNER.github.io` is another option when your DNS provider supports it. Do not create a CNAME at the apex. Replace `OWNER` with the account or organization that owns the Pages site.
+
+## Проверьте распространение DNS
+
+Распространение изменений DNS может занять до 24 часов. Замените примеры своими именами хостов. Отдельно проверьте записи A для IPv4, AAAA для IPv6 при наличии и CNAME для www.
+
+```powershell
+Resolve-DnsName example.com -Type A
+Resolve-DnsName www.example.com -Type CNAME
+```
+
 ```bash
 dig example.com +noall +answer -t A
-```
-Если результат выглядит следующим образом, настройки были применены.
-```bash
-example.com.              0       IN      A       185.199.108.153
-example.com.              0       IN      A       185.199.109.153
-example.com.              0       IN      A       185.199.110.153
-example.com.              0       IN      A       185.199.111.153
+dig www.example.com +noall +answer -t CNAME
 ```
 
-### Для Windows
-```bash
-nslookup -q=a example.com 8.8.8.8
-```
-Если результат выглядит следующим образом, настройки были применены.
-```bash
-サーバー:  dns.google
-Address:  8.8.8.8
+## Включите HTTPS и проверьте способ публикации
 
-権限のない回答:
-名前:    example.com
-Addresses:  185.199.108.153
-          185.199.109.153
-          185.199.110.153
-          185.199.111.153
-```
-
-## Настройка пользовательского домена для репозитория Github
-1. Откройте страницу репозитория и нажмите Settings (Настройки)
-2. Нажмите Pages (Страницы)
-3. Если вы публикуете исходный код репозитория как есть, выберите «Deploy from a branch» в разделе Source. Если вы собираете исходный код, например HUGO, выберите «[GitHub Actions](https://kenji.blog/ru/p/cicd-pipeline-github-actions-best-practices/)».
-4. Выберите ветку для публикации в разделе Branch и нажмите Save (Сохранить)
-5. Введите полученный домен в поле Custom domain (Пользовательский домен) и нажмите Save.
-6. При необходимости установите флажок «Enforce HTTPS», чтобы включить поддержку HTTPS
+После того как GitHub распознает DNS и выпустит сертификат, включите **Enforce HTTPS** в Settings → Pages. Параметр может появиться не сразу. При публикации из ветки сохранение домена добавляет файл CNAME в корень источника публикации. Пользовательский workflow GitHub Actions не создает CNAME и игнорирует существующий файл.
 
 
-[PR]
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HQGAP" rel="nofollow">
-<img border="0" width="468" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=231009310700&wid=003&eno=01&mid=s00000000018015072000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HQGAP" alt="">
+
+GitHubの公式資料： [About custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages), [Manage DNS and custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Verify a domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages), [HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https), and [troubleshooting](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages).

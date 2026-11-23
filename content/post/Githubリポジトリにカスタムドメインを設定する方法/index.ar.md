@@ -1,88 +1,55 @@
 ---
-title: 'كيفية تعيين نطاق مخصص (Custom Domain) لمستودع GitHub | إصدار Onamae.com'
-date: "2026-09-24T19:44:38+09:00"
+
 slug: "Githubمستودعにカスタムنطاقを設定する方法"
-date: 2022-09-13T01:16:40+09:00
 tags: ["Github","نطاق"]
 draft: false
 image: "images/octocat.webp"
 categories: ["tools-development-environment"]
-description: 'نشرح خطوات إعداد نطاق مخصص لمستودع GitHub Pages. نقدم هذه المرة خطوات محددة من إضافة وتعديل سجل DNS A من لوحة تحكم ''Onamae.com'' وحتى ربطه بـ GitHub.'
+title: "إعداد نطاق مخصص لموقع GitHub Pages"
+date: "2022-09-13T01:16:40+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "شرح التحقق من ملكية النطاق وضبط سجلات DNS وتفعيل HTTPS، مع توضيح الفرق بين النشر من فرع والنشر عبر GitHub Actions."
 ---
-لإعداد نطاق مخصص لمستودع Github، تحتاج إلى تغيير إعدادات DNS للنطاق.
-هنا، سنفترض أنك تدير نطاقك باستخدام
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-لشرح العملية.
-يمكن إجراء إعدادات مماثلة عن طريق إعادة كتابة سجلات A في مسجلات أخرى.
 
+يتيح GitHub Pages نشر موقع المستودع باستخدام نطاق تملكه. لتقليل خطر الاستيلاء على النطاق، تحقّق منه أولاً في حساب GitHub أو المؤسسة قبل إعداده. قد تتغير أسماء الخيارات في واجهة GitHub.
 
+## إضافة النطاق إلى GitHub Pages
 
+1. تحقّق أولاً من النطاق باستخدام الحساب الذي يديره. ثم افتح **Settings → Pages** في مستودع الموقع، وأدخل النطاق في Custom domain واحفظه. أضفه إلى GitHub Pages قبل تغيير DNS.
 
-## تغيير إعدادات DNS في Onamae.com
-لتغيير إعدادات DNS للنطاق، قم بتسجيل الدخول إلى لوحة التحكم الخاصة بـ
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">.
-بعد تسجيل الدخول، انتقل إلى شاشة إدارة النطاق.
-بمجرد وصولك إلى شاشة إدارة النطاق، قم بتغيير إعدادات DNS.
-لتغيير إعدادات DNS، اتبع الخطوات التالية.
-1. قم بزيارة https://www.onamae.com/ وانقر على "تسجيل الدخول إلى Onamae.com Navi"
-2. أدخل "معرف Onamae (معرف العضو)" و "كلمة المرور" وانقر على زر تسجيل الدخول
-3. انقر على "إعدادات خادم الأسماء"
-4. انقر على "إعدادات DNS للنطاق"
-5. حدد النطاق الذي تريد إعداده وانقر على "التالي"
-6. انقر على "إعداد" على يمين "استخدام إعداد سجل DNS"
-7. حدد A لـ TYPE، وأدخل 3600 لـ TTL، و "185.199.108.153" لـ VALUE، وانقر على "إضافة"
-8. على غرار الخطوة 7، أضف "185.199.109.153" و "185.199.110.153" و "185.199.111.153"
-9. في "تأكيد تغيير خادم الأسماء لإعداد سجل DNS"، تأكد من تحديد المربع وانقر على "المتابعة إلى شاشة الإعداد"
-10. إذا ظهرت شاشة تقول "لمنع تغييرات إعدادات DNS غير المقصودة"، فانقر على "عدم الإعداد" (حدد حسب الضرورة)
-11. تحقق من الإعدادات وانقر على "إعداد"
-![img.png](images/img.webp)
-12. يكمل هذا إعدادات DNS. قد يستغرق الأمر ما يصل إلى 72 ساعة تقريبًا حتى يكتمل التحديث.
-13. إذا لم تنعكس التغييرات بعد 72 ساعة، فيرجى الاتصال بدعم Onamae.com.
+## ضبط سجلات DNS
 
-للتحقق مما إذا كانت الإعدادات قد انعكست في بيئتك المحلية، يرجى محاولة تشغيل الأمر التالي.
-استبدل `example.com` بالنطاق الذي تريد التحقق منه.
+2. أنشئ السجلات المناسبة لدى مزود DNS. للنطاق الأساسي مثل `example.com` استخدم سجلات A الأربع أدناه، أو ALIAS/ANAME إذا كان المزود يدعمها. يمكن إضافة AAAA لاستخدام IPv6. للنطاق `www.example.com` أنشئ CNAME يشير إلى `OWNER.github.io` من دون اسم المستودع. أعدّ المجموعتين إذا أردت استخدام النطاق الأساسي وwww. تحقّق من السجلات الافتراضية المتعارضة ولا تستخدم DNS بنطاق شامل wildcard.
 
-### لنظامي التشغيل Linux و Mac
+| Domain | Type | Name | Value |
+| --- | --- | --- | --- |
+| `example.com` | A | `@` | `185.199.108.153` |
+| `example.com` | A | `@` | `185.199.109.153` |
+| `example.com` | A | `@` | `185.199.110.153` |
+| `example.com` | A | `@` | `185.199.111.153` |
+| `example.com` | AAAA (optional) | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
+| `www.example.com` | CNAME | `www` | `OWNER.github.io` (without the repository name) |
+
+For an apex domain, an ALIAS/ANAME record pointing to `OWNER.github.io` is another option when your DNS provider supports it. Do not create a CNAME at the apex. Replace `OWNER` with the account or organization that owns the Pages site.
+
+## التحقق من انتشار DNS
+
+قد يستغرق انتشار تغييرات DNS حتى 24 ساعة. استبدل الأمثلة بأسماء المضيف الفعلية. افحص سجلات A لـIPv4 وAAAA لـIPv6 عند إعدادها، وسجل CNAME لـwww كلٌّ على حدة.
+
+```powershell
+Resolve-DnsName example.com -Type A
+Resolve-DnsName www.example.com -Type CNAME
+```
+
 ```bash
 dig example.com +noall +answer -t A
-```
-إذا كانت النتيجة كما يلي، فقد تم تطبيق الإعدادات.
-```bash
-example.com.              0       IN      A       185.199.108.153
-example.com.              0       IN      A       185.199.109.153
-example.com.              0       IN      A       185.199.110.153
-example.com.              0       IN      A       185.199.111.153
+dig www.example.com +noall +answer -t CNAME
 ```
 
-### لنظام التشغيل Windows
-```bash
-nslookup -q=a example.com 8.8.8.8
-```
-إذا كانت النتيجة كما يلي، فقد تم تطبيق الإعدادات.
-```bash
-サーバー:  dns.google
-Address:  8.8.8.8
+## تفعيل HTTPS والتحقق من طريقة النشر
 
-権限のない回答:
-名前:    example.com
-Addresses:  185.199.108.153
-          185.199.109.153
-          185.199.110.153
-          185.199.111.153
-```
-
-## إعداد نطاق مخصص لمستودع Github
-1. افتح صفحة المستودع وانقر على Settings (الإعدادات)
-2. انقر على Pages (الصفحات)
-3. إذا كنت تنشر مصدر المستودع كما هو، فحدد "Deploy from a branch" ضمن Source. إذا كنت تبني المصدر مثل HUGO، فحدد "[GitHub Actions](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)".
-4. حدد الفرع الذي سيتم نشره ضمن Branch وانقر على Save
-5. أدخل النطاق الذي حصلت عليه في Custom domain (نطاق مخصص) وانقر على Save.
-6. إذا لزم الأمر، حدد المربع "Enforce HTTPS" لتمكين دعم HTTPS
+بعد أن يتعرف GitHub على DNS ويصدر شهادة، فعّل **Enforce HTTPS** ضمن Settings → Pages. قد يتأخر ظهور الخيار. عند النشر من فرع، تؤدي إضافة النطاق إلى إنشاء ملف CNAME في جذر مصدر النشر. أما سير عمل GitHub Actions المخصص فلا ينشئ ملف CNAME ويتجاهل الملف الموجود.
 
 
-[PR]
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HQGAP" rel="nofollow">
-<img border="0" width="468" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=231009310700&wid=003&eno=01&mid=s00000000018015072000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HQGAP" alt="">
+
+GitHubの公式資料： [About custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages), [Manage DNS and custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Verify a domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages), [HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https), and [troubleshooting](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages).

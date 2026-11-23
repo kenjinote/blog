@@ -1,82 +1,55 @@
 ---
-title: 'Como Configurar um Domínio Personalizado em um Repositório GitHub | Usando o Onamae.com'
-date: "2026-09-24T19:44:38+09:00"
+
 slug: "GithubRepositórioにカスタムDomínioを設定する方法"
-date: 2022-09-13T01:16:40+09:00
 tags: ["Github","Domínio"]
 draft: false
 image: "images/octocat.webp"
 categories: ["tools-development-environment"]
-description: 'Aprenda a configurar um domínio personalizado em seu repositório do GitHub (GitHub Pages). Neste guia, detalhamos os passos para adicionar e alterar os registros A de DNS a partir do painel de controle do ''Onamae.com'' e conectá-los ao GitHub.'
+title: "Configurar um domínio personalizado no GitHub Pages"
+date: "2022-09-13T01:16:40+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "Configure um domínio próprio no GitHub Pages: verifique a propriedade, ajuste os registros DNS e habilite HTTPS conforme o método de publicação."
 ---
-Para configurar um domínio personalizado em um repositório Github, você precisa alterar as configurações de DNS do seu domínio.
-Aqui, explicaremos assumindo que você gerencia seu domínio com <a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a>.
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-Você pode fazer configurações semelhantes reescrevendo os registros A com outros registradores.
 
-## Alterar as configurações de DNS no Onamae.com
-Para alterar as configurações de DNS do seu domínio, faça login na tela de gerenciamento do <a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a>.
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-Após o login, vá para a tela de gerenciamento de domínio.
-Quando estiver na tela de gerenciamento de domínio, altere as configurações de DNS.
-Para alterar as configurações de DNS, configure da seguinte forma:
-1. Acesse https://www.onamae.com/ e clique em "Login Onamae.com Navi"
-2. Insira sua "ID Onamae (ID de membro)" e "Senha" e clique no botão de login
-3. Clique em "Configurações do servidor de nomes"
-4. Clique em "Configurações de DNS do domínio"
-5. Selecione o domínio que deseja configurar e clique em "Avançar"
-6. Clique em "Configurar" à direita de "Usar configuração de registro DNS"
-7. Selecione A para TYPE, insira 3600 para TTL e "185.199.108.153" para VALUE e clique em "Adicionar"
-8. Semelhante a 7., adicione também para "185.199.109.153", "185.199.110.153" e "185.199.111.153"
-9. Certifique-se de que a caixa de seleção está marcada em "Confirmação de alteração do servidor de nomes para configuração de registro DNS" e clique em "Ir para a tela de configuração"
-10. Se for exibida uma tela dizendo "Para evitar alterações não intencionais nas configurações de DNS", clique em "Não configurar" (selecione conforme necessário)
-11. Verifique os detalhes da configuração e clique em "Configurar"
-![img.png](images/img.webp)
-12. Isso conclui as configurações de DNS. Pode levar até cerca de 72 horas para que a reflexão seja concluída.
-13. Se não for refletido após 72 horas, tente entrar em contato com o suporte do Onamae.com.
+O GitHub Pages pode publicar o site de um repositório em um domínio próprio. Verifique o domínio na sua conta ou organização GitHub antes de configurá-lo para reduzir o risco de sequestro. Os nomes das opções na interface podem mudar.
 
-Para verificar se as configurações estão refletidas no seu ambiente local, tente executar o seguinte comando.
-Substitua a parte `example.com` pelo domínio que você deseja verificar.
+## Adicionar o domínio ao GitHub Pages
 
-### Para Linux, Mac
+1. Primeiro, verifique o domínio com a conta que o controla. Depois, no repositório do site, abra **Settings → Pages**, informe o domínio em Custom domain e salve. Adicione-o ao GitHub Pages antes de alterar o DNS.
+
+## Configurar os registros DNS
+
+2. No provedor DNS, crie os registros adequados. Para um domínio raiz, como `example.com`, use os quatro registros A abaixo ou um ALIAS/ANAME, se o provedor oferecer suporte. Se quiser IPv6, também pode adicionar AAAA. Para `www.example.com`, crie um CNAME apontando para `OWNER.github.io`, sem o nome do repositório. Configure os dois grupos se quiser usar o domínio raiz e www. Confira registros padrão conflitantes e não use DNS curinga.
+
+| Domain | Type | Name | Value |
+| --- | --- | --- | --- |
+| `example.com` | A | `@` | `185.199.108.153` |
+| `example.com` | A | `@` | `185.199.109.153` |
+| `example.com` | A | `@` | `185.199.110.153` |
+| `example.com` | A | `@` | `185.199.111.153` |
+| `example.com` | AAAA (optional) | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
+| `www.example.com` | CNAME | `www` | `OWNER.github.io` (without the repository name) |
+
+For an apex domain, an ALIAS/ANAME record pointing to `OWNER.github.io` is another option when your DNS provider supports it. Do not create a CNAME at the apex. Replace `OWNER` with the account or organization that owns the Pages site.
+
+## Verificar a propagação do DNS
+
+As alterações de DNS podem levar até 24 horas para se propagar. Substitua os exemplos pelos seus nomes de host. Verifique separadamente A para IPv4, AAAA para IPv6 se configurado, e o CNAME de www.
+
+```powershell
+Resolve-DnsName example.com -Type A
+Resolve-DnsName www.example.com -Type CNAME
+```
+
 ```bash
 dig example.com +noall +answer -t A
-```
-Se o resultado for o seguinte, a configuração foi refletida.
-```bash
-example.com.              0       IN      A       185.199.108.153
-example.com.              0       IN      A       185.199.109.153
-example.com.              0       IN      A       185.199.110.153
-example.com.              0       IN      A       185.199.111.153
+dig www.example.com +noall +answer -t CNAME
 ```
 
-### Para Windows
-```bash
-nslookup -q=a example.com 8.8.8.8
-```
-Se o resultado for o seguinte, a configuração foi refletida.
-```bash
-Servidor:  dns.google
-Address:  8.8.8.8
+## Ativar HTTPS e conferir a publicação
 
-Resposta não autoritativa:
-Nome:    example.com
-Addresses:  185.199.108.153
-          185.199.109.153
-          185.199.110.153
-          185.199.111.153
-```
-
-## Configurar um domínio personalizado em um repositório Github
-1. Abra a página do repositório e clique em Settings
-2. Clique em Pages
-3. Se você estiver publicando o código-fonte do repositório como está, selecione "Deploy from a branch" em Source. Se você estiver compilando o código-fonte, como HUGO, selecione "[GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)".
-4. Selecione a branch a publicar em Branch e clique em Save
-5. Insira o domínio que você obteve em Custom domain e clique em Save.
-6. Se necessário, marque a caixa "Enforce HTTPS" para ativar o suporte HTTPS
+Quando o GitHub reconhecer o DNS e emitir um certificado, ative **Enforce HTTPS** em Settings → Pages. A opção pode demorar a aparecer. Ao publicar por uma branch, salvar o domínio adiciona um arquivo CNAME à raiz da fonte publicada. Um fluxo personalizado de publicação com GitHub Actions não cria esse arquivo e ignora um CNAME existente.
 
 
-[PR]
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HQGAP" rel="nofollow">
-<img border="0" width="468" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=231009310700&wid=003&eno=01&mid=s00000000018015072000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HQGAP" alt="">
+
+GitHubの公式資料： [About custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages), [Manage DNS and custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Verify a domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages), [HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https), and [troubleshooting](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages).

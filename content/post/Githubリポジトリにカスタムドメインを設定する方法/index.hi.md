@@ -1,82 +1,55 @@
 ---
-title: 'GitHub रिपॉजिटरी में कस्टम डोमेन कैसे सेट करें｜Onamae.com संस्करण'
-date: "2026-09-24T19:44:38+09:00"
+
 slug: "Githubरिपॉजिटरीにカスタムडोमेनを設定する方法"
-date: 2022-09-13T01:16:40+09:00
 tags: ["Github","डोमेन"]
 draft: false
 image: "images/octocat.webp"
 categories: ["tools-development-environment"]
-description: 'हम GitHub रिपॉजिटरी (GitHub Pages) में कस्टम डोमेन सेट करने की प्रक्रिया की व्याख्या करेंगे। इस बार, हम "Onamae.com" की प्रबंधन स्क्रीन से DNS A रिकॉर्ड जोड़ने और बदलने और उन्हें GitHub के साथ जोड़ने के विशिष्ट चरणों को पेश करेंगे。'
+title: "GitHub Pages के लिए कस्टम डोमेन सेट करें"
+date: "2022-09-13T01:16:40+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
+description: "GitHub Pages पर कस्टम डोमेन के लिए स्वामित्व सत्यापन, DNS रिकॉर्ड, HTTPS और branch तथा GitHub Actions प्रकाशन के अंतर समझें।"
 ---
-Github रिपॉजिटरी में कस्टम डोमेन सेट करने के लिए, आपको अपने डोमेन की DNS सेटिंग्स को बदलना होगा।
-यहाँ, हम यह मानकर समझाएंगे कि आप अपने डोमेन को <a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a> के साथ प्रबंधित करते हैं।
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-आप अन्य रजिस्ट्रार के साथ A रिकॉर्ड्स को अधिलेखित करके समान सेटिंग्स कर सकते हैं।
 
-## Onamae.com में DNS सेटिंग्स बदलें
-अपने डोमेन की DNS सेटिंग्स को बदलने के लिए, <a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HHVNM" rel="nofollow">Onamae.com</a> की प्रबंधन स्क्रीन में लॉग इन करें।
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HHVNM" alt="">
-लॉग इन करने के बाद, डोमेन प्रबंधन स्क्रीन पर जाएँ।
-एक बार जब आप डोमेन प्रबंधन स्क्रीन पर आ जाते हैं, तो DNS सेटिंग्स बदलें।
-DNS सेटिंग्स को बदलने के लिए, इस प्रकार कॉन्फ़िगर करें:
-1. https://www.onamae.com/ पर जाएँ और "Onamae.com Navi Login" पर क्लिक करें
-2. अपना "Onamae ID (सदस्य ID)" और "पासवर्ड" दर्ज करें और लॉगिन बटन पर क्लिक करें
-3. "नेम सर्वर सेटिंग्स" पर क्लिक करें
-4. "डोमेन DNS सेटिंग्स" पर क्लिक करें
-5. उस डोमेन का चयन करें जिसे आप सेट करना चाहते हैं और "अगला" पर क्लिक करें
-6. "DNS रिकॉर्ड सेटिंग्स का उपयोग करें" के दाईं ओर "सेट करें" पर क्लिक करें
-7. TYPE के लिए A चुनें, TTL के लिए 3600 दर्ज करें, और VALUE के लिए "185.199.108.153" दर्ज करें, फिर "जोड़ें" पर क्लिक करें
-8. 7 की तरह ही, "185.199.109.153", "185.199.110.153" और "185.199.111.153" के लिए भी जोड़ें
-9. सुनिश्चित करें कि "DNS रिकॉर्ड सेटिंग्स के लिए नेम सर्वर परिवर्तन की पुष्टि" में चेकबॉक्स चेक किया गया है, और "सेटिंग्स स्क्रीन पर जाएँ" पर क्लिक करें
-10. यदि "DNS सेटिंग्स में अनपेक्षित परिवर्तनों को रोकने के लिए" कहने वाली स्क्रीन दिखाई देती है, तो "सेट न करें" पर क्लिक करें (आवश्यकतानुसार चुनें)
-11. सेटिंग्स विवरण की पुष्टि करें और "सेट करें" पर क्लिक करें
-![img.png](images/img.webp)
-12. यह DNS सेटिंग्स को पूरा करता है। इसे प्रतिबिंबित होने में लगभग 72 घंटे तक का समय लग सकता है।
-13. यदि यह 72 घंटों के बाद भी प्रतिबिंबित नहीं होता है, तो कृपया Onamae.com समर्थन से संपर्क करने का प्रयास करें।
+GitHub Pages किसी रिपॉज़िटरी की साइट को आपके अपने डोमेन पर प्रकाशित कर सकता है। डोमेन takeover का जोखिम घटाने के लिए सेटअप से पहले इसे अपने GitHub खाते या संगठन में सत्यापित करें। GitHub सेटिंग इंटरफ़ेस के नाम बदल सकता है।
 
-यह जांचने के लिए कि क्या सेटिंग्स आपके स्थानीय परिवेश में प्रतिबिंबित हुई हैं, निम्नलिखित कमांड चलाने का प्रयास करें।
-कृपया `example.com` भाग को उस डोमेन से बदलें जिसे आप जाँचना चाहते हैं।
+## GitHub Pages में डोमेन जोड़ें
 
-### Linux, Mac के लिए
+1. पहले उस खाते से डोमेन सत्यापित करें जो उसे नियंत्रित करता है। फिर साइट रिपॉज़िटरी में **Settings → Pages** खोलें, Custom domain में डोमेन दर्ज करें और Save करें। DNS बदलने से पहले डोमेन को GitHub Pages में जोड़ें।
+
+## DNS रिकॉर्ड कॉन्फ़िगर करें
+
+2. DNS प्रदाता पर उचित रिकॉर्ड बनाएँ। `example.com` जैसे apex डोमेन के लिए नीचे दिए चार A रिकॉर्ड उपयोग करें, या प्रदाता समर्थित हो तो ALIAS/ANAME रिकॉर्ड लगाएँ। IPv6 के लिए AAAA भी जोड़ सकते हैं। `www.example.com` के लिए `OWNER.github.io` पर जाने वाला CNAME बनाएँ; रिपॉज़िटरी नाम न जोड़ें। apex और www दोनों चाहिए तो दोनों समूह कॉन्फ़िगर करें। टकराते डिफ़ॉल्ट रिकॉर्ड जाँचें और wildcard DNS का उपयोग न करें।
+
+| Domain | Type | Name | Value |
+| --- | --- | --- | --- |
+| `example.com` | A | `@` | `185.199.108.153` |
+| `example.com` | A | `@` | `185.199.109.153` |
+| `example.com` | A | `@` | `185.199.110.153` |
+| `example.com` | A | `@` | `185.199.111.153` |
+| `example.com` | AAAA (optional) | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
+| `www.example.com` | CNAME | `www` | `OWNER.github.io` (without the repository name) |
+
+For an apex domain, an ALIAS/ANAME record pointing to `OWNER.github.io` is another option when your DNS provider supports it. Do not create a CNAME at the apex. Replace `OWNER` with the account or organization that owns the Pages site.
+
+## DNS प्रसार जाँचें
+
+DNS बदलाव फैलने में 24 घंटे तक लग सकते हैं। उदाहरणों को अपने होस्ट नाम से बदलें। IPv4 के A रिकॉर्ड, सेट किए हों तो IPv6 के AAAA रिकॉर्ड, और www के CNAME को अलग-अलग जाँचें।
+
+```powershell
+Resolve-DnsName example.com -Type A
+Resolve-DnsName www.example.com -Type CNAME
+```
+
 ```bash
 dig example.com +noall +answer -t A
-```
-यदि परिणाम निम्न है, तो सेटिंग्स प्रतिबिंबित हो गई हैं।
-```bash
-example.com.              0       IN      A       185.199.108.153
-example.com.              0       IN      A       185.199.109.153
-example.com.              0       IN      A       185.199.110.153
-example.com.              0       IN      A       185.199.111.153
+dig www.example.com +noall +answer -t CNAME
 ```
 
-### Windows के लिए
-```bash
-nslookup -q=a example.com 8.8.8.8
-```
-यदि परिणाम निम्न है, तो सेटिंग्स प्रतिबिंबित हो गई हैं।
-```bash
-सर्वर:  dns.google
-Address:  8.8.8.8
+## HTTPS और प्रकाशन विधि जाँचें
 
-गैर-आधिकारिक उत्तर:
-नाम:    example.com
-Addresses:  185.199.108.153
-          185.199.109.153
-          185.199.110.153
-          185.199.111.153
-```
-
-## Github रिपॉजिटरी में कस्टम डोमेन सेट करें
-1. रिपॉजिटरी पेज खोलें और Settings पर क्लिक करें
-2. Pages पर क्लिक करें
-3. यदि आप रिपॉजिटरी के स्रोत कोड को वैसे ही प्रकाशित कर रहे हैं, तो Source में "Deploy from a branch" चुनें। यदि आप HUGO जैसे स्रोत कोड का निर्माण कर रहे हैं, तो "[GitHub Actions](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/)" चुनें।
-4. Branch में प्रकाशित करने के लिए शाखा का चयन करें और Save पर क्लिक करें
-5. Custom domain में वह डोमेन दर्ज करें जो आपको मिला है, और Save पर क्लिक करें।
-6. यदि आवश्यक हो, तो HTTPS समर्थन को सक्षम करने के लिए "Enforce HTTPS" बॉक्स को चेक करें
+GitHub द्वारा DNS पहचानने और प्रमाणपत्र जारी होने के बाद Settings → Pages में **Enforce HTTPS** चालू करें। विकल्प उपलब्ध होने में समय लग सकता है। Branch से प्रकाशित करने पर डोमेन सेव करते समय प्रकाशन स्रोत की जड़ में CNAME फ़ाइल जुड़ती है। कस्टम GitHub Actions प्रकाशन workflow CNAME फ़ाइल नहीं बनाता और मौजूदा फ़ाइल को अनदेखा करता है।
 
 
-[PR]
-<a href="https://px.a8.net/svt/ejp?a8mat=3TJBXA+BKRHS2+50+2HQGAP" rel="nofollow">
-<img border="0" width="468" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=231009310700&wid=003&eno=01&mid=s00000000018015072000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3TJBXA+BKRHS2+50+2HQGAP" alt="">
+
+GitHubの公式資料： [About custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages), [Manage DNS and custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Verify a domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages), [HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https), and [troubleshooting](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages).
