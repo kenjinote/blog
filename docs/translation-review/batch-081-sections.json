@@ -5,6 +5,7 @@
     "server": "ローカルWebサーバーやソース編集機能が必要な場合は、公式Full Setupを使います。次のコマンドを実行し、ブラウザーで`http://localhost:8000`を開きます。",
     "pdf": "`?print-pdf`をURL末尾に付け、ChromeまたはChromiumの印刷画面でPDF保存、横向き、余白なし、背景グラフィック有効を選びます。公式に確認されているのはChromeとChromiumです。",
     "notes": "発表者ビューは`S`キーで別ウィンドウに開きます。スライド内の`<aside class=\"notes\">`にノートを書けます。ローカルで使う場合はWebサーバーが必要です。",
+    "safety": "スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。",
     "links": "公式ガイド"
   },
   "en": {
@@ -13,6 +14,7 @@
     "server": "For a local server or source-development tools, use the official Full Setup. Run these commands, then open `http://localhost:8000` in a browser.",
     "pdf": "Append `?print-pdf` to the URL. In Chrome or Chromium, choose Save as PDF, landscape, no margins, and enable background graphics. The official guide confirms Chrome and Chromium.",
     "notes": "Press `S` to open speaker view in a separate window. Add notes inside `<aside class=\"notes\">` on a slide. A local web server is required for local speaker view.",
+    "safety": "Check the usage rights for images and videos in your slides, and make sure public materials do not contain confidential information or private speaker notes.",
     "links": "Official guides"
   },
   "zh-cn": {
@@ -21,6 +23,7 @@
     "server": "如需本地服务器或源码开发工具，请使用官方 Full Setup。运行以下命令，然后在浏览器中打开 `http://localhost:8000`。",
     "pdf": "在网址末尾添加 `?print-pdf`。在 Chrome 或 Chromium 的打印界面选择“另存为 PDF”、横向、无边距并启用背景图形。官方指南确认支持 Chrome 和 Chromium。",
     "notes": "按 `S` 可在单独窗口打开演讲者视图。在幻灯片的 `<aside class=\"notes\">` 中添加备注。本地使用演讲者视图需要 Web 服务器。",
+    "safety": "请确认幻灯片中图片和视频的使用许可，并检查公开材料是否包含机密信息或不应公开的演讲者备注。",
     "links": "官方指南"
   },
   "es": {
@@ -29,6 +32,7 @@
     "server": "Para tener un servidor local o herramientas para desarrollar el código fuente, usa el Full Setup oficial. Ejecuta estos comandos y abre `http://localhost:8000` en el navegador.",
     "pdf": "Añade `?print-pdf` al final de la URL. En Chrome o Chromium, elige Guardar como PDF, orientación horizontal, sin márgenes y activa los gráficos de fondo. La guía oficial confirma Chrome y Chromium.",
     "notes": "Pulsa `S` para abrir la vista del presentador en otra ventana. Añade notas dentro de `<aside class=\"notes\">` en una diapositiva. La vista local necesita un servidor web.",
+    "safety": "Comprueba los derechos de uso de las imágenes y los vídeos de las diapositivas, y asegúrate de que el material público no incluya información confidencial ni notas privadas del presentador.",
     "links": "Guías oficiales"
   },
   "ko": {
@@ -37,6 +41,7 @@
     "server": "로컬 서버나 소스 개발 도구가 필요하면 공식 Full Setup을 사용하세요. 다음 명령을 실행한 뒤 브라우저에서 `http://localhost:8000`을 여세요.",
     "pdf": "URL 끝에 `?print-pdf`를 추가합니다. Chrome 또는 Chromium의 인쇄 화면에서 PDF로 저장, 가로 방향, 여백 없음, 배경 그래픽 사용을 선택하세요. 공식 안내에서 확인된 브라우저는 Chrome과 Chromium입니다.",
     "notes": "`S` 키를 누르면 별도 창에서 발표자 보기가 열립니다. 슬라이드의 `<aside class=\"notes\">` 안에 노트를 작성할 수 있습니다. 로컬 발표자 보기에는 웹 서버가 필요합니다.",
+    "safety": "슬라이드에 사용하는 이미지와 동영상의 이용 권한을 확인하고, 공개 자료에 기밀 정보나 비공개 발표자 노트가 포함되지 않았는지 점검하세요.",
     "links": "공식 문서"
   },
   "pt": {
@@ -45,6 +50,7 @@
     "server": "Para usar um servidor local ou ferramentas de desenvolvimento do código-fonte, escolha o Full Setup oficial. Execute os comandos a seguir e abra `http://localhost:8000` no navegador.",
     "pdf": "Acrescente `?print-pdf` ao final da URL. No Chrome ou Chromium, escolha Salvar como PDF, orientação paisagem, sem margens e gráficos de fundo ativados. O guia oficial confirma Chrome e Chromium.",
     "notes": "Pressione `S` para abrir a visão do apresentador em outra janela. Escreva as notas dentro de `<aside class=\"notes\">` no slide. A visão local do apresentador requer um servidor web.",
+    "safety": "Verifique os direitos de uso das imagens e dos vídeos dos slides e confira se o material público não contém informações confidenciais nem notas privadas do apresentador.",
     "links": "Guias oficiais"
   },
   "zh-tw": {
@@ -53,6 +59,7 @@
     "server": "若需要本機伺服器或原始碼開發工具，請使用官方 Full Setup。執行下列命令後，在瀏覽器開啟 `http://localhost:8000`。",
     "pdf": "在網址結尾加上 `?print-pdf`。在 Chrome 或 Chromium 的列印畫面選擇另存為 PDF、橫向、無邊界，並啟用背景圖形。官方指南確認的瀏覽器為 Chrome 與 Chromium。",
     "notes": "按 `S` 可在另一個視窗開啟講者檢視。在投影片的 `<aside class=\"notes\">` 中加入備註。本機使用講者檢視需要網頁伺服器。",
+    "safety": "請確認投影片中圖片與影片的使用權，並檢查公開資料是否含有機密資訊或不應公開的講者備註。",
     "links": "官方指南"
   },
   "hi": {
@@ -61,6 +68,7 @@
     "server": "स्थानीय सर्वर या स्रोत-विकास टूल चाहिए तो आधिकारिक Full Setup चुनें। ये कमांड चलाएँ और फिर ब्राउज़र में `http://localhost:8000` खोलें।",
     "pdf": "URL के अंत में `?print-pdf` जोड़ें। Chrome या Chromium के प्रिंट संवाद में PDF के रूप में सहेजें, लैंडस्केप, बिना मार्जिन और बैकग्राउंड ग्राफ़िक्स सक्षम करें। आधिकारिक मार्गदर्शिका Chrome और Chromium की पुष्टि करती है।",
     "notes": "अलग विंडो में वक्ता दृश्य खोलने के लिए `S` दबाएँ। स्लाइड के `<aside class=\"notes\">` में नोट लिखें। स्थानीय वक्ता दृश्य के लिए वेब सर्वर आवश्यक है।",
+    "safety": "स्लाइड में उपयोग की गई छवियों और वीडियो के अधिकार जाँचें, और सुनिश्चित करें कि सार्वजनिक सामग्री में गोपनीय जानकारी या निजी वक्ता नोट न हों।",
     "links": "आधिकारिक मार्गदर्शिकाएँ"
   },
   "fr": {
@@ -69,6 +77,7 @@
     "server": "Pour disposer d’un serveur local ou des outils de développement des sources, utilisez le Full Setup officiel. Exécutez les commandes suivantes, puis ouvrez `http://localhost:8000` dans un navigateur.",
     "pdf": "Ajoutez `?print-pdf` à la fin de l’URL. Dans Chrome ou Chromium, choisissez l’enregistrement au format PDF, l’orientation paysage, aucune marge et les graphiques d’arrière-plan. Le guide officiel confirme Chrome et Chromium.",
     "notes": "Appuyez sur `S` pour ouvrir la vue présentateur dans une fenêtre distincte. Ajoutez les notes dans `<aside class=\"notes\">` sur une diapositive. La vue présentateur en local nécessite un serveur web.",
+    "safety": "Vérifiez les droits d’utilisation des images et vidéos de vos diapositives, et assurez-vous que les supports publics ne contiennent ni informations confidentielles ni notes privées du présentateur.",
     "links": "Guides officiels"
   },
   "de": {
@@ -77,6 +86,7 @@
     "server": "Wenn Sie einen lokalen Server oder Werkzeuge für die Quellcodeentwicklung benötigen, verwenden Sie das offizielle Full Setup. Führen Sie die folgenden Befehle aus und öffnen Sie danach `http://localhost:8000` im Browser.",
     "pdf": "Hängen Sie `?print-pdf` an die URL an. Wählen Sie im Druckdialog von Chrome oder Chromium Als PDF speichern, Querformat, keine Ränder und aktivierte Hintergrundgrafiken. Die offizielle Anleitung bestätigt Chrome und Chromium.",
     "notes": "Drücken Sie `S`, um die Referentenansicht in einem separaten Fenster zu öffnen. Notizen können Sie innerhalb von `<aside class=\"notes\">` auf einer Folie einfügen. Lokal benötigt die Referentenansicht einen Webserver.",
+    "safety": "Prüfen Sie die Nutzungsrechte für Bilder und Videos in den Folien und stellen Sie sicher, dass öffentliche Materialien keine vertraulichen Informationen oder privaten Referentennotizen enthalten.",
     "links": "Offizielle Anleitungen"
   },
   "ar": {
@@ -85,6 +95,7 @@
     "server": "إذا احتجت إلى خادم محلي أو أدوات تطوير المصدر، فاستخدم Full Setup الرسمي. نفّذ الأوامر التالية ثم افتح `http://localhost:8000` في المتصفح.",
     "pdf": "أضف `?print-pdf` إلى نهاية عنوان URL. في نافذة الطباعة في Chrome أو Chromium اختر الحفظ بصيغة PDF، والاتجاه الأفقي، ومن دون هوامش، مع تفعيل رسومات الخلفية. يؤكد الدليل الرسمي Chrome وChromium.",
     "notes": "اضغط `S` لفتح عرض المتحدث في نافذة منفصلة. أضف الملاحظات داخل `<aside class=\"notes\">` في الشريحة. يحتاج عرض المتحدث محليًا إلى خادم ويب.",
+    "safety": "تحقق من حقوق استخدام الصور ومقاطع الفيديو في الشرائح، وتأكد من خلو المواد المنشورة من المعلومات السرية وملاحظات المتحدث الخاصة.",
     "links": "الأدلة الرسمية"
   },
   "ru": {
@@ -93,6 +104,7 @@
     "server": "Если нужны локальный сервер или инструменты для разработки исходного кода, используйте официальный Full Setup. Выполните команды ниже, затем откройте в браузере `http://localhost:8000`.",
     "pdf": "Добавьте `?print-pdf` в конец URL. В окне печати Chrome или Chromium выберите сохранение в PDF, альбомную ориентацию, отсутствие полей и включение фоновой графики. В официальном руководстве подтверждены Chrome и Chromium.",
     "notes": "Нажмите `S`, чтобы открыть режим докладчика в отдельном окне. Добавляйте заметки в `<aside class=\"notes\">` на слайде. Для локального режима докладчика нужен веб-сервер.",
+    "safety": "Проверьте права на использование изображений и видео в слайдах и убедитесь, что в открытых материалах нет конфиденциальных данных и личных заметок докладчика.",
     "links": "Официальные руководства"
   },
   "id": {
@@ -101,6 +113,7 @@
     "server": "Jika memerlukan server lokal atau alat pengembangan sumber, gunakan Full Setup resmi. Jalankan perintah berikut, lalu buka `http://localhost:8000` di browser.",
     "pdf": "Tambahkan `?print-pdf` di akhir URL. Di dialog cetak Chrome atau Chromium, pilih Simpan sebagai PDF, orientasi lanskap, tanpa margin, dan aktifkan grafik latar. Panduan resmi mengonfirmasi Chrome dan Chromium.",
     "notes": "Tekan `S` untuk membuka tampilan pembicara di jendela terpisah. Tambahkan catatan di dalam `<aside class=\"notes\">` pada slide. Tampilan pembicara lokal memerlukan server web.",
+    "safety": "Periksa hak penggunaan gambar dan video pada slide, lalu pastikan materi publik tidak memuat informasi rahasia atau catatan pembicara pribadi.",
     "links": "Panduan resmi"
   }
 }

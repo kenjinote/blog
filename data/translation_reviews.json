@@ -9371,120 +9371,120 @@
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "0b10267b12710b589d3b52068c47e975871a6cef6b4d60adf8669d5a3ffffd89",
+      "translationHash": "fcc54fc41957d94fd075c56def8c5dfbc7e935fad24866d86746aa16d3e8a347",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "7c77e8ba3694480d7d5c40925c847f943920195bc6800b67b74c8138707010b2"
+      "evidenceHash": "d005521dad7a53b910b7c683e0232669c015038f9bb015217a45b37f5cc4240f"
     },
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.zh-cn.md": {
       "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "c2005f428b2787513494676c9e918f38b5230c52534e8be6e6743ba5c8ca20d0",
+      "translationHash": "2d2ae29582af77b114f01e78bc7d28185366b0a99b644be67128b432c2734a1b",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "9fb0c8532ccf6f6a398bafd9295b1fef58287f94dc137e68acf976b6bc13aaf9"
+      "evidenceHash": "87500c40a9722abac8ed038c13d3ec1b9baa409c1d8b2bf124eb405a95559500"
     },
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.es.md": {
       "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "534b8a3a92737473a8df69ae8eee6101e7c3612360bcc64cde257e416072ebc6",
+      "translationHash": "ceda5a01aa067575be23543a07dcbb37ee8ba60c08e7800cdfbc07bd7b510637",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "fa6e281211cf8b16040b23e86caea6097ee33b556b028d1b28334cf03a53b6ba"
+      "evidenceHash": "afa6bb794f717a956a02b185021b3a9087e2fe04138ec99b7cfe702ddfc85f32"
     },
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.ko.md": {
       "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "f04d9a5a99c269539f97f9e7ee69c2dac052ff466632c39b5f4094e17cc31766",
+      "translationHash": "da3e3d749c050502f6f5f93fe63a1f79707ff01c16490fd54f11d3bde161a6aa",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "7a001178147f7e7954b6bde91757f710d4cf1e2f56b4c226b06a9892d1928667"
+      "evidenceHash": "be58ff194cd73ab0a89b6dcf12615a9fce3bfb433242ade463cf31f33eb13a94"
     },
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.pt.md": {
       "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "886494222863b5a7e2b89ca353564fd8cd92066aca825c5c006ec46ac78edf98",
+      "translationHash": "3fef735d33bdcf9f72d8a7bde04aff503a5d97459ea5d74fb7beffed597a3679",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "5f63d6eae7c41a56694aef647ddf32dc7af117ff26dc07e10fee10a4922ebf48"
+      "evidenceHash": "3cd641d5f5161f7ac785b04e30ab2b0d843b102fde82949527eebd9a0e115f2c"
     },
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.zh-tw.md": {
       "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "f1e6acd4cad86cce1fc81206a882b4d7ce09be6b024e18272ef42f5277d47445",
+      "translationHash": "e12f581c58c089702ada50e42bdb64cca7cb38e757af85cac01c2ae757967b86",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "b9d6b5bd1d57144a226586e12528f2fd4af3c88ad5aaf3f091a0fb0681ed8bcd"
+      "evidenceHash": "dbbccb82aefac5e72601e671b1f2d5e90b1d4fd805a54cfde1231db2e921198b"
     },
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.hi.md": {
       "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "a7d5a32f9a6f09ec855e467173b6085b1f7639f11e62df03990b00900176f074",
+      "translationHash": "863c0bee8fb7e478c14275445bade8f667f68f5e2cd34b753620ec536b47bd67",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "f1a06ebb688366b3344ed18a7494bee935fa2c7b4f674168a1cf9ecd7ef8cf2f"
+      "evidenceHash": "8567d42cee04a4f4e3eb9d84ace11cb6bc6e26ca212e524486051c9fc39d8a3e"
     },
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.fr.md": {
       "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "e476295aaa09837738896ff3302f60e8185f04a1c453fb86d5690e8fa3ce2a10",
+      "translationHash": "00d981430989882acb839609a8e59be7e9601a2204038158533ae4ef1a98d16c",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "2a5b32daff175a711a02183ce214a748d6c3a8e365267c3e400f9ac168cc3c34"
+      "evidenceHash": "a30d3b154d6d504a65b3282891b90e30455e228603aeb7eccdb267e03e5f72a6"
     },
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.de.md": {
       "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "be96c04c149e017c2cb6c13f064018924d2b315f2117b7404d00b45758a294f3",
+      "translationHash": "c8b0a09f85fd10ba07315b37cc2c207e7410393e8eb46a3ed6646ba5198920fe",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "d9c2e1ff77a2d0ce0a5b8d7b1d7c1db08c16290f1fb3f96d96f38fc2a380629c"
+      "evidenceHash": "3173361fab2f9dad0e8ebff1ddcd4c69ab276fee646529565c1779d3f40e9d95"
     },
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.ar.md": {
       "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "3cca84a40a0b347b7e780ae8862880c4c473f5f9fcd718cffc2a4c00bbb36eaa",
+      "translationHash": "e98dcc96e2502ef19b5bd47767a311bb3aab14d48ff2dc6cfbb324b35d5f3662",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "b903e3c637c4b2993ebb3dab3020c43fcb3b407f09977d78883ce715a18184b9"
+      "evidenceHash": "7e885affa879172a6ccec904bb5b73b1abb95c6b71f7104d313fa5cf6706a0de"
     },
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.ru.md": {
       "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "3e47f668889129fd55042799acd33ed79cab1552faa5fb35959a12653468a22b",
+      "translationHash": "05cb70e38608f511c1743765b3f7617fbff09e4d9084bb4fd3eb9af9b30646d7",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "62842245c33b744be1d2ba70076b24c7f62f8c324a0aad1bd06009f37639b95d"
+      "evidenceHash": "0743ad6dd8c5f755528b38b3f8202ea9efd39aacf284a2ac4b95c173dccc2e4a"
     },
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.id.md": {
       "source": "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.md",
       "reviewedAt": "2026-11-23",
       "reviewer": "Codex (AI)",
       "sourceHash": "2a2d253680d3d7aa623af909bbab5f2afa717095e605c3de8e83c8b9ef933a4d",
-      "translationHash": "e514c27acb35550cbabc0da4f93d78aae96f1eb2d066fc5907a30077a2e3fb4a",
+      "translationHash": "d1a559c4781439ce4b827f36eef903f0c6a35c157fe535c58d4d6f251ef9cf04",
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-081.json",
-      "evidenceHash": "cf5694f740d8acb632b4a7a2a71a9fc550c31b68b93afa5f278b4e7fddba8597"
+      "evidenceHash": "793131ac633041c81717da63a953ebe2a3cf1bcbaf0e9557a27b987e49855aa4"
     }
   }
 }

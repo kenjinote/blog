@@ -108,4 +108,4 @@ URL 끝에 `?print-pdf`를 추가합니다. Chrome 또는 Chromium의 인쇄 화
 - [PDF export](https://revealjs.com/pdf-export/)
 - [Speaker view](https://revealjs.com/speaker-view/)
 
-スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。
+슬라이드에 사용하는 이미지와 동영상의 이용 권한을 확인하고, 공개 자료에 기밀 정보나 비공개 발표자 노트가 포함되지 않았는지 점검하세요.

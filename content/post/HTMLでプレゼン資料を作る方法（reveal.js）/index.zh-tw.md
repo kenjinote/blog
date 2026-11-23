@@ -102,4 +102,4 @@ npm start
 - [PDF export](https://revealjs.com/pdf-export/)
 - [Speaker view](https://revealjs.com/speaker-view/)
 
-スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。
+請確認投影片中圖片與影片的使用權，並檢查公開資料是否含有機密資訊或不應公開的講者備註。

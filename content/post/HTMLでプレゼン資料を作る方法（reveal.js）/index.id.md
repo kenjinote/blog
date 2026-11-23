@@ -102,4 +102,4 @@ Tekan `S` untuk membuka tampilan pembicara di jendela terpisah. Tambahkan catata
 - [PDF export](https://revealjs.com/pdf-export/)
 - [Speaker view](https://revealjs.com/speaker-view/)
 
-スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。
+Periksa hak penggunaan gambar dan video pada slide, lalu pastikan materi publik tidak memuat informasi rahasia atau catatan pembicara pribadi.

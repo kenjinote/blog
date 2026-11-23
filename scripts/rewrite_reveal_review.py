@@ -57,7 +57,7 @@ for lang in LANGS:
     h = HEADINGS[lang]
     body = f"""{h[0]}\n\n{sec['setup']}\n\n```html\n<div class="reveal">\n  <div class="slides">\n    <section>Slide 1</section>\n    <section>Slide 2</section>\n    <section>Reveal this item <span class="fragment">when activated</span></section>\n  </div>\n</div>\n```\n\n{h[1]}\n\n{sec['markdown']}\n\n```html\n<section data-markdown>\n  <textarea data-template>\n## Slide 1\n---\n## Slide 2\n  </textarea>\n</section>\n```\n\n{h[2]}\n\n{sec['server']}\n\n```sh\ngit clone https://github.com/hakimel/reveal.js.git\ncd reveal.js\nnpm install\nnpm start\n```\n\n{h[3]}\n\n{sec['pdf']}\n\n{h[4]}\n\n{sec['notes']}\n\n```html\n<section>\n  <h2>Slide</h2>\n  <aside class="notes">Notes visible to the presenter only</aside>\n</section>\n```\n\n{h[5]}\n\n"""
     body += "\n".join(f"- [{name}]({url})" for name, url in URLS.items())
-    body += "\n\nスライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。\n"
+    body += "\n\n" + sec["safety"] + "\n"
     path.write_text(text.rstrip() + "\n\n" + body, encoding="utf-8", newline="\n")
 
 source_rel = (BUNDLE / "index.md").as_posix()

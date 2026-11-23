@@ -102,4 +102,4 @@ Press `S` to open speaker view in a separate window. Add notes inside `<aside cl
 - [PDF export](https://revealjs.com/pdf-export/)
 - [Speaker view](https://revealjs.com/speaker-view/)
 
-スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。
+Check the usage rights for images and videos in your slides, and make sure public materials do not contain confidential information or private speaker notes.

@@ -102,4 +102,4 @@ Appuyez sur `S` pour ouvrir la vue présentateur dans une fenêtre distincte. Aj
 - [PDF export](https://revealjs.com/pdf-export/)
 - [Speaker view](https://revealjs.com/speaker-view/)
 
-スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。
+Vérifiez les droits d’utilisation des images et vidéos de vos diapositives, et assurez-vous que les supports publics ne contiennent ni informations confidentielles ni notes privées du présentateur.

@@ -106,4 +106,4 @@ Pulsa `S` para abrir la vista del presentador en otra ventana. Añade notas dent
 - [PDF export](https://revealjs.com/pdf-export/)
 - [Speaker view](https://revealjs.com/speaker-view/)
 
-スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。
+Comprueba los derechos de uso de las imágenes y los vídeos de las diapositivas, y asegúrate de que el material público no incluya información confidencial ni notas privadas del presentador.

@@ -102,4 +102,4 @@ Pressione `S` para abrir a visão do apresentador em outra janela. Escreva as no
 - [PDF export](https://revealjs.com/pdf-export/)
 - [Speaker view](https://revealjs.com/speaker-view/)
 
-スライドに使う画像・動画の利用条件を確認し、公開資料に機密情報や非公開の発表者ノートが含まれていないか確認してください。
+Verifique os direitos de uso das imagens e dos vídeos dos slides e confira se o material público não contém informações confidenciais nem notas privadas do apresentador.
