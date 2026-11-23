@@ -1,0 +1,286 @@
+{
+  "version": 1,
+  "batch": 72,
+  "article": "content/content/post/GNFSを超えるアルゴリズムは存在するのか",
+  "reviewedAt": "2026-11-23",
+  "files": {
+    "ja": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "normalizedBytes": 15264,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/p/fermats-little-theorem/",
+        "https://kenji.blog/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "en": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.en.md",
+      "normalizedBytes": 12949,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/en/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "zh-cn": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.zh-cn.md",
+      "normalizedBytes": 11945,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/zh-cn/p/fermats-little-theorem/",
+        "https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "es": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.es.md",
+      "normalizedBytes": 14934,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/es/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "ko": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.ko.md",
+      "normalizedBytes": 14747,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/ko/p/fermats-little-theorem/",
+        "https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/ko/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "pt": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.pt.md",
+      "normalizedBytes": 14170,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/pt/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "zh-tw": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.zh-tw.md",
+      "normalizedBytes": 12328,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/zh-tw/p/fermats-little-theorem/",
+        "https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "hi": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.hi.md",
+      "normalizedBytes": 28441,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/hi/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/hi/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "fr": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.fr.md",
+      "normalizedBytes": 15068,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/fr/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "de": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.de.md",
+      "normalizedBytes": 14508,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/de/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "ar": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.ar.md",
+      "normalizedBytes": 18365,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/ar/p/fermats-little-theorem/",
+        "https://kenji.blog/ar/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/ar/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "ru": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.ru.md",
+      "normalizedBytes": 22522,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/ru/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/ru/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    },
+    "id": {
+      "path": "content/post/GNFSを超えるアルゴリズムは存在するのか/index.id.md",
+      "normalizedBytes": 13984,
+      "date": "2026-09-11T09:00:00+09:00",
+      "lastmod": "2026-11-23T09:00:00+09:00",
+      "headings": 15,
+      "displayMathBlocks": 3,
+      "mermaidGraphs": 2,
+      "referenceUrls": [
+        "https://arxiv.org/abs/2007.02730",
+        "https://arxiv.org/abs/2505.15917",
+        "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+        "https://doi.org/10.22331/q-2021-04-15-433",
+        "https://eprint.iacr.org/2020/697",
+        "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+        "https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/",
+        "https://kenji.blog/id/p/quantum-computing-shors-algorithm/"
+      ],
+      "hasRestoredFivePhaseFlow": true
+    }
+  },
+  "sharedSourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+  "sharedFormulaReferences": [
+    "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+    "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+    "https://arxiv.org/abs/2007.02730"
+  ],
+  "quantumEstimateReferences": [
+    "https://doi.org/10.22331/q-2021-04-15-433",
+    "https://arxiv.org/abs/2505.15917"
+  ],
+  "allThirteenReviewed": true,
+  "humanOrNativeSpeakerReview": false,
+  "result": "passed"
+}

@@ -2,6 +2,7 @@
 title: 'Apakah Terdapat Algoritma yang Melampaui GNFS (General Number Field Sieve)?'
 slug: "beyond-gnfs-integer-factorization-algorithms"
 date: "2026-09-11T09:00:00+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -11,9 +12,9 @@ tags: ["GNFS", "Integer Factorization", "RSA", "Algorithms"]
 
 ## 1. Pendahuluan: Faktorisasi Bilangan Prima dan Fondasi Kriptografi Modern
 
-Keamanan komunikasi internet dalam masyarakat modern sangat bergantung pada keamanan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), yang merupakan kriptografi kunci publik. Keamanan kriptografi RSA sendiri didasarkan pada asumsi matematis tentang "kesulitan memfaktorkan bilangan komposit raksasa menjadi bilangan prima". Jika algoritma faktorisasi bilangan prima yang sangat efisien ditemukan, infrastruktur komunikasi di seluruh dunia akan runtuh dari dasarnya.
+RSA adalah salah satu dari beberapa sistem kunci publik; keamanannya sebagian bergantung pada sulitnya memfaktorkan bilangan bulat besar. Namun, keamanan Internet secara keseluruhan tidak hanya bergantung pada RSA. Metode faktorisasi yang efisien akan mengancam penggunaan berbasis RSA, tetapi tidak otomatis meruntuhkan seluruh infrastruktur komunikasi.
 
-Saat ini, dalam hal faktorisasi bilangan bulat raksasa menggunakan komputer klasik, algoritma tercepat dan terkuat yang mendominasi adalah **General Number Field Sieve (GNFS)**. GNFS lahir sebagai bentuk perluasan dari Special Number Field Sieve (SNFS) yang diusulkan pada akhir tahun 1980-an, dan hingga hari ini telah mencetak rekor faktorisasi bilangan komposit raksasa seperti RSA-768 dan RSA-250.
+Untuk faktorisasi bilangan bulat umum yang besar, GNFS termasuk metode klasik yang paling dikenal. Metode ini digunakan untuk memfaktorkan bilangan seperti RSA-768 dan RSA-250; bilangan dengan struktur khusus mungkin lebih cocok ditangani metode seperti SNFS. [Laporan RSA-250](https://eprint.iacr.org/2020/697)
 
 Namun, para kriptografer dan matematikawan selalu memiliki pertanyaan berikut: "Apakah terdapat algoritma klasik yang melampaui GNFS?" "Di mana batas kemampuan komputer klasik?" dan, "Bagaimana komputer kuantum akan mendobrak situasi ini?"
 
@@ -35,14 +36,15 @@ Di sini, $n$ adalah bilangan bulat yang akan difaktorkan, $\ln n$ adalah logarit
 - Kasus $0 < \alpha < 1$: Berada di antara waktu polinomial dan waktu eksponensial, yang merepresentasikan **waktu sub-eksponensial (Sub-exponential time)**.
 
 Evolusi algoritma faktorisasi prima di masa lalu juga merupakan sejarah dalam mengurangi nilai $\alpha$ ini secara bertahap.
-- **Metode Pecahan Berlanjut (CFRAC) dan Multiple Polynomial Quadratic Sieve (MPQS)**: Termasuk dalam kelas $\alpha = 1/2$, dengan kompleksitas waktu sekitar $L_n[1/2, 1]$.
-- **General Number Field Sieve (GNFS)**: Mencapai $\alpha = 1/3$, dan membanggakan kompleksitas waktu $L_n[1/3, (64/9)^{1/3}]$ yang tercepat di antara algoritma klasik yang dikenal saat ini.
+- **CFRAC**: waktu jalan harapan heuristik $L_n[1/2,\sqrt{2}]$ ([referensi](https://cacr.uwaterloo.ca/hac/about/chap3.pdf)).
+- **MPQS/QS**: waktu jalan harapan heuristik $L_n[1/2,1]$ ([dokumentasi FLINT](https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html)).
+- **GNFS**: estimasi heuristik yang lazim adalah $L_n[1/3,(64/9)^{1/3}]$; ini bukan batas yang terbukti maupun waktu praktis secara langsung ([analisis NFS](https://arxiv.org/abs/2007.02730)).
 
 ---
 
 ## 3. Gambaran Keseluruhan Algoritma dan Struktur Matematis GNFS (General Number Field Sieve)
 
-GNFS memiliki fondasi matematis yang sangat kompleks dan canggih. Ide dasarnya merupakan perpanjangan dari [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) dan Quadratic Sieve (QS), yaitu menemukan pasangan non-trivial $(X, Y)$ yang memenuhi kongruensi $X^2 \equiv Y^2 \pmod n$ dan $X \not\equiv \pm Y \pmod n$, untuk kemudian menurunkan faktor dari $n$ melalui $\gcd(X-Y, n)$.
+GNFS dan QS menggunakan gagasan kongruensi kuadrat: cari $X,Y$ sehingga $X^2\equiv Y^2\pmod n$ tetapi $X\not\equiv\pm Y\pmod n$; lalu $\gcd(X-Y,n)$ dapat menghasilkan faktor nontrivial.
 
 Namun, esensi sejati dari GNFS adalah bahwa ini tidak hanya dilakukan pada lapangan bilangan rasional $\mathbb{Q}$, tetapi mencari "bilangan halus (Smooth numbers)" secara bersamaan baik pada lapangan perluasan yang disebut lapangan bilangan aljabar (Algebraic Number Field) $\mathbb{Q}(\alpha)$ dan lapangan bilangan rasional, serta membangun hubungan kongruensi melalui homomorfisma.
 
@@ -54,9 +56,8 @@ graph TD
   B --> C["2. Proses Penyaringan (Sieving Phase)"]
   C --> D["3. Penyaringan Lanjutan (Filtering Phase)"]
   D --> E["4. Aljabar Linear (Linear Algebra Phase)"]
-  E --> F["5. Akar Kuadrat (Square Root Phase)"]
-  F --> G["Output Faktor Prima p, q"]
-```
+  E --> F["5. Tahap Akar Kuadrat (Square Root Phase)"]
+  F --> G["Output Faktor Prima p, q"]```
 
 ### 3.1 Fase 1: Pemilihan Polinomial (Polynomial Selection)
 
@@ -93,11 +94,10 @@ Melalui hal ini, matriks dengan miliaran baris dikompresi menjadi matriks jarang
 
 ### 3.4 Fase 4: Aljabar Linear (Linear Algebra Phase)
 
-Di sini, kita menemukan vektor solusi non-trivial $\mathbf{x}$ untuk persamaan $\mathbf{A} \mathbf{x} \equiv \mathbf{0} \pmod 2$. Dengan kata lain, ini adalah masalah mencari ruang nol kiri (Left Nullspace) dari matriks jarang yang raksasa.
+Di sini dicari vektor tak nol $\mathbf{x}$ yang memenuhi $\mathbf{A}\mathbf{x}=\mathbf{0}$ di atas $\mathbb{F}_2$, yaitu vektor dalam kernel (ruang nol) matriks renggang.
 
-Karena ukuran matriksnya sangat besar, mustahil untuk menghitungnya dengan metode eliminasi Gauss biasa ($O(N^3)$). Oleh karena itu, metode iteratif yang merupakan salah satu metode subruang Krylov digunakan. Secara historis, **Metode Block Lanczos** digunakan, namun dalam lingkungan komputasi terdistribusi saat ini, **Metode Block Wiedemann (Block Wiedemann Algorithm)**, yang secara drastis dapat mengurangi *overhead* komunikasi, menjadi metode utama.
+Untuk matriks renggang, digunakan metode Krylov iteratif seperti Block Lanczos dan Block Wiedemann. Laporan faktorisasi RSA-250 mencatat penggunaan Block Wiedemann; pilihan dan kinerjanya bergantung pada matriks, implementasi, dan arsitektur komputasi. [Laporan RSA-250](https://eprint.iacr.org/2020/697)
 
-Metode Block Wiedemann menghitung polinomial minimal dari deretan matriks $\mathbf{A}$ dan vektor, lalu membangun basis dari ruang nol menggunakan algoritma Berlekamp-Massey. Langkah ini sangat sulit untuk diparalelkan dan merupakan salah satu *bottleneck* (hambatan) terbesar GNFS, yang membutuhkan jaringan komunikasi yang terikat erat dari superkomputer atau *cluster* berskala besar.
 
 ### 3.5 Fase 5: Akar Kuadrat (Square Root Phase)
 
@@ -121,16 +121,12 @@ Sebagai pendekatan yang memperluas GNFS, terdapat **Multiple Number Field Sieve 
 $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 
 Dengan menggunakan beberapa lapangan aljabar, probabilitas untuk "menjadi halus pada salah satu lapangan aljabar" pada setiap langkah penyaringan dapat ditingkatkan secara drastis. Melalui pendekatan ini, Coppersmith berhasil sedikit mengurangi konstanta $c$ dari kompleksitas $L_n[1/3, c]$.
-Secara khusus, secara teoritis telah ditunjukkan bahwa sementara konstanta GNFS adalah $c = (64/9)^{1/3} \approx 1.923$, dengan mengoptimalkan MNFS, kompleksitas waktu dapat direduksi hingga sekitar $c \approx 1.902$.
+
 Namun dalam praktiknya, *overhead* pengelolaan berbagai lapangan aljabar sangatlah besar, dan hal ini belum mencapai terobosan yang menentukan untuk modulus [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dalam skala praktis.
 
 ### 4.2 Apakah Algoritma Kelas $L_n[1/4]$ Mungkin?
 
-Mengenai batasan algoritma klasik dari faktorisasi prima, sebuah tema yang telah diperdebatkan di antara para matematikawan selama bertahun-tahun adalah pertanyaan "Apakah ada algoritma dengan pangkat $\alpha = 1/4$?".
-GNFS saat ini dan turunannya terikat kuat pada kerangka kerja "pencarian kehalusan" menggunakan saringan, dan diyakini secara luas bahwa $\alpha = 1/3$ adalah batas dalam paradigma ini. Dari analisis probabilitas distribusi bilangan bulat halus yang menggunakan fungsi Dickman (Dickman function), diyakini bahwa dengan kombinasi konstruksi lapangan aljabar dan saringan saat ini, seoptimal apa pun dioptimalkan, tembok $O(L_n[1/3])$ tidak dapat dilewati.
-
-Jika algoritma $L_n[1/4]$, atau algoritma waktu polinomial klasik ada, itu pasti akan bergantung pada struktur matematis baru yang benar-benar berbeda dari pendekatan "berbasis kehalusan" seperti GNFS, yang saat ini tidak dapat dibayangkan oleh manusia (sebagai contoh, pendekatan geometri aljabar yang lebih tingkat tinggi seperti algoritma Schoof untuk kriptografi kurva eliptik, dll.). Namun, saat ini belum ada tanda-tanda hal semacam itu akan muncul.
-
+Belum diketahui algoritme faktorisasi klasik umum dengan kompleksitas asimtotik di bawah bentuk GNFS yang lazim, tetapi ini tidak membuktikan algoritme yang lebih baik mustahil. Analisis bilangan mulus menjelaskan metode penyaringan yang dikenal, bukan batas bawah semua algoritme; pertanyaan ini masih terbuka.
 ---
 
 ## 5. Terobosan Melalui Komputer Kuantum: Algoritma Shor
@@ -140,40 +136,24 @@ Sementara komputer klasik sedang berhadapan dengan tembok $L_n[1/3]$, tembok ini
 ### 5.1 Dampak Waktu Polinomial Kuantum
 
 Algoritma Shor mereduksi masalah faktorisasi prima menjadi "Masalah Pencarian Orde (Order Finding Problem)". Ini adalah masalah untuk menemukan periode (orde) $r$ dari fungsi $f(x) = a^x \pmod n$ untuk bilangan bulat $a$ tertentu.
-Komputer klasik membutuhkan waktu eksponensial untuk menemukan periode ini, tetapi dengan menggunakan **Estimasi Fase Kuantum (QPE: Quantum Phase Estimation)** dan **Transformasi Fourier Kuantum (QFT: Quantum Fourier Transform)** pada komputer kuantum, evaluasi paralel pada superposisi (Superposition) semua status/keadaan dilakukan, sehingga sangat memungkinkan untuk mengekstraksi periode $r$ dengan probabilitas yang tinggi.
+Shor memanfaatkan interferensi kuantum untuk mengambil informasi tentang periode fungsi; ini bukan berarti semua keadaan superposisi dibaca secara paralel.
 
 Dari sudut pandang kompleksitas, waktu eksekusi algoritma Shor adalah **waktu polinomial kuantum**, yang secara khusus direpresentasikan sebagai berikut:
 $$ O((\log n)^3) $$
-Dengan mempertimbangkan implementasi sirkuit yang dioptimalkan dalam beberapa tahun terakhir, hal ini dapat direduksi lebih lanjut menjadi $O((\log n)^2 \log \log n)$.
 
 ```mermaid
 graph LR
   A["Algoritma Klasik (GNFS)"] -->|"Batas"| B["Waktu Sub-eksponensial L_n[1/3]"]
   C["Algoritma Kuantum (Shor)"] -->|"Terobosan"| D["Waktu Polinomial O((log n)^3)"]
   B --> E["Penggunaan Lanjutan RSA (Peningkatan Panjang Kunci)"]
-  D --> F["Keruntuhan Total Kriptografi RSA"]
+  D --> F["RSA rentan jika komputer kuantum toleran-kesalahan yang memadai tersedia"]
 ```
 
 ### 5.2 Waktu Sub-eksponensial Klasik vs Waktu Polinomial Kuantum
 
-Perbedaan antara dua kelas kompleksitas komputasi ini memiliki makna yang sangat krusial (menentukan) dalam keamanan kriptografi dunia nyata.
+Shor memfaktorkan bilangan dalam waktu polinomial pada model kuantum ideal, tetapi hal itu saja tidak memberi biaya praktis mesin toleran-kesalahan. Gidney dan Ekerå pada 2021 memperkirakan sekitar 20 juta qubit fisik dan 8 jam; pada 2025, Gidney memperkirakan kurang dari satu juta qubit fisik yang bising dan kurang dari seminggu dengan rancangan serta asumsi berbeda. Ini estimasi bersyarat, bukan demonstrasi pemecahan RSA-2048; belum ada komputer kuantum yang memfaktorkan bilangan sebesar itu. Jumlah gerbang atau waktu tidak dapat disimpulkan hanya dari $2048^3$. [2021](https://doi.org/10.22331/q-2021-04-15-433) · [2025](https://arxiv.org/abs/2505.15917)
 
-Sebagai contoh, perhatikan kasus pemfaktoran [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)-2048 (bilangan komposit 2048-bit).
-- **GNFS (Klasik)**: Mensubstitusikan $n \approx 2^{2048}$ ke dalam $L_n[1/3, 1.923]$, diperlukan sekitar $2^{112}$ operasi. Ini adalah jumlah perhitungan astronomis yang akan membutuhkan waktu lebih lama daripada umur alam semesta, bahkan jika semua sumber daya komputasi di Bumi saat ini digabungkan.
-- **Algoritma Shor (Kuantum)**: Dengan algoritma $O((\log n)^3)$, hanya diperlukan sekitar $2048^3 \approx 8.5 \times 10^9$ operasi gerbang logika. Hal ini berarti, jika perangkat keras yang tepat (komputer kuantum universal dengan jutaan qubit fisik dan kemampuan koreksi kesalahan) tersedia, perhitungan dapat diselesaikan hanya dalam beberapa jam atau beberapa hari saja.
-
-Pergeseran paradigma dari waktu sub-eksponensial dengan "pangkat $\alpha=1/3$" menuju "waktu polinomial" meniadakan strategi kriptografi tradisional yang menjamin keamanan dengan memperpanjang panjang kunci.
-
----
-
+Rumus asimtotik GNFS juga tidak langsung menghasilkan jumlah operasi atau waktu; diperlukan model biaya dan parameter yang jelas.
 ## 6. Kesimpulan: Prospek Menuju Generasi Mendatang
 
-Konsensus komunitas ilmiah saat ini atas pertanyaan "Apakah ada algoritma klasik yang melampaui GNFS?" adalah sebagai berikut:
-
-1. **Peningkatan praktis terus berlanjut, tetapi tidak ada lompatan asimtotik**: Berbagai upaya terus dilakukan untuk meningkatkan bagian konstanta $c$ pada GNFS, seperti MNFS, optimasi pemilihan polinomial, paralelisasi Metode Block Wiedemann, dsb. Namun, kemungkinan ditemukannya algoritma klasik di bawah $\alpha = 1/3$ dianggap sangatlah rendah.
-2. **Keamanan RSA pada komputer klasik masih tetap kuat**: Kompleksitas perhitungan GNFS masih sangat masif, dan RSA-2048 atau RSA-4096 akan tetap aman terhadap serangan komputer klasik untuk beberapa dekade mendatang.
-3. **Ancaman sebenarnya adalah algoritma kuantum**: Algoritma Shor-lah, yang didasarkan pada prinsip-prinsip mekanika kuantum, yang mendobrak tembok kompleksitas komputasi. Oleh karena itu, dunia dipaksa untuk beralih ke Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy (PQC). Garis terdepan kriptografi saat ini adalah transisi ke masalah matematis baru yang dianggap sulit untuk dipecahkan (tidak dapat dipecahkan dalam waktu polinomial) bahkan oleh komputer kuantum, seperti kriptografi kisi ([lattice-based cryptography](/id/p/lattice-based-cryptography-math-intuition/)) dan kriptografi berbasis hash (hash-based cryptography).
-
-General Number Field Sieve (GNFS) adalah salah satu "puncak pencapaian tertinggi" umat manusia dalam menantang batas maksimal matematika klasik dan desain algoritma. Memahami struktur matematis yang mendalam dari GNFS bukan hanya mempelajari sejarah kriptanalisis, namun juga merupakan perjalanan pencarian intelektual untuk bersentuhan langsung dengan keindahan teori kompleksitas komputasi dan teori bilangan aljabar. Sampai hari di mana komputer kuantum direalisasikan, GNFS nampaknya akan terus mempertahankan takhtanya sebagai algoritma faktorisasi prima terkuat.
-
-
+GNFS adalah metode umum terbaik yang diketahui, bukan batas yang terbukti. Belum diketahui algoritme klasik umum dengan kompleksitas asimtotik lebih baik, tetapi tidak ada bukti bahwa itu mustahil. Perbaikan praktis bukan jaminan waktu atau bukti bahwa RSA aman selama beberapa dekade. Estimasi sumber daya Shor bersyarat dan tidak menggambarkan perangkat saat ini. Migrasi ke kriptografi pascakuantum mengikuti standar dan panduan resmi yang berlaku.

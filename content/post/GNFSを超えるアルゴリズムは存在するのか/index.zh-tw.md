@@ -2,6 +2,7 @@
 title: '超越 GNFS（一般數體篩法）的演算法存在嗎？'
 slug: "beyond-gnfs-integer-factorization-algorithms"
 date: "2026-09-11T09:00:00+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -11,9 +12,9 @@ tags: ["GNFS", "Integer Factorization", "RSA", "Algorithms"]
 
 ## 1. 簡介：質因數分解與現代密碼學的基礎
 
-現代社會中網際網路通訊的安全性，很大程度上仰賴於公開金鑰密碼系統（即 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 密碼）的安全性。而 RSA 密碼的安全性則是基於「巨大合成數質因數分解的困難度」這項數學假設。如果發現了極高效率的質因數分解演算法，全球的通訊基礎設施將會從根本上崩潰。
+RSA 是多種公開金鑰密碼系統之一，其安全性部分建立在大整數難以分解的假設上。但網際網路整體安全並非只依賴 RSA。高效率的分解演算法會威脅採用 RSA 的情境，卻不會自動造成所有通訊基礎設施崩潰。
 
-目前，在使用古典電腦進行巨大整數質因數分解的領域中，最快速且最強大的演算法為 **一般數體篩法（GNFS: General Number Field Sieve）** 。GNFS 是擴充了 1980 年代後半所提出的特殊數體篩法（SNFS）而誕生的，時至今日，它已經創下了 RSA-768 和 RSA-250 等巨大合成數質因數分解的紀錄。
+對一般大整數分解而言，GNFS 是最知名的古典方法之一，曾用於分解 RSA-768、RSA-250 等整數；具有特殊結構的整數可能更適合 SNFS 等方法。[RSA-250 報告](https://eprint.iacr.org/2020/697)
 
 然而，密碼學家與數學家們始終抱持著以下疑問：「超越 GNFS 的古典演算法存在嗎？」「古典電腦的極限在哪裡？」以及「量子電腦將如何打破這個局面？」
 
@@ -35,8 +36,9 @@ $$
 - 當 $0 < \alpha < 1$ 時：這介於多項式時間與指數時間之間，稱為 **次指數時間（Sub-exponential time）** 。
 
 過去質因數分解演算法的演進，其實就是逐漸縮小這個 $\alpha$ 值的歷史。
-- **連分數法（CFRAC）或多重多項式二次篩法（MPQS）** ：屬於 $\alpha = 1/2$ 的類別，[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)大約為 $L_n[1/2, 1]$。
-- **一般數體篩法（GNFS）** ：達到了 $\alpha = 1/3$，這在目前已知的古典演算法中擁有最快的 $L_n[1/3, (64/9)^{1/3}]$ [複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)。
+- **CFRAC**：啟發式預期執行時間為 $L_n[1/2,\sqrt{2}]$（[參考資料](https://cacr.uwaterloo.ca/hac/about/chap3.pdf)）。
+- **MPQS/QS**：啟發式預期執行時間為 $L_n[1/2,1]$（[FLINT 文件](https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html)）。
+- **GNFS**：一般的啟發式估算為 $L_n[1/3,(64/9)^{1/3}]$；這不是已證明的下界，也不是直接的實際執行時間（[NFS 分析](https://arxiv.org/abs/2007.02730)）。
 
 ---
 
@@ -54,9 +56,8 @@ graph TD
   B --> C["2. 篩選處理 (Sieving Phase)"]
   C --> D["3. 濾波階段 (Filtering Phase)"]
   D --> E["4. 線性代數 (Linear Algebra Phase)"]
-  E --> F["5. 平方根 (Square Root Phase)"]
-  F --> G["輸出質因數 p, q"]
-```
+  E --> F["5. 平方根階段 (Square Root Phase)"]
+  F --> G["輸出質因數 p, q"]```
 
 ### 3.1 階段 1：多項式選擇 (Polynomial Selection)
 
@@ -93,11 +94,10 @@ $n = c_d m^d + c_{d-1} m^{d-1} + \dots + c_1 m + c_0$
 
 ### 3.4 階段 4：線性代數 (Linear Algebra Phase)
 
-在這個階段中，要找到方程式 $\mathbf{A} \mathbf{x} \equiv \mathbf{0} \pmod 2$ 的非平凡解向量 $\mathbf{x}$。換句話說，這是一個求取巨大稀疏矩陣之左零空間（Left Nullspace）的問題。
+此處要在 $\mathbb{F}_2$ 上尋找滿足 $\mathbf{A}\mathbf{x}=\mathbf{0}$ 的非零向量 $\mathbf{x}$，也就是稀疏矩陣核空間中的向量。
 
-由於矩陣尺寸極端巨大，使用一般的高斯消去法（$O(N^3)$）根本無法計算。因此，會採用克雷洛夫子空間（Krylov subspace）方法的一種迭代法。歷史上曾使用過 **區塊蘭佐斯法（Block Lanczos）** ，但在當前的分散式運算環境中，能大幅減少通訊額外開銷的 **區塊魏德曼法（Block Wiedemann Algorithm）** 才是主流。
+對於稀疏矩陣，會使用 Block Lanczos、Block Wiedemann 等 Krylov 反覆方法。RSA-250 分解報告記錄了 Block Wiedemann 的實際使用；方法選擇與效能取決於矩陣、實作與計算架構。[RSA-250 報告](https://eprint.iacr.org/2020/697)
 
-區塊魏德曼法會從矩陣 $\mathbf{A}$ 和向量序列中計算最小多項式，並利用貝利坎普-馬西（Berlekamp-Massey）演算法來建構零空間的基底。這個步驟非常難以平行化，且需要超級電腦或大規模叢集的緊密耦合通訊網路，是 GNFS 最大的瓶頸之一。
 
 ### 3.5 階段 5：平方根 (Square Root Phase)
 
@@ -121,16 +121,11 @@ $X^2 \equiv \phi(\gamma)^2 \equiv Y^2 \pmod n$
 $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 
 透過利用多個代數數體，可以在每個篩選步驟中，飛躍性地提高「在其中一個代數數體中變得平滑」的機率。Coppersmith 成功地藉由這種方法讓[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/) $L_n[1/3, c]$ 中的常數 $c$ 些微減少。
-具體來說，GNFS 的常數為 $c = (64/9)^{1/3} \approx 1.923$，而理論上已經證明透過最佳化 MNFS，可以將計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)降低到 $c \approx 1.902$ 左右。
 但在實務上，管理多個數體會帶來巨大的額外開銷，因此並未在實用規模的 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 模數分解上達到決定性的突破。
 
 ### 4.2 $L_n[1/4]$ 類別的演算法有可能嗎？
 
-關於質因數分解古典演算法的極限，數學家們長年討論的一個主題就是「指數 $\alpha = 1/4$ 的演算法存在嗎？」這個問題。
-目前的 GNFS 及其衍伸演算法，受到透過篩法進行「尋找平滑數」這種框架的強烈限制，而在這種典範中，人們普遍相信 $\alpha = 1/3$ 就是極限。從使用迪克曼函數（Dickman function）來分析平滑整數的分佈機率也可以看出，目前的代數數體建構法與篩法的結合，無論如何最佳化，都被認為無法跨越 $O(L_n[1/3])$ 的障礙。
-
-如果存在 $L_n[1/4]$ 或是古典的多項式時間演算法，那它必定依賴於一種與 GNFS 這類「基於平滑數」的方法完全不同、目前人類意想不到的全新數學結構（例如，針對[橢圓曲線密碼學](/zh-tw/p/elliptic-curve-cryptography-math-cpp/)的 Schoof 演算法這種更為進階的代數幾何學方法）。然而，目前尚未看到這樣的跡象。
-
+目前尚無漸近複雜度低於一般 GNFS 形式的通用古典質因數分解演算法，但這不能證明更好的演算法不可能存在。平滑數分析描述已知篩法的限制，並未證明所有演算法的下界；此問題仍未解決。
 ---
 
 ## 5. 量子運算的突破：Shor 演算法
@@ -140,41 +135,24 @@ $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 ### 5.1 量子多項式時間的衝擊
 
 Shor 演算法將質因數分解問題化約為「求階問題（Order Finding Problem）」。對於某個整數 $a$，這是一個找出函數 $f(x) = a^x \pmod n$ 之週期（階數）$r$ 的問題。
-古典電腦在尋找這個週期時需要耗費指數時間，但透過在量子電腦上使用 **量子相位估計（QPE: Quantum Phase Estimation）** 與 **量子傅立葉轉換（QFT: Quantum Fourier Transform）** ，可以對所有狀態的疊加態（Superposition）進行平行的評估，並以極高的機率萃取出週期 $r$。
+Shor 利用量子干涉萃取函數週期的資訊；這不代表能平行讀取所有疊加態。
 
 從計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)的角度來看，Shor 演算法的執行時間屬於 **量子多項式時間** ，具體如下所示：
 $$ O((\log n)^3) $$
-若考慮到近年來經過最佳化的電路實作，被認為可進一步縮減至 $O((\log n)^2 \log \log n)$。
 
 ```mermaid
 graph LR
   A["古典演算法 (GNFS)"] -->|"極限"| B["次指數時間 L_n[1/3]"]
   C["量子演算法 (Shor)"] -->|"突破"| D["多項式時間 O((log n)^3)"]
   B --> E["持續使用 RSA 密碼 (增加金鑰長度)"]
-  D --> F["RSA 密碼完全崩潰"]
+  D --> F["若出現能力足夠的容錯量子電腦，RSA 將面臨風險"]
 ```
 
 ### 5.2 古典次指數時間 vs 量子多項式時間
 
-這兩個[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)類別的差異，在現實世界的密碼安全上具有決定性的意義。
+Shor 在理想化量子模型中可於多項式時間分解整數，但這本身無法提供容錯設備的實際成本。Gidney 與 Ekerå 於 2021 年在特定假設下估計約需 2,000 萬個物理量子位元及 8 小時；Gidney 於 2025 年針對另一種設計與假設估計少於 100 萬個具雜訊的物理量子位元、少於一週。這些都是有條件的估算，並非破解 RSA-2048 的展示；目前尚無量子電腦分解過如此規模的整數。單靠 $2048^3$ 無法推得閘數或執行時間。[2021 年估算](https://doi.org/10.22331/q-2021-04-15-433) · [2025 年估算](https://arxiv.org/abs/2505.15917)
 
-舉例來說，考慮將 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)-2048（2048 位元的合成數）進行因數分解的情況。
-- **GNFS (古典)**: 將 $n \approx 2^{2048}$ 代入 $L_n[1/3, 1.923]$ 中，大約需要進行 $2^{112}$ 次運算。這是即使集結目前地球上所有運算資源，也需要超過宇宙壽命才能完成的天文數字般的運算量。
-- **[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/) (量子)**: 在 $O((\log n)^3)$ 的演算法中，大約只需要進行 $2048^3 \approx 8.5 \times 10^9$ 次的邏輯閘操作。這意味著只要有適當的硬體（具備數百萬物理量子位元與錯誤更正能力的通用量子電腦）存在，計算便能在短短數小時到數天內完成。
-
-從「指數 $\alpha=1/3$」的次指數時間到「多項式時間」的典範轉移，將使藉由增加金鑰長度來確保安全性的傳統密碼學策略變得毫無招架之力。
-
----
-
+GNFS 漸近公式也無法直接換算為運算次數或時間；這需要明確的成本模型與參數。
 ## 6. 總結：對次世代的展望
 
-對於「超越 GNFS 的古典演算法存在嗎？」這個問題，目前科學界的共識如下：
-
-1. **實務上的改良仍會持續，但不會有漸進[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)上的飛躍**: 像是 MNFS、多項式選擇的最佳化、區塊魏德曼法的平行化等，改善 GNFS 常數項 $c$ 的嘗試仍持續進行中。然而，一般認為發現低於 $\alpha = 1/3$ 古典演算法的可能性極低。
-2. **在古典電腦上的 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 安全性依然堅固**: GNFS 的運算量依然非常龐大，RSA-2048 或 RSA-4096 應對古典電腦攻擊的安全性，在未來的數十年間仍會保持穩固。
-3. **真正的威脅是量子演算法**: 跨越計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)障礙的是基於量子力學原理的 Shor 演算法。這也迫使世界必須向後量子密碼學（PQC: Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）過渡。轉向即使是量子電腦也難以破解（無法在多項式時間內解開）的全新數學問題，例如晶格密碼學或基於雜湊的密碼學等，已成為當前密碼學的最前線。
-
-一般數體篩法（GNFS）是人類挑戰古典數學與演算法設計極限所達到的「最高成就」之一。了解 GNFS 深奧的數學結構，不僅僅是學習密碼破解的歷史，更是一趟接觸計算[複雜度](/zh-tw/p/time-space-complexity-big-o-notation-examples/)理論與代數數論之美的知識探索之旅。在量子電腦真正普及的那一天到來之前，GNFS 將會持續穩坐最強質因數分解演算法的寶座。
-
-
-
+GNFS 是已知最佳通用方法，但不是已證明的極限。實務改良無法保證所需時間，也不能據此斷言 RSA 未來數十年安全。Shor 資源估算有條件限制，並不代表現有設備的能力。後量子密碼遷移應遵循適用標準與官方指引。

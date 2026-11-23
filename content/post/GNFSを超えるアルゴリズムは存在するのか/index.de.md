@@ -2,6 +2,7 @@
 title: 'Gibt es einen Algorithmus, der das GNFS (Allgemeines Zahlkörpersieb) übertrifft?'
 slug: "beyond-gnfs-integer-factorization-algorithms"
 date: "2026-09-11T09:00:00+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -11,9 +12,9 @@ tags: ["GNFS", "Integer Factorization", "RSA", "Algorithms"]
 
 ## 1. Einführung: Primfaktorzerlegung und die Grundlage der modernen Kryptographie
 
-Die Sicherheit der Internetkommunikation in der modernen Gesellschaft hängt stark von der Sicherheit der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie ab, einem Public-Key-Kryptosystem. Die Sicherheit des RSA-Verfahrens basiert auf der mathematischen Annahme, dass es schwierig ist, riesige zusammengesetzte Zahlen in ihre Primfaktoren zu zerlegen. Wenn ein extrem effizienter Algorithmus zur Primfaktorzerlegung entdeckt würde, würde die Kommunikationsinfrastruktur der ganzen Welt von Grund auf zusammenbrechen.
+RSA ist eines von mehreren Public-Key-Systemen; seine Sicherheit hängt unter anderem von der Schwierigkeit der Faktorisierung großer Zahlen ab. Die Internetsicherheit insgesamt beruht jedoch nicht allein auf RSA. Eine effiziente Faktorisierung würde RSA-Anwendungen bedrohen, aber nicht automatisch die gesamte Kommunikationsinfrastruktur außer Kraft setzen.
 
-Derzeit ist das **Allgemeine Zahlkörpersieb (GNFS: General Number Field Sieve)** der schnellste und stärkste Algorithmus zur Primfaktorzerlegung riesiger ganzen Zahlen auf klassischen Computern. Das GNFS entstand als Erweiterung des Speziellen Zahlkörpersiebs (SNFS), das Ende der 1980er Jahre vorgeschlagen wurde. Bis heute hat es Rekorde bei der Faktorisierung riesiger zusammengesetzter Zahlen wie RSA-768 und RSA-250 aufgestellt.
+Für die Faktorisierung allgemeiner großer Zahlen gehört GNFS zu den bekanntesten klassischen Verfahren. Damit wurden unter anderem RSA-768 und RSA-250 faktorisiert; für Zahlen besonderer Form können Verfahren wie SNFS geeigneter sein. [Bericht zu RSA-250](https://eprint.iacr.org/2020/697)
 
 Kryptographen und Mathematiker stellen sich jedoch stets folgende Fragen: "Gibt es einen klassischen Algorithmus, der das GNFS übertrifft?", "Wo liegen die Grenzen klassischer Computer?" und "Wie werden Quantencomputer diese Situation überwinden?".
 
@@ -35,14 +36,15 @@ Hierbei ist $n$ die zu faktorisierende ganze Zahl und $\ln n$ der natürliche Lo
 - Wenn $0 < \alpha < 1$: Es handelt sich um eine **subexponentielle Zeit (Sub-exponential time)**, die zwischen der Polynomzeit und der Exponentialzeit liegt.
 
 Die Geschichte der Entwicklung vergangener Faktorisierungsalgorithmen war auch eine Geschichte der allmählichen Verringerung dieses $\alpha$-Wertes.
-- **Kettenbruchmethode (CFRAC) und Quadratisches Sieb mit mehreren Polynomen (MPQS)**: Sie gehören zur Klasse $\alpha = 1/2$ und haben eine Komplexität von etwa $L_n[1/2, 1]$.
-- **Allgemeines Zahlkörpersieb (GNFS)**: Es erreicht $\alpha = 1/3$ und rühmt sich der Komplexität von $L_n[1/3, (64/9)^{1/3}]$, womit es der schnellste bekannte klassische Algorithmus ist.
+- **CFRAC**: heuristische erwartete Laufzeit $L_n[1/2,\sqrt{2}]$ ([Referenz](https://cacr.uwaterloo.ca/hac/about/chap3.pdf)).
+- **MPQS/QS**: heuristische erwartete Laufzeit $L_n[1/2,1]$ ([FLINT-Dokumentation](https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html)).
+- **GNFS**: die übliche heuristische Schätzung lautet $L_n[1/3,(64/9)^{1/3}]$; dies ist weder eine bewiesene Schranke noch eine direkte praktische Laufzeit ([NFS-Analyse](https://arxiv.org/abs/2007.02730)).
 
 ---
 
 ## 3. Der gesamte GNFS-Algorithmus und seine mathematische Struktur
 
-Das GNFS besitzt eine äußerst komplexe und fortschrittliche mathematische Grundlage. Die grundlegende Idee ist eine Erweiterung des kleinen [Fermat](https://kenji.blog/de/p/fermat/)schen Satzes und des Quadratischen Siebs (QS): Durch das Finden eines nicht-trivialen Paares $(X, Y)$, das die Kongruenz $X^2 \equiv Y^2 \pmod n$ und $X \not\equiv \pm Y \pmod n$ erfüllt, leitet man den Faktor $\gcd(X-Y, n)$ von $n$ ab.
+GNFS und QS nutzen die Idee einer Kongruenz von Quadraten: Gesucht werden $X,Y$ mit $X^2\equiv Y^2\pmod n$ und $X\not\equiv\pm Y\pmod n$; dann kann $\gcd(X-Y,n)$ einen nicht-trivialen Faktor liefern.
 
 Der Kern des GNFS liegt jedoch darin, dies nicht nur im Körper der rationalen Zahlen $\mathbb{Q}$ zu tun, sondern gleichzeitig "glatte Zahlen (Smooth numbers)" in einem Erweiterungskörper $\mathbb{Q}(\alpha)$, der als algebraischer Zahlkörper (Algebraic Number Field) bezeichnet wird, und im Körper der rationalen Zahlen zu suchen und durch einen Homomorphismus eine Kongruenzbeziehung herzustellen.
 
@@ -54,9 +56,8 @@ graph TD
   B --> C["2. Siebphase (Sieving Phase)"]
   C --> D["3. Filterphase (Filtering Phase)"]
   D --> E["4. Lineare Algebra Phase (Linear Algebra Phase)"]
-  E --> F["5. Quadratwurzel Phase (Square Root Phase)"]
-  F --> G["Ausgabe der Primfaktoren p, q"]
-```
+  E --> F["5. Quadratwurzelphase (Square Root Phase)"]
+  F --> G["Ausgabe der Primfaktoren p, q"]```
 
 ### 3.1 Phase 1: Polynomauswahl (Polynomial Selection)
 
@@ -77,7 +78,7 @@ Sobald die Polynome bestimmt sind, tritt der Algorithmus in die "Sieb"-Phase (Si
 1. **Norm auf der rationalen Seite**: $F_1(a, b) = b \cdot f_1(a/b) = a - bm$
 2. **Norm auf der algebraischen Seite**: $F_2(a, b) = b^d \cdot f_2(a/b)$
 
-"Glatt" bedeutet, dass die Zahl nur in Primfaktoren zerlegbar ist, die unter einer angegebenen Schranke (Sieve bound) liegen. Man bereitet eine Primzahlenbasis (Factor base) für die rationale Seite und eine Primzahlenbasis für die algebraische Seite vor und findet glatte Zahlen effizient in einem riesigen Suchraum, ähnlich wie beim Sieb des Eratosthenes.
+Im Grundmodell hat eine glatte Zahl nur Primfaktoren bis zur Siebgrenze. Praktische Varianten lassen teils zusätzliche große Primfaktoren zu; die genauen Kriterien hängen von der Implementierung ab.
 Heutzutage ist eine Methode namens **Gittersieb (Lattice Sieving)** der Mainstream. Indem eine bestimmte Primzahl $q$ fixiert wird und nur $(a, b)$-Paare auf einem Teilgitter gesiebt werden, bei denen sowohl die rationale als auch die algebraische Seite ein Vielfaches von $q$ sind, wird eine extrem hohe Effizienz erreicht.
 
 ### 3.3 Phase 3: Filterphase (Filtering Phase)
@@ -93,11 +94,10 @@ Dadurch wird eine Matrix mit Milliarden von Zeilen zu einer riesigen dünnbesetz
 
 ### 3.4 Phase 4: Lineare Algebra Phase (Linear Algebra Phase)
 
-Hier finden wir einen nicht-trivialen Lösungsvektor $\mathbf{x}$ der Gleichung $\mathbf{A} \mathbf{x} \equiv \mathbf{0} \pmod 2$. Das bedeutet, es handelt sich um das Problem, den linken Nullraum (Left Nullspace) einer riesigen dünnbesetzten Matrix zu finden.
+Hier suchen wir einen von null verschiedenen Vektor $\mathbf{x}$ mit $\mathbf{A}\mathbf{x}=\mathbf{0}$ über $\mathbb{F}_2$, also einen Vektor im Kern (Nullraum) der dünn besetzten Matrix.
 
-Da die Größe der Matrix extrem groß ist, ist sie mit der normalen Gaußschen Elimination ($O(N^3)$) unmöglich zu berechnen. Daher wird eine iterative Methode verwendet, die eine Art von Krylov-Unterraum-Verfahren ist. Historisch gesehen wurde die **Block-Lanczos-Methode (Block Lanczos)** verwendet, aber in der heutigen verteilten Computerumgebung ist der **Block-Wiedemann-Algorithmus (Block Wiedemann Algorithm)**, der den Kommunikations-Overhead drastisch reduzieren kann, der Mainstream.
+Für dünn besetzte Matrizen werden iterative Krylow-Verfahren wie Block Lanczos und Block Wiedemann eingesetzt. Der Bericht zur Faktorisierung von RSA-250 dokumentiert den Einsatz von Block Wiedemann; Auswahl und Leistung hängen von Matrix, Implementierung und Rechnerarchitektur ab. [RSA-250-Bericht](https://eprint.iacr.org/2020/697)
 
-Die Block-Wiedemann-Methode berechnet das Minimalpolynom aus der Matrix $\mathbf{A}$ und Vektorfolgen und konstruiert die Basis des Nullraums mithilfe des Berlekamp-Massey-Algorithmus. Dieser Schritt ist sehr schwer zu parallelisieren und erfordert stark gekoppelte Kommunikationsnetzwerke von Supercomputern oder großen Clustern, was ihn zu einem der größten Engpässe des GNFS macht.
 
 ### 3.5 Phase 5: Quadratwurzel Phase (Square Root Phase)
 
@@ -121,16 +121,12 @@ Als Ansatz zur Erweiterung des GNFS gibt es das **Vielfache Zahlkörpersieb (MNF
 $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 
 Durch die Verwendung mehrerer algebraischer Körper kann die Wahrscheinlichkeit, dass die Zahl in jedem Siebschritt "in einem der algebraischen Körper glatt wird", drastisch erhöht werden. Mit diesem Ansatz ist es Coppersmith gelungen, die Konstante $c$ in der Komplexität $L_n[1/3, c]$ leicht zu reduzieren.
-Konkret wurde theoretisch gezeigt, dass, während die Konstante des GNFS $c = (64/9)^{1/3} \approx 1,923$ ist, die Optimierung des MNFS den Rechenaufwand auf etwa $c \approx 1,902$ reduzieren kann.
+
 In der Praxis ist jedoch der Overhead durch die Verwaltung mehrerer Körper groß, und es hat nicht zu einem entscheidenden Durchbruch bei [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Modulen in praktischer Größe geführt.
 
 ### 4.2 Sind Algorithmen der Klasse $L_n[1/4]$ möglich?
 
-Ein Thema, das unter Mathematikern seit vielen Jahren hinsichtlich der Grenzen klassischer Algorithmen zur Primfaktorzerlegung diskutiert wird, ist die Frage: "Gibt es einen Algorithmus mit dem Exponenten $\alpha = 1/4$?".
-Das derzeitige GNFS und seine Ableitungen sind stark an den Rahmen der "Suche nach Glätte" durch Sieben gebunden, und es wird weithin angenommen, dass $\alpha = 1/3$ die Grenze innerhalb dieses Paradigmas ist. Auch aus der Analyse der Verteilungswahrscheinlichkeit glatter ganzer Zahlen unter Verwendung der Dickman-Funktion (Dickman function) geht man davon aus, dass die Wand von $O(L_n[1/3])$ mit der aktuellen Kombination aus algebraischer Körperkonstruktion und Sieben durch keine Optimierung überwunden werden kann.
-
-Sollte es $L_n[1/4]$ oder gar einen klassischen Polynomzeitalgorithmus geben, müsste dieser auf einer völlig neuen mathematischen Struktur beruhen, die derzeit niemand vorhersehen kann und die sich vom "glattheitsbasierten" Ansatz wie dem GNFS völlig unterscheidet (zum Beispiel ein fortgeschrittenerer algebraisch-geometrischer Ansatz wie der Schoof-Algorithmus für elliptische Kurvenkryptographie). Derzeit gibt es jedoch keine derartigen Anzeichen.
-
+Derzeit ist kein klassischer allgemeiner Faktorisierungsalgorithmus mit geringerer asymptotischer Komplexität als die übliche GNFS-Form bekannt. Das beweist nicht, dass ein besserer Algorithmus unmöglich ist. Analysen glatter Zahlen beschreiben bekannte Siebverfahren, aber keine untere Schranke für alle Algorithmen; die Frage bleibt offen.
 ---
 
 ## 5. Durchbruch durch Quantencomputer: Shors Algorithmus
@@ -140,40 +136,24 @@ Während klassische Computer an der $L_n[1/3]$-Wand stehen, zerschmetterte der 1
 ### 5.1 Der Schock der quantenmechanischen Polynomzeit
 
 Shors Algorithmus reduziert das Faktorisierungsproblem auf ein "Ordnungsfindungsproblem (Order Finding Problem)". Es geht darum, die Periode (Ordnung) $r$ der Funktion $f(x) = a^x \pmod n$ für eine bestimmte ganze Zahl $a$ zu finden.
-Während ein klassischer Computer exponentielle Zeit benötigt, um diese Periode zu finden, können durch die Verwendung der **Quanten-Phasenschätzung (QPE: Quantum Phase Estimation)** und der **Quanten-Fourier-Transformation (QFT: Quantum Fourier Transform)** auf einem Quantencomputer alle Zustände in Überlagerung (Superposition) parallel bewertet und die Periode $r$ mit hoher Wahrscheinlichkeit extrahiert werden.
+Shor nutzt Quanteninterferenz, um Information über die Periode der Funktion zu gewinnen; das bedeutet nicht, dass alle überlagerten Zustände parallel ausgelesen werden.
 
 In Bezug auf die Komplexität ist die Ausführungszeit von Shors Algorithmus eine **quantenmechanische Polynomzeit**, konkret:
 $$ O((\log n)^3) $$
-Unter Berücksichtigung kürzlich optimierter Schaltungsimplementierungen kann dies auf $O((\log n)^2 \log \log n)$ reduziert werden.
 
 ```mermaid
 graph LR
   A["Klassischer Algorithmus (GNFS)"] -->|"Grenze"| B["Subexponentielle Zeit L_n[1/3]"]
   C["Quantenalgorithmus (Shor)"] -->|"Durchbruch"| D["Polynomzeit O((log n)^3)"]
   B --> E["Fortgesetzte Nutzung von RSA (Längere Schlüssel)"]
-  D --> F["Vollständiger Zusammenbruch von RSA"]
+  D --> F["RSA gefährdet, falls ein ausreichend leistungsfähiger fehlertoleranter Quantencomputer existiert"]
 ```
 
 ### 5.2 Klassische subexponentielle Zeit vs Quantenmechanische Polynomzeit
 
-Der Unterschied zwischen diesen beiden Komplexitätsklassen hat entscheidende Auswirkungen auf die reale kryptographische Sicherheit.
+Shor faktorisiert im idealisierten Quantenmodell in Polynomialzeit, doch daraus folgt keine praktische Kostenschätzung für ein fehlertolerantes Gerät. Gidney und Ekerå schätzten 2021 etwa 20 Millionen physische Qubits und 8 Stunden; Gidney schätzte 2025 für einen anderen Entwurf und andere Annahmen weniger als eine Million verrauschte physische Qubits und weniger als eine Woche. Das sind bedingte Schätzungen, keine Demonstrationen eines Angriffs auf RSA-2048; bisher hat kein Quantencomputer eine Zahl dieser Größe faktorisiert. Aus $2048^3$ allein lassen sich weder Gatterzahl noch Laufzeit ableiten. [2021](https://doi.org/10.22331/q-2021-04-15-433) · [2025](https://arxiv.org/abs/2505.15917)
 
-Betrachten wir beispielsweise den Fall der Faktorisierung von [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-2048 (eine zusammengesetzte Zahl mit 2048 Bit).
-- **GNFS (Klassisch)**: Setzt man $n \approx 2^{2048}$ in $L_n[1/3, 1.923]$ ein, so benötigt man etwa $2^{112}$ Operationen. Dies ist eine astronomische Rechenmenge, die länger als die Lebensdauer des Universums dauern würde, selbst wenn man alle aktuellen Rechenressourcen der Erde bündeln würde.
-- **[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) (Quanten)**: Bei einem $O((\log n)^3)$-Algorithmus sind nur etwa $2048^3 \approx 8,5 \times 10^9$ logische Gatteroperationen erforderlich. Dies bedeutet, dass die Berechnung in nur wenigen Stunden bis Tagen abgeschlossen sein könnte, sofern die entsprechende Hardware (ein universeller Quantencomputer mit Millionen von physischen Qubits und Fehlerkorrekturfähigkeiten) vorhanden ist.
-
-Der Paradigmenwechsel von einer subexponentiellen Funktion mit einem "Exponenten $\alpha=1/3$" zur "Polynomzeit" macht die traditionelle kryptographische Strategie, die Sicherheit durch Erhöhung der Schlüssellänge zu gewährleisten, völlig wirkungslos.
-
----
-
+Auch die asymptotische GNFS-Formel ergibt nicht direkt eine Operationszahl oder Laufzeit; dafür braucht man ein explizites Kostenmodell und Parameter.
 ## 6. Zusammenfassung: Ausblick auf die nächste Generation
 
-Der aktuelle Konsens der wissenschaftlichen Gemeinschaft zur Frage "Gibt es einen klassischen Algorithmus, der das GNFS übertrifft?" lautet wie folgt:
-
-1. **Praktische Verbesserungen werden fortgesetzt, aber es gibt keinen asymptotischen Sprung**: Versuche, den konstanten Term $c$ des GNFS zu verbessern, wie MNFS, Optimierung der Polynomauswahl und Parallelisierung der Block-Wiedemann-Methode, werden fortgesetzt. Es gilt jedoch als äußerst unwahrscheinlich, dass ein klassischer Algorithmus entdeckt wird, der $\alpha = 1/3$ unterschreitet.
-2. **Die Sicherheit von [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) auf klassischen Computern bleibt stark**: Der Rechenaufwand für das GNFS bleibt enorm, und RSA-2048 und RSA-4096 werden auf Jahrzehnte hinaus sicher gegen Angriffe klassischer Computer bleiben.
-3. **Die wahre Bedrohung ist der Quantenalgorithmus**: Die Wand der Berechnungskomplexität wurde durch Shors Algorithmus überwunden, der auf den Prinzipien der Quantenmechanik beruht. Infolgedessen ist die Welt gezwungen, auf Post-Quanten-Kryptographie (PQC: Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy) umzusteigen. Der Übergang zu neuen mathematischen Problemen wie gitterbasierter Kryptographie und Hash-basierter Kryptographie, die auch für Quantencomputer als schwer zu knacken (nicht in Polynomzeit lösbar) gelten, ist die aktuelle Spitze der Kryptographie.
-
-Das Allgemeine Zahlkörpersieb (GNFS) ist einer der "höchsten Punkte", den die Menschheit erreicht hat, indem sie die Grenzen der klassischen Mathematik und des Algorithmus-Designs herausgefordert hat. Das Verständnis der tiefgreifenden mathematischen Struktur des GNFS ist nicht nur das Erlernen der Geschichte der Kryptoanalyse, sondern auch eine intellektuelle Reise, um die Schönheit der Berechnungskomplexitätstheorie und der algebraischen Zahlentheorie zu erfahren. Bis zu dem Tag, an dem Quantencomputer in die Praxis umgesetzt werden, wird das GNFS seinen Thron als stärkster Algorithmus zur Primfaktorzerlegung behalten.
-
-
+GNFS ist das beste bekannte allgemeine Verfahren, aber keine bewiesene Grenze. Es ist kein klassischer allgemeiner Algorithmus mit besserer asymptotischer Komplexität bekannt, doch ein Unmöglichkeitsbeweis existiert nicht. Praktische Verbesserungen rechtfertigen weder Zeitgarantien noch die Prognose, RSA bleibe jahrzehntelang sicher. Shor-Ressourcenschätzungen sind bedingt und beschreiben nicht heutige Geräte. Die Umstellung auf Post-Quanten-Kryptographie folgt einschlägigen Standards und Empfehlungen.

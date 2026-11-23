@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "article": "GNFSを超えるアルゴリズムは存在するのか",
+  "frozenSourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+  "reviewedAt": "2026-11-23",
+  "sources": [
+    "https://eprint.iacr.org/2020/697",
+    "https://cacr.uwaterloo.ca/hac/about/chap3.pdf",
+    "https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html",
+    "https://arxiv.org/abs/2007.02730",
+    "https://doi.org/10.1007/BF00198464",
+    "https://doi.org/10.22331/q-2021-04-15-433",
+    "https://arxiv.org/abs/2505.15917"
+  ],
+  "findings": [
+    "Scoped RSA as one public-key system among several and GNFS as a well-known general-purpose classical method; removed claims that all Internet security would collapse or that GNFS is an established absolute fastest method.",
+    "Corrected heuristic expected L-notation estimates: CFRAC L_n[1/2,sqrt(2)], QS/MPQS L_n[1/2,1], and GNFS L_n[1/3,(64/9)^(1/3)]. Clarified these are not proven lower bounds or direct practical runtimes.",
+    "Removed claims that no L[1/4] algorithm is possible, fixed the matrix-kernel/nullspace wording, qualified sparse linear algebra methods and polynomial selection claims, and restored the five-phase GNFS process graph.",
+    "Removed unsupported RSA-2048 classical operation-count and quantum gate/time claims. Distinguished Gidney-Ekerå 2021 and Gidney 2025 resource estimates by their differing assumptions, and stated neither is a factoring demonstration.",
+    "Preserved publication date 2026-09-11 and set lastmod to 2026-11-23 in all 13 editions."
+  ],
+  "validation": "docs/translation-review/validation-072.json",
+  "scope": "Read the complete Japanese article and all twelve translations. Compared technical meaning, terminology, formulas, diagrams, links and claims against primary and academic sources; validated multilingual structure and math rendering.",
+  "publicationPending": true,
+  "reviews": {
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "bf3f672304bd62adeed6201bddc35eb4d8553c279c0bbe8ee899542e84c86236",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "eddc10c62e1a1d5933593604e85f819809e19580b8f2503d0138c47d89edf39d",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "bfc257e43eab9d4a0065e4cdacc1b22f22cbf024af5c96b14a45b8531d8964bb",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "6e0eaafa033329480bb6d7be1bf49a21579f178e94f5bca4369305da4371f2bd",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "f7f0dae4953e8d6798a4a37a245d53f1abf23afc8a6be498a9722c7b90c222cc",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "4b840f2d37c6d0b04cf5f33f00522e17b5617c23ea0623e6d5c90ee6a0407bfa",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "3fd655f511093f6d56483587b8bfdc398f6918a3597ec8e3d526a02440ea2241",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "c64d78670704e470585a7c62a8314265ccbc712e93a8a22666950055d4853c1f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "353b5933780386b1929479bfe8f190dcdf5036bec3d3d01e7eb49528c4293422",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "afdc0d27a5a64c565b868b034f54cdc5f71d8df136ca668a4633c53ca7601b2f",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "daf9a9320375dc9e2fa1e3984cad5193224a581436da908b9963805ac8cda414",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    },
+    "post/GNFSを超えるアルゴリズムは存在するのか/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "source": "post/GNFSを超えるアルゴリズムは存在するのか/index.md",
+      "sourceHash": "afdcbc665707a0e2069b248a77c6f9150011953973d85991bc4f46a45df8d80b",
+      "translationHash": "cb856d5ad76980615770914872a99319c6ca2d12d5aa447439fb4d939af803ee",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Read the complete Japanese article and the complete localized edition. Compared scope and qualifications for RSA/GNFS, the five GNFS stages, classical algorithm comparisons, limits of asymptotic claims, Shor’s algorithm, and the conditional RSA-2048 resource estimates."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked localized terminology for integer factorization, GNFS/SNFS, smooth numbers, L-notation, sparse-matrix kernel, quantum interference, fault-tolerant/noisy physical qubits, and post-quantum cryptography."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked the L-notation definition and CFRAC/QS/GNFS heuristic estimates, congruence-of-squares and nullspace statements, Shor asymptotic notation, and the distinctions among the 2021 and 2025 model-conditioned RSA-2048 estimates. The math-rendering test passed."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The article contains no executable code samples. Reviewed the Mermaid GNFS flow graph and restored the complete five-phase sequence; structural tests passed. No cryptographic implementation or quantum circuit was executed."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked the article’s source links and cross-article links, including the RSA-250 report, factoring-complexity references, the 2021 Quantum paper, and the 2025 resource-estimate preprint."
+        }
+      },
+      "summary": "Reviewed the complete Japanese article and all twelve translations. Corrected overclaims about RSA and GNFS, distinguished heuristic asymptotic estimates from proven bounds and practical runtimes, corrected factoring-complexity formulas and nullspace terminology, qualified Shor/RSA-2048 resource estimates, and restored the GNFS five-phase Mermaid flow. Preserved the original publication date and set lastmod to 2026-11-23.",
+      "limitations": [
+        "AI review only; no human or native-speaker certification.",
+        "No cryptographic algorithms or quantum circuits were independently implemented or executed; mathematical review is not a formal proof or independent peer review.",
+        "No full browser visual review of the rendered article was performed."
+      ]
+    }
+  }
+}

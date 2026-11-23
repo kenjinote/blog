@@ -2,6 +2,7 @@
 title: 'Existe-t-il un algorithme surpassant GNFS (Crible général du corps de nombres) ?'
 slug: "beyond-gnfs-integer-factorization-algorithms"
 date: "2026-09-11T09:00:00+09:00"
+lastmod: "2026-11-23T09:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
@@ -11,9 +12,9 @@ tags: ["GNFS", "Factorisation d'entiers", "RSA", "Algorithmes"]
 
 ## 1. Introduction : La factorisation d'entiers et le fondement de la cryptographie moderne
 
-La sécurité des communications sur Internet dans la société moderne dépend fortement de la sécurité de la cryptographie à clé publique [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/). La sécurité de RSA repose sur l'hypothèse mathématique de la « difficulté de factoriser d'énormes nombres composés ». Si un algorithme de factorisation extrêmement efficace était découvert, l'infrastructure de communication mondiale s'effondrerait depuis ses fondations.
+RSA est l’un des systèmes à clé publique existants ; sa sécurité repose en partie sur la difficulté de factoriser de grands entiers. La sécurité d’Internet dans son ensemble ne dépend toutefois pas uniquement de RSA. Une méthode de factorisation efficace menacerait les usages fondés sur RSA, sans provoquer automatiquement l’effondrement de toutes les communications.
 
-Actuellement, dans la factorisation d'entiers gigantesques à l'aide d'ordinateurs classiques, l'algorithme qui règne en tant que plus rapide et plus puissant est le **Crible général du corps de nombres (GNFS : General Number Field Sieve)**. GNFS est né en tant qu'extension du crible spécial du corps de nombres (SNFS) proposé à la fin des années 1980, et jusqu'à aujourd'hui, il a établi des records de factorisation pour des nombres composés énormes tels que RSA-768 et RSA-250.
+Pour factoriser de grands entiers généraux, le GNFS fait partie des méthodes classiques les mieux connues. Il a servi à factoriser notamment RSA-768 et RSA-250 ; les nombres de forme particulière peuvent mieux se prêter à des méthodes comme le SNFS. [Rapport RSA-250](https://eprint.iacr.org/2020/697)
 
 Cependant, les cryptographes et les mathématiciens se posent constamment les questions suivantes : « Existe-t-il un algorithme classique surpassant GNFS ? », « Où se situent les limites des ordinateurs classiques ? » et « Comment les ordinateurs quantiques vont-ils surmonter cette situation ? »
 
@@ -35,14 +36,15 @@ Où $n$ est l'entier à factoriser, et $\ln n$ est le logarithme népérien, qui
 - Lorsque $0 < \alpha < 1$ : Cela devient un **temps sous-exponentiel (Sub-exponential time)**, situé entre le temps polynomial et le temps exponentiel.
 
 L'histoire de l'évolution des algorithmes de factorisation du passé a également été l'histoire de la réduction progressive de la valeur de cet $\alpha$.
-- **Méthode des fractions continues (CFRAC) et crible quadratique à polynômes multiples (MPQS)** : Appartiennent à la classe $\alpha = 1/2$, avec une complexité d'environ $L_n[1/2, 1]$.
-- **Crible général du corps de nombres (GNFS)** : Atteint $\alpha = 1/3$, et s'enorgueillit de la complexité la plus rapide parmi les algorithmes classiques connus à ce jour, qui est de $L_n[1/3, (64/9)^{1/3}]$.
+- **CFRAC** : temps d’exécution attendu heuristique $L_n[1/2,\sqrt{2}]$ ([référence](https://cacr.uwaterloo.ca/hac/about/chap3.pdf)).
+- **MPQS/QS** : temps d’exécution attendu heuristique $L_n[1/2,1]$ ([documentation FLINT](https://flintlib.org/doc/algorithms/number-theory/quadratic-sieve.html)).
+- **GNFS** : l’estimation heuristique usuelle est $L_n[1/3,(64/9)^{1/3}]$ ; ce n’est ni une borne démontrée ni un temps pratique directement obtenu ([analyse du NFS](https://arxiv.org/abs/2007.02730)).
 
 ---
 
 ## 3. L'algorithme complet et la structure mathématique de GNFS
 
-GNFS possède des fondations mathématiques extrêmement complexes et avancées. L'idée de base s'inscrit dans la continuité du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) et du crible quadratique (QS), qui consiste à trouver des paires non triviales $(X, Y)$ satisfaisant la congruence $X^2 \equiv Y^2 \pmod n$ et $X \not\equiv \pm Y \pmod n$, pour en déduire un facteur de $n$, $\gcd(X-Y, n)$.
+GNFS et QS reposent sur la recherche d’une congruence de carrés : trouver $X,Y$ tels que $X^2\equiv Y^2\pmod n$ et $X\not\equiv\pm Y\pmod n$ ; alors $\gcd(X-Y,n)$ peut fournir un facteur non trivial.
 
 Cependant, l'essence de GNFS réside dans le fait qu'il n'effectue pas cela uniquement dans le corps des nombres rationnels $\mathbb{Q}$, mais qu'il recherche simultanément des « nombres friables (Smooth numbers) » à la fois dans un corps d'extension $\mathbb{Q}(\alpha)$ appelé corps de nombres algébriques (Algebraic Number Field) et dans le corps des rationnels, et construit des relations de congruence par le biais d'homomorphismes.
 
@@ -54,9 +56,8 @@ graph TD
   B --> C["2. Processus de criblage (Sieving Phase)"]
   C --> D["3. Filtrage (Filtering Phase)"]
   D --> E["4. Algèbre linéaire (Linear Algebra Phase)"]
-  E --> F["5. Racine carrée (Square Root Phase)"]
-  F --> G["Sortie des facteurs premiers p, q"]
-```
+  E --> F["5. Extraction de racine carrée (Square Root Phase)"]
+  F --> G["Sortie des facteurs premiers p, q"]```
 
 ### 3.1 Phase 1 : Sélection de polynômes (Polynomial Selection)
 
@@ -77,7 +78,7 @@ Une fois les polynômes déterminés, l'algorithme entre dans la phase de « cri
 1. **Norme du côté rationnel** : $F_1(a, b) = b \cdot f_1(a/b) = a - bm$
 2. **Norme du côté algébrique** : $F_2(a, b) = b^d \cdot f_2(a/b)$
 
-« Friable » signifie qu'elles ne peuvent être factorisées qu'avec des nombres premiers inférieurs ou égaux à une limite spécifiée (Sieve bound). On prépare une base de facteurs (Factor base) pour le côté rationnel et une autre pour le côté algébrique, et on trouve efficacement les nombres friables sur un vaste espace de recherche à la manière du crible d'Ératosthène.
+Dans la définition de base, un nombre friable n’a pas de facteur premier supérieur à la borne de criblage. Certaines variantes pratiques acceptent aussi de grands facteurs premiers ; les critères dépendent de l’implémentation.
 Aujourd'hui, une méthode appelée **crible par réseaux (Lattice Sieving)** est dominante. En fixant un certain nombre premier $q$, et en ne criblant que les paires $(a, b)$ sur un sous-réseau où les côtés rationnel et algébrique sont tous deux des multiples de $q$, on atteint une efficacité extrêmement élevée.
 
 ### 3.3 Phase 3 : Filtrage (Filtering Phase)
@@ -93,11 +94,10 @@ Grâce à cela, une matrice de milliards de lignes est compressée en une énorm
 
 ### 3.4 Phase 4 : Algèbre linéaire (Linear Algebra Phase)
 
-Ici, on trouve un vecteur solution non trivial $\mathbf{x}$ de l'équation $\mathbf{A} \mathbf{x} \equiv \mathbf{0} \pmod 2$. Autrement dit, c'est le problème de trouver l'espace nul à gauche (Left Nullspace) d'une énorme matrice creuse.
+On cherche ici un vecteur non nul $\mathbf{x}$ tel que $\mathbf{A}\mathbf{x}=\mathbf{0}$ sur $\mathbb{F}_2$ ; autrement dit, un vecteur du noyau de la matrice creuse.
 
-Étant donné que la taille de la matrice est extrêmement grande, il est absolument impossible de la calculer avec l'élimination de Gauss habituelle ($O(N^3)$). Par conséquent, des méthodes itératives, qui sont un type de méthode de sous-espace de Krylov, sont utilisées. Historiquement, la **méthode par blocs de Lanczos (Block Lanczos)** était utilisée, mais dans les environnements informatiques distribués actuels, la **méthode par blocs de Wiedemann (Block Wiedemann Algorithm)**, qui permet de réduire considérablement la surcharge de communication, prédomine.
+Pour les matrices creuses, on utilise des méthodes itératives de Krylov comme Block Lanczos et Block Wiedemann. Le rapport sur la factorisation de RSA-250 documente un calcul avec Block Wiedemann ; le choix et les performances dépendent de la matrice, de l’implémentation et de l’architecture de calcul. [Rapport RSA-250](https://eprint.iacr.org/2020/697)
 
-La méthode par blocs de Wiedemann calcule un polynôme minimal à partir de la matrice $\mathbf{A}$ et d'une séquence de vecteurs, et utilise l'algorithme de Berlekamp-Massey pour construire une base de l'espace nul. Cette étape est très difficile à paralléliser et constitue l'un des plus plus grands goulots d'étranglement de GNFS, exigeant des superordinateurs ou des réseaux de communication étroitement couplés de grands clusters.
 
 ### 3.5 Phase 5 : Racine carrée (Square Root Phase)
 
@@ -121,16 +121,12 @@ Comme approche étendant GNFS, on trouve le **crible multiple du corps de nombre
 $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 
 En utilisant plusieurs corps algébriques, la probabilité de devenir « friable dans l'un des corps algébriques » à chaque étape de criblage peut être considérablement augmentée. Avec cette approche, Coppersmith a réussi à réduire légèrement la constante $c$ de la complexité $L_n[1/3, c]$.
-Concrètement, alors que la constante de GNFS est $c = (64/9)^{1/3} \approx 1.923$, il a été théoriquement démontré qu'en optimisant MNFS, la complexité pouvait être réduite à environ $c \approx 1.902$.
+
 Cependant, dans la pratique, la surcharge due à la gestion de corps multiples est importante, et cela n'a pas conduit à une percée décisive pour les modules [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) à l'échelle pratique.
 
 ### 4.2 Des algorithmes de la classe $L_n[1/4]$ sont-ils possibles ?
 
-Concernant les limites des algorithmes classiques de factorisation d'entiers, un thème longuement débattu parmi les mathématiciens est la question : « Existe-t-il un algorithme d'exposant $\alpha = 1/4$ ? ».
-Le GNFS actuel et ses dérivés sont fortement liés au cadre de « recherche de friabilité » par le criblage, et il est largement admis qu'au sein de ce paradigme, $\alpha = 1/3$ est la limite. D'après l'analyse de la probabilité de distribution des entiers friables à l'aide de la fonction de Dickman, on pense qu'il est impossible de franchir le mur de $O(L_n[1/3])$, quelle que soit l'optimisation, avec la combinaison actuelle de construction de corps algébriques et de criblage.
-
-S'il existait un algorithme en $L_n[1/4]$, ou même un algorithme classique en temps polynomial, il devrait dépendre d'une nouvelle structure mathématique totalement différente des approches basées sur la « friabilité » comme GNFS, et actuellement impensable pour l'humanité (par exemple, une approche de géométrie algébrique plus avancée comme l'algorithme de Schoof pour la cryptographie sur les courbes elliptiques). Cependant, il n'y a pour le moment aucun signe de cela.
-
+Aucun algorithme classique général de factorisation de complexité asymptotique inférieure à la forme usuelle du GNFS n’est connu, mais cela ne prouve pas qu’un meilleur algorithme soit impossible. Les analyses des nombres friables décrivent les méthodes de criblage connues, sans établir de borne inférieure pour tous les algorithmes ; la question reste ouverte.
 ---
 
 ## 5. La percée par les ordinateurs quantiques : l'algorithme de Shor
@@ -140,40 +136,24 @@ Alors que les ordinateurs classiques font face au mur du $L_n[1/3]$, c'est l'**a
 ### 5.1 Le choc du temps quantique polynomial
 
 L'algorithme de Shor réduit le problème de la factorisation d'entiers au « problème de la recherche de l'ordre (Order Finding Problem) ». Pour un entier donné $a$, il s'agit de trouver la période (ordre) $r$ de la fonction $f(x) = a^x \pmod n$.
-Bien qu'un ordinateur classique nécessite un temps exponentiel pour trouver cette période, en utilisant l'**estimation de phase quantique (QPE : Quantum Phase Estimation)** et la **transformée de Fourier quantique (QFT : Quantum Fourier Transform)** sur un ordinateur quantique, il est possible d'évaluer en parallèle une superposition de tous les états (Superposition) et d'extraire la période $r$ avec une forte probabilité.
+Shor exploite l’interférence quantique pour extraire des informations sur la période de la fonction ; cela ne signifie pas que tous les états en superposition sont lus en parallèle.
 
 En termes de complexité, le temps d'exécution de l'algorithme de Shor est un **temps quantique polynomial**, plus précisément comme suit :
 $$ O((\log n)^3) $$
-Compte tenu des implémentations de circuits optimisées récentes, on considère que cela peut être réduit à $O((\log n)^2 \log \log n)$.
 
 ```mermaid
 graph LR
   A["Algorithme classique (GNFS)"] -->|"Limite"| B["Temps sous-exponentiel L_n[1/3]"]
   C["Algorithme quantique (Shor)"] -->|"Percée"| D["Temps polynomial O((log n)^3)"]
   B --> E["Utilisation continue de RSA (augmentation de la longueur des clés)"]
-  D --> F["Effondrement total de la cryptographie RSA"]
+  D --> F["RSA vulnérable si un ordinateur quantique tolérant aux fautes assez puissant existe"]
 ```
 
 ### 5.2 Temps sous-exponentiel classique vs Temps polynomial quantique
 
-La différence entre ces deux classes de complexité a une signification décisive pour la sécurité cryptographique dans le monde réel.
+Shor factorise en temps polynomial dans un modèle quantique idéalisé, mais cela ne donne pas à lui seul le coût pratique d’une machine tolérante aux fautes. Gidney et Ekerå estimaient en 2021 environ 20 millions de qubits physiques et 8 heures ; en 2025, Gidney estimait moins d’un million de qubits physiques bruités et moins d’une semaine avec une autre conception et d’autres hypothèses. Ce sont des estimations conditionnelles, pas des démonstrations de rupture de RSA-2048 ; aucun ordinateur quantique n’a factorisé un entier de cette taille. On ne peut déduire portes ou durée de $2048^3$ seulement. [2021](https://doi.org/10.22331/q-2021-04-15-433) · [2025](https://arxiv.org/abs/2505.15917)
 
-Prenons l'exemple de la factorisation de [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)-2048 (un nombre composé de 2048 bits).
-- **GNFS (Classique)** : En substituant $n \approx 2^{2048}$ dans $L_n[1/3, 1.923]$, il faut environ $2^{112}$ opérations. Il s'agit d'une quantité astronomique de calculs qui prendrait plus de temps que l'âge de l'univers, même en rassemblant toutes les ressources informatiques actuelles sur Terre.
-- **[Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/) (Quantique)** : Avec un algorithme en $O((\log n)^3)$, il suffit d'environ $2048^3 \approx 8.5 \times 10^9$ opérations de portes logiques. Cela signifie que si le matériel approprié (un ordinateur quantique universel avec des millions de qubits physiques et des capacités de correction d'erreurs) existait, le calcul serait terminé en quelques heures à quelques jours seulement.
-
-Le changement de paradigme passant d'une fonction sous-exponentielle avec un « exposant $\alpha=1/3$ » à un « temps polynomial » neutralise la stratégie traditionnelle de la cryptographie qui consiste à garantir la sécurité en augmentant la longueur de la clé.
-
----
-
+La formule asymptotique du GNFS ne donne pas directement un nombre d’opérations ni une durée ; il faut un modèle de coût et des paramètres explicites.
 ## 6. Conclusion : Perspectives pour la prochaine génération
 
-Le consensus actuel de la communauté scientifique concernant la question « Existe-t-il un algorithme classique surpassant GNFS ? » est le suivant :
-
-1. **Les améliorations pratiques se poursuivront, mais il n'y a pas de saut asymptotique** : Les tentatives pour améliorer le terme constant $c$ de GNFS, telles que le MNFS, l'optimisation de la sélection de polynômes, ou la parallélisation de la méthode par blocs de Wiedemann, se poursuivent. Cependant, la probabilité de découvrir un algorithme classique descendant en dessous de $\alpha = 1/3$ est considérée comme extrêmement faible.
-2. **La sécurité de [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) sur les ordinateurs classiques reste forte** : La complexité de GNFS reste énorme, et RSA-2048 ainsi que RSA-4096 continueront de maintenir leur sécurité contre les attaques par des ordinateurs classiques pour les décennies à venir.
-3. **La véritable menace vient des algorithmes quantiques** : C'est l'algorithme de Shor, basé sur les principes de la mécanique quantique, qui a franchi le mur de la complexité computationnelle. De ce fait, le monde est contraint de faire la transition vers la cryptographie post-quantique (PQC : Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy). La transition vers de nouveaux problèmes mathématiques considérés comme difficiles à résoudre (impossibles à résoudre en temps polynomial) même pour les ordinateurs quantiques, tels que la cryptographie sur les réseaux euclidiens ou la cryptographie basée sur les hachages, constitue la frontière actuelle de la cryptographie.
-
-Le crible général du corps de nombres (GNFS) est l'un des « points culminants » atteints par l'humanité après avoir défié les limites des mathématiques classiques et de la conception d'algorithmes. Comprendre la structure mathématique profonde de GNFS n'est pas seulement apprendre l'histoire de la cryptanalyse, mais c'est aussi un voyage d'exploration intellectuelle touchant à la beauté de la théorie de la complexité algorithmique et de la théorie algébrique des nombres. Jusqu'au jour où les ordinateurs quantiques seront mis en pratique, GNFS continuera très probablement de défendre son trône de plus puissant algorithme de factorisation d'entiers.
-
-
+Le GNFS est la meilleure méthode générale connue, pas une limite démontrée. Aucun algorithme classique général de meilleure complexité asymptotique n’est connu, mais aucune preuve ne l’exclut. Les améliorations pratiques ne justifient ni garantie de durée ni affirmation selon laquelle RSA resterait sûr pendant des décennies. Les estimations de Shor sont conditionnelles et ne décrivent pas le matériel actuel. La transition post-quantique suit les normes et recommandations officielles applicables.
