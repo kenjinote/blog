@@ -17,7 +17,7 @@
   ],
   "validation": "docs/translation-review/validation-070.json",
   "scope": "Read the full Japanese article and all twelve available translations and inspected XLSX formulas. Compared meaning, terminology, date metadata, links, endpoints, and calendar formulas. Editions are intentionally concise.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Excelのカレンダーテンプレート（休日対応版）/index.en.md": {
       "reviewKind": "ai",
@@ -451,5 +451,11 @@
         "External service availability, returned data, and future Excel/API compatibility were not guaranteed."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-070.json",
+    "ciRun": 45126805212,
+    "deployedCommit": "4633a1427",
+    "allPassed": true
   }
 }

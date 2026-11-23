@@ -8045,6 +8045,246 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-069.json",
       "evidenceHash": "86106cf7a15375f1f926bfde5e7f21f77aa1ce535eca7632ab7cc7c55014485b"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.en.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "8886811ac58901ff4661193117afcb4078406d254c74ab9768a5a08a401a524a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "8f1ea7037e5e2ce4fe4994659b037dfffc7965038c6b10e80c7167893bb48fb5"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.zh-cn.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "f6657d4d76e99e5802de444a66cf3f565dad1f4b3e9b3457b8c6dbe4341769bf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "382394d9eb574bcd2a727bff2e89828f59a3c2376a409173fc8921f4c6b47a62"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.es.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "09ca88420086d57460203999155306887809f841fff6e5663657ea083bdb85ba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "42e0f82ae253a26d9ab2fabc4b210e44ac09ea8dd7978e93bf537bdbab424c5d"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.ko.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "7c15f334f4d8d62892ac1e68c6215cf377236ee1bc949a2c7e2e4093eacd1ab1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "68f4b831d867a8b6371d9560e7ebbb636fb23a1da4f9f1c3a8e4e43ee9794c4f"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.pt.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "2df1204f49f755ab79638ca008037073cc0f3877ad5f2570211bf83990257240",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "05a4d62df1d7fda04c9f85c7f235836c05c5414eb434418678a9cb0ba52221ef"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.zh-tw.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "b7ba4908f0e4d557985ea8e4108b1ac1d885090a77980f58d5bd1cc01192e03a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "ffd6c33c9132e5c9beff9ab4c4293a90d2a7b6ceff14dc76cdaecee426ec82a0"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.hi.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "6a8380d79a00c1d30570cc8d15239785f4023fa167ad46cc7813689b7a82faf9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "991c2f37d270abd539ce422f461fd4fbca072711df23897740949b46b5e4e111"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.fr.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "00eb75eb7fc2e051f42d51ec4c4123991dd090fa3343a30920e195c1a1d43137",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "3bbddcf99d9d9c59172160c3b722ee2823e35236e893a93a2d6cc0e0ed138495"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.de.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "5a072cfabe3f81994ef993d549b8215bf928f8c80c63112fc29d2916ee7713ad",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "095182ea9a1e06c6a63880d5093ab34c214f85a34b846ef206815e7dc8c764fc"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.ar.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "129b37930237bd9fee7f96a365855b37442464ad42b9b54b797d565052e8a099",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "bf9c4c90966303d0229f9beb2b705ef59b0d2bcec2d50a84930602987ddc3cc8"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.ru.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "b4170fb79d16b0defb16819a6f912049341caf18d69707fab5425dc0331b04e7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "ae16fa87508e5e19397de2cb856d2b3c0221edc1087db160a480a664d296c254"
+    },
+    "post/Excelのカレンダーテンプレート（休日対応版）/index.id.md": {
+      "source": "post/Excelのカレンダーテンプレート（休日対応版）/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "2db85291d1c8ac49b9c11f5ab8ed95141dbee39e5ac65c110da7a7be6feb0f8d",
+      "translationHash": "27a14c44cf8bc1d41f9a9f377c78e03c5d26b4105e579afbb169531b9e83a607",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-070.json",
+      "evidenceHash": "2ae928cdd8c3c4645861cf77eb1d8fc3de04d5ec259db03af812e70f72b73808"
+    },
+    "post/GIFアニメ画面録画ツール/index.en.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "d9785cca08198c956c7e65176370dea93e2a4da1cbe12e75c67cf90550a0cd0d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "171b0edb105120eb683ec4c7870039c263c48be0be8142a606973a853e20307e"
+    },
+    "post/GIFアニメ画面録画ツール/index.zh-cn.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "27c5f91018ef61f6e9f44230cf16b01153a80e0ab01da4738df0177d3ecce8a8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "14a43c18e11c52a2753aaf6c4d0fc2ea5c77aecfddedc31bf769638289a8212d"
+    },
+    "post/GIFアニメ画面録画ツール/index.es.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "886b6a2a753a850e778000c9389fa1dc0d59f0835094759454ba7354f8f6a548",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "a121594192fdd903805077af65062ee4af8c93703a68660e5da315cff2a97c70"
+    },
+    "post/GIFアニメ画面録画ツール/index.ko.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "eeff2a7261c8df41e45d9ae404fb88cde71fc745a0479ae9cb29cf9cd479b8c0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "ccdb27b3e8815291d102e45405f7afbd1f4166f2bf61decaddbb0c9a1fed3a30"
+    },
+    "post/GIFアニメ画面録画ツール/index.pt.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "52254b0881c815800053bc2838e148f2c43f0e2bcbe3ce5dc6f6eb6907d6b131",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "56566c4513215ce2e2c4badbf8fadc9b2cfdc693bcae4fb5c6df3684e550a49b"
+    },
+    "post/GIFアニメ画面録画ツール/index.zh-tw.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "6d20ddd963265532d0f14f5ec4d5325b77c5eccd8bb320c918d7a8e615b5facc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "a05c88291efadbf974b0d885ccb3cb8bc5d630aa91a79ddbddf669e091d9c2c8"
+    },
+    "post/GIFアニメ画面録画ツール/index.hi.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "3685d29722ff9421669a9aeb26965c2417e6e59b30b51055621e8f031287b548",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "eb4b8ba8c0c4ceaa6e7154cc4e452ddcb7eed019aba6fa0c168425ad7e168147"
+    },
+    "post/GIFアニメ画面録画ツール/index.fr.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "0d909e7fa5145ecef0a9b0332f5486abc4899ff1389dc9626078665a4a3266ca",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "27afb439b14eb629485a052b31329cad67714c3f4ba617bf6dd12c5e872e24ea"
+    },
+    "post/GIFアニメ画面録画ツール/index.de.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "eb2f8d787e7935a7e0b93ed174ebb31d35c7d5d4facfc5d5dd839524dc9649e6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "d7c0d7377b91fa4da8254b411bd01268b5fda415a35e8e868973f04d5960ad2e"
+    },
+    "post/GIFアニメ画面録画ツール/index.ar.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "758de69cd20d202fd593fe97d0ed9ab72f730a0395d4a61415b48691043c4fd9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "89e8aeeb20a7868405c6cc1e7d3f95bfb6ca8c9420d89300a48837c96e34a412"
+    },
+    "post/GIFアニメ画面録画ツール/index.ru.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "21f53444868358ea963ebd927e37e214734fd5cde530e9002dd76ab303041bc5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "4a77a07ff74809bfa0513dceb8ed885f31bc23c1b5d1e31fe135a1a497747f86"
+    },
+    "post/GIFアニメ画面録画ツール/index.id.md": {
+      "source": "post/GIFアニメ画面録画ツール/index.md",
+      "reviewedAt": "2026-11-23",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a42315921c1291a31e7c6a461bf0f1938c4af6e5b850d178be32ab053b809a2e",
+      "translationHash": "15bede1ec27c32cfb3474a99fafa7ae2b416a529a4ae23013df96d9fa094a256",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-071.json",
+      "evidenceHash": "875c998aaed0701ba812fab85d0605d277ec61525f06f98213d12345f5df92ce"
     }
   }
 }

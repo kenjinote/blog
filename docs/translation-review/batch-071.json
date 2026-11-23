@@ -20,7 +20,7 @@
   ],
   "validation": "docs/translation-review/validation-071.json",
   "scope": "Read the complete Japanese article and all twelve translations. Compared meaning, terminology, steps, output behavior, release/repository/license links, and source-backed product descriptions against the project README, C++ recording code, Windows project configuration, and current public release metadata.",
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/GIFアニメ画面録画ツール/index.en.md": {
       "reviewKind": "ai",
@@ -454,5 +454,11 @@
         "No screen recording was performed to functionally verify capture behavior or image quality."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-071.json",
+    "ciRun": 45126805212,
+    "deployedCommit": "4633a1427",
+    "allPassed": true
   }
 }

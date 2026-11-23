@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "batch": 71,
+  "verifiedAt": "2026-11-23T16:19:32+09:00",
+  "ciRun": 45126805212,
+  "deployedCommit": "4633a1427",
+  "allPassed": true,
+  "releaseAssetPage": "https://github.com/kenjinote/GifScreenRecorder/releases/expanded_assets/v1.0.1",
+  "releasePageListsGifScreenRecorderExe": true,
+  "scope": "Thirteen article pages, metadata, reciprocal hreflang, Windows/GIF compatibility note, repository/release/MIT links, and the referenced release asset listing.",
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BB%E3%83%84%E3%83%BC%E3%83%AB/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BBtool/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BB%E5%B7%A5%E5%85%B7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BBherramienta/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BB%EB%8F%84%EA%B5%AC/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BBferramenta/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BB%E5%B7%A5%E5%85%B7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BB%E0%A4%9F%E0%A5%82%E0%A4%B2/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BBoutil/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BBtool/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BB%D8%A3%D8%AF%D8%A7%D8%A9/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BB%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/gif%E3%82%A2%E3%83%8B%E3%83%A1%E7%94%BB%E9%9D%A2%E9%8C%B2%E7%94%BBalat/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "windowsAndGifNote": true,
+        "releaseLink": true,
+        "sourceRepository": true,
+        "mitLicense": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "The release executable was not downloaded, run, or scanned."
+  ]
+}
