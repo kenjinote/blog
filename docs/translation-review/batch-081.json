@@ -19,7 +19,7 @@
     "Removed third-party Qiita references in favor of six official guides; added a reminder to review media rights and sensitive notes.",
     "Restored the original 2023-04-06 publication date from Git history and set lastmod to 2026-11-23 across all editions."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/HTMLでプレゼン資料を作る方法（reveal.js）/index.en.md": {
       "reviewKind": "ai",
@@ -441,5 +441,11 @@
         "The examples were checked against official documentation but not executed in every locale."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-081.json",
+    "ciRun": 45191143542,
+    "sourceCommit": "531a18bf7",
+    "allPassed": true
   }
 }

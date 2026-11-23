@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "batch": 81,
+  "verifiedAt": "2026-11-23T23:36:38+09:00",
+  "ciRun": 45191143542,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45191143542",
+  "sourceCommit": "531a18bf7",
+  "deployment": "success",
+  "pagesVerified": 13,
+  "allPassed": true,
+  "checks": [
+    "13 HTTP 200 pages with canonical, language/RTL, title/description, reciprocal hreflang",
+    "six official reveal.js documentation links and setup/Markdown/fragment/PDF/speaker-note examples",
+    "restored publication date, lastmod, and removal of third-party Qiita links"
+  ],
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/html%E3%81%A7%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/html%E3%81%A7presentation%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/html%E3%81%A7%E6%BC%94%E7%A4%BA%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/html%E3%81%A7presentaci%C3%B3n%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/html%E3%81%A7%ED%94%84%EB%A0%88%EC%A0%A0%ED%85%8C%EC%9D%B4%EC%85%98%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/html%E3%81%A7apresenta%C3%A7%C3%A3o%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/html%E3%81%A7%E7%B0%A1%E5%A0%B1%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/html%E3%81%A7%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/html%E3%81%A7pr%C3%A9sentation%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/html%E3%81%A7pr%C3%A4sentation%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/html%E3%81%A7%D8%B9%D8%B1%D8%B6-%D8%AA%D9%82%D8%AF%D9%8A%D9%85%D9%8A%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/html%E3%81%A7%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/html%E3%81%A7presentasi%E8%B3%87%E6%96%99%E3%82%92%E4%BD%9C%E3%82%8B%E6%96%B9%E6%B3%95reveal.js/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "setupAndMarkdown": true,
+        "featuresAndExports": true,
+        "oldQiitaReferencesRemoved": true,
+        "originalAndUpdatedDates": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "Examples were compared with official guides but were not run in all locales."
+  ]
+}
