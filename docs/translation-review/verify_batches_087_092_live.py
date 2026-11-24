@@ -225,6 +225,22 @@ ARTICLES = {
         "markers": ["1829"],
         "date": "2026-09-20",
     },
+    105: {
+        "bundle": ROOT / "content/post/Ollamaを使ったローカルLLMの簡単構築とAPI連携",
+        "slug": "ollama-local-llm-api-guide",
+        "links": [
+            "https://docs.ollama.com/quickstart",
+            "https://docs.ollama.com/api/chat",
+            "https://docs.ollama.com/api/generate",
+            "https://docs.ollama.com/api/embed",
+            "https://docs.ollama.com/faq",
+            "https://github.com/ollama/ollama-python",
+            "https://github.com/ollama/ollama-js",
+            "https://ollama.com/library",
+        ],
+        "markers": ["gemma4:e2b", "/api/chat", "/api/embed", "embeddinggemma", "eval_duration", "ollama.chat"],
+        "date": "2026-09-11",
+    },
 }
 
 
@@ -290,7 +306,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104), default=104)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105), default=105)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

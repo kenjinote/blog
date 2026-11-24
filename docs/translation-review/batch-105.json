@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "batch": 105,
+  "article": "Ollamaを使ったローカルLLMの簡単構築とAPI連携",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+  "sources": [
+    "https://docs.ollama.com/quickstart",
+    "https://docs.ollama.com/api/chat",
+    "https://docs.ollama.com/api/generate",
+    "https://docs.ollama.com/api/embed",
+    "https://docs.ollama.com/faq",
+    "https://github.com/ollama/ollama-python",
+    "https://github.com/ollama/ollama-js",
+    "https://ollama.com/library"
+  ],
+  "scope": "Reviewed and rewrote the Japanese source and all twelve translations. Checked current installation/model workflow, local versus cloud processing, REST chat/generate/embed endpoints, official Python and JavaScript client examples, embeddings retrieval terminology, response timing fields, throughput and weight-memory equations, API exposure, and model-license caveats.",
+  "findings": [
+    "Removed the unsupported blanket claim that local operation always sends no data or has no cost; distinguished local inference from cloud models and connected tools.",
+    "Replaced stale Ollama internals and model-specific claims with current user-facing commands and documented API behavior.",
+    "Corrected the embeddings endpoint from /api/embeddings to /api/embed and added official endpoint references.",
+    "Removed outdated model tags and deprecated LangChain integration sample; aligned Python and Node.js examples to the official Ollama clients and added a current embedding endpoint example.",
+    "Corrected performance interpretation: eval_duration measures generation time, while model load and prompt evaluation are separate; throughput is not end-to-end latency.",
+    "Replaced the misleading VRAM guarantee with a weight-storage estimate that distinguishes decimal GB from GiB and explains additional KV-cache/runtime memory.",
+    "Added warnings about LAN/Internet API exposure, access controls, cloud/tool network use, and per-model licenses.",
+    "Removed malformed internal Markdown links, stale hardware claims, and time-sensitive model/price assertions; normalized publication metadata."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "536176b4c4dce93d8f53c8512807bcb2eed2a3b6999b03dba24a1577197aeada",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "c2d73d96b749d8c862c3336dbdc997ca6a40b72d979762fdc78270a403fdeef9",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "9baa14cd6b1596c1d31f7686e4e43bae8692395e4f2c025676eb7e2e5dd26c8d",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "3145914a33e9feb0af79357f1e24cd5db72eb64dadf08dbfea6df49866b1f195",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "6b388d53b3b82f73c4d291954aa96b9a744953970085e34126306371a03a8a8f",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "85f9d531642804ed1828b3c3970a86919d39d26699ddde62add761e33d7e11eb",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "7ffe1abd9b811ff8710daa3e917a4d22fb20b0d3a62923d500ed3a991adf6bd1",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "d130ec376be1f0be49d1fae818d8dca5c8df48adcd437c2b7aea8bae604b01b9",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "6d7ad87ea4e874b2d88dee39020fe6b35d50e27b3d90e9c05a3f7ed096253104",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "e25c1719b186a79747c517ed0564fa9d75d43f62c11c3de843137f1f613eba82",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "daa79211b2e7f89d143962fa28aed2f64b238e80a238cfce9b9993b7739d57ec",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "870aa08f595af3d7271ef65f2b47255c735ecd131c8c9f2ab60b6489c2ba478d",
+      "summary": "Compared all twelve editions with the Japanese source and current official Ollama documentation; corrected installation, model/runtime scope, API endpoints, Python and JavaScript usage, embedding retrieval, measurement definitions, memory estimates, and network/privacy guidance.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned local/cloud distinction, supported workflow, API behavior, hardware limits, and security cautions with the source."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Ollama, local model, LLM, REST API, prompt, token, streaming, quantization, KV cache, and localized technical terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked nanosecond-to-second conversion, output-token throughput formula, and decimal GB versus GiB weight-size estimate."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Aligned shell, REST JSON, and official Python library examples across locales; removed stale LangChain and SDK examples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Ollama quickstart, chat/generate/embed API, FAQ, Python library, and model library references."
+        }
+      },
+      "limitations": [
+        "AI-assisted translation review; no human or native-speaker certification.",
+        "Ollama and model catalog behavior can change; references point to the current official documentation as checked on the review date.",
+        "No hardware benchmark was run; memory and throughput equations are estimates, not performance guarantees."
+      ]
+    }
+  }
+}

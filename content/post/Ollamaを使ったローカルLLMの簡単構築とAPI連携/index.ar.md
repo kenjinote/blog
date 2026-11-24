@@ -1,502 +1,136 @@
 ---
-title: 'الإعداد السهل وبناء واجهة برمجة التطبيقات (API) لـ LLM المحلي باستخدام Ollama'
+title: "تشغيل نماذج LLM محلية باستخدام Ollama: التثبيت وREST API وPython"
 slug: "ollama-local-llm-api-guide"
-date: "2026-09-11T02:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
 categories: ["ai", "programming", "api"]
 tags: ["Ollama", "Local LLM", "Python", "Node.js"]
+date: "2026-09-11T02:00:00+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
-# مقدمة: لماذا نحتاج إلى [LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/) المحلي؟
+## تثبيت Ollama وتجهيز نموذج
 
-مع ظهور النماذج اللغوية الكبيرة ([LLM](/ar/p/local-llm-windows-2026/))، شهدت حياتنا وأساليب تطويرنا تغييرات جذرية. تستمر خدمات الذكاء الاصطناعي القوية المستندة إلى السحابة مثل ChatGPT و Claude و [Gemini](/ar/p/google-one-gemini%E3%81%8C%E8%A7%A3%E7%B4%84%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E6%99%82%E3%81%AE%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84/) في التطور يومًا بعد يوم، وتقدم قدرات استنتاج متقدمة للغاية. ومع ذلك، فإن النماذج اللغوية الكبيرة السحابية ليست دائمًا الحل الأمثل لجميع حالات الاستخدام. تواجه نماذج [LLM](/ar/p/local-llm-windows-2026/) السحابية التحديات التالية:
-
-1. **مشكلات الخصوصية والأمان**: في العديد من الحالات، لا يُسمح بإرسال البيانات التي تحتوي على معلومات سرية أو شخصية إلى خوادم خارجية من منظور الامتثال المؤسسي والأمان.
-2. **عدم اليقين في التكلفة**: نظرًا لأن رسوم استخدام واجهة برمجة التطبيقات تعتمد على عدد الرموز (Tokens)، فإن الأنظمة التي تعالج كميات كبيرة من البيانات أو تجري طلبات متكررة تواجه خطر التكاليف التشغيلية المفتوحة.
-3. **زمن الوصول والاعتماد على الشبكة**: بالنسبة للاستخدام في البيئات غير المتصلة بالإنترنت أو التشغيل على أجهزة الحافة التي تتطلب زمن وصول منخفضًا للغاية، يصبح اتصال الشبكة عنق الزجاجة.
-4. **تقييد المورد (Vendor [Lock](https://kenji.blog/ar/p/rdbms-transaction-acid-isolation-level-lock/)-in)**: الاعتماد على نموذج مزود معين قد يجعلك عرضة للتغييرات غير المقصودة في السلوك بسبب إغلاق الخدمة في المستقبل، أو التغييرات في شروط الخدمة، أو تحديثات النموذج.
-
-"[LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/) المحلي" يجذب الانتباه كوسيلة لحل هذه التحديات. من خلال تشغيل النموذج على أجهزتك الخاصة، يمكنك الاستفادة من الذكاء الاصطناعي بحرية دون إرسال أي بيانات إلى الخارج ودون القلق بشأن التكاليف الشهرية.
-
-في هذه المقالة، سنشرح بالتفصيل "**Ollama**"، وهي أداة تسمح لك بإدخال نماذج [LLM](/ar/p/local-llm-windows-2026/) المحلية وإدارتها وربطها بواجهات برمجة التطبيقات بسهولة مذهلة، من أساسياتها وبنيتها الداخلية، إلى تكامل [API](/ar/p/chatgpt-gemini-claude-api-comparison/) المتقدم باستخدام Python و Node.js، وحتى صيغ حساب ضبط الأداء.
-
----
-
-# ما هو Ollama؟ بنيته الداخلية
-
-Ollama هي منصة تتيح التنفيذ والإدارة السهلة للنماذج اللغوية الكبيرة مفتوحة المصدر (مثل Llama 3 و Phi-3 و Mistral و Gemma) في بيئتك المحلية. في الماضي، كان إعداد بيئة [LLM](/ar/p/local-llm-windows-2026/) محلية يتطلب خطوات معقدة للغاية مثل إعداد بيئة Python، وتثبيت أدوات CUDA، وحل تبعيات PyTorch، وتنزيل ملفات النماذج الضخمة من Hugging Face وتحويل تنسيقها (مثل من Safetensors إلى [GGUF](/ar/p/llama-cpp-quantization-gguf/)).
-
-يقوم Ollama بإخفاء هذه التعقيدات ويتيح لك التعامل مع نماذج [LLM](/ar/p/local-llm-windows-2026/) بسهولة مماثلة لـ [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/). باستخدام أمر واحد، يمكنك تنزيل النموذج (`pull`)، وتشغيله (`run`)، وإطلاقه كخادم HTTP.
-
-## التكنولوجيا الأساسية: غلاف (Wrapper) لـ llama.cpp
-
-يعمل كمحرك استدلال خلفي لـ Ollama مكتبة "**llama.cpp**"، وهي مكتبة استدلال [LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/) سريعة مكتوبة بلغة C/C++. تتمتع llama.cpp بالقدرة على تنفيذ النماذج عن طريق الاستفادة القصوى من أداء الأجهزة، سواء كان ذلك على Apple Silicon (Metal) أو NVIDIA GPU (CUDA) أو AMD GPU (ROCm) أو حتى في البيئات التي تعتمد على وحدة المعالجة المركزية (CPU) فقط.
-
-يتضمن Ollama نظام llama.cpp بداخله، ويتبنى بنية حيث توفر عملية الخادم المكتوبة بلغة [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) واجهة برمجة تطبيقات REST، وتستدعي محرك استدلال llama.cpp في الخلفية.
-
-يوضح مخطط Mermaid التالي البنية العامة لـ Ollama.
-
-```mermaid
-graph TD
-    A["تطبيقات العميل (Python / Node.js)"] -- HTTP/REST API --> B["خادم Ollama (Go)"]
-    B --> C["مدير النماذج (معالجة GGUF)"]
-    B --> D["محرك الاستدلال (llama.cpp)"]
-    D --> E["تسريع وحدة المعالجة الرسومية (CUDA / Metal / ROCm)"]
-    D --> F["بديل وحدة المعالجة المركزية (AVX2 / AVX-512)"]
-    C --> G["تخزين النماذج المحلي"]
-```
-
-تسمح هذه البنية للمطورين بالوصول إلى قدرات الاستدلال المتقدمة من خلال طلبات HTTP القياسية دون الحاجة إلى القلق بشأن بناء C++ أو الإعدادات الدقيقة لبرامج تشغيل وحدة المعالجة الرسومية (GPU).
-
----
-
-# تثبيت Ollama والإعداد الأولي
-
-تثبيت Ollama بسيط للغاية. يتم توفير ملفات تنفيذية محسنة لكل نظام تشغيل.
-
-## macOS / Windows
-
-كل ما عليك فعله هو تنزيل المثبت من الموقع الرسمي (https://ollama.com/) وتشغيله. يتعرف إصدار macOS تلقائيًا على واجهة برمجة تطبيقات Metal لـ Apple Silicon، ويتعرف إصدار Windows على NVIDIA GPU (CUDA)، ويقوم بتمكين تسريع الأجهزة إذا كان متاحًا.
-
-## Linux
-
-في بيئات Linux (مثل Ubuntu)، سيؤدي تنفيذ أمر السطر الواحد التالي إلى تثبيت المكونات الضرورية وبدء خادم Ollama كخدمة systemd.
+نزّل Ollama لنظام Windows أو macOS أو Linux من الصفحة الرسمية. شغّل التطبيق في Windows وmacOS؛ وفي Linux اتبع خطوات التثبيت الرسمية وشغّل الخادم إن لم يكن يعمل. تنزّل الأوامر التالية نموذجاً محدداً وتشغّله. تحقق من مكتبة النماذج أولاً لأن التوفر وحجم التنزيل قد يتغيران.
 
 ```bash
-curl -fsSL https://ollama.com/install.sh | sh
+ollama pull gemma4:e2b
+ollama run gemma4:e2b
 ```
 
-بمجرد اكتمال التثبيت، دعنا نتحقق من الإصدار في الجهاز الطرفي (Terminal).
-
-```bash
-ollama --version
-```
-إذا تم عرض معلومات الإصدار، فقد تم التثبيت بنجاح.
-
-## التشغيل باستخدام [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)
-
-إذا كنت لا ترغب في تلويث بيئتك الحالية أو كنت ترغب في دمجه في بنية أساسية قائمة على الحاويات، يمكنك أيضًا استخدام صورة Docker الرسمية. إذا كنت تستخدم وحدة معالجة رسومية (GPU)، فستحتاج إلى تثبيت NVIDIA [Container](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/) Toolkit.
-
-```bash
-# للتشغيل باستخدام وحدة المعالجة المركزية (CPU) فقط
-docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
-
-# لاستخدام NVIDIA GPU
-docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
-```
-
-بشكل افتراضي، يستمع خادم Ollama على الرابط `http://localhost:11434`.
-
----
-
-# إدارة النماذج وأوامر CLI الأساسية
-
-أكبر جاذبية لـ Ollama هي أن إدارة النماذج بديهية للغاية. يمكنك تجربة نماذج مختلفة بنفس الشعور بالتعامل مع صور [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/).
-
-## 1. تشغيل النموذج (`run`)
-
-هذا هو الأمر الأكثر استخدامًا. إذا لم يكن النموذج المحدد موجودًا، فسيتم تنزيله تلقائيًا (`pull`)، ثم سيتم تشغيل موجه (prompt) تفاعلي.
-
-```bash
-ollama run llama3.1
-```
-
-سيؤدي تشغيل الأمر أعلاه إلى بدء تشغيل أحدث طراز من Meta وهو Llama 3.1 (إصدار 8B Parameters). عند إدخال رسالة في الموجه، سيتم عرض رد النموذج في شكل دفق (Streaming). للخروج، اكتب `/bye` أو اضغط على `Ctrl+D`.
-
-## 2. تنزيل النماذج (`pull`)
-
-استخدم الأمر `pull` إذا كنت تريد تنزيل النموذج في الخلفية مسبقًا.
-
-```bash
-ollama pull phi3:instruct
-ollama pull mistral:v0.3
-```
-
-في مكتبة نماذج Ollama، يمكنك تحديد الإصدار ومستوى التكميم (Quantization) بتنسيق `ModelName:Tag`. إذا حذفت العلامة، فسيتم تطبيق `latest`، ولكن يمكنك أيضًا تحديد نموذج تكميم معين بشكل صريح (مثل: `llama3:8b-instruct-q4_0`).
-
-### ما هو التكميم (Quantization)؟
-
-لنتطرق قليلاً إلى التكميم هنا. عادةً ما يحتفظ [LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/) بمعلمة وزن (weight parameter) واحدة كفاصلة عائمة بحجم 16 بت (FP16). في حالة نموذج يحتوي على 8 مليار (8B) معلمة، ستستهلك الأوزان وحدها حوالي 16 غيغابايت من VRAM. التكميم هو تقنية لضغط هذا إلى أنواع أعداد صحيحة 4 بت (Q4) أو 8 بت (Q8).
-
-يتيح لك التكميم تقليل متطلبات الذاكرة وعرض النطاق الترددي للذاكرة بشكل كبير مع تقليل تدهور دقة النموذج. يتم توزيع النماذج في Ollama بشكل افتراضي بتنسيق [GGUF](/ar/p/llama-cpp-quantization-gguf/) مع التكميم الأمثل (غالبًا 4 بت).
-
-## 3. عرض قائمة النماذج (`list`)
-
-يعرض قائمة بالنماذج التي تم تنزيلها محليًا وأحجامها.
+بعد بدء النموذج، استخدم هذه الأوامر في نافذة طرفية أخرى لعرض النماذج المنزّلة ومكان تشغيلها الحالي. تشغل ملفات النماذج مساحة على القرص، ويتطلب الاستدلال أيضاً ذاكرة RAM أو GPU وفقاً للنموذج وطول السياق.
 
 ```bash
 ollama list
-```
-مثال على الإخراج:
-```text
-NAME            ID              SIZE      MODIFIED
-llama3.1:latest 43f7a214e532    4.7 GB    2 hours ago
-phi3:instruct   a2c89ceaed85    2.3 GB    3 days ago
+ollama ps
 ```
 
-## 4. حذف النماذج (`rm`)
+## استدعاء Chat REST API
 
-احذف النماذج التي لم تعد هناك حاجة إليها لتحرير مساحة القرص.
+تتوفر واجهة HTTP المحلية عادةً على `http://localhost:11434`. يستقبل `/api/chat` سجل المحادثة على هيئة قائمة رسائل، ويعيد الإجابة على شكل تدفق افتراضياً. يضبط المثال `stream` على `false` للحصول على استجابة JSON كاملة، ويطلب تنسيق JSON عبر `format`.
 
 ```bash
-ollama rm phi3:instruct
-```
-
----
-
-# تخصيص النماذج باستخدام Modelfile
-
-في Ollama، يمكنك إنشاء نماذجك المخصصة عن طريق حقن مطالبات النظام (System Prompts) وضبط المعلمات الفائقة (Hyperparameters) للنماذج الحالية باستخدام آلية تسمى "**Modelfile**". هذا المفهوم مطابق تمامًا لـ [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)file في Docker.
-
-يوضح المخطط التالي كيف يُشتق النموذج المخصص من النموذج الأساسي.
-
-```mermaid
-graph LR
-    A["النموذج الأساسي (llama3.1)"] -->|"إضافة موجه النظام"| B["تكوين وسيط"]
-    B -->|"تعيين Temperature & Top_p"| C["نموذج مخصص (kansai-coder)"]
-    C -->|"تشغيل"| D["واجهة سطر الأوامر التفاعلية / واجهة برمجة التطبيقات"]
-```
-
-كمثال، دعنا ننشئ نموذج مساعد برمجة يجيب بلهجة منطقة كانساي (Kansai) في اليابان.
-
-قم بإنشاء ملف نصي يسمى `Modelfile` في دليل العمل الخاص بك واكتب ما يلي:
-
-```text
-# تحديد النموذج الأساسي
-FROM llama3.1
-
-# تعيين المعلمات الفائقة مثل الإبداع (temperature)
-PARAMETER temperature 0.7
-PARAMETER top_p 0.9
-PARAMETER repeat_penalty 1.1
-PARAMETER num_ctx 4096
-
-# تعيين موجه النظام
-SYSTEM """
-أنت مهندس برمجيات متقدم على مستوى عالمي.
-يرجى الإجابة دائمًا على أسئلة المستخدمين التقنية بلهجة "كانساي" الودودة.
-عند تقديم أمثلة التعليمات البرمجية، قم بتوفير تعليمات برمجية حديثة تتبع أفضل الممارسات.
-"""
-```
-
-قم ببناء (إنشاء) نموذج جديد من هذا الملف Modelfile.
-
-```bash
-ollama create kansai-coder -f Modelfile
-```
-
-بمجرد اكتمال الإنشاء، قم بتشغيله لاختباره.
-
-```bash
-ollama run kansai-coder
->>> Pythonでリストをソートするにはどうすればええの？
-```
-سيُظهر بعد ذلك سلوكًا مخصصًا مثل "هذا سهل، يمكنك فقط استخدام دالة `sorted()` أو دالة `sort()` في Python!". يتيح لك هذا إنشاء وإدارة عدد لا يحصى من الوكلاء (Agents) المتخصصين لحالات الاستخدام المختلفة محليًا.
-
----
-
-# شرح تفصيلي لـ Ollama [REST API](https://kenji.blog/ar/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ar/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)
-
-في حين أن التفاعل عبر CLI مناسب، فإن القيمة الحقيقية لـ Ollama في تطوير التطبيقات الفعلية تكمن في واجهة برمجة تطبيقات REST القوية الخاصة بها. عن طريق إرسال طلبات HTTP إلى عملية الخادم (افتراضيًا `http://localhost:11434`)، يمكنك الحصول على نتائج الاستدلال.
-
-النقاط النهائية (Endpoints) الرئيسية الثلاث هي:
-1. `/api/generate`: توليد نص من موجه (prompt) واحد
-2. `/api/chat`: توليد دردشة (محادثة) بتنسيق مشابه لـ OpenAI [API](/ar/p/chatgpt-gemini-claude-api-comparison/)
-3. `/api/embeddings`: توليد تضمينات المتجهات (Embeddings)
-
-## توليد النص باستخدام /api/generate
-
-هذه هي نقطة نهاية التوليد الأساسية. دعنا نرسل طلبًا باستخدام cURL.
-
-```bash
-curl -X POST http://localhost:11434/api/generate -d '{
-  "model": "llama3.1",
-  "prompt": "Explain the concept of quantum entanglement in simple terms.",
-  "stream": false
-}'
-```
-
-من خلال تحديد `"stream": false`، سيتم إرجاع ملف JSON مرة واحدة بعد اكتمال التوليد بأكمله. في حالة الافتراضي (`true`)، يتم إرسال الرموز (Tokens) التي تم إنشاؤها بشكل متتابع بتنسيق JSON Lines، وهو مناسب لتنفيذ واجهات مستخدم متدفقة (Streaming UI).
-
-مثال على الاستجابة (تم حذف بعض الأجزاء):
-```json
-{
-  "model": "llama3.1",
-  "created_at": "2026-09-11T10:00:00.000Z",
-  "response": "Quantum entanglement is like having a pair of magical dice...",
-  "done": true,
-  "context": [128006, 882, 128007, 271, 10445],
-  "total_duration": 4567890000,
-  "load_duration": 1234000,
-  "prompt_eval_count": 14,
-  "eval_count": 256,
-  "eval_duration": 4321000000
-}
-```
-يتم تشفير حالة المحادثة السابقة في مصفوفة `context`، ومن خلال تضمين ذلك في الطلب التالي، يمكنك الحفاظ على السياق. ومع ذلك، لإدارة سجل المحادثة بسهولة أكبر، يتم استخدام نقطة النهاية التالية `/api/chat`.
-
-## توليد محادثة باستخدام /api/chat
-
-نظرًا لأن نماذج [LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/) الحديثة يتم ضبطها (fine-tuned) بتنسيق الدردشة، يوصى باستخدام `/api/chat` في تطوير التطبيقات.
-
-```bash
-curl -X POST http://localhost:11434/api/chat -d '{
-  "model": "llama3.1",
+curl http://localhost:11434/api/chat -d '{
+  "model": "gemma4:e2b",
   "messages": [
-    { "role": "system", "content": "You are a helpful AI assistant." },
-    { "role": "user", "content": "What is the capital of France?" },
-    { "role": "assistant", "content": "The capital of France is Paris." },
-    { "role": "user", "content": "What is its famous tower?" }
+    {"role": "user", "content": "Explain what a REST API is in one sentence."}
   ],
-  "stream": false
+  "stream": false,
 }'
 ```
-من خلال تمرير مصفوفة من كائنات الرسائل التي لها دور `role` (النظام، المستخدم، المساعد)، يمكنك بسهولة التعامل مع سياقات المحادثة المعقدة.
 
----
+في Windows PowerShell، قد يكون `curl` اسماً مستعاراً لأمر آخر؛ استخدم `curl.exe` في هذه الحالة.
 
-# التكامل مع تطبيقات Python
+يوجد نص الإجابة في `message.content`. اضبط `stream` على `true` أو احذف الحقل لتلقي أجزاء متتابعة من الإجابة. لطلب واحد بلا سجل محادثة استخدم `/api/generate`؛ ولإنشاء المتجهات استخدم `/api/embed` مع نموذج تضمين.
 
-Python هي اللغة القياسية لتطوير الذكاء الاصطناعي. هناك عدة طرق لاستخدام Ollama من Python، ولكن استخدام حزمة `ollama-python` الرسمية هي الطريقة الأسهل والأكثر موثوقية.
+## استخدام Ollama من Python
 
-## التثبيت
+تتولى مكتبة Python الرسمية إرسال طلب HTTP والتعامل مع كائن الاستجابة. شغّل خادم Ollama ونزّل النموذج أولاً.
 
 ```bash
-pip install ollama
+python -m pip install ollama
 ```
-
-## استخدام واجهة برمجة التطبيقات المتزامنة (Synchronous API)
-
-هذا هو الكود الأساسي لإنشاء محادثة.
 
 ```python
-import ollama
+from ollama import chat
 
-# قائمة للاحتفاظ بسجل المحادثة
-messages = [
-    {'role': 'system', 'content': 'أنت مساعد ممتاز.'}
-]
-
-def chat_with_ollama(user_input):
-    messages.append({'role': 'user', 'content': user_input})
-    
-    # استدعاء Ollama API
-    response = ollama.chat(
-        model='llama3.1',
-        messages=messages
-    )
-    
-    assistant_reply = response['message']['content']
-    messages.append({'role': 'assistant', 'content': assistant_reply})
-    
-    return assistant_reply
-
-print(chat_with_ollama("يرجى شرح المناهج الثلاثة الرئيسية في التعلم الآلي."))
+response = chat(
+    model="gemma4:e2b",
+    messages=[{"role": "user", "content": "اشرح في جملة واحدة معنى REST API."}],
+    stream=False,
+)
+print(response.message.content)
 ```
 
-## استخدام البث غير المتزامن (Async Streaming)
+لتلقي الخرج تدريجياً، اضبط `stream=True` وكرّر على الأجزاء المعادة. وتوفر المكتبة الرسمية أيضاً `AsyncClient` للتطبيقات غير المتزامنة.
 
-عند تطوير تطبيقات ويب (مثل FastAPI أو Starlette) أو روبوتات Discord / Slack، من المهم استخدام واجهات برمجة التطبيقات غير المتزامنة والبث لتجنب الحظر (Blocking).
+## استخدام Ollama من Node.js
 
-```python
-import asyncio
-from ollama import AsyncClient
-
-async def generate_stream():
-    client = AsyncClient()
-    
-    # تحديد stream=True يرجع مولدًا غير متزامن
-    async for chunk in await client.chat(
-        model='llama3.1',
-        messages=[{'role': 'user', 'content': 'اشرح مصممي الديكور (Decorators) في Python بالتفصيل.'}],
-        stream=True
-    ):
-        # عرض كل قطعة (chunk) تدريجيًا على الإخراج القياسي
-        print(chunk['message']['content'], end='', flush=True)
-        
-    print() # سطر جديد في النهاية
-
-# تشغيل الدالة غير المتزامنة
-asyncio.run(generate_stream())
-```
-من خلال كتابة الكود بهذه الطريقة، يمكنك بسهولة تنفيذ تجربة مستخدم (UX) حيث تظهر الشخصيات تباعًا، على غرار واجهة مستخدم ChatGPT.
-
-## التكامل مع LangChain و LlamaIndex
-
-يتم دعم Ollama أصلاً في LangChain و LlamaIndex، والتي تُستخدم غالبًا عند بناء أنظمة RAG (التوليد المعزز بالاسترجاع).
-
-مثال مع LangChain:
-```python
-from langchain_community.llms import Ollama
-
-llm = Ollama(model="llama3.1")
-response = llm.invoke("Explain dark matter.")
-print(response)
-```
-يمكنك تشغيل سلاسل LangChain القوية وميزات الوكلاء (Agents) محليًا دون الحاجة إلى تكوين أي مفاتيح [API](/ar/p/chatgpt-gemini-claude-api-comparison/) خارجية.
-
----
-
-# التكامل مع تطبيقات Node.js
-
-بالنسبة لمهندسي الواجهة الأمامية والمطورين المتكاملين (Full-stack)، تعد القدرة على استدعاء LLMs المحلية من بيئة TypeScript/Node.js ميزة كبيرة. سنستخدم حزمة NPM الرسمية `ollama`.
-
-## التثبيت
+ثبّت حزمة JavaScript الرسمية في مشروع Node.js.
 
 ```bash
 npm install ollama
 ```
 
-## مثال على تنفيذ روبوت محادثة (Chatbot) باستخدام TypeScript
-
-```typescript
-import ollama, { Message } from 'ollama';
-
-async function runChatbot() {
-  const messages: Message[] = [
-    { role: 'system', content: 'You are a concise expert.' },
-    { role: 'user', content: 'Explain RESTful APIs.' }
-  ];
-
-  try {
-    const response = await ollama.chat({
-      model: 'llama3.1',
-      messages: messages,
-      stream: false,
-    });
-    
-    console.log("Assistant:", response.message.content);
-  } catch (error) {
-    console.error("Error communicating with Ollama:", error);
-  }
-}
-
-runChatbot();
-```
-
-## بناء خادم Express يدعم البث (Streaming)
-
-هذا مثال على تنفيذ واجهة برمجة تطبيقات خلفية ترجع استجابة متدفقة إلى واجهة الويب الأمامية. يتم إرسال القطع (Chunks) باستخدام SSE (الأحداث المرسلة من الخادم) أو البث العادي عبر HTTP.
-
 ```javascript
-import express from 'express';
-import { Ollama } from 'ollama';
+import ollama from 'ollama';
 
-const app = express();
-app.use(express.json());
-const ollama = new Ollama({ host: 'http://127.0.0.1:11434' });
-
-app.post('/api/stream-chat', async (req, res) => {
-  const { prompt } = req.body;
-
-  // إعداد رأس استجابة HTTP (النقل المجزأ - Chunked)
-  res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-  res.setHeader('Transfer-Encoding', 'chunked');
-
-  try {
-    const stream = await ollama.generate({
-      model: 'llama3.1',
-      prompt: prompt,
-      stream: true,
-    });
-
-    for await (const chunk of stream) {
-      res.write(chunk.response);
-    }
-    res.end();
-  } catch (err) {
-    res.status(500).write("Error generating response.");
-    res.end();
-  }
+const response = await ollama.chat({
+  model: 'gemma4:e2b',
+  messages: [{ role: 'user', content: 'اشرح في جملة واحدة معنى REST API.' }],
+  stream: false,
 });
-
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
-});
+console.log(response.message.content);
 ```
 
----
+## التضمينات والبحث
 
-# مقاييس الأداء والتحليل الرياضي
+تحوّل واجهة التضمين النص إلى متجهات. يخزّن مسار RAG الأساسي المتجهات في فهرس، ويسترجع المقاطع ذات الصلة، ثم يضيفها إلى مطالبة المحادثة؛ ولا تنشئ المتجهات إجابات بمفردها.
 
-من أجل توفير نماذج [LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/) المحلية على مستوى يمكن أن يتحمل العمليات الفعلية، من الضروري تحليل زمن الوصول (Latency) والإنتاجية (Throughput). تتضمن استجابات Ollama [API](/ar/p/chatgpt-gemini-claude-api-comparison/) مقاييس مفصلة تتعلق بالأداء.
+```bash
+ollama pull embeddinggemma
+curl http://localhost:11434/api/embed -d '{
+  "model": "embeddinggemma",
+  "input": "اشرح في جملة واحدة معنى REST API."
+}'
+```
 
-## نموذج حساب سرعة توليد الرموز (Tokens)
+تحتوي الاستجابة على مصفوفة `embeddings`. اختر نموذج التضمين وفهرس المتجهات وفقاً للغة والبيانات ومتطلبات الترخيص في تطبيقك.
 
-يمكن تقسيم وقت استجابة [LLM](/ar/p/local-llm-windows-2026/)، الذي يرتبط ارتباطًا مباشرًا بتجربة المستخدم، إلى قسمين رئيسيين: "**الوقت حتى الرمز الأول (TTFT - Time To First Token)**" و "** الوقت لكل رمز إخراج (TPOT - Time Per Output Token)**".
+## قياس سرعة التوليد
 
-يتم صياغة إجمالي وقت التوليد $T_{total}$، بافتراض أن عدد الرموز المولدة هو $N$، على النحو التالي:
-
-$$
-T_{total} = t_{ttft} + \sum_{i=1}^{N-1} t_{tpot}^{(i)}
-$$
-
-هنا، بتقريب متوسط الوقت المستغرق لتوليد كل رمز كـ $\bar{t}_{tpot}$، يمكن تبسيط المعادلة:
-
-$$
-T_{total} \approx t_{ttft} + (N - 1) \times \bar{t}_{tpot}
-$$
-
-المراسلات مع حقول الاستجابة في Ollama [API](/ar/p/chatgpt-gemini-claude-api-comparison/) هي كما يلي:
-- `prompt_eval_duration`: هذا يتوافق تقريبًا مع $t_{ttft}$ (وقت تقييم الموجه). يتم إرجاعه بوحدة النانو ثانية.
-- `eval_duration`: الوقت المستغرق لعملية التوليد بأكملها.
-- `eval_count`: عدد الرموز التي تم إنشاؤها $N$.
-
-لذلك، يمكن حساب سرعة توليد الرموز في الثانية (TPS - Tokens Per Second) بالصيغة التالية:
+تتضمن الاستجابة أزمنة تحميل النموذج وتقييم المطالبة والتوليد وعدد الرموز الناتجة. يقيس `eval_duration` زمن التوليد بالنانوثانية؛ وليس زمن الاستجابة الكلي، إذ لا يشمل تقييم المطالبة أو تحميل النموذج. قدّر معدل التوليد بهذه المعادلة:
 
 $$
-TPS = \frac{eval\_count}{(eval\_duration / 10^9)} \quad [\text{tokens/sec}]
+\text{tokens/sec} = \frac{\text{eval\_count}}{\text{eval\_duration} / 10^9}
 $$
 
-على سبيل المثال، في حالة `eval_count: 256` و `eval_duration: 4321000000` (حوالي 4.32 ثانية):
-$$
-TPS = \frac{256}{4.321} \approx 59.24 \text{ tokens/sec}
-$$
-إذا تجاوزت السرعة 50 رمزًا / ثانية في بيئة محلية، فهي أسرع بكثير من سرعة القراءة البشرية، لذلك يمكن القول إنها توفر تجربة استجابة مريحة للغاية.
+استخدم `load_duration` لزمن تحميل النموذج و`prompt_eval_duration` لتقييم المطالبات غير المخزنة مؤقتاً. قارن النموذج والسياق والعتاد نفسها؛ فمعدل الرموز وحده لا يعبّر عن جودة الإجابة أو زمن الاستجابة الكلي.
 
-## معادلة تقدير سعة VRAM المطلوبة
+## تقدير استخدام الذاكرة
 
-عند تشغيل نموذج محليًا، فإن ما إذا كان النموذج يتناسب مع VRAM لوحدة المعالجة الرسومية يحمل المفتاح للأداء. إذا لم يتسع لـ VRAM وتم الرجوع (Fallback) إلى الذاكرة الرئيسية للنظام (RAM)، فإن سرعة التوليد ستنخفض بشكل كبير.
-
-الصيغة البسيطة لتقدير سعة الذاكرة المطلوبة $M$ (بالغيغابايت) هي كما يلي:
+يساعد عدد المعلمات وعدد بتات التكميم على تقدير الحد الأدنى التقريبي لتخزين الأوزان. يحتاج نموذج 8B بتكميم 4-bit إلى نحو 4 GB عشرياً (3.73 GiB) للأوزان وحدها. ولا يشمل ذلك الذاكرة الكلية: فبيانات التكميم وذاكرة KV وطول السياق وبيئة التشغيل والتطبيقات الأخرى تحتاج إلى مساحة إضافية.
 
 $$
-M \approx \frac{P \times Q}{8 \times 1024} + C
+\text{weight bytes} \approx \frac{\text{parameter count} \times \text{bits per weight}}{8}
 $$
 
-- $P$: عدد معلمات النموذج (مثل: 8B = $8000 \times 10^6$)
-- $Q$: عدد بتات التكميم (مثل: 4-bit, 8-bit, 16-bit)
-- $C$: ذاكرة إضافية لنافذة السياق (مثل ذاكرة التخزين المؤقت KV. تعتمد على النموذج والإعدادات، ولكن توقع بشكل عام حوالي 1 إلى 2 غيغابايت)
+استخدم `ollama ps` لمعرفة ما إذا كان النموذج يعمل على GPU أو CPU أو كليهما. يعتمد التوزيع الفعلي على العتاد المتاح ودعم بيئة التشغيل.
 
-**مثال حسابي**: عند تشغيل Llama 3 (8B معلمات) بتكميم 4 بت:
-$$
-M_{model} = \frac{8,000 \times 4}{8 \times 1024} = \frac{32,000}{8192} \approx 3.9 \text{ GB}
-$$
-بإضافة ذاكرة السياق إلى هذا، نجد أنه إذا كان لديك حوالي 5 إلى 6 غيغابايت من VRAM، فيمكنك إلغاء تحميل (Full Offload) النموذج بالكامل على وحدة المعالجة الرسومية. حتى مع وحدات المعالجة الرسومية من الفئة المتوسطة في السنوات الأخيرة المزودة بـ 8 غيغابايت من ذاكرة VRAM (مثل RTX 4060)، يمكن تشغيل نماذج [LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/) قوية بما يكفي.
+## الخصوصية والوصول الشبكي والتراخيص
 
----
+ميّز بين الاستخدام المحلي فقط والنماذج السحابية والتطبيقات المتصلة. قبل إرسال بيانات حساسة، تحقق من النموذج والأدوات ومسار الشبكة. إذا جعلت الواجهة متاحة عبر الشبكة المحلية أو الإنترنت، فلا تكشف المنفذ من دون ضوابط وصول مثل المصادقة وجدار الحماية. تحقق أيضاً من ترخيص كل نموذج.
 
-# حالات الاستخدام المتقدمة والملخص
+يجمع Ollama تنزيل النماذج وتشغيلها محلياً وإتاحتها للتطبيقات. الأوامر وأمثلة API هنا أنماط أساسية مستندة إلى الوثائق الرسمية. راجع إمكانات النموذج ومتطلباته ثم عدّل الأمثلة لتناسب حاسوبك.
 
-من خلال كشف Ollama كواجهة برمجة تطبيقات ([API](/ar/p/chatgpt-gemini-claude-api-comparison/)) داخل شبكتك المحلية، ستصبح العديد من التطبيقات التي تتجاوز مجرد روبوت محادثة (Chatbot) ممكنة.
+## المراجع الرسمية
 
-### 1. بناء نظام RAG (التوليد المعزز بالاسترجاع) محلي
-من خلال الجمع بين قواعد بيانات المتجهات المحلية مثل ChromaDB أو Qdrant ونقطة النهاية `/api/embeddings` الخاصة بـ Ollama (باستخدام نماذج تضمين مثل `nomic-embed-text`)، يمكنك بناء نظام RAG آمن وغير متصل بالإنترنت تمامًا يسمح لك بتحميل مستندات الشركة السرية للإجابة على الأسئلة.
-
-### 2. مساعد الذكاء الاصطناعي لبيئات التطوير المتكاملة (IDE) والمحررين
-من خلال تعيين Ollama كخلفية (backend) لإضافات VS Code (مثل Continue.dev) أو المكونات الإضافية لـ Neovim، يمكنك الحصول على إكمال التعليمات البرمجية وتفسير التعليمات البرمجية مثل GitHub Copilot مجانًا باستخدام النماذج المحلية (مثل `codellama` أو `deepseek-coder`).
-
-### 3. التضمين في البرامج النصية للأتمتة (Automation Scripts)
-من خلال دمج طلبات Ollama API في نصوص Python النصية (Scripts) أو نصوص Shell النصية، يمكنك ضخ قوة الذكاء الاصطناعي في كل جزء من سير عملك اليومي، مثل التلخيص التلقائي للسجلات، والتوليد التلقائي لرسائل الالتزام (Commit messages) في Git، ومهام تصنيف الجمل النمطية.
-
-## الخاتمة
-
-مع ظهور Ollama، انخفض حاجز الاعتماد على نماذج [LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/) المحلية بشكل كبير. إن المزيج بين نظام الأوامر البسيط (يشبه التعامل مع حاويات [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)) وواجهة برمجة تطبيقات REST التي يمكن استخدامها بسهولة من التطبيقات الخارجية هو المعيار الواقعي الحالي في تطوير الذكاء الاصطناعي المحلي.
-
-إذا كنت مطورًا يعاني من قيود التكلفة أو الأمان لـ [LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/) السحابي، فيرجى الرجوع إلى الخطوات المقدمة في هذه المقالة، وإعداد بيئة [LLM](/ar/p/local-llm-windows-2026/) محلية باستخدام Ollama، ومحاولة دمجها في تطبيقاتك. من المؤكد أنك ستتمكن من الشعور بإمكانيات الذكاء الاصطناعي بحرية وقرب أكبر.
-
-
-
-
+- [Ollama Quickstart](https://docs.ollama.com/quickstart)
+- [Chat API](https://docs.ollama.com/api/chat)
+- [Generate API](https://docs.ollama.com/api/generate)
+- [Embeddings API](https://docs.ollama.com/api/embed)
+- [Local FAQ and server configuration](https://docs.ollama.com/faq)
+- [Official Python library](https://github.com/ollama/ollama-python)
+- [Official JavaScript library](https://github.com/ollama/ollama-js)
+- [Ollama model library](https://ollama.com/library)

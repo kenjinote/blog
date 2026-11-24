@@ -12005,6 +12005,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-104.json",
       "evidenceHash": "ce702b0b3ca1ae1471009661d464179429d398014aff560537fa0616eee25c50"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.ar.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "536176b4c4dce93d8f53c8512807bcb2eed2a3b6999b03dba24a1577197aeada",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "c2818cd146f14be8899d66fe6d89c4e607276a191cb3793a946b3f3bc051a273"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.de.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "c2d73d96b749d8c862c3336dbdc997ca6a40b72d979762fdc78270a403fdeef9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "2601b4ea3b0a957575f15a8a61dc5d8093f4258e94860982034eee9463897674"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.en.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "9baa14cd6b1596c1d31f7686e4e43bae8692395e4f2c025676eb7e2e5dd26c8d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "6c937c0e8dab40ac37caf0461447af726d0dfc3e9c6c5198767b5693d4ae45f9"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.es.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "3145914a33e9feb0af79357f1e24cd5db72eb64dadf08dbfea6df49866b1f195",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "a74f984966953d7bb084b0f5b9c953701a4181351de6f8ba6cd9f18980fab115"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.fr.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "6b388d53b3b82f73c4d291954aa96b9a744953970085e34126306371a03a8a8f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "eb44f31a3876c26644005d6dfc7855eb966f563df857be0d2a8a3ad077486a1e"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.hi.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "85f9d531642804ed1828b3c3970a86919d39d26699ddde62add761e33d7e11eb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "c8771a64255d907d0970958c97e3f7bb650a85d545f1c5ddda1b7aa257750d51"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.id.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "7ffe1abd9b811ff8710daa3e917a4d22fb20b0d3a62923d500ed3a991adf6bd1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "9d3b59e7c4915efe2e971af5cc45d31efe8e999ad85c97be328b25cba0ca06c0"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.ko.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "d130ec376be1f0be49d1fae818d8dca5c8df48adcd437c2b7aea8bae604b01b9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "a99a73ef33ca990232ab74e519ea415c24fa0e2fa1463635d2587f6b5755cff6"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.pt.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "6d7ad87ea4e874b2d88dee39020fe6b35d50e27b3d90e9c05a3f7ed096253104",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "29ca1a63d9d2980839f7cf0ef860a749c405295148693cc5642b366bf833da9b"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.ru.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "e25c1719b186a79747c517ed0564fa9d75d43f62c11c3de843137f1f613eba82",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "16038ff7aec9632abb0714f1927129b132713a19ed3ff69cb275ebe9fbc6b6b5"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.zh-cn.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "daa79211b2e7f89d143962fa28aed2f64b238e80a238cfce9b9993b7739d57ec",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "3683d8f0297960445d0e7f238d342d9d15797b1e240d162299db04a08abccadb"
+    },
+    "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.zh-tw.md": {
+      "source": "post/Ollamaを使ったローカルLLMの簡単構築とAPI連携/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "5e0b2d93f04f10675fc08758e18be0089f53cb91dcec925129be34027bc94a30",
+      "translationHash": "870aa08f595af3d7271ef65f2b47255c735ecd131c8c9f2ab60b6489c2ba478d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-105.json",
+      "evidenceHash": "d6da3a5e046fed683ec1a5e445ca216e6fec37e165e6f08fe401db0a10880c9c"
     }
   }
 }
