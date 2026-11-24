@@ -23645,6 +23645,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-204.json",
       "evidenceHash": "a547e59902ee540b1f63325e18de16ecc7581e8199ddb8499457168f8242fad0"
+    },
+    "post/Windows のショートカット・小技集/index.en.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "f9c5c85048381986ae17cfdc584129be4960ce7963bd0c1bf853a869cb703e41",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "32a9d044abdab23ce237dee3b2e417a2774a04f19a739026a1aaf761d00fabd3"
+    },
+    "post/Windows のショートカット・小技集/index.zh-cn.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "f6ce4c724e346c360425c0573934f19b733346a619ec26133208fe5f08236742",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "6d3ea2eca28a9b0a253bb690165dfcd66add0cc518397e363370e001cf648c66"
+    },
+    "post/Windows のショートカット・小技集/index.es.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "98fcff8e45baa784df5ab4ae54643ad6900c29f6534449deee0c39d4759279d5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "f93c442f8879fb45d3af0b59ba511cfdcbfb1d8dc2e63d0ab6e676a150daceee"
+    },
+    "post/Windows のショートカット・小技集/index.ko.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "e13225bcd225a3deb45594693040f46907d57df16c35fd373bdd3a8ee6f4f4c2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "7795b0bad33bd6358fa4f2453998901aebc796339d1b570c1dafe7b3b5114281"
+    },
+    "post/Windows のショートカット・小技集/index.pt.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "8c3c0643ca671e5d39d8c9655bd0fe8e527fe5873ffa8a005db646abb4c65515",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "24683c2ba4a13e84f9e2570604fba0a3a34e3ecbf9e2cdc0baf487cc2662ad57"
+    },
+    "post/Windows のショートカット・小技集/index.zh-tw.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "b3b8855ecce7e1e30931527c53c50f84af05551dd802752d4428dea98a779eb7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "26787fbdafbe3b99e37f4241d57120704eefb94a65c9ed6c9334580e1ecbd476"
+    },
+    "post/Windows のショートカット・小技集/index.hi.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "636d6baba16bb9320fdadadfad00d4f57023e24e4c1fab4eec4d28d27dab08a3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "812abc5fb55ed031e4e750e77d57969723302560cb3563f51bfb354fe9546370"
+    },
+    "post/Windows のショートカット・小技集/index.fr.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "9ddea4c2ee6635c4ac8e76a586267ed5bb484322dec6efd567c455d6713f7893",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "5c1f017c3655f34ffdf1bfb551d5abce2d31122f5ae4fbe7b58e3c675ac84d85"
+    },
+    "post/Windows のショートカット・小技集/index.de.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "850ff372e5aa4b77b0af8fa6478a89e153f57b06b0185ed859779d80763ff15e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "128b0bd0559f0eed1d0e10f03c78747f518f3646205f0cd5e574ec10731fb2af"
+    },
+    "post/Windows のショートカット・小技集/index.ar.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "85fe70a69e9cd6a27decd4a543d198f12558f30774157dc9e2847922c80844dc",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "5b5cab670748dfe83425b2571b053f650226865ce13a993da0f1897ea20ab425"
+    },
+    "post/Windows のショートカット・小技集/index.ru.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "7d37db0df6881945c1727873fc222ea838f9e1df4d31f40db46a70376c9ed7ba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "32fd5d06da83e6445cb329f9b4d4772668a793bb20c68c9bdc854321504a879d"
+    },
+    "post/Windows のショートカット・小技集/index.id.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "884020553e223bbda5368de6f51c8ce6bf1e6457c4b2d3e29766bd182dce9eee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-205.json",
+      "evidenceHash": "763b878076d96b724fff59c24d0d7bd28cedbcabbf4bc36c8a6814017d38847f"
     }
   }
 }

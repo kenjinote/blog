@@ -1,8 +1,8 @@
 ---
 title: '【Windows 11/10】能大幅提升工作效率的實用快捷鍵・小技巧巧集'
-date: "2026-09-24T19:44:38+09:00"
+date: "2022-09-18T23:49:29+09:00"
+lastmod: "2026-11-25"
 slug: "Windows の捷徑・小技巧集"
-date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "小技巧巧", "快速鍵"]
 draft: false
 image: "img.webp"
@@ -11,6 +11,8 @@ description: '嚴選介紹能提升 Windows 11 或 Windows 10 工作效率的實
 ---
 這是一些在 Windows 中常用的小技巧。希望剛開始使用 Windows 的使用者能閱讀這篇文章。
 預設環境為 Windows 11，但許多技巧在 Windows 10 中也適用。
+
+部分快速鍵與畫面會因 Windows 版本、設定及鍵盤而異。
 
 ## 關閉視窗
 - 視窗處於活動狀態時按下 `Alt + F4`
@@ -30,13 +32,13 @@ description: '嚴選介紹能提升 Windows 11 或 Windows 10 工作效率的實
 
 ## 選擇範圍並擷取螢幕畫面
 - 按下 `Win + Shift + S` 可選擇範圍並擷取螢幕畫面。
-- 按下 `Win + Print Screen` 或單獨按下 `Print Screen` 可擷取全螢幕。
-  (如果加上 `Win`，擷取的圖片將儲存在 `C:\Users\使用者名稱\Pictures\Screenshots` 中。)
-- 按下 `Alt + Print Screen` 可擷取目前的活動視窗。
+- `Win + Print Screen` 擷取整個畫面，並儲存在 Pictures\Screenshots 資料夾。
+- 預設情況下，`Print Screen` 會開啟螢幕剪取工具。關閉此設定後，整個畫面會複製到剪貼簿。
+- `Alt + Print Screen` 會將目前作用中的視窗複製到剪貼簿。
 
 ## 啟動釘選在工作列上的應用程式
-- 按下 `Win + 數字鍵` 可啟動釘選在工作列上的應用程式。  
-  例如，按下 `Win + 1` 將啟動工作列最左側的應用程式。
+- `Win + 數字鍵` 會開啟工作列該位置釘選的應用程式；若應用程式已在執行，則切換至該應用程式。
+  例如，`Win + 1` 會開啟最左側釘選的應用程式；若已在執行，則切換至該應用程式。
 - 按下 `Win + T` 可將焦點移至工作列上的圖示，連續多次按下 `Win + T`，
   或使用 `←` 或 `→` 移動選擇，然後按下 `Enter` 鍵啟動選定的應用程式。
 
@@ -53,20 +55,20 @@ description: '嚴選介紹能提升 Windows 11 或 Windows 10 工作效率的實
   也可以透過 `Win + R` → `Alt + F4` → `Alt + F4` 執行。
   ![img_20.png](img_20.webp)
 - 依序按下 `Win + X` → `U` → `U` 即可關機。
-- 在命令提示字元或 `Win + R` 開啟的「執行」中輸入 `shutdown /s /t 0` 即可關機。若加上 `/f` 則會強制關機。
+- 在命令提示字元或 `Win + R` 開啟的「執行」中輸入 `shutdown /s /t 0` 即可關機。若加上 `/f` 則會強制關機。 強制結束可能會遺失尚未儲存的工作，請只在必要時使用。
 
 ## 重新啟動 Windows
 - 在按下 `Win + M` 或 `Win + D` 顯示桌面時，或者按下 `Win + T` 或 `Win + B` 啟動工作列時，按下 `Alt + F4`，將顯示如下對話方塊，按 1 次 `↓` 選擇「重新啟動」，然後按下 `Enter`
   也可以透過 `Win + R` → `Alt + F4` → `Alt + F4` 執行。
   ![img_21.png](img_21.webp)
 - 依序按下 `Win + X` → `U` → `R` 即可重新啟動。
-- 輸入 `shutdown /r /t 0` 即可重新啟動。若加上 `/f` 則會強制重新啟動。
+- 輸入 `shutdown /r /t 0` 即可重新啟動。若加上 `/f` 則會強制重新啟動。 強制結束可能會遺失尚未儲存的工作，請只在必要時使用。
 
 ## 睡眠 Windows
 - 在按下 `Win + M` 或 `Win + D` 顯示桌面時，或者按下 `Win + T` 或 `Win + B` 啟動工作列時，按下 `Alt + F4`，將顯示如下對話方塊，按 1 次 `↑` 選擇「睡眠」，然後按下 `Enter`
   也可以透過 `Win + R` → `Alt + F4` → `Alt + F4` 執行。
   ![img_23.png](img_23.webp)
-- 透過 `Win + R` → 或在命令提示字元中輸入 `rundll32.exe powrprof.dll,SetSuspendState` 即可進入休眠狀態。
+- 若要進入休眠，請在命令提示字元或「執行」對話方塊中執行 `shutdown /h`（需已啟用休眠）。
 
 ## 登出 Windows
 - 在按下 `Win + M` 或 `Win + D` 顯示桌面時，或者按下 `Win + T` 或 `Win + B` 啟動工作列時，按下 `Alt + F4`，將顯示如下對話方塊，按 2 次 `↑` 選擇「登出」，然後按下 `Enter`
@@ -82,8 +84,8 @@ description: '嚴選介紹能提升 Windows 11 或 Windows 10 工作效率的實
 - `Win + ↑`：向上移動/最大化
 - `Win + ↓`：向下移動/最小化
 - `Win + Shift + ← 或 →`：在多顯示器之間移動
-- `Win + Alt + ← 或 → 或 ↑ 或 ↓`：在不最大化或最小化的情況下移動視窗
-- 在未最小化的狀態下，按下 `Alt + Space` 後按 `M`，然後使用方向鍵移動。  
+- `Win + Alt + ↑ 或 ↓`：在支援的 Windows 11 環境中，將作用中的視窗貼齊畫面上半部或下半部。
+- 按 `Alt + Space` 開啟視窗功能表，選取「移動」，再用方向鍵移動視窗。按 Enter 或按一下以放置視窗。
   ※因為視窗會跟隨游標，即使視窗顯示在螢幕外也可以將其移回。
 
 ## 在工作管理員中結束處理程序
@@ -94,14 +96,14 @@ description: '嚴選介紹能提升 Windows 11 或 Windows 10 工作效率的實
 4. 當選取處理程序名稱後，按下 `Delete` 鍵，再按 `Enter` 鍵即可結束處理程序。
 
 ## 使用命令指定處理程序名稱並結束
-- 輸入 `taskkill /f /im 處理程序名稱` 即可結束處理程序。
-  例如，輸入 `taskkill /f /im explorer.exe` 即可結束檔案總管。
+- 輸入 `taskkill /f /im 處理程序名稱` 即可結束處理程序。 強制結束可能會遺失尚未儲存的工作，請只在必要時使用。
+  例如，輸入 `taskkill /f /im explorer.exe` 即可結束檔案總管。 強制結束可能會遺失尚未儲存的工作，請只在必要時使用。
 
 ## 從工作列圖示啟動多個相同的程式
 - 在工作列上按住 `Shift` 鍵並點擊左鍵，即可啟動多個相同的程式。（僅限支援多開的應用程式）
 
 ## 以系統管理員權限啟動程式
-- 按住 `Ctrl + Shift` 啟動程式即可獲得系統管理員權限。
+- 在工作列選取應用程式圖示時按住 `Ctrl + Shift`，即可用系統管理員身分開啟應用程式。
 
 ## 啟動檔案總管
 - 按下 `Win + E` 即可啟動檔案總管。
@@ -126,9 +128,9 @@ description: '嚴選介紹能提升 Windows 11 或 Windows 10 工作效率的實
 ![img_18.png](img_18.webp)
 - 輸入 `msedge` 並按下 `Enter`
 
-## 開啟 Internet Explorer 11 (IE11)
-![img_25.png](img_25.webp)
-- 輸入 `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` 並按下 `Enter`
+## 在 Edge 的 Internet Explorer 模式中開啟舊版網站
+
+Internet Explorer 11 的支援已於 2022 年 6 月 15 日結束。Windows 11 不支援啟動獨立 IE 瀏覽器。僅對需要相容性的舊版網站使用 Microsoft Edge 的 Internet Explorer 模式。設定方式請參閱參考資料。
 
 ## 開啟終端機
 ![img_19.png](img_19.webp)
@@ -141,7 +143,7 @@ description: '嚴選介紹能提升 Windows 11 或 Windows 10 工作效率的實
 
 ## 啟動記事本
 ![img_4.png](img_4.webp)
-- 輸入 `notepad` 並按下 `Enter`  
+- 輸入 `notepad` 並按下 `Enter`
 
 ## 啟動小算盤
 ![img_5.png](img_5.webp)
@@ -149,11 +151,11 @@ description: '嚴選介紹能提升 Windows 11 或 Windows 10 工作效率的實
 
 ## 啟動小畫家
 ![img_6.png](img_6.webp)
-- 輸入 `mspaint` 並按下 `Enter`  
+- 輸入 `mspaint` 並按下 `Enter`
 
 ## 啟動 PowerShell
 ![img_7.png](img_7.webp)
-- 輸入 `powershell` 並按下 `Enter`  
+- 輸入 `powershell` 並按下 `Enter`
 
 ## 啟動 Visual Studio Code
 ![img_8.png](img_8.webp)
@@ -161,22 +163,22 @@ description: '嚴選介紹能提升 Windows 11 或 Windows 10 工作效率的實
 
 ## 啟動 Excel
 ![img_9.png](img_9.webp)
-- 輸入 `excel` 並按下 `Enter`  
+- 輸入 `excel` 並按下 `Enter`
   ※僅限安裝了 Excel 的情況。
 
 ## 開啟 Word
 ![img_10.png](img_10.webp)
-- 輸入 `winword` 並按下 `Enter`  
+- 輸入 `winword` 並按下 `Enter`
   ※僅限安裝了 Word 的情況。
 
 ## 開啟 PowerPoint
 ![img_11.png](img_11.webp)
-- 輸入 `powerpnt` 並按下 `Enter`  
+- 輸入 `powerpnt` 並按下 `Enter`
   ※僅限安裝了 PowerPoint 的情況。
 
 ## 開啟系統設定
 ![img_1.png](img_1.webp)
-- 輸入 `msconfig` 並按下 `Enter`  
+- 輸入 `msconfig` 並按下 `Enter`
 
 ## 開啟系統內容
 ![img_2.png](img_2.webp)
@@ -217,6 +219,8 @@ description: '嚴選介紹能提升 Windows 11 或 Windows 10 工作效率的實
 
 ## 複製標準訊息方塊中的字串
 ![img_26.png](img_26.webp)
+
+此畫面範例使用 Windows 11 24H2 之前版本的 WordPad。
 - 按下 `Ctrl + C` 即可複製標準訊息方塊中的字串。
   複製上述的訊息方塊時，會將以下內容複製到剪貼簿：
 ```
@@ -289,4 +293,9 @@ C:.
 ```
 
 ## 參考資料
-- [Windows 的鍵盤快速鍵](https://support.microsoft.com/zh-tw/windows/windows-%E7%9A%84%E9%8D%B5%E7%9B%A4%E5%BF%AB%E9%80%9F%E9%8D%B5-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
+
+- [Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)
+- [Use Snipping Tool to capture screenshots](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots.)
+- [Internet Explorer mode in Microsoft Edge](https://support.microsoft.com/en-us/edge/internet-explorer-mode-in-microsoft-edge)
+- [Resources for deprecated features in the Windows client](https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features-resources)
+- [Hibernate a Windows device](https://learn.microsoft.com/en-us/windows/configuration/unified-write-filter/hibernate-once-resume-many-horm)

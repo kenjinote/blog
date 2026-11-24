@@ -1,8 +1,8 @@
 ---
 title: '【Windows 11/10】让工作效率剧增的实用快捷键与小技巧巧汇总'
-date: "2026-09-24T19:44:38+09:00"
+date: "2022-09-18T23:49:29+09:00"
+lastmod: "2026-11-25"
 slug: "Windows の快捷方式・小技巧集"
-date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "小技巧巧", "快捷键"]
 draft: false
 image: "img.webp"
@@ -11,6 +11,8 @@ description: '精选介绍能提升Windows 11和Windows 10工作效率的实用�
 ---
 这是平时使用Windows时的一些小技巧集。希望能对刚开始使用Windows的人有所帮助。
 虽然以Windows 11为前提，但其中的很多内容在Windows 10中也能使用。
+
+部分快捷键和界面会因 Windows 版本、设置及键盘而异。
 
 ## 关闭窗口
 - 在窗口处于活动状态时按 `Alt + F4`
@@ -30,13 +32,13 @@ description: '精选介绍能提升Windows 11和Windows 10工作效率的实用�
 
 ## 选择范围截图
 - 使用 `Win + Shift + S` 可以选择范围进行屏幕截图。
-- 使用 `Win + Print Screen` 或仅按 `Print Screen` 可以截取全屏。
-（如果加上了 `Win` 键，截图图片将保存在 `C:\Users\用户名\Pictures\Screenshots` 目录下。）
-- 使用 `Alt + Print Screen` 可以截取当前窗口。
+- `Win + Print Screen` 截取整个屏幕，并保存到 Pictures\Screenshots 文件夹。
+- 默认情况下，`Print Screen` 会打开屏幕截图工具。关闭此设置后，它会将整个屏幕复制到剪贴板。
+- `Alt + Print Screen` 会将当前活动窗口复制到剪贴板。
 
 ## 启动任务栏上固定的应用
-- 使用 `Win + 数字键` 可以启动固定在任务栏上的应用。  
-  例如按 `Win + 1` 会启动任务栏最左侧的第一个应用。
+- `Win + 数字键` 会打开任务栏对应位置固定的应用；如果该应用已在运行，则切换到该应用。
+  例如，`Win + 1` 会打开最左侧固定的应用；如果它已在运行，则切换到该应用。
 - 使用 `Win + T` 可以将焦点移动到任务栏图标上，连续多次按 `Win + T`，
   或使用 `←` 或 `→` 键移动选择，然后按 `Enter` 键启动选中的应用。
 
@@ -53,20 +55,20 @@ description: '精选介绍能提升Windows 11和Windows 10工作效率的实用�
   或者 `Win + R` → `Alt + F4` → `Alt + F4` 也可以。
   ![img_20.png](img_20.webp)
 - 按 `Win + X` → `U` → `U` 即可关机。
-- 在命令提示符或 `Win + R` 的“运行”中输入 `shutdown /s /t 0` 即可关机。如果加上 `/f` 则为强制关机。
+- 在命令提示符或 `Win + R` 的“运行”中输入 `shutdown /s /t 0` 即可关机。如果加上 `/f` 则为强制关机。 强制终止可能导致未保存的工作丢失，请仅在必要时使用。
 
 ## 重启Windows
 - 在使用 `Win + M` 或 `Win + D` 显示桌面的状态下，或在使用 `Win + T` 或 `Win + B` 激活任务栏的状态下，按 `Alt + F4` 会显示如下对话框，按 1 次 `↓` 键选择“重启”后按 `Enter`。
 　或者 `Win + R` → `Alt + F4` → `Alt + F4` 也可以。
   ![img_21.png](img_21.webp)
 - 按 `Win + X` → `U` → `R` 即可重启。
-- 输入 `shutdown /r /t 0` 即可重启。如果加上 `/f` 则为强制重启。
+- 输入 `shutdown /r /t 0` 即可重启。如果加上 `/f` 则为强制重启。 强制终止可能导致未保存的工作丢失，请仅在必要时使用。
 
 ## 睡眠
 - 在使用 `Win + M` 或 `Win + D` 显示桌面的状态下，或在使用 `Win + T` 或 `Win + B` 激活任务栏的状态下，按 `Alt + F4` 会显示如下对话框，按 1 次 `↑` 键选择“睡眠”后按 `Enter`。
   或者 `Win + R` → `Alt + F4` → `Alt + F4` 也可以。
   ![img_23.png](img_23.webp)
-- `Win + R` → 或在命令提示符中输入 `rundll32.exe powrprof.dll,SetSuspendState` 可进入休眠状态。
+- 若要休眠，请在命令提示符或“运行”对话框中执行 `shutdown /h`（需已启用休眠）。
 
 ## 注销（登出）
 - 在使用 `Win + M` 或 `Win + D` 显示桌面的状态下，或在使用 `Win + T` 或 `Win + B` 激活任务栏的状态下，按 `Alt + F4` 会显示如下对话框，按 2 次 `↑` 键选择“注销”后按 `Enter`。
@@ -82,8 +84,8 @@ description: '精选介绍能提升Windows 11和Windows 10工作效率的实用�
 - `Win + ↑`：向上移动/最大化
 - `Win + ↓`：向下移动/最小化
 - `Win + Shift + ← 或 →`：在多显示器之间移动
-- `Win + Alt + ← 或 → 或 ↑ 或 ↓`：在不最大化/最小化的情况下移动窗口
-- 在未最小化的状态下按 `Alt + Space` 的后面按 `M`，之后用方向键移动。  
+- `Win + Alt + ↑ 或 ↓`：在支持的 Windows 11 环境中，将活动窗口贴靠到屏幕上半部或下半部。
+- 按 `Alt + Space` 打开窗口菜单，选择“移动”，再用方向键移动窗口。按 Enter 或单击以放置窗口。
 ※此时窗口会跟随鼠标光标移动，因此即使窗口显示在屏幕外，也能将其“救”回来。
 
 ## 在任务管理器中结束进程
@@ -94,14 +96,14 @@ description: '精选介绍能提升Windows 11和Windows 10工作效率的实用�
 4. 在选中进程名的状态下按 `Delete` 键，接着按 `Enter` 键即可结束进程。
 
 ## 使用命令指定进程名并结束
-- 使用 `taskkill /f /im 进程名` 可以结束进程。
-例如，使用 `taskkill /f /im explorer.exe` 可以结束资源管理器。
+- 使用 `taskkill /f /im 进程名` 可以结束进程。 强制终止可能导致未保存的工作丢失，请仅在必要时使用。
+例如，使用 `taskkill /f /im explorer.exe` 可以结束资源管理器。 强制终止可能导致未保存的工作丢失，请仅在必要时使用。
 
 ## 从任务栏图标启动多个相同的程序
 - 在任务栏上按住 `Shift` 键的同时点击鼠标左键，可以启动多个相同的程序。（仅限支持多开的应用）
 
 ## 以管理员权限启动程序
-- 按住 `Ctrl + Shift` 启动程序可以以管理员权限运行。
+- 在任务栏上选择应用图标时按住 `Ctrl + Shift`，即可管理员身份打开应用。
 
 ## 启动资源管理器
 - 使用 `Win + E` 可以启动资源管理器。
@@ -126,9 +128,9 @@ description: '精选介绍能提升Windows 11和Windows 10工作效率的实用�
 ![img_18.png](img_18.webp)
 - 输入 `msedge` 并按 `Enter`
 
-## 打开 Internet Explorer 11（IE11）
-![img_25.png](img_25.webp)
-- 输入 `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` 并按 `Enter`
+## 在 Edge 中使用 Internet Explorer 模式打开旧版网站
+
+Internet Explorer 11 的支持已于 2022 年 6 月 15 日结束。Windows 11 不支持启动独立的 IE 浏览器。仅对需要兼容性的旧版网站使用 Microsoft Edge 的 Internet Explorer 模式。设置方法请参阅参考资料。
 
 ## 打开终端
 ![img_19.png](img_19.webp)
@@ -141,7 +143,7 @@ description: '精选介绍能提升Windows 11和Windows 10工作效率的实用�
 
 ## 启动记事本
 ![img_4.png](img_4.webp)
-- 输入 `notepad` 并按 `Enter`  
+- 输入 `notepad` 并按 `Enter`
 
 ## 启动计算器
 ![img_5.png](img_5.webp)
@@ -149,11 +151,11 @@ description: '精选介绍能提升Windows 11和Windows 10工作效率的实用�
 
 ## 启动画图
 ![img_6.png](img_6.webp)
-- 输入 `mspaint` 并按 `Enter`  
+- 输入 `mspaint` 并按 `Enter`
 
 ## 启动 PowerShell
 ![img_7.png](img_7.webp)
-- 输入 `powershell` 并按 `Enter`  
+- 输入 `powershell` 并按 `Enter`
 
 ## 启动 Visual Studio Code
 ![img_8.png](img_8.webp)
@@ -161,22 +163,22 @@ description: '精选介绍能提升Windows 11和Windows 10工作效率的实用�
 
 ## 启动 Excel
 ![img_9.png](img_9.webp)
-- 输入 `excel` 并按 `Enter`  
+- 输入 `excel` 并按 `Enter`
 ※仅限已安装 Excel 的情况。
 
 ## 打开 Word
 ![img_10.png](img_10.webp)
-- 输入 `winword` 并按 `Enter`  
+- 输入 `winword` 并按 `Enter`
 ※仅限已安装 Word 的情况。
 
 ## 打开 PowerPoint
 ![img_11.png](img_11.webp)
-- 输入 `powerpnt` 并按 `Enter`  
+- 输入 `powerpnt` 并按 `Enter`
   ※仅限已安装 PowerPoint 的情况。
 
 ## 打开系统配置
 ![img_1.png](img_1.webp)
-- 输入 `msconfig` 并按 `Enter`  
+- 输入 `msconfig` 并按 `Enter`
 
 ## 打开系统属性
 ![img_2.png](img_2.webp)
@@ -217,6 +219,8 @@ description: '精选介绍能提升Windows 11和Windows 10工作效率的实用�
 
 ## 复制标准消息框的内容
 ![img_26.png](img_26.webp)
+
+此截图展示的是 Windows 11 版本 24H2 之前的 WordPad。
 - 使用 `Ctrl + C` 可以复制标准消息框的内容。
 复制上述消息框后，剪贴板中会保存如下内容：
 ```
@@ -289,4 +293,9 @@ C:.
 ```
 
 ## 参考
-- [Windows 的键盘快捷键](https://support.microsoft.com/zh-cn/windows/windows-%E7%9A%84%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
+
+- [Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)
+- [Use Snipping Tool to capture screenshots](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots.)
+- [Internet Explorer mode in Microsoft Edge](https://support.microsoft.com/en-us/edge/internet-explorer-mode-in-microsoft-edge)
+- [Resources for deprecated features in the Windows client](https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features-resources)
+- [Hibernate a Windows device](https://learn.microsoft.com/en-us/windows/configuration/unified-write-filter/hibernate-once-resume-many-horm)

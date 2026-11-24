@@ -1,8 +1,8 @@
 ---
 title: '[Windows 11/10] Une collection de raccourcis clavier et d''astuces pratiques pour augmenter considérablement l''efficacité du travail'
-date: "2026-09-24T19:44:38+09:00"
+date: "2022-09-18T23:49:29+09:00"
+lastmod: "2026-11-25"
 slug: "Windows のRaccourci・Astuce集"
-date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Astuces", "Raccourcis"]
 draft: false
 image: "img.webp"
@@ -11,6 +11,8 @@ description: 'Nous présentons une sélection de raccourcis clavier et d''astuce
 ---
 Voici une collection de petites astuces pour Windows que vous pouvez utiliser au quotidien. J'espère que ceux qui commencent à utiliser Windows la trouveront utile.
 Elle est conçue pour Windows 11, mais je pense que la plupart des astuces fonctionnent également sur Windows 10.
+
+Certains raccourcis et écrans varient selon la version de Windows, les paramètres et le clavier.
 
 ## Fermer une fenêtre
 - `Alt + F4` lorsque la fenêtre est active
@@ -30,13 +32,13 @@ Elle est conçue pour Windows 11, mais je pense que la plupart des astuces fonct
 
 ## Sélectionner une zone et faire une capture d'écran
 - Vous pouvez sélectionner une zone et capturer l'écran avec `Win + Shift + S`.
-- Vous pouvez capturer tout l'écran avec `Win + Print Screen` ou simplement `Print Screen`.
-(Si vous ajoutez `Win`, l'image capturée sera enregistrée dans `C:\Users\Nom d'utilisateur\Pictures\Screenshots`.)
-- Vous pouvez capturer la fenêtre actuelle avec `Alt + Print Screen`.
+- `Win + Print Screen` capture tout l’écran et enregistre l’image dans Pictures\Screenshots.
+- Par défaut, `Print Screen` ouvre la capture d’écran. Si vous désactivez ce paramètre, la capture entière est copiée dans le presse-papiers.
+- `Alt + Print Screen` copie la fenêtre active dans le presse-papiers.
 
 ## Lancer des applications épinglées à la barre des tâches
-- Vous pouvez lancer une application épinglée à la barre des tâches avec `Win + touche numérique`.  
-  Par exemple, appuyer sur `Win + 1` lancera la première application en partant de la gauche dans la barre des tâches.
+- `Win + une touche numérique` ouvre l’application épinglée à cette position de la barre des tâches ou bascule vers elle si elle est déjà ouverte.
+  Par exemple, `Win + 1` ouvre l’application épinglée la plus à gauche ou bascule vers elle si elle est déjà ouverte.
 - Vous pouvez déplacer le focus vers les icônes de la barre des tâches avec `Win + T`, puis appuyer sur `Win + T` plusieurs fois ou utiliser `←` ou `→` pour vous déplacer et appuyer sur la touche `Enter` pour lancer l'application sélectionnée.
 
 ## Zoom avant / Zoom arrière
@@ -52,20 +54,20 @@ Elle est conçue pour Windows 11, mais je pense que la plupart des astuces fonct
   Vous pouvez aussi faire `Win + R` → `Alt + F4` → `Alt + F4`.
   ![img_20.png](img_20.webp)
 - Vous pouvez éteindre avec `Win + X` → `U` → `U`.
-- Vous pouvez éteindre en tapant `shutdown /s /t 0` dans l'Invite de commandes ou dans "Exécuter" (`Win + R`). Ajouter `/f` forcera l'arrêt.
+- Vous pouvez éteindre en tapant `shutdown /s /t 0` dans l'Invite de commandes ou dans "Exécuter" (`Win + R`). Ajouter `/f` forcera l'arrêt. La fermeture forcée peut entraîner la perte du travail non enregistré ; utilisez-la uniquement si nécessaire.
 
 ## Redémarrer Windows
 - Si vous affichez le bureau avec `Win + M` ou `Win + D`, ou si la barre des tâches est active avec `Win + T` ou `Win + B`, appuyer sur `Alt + F4` affichera une boîte de dialogue comme ci-dessous. Appuyez sur `↓` une fois pour sélectionner "Redémarrer" et appuyez sur `Enter`.
   Vous pouvez aussi faire `Win + R` → `Alt + F4` → `Alt + F4`.
   ![img_21.png](img_21.webp)
 - Vous pouvez redémarrer avec `Win + X` → `U` → `R`.
-- Vous pouvez redémarrer avec `shutdown /r /t 0`. Ajouter `/f` forcera le redémarrage.
+- Vous pouvez redémarrer avec `shutdown /r /t 0`. Ajouter `/f` forcera le redémarrage. La fermeture forcée peut entraîner la perte du travail non enregistré ; utilisez-la uniquement si nécessaire.
 
 ## Mettre Windows en veille
 - Si vous affichez le bureau avec `Win + M` ou `Win + D`, ou si la barre des tâches est active avec `Win + T` ou `Win + B`, appuyer sur `Alt + F4` affichera une boîte de dialogue comme ci-dessous. Appuyez sur `↑` une fois pour sélectionner "Veille" et appuyez sur `Enter`.
   Vous pouvez aussi faire `Win + R` → `Alt + F4` → `Alt + F4`.
   ![img_23.png](img_23.webp)
-- Vous pouvez mettre en veille prolongée en tapant `rundll32.exe powrprof.dll,SetSuspendState` dans `Win + R` ou l'Invite de commandes.
+- Pour mettre le PC en veille prolongée, exécutez `shutdown /h` dans l’Invite de commandes ou Exécuter (si la veille prolongée est activée).
 
 ## Se déconnecter de Windows
 - Si vous affichez le bureau avec `Win + M` ou `Win + D`, ou si la barre des tâches est active avec `Win + T` ou `Win + B`, appuyer sur `Alt + F4` affichera une boîte de dialogue comme ci-dessous. Appuyez sur `↑` deux fois pour sélectionner "Se déconnecter" et appuyez sur `Enter`.
@@ -81,8 +83,8 @@ Elle est conçue pour Windows 11, mais je pense que la plupart des astuces fonct
 - `Win + ↑` : Déplacer vers le haut / Agrandir
 - `Win + ↓` : Déplacer vers le bas / Réduire
 - `Win + Shift + ← ou →` : Déplacer entre les moniteurs
-- `Win + Alt + ← ou → ou ↑ ou ↓` : Déplacer la fenêtre sans l'agrandir ou la réduire
-- Lorsque non réduit, appuyez sur `Alt + Space`, puis `M`, puis utilisez les touches fléchées pour déplacer.  
+- `Win + Alt + ↑ ou ↓` : sous Windows 11 et dans les configurations compatibles, ancre la fenêtre active en haut ou en bas de l’écran.
+- Appuyez sur `Alt + Space`, choisissez Move dans le menu de la fenêtre et utilisez les flèches pour la déplacer. Appuyez sur Entrée ou cliquez pour la placer.
 * La fenêtre suivra le curseur de la souris, vous permettant de la récupérer même si elle est affichée hors de l'écran.
 
 ## Terminer un processus avec le Gestionnaire des tâches
@@ -93,14 +95,14 @@ Elle est conçue pour Windows 11, mais je pense que la plupart des astuces fonct
 4. Lorsque le nom du processus est sélectionné, appuyez sur la touche `Delete`, suivie de la touche `Enter` pour terminer le processus.
 
 ## Terminer un processus par son nom avec une commande
-- Vous pouvez terminer un processus avec `taskkill /f /im nom_du_processus`.
-Par exemple, vous pouvez terminer l'Explorateur avec `taskkill /f /im explorer.exe`
+- Vous pouvez terminer un processus avec `taskkill /f /im nom_du_processus`. La fermeture forcée peut entraîner la perte du travail non enregistré ; utilisez-la uniquement si nécessaire.
+Par exemple, vous pouvez terminer l'Explorateur avec `taskkill /f /im explorer.exe`. La fermeture forcée peut entraîner la perte du travail non enregistré ; utilisez-la uniquement si nécessaire.
 
 ## Lancer plusieurs instances du même programme depuis la barre des tâches
 - Maintenez la touche `Shift` et faites un clic gauche sur la barre des tâches pour lancer plusieurs instances du même programme. (Uniquement pour les applications qui supportent plusieurs instances)
 
 ## Lancer un programme avec des privilèges d'administrateur
-- Lancer un programme en maintenant `Ctrl + Shift` le lancera avec des privilèges d'administrateur.
+- Maintenez `Ctrl + Shift` en sélectionnant l’icône d’une application dans la barre des tâches pour l’ouvrir en tant qu’administrateur.
 
 ## Lancer l'Explorateur
 - Vous pouvez lancer l'Explorateur avec `Win + E`.
@@ -125,9 +127,9 @@ Voici quelques commandes que vous pouvez exécuter dans "Exécuter" ou dans l'In
 ![img_18.png](img_18.webp)
 - Tapez `msedge` et appuyez sur `Enter`
 
-## Ouvrir Internet Explorer 11 (IE11)
-![img_25.png](img_25.webp)
-- Tapez `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` et appuyez sur `Enter`
+## Ouvrir les anciens sites avec le mode Internet Explorer dans Edge
+
+La prise en charge d’Internet Explorer 11 a pris fin le 15 juin 2022. Windows 11 ne permet pas de lancer IE seul. Pour les sites nécessitant une compatibilité, utilisez le mode Internet Explorer de Microsoft Edge. Consultez les références pour la configuration.
 
 ## Ouvrir Terminal
 ![img_19.png](img_19.webp)
@@ -140,19 +142,19 @@ Voici quelques commandes que vous pouvez exécuter dans "Exécuter" ou dans l'In
 
 ## Lancer le Bloc-notes
 ![img_4.png](img_4.webp)
-- Tapez `notepad` et appuyez sur `Enter`  
+- Tapez `notepad` et appuyez sur `Enter`
 
 ## Lancer la Calculatrice
 ![img_5.png](img_5.webp)
 - Tapez `calc` et appuyez sur `Enter`
 
-## Lancer [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/)
+## Lancer Paint
 ![img_6.png](img_6.webp)
-- Tapez `mspaint` et appuyez sur `Enter`  
+- Tapez `mspaint` et appuyez sur `Enter`
 
 ## Lancer PowerShell
 ![img_7.png](img_7.webp)
-- Tapez `powershell` et appuyez sur `Enter`  
+- Tapez `powershell` et appuyez sur `Enter`
 
 ## Lancer Visual Studio Code
 ![img_8.png](img_8.webp)
@@ -160,22 +162,22 @@ Voici quelques commandes que vous pouvez exécuter dans "Exécuter" ou dans l'In
 
 ## Lancer Excel
 ![img_9.png](img_9.webp)
-- Tapez `excel` et appuyez sur `Enter`  
+- Tapez `excel` et appuyez sur `Enter`
 * Uniquement si Excel est installé.
 
 ## Ouvrir Word
 ![img_10.png](img_10.webp)
-- Tapez `winword` et appuyez sur `Enter`  
+- Tapez `winword` et appuyez sur `Enter`
 * Uniquement si Word est installé.
 
 ## Ouvrir PowerPoint
 ![img_11.png](img_11.webp)
-- Tapez `powerpnt` et appuyez sur `Enter`  
+- Tapez `powerpnt` et appuyez sur `Enter`
   * Uniquement si PowerPoint est installé.
 
 ## Ouvrir la Configuration du système
 ![img_1.png](img_1.webp)
-- Tapez `msconfig` et appuyez sur `Enter`  
+- Tapez `msconfig` et appuyez sur `Enter`
 
 ## Ouvrir les Propriétés système
 ![img_2.png](img_2.webp)
@@ -189,9 +191,9 @@ Voici quelques commandes que vous pouvez exécuter dans "Exécuter" ou dans l'In
 ![img_14.png](img_14.webp)
 - Tapez `osk` et appuyez sur `Enter`
 
-## Ouvrir WordPad
-![img_12.png](img_12.webp)
-- Tapez `wordpad` ou `write` et appuyez sur `Enter`
+## Utiliser WordPad (anciennes versions de Windows uniquement)
+
+WordPad n’est pas inclus dans Windows 11 version 24H2 ni les versions ultérieures. Sur les anciennes versions, exécutez `wordpad` ou `write`. Utilisez le Bloc-notes pour le texte brut et Microsoft Word ou un éditeur compatible pour le RTF.
 
 ## Ouvrir l'Éditeur du Registre
 ![img_13.png](img_13.webp)
@@ -216,6 +218,8 @@ Voici quelques commandes que vous pouvez exécuter dans "Exécuter" ou dans l'In
 
 ## Copier le texte d'une boîte de message standard
 ![img_26.png](img_26.webp)
+
+Cette capture montre WordPad d’une version antérieure à Windows 11 version 24H2.
 - Vous pouvez copier le texte d'une boîte de message standard avec `Ctrl + C`.
 Copier la boîte de message ci-dessus copiera ceci dans le presse-papiers :
 ```
@@ -287,5 +291,10 @@ C:.
 (et ainsi de suite)
 ```
 
-## Référence
-- [Raccourcis clavier de Windows](https://support.microsoft.com/ja-jp/windows/windows-%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89-%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
+## Références
+
+- [Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)
+- [Use Snipping Tool to capture screenshots](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots.)
+- [Internet Explorer mode in Microsoft Edge](https://support.microsoft.com/en-us/edge/internet-explorer-mode-in-microsoft-edge)
+- [Resources for deprecated features in the Windows client](https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features-resources)
+- [Hibernate a Windows device](https://learn.microsoft.com/en-us/windows/configuration/unified-write-filter/hibernate-once-resume-many-horm)

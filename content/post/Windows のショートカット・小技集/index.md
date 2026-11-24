@@ -1,8 +1,8 @@
 ---
 title: '【Windows 11/10】作業効率が劇的に上がる便利なショートカットキー・小技集'
-date: "2026-09-24T19:44:38+09:00"
+date: "2022-09-18T23:49:29+09:00"
+lastmod: "2026-11-25"
 slug: "Windows のショートカット・小技集"
-date: 2022-09-18T23:49:29+09:00
 tags: ["Windows","小技","ショートカット"]
 draft: false
 image: "img.webp"
@@ -11,6 +11,8 @@ description: 'Windows 11やWindows 10で作業効率がアップする便利な�
 ---
 Windowsで普段使うちょっとした小技集です。Windowsを使い始めの方に読んでもらえれば幸いです。
 Windows 11を想定していますが、多くのものがWindows 10でも使えると思います。
+
+※一部の操作や画面表示は、Windowsのバージョン、設定、キーボードによって異なります。
 
 ## ウィンドウを閉じる
 - ウィンドウがアクティブになっている状態で`Alt + F4`
@@ -30,13 +32,13 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 
 ## 範囲を選択して画面をキャプチャー
 - `Win + Shift + S`で範囲を選択して画面をキャプチャーできます。
-- `Win + Print Screen`または単に`Print Screen`で全画面をキャプチャーできます。
-(`Win`をつけた場合は、`C:\Users\ユーザ名\Pictures\Screenshots`にキャプチャー画像が出力されます。)
-- `Alt + Print Screen`で現在のウィンドウをキャプチャーできます。
+- `Win + Print Screen`で全画面を撮影し、「ピクチャ\Screenshots」に保存できます。
+- `Print Screen`は標準では画面領域の切り取りを開きます。この設定を無効にすると、全画面がクリップボードにコピーされます。
+- `Alt + Print Screen`でアクティブなウィンドウをクリップボードにコピーできます。
 
 ## タスクバーに登録されたアプリの起動
-- `Win + 数字キー`でタスクバーに登録されたアプリを起動できます。  
-  例えば`Win + 1`を押すとタスクバーの1番左のアプリが起動します。
+- `Win + 数字キー`で、タスクバーに登録されたアプリを起動できます。すでに起動中の場合は、そのアプリに切り替わります。
+  例えば`Win + 1`で、タスクバーの左端に登録されたアプリを起動（実行中なら切り替え）できます。
 - `Win + T`でタスクバーのアイコンにフォーカスを移動でき、続けて複数回`Win + T`を押したり、
   `←`または`→`で選択を移動させ`Enter`キーで選択されたアプリを起動できます。
 
@@ -44,7 +46,7 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 - `Win + +`でWindowsの拡大鏡が起動します。さらに`Win + + or -`で画面の拡大/縮小ができます。
 - メモ帳やブラウザなど`Ctrl + + or -`で拡大/縮小できる（対応しているアプリのみ）
 
-## Windowsの[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)
+## Windowsのロック
 - `Win + L`
 - `Ctrl + Alt + Del`→`Space` or `Enter`
 
@@ -53,20 +55,20 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
   `Win + R`→`Alt + F4`→`Alt + F4`でも可。
   ![img_20.png](img_20.webp)
 - `Win + X`→`U`→`U`でシャットダウンできます。
-- コマンドプロンプトまたは`Win + R`の「ファイル名を指定して実行」で`shutdown /s /t 0`と入力するとシャットダウンできます。追加で`/f`をつけると強制シャットダウンになります。
+- コマンドプロンプトまたは`Win + R`の「ファイル名を指定して実行」で`shutdown /s /t 0`と入力するとシャットダウンできます。追加で`/f`をつけると強制シャットダウンになります。 強制終了では未保存の作業が失われることがあるため、必要な場合だけ使ってください。
 
 ## Windowsの再起動
 - `Win + M`や`Win + D`でデスクトップ表示した状態や`Win + T`や`Win + B`でタスクバーがアクティブな状態で`Alt + F4`を押すと下記のようなダイアログが表示されるので1回`↓`を押して「再起動」を選択して`Enter`
 　`Win + R`→`Alt + F4`→`Alt + F4`でも可。
   ![img_21.png](img_21.webp)
 - `Win + X`→`U`→`R`で再起動できます。
-- `shutdown /r /t 0`で再起動できます。追加で`/f`をつけると強制再起動になります。
+- `shutdown /r /t 0`で再起動できます。追加で`/f`をつけると強制再起動になります。 強制終了では未保存の作業が失われることがあるため、必要な場合だけ使ってください。
 
 ## Windowsのスリープ
 - `Win + M`や`Win + D`でデスクトップ表示した状態や`Win + T`や`Win + B`でタスクバーがアクティブな状態で`Alt + F4`を押すと下記のようなダイアログが表示されるので1回`↑`を押して「スリープ」を選択して`Enter`
   `Win + R`→`Alt + F4`→`Alt + F4`でも可。
   ![img_23.png](img_23.webp)
-- `Win + R`→またはコマンドプロンプトで`rundll32.exe powrprof.dll,SetSuspendState`と入力すると休止状態にできます。
+- 休止状態にするには、コマンドプロンプトまたは「ファイル名を指定して実行」で`shutdown /h`を実行します（休止状態が有効な場合）。
 
 ## Windowsのサインアウト（ログオフ）
 - `Win + M`や`Win + D`でデスクトップ表示した状態や`Win + T`や`Win + B`でタスクバーがアクティブな状態で`Alt + F4`を押すと下記のようなダイアログが表示されるので2回`↑`を押して「サインアウト」を選択して`Enter`
@@ -82,8 +84,8 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 - `Win + ↑`：上に移動/最大化
 - `Win + ↓`：下に移動/最小化
 - `Win + Shift + ← or →`：マルチモニター間を移動
-- `Win + Alt + ← or → or ↑ or ↓`：最大化・最小化せずにウィンドウ移動
-- 最小化されていない状態で`Alt + Speace`の後に`M`その後、矢印キーで移動。  
+- `Win + Alt + ↑ or ↓`：Windows 11の対応環境で、アクティブなウィンドウを画面上半分または下半分にスナップします。
+- `Alt + Space`でウィンドウのシステムメニューを開き、「移動」を選んでから矢印キーで移動します。Enterキーまたはクリックで配置します。
 ※マウスカーソルにウィンドウが追従する状態となるため、画面外にウィンドウが表示されている状態でも救出することができます。
 
 ## タスクマネージャーでプロセスを終了
@@ -94,14 +96,14 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 4. プロセス名が選択されている状態で`Delete`キー、続いて`Enter`キーを押すとプロセスを終了できます。
 
 ## コマンドでプロセス名を指定して終了
-- `taskkill /f /im プロセス名`でプロセスを終了できます。
-例えば、`taskkill /f /im explorer.exe`でエクスプローラーを終了できます
+- `taskkill /f /im プロセス名`でプロセスを終了できます。 強制終了では未保存の作業が失われることがあるため、必要な場合だけ使ってください。
+例えば、`taskkill /f /im explorer.exe`でエクスプローラーを終了できます. 強制終了では未保存の作業が失われることがあるため、必要な場合だけ使ってください。
 
 ## タスクバーのアイコンから複数同じプログラムを起動
 - タスクバーで`Shift`キーを押しながら左クリックすると、複数同じプログラムを起動できます。（複数起動対応のアプリのみ）
 
 ## 管理者権限でプログラムを起動
-- `Ctrl + Shift`を押しながらプログラムを起動すると管理者権限でプログラムを起動できます。
+- タスクバー上のアプリのアイコンを`Ctrl + Shift`を押しながら選択すると、管理者として起動できます。
 
 ## エクスプローラーを起動
 - `Win + E`でエクスプローラーを起動できます。
@@ -110,7 +112,7 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 
 ## エクスプローラーで開いている場所でコマンドプロンプトを開く
 - Windows 11だと右クリックメニューの「ターミナル」からコマンドプロンプトを起動できます。
-- また、[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)バーに`cmd`と入力して`Enter`キーを押すとコマンドプロンプトを起動できます。
+- また、アドレスバーに`cmd`と入力して`Enter`キーを押すとコマンドプロンプトを起動できます。
 
 ## クリップボード履歴を表示
 - `Win + V`でクリップボード履歴を表示できます。
@@ -126,9 +128,9 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 ![img_18.png](img_18.webp)
 - `msedge`と入力して`Enter`
 
-## Internet Explorer 11（IE11）を開く
-![img_25.png](img_25.webp)
-- `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"`と入力して`Enter`
+## Internet Explorerが必要なサイトをEdgeのIEモードで開く
+
+Internet Explorer 11のサポートは2022年6月15日に終了しました。Windows 11では単体のIEを起動できません。互換性が必要なサイトに限り、Microsoft EdgeのIEモードを使ってください。設定方法は参考資料を確認してください。
 
 ## ターミナルを開く
 ![img_19.png](img_19.webp)
@@ -141,7 +143,7 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 
 ## メモ帳を起動
 ![img_4.png](img_4.webp)
-- `notepad`と入力して`Enter`  
+- `notepad`と入力して`Enter`
 
 ## 電卓を起動
 ![img_5.png](img_5.webp)
@@ -149,11 +151,11 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 
 ## ペイントを起動
 ![img_6.png](img_6.webp)
-- `mspaint`と入力して`Enter`  
+- `mspaint`と入力して`Enter`
 
 ## PowerShellを起動
 ![img_7.png](img_7.webp)
-- `powershell`と入力して`Enter`  
+- `powershell`と入力して`Enter`
 
 ## Visual Studio Codeを起動
 ![img_8.png](img_8.webp)
@@ -161,22 +163,22 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 
 ## Excelを起動
 ![img_9.png](img_9.webp)
-- `excel`と入力して`Enter`  
+- `excel`と入力して`Enter`
 ※Excelがインストールされている場合のみ。
 
 ## Wordを開く
 ![img_10.png](img_10.webp)
-- `winword`と入力して`Enter`  
+- `winword`と入力して`Enter`
 ※Wordがインストールされている場合のみ。
 
 ## PowerPointを開く
 ![img_11.png](img_11.webp)
-- `powerpnt`と入力して`Enter`  
+- `powerpnt`と入力して`Enter`
   ※PowerPointがインストールされている場合のみ。
 
 ## システム構成を開く
 ![img_1.png](img_1.webp)
-- `msconfig`と入力して`Enter`  
+- `msconfig`と入力して`Enter`
 
 ## システムのプロパティを開く
 ![img_2.png](img_2.webp)
@@ -217,6 +219,8 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 
 ## 標準メッセージボックスの文字列をコピー
 ![img_26.png](img_26.webp)
+
+※この画面例はWindows 11 バージョン24H2より前のWordPadです。
 - `Ctrl + C`で標準のメッセージボックスの文字列をコピーできます。
 上記のメッセージボックスをコピーすると下記がクリップボードにコピーされます。
 ```
@@ -289,4 +293,9 @@ C:.
 ```
 
 ## 参考
-- [Windows のキーボード ショートカット](https://support.microsoft.com/ja-jp/windows/windows-%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89-%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
+
+- [Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)
+- [Use Snipping Tool to capture screenshots](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots.)
+- [Internet Explorer mode in Microsoft Edge](https://support.microsoft.com/en-us/edge/internet-explorer-mode-in-microsoft-edge)
+- [Resources for deprecated features in the Windows client](https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features-resources)
+- [Hibernate a Windows device](https://learn.microsoft.com/en-us/windows/configuration/unified-write-filter/hibernate-once-resume-many-horm)

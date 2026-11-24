@@ -1,16 +1,18 @@
 ---
 title: '[Windows 11/10] A Collection of Handy Shortcut Keys and Tips to Dramatically Boost Work Efficiency'
-date: "2026-09-24T19:44:38+09:00"
+date: "2022-09-18T23:49:29+09:00"
+lastmod: "2026-11-25"
 slug: "Windows のShortcut・Trick集"
-date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Tips", "Shortcuts"]
 draft: false
 image: "img.webp"
 categories: ["pc-gadgets"]
 description: 'Carefully selected handy shortcut keys and tips to boost your work efficiency in Windows 11 and 10. A collection of essential techniques useful for everyday use, from beginners to advanced users, covering window operations, desktop display, voice typing, and screen capture.'
 ---
-This is a collection of useful little tips and shortcuts I use regularly on Windows. I hope this will be helpful [for beginners](/en/p/leather-goods%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9/) just starting to use Windows.
+This is a collection of useful little tips and shortcuts I use regularly on Windows. I hope this will be helpful for beginners just starting to use Windows.
 This assumes Windows 11, but many of them should work on Windows 10 as well.
+
+Some shortcuts and screens vary by Windows version, settings, and keyboard.
 
 ## Close Window
 - `Alt + F4` while the window is active
@@ -30,20 +32,20 @@ This assumes Windows 11, but many of them should work on Windows 10 as well.
 
 ## Capture a Selected Area of the Screen
 - `Win + Shift + S` allows you to select an area to capture.
-- `Win + Print Screen` or simply `Print Screen` captures the entire screen.
-(If you add `Win`, the captured image is saved to `C:\Users\Username\Pictures\Screenshots`.)
-- `Alt + Print Screen` captures the current window.
+- `Win + Print Screen` captures the full screen and saves it in Pictures\Screenshots.
+- By default, `Print Screen` opens screen snipping. If you turn this setting off, it copies the full screen to the clipboard.
+- `Alt + Print Screen` copies the active window to the clipboard.
 
 ## Launch Apps Pinned to the Taskbar
-- `Win + Number Key` launches apps pinned to the taskbar.  
-  For example, pressing `Win + 1` launches the first app on the left of the taskbar.
+- `Win + Number Key` opens the app pinned to that taskbar position, or switches to it if it is already running.
+  For example, `Win + 1` opens the leftmost pinned app or switches to it if it is already running.
 - `Win + T` moves focus to the taskbar icons. You can then press `Win + T` multiple times, or use the `←` or `→` keys to move the selection and press `Enter` to launch the selected app.
 
 ## Zoom In / Zoom Out
 - `Win + +` opens Windows Magnifier. You can further zoom in or out of the screen using `Win + + or -`.
 - In apps like Notepad or browsers, you can zoom in/out with `Ctrl + + or -` (only for supported apps).
 
-## [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) Windows
+## Lock Windows
 - `Win + L`
 - `Ctrl + Alt + Del` -> `Space` or `Enter`
 
@@ -52,20 +54,20 @@ This assumes Windows 11, but many of them should work on Windows 10 as well.
   Alternatively, you can use `Win + R` -> `Alt + F4` -> `Alt + F4`.
   ![img_20.png](img_20.webp)
 - You can shut down using `Win + X` -> `U` -> `U`.
-- Entering `shutdown /s /t 0` in Command Prompt or the "Run" dialog (`Win + R`) will shut down the system. Adding `/f` will force a shutdown.
+- Entering `shutdown /s /t 0` in Command Prompt or the "Run" dialog (`Win + R`) will shut down the system. Adding `/f` will force a shutdown. Forced termination can discard unsaved work, so use it only when needed.
 
 ## Restart Windows
 - When the desktop is shown with `Win + M` or `Win + D`, or the taskbar is active with `Win + T` or `Win + B`, pressing `Alt + F4` will display the dialog below. Press `↓` once to select "Restart" and press `Enter`.
   Alternatively, you can use `Win + R` -> `Alt + F4` -> `Alt + F4`.
   ![img_21.png](img_21.webp)
 - You can restart using `Win + X` -> `U` -> `R`.
-- `shutdown /r /t 0` restarts the system. Adding `/f` will force a restart.
+- `shutdown /r /t 0` restarts the system. Adding `/f` will force a restart. Forced termination can discard unsaved work, so use it only when needed.
 
 ## Sleep Windows
 - When the desktop is shown with `Win + M` or `Win + D`, or the taskbar is active with `Win + T` or `Win + B`, pressing `Alt + F4` will display the dialog below. Press `↑` once to select "Sleep" and press `Enter`.
   Alternatively, you can use `Win + R` -> `Alt + F4` -> `Alt + F4`.
   ![img_23.png](img_23.webp)
-- Entering `rundll32.exe powrprof.dll,SetSuspendState` in `Win + R` or Command Prompt will put the system into hibernation.
+- To hibernate, run `shutdown /h` in Command Prompt or the Run dialog (when hibernation is enabled).
 
 ## Sign Out (Log Off) Windows
 - When the desktop is shown with `Win + M` or `Win + D`, or the taskbar is active with `Win + T` or `Win + B`, pressing `Alt + F4` will display the dialog below. Press `↑` twice to select "Sign out" and press `Enter`.
@@ -81,8 +83,8 @@ This assumes Windows 11, but many of them should work on Windows 10 as well.
 - `Win + ↑`: Move up / Maximize
 - `Win + ↓`: Move down / Minimize
 - `Win + Shift + ← or →`: Move between multiple monitors
-- `Win + Alt + ← or → or ↑ or ↓`: Move window without maximizing or minimizing
-- When not minimized, press `Alt + Space`, then `M`, and use the arrow keys to move.  
+- `Win + Alt + ↑ or ↓`: On supported Windows 11 systems, snap the active window to the top or bottom half of the screen.
+- Press `Alt + Space` to open the window menu, choose Move, and use the arrow keys to move it. Press Enter or click to place it.
 * Since the window will follow the mouse cursor, you can rescue a window even if it is displayed off-screen.
 
 ## End Process with Task Manager
@@ -93,14 +95,14 @@ This assumes Windows 11, but many of them should work on Windows 10 as well.
 4. With a process name selected, press the `Delete` key, followed by the `Enter` key to end the process.
 
 ## End Process by Specifying Name in Command
-- `taskkill /f /im process_name` ends a process.
-For example, `taskkill /f /im explorer.exe` ends File Explorer.
+- `taskkill /f /im process_name` ends a process. Forced termination can discard unsaved work, so use it only when needed.
+For example, `taskkill /f /im explorer.exe` ends File Explorer. Forced termination can discard unsaved work, so use it only when needed.
 
 ## Launch Multiple Instances of the Same Program from Taskbar
 - While holding `Shift`, left-click an icon on the taskbar to launch multiple instances of the same program. (Only for apps that support multiple instances)
 
 ## Launch a Program as Administrator
-- Hold `Ctrl + Shift` while launching a program to open it with administrator privileges.
+- Hold `Ctrl + Shift` while selecting an app icon on the taskbar to open it as administrator.
 
 ## Launch File Explorer
 - `Win + E` launches File Explorer.
@@ -125,9 +127,9 @@ Here are a few commands you can execute in "Run" or Command Prompt.
 ![img_18.png](img_18.webp)
 - Type `msedge` and press `Enter`
 
-## Open Internet Explorer 11 (IE11)
-![img_25.png](img_25.webp)
-- Type `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` and press `Enter`
+## Open legacy sites in Internet Explorer mode in Edge
+
+Support for Internet Explorer 11 ended on June 15, 2022. Windows 11 does not support launching standalone IE. For sites that require compatibility, use Internet Explorer mode in Microsoft Edge. See the references for setup instructions.
 
 ## Open Terminal
 ![img_19.png](img_19.webp)
@@ -140,19 +142,19 @@ Here are a few commands you can execute in "Run" or Command Prompt.
 
 ## Launch Notepad
 ![img_4.png](img_4.webp)
-- Type `notepad` and press `Enter`  
+- Type `notepad` and press `Enter`
 
 ## Launch Calculator
 ![img_5.png](img_5.webp)
 - Type `calc` and press `Enter`
 
-## Launch [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/)
+## Launch Paint
 ![img_6.png](img_6.webp)
-- Type `mspaint` and press `Enter`  
+- Type `mspaint` and press `Enter`
 
 ## Launch PowerShell
 ![img_7.png](img_7.webp)
-- Type `powershell` and press `Enter`  
+- Type `powershell` and press `Enter`
 
 ## Launch Visual Studio Code
 ![img_8.png](img_8.webp)
@@ -160,22 +162,22 @@ Here are a few commands you can execute in "Run" or Command Prompt.
 
 ## Launch Excel
 ![img_9.png](img_9.webp)
-- Type `excel` and press `Enter`  
+- Type `excel` and press `Enter`
 * Only if Excel is installed.
 
 ## Open Word
 ![img_10.png](img_10.webp)
-- Type `winword` and press `Enter`  
+- Type `winword` and press `Enter`
 * Only if Word is installed.
 
 ## Open PowerPoint
 ![img_11.png](img_11.webp)
-- Type `powerpnt` and press `Enter`  
+- Type `powerpnt` and press `Enter`
   * Only if PowerPoint is installed.
 
 ## Open System Configuration
 ![img_1.png](img_1.webp)
-- Type `msconfig` and press `Enter`  
+- Type `msconfig` and press `Enter`
 
 ## Open System Properties
 ![img_2.png](img_2.webp)
@@ -189,9 +191,9 @@ Here are a few commands you can execute in "Run" or Command Prompt.
 ![img_14.png](img_14.webp)
 - Type `osk` and press `Enter`
 
-## Open WordPad
-![img_12.png](img_12.webp)
-- Type `wordpad` or `write` and press `Enter`
+## Use WordPad (older Windows versions only)
+
+WordPad is not included in Windows 11 version 24H2 or later. On older versions, run `wordpad` or `write` to open it. Use Notepad for plain text and Microsoft Word or another compatible editor for rich text such as RTF.
 
 ## Open Registry Editor
 ![img_13.png](img_13.webp)
@@ -216,6 +218,8 @@ Here are a few commands you can execute in "Run" or Command Prompt.
 
 ## Copy String from a Standard Message Box
 ![img_26.png](img_26.webp)
+
+This screenshot shows WordPad from a Windows version earlier than Windows 11 version 24H2.
 - `Ctrl + C` allows you to copy the text from a standard message box.
 Copying the message box above will copy the following to the clipboard:
 ```
@@ -287,5 +291,10 @@ C:.
 (omitted below)
 ```
 
-## Reference
-- [Keyboard shortcuts in Windows](https://support.microsoft.com/ja-jp/windows/windows-%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89-%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
+## References
+
+- [Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)
+- [Use Snipping Tool to capture screenshots](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots.)
+- [Internet Explorer mode in Microsoft Edge](https://support.microsoft.com/en-us/edge/internet-explorer-mode-in-microsoft-edge)
+- [Resources for deprecated features in the Windows client](https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features-resources)
+- [Hibernate a Windows device](https://learn.microsoft.com/en-us/windows/configuration/unified-write-filter/hibernate-once-resume-many-horm)

@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "batch": 205,
+  "article": "Windows shortcuts and practical tips for productivity",
+  "reviewedAt": "2026-11-25",
+  "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+  "sources": [
+    "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows",
+    "https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots.",
+    "https://support.microsoft.com/en-us/edge/internet-explorer-mode-in-microsoft-edge",
+    "https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features-resources",
+    "https://learn.microsoft.com/en-us/windows/configuration/unified-write-filter/hibernate-once-resume-many-horm"
+  ],
+  "scope": "Read the complete Japanese article and all twelve translations; compared section coverage, keyboard shortcuts, Windows commands, interface labels, local images, external and internal links, and publication metadata against current Microsoft documentation. There are no mathematical formulas.",
+  "findings": [
+    "Removed duplicate future publication dates, retained the actual 2022-09-18 publication date, and set lastmod to 2026-11-25 in all editions.",
+    "Clarified Print Screen behavior, the saved screenshot location, administrator launch shortcut, taskbar switching, and Windows 11 window snapping against Microsoft keyboard and Snipping Tool guidance.",
+    "Removed the obsolete Internet Explorer COM launch command; explained that standalone IE support ended and directed legacy-site users to IE mode in Edge.",
+    "Marked WordPad as unavailable in Windows 11 version 24H2 and later, and clarified older-version use and current alternatives.",
+    "Replaced the ambiguous SetSuspendState rundll32 command with shutdown /h for hibernation; corrected Alt+Space window moving and added data-loss cautions for forced termination.",
+    "Removed unrelated internal cross-links that had appeared only in translations and updated every edition with current Microsoft references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Windows のショートカット・小技集/index.en.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "f9c5c85048381986ae17cfdc584129be4960ce7963bd0c1bf853a869cb703e41",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    },
+    "post/Windows のショートカット・小技集/index.zh-cn.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "f6ce4c724e346c360425c0573934f19b733346a619ec26133208fe5f08236742",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    },
+    "post/Windows のショートカット・小技集/index.es.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "98fcff8e45baa784df5ab4ae54643ad6900c29f6534449deee0c39d4759279d5",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    },
+    "post/Windows のショートカット・小技集/index.ko.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "e13225bcd225a3deb45594693040f46907d57df16c35fd373bdd3a8ee6f4f4c2",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    },
+    "post/Windows のショートカット・小技集/index.pt.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "8c3c0643ca671e5d39d8c9655bd0fe8e527fe5873ffa8a005db646abb4c65515",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    },
+    "post/Windows のショートカット・小技集/index.zh-tw.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "b3b8855ecce7e1e30931527c53c50f84af05551dd802752d4428dea98a779eb7",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    },
+    "post/Windows のショートカット・小技集/index.hi.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "636d6baba16bb9320fdadadfad00d4f57023e24e4c1fab4eec4d28d27dab08a3",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    },
+    "post/Windows のショートカット・小技集/index.fr.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "9ddea4c2ee6635c4ac8e76a586267ed5bb484322dec6efd567c455d6713f7893",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    },
+    "post/Windows のショートカット・小技集/index.de.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "850ff372e5aa4b77b0af8fa6478a89e153f57b06b0185ed859779d80763ff15e",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    },
+    "post/Windows のショートカット・小技集/index.ar.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "85fe70a69e9cd6a27decd4a543d198f12558f30774157dc9e2847922c80844dc",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    },
+    "post/Windows のショートカット・小技集/index.ru.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "7d37db0df6881945c1727873fc222ea838f9e1df4d31f40db46a70376c9ed7ba",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    },
+    "post/Windows のショートカット・小技集/index.id.md": {
+      "source": "post/Windows のショートカット・小技集/index.md",
+      "sourceHash": "10d4720884ae4680c416b7cb619c2d51e754b29a88459afa681481b839f7412c",
+      "translationHash": "884020553e223bbda5368de6f51c8ce6bf1e6457c4b2d3e29766bd182dce9eee",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Compared the full translation with the Japanese source and current Microsoft documentation; corrected outdated Windows guidance, shortcut behavior, shell commands, and unrelated links.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete edition with the Japanese source, checked that each section and example is preserved, and corrected the current behavior of keyboard shortcuts and legacy Windows features."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked taskbar pinning, window snapping, clipboard, screen snipping, hibernation, administrator launch, Internet Explorer mode, and WordPad terminology."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Checked shutdown /s, shutdown /r, shutdown /h, taskkill, Run and app launch commands; removed the unsupported standalone Internet Explorer COM launch command."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added Microsoft keyboard, screenshot, IE mode, deprecated-feature, and hibernation references; removed translation-only unrelated internal links and verified every local image path."
+        }
+      },
+      "limitations": [
+        "AI-assisted proofreading by Codex; no human or native-speaker certification.",
+        "Some shortcuts and labels vary by Windows release, settings, keyboard layout, and hardware; check the linked Microsoft documentation for current behavior.",
+        "WordPad and standalone Internet Explorer instructions are limited to older Windows versions; Windows 11 version 24H2 and later no longer include WordPad."
+      ]
+    }
+  }
+}

@@ -1,8 +1,8 @@
 ---
 title: '[Windows 11/10] Eine Sammlung praktischer Tastenkombinationen und Tricks, die die Arbeitseffizienz drastisch steigern'
-date: "2026-09-24T19:44:38+09:00"
+date: "2022-09-18T23:49:29+09:00"
+lastmod: "2026-11-25"
 slug: "Windows のVerknüpfung・Trick集"
-date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Tipps", "Tastenkombinationen"]
 draft: false
 image: "img.webp"
@@ -11,6 +11,8 @@ description: 'Wir stellen eine Auswahl nützlicher Tastenkombinationen und Trick
 ---
 Dies ist eine Sammlung von kleinen Tricks für den alltäglichen Gebrauch unter Windows. Ich würde mich freuen, wenn Windows-Anfänger dies lesen.
 Es ist für Windows 11 gedacht, aber ich denke, viele davon können auch unter Windows 10 verwendet werden.
+
+Einige Tastenkombinationen und Bildschirme unterscheiden sich je nach Windows-Version, Einstellungen und Tastatur.
 
 ## Fenster schließen
 - `Alt + F4` während das Fenster aktiv ist
@@ -30,13 +32,13 @@ Es ist für Windows 11 gedacht, aber ich denke, viele davon können auch unter W
 
 ## Bereich auswählen und Bildschirm aufnehmen
 - Mit `Win + Shift + S` können Sie einen Bereich auswählen und den Bildschirm aufnehmen.
-- Mit `Win + Print Screen` oder einfach `Print Screen` können Sie den gesamten Bildschirm aufnehmen.
-(Wenn Sie `Win` hinzufügen, wird das aufgenommene Bild in `C:\Users\Benutzername\Pictures\Screenshots` gespeichert.)
-- Mit `Alt + Print Screen` können Sie das aktuelle Fenster aufnehmen.
+- `Win + Print Screen` nimmt den gesamten Bildschirm auf und speichert das Bild in Pictures\Screenshots.
+- Standardmäßig öffnet `Print Screen` den Bildschirmausschnitt. Wenn Sie diese Einstellung deaktivieren, wird der ganze Bildschirm in die Zwischenablage kopiert.
+- `Alt + Print Screen` kopiert das aktive Fenster in die Zwischenablage.
 
 ## In der Taskleiste angeheftete Apps starten
-- Mit `Win + Zifferntaste` können Sie in der Taskleiste angeheftete Apps starten.  
-  Zum Beispiel startet `Win + 1` die erste App von links in der Taskleiste.
+- `Win + Zahl` öffnet die an dieser Position an die Taskleiste angeheftete App oder wechselt zu ihr, wenn sie bereits ausgeführt wird.
+  Beispiel: `Win + 1` öffnet die ganz links angeheftete App oder wechselt zu ihr, wenn sie bereits ausgeführt wird.
 - Mit `Win + T` können Sie den Fokus auf die Taskleistensymbole verschieben. Durch mehrmaliges Drücken von `Win + T` oder
   mit `←` oder `→` können Sie die Auswahl verschieben und die ausgewählte App mit der `Enter` -Taste starten.
 
@@ -53,20 +55,20 @@ Es ist für Windows 11 gedacht, aber ich denke, viele davon können auch unter W
   `Win + R` → `Alt + F4` → `Alt + F4` ist ebenfalls möglich.
   ![img_20.png](img_20.webp)
 - Mit `Win + X` → `U` → `U` können Sie herunterfahren.
-- Sie können herunterfahren, indem Sie `shutdown /s /t 0` in die Eingabeaufforderung oder den "Ausführen"-Dialog (`Win + R`) eingeben. Das Hinzufügen von `/f` erzwingt das Herunterfahren.
+- Sie können herunterfahren, indem Sie `shutdown /s /t 0` in die Eingabeaufforderung oder den "Ausführen"-Dialog (`Win + R`) eingeben. Das Hinzufügen von `/f` erzwingt das Herunterfahren. Beim erzwungenen Beenden können ungespeicherte Arbeiten verloren gehen; verwenden Sie es nur bei Bedarf.
 
 ## Windows neu starten
 - Wenn der Desktop mit `Win + M` oder `Win + D` angezeigt wird oder die Taskleiste mit `Win + T` oder `Win + B` aktiv ist, drücken Sie `Alt + F4`, woraufhin der folgende Dialog angezeigt wird. Drücken Sie einmal `↓`, wählen Sie "Neu starten" und drücken Sie `Enter`.
   `Win + R` → `Alt + F4` → `Alt + F4` ist ebenfalls möglich.
   ![img_21.png](img_21.webp)
 - Mit `Win + X` → `U` → `R` können Sie neu starten.
-- Mit `shutdown /r /t 0` können Sie neu starten. Das Hinzufügen von `/f` erzwingt den Neustart.
+- Mit `shutdown /r /t 0` können Sie neu starten. Das Hinzufügen von `/f` erzwingt den Neustart. Beim erzwungenen Beenden können ungespeicherte Arbeiten verloren gehen; verwenden Sie es nur bei Bedarf.
 
 ## Windows in den Energiesparmodus versetzen (Standby)
 - Wenn der Desktop mit `Win + M` oder `Win + D` angezeigt wird oder die Taskleiste mit `Win + T` oder `Win + B` aktiv ist, drücken Sie `Alt + F4`, woraufhin der folgende Dialog angezeigt wird. Drücken Sie einmal `↑`, wählen Sie "Energie sparen" und drücken Sie `Enter`.
   `Win + R` → `Alt + F4` → `Alt + F4` ist ebenfalls möglich.
   ![img_23.png](img_23.webp)
-- Sie können den Ruhezustand aktivieren, indem Sie `rundll32.exe powrprof.dll,SetSuspendState` in `Win + R` oder in der Eingabeaufforderung eingeben.
+- Führen Sie zum Ruhezustand `shutdown /h` in der Eingabeaufforderung oder im Dialog „Ausführen“ aus (wenn der Ruhezustand aktiviert ist).
 
 ## Bei Windows abmelden (Logoff)
 - Wenn der Desktop mit `Win + M` oder `Win + D` angezeigt wird oder die Taskleiste mit `Win + T` oder `Win + B` aktiv ist, drücken Sie `Alt + F4`, woraufhin der folgende Dialog angezeigt wird. Drücken Sie zweimal `↑`, wählen Sie "Abmelden" und drücken Sie `Enter`.
@@ -82,8 +84,8 @@ Es ist für Windows 11 gedacht, aber ich denke, viele davon können auch unter W
 - `Win + ↑` : Nach oben verschieben/maximieren
 - `Win + ↓` : Nach unten verschieben/minimieren
 - `Win + Shift + ← oder →` : Zwischen mehreren Monitoren verschieben
-- `Win + Alt + ← oder → oder ↑ oder ↓` : Fenster ohne Maximieren/Minimieren verschieben
-- Im nicht minimierten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) `Alt + Space`, dann `M` und anschließend mit den Pfeiltasten verschieben.  
+- `Win + Alt + ↑ oder ↓`: Unter Windows 11 wird das aktive Fenster auf unterstützten Systemen an die obere oder untere Bildschirmhälfte angedockt.
+- Drücken Sie `Alt + Space`, wählen Sie im Fenstermenü „Verschieben“ und bewegen Sie das Fenster mit den Pfeiltasten. Drücken Sie Enter oder klicken Sie, um es abzusetzen.
 ※ Da das Fenster dem Mauszeiger folgt, kann es auch gerettet werden, wenn es außerhalb des Bildschirms angezeigt wird.
 
 ## Prozesse im Task-Manager beenden
@@ -94,14 +96,14 @@ Es ist für Windows 11 gedacht, aber ich denke, viele davon können auch unter W
 4. Während der Prozessname ausgewählt ist, drücken Sie die `Delete` -Taste gefolgt von der `Enter` -Taste, um den Prozess zu beenden.
 
 ## Prozesse per Befehl anhand des Prozessnamens beenden
-- Mit `taskkill /f /im Prozessname` können Sie einen Prozess beenden.
-Zum Beispiel können Sie mit `taskkill /f /im explorer.exe` den Explorer beenden.
+- Mit `taskkill /f /im Prozessname` können Sie einen Prozess beenden. Beim erzwungenen Beenden können ungespeicherte Arbeiten verloren gehen; verwenden Sie es nur bei Bedarf.
+Zum Beispiel können Sie mit `taskkill /f /im explorer.exe` den Explorer beenden. Beim erzwungenen Beenden können ungespeicherte Arbeiten verloren gehen; verwenden Sie es nur bei Bedarf.
 
 ## Mehrere Instanzen desselben Programms über das Taskleistensymbol starten
 - Wenn Sie in der Taskleiste bei gedrückter `Shift` -Taste links klicken, können Sie mehrere Instanzen desselben Programms starten. (Nur für Apps, die dies unterstützen)
 
 ## Programme als Administrator starten
-- Wenn Sie beim Starten eines Programms `Ctrl + Shift` gedrückt halten, wird das Programm mit Administratorrechten gestartet.
+- Halten Sie `Ctrl + Shift` gedrückt, während Sie ein App-Symbol auf der Taskleiste auswählen, um die App als Administrator zu öffnen.
 
 ## Explorer starten
 - Mit `Win + E` können Sie den Explorer starten.
@@ -126,9 +128,9 @@ Im Folgenden werden einige Befehle vorgestellt, die Sie im Dialog "Ausführen" o
 ![img_18.png](img_18.webp)
 - Geben Sie `msedge` ein und drücken Sie `Enter`
 
-## Internet Explorer 11 (IE11) öffnen
-![img_25.png](img_25.webp)
-- Geben Sie `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` ein und drücken Sie `Enter`
+## Ältere Websites im Internet Explorer-Modus von Edge öffnen
+
+Der Support für Internet Explorer 11 endete am 15. Juni 2022. Windows 11 unterstützt keinen eigenständigen IE-Start. Verwenden Sie für Websites mit Kompatibilitätsbedarf den Internet Explorer-Modus in Microsoft Edge. Hinweise zur Einrichtung finden Sie in den Quellen.
 
 ## Terminal öffnen
 ![img_19.png](img_19.webp)
@@ -141,19 +143,19 @@ Im Folgenden werden einige Befehle vorgestellt, die Sie im Dialog "Ausführen" o
 
 ## Editor (Notepad) starten
 ![img_4.png](img_4.webp)
-- Geben Sie `notepad` ein und drücken Sie `Enter`  
+- Geben Sie `notepad` ein und drücken Sie `Enter`
 
 ## Taschenrechner starten
 ![img_5.png](img_5.webp)
 - Geben Sie `calc` ein und drücken Sie `Enter`
 
-## [Paint](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) starten
+## Paint starten
 ![img_6.png](img_6.webp)
-- Geben Sie `mspaint` ein und drücken Sie `Enter`  
+- Geben Sie `mspaint` ein und drücken Sie `Enter`
 
 ## PowerShell starten
 ![img_7.png](img_7.webp)
-- Geben Sie `powershell` ein und drücken Sie `Enter`  
+- Geben Sie `powershell` ein und drücken Sie `Enter`
 
 ## Visual Studio Code starten
 ![img_8.png](img_8.webp)
@@ -161,22 +163,22 @@ Im Folgenden werden einige Befehle vorgestellt, die Sie im Dialog "Ausführen" o
 
 ## Excel starten
 ![img_9.png](img_9.webp)
-- Geben Sie `excel` ein und drücken Sie `Enter`  
+- Geben Sie `excel` ein und drücken Sie `Enter`
 ※ Nur wenn Excel installiert ist.
 
 ## Word öffnen
 ![img_10.png](img_10.webp)
-- Geben Sie `winword` ein und drücken Sie `Enter`  
+- Geben Sie `winword` ein und drücken Sie `Enter`
 ※ Nur wenn Word installiert ist.
 
 ## PowerPoint öffnen
 ![img_11.png](img_11.webp)
-- Geben Sie `powerpnt` ein und drücken Sie `Enter`  
+- Geben Sie `powerpnt` ein und drücken Sie `Enter`
   ※ Nur wenn PowerPoint installiert ist.
 
 ## Systemkonfiguration öffnen
 ![img_1.png](img_1.webp)
-- Geben Sie `msconfig` ein und drücken Sie `Enter`  
+- Geben Sie `msconfig` ein und drücken Sie `Enter`
 
 ## Systemeigenschaften öffnen
 ![img_2.png](img_2.webp)
@@ -190,9 +192,9 @@ Im Folgenden werden einige Befehle vorgestellt, die Sie im Dialog "Ausführen" o
 ![img_14.png](img_14.webp)
 - Geben Sie `osk` ein und drücken Sie `Enter`
 
-## WordPad öffnen
-![img_12.png](img_12.webp)
-- Geben Sie `wordpad` oder `write` ein und drücken Sie `Enter`
+## WordPad verwenden (nur ältere Windows-Versionen)
+
+WordPad ist ab Windows 11 Version 24H2 nicht mehr enthalten. In älteren Versionen öffnen Sie es mit `wordpad` oder `write`. Verwenden Sie Editor für einfachen Text und Microsoft Word oder einen kompatiblen Editor für RTF.
 
 ## Registrierungs-Editor öffnen
 ![img_13.png](img_13.webp)
@@ -217,6 +219,8 @@ Im Folgenden werden einige Befehle vorgestellt, die Sie im Dialog "Ausführen" o
 
 ## Text der Standard-Meldungsbox kopieren
 ![img_26.png](img_26.webp)
+
+Dieser Screenshot zeigt WordPad aus einer Windows-Version vor Windows 11 Version 24H2.
 - Mit `Ctrl + C` können Sie den Text einer Standard-Meldungsbox kopieren.
 Wenn Sie die obige Meldungsbox kopieren, wird Folgendes in die Zwischenablage kopiert.
 ```
@@ -288,5 +292,10 @@ C:.
 (und so weiter)
 ```
 
-## Referenz
-- [Windows-Tastenkombinationen](https://support.microsoft.com/de-de/windows/tastenkombinationen-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
+## Quellen
+
+- [Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)
+- [Use Snipping Tool to capture screenshots](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots.)
+- [Internet Explorer mode in Microsoft Edge](https://support.microsoft.com/en-us/edge/internet-explorer-mode-in-microsoft-edge)
+- [Resources for deprecated features in the Windows client](https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features-resources)
+- [Hibernate a Windows device](https://learn.microsoft.com/en-us/windows/configuration/unified-write-filter/hibernate-once-resume-many-horm)

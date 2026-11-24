@@ -1,8 +1,8 @@
 ---
 title: '[Windows 11/10] Kumpulan Tombol Pintasan dan Trik Praktis yang Meningkatkan Efisiensi Kerja secara Drastis'
-date: "2026-09-24T19:44:38+09:00"
+date: "2022-09-18T23:49:29+09:00"
+lastmod: "2026-11-25"
 slug: "Windows のPintasan・Trik Kecil集"
-date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Trik", "Pintasan"]
 draft: false
 image: "img.webp"
@@ -11,6 +11,8 @@ description: 'Memperkenalkan pintasan keyboard dan trik pilihan yang berguna unt
 ---
 Berikut adalah kumpulan trik kecil yang biasa digunakan di Windows. Saya akan sangat senang jika pengguna baru Windows membacanya.
 Meskipun ini ditujukan untuk Windows 11, banyak di antaranya yang mungkin juga bisa digunakan di Windows 10.
+
+Beberapa pintasan dan tampilan dapat berbeda menurut versi Windows, pengaturan, dan keyboard.
 
 ## Menutup Jendela
 - `Alt + F4` saat jendela aktif
@@ -30,13 +32,13 @@ Meskipun ini ditujukan untuk Windows 11, banyak di antaranya yang mungkin juga b
 
 ## Memilih Area dan Menangkap Layar
 - Anda dapat memilih area dan menangkap layar dengan `Win + Shift + S`.
-- Anda dapat menangkap seluruh layar dengan `Win + Print Screen` atau hanya `Print Screen`.
-(Jika Anda menambahkan `Win`, gambar tangkapan akan disimpan di `C:\Users\NamaPengguna\Pictures\Screenshots`.)
-- Anda dapat menangkap jendela saat ini dengan `Alt + Print Screen`.
+- `Win + Print Screen` mengambil gambar seluruh layar dan menyimpannya di folder Pictures\Screenshots.
+- Secara default, `Print Screen` membuka pemotongan layar. Jika pengaturan ini dinonaktifkan, seluruh layar disalin ke clipboard.
+- `Alt + Print Screen` menyalin jendela aktif ke clipboard.
 
 ## Menjalankan Aplikasi yang Terdaftar di Taskbar
-- Anda dapat menjalankan aplikasi yang terdaftar di taskbar dengan `Win + Tombol Angka`.  
-  Misalnya, menekan `Win + 1` akan menjalankan aplikasi pertama dari kiri di taskbar.
+- `Win + tombol angka` membuka aplikasi yang disematkan pada posisi tersebut di taskbar atau beralih ke aplikasi itu jika sudah berjalan.
+  Misalnya, `Win + 1` membuka aplikasi paling kiri yang disematkan atau beralih ke aplikasi itu jika sudah berjalan.
 - Anda dapat memindahkan fokus ke ikon taskbar dengan `Win + T`, dan menekan `Win + T` beberapa kali berturut-turut,
   atau menggunakan `←` atau `→` untuk memindahkan pilihan, lalu tekan `Enter` untuk menjalankan aplikasi yang dipilih.
 
@@ -53,20 +55,20 @@ Meskipun ini ditujukan untuk Windows 11, banyak di antaranya yang mungkin juga b
   Bisa juga dengan `Win + R` → `Alt + F4` → `Alt + F4`.
   ![img_20.png](img_20.webp)
 - Anda bisa mematikan dengan `Win + X` → `U` → `U`.
-- Memasukkan `shutdown /s /t 0` di Command Prompt atau "Run" (`Win + R`) akan mematikan komputer. Menambahkan `/f` akan memaksanya mati (force shutdown).
+- Memasukkan `shutdown /s /t 0` di Command Prompt atau "Run" (`Win + R`) akan mematikan komputer. Menambahkan `/f` akan memaksanya mati (force shutdown). Penghentian paksa dapat menghilangkan pekerjaan yang belum disimpan; gunakan hanya bila diperlukan.
 
 ## Memulai Ulang Windows (Restart)
 - Saat desktop ditampilkan dengan `Win + M` atau `Win + D`, atau saat taskbar aktif dengan `Win + T` atau `Win + B`, tekan `Alt + F4`. Dialog berikut akan muncul, tekan `↓` satu kali untuk memilih "Restart", lalu tekan `Enter`.
   Bisa juga dengan `Win + R` → `Alt + F4` → `Alt + F4`.
   ![img_21.png](img_21.webp)
 - Anda bisa memulai ulang dengan `Win + X` → `U` → `R`.
-- Anda bisa memulai ulang dengan `shutdown /r /t 0`. Menambahkan `/f` akan memaksanya memulai ulang (force restart).
+- Anda bisa memulai ulang dengan `shutdown /r /t 0`. Menambahkan `/f` akan memaksanya memulai ulang (force restart). Penghentian paksa dapat menghilangkan pekerjaan yang belum disimpan; gunakan hanya bila diperlukan.
 
 ## Mode Tidur Windows (Sleep)
 - Saat desktop ditampilkan dengan `Win + M` atau `Win + D`, atau saat taskbar aktif dengan `Win + T` atau `Win + B`, tekan `Alt + F4`. Dialog berikut akan muncul, tekan `↑` satu kali untuk memilih "Sleep", lalu tekan `Enter`.
   Bisa juga dengan `Win + R` → `Alt + F4` → `Alt + F4`.
   ![img_23.png](img_23.webp)
-- Anda dapat mengubah ke status hibernasi (Hibernate) dengan memasukkan `rundll32.exe powrprof.dll,SetSuspendState` di `Win + R` atau Command Prompt.
+- Untuk hibernasi, jalankan `shutdown /h` di Command Prompt atau dialog Run (jika hibernasi diaktifkan).
 
 ## Keluar dari Windows (Sign out / Log off)
 - Saat desktop ditampilkan dengan `Win + M` atau `Win + D`, atau saat taskbar aktif dengan `Win + T` atau `Win + B`, tekan `Alt + F4`. Dialog berikut akan muncul, tekan `↑` dua kali untuk memilih "Sign out", lalu tekan `Enter`.
@@ -82,8 +84,8 @@ Meskipun ini ditujukan untuk Windows 11, banyak di antaranya yang mungkin juga b
 - `Win + ↑` : Pindah ke atas / Maksimalkan
 - `Win + ↓` : Pindah ke bawah / Minimalkan
 - `Win + Shift + ← atau →` : Pindah antar monitor ganda
-- `Win + Alt + ← atau → atau ↑ atau ↓` : Memindahkan jendela tanpa memaksimalkan atau meminimalkan
-- Saat tidak diminimalkan, tekan `Alt + Space` lalu `M`, lalu pindahkan menggunakan tombol panah.  
+- `Win + Alt + ↑ atau ↓`: Di Windows 11 pada konfigurasi yang mendukung, pasang jendela aktif ke separuh atas atau bawah layar.
+- Tekan `Alt + Space`, pilih Move pada menu jendela, lalu gunakan tombol panah untuk memindahkannya. Tekan Enter atau klik untuk meletakkannya.
 *Karena jendela akan mengikuti kursor mouse, Anda dapat menyelamatkan jendela meskipun ditampilkan di luar layar.
 
 ## Mengakhiri Proses di Task Manager
@@ -94,14 +96,14 @@ Meskipun ini ditujukan untuk Windows 11, banyak di antaranya yang mungkin juga b
 4. Saat nama proses dipilih, Anda dapat mengakhiri proses tersebut dengan menekan tombol `Delete` lalu `Enter`.
 
 ## Mengakhiri Proses Berdasarkan Nama Menggunakan Perintah
-- Anda dapat mengakhiri proses dengan `taskkill /f /im namaproses`.
-Misalnya, Anda dapat mengakhiri Explorer dengan `taskkill /f /im explorer.exe`.
+- Anda dapat mengakhiri proses dengan `taskkill /f /im namaproses`. Penghentian paksa dapat menghilangkan pekerjaan yang belum disimpan; gunakan hanya bila diperlukan.
+Misalnya, Anda dapat mengakhiri Explorer dengan `taskkill /f /im explorer.exe`. Penghentian paksa dapat menghilangkan pekerjaan yang belum disimpan; gunakan hanya bila diperlukan.
 
 ## Menjalankan Beberapa Program yang Sama dari Ikon Taskbar
 - Jika Anda mengklik kiri sambil menekan tombol `Shift` di taskbar, Anda dapat menjalankan beberapa program yang sama. (Hanya untuk aplikasi yang mendukung multi-instance).
 
 ## Menjalankan Program dengan Hak Administrator
-- Jika Anda meluncurkan program sambil menekan `Ctrl + Shift`, Anda dapat meluncurkan program dengan hak administrator.
+- Tahan `Ctrl + Shift` saat memilih ikon aplikasi di taskbar untuk membukanya sebagai administrator.
 
 ## Membuka File Explorer
 - Anda dapat membuka File Explorer dengan `Win + E`.
@@ -126,9 +128,9 @@ Berikut adalah beberapa perintah yang dapat dijalankan di "Run" atau Command Pro
 ![img_18.png](img_18.webp)
 - Ketik `msedge` lalu tekan `Enter`.
 
-## Membuka Internet Explorer 11 (IE11)
-![img_25.png](img_25.webp)
-- Ketik `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` lalu tekan `Enter`.
+## Membuka situs lama dengan mode Internet Explorer di Edge
+
+Dukungan Internet Explorer 11 berakhir pada 15 Juni 2022. Windows 11 tidak mendukung peluncuran IE secara mandiri. Untuk situs yang memerlukan kompatibilitas, gunakan mode Internet Explorer di Microsoft Edge. Lihat referensi untuk petunjuk penyiapan.
 
 ## Membuka Terminal
 ![img_19.png](img_19.webp)
@@ -141,19 +143,19 @@ Berikut adalah beberapa perintah yang dapat dijalankan di "Run" atau Command Pro
 
 ## Membuka Notepad
 ![img_4.png](img_4.webp)
-- Ketik `notepad` lalu tekan `Enter`.  
+- Ketik `notepad` lalu tekan `Enter`.
 
 ## Membuka Kalkulator
 ![img_5.png](img_5.webp)
 - Ketik `calc` lalu tekan `Enter`.
 
-## Membuka [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/)
+## Membuka Paint
 ![img_6.png](img_6.webp)
-- Ketik `mspaint` lalu tekan `Enter`.  
+- Ketik `mspaint` lalu tekan `Enter`.
 
 ## Membuka PowerShell
 ![img_7.png](img_7.webp)
-- Ketik `powershell` lalu tekan `Enter`.  
+- Ketik `powershell` lalu tekan `Enter`.
 
 ## Membuka Visual Studio Code
 ![img_8.png](img_8.webp)
@@ -161,22 +163,22 @@ Berikut adalah beberapa perintah yang dapat dijalankan di "Run" atau Command Pro
 
 ## Membuka Excel
 ![img_9.png](img_9.webp)
-- Ketik `excel` lalu tekan `Enter`.  
+- Ketik `excel` lalu tekan `Enter`.
 *Hanya jika Excel sudah terinstal.
 
 ## Membuka Word
 ![img_10.png](img_10.webp)
-- Ketik `winword` lalu tekan `Enter`.  
+- Ketik `winword` lalu tekan `Enter`.
 *Hanya jika Word sudah terinstal.
 
 ## Membuka PowerPoint
 ![img_11.png](img_11.webp)
-- Ketik `powerpnt` lalu tekan `Enter`.  
+- Ketik `powerpnt` lalu tekan `Enter`.
   *Hanya jika PowerPoint sudah terinstal.
 
 ## Membuka Konfigurasi Sistem (System Configuration)
 ![img_1.png](img_1.webp)
-- Ketik `msconfig` lalu tekan `Enter`.  
+- Ketik `msconfig` lalu tekan `Enter`.
 
 ## Membuka Properti Sistem (System Properties)
 ![img_2.png](img_2.webp)
@@ -190,9 +192,9 @@ Berikut adalah beberapa perintah yang dapat dijalankan di "Run" atau Command Pro
 ![img_14.png](img_14.webp)
 - Ketik `osk` lalu tekan `Enter`.
 
-## Membuka WordPad
-![img_12.png](img_12.webp)
-- Ketik `wordpad` atau `write` lalu tekan `Enter`.
+## Menggunakan WordPad (hanya Windows versi lama)
+
+WordPad tidak disertakan di Windows 11 versi 24H2 atau yang lebih baru. Di Windows versi lama, jalankan `wordpad` atau `write`. Gunakan Notepad untuk teks biasa dan Microsoft Word atau editor kompatibel untuk RTF.
 
 ## Membuka Registry Editor
 ![img_13.png](img_13.webp)
@@ -217,6 +219,8 @@ Berikut adalah beberapa perintah yang dapat dijalankan di "Run" atau Command Pro
 
 ## Menyalin Teks dari Kotak Pesan Standar
 ![img_26.png](img_26.webp)
+
+Tangkapan layar ini menampilkan WordPad dari Windows sebelum Windows 11 versi 24H2.
 - Anda dapat menyalin teks dari kotak pesan standar dengan `Ctrl + C`.
 Menyalin kotak pesan di atas akan menyalin hal berikut ke papan klip.
 ```
@@ -289,4 +293,9 @@ C:.
 ```
 
 ## Referensi
-- [Pintasan keyboard di Windows](https://support.microsoft.com/id-id/windows/pintasan-keyboard-di-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
+
+- [Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)
+- [Use Snipping Tool to capture screenshots](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots.)
+- [Internet Explorer mode in Microsoft Edge](https://support.microsoft.com/en-us/edge/internet-explorer-mode-in-microsoft-edge)
+- [Resources for deprecated features in the Windows client](https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features-resources)
+- [Hibernate a Windows device](https://learn.microsoft.com/en-us/windows/configuration/unified-write-filter/hibernate-once-resume-many-horm)

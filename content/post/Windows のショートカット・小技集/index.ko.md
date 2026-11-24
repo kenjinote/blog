@@ -4,9 +4,9 @@
 
 
 title: '[Windows 11/10] 작업 효율이 극적으로 오르는 유용한 단축키·팁 모음'
-date: "2026-09-24T19:44:38+09:00"
+date: "2022-09-18T23:49:29+09:00"
+lastmod: "2026-11-25"
 slug: "Windows の바로 가기・팁集"
-date: 2022-09-18T23:49:29+09:00
 tags: ["Windows","팁","단축키"]
 draft: false
 image: "img.webp"
@@ -19,6 +19,8 @@ description: 'Windows 11 및 Windows 10에서 작업 효율을 높여주는 유�
 
 Windows에서 평소 사용하는 소소한 팁 모음입니다. Windows를 처음 사용하시는 분들이 읽어주시면 좋겠습니다.
 Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 수 있을 것입니다.
+
+일부 단축키와 화면은 Windows 버전, 설정, 키보드에 따라 다를 수 있습니다.
 
 ## 창 닫기
 - 창이 활성화된 상태에서 `Alt + F4`
@@ -38,13 +40,13 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 
 ## 범위를 선택하여 화면 캡처
 - `Win + Shift + S`로 범위를 선택하여 화면을 캡처할 수 있습니다.
-- `Win + Print Screen` 또는 단순히 `Print Screen`으로 전체 화면을 캡처할 수 있습니다.
-(`Win`을 붙인 경우에는 `C:\Users\사용자이름\Pictures\Screenshots`에 캡처 이미지가 출력됩니다.)
-- `Alt + Print Screen`으로 현재 창을 캡처할 수 있습니다.
+- `Win + Print Screen`은 전체 화면을 캡처해 Pictures\Screenshots 폴더에 저장합니다.
+- 기본 설정에서 `Print Screen`은 화면 캡처를 엽니다. 이 설정을 끄면 전체 화면이 클립보드에 복사됩니다.
+- `Alt + Print Screen`은 활성 창을 클립보드에 복사합니다.
 
 ## 작업 표시줄에 등록된 앱 실행
-- `Win + 숫자 키`로 작업 표시줄에 등록된 앱을 실행할 수 있습니다.  
-  예를 들어 `Win + 1`을 누르면 작업 표시줄의 가장 왼쪽 앱이 실행됩니다.
+- `Win + 숫자 키`를 누르면 작업 표시줄의 해당 위치에 고정된 앱을 열거나 이미 실행 중인 앱으로 전환합니다.
+  예를 들어 `Win + 1`은 가장 왼쪽에 고정된 앱을 열거나 이미 실행 중이면 해당 앱으로 전환합니다.
 - `Win + T`로 작업 표시줄 아이콘으로 포커스를 이동할 수 있으며, 이어서 여러 번 `Win + T`를 누르거나,
   `←` 또는 `→`로 선택을 이동시키고 `Enter` 키로 선택된 앱을 실행할 수 있습니다.
 
@@ -61,20 +63,20 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
   `Win + R` → `Alt + F4` → `Alt + F4`도 가능.
   ![img_20.png](img_20.webp)
 - `Win + X` → `U` → `U`로 종료할 수 있습니다.
-- 명령 프롬프트나 `Win + R`의 "실행"에서 `shutdown /s /t 0`을 입력하면 종료할 수 있습니다. 추가로 `/f`를 붙이면 강제 종료가 됩니다.
+- 명령 프롬프트나 `Win + R`의 "실행"에서 `shutdown /s /t 0`을 입력하면 종료할 수 있습니다. 추가로 `/f`를 붙이면 강제 종료가 됩니다. 강제 종료하면 저장하지 않은 작업이 사라질 수 있으므로 필요한 경우에만 사용하세요.
 
 ## Windows 다시 시작
 - `Win + M`이나 `Win + D`로 바탕 화면을 표시한 상태 또는 `Win + T`나 `Win + B`로 작업 표시줄이 활성화된 상태에서 `Alt + F4`를 누르면 아래와 같은 대화 상자가 표시되므로 1번 `↓`를 눌러 "다시 시작"을 선택하고 `Enter`
  　`Win + R` → `Alt + F4` → `Alt + F4`도 가능.
   ![img_21.png](img_21.webp)
 - `Win + X` → `U` → `R`로 다시 시작할 수 있습니다.
-- `shutdown /r /t 0`으로 다시 시작할 수 있습니다. 추가로 `/f`를 붙이면 강제 다시 시작이 됩니다.
+- `shutdown /r /t 0`으로 다시 시작할 수 있습니다. 추가로 `/f`를 붙이면 강제 다시 시작이 됩니다. 강제 종료하면 저장하지 않은 작업이 사라질 수 있으므로 필요한 경우에만 사용하세요.
 
 ## Windows 절전 모드
 - `Win + M`이나 `Win + D`로 바탕 화면을 표시한 상태 또는 `Win + T`나 `Win + B`로 작업 표시줄이 활성화된 상태에서 `Alt + F4`를 누르면 아래와 같은 대화 상자가 표시되므로 1번 `↑`를 눌러 "절전"을 선택하고 `Enter`
   `Win + R` → `Alt + F4` → `Alt + F4`도 가능.
   ![img_23.png](img_23.webp)
-- `Win + R` → 또는 명령 프롬프트에서 `rundll32.exe powrprof.dll,SetSuspendState`를 입력하면 최대 절전 모드로 전환할 수 있습니다.
+- 최대 절전 모드를 시작하려면 명령 프롬프트나 실행 대화 상자에서 `shutdown /h`를 실행합니다(최대 절전 모드가 켜져 있어야 합니다).
 
 ## Windows 로그아웃
 - `Win + M`이나 `Win + D`로 바탕 화면을 표시한 상태 또는 `Win + T`나 `Win + B`로 작업 표시줄이 활성화된 상태에서 `Alt + F4`를 누르면 아래와 같은 대화 상자가 표시되므로 2번 `↑`를 눌러 "로그아웃"을 선택하고 `Enter`
@@ -90,8 +92,8 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 - `Win + ↑` : 위로 이동/최대화
 - `Win + ↓` : 아래로 이동/최소화
 - `Win + Shift + ← or →` : 멀티 모니터 간 이동
-- `Win + Alt + ← or → or ↑ or ↓` : 최대화·최소화하지 않고 창 이동
-- 최소화되지 않은 상태에서 `Alt + Space` 후에 `M` 그 후, 화살표 키로 이동.  
+- `Win + Alt + ↑ 또는 ↓`: 지원되는 Windows 11 환경에서 활성 창을 화면 위쪽 또는 아래쪽 절반에 맞춥니다.
+- `Alt + Space`를 눌러 창 메뉴를 열고 Move를 선택한 다음 화살표 키로 창을 이동합니다. Enter 키를 누르거나 클릭해 배치합니다.
 ※ 마우스 커서에 창이 따라오는 상태가 되므로, 화면 밖으로 창이 표시된 상태에서도 구출할 수 있습니다.
 
 ## 작업 관리자에서 프로세스 종료
@@ -102,14 +104,14 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 4. 프로세스 이름이 선택된 상태에서 `Delete` 키, 이어서 `Enter` 키를 누르면 프로세스를 종료할 수 있습니다.
 
 ## 명령어로 프로세스 이름을 지정하여 종료
-- `taskkill /f /im 프로세스이름`으로 프로세스를 종료할 수 있습니다.
-예를 들어, `taskkill /f /im explorer.exe`로 파일 탐색기를 종료할 수 있습니다.
+- `taskkill /f /im 프로세스이름`으로 프로세스를 종료할 수 있습니다. 강제 종료하면 저장하지 않은 작업이 사라질 수 있으므로 필요한 경우에만 사용하세요.
+예를 들어, `taskkill /f /im explorer.exe`로 파일 탐색기를 종료할 수 있습니다. 강제 종료하면 저장하지 않은 작업이 사라질 수 있으므로 필요한 경우에만 사용하세요.
 
 ## 작업 표시줄의 아이콘에서 같은 프로그램 여러 개 실행
 - 작업 표시줄에서 `Shift` 키를 누른 채로 마우스 왼쪽 클릭을 하면, 여러 개의 같은 프로그램을 실행할 수 있습니다. (다중 실행을 지원하는 앱만)
 
 ## 관리자 권한으로 프로그램 실행
-- `Ctrl + Shift`를 누른 채로 프로그램을 실행하면 관리자 권한으로 프로그램을 실행할 수 있습니다.
+- 작업 표시줄에서 앱 아이콘을 선택할 때 `Ctrl + Shift`를 누르고 있으면 관리자 권한으로 실행됩니다.
 
 ## 파일 탐색기 실행
 - `Win + E`로 파일 탐색기를 실행할 수 있습니다.
@@ -134,9 +136,9 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 ![img_18.png](img_18.webp)
 - `msedge`를 입력하고 `Enter`
 
-## Internet Explorer 11(IE11) 열기
-![img_25.png](img_25.webp)
-- `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"`를 입력하고 `Enter`
+## Edge의 Internet Explorer 모드로 레거시 사이트 열기
+
+Internet Explorer 11 지원은 2022년 6월 15일에 종료되었습니다. Windows 11에서는 독립 실행형 IE를 시작할 수 없습니다. 호환성이 필요한 사이트에 한해 Microsoft Edge의 Internet Explorer 모드를 사용하세요. 설정 방법은 참고 자료를 확인하세요.
 
 ## 터미널 열기
 ![img_19.png](img_19.webp)
@@ -149,7 +151,7 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 
 ## 메모장 실행
 ![img_4.png](img_4.webp)
-- `notepad`를 입력하고 `Enter`  
+- `notepad`를 입력하고 `Enter`
 
 ## 계산기 실행
 ![img_5.png](img_5.webp)
@@ -157,11 +159,11 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 
 ## 그림판 실행
 ![img_6.png](img_6.webp)
-- `mspaint`를 입력하고 `Enter`  
+- `mspaint`를 입력하고 `Enter`
 
 ## PowerShell 실행
 ![img_7.png](img_7.webp)
-- `powershell`을 입력하고 `Enter`  
+- `powershell`을 입력하고 `Enter`
 
 ## Visual Studio Code 실행
 ![img_8.png](img_8.webp)
@@ -169,22 +171,22 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 
 ## Excel 실행
 ![img_9.png](img_9.webp)
-- `excel`을 입력하고 `Enter`  
+- `excel`을 입력하고 `Enter`
 ※ Excel이 설치되어 있는 경우에만.
 
 ## Word 열기
 ![img_10.png](img_10.webp)
-- `winword`를 입력하고 `Enter`  
+- `winword`를 입력하고 `Enter`
 ※ Word가 설치되어 있는 경우에만.
 
 ## PowerPoint 열기
 ![img_11.png](img_11.webp)
-- `powerpnt`를 입력하고 `Enter`  
+- `powerpnt`를 입력하고 `Enter`
   ※ PowerPoint가 설치되어 있는 경우에만.
 
 ## 시스템 구성 열기
 ![img_1.png](img_1.webp)
-- `msconfig`를 입력하고 `Enter`  
+- `msconfig`를 입력하고 `Enter`
 
 ## 시스템 속성 열기
 ![img_2.png](img_2.webp)
@@ -225,6 +227,8 @@ Windows 11을 가정하고 있지만, 대부분 Windows 10에서도 사용할 �
 
 ## 표준 메시지 상자의 문자열 복사
 ![img_26.png](img_26.webp)
+
+이 화면 예시는 Windows 11 버전 24H2 이전의 WordPad입니다.
 - `Ctrl + C`로 표준 메시지 상자의 문자열을 복사할 수 있습니다.
 위의 메시지 상자를 복사하면 아래 내용이 클립보드에 복사됩니다.
 ```
@@ -296,5 +300,10 @@ C:.
 (이하 생략)
 ```
 
-## 참고
-- [Windows 키보드 단축키](https://support.microsoft.com/ko-kr/windows/windows%EC%9D%98-%ED%82%A4%EB%B3%B4%EB%93%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
+## 참고 자료
+
+- [Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)
+- [Use Snipping Tool to capture screenshots](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots.)
+- [Internet Explorer mode in Microsoft Edge](https://support.microsoft.com/en-us/edge/internet-explorer-mode-in-microsoft-edge)
+- [Resources for deprecated features in the Windows client](https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features-resources)
+- [Hibernate a Windows device](https://learn.microsoft.com/en-us/windows/configuration/unified-write-filter/hibernate-once-resume-many-horm)

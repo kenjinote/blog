@@ -3,9 +3,9 @@
 
 
 title: '[Windows 11/10] Colección de teclas de acceso rápido y trucos que mejoran drásticamente la eficiencia del trabajo'
-date: "2026-09-24T19:44:38+09:00"
+date: "2022-09-18T23:49:29+09:00"
+lastmod: "2026-11-25"
 slug: "Windows のAtajo・Truco集"
-date: 2022-09-18T23:49:29+09:00
 tags: ["Windows", "Trucos", "Atajos"]
 draft: false
 image: "img.webp"
@@ -17,6 +17,8 @@ description: 'Una cuidadosa selección de teclas de acceso rápido y trucos úti
 
 Aquí hay una pequeña colección de trucos que uso habitualmente en Windows. Espero que aquellos que acaban de empezar a usar Windows lo encuentren útil.
 Se asume el uso de Windows 11, pero creo que la mayoría también funcionan en Windows 10.
+
+Algunos atajos y pantallas varían según la versión de Windows, la configuración y el teclado.
 
 ## Cerrar ventana
 - `Alt + F4` con la ventana activa
@@ -36,13 +38,13 @@ Se asume el uso de Windows 11, pero creo que la mayoría también funcionan en W
 
 ## Capturar una parte de la pantalla
 - Con `Win + Shift + S` puedes seleccionar un área para capturar la pantalla.
-- Con `Win + Print Screen` o simplemente `Print Screen` puedes capturar la pantalla completa.
-(Si agregas `Win`, la imagen capturada se guardará en `C:\Users\nombre_de_usuario\Pictures\Screenshots`.)
-- Con `Alt + Print Screen` puedes capturar la ventana actual.
+- `Win + Print Screen` captura toda la pantalla y la guarda en Pictures\Screenshots.
+- De forma predeterminada, `Print Screen` abre el recorte de pantalla. Si desactivas esta opción, copia toda la pantalla al portapapeles.
+- `Alt + Print Screen` copia la ventana activa al portapapeles.
 
 ## Iniciar aplicaciones ancladas a la barra de tareas
-- Puedes iniciar aplicaciones ancladas a la barra de tareas con `Win + número`.
-  Por ejemplo, al presionar `Win + 1` se inicia la primera aplicación a la izquierda en la barra de tareas.
+- `Win + una tecla numérica` abre la aplicación anclada en esa posición de la barra de tareas o cambia a ella si ya está abierta.
+  Por ejemplo, `Win + 1` abre la aplicación anclada más a la izquierda o cambia a ella si ya está abierta.
 - Con `Win + T` puedes enfocar los iconos de la barra de tareas, y si presionas `Win + T` varias veces,
   o `←` o `→`, puedes mover la selección y presionar la tecla `Enter` para iniciar la aplicación seleccionada.
 
@@ -59,20 +61,20 @@ Se asume el uso de Windows 11, pero creo que la mayoría también funcionan en W
   También puedes usar `Win + R` → `Alt + F4` → `Alt + F4`.
   ![img_20.png](img_20.webp)
 - Puedes apagar con `Win + X` → `U` → `U`.
-- En el símbolo del sistema o en "Ejecutar" (`Win + R`), escribe `shutdown /s /t 0` para apagar. Si agregas `/f`, se forzará el apagado.
+- En el símbolo del sistema o en "Ejecutar" (`Win + R`), escribe `shutdown /s /t 0` para apagar. Si agregas `/f`, se forzará el apagado. El cierre forzado puede descartar trabajo sin guardar; úsalo solo cuando sea necesario.
 
 ## Reiniciar Windows
 - Si presionas `Alt + F4` estando en el escritorio (usando `Win + M` o `Win + D`) o con la barra de tareas activa (usando `Win + T` o `Win + B`), aparecerá un cuadro de diálogo como el siguiente. Presiona `↓` una vez para seleccionar "Reiniciar" y luego `Enter`.
   También puedes usar `Win + R` → `Alt + F4` → `Alt + F4`.
   ![img_21.png](img_21.webp)
 - Puedes reiniciar con `Win + X` → `U` → `R`.
-- Puedes reiniciar con `shutdown /r /t 0`. Si agregas `/f`, se forzará el reinicio.
+- Puedes reiniciar con `shutdown /r /t 0`. Si agregas `/f`, se forzará el reinicio. El cierre forzado puede descartar trabajo sin guardar; úsalo solo cuando sea necesario.
 
 ## Suspender Windows
 - Si presionas `Alt + F4` estando en el escritorio (usando `Win + M` o `Win + D`) o con la barra de tareas activa (usando `Win + T` o `Win + B`), aparecerá un cuadro de diálogo como el siguiente. Presiona `↑` una vez para seleccionar "Suspender" y luego `Enter`.
   También puedes usar `Win + R` → `Alt + F4` → `Alt + F4`.
   ![img_23.png](img_23.webp)
-- Puedes hibernar escribiendo `rundll32.exe powrprof.dll,SetSuspendState` en `Win + R` o en el símbolo del sistema.
+- Para hibernar, ejecuta `shutdown /h` en el Símbolo del sistema o en Ejecutar (si la hibernación está habilitada).
 
 ## Cerrar sesión de Windows
 - Si presionas `Alt + F4` estando en el escritorio (usando `Win + M` o `Win + D`) o con la barra de tareas activa (usando `Win + T` o `Win + B`), aparecerá un cuadro de diálogo como el siguiente. Presiona `↑` dos veces para seleccionar "Cerrar sesión" y luego `Enter`.
@@ -88,8 +90,8 @@ Se asume el uso de Windows 11, pero creo que la mayoría también funcionan en W
 - `Win + ↑` : Mover hacia arriba / Maximizar
 - `Win + ↓` : Mover hacia abajo / Minimizar
 - `Win + Shift + ← o →` : Mover entre monitores múltiples
-- `Win + Alt + ← o → o ↑ o ↓` : Mover la ventana sin maximizar/minimizar
-- Cuando no está minimizada, presiona `Alt + Espacio`, luego `M` y usa las teclas de flecha para mover.
+- `Win + Alt + ↑ o ↓`: En Windows 11 y configuraciones compatibles, ajusta la ventana activa a la mitad superior o inferior.
+- Pulsa `Alt + Space`, elige Move en el menú de la ventana y usa las flechas para moverla. Pulsa Enter o haz clic para colocarla.
 ※ Como la ventana sigue al cursor del ratón, puedes recuperarla incluso si está fuera de la pantalla.
 
 ## Finalizar un proceso en el Administrador de tareas
@@ -100,14 +102,14 @@ Se asume el uso de Windows 11, pero creo que la mayoría también funcionan en W
 4. Con el nombre del proceso seleccionado, presiona la tecla `Delete` y luego `Enter` para finalizar el proceso.
 
 ## Finalizar un proceso especificando su nombre con un comando
-- Puedes finalizar un proceso con `taskkill /f /im nombre_del_proceso`.
-Por ejemplo, `taskkill /f /im explorer.exe` finalizará el explorador.
+- Puedes finalizar un proceso con `taskkill /f /im nombre_del_proceso`. El cierre forzado puede descartar trabajo sin guardar; úsalo solo cuando sea necesario.
+Por ejemplo, `taskkill /f /im explorer.exe` finalizará el explorador. El cierre forzado puede descartar trabajo sin guardar; úsalo solo cuando sea necesario.
 
 ## Iniciar múltiples instancias del mismo programa desde el icono de la barra de tareas
 - Al hacer clic izquierdo mientras mantienes presionada la tecla `Shift` en la barra de tareas, puedes iniciar múltiples instancias del mismo programa. (Solo aplicaciones que admiten instancias múltiples).
 
 ## Iniciar un programa con privilegios de administrador
-- Al iniciar un programa mientras mantienes presionado `Ctrl + Shift`, puedes iniciarlo con privilegios de administrador.
+- Mantén pulsadas `Ctrl + Shift` mientras seleccionas el icono de una aplicación en la barra de tareas para abrirla como administrador.
 
 ## Iniciar el Explorador
 - Puedes iniciar el Explorador con `Win + E`.
@@ -132,9 +134,9 @@ A continuación, se presentan algunos comandos que puedes ejecutar en "Ejecutar"
 ![img_18.png](img_18.webp)
 - Escribe `msedge` y presiona `Enter`
 
-## Abrir Internet Explorer 11 (IE11)
-![img_25.png](img_25.webp)
-- Escribe `powershell.exe -Command "(New-Object -ComObject InternetExplorer.Application).Visible = $true"` y presiona `Enter`
+## Abrir sitios antiguos con el modo Internet Explorer de Edge
+
+El soporte para Internet Explorer 11 terminó el 15 de junio de 2022. Windows 11 no permite iniciar IE como navegador independiente. Para sitios que necesiten compatibilidad, usa el modo Internet Explorer de Microsoft Edge. Consulta las referencias para configurarlo.
 
 ## Abrir Terminal
 ![img_19.png](img_19.webp)
@@ -153,7 +155,7 @@ A continuación, se presentan algunos comandos que puedes ejecutar en "Ejecutar"
 ![img_5.png](img_5.webp)
 - Escribe `calc` y presiona `Enter`
 
-## Iniciar [Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/)
+## Iniciar Paint
 ![img_6.png](img_6.webp)
 - Escribe `mspaint` y presiona `Enter`
 
@@ -196,9 +198,9 @@ A continuación, se presentan algunos comandos que puedes ejecutar en "Ejecutar"
 ![img_14.png](img_14.webp)
 - Escribe `osk` y presiona `Enter`
 
-## Abrir WordPad
-![img_12.png](img_12.webp)
-- Escribe `wordpad` o `write` y presiona `Enter`
+## Usar WordPad (solo en versiones anteriores de Windows)
+
+WordPad no está incluido en Windows 11 versión 24H2 ni posteriores. En versiones anteriores, ejecuta `wordpad` o `write`. Usa Bloc de notas para texto sin formato y Microsoft Word u otro editor compatible para RTF.
 
 ## Abrir el Editor del Registro
 ![img_13.png](img_13.webp)
@@ -223,6 +225,8 @@ A continuación, se presentan algunos comandos que puedes ejecutar en "Ejecutar"
 
 ## Copiar texto del cuadro de mensaje estándar
 ![img_26.png](img_26.webp)
+
+Esta captura muestra WordPad de una versión anterior a Windows 11 versión 24H2.
 - Puedes copiar el texto de un cuadro de mensaje estándar con `Ctrl + C`.
 Al copiar el cuadro de mensaje anterior, se copiará lo siguiente en el portapapeles.
 ```
@@ -295,4 +299,9 @@ C:.
 ```
 
 ## Referencias
-- [Métodos abreviados de teclado de Windows](https://support.microsoft.com/es-es/windows/m%C3%A9todos-abreviados-de-teclado-de-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
+
+- [Windows keyboard shortcuts](https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows)
+- [Use Snipping Tool to capture screenshots](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots.)
+- [Internet Explorer mode in Microsoft Edge](https://support.microsoft.com/en-us/edge/internet-explorer-mode-in-microsoft-edge)
+- [Resources for deprecated features in the Windows client](https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features-resources)
+- [Hibernate a Windows device](https://learn.microsoft.com/en-us/windows/configuration/unified-write-filter/hibernate-once-resume-many-horm)
