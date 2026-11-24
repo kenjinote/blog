@@ -1,48 +1,52 @@
 ---
 title: 'مقدمة في لغة Rust: كيفية البدء من الميزات إلى التثبيت وبرنامج Hello World'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Rustのはじめかた"
-date: 2022-09-06T00:12:36+09:00
+date: "2022-09-06T00:12:36+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["programming"]
 description: 'نشرح للمبتدئين كيفية البدء مع لغة البرمجة Rust السريعة والآمنة للذاكرة. نغطي بشكل شامل الميزات اللغوية، وطرق التثبيت، وخطوات تشغيل البرنامج الأول "Hello World"، وصولاً إلى المستندات اليابانية الموصى بها.'
 ---
+
 # مقدمة
-[Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) هي لغة برمجة حديثة نسبيًا تتيح لك كتابة وحدات سريعة وفعالة في استخدام الذاكرة باستخدام بناء جملة حديث.
-إنها تدعم منصات متعددة وتُستخدم في [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/) والأنظمة المدمجة.
-ومن الجدير بالذكر أنها معتمدة من قبل Firefox و DropBox و Cloudflare.
 
-تحظى باهتمام أيضًا كبديل لـ C++.
+Rust لغة برمجة للأنظمة تركّز على سلامة الذاكرة والأداء والتزامن. صدر Rust 1.0 عام 2015. تتداخل بعض استخداماتها مع C++، لكن لا تحل أي منهما محل الأخرى في جميع الحالات.
 
-# طريقة التثبيت
+# التثبيت
 
-[تثبيت Rust](https://www.rust-lang.org/tools/install)
+استخدم `rustup` لتثبيت سلاسل أدوات Rust وإدارتها؛ فهو يثبت الإصدار المستقر افتراضياً. اتبع التعليمات المناسبة لنظام التشغيل في [صفحة تثبيت Rust الرسمية](https://www.rust-lang.org/tools/install).
 
-تتوفر تعليمات التثبيت لكل منصة على الموقع أعلاه.
+# Hello World
 
-# أول برنامج لك
+أنشئ مشروعاً تنفيذياً باستخدام `cargo new`، ثم ضع هذا الرمز في `src/main.rs`. يبني `cargo run` البرنامج ويشغّله.
 
-احفظ البرنامج التالي باسم `main.rs`.
-
+```bash
+cargo new hello_world
+cd hello_world
+cargo run
 ```
+
+```rust
 fn main() {
     println!("Hello, world!");
 }
 ```
 
-عند تشغيل `rustc main.rs` من موجه الأوامر أو الجهاز الطرفي،
-سيتم تجميعه، وعند تشغيل `./main` (أو `main.exe` في نظام Windows) سيطبع `Hello, world!`.
+# الوثائق
 
-# الوثائق اليابانية
+[The Rust Programming Language](https://doc.rust-lang.org/book/)
 
-[The Rust Programming Language النسخة اليابانية](https://doc.rust-jp.rs/book-ja/)
+[Rust by Example](https://doc.rust-lang.org/rust-by-example/)
 
-جميع الشروحات اللازمة لتعلم [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) مجمعة في الرابط أعلاه (النسخة المترجمة لليابانية).
-إنها شاملة لدرجة أنك لن تحتاج إلى شراء كتاب عن [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/).
+# التجربة عبر الويب
 
-# إذا كنت تريد تجربتها على الويب
+للتجربة من دون تثبيت مترجم، استخدم [Rust Playground](https://play.rust-lang.org/).
 
-إذا كنت ترغب في تجربتها على الويب دون تثبيت المترجم، فيمكنك استخدام [The Rust Playground](https://play.rust-lang.org/).
-أدخل الكود واضغط على زر "التشغيل" ليتم تجميعه وتشغيله على الويب.
+## المراجع
+
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
+- [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
+- [The Cargo Book: Installation](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)

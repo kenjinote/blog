@@ -1,48 +1,52 @@
 ---
 title: 'Pengenalan Bahasa Rust: Cara Memulai, dari Fitur hingga Instalasi dan Hello World'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Rustのはじめかた"
-date: 2022-09-06T00:12:36+09:00
+date: "2022-09-06T00:12:36+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["programming"]
 description: 'Menjelaskan cara memulai bahasa pemrograman Rust yang cepat dan aman memori untuk pemula. Kami memperkenalkannya secara komprehensif, dari fitur bahasa dan metode instalasi, hingga prosedur menjalankan program pertama yaitu Hello World, dan rekomendasi dokumentasi berbahasa Jepang.'
 ---
-# Pengantar
-[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) adalah bahasa pemrograman yang relatif baru yang memungkinkan Anda menulis modul yang cepat dan efisien dalam penggunaan memori dengan sintaksis modern.
-Bahasa ini mendukung multi-platform dan juga digunakan di dunia [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/) dan sistem tertanam (embedded).
-Selain itu, bahasa ini digunakan oleh perusahaan terkenal seperti Firefox, DropBox, dan Cloudflare.
 
-[Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) juga menarik perhatian sebagai alternatif dari C++.
+# Pendahuluan
 
-# Cara Menginstal
+Rust adalah bahasa pemrograman sistem yang berfokus pada keamanan memori, kinerja, dan konkurensi. Rust 1.0 dirilis pada 2015. Beberapa penggunaannya tumpang tindih dengan C++, tetapi tidak satu pun menggantikan yang lain untuk semua kebutuhan.
 
-[Instal Rust](https://www.rust-lang.org/tools/install)
+# Instalasi
 
-Instruksi instalasi untuk setiap platform tersedia di situs di atas.
+Gunakan `rustup` untuk memasang dan mengelola toolchain Rust; secara default, toolchain stabil akan dipasang. Ikuti petunjuk untuk sistem operasi Anda di [halaman instalasi resmi Rust](https://www.rust-lang.org/tools/install).
 
-# Program Pertama Anda
+# Hello World
 
-Simpan program berikut sebagai `main.rs`.
+Buat proyek biner dengan `cargo new`, lalu masukkan kode ini ke `src/main.rs`. `cargo run` akan membangun dan menjalankannya.
 
+```bash
+cargo new hello_world
+cd hello_world
+cargo run
 ```
+
+```rust
 fn main() {
     println!("Hello, world!");
 }
 ```
 
-Jika Anda menjalankan `rustc main.rs` dari command prompt atau terminal,
-itu akan dikompilasi, dan menjalankan `./main` (untuk Windows `main.exe`) akan menghasilkan `Hello, world!`.
+# Dokumentasi
 
-# Dokumentasi (Bahasa Jepang)
+[The Rust Programming Language](https://doc.rust-lang.org/book/)
 
-[The Rust Programming Language Versi Jepang](https://doc.rust-jp.rs/book-ja/)
+[Rust by Example](https://doc.rust-lang.org/rust-by-example/)
 
-Semua penjelasan yang diperlukan untuk mempelajari [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) telah dirangkum di tautan di atas (versi terjemahan bahasa Jepang).
-Itu sangat lengkap sehingga Anda tidak perlu membeli buku teks tentang [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/).
+# Coba di Web
 
-# Jika Anda Ingin Mencobanya di Web
+Untuk mencoba tanpa memasang compiler, gunakan [Rust Playground](https://play.rust-lang.org/).
 
-Jika Anda ingin mencoba menjalankannya di web tanpa menginstal kompiler, Anda dapat menggunakan [The Rust Playground](https://play.rust-lang.org/).
-Masukkan kode Anda dan tekan tombol "Jalankan", lalu kode akan dikompilasi dan dijalankan di web.
+## Referensi
+
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
+- [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
+- [The Cargo Book: Installation](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)

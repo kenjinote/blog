@@ -1,47 +1,52 @@
 ---
 title: 'Introduction au langage Rust : De ses caractéristiques à l''installation et comment démarrer jusqu''à Hello World'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Rustのはじめかた"
-date: 2022-09-06T00:12:36+09:00
+date: "2022-09-06T00:12:36+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["programming"]
 description: 'Explique pour les débutants comment démarrer avec Rust, un langage de programmation rapide et à mémoire sécurisée. De la caractérisation du langage et de la méthode d''installation, aux étapes d''exécution du premier programme Hello World et des documents recommandés en japonais, une présentation complète.'
 ---
+
 # Introduction
-[Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) est un langage de programmation relativement nouveau qui vous permet d'écrire des modules rapides et économes en mémoire avec une syntaxe moderne.
-Il prend en charge le multiplateforme et est également utilisé dans le monde du [WebAssembly](https://kenji.blog/fr/p/webassembly-wasm-current-future/) et des systèmes embarqués.
-Il a notamment été adopté par Firefox, DropBox et Cloudflare.
 
-Il attire également l'attention en tant qu'alternative au C++.
+Rust est un langage de programmation système axé sur la sécurité mémoire, les performances et la concurrence. Rust 1.0 est sorti en 2015. Certains usages recoupent ceux du C++, mais aucun des deux langages ne remplace l’autre dans tous les contextes.
 
-# Comment installer
+# Installation
 
-[Installer Rust](https://www.rust-lang.org/ja/tools/install)
+Utilisez `rustup` pour installer et gérer les toolchains Rust ; la toolchain stable est installée par défaut. Suivez les instructions correspondant à votre système sur la [page officielle d’installation de Rust](https://www.rust-lang.org/tools/install).
 
-Le site ci-dessus fournit des instructions d'installation pour chaque plateforme.
+# Hello World
 
-# Premier programme
+Créez un projet binaire avec `cargo new`, puis placez ce code dans `src/main.rs`. `cargo run` le compile et l’exécute.
 
-Enregistrez le programme suivant sous le nom `main.rs`.
-
+```bash
+cargo new hello_world
+cd hello_world
+cargo run
 ```
+
+```rust
 fn main() {
     println!("Hello, world!");
 }
 ```
 
-En exécutant `rustc main.rs` depuis l'invite de commande ou le terminal, il sera compilé. L'exécution de `./main` (`main.exe` sous Windows) affichera `Hello, world!`.
+# Documentation
 
-# Documentation en japonais
+[The Rust Programming Language](https://doc.rust-lang.org/book/)
 
-[The Rust Programming Language Édition japonaise](https://doc.rust-jp.rs/book-ja/)
+[Rust by Example](https://doc.rust-lang.org/rust-by-example/)
 
-Les explications nécessaires pour apprendre [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) sont compilées dans le lien ci-dessus (version traduite en japonais).
-Elle est si complète que vous n'avez pas besoin d'acheter un livre sur [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/).
+# Essayer sur le Web
 
-# Si vous voulez l'essayer sur le Web
+Pour essayer Rust sans installer de compilateur, utilisez le [Rust Playground](https://play.rust-lang.org/).
 
-Si vous voulez l'essayer sur le Web sans installer le compilateur, vous pouvez utiliser [The Rust Playground](https://play.rust-lang.org/).
-Après avoir entré le code et cliqué sur le bouton "Run", il sera compilé et exécuté sur le Web.
+## Références
+
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
+- [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
+- [The Cargo Book: Installation](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)

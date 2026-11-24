@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "batch": 172,
+  "article": "Getting started with Rust",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+  "sources": [
+    "https://www.rust-lang.org/tools/install",
+    "https://doc.rust-lang.org/book/",
+    "https://doc.rust-lang.org/cargo/getting-started/installation.html",
+    "https://doc.rust-lang.org/rust-by-example/",
+    "https://play.rust-lang.org/",
+    "https://blog.rust-lang.org/2015/05/15/Rust-1.0/"
+  ],
+  "scope": "Compared the complete Japanese source and all twelve translations, historical framing, Rust/Cargo installation workflow, Hello World code and commands, documentation language, metadata, and internal/external links. Executed the extracted Cargo example.",
+  "findings": [
+    "Replaced the outdated “relatively new” framing with the stable Rust 1.0 release year and removed unsupported company-adoption claims.",
+    "Qualified the C++ comparison so it does not imply a universal replacement.",
+    "Updated the beginner workflow to rustup, cargo new, src/main.rs, and cargo run.",
+    "Added official English documentation while retaining the Japanese book and online playground.",
+    "Removed duplicate date keys and recorded lastmod for the editorial update."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Rustのはじめかた/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "fab9c4d0256aed79999791b23329172362574410e78212b2082f6e72e2f7bb97",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    },
+    "post/Rustのはじめかた/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "2f9040a507f8ec3498b1f26e7b193225664c2545c3182d24092f5a36e50c8ab9",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    },
+    "post/Rustのはじめかた/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "a5b8c21a11ae2362daf5f1ae3e515e2cac1c649cb94224701b20c93296dbe937",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    },
+    "post/Rustのはじめかた/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "754af9adaf6266ce3990ca60b3b35c77a962db031210e0891f439e4667cba3fd",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    },
+    "post/Rustのはじめかた/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "5ba94fe30dd22ea3d3c10436edf23575981e321f4d7ba63d098b8c85f0afc8e6",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    },
+    "post/Rustのはじめかた/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "f2920342ded50d3be5d3dbe7315432f0fc85a5d54783f5da54da8e97c01e68b6",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    },
+    "post/Rustのはじめかた/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "fa6073974dadd7602047ab228cbe57c9cc006f518a733044f13b66d2e0524e0b",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    },
+    "post/Rustのはじめかた/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "2118a0c39d7e34cffade702c16f52569b5ff6fa541dae4b9f2afa1f76c817c75",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    },
+    "post/Rustのはじめかた/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "3735047ea7333a8cf04575a01f0030792ecc3aed773676672a8b4d24eb3a7457",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    },
+    "post/Rustのはじめかた/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "fb2470c74d2dc0b0e7a8a96425a38b53ce5b8c21eebac84dca16185f50e37eb5",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    },
+    "post/Rustのはじめかた/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "6fced6374c2ca4b91a416c42fdd879cfe4323499295c24a01756e70789647afb",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    },
+    "post/Rustのはじめかた/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Rustのはじめかた/index.md",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "e7779bb06f30800ee5bfaa02b0b0e0fb6db5a96893708363c09ace482db18529",
+      "summary": "Compared the full translation with the Japanese source and updated Rust/Cargo terminology, installation, the Cargo Hello World flow, current learning resources, and metadata.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete introductory flow and corrected the age framing and universal C++ replacement claim."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed systems programming, memory safety, concurrency, rustup, rustc, Cargo, binary package, and localized UI wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the standalone rustc-only workflow with Cargo project creation and cargo run, then ran the exact extracted example successfully with cargo run."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Rust Book, Cargo Book installation, Rust by Example, official install, and Playground links; retained the Japanese book for Japanese readers."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "This is a short getting-started guide and does not cover editor setup, dependency publishing, or advanced ownership concepts.",
+        "The Rust Playground executes code online; users should avoid submitting secrets or proprietary source."
+      ]
+    }
+  }
+}

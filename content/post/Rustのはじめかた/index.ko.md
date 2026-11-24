@@ -1,12 +1,8 @@
 ---
-
-
-
-
 title: 'Rust 언어 입문: 특징부터 설치, Hello World까지의 시작 방법'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Rustのはじめかた"
-date: 2022-09-06T00:12:36+09:00
+date: "2022-09-06T00:12:36+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
@@ -14,43 +10,43 @@ categories: ["programming"]
 description: '빠르고 메모리 안전성이 뛰어난 프로그래밍 언어 Rust의 시작 방법을 초보자를 위해 설명합니다. 언어의 특징 및 설치 방법부터 첫 번째 프로그램인 Hello World의 실행 절차, 추천 문서까지 종합적으로 소개합니다.'
 ---
 
+# 소개
 
+Rust는 메모리 안전성, 성능, 동시성을 중시하는 시스템 프로그래밍 언어입니다. Rust 1.0은 2015년에 출시되었습니다. 일부 용도는 C++와 겹치지만 모든 상황에서 한 언어가 다른 언어를 대체하지는 않습니다.
 
+# 설치
 
-# 시작하며
-[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 빠르고 메모리 효율이 높은 모듈을 모던한 표기법으로 작성할 수 있는 비교적 새로운 프로그래밍 언어입니다.
-멀티 플랫폼을 지원하며, [WebAssembly](https://kenji.blog/ko/p/webassembly-wasm-current-future/)나 임베디드 환경에서도 사용되고 있습니다.
-유명한 곳으로는 Firefox나 DropBox, Cloudflare에서도 채택하고 있습니다.
+`rustup`으로 Rust 도구 체인을 설치하고 관리할 수 있으며 기본으로 안정 버전을 설치합니다. 운영체제별 안내는 [Rust 공식 설치 페이지](https://www.rust-lang.org/tools/install)를 확인하세요.
 
-C++의 대체 언어로도 주목받고 있습니다.
+# Hello World
 
-# 설치 방법
+`cargo new`로 바이너리 프로젝트를 만들고 다음 코드를 `src/main.rs`에 넣습니다. `cargo run`은 빌드 후 실행합니다.
 
-[Rust 설치](https://www.rust-lang.org/ja/tools/install)
-
-위 사이트에서 각 플랫폼을 위한 설치 방법을 제공하고 있습니다.
-
-# 첫 프로그램
-
-다음 프로그램을 `main.rs`로 저장합니다.
-
+```bash
+cargo new hello_world
+cd hello_world
+cargo run
 ```
+
+```rust
 fn main() {
     println!("Hello, world!");
 }
 ```
 
-명령 프롬프트 또는 터미널에서 `rustc main.rs`를 실행하면,
-컴파일이 진행되며, `./main`(Windows의 경우 `main.exe`)을 실행하면 `Hello, world!`가 출력됩니다.
+# 문서
 
-# 일본어 문서
+[The Rust Programming Language](https://doc.rust-lang.org/book/)
 
-[The Rust Programming Language 일본어판](https://doc.rust-jp.rs/book-ja/)
+[Rust by Example](https://doc.rust-lang.org/rust-by-example/)
 
-[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)를 배우는 데 필요한 설명은 위 링크(일본어 번역판)에 모여 있습니다.
-[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 교재를 구입할 필요가 없을 정도로 충실하게 구성되어 있습니다.
+# 웹에서 시험하기
 
-# Web에서 실행해 보고 싶은 경우
+컴파일러를 설치하지 않고 시험해 보려면 [Rust Playground](https://play.rust-lang.org/)를 이용하세요.
 
-컴파일러를 설치하지 않고 Web에서 실행해 보고 싶은 경우에는 [The Rust Playground](https://play.rust-lang.org/)를 사용할 수 있습니다.
-코드를 입력하고 「실행 버튼」을 누르면, Web 상에서 컴파일되어 실행됩니다.
+## 참고 자료
+
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
+- [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
+- [The Cargo Book: Installation](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)

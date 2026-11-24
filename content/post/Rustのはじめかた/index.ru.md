@@ -1,48 +1,52 @@
 ---
 title: 'Введение в язык Rust: Как начать, от особенностей до установки и ''Hello World'''
-date: "2026-09-24T19:44:38+09:00"
 slug: "Rustのはじめかた"
-date: 2022-09-06T00:12:36+09:00
+date: "2022-09-06T00:12:36+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["programming"]
 description: 'Объясняется для новичков, как начать работу с высокоскоростным и безопасным для памяти языком программирования Rust. Всесторонне рассматриваются характеристики языка, процесс установки, шаги по выполнению первой программы ''Hello World'' и рекомендуемая документация.'
 ---
+
 # Введение
-[Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/) — это относительно новый язык программирования, который позволяет писать быстрые и эффективные по памяти модули, используя современный синтаксис.
-Он поддерживает мультиплатформенность и используется в мире [WebAssembly](https://kenji.blog/ru/p/webassembly-wasm-current-future/) и встраиваемых систем.
-Известно, что он применяется в Firefox, DropBox и Cloudflare.
 
-Он также привлекает внимание как альтернатива C++.
+Rust — системный язык программирования, ориентированный на безопасность памяти, производительность и параллелизм. Rust 1.0 вышел в 2015 году. Сферы применения частично пересекаются с C++, но ни один язык не заменяет другой во всех случаях.
 
-# Как установить
+# Установка
 
-[Установить Rust](https://www.rust-lang.org/tools/install)
+Используйте `rustup` для установки и управления инструментальными цепочками Rust; по умолчанию устанавливается стабильная версия. Инструкции для вашей ОС приведены на [официальной странице установки Rust](https://www.rust-lang.org/tools/install).
 
-Инструкции по установке для каждой платформы доступны на сайте выше.
+# Hello World
 
-# Ваша первая программа
+Создайте бинарный проект командой `cargo new` и поместите этот код в `src/main.rs`. Команда `cargo run` соберёт и запустит его.
 
-Сохраните следующую программу как `main.rs`.
-
+```bash
+cargo new hello_world
+cd hello_world
+cargo run
 ```
+
+```rust
 fn main() {
     println!("Hello, world!");
 }
 ```
 
-Если выполнить `rustc main.rs` в командной строке или терминале,
-программа скомпилируется, и при запуске `./main` (в Windows — `main.exe`) выведет `Hello, world!`.
+# Документация
 
-# Документация (на японском)
+[The Rust Programming Language](https://doc.rust-lang.org/book/)
 
-[The Rust Programming Language (Японская версия)](https://doc.rust-jp.rs/book-ja/)
+[Rust by Example](https://doc.rust-lang.org/rust-by-example/)
 
-Все необходимые для изучения [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/) материалы собраны по ссылке выше (перевод на японский).
-Она настолько исчерпывающая, что вам даже не придется покупать учебник по [Rust](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/).
+# Попробовать в браузере
 
-# Если вы хотите попробовать в браузере
+Чтобы попробовать Rust без установки компилятора, воспользуйтесь [Rust Playground](https://play.rust-lang.org/).
 
-Если вы хотите попробовать запустить код в браузере без установки компилятора, вы можете использовать [The Rust Playground](https://play.rust-lang.org/).
-Введите код и нажмите кнопку «Запуск», и он скомпилируется и выполнится прямо в веб-браузере.
+## Источники
+
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
+- [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
+- [The Cargo Book: Installation](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)

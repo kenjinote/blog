@@ -1,47 +1,52 @@
 ---
 title: 'Rust语言入门：从特点、安装到Hello World的入门指南'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Rustのはじめかた"
-date: 2022-09-06T00:12:36+09:00
+date: "2022-09-06T00:12:36+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["programming"]
 description: '面向初学者讲解如何入门快速且内存安全的编程语言Rust。全面介绍其语言特点、安装方法、第一个程序Hello World的执行步骤，以及推荐的日文文档等。'
 ---
+
 # 简介
-[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 是一种相对较新的编程语言，它允许使用现代语法编写高速且内存高效的模块。
-它支持跨平台，并广泛应用于 [WebAssembly](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 和嵌入式开发领域。
-著名的例子包括 Firefox、Dropbox 和 Cloudflare 都采用了它。
 
-它作为 C++ 的替代品也备受关注。
+Rust是一种注重内存安全、性能和并发的系统编程语言。Rust 1.0于2015年发布。它在某些场景下可与C++竞争，但两者都不能在所有用途上完全取代对方。
 
-# 安装方法
+# 安装
 
-[安装 Rust](https://www.rust-lang.org/zh-CN/tools/install)
+使用`rustup`安装和管理Rust工具链；默认会安装稳定版。请根据操作系统查看[Rust官方安装页面](https://www.rust-lang.org/tools/install)中的步骤。
 
-上述网站公开了针对各个平台的安装方法。
+# Hello World
 
-# 第一个程序
+使用`cargo new`创建二进制项目，然后将以下代码放入`src/main.rs`。`cargo run`会构建并运行项目。
 
-将以下程序保存为 `main.rs`。
-
+```bash
+cargo new hello_world
+cd hello_world
+cargo run
 ```
+
+```rust
 fn main() {
     println!("Hello, world!");
 }
 ```
 
-从命令提示符或终端运行 `rustc main.rs` 后，代码将被编译。接着运行 `./main`（在 Windows 环境下为 `main.exe`），将输出 `Hello, world!`。
+# 文档
 
-# 学习文档
+[The Rust Programming Language](https://doc.rust-lang.org/book/)
 
-[The Rust Programming Language 日文版](https://doc.rust-jp.rs/book-ja/)
+[Rust by Example](https://doc.rust-lang.org/rust-by-example/)
 
-学习 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 所需的讲解都汇总在上述链接（日文翻译版）中。
-其内容非常详实，甚至不需要额外购买 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的相关书籍。
+# 在线试用
 
-# 如果想在 Web 上运行
+如果不想安装编译器，可以使用[Rust Playground](https://play.rust-lang.org/)进行尝试。
 
-如果不想安装编译器，只想在 Web 上试运行，可以使用 [The Rust Playground](https://play.rust-lang.org/)。
-输入代码并点击“运行按钮”，代码就会在 Web 上进行编译和执行。
+## 参考资料
+
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
+- [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
+- [The Cargo Book: Installation](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)

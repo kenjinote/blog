@@ -1,47 +1,52 @@
 ---
 title: 'Rust Language Introduction: Getting Started from Features to Installation and Hello World'
-date: "2026-09-24T19:44:38+09:00"
 slug: "Rustのはじめかた"
-date: 2022-09-06T00:12:36+09:00
+date: "2022-09-06T00:12:36+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["Rust"]
 draft: false
 image: "images/rust_logo.webp"
 categories: ["programming"]
 description: 'Explains how to get started with Rust, a fast and memory-safe programming language, for beginners. Comprehensively introduces everything from the language''s features and installation methods to the execution steps of the first program, Hello World, and recommended Japanese documentation.'
 ---
-# Introduction
-[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) is a relatively new programming language that allows you to write fast and memory-efficient modules using modern syntax.
-It supports multi-platform and is also used in the world of [WebAssembly](https://kenji.blog/en/p/webassembly-wasm-current-future/) and embedded systems.
-Notably, it has been adopted by Firefox, Dropbox, and Cloudflare.
 
-It is also gaining attention as an alternative to C++.
+# Introduction
+
+Rust is a systems programming language focused on memory safety, performance, and concurrency. Rust 1.0 was released in 2015. It overlaps with C++ in some use cases, but neither language is a universal replacement for the other.
 
 # Installation
 
-[Install Rust](https://www.rust-lang.org/ja/tools/install)
+Use `rustup` to install and manage Rust toolchains; it installs the stable toolchain by default. Follow the instructions on the [official Rust installation page](https://www.rust-lang.org/tools/install) for your operating system.
 
-Installation methods for each platform are published on the site above.
+# Hello World
 
-# First Program
+Create a binary project with `cargo new`, then put this code in `src/main.rs`. `cargo run` builds and runs it.
 
-Save the following program as `main.rs`.
-
+```bash
+cargo new hello_world
+cd hello_world
+cargo run
 ```
+
+```rust
 fn main() {
     println!("Hello, world!");
 }
 ```
 
-When you run `rustc main.rs` from the command prompt or [terminal](/en/p/terminal-efficiency-powershell-bash-shortcuts/), it will be compiled, and running `./main` (`main.exe` on Windows) will output `Hello, world!`.
+# Documentation
 
-# Japanese Documentation
+[The Rust Programming Language](https://doc.rust-lang.org/book/)
 
-[The Rust Programming Language Japanese Version](https://doc.rust-jp.rs/book-ja/)
+[Rust by Example](https://doc.rust-lang.org/rust-by-example/)
 
-The explanations necessary for learning [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) are gathered in the link above (Japanese translation version).
-It is so comprehensive that there is no need to purchase a [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) textbook.
+# Try Rust on the Web
 
-# If you want to try it on the Web
+To experiment without installing a compiler, use the [Rust Playground](https://play.rust-lang.org/).
 
-If you want to try it on the Web without installing a compiler, you can use [The Rust Playground](https://play.rust-lang.org/).
-When you enter the code and press the "Run" button, it will be compiled and executed on the Web.
+## References
+
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
+- [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/)
+- [The Cargo Book: Installation](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)

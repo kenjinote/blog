@@ -19925,6 +19925,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-171.json",
       "evidenceHash": "720e14f7c12cb351656fb90ff8480cde5195c5d85bad2af7d444f3c8aaa2fce7"
+    },
+    "post/Rustのはじめかた/index.en.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "fab9c4d0256aed79999791b23329172362574410e78212b2082f6e72e2f7bb97",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "4a2c625f9e6a4b6efdc42f85a89174995094408b177a190457d966eb62441466"
+    },
+    "post/Rustのはじめかた/index.zh-cn.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "2f9040a507f8ec3498b1f26e7b193225664c2545c3182d24092f5a36e50c8ab9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "962c81f50e3c77a03602c86eb70f3337580cdd8602907b4e656788893ec4edeb"
+    },
+    "post/Rustのはじめかた/index.es.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "a5b8c21a11ae2362daf5f1ae3e515e2cac1c649cb94224701b20c93296dbe937",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "31aa732b97dec5abea690a8a038cf038791ba7a83cb1a72799e55a4fb636bd11"
+    },
+    "post/Rustのはじめかた/index.ko.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "754af9adaf6266ce3990ca60b3b35c77a962db031210e0891f439e4667cba3fd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "9c927e548b88c3da0b1532c721f41c844905cc714c6f7f330495e073300c49aa"
+    },
+    "post/Rustのはじめかた/index.pt.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "5ba94fe30dd22ea3d3c10436edf23575981e321f4d7ba63d098b8c85f0afc8e6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "6861297d46acd6adfe9db0bbe99613bb311e440707ccebe768cf55ce3b670b79"
+    },
+    "post/Rustのはじめかた/index.zh-tw.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "f2920342ded50d3be5d3dbe7315432f0fc85a5d54783f5da54da8e97c01e68b6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "521c9deff0e7f068c4f1545500bb5e08936f3857d258b3f605bc4e4b6c8bcc8c"
+    },
+    "post/Rustのはじめかた/index.hi.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "fa6073974dadd7602047ab228cbe57c9cc006f518a733044f13b66d2e0524e0b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "2af84f1ac563df9e2fd44cbe069fcbc7c877a6a9e9717c1e6e9b04a1dc799bd0"
+    },
+    "post/Rustのはじめかた/index.fr.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "2118a0c39d7e34cffade702c16f52569b5ff6fa541dae4b9f2afa1f76c817c75",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "61477778c5235c999346963d3987ffe32b1f65568afcbe04b08420eac2635932"
+    },
+    "post/Rustのはじめかた/index.de.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "3735047ea7333a8cf04575a01f0030792ecc3aed773676672a8b4d24eb3a7457",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "e19f3c3ee8da1d195523b5dab0dc5714f06e73c60c04fca99bce8379046afac7"
+    },
+    "post/Rustのはじめかた/index.ar.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "fb2470c74d2dc0b0e7a8a96425a38b53ce5b8c21eebac84dca16185f50e37eb5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "b19dc672556dbe9870aed80424261eacc23fee1b5032bd2d2363b25ddc1c3df0"
+    },
+    "post/Rustのはじめかた/index.ru.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "6fced6374c2ca4b91a416c42fdd879cfe4323499295c24a01756e70789647afb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "1dcf8ff4aff0d66d587dd3cf4b2062592a516b86aaaad9222ea70171f0a215c8"
+    },
+    "post/Rustのはじめかた/index.id.md": {
+      "source": "post/Rustのはじめかた/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "76884f0ac89d681d93b57e87299a8dd0cb688b1f88fff6a2c451dbd4952a403a",
+      "translationHash": "e7779bb06f30800ee5bfaa02b0b0e0fb6db5a96893708363c09ace482db18529",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-172.json",
+      "evidenceHash": "7ce250f0d79feabdd6af9fbe7a10eb2fdb3714e8781625fb0a33c96529dac44d"
     }
   }
 }
