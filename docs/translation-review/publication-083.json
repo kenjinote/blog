@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "batch": 83,
+  "verifiedAt": "2026-11-24T10:36:17+09:00",
+  "ciRun": 45208114443,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45208114443",
+  "sourceCommit": "bb9f443dbf450141b116aa5a962485e7d28f0f6c",
+  "deployment": "success",
+  "pagesVerified": 13,
+  "allPassed": true,
+  "checks": [
+    "13 live pages with HTTP 200, canonical, language/RTL, title/description, and reciprocal hreflang",
+    "MIT course reference, four localized internal links, theorem proof and Python simulation",
+    "original publication dates and language-specific lastmod"
+  ],
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/central-limit-theorem/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "MITReference": true,
+        "localizedInternalReferences": true,
+        "simulationAndProof": true,
+        "reviewDate": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI translation review only; no human or native-speaker certification.",
+    "Python simulation was not executed and diagrams were not visually inspected."
+  ]
+}

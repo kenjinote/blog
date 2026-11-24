@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "batch": 90,
+  "article": "かっこいい Web ページテンプレート（html5up）",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+  "sources": [
+    "https://html5up.net/",
+    "https://html5up.net/license"
+  ],
+  "scope": "Read the complete Japanese source and all twelve translations. Checked section coverage, meaning, terminology, metadata, official links, and the current official HTML5 UP and license information.",
+  "findings": [
+    "Expanded the original one-paragraph bookmark into a practical guide covering template selection, preview, download, customization, and pre-publication review.",
+    "Confirmed the official site describes its templates as responsive HTML5/CSS3 templates, and the official license page identifies CC BY 3.0, permits personal/commercial use and modifications, and requests credit for the design.",
+    "Localized the complete revised article into twelve languages, preserving the same three sections and official references.",
+    "Removed duplicate date metadata, retained the original 2023-04-17 publication date, and set lastmod to 2026-11-24."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/かっこいい Web ページテンプレート（html5up）/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "04a0e8d1eca134f8697e72539e6b7cdabca556a9b3bc4ff450eb6f750f71e3f0",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "f348f3d620412506b2dee6af9c83aab1f7ef504e3d9a199416b947a268cb3b82",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "e85ebf08806ffd8004141d6d2e6dfef31b4bc1de68aec3ff6c56fc7766fca35d",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "67333e9a5e232cd8e03c19f7adebdcbf99cea0f53a4cbe3ca7dee711b38dab3a",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "39501b105923e859666672687f06b73efcef2d8d190183e0ff784f30d746637b",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "3e33ef9523b027811da1b18ff2249182dd9cbc6bc263e2054029b085359112fb",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "9c23b027a29d7caa37ed39e5e20b4ceb9b93a9118a48fff697d01015f6dc8c9d",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "f8436e04e7fe28d5f5bad64e87a88344d990508145823b61c1c0a8137baa7d3f",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "4ce0d4e92f033137691c8784314890ab18c5d39bb467d8b7104a67004a46622a",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "d76d688c9ff2c1e68bfb50fb5d39fc991b630bd4a0054725f2071bbd61613f46",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "577649c791e35253e4c9ef5469f79cebc81f5074fa3fd820f56f7ffe959bd2cf",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "56f0609dd412fdaac4221dfe2259c0172163b0e345c57320d555cef1c9b2bb12",
+      "summary": "Compared all twelve translations with the complete Japanese article. Verified the current HTML5 UP catalog, responsive HTML5/CSS3 template description, and CC BY 3.0 permissions and attribution requirement against the official site and license page.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Each edition preserves the template-selection, download/customization, and license/attribution guidance."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "HTML5, CSS3, template, responsive design, CC BY 3.0, and attribution are represented consistently."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains no code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the same official template catalog and license page."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Template availability can change; readers are directed to the current official catalog.",
+        "Separate assets or libraries may have their own licenses, which the article asks readers to check."
+      ]
+    }
+  }
+}

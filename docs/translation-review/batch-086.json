@@ -19,7 +19,7 @@
     "Clarified that `hugo list all` includes drafts, future-dated and expired content, and that `hugo config` displays defaults as well as project configuration.",
     "Replaced conflicting duplicate `date` metadata with one preserved 2024-05-31 date and a review `lastmod`; added direct official references in all languages."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/Hugoコマンド一覧/index.ar.md": {
       "reviewKind": "ai",
@@ -441,5 +441,11 @@
         "Hugo command availability and edition requirements can change in future releases; recheck the official CLI documentation when updating this article."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-086.json",
+    "ciRun": 45208114443,
+    "sourceCommit": "bb9f443dbf450141b116aa5a962485e7d28f0f6c",
+    "allPassed": true
   }
 }

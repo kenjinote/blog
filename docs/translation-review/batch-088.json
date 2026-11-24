@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "batch": 88,
+  "article": "IntelliJ IDEAで日付を貼り付けるコマンドを追加する",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+  "sources": [
+    "https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html",
+    "https://www.jetbrains.com/help/idea/template-variables.html",
+    "https://www.jetbrains.com/help/idea/settings-live-templates.html"
+  ],
+  "scope": "Read the entire Japanese article and all twelve translations. Verified the current Live Templates settings path, date expression format, time-zone behavior, Skip if defined, context selection, default Tab expansion key, metadata and official references.",
+  "findings": [
+    "Updated the settings path to Editor > Live Templates and the group/add-template flow to match current JetBrains guidance.",
+    "Corrected the expansion key from Enter to the default Tab key and documented that users can configure a different key.",
+    "Replaced the fixed +09:00 suffix with SimpleDateFormat's XXX time-zone offset so generated timestamps use the computer's local zone.",
+    "Removed outdated UI screenshots and replaced the old Stack Overflow citation with three direct JetBrains references.",
+    "Removed duplicate date metadata in all editions, retained the original 2022-09-04 publication date, and set lastmod to 2026-11-24."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "81fca6addbb34c1a3ce418bc294d6e4c1b54df413d716182b64c4804c0656f2d",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "5eadb3469de25a74951a6df4b830c3b96424f0e130aa0e026e7a4f9bee7c38ec",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "24084b7a679785922844f152ab016a8e1854dd756631e7a82ed03ad9b263308d",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "fde5332eb54c14e252f0440c310508a72d44fe7d40f51c7061bf01aa1bafa4b8",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "e946639b14de8bb700fb412e2f56ebf0d98ea87e8e7c5f95a071ed65287aa4a7",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "a6dfe24dcd992dd4672fa274eded267ce09cfe59f1ec0942984380a5d1e93c58",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "e6a46183feb718414afaab5b117736c0b898ecf21e47cc7f210d30cf64ea4b79",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "b33b1568b2e811bc73a8955d8224f5805fcecc5d21c9325ec1073a69bfd146d8",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "6855070de38acfe2f33df1f2ced056fca498ac007875763125cf7e4f68889269",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "327b529c8ff9031672e53adf66169ae670275ad4de56d786e1b80d2b7631b515",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "b104a389d1a80e7f492bc4112835e70bbf9334d844f77d318c085b8733a249ed",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "0045f6d100de935b3619ef23ff243566aff26b1d45ccd2e5f1674c8a4e731f4e",
+      "summary": "Compared the full localized guide with current JetBrains documentation for creating live templates, variables, date formatting, and expansion keys. Corrected the UI path and default Tab key and replaced the fixed Japan offset with a local ISO 8601 offset.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All language editions explain the same IntelliJ settings path, abbreviation, template variable expression, use context, Tab expansion, local timestamp, and timezone behavior."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Live Template, variable, expression, abbreviation, expansion key, and ISO 8601 time-zone offset remain distinct in each language."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims or calculations are present."
+        },
+        "code": {
+          "status": "checked",
+          "note": "The exact date expression `date(\"yyyy-MM-dd'T'HH:mm:ssXXX\")` is present in every edition and follows JetBrains' SimpleDateFormat-based date function."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions use the same three current JetBrains official pages for creating templates, variables, and expansion settings."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Settings labels can vary by IDE version and operating system; the article links directly to current JetBrains documentation."
+      ]
+    }
+  }
+}

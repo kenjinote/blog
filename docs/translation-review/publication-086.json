@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "batch": 86,
+  "verifiedAt": "2026-11-24T10:36:20+09:00",
+  "ciRun": 45208114443,
+  "ciUrl": "https://github.com/kenjinote/blog/actions/runs/45208114443",
+  "sourceCommit": "bb9f443dbf450141b116aa5a962485e7d28f0f6c",
+  "deployment": "success",
+  "pagesVerified": 13,
+  "allPassed": true,
+  "pages": [
+    {
+      "language": "ja",
+      "url": "https://kenji.blog/p/hugo%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "url": "https://kenji.blog/en/p/hugocommand%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-cn",
+      "url": "https://kenji.blog/zh-cn/p/hugo%E5%91%BD%E4%BB%A4%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "url": "https://kenji.blog/es/p/hugocomando%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ko",
+      "url": "https://kenji.blog/ko/p/hugo%EB%AA%85%EB%A0%B9%EC%96%B4%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "pt",
+      "url": "https://kenji.blog/pt/p/hugocomando%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "zh-tw",
+      "url": "https://kenji.blog/zh-tw/p/hugo%E6%8C%87%E4%BB%A4%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "hi",
+      "url": "https://kenji.blog/hi/p/hugo%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "url": "https://kenji.blog/fr/p/hugocommande%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "url": "https://kenji.blog/de/p/hugobefehl%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ar",
+      "url": "https://kenji.blog/ar/p/hugo%D8%A3%D9%85%D8%B1%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "ru",
+      "url": "https://kenji.blog/ru/p/hugo%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    },
+    {
+      "language": "id",
+      "url": "https://kenji.blog/id/p/hugoperintah%E4%B8%80%E8%A6%A7/",
+      "status": 200,
+      "checks": {
+        "http200": true,
+        "canonical": true,
+        "language": true,
+        "arabicRtl": true,
+        "title": true,
+        "description": true,
+        "hreflangCount": true,
+        "hreflangTargets": true,
+        "officialReferences": true,
+        "currentCommandsAndCaveats": true,
+        "dates": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "AI-assisted translation review only; no human or native-speaker certification.",
+    "Hugo command availability and edition requirements can change in future releases."
+  ]
+}

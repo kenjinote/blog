@@ -1,0 +1,447 @@
+{
+  "version": 1,
+  "batch": 89,
+  "article": "LoadIconはDestroyIconを呼び出す必要はない",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-destroyicon",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-loadiconw",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-loadimagew",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-copyicon",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-copyimage",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-createiconfromresource",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-createiconfromresourceex"
+  ],
+  "scope": "Read the complete Japanese source and all twelve translations. Compared ownership and cleanup guidance for LoadIcon, LoadImage with and without LR_SHARED, CopyImage with LR_COPYRETURNORG, CopyIcon, CreateIconIndirect, and CreateIconFromResource APIs with Microsoft Learn.",
+  "findings": [
+    "Clarified that LoadIcon handles are shared and must not be passed to DestroyIcon; added the corresponding LoadImage LR_SHARED rule and the caller-owned LR_SHARED-absent rule.",
+    "Added CopyImage LR_COPYRETURNORG and CopyIcon ownership details from their function-specific documentation.",
+    "Found contradictory Microsoft documentation: the DestroyIcon overview lists CreateIconFromResource among shared-icon sources, while the individual CreateIconFromResource page says to call DestroyIcon; the Ex page also conflicts with LR_SHARED semantics. The article explicitly flags this rather than giving a false universal rule.",
+    "Replaced the single DestroyIcon citation with seven direct Microsoft Learn references in all editions.",
+    "Removed duplicate date metadata in all editions, retained the 2024-04-19 publication date, and set lastmod to 2026-11-24."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "a3de80dacb4fc42d4f6256b26d9cf1c9b18ce18070bd2ec263ecbf8eecca30c8",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "9e87767a61c923912d9e97167989ed4010f16831d703b91481121a1ce80dccfe",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "8b014b1e93e420f6a521785cb91804921a81b9f362d2b46684e84180b8062400",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "1f9ba40bad9d68788f08c8da1b8f11fa0c3b59fcf23a5466224df957d6aa8d7d",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "a3515362860befc2202b6d8cd0b4d5c54bb423f24a2450d0b8f6465943e3a58a",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "40a9358c123943ca0e558c6b98118a0d1e3966cf43fc11a94bbc50b96bcc808d",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "efb860f8655dd6709b6578f3ff641ad635698917ae3be7713a23b2af2ac7201c",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "07723382d8053144c9c9e793d5fa2610caf9e051da72c1e6e846e66a69f9c8f8",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "9cc967e2452a7442404cf00a209ee1b584d26a7b6d5c819389dd789705559d51",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "0b2f0e70bfaa0968a684185eccb2a0f87154aee6ff71712a324c33fa9f7bd328",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "47d51f7b4aa8a0658a321748a436fefca21a9713c1b2bd4c865863ec8ec4eb30",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "68764652d964986b9797da62675763691fde39d2ff175bf22123fa320b24e5cb",
+      "summary": "Compared all localized guidance with current Microsoft Learn pages for DestroyIcon, LoadIcon, LoadImage, CopyIcon, CopyImage, and CreateIconFromResource APIs. Clarified shared versus caller-owned icon handles and explicitly noted conflicting ownership instructions in the CreateIconFromResource documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "All editions distinguish shared LoadIcon/LR_SHARED handles from caller-owned icons and preserve the same caveat about contradictory CreateIconFromResource documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Icon handle ownership, shared resources, caller-owned resources, DestroyIcon, LR_SHARED, and LR_COPYRETURNORG remain distinct across translations."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The article contains API names and flags but no executable code sample."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All seven Microsoft Learn references match across editions and support the ownership statements, including the documented inconsistency."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "Microsoft Learn pages conflict on CreateIconFromResource and CreateIconFromResourceEx ownership guidance; the article flags this and does not assert a universal rule for those APIs."
+      ]
+    }
+  }
+}

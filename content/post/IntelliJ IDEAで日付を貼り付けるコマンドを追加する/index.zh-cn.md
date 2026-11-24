@@ -1,39 +1,36 @@
 ---
 title: '在IntelliJ IDEA中创建插入当前日期快捷键的方法'
-date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAで日期を貼り付ける命令を追加する"
 date: 2022-09-04T05:59:04+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["it-technology"]
-description: '逐步详细介绍在IntelliJ IDEA中设置撰写博客等时非常方便的自动插入当前日期和时间的“Live Template”的方法。省去每次输入的麻烦。'
+description: '了解如何创建 IntelliJ IDEA Live Template，插入包含本地时区偏移的 ISO 8601 时间戳。本指南依据 JetBrains 当前文档介绍设置路径、日期表达式和模板展开按键。'
 ---
+
 # 简介
-我写这个博客的时候，使用的是IntelliJ IDEA。它和Git的兼容性很好，而且能显示Markdown的预览，非常方便。
-每次写博客时都必须在md的头部写入date，但似乎没有插入日期的快捷键，因此我参考了以下网站，
-制作了插入日期的命令。希望能对您有所帮助。
 
-[Is there a shortcut for inserting date/time in IntelliJ IDEA?](https://stackoverflow.com/questions/8714779/is-there-a-shortcut-for-inserting-date-time-in-intellij-idea)
+如果写作时经常输入时间戳，可以使用 IntelliJ IDEA Live Template 通过简短缩写自动插入。本例创建包含计算机本地时间和时区偏移的 ISO 8601 时间戳。
 
-# 设置步骤
-1. 打开菜单的“File”>“Settings...”  
-   ![settings](./images/settings.webp)
-2. 在选择“Editor”>“Live Template”>“HTML/XML”的状态下点击“+”
-3. 选择Live Template
-4. 在Abbreviation中输入“date”
-5. 在Description中输入“插入日期时间”
-6. 在Template Text中输入“$date$”
-7. 点击Edit Variables按钮  
-   ![edit_template_variables](./images/edit_template_variables.webp)
-8. 在Name中输入“date”
-9. 在Expression中输入``date("yyyy-MM-dd'T'HH:mm:ss'+09:00'")``
-10. 点击OK关闭对话框
-11. 点击Define或Change并勾选“Everywhere”
-12. 点击OK关闭对话框
-13. 在代码编辑器中输入“date”并按Enter，如果插入了“2022-09-04T05:59:04+09:00”这样的日期，设置就完成了！
+## 创建 Live Template
 
-以上
+1. 打开 **Settings > Editor > Live Templates**。在 Windows 或 Linux 上通过 **File > Settings** 打开；在 macOS 上通过 **IntelliJ IDEA > Settings** 打开。
+2. 选择一个模板组（例如 **other**），然后点击 **+ > Live Template**。
+3. 将 **Abbreviation** 设为 `date`，并填写简短的 **Description**。
+4. 在 **Template text** 中输入 `$date$`。
+5. 点击 **Edit Variables**。为 `date` 变量在 **Expression** 中输入 `date("yyyy-MM-dd'T'HH:mm:ssXXX")`。勾选 **Skip if defined**，以便展开模板时自动计算值。
+6. 点击 **Define**，选择需要使用模板的上下文（适用时可选 **Everywhere**），然后保存设置。
 
-# 结语
-如果发现了IntelliJ IDEA的小技巧，我还会继续分享的！
+## 使用模板
+
+在编辑器中输入 `date` 并按默认展开键 **Tab**。IntelliJ IDEA 会插入当前系统日期和时间，例如 `2026-11-24T09:30:00+09:00`。时间和偏移取决于计算机当前时区。如果修改过展开键，请在 Live Templates 设置中确认。
+
+格式中的 `XXX` 会生成 ISO 8601 时区偏移。表达式没有固定使用 `+09:00`，因此会采用每位读者计算机的本地时区。请确认生成的时间戳符合预期的发布时间。
+
+## 参考资料
+
+- [创建和编辑 Live Template](https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html)
+- [Live Template 变量和 date 函数](https://www.jetbrains.com/help/idea/template-variables.html)
+- [设置 Live Template 展开键](https://www.jetbrains.com/help/idea/settings-live-templates.html)

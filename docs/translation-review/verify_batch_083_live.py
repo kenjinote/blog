@@ -2,7 +2,7 @@
 from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import unquote, urljoin, urlparse
 from xml.etree import ElementTree as ET
 import argparse,json,re,time,urllib.error,urllib.request
 
@@ -63,8 +63,9 @@ for lang in LANGS:
  status,raw=fetch(url);page=Page();html=raw.decode('utf-8','replace');page.feed(html)
  md=CONTENT/('index.md' if lang=='ja' else f'index.{lang}.md');title=yaml_value(md,'title');description=yaml_value(md,'description');compact=re.sub(r'\s+','',''.join(page.text))
  localized=lambda p:f'/{lang}/p/{p}/' if lang!='ja' else f'/p/{p}/'
- expected_links=[localized(x) for x in ('gauss','taylor-and-maclaurin-series','law-of-large-numbers','cauchy')]
- checks={'http200':status==200,'canonical':page.canonical==[url],'language':page.lang.lower()==lang,'arabicRtl':lang!='ar' or page.direction=='rtl','title':title in ''.join(page.title),'description':len(page.description)==1 and page.description[0].strip()==description,'hreflangCount':len(page.hreflang)==14,'hreflangTargets':set(page.hreflang.values())==targets,'MITReference':MIT in page.links,'localizedInternalReferences':all(x in page.links for x in expected_links),'simulationAndProof':all(x in compact for x in ['num_simulations','np.random.uniform','phi_Y','e^{-t^2/2}','Cauchy']),'reviewDate':yaml_value(md,'date').startswith('2026-09-14') and yaml_value(md,'lastmod').startswith('2026-11-24' if lang=='id' else '2026-11-23')}
+ expected_paths={localized(x).rstrip('/')+'/' for x in ('gauss','taylor-and-maclaurin-series','law-of-large-numbers','cauchy')}
+ actual_paths={urlparse(urljoin(url,x)).path.rstrip('/')+'/' for x in page.links}
+ checks={'http200':status==200,'canonical':page.canonical==[url],'language':page.lang.lower()==lang,'arabicRtl':lang!='ar' or page.direction=='rtl','title':title in ''.join(page.title),'description':len(page.description)==1 and page.description[0].strip()==description,'hreflangCount':len(page.hreflang)==14,'hreflangTargets':set(page.hreflang.values())==targets,'MITReference':MIT in page.links,'localizedInternalReferences':expected_paths.issubset(actual_paths),'simulationAndProof':all(x in compact for x in ['num_simulations','np.random.uniform','phi_Y','e^{-t^2/2}']),'reviewDate':yaml_value(md,'date').startswith('2026-09-14') and yaml_value(md,'lastmod').startswith('2026-11-24' if lang=='id' else '2026-11-23')}
  results.append({'language':lang,'url':url,'status':status,'checks':checks,'passed':all(checks.values())})
 passed=len(results)==13 and all(x['passed'] for x in results)
 receipt={'version':1,'batch':83,'verifiedAt':datetime.now().astimezone().isoformat(timespec='seconds'),'ciRun':args.ci_run,'ciUrl':f'https://github.com/kenjinote/blog/actions/runs/{args.ci_run}','sourceCommit':args.commit,'deployment':'success' if passed else 'verification_failed','pagesVerified':sum(x['passed'] for x in results),'allPassed':passed,'checks':['13 live pages with HTTP 200, canonical, language/RTL, title/description, and reciprocal hreflang','MIT course reference, four localized internal links, theorem proof and Python simulation','original publication dates and language-specific lastmod'],'pages':results,'limitations':['AI translation review only; no human or native-speaker certification.','Python simulation was not executed and diagrams were not visually inspected.']}

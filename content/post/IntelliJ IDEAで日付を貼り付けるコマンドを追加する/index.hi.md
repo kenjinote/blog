@@ -1,38 +1,36 @@
 ---
 title: 'IntelliJ IDEA में वर्तमान दिनांक सम्मिलित करने के लिए शॉर्टकट कैसे बनाएं'
-date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでतिथिを貼り付けるकमांडを追加する"
 date: 2022-09-04T05:59:04+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["it-technology"]
-description: 'हम IntelliJ IDEA में ब्लॉग लिखने आदि के दौरान सुविधाजनक "Live Template" स्थापित करने के तरीके का चरण-दर-चरण विवरण देंगे, जो स्वचालित रूप से वर्तमान दिनांक और समय सम्मिलित करता है। हर बार टाइप करने की परेशानी से बचें。'
+description: 'IntelliJ IDEA Live Template बनाएँ जो स्थानीय टाइम ज़ोन ऑफ़सेट सहित ISO 8601 टाइमस्टैम्प डालता है। यह गाइड सेटिंग पथ, दिनांक एक्सप्रेशन और विस्तार कुंजी के लिए JetBrains के वर्तमान दस्तावेज़ों का पालन करती है।'
 ---
+
 # परिचय
-इस ब्लॉग को लिखते समय मैं IntelliJ IDEA का उपयोग करता हूँ। यह Git के साथ अच्छी तरह से काम करता है और इसमें मार्कडाउन का पूर्वावलोकन देखने की सुविधा है, जो इसे बहुत उपयोगी बनाता है।
-हर बार जब मैं ब्लॉग लिखता हूँ, तो मुझे md हेडर में `date` लिखना पड़ता है, और ऐसा लगता है कि तिथि सम्मिलित करने के लिए कोई शॉर्टकट नहीं है। इसलिए, नीचे दी गई वेबसाइट का संदर्भ लेकर मैंने तिथि सम्मिलित करने के लिए एक कमांड बनाया है। मुझे उम्मीद है कि यह आपके लिए मददगार साबित होगा।
 
-[Is there a shortcut for inserting date/time in IntelliJ IDEA?](https://stackoverflow.com/questions/8714779/is-there-a-shortcut-for-inserting-date-time-in-intellij-idea)
+यदि लिखते समय आपको बार-बार टाइमस्टैम्प डालना पड़ता है, तो IntelliJ IDEA Live Template छोटे संक्षिप्त रूप से इसे डाल सकता है। यह उदाहरण कंप्यूटर के स्थानीय समय और टाइम ज़ोन ऑफ़सेट सहित ISO 8601 टाइमस्टैम्प बनाता है।
 
-# सेटअप प्रक्रिया
-1. मेनू से "File" > "Settings..." खोलें  
-   ![settings](./images/settings.webp)
-2. "Editor" > "Live Template" > "HTML/XML" को चुनकर "+" पर क्लिक करें
-3. Live Template चुनें
-4. Abbreviation में "date" दर्ज करें
-5. Description में "तिथि और समय सम्मिलित करें" दर्ज करें
-6. Template Text में "$date$" दर्ज करें
-7. Edit Variables बटन पर क्लिक करें  
-   ![edit_template_variables](./images/edit_template_variables.webp)
-8. Name में "date" दर्ज करें
-9. Expression में ``date("yyyy-MM-dd'T'HH:mm:ss'+09:00'")`` दर्ज करें
-10. OK पर क्लिक करके डायलॉग बॉक्स को बंद करें
-11. Define या Change पर क्लिक करें और "Everywhere" को चेक करें
-12. OK पर क्लिक करके डायलॉग बॉक्स को बंद करें
-13. कोड एडिटर में "date" दर्ज करें और Enter दबाएं। अगर "2022-09-04T05:59:04+09:00" जैसी तिथि सम्मिलित हो जाती है, तो सेटअप पूरा हो गया!
+## Live Template बनाएँ
 
-बस इतना ही
+1. **Settings > Editor > Live Templates** खोलें। Windows या Linux पर **File > Settings** से और macOS पर **IntelliJ IDEA > Settings** से खोलें।
+2. कोई टेम्पलेट समूह चुनें (जैसे **other**) और **+ > Live Template** क्लिक करें।
+3. **Abbreviation** में `date` और **Description** में छोटा विवरण लिखें।
+4. **Template text** में `$date$` लिखें।
+5. **Edit Variables** क्लिक करें। `date` वेरिएबल के **Expression** में `date("yyyy-MM-dd'T'HH:mm:ssXXX")` डालें। टेम्पलेट विस्तार के समय मान अपने-आप निकालने के लिए **Skip if defined** चालू करें।
+6. **Define** क्लिक करें और वे संदर्भ चुनें जहाँ टेम्पलेट चाहिए (उपयुक्त होने पर **Everywhere** चुनें)। सेटिंग सहेजें।
 
-# निष्कर्ष
-अगर मुझे IntelliJ IDEA के लिए और कोई छोटी ट्रिक्स मिलती हैं, तो मैं उन्हें फिर से प्रकाशित करूँगा!
+## टेम्पलेट का उपयोग करें
+
+एडिटर में `date` लिखें और डिफ़ॉल्ट विस्तार कुंजी **Tab** दबाएँ। IntelliJ IDEA मौजूदा सिस्टम तारीख और समय को `2026-11-24T09:30:00+09:00` जैसे प्रारूप में डालेगा। समय और ऑफ़सेट कंप्यूटर के मौजूदा टाइम ज़ोन के अनुसार होंगे। यदि आपने विस्तार कुंजी बदली है, तो Live Templates सेटिंग में जाँचें।
+
+`XXX` पैटर्न ISO 8601 टाइम ज़ोन ऑफ़सेट देता है। एक्सप्रेशन `+09:00` को स्थायी रूप से नहीं जोड़ता, इसलिए यह प्रत्येक पाठक के स्थानीय टाइम ज़ोन का उपयोग करता है। जाँचें कि बना हुआ टाइमस्टैम्प आपके इच्छित प्रकाशन समय से मेल खाता है।
+
+## संदर्भ
+
+- [Live Template बनाएँ और संपादित करें](https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html)
+- [Live Template वेरिएबल और date फ़ंक्शन](https://www.jetbrains.com/help/idea/template-variables.html)
+- [Live Template विस्तार कुंजी सेट करें](https://www.jetbrains.com/help/idea/settings-live-templates.html)

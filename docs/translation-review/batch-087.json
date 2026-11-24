@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "batch": 87,
+  "article": "IntelliJ IDEAでGitHub Copilotを使う",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+  "sources": [
+    "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/install-copilot-extension",
+    "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/get-ide-code-suggestions",
+    "https://plugins.jetbrains.com/plugin/17718-github-copilot--your-ai-pair-programmer"
+  ],
+  "scope": "Read the full Japanese article and all twelve translations. Checked current GitHub account access, supported IDEs, Marketplace installation, device-code authorization flow, inline suggestions, acceptance shortcut, Copilot Chat entry, metadata, and language parity.",
+  "findings": [
+    "Replaced the old bottom-right icon authentication path with the current Tools > GitHub Copilot > Login to GitHub flow, followed by Copy and Open, device-code authorization, and the IDE confirmation.",
+    "Added Copilot access prerequisites and a note that plan limits, IDE compatibility, and UI labels can change.",
+    "Updated code suggestion guidance to say Tab accepts the inline suggestion and readers should review it before use.",
+    "Removed the old version-specific UI screenshots and their alt text from the article body so they no longer conflict with current UI instructions.",
+    "Removed duplicate date fields from all editions, retained the 2022-09-10 publication date, and set lastmod to 2026-11-24."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "3c17e445a1a705dccf0cf0c8399a58b257f9abf504b993f84e32b74d424b240e",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "65d867387eb188601603b6eeb7a3232d91b99202640ace7b3a2979047cb64f34",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "903b6cf1c1a574c232c82accb184bb050449028339065d5270006439dbadf16f",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "964edf2e92a29d559fcaa482e670b97970d2238ad32f5b414b7e368eb073dfa7",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "c865cea6776396b3b533fb5d25fd2108cad6a98d87b8b3bd50ba72e427c9962a",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "6e40cbd31ccb83a701015a4245e1ac9610ebad980a1ec139e14e963837e26bc3",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "99fefcb84e53c9ef7a84840aa472360bc372b3677c0e705604888b13631e642c",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "c6a6bf796a8e826aa6cd3b7c0bd25e2bc0f0294f38902e0d2afbcc173a461dd8",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "a30ddb78398784bad3d316f9fbc99ce256108b499719a95132cd70984befadc0",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "c599a3c846a68a89667b478a3a8c292b56bfa880d2b80068f7f30800dc1e332c",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "17ab8fa27b8d01097a2f4afb65e2b36c83dc3eb7630b293ad5ce96e9e0512299",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "c7621c5acd7016f418488027e722926509d1367a9a9aebfe00dcf4a8bbd8b96c",
+      "summary": "Compared the complete localized guide with current GitHub installation, authentication, account access, IDE compatibility, code suggestion, and JetBrains Marketplace guidance. Replaced outdated UI screenshots with version-aware text instructions.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Prerequisites, installation, device-code sign-in, authorization, code suggestions, and Copilot Chat are aligned across all editions with current GitHub documentation."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "GitHub Copilot, IntelliJ IDEA, plugin/Marketplace, device code, authorization, inline suggestions, Chat, and the English UI labels remain distinct and consistent."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The article contains no mathematical claims or formulas."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The guide contains UI steps rather than code samples; the Tab shortcut for accepting a suggestion matches GitHub documentation."
+        },
+        "links": {
+          "status": "checked",
+          "note": "All editions point to the current official GitHub install guide, official JetBrains code-suggestion instructions, and GitHub's JetBrains Marketplace listing."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "IDE menus and GitHub Copilot plan details can change; the guide links to current official references and advises readers to verify them."
+      ]
+    }
+  }
+}

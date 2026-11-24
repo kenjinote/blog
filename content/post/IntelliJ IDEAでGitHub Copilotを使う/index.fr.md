@@ -1,44 +1,45 @@
 ---
 title: 'Comment intégrer et activer GitHub Copilot dans IntelliJ IDEA'
-date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
+lastmod: 2026-11-24T00:00:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["tools-development-environment"]
-description: 'Nous expliquons clairement avec des images les méthodes d''installation spécifiques et les étapes d''activation pour utiliser GitHub Copilot dans IntelliJ IDEA. Améliorez considérablement l''efficacité de votre développement en utilisant l''IA.'
+description: 'Découvrez comment installer le plugin GitHub Copilot dans IntelliJ IDEA, vous connecter avec GitHub et utiliser les suggestions de code en ligne. Ce guide présente les conditions d’accès et la procédure d’authentification actuelle, avec des liens vers la documentation officielle.'
 ---
+
 # Introduction
-GitHub Copilot est un outil de complétion de code basé sur l'IA développé par GitHub.
-Vous pouvez utiliser GitHub Copilot dans IntelliJ IDEA en installant le plugin GitHub Copilot dans l'environnement de développement IntelliJ IDEA.
-Un compte GitHub est requis pour l'activation.
 
-# Comment installer
-1. Sélectionnez Settings dans le menu File d'IntelliJ IDEA
-2. Sélectionnez Plugins et recherchez "GitHub Copilot" dans la recherche
-![img.png](images/img_0.webp)
-3. Installez à partir du bouton d'installation
-![img_1.png](images/img_1.webp)
-4. Appuyez sur le bouton Restart IDE pour redémarrer IntelliJ IDEA
-![img_2.png](images/img_2.webp)
-![img_3.png](images/img_3.webp)
-L'installation est terminée lorsque IntelliJ IDEA redémarre.
+Le plugin GitHub Copilot ajoute des suggestions de code en ligne et Copilot Chat aux IDE JetBrains. Ce guide présente l’installation et la connexion dans IntelliJ IDEA. Les menus et les écrans peuvent varier selon les versions de l’IDE et du plugin.
 
-# Activation
-1. Cliquez sur l'icône dans le coin inférieur droit
-2. Cliquez sur Login to Github
-![img_4.png](images/img_4.webp)
-3. Cliquez sur le bouton Copy and Open
-![img_6.png](images/img_6.webp)
-4. Le navigateur s'ouvrira, donc si vous n'êtes pas connecté à GitHub, connectez-vous, puis collez le code avec Ctrl+V et cliquez sur le bouton Continue
-![img_7.png](images/img_7.webp)
-5. Cliquez sur le bouton Authorize GitHub Copilot Plugin
-![img_8.png](images/img_8.webp)
-![img_9.png](images/img_9.webp)
-Si l'écran ci-dessus s'affiche, l'activation est terminée.
+## Avant de commencer
 
-# Comment l'utiliser
-![img_10.png](images/img_10.webp)
-Lorsque vous tapez quelques caractères dans l'éditeur d'IntelliJ IDEA, GitHub Copilot commencera à vous suggérer la suite de votre code.
-Profitez de la puissante fonctionnalité de complétion de l'IA !
+Vous devez disposer d’un compte GitHub donnant accès à Copilot et d’une version compatible d’IntelliJ IDEA. Copilot Free est soumis à des limites d’utilisation ; les offres payantes donnent accès à davantage de fonctions. Les offres et la compatibilité évoluent : consultez la documentation officielle actuelle.
+
+## Installer le plugin
+
+1. Ouvrez les paramètres des plugins. Sous Windows ou Linux, choisissez **File > Settings > Plugins**. Sous macOS, choisissez **IntelliJ IDEA > Settings > Plugins**.
+2. Dans Marketplace, recherchez **GitHub Copilot** et cliquez sur **Install** pour le plugin édité par GitHub.
+3. Redémarrez l’IDE après l’installation.
+
+## Se connecter à GitHub
+
+1. Ouvrez **Tools > GitHub Copilot > Login to GitHub**.
+2. Dans la fenêtre de connexion, cliquez sur **Copy and Open**. Le navigateur s’ouvre.
+3. Connectez-vous à GitHub dans le navigateur, collez le code d’appareil affiché par l’IDE et cliquez sur **Continue**.
+4. Vérifiez les autorisations demandées et choisissez **Authorize GitHub Copilot Plugin**. Revenez dans l’IDE et cliquez sur **OK** dans l’écran de confirmation.
+
+## Utiliser les suggestions de code
+
+Commencez à écrire dans l’éditeur. Copilot affiche une suggestion en texte grisé ; appuyez sur **Tab** pour l’accepter. Vérifiez les suggestions avant de les utiliser, car elles sont générées à partir du contexte et peuvent nécessiter des modifications. L’icône GitHub Copilot Chat, à droite de l’IDE, permet d’ouvrir une conversation.
+
+Les menus et les fonctions peuvent évoluer. Consultez la documentation officielle pour connaître les étapes et la compatibilité actuelles.
+
+## Références
+
+- [Installer le plugin et se connecter](https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/install-copilot-extension)
+- [Obtenir des suggestions de code dans JetBrains](https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/get-ide-code-suggestions)
+- [Plugin GitHub Copilot sur JetBrains Marketplace](https://plugins.jetbrains.com/plugin/17718-github-copilot--your-ai-pair-programmer)

@@ -1,38 +1,36 @@
 ---
 title: 'How to Create a Shortcut to Insert the Current Date in IntelliJ IDEA'
-date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでDateを貼り付けるCommandを追加する"
 date: 2022-09-04T05:59:04+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["it-technology"]
-description: 'We introduce step-by-step the setting method of ''Live Template'' which automatically inserts the current date and time, convenient for writing blogs, etc., in IntelliJ IDEA. Let''s save the trouble of typing every time.'
+description: 'Create an IntelliJ IDEA live template that inserts an ISO 8601 timestamp with your local time-zone offset. This guide follows current JetBrains documentation for the settings path, date expression, and template expansion key.'
 ---
+
 # Introduction
-I use IntelliJ IDEA when writing this blog. It works well with Git and is convenient because it shows markdown previews.
-Since I have to write the date in the md header every time I write a blog post, and there doesn't seem to be a shortcut for inserting dates, I tried creating a command to insert the date, using the following site as a reference. I hope this helps.
 
-[Is there a shortcut for inserting date/time in IntelliJ IDEA?](https://stackoverflow.com/questions/8714779/is-there-a-shortcut-for-inserting-date-time-in-intellij-idea)
+If you repeatedly enter timestamps while writing, an IntelliJ IDEA live template can insert one from a short abbreviation. This example creates an ISO 8601 timestamp with the computer's local time and UTC offset.
 
-# Setup Procedure
-1. Open "File" > "Settings..." from the menu  
-   ![settings](./images/settings.webp)
-2. Select "Editor" > "Live Template" > "HTML/XML" and click "+"
-3. Select Live Template
-4. Enter "date" in Abbreviation
-5. Enter "Insert date and time" in Description
-6. Enter "$date$" in Template Text
-7. Click Edit Variables button  
-   ![edit_template_variables](./images/edit_template_variables.webp)
-8. Enter "date" in Name
-9. Enter ``date("yyyy-MM-dd'T'HH:mm:ss'+09:00'")`` in Expression
-10. Click OK to close the dialog
-11. Click Define or Change and check "Everywhere"
-12. Click OK to close the dialog
-13. Type "date" in the code editor and press Enter. If the date "2022-09-04T05:59:04+09:00" is inserted, the setup is complete!
+## Create the live template
 
-That's all.
+1. Open **Settings > Editor > Live Templates**. On Windows or Linux, open it from **File > Settings**; on macOS, use **IntelliJ IDEA > Settings**.
+2. Select a template group (for example, **other**) and click **+ > Live Template**.
+3. Set **Abbreviation** to `date` and enter a short **Description**.
+4. Set **Template text** to `$date$`.
+5. Click **Edit Variables**. For the `date` variable, set **Expression** to `date("yyyy-MM-dd'T'HH:mm:ssXXX")`. Enable **Skip if defined** so the value is calculated automatically when the template expands.
+6. Click **Define** and select the contexts where you want the template available (use **Everywhere** if appropriate). Save the settings.
 
-# Conclusion
-I will continue to share more IntelliJ IDEA tips if I find them!
+## Use the template
+
+In the editor, type `date` and press the default expansion key, **Tab**. IntelliJ IDEA inserts the current system date and time in a form such as `2026-11-24T09:30:00+09:00`. The time and offset follow your computer's current time zone. If you changed the expansion key, check it in Live Templates settings.
+
+The `XXX` pattern produces an ISO 8601 time-zone offset. Because the expression does not hard-code `+09:00`, it uses the local time zone on readers' computers. Check that the generated timestamp matches the publication time you intend.
+
+## References
+
+- [Create and edit live templates](https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html)
+- [Live template variables and the date function](https://www.jetbrains.com/help/idea/template-variables.html)
+- [Configure the live-template expansion key](https://www.jetbrains.com/help/idea/settings-live-templates.html)

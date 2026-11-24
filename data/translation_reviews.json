@@ -9845,6 +9845,486 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-086.json",
       "evidenceHash": "eb727abdc7f049f484e7ff711849bd9b723bf81ca6f310b31f2b34b715adaa8e"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.ar.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "3c17e445a1a705dccf0cf0c8399a58b257f9abf504b993f84e32b74d424b240e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "c6fdd3e141f273add7fcb395eb70225fb0305decf7a8fbd41b637dcf0aae651f"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.de.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "65d867387eb188601603b6eeb7a3232d91b99202640ace7b3a2979047cb64f34",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "cf0d9685dde37e0d3ea764c64e652f28a5b36061670eba0cddfc37dc4c2e504e"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.en.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "903b6cf1c1a574c232c82accb184bb050449028339065d5270006439dbadf16f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "7815510892c48ee9bf6581175db639daff330b3efcb2816a6c4b541a0a896d7d"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.es.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "964edf2e92a29d559fcaa482e670b97970d2238ad32f5b414b7e368eb073dfa7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "eac2981d49f0463de0df9959dda66dacdbf00578f40ac0c7a600b12f4cb530ab"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.fr.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "c865cea6776396b3b533fb5d25fd2108cad6a98d87b8b3bd50ba72e427c9962a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "b4812af9c9d24fadddcfe1d590c4e1c4d5b98f930b64177b3987ff4b955123be"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.hi.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "6e40cbd31ccb83a701015a4245e1ac9610ebad980a1ec139e14e963837e26bc3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "6893889bb3b7f8e16d195b1feee4a2133a5e46f32f8ece2fc1eb278bc1e8d39e"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.id.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "99fefcb84e53c9ef7a84840aa472360bc372b3677c0e705604888b13631e642c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "27be9aaa645e34ebd3f7814d1eaa98e50faada3c06b5dbc17c8b3d7b1230d04c"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.ko.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "c6a6bf796a8e826aa6cd3b7c0bd25e2bc0f0294f38902e0d2afbcc173a461dd8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "2e504751851d0202f1af0f243b5a553509f089f55207643ecde23cd109e5d232"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.pt.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "a30ddb78398784bad3d316f9fbc99ce256108b499719a95132cd70984befadc0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "b989db0d090ca8c1306975a4b7331727f31bce7ae0898eaba21dc7e651b99db5"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.ru.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "c599a3c846a68a89667b478a3a8c292b56bfa880d2b80068f7f30800dc1e332c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "9c34db2c5bb0f38cabd37d03d344b82ba807ea0d11701aa4150f669892773bca"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.zh-cn.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "17ab8fa27b8d01097a2f4afb65e2b36c83dc3eb7630b293ad5ce96e9e0512299",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "b52ca093fdd16d44e33bde009bfcebab725f87126905b8758736035a8bf79e70"
+    },
+    "post/IntelliJ IDEAでGitHub Copilotを使う/index.zh-tw.md": {
+      "source": "post/IntelliJ IDEAでGitHub Copilotを使う/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "c3c9a1174a0b174e77ebf08bd3fc32e2d5c33ca2bff1cb66cb0df745707904a2",
+      "translationHash": "c7621c5acd7016f418488027e722926509d1367a9a9aebfe00dcf4a8bbd8b96c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-087.json",
+      "evidenceHash": "04e0a5be2137fef3ebf0562d951b302acf7d5cf22f990435c4f86a092813af69"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.ar.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "81fca6addbb34c1a3ce418bc294d6e4c1b54df413d716182b64c4804c0656f2d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "55426c53333c302639365c376864490f66393dff7d4a3ea65c54d0ceecb012fe"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.de.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "5eadb3469de25a74951a6df4b830c3b96424f0e130aa0e026e7a4f9bee7c38ec",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "1d32c668495ea39e90787b022894287b5161e16b9233c970ff4a565c665fa878"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.en.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "24084b7a679785922844f152ab016a8e1854dd756631e7a82ed03ad9b263308d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "4dccabea8a2eb9dab71bb98a90915ef2f34384f0985b50223ee59320ae03c7f5"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.es.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "fde5332eb54c14e252f0440c310508a72d44fe7d40f51c7061bf01aa1bafa4b8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "bfd10cc3ed9e4445702a8d86075fa55ac7d978732a871333c1d95b226197b1eb"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.fr.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "e946639b14de8bb700fb412e2f56ebf0d98ea87e8e7c5f95a071ed65287aa4a7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "f090072e4ab84405fc45a152ca06de85c07fa04c1212a2db3c2a88e06fd42130"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.hi.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "a6dfe24dcd992dd4672fa274eded267ce09cfe59f1ec0942984380a5d1e93c58",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "7592c396cc726c4c80bdc9a53dc09f42e89fa1d771a8dc837f9dc487575ab19e"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.id.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "e6a46183feb718414afaab5b117736c0b898ecf21e47cc7f210d30cf64ea4b79",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "2b34951da9209293e76a070e85929ff9d625f7b865f3b18b02a687db4c7ee98a"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.ko.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "b33b1568b2e811bc73a8955d8224f5805fcecc5d21c9325ec1073a69bfd146d8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "51490f2cc4bd2b1aae7b24d1c49416c7324249b35ef85ddc30de49b3e7639b68"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.pt.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "6855070de38acfe2f33df1f2ced056fca498ac007875763125cf7e4f68889269",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "580619d754026bf15c15080ddfc3d6ff9649aeacb63e2f5586846a5569c7c419"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.ru.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "327b529c8ff9031672e53adf66169ae670275ad4de56d786e1b80d2b7631b515",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "c267c268d535744fea8b7f1c44bfa93be1626676a4aa349a1d48ebf2c8401a33"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.zh-cn.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "b104a389d1a80e7f492bc4112835e70bbf9334d844f77d318c085b8733a249ed",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "1f0c5b6d4b94324009656e4af81486e899f4f6eb892445ee46659451dc4e4df0"
+    },
+    "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.zh-tw.md": {
+      "source": "post/IntelliJ IDEAで日付を貼り付けるコマンドを追加する/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bafcb941ecd209b6e9e36008735dac020202df4ee3f61998bca741d849d0316b",
+      "translationHash": "0045f6d100de935b3619ef23ff243566aff26b1d45ccd2e5f1674c8a4e731f4e",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-088.json",
+      "evidenceHash": "c985747c9e60b39a666c9407a251654fe7cb668efe50a0c7beafec812dfa4b79"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.ar.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "a3de80dacb4fc42d4f6256b26d9cf1c9b18ce18070bd2ec263ecbf8eecca30c8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "b24ec890014b63dcce085c429b0c7771466ba0fa180390118334cfb01cac0d20"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.de.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "9e87767a61c923912d9e97167989ed4010f16831d703b91481121a1ce80dccfe",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "f64891a4508123f3698f803a262da44f5235b818aa1733c32f4ff3567c1b4b66"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.en.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "8b014b1e93e420f6a521785cb91804921a81b9f362d2b46684e84180b8062400",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "3d360c5d12cef92bd719c0d31d09a9730859659ca43f0a430fa6e6a6fe9b99e8"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.es.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "1f9ba40bad9d68788f08c8da1b8f11fa0c3b59fcf23a5466224df957d6aa8d7d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "8c895d280a171168fc5082f49641d6ed4dec05040eb0141b4b68198cf35c578a"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.fr.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "a3515362860befc2202b6d8cd0b4d5c54bb423f24a2450d0b8f6465943e3a58a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "226f8d71acba1396c8dba9c84af38ee93e465ae963d672e2afd36980ae286224"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.hi.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "40a9358c123943ca0e558c6b98118a0d1e3966cf43fc11a94bbc50b96bcc808d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "f1ab44ff93f981baf2181ebf1f9ccd0adec0d1add799bd92d9b913da42fd2df5"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.id.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "efb860f8655dd6709b6578f3ff641ad635698917ae3be7713a23b2af2ac7201c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "af75bdf4f0def835e7b79f41cce56ad48effdac5c62a448b029cfc7944c3d7ea"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.ko.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "07723382d8053144c9c9e793d5fa2610caf9e051da72c1e6e846e66a69f9c8f8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "105fcf1553b339f886956710e87fc2972beba98f04883777e3d4d3b108a17327"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.pt.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "9cc967e2452a7442404cf00a209ee1b584d26a7b6d5c819389dd789705559d51",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "1f69d317399c98e674c9db0d341f4cc36d92a651b5fa17862ff62daaeba4dc1a"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.ru.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "0b2f0e70bfaa0968a684185eccb2a0f87154aee6ff71712a324c33fa9f7bd328",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "b72d896a199cea66b3e8ed5b584c85ed24b752f079f59307c7665f42d68eea5d"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.zh-cn.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "47d51f7b4aa8a0658a321748a436fefca21a9713c1b2bd4c865863ec8ec4eb30",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "a646bc41cb208fcd857241dbe679e21f0e1279654e95d6231dfc9a289ca273aa"
+    },
+    "post/LoadIconはDestroyIconを呼び出す必要はない/index.zh-tw.md": {
+      "source": "post/LoadIconはDestroyIconを呼び出す必要はない/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "bb602dc3dd091f4d3ac08a9cad73d865ebfc7ca846c8c40c8b0a0317df79d52d",
+      "translationHash": "68764652d964986b9797da62675763691fde39d2ff175bf22123fa320b24e5cb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-089.json",
+      "evidenceHash": "e960813a18686a142a2fca871c9b53708618c313e59f19c3c7ac5e8a402bece5"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.ar.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "04a0e8d1eca134f8697e72539e6b7cdabca556a9b3bc4ff450eb6f750f71e3f0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "8ae00ac055aa019b1f9ea5c67da5aa72a05fb5e23241987c285e32ec24dfa0f8"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.de.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "f348f3d620412506b2dee6af9c83aab1f7ef504e3d9a199416b947a268cb3b82",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "d1a00591158b299cf50da47a144125ffbda61853c5043ffd0f30b6c3c1081078"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.en.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "e85ebf08806ffd8004141d6d2e6dfef31b4bc1de68aec3ff6c56fc7766fca35d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "7e0f09695e9370d87d6d62e5973859b647d82a5bc73d52d8dd7f6dd115e004a6"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.es.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "67333e9a5e232cd8e03c19f7adebdcbf99cea0f53a4cbe3ca7dee711b38dab3a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "542ea7ea41febbf73a10aea50428fe2bedd1fbbe18c5ef9abca53c51932781b7"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.fr.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "39501b105923e859666672687f06b73efcef2d8d190183e0ff784f30d746637b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "1782898911eae44bb48fb317eab9bb3060a115fdb0787c71623895adc76cf86a"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.hi.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "3e33ef9523b027811da1b18ff2249182dd9cbc6bc263e2054029b085359112fb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "9bec69e34679fbeac9d1fd1d95837f7397242edaa2f0db001bf043b40e7b6ed2"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.id.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "9c23b027a29d7caa37ed39e5e20b4ceb9b93a9118a48fff697d01015f6dc8c9d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "8b092d854429696c403c89fb530ad2fd694cd8778139a3e2b2f95bdaa0e29097"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.ko.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "f8436e04e7fe28d5f5bad64e87a88344d990508145823b61c1c0a8137baa7d3f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "849f69534f4fc88ab2d47dda293c5c6d3d37f8134fc7de9d000691032ac0b245"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.pt.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "4ce0d4e92f033137691c8784314890ab18c5d39bb467d8b7104a67004a46622a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "ca59592c0b7d009a07f5494f649d109ec4b9456301c3c8de6ffc41df6bcb9fec"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.ru.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "d76d688c9ff2c1e68bfb50fb5d39fc991b630bd4a0054725f2071bbd61613f46",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "daa7fa030d0113589ab07517b3558a662001c3b0053ea700b4381f9a4a75bd99"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.zh-cn.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "577649c791e35253e4c9ef5469f79cebc81f5074fa3fd820f56f7ffe959bd2cf",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "2958e8b832d19e6fe13165441c9a651d52cd8e8fca1947155cda5e8d18078532"
+    },
+    "post/かっこいい Web ページテンプレート（html5up）/index.zh-tw.md": {
+      "source": "post/かっこいい Web ページテンプレート（html5up）/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "dce35fd9c62428f27fee2ed1de112a3714582400484489b58eb0c2f4ae8910db",
+      "translationHash": "56f0609dd412fdaac4221dfe2259c0172163b0e345c57320d555cef1c9b2bb12",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-090.json",
+      "evidenceHash": "2f85242dace78a304a5c32fca0f22d1c8937188c86e6cd9001c4e710df543aa0"
     }
   }
 }

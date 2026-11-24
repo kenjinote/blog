@@ -1,44 +1,36 @@
 ---
-
-
-
 title: 'Cómo crear un atajo para insertar la fecha actual en IntelliJ IDEA'
-date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでFechaを貼り付けるComandoを追加する"
 date: 2022-09-04T05:59:04+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["it-technology"]
-description: 'Presentamos detalladamente, paso a paso, cómo configurar una "Live Template" en IntelliJ IDEA para insertar automáticamente la fecha y la hora actuales, muy útil cuando escribes en un blog u otras tareas similares. Ahórrate el esfuerzo de escribirla cada vez.'
+description: 'Crea una plantilla dinámica de IntelliJ IDEA que inserta una fecha y hora ISO 8601 con el desfase horario local. La guía sigue la documentación actual de JetBrains para configurar la expresión y la tecla de expansión.'
 ---
 
-
-
 # Introducción
-Cuando escribo en este blog, utilizo IntelliJ IDEA. Es conveniente porque tiene buena compatibilidad con Git y muestra una vista previa del markdown.
-Como tengo que escribir `date` en el encabezado del md cada vez que escribo un post y parece que no hay un atajo para insertar esa fecha, he creado un comando para insertar la fecha consultando el siguiente sitio web. Espero que te sea útil.
 
-[Is there a shortcut for inserting date/time in IntelliJ IDEA?](https://stackoverflow.com/questions/8714779/is-there-a-shortcut-for-inserting-date-time-in-intellij-idea)
+Si escribes fechas y horas con frecuencia, una plantilla dinámica de IntelliJ IDEA puede insertarlas mediante una abreviatura breve. En este ejemplo se crea una marca de tiempo ISO 8601 con la hora y el desfase horario local del equipo.
 
-# Pasos de configuración
-1. Abrir "File" > "Settings..." en el menú  
-   ![settings](./images/settings.webp)
-2. Seleccionar "Editor" > "Live Template" > "HTML/XML" y hacer clic en "+"
-3. Seleccionar "Live Template"
-4. Ingresar "date" en Abbreviation
-5. Ingresar "Insertar fecha y hora" en Description
-6. Ingresar "$date$" en Template Text
-7. Hacer clic en el botón Edit Variables  
-   ![edit_template_variables](./images/edit_template_variables.webp)
-8. Ingresar "date" en Name
-9. Ingresar ``date("yyyy-MM-dd'T'HH:mm:ss'+09:00'")`` en Expression
-10. Cerrar el cuadro de diálogo con OK
-11. Presionar Define o Change y marcar la casilla "Everywhere"
-12. Cerrar el cuadro de diálogo con OK
-13. ¡Si ingresas "date" en el editor de código y presionas Enter para insertar la fecha como "2022-09-04T05:59:04+09:00", la configuración está completa!
+## Crear la plantilla dinámica
 
-Eso es todo.
+1. Abre **Settings > Editor > Live Templates**. En Windows o Linux, accede desde **File > Settings**; en macOS, desde **IntelliJ IDEA > Settings**.
+2. Elige un grupo de plantillas (por ejemplo, **other**) y pulsa **+ > Live Template**.
+3. Escribe `date` en **Abbreviation** y añade una breve **Description**.
+4. En **Template text**, escribe `$date$`.
+5. Pulsa **Edit Variables**. Para la variable `date`, introduce `date("yyyy-MM-dd'T'HH:mm:ssXXX")` en **Expression**. Activa **Skip if defined** para calcular el valor al expandir la plantilla.
+6. Pulsa **Define** y selecciona los contextos donde quieras usarla (elige **Everywhere** si corresponde). Guarda la configuración.
 
-# Conclusión
-¡Si encuentro más pequeños trucos para IntelliJ IDEA, los publicaré de nuevo!
+## Usar la plantilla
+
+En el editor, escribe `date` y pulsa la tecla de expansión predeterminada, **Tab**. IntelliJ IDEA insertará la fecha y hora actuales del sistema en un formato como `2026-11-24T09:30:00+09:00`. La hora y el desfase dependen de la zona horaria actual del equipo. Si cambiaste la tecla de expansión, compruébala en Live Templates.
+
+El patrón `XXX` genera un desfase horario ISO 8601. Como la expresión no fija `+09:00`, cada lector obtiene la hora de su zona horaria local. Comprueba que la fecha generada corresponda a la hora de publicación que deseas.
+
+## Referencias
+
+- [Crear y editar plantillas dinámicas](https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html)
+- [Variables de plantillas y función date](https://www.jetbrains.com/help/idea/template-variables.html)
+- [Configurar la tecla de expansión](https://www.jetbrains.com/help/idea/settings-live-templates.html)

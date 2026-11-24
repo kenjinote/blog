@@ -1,38 +1,36 @@
 ---
 title: 'Comment créer un raccourci pour insérer la date actuelle dans IntelliJ IDEA'
-date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでDateを貼り付けるCommandeを追加する"
 date: 2022-09-04T05:59:04+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["it-technology"]
-description: 'Nous présentons en détail, étape par étape, la méthode de configuration des « Live Templates » qui insère automatiquement la date et l''heure actuelles, ce qui est très pratique lors de la rédaction d''un blog dans IntelliJ IDEA. Épargnez-vous l''effort de le taper à chaque fois.'
+description: 'Créez un modèle dynamique IntelliJ IDEA qui insère une date et une heure au format ISO 8601 avec le décalage du fuseau horaire local. Ce guide suit la documentation JetBrains actuelle pour l’expression et la touche d’expansion.'
 ---
+
 # Introduction
-J'utilise IntelliJ IDEA lorsque j'écris ce blog. C'est pratique car sa compatibilité avec Git est bonne et il affiche un aperçu Markdown.
-À chaque fois que j'écris un blog, je dois écrire `date` dans l'en-tête du fichier md. Comme il ne semble pas y avoir de raccourci pour insérer la date, j'ai créé une commande pour l'insérer en me référant au site ci-dessous. J'espère que cela vous sera utile.
 
-[Is there a shortcut for inserting date/time in IntelliJ IDEA?](https://stackoverflow.com/questions/8714779/is-there-a-shortcut-for-inserting-date-time-in-intellij-idea)
+Si vous saisissez souvent des horodatages, un modèle dynamique IntelliJ IDEA peut les insérer à partir d’une abréviation. Cet exemple crée un horodatage ISO 8601 avec l’heure locale et le décalage horaire de l’ordinateur.
 
-# Procédure de configuration
-1. Ouvrez "File" > "Settings..." dans le menu  
-   ![settings](./images/settings.webp)
-2. Avec "Editor" > "Live Template" > "HTML/XML" sélectionné, cliquez sur "+"
-3. Sélectionnez Live Template
-4. Entrez "date" dans Abbreviation
-5. Entrez "Insérer la date et l'heure" dans Description
-6. Entrez "$date$" dans Template Text
-7. Cliquez sur le bouton Edit Variables  
-   ![edit_template_variables](./images/edit_template_variables.webp)
-8. Entrez "date" dans Name
-9. Entrez ``date("yyyy-MM-dd'T'HH:mm:ss'+09:00'")`` dans Expression
-10. Fermez la boîte de dialogue avec OK
-11. Appuyez sur Define ou Change et cochez "Everywhere"
-12. Fermez la boîte de dialogue avec OK
-13. Tapez "date" dans l'éditeur de code et appuyez sur Entrée. Lorsque la date "2022-09-04T05:59:04+09:00" est insérée, la configuration est terminée !
+## Créer le modèle dynamique
 
-C'est tout
+1. Ouvrez **Settings > Editor > Live Templates**. Sous Windows ou Linux, passez par **File > Settings** ; sous macOS, par **IntelliJ IDEA > Settings**.
+2. Choisissez un groupe de modèles (par exemple **other**), puis cliquez sur **+ > Live Template**.
+3. Saisissez `date` dans **Abbreviation** et ajoutez une courte **Description**.
+4. Dans **Template text**, saisissez `$date$`.
+5. Cliquez sur **Edit Variables**. Pour la variable `date`, saisissez `date("yyyy-MM-dd'T'HH:mm:ssXXX")` dans **Expression**. Activez **Skip if defined** pour calculer automatiquement la valeur à l’expansion.
+6. Cliquez sur **Define** et sélectionnez les contextes où le modèle doit être disponible (choisissez **Everywhere** si nécessaire). Enregistrez les paramètres.
 
-# Conclusion
-Si je trouve d'autres petites astuces pour IntelliJ IDEA, j'aimerais les publier à nouveau !
+## Utiliser le modèle
+
+Dans l’éditeur, saisissez `date` et appuyez sur la touche d’expansion par défaut, **Tab**. IntelliJ IDEA insère la date et l’heure système actuelles, par exemple `2026-11-24T09:30:00+09:00`. L’heure et le décalage dépendent du fuseau horaire actuel de l’ordinateur. Si vous avez modifié la touche d’expansion, vérifiez-la dans Live Templates.
+
+Le motif `XXX` produit un décalage horaire ISO 8601. L’expression ne fixe pas `+09:00` : elle utilise le fuseau horaire local de chaque lecteur. Vérifiez que l’horodatage correspond bien à l’heure de publication souhaitée.
+
+## Références
+
+- [Créer et modifier des modèles dynamiques](https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html)
+- [Variables de modèles dynamiques et fonction date](https://www.jetbrains.com/help/idea/template-variables.html)
+- [Configurer la touche d’expansion](https://www.jetbrains.com/help/idea/settings-live-templates.html)

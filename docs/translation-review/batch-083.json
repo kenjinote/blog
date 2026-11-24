@@ -14,7 +14,7 @@
     "Corrected two Indonesian wording issues in the proof lead-in and the fourfold-sample-size standard-error explanation.",
     "No other meaning, terminology, mathematical, code, or reference discrepancies requiring correction were found."
   ],
-  "publicationPending": true,
+  "publicationPending": false,
   "reviews": {
     "post/central-limit-theorem/index.en.md": {
       "reviewKind": "ai",
@@ -436,5 +436,11 @@
         "Python simulation was not executed and rendered diagrams were not visually certified."
       ]
     }
+  },
+  "publication": {
+    "record": "docs/translation-review/publication-083.json",
+    "ciRun": 45208114443,
+    "sourceCommit": "bb9f443dbf450141b116aa5a962485e7d28f0f6c",
+    "allPassed": true
   }
 }

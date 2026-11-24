@@ -1,38 +1,36 @@
 ---
 title: 'Wie man einen Shortcut zum Einfügen des aktuellen Datums in IntelliJ IDEA erstellt'
-date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでDatumを貼り付けるBefehlを追加する"
 date: 2022-09-04T05:59:04+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["it-technology"]
-description: 'Wir zeigen Ihnen Schritt für Schritt detailliert, wie Sie in IntelliJ IDEA eine „Live Template“ einrichten, um automatisch das aktuelle Datum und die Uhrzeit einzufügen – nützlich beispielsweise beim Schreiben von Blogs. Sparen Sie sich die Mühe der manuellen Eingabe jedes Mal.'
+description: 'Erstellen Sie eine IntelliJ-IDEA-Live-Vorlage, die einen ISO-8601-Zeitstempel mit dem lokalen Zeitzonenversatz einfügt. Die Anleitung folgt der aktuellen JetBrains-Dokumentation zu Einstellungspfad, Datumsausdruck und Erweiterungstaste.'
 ---
+
 # Einführung
-Wenn ich diesen Blog schreibe, verwende ich IntelliJ IDEA. Es ist praktisch, da es gut mit Git harmoniert und eine Markdown-Vorschau anzeigt.
-Da ich jedes Mal, wenn ich einen Blog schreibe, das `date` in den md-Header schreiben muss, und es anscheinend keine Tastenkombination zum Einfügen des Datums gibt, habe ich unter Bezugnahme auf die unten stehende Website einen Befehl zum Einfügen des Datums erstellt. Ich hoffe, das ist hilfreich.
 
-[Is there a shortcut for inserting date/time in IntelliJ IDEA?](https://stackoverflow.com/questions/8714779/is-there-a-shortcut-for-inserting-date-time-in-intellij-idea)
+Wenn Sie beim Schreiben häufig Zeitstempel eingeben, kann eine IntelliJ-IDEA-Live-Vorlage sie über eine kurze Abkürzung einfügen. Dieses Beispiel erstellt einen ISO-8601-Zeitstempel mit der lokalen Uhrzeit und Zeitzonenverschiebung des Computers.
 
-# Einrichtungsschritte
-1. Öffnen Sie "File" > "Settings..." im Menü  
-   ![settings](./images/settings.webp)
-2. Klicken Sie auf "+", während "Editor" > "Live Template" > "HTML/XML" ausgewählt ist
-3. Wählen Sie Live Template aus
-4. Geben Sie "date" bei Abbreviation ein
-5. Geben Sie "Datum und Uhrzeit einfügen" bei Description ein
-6. Geben Sie "$date$" bei Template Text ein
-7. Klicken Sie auf die Schaltfläche Edit Variables  
-   ![edit_template_variables](./images/edit_template_variables.webp)
-8. Geben Sie "date" bei Name ein
-9. Geben Sie ``date("yyyy-MM-dd'T'HH:mm:ss'+09:00'")`` bei Expression ein
-10. Schließen Sie den Dialog mit OK
-11. Drücken Sie auf Define oder Change und aktivieren Sie "Everywhere"
-12. Schließen Sie den Dialog mit OK
-13. Geben Sie "date" im Code-Editor ein und drücken Sie die Eingabetaste. Wenn das Datum "2022-09-04T05:59:04+09:00" eingefügt wird, ist die Einrichtung abgeschlossen!
+## Live-Vorlage erstellen
 
-Das war's
+1. Öffnen Sie **Settings > Editor > Live Templates**. Unter Windows oder Linux gelangen Sie über **File > Settings** dorthin, unter macOS über **IntelliJ IDEA > Settings**.
+2. Wählen Sie eine Vorlagengruppe (zum Beispiel **other**) und klicken Sie auf **+ > Live Template**.
+3. Tragen Sie bei **Abbreviation** `date` ein und ergänzen Sie eine kurze **Description**.
+4. Setzen Sie **Template text** auf `$date$`.
+5. Klicken Sie auf **Edit Variables**. Geben Sie für die Variable `date` bei **Expression** `date("yyyy-MM-dd'T'HH:mm:ssXXX")` ein. Aktivieren Sie **Skip if defined**, damit der Wert beim Erweitern automatisch berechnet wird.
+6. Klicken Sie auf **Define** und wählen Sie die gewünschten Kontexte (bei Bedarf **Everywhere**). Speichern Sie die Einstellungen.
 
-# Fazit
-Wenn ich weitere kleine Tricks für IntelliJ IDEA finde, werde ich sie gerne wieder veröffentlichen!
+## Vorlage verwenden
+
+Geben Sie im Editor `date` ein und drücken Sie die standardmäßige Erweiterungstaste **Tab**. IntelliJ IDEA fügt das aktuelle Systemdatum mit Uhrzeit ein, zum Beispiel `2026-11-24T09:30:00+09:00`. Uhrzeit und Versatz richten sich nach der aktuellen Zeitzone des Computers. Wenn Sie die Erweiterungstaste geändert haben, prüfen Sie sie in den Live-Templates-Einstellungen.
+
+Das Muster `XXX` gibt einen ISO-8601-Zeitzonenversatz aus. Da der Ausdruck `+09:00` nicht fest vorgibt, verwendet er die lokale Zeitzone der jeweiligen Lesenden. Prüfen Sie, ob der Zeitstempel zur gewünschten Veröffentlichungszeit passt.
+
+## Quellen
+
+- [Live-Vorlagen erstellen und bearbeiten](https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html)
+- [Live-Vorlagenvariablen und date-Funktion](https://www.jetbrains.com/help/idea/template-variables.html)
+- [Erweiterungstaste für Live-Vorlagen konfigurieren](https://www.jetbrains.com/help/idea/settings-live-templates.html)

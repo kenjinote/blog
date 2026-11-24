@@ -129,7 +129,7 @@ for language in LANGS:
         "hreflangCount": len(page.hreflang) == 14,
         "hreflangTargets": set(page.hreflang.values()) == targets,
         "officialReferences": all(link in page.links for link in OFFICIAL),
-        "currentCommandsAndCaveats": all(token in compact for token in ["hugo new project", "hugo new content", "hugo deploy", "hugo list all", "0.159.2", "GitHubPages", "Deploy"]),
+        "currentCommandsAndCaveats": all(token.replace(" ", "") in compact for token in ["hugo new project", "hugo new content", "hugo deploy", "hugo list all", "0.159.2", "GitHub Pages", "Deploy"]),
         "dates": yaml_value(file, "date").startswith("2024-05-31") and yaml_value(file, "lastmod").startswith("2026-11-24"),
     }
     results.append({"language": language, "url": url, "status": status, "checks": checks, "passed": all(checks.values())})

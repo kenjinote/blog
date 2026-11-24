@@ -1,44 +1,45 @@
 ---
 title: 'كيفية تثبيت وتفعيل GitHub Copilot في IntelliJ IDEA'
-date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでGitHub Copilotを使う"
 date: 2022-09-10T09:44:55+09:00
+lastmod: 2026-11-24T00:00:00+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA","GitHub Copilot"]
 draft: false
 image: "images/img.webp"
 categories: ["tools-development-environment"]
-description: 'نشرح بوضوح مع الصور طريقة التثبيت المحددة وخطوات التفعيل لاستخدام GitHub Copilot في بيئة IntelliJ IDEA. دعنا نحسن كفاءة التطوير بشكل كبير بالاستفادة من الذكاء الاصطناعي.'
+description: 'تعرّف على طريقة تثبيت إضافة GitHub Copilot في IntelliJ IDEA، وتسجيل الدخول بحساب GitHub، واستخدام اقتراحات التعليمات البرمجية داخل المحرر. يشرح الدليل متطلبات الوصول وخطوات المصادقة الحالية مع روابط إلى الوثائق الرسمية.'
 ---
+
 # مقدمة
-GitHub Copilot هي أداة لإكمال التعليمات البرمجية تعتمد على الذكاء الاصطناعي طورتها GitHub.
-إذا قمت بتثبيت إضافة GitHub Copilot في بيئة التطوير IntelliJ IDEA، يمكنك استخدام GitHub Copilot في IntelliJ IDEA.
-لتفعيلها، تحتاج إلى حساب Github.
 
-# طريقة التثبيت
-1. اختر Settings (الإعدادات) من قائمة File (ملف) في IntelliJ IDEA
-2. اختر Plugins (الإضافات) وابحث عن "GitHub Copilot" في البحث
-![img.png](images/img_0.webp)
-3. قم بالتثبيت من زر التثبيت (Install)
-![img_1.png](images/img_1.webp)
-4. اضغط على زر Restart IDE (إعادة تشغيل بيئة التطوير) لإعادة تشغيل IntelliJ IDEA
-![img_2.png](images/img_2.webp)
-![img_3.png](images/img_3.webp)
-بمجرد إعادة تشغيل IntelliJ IDEA، يكتمل التثبيت.
+تضيف إضافة GitHub Copilot اقتراحات التعليمات البرمجية داخل المحرر وميزة Copilot Chat إلى بيئات JetBrains. يشرح هذا الدليل التثبيت الأساسي وتسجيل الدخول في IntelliJ IDEA. قد تختلف أسماء القوائم والشاشات بحسب إصدار البيئة والإضافة.
 
-# التفعيل
-1. انقر على الأيقونة في أسفل اليمين
-2. انقر على Login to Github (تسجيل الدخول إلى Github)
-![img_4.png](images/img_4.webp)
-3. انقر على زر Copy and Open (نسخ وفتح)
-![img_6.png](images/img_6.webp)
-4. سيفتح المتصفح. إذا لم تكن مسجلاً الدخول إلى Github، قم بتسجيل الدخول، ثم الصق الرمز باستخدام Ctrl+V وانقر على زر Continue (متابعة)
-![img_7.png](images/img_7.webp)
-5. انقر على زر Authorize GitHub Copilot Plugin (تصريح إضافة GitHub Copilot)
-![img_8.png](images/img_8.webp)
-![img_9.png](images/img_9.webp)
-إذا ظهرت الشاشة أعلاه، فقد اكتمل التفعيل.
+## قبل البدء
 
-# تجربة الاستخدام
-![img_10.png](images/img_10.webp)
-عند إدخال بضعة أحرف في محرر IntelliJ IDEA، سيقترح GitHub Copilot استمرار التعليمات البرمجية.
-استمتع بميزة الإكمال القوية المدعومة بالذكاء الاصطناعي!
+تحتاج إلى حساب GitHub لديه إمكانية استخدام Copilot وإصدار متوافق من IntelliJ IDEA. يفرض Copilot Free حدوداً على الاستخدام، بينما تتيح الخطط المدفوعة استخداماً أوسع. قد تتغير الخطط والتوافق، لذا راجع الوثائق الرسمية الحالية.
+
+## تثبيت الإضافة
+
+1. افتح إعدادات Plugins. في Windows أو Linux اختر **File > Settings > Plugins**، وفي macOS اختر **IntelliJ IDEA > Settings > Plugins**.
+2. ابحث في Marketplace عن **GitHub Copilot**، ثم انقر **Install** بجوار الإضافة المقدمة من GitHub.
+3. أعد تشغيل بيئة التطوير بعد التثبيت.
+
+## تسجيل الدخول إلى GitHub
+
+1. افتح **Tools > GitHub Copilot > Login to GitHub**.
+2. في نافذة تسجيل الدخول انقر **Copy and Open** لفتح المتصفح.
+3. سجّل الدخول إلى GitHub في المتصفح، والصق رمز الجهاز الذي تعرضه بيئة التطوير، ثم انقر **Continue**.
+4. راجع الأذونات المطلوبة واختر **Authorize GitHub Copilot Plugin**. عُد إلى بيئة التطوير وانقر **OK** في شاشة التأكيد.
+
+## استخدام اقتراحات التعليمات البرمجية
+
+ابدأ الكتابة في المحرر. يعرض Copilot اقتراحاً بلون رمادي؛ اضغط **Tab** لقبوله. راجع الاقتراح قبل استخدامه لأنه يُنشأ بحسب السياق وقد يحتاج إلى تعديل. افتح أيقونة GitHub Copilot Chat على الجانب الأيمن لبدء محادثة.
+
+قد تتغير القوائم والميزات. راجع الوثائق الرسمية لمعرفة الخطوات والتوافق الحاليين.
+
+## مراجع
+
+- [تثبيت الإضافة وتسجيل الدخول](https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/install-copilot-extension)
+- [الحصول على اقتراحات التعليمات البرمجية في JetBrains](https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/get-ide-code-suggestions)
+- [إضافة GitHub Copilot في JetBrains Marketplace](https://plugins.jetbrains.com/plugin/17718-github-copilot--your-ai-pair-programmer)

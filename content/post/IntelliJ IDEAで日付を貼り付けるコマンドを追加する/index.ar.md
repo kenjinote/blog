@@ -1,38 +1,36 @@
 ---
 title: 'كيفية إنشاء اختصار لإدراج التاريخ الحالي في IntelliJ IDEA'
-date: "2026-09-24T19:44:38+09:00"
 slug: "IntelliJ IDEAでتاريخを貼り付けるأمرを追加する"
 date: 2022-09-04T05:59:04+09:00
+lastmod: 2026-11-24T00:00:00+09:00
 tags: ["IntelliJ IDEA"]
 draft: false
 image: "images/IntelliJ_logo.webp"
 categories: ["it-technology"]
-description: 'نقدم شرحًا مفصلاً خطوة بخطوة لكيفية إعداد ''Live Template'' لإدراج التاريخ والوقت الحاليين تلقائيًا، وهو أمر مفيد عند كتابة المدونات وغيرها في بيئة IntelliJ IDEA. دعنا نوفر عناء الكتابة اليدوية في كل مرة.'
+description: 'أنشئ قالباً مباشراً في IntelliJ IDEA لإدراج طابع زمني بتنسيق ISO 8601 يتضمن إزاحة المنطقة الزمنية المحلية. يتبع هذا الدليل وثائق JetBrains الحالية لإعداد التعبير ومفتاح التوسيع.'
 ---
+
 # مقدمة
-عند كتابة هذه المدونة، أستخدم IntelliJ IDEA. إنه مناسب لأن توافقه مع Git جيد ويعرض معاينة Markdown.
-في كل مرة أكتب فيها في المدونة، أضطر إلى كتابة التاريخ في ترويسة ملف md، ولا يبدو أن هناك اختصارًا لإدراج التاريخ، لذلك قمت بإنشاء أمر لإدراج التاريخ بالرجوع إلى الموقع أدناه. آمل أن يكون هذا مفيدًا.
 
-[Is there a shortcut for inserting date/time in IntelliJ IDEA?](https://stackoverflow.com/questions/8714779/is-there-a-shortcut-for-inserting-date-time-in-intellij-idea)
+إذا كنت تدخل الطوابع الزمنية كثيراً أثناء الكتابة، فيمكن لقالب مباشر في IntelliJ IDEA إدراجها باستخدام اختصار قصير. ينشئ هذا المثال طابعاً زمنياً بتنسيق ISO 8601 مع الوقت المحلي وإزاحة المنطقة الزمنية للكمبيوتر.
 
-# خطوات الإعداد
-1. افتح من القائمة "File" > "Settings..."  
-   ![settings](./images/settings.webp)
-2. حدد "Editor" > "Live Template" > "HTML/XML" وانقر فوق "+"
-3. اختر Live Template
-4. أدخل "date" في Abbreviation
-5. أدخل "إدراج التاريخ والوقت" في Description
-6. أدخل "$date$" في Template Text
-7. انقر فوق زر Edit Variables  
-   ![edit_template_variables](./images/edit_template_variables.webp)
-8. أدخل "date" في Name
-9. أدخل ``date("yyyy-MM-dd'T'HH:mm:ss'+09:00'")`` في Expression
-10. أغلق مربع الحوار بالنقر فوق OK
-11. اضغط على Define أو Change وحدد مربع "Everywhere"
-12. أغلق مربع الحوار بالنقر فوق OK
-13. في محرر التعليمات البرمجية، اكتب "date" واضغط على Enter. إذا تم إدراج التاريخ "2022-09-04T05:59:04+09:00"، يكون الإعداد قد اكتمل!
+## إنشاء القالب المباشر
 
-هذا كل شيء.
+1. افتح **Settings > Editor > Live Templates**. في Windows أو Linux افتحه من **File > Settings**، وفي macOS من **IntelliJ IDEA > Settings**.
+2. اختر مجموعة قوالب (مثل **other**) وانقر **+ > Live Template**.
+3. أدخل `date` في **Abbreviation** واكتب وصفاً موجزاً في **Description**.
+4. أدخل `$date$` في **Template text**.
+5. انقر **Edit Variables**. للمتغير `date` أدخل `date("yyyy-MM-dd'T'HH:mm:ssXXX")` في **Expression**. فعّل **Skip if defined** ليتم حساب القيمة تلقائياً عند توسيع القالب.
+6. انقر **Define** وحدد السياقات التي تريد استخدام القالب فيها (اختر **Everywhere** إذا كان ذلك مناسباً). احفظ الإعدادات.
 
-# خاتمة
-سأشاركها مرة أخرى إذا وجدت حيلًا صغيرة أخرى لـ IntelliJ IDEA!
+## استخدام القالب
+
+اكتب `date` في المحرر واضغط مفتاح التوسيع الافتراضي **Tab**. يُدرج IntelliJ IDEA تاريخ النظام ووقته الحاليين بصيغة مثل `2026-11-24T09:30:00+09:00`. يعتمد الوقت والإزاحة على المنطقة الزمنية الحالية للكمبيوتر. إذا غيّرت مفتاح التوسيع، فتحقق منه في إعدادات Live Templates.
+
+ينشئ النمط `XXX` إزاحة منطقة زمنية بتنسيق ISO 8601. لا يثبت التعبير القيمة `+09:00`، بل يستخدم المنطقة الزمنية المحلية لكل قارئ. تحقق من أن الطابع الزمني الناتج يطابق وقت النشر المقصود.
+
+## مراجع
+
+- [إنشاء القوالب المباشرة وتحريرها](https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html)
+- [متغيرات القوالب المباشرة ودالة date](https://www.jetbrains.com/help/idea/template-variables.html)
+- [إعداد مفتاح توسيع القالب المباشر](https://www.jetbrains.com/help/idea/settings-live-templates.html)
