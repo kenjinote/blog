@@ -17405,6 +17405,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-149.json",
       "evidenceHash": "5297dfff35710f5dd1d410f1a75e9e73b30874f28503fcbb05bf697f2faff3f2"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.en.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "fb695b67db21a08f2e295676e0a236dba4d051c8a159b1d459e8ff2ca99cd0f7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "c4b612a8e3aca2c25615b1d6ab936e2cf80e5f26773ae0078a510c86244269ea"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.zh-cn.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "ba2842db58cbd4c2955cc8d7c631ce3d4af316ff47f8c66f68288d3fb5af661c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "6c23eec8ac01e088f3f2232ee846a1840266264b661fca17a7c775214998aca1"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.es.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "aec553a46b377359561e7d22ba75f47b63bed3b93c8797481d319d23ca278819",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "bb53d2cf6c9f14f60b8d9eb2b735b2ae03cc6caa15e916985b7a69863d10f3d4"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ko.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "cd1872bf55502f32e42cf954389cb1341154f18db421941e755429e93bbdc518",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "1af16f1d5ef991b28c3f4369d6ba24b02f4bac9710e844103d22287a104483ee"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.pt.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "d2cf7d956d852021fad77167e4ddaba7dab8fd77ef33b45e86d20535b05667bd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "028c19ff2f23d9568e6a45be2e3205cd973951c43b5fcf4a5a8c7fc6a866cda7"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.zh-tw.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "40e8c638c0413afa69bd7095ddeefde6bf8df9e097af9a2624e55f0e234c2461",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "7e08c94d0a9db5244c91a323c353ec3c14c88d91b1bebf3d6be9155f01e33bc0"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.hi.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "9b14ba8404183b182df0f188f134b729b36ee96bd060411c0290bc83a3a62bc5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "8a2cbaedeae663c30f6d3ac864baae1d396c313a8f03f4981dcff389b69ee5e1"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.fr.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "18e6c8213cf5dae2ea0d62d71abe2f5ed5e9028995b0650d9423d5ad348f2111",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "4f51c61e0168d108bb645cdbf24b5a29bf8e316aa3cdb31c40a01a265773b5ad"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.de.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "fd5bda936ed615d3e9d71669f4c6bc234ad45e9488d6fb749d2a4006fe3192a2",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "c7a4894ea374a3fcf164ab1754451755346e38978ae22d53abebf2a5b286bdcf"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ar.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "f9932b21c45884efdc10069a09e65c7a1b13a63577f5f36845b3a4fb2d9525c7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "5b7255f9160dd4871311696f0b76682bd6d00b042298cd6fb20452df3382f126"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ru.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "bc3b8bffc96650da6e581f06c4de72e6f731f607371df6c73012c4acead1c504",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "8675f8388ed4a6c76dfff72aa9ebcb295e875e8306bb557307d769070a893cb6"
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.id.md": {
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "d96bceec4f396aedc966f671ad4b5247c51f1b535032ebaabfd0a25940660e8a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-150.json",
+      "evidenceHash": "526e4a9c60c14675775ca0da44f68a040d5db8e9d05cfa96d0f41efcaa5523a4"
     }
   }
 }

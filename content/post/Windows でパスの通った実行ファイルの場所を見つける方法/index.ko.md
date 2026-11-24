@@ -1,37 +1,35 @@
 ---
-
-
-
-
-title: 'Windows에서 패스가 설정된 실행 파일의 위치(패스)를 찾는 방법 [where 명령]'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Windows で경로の通った실행 파일の場所を見つける方法"
+title: "Windows에서 실행 파일 위치 찾기: where.exe와 PowerShell"
 date: 2023-04-03T00:02:55+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Windows で경로の通った실행 파일の場所を見つける方法"
 tags: ["Windows", "경로", "실행 파일", "명령 프롬프트"]
 draft: false
 image: "img.webp"
 categories: ["windows", "terminal"]
-description: 'Windows의 명령 프롬프트나 PowerShell에서 실행 파일의 저장 위치(전체 경로)를 쉽게 찾는 방법을 해설합니다. ''where'' 명령을 사용하여 패스가 설정된 앱의 정확한 배치 위치를 빠르게 특정하는 유용한 팁을 소개합니다.'
+description: "명령 프롬프트의 where와 PowerShell의 where.exe·Get-Command로 PATH의 실행 파일을 찾는 방법과 별칭·검색 범위를 설명합니다."
 ---
+## 명령 프롬프트
 
+명령으로 실행할 수 있는 파일의 위치는 명령 프롬프트에서 `where`로 찾습니다. PowerShell에서 `where`는 `Where-Object`의 별칭이므로 외부 프로그램을 실행하도록 `where.exe`라고 입력하세요.
 
-
-
-
-# Windows에서 환경 변수 경로가 설정된 실행 파일의 위치를 찾는 방법
-
-실행 파일을 지정하여 명령을 실행할 때, 그 실행 파일이 어디에 있는지 알고 싶을 때가 있습니다. 그럴 때는 다음 명령어로 실행 파일의 위치를 확인할 수 있습니다.
-
-```powershell
-where <실행 파일명>
-```
-
-예를 들어, 그림판(mspaint.exe)의 위치를 알고 싶을 때는 다음과 같이 합니다.
-
-```powershell
+```cmd
 where mspaint.exe
 ```
 
-# 참고
+`where`는 현재 폴더와 `PATH` 환경 변수에 등록된 폴더를 검색해 일치하는 경로를 표시합니다. 여러 결과가 나올 수 있습니다. 컴퓨터의 모든 폴더를 검색하거나 해당 위치 밖의 앱을 찾는 기능은 아닙니다.
 
-- [How do I find the location of an executable in Windows?](https://superuser.com/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows)
+## PowerShell
+
+```powershell
+where.exe mspaint.exe
+Get-Command mspaint.exe -All
+```
+
+PowerShell에서는 `Get-Command`로 PowerShell이 실행할 명령과 실행 파일 경로를 확인할 수 있습니다.
+
+## 공식 참고 자료
+
+- [Windows `where` command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/where)
+- [PowerShell `Get-Command`](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-command?view=powershell-7.5)
+- [PowerShell `Where-Object` (the `where` alias)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.5)

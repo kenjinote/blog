@@ -1,29 +1,35 @@
 ---
-title: 'Como encontrar a localização (caminho) do arquivo executável no PATH do Windows [comando where]'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Windows でCaminhoの通ったArquivo Executávelの場所を見つける方法"
+title: "Encontrar um executável no Windows com where.exe e PowerShell"
 date: 2023-04-03T00:02:55+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Windows でCaminhoの通ったArquivo Executávelの場所を見つける方法"
 tags: ["Windows", "Caminho", "Arquivo executável", "Prompt de Comando"]
 draft: false
 image: "img.webp"
 categories: ["windows", "terminal"]
-description: 'Explicamos como verificar facilmente o local de salvamento (caminho completo) do arquivo executável no Prompt de Comando do Windows ou no PowerShell. Apresentamos um truque útil para localizar rapidamente o local exato do aplicativo no caminho usando o comando ''where''.'
+description: "Como localizar executáveis no PATH com where no Prompt de Comando ou where.exe e Get-Command no PowerShell, incluindo alias e escopo da pesquisa."
 ---
+## Prompt de Comando
 
-# Como encontrar a localização de um arquivo executável no PATH do Windows
+Para localizar um executável que possa ser chamado como comando, use `where` no Prompt de Comando. No PowerShell, `where` é um alias de `Where-Object`; escreva `where.exe` para chamar explicitamente o programa externo.
 
-Quando você executa um comando especificando um arquivo executável, há momentos em que deseja saber onde esse arquivo executável está localizado. Nesses casos, você pode descobrir a localização do arquivo executável com o seguinte comando.
-
-```powershell
-where <nome_do_arquivo_executável>
-```
-
-Por exemplo, se você quiser saber a localização do Paint (mspaint.exe), faça o seguinte:
-
-```powershell
+```cmd
 where mspaint.exe
 ```
 
-# Referências
+`where` pesquisa a pasta atual e os diretórios da variável de ambiente `PATH`, exibindo os resultados correspondentes. Pode retornar vários caminhos. Ele não pesquisa todas as pastas do computador nem encontra aplicativos fora desses locais.
 
-- [How do I find the location of an executable in Windows?](https://superuser.com/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows)
+## PowerShell
+
+```powershell
+where.exe mspaint.exe
+Get-Command mspaint.exe -All
+```
+
+No PowerShell, `Get-Command` mostra o comando resolvido e o caminho do executável.
+
+## Referências oficiais
+
+- [Windows `where` command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/where)
+- [PowerShell `Get-Command`](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-command?view=powershell-7.5)
+- [PowerShell `Where-Object` (the `where` alias)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.5)

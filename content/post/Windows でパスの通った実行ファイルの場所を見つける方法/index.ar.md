@@ -1,29 +1,35 @@
 ---
-title: 'طريقة العثور على موقع (مسار) الملفات التنفيذية في مسار النظام على Windows [أمر where]'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Windows でمسارの通ったملف تنفيذيの場所を見つける方法"
+title: "العثور على ملف تنفيذي في Windows باستخدام where.exe وPowerShell"
 date: 2023-04-03T00:02:55+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Windows でمسارの通ったملف تنفيذيの場所を見つける方法"
 tags: ["Windows", "مسار", "ملف تنفيذي", "موجه الأوامر"]
 draft: false
 image: "img.webp"
 categories: ["windows", "terminal"]
-description: 'نشرح كيفية العثور بسهولة على موقع حفظ الملفات التنفيذية (المسار الكامل) باستخدام موجه الأوامر أو PowerShell في Windows. نقدم حيلة مفيدة لتحديد الموقع الدقيق للتطبيقات الموجودة في المسار بسرعة باستخدام أمر "where".'
+description: "شرح العثور على الملفات التنفيذية في PATH باستخدام where في موجه الأوامر أو where.exe وGet-Command في PowerShell، مع توضيح الاسم المستعار ونطاق البحث."
 ---
+## موجه الأوامر
 
-# كيفية العثور على موقع ملف تنفيذي في مسار Windows
+للعثور على مسار ملف تنفيذي يمكن تشغيله كأمر، استخدم `where` في موجه الأوامر. في PowerShell، الاسم `where` هو اسم مستعار لـ`Where-Object`؛ اكتب `where.exe` لاستدعاء البرنامج الخارجي صراحةً.
 
-عند تشغيل أمر بتحديد ملف تنفيذي، قد ترغب في معرفة مكان هذا الملف التنفيذي. في مثل هذه الحالات، يمكنك استخدام الأمر أدناه للتحقق من موقع الملف التنفيذي.
-
-```powershell
-where <اسم الملف التنفيذي>
-```
-
-على سبيل المثال، إذا كنت تريد معرفة موقع برنامج الرسام (mspaint.exe)، افعل ما يلي:
-
-```powershell
+```cmd
 where mspaint.exe
 ```
 
-# المراجع
+يبحث `where` في المجلد الحالي والمجلدات المدرجة في متغير البيئة `PATH` ويعرض النتائج المطابقة. قد يظهر أكثر من مسار. لا يبحث في جميع مجلدات الكمبيوتر ولا يعثر على التطبيقات خارج هذه المواقع.
 
-- [How do I find the location of an executable in Windows?](https://superuser.com/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows)
+## PowerShell
+
+```powershell
+where.exe mspaint.exe
+Get-Command mspaint.exe -All
+```
+
+في PowerShell، يعرض `Get-Command` الأمر الذي سيختاره PowerShell ومسار ملفه التنفيذي.
+
+## مراجع رسمية
+
+- [Windows `where` command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/where)
+- [PowerShell `Get-Command`](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-command?view=powershell-7.5)
+- [PowerShell `Where-Object` (the `where` alias)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.5)

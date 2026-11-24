@@ -1,29 +1,35 @@
 ---
-title: 'So finden Sie den Speicherort (Pfad) einer ausführbaren Datei im Pfad unter Windows [where-Befehl]'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Windows でPfadの通ったAusführbare Dateiの場所を見つける方法"
+title: "Ausführbare Dateien unter Windows mit where.exe und PowerShell finden"
 date: 2023-04-03T00:02:55+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Windows でPfadの通ったAusführbare Dateiの場所を見つける方法"
 tags: ["Windows", "Pfad", "Ausführbare Datei", "Eingabeaufforderung"]
 draft: false
 image: "img.webp"
 categories: ["windows", "terminal"]
-description: 'Wir erklären, wie Sie den Speicherort (vollständigen Pfad) von ausführbaren Dateien in der Windows-Eingabeaufforderung oder PowerShell einfach überprüfen können. Wir stellen einen nützlichen Trick vor, um mit dem Befehl „where“ schnell den genauen Speicherort von Apps im Pfad zu ermitteln.'
+description: "Ausführbare Dateien im PATH mit where in der Eingabeaufforderung oder where.exe und Get-Command in PowerShell finden; einschließlich Alias und Suchbereich."
 ---
+## Eingabeaufforderung
 
-# So finden Sie den Speicherort einer ausführbaren Datei im PATH unter Windows
+Um den Speicherort einer als Befehl aufrufbaren Datei zu finden, verwenden Sie `where` in der Eingabeaufforderung. In PowerShell ist `where` ein Alias für `Where-Object`; rufen Sie das externe Programm ausdrücklich mit `where.exe` auf.
 
-Wenn Sie einen Befehl ausführen, indem Sie eine ausführbare Datei angeben, möchten Sie manchmal wissen, wo sich diese ausführbare Datei befindet. In solchen Fällen können Sie den Speicherort der ausführbaren Datei mit dem folgenden Befehl ermitteln.
-
-```powershell
-where <name_der_ausführbaren_datei>
-```
-
-Wenn Sie beispielsweise den Speicherort von Paint (mspaint.exe) wissen möchten, gehen Sie wie folgt vor:
-
-```powershell
+```cmd
 where mspaint.exe
 ```
 
-# Referenzen
+`where` durchsucht den aktuellen Ordner und die in der Umgebungsvariablen `PATH` aufgeführten Ordner und zeigt passende Treffer an. Es können mehrere Pfade erscheinen. Das Programm durchsucht nicht alle Ordner des Computers und findet keine Anwendungen außerhalb dieser Speicherorte.
 
-- [How do I find the location of an executable in Windows?](https://superuser.com/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows)
+## PowerShell
+
+```powershell
+where.exe mspaint.exe
+Get-Command mspaint.exe -All
+```
+
+In PowerShell zeigt `Get-Command` den aufgelösten Befehl und den Pfad zur ausführbaren Datei.
+
+## Offizielle Quellen
+
+- [Windows `where` command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/where)
+- [PowerShell `Get-Command`](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-command?view=powershell-7.5)
+- [PowerShell `Where-Object` (the `where` alias)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.5)

@@ -1,0 +1,442 @@
+{
+  "version": 1,
+  "batch": 150,
+  "article": "Windowsで実行ファイルの場所を調べる：whereとPowerShell",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/where",
+    "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-command?view=powershell-7.5",
+    "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.5"
+  ],
+  "scope": "Compared full Japanese article and twelve translations, command syntax, PowerShell name resolution, PATH search scope, examples, dates, and official references.",
+  "findings": [
+    "Removed duplicate future date; retained 2023-04-03 publication date and recorded lastmod 2026-11-24.",
+    "Fixed the incorrect claim that plain where works as the external command in PowerShell; where is an alias for Where-Object there, so the article now uses where.exe and Get-Command.",
+    "Clarified where searches current directory and PATH only and may return multiple results; it does not scan every application folder.",
+    "Added official Microsoft documentation and localized examples."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "fb695b67db21a08f2e295676e0a236dba4d051c8a159b1d459e8ff2ca99cd0f7",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "ba2842db58cbd4c2955cc8d7c631ce3d4af316ff47f8c66f68288d3fb5af661c",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "aec553a46b377359561e7d22ba75f47b63bed3b93c8797481d319d23ca278819",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "cd1872bf55502f32e42cf954389cb1341154f18db421941e755429e93bbdc518",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "d2cf7d956d852021fad77167e4ddaba7dab8fd77ef33b45e86d20535b05667bd",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "40e8c638c0413afa69bd7095ddeefde6bf8df9e097af9a2624e55f0e234c2461",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "9b14ba8404183b182df0f188f134b729b36ee96bd060411c0290bc83a3a62bc5",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "18e6c8213cf5dae2ea0d62d71abe2f5ed5e9028995b0650d9423d5ad348f2111",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "fd5bda936ed615d3e9d71669f4c6bc234ad45e9488d6fb749d2a4006fe3192a2",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "f9932b21c45884efdc10069a09e65c7a1b13a63577f5f36845b3a4fb2d9525c7",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "bc3b8bffc96650da6e581f06c4de72e6f731f607371df6c73012c4acead1c504",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    },
+    "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Windows でパスの通った実行ファイルの場所を見つける方法/index.md",
+      "sourceHash": "016b5c3b8d1e67bdac0e29ade243c940d57cb844cd0eb274bbae0e0aea8429fe",
+      "translationHash": "d96bceec4f396aedc966f671ad4b5247c51f1b535032ebaabfd0a25940660e8a",
+      "summary": "Compared the full Japanese article and twelve translations with current Microsoft Learn documentation. Corrected the PowerShell where alias conflict, separated Command Prompt and PowerShell examples, and explained that where searches only the current directory and PATH.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the distinction between locating an executable on the command search path and searching arbitrary folders; clarified that multiple matches can be returned."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked PATH, where.exe, PowerShell alias where -> Where-Object, and Get-Command resolution terminology against Microsoft documentation."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical claims."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Verified examples use where in Command Prompt and where.exe plus Get-Command in PowerShell; no system changes or elevated access."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the Super User-only reference with Microsoft Learn documentation for where, Get-Command, and Where-Object."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "where.exe searches the current directory and PATH, not every installed application or arbitrary directory; command resolution can depend on session configuration and multiple matches may exist."
+      ]
+    }
+  }
+}

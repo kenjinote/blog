@@ -1,29 +1,35 @@
 ---
-title: 'Windows में पाथ वाली निष्पादन योग्य फ़ाइलों का स्थान (पाथ) खोजने का तरीका 【where कमांड】'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Windows でपथの通ったनिष्पादन योग्य फ़ाइलの場所を見つける方法"
+title: "Windows में where.exe और PowerShell से executable ढूँढ़ें"
 date: 2023-04-03T00:02:55+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Windows でपथの通ったनिष्पादन योग्य फ़ाइलの場所を見つける方法"
 tags: ["Windows", "पाथ", "एक्ज़ीक्यूटेबल फ़ाइल", "कमांड प्रॉम्प्ट"]
 draft: false
 image: "img.webp"
 categories: ["windows", "terminal"]
-description: 'Windows के कमांड प्रॉम्प्ट या PowerShell में निष्पादन योग्य फ़ाइल का सहेजा गया स्थान (पूरा पाथ) आसानी से खोजने का तरीका समझाया गया है। ''where'' कमांड का उपयोग करके पाथ वाले ऐप का सटीक स्थान तुरंत पहचानने की सुविधाजनक ट्रिक बताई गई है।'
+description: "Command Prompt में where और PowerShell में where.exe तथा Get-Command से PATH पर executable ढूँढ़ें; alias और खोज-सीमा भी समझें।"
 ---
+## Command Prompt
 
-# Windows में PATH में मौजूद एक्ज़ीक्यूटेबल फ़ाइल का स्थान कैसे खोजें
+कमांड के रूप में चलने वाली executable का स्थान जानने के लिए Command Prompt में `where` चलाएँ। PowerShell में `where`, `Where-Object` का alias है; बाहरी प्रोग्राम चलाने के लिए स्पष्ट रूप से `where.exe` लिखें।
 
-जब आप किसी एक्ज़ीक्यूटेबल फ़ाइल को निर्दिष्ट करके कमांड चलाते हैं, तो कभी-कभी आप जानना चाहते हैं कि वह एक्ज़ीक्यूटेबल फ़ाइल कहाँ स्थित है। ऐसे मामलों में, आप निम्न कमांड से एक्ज़ीक्यूटेबल फ़ाइल का स्थान जान सकते हैं।
-
-```powershell
-where <एक्ज़ीक्यूटेबल_फ़ाइल_का_नाम>
-```
-
-उदाहरण के लिए, यदि आप पेंट (mspaint[.exe](/hi/p/%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A4%A8-%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%AF-%E0%A4%AB%E0%A4%BC%E0%A4%BE%E0%A4%87%E0%A4%B2exe%E3%81%AE%E4%B8%AD%E8%BA%AB%E3%82%92%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3%E3%81%99%E3%82%8B%E0%A4%9F%E0%A5%82%E0%A4%B2/)) का स्थान जानना चाहते हैं, तो आप निम्न कार्य कर सकते हैं:
-
-```powershell
+```cmd
 where mspaint.exe
 ```
 
-# संदर्भ
+`where` मौजूदा फ़ोल्डर और `PATH` पर्यावरण चर में सूचीबद्ध फ़ोल्डरों को खोजकर मेल खाने वाले स्थान दिखाता है। एक से अधिक पथ मिल सकते हैं। यह कंप्यूटर के हर फ़ोल्डर को नहीं खोजता और उन स्थानों से बाहर के ऐप नहीं ढूँढ़ता।
 
-- [How do I find the location of an executable in Windows?](https://superuser.com/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows)
+## PowerShell
+
+```powershell
+where.exe mspaint.exe
+Get-Command mspaint.exe -All
+```
+
+PowerShell में `Get-Command` यह दिखाता है कि PowerShell कौन-सा कमांड चलाएगा और उसका executable path क्या है।
+
+## आधिकारिक संदर्भ
+
+- [Windows `where` command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/where)
+- [PowerShell `Get-Command`](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-command?view=powershell-7.5)
+- [PowerShell `Where-Object` (the `where` alias)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.5)

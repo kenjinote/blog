@@ -1,29 +1,35 @@
 ---
-title: 'Как узнать расположение (путь) исполняемого файла в переменной PATH в Windows [Команда where]'
-date: "2026-09-24T19:44:38+09:00"
-slug: "Windows でПутьの通ったИсполняемый файлの場所を見つける方法"
+title: "Поиск исполняемого файла в Windows с помощью where.exe и PowerShell"
 date: 2023-04-03T00:02:55+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
+slug: "Windows でПутьの通ったИсполняемый файлの場所を見つける方法"
 tags: ["Windows", "путь", "исполняемый файл", "командная строка"]
 draft: false
 image: "img.webp"
 categories: ["windows", "terminal"]
-description: 'Объясняем, как легко узнать место сохранения (полный путь) исполняемого файла в командной строке Windows или PowerShell. Представлен полезный трюк для быстрого определения точного расположения приложения с помощью команды «where».'
+description: "Поиск файлов в PATH с помощью where в командной строке или where.exe и Get-Command в PowerShell; поясняются псевдоним и область поиска."
 ---
+## Командная строка
 
-# Как найти расположение исполняемого файла в пути Windows
+Чтобы найти исполняемый файл, запускаемый как команда, используйте `where` в командной строке. В PowerShell `where` — это псевдоним `Where-Object`, поэтому для внешней программы укажите `where.exe`.
 
-При выполнении команды с указанием исполняемого файла иногда хочется узнать, где находится этот исполняемый файл. В таких случаях можно использовать команду ниже, чтобы проверить расположение исполняемого файла.
-
-```powershell
-where <имя исполняемого файла>
-```
-
-Например, если вы хотите узнать расположение Paint (mspaint.exe), сделайте следующее:
-
-```powershell
+```cmd
 where mspaint.exe
 ```
 
-# Ссылки
+`where` ищет в текущей папке и каталогах из переменной среды `PATH`, выводя найденные совпадения. Результатов может быть несколько. Команда не просматривает все папки компьютера и не находит приложения вне этих каталогов.
 
-- [How do I find the location of an executable in Windows?](https://superuser.com/questions/49104/how-do-i-find-the-location-of-an-executable-in-windows)
+## PowerShell
+
+```powershell
+where.exe mspaint.exe
+Get-Command mspaint.exe -All
+```
+
+В PowerShell команда `Get-Command` показывает выбранную команду и путь к исполняемому файлу.
+
+## Официальные источники
+
+- [Windows `where` command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/where)
+- [PowerShell `Get-Command`](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-command?view=powershell-7.5)
+- [PowerShell `Where-Object` (the `where` alias)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.5)
