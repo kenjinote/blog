@@ -1,0 +1,436 @@
+{
+  "version": 1,
+  "batch": 209,
+  "article": "Affine and projective transformations: homogeneous coordinates, graphics pipelines, and computer vision",
+  "reviewedAt": "2026-11-25",
+  "sources": [],
+  "scope": "Corrected the Japanese source and completed full AI reviews of all twelve available language editions. Exact source and translation hashes, review date, scope, and AI limitations are recorded. Publication is pending.",
+  "findings": [
+    "Removed the duplicate publication date and repaired unrelated internal links embedded in Japanese words.",
+    "Specified nonsingular projective matrices and homogeneous-coordinate scale equivalence; documented the W=0 limit.",
+    "Separated planar perspective rectification from lens distortion, qualified panorama stitching by camera-center assumptions, and clarified the view-frustum-to-screen projection pipeline."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/affine-and-projective-transformations/index.ar.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "9210534135f9b7fb54767214f89bd90c6c0237e5b06b9228dd2dd490b6961633",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Arabic edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese source; aligned affine/projective distinctions, transform hierarchy, rendering pipeline, image rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified 2x2 linear and 3x3 affine/projective equations, homogeneous-coordinate scaling equivalence, nonsingularity of homography matrices, W=0 behavior, and 4x4 projection pipeline statements."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation hierarchy and graphics-pipeline Mermaid diagrams. No executable code samples are present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Arabic language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and source alignment; no independent subject-matter expert review was performed."
+      ]
+    },
+    "post/affine-and-projective-transformations/index.en.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "0549234c34c5f731da630ad41d8d8ebd2af07db62273f3f5ba89ff73ba41e624",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete English edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all sections with the Japanese source; aligned affine/projective distinctions, transform hierarchy, rendering pipeline, image rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified 2x2 linear and 3x3 affine/projective equations, homogeneous-coordinate scaling equivalence, nonsingularity of homography matrices, W=0 behavior, and 4x4 projection pipeline statements."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation hierarchy and graphics-pipeline Mermaid diagrams. No executable code samples are present."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native English language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and source alignment; no independent subject-matter expert review was performed."
+      ]
+    },
+    "post/affine-and-projective-transformations/index.de.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "ba2005b101ba1b976b223f31ad6c9455cf40537d9014603f58fb9705c0e51284",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete German edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section with the Japanese source; aligned affine and projective transformations, the graphics pipeline, planar rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 2x2 linear, 3x3 affine/projective, and 4x4 projection expressions; nonsingularity and scale equivalence; homogeneous-coordinate equivalence; and the W=0 limit."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation-hierarchy and graphics-pipeline Mermaid diagrams. There are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native German language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and alignment with the Japanese source; no independent subject-matter expert review was performed."
+      ]
+    },
+    "post/affine-and-projective-transformations/index.es.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "5d6ace4937829dfa4776c6031301d72afc6d95ac3579854e58a6d7728a9cec8d",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Spanish edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section with the Japanese source; aligned affine and projective transformations, the graphics pipeline, planar rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 2x2 linear, 3x3 affine/projective, and 4x4 projection expressions; nonsingularity and scale equivalence; homogeneous-coordinate equivalence; and the W=0 limit."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation-hierarchy and graphics-pipeline Mermaid diagrams. There are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Spanish language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and alignment with the Japanese source; no independent subject-matter expert review was performed."
+      ]
+    },
+    "post/affine-and-projective-transformations/index.fr.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "13e80ebf235e43b4df3bfb251fac3a0746891ac1c7a806bc5c4de0ec1639eb01",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete French edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section with the Japanese source; aligned affine and projective transformations, the graphics pipeline, planar rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 2x2 linear, 3x3 affine/projective, and 4x4 projection expressions; nonsingularity and scale equivalence; homogeneous-coordinate equivalence; and the W=0 limit."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation-hierarchy and graphics-pipeline Mermaid diagrams. There are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native French language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and alignment with the Japanese source; no independent subject-matter expert review was performed."
+      ]
+    },
+    "post/affine-and-projective-transformations/index.hi.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "08a625870935c799f4ea550663ae3d856680ca0fef4c60ef1a75847105ac5f28",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Hindi edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section with the Japanese source; aligned affine and projective transformations, the graphics pipeline, planar rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 2x2 linear, 3x3 affine/projective, and 4x4 projection expressions; nonsingularity and scale equivalence; homogeneous-coordinate equivalence; and the W=0 limit."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation-hierarchy and graphics-pipeline Mermaid diagrams. There are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Hindi language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and alignment with the Japanese source; no independent subject-matter expert review was performed."
+      ]
+    },
+    "post/affine-and-projective-transformations/index.id.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "55dc6678bffe1d283267ebf5458882f729c02ba20a0ac03e17d035237368f56b",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Indonesian edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section with the Japanese source; aligned affine and projective transformations, the graphics pipeline, planar rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 2x2 linear, 3x3 affine/projective, and 4x4 projection expressions; nonsingularity and scale equivalence; homogeneous-coordinate equivalence; and the W=0 limit."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation-hierarchy and graphics-pipeline Mermaid diagrams. There are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Indonesian language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and alignment with the Japanese source; no independent subject-matter expert review was performed."
+      ]
+    },
+    "post/affine-and-projective-transformations/index.ko.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "33a5cffc41b444256980d4113f956b4b742b52c43b4d9faed8cfd096791e1135",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Korean edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section with the Japanese source; aligned affine and projective transformations, the graphics pipeline, planar rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 2x2 linear, 3x3 affine/projective, and 4x4 projection expressions; nonsingularity and scale equivalence; homogeneous-coordinate equivalence; and the W=0 limit."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation-hierarchy and graphics-pipeline Mermaid diagrams. There are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Korean language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and alignment with the Japanese source; no independent subject-matter expert review was performed."
+      ]
+    },
+    "post/affine-and-projective-transformations/index.pt.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "19b6ce127ddc91a570a1671602a26864792c34a5877d56966d3b6919a2f2389b",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Portuguese edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section with the Japanese source; aligned affine and projective transformations, the graphics pipeline, planar rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 2x2 linear, 3x3 affine/projective, and 4x4 projection expressions; nonsingularity and scale equivalence; homogeneous-coordinate equivalence; and the W=0 limit."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation-hierarchy and graphics-pipeline Mermaid diagrams. There are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Portuguese language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and alignment with the Japanese source; no independent subject-matter expert review was performed."
+      ]
+    },
+    "post/affine-and-projective-transformations/index.ru.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "6bd6cff92b56a7f98541ccfdc896f2c1478470a1f27df1658e5ec8c2308f9eef",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Russian edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section with the Japanese source; aligned affine and projective transformations, the graphics pipeline, planar rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 2x2 linear, 3x3 affine/projective, and 4x4 projection expressions; nonsingularity and scale equivalence; homogeneous-coordinate equivalence; and the W=0 limit."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation-hierarchy and graphics-pipeline Mermaid diagrams. There are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Russian language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and alignment with the Japanese source; no independent subject-matter expert review was performed."
+      ]
+    },
+    "post/affine-and-projective-transformations/index.zh-cn.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "d2a86e34d280268ada62dc4f7c2deb0fdb440c4ae563d51ebd57fb2fa023612f",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Simplified Chinese edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section with the Japanese source; aligned affine and projective transformations, the graphics pipeline, planar rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 2x2 linear, 3x3 affine/projective, and 4x4 projection expressions; nonsingularity and scale equivalence; homogeneous-coordinate equivalence; and the W=0 limit."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation-hierarchy and graphics-pipeline Mermaid diagrams. There are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Simplified Chinese language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and alignment with the Japanese source; no independent subject-matter expert review was performed."
+      ]
+    },
+    "post/affine-and-projective-transformations/index.zh-tw.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "f3e8164e381df2f53e1c21da4b105bc9a0d460d77547174a4c336973f67e4782",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "reviewKind": "ai",
+      "summary": "Read the complete Traditional Chinese edition against the Japanese source and aligned its formulas and technical explanations. Corrected the matrix assumptions, homogeneous-coordinate equivalence, perspective division at W=0, affine shape wording, 3D projection pipeline, lens-distortion conflation, camera-center condition for panorama stitching, and duplicate date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared every section with the Japanese source; aligned affine and projective transformations, the graphics pipeline, planar rectification, panorama assumptions, and conclusion."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked affine/projective transformations, homography, homogeneous coordinates, perspective divide, frustum, model/view/projection matrices, and computer-vision terms."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the 2x2 linear, 3x3 affine/projective, and 4x4 projection expressions; nonsingularity and scale equivalence; homogeneous-coordinate equivalence; and the W=0 limit."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Reviewed the transformation-hierarchy and graphics-pipeline Mermaid diagrams. There are no executable code samples."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Checked all internal article links in this edition against their localized slugs and confirmed that the malformed unrelated link in the Japanese source was removed. No external references occur in this article."
+        }
+      },
+      "limitations": [
+        "Review performed by Codex (AI); no human or native Traditional Chinese language reviewer has confirmed style or terminology.",
+        "Mathematics was checked for internal consistency and alignment with the Japanese source; no independent subject-matter expert review was performed."
+      ]
+    }
+  }
+}

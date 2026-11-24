@@ -3,7 +3,6 @@ title: 'Affine und Projektive Transformationen: Die Verschmelzung von linearer A
 date: "2026-09-24T19:44:38+09:00"
 description: 'Eine detaillierte Erklärung der mathematischen Grundlagen der affinen und projektiven Transformationen, deren Darstellung mithilfe homogener Koordinaten und Anwendungen in Computergrafik und Bildverarbeitung.'
 slug: 'affine-and-projective-transformations'
-date: '2026-09-20T15:15:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'
@@ -49,7 +48,7 @@ Um dieses Translationsproblem zu lösen und alle Transformationen einheitlich nu
 
 ### 3.1. Was sind homogene Koordinaten?
 
-Bei homogenen Koordinaten wird dem Ende der 2D-Koordinaten $(x, y)$ eine Dummy-Dimension (normalerweise $1$) hinzugefügt, sodass sie als 3D-Vektor $(x, y, 1)$ dargestellt werden. Im Allgemeinen entspricht die homogene Koordinate $(x, y, w)$ den kartesischen Koordinaten $(x/w, y/w)$ im realen Raum (vorausgesetzt $w \neq 0$).
+Bei homogenen Koordinaten wird dem Ende der 2D-Koordinaten $(x, y)$ eine Dummy-Dimension (normalerweise $1$) hinzugefügt, sodass sie als 3D-Vektor $(x, y, 1)$ dargestellt werden. Im Allgemeinen entspricht die homogene Koordinate $(x, y, w)$ den kartesischen Koordinaten $(x/w, y/w)$ im realen Raum (vorausgesetzt $w \neq 0$). Homogene Koordinaten, die sich durch einen von null verschiedenen Skalar unterscheiden, stellen denselben Punkt dar.
 
 ### 3.2. Struktur der affinen Transformationsmatrix
 
@@ -71,7 +70,7 @@ Auf brillante Weise wurden der Teil der linearen Transformation ($a, b, c, d$) u
 
 ### 3.3. Geometrische Eigenschaften affiner Transformationen
 
-Die wichtigste geometrische Eigenschaft einer affinen Transformation ist, dass „**parallele Linien nach der Transformation parallel bleiben**“. Darüber hinaus bleibt „das Verhältnis von Punkten auf einem Liniensegment (z. B. dem Mittelpunkt)“ erhalten. Obwohl ein Quadrat nach einer affinen Transformation zu einem Parallelogramm werden kann, wird es niemals zu einem Trapez.
+Die wichtigste geometrische Eigenschaft einer affinen Transformation ist, dass **parallele Geraden nach der Transformation parallel bleiben**. Auch die Teilungsverhältnisse von Punkten auf einer Strecke (einschließlich des Mittelpunkts) bleiben erhalten. Bei einer affinen Transformation mit nichtsingulärem linearem Anteil wird ein Quadrat auf ein Parallelogramm abgebildet; die gegenüberliegenden Seiten bleiben jeweils parallel.
 
 ## 4. Projektive Transformation: Mathematische Darstellung der Perspektive
 
@@ -81,7 +80,7 @@ Die strikte mathematische Modellierung dieser Perspektive ist die **Projektive T
 
 ### 4.1. Struktur der projektiven Transformationsmatrix (Homographie)
 
-Die projektive Transformation zwischen 2D-Räumen wird ebenfalls durch eine $3 \times 3$-Matrix mit homogenen Koordinaten dargestellt. Im Bereich Computer Vision wird diese Matrix auch als **Homographiematrix** (Homography Matrix) bezeichnet. Der größte und entscheidende Unterschied besteht darin, dass in der untersten Zeile (der 3. Zeile), die bei der affinen Transformation immer $0, 0, 1$ war, beliebige Werte festgelegt werden können.
+Projektive Transformationen zwischen 2D-Räumen werden in homogenen Koordinaten durch eine nichtsinguläre $3 \times 3$-Matrix dargestellt; jede Multiplikation der gesamten Matrix mit einem von null verschiedenen Skalar beschreibt dieselbe Transformation. In der Computer Vision wird sie auch **Homographiematrix** genannt. Bei einer affinen Transformation ist die unterste Zeile auf $(0, 0, 1)$ festgelegt; bei einer projektiven Transformation kann sie andere Werte annehmen, solange die Matrix nichtsingulär bleibt.
 
 $$
 \begin{pmatrix} X \\ Y \\ W \end{pmatrix} = \begin{pmatrix} h_{11} & h_{12} & h_{13} \\ h_{21} & h_{22} & h_{23} \\ h_{31} & h_{32} & h_{33} \end{pmatrix} \begin{pmatrix} x \\ y \\ 1 \end{pmatrix}
@@ -94,7 +93,7 @@ x' = \frac{X}{W} = \frac{h_{11}x + h_{12}y + h_{13}}{h_{31}x + h_{32}y + h_{33}}
 y' = \frac{Y}{W} = \frac{h_{21}x + h_{22}y + h_{23}}{h_{31}x + h_{32}y + h_{33}}
 $$
 
-Indem die Terme $x$ und $y$ in den Nenner einbezogen werden, ändern sich die Koordinaten nach der Transformation nichtlinear. Diese nichtlineare Division (perspektivische Division) ist genau die mathematische Grundlage, die den perspektivischen Effekt erzeugt, dass "Nahes größer und Fernes kleiner skaliert wird".
+Da der Nenner Terme mit $x$ und $y$ enthält, ändern sich die transformierten Koordinaten nichtlinear. Bei einer Perspektivprojektion beschreibt diese Division (Perspective Divide) die tiefenabhängige Skalierung: Nahe Objekte erscheinen größer, entfernte kleiner. Für einen Punkt mit $W=0$ lassen sich keine endlichen 2D-Koordinaten durch Normalisierung erhalten.
 
 ### 4.2. Klassenhierarchie der Transformationen
 
@@ -132,17 +131,17 @@ sequenceDiagram
 
 1. **Modelltransformation** (Model Transform): Platziert einzelne 3D-Modelle, die anhand von Referenzpunkten erstellt wurden, an geeigneten Positionen in der riesigen virtuellen Welt und passt deren Ausrichtung und Größe an. Dies ist eine reine affine Transformation.
 2. **View-Transformation** (View Transform): Platziert eine virtuelle Kamera und transformiert die Koordinaten der gesamten Welt in „relative Positionen, die von der Kamera aus gesehen werden“. Auch dies ist eine Kombination aus affinen Transformationen (hauptsächlich Rotation und Translation).
-3. **Projektionstransformation** (Projection Transform): Projiziert die 3D-Szene auf ein 2D-Sichtvolumen (Frustum). Hier wird die projektive $4 \times 4$-Transformationsmatrix mit Komponenten in der untersten Zeile angewendet, und schließlich schließt die Division durch das $w$-Element das Rendern mit einem Gefühl von Perspektive ab.
+3. **Projektionstransformation** (Projection Transform): Die 3D-Szene wird am Sichtvolumen (Frustum) beschnitten und mithilfe einer $4 \times 4$-Projektionsmatrix auf 2D-Bildschirmkoordinaten abgebildet. Durch Division durch die homogene Koordinate $w$ entstehen die perspektivisch projizierten Koordinaten.
 
 ## 6. Anwendungen in Computer Vision und Bildverarbeitung
 
 Affine und projektive Transformationen sind nicht nur entscheidend für das Zeichnen in 3DCG von Grund auf, sondern auch äußerst wichtig im Bereich der Computer Vision für die Verarbeitung und Analyse von vorhandenen Fotos und Videos.
 
 ### 6.1. Korrektur von Bildverzerrungen (Distortion Correction)
-Bei Fotos, die von unten schräg nach oben auf ein Gebäude aufgenommen wurden, scheinen die Umrisse des Gebäudes nach oben hin schmaler zu werden (mit Perspektive). Dies liegt daran, dass das Bild durch die projektive Transformation durch das Kameraobjektiv verzerrt wurde. Durch die Berechnung der Homographiematrix, die die Koordinaten der vier Ecken des Bildes den Koordinaten eines ursprünglichen Rechtecks zuordnet, und die Anwendung einer inversen Transformation mit der inversen Matrix kann das Bild so korrigiert werden, als wäre es frontal aufgenommen worden.
+Wird eine ebene Gebäudefassade schräg fotografiert, können ihre Kanten durch die Perspektivprojektion nach oben hin zusammenzulaufen scheinen. Die Perspektive dieser Ebene lässt sich mit einer Homographie entzerren: Man schätzt die Abbildung aus entsprechenden Eckpunkten und wendet die inverse Transformation an, um eine frontale Ansicht der Ebene zu erhalten. Radiale Objektivverzeichnungen wie Fassaden- oder Kissenverzeichnung sind davon getrennte Effekte; für eine genaue Entzerrung muss die Objektivverzeichnung gegebenenfalls zuerst kalibriert und korrigiert werden.
 
 ### 6.2. Zusammenfügen von Panoramabildern (Image Stitching)
-Die projektive Transformation ist auch tief in die Technologie des Zusammenfügens mehrerer Fotos zu einem weiten Panoramabild involviert. Bilder, die durch Drehen einer Kamera auf derselben Stelle aufgenommen wurden, sind geometrisch so miteinander verbunden, dass sie durch eine projektive Transformation ineinander transformiert werden können. Durch Extrahieren von Merkmalspunkten (wie Ecken oder markante Texturen) zwischen den Bildern und das Schätzen der Homographiematrix, die sie mit dem geringstmöglichen Fehler überlagert, wird eine nahtlose, natürliche Panoramasysnthese erreicht.
+Die projektive Transformation ist auch tief in die Technologie des Zusammenfügens mehrerer Fotos zu einem weiten Panoramabild involviert. Bilder, die bei einer Drehung der Kamera mit annähernd festem Projektionszentrum aufgenommen wurden, sind geometrisch so miteinander verbunden, dass sie durch eine projektive Transformation ineinander transformiert werden können. Durch Extrahieren von Merkmalspunkten (wie Ecken oder markante Texturen) zwischen den Bildern und das Schätzen der Homographiematrix, die sie mit dem geringstmöglichen Fehler überlagert, wird eine nahtlose, natürliche Panoramasynthese erreicht.
 
 ## 7. Fazit
 
@@ -151,5 +150,5 @@ Ausgehend von den grundlegenden Matrixoperationen der linearen Algebra und durch
 - Die **Affine Transformation** drückt Deformationen und Transformationen von starren Körpern aus, einschließlich Translation, wobei die Parallelität erhalten bleibt.
 - Die **Projektive Transformation** stellt darüber hinaus die Perspektive dar und ermöglicht eine nichtlineare Projektion, die viel näher an echten Kameras liegt.
 
-Dieser Rahmen vereinfachte das Design von Hardwareschaltungen innerhalb von GPUs und erhöhte die Ausdruckskraft von Computergrafiken enorm. Gleichzeitig wurde er zur grundlegenden Basis für fortschrittliche Bilderkennungs- und Korrekturalgorithmen in der Computer Vision. Ein tiefes Verständnis der mathematischen Bedeutungen dahinter wird sicherlich die Funktionsweise von 3D-Software und Bildverarbeitungs-APIs, die Sie normalerweise verwenden, klarer machen.
+Homogene Koordinaten werden in 3D-Grafikpipelines häufig verwendet, weil sich Transformationen damit einheitlich durch Matrixprodukte zusammensetzen und verarbeiten lassen. Projektive Transformationen und Homographien dienen außerdem der Bildausrichtung und geometrischen Korrektur in der Computer Vision. Wer diese Mathematik versteht, kann das Verhalten von 3D-Software und Bildverarbeitungs-APIs besser nachvollziehen.
 

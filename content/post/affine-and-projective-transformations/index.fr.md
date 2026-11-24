@@ -3,7 +3,6 @@ title: 'Transformations Affines et Projectives : La Fusion de l''Algèbre Linéa
 date: "2026-09-24T19:44:38+09:00"
 description: 'Une explication détaillée des fondements mathématiques des transformations affines et projectives, de leur expression en utilisant les coordonnées homogènes et de leurs applications en infographie et traitement d''images.'
 slug: 'affine-and-projective-transformations'
-date: '2026-09-20T15:15:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'
@@ -49,7 +48,7 @@ Pour résoudre ce problème de translation et gérer de manière unifiée toutes
 
 ### 3.1. Que sont les Coordonnées Homogènes ?
 
-Dans les coordonnées homogènes, on ajoute une dimension factice (généralement $1$) à la fin des coordonnées 2D $(x, y)$, les représentant comme un vecteur 3D $(x, y, 1)$. En général, la coordonnée homogène $(x, y, w)$ correspond aux coordonnées cartésiennes $(x/w, y/w)$ dans l'espace réel (à condition que $w \neq 0$).
+Dans les coordonnées homogènes, on ajoute une dimension factice (généralement $1$) à la fin des coordonnées 2D $(x, y)$, les représentant comme un vecteur 3D $(x, y, 1)$. En général, la coordonnée homogène $(x, y, w)$ correspond aux coordonnées cartésiennes $(x/w, y/w)$ dans l'espace réel (à condition que $w \neq 0$). Deux coordonnées homogènes qui diffèrent par un facteur scalaire non nul représentent le même point.
 
 ### 3.2. Structure de la Matrice de Transformation Affine
 
@@ -71,7 +70,7 @@ De manière brillante, la partie de transformation linéaire ($a, b, c, d$) et l
 
 ### 3.3. Propriétés Géométriques des Transformations Affines
 
-La propriété géométrique la plus importante d'une transformation affine est que « **les lignes parallèles restent parallèles après la transformation** ». De plus, « la proportion des points sur un segment de droite (par exemple, le point médian) » est également conservée. Par conséquent, bien qu'un carré puisse devenir un parallélogramme après une transformation affine, il ne deviendra jamais un trapèze.
+La propriété géométrique la plus importante d’une transformation affine est que **les droites parallèles restent parallèles après la transformation**. Les rapports des points sur un segment, y compris le milieu, sont également conservés. Avec une transformation affine dont la partie linéaire est non singulière, un carré devient un parallélogramme et chaque paire de côtés opposés reste parallèle.
 
 ## 4. Transformation Projective : Représentation Mathématique de la Perspective
 
@@ -81,7 +80,7 @@ La modélisation mathématique stricte de cette perspective est la **Transformat
 
 ### 4.1. Structure de la Matrice de Transformation Projective (Homographie)
 
-La transformation projective entre les espaces 2D est également représentée par une matrice $3 \times 3$ utilisant des coordonnées homogènes. Dans le domaine de la vision par ordinateur, cette matrice est aussi appelée **Matrice d'Homographie** (Homography Matrix). La différence majeure et décisive est que la ligne inférieure (la 3ème ligne), qui dans la transformation affine était toujours $0, 0, 1$, peut être définie avec des valeurs arbitraires.
+Les transformations projectives entre espaces 2D sont représentées, en coordonnées homogènes, par une matrice non singulière $3 \times 3$ ; multiplier toute la matrice par un scalaire non nul décrit la même transformation. En vision par ordinateur, on l’appelle aussi **matrice d’homographie**. Dans une transformation affine, la dernière ligne est fixée à $(0, 0, 1)$ ; une transformation projective peut prendre d’autres valeurs, à condition que la matrice reste non singulière.
 
 $$
 \begin{pmatrix} X \\ Y \\ W \end{pmatrix} = \begin{pmatrix} h_{11} & h_{12} & h_{13} \\ h_{21} & h_{22} & h_{23} \\ h_{31} & h_{32} & h_{33} \end{pmatrix} \begin{pmatrix} x \\ y \\ 1 \end{pmatrix}
@@ -94,7 +93,7 @@ x' = \frac{X}{W} = \frac{h_{11}x + h_{12}y + h_{13}}{h_{31}x + h_{32}y + h_{33}}
 y' = \frac{Y}{W} = \frac{h_{21}x + h_{22}y + h_{23}}{h_{31}x + h_{32}y + h_{33}}
 $$
 
-En incluant les termes $x$ et $y$ dans le dénominateur, les coordonnées après transformation changent de façon non linéaire. Cette division non linéaire (division perspective) est précisément le fondement mathématique qui génère l'effet de perspective où « ce qui est proche est agrandi et ce qui est loin est réduit ».
+Comme le dénominateur contient des termes en $x$ et $y$, les coordonnées transformées varient de manière non linéaire. En projection perspective, cette division exprime une mise à l’échelle dépendant de la profondeur : les objets proches paraissent plus grands et les objets éloignés plus petits. Si le dénominateur $W$ vaut zéro, il est impossible de normaliser le point en coordonnées 2D finies.
 
 ### 4.2. Hiérarchie des Classes de Transformations
 
@@ -111,7 +110,7 @@ flowchart TD
     D --> H["Shearing (Cisaillement)"]
 ```
 
-## 5. Le [Pipeline](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) de Transformation en CG
+## 5. Le Pipeline de Transformation en CG
 
 Dans le pipeline de rendu 3DCG, afin de transformer les données des sommets 3D en coordonnées d'écran 2D finales, des multiplications matricielles sont effectuées de manière progressive et continue. L'espace étant ici tridimensionnel, le système de coordonnées homogènes devient en 4 dimensions $(x, y, z, 1)$ et des matrices de taille $4 \times 4$ sont utilisées.
 
@@ -132,17 +131,17 @@ sequenceDiagram
 
 1. **Transformation de Modèle** (Model Transform) : Positionne les modèles 3D individuels créés avec un point de référence à des positions appropriées dans un immense monde virtuel, ajustant leur orientation et leur taille. C'est une pure transformation affine.
 2. **Transformation de Vue** (View Transform) : Place une caméra virtuelle et transforme les coordonnées du monde entier en « positions relatives vues depuis la caméra ». Il s'agit également d'une combinaison de transformations affines (principalement rotation et translation).
-3. **Transformation de Projection** (Projection Transform) : Projette la scène 3D sur un volume de vue 2D (frustum). Ici, la matrice de transformation projective de $4 \times 4$ contenant les composants de la ligne inférieure est appliquée, et enfin, la division par l'élément $w$ permet de compléter le rendu avec une sensation de perspective.
+3. **Transformation de Projection** (Projection Transform) : La scène 3D est écrêtée par le volume de vision (frustum), puis projetée en coordonnées d’écran 2D au moyen d’une matrice de projection $4 \times 4$. La division par la coordonnée homogène $w$ donne les coordonnées en perspective.
 
 ## 6. Applications en Vision par Ordinateur et Traitement d'Images
 
 Les transformations affines et projectives ne sont pas seulement vitales pour dessiner en 3DCG à partir de zéro, elles sont également très importantes dans le domaine de la vision par ordinateur pour le traitement et l'analyse de photographies et vidéos existantes.
 
 ### 6.1. Correction de Distorsion d'Images (Distortion Correction)
-Dans les photographies de bâtiments prises de biais par le bas, les contours des bâtiments semblent rétrécir vers le haut (avec de la perspective). Cela est dû au fait que l'image est déformée par la transformation projective à travers l'objectif de l'appareil photo. En calculant la matrice d'homographie qui mappe les coordonnées des quatre coins de l'image aux coordonnées d'un rectangle d'origine, et en appliquant une transformation inverse avec la matrice inverse, l'image peut être corrigée comme si elle avait été prise de face.
+Lorsqu’une façade plane est photographiée obliquement, la projection perspective peut faire converger ses bords vers le haut. Une homographie permet de rectifier la perspective de ce plan : on estime la transformation à partir de points correspondants aux coins, puis on applique la transformation inverse pour obtenir une vue de face du plan. La distorsion radiale de l’objectif, en barillet ou en coussinet, est un phénomène distinct ; une rectification précise peut nécessiter de calibrer et corriger d’abord cette distorsion.
 
 ### 6.2. Assemblage d'Images Panoramiques (Image Stitching)
-La transformation projective est aussi profondément impliquée dans la technologie d'assemblage de multiples photographies pour créer une large image panoramique. Les images prises en faisant pivoter un appareil photo depuis le même endroit sont géométriquement liées de manière à pouvoir se transformer l'une l'autre via une transformation projective. En extrayant les points caractéristiques (comme des coins ou des textures notables) entre les images, et en estimant la matrice d'homographie qui les superpose avec la plus petite marge d'erreur possible, une synthèse panoramique naturelle et sans coupures est réalisée.
+La transformation projective joue également un rôle important dans l’assemblage de photographies en panoramas. Lorsque l’appareil photo pivote autour d’un centre de projection approximativement fixe, les images obtenues sont liées géométriquement par une transformation projective. On extrait des points caractéristiques (coins ou textures saillantes) et on estime l’homographie qui les superpose au mieux afin de créer un panorama continu et naturel.
 
 ## 7. Conclusion
 
@@ -151,5 +150,5 @@ En partant des opérations matricielles basiques de l'algèbre linéaire, et en 
 - La **Transformation Affine** exprime des déformations et des transformations de corps rigides, y compris la translation, tout en conservant le parallélisme.
 - La **Transformation Projective** exprime en plus la perspective, permettant une projection non linéaire bien plus proche des véritables appareils photo.
 
-Ce cadre a simplifié la conception des circuits matériels à l'intérieur des GPU, augmentant considérablement la capacité expressive de l'infographie. En parallèle, cela est devenu la base essentielle des algorithmes avancés de reconnaissance et de correction d'images en vision par ordinateur. Comprendre profondément les significations mathématiques derrière tout cela rendra sûrement plus clair le fonctionnement des logiciels 3D et des API de traitement d'images que vous utilisez habituellement.
+Les coordonnées homogènes sont largement utilisées dans les pipelines graphiques 3D, car elles permettent de composer et de traiter les transformations uniformément par des produits matriciels. Les transformations projectives et les homographies servent aussi à aligner les images et à corriger leur géométrie en vision par ordinateur. Comprendre ces mathématiques aide à mieux saisir le fonctionnement des logiciels 3D et des API de traitement d’images.
 

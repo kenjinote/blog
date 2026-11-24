@@ -24125,6 +24125,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-208.json",
       "evidenceHash": "f24261119f799b4d52c2d76acef15d358928b3b9742c0dc01455a4f6498f4619"
+    },
+    "post/affine-and-projective-transformations/index.ar.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "9210534135f9b7fb54767214f89bd90c6c0237e5b06b9228dd2dd490b6961633",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "9035c4d150a33c565f1bb314f17a0a58c78e4f42779891d69d1e4baf5cde8567"
+    },
+    "post/affine-and-projective-transformations/index.en.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "0549234c34c5f731da630ad41d8d8ebd2af07db62273f3f5ba89ff73ba41e624",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "75b307521d3b3aaafefe4b9b9b0784357f20214bf2c6994e4b28dc33f5e5d54b"
+    },
+    "post/affine-and-projective-transformations/index.de.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "ba2005b101ba1b976b223f31ad6c9455cf40537d9014603f58fb9705c0e51284",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "ecb42fcf239f50f2d311863cc13518f349e664588751c33d2a77b5a861adfc4f"
+    },
+    "post/affine-and-projective-transformations/index.es.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "5d6ace4937829dfa4776c6031301d72afc6d95ac3579854e58a6d7728a9cec8d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "fe28108e1886dc35161c0aa36e201f0ce455025255094e55309134213bed2c00"
+    },
+    "post/affine-and-projective-transformations/index.fr.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "13e80ebf235e43b4df3bfb251fac3a0746891ac1c7a806bc5c4de0ec1639eb01",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "ba07afb1d3334441c16c5483245aa668bf6cc231ba47fe45dd74d03e785d129e"
+    },
+    "post/affine-and-projective-transformations/index.hi.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "08a625870935c799f4ea550663ae3d856680ca0fef4c60ef1a75847105ac5f28",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "0aca0502edff9993d2afb3f98601b72143497f6cc3994415bdb0a4b330afe3e6"
+    },
+    "post/affine-and-projective-transformations/index.id.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "55dc6678bffe1d283267ebf5458882f729c02ba20a0ac03e17d035237368f56b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "2f1c8e778d909a4a4e0c3219ed46586fa8e9ef4ce90b70ab1783ba5313d0e3ee"
+    },
+    "post/affine-and-projective-transformations/index.ko.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "33a5cffc41b444256980d4113f956b4b742b52c43b4d9faed8cfd096791e1135",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "2fddd22a13edbfbae9e1d4469e695436b3e885d648aa254194b77c1b5232abfb"
+    },
+    "post/affine-and-projective-transformations/index.pt.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "19b6ce127ddc91a570a1671602a26864792c34a5877d56966d3b6919a2f2389b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "d896e899ebb2ec502b6f126ddcd4361fe11b0acd7e4126ba2262014dc63599c6"
+    },
+    "post/affine-and-projective-transformations/index.ru.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "6bd6cff92b56a7f98541ccfdc896f2c1478470a1f27df1658e5ec8c2308f9eef",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "a67048ef54d1ae269c83e3fcf1c1dd5606ef8cf01307a5986404ec135768c8c3"
+    },
+    "post/affine-and-projective-transformations/index.zh-cn.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "d2a86e34d280268ada62dc4f7c2deb0fdb440c4ae563d51ebd57fb2fa023612f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "d7d63c3901fc7d65b706c2205ab4317562dbb1f17bc02c3427034c68b193cb15"
+    },
+    "post/affine-and-projective-transformations/index.zh-tw.md": {
+      "source": "post/affine-and-projective-transformations/index.md",
+      "reviewedAt": "2026-11-25",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "9f8aa963df6a4f5ff1aefd04f2a7658d33de67ee2cc54eab5bc9a0e0e867643f",
+      "translationHash": "f3e8164e381df2f53e1c21da4b105bc9a0d460d77547174a4c336973f67e4782",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-209.json",
+      "evidenceHash": "7e2dfba7dfee545612777e2d37c382590dc09b6e8e53c728252b6b128c34a031"
     }
   }
 }

@@ -3,7 +3,6 @@ title: 'Transformaciones Afines y Proyectivas: La Fusión del Álgebra Lineal y 
 date: "2026-09-24T19:44:38+09:00"
 description: 'Una explicación detallada de los fundamentos matemáticos de las transformaciones afines y proyectivas, su expresión usando coordenadas homogéneas y aplicaciones en gráficos por computadora y procesamiento de imágenes.'
 slug: 'affine-and-projective-transformations'
-date: '2026-09-20T15:15:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'
@@ -49,7 +48,7 @@ Para resolver este problema de traslación y manejar unificadamente todas las tr
 
 ### 3.1. ¿Qué son las Coordenadas Homogéneas?
 
-En las coordenadas homogéneas, se añade una dimensión ficticia (generalmente $1$) al final de las coordenadas 2D $(x, y)$, representándose como un vector 3D $(x, y, 1)$. En general, la coordenada homogénea $(x, y, w)$ corresponde a las coordenadas ortogonales $(x/w, y/w)$ en el espacio real (siempre que $w \neq 0$).
+En las coordenadas homogéneas, se añade una dimensión ficticia (generalmente $1$) al final de las coordenadas 2D $(x, y)$, representándose como un vector 3D $(x, y, 1)$. En general, la coordenada homogénea $(x, y, w)$ corresponde a las coordenadas cartesianas $(x/w, y/w)$ en el espacio real (siempre que $w \neq 0$). Las coordenadas homogéneas que difieren por un factor escalar distinto de cero representan el mismo punto.
 
 ### 3.2. Estructura de la Matriz de Transformación Afín
 
@@ -71,7 +70,7 @@ Magníficamente, la parte de transformación lineal ($a, b, c, d$) y la parte de
 
 ### 3.3. Propiedades Geométricas de las Transformaciones Afines
 
-La propiedad geométrica más importante de una transformación afín es que "**las líneas paralelas siguen siendo paralelas después de la transformación**". Además, "la proporción de los puntos sobre un segmento de línea (por ejemplo, el punto medio)" también se conserva. Por lo tanto, aunque un cuadrado se convierta en un paralelogramo al aplicarle una transformación afín, nunca se convertirá en un trapecio.
+La propiedad geométrica más importante de una transformación afín es que **las líneas paralelas siguen siendo paralelas después de la transformación**. También se conservan las proporciones de los puntos sobre un segmento, incluido el punto medio. Con una transformación afín cuyo componente lineal es no singular, un cuadrado se transforma en un paralelogramo y conserva el paralelismo de cada par de lados opuestos.
 
 ## 4. Transformación Proyectiva: Representación Matemática de la Perspectiva
 
@@ -81,7 +80,7 @@ El modelado matemático estricto de esta perspectiva es la **Transformación Pro
 
 ### 4.1. Estructura de la Matriz de Transformación Proyectiva (Homografía)
 
-La transformación proyectiva entre espacios 2D también se representa mediante una matriz $3 \times 3$ utilizando coordenadas homogéneas. En el campo de la visión por computadora, a esta matriz también se le llama **Matriz de Homografía** (Homography Matrix). La mayor y decisiva diferencia es que la fila inferior (la 3.ª fila), que en la transformación afín siempre era $0, 0, 1$, puede establecerse en valores arbitrarios.
+Las transformaciones proyectivas entre espacios 2D se representan en coordenadas homogéneas mediante una matriz no singular de $3 \times 3$; multiplicar toda la matriz por cualquier escalar no nulo representa la misma transformación. En visión por computadora, también se llama **matriz de homografía**. En una transformación afín, la fila inferior queda fijada en $(0, 0, 1)$; una proyectiva permite otros valores siempre que la matriz siga siendo no singular.
 
 $$
 \begin{pmatrix} X \\ Y \\ W \end{pmatrix} = \begin{pmatrix} h_{11} & h_{12} & h_{13} \\ h_{21} & h_{22} & h_{23} \\ h_{31} & h_{32} & h_{33} \end{pmatrix} \begin{pmatrix} x \\ y \\ 1 \end{pmatrix}
@@ -94,7 +93,7 @@ x' = \frac{X}{W} = \frac{h_{11}x + h_{12}y + h_{13}}{h_{31}x + h_{32}y + h_{33}}
 y' = \frac{Y}{W} = \frac{h_{21}x + h_{22}y + h_{23}}{h_{31}x + h_{32}y + h_{33}}
 $$
 
-Al incluir los términos de $x$ e $y$ en el denominador, las coordenadas tras la transformación cambian de forma no lineal. Esta división no lineal (división de perspectiva) es precisamente el fundamento matemático que genera el efecto de perspectiva de "escalar más grande lo que está cerca y más pequeño lo que está lejos".
+Como el denominador contiene términos de $x$ e $y$, las coordenadas transformadas cambian de forma no lineal. En la proyección en perspectiva, esta división (división de perspectiva) expresa un escalado dependiente de la profundidad: los objetos cercanos parecen más grandes y los lejanos, más pequeños. Si el denominador $W$ es cero, no se pueden normalizar coordenadas 2D finitas.
 
 ### 4.2. Jerarquía de Clases de Transformaciones
 
@@ -132,17 +131,17 @@ sequenceDiagram
 
 1. **Transformación de Modelo** (Model Transform): Sitúa los modelos 3D individuales creados en puntos de referencia en posiciones adecuadas dentro del inmenso mundo virtual, ajustando su orientación y tamaño. Esta es una transformación afín pura.
 2. **Transformación de Vista** (View Transform): Se sitúa una cámara virtual y se transforma las coordenadas de todo el mundo a "posiciones relativas vistas desde la cámara". Esta también es una combinación de transformaciones afines (principalmente rotación y traslación).
-3. **Transformación de Proyección** (Projection Transform): Proyecta la escena 3D sobre el tronco de visión 2D (viewing frustum). Aquí se aplica la matriz de transformación proyectiva de $4 \times 4$ que tiene componentes en la última fila, y finalmente, al dividir por el elemento $w$, se completa el renderizado con sensación de perspectiva.
+3. **Transformación de Proyección** (Projection Transform): La escena 3D se recorta según el volumen de visión (frustum) y se transforma a coordenadas de pantalla 2D con una matriz de proyección de $4 \times 4$. Al dividir por la coordenada homogénea $w$, se obtienen las coordenadas proyectadas en perspectiva.
 
 ## 6. Aplicaciones en Visión por Computadora y Procesamiento de Imágenes
 
 Las transformaciones afines y proyectivas no solo son vitales para dibujar en 3DCG desde cero, sino que también son sumamente importantes en el área de la visión por computadora para el procesamiento y análisis de fotografías y vídeos existentes.
 
 ### 6.1. Corrección de Distorsión de Imágenes (Distortion Correction)
-En las fotografías de edificios tomadas desde abajo en diagonal, los contornos de los edificios aparecen encogidos en la parte superior (en perspectiva). Esto se debe a que la imagen se distorsiona por la transformación proyectiva que atraviesa la lente de la cámara. Calculando la matriz de homografía que asocie las coordenadas de las cuatro esquinas de la imagen a las coordenadas de un rectángulo original, y aplicando una transformación inversa usando la matriz inversa, se puede corregir la imagen como si se hubiera tomado de frente.
+Al fotografiar oblicuamente una fachada plana, la proyección en perspectiva puede hacer que sus bordes parezcan converger hacia la parte superior. Una homografía puede rectificar la perspectiva de ese plano: se estima la transformación a partir de puntos correspondientes en las esquinas y se aplica la transformación inversa para obtener una vista frontal del plano. La distorsión radial del objetivo, como la de barril o cojín, es un efecto distinto; para una rectificación precisa, puede ser necesario calibrarla y corregirla primero.
 
 ### 6.2. Unión de Imágenes Panorámicas (Image Stitching)
-La transformación proyectiva también está profundamente involucrada en la tecnología de unir múltiples fotografías para crear una amplia imagen panorámica. Entre las imágenes capturadas rotando una cámara desde el mismo sitio, existe una relación geométrica que permite transformarlas entre sí mediante transformaciones proyectivas. Extrayendo los puntos característicos (esquinas o puntos de textura notables) de las imágenes, y estimando la matriz de homografía que las superpone con el menor error posible, se consigue una síntesis de panorámica natural y sin uniones aparentes.
+La transformación proyectiva también es fundamental para unir varias fotografías y crear panorámicas amplias. Cuando la cámara gira alrededor de un centro de proyección aproximadamente fijo, las imágenes capturadas se relacionan geométricamente mediante una transformación proyectiva. Se extraen puntos característicos (como esquinas o texturas destacadas) y se estima la homografía que mejor los superpone para producir una panorámica continua y natural.
 
 ## 7. Conclusión
 
@@ -151,5 +150,5 @@ Partiendo de las operaciones básicas de matrices del álgebra lineal, y al intr
 - La **Transformación Afín** expresa deformaciones y transformaciones de cuerpos rígidos, incluida la traslación, conservando el paralelismo.
 - La **Transformación Proyectiva** además de eso representa la perspectiva, permitiendo una proyección no lineal mucho más cercana a las cámaras reales.
 
-Este marco de trabajo simplificó el diseño de circuitos de hardware dentro de las GPU, incrementando enormemente la capacidad expresiva de los gráficos por computadora. Paralelamente, se ha convertido en la base esencial para algoritmos avanzados de reconocimiento y corrección de imágenes en el campo de la visión por computadora. Comprender profundamente los significados matemáticos que hay detrás seguramente hará mucho más nítido el funcionamiento de los API de procesamiento de imágenes y software 3D que utilizas habitualmente.
+Las coordenadas homogéneas se utilizan ampliamente en las canalizaciones de gráficos 3D porque permiten componer y tratar las transformaciones de manera uniforme mediante productos de matrices. Las transformaciones proyectivas y las homografías también se usan para alinear imágenes y corregir su geometría en visión por computadora. Comprender estas matemáticas facilita seguir el funcionamiento del software 3D y de las API de procesamiento de imágenes.
 

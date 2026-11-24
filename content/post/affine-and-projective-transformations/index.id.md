@@ -3,7 +3,6 @@ title: 'Transformasi Afin dan Proyektif: Perpaduan Aljabar Linear dan Geometri d
 date: "2026-09-24T19:44:38+09:00"
 description: 'Penjelasan terperinci mengenai fondasi matematika dari transformasi afin dan proyektif, ekspresinya menggunakan koordinat homogen, dan penerapannya dalam grafik komputer dan pemrosesan gambar.'
 slug: 'affine-and-projective-transformations'
-date: '2026-09-20T15:15:00+09:00'
 image: "eyecatch.jpg"
 categories:
   - 'mathematics'
@@ -49,7 +48,7 @@ Untuk menyelesaikan masalah translasi ini dan menangani semua transformasi secar
 
 ### 3.1. Apa itu Koordinat Homogen?
 
-Dalam koordinat homogen, satu dimensi palsu (biasanya $1$) ditambahkan pada akhir koordinat 2D $(x, y)$, untuk merepresentasikannya sebagai vektor 3D $(x, y, 1)$. Secara umum, koordinat homogen $(x, y, w)$ berkorespondensi dengan koordinat Kartesius $(x/w, y/w)$ dalam ruang nyata (dengan syarat $w \neq 0$).
+Dalam koordinat homogen, satu dimensi palsu (biasanya $1$) ditambahkan pada akhir koordinat 2D $(x, y)$, untuk merepresentasikannya sebagai vektor 3D $(x, y, 1)$. Secara umum, koordinat homogen $(x, y, w)$ berkorespondensi dengan koordinat Kartesius $(x/w, y/w)$ dalam ruang nyata (dengan syarat $w \neq 0$). Koordinat homogen yang berbeda dengan faktor skalar tak nol merepresentasikan titik yang sama.
 
 ### 3.2. Struktur Matriks Transformasi Afin
 
@@ -71,7 +70,7 @@ Secara brilian, bagian transformasi linear ($a, b, c, d$) dan bagian translasi (
 
 ### 3.3. Sifat Geometris Transformasi Afin
 
-Sifat geometris paling penting dari transformasi afin adalah bahwa "**garis-garis sejajar tetap sejajar setelah transformasi**". Selain itu, "rasio titik-titik pada sebuah segmen garis (misalnya titik tengah)" juga dipertahankan. Oleh karena itu, meskipun sebuah persegi dapat berubah menjadi jajaran genjang setelah transformasi afin, bentuknya tidak akan pernah menjadi trapesium.
+Sifat geometris terpenting dari transformasi afin adalah **garis-garis sejajar tetap sejajar setelah transformasi**. Rasio titik-titik pada suatu ruas, termasuk titik tengah, juga dipertahankan. Pada transformasi afin dengan bagian linear yang nonsingular, persegi dipetakan menjadi jajaran genjang dan setiap pasang sisi yang berhadapan tetap sejajar.
 
 ## 4. Transformasi Proyektif: Representasi Matematika dari Perspektif
 
@@ -81,7 +80,7 @@ Pemodelan matematika yang ketat dari perspektif ini adalah **Transformasi Proyek
 
 ### 4.1. Struktur Matriks Transformasi Proyektif (Homografi)
 
-Transformasi proyektif antara ruang 2D juga direpresentasikan oleh matriks $3 \times 3$ menggunakan koordinat homogen. Dalam bidang visi komputer, matriks ini juga disebut **Matriks Homografi** (Homography Matrix). Perbedaan terbesar dan paling menentukan adalah bahwa pada baris terbawah (baris ke-3), yang pada transformasi afin selalu bernilai $0, 0, 1$, di sini dapat diatur dengan nilai acak apa pun.
+Transformasi proyektif antara ruang 2D direpresentasikan dalam koordinat homogen dengan matriks nonsingular $3 \times 3$; mengalikan seluruh matriks dengan skalar tak nol mana pun menghasilkan transformasi yang sama. Dalam visi komputer, matriks ini juga disebut **matriks homografi**. Pada transformasi afin, baris terbawah tetap $(0, 0, 1)$; transformasi proyektif dapat menggunakan nilai lain selama matriks tetap nonsingular.
 
 $$
 \begin{pmatrix} X \\ Y \\ W \end{pmatrix} = \begin{pmatrix} h_{11} & h_{12} & h_{13} \\ h_{21} & h_{22} & h_{23} \\ h_{31} & h_{32} & h_{33} \end{pmatrix} \begin{pmatrix} x \\ y \\ 1 \end{pmatrix}
@@ -94,7 +93,7 @@ x' = \frac{X}{W} = \frac{h_{11}x + h_{12}y + h_{13}}{h_{31}x + h_{32}y + h_{33}}
 y' = \frac{Y}{W} = \frac{h_{21}x + h_{22}y + h_{23}}{h_{31}x + h_{32}y + h_{33}}
 $$
 
-Karena penyebut memuat komponen $x$ dan $y$, koordinat setelah transformasi akan berubah secara non-linear. Pembagian non-linear (pembagian perspektif) inilah yang secara tepat menjadi dasar matematika terciptanya efek perspektif di mana "benda dekat diskalakan lebih besar, dan benda jauh diskalakan lebih kecil".
+Karena penyebut memuat suku $x$ dan $y$, koordinat hasil transformasi berubah secara nonlinear. Dalam proyeksi perspektif, pembagian ini menyatakan penskalaan yang bergantung pada kedalaman: objek dekat tampak lebih besar dan objek jauh tampak lebih kecil. Jika penyebut $W=0$, titik tersebut tidak dapat dinormalisasi menjadi koordinat 2D yang berhingga.
 
 ### 4.2. Hierarki Kelas Transformasi
 
@@ -132,24 +131,24 @@ sequenceDiagram
 
 1. **Transformasi Model** (Model Transform): Menempatkan tiap-tiap model 3D yang dibuat pada titik referensi ke posisi yang sesuai di dalam dunia virtual yang luas, serta menyesuaikan orientasi dan ukurannya. Ini merupakan murni transformasi afin.
 2. **Transformasi Pandang** (View Transform): Meletakkan sebuah kamera virtual dan mentransformasikan seluruh koordinat dunia menjadi "posisi relatif dilihat dari kamera". Ini juga merupakan gabungan dari transformasi afin (terutama rotasi dan translasi).
-3. **Transformasi Proyeksi** (Projection Transform): Memproyeksikan adegan 3D pada bidang potong (frustum) 2D. Di sinilah matriks transformasi proyektif berukuran $4 \times 4$ yang berisi komponen di baris bawah diterapkan, dan akhirnya, membaginya dengan elemen $w$ menyelesaikan proses rendering dan memberikan kesan kedalaman perspektif.
+3. **Transformasi Proyeksi** (Projection Transform): Adegan 3D dipotong terhadap volume pandang (frustum), lalu dipetakan ke koordinat layar 2D menggunakan matriks proyeksi $4 \times 4$. Pembagian dengan koordinat homogen $w$ menghasilkan koordinat proyeksi perspektif.
 
 ## 6. Penerapan dalam Visi Komputer dan Pemrosesan Gambar
 
 Transformasi afin dan proyektif sangat penting bukan hanya dalam menggambar 3DCG dari awal, melainkan juga di bidang visi komputer untuk mengolah dan menganalisis foto serta video yang ada.
 
 ### 6.1. Koreksi Distorsi Gambar (Distortion Correction)
-Pada foto bangunan yang dipotret miring dari bawah, kontur bangunan terlihat meruncing di bagian atas (efek perspektif). Hal ini disebabkan karena gambar didistorsi oleh transformasi proyektif melalui lensa kamera. Dengan menghitung matriks homografi yang memetakan titik koordinat keempat sudut gambar ke koordinat persegi panjang awal, dan menggunakan matriks invers untuk menerapkan transformasi sebaliknya, gambar dapat diperbaiki hingga terlihat seperti dipotret langsung dari depan.
+Saat fasad bangunan yang datar difoto secara miring, proyeksi perspektif dapat membuat tepinya tampak menyatu ke arah atas. Perspektif pada bidang tersebut dapat diluruskan dengan homografi: estimasikan transformasi dari pasangan titik sudut yang bersesuaian, lalu terapkan transformasi invers untuk memperoleh tampilan frontal bidang. Distorsi radial lensa seperti barrel atau pincushion adalah efek yang berbeda; untuk koreksi presisi, distorsi lensa mungkin perlu dikalibrasi dan diperbaiki terlebih dahulu.
 
 ### 6.2. Penyambungan Gambar Panorama (Image Stitching)
-Transformasi proyektif juga memegang peranan erat dalam teknologi menyatukan banyak foto menjadi satu gambar panorama yang luas. Gambar yang diambil sambil memutar kamera di tempat yang sama, secara geometris saling terhubung melalui hubungan transformasi proyektif. Dengan mengekstrak titik-titik ciri (seperti sudut tajam atau pola tekstur) di antara gambar dan mengestimasi matriks homografi dengan kesalahan tumpang tindih terkecil, hasil sambungan yang mulus dan natural dapat tercapai.
+Transformasi proyektif juga penting untuk menyatukan beberapa foto menjadi panorama. Saat kamera berputar dengan pusat proyeksi yang kurang lebih tetap, gambar yang dihasilkan terhubung secara geometris melalui transformasi proyektif. Ekstrak titik ciri (seperti sudut atau tekstur yang menonjol), lalu estimasikan homografi yang paling tepat menumpangkannya untuk menghasilkan panorama yang mulus dan alami.
 
 ## 7. Kesimpulan
 
 Beranjak dari operasi matriks linear aljabar dasar, dan mengadopsi struktur matematika sistem koordinat homogen yang elegan — yaitu dengan menambahkan satu dimensi tambahan pada akhirnya — kita bisa memproses baik transformasi afin maupun proyektif sebagai bentuk tunggal perkalian matriks.
 
-- **Transformasi Afin** digunakan untuk mewakili transformasi wujud dan pergeseran benda tanpa mengubah titik paralel.
-- **Transformasi Proyektif** ditambahkan padanya untuk mengekspresikan efek perspektif non-linear yang menyerupai cara kerja lensa kamera asli.
+- **Transformasi afin** mencakup translasi, rotasi, penskalaan, dan deformasi linear lainnya serta mempertahankan kesejajaran garis.
+- **Transformasi proyektif** juga memodelkan perspektif sehingga memungkinkan proyeksi nonlinear yang lebih menyerupai kamera nyata.
 
-Sistem ini memudahkan rancang bangun sirkuit perangkat keras di dalam GPU, sehingga secara luar biasa meningkatkan kapasitas grafis komputer dalam merepresentasikan sesuatu. Di saat yang sama, ini mendasari kemunculan algoritma koreksi serta rekognisi visual modern. Memahami rahasia makna matematis di balik fungsi software 3D atau peranti grafis lainnya bakal memberikan Anda wawasan yang lebih jernih ke depannya.
+Koordinat homogen banyak digunakan dalam pipeline grafis 3D karena memungkinkan transformasi digabungkan dan ditangani secara seragam dengan perkalian matriks. Transformasi proyektif dan homografi juga digunakan untuk menyelaraskan gambar dan mengoreksi geometrinya dalam visi komputer. Memahami matematika ini membantu menjelaskan cara kerja perangkat lunak 3D dan API pemrosesan gambar.
 
