@@ -20645,6 +20645,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-177.json",
       "evidenceHash": "f009a7104132bc63ddd27a7e254d233fa8fc6b9c14055d2ea57f2012f7d48ab3"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.en.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "ec7adb2713d36a68c527c8516d4e9a867d53f5ddc8a26b2233e39bb82677500a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "a04e0b693a0cb6714f2b56a505e49df0ce91c0afa74a9011321ad3f3f9ea60cd"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.zh-cn.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "e07850d3a70fa75e4766b562e18e0609b98aed63d7953a58a2436df1dd62a20a",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "5f0c03629436e172c066fd573c305b812af613667f3f6ca607465037091d8b8b"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.es.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "5afe1ac47a5be1a37f7b02d2d18af7789c0297ee227736a8ec1f6affbf15e6b6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "aef8e1a0b50ace3fa59f66132f3f45efff61b4ce1e3116e501dca76b67d087bb"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.ko.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "1cf64dc6d614e91fb1024f433c0ef901116e374121ad696c8000f8e70e9ea2c0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "6c89aceda51380860c4151a310e03355e26dfe882891cdd3e0d00aef4b5d503a"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.pt.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "3faccbab2a357abcd01ac002ee42feef9d0f4f3b851d7cf80b1e8f2a9ed42878",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "26582858bc631d078a54c95e96406d0cce8b58c139d1f60ba8460058a3bfc5e1"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.zh-tw.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "ea5dbea61a6339955378ba58993ea1f33380ecde4bd797c74a48af68b4db43e8",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "1be29b33307461272ea1297cabd42672d08e9f85a4079f0a18113e898d0b3e72"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.hi.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "419ea331abe4913e585f574156608d5cc83e84bbde3683f207caed47c9016be0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "24a9216004a61dab2eeaca53b29118e9867b4435bbe9642f0c0db4066b51c0a7"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.fr.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "40731bb77d674b8f4626fbd859b7e05f5d64d8bdc07f17154c70ebb2972f98c4",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "5e1c44a645ed8488c0b7452ef38bbffb93954b5671662e70eeea6cf96d605f0b"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.de.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "faf8c1db946aa7483a4020435f6679f71fed5725bed209f4cecd337de602b7f1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "c82c0c01efd8da65012fcf759dc6df60a1d1316bc625309019ceb8a5f509d50f"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.ar.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "d479208085e15e108a5b5d70b1304b8b70c0bbad0e4f0c509598e32ce720fbef",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "093f88ff520cb027fab068e709b1edd324f8f27a2535e3cce85e5fdb135620ca"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.ru.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "e326ae516f464123b24c9e9589e5b16dec5ea495bbb820b85de2db082232f9b1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "5b5adae90c1a6f21965c0f58d7ed6365a6dead6cdfbe207762d3f3d586a50bb9"
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.id.md": {
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "e6402226ebe16698e79c607960fca5ac0c6cf203d7cdd8f3ba6e5fdb5e20a527",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-178.json",
+      "evidenceHash": "2218d3e33e6bd956e6b489c20eaa1fb26b14ac93ddfd136cd0acdd351f6e2c35"
     }
   }
 }

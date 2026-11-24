@@ -1,0 +1,469 @@
+{
+  "version": 1,
+  "batch": 178,
+  "article": "Understanding the mathematical structure of Transformer models",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+  "sources": [
+    "https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+    "https://arxiv.org/abs/1706.03762",
+    "https://docs.pytorch.org/docs/stable/generated/torch.nn.functional.scaled_dot_product_attention.html",
+    "https://docs.pytorch.org/docs/stable/generated/torch.nn.LayerNorm.html"
+  ],
+  "scope": "Compared the complete Japanese article and all twelve translations, equations, tensor shapes, causal-mask semantics, architecture claims, complexity statements, code, references, and metadata against the original Transformer paper and current official PyTorch documentation.",
+  "findings": [
+    "Corrected row-vector embedding multiplication and separated key/value dimensions.",
+    "Corrected causal-mask inequality so future keys j>i are masked; documented boolean mask semantics.",
+    "Qualified parallelism, positional extrapolation, Softmax weight interpretation, and gradient claims.",
+    "Clarified encoder-only/decoder-only differences and corrected complexity and FlashAttention limitations.",
+    "Replaced incorrect/ambiguous mask pseudocode and unrelated internal links with a shape-documented reference implementation and primary sources.",
+    "Preserved the original 2026-09-11 publication date and added lastmod."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/Transformerモデルの数学的構造を読み解く/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "ec7adb2713d36a68c527c8516d4e9a867d53f5ddc8a26b2233e39bb82677500a",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "e07850d3a70fa75e4766b562e18e0609b98aed63d7953a58a2436df1dd62a20a",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "5afe1ac47a5be1a37f7b02d2d18af7789c0297ee227736a8ec1f6affbf15e6b6",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "1cf64dc6d614e91fb1024f433c0ef901116e374121ad696c8000f8e70e9ea2c0",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "3faccbab2a357abcd01ac002ee42feef9d0f4f3b851d7cf80b1e8f2a9ed42878",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "ea5dbea61a6339955378ba58993ea1f33380ecde4bd797c74a48af68b4db43e8",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "419ea331abe4913e585f574156608d5cc83e84bbde3683f207caed47c9016be0",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "40731bb77d674b8f4626fbd859b7e05f5d64d8bdc07f17154c70ebb2972f98c4",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "faf8c1db946aa7483a4020435f6679f71fed5725bed209f4cecd337de602b7f1",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "d479208085e15e108a5b5d70b1304b8b70c0bbad0e4f0c509598e32ce720fbef",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "e326ae516f464123b24c9e9589e5b16dec5ea495bbb820b85de2db082232f9b1",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    },
+    "post/Transformerモデルの数学的構造を読み解く/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/Transformerモデルの数学的構造を読み解く/index.md",
+      "sourceHash": "3f10d2249f98e37d046fe5db2f2d71f0ddd7dc81b2669469d0f46c6aa1242609",
+      "translationHash": "e6402226ebe16698e79c607960fca5ac0c6cf203d7cdd8f3ba6e5fdb5e20a527",
+      "summary": "Compared the complete translation with the Japanese source, original Transformer paper, and current PyTorch references; checked every mathematical statement, tensor dimension, mask direction, code behavior, terminology, metadata, and link.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the complete Japanese source and all twelve translations; corrected architecture scope, embedding shapes, Q/K/V dimensions, scaled scores, causal-mask direction, complexity, FlashAttention claims, and implementation semantics against the original paper and PyTorch docs."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Reviewed encoder/decoder, embedding, positional encoding, query/key/value, head dimensions, FFN, Post-/Pre-LayerNorm, causal mask, and attention complexity in each locale."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Checked embedding matrix multiplication shapes, sinusoidal position formulas, Q/K/V dimensions, score and output shapes, variance assumption, LayerNorm equations, FFN, and causal-mask inequalities."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Replaced the ambiguous mask convention with a bool allowed-mask implementation (True means allowed), corrected the future-token triangle, documented broadcast shapes and the all-masked-row constraint, and parsed the shared Python example for syntax. Runtime execution was not possible because PyTorch is not installed in this environment."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the original NeurIPS paper, arXiv paper, and current official PyTorch SDPA and LayerNorm references to all editions."
+        }
+      },
+      "limitations": [
+        "AI-assisted review by Codex; no human or native-speaker certification.",
+        "The Python example was syntax-checked but not executed because PyTorch is not installed in the environment.",
+        "The positional-encoding equations describe the original 2017 architecture; many current models use other position schemes.",
+        "Complexity statements describe dense full attention and do not cover every optimized or sparse architecture."
+      ]
+    }
+  }
+}
