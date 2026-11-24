@@ -15605,6 +15605,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-134.json",
       "evidenceHash": "5d4dc4b40a1d297c6f37eb01180c00193b15e55af7f93fbef8f096534bfb9e39"
+    },
+    "post/今のメインPCスペック/index.en.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "e577cd1f24c9db3ef0ce8334633f5e2f86eec385d48ef992a8ed8fa167afcfd3",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "8b77ac54ee85098fe83ffb07999f3de7f6e04c292e087289f1e801b5561b253f"
+    },
+    "post/今のメインPCスペック/index.zh-cn.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "65efd807d2c0b26eafba78f8e0e34c4dcd6b548de0c79dac6f7553eb87e94344",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "35d1312af04617f13de3111cbc964120893f8dd12e6a4d0f57c03bb895787c09"
+    },
+    "post/今のメインPCスペック/index.es.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "532bc285ed6a0531f90cb7de4bcc08832b9b93c876a5bc28fa53b7d2dbdf47f1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "2d79f4d480aa32a7262b75f1372c66b7c0c32fc0730c375e35f54113cf5001e7"
+    },
+    "post/今のメインPCスペック/index.ko.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "e8108fff83c724c2921a7db92429be9c027fc71e75b37cc63dff761a30f9f881",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "6fcf40363fd6dbfefa3f2c8d2739fc6539f66aeee61fb4a954ee3d8c87068928"
+    },
+    "post/今のメインPCスペック/index.pt.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "67c35bb7fd2b7c14e9b786fe1db7cb070b9597298001d109bd9474949ae12bfd",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "681e5a4d0fe4cf91c88123f4124da9c08696c0890955541939bd81341a714004"
+    },
+    "post/今のメインPCスペック/index.zh-tw.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "413aee7087785c0164f3767e6490cdaa132c9f2f894f807cddd8e7eaad6a36d6",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "5a0d27eb4e8af1d471f72231b1cb5e0c2762c66f1d7161ee02fb5f673277e037"
+    },
+    "post/今のメインPCスペック/index.hi.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "596eaf9d5d9eeaad6c8fa2d24751b0d2af2779a66af772fe34f86cab7fdf179f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "aa689dc8c93875f23abb1db220e9eb3e87a22e232d8108e2cdca82a21158d582"
+    },
+    "post/今のメインPCスペック/index.fr.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "66e7a4dbe4aee5f922406c6e146b5aa03364b73713e47861a1273874b4b60b9f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "d30e6ca3254184952052b4de52ac49888eae85452d53ef171b8f01b6bfd70a37"
+    },
+    "post/今のメインPCスペック/index.de.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "03dbb9e7fd2919e95563e5da3c6acbca98f25c05fa2ba2a3894367eec7d714ff",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "5d8111d502126e6cd3138be3e0397370709073ef9ea332073a42a0d19d19b7d5"
+    },
+    "post/今のメインPCスペック/index.ar.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "425dfb8c9618364eb8676ab5a77957a1f8b39bd2b7ff67e9614266ac5e8fba12",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "91c50e63a68201661e6af128f11be9b50fc433e439c69bf60924f55d167d9b0c"
+    },
+    "post/今のメインPCスペック/index.ru.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "03ceec5fba41ff2521e8fbac99b7ab1f14d70fbb8fdc7985b9edc6fa85bbc29f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "4a88be3efb94a3d67eb8550f81f57e417b171f17ffa904da4a9133901210705b"
+    },
+    "post/今のメインPCスペック/index.id.md": {
+      "source": "post/今のメインPCスペック/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "862919150416c6d750fbb22378fd95f4127354bbc9c22546cbfa64179fe0369d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-135.json",
+      "evidenceHash": "1a6b3ab93aa7fd4b85ce61e49fc0ae293a67bfd3d4b6416aeb6fe34deb71a53c"
     }
   }
 }

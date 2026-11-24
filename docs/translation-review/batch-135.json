@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 135,
+  "article": "メインPCのスペックメモ（2022年9月時点）",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+  "sources": [
+    "https://www.intel.com/content/www/us/en/products/sku/126684/intel-core-i78700k-processor-12m-cache-up-to-4-70-ghz/specifications.html",
+    "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information"
+  ],
+  "scope": "Compared the complete Japanese specification table and all twelve translations; checked component names, memory, system type, Windows version/build, descriptions, dates, and official references.",
+  "findings": [
+    "Removed duplicate future dates, retained the original publication date 2022-09-08, and recorded lastmod 2026-11-24 in all locales.",
+    "Changed titles and descriptions to make clear this is a September 2022 snapshot rather than the current PC configuration.",
+    "Intel identifies 3.70 GHz as the Core i7-8700K base frequency; the processor can boost up to 4.70 GHz.",
+    "Microsoft release information lists Windows 11 build 22000.856 in the August 9, 2022 update entry.",
+    "Added official Intel and Microsoft references to each locale."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/今のメインPCスペック/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "e577cd1f24c9db3ef0ce8334633f5e2f86eec385d48ef992a8ed8fa167afcfd3",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    },
+    "post/今のメインPCスペック/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "65efd807d2c0b26eafba78f8e0e34c4dcd6b548de0c79dac6f7553eb87e94344",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    },
+    "post/今のメインPCスペック/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "532bc285ed6a0531f90cb7de4bcc08832b9b93c876a5bc28fa53b7d2dbdf47f1",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    },
+    "post/今のメインPCスペック/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "e8108fff83c724c2921a7db92429be9c027fc71e75b37cc63dff761a30f9f881",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    },
+    "post/今のメインPCスペック/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "67c35bb7fd2b7c14e9b786fe1db7cb070b9597298001d109bd9474949ae12bfd",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    },
+    "post/今のメインPCスペック/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "413aee7087785c0164f3767e6490cdaa132c9f2f894f807cddd8e7eaad6a36d6",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    },
+    "post/今のメインPCスペック/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "596eaf9d5d9eeaad6c8fa2d24751b0d2af2779a66af772fe34f86cab7fdf179f",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    },
+    "post/今のメインPCスペック/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "66e7a4dbe4aee5f922406c6e146b5aa03364b73713e47861a1273874b4b60b9f",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    },
+    "post/今のメインPCスペック/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "03dbb9e7fd2919e95563e5da3c6acbca98f25c05fa2ba2a3894367eec7d714ff",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    },
+    "post/今のメインPCスペック/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "425dfb8c9618364eb8676ab5a77957a1f8b39bd2b7ff67e9614266ac5e8fba12",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    },
+    "post/今のメインPCスペック/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "03ceec5fba41ff2521e8fbac99b7ab1f14d70fbb8fdc7985b9edc6fa85bbc29f",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    },
+    "post/今のメインPCスペック/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/今のメインPCスペック/index.md",
+      "sourceHash": "a49dc11b7e88013f24e2779328a11a44fd11e4ad54487bfa0766c097689d5704",
+      "translationHash": "862919150416c6d750fbb22378fd95f4127354bbc9c22546cbfa64179fe0369d",
+      "summary": "Reviewed the full translated hardware inventory against Japanese and official Intel/Microsoft references, clarified that the configuration is a historical snapshot, and aligned the description with the recorded date.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared the full system-spec table and description across locales. Preserved the personal device snapshot and explicitly dated it September 8, 2022 so “current PC” is not read as a claim about the present day."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CPU model, base-frequency terminology, memory amount, x64 system type, Windows 11 Enterprise, version 21H2/build 22000.856, and manufacturer name."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no mathematical formulas or calculations."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "The hardware inventory contains no code or commands."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added official Intel processor specifications and Microsoft Windows 11 release information; verified the 3.70 GHz base frequency and the 22000.856 release entry."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The listed RAM, operating-system edition, and manufacturer are the author’s personal report and cannot be independently verified from public specifications.",
+        "This records a 2022 configuration and should not be treated as the author’s current setup."
+      ]
+    }
+  }
+}

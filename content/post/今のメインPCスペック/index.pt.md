@@ -1,13 +1,13 @@
 ---
-title: '[Core i7-8700K / Memória de 32GB] As especificações atuais do PC principal e ambiente de trabalho'
-date: "2026-09-24T19:44:38+09:00"
+title: "Especificações do meu PC principal (setembro de 2022)"
 slug: "今のメインPCスペック"
 date: 2022-09-08T01:55:00+09:00
+lastmod: "2026-11-24T00:00:00+09:00"
 tags: ["PC"]
 draft: false
 image: "images/img.webp"
 categories: ["pc-gadgets"]
-description: 'Resumi as especificações do PC principal (Core i7-8700K, memória de 32GB, Windows 11) e o ambiente de trabalho que utilizo atualmente. Apresento como um memorando a configuração atual utilizando um PC desktop da Mouse Computer.'
+description: "Registro da configuração do meu PC principal em setembro de 2022: Core i7-8700K, 32 GB de RAM e Windows 11 Enterprise 21H2, com referências oficiais da Intel e da Microsoft."
 ---
 Vou escrever as especificações do meu PC principal.
 
@@ -18,3 +18,10 @@ Vou escrever as especificações do meu PC principal.
 | Tipo de sistema | Sistema operacional de 64 bits, processador baseado em x64 |
 | SO | Windows 11 Enterprise (Versão 21H2, Build 22000.856) |
 | Fabricante | Mouse Computer Co., Ltd. |
+
+Este é um registro de 8 de setembro de 2022, não uma descrição da minha configuração atual. Os 3,70 GHz do processador correspondem à frequência base informada pela Intel. A Microsoft lista o build 22000.856 do Windows 11 como uma atualização lançada em 9 de agosto de 2022.
+
+## Referências
+[Intel Core i7-8700K specifications](https://www.intel.com/content/www/us/en/products/sku/126684/intel-core-i78700k-processor-12m-cache-up-to-4-70-ghz/specifications.html)
+
+[Windows 11 release information](https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information)
