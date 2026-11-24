@@ -1,36 +1,65 @@
 ---
-title: 'Como alterar as cores e o tema de cores do tema Hugo PaperMod com CSS'
-date: "2026-09-24T19:44:38+09:00"
+title: "Personalizar as cores do Hugo PaperMod com variáveis CSS"
 slug: "PaperModの配色変更"
-date: 2022-09-07T15:30:21+09:00
 tags: ["HUGO", "PaperMod"]
 draft: false
 image: "img.webp"
 categories: ["blogging"]
-description: 'Explicamos como personalizar as cores gerais do tema Hugo PaperMod. Apresentamos exemplos específicos de configuração de variáveis ​​para aplicar o esquema de cores de sua preferência, editando o CSS (blank.css) que inclui as definições de estilo, como cor de fundo, cor de texto, blocos de código, etc.'
+description: "Substitua as variáveis de cor do PaperMod para os temas claro e escuro com CSS estendido e verifique o contraste do texto."
+date: "2022-09-07T15:30:21+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
-Alterei o esquema de cores do tema PaperMod. Consultei o seguinte link para o método de alteração.
 
-https://github.com/adityatelange/hugo-PaperMod/discussions/645
+As cores do PaperMod podem ser personalizadas com propriedades customizadas do CSS (variáveis). Coloque as substituições em `assets/css/extended/` do site em vez de editar arquivos do tema, para facilitar a manutenção nas atualizações. O exemplo define uma paleta clara quente e uma escura; ajuste os valores ao seu site.
 
-O caminho do CSS é o seguinte.
+## Modo escuro e variáveis atuais
 
-`themes/PaperMod/assets/css/extended/blank.css`
+O PaperMod atual alterna para o modo escuro definindo `data-theme="dark"` no elemento `html`. Exemplos antigos que selecionam apenas `.dark` podem não corresponder a esse seletor. Além disso, `--hljs-bg` não é mais a variável atual do fundo dos blocos de código; o nome usado agora é `--code-block-bg`.
 
-```
+```css
+/* Save as assets/css/extended/theme-colors.css */
 :root {
-    --entry: #fbf7ef;
-    --primary: rgba(113, 103, 91, 1.00);
-    --secondary: rgba(113, 103, 91, 0.95);
-    --tertiary: rgba(113, 103, 91, 0.50);
-    --content: rgba(113, 103, 91, 0.85);
-    --hljs-bg: #34231B;
-    --code-bg: #ebe4d7;
-    --border: #fdfaf5;
+    color-scheme: light;
     --theme: #fbf7ef;
+    --entry: #fffdfa;
+    --primary: #433a32;
+    --secondary: #665b50;
+    --tertiary: #8b7f72;
+    --content: #453d35;
+    --code-block-bg: #34231b;
+    --code-bg: #efe7da;
+    --border: #ddd3c5;
 }
-.dark {
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --theme: #1d1e20;
+    --entry: #22252a;
+    --primary: #e8e6e1;
+    --secondary: #b5b2ac;
+    --tertiary: #55575c;
+    --content: #d2d0ca;
+    --code-block-bg: #17181a;
+    --code-bg: #37383e;
+    --border: #48484c;
 }
 ```
 
-Nenhuma alteração para o modo escuro por enquanto.
+## Contraste do texto
+
+Neste exemplo, as cores de texto normal `--primary` e `--content` contrastam bastante com o fundo. O contraste de `--primary` com `--theme` é de cerca de 10,4:1 no modo claro e 13,4:1 no escuro. WCAG 2.2 AA exige 4,5:1 para texto normal; confira separadamente as cores de sintaxe, links, bordas e outros estados.
+
+## Adicionar e conferir CSS estendido
+
+Salve a folha de estilos como `assets/css/extended/theme-colors.css` na raiz do site. A FAQ do PaperMod informa que CSS em `assets/css/extended/` é agrupado com os estilos do tema. Execute Hugo e confira o seletor claro/escuro, cartões, texto, código em linha, blocos de código e links.
+
+## Escopo
+
+Esta paleta é um exemplo e não garante conformidade de acessibilidade para todo texto, imagem ou componente interativo. As cores de realce de sintaxe são definidas separadamente de `--code-block-bg`; revise a legibilidade do código após mudar o fundo do bloco.
+
+## Referências
+
+- [PaperMod FAQ: custom CSS and theme assets](https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs)
+- [PaperMod: current theme color variables](https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/core/theme-vars.css)
+- [PaperMod discussion: changing background and text colors](https://github.com/adityatelange/hugo-PaperMod/discussions/645)
+- [W3C: WCAG 2.2 contrast minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum)

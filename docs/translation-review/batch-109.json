@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "batch": 109,
+  "article": "PaperModの配色変更",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+  "sources": [
+    "https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs",
+    "https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/core/theme-vars.css",
+    "https://github.com/adityatelange/hugo-PaperMod/discussions/645",
+    "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+  ],
+  "scope": "Rewrote the Japanese article and twelve translations against PaperMod's official FAQ and current upstream theme-vars.css, its original color-customization discussion, and W3C WCAG 2.2 contrast guidance. Checked current color-variable names, light/dark selector behavior, color examples and contrast, code block versus syntax colors, CSS extension path, links, locale alignment, and publication metadata.",
+  "findings": [
+    "Removed duplicated future dates, preserved the original 2022-09-07 publication date, and recorded lastmod 2026-11-24 in all locales.",
+    "Moved the example from theme-owned blank.css to the supported site-level assets/css/extended directory.",
+    "Replaced the empty .dark selector with PaperMod's current :root[data-theme=\"dark\"] selector and updated the obsolete --hljs-bg variable to --code-block-bg.",
+    "Added separate light and dark values and a representative palette whose checked primary/theme text contrast is about 10.4:1 and 13.4:1.",
+    "Added WCAG 2.2 AA normal-text contrast guidance and made clear that syntax colors and every other state need separate checks; no full conformance claim is made.",
+    "Aligned the Japanese article and twelve translations, including the CSS sample and current official references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/PaperModの配色変更/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "003fa6b4d2f301ee2edbbbb367e202eda1d715bbe439fb2ade967a6b243efd6b",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    },
+    "post/PaperModの配色変更/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "01f9b6d31670b4e05f901cb9f980f429171475711e7f365a0316e298e89b2af9",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    },
+    "post/PaperModの配色変更/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "ff307cb6113ce6700d4610b3858cad045ba42a911035185ab770a593ef40b482",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    },
+    "post/PaperModの配色変更/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "f6f96c1bcb76aaab8da4044872d642dce381063f1528bca289c1c2975b20caf7",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    },
+    "post/PaperModの配色変更/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "84a18942cf8406d1c4b2d71e2a5fdbf84d8f7920f54195656d0ac33009773dba",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    },
+    "post/PaperModの配色変更/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "56113018336a26ada8d7463f96d89fe2ead25f91113b7f32ab443b93c74695a9",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    },
+    "post/PaperModの配色変更/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "b22277b45295afe719d48a2dc4ee0140be5d768e1b705704c857ab9108c0df37",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    },
+    "post/PaperModの配色変更/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "7b3083835daa9037cb244ca94316ef53cebd71f7b21edbc7e3311c42f651fda5",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    },
+    "post/PaperModの配色変更/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "3bf5ecf48d224a63a32111178ed4952a2b13e88c9e720dd786636dc4ca9d3036",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    },
+    "post/PaperModの配色変更/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "be904a1178c4c366843e8dd533c34cba2e9757b3ddf7cb0d3dced4670103fceb",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    },
+    "post/PaperModの配色変更/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "4ab5a2ed5a14e70202c08f6f5ad428427fe7e8c39055d981b11b828ba97f67b0",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    },
+    "post/PaperModの配色変更/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PaperModの配色変更/index.md",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "4868be6806624cb0de99ac50de96d607dc6d59b06ee683c857c9721585603078",
+      "summary": "Rewrote and checked against current PaperMod FAQ, upstream theme-vars.css, original discussion, and W3C contrast guidance; aligned both theme states and the CSS example across locales.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Aligned the supported extended CSS path, current dark-mode selector, light/dark variable overrides, and verification steps."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked CSS custom properties, theme/data-theme, dark mode, code-block background, syntax highlighting, and contrast terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Calculated example primary/theme contrasts as approximately 10.4:1 light and 13.4:1 dark; confirmed WCAG 2.2 AA normal-text threshold is 4.5:1. No blanket conformance claim is made."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the shared CSS across locales; verified current variable names from upstream PaperMod theme-vars.css and the data-theme dark selector."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Replaced the bare legacy discussion URL with current PaperMod FAQ/theme source and the W3C WCAG contrast explanation; retained the original discussion as context."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The example contrast calculations cover selected text/background pairs only; syntax highlighting, focus indicators, links, images, and all component states require separate checks.",
+        "Theme forks or future PaperMod changes may alter variable names or theme selectors; verify against the installed version."
+      ]
+    }
+  }
+}

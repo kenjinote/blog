@@ -12485,6 +12485,246 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-108.json",
       "evidenceHash": "cfe0285b7f9591197f5e07853c7bd9b3916f483912418f66e59c9d79665533f6"
+    },
+    "post/PaperModの配色変更/index.ar.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "003fa6b4d2f301ee2edbbbb367e202eda1d715bbe439fb2ade967a6b243efd6b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "47b99df2d35d188266ef19c5beb54cb316726ced8e21ad6d0b921c9633804cd6"
+    },
+    "post/PaperModの配色変更/index.de.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "01f9b6d31670b4e05f901cb9f980f429171475711e7f365a0316e298e89b2af9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "0318ddbb9c39462d11751964fe88164f2aa76112008cb02211809b21173ee328"
+    },
+    "post/PaperModの配色変更/index.en.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "ff307cb6113ce6700d4610b3858cad045ba42a911035185ab770a593ef40b482",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "9d51f08328b65214b74c45ef2576a66eeac30a56924a738d9031f8430ac4d5ae"
+    },
+    "post/PaperModの配色変更/index.es.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "f6f96c1bcb76aaab8da4044872d642dce381063f1528bca289c1c2975b20caf7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "95a4abb6c153ad59b3446d38ed7aecd0b2488dbc4d7ce7f8c6e187d28b8378b7"
+    },
+    "post/PaperModの配色変更/index.fr.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "84a18942cf8406d1c4b2d71e2a5fdbf84d8f7920f54195656d0ac33009773dba",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "43beb24877b09908d4b56c77188b3246a39546a05fe454543b98d4df2c133fc5"
+    },
+    "post/PaperModの配色変更/index.hi.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "56113018336a26ada8d7463f96d89fe2ead25f91113b7f32ab443b93c74695a9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "77811e122c58278324cf1607db8ec9c37b789add7e2f1c7504b5931202b8b29f"
+    },
+    "post/PaperModの配色変更/index.id.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "b22277b45295afe719d48a2dc4ee0140be5d768e1b705704c857ab9108c0df37",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "be9074afdf1dcb64c9dd05c7f9160db9f21ccd3bbc3be7d5233535e322d8ec1d"
+    },
+    "post/PaperModの配色変更/index.ko.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "7b3083835daa9037cb244ca94316ef53cebd71f7b21edbc7e3311c42f651fda5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "6bff9d691f75ae00f6db3763adebe9766873c1da692dc3ced9e1c5eeb8d7e963"
+    },
+    "post/PaperModの配色変更/index.pt.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "3bf5ecf48d224a63a32111178ed4952a2b13e88c9e720dd786636dc4ca9d3036",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "70b2f9b7e04a66237eb13c66084c0650516f483b2ea8b4528ab23be890d2ff0d"
+    },
+    "post/PaperModの配色変更/index.ru.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "be904a1178c4c366843e8dd533c34cba2e9757b3ddf7cb0d3dced4670103fceb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "6cd2c08533b1d091a105fe0098a29a4ee53f025ccae9d3e93f90edba66a7faf5"
+    },
+    "post/PaperModの配色変更/index.zh-cn.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "4ab5a2ed5a14e70202c08f6f5ad428427fe7e8c39055d981b11b828ba97f67b0",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "1eb5310ae93ff7dcede0ed17343664d23befc860ed06b390d6d754cb45f0df6f"
+    },
+    "post/PaperModの配色変更/index.zh-tw.md": {
+      "source": "post/PaperModの配色変更/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "ff24badbefbb8bd8c384d9a238e22599904284e79dde8dc05aa0245c3d13468c",
+      "translationHash": "4868be6806624cb0de99ac50de96d607dc6d59b06ee683c857c9721585603078",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-109.json",
+      "evidenceHash": "488059a56a7dcc04dc142d13c8366b389e1f592a41a46871daf6f81552b5e7fc"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.ar.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "3d8b2a28cfc422bc56339c57ca6a5f85549fa0acbe3d19c226256ba1aeac955b",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "de0582b74315e5d61ad89b41cd575ee1939caaa21ef1427b2378b836deda9727"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.de.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "2cc806bb5936b557dc213a80ba9462432fff349d8aa74401bed3990c6d41124d",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "e4588c5634379329fb9e90568fca010f76169e2506cf84b3f243ddb2d6d40a62"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.en.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "761ef1236b578405e52ece699ff848fee200c4928d7577f8c1be30b92cf703a1",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "e634dc09f28deb27beb4627946a09a70a8bc1a1c90d37f2ecf5ab7e025754ba4"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.es.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "257c2496c1759c069962997fbdb66f78eaaeba25c3eda0869d4004b4cccd1026",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "dae2a1e4aea3b5003190a1d000925bfbbb89020058ffc30e221ed743909a77fb"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.fr.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "e4041e38fa067ac2fbae434cdf7bfaf98316f1df2ec2e8340304d1b33f083d1f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "50ce9adcfe916ee5c93fda5cbbf59ee37de6f5173057b466cd733e50390c79e0"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.hi.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "68ba7ff13eaccb3db6976ec747b7513b9de5ea4d31e988687608b67ec2279c87",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "6b0052e97dcd6255e6fc05b3530132e007e17421ee12a9da15f3ad39abe9acee"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.id.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "26a8b26887520fd6570d46fd51ebf257afd54280c5ca233f69c21ba95b150754",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "bbae944b765d1485a8d6c5ec4435ca406f16ab51bf48353b3a618028cbc1aae7"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.ko.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "e4c8efa0302acb971e1f73f6dc4ad7632afdca061208145355e3d37ebd8d5fee",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "58634f936db81f85ec4601bb85da058b64e82b66fed2394a720d71e7664019dd"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.pt.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "dcbc9e85a93dfd4fdfd154004e770868213404d9753f539eb49d72d714a940e7",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "ef5fcdf590d8547a87dfffe31742e852ac4d42bb8633384f10e10ea3c33798f7"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.ru.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "c689cd0a07c3c75fb7a416359980f4c9c2de3cbd68b1c244bb5ec84b41bcca78",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "527005d1d70d8a029d9898d1b8a13500bd511d584d41cf78bc18e4162607867b"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.zh-cn.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "e650f4dcf7b7c4da80e5968ba458833d62704fcac83ad517db20b0c9fb1b9411",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "3c7f19fb4a60753206def6d385477dc1420b089b162878e003502fd6b18e6749"
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.zh-tw.md": {
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "f40c1ca4af4722c0955a814504323bcdd2b61a95e4110fd93ba4fe87e2963dfb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-110.json",
+      "evidenceHash": "38698531d6a47981ccd727b4c7a53fcc2647230d35c98ce64a8189cdc90bc1bd"
     }
   }
 }

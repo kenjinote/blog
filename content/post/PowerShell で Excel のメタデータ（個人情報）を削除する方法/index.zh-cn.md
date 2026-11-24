@@ -1,132 +1,97 @@
 ---
-title: '如何使用PowerShell批量删除Excel和Word的元数据（个人信息）'
-date: "2026-09-24T19:44:38+09:00"
+title: "使用 PowerShell 删除 Excel 个人信息并检查副本"
 slug: "PowerShell で Excel の元数据（个人信息）を削除する方法"
-date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "元数据", "个人信息"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"
 categories: ["programming"]
-description: '讲解如何使用PowerShell删除Office文件中包含的作者等元数据。从单个文件的处理，到批量删除文件夹内Excel和Word等文件的脚本，为您介绍防止对外分享时发生信息泄露的便捷自动化技巧。'
+description: "区分 Excel 个人信息删除 API 与“文档检查器”，并提供保留原文件的 PowerShell 示例。"
+date: "2025-07-30T02:42:40+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
-# 如何使用 PowerShell 批量删除 Excel、Word 等的元数据（个人信息）
+Excel 工作簿可能包含作者等文档属性，也可能含有批注、修订历史、隐藏工作表或行、外部连接等共享前应检查的数据。这些属于不同类别；仅删除个人信息属性并不能清除所有内容。发送前请在副本上运行“文档检查器”，逐项查看检查结果。
 
-Excel 等 Office 文件会自动保存作者、最后修改者、公司名称等“元数据（个人信息）”。在与公司外部共享文件时，往往会有删除这些信息的需求。
+## Excel API 的实际作用
 
-本文将重点介绍如何使用 PowerShell 删除 Excel 的元数据，并详细讲解 **对文件夹内文件进行批量处理 ** ，以及 ** 应用于 Word、PowerPoint 等其他 Office 文件** 的方法。
+Excel 的 `Workbook.RemovePersonalInformation` 是一个读写属性，用于指示是否可以删除个人信息。将它设为 `$true` 并不等于已经执行删除。`Workbook.RemoveDocumentInformation(4)` 对应 `xlRDIRemovePersonalInformation`（值 4），用于请求删除个人信息。它只针对指定类别，不保证清除所有隐藏数据。
 
----
+## 处理副本并保留原文件
 
-## 1. 删除单个 Excel 文件的元数据
-
-这是最基本的删除单个 Excel 文件中个人信息的脚本。它调用 Excel 的 COM 对象，将 `RemovePersonalInformation` 属性设置为 `$true`，然后保存并覆盖。
+以下示例适用于安装了 Windows 桌面版 Excel 的电脑。它只将所选文件夹第一层中的 `.xlsx` 文件复制到单独的输出文件夹，并对每个副本请求删除个人信息。原文件不会更改。输出文件夹必须尚不存在。已有文件、`.xls`、`.xlsm` 和子文件夹不在处理范围内。
 
 ```powershell
-# 在后台启动 Excel 应用程序
-$excel = New-Object -ComObject Excel.Application
-$excel.Visible = $false
-$excel.DisplayAlerts = $false
+$inputFolder = "C:\Metadata\Input"
+$outputFolder = "C:\Metadata\Output"
 
-# 打开文件（※请指定绝对路径）
-$filePath = "C:\Path\To\Your\File.xlsx"
-$wb = $excel.Workbooks.Open($filePath)
-
-# 启用删除元数据（个人信息）的设置
-$wb.RemovePersonalInformation = $true
-
-# 保存并关闭
-$wb.Save()
-$wb.Close($false)
-
-# 退出 Excel 并释放内存
-$excel.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null
-```
-
-> **注意：** 传递给 `Workbooks.Open()` 的路径必须指定为 ** 绝对路径 (完整路径)** 。如果使用相对路径，可能会出现错误。
-
----
-
-## 2. 批量处理文件夹中的所有 Excel 文件
-
-在实际工作中，经常会有“想要一次性删除特定文件夹中几十个 Excel 文件的元数据”的需求。这可以通过结合 `Get-ChildItem` 进行循环处理来实现。
-
-```powershell
-$targetFolder = "C:\Path\To\Your\Folder"
-
-# 获取文件夹中的所有 .xlsx 和 .xls 文件
-$excelFiles = Get-ChildItem -Path $targetFolder -Include "*.xlsx", "*.xls" -Recurse
-
-if ($excelFiles.Count -eq 0) {
-    Write-Host "未找到 Excel 文件。"
-    exit
+if (Test-Path -LiteralPath $outputFolder) {
+    throw "Choose a new output folder that does not already exist."
 }
-
-$excel = New-Object -ComObject Excel.Application
-$excel.Visible = $false
-$excel.DisplayAlerts = $false
-
-foreach ($file in $excelFiles) {
-    Write-Host "正在删除 $($file.Name) 的元数据..."
-    
-    # 打开文件
-    $wb = $excel.Workbooks.Open($file.FullName)
-    
-    # 删除元数据并保存
-    $wb.RemovePersonalInformation = $true
-    $wb.Save()
-    $wb.Close($false)
+$files = @(Get-ChildItem -LiteralPath $inputFolder -File -Filter "*.xlsx")
+if ($files.Count -eq 0) {
+    throw "No .xlsx files found directly in the input folder."
 }
+New-Item -ItemType Directory -Path $outputFolder | Out-Null
 
-$excel.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null
+$excel = $null
+try {
+    $excel = New-Object -ComObject Excel.Application
+    $excel.Visible = $false
+    $excel.DisplayAlerts = $false
+    # Disable VBA macros when opening the workbook programmatically.
+    $excel.AutomationSecurity = 3
 
-Write-Host "所有处理均已完成！"
+    foreach ($file in $files) {
+        $destination = Join-Path $outputFolder $file.Name
+        $workbook = $null
+        $succeeded = $false
+        try {
+            Copy-Item -LiteralPath $file.FullName -Destination $destination -ErrorAction Stop
+            $workbook = $excel.Workbooks.Open($destination, 0, $false)
+            # Excel's xlRDIRemovePersonalInformation enum value is 4.
+            $workbook.RemoveDocumentInformation(4)
+            $workbook.Save()
+            $succeeded = $true
+            Write-Host "Processed copy: $destination"
+        }
+        catch {
+            Write-Warning "Could not process $($file.FullName): $_"
+        }
+        finally {
+            if ($null -ne $workbook) {
+                try { $workbook.Close($false) } catch { }
+                [void][System.Runtime.InteropServices.Marshal]::FinalReleaseComObject($workbook)
+            }
+            if (-not $succeeded -and (Test-Path -LiteralPath $destination)) {
+                Remove-Item -LiteralPath $destination -Force
+            }
+        }
+    }
+}
+finally {
+    if ($null -ne $excel) {
+        try { $excel.Quit() } catch { }
+        [void][System.Runtime.InteropServices.Marshal]::FinalReleaseComObject($excel)
+    }
+}
 ```
 
----
+## 使用“文档检查器”验证
 
-## 3. 删除其他 Office 文件 (Word / PowerPoint) 的元数据
+在 Excel 中打开每个输出副本，选择“文件”→“信息”→“检查问题”→“检查文档”。选择所需检查项，并查看发现结果及每项“全部删除”操作的结果。Word 和 PowerPoint 也有“文档检查器”，但检查模块各不相同。Microsoft 提醒，已签名、受保护或应用 IRM 的文件无法自动删除某些隐藏信息。
 
-除了 Excel，在 Word 和 PowerPoint 中也可以使用完全相同的逻辑删除元数据。只是调用的 COM 对象名称不同，但都提供了 `RemovePersonalInformation` 属性。
+## 限制与注意事项
 
-### Word 的情况
+本示例面向交互式桌面 Office 会话中的可信 `.xlsx` 文件。不要在服务器或 Windows 服务中无人值守地使用 Office COM 自动化。Excel 4.0 宏、外部链接、连接、批注、隐藏数据和嵌入文件都需单独检查。本脚本不保证机密工作簿可以安全公开。
 
-```powershell
-$word = New-Object -ComObject Word.Application
-$word.Visible = $false
-$word.DisplayAlerts = 0
+## Microsoft 官方资料
 
-$doc = $word.Documents.Open("C:\Path\To\Your\File.docx")
-$doc.RemovePersonalInformation = $true
-$doc.Save()
-$doc.Close()
-
-$word.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($word) | Out-Null
-```
-
-### PowerPoint 的情况
-
-在 PowerPoint 中，设置 `RemovePersonalInformation` 属性的方法是相同的，但后台启动的行为略有不同。
-
-```powershell
-$ppt = New-Object -ComObject PowerPoint.Application
-
-# 在第2到第4个参数中指定后台模式 (msoFalse) 等来打开文件
-$presentation = $ppt.Presentations.Open("C:\Path\To\Your\File.pptx", $false, $false, $false)
-$presentation.RemovePersonalInformation = $true
-$presentation.Save()
-$presentation.Close()
-
-$ppt.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($ppt) | Out-Null
-```
-
----
-
-## 总结
-
-通过利用 PowerShell 和 COM 对象，可以完全实现 Office 文件元数据删除的自动化。为了防止机密信息或个人名称意外泄露，手头准备一个在交付前批量处理文件夹的脚本会非常方便。
-
+- [Excel: Workbook.RemoveDocumentInformation](https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.removedocumentinformation)
+- [Excel: XlRemoveDocInfoType values](https://learn.microsoft.com/en-us/office/vba/api/excel.xlremovedocinfotype)
+- [Excel: Workbook.RemovePersonalInformation](https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.removepersonalinformation)
+- [Excel: Workbooks.Open and macro security](https://learn.microsoft.com/en-us/office/vba/api/excel.workbooks.open)
+- [Excel: Application.AutomationSecurity](https://learn.microsoft.com/en-us/office/vba/api/excel.application.automationsecurity)
+- [Microsoft: Using the Document Inspector](https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/using-the-document-inspector)
+- [Microsoft: Considerations for unattended Office automation](https://learn.microsoft.com/en-us/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa)
+- [Word: Document.RemoveDocumentInformation](https://learn.microsoft.com/en-us/office/vba/api/word.document.removedocumentinformation)
+- [PowerPoint: Presentation.RemoveDocumentInformation](https://learn.microsoft.com/en-us/office/vba/api/powerpoint.presentation.removedocumentinformation)

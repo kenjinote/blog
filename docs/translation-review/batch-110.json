@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "batch": 110,
+  "article": "PowerShellでExcelの個人情報を削除",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+  "sources": [
+    "https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.removedocumentinformation",
+    "https://learn.microsoft.com/en-us/office/vba/api/excel.xlremovedocinfotype",
+    "https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.removepersonalinformation",
+    "https://learn.microsoft.com/en-us/office/vba/api/excel.workbooks.open",
+    "https://learn.microsoft.com/en-us/office/vba/api/excel.application.automationsecurity",
+    "https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/using-the-document-inspector",
+    "https://learn.microsoft.com/en-us/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa",
+    "https://learn.microsoft.com/en-us/office/vba/api/word.document.removedocumentinformation",
+    "https://learn.microsoft.com/en-us/office/vba/api/powerpoint.presentation.removedocumentinformation"
+  ],
+  "scope": "Rewrote the Japanese article and twelve translations against current Microsoft Learn Office VBA references for Excel removal APIs and enum values, Excel macro security, the Document Inspector, unattended Office automation, and related Word/PowerPoint methods. Checked code semantics, data-loss safeguards, file-format scope, security settings, privacy limitations, translation alignment, links, and publication metadata.",
+  "findings": [
+    "Removed duplicated conflicting future dates, preserved the original 2025-07-30 publication date, and recorded lastmod 2026-11-24 in every locale.",
+    "Corrected the central technical error: Workbook.RemovePersonalInformation reports whether removal is possible; it does not itself perform the removal. Used RemoveDocumentInformation(4), the documented xlRDIRemovePersonalInformation enum, for the scoped operation.",
+    "Removed the claim that one property or a shared COM pattern completely sanitizes Excel, Word, and PowerPoint; documented Document Inspector and per-application scope instead.",
+    "Changed batch processing to copy only top-level .xlsx files into a new output folder, preserving originals and removing failed output copies; restricted the example to interactive Windows desktop Excel and disabled VBA macros when opening workbooks programmatically.",
+    "Added limitations for hidden content, signatures, protection/IRM, external links, comments, and separate Document Inspector checks; removed the unsupported assurance against information leakage.",
+    "Aligned all twelve translations and the shared PowerShell code with the Japanese source and current Microsoft references."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "3d8b2a28cfc422bc56339c57ca6a5f85549fa0acbe3d19c226256ba1aeac955b",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "2cc806bb5936b557dc213a80ba9462432fff349d8aa74401bed3990c6d41124d",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "761ef1236b578405e52ece699ff848fee200c4928d7577f8c1be30b92cf703a1",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "257c2496c1759c069962997fbdb66f78eaaeba25c3eda0869d4004b4cccd1026",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "e4041e38fa067ac2fbae434cdf7bfaf98316f1df2ec2e8340304d1b33f083d1f",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "68ba7ff13eaccb3db6976ec747b7513b9de5ea4d31e988687608b67ec2279c87",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "26a8b26887520fd6570d46fd51ebf257afd54280c5ca233f69c21ba95b150754",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "e4c8efa0302acb971e1f73f6dc4ad7632afdca061208145355e3d37ebd8d5fee",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "dcbc9e85a93dfd4fdfd154004e770868213404d9753f539eb49d72d714a940e7",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "c689cd0a07c3c75fb7a416359980f4c9c2de3cbd68b1c244bb5ec84b41bcca78",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "e650f4dcf7b7c4da80e5968ba458833d62704fcac83ad517db20b0c9fb1b9411",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    },
+    "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/PowerShell で Excel のメタデータ（個人情報）を削除する方法/index.md",
+      "sourceHash": "f48fd1d05bf834cff63685c4372b6cf911103eb29bd71cce7999066a2f211e4f",
+      "translationHash": "f40c1ca4af4722c0955a814504323bcdd2b61a95e4110fd93ba4fe87e2963dfb",
+      "summary": "Rewrote and aligned the translation to the Japanese source and current Microsoft Excel, Word, PowerPoint, macro-security, and Document Inspector documentation.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Corrected the distinction between personal-information eligibility and actual removal; aligned the copy-only scope, file types, and Document Inspector workflow."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked Workbook.RemovePersonalInformation, RemoveDocumentInformation, xlRDIRemovePersonalInformation, Document Inspector, COM automation, and IRM terminology."
+        },
+        "mathematics": {
+          "status": "checked",
+          "note": "Verified the Excel enum value 4 for xlRDIRemovePersonalInformation and distinguished it from xlRDIAll value 99; did not claim the operation removes every category."
+        },
+        "code": {
+          "status": "checked",
+          "note": "Compared the exact shared PowerShell sample across locales; it only copies top-level .xlsx files into a new separate output directory, disables automation macros, removes the selected personal-information category on copies, and preserves originals."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added current official Microsoft API, enum, macro-security, and Document Inspector references for Excel and the related Office applications."
+        }
+      },
+      "limitations": [
+        "AI-assisted review; no human or native-speaker certification.",
+        "The PowerShell COM sample was statically checked against Microsoft documentation but not executed against Windows Excel in this environment.",
+        "Removing the selected personal-information category does not ensure all hidden content has been removed; each output requires the appropriate Document Inspector checks."
+      ]
+    }
+  }
+}

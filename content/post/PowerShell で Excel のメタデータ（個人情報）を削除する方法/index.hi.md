@@ -1,131 +1,97 @@
 ---
-title: 'PowerShell के साथ Excel और Word से मेटाडेटा (व्यक्तिगत जानकारी) को एक साथ कैसे हटाएं'
-date: "2026-09-24T19:44:38+09:00"
+title: "PowerShell से Excel की निजी जानकारी हटाएँ और कॉपी की जाँच करें"
 slug: "PowerShell で Excel のमेटाडेटा（व्यक्तिगत जानकारी）を削除する方法"
-date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "मेटाडेटा", "व्यक्तिगत जानकारी"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"
 categories: ["programming"]
-description: 'PowerShell का उपयोग करके Office फ़ाइलों में शामिल रचनाकारों जैसे मेटाडेटा को हटाने की व्याख्या। एकल फ़ाइलों के प्रसंस्करण से लेकर फ़ोल्डर में Excel/Word फ़ाइलों के बैच विलोपन स्क्रिप्ट तक, हम बाहरी रूप से साझा करते समय सूचना रिसाव को रोकने के लिए उपयोगी स्वचालन तकनीकों को पेश करते हैं।'
+description: "Excel के व्यक्तिगत जानकारी हटाने वाले API और Document Inspector का अंतर समझें; PowerShell उदाहरण मूल फ़ाइल सुरक्षित रखता है।"
+date: "2025-07-30T02:42:40+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
-# "PowerShell का उपयोग करके Excel, Word आदि से मेटाडेटा (व्यक्तिगत जानकारी) को बैच में कैसे निकालें"
+Excel workbook में लेखक जैसी document properties के साथ टिप्पणियाँ, संशोधन इतिहास, छिपी शीट या पंक्तियाँ, बाहरी कनेक्शन और अन्य जानकारी हो सकती है जिसे साझा करने से पहले जाँचना चाहिए। ये अलग-अलग श्रेणियाँ हैं; केवल व्यक्तिगत जानकारी वाली properties हटाने से सब कुछ नहीं हटता। भेजने से पहले कॉपी पर Document Inspector चलाएँ और हर श्रेणी का परिणाम देखें।
 
-Office फ़ाइलें जैसे Excel स्वचालित रूप से निर्माता, अंतिम संशोधनकर्ता और कंपनी के नाम जैसी "मेटाडेटा (व्यक्तिगत जानकारी)" को सहेजती हैं। कई ऐसे मामले होते हैं जहाँ आप इस जानकारी को हटाना चाहते हैं, जैसे कंपनी के बाहर फ़ाइल साझा करते समय।
+## Excel API का वास्तविक काम
 
-इस लेख में, हम विस्तार से बताएंगे कि PowerShell का उपयोग करके Excel मेटाडेटा को कैसे हटाया जाए, जिसमें ** फ़ोल्डर के भीतर बैच प्रोसेसिंग ** और ** Word और PowerPoint जैसे अन्य Office फ़ाइलों पर अनुप्रयोग ** पर ध्यान केंद्रित किया गया है।
+Excel का `Workbook.RemovePersonalInformation` एक read/write property है जो बताती है कि व्यक्तिगत जानकारी हटाई जा सकती है या नहीं। इसे `$true` करने से हटाने की प्रक्रिया पूरी हो जाती है—यह दावा गलत है। `Workbook.RemoveDocumentInformation(4)` `xlRDIRemovePersonalInformation` (मान 4) के अनुरूप है और व्यक्तिगत जानकारी हटाने का अनुरोध करता है। यह निर्दिष्ट श्रेणी को लक्ष्य करता है, सभी छिपे डेटा को हटाने की गारंटी नहीं देता।
 
----
+## कॉपी संसाधित करें, मूल सुरक्षित रखें
 
-## 1. एकल Excel फ़ाइल से मेटाडेटा निकालें
-
-यह किसी एकल Excel फ़ाइल से व्यक्तिगत जानकारी हटाने की सबसे बुनियादी स्क्रिप्ट है। यह Excel के COM ऑब्जेक्ट को कॉल करता है, `RemovePersonalInformation` प्रॉपर्टी को `$true` पर सेट करता है, और इसे ओवरराइट करके सेव करता है।
+यह उदाहरण Windows desktop Excel वाले PC के लिए है। यह चुने हुए फ़ोल्डर की केवल सीधे अंदर स्थित `.xlsx` फ़ाइलों को अलग output फ़ोल्डर में कॉपी करता है और हर कॉपी में व्यक्तिगत जानकारी हटाने का अनुरोध करता है। मूल फ़ाइलें नहीं बदलतीं। Output फ़ोल्डर पहले से मौजूद नहीं होना चाहिए। मौजूदा फाइलें, `.xls`, `.xlsm` और subfolders शामिल नहीं हैं।
 
 ```powershell
-# Excel एप्लिकेशन को अदृश्य रूप से प्रारंभ करें
-$excel = New-Object -ComObject Excel.Application
-$excel.Visible = $false
-$excel.DisplayAlerts = $false
+$inputFolder = "C:\Metadata\Input"
+$outputFolder = "C:\Metadata\Output"
 
-# फ़ाइल खोलें (*कृपया पूर्ण पथ निर्दिष्ट करें)
-$filePath = "C:\Path\To\Your\File.xlsx"
-$wb = $excel.Workbooks.Open($filePath)
-
-# मेटाडेटा (व्यक्तिगत जानकारी) हटाने के लिए सेटिंग सक्षम करें
-$wb.RemovePersonalInformation = $true
-
-# ओवरराइट करें और बंद करें
-$wb.Save()
-$wb.Close($false)
-
-# Excel से बाहर निकलें और मेमोरी खाली करें
-$excel.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null
-```
-
-> ** ध्यान दें: ** सुनिश्चित करें कि आप `Workbooks.Open()` के लिए ** पूर्ण पथ ** निर्दिष्ट करते हैं। सापेक्ष पथ के परिणामस्वरूप त्रुटि हो सकती है।
-
----
-
-## 2. एक फ़ोल्डर में सभी Excel फ़ाइलों को बैच-प्रक्रिया करें
-
-व्यवहार में, आप अक्सर "किसी विशिष्ट फ़ोल्डर में दर्जनों Excel फ़ाइलों से एक ही बार में सभी मेटाडेटा को हटाना" चाहेंगे। इसे `Get-ChildItem` के संयोजन में लूप प्रोसेसिंग का उपयोग करके प्राप्त किया जा सकता है।
-
-```powershell
-$targetFolder = "C:\Path\To\Your\Folder"
-
-# फ़ोल्डर में सभी .xlsx और .xls फ़ाइलें प्राप्त करें
-$excelFiles = Get-ChildItem -Path $targetFolder -Include "*.xlsx", "*.xls" -Recurse
-
-if ($excelFiles.Count -eq 0) {
-    Write-Host "कोई Excel फ़ाइल नहीं मिली।"
-    exit
+if (Test-Path -LiteralPath $outputFolder) {
+    throw "Choose a new output folder that does not already exist."
 }
-
-$excel = New-Object -ComObject Excel.Application
-$excel.Visible = $false
-$excel.DisplayAlerts = $false
-
-foreach ($file in $excelFiles) {
-    Write-Host "$($file.Name) का मेटाडेटा हटाया जा रहा है..."
-    
-    # फ़ाइल खोलें
-    $wb = $excel.Workbooks.Open($file.FullName)
-    
-    # मेटाडेटा निकालें और सहेजें
-    $wb.RemovePersonalInformation = $true
-    $wb.Save()
-    $wb.Close($false)
+$files = @(Get-ChildItem -LiteralPath $inputFolder -File -Filter "*.xlsx")
+if ($files.Count -eq 0) {
+    throw "No .xlsx files found directly in the input folder."
 }
+New-Item -ItemType Directory -Path $outputFolder | Out-Null
 
-$excel.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null
+$excel = $null
+try {
+    $excel = New-Object -ComObject Excel.Application
+    $excel.Visible = $false
+    $excel.DisplayAlerts = $false
+    # Disable VBA macros when opening the workbook programmatically.
+    $excel.AutomationSecurity = 3
 
-Write-Host "सभी प्रसंस्करण पूर्ण हो गया है!"
+    foreach ($file in $files) {
+        $destination = Join-Path $outputFolder $file.Name
+        $workbook = $null
+        $succeeded = $false
+        try {
+            Copy-Item -LiteralPath $file.FullName -Destination $destination -ErrorAction Stop
+            $workbook = $excel.Workbooks.Open($destination, 0, $false)
+            # Excel's xlRDIRemovePersonalInformation enum value is 4.
+            $workbook.RemoveDocumentInformation(4)
+            $workbook.Save()
+            $succeeded = $true
+            Write-Host "Processed copy: $destination"
+        }
+        catch {
+            Write-Warning "Could not process $($file.FullName): $_"
+        }
+        finally {
+            if ($null -ne $workbook) {
+                try { $workbook.Close($false) } catch { }
+                [void][System.Runtime.InteropServices.Marshal]::FinalReleaseComObject($workbook)
+            }
+            if (-not $succeeded -and (Test-Path -LiteralPath $destination)) {
+                Remove-Item -LiteralPath $destination -Force
+            }
+        }
+    }
+}
+finally {
+    if ($null -ne $excel) {
+        try { $excel.Quit() } catch { }
+        [void][System.Runtime.InteropServices.Marshal]::FinalReleaseComObject($excel)
+    }
+}
 ```
 
----
+## Document Inspector से सत्यापित करें
 
-## 3. अन्य Office फ़ाइलों (Word / PowerPoint) से मेटाडेटा निकालें
+हर output copy को Excel में खोलें और File → Info → Check for Issues → Inspect Document चुनें। आवश्यक जाँचें चुनें और मिले परिणाम तथा हर Remove All कार्रवाई का नतीजा देखें। Word और PowerPoint में भी Document Inspector है, लेकिन उनके जाँच मॉड्यूल अलग हैं। Microsoft हस्ताक्षरित, संरक्षित या IRM वाली फ़ाइलों में स्वचालित हटाने की सीमाएँ बताता है।
 
-मेटाडेटा को न केवल Excel में बल्कि Word और PowerPoint में भी बिल्कुल उसी तर्क के साथ हटाया जा सकता है। केवल बुलाए जाने वाले COM ऑब्जेक्ट का नाम भिन्न है, और दोनों में `RemovePersonalInformation` प्रॉपर्टी होती है।
+## सीमाएँ और सावधानियाँ
 
-### Word के लिए
+यह उदाहरण भरोसेमंद `.xlsx` फ़ाइलों को interactive desktop Office session में संसाधित करने के लिए है। unattended server या Windows service में Office COM automation न चलाएँ। Excel 4.0 macros, बाहरी लिंक, कनेक्शन, टिप्पणियाँ, छिपा डेटा और embedded files की अलग जाँच आवश्यक है। यह script गोपनीय workbook को प्रकाशित करने की सुरक्षा की गारंटी नहीं देता।
 
-```powershell
-$word = New-Object -ComObject Word.Application
-$word.Visible = $false
-$word.DisplayAlerts = 0
+## Microsoft संदर्भ
 
-$doc = $word.Documents.Open("C:\Path\To\Your\File.docx")
-$doc.RemovePersonalInformation = $true
-$doc.Save()
-$doc.Close()
-
-$word.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($word) | Out-Null
-```
-
-### PowerPoint के लिए
-
-PowerPoint के लिए, `RemovePersonalInformation` प्रॉपर्टी सेट करना समान है, लेकिन अदृश्य शुरुआत का व्यवहार थोड़ा अलग है।
-
-```powershell
-$ppt = New-Object -ComObject PowerPoint.Application
-
-# दूसरे से चौथे तर्कों के साथ छिपे हुए मोड (msoFalse) को निर्दिष्ट करके खोलें
-$presentation = $ppt.Presentations.Open("C:\Path\To\Your\File.pptx", $false, $false, $false)
-$presentation.RemovePersonalInformation = $true
-$presentation.Save()
-$presentation.Close()
-
-$ppt.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($ppt) | Out-Null
-```
-
----
-
-## निष्कर्ष
-
-PowerShell और COM ऑब्जेक्ट का उपयोग करके, आप Office फ़ाइलों से मेटाडेटा हटाने को पूरी तरह से स्वचालित कर सकते हैं। गोपनीय जानकारी या व्यक्तिगत नामों को अनजाने में लीक होने से रोकने के लिए डिलीवरी से पहले बैच प्रोसेसिंग स्क्रिप्ट का होना बहुत उपयोगी है।
+- [Excel: Workbook.RemoveDocumentInformation](https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.removedocumentinformation)
+- [Excel: XlRemoveDocInfoType values](https://learn.microsoft.com/en-us/office/vba/api/excel.xlremovedocinfotype)
+- [Excel: Workbook.RemovePersonalInformation](https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.removepersonalinformation)
+- [Excel: Workbooks.Open and macro security](https://learn.microsoft.com/en-us/office/vba/api/excel.workbooks.open)
+- [Excel: Application.AutomationSecurity](https://learn.microsoft.com/en-us/office/vba/api/excel.application.automationsecurity)
+- [Microsoft: Using the Document Inspector](https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/using-the-document-inspector)
+- [Microsoft: Considerations for unattended Office automation](https://learn.microsoft.com/en-us/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa)
+- [Word: Document.RemoveDocumentInformation](https://learn.microsoft.com/en-us/office/vba/api/word.document.removedocumentinformation)
+- [PowerPoint: Presentation.RemoveDocumentInformation](https://learn.microsoft.com/en-us/office/vba/api/powerpoint.presentation.removedocumentinformation)

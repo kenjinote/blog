@@ -277,6 +277,35 @@ ARTICLES = {
         "markers": ["assets/css/extended/custom.css", "grid-template-areas", "grid-template-columns", "@media (max-width: 600px)", "width: 100%;", "height: auto;"],
         "date": "2022-09-11",
     },
+    109: {
+        "bundle": ROOT / "content/post/PaperModの配色変更",
+        "slug": "PaperModの配色変更",
+        "links": [
+            "https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs",
+            "https://github.com/adityatelange/hugo-PaperMod/blob/master/assets/css/core/theme-vars.css",
+            "https://github.com/adityatelange/hugo-PaperMod/discussions/645",
+            "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+        ],
+        "markers": ["assets/css/extended/theme-colors.css", "data-theme", "--code-block-bg", "color-scheme: light", "color-scheme: dark", "4.5:1", "10.4:1", "13.4:1"],
+        "date": "2022-09-07",
+    },
+    110: {
+        "bundle": ROOT / "content/post/PowerShell で Excel のメタデータ（個人情報）を削除する方法",
+        "slug": "PowerShell で Excel のメタデータ（個人情報）を削除する方法",
+        "links": [
+            "https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.removedocumentinformation",
+            "https://learn.microsoft.com/en-us/office/vba/api/excel.xlremovedocinfotype",
+            "https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.removepersonalinformation",
+            "https://learn.microsoft.com/en-us/office/vba/api/excel.workbooks.open",
+            "https://learn.microsoft.com/en-us/office/vba/api/excel.application.automationsecurity",
+            "https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/using-the-document-inspector",
+            "https://learn.microsoft.com/en-us/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa",
+            "https://learn.microsoft.com/en-us/office/vba/api/word.document.removedocumentinformation",
+            "https://learn.microsoft.com/en-us/office/vba/api/powerpoint.presentation.removedocumentinformation",
+        ],
+        "markers": ["RemoveDocumentInformation(4)", "xlRDIRemovePersonalInformation", "AutomationSecurity", "*.xlsx", "Document Inspector"],
+        "date": "2025-07-30",
+    },
 }
 
 
@@ -342,7 +371,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108), default=108)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110), default=110)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

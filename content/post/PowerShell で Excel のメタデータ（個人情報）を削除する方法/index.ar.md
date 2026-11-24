@@ -1,131 +1,97 @@
 ---
-title: 'كيفية إزالة البيانات الوصفية (المعلومات الشخصية) دفعة واحدة من Excel وWord باستخدام PowerShell'
-date: "2026-09-24T19:44:38+09:00"
+title: "إزالة المعلومات الشخصية من Excel باستخدام PowerShell وفحص النسخة"
 slug: "PowerShell で Excel のالبيانات الوصفية（معلومات شخصية）を削除する方法"
-date: 2025-07-30T02:42:40+09:00
 tags: ["PowerShell", "Excel", "Word", "PowerPoint", "البيانات الوصفية", "المعلومات الشخصية"]
 draft: false
 image: "powershell_metadata_eyecatch_1788588033601.webp"
 categories: ["programming"]
-description: 'نشرح كيفية حذف البيانات الوصفية المضمنة في ملفات Office مثل بيانات المنشئ باستخدام PowerShell. من معالجة ملف واحد إلى برنامج نصي لحذف البيانات من ملفات Excel وWord داخل مجلد دفعة واحدة، نقدم تقنية أتمتة مفيدة لمنع تسرب المعلومات عند مشاركة الملفات خارج الشركة.'
+description: "ميّز بين واجهة Excel لإزالة المعلومات الشخصية ومدقق المستندات، مع مثال PowerShell يحافظ على الملف الأصلي."
+date: "2025-07-30T02:42:40+09:00"
+lastmod: "2026-11-24T00:00:00+09:00"
 ---
 
-# كيفية حذف البيانات الوصفية (المعلومات الشخصية) من Excel و Word وغيرها دفعة واحدة باستخدام PowerShell
+قد يحتوي مصنف Excel على خصائص مستند مثل اسم المؤلف، إضافة إلى التعليقات وسجل المراجعات والأوراق أو الصفوف المخفية والاتصالات الخارجية وغيرها من البيانات التي ينبغي فحصها قبل المشاركة. هذه فئات مختلفة؛ فإزالة خصائص المعلومات الشخصية وحدها لا تمسح كل شيء. قبل الإرسال، شغّل مدقق المستندات على نسخة وافحص نتيجة كل فئة.
 
-تحتوي ملفات Office مثل Excel تلقائياً على "بيانات وصفية (معلومات شخصية)" مثل اسم المنشئ، وآخر من قام بالتعديل، واسم الشركة. في كثير من الحالات، ترغب في حذف هذه المعلومات، مثل عند مشاركة الملفات خارج الشركة.
+## ما تفعله واجهات Excel فعلياً
 
-في هذه المقالة، سنشرح بالتفصيل كيفية حذف البيانات الوصفية في Excel بشكل أساسي باستخدام PowerShell، وسنتطرق أيضاً إلى ** المعالجة المجمعة للملفات داخل مجلد ** و ** تطبيق ذلك على ملفات Office الأخرى مثل Word و PowerPoint ** .
+الخاصية `Workbook.RemovePersonalInformation` في Excel قابلة للقراءة والكتابة وتشير إلى إمكانية إزالة المعلومات الشخصية. من الخطأ القول إن تعيينها إلى `$true` ينفذ الإزالة. يستدعي `Workbook.RemoveDocumentInformation(4)` القيمة `xlRDIRemovePersonalInformation` (القيمة 4) ويطلب إزالة المعلومات الشخصية. ويستهدف فئة محددة، ولا يضمن إزالة كل البيانات المخفية.
 
----
+## معالجة النسخ مع الاحتفاظ بالأصل
 
-## 1. حذف البيانات الوصفية لملف Excel واحد
-
-هذا هو النص البرمجي الأساسي لحذف المعلومات الشخصية من ملف Excel واحد. يتم استدعاء كائن COM الخاص بـ Excel، وضبط خاصية `RemovePersonalInformation` على `$true` ثم حفظ التغييرات.
+المثال مخصص لجهاز مثبت عليه Excel المكتبي لنظام Windows. ينسخ ملفات `.xlsx` الموجودة مباشرة داخل مجلد محدد فقط إلى مجلد إخراج منفصل، ثم يطلب إزالة المعلومات الشخصية من كل نسخة. لا تتغير الملفات الأصلية. يجب ألا يكون مجلد الإخراج موجوداً مسبقاً. لا يشمل الملفات الموجودة مسبقاً أو `.xls` أو `.xlsm` أو المجلدات الفرعية.
 
 ```powershell
-# بدء تطبيق Excel في الوضع المخفي
-$excel = New-Object -ComObject Excel.Application
-$excel.Visible = $false
-$excel.DisplayAlerts = $false
+$inputFolder = "C:\Metadata\Input"
+$outputFolder = "C:\Metadata\Output"
 
-# فتح الملف (*يجب تحديد مسار مطلق)
-$filePath = "C:\Path\To\Your\File.xlsx"
-$wb = $excel.Workbooks.Open($filePath)
-
-# تفعيل إعداد حذف البيانات الوصفية (المعلومات الشخصية)
-$wb.RemovePersonalInformation = $true
-
-# حفظ التغييرات والإغلاق
-$wb.Save()
-$wb.Close($false)
-
-# إنهاء Excel وتحرير الذاكرة
-$excel.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null
-```
-
-> ** ملاحظة ** : تأكد من تحديد ** مسار مطلق (المسار الكامل) ** للمسار الذي يتم تمريره إلى `Workbooks.Open()`. قد يؤدي استخدام مسار نسبي إلى حدوث خطأ.
-
----
-
-## 2. معالجة جميع ملفات Excel في مجلد دفعة واحدة
-
-في العمل الفعلي، غالباً ما تكون هناك حالات "تريد فيها حذف البيانات الوصفية لعشرات ملفات Excel الموجودة في مجلد معين دفعة واحدة". يمكن تحقيق ذلك باستخدام حلقة تكرار مع `Get-ChildItem`.
-
-```powershell
-$targetFolder = "C:\Path\To\Your\Folder"
-
-# الحصول على جميع ملفات .xlsx و .xls في المجلد
-$excelFiles = Get-ChildItem -Path $targetFolder -Include "*.xlsx", "*.xls" -Recurse
-
-if ($excelFiles.Count -eq 0) {
-    Write-Host "لم يتم العثور على ملفات Excel."
-    exit
+if (Test-Path -LiteralPath $outputFolder) {
+    throw "Choose a new output folder that does not already exist."
 }
-
-$excel = New-Object -ComObject Excel.Application
-$excel.Visible = $false
-$excel.DisplayAlerts = $false
-
-foreach ($file in $excelFiles) {
-    Write-Host "جاري حذف البيانات الوصفية للملف $($file.Name)..."
-    
-    # فتح الملف
-    $wb = $excel.Workbooks.Open($file.FullName)
-    
-    # حذف البيانات الوصفية وحفظ التغييرات
-    $wb.RemovePersonalInformation = $true
-    $wb.Save()
-    $wb.Close($false)
+$files = @(Get-ChildItem -LiteralPath $inputFolder -File -Filter "*.xlsx")
+if ($files.Count -eq 0) {
+    throw "No .xlsx files found directly in the input folder."
 }
+New-Item -ItemType Directory -Path $outputFolder | Out-Null
 
-$excel.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null
+$excel = $null
+try {
+    $excel = New-Object -ComObject Excel.Application
+    $excel.Visible = $false
+    $excel.DisplayAlerts = $false
+    # Disable VBA macros when opening the workbook programmatically.
+    $excel.AutomationSecurity = 3
 
-Write-Host "اكتملت جميع العمليات!"
+    foreach ($file in $files) {
+        $destination = Join-Path $outputFolder $file.Name
+        $workbook = $null
+        $succeeded = $false
+        try {
+            Copy-Item -LiteralPath $file.FullName -Destination $destination -ErrorAction Stop
+            $workbook = $excel.Workbooks.Open($destination, 0, $false)
+            # Excel's xlRDIRemovePersonalInformation enum value is 4.
+            $workbook.RemoveDocumentInformation(4)
+            $workbook.Save()
+            $succeeded = $true
+            Write-Host "Processed copy: $destination"
+        }
+        catch {
+            Write-Warning "Could not process $($file.FullName): $_"
+        }
+        finally {
+            if ($null -ne $workbook) {
+                try { $workbook.Close($false) } catch { }
+                [void][System.Runtime.InteropServices.Marshal]::FinalReleaseComObject($workbook)
+            }
+            if (-not $succeeded -and (Test-Path -LiteralPath $destination)) {
+                Remove-Item -LiteralPath $destination -Force
+            }
+        }
+    }
+}
+finally {
+    if ($null -ne $excel) {
+        try { $excel.Quit() } catch { }
+        [void][System.Runtime.InteropServices.Marshal]::FinalReleaseComObject($excel)
+    }
+}
 ```
 
----
+## التحقق بمدقق المستندات
 
-## 3. حذف البيانات الوصفية لملفات Office الأخرى (Word / PowerPoint)
+افتح كل نسخة إخراج في Excel واختر ملف → معلومات → التحقق من وجود مشكلات → فحص المستند. حدد الفحوص المطلوبة وراجع النتائج ونتيجة كل إجراء «إزالة الكل». يتوفر مدقق المستندات في Word وPowerPoint أيضاً، لكن وحدات الفحص تختلف. تشير Microsoft إلى قيود الإزالة التلقائية للملفات الموقعة أو المحمية أو الخاضعة لـ IRM.
 
-يمكنك حذف البيانات الوصفية ليس فقط في Excel ولكن أيضاً في Word و PowerPoint باستخدام نفس المنطق تماماً. الاختلاف الوحيد هو اسم كائن COM الذي يتم استدعاؤه، ولكن توفر خاصية `RemovePersonalInformation` هو أمر مشترك.
+## القيود والتنبيهات
 
-### في حالة Word
+هذا المثال مخصص لملفات `.xlsx` الموثوقة ضمن جلسة Office مكتبية تفاعلية. لا تستخدم أتمتة Office COM دون إشراف على خادم أو خدمة Windows. تتطلب وحدات ماكرو Excel 4.0 والروابط والاتصالات الخارجية والتعليقات والبيانات المخفية والملفات المضمنة فحوصاً منفصلة. لا يضمن البرنامج أمان نشر مصنف سري.
 
-```powershell
-$word = New-Object -ComObject Word.Application
-$word.Visible = $false
-$word.DisplayAlerts = 0
+## مراجع Microsoft الرسمية
 
-$doc = $word.Documents.Open("C:\Path\To\Your\File.docx")
-$doc.RemovePersonalInformation = $true
-$doc.Save()
-$doc.Close()
-
-$word.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($word) | Out-Null
-```
-
-### في حالة PowerPoint
-
-في حالة PowerPoint، يكون إعداد خاصية `RemovePersonalInformation` مشابهاً، ولكن سلوك التشغيل المخفي يختلف قليلاً.
-
-```powershell
-$ppt = New-Object -ComObject PowerPoint.Application
-
-# فتح العرض التقديمي بتحديد الوضع المخفي (msoFalse) وغيرها في الوسائط من الثاني إلى الرابع
-$presentation = $ppt.Presentations.Open("C:\Path\To\Your\File.pptx", $false, $false, $false)
-$presentation.RemovePersonalInformation = $true
-$presentation.Save()
-$presentation.Close()
-
-$ppt.Quit()
-[System.Runtime.Interopservices.Marshal]::ReleaseComObject($ppt) | Out-Null
-```
-
----
-
-## الخلاصة
-
-من خلال الاستفادة من PowerShell وكائنات COM، يمكنك أتمتة عملية حذف البيانات الوصفية من ملفات Office بالكامل. لمنع تسرب المعلومات السرية أو الأسماء الشخصية عن غير قصد، من المفيد جداً أن يكون لديك نص برمجي جاهز لمعالجة المجلدات دفعة واحدة قبل تسليم الملفات.
+- [Excel: Workbook.RemoveDocumentInformation](https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.removedocumentinformation)
+- [Excel: XlRemoveDocInfoType values](https://learn.microsoft.com/en-us/office/vba/api/excel.xlremovedocinfotype)
+- [Excel: Workbook.RemovePersonalInformation](https://learn.microsoft.com/en-us/office/vba/api/excel.workbook.removepersonalinformation)
+- [Excel: Workbooks.Open and macro security](https://learn.microsoft.com/en-us/office/vba/api/excel.workbooks.open)
+- [Excel: Application.AutomationSecurity](https://learn.microsoft.com/en-us/office/vba/api/excel.application.automationsecurity)
+- [Microsoft: Using the Document Inspector](https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/using-the-document-inspector)
+- [Microsoft: Considerations for unattended Office automation](https://learn.microsoft.com/en-us/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa)
+- [Word: Document.RemoveDocumentInformation](https://learn.microsoft.com/en-us/office/vba/api/word.document.removedocumentinformation)
+- [PowerPoint: Presentation.RemoveDocumentInformation](https://learn.microsoft.com/en-us/office/vba/api/powerpoint.presentation.removedocumentinformation)
