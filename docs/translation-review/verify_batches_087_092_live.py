@@ -164,6 +164,29 @@ ARTICLES = {
         },
         "date": "2024-04-07",
     },
+    100: {
+        "bundle": ROOT / "content/post/「日本人ファースト」について思うこと",
+        "slug": "「日本人ファースト」について思うこと",
+        "links": [
+            "https://www.mhlw.go.jp/stf/newpage_68794.html",
+            "https://www.mhlw.go.jp/content/001684938.pdf",
+            "https://www.npa.go.jp/publications/statistics/kikakubunseki/R6jyousei.pdf",
+            "https://www.chusho.meti.go.jp/koukai/shingikai/syoukibokihon/2018/download/181012syoukiboKihon04.pdf",
+            "https://www.stat.go.jp/data/jinsui/2.html",
+        ],
+        "markers": ["2,571,037", "47,332", "12,170", "288,000"],
+        "date": "2026-01-23",
+    },
+    101: {
+        "bundle": ROOT / "content/post/『君死にたまふことなかれ』",
+        "slug": "『君死にたまふことなかれ』",
+        "links": [
+            "https://www.ndl.go.jp/portrait/datas/347",
+            "https://www.aozora.gr.jp/cards/000885/files/3629_48834.html",
+        ],
+        "markers": ["1904"],
+        "date": "2024-07-25",
+    },
 }
 
 
@@ -229,7 +252,7 @@ def slug_key(value):
 parser = argparse.ArgumentParser()
 parser.add_argument("--ci-run", type=int, required=True)
 parser.add_argument("--commit", required=True)
-parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99), default=99)
+parser.add_argument("--max-batch", type=int, choices=(90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101), default=101)
 args = parser.parse_args()
 ARTICLES = {number: article for number, article in ARTICLES.items() if number <= args.max_batch}
 with urllib.request.urlopen(f"https://github.com/kenjinote/blog/actions/runs/{args.ci_run}", timeout=45) as response:

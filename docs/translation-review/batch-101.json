@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "batch": 101,
+  "article": "『君死にたまふことなかれ』",
+  "reviewedAt": "2026-11-24",
+  "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+  "sources": [
+    "https://www.ndl.go.jp/portrait/datas/347",
+    "https://www.aozora.gr.jp/cards/000885/files/3629_48834.html"
+  ],
+  "scope": "Compared the complete Japanese poem and all twelve translations stanza by stanza. Confirmed that each edition preserves all five stanzas and the central address, family grief, and questioning of war rhetoric. Added sourced 1904 publication context and commentary, removed the duplicate date and unrelated technology category, and added official/primary references.",
+  "findings": [
+    "Removed the duplicate future date, retained the original 2024-07-25 publication date, and set lastmod to 2026-11-24.",
+    "Added the missing commentary promised by every edition's title and updated descriptions to accurately state the content.",
+    "Confirmed the poem's September 1904 publication context and subtitle through NDL materials; added Yosano's own later open letter as primary context.",
+    "Removed the unrelated it-technology category.",
+    "Checked that all twelve translated editions contain the same five stanzas; identified them as AI-assisted literary renderings rather than authoritative published translations."
+  ],
+  "publicationPending": true,
+  "reviews": {
+    "post/『君死にたまふことなかれ』/index.ar.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "873bcb4b9e1c96b6d64c3085fbd28e71e440533996990b0363738f44325f42f5",
+      "summary": "قورنت المقاطع الخمسة بالأصل الياباني، مع التحقق من مناشدة الأخ وحزن الأسرة والتساؤلات حول الحرب والسلطة.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "قورنت المقاطع الخمسة بالأصل الياباني، مع التحقق من مناشدة الأخ وحزن الأسرة والتساؤلات حول الحرب والسلطة."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "رُوجع اسم الشاعرة وبورت آرثر والحرب الروسية اليابانية والعنوان الفرعي والمفردات التاريخية."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "أُضيفت سيرة المكتبة الوطنية اليابانية ورسالة يوسانو المفتوحة المنشورة في Aozora Bunko."
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    },
+    "post/『君死にたまふことなかれ』/index.de.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "e023765e5a80233a0ce10fe8e92e4c2e3dbb0aec1904639183cab2974511294f",
+      "summary": "Alle fünf Strophen mit dem japanischen Text verglichen: Anrede an den Bruder, familiäre Trauer sowie Fragen zu Krieg und Macht.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Alle fünf Strophen mit dem japanischen Text verglichen: Anrede an den Bruder, familiäre Trauer sowie Fragen zu Krieg und Macht."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Name der Dichterin, Port Arthur, Russisch-Japanischer Krieg, Untertitel und historische Schlüsselbegriffe geprüft."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Biografie der National Diet Library und Yosanos eigenen offenen Brief bei Aozora Bunko ergänzt."
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    },
+    "post/『君死にたまふことなかれ』/index.en.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "4950b6a7b9f7bd633e00e695690226ada9a344a225a1fe4e85c28f47dd63bb5c",
+      "summary": "Compared all five stanzas with the Japanese text, checking the address to her brother, family grief, and questions about war and authority.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Compared all five stanzas with the Japanese text, checking the address to her brother, family grief, and questions about war and authority."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Checked the poet's name, Port Arthur, Russo-Japanese War, subtitle, and key historical wording."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Added the National Diet Library biography and Yosano's own open letter hosted by Aozora Bunko."
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    },
+    "post/『君死にたまふことなかれ』/index.es.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "d5aaa0acdaef84b4adcf0d84c07d4d296b07438cf70a37bdea94b984cbab7d7f",
+      "summary": "Comparé las cinco estrofas con el original japonés y verifiqué la súplica al hermano, el dolor familiar y las preguntas sobre la guerra y el poder.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Comparé las cinco estrofas con el original japonés y verifiqué la súplica al hermano, el dolor familiar y las preguntas sobre la guerra y el poder."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Revisé el nombre de la autora, Port Arthur, la guerra ruso-japonesa, el subtítulo y el vocabulario histórico."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Añadí la biografía de la Biblioteca Nacional de Japón y la carta abierta de Yosano alojada en Aozora Bunko."
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    },
+    "post/『君死にたまふことなかれ』/index.fr.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "8d656a9041e32fab699364701839b4f0c365dac46b49bce215a2cce7d68f01df",
+      "summary": "Les cinq strophes ont été comparées au japonais : adresse au frère, douleur familiale et questionnement de la guerre et du pouvoir.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Les cinq strophes ont été comparées au japonais : adresse au frère, douleur familiale et questionnement de la guerre et du pouvoir."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Nom de la poète, Port-Arthur, guerre russo-japonaise, sous-titre et termes historiques vérifiés."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Biographie de la Bibliothèque nationale et lettre ouverte de Yosano hébergée par Aozora Bunko ajoutées."
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    },
+    "post/『君死にたまふことなかれ』/index.hi.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "d600877c9f77512e5fdebd509257c3e194df0e3eb02b7276b4e5a108f84a5bf5",
+      "summary": "जापानी मूल की पाँचों पद्य-इकाइयों से तुलना की; भाई को पुकार, पारिवारिक दुख और युद्ध तथा सत्ता पर प्रश्नों की जाँच की।",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "जापानी मूल की पाँचों पद्य-इकाइयों से तुलना की; भाई को पुकार, पारिवारिक दुख और युद्ध तथा सत्ता पर प्रश्नों की जाँच की।"
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "कवयित्री का नाम, पोर्ट आर्थर, रूस-जापान युद्ध, उपशीर्षक और ऐतिहासिक शब्दावली जाँची।"
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "जापान की राष्ट्रीय डाइट लाइब्रेरी की जीवनी और Aozora Bunko में योसानो का खुला पत्र जोड़ा।"
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    },
+    "post/『君死にたまふことなかれ』/index.id.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "ae064f8fe0d7a9fc1b018d99542e82d0cb427f7433ae77b684b0ed0c33930614",
+      "summary": "Membandingkan kelima bait dengan teks Jepang, termasuk seruan kepada adik, duka keluarga, dan pertanyaan tentang perang serta kekuasaan.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Membandingkan kelima bait dengan teks Jepang, termasuk seruan kepada adik, duka keluarga, dan pertanyaan tentang perang serta kekuasaan."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Memeriksa nama penyair, Port Arthur, Perang Rusia-Jepang, subjudul, dan istilah sejarah."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Menambahkan profil Perpustakaan Parlemen Nasional Jepang dan surat terbuka Yosano di Aozora Bunko."
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    },
+    "post/『君死にたまふことなかれ』/index.ko.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "403ff4061cb39cba987d32023e97cf90d22ddaf908a6aab2a5d888c22c1dc037",
+      "summary": "일본어 원문과 다섯 연을 대조해 동생을 향한 호소, 가족의 슬픔, 전쟁과 권력에 대한 질문을 확인했습니다.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "일본어 원문과 다섯 연을 대조해 동생을 향한 호소, 가족의 슬픔, 전쟁과 권력에 대한 질문을 확인했습니다."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "시인 이름, 뤼순, 러일전쟁, 부제와 주요 역사 용어를 확인했습니다."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "일본 국립국회도서관의 작가 소개와 아오조라문고에 수록된 작가의 공개 서한을 추가했습니다."
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    },
+    "post/『君死にたまふことなかれ』/index.pt.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "10e4868b2d2114ba87288e0e6565213aaa28ff9821da95f234dca1c74fbb58ad",
+      "summary": "Comparei as cinco estrofes com o japonês, verificando o apelo ao irmão, o sofrimento familiar e as questões sobre guerra e poder.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Comparei as cinco estrofes com o japonês, verificando o apelo ao irmão, o sofrimento familiar e as questões sobre guerra e poder."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Conferi o nome da poeta, Port Arthur, Guerra Russo-Japonesa, subtítulo e termos históricos."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Acrescentei a biografia da Biblioteca Nacional do Japão e a carta aberta da autora no Aozora Bunko."
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    },
+    "post/『君死にたまふことなかれ』/index.ru.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "f53eaecf95e34f7d52ddde250b1aa627ea6886ea482c6918ba94b2cc2f3f75a9",
+      "summary": "Сверены все пять строф с японским оригиналом: обращение к брату, семейная скорбь и вопросы о войне и власти.",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "Сверены все пять строф с японским оригиналом: обращение к брату, семейная скорбь и вопросы о войне и власти."
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "Проверены имя поэтессы, Порт-Артур, русско-японская война, подзаголовок и исторические термины."
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "Добавлены биография Национальной парламентской библиотеки Японии и открытое письмо Ёсано в Aozora Bunko."
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    },
+    "post/『君死にたまふことなかれ』/index.zh-cn.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "8c7a27ca7b2f6eb38bf45b01a28f3935054634af447a6fcfc76b736f4c166f00",
+      "summary": "对照日文原诗核查五节内容，确认对弟弟的呼唤、家庭悲痛以及对战争与权力的质疑均有保留。",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "对照日文原诗核查五节内容，确认对弟弟的呼唤、家庭悲痛以及对战争与权力的质疑均有保留。"
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "核查作者姓名、旅顺、日俄战争、副题与历史词语。"
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "新增日本国立国会图书馆作者介绍及青空文库所载晶子本人的公开信。"
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    },
+    "post/『君死にたまふことなかれ』/index.zh-tw.md": {
+      "reviewKind": "ai",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "8682e248a14f5ebef6bb963dabef34c1726d572a5f513a4731c3d0cdacf3d7cb",
+      "summary": "對照日文原詩核查五節內容，確認對弟弟的呼喚、家庭悲痛以及對戰爭與權力的質疑均有保留。",
+      "checks": {
+        "meaning": {
+          "status": "checked",
+          "note": "對照日文原詩核查五節內容，確認對弟弟的呼喚、家庭悲痛以及對戰爭與權力的質疑均有保留。"
+        },
+        "terminology": {
+          "status": "checked",
+          "note": "核查作者姓名、旅順、日俄戰爭、副題與歷史詞語。"
+        },
+        "mathematics": {
+          "status": "not_applicable",
+          "note": "No mathematical content."
+        },
+        "code": {
+          "status": "not_applicable",
+          "note": "No executable code."
+        },
+        "links": {
+          "status": "checked",
+          "note": "新增日本國立國會圖書館作者介紹及青空文庫所載晶子本人的公開信。"
+        }
+      },
+      "limitations": [
+        "AI-assisted literary translation review; no human or native-speaker certification.",
+        "The translations are editorial renderings of a poem; they are not published or authorized literary translations.",
+        "Historical interpretation is concise and based on the cited NDL biography and Yosano's own open letter."
+      ]
+    }
+  }
+}

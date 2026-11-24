@@ -11525,6 +11525,126 @@
       "reviewKind": "ai",
       "evidence": "docs/translation-review/batch-100.json",
       "evidenceHash": "c4105fec0f13377410ad56c1ab3031072fc587d166ee50f36ed67e76b3074f1d"
+    },
+    "post/『君死にたまふことなかれ』/index.ar.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "873bcb4b9e1c96b6d64c3085fbd28e71e440533996990b0363738f44325f42f5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "73854843ad155a11e629ac63380e82270f865676f131ac4a47376232ad0c9d76"
+    },
+    "post/『君死にたまふことなかれ』/index.de.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "e023765e5a80233a0ce10fe8e92e4c2e3dbb0aec1904639183cab2974511294f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "81705a956bd5263b0765e5e2d8902f25c087155ea9d4b923acb79d07f0b81a41"
+    },
+    "post/『君死にたまふことなかれ』/index.en.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "4950b6a7b9f7bd633e00e695690226ada9a344a225a1fe4e85c28f47dd63bb5c",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "53f9edd5744316d0b9aacf0ee6f03ccff1e40679a198a98415028e91d285c506"
+    },
+    "post/『君死にたまふことなかれ』/index.es.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "d5aaa0acdaef84b4adcf0d84c07d4d296b07438cf70a37bdea94b984cbab7d7f",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "23105ce951b984743ecc3026da9ef2970907ec71ca0b0b547607add89ed5ad36"
+    },
+    "post/『君死にたまふことなかれ』/index.fr.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "8d656a9041e32fab699364701839b4f0c365dac46b49bce215a2cce7d68f01df",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "5cab52b54f3b240fb20cf42d784a2b803dd518c499e3b08fb8ac0032ec123144"
+    },
+    "post/『君死にたまふことなかれ』/index.hi.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "d600877c9f77512e5fdebd509257c3e194df0e3eb02b7276b4e5a108f84a5bf5",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "8e08d15ca9db2f761344134122be90af9475c0422e3940ebf8ed1f95bac502b9"
+    },
+    "post/『君死にたまふことなかれ』/index.id.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "ae064f8fe0d7a9fc1b018d99542e82d0cb427f7433ae77b684b0ed0c33930614",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "40044338094051877c262001d394651ccec809c42d0dea3256a7dc9664fed44e"
+    },
+    "post/『君死にたまふことなかれ』/index.ko.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "403ff4061cb39cba987d32023e97cf90d22ddaf908a6aab2a5d888c22c1dc037",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "12821be0128d78d815b8a4e142ee50a9931c30b0652fc63b701130e02c5c9377"
+    },
+    "post/『君死にたまふことなかれ』/index.pt.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "10e4868b2d2114ba87288e0e6565213aaa28ff9821da95f234dca1c74fbb58ad",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "a60dcbb83ca206eb7d82cb43bb8abc217171db0dbf886535664f7c10726e7f98"
+    },
+    "post/『君死にたまふことなかれ』/index.ru.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "f53eaecf95e34f7d52ddde250b1aa627ea6886ea482c6918ba94b2cc2f3f75a9",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "ae02eaea97e646980aaf89b7dd2b173641695f18b8903bb3709e21f83da953fd"
+    },
+    "post/『君死にたまふことなかれ』/index.zh-cn.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "8c7a27ca7b2f6eb38bf45b01a28f3935054634af447a6fcfc76b736f4c166f00",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "ae1ea96b0d62bd9b46d347c91d5660f3360ce4d28eab0dae8f3579142f78c7f3"
+    },
+    "post/『君死にたまふことなかれ』/index.zh-tw.md": {
+      "source": "post/『君死にたまふことなかれ』/index.md",
+      "reviewedAt": "2026-11-24",
+      "reviewer": "Codex (AI)",
+      "sourceHash": "f214f7fa94962cb7f44e17f9d396026569f9b7d53e4579424c7806d9999c99e5",
+      "translationHash": "8682e248a14f5ebef6bb963dabef34c1726d572a5f513a4731c3d0cdacf3d7cb",
+      "reviewKind": "ai",
+      "evidence": "docs/translation-review/batch-101.json",
+      "evidenceHash": "3958f775428308e0881ba1dec858032b222c18db3660e0af9c0a06c378d283a3"
     }
   }
 }
